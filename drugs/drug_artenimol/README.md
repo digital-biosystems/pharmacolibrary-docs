@@ -44,7 +44,7 @@ Artenimol is an antimalarial medication used to treat malaria. It is given orall
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:37 | 2:32 | 1/2/0 | 0/0/0 | 0/0/0 | 84,679/12,372 | ollama / glm-5.3-flash | 8 | 0/4 | 8/0 | 0 |
+| 2026-11-23 16:39 | 0:03 | 1/2/0 | 0/0/0 | 0/0/0 | 4,043/178 | einfracz / qwen3.8-27b | 8 | 0/4 | 8/0 | 0 |
 
 ## Coverage
 
@@ -59,7 +59,8 @@ Artenimol is an antimalarial medication used to treat malaria. It is given orall
 |---|---|---|---|---|---|
 | popPK | Ding_2024 | irrelevant | 0 | 0 | The population PK models and parameters (CL/F, V/F, Q/F, ka) are for amodiaquine/desethylamodiaquine and piperaquine; dihydroartemisinin (artenimol) is only the co-administered artemisinin component and is not modeled. |
 | popPK | Hoglund_2017 | irrelevant | 1 | 0 | This is a population-PK study of piperaquine; dihydroartemisinin (artenimol) is only the co-administered partner drug and no artenimol disposition parameters are reported. |
-| popPK | Vanachayangkul_2017 | irrelevant | 0 | 0 | This is a population PK model of piperaquine, not artenimol; artenimol (dihydroartemisinin) is only part of the co-formulated therapy and no artenimol parameters are reported. |
+| popPK | Vanachayangkul_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of piperaquine, not artenimol, and artenimol is only mentioned as part of the dihydroartemisinin-piperaquine combination without specific PK parameters provided. |
+| PGx | Vanachayangkul_2017 | not_relevant | 0 | 0 | The study reports the population pharmacokinetics and cardiac safety of piperaquine, but contains no pharmacogenomic data regarding gene variants or their effect on PK/PD parameters. |
 
 
 </details>

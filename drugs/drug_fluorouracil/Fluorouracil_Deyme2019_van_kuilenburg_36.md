@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability (F) and lag time (Tlag) were not reported for fluorouracil, forcing the model to use unverified default values.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Deyme2019_van_kuilenburg_36" status="needs_review" stale="false" population="patients with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,7 +48,7 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,11 +58,13 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 ### Reviewer guidance
 
-**Bioavailability (F) and lag time (Tlag) were not reported for fluorouracil, forcing the model to use unverified default values.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record contains specific estimates for clearance and distribution volumes but lacks explicit values for F and Tlag. Consequently, these critical absorption parameters were defaulted to library standards rather than being derived from the study's data. This means the simulated absorption phase relies on generic assumptions unsupported by the specific pharmacokinetic observations in the paper. Extracted — fluorouracil: CL 21.1 L/h, V1 95.5 L, V2 101 L, V3 196 L, Vss 711 L, Vmax 1.51e+03 mg/h, Km 4.55 mg/L, Q 33.4 L/h, … (+2).
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — fluorouracil: CL 21.1 L/h, V1 95.5 L, V2 101 L, V3 196 L, Vss 711 L, Vmax 1.51e+03 mg/h, Km 4.55 mg/L, Q 33.4 L/h, … (+2).
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading fluorouracil → 5fuh2 (metabolism); fluorouracil → 5fdhu (metabolism); irinotecan → sn38 (metabolism) …; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -108,6 +110,37 @@ The record contains specific estimates for clearance and distribution volumes bu
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.214 (3/14 fields) | 11 |
+
+<details><summary>11 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['fluorouracil', '5fuh2', 'metabolism'], ['fluorouracil', '5fdhu', 'metabolism'], ['irinotecan', 'sn38', 'metabolism'], ['sn38', 'sn38g', 'metabolism'], ['irinotecan', 'apc', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[absorption rate]` | 0.13 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 21.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kl2]` | 0.0587 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` | 4.55 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q2]` | 33.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | 95.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | 101 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3]` | 196.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax]` | 1512 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | 711 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -134,16 +167,16 @@ The record contains specific estimates for clearance and distribution volumes bu
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=fluorouracil) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  | no second reading of this record |
-| T1_cmax | reference | skipped |  | 0.0002031 | non-numeric value |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=fluorouracil) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.214 (3 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.214 | cross-check contradicted by a second reader: verdict disputed; agreement 0.214 (3 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 0.0002031 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

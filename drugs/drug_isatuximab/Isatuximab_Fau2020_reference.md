@@ -1,13 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;isatuximab&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/&quot;},{&quot;label&quot;:&quot;Fau_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isatuximab_Fau2020_reference&quot;,&quot;label&quot;:&quot;Fau_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/Isatuximab_Fau2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/pd_Koiwai_2021_M_protein.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein_2&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/pd_Koiwai_2021_M_protein_2.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein_3&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/pd_Koiwai_2021_M_protein_3.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # isatuximab — `Isatuximab_Fau2020_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-<div class="pk-model-meta" hidden drug="isatuximab" model-id="Isatuximab_Fau2020_reference" status="simulated" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="isatuximab" parameterization="mechanistic" topology="1C"></div>
+> C8 unreachable/orphan compartment or unlinked metabolite.
+
+<div class="pk-model-meta" hidden drug="isatuximab" model-id="Isatuximab_Fau2020_reference" status="rejected" stale="false" population="relapsed/refractory multiple myeloma patients" measured-compound="isatuximab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Fau JB, El-Cheikh R, Brillac C, Koiwai K, Mace N, Campana F et al. Drug-Disease Interaction and Time-Dependent Population Pharmacokinetics of Isatuximab in Relapsed/Refractory Multiple Myeloma Patients. CPT: pharmacometrics & systems pharmacology 9(11):649–658 (2020).
@@ -15,28 +16,28 @@ Fau JB, El-Cheikh R, Brillac C, Koiwai K, Mace N, Campana F et al. Drug-Disease 
 
 ## Population and dosing
 
-**Population:** patients with relapsed/refractory multiple myeloma · condition relapsed/refractory multiple myeloma · age group adult · n = 476.
+**Population:** relapsed/refractory multiple myeloma patients · condition relapsed/refractory multiple myeloma · age group adult · n = 476.
 
 **Dosing:** 70, 1400 mg, iv, multiple.
 
 ## Model
 
-**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 2 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_isatuximab/Isatuximab_Fau2020_reference/Isatuximab_Fau2020_reference.svg" alt="Isatuximab_Fau2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Availability:** No model was generated from this record.
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
-| typical linear CL at steady-state | CL | 0.00955 | L/hour |
-| typical volume of distribution of the central compartment | V | 5.13 | L |
+| volume of distribution of the central compartment | V1 | 5.13 | L |
+| volume of distribution of the central compartment and peripheral | V2 | 3.62 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,18 +47,20 @@ Fau JB, El-Cheikh R, Brillac C, Koiwai K, Mace N, Campana F et al. Drug-Disease 
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of typical linear cl at steady-state: this record has 0.00955, the second reading none; it also differs on 1 more field. That field does not shape the model.
+Extracted — isatuximab: V1 5.13 L, V2 3.62 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of typical linear cl at steady‐state: this record has none, the second reading 0.00955; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| typical linear CL at steady-state | `Q22` · CL | 0.00955 | L/hour | 2.653e-09 | m3/s | L/h | boundary (0.8) | Fau_2020:other_prose |
-| typical volume of distribution of the central compartment | `Q61` · V | 5.13 | L | 0.00513 | m3 | L | boundary_compartment (0.9) | Fau_2020:other_prose |
+| volume of distribution of the central compartment | `Q63` · V1 | 5.13 | L | 0.00513 | m3 | L | boundary_compartment (0.9) | Fau_2020:other_prose |
+| volume of distribution of the central compartment and peripheral | `Q64` · V2 | 3.62 | L | 0.00362 | m3 | L | boundary_compartment (0.9) | Fau_2020:other_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -67,36 +70,44 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q22 ('typical linear CL at steady-state'=0.00955) from results prose — parameter table was unreadable
-- salvaged Q63 ('typical volume of distribution of the central compartment'=5.13) from results prose — parameter table was unreadable
+- column 'ig type not igg vs. igg' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'drug material p2f2 vs. p1f1' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'race asian vs. others' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'sex female vs. male' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped 'CLinf' → Q22 = -22: a clearance of -22 is not a parameter value (source ['Fau_2020_table_2:row0:col1', 'Fau_2020_table_2:row0:col2', 'Fau_2020_table_2:row0:col3', 'Fau_2020_table_2:row0:col4', 'Fau_2020_table_2:row0:col5'])
+- dropped unlinked row (NIL): 'KCL' — extend the ontology if this is a real PK parameter (source ['Fau_2020_table_2:row1:col5'])
+- dropped 'Vc' → Q63 = -17: a volume of -17 is not a parameter value (source ['Fau_2020_table_2:row2:col3', 'Fau_2020_table_2:row2:col4', 'Fau_2020_table_2:row2:col6', 'Fau_2020_table_2:row2:col7', 'Fau_2020_table_2:row2:col8'])
+- dropped 'Q' → Q30 = -17: a clearance of -17 is not a parameter value (source ['Fau_2020_table_2:row3:col3', 'Fau_2020_table_2:row3:col4'])
+- dropped 'Vp' → Q64 = -24: a volume of -24 is not a parameter value (source ['Fau_2020_table_2:row4:col3', 'Fau_2020_table_2:row4:col4'])
+- salvaged Q63 ('volume of distribution of the central compartment'=5.13) from results prose — parameter table was unreadable
+- salvaged Q64 ('volume of distribution of the central compartment and peripheral'=3.62) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=isatuximab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'typical volume of distribution of the central compartment' is the general volume)
 - status held at "Needs review" — not promoted
 - molar mass: none found for 'isatuximab' — its concentrations stay mass-only
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
-- LLM selected parameter table(s) 2, 3
-- text-pointer recovery found no readable extracted parameter table
+- LLM selected parameter table(s) 2
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.667 (4/6 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[typical linear cl at steady-state]` | 0.00955 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[typical volume of distribution of the central compartment]` | 5.13 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical linear cl at steady‐state]` |  | 0.00955 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical volume of distribution of the central compartment]` |  | 5.13 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical volume of distribution of the peripheral compartment]` |  | 3.62 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of the central compartment and peripheral]` | 3.62 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of the central compartment]` | 5.13 |  | only_one_extracted |
 
 </details>
 
@@ -108,30 +119,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |  |  |
-| C0b_disposition_core | pass |  |  |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |  |  |
-| C2_base_Q22 | pass | 0.00955 | 0.00955 | 1 | 0.05 | footnote reference category |
-| C2_base_Q61 | pass | 5.13 | 5.13 | 1 | 0.05 | footnote reference category |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.00955 |  |  | ['Fau_2020:other_prose'] |
-| C8_topology | pass |  |  |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00955 L/h |  |  | ['Fau_2020:other_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 5.13 L |  |  | ['Fau_2020:other_prose'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=isatuximab) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
-| T1_cmax | reference | skipped | 1.64 | 0.01364 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C8_topology | fail |  |  |  |
+| C9_phys_window_Q63 | pass | volume within physiological range | 5.13 L | ['Fau_2020:other_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 3.62 L | ['Fau_2020:other_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -143,69 +138,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_isatuximab/Isatuximab_Fau2020_reference/Isatuximab_Fau2020_reference_modelica.zip" download>Isatuximab_Fau2020_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_isatuximab/Isatuximab_Fau2020_reference/Isatuximab_Fau2020_reference_fmi.zip" download>Isatuximab_Fau2020_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_isatuximab/Isatuximab_Fau2020_reference/Isatuximab_Fau2020_reference_matlab.zip" download>Isatuximab_Fau2020_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_isatuximab/Isatuximab_Fau2020_reference/Isatuximab_Fau2020_reference_matlab_simbio.zip" download>Isatuximab_Fau2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_isatuximab/Isatuximab_Fau2020_reference/Isatuximab_Fau2020_reference_sbml.zip" download>Isatuximab_Fau2020_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_isatuximab/Isatuximab_Fau2020_reference/Isatuximab_Fau2020_reference_cellml.zip" download>Isatuximab_Fau2020_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 7e-05 | kg |
-| input | model | `Cl` | 2.653e-09 | m3/s |
-| input | model | `VdPerKg` | 7.329e-05 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Fau JB, El-Cheikh R, Brillac C, Koiwai K, Mace N, Campana F et al. Drug-Disease Interaction and Time-Dependent Population Pharmacokinetics of Isatuximab in Relapsed/Refractory Multiple Myeloma Patients. CPT: pharmacometrics & systems pharmacology 9(11):649–658 (2020). [doi:10.1002/psp4.12561](https://doi.org/10.1002/psp4.12561)
-
-**This record:** Pharmacolibrary, model `Isatuximab_Fau2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_isatuximab/Isatuximab_Fau2020_reference>
-
-```bibtex
-@misc{pharmacolibrary_IsatuximabFau2020reference,
-  title  = {{Pharmacolibrary model Isatuximab_Fau2020_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_isatuximab/Isatuximab_Fau2020_reference},
-  note   = {Parameters from doi:10.1002/psp4.12561},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 70 mg infusion over 10 min, single dose. Doses in the paper: 70–1400 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_isatuximab/Isatuximab_Fau2020_reference/Isatuximab_Fau2020_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_isatuximab/Isatuximab_Fau2020_reference/Isatuximab_Fau2020_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Isatuximab_Fau2020_reference_params.json` · controls `Isatuximab_Fau2020_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bisatuximab%5D%20Isatuximab_Fau2020_reference&body=Drug%3A%20isatuximab%0ARecord%3A%20Isatuximab_Fau2020_reference%0APaper%3A%20Fau_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_isatuximab/Isatuximab_Fau2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 13:03 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:24 UTC</sub>

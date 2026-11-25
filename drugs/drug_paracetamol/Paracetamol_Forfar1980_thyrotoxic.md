@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paracetamol record was rejected because the dissociation constant had incorrect mass-volume units and the central compartment was disconnected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit min⁻¹ (1 / [time]) vs [mass] / [length] ** 3; Q61 unit l.g⁻¹ ([length] ** 3 / [mass]) vs [length] ** 3; Q63 unit l.g⁻¹ ([length] ** 3 / [mass]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Forfar1980_thyrotoxic" status="rejected" stale="false" population="patients with thyroid disease" measured-compound="paracetamol" parameterization="mechanistic" topology="3C"></div>
 
@@ -54,13 +54,13 @@ Forfar JC, Pottage A, Toft AD, Irvine WJ, Clements JA, Prescott LF. Paracetamol 
 
 ### Reviewer guidance
 
-**The paracetamol record was rejected because the dissociation constant had incorrect mass-volume units and the central compartment was disconnected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit min⁻¹ (1 / [time]) vs [mass] / [length] ** 3; Q61 unit l.g⁻¹ ([length] ** 3 / [mass]) vs [length] ** 3; Q63 unit l.g⁻¹ ([length] ** 3 / [mass]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The parameter defined as the equilibrium dissociation constant was recorded with a unit of min⁻¹, conflicting with its required mass-volume dimension. Both the central and peripheral volumes of distribution used a unit of l.g⁻¹ that could not be converted to standard SI units. Additionally, the three-compartment model structure was invalid because the central compartment was unreachable from the dose. Extracted — paracetamol: Cmax 28.3, tmax 13.6 min, kabs 0.125 min⁻¹, KD 0.05 min⁻¹, kel 0.006 min⁻¹, t1/2z 122 min, CL 5.4 ml min⁻¹g⁻¹, V 0.94 l.g⁻¹, … (+2).
+A reported unit could not be converted (KD and CL), so that value has no SI equivalent. Extracted — paracetamol: Cmax 28.3, tmax 13.6 min, kabs 0.125 min⁻¹, KD 0.05 min⁻¹, kel 0.006 min⁻¹, t1/2z 122 min, CL 5.4 ml min⁻¹g⁻¹, V 0.94 l.g⁻¹, … (+2).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

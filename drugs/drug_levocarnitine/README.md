@@ -25,8 +25,8 @@ Levocarnitine is an amino acid derivative used to treat specific metabolic disor
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wang_2021_BMI](drugs/drug_levocarnitine/pd_Wang_2021_BMI.md) | Body Mass index ← l-carnitine · direct Emax (saturable) effect | — | Wang DD et al., The Effects of L-Carnitine, Acetyl-L-Ca…, Frontiers in nutrition (2021) | [10.3389/fnut.2021.748075](https://doi.org/10.3389/fnut.2021.748075) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wu_2014_spike_activity](drugs/drug_levocarnitine/pd_Wu_2014_spike_activity.md) | spike activity ← L-carnitine · direct sigmoid Emax (Hill) effect | — | Wu C et al., Antioxidants L-carnitine and D-methioni…, Journal of neural transmiss… (2014) | [10.1007/s00702-014-1170-x](https://doi.org/10.1007/s00702-014-1170-x) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Wang_2021_BMI](drugs/drug_levocarnitine/pd_Wang_2021_BMI.md) | Body Mass index ← l-carnitine · direct Emax (saturable) effect | — | Wang DD et al., The Effects of L-Carnitine, Acetyl-L-Ca…, Frontiers in nutrition (2021) | [10.3389/fnut.2021.748075](https://doi.org/10.3389/fnut.2021.748075) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

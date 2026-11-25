@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> The tolfenamic acid record was held back because the peripheral-to-central rate constant was unreported and substituted with a generic placeholder.
+> K21 use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="tolfenamic acid" model-id="TolfenamicAcid_Corum2024v2_reference" status="needs_review" stale="false" population="rainbow trout" measured-compound="tolfenamic_acid" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Corum O, Durna Corum D, Marin P, Acar OF, Aksoy M, Uney K. Pharmacokinetics, bio
 
 ### Reviewer guidance
 
-**The tolfenamic acid record was held back because the peripheral-to-central rate constant was unreported and substituted with a generic placeholder.**
+**K21 use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The two-compartment model specifies an intercompartmental clearance of 0.07 L/h/kg, but the corresponding rate constant k21 lacks an explicit value from the paper and instead relies on library defaults. A second reader disputed the model structure and four parameter values, including the clearance and three other fields listed as 0.001, 0.25, and 20. Extracted — tolfenamic acid: CL 0.03 L/h/kg, V 10.5 L, Q 0.07 L/h/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — tolfenamic acid: CL 0.03 L/h/kg, V 10.5 L, Q 0.07 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of Q: this record has 0.07, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.583, 0 of 1 reader(s) agree | 0.583 | cross-check disputed by a second reader: verdict disputed, agreement 0.583, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.583 (7 of 12 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.583 | cross-check contradicted by a second reader: verdict disputed; agreement 0.583 (7 of 12 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The fluorouracil model lacks a defined elimination pathway from the central compartment, leaving the structure structurally incomplete.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Deyme2019_kimura_29" status="rejected" stale="false" population="patients with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 ### Reviewer guidance
 
-**The fluorouracil model lacks a defined elimination pathway from the central compartment, leaving the structure structurally incomplete.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model is described as one-compartment, yet includes parameters for a peripheral compartment volume and inter-compartmental transfer rates. The second reader confirmed the absence of the elimination rate constant, k10, while the record lists it, creating a contradiction. These inconsistencies indicate the model structure does not align with the provided pharmacokinetic parameters. Extracted — fluorouracil: V2 107 L, Vss 186 L, kel 0.401 h-1, k12 0.784 h-1, k21 0.0579 h-1, V 161 L, kabs 0.13 1/h.
+Extracted — fluorouracil: V2 107 L, Vss 186 L, kel 0.401 h-1, k12 0.784 h-1, k21 0.0579 h-1, V 161 L, kabs 0.13 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading fluorouracil → 5fuh2 (metabolism); fluorouracil → 5fdhu (metabolism); irinotecan → sn38 (metabolism) …; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

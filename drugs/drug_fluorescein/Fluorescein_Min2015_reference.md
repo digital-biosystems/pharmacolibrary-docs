@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Cross-check failed with 0.538 agreement because the second reader disputed the values for V1, Q, and V2.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="fluorescein" model-id="Fluorescein_Min2015_reference" status="needs_review" stale="false" population="" measured-compound="fluorescein" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Min T, Sun J, Yi Y, Wang HX, Hang F, Ai YW et al. Microanalysis, Pharmacokinetic
 
 ### Reviewer guidance
 
-**Cross-check failed with 0.538 agreement because the second reader disputed the values for V1, Q, and V2.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists V1 as 0.09 L/kg, Q as 0.6 L/h/kg, and V2 as 0.26 L/kg, but the second reader assigned nulls or conflicting values to these fields. This disagreement across multiple pharmacokinetic parameters resulted in a cross-check agreement score of 0.538, below the required threshold. Consequently, the record was marked for review due to this unresolved conflict in the parameter extraction. Extracted — fluorescein: CL 0.53 L/h/kg, V1 0.09 L/kg, V2 0.26 L/kg, Q 0.6 L/h/kg.
+Extracted — fluorescein: CL 0.53 L/h/kg, V1 0.09 L/kg, V2 0.26 L/kg, Q 0.6 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q290: this record has none, the second reading 0.09; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.538, 0 of 1 reader(s) agree | 0.538 | cross-check disputed by a second reader: verdict disputed, agreement 0.538, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.538 (7 of 13 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.538 | cross-check contradicted by a second reader: verdict disputed; agreement 0.538 (7 of 13 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

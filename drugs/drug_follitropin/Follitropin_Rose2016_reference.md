@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Follitropin FSH model parameters are mislabeled for an IV drug, and a second reader disputes the verdict.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="Follitropin" model-id="Follitropin_Rose2016_reference" status="needs_review" stale="false" population="gonadotropin downregulated healthy women" measured-compound="FSH" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Rose TH, Röshammar D, Erichsen L, Grundemar L, Ottesen JT. Characterisation of 
 
 ### Reviewer guidance
 
-**Follitropin FSH model parameters are mislabeled for an IV drug, and a second reader disputes the verdict.**
+**cross_check_disputed; x1_cross_check.**
 
-The parameters CL/F (0.423 L/h) and V/F (24.30 L) imply oral bioavailability, inconsistent with intravenous administration, while absorption rates ktr (0.329 h−1) and kabs (0.148 h−1) are present. The lag time was defaulted because no explicit estimate was provided. A second reader disagreed on the dose compound, primary analyte, model links, and an additional parameter value of 0.162, leading to a disputed verdict with an agreement ratio of 0.556. Extracted — follitropin: CL/F 0.423 L/h, V/F 24.3 L, ktr 0.329 h−1, kabs 0.148 h−1.
+Extracted — follitropin: CL/F 0.423 L/h, V/F 24.3 L, ktr 0.329 h−1, kabs 0.148 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has FE 999049, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -167,8 +167,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.556, 0 of 1 reader(s) agree | 0.556 | cross-check disputed by a second reader: verdict disputed, agreement 0.556, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | pass | 40 | 39.81 | 0.9952 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.556 (5 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.556 | cross-check contradicted by a second reader: verdict disputed; agreement 0.556 (5 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | pass | 40 | 39.81 | 0.9952 | reported 40.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

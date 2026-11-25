@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The venlafaxine CL/F estimate of 141.0 L/h was rejected because Chen_2025 concerns another drug, not venlafaxine.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="venlafaxine" model-id="Venlafaxine_Chen2025_reference" status="rejected" stale="false" population="" measured-compound="venlafaxine" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Chen X, Zhang Y, Yin D, Jin YW, He SM, Zhang C et al. Drug-Drug Interactions and
 
 ### Reviewer guidance
 
-**The venlafaxine CL/F estimate of 141.0 L/h was rejected because Chen_2025 concerns another drug, not venlafaxine.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The record lists venlafaxine CL/F as 141.0 L/h, V/F as 1460.0 L, and the absorption rate constant as 1.46 h−1, but the relevance finding says neither the paper’s title nor abstract names venlafaxine. The absorption lag time has no explicit estimate, and the model assumes F=1 and Fm=1 with no molar correction. A second reader disagreed with a recorded value of 0.322, but the record does not identify its pharmacokinetic meaning. Extracted — venlafaxine: CL/F 141 L/h, V/F 1.46e+03 L, kabs 1.46 h−1.
+Extracted — venlafaxine: CL/F 141 L/h, V/F 1.46e+03 L, kabs 1.46 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 0.322, the second reading none. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

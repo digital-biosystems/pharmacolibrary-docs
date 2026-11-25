@@ -9,7 +9,7 @@
 
 > The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Hu1992_reference" status="needs_review" stale="false" population="patients with advanced nasopharyngeal carcinoma" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Hu1992_reference" status="needs_review" stale="false" population="patients with nasopharyngeal carcinoma" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hu OY, Chang SP, Law CK, Jian JM, Chen KY. Pharmacokinetic and pharmacodynamic studies with mitoxantrone in the treatment of patients with nasopharyngeal carcinoma. Cancer 69(4):847–853 (1992).
@@ -17,7 +17,7 @@ Hu OY, Chang SP, Law CK, Jian JM, Chen KY. Pharmacokinetic and pharmacodynamic s
 
 ## Population and dosing
 
-**Population:** patients with advanced nasopharyngeal carcinoma · condition advanced nasopharyngeal carcinoma · n = 15.
+**Population:** patients with nasopharyngeal carcinoma · condition nasopharyngeal carcinoma · age group adult.
 
 ## Model
 
@@ -38,7 +38,7 @@ Hu OY, Chang SP, Law CK, Jian JM, Chen KY. Pharmacokinetic and pharmacodynamic s
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +52,7 @@ Hu OY, Chang SP, Law CK, Jian JM, Chen KY. Pharmacokinetic and pharmacodynamic s
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — mitoxantrone: t1/2z 71.5 hours, V 5.04e+03 l, CL 743 ml/minute, CLR 18.8 ml/minute.
 
-Independently confirmed by `qwen3.8-27b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,7 +60,7 @@ Independently confirmed by `qwen3.8-27b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| terminal half-life | `Q57` · t1/2z | 71.5 | hours | 2.574e+05 | s | h | llm (0.6) | Hu_1992:abstract |
+| terminal half-life | `Q57` · t1/2z | 71.5 | hours | 2.574e+05 | s | h | half_life_rule (0.95) | Hu_1992:abstract |
 | volume of distribution | `Q61` · V | 5037 | l | 5.037 | m3 | l | exact (1) | Hu_1992:abstract |
 | total plasma clearance | `Q22` · CL | 743 | ml/minute | 1.238e-05 | m3/s | ml/min | llm_confirmed (0.6) | Hu_1992:abstract |
 | renal clearance | `Q26` · CLR | 18.8 | ml/minute | 3.133e-07 | m3/s | ml/min | exact (1) | Hu_1992:abstract |
@@ -75,19 +75,18 @@ Independently confirmed by `qwen3.8-27b`.
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mitoxantrone
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Hu_1992_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (8/8 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -146,4 +145,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitoxantrone%5D%20Mitoxantrone_Hu1992_reference&body=Drug%3A%20mitoxantrone%0ARecord%3A%20Mitoxantrone_Hu1992_reference%0APaper%3A%20Hu_1992%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitoxantrone/Mitoxantrone_Hu1992_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:30 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:56 UTC</sub>

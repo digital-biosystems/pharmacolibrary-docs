@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Two AUC values for mexiletine were rejected because their units µg/ml/hr mismatched the required structural dimension [mass]*[time]/[length]^3.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3; Q88 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="mexiletine" model-id="Mexiletine_Hselbarth1981_subject_5" status="rejected" stale="false" population="healthy adults" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Häselbarth V, Doevendans JE, Wolf M. Kinetics and bioavailability of mexiletine
 
 ### Reviewer guidance
 
-**Two AUC values for mexiletine were rejected because their units µg/ml/hr mismatched the required structural dimension [mass]*[time]/[length]^3.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3; Q88 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.**
 
-The record lists AUC∞ (6.629) and AUC (5.819) both with the unit µg/ml/hr. This unit conflicts with the expected structural parameter dimension for these volumes, causing a dimension mismatch failure. Additionally, a second reader found these four parameter values (AUC∞, AUC, Cmax, kel) to be missing from the source paper. Extracted — mexiletine: kel 2 1/h, tlag 0.583 hr, tmax 1.65 hr, Cmax 0.68 µg/ml, AUC∞ 6.63 µg/ml/hr, AUC 5.82 µg/ml/hr, V 74 L.
+A reported unit could not be converted (Cmax, AUC∞ and AUC), so that value has no SI equivalent. Extracted — mexiletine: kel 2 1/h, tlag 0.583 hr, tmax 1.65 hr, Cmax 0.68 µg/ml, AUC∞ 6.63 µg/ml/hr, AUC 5.82 µg/ml/hr, V 74 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0^inf: this record has 6.629, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

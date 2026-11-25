@@ -22,9 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Marquart_2019_AChE_activity](drugs/drug_obidoxime/pd_Marquart_2019_AChE_activity.md) | AChE activity reactivation in sarin-inhibited human small bowel ← obidoxime · direct sigmoid Emax (Hill) effect | — | Marquart K et al., Human small bowel as model for poisonin…, Toxicology in vitro : an in… (2019) | [10.1016/j.tiv.2019.02.010](https://doi.org/10.1016/j.tiv.2019.02.010) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Tränkle_1996_allosteric_delay_of_dissociation_of_N_3H_methylscopolamine_from_porcine_heart_M2_receptors](drugs/drug_obidoxime/pd_Tr_nkle_1996_allosteric_delay_of_dissociation_of_N_3H_methyl.md) | allosteric delay of dissociation of N-[3H]methylscopolamine from porcine heart M2 receptors ← obidoxime · inhibition effect | — | Tränkle C et al., Search for lead structures to develop n…, The Journal of pharmacology… (1996) | — |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Marquart_2018_smooth_muscle_relaxation_of_pre_contracted_human_small_bowel_jejunum_ileum](drugs/drug_obidoxime/pd_Marquart_2018_smooth_muscle_relaxation_of_pre_contracted_hum.md) | smooth muscle relaxation of pre-contracted human small bowel (jejunum/ileum) ← obidoxime · direct Emax (saturable) effect | — | Marquart K et al., Human small bowel as a useful tool to i…, Toxicology letters (2018) | [10.1016/j.toxlet.2017.11.012](https://doi.org/10.1016/j.toxlet.2017.11.012) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Marquart_2019_AChE](drugs/drug_obidoxime/pd_Marquart_2019_AChE.md) | AChE activity ← obidoxime · direct sigmoid Emax (Hill) effect | — | Marquart K et al., Human small bowel as model for poisonin…, Toxicology in vitro : an in… (2019) | [10.1016/j.tiv.2019.02.010](https://doi.org/10.1016/j.tiv.2019.02.010) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Marquart_2018_SM_relaxation](drugs/drug_obidoxime/pd_Marquart_2018_SM_relaxation.md) | smooth muscle relaxation ← obidoxime · direct sigmoid Emax (Hill) effect | — | Marquart K et al., Human small bowel as a useful tool to i…, Toxicology letters (2018) | [10.1016/j.toxlet.2017.11.012](https://doi.org/10.1016/j.toxlet.2017.11.012) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:12 | 0:40 | 0/0/0 | 2/1/0 | 0/0/0 | 26,513/1,521 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 02:37 | 0:03 | 0/0/0 | 1/1/0 | 0/0/0 | 4,394/163 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -49,30 +48,38 @@ _not available_
 
 ## Full-text requests
 
-_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Alioth-Streichenberg_1991.pdf` | Alioth-Streichenberg CM et al., Pharmacokinetics and pharmacodynamics o…, Toxicology and applied phar… (1991) | popPK | 8 | [10.1016/0041-008x(91)90097-x](https://doi.org/10.1016/0041-008x(91)90097-x) | [2020972](https://pubmed.ncbi.nlm.nih.gov/2020972) | Rat PK study with two-compartment model and half-lives reported, but full parameters (CL, V) are not given numerically in the abstract. |
-| `Thiermann_2009.pdf` | Thiermann H et al., Obidoxime in acute organophosphate pois…, Clinical toxicology (Philad… (2009) | popPK | 6 | [10.1080/15563650903206836](https://doi.org/10.1080/15563650903206836) | [19778190](https://pubmed.ncbi.nlm.nih.gov/19778190) | Human obidoxime PK/PD study with measured plasma obidoxime concentrations, but no numeric disposition parameters (CL, V, half-life) appear in the evidence. |
 | `Marquart_2019.pdf` | Marquart K et al., Human small bowel as model for poisonin…, Toxicology in vitro : an in… (2019) | pd | 5 | [10.1016/j.tiv.2019.02.010](https://doi.org/10.1016/j.tiv.2019.02.010) | [30763608](https://www.ncbi.nlm.nih.gov/pubmed/30763608) | metadata signals extractable PD data (EC50) |
 | `Tränkle_1996.pdf` | Tränkle C et al., Search for lead structures to develop n…, The Journal of pharmacology… (1996) | pd | 5 |  | [8930201](https://www.ncbi.nlm.nih.gov/pubmed/8930201) | metadata signals extractable PD data (EC50) |
 | `Marquart_2018.pdf` | Marquart K et al., Human small bowel as a useful tool to i…, Toxicology letters (2018) | pd | 4 | [10.1016/j.toxlet.2017.11.012](https://doi.org/10.1016/j.toxlet.2017.11.012) | [29154801](https://www.ncbi.nlm.nih.gov/pubmed/29154801) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 19:11 UTC</sub>
+<sub>queue written 2026-11-24 02:37 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Alioth-Streichenberg_1991 | relevant | 8 | 4 | Rat PK study with two-compartment model and half-lives reported, but full parameters (CL, V) are not given numerically in the abstract. |
-| popPK | Chiou_1994 | irrelevant | 0 | 0 | In-vitro mechanistic/pharmacodynamic study (EC50 values, no PK disposition parameters for obidoxime). |
-| popPK | Horn_2023 | irrelevant | 0 | 0 | In-vitro hepatotoxicity study in HepaRG spheroids with no PK disposition parameters for obidoxime. |
-| popPK | Marquart_2018 | irrelevant | 0 | 0 | In-vitro tissue bath study of smooth muscle effects (EC50, AChE activity), no PK disposition parameters for obidoxime. |
-| popPK | Marquart_2019 | irrelevant | 0 | 0 | In-vitro tissue model reporting EC50 pharmacodynamics, not PK disposition parameters for obidoxime. |
-| popPK | Thiermann_2009 | relevant | 6 | 2 | Human obidoxime PK/PD study with measured plasma obidoxime concentrations, but no numeric disposition parameters (CL, V, half-life) appear in the evidence. |
-| popPK | Tränkle_1996 | irrelevant | 0 | 0 | In-vitro receptor binding study; obidoxime is only an allosteric modulator EC50, no PK disposition parameters. |
-| popPK | Tränkle_1998 | irrelevant | 0 | 0 | In-vitro receptor binding study where obidoxime is only an allosteric tool compound; no PK parameters. |
+| popPK | Alioth-Streichenberg_1991 | relevant | 8 | 4 | The study reports obidoxime PK in rats with a two-compartment model and provides half-life and excretion percentages, but specific clearance (CL), volume (V), and rate constants (ka, Q) values are not explicitly listed in the evidence text. |
+| PGx | Alioth-Streichenberg_1991 | not_relevant | 0 | 0 | The study investigates the effect of sarin poisoning (pathological state) on obidoxime pharmacokinetics and pharmacodynamics in rats, not the effect of genetic variants or genotypes (pharmacogenomics). |
+| popPK | Chiou_1994 | irrelevant | 1 | 0 | The study is an in-vitro mechanistic investigation of neuromuscular antagonism in mouse phrenic nerve/diaphragm preparations, reporting EC50 values rather than pharmacokinetic disposition parameters. |
+| PGx | Chiou_1994 | not_relevant | 0 | 0 | The study investigates mechanisms of action in mouse preparations and contains no data on gene variants or pharmacogenomic effects on PK/PD parameters. |
+| popPK | Eyer_2007 | irrelevant | 2 | 0 | The text is a review/clinical summary focusing on AChE reactivity and qualitative effectiveness; it mentions dosing and target plasma concentrations but does not report quantitative PK disposition parameters (CL, V, t1/2) for obidoxime. |
+| PGx | Eyer_2007 | not_relevant | 5 | 0 | The text mentions that the PON1 (192)arginine phenotype affects the reactivation of AChE (a PD parameter) due to the hydrolysis of phosphorylated obidoxime, but no specific quantitative effect sizes or fitted parameters are reported in the provided text. |
+| popPK | Horn_2023 | irrelevant | 0 | 0 | The study is an in vitro toxicity assay measuring cytotoxicity and enzyme release, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Horn_2023 | not_relevant | 0 | 0 | The paper investigates oxime-induced hepatotoxicity in an in vitro HepaRG model but does not report any pharmacogenomic variants or their effects on PK/PD parameters. |
+| popPK | Marquart_2018 | irrelevant | 0 | 0 | The study reports in vitro pharmacodynamics (smooth muscle relaxation and cholinesterase activity) rather than pharmacokinetic parameters (CL, V, t1/2) for obidoxime. |
+| PGx | Marquart_2018 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamic effects of obidoxime on smooth muscle tissue in different species but does not report any pharmacogenomic effects. |
+| popPK | Marquart_2019 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic spasmolytic and cholinesterase reactivation effects of obidoxime in human small bowel tissue, reporting EC50 values rather than pharmacokinetic disposition parameters like clearance or volume. |
+| PGx | Marquart_2019 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamic effects of obidoxime in a tissue model but does not report any pharmacogenomic effects involving gene variants or genotypes. |
+| popPK | Thiermann_2009 | irrelevant | 2 | 0 | The study focuses on PK/PD relationships and biochemical effects (AChE activity) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, ka) for obidoxime, and no numeric PK values are present in the evidence. |
+| PGx | Thiermann_2009 | not_relevant | 0 | 0 | The paper describes the general pharmacokinetic and pharmacodynamic relationships of obidoxime in organophosphate poisoning but does not investigate the impact of specific gene variants or genotypes on these parameters. |
+| popPK | Tränkle_1996 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay investigating allosteric modulation, containing no pharmacokinetic parameters for obidoxime. |
+| PGx | Tränkle_1996 | not_relevant | 0 | 0 | The paper investigates the allosteric modulation of muscarinic receptors by various compounds, including obidoxime, but does not report any pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Tränkle_1998 | irrelevant | 0 | 0 | The study is an in vitro receptor binding investigation using obidoxime as a reference allosteric agent, not a pharmacokinetic study reporting disposition parameters for obidoxime. |
+| PGx | Tränkle_1998 | not_relevant | 0 | 0 | The paper reports receptor binding data and pharmacology of muscarinic M2 receptors, with no genetic variants or pharmacogenomic effects on obidoxime PK/PD. |
 
 
 </details>

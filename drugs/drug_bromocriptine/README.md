@@ -22,9 +22,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Fici_1997_cAMP](drugs/drug_bromocriptine/pd_Fici_1997_cAMP.md) | cAMP formation ← bromocriptine · direct sigmoid Emax (Hill) effect | — | Fici GJ et al., D1 dopamine receptor activity of anti-p…, Life sciences (1997) | [10.1016/s0024-3205(97)00126-4](https://doi.org/10.1016/s0024-3205(97)00126-4) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Valente_1997_PRL](drugs/drug_bromocriptine/pd_Valente_1997_PRL.md) | prolactin biomarker turnover ← bromocriptine | — | Valente D et al., Metabolite involvement in bromocriptine…, The Journal of pharmacology… (1997) | — |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Coronas_1999_adenylyl_cyclase_activity](drugs/drug_bromocriptine/pd_Coronas_1999_adenylyl_cyclase_activity.md) | adenylyl cyclase activity ← bromocriptine · direct sigmoid Emax (Hill) effect | — | Coronas V et al., Dopamine receptor coupling to adenylyl…, Neuroscience (1999) | [10.1016/s0306-4522(98)00460-6](https://doi.org/10.1016/s0306-4522(98)00460-6) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Fici_1997_cAMP](drugs/drug_bromocriptine/pd_Fici_1997_cAMP.md) | cAMP formation ← bromocriptine · direct sigmoid Emax (Hill) effect | — | Fici GJ et al., D1 dopamine receptor activity of anti-p…, Life sciences (1997) | [10.1016/s0024-3205(97)00126-4](https://doi.org/10.1016/s0024-3205(97)00126-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +38,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:14 | 3:15 | 0/0/0 | 2/1/0 | 0/0/0 | 78,215/3,994 | einfracz / qwen3.8-27b | 7 | 1/6 | 7/0 | 0 |
+| 2026-10-07 08:14 | 3:15 | 0/0/0 | 1/2/0 | 0/0/0 | 78,215/3,994 | einfracz / qwen3.8-27b | 7 | 1/6 | 7/0 | 0 |
 
 ## Coverage
 

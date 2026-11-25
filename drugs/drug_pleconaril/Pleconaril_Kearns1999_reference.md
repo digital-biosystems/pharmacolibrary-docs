@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for pleconaril was held back because the second reader disputed the parameterization and could not verify the Cmax value of 1272.5 ng/ml.
+> cross_check_disputed; x1_cross_check.
 
-<div class="pk-model-meta" hidden drug="pleconaril" model-id="Pleconaril_Kearns1999_reference" status="needs_review" stale="false" population="children aged 2 to 12 years" measured-compound="pleconaril" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pleconaril" model-id="Pleconaril_Kearns1999_reference" status="needs_review" stale="false" population="children and adolescents" measured-compound="pleconaril" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kearns GL, Abdel-Rahman SM, James LP, Blowey DL, Marshall JD, Wells TG et al. Single-dose pharmacokinetics of a pleconaril (VP63843) oral solution in children and adolescents. Pediatric Pharmacology Research Unit Network. Antimicrobial agents and chemotherapy 43(3):634–638 (1999).
@@ -54,13 +54,13 @@ Kearns GL, Abdel-Rahman SM, James LP, Blowey DL, Marshall JD, Wells TG et al. Si
 
 ### Reviewer guidance
 
-**The record for pleconaril was held back because the second reader disputed the parameterization and could not verify the Cmax value of 1272.5 ng/ml.**
+**cross_check_disputed; x1_cross_check.**
 
-The model builder assumed bioavailability was 1 to convert apparent clearance to mechanistic clearance, a substitution the second reader rejected in favor of an apparent parameterization. The second reader also disagreed on the identification of the clearance parameter and failed to confirm the reported Cmax, marking that value as missing. Additionally, the use of steady-state volume in a one-compartment model limits its ability to reproduce the early distribution phase of the concentration-time profile. Extracted — pleconaril: Cmax 1.27e+03 ng/ml, tmax 4.1 h, tlag 0.75 h, kabs 0.75 1/h, kel 0.16 1/h, CL/F 0.81 liters/h/kg, Vss 4.68 liters/kg, t1/2z 5.7 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pleconaril: Cmax 1.27e+03 ng/ml, tmax 4.1 h, tlag 0.75 h, kabs 0.75 1/h, kel 0.16 1/h, CL/F 0.81 liters/h/kg, Vss 4.68 liters/kg, t1/2z 5.7 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -151,7 +151,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.769, 0 of 1 reader(s) agree | 0.769 | cross-check disputed by a second reader: verdict disputed, agreement 0.769, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.769 (10 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.769 | cross-check contradicted by a second reader: verdict disputed; agreement 0.769 (10 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -167,7 +167,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pleconaril/Pleconaril_Kearns1999_reference/Pleconaril_Kearns1999_reference_modelica.zip" download>Pleconaril_Kearns1999_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pleconaril/Pleconaril_Kearns1999_reference/Pleconaril_Kearns1999_reference_modelica.zip" download>Pleconaril_Kearns1999_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pleconaril/Pleconaril_Kearns1999_reference/Pleconaril_Kearns1999_reference_fmi.zip" download>Pleconaril_Kearns1999_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pleconaril/Pleconaril_Kearns1999_reference/Pleconaril_Kearns1999_reference_matlab.zip" download>Pleconaril_Kearns1999_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pleconaril/Pleconaril_Kearns1999_reference/Pleconaril_Kearns1999_reference_matlab_simbio.zip" download>Pleconaril_Kearns1999_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
@@ -231,4 +231,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpleconaril%5D%20Pleconaril_Kearns1999_reference&body=Drug%3A%20pleconaril%0ARecord%3A%20Pleconaril_Kearns1999_reference%0APaper%3A%20Kearns_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pleconaril/Pleconaril_Kearns1999_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:20 UTC</sub>

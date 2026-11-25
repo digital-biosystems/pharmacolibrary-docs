@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;sertraline&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/&quot;},{&quot;label&quot;:&quot;Monfort_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sertraline_Poweleit2023_reference&quot;,&quot;label&quot;:&quot;Poweleit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Poweleit2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Xia2025_reference&quot;,&quot;label&quot;:&quot;Xia_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Xia2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kreilgaard_2008_5_HTP_score&quot;,&quot;label&quot;:&quot;Kreilgaard_2008 \u00b7 5-HTP score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/pd_Kreilgaard_2008_5_HTP_score.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kreilgaard_2008_SERT_occ&quot;,&quot;label&quot;:&quot;Kreilgaard_2008 \u00b7 SERT occ&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/pd_Kreilgaard_2008_SERT_occ.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sertraline_Poweleit2023_reference&quot;,&quot;label&quot;:&quot;Poweleit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Poweleit2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Xia2025_reference&quot;,&quot;label&quot;:&quot;Xia_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Xia2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kreilgaard_2008_5_HTP_score&quot;,&quot;label&quot;:&quot;Kreilgaard_2008 \u00b7 5-HTP score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/pd_Kreilgaard_2008_5_HTP_score.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kreilgaard_2008_SERT_occ&quot;,&quot;label&quot;:&quot;Kreilgaard_2008 \u00b7 SERT occ&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/pd_Kreilgaard_2008_SERT_occ.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > Only volume was extracted — no clearance.
 
-<div class="pk-model-meta" hidden drug="sertraline" model-id="Sertraline_Monfort2024_reference" status="needs_review" stale="false" population="pregnant and postpartum women (perinatal period)" measured-compound="sertraline" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sertraline" model-id="Sertraline_Monfort2024_reference" status="needs_review" stale="false" population="women during the perinatal period" measured-compound="sertraline" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Monfort A, Cardoso E, Eap CB, Ansermot N, Crettol S, Fischer Fumeaux CJ et al. A population pharmacokinetic model for sertraline in women during the perinatal period-A contribution from the ConcePTION project. British journal of clinical pharmacology 90(11):2849–2860 (2024).
@@ -17,9 +17,7 @@ Monfort A, Cardoso E, Eap CB, Ansermot N, Crettol S, Fischer Fumeaux CJ et al. A
 
 ## Population and dosing
 
-**Population:** pregnant and postpartum women (perinatal period) · condition depression/anxiety (SSRI-treated perinatal women) · age group adult · n = 38.
-
-**Dosing:** 50 mg, oral, multiple, every 24 h.
+**Population:** women during the perinatal period · age group adult.
 
 ## Model
 
@@ -33,15 +31,15 @@ Monfort A, Cardoso E, Eap CB, Ansermot N, Crettol S, Fischer Fumeaux CJ et al. A
 
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
-| VSERT/F (L) | V/F | 2251.5 | L | 18.4 |
-| kaSERT (h–1) | kabs | 0.314 | h–1 | 26.5 |
-| kMC (h–1) | kmp | 0.135 | h–1 | 47.5 |
-| kCM (h–1) | k12 | 0.367 | h–1 | 46.2 |
+| VSERT/F (L) | V/F | 2320 | L | 18.4 |
+| kaSERT (h–1) | kabs | 0.315 | h–1 | 26.5 |
+| MPR | AUC ratio | 1.42 |  | 6.3 |
+| FAT on MPR (%) | Fab | 93.1 | % | 27.9 |
 | theta_q27_cyp2c19 | theta_q27_cyp2c19 | 69.6 |  | 19.3 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.706). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,9 +51,9 @@ Monfort A, Cardoso E, Eap CB, Ansermot N, Crettol S, Fischer Fumeaux CJ et al. A
 
 **Only volume was extracted — no clearance.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — sertraline: V/F 2.25e+03 L, kabs 0.314 h–1, kmp 0.135 h–1, k12 0.367 h–1.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — sertraline: V/F 2.32e+03 L, kabs 0.315 h–1, AUC ratio 1.42, Fab 93.1 %.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sertraline, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fat on mpr: this record has 93.1, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,11 +61,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
 |---|---|---|---|---|---|---|---|---|---|
-| VSERT/F (L) | `Q76` · V/F | 2251.5 | L | 2.252 | m3 | l | 18.4 | llm (0.6) | Monfort_2024_table_p8_1:row2:col1, Monfort_2024_table_p8_1:row2:col2, Monfort_2024_table_p8_1:row2:col3 |
-| kaSERT (h–1) | `Q49` · kabs | 0.314 | h–1 | 8.722e-05 | 1/s | 1/h | 26.5 | llm (0.6) | Monfort_2024_table_p8_1:row3:col1, Monfort_2024_table_p8_1:row3:col2, Monfort_2024_table_p8_1:row3:col3 |
-| kMC (h–1) | `Q372` · kmp | 0.135 | h–1 | 3.75e-05 | 1/s | 1/h | 47.5 | llm (0.6) | Monfort_2024_table_p8_1:row6:col1, Monfort_2024_table_p8_1:row6:col2, Monfort_2024_table_p8_1:row6:col3 |
-| kCM (h–1) | `Q301` · k12 | 0.367 | h–1 | 0.0001019 | 1/s | 1/h | 46.2 | llm (0.6) | Monfort_2024_table_p8_1:row7:col1, Monfort_2024_table_p8_1:row7:col2, Monfort_2024_table_p8_1:row7:col3 |
-| theta_q27_cyp2c19 | `Q900` · theta_q27_cyp2c19 | 69.6 |  |  |  |  | 19.3 |  | Monfort_2024_table_p8_1:row0:col1, Monfort_2024_table_p8_1:row0:col2, Monfort_2024_table_p8_1:row0:col3 |
+| VSERT/F (L) | `Q76` · V/F | 2320 | L | 2.32 | m3 | l | 18.4 | llm_corrected (0.6) | Monfort_2024_table_p8_1:row2:col1 |
+| kaSERT (h–1) | `Q49` · kabs | 0.315 | h–1 | 8.75e-05 | 1/s | 1/h | 26.5 | llm_confirmed (0.6) | Monfort_2024_table_p8_1:row3:col1 |
+| MPR | `Q21` · AUC ratio | 1.42 |  | 1.42 |  |  | 6.3 | llm (0.6) | Monfort_2024_table_p8_1:row4:col1 |
+| FAT on MPR (%) | `Q40` · Fab | 93.1 | % | 0.931 |  | % | 27.9 | llm (0.6) | Monfort_2024_table_p8_1:row5:col1 |
+| theta_q27_cyp2c19 | `Q900` · theta_q27_cyp2c19 | 69.6 |  |  |  |  | 19.3 |  | Monfort_2024_table_p8_1:row0:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,35 +76,29 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 **Interpretation flags:**
 - column 'final model estimates (rse %)' classified 'rse' by the LLM but kept as the estimate: the header names the point value
-- dropped unlinked row (NIL): 'MPR' — extend the ontology if this is a real PK parameter (source ['Monfort_2024_table_p8_1:row4:col1', 'Monfort_2024_table_p8_1:row4:col2', 'Monfort_2024_table_p8_1:row4:col3'])
-- dropped unlinked row (NIL): 'FAT on MPR (%)' — extend the ontology if this is a real PK parameter (source ['Monfort_2024_table_p8_1:row5:col1', 'Monfort_2024_table_p8_1:row5:col2', 'Monfort_2024_table_p8_1:row5:col3'])
+- dropped unlinked row (NIL): 'kMC (h–1)' — extend the ontology if this is a real PK parameter (source ['Monfort_2024_table_p8_1:row6:col1'])
+- dropped unlinked row (NIL): 'kCM (h–1)' — extend the ontology if this is a real PK parameter (source ['Monfort_2024_table_p8_1:row7:col1'])
 - covariate effect for Q27 has no base parameter row (kept as unattached equation-variable)
 - dropped duplicate covariate effect 'cyp2c19'/'' on Q27 — ambiguous identity (two shifts cannot share one category)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=sertraline
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- pharmacogenetic covariate 'theta_q27_cyp2c19' (cyp2c19) — PGx domain
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.706 (12/17 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.8 (12/15 fields) | 3 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[kcm].parameter_id` | Q301 | Q48 | mismatch |
-| `gpt-oss-120b` | `parameters[kmc].parameter_id` | Q372 | Q301 | mismatch |
-| `gpt-oss-120b` | `parameters[mpr]` |  | 1.42 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | sertraline | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | sertraline | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[fat on mpr]` | 93.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kmc]` |  | 0.141 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mpr].parameter_id` | Q21 | Q410 | mismatch |
 
 </details>
 
@@ -123,13 +115,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q301 | pass | 1 / [time] |  | ['Monfort_2024_table_p8_1:row7:col1', 'Monfort_2024_table_p8_1:row7:col2', 'Monfort_2024_table_p8_1:row7:col3'] |
-| C5_dimension_Q372 | pass | 1 / [time] |  | ['Monfort_2024_table_p8_1:row6:col1', 'Monfort_2024_table_p8_1:row6:col2', 'Monfort_2024_table_p8_1:row6:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Monfort_2024_table_p8_1:row3:col1', 'Monfort_2024_table_p8_1:row3:col2', 'Monfort_2024_table_p8_1:row3:col3'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Monfort_2024_table_p8_1:row2:col1', 'Monfort_2024_table_p8_1:row2:col2', 'Monfort_2024_table_p8_1:row2:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Monfort_2024_table_p8_1:row3:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Monfort_2024_table_p8_1:row2:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q76 | pass | volume within physiological range | 2.25e+03 L | ['Monfort_2024_table_p8_1:row2:col1', 'Monfort_2024_table_p8_1:row2:col2', 'Monfort_2024_table_p8_1:row2:col3'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 2.32e+03 L | ['Monfort_2024_table_p8_1:row2:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -163,4 +153,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsertraline%5D%20Sertraline_Monfort2024_reference&body=Drug%3A%20sertraline%0ARecord%3A%20Sertraline_Monfort2024_reference%0APaper%3A%20Monfort_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sertraline/Sertraline_Monfort2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:44 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 15:33 UTC</sub>

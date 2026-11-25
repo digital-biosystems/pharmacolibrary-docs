@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;potassium clorazepate&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/&quot;},{&quot;label&quot;:&quot;Kirschbrown_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumClorazepate_Diack2024_reference&quot;,&quot;label&quot;:&quot;Diack_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Diack2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Kirschbrown2019_reference&quot;,&quot;label&quot;:&quot;Kirschbrown_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kirschbrown2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;PotassiumClorazepate_Kratochwil2021_reference&quot;,&quot;label&quot;:&quot;Kratochwil_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kratochwil2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Pressler2024_reference&quot;,&quot;label&quot;:&quot;Pressler_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Pressler2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sigel_1988_GABA_current&quot;,&quot;label&quot;:&quot;Sigel_1988 \u00b7 GABA current&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/pd_Sigel_1988_GABA_current.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumClorazepate_Diack2024_reference&quot;,&quot;label&quot;:&quot;Diack_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Diack2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Kirschbrown2019_reference&quot;,&quot;label&quot;:&quot;Kirschbrown_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kirschbrown2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;PotassiumClorazepate_Kratochwil2021_reference&quot;,&quot;label&quot;:&quot;Kratochwil_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kratochwil2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Pressler2024_reference&quot;,&quot;label&quot;:&quot;Pressler_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Pressler2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper studies a different drug, so the extracted clearance of 0.176 L/d is not for potassium clorazepate.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="potassium clorazepate" model-id="PotassiumClorazepate_Kirschbrown2019_reference" status="rejected" stale="false" population="" measured-compound="potassium_clorazepate" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Kirschbrown WP, Wynne C, Kågedal M, Wada R, Li H, Wang B et al. Development of 
 
 ### Reviewer guidance
 
-**The paper studies a different drug, so the extracted clearance of 0.176 L/d is not for potassium clorazepate.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The relevance screen rejected the source paper because its title and abstract do not name potassium clorazepate. Consequently, the recorded clearance rate of 0.176 L/d and volume of 3.73 L are attributed to the wrong molecule. A second reader disagreed with the rejection, noting specific value discrepancies in their review. Extracted — potassium clorazepate: CL 0.176 L/d, V1 3.73 L.
+Extracted — potassium clorazepate: CL 0.176 L/d, V1 3.73 L.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q21: this record has 0.8, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -124,7 +124,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.571 (4 of 7 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.571 | cross-check contradicted by a second reader: verdict disputed; agreement 0.571 (4 of 7 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (glm-5.3-flash) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -152,4 +152,4 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpotassium_clorazepate%5D%20PotassiumClorazepate_Kirschbrown2019_reference&body=Drug%3A%20potassium_clorazepate%0ARecord%3A%20PotassiumClorazepate_Kirschbrown2019_reference%0APaper%3A%20Kirschbrown_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kirschbrown2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:05 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:31 UTC</sub>

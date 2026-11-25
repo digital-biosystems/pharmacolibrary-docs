@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Repotrectinib lag time 0.421 h was omitted from the model coverage, and covariate effects were not simulated.
+> The covariate scenarios were not simulated; t3_param_coverage.
 
 <div class="pk-model-meta" hidden drug="repotrectinib" model-id="Repotrectinib_Du2025_reference" status="needs_review" stale="false" population="healthy volunteers and patients with advanced solid tumors harboring ALK, ROS1, or NTRK1-3 rearrangements" measured-compound="repotrectinib" parameterization="mechanistic" topology="2C"></div>
 
@@ -65,13 +65,13 @@ Du S, Hu Z, Shen J, Hamuro L, Lam J, Lu M et al. A Novel Empirical Autoinduction
 
 ### Reviewer guidance
 
-**Repotrectinib lag time 0.421 h was omitted from the model coverage, and covariate effects were not simulated.**
+**The covariate scenarios were not simulated; t3_param_coverage.**
 
-The record defines an absorption lag time of 0.421 h, but this parameter was not included in the emitted set of five expected parameters. Additionally, covariate scenarios such as body weight and age effects were defined in the record but were not exercised during simulation. Extracted — repotrectinib: CL 7.1 L/h, V1 19.8 L, V2 221 L, Q 4.98 L/h, Fab 0.52, Frel 0.533, tlag 0.421 h.
+The base model was simulated, not the covariate effects the record defines. Extracted — repotrectinib: CL 7.1 L/h, V1 19.8 L, V2 221 L, Q 4.98 L/h, Fab 0.52, Frel 0.533, tlag 0.421 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of clmaxage_age_effect_on_clmax: this record has none, the second reading -0.292; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -216,7 +216,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.765, 0 of 1 reader(s) agree | 0.765 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.765 (26 of 34 compared fields agree, 8 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.765 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped | 1.79 | 0.0002097 |  | unresolved concentration unit (exp 'fed versus fasted states at steady state', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 2.81 | 0.0002097 |  | unresolved concentration unit (exp 'fed versus fasted states on Day 1', sim 'kg/m3') |
 | T1_cmin_ss | reference | skipped | 1.05 |  |  | no simulated metric for this quantity (single reference sim) |

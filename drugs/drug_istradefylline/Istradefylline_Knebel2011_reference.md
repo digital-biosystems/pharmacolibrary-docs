@@ -4,11 +4,11 @@
 
 # istradefylline — `Istradefylline_Knebel2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was rejected because the steady-state area under the curve parameter (35%) was misidentified as a structural parameter with incompatible mass-volume-time dimensions.
+> No value for istradefylline's volume of distribution and absorption lag time; t3_param_coverage (+1 more).
 
-<div class="pk-model-meta" hidden drug="istradefylline" model-id="Istradefylline_Knebel2011_reference" status="rejected" stale="false" population="healthy subjects and patients with Parkinson&#39;s disease" measured-compound="istradefylline" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="istradefylline" model-id="Istradefylline_Knebel2011_reference" status="model_quarantined" stale="false" population="healthy subjects and patients with Parkinson&#39;s disease" measured-compound="istradefylline" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Knebel W, Rao N, Uchimura T, Mori A, Fisher J, Gastonguay MR et al. Population pharmacokinetic analysis of istradefylline in healthy subjects and in patients with Parkinson's disease. Journal of clinical pharmacology 51(1):40–52 (2011).
@@ -16,17 +16,17 @@ Knebel W, Rao N, Uchimura T, Mori A, Fisher J, Gastonguay MR et al. Population p
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with Parkinson's disease · condition healthy and Parkinson's disease · age group mixed · n = 1449.
+**Population:** healthy subjects and patients with Parkinson's disease · condition healthy, Parkinson's disease · age group mixed.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 6 extracted.  
-**Availability:** No model was generated from this record.
+**Parameters:** 5 extracted.  
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -35,11 +35,10 @@ Knebel W, Rao N, Uchimura T, Mori A, Fisher J, Gastonguay MR et al. Population p
 | Q | Q | 21.6 | L/h |
 | V3/F | V3/F | 307 | L |
 | Ka | kabs | 0.464 | h(-1) |
-| Istradefylline area under the concentration-time curve at steady-state increased | AUCSS | 35 | % |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +48,13 @@ Knebel W, Rao N, Uchimura T, Mori A, Fisher J, Gastonguay MR et al. Population p
 
 ### Reviewer guidance
 
-**The record was rejected because the steady-state area under the curve parameter (35%) was misidentified as a structural parameter with incompatible mass-volume-time dimensions.**
+**No value for istradefylline's volume of distribution and absorption lag time; t3_param_coverage (+1 more).**
 
-A dimensionality check failed for the parameter labeled AUCSS, which holds a value of 35% and describes a summary statistic of exposure. The software expected a structural parameter with mass, length, and time units, causing a conflict with the dimensionless percentage value. Additionally, the second reader disagreed with the identification of istradefylline as the primary analyte and could not confirm any of the extracted parameter values, including clearance, volumes of distribution, and absorption rate. Extracted — istradefylline: CL/F 5.76 L/h, V2/F 198 L, Q 21.6 L/h, V3/F 307 L, kabs 0.464 h(-1), AUCSS 35 %.
+The model was built, but istradefylline's volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — istradefylline: CL/F 5.76 L/h, V2/F 198 L, Q 21.6 L/h, V3/F 307 L, kabs 0.464 h(-1).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has istradefylline, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -66,7 +65,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | Q | `Q30` · Q | 21.6 | L/h | 6e-06 | m3/s | l/h | exact (1) | Knebel_2011:abstract |
 | V3/F | `Q78` · V3/F | 307 | L | 0.307 | m3 | l | exact (1) | Knebel_2011:abstract |
 | Ka | `Q49` · kabs | 0.464 | h(-1) | 0.0001289 | 1/s | 1/h | exact (1) | Knebel_2011:abstract |
-| Istradefylline area under the concentration-time curve at steady-state increased | `Q18` · AUCSS | 35 | % |  |  | % | llm (0.6) | Knebel_2011:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -76,47 +74,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'Istradefylline area under the concentration-time curve at steady-state increased' → Q18 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'Istradefylline area under the concentration-time curve at steady-state decreased' → Q18 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped duplicate Q18 ('Istradefylline area under the concentration-time curve at steady-state decreased', value 38) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=istradefylline
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- status held at "Needs review" — not promoted
+- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Knebel_2011_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Knebel_2011_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
+| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
 
-<details><summary>13 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl/f]` | 5.76 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` |  | 5.76 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[istradefylline area under the concentration-time curve at steady-state increased]` | 35 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 0.464 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` |  | 0.464 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q]` | 21.6 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q]` |  | 21.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v2/f]` | 198 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v2/f]` |  | 198 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v3/f]` | 307 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v3/f]` |  | 307 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | istradefylline | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | istradefylline | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -128,10 +102,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q18 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Knebel_2011:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Knebel_2011:abstract'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Knebel_2011:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Knebel_2011:abstract'] |
@@ -141,6 +114,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 5.76 L/h | ['Knebel_2011:abstract'] |
 | C9_phys_window_Q82 | pass | volume within physiological range | 198 L | ['Knebel_2011:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (9 of 9 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -152,9 +137,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -164,4 +159,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bistradefylline%5D%20Istradefylline_Knebel2011_reference&body=Drug%3A%20istradefylline%0ARecord%3A%20Istradefylline_Knebel2011_reference%0APaper%3A%20Knebel_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_istradefylline/Istradefylline_Knebel2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 14:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:11 UTC</sub>

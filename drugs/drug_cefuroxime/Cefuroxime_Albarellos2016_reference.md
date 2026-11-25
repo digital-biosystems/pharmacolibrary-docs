@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Cefuroxime clearance was recorded as 0.011 L/h/kg instead of the source value 0.12 mg/kg, and the record lacks a fitted model.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit h ([time]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Albarellos2016_reference" status="rejected" stale="false" population="beagle dogs" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Albarellos GA, Montoya L, Lorenzini PM, Passini SM, Lupi MP, Landoni MF. Pharmac
 
 ### Reviewer guidance
 
-**Cefuroxime clearance was recorded as 0.011 L/h/kg instead of the source value 0.12 mg/kg, and the record lacks a fitted model.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit h ([time]) vs [mass] / [length] ** 3.**
 
-The clearance value in the record is 0.011 L/h/kg, whereas the source text label indicates a mean of 0.12 mg/kg. Because the record was built from the abstract alone, these summary statistics do not constitute a fitted pharmacokinetic model. A dimensional analysis error was also flagged for a parameter that carries time units but was expected to have mass per volume dimensions. A second reader disagreed with the extraction of clearance, half-life, and absorption rate, noting they were missing from the source. Extracted — cefuroxime: Cmax 23 μg/mL, tmax 0.43 h, Fab 79.7 %, fe 77.2 %, t1/2z 1.12 h, MRT 1.49 h, Ct 12 h, CL 0.011 L/h/kg, … (+2).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefuroxime: Cmax 23 μg/mL, tmax 0.43 h, Fab 79.7 %, fe 77.2 %, t1/2z 1.12 h, MRT 1.49 h, Ct 12 h, CL 0.011 L/h/kg, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bioavailability: this record has none, the second reading 79.70; it also differs on 9 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rifabutin clearance of 16.2 L/h is implausibly high for children, indicating a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="rifabutin" model-id="Rifabutin_Semere2024_reference" status="rejected" stale="false" population="HIV/TB co-infected children" measured-compound="rifabutin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -50,13 +50,13 @@ Semere Gebreyesus M, Wasmann RE, McIlleron H, Oladokun R, Okonkwo P, Wiesner L e
 
 ### Reviewer guidance
 
-**Rifabutin clearance of 16.2 L/h is implausibly high for children, indicating a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record assigns a total clearance of 16.2 L/h to rifabutin, which falls outside the physiological window for this pediatric population. The second reader disputed the metabolite identity, identifying it as 25-o-desacetyl rifabutin rather than des-rifabutin. Additionally, there was disagreement on whether the clearance value was correctly extracted or attributed to the compound. Extracted — rifabutin: CL 16.2 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
+Extracted — rifabutin: CL 16.2 L/h, V 0.135 L, kabs 0.16 h−1, tlag 0.825 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rifabutin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

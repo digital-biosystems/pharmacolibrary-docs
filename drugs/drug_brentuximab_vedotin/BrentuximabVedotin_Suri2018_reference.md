@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the MMAE metabolite has no kinetic path from the dose, leaving it orphaned despite a listed link.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="brentuximab vedotin" model-id="BrentuximabVedotin_Suri2018_reference" status="rejected" stale="false" population="patients with CD30-positive malignancies" measured-compound="brentuximab vedotin (ADC) and MMAE" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -50,13 +50,13 @@ Suri A, Mould DR, Liu Y, Jang G, Venkatakrishnan K. Population PK and Exposure-R
 
 ### Reviewer guidance
 
-**The record was rejected because the MMAE metabolite has no kinetic path from the dose, leaving it orphaned despite a listed link.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure includes the antibody-drug conjugate and its metabolite MMAE, but the record indicates the metabolite is unreachable from the dosed compartment. Although a link from the antibody-drug conjugate to MMAE is defined, the system flagged the metabolite as an orphan. The parameters for central volume 3.5 L, peripheral volume 3.67 L, and clearance 0.0478 L/h are recorded for the combined compound, yet the structural integrity check failed. Extracted — brentuximab vedotin (ADC) and MMAE: CL 0.0478 L/h, V1 3.5 L, V2 3.67 L.
+None of the extracted parameters is brentuximab vedotin's own; they describe brentuximab vedotin (ADC) and MMAE. Extracted — brentuximab vedotin (ADC) and MMAE: CL 0.0478 L/h, V1 3.5 L, V2 3.67 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has brentuximab vedotin (ADC) and MMAE, the second reading brentuximab vedotin; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

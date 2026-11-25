@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Melagatran's clearance, volume, and absorption parameters lack extracted values, forcing the model to rely on unreported defaults.
+> No value for melagatran's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="melagatran" model-id="Melagatran_Cullberg2005_reference" status="model_quarantined" stale="false" population="patients with acute deep vein thrombosis" measured-compound="melagatran" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Cullberg M, Eriksson UG, Wåhlander K, Eriksson H, Schulman S, Karlsson MO. Phar
 
 ### Reviewer guidance
 
-**Melagatran's clearance, volume, and absorption parameters lack extracted values, forcing the model to rely on unreported defaults.**
+**No value for melagatran's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations (+1 more).**
 
-The record was built from the abstract alone, so no explicit estimates were available for the drug's clearance, volume of distribution, or absorption kinetics. Consequently, these parameters were left at library placeholders while apparent parameters like 27.3 L/h clearance were reported. A second reader failed to agree on the mapping of these values to specific pharmacokinetic parameters, resulting in a disagreement ratio of 0.455. Extracted — melagatran: CLm/F 27.3 L/h, Vm/F 176 L, IIV 21 %.
+The model was built, but melagatran's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — melagatran: CLm/F 27.3 L/h, Vm/F 176 L, IIV 21 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance after oral administration: this record has none, the second reading 27.3; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check agreement 0.455 is below 0.5: verdict partial, agreement 0.455, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.455 (5 of 11 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.455 | cross-check agreement 0.455 is below 0.5: verdict partial; agreement 0.455 (5 of 11 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

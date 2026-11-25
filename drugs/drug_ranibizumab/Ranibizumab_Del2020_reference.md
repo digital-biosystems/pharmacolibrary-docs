@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Ranibizumab’s reported total clearance of 0.023 mL/h was judged outside the physiological window, indicating a likely unit/scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ranibizumab" model-id="Ranibizumab_Del2020_reference" status="rejected" stale="false" population="" measured-compound="ranibizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Del Amo EM, Griffiths JR, Klaska IP, Hoke J, White A, Aarons L et al. Intravitre
 
 ### Reviewer guidance
 
-**Ranibizumab’s reported total clearance of 0.023 mL/h was judged outside the physiological window, indicating a likely unit/scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record gives total clearance as 0.023 mL/h, and its magnitude was judged implausible. It also reports a central-compartment volume of 1.5 mL, but no finding identifies that value as a reason for rejection. Extracted — ranibizumab: CL 0.023 mL/h, V1 1.5 mL.
+Extracted — ranibizumab: CL 0.023 mL/h, V1 1.5 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.023, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

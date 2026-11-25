@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Etoposide’s peripheral-compartment volume (V2), reported as 4.1 L, was rejected because the two-compartment model contains an unreachable or orphan compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="etoposide" model-id="Etoposide_Nguyen1998_reference" status="rejected" stale="false" population="cancer patients" measured-compound="etoposide" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Nguyen L, Chatelut E, Chevreau C, Tranchand B, Lochon I, Bachaud JM et al. Popul
 
 ### Reviewer guidance
 
-**Etoposide’s peripheral-compartment volume (V2), reported as 4.1 L, was rejected because the two-compartment model contains an unreachable or orphan compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record reports a peripheral-compartment volume of 4.1 L, and the model structure was found to contain an unreachable or orphan compartment. Only the abstract was read, so reported summary statistics stood in for a fitted model. Extracted — etoposide: V1 5.5 L, V2 4.1 L, Fab 66 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — etoposide: V1 5.5 L, V2 4.1 L, Fab 66 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etoposide, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

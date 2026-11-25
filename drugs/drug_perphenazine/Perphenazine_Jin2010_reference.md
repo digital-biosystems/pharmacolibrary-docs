@@ -8,7 +8,7 @@
 
 > The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="perphenazine" model-id="Perphenazine_Jin2010_reference" status="needs_review" stale="false" population="adults with schizophrenia (CATIE)" measured-compound="perphenazine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="perphenazine" model-id="Perphenazine_Jin2010_reference" status="needs_review" stale="false" population="schizophrenia patients from CATIE" measured-compound="perphenazine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Jin Y, Pollock BG, Coley K, Miller D, Marder SR, Florian J et al. Population pharmacokinetics of perphenazine in schizophrenia patients from CATIE: impact of race and smoking. Journal of clinical pharmacology 50(1):73–80 (2010).
@@ -16,7 +16,7 @@ Jin Y, Pollock BG, Coley K, Miller D, Marder SR, Florian J et al. Population pha
 
 ## Population and dosing
 
-**Population:** adults with schizophrenia (CATIE) · condition schizophrenia · age group adult · n = 156.
+**Population:** schizophrenia patients from CATIE · condition schizophrenia · age group adult · n = 156.
 
 ## Model
 
@@ -31,11 +31,11 @@ Jin Y, Pollock BG, Coley K, Miller D, Marder SR, Florian J et al. Population pha
 | label | parameter | value | unit |
 |---|---|---|---|
 | population mean clearance | CL | 483 | L/h |
-| volume of distribution | V | 18200 | L |
+| population mean volume of distribution | V | 18 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Jin Y, Pollock BG, Coley K, Miller D, Marder SR, Florian J et al. Population pha
 
 **The clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — perphenazine: CL 483 L/h, V 1.82e+04 L.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — perphenazine: CL 483 L/h, V 18 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of volume of distribution: this record has 18200, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 48% higher: this record has none, the second reading 48; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,7 +58,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | population mean clearance | `Q22` · CL | 483 | L/h | 0.0001342 | m3/s | l/h | llm_confirmed (0.6) | Jin_2010:abstract |
-| volume of distribution | `Q61` · V | 18200 | L | 18.2 | m3 | l | exact (1) | Jin_2010:abstract |
+| population mean volume of distribution | `Q61` · V | 18 | L | 0.018 | m3 | l | llm_confirmed (0.6) | Jin_2010:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -68,14 +68,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('estimated population mean clearance in nonsmoking African Americans', value 512) — already have one for this compound
-- dropped duplicate Q22 ('estimated population mean clearance in nonsmoking other races', value 346) — already have one for this compound
-- covariate smoking for CL from footnote/prose kept as documentation only (['Jin_2010:abstract'])
 - covariate category for CL from footnote/prose kept as documentation only (['Jin_2010:abstract'])
+- covariate smoking for CL from footnote/prose kept as documentation only (['Jin_2010:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=perphenazine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Jin_2010_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -83,17 +79,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.833 (5/6 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 18200 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[48% higher]` |  | 48 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[population mean volume of distribution]` | 18 |  | only_one_extracted |
 
 </details>
 
@@ -115,7 +112,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 483 | ['Jin_2010:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 483 L/h | ['Jin_2010:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.82e+04 L | ['Jin_2010:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 18 L | ['Jin_2010:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -149,4 +146,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bperphenazine%5D%20Perphenazine_Jin2010_reference&body=Drug%3A%20perphenazine%0ARecord%3A%20Perphenazine_Jin2010_reference%0APaper%3A%20Jin_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_perphenazine/Perphenazine_Jin2010_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 16:27 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:47 UTC</sub>

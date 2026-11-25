@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected for an unreachable compound; it reports abemaciclib total clearance of 21.7 L/h and a liposomal-doxorubicin-to-doxorubicin hydrolysis link.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="abemaciclib" model-id="Abemaciclib_Fleisher2021_reference" status="rejected" stale="false" population="clinical subjects from published pharmacokinetic studies; clinical model translated to TNBC patients" measured-compound="abemaciclib; doxorubicin; liposomal doxorubicin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -48,13 +48,13 @@ Fleisher B, Lezeau J, Werkman C, Jacobs B, Ait-Oudhia S. In vitro to Clinical Tr
 
 ### Reviewer guidance
 
-**The record was rejected for an unreachable compound; it reports abemaciclib total clearance of 21.7 L/h and a liposomal-doxorubicin-to-doxorubicin hydrolysis link.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model reports abemaciclib absorption rate constant 0.31 1/h, total clearance 21.7 L/h, and central-compartment volume 592 L; the rejection finding is structural, not a stated parameter-value failure. It flags an unreachable compartment or unlinked metabolite but does not identify which one. The record lists abemaciclib, doxorubicin, and liposomal doxorubicin, while the second reader identifies abemaciclib alone and disputes the hydrolysis link. Extracted — abemaciclib: kabs 0.31 1/h, CL 21.7 L/h, V1 592 L.
+Extracted — abemaciclib: kabs 0.31 1/h, CL 21.7 L/h, V1 592 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has abemaciclib; doxorubicin; liposomal doxorubicin, the second reading abemaciclib; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

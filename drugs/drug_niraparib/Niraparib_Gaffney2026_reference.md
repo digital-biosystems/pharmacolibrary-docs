@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The intercompartmental clearance parameter lacks a unit, preventing conversion to SI and blocking model validation for niraparib.
+> MTT has no unit; c2_base_Q290 failed (ratio 0.0353).
 
 <div class="pk-model-meta" hidden drug="niraparib" model-id="Niraparib_Gaffney2026_reference" status="needs_review" stale="false" population="patients with advanced solid tumors or ovarian cancer" measured-compound="niraparib" parameterization="apparent" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Gaffney A, Franchetti Y, Desrosiers M, Trame MN, Jewell RC. Population Pharmacok
 
 ### Reviewer guidance
 
-**The intercompartmental clearance parameter lacks a unit, preventing conversion to SI and blocking model validation for niraparib.**
+**MTT has no unit; c2_base_Q290 failed (ratio 0.0353).**
 
-The intercompartmental clearance between the central and peripheral compartments was rejected because no unit was provided, leaving no value in standard units for the model. A validation check also failed with a ratio of 0.0353, indicating a significant parameter discrepancy. These issues prevented the model from being accepted for publication. Extracted — niraparib: CL/F 15.9 L/h, V1/F 450 L, Q/F 43.8 L/h, MTT 1.78 h, V3/F 361 L, Fab 1, kabs 0.85 /h.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — niraparib: CL/F 15.9 L/h, V1/F 450 L, Q/F 43.8 L/h, MTT 1.78 h, V3/F 361 L, Fab 1, kabs 0.85 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has niraparib, the second reading invalid key; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 17:44 | 0:56 | 0/0/0 | 0/0/0 | 0/0/0 | 7,382/493 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 04:57 | 0:04 | 0/0/0 | 0/0/0 | 0/0/0 | 3,745/155 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -48,19 +48,26 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Zeng_1997.pdf` | Zeng XP et al., Muscarinic m4 receptor activation by so…, European journal of pharmac… (1997) | pd | 4 | [10.1016/s0014-2999(96)00956-9](https://doi.org/10.1016/s0014-2999(96)00956-9) | [9085047](https://www.ncbi.nlm.nih.gov/pubmed/9085047) | metadata signals extractable PD data (EC50) |
 | `Guthrie_1997.pdf` | Guthrie SK et al., The effect of paroxetine on thiothixene…, Journal of clinical pharmac… (1997) | pgx | 7 | [10.1046/j.1365-2710.1997.95175951.x](https://doi.org/10.1046/j.1365-2710.1997.95175951.x) | [9447478](https://www.ncbi.nlm.nih.gov/pubmed/9447478) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-10-06 17:44 UTC</sub>
+<sub>queue written 2026-11-24 04:57 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chang_1988 | irrelevant | 0 | 0 | Pharmacodynamic (HVA elevation) dose-response study in rats; no PK parameters for thiothixene are reported. |
-| PGx | Guthrie_1997 | not_relevant | 0 | 0 | Paper reports a drug-drug interaction (paroxetine on thiothixene PK), not a pharmacogenomic effect of a gene variant on PK/PD parameters. |
-| popPK | Schaefer_1984 | irrelevant | 0 | 0 | Behavioral pharmacology study in rats with no PK parameters for thiothixene; only dose-response locomotor data. |
-| popPK | Sheppard_1974 | irrelevant | 0 | 0 | A prescription-practice survey with no pharmacokinetic data; thiothixene only appears in a list of co-prescribed drugs. |
-| PGx | Shin_1999 | not_relevant | 2 | 5 | Reports in vitro CYP2D6 inhibition Ki for cis-thiothixene, but no gene variant/genotype effect on PK/PD parameters. |
-| PGx | Sun_2012 | not_relevant | 0 | 0 | Network-based database analysis of antipsychotics; no gene variant effect on tiotixene PK/PD parameters reported. |
-| popPK | Zeng_1997 | irrelevant | 0 | 0 | In vitro pharmacology study of muscarinic m4 receptor effects; thiothixene is only a tested compound with no PK parameters. |
+| popPK | Chang_1988 | irrelevant | 0 | 0 | The study measures homovanillic acid levels in rat brain tissue to determine potency, which is a pharmacodynamic/neurochemical assay, not a pharmacokinetic study of tiotixene (or thiothixene). |
+| PGx | Chang_1988 | not_relevant | 0 | 0 | The paper does not investigate the pharmacogenomics of tiotixene; it presents a general animal dose-response study comparing antipsychotic potencies based on HVA levels, with no focus on genetic variants. |
+| popPK | Guthrie_1997 | irrelevant | 0 | 0 | no_text gate: only 56 chars of text extracted (&lt; 400) |
+| PGx | Guthrie_1997 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (paroxetine affecting thiothixene), not a pharmacogenomic effect driven by a gene variant. |
+| popPK | Schaefer_1984 | irrelevant | 0 | 0 | The paper reports behavioral data (locomotor activity) and not pharmacokinetic parameters for tiotixene. |
+| PGx | Schaefer_1984 | not_relevant | 0 | 0 | The paper investigates drug interactions and locomotor activity in rats, containing no information on pharmacogenomics, genetic variants, or human pharmacokinetics/pharmacodynamics of thiothixene. |
+| popPK | Sheppard_1974 | irrelevant | 0 | 0 | The paper is a survey of prescribing practices for psychotropic drug combinations and contains no pharmacokinetic data or parameters for thiothixene (or any other drug). |
+| PGx | Sheppard_1974 | not_relevant | 0 | 0 | The paper discusses psychiatric polypharmacy practices and drug combinations, without mentioning tiotixene or any pharmacogenomic effects on PK/PD parameters. |
+| popPK | Shin_1999 | irrelevant | 0 | 0 | This is an in vitro study measuring enzyme inhibition (Ki values) of CYP isoforms, not pharmacokinetic disposition parameters (CL, V, ka) for tiotixene. |
+| PGx | Shin_1999 | not_relevant | 1 | 1 | The paper reports in vitro CYP2D6 inhibition by tiotixene, not a pharmacogenomic effect (gene variant/genotype) on its PK/PD parameters. |
+| popPK | Sun_2012 | irrelevant | 0 | 0 | The study is a network-based pharmacogenetics/informatics analysis of antipsychotics and does not report quantitative pharmacokinetic parameters for tiotixene. |
+| PGx | Sun_2012 | not_relevant | 0 | 0 | The paper performs a general network analysis of antipsychotic targets and drug-drug interactions without reporting specific pharmacogenomic effects on PK or PD parameters for tiotixene (or thiothixene). |
+| popPK | Zeng_1997 | irrelevant | 0 | 0 | The paper investigates muscarinic receptor activity in vitro and does not report any pharmacokinetic parameters for tiotixene. |
+| PGx | Zeng_1997 | not_relevant | 0 | 0 | The paper investigates receptor binding of atypical and typical antipsychotics, but does not report pharmacogenomic effects on the PK/PD of tiotixene. |
 
 
 </details>

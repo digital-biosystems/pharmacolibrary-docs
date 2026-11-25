@@ -23,8 +23,6 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Enyeart_1996_cortisol_secretion](drugs/drug_penfluridol/pd_Enyeart_1996_cortisol_secretion.md) | 8-pcpt-cAMP-induced cortisol secretion ← penfluridol · inhibition effect | — | Enyeart JJ et al., Adrenocorticotropic hormone and cAMP in…, The Journal of general phys… (1996) | [10.1085/jgp.108.4.251](https://doi.org/10.1085/jgp.108.4.251) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Schettini_1983_PRL](drugs/drug_penfluridol/pd_Schettini_1983_PRL.md) | basal PRL secretion ← penfluridol · direct Emax (saturable) effect | — | Schettini G et al., In vitro studies on basal and stimulate…, Endocrinology (1983) | [10.1210/endo-112-1-64](https://doi.org/10.1210/endo-112-1-64) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Schettini_1983_PRL_2](drugs/drug_penfluridol/pd_Schettini_1983_PRL_2.md) | secretagogue-stimulated PRL secretion ← penfluridol · direct Emax (saturable) effect | — | Schettini G et al., In vitro studies on basal and stimulate…, Endocrinology (1983) | [10.1210/endo-112-1-64](https://doi.org/10.1210/endo-112-1-64) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 16:22 | 0:12 | 0/0/0 | 0/3/0 | 0/0/0 | 9,150/1,015 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 02:02 | 0:03 | 0/0/0 | 0/1/0 | 0/0/0 | 4,231/157 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -52,8 +50,10 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Enyeart_1996 | irrelevant | 0 | 0 | This is an electrophysiology study of K+ channels in bovine adrenal cells; penfluridol is only a tool (Ca2+ channel antagonist) with an IC50, no PK disposition parameters. |
-| popPK | Lafond_1986 | irrelevant | 0 | 0 | In-vitro mechanistic study of pituitary cAMP/PRL effects; penfluridol is a pharmacological tool, no PK parameters. |
-| popPK | Schettini_1983 | irrelevant | 0 | 0 | In vitro mechanistic study of prolactin secretion with no PK disposition parameters for penfluridol. |
+| popPK | Lafond_1986 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of prolactin release and cyclic AMP accumulation, containing no pharmacokinetic parameters for penfluridol. |
+| PGx | Lafond_1986 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of penfluridol in vitro (cAMP/PRL release) and contains no genetic or pharmacogenomic data. |
+| popPK | Schettini_1983 | irrelevant | 0 | 0 | This is an in vitro mechanistic study on prolactin secretion, not a pharmacokinetic study, and contains no disposition parameters for penfluridol. |
+| PGx | Schettini_1983 | not_relevant | 0 | 0 | The paper studies the in vitro mechanism of action of penfluridol on prolactin release but does not report any genetic or pharmacogenomic effects. |
 
 
 </details>

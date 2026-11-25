@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because a second reader disagreed on the compound, parameterization, and all three parameter values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="flecainide" model-id="Flecainide_Horie2014_reference" status="needs_review" stale="false" population="Japanese patients" measured-compound="flecainide" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Horie A, Ishida K, Shibata K, Taguchi M, Ozawa A, Hirono K et al. Pharmacokineti
 
 ### Reviewer guidance
 
-**The record was held back because a second reader disagreed on the compound, parameterization, and all three parameter values.**
+**cross_check_disputed; x1_cross_check.**
 
-The review flagged a dispute where the second reader identified the dose compound and primary analyte as unknown instead of flecainide. The reader also disagreed on the parameterization, marking it as mechanistic rather than apparent. Furthermore, the second reader failed to extract values for the clearance, volume of distribution, and absorption rate constant, recording them as null. Extracted — flecainide: CL/F 0.396 l/h/kg, V/F 10.5 l/kg, kabs 0.62 h À1.
+Extracted — flecainide: CL/F 0.396 l/h/kg, V/F 10.5 l/kg, kabs 0.62 h À1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flecainide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.143 (1 of 7 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.143 | cross-check contradicted by a second reader: verdict disputed; agreement 0.143 (1 of 7 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

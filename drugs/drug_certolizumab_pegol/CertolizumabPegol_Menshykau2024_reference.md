@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The review record was held back because the second reader disputed the verdict and disagreed on key parameter values for certolizumab pegol.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="certolizumab pegol" model-id="CertolizumabPegol_Menshykau2024_reference" status="needs_review" stale="false" population="pregnant women with chronic inflammatory diseases" measured-compound="certolizumab_pegol" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Menshykau D, Sidhu J, Shaughnessy L, Lledo-Garcia R, Dua P, Teil M et al. Popula
 
 ### Reviewer guidance
 
-**The review record was held back because the second reader disputed the verdict and disagreed on key parameter values for certolizumab pegol.**
+**cross_check_disputed; x1_cross_check.**
 
-The primary clearance and volume of distribution parameters were recorded as 0.416 L/day and 7.86 L, but the second reader found no values for these parameters. The second reader identified an allometric weight exponent of 0.552 for volume and an ADA titer clearance term of 0.214 that the initial record missed. This resulted in a verdict disagreement with an agreement score of 0.462, preventing the record from being finalized. Extracted — certolizumab pegol: kabs 0.236 1/day, allometric_exponent 0.872, CL/F 0.416 L/day, V/F 7.86 L.
+Extracted — certolizumab pegol: kabs 0.236 1/day, allometric_exponent 0.872, CL/F 0.416 L/day, V/F 7.86 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has certolizumab_pegol, the second reading certolizumab pegol; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,7 +152,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.462, 0 of 1 reader(s) agree | 0.462 | cross-check disputed by a second reader: verdict disputed, agreement 0.462, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.462 (6 of 13 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.462 | cross-check contradicted by a second reader: verdict disputed; agreement 0.462 (6 of 13 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

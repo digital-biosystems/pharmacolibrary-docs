@@ -44,7 +44,7 @@ Lesko LJ. Pharmacokinetic drug interactions with amiodarone. Clinical pharmacoki
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 47; it also differs on 3 more fields. That field does not shape the model.
 

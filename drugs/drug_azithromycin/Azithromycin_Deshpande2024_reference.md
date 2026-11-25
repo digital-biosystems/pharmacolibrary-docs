@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
-> The extracted total clearance of 0.002 L/h for azithromycin is physiologically implausible, likely indicating a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Deshpande2024_reference" status="rejected" stale="false" population="" measured-compound="azithromycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Deshpande D, Magombedze G, Srivastava S, Gumbo T. Antibacterial action of penici
 
 ### Reviewer guidance
 
-**The extracted total clearance of 0.002 L/h for azithromycin is physiologically implausible, likely indicating a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a total clearance of 0.002 L/h, a magnitude far below expected physiological values for this drug. The second reader disagreed on the clearance value, proposing 0.07 L/h instead of the extracted 0.002 L/h. This discrepancy suggests the original extraction may have involved a conversion or scaling mistake. Extracted — azithromycin: CL 0.002 L/h, V 0.31 L.
+Extracted — azithromycin: CL 0.002 L/h, V 0.31 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.002, the second reading 0.07; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

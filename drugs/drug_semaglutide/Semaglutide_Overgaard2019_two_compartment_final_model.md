@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The semaglutide record was refused because clearance and absorption lag time lacked explicit values and covariate scenarios were not simulated.
+> No value for semaglutide's clearance and absorption lag time; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2019_two_compartment_final_model" status="model_quarantined" stale="false" population="healthy adults and adults with type 2 diabetes" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Overgaard RV, Delff PH, Petri KCC, Anderson TW, Flint A, Ingwersen SH. Populatio
 
 ### Reviewer guidance
 
-**The semaglutide record was refused because clearance and absorption lag time lacked explicit values and covariate scenarios were not simulated.**
+**No value for semaglutide's clearance and absorption lag time; the covariate scenarios were not simulated (+1 more).**
 
-Clearance and absorption lag time were left at library placeholders rather than extracted from the paper. Although a body weight covariate effect was defined, the model builder only simulated the reference individual and did not test the covariate scenarios. Additionally, the model assumed full bioavailability and no molar mass correction for the apparent parameterization. Extracted — semaglutide: kabs 0.0253 h−1, V/F 9.08 L.
+The model was built, but semaglutide's clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — semaglutide: kabs 0.0253 h−1, V/F 9.08 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

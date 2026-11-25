@@ -1,45 +1,42 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;moclobemide&quot;,&quot;href&quot;:&quot;drugs/drug_moclobemide/&quot;},{&quot;label&quot;:&quot;Raaflaub_1984 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Moclobemide_Gwka2019_reference&quot;,&quot;label&quot;:&quot;G\u0142\u00f3wka_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_moclobemide/Moclobemide_Gwka2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Birkett_1995_u&quot;,&quot;label&quot;:&quot;Birkett_1995 \u00b7 u&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_moclobemide/pd_Birkett_1995_u.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # moclobemide — `Moclobemide_Raaflaub1984_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was rejected because the duration of the zero-order input was recorded as 50 mg, conflicting with the required time unit.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="moclobemide" model-id="Moclobemide_Raaflaub1984_reference" status="rejected" stale="false" population="healthy adults" measured-compound="moclobemide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="moclobemide" model-id="Moclobemide_Raaflaub1984_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="moclobemide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Raaflaub J, Haefelfinger P, Trautmann KH. Single-dose pharmacokinetics of the MAO-inhibitor moclobemide in man. Arzneimittel-Forschung 34(1):80–82 (1984).
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = 6.
+**Population:** healthy subjects · condition healthy · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| dosage | D1 | 50 | mg |
-| t 1/2 beta (range lower) | t1/2β | 0.79 | h |
-| Vss (range lower) | Vss | 0.81 | l/kg |
-| oral bioavailability | Fab | 44 | % |
-| relatively high systemic clearance | CL | 63.5 | l/h |
-| t lag [h] | tlag | 0.202 | h |
+| t 1/2 beta | t1/2β | 1 | h |
+| oral bioavailability | Fab | 44 |  |
+| absorbed | kabs | 95 | 1/wk |
+| tmax | tmax | 1 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.538). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,24 +46,22 @@ Raaflaub J, Haefelfinger P, Trautmann KH. Single-dose pharmacokinetics of the MA
 
 ### Reviewer guidance
 
-**The record was rejected because the duration of the zero-order input was recorded as 50 mg, conflicting with the required time unit.**
+**Only clearance was extracted — no volume.**
 
-The duration of the zero-order input into the dosing compartment was listed with a value of 50 and units of mg. Since this parameter represents a time duration, the mass unit conflicts with the expected time dimension. Additionally, the model was constructed from summary statistics in the abstract rather than fitted data. Extracted — moclobemide: D1 50 mg, t1/2β 0.79 h, Vss 0.81 l/kg, Fab 44 %, CL 63.5 l/h, tlag 0.202 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — moclobemide: t1/2β 1 h, Fab 44, kabs 95 1/wk, tmax 1 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has moclobemide, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorbed: this record has 95, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| dosage | `Q310` · D1 | 50 | mg |  |  | mg | llm (0.6) | Raaflaub_1984:abstract |
-| t 1/2 beta (range lower) | `Q60` · t1/2β | 0.79 | h | 2844 | s | h | llm_corrected (0.6) | Raaflaub_1984:abstract |
-| Vss (range lower) | `Q65` · Vss | 0.81 | l/kg | 0.0567 | m3 | l/kg | exact (1) | Raaflaub_1984:abstract |
-| oral bioavailability | `Q40` · Fab | 44 | % |  |  |  | exact (1) | Raaflaub_1984:abstract |
-| relatively high systemic clearance | `Q22` · CL | 63.5 | l/h | 1.764e-05 | m3/s | L/h | review_gapfill (0.7) | Główka_2019:review |
-| t lag [h] | `Q83` · tlag | 0.202 | h | 727.2 | s | h | review_gapfill (0.7) | Główka_2019:review |
+| t 1/2 beta | `Q60` · t1/2β | 1 | h | 3600 | s | h | half_life_rule (0.95) | Raaflaub_1984:abstract |
+| oral bioavailability | `Q40` · Fab | 44 |  |  |  |  | exact (1) | Raaflaub_1984:abstract |
+| absorbed | `Q49` · kabs | 95 | 1/wk | 0.0001571 | 1/s | 1/h | llm (0.6) | Raaflaub_1984:abstract |
+| tmax | `Q56` · tmax | 1 | h | 3600 | s | h | exact (1) | Raaflaub_1984:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -76,53 +71,34 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'dosage' → Q310 (unit '[mass]' vs ontology '[time]') — route to review
-- dropped unlinked row (NIL): 'ampoule volume' — extend the ontology if this is a real PK parameter (source ['Raaflaub_1984:abstract'])
-- dropped value-less row: 't 1/2 beta'
-- dropped duplicate Q60 ('t 1/2 beta (range upper)', value 1.34) — already have one for this compound
-- dropped duplicate Q65 ('Vss (range upper)', value 1.25) — already have one for this compound
-- dropped duplicate Q40 ('absorbed on average', value 95) — already have one for this compound
-- dropped value-less row: 'tmax-values'
+- dropped unlinked row (NIL): 'dosage' — extend the ontology if this is a real PK parameter (source ['Raaflaub_1984:abstract'])
+- dropped value-less row: 'Vss'
+- implicit units: 'absorbed' → 1/wk (from the printed half-life: 'absorbed = 95 and t 1/2 beta = 1 h: λ·t½ = ln2 only in 1/wk')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=moclobemide
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Główka_2019's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q83 (tlag) from Główka_2019's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Raaflaub_1984_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Raaflaub_1984_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.176 (3/17 fields) | 14 |
+| `gpt-oss-120b` | partly confirmed | 0.538 (7/13 fields) | 6 |
 
-<details><summary>14 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorbed fraction]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[dosage]` | 50 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorbed]` | 95 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[dosage]` |  | 50 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral bioavailability]` | 44 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral bioavailability]` |  | 44 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[relatively high systemic clearance]` | 63.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t 1/2 beta]` | 0.79 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t 1/2 beta]` |  | 1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t lag [h]]` | 0.202 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tmax]` |  | 1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vss]` | 0.81 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vss]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | moclobemide | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | moclobemide | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[i.v. ampoule volume]` |  | 2.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean half-life t 1/2 beta]` |  | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2 beta]` | 1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution vss]` |  |  | only_one_extracted |
 
 </details>
 
@@ -138,16 +114,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Główka_2019:review'] |
-| C5_dimension_Q310 | fail | [time] | mg ([mass]) | ['Raaflaub_1984:abstract'] |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Raaflaub_1984:abstract'] |
+| C5_dimension_Q56 | pass | [time] |  | ['Raaflaub_1984:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Raaflaub_1984:abstract'] |
-| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Raaflaub_1984:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Główka_2019:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 63.5 | ['Główka_2019:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 63.5 L/h | ['Główka_2019:review'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 56.7 L | ['Raaflaub_1984:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -159,9 +130,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -171,4 +152,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmoclobemide%5D%20Moclobemide_Raaflaub1984_reference&body=Drug%3A%20moclobemide%0ARecord%3A%20Moclobemide_Raaflaub1984_reference%0APaper%3A%20Raaflaub_1984%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_moclobemide/Moclobemide_Raaflaub1984_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:42 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:17 UTC</sub>

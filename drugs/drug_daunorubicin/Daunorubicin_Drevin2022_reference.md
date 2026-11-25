@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;daunorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/&quot;},{&quot;label&quot;:&quot;Drevin_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_daunorubicin&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_daunorubicin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_daunorubicin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present_study&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present_study.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gumbo_2020_2_bacterial_burden&quot;,&quot;label&quot;:&quot;Gumbo_2020_2 \u00b7 bacterial burden&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/pd_Gumbo_2020_2_bacterial_burden.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Quartino_2007_SI&quot;,&quot;label&quot;:&quot;Quartino_2007 \u00b7 SI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/pd_Quartino_2007_SI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Quartino_2007_SI&quot;,&quot;label&quot;:&quot;Quartino_2007 \u00b7 SI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/pd_Quartino_2007_SI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated. · molar_mass_missing:daunorubicinol: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Needs review</span>
 
-> Daunorubicin clearance was missing, and daunorubicinol volume, clearance, and formation rate lacked extracted values.
+> No value for daunorubicin's clearance; the covariate scenarios were not simulated (+6 more).
 
 <div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_Drevin2022_reference" status="model_quarantined" stale="false" population="adults with acute myeloid leukaemia" measured-compound="daunorubicin and daunorubicinol" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -64,13 +64,13 @@ Drevin G, Briet M, Bazzoli C, Gyan E, Schmidt A, Dombret H et al. Daunorubicin a
 
 ### Reviewer guidance
 
-**Daunorubicin clearance was missing, and daunorubicinol volume, clearance, and formation rate lacked extracted values.**
+**No value for daunorubicin's clearance; the covariate scenarios were not simulated (+6 more).**
 
-The absence of an estimated value for daunorubicin's total clearance meant a placeholder value would have been used instead of a fitted parameter. Although the paper provided estimates for daunorubicinol's volume, clearance, and formation rate, these specific fields were not captured in the record. Consequently, the metabolite compartment would have been built without these essential parameters. Extracted — daunorubicin and daunorubicinol: V1 21.1 L; daunorubicin: V2 1.45e+03 L, V3 323 L, Q 69.4 L/h, Q2 125 L/h; daunorubicinol: Q 591 L/h, V2 536 L, kfm 3.73 1/h, CL 41.3 L/h.
+The model was built, but daunorubicin's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — daunorubicin and daunorubicinol: V1 21.1 L; daunorubicin: V2 1.45e+03 L, V3 323 L, Q 69.4 L/h, Q2 125 L/h; daunorubicinol: Q 591 L/h, V2 536 L, kfm 3.73 1/h, CL 41.3 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has daunorubicin and daunorubicinol, the second reading daunorubicin; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -189,7 +189,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_shared_parameters |  | pass | 7 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.045, 1 of 2 reader(s) agree | 0.045 | cross-check disputed by a second reader: verdict disputed, agreement 0.045, 1 of 2 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.045 (13 of 34 compared fields agree, 14 extracted by one reader only); 1 of 2 reader(s) without a contradiction (gpt-oss-120b, qwen3.8-27b) | 0.045 | cross-check contradicted by a second reader: verdict disputed; agreement 0.045 (13 of 34 compared fields agree, 14 extracted by one reader only); 1 of 2 reader(s) without a contradiction (gpt-oss-120b, qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

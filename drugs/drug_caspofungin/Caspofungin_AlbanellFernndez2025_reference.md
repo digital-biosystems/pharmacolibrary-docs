@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The caspofungin two-compartment model was rejected because the peripheral compartment is structurally unreachable from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="caspofungin" model-id="Caspofungin_AlbanellFernndez2025_reference" status="rejected" stale="false" population="" measured-compound="caspofungin" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Albanell-Fernández M. Echinocandins Pharmacokinetics: A Comprehensive Review of
 
 ### Reviewer guidance
 
-**The caspofungin two-compartment model was rejected because the peripheral compartment is structurally unreachable from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a two-compartment structure with a central volume of 8.84 L and a peripheral volume of 2.77 L. The review findings explicitly cite an unreachable or orphan compartment as the reason for refusal. This indicates a structural flaw where the peripheral compartment lacks a valid connection path from the dosing site. Extracted — caspofungin: CL 0.69 L/h, V1 8.84 L, V2 2.77 L.
+Extracted — caspofungin: CL 0.69 L/h, V1 8.84 L, V2 2.77 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 40, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ceftaroline fosamil clearance is mislabeled as aztreonam, and the second reader disputed the extracted parameter values, holding the record for review.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ceftaroline fosamil" model-id="CeftarolineFosamil_Principe2022_reference" status="needs_review" stale="false" population="" measured-compound="ceftaroline_fosamil" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Principe L, Lupia T, Andriani L, Campanile F, Carcione D, Corcione S et al. Micr
 
 ### Reviewer guidance
 
-**Ceftaroline fosamil clearance is mislabeled as aztreonam, and the second reader disputed the extracted parameter values, holding the record for review.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists the total clearance for ceftaroline fosamil as 6.4 L/h, but the verbatim label explicitly identifies it as aztreonam clearance. Similarly, the volume of distribution is recorded as 20.0 L but labeled as aztreonam volume of distribution. The second reader disagreed with the specific numerical values assigned to multiple pharmacokinetic parameters in the record. Extracted — ceftaroline fosamil: CL 6.4 L/h, V 20 L.
+Extracted — ceftaroline fosamil: CL 6.4 L/h, V 20 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q24: this record has none, the second reading 5.6; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check disputed by a second reader: verdict disputed, agreement 0.4, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.4 (6 of 15 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.4 | cross-check contradicted by a second reader: verdict disputed; agreement 0.4 (6 of 15 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

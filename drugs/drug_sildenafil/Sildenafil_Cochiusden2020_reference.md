@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because a second reader disputed the clearance value of 6.7 L/h and other parameter extractions for sildenafil.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Cochiusden2020_reference" status="needs_review" stale="false" population="" measured-compound="sildenafil" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Cochius-den Otter SCM, Kipfmueller F, de Winter BCM, Allegaert K, Tibboel D, Mue
 
 ### Reviewer guidance
 
-**The record was held back because a second reader disputed the clearance value of 6.7 L/h and other parameter extractions for sildenafil.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagreed on the total clearance, providing 5.2 instead of the recorded 6.7 L/h, and the intercompartmental clearance, citing 221 instead of the recorded 44.3 L/h. Additional discrepancies include the central volume of distribution, where the reader suggested 115 L rather than 75.1 L. Consequently, the agreement score was 0.25, with 0 of 1 readers agreeing with the current values. Extracted — sildenafil: CL 6.7 L/h, V1 75.1 L, V2 10 L, Q 44.3 L/h.
+Extracted — sildenafil: CL 6.7 L/h, V1 75.1 L, V2 10 L, Q 44.3 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 6.7, the second reading 5.2; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (3 of 12 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (3 of 12 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

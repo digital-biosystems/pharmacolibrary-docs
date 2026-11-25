@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;dexamfetamine&quot;,&quot;href&quot;:&quot;drugs/drug_dexamfetamine/&quot;},{&quot;label&quot;:&quot;Roberts_2015 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexamfetamine_Roberts2015_final_final_plasma_model&quot;,&quot;label&quot;:&quot;Roberts_2015_final_final_plasma_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final_final_plasma_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexamfetamine_Roberts2015_final_final_plasma_model_mean_para&quot;,&quot;label&quot;:&quot;Roberts_2015_final_final_plasma_model_mean_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final_final_plasma_model_mean_para.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> V2/F was assigned units of mg, conflicting with its dimension as a volume, and a compartment is unreachable from the dose.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q82 unit mg ([mass]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="dexamfetamine" model-id="Dexamfetamine_Roberts2015_final" status="rejected" stale="false" population="healthy adults" measured-compound="dextroamphetamine" parameterization="apparent" topology="2C"></div>
 
@@ -17,7 +17,7 @@ Roberts JK, Cook SF, Stockmann C, Rollins DE, Wilkins DG, Sherwin CM. A Populati
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = 40.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 10 mg, oral, multiple, every 24 h.
 
@@ -25,7 +25,7 @@ Roberts JK, Cook SF, Stockmann C, Rollins DE, Wilkins DG, Sherwin CM. A Populati
 
 **Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** CL/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 5 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -37,6 +37,7 @@ Roberts JK, Cook SF, Stockmann C, Rollins DE, Wilkins DG, Sherwin CM. A Populati
 | V1/F (L) | V1/F | 377 | L |  |
 | θ1 | allometric_exponent | 0.618 |  |  |
 | CL/F (L/h) | CL/F | 28.7 | L/h | 0.0212 (None% RSE) |
+| K23 (h−1) | kcomp | 1.60E-06 | h−1 |  |
 | V2/F (mg) | V2/F | 17.7 | mg |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
@@ -51,23 +52,24 @@ Roberts JK, Cook SF, Stockmann C, Rollins DE, Wilkins DG, Sherwin CM. A Populati
 
 ### Reviewer guidance
 
-**V2/F was assigned units of mg, conflicting with its dimension as a volume, and a compartment is unreachable from the dose.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q82 unit mg ([mass]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The parameter V2/F has a value of 17.7 mg, which is dimensionally inconsistent with a volume of distribution expected in liters. The review flagged an unreachable compartment, indicating a structural flaw where no path exists from the dose. Additionally, the unit mg for this parameter could not be converted to standard international units, preventing proper unit assignment. Extracted — dexamfetamine: k12 0.527 h−1, V1/F 377 L, allometric_exponent 0.618, CL/F 28.7 L/h, V2/F 17.7 mg.
+A reported unit could not be converted (V2/F), so that value has no SI equivalent. Extracted — dexamfetamine: k12 0.527 h−1, V1/F 377 L, allometric_exponent 0.618, CL/F 28.7 L/h, kcomp 1.6e-06 h−1, V2/F 17.7 mg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|
-| K12 (h−1) | `Q301` · k12 | 0.527 | h−1 | 0.0001464 | 1/s | 1/h | exact (1) | T3:row2:col1, T3:row2:col2, T3:row2:col3, T3:row2:col4 | 0.0106 (None% RSE) |
+| K12 (h−1) | `Q301` · k12 | 0.527 | h−1 | 0.0001464 | 1/s | 1/h | exact (1) | T3:row2:col1 | 0.0106 (None% RSE) |
 | V1/F (L) | `Q290` · V1/F | 377 | L | 0.377 | m3 | l | exact (1) | T3:row3:col1 |  |
-| θ1 | `Q319` · allometric_exponent | 0.618 |  |  |  |  | llm (0.6) | T3:row4:col1, T3:row4:col2, T3:row4:col3, T3:row4:col4, T3:footnote |  |
-| CL/F (L/h) | `Q27` · CL/F | 28.7 | L/h | 7.972e-06 | m3/s | l/h | exact (1) | T3:row5:col1, T3:row5:col2, T3:row5:col3, T3:row5:col4 | 0.0212 (None% RSE) |
-| V2/F (mg) | `Q82` · V2/F | 17.7 | mg |  |  | mg | exact (1) | T3:row8:col1, T3:row8:col2, T3:row8:col3, T3:row8:col4 |  |
+| θ1 | `Q319` · allometric_exponent | 0.618 |  | 0.618 |  |  | llm (0.6) | T3:row4:col1 |  |
+| CL/F (L/h) | `Q27` · CL/F | 28.7 | L/h | 7.972e-06 | m3/s | l/h | exact (1) | T3:row5:col1 | 0.0212 (None% RSE) |
+| K23 (h−1) | `Q48` · kcomp | 1.60E-06 | h−1 | 4.444e-10 | 1/s | 1/h | exact (1) | T3:row7:col1 |  |
+| V2/F (mg) | `Q82` · V2/F | 17.7 | mg |  |  | mg | exact (1) | T3:row8:col1 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -83,42 +85,24 @@ Independently confirmed by `gpt-oss-120b`.
 - table section residual_error: 'Proportional' routed out of structural estimates ('σ2-RUV')
 - dropped duplicate Q319 ('θ2', value '0.422') — already have one for this compound
 - unit_dimension_mismatch: 'V2/F (mg)' → Q82 (unit '[mass]' vs ontology '[length] ** 3') — route to review
-- dropped value-less row: 'SE'
-- dropped value-less row: 'CI'
-- dropped value-less row: 'NA'
-- dropped value-less row: 'K12'
-- dropped value-less row: 'V1/F'
-- dropped value-less row: 'CL/F'
-- dropped value-less row: 'K23'
-- dropped value-less row: 'V2/F'
-- dropped value-less row: 'θ3'
+- dropped duplicate Q319 ('θ3', value '-1.05E-03') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dextroamphetamine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
-- model-stage split: 'final linked model' is the final model of Roberts_2015 (paper reports 2 stages: final linked model, final plasma model); same population, different model-building step
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- model-stage split: 'final linked model / mean parameter estimate' is the final model of Roberts_2015 (paper reports 2 stages: final linked model / mean parameter estimate, final plasma model / mean parameter estimate); same population, different model-building step
 
 **Extraction notes:**
-- unparsed cell T3:row7:col1 = '1.60E−06'
-- unparsed cell T3:row7:col2 = '2.76E−07'
-- unparsed cell T3:row7:col3 = '1.06E−06'
-- unparsed cell T3:row7:col4 = '2.14E−06'
-- unparsed cell T3:row7:col6 = '2.70E−07'
-- unparsed cell T3:row7:col7 = '1.02E−06'
-- unparsed cell T3:row7:col8 = '2.07E−06'
-- unparsed cell T3:row11:col7 = '1.00E–06'
-- unparsed cell Roberts_2015_table_2:row7:col7 = '2.00E–06'
-- companion parameter table 2 transcribed (79 record(s))
+- companion parameter table 2 transcribed (80 record(s))
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss-120b` | confirmed | 1.0 (10/10 fields) | none |
 
 _All readers agree on the compared fields of this record._
 
@@ -132,16 +116,17 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['T3:row5:col1', 'T3:row5:col2', 'T3:row5:col3', 'T3:row5:col4'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['T3:row5:col1'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['T3:row3:col1'] |
-| C5_dimension_Q301 | pass | 1 / [time] |  | ['T3:row2:col1', 'T3:row2:col2', 'T3:row2:col3', 'T3:row2:col4'] |
-| C5_dimension_Q82 | fail | [length] ** 3 | mg ([mass]) | ['T3:row8:col1', 'T3:row8:col2', 'T3:row8:col3', 'T3:row8:col4'] |
+| C5_dimension_Q301 | pass | 1 / [time] |  | ['T3:row2:col1'] |
+| C5_dimension_Q48 | pass | 1 / [time] |  | ['T3:row7:col1'] |
+| C5_dimension_Q82 | fail | [length] ** 3 | mg ([mass]) | ['T3:row8:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | fail |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 28.7 L/h | ['T3:row5:col1', 'T3:row5:col2', 'T3:row5:col3', 'T3:row5:col4'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 28.7 L/h | ['T3:row5:col1'] |
 | C9_phys_window_Q290 | pass | volume within physiological range | 377 L | ['T3:row3:col1'] |
 
 <details class="legend">
@@ -166,4 +151,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdexamfetamine%5D%20Dexamfetamine_Roberts2015_final&body=Drug%3A%20dexamfetamine%0ARecord%3A%20Dexamfetamine_Roberts2015_final%0APaper%3A%20Roberts_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 00:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:44 UTC</sub>

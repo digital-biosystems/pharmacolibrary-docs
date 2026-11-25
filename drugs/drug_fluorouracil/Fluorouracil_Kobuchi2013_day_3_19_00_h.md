@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The model was rejected because the urine compartment is structurally disconnected from the dosing path.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2013_day_3_19_00_h" status="rejected" stale="false" population="rats with colorectal cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Kobuchi S, Ito Y, Okada K, Imoto K, Kuwano S, Takada K. Pharmacokinetic/pharmaco
 
 ### Reviewer guidance
 
-**The model was rejected because the urine compartment is structurally disconnected from the dosing path.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The two-compartment model lacks a defined transfer rate constant linking the central compartment to the urine compartment, rendering it an orphan. While a second reader extracted a urine parameter value of 0.19, this value lacks a corresponding structural definition in the model. Consequently, the model cannot account for renal excretion in the fluorouracil disposition. Extracted — fluorouracil: kel 3.94 h−1, k12 1.28 h−1, k21 2.02 h−1, AUC∞ 1.59 µg·h·mL−1, CL 0.31 L·h−1·kg−1, V1 0.19 L·kg−1, V2 0.2 L·kg−1, kabs 0.13 1/h.
+Extracted — fluorouracil: kel 3.94 h−1, k12 1.28 h−1, k21 2.02 h−1, AUC∞ 1.59 µg·h·mL−1, CL 0.31 L·h−1·kg−1, V1 0.19 L·kg−1, V2 0.2 L·kg−1, kabs 0.13 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of uh2/ura: this record has none, the second reading 0.19. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

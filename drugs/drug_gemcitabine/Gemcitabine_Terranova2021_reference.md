@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the paper studies berzosertib, not gemcitabine, which is only a co-medication comparator.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="gemcitabine" model-id="Gemcitabine_Terranova2021_reference" status="rejected" stale="false" population="" measured-compound="gemcitabine" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Terranova N, Jansen M, Falk M, Hendriks BS. Population pharmacokinetics of ATR i
 
 ### Reviewer guidance
 
-**Record rejected because the paper studies berzosertib, not gemcitabine, which is only a co-medication comparator.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The identified parameters for gemcitabine clearance and volume were not extracted from a gemcitabine population pharmacokinetic study. The source paper specifically reports population pharmacokinetic parameters for berzosertib. Gemcitabine appears in the text only as a co-administered chemotherapy comparator, not the primary analyte. Extracted — gemcitabine: CL 65 L/h, V1 118 L, V2 1.03e+03 L, Q 29 L/h.
+Extracted — gemcitabine: CL 65 L/h, V1 118 L, V2 1.03e+03 L, Q 29 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 65, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.3 (3 of 10 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.3 | cross-check agreement 0.3 is below 0.5: verdict partial; agreement 0.3 (3 of 10 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

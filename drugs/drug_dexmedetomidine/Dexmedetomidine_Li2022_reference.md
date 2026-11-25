@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;dexmedetomidine&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/&quot;},{&quot;label&quot;:&quot;Li_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexmedetomidine_Ber2020_reference&quot;,&quot;label&quot;:&quot;Ber_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Ber2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_Huang2025_reference&quot;,&quot;label&quot;:&quot;Huang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Huang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_James2022_reference&quot;,&quot;label&quot;:&quot;James_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_James2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_Levionnois2022_reference&quot;,&quot;label&quot;:&quot;Levionnois_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Levionnois2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2A&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12A&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2A.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2B&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2C&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2A&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12A&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2A.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2B&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2C&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexmedetomidine_Ber2020_reference&quot;,&quot;label&quot;:&quot;Ber_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Ber2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_James2022_reference&quot;,&quot;label&quot;:&quot;James_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_James2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_Levionnois2022_reference&quot;,&quot;label&quot;:&quot;Levionnois_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Levionnois2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dexmedetomidine_Huang2025_reference&quot;,&quot;label&quot;:&quot;Huang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Huang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2A&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12A&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2A.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2B&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2C&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2A&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12A&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2A.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2B&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2C&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dexmedetomidine — `Dexmedetomidine_Li2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--green">Reproduces paper</span>
 
-> This paper's disposition core is incomplete; aUCt has no unit.
-
-<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Li2022_reference" status="needs_review" stale="false" population="infants and young children (3-36 months) undergoing interventional radiological procedures" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Li2022_reference" status="curated_candidate" stale="false" population="infants and young children" measured-compound="dexmedetomidine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Li BL, Guan YP, Yuen VM, Wei W, Huang M, Zhang MZ et al. Population Pharmacokinetics of Intranasal Dexmedetomidine in Infants and Young Children. Anesthesiology 137(2):163–175 (2022).
@@ -17,29 +15,32 @@ Li BL, Guan YP, Yuen VM, Wei W, Huang M, Zhang MZ et al. Population Pharmacokine
 
 ## Population and dosing
 
-**Population:** infants and young children (3-36 months) undergoing interventional radiological procedures · condition vascular malformations · age group infant · n = 137.
+**Population:** infants and young children · condition simple vascular malformations · age group infant · n = 137.
 
 **Dosing:** 0.14 mg, intranasal, single.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
-**Availability:** No model was generated from this record.
+**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 6 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference/Dexmedetomidine_Li2022_reference.svg" alt="Dexmedetomidine_Li2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
-| label | parameter | value | unit |
-|---|---|---|---|
-| AQ19 | AUCt | 46.7 |  |
-| systemic clearance | CL | 62.4 | L/h |
-| V | V | 2.8 | L/kg |
+| label | parameter | value | unit | IIV |
+|---|---|---|---|---|
+| CL/F (L/h/[WT/70]^0.75)† | CL/F | 52.2 | L/h | 42.7 (None% RSE) |
+| V1/F (L/[WT/70]) | V1/F | 57.4 | L | 46.3 (None% RSE) |
+| Q/F (L/h/[WT/70]^0.75) | Q/F | 243.5 | L/h | 21.4 (None% RSE) |
+| V2/F (L/[WT/70]) | V2/F | 70.2 | L | 27.3 (None% RSE) |
+| Ka (h−1) | kabs | 1.5 | h−1 | 59.2 (None% RSE) |
+| TIag (h) | tlag | 0.03 | h | 36.0 (None% RSE) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,62 +50,72 @@ Li BL, Guan YP, Yuen VM, Wei W, Huang M, Zhang MZ et al. Population Pharmacokine
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete; aUCt has no unit.**
+**Reproduces paper: every check that could be run on this record passed.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Levionnois_2022) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Extracted — dexmedetomidine: AUCt 46.7, CL 62.4 L/h, V 2.8 L/kg.
-
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[aq19].parameter_id`: this record has Q19, the second reading Q30; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| AQ19 | `Q19` · AUCt | 46.7 |  |  |  |  | llm (0.6) | tab_0:row4:col1, tab_0:row4:col17 |
-| systemic clearance | `Q22` · CL | 62.4 | L/h | 1.733e-05 | m3/s | L/h | boundary (0.8) | Li_2022:other_prose |
-| V | `Q61` · V | 2.8 | L/kg | 0.196 | m3 | L | review_gapfill (0.7) | Levionnois_2022:review |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
+|---|---|---|---|---|---|---|---|---|---|
+| CL/F (L/h/[WT/70]^0.75)† | `Q27` · CL/F | 52.2 | L/h | 1.45e-05 | m3/s | L/h | space_fold (0.95) | Li_2022_table_p11_1:row0:col1, Li_2022_table_p11_1:row0:col3 | 42.7 (None% RSE) |
+| V1/F (L/[WT/70]) | `Q290` · V1/F | 57.4 | L | 0.0574 | m3 | L | exact (1) | Li_2022_table_p11_1:row1:col1, Li_2022_table_p11_1:row1:col3 | 46.3 (None% RSE) |
+| Q/F (L/h/[WT/70]^0.75) | `Q69` · Q/F | 243.5 | L/h | 6.764e-05 | m3/s | L/h | exact (1) | Li_2022_table_p11_1:row2:col1, Li_2022_table_p11_1:row2:col3 | 21.4 (None% RSE) |
+| V2/F (L/[WT/70]) | `Q82` · V2/F | 70.2 | L | 0.0702 | m3 | L | exact (1) | Li_2022_table_p11_1:row3:col1, Li_2022_table_p11_1:row3:col3 | 27.3 (None% RSE) |
+| Ka (h−1) | `Q49` · kabs | 1.5 | h−1 | 0.0004167 | 1/s | 1/h | exact (1) | Li_2022_table_p11_1:row4:col1, Li_2022_table_p11_1:row4:col3 | 59.2 (None% RSE) |
+| TIag (h) | `Q83` · tlag | 0.03 | h | 108 | s | h | llm (0.6) | Li_2022_table_p11_1:row7:col1, Li_2022_table_p11_1:row7:col3 | 36.0 (None% RSE) |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
+**Deviations:**
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
-- salvaged Q22 ('systemic clearance'=62.4) from results prose — parameter table was unreadable
-- implicit units: 'AQ19' — the LLM proposed 'ng•h/ml', whose dimension does not fit Q19; left unset
-- implicit units: 'systemic clearance' → L/h (from the paper text: "The paper states 'a systemic clearance of 62.4 l • h -1 per 70 kg in 6-to 44-month-old children', matching the value 62.")
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dexmedetomidine
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- gap-filled Q61 (V) from Levionnois_2022's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- table section iiv: 'CL/F (L/h/[WT/70]^0.75)†' routed out of structural estimates ('BSV%')
+- table section iiv: 'V1/F (L/[WT/70])' routed out of structural estimates ('BSV%')
+- table section iiv: 'Q/F (L/h/[WT/70]^0.75)' routed out of structural estimates ('BSV%')
+- table section iiv: 'V2/F (L/[WT/70])' routed out of structural estimates ('BSV%')
+- table section iiv: 'Ka (h−1)' routed out of structural estimates ('BSV%')
+- table section iiv: 'TIag (h)' routed out of structural estimates ('BSV%')
+- table section iiv: 'CL/F' routed out of structural estimates ('Interindividual variability (ω2)')
+- table section iiv: 'V1/F' routed out of structural estimates ('Interindividual variability (ω2)')
+- table section iiv: 'Q/F' routed out of structural estimates ('Interindividual variability (ω2)')
+- table section iiv: 'V2/F' routed out of structural estimates ('Interindividual variability (ω2)')
+- table section iiv: 'Ka' routed out of structural estimates ('Interindividual variability (ω2)')
+- unit_dimension_unknown: 'L/h/[WT/70]^0.75' (CL/F)
+- unit_dimension_unknown: 'L/[WT/70]' (V1/F)
+- unit_dimension_unknown: 'L/h/[WT/70]^0.75' (Q/F)
+- unit_dimension_unknown: 'L/[WT/70]' (V2/F)
+- dropped PD-category row 'TM50 (wk)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Li_2022_table_p11_1:row5:col1', 'Li_2022_table_p11_1:row5:col3'])
+- dropped unlinked row (NIL): '\\u0003' — extend the ontology if this is a real PK parameter (source ['Li_2022_table_p11_1:row6:col1', 'Li_2022_table_p11_1:row6:col3'])
+- dropped duplicate Q83 ('TIag', value '0.19') — already have one for this compound
+- implicit units: 'CL/F (L/h/[WT/70]^0.75)†' → L/h (from the popPK convention: 'The parameter represents clearance (CL/F). The table text does not explicitly state the unit. Per population PK conventi')
+- implicit units: 'V1/F (L/[WT/70])' → L (from the popPK convention: 'The parameter represents volume of distribution (V1/F). The table text does not explicitly state the unit. Per populatio')
+- implicit units: 'Q/F (L/h/[WT/70]^0.75)' → L/h (from the popPK convention: 'The parameter represents intercompartmental clearance (Q/F). The table text does not explicitly state the unit. Per popu')
+- implicit units: 'V2/F (L/[WT/70])' → L (from the popPK convention: 'The parameter represents volume of distribution (V2/F). The table text does not explicitly state the unit. Per populatio')
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dexmedetomidine
 
 **Extraction notes:**
-- unparsed cell tab_0:row4:col9 = '53.0 (11.1%)'
-- unparsed cell tab_0:row4:col11 = '42.7%'
-- unparsed cell tab_0:row4:col14 = '52.2 (6.0%)'
+- table Li_2022_table_p11_1: unbound_uncertainty
+- table Li_2022_table_p11_1: conflicting_units
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `gpt-oss-120b` | confirmed | 1.0 (10/10 fields) | none |
 
-<details><summary>3 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[aq19].parameter_id` | Q19 | Q30 | mismatch |
-| `gpt-oss-120b` | `parameters[systemic clearance]` | 62.4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v]` | 2.8 |  | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -114,18 +125,37 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Li_2022:other_prose'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Levionnois_2022:review'] |
-| C5_unit_missing_Q19 | fail | [mass] * [time] / [length] ** 3 |  | ['tab_0:row4:col1', 'tab_0:row4:col17'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 62.4 | ['Li_2022:other_prose'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 62.4 L/h | ['Li_2022:other_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 196 L | ['Levionnois_2022:review'] |
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 6 |  |  |  |
+| C0b_disposition_core | pass |  |  |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |  |  |
+| C1_half_life_beta | pass | 1.8 | 1.81 | 1.006 | 0.25 | reported t½β |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  |  |  | ['Li_2022_table_p11_1:row0:col1', 'Li_2022_table_p11_1:row0:col3'] |
+| C5_dimension_Q290 | pass | [length] ** 3 |  |  |  | ['Li_2022_table_p11_1:row1:col1', 'Li_2022_table_p11_1:row1:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['Li_2022_table_p11_1:row4:col1', 'Li_2022_table_p11_1:row4:col3'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  |  |  | ['Li_2022_table_p11_1:row2:col1', 'Li_2022_table_p11_1:row2:col3'] |
+| C5_dimension_Q82 | pass | [length] ** 3 |  |  |  | ['Li_2022_table_p11_1:row3:col1', 'Li_2022_table_p11_1:row3:col3'] |
+| C5_dimension_Q83 | pass | [time] |  |  |  | ['Li_2022_table_p11_1:row7:col1', 'Li_2022_table_p11_1:row7:col3'] |
+| C7_apparent_coherence | pass |  |  |  |  |  |
+| C8_topology | pass |  |  |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 52.2 L/h |  |  | ['Li_2022_table_p11_1:row0:col1', 'Li_2022_table_p11_1:row0:col3'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 57.4 L |  |  | ['Li_2022_table_p11_1:row1:col1', 'Li_2022_table_p11_1:row1:col3'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 70.2 L |  |  | ['Li_2022_table_p11_1:row3:col1', 'Li_2022_table_p11_1:row3:col3'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=dexmedetomidine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (10 of 10 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_t_half_beta | reference | pass | 1.8 | 1.586 | 0.8811 | reported 1.8 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -141,22 +171,70 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference/Dexmedetomidine_Li2022_reference_modelica.zip" download>Dexmedetomidine_Li2022_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference/Dexmedetomidine_Li2022_reference_fmi.zip" download>Dexmedetomidine_Li2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference/Dexmedetomidine_Li2022_reference_matlab.zip" download>Dexmedetomidine_Li2022_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference/Dexmedetomidine_Li2022_reference_matlab_simbio.zip" download>Dexmedetomidine_Li2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference/Dexmedetomidine_Li2022_reference_sbml.zip" download>Dexmedetomidine_Li2022_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference/Dexmedetomidine_Li2022_reference_cellml.zip" download>Dexmedetomidine_Li2022_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.2003 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `Tlag` | 108 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 1.4e-07 | kg |
+| input | model | `Cl` | 1.45e-05 | m3/s |
+| input | model | `VdPerKg` | 0.00082 | m3/kg |
+| input | model | `k12` | 0.001178 | 1/s |
+| input | model | `k21` | 0.0009635 | 1/s |
+| input | model | `ka` | 0.0004167 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Li BL, Guan YP, Yuen VM, Wei W, Huang M, Zhang MZ et al. Population Pharmacokinetics of Intranasal Dexmedetomidine in Infants and Young Children. Anesthesiology 137(2):163–175 (2022). [doi:10.1097/ALN.0000000000004258](https://doi.org/10.1097/ALN.0000000000004258)
+
+**This record:** Pharmacolibrary, model `Dexmedetomidine_Li2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference>
+
+```bibtex
+@misc{pharmacolibrary_DexmedetomidineLi2022reference,
+  title  = {{Pharmacolibrary model Dexmedetomidine_Li2022_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference},
+  note   = {Parameters from doi:10.1097/ALN.0000000000004258},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 0.14 mg, single dose, first-order absorption (ka 1.5 /h, lag 1.8 min, F 1). Dose in the paper: 0.14 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference/Dexmedetomidine_Li2022_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference/Dexmedetomidine_Li2022_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Dexmedetomidine_Li2022_reference_params.json` · controls `Dexmedetomidine_Li2022_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdexmedetomidine%5D%20Dexmedetomidine_Li2022_reference&body=Drug%3A%20dexmedetomidine%0ARecord%3A%20Dexmedetomidine_Li2022_reference%0APaper%3A%20Li_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:16 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:48 UTC</sub>

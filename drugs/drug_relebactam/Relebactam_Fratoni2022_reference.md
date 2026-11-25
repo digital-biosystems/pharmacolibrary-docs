@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Relebactam’s k12 (1.62 h-1) and k21 (3.53 h-1) were not covered, leaving the abstract-only model record incomplete.
+> T3_param_coverage; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="Relebactam" model-id="Relebactam_Fratoni2022_reference" status="needs_review" stale="false" population="critically ill patients with augmented renal clearance" measured-compound="relebactam" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Fratoni AJ, Mah JW, Nicolau DP, Kuti JL. Imipenem/cilastatin/relebactam pharmaco
 
 ### Reviewer guidance
 
-**Relebactam’s k12 (1.62 h-1) and k21 (3.53 h-1) were not covered, leaving the abstract-only model record incomplete.**
+**T3_param_coverage; x1_cross_check.**
 
-Only 2 of the 4 reported parameters were covered; the transfer rates k12 and k21 were neither emitted nor defaulted. Because only the abstract was read, its summary statistics stood in for a fitted model. A second reader disputed the compartment links and the classification of the 16.15 L volume parameter, with agreement of 0.778 and no agreeing reader. Extracted — relebactam: CL 17.3 L/h, V 16.1 L, k12 1.62 h-1, k21 3.53 h-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — relebactam: CL 17.3 L/h, V 16.1 L, k12 1.62 h-1, k21 3.53 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading not captured → not captured (not captured); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 2 covered |  | neither emitted nor in defaulted[]: ['k12', 'k21'] |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.778 (7 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | cross-check contradicted by a second reader: verdict disputed; agreement 0.778 (7 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

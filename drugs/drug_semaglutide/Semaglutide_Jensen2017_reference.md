@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> Oral semaglutide model holds because absorption rate constant and lag time were not reported in the source.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Jensen2017_reference" status="needs_review" stale="false" population="healthy adults, rats, monkeys" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Jensen L, Helleberg H, Roffel A, van Lier JJ, Bjørnsdottir I, Pedersen PJ et al
 
 ### Reviewer guidance
 
-**Oral semaglutide model holds because absorption rate constant and lag time were not reported in the source.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The apparent clearance and volume values are recorded, but the model structure requires absorption parameters that the paper does not provide. Consequently, placeholder values for absorption kinetics were applied instead of explicit estimates. A second reviewer disagreed with the specific numerical fields recorded, noting missing or conflicting values for certain parameters. Extracted — semaglutide: CL/F 0.039 L/h, V/F 9.4 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — semaglutide: CL/F 0.039 L/h, V/F 9.4 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 3123.4, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.545, 0 of 1 reader(s) agree | 0.545 | cross-check disputed by a second reader: verdict disputed, agreement 0.545, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.545 | cross-check contradicted by a second reader: verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

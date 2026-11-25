@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment fentanyl model was rejected because the peripheral compartment is unreachable from the dose, and multiple parameter values are missing or disputed.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Egan1995_reference" status="rejected" stale="false" population="" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Egan TD. Remifentanil pharmacokinetics and pharmacodynamics. A preliminary appra
 
 ### Reviewer guidance
 
-**The two-compartment fentanyl model was rejected because the peripheral compartment is unreachable from the dose, and multiple parameter values are missing or disputed.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The structure defines a central and a peripheral compartment, but the peripheral compartment lacks a path from the dose site, making it an orphan. Parameter values for the elimination rate constant and peripheral distribution rate constants are either null or in disagreement between readers. A second reader also disagreed on the extracted clearance value of 41.2 ml/min/kg and the bioavailability value of 0.9. Extracted — fentanyl: CL 41.2 ml/min/kg, V1 7.1 L, V2 15.6 L.
+Extracted — fentanyl: CL 41.2 ml/min/kg, V1 7.1 L, V2 15.6 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 41.2, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

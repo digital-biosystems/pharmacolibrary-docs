@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> The record was rejected because the source paper, Gómez-Segura_2022, does not study flunitrazepam, rendering the extracted clearance and volume parameters invalid for this compound.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="flunitrazepam" model-id="Flunitrazepam_GmezSegura2022_reference" status="rejected" stale="false" population="" measured-compound="flunitrazepam" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Gómez-Segura L, Boix-Montañes A, Mallandrich M, Parra-Coca A, Soriano-Ruiz JL,
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper, Gómez-Segura_2022, does not study flunitrazepam, rendering the extracted clearance and volume parameters invalid for this compound.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The relevance screen confirmed that neither the title nor the abstract of the paper names flunitrazepam, identifying the subject as a different drug. Consequently, the reported parameters, including a clearance of 0.255 L/h and a volume of distribution of 0.329 L/kg, do not originate from a study of the target compound. A second reader also could not verify the additional numerical values present in the record, leaving them unconfirmed. Extracted — flunitrazepam: CL 0.255 L/h, V 0.329 L/kg.
+Extracted — flunitrazepam: CL 0.255 L/h, V 0.329 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 15, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -126,7 +126,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.6, 0 of 1 reader(s) agree | 0.6 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.6 (6 of 10 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.6 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

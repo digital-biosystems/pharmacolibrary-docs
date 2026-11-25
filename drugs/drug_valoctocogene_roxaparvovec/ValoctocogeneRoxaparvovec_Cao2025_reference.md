@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Valoctocogene roxaparvovec volumes were recorded as 3.23 L/h and 14.2 L/h, making them incompatible with clearance units.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="valoctocogene roxaparvovec" model-id="ValoctocogeneRoxaparvovec_Cao2025_reference" status="rejected" stale="false" population="" measured-compound="valoctocogene_roxaparvovec" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Cao M, Katial R, Liu Y, Lu X, Gu Q, Chen C et al. Safety, efficacy, and immunoge
 
 ### Reviewer guidance
 
-**Valoctocogene roxaparvovec volumes were recorded as 3.23 L/h and 14.2 L/h, making them incompatible with clearance units.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record assigns volume of distribution units (L/h) to parameters defined as central and peripheral compartment volumes. Specifically, the central volume is 3.23 and the peripheral volume is 14.2, both listed with flow units. A second reader could not extract values for these parameters and identified the model structure as a single-compartment model rather than two. Extracted — valoctocogene roxaparvovec: CL 0.011 L/h/kg, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
+Extracted — valoctocogene roxaparvovec: CL 0.011 L/h/kg, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of Q: this record has 0.591, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

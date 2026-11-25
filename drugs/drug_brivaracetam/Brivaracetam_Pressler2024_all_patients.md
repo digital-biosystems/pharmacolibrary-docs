@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The bioavailability parameter was left at a library default rather than being extracted from the brivaracetam paper.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="brivaracetam" model-id="Brivaracetam_Pressler2024_all_patients" status="needs_review" stale="false" population="neonates with repeated electroencephalographic seizures" measured-compound="brivaracetam" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Pressler R, Boylan G, Dempsey E, Klotz KA, Krauwinkel W, Will E et al. Pharmacok
 
 ### Reviewer guidance
 
-**The bioavailability parameter was left at a library default rather than being extracted from the brivaracetam paper.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The model builder substituted library defaults for bioavailability and the lag time, as these values were not explicitly reported in the source data. Consequently, the simulated concentration profile relies on unverified assumptions that affect the predicted exposure metrics. A second reviewer also questioned the identification of the primary analyte and the reported value of 5.37 h−1 for the absorption rate constant. Extracted — brivaracetam: AUC 4.44 h*mg/L, Cmax 0.6 mg/L, tmax 16.8 min, V 2.57 L, CL 0.23 L/h, t1/2z 7.65 h, kabs 5.37 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent. Extracted — brivaracetam: AUC 4.44 h*mg/L, Cmax 0.6 mg/L, tmax 16.8 min, V 2.57 L, CL 0.23 L/h, t1/2z 7.65 h, kabs 5.37 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has brivaracetam, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -159,7 +159,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | cross-check disputed by a second reader: verdict disputed, agreement 0.818, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.818 (9 of 11 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | cross-check contradicted by a second reader: verdict disputed; agreement 0.818 (9 of 11 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

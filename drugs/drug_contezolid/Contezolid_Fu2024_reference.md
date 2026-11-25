@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the cited paper concerns a different drug, not contezolid, making the extracted clearance of 5.28 L/h invalid.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Contezolid" model-id="Contezolid_Fu2024_reference" status="rejected" stale="false" population="" measured-compound="contezolid" parameterization="mechanistic" topology="1C"></div>
 
@@ -38,7 +38,7 @@ Fu G, Sun W, Tan Z, Liang B, Cai Y. An insight into pharmacokinetics and dose op
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,13 @@ Fu G, Sun W, Tan Z, Liang B, Cai Y. An insight into pharmacokinetics and dose op
 
 ### Reviewer guidance
 
-**The record was rejected because the cited paper concerns a different drug, not contezolid, making the extracted clearance of 5.28 L/h invalid.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The identity check failed because the paper's title and abstract do not name contezolid, indicating the source is about another molecule. Consequently, the reported clearance of 5.28 L/h and derived volume of 10.8929 L cannot be attributed to contezolid. The model builder included these values despite the source not matching the target analyte. Extracted — contezolid: CL 5.28 L h−1, V 10.9 L.
+Extracted — contezolid: CL 5.28 L h−1, V 10.9 L.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q88: this record has 18, the second reading 380.71. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -74,6 +76,27 @@ The identity check failed because the paper's title and abstract do not name con
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.857 (6/7 fields) | 1 |
+
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q88]` | 18 | 380.71 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -90,15 +113,15 @@ The identity check failed because the paper's title and abstract do not name con
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | fail | contezolid (or metabolite) | paper about another drug | paper subject is not contezolid: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=contezolid) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | skipped |  |  | no second reading of this record |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | contezolid (or metabolite) | paper about another drug |  | paper subject is not contezolid: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=contezolid) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.857 (6 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | cross-check contradicted by a second reader: verdict disputed; agreement 0.857 (6 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

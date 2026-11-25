@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M09A&quot;,&quot;href&quot;:&quot;atc/M09A.md&quot;},{&quot;label&quot;:&quot;hydroquinine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroquinine_van2000_reference&quot;,&quot;label&quot;:&quot;van_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroquinine_van2000_reference&quot;,&quot;label&quot;:&quot;van_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # hydroquinine
 
@@ -25,7 +25,7 @@ Hydroquinine is a cinchona alkaloid related to quinine. It is currently classifi
 
 ## Start here
 
-> **van_2000_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> adult patients with muscle cramps, n = 16. [Run it in the simulator](drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md?tab=Simulation) · [record](drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md)
+> **van_2000_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adult patients with muscle cramps, n = 16. [Run it in the simulator](drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md?tab=Simulation) · [record](drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,7 +33,7 @@ Hydroquinine is a cinchona alkaloid related to quinine. It is currently classifi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [van_2000_reference](drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | van Kan HJ et al., Hydroquinine pharmacokinetics after ora…, European journal of clinica… (2000) | [10.1007/s002280000128](https://doi.org/10.1007/s002280000128) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [van_2000_reference](drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | van Kan HJ et al., Hydroquinine pharmacokinetics after ora…, European journal of clinica… (2000) | [10.1007/s002280000128](https://doi.org/10.1007/s002280000128) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Hydroquinine is a cinchona alkaloid related to quinine. It is currently classifi
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

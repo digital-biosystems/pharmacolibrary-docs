@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Warfarin parameters conflict with enzalutamide measured data, and the N-desmethyl enzalutamide compartment is an orphan with no path from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Gibbons2015_reference" status="rejected" stale="false" population="healthy male subjects" measured-compound="enzalutamide" parameterization="apparent" topology="general_linear"></div>
 
@@ -51,13 +51,13 @@ Gibbons JA, de Vries M, Krauwinkel W, Ohtsu Y, Noukens J, van der Walt JS et al.
 
 ### Reviewer guidance
 
-**Warfarin parameters conflict with enzalutamide measured data, and the N-desmethyl enzalutamide compartment is an orphan with no path from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists enzalutamide as the measured compound, yet the extracted parameters include warfarin-specific metrics like a trough concentration of 12.0 μg/mL. The topology defines N-desmethyl enzalutamide as a metabolite formed from enzalutamide, but no dose is administered to N-desmethyl enzalutamide, leaving it unreachable. A second reader also identified a missing metabolic link from warfarin to 7-hydroxy-S-warfarin that is absent from this record. Extracted — warfarin: AUC∞ 9.19 ng·h/mL, Cmax 3.22 ng/mL, Ctrough 12 μg/mL, AUCt 322 μg·h/mL, CL/F 0.52 L/h.
+A reported unit could not be converted (AUC∞, Cmax, Ctrough and AUCt), so that value has no SI equivalent. Extracted — warfarin: AUC∞ 9.19 ng·h/mL, Cmax 3.22 ng/mL, Ctrough 12 μg/mL, AUCt 322 μg·h/mL, CL/F 0.52 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has enzalutamide → n-desmethyl enzalutamide (metabolism); enzalutamide → enzalutamide carboxylic acid metabolite (metabolism); n-desmethyl enzalutamide → enzalutamide carboxylic acid metabolite (metabolism), the second reading enzalutamide → n-desmethyl enzalutamide (metabolism); enzalutamide → enzalutamide carboxylic acid metabolite (metabolism); n-desmethyl enzalutamide → enzalutamide carboxylic acid metabolite (metabolism) …; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -53,13 +53,13 @@ A person extracted this paper's parameters by hand for the benchmark ground trut
 
 ### Reviewer guidance
 
-**The peripheral transfer rate constant k12 was omitted from the coverage report, causing a mismatch between the four expected and three covered parameters.**
+**T3_param_coverage.**
 
-The record lists k12 with a value of 0.028 h−1, but the coverage check only accounted for three parameters. This discrepancy caused the model to be held for review despite the parameter having an explicit value. Extracted — amoxicillin: kabs 0.17 h−1, V/F 82.4 L, kel 0.31 h−1, k12 0.028 h−1, kout_peripheral 0.33 h−1.
+Extracted — amoxicillin: kabs 0.17 h−1, V/F 82.4 L, kel 0.31 h−1, k12 0.028 h−1, kout_peripheral 0.33 h−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

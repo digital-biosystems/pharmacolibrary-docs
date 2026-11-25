@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Febuxostat volume of distribution and absorption lag time were left at defaults, quarantining the model.
+> No value for febuxostat's volume of distribution and absorption lag time; t3_param_coverage (+2 more).
 
 <div class="pk-model-meta" hidden drug="febuxostat" model-id="Febuxostat_Iwama2024_median" status="model_quarantined" stale="false" population="pediatric patients with hyperuricemia and adult subjects" measured-compound="febuxostat" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Iwama R, Nishida K, Ishii D, Iijima T. An integrated population pharmacokinetic 
 
 ### Reviewer guidance
 
-**Febuxostat volume of distribution and absorption lag time were left at defaults, quarantining the model.**
+**No value for febuxostat's volume of distribution and absorption lag time; t3_param_coverage (+2 more).**
 
-The record lists peripheral and third compartment volumes but lacks the central volume of distribution value. Absorption lag time is also absent, forcing the use of library placeholders for both parameters. Consequently, the model was held back to prevent publication with incomplete structural parameterization. Extracted — febuxostat: CL/F 6.52 L/h, V2/F 19.4 L, Q/F 1.79 L/h, V3/F 15.6 L, kabs 3.51 1/h, Fab 0.839 FED.
+The model was built, but febuxostat's volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — febuxostat: CL/F 6.52 L/h, V2/F 19.4 L, Q/F 1.79 L/h, V3/F 15.6 L, kabs 3.51 1/h, Fab 0.839 FED.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has febuxostat, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -181,7 +181,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.667 (8 of 12 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (8 of 12 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

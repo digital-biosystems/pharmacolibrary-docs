@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The atorvastatin record lacks distribution volume and clearance, identifying it as an exposure study rather than a compartmental PK model.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q99 unit min–1 (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Clemente2021_reversible_2_tissue_compartment_ma" status="rejected" stale="false" population="healthy rats" measured-compound="atorvastatin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Clemente GS, Antunes IF, Sijbesma JWA, van Waarde A, Lammertsma AA, Dömling A e
 
 ### Reviewer guidance
 
-**The atorvastatin record lacks distribution volume and clearance, identifying it as an exposure study rather than a compartmental PK model.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q99 unit min–1 (1 / [time]) vs [length] ** 3 / [time].**
 
-The record defines transfer rate constants but omits distribution volume and elimination clearance, failing the structural requirements for a population PK model. Additionally, a dimension mismatch occurred where a rate constant parameter was assigned a volume unit. The paper is classified as an exposure/outcome study because it does not report the necessary pharmacokinetic parameters. Extracted — atorvastatin: k12 0.185 mL/cm3/min, Q2 0.038 min–1, k21 15.4 18F, k31 23.5 18F, k14 32.2 18F.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (k12, Q2, k21 and k31), so that value has no SI equivalent. Extracted — atorvastatin: k12 0.185 mL/cm3/min, Q2 0.038 min–1, k21 15.4 18F, k31 23.5 18F, k14 32.2 18F.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atorvastatin, the second reading [18F]atorvastatin; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

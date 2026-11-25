@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The elimination rate constant for plasma free cortisol is recorded in hours, causing a dimensional mismatch with its reciprocal rate requirement.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="hydrocortisone" model-id="Hydrocortisone_Werumeus2017_reference" status="rejected" stale="false" population="adults with secondary adrenal insufficiency" measured-compound="cortisol" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Werumeus Buning J, Touw DJ, Brummelman P, Dullaart RPF, van den Berg G, van der 
 
 ### Reviewer guidance
 
-**The elimination rate constant for plasma free cortisol is recorded in hours, causing a dimensional mismatch with its reciprocal rate requirement.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists the elimination rate constant as 1.00 h, but the parameter definition requires units of inverse time. Additionally, the model contains an orphan compartment because plasma total cortisol has no defined input path from the administered hydrocortisone. The second reader noted discrepancies, finding no links or parameter values that contradicted the primary record's extracted values of 337.58 L/h for clearance. Extracted — plasma free cortisol: CL 338 L/h, V 486 L, kel 1 h.
+A reported unit could not be converted (kel), so that value has no SI equivalent. None of the extracted parameters is hydrocortisone's own; they describe plasma free cortisol. Extracted — plasma free cortisol: CL 338 L/h, V 486 L, kel 1 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hydrocortisone, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

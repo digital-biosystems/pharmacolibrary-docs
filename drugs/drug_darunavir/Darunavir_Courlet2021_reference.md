@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Darunavir CL/F of 17.0 L/h was rejected because the paper studied amlodipine, with darunavir only a co-administered inhibitor.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="darunavir" model-id="Darunavir_Courlet2021_reference" status="rejected" stale="false" population="" measured-compound="darunavir" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Courlet P, Guidi M, Alves Saldanha S, Cavassini M, Stoeckle M, Buclin T et al. P
 
 ### Reviewer guidance
 
-**Darunavir CL/F of 17.0 L/h was rejected because the paper studied amlodipine, with darunavir only a co-administered inhibitor.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The paper concerns amlodipine; darunavir appears only as a co-administered CYP3A4 inhibitor, and the findings state that the paper provides no pharmacokinetic parameters for darunavir. The record nevertheless lists darunavir CL/F 17.0 L/h, V/F 1000.0 L, absorption rate constant 0.69 h−1, and absorption lag time 0.87 h, with apparent-parameter assumptions F=1, Fm=1, and no molar correction. The second reader disputed the record, with agreement 0.375 and 0 of 1 reader agreeing; disagreements included CL/F 15.7, V/F 980, absorption rate constant 0.66, absorption lag time 0.86, and a further value of 40 for which the second reader supplied no value. Extracted — darunavir: CL/F 17 L/h, V/F 1e+03 L, kabs 0.69 h−1, tlag 0.87 h.
+Extracted — darunavir: CL/F 17 L/h, V/F 1e+03 L, kabs 0.69 h−1, tlag 0.87 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 17.0, the second reading 15.7; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.375 | cross-check contradicted by a second reader: verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

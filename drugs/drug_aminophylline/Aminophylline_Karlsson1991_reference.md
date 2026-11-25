@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;aminophylline&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/&quot;},{&quot;label&quot;:&quot;Karlsson_1991 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aminophylline_Jameson1990_reference&quot;,&quot;label&quot;:&quot;Jameson_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Jameson1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Frymoyer2020_reference&quot;,&quot;label&quot;:&quot;Frymoyer_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Frymoyer2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Goetz1989_reference&quot;,&quot;label&quot;:&quot;Goetz_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Goetz1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Shi2013_reference&quot;,&quot;label&quot;:&quot;Shi_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Shi2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Amponsah2017_reference&quot;,&quot;label&quot;:&quot;Amponsah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Amponsah2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aminophylline_Goetz1989_reference&quot;,&quot;label&quot;:&quot;Goetz_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Goetz1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Jameson1990_reference&quot;,&quot;label&quot;:&quot;Jameson_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Jameson1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Shiu1989_reference&quot;,&quot;label&quot;:&quot;Shiu_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Shiu1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Amponsah2017_reference&quot;,&quot;label&quot;:&quot;Amponsah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Amponsah2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Karlsson1991_reference" status="rejected" stale="false" population="neonates with apnoea of prematurity" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Karlsson1991_reference" status="rejected" stale="false" population="neonates" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Karlsson MO, Thomson AH, McGovern EM, Chow P, Evans TJ, Kelman AW. Population pharmacokinetics of rectal theophylline in neonates. Therapeutic drug monitoring 13(3):195–200 (1991).
@@ -17,7 +17,7 @@ Karlsson MO, Thomson AH, McGovern EM, Chow P, Evans TJ, Kelman AW. Population ph
 
 ## Population and dosing
 
-**Population:** neonates with apnoea of prematurity · condition apnoea of prematurity · age group neonate · n = 35.
+**Population:** neonates · condition apnoea of prematurity · age group neonate · n = 35.
 
 **Dosed compound ≠ measured compound:** dosed aminophylline, measured theophylline.
 
@@ -56,15 +56,16 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'weight (range' routed out of structural estimates ('The interindividual variability in CL/F was 25%, whereas the same estimates in V/F and in the first-order absorption rate constant could not be obtained.')
-- table section iiv: 'postnatal age' routed out of structural estimates ('The interindividual variability in CL/F was 25%, whereas the same estimates in V/F and in the first-order absorption rate constant could not be obtained.')
-- table section iiv: 'CL/F' routed out of structural estimates ('The interindividual variability in CL/F was 25%, whereas the same estimates in V/F and in the first-order absorption rate constant could not be obtained.')
-- table section iiv: 'V/F' routed out of structural estimates ('The interindividual variability in CL/F was 25%, whereas the same estimates in V/F and in the first-order absorption rate constant could not be obtained.')
-- table section iiv: 'half-life' routed out of structural estimates ('The interindividual variability in CL/F was 25%, whereas the same estimates in V/F and in the first-order absorption rate constant could not be obtained.')
+- table section iiv: 'weight (range 0.8-2.5 kg)' routed out of structural estimates ('The interindividual variability in CL/F was 25%, whereas the same estimates in V/F and in the first-order absorption rate constant could not be obtained.')
+- table section iiv: 'postnatal age (2-80 days)' routed out of structural estimates ('The interindividual variability in CL/F was 25%, whereas the same estimates in V/F and in the first-order absorption rate constant could not be obtained.')
+- table section iiv: 'CL/F = 40 +/- 2 ml/h/kg' routed out of structural estimates ('The interindividual variability in CL/F was 25%, whereas the same estimates in V/F and in the first-order absorption rate constant could not be obtained.')
+- table section iiv: 'V/F = 1.3 +/- 0.2 L/kg' routed out of structural estimates ('The interindividual variability in CL/F was 25%, whereas the same estimates in V/F and in the first-order absorption rate constant could not be obtained.')
+- table section iiv: 'half-life of 1.6 +/- 0.7 h' routed out of structural estimates ('The interindividual variability in CL/F was 25%, whereas the same estimates in V/F and in the first-order absorption rate constant could not be obtained.')
 - table section iiv: 'interindividual variability in CL/F' routed out of structural estimates ('The interindividual variability in CL/F was 25%, whereas the same estimates in V/F and in the first-order absorption rate constant could not be obtained.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=theophylline
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- row roles (LLM): model_class=noncompartmental; 6/6 row label(s) assigned, 2 linked by role; re-tagged theophylline→parent ×4
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'theophylline', not aminophylline — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Karlsson_1991_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -72,7 +73,7 @@ Independently confirmed by `gpt-oss-120b`.
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -116,4 +117,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baminophylline%5D%20Aminophylline_Karlsson1991_reference&body=Drug%3A%20aminophylline%0ARecord%3A%20Aminophylline_Karlsson1991_reference%0APaper%3A%20Karlsson_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aminophylline/Aminophylline_Karlsson1991_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 23:44 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:15 UTC</sub>

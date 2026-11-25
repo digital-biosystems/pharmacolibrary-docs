@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held because a second reader disputed the central clearance value of 0.249 L/day, citing an alternative value of 0.257 L/day for dostarlimab.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="dostarlimab" model-id="Dostarlimab_Shang2022_reference" status="needs_review" stale="false" population="" measured-compound="dostarlimab" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Shang J, Huang L, Huang J, Ren X, Liu Y, Feng Y. Population pharmacokinetic mode
 
 ### Reviewer guidance
 
-**The record was held because a second reader disputed the central clearance value of 0.249 L/day, citing an alternative value of 0.257 L/day for dostarlimab.**
+**cross_check_disputed; x1_cross_check.**
 
-The pharmacokinetic record for the monoclonal antibody dostarlimab was flagged for review due to a disagreement between readers. While the primary extraction reported total clearance as 0.249 L/day, a secondary reader identified the value as 0.257 L/day. This discrepancy prevented full agreement on the parameter values, resulting in the record being marked as needing further verification. Extracted — dostarlimab: CL 0.249 L/day, V1 3.48 L, V2 2.78 L, Q 0.703 L/day.
+Extracted — dostarlimab: CL 0.249 L/day, V1 3.48 L, V2 2.78 L, Q 0.703 L/day.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of CL: this record has 0.249, the second reading 0.257. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | cross-check disputed by a second reader: verdict disputed, agreement 0.875, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.875 (7 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.875 | cross-check contradicted by a second reader: verdict disputed; agreement 0.875 (7 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

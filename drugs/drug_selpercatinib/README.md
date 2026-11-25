@@ -40,7 +40,7 @@ Selpercatinib is a protein kinase inhibitor used to treat non-small-cell lung ca
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:48 | 1:19 | 1/0/0 | 0/0/0 | 0/0/0 | 31,021/6,473 | openai / gpt-6-luna | 5 | 0/1 | 5/0 | 0 |
+| 2026-11-24 03:28 | 0:03 | 1/0/0 | 0/0/0 | 0/0/0 | 3,837/149 | einfracz / qwen3.8-27b | 5 | 2/3 | 5/0 | 0 |
 
 ## Coverage
 
@@ -48,6 +48,23 @@ Selpercatinib is a protein kinase inhibitor used to treat non-small-cell lung ca
 - **screened:** 1  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Barsouk_2024 | irrelevant | 0 | 0 | This is a clinical case report describing a treatment response and does not report any pharmacokinetic parameters or models. |
+| PGx | Barsouk_2024 | not_relevant | 0 | 0 | The paper is a single patient case report describing a clinical response to a targeted therapy, not a study of how genetic variants affect pharmacokinetics or pharmacodynamics. |
+| popPK | Cognigni_2024 | irrelevant | 0 | 0 | This is a clinical case report focusing on therapeutic efficacy and toxicity management, not a pharmacokinetic study, and contains no quantitative PK parameters (CL, V, etc.). |
+| PGx | Cognigni_2024 | not_relevant | 0 | 0 | The paper is a clinical case report regarding treatment efficacy and toxicity, containing no data on genetic variants or pharmacogenomics. |
+| popPK | De_2024 | irrelevant | 0 | 0 | This is a clinical case report regarding the efficacy and adverse events of selpercatinib, containing no pharmacokinetic parameter values (CL, V, t1/2, etc.). |
+| PGx | De_2024 | not_relevant | 0 | 0 | The paper reports a clinical case of selpercatinib efficacy in a patient with a specific tumor driver mutation (ANK3-RET fusion), which is a biomarker for disease response (predictive pharmacogenomics), not a germline or somatic variant affecting the pharmacokinetics (absorption, distribution, metabolism, excretion) or pharmacodynamic mechanisms of the drug itself. |
+| popPK | Kollu_2026 | irrelevant | 0 | 0 | The paper describes a stability and forced degradation study of selpercatinib using LC-MS and NMR, reporting no pharmacokinetic parameters. |
+| PGx | Kollu_2026 | not_relevant | 0 | 0 | The paper reports on the chemical stability and degradation products of selpercatinib, not pharmacogenomic effects on PK or PD parameters. |
+| popPK | Nanjo_2026 | irrelevant | 0 | 0 | This is a clinical case report focusing on QTc prolongation adverse events and treatment management, containing no original pharmacokinetic data, models, or quantitative disposition parameters for selpercatinib. |
+| PGx | Nanjo_2026 | not_relevant | 0 | 0 | The paper reports adverse effects (QTc prolongation) in two cases but does not investigate or report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Raez_2024 | irrelevant | 0 | 0 | The paper is a safety analysis of the LIBRETTO-001 trial focusing on adverse events and does not report quantitative pharmacokinetic parameters such as clearance, volume of distribution, or population PK model estimates. |
+| PGx | Raez_2024 | not_relevant | 0 | 0 | The study is a clinical safety analysis and does not report genetic variants or pharmacokinetic/pharmacodynamic parameters. |
 
 
 </details>

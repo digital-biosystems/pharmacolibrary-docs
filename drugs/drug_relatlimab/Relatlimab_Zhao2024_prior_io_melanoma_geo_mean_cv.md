@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Vmax unit μg/h caused a dimension mismatch, and the peripheral compartment was unreachable.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit μg/h ([mass] / [time]) vs [mass] / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Relatlimab" model-id="Relatlimab_Zhao2024_prior_io_melanoma_geo_mean_cv" status="rejected" stale="false" population="adult and adolescent patients with solid tumors" measured-compound="relatlimab" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Zhao Y, Hu Z, Bathena SP, Keidel S, Miller-Moslin K, Statkevich P et al. Model-I
 
 ### Reviewer guidance
 
-**Vmax unit μg/h caused a dimension mismatch, and the peripheral compartment was unreachable.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit μg/h ([mass] / [time]) vs [mass] / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The Vmax value of 81.5 μg/h was flagged for a unit dimension conflict with the parameter definition. The model structure includes a peripheral compartment that has no path from the dose, making it orphaned. Additionally, the second reader disagreed on the clearance value, citing 94.6 where this record lists 5.99 mL/h. Extracted — relatlimab: Cmin 5.4 μg/mL, Cmax 43.2 μg/mL, Cavg 14.8 μg/mL, CL 5.99 mL/h, V1 3.68 L, V2 2.84 L, Vss 6.58 L, Vmax 81.5 μg/h.
+A reported unit could not be converted (Cmin, Cmax, Cavg and Vmax), so that value has no SI equivalent. Extracted — relatlimab: Cmin 5.4 μg/mL, Cmax 43.2 μg/mL, Cavg 14.8 μg/mL, CL 5.99 mL/h, V1 3.68 L, V2 2.84 L, Vss 6.58 L, Vmax 81.5 μg/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clss/cl0: this record has none, the second reading 94.6. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

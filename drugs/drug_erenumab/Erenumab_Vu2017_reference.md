@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant for erenumab was recorded with incorrect units, causing a dimension mismatch, and key clearance values were omitted.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ka ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="erenumab" model-id="Erenumab_Vu2017_reference" status="rejected" stale="false" population="healthy and migraine subjects" measured-compound="erenumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Vu T, Ma P, Chen JS, de Hoon J, Van Hecken A, Yan L et al. Pharmacokinetic-Pharm
 
 ### Reviewer guidance
 
-**The absorption rate constant for erenumab was recorded with incorrect units, causing a dimension mismatch, and key clearance values were omitted.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ka ([time]) vs 1 / [time].**
 
-The absorption rate constant (ka) is listed with the unit 'ka', which is dimensionless, but a rate constant requires units of 1/[time]. Additionally, the second reader identified a nonspecific linear clearance of 0.214 and a receptor degradation rate of 0.22 that are missing from the extracted parameters. Extracted — erenumab: V1 4.27 L, Q 3.34 L/day, V2 2.73 L, kabs 0.432 ka, Fab 74 F, KD 18.8 ng/mL, kint 0.0345 1/day, CL 0.0902 L/d.
+A reported unit could not be converted (kabs, Fab and KD), so that value has no SI equivalent. Extracted — erenumab: V1 4.27 L, Q 3.34 L/day, V2 2.73 L, kabs 0.432 ka, Fab 74 F, KD 18.8 ng/mL, kint 0.0345 1/day, CL 0.0902 L/d.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of central cl: this record has 0.0902, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

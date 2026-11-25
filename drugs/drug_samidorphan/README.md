@@ -32,6 +32,7 @@ Samidorphan is an opioid antagonist primarily used in combination with olanzapin
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Sun_2020_QTcF](drugs/drug_samidorphan/pd_Sun_2020_QTcF.md) | QTcF ← samidorphan · direct linear effect | — | Sun L et al., Combination of olanzapine and samidorph…, Progress in neuro-psychopha… (2020) | [10.1016/j.pnpbp.2020.109881](https://doi.org/10.1016/j.pnpbp.2020.109881) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Tan_2022_DOR_occupancy](drugs/drug_samidorphan/pd_Tan_2022_DOR_occupancy.md) | DOR receptor occupancy ← samidorphan · direct sigmoid Emax (Hill) effect | — | Tan LA et al., In vivo Characterization of the Opioid…, Neuropsychiatric disease an… (2022) | [10.2147/NDT.S373195](https://doi.org/10.2147/NDT.S373195) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Tan_2022_KOR_occupancy](drugs/drug_samidorphan/pd_Tan_2022_KOR_occupancy.md) | KOR receptor occupancy ← samidorphan · direct sigmoid Emax (Hill) effect | — | Tan LA et al., In vivo Characterization of the Opioid…, Neuropsychiatric disease an… (2022) | [10.2147/NDT.S373195](https://doi.org/10.2147/NDT.S373195) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Tan_2022_MOR_occupancy](drugs/drug_samidorphan/pd_Tan_2022_MOR_occupancy.md) | MOR receptor occupancy ← samidorphan · direct sigmoid Emax (Hill) effect | — | Tan LA et al., In vivo Characterization of the Opioid…, Neuropsychiatric disease an… (2022) | [10.2147/NDT.S373195](https://doi.org/10.2147/NDT.S373195) |
@@ -48,7 +49,7 @@ Samidorphan is an opioid antagonist primarily used in combination with olanzapin
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 17:19 | 3:04 | 0/1/0 | 3/0/0 | 0/0/0 | 107,574/7,746 | ollama / glm-5.3-flash | 3 | 0/3 | 3/0 | 0 |
+| 2026-11-24 03:24 | 0:04 | 0/1/0 | 4/0/0 | 0/0/0 | 4,529/194 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## Coverage
 
@@ -57,14 +58,28 @@ Samidorphan is an opioid antagonist primarily used in combination with olanzapin
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Sun_2019.pdf` | Sun L et al., A Phase I Open-Label Study to Evaluate…, Clinical drug investigation (2019) | popPK | 8 | [10.1007/s40261-019-00775-8](https://doi.org/10.1007/s40261-019-00775-8) | [30888624](https://pubmed.ncbi.nlm.nih.gov/30888624) | The study reports significant changes in samidorphan PK metrics (Cmax, AUC) due to drug interaction, but does not provide explicit absolute quantitative disposition parameters like clearance (CL), volume (V), or half-life (t1/2) in the text. |
+
+<sub>queue written 2026-11-24 03:24 UTC</sub>
+
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Pathak_2019 | irrelevant | 0 | 0 | Abuse-potential pharmacodynamics study with no PK parameters or numeric disposition values reported. |
-| popPK | Pathak_2019_2 | irrelevant | 0 | 0 | Abuse-potential study with no PK disposition parameters for samidorphan reported. |
-| popPK | Sun_2019 | irrelevant | 3 | 2 | DDI study reporting only Cmax/AUC changes (percentages), no CL/V/ka or population-PK parameters for samidorphan. |
-| popPK | Sun_2020 | irrelevant | 2 | 2 | This is a thorough QT study reporting C-QTc slopes and Cmax only, not PK disposition parameters (CL, V, ka, half-life) for samidorphan. |
+| popPK | Pathak_2019 | irrelevant | 0 | 0 | The study focuses on the abuse potential of samidorphan using subjective behavioral endpoints (Drug Liking scores) and does not report any quantitative pharmacokinetic parameters. |
+| PGx | Pathak_2019 | not_relevant | 0 | 0 | The study evaluates the abuse potential of samidorphan in healthy volunteers but does not involve pharmacogenomic analysis or genetic variants affecting PK/PD parameters. |
+| popPK | Pathak_2019_2 | irrelevant | 0 | 0 | The study focuses on the abuse potential and psychopharmacological effects of samidorphan, not on its pharmacokinetic disposition parameters (clearance, volume, etc.). |
+| PGx | Pathak_2019_2 | not_relevant | 0 | 0 | The paper reports abuse potential and PD effects of a drug combination in a general population but does not investigate any pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| popPK | Sun_2019 | relevant | 8 | 3 | The study reports significant changes in samidorphan PK metrics (Cmax, AUC) due to drug interaction, but does not provide explicit absolute quantitative disposition parameters like clearance (CL), volume (V), or half-life (t1/2) in the text. |
+| PGx | Sun_2019 | not_relevant | 0 | 0 | This is a drug-drug interaction study using rifampin as a CYP3A4 inducer, not a pharmacogenomic study examining the effect of genetic variants on samidorphan's PK. |
+| popPK | Sun_2020 | irrelevant | 1 | 1 | The study is a thorough QT assessment that does not report quantitative pharmacokinetic disposition parameters (clearance, volume, half-life) or a PK model for samidorphan. |
+| PGx | Sun_2020 | not_relevant | 0 | 0 | The paper reports a QT/QTc safety study for the combination drug OLZ/SAM but contains no data or analysis regarding pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | Sun_2020_2 | irrelevant | 2 | 1 | This is a DDI study of lithium/valproate with OLZ/SAM; samidorphan is only co-administered, and no samidorphan PK parameters (CL, V, t½) are reported—only trough concentrations in a figure. |
 | popPK | Tan_2022 | irrelevant | 2 | 2 | This is a rat receptor-occupancy study; the only PK values (bioavailability 69%, half-life 7–9 h) are cited from prior human studies, not original disposition parameters, and no CL/V/ka values are reported. |
 

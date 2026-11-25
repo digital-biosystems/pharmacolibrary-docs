@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the cited paper analyzes lacosamide, not brivaracetam, and model parameters like clearance were not explicitly estimated from the source.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="brivaracetam" model-id="Brivaracetam_Li2025_reference" status="rejected" stale="false" population="" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Li Y, Guo HL, Fan L, Wang J, Hu YH, Zhang YY et al. PopPK modeling supports BW b
 
 ### Reviewer guidance
 
-**Record rejected because the cited paper analyzes lacosamide, not brivaracetam, and model parameters like clearance were not explicitly estimated from the source.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source text describes a study on lacosamide where brivaracetam appears only as a covariate, meaning the extracted clearance and volume values do not belong to the target drug. Furthermore, absorption parameters were not reported in the source, forcing the use of default values instead of explicit estimates. The model also relies on an apparent parameterization that assumes complete bioavailability, which is a significant deviation from standard reporting. Extracted — brivaracetam: CL/F 1.51 L/h/kg, V/F 23.7 L.
+Extracted — brivaracetam: CL/F 1.51 L/h/kg, V/F 23.7 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (6 of 6 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;varenicline&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/&quot;},{&quot;label&quot;:&quot;Faessel_2009 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Varenicline_Fediuk2021_reference&quot;,&quot;label&quot;:&quot;Fediuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Fediuk2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Varenicline_Glatard2019_reference&quot;,&quot;label&quot;:&quot;Glatard_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Glatard2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lummis_2011_Rmax&quot;,&quot;label&quot;:&quot;Lummis_2011 \u00b7 Rmax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/pd_Lummis_2011_Rmax.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lummis_2011_Rmax_2&quot;,&quot;label&quot;:&quot;Lummis_2011 \u00b7 Rmax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/pd_Lummis_2011_Rmax_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Varenicline_Fediuk2021_reference&quot;,&quot;label&quot;:&quot;Fediuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Fediuk2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Varenicline_Glatard2019_reference&quot;,&quot;label&quot;:&quot;Glatard_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Glatard2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Varenicline AUC was recorded as 197.0 ng, whose mass unit conflicts with the concentration dimension expected for this structural parameter, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit ng ([mass]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="varenicline" model-id="Varenicline_Faessel2009_reference" status="rejected" stale="false" population="healthy adolescent smokers" measured-compound="varenicline" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Faessel H, Ravva P, Williams K. Pharmacokinetics, safety, and tolerability of va
 
 ### Reviewer guidance
 
-**Varenicline AUC was recorded as 197.0 ng, whose mass unit conflicts with the concentration dimension expected for this structural parameter, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit ng ([mass]) vs [mass] * [time] / [length] ** 3.**
 
-The record was based on the abstract alone, so reported summary statistics stood in for a fitted model. The second reader disagreed with assigning 197.0 to AUC generally, identifying it instead as AUC(0-24) for high-body-weight subjects, and also disputed the recorded clearance, absorption-rate constant, and volume-of-distribution values. Extracted — varenicline: CL/F 10.4 L/h, AUC 197 ng, V/F 211 L, kabs 0.98 h -1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — varenicline: CL/F 10.4 L/h, AUC 197 ng, V/F 211 L, kabs 0.98 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,4 +152,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvarenicline%5D%20Varenicline_Faessel2009_reference&body=Drug%3A%20varenicline%0ARecord%3A%20Varenicline_Faessel2009_reference%0APaper%3A%20Faessel_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_varenicline/Varenicline_Faessel2009_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:49 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 07:12 UTC</sub>

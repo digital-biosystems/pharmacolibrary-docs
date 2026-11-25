@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Upadacitinib’s apparent clearance (CL/F) of 39.7 L/h is disputed, and its covariate effects were not exercised, so the record needs review.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="upadacitinib" model-id="Upadacitinib_Klnder2018_reference" status="needs_review" stale="false" population="healthy subjects and subjects with rheumatoid arthritis" measured-compound="upadacitinib" parameterization="apparent" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Klünder B, Mohamed MF, Othman AA. Population Pharmacokinetics of Upadacitinib i
 
 ### Reviewer guidance
 
-**Upadacitinib’s apparent clearance (CL/F) of 39.7 L/h is disputed, and its covariate effects were not exercised, so the record needs review.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. A second reader disputed several estimates, including CL/F (39.7 versus 37.8 L/h), the absorption rate constant (12.3 versus 8.37 1/h), and the clearance ratio in rheumatoid arthritis versus healthy subjects (0.76 versus 0.7); cross-reader agreement was 0.25, with 0 of 1 reader agreeing. Extracted — upadacitinib: CL/F 39.7 L/h, V1/F 146 L, kabs 12.3 1/h, tlag 0.48 h, V2/F 64.3 L, Q/F 3.23 L/h, CL_ratio 0.76.
+The base model was simulated, not the covariate effects the record defines. Extracted — upadacitinib: CL/F 39.7 L/h, V1/F 146 L, kabs 12.3 1/h, tlag 0.48 h, V2/F 64.3 L, Q/F 3.23 L/h, CL_ratio 0.76.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[alag1].value`: this record has 0.48, the second reading 0.47; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -173,7 +173,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.25 (4 of 16 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (4 of 16 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

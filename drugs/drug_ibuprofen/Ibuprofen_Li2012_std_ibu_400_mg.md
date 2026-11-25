@@ -142,9 +142,9 @@ _All readers agree on the compared fields of this record._
 | T1_cmax | reference | skipped | 49.3 | 0.03089 |  | unresolved concentration unit (exp 'µg•mL -1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 49.3 | 0.03089 |  | unresolved concentration unit (exp 'µg•mL -1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 30.7 | 0.03089 |  | unresolved concentration unit (exp 'µg•mL -1', sim 'kg/m3') |
-| T1_tmax | reference | fail | 0.32 | 1.466 | 4.581 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 0.32 | 1.466 | 4.581 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 1.37 | 1.466 | 1.07 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.32 | 1.466 | 4.581 | reported 0.32 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 0.32 | 1.466 | 4.581 | reported 0.32 h→SI vs simulated h |
+| T1_tmax | reference | pass | 1.37 | 1.466 | 1.07 | reported 1.37 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

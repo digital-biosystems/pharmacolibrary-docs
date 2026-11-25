@@ -57,7 +57,7 @@ Khalil F, Choi SL, Watson E, Tzschentke TM, Lefeber C, Eerdekens M et al. Popula
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**Simulated; the covariate scenarios were not simulated (advisory).**
 
 The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (kel), so that value has no SI equivalent.
 
@@ -153,7 +153,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (13 of 13 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

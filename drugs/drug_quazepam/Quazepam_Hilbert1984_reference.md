@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Quazepam is rejected because its metabolites are unlinked to the dose, preventing a connected metabolic model from the abstract-only record.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="quazepam" model-id="Quazepam_Hilbert1984_reference" status="rejected" stale="false" population="geriatric subjects" measured-compound="quazepam" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -17,13 +17,13 @@ Hilbert JM, Chung M, Radwanski E, Gural R, Symchowicz S, Zampaglione N. Quazepam
 
 ## Population and dosing
 
-**Population:** geriatric subjects · condition healthy (elderly) · age group elderly · n = 10.
+**Population:** geriatric subjects · condition healthy · age group elderly.
 
 ## Model
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -35,12 +35,10 @@ Hilbert JM, Chung M, Radwanski E, Gural R, Symchowicz S, Zampaglione N. Quazepam
 | Cmax | Cmax | 29.3 | ng/ml |
 | t1/2 alpha | t1/2α | 3.5 | hr |
 | t1/2 beta | t1/2β | 53.3 | hr |
-| Ka (1/h) | kabs | 5.41 | 1/h |
-| ALAG (h) | tlag | 0.394 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,24 +48,22 @@ Hilbert JM, Chung M, Radwanski E, Gural R, Symchowicz S, Zampaglione N. Quazepam
 
 ### Reviewer guidance
 
-**Quazepam is rejected because its metabolites are unlinked to the dose, preventing a connected metabolic model from the abstract-only record.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure lists 2-oxoquazepam and N-desalkyl-2-oxoquazepam as metabolites formed from quazepam, but no direct path exists from the dose to these species. Consequently, the metabolite compartments remain orphaned, invalidating the kinetic description derived solely from the paper's abstract. A second reader also disputed the reported absorption parameters and the existence of the metabolic links. Extracted — quazepam: t1/2z 0.8 hr, Cmax 29.3 ng/ml, t1/2α 3.5 hr, t1/2β 53.3 hr, kabs 5.41 1/h, tlag 0.394 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — quazepam: t1/2z 0.8 hr, Cmax 29.3 ng/ml, t1/2α 3.5 hr, t1/2β 53.3 hr.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has quazepam, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has quazepam → 2-oxoquazepam (metabolism); 2-oxoquazepam → n-desalkyl-2-oxoquazepam (metabolism), the second reading none. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| t1/2 | `Q57` · t1/2z | 0.8 | hr | 2880 | s | h | exact (1) | Hilbert_1984:abstract |
-| Cmax | `Q32` · Cmax | 29.3 | ng/ml |  |  | ng/ml | exact (1) | Hilbert_1984:abstract, Hilbert_1984:abstract |
-| t1/2 alpha | `Q59` · t1/2α | 3.5 | hr | 1.26e+04 | s | h | exact (1) | Hilbert_1984:abstract, Hilbert_1984:abstract |
-| t1/2 beta | `Q60` · t1/2β | 53.3 | hr | 1.919e+05 | s | h | exact (1) | Hilbert_1984:abstract, Hilbert_1984:abstract, Hilbert_1984:abstract |
-| Ka (1/h) | `Q49` · kabs | 5.41 | 1/h | 0.001503 | 1/s | 1/h | review_gapfill (0.7) | Cha_2024:review |
-| ALAG (h) | `Q83` · tlag | 0.394 | h | 1418 | s | h | review_gapfill (0.7) | Cha_2024:review |
+| t1/2 | `Q57` · t1/2z | 0.8 | hr | 2880 | s | h | half_life_rule (0.95) | Hilbert_1984:abstract, Hilbert_1984:abstract |
+| Cmax | `Q32` · Cmax | 29.3 | ng/ml | 2.93e-05 | kg/m3 | ng/ml | exact (1) | Hilbert_1984:abstract, Hilbert_1984:abstract |
+| t1/2 alpha | `Q59` · t1/2α | 3.5 | hr | 1.26e+04 | s | h | half_life_rule (0.95) | Hilbert_1984:abstract, Hilbert_1984:abstract |
+| t1/2 beta | `Q60` · t1/2β | 53.3 | hr | 1.919e+05 | s | h | half_life_rule (0.95) | Hilbert_1984:abstract, Hilbert_1984:abstract, Hilbert_1984:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,18 +73,13 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q57 ('apparent formation t1/2', value 0.8) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=quazepam
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- row roles (LLM): model_class=noncompartmental; 5/5 row label(s) assigned, 0 linked by role
-- molar mass: none of 1 PubChem candidate(s) is 'N-desalkyl-2-oxoquazepam' (LLM) — left in mass units
+- row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 0 linked by role
+- molar mass: no plausible PubChem entry for 'N-desalkyl-2-oxoquazepam' ('N-desalkyl-2-oxoquazepam') — left in mass units
 - molar mass: none found for 'N-desalkyl-2-oxoquazepam' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Cha_2024's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Cha_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Hilbert_1984_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
@@ -96,30 +87,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.067 (1/15 fields) | 14 |
+| `gpt-oss-120b` | not confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>14 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.links` | [['quazepam', '2-oxoquazepam', 'metabolism'], ['2-oxoquazepam', 'n-desalkyl-2-oxoquazepam', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[alag]` | 0.394 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent formation t1/2]` |  | 0.8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` | 29.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` |  | 29.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 5.41 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2 alpha]` | 3.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2 alpha]` |  | 3.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2 beta]` | 53.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2 beta]` |  | 53.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2]` | 0.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2]` |  | 0.8 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | quazepam | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | quazepam | unknown | mismatch |
 
 </details>
 
@@ -137,11 +115,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Hilbert_1984:abstract', 'Hilbert_1984:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Cha_2024:review'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Hilbert_1984:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Hilbert_1984:abstract', 'Hilbert_1984:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Hilbert_1984:abstract', 'Hilbert_1984:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Hilbert_1984:abstract', 'Hilbert_1984:abstract', 'Hilbert_1984:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Cha_2024:review'] |
 | C8_topology | fail |  |  |  |
 
 <details class="legend">
@@ -166,4 +142,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bquazepam%5D%20Quazepam_Hilbert1984_reference&body=Drug%3A%20quazepam%0ARecord%3A%20Quazepam_Hilbert1984_reference%0APaper%3A%20Hilbert_1984%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_quazepam/Quazepam_Hilbert1984_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:52 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:44 UTC</sub>

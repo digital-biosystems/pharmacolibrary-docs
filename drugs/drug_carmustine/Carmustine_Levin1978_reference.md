@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> BCNU’s clearance (56 ml/minute/kg), volume of distribution (3.25 liters/kg), and elimination rate constant (0.0324 MINUTE-1) were disputed, leaving this abstract-only record held for review.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="carmustine" model-id="Carmustine_Levin1978_reference" status="needs_review" stale="false" population="20 patients" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Levin VA, Hoffman W, Weinkam RJ. Pharmacokinetics of BCNU in man: a preliminary 
 
 ### Reviewer guidance
 
-**BCNU’s clearance (56 ml/minute/kg), volume of distribution (3.25 liters/kg), and elimination rate constant (0.0324 MINUTE-1) were disputed, leaving this abstract-only record held for review.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagreed on the recorded values for all three BCNU parameters. Agreement was 0.4, below 0.5, with 0 of 1 readers agreeing. Only the abstract was read, so its summary statistics stood in for a fitted model. Extracted — carmustine: V 3.25 liters/kg, CL 56 ml/minute/kg, kel 0.0324 MINUTE-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — carmustine: V 3.25 liters/kg, CL 56 ml/minute/kg, kel 0.0324 MINUTE-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has 56, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial, agreement 0.4, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

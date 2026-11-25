@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance values of 0.00010 L/day and 0.00494 L/day/kg are implausibly low for canakinumab.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="canakinumab" model-id="Canakinumab_Chakraborty2012_mouse" status="rejected" stale="false" population="CAPS patients" measured-compound="canakinumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Chakraborty A, Tannenbaum S, Rordorf C, Lowe PJ, Floch D, Gram H et al. Pharmaco
 
 ### Reviewer guidance
 
-**Clearance values of 0.00010 L/day and 0.00494 L/day/kg are implausibly low for canakinumab.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The recorded total clearance of 0.00010 L/day and normalized clearance of 0.00494 L/day/kg fall outside the physiological window for canakinumab. The second reader could not confirm any of the extracted parameter values or the drug identity. This discrepancy suggests an extraction or scaling error in the clearance estimates. Extracted — canakinumab: CL 0.0001 L/day, CLnorm 0.00494 L/day/kg, Vss 0.00247 L, t1/2z 17.7 day, kabs 0.38 h-1.
+Extracted — canakinumab: CL 0.0001 L/day, CLnorm 0.00494 L/day/kg, Vss 0.00247 L, t1/2z 17.7 day, kabs 0.38 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has canakinumab, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Remdesivir's total clearance of 18.1 L/h failed a dimension check due to a unit conversion error.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit /h (1 / [time]) vs [length] ** 3 / [time]; Q30 unit /h (1 / [time]) vs [length] ** 3 / [time]; Q30 unit /h (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et" status="rejected" stale="false" population="healthy subjects and patients with renal impairment" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -56,13 +56,13 @@ Zhang S, Jeong S, Jiang B, Ho H. Pharmacokinetic simulations for remdesivir and 
 
 ### Reviewer guidance
 
-**Remdesivir's total clearance of 18.1 L/h failed a dimension check due to a unit conversion error.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit /h (1 / [time]) vs [length] ** 3 / [time]; Q30 unit /h (1 / [time]) vs [length] ** 3 / [time]; Q30 unit /h (1 / [time]) vs [length] ** 3 / [time].**
 
-The total clearance parameter for remdesivir, reported as 18.1 L/h, was flagged for a dimension mismatch because its unit could not be converted to SI. This conversion failure prevented the model from being validated, resulting in rejection. The second reader's alternative values for intercompartmental clearances remain unverified due to this primary structural error. Extracted — remdesivir: Q 0.19 /h, kic 3.28e+10 /h, Cmax_ratio 2.99 /h, CL 18.1 L/h, V 90.3 L; intermediate metabolites (IM): Q 12.5 /h; nucleoside monophosphate (NUC): Q 0.039 /h, CLfm 2.44 /h.
+A reported unit could not be converted (Q, Q, Q and CLfm), so that value has no SI equivalent. Extracted — remdesivir: Q 0.19 /h, kic 3.28e+10 /h, Cmax_ratio 2.99 /h, CL 18.1 L/h, V 90.3 L; intermediate metabolites (IM): Q 12.5 /h; nucleoside monophosphate (NUC): Q 0.039 /h, CLfm 2.44 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has remdesivir → intermediate metabolites (im) (metabolism); intermediate metabolites (im) → nucleoside monophosphate (nuc) (metabolism), the second reading remdesivir → intermediate metabolite (im) (metabolism); intermediate metabolite (im) → nucleoside monophosphate (nuc) (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

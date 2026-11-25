@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The fentanyl record was held back because a second reader disputed the extracted parameter values, specifically the apparent volume of distribution and clearance.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Davis1986_reference" status="needs_review" stale="false" population="patients undergoing coronary revascularisation" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Davis PJ, Cook DR. Clinical pharmacokinetics of the newer intravenous anaestheti
 
 ### Reviewer guidance
 
-**The fentanyl record was held back because a second reader disputed the extracted parameter values, specifically the apparent volume of distribution and clearance.**
+**cross_check_disputed; x1_cross_check.**
 
-The cross-check identified a disagreement where the initial record lacked values for certain fields, while the second reader provided specific numbers like 2.2 and 0.163. Conversely, the initial record contained values such as 92 and 0.163 that the second reader did not match or assigned differently. These discrepancies in the pharmacokinetic parameters prevented full agreement between the independent readers. Extracted — fentanyl: CL 11.3 ml/min/kg, V/F 1.65 L/kg.
+Extracted — fentanyl: CL 11.3 ml/min/kg, V/F 1.65 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q352: this record has none, the second reading 2.2; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (6 of 12 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (6 of 12 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

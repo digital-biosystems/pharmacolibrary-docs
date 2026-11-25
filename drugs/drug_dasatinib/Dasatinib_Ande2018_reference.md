@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
-> The record is rejected because the source paper studies paclitaxel disposition, not dasatinib, so the extracted clearance and volume parameters do not describe the drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="dasatinib" model-id="Dasatinib_Ande2018_reference" status="rejected" stale="false" population="" measured-compound="dasatinib" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Ande A, Vaidya TR, Tran BN, Vicchiarelli M, Brown AN, Ait-Oudhia S. Utility of a
 
 ### Reviewer guidance
 
-**The record is rejected because the source paper studies paclitaxel disposition, not dasatinib, so the extracted clearance and volume parameters do not describe the drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source text explicitly states that the paper is about another drug, with numeric disposition parameters shown for paclitaxel. Although dasatinib is co-administered in an in vitro study, it serves only as a co-medication or covariate. Consequently, the recorded two-compartment parameters for dasatinib, including clearance of 0.541 L/h and volume of 25.0 L, are mismatched to the paper's actual subject. Extracted — dasatinib: CL 0.541 L/h, V 25 L, V2 9.8 L, Q 0.998 L/h.
+Extracted — dasatinib: CL 0.541 L/h, V 25 L, V2 9.8 L, Q 0.998 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q335: this record has 0.306, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.667 (8 of 12 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

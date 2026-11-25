@@ -46,7 +46,7 @@ Fauchet F, Treluyer JM, Préta LH, Valade E, Pannier E, Urien S et al. Populatio
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of abc: this record has 0.438, the second reading none. That field does not shape the model.
 

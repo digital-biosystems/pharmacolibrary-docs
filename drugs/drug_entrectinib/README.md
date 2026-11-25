@@ -22,9 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mercier_2022_SAEs](drugs/drug_entrectinib/pd_Mercier_2022_SAEs.md) | serious adverse events ← entrectinib · categorical (graded) response model | — | Mercier F et al., Efficacy and safety exposure-response a…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04402-w](https://doi.org/10.1007/s00280-022-04402-w) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mercier_2022_TEAEs](drugs/drug_entrectinib/pd_Mercier_2022_TEAEs.md) | Grade ≥ 3 treatment-emergent adverse events ← entrectinib · categorical (graded) response model | — | Mercier F et al., Efficacy and safety exposure-response a…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04402-w](https://doi.org/10.1007/s00280-022-04402-w) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Mercier_2022_tumor_size_data](drugs/drug_entrectinib/pd_Mercier_2022_tumor_size_data.md) | tumor size data ← entrectinib · disease-progression model | — | Mercier F et al., Efficacy and safety exposure-response a…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04402-w](https://doi.org/10.1007/s00280-022-04402-w) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mercier_2022_TEAEs_or_SAEs](drugs/drug_entrectinib/pd_Mercier_2022_TEAEs_or_SAEs.md) | treatment-emergent (TEAEs) or serious (SAEs) adverse events ← entrectinib · categorical (graded) response model | — | Mercier F et al., Efficacy and safety exposure-response a…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04402-w](https://doi.org/10.1007/s00280-022-04402-w) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Mercier_2022_sum_of_target_lesion_diameters](drugs/drug_entrectinib/pd_Mercier_2022_sum_of_target_lesion_diameters.md) | tumor size data ← entrectinib · disease-progression model | — | Mercier F et al., Efficacy and safety exposure-response a…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04402-w](https://doi.org/10.1007/s00280-022-04402-w) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:41 | 0:29 | 0/0/0 | 2/1/0 | 0/0/0 | 5,221/2,992 | openai / gpt-6-luna | 1 | 1/0 | 0/1 | 0 |
+| 2026-11-23 22:43 | 0:21 | 0/0/0 | 1/1/0 | 0/0/0 | 6,369/2,104 | einfracz / qwen3.8-27b | 1 | 1/0 | 0/1 | 0 |
 
 ## Coverage
 
@@ -47,23 +46,16 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Djebli_2021.pdf` | Djebli N et al., Physiologically-Based Pharmacokinetic M…, European journal of drug me… (2021) | popPK | 9 | [10.1007/s13318-021-00714-z](https://doi.org/10.1007/s13318-021-00714-z) | [34495458](https://pubmed.ncbi.nlm.nih.gov/34495458) | The paper models entrectinib and M5 using clinical data, but no numeric disposition parameter values are provided in the evidence. |
-
-<sub>queue written 2026-10-06 23:41 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Djebli_2021 | relevant | 9 | 1 | The paper models entrectinib and M5 using clinical data, but no numeric disposition parameter values are provided in the evidence. |
-| popPK | González-Sales_2021 | relevant | 7 | 0 | The evidence indicates pharmacokinetic assessment, but includes only a sampling scheme and no numeric disposition parameters. |
-| popPK | Mercier_2022 | irrelevant | 2 | 0 | This is an exposure-response analysis; disposition parameters come from a previously described model and their numeric values are not provided here. |
+| popPK | Djebli_2021 | relevant | 10 | 2 | This is a PBPK modeling study for entrectinib, but specific numeric parameter values (CL, V, Q, etc.) are not present in the text, only qualitative exposure changes (fold changes). |
+| PGx | Djebli_2021 | not_relevant | 2 | 0 | The paper reports drug-drug interactions via CYP3A4 modulation, not genetic pharmacogenomic variants. |
+| popPK | González-Sales_2021 | irrelevant | 0 | 0 | The evidence consists solely of a figure caption describing a sampling scheme and contains no quantitative pharmacokinetic parameter values. |
+| PGx | González-Sales_2021 | not_relevant | 0 | 0 | The text only describes a blood sampling scheme for PK assessment and contains no data linking genetic variants to entrectinib PK or PD parameters. |
+| popPK | Mercier_2022 | irrelevant | 2 | 0 | The study uses PK parameters from a "previously described population PK model" for exposure-response analysis, and does not report original quantitative PK parameter values (CL, V, etc.) in the provided evidence. |
+| PGx | Mercier_2022 | not_relevant | 0 | 0 | The study reports exposure-response analyses for efficacy and safety but does not assess pharmacogenomic effects (gene variants) on PK or PD parameters. |
 
 
 </details>

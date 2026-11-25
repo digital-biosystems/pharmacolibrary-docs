@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;glasdegib&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/&quot;},{&quot;label&quot;:&quot;Lin_2020_2 \u00b7 final_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glasdegib_Lin2020v2_final_model&quot;,&quot;label&quot;:&quot;Lin_2020_2_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Glasdegib_Lin2020v2_estimate&quot;,&quot;label&quot;:&quot;Lin_2020_2_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Lin2020v2_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glasdegib_Shaik2021_reference&quot;,&quot;label&quot;:&quot;Shaik_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Shaik2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glasdegib_Lin2020v2_estimate&quot;,&quot;label&quot;:&quot;Lin_2020_2_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Lin2020v2_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Glasdegib_Lin2020v2_final_model&quot;,&quot;label&quot;:&quot;Lin_2020_2_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Glasdegib_Shaik2021_reference&quot;,&quot;label&quot;:&quot;Shaik_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_glasdegib/Glasdegib_Shaik2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # glasdegib — `Glasdegib_Lin2020v2_final_model`
 
-> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="glasdegib" model-id="Glasdegib_Lin2020v2_final_model" status="simulated" stale="false" population="patients with advanced hematologic malignancies and solid tumors" measured-compound="glasdegib" parameterization="apparent" topology="2C"></div>
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
+
+<div class="pk-model-meta" hidden drug="glasdegib" model-id="Glasdegib_Lin2020v2_final_model" status="needs_review" stale="false" population="patients with advanced hematologic malignancies and solid tumors" measured-compound="glasdegib" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Lin S, Shaik N, Martinelli G, Wagner AJ, Cortes J, Ruiz-Garcia A. Population Pharmacokinetics of Glasdegib in Patients With Advanced Hematologic Malignancies and Solid Tumors. Journal of clinical pharmacology 60(5):605–616 (2020).
@@ -29,6 +31,8 @@ Lin S, Shaik N, Martinelli G, Wagner AJ, Cortes J, Ruiz-Garcia A. Population Pha
 <figure class="pk-models-diagram"><img src="drugs/drug_glasdegib/Glasdegib_Lin2020v2_final_model/Glasdegib_Lin2020v2_final_model.svg" alt="Glasdegib_Lin2020v2_final_model diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F, L/h | CL/F | 6.27 | L/h |
@@ -46,7 +50,7 @@ Lin S, Shaik N, Martinelli G, Wagner AJ, Cortes J, Ruiz-Garcia A. Population Pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,11 +60,13 @@ Lin S, Shaik N, Martinelli G, Wagner AJ, Cortes J, Ruiz-Garcia A. Population Pha
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The base model was simulated, not the covariate effects the record defines.
+The base model was simulated, not the covariate effects the record defines. Extracted — glasdegib: CL/F 6.27 L/h, V1/F 3.32 L, V2/F 279 L, Q/F 1.29 L/h, kabs 0.06 hour–1.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].value`: this record has 6.27, the second reading 6.4; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -161,6 +167,36 @@ The base model was simulated, not the covariate effects the record defines.
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.286 (4/14 fields) | 10 |
+
+<details><summary>10 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f].value` | 6.27 | 6.4 | mismatch |
+| `gpt-oss-120b` | `parameters[ka].value` | 0.06 | 5.0 | mismatch |
+| `gpt-oss-120b` | `parameters[q/f].value` | 1.29 | 46.6 | mismatch |
+| `gpt-oss-120b` | `parameters[vc/f].value` | 3.32 | 23.7 | mismatch |
+| `gpt-oss-120b` | `parameters[vp/f].value` | 279.21 | 90.0 | mismatch |
+| `gpt-oss-120b` | `parameters[θbpbl].value` | -0.004 | 34.5 | mismatch |
+| `gpt-oss-120b` | `parameters[θcypmod]` | -0.17 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θcypstrong].parameter_id` | Q900 | Q31 | mismatch |
+| `gpt-oss-120b` | `parameters[θcypstrong].value` | -0.3 | 36.6 | mismatch |
+| `gpt-oss-120b` | `parameters[θsolid]` |  | 24.4 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -181,16 +217,16 @@ The base model was simulated, not the covariate effects the record defines.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=glasdegib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  | no second reading of this record |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=glasdegib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.286 (4 of 14 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.286 | cross-check contradicted by a second reader: verdict disputed; agreement 0.286 (4 of 14 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

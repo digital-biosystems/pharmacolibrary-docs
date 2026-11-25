@@ -4,11 +4,11 @@
 
 # fosamprenavir — `Fosamprenavir_Dailly2008_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Only clearance was extracted — no volume.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="fosamprenavir" model-id="Fosamprenavir_Dailly2008_reference" status="needs_review" stale="false" population="HIV-infected patients treated with fosamprenavir/ritonavir, with or without nevirapine or efavirenz" measured-compound="amprenavir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fosamprenavir" model-id="Fosamprenavir_Dailly2008_reference" status="rejected" stale="false" population="HIV-infected patients" measured-compound="amprenavir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dailly E, Raffi F, Biron C, Allavena C, Jolliet P. Impact of nevirapine or efavirenz co-administration on ritonavir-boosted amprenavir pharmacokinetics in HIV-infected patients. Fundamental & clinical pharmacology 22(1):101–104 (2008).
@@ -16,27 +16,25 @@ Dailly E, Raffi F, Biron C, Allavena C, Jolliet P. Impact of nevirapine or efavi
 
 ## Population and dosing
 
-**Population:** HIV-infected patients treated with fosamprenavir/ritonavir, with or without nevirapine or efavirenz · condition HIV infection · n = 61.
+**Population:** HIV-infected patients · condition HIV · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed fosamprenavir, measured amprenavir.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 1 extracted.  
+**Parameterization:** mechanistic.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| amprenavir clearance | CLm/F | 22.49 | L/h |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (primary re-run, agreement 0.6), qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,52 +44,40 @@ Dailly E, Raffi F, Biron C, Allavena C, Jolliet P. Impact of nevirapine or efavi
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**The paper reports none of the model's key parameters.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is fosamprenavir's own; they describe amprenavir. Extracted — amprenavir: CLm/F 22.5 L/h.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| amprenavir clearance | `Q351` · CLm/F | 22.49 | L/h | 6.247e-06 | m3/s | L/h | exact (1) | Dailly_2008:abstract |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
-
 ## Departures & gaps
 
 **Interpretation flags:**
-- implicit units: 'amprenavir clearance' → L/h (from the popPK convention: 'No unit is stated in the provided text. Clearance is conventionally expressed in L/h in population PK, and 22.49 is cons')
-- metabolite amprenavir: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=amprenavir
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amprenavir
 - template fit: none — only the metabolite is modelled — no parent compartment
-- row roles (LLM): model_class=compartmental; 1/1 row label(s) assigned, 1 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'amprenavir', not fosamprenavir — the review values are the parent's
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Dailly_2008_metadata.yaml (1 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Dailly_2008_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.6 (3/5 fields) | 2 |
 | `qwen3.8-27b` | not confirmed | 0.667 (4/6 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[amprenavir clearance]` |  | 22.49 | only_one_extracted |
 | `qwen3.8-27b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `qwen3.8-27b` | `parameters[amprenavir clearance].parameter_id` | Q351 | Q22 | mismatch |
 
@@ -105,14 +91,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Dailly_2008:abstract'] |
-| C7_apparent_coherence | pass |  |  |  |
-| C8_topology | pass |  |  |  |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | fail | 0 |
+| C0b_disposition_core | fail |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -124,19 +107,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -146,4 +119,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfosamprenavir%5D%20Fosamprenavir_Dailly2008_reference&body=Drug%3A%20fosamprenavir%0ARecord%3A%20Fosamprenavir_Dailly2008_reference%0APaper%3A%20Dailly_2008%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fosamprenavir/Fosamprenavir_Dailly2008_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:08 UTC</sub>

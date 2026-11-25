@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record for methyldopa was held back because the apparent volume of distribution value of 1.6 L/kg contradicts its label specifying acebutolol.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="Methyldopa" model-id="Methyldopa_Singh1985_reference" status="needs_review" stale="false" population="unknown" measured-compound="methyldopa" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Singh BN, Thoden WR, Ward A. Acebutolol. A review of its pharmacological propert
 
 ### Reviewer guidance
 
-**Record for methyldopa was held back because the apparent volume of distribution value of 1.6 L/kg contradicts its label specifying acebutolol.**
+**cross_check_disputed; x1_cross_check.**
 
-The parameter labeled as the apparent volume of distribution for acebutolol is assigned to the methyldopa compound in this one-compartment model. This internal inconsistency likely caused the second reader to dispute the record, resulting in an agreement score of 0.692. A specific parameter value comparison also showed disagreement, with the second reader reading 0.24 where the record lists 10.4. Extracted — methyldopa: CL 36.9 L/h, V/F 1.6 L/kg.
+Extracted — methyldopa: CL 36.9 L/h, V/F 1.6 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q26: this record has 10.4, the second reading 0.24; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -126,7 +126,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.692, 0 of 1 reader(s) agree | 0.692 | cross-check disputed by a second reader: verdict disputed, agreement 0.692, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.769 (10 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.769 | cross-check contradicted by a second reader: verdict disputed; agreement 0.769 (10 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The paper studies rosuvastatin pharmacokinetics in rats, so the simvastatin parameters were extracted from a co-medication context rather than primary data.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Sun2022_reference" status="rejected" stale="false" population="" measured-compound="simvastatin" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Sun Q, Li L, Zhou Q. Effects of Ethanolic Extract of Schisandra sphenanthera on 
 
 ### Reviewer guidance
 
-**The paper studies rosuvastatin pharmacokinetics in rats, so the simvastatin parameters were extracted from a co-medication context rather than primary data.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The review reference confirms the paper subject is rosuvastatin, with simvastatin appearing only as a comparator. Consequently, the listed clearance of 4.37 L·h−1 and volume of 59.68 L do not originate from a simvastatin-specific analysis. Extracted — simvastatin: CL 4.37 L·h−1, V 59.7 L.
+Extracted — simvastatin: CL 4.37 L·h−1, V 59.7 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -117,7 +117,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

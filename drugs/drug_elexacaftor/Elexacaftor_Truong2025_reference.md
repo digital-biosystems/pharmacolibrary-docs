@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held for review because the second reader disputed reporting apparent oral clearance of 13.4 L/h/70 kg for elexacaftor.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="Elexacaftor" model-id="Elexacaftor_Truong2025_reference" status="needs_review" stale="false" population="children with cystic fibrosis" measured-compound="elexacaftor, ivacaftor, tezacaftor" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Truong NH, Benaboud S, Bouazza N, Barboura M, Bardin E, Miralles M et al. Elexac
 
 ### Reviewer guidance
 
-**The record was held for review because the second reader disputed reporting apparent oral clearance of 13.4 L/h/70 kg for elexacaftor.**
+**cross_check_disputed; x1_cross_check.**
 
-The record assigns CL/F 13.4 L/h/70 kg, along with the other listed parameters, to elexacaftor, ivacaftor, and tezacaftor; the second reader identifies elexacaftor alone as the primary analyte and disagrees about whether these parameter values are present. The model builder assumed F=1, Fm=1, and no molar correction, so the parameterization is apparent. Extracted — elexacaftor, ivacaftor, tezacaftor: tlag 0.7 h, kabs 0.42 h−1, CL/F 13.4 L/h/70 kg, V/F 183 L/70 kg.
+None of the extracted parameters is elexacaftor's own; they describe elexacaftor, ivacaftor, tezacaftor. Extracted — elexacaftor, ivacaftor, tezacaftor: tlag 0.7 h, kabs 0.42 h−1, CL/F 13.4 L/h/70 kg, V/F 183 L/70 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has elexacaftor, ivacaftor, tezacaftor, the second reading elexacaftor; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -169,7 +169,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (3 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (3 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

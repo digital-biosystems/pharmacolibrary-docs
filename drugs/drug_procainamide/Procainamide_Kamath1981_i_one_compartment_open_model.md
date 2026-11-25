@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The procainamide model was rejected because the simulated terminal half-life of 1.55 hours contradicted the reported 2.13 hours, and the output variable did not match the measured analyte.
+> The model does not reproduce the paper's terminal half-life (paper 2.13, model 1.55); t3_output_variable (+2 more).
 
 <div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Kamath1981_i_one_compartment_open_model" status="rejected" stale="false" population="rats" measured-compound="procainamide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -55,13 +55,13 @@ Kamath BL, Lai CM, Gupta SD, Durrani MJ, Yacobi A. Pharmacokinetics of procainam
 
 ### Reviewer guidance
 
-**The procainamide model was rejected because the simulated terminal half-life of 1.55 hours contradicted the reported 2.13 hours, and the output variable did not match the measured analyte.**
+**The model does not reproduce the paper's terminal half-life (paper 2.13, model 1.55); t3_output_variable (+2 more).**
 
-The record defines the terminal elimination rate constant as 0.448 hr-1 and a terminal half-life of 0.66 hours, yet the simulation yielded a terminal half-life of 1.55 hours, failing to match the paper's reported value of 2.13 hours. Additionally, the model was specified to output the central compartment concentration instead of the measured procainamide concentration, and the defined parent-metabolite structure did not align with the single-compartment topology used. A second reader disputed the record, identifying the dose compound, primary analyte, and all extracted parameter values as unknown. Extracted — procainamide: t1/2z 0.66 hr, kel 0.448 hr-1, V 4.6 liters/kg, Q 4.84 liters/hr/kg, CLR 1.92 liters/hr/kg.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — procainamide: t1/2z 0.66 hr, kel 0.448 hr-1, V 4.6 liters/kg, Q 4.84 liters/hr/kg, CLR 1.92 liters/hr/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has procainamide, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -155,28 +155,28 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 2.13 | 1.552 | 0.7288 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.53 | 1.552 | 0.6136 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 5.31 | 1.552 | 0.2924 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.88 | 1.552 | 0.539 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.62 | 1.552 | 0.4288 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.5 | 1.552 | 0.621 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.67 | 1.552 | 0.423 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.45 | 1.552 | 0.45 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.59 | 1.552 | 0.5994 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.32 | 1.552 | 0.4676 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.94 | 1.552 | 1.651 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.74 | 1.552 | 0.8922 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.779 | 1.552 | 1.993 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.22 | 1.552 | 1.272 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.691 | 1.552 | 2.247 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.43 | 1.552 | 1.086 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1 | 1.552 | 1.552 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.92 | 1.552 | 0.8086 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.919 | 1.552 | 1.689 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.48 | 1.552 | 3.234 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.272 | 1.552 | 5.707 | hr→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.143 | cross-check contradicted by a second reader: verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 2.13 | 1.552 | 0.7288 | reported 2.13 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.53 | 1.552 | 0.6136 | reported 2.53 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 5.31 | 1.552 | 0.2924 | reported 5.31 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.88 | 1.552 | 0.539 | reported 2.88 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.62 | 1.552 | 0.4288 | reported 3.62 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.5 | 1.552 | 0.621 | reported 2.5 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.67 | 1.552 | 0.423 | reported 3.67 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.45 | 1.552 | 0.45 | reported 3.45 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.59 | 1.552 | 0.5994 | reported 2.59 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.32 | 1.552 | 0.4676 | reported 3.32 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.94 | 1.552 | 1.651 | reported 0.94 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.74 | 1.552 | 0.8922 | reported 1.74 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.779 | 1.552 | 1.993 | reported 0.779 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.22 | 1.552 | 1.272 | reported 1.22 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.691 | 1.552 | 2.247 | reported 0.691 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.43 | 1.552 | 1.086 | reported 1.43 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1 | 1.552 | 1.552 | reported 1.0 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.92 | 1.552 | 0.8086 | reported 1.92 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.919 | 1.552 | 1.689 | reported 0.919 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.48 | 1.552 | 3.234 | reported 0.48 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.272 | 1.552 | 5.707 | reported 0.272 hr→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

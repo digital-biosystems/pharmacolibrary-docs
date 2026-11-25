@@ -23,8 +23,8 @@ Necitumumab is a monoclonal antibody that inhibits the epidermal growth factor r
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Chigutsa_2017_Basehaz](drugs/drug_necitumumab/pd_Chigutsa_2017_Basehaz.md) | Baseline hazard ← necitumumab · direct sigmoid Emax (Hill) effect | — | Chigutsa E et al., Exposure-Response Analysis of Necitumum…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12209](https://doi.org/10.1002/psp4.12209) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Chigutsa_2017_Shrink](drugs/drug_necitumumab/pd_Chigutsa_2017_Shrink.md) | Shrink rate of tumor ← necitumumab · direct sigmoid Emax (Hill) effect | — | Chigutsa E et al., Exposure-Response Analysis of Necitumum…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12209](https://doi.org/10.1002/psp4.12209) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chigutsa_2017_Basehaz](drugs/drug_necitumumab/pd_Chigutsa_2017_Basehaz.md) | Baseline hazard ← necitumumab · direct sigmoid Emax (Hill) effect | — | Chigutsa E et al., Exposure-Response Analysis of Necitumum…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12209](https://doi.org/10.1002/psp4.12209) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

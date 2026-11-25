@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Bioavailability and absorption lag were not extracted, so library placeholders replaced the study's specific estimates.
+> F use library defaults, not estimates from this paper; t3_param_coverage (+1 more).
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2013_day_3_07_00_h" status="needs_review" stale="false" population="rats with colorectal cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Kobuchi S, Ito Y, Okada K, Imoto K, Kuwano S, Takada K. Pharmacokinetic/pharmaco
 
 ### Reviewer guidance
 
-**Bioavailability and absorption lag were not extracted, so library placeholders replaced the study's specific estimates.**
+**F use library defaults, not estimates from this paper; t3_param_coverage (+1 more).**
 
-The record lists the absorption rate constant but omits bioavailability and absorption lag, resulting in default values for these parameters. These missing values affect the simulated concentration-time profile, yet they are not supported by the specific data from this paper. Extracted — fluorouracil: kel 3.61 h−1, k12 1.65 h−1, k21 2.94 h−1, AUC∞ 1.6 µg·h·mL−1, CL 0.35 L·h−1·kg−1, V 0.35 L·kg−1, kabs 0.13 1/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — fluorouracil: kel 3.61 h−1, k12 1.65 h−1, k21 2.94 h−1, AUC∞ 1.6 µg·h·mL−1, CL 0.35 L·h−1·kg−1, V 0.35 L·kg−1, kabs 0.13 1/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

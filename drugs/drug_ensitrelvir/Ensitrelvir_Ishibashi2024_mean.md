@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ensitrelvir model failed Cmax validation (0.00125 vs 0.943) due to missing absorption rate constants and unit conversion errors.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.943, model 0.00125); ka use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="ensitrelvir" model-id="Ensitrelvir_Ishibashi2024_mean" status="needs_review" stale="false" population="healthy participants and participants infected with SARS-CoV-2" measured-compound="ensitrelvir" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Ishibashi T, Shimizu R, Kubota R. Population Pharmacokinetics of Ensitrelvir in 
 
 ### Reviewer guidance
 
-**Ensitrelvir model failed Cmax validation (0.00125 vs 0.943) due to missing absorption rate constants and unit conversion errors.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.943, model 0.00125); ka use library defaults, not estimates from this paper (+2 more).**
 
-The model's simulated peak concentration of 0.00125 is drastically lower than the paper's reported 0.943, failing all tolerance checks. Absorption parameters were left at library defaults rather than using estimates from the source, invalidating the absorption profile. A unit mismatch occurred where concentration values could not be converted to SI, preventing valid parameter scaling. The second reader also disputed the extraction of area-under-the-curve and time-specific concentration values. Extracted — ensitrelvir: CL/F 0.201 L/h, V/F 14.5 L, Cmax 48.9 μg/mL, AUCt 910 μg*h/mL, Ct 34.8 μg/mL, AUC 1.23e+03 μg*h/mL.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (Cmax, AUCt, Ct and AUC), so that value has no SI equivalent. Extracted — ensitrelvir: CL/F 0.201 L/h, V/F 14.5 L, Cmax 48.9 μg/mL, AUCt 910 μg*h/mL, Ct 34.8 μg/mL, AUC 1.23e+03 μg*h/mL.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[auc_d1].parameter_id`: this record has Q19, the second reading Q88; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -205,49 +205,49 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.643, 0 of 1 reader(s) agree | 0.643 | cross-check disputed by a second reader: verdict disputed, agreement 0.643, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 0.943 | 0.001245 | 0.0013 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0234 | 0.001245 | 0.0532 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.005 | 0.001245 | 0.249 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0213 | 0.001245 | 0.0585 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0103 | 0.001245 | 0.1209 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0229 | 0.001245 | 0.0544 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.041 | 0.001245 | 0.0304 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.925 | 0.001245 | 0.0013 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0266 | 0.001245 | 0.0468 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00487 | 0.001245 | 0.2557 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0183 | 0.001245 | 0.068 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0143 | 0.001245 | 0.0871 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0262 | 0.001245 | 0.0475 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0468 | 0.001245 | 0.0266 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.925 | 0.001245 | 0.0013 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0266 | 0.001245 | 0.0468 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00488 | 0.001245 | 0.2552 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0183 | 0.001245 | 0.068 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0143 | 0.001245 | 0.0871 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0262 | 0.001245 | 0.0475 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0468 | 0.001245 | 0.0266 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.942 | 0.001245 | 0.0013 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0489 | 0.001245 | 0.0255 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0107 | 0.001245 | 0.1164 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0219 | 0.001245 | 0.0569 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0249 | 0.001245 | 0.05 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0477 | 0.001245 | 0.0261 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0869 | 0.001245 | 0.0143 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.92 | 0.001245 | 0.0014 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0564 | 0.001245 | 0.0221 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.011 | 0.001245 | 0.1132 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0196 | 0.001245 | 0.0635 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0319 | 0.001245 | 0.039 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0551 | 0.001245 | 0.0226 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.104 | 0.001245 | 0.012 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.92 | 0.001245 | 0.0014 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0564 | 0.001245 | 0.0221 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.011 | 0.001245 | 0.1132 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0195 | 0.001245 | 0.0639 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0319 | 0.001245 | 0.039 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0551 | 0.001245 | 0.0226 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.104 | 0.001245 | 0.012 | μg/mL→SI vs simulated kg/m3 |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.643 (9 of 14 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.643 | cross-check contradicted by a second reader: verdict disputed; agreement 0.643 (9 of 14 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
+| T1_cmax | reference | fail | 0.943 | 0.001245 | 0.0013 | reported 943.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0234 | 0.001245 | 0.0532 | reported 23.4 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.005 | 0.001245 | 0.249 | reported 5.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0213 | 0.001245 | 0.0585 | reported 21.3 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0103 | 0.001245 | 0.1209 | reported 10.3 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0229 | 0.001245 | 0.0544 | reported 22.9 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.041 | 0.001245 | 0.0304 | reported 41.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.925 | 0.001245 | 0.0013 | reported 925.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0266 | 0.001245 | 0.0468 | reported 26.6 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00487 | 0.001245 | 0.2557 | reported 4.87 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0183 | 0.001245 | 0.068 | reported 18.3 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0143 | 0.001245 | 0.0871 | reported 14.3 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0262 | 0.001245 | 0.0475 | reported 26.2 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0468 | 0.001245 | 0.0266 | reported 46.8 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.925 | 0.001245 | 0.0013 | reported 925.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0266 | 0.001245 | 0.0468 | reported 26.6 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00488 | 0.001245 | 0.2552 | reported 4.88 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0183 | 0.001245 | 0.068 | reported 18.3 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0143 | 0.001245 | 0.0871 | reported 14.3 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0262 | 0.001245 | 0.0475 | reported 26.2 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0468 | 0.001245 | 0.0266 | reported 46.8 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.942 | 0.001245 | 0.0013 | reported 942.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0489 | 0.001245 | 0.0255 | reported 48.9 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0107 | 0.001245 | 0.1164 | reported 10.7 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0219 | 0.001245 | 0.0569 | reported 21.9 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0249 | 0.001245 | 0.05 | reported 24.9 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0477 | 0.001245 | 0.0261 | reported 47.7 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0869 | 0.001245 | 0.0143 | reported 86.9 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.92 | 0.001245 | 0.0014 | reported 920.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0564 | 0.001245 | 0.0221 | reported 56.4 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.011 | 0.001245 | 0.1132 | reported 11.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0196 | 0.001245 | 0.0635 | reported 19.6 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0319 | 0.001245 | 0.039 | reported 31.9 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0551 | 0.001245 | 0.0226 | reported 55.1 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.104 | 0.001245 | 0.012 | reported 104.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.92 | 0.001245 | 0.0014 | reported 920.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0564 | 0.001245 | 0.0221 | reported 56.4 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.011 | 0.001245 | 0.1132 | reported 11.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0195 | 0.001245 | 0.0639 | reported 19.5 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0319 | 0.001245 | 0.039 | reported 31.9 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0551 | 0.001245 | 0.0226 | reported 55.1 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.104 | 0.001245 | 0.012 | reported 104.0 μg/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 0.41 | 0.001245 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 1.741 | 0.001245 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 2.5 | 0.001245 |  | unresolved concentration unit (exp 'h', sim 'kg/m3') |

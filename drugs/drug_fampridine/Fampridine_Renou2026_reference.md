@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The fampridine record was rejected because the source paper describes a different drug, leaving the absorption lag time unestimated and relying on default placeholder values.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="fampridine" model-id="Fampridine_Renou2026_reference" status="rejected" stale="false" population="" measured-compound="fampridine" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Renou Q, Néant N, Destere A, Lagoutte-Renosi J, Grégoire M, Parant F et al. Ex
 
 ### Reviewer guidance
 
-**The fampridine record was rejected because the source paper describes a different drug, leaving the absorption lag time unestimated and relying on default placeholder values.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The relevance screen confirmed the paper’s subject is another drug, not fampridine. Consequently, the absorption lag time was not explicitly estimated, so the model relied on standard placeholder values instead of fitted data. Additionally, a second reader identified a discrepancy where a parameter value of 75.6 was found, whereas the current record lists no value. Extracted — fampridine: CL/F 0.151 L/h, V1/F 5.27 L, V2/F 2.43 L, Q 0.507 L/h, kabs 1.41 h−1.
+Extracted — fampridine: CL/F 0.151 L/h, V1/F 5.27 L, V2/F 2.43 L, Q 0.507 L/h, kabs 1.41 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q40: this record has none, the second reading 75.6. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.917, 0 of 1 reader(s) agree | 0.917 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.917 (11 of 12 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.917 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

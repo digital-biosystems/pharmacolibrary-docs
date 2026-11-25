@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Palonosetron clearance and volume of distribution lacked estimates; only fosrolapitant CL 7.92 L/h and V 839.62 L were reported, so the record was held back.
+> No value for palonosetron's clearance and volume of distribution — all 6 extracted parameters describe fosrolapitant, not palonosetron; t3_topology_template (+2 more).
 
 <div class="pk-model-meta" hidden drug="palonosetron" model-id="Palonosetron_Li2026_palonosetron" status="model_quarantined" stale="false" population="Chinese subjects with impaired or normal liver function" measured-compound="fosrolapitant and rolapitant" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -53,13 +53,13 @@ Li Q, Mai J, Wu M, Zhang H, Yang X, Huang Y et al. Pharmacokinetics, safety, and
 
 ### Reviewer guidance
 
-**Palonosetron clearance and volume of distribution lacked estimates; only fosrolapitant CL 7.92 L/h and V 839.62 L were reported, so the record was held back.**
+**No value for palonosetron's clearance and volume of distribution — all 6 extracted parameters describe fosrolapitant, not palonosetron; t3_topology_template (+2 more).**
 
-No value for palonosetron's clearance and volume of distribution—all 6 extracted parameters describe fosrolapitant, not palonosetron. The model was built, but palonosetron's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The reported parent–metabolite structure was represented as a single-compartment model, clearance and distribution volume were defaulted, and a reported unit could not be converted to SI. A second reader disputed the record (agreement 0.062; 0 of 1 reader agreed), differing on the dose compound, primary analyte, metabolism link, and extracted summary parameters. Extracted — fosrolapitant: Cmax 0.67 ng/mL, AUCt 31.2 h*ng/mL, AUC∞ 34.9 h*ng/mL, t1/2z 81.8 hour, V 840 L, CL 7.92 L/h.
+The model was built, but palonosetron's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (Cmax, AUCt and AUC∞), so that value has no SI equivalent. Extracted — fosrolapitant: Cmax 0.67 ng/mL, AUCt 31.2 h*ng/mL, AUC∞ 34.9 h*ng/mL, t1/2z 81.8 hour, V 840 L, CL 7.92 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has Ritanine (fosrolapitant and palonosetron), the second reading fosrolapitant; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -163,7 +163,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_shared_parameters |  | pass | 6 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.062, 0 of 1 reader(s) agree | 0.062 | cross-check disputed by a second reader: verdict disputed, agreement 0.062, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.062 (1 of 16 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.062 | cross-check contradicted by a second reader: verdict disputed; agreement 0.062 (1 of 16 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 1.27 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 0.61 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 0.74 |  |  | no simulated metric for this quantity (single reference sim) |
@@ -172,7 +172,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T1_t_half_terminal | reference | skipped | 81.8 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 44.32 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 0.5 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 1.00–1.25 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 240 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 192 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 1 |  |  | no simulated metric for this quantity (single reference sim) |

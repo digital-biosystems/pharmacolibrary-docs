@@ -51,7 +51,7 @@ Brown RD, Kearns GL, Wilson JT. Integrated pharmacokinetic-pharmacodynamic model
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Reproduces paper: every check that could be run on this record passed.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has acetaminophen, the second reading paracetamol; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -168,17 +168,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_cmax | reference | skipped |  | 0.004372 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.004372 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.004372 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.004372 |  | non-numeric value |
-| T1_t_half_terminal | reference | pass | 1.82 | 1.624 | 0.8925 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.44 | 1.624 | 1.128 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.37 | 1.624 | 1.186 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.83 | 1.624 | 0.8876 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.75 | 1.624 | 0.9282 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.15 | 1.624 | 0.7555 | hr→SI vs simulated h |
-| T1_tmax | reference | skipped |  | 0.5411 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.004372 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.004372 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.004372 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.004372 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | pass | 1.82 | 1.624 | 0.8925 | reported 1.82 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.44 | 1.624 | 1.128 | reported 1.44 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.37 | 1.624 | 1.186 | reported 1.37 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.83 | 1.624 | 0.8876 | reported 1.83 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.75 | 1.624 | 0.9282 | reported 1.75 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.15 | 1.624 | 0.7555 | reported 2.15 hr→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 0.5411 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

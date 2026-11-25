@@ -1,13 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;Suramin&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/&quot;},{&quot;label&quot;:&quot;Kosarek_2006 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Suramin_Kosarek2006_reference&quot;,&quot;label&quot;:&quot;Kosarek_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/Suramin_Kosarek2006_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Suramin_Naviaux2017_abc&quot;,&quot;label&quot;:&quot;Naviaux_2017_abc&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/Suramin_Naviaux2017_abc.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Suramin_Naviaux2017_ados_2&quot;,&quot;label&quot;:&quot;Naviaux_2017_ados_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/Suramin_Naviaux2017_ados_2.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Suramin_Naviaux2017_atec&quot;,&quot;label&quot;:&quot;Naviaux_2017_atec&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/Suramin_Naviaux2017_atec.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Suramin_Naviaux2017_cgi&quot;,&quot;label&quot;:&quot;Naviaux_2017_cgi&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/Suramin_Naviaux2017_cgi.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Suramin_Naviaux2017_e_language&quot;,&quot;label&quot;:&quot;Naviaux_2017_e_language&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/Suramin_Naviaux2017_e_language.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Suramin_Naviaux2017_eowpvt&quot;,&quot;label&quot;:&quot;Naviaux_2017_eowpvt&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/Suramin_Naviaux2017_eowpvt.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Suramin_Naviaux2017_language&quot;,&quot;label&quot;:&quot;Naviaux_2017_language&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/Suramin_Naviaux2017_language.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Suramin_Naviaux2017_rbq&quot;,&quot;label&quot;:&quot;Naviaux_2017_rbq&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/Suramin_Naviaux2017_rbq.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Suramin_Naviaux2017_restr_rep&quot;,&quot;label&quot;:&quot;Naviaux_2017_restr_rep&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/Suramin_Naviaux2017_restr_rep.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Suramin_Naviaux2017_sociability&quot;,&quot;label&quot;:&quot;Naviaux_2017_sociability&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/Suramin_Naviaux2017_sociability.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Suramin_Naviaux2017_social&quot;,&quot;label&quot;:&quot;Naviaux_2017_social&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/Suramin_Naviaux2017_social.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Suramin_Naviaux2017_social_inter&quot;,&quot;label&quot;:&quot;Naviaux_2017_social_inter&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/Suramin_Naviaux2017_social_inter.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Suramin_Naviaux2017_stereotypy&quot;,&quot;label&quot;:&quot;Naviaux_2017_stereotypy&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin/Suramin_Naviaux2017_stereotypy.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Suramin — `Suramin_Kosarek2006_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-<div class="pk-model-meta" hidden drug="Suramin" model-id="Suramin_Kosarek2006_reference" status="simulated" stale="false" population="dogs with naturally occurring cancers" measured-compound="suramin" parameterization="mechanistic" topology="1C"></div>
+> Only clearance was extracted — no volume.
+
+<div class="pk-model-meta" hidden drug="Suramin" model-id="Suramin_Kosarek2006_reference" status="needs_review" stale="false" population="dogs with naturally occurring cancers" measured-compound="suramin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kosarek CE, Hu X, Couto CG, Kisseberth WC, Green EM, Au JL et al. Phase I evaluation of low-dose suramin as chemosensitizer of doxorubicin in dogs with naturally occurring cancers. Journal of veterinary internal medicine 20(5):1172–1177 (2006).
@@ -15,28 +16,28 @@ Kosarek CE, Hu X, Couto CG, Kisseberth WC, Green EM, Au JL et al. Phase I evalua
 
 ## Population and dosing
 
-**Population:** dogs with naturally occurring cancers · condition naturally occurring cancers · age group adult · n = 16.
+**Population:** dogs with naturally occurring cancers.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 ## Model
 
-**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 2 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_suramin/Suramin_Kosarek2006_reference/Suramin_Kosarek2006_reference.svg" alt="Suramin_Kosarek2006_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Availability:** No model was generated from this record.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
-| distribution volume | V | 0.34 | L/kg |
-| clearance | CL | 1.86 | mL/kg/h |
+| The distribution volume was a | Vnorm | 0.34 | L/kg |
+| clearance was | CL | 1.86 | mL/kg/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +47,11 @@ Kosarek CE, Hu X, Couto CG, Kisseberth WC, Green EM, Au JL et al. Phase I evalua
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Only clearance was extracted — no volume.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — suramin: Vnorm 0.34 L/kg, CL 1.86 mL/kg/h.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has none, the second reading 1.86; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,8 +59,8 @@ Independently confirmed by `gpt-oss-120b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| distribution volume | `Q61` · V | 0.34 | L/kg | 0.0238 | m3 | l/kg | exact (1) | Kosarek_2006:abstract |
-| clearance | `Q22` · CL | 1.86 | mL/kg/h | 3.617e-08 | m3/s | ml/(h·kg) | exact (1) | Kosarek_2006:abstract |
+| The distribution volume was a | `Q352` · Vnorm | 0.34 | L/kg | 0.0238 | m3 | l/kg | llm_corrected (0.6) | Kosarek_2006:abstract |
+| clearance was | `Q22` · CL | 1.86 | mL/kg/h | 3.617e-08 | m3/s | ml/(h·kg) | llm_confirmed (0.6) | Kosarek_2006:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,22 +72,29 @@ Independently confirmed by `gpt-oss-120b`.
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=suramin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Kosarek_2006_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>4 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clearance was]` | 1.86 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 1.86 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution volume]` |  | 0.34 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the distribution volume was a]` | 0.34 |  | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -100,25 +108,12 @@ _All readers agree on the compared fields of this record._
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kosarek_2006:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Kosarek_2006:abstract'] |
+| C5_dimension_Q352 | pass | [length] ** 3 |  | ['Kosarek_2006:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.86 | ['Kosarek_2006:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.13 L/h | ['Kosarek_2006:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 23.8 L | ['Kosarek_2006:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=suramin) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -135,37 +130,14 @@ _All readers agree on the compared fields of this record._
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_suramin/Suramin_Kosarek2006_reference/Suramin_Kosarek2006_reference_modelica.zip" download>Suramin_Kosarek2006_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_suramin/Suramin_Kosarek2006_reference/Suramin_Kosarek2006_reference_fmi.zip" download>Suramin_Kosarek2006_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_suramin/Suramin_Kosarek2006_reference/Suramin_Kosarek2006_reference_fmi.zip" download>Suramin_Kosarek2006_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_suramin/Suramin_Kosarek2006_reference/Suramin_Kosarek2006_reference_matlab.zip" download>Suramin_Kosarek2006_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_suramin/Suramin_Kosarek2006_reference/Suramin_Kosarek2006_reference_matlab_simbio.zip" download>Suramin_Kosarek2006_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_suramin/Suramin_Kosarek2006_reference/Suramin_Kosarek2006_reference_sbml.zip" download>Suramin_Kosarek2006_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_suramin/Suramin_Kosarek2006_reference/Suramin_Kosarek2006_reference_cellml.zip" download>Suramin_Kosarek2006_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 1.297 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 3.617e-08 | m3/s |
-| input | model | `VdPerKg` | 0.00034 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -186,14 +158,10 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_suramin/Suramin_Kosarek2006_reference/Suramin_Kosarek2006_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_suramin/Suramin_Kosarek2006_reference/Suramin_Kosarek2006_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Suramin_Kosarek2006_reference_params.json` · controls `Suramin_Kosarek2006_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsuramin%5D%20Suramin_Kosarek2006_reference&body=Drug%3A%20suramin%0ARecord%3A%20Suramin_Kosarek2006_reference%0APaper%3A%20Kosarek_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_suramin/Suramin_Kosarek2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 09:06 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:50 UTC</sub>

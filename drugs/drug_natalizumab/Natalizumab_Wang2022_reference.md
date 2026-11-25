@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper studies tralokinumab, not natalizumab, which is only mentioned as a comparator.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_Wang2022_reference" status="rejected" stale="false" population="" measured-compound="natalizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Wang B, Goodman J, Roskos LK. Mechanistic modeling of a human IgG&lt;sub&gt;4&lt
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper studies tralokinumab, not natalizumab, which is only mentioned as a comparator.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The check for analyte identity failed, noting the study investigates the pharmacokinetics of tralokinumab, an IgG4 antibody. Natalizumab is mentioned solely as a comparator or covariate, not as the primary subject of the pharmacokinetic analysis. Consequently, the clearance and volume parameters attributed to natalizumab are not derived from the intended drug's data. Extracted — natalizumab: CL 0.188 L/d, V 5.8 L.
+Extracted — natalizumab: CL 0.188 L/d, V 5.8 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 20.9; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.714 (5 of 7 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

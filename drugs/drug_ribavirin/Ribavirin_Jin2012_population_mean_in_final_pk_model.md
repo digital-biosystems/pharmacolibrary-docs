@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;ribavirin&quot;,&quot;href&quot;:&quot;drugs/drug_ribavirin/&quot;},{&quot;label&quot;:&quot;Jin_2012 \u00b7 population_mean_in_final_pk_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ribavirin_Jin2012_mean_of_25_leverage_runs_cv&quot;,&quot;label&quot;:&quot;Jin_2012_mean_of_25_leverage_runs_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ribavirin/Ribavirin_Jin2012_mean_of_25_leverage_runs_cv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ribavirin_Jin2012_population_mean_in_final_pk_model&quot;,&quot;label&quot;:&quot;Jin_2012_population_mean_in_final_pk_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ribavirin/Ribavirin_Jin2012_population_mean_in_final_pk_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ribavirin_Wade2006_reference&quot;,&quot;label&quot;:&quot;Wade_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ribavirin/Ribavirin_Wade2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ribavirin — `Ribavirin_Jin2012_population_mean_in_final_pk_model`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ribavirin’s race_factor effect (1.50) was not simulated across covariate scenarios, and the record was held for review after a disputed second reading.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="ribavirin" model-id="Ribavirin_Jin2012_population_mean_in_final_pk_model" status="needs_review" stale="false" population="adults with chronic hepatitis C genotype 1 infection" measured-compound="ribavirin" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ribavirin" model-id="Ribavirin_Jin2012_population_mean_in_final_pk_model" status="needs_review" stale="false" population="patients with chronic hepatitis C genotype 1 infection" measured-compound="ribavirin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Jin R, Fossler MJ, McHutchison JG, Howell CD, Dowling TC. Population pharmacokinetics and pharmacodynamics of ribavirin in patients with chronic hepatitis C genotype 1 infection. The AAPS journal 14(3):571–580 (2012).
@@ -17,18 +16,16 @@ Jin R, Fossler MJ, McHutchison JG, Howell CD, Dowling TC. Population pharmacokin
 
 ## Population and dosing
 
-**Population:** adults with chronic hepatitis C genotype 1 infection · condition chronic hepatitis C genotype 1 · age group adult · n = 144.
+**Population:** patients with chronic hepatitis C genotype 1 infection · condition chronic hepatitis C · age group adult · n = 144.
 
-**Dosing:** 1000, 1200 mg/day, oral, multiple, every 24 h.
+**Dosing:** 1000, 1200 mg/day, oral, multiple.
 
 ## Model
 
-**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 5 extracted, plus 1 covariate effect.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_ribavirin/Ribavirin_Jin2012_population_mean_in_final_pk_model/Ribavirin_Jin2012_population_mean_in_final_pk_model.svg" alt="Ribavirin_Jin2012_population_mean_in_final_pk_model diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Structure:** 1-compartment; no model was built for this record.  
+**Parameterization:** CL/F, Q/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 3 extracted, plus 1 covariate effect.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -36,19 +33,13 @@ Jin R, Fossler MJ, McHutchison JG, Howell CD, Dowling TC. Population pharmacokin
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
 | CL/F (L/h) | CL/F | 19.00 | L/h | 37.42 (None% RSE) |
-| Vc/F (L) | V1/F | 1130 | L | 31.56 (None% RSE) |
-| Vp/F (L) | V2/F | 4020 | L | 67.90 (None% RSE) |
 | Q/F (L/h) | Q/F | 38.6 | L/h |  |
 | Ka (h⁻¹) | kabs | 0.86 | h⁻¹ |  |
 | race_factor | race_factor | 1.50 |  |  |
 
-## Caveats
-
-- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
-
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,21 +49,19 @@ Jin R, Fossler MJ, McHutchison JG, Howell CD, Dowling TC. Population pharmacokin
 
 ### Reviewer guidance
 
-**Ribavirin’s race_factor effect (1.50) was not simulated across covariate scenarios, and the record was held for review after a disputed second reading.**
+**Only clearance was extracted — no volume.**
 
-The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. The second reader disputed the record (agreement 0.818; 0 of 1 reader agreed) and identified the dose compound and primary analyte as unknown. Tlag was defaulted rather than explicitly estimated; the apparent parameterization assumed F=1 and Fm=1, with no molar correction. Extracted — ribavirin: CL/F 19 L/h, V1/F 1.13e+03 L, V2/F 4.02e+03 L, Q/F 38.6 L/h, kabs 0.86 h⁻¹.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — ribavirin: CL/F 19 L/h, Q/F 38.6 L/h, kabs 0.86 h⁻¹.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ribavirin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|
 | CL/F (L/h) | `Q27` · CL/F | 19.00 | L/h | 5.278e-06 | m3/s | l/h | exact (1) | Jin_2012_table_p5_1:row0:col1 | 37.42 (None% RSE) |
-| Vc/F (L) | `Q290` · V1/F | 1130 | L | 1.13 | m3 | l | exact (1) | Jin_2012_table_p5_1:row1:col1 | 31.56 (None% RSE) |
-| Vp/F (L) | `Q82` · V2/F | 4020 | L | 4.02 | m3 | l | exact (1) | Jin_2012_table_p5_1:row2:col1 | 67.90 (None% RSE) |
 | Q/F (L/h) | `Q69` · Q/F | 38.6 | L/h | 1.072e-05 | m3/s | l/h | exact (1) | Jin_2012_table_p5_1:row3:col1 |  |
 | Ka (h⁻¹) | `Q49` · kabs | 0.86 | h⁻¹ | 0.0002389 | 1/s | 1/h | exact (1) | Jin_2012_table_p5_1:row4:col1 |  |
 | race_factor | `Q900` · race_factor | 1.50 |  |  |  |  |  | Jin_2012_table_p5_1:row5:col1 |  |
@@ -84,47 +73,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
 - covariate level 'Race factor' → Q900:race_factor = 1.50 (linear_fractional on Q27)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ribavirin
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - population split: 'population mean in final pk model' subgroup of Jin_2012 (paper reports 2 populations: mean of 25 leverage runs (% cv), population mean in final pk model)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell Jin_2012_table_p5_1:row0:col4 = '17.70, 20.30'
-- unparsed cell Jin_2012_table_p5_1:row1:col4 = '838, 1,585'
-- unparsed cell Jin_2012_table_p5_1:row2:col4 = '2,925, 5,010'
-- unparsed cell Jin_2012_table_p5_1:row3:col4 = '29.84, 47.70'
-- unparsed cell Jin_2012_table_p5_1:row4:col4 = '1.13, 2.24'
-- unparsed cell Jin_2012_table_p5_1:row5:col4 = '1.14, 2.07'
-- unparsed cell Jin_2012_table_p5_1:row6:col4 = '31.36, 43.24'
-- unparsed cell Jin_2012_table_p5_1:row7:col4 = '1.00, 85.47'
-- unparsed cell Jin_2012_table_p5_1:row8:col4 = '19.72, 85.74'
-- unparsed cell Jin_2012_table_p5_1:row9:col4 = '1.00, 13.78'
-- unparsed cell Jin_2012_table_p5_1:row10:col4 = '1.00, 98.61'
-- unparsed cell Jin_2012_table_p5_1:row11:col4 = '0.02, 0.04'
+- table Jin_2012_table_p5_1: ambiguous_numeric_format
+- table Jin_2012_table_p5_1: unparsed_numeric_cell
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.818 (9/11 fields) | 2 |
+| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
 
-<details><summary>2 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | ribavirin | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | ribavirin | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -136,33 +104,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Jin_2012_table_p5_1:row0:col1'] |
-| C5_dimension_Q290 | pass | [length] ** 3 |  | ['Jin_2012_table_p5_1:row1:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Jin_2012_table_p5_1:row4:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Jin_2012_table_p5_1:row3:col1'] |
-| C5_dimension_Q82 | pass | [length] ** 3 |  | ['Jin_2012_table_p5_1:row2:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 19 L/h | ['Jin_2012_table_p5_1:row0:col1'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 1.13e+03 L | ['Jin_2012_table_p5_1:row1:col1'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 4.02e+03 L | ['Jin_2012_table_p5_1:row2:col1'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=ribavirin) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | cross-check disputed by a second reader: verdict disputed, agreement 0.818, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -179,41 +130,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ribavirin/Ribavirin_Jin2012_population_mean_in_final_pk_model/Ribavirin_Jin2012_population_mean_in_final_pk_model_modelica.zip" download>Ribavirin_Jin2012_population_mean_in_final_pk_model_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ribavirin/Ribavirin_Jin2012_population_mean_in_final_pk_model/Ribavirin_Jin2012_population_mean_in_final_pk_model_fmi.zip" download>Ribavirin_Jin2012_population_mean_in_final_pk_model_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_ribavirin/Ribavirin_Jin2012_population_mean_in_final_pk_model/Ribavirin_Jin2012_population_mean_in_final_pk_model_fmi.zip" download>Ribavirin_Jin2012_population_mean_in_final_pk_model_fmi.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ribavirin/Ribavirin_Jin2012_population_mean_in_final_pk_model/Ribavirin_Jin2012_population_mean_in_final_pk_model_matlab.zip" download>Ribavirin_Jin2012_population_mean_in_final_pk_model_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ribavirin/Ribavirin_Jin2012_population_mean_in_final_pk_model/Ribavirin_Jin2012_population_mean_in_final_pk_model_matlab_simbio.zip" download>Ribavirin_Jin2012_population_mean_in_final_pk_model_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_ribavirin/Ribavirin_Jin2012_population_mean_in_final_pk_model/Ribavirin_Jin2012_population_mean_in_final_pk_model_sbml.zip" download>Ribavirin_Jin2012_population_mean_in_final_pk_model_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_ribavirin/Ribavirin_Jin2012_population_mean_in_final_pk_model/Ribavirin_Jin2012_population_mean_in_final_pk_model_cellml.zip" download>Ribavirin_Jin2012_population_mean_in_final_pk_model_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2442 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.001 | kg |
-| input | model | `Cl` | 5.278e-06 | m3/s |
-| input | model | `VdPerKg` | 0.01614 | m3/kg |
-| input | model | `k12` | 9.489e-06 | 1/s |
-| input | model | `k21` | 2.667e-06 | 1/s |
-| input | model | `ka` | 0.0002389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -234,14 +158,10 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 1000 mg, single dose, first-order absorption (ka 0.86 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1000 mg oral (J05AP01) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_ribavirin/Ribavirin_Jin2012_population_mean_in_final_pk_model/Ribavirin_Jin2012_population_mean_in_final_pk_model_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_ribavirin/Ribavirin_Jin2012_population_mean_in_final_pk_model/Ribavirin_Jin2012_population_mean_in_final_pk_model_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Ribavirin_Jin2012_population_mean_in_final_pk_model_params.json` · controls `Ribavirin_Jin2012_population_mean_in_final_pk_model_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bribavirin%5D%20Ribavirin_Jin2012_population_mean_in_final_pk_model&body=Drug%3A%20ribavirin%0ARecord%3A%20Ribavirin_Jin2012_population_mean_in_final_pk_model%0APaper%3A%20Jin_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ribavirin/Ribavirin_Jin2012_population_mean_in_final_pk_model%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:48 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 15:43 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Oxazepam and 3-hydroxydiazepam are isolated compartments with no metabolic link to their parent compounds.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="nordazepam" model-id="Nordazepam_Lscher1981_reference" status="rejected" stale="false" population="dogs" measured-compound="diazepam" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -48,13 +48,13 @@ Löscher W, Frey HH. Pharmacokinetics of diazepam in the dog. Archives internati
 
 ### Reviewer guidance
 
-**Oxazepam and 3-hydroxydiazepam are isolated compartments with no metabolic link to their parent compounds.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The structural description places oxazepam and 3-hydroxydiazepam in the system without a connecting path from the parent drug diazepam. The metabolic link from nordazepam to oxazepam is missing, leaving oxazepam unreachable from the dose. Because the record relies solely on the abstract, these structural gaps prevented a coherent pharmacokinetic model from being formed. Extracted — nordazepam: t1/2β 3.2 hr, Fab 74-100% %; oxazepam: t1/2z 5.7 hr.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nordazepam: t1/2β 3.2 hr, Fab 74-100% %; oxazepam: t1/2z 5.7 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has diazepam → desmethyldiazepam (nordazepam) (metabolism); desmethyldiazepam (nordazepam) → oxazepam (metabolism); diazepam → 3-hydroxydiazepam (metabolism), the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -157,4 +157,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnordazepam%5D%20Nordazepam_Lscher1981_reference&body=Drug%3A%20nordazepam%0ARecord%3A%20Nordazepam_Lscher1981_reference%0APaper%3A%20L%C3%B6scher_1981%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nordazepam/Nordazepam_Lscher1981_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:43 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:34 UTC</sub>

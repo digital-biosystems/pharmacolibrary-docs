@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Denosumab bioavailability is assigned to two conflicting parameters, and clearance uses an incorrect type code, preventing second-reader agreement.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="denosumab" model-id="Denosumab_Sutjandra2011_reference" status="needs_review" stale="false" population="healthy subjects and postmenopausal women with osteopenia or osteoporosis" measured-compound="denosumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Sutjandra L, Rodriguez RD, Doshi S, Ma M, Peterson MC, Jang GR et al. Population
 
 ### Reviewer guidance
 
-**Denosumab bioavailability is assigned to two conflicting parameters, and clearance uses an incorrect type code, preventing second-reader agreement.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists subcutaneous bioavailability (64%) under two different parameter entries, one populated and one null. A second reader agreed on the 64% value but assigned it to the opposite entry, causing a direct conflict. Additionally, the reader disputed the classification code for linear clearance, preventing a consensus on the record. Extracted — denosumab: Fab 64 %, kel 0.00883 h-1, V 2.49 L/66 kg, CLnorm 3.06 mL/h/66 kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — denosumab: Fab 64 %, kel 0.00883 h-1, V 2.49 L/66 kg, CLnorm 3.06 mL/h/66 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[linear clearance].parameter_id`: this record has Q354, the second reading Q22; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | cross-check disputed by a second reader: verdict disputed, agreement 0.727, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.727 | cross-check contradicted by a second reader: verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The nirmatrelvir record is disputed because the second reader disagreed on the derived distributional volume of 23.99 and the unmeasured parameter of 82.5.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="Nirmatrelvir" model-id="Nirmatrelvir_Zhu2023_reference" status="needs_review" stale="false" population="" measured-compound="nirmatrelvir" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Zhu M, Fu T, You M, Cao J, Yang H, Chen X et al. Design, synthesis and biologica
 
 ### Reviewer guidance
 
-**The nirmatrelvir record is disputed because the second reader disagreed on the derived distributional volume of 23.99 and the unmeasured parameter of 82.5.**
+**cross_check_disputed; x1_cross_check.**
 
-The primary extraction reported a derived distributional value of 23.99 and left another parameter null, but the second reader calculated 18.06 and 82.5 respectively. These disagreements triggered a failed consistency check with an agreement ratio of 0.4. The record was held back for review due to this lack of inter-reader consensus. Extracted — nirmatrelvir: CL 69.3 (mL/min/kg), V 552 L.
+Extracted — nirmatrelvir: CL 69.3 (mL/min/kg), V 552 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 1222.0, the second reading 1222.0; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check disputed by a second reader: verdict disputed, agreement 0.4, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.867 (13 of 15 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.867 | cross-check contradicted by a second reader: verdict disputed; agreement 0.867 (13 of 15 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -147,7 +147,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Zhu2023_reference/Nirmatrelvir_Zhu2023_reference_modelica.zip" download>Nirmatrelvir_Zhu2023_reference_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Zhu2023_reference/Nirmatrelvir_Zhu2023_reference_modelica.zip" download>Nirmatrelvir_Zhu2023_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Zhu2023_reference/Nirmatrelvir_Zhu2023_reference_fmi.zip" download>Nirmatrelvir_Zhu2023_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Zhu2023_reference/Nirmatrelvir_Zhu2023_reference_matlab.zip" download>Nirmatrelvir_Zhu2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Zhu2023_reference/Nirmatrelvir_Zhu2023_reference_matlab_simbio.zip" download>Nirmatrelvir_Zhu2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -209,4 +209,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnirmatrelvir%5D%20Nirmatrelvir_Zhu2023_reference&body=Drug%3A%20nirmatrelvir%0ARecord%3A%20Nirmatrelvir_Zhu2023_reference%0APaper%3A%20Zhu_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nirmatrelvir/Nirmatrelvir_Zhu2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:39 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:05 UTC</sub>

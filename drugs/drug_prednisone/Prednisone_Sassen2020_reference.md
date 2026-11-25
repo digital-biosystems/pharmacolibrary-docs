@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper reports ciprofloxacin kinetics, not prednisone, and prednisone was only a concomitant medication.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="prednisone" model-id="Prednisone_Sassen2020_reference" status="rejected" stale="false" population="" measured-compound="prednisone" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Sassen SDT, Mathôt RAA, Pieters R, de Haas V, Kaspers GJL, van den Bos C et al.
 
 ### Reviewer guidance
 
-**The paper reports ciprofloxacin kinetics, not prednisone, and prednisone was only a concomitant medication.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The study source describes pharmacokinetic parameters for ciprofloxacin, while prednisone is mentioned only as a co-medication. Consequently, the extracted clearance (86.0 L/h/70 kg) and volume of distribution (695.0 L/70 kg) values do not describe the intended drug. The second reader also disagreed on multiple extracted values, noting a dispute with 0 of 1 readers agreeing. Extracted — prednisone: CL/F 86 L/h/70 kg, V/F 695 L/70 kg.
+Extracted — prednisone: CL/F 86 L/h/70 kg, V/F 695 L/70 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 178.4, the second reading 22.3; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.231, 0 of 1 reader(s) agree | 0.231 | cross-check disputed by a second reader: verdict disputed, agreement 0.231, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.231 (3 of 13 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.231 | cross-check contradicted by a second reader: verdict disputed; agreement 0.231 (3 of 13 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

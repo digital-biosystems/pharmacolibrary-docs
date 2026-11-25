@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because it labels adinazolam’s 444 mL/min clearance as apparent metabolite clearance, while representing the N-desmethyl analyte with the wrong output and model structure.
+> Ka use library defaults, not estimates from this paper; t3_output_variable (+3 more).
 
-<div class="pk-model-meta" hidden drug="adinazolam" model-id="Adinazolam_Venkatakrishnan2005_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="N-desmethyl adinazolam" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="adinazolam" model-id="Adinazolam_Venkatakrishnan2005_reference" status="rejected" stale="false" population="healthy males" measured-compound="N-desmethyl adinazolam" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Venkatakrishnan K, Culm KE, Ehrenberg BL, Harmatz JS, Corbett KE, Fleishaker JC et al. Kinetics and dynamics of intravenous adinazolam, N-desmethyl adinazolam, and alprazolam in healthy volunteers. Journal of clinical pharmacology 45(5):529–537 (2005).
@@ -17,7 +17,7 @@ Venkatakrishnan K, Culm KE, Ehrenberg BL, Harmatz JS, Corbett KE, Fleishaker JC 
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · condition healthy · age group adult · n = 9.
+**Population:** healthy males · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed adinazolam, measured N-desmethyl adinazolam.
 
@@ -25,7 +25,7 @@ Venkatakrishnan K, Culm KE, Ehrenberg BL, Harmatz JS, Corbett KE, Fleishaker JC 
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 9 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference/Adinazolam_Venkatakrishnan2005_reference.svg" alt="Adinazolam_Venkatakrishnan2005_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -35,19 +35,13 @@ Venkatakrishnan K, Culm KE, Ehrenberg BL, Harmatz JS, Corbett KE, Fleishaker JC 
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| volume of distribution (L), adinazolam | Vm/F | 106 | L |
-| volume of distribution (L), NDMAD | Vm/F | 100 | L |
-| volume of distribution (L), alprazolam | V | 77 | L |
-| elimination half-life (hours), adinazolam | t1/2z | 2.9 | hours |
-| elimination half-life (hours), NDMAD | t1/2z | 2.8 | hours |
-| elimination half-life (hours), alprazolam | t1/2z | 14.6 | hours |
-| clearance (mL/min), adinazolam | CLm/F | 444 | mL/min |
-| clearance (mL/min), NDMAD | CLm/F | 321 | mL/min |
-| clearance (mL/min), alprazolam | CL | 84 | mL/min |
+| volume of distribution (L), | Vm/F | 106 | L |
+| elimination half-life (hours), | t1/2z | 2.9 | hours |
+| clearance (mL/min), | CLm/F | 444 | mL/min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.062). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,27 +51,21 @@ Venkatakrishnan K, Culm KE, Ehrenberg BL, Harmatz JS, Corbett KE, Fleishaker JC 
 
 ### Reviewer guidance
 
-**The record was rejected because it labels adinazolam’s 444 mL/min clearance as apparent metabolite clearance, while representing the N-desmethyl analyte with the wrong output and model structure.**
+**Ka use library defaults, not estimates from this paper; t3_output_variable (+3 more).**
 
-The measured compound is N-desmethyl adinazolam in a parent–metabolite model, but the output was central concentration and the represented structure was one-compartment enteral. Ka use default values, not estimates from this paper; these values affect the simulated profile but are not supported by this paper and need to be extracted or explicitly justified as conventions; Tlag was also defaulted, and absorption was assumed. The record was built from the abstract alone, so summary statistics stood in for a fitted model; a second reader disputed the verdict (agreement 0.062) and disagreed about the assignments of the 444 mL/min clearance, 2.9-hour half-life, and 106 L volume. Extracted — adinazolam: Vm/F 106 L, t1/2z 2.9 hours, CLm/F 444 mL/min; N-desmethyl adinazolam: Vm/F 100 L, t1/2z 2.8 hours, CLm/F 321 mL/min; alprazolam: V 77 L, t1/2z 14.6 hours, CL 84 mL/min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is adinazolam's own; they describe N-desmethyl adinazolam. Extracted — N-desmethyl adinazolam: Vm/F 106 L, t1/2z 2.9 hours, CLm/F 444 mL/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has adinazolam, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has adinazolam, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| volume of distribution (L), adinazolam | `Q367` · Vm/F | 106 | L | 0.106 | m3 | l | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract |
-| volume of distribution (L), NDMAD | `Q367` · Vm/F | 100 | L | 0.1 | m3 | l | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract |
-| volume of distribution (L), alprazolam | `Q61` · V | 77 | L | 0.077 | m3 | l | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract |
-| elimination half-life (hours), adinazolam | `Q57` · t1/2z | 2.9 | hours | 1.044e+04 | s | h | llm (0.6) | Venkatakrishnan_2005:abstract |
-| elimination half-life (hours), NDMAD | `Q57` · t1/2z | 2.8 | hours | 1.008e+04 | s | h | llm (0.6) | Venkatakrishnan_2005:abstract |
-| elimination half-life (hours), alprazolam | `Q57` · t1/2z | 14.6 | hours | 5.256e+04 | s | h | llm (0.6) | Venkatakrishnan_2005:abstract |
-| clearance (mL/min), adinazolam | `Q351` · CLm/F | 444 | mL/min | 7.4e-06 | m3/s | ml/min | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract |
-| clearance (mL/min), NDMAD | `Q351` · CLm/F | 321 | mL/min | 5.35e-06 | m3/s | ml/min | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract |
-| clearance (mL/min), alprazolam | `Q22` · CL | 84 | mL/min | 1.4e-06 | m3/s | ml/min | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract |
+| volume of distribution (L), | `Q367` · Vm/F | 106 | L | 0.106 | m3 | l | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract, Venkatakrishnan_2005:abstract, Venkatakrishnan_2005:abstract |
+| elimination half-life (hours), | `Q57` · t1/2z | 2.9 | hours | 1.044e+04 | s | h | half_life_rule (0.95) | Venkatakrishnan_2005:abstract, Venkatakrishnan_2005:abstract, Venkatakrishnan_2005:abstract |
+| clearance (mL/min), | `Q351` · CLm/F | 444 | mL/min | 7.4e-06 | m3/s | ml/min | llm_confirmed (0.6) | Venkatakrishnan_2005:abstract, Venkatakrishnan_2005:abstract, Venkatakrishnan_2005:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -93,15 +81,15 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- dropped PD-category row 'effect site equilibration half-life' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Venkatakrishnan_2005:abstract'])
+- dropped unlinked row (NIL): 'effect site equilibration half-life' — extend the ontology if this is a real PK parameter (source ['Venkatakrishnan_2005:abstract'])
 - metabolite n-desmethyl adinazolam: Q61→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - metabolite n-desmethyl adinazolam: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=N-desmethyl adinazolam
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- row roles (LLM): model_class=noncompartmental; 10/10 row label(s) assigned, 0 linked by role; re-tagged N-desmethyl adinazolam→parent ×3, N-desmethyl adinazolam→alprazolam ×3
+- status held at "Needs review" — not promoted
+- row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 3 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
 
 **Extraction notes:**
@@ -110,28 +98,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.062 (1/16 fields) | 15 |
+| `gpt-oss-120b` | not confirmed | 0.1 (1/10 fields) | 9 |
 
-<details><summary>15 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss-120b` | `parameters[clearance (ml/min), adinazolam]` | 444 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance (ml/min), alprazolam]` | 84 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance (ml/min), ndmad]` | 321 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance (ml/min),]` | 444 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clearance]` |  | 444 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life (hours), adinazolam]` | 2.9 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life (hours), alprazolam]` | 14.6 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life (hours), ndmad]` | 2.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life (hours),]` | 2.9 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[elimination half-life]` |  | 2.9 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution (l), adinazolam]` | 106 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution (l), alprazolam]` | 77 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution (l), ndmad]` | 100 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution (l),]` | 106 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution]` |  | 106 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | adinazolam | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | N-desmethyl adinazolam | unknown | mismatch |
@@ -148,22 +130,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 9 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q367 | pass | [length] ** 3 |  | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q367 | pass | [length] ** 3 |  | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Venkatakrishnan_2005:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Venkatakrishnan_2005:abstract'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Venkatakrishnan_2005:abstract', 'Venkatakrishnan_2005:abstract', 'Venkatakrishnan_2005:abstract'] |
+| C5_dimension_Q367 | pass | [length] ** 3 |  | ['Venkatakrishnan_2005:abstract', 'Venkatakrishnan_2005:abstract', 'Venkatakrishnan_2005:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Venkatakrishnan_2005:abstract', 'Venkatakrishnan_2005:abstract', 'Venkatakrishnan_2005:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 5.04 L/h | ['Venkatakrishnan_2005:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 77 L | ['Venkatakrishnan_2005:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -173,11 +147,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | fail | Metabolite_C (measured=N-desmethyl adinazolam) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
 | T3_shared_parameters | pass | 3 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.062, 0 of 1 reader(s) agree | 0.062 | cross-check disputed by a second reader: verdict disputed, agreement 0.062, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.1 (1 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.1 | cross-check contradicted by a second reader: verdict disputed; agreement 0.1 (1 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -205,4 +179,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Badinazolam%5D%20Adinazolam_Venkatakrishnan2005_reference&body=Drug%3A%20adinazolam%0ARecord%3A%20Adinazolam_Venkatakrishnan2005_reference%0APaper%3A%20Venkatakrishnan_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 17:56 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:26 UTC</sub>

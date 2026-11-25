@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The ibutilide record was rejected because the model structure describes three compartments but only two are linked to the dose, leaving one unreachable.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="ibutilide" model-id="Ibutilide_Zeng2017_reference" status="rejected" stale="false" population="Chinese healthy volunteers and patients with atrial fibrillation and/or atrial flutter" measured-compound="ibutilide" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Zeng Z, Wang L, Hua L, Jiang J, Pang H, Huang Y et al. Population Pharmacokineti
 
 ### Reviewer guidance
 
-**The ibutilide record was rejected because the model structure describes three compartments but only two are linked to the dose, leaving one unreachable.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists a central volume of 66.1 L and two peripheral volumes of 548 L and 1380 L, implying a three-compartment model. The review identified the second peripheral compartment as an unreachable orphan, meaning it has no path from the administered dose. A second reader also disagreed on the dose compound identification and noted a missing inter-compartmental clearance value that was found to be 745. Extracted — ibutilide: CL 246 L/h, V1 66.1 L, V2 548 L, V3 1.38e+03 L.
+Extracted — ibutilide: CL 246 L/h, V1 66.1 L, V2 548 L, V3 1.38e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ibutilide, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

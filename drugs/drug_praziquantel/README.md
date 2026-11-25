@@ -68,49 +68,47 @@ Praziquantel is an antiparasitic drug used to treat schistosomiasis, cysticercos
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:34 | 11:01 | 4/4/0 | 2/0/0 | 0/0/0 | 558,868/32,137 | ollama / glm-5.3-flash | 10 | 0/10 | 10/0 | 0 |
+| 2026-11-24 03:47 | 0:04 | 4/4/0 | 2/0/0 | 0/0/0 | 3,910/152 | einfracz / qwen3.8-27b | 10 | 0/10 | 10/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 60 matched, 20 returned
-- **screened:** 8  ·  **relevant:** 8
+- **screened:** 8  ·  **relevant:** 7
 - **records:** 8  ·  extracted 0  ·  needs review 4  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Falcoz_2022.pdf` | Falcoz C et al., R-praziquantel integrated population ph…, Journal of pharmacokinetics… (2022) | popPK | 10 | [10.1007/s10928-021-09791-8](https://doi.org/10.1007/s10928-021-09791-8) | [35024995](https://pubmed.ncbi.nlm.nih.gov/35024995) | Population PK model of R-praziquantel in humans with structural model described, but specific numeric parameter values (CL, V, ka) are not shown in the abstract evidence provided. |
-| `Hai-Feng_2017.pdf` | Hai-Feng Y et al., [Pharmacokinetics of praziquantel injec…, Zhongguo xue xi chong bing… (2017) | popPK | 8 | [10.16250/j.32.1374.2017032](https://doi.org/10.16250/j.32.1374.2017032) | [29508574](https://pubmed.ncbi.nlm.nih.gov/29508574) | Non-compartmental PK parameters (Tmax, Cmax, T1/2β, AUC, relative bioavailability) for praziquantel are reported directly in the abstract. |
-| `Lombardo_2019.pdf` | Lombardo FC et al., Activity and pharmacokinetics of a praz…, European journal of pharmac… (2019) | popPK | 8 | [10.1016/j.ejpb.2019.06.029](https://doi.org/10.1016/j.ejpb.2019.06.029) | [31265895](https://pubmed.ncbi.nlm.nih.gov/31265895) | Mouse PK study of praziquantel with NCA parameters (AUC, Cl/F) reported numerically in the abstract, though full parameter sets may be in figures/tables not shown. |
-| `Ridtitid_2007.pdf` | Ridtitid W et al., Pharmacokinetic interaction between ket…, Journal of clinical pharmac… (2007) | popPK | 8 | [10.1111/j.1365-2710.2007.00862.x](https://doi.org/10.1111/j.1365-2710.2007.00862.x) | [18021336](https://pubmed.ncbi.nlm.nih.gov/18021336) | Human crossover study reporting numeric praziquantel clearance (Cl/F) values directly in the abstract; non-compartmental, so no compartmental model parameters. |
-| `Giorgi_2001.pdf` | Giorgi M et al., Pharmacokinetics and microsomal oxidati…, Journal of veterinary pharm… (2001) | popPK | 7 | [10.1046/j.1365-2885.2001.00341.x](https://doi.org/10.1046/j.1365-2885.2001.00341.x) | [11555180](https://pubmed.ncbi.nlm.nih.gov/11555180) | PK study of praziquantel in lambs with compartmental model, but numeric parameter values (CL, V, ka, t½) are not present in the provided evidence. |
-
-<sub>queue written 2026-10-07 09:24 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Biendl_2022 | irrelevant | 0 | 0 | This is an antischistosomal drug-screening study; praziquantel is only mentioned as the existing treatment, with no PK parameters reported. |
-| popPK | Biendl_2023 | irrelevant | 0 | 0 | The paper studies ozonide antischistosomal compounds; praziquantel is only mentioned as the standard drug, with no PK parameters for it. |
+| popPK | Biendl_2022 | irrelevant | 0 | 0 | The paper focuses on the discovery of novel antischistosomal compounds and does not report any pharmacokinetic parameters for praziquantel. |
+| PGx | Biendl_2022 | not_relevant | 0 | 0 | The paper reports the discovery of novel antischistosomal compounds through drug screening, not a pharmacogenomic effect of praziquantel. |
+| popPK | Biendl_2023 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of experimental ozonide compounds (OZ418, etc.), with praziquantel serving only as background context without quantitative PK parameters reported for it. |
+| PGx | Biendl_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics and pharmacodynamics of experimental ozonide compounds, not the effect of gene variants on praziquantel. |
 | popPK | Brito_2022 | irrelevant | 0 | 0 | In vitro antischistosomal drug-discovery study of neolignans; praziquantel is only a reference comparator with EC50 values, no PK parameters. |
-| popPK | Dobrachinski_2024 | irrelevant | 0 | 0 | This is a pharmacophore/virtual-screening and efficacy study; praziquantel is only a template, with no PK parameters reported. |
-| popPK | Giorgi_2001 | relevant | 7 | 3 | PK study of praziquantel in lambs with compartmental model, but numeric parameter values (CL, V, ka, t½) are not present in the provided evidence. |
-| popPK | González_2024 | irrelevant | 0 | 0 | Physicochemical property analysis of anti-schistosomal compounds; no PK disposition parameters (CL, V, ka, half-life, PK model) for praziquantel are reported. |
+| popPK | Dobrachinski_2024 | irrelevant | 0 | 0 | The study uses praziquantel only as a pharmacophore template for virtual screening and focuses on the efficacy of other drugs (betamethasone, doxazosin), containing no pharmacokinetic parameters for praziquantel. |
+| PGx | Dobrachinski_2024 | not_relevant | 0 | 0 | The paper describes virtual screening and in vitro/vivo efficacy of new antischistosomal drugs using praziquantel as a template, without investigating pharmacogenomic effects on praziquantel PK/PD. |
+| popPK | Falcoz_2022 | relevant | 10 | 2 | The paper describes a population pharmacokinetic model for R-praziquantel in humans, but the specific numeric parameter values (CL, V, ka, etc.) are not present in the provided text. |
+| PGx | Falcoz_2022 | not_relevant | 1 | 1 | The study reports population pharmacokinetics based on age, weight, and dosing regimen, but does not report effects of genetic variants, genotypes, or phenotypes on PZQ PK/PD. |
+| popPK | Giorgi_2001 | irrelevant | 7 | 0 | The study reports praziquantel pharmacokinetics in lambs using a one-compartment model, but no specific numeric parameter values (e.g., clearance, half-life, concentration-time data) are present in the provided abstract or evidence. |
+| PGx | Giorgi_2001 | not_relevant | 0 | 0 | The study describes pharmacokinetics and metabolism in lambs but does not report any variation based on gene variants or genotypes (pharmacogenomics). |
+| popPK | González_2024 | irrelevant | 0 | 0 | The paper is a review of physicochemical properties and drug discovery trends for anti-schistosomal compounds, not a pharmacokinetic study reporting quantitative disposition parameters for praziquantel. |
+| PGx | González_2024 | not_relevant | 0 | 0 | The paper analyzes physicochemical properties of anti-schistosomal compounds and does not investigate gene variants or pharmacogenomic effects on PK/PD parameters. |
+| PGx | Hai-Feng_2017 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of praziquantel in buffaloes and does not report any association with gene variants or genotypes. |
+| PGx | Lombardo_2019 | not_relevant | 0 | 10 | The study examines the effect of a drug formulation (crystalline polymorph) on PK/PD, not a pharmacogenomic variant or genotype. |
 | popPK | Meister_2019 | irrelevant | 0 | 0 | This is a population PK study of tribendimidine (metabolites dADT/adADT); praziquantel appears only as a comparator treatment, with no praziquantel PK parameters reported. |
 | popPK | Morais_2021 | irrelevant | 0 | 0 | This is a drug-discovery/antischistosomal activity study of pyrazoline derivatives; praziquantel is only a positive control (EC50 0.93 µM) and no PK disposition parameters for praziquantel are reported. |
-| popPK | Souza_2024 | irrelevant | 0 | 0 | Praziquantel is only a positive-control comparator; no PK parameters for it are reported. |
+| PGx | Ridtitid_2007 | not_relevant | 0 | 0 | The study evaluates a drug-drug interaction (ketoconazole) rather than a pharmacogenomic effect (gene variant/genotype). |
+| popPK | Souza_2024 | irrelevant | 0 | 0 | The study focuses on the antischistosomal efficacy of Porcelia ponderosa γ-lactones, with praziquantel used only as a positive control, and no pharmacokinetic parameters for praziquantel are reported. |
+| PGx | Souza_2024 | not_relevant | 0 | 0 | The paper investigates the efficacy of a new natural product against Schistosoma mansoni and mentions praziquantel only as a positive control for activity; it does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 | popPK | Thomas_2016 | irrelevant | 1 | 0 | This is a study of PZQ chemical degradation in aquarium water, not a pharmacokinetic study; no disposition parameters (CL, V, ka, half-life with volume) for praziquantel in a subject are reported, and the only PK reference (Tubbs & Tingle 2006) is cited without values. |
 | popPK | Whiteland_2020 | irrelevant | 0 | 0 | This is an in vitro anti-schistosomal drug discovery study; PZQ is only a positive control and no PK parameters are reported. |
-| popPK | de_2020 | irrelevant | 0 | 0 | This is an efficacy study of diminazene against schistosomiasis in mice; praziquantel is only mentioned as background and no PK parameters are reported. |
+| popPK | de_2020 | irrelevant | 0 | 0 | The study evaluates the antiparasitic efficacy of diminazene, not the pharmacokinetics of praziquantel, which is only mentioned as context. |
+| PGx | de_2020 | not_relevant | 0 | 0 | The paper evaluates the efficacy of diminazene against Schistosoma mansoni and does not report any pharmacogenomic effects on the PK or PD of praziquantel. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpraziquantel%5D&body=Drug%3A%20praziquantel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_praziquantel/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 09:24 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 03:39 UTC</sub>

@@ -55,8 +55,8 @@ Bisoprolol is a selective beta-1 blocker used to treat high blood pressure, angi
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kutumova_2022_Activity_of_stress_receptors](drugs/drug_bisoprolol/pd_Kutumova_2022_Activity_of_stress_receptors.md) | Activity of stress receptors biomarker turnover ← bisoprolol | — | Kutumova E et al., Mathematical modeling of antihypertensi…, Frontiers in physiology (2022) | [10.3389/fphys.2022.1070115](https://doi.org/10.3389/fphys.2022.1070115) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kutumova_2022_Renin_secretion_rate](drugs/drug_bisoprolol/pd_Kutumova_2022_Renin_secretion_rate.md) | Renin secretion rate biomarker turnover ← bisoprolol | — | Kutumova E et al., Mathematical modeling of antihypertensi…, Frontiers in physiology (2022) | [10.3389/fphys.2022.1070115](https://doi.org/10.3389/fphys.2022.1070115) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Kutumova_2022_Activity_of_stress_receptors](drugs/drug_bisoprolol/pd_Kutumova_2022_Activity_of_stress_receptors.md) | Activity of stress receptors biomarker turnover ← bisoprolol | — | Kutumova E et al., Mathematical modeling of antihypertensi…, Frontiers in physiology (2022) | [10.3389/fphys.2022.1070115](https://doi.org/10.3389/fphys.2022.1070115) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Kutumova_2022_Renin_secretion_rate](drugs/drug_bisoprolol/pd_Kutumova_2022_Renin_secretion_rate.md) | Renin secretion rate biomarker turnover ← bisoprolol | — | Kutumova E et al., Mathematical modeling of antihypertensi…, Frontiers in physiology (2022) | [10.3389/fphys.2022.1070115](https://doi.org/10.3389/fphys.2022.1070115) |
 
 ## Pharmacogenomics (PGx)
 

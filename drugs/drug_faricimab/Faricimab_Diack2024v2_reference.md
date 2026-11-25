@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for faricimab was rejected because the volume of distribution unit is dimensionally invalid and the intrinsic clearance is physiologically implausible.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit L/day ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="faricimab" model-id="Faricimab_Diack2024v2_reference" status="rejected" stale="false" population="adults with nAMD or DME" measured-compound="faricimab" parameterization="mechanistic" topology="1C"></div>
 
@@ -40,7 +40,7 @@ Diack C, Gibiansky L, Jaminion F, Gibiansky E, Gaudreault J, Bogman K et al. Ocu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,13 @@ Diack C, Gibiansky L, Jaminion F, Gibiansky E, Gaudreault J, Bogman K et al. Ocu
 
 ### Reviewer guidance
 
-**The record for faricimab was rejected because the volume of distribution unit is dimensionally invalid and the intrinsic clearance is physiologically implausible.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit L/day ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The volume of distribution is listed as 0.253 mL, but the associated dimensionality implies a mass-normalized volume rather than a simple volume. The intrinsic clearance of 15.6 L/day was deemed outside physiological limits, suggesting a scale error. One parameter lacked a standard unit definition, preventing its conversion to standard SI terms. Extracted — faricimab: V 0.253 mL, CLint 15.6 L/day, CL 2.33 L/day, VH 0.0251, CLnorm 0.0311.
+A reported unit could not be converted (CLint), so that value has no SI equivalent. Extracted — faricimab: V 0.253 mL, CLint 15.6 L/day, CL 2.33 L/day, VH 0.0251, CLnorm 0.0311.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aucq8w: this record has none, the second reading 1540; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,6 +139,42 @@ The volume of distribution is listed as 0.253 mL, but the associated dimensional
 - LLM selected parameter table(s) 3, 4
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.273 (6/22 fields) | 16 |
+
+<details><summary>16 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[aucq8w]` |  | 1540 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 2.33 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` |  | 136 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cq8w]` |  | 0.941 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kah]` | 15.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kvh]` |  | 0.0929 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rωkahωcl]` | 0.0311 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rωkvhωkah]` | 0.0251 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_ada_kvh_l_day]` |  | 1.30 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_age_power]` |  | -0.533 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q369_ada_kvh_l_day]` | 1.30 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_wt_power].rse_percent` |  | 10.6 | mismatch |
+| `gpt-oss-120b` | `parameters[tmax]` |  | 0.333 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[va].covariate_forms` | ['power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[va].rse_percent` |  | 12.4 | mismatch |
+| `gpt-oss-120b` | `parameters[vc]` |  | 1.48 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

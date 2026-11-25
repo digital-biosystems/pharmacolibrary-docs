@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The metabolite free SN-38 is orphaned because the dose compartment is undefined in the structure, preventing simulation of its formation.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="sacituzumab govitecan" model-id="SacituzumabGovitecan_Sathe2024_final_final_model_estimatea_r" status="rejected" stale="false" population="patients with metastatic triple-negative breast cancer and other solid tumors" measured-compound="sacituzumab_govitecan" parameterization="apparent" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Sathe AG, Singh I, Singh P, Diderichsen PM, Wang X, Chang P et al. Population Ph
 
 ### Reviewer guidance
 
-**The metabolite free SN-38 is orphaned because the dose compartment is undefined in the structure, preventing simulation of its formation.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a link from sacituzumab govitecan to free SN-38, but the parent compound has no assigned compartment. This structural incompleteness means the metabolite has no path from the dose, rendering it unreachable. The reviewer disagreed on the presence of the link and the model parameterization type. Extracted — free SN-38: kfm -2.34 1/h, CL/F 6.02 L/h, Q/F 5.51 L/h.
+None of the extracted parameters is sacituzumab govitecan's own; they describe free SN-38. Extracted — free SN-38: kfm -2.34 1/h, CL/F 6.02 L/h, Q/F 5.51 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sacituzumab_govitecan, the second reading sacituzumab govitecan; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The maximum concentration parameter was assigned units of days, causing a dimensional conflict with its mass-per-volume physical meaning.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit days ([time]) vs [mass] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="tanezumab" model-id="Tanezumab_Shoji2022_reference" status="rejected" stale="false" population="patients with osteoarthritis or chronic low back pain" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Shoji S, Suzuki A, Gaitonde P, Cai CH, Marshall S. Population pharmacokinetics o
 
 ### Reviewer guidance
 
-**The maximum concentration parameter was assigned units of days, causing a dimensional conflict with its mass-per-volume physical meaning.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit days ([time]) vs [mass] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists the maximum drug concentration with a value of 8.9 and a unit of days. This unit represents a duration and conflicts with the parameter's definition as a concentration. Because the record was built from the paper's abstract alone, these summary statistics stand in for a fitted model. Extracted — tanezumab: CL 0.133 L d-1, V1 2.6 L, V2 1.77 L, Km 31.2 μg L-1, Cmax 8.9 days.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tanezumab: CL 0.133 L d-1, V1 2.6 L, V2 1.77 L, Km 31.2 μg L-1, Cmax 8.9 days.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tanezumab, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because 4-methylaminoantipyrine AUC∞ of 29.9 mg/L/h is dimensionally inconsistent, and the paper reports no compartmental volume or clearance.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit mg/L/h ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Ziesenitz2019_reference" status="rejected" stale="false" population="infants and children" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Ziesenitz VC, Rodieux F, Atkinson A, Borter C, Bielicki JA, Haschke M et al. Dos
 
 ### Reviewer guidance
 
-**The record was rejected because 4-methylaminoantipyrine AUC∞ of 29.9 mg/L/h is dimensionally inconsistent, and the paper reports no compartmental volume or clearance.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit mg/L/h ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.**
 
-No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The listed mg/L/h unit is mass per volume per time, whereas AUC∞ is concentration multiplied by time. The record was based on the abstract alone, so reported summary statistics stood in for a fitted model; a second reader disputed whether the AUC value was 29.9 or absent. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is metamizole sodium's own; they describe 4-methylaminoantipyrine. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has metamizole, the second reading metamizole_sodium; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

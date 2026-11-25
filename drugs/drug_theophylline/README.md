@@ -40,7 +40,7 @@ Theophylline is a methylxanthine bronchodilator used to treat asthma and chronic
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sugimoto_2001_GABA_induced_currents](drugs/drug_theophylline/pd_Sugimoto_2001_GABA_induced_currents.md) | GABA-induced currents biomarker turnover ← theophylline | — | Sugimoto T et al., Inhibitory effect of theophylline on re…, Neuroreport (2001) | [10.1097/00001756-200103050-00013](https://doi.org/10.1097/00001756-200103050-00013) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sugimoto_2001_GABA_induced_currents](drugs/drug_theophylline/pd_Sugimoto_2001_GABA_induced_currents.md) | GABA-induced currents biomarker turnover ← theophylline | — | Sugimoto T et al., Inhibitory effect of theophylline on re…, Neuroreport (2001) | [10.1097/00001756-200103050-00013](https://doi.org/10.1097/00001756-200103050-00013) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

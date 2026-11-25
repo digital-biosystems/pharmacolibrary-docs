@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Fluorouracil clearance was left at a library placeholder because no explicit value was extracted from the record.
+> No value for fluorouracil's clearance; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Deyme2019_mueller_22" status="model_quarantined" stale="false" population="patients with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
@@ -45,7 +45,7 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,11 +55,13 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 ### Reviewer guidance
 
-**Fluorouracil clearance was left at a library placeholder because no explicit value was extracted from the record.**
+**No value for fluorouracil's clearance; t6_deviations (+1 more).**
 
-The record lists volumes of distribution and Michaelis-Menten parameters but omits any estimate for fluorouracil clearance. Consequently, a standard placeholder value stood in for this missing pharmacokinetic parameter. The model was held back from publication because this essential parameter lacked a specific numerical value. Extracted — fluorouracil: V1 153 L, V2 147 L, V3 300 L, Vss 1.39e+03 L, Vmax 1.39e+03 mg/h, Km 5.57 mg/L, Q 67.9 L/h, Q3 5.35 L/h, … (+1).
+The model was built, but fluorouracil's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — fluorouracil: V1 153 L, V2 147 L, V3 300 L, Vss 1.39e+03 L, Vmax 1.39e+03 mg/h, Km 5.57 mg/L, Q 67.9 L/h, Q3 5.35 L/h, … (+1).
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading fluorouracil → 5fuh2 (metabolism); fluorouracil → 5fdhu (metabolism); irinotecan → sn38 (metabolism) …; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -101,6 +103,36 @@ The record lists volumes of distribution and Michaelis-Menten parameters but omi
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
+
+<details><summary>10 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['fluorouracil', '5fuh2', 'metabolism'], ['fluorouracil', '5fdhu', 'metabolism'], ['irinotecan', 'sn38', 'metabolism'], ['sn38', 'sn38g', 'metabolism'], ['irinotecan', 'apc', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[kl2]` | 5.69 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` | 5.57 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q2]` | 67.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q3]` | 5.35 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | 153 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | 147 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3]` | 300 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax]` | 1390 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | 1387 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -124,15 +156,15 @@ The record lists volumes of distribution and Michaelis-Menten parameters but omi
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  | no second reading of this record |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.231 (3 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.231 | cross-check contradicted by a second reader: verdict disputed; agreement 0.231 (3 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

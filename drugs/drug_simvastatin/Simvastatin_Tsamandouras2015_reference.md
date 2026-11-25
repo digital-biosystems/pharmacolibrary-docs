@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Simvastatin clearance parameters recorded an unrecognized unit, preventing conversion to standard units, while the metabolite lacked a valid path from the dose.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit a ([time]) vs [length] ** 3 / [time]; Q410 unit a ([time]) vs dimensionless; Q410 unit a ([time]) vs dimensionless; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Tsamandouras2015_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="simvastatin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -57,13 +57,13 @@ Tsamandouras N, Dickinson G, Guo Y, Hall S, Rostami-Hodjegan A, Galetin A et al.
 
 ### Reviewer guidance
 
-**Simvastatin clearance parameters recorded an unrecognized unit, preventing conversion to standard units, while the metabolite lacked a valid path from the dose.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit a ([time]) vs [length] ** 3 / [time]; Q410 unit a ([time]) vs dimensionless; Q410 unit a ([time]) vs dimensionless; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The total clearance and intrinsic clearance values for simvastatin were stored with an uninterpretable unit that could not be converted to standard SI units. Consequently, the model could not verify if the parameter values matched their required physical dimensions. Furthermore, the simvastatin acid metabolite was identified as an orphan compartment with no valid connection to the parent drug administration. Extracted — simvastatin: CL 13.9 a, Kp 19.1 a, CLint 0.37 a, V 100 L, kabs 0.3 hour -1, tlag 0.212 hr; simvastatin acid: Kp 0.95 a, CL 8.27e+03 L/h.
+A reported unit could not be converted (CL, Kp, Kp and equation variable), so that value has no SI equivalent. Extracted — simvastatin: CL 13.9 a, Kp 19.1 a, CLint 0.37 a, V 100 L, kabs 0.3 hour -1, tlag 0.212 hr; simvastatin acid: Kp 0.95 a, CL 8.27e+03 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has simvastatin → simvastatin acid (metabolism); simvastatin acid → simvastatin (interconversion), the second reading simvastatin → simvastatin acid (interconversion); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

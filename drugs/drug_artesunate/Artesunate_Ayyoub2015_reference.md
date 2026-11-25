@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was held back because a second reader disputed the peripheral clearance value and questioned the peripheral volume.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Ayyoub2015_reference" status="needs_review" stale="false" population="" measured-compound="artesunate" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Ayyoub A, Methaneethorn J, Ramharter M, Djimde AA, Tekete M, Duparc S et al. Pop
 
 ### Reviewer guidance
 
-**The model was held back because a second reader disputed the peripheral clearance value and questioned the peripheral volume.**
+**cross_check_disputed; x1_cross_check.**
 
-The record specifies an apparent intercompartmental clearance of 804.0 liters/day and a peripheral volume of 2230.0 liters for artesunate. A second reader disputed the intercompartmental clearance value, reporting 50.6 instead of 3230, and failed to identify a value for the peripheral volume. These disagreements resulted in an agreement score of 0.8, leading to the record's refusal. Extracted — artesunate: CL/F 377 liters/day, V/F 7.18e+03 L, V2/F 2.23e+03 liters, Q/F 804 liters/day, kabs 17.9 day−1.
+Extracted — artesunate: CL/F 377 liters/day, V/F 7.18e+03 L, V2/F 2.23e+03 liters, Q/F 804 liters/day, kabs 17.9 day−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q78: this record has 3230, the second reading 50.6; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.8 (8 of 10 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | cross-check contradicted by a second reader: verdict disputed; agreement 0.8 (8 of 10 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

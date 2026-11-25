@@ -16,15 +16,13 @@ Bourgouin J, Gagnon MA, Elie R, Dvornik D, Gonzalez R, Kraml M. Butriptyline: hu
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = 14.
-
-**Dosed compound ≠ measured compound:** dosed butriptyline hydrochloride, measured butriptyline.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,13 +30,11 @@ Bourgouin J, Gagnon MA, Elie R, Dvornik D, Gonzalez R, Kraml M. Butriptyline: hu
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Tmax | tmax | 2.6 | h |
-| Cmax | Cmax | 46.5 | ng ml-1 |
 | half-life of butriptyline in plasma | t1/2z | 20 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +46,9 @@ Bourgouin J, Gagnon MA, Elie R, Dvornik D, Gonzalez R, Kraml M. Butriptyline: hu
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — butriptyline: tmax 2.6 h, Cmax 46.5 ng ml-1, t1/2z 20 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — butriptyline: t1/2z 20 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has butriptyline hydrochloride, the second reading butriptyline; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cmax: this record has none, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,8 +56,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Tmax | `Q56` · tmax | 2.6 | h | 9360 | s | h | exact (1) | Bourgouin_1981:abstract, Bourgouin_1981:abstract |
-| Cmax | `Q32` · Cmax | 46.5 | ng ml-1 |  |  | ng/ml | exact (1) | Bourgouin_1981:abstract, Bourgouin_1981:abstract |
 | half-life of butriptyline in plasma | `Q57` · t1/2z | 20 | h | 7.2e+04 | s | h | llm (0.6) | Bourgouin_1981:abstract |
 
 <details class="legend">
@@ -72,31 +66,32 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped value-less row: 'Tmax'
+- dropped value-less row: 'Cmax'
 - dropped value-less row: "'half-value duration' (HVD)" (captured trailing unit 'HVD' for child rows)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=butriptyline
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Bourgouin_1981_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Bourgouin_1981_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cmax].value` | 46.5 |  | mismatch |
+| `gpt-oss-120b` | `parameters[cmax]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[half-life of butriptyline in plasma]` | 20 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half‐value duration]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tmax].value` | 2.6 |  | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | butriptyline hydrochloride | butriptyline | mismatch |
+| `gpt-oss-120b` | `parameters[half-value duration]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` |  |  | only_one_extracted |
 
 </details>
 
@@ -110,11 +105,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Bourgouin_1981:abstract', 'Bourgouin_1981:abstract'] |
-| C5_dimension_Q56 | pass | [time] |  | ['Bourgouin_1981:abstract', 'Bourgouin_1981:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Bourgouin_1981:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -150,4 +143,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbutriptyline%5D%20Butriptyline_Bourgouin1981_reference&body=Drug%3A%20butriptyline%0ARecord%3A%20Butriptyline_Bourgouin1981_reference%0APaper%3A%20Bourgouin_1981%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_butriptyline/Butriptyline_Bourgouin1981_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:11 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 17:23 UTC</sub>

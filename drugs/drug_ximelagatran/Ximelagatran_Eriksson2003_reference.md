@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because it substitutes biomarker kinetics (APTT) for drug pharmacokinetics of ximelagatran and melagatran, using abstract-only summary statistics with default absorption parameters.
+> biomarker_kinetics_as_drug_pk; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="ximelagatran" model-id="Ximelagatran_Eriksson2003_reference" status="rejected" stale="false" population="orthopaedic surgery patients" measured-compound="melagatran" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Eriksson UG, Mandema JW, Karlsson MO, Frison L, Gisleskog PO, Wählby U et al. P
 
 ### Reviewer guidance
 
-**The record was rejected because it substitutes biomarker kinetics (APTT) for drug pharmacokinetics of ximelagatran and melagatran, using abstract-only summary statistics with default absorption parameters.**
+**biomarker_kinetics_as_drug_pk; t0_analyte_identity (+2 more).**
 
-The source text is abstract-only, meaning the reported clearance and volume of distribution are summary statistics rather than fitted model parameters. The analyte identity check failed because the disposition labels refer to biomarker kinetics rather than the parent drug or metabolite. Additionally, the model builder defaulted the absorption rate constant and lag time to placeholders because they were not reported in the source. Extracted — melagatran: CLm/F 5.3 L/h, Fab 23 %, V 15.5 L; ximelagatran: CL 22.9 L/h, V/F 159 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — melagatran: CLm/F 5.3 L/h, Fab 23 %, V 15.5 L; ximelagatran: CL 22.9 L/h, V/F 159 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has melagatran, ximelagatran, the second reading melagatran (SC) and ximelagatran (PO); it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -160,7 +160,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (4 of 16 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (4 of 16 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Bioavailability and lag time were not extracted from the paper, forcing the use of library defaults for trofinetide.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="trofinetide" model-id="Trofinetide_Darwish2025v2_reference" status="needs_review" stale="false" population="healthy volunteers and pediatric and adult patients with Rett syndrome, TBI, or fragile X syndrome" measured-compound="trofinetide" parameterization="mechanistic" topology="2C"></div>
 
@@ -64,13 +64,13 @@ Darwish M, Passarell J, Maxwell K, Bradley H, Bishop KM, Youakim JM. Population 
 
 ### Reviewer guidance
 
-**Bioavailability and lag time were not extracted from the paper, forcing the use of library defaults for trofinetide.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).**
 
-The record lists an absolute bioavailability (Fab) value of 0.832, but the review explicitly flags the use of library defaults for F and Tlag instead of paper-supported estimates. Consequently, the simulated pharmacokinetic profile relies on unverified conventions rather than data specific to this study. A second reader also failed to verify the specific covariate exponents for weight, GFR, and age on clearance and volume of distribution. Extracted — trofinetide: CL 11.7 L/h, V1 25 L, Q 1.42 L/h, V2 35.4 L, kabs 0.394 1/h, Fab 0.832.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (theta_v1_category and theta_v2_category), so that value has no SI equivalent. Extracted — trofinetide: CL 11.7 L/h, V1 25 L, Q 1.42 L/h, V2 35.4 L, kabs 0.394 1/h, Fab 0.832.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trofinetide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -216,8 +216,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.71, 0 of 1 reader(s) agree | 0.71 | cross-check disputed by a second reader: verdict disputed, agreement 0.71, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 0.009806 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.71 (22 of 31 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.71 | cross-check contradicted by a second reader: verdict disputed; agreement 0.71 (22 of 31 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 0.009806 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

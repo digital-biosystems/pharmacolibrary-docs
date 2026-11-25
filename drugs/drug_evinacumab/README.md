@@ -23,8 +23,8 @@ Evinacumab is a monoclonal antibody lipid-modifying agent used to treat homozygo
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Bihorel_2025_LDL_C](drugs/drug_evinacumab/pd_Bihorel_2025_LDL_C.md) | LDL-C ← evinacumab · indirect response — drug inhibits the production of LDL-C | — | Bihorel S et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70016](https://doi.org/10.1002/psp4.70016) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Pu_2021_LDL_C](drugs/drug_evinacumab/pd_Pu_2021_LDL_C.md) | low-density lipoprotein cholesterol ← evinacumab · indirect response — drug inhibits the production of low-density lipoprotein cholesterol | — | Pu X et al., Population pharmacokinetics and exposur…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12711](https://doi.org/10.1002/psp4.12711) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Bihorel_2025_LDL_C](drugs/drug_evinacumab/pd_Bihorel_2025_LDL_C.md) | LDL-C ← evinacumab · indirect response — drug inhibits the production of LDL-C | — | Bihorel S et al., Population Pharmacokinetics and Exposur…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70016](https://doi.org/10.1002/psp4.70016) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Pu_2021_LDL_C](drugs/drug_evinacumab/pd_Pu_2021_LDL_C.md) | low-density lipoprotein cholesterol ← evinacumab · indirect response — drug inhibits the production of low-density lipoprotein cholesterol | — | Pu X et al., Population pharmacokinetics and exposur…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12711](https://doi.org/10.1002/psp4.12711) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

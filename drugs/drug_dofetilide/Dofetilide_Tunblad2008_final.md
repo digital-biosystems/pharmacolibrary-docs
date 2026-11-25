@@ -53,7 +53,7 @@ Tunblad K, Lindbom L, McFadyen L, Jonsson EN, Marshall S, Karlsson MO. The use o
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**Simulated; the covariate scenarios were not simulated (advisory).**
 
 The base model was simulated, not the covariate effects the record defines.
 
@@ -150,7 +150,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.833 (10 of 12 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

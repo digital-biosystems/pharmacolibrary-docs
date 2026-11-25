@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because apparent clearance and bioavailability were simultaneously estimated, violating parameter coherence.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Lammers2017_reference" status="rejected" stale="false" population="healthy adults" measured-compound="omeprazole" parameterization="apparent" topology="3C"></div>
 
@@ -78,13 +78,13 @@ Lammers LA, Achterbergh R, van Schaik RHN, Romijn JA, Mathôt RAA. Effect of Sho
 
 ### Reviewer guidance
 
-**The record was rejected because apparent clearance and bioavailability were simultaneously estimated, violating parameter coherence.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The model specifies apparent parameterization yet includes absolute bioavailability (Fab) for caffeine (0.97), metoprolol (0.45), and omeprazole (0.44), constituting a double correction. This structural inconsistency contradicts the apparent clearance values listed for the same compounds. The second reader disagreed on the dose compound and primary analyte, marking both as unknown in this record. Extracted — caffeine: CL 6.67 L h−1, V1 50.5 L, V1/F 0.91 2.5–97.5%, kabs 6 1/h, Fab 0.97; metoprolol: CL 65.8 L h−1, V1 187 L, kabs 1.19 1/h, Fab 0.45, Q 74.5 L h−1, V2 97.6 L; midazolam: CL 24.1 L h−1, V1 12.5 L, kabs 6 1/h, Fab 0.35, Q 13.3 L h−1, V2 52.1 L, Q2 139 L h−1, V3 30.2 L; omeprazole: CL 14.3 L h−1, V1 9.2 L, Fab 0.44, MTT 1.6 h, Q 5.2 L h−1, V2 3.7 L; warfarin: CL 0.19 L h−1, V1 10.3 L, V1/F 0.79 2.5–97.5%, kabs 6 1/h, Fab 1, Q 1.41 L h−1, V2 6 L, Q2 0.11 L h−1, … (+1).
+A reported unit could not be converted (V1/F and V1/F), so that value has no SI equivalent. Extracted — caffeine: CL 6.67 L h−1, V1 50.5 L, V1/F 0.91 2.5–97.5%, kabs 6 1/h, Fab 0.97; metoprolol: CL 65.8 L h−1, V1 187 L, kabs 1.19 1/h, Fab 0.45, Q 74.5 L h−1, V2 97.6 L; midazolam: CL 24.1 L h−1, V1 12.5 L, kabs 6 1/h, Fab 0.35, Q 13.3 L h−1, V2 52.1 L, Q2 139 L h−1, V3 30.2 L; omeprazole: CL 14.3 L h−1, V1 9.2 L, Fab 0.44, MTT 1.6 h, Q 5.2 L h−1, V2 3.7 L; warfarin: CL 0.19 L h−1, V1 10.3 L, V1/F 0.79 2.5–97.5%, kabs 6 1/h, Fab 1, Q 1.41 L h−1, V2 6 L, Q2 0.11 L h−1, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has omeprazole, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

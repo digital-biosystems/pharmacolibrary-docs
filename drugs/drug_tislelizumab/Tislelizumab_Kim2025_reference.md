@@ -46,7 +46,7 @@ Kim TM. Decoding the EPAR scientific assessment for clinical practice: a tutoria
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Reproduces paper: every check that could be run on this record passed.**
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -116,7 +116,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (6 of 6 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped | 47 | 0.03115 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 71 | 0.03115 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 47 | 0.03115 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
@@ -125,7 +125,7 @@ _All readers agree on the compared fields of this record._
 | T1_cmin_ss | reference | skipped | 71 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 20.2 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 41.3 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | pass | 571.2 | 698 | 1.222 | days→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 571.2 | 698 | 1.222 | reported 23.8 days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the cited paper studies valproic acid pharmacokinetics, using carbamazepine only as a covariate, not as the primary drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_TeixeiradaSilva2022_reference" status="rejected" stale="false" population="" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Teixeira-da-Silva P, Pérez-Blanco JS, Santos-Buelga D, Otero MJ, García MJ. Po
 
 ### Reviewer guidance
 
-**The record was rejected because the cited paper studies valproic acid pharmacokinetics, using carbamazepine only as a covariate, not as the primary drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source text confirms the study models valproic acid, identifying carbamazepine merely as a co-medication affecting clearance. Consequently, the extracted parameters like CL/F and V/F reflect valproic acid kinetics, not carbamazepine. Additionally, the absorption rate constant for carbamazepine is an unrelated estimate within the wrong drug context. Extracted — carbamazepine: CL/F 6 mL/h/kg, V/F 14 L, kabs 2.64 h−1.
+Extracted — carbamazepine: CL/F 6 mL/h/kg, V/F 14 L, kabs 2.64 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 6, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Oxaliplatin clearance of 0.0117 L/h is rejected because the paper studies zolbetuximab, not oxaliplatin.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="oxaliplatin" model-id="Oxaliplatin_Yang2025_reference" status="rejected" stale="false" population="" measured-compound="oxaliplatin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Yang J, Yamada A, Shitara K, Xu RH, Ilson D, Lonardi S et al. Clinical Pharmacol
 
 ### Reviewer guidance
 
-**Oxaliplatin clearance of 0.0117 L/h is rejected because the paper studies zolbetuximab, not oxaliplatin.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source document describes zolbetuximab pharmacokinetics, treating oxaliplatin only as a co-administered chemotherapy agent in a drug-drug interaction context. Consequently, the listed clearance and volume of distribution values do not originate from an oxaliplatin-specific population analysis. A second reader disagreed with the record on several value fields, including those corresponding to population size and total subject count, indicating inconsistent data extraction. Extracted — oxaliplatin: CL 0.0117 L/h, V 5.53 L.
+Extracted — oxaliplatin: CL 0.0117 L/h, V 5.53 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has 30, the second reading 453; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -125,7 +125,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.545, 0 of 1 reader(s) agree | 0.545 | cross-check disputed by a second reader: verdict disputed, agreement 0.545, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.545 | cross-check contradicted by a second reader: verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

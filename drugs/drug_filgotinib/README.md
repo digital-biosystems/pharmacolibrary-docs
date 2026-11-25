@@ -38,7 +38,7 @@ Filgotinib is a JAK inhibitor used to treat rheumatoid arthritis and ulcerative 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Namour_2015_pSTAT1](drugs/drug_filgotinib/pd_Namour_2015_pSTAT1.md) | pSTAT1-positive cells biomarker turnover ← filgotinib and metabolite | — | Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0240-z](https://doi.org/10.1007/s40262-015-0240-z) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Namour_2015_pSTAT1](drugs/drug_filgotinib/pd_Namour_2015_pSTAT1.md) | pSTAT1-positive cells biomarker turnover ← filgotinib and metabolite | — | Namour F et al., Pharmacokinetics and Pharmacokinetic/Ph…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0240-z](https://doi.org/10.1007/s40262-015-0240-z) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

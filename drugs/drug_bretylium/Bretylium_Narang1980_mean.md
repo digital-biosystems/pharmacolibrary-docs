@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for bretylium was rejected due to a dimension mismatch on the blood flow rate parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Bretylium" model-id="Bretylium_Narang1980_mean" status="rejected" stale="false" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 ### Reviewer guidance
 
-**The record for bretylium was rejected due to a dimension mismatch on the blood flow rate parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The parameter representing the rate of blood delivery to tissues has a unit of L/h/kg that conflicts with the expected dimension of 1/[time]. This structural inconsistency prevented the model from passing validation, despite the presence of standard two-compartment kinetic parameters. Extracted — bretylium: λ1 1.81 hr-1, t1/2α 25.2 min, kel 0.09 hr-1, t1/2β 7.8 hr, k12 1.03 hr-1, k21 0.286 hr-1, kabs 0.089 hr-1, V1 1.34 liters/kg, … (+5).
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — bretylium: λ1 1.81 hr-1, t1/2α 25.2 min, kel 0.09 hr-1, t1/2β 7.8 hr, k12 1.03 hr-1, k21 0.286 hr-1, kabs 0.089 hr-1, V1 1.34 liters/kg, … (+5).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bretylium, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
 
-> The terminal elimination rate constant for bleomycin in male hamsters was recorded as 4.6 hr, which is dimensionally invalid.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q418 unit hr ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Giri1986_reference" status="rejected" stale="false" population="male hamsters" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Giri SN. Pharmacokinetics, subcellular distribution, and covalent binding of [3H
 
 ### Reviewer guidance
 
-**The terminal elimination rate constant for bleomycin in male hamsters was recorded as 4.6 hr, which is dimensionally invalid.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q418 unit hr ([time]) vs 1 / [time].**
 
-The record lists a third-phase rate constant with a value of 4.6 and units of hours, whereas a rate constant must be expressed as reciprocal time. This structural parameter failed a dimension check because its unit conflicts with the required 1/time dimension. Additionally, the extraction of the adrenal half-life and spleen parameters was disputed, with the second reader identifying no value for the adrenal parameter. Extracted — bleomycin: t1/2z 2 hr, λ3 4.6 hr, t1/2α 9.9 hr, CL 70 ml/min, V 32.2 L.
+A reported unit could not be converted (λ3), so that value has no SI equivalent. Extracted — bleomycin: t1/2z 2 hr, λ3 4.6 hr, t1/2α 9.9 hr, CL 70 ml/min, V 32.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bleomycin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

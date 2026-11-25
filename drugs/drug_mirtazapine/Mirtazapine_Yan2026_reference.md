@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Mirtazapine was rejected because kabs is reported as 1.2 L/h despite being an absorption rate constant, and the paroxetine-associated CL parameter is −0.269.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="mirtazapine" model-id="Mirtazapine_Yan2026_reference" status="rejected" stale="false" population="Chinese inpatients with depression" measured-compound="mirtazapine" parameterization="apparent" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Yan H, Huang W, Xia H, Luo Y, Li Y, Shang D. Optimizing Mirtazapine Initial Dosi
 
 ### Reviewer guidance
 
-**Mirtazapine was rejected because kabs is reported as 1.2 L/h despite being an absorption rate constant, and the paroxetine-associated CL parameter is −0.269.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The absorption rate constant kabs is given as 1.2 L/h, although its dimension is 1/time; the reported unit could not be converted to SI. The CL parameter, defined as total clearance and associated with paroxetine, has a value of −0.269 and was flagged for negative clearance in a covariate scenario or base. Extracted — mirtazapine: kabs 1.2 L/h, CL/F 28.9 L/h, V/F 310 L, CL -0.269.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — mirtazapine: kabs 1.2 L/h, CL/F 28.9 L/h, V/F 310 L, CL -0.269.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

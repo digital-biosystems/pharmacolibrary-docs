@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the Ding_2022 paper describes a different drug, not rifabutin, and missing bioavailability parameters were left at default values.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="rifabutin" model-id="Rifabutin_Ding2022_reference" status="rejected" stale="false" population="" measured-compound="rifabutin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Ding Q, Huang S, Sun Z, Chen K, Li X, Pei Q. A Review of Population Pharmacokine
 
 ### Reviewer guidance
 
-**The record was rejected because the Ding_2022 paper describes a different drug, not rifabutin, and missing bioavailability parameters were left at default values.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The identity check failed as the paper subject was identified as a different molecule, not rifabutin. The model builder used library placeholders for bioavailability and lag time instead of explicit estimates. A second reader identified discrepancies in specific parameter values, though the primary rejection cause remains the mismatched paper subject. Extracted — rifabutin: CL 14.9 L/h, V 1.1e+03 L, kabs 0.494 h−1.
+Extracted — rifabutin: CL 14.9 L/h, V 1.1e+03 L, kabs 0.494 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q34: this record has none, the second reading 0.7; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.75 (6 of 8 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

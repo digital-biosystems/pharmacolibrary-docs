@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
 
-> Angiotensin II was rejected because its reported total clearance, 0.000412 L/h, has an implausible magnitude consistent with a unit/scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="angiotensin II" model-id="AngiotensinIi_Kurup2024_reference" status="rejected" stale="false" population="" measured-compound="angiotensin_ii" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Kurup S, de Mendizabal NV, Becker S, Bolella E, De Sousa D, Fätkenheuer G et al
 
 ### Reviewer guidance
 
-**Angiotensin II was rejected because its reported total clearance, 0.000412 L/h, has an implausible magnitude consistent with a unit/scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports total clearance of 0.000412 L/h, central and peripheral volumes of 3.08 L and 4.36 L, and intercompartmental clearance of 0.0359 L/h. A second reader supplied no corresponding values for total clearance or intercompartmental clearance, so those reported values are disputed. Extracted — angiotensin ii: CL 0.000412 L/h, V1 3.08 L, V2 4.36 L, Q 0.0359 L/h.
+Extracted — angiotensin ii: CL 0.000412 L/h, V1 3.08 L, V2 4.36 L, Q 0.0359 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.000412, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

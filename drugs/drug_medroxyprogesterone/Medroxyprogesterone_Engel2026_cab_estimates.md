@@ -43,7 +43,7 @@ Engel N, Oliveira D, Sykes C, Schauer AP, King JL, Le T et al. Intravenous and S
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,6 +56,8 @@ Engel N, Oliveira D, Sykes C, Schauer AP, King JL, Le T et al. Intravenous and S
 **C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h−1 (1 / [time]) vs 1 / [time].**
 
 A reported unit could not be converted (equation variable and λ1), so that value has no SI equivalent. Extracted — medroxyprogesterone: λ1 5.4 h−1, kel 11 h−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cabotegravir, medroxyprogesterone acetate, the second reading medroxyprogesterone; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>the checker's own wording — not yet put into words by an LLM</sub>
 
@@ -100,6 +102,32 @@ A reported unit could not be converted (equation variable and λ1), so that valu
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+
+<details><summary>6 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a].parameter_id` | Q900 | Q86 | mismatch |
+| `gpt-oss-120b` | `parameters[a].value` | 29 | 2506 | mismatch |
+| `gpt-oss-120b` | `parameters[α].value` | 5.4 | 10.5 | mismatch |
+| `gpt-oss-120b` | `parameters[β].value` | 11 | 0.65 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | cabotegravir, medroxyprogesterone acetate | medroxyprogesterone | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | medroxyprogesterone acetate, cabotegravir | medroxyprogesterone | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

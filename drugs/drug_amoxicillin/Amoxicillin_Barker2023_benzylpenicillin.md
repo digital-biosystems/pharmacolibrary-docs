@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was quarantined because amoxicillin's bioavailability, clearance, and volume of distribution lacked explicit estimates, forcing the use of generic placeholder values.
+> No value for amoxicillin's bioavailability, clearance and volume of distribution; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Barker2023_benzylpenicillin" status="model_quarantined" stale="false" population="neonates and paediatric patients" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Barker CIS, Kipper K, Lonsdale DO, Wright K, Thompson G, Kim M et al. The Neonat
 
 ### Reviewer guidance
 
-**The model was quarantined because amoxicillin's bioavailability, clearance, and volume of distribution lacked explicit estimates, forcing the use of generic placeholder values.**
+**No value for amoxicillin's bioavailability, clearance and volume of distribution; t6_deviations.**
 
-Although the record lists clearance and volume parameters, no values were extracted for amoxicillin's specific bioavailability, clearance, or volume of distribution, so generic defaults were used instead of fitted estimates. The model was held back to prevent publication with invented numbers. A second reader identified a half-life value of 42.6 that was missing from this record. Extracted — benzylpenicillin: CL 7.17 L/h, V 11.8 L; amoxicillin: kabs 0.17 h−1, tlag 0.125 h.
+The model was built, but amoxicillin's bioavailability, clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — benzylpenicillin: CL 7.17 L/h, V 11.8 L; amoxicillin: kabs 0.17 h−1, tlag 0.125 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of t50: this record has none, the second reading 42.6. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

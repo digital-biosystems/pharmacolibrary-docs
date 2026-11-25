@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record was rejected because the total clearance value of 1.13 L/h is outside the physiological window, suggesting a magnitude error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Cao2023_reference" status="rejected" stale="false" population="" measured-compound="indocyanine_green" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Cao C, Yin H, Yang B, Yue Q, Wu G, Gu M et al. Intra-Operative Definition of Gli
 
 ### Reviewer guidance
 
-**The record was rejected because the total clearance value of 1.13 L/h is outside the physiological window, suggesting a magnitude error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted total clearance for indocyanine green is 1.13 L/h, which fails the physiological plausibility check. While the second reader disagreed on several fields, the specific clearance value was not among the disputed entries. The record remains rejected due to the implausible magnitude of the clearance parameter. Extracted — indocyanine green: CL 1.13 L h−1, V1 0.0515 L, V2 4.39 L, Q 2.26 L h−1.
+Extracted — indocyanine green: CL 1.13 L h−1, V1 0.0515 L, V2 4.39 L, Q 2.26 L h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q38: this record has none, the second reading 34.8; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

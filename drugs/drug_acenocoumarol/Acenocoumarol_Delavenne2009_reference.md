@@ -47,7 +47,7 @@ Delavenne X, Laporte S, Demasles S, Mallouk N, Basset T, Tod M et al. Investigat
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 4.08, the second reading 5.1; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

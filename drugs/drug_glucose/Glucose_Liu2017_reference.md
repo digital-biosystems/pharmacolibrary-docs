@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Glucose’s intercompartmental clearance is disputed: the record lists 9.85 L/h, while the reader comparison reports 0.03 versus 7.79.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="glucose" model-id="Glucose_Liu2017_reference" status="needs_review" stale="false" population="" measured-compound="glucose" parameterization="apparent" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Liu S, Chen P, Zhao Y, Dai G, Sun B, Wang Y et al. Pharmacokinetic and pharmacod
 
 ### Reviewer guidance
 
-**Glucose’s intercompartmental clearance is disputed: the record lists 9.85 L/h, while the reader comparison reports 0.03 versus 7.79.**
+**cross_check_disputed; x1_cross_check.**
 
-The record defines Q as apparent intercompartmental clearance between the central and peripheral compartments, but the disagreement reports 0.03 for this record versus 7.79 from the second reader. The cross-reader verdict is disputed, with agreement 0.95 and 0 of 1 reader agreeing. The model builder used an apparent parameterization with F=1, Fm=1, and no molar correction. Extracted — glucose: CL/F 7.8 L/h, V/F 24 L, V2 105 L, Q 9.85 L/h, tlag 0.09 h, kabs 9.57 /h.
+Extracted — glucose: CL/F 7.8 L/h, V/F 24 L, V2 105 L, Q 9.85 L/h, tlag 0.09 h, kabs 9.57 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 0.03, the second reading 7.79. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.95, 0 of 1 reader(s) agree | 0.95 | cross-check disputed by a second reader: verdict disputed, agreement 0.95, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.95 (19 of 20 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.95 | cross-check contradicted by a second reader: verdict disputed; agreement 0.95 (19 of 20 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

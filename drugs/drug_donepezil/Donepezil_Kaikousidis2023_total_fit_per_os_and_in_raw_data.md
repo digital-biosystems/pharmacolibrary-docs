@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Rejected due to an implausible 562.0 L peripheral volume and an unconvered unit preventing the 0.015 L brain volume from being standardized.
+> C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Kaikousidis2023_total_fit_per_os_and_in_raw_data" status="rejected" stale="false" population="mice (brain and blood PK)" measured-compound="donepezil" parameterization="mechanistic" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Kaikousidis C, Papakyriakopoulou P, Dokoumetzidis A, Valsami G. Donepezil Brain 
 
 ### Reviewer guidance
 
-**Rejected due to an implausible 562.0 L peripheral volume and an unconvered unit preventing the 0.015 L brain volume from being standardized.**
+**C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The 562.0 L peripheral volume is physiologically impossible for the mouse population, indicating a significant magnitude or unit error. One unit for the 0.015 L brain volume could not be converted to standard SI units, leaving the parameter without a valid value. The model also contains a compartment with no dose path, and the second reader disputed the 11.4 min infusion duration and 0.024 L blood volume. Extracted — donepezil: k12 0.065 1/min, ki0 0.039 1/min, kcomp 0.011 1/min, V 0.015 L, tlag 3.59 min, D1 11.4 min, MTT 53.8 min, ktr 0.205 1/min, … (+3).
+A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — donepezil: k12 0.065 1/min, ki0 0.039 1/min, kcomp 0.011 1/min, V 0.015 L, tlag 3.59 min, D1 11.4 min, MTT 53.8 min, ktr 0.205 1/min, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a2: this record has none, the second reading 0.004; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

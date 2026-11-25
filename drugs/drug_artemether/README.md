@@ -41,7 +41,7 @@ Artemether belongs to the artemisinin class and treats malaria. It is given by m
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hassan_1992_in_vitro_inhibition_of_Plasmodium_falciparum_growth](drugs/drug_artemether/pd_Hassan_1992_in_vitro_inhibition_of_Plasmodium_falciparum_gro.md) | in vitro inhibition of Plasmodium falciparum growth ← artemether · direct sigmoid Emax (Hill) effect | — | Hassan Alin M et al., The effect of artemisinine, its derivat…, Transactions of the Royal S… (1992) | [10.1016/0035-9203(92)90220-7](https://doi.org/10.1016/0035-9203(92)90220-7) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hassan_1992_Plasmodium_falciparum_growth](drugs/drug_artemether/pd_Hassan_1992_Plasmodium_falciparum_growth.md) | Plasmodium falciparum growth ← artemether · direct sigmoid Emax (Hill) effect | — | Hassan Alin M et al., The effect of artemisinine, its derivat…, Transactions of the Royal S… (1992) | [10.1016/0035-9203(92)90220-7](https://doi.org/10.1016/0035-9203(92)90220-7) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kay_2013_P](drugs/drug_artemether/pd_Kay_2013_P.md) | parasite number (parasitaemia) killing rate ← artemether / dihydroartemisinin (dominant form) · direct sigmoid Emax (Hill) effect | — | Kay K et al., Improving pharmacokinetic-pharmacodynam…, PLoS computational biology (2013) | [10.1371/journal.pcbi.1003151](https://doi.org/10.1371/journal.pcbi.1003151) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zaloumis_2012_parasite_count_PCT](drugs/drug_artemether/pd_Zaloumis_2012_parasite_count_PCT.md) | Parasite count (within-host P. falciparum parasite-time profile; outputs: proportion clinically cured and parasite clearance time) ← artemether · direct sigmoid Emax (Hill) effect | — | Zaloumis S et al., Assessing the utility of an anti-malari…, Malaria journal (2012) | [10.1186/1475-2875-11-303](https://doi.org/10.1186/1475-2875-11-303) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zhou_2021_residual_infectivity](drugs/drug_artemether/pd_Zhou_2021_residual_infectivity.md) | % residual infectivity (SARS-CoV-2 infection of VeroE6 cells, pretreatment assay) ← artemether · direct sigmoid Emax (Hill) effect | — | Zhou Y et al., In vitro efficacy of artemisinin-based…, Scientific reports (2021) | [10.1038/s41598-021-93361-y](https://doi.org/10.1038/s41598-021-93361-y) |
@@ -62,7 +62,7 @@ Artemether belongs to the artemisinin class and treats malaria. It is given by m
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 05:58 | 7:03 | 2/2/0 | 8/0/0 | 0/0/0 | 390,136/29,015 | ollama / glm-5.3-flash | 11 | 0/11 | 11/0 | 0 |
+| 2026-11-23 18:17 | 0:03 | 2/2/0 | 8/0/0 | 0/0/0 | 4,200/161 | einfracz / qwen3.8-27b | 11 | 0/11 | 11/0 | 0 |
 
 ## Coverage
 
@@ -73,32 +73,38 @@ Artemether belongs to the artemisinin class and treats malaria. It is given by m
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Sugiarto_2022.pdf` | Sugiarto SR et al., The pharmacokinetic properties of artem…, British journal of clinical… (2022) | popPK | 8 | [10.1111/bcp.15001](https://doi.org/10.1111/bcp.15001) | [34296469](https://pubmed.ncbi.nlm.nih.gov/34296469) | Human population-PK study of artemether with quantitative parameters (AUC, clearance increase), but detailed parameter values likely in tables/supplement not fully provided here. |
-| `Sugiarto_2022_2.pdf` | Sugiarto SR et al., Pharmacokinetic properties of the antim…, International journal of an… (2022) | popPK | 8 | [10.1016/j.ijantimicag.2021.106482](https://doi.org/10.1016/j.ijantimicag.2021.106482) | [34818520](https://pubmed.ncbi.nlm.nih.gov/34818520) | Population PK models of artemether were developed in healthy volunteers, but no numeric parameter values appear in the evidence (likely in tables/supplement not provided). |
+| `Sugiarto_2022_2.pdf` | Sugiarto SR et al., Pharmacokinetic properties of the antim…, International journal of an… (2022) | popPK | 9 | [10.1016/j.ijantimicag.2021.106482](https://doi.org/10.1016/j.ijantimicag.2021.106482) | [34818520](https://pubmed.ncbi.nlm.nih.gov/34818520) | The study investigates the population pharmacokinetics of artemether in humans, but the provided evidence (abstract) summarizes trends and conclusions without listing specific quantitative parameter values (e.g., CL, V, ka). |
 
-<sub>queue written 2026-10-07 05:52 UTC</sub>
+<sub>queue written 2026-11-23 18:17 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Akinrinade_2026 | irrelevant | 2 | 1 | This is a population PK study of lumefantrine (artemether's partner drug), not artemether itself, and no numeric PK parameter values appear in the evidence. |
-| popPK | Borrmann_2010 | irrelevant | 2 | 2 | The PK model and reported parameters concern lumefantrine, with artemether only as the co-administered partner drug; no artemether disposition parameters are given. |
-| popPK | Costa_2021 | irrelevant | 0 | 0 | This is a virtual screening/drug discovery study; artemether is only mentioned as a comparator with no PK parameters reported. |
+| popPK | Akinrinade_2026 | irrelevant | 0 | 0 | The study focuses on the population pharmacokinetics of lumefantrine, not artemether, despite artemether being part of the co-administered combination. |
+| PGx | Akinrinade_2026 | not_relevant | 0 | 0 | The paper focuses on lumefantrine pharmacokinetics and reports no significant effect of CYP3A5 genotype, not artemether. |
+| popPK | Borrmann_2010 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of lumefantrine, not artemether, and does not report disposition parameters for the subject drug. |
+| PGx | Borrmann_2010 | not_relevant | 0 | 0 | The paper investigates the effect of food consumption on lumefantrine pharmacokinetics, not the effect of gene variants on artemether. |
+| popPK | Costa_2021 | irrelevant | 0 | 0 | This is an in-vitro virtual screening and molecular docking study identifying a novel compound with activity similar to artemether, not a pharmacokinetic study of artemether. |
+| PGx | Costa_2021 | not_relevant | 0 | 0 | The paper reports the discovery of a new antimalarial compound via virtual screening and in vitro activity, but contains no information regarding pharmacogenomics or genetic variants affecting artemether pharmacokinetics or pharmacodynamics. |
 | popPK | Francis_2020 | irrelevant | 1 | 0 | This is a population-PK meta-analysis of lumefantrine only; artemether is mentioned as the companion drug but no artemether (or DHA) disposition parameters are reported. |
 | popPK | Gendrot_2020 | irrelevant | 0 | 0 | In vitro SARS-CoV-2 study of antimalarials; artemether is only mentioned as a combination partner, with no PK disposition parameters for artemether reported. |
-| popPK | Hassan_1992 | irrelevant | 0 | 0 | In vitro antimalarial efficacy study reporting EC50 values, not pharmacokinetic disposition parameters for artemether. |
-| popPK | Kawuma_2021 | irrelevant | 2 | 0 | The PK model and all numeric parameters are for dolutegravir; artemether is only a co-administered interaction agent with no artemether disposition parameters reported. |
+| popPK | Hassan_1992 | irrelevant | 0 | 0 | This is an in vitro efficacy study measuring anti-malarial activity (EC50), not a pharmacokinetic study. |
+| PGx | Hassan_1992 | not_relevant | 0 | 0 | The paper reports in vitro anti-malarial efficacy against parasite strains, not the effect of a human gene variant on artemether pharmacokinetics or pharmacodynamics. |
+| popPK | Kawuma_2021 | irrelevant | 1 | 0 | The study models the pharmacokinetics of dolutegravir, with artemether acting only as a co-administered antimalarial agent, and no PK parameters for artemether itself are reported. |
+| PGx | Kawuma_2021 | not_relevant | 0 | 0 | The study investigates the effect of artemether/lumefantrine and artesunate/amodiaquine on dolutegravir pharmacokinetics in healthy volunteers, and contains no information on the pharmacokinetics of artemether or any genetic/pharmacogenomic factors. |
 | popPK | Kay_2013 | relevant | 6 | 2 | A compartmental PK/PD model of artemether (parent and DHA metabolite) is described, but the actual numeric parameter values (absorption, conversion, elimination rates, Vd) are in Table S1/Text S1, which are not included in the evidence. |
 | popPK | Kloprogge_2015 | irrelevant | 1 | 0 | This is a population PK study of lumefantrine and its metabolite desbutyl-lumefantrine; artemether is only the co-administered partner drug and no artemether disposition parameters are reported. |
 | popPK | Kloprogge_2018 | irrelevant | 1 | 0 | This is a population-PK study of lumefantrine (and desbutyl-lumefantrine), not artemether; artemether is only the co-administered partner drug and no artemether parameters are reported. |
 | popPK | Simeon_2024 | irrelevant | 2 | 1 | This is a lumefantrine dosing simulation study; artemether is only mentioned as part of the combination, and no numeric artemether PK parameters are present (LF model parameters live in the cited Chotsiri et al paper). |
-| popPK | Sugiarto_2022 | relevant | 8 | 4 | Human population-PK study of artemether with quantitative parameters (AUC, clearance increase), but detailed parameter values likely in tables/supplement not fully provided here. |
-| popPK | Sugiarto_2022_2 | relevant | 8 | 3 | Population PK models of artemether were developed in healthy volunteers, but no numeric parameter values appear in the evidence (likely in tables/supplement not provided). |
+| popPK | Sugiarto_2022 | relevant | 10 | 2 | The paper describes a population PK model for artemether in humans, but the provided evidence only lists AUC and clearance trend percentages, lacking the specific numeric values for CL, V, and ka required for extraction. |
+| PGx | Sugiarto_2022 | not_relevant | 0 | 0 | The study investigates population pharmacokinetics in a specific disease state (P. knowlesi) but does not report any association with genetic variants, genotypes, or pharmacogenomic markers. |
+| popPK | Sugiarto_2022_2 | relevant | 9 | 2 | The study investigates the population pharmacokinetics of artemether in humans, but the provided evidence (abstract) summarizes trends and conclusions without listing specific quantitative parameter values (e.g., CL, V, ka). |
+| PGx | Sugiarto_2022_2 | not_relevant | 0 | 0 | The study investigates the impact of body mass index (BMI) on pharmacokinetics, not genetic variants or pharmacogenomic factors. |
 | popPK | Zhou_2021 | irrelevant | 1 | 1 | In vitro antiviral study; artemether PK values (Cmax) only cited from literature, no disposition parameters measured. |
 
 

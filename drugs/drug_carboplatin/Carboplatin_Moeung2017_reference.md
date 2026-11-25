@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;carboplatin&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/&quot;},{&quot;label&quot;:&quot;Moeung_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_1_14&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_1_14&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_1_14.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_2_15&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_2_15&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_2_15.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_3_16&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_3_16&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_3_16.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Brandon2026_reference&quot;,&quot;label&quot;:&quot;Brandon_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Brandon2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Centanni2024_reference&quot;,&quot;label&quot;:&quot;Centanni_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Centanni2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Schneider2025_reference&quot;,&quot;label&quot;:&quot;Schneider_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Schneider2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_VarelaGonzlezAller2025_reference&quot;,&quot;label&quot;:&quot;Varela-Gonz\u00e1lez-Aller_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_VarelaGonzlezAller2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_B_guin_2024_Thrombocyte_reduction&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024 \u00b7 Thrombocyte reduction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/pd_B_guin_2024_Thrombocyte_reduction.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_B_guin_2024_Thrombocyte_reduction_2&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024 \u00b7 Thrombocyte reduction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/pd_B_guin_2024_Thrombocyte_reduction_2.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carboplatin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_1_14&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_1_14&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_1_14.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_2_15&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_2_15&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_2_15.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_3_16&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_3_16&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_3_16.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Brandon2026_reference&quot;,&quot;label&quot;:&quot;Brandon_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Brandon2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Centanni2024_reference&quot;,&quot;label&quot;:&quot;Centanni_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Centanni2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Schneider2025_reference&quot;,&quot;label&quot;:&quot;Schneider_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Schneider2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_VarelaGonzlezAller2025_reference&quot;,&quot;label&quot;:&quot;Varela-Gonz\u00e1lez-Aller_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_VarelaGonzlezAller2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carboplatin — `Carboplatin_Moeung2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
+> No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="carboplatin" model-id="Carboplatin_Moeung2017_reference" status="needs_review" stale="false" population="patients with advanced germ cell tumors receiving TI-CE high-dose chemotherapy" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="carboplatin" model-id="Carboplatin_Moeung2017_reference" status="rejected" stale="false" population="patients with advanced germ cell tumors" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Moeung S, Chevreau C, Broutin S, Guitton J, Lelièvre B, Ciccolini J et al. Therapeutic Drug Monitoring of Carboplatin in High-Dose Protocol (TI-CE) for Advanced Germ Cell Tumors: Pharmacokinetic Results of a Phase II Multicenter Study. Clinical cancer research : an official journal of the American Association for Cancer Research 23(23):7171–7179 (2017).
@@ -17,29 +17,26 @@ Moeung S, Chevreau C, Broutin S, Guitton J, Lelièvre B, Ciccolini J et al. Ther
 
 ## Population and dosing
 
-**Population:** patients with advanced germ cell tumors receiving TI-CE high-dose chemotherapy · condition advanced germ cell tumors · age group adult · n = 58.
+**Population:** patients with advanced germ cell tumors · condition advanced germ cell tumors · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL | CL | 130.7 | mL/min |
-| Scr/83 | equation variable | -0.826 | μmol/L |
-| volume of distribution | V | 3.93 | L/kg |
-| Ka | kabs | 0.26 | 1/hr |
-| LAGT | tlag | 0.058 | h |
+| target AUC | AUCt | 24 | mg.min/mL |
+| mean actual AUC | AUC | 24.4 | mg.min/mL per cycle |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), qwen3.8-27b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +46,11 @@ Moeung S, Chevreau C, Broutin S, Guitton J, Lelièvre B, Ciccolini J et al. Ther
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete; the clearance plausibility check could not be computed.**
+**No volume or clearance — not a compartmental population PK model.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Béguin_2024, Centanni_2024, Yang_2025) cannot stand in for this paper's evidence. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — carboplatin: CL 131 mL/min, V 3.93 L/kg, kabs 0.26 1/hr, tlag 0.058 h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl].value`: this record has 130.7, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of mean actual auc: this record has 24.4, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,46 +58,46 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 130.7 | mL/min | 2.178e-06 | m3/s | ml/min | exact (1) | Moeung_2017:abstract |
-| Scr/83 | `Q900` · equation variable | -0.826 | μmol/L |  |  | (µM·ol)/l | llm (0.6) | Moeung_2017:abstract |
-| volume of distribution | `Q61` · V | 3.93 | L/kg | 0.2751 | m3 | L | review_gapfill (0.7) | Béguin_2024:review |
-| Ka | `Q49` · kabs | 0.26 | 1/hr | 7.222e-05 | 1/s | 1/h | review_gapfill (0.7) | Yang_2025:review |
-| LAGT | `Q83` · tlag | 0.058 | h | 208.8 | s | h | review_gapfill (0.7) | Centanni_2024:review |
+| target AUC | `Q19` · AUCt | 24 | mg.min/mL | 1440 | kg*s/m3 | (min·mg)/ml | llm_corrected (0.6) | Moeung_2017:abstract |
+| mean actual AUC | `Q88` · AUC | 24.4 | mg.min/mL per cycle | 233 | kg*s/m3 | (min·mg)/(ml·cycle) | llm_confirmed (0.6) | Moeung_2017:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| CL | Q22 | exact |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q900 ('BW/76', value '+0.907') — already have one for this compound
-- dropped duplicate Q900 ('Age/36', value '-0.223') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=carboplatin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Béguin_2024's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Yang_2025's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Centanni_2024's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Moeung_2017_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Moeung_2017_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (6/9 fields) | 3 |
 | `qwen3.8-27b` | not confirmed | 0.364 (4/11 fields) | 7 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[mean actual auc]` | 24.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[target auc duration]` |  | 3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[target auc].parameter_id` | Q19 | Q88 | mismatch |
 | `qwen3.8-27b` | `parameters[cl].value` | 130.7 |  | mismatch |
 | `qwen3.8-27b` | `parameters[ka]` | 0.26 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[lagt]` | 0.058 |  | only_one_extracted |
@@ -121,17 +118,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | fail |  |  |  |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Moeung_2017:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Moeung_2017:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Yang_2025:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Béguin_2024:review'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Centanni_2024:review'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 130.7 | ['Moeung_2017:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Moeung_2017:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 7.84 L/h | ['Moeung_2017:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 275 L | ['Béguin_2024:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -143,19 +135,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -165,4 +147,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarboplatin%5D%20Carboplatin_Moeung2017_reference&body=Drug%3A%20carboplatin%0ARecord%3A%20Carboplatin_Moeung2017_reference%0APaper%3A%20Moeung_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carboplatin/Carboplatin_Moeung2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 21:40 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 20:07 UTC</sub>

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;mitomycin&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/&quot;},{&quot;label&quot;:&quot;Barbhaiya_1984 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mitomycin_den1983_reference&quot;,&quot;label&quot;:&quot;den_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/Mitomycin_den1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -8,7 +9,7 @@
 
 > The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Barbhaiya1984_reference" status="needs_review" stale="false" population="beagle dogs" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Barbhaiya1984_reference" status="needs_review" stale="false" population="beagle dogs" measured-compound="mitomycin C" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Barbhaiya RH, Papp EA, Van Harken DR, Smyth RD. Pharmacokinetics of mitomycin C in dogs: application of a high-performance liquid chromatographic assay. Journal of pharmaceutical sciences 73(9):1220–1223 (1984).
@@ -16,15 +17,15 @@ Barbhaiya RH, Papp EA, Van Harken DR, Smyth RD. Pharmacokinetics of mitomycin C 
 
 ## Population and dosing
 
-**Population:** beagle dogs.
+**Population:** beagle dogs · condition healthy · age group adult.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,14 +33,16 @@ Barbhaiya RH, Papp EA, Van Harken DR, Smyth RD. Pharmacokinetics of mitomycin C 
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| average volume of distribution | V | 1.90 | L |
+| volume of distribution ... central compartment | V1 | 1.9 | L |
+| volume of distribution ... terminal elimination phase | V | 7.7 | L |
 | volumes of distribution at steady state | Vss | 6.5 | L |
 | Total body clearance | CL | 112 | mL/min |
-| mean terminal plasma half-life | t1/2z | 53 | min |
+| terminal plasma half-life | t1/2z | 53 | min |
+| 0-24-h urinary excretion of intact mitomycin C | fe | 19 | % of the dose |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.462), qwen3.8-27b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +54,9 @@ Barbhaiya RH, Papp EA, Van Harken DR, Smyth RD. Pharmacokinetics of mitomycin C 
 
 **The clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — mitomycin: V 1.9 L, Vss 6.5 L, CL 112 mL/min, t1/2z 53 min.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — mitomycin: V1 1.9 L, V 7.7 L, Vss 6.5 L, CL 112 mL/min, t1/2z 53 min, fe 19 % of the dose.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of 0-24-h urinary excretion of intact mitomycin c: this record has none, the second reading 19; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average volume of distribution: this record has none, the second reading 1.90; it also differs on 6 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,10 +64,12 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| average volume of distribution | `Q61` · V | 1.90 | L | 0.0019 | m3 | l | llm_confirmed (0.6) | Barbhaiya_1984:abstract, Barbhaiya_1984:abstract, Barbhaiya_1984:abstract, Barbhaiya_1984:abstract |
-| volumes of distribution at steady state | `Q65` · Vss | 6.5 | L | 0.0065 | m3 | l | llm (0.6) | Barbhaiya_1984:abstract, Barbhaiya_1984:abstract |
+| volume of distribution ... central compartment | `Q63` · V1 | 1.9 | L | 0.0019 | m3 | l | boundary_compartment (0.9) | Barbhaiya_1984:abstract |
+| volume of distribution ... terminal elimination phase | `Q61` · V | 7.7 | L | 0.0077 | m3 | l | llm_confirmed (0.6) | Barbhaiya_1984:abstract |
+| volumes of distribution at steady state | `Q65` · Vss | 6.5 | L | 0.0065 | m3 | l | llm (0.6) | Barbhaiya_1984:abstract |
 | Total body clearance | `Q22` · CL | 112 | mL/min | 1.867e-06 | m3/s | ml/min | llm_confirmed (0.6) | Barbhaiya_1984:abstract |
-| mean terminal plasma half-life | `Q57` · t1/2z | 53 | min | 3180 | s | min | llm (0.6) | Barbhaiya_1984:abstract |
+| terminal plasma half-life | `Q57` · t1/2z | 53 | min | 3180 | s | min | half_life_rule (0.95) | Barbhaiya_1984:abstract |
+| 0-24-h urinary excretion of intact mitomycin C | `Q44` · fe | 19 | % of the dose | 0.19 |  | %·dose·of·the | llm_confirmed (0.6) | Barbhaiya_1984:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -74,28 +79,37 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Interpretation flags:**
+- unit_dimension_unknown: '% of the dose' (fe)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mitomycin C
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 2C vs LLM 1C — review compartment count
+- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Barbhaiya_1984_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Barbhaiya_1984_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.462 (6/13 fields) | 7 |
 | `qwen3.8-27b` | partly confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[average volume of distribution]` |  | 1.90 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean terminal plasma half-life]` |  | 53 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal plasma half-life]` | 53 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution ... central compartment]` | 1.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution ... terminal elimination phase]` | 7.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` |  | 6.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volumes of distribution at steady state]` | 6.5 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[0-24-h urinary excretion of intact mitomycin c]` |  | 19 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[average volume of distribution]` | 1.90 |  | only_one_extracted |
 
@@ -111,18 +125,20 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Barbhaiya_1984:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Barbhaiya_1984:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Barbhaiya_1984:abstract', 'Barbhaiya_1984:abstract', 'Barbhaiya_1984:abstract', 'Barbhaiya_1984:abstract'] |
-| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Barbhaiya_1984:abstract', 'Barbhaiya_1984:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Barbhaiya_1984:abstract'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Barbhaiya_1984:abstract'] |
+| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Barbhaiya_1984:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 112 | ['Barbhaiya_1984:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 6.72 L/h | ['Barbhaiya_1984:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.9 L | ['Barbhaiya_1984:abstract', 'Barbhaiya_1984:abstract', 'Barbhaiya_1984:abstract', 'Barbhaiya_1984:abstract'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 6.5 L | ['Barbhaiya_1984:abstract', 'Barbhaiya_1984:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 7.7 L | ['Barbhaiya_1984:abstract'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.9 L | ['Barbhaiya_1984:abstract'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 6.5 L | ['Barbhaiya_1984:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -156,4 +172,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitomycin%5D%20Mitomycin_Barbhaiya1984_reference&body=Drug%3A%20mitomycin%0ARecord%3A%20Mitomycin_Barbhaiya1984_reference%0APaper%3A%20Barbhaiya_1984%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitomycin/Mitomycin_Barbhaiya1984_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:57 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:36 UTC</sub>

@@ -8,7 +8,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="fusidic acid" model-id="FusidicAcid_Munkholm1994_reference" status="needs_review" stale="false" population="healthy female volunteers" measured-compound="fusidic acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fusidic acid" model-id="FusidicAcid_Munkholm1994_reference" status="needs_review" stale="false" population="healthy adult female volunteers" measured-compound="fusidic acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Munkholm P, Hey H, Rasmussen SN, Johansen PB. Antibiotic activity in serum following single and repeated oral administration of sodium fusidate in volunteers. European journal of drug metabolism and pharmacokinetics 19(4):337–341 (1994).
@@ -16,7 +16,7 @@ Munkholm P, Hey H, Rasmussen SN, Johansen PB. Antibiotic activity in serum follo
 
 ## Population and dosing
 
-**Population:** healthy female volunteers · condition healthy · age group adult · n = 10.
+**Population:** healthy adult female volunteers · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed sodium fusidate, measured fusidic acid.
 
@@ -32,13 +32,13 @@ Munkholm P, Hey H, Rasmussen SN, Johansen PB. Antibiotic activity in serum follo
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| peak concentrations (after a single dose) | Cmax | 30 | micrograms/ml |
-| trough concentration at steady state | Ctrough | 8.4 | micrograms/ml |
-| total clearances of antibiotic activity (after a single dose) | CL | 2.0 | l/h |
+| peak concentrations | Cmax | 30 | micrograms/ml |
+| trough concentration at steady state | Css | 8.4 | micrograms/ml |
+| total clearances of antibiotic activity | CL | 2.0 | l/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Munkholm P, Hey H, Rasmussen SN, Johansen PB. Antibiotic activity in serum follo
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fusidic acid: Cmax 30 micrograms/ml, Ctrough 8.4 micrograms/ml, CL 2 l/h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fusidic acid: Cmax 30 micrograms/ml, Css 8.4 micrograms/ml, CL 2 l/h.
 
-Independently confirmed by `qwen3.8-27b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium fusidate, the second reading fusidic acid; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,9 +60,9 @@ Independently confirmed by `qwen3.8-27b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| peak concentrations (after a single dose) | `Q32` · Cmax | 30 | micrograms/ml |  |  | µg/ml | llm_confirmed (0.6) | Munkholm_1994:abstract |
-| trough concentration at steady state | `Q37` · Ctrough | 8.4 | micrograms/ml |  |  | µg/ml | llm_confirmed (0.6) | Munkholm_1994:abstract |
-| total clearances of antibiotic activity (after a single dose) | `Q22` · CL | 2.0 | l/h | 5.556e-07 | m3/s | l/h | llm (0.6) | Munkholm_1994:abstract |
+| peak concentrations | `Q32` · Cmax | 30 | micrograms/ml | 0.03 | kg/m3 | µg/ml | llm_confirmed (0.6) | Munkholm_1994:abstract, Munkholm_1994:abstract |
+| trough concentration at steady state | `Q34` · Css | 8.4 | micrograms/ml | 0.0084 | kg/m3 | µg/ml | llm_corrected (0.6) | Munkholm_1994:abstract |
+| total clearances of antibiotic activity | `Q22` · CL | 2.0 | l/h | 5.556e-07 | m3/s | l/h | llm (0.6) | Munkholm_1994:abstract, Munkholm_1994:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,26 +72,32 @@ Independently confirmed by `qwen3.8-27b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q32 ('peak concentrations (after repeated dosing)', value '27') — already have one for this compound
-- dropped duplicate Q22 ('total clearances of antibiotic activity (after repeated doses)', value '1.6') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fusidic acid
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Munkholm_1994_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 | `qwen3.8-27b` | confirmed | 1.0 (7/7 fields) | none |
 
-_All readers agree on the compared fields of this record._
+<details><summary>4 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[total clearance of antibiotic activity after a single dose]` |  | 2.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total clearances of antibiotic activity]` | 2.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[trough concentration at steady state].parameter_id` | Q34 | Q37 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | sodium fusidate | fusidic acid | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -106,12 +112,12 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Munkholm_1994:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Munkholm_1994:abstract'] |
-| C5_dimension_Q37 | pass | [mass] / [length] ** 3 |  | ['Munkholm_1994:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2 | ['Munkholm_1994:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Munkholm_1994:abstract', 'Munkholm_1994:abstract'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Munkholm_1994:abstract', 'Munkholm_1994:abstract'] |
+| C5_dimension_Q34 | pass | [mass] / [length] ** 3 |  | ['Munkholm_1994:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2 | ['Munkholm_1994:abstract', 'Munkholm_1994:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2 L/h | ['Munkholm_1994:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2 L/h | ['Munkholm_1994:abstract', 'Munkholm_1994:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -145,4 +151,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfusidic_acid%5D%20FusidicAcid_Munkholm1994_reference&body=Drug%3A%20fusidic_acid%0ARecord%3A%20FusidicAcid_Munkholm1994_reference%0APaper%3A%20Munkholm_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fusidic_acid/FusidicAcid_Munkholm1994_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 22:05 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:14 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-<div class="pk-model-meta" hidden drug="pirarubicin" model-id="Pirarubicin_Robert1988_reference" status="simulated" stale="false" population="patients with advanced cancer" measured-compound="pirarubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pirarubicin" model-id="Pirarubicin_Robert1988_reference" status="simulated" stale="false" population="advanced cancer patients" measured-compound="pirarubicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Robert J, David M, Huet S, Chauvergne J. Pharmacokinetics and metabolism of pirarubicin in advanced cancer patients. European journal of cancer & clinical oncology 24(8):1289–1294 (1988).
@@ -44,7 +44,7 @@ Robert J, David M, Huet S, Chauvergne J. Pharmacokinetics and metabolism of pira
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
@@ -118,7 +118,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (6 of 6 compared fields agree); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -196,4 +196,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpirarubicin%5D%20Pirarubicin_Robert1988_reference&body=Drug%3A%20pirarubicin%0ARecord%3A%20Pirarubicin_Robert1988_reference%0APaper%3A%20Robert_1988%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pirarubicin/Pirarubicin_Robert1988_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:43 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:40 UTC</sub>

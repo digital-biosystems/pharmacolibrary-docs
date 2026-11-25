@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ciprofloxacin bioavailability was not estimated in this paper, so a generic library placeholder would be used instead of a specific value.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Abdulla2020_reference" status="needs_review" stale="false" population="critically ill patients" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Abdulla A, Rogouti O, Hunfeld NGM, Endeman H, Dijkstra A, van Gelder T et al. Po
 
 ### Reviewer guidance
 
-**Ciprofloxacin bioavailability was not estimated in this paper, so a generic library placeholder would be used instead of a specific value.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The bioavailability (F) parameter is missing from the record, indicating no value was extracted. The model builder substituted a library default rather than an explicit estimate. Consequently, the simulated profile relies on a value not supported by the data in Abdulla_2020. Extracted — ciprofloxacin: CL 25.4 L/h, V1 91.1 L, V2 164 L, Q 91.9 L/h, kabs 1 h−1, tlag 0.33 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ciprofloxacin: CL 25.4 L/h, V1 91.1 L, V2 164 L, Q 91.9 L/h, kabs 1 h−1, tlag 0.33 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -143,8 +143,8 @@ _All readers agree on the compared fields of this record._
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_cmax | reference | skipped |  | 0.001302 |  | non-numeric value |
-| T1_t_half_beta | reference | pass | 6.96 | 5.625 | 0.8081 | h→SI vs simulated h |
+| T1_cmax | reference | skipped |  | 0.001302 |  | the transcribed record carries no number for this value |
+| T1_t_half_beta | reference | pass | 6.96 | 5.625 | 0.8081 | reported 6.96 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant was assigned unit hours, which dimensionally conflicts with its expected inverse time, and no intravenous parameter was extracted.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Standing2011_reference" status="rejected" stale="false" population="children aged 1-14 years" measured-compound="diclofenac" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Standing JF, Tibboel D, Korpela R, Olkkola KT. Diclofenac pharmacokinetic meta-a
 
 ### Reviewer guidance
 
-**The absorption rate constant was assigned unit hours, which dimensionally conflicts with its expected inverse time, and no intravenous parameter was extracted.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].**
 
-The record lists the absorption rate constant with a value of 1.65 and unit h, causing a dimension mismatch against the expected rate dimension. Additionally, the second reader identified an intravenous value of 8.66 that is absent from this record. The model was rejected due to this unit conflict and the missing parameter. Extracted — diclofenac: CL 16.5 L/h/70kg, V1 3.68 L/70kg, Q2 1.75 L/h/70kg, V2 7.48 L/70kg, Q3 7.21 L/h/70kg, V3 3.79 L/70kg, tlag 0.12 h, kabs 1.65 h, … (+2).
+A reported unit could not be converted (kabs, FR and Fab), so that value has no SI equivalent. Extracted — diclofenac: CL 16.5 L/h/70kg, V1 3.68 L/70kg, Q2 1.75 L/h/70kg, V2 7.48 L/70kg, Q3 7.21 L/h/70kg, V3 3.79 L/70kg, tlag 0.12 h, kabs 1.65 h, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of intravenous: this record has none, the second reading 8.66. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

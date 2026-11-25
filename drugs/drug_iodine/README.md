@@ -26,8 +26,8 @@ Iodine is an antiseptic and disinfectant used to treat skin conditions. It is ad
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fusella_2026_Tg](drugs/drug_iodine/pd_Fusella_2026_Tg.md) | serum thyroglobulin ← radioactive iodine · inhibition effect | — | Fusella Giuntini M et al., A computational framework for optimizin…, Scientific reports (2026) | [10.1038/s41598-026-56267-1](https://doi.org/10.1038/s41598-026-56267-1) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zhuang_1995_forskolin_stimulated_adenylyl_cyclase_activity](drugs/drug_iodine/pd_Zhuang_1995_forskolin_stimulated_adenylyl_cyclase_activity.md) | forskolin-stimulated adenylyl cyclase activity ← (+)-(R)-trans-8-hydroxy-2-[N-n-propyl-N-(3'-iodo-2'-propenyl)] aminotetralin · inhibition effect | — | Zhuang ZP et al., Synthesis of (+)-(R)- and (-)-(S)-trans…, Chirality (1995) | [10.1002/chir.530070611](https://doi.org/10.1002/chir.530070611) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fusella_2026_Tg](drugs/drug_iodine/pd_Fusella_2026_Tg.md) | serum thyroglobulin ← radioactive iodine · inhibition effect | — | Fusella Giuntini M et al., A computational framework for optimizin…, Scientific reports (2026) | [10.1038/s41598-026-56267-1](https://doi.org/10.1038/s41598-026-56267-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

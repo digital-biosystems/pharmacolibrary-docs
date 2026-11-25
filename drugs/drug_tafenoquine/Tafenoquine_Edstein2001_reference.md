@@ -5,11 +5,11 @@
 
 # tafenoquine — `Tafenoquine_Edstein2001_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Only clearance was extracted — no volume.
+> No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Edstein2001_reference" status="needs_review" stale="false" population="healthy male Thai soldiers" measured-compound="tafenoquine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Edstein2001_reference" status="rejected" stale="false" population="healthy adults" measured-compound="tafenoquine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Edstein MD, Kocisko DA, Brewer TG, Walsh DS, Eamsila C, Charles BG. Population pharmacokinetics of the new antimalarial agent tafenoquine in Thai soldiers. British journal of clinical pharmacology 52(6):663–670 (2001).
@@ -17,28 +17,25 @@ Edstein MD, Kocisko DA, Brewer TG, Walsh DS, Eamsila C, Charles BG. Population p
 
 ## Population and dosing
 
-**Population:** healthy male Thai soldiers · condition healthy (malaria prophylaxis) · age group adult · n = 135.
+**Population:** healthy adults · condition healthy · age group adult.
 
-**Dosing:** 400 mg, oral, multiple, every 168 h.
+**Dosing:** 400 mg, oral, multiple, every 24 h.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 2 extracted.  
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| typical population CL/F (nonaffected subjects) | CL/F | 3.1 | L/h |
-| Tlag,1 | tlag | 0.147 | h |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,70 +45,57 @@ Edstein MD, Kocisko DA, Brewer TG, Walsh DS, Eamsila C, Charles BG. Population p
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**No volume or clearance — not a compartmental population PK model.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — tafenoquine: CL/F 3.1 L/h, tlag 0.147 h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 4; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 4, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-### All parameter columns
+### Unresolved rows _(no Q-code or no value — not parameters)_
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| typical population CL/F (nonaffected subjects) | `Q27` · CL/F | 3.1 | L/h | 8.611e-07 | m3/s | L/h | boundary (0.8) | Edstein_2001:results_prose |
-| Tlag,1 | `Q83` · tlag | 0.147 | h | 529.2 | s | h | review_gapfill (0.7) | Cherkaoui-Rbati_2023:review |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+| label (paper) | Q-code | link |
+|---|---|---|
+| F | Q40 | exact |
+| CL/F | Q27 | exact |
+| V/F | Q76 | exact |
+| K a | Q49 | space_fold |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- NIL: refused to back-fill base 'Fab' from footnote/prose loose number None (source ['fig_1:caption']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number None (source ['fig_1:caption']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'equation variable' from footnote/prose loose number None (source ['fig_1:caption']); the table cell was unparseable — needs review
-- dropped value-less row: 'a Objective function value'
-- dropped value-less row: 'b Change in OFV from model no. 1 (OFV=x4556)' (captured trailing unit 'OFV=x4556' for child rows)
-- dropped value-less row: 'c Change in OFV from model no. 8 (OFV=x4627)' (captured trailing unit 'OFV=x4627' for child rows)
-- dropped value-less row: 'CL/F: clearance'
-- dropped value-less row: 'V/F: volume of distribution'
-- dropped value-less row: 'K a : absorption rate constant'
-- dropped value-less row: '(WT-60.3): centred body weight'
-- dropped value-less row: '(AGE-28.9): centred age'
-- dropped value-less row: 'MAL: presence (1) absence (0) of malaria'
-- dropped value-less row: '*P&lt;0.01 (full model vs reduced model)'
-- salvaged Q27 ('typical population CL/F (nonaffected subjects)'=3.1) from results prose — parameter table was unreadable
-- implicit units: 'typical population CL/F (nonaffected subjects)' → L/h (from the paper text: "Table 2 footnote states 'CL/F: clearance (1 h-1)'.")
+- unit_dimension_unknown: 'l h x1' (CL/F)
+- unit_dimension_unknown: 'h x1' (kabs)
+- dropped value-less row: '(WT-60.3)' (captured trailing unit 'WT-60.3' for child rows)
+- dropped value-less row: '(AGE-28.9)' (captured trailing unit 'AGE-28.9' for child rows)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tafenoquine
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q83 (tlag) from Cherkaoui-Rbati_2023's review values (primary lacked it)
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
 
 **Extraction notes:**
-- final table tab_1: grid unusable → re-running vision table extraction for Edstein_2001
-- final table tab_1: no readable grid (GROBID mangled)
+- table tab_1: no_numeric_grid
+- final table tab_1: no supported point estimates; targeted recovery unresolved
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
+| `gpt-oss-120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.bioavailability.theta` |  | 4 | only_one_extracted |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k a]` |  | 0.694 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag,1]` | 0.147 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical population cl/f values for nonaffected]` |  | 3.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` |  |  | only_one_extracted |
 
 </details>
 
@@ -123,17 +107,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |  |  |
-| C0b_disposition_core | pass |  |  |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |  |  |
-| C2_base_Q27 | pass | 3.1 | 3.1 | 1 | 0.05 | footnote reference category |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  |  |  | ['Edstein_2001:results_prose'] |
-| C5_dimension_Q83 | pass | [time] |  |  |  | ['Cherkaoui-Rbati_2023:review'] |
-| C7_apparent_coherence | pass |  |  |  |  |  |
-| C8_topology | pass |  |  |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 3.1 L/h |  |  | ['Edstein_2001:results_prose'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | fail |  |  |  |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['fig_1:caption', 'fig_1:caption', 'fig_1:caption', 'fig_1:caption'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -145,19 +125,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -167,4 +137,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btafenoquine%5D%20Tafenoquine_Edstein2001_reference&body=Drug%3A%20tafenoquine%0ARecord%3A%20Tafenoquine_Edstein2001_reference%0APaper%3A%20Edstein_2001%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tafenoquine/Tafenoquine_Edstein2001_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 08:52 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 15:58 UTC</sub>

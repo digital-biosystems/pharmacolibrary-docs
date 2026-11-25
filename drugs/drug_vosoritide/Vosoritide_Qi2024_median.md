@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Vosoritide’s absorption rate constant kabs (2.3) has a dimensionally incompatible, unconvertible unit, contributing to the record’s rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit units ([luminosity] / [length] ** 2) vs 1 / [time]; Q68 unit units ([luminosity] / [length] ** 2) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="vosoritide" model-id="Vosoritide_Qi2024_median" status="rejected" stale="false" population="children with achondroplasia" measured-compound="vosoritide" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Qi Y, Chan ML, Mould DR, Larimore K, Fisheleva E, Cherukuri A et al. Development
 
 ### Reviewer guidance
 
-**Vosoritide’s absorption rate constant kabs (2.3) has a dimensionally incompatible, unconvertible unit, contributing to the record’s rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit units ([luminosity] / [length] ** 2) vs 1 / [time]; Q68 unit units ([luminosity] / [length] ** 2) vs 1 / [time].**
 
-The record reports kabs as 2.3 and λ2 as 0.06, both with the unit “units”; for both, that unit has dimensions of luminosity per length squared rather than inverse time, and could not be converted to SI. A second reader disputed λ2=0.06, reporting no value, and identified a change point of 0.3 and a time effect on bioavailability of 0.21, neither of which appears in this record. Extracted — vosoritide: CL/F 47.7 L/h, V/F 18.4 L, kabs 2.3 units, λ2 0.06 units.
+A reported unit could not be converted (kabs and λ2), so that value has no SI equivalent. Extracted — vosoritide: CL/F 47.7 L/h, V/F 18.4 L, kabs 2.3 units, λ2 0.06 units.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of change-point: this record has none, the second reading 0.3; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

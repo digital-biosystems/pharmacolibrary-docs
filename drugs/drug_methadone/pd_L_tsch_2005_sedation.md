@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;methadone&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/&quot;},{&quot;label&quot;:&quot;L\u00f6tsch_2005 \u00b7 PD Sedation (cancer pain patients, methadone infusion)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methadone_Gittel2021_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Gittel2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Shin2024_reference&quot;,&quot;label&quot;:&quot;Shin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Shin2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;methadone&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/&quot;},{&quot;label&quot;:&quot;L\u00f6tsch_2005 \u00b7 PD Sedation&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methadone_Gittel2021_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Gittel2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Shin2024_reference&quot;,&quot;label&quot;:&quot;Shin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Shin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Sedation (cancer pain patients, methadone infusion) — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="qwen3.8-27b, gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
+# Sedation — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Methadone (concentrations from the PK model of Shin_2024) drives Sedation (cancer pain patients, methadone infusion): direct sigmoid Emax (Hill) effect.
+**As extracted:** Methadone (concentrations from the PK model of Shin_2024) drives Sedation: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -26,7 +26,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** stimulation/proportional
 
 ## Citation
 Lötsch J, Pharmacokinetic-pharmacodynamic modelin…, Journal of pain and symptom… (2005)
@@ -35,9 +35,9 @@ Lötsch J, Pharmacokinetic-pharmacodynamic modelin…, Journal of pain and sympt
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | t½,ke0 | `Q326` ·  | 18.6 ± 31.6 | min | llm | Lötsch_2005:pdv3 |
-| PD (effect) | EC50 | `Q321` ·  | 1178 ± 718 | nmol/l | llm | Lötsch_2005:pdv3 |
-| PD (effect) | γ | `Q325` ·  | 5.8 ± 5.4 |  | llm | Lötsch_2005:pdv3 |
+| PD (effect) | t ½ ,ke0 | `Q326` ·  | 18.6 Ϯ 31.6 min | min | llm | Lötsch_2005:pdv3 |
+| PD (effect) | EC 50 | `Q321` ·  | 1178 Ϯ 718 | nmol/l | llm | Lötsch_2005:pdv3 |
+| PD (effect) | γ | `Q325` ·  | 5.8 Ϯ 5.4 |  | llm | Lötsch_2005:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -46,11 +46,10 @@ Lötsch J, Pharmacokinetic-pharmacodynamic modelin…, Journal of pain and sympt
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | no answer | – | – (extracted nothing for this PD record) |
 | `gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
 
 _No second reader extracted anything for this PD record; it is not cross-checked._

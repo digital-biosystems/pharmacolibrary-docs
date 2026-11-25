@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Lecanemab clearance was recorded as 0.0181 L/h instead of the verified 2.55 L/h, causing major parameter value errors.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q31 unit ratio (dimensionless) vs None.
 
 <div class="pk-model-meta" hidden drug="lecanemab" model-id="Lecanemab_Hayato2022_reference" status="rejected" stale="false" population="adults with early Alzheimer&#39;s disease" measured-compound="lecanemab" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Hayato S, Takenaka O, Sreerama Reddy SH, Landry I, Reyderman L, Koyama A et al. 
 
 ### Reviewer guidance
 
-**Lecanemab clearance was recorded as 0.0181 L/h instead of the verified 2.55 L/h, causing major parameter value errors.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q31 unit ratio (dimensionless) vs None.**
 
-The second reader identifies the total clearance value in this record (0.0181 L/h) as incorrect compared to the true value of 2.55 L/h. The intercompartmental clearance is similarly mismatched, appearing here as 0.0349 L/h but 8.02 L/h in the correct record. The female clearance ratio is also wrong at 0.792 rather than the expected 3.43, and several covariate effects on clearance and distribution are either missing or have incorrect values. Extracted — lecanemab: CL 0.0181 L/h, V1 3.22 L, Q 0.0349 L/h, V2 2.19 L, CL_ratio 0.792 ratio.
+A reported unit could not be converted (CL_ratio), so that value has no SI equivalent. Extracted — lecanemab: CL 0.0181 L/h, V1 3.22 L, Q 0.0349 L/h, V2 2.19 L, CL_ratio 0.792 ratio.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 0.0181, the second reading 2.55; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

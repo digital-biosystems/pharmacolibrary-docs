@@ -23,7 +23,7 @@ Rozanolixizumab is a monoclonal antibody used to treat myasthenia gravis. It is 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.30).">human + animal</span> | [Lledo-Garcia_2022_IgG](drugs/drug_rozanolixizumab/pd_Lledo_Garcia_2022_IgG.md) | IgG ← rozanolixizumab · indirect response — drug stimulates the loss of IgG | — | Lledo-Garcia R et al., Pharmacokinetic-pharmacodynamic modelli…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12739](https://doi.org/10.1002/psp4.12739) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.30).">human + animal</span> | [Lledo-Garcia_2022_IgG](drugs/drug_rozanolixizumab/pd_Lledo_Garcia_2022_IgG.md) | IgG ← rozanolixizumab · indirect response — drug stimulates the loss of IgG | — | Lledo-Garcia R et al., Pharmacokinetic-pharmacodynamic modelli…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12739](https://doi.org/10.1002/psp4.12739) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

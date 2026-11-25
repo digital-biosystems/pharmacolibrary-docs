@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Absorption rate constant is reported in L/h instead of 1/h, conflicting with its dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="revefenacin" model-id="Revefenacin_Lo2021_reference" status="rejected" stale="false" population="patients with chronic obstructive pulmonary disease" measured-compound="revefenacin" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -57,13 +57,13 @@ Lo A, Borin MT, Bourdet DL. Population Pharmacokinetics of Revefenacin in Patien
 
 ### Reviewer guidance
 
-**Absorption rate constant is reported in L/h instead of 1/h, conflicting with its dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time].**
 
-The absorption rate constant has a value of 200 with the unit L/h, but its meaning identifies it as a rate constant requiring 1/time. This mismatch causes a dimension conflict because L/h is a volume flow rate, not a rate constant. Consequently, the record was rejected for a dimensional error on a structural parameter. Extracted — revefenacin: CL 668 L/h, V1/F 867 L, Q/F 2.61e+03 L/h, V2/F 1.55e+04 L, kabs 200 L/h, Fab 0.553; THRX-195518: CL 53.2 L/h, V1/F 20.4 L, Q/F 36.3 L/h, V2/F 35.8 L, fm 0.21.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — revefenacin: CL 668 L/h, V1/F 867 L, Q/F 2.61e+03 L/h, V2/F 1.55e+04 L, kabs 200 L/h, Fab 0.553; THRX-195518: CL 53.2 L/h, V1/F 20.4 L, Q/F 36.3 L/h, V2/F 35.8 L, fm 0.21.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has revefenacin, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

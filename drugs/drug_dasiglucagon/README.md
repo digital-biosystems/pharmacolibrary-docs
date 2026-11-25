@@ -23,8 +23,8 @@ Dasiglucagon is a peptide hormone that treats severe hypoglycemia in people with
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Tehranchi_2022_QTcF](drugs/drug_dasiglucagon/pd_Tehranchi_2022_QTcF.md) | QTcF (QT interval corrected by Fridericia's formula) ← dasiglucagon · direct linear effect | — | Tehranchi R et al., Dasiglucagon Effects on QTc in Healthy…, Current therapeutic researc… (2022) | [10.1016/j.curtheres.2022.100668](https://doi.org/10.1016/j.curtheres.2022.100668) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Tehranchi_2022_QTcF_2](drugs/drug_dasiglucagon/pd_Tehranchi_2022_QTcF_2.md) | QTcF (QT interval corrected by Fridericia's formula) ← dasiglucagon · direct Emax (saturable) effect | — | Tehranchi R et al., Dasiglucagon Effects on QTc in Healthy…, Current therapeutic researc… (2022) | [10.1016/j.curtheres.2022.100668](https://doi.org/10.1016/j.curtheres.2022.100668) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Tehranchi_2022_QTcF](drugs/drug_dasiglucagon/pd_Tehranchi_2022_QTcF.md) | QTcF (QT interval corrected by Fridericia's formula) ← dasiglucagon · direct linear effect | — | Tehranchi R et al., Dasiglucagon Effects on QTc in Healthy…, Current therapeutic researc… (2022) | [10.1016/j.curtheres.2022.100668](https://doi.org/10.1016/j.curtheres.2022.100668) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Tehranchi_2022_QTcF_2](drugs/drug_dasiglucagon/pd_Tehranchi_2022_QTcF_2.md) | QTcF (QT interval corrected by Fridericia's formula) ← dasiglucagon · direct Emax (saturable) effect | — | Tehranchi R et al., Dasiglucagon Effects on QTc in Healthy…, Current therapeutic researc… (2022) | [10.1016/j.curtheres.2022.100668](https://doi.org/10.1016/j.curtheres.2022.100668) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

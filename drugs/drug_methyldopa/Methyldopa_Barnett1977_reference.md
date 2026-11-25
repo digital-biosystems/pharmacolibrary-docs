@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The methyldopa clearance and volume of distribution parameters have dimensionally incorrect units, invalidating the model.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h-1 (1 / [time]) vs 1 / [time]; Q61 unit 1 kg-1 (dimensionless) vs [length] ** 3; Q22 unit 1 h-1 (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="Methyldopa" model-id="Methyldopa_Barnett1977_reference" status="rejected" stale="false" population="normotensive and hypertensive subjects" measured-compound="methyldopa" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Barnett AJ, Bobik A, Carson V, Korman JS, McLean AJ. Pharmacokinetics of methyld
 
 ### Reviewer guidance
 
-**The methyldopa clearance and volume of distribution parameters have dimensionally incorrect units, invalidating the model.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h-1 (1 / [time]) vs 1 / [time]; Q61 unit 1 kg-1 (dimensionless) vs [length] ** 3; Q22 unit 1 h-1 (1 / [time]) vs [length] ** 3 / [time].**
 
-The total clearance is reported as 11.2 1/h, a dimensionally invalid unit for a volume/time parameter. The central volume of distribution is reported as 0.29 1/kg, which is dimensionless rather than a volume. Because the record was built from the abstract alone, these summary statistics were treated as model parameters, and a second reader could not locate values for the elimination rate or clearance in the source text. Extracted — methyldopa: λ1 0.56 h-1, V 0.29 1 kg-1, CL 11.2 1 h-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — methyldopa: λ1 0.56 h-1, V 0.29 1 kg-1, CL 11.2 1 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ke1: this record has 0.56, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

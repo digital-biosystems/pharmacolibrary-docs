@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because six nitrous oxide parameters, including elimination rate constant kel and duration D1, share the unit mL/L, which conflicts with their physical dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mL/L (dimensionless) vs [time]; Q32 unit mL/L (dimensionless) vs [mass] / [length] ** 3; Q47 unit mL/L (dimensionless) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="nitrous oxide" model-id="NitrousOxide_Lindholm2026_reference" status="rejected" stale="false" population="healthy adults" measured-compound="nitrous_oxide" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Lindholm AØ, Nielsen MKK, Kristensen M, Larsen MH, Heiberg J, Rasmussen BS. Con
 
 ### Reviewer guidance
 
-**The record is rejected because six nitrous oxide parameters, including elimination rate constant kel and duration D1, share the unit mL/L, which conflicts with their physical dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mL/L (dimensionless) vs [time]; Q32 unit mL/L (dimensionless) vs [mass] / [length] ** 3; Q47 unit mL/L (dimensionless) vs 1 / [time].**
 
-Parameters representing the elimination rate constant, zero-order input duration, and absorption rate constant are all recorded with the unit mL/L. This volume ratio is dimensionless, which contradicts the required dimensions of time, inverse time, and volume for these specific kinetic values. Consequently, the recorded units cannot be converted to SI, and a second reader found no matching parameter values in the source record. Extracted — nitrous oxide: D1 8.5 mL/L, E 20.2 mL/L, Fab 20.6 mL/L, Cmax 49.7 mL/L, kel 8.2 mL/L, kabs 0.156 1/day.
+A reported unit could not be converted (equation variable, D1, E and Fab), so that value has no SI equivalent. Extracted — nitrous oxide: D1 8.5 mL/L, E 20.2 mL/L, Fab 20.6 mL/L, Cmax 49.7 mL/L, kel 8.2 mL/L, kabs 0.156 1/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nitrous_oxide, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

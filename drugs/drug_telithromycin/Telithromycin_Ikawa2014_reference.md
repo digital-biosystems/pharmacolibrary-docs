@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The transfer rate constants k12 and k21 for telithromycin are set to library defaults rather than values reported in the abstract.
+> K12, k21 use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="telithromycin" model-id="Telithromycin_Ikawa2014_reference" status="needs_review" stale="false" population="adults" measured-compound="telithromycin" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Ikawa K, Kikuchi E, Kikuchi J, Nishimura M, Derendorf H, Morikawa N. Pharmacokin
 
 ### Reviewer guidance
 
-**The transfer rate constants k12 and k21 for telithromycin are set to library defaults rather than values reported in the abstract.**
+**K12, k21 use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists k12 as 0.0026 1/h, but the review identified k12 and k21 as unreported parameters replaced by model builder defaults. Consequently, these inter-compartmental rates lack explicit estimates from the source text, relying instead on placeholder values. Since the record is abstract-only, these default substitutions stand in for fitted model parameters that were not extracted. Extracted — telithromycin: V/F 205 L, CL 34.4 L/h, kabs 0.68 1/h, V1/F 370 L, CL/F 89.5 L/h, k12 0.0026 1/h, AUC ratio 7.8 ratio.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — telithromycin: V/F 205 L, CL 34.4 L/h, kabs 0.68 1/h, V1/F 370 L, CL/F 89.5 L/h, k12 0.0026 1/h, AUC ratio 7.8 ratio.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

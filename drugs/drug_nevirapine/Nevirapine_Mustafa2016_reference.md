@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Nevirapine oral bioavailability and absorption lag time were not reported, so placeholder values were used for the one-compartment model.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="nevirapine" model-id="Nevirapine_Mustafa2016_reference" status="needs_review" stale="false" population="HIV-infected Malaysian patients" measured-compound="nevirapine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nevirapine" model-id="Nevirapine_Mustafa2016_reference" status="needs_review" stale="false" population="Malaysian HIV-infected patients" measured-compound="nevirapine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Mustafa S, Yusuf WN, Woillard JB, Choon TS, Hassan NB. Population pharmacokinetics of nevirapine in Malaysian HIV patients: a non-parametric approach. European journal of clinical pharmacology 72(7):831–838 (2016).
@@ -17,7 +17,7 @@ Mustafa S, Yusuf WN, Woillard JB, Choon TS, Hassan NB. Population pharmacokineti
 
 ## Population and dosing
 
-**Population:** HIV-infected Malaysian patients · condition HIV-1 infection · age group adult · n = 112.
+**Population:** Malaysian HIV-infected patients · condition HIV · age group adult.
 
 ## Model
 
@@ -39,7 +39,7 @@ Mustafa S, Yusuf WN, Woillard JB, Choon TS, Hassan NB. Population pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ Mustafa S, Yusuf WN, Woillard JB, Choon TS, Hassan NB. Population pharmacokineti
 
 ### Reviewer guidance
 
-**Nevirapine oral bioavailability and absorption lag time were not reported, so placeholder values were used for the one-compartment model.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists median clearance (2.92 L/h), absorption rate (2.55 /h), and volume (78.23 L), but lacks estimates for bioavailability and lag time. Since the source was abstract-only, these missing parameters were filled with library defaults rather than paper-specific data. A second reader disagreed with the parameter assignments and identified the dose compound as unknown. Extracted — nevirapine: CL 2.92 L/h, kabs 2.55 /h, V 78.2 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nevirapine: CL 2.92 L/h, kabs 2.55 /h, V 78.2 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nevirapine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -79,36 +79,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (median nevirapine clearance); Q61 (volume of distribution)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nevirapine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Mustafa_2016_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>8 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[median nevirapine clearance]` | 2.92 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[median nevirapine clearance]` |  | 2.92 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[median rate of absorption]` | 2.55 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[median rate of absorption]` |  | 2.55 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 78.23 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 78.23 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | nevirapine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | nevirapine | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -141,7 +125,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -157,7 +141,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nevirapine/Nevirapine_Mustafa2016_reference/Nevirapine_Mustafa2016_reference_modelica.zip" download>Nevirapine_Mustafa2016_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nevirapine/Nevirapine_Mustafa2016_reference/Nevirapine_Mustafa2016_reference_modelica.zip" download>Nevirapine_Mustafa2016_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_nevirapine/Nevirapine_Mustafa2016_reference/Nevirapine_Mustafa2016_reference_fmi.zip" download>Nevirapine_Mustafa2016_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nevirapine/Nevirapine_Mustafa2016_reference/Nevirapine_Mustafa2016_reference_matlab.zip" download>Nevirapine_Mustafa2016_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nevirapine/Nevirapine_Mustafa2016_reference/Nevirapine_Mustafa2016_reference_matlab_simbio.zip" download>Nevirapine_Mustafa2016_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -221,4 +205,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnevirapine%5D%20Nevirapine_Mustafa2016_reference&body=Drug%3A%20nevirapine%0ARecord%3A%20Nevirapine_Mustafa2016_reference%0APaper%3A%20Mustafa_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nevirapine/Nevirapine_Mustafa2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:29 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:34 UTC</sub>

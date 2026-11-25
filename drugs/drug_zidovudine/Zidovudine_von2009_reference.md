@@ -5,11 +5,11 @@
 
 # zidovudine — `Zidovudine_von2009_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.10).">human + animal</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the sequential metabolite compartments lack defined rate constants, leaving the intracellular pathway unlinked from the parent drug.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="zidovudine" model-id="Zidovudine_von2009_reference" status="rejected" stale="false" population="HIV-infected patients" measured-compound="zidovudine (AZT)" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="zidovudine" model-id="Zidovudine_von2009_reference" status="rejected" stale="false" population="HIV infected patients" measured-compound="zidovudine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 von Kleist M, Huisinga W. Pharmacokinetic-pharmacodynamic relationship of NRTIs and its connection to viral escape: an example based on zidovudine. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 36(4-5):532–543 (2009).
@@ -17,17 +17,15 @@ von Kleist M, Huisinga W. Pharmacokinetic-pharmacodynamic relationship of NRTIs 
 
 ## Population and dosing
 
-**Population:** HIV-infected patients · condition HIV infection.
+**Population:** HIV infected patients · condition HIV infection · age group adult.
 
-**Dosing:** 100, 300, 600 mg, oral.
-
-> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.10).
+**Dosing:** 100, 300, 600 mg, oral, multiple, every 12 h.
 
 ## Model
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted, plus 3 covariate effects.  
+**Parameters:** 4 extracted, plus 2 covariate effects.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -37,17 +35,15 @@ von Kleist M, Huisinga W. Pharmacokinetic-pharmacodynamic relationship of NRTIs 
 |---|---|---|---|
 | Vb [L] | V | 800 | L |
 | CL [L/min] | CL | 6 | L/min |
-| B:P | Kp | 0.071 |  |
+| B:P | equation variable | 0.071 |  |
 | F | Fab | 0.64 |  |
-| fu^P | fu | 1.1 |  |
 | k_A [min⁻¹] | kabs | 1 | min⁻¹ |
-| theta_q350_um | theta_q350_um | 1.4 |  |
 | theta_q1_um | theta_q1_um | 2.42 |  |
 | theta_q1_um | theta_q1_um | 4.1 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.353). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.10).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.412), qwen3.8-27b (not confirmed, agreement 0.353). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,13 +53,13 @@ von Kleist M, Huisinga W. Pharmacokinetic-pharmacodynamic relationship of NRTIs 
 
 ### Reviewer guidance
 
-**The model was rejected because the sequential metabolite compartments lack defined rate constants, leaving the intracellular pathway unlinked from the parent drug.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The metabolic links between zidovudine, its monophosphate, diphosphate, and triphosphate forms are marked with 'none' for the rate parameter, preventing calculation of flux. The second reader disputes the existence of the tissue-to-plasma partition coefficient (0.071) and unbound fraction (1.1) parameters, identifying them as not present in the source. Additionally, there is disagreement on the parameter assignments for the metabolite-specific covariate effects, with conflicting values recorded for the monophosphate and diphosphate stages. Extracted — zidovudine: V 800 L, CL 6 L/min, Kp 0.071, Fab 0.64, fu 1.1, kabs 1 min⁻¹.
+Extracted — zidovudine: V 800 L, CL 6 L/min, Fab 0.64, kabs 1 min⁻¹.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has zidovudine (AZT), the second reading zidovudine; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has zidovudine, the second reading AZT; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -71,11 +67,9 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 |---|---|---|---|---|---|---|---|---|
 | Vb [L] | `Q61` · V | 800 | L | 0.8 | m3 | l | llm (0.6) | von_2009_table_p4_1:row1:col1, von_2009_table_p4_1:row1:col3, von_2009_table_p4_1:row1:col4 |
 | CL [L/min] | `Q22` · CL | 6 | L/min | 0.0001 | m3/s | l/min | llm_confirmed (0.6) | von_2009_table_p4_1:row4:col1, von_2009_table_p4_1:row4:col4 |
-| B:P | `Q410` · Kp | 0.071 |  |  |  |  | llm (0.6) | von_2009_table_p4_1:row5:col1, von_2009_table_p4_1:row5:col4 |
+| B:P | `Q900` · equation variable | 0.071 |  | 0.071 |  |  | llm (0.6) | von_2009_table_p4_1:row5:col1, von_2009_table_p4_1:row5:col4 |
 | F | `Q40` · Fab | 0.64 |  |  |  |  | exact (1) | von_2009_table_p4_1:row6:col1 |
-| fu^P | `Q46` · fu | 1.1 |  |  |  |  | llm_confirmed (0.6) | von_2009_table_p4_1:row7:col1, von_2009_table_p4_1:row7:col4 |
-| k_A [min⁻¹] | `Q49` · kabs | 1 | min⁻¹ | 0.01667 | 1/s | 1/min | llm (0.6) | von_2009_table_p4_1:row9:col1, von_2009_table_p4_1:row9:col4 |
-| theta_q350_um | `Q900` · theta_q350_um | 1.4 |  |  |  |  |  | von_2009_table_p4_1:row8:col1, von_2009_table_p4_1:row8:col4 |
+| k_A [min⁻¹] | `Q49` · kabs | 1 | min⁻¹ | 0.01667 | 1/s | 1/min | boundary_llm_dim_refused (0.8) | von_2009_table_p4_1:row9:col1, von_2009_table_p4_1:row9:col4 |
 | theta_q1_um | `Q900` · theta_q1_um | 2.42 |  |  |  |  |  | von_2009_table_p4_1:row11:col1, von_2009_table_p4_1:row11:col4 |
 | theta_q1_um | `Q900` · theta_q1_um | 4.1 |  |  |  |  |  | von_2009_table_p4_1:row12:col1, von_2009_table_p4_1:row12:col4 |
 
@@ -88,55 +82,58 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 **Interpretation flags:**
 - column 'param.' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped duplicate Q61 ('VT-cell [fL/cell]', value '140') — already have one for this compound
-- NIL: refused to back-fill base 'V' from footnote/prose loose number 5.4 (source ['tab_0:footnote']); the table cell was unparseable — needs review
+- dropped unlinked row (NIL): 'VT-cell [fL/cell]' — extend the ontology if this is a real PK parameter (source ['von_2009_table_p4_1:row2:col1'])
+- dropped unlinked row (NIL): 'fu^P' — extend the ontology if this is a real PK parameter (source ['von_2009_table_p4_1:row7:col1', 'von_2009_table_p4_1:row7:col4'])
+- dropped unlinked row (NIL): 'K_i^MP [uM]' — extend the ontology if this is a real PK parameter (source ['von_2009_table_p4_1:row8:col1', 'von_2009_table_p4_1:row8:col4'])
+- NIL: refused to back-fill base 'V1' from footnote/prose loose number 5.4 (source ['tab_0:footnote']); the table cell was unparseable — needs review
 - NIL: refused to back-fill base 'NIL' from footnote/prose loose number 800 (source ['tab_0:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'equation variable' from footnote/prose loose number 140 (source ['tab_0:footnote']); the table cell was unparseable — needs review
-- covariate effect for Q350 has no base parameter row (kept as unattached equation-variable)
+- NIL: refused to back-fill base 'Vnorm' from footnote/prose loose number 140 (source ['tab_0:footnote']); the table cell was unparseable — needs review
 - covariate effect for Q1 has no base parameter row (kept as unattached equation-variable)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=zidovudine (AZT)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=zidovudine
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — pbpk model — not a compartmental parent–metabolite model
+- pharmacogenetic covariate 'theta_q1_um' (um) — PGx domain
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=pbpk; 13/13 row label(s) assigned, 10 linked by role; re-tagged parent→zidovudine monophosphate (AZT-MP) ×2, parent→zidovudine diphosphate (AZT-DP) ×2, parent→zidovudine triphosphate (AZT-TP) ×2
+- row roles (LLM): model_class=pbpk; 13/13 row label(s) assigned, 8 linked by role; re-tagged parent→zidovudine monophosphate ×4, parent→dTMP ×2
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell von_2009_table_p4_1:row1:col2 = '(Brown et al., 1997)'
-- unparsed cell von_2009_table_p4_1:row1:col5 = '(Bisset et al., 2004)'
-- unparsed cell von_2009_table_p4_1:row2:col2 = '(Begenish et al., 2004)'
-- unparsed cell von_2009_table_p4_1:row4:col2 = '(Acosta et al., 1996)'
-- unparsed cell von_2009_table_p4_1:row4:col5 = '(Lavie et al., 1997)'
-- unparsed cell von_2009_table_p4_1:row5:col2 = '(Luzier and Morse, 1993)'
-- unparsed cell von_2009_table_p4_1:row5:col5 = '(Chow et al., 1997)'
-- unparsed cell von_2009_table_p4_1:row6:col2 = '(Wilde and Langtry, 1993)'
-- unparsed cell von_2009_table_p4_1:row6:col4 = '1·10⁻⁵'
-- unparsed cell von_2009_table_p4_1:row7:col2 = '(Luzier and Morse, 1993)'
-- unparsed cell von_2009_table_p4_1:row7:col5 = '(Flynn et al., 2007)'
-- unparsed cell von_2009_table_p4_1:row8:col2 = '(Lavie et al., 1997)'
-- unparsed cell von_2009_table_p4_1:row8:col5 = '(Traut, 1994)'
-- unparsed cell von_2009_table_p4_1:row9:col5 = '(Zimmerman et al., 1987)'
-- unparsed cell von_2009_table_p4_1:row11:col2 = '(Lavie et al., 1997)'
-- unparsed cell von_2009_table_p4_1:row11:col5 = '(Cases-Gonzalez and Mendez-Arias, 2005)'
-- unparsed cell von_2009_table_p4_1:row12:col2 = '(Cases-Gonzalez and Mendez-Arias, 2005)'
-- unparsed cell von_2009_table_p4_1:row12:col3 = 'dTTP(0)[uM]'
-- unparsed cell von_2009_table_p4_1:row12:col5 = '(Traut, 1994)'
+- table von_2009_table_p4_1: unparsed_numeric_cell
+- table von_2009_table_1: unknown_column_role
+- table von_2009_table_1: ragged_grid
+- table von_2009_table_1: unparsed_numeric_cell
+- companion parameter table 1 transcribed (2 record(s))
+- table von_2009_table_2: unknown_column_role
+- table von_2009_table_2: ragged_grid
+- companion parameter table 2 transcribed (3 record(s))
+- LLM selected parameter table(s) 1, 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.412 (7/17 fields) | 10 |
 | `qwen3.8-27b` | not confirmed | 0.353 (6/17 fields) | 11 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>21 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['zidovudine', 'zidovudine monophosphate', 'metabolism'], ['zidovudine monophosphate', 'zidovudine diphosphate', 'metabolism'], ['zidovudine diphosphate', 'zidovudine triphosphate', 'metabolism']] | [['azt', 'azt-mp', 'metabolism'], ['azt-mp', 'azt-dp', 'interconversion'], ['azt-dp', 'azt-tp', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `parameters[b:p].parameter_id` | Q900 | Q410 | mismatch |
+| `gpt-oss-120b` | `parameters[fu^p]` |  | 1.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q1_um]` |  | 2.42 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q1_um]` | 4.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q1_um]` | 2.42 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q331_um]` |  | 1.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vt-cell [fl/cell]]` |  | 140 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | zidovudine | AZT | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | zidovudine | AZT | mismatch |
 | `qwen3.8-27b` | `model.links` | [['zidovudine (azt)', 'zidovudine monophosphate (azt-mp)', 'metabolism'], ['zidovudine monophosphate (azt-mp)', 'zidovudine diphosphate (azt-dp)', 'metabolism'], ['zidovudine diphosphate (azt-dp)', 'zidovudine triphosphate (azt-tp)', 'metabolism']] | [['zidovudine', 'zidovudine monophosphate', 'metabolism'], ['zidovudine monophosphate', 'zidovudine diphosphate', 'metabolism'], ['zidovudine diphosphate', 'zidovudine triphosphate', 'metabolism']] | mismatch |
 | `qwen3.8-27b` | `parameters[b:p]` | 0.071 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[fu^p]` | 1.1 |  | only_one_extracted |
@@ -161,7 +158,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['von_2009_table_p4_1:row4:col1', 'von_2009_table_p4_1:row4:col4'] |
@@ -194,4 +191,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzidovudine%5D%20Zidovudine_von2009_reference&body=Drug%3A%20zidovudine%0ARecord%3A%20Zidovudine_von2009_reference%0APaper%3A%20von_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zidovudine/Zidovudine_von2009_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:28 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:15 UTC</sub>

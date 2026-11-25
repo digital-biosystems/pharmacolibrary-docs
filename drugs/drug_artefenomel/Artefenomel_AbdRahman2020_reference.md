@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Every check that could be run on this record passed.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Artefenomel" model-id="Artefenomel_AbdRahman2020_reference" status="rejected" stale="false" population="" measured-compound="artefenomel" parameterization="apparent" topology="2C"></div>
 
@@ -42,7 +42,7 @@ Abd-Rahman AN, Marquart L, Gobeau N, Kümmel A, Simpson JA, Chalon S et al. Popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +52,13 @@ Abd-Rahman AN, Marquart L, Gobeau N, Kümmel A, Simpson JA, Chalon S et al. Popu
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-<sub>reviewed by rule template (no LLM)</sub>
+Extracted — artefenomel: CL/F 54.6 L/h, V1/F 2.93e+03 L, V2/F 4.7e+03 L, Q 47.2 L/h, Q/F 36.3 L/h, kabs 0.943 hour−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has none, the second reading 47.2; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -84,6 +88,33 @@ Abd-Rahman AN, Marquart L, Gobeau N, Kümmel A, Simpson JA, Chalon S et al. Popu
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.417 (5/12 fields) | 7 |
+
+<details><summary>7 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` |  | 47.2 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q290]` | 2930 | 40.0 | mismatch |
+| `gpt-oss-120b` | `values[Q30]` | 47.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q63]` |  | 560 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q64]` |  | 259 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q69]` | 36.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q82]` | 4700 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -105,15 +136,16 @@ Abd-Rahman AN, Marquart L, Gobeau N, Kümmel A, Simpson JA, Chalon S et al. Popu
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | fail | artefenomel (or metabolite) | paper about another drug | paper subject is not artefenomel: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=artefenomel) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | artefenomel (or metabolite) | paper about another drug |  | paper subject is not artefenomel: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=artefenomel) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.417 (5 of 12 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.417 | cross-check contradicted by a second reader: verdict disputed; agreement 0.417 (5 of 12 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

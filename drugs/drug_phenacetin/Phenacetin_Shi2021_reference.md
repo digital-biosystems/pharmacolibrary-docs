@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Absorption parameters for phenacetin were left at library defaults rather than using the study's specific estimates.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="phenacetin" model-id="Phenacetin_Shi2021_reference" status="needs_review" stale="false" population="" measured-compound="phenacetin" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Shi Y, Meng D, Wang S, Geng P, Xu T, Zhou Q et al. Effects of Avitinib on CYP450
 
 ### Reviewer guidance
 
-**Absorption parameters for phenacetin were left at library defaults rather than using the study's specific estimates.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record contains only apparent oral clearance (1.23 L/h/kg) and volume of distribution (2.59 L/kg) for phenacetin. Absorption rate and lag times were not reported in the source, forcing the model to rely on placeholder values instead of measured data. A second reader also disputed the final verdict, noting that extracted parameter values were null in their review. Extracted — phenacetin: CL/F 1.23 L/h/kg/, V/F 2.59 L/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — phenacetin: CL/F 1.23 L/h/kg/, V/F 2.59 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 9037.9, the second reading 9037.90; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.286, 0 of 1 reader(s) agree | 0.286 | cross-check disputed by a second reader: verdict disputed, agreement 0.286, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.643 (9 of 14 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.643 | cross-check contradicted by a second reader: verdict disputed; agreement 0.643 (9 of 14 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

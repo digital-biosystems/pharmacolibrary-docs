@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-> Ketorolac’s record was held because the abstract-only extraction was disputed, including whether clearance 56.8 mL/h/kg and mean residence time 6.47 hours belong.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Villa2015_reference" status="needs_review" stale="false" population="cats undergoing gonadectomy" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Villa R, Ravasio G, Ferraresi C, Zonca A, Carli S, Borghi L et al. Pharmacokinet
 
 ### Reviewer guidance
 
-**Ketorolac’s record was held because the abstract-only extraction was disputed, including whether clearance 56.8 mL/h/kg and mean residence time 6.47 hours belong.**
+**cross_check_disputed; x1_cross_check.**
 
-Only the abstract was read, so reported summary statistics stood in for a fitted model. The second reader did not agree (agreement 0.273, with 0 of 1 reader agreeing) and also disagreed over the inclusion or assignment of ketorolac’s steady-state volume of distribution, 323.9 mL/kg, and volume of distribution, 4.7 L/kg. Extracted — ketorolac: CL 56.8 mL/h/kg, Vss 324 mL/kg, MRT 6.47 hours, V 4.7 L/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ketorolac: CL 56.8 mL/h/kg, Vss 324 mL/kg, MRT 6.47 hours, V 4.7 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ketorolac, the second reading ketorolac tromethamine; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.273, 0 of 1 reader(s) agree | 0.273 | cross-check disputed by a second reader: verdict disputed, agreement 0.273, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.273 (3 of 11 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.273 | cross-check contradicted by a second reader: verdict disputed; agreement 0.273 (3 of 11 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

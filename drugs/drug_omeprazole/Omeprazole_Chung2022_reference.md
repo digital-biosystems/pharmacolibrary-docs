@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The extracted omeprazole parameters were rejected because the source paper studied YH4808, not omeprazole.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Chung2022_reference" status="rejected" stale="false" population="" measured-compound="omeprazole" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Chung TK, Lee HA, Lee KR, Jang SB, Yu KS, Lee H. A population PK-PD model of YH4
 
 ### Reviewer guidance
 
-**The extracted omeprazole parameters were rejected because the source paper studied YH4808, not omeprazole.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper's subject is YH4808, with omeprazole mentioned only as a reference for acid suppression. The extracted volume of distribution label incorrectly refers to YH4808. A second reader agreed on the values but disputed the final rejection verdict. Extracted — omeprazole: CL/F 221 L/h, V1/F 121 L, kabs 0.95 h−1, tlag 0.26 h.
+Extracted — omeprazole: CL/F 221 L/h, V1/F 121 L, kabs 0.95 h−1, tlag 0.26 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q320: this record has 4.38, the second reading 4.38. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | cross-check disputed by a second reader: verdict disputed, agreement 0.875, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

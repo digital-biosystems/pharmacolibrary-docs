@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Bretylium’s apparent intercompartmental clearance, valued at 10.724 L/h/kg, was rejected because its reported unit could not be converted to SI.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr⁻¹ (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Narang1980_mean" status="rejected" stale="false" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 ### Reviewer guidance
 
-**Bretylium’s apparent intercompartmental clearance, valued at 10.724 L/h/kg, was rejected because its reported unit could not be converted to SI.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr⁻¹ (1 / [time]) vs 1 / [time].**
 
-The structural-parameter finding lists hr⁻¹ against 1/[time], which are dimensionally the same, so that finding is inconclusive. Separately, the reported unit could not be converted to SI, leaving no SI value for the apparent intercompartmental clearance. Extracted — bretylium tosilate: λ1 1.81 hr⁻¹, t1/2α 25.2 min, kel 0.09 hr⁻¹, t1/2β 7.8 hr, k12 1.03 hr⁻¹, k21 0.286 hr⁻¹, kabs 0.089 hr⁻¹, V1 1.34 liters/kg, … (+5).
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — bretylium tosilate: λ1 1.81 hr⁻¹, t1/2α 25.2 min, kel 0.09 hr⁻¹, t1/2β 7.8 hr, k12 1.03 hr⁻¹, k21 0.286 hr⁻¹, kabs 0.089 hr⁻¹, V1 1.34 liters/kg, … (+5).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has bretylium, the second reading bretylium_tosilate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

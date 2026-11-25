@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The drug interaction clearance ratio for lurasidone carries invalid hourly units instead of being dimensionless, conflicting with its structural definition.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q31 unit h-1 (1 / [time]) vs None.
 
 <div class="pk-model-meta" hidden drug="lurasidone" model-id="Lurasidone_Yang2026_final_model" status="rejected" stale="false" population="Chinese psychiatric inpatients" measured-compound="lurasidone" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Yang Y, Lu H, Xiao T, Ni X, Wang Z, Chen Y et al. Impact of valproate co-medicat
 
 ### Reviewer guidance
 
-**The drug interaction clearance ratio for lurasidone carries invalid hourly units instead of being dimensionless, conflicting with its structural definition.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q31 unit h-1 (1 / [time]) vs None.**
 
-The parameter describing the clearance ratio for valproate interaction is recorded as 0.477 with units of h-1. This unit conflicts with the parameter's dimensionless meaning, as a ratio of clearances cannot have time-based dimensions. A second reader disagreed on this specific value, recording it as null instead of the reported 0.477. Extracted — lurasidone: CL/F 339 L·h-1, V/F 1.36e+04 L, CL_ratio 0.477 h-1.
+A reported unit could not be converted (CL_ratio), so that value has no SI equivalent. Extracted — lurasidone: CL/F 339 L·h-1, V/F 1.36e+04 L, CL_ratio 0.477 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lurasidone, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

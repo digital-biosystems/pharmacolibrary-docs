@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held for review because the second reader could not confirm the clearance, volume of distribution, or half-life values for piritramide extracted from the abstract.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="piritramide" model-id="Piritramide_Mller2006_reference" status="needs_review" stale="false" population="newborns, infants, and young children in intensive care units" measured-compound="piritramide" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Müller C, Kremer W, Harlfinger S, Doroshyenko O, Jetter A, Hering F et al. Phar
 
 ### Reviewer guidance
 
-**The record was held for review because the second reader could not confirm the clearance, volume of distribution, or half-life values for piritramide extracted from the abstract.**
+**cross_check_disputed; x1_cross_check.**
 
-The source text consists only of the abstract, so the reported summary statistics stand in for a fitted model. The second reader found the dose compound and primary analyte to be unknown, contradicting the identification of piritramide. Additionally, the second reader recorded null values for the clearance (15.9 ml/min), half-life (702 min), and volume of distribution (2.0 l/kg) parameters, resulting in zero agreement. Extracted — piritramide: t1/2z 702 min, CL 15.9 ml/min, V 2 l/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — piritramide: t1/2z 702 min, CL 15.9 ml/min, V 2 l/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has piritramide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

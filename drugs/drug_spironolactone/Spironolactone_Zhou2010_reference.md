@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper models digoxin, not spironolactone, making the extracted clearance and volume values inapplicable to the target drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="spironolactone" model-id="Spironolactone_Zhou2010_reference" status="rejected" stale="false" population="" measured-compound="spironolactone" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Zhou XD, Gao Y, Guan Z, Li ZD, Li J. Population pharmacokinetic model of digoxin
 
 ### Reviewer guidance
 
-**The paper models digoxin, not spironolactone, making the extracted clearance and volume values inapplicable to the target drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source identifies digoxin as the subject, with spironolactone included only as a covariate affecting digoxin clearance. Consequently, the reported oral clearance of 4.88 L/h and volume of distribution of 514.0 L refer to the wrong compound. A second reader disagreed on specific parameter values, finding a mismatch where the record listed null but the reader identified 49.0. Extracted — spironolactone: CL/F 4.88 L/h, V/F 514 L, kabs 1.63 h -1.
+Extracted — spironolactone: CL/F 4.88 L/h, V/F 514 L, kabs 1.63 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 49.0; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.75 (6 of 8 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V09F&quot;,&quot;href&quot;:&quot;atc/V09F.md&quot;},{&quot;label&quot;:&quot;sodium iodide (123I)&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_iodide_123i/&quot;},{&quot;label&quot;:&quot;Tonacchera_2004 \u00b7 PD (125)I(-) uptake&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# (125)I(-) uptake — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by glm-5.3-flash (not confirmed, agreement 0.6), qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+# (125)I(-) uptake — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 ## Record summary
 
-**As extracted:** Iodide (I(-)) drives (125)I(-) uptake: direct sigmoid Emax (Hill) effect.
+**As extracted:** Perchlorate, thiocyanate, nitrate, and iodide drive (125)I(-) uptake: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -27,7 +27,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Tonacchera M et al., Relative potencies and additivity of pe…, Thyroid : official journal… (2004)
@@ -38,19 +38,17 @@ _No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `glm-5.3-flash` | not confirmed | 0.6 (3/5 fields) | 2 |
-| `qwen3.8-27b` | no answer | – | – (extracted nothing for this PD record) |
+| `gpt-oss-120b` | not confirmed | 0.75 (3/4 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `glm-5.3-flash` | `driver_compound` | iodide (I(-)) | iodide (I-) | mismatch |
-| `glm-5.3-flash` | `parameters[Q321]` |  | 30 | only_one_extracted |
+| `gpt-oss-120b` | `driver_compound` | perchlorate, thiocyanate, nitrate, and iodide | iodide (I-) | mismatch |
 
 </details>
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ampicillin’s bioavailability (F) was unreported and left at a library default, so the record was held back rather than supported by a paper estimate.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Judy2024_reference" status="needs_review" stale="false" population="peripartum and laboring women" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Judy AE, Frymoyer A, Ansari J, Drover DR, Carvalho B. Ampicillin Pharmacokinetic
 
 ### Reviewer guidance
 
-**Ampicillin’s bioavailability (F) was unreported and left at a library default, so the record was held back rather than supported by a paper estimate.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-F uses library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper. Because only the abstract was read, its summary statistics stood in for a fitted model. The model builder also defaulted the absorption lag time (Tlag), and a second reader reported no absorption rate constant, whereas this record gives 6.45 h-1. Extracted — ampicillin: V1 75.2 L, CL 82.4 L/h, Q 20.9 L/h, V2 61.1 L, kabs 6.45 h-1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ampicillin: V1 75.2 L, CL 82.4 L/h, Q 20.9 L/h, V2 61.1 L, kabs 6.45 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 6.45, the second reading none. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.889 (8 of 9 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.889 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

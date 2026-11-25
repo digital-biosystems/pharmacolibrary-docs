@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Glibenclamide’s peripheral-compartment volume (V2/F, 38.90 L) was reported in a structure with an unreachable compartment, so the record was rejected.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="glibenclamide" model-id="Glibenclamide_Rambiritch2016v2_one_compartment_model_estimat" status="rejected" stale="false" population="South African adults with type 2 diabetes" measured-compound="glibenclamide" parameterization="apparent" topology="1C"></div>
 
@@ -39,7 +39,7 @@ Rambiritch V, Naidoo P, Maharaj B, Pillai G. Population pharmacokinetic modeling
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +49,13 @@ Rambiritch V, Naidoo P, Maharaj B, Pillai G. Population pharmacokinetic modeling
 
 ### Reviewer guidance
 
-**Glibenclamide’s peripheral-compartment volume (V2/F, 38.90 L) was reported in a structure with an unreachable compartment, so the record was rejected.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record reports V2/F as the volume of distribution of glibenclamide’s peripheral compartment, with a value of 38.90 L. The model findings identify an unreachable or orphan compartment, meaning that compartment has no path from the dose. Extracted — glibenclamide: kabs 2.39 1/h, CL/F 1.52 L/h, V2/F 38.9 L.
+Extracted — glibenclamide: kabs 2.39 1/h, CL/F 1.52 L/h, V2/F 38.9 L.
 
-<sub>reviewed by gpt-6-luna</sub>
+Independently confirmed by `gpt-oss-120b`.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -89,6 +91,21 @@ The record reports V2/F as the volume of distribution of glibenclamide’s perip
 - captured model equation Pj = TVP*exp(ηj)(1)where TVP is the typical value of the PK parameter Pv (eg, CL/f) in the population, Pj is the individual value for P in the jth individual, and ηj is a random variable with mean of zero and variance ωP2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (10/10 fields) | none |
+
+_All readers agree on the compared fields of this record._
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

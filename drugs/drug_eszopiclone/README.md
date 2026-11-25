@@ -22,12 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lloyd_1990_35S_TBPS_binding](drugs/drug_eszopiclone/pd_Lloyd_1990_35S_TBPS_binding.md) | 35S-TBPS binding to rat cerebral cortex membranes (maximal enhancement) ← zopiclone · direct Emax (saturable) effect | — | Lloyd GK et al., The activity of zolpidem and other hypn…, The Journal of pharmacology… (1990) | — |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Luurila_1996_DSST](drugs/drug_eszopiclone/pd_Luurila_1996_DSST.md) | digit symbol substitution test ← zopiclone · delayed effect through an effect compartment | — | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Luurila_1996_DSST_2](drugs/drug_eszopiclone/pd_Luurila_1996_DSST_2.md) | digit symbol substitution test ← zopiclone · inhibition effect | — | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Luurila_1996_SPV](drugs/drug_eszopiclone/pd_Luurila_1996_SPV.md) | saccadic peak velocity ← zopiclone · delayed effect through an effect compartment | — | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Luurila_1996_SPV_2](drugs/drug_eszopiclone/pd_Luurila_1996_SPV_2.md) | saccadic peak velocity ← zopiclone · inhibition effect | — | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Morlock_2011_I_GABA_potentiation](drugs/drug_eszopiclone/pd_Morlock_2011_I_GABA_potentiation.md) | GABA-induced chloride current potentiation by eszopiclone ← eszopiclone · direct sigmoid Emax (Hill) effect | — | Morlock EV et al., Different residues in the GABAA recepto…, Molecular pharmacology (2011) | [10.1124/mol.110.069542](https://doi.org/10.1124/mol.110.069542) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Luurila_1996_DSST](drugs/drug_eszopiclone/pd_Luurila_1996_DSST.md) | digit symbol substitution test ← zopiclone · inhibition effect | — | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Luurila_1996_SPV](drugs/drug_eszopiclone/pd_Luurila_1996_SPV.md) | changes in saccadic peak velocity ← zopiclone · inhibition effect | — | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -41,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 20:27 | 0:44 | 0/0/0 | 1/5/0 | 0/0/0 | 40,290/2,725 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 21:45 | 0:03 | 0/0/0 | 0/2/0 | 0/0/0 | 4,012/158 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -54,19 +50,30 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Dresser_2000 | irrelevant | 0 | 0 | Review of CYP3A4 interactions mentioning zopiclone only qualitatively, with no eszopiclone PK parameters or numeric values. |
-| popPK | Gaillot_1982 | irrelevant | 1 | 7 | The study reports quantitative PK parameters (clearance, half-life, bioavailability) but for zopiclone, a different drug from eszopiclone, which is never mentioned. |
-| popPK | Gaillot_1983 | irrelevant | 2 | 5 | This is a PK study of zopiclone, a different drug from eszopiclone (its S-enantiomer), though some numeric parameters (t½ 4-5 h, CL 300 ml/min) are present in the abstract. |
+| popPK | Dresser_2000 | irrelevant | 0 | 0 | The paper is a review of CYP3A4 interactions and mentions zopiclone (the racemate) only as an example of a drug affected by metabolism, without reporting any quantitative pharmacokinetic parameters for eszopiclone. |
+| PGx | Dresser_2000 | not_relevant | 0 | 0 | The paper discusses CYP3A4 inhibition by co-administered drugs (drug-drug interactions) rather than genetic variants/genotypes (pharmacogenomics) and does not specifically quantify PK/PD changes for eszopiclone. |
+| popPK | Gaillot_1982 | irrelevant | 0 | 0 | The paper studies zopiclone, not eszopiclone (the S-enantiomer), and does not report PK parameters for eszopiclone. |
+| PGx | Gaillot_1982 | not_relevant | 0 | 0 | The paper discusses pharmacokinetics and metabolism of zopiclone (not eszopiclone) and focuses on physiological variables like age and organ impairment, but does not report any genetic variants or pharmacogenomic effects. |
+| popPK | Gaillot_1983 | irrelevant | 2 | 0 | The study investigates zopiclone, not eszopiclone, and the evidence contains no quantitative parameters for eszopiclone. |
+| PGx | Gaillot_1983 | not_relevant | 0 | 0 | The paper studies zopiclone and reports its pharmacokinetics but does not investigate eszopiclone or report any pharmacogenomic effects. |
 | popPK | Gex-Fabry_2004 | irrelevant | 0 | 0 | This is a venlafaxine PK/PD study; zopiclone is only co-medication and no eszopiclone parameters are reported. |
 | popPK | Han_2025 | irrelevant | 1 | 2 | This is a population-PK model of clozapine; zopiclone appears only as a co-administered DDI covariate (a 25.4% clearance effect), with no PK parameters for zopiclone/eszopiclone itself (ka was fixed from literature). |
-| popPK | Lloyd_1990 | irrelevant | 0 | 0 | In-vitro receptor binding study of zopiclone (not eszopiclone) with no PK parameters. |
-| popPK | Luurila_1996 | irrelevant | 2 | 8 | This is a PK/PD study of racemic zopiclone, not eszopiclone specifically; numeric CL, V and half-life values are present in the abstract but for the wrong (parent racemate) drug. |
-| popPK | Morlock_2011 | irrelevant | 0 | 0 | In-vitro electrophysiology study of GABAA receptor mutations with no pharmacokinetic parameters for eszopiclone. |
-| popPK | Munakata_1996 | irrelevant | 0 | 0 | In-vitro electrophysiology of zopiclone (not eszopiclone) in rat neurons; no PK parameters. |
-| popPK | Novotna_2014 | irrelevant | 0 | 0 | In-vitro receptor reporter study of enantiopure drugs (zopiclone, not eszopiclone) with no PK parameters. |
-| popPK | Petroski_2006 | irrelevant | 0 | 0 | This is an in-vitro electrophysiology study of indiplon (a different drug) with no eszopiclone PK parameters; zopiclone appears only as a potency comparator. |
-| popPK | Reynolds_1996 | irrelevant | 0 | 0 | In-vitro electrophysiology study of GABAA receptor interactions; no PK parameters for eszopiclone (zopiclone only as pharmacodynamic comparator). |
-| popPK | Sanger_1985 | irrelevant | 0 | 0 | Behavioral pharmacology study in mice with no PK parameters for eszopiclone (zopiclone only dosed behaviorally, no disposition values). |
+| popPK | Lloyd_1990 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of GABAA receptor binding using zopiclone (not eszopiclone) and does not report pharmacokinetic parameters. |
+| PGx | Lloyd_1990 | not_relevant | 0 | 0 | The paper is an in vitro study on rat cerebral membranes investigating the mechanism of action of hypnotics on GABA-A receptors and does not report pharmacogenomic effects on eszopiclone PK/PD. |
+| popPK | Luurila_1996 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of zopiclone, not eszopiclone. |
+| PGx | Luurila_1996 | not_relevant | 0 | 0 | The study investigates the PK/PD of zopiclone in healthy volunteers but does not report any pharmacogenomic effects or genetic variants. |
+| popPK | Morlock_2011 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of GABA receptor mutations, containing no pharmacokinetic parameters for eszopiclone. |
+| PGx | Morlock_2011 | not_relevant | 1 | 5 | The study investigates structural mechanisms of benzodiazepine action on GABA-A receptors using site-directed mutagenesis in oocytes, rather than human pharmacogenomic effects (SNPs) on eszopiclone PK/PD. |
+| popPK | Munakata_1996 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiological study on benzodiazepine receptors in rat neurons and does not report pharmacokinetic parameters (CL, V, etc.) for eszopiclone. |
+| PGx | Munakata_1996 | not_relevant | 0 | 0 | The paper studies neuronal subpopulations in rats, not human genetic variants affecting eszopiclone pharmacokinetics or pharmacodynamics. |
+| popPK | Novotna_2014 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on receptor interactions (AhR, GR, PXR) and does not report quantitative pharmacokinetic parameters (CL, V, ka) for eszopiclone. |
+| PGx | Novotna_2014 | not_relevant | 0 | 0 | The paper studies receptor interactions of zopiclone (not eszopiclone) in reporter cell lines and does not report pharmacogenomic effects on PK/PD parameters. |
+| popPK | Petroski_2006 | irrelevant | 0 | 0 | The study is a mechanistic electrophysiological investigation of indiplon in vitro, not a pharmacokinetic study for eszopiclone. |
+| PGx | Petroski_2006 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of indiplon (a different drug) and its receptor selectivity, not the pharmacogenomics of eszopiclone. |
+| popPK | Reynolds_1996 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology study on GABAA receptors using zopiclone (not eszopiclone) as a probe and reports no pharmacokinetic parameters. |
+| PGx | Reynolds_1996 | not_relevant | 0 | 0 | The paper studies the pharmacodynamic interaction between propofol and flurazepam/zopiclone (not eszopiclone) at the GABAA receptor in Xenopus oocytes, containing no information on gene variants or pharmacokinetics. |
+| popPK | Sanger_1985 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in mice involving zopiclone (not eszopiclone) and reports no pharmacokinetic parameters. |
+| PGx | Sanger_1985 | not_relevant | 0 | 0 | The paper reports behavioral effects of drugs in mice but does not involve eszopiclone, human pharmacogenomics, or genotype-specific PK/PD parameter changes. |
 
 
 </details>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Midostaurin’s record was refused because its 1.47 L/h formation clearance to CGP62221 does not provide parent clearance or a distribution volume.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="midostaurin" model-id="Midostaurin_Yin2008_reference" status="rejected" stale="false" population="diabetic patients" measured-compound="midostaurin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -16,13 +16,13 @@ Yin OQ, Wang Y, Schran H. A mechanism-based population pharmacokinetic model for
 
 ## Population and dosing
 
-**Population:** diabetic patients · condition diabetes · n = 37.
+**Population:** diabetic patients · condition diabetes · age group adult.
 
 ## Model
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -30,12 +30,11 @@ Yin OQ, Wang Y, Schran H. A mechanism-based population pharmacokinetic model for
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL(1) | CLfm | 1.47 | L/h |
-| CL(2) | CLfm | 0.501 | L/h |
+| CL(1) | CL | 1.47 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,68 +44,55 @@ Yin OQ, Wang Y, Schran H. A mechanism-based population pharmacokinetic model for
 
 ### Reviewer guidance
 
-**Midostaurin’s record was refused because its 1.47 L/h formation clearance to CGP62221 does not provide parent clearance or a distribution volume.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model; its metabolite compartments have n_cmt 0 and were flagged as unreachable or orphaned despite the listed metabolism links. Extracted — CGP62221: CLfm 1.47 L/h; CGP52421: CLfm 0.501 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — midostaurin: CL 1.47 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has midostaurin → cgp62221 (metabolism); midostaurin → cgp52421 (metabolism), the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has midostaurin → cgp62221 (metabolism); midostaurin → cgp52421 (metabolism), the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL(1) | `Q370` · CLfm | 1.47 | L/h | 4.083e-07 | m3/s | l/h | exact (1) | Yin_2008:abstract |
-| CL(2) | `Q370` · CLfm | 0.501 | L/h | 1.392e-07 | m3/s | l/h | exact (1) | Yin_2008:abstract |
+| CL(1) | `Q22` · CL | 1.47 | L/h | 4.083e-07 | m3/s | l/h | exact (1) | Yin_2008:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-
-| label (paper) | Q-code | link |
-|---|---|---|
-| total clearance of midostaurin | Q31 | llm_corrected |
-
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): '25 mg group' — extend the ontology if this is a real PK parameter (source ['Yin_2008:abstract'])
-- dropped unlinked row (NIL): '50 mg group' — extend the ontology if this is a real PK parameter (source ['Yin_2008:abstract'])
-- dropped unlinked row (NIL): '75 mg group' — extend the ontology if this is a real PK parameter (source ['Yin_2008:abstract'])
-- unit_dimension_unknown: 'fold' (CL_ratio)
+- dropped duplicate Q22 ('CL(2)', value 0.501) — already have one for this compound
+- dropped 'total clearance of midostaurin' → Q22: unit 'fold' is a statistic (%, CV, RSE, shrinkage or fold), not a clearance — the row is a variability or a ratio, not the estimate
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=midostaurin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: none — only the metabolite is modelled — no parent compartment
-- status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 6/6 row label(s) assigned, 3 linked by role; re-tagged midostaurin→CGP62221 ×1, midostaurin→CGP52421 ×1, midostaurin→parent ×1
+- row roles (LLM): model_class=compartmental; 3/3 row label(s) assigned, 5 linked by role; re-tagged midostaurin→parent ×7
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Yin_2008_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Yin_2008_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `model.links` | [['midostaurin', 'cgp62221', 'metabolism'], ['midostaurin', 'cgp52421', 'metabolism']] | [] | mismatch |
-| `qwen3.8-27b` | `parameters[cl]` | 0.501 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[cl]` | 1.47 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[cl]` |  | 1.47 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[total clearance of midostaurin]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['midostaurin', 'cgp62221', 'metabolism'], ['midostaurin', 'cgp52421', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` | 1.47 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 1.47 | only_one_extracted |
 
 </details>
 
@@ -120,11 +106,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['Yin_2008:abstract'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['Yin_2008:abstract'] |
+| C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Yin_2008:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.47 | ['Yin_2008:abstract'] |
 | C8_topology | fail |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.47 L/h | ['Yin_2008:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -148,4 +136,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmidostaurin%5D%20Midostaurin_Yin2008_reference&body=Drug%3A%20midostaurin%0ARecord%3A%20Midostaurin_Yin2008_reference%0APaper%3A%20Yin_2008%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_midostaurin/Midostaurin_Yin2008_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 02:52 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:34 UTC</sub>

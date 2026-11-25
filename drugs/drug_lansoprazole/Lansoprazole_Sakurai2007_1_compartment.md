@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Intercompartmental clearance Q3 was rejected because its reported unit of L/h/kg conflicts with the dimension of volume.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit l/kg ([length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="lansoprazole" model-id="Lansoprazole_Sakurai2007_1_compartment" status="rejected" stale="false" population="healthy Japanese males" measured-compound="lansoprazole" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Sakurai Y, Hirayama M, Hashimoto M, Tanaka T, Hasegawa S, Irie S et al. Populati
 
 ### Reviewer guidance
 
-**Intercompartmental clearance Q3 was rejected because its reported unit of L/h/kg conflicts with the dimension of volume.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit l/kg ([length] ** 3) vs [length] ** 3 / [time].**
 
-The record assigns a value of 0.548 with units of L/h/kg to the clearance between the central and third compartment. This unit is dimensionally inconsistent with a standard intercompartmental clearance, which requires a volume per time dimension. Additionally, the extraction failed to capture a distinct clearance parameter valued at 0.179 that a second reader identified. Extracted — lansoprazole: Q 0.104 l/kg, Q3 0.548 L/h/kg, CL 4.9 L/h, V 11 L.
+A reported unit could not be converted (Q), so that value has no SI equivalent. Extracted — lansoprazole: Q 0.104 l/kg, Q3 0.548 L/h/kg, CL 4.9 L/h, V 11 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lansoprazole, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

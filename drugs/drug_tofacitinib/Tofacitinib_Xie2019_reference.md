@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record refused due to second-reader disagreement on tofacitinib CL/F (20.4 vs 2.77 L/h) and V/F (110 vs 8.37 L).
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="tofacitinib" model-id="Tofacitinib_Xie2019_reference" status="needs_review" stale="false" population="adult patients with psoriatic arthritis" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Xie R, Deng C, Wang Q, Kanik KS, Nicholas T, Menon S. Population pharmacokinetic
 
 ### Reviewer guidance
 
-**Record refused due to second-reader disagreement on tofacitinib CL/F (20.4 vs 2.77 L/h) and V/F (110 vs 8.37 L).**
+**cross_check_disputed; x1_cross_check.**
 
-A second reader extracted substantially different values for the key parameters compared to this record. While absorption rate constants were close, the clearance and volume of distribution were disputed. This disagreement prevented consensus, resulting in a held status. Extracted — tofacitinib: CL/F 20.4 L/h, V/F 110 L, kabs 13.8 /h, tlag 0.3 h.
+Extracted — tofacitinib: CL/F 20.4 L/h, V/F 110 L, kabs 13.8 /h, tlag 0.3 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].value`: this record has 20.4, the second reading 2.77; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -163,7 +163,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.556, 0 of 1 reader(s) agree | 0.556 | cross-check disputed by a second reader: verdict disputed, agreement 0.556, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.556 (5 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.556 | cross-check contradicted by a second reader: verdict disputed; agreement 0.556 (5 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

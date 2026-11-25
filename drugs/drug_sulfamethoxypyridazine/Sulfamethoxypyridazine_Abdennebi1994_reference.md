@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
-> The terminal elimination rate constant and volume of distribution parameters in the sulfamethoxypyridazine model have invalid units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h⁻¹ (1 / [time]) vs 1 / [time]; Q75 unit l/kg.h ([length] ** 3 * [time]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="sulfamethoxypyridazine" model-id="Sulfamethoxypyridazine_Abdennebi1994_reference" status="rejected" stale="false" population="dromedary camels" measured-compound="sulfamethoxypyridazine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,7 +48,7 @@ Abdennebi EH, Bousfiha A, Ben Goumi M, Oukessou M. [Pharmacokinetics and plasma 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,11 +58,13 @@ Abdennebi EH, Bousfiha A, Ben Goumi M, Oukessou M. [Pharmacokinetics and plasma 
 
 ### Reviewer guidance
 
-**The terminal elimination rate constant and volume of distribution parameters in the sulfamethoxypyridazine model have invalid units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h⁻¹ (1 / [time]) vs 1 / [time]; Q75 unit l/kg.h ([length] ** 3 * [time]) vs [mass] / [length] ** 3.**
 
-The terminal elimination rate constant is recorded with unit l/kg.h instead of a reciprocal time unit, and the volume of distribution is recorded with unit l/kg instead of a volume or volume-per-mass unit. These dimensional conflicts prevent the model from being dimensionally consistent. The record was rejected because the units for these structural parameters do not match their pharmacokinetic definitions. Extracted — sulfamethoxypyridazine: λ1 5.09 h⁻¹, t1/2z 136 h, kel 61 h⁻¹, k12 3.44e+03 h⁻¹, k21 1.5e+03 h⁻¹, V 165 l/kg, Vss 544 l/kg, Ct 35 l/kg.h, … (+5).
+A reported unit could not be converted (equation variable, λ1, Ct and Cmax), so that value has no SI equivalent. Extracted — sulfamethoxypyridazine: λ1 5.09 h⁻¹, t1/2z 136 h, kel 61 h⁻¹, k12 3.44e+03 h⁻¹, k21 1.5e+03 h⁻¹, V 165 l/kg, Vss 544 l/kg, Ct 35 l/kg.h, … (+5).
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[a].parameter_id`: this record has Q900, the second reading Q71; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -115,6 +117,42 @@ The terminal elimination rate constant is recorded with unit l/kg.h instead of a
 - LLM region Abdennebi_1994:other_prose: Error code: 429 - {'error': {'message': 'Rate limit exceeded for api_key: 8d79104cac3d0b5a8019d9c3dd60ff02e7a84591fb3552ddb3bbcabd52b31d23. Limit type: max_parallel_requests. Current limit: 4, Remaining: 0. Limit resets at: 2026-10-07 11:41:39 UTC', 'type': 'throttling_error', 'param': None, 'code': '429'}}
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.385 (10/26 fields) | 16 |
+
+<details><summary>16 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a].parameter_id` | Q900 | Q71 | mismatch |
+| `gpt-oss-120b` | `parameters[b]` |  | 86.65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ct].value` | 0035 | 0.035 | mismatch |
+| `gpt-oss-120b` | `parameters[k12].value` | 3445 | 0.746 | mismatch |
+| `gpt-oss-120b` | `parameters[k21].value` | 1498 | 0.801 | mismatch |
+| `gpt-oss-120b` | `parameters[ka].value` | 0098 | 0.098 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2(k10)]` |  | 36.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2(ka)]` |  | 7.02 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2(α)].parameter_id` | Q57 | Q59 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2(α)].value` | 0136 | 0.136 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2(β)]` |  | 11.34 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tma]` | 8.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmr]` |  | 9.69 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd(c)].value` | 0165 | 0.165 | mismatch |
+| `gpt-oss-120b` | `parameters[vss].value` | 0544 | 0.544 | mismatch |
+| `gpt-oss-120b` | `parameters[β].value` | 0061 | 0.061 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

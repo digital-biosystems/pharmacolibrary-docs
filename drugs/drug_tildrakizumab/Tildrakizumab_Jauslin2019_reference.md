@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Tildrakizumab bioavailability (F) has no extracted value and was left at defaults; the second reader proposed 31%, but that value is disputed.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="tildrakizumab" model-id="Tildrakizumab_Jauslin2019_reference" status="needs_review" stale="false" population="healthy volunteers and subjects with psoriasis" measured-compound="tildrakizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Jauslin P, Kulkarni P, Li H, Vatakuti S, Hussain A, Wenning L et al. Population-
 
 ### Reviewer guidance
 
-**Tildrakizumab bioavailability (F) has no extracted value and was left at defaults; the second reader proposed 31%, but that value is disputed.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-F was not estimated from the paper, so library defaults rather than paper-supported estimates affect the simulated profile. The second reader proposed bioavailability of 31% and disagreed on whether tildrakizumab was the dose compound and primary analyte, as well as on several reported absorption and elimination parameters; agreement was 0.105. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — tildrakizumab: CL 0.32 L/day, V 10.8 L, t1/2ka 1.5 days, t1/2z 23.4 days, tlag 1.2 h, kabs 0.908 day−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tildrakizumab: CL 0.32 L/day, V 10.8 L, t1/2ka 1.5 days, t1/2z 23.4 days, tlag 1.2 h, kabs 0.908 day−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tildrakizumab, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -160,7 +160,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.105, 0 of 1 reader(s) agree | 0.105 | cross-check disputed by a second reader: verdict disputed, agreement 0.105, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.105 (2 of 19 compared fields agree, 15 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.105 | cross-check contradicted by a second reader: verdict disputed; agreement 0.105 (2 of 19 compared fields agree, 15 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

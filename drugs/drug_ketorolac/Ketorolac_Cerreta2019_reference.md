@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (reptile), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">reptile</span>
 
-> Ketorolac’s reported clearance of 0.651 L/h/kg and terminal half-life of 9.78 hr are disputed, so this abstract-only record was held for review.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Cerreta2019_reference" status="needs_review" stale="false" population="injured Eastern box turtles" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Cerreta AJ, Masterson CA, Lewbart GA, Dise DR, Papich MG. Pharmacokinetics of ke
 
 ### Reviewer guidance
 
-**Ketorolac’s reported clearance of 0.651 L/h/kg and terminal half-life of 9.78 hr are disputed, so this abstract-only record was held for review.**
+**cross_check_disputed; x1_cross_check.**
 
-Only the abstract was read, so its reported summary statistics stood in for a fitted model. The second reader disagreed with this record’s ketorolac clearance (0.651 L/h/kg), terminal elimination half-life (9.78 hr), and volume of distribution (0.26 L/kg); agreement was 0.4, below 0.5, with 0 of 1 reader agreeing. Extracted — ketorolac: t1/2z 9.78 hr, V 0.26 L/kg, CL 0.651 L/h/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ketorolac: t1/2z 9.78 hr, V 0.26 L/kg, CL 0.651 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 0.25; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial, agreement 0.4, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;sulpiride&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/&quot;},{&quot;label&quot;:&quot;Yao_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulpiride_Bressolle1984_reference&quot;,&quot;label&quot;:&quot;Bressolle_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Peris_1988_3H_ASP_release&quot;,&quot;label&quot;:&quot;Peris_1988 \u00b7 [3H]ASP release&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/pd_Peris_1988_3H_ASP_release.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulpiride_Bressolle1984_reference&quot;,&quot;label&quot;:&quot;Bressolle_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The record double-corrects for bioavailability by listing the separate fraction (0.818) while also reporting all kinetic parameters as apparent values.
+> C7 apparent-parameter coherence violated (double correction).
 
-<div class="pk-model-meta" hidden drug="sulpiride" model-id="Sulpiride_Yao2019_reference" status="rejected" stale="false" population="nude mice bearing MCF-7/Adr breast cancer xenografts" measured-compound="sulpiride" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="sulpiride" model-id="Sulpiride_Yao2019_reference" status="rejected" stale="false" population="nude mice" measured-compound="sulpiride" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Yao QY, Li J, Chen R, Yao Y, Xue JS, Chen WJ et al. Preclinical PK/PD model for the combinatorial use of dexamethasone and sulpiride in the treatment of breast cancer. Acta pharmacologica Sinica 40(12):1596–1602 (2019).
@@ -17,17 +17,17 @@ Yao QY, Li J, Chen R, Yao Y, Xue JS, Chen WJ et al. Preclinical PK/PD model for 
 
 ## Population and dosing
 
-**Population:** nude mice bearing MCF-7/Adr breast cancer xenografts · condition breast cancer xenograft · age group adult.
+**Population:** nude mice · condition breast cancer.
 
-**Dosing:** 1750, 3500, 7000 mg, oral, multiple, every 24 h.
+**Dosing:** 3500 mg, oral, single.
 
 > **Species: mouse.** This record comes from an animal study (mouse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 ## Model
 
 **Structure:** 2-compartment; no model was built for this record.  
-**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 7 extracted.  
+**Parameterization:** CL/F, Q/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 8 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -35,17 +35,18 @@ Yao QY, Li J, Chen R, Yao Y, Xue JS, Chen WJ et al. Preclinical PK/PD model for 
 
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
-| Ka1,sul (h−1) | kabs | 1.66 | h−1 | 5.3 |  |
+| λ0 (h−1)a | λ1 | 0.0065 | h−1 | 8.9 | 0 (None% RSE) |
+| Ka1,sul (h−1) | kabs | 1.66 | h−1 | 5.3 | 0 (None% RSE) |
 | f | Fab | 0.818 |  | 17.1 | 0 (None% RSE) |
-| Vc,sul/F (L/kg) | V1/F | 59.6 | L/kg | 24.2 |  |
-| Vp,sul/F (L/kg) | V2/F | 392 | L/kg | 34.9 |  |
-| CLsul/F (L·kg−1·h−1) | CL/F | 12.1 | L·kg−1·h−1 | 1.5 |  |
-| Qsul/F (L·kg−1·h−1) | Q/F | 29.4 | L·kg−1·h−1 | 3.6 |  |
+| Vc,sul/F (L/kg) | V1 | 59.6 | L/kg | 24.2 | 0 (None% RSE) |
+| Vp,sul/F (L/kg) | V2/F | 392 | L/kg | 34.9 | 136.4 (None% RSE) |
+| CLsul/F (L·kg−1·h−1) | CL/F | 12.1 | L·kg−1·h−1 | 1.5 | 0 (None% RSE) |
+| Qsul/F (L·kg−1·h−1) | Q/F | 29.4 | L·kg−1·h−1 | 3.6 | 0 (None% RSE) |
 | Tlag (h) | tlag | 1.50 | h |  | 0 (None% RSE) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.783). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,25 +56,26 @@ Yao QY, Li J, Chen R, Yao Y, Xue JS, Chen WJ et al. Preclinical PK/PD model for 
 
 ### Reviewer guidance
 
-**The record double-corrects for bioavailability by listing the separate fraction (0.818) while also reporting all kinetic parameters as apparent values.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The parameter set includes an explicit absolute bioavailability value of 0.818. Simultaneously, the absorption rate constant, volumes, clearances, and lag time are all defined as apparent parameters adjusted for bioavailability. This creates a mathematical inconsistency where the model structure and parameter definitions contradict the presence of the unadjusted bioavailability fraction. Extracted — sulpiride: kabs 1.66 h−1, Fab 0.818, V1/F 59.6 L/kg, V2/F 392 L/kg, CL/F 12.1 L·kg−1·h−1, Q/F 29.4 L·kg−1·h−1, tlag 1.5 h.
+Extracted — sulpiride: λ1 0.0065 h−1, kabs 1.66 h−1, Fab 0.818, V1 59.6 L/kg, V2/F 392 L/kg, CL/F 12.1 L·kg−1·h−1, Q/F 29.4 L·kg−1·h−1, tlag 1.5 h.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of qsul/f: this record has 29.4, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ka1,sul (h−1) | `Q49` · kabs | 1.66 | h−1 | 0.0004611 | 1/s | 1/h | 5.3 | llm (0.6) | Tab1:row1:col2 |  |
-| f | `Q40` · Fab | 0.818 |  |  |  |  | 17.1 | exact (1) | Tab1:row3:col2 | 0 (None% RSE) |
-| Vc,sul/F (L/kg) | `Q290` · V1/F | 59.6 | L/kg | 4.172 | m3 | l/kg | 24.2 | llm_corrected (0.6) | Tab1:row4:col2 |  |
-| Vp,sul/F (L/kg) | `Q82` · V2/F | 392 | L/kg | 27.44 | m3 | l/kg | 34.9 | llm_corrected (0.6) | Tab1:row5:col2 |  |
-| CLsul/F (L·kg−1·h−1) | `Q27` · CL/F | 12.1 | L·kg−1·h−1 | 0.0002353 | m3/s | l/(h·kg) | 1.5 | llm (0.6) | Tab1:row6:col2 |  |
-| Qsul/F (L·kg−1·h−1) | `Q69` · Q/F | 29.4 | L·kg−1·h−1 | 0.0005717 | m3/s | l/(h·kg) | 3.6 | llm (0.6) | Tab1:row7:col2 |  |
-| Tlag (h) | `Q83` · tlag | 1.50 | h | 5400 | s | h |  | exact (1) | Tab1:row8:col2 | 0 (None% RSE) |
+| λ0 (h−1)a | `Q67` · λ1 | 0.0065 | h−1 | 1.806e-06 | 1/s | 1/h | 8.9 | llm (0.6) | Tab2:row1:col2 | 0 (None% RSE) |
+| Ka1,sul (h−1) | `Q49` · kabs | 1.66 | h−1 | 0.0004611 | 1/s | 1/h | 5.3 | llm (0.6) | Yao_2019_table_1:row0:col2 | 0 (None% RSE) |
+| f | `Q40` · Fab | 0.818 |  |  |  |  | 17.1 | exact (1) | Yao_2019_table_1:row2:col2 | 0 (None% RSE) |
+| Vc,sul/F (L/kg) | `Q63` · V1 | 59.6 | L/kg | 4.172 | m3 | l/kg | 24.2 | llm_confirmed (0.6) | Yao_2019_table_1:row3:col2 | 0 (None% RSE) |
+| Vp,sul/F (L/kg) | `Q82` · V2/F | 392 | L/kg | 27.44 | m3 | l/kg | 34.9 | llm_corrected (0.6) | Yao_2019_table_1:row4:col2 | 136.4 (None% RSE) |
+| CLsul/F (L·kg−1·h−1) | `Q27` · CL/F | 12.1 | L·kg−1·h−1 | 0.0002353 | m3/s | l/(h·kg) | 1.5 | llm (0.6) | Yao_2019_table_1:row5:col2 | 0 (None% RSE) |
+| Qsul/F (L·kg−1·h−1) | `Q69` · Q/F | 29.4 | L·kg−1·h−1 | 0.0005717 | m3/s | l/(h·kg) | 3.6 | llm (0.6) | Yao_2019_table_1:row6:col2 | 0 (None% RSE) |
+| Tlag (h) | `Q83` · tlag | 1.50 | h | 5400 | s | h |  | exact (1) | Yao_2019_table_1:row7:col2 | 0 (None% RSE) |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -83,6 +85,11 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'λ0 (h−1)a' routed out of structural estimates ('IIV (%CV)')
+- table section iiv: 'λ1 (mm3·h−1)a' routed out of structural estimates ('IIV (%CV)')
+- table section iiv: 'ω0 (mm3)a' routed out of structural estimates ('IIV (%CV)')
+- table section iiv: 'EC50 (ng/mL)a' routed out of structural estimates ('IIV (%CV)')
+- table section iiv: 'IC50 (ng/mL)' routed out of structural estimates ('IIV (%CV)')
 - table section iiv: 'Ka1,sul (h−1)' routed out of structural estimates ('IIV (%CV)')
 - table section iiv: 'Ka2,sul (h−1)' routed out of structural estimates ('IIV (%CV)')
 - table section iiv: 'f' routed out of structural estimates ('IIV (%CV)')
@@ -91,22 +98,37 @@ Independently confirmed by `gpt-oss-120b`.
 - table section iiv: 'CLsul/F (L·kg−1·h−1)' routed out of structural estimates ('IIV (%CV)')
 - table section iiv: 'Qsul/F (L·kg−1·h−1)' routed out of structural estimates ('IIV (%CV)')
 - table section iiv: 'Tlag (h)' routed out of structural estimates ('IIV (%CV)')
+- dropped duplicate Q67 ('λ1 (mm3·h−1)a', value '28.1') — already have one for this compound
+- dropped unlinked row (NIL): 'ω0 (mm3)a' — extend the ontology if this is a real PK parameter (source ['Tab2:row3:col2'])
+- dropped PD-category row 'EC50 (ng/mL)a' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row4:col2'])
+- dropped PD-category row 'IC50 (ng/mL)' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row5:col2'])
 - dropped duplicate Q49 ('Ka2,sul (h−1)', value '538') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=sulpiride
 
 **Extraction notes:**
+- companion parameter table 1 transcribed (17 record(s))
 - LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (18/18 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.783 (18/23 fields) | 5 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>5 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[qsul/f]` | 29.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc,sul/f].parameter_id` | Q63 | Q290 | mismatch |
+| `gpt-oss-120b` | `parameters[λ0 (h-1)a].parameter_id` | Q67 | Q47 | mismatch |
+| `gpt-oss-120b` | `parameters[λ1 (mm3 h-1)a]` |  | 28.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ω0 (mm3)a]` |  | 38 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -118,20 +140,21 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 7 |  |
+| C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tab1:row6:col2'] |
-| C5_dimension_Q290 | pass | [length] ** 3 |  | ['Tab1:row4:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab1:row1:col2'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Tab1:row7:col2'] |
-| C5_dimension_Q82 | pass | [length] ** 3 |  | ['Tab1:row5:col2'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Tab1:row8:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Yao_2019_table_1:row5:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Yao_2019_table_1:row0:col2'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Yao_2019_table_1:row3:col2'] |
+| C5_dimension_Q67 | pass | 1 / [time] |  | ['Tab2:row1:col2'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Yao_2019_table_1:row6:col2'] |
+| C5_dimension_Q82 | pass | [length] ** 3 |  | ['Yao_2019_table_1:row4:col2'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Yao_2019_table_1:row7:col2'] |
 | C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.818 with apparent parameterization |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 847 L/h | ['Tab1:row6:col2'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 4.17e+03 L | ['Tab1:row4:col2'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 2.74e+04 L | ['Tab1:row5:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 847 L/h | ['Yao_2019_table_1:row5:col2'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 4.17e+03 L | ['Yao_2019_table_1:row3:col2'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 2.74e+04 L | ['Yao_2019_table_1:row4:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -155,4 +178,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulpiride%5D%20Sulpiride_Yao2019_reference&body=Drug%3A%20sulpiride%0ARecord%3A%20Sulpiride_Yao2019_reference%0APaper%3A%20Yao_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulpiride/Sulpiride_Yao2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 17:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 15:19 UTC</sub>

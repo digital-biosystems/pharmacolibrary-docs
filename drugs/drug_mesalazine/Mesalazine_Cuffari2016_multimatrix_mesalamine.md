@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model's simulated tmax (0.183 h) drastically underestimates the paper's reported tmax (2.0–9.0 h) due to incorrect unit handling and a mismatch between the one-compartment structure and the parent-metabolite topology.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 6, model 0.183); t3_output_variable (+2 more).
 
 <div class="pk-model-meta" hidden drug="mesalazine" model-id="Mesalazine_Cuffari2016_multimatrix_mesalamine" status="rejected" stale="false" population="children and adolescents with ulcerative colitis" measured-compound="5-ASA" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -52,13 +52,13 @@ Cuffari C, Pierce D, Korczowski B, Fyderek K, Van Heusen H, Hossack S et al. Ran
 
 ### Reviewer guidance
 
-**The model's simulated tmax (0.183 h) drastically underestimates the paper's reported tmax (2.0–9.0 h) due to incorrect unit handling and a mismatch between the one-compartment structure and the parent-metabolite topology.**
+**The model does not reproduce the paper's time of the peak (tmax) (paper 6, model 0.183); t3_output_variable (+2 more).**
 
-Simulations produced a time to peak of 0.183 hours, which is roughly 2–50 times shorter than the 2.0 to 9.0 hours reported in the study, indicating a failure to replicate the observed absorption kinetics. The model defines a parent-metabolite relationship with acetylated metabolite, yet the underlying structure is a single-compartment system, creating a structural mismatch that likely distorts the concentration profile. A second reader also disputed the assignment of the dose compound and the linkage of clearance and volume parameters to specific analytes, resulting in zero agreement on the record's validity. Extracted — mesalazine: CL 85.6 L/h, V1 109 L.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Extracted — mesalazine: CL 85.6 L/h, V1 109 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mesalazine, the second reading mesalamine; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -183,13 +183,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
-| T1_tmax | reference | fail | 6 | 0.1833 | 0.0306 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 9 | 0.1833 | 0.0204 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 2 | 0.1833 | 0.0917 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 9 | 0.1833 | 0.0204 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 7.5 | 0.1833 | 0.0244 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 2 | 0.1833 | 0.0917 | hours→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.375 | cross-check contradicted by a second reader: verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_tmax | reference | fail | 6 | 0.1833 | 0.0306 | reported 6.0 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 9 | 0.1833 | 0.0204 | reported 9.0 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 2 | 0.1833 | 0.0917 | reported 2.0 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 9 | 0.1833 | 0.0204 | reported 9.0 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 7.5 | 0.1833 | 0.0244 | reported 7.5 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 2 | 0.1833 | 0.0917 | reported 2.0 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;triazolam&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/&quot;},{&quot;label&quot;:&quot;Cha_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triazolam_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Triazolam_van2011_reference&quot;,&quot;label&quot;:&quot;van_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_van2011_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lloyd_1990_35S_TBPS_binding&quot;,&quot;label&quot;:&quot;Lloyd_1990 \u00b7 35S-TBPS binding&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Lloyd_1990_35S_TBPS_binding.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Cognitive_function&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Cognitive function&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Cognitive_function.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Sedation&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Sedation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Sedation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triazolam_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Triazolam_van2011_reference&quot;,&quot;label&quot;:&quot;van_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_van2011_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Cognitive_function&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Cognitive function&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Cognitive_function.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Sedation&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Sedation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Sedation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the paper studies zolpidem, not triazolam, making the extracted triazolam parameters invalid.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="triazolam" model-id="Triazolam_Cha2024_reference" status="rejected" stale="false" population="" measured-compound="triazolam" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Cha HJ, Han S, Pak KC, Kim H. Development of a Web Application for Simulating Pl
 
 ### Reviewer guidance
 
-**Record rejected because the paper studies zolpidem, not triazolam, making the extracted triazolam parameters invalid.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source paper is a population PK study of zolpidem, where triazolam is merely a comparator example. Consequently, the recorded triazolam parameters (CL/F 19.76 L/h, V/F 74.8 L, kabs 5.41 1/h, tlag 0.394 h) are not from a triazolam study. A second reader disagreed on two field values, finding 158.91 and 0.853 instead of null. Extracted — triazolam: CL/F 19.8 L/h, V/F 74.8 L, kabs 5.41 1/h, tlag 0.394 h.
+Extracted — triazolam: CL/F 19.8 L/h, V/F 74.8 L, kabs 5.41 1/h, tlag 0.394 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 158.91; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.857 (12 of 14 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

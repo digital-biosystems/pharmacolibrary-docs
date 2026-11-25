@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The creatinine clearance value of 30 mL/min was incorrectly recorded as a disposition parameter for lenalidomide.
+> biomarker_kinetics_as_drug_pk; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="lenalidomide" model-id="Lenalidomide_Hughes2019_reference" status="rejected" stale="false" population="adults with B-cell malignancies (multiple myeloma, CLL, AML, ALL)" measured-compound="lenalidomide" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Hughes JH, Phelps MA, Upton RN, Reuter SE, Gao Y, Byrd JC et al. Population phar
 
 ### Reviewer guidance
 
-**The creatinine clearance value of 30 mL/min was incorrectly recorded as a disposition parameter for lenalidomide.**
+**biomarker_kinetics_as_drug_pk; t0_analyte_identity (+1 more).**
 
-The record lists a parameter named 'CL' with a meaning defining total clearance, but its label identifies it as creatinine clearance. This biomarker serves as a covariate, not a pharmacokinetic disposition parameter for the drug itself. Consequently, a second reader disputed the record, failing to identify the primary analyte or validate the extracted parameters. Extracted — lenalidomide: CL/F 12 L/h, V/F 68.8 L, ktr 13.5 h-1, CL 30 mL/min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lenalidomide: CL/F 12 L/h, V/F 68.8 L, ktr 13.5 h-1, CL 30 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lenalidomide, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -151,7 +151,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.154, 0 of 1 reader(s) agree | 0.154 | cross-check disputed by a second reader: verdict disputed, agreement 0.154, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.154 (2 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.154 | cross-check contradicted by a second reader: verdict disputed; agreement 0.154 (2 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

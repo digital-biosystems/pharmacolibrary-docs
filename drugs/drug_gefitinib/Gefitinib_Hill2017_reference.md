@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="gefitinib" model-id="Gefitinib_Hill2017_reference" status="rejected" stale="false" population="HRN and wild type mice" measured-compound="gefitinib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gefitinib" model-id="Gefitinib_Hill2017_reference" status="rejected" stale="false" population="Hepatic Reductase Null and wild type mice" measured-compound="gefitinib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hill L, Chaplain MAJ, Wolf R, Kapelyukh Y. The usage of a three-compartment model to investigate the metabolic differences between hepatic reductase null and wild-type mice. Mathematical medicine and biology : a journal of the IMA 34(1):1–13 (2017).
@@ -17,7 +17,7 @@ Hill L, Chaplain MAJ, Wolf R, Kapelyukh Y. The usage of a three-compartment mode
 
 ## Population and dosing
 
-**Population:** HRN and wild type mice · condition hepatic reductase null or wild type · n = 6.
+**Population:** Hepatic Reductase Null and wild type mice · condition healthy.
 
 > **Species: mouse.** This record comes from an animal study (mouse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -35,7 +35,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (confirmed, agreement 1.0), gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,38 +56,24 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'hrn' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'Gefitinib' — extend the ontology if this is a real PK parameter (source ['tab_0:row2:col2', 'tab_0:row2:col3', 'tab_0:row13:col2', 'tab_0:row13:col3'])
-- dropped unlinked row (NIL): 'Midazolam' — extend the ontology if this is a real PK parameter (source ['tab_0:row5:col2', 'tab_0:row5:col3', 'tab_0:row18:col2', 'tab_0:row18:col3'])
-- dropped unlinked row (NIL): 'Thalidomide' — extend the ontology if this is a real PK parameter (source ['tab_0:row8:col2', 'tab_0:row8:col3', 'tab_0:row23:col2', 'tab_0:row23:col3'])
+- dropped unlinked row (NIL): 'HRN' — extend the ontology if this is a real PK parameter (source ['tab_1:row1:col1', 'tab_1:row1:col2', 'tab_1:row1:col3', 'tab_1:row1:col4', 'tab_1:row1:col5', 'tab_1:row1:col6'])
+- dropped unlinked row (NIL): 'WT' — extend the ontology if this is a real PK parameter (source ['tab_1:row2:col1', 'tab_1:row2:col2', 'tab_1:row2:col3', 'tab_1:row2:col4', 'tab_1:row2:col5', 'tab_1:row2:col6'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gefitinib
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- unparsed cell tab_0:row2:col1 = 'k 12'
-- unparsed cell tab_0:row2:col4 = '1:0.316'
-- unparsed cell tab_0:row5:col1 = 'k 12'
-- unparsed cell tab_0:row5:col4 = '1:0.422'
-- unparsed cell tab_0:row8:col1 = 'k 12'
-- unparsed cell tab_0:row8:col4 = '1:0.072'
-- unparsed cell tab_0:row13:col1 = 'k 23'
-- unparsed cell tab_0:row13:col4 = '1:0.814'
-- unparsed cell tab_0:row18:col1 = 'k 23'
-- unparsed cell tab_0:row18:col4 = '1:0.605'
-- unparsed cell tab_0:row23:col1 = 'k 23'
-- unparsed cell tab_0:row23:col4 = '1:0.398'
-- LLM selected parameter table(s) 1
+- table tab_1: units_need_context
+- LLM selected parameter table(s) 2
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | confirmed | 1.0 (4/4 fields) | none |
 | `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
+| `qwen3.8-27b` | confirmed | 1.0 (4/4 fields) | none |
 
 <details><summary>2 field discrepancies</summary>
 
@@ -134,4 +120,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgefitinib%5D%20Gefitinib_Hill2017_reference&body=Drug%3A%20gefitinib%0ARecord%3A%20Gefitinib_Hill2017_reference%0APaper%3A%20Hill_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gefitinib/Gefitinib_Hill2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 01:01 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:08 UTC</sub>

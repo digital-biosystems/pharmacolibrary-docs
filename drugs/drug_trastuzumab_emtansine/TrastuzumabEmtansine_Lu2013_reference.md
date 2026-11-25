@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The trastuzumab metabolite lacks a clearance parameter, leaving the orphan compartment without an elimination path for the 0.4 L/day T-DM1 clearance.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="trastuzumab emtansine" model-id="TrastuzumabEmtansine_Lu2013_reference" status="rejected" stale="false" population="patients with HER2-positive metastatic breast cancer" measured-compound="trastuzumab emtansine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -45,13 +45,13 @@ Lu D, Joshi A, Wang B, Olsen S, Yi JH, Krop IE et al. An integrated multiple-ana
 
 ### Reviewer guidance
 
-**The trastuzumab metabolite lacks a clearance parameter, leaving the orphan compartment without an elimination path for the 0.4 L/day T-DM1 clearance.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a link converting T-DM1 to trastuzumab, but no clearance parameter is assigned to the trastuzumab compartment. This structural gap means the metabolite cannot eliminate, violating pharmacokinetic mass balance. The review refused the model because the deconjugation clearance of 0.4 L/day applies to the parent drug, not the metabolite. Extracted — trastuzumab emtansine: CL 0.4 L/day.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — trastuzumab emtansine: CL 0.4 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trastuzumab emtansine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

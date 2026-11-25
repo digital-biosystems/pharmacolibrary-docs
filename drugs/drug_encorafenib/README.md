@@ -53,7 +53,7 @@ Encorafenib is a protein kinase inhibitor used to treat melanoma and colorectal 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:41 | 3:14 | 1/0/0 | 1/0/0 | 0/0/0 | 70,098/17,367 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 21:41 | 0:03 | 1/0/0 | 1/0/0 | 0/0/0 | 3,685/154 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -62,21 +62,12 @@ Encorafenib is a protein kinase inhibitor used to treat melanoma and colorectal 
 - **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Pétermann_2026.pdf` | Pétermann YJ et al., Population pharmacokinetics of encorafe…, Cancer chemotherapy and pha… (2026) | popPK | 10 | [10.1007/s00280-026-04876-y](https://doi.org/10.1007/s00280-026-04876-y) | [41843134](https://pubmed.ncbi.nlm.nih.gov/41843134) | The human popPK model is described and numeric exposure metrics and half-life are given, but numeric model parameter estimates are not. |
-
-<sub>queue written 2026-10-06 23:38 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Kim_2019 | irrelevant | 1 | 0 | This is a review and provides no numeric encorafenib disposition parameters in the supplied evidence. |
+| popPK | Kim_2019 | irrelevant | 2 | 0 | The paper is a review article discussing the clinical PK and PD of melanoma treatments including encorafenib, but the provided evidence contains no original quantitative PK parameter values. |
+| PGx | Kim_2019 | not_relevant | 0 | 0 | The paper is a general review of melanoma therapies and does not report specific pharmacogenomic effects of gene variants on encorafenib PK/PD parameters. |
 | popPK | Pétermann_2026 | relevant | 10 | 3 | The human popPK model is described and numeric exposure metrics and half-life are given, but numeric model parameter estimates are not. |
 
 

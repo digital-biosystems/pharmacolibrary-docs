@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;chloroquine&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/&quot;},{&quot;label&quot;:&quot;Abd-Rahman_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloroquine_AbdRahman2020_reference&quot;,&quot;label&quot;:&quot;Abd-Rahman_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Chloroquine_Yao2021_reference&quot;,&quot;label&quot;:&quot;Yao_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Yao2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Franco_2023_R&quot;,&quot;label&quot;:&quot;Franco_2023 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/pd_Franco_2023_R.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloroquine_AbdRahman2020_reference&quot;,&quot;label&quot;:&quot;Abd-Rahman_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_AbdRahman2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Chloroquine_Yao2021_reference&quot;,&quot;label&quot;:&quot;Yao_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Yao2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloroquine_Chairat2018_reference&quot;,&quot;label&quot;:&quot;Chairat_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloroquine/Chloroquine_Chairat2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life.
+> The model does not reproduce the paper's terminal half-life; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="chloroquine" model-id="Chloroquine_AbdRahman2020_reference" status="needs_review" stale="false" population="healthy adults inoculated with blood-stage Plasmodium vivax" measured-compound="chloroquine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -48,7 +48,7 @@ Abd-Rahman AN, Marquart L, Gobeau N, Kümmel A, Simpson JA, Chalon S et al. Popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,11 +58,13 @@ Abd-Rahman AN, Marquart L, Gobeau N, Kümmel A, Simpson JA, Chalon S et al. Popu
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life.**
+**The model does not reproduce the paper's terminal half-life; x1_cross_check.**
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — chloroquine: kabs 0.943 hour−1, Frel 100, CL/F 54.6 L/h, V1/F 2.93e+03 L, Q 47.2 L/h, V2/F 4.7e+03 L; desethylchloroquine: CL/F 37.6 L/h, V1/F 40 L, Q/F 36.3 L/h, V2/F 2.84e+03 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clcq/f].rse_percent`: this record has none, the second reading 5; it also differs on 17 more fields. That field does not shape the model.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -111,6 +113,44 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.4 (12/30 fields) | 18 |
+
+<details><summary>18 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clcq/f].rse_percent` |  | 5 | mismatch |
+| `gpt-oss-120b` | `parameters[cldcq/f].rse_percent` |  | 6 | mismatch |
+| `gpt-oss-120b` | `parameters[cq auc0-inf]` |  | 80 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cq cmax]` |  | 0.72 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cq t12]` |  | 149 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cq tmax]` |  | 4.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dcq auc0-inf]` |  | 21 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dcq cmax]` |  | 0.08 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dcq t12]` |  | 104 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dcq tmax]` |  | 3.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[frel]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka].rse_percent` |  | 21 | mismatch |
+| `gpt-oss-120b` | `parameters[q1cqf].rse_percent` |  | 9 | mismatch |
+| `gpt-oss-120b` | `parameters[q1dcq/f].rse_percent` |  | 11 | mismatch |
+| `gpt-oss-120b` | `parameters[vc cq/f]` | 2930 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc dcq/f].rse_percent` |  | 39 | mismatch |
+| `gpt-oss-120b` | `parameters[vp1 cq/f]` | 4700 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp1 dcq/f]` | 2840 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -151,9 +191,9 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 | T3_shared_parameters |  | skipped |  |  |  | parent–metabolite template: every compound has its own slot |
 | T3_topology_template |  | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_terminal | reference | skipped |  | 126.5 |  | non-numeric value |
-| T1_t_half_terminal | reference | fail | 4.5 | 126.5 | 28.1 | hours→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.4 (12 of 30 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.4 | cross-check contradicted by a second reader: verdict disputed; agreement 0.4 (12 of 30 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | skipped |  | 126.5 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | fail | 4.5 | 126.5 | 28.1 | reported 4.5 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

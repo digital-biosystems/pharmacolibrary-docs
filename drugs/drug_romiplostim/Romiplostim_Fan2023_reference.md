@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Romiplostim elimination rate constant kel had unit 'units', causing a dimension mismatch against expected reciprocal time units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit units ([luminosity] / [length] ** 2) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="romiplostim" model-id="Romiplostim_Fan2023_reference" status="rejected" stale="false" population="rats with chemotherapy-induced anemia and thrombocytopenia" measured-compound="romiplostim" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Fan X, Krzyzanski W, Wong RSM, Liu D, Yan X. Novel Combination of Erythropoietin
 
 ### Reviewer guidance
 
-**Romiplostim elimination rate constant kel had unit 'units', causing a dimension mismatch against expected reciprocal time units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit units ([luminosity] / [length] ** 2) vs 1 / [time].**
 
-The elimination rate constant kel (52.94) was recorded with unit 'units' instead of a valid reciprocal time unit, creating a dimensional conflict. Although absorption rate constant kabs (0.0269) had correct units of 1/h, the malformed unit for kel prevented valid SI conversion. Second reader disagreements on parameters tmp and tret were noted but did not alter the fundamental unit error for kel. Extracted — romiplostim: kel 52.9 units, kabs 0.0269 1/h.
+A reported unit could not be converted (kel), so that value has no SI equivalent. Extracted — romiplostim: kel 52.9 units, kabs 0.0269 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of tmp: this record has none, the second reading 106; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

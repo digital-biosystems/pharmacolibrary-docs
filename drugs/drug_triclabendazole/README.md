@@ -32,12 +32,6 @@ Triclabendazole is an anthelmintic in the benzimidazole family, primarily indica
 | <span class="pk-rf" hidden data-species="cattle" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [↳ sheep](drugs/drug_triclabendazole/Triclabendazole_Mestorino2008_sheep.md) | — | 1-compartment (no model) | 5 |  |  |
 | <span class="pk-rf" hidden data-species="rabbit" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Alvarez-Bujidos_1993_reference](drugs/drug_triclabendazole/Triclabendazole_AlvarezBujidos1993_reference.md) | — | general linear (no model) | 2 | Alvarez-Bujidos ML et al., Pharmacokinetics of triclabendazole in…, Comparative biochemistry an… (1993) | [10.1016/0742-8413(93)90245-g](https://doi.org/10.1016/0742-8413(93)90245-g) |
 
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Dupuy_2010_Rho_123](drugs/drug_triclabendazole/pd_Dupuy_2010_Rho_123.md) | intracellular rhodamine 123 accumulation in Pgp-overexpressing LLC-PK1-mdr1a cells ← triclabendazole · direct Emax (saturable) effect | — | Dupuy J et al., Interaction of anthelmintic drugs with…, Chemico-biological interact… (2010) | [10.1016/j.cbi.2010.05.013](https://doi.org/10.1016/j.cbi.2010.05.013) |
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -50,7 +44,7 @@ Triclabendazole is an anthelmintic in the benzimidazole family, primarily indica
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:36 | 1:27 | 2/1/0 | 0/1/0 | 0/0/0 | 66,048/5,093 | ollama / glm-5.3-flash | 2 | 1/1 | 2/0 | 0 |
+| 2026-11-24 04:58 | 0:03 | 2/1/0 | 0/0/0 | 0/0/0 | 3,919/167 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## Coverage
 
@@ -59,29 +53,22 @@ Triclabendazole is an anthelmintic in the benzimidazole family, primarily indica
 - **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Alvarez-Bujidos_1993.pdf` | Alvarez-Bujidos ML et al., Pharmacokinetics of triclabendazole in…, Comparative biochemistry an… (1993) | popPK | 8 | [10.1016/0742-8413(93)90245-g](https://doi.org/10.1016/0742-8413(93)90245-g) | [7905812](https://pubmed.ncbi.nlm.nih.gov/7905812) | Reports PK of triclabendazole metabolites (sulphoxide/sulphone) in rabbits with half-lives, Cmax, AUC; some parameters (CL, V) may be in full text/tables not shown. |
-| `Viviani_2019.pdf` | Viviani P et al., Pharmacologic interaction between oxfen…, Experimental parasitology (2019) | popPK | 7 | [10.1016/j.exppara.2019.107718](https://doi.org/10.1016/j.exppara.2019.107718) | [31201779](https://pubmed.ncbi.nlm.nih.gov/31201779) | PK study of triclabendazole in sheep with NCA parameters, but numeric values are not present in the provided evidence (likely in tables/figures not included). |
-
-<sub>queue written 2026-10-07 09:34 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chakroborty_2022 | irrelevant | 0 | 0 | In-vitro anthelmintic efficacy study of abietane analogues; triclabendazole only mentioned as comparator context, no PK parameters. |
-| popPK | Dupuy_2010 | irrelevant | 0 | 0 | In-vitro P-glycoprotein interaction study with no PK disposition parameters for triclabendazole. |
+| PGx | Alvarez-Bujidos_1993 | not_relevant | 0 | 0 | The paper describes standard pharmacokinetics in rabbits but does not report any gene variant, genotype, or phenotype influencing the PK parameters. |
+| popPK | Chakroborty_2022 | irrelevant | 0 | 0 | The paper focuses on the flukicidal activity of abietic acid analogues in vitro, with triclabendazole only mentioned as background for drug resistance; no PK parameters are reported. |
+| PGx | Chakroborty_2022 | not_relevant | 0 | 0 | The study evaluates the efficacy of novel abietane diterpenoid analogues against liver flukes and does not report pharmacogenomic effects on triclabendazole pharmacokinetics or pharmacodynamics. |
+| popPK | Dupuy_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of P-glycoprotein interactions and does not report pharmacokinetic disposition parameters for triclabendazole. |
+| PGx | Dupuy_2010 | not_relevant | 1 | 2 | The study investigates the interaction of triclabendazole with P-glycoprotein in a heterologous cell line, not a pharmacogenomic effect in humans. |
 | popPK | Hamali_2018 | irrelevant | 0 | 0 | This is an in-vitro study of a Fasciola hepatica taurine transporter; triclabendazole is only mentioned as the drug of choice, with no PK parameters for it. |
-| popPK | Viviani_2019 | relevant | 7 | 3 | PK study of triclabendazole in sheep with NCA parameters, but numeric values are not present in the provided evidence (likely in tables/figures not included). |
+| popPK | Viviani_2019 | irrelevant | 2 | 0 | The study involves co-administration with oxfendazole, and while it mentions PK parameters were calculated, no specific numeric values for triclabendazole alone or in combination are provided in the evidence. |
+| PGx | Viviani_2019 | not_relevant | 0 | 0 | The paper describes a drug-drug interaction (between triclabendazole and oxfendazole) and contains no pharmacogenomic or genetic variant analysis. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btriclabendazole%5D&body=Drug%3A%20triclabendazole%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_triclabendazole/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 09:34 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 04:58 UTC</sub>

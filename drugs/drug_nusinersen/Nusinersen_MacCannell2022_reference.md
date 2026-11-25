@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for nusinersen is rejected because the volume of distribution value of 0.391 L is outside the physiological window.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="nusinersen" model-id="Nusinersen_MacCannell2022_reference" status="rejected" stale="false" population="people with spinal muscular atrophy" measured-compound="nusinersen" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ MacCannell D, Berger Z, Kirschner J, Mercuri E, Farrar MA, Iannaccone ST et al. 
 
 ### Reviewer guidance
 
-**The record for nusinersen is rejected because the volume of distribution value of 0.391 L is outside the physiological window.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted parameter for nusinersen is assigned a volume of distribution of 0.391 L. This value was flagged as having an implausible magnitude, suggesting a potential error in unit or scale extraction. A secondary review noted a discrepancy regarding which compartment this value represents, with one record indicating a general value and another indicating a CSF compartment value. Extracted — nusinersen: V 0.391 L.
+Extracted — nusinersen: V 0.391 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of predicted volume of distribution: this record has 0.391, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

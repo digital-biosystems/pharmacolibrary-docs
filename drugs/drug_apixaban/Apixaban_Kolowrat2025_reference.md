@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Apixaban clearance is recorded as 33%, which is dimensionally invalid for a volume-based pharmacokinetic parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit % (dimensionless) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="apixaban" model-id="Apixaban_Kolowrat2025_reference" status="rejected" stale="false" population="hospitalized patients with nonvalvular atrial fibrillation" measured-compound="apixaban" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Kolowrat S, Riley C, Lam K, Thomson L, Stickle DF, Kraft WK. Real-World Impact o
 
 ### Reviewer guidance
 
-**Apixaban clearance is recorded as 33%, which is dimensionally invalid for a volume-based pharmacokinetic parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit % (dimensionless) vs [length] ** 3 / [time].**
 
-The record lists apixaban clearance with a value of 33 and unit '%', which is dimensionless rather than volume per time. This unit conflict causes a dimension mismatch for the structural parameter. The second reader could not extract valid numeric values for either the clearance or volume of distribution parameters. Extracted — apixaban: CL 33 %, V 21 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — apixaban: CL 33 %, V 21 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has apixaban, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

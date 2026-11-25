@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because aclarubicin CL/F 7.33 L/h is misattributed: the paper reports venetoclax pharmacokinetics, with aclarubicin only a co-medication.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="aclarubicin" model-id="Aclarubicin_Liu2026_reference" status="rejected" stale="false" population="" measured-compound="aclarubicin" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Liu Z, Liu X, Gong Q, Qin S, Zhu X, Kuan IH et al. Real-World Pharmacokinetic an
 
 ### Reviewer guidance
 
-**Rejected because aclarubicin CL/F 7.33 L/h is misattributed: the paper reports venetoclax pharmacokinetics, with aclarubicin only a co-medication.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper is about venetoclax, and aclarubicin is only a co-administered drug; the reported pharmacokinetic parameters are for venetoclax, despite this record listing aclarubicin CL/F as 7.33 L/h. The model builder also defaulted Tlag instead of using an explicit estimate and assumed F=1, Fm=1, with no molar correction for the apparent parameters. Extracted — aclarubicin: CL/F 7.33 L/h, V/F 181 L, kabs 0.16 /h.
+Extracted — aclarubicin: CL/F 7.33 L/h, V/F 181 L, kabs 0.16 /h.
 
 Independently confirmed by `glm-5.3-flash`, `qwen3.8-27b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -124,7 +124,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (6 of 6 compared fields agree); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

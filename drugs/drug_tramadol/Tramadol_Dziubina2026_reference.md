@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Tramadol’s reported V/F of 187.73 L/kg comes from a paper about another drug, and absorption parameters were defaulted rather than estimated.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Dziubina2026_reference" status="rejected" stale="false" population="" measured-compound="tramadol" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Dziubina A, Szkatuła D, Szafarz M, Siwek A, Kowalski M, Gdula-Argasińska J. Se
 
 ### Reviewer guidance
 
-**Tramadol’s reported V/F of 187.73 L/kg comes from a paper about another drug, and absorption parameters were defaulted rather than estimated.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-Neither the paper’s title nor abstract names tramadol; the relevance screen identified the paper as being about another drug. The model defaulted ka and Tlag, including an unreported absorption rate, and assumed F=1, Fm=1, and no molar correction under apparent parameterization. The second reader disputes assigning 187.73 L/kg to volume: this record gives that value for V/F, while the second reader gives no value there and assigns 187.73 to another field. Extracted — tramadol: CL/F 36.5 L/h/kg, V/F 188 L/kg.
+Extracted — tramadol: CL/F 36.5 L/h/kg, V/F 188 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q353: this record has 187.73, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

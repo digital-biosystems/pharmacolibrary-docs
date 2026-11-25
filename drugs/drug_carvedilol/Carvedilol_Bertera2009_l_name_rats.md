@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Clearance and AUC parameters for carvedilol failed dimensional checks due to unit conversion errors.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit µg ml -1 ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q19 unit ng ml -1 h -1 ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Bertera2009_l_name_rats" status="rejected" stale="false" population="control and L-NAME hypertensive rats" measured-compound="carvedilol" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Bertera FM, Di Verniero CA, Mayer MA, Bramuglia GF, Taira CA, Höcht C. Is ureth
 
 ### Reviewer guidance
 
-**Clearance and AUC parameters for carvedilol failed dimensional checks due to unit conversion errors.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit µg ml -1 ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q19 unit ng ml -1 h -1 ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.**
 
-The reported units for plasma clearance and AUC were not recognized, preventing conversion to standard SI dimensions. This caused a conflict between the expected volume-time structure and the observed mass-volume dimensions. Consequently, the specific clearance value of 36.5 L/h could not be structurally validated. Extracted — carvedilol: t1/2z 2.1 min, C0 1.32e+03 µg ml -1, AUCt 548 ng ml -1 h -1, AUC%ext 12.5, CL 36.5 L/h.
+A reported unit could not be converted (C0 and AUCt), so that value has no SI equivalent. Extracted — carvedilol: t1/2z 2.1 min, C0 1.32e+03 µg ml -1, AUCt 548 ng ml -1 h -1, AUC%ext 12.5, CL 36.5 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance rates: this record has none, the second reading 83.8; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Micafungin's clearance and volume of distribution lacked explicit values in the Albanell-Fernández_2025 record, resulting in library placeholders.
+> No value for micafungin's clearance and volume of distribution; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="micafungin" model-id="Micafungin_AlbanellFernndez2025_ikawa_2009_50" status="model_quarantined" stale="false" population="mixed (special populations including pediatric, critical care, obese)" measured-compound="micafungin" parameterization="mechanistic" topology="1C"></div>
 
@@ -43,13 +43,13 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
-**Micafungin's clearance and volume of distribution lacked explicit values in the Albanell-Fernández_2025 record, resulting in library placeholders.**
+**No value for micafungin's clearance and volume of distribution; t6_deviations (+1 more).**
 
-The model structure lists clearance and volume of distribution, but the review found these parameters were not assigned specific estimates from the paper. Instead of using derived numbers, the record relied on default library placeholders for these key parameters. This absence of explicit values caused the model to be quarantined rather than published with invented figures. No parameter values were extracted.
+The model was built, but micafungin's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has micafungin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 
@@ -206,7 +206,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check disputed by a second reader: verdict disputed, agreement 0.444, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.444 (4 of 9 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.444 | cross-check contradicted by a second reader: verdict disputed; agreement 0.444 (4 of 9 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -4,11 +4,11 @@
 
 # phenylpropanolamine — `Phenylpropanolamine_Shargel1990_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Only clearance was extracted — no volume.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ng h ml-1 ([mass] * [time] / [length] ** 3) vs 1 / [time].
 
-<div class="pk-model-meta" hidden drug="phenylpropanolamine" model-id="Phenylpropanolamine_Shargel1990_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="phenylpropanolamine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="phenylpropanolamine" model-id="Phenylpropanolamine_Shargel1990_reference" status="rejected" stale="false" population="adults" measured-compound="phenylpropanolamine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Shargel L, Silverman HI, Cohen P, Brisson J, Dennis S. Bioavailability and cardiovascular safety of Dexatrim (phenylpropanolamine hydrochloride) from a controlled-release caplet. Biopharmaceutics & drug disposition 11(7):569–583 (1990).
@@ -16,9 +16,7 @@ Shargel L, Silverman HI, Cohen P, Brisson J, Dennis S. Bioavailability and cardi
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = 12.
-
-**Dosed compound ≠ measured compound:** dosed phenylpropanolamine hydrochloride, measured phenylpropanolamine.
+**Population:** adults · condition healthy · age group adult.
 
 ## Model
 
@@ -28,20 +26,20 @@ Shargel L, Silverman HI, Cohen P, Brisson J, Dennis S. Bioavailability and cardi
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| AUC (Day 1, CR caplet) | AUC | 1651 | ng·h/mL |
-| tmax (Day 1, CR caplet) | tmax | 4.5 | h |
-| Cmax (Day 1, CR caplet) | Cmax | 143 | ng ml-1 |
-| kA (CR caplet) | kabs | 0.488 | 1/h |
-| elimination half-life (CR caplet) | t1/2z | 5.84 | h |
-| lag time (CR caplet) | tlag | 0.394 | h |
+| AUC | AUC | 1651 | ng x h ml-1 |
+| tmax | tmax | 4.5 | h |
+| Cmax | Cmax | 143 | ng ml-1 |
+| kA | kabs | 0.488 | ng h ml-1 |
+| elimination half-life | t1/2z | 5.84 | h |
+| lag time | tlag | 0.394 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,24 +49,24 @@ Shargel L, Silverman HI, Cohen P, Brisson J, Dennis S. Bioavailability and cardi
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ng h ml-1 ([mass] * [time] / [length] ** 3) vs 1 / [time].**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — phenylpropanolamine: AUC 1.65e+03 ng·h/mL, tmax 4.5 h, Cmax 143 ng ml-1, kabs 0.488 1/h, t1/2z 5.84 h, tlag 0.394 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — phenylpropanolamine: AUC 1.65e+03 ng x h ml-1, tmax 4.5 h, Cmax 143 ng ml-1, kabs 0.488 ng h ml-1, t1/2z 5.84 h, tlag 0.394 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has phenylpropanolamine hydrochloride, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has phenylpropanolamine, the second reading phenylpropanolamine hydrochloride; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| AUC (Day 1, CR caplet) | `Q88` · AUC | 1651 | ng·h/mL |  |  | ng·h/mL | exact (1) | Shargel_1990:abstract |
-| tmax (Day 1, CR caplet) | `Q56` · tmax | 4.5 | h | 1.62e+04 | s | h | exact (1) | Shargel_1990:abstract |
-| Cmax (Day 1, CR caplet) | `Q32` · Cmax | 143 | ng ml-1 |  |  | ng/ml | exact (1) | Shargel_1990:abstract |
-| kA (CR caplet) | `Q49` · kabs | 0.488 | 1/h | 0.0001356 | 1/s | 1/h | exact (1) | Shargel_1990:abstract |
-| elimination half-life (CR caplet) | `Q57` · t1/2z | 5.84 | h | 2.102e+04 | s | h | llm (0.6) | Shargel_1990:abstract |
-| lag time (CR caplet) | `Q83` · tlag | 0.394 | h | 1418 | s | h | exact (1) | Shargel_1990:abstract |
+| AUC | `Q88` · AUC | 1651 | ng x h ml-1 | 5.944 | kg*s/m3 | (h·ng)/ml | exact (1) | Shargel_1990:abstract, Shargel_1990:abstract, Shargel_1990:abstract, Shargel_1990:abstract |
+| tmax | `Q56` · tmax | 4.5 | h | 1.62e+04 | s | h | exact (1) | Shargel_1990:abstract, Shargel_1990:abstract, Shargel_1990:abstract, Shargel_1990:abstract |
+| Cmax | `Q32` · Cmax | 143 | ng ml-1 | 0.000143 | kg/m3 | ng/ml | exact (1) | Shargel_1990:abstract, Shargel_1990:abstract, Shargel_1990:abstract, Shargel_1990:abstract |
+| kA | `Q49` · kabs | 0.488 | ng h ml-1 |  |  | (h·ng)/ml | exact (1) | Shargel_1990:abstract, Shargel_1990:abstract |
+| elimination half-life | `Q57` · t1/2z | 5.84 | h | 2.102e+04 | s | h | half_life_rule (0.95) | Shargel_1990:abstract, Shargel_1990:abstract |
+| lag time | `Q83` · tlag | 0.394 | h | 1418 | s | h | exact (1) | Shargel_1990:abstract, Shargel_1990:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,24 +76,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'ng x h ml-1' (AUC)
-- dropped duplicate Q88 ('AUC (Day 1, solution)', value 1716) — already have one for this compound
-- dropped duplicate Q56 ('tmax (Day 1, solution)', value 1.25) — already have one for this compound
-- dropped duplicate Q32 ('Cmax (Day 1, solution)', value 126) — already have one for this compound
-- dropped duplicate Q88 ('AUC (Day 4, CR caplet)', value 1832) — already have one for this compound
-- dropped duplicate Q56 ('tmax (Day 4, CR caplet)', value 4.17) — already have one for this compound
-- dropped duplicate Q32 ('Cmax (Day 4, CR caplet)', value 151) — already have one for this compound
-- dropped duplicate Q88 ('AUC (Day 4, solution)', value 2014) — already have one for this compound
-- dropped duplicate Q56 ('tmax (Day 4, solution)', value 1.33) — already have one for this compound
-- dropped duplicate Q32 ('Cmax (Day 4, solution)', value 143) — already have one for this compound
-- unit_dimension_unknown: 'ng h ml-1' (kabs)
-- unit_dimension_unknown: 'ng x h ml-1' (kabs)
-- dropped duplicate Q49 ('kA (solution)', value 2.87) — already have one for this compound
-- dropped duplicate Q57 ('elimination half-life (solution)', value 3.73) — already have one for this compound
-- dropped duplicate Q83 ('lag time (solution)', value 0.325) — already have one for this compound
-- implicit units: 'AUC (Day 1, CR caplet)' → ng·h/mL (from the popPK convention: 'No unit stated in text or table footnotes. AUC values for oral dosing are conventionally reported as ng·h/mL (or µg·h/L)')
-- implicit units: 'kA (CR caplet)' → 1/h (from the popPK convention: 'No unit stated in text or footnotes. A first-order absorption rate constant is conventionally in 1/h; 0.488 1/h is a pla')
+- unit_dimension_mismatch: 'kA' → Q49 (unit '[mass] * [time] / [length] ** 3' vs ontology '1 / [time]') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=phenylpropanolamine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
@@ -104,7 +88,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -126,8 +110,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[lag time]` |  | 0.394 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[tmax]` | 4.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[tmax]` |  | 4.5 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | phenylpropanolamine hydrochloride | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | phenylpropanolamine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | phenylpropanolamine | phenylpropanolamine hydrochloride | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | phenylpropanolamine | phenylpropanolamine hydrochloride | mismatch |
 
 </details>
 
@@ -144,12 +128,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Shargel_1990:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Shargel_1990:abstract'] |
-| C5_dimension_Q56 | pass | [time] |  | ['Shargel_1990:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Shargel_1990:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Shargel_1990:abstract'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Shargel_1990:abstract'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Shargel_1990:abstract', 'Shargel_1990:abstract', 'Shargel_1990:abstract', 'Shargel_1990:abstract'] |
+| C5_dimension_Q49 | fail | 1 / [time] | ng h ml-1 ([mass] * [time] / [length] ** 3) | ['Shargel_1990:abstract', 'Shargel_1990:abstract'] |
+| C5_dimension_Q56 | pass | [time] |  | ['Shargel_1990:abstract', 'Shargel_1990:abstract', 'Shargel_1990:abstract', 'Shargel_1990:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Shargel_1990:abstract', 'Shargel_1990:abstract'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Shargel_1990:abstract', 'Shargel_1990:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Shargel_1990:abstract', 'Shargel_1990:abstract', 'Shargel_1990:abstract', 'Shargel_1990:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -162,19 +146,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -184,4 +158,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenylpropanolamine%5D%20Phenylpropanolamine_Shargel1990_reference&body=Drug%3A%20phenylpropanolamine%0ARecord%3A%20Phenylpropanolamine_Shargel1990_reference%0APaper%3A%20Shargel_1990%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenylpropanolamine/Phenylpropanolamine_Shargel1990_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 13:24 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:33 UTC</sub>

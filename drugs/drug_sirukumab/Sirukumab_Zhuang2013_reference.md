@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sirukumab’s apparent clearance (CL/F) of 0.54 L/day is disputed, and the abstract-only record lacks fitted-model support, so it was held for review.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="sirukumab" model-id="Sirukumab_Zhuang2013_reference" status="needs_review" stale="false" population="healthy Japanese and Caucasian adults" measured-compound="sirukumab" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Zhuang Y, Xu Z, de Vries DE, Wang Q, Shishido A, Comisar C et al. Pharmacokineti
 
 ### Reviewer guidance
 
-**Sirukumab’s apparent clearance (CL/F) of 0.54 L/day is disputed, and the abstract-only record lacks fitted-model support, so it was held for review.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagreed about whether sirukumab was the dose compound and primary analyte, and did not affirm the reported clearance of 0.54 L/day, absorption rate constant of 0.77 day⁻¹, or apparent distribution volume of 12.2 L; agreement was 0.167, with 0 of 1 reader agreeing. Because only the abstract was read, its summary statistics stood in for a fitted model. The model builder defaulted the lag time and assumed F=1, Fm=1, with no molar correction. Extracted — sirukumab: CL/F 0.54 l/day, V/F 12.2 l, kabs 0.77 day-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sirukumab: CL/F 0.54 l/day, V/F 12.2 l, kabs 0.77 day-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sirukumab, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -154,7 +154,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

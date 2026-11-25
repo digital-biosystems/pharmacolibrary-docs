@@ -34,7 +34,7 @@ Dihydrocodeine is a semi-synthetic opioid analgesic used to treat pain, cough, a
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Webb_2001_E](drugs/drug_dihydrocodeine/pd_Webb_2001_E.md) | reduction in pain score ← DHC · delayed effect through an effect compartment | — | Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01414.x](https://doi.org/10.1046/j.0306-5251.2001.01414.x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Webb_2001_E](drugs/drug_dihydrocodeine/pd_Webb_2001_E.md) | reduction in pain score ← DHC · delayed effect through an effect compartment | — | Webb JA et al., Contribution of dihydrocodeine and dihy…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01414.x](https://doi.org/10.1046/j.0306-5251.2001.01414.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +48,7 @@ Dihydrocodeine is a semi-synthetic opioid analgesic used to treat pain, cough, a
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:56 | 1:42 | 1/1/0 | 1/0/0 | 0/0/0 | 141,952/6,285 | einfracz / qwen3.8-27b | 11 | 2/8 | 11/0 | 0 |
+| 2026-10-07 04:56 | 1:42 | 1/1/0 | 0/1/0 | 0/0/0 | 141,952/6,285 | einfracz / qwen3.8-27b | 11 | 2/8 | 11/0 | 0 |
 
 ## Coverage
 

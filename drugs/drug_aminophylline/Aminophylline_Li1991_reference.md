@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;aminophylline&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/&quot;},{&quot;label&quot;:&quot;Li_1991 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aminophylline_Jameson1990_reference&quot;,&quot;label&quot;:&quot;Jameson_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Jameson1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Frymoyer2020_reference&quot;,&quot;label&quot;:&quot;Frymoyer_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Frymoyer2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Goetz1989_reference&quot;,&quot;label&quot;:&quot;Goetz_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Goetz1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Shi2013_reference&quot;,&quot;label&quot;:&quot;Shi_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Shi2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Amponsah2017_reference&quot;,&quot;label&quot;:&quot;Amponsah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Amponsah2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aminophylline_Goetz1989_reference&quot;,&quot;label&quot;:&quot;Goetz_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Goetz1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Jameson1990_reference&quot;,&quot;label&quot;:&quot;Jameson_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Jameson1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Shiu1989_reference&quot;,&quot;label&quot;:&quot;Shiu_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Shiu1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Amponsah2017_reference&quot;,&quot;label&quot;:&quot;Amponsah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Amponsah2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Li1991_reference" status="needs_review" stale="false" population="rabbits" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Li1991_reference" status="needs_review" stale="false" population="rabbits" measured-compound="theophylline" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Li JH, Yang SM, Deng ZH. The effects of atropine on pharmacokinetics of theophylline in rabbits. Drug metabolism and drug interactions 9(2):115–122 (1991).
@@ -17,7 +17,7 @@ Li JH, Yang SM, Deng ZH. The effects of atropine on pharmacokinetics of theophyl
 
 ## Population and dosing
 
-**Population:** rabbits · condition healthy · age group adult · n = 6.
+**Population:** rabbits · condition healthy.
 
 **Dosed compound ≠ measured compound:** dosed aminophylline, measured theophylline.
 
@@ -26,7 +26,7 @@ Li JH, Yang SM, Deng ZH. The effects of atropine on pharmacokinetics of theophyl
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** mechanistic.  
+**Parameterization:** CLm,norm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
@@ -35,14 +35,14 @@ Li JH, Yang SM, Deng ZH. The effects of atropine on pharmacokinetics of theophyl
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Cmax (theophylline, without atropine) | Cmax | 23.6 | mg/l |
-| K (elimination rate constant, without atropine) | kel | 0.23 | /h |
-| t1/2 (half life, without atropine) | t1/2z | 3.04 | h |
-| Cl (clearance, without atropine) | CL | 0.26 | l/kg/h |
+| maximal serum concentration of theophylline | Cmax | 23.6 | mg/l |
+| K (elimination rate constant) | kel | 0.23 | /h |
+| t1/2 (half life) | t1/2z | 3.04 | h |
+| Cl (clearance) | CLm,norm/F | 0.26 | l/kg/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +54,9 @@ Li JH, Yang SM, Deng ZH. The effects of atropine on pharmacokinetics of theophyl
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is aminophylline's own; they describe theophylline. Extracted — theophylline: Cmax 23.6 mg/l, kel 0.23 /h, t1/2z 3.04 h, CL 0.26 l/kg/h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is aminophylline's own; they describe theophylline. Extracted — theophylline: Cmax 23.6 mg/l, kel 0.23 /h, t1/2z 3.04 h, CLm,norm/F 0.26 l/kg/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminophylline, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has theophylline, the second reading aminophylline; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,10 +64,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Cmax (theophylline, without atropine) | `Q32` · Cmax | 23.6 | mg/l |  |  | mg/l | exact (1) | Li_1991:abstract |
-| K (elimination rate constant, without atropine) | `Q47` · kel | 0.23 | /h | 6.389e-05 | 1/s | 1/h | exact (1) | Li_1991:abstract |
-| t1/2 (half life, without atropine) | `Q57` · t1/2z | 3.04 | h | 1.094e+04 | s | h | exact (1) | Li_1991:abstract |
-| Cl (clearance, without atropine) | `Q22` · CL | 0.26 | l/kg/h | 5.056e-06 | m3/s | l/(h·kg) | exact (1) | Li_1991:abstract |
+| maximal serum concentration of theophylline | `Q32` · Cmax | 23.6 | mg/l | 0.0236 | kg/m3 | mg/l | llm (0.6) | Li_1991:abstract, Li_1991:abstract |
+| K (elimination rate constant) | `Q47` · kel | 0.23 | /h | 6.389e-05 | 1/s | 1/h | exact (1) | Li_1991:abstract, Li_1991:abstract |
+| t1/2 (half life) | `Q57` · t1/2z | 3.04 | h | 1.094e+04 | s | h | half_life_rule (0.95) | Li_1991:abstract, Li_1991:abstract |
+| Cl (clearance) | `Q375` · CLm,norm/F | 0.26 | l/kg/h | 5.056e-06 | m3/s | l/(h·kg) | exact (1) | Li_1991:abstract, Li_1991:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,13 +77,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q32 ('Cmax (theophylline, with atropine)', value 19.6) — already have one for this compound
-- dropped duplicate Q47 ('K (elimination rate constant, with atropine)', value 0.19) — already have one for this compound
-- dropped duplicate Q57 ('t1/2 (half life, with atropine)', value 3.66) — already have one for this compound
-- dropped duplicate Q22 ('Cl (clearance, with atropine)', value 0.23) — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=theophylline
+- metabolite theophylline: Q22→Q375 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided), normalised to a standard size
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=theophylline
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 4 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'theophylline', not aminophylline — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Li_1991_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
@@ -91,21 +89,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (5/10 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[aminophylline]` |  | 12.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` | 23.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` |  | 0.26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 0.26 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k]` |  | 0.23 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k]` | 0.23 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[maximal serum concentration of theophylline]` |  | 23.6 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | aminophylline | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | theophylline | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[maximal serum concentration of theophylline]` | 23.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` |  | 3.04 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 3.04 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | theophylline | aminophylline | mismatch |
 
 </details>
 
@@ -122,13 +125,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Li_1991:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Li_1991:abstract'] |
-| C5_dimension_Q47 | pass | 1 / [time] |  | ['Li_1991:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Li_1991:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.26 | ['Li_1991:abstract'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Li_1991:abstract', 'Li_1991:abstract'] |
+| C5_dimension_Q375 | pass | [length] ** 3 / [time] |  | ['Li_1991:abstract', 'Li_1991:abstract'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Li_1991:abstract', 'Li_1991:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Li_1991:abstract', 'Li_1991:abstract'] |
+| C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 18.2 L/h | ['Li_1991:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -162,4 +164,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baminophylline%5D%20Aminophylline_Li1991_reference&body=Drug%3A%20aminophylline%0ARecord%3A%20Aminophylline_Li1991_reference%0APaper%3A%20Li_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aminophylline/Aminophylline_Li1991_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 23:44 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:16 UTC</sub>

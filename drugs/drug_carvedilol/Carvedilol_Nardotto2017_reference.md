@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time lack extracted values, and the two-reader check failed on parameter identities and values.
+> F use library defaults, not estimates from this paper; t3_topology_template (+2 more).
 
 <div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Nardotto2017_reference" status="needs_review" stale="false" population="type-2 diabetes and healthy subjects" measured-compound="carvedilol enantiomers" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -59,13 +59,13 @@ Nardotto GHB, Lanchote VL, Coelho EB, Della Pasqua O. Population pharmacokinetic
 
 ### Reviewer guidance
 
-**Bioavailability and lag time lack extracted values, and the two-reader check failed on parameter identities and values.**
+**F use library defaults, not estimates from this paper; t3_topology_template (+2 more).**
 
-Bioavailability and lag time were left without extracted values, so generic placeholders would have been used instead of the paper's estimates. The model structure described in the record did not match the expected parent-metabolite arrangement. A second reader disagreed on the primary analyte identity and reported different values for key parameters like renal clearance and volume of distribution. Extracted — carvedilol enantiomers: kabs 10.6 h -1, FR 19.5, V1 0.67 L, Q 12.7 L/h, CL 4.85 L/h, CLR 16.2 L/h; carvedilol metabolites: CLfm 15.4 L/h, CL 14.1 L/h, V 16.1 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. None of the extracted parameters is carvedilol's own; they describe carvedilol enantiomers and carvedilol metabolites. Extracted — carvedilol enantiomers: kabs 10.6 h -1, FR 19.5, V1 0.67 L, Q 12.7 L/h, CL 4.85 L/h, CLR 16.2 L/h; carvedilol metabolites: CLfm 15.4 L/h, CL 14.1 L/h, V 16.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has carvedilol enantiomers, the second reading carvedilol; it also differs on 24 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -222,7 +222,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_shared_parameters | pass | 3 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.074, 0 of 1 reader(s) agree | 0.074 | cross-check disputed by a second reader: verdict disputed, agreement 0.074, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.074 (2 of 27 compared fields agree, 23 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.074 | cross-check contradicted by a second reader: verdict disputed; agreement 0.074 (2 of 27 compared fields agree, 23 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

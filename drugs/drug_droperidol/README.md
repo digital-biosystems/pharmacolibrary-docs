@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;droperidol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Droperidol_Foo2016_reference&quot;,&quot;label&quot;:&quot;Foo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/Droperidol_Foo2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Radke_1998_time_averaged_single_channel_conductance&quot;,&quot;label&quot;:&quot;Radke_1998 \u00b7 time averaged single channel conductance&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/pd_Radke_1998_time_averaged_single_channel_conductance.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Droperidol_Foo2016_reference&quot;,&quot;label&quot;:&quot;Foo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/Droperidol_Foo2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Radke_1998_time_averaged_single_channel_conductance&quot;,&quot;label&quot;:&quot;Radke_1998 \u00b7 time averaged single channel conductance&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/pd_Radke_1998_time_averaged_single_channel_conductance.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # droperidol
 
@@ -25,25 +25,31 @@ Droperidol is a butyrophenone antipsychotic used to treat pain and schizophrenif
 
 ## Start here
 
-> **Foo_2016_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> acutely agitated patients, n = 41. [Run it in the simulator](drugs/drug_droperidol/Droperidol_Foo2016_reference.md?tab=Simulation) · [record](drugs/drug_droperidol/Droperidol_Foo2016_reference.md)
+> **Foo_2016_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> acutely agitated patients. [Run it in the simulator](drugs/drug_droperidol/Droperidol_Foo2016_reference.md?tab=Simulation) · [record](drugs/drug_droperidol/Droperidol_Foo2016_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Foo_2016 · V</text><circle cx="341.7" cy="30.0" r="4" fill="#78909c"><title>Foo_2016 · V: 73.6 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Fischler_1986 · V/F ·/kg</text><circle cx="392.1" cy="46.0" r="4" fill="#ef6c00"><title>Fischler_1986 · V/F ·/kg: 142.8 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Foo_2016_reference](drugs/drug_droperidol/Droperidol_Foo2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Foo LK et al., Population pharmacokinetics of intramus…, British journal of clinical… (2016) | [10.1111/bcp.13093](https://doi.org/10.1111/bcp.13093) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Foo_2016_reference](drugs/drug_droperidol/Droperidol_Foo2016_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Foo LK et al., Population pharmacokinetics of intramus…, British journal of clinical… (2016) | [10.1111/bcp.13093](https://doi.org/10.1111/bcp.13093) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub> | [Fischler_1986_reference](drugs/drug_droperidol/Droperidol_Fischler1986_reference.md) | — | 1-compartment (no model) | 3 | Fischler M et al., The pharmacokinetics of droperidol in a…, Anesthesiology (1986) | [10.1097/00000542-198604000-00012](https://doi.org/10.1097/00000542-198604000-00012) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Cooper_2018_reference](drugs/drug_droperidol/Droperidol_Cooper2018_reference.md) | — | 2-compartment (no model) | 5 | Cooper I et al., The pharmacokinetics of intranasal drop…, SAGE open medicine (2018) | [10.1177/2050312118813283](https://doi.org/10.1177/2050312118813283) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Fischler_1986_reference](drugs/drug_droperidol/Droperidol_Fischler1986_reference.md) | — | 1-compartment (no model) | 4 | Fischler M et al., The pharmacokinetics of droperidol in a…, Anesthesiology (1986) | [10.1097/00000542-198604000-00012](https://doi.org/10.1097/00000542-198604000-00012) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Flood_2002_GABA_response](drugs/drug_droperidol/pd_Flood_2002_GABA_response.md) | GABA response inhibition (GABAA alpha1beta1gamma2 receptor current) ← droperidol · direct sigmoid Emax (Hill) effect | — | Flood P et al., Droperidol inhibits GABA(A) and neurona…, Anesthesiology (2002) | [10.1097/00000542-200204000-00029](https://doi.org/10.1097/00000542-200204000-00029) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Flood_2002_alpha7_nAChR](drugs/drug_droperidol/pd_Flood_2002_alpha7_nAChR.md) | alpha7 nAChR activation inhibition ← droperidol · direct sigmoid Emax (Hill) effect | — | Flood P et al., Droperidol inhibits GABA(A) and neurona…, Anesthesiology (2002) | [10.1097/00000542-200204000-00029](https://doi.org/10.1097/00000542-200204000-00029) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Radke_1998_time_averaged_single_channel_conductance](drugs/drug_droperidol/pd_Radke_1998_time_averaged_single_channel_conductance.md) | time averaged single channel conductance ← droperidol · direct Emax (saturable) effect | ▶ model + simulator | Radke PW et al., Molecular actions of droperidol on huma…, European journal of anaesth… (1998) | [10.1046/j.1365-2346.1998.00221.x](https://doi.org/10.1046/j.1365-2346.1998.00221.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Flood_2002_activation_of_the_alpha7_nAChR](drugs/drug_droperidol/pd_Flood_2002_activation_of_the_alpha7_nAChR.md) | activation of the alpha7 nAChR ← droperidol · direct sigmoid Emax (Hill) effect | — | Flood P et al., Droperidol inhibits GABA(A) and neurona…, Anesthesiology (2002) | [10.1097/00000542-200204000-00029](https://doi.org/10.1097/00000542-200204000-00029) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Flood_2002_GABA_response](drugs/drug_droperidol/pd_Flood_2002_GABA_response.md) | GABA response ← droperidol · direct sigmoid Emax (Hill) effect | model (no simulator) | Flood P et al., Droperidol inhibits GABA(A) and neurona…, Anesthesiology (2002) | [10.1097/00000542-200204000-00029](https://doi.org/10.1097/00000542-200204000-00029) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Radke_1998_time_averaged_single_channel_conductance](drugs/drug_droperidol/pd_Radke_1998_time_averaged_single_channel_conductance.md) | time averaged single channel conductance ← droperidol · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Radke PW et al., Molecular actions of droperidol on huma…, European journal of anaesth… (1998) | [10.1046/j.1365-2346.1998.00221.x](https://doi.org/10.1046/j.1365-2346.1998.00221.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,40 +63,37 @@ Droperidol is a butyrophenone antipsychotic used to treat pain and schizophrenif
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:28 | 1:12 | 1/2/0 | 3/0/0 | 0/0/0 | 51,186/3,939 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 21:37 | 0:04 | 2/1/0 | 3/0/0 | 0/0/0 | 3,954/162 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Fischler_1986.pdf` | Fischler M et al., The pharmacokinetics of droperidol in a…, Anesthesiology (1986) | popPK | 10 | [10.1097/00000542-198604000-00012](https://doi.org/10.1097/00000542-198604000-00012) | [3963455](https://pubmed.ncbi.nlm.nih.gov/3963455) | Original PK study in humans with full numeric parameters (t1/2 phases, CL, Vd) reported directly in the abstract. |
-| `Foo_2016.pdf` | Foo LK et al., Population pharmacokinetics of intramus…, British journal of clinical… (2016) | popPK | 10 | [10.1111/bcp.13093](https://doi.org/10.1111/bcp.13093) | [27530285](https://pubmed.ncbi.nlm.nih.gov/27530285) | Population PK model of droperidol with numeric CL, Vc, ka, and half-lives reported directly in the abstract. |
-
-<sub>queue written 2026-10-06 15:27 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Behne_1987 | irrelevant | 0 | 0 | The PK parameters reported are for midazolam; droperidol is only a co-administered anesthetic component, not the subject drug. |
-| popPK | Flood_2002 | irrelevant | 0 | 0 | In-vitro electrophysiology study of receptor modulation; no pharmacokinetic parameters for droperidol. |
-| popPK | Hu_1996 | irrelevant | 0 | 0 | Droperidol is only a non-analgesic test drug in a rabbit pain model; PK parameters reported are for nalbuphine, not droperidol. |
-| popPK | Radke_1998 | irrelevant | 0 | 0 | In-vitro electrophysiology of ion channels, no PK disposition parameters for droperidol. |
-| popPK | Sampson_1977 | irrelevant | 0 | 0 | Droperidol is only used as an antagonist tool in an in vitro electrophysiology study; no PK parameters are reported. |
-| popPK | Schuh_1981 | irrelevant | 0 | 0 | Droperidol is only part of the anaesthetic regimen; the study concerns neuromuscular blockers' dose-response, with no PK parameters for droperidol. |
+| popPK | Behne_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of midazolam, with droperidol serving only as a co-administered anesthetic agent in one group. |
+| PGx | Behne_1987 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of midazolam under different anesthetic regimens, not droperidol. |
+| PGx | Fischler_1986 | not_relevant | 0 | 10 | The paper reports general pharmacokinetic parameters for droperidol in anesthetized patients but does not investigate any gene variants, genotypes, or pharmacogenomic effects. |
+| popPK | Flood_2002 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor binding in Xenopus oocytes and does not report any pharmacokinetic parameters (clearance, volume, etc.) for droperidol. |
+| PGx | Flood_2002 | not_relevant | 0 | 0 | The study investigates the molecular mechanisms of droperidol on GABA and nicotinic receptors in Xenopus oocytes and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters in humans. |
+| PGx | Foo_2016 | not_relevant | 0 | 0 | The paper reports standard population pharmacokinetics of droperidol but does not mention or test for any genetic variants, genotypes, or phenotypes. |
+| popPK | Hu_1996 | irrelevant | 0 | 0 | Droperidol is used only as a non-analgesic control/comparator agent in a pain model study, and no pharmacokinetic parameters for droperidol are reported. |
+| PGx | Hu_1996 | not_relevant | 0 | 0 | The paper reports general pharmacokinetic and pharmacodynamic properties of drugs in an animal model, with no mention of gene variants or pharmacogenomic effects. |
+| popPK | Radke_1998 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of ion channel kinetics, not a pharmacokinetic study. |
+| PGx | Radke_1998 | not_relevant | 0 | 0 | The paper investigates the in vitro molecular actions of droperidol on ion channels and does not report any gene variants or genotypes affecting pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Sampson_1977 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of dopamine effects on carotid bodies, using droperidol only as a pharmacological antagonist/probe, not as a subject for PK analysis. |
+| PGx | Sampson_1977 | not_relevant | 0 | 0 | The paper investigates the neurophysiological effects of dopamine on carotid bodies using droperidol as a pharmacological antagonist, but does not report any pharmacogenomic effects (gene variants influencing drug PK/PD). |
+| popPK | Schuh_1981 | irrelevant | 0 | 0 | The study focuses on the dose-response curves of neuromuscular blocking agents, and droperidol is only mentioned as part of the general anesthesia regimen, with no pharmacokinetic parameters for droperidol reported. |
+| PGx | Schuh_1981 | not_relevant | 0 | 0 | The paper focuses on the pharmacodynamics of neuromuscular blocking drugs and does not investigate any pharmacogenomic effects on droperidol. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdroperidol%5D&body=Drug%3A%20droperidol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_droperidol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 15:27 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 21:35 UTC</sub>

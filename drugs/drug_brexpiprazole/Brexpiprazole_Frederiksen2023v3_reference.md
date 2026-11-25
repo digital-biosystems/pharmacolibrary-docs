@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability (F) for brexpiprazole was not reported, so library defaults were used instead of the paper's estimates.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Frederiksen2023v3_reference" status="needs_review" stale="false" population="healthy subjects and patients" measured-compound="brexpiprazole" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -61,13 +61,13 @@ Frederiksen T, Areberg J, Raoufinia A, Schmidt E, Stage TB, Brøsen K. Estimatin
 
 ### Reviewer guidance
 
-**Bioavailability (F) for brexpiprazole was not reported, so library defaults were used instead of the paper's estimates.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lacks a specific value for the absorption fraction, relying on placeholders instead of data from Frederiksen_2023_3. A second reader also identified discrepancies where clearances and volumes for metabolites DM-3411 and DM-3412 were recorded inconsistently or as null. These deviations mean the simulated profile is not fully supported by the paper's explicit estimates. Extracted — brexpiprazole: kabs 1.02 1/h, tlag 0.411 h, V1 81.2 L, V2 40.1 L, Q 0.714 L/h; DM-3412: CLfm 0.0224 L/h, V1 0.447 L, V2 20.4 L, Q 2.16 L/h, CL 0.42 L/h; DM-3411: CLfm 1.12 L/h, V 2.44 L, CL 3.33 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — brexpiprazole: kabs 1.02 1/h, tlag 0.411 h, V1 81.2 L, V2 40.1 L, Q 0.714 L/h; DM-3412: CLfm 0.0224 L/h, V1 0.447 L, V2 20.4 L, Q 2.16 L/h, CL 0.42 L/h; DM-3411: CLfm 1.12 L/h, V 2.44 L, CL 3.33 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has brexpiprazole → dm-3411 (metabolism); brexpiprazole → dm-3412 (metabolism), the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

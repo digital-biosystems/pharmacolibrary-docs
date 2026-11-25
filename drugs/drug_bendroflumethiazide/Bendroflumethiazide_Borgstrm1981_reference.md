@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Renal clearance of bendroflumethiazide was recorded with volume units instead of required volume-per-time dimensions, causing a dimensional rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q26 unit ml ([length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="bendroflumethiazide" model-id="Bendroflumethiazide_Borgstrm1981_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="bendroflumethiazide" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Borgström L, Johansson CG, Larsson H, Lenander R. Pharmacokinetics of bendroflu
 
 ### Reviewer guidance
 
-**Renal clearance of bendroflumethiazide was recorded with volume units instead of required volume-per-time dimensions, causing a dimensional rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q26 unit ml ([length] ** 3) vs [length] ** 3 / [time].**
 
-The renal clearance parameter has a value of 30 with the unit ml, which is dimensionally incompatible with clearance requiring volume per time. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader identified conflicts regarding the identified dose compound and primary analyte. Extracted — bendroflumethiazide: t1/2z 3.1 hr, CLR 30 ml.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bendroflumethiazide: t1/2z 3.1 hr, CLR 30 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bendroflumethiazide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

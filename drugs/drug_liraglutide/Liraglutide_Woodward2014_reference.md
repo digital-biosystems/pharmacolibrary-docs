@@ -46,7 +46,7 @@ Woodward HN, Anderson SL. Once-weekly albiglutide in the management of type 2 di
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q364: this record has none, the second reading 50. That field does not shape the model.
 

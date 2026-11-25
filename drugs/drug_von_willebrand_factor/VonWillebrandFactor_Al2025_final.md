@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> For von Willebrand factor, bioavailability (F) has no reported value and was defaulted, so the record was held back.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Al2025_final" status="needs_review" stale="false" population="pregnant women with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Al Arashi W, Cloesmeijer ME, Leebeek FWG, Duvekot JJ, Kruip MJHA, Mathôt RAA et
 
 ### Reviewer guidance
 
-**For von Willebrand factor, bioavailability (F) has no reported value and was defaulted, so the record was held back.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-F uses library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by the paper. The model builder also defaulted Tlag rather than using an explicit estimate. A second reader reported clearance 250 and volume 6490, rather than the record’s 76.8 and 3580, leaving those parameter values disputed. Extracted — von willebrand factor: CL 76.8 mL/h/70 kg, V 3.58e+03 mL/70 kg, kabs 0.5 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — von willebrand factor: CL 76.8 mL/h/70 kg, V 3.58e+03 mL/70 kg, kabs 0.5 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has Haemate P, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

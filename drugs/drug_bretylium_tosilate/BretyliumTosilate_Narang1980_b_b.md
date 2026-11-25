@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The rejection does not identify a specific bretylium parameter or value: it alleges a mismatch between hr⁻¹ and 1/time, which are dimensionally equivalent.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr⁻¹ (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Narang1980_b_b" status="rejected" stale="false" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 ### Reviewer guidance
 
-**The rejection does not identify a specific bretylium parameter or value: it alleges a mismatch between hr⁻¹ and 1/time, which are dimensionally equivalent.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr⁻¹ (1 / [time]) vs 1 / [time].**
 
-The record lists bretylium rate parameters λ1 (2.16 hr⁻¹), kel (0.100 hr⁻¹), k12 (1.242 hr⁻¹), k21 (0.384 hr⁻¹), and kabs (0.018 hr⁻¹), but does not say which one the finding concerns. The stated dimensions, hr⁻¹ and 1/time, agree, so the reported dimensional mismatch is inconclusive. The record also says a reported unit could not be converted to SI, without identifying the affected parameter. Extracted — bretylium tosilate: λ1 2.16 hr⁻¹, t1/2α 19.3 min, kel 0.1 hr⁻¹, t1/2β 6.93 hr, k12 1.24 hr⁻¹, k21 0.384 hr⁻¹, kabs 0.018 hr⁻¹, V1 1.37 liters/kg, … (+5).
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — bretylium tosilate: λ1 2.16 hr⁻¹, t1/2α 19.3 min, kel 0.1 hr⁻¹, t1/2β 6.93 hr, k12 1.24 hr⁻¹, k21 0.384 hr⁻¹, kabs 0.018 hr⁻¹, V1 1.37 liters/kg, … (+5).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has bretylium, the second reading bretylium_tosilate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

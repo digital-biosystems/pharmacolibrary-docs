@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The potassium canrenoate model yields a terminal half-life of 28.3 hours, significantly exceeding the paper's reported 11.2 hours.
+> The model does not reproduce the paper's terminal half-life (paper 11.2, model 28.3); the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="potassium canrenoate" model-id="PotassiumCanrenoate_Suyagh2012_two_experimentally_determined" status="needs_review" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Populatio
 
 ### Reviewer guidance
 
-**The potassium canrenoate model yields a terminal half-life of 28.3 hours, significantly exceeding the paper's reported 11.2 hours.**
+**The model does not reproduce the paper's terminal half-life (paper 11.2, model 28.3); the covariate scenarios were not simulated (+1 more).**
 
-The simulated terminal half-life of 28.29651928153687 hours conflicts with the expected 11.2 hours, indicating a structural or parameter mismatch. A second reader disagreed on the apparent clearance (14.13 vs 12.73) and metabolite formation rate (5.79 vs 4.48) values. Additionally, covariate effects were defined but not exercised in the simulation. Extracted — canrenone: CLm,norm/F 12.7 L/h, V/F 520 L, kfm 4.48 1/h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. None of the extracted parameters is potassium canrenoate's own; they describe canrenone. Extracted — canrenone: CLm,norm/F 12.7 L/h, V/F 520 L, kfm 4.48 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f (l/hr/70 kg) θcl/f].parameter_id`: this record has Q375, the second reading Q27; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -166,16 +166,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | fail | 11.2 | 28.3 | 2.526 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.13 | 28.3 | 217.7 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.13 | 28.3 | 217.7 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 12.09 | 28.3 | 2.341 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 4.38 | 28.3 | 6.46 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 19.57 | 28.3 | 1.446 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 12.12 | 28.3 | 2.335 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 4.14 | 28.3 | 6.835 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 19.58 | 28.3 | 1.445 | hr→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.333 (6 of 18 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check contradicted by a second reader: verdict disputed; agreement 0.333 (6 of 18 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | fail | 11.2 | 28.3 | 2.526 | reported 11.2 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.13 | 28.3 | 217.7 | reported 0.13 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.13 | 28.3 | 217.7 | reported 7.8 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 12.09 | 28.3 | 2.341 | reported 12.09 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 4.38 | 28.3 | 6.46 | reported 4.38 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 19.57 | 28.3 | 1.446 | reported 19.57 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 12.12 | 28.3 | 2.335 | reported 12.12 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 4.14 | 28.3 | 6.835 | reported 4.14 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 19.58 | 28.3 | 1.445 | reported 19.58 hr→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

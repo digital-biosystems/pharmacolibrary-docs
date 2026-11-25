@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The von Willebrand factor record was rejected for an unreachable/orphan component; its peripheral-compartment volume V2 is recorded as 19.3 dL.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Bauer2023_pdvwf_fviii_model" status="rejected" stale="false" population="adults with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -55,13 +55,13 @@ Bauer A, Friberg-Hietala S, Smania G, Wolfsegger M. Pharmacokinetic-Pharmacodyna
 
 ### Reviewer guidance
 
-**The von Willebrand factor record was rejected for an unreachable/orphan component; its peripheral-compartment volume V2 is recorded as 19.3 dL.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-V2 is defined as the peripheral-compartment volume, but the finding does not specify whether that compartment or an unlinked metabolite lacks a path from the dose. The record lists interconversion links from recombinant and plasma-derived von Willebrand factor to factor VIII; a second reader instead identified VWF:RCo as the analyte and proposed additional links involving VWF:RCo activity. Extracted — von willebrand factor: CL 4.14 dL/h, V1 47 dL, Q 4.47 dL/h, V2 19.3 dL, kabs 0.5 h−1.
+Extracted — von willebrand factor: CL 4.14 dL/h, V1 47 dL, Q 4.47 dL/h, V2 19.3 dL, kabs 0.5 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has von Willebrand factor, the second reading VWF:RCo; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

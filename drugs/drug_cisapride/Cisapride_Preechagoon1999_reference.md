@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Record refused because the second reader disputed the verdict, failing to confirm the extracted cisapride parameters 0.538 L/h, 21.9 L, and 2.58 h-1.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="cisapride" model-id="Cisapride_Preechagoon1999_reference" status="needs_review" stale="false" population="young infants with gastro-oesophageal reflux disease" measured-compound="cisapride" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Preechagoon Y, Charles B, Piotrovskij V, Donovan T, Van Peer A. Population pharm
 
 ### Reviewer guidance
 
-**Record refused because the second reader disputed the verdict, failing to confirm the extracted cisapride parameters 0.538 L/h, 21.9 L, and 2.58 h-1.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The cross-check failed with an agreement ratio of 0.2, as the second reader did not agree with the first. The second reader returned null for the clearance, absorption rate, and volume parameters, while the record lists 0.538 L/h, 2.58 h-1, and 21.9 L. Additionally, the record was built from abstract-only data, meaning reported summary statistics stand in for a fitted model. The covariate scenarios were not simulated, and the base model was simulated, not the covariate effects the record defines. Extracted — cisapride: CL/F 0.538 L/h, V/F 21.9 l, kabs 2.58 h-1.
+The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cisapride: CL/F 0.538 L/h, V/F 21.9 l, kabs 2.58 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cisapride, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,7 +152,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Carlsöö_1981_amylase_secretion](drugs/drug_prenalterol/pd_Carls_1981_amylase_secretion.md) | amylase secretion biomarker turnover ← prenalterol | — | Carlsöö B et al., Characterization of the rat parotid bet…, British journal of pharmaco… (1981) | [10.1111/j.1476-5381.1981.tb09124.x](https://doi.org/10.1111/j.1476-5381.1981.tb09124.x) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Carlsöö_1981_amylase_secretion](drugs/drug_prenalterol/pd_Carls_1981_amylase_secretion.md) | amylase secretion biomarker turnover ← prenalterol | — | Carlsöö B et al., Characterization of the rat parotid bet…, British journal of pharmaco… (1981) | [10.1111/j.1476-5381.1981.tb09124.x](https://doi.org/10.1111/j.1476-5381.1981.tb09124.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-13 12:53 | 1:09 | 0/0/0 | 0/1/0 | 0/0/0 | 48,236/2,412 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-13 12:53 | 1:09 | 0/0/0 | 1/0/0 | 0/0/0 | 48,236/2,412 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 

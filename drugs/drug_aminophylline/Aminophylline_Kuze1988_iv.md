@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;aminophylline&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/&quot;},{&quot;label&quot;:&quot;Kuze_1988 \u00b7 iv&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aminophylline_Jameson1990_reference&quot;,&quot;label&quot;:&quot;Jameson_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Jameson1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Frymoyer2020_reference&quot;,&quot;label&quot;:&quot;Frymoyer_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Frymoyer2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Goetz1989_reference&quot;,&quot;label&quot;:&quot;Goetz_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Goetz1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Shi2013_reference&quot;,&quot;label&quot;:&quot;Shi_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Shi2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Amponsah2017_reference&quot;,&quot;label&quot;:&quot;Amponsah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Amponsah2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aminophylline_Goetz1989_reference&quot;,&quot;label&quot;:&quot;Goetz_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Goetz1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Jameson1990_reference&quot;,&quot;label&quot;:&quot;Jameson_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Jameson1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Shiu1989_reference&quot;,&quot;label&quot;:&quot;Shiu_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Shiu1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Amponsah2017_reference&quot;,&quot;label&quot;:&quot;Amponsah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Amponsah2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The model was rejected because the fast-phase rate constant unit was unrecognized and the terminal volume was inconsistent with the derived half-life.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit mg/kg ([mass]) vs 1 / [time]; Q47 unit mg/kg ([mass]) vs 1 / [time]; Q301 unit mg/kg ([mass]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Kuze1988_iv" status="rejected" stale="false" population="anesthetized beagle-mix dogs" measured-compound="theophylline" parameterization="mechanistic" topology="3C"></div>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Kuze1988_iv" status="rejected" stale="false" population="anesthetized adult dogs" measured-compound="theophylline" parameterization="mechanistic" topology="3C"></div>
 
 ## Citation
 Kuze T, Miyazaki H, Taneike T. [Theophylline: pharmacokinetics, metabolism and urinary excretion in dogs]. Nihon yakurigaku zasshi. Folia pharmacologica Japonica 91(5):325–334 (1988).
@@ -17,7 +17,7 @@ Kuze T, Miyazaki H, Taneike T. [Theophylline: pharmacokinetics, metabolism and u
 
 ## Population and dosing
 
-**Population:** anesthetized beagle-mix dogs · condition healthy · age group adult · n = 13.
+**Population:** anesthetized adult dogs · condition healthy · age group adult.
 
 **Dosing:** 574 mg, iv, single.
 
@@ -37,21 +37,22 @@ Kuze T, Miyazaki H, Taneike T. [Theophylline: pharmacokinetics, metabolism and u
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| α | λ1 | 10.609 | n=10 |
-| β | kel | 0.149 | 1/h |
-| K₁₂ | k12 | 6.013 | 1/h |
-| K₂₁ | k21 | 4.380 | 1/h |
-| V₁ | V1 | 0.300 | L/kg |
-| V₂ | V2 | 0.415 | L/kg |
+| A | equation variable | 17.376 | mg/kg |
+| α | λ1 | 10.609 | mg/kg |
+| β | kel | 0.149 | mg/kg |
+| K₁₂ | k12 | 6.013 | mg/kg |
+| K₂₁ | k21 | 4.380 | mg/kg |
+| V₁ | V1 | 0.300 | mg/kg |
+| V₂ | V2 | 0.415 | mg/kg |
 | Vd | V | 0.731 | L/kg |
 | CLtot | CL | 0.106 | L/h/kg |
-| AUC | AUC | 90.756 | mg·h/L |
-| T₁/₂α | t1/2α | 0.079 | h |
-| T₁/₂β | t1/2β | 5.629 | h |
+| AUC | AUC | 90.756 | µg·h/mL |
+| T₁/₂α | t1/2α | 0.079 | mg/kg |
+| T₁/₂β | t1/2β | 5.629 | mg/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.938). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,29 +62,30 @@ Kuze T, Miyazaki H, Taneike T. [Theophylline: pharmacokinetics, metabolism and u
 
 ### Reviewer guidance
 
-**The model was rejected because the fast-phase rate constant unit was unrecognized and the terminal volume was inconsistent with the derived half-life.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit mg/kg ([mass]) vs 1 / [time]; Q47 unit mg/kg ([mass]) vs 1 / [time]; Q301 unit mg/kg ([mass]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The fast-phase macro-rate constant (α) was reported with the unit 'n=10' instead of an appropriate time unit, preventing the software from calculating its SI value. The terminal volume of distribution (Vd = 0.731 L/kg) is numerically identical to the sum of the central (0.300 L/kg) and peripheral (0.415 L/kg) compartment volumes, which contradicts the long terminal half-life (5.629 h) relative to the short distribution half-life (0.079 h) in this three-compartment model. Extracted — theophylline: λ1 10.6 n=10, kel 0.149 1/h, k12 6.01 1/h, k21 4.38 1/h, V1 0.3 L/kg, V2 0.415 L/kg, V 0.731 L/kg, CL 0.106 L/h/kg, … (+3).
+A reported unit could not be converted (equation variable, λ1, kel and k12), so that value has no SI equivalent. None of the extracted parameters is aminophylline's own; they describe theophylline. Extracted — theophylline: λ1 10.6 mg/kg, kel 0.149 mg/kg, k12 6.01 mg/kg, k21 4.38 mg/kg, V1 0.3 mg/kg, V2 0.415 mg/kg, V 0.731 L/kg, CL 0.106 L/h/kg, … (+3).
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 17.376, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| α | `Q67` · λ1 | 10.609 | n=10 |  |  | n=10 | exact (1) | Kuze_1988_table_1:row1:col2 |
-| β | `Q47` · kel | 0.149 | 1/h | 4.139e-05 | 1/s | 1/h | exact (1) | Kuze_1988_table_1:row3:col2 |
-| K₁₂ | `Q301` · k12 | 6.013 | 1/h | 0.00167 | 1/s | 1/h | exact (1) | Kuze_1988_table_1:row4:col2 |
-| K₂₁ | `Q302` · k21 | 4.380 | 1/h | 0.001217 | 1/s | 1/h | exact (1) | Kuze_1988_table_1:row5:col2 |
-| V₁ | `Q63` · V1 | 0.300 | L/kg | 0.021 | m3 | L | exact (1) | Kuze_1988_table_1:row7:col2 |
-| V₂ | `Q64` · V2 | 0.415 | L/kg | 0.02905 | m3 | L | exact (1) | Kuze_1988_table_1:row8:col2 |
+| A | `Q900` · equation variable | 17.376 | mg/kg |  |  | mg/kg | llm (0.6) | Kuze_1988_table_1:row0:col2 |
+| α | `Q67` · λ1 | 10.609 | mg/kg |  |  | mg/kg | exact (1) | Kuze_1988_table_1:row1:col2 |
+| β | `Q47` · kel | 0.149 | mg/kg |  |  | mg/kg | exact (1) | Kuze_1988_table_1:row3:col2 |
+| K₁₂ | `Q301` · k12 | 6.013 | mg/kg |  |  | mg/kg | exact (1) | Kuze_1988_table_1:row4:col2 |
+| K₂₁ | `Q302` · k21 | 4.380 | mg/kg |  |  | mg/kg | exact (1) | Kuze_1988_table_1:row5:col2 |
+| V₁ | `Q63` · V1 | 0.300 | mg/kg |  |  | mg/kg | exact (1) | Kuze_1988_table_1:row7:col2 |
+| V₂ | `Q64` · V2 | 0.415 | mg/kg |  |  | mg/kg | exact (1) | Kuze_1988_table_1:row8:col2 |
 | Vd | `Q61` · V | 0.731 | L/kg | 0.05117 | m3 | L | exact (1) | Kuze_1988_table_1:row9:col2 |
 | CLtot | `Q22` · CL | 0.106 | L/h/kg | 2.061e-06 | m3/s | L/h | exact (1) | Kuze_1988_table_1:row10:col2 |
-| AUC | `Q88` · AUC | 90.756 | mg·h/L |  |  | mg·h/L | exact (1) | Kuze_1988_table_1:row11:col2 |
-| T₁/₂α | `Q59` · t1/2α | 0.079 | h | 284.4 | s | h | exact (1) | Kuze_1988_table_1:row12:col2 |
-| T₁/₂β | `Q60` · t1/2β | 5.629 | h | 2.026e+04 | s | h | exact (1) | Kuze_1988_table_1:row13:col2 |
+| AUC | `Q88` · AUC | 90.756 | µg·h/mL |  |  | µg·h/mL | exact (1) | Kuze_1988_table_1:row11:col2 |
+| T₁/₂α | `Q59` · t1/2α | 0.079 | mg/kg |  |  | mg/kg | half_life_rule (0.95) | Kuze_1988_table_1:row12:col2 |
+| T₁/₂β | `Q60` · t1/2β | 5.629 | mg/kg |  |  | mg/kg | half_life_rule (0.95) | Kuze_1988_table_1:row13:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -93,52 +95,47 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'A' — extend the ontology if this is a real PK parameter (source ['Kuze_1988_table_1:row0:col2'])
-- unit_dimension_unknown: 'n=10' (λ1)
-- dropped unlinked row (NIL): 'B' — extend the ontology if this is a real PK parameter (source ['Kuze_1988_table_1:row2:col2'])
-- unit_dimension_unknown: 'n=10' (kel)
-- unit_dimension_unknown: 'n=10' (k12)
-- unit_dimension_unknown: 'n=10' (k21)
+- unit_dimension_mismatch: 'α' → Q67 (unit '[mass]' vs ontology '1 / [time]') — route to review
+- dropped duplicate Q900 ('B', value '11.337') — already have one for this compound
+- unit_dimension_mismatch: 'β' → Q47 (unit '[mass]' vs ontology '1 / [time]') — route to review
+- unit_dimension_mismatch: 'K₁₂' → Q301 (unit '[mass]' vs ontology '1 / [time]') — route to review
+- unit_dimension_mismatch: 'K₂₁' → Q302 (unit '[mass]' vs ontology '1 / [time]') — route to review
 - dropped duplicate Q47 ('Kel', value '0.365') — already have one for this compound
-- unit_dimension_unknown: 'n=10' (V1)
-- unit_dimension_unknown: 'n=10' (V2)
-- unit_dimension_unknown: 'n=10' (V)
-- unit_dimension_unknown: 'n=10' (CL)
-- unit_dimension_unknown: 'n=10' (AUC)
-- unit_dimension_unknown: 'n=10' (t1/2α)
-- unit_dimension_unknown: 'n=10' (t1/2β)
-- implicit units: 'α' — the LLM proposed '1/h', whose dimension does not fit Q67; left unset
-- implicit units: 'β' → 1/h (from the paper text: "Abstract: 'The elimination rate constant was 0.37±0.05 hr-1'; β is the terminal elimination rate constant, unit hr^-1 = ")
-- implicit units: 'K₁₂' → 1/h (from the popPK convention: 'No unit stated for K12; first-order intercompartmental transfer rate constants are conventionally in 1/h, consistent wit')
-- implicit units: 'K₂₁' → 1/h (from the popPK convention: 'No unit stated for K21; first-order transfer rate constant conventionally in 1/h, consistent with hr^-1 rate constants i')
-- implicit units: 'V₁' → L/kg (from the paper text: "Abstract: 'the volume of distribution (Vd) was 0.73±0.04 l/kg' (Japanese: 見かけの分布容積(Vd)は0.73±0.04 l/kg); V1 is a volume o")
-- implicit units: 'V₂' → L/kg (from the paper text: 'Abstract reports Vd in l/kg (0.73±0.04 l/kg); V2 is a volume of distribution of the same kind, per kg body weight.')
-- implicit units: 'Vd' → L/kg (from the paper text: "Abstract: 'the volume of distribution (Vd) was 0.73±0.04 l/kg' — matches Vd = 0.731.")
-- implicit units: 'CLtot' → L/h/kg (from the popPK convention: 'No unit stated for CLtot; value 0.106 ≈ Vd×β = 0.73×0.149 L/h/kg, so L/h/kg (body-weight normalized clearance) is consis')
-- implicit units: 'AUC' → mg·h/L (from the popPK convention: 'No unit stated; AUC = dose/CLtot = 8.2 mg/kg ÷ 0.106 L/h/kg ≈ 77 mg·h/L, consistent with 90.756 mg·h/L.')
-- implicit units: 'T₁/₂α' → h (from the paper text: "Abstract gives half-life in hours ('T1/2β ... 5.63±0.83 hr', Japanese: 5.63±0.83時間); T1/2α is a half-life, unit h.")
-- implicit units: 'T₁/₂β' → h (from the paper text: "Abstract: 'The half-time (T1/2β) of theophylline was 5.63±0.83 hr' — matches T1/2β = 5.629, unit h.")
+- unit_dimension_mismatch: 'V₁' → Q63 (unit '[mass]' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'V₂' → Q64 (unit '[mass]' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'T₁/₂α' → Q59 (unit '[mass]' vs ontology '[time]') — route to review
+- unit_dimension_mismatch: 'T₁/₂β' → Q60 (unit '[mass]' vs ontology '[time]') — route to review
+- implicit units: 'Vd' → L/kg (from the paper text: "The abstract states 'volume of distribution (Vd) was 0.73±0.041/kg' and the Japanese text states '見 か け の 分 布 容 積(vd)は ，")
+- implicit units: 'CLtot' → L/h/kg (from the popPK convention: 'The paper does not explicitly state the unit for total clearance in the provided excerpts. However, given that Vd is rep')
+- implicit units: 'AUC' → µg·h/mL (from the popPK convention: 'The paper does not explicitly state the unit for AUC. The dose was 8.2 mg/kg. For a two-compartment model in dogs with V')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=theophylline
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 3C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
 - population split: 'iv (n=10)' subgroup of Kuze_1988 (paper reports 3 populations: im (n=5), iv (n=10), po (n=5))
-- review gap-fill skipped: this record measures 'theophylline', not aminophylline — the review values are the parent's
+- molar mass: PubChem entry choice failed (JSONDecodeError)
+- molar mass: none of 1 PubChem candidate(s) is 'theophylline' (LLM) — left in mass units
+- molar mass: none found for 'theophylline' — its concentrations stay mass-only
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (15/15 fields) | none |
+| `gpt-oss-120b` | partly confirmed | 0.938 (15/16 fields) | 1 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 17.376 |  | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -148,29 +145,26 @@ _All readers agree on the compared fields of this record._
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 11 |  |  |  |
-| C0b_disposition_core | pass |  |  |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |  |  |
-| C1_half_life_beta | pass | 5.63 | 4.78 | 0.849 | 0.25 | reported t½β |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['Kuze_1988_table_1:row10:col2'] |
-| C5_dimension_Q301 | pass | 1 / [time] |  |  |  | ['Kuze_1988_table_1:row4:col2'] |
-| C5_dimension_Q302 | pass | 1 / [time] |  |  |  | ['Kuze_1988_table_1:row5:col2'] |
-| C5_dimension_Q47 | pass | 1 / [time] |  |  |  | ['Kuze_1988_table_1:row3:col2'] |
-| C5_dimension_Q59 | pass | [time] |  |  |  | ['Kuze_1988_table_1:row12:col2'] |
-| C5_dimension_Q60 | pass | [time] |  |  |  | ['Kuze_1988_table_1:row13:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['Kuze_1988_table_1:row9:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['Kuze_1988_table_1:row7:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['Kuze_1988_table_1:row8:col2'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  |  |  | ['Kuze_1988_table_1:row11:col2'] |
-| C5_unit_missing_Q67 | fail | 1 / [time] | n=10 |  |  | ['Kuze_1988_table_1:row1:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.106 |  |  | ['Kuze_1988_table_1:row10:col2'] |
-| C8_topology | fail |  |  |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 7.42 L/h |  |  | ['Kuze_1988_table_1:row10:col2'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 51.2 L |  |  | ['Kuze_1988_table_1:row9:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 21 L |  |  | ['Kuze_1988_table_1:row7:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 29.1 L |  |  | ['Kuze_1988_table_1:row8:col2'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 11 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kuze_1988_table_1:row10:col2'] |
+| C5_dimension_Q301 | fail | 1 / [time] | mg/kg ([mass]) | ['Kuze_1988_table_1:row4:col2'] |
+| C5_dimension_Q302 | fail | 1 / [time] | mg/kg ([mass]) | ['Kuze_1988_table_1:row5:col2'] |
+| C5_dimension_Q47 | fail | 1 / [time] | mg/kg ([mass]) | ['Kuze_1988_table_1:row3:col2'] |
+| C5_dimension_Q59 | fail | [time] | mg/kg ([mass]) | ['Kuze_1988_table_1:row12:col2'] |
+| C5_dimension_Q60 | fail | [time] | mg/kg ([mass]) | ['Kuze_1988_table_1:row13:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Kuze_1988_table_1:row9:col2'] |
+| C5_dimension_Q63 | fail | [length] ** 3 | mg/kg ([mass]) | ['Kuze_1988_table_1:row7:col2'] |
+| C5_dimension_Q64 | fail | [length] ** 3 | mg/kg ([mass]) | ['Kuze_1988_table_1:row8:col2'] |
+| C5_dimension_Q67 | fail | 1 / [time] | mg/kg ([mass]) | ['Kuze_1988_table_1:row1:col2'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Kuze_1988_table_1:row11:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.106 | ['Kuze_1988_table_1:row10:col2'] |
+| C8_topology | fail |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 7.42 L/h | ['Kuze_1988_table_1:row10:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 51.2 L | ['Kuze_1988_table_1:row9:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -194,4 +188,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baminophylline%5D%20Aminophylline_Kuze1988_iv&body=Drug%3A%20aminophylline%0ARecord%3A%20Aminophylline_Kuze1988_iv%0APaper%3A%20Kuze_1988%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aminophylline/Aminophylline_Kuze1988_iv%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 23:44 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:03 UTC</sub>

@@ -4,11 +4,11 @@
 
 # vandetanib — `Vandetanib_Zhang2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The paper reports none of the model's key parameters.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="vandetanib" model-id="Vandetanib_Zhang2011_reference" status="rejected" stale="false" population="Chinese, Western, and Japanese patients with solid malignant tumors" measured-compound="vandetanib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vandetanib" model-id="Vandetanib_Zhang2011_reference" status="needs_review" stale="false" population="Chinese patients with advanced solid malignant tumors" measured-compound="vandetanib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zhang L, Li S, Zhang Y, Zhan J, Zou BY, Smith R et al. Pharmacokinetics and tolerability of vandetanib in Chinese patients with solid, malignant tumors: an open-label, phase I, rising multiple-dose study. Clinical therapeutics 33(3):315–327 (2011).
@@ -16,23 +16,26 @@ Zhang L, Li S, Zhang Y, Zhan J, Zou BY, Smith R et al. Pharmacokinetics and tole
 
 ## Population and dosing
 
-**Population:** Chinese, Western, and Japanese patients with solid malignant tumors · condition solid malignant tumors · age group adult.
+**Population:** Chinese patients with advanced solid malignant tumors · condition advanced solid malignant tumors · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 0 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label | parameter | value | unit |
+|---|---|---|---|
+| Vandetanib plasma clearance | CL | 7.8 | L/h |
+| half-life | t1/2z | 8 | days |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (primary re-run, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), qwen3.8-27b (primary re-run, agreement 0.667). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -42,44 +45,57 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**Only clearance was extracted — no volume.**
 
-No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — vandetanib: CL 7.8 L/h, t1/2z 8 days.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc: this record has none, the second reading 38611; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of accumulation: this record has none, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| Vandetanib plasma clearance | `Q22` · CL | 7.8 | L/h | 2.167e-06 | m3/s | l/h | llm_confirmed (0.6) | Zhang_2011:abstract |
+| half-life | `Q57` · t1/2z | 8 | days | 6.912e+05 | s | d | half_life_rule (0.95) | Zhang_2011:abstract |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
 - covariate category for AUCSS from footnote/prose kept as documentation only (['Zhang_2011:abstract'])
-- dropped unlinked row (NIL): '3.6-fold higher' — extend the ontology if this is a real PK parameter (source ['Zhang_2011:abstract'])
-- dropped value-less row: 'C(max SS) and AUC(SS)' (captured trailing unit 'SS' for child rows)
-- dropped value-less row: 'Vandetanib plasma clearance'
-- dropped value-less row: 'plasma clearance'
-- dropped value-less row: 'half-life'
-- dropped value-less row: 'accumulation'
+- dropped unlinked row (NIL): 'coefficient of variation ranging from 29.1% to 40.6%' — extend the ontology if this is a real PK parameter (source ['Zhang_2011:abstract'])
+- dropped duplicate Q22 ('plasma clearance', value 8) — already have one for this compound
+- dropped unlinked row (NIL): 'accumulation' — extend the ontology if this is a real PK parameter (source ['Zhang_2011:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vandetanib
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Zhang_2011_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Zhang_2011_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 | `qwen3.8-27b` | primary re-run | 0.667 (4/6 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[accumulation]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life].value` | 8 |  | mismatch |
+| `gpt-oss-120b` | `parameters[plasma clearance]` |  | 8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vandetanib plasma clearance]` | 7.8 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[auc]` |  | 38611 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[plasma clearance]` |  | 8 | only_one_extracted |
 
@@ -93,11 +109,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | obtained |
-|---|---|---|
-| C0_has_structural_params | fail | 0 |
-| C0b_disposition_core | fail |  |
-| C8_topology | pass |  |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Zhang_2011:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Zhang_2011:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.8 | ['Zhang_2011:abstract'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 7.8 L/h | ['Zhang_2011:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -109,9 +130,19 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -121,4 +152,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvandetanib%5D%20Vandetanib_Zhang2011_reference&body=Drug%3A%20vandetanib%0ARecord%3A%20Vandetanib_Zhang2011_reference%0APaper%3A%20Zhang_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vandetanib/Vandetanib_Zhang2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 08:46 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 07:10 UTC</sub>

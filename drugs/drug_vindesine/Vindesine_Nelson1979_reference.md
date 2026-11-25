@@ -16,7 +16,7 @@ Nelson RL, Dyke RW, Root MA. Clinical pharmacokinetics of vindesine. Cancer chem
 
 ## Population and dosing
 
-**Population:** patients with advanced cancer · condition advanced cancer · n = 5.
+**Population:** patients with advanced cancer · condition advanced cancer · age group adult.
 
 ## Model
 
@@ -32,7 +32,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +46,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-Independently confirmed by `qwen3.8-27b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,11 +60,12 @@ Independently confirmed by `qwen3.8-27b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (4/4 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -105,4 +106,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvindesine%5D%20Vindesine_Nelson1979_reference&body=Drug%3A%20vindesine%0ARecord%3A%20Vindesine_Nelson1979_reference%0APaper%3A%20Nelson_1979%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vindesine/Vindesine_Nelson1979_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 15:09 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:11 UTC</sub>

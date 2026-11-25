@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;S02A&quot;,&quot;href&quot;:&quot;atc/S02A.md&quot;},{&quot;label&quot;:&quot;boric acid&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/&quot;},{&quot;label&quot;:&quot;Jansen_1984 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;BoricAcid_Jansen1984_reference&quot;,&quot;label&quot;:&quot;Jansen_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/BoricAcid_Jansen1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;BoricAcid_Usuda1998_reference&quot;,&quot;label&quot;:&quot;Usuda_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_boric_acid/BoricAcid_Usuda1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # boric acid — `BoricAcid_Jansen1984_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Boric acid’s reported total clearance of 54.6 L/h is disputed, leaving this abstract-only record held for review rather than a supported fitted model.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="boric acid" model-id="BoricAcid_Jansen1984_reference" status="needs_review" stale="false" population="healthy adult male volunteers" measured-compound="boric acid" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="boric acid" model-id="BoricAcid_Jansen1984_reference" status="rejected" stale="false" population="healthy adults" measured-compound="boric_acid" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Jansen JA, Andersen J, Schou JS. Boric acid single dose pharmacokinetics after intravenous administration to man. Archives of toxicology 55(1):64–67 (1984).
@@ -17,33 +16,30 @@ Jansen JA, Andersen J, Schou JS. Boric acid single dose pharmacokinetics after i
 
 ## Population and dosing
 
-**Population:** healthy adult male volunteers · condition healthy · age group adult · n = 8.
+**Population:** healthy adults · condition healthy · age group adult · n = 8.
 
 ## Model
 
-**Structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_boric_acid/BoricAcid_Jansen1984_reference/BoricAcid_Jansen1984_reference.svg" alt="BoricAcid_Jansen1984_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Parameters:** 6 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| 120 h urinary excretion | fe | 98.7 | % of dose |
-| Cltot | CL | 54.6 | L/h |
+| The 120 h urinary excretion | fe | 98.7 | % of dose |
+| Cltot | CL | 54.6 | ml/min/1.73 m2 |
 | t1/2 beta | t1/2β | 21.0 | h |
 | V1 | V1 | 0.251 | l/kg |
 | V2 | V2 | 0.456 | l/kg |
 | V3 | V3 | 0.34 | l/kg |
-| Q 2 (mL/min) | Q | 66.6 | mL/min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,25 +49,24 @@ Jansen JA, Andersen J, Schou JS. Boric acid single dose pharmacokinetics after i
 
 ### Reviewer guidance
 
-**Boric acid’s reported total clearance of 54.6 L/h is disputed, leaving this abstract-only record held for review rather than a supported fitted model.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Only the abstract was read, so its summary statistics stand in for a fitted model. The second reader marked the dose compound and primary analyte unknown and did not confirm the reported urinary excretion, clearance, intercompartmental clearance, terminal half-life, or compartment volumes; agreement was 0.118, with 0 of 1 reader agreeing. Extracted — boric acid: fe 98.7 % of dose, CL 54.6 L/h, t1/2β 21 h, V1 0.251 l/kg, V2 0.456 l/kg, V3 0.34 l/kg, Q 66.6 mL/min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — boric acid: fe 98.7 % of dose, CL 54.6 ml/min/1.73 m2, t1/2β 21 h, V1 0.251 l/kg, V2 0.456 l/kg, V3 0.34 l/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has boric acid, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 120 h urinary excretion: this record has none, the second reading 98.7; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| 120 h urinary excretion | `Q44` · fe | 98.7 | % of dose |  |  | %·ofdose | llm_confirmed (0.6) | Jansen_1984:abstract |
-| Cltot | `Q22` · CL | 54.6 | L/h | 1.517e-05 | m3/s | L/h | exact (1) | Jansen_1984:abstract |
-| t1/2 beta | `Q60` · t1/2β | 21.0 | h | 7.56e+04 | s | h | exact (1) | Jansen_1984:abstract |
+| The 120 h urinary excretion | `Q44` · fe | 98.7 | % of dose | 0.987 |  | %·dose·of | llm_confirmed (0.6) | Jansen_1984:abstract |
+| Cltot | `Q22` · CL | 54.6 | ml/min/1.73 m2 | 1.574e-06 | m3/s | ml/(min·1.73m2) | exact (1) | Jansen_1984:abstract |
+| t1/2 beta | `Q60` · t1/2β | 21.0 | h | 7.56e+04 | s | h | half_life_rule (0.95) | Jansen_1984:abstract |
 | V1 | `Q63` · V1 | 0.251 | l/kg | 0.01757 | m3 | l/kg | exact (1) | Jansen_1984:abstract |
 | V2 | `Q64` · V2 | 0.456 | l/kg | 0.03192 | m3 | l/kg | exact (1) | Jansen_1984:abstract |
 | V3 | `Q77` · V3 | 0.34 | l/kg | 0.0238 | m3 | l/kg | exact (1) | Jansen_1984:abstract |
-| Q 2 (mL/min) | `Q30` · Q | 66.6 | mL/min | 1.11e-06 | m3/s | L/h | review_gapfill (0.7) | Syvänen_2012:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -82,46 +77,30 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 **Interpretation flags:**
 - unit_dimension_unknown: '% of dose' (fe)
-- unit_dimension_unknown: 'ml/min/1.73 m2' (CL)
-- implicit units: 'Cltot' → L/h (from the popPK convention: 'No unit stated in text or table footnotes; total clearance in population PK is conventionally expressed in L/h, and 54.6')
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=boric acid
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=boric_acid
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q30 (Q) from Syvänen_2012's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Jansen_1984_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.118 (2/17 fields) | 15 |
+| `gpt-oss-120b` | partly confirmed | 0.818 (9/11 fields) | 2 |
 
-<details><summary>15 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[120 h urinary excretion]` | 98.7 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[120 h urinary excretion]` |  | 98.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cltot]` | 54.6 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cltot]` |  | 54.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q 2]` | 66.6 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2 beta]` | 21.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2 beta]` |  | 21.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1]` | 0.251 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1]` |  | 0.251 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v2]` | 0.456 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v2]` |  | 0.456 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v3]` | 0.34 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v3]` |  | 0.34 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | boric acid | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | boric acid | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[the 120 h urinary excretion]` | 98.7 |  | only_one_extracted |
 
 </details>
 
@@ -139,28 +118,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Jansen_1984:abstract'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Syvänen_2012:review'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Jansen_1984:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Jansen_1984:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Jansen_1984:abstract'] |
 | C5_dimension_Q77 | pass | [length] ** 3 |  | ['Jansen_1984:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 54.6 | ['Jansen_1984:abstract'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 54.6 L/h | ['Jansen_1984:abstract'] |
+| C8_topology | fail |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 5.67 L/h | ['Jansen_1984:abstract'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 17.6 L | ['Jansen_1984:abstract'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 31.9 L | ['Jansen_1984:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=boric acid) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.118, 0 of 1 reader(s) agree | 0.118 | cross-check disputed by a second reader: verdict disputed, agreement 0.118, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -172,72 +138,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_boric_acid/BoricAcid_Jansen1984_reference/BoricAcid_Jansen1984_reference_modelica.zip" download>BoricAcid_Jansen1984_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_boric_acid/BoricAcid_Jansen1984_reference/BoricAcid_Jansen1984_reference_fmi.zip" download>BoricAcid_Jansen1984_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_boric_acid/BoricAcid_Jansen1984_reference/BoricAcid_Jansen1984_reference_matlab.zip" download>BoricAcid_Jansen1984_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_boric_acid/BoricAcid_Jansen1984_reference/BoricAcid_Jansen1984_reference_matlab_simbio.zip" download>BoricAcid_Jansen1984_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_boric_acid/BoricAcid_Jansen1984_reference/BoricAcid_Jansen1984_reference_sbml.zip" download>BoricAcid_Jansen1984_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_boric_acid/BoricAcid_Jansen1984_reference/BoricAcid_Jansen1984_reference_cellml.zip" download>BoricAcid_Jansen1984_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.06183 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 1.517e-05 | m3/s |
-| input | model | `VdPerKg` | 0.000251 | m3/kg |
-| input | model | `k12` | 6.318e-05 | 1/s |
-| input | model | `k21` | 3.477e-05 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Jansen JA, Andersen J, Schou JS. Boric acid single dose pharmacokinetics after intravenous administration to man. Archives of toxicology 55(1):64–67 (1984). [doi:10.1007/BF00316588](https://doi.org/10.1007/BF00316588)
-
-**This record:** Pharmacolibrary, model `BoricAcid_Jansen1984_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_boric_acid/BoricAcid_Jansen1984_reference>
-
-```bibtex
-@misc{pharmacolibrary_BoricAcidJansen1984reference,
-  title  = {{Pharmacolibrary model BoricAcid_Jansen1984_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_boric_acid/BoricAcid_Jansen1984_reference},
-  note   = {Parameters from doi:10.1007/BF00316588},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_boric_acid/BoricAcid_Jansen1984_reference/BoricAcid_Jansen1984_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_boric_acid/BoricAcid_Jansen1984_reference/BoricAcid_Jansen1984_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C` · parameters `BoricAcid_Jansen1984_reference_params.json` · controls `BoricAcid_Jansen1984_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bboric_acid%5D%20BoricAcid_Jansen1984_reference&body=Drug%3A%20boric_acid%0ARecord%3A%20BoricAcid_Jansen1984_reference%0APaper%3A%20Jansen_1984%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_boric_acid/BoricAcid_Jansen1984_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:48 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:44 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Defibrotide record rejected because the fast-phase rate constant lacks a unit, preventing SI conversion, and conflicting values exist for half-life.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="defibrotide" model-id="Defibrotide_Pescador1983_reference" status="rejected" stale="false" population="rabbits" measured-compound="defibrotide" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Pescador R, Mantovani M, Prino G, Madonna M. Pharmacokinetics of Defibrotide and
 
 ### Reviewer guidance
 
-**Defibrotide record rejected because the fast-phase rate constant lacks a unit, preventing SI conversion, and conflicting values exist for half-life.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The macro-rate constant λ1 (0.60) has no unit specified, so it could not be converted to SI units. The second reader recorded a terminal half-life of 4.95 hours, disagreeing with the recorded value of 12.83 hours. Extracted — defibrotide: λ1 0.6, kel 0.054 1/h, k12 0.209 1/h, k21 0.357 1/h, AUC 1.65e+04 ng*h/mL, t1/2z 12.8 h, V 107 L, V2 13.9 L.
+A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — defibrotide: λ1 0.6, kel 0.054 1/h, k12 0.209 1/h, k21 0.357 1/h, AUC 1.65e+04 ng*h/mL, t1/2z 12.8 h, V 107 L, V2 13.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 5: this record has none, the second reading 4.95; it also differs on 8 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;teniposide&quot;,&quot;href&quot;:&quot;drugs/drug_teniposide/&quot;},{&quot;label&quot;:&quot;Holthuis_1987 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Teniposide_Sinkule1984_reference&quot;,&quot;label&quot;:&quot;Sinkule_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_teniposide/Teniposide_Sinkule1984_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -8,14 +9,14 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="teniposide" model-id="Teniposide_Holthuis1987_reference" status="rejected" stale="false" population="cancer patients receiving high-dose teniposide" measured-compound="teniposide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="teniposide" model-id="Teniposide_Holthuis1987_reference" status="rejected" stale="false" population="adult cancer patients" measured-compound="teniposide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Holthuis JJ, de Vries LG, Postmus PE, van Oort WW, Verleun H, Hulshoff A et al. Pharmacokinetics of high-dose teniposide. Cancer treatment reports 71(6):599–603 (1987).
 
 ## Population and dosing
 
-**Population:** cancer patients receiving high-dose teniposide · condition cancer · n = 8.
+**Population:** adult cancer patients · condition cancer · age group adult · n = 8.
 
 ## Model
 
@@ -31,7 +32,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,32 +46,44 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-Independently confirmed by `qwen3.8-27b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of steady-state volume of distribution: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| steady-state volume of distribution | Q65 | llm_corrected |
+| total-body clearance | Q22 | llm_confirmed |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'volume of distribution'
-- dropped value-less row: 'total-body clearance'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=teniposide
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Holthuis_1987_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 | `qwen3.8-27b` | confirmed | 1.0 (4/4 fields) | none |
 
-_All readers agree on the compared fields of this record._
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total-body clearance]` |  |  | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -80,11 +93,13 @@ _All readers agree on the compared fields of this record._
 
 **Scholar closed-form checks:**
 
-| check | status | obtained |
-|---|---|---|
-| C0_has_structural_params | fail | 0 |
-| C0b_disposition_core | fail |  |
-| C8_topology | pass |  |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | fail |  | 0 |  |
+| C0b_disposition_core | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Holthuis_1987:abstract'] |
+| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Holthuis_1987:abstract'] |
+| C8_topology | pass |  |  |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -108,4 +123,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bteniposide%5D%20Teniposide_Holthuis1987_reference&body=Drug%3A%20teniposide%0ARecord%3A%20Teniposide_Holthuis1987_reference%0APaper%3A%20Holthuis_1987%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_teniposide/Teniposide_Holthuis1987_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 13:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:45 UTC</sub>

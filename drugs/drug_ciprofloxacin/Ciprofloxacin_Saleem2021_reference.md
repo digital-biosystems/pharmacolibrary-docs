@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability was defaulted rather than extracted, and volume of distribution values 74.9 L conflicted across record and review.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Saleem2021_reference" status="needs_review" stale="false" population="Pakistani patients with enteric fever" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Saleem R, Khan HM, Usman M, Khokhar MI, Rasheed H, Abbas M et al. Population pha
 
 ### Reviewer guidance
 
-**Bioavailability was defaulted rather than extracted, and volume of distribution values 74.9 L conflicted across record and review.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record, built from the abstract alone, assigned default values to bioavailability rather than using estimates from the study. Reviewers disagreed on the 74.9 L volume of distribution value, with one finding it present and another finding it missing. Because the abstract-only source substituted summary statistics for fitted parameters, the record lacked the necessary specificity for publication. Extracted — ciprofloxacin: CL 19.8 L/h, V 74.9 L, kabs 1 h−1, tlag 0.33 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ciprofloxacin: CL 19.8 L/h, V 74.9 L, kabs 1 h−1, tlag 0.33 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ciprofloxacin vd: this record has none, the second reading 74.9; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

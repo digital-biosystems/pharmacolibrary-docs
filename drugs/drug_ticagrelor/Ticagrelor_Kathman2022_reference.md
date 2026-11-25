@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is not a compartmental pharmacokinetic model, as it lacks reported distribution volume and clearance or elimination rate values.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit Units ([luminosity] / [length] ** 2) vs [mass] / [length] ** 3; Q306 unit Units ([luminosity] / [length] ** 2) vs 1 / [time]; Q27 unit Units ([luminosity] / [length] ** 2) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="ticagrelor" model-id="Ticagrelor_Kathman2022_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="PB2452" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -47,13 +47,13 @@ Kathman SJ, Wheeler JJ, Bhatt DL, Arnold SE, Lee JS. Population pharmacokinetic-
 
 ### Reviewer guidance
 
-**The record is not a compartmental pharmacokinetic model, as it lacks reported distribution volume and clearance or elimination rate values.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit Units ([luminosity] / [length] ** 2) vs [mass] / [length] ** 3; Q306 unit Units ([luminosity] / [length] ** 2) vs 1 / [time]; Q27 unit Units ([luminosity] / [length] ** 2) vs [length] ** 3 / [time].**
 
-The extracted parameters include drug-target binding constants and transit rate constants but omit the specific volume of distribution and clearance values required to define a compartmental model. The review confirmed that the source is an exposure/outcome paper that does not report the necessary pharmacokinetic elimination or distribution metrics. Extracted — ticagrelor: Q2 1.05.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Extracted — ticagrelor: Q2 1.05.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ticagrelor, PB2452, the second reading unknown; it also differs on 32 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

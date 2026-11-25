@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the S-1 compartment is unreachable, and the 5-fluorouracil clearance parameter of 80.5 could not be converted to SI units.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Hirose2010_population_mean" status="rejected" stale="false" population="Japanese patients with advanced cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -51,13 +51,13 @@ Hirose T, Fujita K, Nishimura K, Ishida H, Yamashita K, Sunakawa Y et al. Pharma
 
 ### Reviewer guidance
 
-**The model was rejected because the S-1 compartment is unreachable, and the 5-fluorouracil clearance parameter of 80.5 could not be converted to SI units.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The structure defines a metabolism link from S-1 to tegafur, leaving S-1 as an orphan compartment with no dose path. The clearance value of 80.5 is recorded with a unit range of (39-174) instead of a valid time unit. This unconvertible unit prevented the parameter from being processed for the pharmacokinetic model. Extracted — fluorouracil: CL 80.5 (39-174), kabs 1.2 174.6, V 161 L.
+A reported unit could not be converted (CL and kabs), so that value has no SI equivalent. Extracted — fluorouracil: CL 80.5 (39-174), kabs 1.2 174.6, V 161 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has S-1, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

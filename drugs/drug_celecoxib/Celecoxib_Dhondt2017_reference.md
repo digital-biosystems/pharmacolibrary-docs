@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
-> Celecoxib CL (9.81 L/h.kg) was rejected because its reported unit has dimensions inconsistent with clearance.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit L/h.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time]; Q86 unit ng/mL ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q27 unit L/h.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Dhondt2017_reference" status="rejected" stale="false" population="cockatiels" measured-compound="celecoxib" parameterization="apparent" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Dhondt L, Devreese M, Croubels S, De Baere S, Haesendonck R, Goessens T et al. C
 
 ### Reviewer guidance
 
-**Celecoxib CL (9.81 L/h.kg) was rejected because its reported unit has dimensions inconsistent with clearance.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit L/h.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time]; Q86 unit ng/mL ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q27 unit L/h.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].**
 
-The same dimension conflict was recorded for celecoxib C0 (10.15 ng/mL) and CL/F (18.82 L/h.kg). A reported unit could not be converted to SI, so the affected parameter lacked an SI value. The second reader also disputed extracted values for CL, CL/F, AUC∞, C0, Cmax, and the absorption rate constant, reporting 7.93, 11.67, 11.67, 8.06, 14.27, and 17.37, respectively. Extracted — celecoxib: CL 9.81 L/h.kg, C0 10.2 ng/mL, AUC∞ 18.8 ng.h/mL, kel 32.3 h−1, t1/2z 32.3 h, CL/F 18.8 L/h.kg, kabs 55.9 h−1, t1/2α 55.9 h, … (+3).
+A reported unit could not be converted (CL, C0, AUC∞ and CL/F), so that value has no SI equivalent. Extracted — celecoxib: CL 9.81 L/h.kg, C0 10.2 ng/mL, AUC∞ 18.8 ng.h/mL, kel 32.3 h−1, t1/2z 32.3 h, CL/F 18.8 L/h.kg, kabs 55.9 h−1, t1/2α 55.9 h, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc0-inf].value`: this record has 18.81, the second reading 11.67; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

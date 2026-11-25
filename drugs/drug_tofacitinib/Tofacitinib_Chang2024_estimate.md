@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record was held back because the second reader disputed the verdict, citing missing relative standard errors and an unverified formulation effect for tofacitinib.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="tofacitinib" model-id="Tofacitinib_Chang2024_estimate" status="needs_review" stale="false" population="children and adolescents with juvenile idiopathic arthritis" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Chang C, Vong C, Wang X, Hazra A, Diehl A, Nicholas T et al. Tofacitinib pharmac
 
 ### Reviewer guidance
 
-**The record was held back because the second reader disputed the verdict, citing missing relative standard errors and an unverified formulation effect for tofacitinib.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The review was blocked because a second reader disagreed with the initial assessment, with an agreement score of 0.529. The record lacks relative standard error values for clearance, absorption rate, lag time, and volume, which the second reader identified as present in the source. Additionally, the formulation effect parameter was disputed, with the second reader finding no corresponding value in their reading. Extracted — tofacitinib: CL/F 26.1 L/h, V/F 89.2 L, kabs 2.78 h−1, tlag 0.19 h.
+The base model was simulated, not the covariate effects the record defines. Extracted — tofacitinib: CL/F 26.1 L/h, V/F 89.2 L, kabs 2.78 h−1, tlag 0.19 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].rse_percent`: this record has none, the second reading 2.30; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -164,7 +164,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.529, 0 of 1 reader(s) agree | 0.529 | cross-check disputed by a second reader: verdict disputed, agreement 0.529, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.529 (9 of 17 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.529 | cross-check contradicted by a second reader: verdict disputed; agreement 0.529 (9 of 17 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 113.9 | 2.751e-05 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 
 <details class="legend">

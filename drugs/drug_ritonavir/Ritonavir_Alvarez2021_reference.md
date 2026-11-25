@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ritonavir parameters from Alvarez_2021 were refused due to disputed cross-checks and an apparent model assumption of unit bioavailability.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ritonavir" model-id="Ritonavir_Alvarez2021_reference" status="needs_review" stale="false" population="" measured-compound="ritonavir" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Alvarez JC, Moine P, Davido B, Etting I, Annane D, Larabi IA et al. Population p
 
 ### Reviewer guidance
 
-**Ritonavir parameters from Alvarez_2021 were refused due to disputed cross-checks and an apparent model assumption of unit bioavailability.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists lopinavir clearance values under ritonavir labels, and the second reader disagreed on extracted numeric values. The model builder assumed unit bioavailability rather than estimating it, and the absorption lag time was left at a default placeholder. These factors resulted in a low agreement ratio for the cross-check. Extracted — ritonavir: CL/F 4.88 L/h, V/F 94.8 L, kabs 0.572 h−1.
+Extracted — ritonavir: CL/F 4.88 L/h, V/F 94.8 L, kabs 0.572 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q322: this record has 0.06, the second reading 0.05; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.625 (5 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.625 | cross-check contradicted by a second reader: verdict disputed; agreement 0.625 (5 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -211,4 +211,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Britonavir%5D%20Ritonavir_Alvarez2021_reference&body=Drug%3A%20ritonavir%0ARecord%3A%20Ritonavir_Alvarez2021_reference%0APaper%3A%20Alvarez_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ritonavir/Ritonavir_Alvarez2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:01 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:45 UTC</sub>

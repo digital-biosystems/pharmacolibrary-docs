@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Amodiaquine's oral clearance and volume parameters, 6780 L/h and 272000 L, were flagged as physiologically implausible magnitudes.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="Piperaquine" model-id="Piperaquine_Ding2024_nonmem_estimates_rse_a" status="rejected" stale="false" population="pregnant women with uncomplicated Plasmodium falciparum malaria" measured-compound="piperaquine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -57,13 +57,13 @@ Ding J, Hoglund RM, Tagbor H, Tinto H, Valéa I, Mwapasa V et al. Population pha
 
 ### Reviewer guidance
 
-**Amodiaquine's oral clearance and volume parameters, 6780 L/h and 272000 L, were flagged as physiologically implausible magnitudes.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The reported values for amodiaquine exceed typical human physiological ranges, indicating a likely unit or scale extraction error. A unit provided for one of the parameters was not recognized by the standard conversion system, preventing the calculation of a valid SI value. These discrepancies triggered the automatic rejection for outside-physiological-window violations. Extracted — amodiaquine: Fab 100, kabs 0.589 1/h, n_transit 2, CL/F 6.78e+03 L/h, V/F 2.72e+05 L; piperaquine: MTT 0.236 h; desethylamodiaquine: CL 38.3 L/h, V1 861 L, Q 81.7 L/h, V2 1.32e+04 L.
+A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — amodiaquine: Fab 100, kabs 0.589 1/h, n_transit 2, CL/F 6.78e+03 L/h, V/F 2.72e+05 L; piperaquine: MTT 0.236 h; desethylamodiaquine: CL 38.3 L/h, V1 861 L, Q 81.7 L/h, V2 1.32e+04 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has amodiaquine → desethylamodiaquine (metabolism), the second reading none; it also differs on 22 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

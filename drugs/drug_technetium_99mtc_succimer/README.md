@@ -42,7 +42,7 @@ Technetium 99mtc succimer is a diagnostic radiopharmaceutical used for imaging t
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:22 | 11:59 | 0/3/0 | 0/0/0 | 0/0/0 | 347,124/50,230 | openai / gpt-6-luna | 13 | 2/11 | 12/1 | 0 |
+| 2026-11-24 05:35 | 0:03 | 0/3/0 | 0/0/0 | 0/0/0 | 3,945/178 | einfracz / qwen3.8-27b | 13 | 2/11 | 12/1 | 0 |
 
 ## Coverage
 
@@ -55,29 +55,38 @@ Technetium 99mtc succimer is a diagnostic radiopharmaceutical used for imaging t
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bakirtas_2009 | irrelevant | 0 | 0 | Human renal imaging reports uptake values but no quantitative pharmacokinetic disposition parameters. |
+| popPK | Bakirtas_2009 | irrelevant | 0 | 0 | The study uses (99m)Tc-DMSA (a different radiopharmaceutical than Tc-99mTc succimer) as a diagnostic imaging agent to assess renal function, not as a subject of pharmacokinetic modeling. |
+| PGx | Bakirtas_2009 | not_relevant | 0 | 0 | The paper evaluates surgical outcomes using a radiotracer and does not report any pharmacogenomic effects. |
 | popPK | Chan_2016 | irrelevant | 1 | 0 | 99mTc-DMSA is used only as a renal imaging agent, with no quantitative pharmacokinetic disposition parameters reported. |
 | popPK | Chaves_2010 | irrelevant | 1 | 0 | 99mTc-succimer is used only for diagnostic scintigraphy, with no quantitative pharmacokinetic disposition parameters reported. |
-| popPK | Cui_2025 | irrelevant | 0 | 0 | This evaluates a diagnostic device and reports no pharmacokinetic parameters for technetium-99m succimer. |
+| popPK | Cui_2025 | irrelevant | 0 | 0 | The paper describes a statistical framework for evaluating diagnostic devices and does not report pharmacokinetic parameters for technetium_99mtc_succimer. |
+| PGx | Cui_2025 | not_relevant | 0 | 0 | The paper discusses a statistical framework for evaluating diagnostic device reliability using nuclear medicine images, and contains no information regarding pharmacogenomics or pharmacokinetics of technetium_99mtc_succimer. |
 | popPK | Finogenova_2026 | irrelevant | 0 | 0 | This review reports no pharmacokinetic parameters for technetium-99m succimer; the numeric values concern other radionuclides. |
 | popPK | Funeh_2025 | irrelevant | 0 | 0 | This studies technetium-99m-labeled antibody fragments in mice, not technetium-99m succimer, and reports no quantitative PK disposition parameters. |
 | popPK | Gracia_2025 | irrelevant | 0 | 0 | The paper reports quantitative PK parameters for 99mTc-DTPA, not technetium-99m succimer. |
 | popPK | Hooper_2025 | irrelevant | 0 | 0 | The study models iohexol and iopamidol, while technetium-99m agents are only mentioned as other filtration markers. |
-| popPK | Jouret_2010 | irrelevant | 1 | 1 | The study uses technetium-99m DMSA for imaging but reports no quantitative disposition parameters for it. |
+| popPK | Jouret_2010 | irrelevant | 0 | 0 | The study uses 99mTc-DMSA and 99mTc-MAG3 as diagnostic imaging tracers for renal function in mice, not as subjects for pharmacokinetic parameter extraction (CL, V, etc.). |
+| PGx | Jouret_2010 | not_relevant | 0 | 0 | The paper evaluates renal function in mice using various SPECT tracers but does not report pharmacogenomic effects (e.g., gene variants) on the PK or PD of 99mTc-succimer specifically. |
 | popPK | Kaikousidis_2023 | irrelevant | 0 | 0 | The paper models Tc99m-tetrofosmin, not succimer; parameter estimates are not readable here and some data are referenced in supplementary tables. |
-| popPK | Lee_2009 | irrelevant | 1 | 0 | Human renal uptake was assessed, but no quantitative pharmacokinetic disposition parameters or numeric values are reported. |
+| popPK | Lee_2009 | irrelevant | 0 | 0 | The study investigates (99m)Tc-DMSA, a different radiopharmaceutical, rather than the target drug technetium-99mtc_succimer. |
 | popPK | Liu_2022 | irrelevant | 0 | 0 | no_text gate: extracted text is mostly non-alphabetic (garbled or binary) |
-| popPK | Rajic_2007 | irrelevant | 1 | 0 | Technetium-99m DMSA is used for diagnostic renal fixation, with no quantitative pharmacokinetic disposition parameters reported. |
-| popPK | Rajić_2002 | irrelevant | 2 | 0 | Human biodistribution is reported as activity changes, but no quantitative pharmacokinetic parameters are provided. |
-| popPK | Samad_2007 | irrelevant | 0 | 0 | Technetium-99m DMSA is used for postoperative renal imaging, with no pharmacokinetic parameters reported. |
+| PGx | Liu_2022 | not_relevant | 0 | 0 | The text consists solely of a list of gene variants and rsIDs with no mention of technetium_99mtc_succimer or any pharmacokinetic/pharmacodynamic data. |
+| popPK | Rajic_2007 | irrelevant | 1 | 1 | The study uses a different radiotracer (Tc-99m-DMSA) to assess renal function and does not report pharmacokinetic parameters for technetium-99mtc-succimer. |
+| PGx | Rajic_2007 | not_relevant | 0 | 0 | The paper does not report on the impact of a gene variant on the pharmacokinetics of technetium_99mtc_succimer. |
+| popPK | Rajić_2002 | irrelevant | 0 | 0 | The study investigates the biodistribution of Technetium-99m DMSA (dimercapto-succimer), not Technetium-99m succimer, which is a distinct radiopharmaceutical, and it does not report compartmental PK parameters (CL, V, t1/2) for the target drug. |
+| PGx | Rajić_2002 | not_relevant | 0 | 0 | The study investigates biodistribution changes due to glomerulonephritis pathology, not pharmacogenomic effects of gene variants on PK/PD parameters. |
+| popPK | Samad_2007 | irrelevant | 0 | 0 | The paper investigates renal scarring using technetium-99m dimercaptosuccinic acid as a diagnostic imaging agent, not pharmacokinetic parameters of technetium_99mtc_succimer. |
+| PGx | Samad_2007 | not_relevant | 0 | 0 | The paper investigates renal damage from percutaneous nephrolithotomy in children using Tc-99m DMSA as an imaging agent and does not report any pharmacogenomic effects on PK or PD parameters. |
 | popPK | Spiliotopoulou_2024 | irrelevant | 0 | 0 | DMSA is only a reference comparator; no quantitative disposition parameters for technetium-99m succimer are reported. |
 | popPK | Storgaard_2026 | irrelevant | 0 | 0 | The study models gentamicin, while 99mTc-DTPA is only used to measure GFR; no succimer PK values are reported. |
-| popPK | Storgaard_2026_2 | irrelevant | 0 | 0 | The study models THC and THC-OH in patients; technetium-99m-DTPA is only a renal-function tracer. |
-| popPK | Sun_2025 | irrelevant | 0 | 0 | This is a review of gold nanoclusters and reports no pharmacokinetic parameters for technetium_99mtc_succimer. |
+| popPK | Storgaard_2026_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of THC and its metabolite, not technetium-99mtc succimer. |
+| PGx | Storgaard_2026_2 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of THC, not technetium_99mtc_succimer, and does not report pharmacogenomic effects. |
+| popPK | Sun_2025 | irrelevant | 0 | 0 | The paper is a review on gold nanoclusters and does not contain pharmacokinetic data for technetium_99mtc_succimer. |
+| PGx | Sun_2025 | not_relevant | 0 | 0 | The paper is a review on gold nanoclusters and does not discuss pharmacogenomics or technetium_99mtc_succimer. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btechnetium_99mtc_succimer%5D&body=Drug%3A%20technetium_99mtc_succimer%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_technetium_99mtc_succimer/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 19:14 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 15:44 UTC</sub>

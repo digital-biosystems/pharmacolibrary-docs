@@ -45,7 +45,7 @@ Wang Y, Marier JF, Kassir N, Chang C, Martin P. Pharmacokinetics, Pharmacodynami
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.455). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,6 +58,8 @@ Wang Y, Marier JF, Kassir N, Chang C, Martin P. Pharmacokinetics, Pharmacodynami
 **AUCSS has no unit.**
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUCSS, Cavg, Cmax and Cmin), so that value has no SI equivalent. Extracted — lanadelumab: CL/F 0.0337 L/hour, V/F 16.6 L, AUCSS 408 µg × day/mL, Cavg 29.2 µg/mL, Cmax 35.5 µg/mL, Cmin 24.6 µg/mL, tmax 98.6 hour, t1/2z 361 hour, … (+2).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auctau,ss].rse_percent`: this record has 24.3, the second reading none; it also differs on 11 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -165,6 +167,38 @@ Without a unit the value cannot be converted, so the model cannot use it. A repo
 - LLM selected parameter table(s) 1, S7, S13, S14
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.455 (10/22 fields) | 12 |
+
+<details><summary>12 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auctau,ss].rse_percent` | 24.3 |  | mismatch |
+| `gpt-oss-120b` | `parameters[cave,ss].rse_percent` | 24.3 |  | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f].rse_percent` | 24.3 |  | mismatch |
+| `gpt-oss-120b` | `parameters[cmax,ss].rse_percent` | 33.2 |  | mismatch |
+| `gpt-oss-120b` | `parameters[cmax,ss].value` | 35.5 | 34.4 | mismatch |
+| `gpt-oss-120b` | `parameters[cmin,ss].rse_percent` | 33.3 |  | mismatch |
+| `gpt-oss-120b` | `parameters[cmin,ss].value` | 24.6 | 25.4 | mismatch |
+| `gpt-oss-120b` | `parameters[ka]` | 0.0179 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2].rse_percent` | 13.5 |  | mismatch |
+| `gpt-oss-120b` | `parameters[tmax].rse_percent` | 21.1 |  | mismatch |
+| `gpt-oss-120b` | `parameters[v/f/bw]` | 0.182 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f].rse_percent` | 20.8 |  | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant for paracetamol is assigned a time unit that conflicts with its reciprocal time dimension, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Anderson2005_28_weeks_pca" status="rejected" stale="false" population="children" measured-compound="paracetamol" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Anderson BJ, Pons G, Autret-Leca E, Allegaert K, Boccard E. Pediatric intravenou
 
 ### Reviewer guidance
 
-**The absorption rate constant for paracetamol is assigned a time unit that conflicts with its reciprocal time dimension, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].**
 
-The parameter labeled T1/2 hyd is identified as the absorption rate constant, which requires units of reciprocal time. The recorded unit is hours, creating a direct dimensional mismatch that prevented the model from being published. A second reader noted that the record lacks the explicit hydrolysis link from propacetamol to paracetamol despite the two-compartment metabolite structure. Extracted — paracetamol: CLm/F 2.2 L·h⁻¹ 70 kg⁻¹, V1 0.34 L·kg⁻¹, Q 2.23 L·h⁻¹·kg⁻¹, kabs 0.0024 h, V2 44.3 L·70 kg⁻¹.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — paracetamol: CLm/F 2.2 L·h⁻¹ 70 kg⁻¹, V1 0.34 L·kg⁻¹, Q 2.23 L·h⁻¹·kg⁻¹, kabs 0.0024 h, V2 44.3 L·70 kg⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading propacetamol → paracetamol (hydrolysis); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

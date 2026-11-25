@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance of 0.0592 L/h and intercompartmental clearance of 0.307 L/h were rejected as implausible for recombinant asparaginase in children.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Vller2018_reference" status="rejected" stale="false" population="children with acute lymphoblastic leukemia" measured-compound="recombinant asparaginase" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Völler S, Pichlmeier U, Zens A, Hempel G. Pharmacokinetics of recombinant aspar
 
 ### Reviewer guidance
 
-**Clearance of 0.0592 L/h and intercompartmental clearance of 0.307 L/h were rejected as implausible for recombinant asparaginase in children.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record was built from the abstract alone, so summary statistics stood in for fitted model parameters. A physiological window check flagged the clearance and intercompartmental clearance values as outside plausible magnitudes, suggesting unit or scale extraction errors. The second reader disagreed on all four parameter values, finding the recorded figures null or inconsistent with the extracted data. Extracted — recombinant asparaginase: CL 0.0592 L/h, V1 1.18 L, Q 0.307 L/h, V2 0.316 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is asparaginase's own; they describe recombinant asparaginase. Extracted — recombinant asparaginase: CL 0.0592 L/h, V1 1.18 L, Q 0.307 L/h, V2 0.316 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has recombinant asparaginase, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

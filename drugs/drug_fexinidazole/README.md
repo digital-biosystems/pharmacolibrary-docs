@@ -60,7 +60,7 @@ Fexinidazole is a nitroimidazole antiparasitic medication used to treat African 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:48 | 6:37 | 1/0/0 | 1/6/0 | 0/0/0 | 410,006/22,853 | ollama / glm-5.3-flash | 7 | 2/5 | 7/0 | 0 |
+| 2026-11-23 22:01 | 0:05 | 1/0/0 | 1/6/0 | 0/0/0 | 4,535/180 | einfracz / qwen3.8-27b | 7 | 2/5 | 7/0 | 0 |
 
 ## Coverage
 
@@ -77,7 +77,8 @@ Fexinidazole is a nitroimidazole antiparasitic medication used to treat African 
 | popPK | Fersing_2020 | irrelevant | 0 | 0 | Fexinidazole is only a comparator/reference drug; PK parameters (t1/2, CL, AUC) reported are for a different compound (hit 19) in mouse. |
 | popPK | Fersing_2020_2 | irrelevant | 0 | 0 | Fexinidazole is only a reference/comparator drug; the PK parameters (t1/2 7.7 h, clearance 0.51 mL/h) are for compound 8, a different imidazopyridine derivative, in mouse. |
 | popPK | Paoli-Lombardo_2022 | irrelevant | 0 | 0 | Medicinal chemistry SAR paper on new antileishmanial imidazopyridine derivatives; fexinidazole is only a reference comparator and no population-PK disposition parameters (CL, V, ka) for it are reported. |
-| popPK | Rivas_2024 | irrelevant | 0 | 0 | This is a medicinal chemistry/in vitro study of Ru(II) ferrocenyl compounds; fexinidazole is only mentioned as background and no PK parameters are reported. |
+| popPK | Rivas_2024 | irrelevant | 0 | 0 | The paper studies novel Ru(II) compounds for trypanosomiasis and only mentions fexinidazole as background context, providing no PK parameters for it. |
+| PGx | Rivas_2024 | not_relevant | 0 | 0 | The study reports in vitro activity and limited in vivo efficacy of new ruthenium compounds for trypanosomiasis, not pharmacogenomic effects on fexinidazole PK or PD. |
 | popPK | Rocha-Hasler_2021 | irrelevant | 0 | 0 | In vitro/in vivo efficacy study of posaconazole-tomatidine combinations against T. cruzi; fexinidazole is only a combination partner with EC50/FICI data, no PK parameters. |
 | popPK | Verrest_2024 | irrelevant | 3 | 1 | This is a PK-PD model of Leishmania parasite dynamics; fexinidazole's own PK model parameters (CL etc.) come from a prior internal report/supplementary material and no numeric fexinidazole disposition values appear in the evidence. |
 

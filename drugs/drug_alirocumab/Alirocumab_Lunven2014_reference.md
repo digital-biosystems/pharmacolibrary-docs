@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Alirocumab was held back because its absorption-rate constant (ka) was unreported and defaulted, despite reported CL/F of 0.63 L/day.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="alirocumab" model-id="Alirocumab_Lunven2014_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="alirocumab" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Lunven C, Paehler T, Poitiers F, Brunet A, Rey J, Hanotin C et al. A randomized 
 
 ### Reviewer guidance
 
-**Alirocumab was held back because its absorption-rate constant (ka) was unreported and defaulted, despite reported CL/F of 0.63 L/day.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The absorption-rate constant (ka) came from a default rather than an estimate in this paper; this unsupported value affects the simulated profile. The model also defaulted Tlag and represented input as a first-order depot under apparent /F parameterization, assuming F=1 and Fm=1. Extracted — alirocumab: CL/F 0.63 L/day, V/F 5.48 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — alirocumab: CL/F 0.63 L/day, V/F 5.48 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has none, the second reading 8; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.667 (8 of 12 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

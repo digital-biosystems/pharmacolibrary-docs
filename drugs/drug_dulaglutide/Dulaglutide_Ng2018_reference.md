@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> The record is rejected because the source paper investigates exendin-(9-39), not the measured compound dulaglutide.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="dulaglutide" model-id="Dulaglutide_Ng2018_reference" status="rejected" stale="false" population="" measured-compound="dulaglutide" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Ng CM, Tang F, Seeholzer SH, Zou Y, De León DD. Population pharmacokinetics of 
 
 ### Reviewer guidance
 
-**The record is rejected because the source paper investigates exendin-(9-39), not the measured compound dulaglutide.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper's subject is identified as exendin-(9-39), a different drug, rather than dulaglutide. Consequently, the extracted parameters for clearance (2.3 ml kg⁻¹ min⁻¹) and volume of distribution (111.0 ml kg⁻¹) do not correspond to the intended analyte. A second reader also disagreed on multiple extracted values, including two uncharacterized parameters and a total volume metric, further indicating data inconsistency. Extracted — dulaglutide: CL 2.3 ml kg À1 min À1, V/F 111 ml kg À1, V2 8.89 l, Q 2.2 l h À1.
+Extracted — dulaglutide: CL 2.3 ml kg À1 min À1, V/F 111 ml kg À1, V2 8.89 l, Q 2.2 l h À1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 75, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

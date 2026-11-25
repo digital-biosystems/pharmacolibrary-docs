@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record is rejected because the reported ocular clearance unit µL/day is not recognized, leaving the parameter value without a standard unit.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit day -1 (1 / [time]) vs 1 / [time]; Q67 unit day -1 (1 / [time]) vs 1 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_LuacesRodrguez2020_89_zr_bevacizumab_89_zr_aflib" status="rejected" stale="false" population="rats" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Luaces-Rodríguez A, Del Amo EM, Mondelo-García C, Gómez-Lado N, Gonzalez F, R
 
 ### Reviewer guidance
 
-**The record is rejected because the reported ocular clearance unit µL/day is not recognized, leaving the parameter value without a standard unit.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit day -1 (1 / [time]) vs 1 / [time]; Q67 unit day -1 (1 / [time]) vs 1 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The ocular clearance of 49.35 µL•day⁻¹ could not be converted to SI units, causing the magnitude check to fail. Additionally, the fast distribution phase parameters λ1 and t1/2α contain duplicate entries with conflicting values (1.05 vs 8.22, 0.68 vs 0.08). The second reader did not recognize the dose compound or the primary analyte, leaving these fields unresolved. Extracted — aflibercept: λ1 1.05 day -1, λ1 8.22 day -1, kel 0.56 day -1, t1/2α 0.68 day, t1/2α 0.08 day, t1/2β 1.29 day, AUC∞ 138, CL 49.4 µL•day -1, … (+1).
+A reported unit could not be converted (λ1, λ1 and CL), so that value has no SI equivalent. Extracted — aflibercept: λ1 1.05 day -1, λ1 8.22 day -1, kel 0.56 day -1, t1/2α 0.68 day, t1/2α 0.08 day, t1/2β 1.29 day, AUC∞ 138, CL 49.4 µL•day -1, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aflibercept, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

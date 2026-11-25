@@ -9,7 +9,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="imatinib" model-id="Imatinib_Delbaldo2006_reference" status="needs_review" stale="false" population="patients with advanced gastrointestinal stromal tumors" measured-compound="imatinib and CGP 74588" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="imatinib" model-id="Imatinib_Delbaldo2006_reference" status="needs_review" stale="false" population="patients with advanced gastrointestinal stromal tumors" measured-compound="imatinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Delbaldo C, Chatelut E, Ré M, Deroussent A, Séronie-Vivien S, Jambu A et al. Pharmacokinetic-pharmacodynamic relationships of imatinib and its main metabolite in patients with advanced gastrointestinal stromal tumors. Clinical cancer research : an official journal of the American Association for Cancer Research 12(20 Pt 1):6073–6078 (2006).
@@ -17,15 +17,13 @@ Delbaldo C, Chatelut E, Ré M, Deroussent A, Séronie-Vivien S, Jambu A et al. P
 
 ## Population and dosing
 
-**Population:** patients with advanced gastrointestinal stromal tumors · condition advanced gastrointestinal stromal tumors · n = 35.
-
-**Dosed compound ≠ measured compound:** dosed imatinib, measured imatinib and CGP 74588.
+**Population:** patients with advanced gastrointestinal stromal tumors · condition gastrointestinal stromal tumors · age group adult · n = 35.
 
 ## Model
 
 **Structure:** parent + metabolite; no model was built for this record.  
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameterization:** mechanistic.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,16 +31,13 @@ Delbaldo C, Chatelut E, Ré M, Deroussent A, Séronie-Vivien S, Jambu A et al. P
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL | CL | 7.97 | L/h |
-| (AAG/1.15)(-0.52) | equation variable | -0.52 |  |
-| CLM/fm | CL/F | 58.6 | L/h |
-| (AAG/1.15)(-0.60) | equation variable | -0.6 |  |
-| First‐order absorption rate constant (ka) | kabs | 0.358 | per hour |
-| The lag time from dose administration to the beginning of the first‐order absorption | tlag | 0.442 | h |
+| CL (L/h) | CL | 7.97 | L/h |
+| CLM/fm (L/h) | CLfm | 58.6 | L/h |
+| CGP 74588/imatinib area under the curve (AUC) ratio | AUC ratio | 0.25 | at steady state |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), qwen3.8-27b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +49,9 @@ Delbaldo C, Chatelut E, Ré M, Deroussent A, Séronie-Vivien S, Jambu A et al. P
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — imatinib: CL 7.97 L/h; CGP 74588: CL/F 58.6 L/h; imatinib and CGP 74588: kabs 0.358 per hour, tlag 0.442 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — imatinib: CL 7.97 L/h, AUC ratio 0.25 at steady state; CGP 74588: CLfm 58.6 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has imatinib and CGP 74588, the second reading imatinib; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,12 +59,9 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 7.97 | L/h | 2.214e-06 | m3/s | l/h | exact (1) | Delbaldo_2006:abstract |
-| (AAG/1.15)(-0.52) | `Q900` · equation variable | -0.52 |  |  |  |  | llm (0.6) | Delbaldo_2006:abstract |
-| CLM/fm | `Q27` · CL/F | 58.6 | L/h | 1.628e-05 | m3/s | l/h | exact (1) | Delbaldo_2006:abstract |
-| (AAG/1.15)(-0.60) | `Q900` · equation variable | -0.6 |  |  |  |  | llm (0.6) | Delbaldo_2006:abstract |
-| First‐order absorption rate constant (ka) | `Q49` · kabs | 0.358 | per hour | 9.944e-05 | 1/s | 1/h | review_gapfill (0.7) | Garrett_2023:review |
-| The lag time from dose administration to the beginning of the first‐order absorption | `Q83` · tlag | 0.442 | h | 1591 | s | h | review_gapfill (0.7) | Garrett_2023:review |
+| CL (L/h) | `Q22` · CL | 7.97 | L/h | 2.214e-06 | m3/s | l/h | exact (1) | Delbaldo_2006:abstract |
+| CLM/fm (L/h) | `Q370` · CLfm | 58.6 | L/h | 1.628e-05 | m3/s | l/h | llm_confirmed (0.6) | Delbaldo_2006:abstract |
+| CGP 74588/imatinib area under the curve (AUC) ratio | `Q21` · AUC ratio | 0.25 | at steady state |  |  | s^2·at·tate·teady | llm_corrected (0.6) | Delbaldo_2006:abstract, Delbaldo_2006:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -79,36 +71,37 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): '0.55(OCC)' — extend the ontology if this is a real PK parameter (source ['Delbaldo_2006:abstract'])
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=imatinib and CGP 74588
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — only the metabolite is modelled — no parent compartment
+- linked 'CLM/fm (L/h)' as 'formation clearance/F' → Q370 (CLfm) for CGP 74588 — compound marker removed
+- unit_dimension_unknown: 'at steady state' (AUC ratio)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=imatinib
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 2 linked by role; re-tagged imatinib and CGP 74588→parent ×2, imatinib and CGP 74588→CGP 74588 ×3
-- molar mass: no plausible PubChem entry for 'imatinib and CGP 74588' ('no full name in the paper') — left in mass units
-- molar mass: none found for 'imatinib and CGP 74588' — its concentrations stay mass-only
+- row roles (LLM): model_class=noncompartmental; 3/3 row label(s) assigned, 2 linked by role; re-tagged imatinib→parent ×1, imatinib→CGP 74588 ×1
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Garrett_2023's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Garrett_2023's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Delbaldo_2006_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Delbaldo_2006_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (5/10 fields) | 5 |
 | `qwen3.8-27b` | not confirmed | 0.154 (2/13 fields) | 11 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>16 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[cgp 74588/imatinib area under the curve (auc) ratio]` | 0.25 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cgp 74588/imatinib auc ratio]` |  | 0.25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm/fm].parameter_id` | Q370 | Q27 | mismatch |
+| `gpt-oss-120b` | `parameters[r]` |  | 0.56 | only_one_extracted |
 | `qwen3.8-27b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `qwen3.8-27b` | `parameters[(aag/1.15)]` | -0.52 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[(aag/1.15)]` | -0.6 |  | only_one_extracted |
@@ -133,17 +126,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Delbaldo_2006:abstract'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Delbaldo_2006:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Garrett_2023:review'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Garrett_2023:review'] |
-| C7_apparent_coherence | pass |  |  |  |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['Delbaldo_2006:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.97 | ['Delbaldo_2006:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 7.97 L/h | ['Delbaldo_2006:abstract'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 58.6 L/h | ['Delbaldo_2006:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -177,4 +167,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bimatinib%5D%20Imatinib_Delbaldo2006_reference&body=Drug%3A%20imatinib%0ARecord%3A%20Imatinib_Delbaldo2006_reference%0APaper%3A%20Delbaldo_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_imatinib/Imatinib_Delbaldo2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 01:34 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:12 UTC</sub>

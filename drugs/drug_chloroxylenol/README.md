@@ -21,7 +21,7 @@ Chloroxylenol is a phenol derivative used as an antiseptic and local anti-infect
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| chloroxylenol | parent | 156.61 | C8H9ClO | DrugBank | [2723](https://pubchem.ncbi.nlm.nih.gov/compound/2723) | Dorantes_1992 |
+| chloroxylenol (p-chloro-m-xylenol) | parent | 156.61 | C8H9ClO | DrugBank | [2723](https://pubchem.ncbi.nlm.nih.gov/compound/2723) | Dorantes_1992 |
 
 ## Start here
 
@@ -39,7 +39,7 @@ Chloroxylenol is a phenol derivative used as an antiseptic and local anti-infect
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Han_2026_SRD5A1](drugs/drug_chloroxylenol/pd_Han_2026_SRD5A1.md) | human SRD5A1 activity (inhibition by chloroxylenol) ← chloroxylenol · inhibition effect | — | Han X et al., Differences between human and rat 5α-Re…, Chemico-biological interact… (2026) | [10.1016/j.cbi.2026.112186](https://doi.org/10.1016/j.cbi.2026.112186) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.50).">human + animal</span> | [Han_2026_SRD5A1_activity](drugs/drug_chloroxylenol/pd_Han_2026_SRD5A1_activity.md) | 5α-Reductase 1 activity ← chloroxylenol · inhibition effect | — | Han X et al., Differences between human and rat 5α-Re…, Chemico-biological interact… (2026) | [10.1016/j.cbi.2026.112186](https://doi.org/10.1016/j.cbi.2026.112186) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Chloroxylenol is a phenol derivative used as an antiseptic and local anti-infect
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 23:11 | 0:25 | 1/0/0 | 1/0/0 | 0/0/0 | 14,781/1,005 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-23 19:45 | 0:20 | 1/0/0 | 1/0/0 | 0/0/0 | 10,106/1,723 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
@@ -64,21 +64,23 @@ Chloroxylenol is a phenol derivative used as an antiseptic and local anti-infect
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Dorantes_1992.pdf` | Dorantes A et al., Pharmacokinetic and metabolic dispositi…, Pharmaceutical research (1992) | popPK | 10 | [10.1023/a:1015814513373](https://doi.org/10.1023/a:1015814513373) | [1608902](https://pubmed.ncbi.nlm.nih.gov/1608902) | Full PK parameters (t½, Vss, CL, bioavailability) for chloroxylenol are reported directly in the abstract. |
 | `Hussien_2022.pdf` | Hussien RAA et al., Evaluation of the Fungicidal Effect of…, Plants (Basel, Switzerland) (2022) | pd | 4 | [10.3390/plants11243542](https://doi.org/10.3390/plants11243542) | [36559653](https://www.ncbi.nlm.nih.gov/pubmed/36559653) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 23:11 UTC</sub>
+<sub>queue written 2026-11-23 19:44 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| PGx | Dorantes_1992 | not_relevant | 0 | 0 | The paper reports PK parameters for chloroxylenol in dogs but does not investigate or report any effect of gene variants, genotypes, or genetic phenotypes on these parameters. |
 | popPK | Galli_2025 | irrelevant | 0 | 0 | In-vitro anthelmintic screening study with no chloroxylenol PK parameters reported. |
 | PD | Galli_2025 | not_relevant | 0 | 0 | The paper reports high-throughput screening results for flavonoids and other compounds, but does not mention or analyze chloroxylenol. |
+| popPK | Han_2026 | irrelevant | 0 | 0 | The study evaluates enzymatic inhibition kinetics (IC50, KD) of SRD5A1 by chloroxylenol, not the pharmacokinetic disposition parameters (CL, V, t1/2) of the drug itself. |
+| PGx | Han_2026 | not_relevant | 0 | 0 | The paper investigates the enzyme inhibition of SRD5A1 by chloroxylenol in vitro, but does not report any gene variant or genotype affecting the pharmacokinetics or pharmacodynamics of chloroxylenol. |
 | popPK | Hussien_2022 | irrelevant | 0 | 0 | no_text gate: only 167 chars of text extracted (&lt; 400) |
 | PD | Hussien_2022 | not_relevant | 0 | 0 | The paper evaluates the fungicidal effect of disinfectants against a plant pathogen, which is not a pharmacodynamic study of a drug in a biological system (human/animal) with exposure-response or dose-response parameters. |
 | popPK | Li_2026 | irrelevant | 0 | 0 | This is a cancer pharmacology/mechanism study of brusatol with no chloroxylenol PK parameters reported. |
@@ -91,4 +93,4 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchloroxylenol%5D&body=Drug%3A%20chloroxylenol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chloroxylenol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 23:11 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 19:41 UTC</sub>

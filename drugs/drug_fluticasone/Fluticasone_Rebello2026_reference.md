@@ -178,17 +178,17 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.867, 0 of 1 reader(s) agree | 0.867 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 1.403e-07 | 0 | 0 | pg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.557e-07 | 0 | 0 | pg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.313e-07 | 0 | 0 | pg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.468e-07 | 0 | 0 | pg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 9.3e-10 | 0 | 0 | pg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 9.4e-10 | 0 | 0 | pg/ml→SI vs simulated kg/m3 |
-| T1_tmax | reference | fail | 1.84 | 0 | 0 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 1.58 | 0 | 0 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 1.5 | 0 | 0 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 1.5 | 0 | 0 | hours→SI vs simulated h |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.867 (13 of 15 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.867 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 1.403e-07 | 0 | 0 | reported 140.28 pg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.557e-07 | 0 | 0 | reported 155.69 pg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.313e-07 | 0 | 0 | reported 131.34 pg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.468e-07 | 0 | 0 | reported 146.78 pg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 9.3e-10 | 0 | 0 | reported 0.93 pg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 9.4e-10 | 0 | 0 | reported 0.94 pg/ml→SI vs simulated kg/m3 |
+| T1_tmax | reference | fail | 1.84 | 0 | 0 | reported 1.84 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 1.58 | 0 | 0 | reported 1.58 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 1.5 | 0 | 0 | reported 1.5 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 1.5 | 0 | 0 | reported 1.5 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

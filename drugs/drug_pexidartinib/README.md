@@ -23,32 +23,21 @@ Pexidartinib is a kinase inhibitor used to treat symptomatic tenosynovial giant 
 | pexidartinib | parent | 417.82 | C20H15ClF3N5 | DrugBank | [25151352](https://pubchem.ncbi.nlm.nih.gov/compound/25151352) | Yin_2021 |
 | ZAAD | metabolite | — (mass units only) | — | — | — | — |
 
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Yin_2021 · CL/F</text><circle cx="279.3" cy="30.0" r="4" fill="#ef6c00"><title>Yin_2021 · CL/F: 1.8 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Yin_2021 · CL/F</text><circle cx="451.9" cy="46.0" r="4" fill="#ef6c00"><title>Yin_2021 · CL/F: 5.6 L/h</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Yin_2021_pexidartinib](drugs/drug_pexidartinib/Pexidartinib_Yin2021_pexidartinib.md) | — | parent + metabolite (no model) | 3 | Yin O et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1753](https://doi.org/10.1002/jcph.1753) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C2_base_Q27 failed (ratio 3.2389)</sub> | [↳ zaad](drugs/drug_pexidartinib/Pexidartinib_Yin2021_zaad.md) | — | parent + metabolite (no model) | 3 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ estimate_a](drugs/drug_pexidartinib/Pexidartinib_Yin2021_estimate_a.md) | — | parent + metabolite (no model) | 3 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Yin_2021_reference](drugs/drug_pexidartinib/Pexidartinib_Yin2021_reference.md) | — | parent + metabolite (no model) | 3 | Yin O et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1753](https://doi.org/10.1002/jcph.1753) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Yin_2021_2_TVS](drugs/drug_pexidartinib/pd_Yin_2021_2_TVS.md) | Longitudinal tumor volume score ← pexidartinib · direct Emax (saturable) effect | — | Yin O et al., Exposure-response analysis of efficacy…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12712](https://doi.org/10.1002/psp4.12712) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Yin_2021_2_ALT_3_ULN](drugs/drug_pexidartinib/pd_Yin_2021_2_ALT_3_ULN.md) | Time to first ALT &gt;3× ULN ← pexidartinib · time-to-event model | — | Yin O et al., Exposure-response analysis of efficacy…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12712](https://doi.org/10.1002/psp4.12712) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Yin_2021_2_AST_3_ULN](drugs/drug_pexidartinib/pd_Yin_2021_2_AST_3_ULN.md) | Time to first AST &gt;3× ULN ← pexidartinib · time-to-event model | — | Yin O et al., Exposure-response analysis of efficacy…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12712](https://doi.org/10.1002/psp4.12712) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Yin_2021_2_ORR](drugs/drug_pexidartinib/pd_Yin_2021_2_ORR.md) | Overall response rate by RECIST ← pexidartinib · categorical (graded) response model | — | Yin O et al., Exposure-response analysis of efficacy…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12712](https://doi.org/10.1002/psp4.12712) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Yin_2021_2_ORR_TVS](drugs/drug_pexidartinib/pd_Yin_2021_2_ORR_TVS.md) | Overall response rate by TVS ← pexidartinib · categorical (graded) response model | — | Yin O et al., Exposure-response analysis of efficacy…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12712](https://doi.org/10.1002/psp4.12712) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Yin_2021_2_RECIST](drugs/drug_pexidartinib/pd_Yin_2021_2_RECIST.md) | Longitudinal tumor size by RECIST ← pexidartinib · direct Emax (saturable) effect | — | Yin O et al., Exposure-response analysis of efficacy…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12712](https://doi.org/10.1002/psp4.12712) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Yin_2021_2_TBIL_2_baseline](drugs/drug_pexidartinib/pd_Yin_2021_2_TBIL_2_baseline.md) | Time to first TBIL &gt;2× baseline ← pexidartinib · time-to-event model | — | Yin O et al., Exposure-response analysis of efficacy…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12712](https://doi.org/10.1002/psp4.12712) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Yin_2021_2_TBIL_ULN](drugs/drug_pexidartinib/pd_Yin_2021_2_TBIL_ULN.md) | Time to first TBIL &gt;ULN ← pexidartinib · time-to-event model | — | Yin O et al., Exposure-response analysis of efficacy…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12712](https://doi.org/10.1002/psp4.12712) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Yin_2021_2_ALT_3_ULN](drugs/drug_pexidartinib/pd_Yin_2021_2_ALT_3_ULN.md) | Time to first ALT &gt;3× upper limit of normal ← pexidartinib · direct log-linear effect | — | Yin O et al., Exposure-response analysis of efficacy…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12712](https://doi.org/10.1002/psp4.12712) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Yin_2021_2_AST_3_ULN](drugs/drug_pexidartinib/pd_Yin_2021_2_AST_3_ULN.md) | Time to first AST &gt;3× upper limit of normal ← pexidartinib · direct log-linear effect | — | Yin O et al., Exposure-response analysis of efficacy…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12712](https://doi.org/10.1002/psp4.12712) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Yin_2021_2_ORR](drugs/drug_pexidartinib/pd_Yin_2021_2_ORR.md) | Overall response rate ← pexidartinib · direct sigmoid Emax (Hill) effect | — | Yin O et al., Exposure-response analysis of efficacy…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12712](https://doi.org/10.1002/psp4.12712) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Yin_2021_2_TVS](drugs/drug_pexidartinib/pd_Yin_2021_2_TVS.md) | Longitudinally measured tumor size by TVS ← pexidartinib · inhibition effect | — | Yin O et al., Exposure-response analysis of efficacy…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12712](https://doi.org/10.1002/psp4.12712) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Yin_2021_2_RECIST](drugs/drug_pexidartinib/pd_Yin_2021_2_RECIST.md) | Longitudinally measured tumor size by RECIST ← pexidartinib · inhibition effect | — | Yin O et al., Exposure-response analysis of efficacy…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12712](https://doi.org/10.1002/psp4.12712) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -62,13 +51,13 @@ Pexidartinib is a kinase inhibitor used to treat symptomatic tenosynovial giant 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 05:23 | 4:39 | 2/1/0 | 8/0/0 | 0/0/0 | 83,429/23,850 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-24 02:48 | 0:04 | 0/1/0 | 5/0/0 | 0/0/0 | 3,929/175 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -77,20 +66,23 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Boal_2020.pdf` | Boal LH et al., Pediatric PK/PD Phase I Trial of Pexida…, Clinical cancer research :… (2020) | popPK | 9 | [10.1158/1078-0432.CCR-20-1696](https://doi.org/10.1158/1078-0432.CCR-20-1696) | [32943455](https://pubmed.ncbi.nlm.nih.gov/32943455) | Pediatric human PK and population-PK modeling are reported, but no numeric disposition parameter values appear in the provided evidence. |
+| `Boal_2020.pdf` | Boal LH et al., Pediatric PK/PD Phase I Trial of Pexida…, Clinical cancer research :… (2020) | popPK | 10 | [10.1158/1078-0432.CCR-20-1696](https://doi.org/10.1158/1078-0432.CCR-20-1696) | [32943455](https://pubmed.ncbi.nlm.nih.gov/32943455) | The paper reports on a Phase I PK/PD study of pexidartinib in humans with population pharmacokinetic analysis, but the abstract and provided text do not contain specific numeric parameter values (CL, V, etc.). |
 
-<sub>queue written 2026-10-07 05:19 UTC</sub>
+<sub>queue written 2026-11-24 02:48 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Boal_2020 | relevant | 9 | 0 | Pediatric human PK and population-PK modeling are reported, but no numeric disposition parameter values appear in the provided evidence. |
-| popPK | Yin_2021_2 | irrelevant | 1 | 0 | The analysis uses a previously described population-PK model but reports no pexidartinib disposition parameter values. |
+| popPK | Boal_2020 | relevant | 10 | 1 | The paper reports on a Phase I PK/PD study of pexidartinib in humans with population pharmacokinetic analysis, but the abstract and provided text do not contain specific numeric parameter values (CL, V, etc.). |
+| PGx | Boal_2020 | not_relevant | 0 | 0 | The paper reports standard pediatric PK/PD data and does not investigate or report any pharmacogenomic effects (gene variants/genotypes) on pexidartinib parameters. |
+| PGx | Yin_2021 | not_relevant | 1 | 0 | The paper analyzes the impact of demographic and clinical covariates (such as race, weight, and organ function) on pexidartinib PK but does not report any effects based on genetic variants or genotypes. |
+| popPK | Yin_2021_2 | irrelevant | 5 | 0 | The study is an exposure-response analysis that uses individual exposure metrics derived from a previously described population PK model (reference 5), but it does not report the quantitative PK disposition parameters (CL, V, Q, ka, half-life) for pexidartinib itself within this text. |
+| PGx | Yin_2021_2 | not_relevant | 0 | 0 | The paper reports exposure-response relationships based on drug concentration (Cavg), but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpexidartinib%5D&body=Drug%3A%20pexidartinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pexidartinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 05:19 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 15:20 UTC</sub>

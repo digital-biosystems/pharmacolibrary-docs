@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the parent etofylline clofibrate lacks elimination parameters and the record is abstract-only.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="etofylline nicotinate" model-id="EtofyllineNicotinate_Lcker1980_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="etofylline" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -46,13 +46,13 @@ Lücker PW, Wetzelsberger K, Erking W, Donike M. [Metabolism and pharmacokinetic
 
 ### Reviewer guidance
 
-**Record rejected because the parent etofylline clofibrate lacks elimination parameters and the record is abstract-only.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defines hydrolysis links from etofylline clofibrate to etofylline and clofibric acid, but no elimination half-life parameter exists for the parent compound. The record was built from the abstract only, so summary statistics stood in for a fitted model, and the second reader disputed the primary analyte identification. Extracted — etofylline nicotinate: t1/2z 12.1 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — etofylline nicotinate: t1/2z 12.1 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etofylline clofibrate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

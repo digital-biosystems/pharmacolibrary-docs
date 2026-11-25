@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;proguanil&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/&quot;},{&quot;label&quot;:&quot;McGready_2003 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Proguanil_McGready2003_reference&quot;,&quot;label&quot;:&quot;McGready_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_McGready2003_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # proguanil — `Proguanil_McGready2003_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Only clearance was extracted — no volume.
+> Ka use library defaults, not estimates from this paper; t3_output_variable (+2 more).
 
-<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_McGready2003_reference" status="needs_review" stale="false" population="pregnant women with falciparum malaria" measured-compound="proguanil" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_McGready2003_reference" status="rejected" stale="false" population="pregnant women with acute falciparum malaria" measured-compound="proguanil" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 McGready R, Stepniewska K, Edstein MD, Cho T, Gilveray G, Looareesuwan S et al. The pharmacokinetics of atovaquone and proguanil in pregnant women with acute falciparum malaria. European journal of clinical pharmacology 59(7):545–552 (2003).
@@ -17,28 +17,29 @@ McGready R, Stepniewska K, Edstein MD, Cho T, Gilveray G, Looareesuwan S et al. 
 
 ## Population and dosing
 
-**Population:** pregnant women with falciparum malaria · condition falciparum malaria in pregnancy · age group adult · n = 24.
+**Population:** pregnant women with acute falciparum malaria · condition acute falciparum malaria · age group adult.
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
-**Parameterization:** CL/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
-**Availability:** No model was generated from this record.
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 3 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_proguanil/Proguanil_McGready2003_reference/Proguanil_McGready2003_reference.svg" alt="Proguanil_McGready2003_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| oral clearance (Cl/F) atovaquone | CL/F | 313 | ml/h/kg |
-| total apparent volume of distribution (Vd/F) atovaquone | Vnorm/F | 13.0 | l/kg |
-| terminal elimination half-life atovaquone | t1/2z | 29.1 | h |
-| Tlag,1 | tlag | 0.147 | h |
+| oral clearance (Cl/F) | CL/F | 313 | ml/h/kg |
+| total apparent volume of distribution (Vd/F) | V/F | 13.0 | l/kg |
+| terminal elimination half-life | t1/2z | 29.1 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,22 +49,21 @@ McGready R, Stepniewska K, Edstein MD, Cho T, Gilveray G, Looareesuwan S et al. 
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**Ka use library defaults, not estimates from this paper; t3_output_variable (+2 more).**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — proguanil: CL/F 313 ml/h/kg, Vnorm/F 13 l/kg, t1/2z 29.1 h, tlag 0.147 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — proguanil: CL/F 313 ml/h/kg, V/F 13 l/kg, t1/2z 29.1 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has proguanil → cycloguanil (metabolism), the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| oral clearance (Cl/F) atovaquone | `Q27` · CL/F | 313 | ml/h/kg | 6.086e-06 | m3/s | ml/(h·kg) | llm_confirmed (0.6) | McGready_2003:abstract |
-| total apparent volume of distribution (Vd/F) atovaquone | `Q353` · Vnorm/F | 13.0 | l/kg | 0.91 | m3 | l/kg | llm_corrected (0.6) | McGready_2003:abstract |
-| terminal elimination half-life atovaquone | `Q57` · t1/2z | 29.1 | h | 1.048e+05 | s | h | llm (0.6) | McGready_2003:abstract |
-| Tlag,1 | `Q83` · tlag | 0.147 | h | 529.2 | s | h | review_gapfill (0.7) | Cherkaoui-Rbati_2023:review |
+| oral clearance (Cl/F) | `Q27` · CL/F | 313 | ml/h/kg | 6.086e-06 | m3/s | ml/(h·kg) | exact (1) | McGready_2003:abstract, McGready_2003:abstract |
+| total apparent volume of distribution (Vd/F) | `Q76` · V/F | 13.0 | l/kg | 0.91 | m3 | l/kg | llm_confirmed (0.6) | McGready_2003:abstract, McGready_2003:abstract |
+| terminal elimination half-life | `Q57` · t1/2z | 29.1 | h | 1.048e+05 | s | h | half_life_rule (0.95) | McGready_2003:abstract, McGready_2003:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,44 +72,32 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
-- dropped duplicate Q27 ('oral clearance (Cl/F) proguanil', value 1109) — already have one for this compound
-- dropped duplicate Q353 ('total apparent volume of distribution (Vd/F) proguanil', value 22.9) — already have one for this compound
-- dropped duplicate Q57 ('terminal elimination half-life proguanil', value 14.3) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=proguanil
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- gap-filled Q83 (tlag) from Cherkaoui-Rbati_2023's review values (primary lacked it)
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in McGready_2003_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.273 (3/11 fields) | 8 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>8 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['proguanil', 'cycloguanil', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[oral clearance (cl/f) atovaquone]` | 313 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral clearance]` |  | 313 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[terminal elimination half-life atovaquone]` | 29.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[terminal elimination half-life]` |  | 29.1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag,1]` | 0.147 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total apparent volume of distribution (vd/f) atovaquone]` | 13.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total apparent volume of distribution]` |  | 13.0 | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -123,14 +111,27 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['McGready_2003:abstract'] |
-| C5_dimension_Q353 | pass | [length] ** 3 |  | ['McGready_2003:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['McGready_2003:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Cherkaoui-Rbati_2023:review'] |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['McGready_2003:abstract', 'McGready_2003:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['McGready_2003:abstract', 'McGready_2003:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['McGready_2003:abstract', 'McGready_2003:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 21.9 L/h | ['McGready_2003:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 21.9 L/h | ['McGready_2003:abstract', 'McGready_2003:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 910 L | ['McGready_2003:abstract', 'McGready_2003:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | fail | Metabolite_C (measured=proguanil) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -142,26 +143,20 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 200 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 200 mg oral (P01BB01) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_proguanil/Proguanil_McGready2003_reference/Proguanil_McGready2003_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_proguanil/Proguanil_McGready2003_reference/Proguanil_McGready2003_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Proguanil_McGready2003_reference_params.json` · controls `Proguanil_McGready2003_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bproguanil%5D%20Proguanil_McGready2003_reference&body=Drug%3A%20proguanil%0ARecord%3A%20Proguanil_McGready2003_reference%0APaper%3A%20McGready_2003%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_proguanil/Proguanil_McGready2003_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 07:59 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:50 UTC</sub>

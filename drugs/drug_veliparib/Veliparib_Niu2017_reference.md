@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Veliparib metabolism to M8 lacks a defined link parameter, and the peripheral volume of 98.7 L contradicts the second reader's 48.3 L assessment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="veliparib" model-id="Veliparib_Niu2017_reference" status="rejected" stale="false" population="patients with BRCA 1/2-mutated cancer or PARP-sensitive tumor types" measured-compound="veliparib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -46,13 +46,13 @@ Niu J, Scheuerell C, Mehrotra S, Karan S, Puhalla S, Kiesel BF et al. Parent-Met
 
 ### Reviewer guidance
 
-**Veliparib metabolism to M8 lacks a defined link parameter, and the peripheral volume of 98.7 L contradicts the second reader's 48.3 L assessment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The metabolite M8 is structurally present but has no quantified metabolic clearance linking it to the parent drug. The record abstracts the abstract, substituting summary statistics for fitted parameters, which obscures the true model fit. The second reader also disputed the assignment of the 98.7 L volume parameter, suggesting it might refer to the central rather than peripheral compartment. Extracted — veliparib: CL 17.3 L/h, V2 98.7 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — veliparib: CL 17.3 L/h, V2 98.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has veliparib, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The peripheral volume parameter V2 is assigned units of milligrams instead of volume, creating a dimensional mismatch that invalidates the model structure.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q64 unit mg ([mass]) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="fenbendazole" model-id="Fenbendazole_Bach2021_reference" status="rejected" stale="false" population="healthy adults" measured-compound="fenbendazole" parameterization="apparent" topology="general_linear"></div>
 
@@ -56,13 +56,13 @@ Bach T, Murry DJ, Stebounova LV, Deye G, Winokur P, An G. Population Pharmacokin
 
 ### Reviewer guidance
 
-**The peripheral volume parameter V2 is assigned units of milligrams instead of volume, creating a dimensional mismatch that invalidates the model structure.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q64 unit mg ([mass]) vs [length] ** 3.**
 
-The record lists the volume of distribution of the peripheral compartment (V2) with a value of 34.7 and units of mg. Since milligrams are a unit of mass, this conflicts with the physical dimension of volume required for a distribution parameter. This unit error triggered a dimension check failure, as the system expected cubic length or volume units but received mass. Additionally, the absolute bioavailability parameter (Fab) is missing a numerical value, leaving the systemic exposure unquantified. Extracted — fenbendazole: CL 0.541 L/h, V2 34.7 mg, kabs 1.59 h−1, V/F 35.2 liters, fm 0.000162, kel 0.0942 h−1; oxfendazole sulfone: kfm 0.00134 h−1, fm 0.0042, kel 0.105 h−1.
+A reported unit could not be converted (V2), so that value has no SI equivalent. Extracted — fenbendazole: CL 0.541 L/h, V2 34.7 mg, kabs 1.59 h−1, V/F 35.2 liters, fm 0.000162, kel 0.0942 h−1; oxfendazole sulfone: kfm 0.00134 h−1, fm 0.0042, kel 0.105 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has fenbendazole, the second reading oxfendazole; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -185,4 +185,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfenbendazole%5D%20Fenbendazole_Bach2021_reference&body=Drug%3A%20fenbendazole%0ARecord%3A%20Fenbendazole_Bach2021_reference%0APaper%3A%20Bach_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fenbendazole/Fenbendazole_Bach2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 10:19 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:52 UTC</sub>

@@ -21,13 +21,13 @@ Valganciclovir is an antiviral nucleoside analogue prescribed for cytomegaloviru
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | valganciclovir | parent | 354.362 | C14H22N6O5 | DrugBank | [64147](https://pubchem.ncbi.nlm.nih.gov/compound/64147) | Czock_2002, Dvořáčková_2026, Itohara_2025 |
-| ganciclovir | metabolite | 255.234 | C9H13N5O4 | PubChem | [135398740](https://pubchem.ncbi.nlm.nih.gov/compound/135398740) | Czock_2002, Dvořáčková_2026, Itohara_2025 |
+| ganciclovir | metabolite | 255.23 | — | the paper | — | Czock_2002, Dvořáčková_2026, Itohara_2025 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Czock_2002_reference](drugs/drug_valganciclovir/Valganciclovir_Czock2002_reference.md) | — | 1-compartment (no model) | 4 | Czock D et al., Pharmacokinetics of valganciclovir and…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.126306](https://doi.org/10.1067/mcp.2002.126306) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Czock_2002_reference](drugs/drug_valganciclovir/Valganciclovir_Czock2002_reference.md) | — | general linear (no model) | 4 | Czock D et al., Pharmacokinetics of valganciclovir and…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.126306](https://doi.org/10.1067/mcp.2002.126306) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Dvořáčková_2026_reference](drugs/drug_valganciclovir/Valganciclovir_Dvokov2026_reference.md) | — | general linear (no model) | 7 (+1 cov.) | Dvořáčková E et al., Population Pharmacokinetics and Dose Op…, Medical principles and prac… (2026) | [10.1159/000548942](https://doi.org/10.1159/000548942) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [Itohara_2025_reference](drugs/drug_valganciclovir/Valganciclovir_Itohara2025_reference.md) | — | 1-compartment (no model) | 5 | Itohara K et al., Pharmacokinetic and Pharmacodynamic Ass…, Therapeutic drug monitoring (2025) | [10.1097/FTD.0000000000001257](https://doi.org/10.1097/FTD.0000000000001257) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Märtson_2022_reference](drugs/drug_valganciclovir/Valganciclovir_Mrtson2022_reference.md) | — | 2-compartment (no model) | 5 | Märtson AG et al., Therapeutic Drug Monitoring of Ganciclo…, Therapeutic drug monitoring (2022) | [10.1097/FTD.0000000000000925](https://doi.org/10.1097/FTD.0000000000000925) |
@@ -47,7 +47,7 @@ Valganciclovir is an antiviral nucleoside analogue prescribed for cytomegaloviru
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Koloskoff_2025_CMV_viral_load](drugs/drug_valganciclovir/pd_Koloskoff_2025_CMV_viral_load.md) | CMV viral load ← ganciclovir · indirect response — drug stimulates the loss of CMV viral load | — | Koloskoff K et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01526-z](https://doi.org/10.1007/s40262-025-01526-z) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koloskoff_2025_CMV_viral_load](drugs/drug_valganciclovir/pd_Koloskoff_2025_CMV_viral_load.md) | CMV viral load ← ganciclovir · indirect response — drug stimulates the loss of CMV viral load | — | Koloskoff K et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01526-z](https://doi.org/10.1007/s40262-025-01526-z) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,44 +61,41 @@ Valganciclovir is an antiviral nucleoside analogue prescribed for cytomegaloviru
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:44 | 5:31 | 1/14/0 | 1/0/0 | 0/0/0 | 279,095/14,260 | ollama / glm-5.3-flash | 6 | 2/4 | 6/0 | 0 |
+| 2026-11-24 06:58 | 2:18 | 0/15/0 | 1/0/0 | 0/0/0 | 3,870/173 | einfracz / qwen3.8-27b | 6 | 2/4 | 6/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 50 matched, 15 returned
 - **screened:** 5  ·  **relevant:** 5
-- **records:** 15  ·  extracted 0  ·  needs review 1  ·  rejected 14  ·  stale 0
+- **records:** 15  ·  extracted 0  ·  needs review 0  ·  rejected 15  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Facchin_2019.pdf` | Facchin A et al., Population pharmacokinetics of ganciclo…, Antimicrobial agents and ch… (2019) | popPK | 10 | [10.1128/AAC.01192-19](https://doi.org/10.1128/AAC.01192-19) | [31527022](https://pubmed.ncbi.nlm.nih.gov/31527022) | Population PK model of ganciclovir after valganciclovir in children, but numeric parameter values (CL, V) are not given in the evidence, only covariate effects. |
-| `Cojutti_2023.pdf` | Cojutti PG et al., Population Pharmacokinetic and Pharmaco…, Antimicrobial agents and ch… (2023) | popPK | 9 | [10.1128/aac.01665-22](https://doi.org/10.1128/aac.01665-22) | [36815856](https://pubmed.ncbi.nlm.nih.gov/36815856) | A population PK model of valganciclovir (ganciclovir concentrations) in kidney transplant patients, but the abstract gives no numeric CL/V/ka values — parameters likely in tables/supplementary material not provided. |
-| `Czock_2002.pdf` | Czock D et al., Pharmacokinetics of valganciclovir and…, Clinical pharmacology and t… (2002) | popPK | 9 | [10.1067/mcp.2002.126306](https://doi.org/10.1067/mcp.2002.126306) | [12189361](https://pubmed.ncbi.nlm.nih.gov/12189361) | Human PK study of valganciclovir/ganciclovir with compartmental model and numeric parameters (bioavailability, Cmax, t½) present in abstract, though full parameter set may be in tables. |
-
-<sub>queue written 2026-10-07 16:39 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Cojutti_2023 | relevant | 9 | 2 | A population PK model of valganciclovir (ganciclovir concentrations) in kidney transplant patients, but the abstract gives no numeric CL/V/ka values — parameters likely in tables/supplementary material not provided. |
-| popPK | Facchin_2019 | relevant | 10 | 4 | Population PK model of ganciclovir after valganciclovir in children, but numeric parameter values (CL, V) are not given in the evidence, only covariate effects. |
-| popPK | Hahn_2018 | irrelevant | 0 | 0 | This is an in-vitro antiviral mechanism study of pyrrolopyridine compounds; valganciclovir is only mentioned as standard therapy, with no PK parameters. |
-| popPK | Hutterer_2017 | irrelevant | 0 | 0 | This is an in-vitro antiviral efficacy study of DYRK inhibitors; valganciclovir is only mentioned as background therapy, with no PK parameters. |
+| popPK | Cojutti_2023 | relevant | 9 | 3 | The paper describes a population PK/PD model for valganciclovir/ganciclovir in humans, but the specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided abstract text. |
+| PGx | Cojutti_2023 | not_relevant | 0 | 0 | The study reports a population PK/PD model for valganciclovir but does not investigate or report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Czock_2002 | not_relevant | 0 | 0 | The paper investigates the impact of renal impairment and HIV/CMV status on pharmacokinetics, but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| popPK | Facchin_2019 | relevant | 10 | 2 | The paper describes a population PK model for valganciclovir (via metabolite ganciclovir), but the abstract only provides qualitative descriptors (e.g., "15% higher") without the specific numeric parameter estimates (CL, V values) required for extraction. |
+| PGx | Facchin_2019 | not_relevant | 0 | 0 | The study reports population pharmacokinetics based on demographic and clinical covariates (body surface area, sex, creatinine) but does not investigate gene variants or genotypes. |
+| popPK | Hahn_2018 | irrelevant | 0 | 0 | The paper describes the antiviral mechanism of a novel compound (SC88941) with valganciclovir mentioned only as a standard therapy comparator, providing no pharmacokinetic data for valganciclovir. |
+| PGx | Hahn_2018 | not_relevant | 0 | 0 | The paper investigates novel antiviral compounds (pyrrolopyridines) and their mechanism of action, not pharmacogenomic effects on valganciclovir pharmacokinetics or pharmacodynamics. |
+| popPK | Hutterer_2017 | irrelevant | 0 | 0 | The paper investigates the antiviral mechanism of DYRK inhibitors against HCMV, with valganciclovir only mentioned as a context for resistance; no PK parameters are reported. |
+| PGx | Hutterer_2017 | not_relevant | 0 | 0 | The paper reports the antiviral activity of DYRK inhibitors against CMV, not a pharmacogenomic effect on the PK/PD of valganciclovir. |
 | popPK | Koloskoff_2025 | irrelevant | 3 | 2 | This is a pharmacodynamic (viral turnover) modeling study; the PK model parameters (CL, V, ka) come from a prior published model (Franck et al.) and were fixed, with no numeric disposition parameter values reported here (PK figures live in supplementary material). |
 | popPK | Lynch_2025 | irrelevant | 0 | 0 | This is a systematic review of antibiotic PK in obesity; valganciclovir is not studied and no valganciclovir parameters appear. |
-| popPK | Selby_2023 | irrelevant | 2 | 3 | This is a population PK study of intravenous ganciclovir itself, not valganciclovir, and no numeric parameter values (CL, V, Q) appear in the evidence provided. |
-| popPK | Stockmann_2015 | irrelevant | 3 | 1 | This is a narrative review of ganciclovir/valganciclovir PK in children; no original quantitative disposition parameters are reported, only cited AUC targets. |
-| popPK | Tollefson_2022 | irrelevant | 0 | 0 | In-vitro antiviral potency study (EC50) where valganciclovir is only a comparator; no PK parameters reported. |
+| PGx | Märtson_2022 | not_relevant | 0 | 0 | The paper is a narrative review on therapeutic drug monitoring and does not report pharmacogenomic effects of gene variants on PK or PD parameters. |
+| popPK | Selby_2023 | relevant | 5 | 3 | The study models ganciclovir (the active metabolite of valganciclovir) pharmacokinetics in humans, which is relevant, but the specific numeric parameter values (clearance, volume, etc.) are not explicitly listed in the provided abstract text. |
+| PGx | Selby_2023 | not_relevant | 0 | 0 | The paper focuses on covariates like creatinine clearance (renal function) and does not report any pharmacogenomic effects or gene variants affecting pharmacokinetics. |
+| popPK | Stockmann_2015 | irrelevant | 3 | 1 | This is a review article discussing clinical pharmacokinetics and therapeutic targets (AUC) for ganciclovir/valganciclovir in children, but it does not report original quantitative population PK parameter estimates (e.g., typical clearance values, volume of distribution, or interindividual variability) for valganciclovir itself. |
+| PGx | Stockmann_2015 | not_relevant | 0 | 0 | The paper is a general review of pediatric ganciclovir/valganciclovir PK/PD and does not report any specific pharmacogenomic effects of gene variants. |
+| popPK | Tollefson_2022 | irrelevant | 0 | 0 | This is an in-vitro mechanistic/antiviral efficacy study where valganciclovir is only a comparator drug, reporting no pharmacokinetic disposition parameters. |
+| PGx | Tollefson_2022 | not_relevant | 0 | 0 | The paper reports in vitro antiviral potency (EC50) of filociclovir against adenovirus, not pharmacogenomic effects on the PK or PD of valganciclovir. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvalganciclovir%5D&body=Drug%3A%20valganciclovir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_valganciclovir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 16:39 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 06:53 UTC</sub>

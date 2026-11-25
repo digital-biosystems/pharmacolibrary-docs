@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R01A&quot;,&quot;href&quot;:&quot;atc/R01A.md&quot;},{&quot;label&quot;:&quot;ciclesonide&quot;,&quot;href&quot;:&quot;drugs/drug_ciclesonide/&quot;},{&quot;label&quot;:&quot;Rohatagi_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclesonide_Xu2010_reference&quot;,&quot;label&quot;:&quot;Xu_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclesonide_Rohatagi2003_reference&quot;,&quot;label&quot;:&quot;Rohatagi_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclesonide/Ciclesonide_Rohatagi2003_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The ciclesonide model lacks clearance, volume, and absorption parameters, using library placeholders that prevented publication.
+> No value for ciclesonide's clearance, volume of distribution, absorption rate constant and absorption lag time; t3_topology_template (+1 more).
 
-<div class="pk-model-meta" hidden drug="ciclesonide" model-id="Ciclesonide_Rohatagi2005_reference" status="model_quarantined" stale="false" population="adults and children with asthma (phase I and III studies)" measured-compound="des-CIC" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="ciclesonide" model-id="Ciclesonide_Rohatagi2005_reference" status="model_quarantined" stale="false" population="adults and children with asthma" measured-compound="C21-desisobutyryl-ciclesonide" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Rohatagi S, Krishnaswami S, Pfister M, Sahasranaman S. Model-based covariate pharmacokinetic analysis and lack of cortisol suppression by the new inhaled corticosteroid ciclesonide using a novel cortisol release model. American journal of therapeutics 12(5):385–397 (2005).
@@ -17,9 +17,9 @@ Rohatagi S, Krishnaswami S, Pfister M, Sahasranaman S. Model-based covariate pha
 
 ## Population and dosing
 
-**Population:** adults and children with asthma (phase I and III studies) · condition asthma · age group mixed · n = 635.
+**Population:** adults and children with asthma · condition asthma · age group mixed · n = 635.
 
-**Dosed compound ≠ measured compound:** dosed ciclesonide, measured des-CIC.
+**Dosed compound ≠ measured compound:** dosed ciclesonide, measured C21-desisobutyryl-ciclesonide.
 
 ## Model
 
@@ -38,7 +38,7 @@ Rohatagi S, Krishnaswami S, Pfister M, Sahasranaman S. Model-based covariate pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Rohatagi S, Krishnaswami S, Pfister M, Sahasranaman S. Model-based covariate pha
 
 ### Reviewer guidance
 
-**The ciclesonide model lacks clearance, volume, and absorption parameters, using library placeholders that prevented publication.**
+**No value for ciclesonide's clearance, volume of distribution, absorption rate constant and absorption lag time; t3_topology_template (+1 more).**
 
-Ciclesonide's apparent clearance (302 L/h) and volume (1310 L) are attributed to the metabolite des-CIC, while the parent drug's specific parameters were left undefined. The model builder substituted default values for the parent's clearance, volume, absorption rate, and lag time because these were not explicitly estimated. A second reader also disputed the model structure and could not identify the primary analyte, confirming the record's inconclusive nature. Extracted — ciclesonide: CLm/F 302 L/h, Vm/F 1.31e+03 L.
+The model was built, but ciclesonide's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ciclesonide: CLm/F 302 L/h, Vm/F 1.31e+03 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ciclesonide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has C21-desisobutyryl-ciclesonide, the second reading des-CIC; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -71,41 +71,36 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'ex-actuator dose of ciclesonide'
-- metabolite des-cic: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- metabolite des-cic: Q76→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=des-CIC
+- metabolite c21-desisobutyryl-ciclesonide: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite c21-desisobutyryl-ciclesonide: Q76→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=C21-desisobutyryl-ciclesonide
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=noncompartmental; 3/3 row label(s) assigned, 2 linked by role; re-tagged des-CIC→parent ×3
+- row roles (LLM): model_class=noncompartmental; 2/2 row label(s) assigned, 2 linked by role; re-tagged C21-desisobutyryl-ciclesonide→parent ×2
+- molar mass: no plausible PubChem entry for 'C21-desisobutyryl-ciclesonide' ('C21-desisobutyryl-ciclesonide') — left in mass units
+- molar mass: none found for 'C21-desisobutyryl-ciclesonide' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'des-CIC', not ciclesonide — the review values are the parent's
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Rohatagi_2005_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Rohatagi_2005_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.111 (1/9 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['ciclesonide', 'des-cic', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[apparent clearance]` | 302 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent clearance]` |  | 302 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 1310 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` |  | 1310 | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['ciclesonide', 'c21-desisobutyryl-ciclesonide', 'metabolism']] | [['ciclesonide', 'des-cic', 'metabolism']] | mismatch |
 | `gpt-oss-120b` | `parameters[ex-actuator dose of ciclesonide]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | ciclesonide | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | des-CIC | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | C21-desisobutyryl-ciclesonide | des-CIC | mismatch |
 
 </details>
 
@@ -129,15 +124,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.111, 0 of 1 reader(s) agree | 0.111 | cross-check disputed by a second reader: verdict disputed, agreement 0.111, 0 of 1 reader(s) agree |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -171,4 +166,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciclesonide%5D%20Ciclesonide_Rohatagi2005_reference&body=Drug%3A%20ciclesonide%0ARecord%3A%20Ciclesonide_Rohatagi2005_reference%0APaper%3A%20Rohatagi_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciclesonide/Ciclesonide_Rohatagi2005_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 12:41 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:47 UTC</sub>

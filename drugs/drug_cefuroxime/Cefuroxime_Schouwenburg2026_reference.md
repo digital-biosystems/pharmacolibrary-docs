@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Cefuroxime's clearance and central volume of distribution lacked extracted values, so no explicit estimates were used in the quarantined model.
+> No value for cefuroxime's clearance and volume of distribution; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Schouwenburg2026_reference" status="model_quarantined" stale="false" population="critically ill term neonates and children" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
-**Cefuroxime's clearance and central volume of distribution lacked extracted values, so no explicit estimates were used in the quarantined model.**
+**No value for cefuroxime's clearance and volume of distribution; t6_deviations.**
 
-The record identifies clearance and central volume of distribution for cefuroxime but contains no numerical values for these parameters. Consequently, no explicit estimates were available to define the model. The model builder's use of default values instead of explicit estimates was flagged as an unacceptable deviation. No parameter values were extracted.
+The model was built, but cefuroxime's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clcefu: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 
@@ -145,7 +145,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.778 (7 of 9 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped | 4.5 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 4.5 |  |  | no simulated metric for this quantity (single reference sim) |
 

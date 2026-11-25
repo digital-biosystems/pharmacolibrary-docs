@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Sulfadiazine is an unreachable orphan metabolite linked to trimethoprim, causing the model to be rejected.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="trimethoprim" model-id="Trimethoprim_Ekstrand2022_reference" status="rejected" stale="false" population="neonatal foals" measured-compound="trimethoprim" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -60,13 +60,13 @@ Ekstrand C, Nostell K, Gehring R, Bondesson U, Bröjer J. The disposition of tri
 
 ### Reviewer guidance
 
-**Sulfadiazine is an unreachable orphan metabolite linked to trimethoprim, causing the model to be rejected.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure links trimethoprim to sulfadiazine via an interconversion relation, but sulfadiazine has no path from the dose, making it an orphan compartment. Additionally, the half-life of the initial distribution phase is reported as 0.08 h without a unit, preventing conversion to SI. A second reader disagreed on whether sulfadiazine was actually measured or linked in this record. Extracted — trimethoprim: V1 1.38 L/kg, V 0.61 L/kg, CL 25.4 L/kg/h, Q 3.83 L/kg/h, λ1 9.13, kel 0.16 1/h, t1/2α 0.08 h, t1/2β 4.2 h, … (+2).
+A reported unit could not be converted (AUCt), so that value has no SI equivalent. Extracted — trimethoprim: V1 1.38 L/kg, V 0.61 L/kg, CL 25.4 L/kg/h, Q 3.83 L/kg/h, λ1 9.13, kel 0.16 1/h, t1/2α 0.08 h, t1/2β 4.2 h, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trimethoprim and sulfadiazine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

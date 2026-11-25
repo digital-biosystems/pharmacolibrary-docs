@@ -46,7 +46,7 @@ Ufer M. Comparative pharmacokinetics of vitamin K antagonists: warfarin, phenpro
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 <sub>reviewed by rule template (no LLM)</sub>
 

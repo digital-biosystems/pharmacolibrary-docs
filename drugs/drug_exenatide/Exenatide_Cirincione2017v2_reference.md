@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the intercompartmental clearance parameter is reported in volume per hour instead of the required volume per mass per hour.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit l h −1  ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time]; Q66 unit μg h −1  ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Cirincione2017v2_reference" status="rejected" stale="false" population="type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Cirincione B, Mager DE. Population pharmacokinetics of exenatide. British journa
 
 ### Reviewer guidance
 
-**Record rejected because the intercompartmental clearance parameter is reported in volume per hour instead of the required volume per mass per hour.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit l h −1  ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time]; Q66 unit μg h −1  ([mass] / [time]) vs [mass] / [time].**
 
-The apparent intercompartmental clearance between the central and peripheral compartments is listed as 3.72 L/h, which conflicts with the expected volume per mass per time dimension. Additionally, the maximum metabolic rate of 1.55 µg/h could not be converted to standard SI units, leaving the parameter without a valid standard value. Extracted — exenatide: CLint 4.58 l h −1, Km 0.838, Q 3.72 l h −1, Vmax 1.55 μg h −1, V2 7.04 l, Vnorm 2.67 L/kg, Fab 1, FR 0.628, … (+1).
+A reported unit could not be converted (CLint and Vmax), so that value has no SI equivalent. Extracted — exenatide: CLint 4.58 l h −1, Km 0.838, Q 3.72 l h −1, Vmax 1.55 μg h −1, V2 7.04 l, Vnorm 2.67 L/kg, Fab 1, FR 0.628, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of vc=vc_int⋅weight84.8vc_wtkg: this record has none, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

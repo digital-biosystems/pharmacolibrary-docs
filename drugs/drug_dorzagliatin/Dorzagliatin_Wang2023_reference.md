@@ -46,7 +46,7 @@ Wang K, Feng L, Zhang J, Zou Q, Xu F, Sun Z et al. Population Pharmacokinetic An
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,6 +59,8 @@ Wang K, Feng L, Zhang J, Zou Q, Xu F, Sun Z et al. Population Pharmacokinetic An
 **K13, k31 use library defaults, not estimates from this paper; t6_deviations.**
 
 These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — dorzagliatin: CL/F 10.4 L/h, V1/F 80.6 L, Q/F 3.02 L/h, V2/F 26.5 L, kabs 3.29 h−1, D1 0.418 h, CL 0.255 L/h/kg, V1 0.553 L/kg.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clbw: this record has 0.255, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>the checker's own wording — not yet put into words by an LLM</sub>
 
@@ -128,6 +130,28 @@ These values affect the simulated profile but are not supported by this paper; t
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
+
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clbw]` | 0.255 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[d1]` | 0.418 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -153,16 +177,16 @@ These values affect the simulated profile but are not supported by this paper; t
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=dorzagliatin) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 7 scholar param(s) emitted or defaulted | 7 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 3C → PK_3C* | PK_3C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| X1_cross_check | skipped |  |  | no second reading of this record |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=dorzagliatin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 7 scholar param(s) emitted or defaulted | 7 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 3C → PK_3C* | PK_3C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial; agreement 0.833 (10 of 12 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

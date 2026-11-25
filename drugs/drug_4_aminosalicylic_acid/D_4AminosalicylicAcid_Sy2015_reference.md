@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The simulated peak concentration for para-aminosalicylic acid is 2895.2654 times the paper's value, and the gender covariate on clearance (0.315) was not simulated.
+> The model does not reproduce the paper's peak concentration (Cmax); the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="4-aminosalicylic acid" model-id="D_4AminosalicylicAcid_Sy2015_reference" status="needs_review" stale="false" population="tuberculosis patients" measured-compound="para-aminosalicylic acid" parameterization="apparent" topology="1C"></div>
 
@@ -57,13 +57,13 @@ SherwinK BSy Department of Pharmaceutics College of Pharmacy University of Flori
 
 ### Reviewer guidance
 
-**The simulated peak concentration for para-aminosalicylic acid is 2895.2654 times the paper's value, and the gender covariate on clearance (0.315) was not simulated.**
+**The model does not reproduce the paper's peak concentration (Cmax); the covariate scenarios were not simulated (+1 more).**
 
-The simulated maximum plasma concentration (0.02895265370279379) deviates from the expected value (9.999999999999999e-06) by a ratio of 2895.2654. The gender covariate effect on clearance (0.315) was defined but the model was only simulated for the reference individual, leaving covariate scenarios untested. A second reader disputed the record, disagreeing on the gender covariate value and additional clearance parameters. Extracted — para-aminosalicylic acid: CL/F 8.14 liters/h, V/F 48.9 liters, ktr 0.617 h Ϫ1, n_transit 3.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. None of the extracted parameters is 4 aminosalicylic acid's own; they describe para-aminosalicylic acid. Extracted — para-aminosalicylic acid: CL/F 8.14 liters/h, V/F 48.9 liters, ktr 0.617 h Ϫ1, n_transit 3.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].covariate_forms`: this record has ['linear_fractional'], the second reading ['linear_fractional', 'linear_fractional']; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -154,10 +154,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.733, 0 of 1 reader(s) agree | 0.733 | cross-check disputed by a second reader: verdict disputed, agreement 0.733, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 0.02895 |  | non-numeric value |
-| T1_cmax | reference | fail | 1e-05 | 0.02895 | 2895 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.000135 | 0.02895 | 214.5 | ng/ml→SI vs simulated kg/m3 |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.733 (11 of 15 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.733 | cross-check contradicted by a second reader: verdict disputed; agreement 0.733 (11 of 15 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 0.02895 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | fail | 1e-05 | 0.02895 | 2895 | reported 10.0 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.000135 | 0.02895 | 214.5 | reported 135.0 ng/ml→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 22.4 | 0.02895 |  | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 51.6 | 0.02895 |  | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 14.3 | 0.02895 |  | unresolved concentration unit (exp 'mg/liter', sim 'kg/m3') |

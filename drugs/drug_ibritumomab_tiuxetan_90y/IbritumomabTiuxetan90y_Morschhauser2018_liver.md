@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because ibritumomab tiuxetan 90Y clearance (CL), reported as 1.03 ml.min, has a unit dimension incompatible with clearance.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml.min ([length] ** 3 * [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="ibritumomab tiuxetan (90Y)" model-id="IbritumomabTiuxetan90y_Morschhauser2018_liver" status="rejected" stale="false" population="patients with follicular lymphoma" measured-compound="ibritumomab_tiuxetan_90y" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Morschhauser F, Dekyndt B, Baillet C, Barthélémy C, Malek E, Fulcrand J et al.
 
 ### Reviewer guidance
 
-**The record was rejected because ibritumomab tiuxetan 90Y clearance (CL), reported as 1.03 ml.min, has a unit dimension incompatible with clearance.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml.min ([length] ** 3 * [time]) vs [length] ** 3 / [time].**
 
-The record gives total clearance as 1.03 ml.min, whose volume-times-time dimension conflicts with clearance’s volume-per-time dimension; the reported unit could not be converted to SI. The second reader identified 111In-ibritumomab tiuxetan as the primary analyte, disputed the reported AUCcum 4d value of 261.98, and suggested additional parameter values absent from this record. Extracted — ibritumomab tiuxetan 90y: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
+A reported unit could not be converted (Cmax, AUC and AUCt), so that value has no SI equivalent. Extracted — ibritumomab tiuxetan 90y: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ibritumomab_tiuxetan_90y, the second reading ibritumomab tiuxetan; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

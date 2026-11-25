@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because R-ibuprofen's terminal half-life has unit 'b h', which cannot be converted to standard time units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q57 unit b h ([length] ** 2 * [time]) vs [time].
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Gregoire2008_reference" status="rejected" stale="false" population="preterm newborn infants" measured-compound="ibuprofen" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -57,13 +57,13 @@ Gregoire N, Desfrere L, Roze JC, Kibleur Y, Koehne P. Population pharmacokinetic
 
 ### Reviewer guidance
 
-**Rejected because R-ibuprofen's terminal half-life has unit 'b h', which cannot be converted to standard time units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q57 unit b h ([length] ** 2 * [time]) vs [time].**
 
-The terminal half-life of R-ibuprofen is listed with unit 'b h', but the parameter's meaning defines it as a time-based half-life. The review flags that the unit dimension includes length squared times time, conflicting with the required time dimension. Because this specific unit was not recognized as a standard pharmacokinetic time measurement, the model was held back without a valid numerical value. Additionally, the second reader disagrees on the dose compound identity and the value of an unassigned rate constant for R-ibuprofen. Extracted — S-ibuprofen: kel 0.02 h-1, V 173 mL/kg, CL 3.5 mL/h/kg, t1/2z 34.3 h, kfm 0.014 /h; R-ibuprofen: kel 0.069 h-1, V1 306 mL/kg, CLR 25.5 mL/h/kg, t1/2z 8.3 b h; ibuprofen: kabs 0.656 hour−1.
+A reported unit could not be converted (equation variable and t1/2z), so that value has no SI equivalent. Extracted — S-ibuprofen: kel 0.02 h-1, V 173 mL/kg, CL 3.5 mL/h/kg, t1/2z 34.3 h, kfm 0.014 /h; R-ibuprofen: kel 0.069 h-1, V1 306 mL/kg, CLR 25.5 mL/h/kg, t1/2z 8.3 b h; ibuprofen: kabs 0.656 hour−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ibuprofen, the second reading ibuprofen racemate; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

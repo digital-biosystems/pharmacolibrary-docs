@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;sirolimus&quot;,&quot;href&quot;:&quot;drugs/drug_sirolimus/&quot;},{&quot;label&quot;:&quot;Ferron_1997 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sirolimus_de2023_reference&quot;,&quot;label&quot;:&quot;de_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirolimus/Sirolimus_de2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sirolimus_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirolimus/Sirolimus_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sirolimus_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirolimus/Sirolimus_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="sirolimus" model-id="Sirolimus_Ferron1997_reference" status="needs_review" stale="false" population="kidney transplant patients" measured-compound="sirolimus" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sirolimus" model-id="Sirolimus_Ferron1997_reference" status="needs_review" stale="false" population="kidney transplant patients" measured-compound="sirolimus" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ferron GM, Mishina EV, Zimmerman JJ, Jusko WJ. Population pharmacokinetics of sirolimus in kidney transplant patients. Clinical pharmacology and therapeutics 61(4):416–428 (1997).
@@ -17,12 +17,12 @@ Ferron GM, Mishina EV, Zimmerman JJ, Jusko WJ. Population pharmacokinetics of si
 
 ## Population and dosing
 
-**Population:** kidney transplant patients · condition kidney transplant · n = 36.
+**Population:** kidney transplant patients · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameterization:** mechanistic.  
 **Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
@@ -32,13 +32,13 @@ Ferron GM, Mishina EV, Zimmerman JJ, Jusko WJ. Population pharmacokinetics of si
 | label | parameter | value | unit |
 |---|---|---|---|
 | terminal half-life | t1/2z | 63 | hours |
-| apparent oral blood clearance | CL/F | 8.9 | L/hr |
+| apparent oral blood clearance | CLb | 8.9 | L/hr |
 | absorption lag-time | tlag | 0.27 | hour |
 | ka | kabs | 2.77 | hr-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778), qwen3.8-27b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +50,9 @@ Ferron GM, Mishina EV, Zimmerman JJ, Jusko WJ. Population pharmacokinetics of si
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sirolimus: t1/2z 63 hours, CL/F 8.9 L/hr, tlag 0.27 hour, kabs 2.77 hr-1.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sirolimus: t1/2z 63 hours, CLb 8.9 L/hr, tlag 0.27 hour, kabs 2.77 hr-1.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,8 +60,8 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| terminal half-life | `Q57` · t1/2z | 63 | hours | 2.268e+05 | s | h | llm (0.6) | Ferron_1997:abstract |
-| apparent oral blood clearance | `Q27` · CL/F | 8.9 | L/hr | 2.472e-06 | m3/s | l/h | llm_corrected (0.6) | Ferron_1997:abstract |
+| terminal half-life | `Q57` · t1/2z | 63 | hours | 2.268e+05 | s | h | half_life_rule (0.95) | Ferron_1997:abstract |
+| apparent oral blood clearance | `Q23` · CLb | 8.9 | L/hr | 2.472e-06 | m3/s | l/h | llm_confirmed (0.6) | Ferron_1997:abstract |
 | absorption lag-time | `Q83` · tlag | 0.27 | hour | 972 | s | h | llm_confirmed (0.6) | Ferron_1997:abstract |
 | ka | `Q49` · kabs | 2.77 | hr-1 | 0.0007694 | 1/s | 1/h | exact (1) | Ferron_1997:abstract |
 
@@ -73,27 +73,28 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=sirolimus
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sirolimus
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Ferron_1997_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 | `qwen3.8-27b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[apparent oral blood clearance].parameter_id` | Q23 | Q27 | mismatch |
 | `qwen3.8-27b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `qwen3.8-27b` | `parameters[apparent oral blood clearance].parameter_id` | Q27 | Q23 | mismatch |
 
@@ -112,13 +113,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Ferron_1997:abstract'] |
+| C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['Ferron_1997:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Ferron_1997:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Ferron_1997:abstract'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Ferron_1997:abstract'] |
-| C7_apparent_coherence | pass |  |  |  |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8.9 | ['Ferron_1997:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 8.9 L/h | ['Ferron_1997:abstract'] |
+| C9_phys_window_Q23 | pass | clearance within physiological range | 8.9 L/h | ['Ferron_1997:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -152,4 +153,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsirolimus%5D%20Sirolimus_Ferron1997_reference&body=Drug%3A%20sirolimus%0ARecord%3A%20Sirolimus_Ferron1997_reference%0APaper%3A%20Ferron_1997%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sirolimus/Sirolimus_Ferron1997_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 06:57 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:45 UTC</sub>

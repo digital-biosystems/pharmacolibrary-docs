@@ -50,7 +50,7 @@ Mezlocillin is a broad-spectrum penicillin antibiotic used to treat conditions l
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Høiby_1981_IC50](drugs/drug_mezlocillin/pd_H_iby_1981_IC50.md) | Pseudomonas aeruginosa inhibition ← mezlocillin · inhibition effect | — | Høiby N et al., In vitro activity of azlocillin, carben…, Scandinavian journal of inf… (1981) | — |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Sullivan_1993_serum_bactericidal_activity](drugs/drug_mezlocillin/pd_Sullivan_1993_serum_bactericidal_activity.md) | serum bactericidal activity biomarker turnover ← mezlocillin | — | Sullivan MC et al., Comparison of the pharmacokinetic and p…, Pharmacotherapy (1993) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Sullivan_1993_serum_bactericidal_activity](drugs/drug_mezlocillin/pd_Sullivan_1993_serum_bactericidal_activity.md) | serum bactericidal activity biomarker turnover ← mezlocillin | — | Sullivan MC et al., Comparison of the pharmacokinetic and p…, Pharmacotherapy (1993) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

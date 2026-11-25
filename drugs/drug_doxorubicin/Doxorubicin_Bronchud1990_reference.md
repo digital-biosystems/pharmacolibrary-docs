@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Doxorubicin AUC parameter was mislabeled as doxorubicinol and Cmax dimension was mismatched, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit µM ([length]) vs [mass] / [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Bronchud1990_reference" status="rejected" stale="false" population="patients with metastatic breast cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Bronchud MH, Margison JM, Howell A, Lind M, Lucas SB, Wilkinson PM. Comparative 
 
 ### Reviewer guidance
 
-**Doxorubicin AUC parameter was mislabeled as doxorubicinol and Cmax dimension was mismatched, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit µM ([length]) vs [mass] / [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The AUC parameter for doxorubicinol (2.14 µMhL⁻¹) was incorrectly attributed to doxorubicin in the record. The Cmax parameter (3.5 µM) had a unit dimension conflict during validation. A second reader disagreed on the AUC assignment and noted the doxorubicinol AUC was missing. Extracted — doxorubicin: Cmax 3.5 µM, t1/2z 30.7 hours, CL 1.17e+03 ml/min, AUC∞ 3.06 µMhL⁻¹, AUC 2.14 µMhL⁻¹, V 0.0764 l.
+A reported unit could not be converted (Cmax, AUC∞ and AUC), so that value has no SI equivalent. Extracted — doxorubicin: Cmax 3.5 µM, t1/2z 30.7 hours, CL 1.17e+03 ml/min, AUC∞ 3.06 µMhL⁻¹, AUC 2.14 µMhL⁻¹, V 0.0764 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[doxorubicin auc].parameter_id`: this record has Q17, the second reading Q88; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

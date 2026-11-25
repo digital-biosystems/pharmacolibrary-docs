@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;atezolizumab&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/&quot;},{&quot;label&quot;:&quot;Shemesh_2020 \u00b7 ttmb_16_mut_mb&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atezolizumab_Stroh2017_reference&quot;,&quot;label&quot;:&quot;Stroh_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Stroh2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_adult_model&quot;,&quot;label&quot;:&quot;Shemesh_2019_adult_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_pediatric_young_adult_model&quot;,&quot;label&quot;:&quot;Shemesh_2019_pediatric_young_adult_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_pediatric_young_adult_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atezolizumab_Stroh2017_reference&quot;,&quot;label&quot;:&quot;Stroh_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Stroh2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Chan2025_reference&quot;,&quot;label&quot;:&quot;Chan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_adult_model&quot;,&quot;label&quot;:&quot;Shemesh_2019_adult_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_pediatric_young_adult_model&quot;,&quot;label&quot;:&quot;Shemesh_2019_pediatric_young_adult_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_pediatric_young_adult_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Atezolizumab's clearance (0.223 mL/day/kg) and volume of distribution (6.91 L) were rejected as physiologically implausible magnitudes.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Shemesh2020_ttmb_16_mut_mb" status="rejected" stale="false" population="pan-tumor patients treated with atezolizumab across seven clinical trials" measured-compound="atezolizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Shemesh CS, Chan P, Legrand FA, Shames DS, Das Thakur M, Shi J et al. Pan-cancer
 
 ### Reviewer guidance
 
-**Atezolizumab's clearance (0.223 mL/day/kg) and volume of distribution (6.91 L) were rejected as physiologically implausible magnitudes.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted clearance value of 0.223 mL/day/kg falls outside the physiological window, indicating a unit or scale extraction error. The record also lacked a conversion for the reported unit, preventing SI normalization. A second reader disagreed on the steady-state concentration and the extracted volume of distribution value. Extracted — atezolizumab: Cmax 376 µg/mL, Cmin 66.7 µg/mL, AUC 2.83e+03 µg∙day/mL, CL 0.223 mL/day/kg, V 6.91 L.
+A reported unit could not be converted (Cmax, Cmin and AUC), so that value has no SI equivalent. Extracted — atezolizumab: Cmax 376 µg/mL, Cmin 66.7 µg/mL, AUC 2.83e+03 µg∙day/mL, CL 0.223 mL/day/kg, V 6.91 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of steady state: this record has none, the second reading 532; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

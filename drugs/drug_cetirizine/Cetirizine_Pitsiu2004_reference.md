@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The apparent volume of distribution unit includes time, causing a dimension mismatch for cetirizine.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q76 unit l year(-1) ([length] ** 3 / [time]) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="cetirizine" model-id="Cetirizine_Pitsiu2004_reference" status="rejected" stale="false" population="children aged 6 months to 12 years" measured-compound="cetirizine" parameterization="apparent" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Pitsiu M, Hussein Z, Majid O, Aarons L, de Longueville M, Stockis A. Retrospecti
 
 ### Reviewer guidance
 
-**The apparent volume of distribution unit includes time, causing a dimension mismatch for cetirizine.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q76 unit l year(-1) ([length] ** 3 / [time]) vs [length] ** 3.**
 
-The apparent volume of distribution parameter is assigned a unit of l year(-1) but defined as volume only. This conflict triggers a dimension mismatch error on the structural parameter. Additionally, the record was derived solely from the paper abstract, so summary statistics stand in for a fitted model. A second reader disagreed on whether the extracted values represented base parameters or age-specific slopes. Extracted — cetirizine: CL/F 0.12 L/h, V/F 1.4 l year(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cetirizine: CL/F 0.12 L/h, V/F 1.4 l year(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent clearance (cl/f) and age with the former increasing by: this record has 0.12, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

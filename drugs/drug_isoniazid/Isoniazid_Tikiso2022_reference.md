@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F and lag time Tlag were left at library defaults rather than using estimates from the paper.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="isoniazid" model-id="Isoniazid_Tikiso2022_reference" status="needs_review" stale="false" population="" measured-compound="isoniazid" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Tikiso T, McIlleron H, Abdelwahab MT, Bekker A, Hesseling A, Chabala C et al. Po
 
 ### Reviewer guidance
 
-**Bioavailability F and lag time Tlag were left at library defaults rather than using estimates from the paper.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lacks explicit values for bioavailability and lag time, so placeholder defaults were used. This was confirmed by the second reader, who disagreed with the verdict and noted the clearance value of 15.9 L/h was correctly identified. Extracted — isoniazid: CLb 15.9 L/h, V1 44.3 L, kabs 1.4 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — isoniazid: CLb 15.9 L/h, V1 44.3 L, kabs 1.4 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has none, the second reading 15.9; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.714 (5 of 7 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

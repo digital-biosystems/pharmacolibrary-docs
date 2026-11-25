@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Fosfomycin clearance lacked an estimated value, causing the model to use a library placeholder and be quarantined.
+> No value for fosfomycin's clearance; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fosfomycin" model-id="Fosfomycin_Edwina2023_reference" status="model_quarantined" stale="false" population="healthy male volunteers" measured-compound="fosfomycin" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Edwina AE, Koch BCP, Muller AE, Al Jalali V, Matzneller P, Zeitlinger M et al. P
 
 ### Reviewer guidance
 
-**Fosfomycin clearance lacked an estimated value, causing the model to use a library placeholder and be quarantined.**
+**No value for fosfomycin's clearance; t6_deviations.**
 
-The record includes values for elimination rate constant, intercompartmental clearance, and central volume, but no value is provided for total clearance. Consequently, a default placeholder was used for clearance instead of an explicit estimate. The record was held back from publication to prevent the model from relying on an invented number for this essential parameter. Extracted — fosfomycin: kel 0.774 1/h, Q 11.8 L/h, V1 10.2 L, V2 9.74 L.
+The model was built, but fosfomycin's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — fosfomycin: kel 0.774 1/h, Q 11.8 L/h, V1 10.2 L, V2 9.74 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (9 of 9 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

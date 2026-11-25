@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;ribociclib&quot;,&quot;href&quot;:&quot;drugs/drug_ribociclib/&quot;},{&quot;label&quot;:&quot;Ji_2023 \u00b7 PD progression-free survival&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# progression-free survival — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--green" title="re-read by glm-5.3-flash (confirmed, agreement 1.0), qwen3.8-27b (?, agreement 0.0). Primary extraction retained.">cross-checked ✓</span>
+# progression-free survival — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -24,7 +24,7 @@
 - **paper:** `Ji_2023`
 - **model family:** `unknown`
 - **driver:** `cited_pk`
-- **tier:** descriptive
+- **tier:** population
 - **effect:** unknown/unknown
 
 ## Citation
@@ -35,15 +35,14 @@ Ji Y et al., Quantitative Assessment of Ribociclib E…, Journal of clinical pha
 _No resolved parameters._
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `glm-5.3-flash` | confirmed | 1.0 (4/4 fields) | none |
-| `qwen3.8-27b` | no answer | – | – (extracted nothing for this PD record) |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
 
-_All readers agree on the compared fields of this PD record._
+_No second reader extracted anything for this PD record; it is not cross-checked._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>

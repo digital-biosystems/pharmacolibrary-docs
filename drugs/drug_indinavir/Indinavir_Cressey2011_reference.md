@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Indinavir’s apparent oral clearance of 21.3 L/h/70 kg was held for review because the abstract-derived record was disputed by the second reader.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="indinavir" model-id="Indinavir_Cressey2011_reference" status="needs_review" stale="false" population="HIV-infected Thai adults" measured-compound="indinavir" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Cressey TR, Urien S, Hirt D, Halue G, Techapornroong M, Bowonwatanuwong C et al.
 
 ### Reviewer guidance
 
-**Indinavir’s apparent oral clearance of 21.3 L/h/70 kg was held for review because the abstract-derived record was disputed by the second reader.**
+**cross_check_disputed; x1_cross_check.**
 
-Only the abstract was read, so its summary statistics stood in for a fitted model. The second reader disputed the dose compound and primary analyte, and did not provide corresponding values for the recorded apparent oral clearance, volume of distribution, absorption rate constant, or absorption lag-time; agreement was 0.2, with 0 of 1 reader agreeing. The model builder assumed F=1 and Fm=1 and made no molar correction for the apparent parameterization. Extracted — indinavir: CL/F 21.3 L/h/70 kg, V 90.7 L/70 kg, kabs 0.871 h -1, tlag 0.485 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — indinavir: CL/F 21.3 L/h/70 kg, V 90.7 L/70 kg, kabs 0.871 h -1, tlag 0.485 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indinavir, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -145,7 +145,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

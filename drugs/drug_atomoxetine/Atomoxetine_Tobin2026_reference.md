@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;atomoxetine&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/&quot;},{&quot;label&quot;:&quot;Tobin_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Li2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pgx_Tobin_2026_CYP2D6_Q27&quot;,&quot;label&quot;:&quot;Tobin_2026 \u00b7 CYP2D6&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/pgx_Tobin_2026_CYP2D6_Q27.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Li2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pgx_Tobin_2026_CYP2D6_Q27&quot;,&quot;label&quot;:&quot;Tobin_2026 \u00b7 CYP2D6&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/pgx_Tobin_2026_CYP2D6_Q27.md&quot;,&quot;status&quot;:&quot;Simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -170,23 +170,24 @@ _All readers agree on the compared fields of this record._
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T2_covariates_not_exercised | (all) | fail |  |  |  | the phenotype scenarios were simulated, but not the covariates im |
 | T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable |  | pass | C_central (measured=atomoxetine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 0.0004 | 0.0001901 | 0.4752 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped |  | 0.0001901 |  | non-numeric value |
-| T1_cmax | reference | fail | 0.000362 | 0.0001901 | 0.5251 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.000626 | 0.0001901 | 0.3037 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.000444 | 0.0001901 | 0.4281 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.000452 | 0.0001901 | 0.4206 | ng/mL→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | skipped |  | 3.124 |  | non-numeric value |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (17 of 17 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T2_pgx_Poor | pgx:Poor | pass |  |  |  | Poor vs Normal: central.C auc +104 %, central.C cmax +2 % (PK_1C_enteral.fmu, 2 phenotypes) |
+| T1_cmax | reference | fail | 0.0004 | 0.0001901 | 0.4752 | reported 400.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped |  | 0.0001901 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | fail | 0.000362 | 0.0001901 | 0.5251 | reported 362.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.000626 | 0.0001901 | 0.3037 | reported 626.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.000444 | 0.0001901 | 0.4281 | reported 444.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.000452 | 0.0001901 | 0.4206 | reported 452.0 ng/mL→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | skipped |  | 3.124 |  | the transcribed record carries no number for this value |
 | T1_tmax | reference | skipped | 400 | 0.3053 |  | unresolved time unit 'ng/mL' |
-| T1_tmax | reference | skipped |  | 0.3053 |  | non-numeric value |
+| T1_tmax | reference | skipped |  | 0.3053 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -202,7 +203,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference/Atomoxetine_Tobin2026_reference_modelica.zip" download>Atomoxetine_Tobin2026_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference/Atomoxetine_Tobin2026_reference_modelica.zip" download>Atomoxetine_Tobin2026_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference/Atomoxetine_Tobin2026_reference_fmi.zip" download>Atomoxetine_Tobin2026_reference_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference/Atomoxetine_Tobin2026_reference_matlab.zip" download>Atomoxetine_Tobin2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference/Atomoxetine_Tobin2026_reference_matlab_simbio.zip" download>Atomoxetine_Tobin2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

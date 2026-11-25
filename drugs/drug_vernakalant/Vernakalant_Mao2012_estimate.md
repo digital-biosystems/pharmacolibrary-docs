@@ -181,26 +181,26 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.308, 0 of 1 reader(s) agree | 0.308 | cross-check agreement 0.308 is below 0.5: verdict partial, agreement 0.308, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict partial; agreement 0.308 (4 of 13 compared fields agree, 9 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.308 | cross-check agreement 0.308 is below 0.5: verdict partial; agreement 0.308 (4 of 13 compared fields agree, 9 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 3371 | 0.0009436 |  | unresolved concentration unit (exp 'ng/kg', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 4012 | 0.0009436 |  | unresolved concentration unit (exp 'ng/kg', sim 'kg/m3') |
-| T1_cmax | reference | fail | 0.003904 | 0.0009436 | 0.2417 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.003371 | 0.0009436 | 0.2799 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.003859 | 0.0009436 | 0.2445 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.004012 | 0.0009436 | 0.2352 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.004303 | 0.0009436 | 0.2193 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.003697 | 0.0009436 | 0.2552 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.004206 | 0.0009436 | 0.2243 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.004558 | 0.0009436 | 0.207 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.003904 | 0.0009436 | 0.2417 | reported 3904.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.003371 | 0.0009436 | 0.2799 | reported 3371.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.003859 | 0.0009436 | 0.2445 | reported 3859.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.004012 | 0.0009436 | 0.2352 | reported 4012.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.004303 | 0.0009436 | 0.2193 | reported 4303.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.003697 | 0.0009436 | 0.2552 | reported 3697.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.004206 | 0.0009436 | 0.2243 | reported 4206.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.004558 | 0.0009436 | 0.207 | reported 4558.0 ng/mL→SI vs simulated kg/m3 |
 | T1_t_half_alpha | reference | skipped | 0.16 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 0.08 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 0.16 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 0.17 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | fail | 3.45 | 8.142 | 2.36 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 2.11 | 8.142 | 3.859 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 3.01 | 8.142 | 2.705 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 5.62 | 8.142 | 1.449 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 3 | 8.142 | 2.714 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 3.45 | 8.142 | 2.36 | reported 3.45 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.11 | 8.142 | 3.859 | reported 2.11 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 3.01 | 8.142 | 2.705 | reported 3.01 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 5.62 | 8.142 | 1.449 | reported 5.62 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 3 | 8.142 | 2.714 | reported 3.0 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

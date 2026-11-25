@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;acepromazine&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/&quot;},{&quot;label&quot;:&quot;Hashem_1993 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acepromazine_Garbin2022_reference&quot;,&quot;label&quot;:&quot;Garbin_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Garbin2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acepromazine_Steagall2026_reference&quot;,&quot;label&quot;:&quot;Steagall_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Steagall2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acepromazine_McGree2013_reference&quot;,&quot;label&quot;:&quot;McGree_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_McGree2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acepromazine_Garbin2022_reference&quot;,&quot;label&quot;:&quot;Garbin_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Garbin2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acepromazine_Steagall2026_reference&quot;,&quot;label&quot;:&quot;Steagall_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acepromazine/Acepromazine_Steagall2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # acepromazine — `Acepromazine_Hashem1993_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Record rejected for acepromazine because the dose parameter 0.5 mg/kg conflicts with the time dimension of the infusion duration field.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="acepromazine" model-id="Acepromazine_Hashem1993_reference" status="rejected" stale="false" population="horses" measured-compound="acepromazine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="acepromazine" model-id="Acepromazine_Hashem1993_reference" status="needs_review" stale="false" population="horses" measured-compound="acepromazine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hashem A, Keller H. Disposition, bioavailability and clinical efficacy of orally administered acepromazine in the horse. Journal of veterinary pharmacology and therapeutics 16(3):359–368 (1993).
@@ -25,23 +25,22 @@ Hashem A, Keller H. Disposition, bioavailability and clinical efficacy of orally
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | half-life | t1/2z | 0.84 | h |
 | tmax | tmax | 0.4 | h |
 | Cmax | Cmax | 59 | ng/ml |
-| bioavailability | Fab | 55.1 | % |
-| dose | D1 | 0.5 | mg/kg |
+| bioavailability | Fab | 55.1 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,23 +50,22 @@ Hashem A, Keller H. Disposition, bioavailability and clinical efficacy of orally
 
 ### Reviewer guidance
 
-**Record rejected for acepromazine because the dose parameter 0.5 mg/kg conflicts with the time dimension of the infusion duration field.**
+**Only clearance was extracted — no volume.**
 
-The record lists the parameter 'Duration of a zero-order input' with a value of 0.5 mg/kg, creating a dimension mismatch between mass and time. This conflict caused a structural check failure for the model. Additionally, the record was built from the abstract alone, so summary statistics stood in for a fitted model. A second reader disagreed on the identification of the dose compound and failed to extract the bioavailability value of 55.1%. Extracted — acepromazine: t1/2z 0.84 h, tmax 0.4 h, Cmax 59 ng/ml, Fab 55.1 %, D1 0.5 mg/kg.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — acepromazine: t1/2z 0.84 h, tmax 0.4 h, Cmax 59 ng/ml, Fab 55.1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has acepromazine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| half-life | `Q57` · t1/2z | 0.84 | h | 3024 | s | h | llm (0.6) | Hashem_1993:abstract |
+| half-life | `Q57` · t1/2z | 0.84 | h | 3024 | s | h | half_life_rule (0.95) | Hashem_1993:abstract, Hashem_1993:abstract, Hashem_1993:abstract |
 | tmax | `Q56` · tmax | 0.4 | h | 1440 | s | h | exact (1) | Hashem_1993:abstract |
-| Cmax | `Q32` · Cmax | 59 | ng/ml |  |  | ng/ml | exact (1) | Hashem_1993:abstract |
-| bioavailability | `Q40` · Fab | 55.1 | % |  |  |  | exact (1) | Hashem_1993:abstract |
-| dose | `Q310` · D1 | 0.5 | mg/kg |  |  | mg/kg | llm (0.6) | Hashem_1993:abstract |
+| Cmax | `Q32` · Cmax | 59 | ng/ml | 5.9e-05 | kg/m3 | ng/ml | exact (1) | Hashem_1993:abstract |
+| bioavailability | `Q40` · Fab | 55.1 |  |  |  |  | exact (1) | Hashem_1993:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,46 +75,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q57 ('half-life (oral administration)', value 6.04) — already have one for this compound
-- dropped duplicate Q57 ('half-life (i.v. injection)', value 2.6) — already have one for this compound
-- unit_dimension_mismatch: 'dose' → Q310 (unit '[mass]' vs ontology '[time]') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=acepromazine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Hashem_1993_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Hashem_1993_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
+| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
 
-<details><summary>12 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[administration]` |  | 0.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailability]` | 55.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailability]` |  | 55.1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` | 59 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` |  | 59 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[dose]` | 0.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half-life]` | 0.84 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half-life]` |  | 0.84 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tmax]` | 0.4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tmax]` |  | 0.4 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | acepromazine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | acepromazine | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -128,13 +102,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q310 | fail | [time] | mg/kg ([mass]) | ['Hashem_1993:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Hashem_1993:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Hashem_1993:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Hashem_1993:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Hashem_1993:abstract', 'Hashem_1993:abstract', 'Hashem_1993:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -147,9 +120,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -159,4 +142,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bacepromazine%5D%20Acepromazine_Hashem1993_reference&body=Drug%3A%20acepromazine%0ARecord%3A%20Acepromazine_Hashem1993_reference%0APaper%3A%20Hashem_1993%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_acepromazine/Acepromazine_Hashem1993_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 14:51 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 17:10 UTC</sub>

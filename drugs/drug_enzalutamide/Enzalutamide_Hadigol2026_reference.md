@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The second reader disagreed on enzalutamide's dose compound and could not find the clearance values of 5.078 L/h for talazoparib in the record.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="enzalutamide" model-id="Enzalutamide_Hadigol2026_reference" status="needs_review" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="enzalutamide" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -73,13 +73,13 @@ Hadigol M, Williams JH, Shi H, Yang DZ, Hoffman J, Wang DD. Population Pharmacok
 
 ### Reviewer guidance
 
-**The second reader disagreed on enzalutamide's dose compound and could not find the clearance values of 5.078 L/h for talazoparib in the record.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The record includes parameters for talazoparib, a different drug, despite listing enzalutamide as the measured compound. A second reader identified the dose compound and primary analyte as unknown, disagreeing with the recorded enzalutamide. Additionally, the reader reported clearance values of 5.078 L/h and 5.16 L/h that do not match the extracted parameter values. The covariate scenarios for body weight and age were not simulated, leaving the defined effects unexercised. Extracted — enzalutamide: CL/F 0.425 L/h, V/F 25.3 L, Q/F 20.6 L/h, kabs 3.43 1/h, fe 1 Fixed; N-desmethyl enzalutamide: CL 0.286 L/h, V1 44.9 L, Q 9.44 L/h, V2 52.4 L, fm 0.634 Fixed; talazoparib: CL 5.08 L/h, V1/F 14.4 L, Q 15.6 L/h, kabs 0.157 1/h.
+The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (fe, body_weight_effect_on_cle_fe, body_weight_effect_on_vce_fe and fm), so that value has no SI equivalent. Extracted — enzalutamide: CL/F 0.425 L/h, V/F 25.3 L, Q/F 20.6 L/h, kabs 3.43 1/h, fe 1 Fixed; N-desmethyl enzalutamide: CL 0.286 L/h, V1 44.9 L, Q 9.44 L/h, V2 52.4 L, fm 0.634 Fixed; talazoparib: CL 5.08 L/h, V1/F 14.4 L, Q 15.6 L/h, kabs 0.157 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has enzalutamide, the second reading unknown; it also differs on 28 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -283,7 +283,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_shared_parameters |  | skipped |  |  |  | parent–metabolite template: every compound has its own slot |
 | T3_topology_template |  | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.408, 0 of 1 reader(s) agree | 0.408 | cross-check disputed by a second reader: verdict disputed, agreement 0.408, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.408 (20 of 49 compared fields agree, 26 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.408 | cross-check contradicted by a second reader: verdict disputed; agreement 0.408 (20 of 49 compared fields agree, 26 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

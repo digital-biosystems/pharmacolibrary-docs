@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;mitomycin&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/&quot;},{&quot;label&quot;:&quot;Cerretani_2005 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mitomycin_den1983_reference&quot;,&quot;label&quot;:&quot;den_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/Mitomycin_den1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Only clearance was extracted — no volume; aUC has no unit.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Cerretani2005_reference" status="needs_review" stale="false" population="patients with peritoneal carcinomatosis" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Cerretani2005_reference" status="needs_review" stale="false" population="adults with peritoneal carcinomatosis" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Cerretani D, Nencini C, Urso R, Giorgi G, Marrelli D, De Stefano A et al. Pharmacokinetics of mitomycin C after resection of peritoneal carcinomatosis and intraperitoneal chemohyperthermic perfusion. Journal of chemotherapy (Florence, Italy) 17(6):668–673 (2005).
@@ -16,7 +17,7 @@ Cerretani D, Nencini C, Urso R, Giorgi G, Marrelli D, De Stefano A et al. Pharma
 
 ## Population and dosing
 
-**Population:** patients with peritoneal carcinomatosis · condition peritoneal carcinomatosis · n = 28.
+**Population:** adults with peritoneal carcinomatosis · condition peritoneal carcinomatosis · age group adult · n = 28.
 
 ## Model
 
@@ -30,15 +31,15 @@ Cerretani D, Nencini C, Urso R, Giorgi G, Marrelli D, De Stefano A et al. Pharma
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| mean maximum plasma concentration (Cmax) | Cmax | 0.14 | microg/ml |
-| mean area under the curve (AUC) | AUC | 15.8 | mg x min/L |
-| terminal half-life (t1/2) | t1/2z | 83.7 | min |
-| Clearance (CL) | CL | 72 | L/h |
-| mean percentage of dose recovered unchanged in the urine during 24 hours | fe | 7.21 | % |
+| Cmax | Cmax | 0.14 | microg/ml |
+| AUC | AUC | 15.8 | mg x min/L |
+| t1/2 | t1/2z | 83.7 | min |
+| CL | CL | 72 | L/h |
+| mean percentage of dose recovered unchanged in the urine during 24 hours | fe | 7.21 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.267). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (partly confirmed, agreement 0.267). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +49,9 @@ Cerretani D, Nencini C, Urso R, Giorgi G, Marrelli D, De Stefano A et al. Pharma
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; aUC has no unit.**
+**Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mitomycin: Cmax 0.14 microg/ml, AUC 15.8 mg x min/L, t1/2z 83.7 min, CL 72 L/h, fe 7.21 %.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mitomycin: Cmax 0.14 microg/ml, AUC 15.8 mg x min/L, t1/2z 83.7 min, CL 72 L/h, fe 7.21.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc: this record has none, the second reading 15.8; it also differs on 10 more fields. That field does not shape the model.
 
@@ -60,11 +61,11 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| mean maximum plasma concentration (Cmax) | `Q32` · Cmax | 0.14 | microg/ml |  |  | µg/ml | llm (0.6) | Cerretani_2005:abstract |
-| mean area under the curve (AUC) | `Q88` · AUC | 15.8 | mg x min/L |  |  | (min·mg)/l | llm_confirmed (0.6) | Cerretani_2005:abstract |
-| terminal half-life (t1/2) | `Q57` · t1/2z | 83.7 | min | 5022 | s | min | llm (0.6) | Cerretani_2005:abstract |
-| Clearance (CL) | `Q22` · CL | 72 | L/h | 2e-05 | m3/s | l/h | exact (1) | Cerretani_2005:abstract |
-| mean percentage of dose recovered unchanged in the urine during 24 hours | `Q44` · fe | 7.21 | % |  |  | % | llm (0.6) | Cerretani_2005:abstract |
+| Cmax | `Q32` · Cmax | 0.14 | microg/ml | 0.00014 | kg/m3 | µg/ml | exact (1) | Cerretani_2005:abstract |
+| AUC | `Q88` · AUC | 15.8 | mg x min/L | 0.948 | kg*s/m3 | (min·mg)/l | exact (1) | Cerretani_2005:abstract |
+| t1/2 | `Q57` · t1/2z | 83.7 | min | 5022 | s | min | half_life_rule (0.95) | Cerretani_2005:abstract |
+| CL | `Q22` · CL | 72 | L/h | 2e-05 | m3/s | l/h | exact (1) | Cerretani_2005:abstract |
+| mean percentage of dose recovered unchanged in the urine during 24 hours | `Q44` · fe | 7.21 |  | 0.0721 |  |  | llm (0.6) | Cerretani_2005:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -74,25 +75,22 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'peak time (Tmax)' (captured trailing unit 'Tmax' for child rows)
-- unit_dimension_unknown: 'mg x min/L' (AUC)
+- dropped value-less row: 'Tmax'
+- 'mean percentage of dose recovered unchanged in the urine during 24 hours' → Q44: printed without a unit and above 1 — read as a percentage
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mitomycin C
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Cerretani_2005_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
 | `qwen3.8-27b` | partly confirmed | 0.267 (4/15 fields) | 11 |
 
 <details><summary>11 field discrepancies</summary>
@@ -128,9 +126,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Cerretani_2005:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Cerretani_2005:abstract'] |
-| C5_dimension_Q44 | pass | dimensionless |  | ['Cerretani_2005:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Cerretani_2005:abstract'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | mg x min/L | ['Cerretani_2005:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Cerretani_2005:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 72 | ['Cerretani_2005:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 72 L/h | ['Cerretani_2005:abstract'] |
@@ -167,4 +164,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitomycin%5D%20Mitomycin_Cerretani2005_reference&body=Drug%3A%20mitomycin%0ARecord%3A%20Mitomycin_Cerretani2005_reference%0APaper%3A%20Cerretani_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitomycin/Mitomycin_Cerretani2005_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:57 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:41 UTC</sub>

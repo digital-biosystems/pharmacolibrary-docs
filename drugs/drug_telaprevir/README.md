@@ -22,7 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gammeltoft_2021_residual_infectivity](drugs/drug_telaprevir/pd_Gammeltoft_2021_residual_infectivity.md) | SARS-CoV-2 spike protein-positive cells (percent residual infectivity) ← telaprevir · direct sigmoid Emax (Hill) effect | — | Gammeltoft KA et al., Hepatitis C Virus Protease Inhibitors S…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02680-20](https://doi.org/10.1128/AAC.02680-20) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Gammeltoft_2021_residual_infectivity](drugs/drug_telaprevir/pd_Gammeltoft_2021_residual_infectivity.md) | SARS-CoV-2 spike protein positive cells ← telaprevir · direct sigmoid Emax (Hill) effect | — | Gammeltoft KA et al., Hepatitis C Virus Protease Inhibitors S…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02680-20](https://doi.org/10.1128/AAC.02680-20) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Gammeltoft_2021_viability](drugs/drug_telaprevir/pd_Gammeltoft_2021_viability.md) | Cell viability ← telaprevir · direct sigmoid Emax (Hill) effect | — | Gammeltoft KA et al., Hepatitis C Virus Protease Inhibitors S…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02680-20](https://doi.org/10.1128/AAC.02680-20) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Laouénan_2014_VL](drugs/drug_telaprevir/pd_Laou_nan_2014_VL.md) | HCV RNA viral load (viral kinetic response under triple therapy) ← telaprevir · direct Emax (saturable) effect | — | Laouénan C et al., Using pharmacokinetic and viral kinetic…, Antimicrobial agents and ch… (2014) | [10.1128/AAC.02611-14](https://doi.org/10.1128/AAC.02611-14) |
 
 <details class="legend">
@@ -37,7 +38,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:25 | 0:41 | 0/0/0 | 2/0/0 | 0/0/0 | 80,264/2,182 | ollama / glm-5.3-flash | 6 | 1/5 | 6/0 | 0 |
+| 2026-11-24 05:31 | 0:03 | 0/0/0 | 3/0/0 | 0/0/0 | 3,963/171 | einfracz / qwen3.8-27b | 6 | 1/5 | 6/0 | 0 |
 
 ## Coverage
 
@@ -50,19 +51,30 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Balaraju_2015 | irrelevant | 0 | 0 | Medicinal chemistry/SAR study of new α-pyranone carboxamide analogs; telaprevir only mentioned as standard of care, no PK parameters. |
-| popPK | Dufner-Beattie_2014 | irrelevant | 0 | 0 | In-vitro antiviral drug discovery study; telaprevir is only a comparator, with no PK parameters reported. |
-| popPK | Gammeltoft_2021 | irrelevant | 0 | 0 | In-vitro antiviral efficacy study of HCV protease inhibitors against SARS-CoV-2; telaprevir is only one tested compound with EC50/CC50 values, no PK disposition parameters. |
+| popPK | Balaraju_2015 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and anti-HCV activity of novel compounds, and telaprevir is only mentioned as a current standard of care comparator. |
+| PGx | Balaraju_2015 | not_relevant | 0 | 0 | The paper reports the synthesis of new anti-HCV compounds and does not discuss telaprevir pharmacogenomics. |
+| popPK | Dufner-Beattie_2014 | irrelevant | 0 | 0 | The paper describes the identification and in-vitro antiviral activity of a novel HCV inhibitor (AP80978), with telaprevir serving only as a comparator for potency, and contains no pharmacokinetic parameter data for telaprevir. |
+| PGx | Dufner-Beattie_2014 | not_relevant | 0 | 0 | The paper reports in vitro antiviral activity and target identification for a novel compound (AP80978) and mentions telaprevir only as a comparator for potency, without discussing pharmacogenomics or genetic variants affecting PK/PD. |
+| popPK | Gammeltoft_2021 | irrelevant | 0 | 0 | The paper reports in vitro antiviral efficacy (EC50) against SARS-CoV-2, not pharmacokinetic disposition parameters for telaprevir. |
+| PGx | Gammeltoft_2021 | not_relevant | 0 | 0 | The paper evaluates the in vitro antiviral efficacy of HCV protease inhibitors against SARS-CoV-2 and does not investigate the impact of any gene variant or genotype on the pharmacokinetic or pharmacodynamic parameters of telaprevir. |
 | popPK | Laouénan_2014 | irrelevant | 3 | 4 | This is a PK-viral kinetic modeling study in cirrhotic patients, but telaprevir PK is modeled only as a constant trough concentration (Css = 3.77 µmol/l reported); no disposition parameters (CL, V, Q, ka, half-life with volume) for telaprevir are estimated. |
-| popPK | Lee_2011 | irrelevant | 0 | 0 | Telaprevir is only used as a co-administered comparator in an in-vitro antiviral synergy assay; no PK parameters are reported. |
-| popPK | Liu_2022 | irrelevant | 1 | 2 | Telaprevir appears only as a positive-control comparator (EC50); the PK data (rat bioavailability, clearance, t1/2) belong to the novel compound 80, not telaprevir. |
-| popPK | Loustaud-Ratti_2015 | irrelevant | 1 | 1 | This is a study of eGFR (creatinine) changes during telaprevir therapy, not a PK study reporting CL/V or a population-PK model of telaprevir itself. |
-| popPK | Ma_2020 | irrelevant | 0 | 0 | Telaprevir is only mentioned as a co-administered comparator antiviral; no PK parameters for telaprevir are reported. |
+| popPK | Lee_2011 | irrelevant | 0 | 0 | Telaprevir is only used as a comparator in an in-vitro antiviral synergy assay, with no pharmacokinetic parameters reported. |
+| PGx | Lee_2011 | not_relevant | 0 | 0 | The paper investigates the antiviral activity of a plant extract (Acacia confusa) and its synergy with telaprevir, but does not report any pharmacogenomic effects (gene variants) on the PK or PD parameters of telaprevir. |
+| popPK | Liu_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of a novel compound (80) with telaprevir used only as a positive control for antiviral activity. |
+| PGx | Liu_2022 | not_relevant | 0 | 0 | The paper is a medicinal chemistry study on a new compound, not a pharmacogenomic study on telaprevir. |
+| popPK | Loustaud-Ratti_2015 | irrelevant | 0 | 0 | The study analyzes the clinical impact of telaprevir on estimated glomerular filtration rate (eGFR) rather than measuring pharmacokinetic parameters (CL, V, etc.). |
+| PGx | Loustaud-Ratti_2015 | not_relevant | 0 | 0 | The paper describes the pharmacodynamic effect of telaprevir on eGFR, but does not report any pharmacogenomic effect (gene variant impact) on PK or PD parameters. |
+| popPK | Ma_2020 | irrelevant | 0 | 0 | The study investigates the mechanism of action of an antiviral candidate R523062 against EV-D68, with telaprevir used only as a comparator for antiviral synergy, not for PK characterization. |
+| PGx | Ma_2020 | not_relevant | 0 | 0 | The paper focuses on the antiviral mechanism of a new drug candidate for EV-D68; the mention of telaprevir is only to demonstrate additive activity, not to report pharmacogenomic effects on its PK/PD. |
 | popPK | Pathak_2017 | irrelevant | 0 | 0 | This is an in-vitro pharmacophore/docking drug-repurposing study; telaprevir is only a screened anti-DENV candidate with EC50 values, no PK disposition parameters. |
-| popPK | Peng_2013 | irrelevant | 0 | 0 | Telaprevir is only mentioned as a co-administered comparator in an antiviral drug-discovery study; no PK parameters for telaprevir are reported. |
-| popPK | Silva_2013 | irrelevant | 1 | 0 | Telaprevir appears only as an in-vitro potency comparator (Ki/EC50/IC50), with no PK disposition parameters reported. |
-| popPK | Woot_2021 | irrelevant | 1 | 1 | This is a viral kinetics (HCV) model in telaprevir-treated patients; telaprevir PK was not modeled ("in the absence of PK data"), and no telaprevir disposition parameters (CL, V, ka) are reported. |
-| popPK | Wu_2015 | irrelevant | 0 | 0 | The population PK model is for ribavirin (and its phosphorylated metabolites); telaprevir appears only as a covariate, with no telaprevir disposition parameters reported. |
+| popPK | Peng_2013 | irrelevant | 0 | 0 | The study is in-vitro and mechanistic regarding anilinobenzothiazole derivatives; telaprevir is only mentioned as a co-administered agent for synergy testing, with no PK data provided. |
+| PGx | Peng_2013 | not_relevant | 0 | 0 | The paper reports on the antiviral efficacy of a novel compound and its combination with telaprevir, but does not report any pharmacogenomic effects on telaprevir's pharmacokinetics or pharmacodynamics. |
+| popPK | Silva_2013 | irrelevant | 0 | 0 | The study reports antiviral potency (Ki, EC50, IC50) and viral load reductions, not pharmacokinetic disposition parameters for telaprevir. |
+| PGx | Silva_2013 | not_relevant | 0 | 0 | The paper reports viral genotypes and pharmacodynamic effects (HCV RNA reduction), not human pharmacogenomic effects on PK/PD parameters. |
+| popPK | Woot_2021 | irrelevant | 0 | 0 | The study is a viral kinetic model of HCV dynamics in the liver and plasma; it explicitly states that pharmacokinetics of telaprevir were not modeled due to lack of data. |
+| PGx | Woot_2021 | not_relevant | 0 | 0 | The paper presents a viral kinetic model of HCV dynamics and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of telaprevir. |
+| popPK | Wu_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ribavirin, and telaprevir is only mentioned as a covariate (concomitant use), not as the subject drug for PK parameter reporting. |
+| PGx | Wu_2015 | not_relevant | 0 | 0 | The paper reports pharmacokinetic modeling of ribavirin, not telaprevir, although telaprevir is mentioned as a covariate in the ribavirin model. |
 
 
 </details>

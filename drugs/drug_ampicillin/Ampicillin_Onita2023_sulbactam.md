@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ampicillin’s bioavailability, clearance, distribution volume, absorption lag, and central-to-peripheral rate constant lacked values; its recorded V2 was 40.94 L and absorption rate was 6.45 h-1.
+> No value for ampicillin's bioavailability, clearance, volume of distribution, absorption lag time and central→peripheral rate constant; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Onita2023_sulbactam" status="model_quarantined" stale="false" population="typical patients with various creatinine clearances" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Onita T, Ikawa K, Ishihara N, Tamaki H, Yano T, Naora K et al. Pulmonary Pharmac
 
 ### Reviewer guidance
 
-**Ampicillin’s bioavailability, clearance, distribution volume, absorption lag, and central-to-peripheral rate constant lacked values; its recorded V2 was 40.94 L and absorption rate was 6.45 h-1.**
+**No value for ampicillin's bioavailability, clearance, volume of distribution, absorption lag time and central→peripheral rate constant; t6_deviations (+1 more).**
 
-No value for ampicillin's bioavailability, clearance, volume of distribution, absorption lag time and central→peripheral rate constant. The model was built, but ampicillin's bioavailability, clearance, volume of distribution, absorption lag time and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Other recorded values—central volume 8.96 L, intercompartmental clearance 7.29 L/h, peripheral volume 4.93 L and tissue-to-plasma partition coefficient 0.368—are assigned to sulbactam, while the measured compound is ampicillin. A second reader disputed the recorded ampicillin absorption rate of 6.45 h-1 and peripheral volume of 40.94 L, and the overall verdict was disputed with agreement 0.692. Extracted — sulbactam: V1 8.96 L, Q 7.29 L/h, V 4.93 L, Kp 0.368; ampicillin: V2 40.9 L, kabs 6.45 h-1.
+The model was built, but ampicillin's bioavailability, clearance, volume of distribution, absorption lag time and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — sulbactam: V1 8.96 L, Q 7.29 L/h, V 4.93 L, Kp 0.368; ampicillin: V2 40.9 L, kabs 6.45 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 6.45, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -160,7 +160,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.692, 0 of 1 reader(s) agree | 0.692 | cross-check disputed by a second reader: verdict disputed, agreement 0.692, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.692 (9 of 13 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.692 | cross-check contradicted by a second reader: verdict disputed; agreement 0.692 (9 of 13 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

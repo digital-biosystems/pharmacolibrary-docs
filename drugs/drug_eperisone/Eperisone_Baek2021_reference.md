@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Eperisone’s k12 and k21 lack paper-based estimates; the reported CL/F of 39.24 L/h comes from abstract-only statistics, so the model was held back.
+> K12, k21 use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="eperisone" model-id="Eperisone_Baek2021_reference" status="needs_review" stale="false" population="healthy Korean volunteers" measured-compound="eperisone" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Baek IH, Back HM, Chae JW, Ha ES, Park H, Choi DH et al. Pharmacokinetics of epe
 
 ### Reviewer guidance
 
-**Eperisone’s k12 and k21 lack paper-based estimates; the reported CL/F of 39.24 L/h comes from abstract-only statistics, so the model was held back.**
+**K12, k21 use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-K12 and k21 use library defaults, not estimates from this paper; these values affect the simulated profile but are unsupported by the paper. Because only the abstract was read, reported summary statistics stood in for a fitted model; the record also assumes F=1 and Fm=1, with no molar correction. A second reader disputed the record, with agreement of 0.154 and no reader agreeing. Extracted — eperisone: t1/2z 3.81 h, CL/F 39.2 L/h, V/F 39.2 L, kabs 1.5 h-1, V1/F 86.2 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — eperisone: t1/2z 3.81 h, CL/F 39.2 L/h, V/F 39.2 L, kabs 1.5 h-1, V1/F 86.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has eperisone, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -162,7 +162,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.154, 0 of 1 reader(s) agree | 0.154 | cross-check disputed by a second reader: verdict disputed, agreement 0.154, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.154 (2 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.154 | cross-check contradicted by a second reader: verdict disputed; agreement 0.154 (2 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

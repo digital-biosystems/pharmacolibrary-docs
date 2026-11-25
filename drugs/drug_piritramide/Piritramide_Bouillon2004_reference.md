@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because a second reader could not verify most extracted parameters from the abstract-only source.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="piritramide" model-id="Piritramide_Bouillon2004_reference" status="needs_review" stale="false" population="intensive care patients" measured-compound="piritramide" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Bouillon T, Groeger P, Kietzmann D. The pharmacokinetics of piritramide after pr
 
 ### Reviewer guidance
 
-**The record was held back because a second reader could not verify most extracted parameters from the abstract-only source.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so the reported summary statistics stand in for a fitted model. A second reader disagreed on the identification of the dose compound and primary analyte, marking them as unknown. Additionally, the second reader assigned null values to the clearances, intercompartmental clearance, volumes of distribution, steady-state volume, and terminal half-life, disputing their extraction. This resulted in a cross-check agreement score of only 0.105, with zero of one reader agreeing on the record's validity. Extracted — piritramide: V1 47.9 L, V2 402 L, V3 332 L, CL 66.5 L/h, Q 215 L/h, Vss 782 L, t1/2z 17.4 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — piritramide: V1 47.9 L, V2 402 L, V3 332 L, CL 66.5 L/h, Q 215 L/h, Vss 782 L, t1/2z 17.4 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has piritramide, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -163,7 +163,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.105, 0 of 1 reader(s) agree | 0.105 | cross-check disputed by a second reader: verdict disputed, agreement 0.105, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.105 (2 of 19 compared fields agree, 15 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.105 | cross-check contradicted by a second reader: verdict disputed; agreement 0.105 (2 of 19 compared fields agree, 15 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

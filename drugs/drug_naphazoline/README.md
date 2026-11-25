@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:15 | 0:50 | 0/0/0 | 0/0/0 | 0/0/0 | 38,545/1,513 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 01:24 | 0:03 | 0/0/0 | 0/0/0 | 0/0/0 | 3,824/168 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -48,29 +48,46 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Sjöberg_1987.pdf` | Sjöberg T et al., Postjunctional alpha-adrenoceptors in h…, Pharmacology & toxicology (1987) | pd | 4 | [10.1111/j.1600-0773.1987.tb01717.x](https://doi.org/10.1111/j.1600-0773.1987.tb01717.x) | [2882498](https://www.ncbi.nlm.nih.gov/pubmed/2882498) | metadata signals extractable PD data (Emax) |
 | `Wu_2017.pdf` | Wu SF et al., Pharmacological characterisation and fu…, Insect biochemistry and mol… (2017) | pd | 4 | [10.1016/j.ibmb.2017.06.008](https://doi.org/10.1016/j.ibmb.2017.06.008) | [28629966](https://www.ncbi.nlm.nih.gov/pubmed/28629966) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 13:14 UTC</sub>
+<sub>queue written 2026-11-24 01:24 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Agrawal_1984 | irrelevant | 0 | 0 | In vitro pharmacology study using naphazoline only as an agonist probe; no PK parameters reported. |
-| popPK | Díaz-Toledo_1988 | irrelevant | 0 | 0 | This is an in-vitro receptor pharmacology study (rat vas deferens) reporting dissociation constants and efficacy, not pharmacokinetic disposition parameters for naphazoline. |
-| popPK | Ishikawa_1996 | irrelevant | 0 | 0 | In-vitro pharmacodynamics of imidazolines on bovine vascular tissue; no PK disposition parameters for naphazoline. |
-| popPK | Lei_1998 | irrelevant | 0 | 0 | In-vitro receptor-binding/pharmacology study; naphazoline only appears as a chemical derivative, with no PK parameters. |
-| popPK | Minker_1978 | irrelevant | 0 | 0 | In-vitro pharmacology study of adrenergic agonists on guinea pig ileum; naphazoline is a tool antagonist, no PK parameters. |
-| popPK | Piascik_1991 | irrelevant | 0 | 0 | In vitro receptor-binding/vascular pharmacology study; naphazoline is a probe ligand, no PK parameters reported. |
-| popPK | Sakurai_1983 | irrelevant | 0 | 0 | In-vitro mechanistic study of catecholamine secretion; no PK parameters for naphazoline. |
-| popPK | Salazar-Bookaman_2006 | irrelevant | 0 | 0 | In-vitro receptor antagonism study in guinea-pig ileum; no pharmacokinetic parameters for naphazoline. |
-| popPK | Sharif_1990 | irrelevant | 0 | 0 | In-vitro pharmacology study of adrenoceptors; naphazoline is only a test agonist, no PK parameters. |
-| popPK | Sjöberg_1987 | irrelevant | 0 | 0 | In-vitro pharmacological receptor characterization; naphazoline is only an agonist probe, no PK parameters reported. |
-| popPK | Starke_1975 | irrelevant | 0 | 0 | In-vitro pharmacodynamic potency study (EC20, pA2) of naphazoline as an agonist on rabbit artery strips; no PK disposition parameters. |
-| popPK | Summers_1980 | irrelevant | 0 | 0 | In-vitro receptor binding study in rat cortex; naphazoline is only a displacing agent, no PK parameters reported. |
-| popPK | Takayanagi_1986 | irrelevant | 0 | 0 | In-vitro pharmacology study of receptor antagonism; naphazoline is an agonist probe, no PK parameters. |
-| popPK | Venkataraman_1991 | irrelevant | 0 | 0 | This is a receptor pharmacology (SAR) study reporting binding/affinity constants, not PK disposition parameters for naphazoline. |
-| popPK | Wu_2012 | irrelevant | 0 | 0 | In vitro receptor pharmacology study in insect cells; naphazoline is only an agonist probe, no PK parameters. |
-| popPK | Wu_2013 | irrelevant | 0 | 0 | Naphazoline is only tested as a non-activating ligand in an in-vitro receptor assay; no PK parameters reported. |
-| popPK | Wu_2017 | irrelevant | 0 | 0 | Naphazoline is only used as a pharmacological agonist probe on an insect octopamine receptor; no PK parameters for naphazoline are reported. |
+| popPK | Agrawal_1984 | irrelevant | 0 | 0 | The study is a pharmacological characterization of alpha adrenoceptors using naphazoline as an agonist, not a pharmacokinetic study. |
+| PGx | Agrawal_1984 | not_relevant | 0 | 0 | The paper describes pharmacological receptor characterization in animal tissues and contains no human genetic or pharmacogenomic data. |
+| popPK | Díaz-Toledo_1988 | irrelevant | 0 | 0 | This is an in-vitro pharmacological study of receptor occupancy and contractile response, not a pharmacokinetic study. |
+| PGx | Díaz-Toledo_1988 | not_relevant | 0 | 0 | The paper reports pharmacodynamic characterization of naphazoline in rat vas deferens but does not involve genetic variants or pharmacogenomics. |
+| popPK | Ishikawa_1996 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of receptor activity in bovine ciliary artery and does not report any pharmacokinetic disposition parameters (CL, V, t1/2, etc.) for naphazoline. |
+| PGx | Ishikawa_1996 | not_relevant | 0 | 0 | The study is an in vitro pharmacology experiment on bovine tissue and does not investigate human genetic variants or pharmacogenomics. |
+| popPK | Lei_1998 | irrelevant | 0 | 0 | The paper investigates the pharmacological mechanism of tolazoline derivatives and naphazoline-NCS on calcium channels and receptors, not the pharmacokinetic disposition of naphazoline. |
+| PGx | Lei_1998 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of isothiocyanate derivatives (including a naphazoline analog) on calcium channels, not the pharmacogenomics of naphazoline. |
+| popPK | Minker_1978 | irrelevant | 0 | 0 | The paper is an in vitro pharmacology study on guinea pig smooth muscle, not a pharmacokinetic study, and contains no PK parameters for naphazoline. |
+| PGx | Minker_1978 | not_relevant | 0 | 0 | The paper investigates pharmacological interactions in guinea pigs, not human pharmacogenomics or genetic effects on naphazoline pharmacokinetics/dynamics. |
+| popPK | Piascik_1991 | irrelevant | 0 | 0 | The study investigates receptor binding and pharmacodynamics in vitro, not the pharmacokinetic disposition parameters (CL, V, half-life) of naphazoline. |
+| PGx | Piascik_1991 | not_relevant | 0 | 0 | The paper describes the pharmacology of naphazoline on alpha-1 adrenoceptor subtypes in rat aorta, with no mention of genetic variation or pharmacogenomic effects. |
+| popPK | Sakurai_1983 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of adrenoceptor agonists on catecholamine secretion and does not report any pharmacokinetic parameters for naphazoline. |
+| PGx | Sakurai_1983 | not_relevant | 0 | 0 | The paper reports on the mechanism of catecholamine secretion in cells and does not describe pharmacokinetic or pharmacodynamic parameters altered by gene variants. |
+| popPK | Salazar-Bookaman_2006 | irrelevant | 0 | 0 | The study investigates receptor antagonism in guinea-pig ileum and does not report pharmacokinetic parameters for naphazoline. |
+| PGx | Salazar-Bookaman_2006 | not_relevant | 0 | 0 | The study describes in vitro pharmacodynamics of imidazolines on guinea-pig ileum, not a pharmacogenomic effect on human PK/PD parameters. |
+| popPK | Sharif_1990 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of alpha-adrenoceptors where naphazoline acts as an antagonist/probe agent, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Sharif_1990 | not_relevant | 0 | 0 | The paper characterizes adrenoceptor pharmacology in rat seminal vesicles but does not report any pharmacogenomic effects on naphazoline PK/PD parameters. |
+| popPK | Sjöberg_1987 | irrelevant | 0 | 0 | The study characterizes alpha-adrenoceptor pharmacology in human vasculature using naphazoline as a probe agonist, not a population-pharmacokinetic study. |
+| PGx | Sjöberg_1987 | not_relevant | 0 | 0 | The paper reports a pharmacological characterization of alpha-adrenoceptors using naphazoline as an agonist, but it does not investigate the impact of genetic variants on the pharmacokinetics or pharmacodynamics of naphazoline. |
+| popPK | Starke_1975 | irrelevant | 0 | 0 | This is an in-vitro pharmacological study measuring receptor potency (EC20, pA2) in rabbit pulmonary artery strips, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Starke_1975 | not_relevant | 0 | 0 | The paper investigates receptor pharmacology in an animal model and contains no data on human genetic variants or pharmacogenomics. |
+| popPK | Summers_1980 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding assay for clonidine and naphazoline, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Summers_1980 | not_relevant | 0 | 0 | The paper is a study on clonidine binding affinity in rat membranes and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of naphazoline. |
+| popPK | Takayanagi_1986 | irrelevant | 0 | 0 | This is an in-vitro mechanistic/pharmacodynamic study of alpha-adrenoceptor antagonists, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Takayanagi_1986 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of alpha-1 antagonists on vascular smooth muscle in an in vitro model and contains no pharmacogenomic analysis or genetic variant data. |
+| popPK | Venkataraman_1991 | irrelevant | 0 | 0 | The paper is a pharmacodynamic/structure-activity study measuring receptor affinity (KA/IC50) and functional responses, not a pharmacokinetic study reporting disposition parameters like clearance or volume of distribution. |
+| PGx | Venkataraman_1991 | not_relevant | 0 | 0 | The paper describes structure-activity relationships and adrenoceptor potencies in vitro, but does not investigate genetic variants or pharmacogenomic effects on naphazoline's PK/PD. |
+| popPK | Wu_2012 | irrelevant | 0 | 0 | The paper is a receptor pharmacology study in an insect using naphazoline as a probe agonist, not a pharmacokinetic study. |
+| PGx | Wu_2012 | not_relevant | 0 | 0 | The paper characterizes an insect octopamine receptor and its pharmacological profile, but it does not report any human pharmacogenomic effects of gene variants on naphazoline PK or PD parameters. |
+| popPK | Wu_2013 | irrelevant | 0 | 0 | The study is an in vitro receptor pharmacology paper on an insect receptor, using naphazoline only as a negative comparator, with no pharmacokinetic parameters reported. |
+| PGx | Wu_2013 | not_relevant | 0 | 0 | The paper characterizes a tyramine receptor in an insect and is unrelated to human pharmacogenomics or naphazoline PK/PD parameters. |
+| popPK | Wu_2017 | irrelevant | 0 | 0 | This is an in vitro/in vivo receptor pharmacology study in insects where naphazoline is used only as a probe ligand, with no PK parameters reported. |
+| PGx | Wu_2017 | not_relevant | 0 | 0 | The paper studies an invertebrate receptor and does not involve human pharmacogenomics or genetic variation affecting the PK/PD of naphazoline. |
 
 
 </details>

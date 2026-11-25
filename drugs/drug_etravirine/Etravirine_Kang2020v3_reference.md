@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;etravirine&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/&quot;},{&quot;label&quot;:&quot;Kang_2020_3 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etravirine_Kang2020v3_reference&quot;,&quot;label&quot;:&quot;Kang_2020_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Kang2020v3_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Etravirine_Green2017_reference&quot;,&quot;label&quot;:&quot;Green_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Green2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Lubomirov2013_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Lubomirov2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Courlet2021v2_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Courlet2021v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Duwal2019_reference&quot;,&quot;label&quot;:&quot;Duwal_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Duwal2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Han2024_reference&quot;,&quot;label&quot;:&quot;Han_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Han2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Jin2020_reference&quot;,&quot;label&quot;:&quot;Jin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Jin2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etravirine_Lubomirov2013_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Lubomirov2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Courlet2021v2_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Courlet2021v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Duwal2019_reference&quot;,&quot;label&quot;:&quot;Duwal_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Duwal2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Han2024_reference&quot;,&quot;label&quot;:&quot;Han_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Han2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Jin2020_reference&quot;,&quot;label&quot;:&quot;Jin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Jin2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Kang2020v3_reference&quot;,&quot;label&quot;:&quot;Kang_2020_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Kang2020v3_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Etravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # etravirine — `Etravirine_Kang2020v3_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-<div class="pk-model-meta" hidden drug="etravirine" model-id="Etravirine_Kang2020v3_reference" status="simulated" stale="false" population="" measured-compound="etravirine" parameterization="mechanistic" topology="1C"></div>
+> paper_subject_is_other_drug; t0_analyte_identity.
+
+<div class="pk-model-meta" hidden drug="etravirine" model-id="Etravirine_Kang2020v3_reference" status="rejected" stale="false" population="" measured-compound="etravirine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kang D, Feng D, Ginex T, Zou J, Wei F, Zhao T et al. Exploring the hydrophobic channel of NNIBP leads to the discovery of novel piperidine-substituted thiophene[3,2-d]pyrimidine derivatives as potent HIV-1 NNRTIs. Acta pharmaceutica Sinica. B 10(5):878–894 (2020).
@@ -29,6 +31,8 @@ Kang D, Feng D, Ginex T, Zou J, Wei F, Zhao T et al. Exploring the hydrophobic c
 <figure class="pk-models-diagram"><img src="drugs/drug_etravirine/Etravirine_Kang2020v3_reference/Etravirine_Kang2020v3_reference.svg" alt="Etravirine_Kang2020v3_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL | CL | 25.0 | mL/min/kg |
@@ -36,7 +40,7 @@ Kang D, Feng D, Ginex T, Zou J, Wei F, Zhao T et al. Exploring the hydrophobic c
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +50,13 @@ Kang D, Feng D, Ginex T, Zou J, Wei F, Zhao T et al. Exploring the hydrophobic c
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
+
+Extracted — etravirine: CL 25 mL/min/kg, V 259 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q321: this record has none, the second reading 186; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -113,13 +119,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T0_analyte_identity | fail | etravirine (or metabolite) | paper about another drug |  | paper subject is not etravirine: the paper is about another drug; this one is a co-medication or covariate: The pharmacokinetic data (CL, t1/2, F) provided in the text refers to the novel experimental compound 26 in rats, not the subject drug etravirine, which is used |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=etravirine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.7 (7 of 10 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.7 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -131,59 +137,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_etravirine/Etravirine_Kang2020v3_reference/Etravirine_Kang2020v3_reference_modelica.zip" download>Etravirine_Kang2020v3_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_etravirine/Etravirine_Kang2020v3_reference/Etravirine_Kang2020v3_reference_fmi.zip" download>Etravirine_Kang2020v3_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_etravirine/Etravirine_Kang2020v3_reference/Etravirine_Kang2020v3_reference_matlab.zip" download>Etravirine_Kang2020v3_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_etravirine/Etravirine_Kang2020v3_reference/Etravirine_Kang2020v3_reference_matlab_simbio.zip" download>Etravirine_Kang2020v3_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_etravirine/Etravirine_Kang2020v3_reference/Etravirine_Kang2020v3_reference_sbml.zip" download>Etravirine_Kang2020v3_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_etravirine/Etravirine_Kang2020v3_reference/Etravirine_Kang2020v3_reference_cellml.zip" download>Etravirine_Kang2020v3_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.4353 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 2.917e-05 | m3/s |
-| input | model | `VdPerKg` | 0.003701 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Kang D, Feng D, Ginex T, Zou J, Wei F, Zhao T et al. Exploring the hydrophobic channel of NNIBP leads to the discovery of novel piperidine-substituted thiophene[3,2-d]pyrimidine derivatives as potent HIV-1 NNRTIs. Acta pharmaceutica Sinica. B 10(5):878–894 (2020). [doi:10.1016/j.apsb.2019.08.013](https://doi.org/10.1016/j.apsb.2019.08.013)
-
-**This record:** Pharmacolibrary, model `Etravirine_Kang2020v3_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_etravirine/Etravirine_Kang2020v3_reference>
-
-```bibtex
-@misc{pharmacolibrary_EtravirineKang2020v3reference,
-  title  = {{Pharmacolibrary model Etravirine_Kang2020v3_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_etravirine/Etravirine_Kang2020v3_reference},
-  note   = {Parameters from doi:10.1016/j.apsb.2019.08.013},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -197,4 +153,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betravirine%5D%20Etravirine_Kang2020v3_reference&body=Drug%3A%20etravirine%0ARecord%3A%20Etravirine_Kang2020v3_reference%0APaper%3A%20Kang_2020_3%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etravirine/Etravirine_Kang2020v3_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:45 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 12:06 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Lanreotide’s absorption-rate constant (ka) had no reported value and was defaulted, so this abstract-only record was held back.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="lanreotide" model-id="Lanreotide_BuilBruna2016v2_reference" status="needs_review" stale="false" population="patients with gastroenteropancreatic neuroendocrine tumors" measured-compound="lanreotide" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Buil-Bruna N, Garrido MJ, Dehez M, Manon A, Nguyen TX, Gomez-Panzani EL et al. P
 
 ### Reviewer guidance
 
-**Lanreotide’s absorption-rate constant (ka) had no reported value and was defaulted, so this abstract-only record was held back.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-Ka used a library default, not an estimate from this paper; this value affects the simulated profile but is unsupported by the paper. The lag time (Tlag) was also defaulted, and absorption was represented as first-order depot input with apparent bioavailability assumptions of F=1 and Fm=1. Only the abstract was read, so reported summary statistics stood in for a fitted model. Extracted — lanreotide: V/F 18.3 L, CL 513 L/day.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lanreotide: V/F 18.3 L, CL 513 L/day.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (6 of 6 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

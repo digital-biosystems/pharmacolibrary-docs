@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;fostemsavir&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fostemsavir_Parasrampuria2025_reference&quot;,&quot;label&quot;:&quot;Parasrampuria_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fostemsavir/Fostemsavir_Parasrampuria2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # fostemsavir
 
@@ -23,20 +24,26 @@ Fostemsavir is an antiretroviral entry inhibitor used to treat adults with HIV w
 | fostemsavir | parent | 583.498 | C25H26N7O8P | DrugBank | [11319217](https://pubchem.ncbi.nlm.nih.gov/compound/11319217) | Parasrampuria_2025 |
 | temsavir | metabolite | 473.493 | C24H23N7O4 | PubChem | [11317439](https://pubchem.ncbi.nlm.nih.gov/compound/11317439) | Parasrampuria_2025 |
 
+## Start here
+
+> **Parasrampuria_2025_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> treatment-experienced HIV patients. [Run it in the simulator](drugs/drug_fostemsavir/Fostemsavir_Parasrampuria2025_reference.md?tab=Simulation) · [record](drugs/drug_fostemsavir/Fostemsavir_Parasrampuria2025_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Parasrampuria_2025_reference](drugs/drug_fostemsavir/Fostemsavir_Parasrampuria2025_reference.md) | — | 1-compartment (no model) | 5 | Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025) | [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Parasrampuria_2025_reference](drugs/drug_fostemsavir/Fostemsavir_Parasrampuria2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025) | [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Lagishetty_2020_ddQTcF](drugs/drug_fostemsavir/pd_Lagishetty_2020_ddQTcF.md) | difference vs. placebo for change from baseline in Fridericia-corrected QT interval ← temsavir (TMR) · direct linear effect | — | Lagishetty C et al., Effects of Temsavir, Active Moiety of A…, Clinical and translational… (2020) | [10.1111/cts.12763](https://doi.org/10.1111/cts.12763) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Parasrampuria_2025_0_5_log10_decrease_in_HIV_1_RNA](drugs/drug_fostemsavir/pd_Parasrampuria_2025_0_5_log10_decrease_in_HIV_1_RNA.md) | Proportion of subjects with &gt;0.5 log10 decrease in plasma HIV‐1 RNA on Day 8 ← temsavir · direct Emax (saturable) effect | — | Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025) | [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Parasrampuria_2025_1_log10_decrease_in_HIV_1_RNA](drugs/drug_fostemsavir/pd_Parasrampuria_2025_1_log10_decrease_in_HIV_1_RNA.md) | Proportion of subjects with &gt;1 log10 decrease in plasma HIV‐1 RNA on Day 8 ← temsavir · direct Emax (saturable) effect | — | Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025) | [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Parasrampuria_2025_Change_in_HIV_1_RNA](drugs/drug_fostemsavir/pd_Parasrampuria_2025_Change_in_HIV_1_RNA.md) | Change in plasma HIV‐1 RNA from Day 1 to Day 8 ← temsavir · direct Emax (saturable) effect | — | Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025) | [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Parasrampuria_2025_Proportion_0_5_log10_decrease](drugs/drug_fostemsavir/pd_Parasrampuria_2025_Proportion_0_5_log10_decrease.md) | Proportion of subjects achieving &gt;0.5 log10 decrease in plasma HIV-1 RNA on Day 8 ← temsavir · categorical (graded) response model | — | Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025) | [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Parasrampuria_2025_Proportion_1_log10_decrease](drugs/drug_fostemsavir/pd_Parasrampuria_2025_Proportion_1_log10_decrease.md) | Proportion of subjects achieving &gt;1 log10 decrease in plasma HIV-1 RNA on Day 8 ← temsavir · categorical (graded) response model | — | Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025) | [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Lagishetty_2020_ddQTcF](drugs/drug_fostemsavir/pd_Lagishetty_2020_ddQTcF.md) | ddQTcF ← temsavir · direct linear effect | model (no simulator) | Lagishetty C et al., Effects of Temsavir, Active Moiety of A…, Clinical and translational… (2020) | [10.1111/cts.12763](https://doi.org/10.1111/cts.12763) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Parasrampuria_2025_HIV_RNA_change](drugs/drug_fostemsavir/pd_Parasrampuria_2025_HIV_RNA_change.md) | Change in plasma HIV-1 RNA from Day 1 to Day 8 ← temsavir · direct Emax (saturable) effect | model (no simulator) | Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025) | [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +57,13 @@ Fostemsavir is an antiretroviral entry inhibitor used to treat adults with HIV w
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:40 | 2:09 | 0/1/0 | 1/3/0 | 0/0/0 | 61,160/13,100 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-23 22:11 | 0:05 | 1/0/0 | 2/2/0 | 0/0/0 | 3,783/177 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -65,20 +72,23 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Thakkar_2023.pdf` | Thakkar N et al., Model-Based Dose Selection of Fostemsav…, Clinical pharmacology in dr… (2023) | popPK | 9 | [10.1002/cpdd.1291](https://doi.org/10.1002/cpdd.1291) | [37329260](https://pubmed.ncbi.nlm.nih.gov/37329260) | The paper uses population pharmacokinetic modeling for temsavir, but no numeric disposition parameter values are present in the evidence. |
+| `Thakkar_2023.pdf` | Thakkar N et al., Model-Based Dose Selection of Fostemsav…, Clinical pharmacology in dr… (2023) | popPK | 10 | [10.1002/cpdd.1291](https://doi.org/10.1002/cpdd.1291) | [37329260](https://pubmed.ncbi.nlm.nih.gov/37329260) | The paper describes a population PK model for fostemsavir used for pediatric dose selection, but the abstract provided contains no numeric parameter values (CL, V, etc.), only dosing recommendations and qualitative bioequivalence results. |
 
-<sub>queue written 2026-10-07 17:39 UTC</sub>
+<sub>queue written 2026-11-23 22:11 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Lagishetty_2020 | irrelevant | 1 | 1 | The human study models QT response to temsavir concentrations, while PK exposure parameters are referred to in supplementary Figure S1 and are not provided here. |
-| popPK | Thakkar_2023 | relevant | 9 | 0 | The paper uses population pharmacokinetic modeling for temsavir, but no numeric disposition parameter values are present in the evidence. |
+| popPK | Lagishetty_2020 | irrelevant | 2 | 0 | The study is a Thorough QT (TQT) assessment focused on exposure-response modeling of QTcF, and specific PK parameter values (CL, V) are referenced as being in supplementary figures (Figure S1) not included in the evidence. |
+| PGx | Lagishetty_2020 | not_relevant | 0 | 0 | The paper describes standard pharmacokinetic and QT safety analyses but does not report the effect of any gene variant or genotype on fostemsavir's PK or PD parameters. |
+| PGx | Parasrampuria_2025 | not_relevant | 2 | 10 | The paper describes a standard population PK analysis involving CYP3A inhibitor/inducer covariates, not a pharmacogenomic study identifying specific gene variants (genotypes) that alter PK. |
+| popPK | Thakkar_2023 | relevant | 10 | 0 | The paper describes a population PK model for fostemsavir used for pediatric dose selection, but the abstract provided contains no numeric parameter values (CL, V, etc.), only dosing recommendations and qualitative bioequivalence results. |
+| PGx | Thakkar_2023 | not_relevant | 0 | 0 | The paper reports population pharmacokinetic modeling for dose selection in pediatrics and relative bioavailability in healthy adults, but does not analyze genetic variants or pharmacogenomic effects on PK/PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfostemsavir%5D&body=Drug%3A%20fostemsavir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fostemsavir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 17:39 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 12:28 UTC</sub>

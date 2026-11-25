@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The enalapril model failed peak concentration checks, and covariate effects were not simulated.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 40, model 0.000184); the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="enalapril" model-id="Enalapril_Steichert2025_reference" status="needs_review" stale="false" population="children with heart failure" measured-compound="enalapril" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -62,13 +62,13 @@ Steichert M, Cawello W, Laeer S. Population Pharmacokinetic Analysis of Enalapri
 
 ### Reviewer guidance
 
-**The enalapril model failed peak concentration checks, and covariate effects were not simulated.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 40, model 0.000184); the covariate scenarios were not simulated (+1 more).**
 
-The simulated peak concentration of 0.000184224499096412 differed from the expected values of 1.85e-06 and 6.789999999999999e-06. The record defines covariate effects for age and serum creatinine, but only the reference individual was simulated. A second reader disagreed with the extracted metabolic link and several parameter values. Extracted — enalapril: kabs 0.6 1/h, CL/F 3.43 L/h, V/F 2.83 L, tlag 0.195 h; enalaprilat: CL/F 1.36 L/h, V1/F 24.4 L.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — enalapril: kabs 0.6 1/h, CL/F 3.43 L/h, V/F 2.83 L, tlag 0.195 h; enalaprilat: CL/F 1.36 L/h, V1/F 24.4 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has enalapril → enalaprilat (metabolism), the second reading none; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -211,11 +211,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_shared_parameters |  | skipped |  |  |  | parent–metabolite template: every compound has its own slot |
 | T3_topology_template |  | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.154, 0 of 1 reader(s) agree | 0.154 | cross-check disputed by a second reader: verdict disputed, agreement 0.154, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.154 (4 of 26 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.154 | cross-check contradicted by a second reader: verdict disputed; agreement 0.154 (4 of 26 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 40 | 0.0001842 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 60 | 0.0001842 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | fail | 1.85e-06 | 0.0001842 | 99.58 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 6.79e-06 | 0.0001842 | 27.13 | µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.85e-06 | 0.0001842 | 99.58 | reported 1.85 µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 6.79e-06 | 0.0001842 | 27.13 | reported 6.79 µg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 14.6 | 0.0001842 |  | unresolved concentration unit (exp 'µg/L/mg·kg', sim 'kg/m3') |
 
 <details class="legend">

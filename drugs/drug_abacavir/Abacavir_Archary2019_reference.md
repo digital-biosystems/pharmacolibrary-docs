@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Intercompartmental clearance and transfer rate constants for abacavir were left at library defaults instead of using paper-derived estimates.
+> K13, k31 use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Archary2019_reference" status="needs_review" stale="false" population="severely malnourished HIV-infected children" measured-compound="abacavir" parameterization="apparent" topology="3C"></div>
 
@@ -53,13 +53,13 @@ Archary M, Mcllleron H, Bobat R, LaRussa P, Sibaya T, Wiesner L et al. Populatio
 
 ### Reviewer guidance
 
-**Intercompartmental clearance and transfer rate constants for abacavir were left at library defaults instead of using paper-derived estimates.**
+**K13, k31 use library defaults, not estimates from this paper; t6_deviations.**
 
-The model's intercompartmental transfer rates, k13 and k31, were not extracted from the paper and defaulted to placeholder values. Although other parameters like clearance of 3.33 L h -1 /7 kg were reported, these missing transfer rates rely on generic library values rather than data from the severely malnourished children study. The second reader also disputed the extraction of several key values, including the absorption rate of 0.97 h -1, marking the record for review. Extracted — abacavir: CL/F 3.33 L h -1 /7 kg, V1/F 4.63 L/7kg, kabs 0.97 h -1, Q 0.63 L h -1, V2 1.65 L, CL 5.86 L/h/7kg, V1 4.63 L/7kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — abacavir: CL/F 3.33 L h -1 /7 kg, V1/F 4.63 L/7kg, kabs 0.97 h -1, Q 0.63 L h -1, V2 1.65 L, CL 5.86 L/h/7kg, V1 4.63 L/7kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abacavir, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

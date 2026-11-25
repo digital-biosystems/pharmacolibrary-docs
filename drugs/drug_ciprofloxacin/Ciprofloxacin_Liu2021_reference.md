@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The ciprofloxacin clearance value of 34.8 L/day/kg was disputed by a second reader who extracted 2.71.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Liu2021_reference" status="needs_review" stale="false" population="" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Liu X, Yang Q, Fan Y, Du Y, Lei L, Wang D et al. Pharmacokinetics and pharmacody
 
 ### Reviewer guidance
 
-**The ciprofloxacin clearance value of 34.8 L/day/kg was disputed by a second reader who extracted 2.71.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagreed on the clearance value, citing 2.71 instead of the recorded 34.8 L/day/kg. Additional discrepancies exist where the first reader extracted values for specific fields that the second reader left null, and vice versa. The disagreement on these specific parameter values prevented the required agreement for the record to be accepted. Extracted — ciprofloxacin: CL 34.8 L/day/kg, V 242 L.
+Extracted — ciprofloxacin: CL 34.8 L/day/kg, V 242 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 0.4375, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.611, 0 of 1 reader(s) agree | 0.611 | cross-check disputed by a second reader: verdict disputed, agreement 0.611, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.611 (11 of 18 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.611 | cross-check contradicted by a second reader: verdict disputed; agreement 0.611 (11 of 18 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;daunorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/&quot;},{&quot;label&quot;:&quot;Hempel_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_daunorubicin&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_daunorubicin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_daunorubicin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present_study&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present_study.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gumbo_2020_2_bacterial_burden&quot;,&quot;label&quot;:&quot;Gumbo_2020_2 \u00b7 bacterial burden&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/pd_Gumbo_2020_2_bacterial_burden.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Quartino_2007_SI&quot;,&quot;label&quot;:&quot;Quartino_2007 \u00b7 SI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/pd_Quartino_2007_SI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Quartino_2007_SI&quot;,&quot;label&quot;:&quot;Quartino_2007 \u00b7 SI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/pd_Quartino_2007_SI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> CL/F and V/F have no unit.
+> No value for daunorubicin's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_Hempel2010_reference" status="needs_review" stale="false" population="paediatric patients with leukemia" measured-compound="daunorubicin" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_Hempel2010_reference" status="model_quarantined" stale="false" population="infants with leukemia" measured-compound="daunorubicin" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hempel G, Relling MV, de Rossi G, Stary J, De Lorenzo P, Valsecchi MG et al. Pharmacokinetics of daunorubicin and daunorubicinol in infants with leukemia treated in the interfant 99 protocol. Pediatric blood & cancer 54(3):355–360 (2010).
@@ -17,28 +17,28 @@ Hempel G, Relling MV, de Rossi G, Stary J, De Lorenzo P, Valsecchi MG et al. Pha
 
 ## Population and dosing
 
-**Population:** paediatric patients with leukemia · condition leukemia · age group mixed · n = 33.
+**Population:** infants with leukemia · condition leukemia · age group mixed.
 
-**Dosing:** 20, 22.5, 30 mg/m2, iv, multiple.
+**Dosing:** 20, 22.5, 30 mg/m2, iv, multiple, every 24 h.
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 2 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| apparent clearance | CL/F | 19.0 | L hr À1 m À2 |
-| apparent volume of distribution | V/F | 226 | L m À2 |
+| apparent clearance | CL/F | 19.0 | L/h/m2 |
+| apparent volume of distribution | V/F | 226 | L/m2 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857), qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,20 +48,20 @@ Hempel G, Relling MV, de Rossi G, Stary J, De Lorenzo P, Valsecchi MG et al. Pha
 
 ### Reviewer guidance
 
-**CL/F and V/F have no unit.**
+**No value for daunorubicin's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations.**
 
-Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL/F and V/F), so that value has no SI equivalent. Extracted — daunorubicin: CL/F 19 L hr À1 m À2, V/F 226 L m À2.
+The model was built, but daunorubicin's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (CL/F and V/F), so that value has no SI equivalent. Extracted — daunorubicin: CL/F 19 L/h/m2, V/F 226 L/m2.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | unit_canonical | link | source |
 |---|---|---|---|---|---|---|
-| apparent clearance | `Q27` · CL/F | 19.0 | L hr À1 m À2 | L hr À1 m À2 | exact (1) | Hempel_2010:other_prose |
-| apparent volume of distribution | `Q76` · V/F | 226 | L m À2 | L m À2 | exact (1) | Hempel_2010:other_prose |
+| apparent clearance | `Q27` · CL/F | 19.0 | L/h/m2 | L/h/m2 | exact (1) | Hempel_2010:other_prose |
+| apparent volume of distribution | `Q76` · V/F | 226 | L/m2 | L/m2 | exact (1) | Hempel_2010:other_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,15 +73,13 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 **Interpretation flags:**
 - salvaged Q27 ('apparent clearance'=19.0) from results prose — parameter table was unreadable
 - salvaged Q76 ('apparent volume of distribution'=226) from results prose — parameter table was unreadable
-- implicit units: 'apparent clearance' — the LLM proposed 'L/h/m^2', whose dimension does not fit Q27; left unset
-- implicit units: 'apparent volume of distribution' — the LLM proposed 'L/m^2', whose dimension does not fit Q76; left unset
+- implicit units: 'apparent clearance' → L/h/m2 (from the paper text: 'The text in the \'Daunorubicinol Pharmacokinetics\' section states: "apparent clearance 19.0 AE 32% L hr À1 m À2". Additio')
+- implicit units: 'apparent volume of distribution' → L/m2 (from the paper text: 'The text in the \'Daunorubicinol Pharmacokinetics\' section states: "apparent volume of distribution 226 AE 80% L m À2". A')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=daunorubicin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
-- status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- molar mass: PubChem entry choice failed (JSONDecodeError)
+- molar mass: none of 1 PubChem candidate(s) is 'daunorubicinol' (LLM) — left in mass units
+- molar mass: none found for 'daunorubicinol' — its concentrations stay mass-only
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -89,17 +87,19 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 | `qwen3.8-27b` | not confirmed | 0.5 (3/6 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clearance of the remaining patients]` |  | 43.9 | only_one_extracted |
 | `qwen3.8-27b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `qwen3.8-27b` | `parameters[apparent clearance]` | 19.0 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[apparent volume of distribution]` | 226 |  | only_one_extracted |
@@ -119,10 +119,22 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | L hr À1 m À2 | ['Hempel_2010:other_prose'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | L m À2 | ['Hempel_2010:other_prose'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Hempel_2010:other_prose'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Hempel_2010:other_prose'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial; agreement 0.857 (6 of 7 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -156,4 +168,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdaunorubicin%5D%20Daunorubicin_Hempel2010_reference&body=Drug%3A%20daunorubicin%0ARecord%3A%20Daunorubicin_Hempel2010_reference%0APaper%3A%20Hempel_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_daunorubicin/Daunorubicin_Hempel2010_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 16:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 12:48 UTC</sub>

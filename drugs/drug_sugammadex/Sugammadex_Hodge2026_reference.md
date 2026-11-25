@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;sugammadex&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/&quot;},{&quot;label&quot;:&quot;Hodge_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sugammadex_Hodge2026_reference&quot;,&quot;label&quot;:&quot;Hodge_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Hodge2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sugammadex_Ji2023_reference&quot;,&quot;label&quot;:&quot;Ji_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Ji2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sugammadex_Ji2023v2_reference&quot;,&quot;label&quot;:&quot;Ji_2023_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Ji2023v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sugammadex_Ji2023_sugammadex_2_mg_kg_moderate_blockade&quot;,&quot;label&quot;:&quot;Ji_2023_sugammadex_2_mg_kg_moderate_blockade&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Ji2023_sugammadex_2_mg_kg_moderate_blockade.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sugammadex_Ji2023v2_reference&quot;,&quot;label&quot;:&quot;Ji_2023_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Ji2023v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sugammadex — `Sugammadex_Hodge2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record refused due to disputed model structure: missing rocuronium-sugammadex complex linkage and misclassified 12.5% breastmilk value as excretion.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="sugammadex" model-id="Sugammadex_Hodge2026_reference" status="needs_review" stale="false" population="pregnant women undergoing caesarean delivery at term" measured-compound="sugammadex" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sugammadex" model-id="Sugammadex_Hodge2026_reference" status="rejected" stale="false" population="pregnant women undergoing caesarean delivery" measured-compound="sugammadex" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Hodge AT, Tognolini AR, Liu X, Won H, Roberts JA, Wallis SC et al. Plasma levels and postpartum breastmilk concentrations of sugammadex: a pharmacokinetic study in women undergoing general anaesthesia for caesarean delivery. International journal of obstetric anesthesia 66:104874 (2026).
@@ -17,29 +17,26 @@ Hodge AT, Tognolini AR, Liu X, Won H, Roberts JA, Wallis SC et al. Plasma levels
 
 ## Population and dosing
 
-**Population:** pregnant women undergoing caesarean delivery at term · condition pregnancy (term, caesarean delivery) · age group adult · n = 10.
+**Population:** pregnant women undergoing caesarean delivery · condition pregnancy · age group adult.
 
 ## Model
 
-**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_sugammadex/Sugammadex_Hodge2026_reference/Sugammadex_Hodge2026_reference.svg" alt="Sugammadex_Hodge2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Parameters:** 2 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | Rocuronium volume of distribution | V | 17.9 | L |
-| Rocuronium clearance | CL | 12.6 | L/h |
-| Sugammadex detected in breastmilk samples | fe | 12.5 | % |
+| Rocuronium ... clearance | CL | 12.6 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,21 +46,20 @@ Hodge AT, Tognolini AR, Liu X, Won H, Roberts JA, Wallis SC et al. Plasma levels
 
 ### Reviewer guidance
 
-**Record refused due to disputed model structure: missing rocuronium-sugammadex complex linkage and misclassified 12.5% breastmilk value as excretion.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure lacks interconversion links between rocuronium, sugammadex, and their complex, which the second reader confirmed are required. The 12.5% value, described as sugammadex detected in breastmilk, is erroneously assigned to the fraction excreted unchanged parameter. The second reader disagreed on both the missing links and the parameter assignment, resulting in a 0.625 agreement ratio. Extracted — sugammadex: V 17.9 L, CL 12.6 L/h, fe 12.5 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sugammadex: V 17.9 L, CL 12.6 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading rocuronium → rocuronium‐sugammadex complex (interconversion); sugammadex → rocuronium‐sugammadex complex (interconversion); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has sugammadex → rocuronium (binding), the second reading rocuronium → rocuronium-sugammadex complex (interconversion); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | Rocuronium volume of distribution | `Q61` · V | 17.9 | L | 0.0179 | m3 | l | llm_confirmed (0.6) | Hodge_2026:abstract |
-| Rocuronium clearance | `Q22` · CL | 12.6 | L/h | 3.5e-06 | m3/s | l/h | llm_confirmed (0.6) | Hodge_2026:abstract |
-| Sugammadex detected in breastmilk samples | `Q44` · fe | 12.5 | % |  |  | % | llm (0.6) | Hodge_2026:abstract |
+| Rocuronium ... clearance | `Q22` · CL | 12.6 | L/h | 3.5e-06 | m3/s | l/h | llm_confirmed (0.6) | Hodge_2026:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -74,31 +70,31 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 **Interpretation flags:**
 - dropped duplicate Q61 ('Sugammadex volume of distribution', value 13.9) — already have one for this compound
-- dropped duplicate Q22 ('Sugammadex clearance', value 8.0) — already have one for this compound
+- dropped duplicate Q22 ('Sugammadex ... clearance', value 8.0) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sugammadex
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Hodge_2026_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Hodge_2026_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['rocuronium', 'rocuronium‐sugammadex complex', 'interconversion'], ['sugammadex', 'rocuronium‐sugammadex complex', 'interconversion']] | mismatch |
-| `gpt-oss-120b` | `parameters[sugammadex detected in breastmilk samples]` | 12.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[sugammadex detection in breastmilk samples]` |  | 12.5 | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['sugammadex', 'rocuronium', 'binding']] | [['rocuronium', 'rocuronium-sugammadex complex', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `parameters[rocuronium ... clearance]` | 12.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rocuronium clearance]` |  | 12.6 | only_one_extracted |
 
 </details>
 
@@ -112,28 +108,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hodge_2026:abstract'] |
-| C5_dimension_Q44 | pass | dimensionless |  | ['Hodge_2026:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Hodge_2026:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 12.6 | ['Hodge_2026:abstract'] |
-| C8_topology | pass |  |  |  |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 12.6 L/h | ['Hodge_2026:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 17.9 L | ['Hodge_2026:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=sugammadex) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -145,70 +128,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sugammadex/Sugammadex_Hodge2026_reference/Sugammadex_Hodge2026_reference_modelica.zip" download>Sugammadex_Hodge2026_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sugammadex/Sugammadex_Hodge2026_reference/Sugammadex_Hodge2026_reference_fmi.zip" download>Sugammadex_Hodge2026_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sugammadex/Sugammadex_Hodge2026_reference/Sugammadex_Hodge2026_reference_matlab.zip" download>Sugammadex_Hodge2026_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sugammadex/Sugammadex_Hodge2026_reference/Sugammadex_Hodge2026_reference_matlab_simbio.zip" download>Sugammadex_Hodge2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sugammadex/Sugammadex_Hodge2026_reference/Sugammadex_Hodge2026_reference_sbml.zip" download>Sugammadex_Hodge2026_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sugammadex/Sugammadex_Hodge2026_reference/Sugammadex_Hodge2026_reference_cellml.zip" download>Sugammadex_Hodge2026_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 2.002 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 3.5e-06 | m3/s |
-| input | model | `VdPerKg` | 0.0002557 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Hodge AT, Tognolini AR, Liu X, Won H, Roberts JA, Wallis SC et al. Plasma levels and postpartum breastmilk concentrations of sugammadex: a pharmacokinetic study in women undergoing general anaesthesia for caesarean delivery. International journal of obstetric anesthesia 66:104874 (2026). [doi:10.1016/j.ijoa.2026.104874](https://doi.org/10.1016/j.ijoa.2026.104874)
-
-**This record:** Pharmacolibrary, model `Sugammadex_Hodge2026_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sugammadex/Sugammadex_Hodge2026_reference>
-
-```bibtex
-@misc{pharmacolibrary_SugammadexHodge2026reference,
-  title  = {{Pharmacolibrary model Sugammadex_Hodge2026_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_sugammadex/Sugammadex_Hodge2026_reference},
-  note   = {Parameters from doi:10.1016/j.ijoa.2026.104874},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_sugammadex/Sugammadex_Hodge2026_reference/Sugammadex_Hodge2026_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_sugammadex/Sugammadex_Hodge2026_reference/Sugammadex_Hodge2026_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Sugammadex_Hodge2026_reference_params.json` · controls `Sugammadex_Hodge2026_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsugammadex%5D%20Sugammadex_Hodge2026_reference&body=Drug%3A%20sugammadex%0ARecord%3A%20Sugammadex_Hodge2026_reference%0APaper%3A%20Hodge_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sugammadex/Sugammadex_Hodge2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 19:43 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:02 UTC</sub>

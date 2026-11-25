@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Nadroparin anti-Xa clearance and volume were rejected due to an implausible magnitude, likely indicating a unit extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Diepstraten2023_reference" status="rejected" stale="false" population="critically ill patients" measured-compound="anti-Xa" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Diepstraten J, van Rongen A, Zijlstra MP, Kruip MJHA, van der Heiden PLJ, Ter He
 
 ### Reviewer guidance
 
-**Nadroparin anti-Xa clearance and volume were rejected due to an implausible magnitude, likely indicating a unit extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a volume of 17 mL and a base clearance of 44.7 mL/min for anti-Xa activity. These values fall outside the physiological window for a low-molecular-weight heparin, suggesting a scale or unit extraction error. The second reader disagreed on these specific parameter values, with nulls present in conflicting fields. Extracted — anti-Xa: kabs 0.00483 min−1, V 17 mL, CL 44.7 mL/min.
+None of the extracted parameters is nadroparin's own; they describe anti-Xa. Extracted — anti-Xa: kabs 0.00483 min−1, V 17 mL, CL 44.7 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of base clearance in patients [not undergoing cvvhd in final model]: this record has none, the second reading 26.7; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The clearance covariate parameter beta_CL was recorded as a negative value (-0.660), rendering the model implausible for TB patients.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="cycloserine" model-id="Cycloserine_Alghamdi2019_reference" status="rejected" stale="false" population="TB patients and healthy subjects" measured-compound="cycloserine" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Alghamdi WA, Alsultan A, Al-Shaer MH, An G, Ahmed S, Alkabab Y et al. Cycloserin
 
 ### Reviewer guidance
 
-**The clearance covariate parameter beta_CL was recorded as a negative value (-0.660), rendering the model implausible for TB patients.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record lists a parameter with the meaning of total clearance for TB patients versus healthy subjects with a value of -0.660. This negative proportionality factor for elimination is physiologically impossible and caused the record to be rejected. Additionally, the second reader disagreed on the extraction of the covariate power parameter, finding 0.413 where this record had null. Extracted — cycloserine: tlag 0.326 h, kabs 6.61 h−1, V/F 24.9 liter, CL/F 2 liter/h, CL -0.66 vs HS.
+A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — cycloserine: tlag 0.326 h, kabs 6.61 h−1, V/F 24.9 liter, CL/F 2 liter/h, CL -0.66 vs HS.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 500-mg dose: this record has none, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

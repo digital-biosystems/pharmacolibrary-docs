@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Medifoxamine clearance of 1299 l/min and volume of 1321 l are physiologically implausible, causing rejection.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
-<div class="pk-model-meta" hidden drug="medifoxamine" model-id="Medifoxamine_Saleh1990_reference" status="rejected" stale="false" population="healthy adults" measured-compound="medifoxamine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="medifoxamine" model-id="Medifoxamine_Saleh1990_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="medifoxamine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Saleh S, Johnston A, Edeki T, Turner P. Tolerability and kinetics of intravenous medifoxamine in healthy volunteers. International clinical psychopharmacology 5(2):97–102 (1990).
@@ -16,13 +16,13 @@ Saleh S, Johnston A, Edeki T, Turner P. Tolerability and kinetics of intravenous
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = 12.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,11 +33,10 @@ Saleh S, Johnston A, Edeki T, Turner P. Tolerability and kinetics of intravenous
 | elimination half-line | t1/2z | 1.2 | h |
 | systemic clearance | CL | 1299 | l/min |
 | volume of distribution | V | 1321 | l |
-| urinary excretion of parent drug | fe | 1 | % of the dose |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +46,13 @@ Saleh S, Johnston A, Edeki T, Turner P. Tolerability and kinetics of intravenous
 
 ### Reviewer guidance
 
-**Medifoxamine clearance of 1299 l/min and volume of 1321 l are physiologically implausible, causing rejection.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a systemic clearance of 1299 l/min and a volume of distribution of 1321 l for medifoxamine. These magnitudes are far outside normal human physiological limits, indicating a unit or scale extraction error. Additionally, the second reader could not locate these specific parameter values in the source text, further questioning their validity. Extracted — medifoxamine: t1/2z 1.2 h, CL 1.3e+03 l/min, V 1.32e+03 l, fe 1 % of the dose.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — medifoxamine: t1/2z 1.2 h, CL 1.3e+03 l/min, V 1.32e+03 l.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has medifoxamine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -62,7 +61,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | elimination half-line | `Q57` · t1/2z | 1.2 | h | 4320 | s | h | llm (0.6) | Saleh_1990:abstract |
 | systemic clearance | `Q22` · CL | 1299 | l/min | 0.02165 | m3/s | l/min | llm_confirmed (0.6) | Saleh_1990:abstract |
 | volume of distribution | `Q61` · V | 1321 | l | 1.321 | m3 | l | exact (1) | Saleh_1990:abstract |
-| urinary excretion of parent drug | `Q44` · fe | 1 | % of the dose |  |  | %·ofthedose | llm_confirmed (0.6) | Saleh_1990:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,10 +70,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: '% of the dose' (fe)
+- dropped value-less row: 'urinary excretion of parent drug'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=medifoxamine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
@@ -83,28 +79,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>9 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[elimination half-line]` | 1.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-line]` |  | 1.2 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[systemic clearance]` | 1299 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[systemic clearance]` |  | 1299 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[urinary excretion of parent drug]` | 1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 1321 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 1321 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | medifoxamine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | medifoxamine | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -116,7 +98,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Saleh_1990:abstract'] |
@@ -149,4 +131,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmedifoxamine%5D%20Medifoxamine_Saleh1990_reference&body=Drug%3A%20medifoxamine%0ARecord%3A%20Medifoxamine_Saleh1990_reference%0APaper%3A%20Saleh_1990%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_medifoxamine/Medifoxamine_Saleh1990_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:27 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:58 UTC</sub>

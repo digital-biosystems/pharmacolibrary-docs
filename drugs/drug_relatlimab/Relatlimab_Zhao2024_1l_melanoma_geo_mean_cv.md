@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected due to a dimension conflict on Vmax and an unreachable peripheral compartment.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit μg/h ([mass] / [time]) vs [mass] / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Relatlimab" model-id="Relatlimab_Zhao2024_1l_melanoma_geo_mean_cv" status="rejected" stale="false" population="adult and adolescent patients with solid tumors" measured-compound="relatlimab" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Zhao Y, Hu Z, Bathena SP, Keidel S, Miller-Moslin K, Statkevich P et al. Model-I
 
 ### Reviewer guidance
 
-**The model was rejected due to a dimension conflict on Vmax and an unreachable peripheral compartment.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit μg/h ([mass] / [time]) vs [mass] / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The Vmax parameter is reported as 80.3 μg/h, which conflicts with the expected mass dimension for that structural term. Additionally, the second compartment is structurally unreachable from the dose, and the first compartment's volume was null. A second reader disagreed on the clearance value, identifying 90.3 instead of the null entry. Extracted — relatlimab: Cmin 5.7 μg/mL, Cmax 44.4 μg/mL, Cavg 14.8 μg/mL, CL 6.06 mL/h, V1 3.59 L, V2 3 L, Vss 6.65 L, Vmax 80.3 μg/h.
+A reported unit could not be converted (Cmin, Cmax, Cavg and Vmax), so that value has no SI equivalent. Extracted — relatlimab: Cmin 5.7 μg/mL, Cmax 44.4 μg/mL, Cavg 14.8 μg/mL, CL 6.06 mL/h, V1 3.59 L, V2 3 L, Vss 6.65 L, Vmax 80.3 μg/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clss/cl0: this record has none, the second reading 90.3. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

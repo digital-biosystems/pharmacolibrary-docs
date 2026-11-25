@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The volume of distribution parameter for doxorubicin is recorded as 0.0764 L, which is physiologically implausible.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Embree1993_reference" status="rejected" stale="false" population="non-small-cell lung cancer patients" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Embree L, Gelmon KA, Lohr A, Mayer LD, Coldman AJ, Cullis PR et al. Chromatograp
 
 ### Reviewer guidance
 
-**The volume of distribution parameter for doxorubicin is recorded as 0.0764 L, which is physiologically implausible.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a volume of distribution of 0.0764 L for doxorubicin. This value falls outside the physiological window for volume, indicating a magnitude error. Consequently, the model was rejected due to this implausible parameter magnitude. Extracted — doxorubicin: CL 15.5 L/h, V 0.0764 l.
+Extracted — doxorubicin: CL 15.5 L/h, V 0.0764 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has liposome-encapsulated doxorubicin, the second reading liposome-encapsulated doxorubicin (TLC D-99); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

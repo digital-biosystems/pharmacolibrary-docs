@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The review was not approved because the second reader could not verify the extracted values for clearance and volume of distribution.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="Ginkgo folium" model-id="GinkgoFolium_Chen2007_reference" status="needs_review" stale="false" population="rats" measured-compound="ginkgo_folium" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Chen WD, Liang Y, Xie L, Lu T, Liu XD, Wang GJ. Pharmacokinetics of the ginkgo B
 
 ### Reviewer guidance
 
-**The review was not approved because the second reader could not verify the extracted values for clearance and volume of distribution.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagreed with all values present in the record, including the clearance of 0.07 l/min/kg and the volume of distribution of 2.27 l/kg. Since no values were agreed upon by the second reader, the cross-check agreement was only 0.1. Consequently, the record was held back due to this lack of verification. Extracted — ginkgo folium: CL 0.07 l/min/kg, V 2.27 l/kg.
+Extracted — ginkgo folium: CL 0.07 l/min/kg, V 2.27 l/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 59.7, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.1, 0 of 1 reader(s) agree | 0.1 | cross-check agreement 0.1 is below 0.5: verdict partial, agreement 0.1, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.1 (1 of 10 compared fields agree, 9 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.1 | cross-check agreement 0.1 is below 0.5: verdict partial; agreement 0.1 (1 of 10 compared fields agree, 9 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -210,4 +210,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bginkgo_folium%5D%20GinkgoFolium_Chen2007_reference&body=Drug%3A%20ginkgo_folium%0ARecord%3A%20GinkgoFolium_Chen2007_reference%0APaper%3A%20Chen_2007%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ginkgo_folium/GinkgoFolium_Chen2007_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 02:34 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:14 UTC</sub>

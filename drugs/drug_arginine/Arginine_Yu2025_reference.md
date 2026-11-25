@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper discusses a different drug, and the second reader disagreed with the single-compartment structure.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Arginine" model-id="Arginine_Yu2025_reference" status="rejected" stale="false" population="" measured-compound="arginine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Yu H, Xiao J, Zhu HJ. Predicting Vancomycin Clearance in Neonates and Infants by
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper discusses a different drug, and the second reader disagreed with the single-compartment structure.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The identity check failed because neither the paper's title nor its abstract mentions arginine, indicating the literature source describes another molecule. A second reader disputed the model topology, preferring a two-compartment structure over the single-compartment model recorded here. The reader also provided specific values for two fields that remained null in the primary record. Extracted — arginine: CL 0.46 L/h, V 2.12 L.
+Extracted — arginine: CL 0.46 L/h, V 2.12 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q30: this record has none, the second reading 500; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.625 (5 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.625 | cross-check contradicted by a second reader: verdict disputed; agreement 0.625 (5 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

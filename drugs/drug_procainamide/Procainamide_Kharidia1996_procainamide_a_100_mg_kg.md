@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The elimination rate constant for procainamide was extracted with units of minutes, which is dimensionally incorrect for a rate constant that requires inverse minutes.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit min ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Kharidia1996_procainamide_a_100_mg_kg" status="rejected" stale="false" population="male Sprague Dawley rats" measured-compound="procainamide" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Kharidia J, Eddington ND. Application of computer-assisted radiotelemetry in the
 
 ### Reviewer guidance
 
-**The elimination rate constant for procainamide was extracted with units of minutes, which is dimensionally incorrect for a rate constant that requires inverse minutes.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit min ([time]) vs 1 / [time].**
 
-The parameter labeled as the elimination rate constant (kel) has a value of 83.9 with units of min. This is a dimension mismatch because a first-order rate constant must have dimensions of inverse time, whereas the recorded units are simple time. The model was rejected because this structural parameter unit conflicts with its defined physical meaning. Extracted — procainamide: AUC 1.43e+03 µg·mL⁻¹·min, CL/F 73.7 mL·min⁻¹·kg⁻¹, Vss 6.7 L/kg, kel 83.9 min; N-acetylprocainamide: AUC 1.2e+03 µg·mL⁻¹·min, kfm 0.0034 min-1.
+A reported unit could not be converted (AUC, AUC and kel), so that value has no SI equivalent. Extracted — procainamide: AUC 1.43e+03 µg·mL⁻¹·min, CL/F 73.7 mL·min⁻¹·kg⁻¹, Vss 6.7 L/kg, kel 83.9 min; N-acetylprocainamide: AUC 1.2e+03 µg·mL⁻¹·min, kfm 0.0034 min-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has procainamide, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

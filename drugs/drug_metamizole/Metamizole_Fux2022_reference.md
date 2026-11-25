@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> Cross-check was refused due to disputed clearance values (0.1 vs 0.08) and missing parameters for metamizole.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="Metamizole" model-id="Metamizole_Fux2022_reference" status="needs_review" stale="false" population="calves undergoing umbilical surgery" measured-compound="metamizole" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Fux D, Metzner M, Brandl J, Feist M, Behrendt-Wippermann M, von Thaden A et al. 
 
 ### Reviewer guidance
 
-**Cross-check was refused due to disputed clearance values (0.1 vs 0.08) and missing parameters for metamizole.**
+**cross_check_disputed; x1_cross_check.**
 
-The record reports a clearance of 0.1 ml/min/kg, while the second reader extracted 0.08 without a unit. The second reader also identified a value of 26.97 where the record had no parameter. These discrepancies resulted in a 0.462 agreement score. Extracted — metamizole: CL 0.1 ml/min/kg, V 5.37 L.
+Extracted — metamizole: CL 0.1 ml/min/kg, V 5.37 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.1, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.462, 0 of 1 reader(s) agree | 0.462 | cross-check disputed by a second reader: verdict disputed, agreement 0.462, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.462 (6 of 13 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.462 | cross-check contradicted by a second reader: verdict disputed; agreement 0.462 (6 of 13 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

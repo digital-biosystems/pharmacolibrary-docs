@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> The record was rejected because the AUC unit mg/kg·h has mass dimensions, conflicting with the required concentration-time dimension of concentration times time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q19 unit mg/kg·h ([mass] / [time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="thiamphenicol" model-id="Thiamphenicol_Fang2013_reference" status="rejected" stale="false" population="Pacific white shrimp (Litopenaeus vannamei) in freshwater" measured-compound="thiamphenicol and florfenicol" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Fang W, Li G, Zhou S, Li X, Hu L, Zhou J. Pharmacokinetics and tissue distributi
 
 ### Reviewer guidance
 
-**The record was rejected because the AUC unit mg/kg·h has mass dimensions, conflicting with the required concentration-time dimension of concentration times time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q19 unit mg/kg·h ([mass] / [time]) vs [mass] * [time] / [length] ** 3.**
 
-The reported AUC value of 29.10 mg/kg·h for thiamphenicol and florfenicol is a mass-based unit that cannot be converted to the standard concentration-time dimension. This dimensional mismatch on a structural parameter rendered the model invalid. Additionally, the second reader disagreed with the extraction of all provided pharmacokinetic parameters, marking them as unknown or null. Extracted — thiamphenicol and florfenicol: Cmax 7.96 μg/mL, tmax 2 h, t1/2ka 0.666 h, t1/2β 10.7 h, AUCt 29.1 mg/kg·h, MRT 9.77 h, t1/2z 6.84 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is thiamphenicol's own; they describe thiamphenicol and florfenicol. Extracted — thiamphenicol and florfenicol: Cmax 7.96 μg/mL, tmax 2 h, t1/2ka 0.666 h, t1/2β 10.7 h, AUCt 29.1 mg/kg·h, MRT 9.77 h, t1/2z 6.84 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has thiamphenicol and florfenicol, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

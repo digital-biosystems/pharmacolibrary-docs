@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because N-acetylcysteine’s clearance-ratio parameter was reported as 23%, triggering a structural-parameter dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q31 unit % (dimensionless) vs None.
 
 <div class="pk-model-meta" hidden drug="acetylcysteine" model-id="Acetylcysteine_Brown2004_reference" status="rejected" stale="false" population="healthy men" measured-compound="N-acetylcysteine" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Brown M, Bjorksten A, Medved I, McKenna M. Pharmacokinetics of intravenous N-ace
 
 ### Reviewer guidance
 
-**The record was rejected because N-acetylcysteine’s clearance-ratio parameter was reported as 23%, triggering a structural-parameter dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q31 unit % (dimensionless) vs None.**
 
-The exercise-related reduction in clearance is represented as a clearance ratio for N-acetylcysteine, with value 23 and unit %. The unit was dimensionless, while the structural parameter’s dimension was recorded as None, producing the mismatch. Only the abstract was read, so reported summary statistics stood in for a fitted model; the second reader did not confirm the 23 estimate. Extracted — acetylcysteine: CL 0.58 l kg(-1) h(-1), V 0.064 l kg(-1), CL_ratio 23 %, kabs 0.14 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — acetylcysteine: CL 0.58 l kg(-1) h(-1), V 0.064 l kg(-1), CL_ratio 23 %, kabs 0.14 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has N-acetylcysteine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

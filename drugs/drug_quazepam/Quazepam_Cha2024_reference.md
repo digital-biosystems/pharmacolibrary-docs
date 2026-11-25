@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because Cha_2024 studies zolpidem, not quazepam, so the extracted parameters do not belong to the target drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="quazepam" model-id="Quazepam_Cha2024_reference" status="rejected" stale="false" population="" measured-compound="quazepam" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Cha HJ, Han S, Pak KC, Kim H. Development of a Web Application for Simulating Pl
 
 ### Reviewer guidance
 
-**Record rejected because Cha_2024 studies zolpidem, not quazepam, so the extracted parameters do not belong to the target drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper is a population PK study of zolpidem, with quazepam only mentioned as a comparator. The extracted quazepam values, such as CL/F of 19.76 L/h, are not derived from data in this paper. No actual quazepam parameters or concentration data are present in the source. Extracted — quazepam: CL/F 19.8 L/h, V/F 74.8 L, tlag 0.394 h, kabs 5.41 1/h.
+Extracted — quazepam: CL/F 19.8 L/h, V/F 74.8 L, tlag 0.394 h, kabs 5.41 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q314: this record has none, the second reading 31.74; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.8 (12 of 15 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

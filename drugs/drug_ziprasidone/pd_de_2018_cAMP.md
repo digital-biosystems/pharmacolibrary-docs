@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;ziprasidone&quot;,&quot;href&quot;:&quot;drugs/drug_ziprasidone/&quot;},{&quot;label&quot;:&quot;de_2018 \u00b7 PD cAMP concentration over time (cellular second messenger response to D2 receptor antagonist exposure)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;ziprasidone&quot;,&quot;href&quot;:&quot;drugs/drug_ziprasidone/&quot;},{&quot;label&quot;:&quot;de_2018 \u00b7 PD cAMP&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ziprasidone_Bao2024_reference&quot;,&quot;label&quot;:&quot;Bao_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ziprasidone/Ziprasidone_Bao2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ziprasidone_Li2026_reference&quot;,&quot;label&quot;:&quot;Li_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ziprasidone/Ziprasidone_Li2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ziprasidone_Huang2021_reference&quot;,&quot;label&quot;:&quot;Huang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ziprasidone/Ziprasidone_Huang2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ziprasidone_Li2018_reference&quot;,&quot;label&quot;:&quot;Li_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ziprasidone/Ziprasidone_Li2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ziprasidone_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ziprasidone/Ziprasidone_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# cAMP concentration over time (cellular second messenger response to D2 receptor antagonist exposure) — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+# cAMP — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +16,7 @@
 
 ## Record summary
 
-**As extracted:** Ziprasidone (competing with dopamine at the D2 receptor) drives cAMP concentration over time (cellular second messenger response to D2 receptor antagonist exposure) (in AU (arbitrary units)): delayed effect through transit (transduction) compartments.
+**As extracted:** Ziprasidone (concentrations from the PK model of Bao_2024) drives cAMP: target-mediated drug disposition.
 
 **Model:** No model was generated from this record.
 
@@ -25,10 +25,10 @@
 > <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `de_2018`
-- **model family:** `transduction`
-- **driver:** `not_resolved`
-- **tier:** population
-- **effect:** stimulation/proportional
+- **model family:** `tmdd`
+- **driver:** `cited_pk`
+- **tier:** descriptive
+- **effect:** inhibition/unknown
 
 ## Citation
 de Witte WEA et al., In vitro and in silico analysis of the…, British journal of pharmaco… (2018)
@@ -37,16 +37,9 @@ de Witte WEA et al., In vitro and in silico analysis of the…, British journal 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | KD dopamine | `Q331` ·  | 10.3 | nM | llm | de_2018:pdv3 |
-| — | DAFR50 | `Q100` ·  | 2.25 |  | nil | de_2018:pdv3 |
-| PD (effect) | Rtot | `Q333` ·  | 1.74 | nM | llm | de_2018:pdv3 |
-| PD (effect) | RR (receptor recycling) | `Q334` ·  | 0.238 | min−1 | llm | de_2018:pdv3 |
-| PD (effect) | k0max | `Q327` ·  | 20.5 | AU·min−1 | llm | de_2018:pdv3 |
-| PD (effect) | k1 | `Q327` ·  | 4.12 | AU·min−1 | llm | de_2018:pdv3 |
-| PD (effect) | k2 (active PDE‐independent) | `Q328` ·  | 0.0334 | min−1 | llm | de_2018:pdv3 |
-| PD (effect) | k3 (active PDE‐dependent) | `Q328` ·  | 0.00882 | nM·min−1 | llm | de_2018:pdv3 |
-| PD (effect) | k4 | `Q328` ·  | 0.00882 | min−1 | llm | de_2018:pdv3 |
-| PD (effect) | h (hill factor) | `Q325` ·  | 1.77 |  | llm | de_2018:pdv3 |
+| PD (effect) | KD | `Q331` ·  | 1.31E‐09 | M | llm | de_2018:pdv3 |
+| PD (effect) | kon | `Q329` ·  | 1.29E + 06 | 1/(M*s) | llm | de_2018:pdv3 |
+| PD (effect) | koff | `Q330` ·  | 1.67E‐03 | 1/s | llm | de_2018:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,11 +47,47 @@ de Witte WEA et al., In vitro and in silico analysis of the…, British journal 
 </details>
 
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (1/7 fields) | 6 |
+
+<details><summary>6 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `effect_direction` | inhibition | stimulation | mismatch |
+| `gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
+| `gpt-oss-120b` | `model_family` | tmdd | indirect_response_iii | mismatch |
+| `gpt-oss-120b` | `parameters[Q329]` | 1.29E + 06 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q330]` | 1.67E‐03 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q331].value` | 1.31E‐09 | 1.31E-09 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

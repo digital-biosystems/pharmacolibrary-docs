@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Zhou_2025_FOXO1](drugs/drug_vorapaxar/pd_Zhou_2025_FOXO1.md) | FOXO1 biomarker turnover ← vorapaxar | — | Zhou Q et al., Vorapaxar enhanced mitochondria-associa…, Cell reports. Medicine (2025) | [10.1016/j.xcrm.2025.102371](https://doi.org/10.1016/j.xcrm.2025.102371) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Zhou_2025_FOXO1](drugs/drug_vorapaxar/pd_Zhou_2025_FOXO1.md) | FOXO1 biomarker turnover ← vorapaxar | — | Zhou Q et al., Vorapaxar enhanced mitochondria-associa…, Cell reports. Medicine (2025) | [10.1016/j.xcrm.2025.102371](https://doi.org/10.1016/j.xcrm.2025.102371) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

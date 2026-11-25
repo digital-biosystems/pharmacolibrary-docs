@@ -29,7 +29,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:21 | 2:46 | 0/0/0 | 0/0/0 | 0/0/0 | 190,540/963 | ollama / glm-5.3-flash | 8 | 0/7 | 7/1 | 0 |
+| 2026-11-23 21:39 | 0:05 | 0/0/0 | 0/0/0 | 0/0/0 | 4,452/162 | einfracz / qwen3.8-27b | 8 | 0/8 | 7/1 | 0 |
 
 ## Coverage
 
@@ -46,22 +46,31 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `De_2004.pdf` | De Rosemond SJ et al., Wastewater treatment polymers identifie…, Environmental toxicology an… (2004) | pd | 4 | [10.1897/03-609](https://doi.org/10.1897/03-609) | [15379002](https://www.ncbi.nlm.nih.gov/pubmed/15379002) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 17:20 UTC</sub>
+<sub>queue written 2026-11-23 21:39 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Canevarolo_2026 | irrelevant | 0 | 0 | This is a genomic/epigenomic study of multiple myeloma with no pharmacokinetic parameters for edetate_sodium anywhere in the evidence. |
-| popPK | De_2004 | irrelevant | 0 | 0 | Toxicology study of mine effluent and polymers; EDTA only used as a TIE reagent, no PK parameters for edetate_sodium. |
+| popPK | Canevarolo_2026 | irrelevant | 0 | 0 | The paper is a genomic and transcriptomic analysis of multiple myeloma progression and resistance, containing no pharmacokinetic data for edetate sodium or any other drug. |
+| PGx | Canevarolo_2026 | not_relevant | 0 | 0 | The paper investigates genomic and epigenomic changes in multiple myeloma progression and multidrug resistance, but does not study edetate_sodium or report pharmacokinetic/pharmacodynamic effects of this specific drug. |
+| popPK | De_2004 | irrelevant | 0 | 0 | The paper describes the toxicity of wastewater treatment polymers and kimberlite effluent in aquatic crustaceans, not the pharmacokinetics of edetate sodium. |
+| PGx | De_2004 | not_relevant | 0 | 0 | The paper studies environmental toxicity of wastewater treatment polymers in daphnia and does not involve human pharmacogenomics, pharmacokinetics, or pharmacodynamics of edetate sodium. |
+| popPK | Gopi_2017 | irrelevant | 0 | 0 | The study investigates phospholipid levels in rat striatum using rotenone, and edetate sodium (Na.EDTA) is only mentioned as a reagent for sample preparation, not as a subject drug. |
+| PGx | Gopi_2017 | not_relevant | 0 | 0 | The paper investigates phospholipid levels in a rotenone-induced Parkinson's disease model and does not involve the pharmacokinetics or pharmacodynamics of edetate_sodium or any gene variants. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | The study is an in vitro physicochemical stability evaluation of ropivacaine and dexamethasone formulations, where edetate is only a minor excipient, and contains no pharmacokinetic parameters for edetate. |
+| PGx | Kim_2026 | not_relevant | 0 | 0 | The paper describes an in vitro physicochemical stability study of ropivacaine and dexamethasone formulations, containing no pharmacogenomic data or in vivo PK/PD assessments for edetate sodium. |
 | popPK | Moura_2025 | irrelevant | 0 | 0 | This is a medicinal chemistry/anticancer study of carnosic acid derivatives with no edetate sodium PK data. |
-| popPK | Phelps_2013 | irrelevant | 0 | 0 | The paper reports population PK of myo-inositol in preterm infants, not edetate_sodium; edetate_sodium is not the subject drug. |
-| popPK | Pillai_2015 | irrelevant | 0 | 0 | This is a population PK study of oseltamivir, not edetate_sodium; no edetate_sodium parameters are reported. |
+| popPK | Phelps_2013 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for myo-inositol, not edetate_sodium. |
+| PGx | Phelps_2013 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of myo-inositol in preterm infants and does not discuss edetate_sodium or any gene variants. |
+| popPK | Pillai_2015 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of oseltamivir, not edetate_sodium. |
+| PGx | Pillai_2015 | not_relevant | 0 | 0 | The study focuses on the pharmacokinetics of oseltamivir, not edetate_sodium, and examines physiological changes in pregnancy rather than pharmacogenomic effects. |
 | popPK | Ravenstijn_2012 | irrelevant | 0 | 0 | This is a population PK study of L-DOPA (levodopa) in rats, not edetate sodium; edetate only appears as EDTA in assay buffers. |
 | popPK | Rouaz_2021 | irrelevant | 0 | 0 | This is a review of paediatric excipients; edetate sodium is not the subject drug and no PK parameters for it appear. |
 | popPK | Simeoli_2024 | irrelevant | 0 | 0 | This is a population-PK study of budesonide; sodium edetate is only an excipient in the formulation, with no PK parameters for edetate itself. |
 | popPK | Vasović_2026 | irrelevant | 0 | 0 | A narrative review of oral peptide delivery technologies with no edetate_sodium PK parameters reported. |
-| popPK | Zingmark_2004 | irrelevant | 0 | 0 | The paper models the monoclonal antibody ATM-027, not edetate_sodium; no edetate_sodium parameters appear. |
+| popPK | Zingmark_2004 | irrelevant | 0 | 0 | The paper reports pharmacokinetic parameters for the monoclonal antibody ATM-027, not edetate_sodium. |
+| PGx | Zingmark_2004 | not_relevant | 0 | 0 | The paper models the PK/PD of the monoclonal antibody ATM-027 in multiple sclerosis patients, not edetate_sodium, and does not report pharmacogenomic effects. |
 
 
 </details>

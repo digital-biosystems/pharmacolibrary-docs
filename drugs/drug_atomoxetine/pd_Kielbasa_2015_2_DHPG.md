@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;atomoxetine&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/&quot;},{&quot;label&quot;:&quot;Kielbasa_2015_2 \u00b7 PD Plasma DHPG&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Li2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Tobin_2026_CYP2D6_Q27&quot;,&quot;label&quot;:&quot;Tobin_2026 \u00b7 CYP2D6&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/pgx_Tobin_2026_CYP2D6_Q27.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;atomoxetine&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/&quot;},{&quot;label&quot;:&quot;Kielbasa_2015_2 \u00b7 PD 3,4-Dihydroxyphenylglycol&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atomoxetine_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Li2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atomoxetine_Tobin2026_reference&quot;,&quot;label&quot;:&quot;Tobin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/Atomoxetine_Tobin2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Tobin_2026_CYP2D6_Q27&quot;,&quot;label&quot;:&quot;Tobin_2026 \u00b7 CYP2D6&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_atomoxetine/pgx_Tobin_2026_CYP2D6_Q27.md&quot;,&quot;status&quot;:&quot;Simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Plasma DHPG — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+# 3,4-Dihydroxyphenylglycol — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,9 +14,9 @@
 
 ## Record summary
 
-**As extracted:** Atomoxetine (concentrations from the PK model of Cheng_2024) drives Plasma DHPG (in pg/mL): indirect response — drug inhibits the production of Plasma DHPG.
+**As extracted:** Atomoxetine (concentrations from the PK model of Cheng_2024) drives 3,4-Dihydroxyphenylglycol (in pg/mL): indirect response — drug inhibits the production of 3,4-Dihydroxyphenylglycol.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Atomoxetine plasma concentration (ng/mL) inhibits the production (Kin) of plasma DHPG (pg/mL) via an inhibitory indirect response model, reflecting NET inhibition reducing intraneuronal NE metabolism to DHPG; key values are baseline DHPG 1240 pg/mL, Imax 0.367, and plasma IC50 2.67 ng/mL (10.5 nM). The record lists Kout 0.777 h⁻¹, but the paper describes the model as inhibition of Kin rather than of elimination.
 >
@@ -38,10 +38,7 @@ Kielbasa W et al., Pharmacodynamics of norepinephrine reup…, Journal of clinic
 | PD (effect) | Baseline | `Q324` ·  | 1240 | pg/mL | llm | Kielbasa_2015_2:pdv3 |
 | PD (effect) | K out | `Q328` ·  | 0.777 | h À1 | llm | Kielbasa_2015_2:pdv3 |
 | PD (effect) | I max | `Q323` ·  | 0.367 |  | llm | Kielbasa_2015_2:pdv3 |
-| PD (effect) | Plasma IC50 | `Q322` ·  | 2.67,10.5 | ng/mL, nM | llm | Kielbasa_2015_2:pdv3 |
-| variability | Baseline IPV | `Q312` ·  | 29 | % | llm | Kielbasa_2015_2:pdv3 |
-| variability | I max IPV | `Q312` ·  | 24 | % | llm | Kielbasa_2015_2:pdv3 |
-| variability | IC50 IPV | `Q312` ·  | 177 | % | llm | Kielbasa_2015_2:pdv3 |
+| PD (effect) | Plasma IC50 | `Q322` ·  | 2.67 | ng/mL | llm | Kielbasa_2015_2:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -49,20 +46,49 @@ Kielbasa W et al., Pharmacodynamics of norepinephrine reup…, Journal of clinic
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+## Exposure-response model
+
+`Atomoxetine_Kielbasa2015v2_PD_dhpg` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 1240 pg/mL | 1.24e-06 kg/m3 |
+| Emax | 0.367 | — |
+| EC50 | 2.67 ng/mL | 2.67e-06 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 1.24e-06, `at_EC50` = 1.012e-06, `at_inf` = 7.849e-07
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--blue">Simulated</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as IDR-I predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.875 (7/8 fields) | 1 |
+| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[Q322].value` | 2.67,10.5 | 2.67 | mismatch |
-
-</details>
+_All readers agree on the compared fields of this PD record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -76,19 +102,33 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atomoxetine/Atomoxetine_Kielbasa2015v2_PD_dhpg/Atomoxetine_Kielbasa2015v2_PD_dhpg_modelica.zip" download>Atomoxetine_Kielbasa2015v2_PD_dhpg_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_atomoxetine/Atomoxetine_Kielbasa2015v2_PD_dhpg/Atomoxetine_Kielbasa2015v2_PD_dhpg_matlab.zip" download>Atomoxetine_Kielbasa2015v2_PD_dhpg_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_atomoxetine/Atomoxetine_Kielbasa2015v2_PD_dhpg/Atomoxetine_Kielbasa2015v2_PD_dhpg_sbml.zip" download>Atomoxetine_Kielbasa2015v2_PD_dhpg_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_atomoxetine/Atomoxetine_Kielbasa2015v2_PD_dhpg/Atomoxetine_Kielbasa2015v2_PD_dhpg_cellml.zip" download>Atomoxetine_Kielbasa2015v2_PD_dhpg_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Atomoxetine_Kielbasa2015v2_PD_dhpg`. <https://pharmacolibrary.github.io/#/drugs/drug_atomoxetine/pd_Kielbasa_2015_2_DHPG>
+
+```bibtex
+@misc{pharmacolibrary_AtomoxetineKielbasa2015v2PDdhpg,
+  title  = {{Pharmacolibrary model Atomoxetine_Kielbasa2015v2_PD_dhpg}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_atomoxetine/pd_Kielbasa_2015_2_DHPG},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
 
 <div class="pk-tab-end"></div>
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Semaglutide's clearance and absorption lag time were missing from the record, preventing publication despite other defined parameters.
+> No value for semaglutide's clearance and absorption lag time; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2019_one_compartment_model" status="model_quarantined" stale="false" population="healthy adults and adults with type 2 diabetes" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Overgaard RV, Delff PH, Petri KCC, Anderson TW, Flint A, Ingwersen SH. Populatio
 
 ### Reviewer guidance
 
-**Semaglutide's clearance and absorption lag time were missing from the record, preventing publication despite other defined parameters.**
+**No value for semaglutide's clearance and absorption lag time; the covariate scenarios were not simulated (+1 more).**
 
-Clearance and absorption lag time had no extracted values, so the model relied on library placeholders instead of estimated numbers. The record includes a body weight covariate effect, but only the reference individual was simulated, not the covariate scenarios. The second reader disputed the model’s parameterization type, though both noted that clearance and volume remained undefined. Extracted — semaglutide: kabs 0.0296 h−1, V/F 9.77 L.
+The model was built, but semaglutide's clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — semaglutide: kabs 0.0296 h−1, V/F 9.77 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

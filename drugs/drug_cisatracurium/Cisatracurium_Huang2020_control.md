@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cisatracurium record rejected because the AUC unit could not be converted to SI, leaving the parameter undefined.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Huang2020_control" status="rejected" stale="false" population="patients with severe aortic regurgitation and control group" measured-compound="cisatracurium" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Huang X, Chen L, Cai Y, Wei J, Lin L, Sun J et al. Abnormal cisatracurium pharma
 
 ### Reviewer guidance
 
-**Cisatracurium record rejected because the AUC unit could not be converted to SI, leaving the parameter undefined.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The review found the area under the curve parameter had a unit that could not be converted to SI units, meaning no standard value could be calculated. Additionally, the model structure was identified as having an unreachable or orphan compartment, which has no path from the dose. Extracted — cisatracurium: kel 0.06 1/min, ki0 0.04 1/min, k12 0.26 1/min, k21 0.19 1/min, V1 56.7 ml/kg, V2 41.3 ml/kg, t1/2α 1.52 min, t1/2β 21.8 min, … (+2).
+A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — cisatracurium: kel 0.06 1/min, ki0 0.04 1/min, k12 0.26 1/min, k21 0.19 1/min, V1 56.7 ml/kg, V2 41.3 ml/kg, t1/2α 1.52 min, t1/2β 21.8 min, … (+2).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

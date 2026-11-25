@@ -1,10 +1,10 @@
 {
-  "file": "knowledge-2577c0d459.sqlite",
-  "bytes": 95961088,
-  "passages": 71539,
-  "drugs": 3232,
-  "drugbank": 21613,
-  "guideline": 4005,
-  "clinical": 2868,
-  "abstract": 43053
+  "file": "knowledge-04c8ff1a9d.sqlite",
+  "bytes": 93253632,
+  "passages": 69768,
+  "drugs": 3219,
+  "drugbank": 21506,
+  "guideline": 3985,
+  "clinical": 2864,
+  "abstract": 41413
 }

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected due to an unreachable compartment in the diclofenac model structure.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Standing2008_reference" status="rejected" stale="false" population="children and adults with acute pain" measured-compound="diclofenac" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Standing JF, Howard RF, Johnson A, Savage I, Wong IC. Population pharmacokinetic
 
 ### Reviewer guidance
 
-**Record rejected due to an unreachable compartment in the diclofenac model structure.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure contained an unreachable or orphan compartment, meaning no path exists from the dose to that part of the model. Although a second reader disagreed on the terminal half-life assignment and suggested a value of 1.06, the primary defect remained the structural integrity issue. Extracted — diclofenac: MTT 0.68 h, Fab 0.7, t1/2z 0.09 h, V2/F 4.84 l 70 kg⁻¹, CL/F 54 l h⁻¹ 70 kg⁻¹, V/F 40.7 L, kabs 0.94 h À1, tlag 0 h.
+Extracted — diclofenac: MTT 0.68 h, Fab 0.7, t1/2z 0.09 h, V2/F 4.84 l 70 kg⁻¹, CL/F 54 l h⁻¹ 70 kg⁻¹, V/F 40.7 L, kabs 0.94 h À1, tlag 0 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[t1/2a1].parameter_id`: this record has Q57, the second reading Q59; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

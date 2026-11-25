@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Paroxetine's apparent clearance (CL/F) of 141.0 L/h was rejected because the paper models quetiapine and includes paroxetine only as a drug–drug interaction covariate.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="paroxetine" model-id="Paroxetine_Chen2025_reference" status="rejected" stale="false" population="" measured-compound="paroxetine" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Chen X, Zhang Y, Yin D, Jin YW, He SM, Zhang C et al. Drug-Drug Interactions and
 
 ### Reviewer guidance
 
-**Paroxetine's apparent clearance (CL/F) of 141.0 L/h was rejected because the paper models quetiapine and includes paroxetine only as a drug–drug interaction covariate.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The study investigates the population pharmacokinetics of quetiapine; paroxetine is included only as a covariate representing a drug–drug interaction, not as the modeled analyte. The record reports paroxetine CL/F of 141.0 L/h, V/F of 1460.0 L, and an absorption rate constant of 1.46 h−1. Tlag was defaulted rather than explicitly estimated, and the parameterization assumed F=1 and Fm=1 with no molar correction. Extracted — paroxetine: CL/F 141 L/h, V/F 1.46e+03 L, kabs 1.46 h−1.
+Extracted — paroxetine: CL/F 141 L/h, V/F 1.46e+03 L, kabs 1.46 h−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

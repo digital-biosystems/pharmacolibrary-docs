@@ -166,10 +166,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.316, 0 of 1 reader(s) agree | 0.316 | cross-check disputed by a second reader: verdict disputed, agreement 0.316, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 52.5 | 25.55 | 0.4867 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 57.2 | 25.55 | 0.4467 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 84 | 25.55 | 0.3042 | days→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.316 (6 of 19 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.316 | cross-check contradicted by a second reader: verdict disputed; agreement 0.316 (6 of 19 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 52.5 | 25.55 | 0.4867 | reported 52.5 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 57.2 | 25.55 | 0.4467 | reported 57.2 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 84 | 25.55 | 0.3042 | reported 3.5 days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -33,7 +33,7 @@ Mibefradil is a calcium channel blocker that treats arterial hypertension and an
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mullan_2017_Relative_Dilation](drugs/drug_mibefradil/pd_Mullan_2017_Relative_Dilation.md) | Relative Dilation ← mibefradil · direct sigmoid Emax (Hill) effect | — | Mullan B et al., T-type voltage-gated Ca2+ channels do n…, Pharmacology research & per… (2017) | [10.1002/prp2.320](https://doi.org/10.1002/prp2.320) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mullan_2017_Relative_Dilation](drugs/drug_mibefradil/pd_Mullan_2017_Relative_Dilation.md) | Relative Dilation ← mibefradil · direct sigmoid Emax (Hill) effect | — | Mullan B et al., T-type voltage-gated Ca2+ channels do n…, Pharmacology research & per… (2017) | [10.1002/prp2.320](https://doi.org/10.1002/prp2.320) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +47,7 @@ Mibefradil is a calcium channel blocker that treats arterial hypertension and an
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-13 13:13 | 6:48 | 2/0/0 | 0/1/0 | 0/0/0 | 58,923/49,260 | einfracz / qwen3.8-27b | 10 | 2/8 | 9/1 | 0 |
+| 2026-10-13 13:13 | 6:48 | 2/0/0 | 1/0/0 | 0/0/0 | 58,923/49,260 | einfracz / qwen3.8-27b | 10 | 2/8 | 9/1 | 0 |
 
 ## Coverage
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> No bioavailability (F) value was extracted from Wu_2021, leaving this amoxicillin infant model relying on unsupported placeholder assumptions.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Wu2021_reference" status="needs_review" stale="false" population="Chinese infants" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Wu YE, Wang YK, Tang BH, Dong L, Li X, Zhang W et al. Population Pharmacokinetic
 
 ### Reviewer guidance
 
-**No bioavailability (F) value was extracted from Wu_2021, leaving this amoxicillin infant model relying on unsupported placeholder assumptions.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record contains clearance, volume, and absorption parameters, but lacks a specific estimate for F from the paper. The model builder used library placeholder values for F instead of the paper's data. Additionally, second readers could not independently confirm the values for the weight exponent, absorption rate constant, or lag time. Extracted — amoxicillin: CL 2.18 L/h, V1 2.23 L, V2 2.27 L, Q 0.713 L/h, kabs 0.17 h−1, tlag 0.125 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — amoxicillin: CL 2.18 L/h, V1 2.23 L, V2 2.27 L, Q 0.713 L/h, kabs 0.17 h−1, tlag 0.125 h.
 
 A second, independent reading of the paper (`gpt-5.6-luna`) disagrees on the value of ka: this record has 0.17, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -8,7 +8,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="ebastine" model-id="Ebastine_Kang2011_reference" status="rejected" stale="false" population="rat isolated perfused hearts" measured-compound="ebastine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="ebastine" model-id="Ebastine_Kang2011_reference" status="rejected" stale="false" population="rat isolated hearts" measured-compound="ebastine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Kang W, Elitzer S, Noh K, Bednarek T, Weiss M. Myocardial pharmacokinetics of ebastine, a substrate for cytochrome P450 2J, in rat isolated heart. British journal of pharmacology 163(8):1733–1739 (2011).
@@ -16,7 +16,7 @@ Kang W, Elitzer S, Noh K, Bednarek T, Weiss M. Myocardial pharmacokinetics of eb
 
 ## Population and dosing
 
-**Population:** rat isolated perfused hearts · condition isolated perfused heart.
+**Population:** rat isolated hearts · condition healthy.
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -34,7 +34,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +48,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-Independently confirmed by `qwen3.8-27b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -62,17 +62,17 @@ Independently confirmed by `qwen3.8-27b`.
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
-- transposed table Kang_2011_table_p3_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
+- table Kang_2011_table_p3_1: no_numeric_grid
 - text-pointer recovery: parsed 0 structural record(s) from the flattened table 1 sentence
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (4/4 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -113,4 +113,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bebastine%5D%20Ebastine_Kang2011_reference&body=Drug%3A%20ebastine%0ARecord%3A%20Ebastine_Kang2011_reference%0APaper%3A%20Kang_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ebastine/Ebastine_Kang2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 23:24 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 12:00 UTC</sub>

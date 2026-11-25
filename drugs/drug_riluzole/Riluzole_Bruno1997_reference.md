@@ -23,7 +23,7 @@ Bruno R, Vivier N, Montay G, Le Liboux A, Powe LK, Delumeau JC et al. Population
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,11 +32,10 @@ Bruno R, Vivier N, Montay G, Le Liboux A, Powe LK, Delumeau JC et al. Population
 | label | parameter | value | unit |
 |---|---|---|---|
 | Typical value of clearance | CL | 51.4 | L/hr |
-| ka (fixed) | kabs | 5.0 | /h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +47,9 @@ Bruno R, Vivier N, Montay G, Le Liboux A, Powe LK, Delumeau JC et al. Population
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — riluzole: CL 51.4 L/hr, kabs 5 /h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — riluzole: CL 51.4 L/hr.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dosage: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has none, the second reading 51.4; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,7 +58,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | Typical value of clearance | `Q22` · CL | 51.4 | L/hr | 1.428e-05 | m3/s | l/h | llm_confirmed (0.6) | Bruno_1997:abstract |
-| ka (fixed) | `Q49` · kabs | 5.0 | /h | 0.001389 | 1/s | 1/h | review_gapfill (0.7) | Nguyen_2021:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -69,32 +67,33 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- routed 'interindividual variability in plasma clearance' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - routed 'intraindividual (visit-to-visit) variability' → Q313 (IOV) to iov — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'dosage' — extend the ontology if this is a real PK parameter (source ['Bruno_1997:abstract'])
+- dropped unlinked row (NIL): 'treatment duration' — extend the ontology if this is a real PK parameter (source ['Bruno_1997:abstract'])
+- dropped unlinked row (NIL): 'recommended dosage' — extend the ontology if this is a real PK parameter (source ['Bruno_1997:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=riluzole
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Nguyen_2021's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Bruno_1997_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Bruno_1997_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clearance]` |  | 51.4 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[dosage]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 5.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[recommended dosage]` |  | 50 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical value of clearance]` | 51.4 |  | only_one_extracted |
 
 </details>
 
@@ -112,7 +111,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bruno_1997:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Nguyen_2021:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 51.4 | ['Bruno_1997:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 51.4 L/h | ['Bruno_1997:abstract'] |
@@ -149,4 +147,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Briluzole%5D%20Riluzole_Bruno1997_reference&body=Drug%3A%20riluzole%0ARecord%3A%20Riluzole_Bruno1997_reference%0APaper%3A%20Bruno_1997%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_riluzole/Riluzole_Bruno1997_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 04:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:00 UTC</sub>

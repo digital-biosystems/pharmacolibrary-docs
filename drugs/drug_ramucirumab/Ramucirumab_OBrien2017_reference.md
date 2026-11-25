@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Ramucirumab clearance of 0.0148 l h−1 is recorded, but the record was held back because its covariate effects were not simulated and a second reader disputed compound identification.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="ramucirumab" model-id="Ramucirumab_OBrien2017_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="ramucirumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,13 +58,13 @@ O'Brien L, Westwood P, Gao L, Heathman M. Population pharmacokinetic meta-analys
 
 ### Reviewer guidance
 
-**Ramucirumab clearance of 0.0148 l h−1 is recorded, but the record was held back because its covariate effects were not simulated and a second reader disputed compound identification.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines, including the effects on intercompartmental clearance (0.499) and central volume (0.556). The second reader marked both the dose compound and primary analyte as unknown, disputing their identification as ramucirumab; the findings do not identify the recorded clearance as erroneous. Extracted — ramucirumab: CL 0.0148 l h −1, V1 3.26 l, Q 0.0102 l h −1, V2 2.04 l.
+The base model was simulated, not the covariate effects the record defines. Extracted — ramucirumab: CL 0.0148 l h −1, V1 3.26 l, Q 0.0102 l h −1, V2 2.04 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ramucirumab, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,7 +148,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | cross-check disputed by a second reader: verdict disputed, agreement 0.818, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.818 (9 of 11 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | cross-check contradicted by a second reader: verdict disputed; agreement 0.818 (9 of 11 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

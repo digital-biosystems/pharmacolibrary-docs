@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the intercompartmental clearance unit was not recognized, and weight covariate exponents were misassigned.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit µg/day ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="inebilizumab" model-id="Inebilizumab_Yan2022_reference" status="rejected" stale="false" population="adult subjects with NMOSD, SSc, or MS" measured-compound="inebilizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Yan L, Kimko H, Wang B, Cimbora D, Katz E, Rees WA. Population Pharmacokinetic M
 
 ### Reviewer guidance
 
-**The record was rejected because the intercompartmental clearance unit was not recognized, and weight covariate exponents were misassigned.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit µg/day ([mass] / [time]) vs [mass] / [time].**
 
-The intercompartmental clearance parameter (Q) was extracted with a unit that could not be converted to SI, preventing validation of its dimension. The second reader indicates the weight exponent of 0.84 belongs to Q, whereas it was incorrectly assigned to theta_q900_weight. Additionally, the weight exponent of 0.39 belongs to the central volume, but it was assigned to weight_on_vca instead. Extracted — inebilizumab: CL 188 mL/day, V1 2.95e+03 mL, Q 363 mL/day, V2 2.57e+03 mL, Vmax 832 µg/day, kel 0.00294 /day, Km 5.89 µg/mL.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — inebilizumab: CL 188 mL/day, V1 2.95e+03 mL, Q 363 mL/day, V2 2.57e+03 mL, Vmax 832 µg/day, kel 0.00294 /day, Km 5.89 µg/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[km].covariate_forms`: this record has ['linear_fractional'], the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

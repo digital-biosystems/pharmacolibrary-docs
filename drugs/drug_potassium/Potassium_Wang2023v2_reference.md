@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Potassium CL/F of 10.4 L/h is attributed to a paper about another drug, so the record was rejected as irrelevant.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Wang2023v2_reference" status="rejected" stale="false" population="" measured-compound="potassium" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Wang K, Feng L, Zhang J, Zou Q, Xu F, Sun Z et al. Population Pharmacokinetic An
 
 ### Reviewer guidance
 
-**Potassium CL/F of 10.4 L/h is attributed to a paper about another drug, so the record was rejected as irrelevant.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-Neither the paper’s title nor its abstract names potassium, and the relevance screen identified the paper as about another drug. Tlag had no extracted estimate, so a library placeholder would have been used and the model held back; the apparent parameterization also assumed F=1, Fm=1, and no molar correction. Extracted — potassium: CL/F 10.4 L/h, V1/F 80.6 L, V2/F 26.5 L, Q/F 3.02 L/h, kabs 3.29 h-1.
+Extracted — potassium: CL/F 10.4 L/h, V1/F 80.6 L, V2/F 26.5 L, Q/F 3.02 L/h, kabs 3.29 h-1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

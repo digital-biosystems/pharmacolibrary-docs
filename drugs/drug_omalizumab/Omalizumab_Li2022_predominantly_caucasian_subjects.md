@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the free IgE compartment is orphaned and a unit for a pharmacokinetic parameter could not be converted to SI.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="omalizumab" model-id="Omalizumab_Li2022_predominantly_caucasian_subjects" status="rejected" stale="false" population="patients with moderate-to-severe asthma (Chinese and Caucasian)" measured-compound="omalizumab" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -53,13 +53,13 @@ Li J, Yang J, Kong L, Huang Y, Chen P, Yan X et al. Efficacy and safety of omali
 
 ### Reviewer guidance
 
-**The model was rejected because the free IgE compartment is orphaned and a unit for a pharmacokinetic parameter could not be converted to SI.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The structure links free IgE to omalizumab via an equilibrium dissociation constant, yet no parameters define inflow or outflow, leaving the compartment unreachable. Additionally, one reported unit could not be converted to standard SI units, so the corresponding parameter lacked a valid numerical value for the model. Extracted — omalizumab: Cmax 15.9 µg/mL, AUClast 594 d*µg/mL, AUC∞ 659 d*µg/mL, t1/2z 23.8 days, Cmin 6.64 ng/mL, CL 29 %, kabs 0.92 1/day, tlag 0.06 day.
+A reported unit could not be converted (Cmax, AUClast, AUC∞ and Cmin), so that value has no SI equivalent. Extracted — omalizumab: Cmax 15.9 µg/mL, AUClast 594 d*µg/mL, AUC∞ 659 d*µg/mL, t1/2z 23.8 days, Cmin 6.64 ng/mL, CL 29 %, kabs 0.92 1/day, tlag 0.06 day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of % decrease of free ige at t max: this record has none, the second reading 490; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

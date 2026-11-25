@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Ciprofloxacin record held for missing peripheral volume (24.8 L) and unexercised covariates.
+> The covariate scenarios were not simulated; t3_param_coverage.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Hirt2021_building_dataset" status="needs_review" stale="false" population="children treated with ciprofloxacin" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -61,13 +61,13 @@ Hirt D, Oualha M, Pasquiers B, Blanot S, Rubinstazjn R, Glorion C et al. Populat
 
 ### Reviewer guidance
 
-**Ciprofloxacin record held for missing peripheral volume (24.8 L) and unexercised covariates.**
+**The covariate scenarios were not simulated; t3_param_coverage.**
 
-The review found that the parameter coverage check failed because the 24.8 L peripheral volume was neither emitted nor defaulted. Additionally, the simulation only modeled the reference individual, failing to exercise the defined covariate effects such as the 0.337 renal function exponent. This means the covariate scenarios defined in the record were not simulated. Extracted — ciprofloxacin: kabs 0.893 h⁻¹, CL 8.99 L.h⁻¹, V2 24.8 L, Q 4.59 L.h⁻¹, V3 18.9 L, Fab 0.342, V 117 L.
+The base model was simulated, not the covariate effects the record defines. Extracted — ciprofloxacin: kabs 0.893 h⁻¹, CL 8.99 L.h⁻¹, V2 24.8 L, Q 4.59 L.h⁻¹, V3 18.9 L, Fab 0.342, V 117 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].covariate_forms`: this record has ['linear_fractional'], the second reading ['linear_fractional', 'linear_fractional']; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

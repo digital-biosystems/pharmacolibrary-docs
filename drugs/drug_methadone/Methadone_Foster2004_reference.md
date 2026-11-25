@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;methadone&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/&quot;},{&quot;label&quot;:&quot;Foster_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methadone_Gittel2021_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Gittel2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Shin2024_reference&quot;,&quot;label&quot;:&quot;Shin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Shin2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methadone_Gittel2021_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Gittel2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Shin2024_reference&quot;,&quot;label&quot;:&quot;Shin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Shin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methadone — `Methadone_Foster2004_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This paper's disposition core is incomplete.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
-<div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Foster2004_reference" status="needs_review" stale="false" population="methadone maintenance patients" measured-compound="(R)-methadone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Foster2004_reference" status="rejected" stale="false" population="methadone maintenance patients" measured-compound="racmethadone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Foster DJ, Somogyi AA, White JM, Bochner F. Population pharmacokinetics of (R)-, (S)- and rac-methadone in methadone maintenance patients. British journal of clinical pharmacology 57(6):742–755 (2004).
@@ -17,31 +17,27 @@ Foster DJ, Somogyi AA, White JM, Bochner F. Population pharmacokinetics of (R)-,
 
 ## Population and dosing
 
-**Population:** methadone maintenance patients · condition opioid dependence · age group adult · n = 59.
-
-**Dosed compound ≠ measured compound:** dosed rac-methadone, measured (R)-methadone.
+**Population:** methadone maintenance patients · condition opioid dependence · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 5 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL/F (l h -1 ) | CL/F | 0.19 | l h -1 |
-| k 12 (h -1 ) | k12 | 0.16 | h -1 |
-| AUC t (mg.hr. ml -1 ) † | AUCt | 0.026 | mg.hr. ml -1 |
-| C last (ng.ml -1 ) † | Ct | 0.24 | ng.ml -1 |
-| apparent volume of distribution for R-methadone | V/F | 496.0 | L |
+| V c /F | V/F | 2.1 | l kg -1 |
+| CL/F | CL/F | 16 | l h -1 |
+| 'full data analysis' clearance values | CL | -1 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,85 +47,71 @@ Foster DJ, Somogyi AA, White JM, Bochner F. Population pharmacokinetics of (R)-,
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Packiasabapathy_2020) cannot stand in for this paper's evidence. A reported unit could not be converted (AUCt and Ct), so that value has no SI equivalent. Extracted — methadone: CL/F 0.19 l h -1, k12 0.16 h -1, AUCt 0.026 mg.hr. ml -1, Ct 0.24 ng.ml -1; (R)-methadone: V/F 496 L.
+None of the extracted parameters is methadone's own; they describe racmethadone. Extracted — racmethadone: V/F 2.1 l kg -1, CL/F 16 l h -1, CL -1 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rac-methadone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has racmethadone, the second reading rac-methadone; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL/F (l h -1 ) | `Q27` · CL/F | 0.19 | l h -1 | 5.278e-08 | m3/s | l/h | exact (1) | tab_1:row1:col4 |
-| k 12 (h -1 ) | `Q301` · k12 | 0.16 | h -1 | 4.444e-05 | 1/s | 1/h | space_fold (0.95) | tab_1:row3:col4 |
-| AUC t (mg.hr. ml -1 ) † | `Q19` · AUCt | 0.026 | mg.hr. ml -1 |  |  | (h·mg)/ml | space_fold (0.95) | tab_1:row12:col4 |
-| C last (ng.ml -1 ) † | `Q75` · Ct | 0.24 | ng.ml -1 |  |  | ng/ml | llm (0.6) | tab_1:row15:col4 |
-| apparent volume of distribution for R-methadone | `Q76` · V/F | 496.0 | L | 0.496 | m3 | L | review_gapfill (0.7) | Packiasabapathy_2020:review |
+| V c /F | `Q76` · V/F | 2.1 | l kg -1 | 0.147 | m3 | L | space_fold (0.95) | Foster_2004:results_prose |
+| CL/F | `Q27` · CL/F | 16 | l h -1 | 4.444e-06 | m3/s | L/h | exact (1) | Foster_2004:results_prose |
+| 'full data analysis' clearance values | `Q22` · CL | -1 | L/h | -2.778e-07 | m3/s | L/h | boundary (0.8) | Foster_2004:other_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
-
-| label (paper) | Q-code | link |
-|---|---|---|
-| CLA | Q22 | tv_prefix |
-
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'significance (p-value) ‡' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'F-test (P-value)' — extend the ontology if this is a real PK parameter (source ['Foster_2004_table_3:row7:col1', 'Foster_2004_table_3:row7:col2', 'Foster_2004_table_3:row7:col3'])
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 70 (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 35 (source ['tab_1:footnote']); the table cell was unparseable — needs review
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=(R)-methadone
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- bound model equation to Q22 (CL): CLA = TVCL*(BW/70)^0.75*(PNA/6.8)^θPNA
-- Q22 (CL) is equation-defined: value moved to equation-variable 'CLA'; equation kept verbatim
-- gap-filled Q76 (V/F) from Packiasabapathy_2020's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- dropped unlinked row (NIL): 'F-test (P-value)' — extend the ontology if this is a real PK parameter (source ['Foster_2004_table_3:row7:col2'])
+- salvaged Q290 ('V c /F'=2.1) from results prose — parameter table was unreadable
+- salvaged Q27 ('CL/F'=16) from results prose — parameter table was unreadable
+- salvaged Q22 ("'full data analysis' clearance values"=-1) from results prose — parameter table was unreadable
+- implicit units: "'full data analysis' clearance values" → L/h (from the paper text: 'The text states: "the population median (approximately 8.5 l h -1 for all three analytes)"')
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=racmethadone
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V c /F' is the general volume)
+- status held at "Needs review" — not promoted
+- base model from table(s) without population columns (Foster_2004:discussion_prose, Foster_2004:other_prose, Foster_2004:results_prose, Foster_2004_table_3); populations (r)-methadone, (s)-methadone, rac-methadone kept as separate records
+- molar mass: PubChem entry choice failed (JSONDecodeError)
+- molar mass: none of 3 PubChem candidate(s) is 'racmethadone' (LLM) — left in mass units
+- molar mass: none found for 'racmethadone' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell tab_1:row1:col1 = '8.5 (7.6, 9.5)'
-- unparsed cell tab_1:row1:col2 = '8.7 (7.9, 9.6)'
-- unparsed cell tab_1:row1:col3 = '8.3 (7.3, 9.5)'
-- unparsed cell tab_1:row3:col1 = '0.57 (0.52, 0.61)'
-- unparsed cell tab_1:row3:col2 = '0.54 (0.50, 0.58)'
-- unparsed cell tab_1:row3:col3 = '0.55 (0.51, 0.59)'
-- unparsed cell tab_1:row12:col1 = '8.27 (7.39, 9.26)'
-- unparsed cell tab_1:row12:col2 = '4.02 (3.64, 4.44)'
-- unparsed cell tab_1:row12:col3 = '4.20 (3.69, 4.79)'
-- unparsed cell tab_1:row15:col1 = '269 (236, 308)'
-- unparsed cell tab_1:row15:col2 = '139 (124, 156)'
-- unparsed cell tab_1:row15:col3 = '128 (109, 150)'
+- table Foster_2004_table_3: unknown_column_role
+- table Foster_2004_table_3: units_need_context
+- table Foster_2004_table_3: unparsed_numeric_cell
 - companion parameter table 3 transcribed (3 record(s))
 - LLM selected parameter table(s) 2, 3
-- captured model equation CLA = TVCL*(BW/70)^0.75*(PNA/6.8)^θPNA
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (5/10 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[apparent volume of distribution for r-methadone]` | 496.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[c last (ng.ml -1 )]` | 0.24 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cla]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | rac-methadone | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | (R)-methadone | unknown | mismatch |
+| `gpt-oss-120b` | `parameters['full data analysis' clearance values]` | -1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f estimates &gt; 16 l h -1]` |  | 16 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 16 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[population median clearance]` |  | 8.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v c /f]` | 2.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | racmethadone | rac-methadone | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | racmethadone | rac-methadone | mismatch |
 
 </details>
 
@@ -143,18 +125,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['tab_1:row12:col4'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['tab_1:row1:col4'] |
-| C5_dimension_Q301 | pass | 1 / [time] |  | ['tab_1:row3:col4'] |
-| C5_dimension_Q75 | pass | [mass] / [length] ** 3 |  | ['tab_1:row15:col4'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Packiasabapathy_2020:review'] |
+| C0c_disposition_complete | pass |  |  |  |
+| C2_base_sign_Q22 | fail |  | -1 |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Foster_2004:other_prose'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 0.19 L/h | ['tab_1:row1:col4'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 496 L | ['Packiasabapathy_2020:review'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 16 L/h | ['Foster_2004:results_prose'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 147 L | ['Foster_2004:results_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -166,19 +145,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -188,4 +157,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethadone%5D%20Methadone_Foster2004_reference&body=Drug%3A%20methadone%0ARecord%3A%20Methadone_Foster2004_reference%0APaper%3A%20Foster_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methadone/Methadone_Foster2004_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:25 UTC</sub>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;cetuximab&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/&quot;},{&quot;label&quot;:&quot;Pointreau_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cetuximab_Azzopardi2011_reference&quot;,&quot;label&quot;:&quot;Azzopardi_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Azzopardi2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Cognetti2026_reference&quot;,&quot;label&quot;:&quot;Cognetti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Grisic2020_tvarcl&quot;,&quot;label&quot;:&quot;Grisic_2020_tvarcl&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Grisic2020_tvarcl.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Pointreau2016_reference&quot;,&quot;label&quot;:&quot;Pointreau_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cetuximab_Yang2026_reference&quot;,&quot;label&quot;:&quot;Yang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cetuximab_Azzopardi2011_reference&quot;,&quot;label&quot;:&quot;Azzopardi_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Azzopardi2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Cognetti2026_reference&quot;,&quot;label&quot;:&quot;Cognetti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Grisic2020_tvarcl&quot;,&quot;label&quot;:&quot;Grisic_2020_tvarcl&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Grisic2020_tvarcl.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Pointreau2016_reference&quot;,&quot;label&quot;:&quot;Pointreau_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cetuximab_Yang2026_reference&quot;,&quot;label&quot;:&quot;Yang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record lists a 12 L/d clearance for cetuximab but the second reader could not extract any parameter values, creating a cross-check dispute.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Pointreau2016_reference" status="needs_review" stale="false" population="patients with head and neck squamous cell carcinoma" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Pointreau Y, Azzopardi N, Ternant D, Calais G, Paintaud G. Cetuximab Pharmacokin
 
 ### Reviewer guidance
 
-**The record lists a 12 L/d clearance for cetuximab but the second reader could not extract any parameter values, creating a cross-check dispute.**
+**cross_check_disputed; x1_cross_check.**
 
-The record assigns a 12 L/d clearance and 56 mg/d input rate to cetuximab, yet the second reader found no values for clearance, input rate, or volumes. This absence of shared parameter estimates prevented agreement between the readers. The record remains in a needs review state because the second reader disputed the model parameterization and all specific PK values. Extracted — cetuximab: V1 3 L, CL 12 L/d, V2 15 L, Q 15 L/d, R1 56 mg/d, allometric_exponent 21 BSA.
+A reported unit could not be converted (R1, allometric_exponent and equation variable), so that value has no SI equivalent. Extracted — cetuximab: V1 3 L, CL 12 L/d, V2 15 L, Q 15 L/d, R1 56 mg/d, allometric_exponent 21 BSA.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -157,7 +157,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.267, 0 of 1 reader(s) agree | 0.267 | cross-check disputed by a second reader: verdict disputed, agreement 0.267, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.267 (4 of 15 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.267 | cross-check contradicted by a second reader: verdict disputed; agreement 0.267 (4 of 15 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

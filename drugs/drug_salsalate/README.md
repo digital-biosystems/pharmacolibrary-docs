@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Cao_2011_Glu](drugs/drug_salsalate/pd_Cao_2011_Glu.md) | Blood glucose ← salicylate · disease-progression model | — | Cao Y et al., Modeling diabetes disease progression a…, The Journal of pharmacology… (2011) | [10.1124/jpet.111.185686](https://doi.org/10.1124/jpet.111.185686) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Cao_2011_Glu](drugs/drug_salsalate/pd_Cao_2011_Glu.md) | Blood glucose ← salicylate · disease-progression model | — | Cao Y et al., Modeling diabetes disease progression a…, The Journal of pharmacology… (2011) | [10.1124/jpet.111.185686](https://doi.org/10.1124/jpet.111.185686) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:12 | 0:37 | 0/0/0 | 1/0/0 | 0/0/0 | 68,436/2,070 | einfracz / qwen3.8-27b | 8 | 4/5 | 7/1 | 0 |
+| 2026-10-07 06:12 | 0:37 | 0/0/0 | 0/1/0 | 0/0/0 | 68,436/2,070 | einfracz / qwen3.8-27b | 8 | 4/5 | 7/1 | 0 |
 
 ## Coverage
 

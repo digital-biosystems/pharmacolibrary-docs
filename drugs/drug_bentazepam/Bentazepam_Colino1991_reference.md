@@ -6,16 +6,16 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Bentazepam elimination rate constant units conflict with rate constant dimensions, causing rejection of abstract-only record.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l/h ([length] ** 3 / [time]) vs 1 / [time]; Q47 unit l/h ([length] ** 3 / [time]) vs 1 / [time].
 
-<div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Colino1991_reference" status="rejected" stale="false" population="patients receiving anxiolytic therapy" measured-compound="bentazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Colino1991_reference" status="rejected" stale="false" population="patients receiving anxiolytic treatment" measured-compound="bentazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Colino CI, Lastra CF, López FG, Ledesma A, Mariño EL. Open-loop feedback control of serum bentazepam concentrations and Bayesian estimation in multiple dosage regimens in patients. International journal of clinical pharmacology, therapy, and toxicology 29(11):457–462 (1991).
 
 ## Population and dosing
 
-**Population:** patients receiving anxiolytic therapy · condition anxiety (anxiolytic treatment) · age group adult · n = 10.
+**Population:** patients receiving anxiolytic treatment · condition anxiety · age group adult.
 
 ## Model
 
@@ -46,13 +46,13 @@ Colino CI, Lastra CF, López FG, Ledesma A, Mariño EL. Open-loop feedback contr
 
 ### Reviewer guidance
 
-**Bentazepam elimination rate constant units conflict with rate constant dimensions, causing rejection of abstract-only record.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l/h ([length] ** 3 / [time]) vs 1 / [time]; Q47 unit l/h ([length] ** 3 / [time]) vs 1 / [time].**
 
-The elimination rate constant (kel) is listed as 0.16 l/h, conflicting with the required 1/h unit for a rate parameter. The record is abstract-only, meaning these summary statistics substitute for a fitted model. No further structural details are available to resolve the dimensional mismatch. Extracted — bentazepam: kabs 2.33 l/h, V 1.21 l/Kg, kel 0.16 l/h, t1/2z 4.33 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bentazepam: kabs 2.33 l/h, V 1.21 l/Kg, kel 0.16 l/h, t1/2z 4.33 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -61,7 +61,7 @@ Independently confirmed by `gpt-oss-120b`.
 | Ka | `Q49` · kabs | 2.33 | l/h |  |  | l/h | exact (1) | Colino_1991:abstract |
 | Vd | `Q61` · V | 1.209 | l/Kg | 0.08463 | m3 | l/kg | exact (1) | Colino_1991:abstract |
 | Ke | `Q47` · kel | 0.16 | l/h |  |  | l/h | exact (1) | Colino_1991:abstract |
-| elimination half-life | `Q57` · t1/2z | 4.33 | h | 1.559e+04 | s | h | llm (0.6) | Colino_1991:abstract |
+| elimination half-life | `Q57` · t1/2z | 4.33 | h | 1.559e+04 | s | h | half_life_rule (0.95) | Colino_1991:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -85,7 +85,7 @@ Independently confirmed by `gpt-oss-120b`.
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -135,4 +135,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbentazepam%5D%20Bentazepam_Colino1991_reference&body=Drug%3A%20bentazepam%0ARecord%3A%20Bentazepam_Colino1991_reference%0APaper%3A%20Colino_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bentazepam/Bentazepam_Colino1991_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:18 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:21 UTC</sub>

@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:17 | 0:33 | 0/0/0 | 0/0/0 | 0/0/0 | 12,381/1,362 | openai / gpt-6-luna | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 03:56 | 0:02 | 0/0/0 | 0/0/0 | 0/0/0 | 3,121/151 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -41,24 +41,28 @@ _not available_
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Golman_1975.pdf` | Golman K, Absorption of metrizamide from cereb ro…, Journal of pharmaceutical s… (1975) | popPK | 9 | [10.1002/jps.2600640310](https://doi.org/10.1002/jps.2600640310) | [1151624](https://pubmed.ncbi.nlm.nih.gov/1151624) | A human one-compartment PK model is reported, but the mean absorption-rate value is not stated numerically. |
 | `Elliott_1999.pdf` | Elliott P et al., Ionic mechanisms underlying excitatory…, Neuroscience (1999) | pd | 4 | [10.1016/s0306-4522(98)00534-x](https://doi.org/10.1016/s0306-4522(98)00534-x) | [10338299](https://www.ncbi.nlm.nih.gov/pubmed/10338299) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 17:17 UTC</sub>
+<sub>queue written 2026-11-24 03:56 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Cortijo_1997 | irrelevant | 0 | 0 | Metrizamide is only used to isolate human eosinophils; no metrizamide disposition parameters are reported. |
-| popPK | Elliott_1999 | irrelevant | 0 | 0 | Metrizamide was used only for density-gradient cell isolation; no metrizamide pharmacokinetic parameters are reported. |
-| popPK | Golman_1975 | relevant | 9 | 2 | A human one-compartment PK model is reported, but the mean absorption-rate value is not stated numerically. |
-| popPK | Turner_1994 | irrelevant | 0 | 0 | Metrizamide was only used to isolate human granulocytes; no metrizamide disposition parameters are reported. |
-| popPK | Winkler_1980 | irrelevant | 0 | 0 | This review reports no quantitative metrizamide disposition parameters. |
+| popPK | Cortijo_1997 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study of the PDE inhibitor SCA40, where metrizamide is mentioned only as a density medium for cell isolation (density gradients) and not as the subject drug for pharmacokinetic analysis. |
+| PGx | Cortijo_1997 | not_relevant | 0 | 0 | The study investigates the pharmacodynamic effects of SCA40 in asthma models and uses metrizamide only as a medium for cell separation, with no pharmacogenomic analysis or effect of gene variants on metrizamide parameters. |
+| popPK | Elliott_1999 | irrelevant | 0 | 0 | Metrizamide is used as a cell separation agent in a neurophysiology study, not as a drug subject to pharmacokinetic analysis. |
+| PGx | Elliott_1999 | not_relevant | 0 | 0 | The paper describes the use of metrizamide as a laboratory reagent for cell isolation (density gradient centrifugation), not as a therapeutic drug whose pharmacokinetics or pharmacodynamics are being analyzed in relation to genetic variants. |
+| popPK | Golman_1975 | relevant | 9 | 2 | The paper describes a pharmacokinetic study of metrizamide in humans using a one-compartment model, but the abstract only provides qualitative findings (e.g., "&gt;50% disappeared") and lacks specific numeric values for rate constants or volumes. |
+| PGx | Golman_1975 | not_relevant | 0 | 0 | The study reports general pharmacokinetics in humans without investigating any specific gene variant or genotype. |
+| popPK | Turner_1994 | irrelevant | 0 | 0 | Metrizamide is used only as a density gradient medium for cell isolation, and the study focuses on granulocyte activation, not metrizamide pharmacokinetics. |
+| PGx | Turner_1994 | not_relevant | 0 | 0 | The paper investigates granulocyte function; metrizamide is only used as a density gradient reagent, and no pharmacokinetic or pharmacodynamic effects of a gene variant on metrizamide are reported. |
+| popPK | Winkler_1980 | irrelevant | 0 | 0 | The paper is a review of the mechanism of brain penetration of metrizamide and does not report quantitative pharmacokinetic parameters such as clearance or volume of distribution. |
+| PGx | Winkler_1980 | not_relevant | 0 | 0 | The paper reviews the mechanism of metrizamide brain penetration based on fluid dynamics and does not mention any genetic variants or pharmacogenomic effects. |
 
 
 </details>

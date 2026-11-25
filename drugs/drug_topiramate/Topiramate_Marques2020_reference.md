@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Topiramate's absorption rate constant (127) and clearance (65) are recorded with dimensionless units, conflicting with their required time-based dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit % (dimensionless) vs 1 / [time]; Q22 unit % (dimensionless) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="topiramate" model-id="Topiramate_Marques2020_reference" status="rejected" stale="false" population="neonates with hypoxic ischaemic encephalopathy undergoing therapeutic hypothermia" measured-compound="topiramate" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Marques MR, Garcia-Robles A, Usach I, Vento M, Poveda JL, Peris JE et al. Topira
 
 ### Reviewer guidance
 
-**Topiramate's absorption rate constant (127) and clearance (65) are recorded with dimensionless units, conflicting with their required time-based dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit % (dimensionless) vs 1 / [time]; Q22 unit % (dimensionless) vs [length] ** 3 / [time].**
 
-The record assigns a unit of '%' to the absorption rate constant, which physically requires a 1/time dimension. Similarly, clearance is given in '%', whereas the standard pharmacokinetic unit implies volume per time. Additionally, the record is based solely on the abstract, so these extracted values act as summary statistics rather than fitted parameters. Extracted — topiramate: V 3.22 L, kabs 127 %, CL 65 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — topiramate: V 3.22 L, kabs 127 %, CL 65 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has topiramate, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

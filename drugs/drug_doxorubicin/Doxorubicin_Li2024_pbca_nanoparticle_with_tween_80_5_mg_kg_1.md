@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The doxorubicin volume of distribution value of 0.0764 L was rejected as outside the physiological window.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Li2024_pbca_nanoparticle_with_tween_80_5_mg_kg_1" status="rejected" stale="false" population="rats and mice" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Li Z, Kovshova T, Malinovskaya J, Knoll J, Shanehsazzadeh S, Osipova N et al. Bl
 
 ### Reviewer guidance
 
-**The doxorubicin volume of distribution value of 0.0764 L was rejected as outside the physiological window.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a doxorubicin volume of distribution of 0.0764 L with a terminal half-life of 4.57 h. This volume value falls outside the plausible physiological range for a small-molecule drug, indicating a unit or scale extraction error. The rejection reason explicitly identifies the clearance or volume magnitude as implausible. Extracted — doxorubicin: kel 4.17 h−1, ktr 0.32 h−1, t1/2z 4.57 h, V 0.0764 l.
+Extracted — doxorubicin: kel 4.17 h−1, ktr 0.32 h−1, t1/2z 4.57 h, V 0.0764 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading doxil® → doxorubicin (interconversion); pbca nanoparticles → doxorubicin (interconversion); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

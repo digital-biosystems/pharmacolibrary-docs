@@ -32,7 +32,7 @@ Bivalirudin is a direct thrombin inhibitor used to treat unstable angina. It is 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhang_2012_ACT](drugs/drug_bivalirudin/pd_Zhang_2012_ACT.md) | activated clotting time biomarker turnover ← bivalirudin | — | Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zhang_2012_ACT](drugs/drug_bivalirudin/pd_Zhang_2012_ACT.md) | activated clotting time biomarker turnover ← bivalirudin | — | Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

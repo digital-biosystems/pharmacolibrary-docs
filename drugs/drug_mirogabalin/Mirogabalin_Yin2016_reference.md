@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because clearance, Cmax, and AUC values are reported as percentages, which are dimensionless and cannot represent mass, volume, or concentration units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit % (dimensionless) vs [length] ** 3 / [time]; Q32 unit % (dimensionless) vs [mass] / [length] ** 3; Q18 unit % (dimensionless) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="mirogabalin" model-id="Mirogabalin_Yin2016_reference" status="rejected" stale="false" population="subjects with varying degrees of renal function" measured-compound="mirogabalin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -47,13 +47,13 @@ Yin OQ, Merante D, Truitt K, Miller R. Population pharmacokinetic modeling and s
 
 ### Reviewer guidance
 
-**Record rejected because clearance, Cmax, and AUC values are reported as percentages, which are dimensionless and cannot represent mass, volume, or concentration units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit % (dimensionless) vs [length] ** 3 / [time]; Q32 unit % (dimensionless) vs [mass] / [length] ** 3; Q18 unit % (dimensionless) vs [mass] * [time] / [length] ** 3.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The parameters total clearance (25%), Cmax (37%), and AUCSS (26%) are all assigned the unit '%', which is dimensionless. This conflicts with the required physical dimensions for these parameters: [length]**3/[time] for clearance, [mass]/[length]**3 for concentration, and [mass]*[time]/[length]**3 for AUC. Extracted — mirogabalin: CL 25 %, Cmax 37 %, AUCSS 26 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mirogabalin: CL 25 %, Cmax 37 %, AUCSS 26 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aucss higher (%) mild renal impairment: this record has none, the second reading 26; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> Ranibizumab was rejected because its reported total clearance of 0.450 mL/day is outside the physiological window, consistent with a unit/scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ranibizumab" model-id="Ranibizumab_Crawshaw2025_reference" status="rejected" stale="false" population="cynomolgus macaques" measured-compound="ranibizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Crawshaw JR, Gaffney EA, Gertz M, Maini PK, Caruso A. Modeling the Ocular Pharma
 
 ### Reviewer guidance
 
-**Ranibizumab was rejected because its reported total clearance of 0.450 mL/day is outside the physiological window, consistent with a unit/scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists ranibizumab total clearance as 0.450 mL/day and volume of distribution as 0.502 mL; the finding describes the clearance/volume magnitude as physiologically implausible. A second reader reported clearance as 1.007, so the recorded clearance value is disputed. Extracted — ranibizumab: kel 0.102 1/day, koff 1.07, KD 0.008, CL 0.45 mL/day, V 0.502 mL, kabs 0.0528 days−1.
+Extracted — ranibizumab: kel 0.102 1/day, koff 1.07, KD 0.008, CL 0.45 mL/day, V 0.502 mL, kabs 0.0528 days−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading ranibizumab → vr (interconversion); vr → rvr (interconversion); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

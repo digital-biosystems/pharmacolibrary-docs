@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Glibenclamide’s absorption rate constant kabs was reported as 0.63 L/h, conflicting with its inverse-time dimension and prompting rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="glibenclamide" model-id="Glibenclamide_Rambiritch2016v2_reference" status="rejected" stale="false" population="South African adults with type 2 diabetes" measured-compound="glibenclamide" parameterization="apparent" topology="1C"></div>
 
@@ -41,7 +41,7 @@ Rambiritch V, Naidoo P, Maharaj B, Pillai G. Population pharmacokinetic modeling
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +51,13 @@ Rambiritch V, Naidoo P, Maharaj B, Pillai G. Population pharmacokinetic modeling
 
 ### Reviewer guidance
 
-**Glibenclamide’s absorption rate constant kabs was reported as 0.63 L/h, conflicting with its inverse-time dimension and prompting rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time].**
 
-The record defines kabs as an absorption rate constant but gives its unit as L/h; the dimensional comparison was L/h ([length]³/time) versus 1/time. The reported unit could not be converted to SI, so no SI value was obtained. Extracted — glibenclamide: kabs 0.63 L/h, CL/F 2.1 L/h, V2/F 10 L, Q/F 2.77 L/h, V3/F 68.1 L.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — glibenclamide: kabs 0.63 L/h, CL/F 2.1 L/h, V2/F 10 L, Q/F 2.77 L/h, V3/F 68.1 L.
 
-<sub>reviewed by gpt-6-luna</sub>
+Independently confirmed by `gpt-oss-120b`.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -120,6 +122,21 @@ The record defines kabs as an absorption rate constant but gives its unit as L/h
 - captured model equation Pj = TVP*exp(ηj)(1)where TVP is the typical value of the PK parameter Pv (eg, CL/f) in the population, Pj is the individual value for P in the jth individual, and ηj is a random variable with mean of zero and variance ωP2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
+
+_All readers agree on the compared fields of this record._
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

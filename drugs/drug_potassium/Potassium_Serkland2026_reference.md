@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Potassium’s reported clearance of 0.153 L/day was refused because the paper concerns another drug, not potassium.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Serkland2026_reference" status="rejected" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Serkland TT, Oma AF, Hallin EI, Øverås MH, Nygaard GO, Myhr KM et al. Pharmaco
 
 ### Reviewer guidance
 
-**Potassium’s reported clearance of 0.153 L/day was refused because the paper concerns another drug, not potassium.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-Neither the paper’s title nor abstract names potassium, and the relevance screen rejected the paper as being about another drug. The record lists potassium clearance as 0.153 L/day, central and peripheral distribution volumes of 2.58 and 1.95 L, and intercompartmental clearance of 0.22 L/day. A second reader disputed the record (agreement 0.769): two entries were absent from their reading (0.109 and 1.70), and another differed (0.234 versus 0.138). Extracted — potassium: CL 0.153 L/day, V1 2.58 L, V2 1.95 L, Q 0.22 L/day.
+Extracted — potassium: CL 0.153 L/day, V1 2.58 L, V2 1.95 L, Q 0.22 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q1: this record has 0.109, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.769, 0 of 1 reader(s) agree | 0.769 | cross-check disputed by a second reader: verdict disputed, agreement 0.769, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.769 (10 of 13 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.769 | cross-check contradicted by a second reader: verdict disputed; agreement 0.769 (10 of 13 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

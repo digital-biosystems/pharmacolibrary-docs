@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> A second reader disputed the record, failing to verify the extracted values for semaglutide clearance, volumes, and absorption rate.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Langeskov2022_reference" status="needs_review" stale="false" population="" measured-compound="semaglutide" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Langeskov EK, Kristensen K. Population pharmacokinetic of paracetamol and atorva
 
 ### Reviewer guidance
 
-**A second reader disputed the record, failing to verify the extracted values for semaglutide clearance, volumes, and absorption rate.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was held because the second reader disagreed with 0 of 1 reader, yielding an agreement ratio of 0.0. Disagreements included the second reader assigning null to the apparent clearance of 11.1 L/h, central volume of 3250.0 L, and absorption rate constant of 9.4 h−1. Additionally, the second reader provided conflicting values for two other parameters, 0.791 and 34, against the record's 7.28 and 25. Extracted — semaglutide: CL/F 11.1 L/h, V1/F 3.25e+03 L, V2/F 2.17e+03 L, Q/F 199 L/h, kabs 9.4 h−1.
+Extracted — semaglutide: CL/F 11.1 L/h, V1/F 3.25e+03 L, V2/F 2.17e+03 L, Q/F 199 L/h, kabs 9.4 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 17, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.0 (0 of 9 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0 | cross-check contradicted by a second reader: verdict disputed; agreement 0.0 (0 of 9 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

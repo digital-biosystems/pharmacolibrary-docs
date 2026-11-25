@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model's terminal half-life is 0.399 times the paper's 23.1 h, and tucatinib's volume of distribution lacks a recognized SI unit.
+> The model does not reproduce the paper's terminal half-life (model/paper ratio 0.399); c2_base_Q18 failed (ratio 0.8101) (+7 more).
 
 <div class="pk-model-meta" hidden drug="tucatinib" model-id="Tucatinib_Zhang2025_her2_mcrcn_68" status="needs_review" stale="false" population="healthy participants and patients with HER2-positive metastatic breast or colorectal cancer" measured-compound="tucatinib" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Zhang D, Taylor A, Zhao JJ, Endres CJ, Topletz-Erickson A. Correction: Populatio
 
 ### Reviewer guidance
 
-**The model's terminal half-life is 0.399 times the paper's 23.1 h, and tucatinib's volume of distribution lacks a recognized SI unit.**
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 0.399); c2_base_Q18 failed (ratio 0.8101) (+7 more).**
 
-The terminal half-life check failed with a model-to-paper ratio of 0.3985, indicating the model's elimination phase is much faster than the reported 23.1 h. Additionally, nine consistency checks failed, with ratios ranging from 0.2183 to 1.236. A unit for tucatinib's volume of distribution was not recognized for standardization, preventing a SI value from being derived. The second reader disagreed on the extracted AUC and Cmax interaction ratios, recording null values for both. Extracted — tucatinib: AUCSS 3.37e+03 ng·h/mL, Cmax 405 ng/mL, Ctrough 405 ng/mL, AUC ratio 2.51, Cmax_ratio 1.95, CL/F 89 L/h, V/F 829 L, t1/2β 23.1 h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUCSS, Cmax and Ctrough), so that value has no SI equivalent. Extracted — tucatinib: AUCSS 3.37e+03 ng·h/mL, Cmax 405 ng/mL, Ctrough 405 ng/mL, AUC ratio 2.51, Cmax_ratio 1.95, CL/F 89 L/h, V/F 829 L, t1/2β 23.1 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of rac, auc: this record has 2.51, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;axitinib&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/&quot;},{&quot;label&quot;:&quot;Rini_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Axitinib_Garrett2014_base&quot;,&quot;label&quot;:&quot;Garrett_2014_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Garrett2014_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Tortorici2014_reference&quot;,&quot;label&quot;:&quot;Tortorici_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Tortorici2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Garrett2014_final&quot;,&quot;label&quot;:&quot;Garrett_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Garrett2014_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Rini2013_reference&quot;,&quot;label&quot;:&quot;Rini_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Rini2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Ma_2019_TV&quot;,&quot;label&quot;:&quot;Ma_2019 \u00b7 TV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/pd_Ma_2019_TV.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Axitinib_Rini2013_reference&quot;,&quot;label&quot;:&quot;Rini_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Rini2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Axitinib_Tortorici2014_reference&quot;,&quot;label&quot;:&quot;Tortorici_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Tortorici2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Garrett2014_base&quot;,&quot;label&quot;:&quot;Garrett_2014_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Garrett2014_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Garrett2014_final&quot;,&quot;label&quot;:&quot;Garrett_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Garrett2014_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Ma2019_reference&quot;,&quot;label&quot;:&quot;Ma_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Ma2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ma_2019_TV&quot;,&quot;label&quot;:&quot;Ma_2019 \u00b7 TV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/pd_Ma_2019_TV.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # axitinib — `Axitinib_Rini2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Bioavailability and lag time were left at library defaults, and key pharmacokinetic parameters for axitinib were unverified due to reliance on the abstract.
-
-<div class="pk-model-meta" hidden drug="axitinib" model-id="Axitinib_Rini2013_reference" status="needs_review" stale="false" population="healthy volunteers, patients with metastatic RCC, and patients with other solid tumors" measured-compound="axitinib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="axitinib" model-id="Axitinib_Rini2013_reference" status="simulated" stale="false" population="adults with metastatic renal cell carcinoma and healthy volunteers" measured-compound="axitinib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rini BI, Garrett M, Poland B, Dutcher JP, Rixe O, Wilding G et al. Axitinib in metastatic renal cell carcinoma: results of a pharmacokinetic and pharmacodynamic analysis. Journal of clinical pharmacology 53(5):491–504 (2013).
@@ -17,29 +15,26 @@ Rini BI, Garrett M, Poland B, Dutcher JP, Rixe O, Wilding G et al. Axitinib in m
 
 ## Population and dosing
 
-**Population:** healthy volunteers, patients with metastatic RCC, and patients with other solid tumors · condition healthy volunteers, metastatic renal cell carcinoma, and other solid tumors · age group adult · n = 590.
+**Population:** adults with metastatic renal cell carcinoma and healthy volunteers · condition metastatic renal cell carcinoma · age group adult · n = 590.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference.svg" alt="Axitinib_Rini2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL | CL | 14.6 | L/h |
-| V(c) | V | 47.3 | L |
-| k a | kabs | 78.7 | per day |
+| mean systemic clearance (CL) | CL | 14.6 | L/h |
+| central volume of distribution (V(c)) | V | 47.3 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,21 +44,20 @@ Rini BI, Garrett M, Poland B, Dutcher JP, Rixe O, Wilding G et al. Axitinib in m
 
 ### Reviewer guidance
 
-**Bioavailability and lag time were left at library defaults, and key pharmacokinetic parameters for axitinib were unverified due to reliance on the abstract.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-The record relies on abstract-only summary statistics rather than a fitted model, substituting placeholder values for bioavailability and lag time. A second reader could not verify the reported clearance of 14.6 L/h, volume of 47.3 L, or absorption constant of 78.7 per day. Extracted — axitinib: CL 14.6 L/h, V 47.3 L, kabs 78.7 per day.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl: this record has 14.6, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of central volume of distribution (v(c)): this record has 47.3, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 14.6 | L/h | 4.056e-06 | m3/s | l/h | exact (1) | Rini_2013:abstract |
-| V(c) | `Q61` · V | 47.3 | L | 0.0473 | m3 | l | exact (1) | Rini_2013:abstract |
-| k a | `Q49` · kabs | 78.7 | per day | 0.0009109 | 1/s | 1/h | review_gapfill (0.7) | Ma_2019:review |
+| mean systemic clearance (CL) | `Q22` · CL | 14.6 | L/h | 4.056e-06 | m3/s | l/h | llm_confirmed (0.6) | Rini_2013:abstract |
+| central volume of distribution (V(c)) | `Q61` · V | 47.3 | L | 0.0473 | m3 | l | boundary_compartment (0.9) | Rini_2013:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,32 +66,32 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=axitinib
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'central volume of distribution (V(c))' is the general volume)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Ma_2019's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Rini_2013_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 | `qwen3.8-27b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[central volume of distribution (v(c))]` | 47.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 14.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean systemic clearance]` | 14.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` |  | 47.3 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cl]` | 14.6 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[k a]` | 78.7 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[v]` | 47.3 |  | only_one_extracted |
@@ -118,7 +112,6 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Rini_2013:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Ma_2019:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Rini_2013:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 14.6 | ['Rini_2013:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -132,10 +125,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=axitinib) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | a second reader did not contradict the extraction |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict partial; agreement 0.5 (4 of 8 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -151,15 +144,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_modelica.zip" download>Axitinib_Rini2013_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_fmi.zip" download>Axitinib_Rini2013_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_modelica.zip" download>Axitinib_Rini2013_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_fmi.zip" download>Axitinib_Rini2013_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_matlab.zip" download>Axitinib_Rini2013_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_matlab_simbio.zip" download>Axitinib_Rini2013_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_sbml.zip" download>Axitinib_Rini2013_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_cellml.zip" download>Axitinib_Rini2013_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_matlab_simbio.zip" download>Axitinib_Rini2013_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_sbml.zip" download>Axitinib_Rini2013_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_cellml.zip" download>Axitinib_Rini2013_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 ## Model interface
@@ -169,20 +162,18 @@ The parameters this record sets on the template, in the template's SI units, and
 | direction | role | name | value | unit (SI) |
 |---|---|---|---|---|
 | input | compound | `MM` | 0.3865 | kg/mol |
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `F` | 1 | 1 |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 1e-05 | kg |
 | input | model | `Cl` | 4.056e-06 | m3/s |
 | input | model | `VdPerKg` | 0.0006757 | m3/kg |
-| input | model | `ka` | 0.0009109 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
 ## Tested with
 
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
 - Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
 - No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
@@ -205,14 +196,14 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 10 mg, single dose, first-order absorption (ka 3.28 /h, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 10 mg oral (L01EK01) (defined daily dose)._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
-<dbs-fmusim paramsurl="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_axitinib/Axitinib_Rini2013_reference/Axitinib_Rini2013_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Axitinib_Rini2013_reference_params.json` · controls `Axitinib_Rini2013_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Axitinib_Rini2013_reference_params.json` · controls `Axitinib_Rini2013_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baxitinib%5D%20Axitinib_Rini2013_reference&body=Drug%3A%20axitinib%0ARecord%3A%20Axitinib_Rini2013_reference%0APaper%3A%20Rini_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_axitinib/Axitinib_Rini2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 21:35 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:07 UTC</sub>

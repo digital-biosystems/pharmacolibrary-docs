@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The flucloxacillin record was rejected because the intercompartmental clearance unit was incorrectly recorded as mmol/L.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit mmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="flucloxacillin" model-id="Flucloxacillin_Jager2020_base" status="rejected" stale="false" population="critically ill patients" measured-compound="flucloxacillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Jager NGL, van Hest RM, Xie J, Wong G, Ulldemolins M, Brüggemann RJM et al. Opt
 
 ### Reviewer guidance
 
-**The flucloxacillin record was rejected because the intercompartmental clearance unit was incorrectly recorded as mmol/L.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit mmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The parameter representing drug movement between central and peripheral compartments was listed with a concentration unit (mmol/L) instead of a flow unit like L/h. This dimension mismatch contradicted the pharmacokinetic definition of the parameter as an intercompartmental clearance. Additionally, the specific unit reported was not recognized by the standard conversion system, leaving the parameter without a valid SI value. Extracted — flucloxacillin: Bmax 0.46 mmol/L, KD 0.0397 mmol/L, CL 54.6 L/h, V1 51.5 L, V2 55.9 L, Q 66.4 L/h.
+A reported unit could not be converted (Bmax and KD), so that value has no SI equivalent. Extracted — flucloxacillin: Bmax 0.46 mmol/L, KD 0.0397 mmol/L, CL 54.6 L/h, V1 51.5 L, V2 55.9 L, Q 66.4 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flucloxacillin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because a second reader disputed the volume of distribution value of 323300.0 mL.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ethinylestradiol" model-id="Ethinylestradiol_Trujillode2014_reference" status="needs_review" stale="false" population="" measured-compound="ethinylestradiol" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Trujillo-de Santiago G, Patricio Sáenz-Collins C, García-Arellano L, Moisés �
 
 ### Reviewer guidance
 
-**The record was held back because a second reader disputed the volume of distribution value of 323300.0 mL.**
+**cross_check_disputed; x1_cross_check.**
 
-The extracted volume of distribution for ethinylestradiol is listed as 323300.0 mL, but the second reader marked this value as null. This disagreement contributed to an agreement score of 0.818, where 0 of 1 reader agreed with the record. A secondary dispute also involved a value of 150, which the second reader identified as 0.0244. Extracted — ethinylestradiol: CL 7.89 L h-1, V 3.23e+05 mL.
+Extracted — ethinylestradiol: CL 7.89 L h-1, V 3.23e+05 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q47: this record has 150, the second reading 0.0244; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -121,7 +121,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | cross-check disputed by a second reader: verdict disputed, agreement 0.818, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.818 (9 of 11 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | cross-check contradicted by a second reader: verdict disputed; agreement 0.818 (9 of 11 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

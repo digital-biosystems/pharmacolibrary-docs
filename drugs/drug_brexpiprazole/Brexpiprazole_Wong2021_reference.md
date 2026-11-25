@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Brexpiprazole clearance and volume are from a review, but absorption parameters were defaulted because the source lacked estimates.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Wong2021_reference" status="needs_review" stale="false" population="healthy participants" measured-compound="brexpiprazole" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Wong DF, Raoufinia A, Bricmont P, Brašić JR, McQuade RD, Forbes RA et al. An o
 
 ### Reviewer guidance
 
-**Brexpiprazole clearance and volume are from a review, but absorption parameters were defaulted because the source lacked estimates.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record uses apparent pharmacokinetic values (CL/F 25.7 mL/h/kg, V/F 124.3201 L) from a secondary source rather than a primary study. The model builder substituted library defaults for the absorption rate constant and lag time, which are not reported in the source text. A second reader disputed the record, citing disagreements on specific extracted values and the use of default parameters instead of explicit estimates. Extracted — brexpiprazole: CL/F 25.7 mL/h/kg, V/F 124 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — brexpiprazole: CL/F 25.7 mL/h/kg, V/F 124 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 134, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.0 (0 of 11 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0 | cross-check contradicted by a second reader: verdict disputed; agreement 0.0 (0 of 11 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

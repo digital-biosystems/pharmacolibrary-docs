@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;famciclovir&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Famciclovir_Schenkel2013_reference&quot;,&quot;label&quot;:&quot;Schenkel_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # famciclovir
 
@@ -23,19 +24,20 @@ Famciclovir is a nucleoside analogue antiviral used to treat herpes zoster and g
 | famciclovir | parent | 321.332 | C14H19N5O4 | DrugBank | [3324](https://pubchem.ncbi.nlm.nih.gov/compound/3324) | Blumer_2010, Griffioen_2024, Ogungbenro_2009, Schenkel_2013 |
 | penciclovir | metabolite | 253.262 | C10H15N5O3 | PubChem | [135398748](https://pubchem.ncbi.nlm.nih.gov/compound/135398748) | Blumer_2010, Griffioen_2024, Ogungbenro_2009, Schenkel_2013 |
 
+## Start here
+
+> **Schenkel_2013_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients undergoing cataract surgery. [Run it in the simulator](drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference.md?tab=Simulation) · [record](drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q351 — no SI value to build from</sub> | [Blumer_2010_13_months_to_2_years](drugs/drug_famciclovir/Famciclovir_Blumer2010_13_months_to_2_years.md) | — | 1-compartment (no model) | 3 | Blumer J et al., Single-dose pharmacokinetics of famcicl…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.01508-09](https://doi.org/10.1128/AAC.01508-09) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q351 — no SI value to build from</sub> | [↳ 2_to_6_years](drugs/drug_famciclovir/Famciclovir_Blumer2010_2_to_6_years.md) | — | 1-compartment (no model) | 3 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q351 — no SI value to build from</sub> | [↳ 6_months](drugs/drug_famciclovir/Famciclovir_Blumer2010_6_months.md) | — | 1-compartment (no model) | 3 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q351 — no SI value to build from</sub> | [↳ 6_to_12_months](drugs/drug_famciclovir/Famciclovir_Blumer2010_6_to_12_months.md) | — | 1-compartment (no model) | 3 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q351 — no SI value to build from</sub> | [↳ 6_to_12_years](drugs/drug_famciclovir/Famciclovir_Blumer2010_6_to_12_years.md) | — | 1-compartment (no model) | 3 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q351 — no SI value to build from</sub> | [↳ no_of_parameters_estimated](drugs/drug_famciclovir/Famciclovir_Blumer2010_no_of_parameters_estimated.md) | — | 1-compartment (no model) | 1 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Blumer_2010_reference](drugs/drug_famciclovir/Famciclovir_Blumer2010_reference.md) | — | 1-compartment (no model) | 1 | Blumer J et al., Single-dose pharmacokinetics of famcicl…, Antimicrobial agents and ch… (2010) | [10.1128/AAC.01508-09](https://doi.org/10.1128/AAC.01508-09) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T3_param_coverage</sub> | [Schenkel_2013_reference](drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 9 | Schenkel F et al., Intraocular penetration of penciclovir…, The Journal of antimicrobia… (2013) | [10.1093/jac/dkt064](https://doi.org/10.1093/jac/dkt064) |
 | <span class="pk-rf" hidden data-species="other animal" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Griffioen_2024_reference](drugs/drug_famciclovir/Famciclovir_Griffioen2024_reference.md) | — | 1-compartment (no model) | 8 | Griffioen JA et al., Penciclovir pharmacokinetics after oral…, American journal of veterin… (2024) | [10.2460/ajvr.24.02.0039](https://doi.org/10.2460/ajvr.24.02.0039) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [Ogungbenro_2009_reference](drugs/drug_famciclovir/Famciclovir_Ogungbenro2009_reference.md) | — | 1-compartment (no model) | 7 (+1 cov.) | Ogungbenro K et al., Population pharmacokinetics and optimal…, British journal of clinical… (2009) | [10.1111/j.1365-2125.2009.03479.x](https://doi.org/10.1111/j.1365-2125.2009.03479.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Schenkel_2013_reference](drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference.md) | — | 1-compartment (no model) | 0 | Schenkel F et al., Intraocular penetration of penciclovir…, The Journal of antimicrobia… (2013) | [10.1093/jac/dkt064](https://doi.org/10.1093/jac/dkt064) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,46 +51,47 @@ Famciclovir is a nucleoside analogue antiviral used to treat herpes zoster and g
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:14 | 21:59 | 6/3/0 | 0/0/0 | 0/0/0 | 533,484/102,699 | openai / gpt-6-luna | 10 | 3/7 | 10/0 | 0 |
+| 2026-11-23 22:00 | 0:04 | 2/2/0 | 0/0/0 | 0/0/0 | 3,584/151 | einfracz / qwen3.8-27b | 10 | 3/7 | 10/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 18 matched, 17 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 9  ·  extracted 0  ·  needs review 6  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Griffioen_2024.pdf` | Griffioen JA et al., Penciclovir pharmacokinetics after oral…, American journal of veterin… (2024) | popPK | 10 | [10.2460/ajvr.24.02.0039](https://doi.org/10.2460/ajvr.24.02.0039) | [38684186](https://pubmed.ncbi.nlm.nih.gov/38684186) | Numeric penciclovir pharmacokinetic parameters after famciclovir dosing are reported in the evidence. |
-
-<sub>queue written 2026-10-07 16:53 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bacon_1996 | irrelevant | 0 | 0 | This is an in-vitro antiviral activity study and reports no famciclovir pharmacokinetic parameters. |
+| popPK | Bacon_1996 | irrelevant | 0 | 0 | The study is an in-vitro antiviral activity assay of penciclovir, containing no pharmacokinetic parameters or models. |
+| PGx | Bacon_1996 | not_relevant | 0 | 0 | The paper describes in vitro antiviral activity (PD) of penciclovir versus acyclovir but does not report any pharmacogenomic effects based on gene variants. |
+| PGx | Blumer_2010 | not_relevant | 0 | 0 | The paper focuses on the effect of age, body weight, and postconceptional age (maturation) on famciclovir pharmacokinetics, with no analysis of genetic variants or genotypes. |
 | popPK | Bordicchia_2021 | irrelevant | 0 | 0 | This is a feline calicivirus study with no famciclovir pharmacokinetic parameters reported. |
-| popPK | Das_2023 | irrelevant | 0 | 0 | Famciclovir is only mentioned as a standard antiviral, with no pharmacokinetic parameters reported. |
+| popPK | Das_2023 | irrelevant | 0 | 0 | The paper focuses on the synthesis and in-vitro antiviral mechanism of new amide analogues, with no population pharmacokinetic modeling or quantitative disposition parameters for famciclovir. |
+| PGx | Das_2023 | not_relevant | 0 | 0 | The paper describes the synthesis and antiviral efficacy of new non-nucleoside analogues, not the pharmacogenomics of famciclovir. |
 | popPK | Enosi_2019 | irrelevant | 0 | 0 | This is an in-vitro antiviral study of NITD008 and reports no famciclovir pharmacokinetic parameters. |
 | popPK | Fumian_2018 | irrelevant | 0 | 0 | Famciclovir was tested only for in-vitro antiviral activity, with no pharmacokinetic disposition parameters reported. |
-| popPK | Kim_2007 | irrelevant | 0 | 0 | This synthesis and antiviral-activity study reports no famciclovir pharmacokinetic parameters. |
-| popPK | Ramesh_2025 | irrelevant | 0 | 0 | This paper models ADTKD progression in humans and reports no famciclovir pharmacokinetic parameters. |
+| popPK | Kim_2007 | irrelevant | 0 | 0 | The paper reports the synthesis and in vitro antiviral activity of nucleoside analogues, containing no pharmacokinetic data for famciclovir. |
+| PGx | Kim_2007 | not_relevant | 0 | 0 | The paper focuses on the synthesis of novel nucleoside derivatives and their antiviral activity against viruses, containing no information regarding famciclovir or pharmacogenomics. |
+| PGx | Ogungbenro_2009 | not_relevant | 0 | 0 | The paper reports a population PK model using demographic (age, weight) and physiological (creatinine clearance) covariates, but does not report any pharmacogenomic effects (gene variants/genotypes) on PK parameters. |
+| popPK | Ramesh_2025 | irrelevant | 0 | 0 | The paper models the progression of autosomal dominant tubulointerstitial kidney disease (eGFR decline) and does not involve famciclovir or any pharmacokinetic parameters. |
+| PGx | Ramesh_2025 | not_relevant | 0 | 0 | The paper analyzes the progression of kidney disease (eGFR decline) in patients with genetic mutations (ADTKD), but it does not involve the drug famciclovir or report a pharmacogenomic effect on its pharmacokinetics or pharmacodynamics. |
 | popPK | Romanowski_2021 | irrelevant | 0 | 0 | The study measures filociclovir antiviral activity, not famciclovir pharmacokinetics, and reports no famciclovir disposition parameters. |
+| PGx | Schenkel_2013 | not_relevant | 0 | 0 | The study investigates pharmacokinetics based on demographic and physiopathological covariates (creatinine clearance, body weight, ACE inhibitors) but does not report any genetic variants or pharmacogenomic data. |
 | popPK | Spraider_2020 | irrelevant | 0 | 0 | This porcine ventilation study reports no famciclovir pharmacokinetic parameters. |
-| popPK | Spraider_2024 | irrelevant | 0 | 0 | This is a human ventilation study with no famciclovir pharmacokinetic parameters. |
-| popPK | Tollefson_2022 | irrelevant | 0 | 0 | The paper studies filociclovir in cell culture, not famciclovir pharmacokinetics. |
-| popPK | Yajima_2017 | irrelevant | 0 | 0 | This is an in-vitro antiviral study, not a famciclovir pharmacokinetic study, and reports no famciclovir disposition values. |
-| popPK | Yan_2024 | irrelevant | 0 | 0 | This is an in-vitro handelin antiviral study and reports no famciclovir pharmacokinetic parameters. |
+| popPK | Spraider_2024 | irrelevant | 0 | 0 | The study concerns ventilator settings and respiratory compliance in cardiac surgery patients, with no pharmacokinetic data for famciclovir. |
+| PGx | Spraider_2024 | not_relevant | 0 | 0 | The paper analyzes sex-related differences in mechanical ventilation parameters (tidal volume, compliance) and does not involve famciclovir or pharmacogenomics. |
+| popPK | Tollefson_2022 | irrelevant | 0 | 0 | The study reports in vitro antiviral potency (EC50) of filociclovir against adenovirus, not pharmacokinetic parameters (CL, V, ka) for famciclovir or its metabolites in a subject. |
+| PGx | Tollefson_2022 | not_relevant | 0 | 0 | The paper discusses the antiviral efficacy of filociclovir against adenovirus and does not mention famciclovir or any pharmacogenomic effects. |
+| popPK | Yajima_2017 | irrelevant | 0 | 0 | The study focuses on the in vitro anti-herpetic mechanisms of amenamevir, acyclovir, and foscavir, with famciclovir mentioned only as a comparator drug without any pharmacokinetic data. |
+| PGx | Yajima_2017 | not_relevant | 0 | 0 | The paper describes the antiviral mechanism of amenamevir and compares it with acyclovir and famciclovir, but it does not report any pharmacogenomic studies or gene variants affecting the PK/PD of famciclovir. |
+| popPK | Yan_2024 | irrelevant | 0 | 0 | The paper investigates the antiviral activity of handelin against feline calicivirus and does not involve famciclovir or any pharmacokinetic parameters. |
+| PGx | Yan_2024 | not_relevant | 0 | 0 | The paper concerns feline calicivirus and handelin, with no mention of famciclovir or pharmacogenomics. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfamciclovir%5D&body=Drug%3A%20famciclovir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_famciclovir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 16:53 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 13:38 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The dichlorazepate compartment lacks a path from the dose, rendering the nordazepam model structurally invalid.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="nordazepam" model-id="Nordazepam_Bertler1983_reference" status="rejected" stale="false" population="healthy adults" measured-compound="desmethyldiazepam (nordazepam)" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -48,13 +48,13 @@ Bertler A, Lindgren S, Magnusson JO, Malmgren H. Pharmacokinetics of chlorazepat
 
 ### Reviewer guidance
 
-**The dichlorazepate compartment lacks a path from the dose, rendering the nordazepam model structurally invalid.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The metabolite formation link exists, but the dichlorazepate compartment has no origin, making it an orphan structure. The clearance value of 13.0 ml/min and bioavailability of 100% could not form a valid connected model. Because only the abstract was available, no fitted parameter set existed to establish a proper dosing pathway. Extracted — monopotassiumchlorazepate: Fab 100 %; desmethyldiazepam (nordazepam): CL 13 ml/min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is nordazepam's own; they describe monopotassiumchlorazepate and desmethyldiazepam (nordazepam). Extracted — monopotassiumchlorazepate: Fab 100 %; desmethyldiazepam (nordazepam): CL 13 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dichlorazepate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -151,4 +151,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnordazepam%5D%20Nordazepam_Bertler1983_reference&body=Drug%3A%20nordazepam%0ARecord%3A%20Nordazepam_Bertler1983_reference%0APaper%3A%20Bertler_1983%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nordazepam/Nordazepam_Bertler1983_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:43 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:32 UTC</sub>

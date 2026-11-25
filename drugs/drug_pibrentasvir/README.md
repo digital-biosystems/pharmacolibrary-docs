@@ -33,7 +33,7 @@ Pibrentasvir is a direct-acting antiviral used to treat hepatitis C. It is given
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ng_2017_HCV_replication](drugs/drug_pibrentasvir/pd_Ng_2017_HCV_replication.md) | HCV replication in replicon cells (luciferase reporter activity) ← pibrentasvir · direct sigmoid Emax (Hill) effect | — | Ng TI et al., Antimicrobial agents and ch… (2017) | [10.1128/AAC.02558-16](https://doi.org/10.1128/AAC.02558-16) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Nguyen_2020_RLU](drugs/drug_pibrentasvir/pd_Nguyen_2020_RLU.md) | HCV replicon replication (luciferase activity) ← pibrentasvir · direct sigmoid Emax (Hill) effect | — | Nguyen D et al., Efficacy of NS5A inhibitors against unu…, Journal of hepatology (2020) | [10.1016/j.jhep.2020.05.029](https://doi.org/10.1016/j.jhep.2020.05.029) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Oberoi_2020_QTcF](drugs/drug_pibrentasvir/pd_Oberoi_2020_QTcF.md) | time-matched, placebo-corrected, baseline-adjusted Fridericia-corrected QT interval ← pibrentasvir · direct linear effect | — | Oberoi RK et al., A Thorough QT Study of the Combination…, Clinical therapeutics (2020) | [10.1016/j.clinthera.2020.05.009](https://doi.org/10.1016/j.clinthera.2020.05.009) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Schnell_2018_EC50](drugs/drug_pibrentasvir/pd_Schnell_2018_EC50.md) | HCV replicon replication (luciferase reporter) inhibition by pibrentasvir in transient replicon assay ← pibrentasvir · direct sigmoid Emax (Hill) effect | — | Schnell G et al., Hepatitis C virus genetic diversity by…, PloS one (2018) | [10.1371/journal.pone.0205186](https://doi.org/10.1371/journal.pone.0205186) |
 
 <details class="legend">
@@ -48,7 +48,7 @@ Pibrentasvir is a direct-acting antiviral used to treat hepatitis C. It is given
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:24 | 2:23 | 1/0/0 | 3/0/0 | 0/0/0 | 171,460/6,476 | ollama / glm-5.3-flash | 4 | 1/3 | 4/0 | 0 |
+| 2026-11-24 02:42 | 0:04 | 1/0/0 | 3/0/0 | 0/0/0 | 3,942/180 | einfracz / qwen3.8-27b | 4 | 1/3 | 4/0 | 0 |
 
 ## Coverage
 
@@ -63,19 +63,22 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Suleiman_2020.pdf` | Suleiman AA et al., Population Pharmacokinetics of Glecapre…, Journal of clinical pharmac… (2020) | popPK | 9 | [10.1002/jcph.1524](https://doi.org/10.1002/jcph.1524) | [31515816](https://pubmed.ncbi.nlm.nih.gov/31515816) | Population PK (2-compartment model) of pibrentasvir in humans, but only exposure ratios (e.g., 21% higher AUC with cirrhosis) appear; CL/V/parameter estimates likely in tables/supplements not provided. |
+| `Suleiman_2020.pdf` | Suleiman AA et al., Population Pharmacokinetics of Glecapre…, Journal of clinical pharmac… (2020) | popPK | 10 | [10.1002/jcph.1524](https://doi.org/10.1002/jcph.1524) | [31515816](https://pubmed.ncbi.nlm.nih.gov/31515816) | The study describes a population PK model for pibrentasvir with 2-compartment modeling, but specific numeric parameter values (CL, V, Q, ka) are not explicitly listed in the provided text, likely residing in the full results or supplementary tables. |
 
-<sub>queue written 2026-10-07 16:22 UTC</sub>
+<sub>queue written 2026-11-24 02:42 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Ng_2017 | irrelevant | 0 | 0 | In vitro antiviral activity/resistance study with EC50s only; no PK disposition parameters (CL, V, half-life, or PK model) for pibrentasvir. |
-| popPK | Nguyen_2020 | irrelevant | 0 | 0 | In vitro replicon study of antiviral EC50 efficacy, not a PK study; no disposition parameters (CL, V, half-life) for pibrentasvir are reported. |
-| popPK | Oberoi_2020 | irrelevant | 2 | 1 | This is a QT/ECG safety study; pibrentasvir is dosed but no PK disposition parameters (CL, V, half-life, population-PK model) are reported, only concentration-QTc relationships. |
+| popPK | Nguyen_2020 | irrelevant | 0 | 0 | This is an in vitro virology study assessing the antiviral efficacy (EC50) of pibrentasvir against HCV replicons, not a pharmacokinetic study measuring disposition parameters like clearance or volume. |
+| PGx | Nguyen_2020 | not_relevant | 0 | 0 | The paper focuses on drug susceptibility of viral subtypes (NS5A resistance) rather than a pharmacogenomic effect on the patient's PK/PD. |
+| popPK | Oberoi_2020 | irrelevant | 2 | 0 | The paper is a Thorough QT study focused on cardiac safety and PK-PD relationship, not a primary pharmacokinetic study reporting quantitative disposition parameters like clearance, volume, or half-life for pibrentasvir. |
+| PGx | Oberoi_2020 | not_relevant | 0 | 0 | The study is a thorough QT trial in healthy subjects and does not report any pharmacogenomic effects or gene variant analyses. |
 | popPK | Schnell_2018 | irrelevant | 0 | 0 | This is an HCV genetic diversity/virology study; pibrentasvir is only the treatment drug and no PK parameters (CL, V, half-life, PK model) are reported. |
-| popPK | Suleiman_2020 | relevant | 9 | 4 | Population PK (2-compartment model) of pibrentasvir in humans, but only exposure ratios (e.g., 21% higher AUC with cirrhosis) appear; CL/V/parameter estimates likely in tables/supplements not provided. |
+| popPK | Suleiman_2020 | relevant | 10 | 4 | The study describes a population PK model for pibrentasvir with 2-compartment modeling, but specific numeric parameter values (CL, V, Q, ka) are not explicitly listed in the provided text, likely residing in the full results or supplementary tables. |
+| PGx | Suleiman_2020 | not_relevant | 0 | 0 | The paper analyzes population PK covariates (demographics, disease status) but does not report any pharmacogenomic effects or gene variant associations for pibrentasvir. |
 
 
 </details>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Aminolevulinic acid was rejected because its reported CL of 1.13 L h−1 relative to central volume V1 of 0.0515 L gives an implausible clearance/volume scale.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="aminolevulinic acid" model-id="AminolevulinicAcid_Cao2023_reference" status="rejected" stale="false" population="" measured-compound="aminolevulinic_acid" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Cao C, Yin H, Yang B, Yue Q, Wu G, Gu M et al. Intra-Operative Definition of Gli
 
 ### Reviewer guidance
 
-**Aminolevulinic acid was rejected because its reported CL of 1.13 L h−1 relative to central volume V1 of 0.0515 L gives an implausible clearance/volume scale.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports total clearance of 1.13 L h−1 and central-compartment volume of 0.0515 L; the review finding identifies the clearance/volume magnitude as implausible, consistent with a unit or scale extraction error. A second reader disagreed with several extracted parameter values, but those disagreements are not identified as the reason for rejection. Extracted — aminolevulinic acid: CL 1.13 L h−1, V1 0.0515 L, V2 4.39 L, Q 2.26 L h−1.
+Extracted — aminolevulinic acid: CL 1.13 L h−1, V1 0.0515 L, V2 4.39 L, Q 2.26 L h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q317: this record has none, the second reading 4.07; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

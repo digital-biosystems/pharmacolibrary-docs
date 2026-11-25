@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The source paper models propofol and fentanyl, not pancuronium, which is merely a co-administered covariate, invalidating the extracted PK parameters for the drug.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="pancuronium" model-id="Pancuronium_Bienert2020_reference" status="rejected" stale="false" population="" measured-compound="pancuronium" parameterization="apparent" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Bienert A, Sobczyński P, Młodawska K, Hartmann-Sobczyńska R, Grześkowiak E, 
 
 ### Reviewer guidance
 
-**The source paper models propofol and fentanyl, not pancuronium, which is merely a co-administered covariate, invalidating the extracted PK parameters for the drug.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The review notes that pancuronium is not the subject of the Bienert_2020 study, which focuses on the pharmacokinetics of propofol and fentanyl. Consequently, the extracted values for clearance (0.569 L/min) and volumes of distribution (25.8 L and 478.0 L) do not represent a fitted model for pancuronium. Additionally, the model builder had to default the absorption rate constant and lag time because these were not reported in the source text. Extracted — pancuronium: CL/F 0.569 L/min, V1/F 25.8 L, V2/F 478 L, Q 1.89 L/min.
+Extracted — pancuronium: CL/F 0.569 L/min, V1/F 25.8 L, V2/F 478 L, Q 1.89 L/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 1.54, the second reading 5.59; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (3 of 12 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (3 of 12 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -142,41 +142,41 @@ _All readers agree on the compared fields of this record._
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_cmax | reference | fail | 0.00674 | 0.0008499 | 0.1261 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00269 | 0.0008499 | 0.3159 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00052 | 0.0008499 | 1.634 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00269 | 0.0008499 | 0.3159 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00118 | 0.0008499 | 0.7203 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00298 | 0.0008499 | 0.2852 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00587 | 0.0008499 | 0.1448 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00052 | 0.0008499 | 1.634 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 7e-05 | 0.0008499 | 12.14 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00054 | 0.0008499 | 1.574 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00258 | 0.0008499 | 0.3294 | μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00674 | 0.0008499 | 0.1261 | reported 6.74 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00269 | 0.0008499 | 0.3159 | reported 2.69 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00052 | 0.0008499 | 1.634 | reported 0.52 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00269 | 0.0008499 | 0.3159 | reported 2.69 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00118 | 0.0008499 | 0.7203 | reported 1.18 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00298 | 0.0008499 | 0.2852 | reported 2.98 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00587 | 0.0008499 | 0.1448 | reported 5.87 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00052 | 0.0008499 | 1.634 | reported 0.52 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 7e-05 | 0.0008499 | 12.14 | reported 0.07 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00054 | 0.0008499 | 1.574 | reported 0.54 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00258 | 0.0008499 | 0.3294 | reported 2.58 μg/ml→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 6 | 0.0008499 |  | unresolved concentration unit (exp 'n', sim 'kg/m3') |
-| T1_t_half_terminal | reference | fail | 0.96 | 2.118 | 2.206 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.81 | 2.118 | 1.17 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.21 | 2.118 | 0.6599 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.81 | 2.118 | 1.17 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.87 | 2.118 | 2.435 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.78 | 2.118 | 1.19 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 4.01 | 2.118 | 0.5282 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.21 | 2.118 | 0.6599 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.12 | 2.118 | 1.891 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.41 | 2.118 | 0.6212 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 10.69 | 2.118 | 0.1981 | hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.96 | 2.118 | 2.206 | reported 0.96 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.81 | 2.118 | 1.17 | reported 1.81 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.21 | 2.118 | 0.6599 | reported 3.21 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.81 | 2.118 | 1.17 | reported 1.81 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.87 | 2.118 | 2.435 | reported 0.87 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.78 | 2.118 | 1.19 | reported 1.78 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 4.01 | 2.118 | 0.5282 | reported 4.01 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.21 | 2.118 | 0.6599 | reported 3.21 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.12 | 2.118 | 1.891 | reported 1.12 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.41 | 2.118 | 0.6212 | reported 3.41 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 10.69 | 2.118 | 0.1981 | reported 10.69 hr→SI vs simulated h |
 | T1_t_half_terminal | reference | skipped | 5 | 2.118 |  | unresolved time unit 'n' |
-| T1_tmax | reference | fail | 0.86 | 1.131 | 1.315 | hr→SI vs simulated h |
-| T1_tmax | reference | pass | 1.04 | 1.131 | 1.087 | hr→SI vs simulated h |
-| T1_tmax | reference | fail | 0.67 | 1.131 | 1.688 | hr→SI vs simulated h |
-| T1_tmax | reference | pass | 1.04 | 1.131 | 1.087 | hr→SI vs simulated h |
-| T1_tmax | reference | fail | 0.75 | 1.131 | 1.508 | hr→SI vs simulated h |
-| T1_tmax | reference | fail | 0.75 | 1.131 | 1.508 | hr→SI vs simulated h |
-| T1_tmax | reference | fail | 4 | 1.131 | 0.2827 | hr→SI vs simulated h |
-| T1_tmax | reference | fail | 0.67 | 1.131 | 1.688 | hr→SI vs simulated h |
-| T1_tmax | reference | fail | 0.33 | 1.131 | 3.426 | hr→SI vs simulated h |
-| T1_tmax | reference | fail | 0.75 | 1.131 | 1.508 | hr→SI vs simulated h |
-| T1_tmax | reference | fail | 2 | 1.131 | 0.5654 | hr→SI vs simulated h |
+| T1_tmax | reference | fail | 0.86 | 1.131 | 1.315 | reported 0.86 hr→SI vs simulated h |
+| T1_tmax | reference | pass | 1.04 | 1.131 | 1.087 | reported 1.04 hr→SI vs simulated h |
+| T1_tmax | reference | fail | 0.67 | 1.131 | 1.688 | reported 0.67 hr→SI vs simulated h |
+| T1_tmax | reference | pass | 1.04 | 1.131 | 1.087 | reported 1.04 hr→SI vs simulated h |
+| T1_tmax | reference | fail | 0.75 | 1.131 | 1.508 | reported 0.75 hr→SI vs simulated h |
+| T1_tmax | reference | fail | 0.75 | 1.131 | 1.508 | reported 0.75 hr→SI vs simulated h |
+| T1_tmax | reference | fail | 4 | 1.131 | 0.2827 | reported 4.0 hr→SI vs simulated h |
+| T1_tmax | reference | fail | 0.67 | 1.131 | 1.688 | reported 0.67 hr→SI vs simulated h |
+| T1_tmax | reference | fail | 0.33 | 1.131 | 3.426 | reported 0.33 hr→SI vs simulated h |
+| T1_tmax | reference | fail | 0.75 | 1.131 | 1.508 | reported 0.75 hr→SI vs simulated h |
+| T1_tmax | reference | fail | 2 | 1.131 | 0.5654 | reported 2.0 hr→SI vs simulated h |
 | T1_tmax | reference | skipped | 6 | 1.131 |  | unresolved time unit 'n' |
 
 <details class="legend">

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The 0.0127 L/h clearance and 6.53 L central volume are implausible for intravenous natalizumab, indicating a unit or scale error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_Wang2020_reference" status="rejected" stale="false" population="" measured-compound="natalizumab" parameterization="apparent" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Wang Y, Marier JF, Lavigne J, Kassir N, Martin P. Population Pharmacokinetics an
 
 ### Reviewer guidance
 
-**The 0.0127 L/h clearance and 6.53 L central volume are implausible for intravenous natalizumab, indicating a unit or scale error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-Natalizumab is a monoclonal antibody typically administered intravenously, making the extracted oral bioavailability-adjusted parameters and absorption rate constant physiologically inappropriate. The clearance of 0.0127 L/h and central volume of 6.53 L fall outside the expected range for this molecule. A second reader identified significant discrepancies in additional extracted values, such as 61.8 and 19.6, further undermining the reliability of the record's numeric data. Extracted — natalizumab: CL/F 0.0127 L/h, V1/F 6.53 L, V2/F 0.0216 L, Q/F 0.000345 L/h, kabs 0.0187 h−1, tlag 2.61 h.
+Extracted — natalizumab: CL/F 0.0127 L/h, V1/F 6.53 L, V2/F 0.0216 L, Q/F 0.000345 L/h, kabs 0.0187 h−1, tlag 2.61 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 61.8, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

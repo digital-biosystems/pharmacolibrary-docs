@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:07 | 0:19 | 0/0/0 | 0/0/0 | 0/0/0 | 5,931/176 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 23:01 | 0:03 | 0/0/0 | 0/0/0 | 0/0/0 | 3,223/159 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -45,15 +45,20 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Staubus_1978.pdf` | Staubus AE et al., Saturation kinetics of iocetamic acid:…, Investigative radiology (1978) | popPK | 6 | [10.1097/00004424-197801000-00017](https://doi.org/10.1097/00004424-197801000-00017) | [147248](https://pubmed.ncbi.nlm.nih.gov/147248) | PK study of iocetamic acid in bile-fistula dogs, but numeric parameter values are not present in the provided evidence. |
+| `Staubus_1978.pdf` | Staubus AE et al., Saturation kinetics of iocetamic acid:…, Investigative radiology (1978) | popPK | 9 | [10.1097/00004424-197801000-00017](https://doi.org/10.1097/00004424-197801000-00017) | [147248](https://pubmed.ncbi.nlm.nih.gov/147248) | The paper reports quantitative pharmacokinetic parameters (saturation kinetics, biliary excretion rates) for iocetamic acid in dogs, but specific numeric values are not present in the provided text. |
 
-<sub>queue written 2026-10-07 22:07 UTC</sub>
+<sub>queue written 2026-11-23 23:01 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Staubus_1978 | relevant | 6 | 3 | PK study of iocetamic acid in bile-fistula dogs, but numeric parameter values are not present in the provided evidence. |
+| popPK | Golberg_1977 | irrelevant | 0 | 0 | The study is a clinical evaluation of cholecystographic opacification quality and does not report pharmacokinetic parameters. |
+| PGx | Golberg_1977 | not_relevant | 0 | 0 | The paper is a clinical comparison of contrast agents and does not involve pharmacogenomics or gene variants. |
+| popPK | Lutman_1980 | irrelevant | 0 | 0 | The study is a comparative diagnostic trial assessing radiographic opacification and liver function, with no pharmacokinetic parameters reported. |
+| PGx | Lutman_1980 | not_relevant | 0 | 0 | The paper compares two different contrast agents (iopronic vs iocetamic acid) without investigating the influence of any genetic variants or genotypes on their pharmacokinetics or pharmacodynamics. |
+| popPK | Staubus_1978 | relevant | 9 | 0 | The paper reports quantitative pharmacokinetic parameters (saturation kinetics, biliary excretion rates) for iocetamic acid in dogs, but specific numeric values are not present in the provided text. |
+| PGx | Staubus_1978 | not_relevant | 0 | 0 | The study compares pharmacokinetics of two contrast agents in dogs using infusion rates but reports no pharmacogenomic effects or gene variant analysis. |
 
 
 </details>

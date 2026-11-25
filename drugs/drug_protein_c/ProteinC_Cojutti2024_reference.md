@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;protein C&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/&quot;},{&quot;label&quot;:&quot;Cojutti_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Every check that could be run on this record passed.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Cojutti2024_reference" status="rejected" stale="false" population="" measured-compound="protein_c" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,11 +50,13 @@ Cojutti PG, Tedeschi S, Zamparini E, Viale P, Pea F. Population Pharmacokinetics
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
+
+Extracted — protein c: CL 0.031 L/h, V1 5.93 L, V2 9.55 L, Q 0.038 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 0.703; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -119,14 +121,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | fail | protein_c (or metabolite) | paper about another drug | paper subject is not protein_c: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=protein_c) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | protein_c (or metabolite) | paper about another drug |  | paper subject is not protein_c: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=protein_c) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict partial; agreement 0.8 (8 of 10 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

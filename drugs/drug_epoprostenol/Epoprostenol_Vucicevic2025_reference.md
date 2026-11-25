@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Epoprostenol CL/F of 13.9 L/h was refused because the cited paper is about another drug and neither its title nor abstract names epoprostenol.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="epoprostenol" model-id="Epoprostenol_Vucicevic2025_reference" status="rejected" stale="false" population="" measured-compound="epoprostenol" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Vucicevic K, Michalickova D, Obradovic B, Ranin J, Jevtovic D, Lukic R et al. Po
 
 ### Reviewer guidance
 
-**Epoprostenol CL/F of 13.9 L/h was refused because the cited paper is about another drug and neither its title nor abstract names epoprostenol.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The record lists epoprostenol CL/F at 13.9 L/h and V/F at 237.0 L as oral quantities adjusted for bioavailability, plus an absorption rate constant of 0.3 h-1. It records F=1 and Fm=1 as assumptions, no molar correction, and Tlag as defaulted rather than explicitly estimated. Extracted — epoprostenol: CL/F 13.9 L/h, V/F 237 L, kabs 0.3 h-1.
+Extracted — epoprostenol: CL/F 13.9 L/h, V/F 237 L, kabs 0.3 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q37: this record has 5.3, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.778 (7 of 9 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zakhari_1986_T4](drugs/drug_thiethylperazine/pd_Zakhari_1986_T4.md) | plasma thyroxine (T4) biomarker turnover ← thiethylperazine | — | Zakhari NA et al., Determination of phenothiazines by char…, Talanta (1986) | [10.1016/0039-9140(86)80025-x](https://doi.org/10.1016/0039-9140(86)80025-x) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zakhari_1986_T4](drugs/drug_thiethylperazine/pd_Zakhari_1986_T4.md) | plasma thyroxine (T4) biomarker turnover ← thiethylperazine | — | Zakhari NA et al., Determination of phenothiazines by char…, Talanta (1986) | [10.1016/0039-9140(86)80025-x](https://doi.org/10.1016/0039-9140(86)80025-x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

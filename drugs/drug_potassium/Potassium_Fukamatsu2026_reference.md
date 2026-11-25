@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Potassium was rejected because its clearance of 0.005 L/hr was judged implausible in magnitude, suggesting a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Fukamatsu2026_reference" status="rejected" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Fukamatsu M, Miyamae M, Kamata R, Takeda K. An ordinary differential equation-ba
 
 ### Reviewer guidance
 
-**Potassium was rejected because its clearance of 0.005 L/hr was judged implausible in magnitude, suggesting a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record gives potassium total clearance as 0.005 L/hr, and the finding identifies an implausible clearance/volume magnitude attributed to a unit/scale extraction error. It also reports a central-compartment volume of 0.05 L and an absorption rate constant of 0.5 1/hr, with no separate finding stated for those values. Extracted — potassium: CL 0.005 L/hr, V1 0.05 L, kabs 0.5 1/hr.
+Extracted — potassium: CL 0.005 L/hr, V1 0.05 L, kabs 0.5 1/hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q25: this record has 0.645, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The alfaxalone record was refused because cross-check agreement was 0.467, below the 0.5 threshold, due to parameter mismatches.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="alfaxalone" model-id="Alfaxalone_Goodchild2020_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="alfaxalone" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Goodchild CS, Serrao JM, Sear JW, Anderson BJ. Pharmacokinetic and Pharmacodynam
 
 ### Reviewer guidance
 
-**The alfaxalone record was refused because cross-check agreement was 0.467, below the 0.5 threshold, due to parameter mismatches.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The second reader disagreed with the recorded values for central volume (0.99 L) and intercompartmental clearance (0.87 L/min), recording nulls instead. The agreement ratio of 0.467 falls below the required 0.5, resulting in a partial verdict. Additionally, the model was built from the abstract alone, so summary statistics replaced fitted parameters. Extracted — alfaxalone: CL 1.08 L/min, V1 0.99 L, Q2 0.87 L/min, Q3 0.46 L/min, V2 6.36 L, V3 19.1 L, tmax 0.94 minutes.
+The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — alfaxalone: CL 1.08 L/min, V1 0.99 L, Q2 0.87 L/min, Q3 0.46 L/min, V2 6.36 L, V3 19.1 L, tmax 0.94 minutes.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of central volume of distribution: this record has 0.99, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -156,7 +156,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.467, 0 of 1 reader(s) agree | 0.467 | cross-check agreement 0.467 is below 0.5: verdict partial, agreement 0.467, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict partial; agreement 0.467 (7 of 15 compared fields agree, 8 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.467 | cross-check agreement 0.467 is below 0.5: verdict partial; agreement 0.467 (7 of 15 compared fields agree, 8 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

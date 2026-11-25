@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Venetoclax’s rifampin-associated clearance effect is recorded as −0.178, an implausible negative clearance-related value, and the record was rejected for clearance/volume magnitude.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong); c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="venetoclax" model-id="Venetoclax_Dave2019_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="venetoclax" parameterization="apparent" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Dave N, Gopalakrishnan S, Mensing S, Salem AH. Model-Informed Dosing of Venetocl
 
 ### Reviewer guidance
 
-**Venetoclax’s rifampin-associated clearance effect is recorded as −0.178, an implausible negative clearance-related value, and the record was rejected for clearance/volume magnitude.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong); c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record gives apparent oral clearance (CL/F) as 1 L/day and apparent distribution volume (V/F) as 181 L; the magnitude finding does not specify which value was outside the physiological window. A second reader also disagreed about whether CL/F was recorded, reading its value as 1. Extracted — venetoclax: CL/F 1 L/day, V2 0.29 L, Q 1.47 L/day, V3 0.65 L, kabs 1.53 1/day, tlag 4.91 day, CL -0.178, t1/2z 0.1 days, … (+1).
+Extracted — venetoclax: CL/F 1 L/day, V2 0.29 L, Q 1.47 L/day, V3 0.65 L, kabs 1.53 1/day, tlag 4.91 day, CL -0.178, t1/2z 0.1 days, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has venetoclax, the second reading unknown; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

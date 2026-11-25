@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The apparent volume of distribution for ornidazole is 0.961 /kg-1, which is dimensionless and incompatible with a volume parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q76 unit /kg-1 (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="ornidazole" model-id="Ornidazole_Turcant1987_reference" status="rejected" stale="false" population="neonates and infants" measured-compound="ornidazole" parameterization="apparent" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Turcant A, Granry JC, Allain P, Cavellat M. Pharmacokinetics of ornidazole in ne
 
 ### Reviewer guidance
 
-**The apparent volume of distribution for ornidazole is 0.961 /kg-1, which is dimensionless and incompatible with a volume parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q76 unit /kg-1 (dimensionless) vs [length] ** 3.**
 
-The record lists the apparent volume of distribution as 0.961 /kg-1, a unit that denotes a ratio rather than a volume. Because the paper provided only summary statistics without a fitted model, this structural inconsistency could not be resolved from the source. A second reader did not accept the 0.961 value, indicating it was not reliably extracted from the abstract. Extracted — ornidazole: t1/2z 0.31 h, V/F 0.961 /kg-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ornidazole: t1/2z 0.31 h, V/F 0.961 /kg-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[mean apparent volume of distribution].value`: this record has 0.961, the second reading none. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -26,8 +26,6 @@ _not available_
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Robledo_2022_LC50](drugs/drug_meglumine_antimonate/pd_Robledo_2022_LC50.md) | Cytotoxicity in U937 human macrophages ← meglumine antimoniate · direct sigmoid Emax (Hill) effect | — | Robledo SM et al., Therapeutic Efficacy of, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15070776](https://doi.org/10.3390/ph15070776) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Robledo_2022_LC50_2](drugs/drug_meglumine_antimonate/pd_Robledo_2022_LC50_2.md) | Cytotoxicity in Detroit 551 human skin fibroblasts ← meglumine antimoniate · direct sigmoid Emax (Hill) effect | — | Robledo SM et al., Therapeutic Efficacy of, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15070776](https://doi.org/10.3390/ph15070776) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Robledo_2022_LC50_3](drugs/drug_meglumine_antimonate/pd_Robledo_2022_LC50_3.md) | Cytotoxicity in Hep G2 human liver cells ← meglumine antimoniate · direct sigmoid Emax (Hill) effect | — | Robledo SM et al., Therapeutic Efficacy of, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15070776](https://doi.org/10.3390/ph15070776) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zolfaghari_2025_L_major_promastigote_viability_MTT](drugs/drug_meglumine_antimonate/pd_Zolfaghari_2025_L_major_promastigote_viability_MTT.md) | L. major promastigote viability (MTT) ← meglumine antimonate (Glucantime) · inhibition effect | — | Zolfaghari A et al., A novel inhibitory strategy of, Future microbiology (2025) | [10.1080/17460913.2024.2443329](https://doi.org/10.1080/17460913.2024.2443329) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ferreira-Pinto_1996_EC50](drugs/drug_meglumine_antimonate/pd_Ferreira_Pinto_1996_EC50.md) | growth inhibition of Leishmania (V.) guyanensis cells ← glucantime (meglumine antimonate) · inhibition effect | — | Ferreira-Pinto KC et al., Leishmania (V.) guyanensis: isolation a…, Canadian journal of microbi… (1996) | [10.1139/m96-121](https://doi.org/10.1139/m96-121) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -41,7 +39,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:49 | 1:00 | 0/0/0 | 6/1/0 | 0/0/0 | 82,928/3,279 | ollama / glm-5.3-flash | 4 | 0/4 | 4/0 | 0 |
+| 2026-11-24 00:59 | 0:15 | 0/0/0 | 5/0/0 | 0/0/0 | 3,921/201 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
 
 ## Coverage
 
@@ -54,23 +52,36 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ferreira-Pinto_1996 | irrelevant | 0 | 0 | In vitro resistance characterization of Leishmania cell lines with EC50 values only; no pharmacokinetic disposition parameters for meglumine antimonate. |
-| popPK | Gazola_2001 | irrelevant | 0 | 0 | In vitro/parasite biology study of glucantime resistance with no pharmacokinetic parameters for meglumine antimonate. |
-| popPK | Gradoni_1989 | irrelevant | 0 | 0 | Efficacy study of eflornithine in mice with meglumine antimonate only as a reference comparator; no PK parameters reported. |
+| popPK | Ferreira-Pinto_1996 | irrelevant | 0 | 0 | This is an in-vitro study on Leishmania cell lines focusing on drug resistance mechanisms, not a pharmacokinetic study reporting disposition parameters for meglumine antimonate. |
+| PGx | Ferreira-Pinto_1996 | not_relevant | 0 | 0 | The paper describes parasite resistance to a drug, not a human pharmacogenomic effect on drug PK or PD. |
+| popPK | Gazola_2001 | irrelevant | 0 | 0 | The study focuses on the infectivity and cell surface carbohydrates of Leishmania parasites treated with glucantime (meglumine antimonate), not on the pharmacokinetic parameters of the drug itself. |
+| PGx | Gazola_2001 | not_relevant | 0 | 0 | The study focuses on drug resistance mechanisms in Leishmania parasites rather than human pharmacogenomics of meglumine antimonate PK/PD. |
+| popPK | Gradoni_1989 | irrelevant | 0 | 0 | The study investigates the in vivo efficacy of eflornithine and related compounds in mice, not the pharmacokinetics of meglumine antimonate. |
+| PGx | Gradoni_1989 | not_relevant | 0 | 0 | The paper reports preclinical in vivo effects of eflornithine and related compounds on Leishmania infantum and does not involve meglumine antimonate or any pharmacogenomic parameters. |
 | popPK | Hadighi_2006 | irrelevant | 0 | 0 | In vitro drug-resistance study of Leishmania isolates with EC50 susceptibility values, not a PK study of meglumine antimoniate disposition; no CL/V/ka or PK model reported. |
-| popPK | Jeddi_2022 | irrelevant | 0 | 0 | This is a medicinal chemistry/in-vitro antileishmanial activity study of synthetic compounds; meglumine antimonate (glucantime) is only a comparator and no PK parameters are reported. |
-| popPK | Lopes_2014 | irrelevant | 0 | 0 | Study concerns oryzalin nanoformulations; meglumine antimonate (Glucantime) is only a comparator with no PK parameters reported. |
+| popPK | Jeddi_2022 | irrelevant | 0 | 0 | The study is a medicinal chemistry paper evaluating the in vitro antileishmanial activity of synthesized compounds, not a pharmacokinetic study of meglumine antimonate. |
+| PGx | Jeddi_2022 | not_relevant | 0 | 0 | The paper reports on the synthesis and biological evaluation of new compounds against Leishmania, with no analysis of pharmacogenomic effects on PK or PD parameters. |
+| popPK | Lopes_2014 | irrelevant | 0 | 0 | The study focuses on oryzalin nanoformulations for leishmaniasis and does not report pharmacokinetic parameters for meglumine antimonate. |
+| PGx | Lopes_2014 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics and pharmacodynamics of oryzalin, not meglumine antimonate, and reports no pharmacogenomic data. |
 | popPK | Mina_2021 | irrelevant | 0 | 0 | This is a drug-repurposing study of clemastine fumarate; meglumine antimonate (glucantime) is only a comparator dosing regimen with no PK parameters reported. |
-| popPK | Moreira_1991 | irrelevant | 0 | 0 | In vitro study of antileishmanial drug activity with no pharmacokinetic parameters for meglumine antimoniate. |
-| popPK | Mostafavi_2019 | irrelevant | 0 | 0 | Efficacy study of niosomal amphotericin B/glucantime with no PK parameters for meglumine antimonate. |
-| popPK | Oliaee_2020 | irrelevant | 0 | 0 | In vitro efficacy/immunology study of nicotinamide with meglumine antimoniate; no PK parameters reported. |
+| popPK | Moreira_1991 | irrelevant | 0 | 0 | This is an in vitro mechanistic study of antileishmanial activity, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Moreira_1991 | not_relevant | 0 | 0 | The study investigates the activity of meglumine antimonate on Leishmania parasites (antimicrobial susceptibility) and does not report any human pharmacogenomic effects on PK or PD parameters. |
+| popPK | Mostafavi_2019 | irrelevant | 0 | 0 | The study focuses on in vitro cytotoxicity and in vivo leishmanicidal efficacy, not pharmacokinetic parameters for meglumine antimonate. |
+| PGx | Mostafavi_2019 | not_relevant | 0 | 0 | The paper reports pharmacological effects and drug interaction efficacy in vitro/in vivo, but contains no data on gene variants or genotypes affecting pharmacokinetics or pharmacodynamics. |
+| popPK | Oliaee_2020 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic/mechanistic assessment of drug efficacy on Leishmania, not a pharmacokinetic study reporting disposition parameters for meglumine antimonate. |
+| PGx | Oliaee_2020 | not_relevant | 0 | 0 | The study evaluates pharmacodynamic effects of meglumine antimoniate in an in vitro model but does not report pharmacogenomic variations affecting its PK or PD parameters. |
 | popPK | Robledo_2022 | irrelevant | 0 | 0 | This is an efficacy study of topical Arnica in hamsters; meglumine antimoniate is only a comparator treatment with cure rates, no PK parameters (CL, V, half-life, model) reported. |
 | popPK | Romero_2010 | irrelevant | 0 | 0 | This is a molecular parasitology study of Leishmania viability; meglumine antimonate (Glucantime) is only used in an in-vitro cytotoxicity assay with no PK parameters reported. |
-| popPK | Romero_2019 | irrelevant | 0 | 0 | In vitro drug-discovery study on quinazolinones; meglumine antimonate (glucantime) is only a reference comparator with no PK parameters. |
-| popPK | Romero_2026 | irrelevant | 0 | 0 | This is a medicinal-chemistry efficacy study of new 4-aminoquinoline compounds; meglumine antimonate (glucantime) is only a comparator and no PK parameters are reported. |
-| popPK | Zabala-Peñafiel_2023 | irrelevant | 0 | 0 | In-vitro biochemical study of antimony effects on parasite enzyme activity, with no PK parameters for meglumine antimonate. |
-| popPK | Zarean_2016 | irrelevant | 0 | 0 | In vitro drug-susceptibility (EC50) study of Leishmania isolates, no pharmacokinetic parameters for meglumine antimoniate. |
-| popPK | Zolfaghari_2025 | irrelevant | 0 | 0 | In-vitro antileishmanial efficacy study of killer toxins; Glucantime is only a comparator with EC50 values, no PK parameters for meglumine antimonate. |
+| popPK | Romero_2019 | irrelevant | 0 | 0 | The paper describes in vitro biological evaluation and molecular docking of new 2-aryl-quinazolin-4(3H)-one compounds, not the pharmacokinetics of meglumine antimonate (glucantime), which is used only as a reference drug. |
+| PGx | Romero_2019 | not_relevant | 0 | 0 | The study focuses on in vitro biological evaluation and molecular docking of novel compounds, and does not report pharmacogenomic effects on PK/PD parameters for meglumine antimonate. |
+| popPK | Romero_2026 | irrelevant | 0 | 0 | The paper focuses on new 4-aminoquinoline compounds for leishmaniasis and Chagas disease, using meglumine antimonate (Glucantime) only as a comparator reference drug, and reports efficacy data rather than PK parameters for meglumine antimonate. |
+| PGx | Romero_2026 | not_relevant | 0 | 0 | The paper focuses on the synthesis and in vitro/in vivo efficacy of novel 4-aminoquinoline compounds against trypanosomatids, containing no data on meglumine antimonate pharmacogenomics. |
+| popPK | Zabala-Peñafiel_2023 | irrelevant | 0 | 0 | The study focuses on in vitro biochemical effects on Leishmania enzyme activity and does not report pharmacokinetic parameters for meglumine antimonate. |
+| PGx | Zabala-Peñafiel_2023 | not_relevant | 0 | 0 | The paper describes the effect of antimony on the enzyme trypanothione reductase in the parasite Leishmania, not a human pharmacogenomic effect on the pharmacokinetics or pharmacodynamics of meglumine antimonate. |
+| popPK | Zarean_2016 | irrelevant | 0 | 0 | The study focuses on in vitro parasite susceptibility and clinical outcomes, not the pharmacokinetic parameters (CL, V, etc.) of meglumine antimoniate. |
+| PGx | Zarean_2016 | not_relevant | 0 | 0 | The study investigates parasite drug susceptibility and clinical outcomes, not human pharmacogenomic effects on meglumine antimonate PK or PD parameters. |
+| popPK | Zolfaghari_2025 | irrelevant | 0 | 0 | The study investigates the in vitro antileishmanial activity of killer yeasts and reports only IC50/EC50 values, containing no pharmacokinetic parameters for meglumine antimonate. |
+| PGx | Zolfaghari_2025 | not_relevant | 0 | 0 | The paper studies the efficacy of killer yeasts (K2 and K.L toxins) against Leishmania, using Glucantime as a reference, but does not report any pharmacogenomic effects on the pharmacokinetic or pharmacodynamic parameters of meglumine antimonate. |
 
 
 </details>

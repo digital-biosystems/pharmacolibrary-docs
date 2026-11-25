@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected due to unit dimension mismatches for the dose-normalized Cmax and AUC parameters of obinutuzumab.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q174 unit μg ml−1 mg−1 (1 / [length] ** 3) vs [mass] / [length] ** 3; Q189 unit day·μg ml−1 mg−1 ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Zhai2017_gauguin_a_phase_ii" status="rejected" stale="false" population="Chinese patients with B-cell lymphomas" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Zhai J, Qin Y, Zhu J, Song Y, Shen Z, Du X et al. Pharmacokinetics of obinutuzum
 
 ### Reviewer guidance
 
-**The record was rejected due to unit dimension mismatches for the dose-normalized Cmax and AUC parameters of obinutuzumab.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q174 unit μg ml−1 mg−1 (1 / [length] ** 3) vs [mass] / [length] ** 3; Q189 unit day·μg ml−1 mg−1 ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The extracted units for dose-normalized Cmax and AUC conflict with their expected physical dimensions. Specifically, the unit for Cmax/dose is missing the mass component in the denominator compared to the expected dimension. The unit for AUC/dose also lacks the mass component in the denominator, creating a structural dimension conflict. Extracted — obinutuzumab: Cmax 799 μg ml−1, Cmax/dose 0.799 μg ml−1 mg−1, Ctrough 437 μg ml−1, AUCt 11.4 day·μg ml−1, AUC/dose 11 day·μg ml−1 mg−1, CL 0.584 L/day.
+A reported unit could not be converted (Cmax, Cmax/dose, Ctrough and AUCt), so that value has no SI equivalent. Extracted — obinutuzumab: Cmax 799 μg ml−1, Cmax/dose 0.799 μg ml−1 mg−1, Ctrough 437 μg ml−1, AUCt 11.4 day·μg ml−1, AUC/dose 11 day·μg ml−1 mg−1, CL 0.584 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has obinutuzumab, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Bioavailability was recorded as 1.12 Amperes, an impossible value and unit that exceeds the physical limit of 1.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q174 unit ng mL–1 mg–1 (1 / [length] ** 3) vs [mass] / [length] ** 3; Q37 unit ng mL–1 mg–1 (1 / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="solifenacin" model-id="Solifenacin_Tannenbaum2020_reference" status="rejected" stale="false" population="pediatric patients with overactive bladder or neurogenic detrusor overactivity" measured-compound="solifenacin" parameterization="apparent" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Tannenbaum S, den Adel M, Krauwinkel W, Meijer J, Hollestein-Havelaar A, Verhegg
 
 ### Reviewer guidance
 
-**Bioavailability was recorded as 1.12 Amperes, an impossible value and unit that exceeds the physical limit of 1.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q174 unit ng mL–1 mg–1 (1 / [length] ** 3) vs [mass] / [length] ** 3; Q37 unit ng mL–1 mg–1 (1 / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The absolute bioavailability (Fab) is listed as 1.12 with the unit 'A', which is an electrical current unit not a dimensionless fraction. This value exceeds the maximum possible bioavailability of 1, indicating a critical extraction error. Consequently, the model was rejected due to these fundamental parameter inconsistencies. Extracted — solifenacin: CL/F 8.81 L h–1, V2/F 162 L, kabs 0.742 h–1, tlag 0.834 h, Q/F 98.1 L h–1, V3/F 174 L, Fab 1.12 A, AUC/dose 96.7 ng h mL–1 mg–1, … (+4).
+A reported unit could not be converted (Fab, AUC/dose, Cmax/dose and Ctrough), so that value has no SI equivalent. Extracted — solifenacin: CL/F 8.81 L h–1, V2/F 162 L, kabs 0.742 h–1, tlag 0.834 h, Q/F 98.1 L h–1, V3/F 174 L, Fab 1.12 A, AUC/dose 96.7 ng h mL–1 mg–1, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has solifenacin, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

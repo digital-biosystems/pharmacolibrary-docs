@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability (F) is missing, so the model relies on library defaults rather than estimates from Forrest_1993.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Forrest1993_reference" status="needs_review" stale="false" population="acutely ill patients" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Forrest A, Ballow CH, Nix DE, Birmingham MC, Schentag JJ. Development of a popul
 
 ### Reviewer guidance
 
-**Bioavailability (F) is missing, so the model relies on library defaults rather than estimates from Forrest_1993.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lacks an explicit value for the bioavailability parameter, which was filled with a library placeholder. This default is not supported by the paper's data, unlike the other parameters such as the absorption rate constant. Consequently, the simulated profile includes assumptions not derived from the source study. Extracted — ciprofloxacin: V1 0.69 liters/kg, V2 0.51 liters/kg, Vss 2 liters/kg, Q 38 liters/h/1.73 m2, CL 17 liters/h/1.73 m2, t1/2β 6.5 h, kabs 1 h−1, tlag 0.33 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ciprofloxacin: V1 0.69 liters/kg, V2 0.51 liters/kg, Vss 2 liters/kg, Q 38 liters/h/1.73 m2, CL 17 liters/h/1.73 m2, t1/2β 6.5 h, kabs 1 h−1, tlag 0.33 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of v ss: this record has none, the second reading 121; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

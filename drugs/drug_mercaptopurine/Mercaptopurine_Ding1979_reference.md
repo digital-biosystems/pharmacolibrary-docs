@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> The metabolite 8-hydroxymercaptopurine lacks a link parameter, leaving its compartment unreachable from the mercaptopurine dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Ding1979_reference" status="rejected" stale="false" population="male rhesus monkeys" measured-compound="mercaptopurine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -49,13 +49,13 @@ Ding TL, Benet LZ. Comparative bioavailability and pharmacokinetic studies of az
 
 ### Reviewer guidance
 
-**The metabolite 8-hydroxymercaptopurine lacks a link parameter, leaving its compartment unreachable from the mercaptopurine dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a metabolic link from mercaptopurine to 8-hydroxymercaptopurine with no assigned parameter. Because the source text was abstract-only, reported summary statistics stood in for a fitted model. A second reader disagreed on whether the dose compound was azathioprine or mercaptopurine. Extracted — mercaptopurine: t1/2z 41.6 min, CL 48.4 ml/min/kg, V 1.76 liters/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mercaptopurine: t1/2z 41.6 min, CL 48.4 ml/min/kg, V 1.76 liters/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has azathioprine; mercaptopurine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

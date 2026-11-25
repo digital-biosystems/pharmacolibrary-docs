@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Propofol’s terminal-phase half-life was recorded as 2.89 /min, a rate unit rather than time, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q89 unit /min (1 / [time]) vs [time].
 
 <div class="pk-model-meta" hidden drug="propofol" model-id="Propofol_Kim2023_reference" status="rejected" stale="false" population="Korean elderly subjects" measured-compound="propofol" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Kim KM, Choi BM, Noh GJ. Population pharmacokinetic and pharmacodynamic model of
 
 ### Reviewer guidance
 
-**Propofol’s terminal-phase half-life was recorded as 2.89 /min, a rate unit rather than time, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q89 unit /min (1 / [time]) vs [time].**
 
-The parameter’s meaning identifies it as the half-life of propofol’s terminal elimination phase, but its reported unit, /min, conflicts with the time dimension. The record was built from the abstract alone, so summary statistics stood in for a fitted model; a second reader also marked the dose compound, primary analyte, and reported parameter values as unknown or absent. Extracted — propofol: V1 8.36 L, V2 58 L, V3 650 L, CL 1.26 L/min, Q 0.917 L/min, t1/2γ 2.89 /min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — propofol: V1 8.36 L, V2 58 L, V3 650 L, CL 1.26 L/min, Q 0.917 L/min, t1/2γ 2.89 /min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has propofol, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

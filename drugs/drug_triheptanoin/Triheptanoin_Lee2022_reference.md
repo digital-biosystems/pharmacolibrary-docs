@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for triheptanoin is held back because a second reader disputed the verdict, disagreeing on the apparent parameterization and the absence of a maximum dose value.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="triheptanoin" model-id="Triheptanoin_Lee2022_reference" status="needs_review" stale="false" population="healthy adults and patients with long-chain fatty acid oxidation disorders" measured-compound="heptanoate" parameterization="apparent" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Lee SK, Gosselin NH, Jomphe C, McKeever K, Putnam W. Population Pharmacokinetics
 
 ### Reviewer guidance
 
-**The record for triheptanoin is held back because a second reader disputed the verdict, disagreeing on the apparent parameterization and the absence of a maximum dose value.**
+**cross_check_disputed; x1_cross_check.**
 
-The model describes heptanoate using apparent clearance and volume parameters, while the second reader argued for a mechanistic interpretation. Additionally, the reviewer noted that the record is missing a maximum dose value, whereas a second maximum dose value of 0.450 was identified. The cross-check failed to reach agreement, with the second reader disputing the classification of the dose compound and the specific parameter identifications. Extracted — heptanoate: Fab 0.562, kabs 0.425 h−1, tlag 3.74 h, CLm/F 1.07 L/h, V 5.56 L.
+None of the extracted parameters is triheptanoin's own; they describe heptanoate. Extracted — heptanoate: Fab 0.562, kabs 0.425 h−1, tlag 3.74 h, CLm/F 1.07 L/h, V 5.56 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trihexanoin, the second reading triheptanoin; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -163,7 +163,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (7 of 14 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (7 of 14 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

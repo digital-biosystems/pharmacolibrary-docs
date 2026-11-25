@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> A second reader disputed the review, disagreeing on multiple parameter values including the buprenorphine clearance and central volume parameters.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="buprenorphine" model-id="Buprenorphine_Thigpen2019_reference" status="needs_review" stale="false" population="" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Thigpen JC, Odle BL, Harirforoosh S. Opioids: A Review of Pharmacokinetics and P
 
 ### Reviewer guidance
 
-**A second reader disputed the review, disagreeing on multiple parameter values including the buprenorphine clearance and central volume parameters.**
+**cross_check_disputed; x1_cross_check.**
 
-The automatic cross-check failed because 0 of 1 second reader agreed with the initial verdict, resulting in an agreement ratio of 0.5. Specific disagreements arose on six data fields, where values such as 86, 16.4, 55, and 5.2 in this record were contradicted by the second reader’s different numbers. Because the readers could not reach consensus on these extracted figures, the record is held back rather than published. Extracted — buprenorphine: CL 8 mL/kg/ min, V1 2.4 L/kg.
+Extracted — buprenorphine: CL 8 mL/kg/ min, V1 2.4 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has none, the second reading 86; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -126,7 +126,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (6 of 12 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (6 of 12 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

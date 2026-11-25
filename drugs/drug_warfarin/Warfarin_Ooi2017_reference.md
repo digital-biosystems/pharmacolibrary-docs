@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Warfarin bioavailability and lag time were left as library placeholders instead of paper estimates, lacking explicit support for the simulated profile.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Ooi2017_reference" status="needs_review" stale="false" population="" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Ooi QX, Wright DFB, Tait RC, Isbister GK, Duffull SB. A Joint Model for Vitamin 
 
 ### Reviewer guidance
 
-**Warfarin bioavailability and lag time were left as library placeholders instead of paper estimates, lacking explicit support for the simulated profile.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record uses library defaults for bioavailability (F) and lag time rather than extracted values. The second reader disagreed with the reported 1.96 metric for the ninety-ninth percentile of model deviations. These parameters were flagged as unsupported deviations from the source text. Extracted — warfarin: CL 0.211 L/h, V 8.06 L, kabs 1.19 h -1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — warfarin: CL 0.211 L/h, V 8.06 L, kabs 1.19 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q900: this record has 1.96, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -127,7 +127,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.857 (6 of 7 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_warfarin/Warfarin_Ooi2017_reference/Warfarin_Ooi2017_reference_modelica.zip" download>Warfarin_Ooi2017_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_warfarin/Warfarin_Ooi2017_reference/Warfarin_Ooi2017_reference_modelica.zip" download>Warfarin_Ooi2017_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_warfarin/Warfarin_Ooi2017_reference/Warfarin_Ooi2017_reference_fmi.zip" download>Warfarin_Ooi2017_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_warfarin/Warfarin_Ooi2017_reference/Warfarin_Ooi2017_reference_matlab.zip" download>Warfarin_Ooi2017_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_warfarin/Warfarin_Ooi2017_reference/Warfarin_Ooi2017_reference_matlab_simbio.zip" download>Warfarin_Ooi2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

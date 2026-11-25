@@ -32,8 +32,8 @@ Sarilumab is an interleukin inhibitor monoclonal antibody used to treat rheumato
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Ma_2020_ANC](drugs/drug_sarilumab/pd_Ma_2020_ANC.md) | Absolute Neutrophil Count ← sarilumab · indirect response — drug stimulates the loss of Absolute Neutrophil Count | — | Ma L et al., Population Pharmacokinetic-Pharmacodyna…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00899-7](https://doi.org/10.1007/s40262-020-00899-7) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Ma_2020_DAS28_CRP](drugs/drug_sarilumab/pd_Ma_2020_DAS28_CRP.md) | 28-joint disease activity score by C-reactive protein ← sarilumab · indirect response — drug inhibits the production of 28-joint disease activity score by C-reactive protein | — | Ma L et al., Population Pharmacokinetic-Pharmacodyna…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00899-7](https://doi.org/10.1007/s40262-020-00899-7) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ma_2020_ANC](drugs/drug_sarilumab/pd_Ma_2020_ANC.md) | Absolute Neutrophil Count ← sarilumab · indirect response — drug stimulates the loss of Absolute Neutrophil Count | — | Ma L et al., Population Pharmacokinetic-Pharmacodyna…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00899-7](https://doi.org/10.1007/s40262-020-00899-7) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ma_2020_DAS28_CRP](drugs/drug_sarilumab/pd_Ma_2020_DAS28_CRP.md) | 28-joint disease activity score by C-reactive protein ← sarilumab · indirect response — drug inhibits the production of 28-joint disease activity score by C-reactive protein | — | Ma L et al., Population Pharmacokinetic-Pharmacodyna…, Clinical pharmacokinetics (2020) | [10.1007/s40262-020-00899-7](https://doi.org/10.1007/s40262-020-00899-7) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

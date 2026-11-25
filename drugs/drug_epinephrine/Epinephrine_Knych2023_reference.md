@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> Rejected due to an unreachable peripheral compartment and a mismatch between the extracted inter-compartmental clearances of 15 and 8452.6 mL/min.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="epinephrine" model-id="Epinephrine_Knych2023_reference" status="rejected" stale="false" population="" measured-compound="epinephrine" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Knych HK, Katzman S, McKemie DS, Arthur RM, Blea J. Pharmacokinetics and metabol
 
 ### Reviewer guidance
 
-**Rejected due to an unreachable peripheral compartment and a mismatch between the extracted inter-compartmental clearances of 15 and 8452.6 mL/min.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The two-compartment structure for epinephrine was flagged for containing a peripheral compartment with no path from the dose. A second reader disagreed on the extracted values for the inter-compartmental clearance, recording 15 instead of 8452.6 mL/min. Additionally, the peripheral volume parameter was missing, conflicting with the second reader’s value of 0.361 L. Extracted — epinephrine: CL 15 mL/min, V 410 L, V2 1.58e+03 L, kabs 1.92 1/h.
+Extracted — epinephrine: CL 15 mL/min, V 410 L, V2 1.58e+03 L, kabs 1.92 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 15, the second reading 8452.6; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

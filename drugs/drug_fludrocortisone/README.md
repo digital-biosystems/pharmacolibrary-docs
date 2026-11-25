@@ -40,7 +40,7 @@ Fludrocortisone is a mineralocorticoid corticosteroid used to treat conditions s
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Christ_1993_IP3](drugs/drug_fludrocortisone/pd_Christ_1993_IP3.md) | IP3 ← fludrocortisone · direct Emax (saturable) effect | — | Christ M et al., The inositol-1,4,5-trisphosphate system…, The Journal of clinical end… (1993) | [10.1210/jcem.77.6.8263127](https://doi.org/10.1210/jcem.77.6.8263127) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Hamitouche_2017_urinary_sodium_potassium_ratio](drugs/drug_fludrocortisone/pd_Hamitouche_2017_urinary_sodium_potassium_ratio.md) | urinary sodium/potassium ratio ← fludrocortisone · indirect response — drug inhibits the production of urinary sodium/potassium ratio | — | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Hamitouche_2017_urinary_sodium_potassium_ratio](drugs/drug_fludrocortisone/pd_Hamitouche_2017_urinary_sodium_potassium_ratio.md) | urinary sodium/potassium ratio ← fludrocortisone · indirect response — drug inhibits the production of urinary sodium/potassium ratio | — | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

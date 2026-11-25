@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Belantamab mafodotin clearance (CL) had no value; the extracted initial systemic clearance of 0.926 L/day applies to belantamab mafodotin ADC and cys-mcMMAF, not belantamab mafodotin, so it was held back.
+> No value for belantamab mafodotin's clearance — the 1 extracted parameter describes belantamab_mafodotin ADC and cys-mcMMAF, not belantamab mafodotin; the covariate scenarios were not simulated (+3 more).
 
 <div class="pk-model-meta" hidden drug="belantamab mafodotin" model-id="BelantamabMafodotin_Papathanasiou2025_adc_changeb" status="model_quarantined" stale="false" population="patients with relapsed/refractory multiple myeloma" measured-compound="belantamab_mafodotin ADC and cys-mcMMAF" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -45,7 +45,7 @@ Papathanasiou T, Kaullen J, Polireddy K, Chen X, Ho YL, Taylor A et al. Populati
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.059). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,11 +55,13 @@ Papathanasiou T, Kaullen J, Polireddy K, Chen X, Ho YL, Taylor A et al. Populati
 
 ### Reviewer guidance
 
-**Belantamab mafodotin clearance (CL) had no value; the extracted initial systemic clearance of 0.926 L/day applies to belantamab mafodotin ADC and cys-mcMMAF, not belantamab mafodotin, so it was held back.**
+**No value for belantamab mafodotin's clearance — the 1 extracted parameter describes belantamab_mafodotin ADC and cys-mcMMAF, not belantamab mafodotin; the covariate scenarios were not simulated (+3 more).**
 
-No value for belantamab mafodotin's clearance — the 1 extracted parameter describes belantamab_mafodotin ADC and cys-mcMMAF, not belantamab mafodotin. The model was built, but belantamab mafodotin's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The covariate scenarios were not simulated; the base model was simulated, not the covariate effects the record defines. The recorded parent–metabolite structure was built as a one-compartment structure instead. Extracted — belantamab_mafodotin ADC and cys-mcMMAF: V 10.8 L.
+The model was built, but belantamab mafodotin's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — belantamab_mafodotin ADC and cys-mcMMAF: V 10.8 L.
 
-<sub>reviewed by gpt-6-luna</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has belantamab_mafodotin, the second reading belantamab mafodotin; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -217,6 +219,42 @@ No value for belantamab mafodotin's clearance — the 1 extracted parameter desc
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.059 (1/17 fields) | 16 |
+
+<details><summary>16 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['belantamab_mafodotin adc', 'cys-mcmmaf', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[adc vc]` |  | 4.21 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[adc vp]` |  | 6.63 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[imaxi]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[imaxi]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[initial systemic cl]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` |  | 0.711 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[race]` | 15.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | 10.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_race]` |  | 0.913 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_weight]` |  | 0.542 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_weight]` |  | 0.929 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v2_albumin]` |  | 0.567 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | belantamab_mafodotin | belantamab mafodotin | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | belantamab_mafodotin ADC and cys-mcMMAF | belantamab mafodotin | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -229,24 +267,24 @@ No value for belantamab mafodotin's clearance — the 1 extracted parameter desc
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
-| T3_shared_parameters |  | pass | 2 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  | no second reading of this record |
-| T1_cmax | reference | skipped | 43.7 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.498 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.976 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 22.9 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 13.0 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 16.8 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 19.1 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 13.2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 17 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_shared_parameters |  | pass | 2 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.059 (1 of 17 compared fields agree, 13 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.059 | cross-check contradicted by a second reader: verdict disputed; agreement 0.059 (1 of 17 compared fields agree, 13 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped | 43.7 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.498 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.976 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 22.9 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 13 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 16.8 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 19.1 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 13.2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 17 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

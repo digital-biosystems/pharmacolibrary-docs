@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01A&quot;,&quot;href&quot;:&quot;atc/P01A.md&quot;},{&quot;label&quot;:&quot;trimetrexate&quot;,&quot;href&quot;:&quot;drugs/drug_trimetrexate/&quot;},{&quot;label&quot;:&quot;Grochow_1989_2 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trimetrexate_Grochow1989_reference&quot;,&quot;label&quot;:&quot;Grochow_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_trimetrexate/Trimetrexate_Grochow1989_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> No volume or clearance — not a compartmental population PK model.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="trimetrexate" model-id="Trimetrexate_Grochow1989v2_reference" status="rejected" stale="false" population="patients with advanced solid tumors" measured-compound="trimetrexate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="trimetrexate" model-id="Trimetrexate_Grochow1989v2_reference" status="rejected" stale="false" population="patients with advanced solid tumors" measured-compound="trimetrexate" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Grochow LB, Noe DA, Ettinger DS, Donehower RC. A phase I trial of trimetrexate glucuronate (NSC 352122) given every 3 weeks: clinical pharmacology and pharmacodynamics. Cancer chemotherapy and pharmacology 24(5):314–320 (1989).
@@ -16,15 +17,15 @@ Grochow LB, Noe DA, Ettinger DS, Donehower RC. A phase I trial of trimetrexate g
 
 ## Population and dosing
 
-**Population:** patients with advanced solid tumors · condition advanced solid tumors · age group adult · n = 44.
+**Population:** patients with advanced solid tumors · condition advanced solid tumors · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed trimetrexate glucuronate, measured trimetrexate.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,13 +33,11 @@ Grochow LB, Noe DA, Ettinger DS, Donehower RC. A phase I trial of trimetrexate g
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| TMTX clearance rate | CLnorm | 36.5 | L/h |
-| r | equation variable | 0.58 |  |
-| P | Q | 0.0006 | L/h |
+| TMTX clearance rate | CL | 36.5 | ml/min per m2 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,21 +47,19 @@ Grochow LB, Noe DA, Ettinger DS, Donehower RC. A phase I trial of trimetrexate g
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — trimetrexate: CL 36.5 ml/min per m2.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has trimetrexate, the second reading trimetrexate glucuronate; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has trimetrexate, the second reading trimetrexate glucuronate; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| TMTX clearance rate | `Q354` · CLnorm | 36.5 | L/h | 1.014e-05 | m3/s | L/h | llm_corrected (0.6) | Grochow_1989_2:abstract |
-| r | `Q900` · equation variable | 0.58 |  |  |  |  | llm (0.6) | Grochow_1989_2:abstract, Grochow_1989_2:abstract |
-| P | `Q30` · Q | 0.0006 | L/h | 1.667e-10 | m3/s | L/h | llm (0.6) | Grochow_1989_2:abstract, Grochow_1989_2:abstract |
+| TMTX clearance rate | `Q22` · CL | 36.5 | ml/min per m2 | 1.052e-06 | m3/s | ml/(min·m2) | llm_confirmed (0.6) | Grochow_1989_2:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,34 +69,32 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'ml/min per m2' (CLnorm)
-- implicit units: 'TMTX clearance rate' → L/h (from the popPK convention: 'No unit stated in text or table footnotes. CLnorm is total clearance normalized to a 70 kg reference; clearances in popu')
-- implicit units: 'P' → L/h (from the popPK convention: 'No unit stated in text or table footnotes. Q is an intercompartmental clearance, conventionally reported in L/h in popul')
+- dropped unlinked row (NIL): 'doses ranging from' — extend the ontology if this is a real PK parameter (source ['Grochow_1989_2:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=trimetrexate
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Grochow_1989_2_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Grochow_1989_2_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[dose]` |  | 20 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[p]` | 0.0006 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[r]` | 0.58 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['trimetrexate glucuronate', 'trimetrexate', 'hydrolysis']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[clearance rate]` |  | 36.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[doses ranging from]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[tmtx clearance rate]` | 36.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tmtx clearance rate]` |  | 36.5 | only_one_extracted |
 | `gpt-oss-120b` | `screen.primary_analyte` | trimetrexate | trimetrexate glucuronate | mismatch |
 
 </details>
@@ -114,11 +109,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Grochow_1989_2:abstract', 'Grochow_1989_2:abstract'] |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Grochow_1989_2:abstract'] |
-| C8_topology | pass |  |  |  |
+| C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Grochow_1989_2:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 36.5 | ['Grochow_1989_2:abstract'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 3.79 L/h | ['Grochow_1989_2:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -142,4 +139,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrimetrexate%5D%20Trimetrexate_Grochow1989v2_reference&body=Drug%3A%20trimetrexate%0ARecord%3A%20Trimetrexate_Grochow1989v2_reference%0APaper%3A%20Grochow_1989_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trimetrexate/Trimetrexate_Grochow1989v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 05:26 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:19 UTC</sub>

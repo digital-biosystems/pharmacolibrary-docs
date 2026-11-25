@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 0.80).">rat</span>
 
-> Fentanyl peripheral volume distribution (8.7 ml/g) and total clearance (0.55 ml/min/g) carry mass-based units incompatible with their structural dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q64 unit ml/g ([length] ** 3 / [mass]) vs [length] ** 3; Q63 unit ml/g ([length] ** 3 / [mass]) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Bjrkman1994_liver" status="rejected" stale="false" population="rats" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Björkman S, Wada DR, Stanski DR, Ebling WF. Comparative physiological pharmacok
 
 ### Reviewer guidance
 
-**Fentanyl peripheral volume distribution (8.7 ml/g) and total clearance (0.55 ml/min/g) carry mass-based units incompatible with their structural dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q64 unit ml/g ([length] ** 3 / [mass]) vs [length] ** 3; Q63 unit ml/g ([length] ** 3 / [mass]) vs [length] ** 3.**
 
-The record assigns units of ml/g to the central and peripheral volumes of distribution, which require dimensions of pure volume. Additionally, the intercompartmental clearance Q is listed with units of L/min, conflicting with the expected mass-normalized clearance dimension. The extracted value for total clearance is 0.55, which is dimensionally inconsistent with the provided unit specification. Extracted — fentanyl: V2 8.7 ml/g, CL 0.55, V1 1.17 ml/g, Q 6.79 L/min, kabs 0.27 minute -1, tlag 15 min.
+Extracted — fentanyl: V2 8.7 ml/g, CL 0.55, V1 1.17 ml/g, Q 6.79 L/min, kabs 0.27 minute -1, tlag 15 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

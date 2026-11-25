@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Oliceridine parameters were mistakenly applied to opium alkaloids with morphine, leaving the latter's clearance and volume undefined.
+> No value for opium alkaloids with morphine's clearance and volume of distribution — all 7 extracted parameters describe oliceridine, not opium alkaloids with morphine; the covariate scenarios were not simulated (+4 more).
 
 <div class="pk-model-meta" hidden drug="opium alkaloids with morphine" model-id="OpiumAlkaloidsWithMorphine_Simons2023_reference" status="model_quarantined" stale="false" population="older volunteers" measured-compound="oliceridine, morphine, morphine-6-glucuronide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -59,13 +59,13 @@ Simons P, van der Schrier R, van Lemmen M, Jansen S, Kuijpers KWK, van Velzen M 
 
 ### Reviewer guidance
 
-**Oliceridine parameters were mistakenly applied to opium alkaloids with morphine, leaving the latter's clearance and volume undefined.**
+**No value for opium alkaloids with morphine's clearance and volume of distribution — all 7 extracted parameters describe oliceridine, not opium alkaloids with morphine; the covariate scenarios were not simulated (+4 more).**
 
-The record lists seven pharmacokinetic parameters explicitly assigned to oliceridine, yet the drug is identified as opium alkaloids with morphine. Consequently, the clearance and volume of distribution for the actual drug remained at library placeholders. A second reader also disputed the metabolic link from morphine to morphine-6-glucuronide, failing to agree with the extracted topology. Extracted — oliceridine: V1 1.1 L/70 kg, V2 5.6 L/70 kg, V3 45.3 L/70 kg, CL 33.1 L/h, Q 22.8 L/h, Q2 27.6 L/h, D1 1 min.
+The model was built, but opium alkaloids with morphine's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — oliceridine: V1 1.1 L/70 kg, V2 5.6 L/70 kg, V3 45.3 L/70 kg, CL 33.1 L/h, Q 22.8 L/h, Q2 27.6 L/h, D1 1 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has oliceridine or morphine, the second reading morphine; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -188,7 +188,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['Q2'] |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.056, 0 of 1 reader(s) agree | 0.056 | cross-check disputed by a second reader: verdict disputed, agreement 0.056, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.056 (1 of 18 compared fields agree, 14 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.056 | cross-check contradicted by a second reader: verdict disputed; agreement 0.056 (1 of 18 compared fields agree, 14 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_t_half_terminal | reference | skipped | 44 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 214 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |

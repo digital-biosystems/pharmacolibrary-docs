@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the IgE compartment is unreachable from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="omalizumab" model-id="Omalizumab_Hayashi2007_reference" status="rejected" stale="false" population="Japanese asthmatic patients" measured-compound="omalizumab" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -46,13 +46,13 @@ Hayashi N, Tsukamoto Y, Sallas WM, Lowe PJ. A mechanism-based binding model for 
 
 ### Reviewer guidance
 
-**The record was rejected because the IgE compartment is unreachable from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Although the abstract reported an interconversion link, the model structure lacked a viable path for omalizumab to enter the IgE compartment. Consequently, the IgE entity remained an orphan with no dose connection. Additionally, all parameter values were abstract-only summaries rather than fitted model results. Extracted — omalizumab: CL 7.32 ml h(-1), kabs 0.92 1/day, tlag 0.06 day.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — omalizumab: CL 7.32 ml h(-1), kabs 0.92 1/day, tlag 0.06 day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has omalizumab, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

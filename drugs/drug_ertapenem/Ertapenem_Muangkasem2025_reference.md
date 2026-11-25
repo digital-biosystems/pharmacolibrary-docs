@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J01D&quot;,&quot;href&quot;:&quot;atc/J01D.md&quot;},{&quot;label&quot;:&quot;ertapenem&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/&quot;},{&quot;label&quot;:&quot;Muangkasem_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ertapenem_Muangkasem2025_reference&quot;,&quot;label&quot;:&quot;Muangkasem_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Muangkasem2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ertapenem_Cardone2012_reference&quot;,&quot;label&quot;:&quot;Cardone_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Cardone2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Wittau2017_reference&quot;,&quot;label&quot;:&quot;Wittau_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Wittau2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Chauzy2022_reference&quot;,&quot;label&quot;:&quot;Chauzy_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Chauzy2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ertapenem_Cardone2012_reference&quot;,&quot;label&quot;:&quot;Cardone_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Cardone2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Muangkasem2025_reference&quot;,&quot;label&quot;:&quot;Muangkasem_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Muangkasem2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Ertapenem_Wittau2017_reference&quot;,&quot;label&quot;:&quot;Wittau_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Wittau2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Chauzy2022_reference&quot;,&quot;label&quot;:&quot;Chauzy_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Chauzy2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ertapenem_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ertapenem/Ertapenem_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ertapenem — `Ertapenem_Muangkasem2025_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Muangkasem2025_reference" status="simulated" stale="false" population="critically ill patients" measured-compound="ertapenem" parameterization="mechanistic" topology="2C"></div>
+> cross_check_disputed; x1_cross_check.
+
+<div class="pk-model-meta" hidden drug="ertapenem" model-id="Ertapenem_Muangkasem2025_reference" status="needs_review" stale="false" population="critically ill patients" measured-compound="ertapenem" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Muangkasem A, Nosoongnoen W, Sririttha S, Aramruang T, Montakantikul P. Dosage Regimen Optimization of Ertapenem Against ESBL-Producing Enterobacterales Infection in Critically Ill Patients Using Monte Carlo Simulation. Clinical and translational science 18(7):e70274 (2025).
@@ -27,6 +29,8 @@ Muangkasem A, Nosoongnoen W, Sririttha S, Aramruang T, Montakantikul P. Dosage R
 <figure class="pk-models-diagram"><img src="drugs/drug_ertapenem/Ertapenem_Muangkasem2025_reference/Ertapenem_Muangkasem2025_reference.svg" alt="Ertapenem_Muangkasem2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | 0.25 | equation variable | 46.1 | g/L |
@@ -37,7 +41,7 @@ Muangkasem A, Nosoongnoen W, Sririttha S, Aramruang T, Montakantikul P. Dosage R
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +51,13 @@ Muangkasem A, Nosoongnoen W, Sririttha S, Aramruang T, Montakantikul P. Dosage R
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**cross_check_disputed; x1_cross_check.**
 
-A reported unit could not be converted (equation variable), so that value has no SI equivalent.
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — ertapenem: CL 2.63 L/h, V1 10.6 L, V2 4.24 L, Q 0.315 L/h/kg.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ertapenem, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -93,6 +99,38 @@ A reported unit could not be converted (equation variable), so that value has no
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
+
+<details><summary>12 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[0.25].parameter_id` | Q900 | Q75 | mismatch |
+| `gpt-oss-120b` | `parameters[1]` |  | 6.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[3]` |  | 66.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` | 10.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` |  | 10.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 2.63 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 2.63 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` | 0.315 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` | 4.24 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` |  | 4.24 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ertapenem | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ertapenem | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -109,15 +147,15 @@ A reported unit could not be converted (equation variable), so that value has no
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=ertapenem) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | skipped |  |  | no second reading of this record |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ertapenem) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (3 of 15 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (3 of 15 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

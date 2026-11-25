@@ -31,7 +31,8 @@ Bezlotoxumab is a monoclonal antibody used to prevent the recurrence of Clostrid
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Yee_2020_rCDI](drugs/drug_bezlotoxumab/pd_Yee_2020_rCDI.md) | recurrence of Clostridium difficile infection (time to event) ← bezlotoxumab · time-to-event model | — | Yee KL et al., A time-to-event analysis of the exposur…, Journal of pharmacokinetics… (2020) | [10.1007/s10928-019-09660-5](https://doi.org/10.1007/s10928-019-09660-5) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Yee_2019_CDI_recurrence](drugs/drug_bezlotoxumab/pd_Yee_2019_CDI_recurrence.md) | CDI recurrence ← bezlotoxumab · direct Emax (saturable) effect | — | Yee KL et al., Population Pharmacokinetics and Pharmac…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.01971-18](https://doi.org/10.1128/AAC.01971-18) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Yee_2020_rCDI](drugs/drug_bezlotoxumab/pd_Yee_2020_rCDI.md) | recurrent Clostridium difficile infection (rCDI) ← bezlotoxumab · direct Emax (saturable) effect | — | Yee KL et al., A time-to-event analysis of the exposur…, Journal of pharmacokinetics… (2020) | [10.1007/s10928-019-09660-5](https://doi.org/10.1007/s10928-019-09660-5) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,40 +46,44 @@ Bezlotoxumab is a monoclonal antibody used to prevent the recurrence of Clostrid
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:59 | 0:30 | 1/1/0 | 1/0/0 | 0/0/0 | 55,515/1,931 | ollama / glm-5.3-flash | 5 | 2/3 | 4/1 | 0 |
+| 2026-11-23 17:11 | 0:04 | 1/1/0 | 2/0/0 | 0/0/0 | 4,274/188 | einfracz / qwen3.8-27b | 5 | 2/3 | 4/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
-- **screened:** 3  ·  **relevant:** 1
+- **screened:** 3  ·  **relevant:** 0
 - **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Yee_2019.pdf` | Yee KL et al., Population Pharmacokinetics and Pharmac…, Antimicrobial agents and ch… (2019) | popPK | 10 | [10.1128/AAC.01971-18](https://doi.org/10.1128/AAC.01971-18) | [30455246](https://pubmed.ncbi.nlm.nih.gov/30455246) | A population PK two-compartment model for bezlotoxumab in humans is described, but no numeric parameter values (CL, V, t½) appear in the provided evidence. |
-| `de_2023.pdf` | de Almeida C et al., Predicted Bezlotoxumab Exposure in Pati…, Clinical therapeutics (2023) | popPK | 8 | [10.1016/j.clinthera.2023.02.006](https://doi.org/10.1016/j.clinthera.2023.02.006) | [36906440](https://pubmed.ncbi.nlm.nih.gov/36906440) | Population PK modeling of bezlotoxumab in humans, but the evidence only reports a predicted exposure change (10.8%) with no CL/V or model parameter values, which likely reside in supplementary material not provided. |
+| `de_2023.pdf` | de Almeida C et al., Predicted Bezlotoxumab Exposure in Pati…, Clinical therapeutics (2023) | popPK | 9 | [10.1016/j.clinthera.2023.02.006](https://doi.org/10.1016/j.clinthera.2023.02.006) | [36906440](https://pubmed.ncbi.nlm.nih.gov/36906440) | The paper is a population PK simulation study for bezlotoxumab using an existing model, but the evidence provided only contains predicted exposure changes (%) rather than the specific quantitative PK parameter values (e.g., clearance, volume) of the model itself. |
 
-<sub>queue written 2026-10-07 15:59 UTC</sub>
+<sub>queue written 2026-11-23 17:11 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Kinoshita_2018 | irrelevant | 3 | 2 | This is a drug review of bezlotoxumab's pharmacology/efficacy; only Cmax (169 µg/mL), AUC (52,000 µg·h/mL) and t1/2 (~18 d) are mentioned in passing, with no PK model or full parameter set (values largely in figures/supplements not provided). |
+| popPK | Kinoshita_2018 | irrelevant | 2 | 4 | The paper provides a review of the mechanism and clinical efficacy (recurrence rates) of bezlotoxumab, including some raw exposure values (Cmax, AUC, t1/2) from Phase III trials, but it does not present a population pharmacokinetic model or derived clearance/volume parameters. |
+| PGx | Kinoshita_2018 | not_relevant | 0 | 0 | The paper describes preclinical and clinical efficacy of bezlotoxumab for Clostridium difficile infection, including binding affinity to toxin variants and clinical trial outcomes, but does not report any pharmacogenomic effects (e.g., impact of patient genotypes) on PK or PD parameters. |
 | popPK | Peng_2019 | irrelevant | 0 | 0 | In vitro DARPin antitoxin study; bezlotoxumab only appears as a potency comparator (EC50), with no PK/disposition parameters. |
 | popPK | Peritore-Galve_2025 | irrelevant | 0 | 0 | This is an efficacy/neutralization study of AZD5148 vs bezlotoxumab in mice; no PK parameters (CL, V, half-life, population-PK model) for bezlotoxumab are reported. |
 | popPK | Simeon_2019 | irrelevant | 0 | 0 | This is a DARPin antitoxin engineering study; bezlotoxumab is only a comparator in EC50 potency assays, with no PK parameters (CL, V, half-life with volume, or PK model) reported. |
-| popPK | Yee_2019 | relevant | 10 | 3 | A population PK two-compartment model for bezlotoxumab in humans is described, but no numeric parameter values (CL, V, t½) appear in the provided evidence. |
-| popPK | de_2023 | relevant | 8 | 3 | Population PK modeling of bezlotoxumab in humans, but the evidence only reports a predicted exposure change (10.8%) with no CL/V or model parameter values, which likely reside in supplementary material not provided. |
+| popPK | Yee_2019 | relevant | 10 | 0 | The paper describes a population PK model for bezlotoxumab, but the specific numeric parameter values (CL, V, etc.) are not included in the provided abstract text. |
+| PGx | Yee_2019 | not_relevant | 0 | 0 | The paper analyzes population PK/PD of bezlotoxumab but does not investigate the impact of gene variants or genotypes on PK/PD parameters. |
+| popPK | Yee_2020 | irrelevant | 1 | 2 | The paper is an exposure-response (E-R) and time-to-event analysis of clinical efficacy; while it mentions PK values in the introduction, it does not present a PK model or detailed quantitative disposition parameters for bezlotoxumab as its primary subject. |
+| PGx | Yee_2020 | not_relevant | 0 | 0 | The study analyzes exposure-response relationships and clinical covariates (specifically endogenous IgG titers) but does not investigate the impact of genetic variants or genotypes on bezlotoxumab's PK or PD parameters. |
+| popPK | de_2023 | relevant | 9 | 3 | The paper is a population PK simulation study for bezlotoxumab using an existing model, but the evidence provided only contains predicted exposure changes (%) rather than the specific quantitative PK parameter values (e.g., clearance, volume) of the model itself. |
+| PGx | de_2023 | not_relevant | 0 | 0 | The study investigates the impact of hematopoietic stem cell transplantation (HSCT) and albumin levels on bezlotoxumab exposure, which is a clinical/physiological covariate, not a gene variant or genotype. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbezlotoxumab%5D&body=Drug%3A%20bezlotoxumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bezlotoxumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 15:59 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 17:08 UTC</sub>

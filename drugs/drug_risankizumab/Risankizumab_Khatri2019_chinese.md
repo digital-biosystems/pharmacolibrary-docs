@@ -164,12 +164,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 0.0145 | 0.001598 | 0.1102 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0124 | 0.001598 | 0.1289 | µg/mL→SI vs simulated kg/m3 |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.75 (6 of 8 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 0.0145 | 0.001598 | 0.1102 | reported 14.5 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0124 | 0.001598 | 0.1289 | reported 12.4 µg/mL→SI vs simulated kg/m3 |
 | T1_cmin_ss | reference | skipped | 2.2 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 2 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | pass | 672 | 632.1 | 0.9407 | days→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 672 | 632.1 | 0.9407 | reported 28.0 days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

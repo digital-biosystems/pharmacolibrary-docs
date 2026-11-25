@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;melarsoprol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melarsoprol_Burri1994_reference&quot;,&quot;label&quot;:&quot;Burri_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Melarsoprol_Burri1994_reference&quot;,&quot;label&quot;:&quot;Burri_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # melarsoprol
 
@@ -25,7 +25,7 @@ Melarsoprol is an arsenic-based antiprotozoal used to treat sleeping sickness. I
 
 ## Start here
 
-> **Burri_1994_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy vervet monkeys, n = 6. [Run it in the simulator](drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md?tab=Simulation) · [record](drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md)
+> **Burri_1994_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> uninfected vervet monkeys, n = 6. [Run it in the simulator](drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md?tab=Simulation) · [record](drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,7 +33,7 @@ Melarsoprol is an arsenic-based antiprotozoal used to treat sleeping sickness. I
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: cross_check_disputed</sub> | [Burri_1994_reference](drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Burri C et al., Pharmacokinetics of melarsoprol in unin…, Acta tropica (1994) | [10.1016/0001-706x(94)90120-1](https://doi.org/10.1016/0001-706x(94)90120-1) |
+| <span class="pk-rf" hidden data-species="monkey" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Burri_1994_reference](drugs/drug_melarsoprol/Melarsoprol_Burri1994_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Burri C et al., Pharmacokinetics of melarsoprol in unin…, Acta tropica (1994) | [10.1016/0001-706x(94)90120-1](https://doi.org/10.1016/0001-706x(94)90120-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,36 +47,30 @@ Melarsoprol is an arsenic-based antiprotozoal used to treat sleeping sickness. I
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:50 | 0:33 | 1/0/0 | 0/0/0 | 0/0/0 | 11,438/712 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 01:02 | 0:04 | 1/0/0 | 0/0/0 | 0/0/0 | 3,830/156 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Burri_1994.pdf` | Burri C et al., Pharmacokinetics of melarsoprol in unin…, Acta tropica (1994) | popPK | 10 | [10.1016/0001-706x(94)90120-1](https://doi.org/10.1016/0001-706x(94)90120-1) | [7863853](https://pubmed.ncbi.nlm.nih.gov/7863853) | Abstract directly reports numeric PK parameters (V 3.6 l/kg, CL 3.5 ml/min·kg, MRT 18 h) from a three-compartment model in vervet monkeys. |
-
-<sub>queue written 2026-10-07 07:50 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Bapiro_2002 | not_relevant | 0 | 0 | Melarsoprol is only listed as showing no effect on CYP1A; no gene variant/genotype effect on its PK/PD is reported. |
-| popPK | Bouteille_1995 | irrelevant | 0 | 0 | Study concerns megazol efficacy in mice; melarsoprol is only mentioned as background, with no PK parameters for any drug. |
-| popPK | Ullman_1989 | irrelevant | 0 | 0 | In-vitro Leishmania resistance study; melarsoprol only a comparator agent, no PK parameters. |
+| popPK | Bapiro_2002 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study on CYP induction where melarsoprol is a comparator showing no effect, not a pharmacokinetic study of melarsoprol disposition. |
+| PGx | Bapiro_2002 | not_relevant | 0 | 0 | The paper investigates CYP1A1/2 induction by antiparasitic drugs and explicitly states that melarsoprol had no effect; it does not report a pharmacogenomic effect on the PK or PD of melarsoprol. |
+| popPK | Bouteille_1995 | irrelevant | 0 | 0 | The study focuses on the trypanocidal activity of megazol, not the pharmacokinetics of melarsoprol, which is mentioned only as background context. |
+| PGx | Bouteille_1995 | not_relevant | 0 | 0 | The study evaluates the efficacy of megazol in mice and does not investigate pharmacogenomic effects on melarsoprol PK/PD. |
+| PGx | Burri_1994 | not_relevant | 0 | 0 | The paper reports standard pharmacokinetic parameters in uninfected vervet monkeys but does not report a pharmacogenomic effect (no gene variants or genotypes are analyzed). |
+| popPK | Ullman_1989 | irrelevant | 0 | 0 | The paper is an in-vitro study on Leishmania drug resistance and does not report pharmacokinetic parameters for melarsoprol. |
+| PGx | Ullman_1989 | not_relevant | 0 | 0 | The paper investigates drug resistance in Leishmania donovani (parasite genetics), not human pharmacogenomics or PK/PD of melarsoprol in patients. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmelarsoprol%5D&body=Drug%3A%20melarsoprol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_melarsoprol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 07:50 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 00:59 UTC</sub>

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M09A&quot;,&quot;href&quot;:&quot;atc/M09A.md&quot;},{&quot;label&quot;:&quot;hydroquinine&quot;,&quot;href&quot;:&quot;drugs/drug_hydroquinine/&quot;},{&quot;label&quot;:&quot;van_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroquinine_van2000_reference&quot;,&quot;label&quot;:&quot;van_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroquinine_van2000_reference&quot;,&quot;label&quot;:&quot;van_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroquinine/Hydroquinine_van2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hydroquinine — `Hydroquinine_van2000_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="hydroquinine" model-id="Hydroquinine_van2000_reference" status="simulated" stale="false" population="adult patients with muscle cramps" measured-compound="hydroquinine" parameterization="mechanistic" topology="1C"></div>
+> cross_check_disputed; x1_cross_check.
+
+<div class="pk-model-meta" hidden drug="hydroquinine" model-id="Hydroquinine_van2000_reference" status="needs_review" stale="false" population="adult patients with muscle cramps" measured-compound="hydroquinine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 van Kan HJ, Jansen PH, Tuinte C, Smits P, Verbeek AL. Hydroquinine pharmacokinetics after oral administration in adult patients with muscle cramps. European journal of clinical pharmacology 56(3):263–267 (2000).
@@ -29,6 +31,8 @@ van Kan HJ, Jansen PH, Tuinte C, Smits P, Verbeek AL. Hydroquinine pharmacokinet
 <figure class="pk-models-diagram"><img src="drugs/drug_hydroquinine/Hydroquinine_van2000_reference/Hydroquinine_van2000_reference.svg" alt="Hydroquinine_van2000_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | elimination half-life | t1/2z | 10.9 | h |
@@ -37,7 +41,7 @@ van Kan HJ, Jansen PH, Tuinte C, Smits P, Verbeek AL. Hydroquinine pharmacokinet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,13 +51,13 @@ van Kan HJ, Jansen PH, Tuinte C, Smits P, Verbeek AL. Hydroquinine pharmacokinet
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**cross_check_disputed; x1_cross_check.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — hydroquinine: t1/2z 10.9 h, V 1.24 l/kg, CL 6.7 l/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hydroquinine hydrobromide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -124,14 +128,15 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=hydroquinine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=hydroquinine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -4,11 +4,11 @@
 
 # dabrafenib — `Dabrafenib_Ouellet2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Only clearance was extracted — no volume.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="dabrafenib" model-id="Dabrafenib_Ouellet2014_reference" status="needs_review" stale="false" population="patients with BRAF V600E mutation-positive melanoma" measured-compound="dabrafenib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dabrafenib" model-id="Dabrafenib_Ouellet2014_reference" status="rejected" stale="false" population="adults with BRAF V600E mutation-positive melanoma" measured-compound="dabrafenib" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Ouellet D, Gibiansky E, Leonowens C, O'Hagan A, Haney P, Switzky J et al. Population pharmacokinetics of dabrafenib, a BRAF inhibitor: effect of dose, time, covariates, and relationship with its metabolites. Journal of clinical pharmacology 54(6):696–706 (2014).
@@ -16,28 +16,31 @@ Ouellet D, Gibiansky E, Leonowens C, O'Hagan A, Haney P, Switzky J et al. Popula
 
 ## Population and dosing
 
-**Population:** patients with BRAF V600E mutation-positive melanoma · condition BRAF V600E mutation-positive melanoma.
+**Population:** adults with BRAF V600E mutation-positive melanoma · condition melanoma · age group adult.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameters:** 7 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Total steady-state clearance (CL/F) at 150 mg BID dose | CL/F | 34.3 | L/h |
+| Total steady-state clearance (CL/F) at 150 mg BID dose | CL/F | 34.3 | L/h |
 | induction half-life | t1/2z | 67 | hours |
-| AUC ratio (hypromellose:gelatin capsule) following single dosing | AUC ratio | 1.80 |  |
-| Steady-state pre-dose concentration of dabrafenib | Ctrough | 46.6 | ng/mL |
+| AUC ratio (hypromellose:gelatin capsule) following single dosing | AUC ratio | 1.8 |  |
+| Steady-state pre-dose concentration of dabrafenib at 150 mg BID | Css | 46.6 | ng/mL |
+| Steady-state pre-dose concentration of hydroxy-dabrafenib at 150 mg BID | Ctrough | 69.3 | ng/mL |
+| Steady-state pre-dose concentration of carboxy-dabrafenib at 150 mg BID | Cmin | 3608 | ng/mL |
+| Steady-state pre-dose concentration of desmethyl-dabrafenib at 150 mg BID | Ctrough | 291 | ng/mL |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.267), qwen3.8-27b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,22 +50,25 @@ Ouellet D, Gibiansky E, Leonowens C, O'Hagan A, Haney P, Switzky J et al. Popula
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dabrafenib: CL/F 34.3 L/h, t1/2z 67 hours, AUC ratio 1.8, Ctrough 46.6 ng/mL.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dabrafenib: CL/F 34.3 L/h, t1/2z 67 hours, AUC ratio 1.8, Css 46.6 ng/mL; hydroxy-dabrafenib: Ctrough 69.3 ng/mL; carboxy-dabrafenib: Cmin 3.61e+03 ng/mL; desmethyl-dabrafenib: Ctrough 291 ng/mL.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has none, the second reading dabrafenib → hydroxy-dabrafenib (metabolism); dabrafenib → carboxy-dabrafenib (metabolism); dabrafenib → desmethyl-dabrafenib (metabolism); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has dabrafenib → hydroxy-dabrafenib (metabolism); dabrafenib → carboxy-dabrafenib (metabolism); dabrafenib → desmethyl-dabrafenib (metabolism), the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Total steady-state clearance (CL/F) at 150 mg BID dose | `Q27` · CL/F | 34.3 | L/h | 9.528e-06 | m3/s | l/h | llm_corrected (0.6) | Ouellet_2014:abstract |
+| Total steady-state clearance (CL/F) at 150 mg BID dose | `Q27` · CL/F | 34.3 | L/h | 9.528e-06 | m3/s | l/h | exact (1) | Ouellet_2014:abstract, Ouellet_2014:abstract |
 | induction half-life | `Q57` · t1/2z | 67 | hours | 2.412e+05 | s | h | llm (0.6) | Ouellet_2014:abstract |
-| AUC ratio (hypromellose:gelatin capsule) following single dosing | `Q21` · AUC ratio | 1.80 |  |  |  |  | llm_confirmed (0.6) | Ouellet_2014:abstract |
-| Steady-state pre-dose concentration of dabrafenib | `Q37` · Ctrough | 46.6 | ng/mL |  |  | ng/ml | llm (0.6) | Ouellet_2014:abstract |
+| AUC ratio (hypromellose:gelatin capsule) following single dosing | `Q21` · AUC ratio | 1.8 |  | 1.8 |  |  | llm_confirmed (0.6) | Ouellet_2014:abstract |
+| Steady-state pre-dose concentration of dabrafenib at 150 mg BID | `Q34` · Css | 46.6 | ng/mL | 4.66e-05 | kg/m3 | ng/ml | llm (0.6) | Ouellet_2014:abstract |
+| Steady-state pre-dose concentration of hydroxy-dabrafenib at 150 mg BID | `Q37` · Ctrough | 69.3 | ng/mL | 6.93e-05 | kg/m3 | ng/ml | llm (0.6) | Ouellet_2014:abstract |
+| Steady-state pre-dose concentration of carboxy-dabrafenib at 150 mg BID | `Q36` · Cmin | 3608 | ng/mL | 0.003608 | kg/m3 | ng/ml | llm (0.6) | Ouellet_2014:abstract |
+| Steady-state pre-dose concentration of desmethyl-dabrafenib at 150 mg BID | `Q37` · Ctrough | 291 | ng/mL | 0.000291 | kg/m3 | ng/ml | llm (0.6) | Ouellet_2014:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,30 +79,45 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the link
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Capsule shell' — extend the ontology if this is a real PK parameter (source ['Ouellet_2014:abstract'])
-- dropped value-less row: 'sex and weight'
-- dropped duplicate Q21 ('AUC ratio (hypromellose:gelatin capsule) following repeat dosing', value '1.42') — already have one for this compound
-- dropped duplicate Q37 ('Steady-state pre-dose concentration of hydroxy-dabrafenib', value '69.3') — already have one for this compound
-- dropped duplicate Q37 ('Steady-state pre-dose concentration of carboxy-dabrafenib', value '3608') — already have one for this compound
-- dropped duplicate Q37 ('Steady-state pre-dose concentration of desmethyl-dabrafenib', value '291') — already have one for this compound
+- dropped unlinked row (NIL): 'sex and weight' — extend the ontology if this is a real PK parameter (source ['Ouellet_2014:abstract'])
+- dropped duplicate Q21 ('AUC ratio (hypromellose:gelatin capsule) following repeat dosing', value 1.42) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dabrafenib
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- status held at "Needs review" — not promoted
+- row roles (LLM): model_class=noncompartmental; 10/10 row label(s) assigned, 2 linked by role; re-tagged dabrafenib→parent ×5, dabrafenib→hydroxy-dabrafenib ×1, dabrafenib→carboxy-dabrafenib ×1, dabrafenib→desmethyl-dabrafenib ×1
+- molar mass: no plausible PubChem entry for 'carboxy-dabrafenib' ('carboxy-dabrafenib') — left in mass units
+- molar mass: none found for 'carboxy-dabrafenib' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Ouellet_2014_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Ouellet_2014_metadata.yaml (11 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.267 (4/15 fields) | 11 |
 | `qwen3.8-27b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>17 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['dabrafenib', 'hydroxy-dabrafenib', 'metabolism'], ['dabrafenib', 'carboxy-dabrafenib', 'metabolism'], ['dabrafenib', 'desmethyl-dabrafenib', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[auc ratio (hypromellose:gelatin capsule) - single dosing]` |  | 1.80 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc ratio (hypromellose:gelatin capsule) following single dosing]` | 1.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady state achievement time]` |  | 14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state pre-dose concentration of carboxy-dabrafenib at 150 mg bid]` | 3608 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state pre-dose concentration of dabrafenib at 150 mg bid]` | 46.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state pre-dose concentration of dabrafenib]` |  | 46.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state pre-dose concentration of desmethyl-dabrafenib at 150 mg bid]` | 291 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state pre-dose concentration of hydroxy-dabrafenib at 150 mg bid]` | 69.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total steady-state clearance (cl/f) at 150 mg bid dose]` | 34.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total steady-state clearance (cl/f) at 150 mg bid dose]` |  | 34.3 | only_one_extracted |
 | `qwen3.8-27b` | `model.links` | [] | [['dabrafenib', 'hydroxy-dabrafenib', 'metabolism'], ['dabrafenib', 'carboxy-dabrafenib', 'metabolism'], ['dabrafenib', 'desmethyl-dabrafenib', 'metabolism']] | mismatch |
 | `qwen3.8-27b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `qwen3.8-27b` | `parameters[auc ratio (hypromellose:gelatin capsule) following single dosing]` | 1.80 |  | only_one_extracted |
@@ -116,15 +137,18 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Ouellet_2014:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Ouellet_2014:abstract', 'Ouellet_2014:abstract'] |
+| C5_dimension_Q34 | pass | [mass] / [length] ** 3 |  | ['Ouellet_2014:abstract'] |
+| C5_dimension_Q36 | pass | [mass] / [length] ** 3 |  | ['Ouellet_2014:abstract'] |
+| C5_dimension_Q37 | pass | [mass] / [length] ** 3 |  | ['Ouellet_2014:abstract'] |
 | C5_dimension_Q37 | pass | [mass] / [length] ** 3 |  | ['Ouellet_2014:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Ouellet_2014:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 34.3 L/h | ['Ouellet_2014:abstract'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none', 'none'] |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 34.3 L/h | ['Ouellet_2014:abstract', 'Ouellet_2014:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -136,19 +160,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -158,4 +172,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdabrafenib%5D%20Dabrafenib_Ouellet2014_reference&body=Drug%3A%20dabrafenib%0ARecord%3A%20Dabrafenib_Ouellet2014_reference%0APaper%3A%20Ouellet_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dabrafenib/Dabrafenib_Ouellet2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:14 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:16 UTC</sub>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Prucalopride’s peripheral-compartment volume (V2) of 192 L was refused because the model contains an unreachable or orphan compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="prucalopride" model-id="Prucalopride_van2016_pru_usa_12" status="rejected" stale="false" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ van Schaick E, Benninga MA, Levine A, Magnusson M, Troy S. Development of a popu
 
 ### Reviewer guidance
 
-**Prucalopride’s peripheral-compartment volume (V2) of 192 L was refused because the model contains an unreachable or orphan compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure includes a compartment with no path from the dose. A reported unit could not be converted to SI, leaving a parameter without an SI value; the record does not identify which parameter. The second reader disputed the recorded total clearance, peripheral-compartment volume, and AUC values, reporting none for those fields, and separately listed a prucalopride clearance of 22.9 L/h. Extracted — prucalopride: CL 12.1 l h−1, V2 192 l, AUC 62.3 ng mL−1 h.
+A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — prucalopride: CL 12.1 l h−1, V2 192 l, AUC 62.3 ng mL−1 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has 62.3, the second reading none; it also differs on 9 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

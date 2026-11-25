@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Glucose’s absorption rate constant (ka) has no reported value and was defaulted, leaving the record unsupported and held back.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="glucose" model-id="Glucose_Hwang2020_reference" status="needs_review" stale="false" population="" measured-compound="glucose" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Hwang I, Kim Y, Yoo H, Jang IJ, Yu KS, Lee S. Pharmacokinetic/Pharmacodynamic In
 
 ### Reviewer guidance
 
-**Glucose’s absorption rate constant (ka) has no reported value and was defaulted, leaving the record unsupported and held back.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record reports glucose CL/F of 47.1 L/h and V/F of 1773.5194 L, but no estimate of ka; using a default for ka affects the simulated concentration profile and is unsupported by this paper. The model also defaulted the lag time and assumed F=1, Fm=1, no molar correction, and first-order depot input with apparent (/F) parameters. Extracted — glucose: CL/F 47.1 L/h, V/F 1.77e+03 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — glucose: CL/F 47.1 L/h, V/F 1.77e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has none, the second reading 6.5; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.778 (7 of 9 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

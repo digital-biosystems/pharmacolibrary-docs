@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the model structure defines only one central compartment, omitting the separate compartment for the measured metabolite N-desmethyl selumetinib.
+> T3_output_variable; t3_topology_template.
 
-<div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Patel2018_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="selumetinib and N-desmethyl selumetinib" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Patel2018_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="selumetinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Patel P, Howgate E, Martin P, Carlile DJ, Aarons L, Zhou D. Population pharmacokinetics of the MEK inhibitor selumetinib and its active N-desmethyl metabolite: data from 10 phase I trials. British journal of clinical pharmacology 84(1):52–63 (2018).
@@ -18,8 +18,6 @@ Patel P, Howgate E, Martin P, Carlile DJ, Aarons L, Zhou D. Population pharmacok
 ## Population and dosing
 
 **Population:** healthy volunteers · condition healthy · age group adult · n = 346.
-
-**Dosed compound ≠ measured compound:** dosed selumetinib, measured selumetinib and N-desmethyl selumetinib.
 
 ## Model
 
@@ -40,7 +38,7 @@ Patel P, Howgate E, Martin P, Carlile DJ, Aarons L, Zhou D. Population pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), qwen3.8-27b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +48,13 @@ Patel P, Howgate E, Martin P, Carlile DJ, Aarons L, Zhou D. Population pharmacok
 
 ### Reviewer guidance
 
-**The record was rejected because the model structure defines only one central compartment, omitting the separate compartment for the measured metabolite N-desmethyl selumetinib.**
+**T3_output_variable; t3_topology_template.**
 
-The model structure is defined as a parent-metabolite pair, yet the simulation output references only the central compartment of the parent drug. The second reader disputes the identity of the primary analyte, arguing for selumetinib alone rather than both species. Since the record relies on abstract summary statistics, the model lacks a properly linked metabolite compartment. Extracted — selumetinib: CL 12.7 l h-1, V1 35.6 l.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — selumetinib: CL 12.7 l h-1, V1 35.6 l.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has selumetinib and N-desmethyl selumetinib, the second reading selumetinib. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -73,38 +71,39 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'age on V2'
-- dropped value-less row: 'bilirubin on CL'
-- dropped value-less row: 'weight on CL'
-- dropped value-less row: 'weight on V2'
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=selumetinib and N-desmethyl selumetinib
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- dropped value-less row: 'age'
+- dropped value-less row: 'bilirubin'
+- dropped value-less row: 'weight'
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=selumetinib
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
-- status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 6/6 row label(s) assigned, 2 linked by role; re-tagged selumetinib and N-desmethyl selumetinib→parent ×6
-- molar mass: no plausible PubChem entry for 'selumetinib and N-desmethyl selumetinib' ('selumetinib and N-desmethyl selumetinib') — left in mass units
-- molar mass: none found for 'selumetinib and N-desmethyl selumetinib' — its concentrations stay mass-only
+- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 2 linked by role; re-tagged selumetinib→parent ×6
+- molar mass: PubChem entry choice failed (JSONDecodeError)
+- molar mass: none of 1 PubChem candidate(s) is 'N-desmethyl selumetinib' (LLM) — left in mass units
+- molar mass: none found for 'N-desmethyl selumetinib' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Patel_2018_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 | `qwen3.8-27b` | not confirmed | 0.833 (5/6 fields) | 1 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[central volume of distribution]` | 35.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 12.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 12.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` |  | 35.6 | only_one_extracted |
 | `qwen3.8-27b` | `screen.primary_analyte` | selumetinib and N-desmethyl selumetinib | selumetinib | mismatch |
 
 </details>
@@ -135,11 +134,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable | fail | Metabolite_C (measured=selumetinib and N-desmethyl selumetinib) | central.C |  | output must be the measured/analyte compartment |
+| T3_output_variable | fail | Metabolite_C (measured=selumetinib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.5 (4 of 8 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -167,4 +167,4 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bselumetinib%5D%20Selumetinib_Patel2018_reference&body=Drug%3A%20selumetinib%0ARecord%3A%20Selumetinib_Patel2018_reference%0APaper%3A%20Patel_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_selumetinib/Selumetinib_Patel2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 06:49 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:25 UTC</sub>

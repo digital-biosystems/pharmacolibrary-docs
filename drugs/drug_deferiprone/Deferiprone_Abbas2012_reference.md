@@ -4,38 +4,37 @@
 
 # deferiprone — `Deferiprone_Abbas2012_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Only clearance was extracted — no volume.
+> No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="deferiprone" model-id="Deferiprone_Abbas2012_reference" status="needs_review" stale="false" population="healthy adult volunteers" measured-compound="deferiprone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="deferiprone" model-id="Deferiprone_Abbas2012_reference" status="rejected" stale="false" population="24 volunteers" measured-compound="deferiprone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Abbas M, Nawaz R, Iqbal T, Alim M, Asi MR. Quantitative determination of deferiprone in human plasma by reverse phase high performance liquid chromatography and its application to pharmacokinetic study. Pakistan journal of pharmaceutical sciences 25(2):343–348 (2012).
 
 ## Population and dosing
 
-**Population:** healthy adult volunteers · condition healthy · age group adult · n = 24.
+**Population:** 24 volunteers · condition healthy · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| AUC of deferiprone | AUC | 17.0 | h.μg/ml |
-| absorption half-life | t1/2ka | 0.62 | hours |
-| elimination half-life | t1/2z | 2.65 | hours |
+| average area under the plasma concentration-time curve (AUC) of deferiprone | AUC | 17.0 | h.μg/ml |
+| Average absorption and elimination half-life values of deferiprone of 24 volunteers | t1/2ka | 0.62 | hours |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,11 +44,11 @@ Abbas M, Nawaz R, Iqbal T, Alim M, Asi MR. Quantitative determination of deferip
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**No volume or clearance — not a compartmental population PK model.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — deferiprone: AUC 17 h.μg/ml, t1/2ka 0.62 hours, t1/2z 2.65 hours.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption half-life: this record has 0.62, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average absorption and elimination half-life values of deferiprone of 24 volunteers: this record has 0.62, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -57,9 +56,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| AUC of deferiprone | `Q88` · AUC | 17.0 | h.μg/ml |  |  | (h·µg)/ml | llm_confirmed (0.6) | Abbas_2012:abstract |
-| absorption half-life | `Q95` · t1/2ka | 0.62 | hours | 2232 | s | h | llm_corrected (0.6) | Abbas_2012:abstract |
-| elimination half-life | `Q57` · t1/2z | 2.65 | hours | 9540 | s | h | llm (0.6) | Abbas_2012:abstract |
+| average area under the plasma concentration-time curve (AUC) of deferiprone | `Q88` · AUC | 17.0 | h.μg/ml | 61.2 | kg*s/m3 | (h·µg)/ml | llm_confirmed (0.6) | Abbas_2012:abstract |
+| Average absorption and elimination half-life values of deferiprone of 24 volunteers | `Q95` · t1/2ka | 0.62 | hours | 2232 | s | h | half_life_rule (0.95) | Abbas_2012:abstract, Abbas_2012:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,8 +69,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=deferiprone
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Abbas_2012_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -80,22 +76,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
+| `gpt-oss-120b` | partly confirmed | 0.625 (5/8 fields) | 3 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption half-life]` | 0.62 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc of deferiprone]` | 17.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[average absorption half-life]` |  | 0.62 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[average area under the plasma concentration-time curve (auc) of deferiprone]` |  | 17.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[average elimination half-life]` |  | 2.65 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life]` | 2.65 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[average absorption and elimination half-life values of deferiprone of 24 volunteers]` | 0.62 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[average absorption half-life values of deferiprone]` |  | 0.62 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life values of deferiprone]` |  | 2.65 | only_one_extracted |
 
 </details>
 
@@ -109,12 +102,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q57 | pass | [time] |  | ['Abbas_2012:abstract'] |
+| C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | fail |  |  |  |
 | C5_dimension_Q88 | pass | [time] * [mass] / [length] ** 3 |  | ['Abbas_2012:abstract'] |
-| C5_dimension_Q95 | pass | [time] |  | ['Abbas_2012:abstract'] |
+| C5_dimension_Q95 | pass | [time] |  | ['Abbas_2012:abstract', 'Abbas_2012:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -127,19 +118,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -149,4 +130,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdeferiprone%5D%20Deferiprone_Abbas2012_reference&body=Drug%3A%20deferiprone%0ARecord%3A%20Deferiprone_Abbas2012_reference%0APaper%3A%20Abbas_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_deferiprone/Deferiprone_Abbas2012_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 18:47 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:04 UTC</sub>

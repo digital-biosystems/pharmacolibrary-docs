@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;nintedanib&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/&quot;},{&quot;label&quot;:&quot;Schmid_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nintedanib_Schmid2018_reference&quot;,&quot;label&quot;:&quot;Schmid_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/Nintedanib_Schmid2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Nintedanib_Schmid2018v2_reference&quot;,&quot;label&quot;:&quot;Schmid_2018_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/Nintedanib_Schmid2018v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hartmann_2026_FVC&quot;,&quot;label&quot;:&quot;Hartmann_2026 \u00b7 FVC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/pd_Hartmann_2026_FVC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hartmann_2026_FVC_2&quot;,&quot;label&quot;:&quot;Hartmann_2026 \u00b7 FVC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/pd_Hartmann_2026_FVC_2.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nintedanib_Schmid2018v2_reference&quot;,&quot;label&quot;:&quot;Schmid_2018_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/Nintedanib_Schmid2018v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hartmann_2026_FVC&quot;,&quot;label&quot;:&quot;Hartmann_2026 \u00b7 FVC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/pd_Hartmann_2026_FVC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hartmann_2026_FVC_2&quot;,&quot;label&quot;:&quot;Hartmann_2026 \u00b7 FVC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/pd_Hartmann_2026_FVC_2.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Nintedanib’s reported absorption rate (0.0814 h−1), lag time (0.689 h), apparent clearance (994 L/h), and steady-state volume (265 L) remain disputed after a second reader challenged the parameterization and estimates.
+> The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="nintedanib" model-id="Nintedanib_Schmid2018_reference" status="needs_review" stale="false" population="patients with idiopathic pulmonary fibrosis" measured-compound="nintedanib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nintedanib" model-id="Nintedanib_Schmid2018_reference" status="needs_review" stale="false" population="patients with idiopathic pulmonary fibrosis" measured-compound="nintedanib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Schmid U, Doege C, Dallinger C, Freiwald M. Population pharmacokinetics of nintedanib in patients with idiopathic pulmonary fibrosis. Pulmonary pharmacology & therapeutics 48:136–143 (2018).
@@ -17,16 +17,14 @@ Schmid U, Doege C, Dallinger C, Freiwald M. Population pharmacokinetics of ninte
 
 ## Population and dosing
 
-**Population:** patients with idiopathic pulmonary fibrosis · condition idiopathic pulmonary fibrosis · n = 933.
+**Population:** patients with idiopathic pulmonary fibrosis · condition idiopathic pulmonary fibrosis · age group adult.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Structure:** 1-compartment; no model was built for this record.  
+**Parameterization:** mechanistic.  
 **Parameters:** 4 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_nintedanib/Nintedanib_Schmid2018_reference/Nintedanib_Schmid2018_reference.svg" alt="Nintedanib_Schmid2018_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -35,12 +33,12 @@ Schmid U, Doege C, Dallinger C, Freiwald M. Population pharmacokinetics of ninte
 |---|---|---|---|
 | absorption rate | kabs | 0.0814 | h-1 |
 | lag time | tlag | 0.689 | h |
-| apparent total clearance | CL/F | 994 | L/h |
+| apparent total clearance | CL | 994 | L/h |
 | apparent volume of distribution at steady state | Vss | 265 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +48,13 @@ Schmid U, Doege C, Dallinger C, Freiwald M. Population pharmacokinetics of ninte
 
 ### Reviewer guidance
 
-**Nintedanib’s reported absorption rate (0.0814 h−1), lag time (0.689 h), apparent clearance (994 L/h), and steady-state volume (265 L) remain disputed after a second reader challenged the parameterization and estimates.**
+**The clearance plausibility check could not be computed.**
 
-The record is based on the abstract alone, so reported summary statistics stand in for a fitted model; the second reader preferred mechanistic over apparent parameterization and agreed with none of the reported estimates. The model builder assumed F=1 and Fm=1 with no molar correction, and used Vss as the distribution volume because Vc/V was not reported. This reproduced AUC and terminal half-life, but not the early distribution phase. Extracted — nintedanib: kabs 0.0814 h-1, tlag 0.689 h, CL/F 994 L/h, Vss 265 L.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — nintedanib: kabs 0.0814 h-1, tlag 0.689 h, CL 994 L/h, Vss 265 L.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -64,7 +62,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 |---|---|---|---|---|---|---|---|---|
 | absorption rate | `Q49` · kabs | 0.0814 | h-1 | 2.261e-05 | 1/s | 1/h | exact (1) | Schmid_2018:abstract |
 | lag time | `Q83` · tlag | 0.689 | h | 2480 | s | h | exact (1) | Schmid_2018:abstract |
-| apparent total clearance | `Q27` · CL/F | 994 | L/h | 0.0002761 | m3/s | l/h | llm_corrected (0.6) | Schmid_2018:abstract |
+| apparent total clearance | `Q22` · CL | 994 | L/h | 0.0002761 | m3/s | l/h | llm_confirmed (0.6) | Schmid_2018:abstract |
 | apparent volume of distribution at steady state | `Q65` · Vss | 265 | L | 0.265 | m3 | l | llm_corrected (0.6) | Schmid_2018:abstract |
 
 <details class="legend">
@@ -74,15 +72,10 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 
 ## Departures & gaps
 
-**Deviations:**
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
-
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=nintedanib
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (apparent total clearance)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nintedanib
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Schmid_2018_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -90,21 +83,18 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `qwen3.8-27b` | `parameters[absorption rate]` | 0.0814 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[apparent total clearance]` | 994 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[apparent volume of distribution at steady state]` | 265 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[lag time]` | 0.689 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution at steady state].parameter_id` | Q65 | Q76 | mismatch |
 
 </details>
 
@@ -121,27 +111,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Schmid_2018:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Schmid_2018:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Schmid_2018:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Schmid_2018:abstract'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Schmid_2018:abstract'] |
-| C7_apparent_coherence | pass |  |  |  |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 994 | ['Schmid_2018:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 994 L/h | ['Schmid_2018:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 994 L/h | ['Schmid_2018:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 265 L | ['Schmid_2018:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=nintedanib) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -158,39 +135,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nintedanib/Nintedanib_Schmid2018_reference/Nintedanib_Schmid2018_reference_modelica.zip" download>Nintedanib_Schmid2018_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_nintedanib/Nintedanib_Schmid2018_reference/Nintedanib_Schmid2018_reference_fmi.zip" download>Nintedanib_Schmid2018_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_nintedanib/Nintedanib_Schmid2018_reference/Nintedanib_Schmid2018_reference_fmi.zip" download>Nintedanib_Schmid2018_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nintedanib/Nintedanib_Schmid2018_reference/Nintedanib_Schmid2018_reference_matlab.zip" download>Nintedanib_Schmid2018_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nintedanib/Nintedanib_Schmid2018_reference/Nintedanib_Schmid2018_reference_matlab_simbio.zip" download>Nintedanib_Schmid2018_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_nintedanib/Nintedanib_Schmid2018_reference/Nintedanib_Schmid2018_reference_sbml.zip" download>Nintedanib_Schmid2018_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_nintedanib/Nintedanib_Schmid2018_reference/Nintedanib_Schmid2018_reference_cellml.zip" download>Nintedanib_Schmid2018_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.5396 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 2480 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.00038 | kg |
-| input | model | `Cl` | 0.0002761 | m3/s |
-| input | model | `VdPerKg` | 0.003786 | m3/kg |
-| input | model | `ka` | 2.261e-05 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -211,14 +163,10 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 380 mg, single dose, first-order absorption (ka 0.0814 /h, lag 41.3 min, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 380 mg oral (L01EX09) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_nintedanib/Nintedanib_Schmid2018_reference/Nintedanib_Schmid2018_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_nintedanib/Nintedanib_Schmid2018_reference/Nintedanib_Schmid2018_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Nintedanib_Schmid2018_reference_params.json` · controls `Nintedanib_Schmid2018_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnintedanib%5D%20Nintedanib_Schmid2018_reference&body=Drug%3A%20nintedanib%0ARecord%3A%20Nintedanib_Schmid2018_reference%0APaper%3A%20Schmid_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nintedanib/Nintedanib_Schmid2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:19 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:56 UTC</sub>

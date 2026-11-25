@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Vandeputte_2023_MOR_activation](drugs/drug_ketobemidone/pd_Vandeputte_2023_MOR_activation.md) | MOR activation (β-arrestin 2 recruitment) ← ketobemidone · direct sigmoid Emax (Hill) effect | — | Vandeputte MM et al., Detection, chemical analysis, and pharm…, Analytical and bioanalytica… (2023) | [10.1007/s00216-023-04722-7](https://doi.org/10.1007/s00216-023-04722-7) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Vandeputte_2023_MOR_activation](drugs/drug_ketobemidone/pd_Vandeputte_2023_MOR_activation.md) | MOR activation (β-arrestin 2 recruitment) ← ketobemidone · direct sigmoid Emax (Hill) effect | — | Vandeputte MM et al., Detection, chemical analysis, and pharm…, Analytical and bioanalytica… (2023) | [10.1007/s00216-023-04722-7](https://doi.org/10.1007/s00216-023-04722-7) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

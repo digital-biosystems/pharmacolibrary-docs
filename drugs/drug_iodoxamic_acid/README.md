@@ -27,7 +27,7 @@ Iodoxamic acid is a water-soluble iodinated X-ray contrast medium.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Lin_1978_reference](drugs/drug_iodoxamic_acid/IodoxamicAcid_Lin1978_reference.md) | — | 1-compartment (no model) | 1 | Lin SK et al., Pharmacokinetics of iodoxamic acid in r…, Journal of pharmaceutical s… (1978) | [10.1002/jps.2600670715](https://doi.org/10.1002/jps.2600670715) |
+| <span class="pk-rf" hidden data-species="monkey" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Lin_1978_reference](drugs/drug_iodoxamic_acid/IodoxamicAcid_Lin1978_reference.md) | — | 1-compartment (no model) | 1 | Lin SK et al., Pharmacokinetics of iodoxamic acid in r…, Journal of pharmaceutical s… (1978) | [10.1002/jps.2600670715](https://doi.org/10.1002/jps.2600670715) |
 | <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Moss_1980_reference](drugs/drug_iodoxamic_acid/IodoxamicAcid_Moss1980_reference.md) | — | parent + metabolite (no model) | 0 | Moss AA et al., Gastrointestinal radiology. Pharmacokin…, Investigative radiology (1980) | [10.1097/00004424-198011001-00028](https://doi.org/10.1097/00004424-198011001-00028) |
 
 <details class="legend">
@@ -42,35 +42,39 @@ Iodoxamic acid is a water-soluble iodinated X-ray contrast medium.
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:17 | 0:35 | 0/2/0 | 0/0/0 | 0/0/0 | 8,437/910 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 23:21 | 0:03 | 0/2/0 | 0/0/0 | 0/0/0 | 4,156/161 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 2  ·  **relevant:** 1
 - **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Lin_1978.pdf` | Lin SK et al., Pharmacokinetics of iodoxamic acid in r…, Journal of pharmaceutical s… (1978) | popPK | 6 | [10.1002/jps.2600670715](https://doi.org/10.1002/jps.2600670715) | [96248](https://pubmed.ncbi.nlm.nih.gov/96248) | Reports numeric capacity-limited PK parameters (Vmax, Km) for iodoxamic acid in rhesus monkeys directly in the abstract, though no CL/V values. |
-| `Moss_1980.pdf` | Moss AA et al., Gastrointestinal radiology. Pharmacokin…, Investigative radiology (1980) | popPK | 6 | [10.1097/00004424-198011001-00028](https://doi.org/10.1097/00004424-198011001-00028) | [6894137](https://pubmed.ncbi.nlm.nih.gov/6894137) | PK study of iodoxamic acid in rhesus monkeys with numeric parameters (Vmax, unbound fractions) present, though no standard CL/V/compartmental values. |
+| `Moss_1980.pdf` | Moss AA et al., Gastrointestinal radiology. Pharmacokin…, Investigative radiology (1980) | popPK | 9 | [10.1097/00004424-198011001-00028](https://doi.org/10.1097/00004424-198011001-00028) | [6894137](https://pubmed.ncbi.nlm.nih.gov/6894137) | The study reports pharmacokinetic parameters (Vmax, protein binding) for iodoxamic acid in rhesus monkeys, but lacks standard disposition metrics like CL, V, or half-life in the provided text. |
 
-<sub>queue written 2026-10-07 22:17 UTC</sub>
+<sub>queue written 2026-11-23 23:21 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Moss_1979 | irrelevant | 0 | 0 | The subject drug is iopanoic acid in rhesus monkeys; iodoxamic acid is only mentioned as the origin of the infusion method, with no PK parameters for iodoxamic acid. |
+| popPK | Lin_1978 | irrelevant | 5 | 6 | The study focuses on capacity-limited hepatic uptake and biliary excretion (Vmax, Km) rather than standard linear disposition parameters (CL, V, t1/2) or a compartmental PK model. |
+| PGx | Lin_1978 | not_relevant | 0 | 0 | The study investigates pharmacokinetics in rhesus monkeys and does not report any genetic variants, genotypes, or pharmacogenomic effects. |
+| popPK | Moss_1979 | irrelevant | 0 | 0 | The study is about the pharmacokinetics of iopanoic acid, not iodoxamic acid; iodoxamic acid is only mentioned as the origin of the method. |
+| PGx | Moss_1979 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of iopanoic acid in rhesus monkeys and mentions iodoxamic acid only in the context of the method's origin, providing no pharmacogenomic data for iodoxamic acid. |
+| popPK | Moss_1980 | relevant | 9 | 2 | The study reports pharmacokinetic parameters (Vmax, protein binding) for iodoxamic acid in rhesus monkeys, but lacks standard disposition metrics like CL, V, or half-life in the provided text. |
+| PGx | Moss_1980 | not_relevant | 0 | 0 | The paper describes pharmacokinetics in a monkey model without any genetic variation analysis, thus it is not pharmacogenomic. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biodoxamic_acid%5D&body=Drug%3A%20iodoxamic_acid%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iodoxamic_acid/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 22:17 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 23:21 UTC</sub>

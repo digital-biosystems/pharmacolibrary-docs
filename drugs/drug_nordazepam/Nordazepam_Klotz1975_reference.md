@@ -5,9 +5,9 @@
 
 # nordazepam — `Nordazepam_Klotz1975_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for nordazepam is held back because the second reader disputes the clearance and volume values extracted from the source text.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="nordazepam" model-id="Nordazepam_Klotz1975_reference" status="needs_review" stale="false" population="" measured-compound="nordazepam" parameterization="mechanistic" topology="1C"></div>
 
@@ -18,8 +18,6 @@ Klotz U, Avant GR, Hoyumpa A, Schenker S, Wilkinson GR. The effects of age and l
 ## Population and dosing
 
 **Population:** review reference.
-
-> **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 ## Model
 
@@ -40,7 +38,7 @@ Klotz U, Avant GR, Hoyumpa A, Schenker S, Wilkinson GR. The effects of age and l
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +48,13 @@ Klotz U, Avant GR, Hoyumpa A, Schenker S, Wilkinson GR. The effects of age and l
 
 ### Reviewer guidance
 
-**The record for nordazepam is held back because the second reader disputes the clearance and volume values extracted from the source text.**
+**cross_check_disputed; x1_cross_check.**
 
-The first reader recorded a clearance of 13.0 ml/min and a volume of 22.506 L for nordazepam. The second reader disagreed, proposing a clearance of 20 and a volume of 105.6 instead. Additionally, the readers swapped null and numeric values for two other parameters, indicating a mismatch in data assignment. Extracted — nordazepam: CL 13 ml/min, V 22.5 L.
+Extracted — nordazepam: CL 13 ml/min, V 22.5 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 13.0, the second reading 20; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -126,7 +124,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -204,4 +202,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnordazepam%5D%20Nordazepam_Klotz1975_reference&body=Drug%3A%20nordazepam%0ARecord%3A%20Nordazepam_Klotz1975_reference%0APaper%3A%20Klotz_1975%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nordazepam/Nordazepam_Klotz1975_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:42 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:15 UTC</sub>

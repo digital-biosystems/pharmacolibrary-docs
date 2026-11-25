@@ -9,7 +9,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Proctor2026_reference" status="needs_review" stale="false" population="patients with advanced cancer treated with durvalumab" measured-compound="durvalumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Proctor2026_reference" status="needs_review" stale="false" population="patients with advanced cancer" measured-compound="durvalumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Proctor JR, Wong H. Albumin Levels Are Predictive of Cachexia-Induced Time-Dependent Clearance of Therapeutic Antibodies: A Physiologically Based Pharmacokinetic Model of Durvalumab. CPT: pharmacometrics & systems pharmacology 15(2):e70185 (2026).
@@ -17,15 +17,15 @@ Proctor JR, Wong H. Albumin Levels Are Predictive of Cachexia-Induced Time-Depen
 
 ## Population and dosing
 
-**Population:** patients with advanced cancer treated with durvalumab · condition advanced cancer with cachexia.
+**Population:** patients with advanced cancer · condition advanced cancer · age group adult.
 
-**Dosing:** 700 mg, iv, multiple, every 336 h.
+**Dosing:** 700 mg, intravenous, multiple, every 336 h.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,12 +33,11 @@ Proctor JR, Wong H. Albumin Levels Are Predictive of Cachexia-Induced Time-Depen
 
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
-| k deg,inf | kmet | 18.32 | 1/day | 0.292 |
-| k tv | kcomp | 0.0100 | 1/day | 0.000621 |
+| k tv | kel | 0.0100 | 1/day | 6.2 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625), qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +49,9 @@ Proctor JR, Wong H. Albumin Levels Are Predictive of Cachexia-Induced Time-Depen
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — durvalumab: kmet 18.3 1/day, kcomp 0.01 1/day.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — durvalumab: kel 0.01 1/day.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[k deg,inf].parameter_id`: this record has Q51, the second reading Q301; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has durvalumab, the second reading albumin; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,8 +59,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
 |---|---|---|---|---|---|---|---|---|---|
-| k deg,inf | `Q51` · kmet | 18.32 | 1/day | 0.000212 | 1/s | 1/h | 0.292 | llm (0.6) | psp470185-tbl-0001:row1:col2, psp470185-tbl-0001:row1:col3, psp470185-tbl-0001:row1:col4 |
-| k tv | `Q48` · kcomp | 0.0100 | 1/day | 1.157e-07 | 1/s | 1/h | 0.000621 | llm (0.6) | psp470185-tbl-0001:row3:col2, psp470185-tbl-0001:row3:col3, psp470185-tbl-0001:row3:col4 |
+| k tv | `Q47` · kel | 0.0100 | 1/day | 1.157e-07 | 1/s | 1/d | 6.2 | llm (0.6) | psp470185-tbl-0001:row3:col3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,35 +69,35 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'units' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped PD-category row 'k deg,T' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp470185-tbl-0001:row2:col2', 'psp470185-tbl-0001:row2:col3', 'psp470185-tbl-0001:row2:col4'])
-- implicit units: 'k deg,inf' → 1/day (from the paper text: 'The paper states, “The value of the time-invariant component was estimated to be 18.32 1/day.”')
-- implicit units: 'k tv' → 1/day (from the paper text: 'The paper states that “the rate constant of the change in degradation” was estimated as “0.010 1/day,” corresponding to ')
+- conflicting source units for 'k deg,inf': [{'unit': '1/day', 'source': 'psp470185-tbl-0001:row1:col2', 'scope': 'unit_column'}, {'unit': 'inf', 'source': 'psp470185-tbl-0001:row1:col0', 'scope': 'label'}]
+- conflicting source units for 'k deg,T': [{'unit': '1/day', 'source': 'psp470185-tbl-0001:row2:col2', 'scope': 'unit_column'}, {'unit': 'T', 'source': 'psp470185-tbl-0001:row2:col0', 'scope': 'label'}]
+- dropped unlinked row (NIL): 'k deg,inf' — extend the ontology if this is a real PK parameter (source ['psp470185-tbl-0001:row1:col3'])
+- dropped unlinked row (NIL): 'k deg,T' — extend the ontology if this is a real PK parameter (source ['psp470185-tbl-0001:row2:col3'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=durvalumab
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at "Needs review" — not promoted
 - molar mass: none found for 'durvalumab' — its concentrations stay mass-only
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell psp470185-tbl-0001:row1:col5 = '1.6%'
-- unparsed cell psp470185-tbl-0001:row2:col5 = '1.2%'
-- unparsed cell psp470185-tbl-0001:row3:col5 = '6.2%'
+- table psp470185-tbl-0001: conflicting_units
 - LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
 | `qwen3.8-27b` | not confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[k deg,inf]` |  | 18.32 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k tv].parameter_id` | Q47 | Q334 | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | durvalumab | albumin | mismatch |
 | `qwen3.8-27b` | `parameters[k deg,inf].parameter_id` | Q51 | Q301 | mismatch |
 | `qwen3.8-27b` | `parameters[k tv]` | 0.0100 |  | only_one_extracted |
 
@@ -115,11 +113,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q48 | pass | 1 / [time] |  | ['psp470185-tbl-0001:row3:col2', 'psp470185-tbl-0001:row3:col3', 'psp470185-tbl-0001:row3:col4'] |
-| C5_dimension_Q51 | pass | 1 / [time] |  | ['psp470185-tbl-0001:row1:col2', 'psp470185-tbl-0001:row1:col3', 'psp470185-tbl-0001:row1:col4'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['psp470185-tbl-0001:row3:col3'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -154,4 +151,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdurvalumab%5D%20Durvalumab_Proctor2026_reference&body=Drug%3A%20durvalumab%0ARecord%3A%20Durvalumab_Proctor2026_reference%0APaper%3A%20Proctor_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_durvalumab/Durvalumab_Proctor2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 12:18 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:17 UTC</sub>

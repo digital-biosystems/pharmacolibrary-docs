@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held because the second reader could not verify the dose compound, primary analyte, or clearance parameter values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Yamamoto2024_final" status="needs_review" stale="false" population="nonobese, obese, and post-RYGB patients" measured-compound="(S)-carvedilol" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Yamamoto PA, Vozmediano V, Cristofoletti R, Jiang J, Schmittgen TD, de Gaitani C
 
 ### Reviewer guidance
 
-**The record was held because the second reader could not verify the dose compound, primary analyte, or clearance parameter values.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagreed that the dose compound was rac-carvedilol and the primary analyte was (S)-carvedilol, marking both as unknown. Additionally, the second reader could not confirm the total clearance value of 18.21 L/h, finding it null in their review. The reader also identified a lag time of 0.13 hours and an (R)-carvedilol bioavailability of 0.3 not present in this record, while the original builder had left the absorption lag time at its default value. Extracted — (S)-carvedilol: kabs 0.095 1/h, Fab 0.28, CL 18.2 L/h, V1 5.81 L, Q 1.54 L/h, V2 23.2 L, Frel 0.17.
+None of the extracted parameters is carvedilol's own; they describe (S)-carvedilol. Extracted — (S)-carvedilol: kabs 0.095 1/h, Fab 0.28, CL 18.2 L/h, V1 5.81 L, Q 1.54 L/h, V2 23.2 L, Frel 0.17.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rac-carvedilol, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -204,7 +204,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.75 (15 of 20 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (15 of 20 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

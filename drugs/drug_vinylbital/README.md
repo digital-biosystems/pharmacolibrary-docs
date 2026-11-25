@@ -40,7 +40,7 @@ Vinylbital is a barbiturate used as a sedative and hypnotic to calm the central 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:07 | 0:38 | 1/0/0 | 0/0/0 | 0/0/0 | 12,703/921 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 08:25 | 0:04 | 1/0/0 | 0/0/0 | 0/0/0 | 6,041/346 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -55,13 +55,19 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Breimer_1976.pdf` | Breimer DD et al., Pharmacokinetics and relative bioavaila…, Arzneimittel-Forschung (1976) | popPK | 8 |  | [989344](https://pubmed.ncbi.nlm.nih.gov/989344) | Human PK study of vinylbital with numeric absorption half-lives (0.24/0.64 h), elimination half-lives (17.6–33.5 h), and bioavailability (93%) reported in the abstract, though CL and V values are not given. |
+| `Breimer_1976.pdf` | Breimer DD et al., Pharmacokinetics and relative bioavaila…, Arzneimittel-Forschung (1976) | popPK | 10 |  | [989344](https://pubmed.ncbi.nlm.nih.gov/989344) | The study reports quantitative pharmacokinetic parameters for vinylbital in humans, including specific values for absorption half-life and elimination half-life derived from a one-compartment model. |
 
-<sub>queue written 2026-10-06 23:07 UTC</sub>
+<sub>queue written 2026-11-24 08:25 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Breimer_1976 | not_relevant | 0 | 0 | The paper describes pharmacokinetics in a general population and does not investigate the effect of any genetic variant or genotype on PK or PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinylbital%5D&body=Drug%3A%20vinylbital%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinylbital/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 23:07 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 08:25 UTC</sub>

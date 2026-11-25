@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The record was rejected because the four 5-fluorouracil metabolites were unlinked and the absorption rate constant unit could not be converted to SI.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Ma2022_reference" status="rejected" stale="false" population="animal models (100 mg/kg dose) and colon xenograft tumors" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -52,7 +52,7 @@ Ma C, Almasan A, Gurkan-Cavusoglu E. Computational analysis of 5-fluorouracil an
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -62,11 +62,13 @@ Ma C, Almasan A, Gurkan-Cavusoglu E. Computational analysis of 5-fluorouracil an
 
 ### Reviewer guidance
 
-**The record was rejected because the four 5-fluorouracil metabolites were unlinked and the absorption rate constant unit could not be converted to SI.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Metabolites 5-FU anabolites, FUTP, FdUTP, and FdUMP are defined with no path from the dose compartment. The absorption rate constant for 5-fluorouracil is 0.13 1/h, a unit that could not be converted to SI. Extracted — fluorouracil: Q 0.038, V1 2.88, V2 0.152, Km 21.9, fu 17.4 min⁻¹, Vmax 2.02, kel 2, kabs 0.13 1/h; 5-FU anabolites: Vmax 27.1, Km 0.213; FUTP: kel 3.71; FdUTP: Vmax 3.34, Km 1.38, kel 6.04.
+A reported unit could not be converted (fu), so that value has no SI equivalent. Extracted — fluorouracil: Q 0.038, V1 2.88, V2 0.152, Km 21.9, fu 17.4 min⁻¹, Vmax 2.02, kel 2, kabs 0.13 1/h; 5-FU anabolites: Vmax 27.1, Km 0.213; FUTP: kel 3.71; FdUTP: Vmax 3.34, Km 1.38, kel 6.04.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has 5-fluorouracil → 5-fu anabolites (metabolism); 5-fluorouracil → futp (metabolism); 5-fluorouracil → fdutp (metabolism) …, the second reading none; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -183,6 +185,44 @@ Metabolites 5-FU anabolites, FUTP, FdUTP, and FdUMP are defined with no path fro
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (3/21 fields) | 18 |
+
+<details><summary>18 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['5-fluorouracil', '5-fu anabolites', 'metabolism'], ['5-fluorouracil', 'futp', 'metabolism'], ['5-fluorouracil', 'fdutp', 'metabolism'], ['5-fluorouracil', 'fdump', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[5-fu in interstitial fluid and its anabolism]` | 17.430 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[5-fu in plasma]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate]` | 0.13 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[futp incorpoartion into rna]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intracellular 5-fu]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k03]` | 2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k07]` | 6.038 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k65]` | 3.713 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km,54]` | 0.213 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km,75]` | 1.382 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` | 21.935 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q21]` | 0.038 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` | 2.882 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` | 0.152 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax,54]` | 27.138 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax,75]` | 3.339 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax,influx]` | 2.021 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

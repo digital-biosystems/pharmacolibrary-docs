@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The flurbiprofen record is rejected because the source paper reports exposure/outcome data without a compartmental population pharmacokinetic model.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q301 unit l h⁻¹ ([length] ** 3 / [time]) vs 1 / [time]; Q49 unit l h⁻¹ ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Kumpulainen2010v2_reference" status="rejected" stale="false" population="children aged 3 months to 13 years" measured-compound="flurbiprofen" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -60,13 +60,13 @@ Kumpulainen E, Välitalo P, Kokki M, Lehtonen M, Hooker A, Ranta VP et al. Plasm
 
 ### Reviewer guidance
 
-**The flurbiprofen record is rejected because the source paper reports exposure/outcome data without a compartmental population pharmacokinetic model.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q301 unit l h⁻¹ ([length] ** 3 / [time]) vs 1 / [time]; Q49 unit l h⁻¹ ([length] ** 3 / [time]) vs 1 / [time].**
 
-The established reason is that the paper lacks a distribution volume and any clearance or elimination rate constant, meaning it does not define a compartmental pharmacokinetic structure. Additionally, the reported unit 'l h⁻¹' for the intercompartmental clearance parameter could not be converted to standard SI units. The second reader disagreed on the identification of the dose compound and the existence of a metabolism link to flurbiprofen axetil. Extracted — flurbiprofen: Fab 0.81, k12 5.5 l h⁻¹, tlag 0.11 h, kabs 29 l h⁻¹, fu 0.00031, Q 0.12 l h⁻¹, kuptake 6.8 UPTK.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (k12, kabs and kuptake), so that value has no SI equivalent. Extracted — flurbiprofen: Fab 0.81, k12 5.5 l h⁻¹, tlag 0.11 h, kabs 29 l h⁻¹, fu 0.00031, Q 0.12 l h⁻¹, kuptake 6.8 UPTK.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flurbiprofen axetil; flurbiprofen, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

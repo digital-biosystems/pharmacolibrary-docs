@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Record for procainamide rejected due to a unit dimension conflict on the intercompartmental clearance parameter Q, which is defined as an inverse time rate constant.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time]; Q30 unit hr-1 (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Kamath1981_ii_two_compartment_open_modelb" status="rejected" stale="false" population="rats" measured-compound="procainamide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -55,13 +55,13 @@ Kamath BL, Lai CM, Gupta SD, Durrani MJ, Yacobi A. Pharmacokinetics of procainam
 
 ### Reviewer guidance
 
-**Record for procainamide rejected due to a unit dimension conflict on the intercompartmental clearance parameter Q, which is defined as an inverse time rate constant.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time]; Q30 unit hr-1 (1 / [time]) vs [length] ** 3 / [time].**
 
-The intercompartmental parameter Q, labeled k12 with a value of 0.983, is recorded in units of hr-1, yet the model expects dimensions of volume per time. This dimensional mismatch prevented the parameter from being correctly integrated into the structural model. A second reader could not confirm the extracted values for Q, V1, CLR, and other key pharmacokinetic parameters, returning null for all listed fields. Extracted — procainamide: λ1 2.52 hr-1, kel 0.333 hr-1, t1/2z 2.13 hr, Q 0.983 hr-1, V1 1.46 liters/kg, V 3.82 liters/kg, CLR 0.88 liters/hr/kg.
+A reported unit could not be converted (λ1 and Q), so that value has no SI equivalent. Extracted — procainamide: λ1 2.52 hr-1, kel 0.333 hr-1, t1/2z 2.13 hr, Q 0.983 hr-1, V1 1.46 liters/kg, V 3.82 liters/kg, CLR 0.88 liters/hr/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has procainamide, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

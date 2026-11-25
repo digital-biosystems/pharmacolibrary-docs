@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Parameter k21 for 5-fluorouracil has a unit of L/μmol/h, conflicting with its definition as a first-order transfer rate constant.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q302 unit L/μmol/h ([length] ** 3 / [substance] / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Sakai2021_value_cv" status="rejected" stale="false" population="colorectal cancer model rats" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -44,7 +44,7 @@ Sakai S, Kobuchi S, Ito Y, Sakaeda T. A Physiologically Based Pharmacokinetic-Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.077). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +54,13 @@ Sakai S, Kobuchi S, Ito Y, Sakaeda T. A Physiologically Based Pharmacokinetic-Ph
 
 ### Reviewer guidance
 
-**Parameter k21 for 5-fluorouracil has a unit of L/μmol/h, conflicting with its definition as a first-order transfer rate constant.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q302 unit L/μmol/h ([length] ** 3 / [substance] / [time]) vs 1 / [time].**
 
-The record defines k21 as the first-order transfer rate constant from the peripheral to the central compartment, which requires dimensions of inverse time. However, the extracted value 0.00018 is assigned the unit L/μmol/h, creating a dimensional mismatch that prevents conversion to SI units. This conflict on the structural parameter caused the model to be rejected. Extracted — fluorouracil: kel 1.2 h -1, k21 0.00018 L/μmol/h, V 161 L, kabs 0.13 1/h.
+A reported unit could not be converted (k21), so that value has no SI equivalent. Extracted — fluorouracil: kel 1.2 h -1, k21 0.00018 L/μmol/h, V 161 L, kabs 0.13 1/h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 5-fluorouracil, the second reading 5-FU; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -96,6 +98,38 @@ The record defines k21 as the first-order transfer rate constant from the periph
 - LLM selected parameter table(s) 1, 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.077 (1/13 fields) | 12 |
+
+<details><summary>12 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['capecitabine', "5'-dfcr", 'metabolism'], ["5'-dfcr", "5'-dfur", 'metabolism'], ["5'-dfur", '5-fluorouracil', 'metabolism']] | [['capecitabine', '5′-dfcr', 'metabolism'], ['5′-dfcr', '5′-dfur', 'metabolism'], ['5′-dfur', '5-fu', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[absorption rate]` | 0.13 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 1]` | 1.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 2]` | 0.00018 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` |  | 2.00 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total volume of distribution (v1 + v2) minimum]` | 160.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[α]` |  | 704.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` |  | 105.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[γ]` |  | 160.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[δ]` |  | 0.15 | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | 5-fluorouracil | 5-FU | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

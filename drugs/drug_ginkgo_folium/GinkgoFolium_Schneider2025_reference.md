@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record assigns bevacizumab and cisplatin pharmacokinetic parameters to ginkgo folium, as the source paper does not model ginkgo PK.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="Ginkgo folium" model-id="GinkgoFolium_Schneider2025_reference" status="rejected" stale="false" population="" measured-compound="ginkgo_folium" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Schneider BK, Benzekry S, Mochel JP. Optimizing First-Line Therapeutics in Non-S
 
 ### Reviewer guidance
 
-**The record assigns bevacizumab and cisplatin pharmacokinetic parameters to ginkgo folium, as the source paper does not model ginkgo PK.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The clearance and volume values correspond to bevacizumab and cisplatin, not ginkgo folium. The source study models non-small cell lung cancer tumor growth and bevacizumab pharmacokinetics. Ginkgo folium appears only as a co-medication or covariate in the study. Extracted — ginkgo folium: CL 0.216 L/day, V1 2.8 L, V2 77 L, Q 456 L/day.
+Extracted — ginkgo folium: CL 0.216 L/day, V1 2.8 L, V2 77 L, Q 456 L/day.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (10 of 10 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;bevacizumab&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/&quot;},{&quot;label&quot;:&quot;Caulet_2016 \u00b7 p_value_a&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bevacizumab_Caulet2016_estimate&quot;,&quot;label&quot;:&quot;Caulet_2016_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bevacizumab_Turner2014_reference&quot;,&quot;label&quot;:&quot;Turner_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Turner2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bevacizumab_Caulet2016_estimate&quot;,&quot;label&quot;:&quot;Caulet_2016_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bevacizumab's volume of distribution had no fitted value, so the model was quarantined rather than published.
+> No value for bevacizumab's volume of distribution; t3_param_coverage (+1 more).
 
 <div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Caulet2016_p_value_a" status="model_quarantined" stale="false" population="patients with metastatic colorectal cancer" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Caulet M, Lecomte T, Bouché O, Rollin J, Gouilleux-Gruart V, Azzopardi N et al.
 
 ### Reviewer guidance
 
-**Bevacizumab's volume of distribution had no fitted value, so the model was quarantined rather than published.**
+**No value for bevacizumab's volume of distribution; t3_param_coverage (+1 more).**
 
-Although the record cites a peripheral volume of distribution of 7.7 L, the review found this parameter was not covered or emitted in the final model. Consequently, a generic placeholder stood in for the specific estimate, leading to the model being held back. Extracted — bevacizumab: CL 0.19 L/h, V2 7.7 L, Q 0.69 L/h.
+The model was built, but bevacizumab's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — bevacizumab: CL 0.19 L/h, V2 7.7 L, Q 0.69 L/h.
 
 Independently confirmed by `qwen3.8-27b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | fail | 3 scholar param(s) emitted or defaulted | 2 covered |  | neither emitted nor in defaulted[]: ['V2'] |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

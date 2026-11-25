@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Nalbuphine Q value 15.5 ml/min is physiologically implausible, indicating a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="nalbuphine" model-id="Nalbuphine_Groenendaal2007_reference" status="rejected" stale="false" population="" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Groenendaal D, Freijer J, de Mik D, Bouw MR, Danhof M, de Lange EC. Population p
 
 ### Reviewer guidance
 
-**Nalbuphine Q value 15.5 ml/min is physiologically implausible, indicating a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The intercompartmental clearance parameter Q is recorded as 15.5 ml/min, a magnitude flagged as outside physiological limits. While the central volume 68.1 ml is also small, the Q value fails the plausibility check. A second reader disagreed with the extracted Q value, proposing an alternative figure of 739. Extracted — nalbuphine: CL 20 ml min À1, V1 68.1 ml, Q 15.5 ml min À1.
+Extracted — nalbuphine: CL 20 ml min À1, V1 68.1 ml, Q 15.5 ml min À1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q64: this record has none, the second reading 739. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

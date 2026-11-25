@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record attributes gemcitabine parameters to an erlotinib metabolic model, and the erlotinib metabolites lack assigned formation rate constants.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng/mL ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="gemcitabine" model-id="Gemcitabine_Kim2017_single_dose" status="rejected" stale="false" population="rats" measured-compound="erlotinib, OSI-420, OSI-413" parameterization="apparent" topology="general_linear"></div>
 
@@ -60,13 +60,13 @@ Kim TH, Shin S, Kim S, Bulitta JB, Weon KY, Joo SH et al. Alterations in Pharmac
 
 ### Reviewer guidance
 
-**The record attributes gemcitabine parameters to an erlotinib metabolic model, and the erlotinib metabolites lack assigned formation rate constants.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng/mL ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-Clearance and volume of distribution are listed for gemcitabine, yet the model structure defines erlotinib as the parent for metabolites OSI-420 and OSI-413. These metabolite links have no assigned rate constants, leaving the metabolites unlinked from the parent drug. A dimensional conflict was also noted where a structural parameter’s unit did not match its physical dimension. Extracted — gemcitabine: C0 1.06e+04 ng/mL, AUClast 3.09e+04 ng·h/mL, AUC∞ 3.12e+04 ng·h/mL, V/F 4.9 L/kg, CL/F 5.4 mL/min/kg, Vss 1.9 L/kg; dFdU: tmax 7.3 h, Cmax 538 ng/mL, AUC ratio 0.67; erlotinib: tmax 3.3 hr.
+A reported unit could not be converted (C0, AUClast, AUC∞ and Cmax), so that value has no SI equivalent. Extracted — gemcitabine: C0 1.06e+04 ng/mL, AUClast 3.09e+04 ng·h/mL, AUC∞ 3.12e+04 ng·h/mL, V/F 4.9 L/kg, CL/F 5.4 mL/min/kg, Vss 1.9 L/kg; dFdU: tmax 7.3 h, Cmax 538 ng/mL, AUC ratio 0.67; erlotinib: tmax 3.3 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gemcitabine, erlotinib, the second reading gemcitabine and erlotinib; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

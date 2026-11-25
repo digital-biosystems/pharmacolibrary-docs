@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Darifenacin distribution rate constant K23 was extracted as -0.555 h, conflicting with its required rate dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="darifenacin" model-id="Darifenacin_Kerbusch2003_reference" status="rejected" stale="false" population="healthy subjects and patients with OAB" measured-compound="darifenacin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -50,13 +50,13 @@ Kerbusch T, Wählby U, Milligan PA, Karlsson MO. Population pharmacokinetic mode
 
 ### Reviewer guidance
 
-**Darifenacin distribution rate constant K23 was extracted as -0.555 h, conflicting with its required rate dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].**
 
-The record labels the distribution rate constant as having units of hours, yet the dimension check requires a reciprocal time unit. A second reader identified the correct value for this parameter as 6.86, rejecting the recorded negative value. The mismatch between the extracted parameter value and the physically required units caused the model's rejection. Extracted — darifenacin: CL 24.8 L/h, V 0.519 l, kcomp -0.555 h -1, kabs 0.972 h.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — darifenacin: CL 24.8 L/h, V 0.519 l, kcomp -0.555 h -1, kabs 0.972 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[k 23].value`: this record has -0.555, the second reading 6.86; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

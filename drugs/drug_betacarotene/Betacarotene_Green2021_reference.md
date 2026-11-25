@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11C&quot;,&quot;href&quot;:&quot;atc/A11C.md&quot;},{&quot;label&quot;:&quot;betacarotene&quot;,&quot;href&quot;:&quot;drugs/drug_betacarotene/&quot;},{&quot;label&quot;:&quot;Green_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betacarotene_Franken2026_reference&quot;,&quot;label&quot;:&quot;Franken_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betacarotene_Franken2026_reference&quot;,&quot;label&quot;:&quot;Franken_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected with retinol flagged as unreachable in the betacarotene model, which reports betacarotene absolute bioavailability (Fab) of 9.5%.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="betacarotene" model-id="Betacarotene_Green2021_reference" status="rejected" stale="false" population="healthy older adults" measured-compound="betacarotene" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -49,13 +49,13 @@ Green MH, Ford JL, Green JB. A Compartmental Model Describing the Kinetics of β
 
 ### Reviewer guidance
 
-**The record was rejected with retinol flagged as unreachable in the betacarotene model, which reports betacarotene absolute bioavailability (Fab) of 9.5%.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Retinol is listed as a betacarotene metabolite with a metabolism link, but the record also has a retinyl acetate hydrolysis link to retinol, and retinol is flagged as unreachable or orphaned. The record was built from the abstract alone, so the reported 9.5% bioavailability is a summary statistic standing in for a fitted-model estimate; no value for the metabolism rate constant Kfm is listed. The second reader disagreed about the compound and metabolite link interpretations and whether 9.5% represented mean absorption or bioavailability, and identified bioefficacy as 7.3. Extracted — betacarotene: Fab 9.5 %, CL 7.67 L/h/kg, V 8.83 L/kg, kabs 1.3 h-1, tlag 0.39 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — betacarotene: Fab 9.5 %, CL 7.67 L/h/kg, V 8.83 L/kg, kabs 1.3 h-1, tlag 0.39 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has betacarotene, the second reading β-carotene; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

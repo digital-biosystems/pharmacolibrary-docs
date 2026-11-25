@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Dabrafenib’s clearance had no extracted value; the reported CL/F of 5.83 L/h belongs to trametinib, leaving the model held back.
+> No value for dabrafenib's clearance, volume of distribution and absorption lag time — all 6 extracted parameters describe trametinib, not dabrafenib; t3_param_coverage (+3 more).
 
 <div class="pk-model-meta" hidden drug="dabrafenib" model-id="Dabrafenib_Balakirouchenane2020_final_tra_model" status="model_quarantined" stale="false" population="adults with metastatic BRAF-mutated solid tumors" measured-compound="dabrafenib, hydroxy-dabrafenib, and trametinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -53,13 +53,13 @@ Balakirouchenane D, Guégan S, Csajka C, Jouinot A, Heidelberger V, Puszkiel A e
 
 ### Reviewer guidance
 
-**Dabrafenib’s clearance had no extracted value; the reported CL/F of 5.83 L/h belongs to trametinib, leaving the model held back.**
+**No value for dabrafenib's clearance, volume of distribution and absorption lag time — all 6 extracted parameters describe trametinib, not dabrafenib; t3_param_coverage (+3 more).**
 
-No value for dabrafenib’s clearance, volume of distribution, and absorption lag time—all 6 extracted parameters describe trametinib. The model was built, but those dabrafenib parameters had no value, so library placeholders stood in and the model was held back rather than published with invented numbers. The record describes a parent–metabolite structure, but the built structure was one-compartment enteral; its apparent parameterization assumed F=1, Fm=1, and no molar correction. A second reader disputed the included dose compound and analytes, the metabolism link, and parameter assignments; agreement was 0.583, with 0 of 1 reader agreeing. Extracted — trametinib: CL/F 5.83 L/h, V1/F 61.9 L, kabs 0.913 1/h, Q/F 64.9 L/h, V2/F 417 L, tlag 0.709 h.
+The model was built, but dabrafenib's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — trametinib: CL/F 5.83 L/h, V1/F 61.9 L, kabs 0.913 1/h, Q/F 64.9 L/h, V2/F 417 L, tlag 0.709 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has dabrafenib and trametinib, the second reading dabrafenib; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -164,7 +164,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.583, 0 of 1 reader(s) agree | 0.583 | cross-check disputed by a second reader: verdict disputed, agreement 0.583, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.583 (7 of 12 compared fields agree); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.583 | cross-check contradicted by a second reader: verdict disputed; agreement 0.583 (7 of 12 compared fields agree); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

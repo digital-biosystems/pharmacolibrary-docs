@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The ibrutinib model record fails because simulated peak concentrations deviate from paper reports, and apparent peripheral volume coverage is incomplete.
+> The model does not reproduce the paper's peak concentration (Cmax); the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="ibrutinib" model-id="Ibrutinib_Gisleskog2025_final_updated_population_pk_model" status="needs_review" stale="false" population="patients with previously untreated mantle cell lymphoma" measured-compound="ibrutinib" parameterization="apparent" topology="1C"></div>
 
@@ -61,13 +61,13 @@ Gisleskog PO, Valenzuela B, Treijtel N, Deshpande S, Henninger T, Perez-Ruixo JJ
 
 ### Reviewer guidance
 
-**The ibrutinib model record fails because simulated peak concentrations deviate from paper reports, and apparent peripheral volume coverage is incomplete.**
+**The model does not reproduce the paper's peak concentration (Cmax); the covariate scenarios were not simulated (+2 more).**
 
-Simulated peak concentrations do not match the paper's reported values, with deviations reaching up to seven times the expected levels. The record lists an apparent peripheral volume of distribution that was not fully accounted for in the parameterization. Additionally, a second reader disagrees with extracted values for clearance, absorption, and lag time. Extracted — ibrutinib: CL/F 1.12e+03 L/h, V2/F 613 L, Q/F 1.13e+03 L/h, V3/F 6.67e+03 L, kabs 0.719 h−1, tlag 0.167 h, D1 2.45 h, V/F 7.29e+03 L.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — ibrutinib: CL/F 1.12e+03 L/h, V2/F 613 L, Q/F 1.13e+03 L/h, V3/F 6.67e+03 L, kabs 0.719 h−1, tlag 0.167 h, D1 2.45 h, V/F 7.29e+03 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of alag1: this record has 0.167, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -173,10 +173,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.286, 0 of 1 reader(s) agree | 0.286 | cross-check disputed by a second reader: verdict disputed, agreement 0.286, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 5.048e-05 |  | non-numeric value |
-| T1_cmax | reference | fail | 7.45e-05 | 5.048e-05 | 0.6776 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 6.39e-06 | 5.048e-05 | 7.9 | ng/mL→SI vs simulated kg/m3 |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.286 (4 of 14 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.286 | cross-check contradicted by a second reader: verdict disputed; agreement 0.286 (4 of 14 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
+| T1_cmax | reference | skipped |  | 5.048e-05 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | fail | 7.45e-05 | 5.048e-05 | 0.6776 | reported 74.5 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 6.39e-06 | 5.048e-05 | 7.9 | reported 6.39 ng/mL→SI vs simulated kg/m3 |
 | T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 3.9 |  |  | no simulated metric for this quantity (single reference sim) |
 
@@ -194,7 +194,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ibrutinib/Ibrutinib_Gisleskog2025_final_updated_population_pk_model/Ibrutinib_Gisleskog2025_final_updated_population_pk_model_modelica.zip" download>Ibrutinib_Gisleskog2025_final_updated_population_pk_model_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ibrutinib/Ibrutinib_Gisleskog2025_final_updated_population_pk_model/Ibrutinib_Gisleskog2025_final_updated_population_pk_model_modelica.zip" download>Ibrutinib_Gisleskog2025_final_updated_population_pk_model_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ibrutinib/Ibrutinib_Gisleskog2025_final_updated_population_pk_model/Ibrutinib_Gisleskog2025_final_updated_population_pk_model_fmi.zip" download>Ibrutinib_Gisleskog2025_final_updated_population_pk_model_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ibrutinib/Ibrutinib_Gisleskog2025_final_updated_population_pk_model/Ibrutinib_Gisleskog2025_final_updated_population_pk_model_matlab.zip" download>Ibrutinib_Gisleskog2025_final_updated_population_pk_model_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ibrutinib/Ibrutinib_Gisleskog2025_final_updated_population_pk_model/Ibrutinib_Gisleskog2025_final_updated_population_pk_model_matlab_simbio.zip" download>Ibrutinib_Gisleskog2025_final_updated_population_pk_model_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>

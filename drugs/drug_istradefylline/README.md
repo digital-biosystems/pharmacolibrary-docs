@@ -26,16 +26,16 @@ Istradefylline is an antiparkinson drug that acts as an adenosine receptor antag
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Knebel_2011_reference](drugs/drug_istradefylline/Istradefylline_Knebel2011_reference.md) | — | 1-compartment (no model) | 6 | Knebel W et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2011) | [10.1177/0091270010363809](https://doi.org/10.1177/0091270010363809) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub> | [Knebel_2011_reference](drugs/drug_istradefylline/Istradefylline_Knebel2011_reference.md) | held back | 1-compartment, oral | 5 | Knebel W et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2011) | [10.1177/0091270010363809](https://doi.org/10.1177/0091270010363809) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Knebel_2012_dizziness](drugs/drug_istradefylline/pd_Knebel_2012_dizziness.md) | dizziness probability ← istradefylline · direct Emax (saturable) effect | — | Knebel W et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2012) | [10.1177/0091270011420566](https://doi.org/10.1177/0091270011420566) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Knebel_2012_dyskinesia](drugs/drug_istradefylline/pd_Knebel_2012_dyskinesia.md) | dyskinesia probability ← istradefylline · direct Emax (saturable) effect | — | Knebel W et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2012) | [10.1177/0091270011420566](https://doi.org/10.1177/0091270011420566) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Knebel_2012_nausea](drugs/drug_istradefylline/pd_Knebel_2012_nausea.md) | nausea probability ← istradefylline · direct linear effect | — | Knebel W et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2012) | [10.1177/0091270011420566](https://doi.org/10.1177/0091270011420566) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Knebel_2012_OFF_time](drugs/drug_istradefylline/pd_Knebel_2012_OFF_time.md) | percentage OFF time ← istradefylline · direct Emax (saturable) effect | — | Knebel W et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2012) | [10.1177/0091270011420566](https://doi.org/10.1177/0091270011420566) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Knebel_2012_dizziness](drugs/drug_istradefylline/pd_Knebel_2012_dizziness.md) | dizziness ← istradefylline · direct Emax (saturable) effect | — | Knebel W et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2012) | [10.1177/0091270011420566](https://doi.org/10.1177/0091270011420566) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Knebel_2012_dyskinesia](drugs/drug_istradefylline/pd_Knebel_2012_dyskinesia.md) | dyskinesia ← istradefylline · direct Emax (saturable) effect | — | Knebel W et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2012) | [10.1177/0091270011420566](https://doi.org/10.1177/0091270011420566) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Knebel_2012_nausea](drugs/drug_istradefylline/pd_Knebel_2012_nausea.md) | nausea ← istradefylline · direct linear effect | — | Knebel W et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2012) | [10.1177/0091270011420566](https://doi.org/10.1177/0091270011420566) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Knebel_2012_percentage_OFF_time](drugs/drug_istradefylline/pd_Knebel_2012_percentage_OFF_time.md) | percentage OFF time ← istradefylline AUCss · direct Emax (saturable) effect | model (no simulator) | Knebel W et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2012) | [10.1177/0091270011420566](https://doi.org/10.1177/0091270011420566) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,38 +49,41 @@ Istradefylline is an antiparkinson drug that acts as an adenosine receptor antag
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 14:33 | 0:50 | 0/1/0 | 4/0/0 | 0/0/0 | 24,632/10,247 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 23:14 | 2:39 | 1/0/0 | 4/0/0 | 0/0/0 | 5,855/3,046 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Knebel_2011.pdf` | Knebel W et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2011) | popPK | 10 | [10.1177/0091270010363809](https://doi.org/10.1177/0091270010363809) | [20200269](https://pubmed.ncbi.nlm.nih.gov/20200269) | Population PK model of istradefylline with all typical parameter values (CL/F, V2/F, Q/F, V3/F, Ka) reported directly in the abstract. |
-| `Knebel_2012.pdf` | Knebel W et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2012) | popPK | 7 | [10.1177/0091270011420566](https://doi.org/10.1177/0091270011420566) | [22162533](https://pubmed.ncbi.nlm.nih.gov/22162533) | Population PK-PD analysis of istradefylline in humans, but the evidence shows only PD (Emax) parameters; PK disposition values (CL, V) are not present and likely reside in supplementary material. |
+| `Knebel_2012.pdf` | Knebel W et al., Population pharmacokinetic-pharmacodyna…, Journal of clinical pharmac… (2012) | popPK | 5 | [10.1177/0091270011420566](https://doi.org/10.1177/0091270011420566) | [22162533](https://pubmed.ncbi.nlm.nih.gov/22162533) | The paper reports a population PK-PD analysis but provides only exposure-response parameters (AUC, Emax) and dose recommendations, without explicit numeric values for clearance, volume, or rate constants. |
 
-<sub>queue written 2026-10-06 14:32 UTC</sub>
+<sub>queue written 2026-11-23 23:11 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Barret_2014 | irrelevant | 1 | 1 | Istradefylline is only mentioned as a comparator; the study models PET receptor occupancy of tozadenant/preladenant in monkeys, with no istradefylline PK parameters reported. |
-| popPK | Brooks_2008 | irrelevant | 2 | 2 | PET receptor-binding study of [11C]istradefylline; no disposition PK parameters (CL, V, half-life) for istradefylline are reported, only binding/occupancy values. |
+| popPK | Barret_2014 | irrelevant | 0 | 0 | The study focuses on A2A receptor occupancy by tozadenant and preladenant, not the pharmacokinetics of istradefylline. |
+| PGx | Barret_2014 | not_relevant | 0 | 0 | The paper investigates PET imaging and predicted PK/PD for tozadenant and preladenant in rhesus monkeys; it does not report pharmacogenomic effects on istradefylline. |
+| popPK | Brooks_2008 | irrelevant | 1 | 1 | The study is a PET imaging analysis of receptor binding and occupancy, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, half-life) for istradefylline. |
+| PGx | Brooks_2008 | not_relevant | 0 | 0 | The paper reports PET imaging and receptor occupancy of istradefylline in a general population but does not investigate the influence of gene variants, genotypes, or phenotypes on PK or PD parameters. |
 | popPK | Gündel_2022 | irrelevant | 1 | 2 | Istradefylline is used only as a blocking/pre-treatment agent; the PK parameters (AUC, MRT, BPND, VT) reported are for the PET radiotracer [18F]FLUDA, not for istradefylline itself. |
-| popPK | Knebel_2012 | relevant | 7 | 3 | Population PK-PD analysis of istradefylline in humans, but the evidence shows only PD (Emax) parameters; PK disposition values (CL, V) are not present and likely reside in supplementary material. |
+| PGx | Knebel_2011 | not_relevant | 0 | 0 | The paper analyzes population PK and covariates like smoking and CYP3A4 inhibitors, but does not report pharmacogenomic effects of gene variants on istradefylline parameters. |
+| popPK | Knebel_2012 | relevant | 5 | 1 | The paper reports a population PK-PD analysis but provides only exposure-response parameters (AUC, Emax) and dose recommendations, without explicit numeric values for clearance, volume, or rate constants. |
+| PGx | Knebel_2012 | not_relevant | 0 | 0 | The paper describes population PK/PD analysis for istradefylline but does not mention any gene variants, genotypes, or pharmacogenomic factors. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bistradefylline%5D&body=Drug%3A%20istradefylline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_istradefylline/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 14:32 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 23:11 UTC</sub>

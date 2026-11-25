@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-<div class="pk-model-meta" hidden drug="epirubicin" model-id="Epirubicin_Robert1994_reference" status="simulated" stale="false" population="unknown" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="epirubicin" model-id="Epirubicin_Robert1994_reference" status="simulated" stale="false" population="adults with cancer" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Robert J. Clinical pharmacokinetics of epirubicin. Clinical pharmacokinetics 26(6):428–438 (1994).
@@ -15,7 +15,7 @@ Robert J. Clinical pharmacokinetics of epirubicin. Clinical pharmacokinetics 26(
 
 ## Population and dosing
 
-**Population:** unknown · condition solid neoplasms and haematologic malignancies.
+**Population:** adults with cancer · condition solid neoplasms and haematologic malignancies · age group adult.
 
 ## Model
 
@@ -29,13 +29,13 @@ Robert J. Clinical pharmacokinetics of epirubicin. Clinical pharmacokinetics 26(
 ## Parameters
 | label | parameter | value | unit |
 |---|---|---|---|
-| half-life | t1/2z | 3.2 | minutes |
-| Total plasma clearance | CL | 46 | L/h |
-| volume of distribution at steady-state | Vss | 1000 | L |
+| median half-life values | t1/2z | 3.2 | minutes |
+| Total plasma clearance | CL | 46 | L/h/m2 |
+| volume of distribution at steady-state | Vss | 1000 | L/m2 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,11 +45,11 @@ Robert J. Clinical pharmacokinetics of epirubicin. Clinical pharmacokinetics 26(
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of half-life: this record has 3.2, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -57,9 +57,9 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| half-life | `Q57` · t1/2z | 3.2 | minutes | 192 | s | min | llm (0.6) | Robert_1994:abstract, Robert_1994:abstract, Robert_1994:abstract |
-| Total plasma clearance | `Q22` · CL | 46 | L/h | 1.278e-05 | m3/s | L/h | llm_confirmed (0.6) | Robert_1994:abstract |
-| volume of distribution at steady-state | `Q65` · Vss | 1000 | L | 1 | m3 | L | llm_corrected (0.6) | Robert_1994:abstract |
+| median half-life values | `Q57` · t1/2z | 3.2 | minutes | 192 | s | min | llm (0.6) | Robert_1994:abstract, Robert_1994:abstract, Robert_1994:abstract |
+| Total plasma clearance | `Q22` · CL | 46 | L/h/m2 | 2.211e-05 | m3/s | l/(h·m2) | llm_confirmed (0.6) | Robert_1994:abstract |
+| volume of distribution at steady-state | `Q65` · Vss | 1000 | L/m2 | 1.73 | m3 | l/m2 | llm_corrected (0.6) | Robert_1994:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,37 +72,22 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 - `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'L/h/m2' (CL)
-- unit_dimension_unknown: 'L/m2' (Vss)
-- implicit units: 'Total plasma clearance' → L/h (from the popPK convention: 'No unit is stated in the provided text. Total plasma clearance is conventionally reported in L/h, consistent with the va')
-- implicit units: 'volume of distribution at steady-state' → L (from the popPK convention: 'No unit is stated in the provided text. Steady-state volume of distribution is conventionally reported in L.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=epirubicin
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Robert_1994_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>3 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[half-life]` | 3.2 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[total plasma clearance]` | 46 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[volume of distribution at steady-state]` | 1000 |  | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -122,20 +107,20 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Robert_1994:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 46 | ['Robert_1994:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 46 L/h | ['Robert_1994:abstract'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 1e+03 L | ['Robert_1994:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 79.6 L/h | ['Robert_1994:abstract'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 1.73e+03 L | ['Robert_1994:abstract'] |
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=epirubicin) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | a second reader did not contradict the extraction |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=epirubicin) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -151,7 +136,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_epirubicin/Epirubicin_Robert1994_reference/Epirubicin_Robert1994_reference_modelica.zip" download>Epirubicin_Robert1994_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_epirubicin/Epirubicin_Robert1994_reference/Epirubicin_Robert1994_reference_modelica.zip" download>Epirubicin_Robert1994_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_epirubicin/Epirubicin_Robert1994_reference/Epirubicin_Robert1994_reference_fmi.zip" download>Epirubicin_Robert1994_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_epirubicin/Epirubicin_Robert1994_reference/Epirubicin_Robert1994_reference_matlab.zip" download>Epirubicin_Robert1994_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_epirubicin/Epirubicin_Robert1994_reference/Epirubicin_Robert1994_reference_matlab_simbio.zip" download>Epirubicin_Robert1994_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -173,8 +158,8 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 1.278e-05 | m3/s |
-| input | model | `VdPerKg` | 0.01429 | m3/kg |
+| input | model | `Cl` | 2.211e-05 | m3/s |
+| input | model | `VdPerKg` | 0.02471 | m3/kg |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -213,4 +198,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bepirubicin%5D%20Epirubicin_Robert1994_reference&body=Drug%3A%20epirubicin%0ARecord%3A%20Epirubicin_Robert1994_reference%0APaper%3A%20Robert_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_epirubicin/Epirubicin_Robert1994_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 17:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:51 UTC</sub>

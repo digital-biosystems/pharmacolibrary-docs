@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The eplerenone volume of distribution was recorded with unit h instead of volume, causing a dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit h ([time]) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="eplerenone" model-id="Eplerenone_Jaisser2021_reference" status="rejected" stale="false" population="uninephrectomized Sprague Dawley rats with mineralocorticoid-induced renal injury" measured-compound="eplerenone" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Jaisser F, Tan X, Chi S, Liu J, Wang P, Bush M et al. The Non-Steroidal Mineralo
 
 ### Reviewer guidance
 
-**The eplerenone volume of distribution was recorded with unit h instead of volume, causing a dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit h ([time]) vs [length] ** 3.**
 
-The parameter meaning describes a volume of distribution, yet the record lists the unit as h (time) with value 68.9. The clearance parameter was also missing a value in the second reader's assessment. Extracted — eplerenone: V 68.9 h, CL 6.17 L/h.
+A reported unit could not be converted (V), so that value has no SI equivalent. Extracted — eplerenone: V 68.9 h, CL 6.17 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 6.17, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

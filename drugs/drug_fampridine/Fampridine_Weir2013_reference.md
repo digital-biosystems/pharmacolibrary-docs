@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The dalfampridine record was held because the second reader could not verify the 36 L/h clearance, 304 L volume, or 1.22 hours(-1) absorption values.
+> cross_check_disputed; x1_cross_check.
 
-<div class="pk-model-meta" hidden drug="fampridine" model-id="Fampridine_Weir2013_reference" status="needs_review" stale="false" population="healthy volunteers and patients with multiple sclerosis" measured-compound="dalfampridine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fampridine" model-id="Fampridine_Weir2013_reference" status="needs_review" stale="false" population="healthy volunteers and multiple sclerosis patients" measured-compound="fampridine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Weir S, Gao Y, Henney HR. Population pharmacokinetics and pharmacodynamics of dalfampridine-ER in healthy volunteers and in patients with multiple sclerosis. Current medical research and opinion 29(12):1637–1645 (2013).
@@ -17,9 +17,7 @@ Weir S, Gao Y, Henney HR. Population pharmacokinetics and pharmacodynamics of da
 
 ## Population and dosing
 
-**Population:** healthy volunteers and patients with multiple sclerosis · condition multiple sclerosis; healthy · age group adult.
-
-**Dosed compound ≠ measured compound:** dosed dalfampridine-ER, measured dalfampridine.
+**Population:** healthy volunteers and multiple sclerosis patients · condition healthy and multiple sclerosis · age group adult.
 
 ## Model
 
@@ -41,7 +39,7 @@ Weir S, Gao Y, Henney HR. Population pharmacokinetics and pharmacodynamics of da
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +49,13 @@ Weir S, Gao Y, Henney HR. Population pharmacokinetics and pharmacodynamics of da
 
 ### Reviewer guidance
 
-**The dalfampridine record was held because the second reader could not verify the 36 L/h clearance, 304 L volume, or 1.22 hours(-1) absorption values.**
+**cross_check_disputed; x1_cross_check.**
 
-The record relied on abstract-only data, leading to apparent parameterization and a defaulted lag time. The second reader marked all three kinetic parameters as null, rejecting the specific values found in the text. This complete mismatch resulted in a low agreement ratio of 0.2 and a disputed verdict. Extracted — fampridine: CL/F 36 L/h, V 304 L, kabs 1.22 hours(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fampridine: CL/F 36 L/h, V 304 L, kabs 1.22 hours(-1).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dalfampridine-ER, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fampridine, the second reading dalfampridine; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -79,11 +77,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dalfampridine
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=fampridine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Weir_2013_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -91,24 +86,25 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption rate constant]` |  | 1.22 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[creatinine clearance]` |  | 105 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[estimated absorption rate constant]` | 1.22 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[estimated absorption rate constant]` |  | 1.22 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral clearance]` |  | 36 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[population median estimated oral clearance]` | 36 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[population median estimated oral clearance]` |  | 36 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[typical volume of distribution]` | 304 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[typical volume of distribution]` |  | 304 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | dalfampridine-ER | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | dalfampridine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 304 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | fampridine | dalfampridine | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fampridine | dalfampridine | mismatch |
 
 </details>
 
@@ -140,11 +136,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=dalfampridine) | central.C |  | output must be the measured/analyte compartment |
+| T3_output_variable | pass | C_central (measured=fampridine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.182 (2 of 11 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.182 | cross-check contradicted by a second reader: verdict disputed; agreement 0.182 (2 of 11 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -224,4 +220,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfampridine%5D%20Fampridine_Weir2013_reference&body=Drug%3A%20fampridine%0ARecord%3A%20Fampridine_Weir2013_reference%0APaper%3A%20Weir_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fampridine/Fampridine_Weir2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 04:48 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:33 UTC</sub>

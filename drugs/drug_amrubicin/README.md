@@ -21,20 +21,33 @@ Amrubicin is an anthracycline chemotherapy drug used to treat lung cancer. Infor
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | amrubicin | parent | 483.473 | C25H25NO9 | DrugBank | [3035016](https://pubchem.ncbi.nlm.nih.gov/compound/3035016) | Makino_2019 |
-| amrubicinol (amrubicin and amrubicinol) | metabolite | 485.489 | C25H27NO9 | PubChem | [11755113](https://pubchem.ncbi.nlm.nih.gov/compound/11755113) | Makino_2019 |
+| amrubicinol | metabolite | 485.489 | C25H27NO9 | PubChem | [11755113](https://pubchem.ncbi.nlm.nih.gov/compound/11755113) | Makino_2019 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Makino_2019_base](drugs/drug_amrubicin/Amrubicin_Makino2019_base.md) | — | parent + metabolite (no model) | 9 | Makino Y et al., Individual optimal dose of amrubicin to…, Cancer science (2019) | [10.1111/cas.14194](https://doi.org/10.1111/cas.14194) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ final](drugs/drug_amrubicin/Amrubicin_Makino2019_final.md) | — | parent + metabolite (no model) | 11 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ final](drugs/drug_amrubicin/Amrubicin_Makino2019_final.md) | — | parent + metabolite (no model) | 10 |  |  |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Yanaihara_2007_percentage_decrease_of_neutrophils](drugs/drug_amrubicin/pd_Yanaihara_2007_percentage_decrease_of_neutrophils.md) | percentage decrease of neutrophils · direct sigmoid Emax (Hill) effect | — | Yanaihara T et al., Phase I and pharmacologic study of irin…, Cancer chemotherapy and pha… (2007) | [10.1007/s00280-006-0279-5](https://doi.org/10.1007/s00280-006-0279-5) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Makino_2019_ANC](drugs/drug_amrubicin/pd_Makino_2019_ANC.md) | absolute neutrophil count ← amrubicinol · direct linear effect | — | Makino Y et al., Individual optimal dose of amrubicin to…, Cancer science (2019) | [10.1111/cas.14194](https://doi.org/10.1111/cas.14194) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **SLC28A3** | `Q47` · kel | transport | [Makino_2019](drugs/drug_amrubicin/pgx_Makino_2019_SLC28A3_Q47.md) | Makino Y et al., Individual optimal dose of amrubicin to…, Cancer science (2019) | [10.1111/cas.14194](https://doi.org/10.1111/cas.14194) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +61,7 @@ Amrubicin is an anthracycline chemotherapy drug used to treat lung cancer. Infor
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 16:23 | 4:17 | 0/2/0 | 0/1/0 | 0/0/0 | 68,054/22,138 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 18:35 | 0:05 | 0/2/0 | 1/0/0 | 0/0/1 | 4,012/361 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -57,29 +70,22 @@ Amrubicin is an anthracycline chemotherapy drug used to treat lung cancer. Infor
 - **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Makino_2012.pdf` | Makino Y et al., Pharmacokinetic and pharmacodynamic stu…, Cancer chemotherapy and pha… (2012) | popPK | 10 | [10.1007/s00280-011-1768-8](https://doi.org/10.1007/s00280-011-1768-8) | [22042514](https://pubmed.ncbi.nlm.nih.gov/22042514) | Human amrubicin and amrubicinol PK models are reported, but no numeric parameter values are included in the evidence. |
-| `Makino_2016.pdf` | Makino Y et al., Simultaneous optimization of limited sa…, Asia-Pacific journal of cli… (2016) | popPK | 10 | [10.1111/ajco.12485](https://doi.org/10.1111/ajco.12485) | [26948073](https://pubmed.ncbi.nlm.nih.gov/26948073) | The study models amrubicin and amrubicinol in patients, but the provided evidence contains no numeric disposition parameter values. |
-
-<sub>queue written 2026-10-06 16:19 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Kimura_2009 | irrelevant | 2 | 0 | It reports a single AMR-OH concentration and a pharmacodynamic relationship, but no quantitative disposition parameters. |
-| popPK | Makino_2012 | relevant | 10 | 1 | Human amrubicin and amrubicinol PK models are reported, but no numeric parameter values are included in the evidence. |
-| popPK | Makino_2016 | relevant | 10 | 1 | The study models amrubicin and amrubicinol in patients, but the provided evidence contains no numeric disposition parameter values. |
-| popPK | Yanaihara_2007 | irrelevant | 1 | 0 | The study reports pharmacokinetics of irinotecan and its metabolites, not amrubicin disposition parameters. |
+| popPK | Kimura_2009 | irrelevant | 3 | 0 | The study focuses on pharmacodynamic correlations of the metabolite AMR-OH with toxicity rather than reporting quantitative pharmacokinetic parameters (CL, V, t1/2) for amrubicin. |
+| PGx | Kimura_2009 | not_relevant | 0 | 0 | The study investigates the relationship between plasma metabolite concentration and toxicity without analyzing any genetic variants or genotypes. |
+| popPK | Makino_2012 | relevant | 10 | 2 | The study reports quantitative PK parameters (clearance, AUC) for amrubicin using a 3-compartment model, but the specific numeric values are not present in the provided abstract text. |
+| PGx | Makino_2012 | not_relevant | 0 | 0 | The study characterizes general PK/PD relationships and toxicity correlations but does not report any effects of gene variants, genotypes, or phenotypes. |
+| popPK | Makino_2016 | relevant | 9 | 4 | The paper describes a population PK model for amrubicin in humans, but specific parameter values (CL, V, Q) are not explicitly listed in the provided text, only model structure and AIC optimization results. |
+| PGx | Makino_2016 | not_relevant | 0 | 0 | The paper describes the optimization of sampling points for pharmacokinetic analysis in a general cohort, containing no data on gene variants or genotypes affecting drug parameters. |
+| popPK | Yanaihara_2007 | irrelevant | 1 | 0 | This is a Phase I clinical trial focused on dose escalation and toxicity, and while it mentions amrubicin did not affect CPT-11 PK, it does not report quantitative pharmacokinetic parameters (CL, V, t1/2) for amrubicin itself. |
+| PGx | Yanaihara_2007 | not_relevant | 0 | 0 | The study focuses on dose-finding and drug interactions, not on how genetic variants affect amrubicin pharmacokinetics or pharmacodynamics. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamrubicin%5D&body=Drug%3A%20amrubicin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amrubicin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 16:19 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 10:23 UTC</sub>

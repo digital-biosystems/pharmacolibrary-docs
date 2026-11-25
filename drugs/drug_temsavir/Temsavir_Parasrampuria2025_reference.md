@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant (Ka) value 2.33 was recorded with invalid units, causing a dimension mismatch rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit units ([luminosity] / [length] ** 2) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="Temsavir" model-id="Temsavir_Parasrampuria2025_reference" status="rejected" stale="false" population="unknown" measured-compound="temsavir" parameterization="apparent" topology="1C"></div>
 
@@ -42,7 +42,7 @@ Parasrampuria R, Thakkar N, Moore K, Ackerman P, Magee M. Population pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.933). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +52,13 @@ Parasrampuria R, Thakkar N, Moore K, Ackerman P, Magee M. Population pharmacokin
 
 ### Reviewer guidance
 
-**The absorption rate constant (Ka) value 2.33 was recorded with invalid units, causing a dimension mismatch rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit units ([luminosity] / [length] ** 2) vs 1 / [time].**
 
-The parameter labeled Ka for temsavir lists units as 'units' instead of the expected inverse time (1/h). This invalid unit specification prevented the system from converting the value to SI, resulting in a dimension conflict. Although the value 2.33 is numerically appropriate for an absorption rate constant, the erroneous unit designation caused the record to be rejected. Extracted — temsavir: CLm/F 51 L/h, V1/F 257 L, Q/F 2.58 L/h, V2/F 37.4 L, kabs 2.33 units.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — temsavir: CLm/F 51 L/h, V1/F 257 L, Q/F 2.58 L/h, V2/F 37.4 L, kabs 2.33 units.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].parameter_id`: this record has Q351, the second reading Q27. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -107,6 +109,27 @@ The parameter labeled Ka for temsavir lists units as 'units' instead of the expe
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.933 (14/15 fields) | 1 |
+
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f].parameter_id` | Q351 | Q27 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:13 | 0:51 | 0/0/0 | 1/0/0 | 0/0/0 | 26,424/3,354 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 04:15 | 0:03 | 0/0/0 | 1/0/0 | 0/0/0 | 3,720/183 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -45,25 +45,16 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Mizuno_2017.pdf` | Mizuno T et al., Population pharmacokinetics of temsirol…, British journal of clinical… (2017) | popPK | 10 | [10.1111/bcp.13181](https://doi.org/10.1111/bcp.13181) | [28000286](https://pubmed.ncbi.nlm.nih.gov/28000286) | A pediatric population-PK model is reported, but no numeric parameter values are provided in the evidence. |
-| `Mbatchi_2017.pdf` | Mbatchi LC et al., Association of NR1I2, CYP3A5 and ABCB1…, Cancer chemotherapy and pha… (2017) | popPK | 9 | [10.1007/s00280-017-3379-5](https://doi.org/10.1007/s00280-017-3379-5) | [28676933](https://pubmed.ncbi.nlm.nih.gov/28676933) | The human study examines temsirolimus pharmacokinetics, but numeric disposition parameter values are not present in the evidence provided. |
-
-<sub>queue written 2026-10-07 08:13 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Cardillo_2013 | irrelevant | 0 | 0 | This is an in-vitro growth-inhibition study and reports no temsirolimus pharmacokinetic parameters. |
-| popPK | Mbatchi_2017 | relevant | 9 | 2 | The human study examines temsirolimus pharmacokinetics, but numeric disposition parameter values are not present in the evidence provided. |
-| popPK | Mizuno_2017 | relevant | 10 | 0 | A pediatric population-PK model is reported, but no numeric parameter values are provided in the evidence. |
-| popPK | Niyomdecha_2021 | irrelevant | 0 | 0 | Temsirolimus is only an in-vitro comparator, with no pharmacokinetic parameters reported. |
+| popPK | Mbatchi_2017 | relevant | 9 | 0 | The study reports pharmacokinetic parameters (half-life, exposure) for temsirolimus, but the specific numeric values are not present in the provided abstract text. |
+| popPK | Mizuno_2017 | irrelevant | 10 | 0 | The paper is a population PK study of temsirolimus in humans, but no numeric parameter values are provided in the text evidence. |
+| PGx | Mizuno_2017 | not_relevant | 0 | 0 | The paper reports a population PK model for temsirolimus in children using clinical covariates (body weight, dose) but does not investigate gene variants or pharmacogenomic factors. |
+| popPK | Niyomdecha_2021 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of niclosamide's antiviral activity against RSV, using temsirolimus only as a comparator agent to define a pathway, with no pharmacokinetic data for temsirolimus. |
+| PGx | Niyomdecha_2021 | not_relevant | 0 | 0 | The paper studies the antiviral mechanism of niclosamide against RSV using temsirolimus as a chemical control; it does not report pharmacogenomic effects on the PK or PD of temsirolimus. |
 
 
 </details>

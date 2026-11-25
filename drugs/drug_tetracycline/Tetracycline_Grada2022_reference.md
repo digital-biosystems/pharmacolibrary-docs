@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Tetracycline’s peripheral volume of distribution (V2/F, 15.1 L) belongs to an unreachable compartment, so the model was rejected.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="tetracycline" model-id="Tetracycline_Grada2022_reference" status="rejected" stale="false" population="" measured-compound="tetracycline" parameterization="apparent" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Grada A, Del Rosso JQ, Graber E, Bunick CG, Stein Gold L, Moore AY et al. Sarecy
 
 ### Reviewer guidance
 
-**Tetracycline’s peripheral volume of distribution (V2/F, 15.1 L) belongs to an unreachable compartment, so the model was rejected.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record identifies V2/F as the peripheral-compartment volume and reports it as 15.1 L; the finding is that a compartment is unreachable or orphaned. It also reports CL/F of 3.15 L/h, V1/F of 54.2 L, and an absorption rate constant of 3.45 h−1. Extracted — tetracycline: CL/F 3.15 L/h, V1/F 54.2 L, V2/F 15.1 L, kabs 3.45 h−1.
+Extracted — tetracycline: CL/F 3.15 L/h, V1/F 54.2 L, V2/F 15.1 L, kabs 3.45 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has 21.7, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

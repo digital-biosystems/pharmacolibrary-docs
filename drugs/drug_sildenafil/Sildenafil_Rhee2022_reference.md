@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for sildenafil lacks the total clearance parameter, causing the model to rely on library defaults.
+> Only volume was extracted — no clearance; c2_reference failed (ratio None).
 
 <div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Rhee2022_reference" status="needs_review" stale="false" population="term and preterm neonates with pulmonary arterial hypertension" measured-compound="sildenafil" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -52,13 +52,13 @@ Rhee SJ, Shin SH, Oh J, Jung YH, Choi CW, Kim HS et al. Population pharmacokinet
 
 ### Reviewer guidance
 
-**The record for sildenafil lacks the total clearance parameter, causing the model to rely on library defaults.**
+**Only volume was extracted — no clearance; c2_reference failed (ratio None).**
 
-The extraction captured only the volume of distribution (11.4 L) but omitted the total clearance for the parent compound, leaving that essential elimination parameter undefined. A validation check failed to compute a comparison, rendering that specific assessment inconclusive rather than demonstrating a fault. A second reader disagreed on several values, including the absorption rate constant and the volume of distribution, but the primary cause for refusal remains the missing clearance. Extracted — sildenafil: kabs 0.258 h−1, V/F 11.4 L; N-desmethyl sildenafil: V1/F 2.51 L.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — sildenafil: kabs 0.258 h−1, V/F 11.4 L; N-desmethyl sildenafil: V1/F 2.51 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has sildenafil → n-desmethyl sildenafil (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Sildenafil's clearance and absorption lag time lacked extracted values, forcing placeholder usage that caused the model to be quarantined.
+> No value for sildenafil's clearance and absorption lag time; t3_param_coverage (+3 more).
 
 <div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Russo2019_final" status="model_quarantined" stale="false" population="rabbits" measured-compound="sildenafil" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -53,13 +53,13 @@ Russo FM, Mian P, Krekels EH, Van Calsteren K, Tibboel D, Deprest J et al. Pregn
 
 ### Reviewer guidance
 
-**Sildenafil's clearance and absorption lag time lacked extracted values, forcing placeholder usage that caused the model to be quarantined.**
+**No value for sildenafil's clearance and absorption lag time; t3_param_coverage (+3 more).**
 
-The record explicitly notes that both clearance and absorption lag time were left at library defaults because no values were extracted from the paper. This placeholder substitution was flagged as an unacceptable deviation by the automated quality control system. Additionally, a second reader disputed the model's topology and parameter assignments, further compromising the record's validity. Extracted — desmethylsildenafil: CL/F 13.3 L/h; sildenafil: V1 32.1 L, V2 110 L, Q 25.5 L/h, kabs 25 h-1.
+The model was built, but sildenafil's clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — desmethylsildenafil: CL/F 13.3 L/h; sildenafil: V1 32.1 L, V2 110 L, Q 25.5 L/h, kabs 25 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has sildenafil → desmethylsildenafil (metabolism), the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,7 +152,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_shared_parameters | pass | 1 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.643, 0 of 1 reader(s) agree | 0.643 | cross-check disputed by a second reader: verdict disputed, agreement 0.643, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.643 (9 of 14 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.643 | cross-check contradicted by a second reader: verdict disputed; agreement 0.643 (9 of 14 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

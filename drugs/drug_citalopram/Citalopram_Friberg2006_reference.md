@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;citalopram&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/&quot;},{&quot;label&quot;:&quot;Friberg_2006 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Friberg_2006_QTci&quot;,&quot;label&quot;:&quot;Friberg_2006 \u00b7 QTci&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/pd_Friberg_2006_QTci.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_estimate&quot;,&quot;label&quot;:&quot;Weisskopf_2020_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_estimate.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma&quot;,&quot;label&quot;:&quot;Weisskopf_2020_model_for_scit_sdcit_in_plasma&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea&quot;,&quot;label&quot;:&quot;Weisskopf_2020_model_for_scit_sdcit_in_plasma_breast_milk&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friberg_2006_QTci&quot;,&quot;label&quot;:&quot;Friberg_2006 \u00b7 QTci&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/pd_Friberg_2006_QTci.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Reviewers disagree on whether the citalopram clearance of 22.1 l/h is attributable to the parent compound or a metabolite.
+> K12, k21 use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
-<div class="pk-model-meta" hidden drug="citalopram" model-id="Citalopram_Friberg2006_reference" status="needs_review" stale="false" population="adults after citalopram overdose" measured-compound="citalopram" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="citalopram" model-id="Citalopram_Friberg2006_reference" status="needs_review" stale="false" population="citalopram overdose patients" measured-compound="citalopram" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Friberg LE, Isbister GK, Duffull SB. Pharmacokinetic-pharmacodynamic modelling of QT interval prolongation following citalopram overdoses. British journal of clinical pharmacology 61(2):177–190 (2006).
@@ -17,15 +17,15 @@ Friberg LE, Isbister GK, Duffull SB. Pharmacokinetic-pharmacodynamic modelling o
 
 ## Population and dosing
 
-**Population:** adults after citalopram overdose · condition citalopram overdose · age group adult · n = 52.
+**Population:** citalopram overdose patients · condition citalopram overdose · age group adult.
 
-**Dosing:** 20, 1700 mg, oral, single.
+**Dosing:** 20, 1200 mg, oral, single.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted.  
+**Parameters:** 5 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_citalopram/Citalopram_Friberg2006_reference/Citalopram_Friberg2006_reference.svg" alt="Citalopram_Friberg2006_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -35,13 +35,16 @@ Friberg LE, Isbister GK, Duffull SB. Pharmacokinetic-pharmacodynamic modelling o
 
 | label | parameter | value | unit |
 |---|---|---|---|
+| α | λ1 | 0.364 | 1/h |
+| teq (h) | equation variable | 1.43 | h |
 | apparent (oral) clearance | CL | 22.1 | l h -1 |
 | apparent volume of distribution | V/F | 1280 | l |
 | absorption rate constant | kabs | 1.48 | h -1 |
+| volume of distribution | V | 52 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,21 +54,24 @@ Friberg LE, Isbister GK, Duffull SB. Pharmacokinetic-pharmacodynamic modelling o
 
 ### Reviewer guidance
 
-**Reviewers disagree on whether the citalopram clearance of 22.1 l/h is attributable to the parent compound or a metabolite.**
+**K12, k21 use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record lists citalopram as the measured compound with an apparent oral clearance of 22.1 l/h. A second reader disputed the dose assignment, identifying the compound as unknown. The model also defaulted the lag time and assumed bioavailability was one. Extracted — citalopram: CL 22.1 l h -1, V/F 1.28e+03 l, kabs 1.48 h -1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — citalopram: λ1 0.364 1/h, CL 22.1 l h -1, V/F 1.28e+03 l, kabs 1.48 h -1, V 52 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has citalopram, the second reading unknown. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[teq].parameter_id`: this record has Q900, the second reading Q72; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
+| α | `Q67` · λ1 | 0.364 | 1/h | 0.0001011 | 1/s | 1/h | exact (1) | Friberg_2006_table_3:row3:col1 |
+| teq (h) | `Q900` · equation variable | 1.43 | h |  |  | h | llm (0.6) | Friberg_2006_table_3:row4:col1 |
 | apparent (oral) clearance | `Q22` · CL | 22.1 | l h -1 | 6.139e-06 | m3/s | L/h | boundary (0.8) | Friberg_2006:other_prose |
 | apparent volume of distribution | `Q76` · V/F | 1280 | l | 1.28 | m3 | L | exact (1) | Friberg_2006:other_prose |
 | absorption rate constant | `Q49` · kabs | 1.48 | h -1 | 0.0004111 | 1/s | 1/h | exact (1) | Friberg_2006:other_prose |
+| volume of distribution | `Q61` · V | 52 | L | 0.052 | m3 | L | exact (1) | Friberg_2006:other_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,38 +81,45 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
+- `defaulted_parameters`: ['Tlag', 'k12', 'k21']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
+- column 'population mean (95% ci)a' classified 'ci' by the LLM but kept as the estimate: the header names the point value
+- dropped PD-category row 'Slope (ms l mg-1)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Friberg_2006_table_3:row2:col1'])
+- dropped unlinked row (NIL): 'ΔQTciage' — extend the ontology if this is a real PK parameter (source ['Friberg_2006_table_3:row5:col1'])
 - salvaged Q22 ('apparent (oral) clearance'=22.1) from results prose — parameter table was unreadable
 - salvaged Q76 ('apparent volume of distribution'=1280) from results prose — parameter table was unreadable
 - salvaged Q49 ('absorption rate constant'=1.48) from results prose — parameter table was unreadable
+- salvaged Q61 ('volume of distribution'=52) from results prose — parameter table was unreadable
+- implicit units: 'α' → 1/h (from the popPK convention: "The parameter alpha (alpha) is described as a 'Macro-rate constant' in the label. In pharmacokinetic modeling, rate cons")
+- implicit units: 'volume of distribution' → L (from the paper text: "The text explicitly states: 'The population mean estimates were 22.1 l h -1 , 1280 l, 1.48 h -1 and 0.097 mg l -1 for ap")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=citalopram
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 2C vs LLM 1C — review compartment count
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
-- text-pointer recovery found no readable extracted parameter table
+- table Friberg_2006_table_3: unbound_uncertainty
+- table Friberg_2006_table_3: unparsed_numeric_cell
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.857 (6/7 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.818 (9/11 fields) | 2 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | citalopram | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[teq].parameter_id` | Q900 | Q72 | mismatch |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 52 |  | only_one_extracted |
 
 </details>
 
@@ -120,26 +133,30 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Friberg_2006:other_prose'] |
+| C5_dimension_Q67 | pass | 1 / [time] |  | ['Friberg_2006_table_3:row3:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 22.1 L/h | ['Friberg_2006:other_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 52 L | ['Friberg_2006:other_prose'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 1.28e+03 L | ['Friberg_2006:other_prose'] |
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=citalopram) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | cross-check disputed by a second reader: verdict disputed, agreement 0.857, 0 of 1 reader(s) agree |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=citalopram) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.818 (9 of 11 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | cross-check contradicted by a second reader: verdict disputed; agreement 0.818 (9 of 11 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_alpha | reference | skipped | 1 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -155,15 +172,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_citalopram/Citalopram_Friberg2006_reference/Citalopram_Friberg2006_reference_modelica.zip" download>Citalopram_Friberg2006_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_citalopram/Citalopram_Friberg2006_reference/Citalopram_Friberg2006_reference_fmi.zip" download>Citalopram_Friberg2006_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_citalopram/Citalopram_Friberg2006_reference/Citalopram_Friberg2006_reference_modelica.zip" download>Citalopram_Friberg2006_reference_modelica.zip</a> <span class="pk-size">(5.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_citalopram/Citalopram_Friberg2006_reference/Citalopram_Friberg2006_reference_fmi.zip" download>Citalopram_Friberg2006_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_citalopram/Citalopram_Friberg2006_reference/Citalopram_Friberg2006_reference_matlab.zip" download>Citalopram_Friberg2006_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_citalopram/Citalopram_Friberg2006_reference/Citalopram_Friberg2006_reference_matlab_simbio.zip" download>Citalopram_Friberg2006_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_citalopram/Citalopram_Friberg2006_reference/Citalopram_Friberg2006_reference_sbml.zip" download>Citalopram_Friberg2006_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_citalopram/Citalopram_Friberg2006_reference/Citalopram_Friberg2006_reference_cellml.zip" download>Citalopram_Friberg2006_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_citalopram/Citalopram_Friberg2006_reference/Citalopram_Friberg2006_reference_cellml.zip" download>Citalopram_Friberg2006_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 ## Model interface
@@ -186,7 +203,7 @@ The parameters this record sets on the template, in the template's SI units, and
 
 ## Tested with
 
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
 - Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
 - No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
@@ -209,14 +226,14 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 20 mg, single dose, first-order absorption (ka 1.48 /h, F 1). Doses in the paper: 20–1700 mg.
+**Administration: oral** — 20 mg, single dose, first-order absorption (ka 1.48 /h, F 1). Doses in the paper: 20–1200 mg.
 
-<dbs-fmusim paramsurl="drugs/drug_citalopram/Citalopram_Friberg2006_reference/Citalopram_Friberg2006_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_citalopram/Citalopram_Friberg2006_reference/Citalopram_Friberg2006_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_citalopram/Citalopram_Friberg2006_reference/Citalopram_Friberg2006_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_citalopram/Citalopram_Friberg2006_reference/Citalopram_Friberg2006_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Citalopram_Friberg2006_reference_params.json` · controls `Citalopram_Friberg2006_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Citalopram_Friberg2006_reference_params.json` · controls `Citalopram_Friberg2006_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcitalopram%5D%20Citalopram_Friberg2006_reference&body=Drug%3A%20citalopram%0ARecord%3A%20Citalopram_Friberg2006_reference%0APaper%3A%20Friberg_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_citalopram/Citalopram_Friberg2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:12 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 12:18 UTC</sub>

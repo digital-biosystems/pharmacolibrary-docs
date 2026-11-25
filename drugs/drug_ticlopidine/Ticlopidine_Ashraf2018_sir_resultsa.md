@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ticlopidine record rejected due to dimensional mismatch for S-ketamine intercompartmental clearance Q, which uses volume/time instead of volume/mass/time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit L/h ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="ticlopidine" model-id="Ticlopidine_Ashraf2018_sir_resultsa" status="rejected" stale="false" population="healthy adults" measured-compound="S-ketamine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -48,11 +48,11 @@ Ashraf MW, Peltoniemi MA, Olkkola KT, Neuvonen PJ, Saari TI. Semimechanistic Pop
 
 ### Reviewer guidance
 
-**Ticlopidine record rejected due to dimensional mismatch for S-ketamine intercompartmental clearance Q, which uses volume/time instead of volume/mass/time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit L/h ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time].**
 
-The parameter Q, representing intercompartmental clearance between central and peripheral compartments, is specified with a value of 288 in units of L/h. This unit dimension conflicts with the required clearance dimension of volume/mass/time, causing a structural check failure. Although the measured compound is S-ketamine, the record is associated with the drug ticlopidine, highlighting a compound-label inconsistency. Extracted — ticlopidine: CLint 304 L/h, V 14.4 L, Q 288 L/h.
+A reported unit could not be converted (CLint), so that value has no SI equivalent. Extracted — ticlopidine: CLint 304 L/h, V 14.4 L, Q 288 L/h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

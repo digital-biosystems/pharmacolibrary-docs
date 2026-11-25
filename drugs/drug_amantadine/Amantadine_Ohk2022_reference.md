@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the source paper studies sumatriptan, not amantadine, which is only a co-medication covariate.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Ohk2022_reference" status="rejected" stale="false" population="" measured-compound="amantadine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Ohk B, Seong S, Lee J, Gwon M, Kang W, Lee H et al. Evaluation of sex difference
 
 ### Reviewer guidance
 
-**The record is rejected because the source paper studies sumatriptan, not amantadine, which is only a co-medication covariate.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source text explicitly states the paper is a population PK study of sumatriptan, where amantadine is merely an OCT2 example with no reported PK parameters. Consequently, the clearance and volume values were derived from defaults or assumed parameters rather than source data. A second reader also identified a discrepancy in the volume value, reporting 119.2 against the recorded 2.4 L/kg. Extracted — amantadine: CL/F 391 L/h, V/F 2.4 L/kg.
+Extracted — amantadine: CL/F 391 L/h, V/F 2.4 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has none, the second reading 119.2; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,14 +123,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|
-| T0_analyte_identity | fail | amantadine (or metabolite) | paper about another drug |  | paper subject is not amantadine: the paper is about another drug; this one is a co-medication or covariate: This is a population PK study of sumatriptan, not amantadine; amantadine is only mentioned as an OCT2 example with no amantadine PK parameters reported. |
+| T0_analyte_identity | fail | amantadine (or metabolite) | paper about another drug |  | paper subject is not amantadine: the paper is about another drug; this one is a co-medication or covariate: The study reports pharmacokinetic parameters for sumatriptan, not amantadine; amantadine is only mentioned in passing in the discussion. |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=amantadine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.7 (7 of 10 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.7 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -158,4 +158,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamantadine%5D%20Amantadine_Ohk2022_reference&body=Drug%3A%20amantadine%0ARecord%3A%20Amantadine_Ohk2022_reference%0APaper%3A%20Ohk_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amantadine/Amantadine_Ohk2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 12:38 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:28 UTC</sub>

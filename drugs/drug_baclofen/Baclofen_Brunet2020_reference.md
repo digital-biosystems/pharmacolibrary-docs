@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Apparent parameters violate coherence because absolute bioavailability and apparent volume double-correct for the same absorption factor.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="baclofen" model-id="Baclofen_Brunet2020_reference" status="rejected" stale="false" population="adults with baclofen self-poisoning" measured-compound="baclofen" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Brunet M, Léger M, Billat PA, Lelièvre B, Lerolle N, Boels D et al. Baclofen s
 
 ### Reviewer guidance
 
-**Apparent parameters violate coherence because absolute bioavailability and apparent volume double-correct for the same absorption factor.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The record lists absolute bioavailability (Fab) as 0.61 and apparent volume (V/F) as 16.5 L. Using both an absolute fraction and an apparent volume introduces a double correction for bioavailability in the model structure. This incoherent combination caused the rejection of the record. Extracted — baclofen: Fab 0.61, kabs 0.71 1/h, kel 0.32 1/h, V/F 16.5 L, tlag 1.58 h.
+Extracted — baclofen: Fab 0.61, kabs 0.71 1/h, kel 0.32 1/h, V/F 16.5 L, tlag 1.58 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

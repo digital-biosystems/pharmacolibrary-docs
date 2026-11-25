@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.30).">human + animal</span>
 
-> The model was rejected because a binding parameter's unit was dimensionally incompatible with its meaning, and key clearance and volume values were physiologically implausible.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nM ([length]) vs [mass] / [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="rozanolixizumab" model-id="Rozanolixizumab_LledoGarcia2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="rozanolixizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Lledo-Garcia R, Dixon K, Shock A, Oliver R. Pharmacokinetic-pharmacodynamic mode
 
 ### Reviewer guidance
 
-**The model was rejected because a binding parameter's unit was dimensionally incompatible with its meaning, and key clearance and volume values were physiologically implausible.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nM ([length]) vs [mass] / [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The equilibrium dissociation constant KD and the FcRn concentration both use units of nM, but the FcRn entry was flagged as a structural parameter where the dimension conflicted with mass/volume requirements. Total clearance for rozanolixizumab was extracted as 0.0709 L/day and volume as 0.108 L, values far outside expected physiological ranges for a monoclonal antibody. The second reader disagreed on the presence of specific model links and the values for FcRn, clearance, and volume, indicating uncertainty in the extracted record. Extracted — rozanolixizumab: Q 0.27 L/day, V2 0.383 L, CLfm 0.968 L/day, KD 0.359 nM, CL 0.0709 L/day, V 0.108 L.
+A reported unit could not be converted (KD and equation variable), so that value has no SI equivalent. Extracted — rozanolixizumab: Q 0.27 L/day, V2 0.383 L, CLfm 0.968 L/day, KD 0.359 nM, CL 0.0709 L/day, V 0.108 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading not captured → not captured (none); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

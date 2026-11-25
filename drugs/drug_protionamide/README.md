@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Cartel_1985_hepatotoxicity](drugs/drug_protionamide/pd_Cartel_1985_hepatotoxicity.md) | hepatotoxicity biomarker turnover ← prothionamide | — | Cartel JL et al., Hepatotoxicity of the daily combination…, International journal of le… (1985) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Cartel_1985_hepatotoxicity](drugs/drug_protionamide/pd_Cartel_1985_hepatotoxicity.md) | hepatotoxicity biomarker turnover ← prothionamide | — | Cartel JL et al., Hepatotoxicity of the daily combination…, International journal of le… (1985) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

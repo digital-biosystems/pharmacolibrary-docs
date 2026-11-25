@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Apparent parameters for amiloride were incorrectly combined with an explicit bioavailability fraction, causing double correction.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="amiloride" model-id="Amiloride_Jain2026_reference" status="rejected" stale="false" population="healthy adults" measured-compound="amiloride" parameterization="apparent" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Jain M, Kumar S, Battaglia M, Davies S, Rower J, Reilly C et al. Population Phar
 
 ### Reviewer guidance
 
-**Apparent parameters for amiloride were incorrectly combined with an explicit bioavailability fraction, causing double correction.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The record lists apparent clearance (19 L/h) and apparent volume (9.83 L), which already account for bioavailability, alongside a separate absolute bioavailability fraction of 0.133. The abstract-only source provided summary statistics that were treated as a fitted model, leading to incoherent parameter definitions. The second reader disagreed on the presence of all extracted parameter values, noting them as null or unknown in their assessment. Extracted — amiloride: kabs 0.136 h-1, CL/F 19 L/h, V/F 9.83 L, Fab 0.133 uncertainty.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — amiloride: kabs 0.136 h-1, CL/F 19 L/h, V/F 9.83 L, Fab 0.133 uncertainty.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amiloride, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

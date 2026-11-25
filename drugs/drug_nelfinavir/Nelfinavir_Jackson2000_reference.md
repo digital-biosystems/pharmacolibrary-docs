@@ -4,11 +4,11 @@
 
 # nelfinavir — `Nelfinavir_Jackson2000_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This paper's disposition core is incomplete.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Jackson2000_reference" status="needs_review" stale="false" population="HIV-infected patients" measured-compound="nelfinavir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Jackson2000_reference" status="rejected" stale="false" population="HIV-infected patients" measured-compound="nelfinavir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Jackson KA, Rosenbaum SE, Kerr BM, Pithavala YK, Yuen G, Dudley MN. A population pharmacokinetic analysis of nelfinavir mesylate in human immunodeficiency virus-infected patients enrolled in a phase III clinical trial. Antimicrobial agents and chemotherapy 44(7):1832–1837 (2000).
@@ -16,26 +16,25 @@ Jackson KA, Rosenbaum SE, Kerr BM, Pithavala YK, Yuen G, Dudley MN. A population
 
 ## Population and dosing
 
-**Population:** HIV-infected patients · condition HIV infection · age group adult · n = 174.
+**Population:** HIV-infected patients · condition HIV · age group adult.
+
+**Dosed compound ≠ measured compound:** dosed nelfinavir mesylate, measured nelfinavir.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 2 extracted.  
+**Parameterization:** mechanistic.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| CL/F | CL/F | 41.9 | liters/h |
-| nelfinavir apparent volume of distribution (nonpregnant and pregnant women) | V/F | 596.0 | liters |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,56 +44,39 @@ Jackson KA, Rosenbaum SE, Kerr BM, Pithavala YK, Yuen G, Dudley MN. A population
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**The paper reports none of the model's key parameters.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Hirt_2006) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nelfinavir: CL/F 41.9 liters/h, V/F 596 liters.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].value`: this record has 41.9, the second reading 41; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nelfinavir mesylate, the second reading nelfinavir; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 41.9 | liters/h | 1.164e-05 | m3/s | l/h | exact (1) | Jackson_2000:abstract |
-| nelfinavir apparent volume of distribution (nonpregnant and pregnant women) | `Q76` · V/F | 596.0 | liters | 0.596 | m3 | L | review_gapfill (0.7) | Hirt_2006:review |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'nelfinavir CL/F' → Q27 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q27 ('nelfinavir CL/F', value 26) — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=nelfinavir
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nelfinavir
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q76 (V/F) from Hirt_2006's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Jackson_2000_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Jackson_2000_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss-120b` | primary re-run | 0.4 (2/5 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl/f].value` | 41.9 | 41 | mismatch |
-| `gpt-oss-120b` | `parameters[fluconazole]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[nelfinavir apparent volume of distribution]` | 596.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | nelfinavir mesylate | nelfinavir | mismatch |
 
 </details>
 
@@ -106,17 +88,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Jackson_2000:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Hirt_2006:review'] |
-| C7_apparent_coherence | pass |  |  |  |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 41.9 L/h | ['Jackson_2000:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 596 L | ['Hirt_2006:review'] |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | fail | 0 |
+| C0b_disposition_core | fail |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -128,19 +104,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -150,4 +116,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnelfinavir%5D%20Nelfinavir_Jackson2000_reference&body=Drug%3A%20nelfinavir%0ARecord%3A%20Nelfinavir_Jackson2000_reference%0APaper%3A%20Jackson_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nelfinavir/Nelfinavir_Jackson2000_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:20 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:26 UTC</sub>

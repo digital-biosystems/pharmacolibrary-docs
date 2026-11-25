@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cyclophosphamide’s record was rejected because its two-compartment model has an unreachable compartment; it reports CL/F of 3.6 L/h.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="cyclophosphamide" model-id="Cyclophosphamide_VarelaGonzlezAller2025_reference" status="rejected" stale="false" population="" measured-compound="cyclophosphamide" parameterization="apparent" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Varela-González-Aller J, Sánchez-Salinas MA, Troconiz I, Iacoboni G, Alonso-Ma
 
 ### Reviewer guidance
 
-**Cyclophosphamide’s record was rejected because its two-compartment model has an unreachable compartment; it reports CL/F of 3.6 L/h.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record reports cyclophosphamide CL/F of 3.6 L/h, central volume of 41.2 L, and peripheral volume of 14.5 L. The stated reason for rejection is an unreachable or orphan compartment; the record does not identify which compartment is unreachable. Extracted — cyclophosphamide: CL/F 3.6 L/h, V1 41.2 L, V2 14.5 L.
+Extracted — cyclophosphamide: CL/F 3.6 L/h, V1 41.2 L, V2 14.5 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 4.8, the second reading 3.6; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

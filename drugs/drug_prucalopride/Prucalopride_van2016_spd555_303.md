@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The dimensional finding conflicts with prucalოპride AUC 100.3: it reports concentration instead of concentration×time, although the record lists concentration×time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng mL−1 ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="prucalopride" model-id="Prucalopride_van2016_spd555_303" status="rejected" stale="false" population="children with functional constipation" measured-compound="prucalopride" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ van Schaick E, Benninga MA, Levine A, Magnusson M, Troy S. Development of a popu
 
 ### Reviewer guidance
 
-**The dimensional finding conflicts with prucalოპride AUC 100.3: it reports concentration instead of concentration×time, although the record lists concentration×time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng mL−1 ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The finding’s concentration unit does not match the listed AUC unit, ng mL−1 h, so the mismatch cannot be attributed to the listed AUC from these facts. A reported unit could not be converted to SI, leaving its parameter without an SI value. The model also has an orphan compartment, meaning that compartment has no path from the dose. Extracted — prucalopride: CL 11.7 l h−1, V2 207 l, AUC 100 ng mL−1 h, Css 4.18 ng mL−1, C0 2.64 ng mL−1.
+A reported unit could not be converted (AUC, Css and C0), so that value has no SI equivalent. Extracted — prucalopride: CL 11.7 l h−1, V2 207 l, AUC 100 ng mL−1 h, Css 4.18 ng mL−1, C0 2.64 ng mL−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has 100.3, the second reading none; it also differs on 11 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

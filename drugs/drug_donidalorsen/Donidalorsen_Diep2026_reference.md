@@ -44,7 +44,7 @@ Diep JK, Liu M, Singh P, Dorow S, Cohn DM, Bordone L et al. Population Pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,6 +57,8 @@ Diep JK, Liu M, Singh P, Dorow S, Cohn DM, Bordone L et al. Population Pharmacok
 **CL/F, V1/F, Q/F, V/F and kabs have no unit.**
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — donidalorsen: CL/F 12.8, V1/F 69.8, Q/F 2.58, V/F 1.84e+03, kabs 0.952.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f (l/h) a].covariate_forms`: this record has ['linear_fractional', 'linear_fractional'], the second reading ['linear_fractional']; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -113,6 +115,38 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.538 (14/26 fields) | 12 |
+
+<details><summary>12 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f (l/h) a].covariate_forms` | ['linear_fractional', 'linear_fractional'] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[covariate_of_weight_on_cl_f]` | 1.52 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[covariate_of_weight_on_q_f]` | 1.79 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f (l/h) c].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_f_weight]` |  | 1.52 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q290_weight]` |  | 2.34 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q314_weight]` | 2.34 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight]` | 1.60 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q78_weight]` |  | 1.60 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q_f_weight]` |  | 1.79 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v c/f (l) b].parameter_id` | Q290 | Q76 | mismatch |
+| `gpt-oss-120b` | `parameters[v p /f (l) d].parameter_id` | Q76 | Q82 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

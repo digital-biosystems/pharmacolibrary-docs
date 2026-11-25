@@ -32,7 +32,7 @@ Ornidazole is a nitroimidazole antibiotic used to treat protozoan infections. It
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Guo_2017_MIC](drugs/drug_ornidazole/pd_Guo_2017_MIC.md) | MIC (Minimum Inhibitory Concentration) biomarker turnover ← levornidazole | — | Guo B et al., Clinical Pharmacokinetics of Levornidaz…, Clinical therapeutics (2017) | [10.1016/j.clinthera.2017.05.350](https://doi.org/10.1016/j.clinthera.2017.05.350) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Guo_2017_MIC](drugs/drug_ornidazole/pd_Guo_2017_MIC.md) | MIC (Minimum Inhibitory Concentration) biomarker turnover ← levornidazole | — | Guo B et al., Clinical Pharmacokinetics of Levornidaz…, Clinical therapeutics (2017) | [10.1016/j.clinthera.2017.05.350](https://doi.org/10.1016/j.clinthera.2017.05.350) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

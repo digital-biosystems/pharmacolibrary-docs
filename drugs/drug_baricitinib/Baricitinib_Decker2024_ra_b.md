@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Baricitinib's oral clearance and volume of distribution were recorded with the unit 'years' instead of their proper flow and volume units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit years ([time]) vs [length] ** 3 / [time]; Q76 unit years ([time]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="baricitinib" model-id="Baricitinib_Decker2024_ra_b" status="rejected" stale="false" population="pediatric patients with juvenile idiopathic arthritis" measured-compound="baricitinib" parameterization="apparent" topology="3C"></div>
 
@@ -52,13 +52,13 @@ Decker RL, Steven Ernest C, Radtke DB, Wang R, Araújo J, Keller SY et al. A pop
 
 ### Reviewer guidance
 
-**Baricitinib's oral clearance and volume of distribution were recorded with the unit 'years' instead of their proper flow and volume units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit years ([time]) vs [length] ** 3 / [time]; Q76 unit years ([time]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The apparent oral clearance (CL/F, 9.42) and apparent volume of distribution (V/F, 108) are both marked with the unit 'years', which is a time unit. This creates a dimensional conflict because clearance is measured in volume per time and volume of distribution in volume. Additionally, the model contains an unreachable or orphan compartment that has no path from the administered dose, rendering that part of the structure unusable. Extracted — baricitinib: CL/F 9.42 years, CLR 6.86 L/h, CLNR 2.56 L/h, V/F 108 years, V1/F 85.2 L, V2/F 23.1 L, t1/2z 12.5 h.
+A reported unit could not be converted (CL/F and V/F), so that value has no SI equivalent. Extracted — baricitinib: CL/F 9.42 years, CLR 6.86 L/h, CLNR 2.56 L/h, V/F 108 years, V1/F 85.2 L, V2/F 23.1 L, t1/2z 12.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 4; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

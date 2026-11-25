@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> Niclosamide was refused because D1, a duration parameter, is reported as 1.40 mg/kg, and the record lacks distribution volume and clearance.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg/kg ([mass]) vs [time].
 
 <div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Weiss2023_1_nen_nebulized" status="rejected" stale="false" population="sheep" measured-compound="niclosamide" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Weiss A, Bischof RJ, Landersdorfer CB, Nguyen TH, Davies A, Ibrahim J et al. Sin
 
 ### Reviewer guidance
 
-**Niclosamide was refused because D1, a duration parameter, is reported as 1.40 mg/kg, and the record lacks distribution volume and clearance.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg/kg ([mass]) vs [time].**
 
-No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. D1 means the duration of zero-order input, but its reported unit, mg/kg, is a dose unit rather than time and could not be converted to SI. Extracted — niclosamide: D1 1.4 mg/kg, Cmax 577 ng/mL, tmax 22.2 min, AUCt 261 ng·h/mL.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (D1, Cmax and AUCt), so that value has no SI equivalent. Extracted — niclosamide: D1 1.4 mg/kg, Cmax 577 ng/mL, tmax 22.2 min, AUCt 261 ng·h/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has niclosamide (niclosamide ethanolamine), the second reading niclosamide; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

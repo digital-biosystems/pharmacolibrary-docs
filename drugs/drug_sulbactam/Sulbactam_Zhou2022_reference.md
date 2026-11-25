@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sulbactam’s clearance was treated as unestimated despite a listed value of 15.8 L/h, alongside other missing parameter estimates, so the model was held back.
+> No value for sulbactam's bioavailability, clearance, volume of distribution, absorption lag time and central→peripheral rate constant; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Zhou2022_reference" status="model_quarantined" stale="false" population="adults with hospital-acquired or ventilator-associated pneumonia caused by Acinetobacter baumannii" measured-compound="cefoperazone/sulbactam" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Zhou Y, Zhang J, Chen Y, Wu J, Guo B, Wu X et al. Combined PK/PD Index May Be a 
 
 ### Reviewer guidance
 
-**Sulbactam’s clearance was treated as unestimated despite a listed value of 15.8 L/h, alongside other missing parameter estimates, so the model was held back.**
+**No value for sulbactam's bioavailability, clearance, volume of distribution, absorption lag time and central→peripheral rate constant; t6_deviations (+1 more).**
 
-No value for sulbactam’s bioavailability, clearance, volume of distribution, absorption lag time or central-to-peripheral rate constant. The model was built, but these parameters had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The parameter list nevertheless reports sulbactam total clearance of 15.8 L/h; it also assigns an absorption rate of 8.28 1/h to cefoperazone/sulbactam, which the second reader disputed, and the second reader identified sulbactam rather than cefoperazone/sulbactam as the primary analyte; the verdict was disputed, with agreement 0.778 and 0 of 1 reader agreeing. Extracted — sulbactam: CL 15.8 L/h, V1 18 L, Q 2.91 L/h, V2 5.39 L; cefoperazone/sulbactam: kabs 8.28 1/h.
+The model was built, but sulbactam's bioavailability, clearance, volume of distribution, absorption lag time and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — sulbactam: CL 15.8 L/h, V1 18 L, Q 2.91 L/h, V2 5.39 L; cefoperazone/sulbactam: kabs 8.28 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has cefoperazone/sulbactam, the second reading sulbactam; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.778 (7 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | cross-check contradicted by a second reader: verdict disputed; agreement 0.778 (7 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

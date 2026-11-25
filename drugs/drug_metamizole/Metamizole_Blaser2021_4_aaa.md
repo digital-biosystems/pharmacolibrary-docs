@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The metamizole record lacks volume and clearance, and the 4-methylaminoantipyrine parameters use units that cannot be converted to standard SI.
+> No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Metamizole" model-id="Metamizole_Blaser2021_4_aaa" status="rejected" stale="false" population="salt-depleted healthy male volunteers" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -40,7 +40,7 @@ Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.042). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,13 @@ Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al
 
 ### Reviewer guidance
 
-**The metamizole record lacks volume and clearance, and the 4-methylaminoantipyrine parameters use units that cannot be converted to standard SI.**
+**No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The paper reports no distribution volume or elimination clearance, making it an exposure/outcome study rather than a compartmental model. The concentration ratio parameters for 4-methylaminoantipyrine are listed in mg/L, a unit that prevented conversion to standard SI values. Additionally, a metabolite in the chain was identified as unreachable from the dose. Extracted — 4-methylaminoantipyrine: Cmax_ratio 4.85 mg/L, AUC ratio 13.3.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Cmax_ratio), so that value has no SI equivalent. None of the extracted parameters is metamizole's own; they describe 4-methylaminoantipyrine. Extracted — 4-methylaminoantipyrine: Cmax_ratio 4.85 mg/L, AUC ratio 13.3.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 4-methylaminoantipyrine, the second reading unknown; it also differs on 22 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -91,6 +93,49 @@ The paper reports no distribution volume or elimination clearance, making it an 
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.042 (1/24 fields) | 23 |
+
+<details><summary>23 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['metamizole', '4-methylaminoantipyrine', 'metabolism'], ['4-methylaminoantipyrine', '4-aminoantipyrine', 'metabolism'], ['4-aminoantipyrine', '4-formylaminoantipyrine', 'metabolism'], ['4-aminoantipyrine', '4-acetylaminoantipyrine', 'metabolism']] | [['metamizole', '4-maa', 'metabolism'], ['4-maa', '4-aa', 'metabolism'], ['4-aa', '4-faa', 'metabolism'], ['4-aa', '4-aaa', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[auc0-5h ratio md/sd]` | 13.35 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax ratio md/sd]` | 4.85 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k10]` |  | 0.178 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` |  | 0.030 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k14]` |  | 0.006 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k23]` |  | 0.552 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k24]` |  | 0.033 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k30]` |  | 0.074 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k40]` |  | 0.567 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` |  | 2.528 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ke0]` |  | 0.012 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 4-aa]` |  | 2.39 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 4-aaa]` |  | 10.33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 4-faa]` |  | 6.95 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 4-maa]` |  | 3.43 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 k01]` |  | 0.36 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f]` |  | 71.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` |  | 35.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3/f]` |  | 55.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v4/f]` |  | 11.5 | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | 4-methylaminoantipyrine | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

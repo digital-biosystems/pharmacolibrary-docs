@@ -5,11 +5,11 @@
 
 # acalabrutinib — `Acalabrutinib_Edlund2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The paper reports none of the model's key parameters.
+> No value for acalabrutinib's clearance and volume of distribution — all 5 extracted parameters describe ACP-5862, not acalabrutinib; t3_param_coverage (+2 more).
 
-<div class="pk-model-meta" hidden drug="acalabrutinib" model-id="Acalabrutinib_Edlund2019_reference" status="rejected" stale="false" population="adult healthy volunteers and patients with B-cell malignancies" measured-compound="acalabrutinib and ACP-5862" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="acalabrutinib" model-id="Acalabrutinib_Edlund2019_reference" status="model_quarantined" stale="false" population="adults with B-cell malignancies and healthy volunteers" measured-compound="acalabrutinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Edlund H, Lee SK, Andrew MA, Slatter JG, Aksenov S, Al-Huniti N. Population Pharmacokinetics of the BTK Inhibitor Acalabrutinib and its Active Metabolite in Healthy Volunteers and Patients with B-Cell Malignancies. Clinical pharmacokinetics 58(5):659–672 (2019).
@@ -17,25 +17,31 @@ Edlund H, Lee SK, Andrew MA, Slatter JG, Aksenov S, Al-Huniti N. Population Phar
 
 ## Population and dosing
 
-**Population:** adult healthy volunteers and patients with B-cell malignancies · condition healthy and B-cell malignancies · age group adult · n = 577.
+**Population:** adults with B-cell malignancies and healthy volunteers · condition B-cell malignancies · age group adult · n = 577.
 
-**Dosed compound ≠ measured compound:** dosed acalabrutinib, measured acalabrutinib and ACP-5862.
+**Dosing:** 15, 400 mg, oral, multiple.
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 0 extracted.  
-**Availability:** No model was generated from this record.
+**Parameters:** 5 extracted.  
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| Fm | fm | 0.4 |  |  |
+| CLM (L/h) | CL | 21.8 | L/h | 5.55 |
+| VcM (L) | V1 | 38.5 | L | 14.4 |
+| QM (L/h) | Q | 6.10 | L/h | 14.8 |
+| VpM (L) | V2 | 38.4 | L | 11.8 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (primary re-run, agreement 0.333). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,28 +51,48 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**No value for acalabrutinib's clearance and volume of distribution — all 5 extracted parameters describe ACP-5862, not acalabrutinib; t3_param_coverage (+2 more).**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+The model was built, but acalabrutinib's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — ACP-5862: fm 0.4, CL 21.8 L/h, V1 38.5 L, Q 6.1 L/h, V2 38.4 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has acalabrutinib and ACP-5862, the second reading acalabrutinib; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| Fm | `Q45` · fm | 0.4 |  | 0.4 |  |  |  | exact (1) | tab_2:row1:col1 |
+| CLM (L/h) | `Q22` · CL | 21.8 | L/h | 6.056e-06 | m3/s | l/h | 5.55 | exact (1) | tab_2:row2:col1 |
+| VcM (L) | `Q63` · V1 | 38.5 | L | 0.0385 | m3 | l | 14.4 | exact (1) | tab_2:row3:col1 |
+| QM (L/h) | `Q30` · Q | 6.10 | L/h | 1.694e-06 | m3/s | l/h | 14.8 | exact (1) | tab_2:row4:col1 |
+| VpM (L) | `Q64` · V2 | 38.4 | L | 0.0384 | m3 | l | 11.8 | exact (1) | tab_2:row5:col1 |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=acalabrutinib and ACP-5862
+- table section iiv: 'CLM (%CV)' routed out of structural estimates ('Between-subject variability')
+- table section iiv: 'VcM (%CV)' routed out of structural estimates ('Between-subject variability')
+- table section iiv: 'Correlation (CLM-VcM) b' routed out of structural estimates ('Between-subject variability')
+- table section residual_error: 'Additive error c' routed out of structural estimates ('Residual variability')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=acalabrutinib
 - template fit: none — only the metabolite is modelled — no parent compartment
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 5 linked by role
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (13/13 fields) | none |
 | `qwen3.8-27b` | primary re-run | 0.333 (3/9 fields) | 6 |
 
 <details><summary>6 field discrepancies</summary>
@@ -90,11 +116,36 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | obtained |
-|---|---|---|
-| C0_has_structural_params | fail | 0 |
-| C0b_disposition_core | fail |  |
-| C8_topology | pass |  |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 5 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_2:row2:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_2:row4:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_2:row3:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_2:row5:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 21.8 | ['tab_2:row2:col1'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 21.8 L/h | ['tab_2:row2:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 38.5 L | ['tab_2:row3:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 38.4 L | ['tab_2:row5:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage |  | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['V2'] |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (13 of 13 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 323 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.68 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 0.75 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -106,9 +157,19 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -118,4 +179,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bacalabrutinib%5D%20Acalabrutinib_Edlund2019_reference&body=Drug%3A%20acalabrutinib%0ARecord%3A%20Acalabrutinib_Edlund2019_reference%0APaper%3A%20Edlund_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_acalabrutinib/Acalabrutinib_Edlund2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:37 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:14 UTC</sub>

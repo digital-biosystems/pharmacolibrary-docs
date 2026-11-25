@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> The triiodothyronine metabolite is defined in the structure but the metabolic rate constant Kfm lacks an assigned value.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_MirallesGarca1981_controls" status="rejected" stale="false" population="non-pregnant ewes with acute hepatic insufficiency and controls" measured-compound="triiodothyronine (T3) or thyroxine (T4)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -58,13 +58,13 @@ Miralles-García JM, García-Iglesias C, Garcá-Díez LC, De Pablo-Dávilà F. T
 
 ### Reviewer guidance
 
-**The triiodothyronine metabolite is defined in the structure but the metabolic rate constant Kfm lacks an assigned value.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record specifies a parent-metabolite structure linking thyroxine to triiodothyronine, yet no numerical value is provided for the Kfm parameter. Consequently, the triiodothyronine compartment has no defined path from the dose and remains an unlinked metabolite. Extracted — levothyroxine: kel 0.027 1/h, t1/2α 2.05 h, t1/2β 26.9 h, k12 0.09 1/h, k21 0.037 1/h, k13 0.25 1/h, V1 6.81 L, V2 16.7 L, … (+2).
+Extracted — levothyroxine: kel 0.027 1/h, t1/2α 2.05 h, t1/2β 26.9 h, k12 0.09 1/h, k21 0.037 1/h, k13 0.25 1/h, V1 6.81 L, V2 16.7 L, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has triiodothyronine (T3) or thyroxine (T4), the second reading thyroxine (T4); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

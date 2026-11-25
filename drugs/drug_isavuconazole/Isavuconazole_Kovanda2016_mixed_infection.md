@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Isavuconazole absorption rate constants and lag time were set to library placeholders instead of using values from the study.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="isavuconazole" model-id="Isavuconazole_Kovanda2016_mixed_infection" status="needs_review" stale="false" population="patients with invasive fungal disease" measured-compound="isavuconazole" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Kovanda LL, Desai AV, Lu Q, Townsend RW, Akhtar S, Bonate P et al. Isavuconazole
 
 ### Reviewer guidance
 
-**Isavuconazole absorption rate constants and lag time were set to library placeholders instead of using values from the study.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists ka and Tlag as defaulted parameters in the model builder's deviations. These absorption kinetics were not reported in the source, so library placeholders are used rather than estimates. This leaves the absorption phase of the simulated profile unsupported by the available data. Extracted — isavuconazole: CLm/F 3.2 L/h, V 390 L, Fab 97.7.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — isavuconazole: CLm/F 3.2 L/h, V 390 L, Fab 97.7.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -146,7 +146,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

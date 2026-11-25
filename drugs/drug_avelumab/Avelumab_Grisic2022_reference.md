@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the intercompartmental clearance parameter has incompatible units of time and volume, and a negative clearance was flagged.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit month−1 (1 / [time]) vs [mass] / [length] ** 3; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
-<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Grisic2022_reference" status="rejected" stale="false" population="patients with metastatic Merkel cell carcinoma" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Grisic2022_reference" status="rejected" stale="false" population="adults with metastatic Merkel cell carcinoma" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Grisic AM, Xiong W, Tanneau L, Jönsson S, Friberg LE, Karlsson MO et al. Model-Based Characterization of the Bidirectional Interaction Between Pharmacokinetics and Tumor Growth Dynamics in Patients with Metastatic Merkel Cell Carcinoma Treated with Avelumab. Clinical cancer research : an official journal of the American Association for Cancer Research 28(7):1363–1371 (2022).
@@ -17,15 +17,15 @@ Grisic AM, Xiong W, Tanneau L, Jönsson S, Friberg LE, Karlsson MO et al. Model-
 
 ## Population and dosing
 
-**Population:** patients with metastatic Merkel cell carcinoma · condition metastatic Merkel cell carcinoma · age group adult · n = 147.
+**Population:** adults with metastatic Merkel cell carcinoma · age group adult.
 
-**Dosing:** 700 mg, iv, multiple, every 336 h.
+**Dosing:** 700 mg, iv, multiple, every 144 h.
 
 ## Model
 
 **Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted, plus 3 covariate effects.  
+**Parameters:** 7 extracted, plus 3 covariate effects.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -34,6 +34,7 @@ Grisic AM, Xiong W, Tanneau L, Jönsson S, Friberg LE, Karlsson MO et al. Model-
 | label | parameter | value | unit |
 |---|---|---|---|
 | KD, month−1 | KD | 0.105 | month−1 |
+| KG, month−1 | k12 | 0.0321 | month−1 |
 | λ, month–1 | kel | 0.199 | month–1 |
 | CL, L/h | CL | 0.0236 | L/h |
 | Vc, L | V1 | 3.29 | L |
@@ -41,11 +42,11 @@ Grisic AM, Xiong W, Tanneau L, Jönsson S, Friberg LE, Karlsson MO et al. Model-
 | Vp, L | V2 | 1.1 | L |
 | box_cox_for_baseline_ts | box_cox_for_baseline_ts | -0.391 |  |
 | box_cox_for_effect_decay | box_cox_for_effect_decay | -2.97 |  |
-| theta_q314_albumin | theta_q314_albumin | -0.0193 |  |
+| theta_cl_albumin | theta_cl_albumin | -0.0193 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.579), qwen3.8-27b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,27 +56,28 @@ Grisic AM, Xiong W, Tanneau L, Jönsson S, Friberg LE, Karlsson MO et al. Model-
 
 ### Reviewer guidance
 
-**The record was rejected because the intercompartmental clearance parameter has incompatible units of time and volume, and a negative clearance was flagged.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit month−1 (1 / [time]) vs [mass] / [length] ** 3; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The parameter meaning intercompartmental clearance is listed with the unit L/h, but the review identified a dimension mismatch between the unit 1/month and volume for a structural parameter. Additionally, a check detected a negative clearance or volume in a covariate scenario, which is physiologically implausible. These errors rendered the model structure and parameter values invalid. Extracted — avelumab: KD 0.105 month−1, kel 0.199 month–1, CL 0.0236 L/h, V1 3.29 L, Q 0.022 L/h, V2 1.1 L.
+A reported unit could not be converted (KD), so that value has no SI equivalent. Extracted — avelumab: KD 0.105 month−1, k12 0.0321 month−1, kel 0.199 month–1, CL 0.0236 L/h, V1 3.29 L, Q 0.022 L/h, V2 1.1 L.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of box_cox_for_baseline_ts: this record has -0.391, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of box_cox_for_baseline_ts: this record has -0.391, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| KD, month−1 | `Q331` · KD | 0.105 | month−1 |  |  | 1/month | exact (1) | tbl1:row2:col1 |
-| λ, month–1 | `Q47` · kel | 0.199 | month–1 |  |  | 1/month | exact (1) | tbl1:row4:col1 |
-| CL, L/h | `Q22` · CL | 0.0236 | L/h | 6.556e-09 | m3/s | l/h | exact (1) | tbl1:row6:col1 |
-| Vc, L | `Q63` · V1 | 3.29 | L | 0.00329 | m3 | l | exact (1) | tbl1:row7:col1 |
-| Q, L/h | `Q30` · Q | 0.022 | L/h | 6.111e-09 | m3/s | l/h | exact (1) | tbl1:row8:col1 |
-| Vp, L | `Q64` · V2 | 1.1 | L | 0.0011 | m3 | l | exact (1) | tbl1:row9:col1 |
-| box_cox_for_baseline_ts | `Q900` · box_cox_for_baseline_ts | -0.391 |  |  |  |  |  | tbl1:row12:col1 |
-| box_cox_for_effect_decay | `Q900` · box_cox_for_effect_decay | -2.97 |  |  |  |  |  | tbl1:row13:col1 |
-| theta_q314_albumin | `Q900` · theta_q314_albumin | -0.0193 |  |  |  |  |  | tbl1:row10:col1 |
+| KD, month−1 | `Q331` · KD | 0.105 | month−1 |  |  | 1/month | exact (1) | tbl1:row2:col1, tbl1:row2:col3 |
+| KG, month−1 | `Q301` · k12 | 0.0321 | month−1 | 1.221e-08 | 1/s | 1/month | llm (0.6) | tbl1:row3:col1, tbl1:row3:col3 |
+| λ, month–1 | `Q47` · kel | 0.199 | month–1 | 7.567e-08 | 1/s | 1/month | exact (1) | tbl1:row4:col1, tbl1:row4:col3 |
+| CL, L/h | `Q22` · CL | 0.0236 | L/h | 6.556e-09 | m3/s | l/h | exact (1) | tbl1:row6:col1, tbl1:row6:col3 |
+| Vc, L | `Q63` · V1 | 3.29 | L | 0.00329 | m3 | l | exact (1) | tbl1:row7:col1, tbl1:row7:col3 |
+| Q, L/h | `Q30` · Q | 0.022 | L/h | 6.111e-09 | m3/s | l/h | exact (1) | tbl1:row8:col1, tbl1:row8:col3 |
+| Vp, L | `Q64` · V2 | 1.1 | L | 0.0011 | m3 | l | exact (1) | tbl1:row9:col1, tbl1:row9:col3 |
+| box_cox_for_baseline_ts | `Q900` · box_cox_for_baseline_ts | -0.391 |  |  |  |  |  | tbl1:row12:col1, tbl1:row12:col3 |
+| box_cox_for_effect_decay | `Q900` · box_cox_for_effect_decay | -2.97 |  |  |  |  |  | tbl1:row13:col1, tbl1:row13:col3 |
+| theta_cl_albumin | `Q900` · theta_cl_albumin | -0.0193 |  |  |  |  |  | tbl1:row10:col1, tbl1:row10:col3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -85,62 +87,42 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Baseline TS, mm' — extend the ontology if this is a real PK parameter (source ['tbl1:row1:col1'])
+- dropped unlinked row (NIL): 'Baseline TS, mm' — extend the ontology if this is a real PK parameter (source ['tbl1:row1:col1', 'tbl1:row1:col3'])
 - unit_dimension_mismatch: 'KD, month−1' → Q331 (unit '1 / [time]' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped unlinked row (NIL): 'KG, month−1' — extend the ontology if this is a real PK parameter (source ['tbl1:row3:col1'])
-- dropped PD-category row 'Effect of drug concentration on effect decay (Exposureeffect), 1/(μg/mL)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row5:col1'])
+- dropped PD-category row 'Effect of drug concentration on effect decay (Exposureeffect), 1/(μg/mL)' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row5:col1', 'tbl1:row5:col3'])
 - dropped duplicate Q22 ('Effect of TS on CL (TSeffect), L/h per mm TS different from median TS 51 mm', value '0.00476') — already have one for this compound
 - covariate level 'Box-Cox for baseline TS' → Q900:box_cox_for_baseline_ts = -0.391 (additive_shift on Q22)
 - covariate level 'Box-Cox for effect decay' → Q900:box_cox_for_effect_decay = -2.97 (additive_shift on Q22)
 - dropped PD-category row 'Dropout: Intercept logit' → Q344 (logit_intercept, category G14) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row26:col1', 'tbl1:row26:col3'])
-- dropped PD-category row 'Dropout: Effect of progressive disease' → Q340 (alpha_progression, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row27:col1', 'tbl1:row27:col3'])
-- dropped PD-category row 'Dropout: Effect of relative change from baseline TS' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row28:col1', 'tbl1:row28:col3'])
-- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
+- dropped unlinked row (NIL): 'Dropout: Effect of progressive disease' — extend the ontology if this is a real PK parameter (source ['tbl1:row27:col1', 'tbl1:row27:col3'])
+- dropped unlinked row (NIL): 'Dropout: Effect of relative change from baseline TS' — extend the ontology if this is a real PK parameter (source ['tbl1:row28:col1', 'tbl1:row28:col3'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=avelumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - molar mass: none found for 'avelumab' — its concentrations stay mass-only
 
-**Extraction notes:**
-- unparsed cell tbl1:row1:col3 = '85.9 (44.8–150)'
-- unparsed cell tbl1:row2:col3 = '0.161 (0.102–0.363)'
-- unparsed cell tbl1:row3:col3 = '0.0275 (0.00372–0.0641)'
-- unparsed cell tbl1:row4:col3 = '0.193 (0.0479–0.465)'
-- unparsed cell tbl1:row5:col3 = '0.00052 (0.0000125–0.00061)'
-- unparsed cell tbl1:row6:col3 = '0.252 (0.0194–0.0353)'
-- unparsed cell tbl1:row7:col3 = '3.28 (2.97–4.15)'
-- unparsed cell tbl1:row8:col3 = '0.022 (0.0156–0.0270)'
-- unparsed cell tbl1:row9:col3 = '1.1 (0.836–1.52)'
-- unparsed cell tbl1:row10:col3 = '−0.0184 (−0.0396 to −0.0131)'
-- unparsed cell tbl1:row11:col3 = '0.00486 (0.00243–0.00985)'
-- unparsed cell tbl1:row12:col3 = '−0.551 (−2.45–0.443)'
-- unparsed cell tbl1:row13:col3 = '−2.97 (−2.99 to −2.97)'
-- unparsed cell tbl1:row14:col3 = '0.452 (0.137–51.6)'
-- unparsed cell tbl1:row15:col3 = '235 (93.0–479)'
-- unparsed cell tbl1:row16:col3 = '109 (21.1–404)'
-- unparsed cell tbl1:row17:col3 = '31.3 (26.7–45.9)'
-- unparsed cell tbl1:row18:col3 = '26.2 (19.8–34.2)'
-- unparsed cell tbl1:row19:col3 = '0.488 (0.128–1.40)'
-- unparsed cell tbl1:row20:col3 = '111 (33.0–210)'
-- unparsed cell tbl1:row21:col3 = '50.6 (38.7–69.7)'
-- unparsed cell tbl1:row22:col3 = '13.7 (10.7–16.2)'
-- unparsed cell tbl1:row23:col3 = '2.42 (0.573–5.53)'
-- unparsed cell tbl1:row24:col3 = '30.1 (19.1–482)'
-- unparsed cell tbl1:row25:col3 = '0.00011 (0.000113–0.0107)'
-
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.579 (11/19 fields) | 8 |
 | `qwen3.8-27b` | not confirmed | 0.688 (11/16 fields) | 5 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>13 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[box_cox_for_baseline_ts]` | -0.391 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[box_cox_for_effect_decay]` | -2.97 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl].covariate_forms` | ['additive_shift', 'additive_shift', 'linear_fractional'] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[dropout: effect of relative change from baseline ts]` |  | 1.76 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kg].parameter_id` | Q301 | Q47 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q324_category]` |  | -0.391 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q326_category]` |  | -2.97 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λ]` | 0.199 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[box_cox_for_baseline_ts]` | -0.391 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cl].covariate_forms` | ['additive_shift', 'additive_shift'] | ['additive_shift', 'linear_fractional'] | mismatch |
 | `qwen3.8-27b` | `parameters[theta_cl_albumin]` |  | -0.0193 | only_one_extracted |
@@ -159,21 +141,22 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_sign_Q22_category | fail | -0.3674 |  | base 0.0236 + shift -0.391 (category) |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tbl1:row6:col1'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tbl1:row8:col1'] |
-| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | month−1 (1 / [time]) | ['tbl1:row2:col1'] |
-| C5_dimension_Q47 | pass | 1 / [time] |  | ['tbl1:row4:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['tbl1:row7:col1'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['tbl1:row9:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0236 | ['tbl1:row6:col1'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tbl1:row6:col1', 'tbl1:row6:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tbl1:row8:col1', 'tbl1:row8:col3'] |
+| C5_dimension_Q301 | pass | 1 / [time] |  | ['tbl1:row3:col1', 'tbl1:row3:col3'] |
+| C5_dimension_Q331 | fail | [mass] / [length] ** 3 | month−1 (1 / [time]) | ['tbl1:row2:col1', 'tbl1:row2:col3'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['tbl1:row4:col1', 'tbl1:row4:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['tbl1:row7:col1', 'tbl1:row7:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['tbl1:row9:col1', 'tbl1:row9:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0236 | ['tbl1:row6:col1', 'tbl1:row6:col3'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0236 L/h | ['tbl1:row6:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.29 L | ['tbl1:row7:col1'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 1.1 L | ['tbl1:row9:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0236 L/h | ['tbl1:row6:col1', 'tbl1:row6:col3'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.29 L | ['tbl1:row7:col1', 'tbl1:row7:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 1.1 L | ['tbl1:row9:col1', 'tbl1:row9:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -197,4 +180,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bavelumab%5D%20Avelumab_Grisic2022_reference&body=Drug%3A%20avelumab%0ARecord%3A%20Avelumab_Grisic2022_reference%0APaper%3A%20Grisic_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_avelumab/Avelumab_Grisic2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 09:39 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:21 UTC</sub>

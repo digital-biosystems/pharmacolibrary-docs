@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Penland_2024_serum_K](drugs/drug_sodium_zirconium_cyclosilicate/pd_Penland_2024_serum_K.md) | serum potassium concentration ← sodium zirconium cyclosilicate (virtual exposure) · indirect response — drug inhibits the production of serum potassium concentration | — | Penland RC et al., Population Pharmacodynamic Dose-Respons…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01360-9](https://doi.org/10.1007/s40262-024-01360-9) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Penland_2024_serum_K](drugs/drug_sodium_zirconium_cyclosilicate/pd_Penland_2024_serum_K.md) | serum potassium concentration ← sodium zirconium cyclosilicate (virtual exposure) · indirect response — drug inhibits the production of serum potassium concentration | — | Penland RC et al., Population Pharmacodynamic Dose-Respons…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01360-9](https://doi.org/10.1007/s40262-024-01360-9) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

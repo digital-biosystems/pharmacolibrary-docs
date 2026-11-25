@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because the paper studies artesunate, not pyronaridine, so the extracted clearance and volume parameters describe the wrong drug.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Pyronaridine" model-id="Pyronaridine_Tan2009_reference" status="rejected" stale="false" population="" measured-compound="pyronaridine" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Tan B, Naik H, Jang IJ, Yu KS, Kirsch LE, Shin CS et al. Population pharmacokine
 
 ### Reviewer guidance
 
-**Rejected because the paper studies artesunate, not pyronaridine, so the extracted clearance and volume parameters describe the wrong drug.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The record lists pyronaridine with a clearance of 1190.0 L/h, but the source paper focuses on artesunate where pyronaridine is merely a comparator. The second reader’s disagreement on volume values, such as 70.5 L versus 18.5 L, highlights the misattribution of parameters to the wrong molecule. Consequently, the apparent parameterization with F=1 is invalid for this specific paper context. Extracted — pyronaridine: CL/F 1.19e+03 L/h, V/F 70.5 L, V2/F 1.21e+03 L, Q/F 5.74 L/h, kabs 3.85 h-1.
+Extracted — pyronaridine: CL/F 1.19e+03 L/h, V/F 70.5 L, V2/F 1.21e+03 L, Q/F 5.74 L/h, kabs 3.85 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 135, the second reading 112; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -143,7 +143,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.579, 0 of 1 reader(s) agree | 0.579 | cross-check disputed by a second reader: verdict disputed, agreement 0.579, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.579 (11 of 19 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.579 | cross-check contradicted by a second reader: verdict disputed; agreement 0.579 (11 of 19 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

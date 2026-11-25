@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> Pethidine’s ka was unreported and defaulted, while its reported CL/F was 15.92 L·h−1, leaving the absorption-rate estimate unsupported and the model held back.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="pethidine" model-id="Pethidine_Zhang2014_reference" status="needs_review" stale="false" population="" measured-compound="pethidine" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Zhang C, Yu Z, Li X, Xu Y, Liu D. Chronopharmacodynamics and chronopharmacokinet
 
 ### Reviewer guidance
 
-**Pethidine’s ka was unreported and defaulted, while its reported CL/F was 15.92 L·h−1, leaving the absorption-rate estimate unsupported and the model held back.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-Ka used library defaults, not estimates from this paper. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Tlag was also defaulted; the model represented input as first-order absorption from an extravascular depot and assumed F=1 and Fm=1 with no molar correction. Extracted — pethidine: CL/F 15.9 L·h−1, V/F 59.9 L·kg−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — pethidine: CL/F 15.9 L·h−1, V/F 59.9 L·kg−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -124,7 +124,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

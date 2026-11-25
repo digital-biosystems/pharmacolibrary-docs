@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance, elimination, and fast-phase rate constants were rejected because their reported time units conflict with required volume-per-time or inverse-time dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit S ([time]) vs [length] ** 3 / [time]; Q47 unit S ([time]) vs 1 / [time]; Q67 unit S ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Ohara2014_reference" status="rejected" stale="false" population="Chinese patients" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Ohara M, Takahashi H, Lee MT, Wen MS, Lee TH, Chuang HP et al. Determinants of t
 
 ### Reviewer guidance
 
-**Clearance, elimination, and fast-phase rate constants were rejected because their reported time units conflict with required volume-per-time or inverse-time dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit S ([time]) vs [length] ** 3 / [time]; Q47 unit S ([time]) vs 1 / [time]; Q67 unit S ([time]) vs 1 / [time].**
 
-The record lists clearance (240) with a time unit, which is dimensionally invalid for a clearance parameter. Similarly, the elimination rate constant (3.48) and fast-phase macro-rate constant (0.00578) are assigned time units, whereas rate constants require inverse time dimensions. This inconsistency prevented the units from being converted to standard international pharmacokinetic units. Extracted — warfarin: CL 240 S, kel 3.48 S, λ1 0.00578 S; S-warfarin: V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
+A reported unit could not be converted (CL, kel and λ1), so that value has no SI equivalent. Extracted — warfarin: CL 240 S, kel 3.48 S, λ1 0.00578 S; S-warfarin: V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has warfarin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

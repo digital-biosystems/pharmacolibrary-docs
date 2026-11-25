@@ -26,7 +26,7 @@ Lurasidone is an atypical antipsychotic used to treat schizophrenia, bipolar dep
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Dai_2026_reference](drugs/drug_lurasidone/Lurasidone_Dai2026_reference.md) | — | 1-compartment (no model) | 2 | Dai C et al., The impact of CYP3A4 rs2242480 on oral…, Journal of affective disord… (2026) | [10.1016/j.jad.2025.120588](https://doi.org/10.1016/j.jad.2025.120588) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Dai_2026_reference](drugs/drug_lurasidone/Lurasidone_Dai2026_reference.md) | — | 1-compartment (no model) | 2 | Dai C et al., The impact of CYP3A4 rs2242480 on oral…, Journal of affective disord… (2026) | [10.1016/j.jad.2025.120588](https://doi.org/10.1016/j.jad.2025.120588) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Yang_2026_final_model](drugs/drug_lurasidone/Lurasidone_Yang2026_final_model.md) | — | 1-compartment (no model) | 3 | Yang Y et al., Impact of valproate co-medication and a…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1810528](https://doi.org/10.3389/fphar.2026.1810528) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ pop](drugs/drug_lurasidone/Lurasidone_Yang2026_pop.md) | — | 1-compartment (no model) | 3 |  |  |
 
@@ -34,7 +34,7 @@ Lurasidone is an atypical antipsychotic used to treat schizophrenia, bipolar dep
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Zhuang_2023_Kv_current](drugs/drug_lurasidone/pd_Zhuang_2023_Kv_current.md) | Kv channel current inhibition ← lurasidone · direct sigmoid Emax (Hill) effect | — | Zhuang W et al., Lurasidone blocks the voltage-gated pot…, European journal of pharmac… (2023) | [10.1016/j.ejphar.2023.176005](https://doi.org/10.1016/j.ejphar.2023.176005) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Zhuang_2023_Kv_current](drugs/drug_lurasidone/pd_Zhuang_2023_Kv_current.md) | Kv current ← lurasidone · direct sigmoid Emax (Hill) effect | — | Zhuang W et al., Lurasidone blocks the voltage-gated pot…, European journal of pharmac… (2023) | [10.1016/j.ejphar.2023.176005](https://doi.org/10.1016/j.ejphar.2023.176005) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,39 +48,31 @@ Lurasidone is an atypical antipsychotic used to treat schizophrenia, bipolar dep
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:59 | 2:21 | 0/3/0 | 1/0/0 | 0/0/0 | 94,271/7,499 | ollama / glm-5.3-flash | 3 | 0/3 | 3/0 | 0 |
+| 2026-11-24 02:30 | 0:18 | 1/2/0 | 1/0/0 | 0/0/0 | 5,947/2,102 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
-- **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Dai_2026.pdf` | Dai C et al., The impact of CYP3A4 rs2242480 on oral…, Journal of affective disord… (2026) | popPK | 10 | [10.1016/j.jad.2025.120588](https://doi.org/10.1016/j.jad.2025.120588) | [41192731](https://pubmed.ncbi.nlm.nih.gov/41192731) | Population PK model of lurasidone in Chinese bipolar depression patients with numeric CL/F values by genotype reported directly in the abstract. |
-| `Hu_2017.pdf` | Hu C et al., Single- and Multiple-Dose Pharmacokinet…, Clinical drug investigation (2017) | popPK | 7 | [10.1007/s40261-017-0546-8](https://doi.org/10.1007/s40261-017-0546-8) | [28695535](https://pubmed.ncbi.nlm.nih.gov/28695535) | Human PK study of lurasidone with NCA parameters (t½ 18.1-25.5 h, accumulation index 1.25) reported in abstract, but full parameter table (CL, V, Cmax, AUC values) not included in evidence. |
-
-<sub>queue written 2026-10-06 15:57 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Hu_2017 | relevant | 7 | 4 | Human PK study of lurasidone with NCA parameters (t½ 18.1-25.5 h, accumulation index 1.25) reported in abstract, but full parameter table (CL, V, Cmax, AUC values) not included in evidence. |
+| PGx | Hu_2017 | not_relevant | 0 | 0 | The study evaluates PK parameters in a specific ethnic group (Chinese) but does not report specific gene variants, genotypes, or phenotypes influencing these parameters. |
 | popPK | Meyer_2017 | irrelevant | 0 | 0 | This is a real-world weight-change (metabolic outcomes) study with no pharmacokinetic parameters for lurasidone. |
-| popPK | Sözer_2025 | irrelevant | 3 | 4 | Bioequivalence study reporting only NCA exposure metrics (AUC, Cmax, tmax, t½) with no clearance, volume, or compartmental/population-PK model parameters for lurasidone. |
-| popPK | Yu_2025 | irrelevant | 3 | 2 | Bioequivalence study with only NCA exposure metrics (Cmax, AUC) and ratios; no clearance, volume, or compartmental/population-PK parameters, and no numeric PK values appear in the evidence. |
-| popPK | Zhuang_2023 | irrelevant | 0 | 0 | In-vitro electrophysiology study of Kv channel blockade in rabbit coronary smooth muscle cells; no PK disposition parameters for lurasidone. |
+| popPK | Sözer_2025 | irrelevant | 3 | 8 | The study reports only non-compartmental AUC and Cmax values for a bioequivalence comparison, lacking the clearance, volume, or compartmental model parameters required for population-pharmacokinetic extraction. |
+| PGx | Sözer_2025 | not_relevant | 0 | 0 | The paper reports a bioequivalence study comparing two formulations in healthy subjects and does not investigate the effect of gene variants, genotypes, or phenotypes on lurasidone pharmacokinetics or pharmacodynamics. |
+| popPK | Yu_2025 | irrelevant | 2 | 0 | The study is a bioequivalence trial that reports ratio metrics and qualitative trends rather than specific quantitative disposition parameters (CL, V, Ka) for lurasidone, and no numeric values are present in the evidence. |
+| PGx | Yu_2025 | not_relevant | 0 | 0 | The study evaluates bioequivalence of two formulations and the effect of food, containing no genetic or pharmacogenomic data. |
+| popPK | Zhuang_2023 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of lurasidone's effect on voltage-gated potassium channels in rabbit coronary arterial smooth muscle cells and reports no pharmacokinetic parameters. |
+| PGx | Zhuang_2023 | not_relevant | 0 | 0 | The paper investigates the electrophysiological mechanism of lurasidone on potassium channels and does not report any pharmacogenomic interactions or changes in PK/PD parameters based on gene variants. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blurasidone%5D&body=Drug%3A%20lurasidone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lurasidone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 15:57 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 02:29 UTC</sub>

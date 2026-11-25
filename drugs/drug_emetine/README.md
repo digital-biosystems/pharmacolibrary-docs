@@ -22,11 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Hudson_2016_TNF](drugs/drug_emetine/pd_Hudson_2016_TNF.md) | PEDF-induced TNF release from macrophages ← emetine · inhibition effect | — | Hudson LK et al., Emetine Di-HCl Attenuates Type 1 Diabet…, Molecular medicine (Cambrid… (2016) | [10.2119/molmed.2016.00082](https://doi.org/10.2119/molmed.2016.00082) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Hudson_2016_TNF](drugs/drug_emetine/pd_Hudson_2016_TNF.md) | TNF ← emetine · direct Emax (saturable) effect | — | Hudson LK et al., Emetine Di-HCl Attenuates Type 1 Diabet…, Molecular medicine (Cambrid… (2016) | [10.2119/molmed.2016.00082](https://doi.org/10.2119/molmed.2016.00082) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mukhopadhyay_2016_HCMV_luciferase](drugs/drug_emetine/pd_Mukhopadhyay_2016_HCMV_luciferase.md) | HCMV replication (pp28-luciferase activity) ← emetine · direct sigmoid Emax (Hill) effect | — | Mukhopadhyay R et al., Efficacy and Mechanism of Action of Low…, PLoS pathogens (2016) | [10.1371/journal.ppat.1005717](https://doi.org/10.1371/journal.ppat.1005717) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Sato_2020_CTA](drugs/drug_emetine/pd_Sato_2020_CTA.md) | conditioned taste aversion (saccharin preference) ← emetine · direct sigmoid Emax (Hill) effect | — | Sato T et al., Involvement of the area postrema and th…, Journal of oral biosciences (2020) | [10.1016/j.job.2020.10.001](https://doi.org/10.1016/j.job.2020.10.001) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Yang_2020_EC50_FIPV](drugs/drug_emetine/pd_Yang_2020_EC50_FIPV.md) | Viral activity inhibition (EC50, FIPV cytopathic effect) ← emetine · inhibition effect | — | Yang CW et al., Repurposing old drugs as antiviral agen…, Biomedical journal (2020) | [10.1016/j.bj.2020.05.003](https://doi.org/10.1016/j.bj.2020.05.003) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Yang_2020_EC50_HCoV_OC43](drugs/drug_emetine/pd_Yang_2020_EC50_HCoV_OC43.md) | Nucleocapsid protein expression inhibition (EC50, HCoV-OC43 IFA) ← emetine · inhibition effect | — | Yang CW et al., Repurposing old drugs as antiviral agen…, Biomedical journal (2020) | [10.1016/j.bj.2020.05.003](https://doi.org/10.1016/j.bj.2020.05.003) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 05:34 | 1:47 | 0/0/0 | 5/0/0 | 0/0/0 | 162,458/2,713 | ollama / glm-5.3-flash | 9 | 1/8 | 9/0 | 0 |
+| 2026-11-23 21:47 | 0:04 | 0/0/0 | 2/0/0 | 0/0/0 | 3,290/167 | einfracz / qwen3.8-27b | 9 | 1/8 | 9/0 | 0 |
 
 ## Coverage
 
@@ -55,24 +52,39 @@ _not available_
 |---|---|---|---|---|---|
 | popPK | Bleasel_2020 | irrelevant | 2 | 1 | A narrative review/rationale paper on emetine as antiviral; it cites only plasma/tissue concentrations from prior studies, with no clearance, volume, half-life, or population-PK model parameters for emetine reported. |
 | popPK | Bleasel_2020_2 | irrelevant | 1 | 0 | This is a narrative review of emetine's antiviral/anti-inflammatory use and toxicity with no PK parameters (no CL, V, ka, or compartmental model values); the "long biological half-life" is mentioned without numbers. |
-| popPK | Chen_1982 | irrelevant | 0 | 0 | Emetine is only used as a selective agent in a mutagenicity assay; no pharmacokinetic parameters are reported. |
-| popPK | Gupta_1980 | irrelevant | 0 | 0 | In vitro CHO cell mutagenesis study; emetine is only a selection agent, no PK parameters. |
+| popPK | Chen_1982 | irrelevant | 0 | 0 | The study is an in-vitro mutagenicity assay where emetine is used as a selection agent for resistant mutants, not a pharmacokinetic study of emetine disposition. |
+| PGx | Chen_1982 | not_relevant | 0 | 0 | The paper studies the mutagenic properties of shale oil byproducts using emetine as a genetic selection marker in cell lines, not a pharmacogenomic effect of a gene variant on emetine's PK or PD. |
+| popPK | Gupta_1980 | irrelevant | 0 | 0 | The paper is a genetic mutagenesis study in cell culture where emetine is used as a selectable agent, not a PK study. |
+| PGx | Gupta_1980 | not_relevant | 0 | 0 | The paper uses emetine as a selection agent for studying mutagenesis in Chinese hamster ovary cells, not as a drug in humans with pharmacogenomic effects on PK or PD. |
 | popPK | Hu_2023 | irrelevant | 0 | 0 | This is an in vitro antiviral screening study; emetine is only mentioned as a screening hit with no PK parameters. |
-| popPK | Hudson_2016 | irrelevant | 0 | 0 | This is a pharmacology/efficacy study of emetine in murine diabetes with no PK parameters (no CL, V, ka, half-life, or compartmental model) reported. |
-| popPK | Leatherman_1993 | irrelevant | 0 | 0 | In-vitro cell-culture mechanistic study of emetine's effect on toxin-cell association; no PK disposition parameters reported. |
-| popPK | Lund_1996 | irrelevant | 0 | 0 | In-vitro cell biology study using emetine only as a protein synthesis inhibitor; no pharmacokinetic parameters reported. |
+| popPK | Hudson_2016 | irrelevant | 0 | 0 | This is a mechanistic and therapeutic study on emetine's effect on macrophage activation and diabetes in mice, not a pharmacokinetic study reporting disposition parameters (CL, V, t1/2, etc.). |
+| PGx | Hudson_2016 | not_relevant | 0 | 0 | The study investigates the therapeutic efficacy of emetine in diabetic mice and does not report any pharmacogenomic effects (gene variants altering PK/PD). |
+| popPK | Leatherman_1993 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study examining the effect of emetine on toxin binding in cells, not a pharmacokinetic study with disposition parameters. |
+| PGx | Leatherman_1993 | not_relevant | 0 | 0 | The paper discusses the cellular mechanism of action of emetine on protein synthesis and toxin association in the presence of T-2 toxin, with no mention of gene variants, genotypes, or pharmacogenomics. |
+| popPK | Lund_1996 | irrelevant | 0 | 0 | The study is an in-vitro molecular biology experiment using emetine as a protein synthesis inhibitor, not a pharmacokinetic study of emetine's disposition. |
+| PGx | Lund_1996 | not_relevant | 0 | 0 | The paper studies the effect of emetine as an inhibitor of protein synthesis on the expression of urokinase-type plasminogen activator, its receptor, and PAI-1 in cancer cell lines; it does not report a pharmacogenomic effect of a gene variant on the PK or PD of emetine. |
 | popPK | Mukhopadhyay_2016 | relevant | 4 | 2 | PK study of emetine in BALB/c mice (0.1 mg/kg oral) with half-life 35 h reported, but detailed disposition parameters (CL, V, tissue exposures) are in S2 Table/Fig 3A not provided. |
-| popPK | Paranka_1994 | irrelevant | 0 | 0 | Emetine is only used as a cardiotoxin comparator in an in vitro rat myocyte study; no PK parameters reported. |
-| popPK | Pesando_1995 | irrelevant | 0 | 0 | Emetine is only used as a comparator protein-synthesis inhibitor in an in vitro sea urchin embryo cell-cycle study; no PK parameters are reported. |
-| popPK | Platzer_1985 | irrelevant | 0 | 0 | Emetine is only used as a protein synthesis inhibitor in in-vitro cell cultures; no PK parameters are reported. |
-| popPK | Ren_2022 | irrelevant | 0 | 0 | This is an antiviral drug-design/SPR study of emetine's SARS-CoV-2 target binding, with no pharmacokinetic parameters reported. |
+| popPK | Paranka_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of doxorubicin cardiotoxicity in rat heart cells, using emetine only as a positive control for cardiotoxicity without reporting any quantitative pharmacokinetic parameters. |
+| PGx | Paranka_1994 | not_relevant | 0 | 0 | The paper investigates the mechanism of doxorubicin cardiotoxicity in rat cells and mentions emetine only as a comparator for GSH depletion, without reporting any pharmacogenomic effects on emetine's PK or PD. |
+| popPK | Pesando_1995 | irrelevant | 0 | 0 | The study is a mechanistic investigation in sea urchin embryos using emetine solely as a known comparator/reference agent to the subject drug nordidemnin, with no pharmacokinetic parameters reported. |
+| PGx | Pesando_1995 | not_relevant | 0 | 0 | The paper discusses nordidemnin and emetine in sea urchin embryos with no human pharmacogenomic context. |
+| popPK | Platzer_1985 | irrelevant | 0 | 0 | The paper is an immunology study where emetine is used only as an in-vitro protein synthesis inhibitor, not as the subject of pharmacokinetic analysis. |
+| PGx | Platzer_1985 | not_relevant | 0 | 0 | The paper studies the immunological effects of OKT3 and uses emetine only as a general protein synthesis inhibitor in an experimental assay, not as a therapeutic drug with a pharmacogenomic effect. |
+| popPK | Ren_2022 | irrelevant | 0 | 0 | The paper focuses on in-vitro antiviral mechanisms and binding affinities of emetine against SARS-CoV-2, reporting no pharmacokinetic parameters like clearance or volume of distribution. |
+| PGx | Ren_2022 | not_relevant | 0 | 0 | The paper describes the antiviral mechanism of emetine against SARS-CoV-2 targets but does not contain pharmacogenomic data. |
 | popPK | Rosenkranz_2008 | irrelevant | 0 | 0 | In-vitro cytotoxicity/apoptosis study of alkaloids including emetine in trypanosomes and Jurkat cells; no PK disposition parameters reported. |
-| popPK | Sato_2020 | irrelevant | 0 | 0 | Pharmacodynamic/emetogenic study in rats with no PK disposition parameters for emetine. |
-| popPK | Stanton_1985 | irrelevant | 0 | 0 | Emetine is only used as a protein synthesis inhibitor in hippocampal slice experiments; no PK parameters reported. |
-| popPK | Sweet_2006 | irrelevant | 0 | 0 | Emetine is only used as a protein synthesis inhibitor tool compound in rat islet respiration experiments; no PK parameters reported. |
-| popPK | Tang_2020 | irrelevant | 0 | 0 | Antiviral efficacy study in mice with no PK disposition parameters (CL, V, half-life) reported for emetine. |
-| popPK | Valipour_2022 | irrelevant | 1 | 0 | This is a review of emetine's antiviral activity; it mentions in vivo PK only qualitatively (lung concentrations, 12 h retention) with no quantitative disposition parameters (CL, V, half-life with volume, or PK model) reported. |
-| popPK | Yang_2020 | irrelevant | 0 | 0 | In-vitro antiviral drug screening reporting only EC50/CC50 values for emetine, with no pharmacokinetic disposition parameters. |
+| popPK | Sato_2020 | irrelevant | 0 | 0 | The study is a neuropharmacological investigation of emetogenic mechanisms (CFA and c-Fos expression) in rats, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Sato_2020 | not_relevant | 0 | 0 | The study investigates the neuroanatomical mechanisms of emetogenicity in rats and contains no data on gene variants, genotypes, or phenotypes. |
+| popPK | Stanton_1985 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic study of hippocampal slices where emetine is used as a protein synthesis inhibitor tool, not as the subject drug for pharmacokinetic characterization. |
+| PGx | Stanton_1985 | not_relevant | 0 | 0 | The paper uses emetine as a protein synthesis inhibitor to study norepinephrine-induced potentiation, reporting no pharmacogenomic effects on emetine's own PK/PD. |
+| popPK | Sweet_2006 | irrelevant | 0 | 0 | The study is a mechanistic investigation of pancreatic islet metabolism in rats where emetine is used merely as a protein synthesis inhibitor (comparator agent), not as the subject of a pharmacokinetic study. |
+| PGx | Sweet_2006 | not_relevant | 0 | 0 | The study investigates mitochondrial function in pancreatic islets and uses emetine only as a protein synthesis inhibitor, containing no pharmacogenomic data or specific PK/PD analysis of emetine. |
+| popPK | Tang_2020 | irrelevant | 0 | 0 | The study focuses on the antiviral efficacy and mechanism of emetine in a mouse model, reporting no pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
+| PGx | Tang_2020 | not_relevant | 0 | 0 | The paper reports the antiviral efficacy and mechanism of action of emetine in mice, but does not report a pharmacogenomic effect on a PK or PD parameter. |
+| popPK | Valipour_2022 | irrelevant | 1 | 0 | The paper is a review focused on the antiviral efficacy and mechanisms of emetine against SARS-CoV-2, containing in-vitro IC50/EC50 values rather than quantitative pharmacokinetic disposition parameters (CL, V, Q, ka) or compartmental models. |
+| PGx | Valipour_2022 | not_relevant | 0 | 0 | The paper is a review on the antiviral mechanisms and therapeutic potential of emetine for COVID-19, and it does not report any pharmacogenomic effects of gene variants on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Yang_2020 | irrelevant | 0 | 0 | The study is an in vitro antiviral screening reporting EC50 values, not a pharmacokinetic study with disposition parameters for emetine. |
+| PGx | Yang_2020 | not_relevant | 0 | 0 | The paper reports antiviral activity (EC50) of emetine in cell cultures against coronaviruses and contains no information on pharmacogenomics, genetic variants, or individual differences in drug PK/PD. |
 
 
 </details>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Warfarin clearance of 0.08 ml h−1 g−1 is mass-normalised but the model expects standard clearance dimensions, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml h−1 g−1 ([length] ** 3 / [time] / [mass]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Cao2007_indirect_response_model" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Cao YG, Liu XQ, Chen YC, Hao K, Wang GJ. Warfarin maintenance dose adjustment wi
 
 ### Reviewer guidance
 
-**Warfarin clearance of 0.08 ml h−1 g−1 is mass-normalised but the model expects standard clearance dimensions, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml h−1 g−1 ([length] ** 3 / [time] / [mass]) vs [length] ** 3 / [time].**
 
-The clearance parameter value of 0.08 is expressed in ml h−1 g−1, which includes a mass denominator. This unit dimension conflicts with the model's required dimension of [length]³ / [time] for total clearance. The record was refused because the parameter's unit dimension does not match the structural definition. Extracted — warfarin: AUC∞ 1.06 µg h ml−1, Cmax 3.7 µg ml−1, MRT 14 h, CL 0.08 ml h−1 g−1, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
+Extracted — warfarin: AUC∞ 1.06 µg h ml−1, Cmax 3.7 µg ml−1, MRT 14 h, CL 0.08 ml h−1 g−1, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has warfarin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

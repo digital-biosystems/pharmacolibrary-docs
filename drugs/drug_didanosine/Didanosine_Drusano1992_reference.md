@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;didanosine&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/&quot;},{&quot;label&quot;:&quot;Drusano_1992 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Drusano1992_reference&quot;,&quot;label&quot;:&quot;Drusano_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Drusano1992_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Didanosine_Zhou1999_reference&quot;,&quot;label&quot;:&quot;Zhou_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Zhou1999_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Drusano1992_reference&quot;,&quot;label&quot;:&quot;Drusano_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Drusano1992_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Didanosine_Pai1992_reference&quot;,&quot;label&quot;:&quot;Pai_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Pai1992_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Zhou1999_reference&quot;,&quot;label&quot;:&quot;Zhou_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Zhou1999_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # didanosine — `Didanosine_Drusano1992_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Didanosine’s apparent total body clearance of 12.0 L/hr is disputed, leaving the record held for review.
-
-<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Drusano1992_reference" status="needs_review" stale="false" population="HIV-infected patients" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Drusano1992_reference" status="simulated" stale="false" population="HIV-infected patients" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Drusano GL, Yuen GJ, Morse G, Cooley TP, Seidlin M, Lambert JS et al. Impact of bioavailability on determination of the maximal tolerated dose of 2',3'-dideoxyinosine in phase I trials. Antimicrobial agents and chemotherapy 36(6):1280–1283 (1992).
@@ -23,27 +21,23 @@ Drusano GL, Yuen GJ, Morse G, Cooley TP, Seidlin M, Lambert JS et al. Impact of 
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted.  
+**Parameters:** 5 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference.svg" alt="Didanosine_Drusano1992_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| Clearance of the drug from plasma | CLnorm | 47.7 | L/h |
-| terminal half-life | t1/2z | 1.4 | h |
-| volume of distribution in the central compartment | V | 18.8 | liters/70 kg |
-| absorption half-life | t1/2ka | 0.52 | h |
-| Bioavailability with once-daily administration | Fab | 27 | % |
-| apparent total body clearance | CL | 12.0 | L/hr |
-| ka (prior, Horton et al.) | kabs | 2.38 | 1/h |
+| Clearance of the drug from plasma | CL | 47.7 | L/h |
+| The terminal half-life | t1/2z | 1.4 | h |
+| The volume of distribution in the central compartment | V | 18.8 | liters/70 kg |
+| an absorption half-life | t1/2ka | 0.52 | h |
+| Bioavailability with once-daily administration | Fab | 27 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.769). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,25 +47,23 @@ Drusano GL, Yuen GJ, Morse G, Cooley TP, Seidlin M, Lambert JS et al. Impact of 
 
 ### Reviewer guidance
 
-**Didanosine’s apparent total body clearance of 12.0 L/hr is disputed, leaving the record held for review.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-The second reader supplied no value for apparent total body clearance (12.0 L/hr) or the absorption rate constant (2.38 1/h), and disagreed on the classification of the 47.7 L/h normalized clearance; agreement was 0.769. The record came from the abstract alone, so summary statistics stood in for a fitted model. The absorption lag time was defaulted rather than estimated. Extracted — didanosine: CLnorm 47.7 L/h, t1/2z 1.4 h, V 18.8 liters/70 kg, t1/2ka 0.52 h, Fab 27 %, CL 12 L/hr, kabs 2.38 1/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent total body clearance: this record has 12.0, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption half-life: this record has none, the second reading 0.52; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Clearance of the drug from plasma | `Q354` · CLnorm | 47.7 | L/h | 1.325e-05 | m3/s | L/h | llm_corrected (0.6) | Drusano_1992:abstract |
-| terminal half-life | `Q57` · t1/2z | 1.4 | h | 5040 | s | h | llm (0.6) | Drusano_1992:abstract |
-| volume of distribution in the central compartment | `Q61` · V | 18.8 | liters/70 kg | 0.0188 | m3 | l/70kg | boundary_compartment (0.9) | Drusano_1992:abstract |
-| absorption half-life | `Q95` · t1/2ka | 0.52 | h | 1872 | s | h | llm_corrected (0.6) | Drusano_1992:abstract |
-| Bioavailability with once-daily administration | `Q40` · Fab | 27 | % |  |  |  | llm_confirmed (0.6) | Drusano_1992:abstract |
-| apparent total body clearance | `Q22` · CL | 12.0 | L/hr | 3.333e-06 | m3/s | L/h | review_gapfill (0.7) | Greenberg_2022:review |
-| ka (prior, Horton et al.) | `Q49` · kabs | 2.38 | 1/h | 0.0006611 | 1/s | 1/h | review_gapfill (0.7) | Innes_2018:review |
+| Clearance of the drug from plasma | `Q22` · CL | 47.7 | L/h | 1.325e-05 | m3/s | L/h | llm_confirmed (0.6) | Drusano_1992:abstract |
+| The terminal half-life | `Q57` · t1/2z | 1.4 | h | 5040 | s | h | half_life_rule (0.95) | Drusano_1992:abstract |
+| The volume of distribution in the central compartment | `Q61` · V | 18.8 | liters/70 kg | 0.0188 | m3 | l/70kg | boundary_compartment (0.9) | Drusano_1992:abstract |
+| an absorption half-life | `Q95` · t1/2ka | 0.52 | h | 1872 | s | h | half_life_rule (0.95) | Drusano_1992:abstract |
+| Bioavailability with once-daily administration | `Q40` · Fab | 27 |  |  |  |  | llm_confirmed (0.6) | Drusano_1992:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -82,41 +74,33 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 **Deviations:**
 - `defaulted_parameters`: ['Tlag']
+- `ka_from_half_life`: ka = ln2 / t1/2ka = ln2 / 1872 s = 0.0003703/s (absorption half-life 0.52 h reported, ka not)
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'liters/h/70 kg of body weight' (CLnorm)
-- implicit units: 'Clearance of the drug from plasma' → L/h (from the popPK convention: 'No unit stated in text or table footnotes. Total clearance normalized to a 70 kg reference standard body size is convent')
+- unit_dimension_unknown: 'liters/h/70 kg of body weight' (CL)
+- implicit units: 'Clearance of the drug from plasma' → L/h (from the popPK convention: "The parameter is identified as 'Clearance' (CL) with a value of 47.7. The provided text and table captions contain no ex")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=didanosine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'volume of distribution in the central compartment' is the general volume)
-- status held at "Needs review" — not promoted
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'The volume of distribution in the central compartment' is the general volume)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Greenberg_2022's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Innes_2018's review values (primary lacked it)
-- derived CL=9.30798 L/h from ln2/t½z × V = CL (Q57 × Q61); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Drusano_1992_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.769 (10/13 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.818 (9/11 fields) | 2 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[apparent total body clearance]` | 12.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance of the drug from plasma].parameter_id` | Q354 | Q22 | mismatch |
-| `gpt-oss-120b` | `parameters[ka]` | 2.38 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption half-life]` |  | 0.52 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[an absorption half-life]` | 0.52 |  | only_one_extracted |
 
 </details>
 
@@ -133,15 +117,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Greenberg_2022:review'] |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Drusano_1992:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Innes_2018:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Drusano_1992:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Drusano_1992:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Drusano_1992:abstract'] |
 | C5_dimension_Q95 | pass | [time] |  | ['Drusano_1992:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 12 | ['Greenberg_2022:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 47.7 | ['Drusano_1992:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 12 L/h | ['Greenberg_2022:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 47.7 L/h | ['Drusano_1992:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 18.8 L | ['Drusano_1992:abstract'] |
 
 **Reviewer per-scenario checks:**
@@ -150,12 +132,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
 | T3_output_variable | pass | C_central (measured=didanosine) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.769, 0 of 1 reader(s) agree | 0.769 | cross-check disputed by a second reader: verdict disputed, agreement 0.769, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.818 (9 of 11 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -171,12 +152,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference_modelica.zip" download>Didanosine_Drusano1992_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference_fmi.zip" download>Didanosine_Drusano1992_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference_matlab.zip" download>Didanosine_Drusano1992_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference_matlab_simbio.zip" download>Didanosine_Drusano1992_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference_sbml.zip" download>Didanosine_Drusano1992_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference_cellml.zip" download>Didanosine_Drusano1992_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference_modelica.zip" download>Didanosine_Drusano1992_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference_fmi.zip" download>Didanosine_Drusano1992_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference_matlab.zip" download>Didanosine_Drusano1992_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference_matlab_simbio.zip" download>Didanosine_Drusano1992_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference_sbml.zip" download>Didanosine_Drusano1992_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference_cellml.zip" download>Didanosine_Drusano1992_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
@@ -194,9 +175,9 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 0.0004 | kg |
-| input | model | `Cl` | 2.586e-06 | m3/s |
+| input | model | `Cl` | 1.325e-05 | m3/s |
 | input | model | `VdPerKg` | 0.0002686 | m3/kg |
-| input | model | `ka` | 0.0006611 | 1/s |
+| input | model | `ka` | 0.0003703 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -225,7 +206,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 400 mg, single dose, first-order absorption (ka 2.38 /h, F 27). _The paper's dose was not captured; the default is the WHO ATC DDD 400 mg oral (J05AF02) (defined daily dose)._
+**Administration: oral** — 400 mg, single dose, first-order absorption (ka 1.33 /h, F 27). _The paper's dose was not captured; the default is the WHO ATC DDD 400 mg oral (J05AF02) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_didanosine/Didanosine_Drusano1992_reference/Didanosine_Drusano1992_reference_sim_controls.json"></dbs-fmusim>
 
@@ -235,4 +216,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdidanosine%5D%20Didanosine_Drusano1992_reference&body=Drug%3A%20didanosine%0ARecord%3A%20Didanosine_Drusano1992_reference%0APaper%3A%20Drusano_1992%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_didanosine/Didanosine_Drusano1992_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:10 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:49 UTC</sub>

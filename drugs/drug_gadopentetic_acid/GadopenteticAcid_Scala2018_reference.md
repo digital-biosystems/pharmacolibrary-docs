@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The intercompartmental clearance of gadopentetic acid is 0.335 L/h, failing the physiological plausibility check.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="gadopentetic acid" model-id="GadopenteticAcid_Scala2018_reference" status="rejected" stale="false" population="" measured-compound="gadopentetic_acid" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,13 +46,13 @@ Scala M, Koob M, de Buttet S, Bourrinet P, Felices M, Jurkiewicz E. A Pharmacoki
 
 ### Reviewer guidance
 
-**The intercompartmental clearance of gadopentetic acid is 0.335 L/h, failing the physiological plausibility check.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a two-compartment structure for gadopentetic acid with a central volume of 0.161 L and total clearance of 2.51 L/h. The intercompartmental clearance value of 0.335 L/h was identified as outside the acceptable physiological range, suggesting a magnitude error. A second reader disagreed on the specific numerical values assigned to the parameters during their review. Extracted — gadopentetic acid: CL 2.51 L/h, V1 0.161 L, Q 0.335 L/h.
+Extracted — gadopentetic acid: CL 2.51 L/h, V1 0.161 L, Q 0.335 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q352: this record has none, the second reading 0.2; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,4 +134,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgadopentetic_acid%5D%20GadopenteticAcid_Scala2018_reference&body=Drug%3A%20gadopentetic_acid%0ARecord%3A%20GadopenteticAcid_Scala2018_reference%0APaper%3A%20Scala_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gadopentetic_acid/GadopenteticAcid_Scala2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:59 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 12:31 UTC</sub>

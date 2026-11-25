@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The negative absorption rate constant of -2.94 1/h for fluticasone furoate is physiologically impossible.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="fluticasone furoate" model-id="FluticasoneFuroate_Mehta2018_combined_model_ln_estimates" status="rejected" stale="false" population="patients with symptomatic COPD" measured-compound="fluticasone furoate" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Mehta R, Pefani E, Beerahee M, Brealey N, Barnacle H, Birk R et al. Population P
 
 ### Reviewer guidance
 
-**The negative absorption rate constant of -2.94 1/h for fluticasone furoate is physiologically impossible.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists the absorption rate constant (kabs) as -2.94 1/h, a value that violates the fundamental requirement for positive rate constants. This non-physical value indicates a significant data extraction or unit conversion error rather than a valid pharmacokinetic estimate. Additionally, the model parameters describe a three-compartment system, which contrasts with the single-compartment structure label in the record. Extracted — fluticasone furoate: CL/F 5.43 L/h, V2/F 0.31 L, Q/F 5.74 L/h, V3/F 4.66 L, kabs -2.94 1/h.
+Extracted — fluticasone furoate: CL/F 5.43 L/h, V2/F 0.31 L, Q/F 5.74 L/h, V3/F 4.66 L, kabs -2.94 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluticasone furoate/umeclidinium/vilanterol, the second reading fluticasone furoate, umeclidinium, vilanterol. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

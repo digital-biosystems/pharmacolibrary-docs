@@ -21,13 +21,9 @@ Dabrafenib is a B-Raf inhibitor used to treat melanoma, skin cancer, and non-sma
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | dabrafenib | parent | 519.562 | C23H20F3N5O2S2 | DrugBank | [44462760](https://pubchem.ncbi.nlm.nih.gov/compound/44462760) | Balakirouchenane_2020, Isberner_2022, Ouellet_2014 |
-| hydroxy-dabrafenib (dabrafenib, hydroxy-dabrafenib, and trametinib) | metabolite | 535.559 | C23H20F3N5O3S2 | PubChem | [57989740](https://pubchem.ncbi.nlm.nih.gov/compound/57989740) | Balakirouchenane_2020, Isberner_2022 |
-
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Isberner_2022 · CL/F</text><circle cx="235.6" cy="30.0" r="4" fill="#ef6c00"><title>Isberner_2022 · CL/F: 13.5 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Ouellet_2014 · CL/F</text><circle cx="377.4" cy="46.0" r="4" fill="#ef6c00"><title>Ouellet_2014 · CL/F: 34.3 L/h</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+| carboxy-dabrafenib | metabolite | — (mass units only) | — | — | — | — |
+| desmethyl-dabrafenib | metabolite | 505.533 | C22H18F3N5O2S2 | PubChem | [58345847](https://pubchem.ncbi.nlm.nih.gov/compound/58345847) | Ouellet_2014 |
+| hydroxy-dabrafenib (dabrafenib, hydroxy-dabrafenib, and trametinib) | metabolite | 535.559 | C23H20F3N5O3S2 | PubChem | [57989740](https://pubchem.ncbi.nlm.nih.gov/compound/57989740) | Balakirouchenane_2020, Isberner_2022, Ouellet_2014 |
 
 ## popPK records
 
@@ -37,15 +33,12 @@ Dabrafenib is a B-Raf inhibitor used to treat melanoma, skin cancer, and non-sma
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ dlt](drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_dlt.md) | — | parent + metabolite (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ no_dlt](drugs/drug_dabrafenib/Dabrafenib_Balakirouchenane2020_no_dlt.md) | — | parent + metabolite (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub> | [Isberner_2022_reference](drugs/drug_dabrafenib/Dabrafenib_Isberner2022_reference.md) | held back | 1-compartment, oral | 3 (+3 cov.) | Isberner N et al., Monitoring of Dabrafenib and Trametinib…, Cancers (2022) | [10.3390/cancers14194566](https://doi.org/10.3390/cancers14194566) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Ouellet_2014_reference](drugs/drug_dabrafenib/Dabrafenib_Ouellet2014_reference.md) | — | 1-compartment (no model) | 4 | Ouellet D et al., Population pharmacokinetics of dabrafen…, Journal of clinical pharmac… (2014) | [10.1002/jcph.263](https://doi.org/10.1002/jcph.263) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Ouellet_2014_reference](drugs/drug_dabrafenib/Dabrafenib_Ouellet2014_reference.md) | — | general linear (no model) | 7 | Ouellet D et al., Population pharmacokinetics of dabrafen…, Journal of clinical pharmac… (2014) | [10.1002/jcph.263](https://doi.org/10.1002/jcph.263) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span> | [Karhana_2026_number_of_blood_vessels](drugs/drug_dabrafenib/pd_Karhana_2026_number_of_blood_vessels.md) | number of blood vessels ← Dabrafenib · stimulation effect | — | Karhana S et al., Chorioallantoic membrane assay demonstr…, Growth factors (Chur, Switz… (2026) | [10.1080/08977194.2026.2632046](https://doi.org/10.1080/08977194.2026.2632046) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Goldwirt_2021_2_DOR](drugs/drug_dabrafenib/pd_Goldwirt_2021_2_DOR.md) | duration of response ← dabrafenib · time-to-event model | — | Goldwirt L et al., Dabrafenib and trametinib exposure-effi…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-021-04299-x](https://doi.org/10.1007/s00280-021-04299-x) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Goldwirt_2021_2_PFS](drugs/drug_dabrafenib/pd_Goldwirt_2021_2_PFS.md) | progression-free survival ← dabrafenib · time-to-event model | — | Goldwirt L et al., Dabrafenib and trametinib exposure-effi…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-021-04299-x](https://doi.org/10.1007/s00280-021-04299-x) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Groenland_2023_OS](drugs/drug_dabrafenib/pd_Groenland_2023_OS.md) | overall survival ← dabrafenib · time-to-event model | — | Groenland SL et al., Exposure-response analyses of BRAF- and…, Cancer chemotherapy and pha… (2023) | [10.1007/s00280-023-04517-8](https://doi.org/10.1007/s00280-023-04517-8) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Groenland_2023_PFS](drugs/drug_dabrafenib/pd_Groenland_2023_PFS.md) | progression-free survival ← dabrafenib · time-to-event model | — | Groenland SL et al., Exposure-response analyses of BRAF- and…, Cancer chemotherapy and pha… (2023) | [10.1007/s00280-023-04517-8](https://doi.org/10.1007/s00280-023-04517-8) |
 
@@ -61,13 +54,13 @@ Dabrafenib is a B-Raf inhibitor used to treat melanoma, skin cancer, and non-sma
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:18 | 4:59 | 3/2/0 | 5/0/0 | 0/0/0 | 107,564/29,200 | openai / gpt-6-luna | 11 | 0/2 | 2/0 | 0 |
+| 2026-11-23 21:18 | 1:30 | 2/3/0 | 2/0/0 | 0/0/0 | 35,486/7,909 | einfracz / qwen3.8-27b | 11 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -76,23 +69,27 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ouellet_2014.pdf` | Ouellet D et al., Population pharmacokinetics of dabrafen…, Journal of clinical pharmac… (2014) | popPK | 10 | [10.1002/jcph.263](https://doi.org/10.1002/jcph.263) | [24408395](https://pubmed.ncbi.nlm.nih.gov/24408395) | Human population-PK model reports numeric dabrafenib clearance and other exposure parameters in the evidence. |
+| `Ouellet_2014.pdf` | Ouellet D et al., Population pharmacokinetics of dabrafen…, Journal of clinical pharmac… (2014) | popPK | 10 | [10.1002/jcph.263](https://doi.org/10.1002/jcph.263) | [24408395](https://pubmed.ncbi.nlm.nih.gov/24408395) | The paper reports population PK parameters including clearance (CL/F), steady-state concentrations, and model details for dabrafenib in humans. |
 
-<sub>queue written 2026-10-06 23:13 UTC</sub>
+<sub>queue written 2026-11-23 21:16 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Goldwirt_2021_2 | irrelevant | 3 | 0 | The study evaluates dabrafenib exposure using AUC and trough levels but reports no numeric disposition parameters in the evidence. |
+| popPK | Goldwirt_2021_2 | irrelevant | 2 | 1 | The study reports Bayesian-estimated exposure metrics (AUC, Ctrough) for PK-PD analysis but does not report standard compartmental disposition parameters (CL, V, Q, ka) or a population PK model. |
+| PGx | Goldwirt_2021_2 | not_relevant | 0 | 0 | The study analyzes the association between pharmacokinetic exposure and clinical outcomes in a population defined by a specific mutation, but it does not investigate how a genetic variant changes the PK or PD parameters themselves. |
 | popPK | Groenland_2023 | irrelevant | 1 | 0 | This human exposure-response study reports no quantitative dabrafenib disposition parameters or numeric dabrafenib exposure values. |
 | popPK | Janssen_2020 | irrelevant | 2 | 0 | Dabrafenib is simulated using existing population-PK models, but no dabrafenib disposition parameter values are provided. |
-| popPK | Karhana_2026 | irrelevant | 0 | 0 | This is an angiogenesis and cell-line study, not a pharmacokinetic study of dabrafenib. |
-| popPK | Kim_2019_2 | irrelevant | 1 | 0 | This is a review and provides no numeric dabrafenib disposition parameters in the evidence. |
+| popPK | Karhana_2026 | irrelevant | 0 | 0 | The study is an in-vitro/embryo mechanistic assay for angiogenesis and does not report pharmacokinetic parameters. |
+| PGx | Karhana_2026 | not_relevant | 0 | 0 | The study investigates the pro-angiogenic mechanism and safety of dabrafenib in a CAM assay and cell lines, but contains no pharmacogenomic data (gene variants) affecting PK or PD parameters. |
+| popPK | Kim_2019_2 | irrelevant | 1 | 0 | This is a review article summarizing clinical PK/PD, but it does not report specific quantitative disposition parameter values (CL, V, etc.) for dabrafenib in the provided text. |
+| PGx | Kim_2019_2 | not_relevant | 1 | 0 | The text is a general review abstract on melanoma treatment PK/PD and does not report specific gene variant effects on dabrafenib PK or PD. |
+| PGx | Ouellet_2014 | not_relevant | 0 | 0 | The study reports non-genetic covariates (dose, time, capsule shell, weight, sex) affecting PK, but does not report any pharmacogenomic effects or gene variants. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdabrafenib%5D&body=Drug%3A%20dabrafenib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dabrafenib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 23:14 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 21:16 UTC</sub>

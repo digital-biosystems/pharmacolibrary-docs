@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:00 | 0:08 | 0/0/0 | 1/0/0 | 0/0/0 | 16,982/559 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 21:03 | 0:04 | 0/0/0 | 1/0/0 | 0/0/0 | 4,285/179 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -47,28 +47,31 @@ _not available_
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Caldwell_2001.pdf` | Caldwell GW et al., Evaluation of the absorption, excretion…, Xenobiotica; the fate of fo… (2001) | popPK | 8 | [10.1080/00498250110091758](https://doi.org/10.1080/00498250110091758) | [11765144](https://pubmed.ncbi.nlm.nih.gov/11765144) | Human mass-balance study of [14C]etoperidone reporting terminal half-life (21.7 h) and apparent clearance (1.01 ml/min) directly in the abstract. |
 | `Malomvölgyi_1991.pdf` | Malomvölgyi B et al., Comparison of serotonin agonistic and a…, Acta physiologica Hungarica (1991) | pd | 4 |  | [1814162](https://www.ncbi.nlm.nih.gov/pubmed/1814162) | metadata signals extractable PD data (EC50) |
 | `Costa_2025.pdf` | Costa Alegre MD et al., Metabolism of m-CPP, trazodone, nefazod…, Drug metabolism reviews (2025) | pgx | 7 | [10.1080/03602532.2025.2465482](https://doi.org/10.1080/03602532.2025.2465482) | [39945551](https://www.ncbi.nlm.nih.gov/pubmed/39945551) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-06 23:00 UTC</sub>
+<sub>queue written 2026-11-23 21:03 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| PGx | Caldwell_2001 | not_relevant | 0 | 0 | The paper describes standard pharmacokinetics and metabolism in a small group of healthy men without analyzing any genetic variants or pharmacogenomic effects. |
 | popPK | Costa_2025 | irrelevant | 0 | 0 | no_text gate: only 90 chars of text extracted (&lt; 400) |
 | PD | Costa_2025 | not_relevant | 0 | 0 | The paper focuses on the metabolism and forensic aspects of etoperidone, not on pharmacodynamic or exposure-response relationships. |
-| PGx | Costa_2025 | not_relevant | 3 | 3 | Review of metabolism of m-CPP, trazodone, nefazodone, and etoperidone; no pharmacogenomic effect on PK/PD parameters reported. |
+| PGx | Costa_2025 | not_relevant | 0 | 0 | The paper focuses on forensic and clinical aspects of metabolism (identification of metabolites) rather than reporting pharmacogenomic effects of specific gene variants on PK/PD parameters. |
 | popPK | Girgin_2023 | irrelevant | 0 | 0 | The paper is an in silico and in vitro study on acetylcholinesterase inhibition and does not report any pharmacokinetic parameters for etoperidone. |
 | popPK | Malomvölgyi_1991 | irrelevant | 0 | 0 | no_text gate: only 163 chars of text extracted (&lt; 400) |
 | PD | Malomvölgyi_1991 | not_relevant | 0 | 0 | The paper studies Trelibet (EGYT-475) and its metabolite, not etoperidone. |
-| PGx | Wen_2008 | not_relevant | 2 | 3 | In vitro CYP2D6-mediated bioactivation of m-CPP metabolites; no genotype/phenotype effect on PK/PD parameters of etoperidone reported. |
-| PGx | Yan_2002 | not_relevant | 3 | 5 | In vitro CYP phenotyping identifies CYP3A4 as main etoperidone metabolizing enzyme; no gene variant/genotype effect on in vivo PK/PD parameters is reported. |
+| PGx | Malomvölgyi_1991 | not_relevant | 0 | 0 | The paper discusses the serotonin activities of EGYT-475 and its metabolite, not the pharmacogenomics of etoperidone. |
+| popPK | Wen_2008 | irrelevant | 0 | 0 | The study focuses on the mechanism of bioactivation and glutathione conjugation of trazodone and m-CPP in vitro, not the pharmacokinetic disposition parameters (CL, V, etc.) of etoperidone. |
+| PGx | Wen_2008 | not_relevant | 0 | 0 | The paper investigates the metabolism of trazodone and m-CPP via CYP2D6, mentioning etoperidone only as another drug with m-CPP as a metabolite, without reporting any pharmacogenomic effects on its PK/PD parameters. |
+| popPK | Yan_2002 | irrelevant | 1 | 1 | The study is an in vitro mechanistic investigation of metabolic enzymes and pathways, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Yan_2002 | not_relevant | 2 | 5 | The paper identifies CYP3A4 as the metabolic enzyme for etoperidone but does not report genotype-specific pharmacokinetic or pharmacodynamic changes (e.g., no CYP3A5*3 or CYP3A4 variant impact on AUC/Cmax). |
 
 
 </details>

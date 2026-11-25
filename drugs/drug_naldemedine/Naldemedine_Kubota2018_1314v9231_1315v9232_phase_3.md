@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Naldemedine clearance and absorption rate constant were left at library defaults instead of using fitted values.
+> No value for naldemedine's clearance and absorption rate constant; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="naldemedine" model-id="Naldemedine_Kubota2018_1314v9231_1315v9232_phase_3" status="model_quarantined" stale="false" population="healthy subjects, patients with chronic non-cancer pain and OIC, and cancer patients with OIC" measured-compound="naldemedine" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Kubota R, Fukumura K, Wajima T. Population Pharmacokinetics and Exposure-Respons
 
 ### Reviewer guidance
 
-**Naldemedine clearance and absorption rate constant were left at library defaults instead of using fitted values.**
+**No value for naldemedine's clearance and absorption rate constant; t6_deviations (+1 more).**
 
-The record lists clearance and absorption rate constant without extracted values, so a library placeholder was used, leading to quarantine. A second reader disputed the apparent parameterization and missed several values including absorption lag time and dose. The cross-check agreement was low at 0.385 with zero reader agreement on the verdict. Extracted — naldemedine: V1/F 87.5 L, Q/F 5.59 L/hr, V2/F 46.6 L, tlag 0.202 hr.
+The model was built, but naldemedine's clearance and absorption rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — naldemedine: V1/F 87.5 L, Q/F 5.59 L/hr, V2/F 46.6 L, tlag 0.202 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -179,7 +179,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.385, 0 of 1 reader(s) agree | 0.385 | cross-check disputed by a second reader: verdict disputed, agreement 0.385, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.385 (5 of 13 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.385 | cross-check contradicted by a second reader: verdict disputed; agreement 0.385 (5 of 13 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Fleroxacin Cmax was recorded in picograms per milliliter, conflicting with the required concentration dimension, while the record lacked distribution volume and clearance parameters.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit pg/mi ([mass] / [length]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Miller1992_vitreous_humor" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Miller MH, Madu A, Samathanam G, Rush D, Madu CN, Mathisson K et al. Fleroxacin 
 
 ### Reviewer guidance
 
-**Fleroxacin Cmax was recorded in picograms per milliliter, conflicting with the required concentration dimension, while the record lacked distribution volume and clearance parameters.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit pg/mi ([mass] / [length]) vs [mass] / [length] ** 3.**
 
-The Cmax value of 0.50 was extracted with the unit 'pg/mi', which represents a mass/length ratio rather than a mass/volume concentration, causing a structural mismatch. The second reader also disagreed on the parameter identifier for the half-life, assigning it a different code than the primary extraction. Furthermore, the model contains only exposure metrics like AUC and tmax, lacking the distribution volume and clearance necessary for a compartmental population pharmacokinetic model. Extracted — fleroxacin: t1/2α 3.88 h, AUC 3.36 mg h/liter, Cmax 0.5 pg/mi, tmax 1.09 h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent. Extracted — fleroxacin: t1/2α 3.88 h, AUC 3.36 mg h/liter, Cmax 0.5 pg/mi, tmax 1.09 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[tl,2|].parameter_id`: this record has Q59, the second reading Q57. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

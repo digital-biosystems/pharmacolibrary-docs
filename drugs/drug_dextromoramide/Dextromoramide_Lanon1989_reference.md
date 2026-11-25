@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Dextromoramide’s apparent final volume of distribution (0.58 l·kg⁻¹) was disputed, leaving this abstract-only record needing review.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="dextromoramide" model-id="Dextromoramide_Lanon1989_reference" status="needs_review" stale="false" population="surgical patients" measured-compound="dextromoramide" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Lançon JP, Pechinot A, Athis PD, Pechinot M, Pointaire P, Obadia JF et al. [Pha
 
 ### Reviewer guidance
 
-**Dextromoramide’s apparent final volume of distribution (0.58 l·kg⁻¹) was disputed, leaving this abstract-only record needing review.**
+**cross_check_disputed; x1_cross_check.**
 
-The record classifies the volume as mechanistic, while the second reader classified it as apparent and disagreed on its parameter identification. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The cross-reader verdict was disputed, with agreement of 0.75 and 0 of 1 reader agreeing. Extracted — dextromoramide: t1/2z 215 min, V 0.58 l.kg-1, CL 2 ml.kg-1.min-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dextromoramide: t1/2z 215 min, V 0.58 l.kg-1, CL 2 ml.kg-1.min-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

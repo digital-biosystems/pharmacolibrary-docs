@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Disagreement over whether abstract-reported values 0.92 and 0.275 are valid parameters prevents publication.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="nicardipine" model-id="Nicardipine_Modi1993_reference" status="needs_review" stale="false" population="healthy males" measured-compound="nicardipine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Modi NB, Veng-Pedersen P, Graham DJ, Dow RJ. Application of a system analysis ap
 
 ### Reviewer guidance
 
-**Disagreement over whether abstract-reported values 0.92 and 0.275 are valid parameters prevents publication.**
+**cross_check_disputed; x1_cross_check.**
 
-The record relies solely on the paper abstract, treating summary statistics as fitted model parameters. A second reader could not verify the dose compound or primary analyte. The reviewer also failed to extract the clearance and volume of distribution values present in the record. Extracted — nicardipine: CL 0.92 L/h/kg, V 0.275 L/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nicardipine: CL 0.92 L/h/kg, V 0.275 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nicardipine hydrochloride, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

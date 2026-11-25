@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because O-desmethyltramadol’s apparent metabolite volume Vm/F (76%) and apparent clearance CLm/F (16%) are dimensionally incompatible with those quantities.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q367 unit % (dimensionless) vs [length] ** 3; Q351 unit % (dimensionless) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Robertson2019_reference" status="rejected" stale="false" population="young and elderly healthy volunteers" measured-compound="O-desmethyltramadol" parameterization="apparent" topology="1C"></div>
 
@@ -42,7 +42,7 @@ Robertson SS, Mouksassi MS, Varin F. Population Pharmacokinetic/Pharmacodynamic 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +52,13 @@ Robertson SS, Mouksassi MS, Varin F. Population Pharmacokinetic/Pharmacodynamic 
 
 ### Reviewer guidance
 
-**The record was rejected because O-desmethyltramadol’s apparent metabolite volume Vm/F (76%) and apparent clearance CLm/F (16%) are dimensionally incompatible with those quantities.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q367 unit % (dimensionless) vs [length] ** 3; Q351 unit % (dimensionless) vs [length] ** 3 / [time].**
 
-Vm/F is a volume and CLm/F is a clearance, but both are reported in %, a dimensionless unit. Only the abstract was read, so reported summary statistics stood in for a fitted model. Extracted — tramadol: Vm/F 76 %, CLm/F 16 %; O-desmethyltramadol: AUC%ext 76 %, CL/F 28.3 L/h/kg, V/F 9.82 L/kg, kabs 0.65 1/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tramadol: Vm/F 76 %, CLm/F 16 %; O-desmethyltramadol: AUC%ext 76 %, CL/F 28.3 L/h/kg, V/F 9.82 L/kg, kabs 0.65 1/h.
 
-<sub>reviewed by gpt-6-luna</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -100,6 +102,33 @@ Vm/F is a volume and CLm/F is a clearance, but both are reported in %, a dimensi
 - no GROBID TEI available — transcribed from abstract in Robertson_2019_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+
+<details><summary>7 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[cl/fm]` | 16 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clz/f]` | 28.327 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution outside the central compartment]` | 76 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.65 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/fm]` | 76 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz/f]` | 9.824 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

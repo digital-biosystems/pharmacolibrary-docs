@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cefotiam’s reported AUC of 7.9% was refused because percent is dimensionless, while area under a concentration-time curve has concentration-times-time dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit % (dimensionless) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="cefotiam" model-id="Cefotiam_Momose1982_reference" status="rejected" stale="false" population="humans (likely ophthalmology patients requiring intraocular infection treatment or similar ocular procedures)" measured-compound="cefotiam" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Momose A, Kasahara A, Fugono T, Mizuta E. [The studies on distributions of cefsu
 
 ### Reviewer guidance
 
-**Cefotiam’s reported AUC of 7.9% was refused because percent is dimensionless, while area under a concentration-time curve has concentration-times-time dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit % (dimensionless) vs [mass] * [time] / [length] ** 3.**
 
-The record identifies the 7.9% parameter as area under the drug concentration-time curve, so its percent unit conflicts with its meaning; the separate AUC ratio of 25.6% is a ratio. Only the abstract was read, so reported summary statistics stood in for a fitted model. The second reader did not extract values for the reported AUC, AUC ratio, clearance of 63.2 L/h, or volume of distribution of 70.0 L. Extracted — cefotiam: AUC ratio 25.6 %, AUC 7.9 %, CL 63.2 L/h, V 70 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefotiam: AUC ratio 25.6 %, AUC 7.9 %, CL 63.2 L/h, V 70 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefotiam, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinorelbine&quot;,&quot;href&quot;:&quot;drugs/drug_vinorelbine/&quot;},{&quot;label&quot;:&quot;Gauvin_2002 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinorelbine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinorelbine/Vinorelbine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -16,13 +17,13 @@ Gauvin A, Pinguet F, Culine S, Astre C, Cupissol D, Bressolle F. Blood and plasm
 
 ## Population and dosing
 
-**Population:** elderly patients with advanced metastatic cancer · condition advanced metastatic cancer · age group elderly · n = 15.
+**Population:** elderly patients with advanced metastatic cancer · condition advanced metastatic cancer · age group elderly.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -30,13 +31,12 @@ Gauvin A, Pinguet F, Culine S, Astre C, Cupissol D, Bressolle F. Blood and plasm
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| total clearances from plasma | CL | 0.71 | l/h/kg |
-| total clearances from blood | CLb | 0.45 | l/h/kg |
+| Mean total clearances | CL | 0.71 | l/h/kg |
 | ratio AUC(B)/AUC(P) | AUC ratio | 1.7 | P |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +48,9 @@ Gauvin A, Pinguet F, Culine S, Astre C, Cupissol D, Bressolle F. Blood and plasm
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — vinorelbine: CL 0.71 l/h/kg, CLb 0.45 l/h/kg, AUC ratio 1.7 P.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — vinorelbine: CL 0.71 l/h/kg, AUC ratio 1.7 P.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of total clearances from blood: this record has 0.45, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc(b)/auc(p) ratio: this record has none, the second reading 1.7; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,8 +58,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| total clearances from plasma | `Q22` · CL | 0.71 | l/h/kg | 1.381e-05 | m3/s | l/(h·kg) | llm (0.6) | Gauvin_2002:abstract |
-| total clearances from blood | `Q23` · CLb | 0.45 | l/h/kg | 8.75e-06 | m3/s | l/(h·kg) | llm (0.6) | Gauvin_2002:abstract |
+| Mean total clearances | `Q22` · CL | 0.71 | l/h/kg | 1.381e-05 | m3/s | l/(h·kg) | llm (0.6) | Gauvin_2002:abstract, Gauvin_2002:abstract |
 | ratio AUC(B)/AUC(P) | `Q21` · AUC ratio | 1.7 | P |  |  | p | llm_corrected (0.6) | Gauvin_2002:abstract |
 
 <details class="legend">
@@ -72,16 +71,11 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 **Interpretation flags:**
 - unit_dimension_unknown: 'P' (AUC ratio)
 - dropped unlinked row (NIL): 'blood/plasma ratio' — extend the ontology if this is a real PK parameter (source ['Gauvin_2002:abstract'])
-- dropped value-less row: 'elimination half-life'
-- dropped value-less row: 'AUC'
-- dropped unlinked row (NIL): 'decrease in neutrophil count' — extend the ontology if this is a real PK parameter (source ['Gauvin_2002:abstract'])
-- dropped unlinked row (NIL): 'increase of platelet count' — extend the ontology if this is a real PK parameter (source ['Gauvin_2002:abstract'])
+- routed 'variability' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vinorelbine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Gauvin_2002_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
@@ -89,18 +83,21 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[total clearances from blood]` | 0.45 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[total clearances from plasma]` | 0.71 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc(b)/auc(p) ratio]` |  | 1.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[blood/plasma ratio]` |  | 1.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean total clearance from plasma]` |  | 0.71 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean total clearances]` | 0.71 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ratio auc(b)/auc]` | 1.7 |  | only_one_extracted |
 
 </details>
 
@@ -114,15 +111,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Gauvin_2002:abstract'] |
-| C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['Gauvin_2002:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.71 | ['Gauvin_2002:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Gauvin_2002:abstract', 'Gauvin_2002:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.71 | ['Gauvin_2002:abstract', 'Gauvin_2002:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 49.7 L/h | ['Gauvin_2002:abstract'] |
-| C9_phys_window_Q23 | pass | clearance within physiological range | 31.5 L/h | ['Gauvin_2002:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 49.7 L/h | ['Gauvin_2002:abstract', 'Gauvin_2002:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -156,4 +151,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinorelbine%5D%20Vinorelbine_Gauvin2002_reference&body=Drug%3A%20vinorelbine%0ARecord%3A%20Vinorelbine_Gauvin2002_reference%0APaper%3A%20Gauvin_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinorelbine/Vinorelbine_Gauvin2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 15:15 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:17 UTC</sub>

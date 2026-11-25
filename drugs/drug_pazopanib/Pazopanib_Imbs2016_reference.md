@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Imbs2016_reference" status="rejected" stale="false" population="patients in a phase I pazopanib-cisplatin combination study" measured-compound="pazopanib and ultrafilterable cisplatin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Imbs2016_reference" status="rejected" stale="false" population="cancer patients" measured-compound="pazopanib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Imbs DC, Diéras V, Bachelot T, Campone M, Isambert N, Joly F et al. Pharmacokinetic interaction between pazopanib and cisplatin regimen. Cancer chemotherapy and pharmacology 77(2):385–392 (2016).
@@ -17,9 +17,7 @@ Imbs DC, Diéras V, Bachelot T, Campone M, Isambert N, Joly F et al. Pharmacokin
 
 ## Population and dosing
 
-**Population:** patients in a phase I pazopanib-cisplatin combination study · age group adult · n = 32.
-
-**Dosed compound ≠ measured compound:** dosed pazopanib and cisplatin, measured pazopanib and ultrafilterable cisplatin.
+**Population:** cancer patients · condition cancer · age group adult.
 
 ## Model
 
@@ -35,7 +33,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,23 +55,21 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 **Interpretation flags:**
 - table section iiv: 'cisplatin clearance' routed out of structural estimates ('Mean (CV\xa0% for inter-individual variability) cisplatin clearance was 10.3 L/h (33.2\xa0%) and appeared not to be influenced by pazopanib.')
-- table section iiv: 'oral pazopanib clearance at Day 0' routed out of structural estimates ('Mean (CV\xa0% for inter-individual variability) cisplatin clearance was 10.3 L/h (33.2\xa0%) and appeared not to be influenced by pazopanib.')
-- table section iiv: 'lower at Day 1' routed out of structural estimates ('Mean (CV\xa0% for inter-individual variability) cisplatin clearance was 10.3 L/h (33.2\xa0%) and appeared not to be influenced by pazopanib.')
-- table section iiv: 'lower at Day 2' routed out of structural estimates ('Mean (CV\xa0% for inter-individual variability) cisplatin clearance was 10.3 L/h (33.2\xa0%) and appeared not to be influenced by pazopanib.')
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pazopanib and ultrafilterable cisplatin
+- table section iiv: 'oral pazopanib clearance' routed out of structural estimates ('Mean (CV\xa0% for inter-individual variability) cisplatin clearance was 10.3 L/h (33.2\xa0%) and appeared not to be influenced by pazopanib.')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pazopanib
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Imbs_2016_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 | `qwen3.8-27b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
@@ -121,4 +117,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpazopanib%5D%20Pazopanib_Imbs2016_reference&body=Drug%3A%20pazopanib%0ARecord%3A%20Pazopanib_Imbs2016_reference%0APaper%3A%20Imbs_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pazopanib/Pazopanib_Imbs2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 04:38 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:17 UTC</sub>

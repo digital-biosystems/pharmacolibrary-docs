@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ciprofloxacin's central compartment volume of distribution was recorded as 0.023 L, an implausibly small value that triggered rejection.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Santavy2023_reference" status="rejected" stale="false" population="adults undergoing cardiac surgery" measured-compound="ciprofloxacin" parameterization="apparent" topology="3C"></div>
 
@@ -54,13 +54,13 @@ Santavy P, Kubickova V, Sima M, Urbanek K. Population pharmacokinetics of three 
 
 ### Reviewer guidance
 
-**Ciprofloxacin's central compartment volume of distribution was recorded as 0.023 L, an implausibly small value that triggered rejection.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record defines V2 as the volume of distribution of the peripheral compartment but assigns it a value of 0.023 L, which is physiologically unrealistic for a drug like ciprofloxacin. This magnitude falls far outside the expected range for a volume parameter, indicating a likely unit or scale extraction error. Additionally, the record includes a parameter labeled Ω_V1 with a value of 0.36, which a second reader noted should likely be null, suggesting further inconsistency in the parameter assignment. Extracted — ciprofloxacin: CL 0.65 L/h, V1 2.67 L, Q 9.89 L/h, V2 0.023 L, V1/F 0.36, kabs 1 h−1, tlag 0.33 h.
+Extracted — ciprofloxacin: CL 0.65 L/h, V1 2.67 L, Q 9.89 L/h, V2 0.023 L, V1/F 0.36, kabs 1 h−1, tlag 0.33 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

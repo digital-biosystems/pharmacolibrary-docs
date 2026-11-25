@@ -49,7 +49,7 @@ Wen YF, Brundage RC, Roman YM, Culhane-Pera KA, Straka RJ. Population pharmacoki
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 None of the extracted parameters is allopurinol's own; they describe oxypurinol.
 

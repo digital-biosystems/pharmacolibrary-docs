@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the structural parameter A (5711 ng·mL⁻¹) had a unit dimension conflicting with its pharmacokinetic definition.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng·mL⁻¹ ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q67 unit min⁻¹ (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="rocuronium bromide" model-id="RocuroniumBromide_Dragne2002_isoflurane" status="rejected" stale="false" population="surgical patients under anesthesia" measured-compound="rocuronium_bromide" parameterization="mechanistic" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Dragne A, Varin F, Plaud B, Donati F. Rocuronium pharmacokinetic-pharmacodynamic
 
 ### Reviewer guidance
 
-**The model was rejected because the structural parameter A (5711 ng·mL⁻¹) had a unit dimension conflicting with its pharmacokinetic definition.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng·mL⁻¹ ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q67 unit min⁻¹ (1 / [time]) vs 1 / [time].**
 
-Parameter A is listed with a value of 5711 ng·mL⁻¹, which is a concentration unit, yet the dimension check expected a mass-time/length-cubed dimension. This mismatch indicates A does not represent the structural compartment size it is labeled as. The record also contains a terminal half-life (t1/2γ) of 77.06 min, which is inconsistent with the two-compartment structure (1C) implied by the other parameters. Extracted — rocuronium bromide: C0 1.65e+03 ng·mL⁻¹, λ1 0.598 min⁻¹, kel 0.0498 min⁻¹, t1/2α 1.17 min, t1/2β 13.9 min, t1/2γ 77.1 min, CL 4.09 mL·kg⁻¹·min⁻¹, V 35 mL·kg⁻¹, … (+4).
+A reported unit could not be converted (equation variable, C0, λ1 and Ct), so that value has no SI equivalent. Extracted — rocuronium bromide: C0 1.65e+03 ng·mL⁻¹, λ1 0.598 min⁻¹, kel 0.0498 min⁻¹, t1/2α 1.17 min, t1/2β 13.9 min, t1/2γ 77.1 min, CL 4.09 mL·kg⁻¹·min⁻¹, V 35 mL·kg⁻¹, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rocuronium_bromide, the second reading rocuronium bromide; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

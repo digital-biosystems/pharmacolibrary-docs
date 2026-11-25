@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Review of tamoxifen record refused because second reader disagrees on parameter values, including volume of distribution.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_Bosch2023_reference" status="needs_review" stale="false" population="" measured-compound="tamoxifen" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Bosch F, Mulder F, Franken L, Willemsen A, Rentinck M, van den Berg P et al. Eff
 
 ### Reviewer guidance
 
-**Review of tamoxifen record refused because second reader disagrees on parameter values, including volume of distribution.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists tamoxifen clearance at 32.0 l/h and volume at 553.9949 L, though the label verbatim incorrectly identifies it as edoxaban. A second reader disputed the verdict, finding agreement of 0.5 with 0 of 1 readers agreeing. Specific disagreements included null values for several fields in the second reader's assessment versus non-null values in the record. Extracted — tamoxifen: CL 32 l/h, V 554 L.
+Extracted — tamoxifen: CL 32 l/h, V 554 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 1947, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -125,7 +125,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (5 of 10 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (5 of 10 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

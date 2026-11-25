@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The review was held back due to a second-reader dispute over the peripheral volume of distribution value, which the second reader identified as 12.04 L.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="cefazolin" model-id="Cefazolin_Santavy2023_reference" status="needs_review" stale="false" population="adults undergoing cardiac surgery" measured-compound="cefazolin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Santavy P, Kubickova V, Sima M, Urbanek K. Population pharmacokinetics of three 
 
 ### Reviewer guidance
 
-**The review was held back due to a second-reader dispute over the peripheral volume of distribution value, which the second reader identified as 12.04 L.**
+**cross_check_disputed; x1_cross_check.**
 
-The model record lists a central volume of 10.09 L and an intercompartmental clearance of 0.17 L/h, but the second reader disagrees that the peripheral volume is missing, instead assigning it a value of 12.04 L. This specific discrepancy regarding the peripheral compartment volume caused the cross-check to fail with an agreement ratio of 0.444, resulting in the record being flagged for further review. Extracted — cefazolin: CL 0.089 L/h, V 10.1 L, Q 0.17 L/h.
+Extracted — cefazolin: CL 0.089 L/h, V 10.1 L, Q 0.17 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefazolin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -150,7 +150,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check disputed by a second reader: verdict disputed, agreement 0.444, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.444 (4 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.444 | cross-check contradicted by a second reader: verdict disputed; agreement 0.444 (4 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ticarcillin’s bioavailability (F) has no reported value and was defaulted, so the record was held back.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="ticarcillin" model-id="Ticarcillin_Economou2019_reference" status="needs_review" stale="false" population="critically ill patients with acute kidney injury receiving extended daily diafiltration" measured-compound="ticarcillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Economou CJP, Xie J, Comadira G, Richards B, Tallott M, Wallis SC et al. Populat
 
 ### Reviewer guidance
 
-**Ticarcillin’s bioavailability (F) has no reported value and was defaulted, so the record was held back.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-F and the absorption lag time (Tlag) were defaulted rather than estimated from the paper; these defaults affect the simulated concentration profile but are unsupported by the paper. The record came from the abstract alone, so summary statistics stood in for a fitted model. A second reader disputed the record, agreeing on 0 of 1 reader(s), with agreement 0.182, and marked the dose compound, primary analyte, and reported parameter values as unknown or absent. Extracted — ticarcillin: CL 6.41 L/h, V 56.5 L, Q 13.5 L/h, kabs 0.781 hour−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ticarcillin: CL 6.41 L/h, V 56.5 L, Q 13.5 L/h, kabs 0.781 hour−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ticarcillin, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,7 +147,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.182, 0 of 1 reader(s) agree | 0.182 | cross-check disputed by a second reader: verdict disputed, agreement 0.182, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.182 (2 of 11 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.182 | cross-check contradicted by a second reader: verdict disputed; agreement 0.182 (2 of 11 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

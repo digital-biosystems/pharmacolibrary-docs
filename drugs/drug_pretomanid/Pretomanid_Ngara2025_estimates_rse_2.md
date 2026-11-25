@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The record was rejected because the terminal elimination half-life was entered as a daily rate constant instead of a time duration.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q89 unit d−1 (1 / [time]) vs [time].
 
 <div class="pk-model-meta" hidden drug="pretomanid" model-id="Pretomanid_Ngara2025_estimates_rse_2" status="rejected" stale="false" population="mice with tuberculosis" measured-compound="pretomanid" parameterization="apparent" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Ngara B, Flori L, van Wijk RC, Ernest JP, Tyagi S, Soni H et al. Translational M
 
 ### Reviewer guidance
 
-**The record was rejected because the terminal elimination half-life was entered as a daily rate constant instead of a time duration.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q89 unit d−1 (1 / [time]) vs [time].**
 
-The parameter for the terminal elimination half-life is recorded as 0.38 d−1, which has the dimension of a rate constant rather than the required time unit. This dimensional conflict means the value cannot be interpreted as a standard pharmacokinetic half-life. The second reader also disagreed on the values for clearance, volume of distribution, absorption rate, and the half-life itself. Extracted — pretomanid: CL/F 0.01, V/F 0.73 L, kabs 0.77 h−1, fe 34, t1/2γ 0.38 d−1.
+A reported unit could not be converted (t1/2γ), so that value has no SI equivalent. Extracted — pretomanid: CL/F 0.01, V/F 0.73 L, kabs 0.77 h−1, fe 34, t1/2γ 0.38 d−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has BTZ-043, bedaquiline, pretomanid, linezolid, the second reading pretomanid; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

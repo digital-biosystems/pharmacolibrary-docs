@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Launay1989_reference" status="simulated" stale="false" population="patients with breast cancer or acute nonlymphocytic leukemia" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Launay1989_reference" status="simulated" stale="false" population="adults with breast cancer or acute nonlymphocytic leukemia" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Launay MC, Iliadis A, Richard B. Population pharmacokinetics of mitoxantrone performed by a NONMEM method. Journal of pharmaceutical sciences 78(10):877–880 (1989).
@@ -15,7 +15,7 @@ Launay MC, Iliadis A, Richard B. Population pharmacokinetics of mitoxantrone per
 
 ## Population and dosing
 
-**Population:** patients with breast cancer or acute nonlymphocytic leukemia · condition breast cancer or acute nonlymphocytic leukemia · n = 21.
+**Population:** adults with breast cancer or acute nonlymphocytic leukemia · condition breast cancer or acute nonlymphocytic leukemia · age group adult · n = 21.
 
 ## Model
 
@@ -35,7 +35,7 @@ Launay MC, Iliadis A, Richard B. Population pharmacokinetics of mitoxantrone per
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,11 +45,11 @@ Launay MC, Iliadis A, Richard B. Population pharmacokinetics of mitoxantrone per
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-Independently confirmed by `qwen3.8-27b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,7 +58,7 @@ Independently confirmed by `qwen3.8-27b`.
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | clearance | `Q22` · CL | 23.4 | L/h | 6.5e-06 | m3/s | l/h | exact (1) | Launay_1989:abstract |
-| terminal half-life | `Q57` · t1/2z | 46.87 | h | 1.687e+05 | s | h | llm (0.6) | Launay_1989:abstract |
+| terminal half-life | `Q57` · t1/2z | 46.87 | h | 1.687e+05 | s | h | half_life_rule (0.95) | Launay_1989:abstract |
 | total volume of distribution | `Q61` · V | 385.49 | L | 0.3855 | m3 | l | llm_confirmed (0.6) | Launay_1989:abstract |
 
 <details class="legend">
@@ -71,19 +71,18 @@ Independently confirmed by `qwen3.8-27b`.
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mitoxantrone
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Launay_1989_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (7/7 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -119,7 +118,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -197,4 +196,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitoxantrone%5D%20Mitoxantrone_Launay1989_reference&body=Drug%3A%20mitoxantrone%0ARecord%3A%20Mitoxantrone_Launay1989_reference%0APaper%3A%20Launay_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitoxantrone/Mitoxantrone_Launay1989_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:31 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:59 UTC</sub>

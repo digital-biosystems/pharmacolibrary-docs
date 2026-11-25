@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The record lacks distribution volume and clearance, and the transfer parameter has a time unit instead of a volume rate.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q99 unit min ([time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Sermsappasuk2006_estimate_mean_s_d" status="rejected" stale="false" population="isolated perfused rat heart" measured-compound="amiodarone" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Sermsappasuk P, Baek M, Weiss M. Kinetic analysis of myocardial uptake and negat
 
 ### Reviewer guidance
 
-**The record lacks distribution volume and clearance, and the transfer parameter has a time unit instead of a volume rate.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q99 unit min ([time]) vs [length] ** 3 / [time].**
 
-The model structure is one compartment, yet the record contains no distribution volume or elimination clearance parameters. One intercompartmental parameter is listed with a unit of minutes, which is dimensionally incorrect for a clearance term. Additionally, an absorption rate constant value of 0.82 per hour was extracted, despite the study using isolated perfused hearts. Extracted — amiodarone: k12 519 1/min, k21 0.003 1/min, Q2 11.1 min, kabs 0.82 h−1.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Q2), so that value has no SI equivalent. Extracted — amiodarone: k12 519 1/min, k21 0.003 1/min, Q2 11.1 min, kabs 0.82 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amiodarone, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -23,7 +23,7 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">human + animal</span> | [Salek_2017_bone_uptake](drugs/drug_risedronic_acid/pd_Salek_2017_bone_uptake.md) | bone uptake ← 177 Lu-risedronate · model not identified | — | Salek N et al., Production, quality control, and determ…, Journal of labelled compoun… (2017) | [10.1002/jlcr.3466](https://doi.org/10.1002/jlcr.3466) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Giljević_2008_BR](drugs/drug_risedronic_acid/pd_Giljevi_2008_BR.md) | bone resorption rate biomarker turnover ← risedronate | — | Giljević Z, [Differences among bisfosfonates--speci…, Reumatizam (2008) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Giljević_2008_BR](drugs/drug_risedronic_acid/pd_Giljevi_2008_BR.md) | bone resorption rate biomarker turnover ← risedronate | — | Giljević Z, [Differences among bisfosfonates--speci…, Reumatizam (2008) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:17 | 3:20 | 0/0/0 | 1/1/0 | 0/0/0 | 156,546/1,677 | einfracz / qwen3.8-27b | 7 | 6/0 | 7/0 | 0 |
+| 2026-10-07 03:17 | 3:20 | 0/0/0 | 2/0/0 | 0/0/0 | 156,546/1,677 | einfracz / qwen3.8-27b | 7 | 6/0 | 7/0 | 0 |
 
 ## Coverage
 

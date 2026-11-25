@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The doxorubicin AUC record was rejected due to a dimension mismatch in its unit 'nM/l·h' and the omission of a central volume value of 1073.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit nM/l·h ([time] / [length] ** 2) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Frenay1989_reference" status="rejected" stale="false" population="adults with advanced breast cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Frenay M, Milano G, Renee N, Pons D, Khater R, François E et al. Pharmacokineti
 
 ### Reviewer guidance
 
-**The doxorubicin AUC record was rejected due to a dimension mismatch in its unit 'nM/l·h' and the omission of a central volume value of 1073.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit nM/l·h ([time] / [length] ** 2) vs [mass] * [time] / [length] ** 3.**
 
-The review flagged the AUC value of 3957 because the unit 'nM/l·h' conflicts with the expected dimensional requirements for the parameter. Furthermore, the record lacked a value for the central volume, despite a second reader identifying a specific value of 1073, leaving the model without this essential structural parameter. Extracted — doxorubicin: t1/2α 0.095 h, t1/2β 12.8 h, AUC 3.96e+03 nM/l·h, CL 46.7 l/h, V 934 l, t1/2z 31 h, AUC ratio 42.3 45 mg/m².
+A reported unit could not be converted (AUC and AUC ratio), so that value has no SI equivalent. Extracted — doxorubicin: t1/2α 0.095 h, t1/2β 12.8 h, AUC 3.96e+03 nM/l·h, CL 46.7 l/h, V 934 l, t1/2z 31 h, AUC ratio 42.3 45 mg/m².
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cext: this record has none, the second reading 1073. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

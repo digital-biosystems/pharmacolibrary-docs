@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07C&quot;,&quot;href&quot;:&quot;atc/N07C.md&quot;},{&quot;label&quot;:&quot;flunarizine&quot;,&quot;href&quot;:&quot;drugs/drug_flunarizine/&quot;},{&quot;label&quot;:&quot;Zhu_1996 \u00b7 PD 5-HT-evoked contraction in pig basilar artery&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07C&quot;,&quot;href&quot;:&quot;atc/N07C.md&quot;},{&quot;label&quot;:&quot;flunarizine&quot;,&quot;href&quot;:&quot;drugs/drug_flunarizine/&quot;},{&quot;label&quot;:&quot;Zhu_1996 \u00b7 PD 5-HT-evoked contraction&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# 5-HT-evoked contraction in pig basilar artery — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">pig</span>
+# 5-HT-evoked contraction — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">pig</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 ## Record summary
 
-**As extracted:** Flunarizine (concentrations from the PK model of Wang_2007) drives 5-HT-evoked contraction in pig basilar artery: direct sigmoid Emax (Hill) effect.
+**As extracted:** Flunarizine (concentrations from the PK model of Wang_2007) drives 5-HT-evoked contraction: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
@@ -24,10 +24,10 @@
 > <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Zhu_1996`
-- **model family:** `sigmoid_emax`
+- **model family:** `emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Zhu YH et al., Antagonistic effects of dipfluzine, flu…, Zhongguo yao li xue bao = A… (1996)
@@ -35,7 +35,7 @@ Zhu YH et al., Antagonistic effects of dipfluzine, flu…, Zhongguo yao li xue b
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | IC50 | `Q322` ·  | 15.6 | µmol.L-1 | llm | Zhu_1996:pdv3 |
+| PD (effect) | IC50 | `Q322` ·  | 15.6 | mumol.L-1 | llm | Zhu_1996:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -44,18 +44,17 @@ Zhu YH et al., Antagonistic effects of dipfluzine, flu…, Zhongguo yao li xue b
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.6 (3/5 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.8 (4/5 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
-| `gpt-oss-120b` | `parameters[Q322].value` | 15.6 | value | mismatch |
+| `gpt-oss-120b` | `model_family` | emax | sigmoid_emax | mismatch |
 
 </details>
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span>
 
-> Cefuroxime elimination rate constant kel was recorded in hours instead of inverse hours, causing a dimensional conflict for a structural parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit hours ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_ABO2000_reference" status="rejected" stale="false" population="goats" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,13 +56,13 @@ ABO EL-SOOUD K, El-Banna HA, Hanafy MS, Goudah A. Pharmacokinetics and intramusc
 
 ### Reviewer guidance
 
-**Cefuroxime elimination rate constant kel was recorded in hours instead of inverse hours, causing a dimensional conflict for a structural parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit hours ([time]) vs 1 / [time].**
 
-The record lists the elimination rate constant kel with a value of 2.088 and the unit hours, which is dimensionally inconsistent for a rate constant requiring inverse time. This error caused a check to fail because the unit hours conflicts with the expected dimension of one over time. Additionally, the record was derived solely from the paper's abstract, meaning the reported summary statistics stand in for a fitted model. Extracted — cefuroxime: t1/2α 0.25 hours, t1/2β 1.48 hours, kel 2.09 hours, MRT 3.2 hours, Fab 88.4 per cent, fu 13.3 per cent, V 0.065 L/kg, kabs 9.78 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefuroxime: t1/2α 0.25 hours, t1/2β 1.48 hours, kel 2.09 hours, MRT 3.2 hours, Fab 88.4 per cent, fu 13.3 per cent, V 0.065 L/kg, kabs 9.78 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has cefuroxime, the second reading cefuroxime sodium; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

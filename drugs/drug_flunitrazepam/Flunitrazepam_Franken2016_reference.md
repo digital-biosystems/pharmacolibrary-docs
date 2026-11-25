@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Flunitrazepam record rejected because the peripheral compartment is unreachable, rendering the 2-compartment structure invalid.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="flunitrazepam" model-id="Flunitrazepam_Franken2016_reference" status="rejected" stale="false" population="" measured-compound="flunitrazepam" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Franken LG, Masman AD, de Winter BC, Koch BC, Baar FP, Tibboel D et al. Pharmaco
 
 ### Reviewer guidance
 
-**Flunitrazepam record rejected because the peripheral compartment is unreachable, rendering the 2-compartment structure invalid.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a two-compartment model where the peripheral volume is 243.0 L, yet a check confirmed this compartment has no path from the dose. Consequently, the model structure is disconnected, making the elimination and distribution parameters for this compartment pharmacokinetically inapplicable. A second reader also disagreed on specific parameter values, with one disagreement noting a null value where the record listed 7.65. Extracted — flunitrazepam: CL 37.2 L/h, V1 185 L, V2 243 L, kabs 10 h−1.
+Extracted — flunitrazepam: CL 37.2 L/h, V1 185 L, V2 243 L, kabs 10 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has -43.3, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

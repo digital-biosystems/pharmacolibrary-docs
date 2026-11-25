@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ofloxacin oral bioavailability and lag time were missing from the abstract, forcing reliance on library placeholder values.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="ofloxacin" model-id="Ofloxacin_Zhuo1994_reference" status="needs_review" stale="false" population="patients with respiratory tract infections" measured-compound="ofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Zhuo HT, Lu JZ, Xia XR, Ling SS. Pharmacokinetics of ofloxacin through three adm
 
 ### Reviewer guidance
 
-**Ofloxacin oral bioavailability and lag time were missing from the abstract, forcing reliance on library placeholder values.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-Because only the abstract was read, the model lacks explicit estimates for bioavailability (F) and lag time (Tlag), so library placeholders were used instead. The second reader disputed the record, failing to identify the dose compound or verify the reported concentration values. Extracted — ofloxacin: t1/2β 6 h, V 58 L, Cmax 3.9 micrograms.ml-1, AUC 16 h.micrograms.ml-1, CL 13 L.h-1, kabs 2.95 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ofloxacin: t1/2β 6 h, V 58 L, Cmax 3.9 micrograms.ml-1, AUC 16 h.micrograms.ml-1, CL 13 L.h-1, kabs 2.95 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ofloxacin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -154,7 +154,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.133 (2 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.133 | cross-check contradicted by a second reader: verdict disputed; agreement 0.133 (2 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The absorption rate constant (ka) and Tlag lack source data, forcing the use of library defaults for mizolastine's first-order depot input.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="mizolastine" model-id="Mizolastine_Mentr2001_reference" status="needs_review" stale="false" population="children 6 to 12 years old" measured-compound="mizolastine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Mentré F, Dubruc C, Thénot JP. Population pharmacokinetic analysis and optimiz
 
 ### Reviewer guidance
 
-**The absorption rate constant (ka) and Tlag lack source data, forcing the use of library defaults for mizolastine's first-order depot input.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record relies on abstract-only summary statistics, replacing a fitted model with apparent parameters like V/F (0.28 L/kg) and CL/F (0.1 L/h). Because the paper did not report absorption details, the model builder defaulted ka and Tlag instead of using explicit estimates. This lack of source-supported absorption values invalidates the simulation profile, as these parameters are not justified by the provided text. Extracted — mizolastine: V/F 0.28 L/kg, CL/F 0.1 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mizolastine: V/F 0.28 L/kg, CL/F 0.1 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of tabs: this record has none, the second reading 0.49. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.857 (6 of 7 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

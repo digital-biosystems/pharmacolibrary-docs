@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper subjects apatinib to PK modeling, misidentifying capecitabine as the primary analyte rather than a co-administered covariate.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Zuo2024_reference" status="rejected" stale="false" population="" measured-compound="capecitabine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Zuo L, Ling J, Hu N, Chen R. Establishment and validation of a population pharma
 
 ### Reviewer guidance
 
-**The paper subjects apatinib to PK modeling, misidentifying capecitabine as the primary analyte rather than a co-administered covariate.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The identified source text investigates apatinib, with capecitabine appearing only as a secondary medication rather than the measured compound. The second reader disagreed on the parameter values, specifically assigning a value of 16.44 to the volume distribution where the record remained null. Extracted — capecitabine: CL/F 56.7 L/h, V/F 674 L.
+Extracted — capecitabine: CL/F 56.7 L/h, V/F 674 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 19.57, the second reading 19.57; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.857 (6 of 7 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

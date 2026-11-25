@@ -29,7 +29,7 @@ Midostaurin is a multi-targeted protein kinase inhibitor used to treat acute mye
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Joisten_2026_reference](drugs/drug_midostaurin/Midostaurin_Joisten2026_reference.md) | — | 1-compartment (no model) | 2 | Joisten CS et al., Clinical impact of potential drug-drug…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01951-25](https://doi.org/10.1128/aac.01951-25) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Yin_2008_reference](drugs/drug_midostaurin/Midostaurin_Yin2008_reference.md) | — | general linear (no model) | 2 | Yin OQ et al., A mechanism-based population pharmacoki…, Clinical pharmacokinetics (2008) | [10.2165/0003088-200847120-00005](https://doi.org/10.2165/0003088-200847120-00005) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Yin_2008_reference](drugs/drug_midostaurin/Midostaurin_Yin2008_reference.md) | — | general linear (no model) | 1 | Yin OQ et al., A mechanism-based population pharmacoki…, Clinical pharmacokinetics (2008) | [10.2165/0003088-200847120-00005](https://doi.org/10.2165/0003088-200847120-00005) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,7 +43,7 @@ Midostaurin is a multi-targeted protein kinase inhibitor used to treat acute mye
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 02:55 | 3:04 | 1/1/0 | 0/0/0 | 0/0/0 | 98,267/13,833 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 01:34 | 0:34 | 1/1/0 | 0/0/0 | 0/0/0 | 13,528/4,165 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -58,13 +58,19 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Yin_2008.pdf` | Yin OQ et al., A mechanism-based population pharmacoki…, Clinical pharmacokinetics (2008) | popPK | 10 | [10.2165/0003088-200847120-00005](https://doi.org/10.2165/0003088-200847120-00005) | [19026036](https://pubmed.ncbi.nlm.nih.gov/19026036) | Human population-PK model reports numeric midostaurin clearance and induction parameters. |
+| `Yin_2008.pdf` | Yin OQ et al., A mechanism-based population pharmacoki…, Clinical pharmacokinetics (2008) | popPK | 10 | [10.2165/0003088-200847120-00005](https://doi.org/10.2165/0003088-200847120-00005) | [19026036](https://pubmed.ncbi.nlm.nih.gov/19026036) | The abstract explicitly reports quantitative pharmacokinetic parameters including clearances (CL1, CL2) and enzyme induction metrics (Emax, EC50) for midostaurin in human subjects. |
 
-<sub>queue written 2026-10-07 02:52 UTC</sub>
+<sub>queue written 2026-11-24 01:34 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Yin_2008 | not_relevant | 0 | 0 | The paper investigates time-dependent auto-induction pharmacokinetics, not the effect of genetic variants or genotypes. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmidostaurin%5D&body=Drug%3A%20midostaurin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_midostaurin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 02:52 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 01:34 UTC</sub>

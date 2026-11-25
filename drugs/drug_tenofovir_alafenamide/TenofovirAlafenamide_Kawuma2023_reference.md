@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because tenofovir-diphosphate is a metabolism target but is absent from the modeled metabolite list; tenofovir CLm/F is reported as 120 mL/min.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Kawuma2023_reference" status="rejected" stale="false" population="South African adults living with HIV" measured-compound="tenofovir" parameterization="apparent" topology="general_linear"></div>
 
@@ -48,13 +48,13 @@ Kawuma AN, Wasmann RE, Sinxadi P, Sokhela SM, Chandiwana N, Venter WDF et al. Po
 
 ### Reviewer guidance
 
-**The record was rejected because tenofovir-diphosphate is a metabolism target but is absent from the modeled metabolite list; tenofovir CLm/F is reported as 120 mL/min.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The listed metabolite is tenofovir with n_cmt 0, while a metabolism link points from tenofovir to tenofovir-diphosphate, which has no metabolite entry. CLm/F for tenofovir means apparent metabolite clearance divided by the fraction of parent converted to it; its reported value is 120 mL/min. Extracted — tenofovir: CLm/F 120 mL/min.
+None of the extracted parameters is tenofovir alafenamide's own; they describe tenofovir. Extracted — tenofovir: CLm/F 120 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tenofovir alafenamide, the second reading tenofovir alafenamide (TAF) / tenofovir disoproxil fumarate (TDF); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

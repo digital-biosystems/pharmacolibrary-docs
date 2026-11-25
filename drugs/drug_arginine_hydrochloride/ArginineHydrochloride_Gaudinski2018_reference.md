@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the source paper studies the monoclonal antibody VRC01LS, not the co-medication arginine hydrochloride.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="arginine hydrochloride" model-id="ArginineHydrochloride_Gaudinski2018_reference" status="rejected" stale="false" population="" measured-compound="arginine_hydrochloride" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Gaudinski MR, Coates EE, Houser KV, Chen GL, Yamshchikov G, Saunders JG et al. S
 
 ### Reviewer guidance
 
-**The record is rejected because the source paper studies the monoclonal antibody VRC01LS, not the co-medication arginine hydrochloride.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source text identifies the study subject as VRC01LS, while arginine hydrochloride is mentioned only as a formulation buffer. The extracted clearance and volume of distribution values for arginine hydrochloride are therefore not from the primary pharmacokinetic data of this paper. Extracted — arginine hydrochloride: CL 36 mL/d, V 0.779 L.
+Extracted — arginine hydrochloride: CL 36 mL/d, V 0.779 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -115,7 +115,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

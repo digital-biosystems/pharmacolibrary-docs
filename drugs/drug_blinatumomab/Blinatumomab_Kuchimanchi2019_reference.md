@@ -44,7 +44,7 @@ Kuchimanchi M, Zhu M, Clements JD, Doshi S. Exposure-response analysis of blinat
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q21: this record has none, the second reading 1.07. That field does not shape the model.
 
@@ -115,7 +115,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.833 (5 of 6 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -153,4 +153,4 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bblinatumomab%5D%20Blinatumomab_Kuchimanchi2019_reference&body=Drug%3A%20blinatumomab%0ARecord%3A%20Blinatumomab_Kuchimanchi2019_reference%0APaper%3A%20Kuchimanchi_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_blinatumomab/Blinatumomab_Kuchimanchi2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 10:24 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:59 UTC</sub>

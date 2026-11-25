@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Relatlimab's saturable metabolism rate of 80.5 μg/h had a unit that could not be converted to SI units, preventing the model from being published.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit μg/h ([mass] / [time]) vs [mass] / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Relatlimab" model-id="Relatlimab_Zhao2024_melanoma_1l_prior_io_geo_mean_cv" status="rejected" stale="false" population="adult and adolescent patients with solid tumors" measured-compound="relatlimab" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Zhao Y, Hu Z, Bathena SP, Keidel S, Miller-Moslin K, Statkevich P et al. Model-I
 
 ### Reviewer guidance
 
-**Relatlimab's saturable metabolism rate of 80.5 μg/h had a unit that could not be converted to SI units, preventing the model from being published.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit μg/h ([mass] / [time]) vs [mass] / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The maximum rate of metabolism was extracted as 80.5 μg/h, but this unit could not be converted to standard SI units, leaving the parameter without a valid value. This missing conversion halted the model evaluation. Additionally, the peripheral compartment was identified as an unreachable structure with no path from the dose. Extracted — relatlimab: Cmin 5.64 μg/mL, Cmax 44.1 μg/mL, Cavg 14.8 μg/mL, CL 6.05 mL/h, V1 3.61 L, V2 2.97 L, Vss 6.64 L, Vmax 80.5 μg/h.
+A reported unit could not be converted (Cmin, Cmax, Cavg and Vmax), so that value has no SI equivalent. Extracted — relatlimab: Cmin 5.64 μg/mL, Cmax 44.1 μg/mL, Cavg 14.8 μg/mL, CL 6.05 mL/h, V1 3.61 L, V2 2.97 L, Vss 6.64 L, Vmax 80.5 μg/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clss/cl0: this record has none, the second reading 91.2. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -49,7 +49,7 @@ Zhao W, Cella M, Della Pasqua O, Burger D, Jacqz-Aigrain E. Population pharmacok
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 05: this record has none, the second reading 1.15. That field does not shape the model.
 

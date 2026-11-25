@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The record was rejected because the N-demethylketamine and cyclohexene metabolites lack defined metabolic rate constants linking them to the parent ketamine.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="ketamine" model-id="Ketamine_Kaka1980_reference" status="rejected" stale="false" population="dogs" measured-compound="ketamine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -52,13 +52,13 @@ Kaka JS, Hayton WL. Pharmacokinetics of ketamine and two metabolites in the dog.
 
 ### Reviewer guidance
 
-**The record was rejected because the N-demethylketamine and cyclohexene metabolites lack defined metabolic rate constants linking them to the parent ketamine.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The abstract-only source provided summary statistics like a 1.95 min alpha half-life and 32.2 ml/min/kg clearance, but no specific values for the metabolic steps connecting the compounds. The second reader disagreed on several extracted values, finding null for the 53.5% protein binding and 1.95 min half-life, while identifying additional values like 60.3% binding and 89.4 ml/min/kg clearance that were missing from the record. Extracted — ketamine: t1/2α 1.95 min, t1/2β 61 min, CL 32.2 ml/min/kg, fu 53.5 %, V 6.47 L, kabs 0.66 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ketamine: t1/2α 1.95 min, t1/2β 61 min, CL 32.2 ml/min/kg, fu 53.5 %, V 6.47 L, kabs 0.66 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ketamine, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

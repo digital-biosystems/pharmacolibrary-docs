@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The amiodarone model structure and measured output mismatch the intended parent-metabolite design, and the second reader could not locate any of the extracted parameter values.
+> T3_output_variable; t3_param_coverage (+1 more).
 
 <div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Pollak2000_desethylamiodarone_typical_value" status="rejected" stale="false" population="patients with cardiac arrhythmias" measured-compound="amiodarone" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Pollak PT, Bouillon T, Shafer SL. Population pharmacokinetics of long-term oral 
 
 ### Reviewer guidance
 
-**The amiodarone model structure and measured output mismatch the intended parent-metabolite design, and the second reader could not locate any of the extracted parameter values.**
+**T3_output_variable; t3_param_coverage (+1 more).**
 
-The record defines a parent-metabolite structure with desethylamiodarone, yet the model builder implemented a single-compartment enteric structure and mapped the output to the central compartment rather than the specified metabolite. Additionally, the parameter coverage check identified that the peripheral volume of distribution (V2/F, 7830 L) was not included in the final model. A second reader disagreed on all extracted parameter values, including V1/F (2790 L), CL/F (254 L/d), and kabs (0.82 h−1), recording them as null or unknown. Extracted — amiodarone: V1/F 2.79e+03 L, V2/F 7.83e+03 L, CL/F 254 L/d, Q/F 151 L/d, kel 62 1/day, kabs 0.82 h−1.
+Extracted — amiodarone: V1/F 2.79e+03 L, V2/F 7.83e+03 L, CL/F 254 L/d, Q/F 151 L/d, kel 62 1/day, kabs 0.82 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amiodarone, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

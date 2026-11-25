@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper describes Trastuzumab Rezetecan, not Trastuzumab Emtansine.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="trastuzumab emtansine" model-id="TrastuzumabEmtansine_Gao2026_reference" status="rejected" stale="false" population="" measured-compound="trastuzumab_emtansine" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Gao X, Zhao K, Zhao Y, Zhang Y, Zhao J, Zhao C et al. Population Pharmacokinetic
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper describes Trastuzumab Rezetecan, not Trastuzumab Emtansine.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper subject is identified as Trastuzumab Rezetecan (SHR-A1811), while Trastuzumab Emtansine is only mentioned as a co-medication or covariate. Consequently, the extracted parameters for clearance and volumes do not apply to the intended drug. The second reader disagreed with null values for specific parameters, suggesting different extraction results were possible. Extracted — trastuzumab emtansine: CL 0.36 L/day, V1 2.86 L, V2 2.88 L, Q 0.162 L/day.
+Extracted — trastuzumab emtansine: CL 0.36 L/day, V1 2.86 L, V2 2.88 L, Q 0.162 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q47: this record has none, the second reading 0.814; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.8 (8 of 10 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.95).">rat</span> | [Lavoie_1997_Ca_uptake](drugs/drug_iprindole/pd_Lavoie_1997_Ca_uptake.md) | net depolarization-induced calcium uptake in rat hippocampus synaptosomes ← iprindole · inhibition effect | — | Lavoie PA et al., Atypical antidepressants inhibit depola…, Canadian journal of physiol… (1997) | [10.1139/cjpp-75-8-983](https://doi.org/10.1139/cjpp-75-8-983) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.95).">rat</span> | [Lavoie_1997_net_depolarization_induced_calcium_uptake](drugs/drug_iprindole/pd_Lavoie_1997_net_depolarization_induced_calcium_uptake.md) | net depolarization-induced calcium uptake ← iprindole · direct Emax (saturable) effect | — | Lavoie PA et al., Atypical antidepressants inhibit depola…, Canadian journal of physiol… (1997) | [10.1139/cjpp-75-8-983](https://doi.org/10.1139/cjpp-75-8-983) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:18 | 0:15 | 0/0/0 | 0/1/0 | 0/0/0 | 7,552/508 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 01:51 | 0:02 | 0/0/0 | 0/1/0 | 0/0/0 | 209/56 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -60,35 +60,49 @@ _8 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Silver_1986.pdf` | Silver PJ et al., Antidepressants and protein kinases: in…, European journal of pharmac… (1986) | pd | 4 | [10.1016/0014-2999(86)90393-6](https://doi.org/10.1016/0014-2999(86)90393-6) | [2869958](https://www.ncbi.nlm.nih.gov/pubmed/2869958) | metadata signals extractable PD data (IC50) |
 | `Wolfe_1978.pdf` | Wolfe BB et al., Presynaptic modulation of beta adrenerg…, The Journal of pharmacology… (1978) | pd | 4 |  | [213556](https://www.ncbi.nlm.nih.gov/pubmed/213556) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-06 23:18 UTC</sub>
+<sub>queue written 2026-11-24 01:51 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bonnet_1984 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of dopamine uptake/release in rat synaptosomes, not a pharmacokinetic study reporting disposition parameters for iprindole. |
+| popPK | Bonnet_1984 | irrelevant | 0 | 0 | The study is an in-vitro investigation of dopamine uptake and release in rat striatum synaptosomes, not a pharmacokinetic study reporting disposition parameters for iprindole. |
 | PD | Bonnet_1984 | not_relevant | 3 | 2 | The paper reports a qualitative observation of dopamine release at high concentrations (&gt;3 x 10^-6 M) for iprindole but does not provide numeric PD parameters (like IC50 or Emax) or a quantitative concentration-effect curve for iprindole in this text. |
-| popPK | Friedman_1977 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of dopamine uptake inhibition (IC50) in rat synaptosomes, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
-| popPK | Gandolfi_1984 | irrelevant | 0 | 0 | The study is an in-vitro/in-vivo mechanistic investigation of receptor binding and adenylate cyclase activity, reporting no pharmacokinetic parameters for iprindole. |
+| PGx | Bonnet_1984 | not_relevant | 0 | 0 | The paper describes an in vitro study on dopamine uptake/release in rat striatum synaptosomes and does not report pharmacogenomic effects on PK/PD parameters. |
+| popPK | Friedman_1977 | irrelevant | 0 | 0 | no_text gate: only 67 chars of text extracted (&lt; 400) |
+| PGx | Friedman_1977 | not_relevant | 0 | 0 | The provided text is a title about dopamine uptake and does not mention the drug iprindole or any specific pharmacogenomic analysis. |
+| popPK | Gandolfi_1984 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor binding and adenylate cyclase activity, not a pharmacokinetic study reporting disposition parameters. |
 | PD | Gandolfi_1984 | not_relevant | 3 | 2 | The paper reports an in vitro IC50 and qualitative changes in receptor binding/function after chronic dosing, but lacks a formal PK/PD model or dose-response curve with derivable PD parameters like Emax or EC50 for the in vivo effects. |
+| PGx | Gandolfi_1984 | not_relevant | 0 | 0 | The paper describes the mechanism of action of iprindole on brain receptors in a general animal model and does not investigate any genetic variants or genotypes associated with pharmacokinetic or pharmacodynamic changes. |
 | popPK | Harris_1973 | irrelevant | 0 | 0 | no_text gate: only 113 chars of text extracted (&lt; 400) |
 | PD | Harris_1973 | not_relevant | 0 | 0 | The paper studies the effect of centrally acting drugs on GABA uptake in rat cortex and does not mention iprindole or report any pharmacodynamic parameters for it. |
-| popPK | Hrdina_1987 | irrelevant | 0 | 0 | The study is a receptor binding and neurochemical analysis in rats, not a pharmacokinetic study, and reports no disposition parameters for iprindole. |
+| PGx | Harris_1973 | not_relevant | 0 | 0 | The paper investigates the effect of centrally acting drugs on GABA uptake in rat cortex and does not involve iprindole or pharmacogenomics. |
+| popPK | Hrdina_1987 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
 | PD | Hrdina_1987 | not_relevant | 1 | 0 | The paper reports qualitative changes in receptor affinity (IC50) and neurotransmitter levels after chronic treatment, but does not provide a concentration-effect or dose-response curve for iprindole, nor does it report numeric PD parameters (like Emax or EC50 for the drug's effect) that can be extracted. |
-| popPK | Kendall_1985 | irrelevant | 0 | 0 | In-vitro receptor pharmacology study in rat brain slices; iprindole only tested for chronic antidepressant effects, no PK parameters. |
+| PGx | Hrdina_1987 | not_relevant | 0 | 0 | The paper studies imipramine, not iprindole, and does not involve human pharmacogenomics. |
+| popPK | Kendall_1985 | irrelevant | 0 | 0 | The study is a receptor binding/signaling study in rat brain slices where iprindole is used as a probe drug to characterize receptor downregulation, not a pharmacokinetic study. |
 | PD | Kendall_1985 | not_relevant | 2 | 1 | The paper describes qualitative changes in receptor-mediated signaling (inositol phospholipid hydrolysis) following chronic iprindole treatment but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative exposure-response model for the drug itself. |
-| popPK | Lavoie_1997 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium channel inhibition in rat synaptosomes and does not report pharmacokinetic parameters for iprindole. |
+| PGx | Kendall_1985 | not_relevant | 0 | 0 | The paper examines the pharmacological effects of chronic iprindole treatment on 5-HT receptor signaling, not the effect of a genetic variant on iprindole's pharmacokinetics or pharmacodynamics. |
+| popPK | Lavoie_1997 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium uptake inhibition, not a pharmacokinetic study reporting disposition parameters for iprindole. |
+| PGx | Lavoie_1997 | not_relevant | 0 | 0 | The paper reports in vitro pharmacodynamics (calcium uptake) but does not involve any genetic variants, genotypes, or pharmacogenomic effects. |
 | popPK | Manier_1980 | irrelevant | 0 | 0 | no_text gate: only 193 chars of text extracted (&lt; 400) |
-| popPK | McMillen_1992 | irrelevant | 0 | 0 | The paper is a mechanistic study on muscle relaxants and NMDA receptors where iprindole is only mentioned as a co-administered agent in a neurotoxicity model, with no pharmacokinetic parameters reported. |
+| PGx | Manier_1980 | not_relevant | 0 | 0 | The study focuses on the neurobiological effects of amphetamine under iprindole treatment in a subsensitivity model, not on how genetic variants affect the pharmacokinetics or pharmacodynamics of iprindole itself. |
+| popPK | McMillen_1992 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
 | PD | McMillen_1992 | not_relevant | 0 | 0 | The paper focuses on zoxazolamine and HA-966; iprindole is only mentioned as a co-administered agent in a neurotoxicity assay without any exposure-response or dose-response analysis for iprindole itself. |
-| popPK | Meltzer_1981 | irrelevant | 0 | 0 | This is a pharmacodynamic (prolactin secretion) study in rats; iprindole is only one of many tested drugs and no PK parameters or numeric disposition values appear. |
+| PGx | McMillen_1992 | not_relevant | 0 | 0 | The paper discusses zoxazolamine and HA-966, not iprindole, and focuses on glycine receptors rather than pharmacogenomic effects on PK/PD. |
+| popPK | Meltzer_1981 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of prolactin secretion in rats, not a pharmacokinetic study, and reports no disposition parameters for iprindole. |
 | PD | Meltzer_1981 | not_relevant | 1 | 0 | The paper describes qualitative pharmacological effects (inhibition/potentiation) of iprindole on prolactin secretion in a rat model but does not provide numeric concentration-effect data, dose-response curves, or PD parameters for iprindole. |
-| popPK | Ortega-Corona_1981 | irrelevant | 0 | 0 | Pharmacodynamic study of MAO inhibition and neurotransmitter content in mouse brain; no PK parameters reported. |
+| PGx | Meltzer_1981 | not_relevant | 0 | 0 | The study investigates the pharmacodynamic effects of iprindole on prolactin levels in rats and does not examine any genetic variants or pharmacogenomic factors. |
+| popPK | Ortega-Corona_1981 | irrelevant | 0 | 0 | The study investigates brain monoamine oxidase activity and neurotransmitter content (pharmacodynamics/toxicology), not pharmacokinetic disposition parameters like clearance or volume. |
+| PGx | Ortega-Corona_1981 | not_relevant | 0 | 0 | The paper reports general pharmacological effects of iprindole on monoamine oxidase in mice without investigating any genetic variants or genotypes. |
 | popPK | Randrup_1977 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
 | PD | Randrup_1977 | not_relevant | 0 | 0 | The paper is a review discussing the dopamine hypothesis and uptake inhibition mechanisms, but it does not report specific pharmacokinetic or pharmacodynamic data, exposure-response curves, or numeric PD parameters for iprindole. |
+| PGx | Randrup_1977 | not_relevant | 0 | 0 | The paper discusses the mechanism of action of antidepressants (uptake inhibition) but does not report any pharmacogenomic data for iprindole. |
 | popPK | Silver_1986 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
+| PGx | Silver_1986 | not_relevant | 0 | 0 | The paper investigates the mechanism of action regarding kinase inhibition and does not report on pharmacogenomic variants affecting PK or PD parameters. |
 | popPK | Wolfe_1978 | irrelevant | 0 | 0 | no_text gate: only 111 chars of text extracted (&lt; 400) |
 | PD | Wolfe_1978 | not_relevant | 2 | 1 | The paper reports qualitative changes in receptor density and cAMP accumulation for iprindole but does not provide numeric PD parameters (e.g., Emax, EC50) or an exposure-response curve for the drug itself. |
+| PGx | Wolfe_1978 | not_relevant | 0 | 0 | The paper discusses antidepressants and beta adrenergic receptors in rats, but does not mention iprindole or pharmacogenomic effects. |
 
 
 </details>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper does not study cefoxitin, yet it contains clearance and volume parameters assigned to the drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="cefoxitin" model-id="Cefoxitin_Pacifici2010_reference" status="rejected" stale="false" population="" measured-compound="cefoxitin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Pacifici GM. Clinical Pharmacokinetics of Penicillins, Cephalosporins and Aminog
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper does not study cefoxitin, yet it contains clearance and volume parameters assigned to the drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The identity check failed, confirming the paper subject is not cefoxitin as neither title nor abstract names it. Despite this mismatch, the record lists a clearance of 1.3 mL/min/kg and a volume of distribution of 25.2068 L for cefoxitin. The second reader disagreed with two specific field values, noting that fields with record values of 20 and 50 were assessed as null. Extracted — cefoxitin: CL 1.3 mL/min/kg, V 25.2 L.
+Extracted — cefoxitin: CL 1.3 mL/min/kg, V 25.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q44: this record has 20, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.667 (4 of 6 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

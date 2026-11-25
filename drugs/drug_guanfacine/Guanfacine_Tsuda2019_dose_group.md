@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The guanfacine record was rejected because the peripheral compartment lacks a link from the dose and key concentration units could not be processed.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="guanfacine" model-id="Guanfacine_Tsuda2019_dose_group" status="rejected" stale="false" population="pediatric ADHD patients" measured-compound="guanfacine" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Tsuda Y, Matsuo Y, Matsumoto S, Wajima T. Population pharmacokinetic and exposur
 
 ### Reviewer guidance
 
-**The guanfacine record was rejected because the peripheral compartment lacks a link from the dose and key concentration units could not be processed.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The two-compartment structure contains an unreachable compartment, meaning it has no path from the dose. The steady-state AUC and Cmax units, ng$hr/mL and ng/mL, were unrecognized, so their values of 65 could not be interpreted. A second reader identified seven additional parameters that were left undefined. Extracted — guanfacine: V1 128 L, V2 129 L, AUCSS 65 ng$hr/mL, Cmax 65 ng/mL.
+A reported unit could not be converted (AUCSS and Cmax), so that value has no SI equivalent. Extracted — guanfacine: V1 128 L, V2 129 L, AUCSS 65 ng$hr/mL, Cmax 65 ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 29 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

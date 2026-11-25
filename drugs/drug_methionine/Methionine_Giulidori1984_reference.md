@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption parameters for S-adenosyl-L-methionine were assumed default values because the source only provided abstract-only summary statistics.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="methionine" model-id="Methionine_Giulidori1984_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="S-adenosyl-L-methionine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Giulidori P, Cortellaro M, Moreo G, Stramentinoli G. Pharmacokinetics of S-adeno
 
 ### Reviewer guidance
 
-**Absorption parameters for S-adenosyl-L-methionine were assumed default values because the source only provided abstract-only summary statistics.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The absorption rate constant and lag time were not reported in the paper, so generic placeholder values were used instead of specific estimates. Since the record was built from the abstract alone, summary statistics stood in for a fitted model, preventing the derivation of these parameters. The second reader also disagreed on the parameter mapping, resulting in a cross-check agreement of 0.364. Extracted — S-adenosyl-L-methionine: V/F 407 ml/kg, t1/2z 81 min, CLb 3.7 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is methionine's own; they describe S-adenosyl-L-methionine. Extracted — S-adenosyl-L-methionine: V/F 407 ml/kg, t1/2z 81 min, CLb 3.7 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent volume of distribution: this record has 407, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,7 +148,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.364, 0 of 1 reader(s) agree | 0.364 | cross-check agreement 0.364 is below 0.5: verdict partial, agreement 0.364, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.364 (4 of 11 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.364 | cross-check agreement 0.364 is below 0.5: verdict partial; agreement 0.364 (4 of 11 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -227,4 +227,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethionine%5D%20Methionine_Giulidori1984_reference&body=Drug%3A%20methionine%0ARecord%3A%20Methionine_Giulidori1984_reference%0APaper%3A%20Giulidori_1984%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methionine/Methionine_Giulidori1984_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 18:59 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:23 UTC</sub>

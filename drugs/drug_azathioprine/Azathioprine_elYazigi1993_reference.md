@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> Azathioprine clearance and inter-compartmental transfer rates were missing, leaving library placeholders in the model.
+> No value for azathioprine's clearance, central→peripheral rate constant and peripheral→central rate constant; the model does not reproduce the paper's terminal half-life (paper 0.652, model 6.1e+03) (+2 more).
 
 <div class="pk-model-meta" hidden drug="azathioprine" model-id="Azathioprine_elYazigi1993_reference" status="model_quarantined" stale="false" population="rabbits" measured-compound="azathioprine" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ el-Yazigi A, Wahab FA. Pharmacokinetics of azathioprine after repeated oral and 
 
 ### Reviewer guidance
 
-**Azathioprine clearance and inter-compartmental transfer rates were missing, leaving library placeholders in the model.**
+**No value for azathioprine's clearance, central→peripheral rate constant and peripheral→central rate constant; the model does not reproduce the paper's terminal half-life (paper 0.652, model 6.1e+03) (+2 more).**
 
-The record lacks explicit values for azathioprine clearance and the transfer constants between central and peripheral compartments, forcing the use of default placeholders. Consequently, the model was held back rather than published with invented numbers. Additionally, the model's terminal half-life is inconsistent with the paper's reported value, as the simulation produced a result far exceeding the expected 0.652. Extracted — azathioprine: λ1 15.3 1/h, kel 2.38 1/h, k12 2.79 1/h, k21 3.32 1/h, AUC 636 μg·hr/L, AUC∞ 709 μg·hr/L, CLR 8.12 L/hr·kg, V 7.89 L/kg, … (+1).
+The model was built, but azathioprine's clearance, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — azathioprine: λ1 15.3 1/h, kel 2.38 1/h, k12 2.79 1/h, k21 3.32 1/h, AUC 636 μg·hr/L, AUC∞ 709 μg·hr/L, CLR 8.12 L/hr·kg, V 7.89 L/kg, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auccalc].parameter_id`: this record has Q17, the second reading Q88; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -159,8 +159,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.812, 0 of 1 reader(s) agree | 0.812 | cross-check disputed by a second reader: verdict disputed, agreement 0.812, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 0.6517 | 6101 | 9362 | minutes→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.812 (13 of 16 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.812 | cross-check contradicted by a second reader: verdict disputed; agreement 0.812 (13 of 16 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 0.6517 | 6101 | 9362 | reported 39.1 minutes→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

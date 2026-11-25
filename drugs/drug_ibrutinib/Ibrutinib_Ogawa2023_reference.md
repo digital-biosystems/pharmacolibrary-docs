@@ -17,7 +17,7 @@ Ogawa T, Mita S, Atluri H, Iwaki Y. Population Pharmacokinetic and Exposure-Safe
 
 ## Population and dosing
 
-**Population:** subjects with chronic graft-versus-host disease · condition chronic graft-versus-host disease · n = 162.
+**Population:** subjects with chronic graft-versus-host disease · condition chronic graft-versus-host disease · age group adult.
 
 ## Model
 
@@ -31,11 +31,11 @@ Ogawa T, Mita S, Atluri H, Iwaki Y. Population Pharmacokinetic and Exposure-Safe
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| concomitant moderate CYP3A inhibitors | AUC ratio | 2.22 | fold |
+| relative bioavailability (F1) (moderate CYP3A inhibitors) | Frel | 2.22 | fold |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667), qwen3.8-27b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,49 +49,51 @@ Ogawa T, Mita S, Atluri H, Iwaki Y. Population Pharmacokinetic and Exposure-Safe
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of concomitant moderate cyp3a inhibitors: this record has 2.22, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 2.22, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | unit_canonical | link | source |
-|---|---|---|---|---|---|---|
-| concomitant moderate CYP3A inhibitors | `Q21` · AUC ratio | 2.22 | fold | fold | llm (0.6) | Ogawa_2023:abstract |
+| label (paper) | Q-code · name | value | unit | link | source |
+|---|---|---|---|---|---|
+| relative bioavailability (F1) (moderate CYP3A inhibitors) | `Q87` · Frel | 2.22 | fold | llm_confirmed (0.6) | Ogawa_2023:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'fold' (AUC ratio)
-- dropped unlinked row (NIL): 'concomitant strong CYP3A inhibitors' — extend the ontology if this is a real PK parameter (source ['Ogawa_2023:abstract'])
+- dropped unlinked row (NIL): 'number of subjects' — extend the ontology if this is a real PK parameter (source ['Ogawa_2023:abstract'])
+- dropped unlinked row (NIL): 'number of clinical studies' — extend the ontology if this is a real PK parameter (source ['Ogawa_2023:abstract'])
+- dropped unlinked row (NIL): 'ibrutinib dose (reduction)' — extend the ontology if this is a real PK parameter (source ['Ogawa_2023:abstract', 'Ogawa_2023:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ibrutinib
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Ogawa_2023_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Ogawa_2023_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 | `qwen3.8-27b` | partly confirmed | 0.8 (4/5 fields) | 1 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | 2.22 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability (f1)]` | 2.22 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[concomitant moderate cyp3a inhibitors]` | 2.22 |  | only_one_extracted |
 
 </details>
@@ -132,4 +134,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bibrutinib%5D%20Ibrutinib_Ogawa2023_reference&body=Drug%3A%20ibrutinib%0ARecord%3A%20Ibrutinib_Ogawa2023_reference%0APaper%3A%20Ogawa_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ibrutinib/Ibrutinib_Ogawa2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 01:23 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:12 UTC</sub>

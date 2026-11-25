@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The total clearance parameter for clesrovimab has a value of 0.579, which is outside the physiological window for an intravenous antibody.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="clesrovimab" model-id="Clesrovimab_Hu2026_reference" status="rejected" stale="false" population="preterm and full-term infants" measured-compound="clesrovimab" parameterization="apparent" topology="2C"></div>
 
@@ -42,7 +42,7 @@ Hu Z, Hellmann F, Zang X, Plock N, Parmar K, Railkar RA et al. Population Pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +52,13 @@ Hu Z, Hellmann F, Zang X, Plock N, Parmar K, Railkar RA et al. Population Pharma
 
 ### Reviewer guidance
 
-**The total clearance parameter for clesrovimab has a value of 0.579, which is outside the physiological window for an intravenous antibody.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists total clearance as 0.579 without a specified unit, distinct from the oral apparent clearance of 0.0197 L/day. This value is implausibly high for a monoclonal antibody in infants, indicating a likely extraction error. The findings specifically identify this clearance parameter as having an implausible magnitude. Extracted — clesrovimab: CL/F 0.0197 L/day, Q/F 0.0406 L/day, V1/F 0.514 L, V2/F 0.316 L, kabs 0.286 1/day, CL 0.579.
+Extracted — clesrovimab: CL/F 0.0197 L/day, Q/F 0.0406 L/day, V1/F 0.514 L, V2/F 0.316 L, kabs 0.286 1/day, CL 0.579.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of black a: this record has none, the second reading 13.2; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -118,6 +120,36 @@ The record lists total clearance as 0.579 without a specified unit, distinct fro
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (10/20 fields) | 10 |
+
+<details><summary>10 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[black a]` |  | 13.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bw effect on volumes (v c, v p)c]` |  | 0.662 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f, l/daya].rse_percent` | 21.3 |  | mismatch |
+| `gpt-oss-120b` | `parameters[k a].rse_percent` | 3.13 |  | mismatch |
+| `gpt-oss-120b` | `parameters[q/f, l/dayb].rse_percent` | 8.32 |  | mismatch |
+| `gpt-oss-120b` | `parameters[t50cl, monthsa]` | 20.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v c/f, lc].parameter_id` | Q290 | Q76 | mismatch |
+| `gpt-oss-120b` | `parameters[v c/f, lc].rse_percent` | 2.04 |  | mismatch |
+| `gpt-oss-120b` | `parameters[v p/f, lc].rse_percent` | 2.17 |  | mismatch |
+| `gpt-oss-120b` | `parameters[β cl a].rse_percent` | 20.5 |  | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

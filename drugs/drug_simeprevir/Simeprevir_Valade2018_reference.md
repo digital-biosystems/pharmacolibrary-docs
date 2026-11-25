@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Simeprevir inhibitory constant has units ng/mL instead of 1/time, and no clearance exists in this exposure paper.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q350 unit ng/mL ([mass] / [length] ** 3) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="simeprevir" model-id="Simeprevir_Valade2018_reference" status="rejected" stale="false" population="healthy adults" measured-compound="simeprevir" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Valade E, Valenzuela B, Kakuda TN, Westland C, McClure MW, Ouwerkerk-Mahadevan S
 
 ### Reviewer guidance
 
-**Simeprevir inhibitory constant has units ng/mL instead of 1/time, and no clearance exists in this exposure paper.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q350 unit ng/mL ([mass] / [length] ** 3) vs 1 / [time].**
 
-The record lacks distribution volume and clearance, confirming it is an exposure/outcome study rather than a compartmental population pharmacokinetic model. The inhibitory constant for simeprevir was recorded as 1610 ng/mL, creating a dimension mismatch with the expected 1/time units. Because only the abstract was read, these reported summary statistics stand in for a fitted model. A second reader disagreed that specific parameter values were present, noting them as null in their assessment. Extracted — simeprevir: Frel 26 %, kic 1.61e+03 ng/mL.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — simeprevir: Frel 26 %, kic 1.61e+03 ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has simeprevir, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,4 +140,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsimeprevir%5D%20Simeprevir_Valade2018_reference&body=Drug%3A%20simeprevir%0ARecord%3A%20Simeprevir_Valade2018_reference%0APaper%3A%20Valade_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_simeprevir/Simeprevir_Valade2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:23 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:36 UTC</sub>

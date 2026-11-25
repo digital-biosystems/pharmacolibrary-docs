@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Total clearance normalization was rejected because its body-surface-area unit lacked time, conflicting with required clearance dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q354 unit L/1.73 m2 ([length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Di2004_reference" status="rejected" stale="false" population="patients undergoing vitrectomy" measured-compound="ciprofloxacin" parameterization="apparent" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Di Marco MP, Chen J, Wainer IW, Ducharme MP. A population pharmacokinetic-metabo
 
 ### Reviewer guidance
 
-**Total clearance normalization was rejected because its body-surface-area unit lacked time, conflicting with required clearance dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q354 unit L/1.73 m2 ([length] ** 3) vs [length] ** 3 / [time].**
 
-The total clearance normalized to standard body size was reported in liters per 1.73 square meters, which represents volume only. This unit dimension conflicts with the parameter's required volume per time dimension. A second reader disagreed with the assignment of average creatinine clearance and the identification of the peripheral volume parameter. Extracted — ciprofloxacin: kcomp 0.244 1/h, V3/F 122 L, CLnorm 20.6 L/1.73 m2, kel 0.17 1/h, t1/2z 5 h, AUC∞ 134 mg · h/L, CL 75 mL/min, V/F 5.75 L/kg, … (+2).
+A reported unit could not be converted (CLnorm), so that value has no SI equivalent. Extracted — ciprofloxacin: kcomp 0.244 1/h, V3/F 122 L, CLnorm 20.6 L/1.73 m2, kel 0.17 1/h, t1/2z 5 h, AUC∞ 134 mg · h/L, CL 75 mL/min, V/F 5.75 L/kg, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average creatinine clearance: this record has 75, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

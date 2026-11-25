@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> This paper's disposition core is incomplete.
+> Only volume was extracted — no clearance.
 
 <div class="pk-model-meta" hidden drug="fampridine" model-id="Fampridine_Capacio1996_reference" status="needs_review" stale="false" population="anaesthetized guinea pigs" measured-compound="4-aminopyridine" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Capacio BR, Byers CE, Matthews RL, Chang FC. A method for determining 4-aminopyr
 
 ## Population and dosing
 
-**Population:** anaesthetized guinea pigs · condition healthy (anaesthetized, saxitoxin/tetrodotoxin diaphragmatic failure model) · age group adult.
+**Population:** anaesthetized guinea pigs · condition healthy.
 
 > **Species: pig.** This record comes from an animal study (pig), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -25,7 +25,7 @@ Capacio BR, Byers CE, Matthews RL, Chang FC. A method for determining 4-aminopyr
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -35,14 +35,10 @@ Capacio BR, Byers CE, Matthews RL, Chang FC. A method for determining 4-aminopyr
 |---|---|---|---|
 | alpha-half-life | t1/2α | 0.37 | min |
 | volume of distribution at steady state | Vss | 1036.18 | mL/kg |
-| observed value in HVs (400-mg dose) | CL | 37.7 | L/h |
-| volume of distribution (V) | V | 50.0 | L |
-| k a (h À1 ) | kabs | 0.17 | h À1 |
-| T P1 | tlag | 42.97 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +48,11 @@ Capacio BR, Byers CE, Matthews RL, Chang FC. A method for determining 4-aminopyr
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Only volume was extracted — no clearance.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Baklouti_2026, Bauer_2025, Ji_2026, Simon_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fampridine: t1/2α 0.37 min, Vss 1.04e+03 mL/kg, CL 37.7 L/h, V 50 L, kabs 0.17 h À1, tlag 43 h.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fampridine: t1/2α 0.37 min, Vss 1.04e+03 mL/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has 4-aminopyridine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,12 +60,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| alpha-half-life | `Q59` · t1/2α | 0.37 | min | 22.2 | s | min | llm_corrected (0.6) | Capacio_1996:abstract |
+| alpha-half-life | `Q59` · t1/2α | 0.37 | min | 22.2 | s | min | half_life_rule (0.95) | Capacio_1996:abstract |
 | volume of distribution at steady state | `Q65` · Vss | 1036.18 | mL/kg | 0.07253 | m3 | ml/kg | llm_corrected (0.6) | Capacio_1996:abstract |
-| observed value in HVs (400-mg dose) | `Q22` · CL | 37.7 | L/h | 1.047e-05 | m3/s | L/h | review_gapfill (0.7) | Ji_2026:review |
-| volume of distribution (V) | `Q61` · V | 50.0 | L | 0.05 | m3 | L | review_gapfill (0.7) | Simon_2026:review |
-| k a (h À1 ) | `Q49` · kabs | 0.17 | h À1 | 4.722e-05 | 1/s | 1/h | review_gapfill (0.7) | Baklouti_2026:review |
-| T P1 | `Q83` · tlag | 42.97 | h | 1.547e+05 | s | h | review_gapfill (0.7) | Bauer_2025:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -83,41 +75,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=4-aminopyridine
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Ji_2026's review values (primary lacked it)
-- gap-filled Q61 (V) from Simon_2026's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Baklouti_2026's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Bauer_2025's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Capacio_1996_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>10 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[alpha-half-life]` | 0.37 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[alpha-half-life]` |  | 0.37 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k a]` | 0.17 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[observed value in hvs]` | 37.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t p1]` | 42.97 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` | 1036.18 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` |  | 1036.18 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 50.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | 4-aminopyridine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | 4-aminopyridine | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -132,16 +103,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Ji_2026:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Baklouti_2026:review'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Capacio_1996:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Simon_2026:review'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Capacio_1996:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Bauer_2025:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 37.7 | ['Ji_2026:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 37.7 L/h | ['Ji_2026:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 50 L | ['Simon_2026:review'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 72.5 L | ['Capacio_1996:abstract'] |
 
 <details class="legend">
@@ -176,4 +140,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfampridine%5D%20Fampridine_Capacio1996_reference&body=Drug%3A%20fampridine%0ARecord%3A%20Fampridine_Capacio1996_reference%0APaper%3A%20Capacio_1996%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fampridine/Fampridine_Capacio1996_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 04:47 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:10 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cilazaprilat Cmax and AUC∞ parameters were rejected because their reported units do not match the required dimensions for concentration and area under the curve.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit 0.014 (dimensionless) vs [mass] / [length] ** 3; Q17 unit h ([time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Anderson1996_caucasian" status="rejected" stale="false" population="healthy normotensive Chinese and Caucasian volunteers" measured-compound="cilazaprilat" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Anderson PJ, Critchley JA, Tomlinson B. A comparison of the pharmacokinetics and
 
 ### Reviewer guidance
 
-**Cilazaprilat Cmax and AUC∞ parameters were rejected because their reported units do not match the required dimensions for concentration and area under the curve.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit 0.014 (dimensionless) vs [mass] / [length] ** 3; Q17 unit h ([time]) vs [mass] * [time] / [length] ** 3.**
 
-The record lists the unit for Cmax as 0.014 and the unit for AUC∞ as h, which are incompatible with the dimensions for concentration and area under the curve. A second reader disagreed on the primary analyte and the plasma clearance value, noting a discrepancy of 0.27. Extracted — cilazaprilat: Cmax 28.4 0.014, AUC∞ 241 h, t1/2z 2.1 h, CL 270 mL/kg/h, V 8.7 L, tlag -1.6 h.
+A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. None of the extracted parameters is cilazapril's own; they describe cilazaprilat. Extracted — cilazaprilat: Cmax 28.4 0.014, AUC∞ 241 h, t1/2z 2.1 h, CL 270 mL/kg/h, V 8.7 L, tlag -1.6 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has cilazaprilat, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

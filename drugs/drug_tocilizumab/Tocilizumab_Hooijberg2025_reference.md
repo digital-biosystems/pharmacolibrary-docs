@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Tocilizumab’s Vmax of 5.2 mg/d was refused for a reported structural-parameter unit mismatch, although both stated dimensions are mass/time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/d ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="tocilizumab" model-id="Tocilizumab_Hooijberg2025_reference" status="rejected" stale="false" population="patients with rheumatoid arthritis" measured-compound="tocilizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Hooijberg F, van den Berg SPH, Layegh Z, Leeuw M, Elkayam O, de Vries A et al. P
 
 ### Reviewer guidance
 
-**Tocilizumab’s Vmax of 5.2 mg/d was refused for a reported structural-parameter unit mismatch, although both stated dimensions are mass/time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/d ([mass] / [time]) vs [mass] / [time].**
 
-Vmax represents the maximum rate of enzymatic metabolism, and its reported unit is mg/d. The finding calls mg/d ([mass]/[time]) incompatible with [mass]/[time], so the stated dimensions do not substantiate the mismatch. The record was abstract-only, so reported summary statistics stood in for a fitted model; a second reader disagreed over whether tocilizumab and the reported parameter values were present. Extracted — tocilizumab: CL 0.2 L/d, Vmax 5.2 mg/d, Km 0.19 mg/L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tocilizumab: CL 0.2 L/d, Vmax 5.2 mg/d, Km 0.19 mg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tocilizumab, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

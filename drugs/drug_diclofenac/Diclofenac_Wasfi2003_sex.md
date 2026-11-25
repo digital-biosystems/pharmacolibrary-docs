@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
-> Diclofenac area under the first moment curve unit dimension conflicted with its mass-time definition, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit µg h⁻¹ ml⁻¹ ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q20 unit µg h⁻¹ ml⁻¹ ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Wasfi2003_sex" status="rejected" stale="false" population="camels" measured-compound="diclofenac" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,7 +50,7 @@ Wasfi IA, Hussain MM, Elghazali M, Alkatheeri NA, Abdel Hadi AA. The disposition
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.294). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,11 +60,13 @@ Wasfi IA, Hussain MM, Elghazali M, Alkatheeri NA, Abdel Hadi AA. The disposition
 
 ### Reviewer guidance
 
-**Diclofenac area under the first moment curve unit dimension conflicted with its mass-time definition, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit µg h⁻¹ ml⁻¹ ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q20 unit µg h⁻¹ ml⁻¹ ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The record lists the area under the first moment curve in units of micrograms per hour per milliliter, which represents mass divided by time and volume. This conflicts with the required dimension of mass times time divided by volume for a first-moment integral. The missing conversion for this specific unit prevented standardization, leading to the model's refusal. Extracted — diclofenac: A1 12.5 µg, t1/2α 0.34 h, t1/2β 2.25 h, AUC 12.1 µg h⁻¹ ml⁻¹, CL 0.21 l h⁻¹ kg⁻¹, Vss 0.39 l.kg⁻¹, V1 1.37 l.kg⁻¹, AUMC 22.7 µg h⁻¹ ml⁻¹, … (+4).
+A reported unit could not be converted (A1, AUC and AUMC), so that value has no SI equivalent. Extracted — diclofenac: A1 12.5 µg, t1/2α 0.34 h, t1/2β 2.25 h, AUC 12.1 µg h⁻¹ ml⁻¹, CL 0.21 l h⁻¹ kg⁻¹, Vss 0.39 l.kg⁻¹, V1 1.37 l.kg⁻¹, AUMC 22.7 µg h⁻¹ ml⁻¹, … (+4).
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 12.5, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -107,6 +109,38 @@ The record lists the area under the first moment curve in units of micrograms pe
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.294 (5/17 fields) | 12 |
+
+<details><summary>12 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 12.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc].value` | 12.1 | 14.2 | mismatch |
+| `gpt-oss-120b` | `parameters[aumc].value` | 22.7 | 31.7 | mismatch |
+| `gpt-oss-120b` | `parameters[b]` |  | 1.81 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clt].value` | 0.21 | 0.18 | mismatch |
+| `gpt-oss-120b` | `parameters[k a]` | 0.94 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time 1]` | 0.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt].value` | 1.87 | 2.23 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2α].value` | 0.34 | 0.36 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2β].value` | 2.25 | 2.73 | mismatch |
+| `gpt-oss-120b` | `parameters[vc].value` | 1.37 | 0.16 | mismatch |
+| `gpt-oss-120b` | `parameters[vd (area)].value` | 0.67 | 0.69 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

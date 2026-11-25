@@ -50,7 +50,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:37 | 0:38 | 0/0/0 | 15/0/0 | 0/0/0 | 84,804/3,821 | ollama / glm-5.3-flash | 5 | 0/5 | 5/0 | 0 |
+| 2026-11-24 05:58 | 0:04 | 0/0/0 | 15/0/0 | 0/0/0 | 3,645/182 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
 
 ## Coverage
 
@@ -64,8 +64,10 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Haviernik_2018 | irrelevant | 0 | 0 | In vitro antiviral/cytotoxicity study (EC50/CC50 in cell lines) with no PK disposition parameters for umifenovir. |
-| popPK | Joshi_2021 | irrelevant | 0 | 0 | This is a review of favipiravir; umifenovir appears only as a comparator in clinical trials, with no umifenovir PK parameters reported. |
-| popPK | Kali_2021 | irrelevant | 0 | 0 | In-vitro antiviral mechanism study; umifenovir is only a comparator, no PK parameters reported. |
+| popPK | Joshi_2021 | irrelevant | 0 | 0 | The paper is a review of favipiravir for COVID-19, and umifenovir is only mentioned as a comparator drug in clinical trial results, with no pharmacokinetic data provided for umifenovir. |
+| PGx | Joshi_2021 | not_relevant | 0 | 0 | The paper is a review on favipiravir and mentions umifenovir only for clinical efficacy comparison; it does not report pharmacogenomic effects on PK/PD parameters. |
+| popPK | Kali_2021 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of rabies virus inhibition where umifenovir serves only as a comparator, with no pharmacokinetic parameters reported. |
+| PGx | Kali_2021 | not_relevant | 0 | 0 | The paper discusses the mechanism of action of ABMA and DABMA against Rabies Virus compared to umifenovir, but does not report any pharmacogenomic effects (gene variants) on the PK or PD parameters of umifenovir. |
 | popPK | Leneva_2021 | irrelevant | 1 | 1 | In vitro antiviral potency study (EC50/CC50 in cell lines); no PK disposition parameters (CL, V, ka, compartmental model) for umifenovir; the "half-life ~24 h" refers to antiviral effect kinetics in MDCK cells, not a PK model. |
 | popPK | Mottin_2026 | irrelevant | 2 | 1 | This is a medicinal chemistry/antiviral study of umifenovir derivatives; umifenovir is only a benchmark comparator, and PK parameters (mouse PK for compound 11) are for a different drug with values not shown in the evidence. |
 | popPK | Romanowski_2021 | irrelevant | 0 | 0 | In vitro EC50 antiviral potency study in A549 cells; no PK disposition parameters (CL, V, half-life, model) for umifenovir. |

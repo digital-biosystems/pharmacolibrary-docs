@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The renal clearance coefficient is negative and the weight exponent unit cannot be converted to SI units.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong); c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="Durlobactam" model-id="Durlobactam_Cammarata2025_final" status="rejected" stale="false" population="adults" measured-compound="durlobactam" parameterization="apparent" topology="3C"></div>
 
@@ -49,7 +49,7 @@ Cammarata AP, Safir MC, Trang M, Larson KB, O'Donnell JP, Bhavnani SM et al. Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.238). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,11 +59,13 @@ Cammarata AP, Safir MC, Trang M, Larson KB, O'Donnell JP, Bhavnani SM et al. Pop
 
 ### Reviewer guidance
 
-**The renal clearance coefficient is negative and the weight exponent unit cannot be converted to SI units.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong); c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The renal portion of total clearance is recorded as -0.58, a value that is physiologically impossible for a clearance component. Additionally, the weight exponent of 0.875 has a unit that could not be converted to SI, so the parameter reached the model builder without a valid value. Extracted — durlobactam: CL 9.33 L/h, V1 12.5 L, Q 4.43 L/h, V2 5.83 L, fe 0.479 %, V 0.343 L, CLR -0.58, V3/F 1.43 L, … (+1).
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — durlobactam: CL 9.33 L/h, V1 12.5 L, Q 4.43 L/h, V2 5.83 L, fe 0.479 %, V 0.343 L, CLR -0.58, V3/F 1.43 L, … (+1).
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -162,6 +164,42 @@ The renal portion of total clearance is recorded as -0.58, a value that is physi
 - LLM selected parameter table(s) 1, 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.238 (5/21 fields) | 16 |
+
+<details><summary>16 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[bclcrnlt30]` | -0.58 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl].rse_percent` | 3.24 | 14.0 | mismatch |
+| `gpt-oss-120b` | `parameters[cl].value` | 9.33 | 13.5 | mismatch |
+| `gpt-oss-120b` | `parameters[clinftypn1]` | -0.424 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q].rse_percent` | 3.77 | 18.9 | mismatch |
+| `gpt-oss-120b` | `parameters[q].value` | 4.43 | 7.88 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_clr_weight_power]` | 0.875 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q26_weight_power]` |  | 1.14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1inftypn3]` | 0.343 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3inftypn1]` |  | 0.836 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3inftypn2]` | 1.43 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v3inftypn4]` | 1.85 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc].rse_percent` | 2.93 | 8.90 | mismatch |
+| `gpt-oss-120b` | `parameters[vp].rse_percent` | 3.44 | 9.29 | mismatch |
+| `gpt-oss-120b` | `parameters[vp].value` | 5.83 | 6.99 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

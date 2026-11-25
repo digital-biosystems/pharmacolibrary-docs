@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Etilefrine's volume of distribution parameter was rejected due to dimension mismatch and an unlinked compartment in the one-compartment structure.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q64 unit 1 (dimensionless) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="etilefrine" model-id="Etilefrine_Hengstmann1975_reference" status="rejected" stale="false" population="man" measured-compound="etilefrine" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Hengstmann JH, Weyand U, Dengler HJ. The physiological disposition of etilefrine
 
 ### Reviewer guidance
 
-**Etilefrine's volume of distribution parameter was rejected due to dimension mismatch and an unlinked compartment in the one-compartment structure.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q64 unit 1 (dimensionless) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The volume of distribution value of 160 was assigned the dimensionless unit '1', conflicting with the required cubic length dimension. Additionally, the second reader disagreed on the parameter mapping, identifying the value 160 as volume of distribution rather than the specific beta phase parameter. These structural and dimensional errors, combined with the abstract-only source, led to the record's rejection. Extracted — etilefrine: Fab 0.55, V2 160 1, t1/2z 2 hours.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — etilefrine: Fab 0.55, V2 160 1, t1/2z 2 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of vd, beta: this record has 160, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

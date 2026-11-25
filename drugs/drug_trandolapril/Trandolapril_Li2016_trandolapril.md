@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Trandolaprilat was rejected as an orphan metabolite because its hydrolysis link lacked a rate parameter and a dose compound was not confirmed.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="trandolapril" model-id="Trandolapril_Li2016_trandolapril" status="rejected" stale="false" population="healthy Chinese subjects" measured-compound="trandolapril" parameterization="apparent" topology="general_linear"></div>
 
@@ -56,13 +56,13 @@ Li X, Liu C, Wu M, Zhang H, Sun Y, Cheng L et al. Pharmacokinetics, Pharmacodyna
 
 ### Reviewer guidance
 
-**Trandolaprilat was rejected as an orphan metabolite because its hydrolysis link lacked a rate parameter and a dose compound was not confirmed.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The metabolite trandolaprilat is structurally defined as formed in the central compartment, but the hydrolysis link from trandolapril has no associated parameter value, rendering the metabolite unreachable from the dose. Additionally, a reported unit for a parameter could not be converted to SI, preventing the parameter from receiving a standardized value. The second reader disagreed with the identification of the dose compound and primary analyte as trandolapril, marking both as unknown, and failed to extract several summary statistics including Cmax and AUC 0-t. Extracted — trandolapril: Cmax 3.77 ng/mL, Cmin 0 ng/mL, Cavg 0 ng/mL, tmax 0.444 h, AUCt 3.46 ng/mL·h, t1/2z 5.12 h, V/F 4.79e+03 L, CL/F 658 L/h, … (+3).
+A reported unit could not be converted (Cmax, Cmin, Cavg and AUCt), so that value has no SI equivalent. Extracted — trandolapril: Cmax 3.77 ng/mL, Cmin 0 ng/mL, Cavg 0 ng/mL, tmax 0.444 h, AUCt 3.46 ng/mL·h, t1/2z 5.12 h, V/F 4.79e+03 L, CL/F 658 L/h, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trandolapril, the second reading unknown; it also differs on 23 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

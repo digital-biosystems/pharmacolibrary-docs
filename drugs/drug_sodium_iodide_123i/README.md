@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Tonacchera_2004_125_I_uptake](drugs/drug_sodium_iodide_123i/pd_Tonacchera_2004_125_I_uptake.md) | (125)I(-) uptake ← iodide (I(-)) · direct sigmoid Emax (Hill) effect | — | Tonacchera M et al., Relative potencies and additivity of pe…, Thyroid : official journal… (2004) | [10.1089/thy.2004.14.1012](https://doi.org/10.1089/thy.2004.14.1012) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Tonacchera_2004_125_I_uptake](drugs/drug_sodium_iodide_123i/pd_Tonacchera_2004_125_I_uptake.md) | (125)I(-) uptake ← perchlorate, thiocyanate, nitrate, and iodide · direct sigmoid Emax (Hill) effect | — | Tonacchera M et al., Relative potencies and additivity of pe…, Thyroid : official journal… (2004) | [10.1089/thy.2004.14.1012](https://doi.org/10.1089/thy.2004.14.1012) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:49 | 1:42 | 0/0/0 | 0/1/0 | 0/0/0 | 72,811/4,369 | openai / gpt-6-luna | 3 | 0/3 | 3/0 | 0 |
+| 2026-11-24 03:32 | 0:12 | 0/0/0 | 0/1/0 | 0/0/0 | 6,072/1,539 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## Coverage
 
@@ -49,17 +49,26 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Adams_2020 | irrelevant | 0 | 0 | The paper studies 5-aminotetrazole toxicity, not sodium_iodide_123i pharmacokinetics. |
-| popPK | Chan_2012 | irrelevant | 0 | 0 | This is a zebrafish toxicology study of other chemicals, not a sodium_iodide_123i pharmacokinetic study. |
-| popPK | Hays_1979 | irrelevant | 0 | 0 | The study models thyroidal pertechnetate trapping; sodium iodide is an intervention, not the subject drug with reported PK parameters. |
-| popPK | Kogai_2005 | irrelevant | 0 | 0 | This is an in-vitro study of NIS regulation and iodide uptake, not sodium_iodide_123i pharmacokinetics. |
-| popPK | Kramer_2002 | irrelevant | 0 | 0 | The reported retention parameters are for iodine-131, not sodium_iodide_123i. |
+| popPK | Adams_2020 | irrelevant | 0 | 0 | The paper studies the toxicology of 5-aminotetrazole and only mentions the sodium iodide symporter test for uptake inhibition, providing no pharmacokinetic parameters for sodium iodide 123I. |
+| PGx | Adams_2020 | not_relevant | 0 | 0 | The paper is a toxicity study of 5-aminotetrazole and does not report pharmacogenomic effects on the PK/PD of sodium_iodide_123i. |
+| popPK | Chan_2012 | irrelevant | 0 | 0 | The study investigates the effects of brominated flame retardants on gene expression in zebrafish and does not report pharmacokinetic parameters for sodium iodide 123I. |
+| PGx | Chan_2012 | not_relevant | 0 | 0 | The paper reports toxicological effects of environmental chemicals on zebrafish gene expression, not a pharmacogenomic effect on the PK/PD of sodium iodide I-123. |
+| popPK | Hays_1979 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for Tc-99m pertechnetate, not sodium iodide 123i. |
+| PGx | Hays_1979 | not_relevant | 0 | 0 | The paper studies physiological effects of iodide, TSH, and PTU on thyroid kinetics using Tc-99m, but does not involve sodium iodide 123I or any pharmacogenomic gene variants. |
+| popPK | Kogai_2005 | irrelevant | 0 | 0 | The study focuses on the molecular regulation of sodium/iodide symporter expression and cytotoxicity using iodine-131 in breast cancer cells, not the pharmacokinetic disposition of sodium iodide 123i. |
+| PGx | Kogai_2005 | not_relevant | 0 | 0 | The paper investigates the regulation of sodium/iodide symporter expression by retinoids in cancer cells, focusing on I-131 cytotoxicity, and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of I-123. |
+| popPK | Kramer_2002 | irrelevant | 1 | 5 | The study measures the pharmacokinetics of Iodine-131 (131I), a different isotope from the target drug Iodine-123 (123I), in human subjects. |
+| PGx | Kramer_2002 | not_relevant | 0 | 0 | The study investigates biological half-life and uptake of I-131 in relation to thyroid status (functional phenotype) rather than specific genetic variants, and does not assess pharmacogenomic effects on PK/PD parameters. |
 | popPK | Latif_2020 | irrelevant | 0 | 0 | This is an in-vitro TSH receptor agonist study, not a pharmacokinetic study of sodium_iodide_123i. |
-| popPK | Murr_2025 | irrelevant | 0 | 0 | The study evaluates oxyfluorfen’s endocrine effects in rats and reports no pharmacokinetic parameters for sodium_iodide_123i. |
+| popPK | Murr_2025 | irrelevant | 0 | 0 | The study investigates the toxicological effects of the herbicide oxyfluorfen on rat puberty and thyroid function, not the pharmacokinetics of sodium iodide 123i. |
+| PGx | Murr_2025 | not_relevant | 0 | 0 | The paper reports on endocrine disruption by oxyfluorfen, not a pharmacogenomic effect on the pharmacokinetics or pharmacodynamics of sodium iodide 123i. |
 | popPK | Neumann_2016 | irrelevant | 0 | 0 | This is a pharmacology study of a TSH receptor agonist, not a quantitative PK study of sodium_iodide_123i. |
-| popPK | Rosowsky_1997 | irrelevant | 0 | 0 | This is an in-vitro antiviral activity study of PFA-AZT, not a pharmacokinetic study of sodium_iodide_123i. |
-| popPK | Stoker_2024 | irrelevant | 0 | 0 | The study examines oxyfluorfen in rats, not sodium_iodide_123i, and reports no PK parameters for it. |
-| popPK | Tonacchera_2004 | irrelevant | 0 | 0 | This in-vitro uptake-inhibition study reports no pharmacokinetic disposition parameters for sodium_iodide_123i. |
+| popPK | Rosowsky_1997 | irrelevant | 0 | 0 | The paper reports in vitro antiviral activity (EC50/TC50) of synthetic HIV-1 inhibitors, not pharmacokinetic parameters for sodium iodide 123i. |
+| PGx | Rosowsky_1997 | not_relevant | 0 | 0 | The paper studies HIV-1 antiviral chemistry and does not involve sodium iodide 123i or pharmacogenomics. |
+| popPK | Stoker_2024 | irrelevant | 0 | 0 | The study evaluates the herbicide oxyfluorfen as a sodium iodide symporter inhibitor in rats, not the pharmacokinetics of sodium iodide 123i. |
+| PGx | Stoker_2024 | not_relevant | 0 | 0 | The paper evaluates the effects of the herbicide oxyfluorfen on thyroid hormones in rats and does not involve the drug sodium iodide I-123i or any pharmacogenomic analysis. |
+| popPK | Tonacchera_2004 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of competitive inhibition of the sodium iodide symporter (NIS) by various anions, not a pharmacokinetic study of sodium iodide I-123i. |
+| PGx | Tonacchera_2004 | not_relevant | 0 | 0 | The study investigates competitive inhibition of NIS by various anions in cell cultures, not the effect of a specific genetic variant on the pharmacokinetics or pharmacodynamics of sodium iodide 123I in humans. |
 
 
 </details>

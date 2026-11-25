@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The review found a disagreement on the clindamycin absorption rate constant value, which caused the record to be held back for further examination.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Mimram2022_reference" status="needs_review" stale="false" population="adults with prosthetic joint infections" measured-compound="clindamycin" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Mimram L, Magréault S, Kerroumi Y, Salmon D, Kably B, Marmor S et al. Populatio
 
 ### Reviewer guidance
 
-**The review found a disagreement on the clindamycin absorption rate constant value, which caused the record to be held back for further examination.**
+**cross_check_disputed; x1_cross_check.**
 
-The extracted absorption rate constant was 3.53 /h, but the second reader identified a value of 3.71 for the same parameter. This mismatch created a disputed cross-check outcome with an agreement of 0.857. Additionally, the time to lag was not explicitly estimated and relied on default conventions. Extracted — clindamycin: CL/F 23 L/h, V/F 103 L, kabs 3.53 /h.
+Extracted — clindamycin: CL/F 23 L/h, V/F 103 L, kabs 3.53 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[ka].value`: this record has 3.53, the second reading 3.71. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -154,7 +154,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | cross-check disputed by a second reader: verdict disputed, agreement 0.857, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.857 (6 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | cross-check contradicted by a second reader: verdict disputed; agreement 0.857 (6 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

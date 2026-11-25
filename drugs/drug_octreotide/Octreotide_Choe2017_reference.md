@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the paper is about another drug, not octreotide.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="octreotide" model-id="Octreotide_Choe2017_reference" status="rejected" stale="false" population="" measured-compound="octreotide" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Choe S, Lee D. Parameter estimation for sigmoid E&lt;sub&gt;max&lt;/sub&gt; mode
 
 ### Reviewer guidance
 
-**The record was rejected because the paper is about another drug, not octreotide.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source text confirms the paper is a simulation study using virtual drugs, with octreotide cited only as background. Consequently, the extracted parameters for octreotide do not originate from the study's primary analysis. Discrepancies between the extracted values and a second reader's values further indicate the data mismatch. Extracted — octreotide: CL/F 5 L/hr, V/F 100 L, kabs 1 hr-1.
+Extracted — octreotide: CL/F 5 L/hr, V/F 100 L, kabs 1 hr-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q310: this record has none, the second reading 12.5; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.692, 0 of 1 reader(s) agree | 0.692 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.692 (9 of 13 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.692 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

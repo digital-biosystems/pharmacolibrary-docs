@@ -38,7 +38,7 @@ Fructose is a carbohydrate nutrient. It is given orally or by intravenous inject
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:40 | 3:39 | 0/1/0 | 1/0/0 | 0/0/0 | 208,703/9,994 | ollama / glm-5.3-flash | 6 | 3/3 | 5/1 | 0 |
+| 2026-11-24 00:25 | 0:04 | 0/1/0 | 1/0/0 | 0/0/0 | 4,175/159 | einfracz / qwen3.8-27b | 6 | 3/3 | 5/1 | 0 |
 
 ## Coverage
 
@@ -47,43 +47,48 @@ Fructose is a carbohydrate nutrient. It is given orally or by intravenous inject
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Pettit_1976.pdf` | Pettit GW et al., Oral fructose tolerance, gastric emptyi…, Archives internationales de… (1976) | popPK | 7 | [10.3109/13813457609078567](https://doi.org/10.3109/13813457609078567) | [64136](https://pubmed.ncbi.nlm.nih.gov/64136) | Compartmental model of fructose absorption with numeric parameters (tau, k1, Ae) reported directly in the abstract. |
-
-<sub>queue written 2026-10-07 22:38 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abdussalam_2018 | irrelevant | 0 | 0 | Fructose is only a dietary intervention; the PK parameters (CL, population PK model) are for amiodarone, not fructose. |
-| popPK | Baugh_2023 | irrelevant | 1 | 2 | This is an indirect calorimeter validation study measuring metabolic rate/carbohydrate oxidation after fructose ingestion — no PK disposition parameters (CL, V, ka, half-life) for fructose are reported. |
+| popPK | Abdussalam_2018 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of amiodarone in rats; fructose is only a component of the high-calorie diet used to induce obesity and is not the subject drug. |
+| PGx | Abdussalam_2018 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of amiodarone, not fructose, and reports effects of a high-fat/high-fructose diet on drug metabolism rather than a pharmacogenomic effect on fructose. |
+| popPK | Baugh_2023 | irrelevant | 0 | 0 | The study measures whole-body metabolic response (respiratory exchange ratio and substrate oxidation) to a small carbohydrate load using indirect calorometry, rather than reporting pharmacokinetic parameters (CL, V, ka) for fructose. |
+| PGx | Baugh_2023 | not_relevant | 0 | 0 | The paper evaluates a metabolic chamber and the metabolic response to carbohydrates, not a pharmacogenomic effect of fructose. |
 | popPK | Cavichi_2023 | irrelevant | 0 | 0 | This is a phytochemical/nutritional composition study of a wild plant; fructose appears only as a plant sugar content, with no PK parameters. |
 | popPK | Choe_2003 | irrelevant | 0 | 0 | This is an in-vitro enzyme kinetics study of fructose-1,6-bisphosphatase, not a pharmacokinetic study of fructose; no PK parameters for fructose are reported. |
-| popPK | Cui_2024 | irrelevant | 0 | 0 | Fructose is only used to induce hypertension in rats; no PK parameters for fructose are reported. |
-| popPK | Di_2008 | irrelevant | 0 | 0 | The drug studied is metoprolol; fructose is only a dietary model for hypertension, not the subject drug with PK parameters. |
-| popPK | Faber_1992 | irrelevant | 0 | 0 | A review of ovine maternofetal water transfer where fructose is merely mentioned as an osmotic solute, with no PK parameters for fructose. |
-| popPK | Hsu_1997 | irrelevant | 0 | 0 | This is a rat cardiomyopathy study using a fructose diet; no pharmacokinetic parameters (CL, V, half-life, PK model) for fructose are reported. |
-| popPK | Katakam_1998 | irrelevant | 0 | 0 | Fructose is only a dietary intervention; no PK parameters for fructose are reported. |
-| popPK | Kelley-Loughnane_2002 | irrelevant | 0 | 0 | This is an in-vitro enzyme kinetics study of bacterial FBPase, not a pharmacokinetic study of fructose disposition. |
-| popPK | Kiger_2001 | irrelevant | 2 | 8 | The PK model quantifies 10B-boronophenylalanine (BPA) complexed with fructose, so fructose is only a formulation carrier, not the subject drug, though numeric parameters are fully present. |
-| popPK | Kreuzberg_1978 | irrelevant | 0 | 0 | In-vitro yeast enzyme kinetics study, not pharmacokinetic disposition of fructose. |
+| popPK | Cui_2024 | irrelevant | 0 | 0 | The paper investigates the mechanistic role of Piezo channels in hypertension where fructose is used only as a dietary inducer of the disease model, not as a subject drug for pharmacokinetic analysis. |
+| PGx | Cui_2024 | not_relevant | 0 | 0 | The study investigates the role of Piezo1 channels in blood pressure regulation using fructose as a dietary intervention to induce hypertension, not as a drug subject to pharmacogenomic analysis. |
+| popPK | Di_2008 | irrelevant | 0 | 0 | The subject drug is metoprolol, and fructose is used only as a dietary agent to induce hypertension, so no pharmacokinetic parameters for fructose are reported. |
+| PGx | Di_2008 | not_relevant | 0 | 10 | The study investigates the effect of a dietary phenotype (fructose feeding) on drug response, not a genetic variant (pharmacogenomics). |
+| popPK | Faber_1992 | irrelevant | 0 | 0 | The paper is a review on maternofetal water transfer in sheep where fructose is mentioned only as a solute contributing to osmotic pressure, not as a subject drug for PK parameter estimation. |
+| PGx | Faber_1992 | not_relevant | 0 | 0 | The paper discusses water transfer across the ovine placenta and does not report pharmacogenomic effects on the pharmacokinetic or pharmacodynamic parameters of fructose. |
+| popPK | Hsu_1997 | irrelevant | 0 | 0 | The study investigates cardiac mechanics and diabetic cardiomyopathy in rats using a fructose diet as a metabolic model, not the pharmacokinetics of fructose itself. |
+| PGx | Hsu_1997 | not_relevant | 0 | 0 | The paper studies the effect of a fructose diet on cardiac mechanics in rats to model diabetic cardiomyopathy; it does not investigate the pharmacokinetics or pharmacodynamics of fructose as a drug, nor does it report any pharmacogenomic effects. |
+| popPK | Katakam_1998 | irrelevant | 0 | 0 | The study investigates the effects of a fructose-rich diet on endothelial function and blood pressure, not the pharmacokinetics of fructose. |
+| PGx | Katakam_1998 | not_relevant | 0 | 0 | The study investigates the physiological effects of a fructose-rich diet on blood pressure and endothelial function, not the pharmacokinetics or pharmacodynamics of fructose itself modulated by genetic variants. |
+| popPK | Kelley-Loughnane_2002 | irrelevant | 0 | 0 | The paper describes in vitro enzyme kinetics (kcat, Km) of fructose-1,6-bisphosphatase, not the pharmacokinetics of fructose as a drug in a biological system. |
+| PGx | Kelley-Loughnane_2002 | not_relevant | 0 | 0 | The study focuses on the kinetic characterization of a bacterial enzyme and does not report pharmacogenomic effects on the PK or PD of fructose. |
+| popPK | Kiger_2001 | irrelevant | 2 | 2 | The paper models the pharmacokinetics of the boron atom (10B) from the BPA-F complex, not the disposition of fructose itself. |
+| PGx | Kiger_2001 | not_relevant | 0 | 0 | The paper describes a general pharmacokinetic model for boronophenylalanine-fructose but does not report any effects of gene variants, genotypes, or genotypes on PK/PD parameters. |
+| popPK | Kreuzberg_1978 | irrelevant | 0 | 0 | This is an in-vitro enzymatic kinetics study focusing on phosphofructokinase interaction, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Kreuzberg_1978 | not_relevant | 0 | 0 | The paper studies enzyme kinetics in yeast, not human pharmacogenomics of fructose. |
 | popPK | Kuhre_2014 | irrelevant | 0 | 0 | This is a gut hormone secretion study (GLP-1, GIP, etc.) using fructose as an oral stimulus; no PK disposition parameters (CL, V, half-life, PK model) for fructose are reported. |
-| popPK | Kulkarni_2016 | irrelevant | 0 | 0 | Fructose is only a dietary component used to induce NAFLD; the PK parameters reported are for rosiglitazone, a different drug. |
+| popPK | Kulkarni_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of rosiglitazone, not fructose; fructose is only used as a dietary component to induce the disease model. |
+| PGx | Kulkarni_2016 | not_relevant | 0 | 10 | The study investigates the effect of a disease state (NAFLD) on the pharmacokinetics of rosiglitazone, not a pharmacogenomic effect on the pharmacokinetics or pharmacodynamics of fructose. |
+| PGx | Pettit_1976 | not_relevant | 0 | 0 | The paper describes a pharmacokinetic model for fructose in monkeys but does not investigate the influence of any gene variants or genotypes. |
 | popPK | Semnani-Azad_2020 | irrelevant | 0 | 0 | This is a dietary epidemiology meta-analysis of fructose-containing foods and metabolic syndrome risk, with no pharmacokinetic parameters for fructose. |
 | popPK | Walker_2012 | irrelevant | 0 | 0 | This is an enzyme-kinetics study of phosphofructokinase in a parasite, not a pharmacokinetic study of fructose; no disposition parameters for fructose are reported. |
-| popPK | Wei_2022 | irrelevant | 0 | 0 | Bioinformatics study of GFPT enzyme evolution; no fructose PK parameters reported. |
-| popPK | Wu_2009 | irrelevant | 0 | 0 | This is an enzymatic biofuel cell/biosensor study; fructose is a fuel substrate, not a drug, and no PK disposition parameters are reported. |
-| popPK | Yang_2014 | irrelevant | 3 | 2 | This is a PET tracer kinetic study of 18F-FBPA-Fr (a radiolabeled BPA-fructose complex) in rats, not a population-PK study of fructose itself, and numeric rate constants are not given in the evidence. |
+| popPK | Wei_2022 | irrelevant | 0 | 0 | The paper focuses on the evolution and bioinformatics analysis of the GFPT enzyme family, not the pharmacokinetics of fructose. |
+| PGx | Wei_2022 | not_relevant | 0 | 0 | The paper focuses on the evolutionary analysis of the GFPT protein family and contains no data on pharmacokinetics or pharmacodynamics of fructose. |
+| popPK | Wu_2009 | irrelevant | 0 | 0 | The paper describes a biological fuel cell device using fructose as a substrate for electrochemical oxidation, not a pharmacokinetic study of fructose disposition in biological systems. |
+| PGx | Wu_2009 | not_relevant | 0 | 0 | The paper describes a biological fuel cell using fructose as a fuel substrate, not a pharmacokinetic or pharmacodynamic study of fructose in a biological system involving gene variants. |
+| popPK | Yang_2014 | irrelevant | 1 | 0 | The subject drug is 18F-FBPA-Fr (a boronophenylalanine analog), not fructose; fructose is only part of the chemical name of the analog. |
+| PGx | Yang_2014 | not_relevant | 0 | 0 | The study examines pharmacokinetics in a specific rat strain without analyzing the impact of specific genetic variants or genotypes on drug parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfructose%5D&body=Drug%3A%20fructose%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fructose/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 22:38 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 00:25 UTC</sub>

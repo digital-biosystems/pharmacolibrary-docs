@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Fentanyl's clearance and central volume of distribution lacked extracted values, forcing the use of library placeholders instead of explicit estimates.
+> No value for fentanyl's clearance and volume of distribution; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Hagos2019_reference" status="model_quarantined" stale="false" population="critically ill children" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
-**Fentanyl's clearance and central volume of distribution lacked extracted values, forcing the use of library placeholders instead of explicit estimates.**
+**No value for fentanyl's clearance and volume of distribution; t6_deviations.**
 
-The record defines clearance and central volume of distribution for fentanyl in critically ill children but provides no numerical estimates. Both readers agreed on this absence. Because the model relied on default placeholders rather than fitted parameters, it was held back from publication to avoid using invented values. No parameter values were extracted.
+The model was built, but fentanyl's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 

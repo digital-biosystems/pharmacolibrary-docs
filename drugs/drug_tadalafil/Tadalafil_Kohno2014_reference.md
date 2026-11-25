@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Tadalafil’s ka has no reported value and was defaulted, leaving its absorption estimate unsupported and the record held back.
+> Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="tadalafil" model-id="Tadalafil_Kohno2014_reference" status="needs_review" stale="false" population="children with pulmonary arterial hypertension" measured-compound="tadalafil" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Kohno H, Ichida F, Hirono K, Ozawa S, Yoshimura N, Nakamura T et al. Plasma conc
 
 ### Reviewer guidance
 
-**Tadalafil’s ka has no reported value and was defaulted, leaving its absorption estimate unsupported and the record held back.**
+**Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).**
 
-Ka use library defaults, not estimates from this paper. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Because only the abstract was read, reported summary statistics stood in for a fitted model; ka and Tlag were defaulted, with ka also treated as invented absorption, while first-order depot input and apparent F=1 and Fm=1 assumptions were used. The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. A second reader disputed the tadalafil identification and the reported CL/F of 0.149 and V/F of 1.87. Extracted — tadalafil: CL/F 0.149 L·h-1·kg-1, V/F 1.87 L/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tadalafil: CL/F 0.149 L·h-1·kg-1, V/F 1.87 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tadalafil, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -145,7 +145,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check contradicted by a second reader: verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

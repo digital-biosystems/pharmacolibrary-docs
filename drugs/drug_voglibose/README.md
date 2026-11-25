@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">mouse</span> | [Rawal_2025_alpha_amylase](drugs/drug_voglibose/pd_Rawal_2025_alpha_amylase.md) | alpha-amylase biomarker turnover ← voglibose | — | Rawal P et al., Antioxidant, Alpha-Amylase Inhibitory a…, Food science & nutrition (2025) | [10.1002/fsn3.4672](https://doi.org/10.1002/fsn3.4672) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">mouse</span> | [Rawal_2025_alpha_amylase](drugs/drug_voglibose/pd_Rawal_2025_alpha_amylase.md) | alpha-amylase biomarker turnover ← voglibose | — | Rawal P et al., Antioxidant, Alpha-Amylase Inhibitory a…, Food science & nutrition (2025) | [10.1002/fsn3.4672](https://doi.org/10.1002/fsn3.4672) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

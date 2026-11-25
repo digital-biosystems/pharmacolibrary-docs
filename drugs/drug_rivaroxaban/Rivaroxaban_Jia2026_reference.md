@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The second reader disputed the record, disagreeing on the rivaroxaban clearance value of 7.48 L/h and other parameters.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="rivaroxaban" model-id="Rivaroxaban_Jia2026_reference" status="needs_review" stale="false" population="adults with transjugular intrahepatic portosystemic shunt (TIPS)" measured-compound="rivaroxaban" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Jia M, Chai Y, Gao Y, Jing C, Zhu K, Zhu T et al. Population pharmacokinetics of
 
 ### Reviewer guidance
 
-**The second reader disputed the record, disagreeing on the rivaroxaban clearance value of 7.48 L/h and other parameters.**
+**cross_check_disputed; x1_cross_check.**
 
-The model builder used a library default for the lag time instead of an explicit estimate and assumed unit bioavailability. The second reader disagreed with the recorded clearance of 7.48 L/h, proposing 7.22 L/h instead. They also differed on the absorption rate constant, volume of distribution, and zero-order absorption duration. Extracted — rivaroxaban: kabs 0.14 1/h, CL/F 7.48 L/h, V/F 4.75 L, D1 0.831 h.
+Extracted — rivaroxaban: kabs 0.14 1/h, CL/F 7.48 L/h, V/F 4.75 L, D1 0.831 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of alag1: this record has none, the second reading 1.22; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,7 +142,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.615, 0 of 1 reader(s) agree | 0.615 | cross-check disputed by a second reader: verdict disputed, agreement 0.615, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.615 (8 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.615 | cross-check contradicted by a second reader: verdict disputed; agreement 0.615 (8 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

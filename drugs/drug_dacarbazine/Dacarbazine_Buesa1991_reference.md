@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejection caused by dimension mismatches on dacarbazine parameters Cmax, V1, and V2, combined with an orphan metabolite compartment for AICA.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit mM ([length]) vs [mass] / [length] ** 3; Q63 unit 1 kg⁻¹ (dimensionless) vs [length] ** 3; Q64 unit 1 kg⁻¹ (dimensionless) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Buesa1991_reference" status="rejected" stale="false" population="cancer patients" measured-compound="dacarbazine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -57,13 +57,13 @@ Buesa JM, Urréchaga E. Clinical pharmacokinetics of high-dose DTIC. Cancer chem
 
 ### Reviewer guidance
 
-**Rejection caused by dimension mismatches on dacarbazine parameters Cmax, V1, and V2, combined with an orphan metabolite compartment for AICA.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit mM ([length]) vs [mass] / [length] ** 3; Q63 unit 1 kg⁻¹ (dimensionless) vs [length] ** 3; Q64 unit 1 kg⁻¹ (dimensionless) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists dacarbazine Cmax as 0.3 mM and V1 as 0.42 1 kg⁻¹, units that conflict with the required physical dimensions for concentration and volume. Additionally, the AICA metabolite is defined with a compartment index of 0, rendering it unreachable from the dose. These structural inconsistencies prevent valid calculation of the model's kinetics. Extracted — dacarbazine: Cmax 0.3 mM, V1 0.42 1 kg⁻¹, V2 1.49 1 kg⁻¹, t1/2α 0.17 h, kel 2 h, fe 54.9 %, CL 0.58 1 kg⁻¹ h⁻¹, CLu 0.09 1 kg⁻¹ h⁻¹; AICA: Cmax 3.04 μg ml⁻¹, kel 3.25 h, CL 0.15 1 kg⁻¹ h⁻¹.
+A reported unit could not be converted (Cmax, V1, V2 and kel), so that value has no SI equivalent. Extracted — dacarbazine: Cmax 0.3 mM, V1 0.42 1 kg⁻¹, V2 1.49 1 kg⁻¹, t1/2α 0.17 h, kel 2 h, fe 54.9 %, CL 0.58 1 kg⁻¹ h⁻¹, CLu 0.09 1 kg⁻¹ h⁻¹; AICA: Cmax 3.04 μg ml⁻¹, kel 3.25 h, CL 0.15 1 kg⁻¹ h⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has dacarbazine → aica (metabolism), the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

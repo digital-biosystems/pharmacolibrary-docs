@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Lusutrombopag’s enzyme-affinity parameter Km was rejected because its reported value, 0.0320 /h, has a rate unit rather than a concentration unit.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit /h (1 / [time]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="lusutrombopag" model-id="Lusutrombopag_Katsube2019_reference" status="rejected" stale="false" population="healthy subjects and patients with chronic liver disease" measured-compound="lusutrombopag" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Katsube T, Shimizu R, Fukuhara T, Kano T, Wajima T. Pharmacokinetic/Pharmacodyna
 
 ### Reviewer guidance
 
-**Lusutrombopag’s enzyme-affinity parameter Km was rejected because its reported value, 0.0320 /h, has a rate unit rather than a concentration unit.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit /h (1 / [time]) vs [mass] / [length] ** 3.**
 
-Km represents enzyme affinity, but the recorded /h unit conflicts with the concentration dimension expected for that parameter. The reported unit could not be converted to SI, leaving no SI value for the parameter. The second reader did not independently extract the Km value. Extracted — lusutrombopag: CL/F 0.874 L/h, Q3/F 0.872 L/h, V3/F 9.04 L, Q/F 0.0265 L/h, Fab 1 h, Km 0.032 /h, kel 0.00863 /h, kabs 0.166 /h, … (+1).
+A reported unit could not be converted (Fab and Km), so that value has no SI equivalent. Extracted — lusutrombopag: CL/F 0.874 L/h, Q3/F 0.872 L/h, V3/F 9.04 L, Q/F 0.0265 L/h, Fab 1 h, Km 0.032 /h, kel 0.00863 /h, kabs 0.166 /h, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lusutrombopag, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

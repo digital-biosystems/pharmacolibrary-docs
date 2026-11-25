@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> For fexinidazole sulfone (M2), the absorption rate constant (ka) was unreported and defaulted, leaving no paper-supported value for this parameter.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="fexinidazole" model-id="Fexinidazole_Watson2019_reference" status="needs_review" stale="false" population="healthy volunteers and patients with g-HAT or chronic Chagas disease" measured-compound="fexinidazole sulfone (M2)" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Watson JA, Strub-Wourgraft N, Tarral A, Ribeiro I, Tarning J, White NJ. Pharmaco
 
 ### Reviewer guidance
 
-**For fexinidazole sulfone (M2), the absorption rate constant (ka) was unreported and defaulted, leaving no paper-supported value for this parameter.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record says ka and Tlag were defaulted rather than estimated; ka was not reported, and these defaults affect the simulated profile without support from the paper. The model also assumed first-order depot input and apparent parameterization with F=1, Fm=1, and no molar correction; the reported apparent volume of distribution was 80 liters and apparent clearance was 3 liters/h. A second reader disputed the record, with agreement of 0.222, including disagreement about the measured compound and reported parameters. Extracted — fexinidazole sulfone (M2): Vm/F 80 liters, CLm/F 3 liters/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. None of the extracted parameters is fexinidazole's own; they describe fexinidazole sulfone (M2). Extracted — fexinidazole sulfone (M2): Vm/F 80 liters, CLm/F 3 liters/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fexinidazole, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -170,7 +170,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check contradicted by a second reader: verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

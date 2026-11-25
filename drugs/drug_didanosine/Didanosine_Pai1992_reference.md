@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;didanosine&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/&quot;},{&quot;label&quot;:&quot;Pai_1992 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Drusano1992_reference&quot;,&quot;label&quot;:&quot;Drusano_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Drusano1992_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Zhou1999_reference&quot;,&quot;label&quot;:&quot;Zhou_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Zhou1999_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Drusano1992_reference&quot;,&quot;label&quot;:&quot;Drusano_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Drusano1992_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Pai1992_reference&quot;,&quot;label&quot;:&quot;Pai_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Pai1992_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Didanosine_Zhou1999_reference&quot;,&quot;label&quot;:&quot;Zhou_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Zhou1999_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # didanosine — `Didanosine_Pai1992_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> This paper's disposition core is incomplete.
-
-<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Pai1992_reference" status="needs_review" stale="false" population="patients with AIDS or AIDS-related complex" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Pai1992_reference" status="simulated" stale="false" population="patients with AIDS or AIDS-related complex" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Pai SM, Shukla UA, Grasela TH, Knupp CA, Dolin R, Valentine FT et al. Population pharmacokinetic analysis of didanosine (2',3'-dideoxyinosine) plasma concentrations obtained in phase I clinical trials in patients with AIDS or AIDS-related complex. Journal of clinical pharmacology 32(3):242–247 (1992).
@@ -17,30 +15,29 @@ Pai SM, Shukla UA, Grasela TH, Knupp CA, Dolin R, Valentine FT et al. Population
 
 ## Population and dosing
 
-**Population:** patients with AIDS or AIDS-related complex · condition AIDS or AIDS-related complex · age group adult · n = 69.
+**Population:** patients with AIDS or AIDS-related complex · age group adult.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
-**Availability:** No model was generated from this record.
+**Parameters:** 5 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_didanosine/Didanosine_Pai1992_reference/Didanosine_Pai1992_reference.svg" alt="Didanosine_Pai1992_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| systemic clearance, CL | CLnorm | 0.7 | L/h/kg |
+| systemic clearance, CL | CL | 0.70 | L/h/kg |
 | central compartment volume, Vc | V | 0.18 | L/kg |
 | steady-state distribution volume, Vdss | Vss | 0.84 | L/kg |
 | first-order absorption rate constant, Ka | kabs | 1.3 | hr-1 |
 | bioavailable fraction, F | Fab | 0.34 |  |
-| apparent total body clearance | CL | 12.0 | L/hr |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +47,11 @@ Pai SM, Shukla UA, Grasela TH, Knupp CA, Dolin R, Valentine FT et al. Population
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Greenberg_2022) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — didanosine: CLnorm 0.7 L/h/kg, V 0.18 L/kg, Vss 0.84 L/kg, kabs 1.3 hr-1, Fab 0.34, CL 12 L/hr.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has didanosine, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -62,12 +59,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| systemic clearance, CL | `Q354` · CLnorm | 0.7 | L/h/kg | 1.361e-05 | m3/s | l/(h·kg) | llm_corrected (0.6) | Pai_1992:abstract |
+| systemic clearance, CL | `Q22` · CL | 0.70 | L/h/kg | 1.361e-05 | m3/s | l/(h·kg) | llm_confirmed (0.6) | Pai_1992:abstract |
 | central compartment volume, Vc | `Q61` · V | 0.18 | L/kg | 0.0126 | m3 | l/kg | llm_confirmed (0.6) | Pai_1992:abstract |
 | steady-state distribution volume, Vdss | `Q65` · Vss | 0.84 | L/kg | 0.0588 | m3 | l/kg | llm_corrected (0.6) | Pai_1992:abstract |
 | first-order absorption rate constant, Ka | `Q49` · kabs | 1.3 | hr-1 | 0.0003611 | 1/s | 1/h | llm_confirmed (0.6) | Pai_1992:abstract |
 | bioavailable fraction, F | `Q40` · Fab | 0.34 |  |  |  |  | llm (0.6) | Pai_1992:abstract |
-| apparent total body clearance | `Q22` · CL | 12.0 | L/hr | 3.333e-06 | m3/s | L/h | review_gapfill (0.7) | Greenberg_2022:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -76,48 +72,28 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+
 **Interpretation flags:**
-- covariate category for IIV from footnote/prose kept as documentation only (['Pai_1992:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=didanosine
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'central compartment volume, Vc' is the general volume)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Greenberg_2022's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Pai_1992_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.188 (3/16 fields) | 13 |
+| `gpt-oss-120b` | confirmed | 1.0 (10/10 fields) | none |
 
-<details><summary>13 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[apparent total body clearance]` | 12.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailable fraction, f]` | 0.34 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailable fraction, f]` |  | 0.34 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[central compartment volume, vc]` | 0.18 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[central compartment volume, vc]` |  | 0.18 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[first-order absorption rate constant, ka]` | 1.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[first-order absorption rate constant, ka]` |  | 1.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state distribution volume, vdss]` | 0.84 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state distribution volume, vdss]` |  | 0.84 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[systemic clearance]` | 0.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[systemic clearance]` |  | 0.70 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | didanosine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | didanosine | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -131,17 +107,28 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Greenberg_2022:review'] |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Pai_1992:abstract'] |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Pai_1992:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Pai_1992:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Pai_1992:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Pai_1992:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 12 | ['Greenberg_2022:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.7 | ['Pai_1992:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 12 L/h | ['Greenberg_2022:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 49 L/h | ['Pai_1992:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 12.6 L | ['Pai_1992:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 58.8 L | ['Pai_1992:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=didanosine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (10 of 10 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -157,15 +144,40 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_didanosine/Didanosine_Pai1992_reference/Didanosine_Pai1992_reference_modelica.zip" download>Didanosine_Pai1992_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_didanosine/Didanosine_Pai1992_reference/Didanosine_Pai1992_reference_fmi.zip" download>Didanosine_Pai1992_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_didanosine/Didanosine_Pai1992_reference/Didanosine_Pai1992_reference_modelica.zip" download>Didanosine_Pai1992_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_didanosine/Didanosine_Pai1992_reference/Didanosine_Pai1992_reference_fmi.zip" download>Didanosine_Pai1992_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Pai1992_reference/Didanosine_Pai1992_reference_matlab.zip" download>Didanosine_Pai1992_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Pai1992_reference/Didanosine_Pai1992_reference_matlab_simbio.zip" download>Didanosine_Pai1992_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Pai1992_reference/Didanosine_Pai1992_reference_matlab_simbio.zip" download>Didanosine_Pai1992_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_didanosine/Didanosine_Pai1992_reference/Didanosine_Pai1992_reference_sbml.zip" download>Didanosine_Pai1992_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_didanosine/Didanosine_Pai1992_reference/Didanosine_Pai1992_reference_cellml.zip" download>Didanosine_Pai1992_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.2362 | kg/mol |
+| input | dosing | `F` | 0.34 | 1 |
+| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 0.0004 | kg |
+| input | model | `Cl` | 1.361e-05 | m3/s |
+| input | model | `VdPerKg` | 0.00018 | m3/kg |
+| input | model | `ka` | 0.0003611 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -186,10 +198,14 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 400 mg, single dose, first-order absorption (ka 1.3 /h, F 0.34). _The paper's dose was not captured; the default is the WHO ATC DDD 400 mg oral (J05AF02) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_didanosine/Didanosine_Pai1992_reference/Didanosine_Pai1992_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_didanosine/Didanosine_Pai1992_reference/Didanosine_Pai1992_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Didanosine_Pai1992_reference_params.json` · controls `Didanosine_Pai1992_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdidanosine%5D%20Didanosine_Pai1992_reference&body=Drug%3A%20didanosine%0ARecord%3A%20Didanosine_Pai1992_reference%0APaper%3A%20Pai_1992%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_didanosine/Didanosine_Pai1992_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:10 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:58 UTC</sub>

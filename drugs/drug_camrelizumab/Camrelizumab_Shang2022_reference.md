@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;camrelizumab&quot;,&quot;href&quot;:&quot;drugs/drug_camrelizumab/&quot;},{&quot;label&quot;:&quot;Shang_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Camrelizumab_Wang2021_base&quot;,&quot;label&quot;:&quot;Wang_2021_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_camrelizumab/Camrelizumab_Wang2021_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Camrelizumab_Wang2021_final&quot;,&quot;label&quot;:&quot;Wang_2021_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_camrelizumab/Camrelizumab_Wang2021_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> No values were extracted for camrelizumab clearance or volume of distribution, so placeholders were used and the model was held back.
+> No value for camrelizumab's clearance, volume of distribution, central→peripheral rate constant, central→second-peripheral rate constant and second-peripheral→central rate constant; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Shang2022_reference" status="model_quarantined" stale="false" population="patients with multiple tumor types" measured-compound="camrelizumab" parameterization="mechanistic" topology="3C"></div>
 
@@ -50,13 +51,13 @@ Shang J, Huang L, Huang J, Ren X, Liu Y, Feng Y. Population pharmacokinetic mode
 
 ### Reviewer guidance
 
-**No values were extracted for camrelizumab clearance or volume of distribution, so placeholders were used and the model was held back.**
+**No value for camrelizumab's clearance, volume of distribution, central→peripheral rate constant, central→second-peripheral rate constant and second-peripheral→central rate constant; t6_deviations (+1 more).**
 
-The record contains no extracted values for clearance, volume of distribution, or the transfer rate constants between compartments. Consequently, the model relied on generic placeholder values instead of specific estimates for this patient population. A second reader identified alternative values for inter-compartmental clearance and peripheral volume, disagreeing with the record's null entries for these fields. Extracted — camrelizumab: Q 0.703 L/day, V2 2.78 L, V 6.8 L.
+The model was built, but camrelizumab's clearance, volume of distribution, central→peripheral rate constant, central→second-peripheral rate constant and second-peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — camrelizumab: Q 0.703 L/day, V2 2.78 L, V 6.8 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,7 +153,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 3C → PK_3C* | PK_3C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.417, 0 of 1 reader(s) agree | 0.417 | cross-check agreement 0.417 is below 0.5: verdict partial, agreement 0.417, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.417 (5 of 12 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.417 | cross-check agreement 0.417 is below 0.5: verdict partial; agreement 0.417 (5 of 12 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the irinotecan-to-APC metabolic link has no clearance parameter, making the APC metabolite pharmacokinetically unreachable.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="etirinotecan pegol" model-id="EtirinotecanPegol_Sy2018_reference" status="rejected" stale="false" population="cancer patients with solid tumors" measured-compound="etirinotecan_pegol" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -46,13 +46,13 @@ Sy SKB, Chia YL, Gordi T, Hoch U, Eldon MA. Integrated population pharmacokineti
 
 ### Reviewer guidance
 
-**The record was rejected because the irinotecan-to-APC metabolic link has no clearance parameter, making the APC metabolite pharmacokinetically unreachable.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The metabolic link from irinotecan to APC is defined with no associated rate constant, meaning the model has no defined path for formation of this metabolite. Consequently, APC is an orphan metabolite that cannot be formed from the dose. The model builder’s substitutions regarding parameter assignments do not resolve this structural deficiency. Extracted — etirinotecan pegol: CL 0.237 L/h, V1 5.05 L, V2 1.8 L.
+Extracted — etirinotecan pegol: CL 0.237 L/h, V1 5.05 L, V2 1.8 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etirinotecan_pegol, the second reading etirinotecan pegol; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

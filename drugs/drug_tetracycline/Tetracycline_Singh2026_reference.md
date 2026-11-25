@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
-> Rejected because the paper concerns eravacycline, not tetracycline; the record assigns tetracycline a clearance of 0.03 L/h.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="tetracycline" model-id="Tetracycline_Singh2026_reference" status="rejected" stale="false" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Singh S, Shrivastava A, Boorgula GD, Long MC, Robbins B, Gumbo T et al. Eravacyc
 
 ### Reviewer guidance
 
-**Rejected because the paper concerns eravacycline, not tetracycline; the record assigns tetracycline a clearance of 0.03 L/h.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The clearance label names eravacycline, while the record identifies tetracycline as the measured compound and lists its clearance as 0.03 L/h; the finding states that the paper studies eravacycline rather than tetracycline. The model builder also defaulted a parameter instead of using an explicit estimate. The second reader disputed the two-compartment structure, reading it as one compartment, and disputed whether intercompartmental clearance was present: this record lists 0.12 mL/min, while the second reader did not. Extracted — tetracycline: CL 0.03 L/h, V 0.58 L, Q 0.12 mL/min.
+Extracted — tetracycline: CL 0.03 L/h, V 0.58 L, Q 0.12 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has none, the second reading 145.47; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.533, 0 of 1 reader(s) agree | 0.533 | cross-check disputed by a second reader: verdict disputed, agreement 0.533, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.6 (9 of 15 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.6 | cross-check contradicted by a second reader: verdict disputed; agreement 0.6 (9 of 15 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

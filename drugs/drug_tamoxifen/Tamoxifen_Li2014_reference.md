@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Tamoxifen clearance and volume values were mislabeled as daunorubicin metrics, causing an implausible clearance magnitude failure.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_Li2014_reference" status="rejected" stale="false" population="breast cancer murine models" measured-compound="tamoxifen" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Li MH, Yu H, Wang TF, Chang ND, Zhang JQ, Du D et al. Tamoxifen embedded in lipi
 
 ### Reviewer guidance
 
-**Tamoxifen clearance and volume values were mislabeled as daunorubicin metrics, causing an implausible clearance magnitude failure.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The recorded clearance of 0.013 (unit: times those in free drug group) and volume of distribution of 19.3 mL are explicitly labeled for daunorubicin in the liposomes group, not tamoxifen. This mismatch triggered a physiological window check failure due to the implausible magnitude of the clearance value. Furthermore, the clearance unit 'times those in free drug group' is not a standard pharmacokinetic unit and lacks a defined SI conversion, rendering the parameter value unusable for quantitative modeling. Extracted — tamoxifen: CL 0.013 times those in free drug group, V 19.3 mL, tlag 50 min.
+A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — tamoxifen: CL 0.013 times those in free drug group, V 19.3 mL, tlag 50 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has liposomal daunorubicin plus tamoxifen, the second reading liposomal daunorubicin; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

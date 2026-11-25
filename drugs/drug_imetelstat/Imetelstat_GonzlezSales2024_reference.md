@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the covariate effect of MM malignancy on central volume is -0.233, which implies a negative volume in certain patient scenarios.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="imetelstat" model-id="Imetelstat_GonzlezSales2024_reference" status="rejected" stale="false" population="adults with solid tumors or hematologic malignancies" measured-compound="imetelstat" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ González-Sales M, Lennox AL, Huang F, Pamulapati C, Wan Y, Sun L et al. Populat
 
 ### Reviewer guidance
 
-**The record was rejected because the covariate effect of MM malignancy on central volume is -0.233, which implies a negative volume in certain patient scenarios.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The parameter labeled as the maximum rate of metabolism but described as the effect of MM malignancy on central volume has a value of -0.233. This negative covariate effect, combined with a base central volume of 4.08 L, creates an implausible pharmacokinetic profile. A second reader disagreed with the extraction of this parameter and associated covariate effects, noting they were not present in the standard field mappings. Extracted — imetelstat: CL 1 L/h, V 4.08 L, k21 0.0253 1/h, Bmax 15, kint 0.103 1/h, kon 0.159, koff 0.609 1/h, Vmax -0.233.
+Extracted — imetelstat: CL 1 L/h, V 4.08 L, k21 0.0253 1/h, Bmax 15, kint 0.103 1/h, kon 0.159, koff 0.609 1/h, Vmax -0.233.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of effect of mm malignancy on v c: this record has -0.233, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

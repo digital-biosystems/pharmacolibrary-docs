@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The one-compartment model is structurally invalid because a second reader identified an unreachable compartment, contradicting the abstract's reported statistics.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="eltrombopag" model-id="Eltrombopag_Saleh2019_reference" status="rejected" stale="false" population="chronic hepatitis C patients" measured-compound="eltrombopag" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Saleh MI, Melhim SB, Al-Ramadhani HM, Alzubiedi S. Bayesian Population Pharmacok
 
 ### Reviewer guidance
 
-**The one-compartment model is structurally invalid because a second reader identified an unreachable compartment, contradicting the abstract's reported statistics.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model builder assigned a 12 L volume to a parameter defined as the peripheral compartment distribution, which is incompatible with the recorded one-compartment structure. The second reader confirmed the dose compound was unknown and could not extract any parameter values, invalidating the abstract-derived clearance of 0.762 L/h and lag time of 0.947 h. Consequently, the record remains rejected due to the unresolvable structural contradiction and lack of verified parameter data. Extracted — eltrombopag: CL 0.762 L/h, V2 12 L, tlag 0.947 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — eltrombopag: CL 0.762 L/h, V2 12 L, tlag 0.947 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has eltrombopag, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

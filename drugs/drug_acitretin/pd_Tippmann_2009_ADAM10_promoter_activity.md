@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D05B&quot;,&quot;href&quot;:&quot;atc/D05B.md&quot;},{&quot;label&quot;:&quot;acitretin&quot;,&quot;href&quot;:&quot;drugs/drug_acitretin/&quot;},{&quot;label&quot;:&quot;Tippmann_2009 \u00b7 PD ADAM10 promoter activity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# ADAM10 promoter activity — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+# ADAM10 promoter activity — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 ## Record summary
 
-**As extracted:** Acitretin drives ADAM10 promoter activity (stimulation; the model form was not identified).
+**As extracted:** Acitretin drives ADAM10 promoter activity: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
@@ -24,10 +24,10 @@
 > <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
 
 - **paper:** `Tippmann_2009`
-- **model family:** `unknown`
+- **model family:** `emax`
 - **driver:** `not_resolved`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** stimulation/proportional
 
 ## Citation
 Tippmann F et al., Up-regulation of the alpha-secretase AD…, FASEB journal : official pu… (2009)
@@ -45,18 +45,19 @@ Tippmann F et al., Up-regulation of the alpha-secretase AD…, FASEB journal : o
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.6 (3/5 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.4 (2/5 fields) | 3 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `effect_form` | unknown | proportional | mismatch |
-| `qwen3.8-27b` | `model_family` | unknown | sigmoid_emax | mismatch |
+| `gpt-oss-120b` | `effect_form` | proportional | additive | mismatch |
+| `gpt-oss-120b` | `model_family` | emax | sigmoid_emax | mismatch |
+| `gpt-oss-120b` | `parameters[Q321].value` | 1.5 | unit: | mismatch |
 
 </details>
 

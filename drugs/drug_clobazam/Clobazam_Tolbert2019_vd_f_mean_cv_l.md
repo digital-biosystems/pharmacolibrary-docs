@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;clobazam&quot;,&quot;href&quot;:&quot;drugs/drug_clobazam/&quot;},{&quot;label&quot;:&quot;Tolbert_2019 \u00b7 vd_f_mean_cv_l&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clobazam_Tolbert2019_auc0_inf_mean_cv_ng_h_ml&quot;,&quot;label&quot;:&quot;Tolbert_2019_auc0_inf_mean_cv_ng_h_ml&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clobazam/Clobazam_Tolbert2019_auc0_inf_mean_cv_ng_h_ml.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clobazam_Tolbert2019_cl_f_mean_cv_l_hr&quot;,&quot;label&quot;:&quot;Tolbert_2019_cl_f_mean_cv_l_hr&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clobazam/Clobazam_Tolbert2019_cl_f_mean_cv_l_hr.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clobazam_Tolbert2019_cmax_mean_cv_ng_ml&quot;,&quot;label&quot;:&quot;Tolbert_2019_cmax_mean_cv_ng_ml&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clobazam/Clobazam_Tolbert2019_cmax_mean_cv_ng_ml.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clobazam_Tolbert2019_ov_101611_bioequivalence&quot;,&quot;label&quot;:&quot;Tolbert_2019_ov_101611_bioequivalence&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clobazam/Clobazam_Tolbert2019_ov_101611_bioequivalence.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clobazam_Tolbert2019_ov_101732_relative_ba&quot;,&quot;label&quot;:&quot;Tolbert_2019_ov_101732_relative_ba&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clobazam/Clobazam_Tolbert2019_ov_101732_relative_ba.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clobazam_Tolbert2019_ov_101839_41_food_effect&quot;,&quot;label&quot;:&quot;Tolbert_2019_ov_101839_41_food_effect&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clobazam/Clobazam_Tolbert2019_ov_101839_41_food_effect.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clobazam_Tolbert2019_ov_102234_multiple_dose_1&quot;,&quot;label&quot;:&quot;Tolbert_2019_ov_102234_multiple_dose_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clobazam/Clobazam_Tolbert2019_ov_102234_multiple_dose_1.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clobazam_Tolbert2019_ov_1038c_multiple_dose_2&quot;,&quot;label&quot;:&quot;Tolbert_2019_ov_1038c_multiple_dose_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clobazam/Clobazam_Tolbert2019_ov_1038c_multiple_dose_2.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clobazam_Tolbert2019_t_mean_cv_h&quot;,&quot;label&quot;:&quot;Tolbert_2019_t_mean_cv_h&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clobazam/Clobazam_Tolbert2019_t_mean_cv_h.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clobazam_Tolbert2019_vd_f_mean_cv_l&quot;,&quot;label&quot;:&quot;Tolbert_2019_vd_f_mean_cv_l&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clobazam/Clobazam_Tolbert2019_vd_f_mean_cv_l.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the AUC parameter was assigned a time unit (h), conflicting with its mass/volume/time dimension, and a dose-specific value was omitted.
+> The model does not reproduce the paper's terminal half-life; ka use library defaults, not estimates from this paper (+4 more).
 
 <div class="pk-model-meta" hidden drug="clobazam" model-id="Clobazam_Tolbert2019_vd_f_mean_cv_l" status="rejected" stale="false" population="healthy subjects and patients with Lennox-Gastaut syndrome" measured-compound="clobazam" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -16,33 +17,33 @@ Tolbert D, Larsen F. A Comprehensive Overview of the Clinical Pharmacokinetics o
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with Lennox-Gastaut syndrome · condition Lennox-Gastaut syndrome / healthy · age group mixed.
+**Population:** healthy subjects and patients with Lennox-Gastaut syndrome · condition Lennox-Gastaut syndrome, healthy · age group mixed.
 
-**Dosing:** 20, 39, 40, 160 mg, oral.
+**Dosing:** 20 mg, oral, single.
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 6 extracted, plus 1 covariate effect.  
-**Availability:** No model was generated from this record.
+**Parameters:** 5 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_clobazam/Clobazam_Tolbert2019_vd_f_mean_cv_l/Clobazam_Tolbert2019_vd_f_mean_cv_l.svg" alt="Clobazam_Tolbert2019_vd_f_mean_cv_l diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
 > ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit | RSE% |
-|---|---|---|---|---|
-| Cmax, Mean (% CV), ng/mL | Cmax | 87.2 | ng/mL |  |
-| AUC0‐t, Mean (% CV), ng•h/mL | AUCt | 8871 | h |  |
-| t½, Mean (% CV), h | t1/2z | 58.6 | h |  |
-| Vd/F, Mean (% CV), L | V/F | 100 | L |  |
-| CL/F, Mean (% CV), L/h | CL/F | 1.9 | L/h |  |
-| Drug Cocktail | V | 0.7 | L | 28 |
-| theta_q31_cyp2c19 | theta_q31_cyp2c19 | 94 |  | 27 |
+| label | parameter | value | unit |
+|---|---|---|---|
+| Cmax, Mean (% CV), ng/mL | Cmax | 87.2 | ng/mL |
+| t½, Mean (% CV), h | t1/2z | 58.6 | h |
+| Vd/F, Mean (% CV), L | V/F | 100 | L |
+| CL/F, Mean (% CV), L/h | CL/F | 1.9 | L/h |
+| AUC0‐t, Mean (% CV), ng•h/mL | AUClast | 8871 | ng•h/mL |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.786). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,129 +53,85 @@ Tolbert D, Larsen F. A Comprehensive Overview of the Clinical Pharmacokinetics o
 
 ### Reviewer guidance
 
-**The record was rejected because the AUC parameter was assigned a time unit (h), conflicting with its mass/volume/time dimension, and a dose-specific value was omitted.**
+**The model does not reproduce the paper's terminal half-life; ka use library defaults, not estimates from this paper (+4 more).**
 
-The area under the concentration–time curve (AUCt) value of 8871 is labeled with the unit 'h', which is dimensionally inconsistent with a pharmacokinetic exposure metric. Additionally, the second reader identified a clearance value of 1.9 for a specific 10 mg clobazam and 40 mg oxcarbazepine dose that was not extracted into the record. The record also includes a volume of distribution of 0.7 L labeled 'Drug Cocktail' and a CYP2C19 covariate effect of 94. Extracted — clobazam: Cmax 87.2 ng/mL, AUCt 8.87e+03 h, t1/2z 58.6 h, V/F 100 L, CL/F 1.9 L/h, V 0.7 L.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — clobazam: Cmax 87.2 ng/mL, t1/2z 58.6 h, V/F 100 L, CL/F 1.9 L/h, AUClast 8.87e+03 ng•h/mL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 10 mg clb + 40 mg opz: this record has none, the second reading 1.9; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
-|---|---|---|---|---|---|---|---|---|---|
-| Cmax, Mean (% CV), ng/mL | `Q32` · Cmax | 87.2 | ng/mL |  |  | ng/ml |  | llm_confirmed (0.6) | Tolbert_2019_table_1:row2:col2, Tolbert_2019_table_1:row2:col3, Tolbert_2019_table_1:row2:col4, Tolbert_2019_table_1:row2:col6, Tolbert_2019_table_1:row2:col7, Tolbert_2019_table_1:row2:col8, Tolbert_2019_table_1:row2:col10, Tolbert_2019_table_1:row2:col11, Tolbert_2019_table_1:row2:col12, Tolbert_2019_table_1:row2:col13, Tolbert_2019_table_1:row2:col14, Tolbert_2019_table_1:row2:col15, Tolbert_2019_table_1:row2:col16, Tolbert_2019_table_1:row2:col22, Tolbert_2019_table_1:row2:col23, Tolbert_2019_table_1:row2:col26, Tolbert_2019_table_1:row2:col27, Tolbert_2019_table_1:row2:col28 |
-| AUC0‐t, Mean (% CV), ng•h/mL | `Q19` · AUCt | 8871 | h |  |  | h |  | llm (0.6) | Tolbert_2019_table_1:row4:col7, Tolbert_2019_table_1:row4:col11, Tolbert_2019_table_1:row4:col13, Tolbert_2019_table_1:row4:col15 |
-| t½, Mean (% CV), h | `Q57` · t1/2z | 58.6 | h | 2.11e+05 | s | h |  | llm (0.6) | Tolbert_2019_table_1:row5:col2, Tolbert_2019_table_1:row5:col3, Tolbert_2019_table_1:row5:col4, Tolbert_2019_table_1:row5:col7, Tolbert_2019_table_1:row5:col10, Tolbert_2019_table_1:row5:col11, Tolbert_2019_table_1:row5:col12, Tolbert_2019_table_1:row5:col13, Tolbert_2019_table_1:row5:col14, Tolbert_2019_table_1:row5:col15, Tolbert_2019_table_1:row5:col16, Tolbert_2019_table_1:row5:col26, Tolbert_2019_table_1:row5:col27, Tolbert_2019_table_1:row5:col28 |
-| Vd/F, Mean (% CV), L | `Q76` · V/F | 100 | L | 0.1 | m3 | l |  | llm_confirmed (0.6) | Tolbert_2019_table_1:row6:col3, Tolbert_2019_table_1:row6:col7, Tolbert_2019_table_1:row6:col11, Tolbert_2019_table_1:row6:col13, Tolbert_2019_table_1:row6:col15, Tolbert_2019_table_1:row6:col27 |
-| CL/F, Mean (% CV), L/h | `Q27` · CL/F | 1.9 | L/h | 5.278e-07 | m3/s | l/h |  | llm_confirmed (0.6) | Tolbert_2019_table_1:row7:col3, Tolbert_2019_table_1:row7:col7, Tolbert_2019_table_1:row7:col11, Tolbert_2019_table_1:row7:col13, Tolbert_2019_table_1:row7:col15, Tolbert_2019_table_1:row7:col23, Tolbert_2019_table_1:row7:col27 |
-| Drug Cocktail | `Q61` · V | 0.7 | L | 0.0007 | m3 | l | 28 | llm (0.6) | Tolbert_2019_table_2:row10:col7, Tolbert_2019_table_2:row12:col7 |
-| theta_q31_cyp2c19 | `Q900` · theta_q31_cyp2c19 | 94 |  |  |  |  | 27 |  | Tolbert_2019_table_2:row0:col7 |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| Cmax, Mean (% CV), ng/mL | `Q32` · Cmax | 87.2 | ng/mL | 8.72e-05 | kg/m3 | ng/ml | llm_confirmed (0.6) | Tolbert_2019_table_1:row1:col3, Tolbert_2019_table_1:row2:col3, Tolbert_2019_table_1:row3:col3, Tolbert_2019_table_1:row5:col3, Tolbert_2019_table_1:row6:col3, Tolbert_2019_table_1:row7:col3, Tolbert_2019_table_1:row9:col3, Tolbert_2019_table_1:row10:col3, Tolbert_2019_table_1:row11:col3, Tolbert_2019_table_1:row12:col3, Tolbert_2019_table_1:row13:col3, Tolbert_2019_table_1:row14:col3, Tolbert_2019_table_1:row15:col3, Tolbert_2019_table_1:row21:col3, Tolbert_2019_table_1:row22:col3, Tolbert_2019_table_1:row25:col3, Tolbert_2019_table_1:row26:col3, Tolbert_2019_table_1:row27:col3 |
+| t½, Mean (% CV), h | `Q57` · t1/2z | 58.6 | h | 2.11e+05 | s | h | llm (0.6) | Tolbert_2019_table_1:row1:col6, Tolbert_2019_table_1:row2:col6, Tolbert_2019_table_1:row3:col6, Tolbert_2019_table_1:row6:col6, Tolbert_2019_table_1:row9:col6, Tolbert_2019_table_1:row10:col6, Tolbert_2019_table_1:row11:col6, Tolbert_2019_table_1:row12:col6, Tolbert_2019_table_1:row13:col6, Tolbert_2019_table_1:row14:col6, Tolbert_2019_table_1:row15:col6, Tolbert_2019_table_1:row25:col6, Tolbert_2019_table_1:row26:col6, Tolbert_2019_table_1:row27:col6 |
+| Vd/F, Mean (% CV), L | `Q76` · V/F | 100 | L | 0.1 | m3 | l | llm_confirmed (0.6) | Tolbert_2019_table_1:row2:col7, Tolbert_2019_table_1:row6:col7, Tolbert_2019_table_1:row10:col7, Tolbert_2019_table_1:row12:col7, Tolbert_2019_table_1:row14:col7, Tolbert_2019_table_1:row26:col7 |
+| CL/F, Mean (% CV), L/h | `Q27` · CL/F | 1.9 | L/h | 5.278e-07 | m3/s | l/h | llm_confirmed (0.6) | Tolbert_2019_table_1:row2:col8, Tolbert_2019_table_1:row6:col8, Tolbert_2019_table_1:row10:col8, Tolbert_2019_table_1:row12:col8, Tolbert_2019_table_1:row14:col8, Tolbert_2019_table_1:row22:col8, Tolbert_2019_table_1:row26:col8 |
+| AUC0‐t, Mean (% CV), ng•h/mL | `Q74` · AUClast | 8871 | ng•h/mL | 31.94 | kg*s/m3 | (h·ng)/ml | llm (0.6) | Tolbert_2019_table_1:row6:col5, Tolbert_2019_table_1:row10:col5, Tolbert_2019_table_1:row12:col5, Tolbert_2019_table_1:row14:col5 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Treatment' — extend the ontology if this is a real PK parameter (source ['Tolbert_2019_table_1:row0:col3', 'Tolbert_2019_table_1:row0:col7', 'Tolbert_2019_table_1:row0:col11', 'Tolbert_2019_table_1:row0:col13', 'Tolbert_2019_table_1:row0:col15', 'Tolbert_2019_table_1:row0:col23', 'Tolbert_2019_table_1:row0:col27'])
-- unit_dimension_mismatch: 'AUC0‐t, Mean (% CV), ng•h/mL' → Q19 (unit '[time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped unlinked row (NIL): 'OV‐102163 (effect on CLB with CYP3A or CYP2C19 inhibitor)' — extend the ontology if this is a real PK parameter (source ['Tolbert_2019_table_2:row0:col7'])
 - dropped unlinked row (NIL): '10 mg CLB' — extend the ontology if this is a real PK parameter (source ['Tolbert_2019_table_2:row2:col7'])
 - dropped unlinked row (NIL): '10 mg CLB + 40 mg OPZ' — extend the ontology if this is a real PK parameter (source ['Tolbert_2019_table_2:row4:col7'])
 - dropped unlinked row (NIL): 'OV‐102363 (effect of CLB on CYP probe substrates)' — extend the ontology if this is a real PK parameter (source ['Tolbert_2019_table_2:row8:col7'])
 - dropped unlinked row (NIL): 'Drug Cocktail + CLB' — extend the ontology if this is a real PK parameter (source ['Tolbert_2019_table_2:row9:col7', 'Tolbert_2019_table_2:row11:col7', 'Tolbert_2019_table_2:row13:col7'])
-- covariate effect for Q31 has no base parameter row (kept as unattached equation-variable)
+- dropped unlinked row (NIL): 'Drug Cocktail' — extend the ontology if this is a real PK parameter (source ['Tolbert_2019_table_2:row10:col7', 'Tolbert_2019_table_2:row12:col7'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=clobazam
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- status held at "Needs review" — not promoted
 - population split: 'vd/f, mean (% cv), l' subgroup of Tolbert_2019 (paper reports 10 populations: auc0‐inf, mean (% cv), ng•h/ml, cl/f, mean (% cv), l/hr, cmax, mean (% cv), ng/ml, ov‐101611 (bioequivalence), ov‐101732 (relative ba), ov‐101839, 41 (food effect), ov‐102234 (multiple dose‐1), ov‐1038c (multiple dose‐2), t½, mean (% cv), h, vd/f, mean (% cv), l)
-- row roles (LLM): model_class=noncompartmental; 13/13 row label(s) assigned, 0 linked by role
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- row roles (LLM): model_class=noncompartmental; 12/12 row label(s) assigned, 0 linked by role
+- molar mass: none found for 'N-desmethylclobazam' — its concentrations stay mass-only
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
-- transposed table jcph1313-tbl-0003: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell jcph1313-tbl-0003:row7:col2 = 'Ka (RSE, %), hr−1'
-- unparsed cell jcph1313-tbl-0003:row7:col5 = '15.0(‐)'
-- transposed table Tolbert_2019_table_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell Tolbert_2019_table_1:row0:col18 = 'CLB 10 mg'
-- unparsed cell Tolbert_2019_table_1:row0:col19 = 'CLB 20 mg'
-- unparsed cell Tolbert_2019_table_1:row0:col20 = 'CLB 40 mg'
-- unparsed cell Tolbert_2019_table_1:row2:col18 = '107 (32)d'
-- unparsed cell Tolbert_2019_table_1:row2:col19 = '375 (51)d'
-- unparsed cell Tolbert_2019_table_1:row2:col20 = '683 (117)d'
-- unparsed cell Tolbert_2019_table_1:row2:col24 = '11 020 (60)'
-- unparsed cell Tolbert_2019_table_1:row4:col1 = '10 693 (32)'
-- unparsed cell Tolbert_2019_table_1:row4:col2 = '12 731 (46)'
-- unparsed cell Tolbert_2019_table_1:row4:col3 = '10 897 (31)'
-- unparsed cell Tolbert_2019_table_1:row4:col4 = '13 638 (73)'
-- unparsed cell Tolbert_2019_table_1:row4:col6 = '11 451 (48)'
-- unparsed cell Tolbert_2019_table_1:row4:col8 = '10 366 (34)'
-- unparsed cell Tolbert_2019_table_1:row4:col10 = '12 399 (49)'
-- unparsed cell Tolbert_2019_table_1:row4:col12 = '11 451 (31)'
-- unparsed cell Tolbert_2019_table_1:row4:col14 = '11 378 (27)'
-- unparsed cell Tolbert_2019_table_1:row4:col16 = '11 453 (24)'
-- unparsed cell Tolbert_2019_table_1:row4:col18 = '3518 (923)d,e'
-- unparsed cell Tolbert_2019_table_1:row4:col19 = '7190 (2091)d,e'
-- unparsed cell Tolbert_2019_table_1:row4:col20 = '13 980 (3608)d,e'
-- unparsed cell Tolbert_2019_table_1:row4:col21 = '17 649 (28)f'
-- unparsed cell Tolbert_2019_table_1:row4:col22 = '57 693 (65)f'
-- unparsed cell Tolbert_2019_table_1:row4:col23 = '41 389 (20)f'
-- unparsed cell Tolbert_2019_table_1:row4:col24 = '223 023 (55)f'
-- unparsed cell Tolbert_2019_table_1:row4:col25 = '26 092 (13)'
-- unparsed cell Tolbert_2019_table_1:row4:col26 = '84 401 (29)'
-- unparsed cell Tolbert_2019_table_1:row4:col27 = '19 867 (19)'
-- unparsed cell Tolbert_2019_table_1:row4:col28 = '89 539 (39)'
-- unparsed cell Tolbert_2019_table_1:row5:col6 = '66.2 (34)a'
-- unparsed cell Tolbert_2019_table_1:row5:col8 = '62.8 (22)b'
-- unparsed cell Tolbert_2019_table_1:row5:col18 = '25.5 (18)d'
-- unparsed cell Tolbert_2019_table_1:row5:col19 = '17.4 (5)d'
-- unparsed cell Tolbert_2019_table_1:row5:col20 = '17.8 (5)d'
-- unparsed cell Tolbert_2019_table_1:row6:col21 = '113 (27)g'
-- unparsed cell Tolbert_2019_table_1:row6:col23 = '128 (26)g'
-- companion parameter table 1 transcribed (82 record(s))
-- unparsed cell Tolbert_2019_table_2:row0:col1 = '10 mg CLB + 400 mg KTZ'
-- unparsed cell Tolbert_2019_table_2:row0:col4 = '2.0 (0.5‐2.5)'
-- unparsed cell Tolbert_2019_table_2:row2:col3 = '1.0 (0.5‐2.6)'
-- unparsed cell Tolbert_2019_table_2:row4:col3 = '1.3 (0.5‐4.0)'
-- unparsed cell Tolbert_2019_table_2:row8:col4 = '0.5 (0.3‐1.5)'
-- unparsed cell Tolbert_2019_table_2:row8:col5 = '38 528 (33)'
-- unparsed cell Tolbert_2019_table_2:row9:col3 = '0.8 (0.3‐2.0)'
-- unparsed cell Tolbert_2019_table_2:row9:col4 = '40 622 (29)'
-- unparsed cell Tolbert_2019_table_2:row10:col2 = '50 806 (12)'
-- unparsed cell Tolbert_2019_table_2:row10:col3 = '3.5 (1.5‐6.0)'
-- unparsed cell Tolbert_2019_table_2:row10:col4 = '841 599 (35)'
-- unparsed cell Tolbert_2019_table_2:row11:col2 = '47 511 (13)'
-- unparsed cell Tolbert_2019_table_2:row11:col3 = '3.5 (2.0‐6.0)'
-- unparsed cell Tolbert_2019_table_2:row11:col4 = '746 043 (35)'
-- unparsed cell Tolbert_2019_table_2:row12:col3 = '2.0 (1.0‐6.0)'
-- unparsed cell Tolbert_2019_table_2:row12:col6 = '19 707 (76)'
-- unparsed cell Tolbert_2019_table_2:row13:col3 = '3.0 (2.0‐8.0)'
-- unparsed cell Tolbert_2019_table_2:row13:col6 = '10 374 (75)'
+- table jcph1313-tbl-0003: units_need_context
+- table jcph1313-tbl-0003: unparsed_numeric_cell
+- transposed table jcph1313-tbl-0003: logical view retains original source coordinates
+- table jcph1313-tbl-0003: representations disagree; selected evidence retained, not merged
+- table Tolbert_2019_table_1: unparsed_numeric_cell
+- transposed table Tolbert_2019_table_1: logical view retains original source coordinates
+- companion parameter table 1 transcribed (69 record(s))
+- table Tolbert_2019_table_2: missing_label
+- table Tolbert_2019_table_2: ragged_grid
+- table Tolbert_2019_table_2: unparsed_numeric_cell
 - companion parameter table 2 transcribed (37 record(s))
 - LLM selected parameter table(s) 1, 2, 3
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.786 (11/14 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[10 mg clb + 40 mg opz]` |  | 1.9 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc0‐t, mean (% cv), ng•h/ml].parameter_id` | Q19 | Q74 | mismatch |
-| `gpt-oss-120b` | `parameters[drug cocktail]` | 0.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[auc0‐t, mean (% cv)]` | 8871 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f, mean (% cv)]` | 1.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax, mean (% cv)]` | 87.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[selected clb poppk estimates]` |  | 36 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1⁄2, mean (% cv)]` | 58.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd/f, mean (% cv)]` | 100 |  | only_one_extracted |
 
 </details>
 
@@ -186,22 +143,40 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q19 | fail | [mass] * [time] / [length] ** 3 | h ([time]) | ['Tolbert_2019_table_1:row4:col7', 'Tolbert_2019_table_1:row4:col11', 'Tolbert_2019_table_1:row4:col13', 'Tolbert_2019_table_1:row4:col15'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Tolbert_2019_table_1:row7:col3', 'Tolbert_2019_table_1:row7:col7', 'Tolbert_2019_table_1:row7:col11', 'Tolbert_2019_table_1:row7:col13', 'Tolbert_2019_table_1:row7:col15', 'Tolbert_2019_table_1:row7:col23', 'Tolbert_2019_table_1:row7:col27'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Tolbert_2019_table_1:row2:col2', 'Tolbert_2019_table_1:row2:col3', 'Tolbert_2019_table_1:row2:col4', 'Tolbert_2019_table_1:row2:col6', 'Tolbert_2019_table_1:row2:col7', 'Tolbert_2019_table_1:row2:col8', 'Tolbert_2019_table_1:row2:col10', 'Tolbert_2019_table_1:row2:col11', 'Tolbert_2019_table_1:row2:col12', 'Tolbert_2019_table_1:row2:col13', 'Tolbert_2019_table_1:row2:col14', 'Tolbert_2019_table_1:row2:col15', 'Tolbert_2019_table_1:row2:col16', 'Tolbert_2019_table_1:row2:col22', 'Tolbert_2019_table_1:row2:col23', 'Tolbert_2019_table_1:row2:col26', 'Tolbert_2019_table_1:row2:col27', 'Tolbert_2019_table_1:row2:col28'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Tolbert_2019_table_1:row5:col2', 'Tolbert_2019_table_1:row5:col3', 'Tolbert_2019_table_1:row5:col4', 'Tolbert_2019_table_1:row5:col7', 'Tolbert_2019_table_1:row5:col10', 'Tolbert_2019_table_1:row5:col11', 'Tolbert_2019_table_1:row5:col12', 'Tolbert_2019_table_1:row5:col13', 'Tolbert_2019_table_1:row5:col14', 'Tolbert_2019_table_1:row5:col15', 'Tolbert_2019_table_1:row5:col16', 'Tolbert_2019_table_1:row5:col26', 'Tolbert_2019_table_1:row5:col27', 'Tolbert_2019_table_1:row5:col28'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tolbert_2019_table_2:row10:col7', 'Tolbert_2019_table_2:row12:col7'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Tolbert_2019_table_1:row6:col3', 'Tolbert_2019_table_1:row6:col7', 'Tolbert_2019_table_1:row6:col11', 'Tolbert_2019_table_1:row6:col13', 'Tolbert_2019_table_1:row6:col15', 'Tolbert_2019_table_1:row6:col27'] |
-| C7_apparent_coherence | pass |  |  |  |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 1.9 L/h | ['Tolbert_2019_table_1:row7:col3', 'Tolbert_2019_table_1:row7:col7', 'Tolbert_2019_table_1:row7:col11', 'Tolbert_2019_table_1:row7:col13', 'Tolbert_2019_table_1:row7:col15', 'Tolbert_2019_table_1:row7:col23', 'Tolbert_2019_table_1:row7:col27'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 0.7 L | ['Tolbert_2019_table_2:row10:col7', 'Tolbert_2019_table_2:row12:col7'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 100 L | ['Tolbert_2019_table_1:row6:col3', 'Tolbert_2019_table_1:row6:col7', 'Tolbert_2019_table_1:row6:col11', 'Tolbert_2019_table_1:row6:col13', 'Tolbert_2019_table_1:row6:col15', 'Tolbert_2019_table_1:row6:col27'] |
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 5 |  |  |  |
+| C0b_disposition_core | pass |  |  |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |  |  |
+| C1_half_life_beta | pass | 36 | 36.48 | 1.013 | 0.25 | reported t½β |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  |  |  | ['Tolbert_2019_table_1:row2:col8', 'Tolbert_2019_table_1:row6:col8', 'Tolbert_2019_table_1:row10:col8', 'Tolbert_2019_table_1:row12:col8', 'Tolbert_2019_table_1:row14:col8', 'Tolbert_2019_table_1:row22:col8', 'Tolbert_2019_table_1:row26:col8'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  |  |  | ['Tolbert_2019_table_1:row1:col3', 'Tolbert_2019_table_1:row2:col3', 'Tolbert_2019_table_1:row3:col3', 'Tolbert_2019_table_1:row5:col3', 'Tolbert_2019_table_1:row6:col3', 'Tolbert_2019_table_1:row7:col3', 'Tolbert_2019_table_1:row9:col3', 'Tolbert_2019_table_1:row10:col3', 'Tolbert_2019_table_1:row11:col3', 'Tolbert_2019_table_1:row12:col3', 'Tolbert_2019_table_1:row13:col3', 'Tolbert_2019_table_1:row14:col3', 'Tolbert_2019_table_1:row15:col3', 'Tolbert_2019_table_1:row21:col3', 'Tolbert_2019_table_1:row22:col3', 'Tolbert_2019_table_1:row25:col3', 'Tolbert_2019_table_1:row26:col3', 'Tolbert_2019_table_1:row27:col3'] |
+| C5_dimension_Q57 | pass | [time] |  |  |  | ['Tolbert_2019_table_1:row1:col6', 'Tolbert_2019_table_1:row2:col6', 'Tolbert_2019_table_1:row3:col6', 'Tolbert_2019_table_1:row6:col6', 'Tolbert_2019_table_1:row9:col6', 'Tolbert_2019_table_1:row10:col6', 'Tolbert_2019_table_1:row11:col6', 'Tolbert_2019_table_1:row12:col6', 'Tolbert_2019_table_1:row13:col6', 'Tolbert_2019_table_1:row14:col6', 'Tolbert_2019_table_1:row15:col6', 'Tolbert_2019_table_1:row25:col6', 'Tolbert_2019_table_1:row26:col6', 'Tolbert_2019_table_1:row27:col6'] |
+| C5_dimension_Q74 | pass | [mass] * [time] / [length] ** 3 |  |  |  | ['Tolbert_2019_table_1:row6:col5', 'Tolbert_2019_table_1:row10:col5', 'Tolbert_2019_table_1:row12:col5', 'Tolbert_2019_table_1:row14:col5'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  |  |  | ['Tolbert_2019_table_1:row2:col7', 'Tolbert_2019_table_1:row6:col7', 'Tolbert_2019_table_1:row10:col7', 'Tolbert_2019_table_1:row12:col7', 'Tolbert_2019_table_1:row14:col7', 'Tolbert_2019_table_1:row26:col7'] |
+| C7_apparent_coherence | pass |  |  |  |  |  |
+| C8_topology | pass |  |  |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1.9 L/h |  |  | ['Tolbert_2019_table_1:row2:col8', 'Tolbert_2019_table_1:row6:col8', 'Tolbert_2019_table_1:row10:col8', 'Tolbert_2019_table_1:row12:col8', 'Tolbert_2019_table_1:row14:col8', 'Tolbert_2019_table_1:row22:col8', 'Tolbert_2019_table_1:row26:col8'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 100 L |  |  | ['Tolbert_2019_table_1:row2:col7', 'Tolbert_2019_table_1:row6:col7', 'Tolbert_2019_table_1:row10:col7', 'Tolbert_2019_table_1:row12:col7', 'Tolbert_2019_table_1:row14:col7', 'Tolbert_2019_table_1:row26:col7'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | fail | Metabolite_C (measured=clobazam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.3 (3 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.3 | cross-check contradicted by a second reader: verdict disputed; agreement 0.3 (3 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | skipped |  | 36.46 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | skipped |  | 36.46 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | skipped |  | 36.46 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | skipped |  | 36.46 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | pass | 36 | 36.46 | 1.013 | reported 36.0 hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 79 | 36.46 | 0.4615 | reported 79.0 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -219,10 +194,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 20 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 20 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_clobazam/Clobazam_Tolbert2019_vd_f_mean_cv_l/Clobazam_Tolbert2019_vd_f_mean_cv_l_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_clobazam/Clobazam_Tolbert2019_vd_f_mean_cv_l/Clobazam_Tolbert2019_vd_f_mean_cv_l_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Clobazam_Tolbert2019_vd_f_mean_cv_l_params.json` · controls `Clobazam_Tolbert2019_vd_f_mean_cv_l_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclobazam%5D%20Clobazam_Tolbert2019_vd_f_mean_cv_l&body=Drug%3A%20clobazam%0ARecord%3A%20Clobazam_Tolbert2019_vd_f_mean_cv_l%0APaper%3A%20Tolbert_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clobazam/Clobazam_Tolbert2019_vd_f_mean_cv_l%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:56 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 12:46 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Acetaminophen sulfate parameter units conflict with their pharmacokinetic meanings, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit μM ([length]) vs [mass] / [length] ** 3; Q30 unit min-1 (1 / [time]) vs [length] ** 3 / [time]; Q66 unit μmol/min/kg ([substance] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Watari1983_66_16_10_mg_kg" status="rejected" stale="false" population="rats" measured-compound="acetaminophen" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -67,13 +67,13 @@ Watari N, Iwai M, Kaneniwa N. Pharmacokinetic study of the fate of acetaminophen
 
 ### Reviewer guidance
 
-**Acetaminophen sulfate parameter units conflict with their pharmacokinetic meanings, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit μM ([length]) vs [mass] / [length] ** 3; Q30 unit min-1 (1 / [time]) vs [length] ** 3 / [time]; Q66 unit μmol/min/kg ([substance] / [time]) vs [mass] / [time].**
 
-The parameter labeled 'equation variable' carries units of micromolar (concentration) instead of a dimensionless fraction, while 'V' has units of L/kg (volume) despite being labeled as an intercompartmental clearance. Additionally, 'Vmax' is assigned units of μmol/min/kg (amount/time) rather than the required mass/time for a metabolic rate. These dimensional mismatches on structural parameters triggered the rejection of the model. Extracted — paracetamol: A1 0.256 min-1, Ct 459 μM, A2 0.0394 min-1, V 0.174 L/kg, Q 0.0506 min-1, kel 0.0523 min-1, CL 8.65 ml/min/kg, Vss 0.22 L/kg, … (+10).
+A reported unit could not be converted (equation variable, A1, Ct and A2), so that value has no SI equivalent. Extracted — paracetamol: A1 0.256 min-1, Ct 459 μM, A2 0.0394 min-1, V 0.174 L/kg, Q 0.0506 min-1, kel 0.0523 min-1, CL 8.65 ml/min/kg, Vss 0.22 L/kg, … (+10).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has acetaminophen → acetaminophen sulfate (metabolism); acetaminophen → acetaminophen glucuronide (metabolism), the second reading acetaminophen → acetaminophen sulfate (metabolism); acetaminophen → acetaminophen glucuronide (metabolism); acetaminophen sulfate → acetaminophen (hydrolysis) …; it also differs on 23 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

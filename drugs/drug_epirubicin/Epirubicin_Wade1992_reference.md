@@ -9,7 +9,7 @@
 
 > Only clearance was extracted — no volume; the clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="epirubicin" model-id="Epirubicin_Wade1992_reference" status="needs_review" stale="false" population="patients with normal liver and renal function" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="epirubicin" model-id="Epirubicin_Wade1992_reference" status="needs_review" stale="false" population="patients with cancer" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Wade JR, Kelman AW, Kerr DJ, Robert J, Whiting B. Variability in the pharmacokinetics of epirubicin: a population analysis. Cancer chemotherapy and pharmacology 29(5):391–395 (1992).
@@ -17,7 +17,7 @@ Wade JR, Kelman AW, Kerr DJ, Robert J, Whiting B. Variability in the pharmacokin
 
 ## Population and dosing
 
-**Population:** patients with normal liver and renal function · condition cancer · age group adult · n = 36.
+**Population:** patients with cancer · condition cancer · age group adult.
 
 ## Model
 
@@ -31,11 +31,11 @@ Wade JR, Kelman AW, Kerr DJ, Robert J, Whiting B. Variability in the pharmacokin
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| clearance | CL | 95 | l/h |
+| average clearance | CL | 95 | l/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ Wade JR, Kelman AW, Kerr DJ, Robert J, Whiting B. Variability in the pharmacokin
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — epirubicin: CL 95 l/h.
 
-Independently confirmed by `qwen3.8-27b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average clearance: this record has 95, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -57,7 +57,7 @@ Independently confirmed by `qwen3.8-27b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| clearance | `Q22` · CL | 95 | l/h | 2.639e-05 | m3/s | l/h | exact (1) | Wade_1992:abstract, Wade_1992:abstract |
+| average clearance | `Q22` · CL | 95 | l/h | 2.639e-05 | m3/s | l/h | llm_confirmed (0.6) | Wade_1992:abstract, Wade_1992:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -69,22 +69,28 @@ Independently confirmed by `qwen3.8-27b`.
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=epirubicin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Wade_1992_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 | `qwen3.8-27b` | confirmed | 1.0 (5/5 fields) | none |
 
-_All readers agree on the compared fields of this record._
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[average clearance]` | 95 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 95 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -136,4 +142,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bepirubicin%5D%20Epirubicin_Wade1992_reference&body=Drug%3A%20epirubicin%0ARecord%3A%20Epirubicin_Wade1992_reference%0APaper%3A%20Wade_1992%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_epirubicin/Epirubicin_Wade1992_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 17:54 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:54 UTC</sub>

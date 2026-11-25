@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;modafinil&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/&quot;},{&quot;label&quot;:&quot;Tao_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Modafinil_Tao2010_reference&quot;,&quot;label&quot;:&quot;Tao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/Modafinil_Tao2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Modafinil_Wu2012_reference&quot;,&quot;label&quot;:&quot;Wu_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/Modafinil_Wu2012_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Modafinil_Tao2010_reference&quot;,&quot;label&quot;:&quot;Tao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_modafinil/Modafinil_Tao2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # modafinil — `Modafinil_Tao2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> The abstract-only record for modafinil was held back because a second reader disputed the identity of the dosed compound, conflicting with the record's modafinil designation.
-
-<div class="pk-model-meta" hidden drug="modafinil" model-id="Modafinil_Tao2010_reference" status="needs_review" stale="false" population="healthy Chinese volunteers of five ethnicities" measured-compound="modafinil" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="modafinil" model-id="Modafinil_Tao2010_reference" status="simulated" stale="false" population="Chinese Han, Mongolian, Korean, Uygur, and Hui healthy subjects" measured-compound="modafinil" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Tao G, Longshan Z, Kehua W, Dongya X, Wei L, Zheng G et al. Population pharmacokinetics of modafinil in Chinese Han, Mongolian, Korean, Uygur, and Hui healthy subjects determined by nonlinear mixed-effects modeling. Therapeutic drug monitoring 32(2):189–193 (2010).
@@ -17,7 +15,7 @@ Tao G, Longshan Z, Kehua W, Dongya X, Wei L, Zheng G et al. Population pharmacok
 
 ## Population and dosing
 
-**Population:** healthy Chinese volunteers of five ethnicities · condition healthy · age group adult · n = 49.
+**Population:** Chinese Han, Mongolian, Korean, Uygur, and Hui healthy subjects · condition healthy · age group adult.
 
 ## Model
 
@@ -29,8 +27,6 @@ Tao G, Longshan Z, Kehua W, Dongya X, Wei L, Zheng G et al. Population pharmacok
 <figure class="pk-models-diagram"><img src="drugs/drug_modafinil/Modafinil_Tao2010_reference/Modafinil_Tao2010_reference.svg" alt="Modafinil_Tao2010_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | clearance of central compartment | CL | 3.51 | L/h |
@@ -40,7 +36,7 @@ Tao G, Longshan Z, Kehua W, Dongya X, Wei L, Zheng G et al. Population pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +46,13 @@ Tao G, Longshan Z, Kehua W, Dongya X, Wei L, Zheng G et al. Population pharmacok
 
 ### Reviewer guidance
 
-**The abstract-only record for modafinil was held back because a second reader disputed the identity of the dosed compound, conflicting with the record's modafinil designation.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-The record was constructed solely from the paper's abstract, so its summary statistics stand in for a fitted model. While the pharmacokinetic parameters (CL 3.51 L/h, Q 7.41 L/h, V1 3.85 L, V2 45.8 L) are defined for a two-compartment structure, the review process identified a disagreement on the dose compound. A second reader marked the dosed compound as unknown, contrasting with the record's explicit assignment to modafinil, resulting in a disputed verdict. Extracted — modafinil: CL 3.51 L/h, Q 7.41 L/h, V1 3.85 L, V2 45.8 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has modafinil, the second reading unknown. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -75,33 +71,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- routed 'interindividual variability in clearance of central compartment' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- routed 'interindividual variability in clearance of intercompartment' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- routed 'interindividual variability in volume of the central compartment' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- unit_dimension_mismatch: 'interindividual variability in volume of the peripheral compartment' → Q64 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q64 ('interindividual variability in volume of the peripheral compartment', value 16.6) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=modafinil
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Tao_2010_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Tao_2010_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.875 (7/8 fields) | 1 |
+| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | modafinil | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -136,7 +121,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | cross-check disputed by a second reader: verdict disputed, agreement 0.875, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -152,7 +137,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_modafinil/Modafinil_Tao2010_reference/Modafinil_Tao2010_reference_modelica.zip" download>Modafinil_Tao2010_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_modafinil/Modafinil_Tao2010_reference/Modafinil_Tao2010_reference_modelica.zip" download>Modafinil_Tao2010_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_modafinil/Modafinil_Tao2010_reference/Modafinil_Tao2010_reference_fmi.zip" download>Modafinil_Tao2010_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_modafinil/Modafinil_Tao2010_reference/Modafinil_Tao2010_reference_matlab.zip" download>Modafinil_Tao2010_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_modafinil/Modafinil_Tao2010_reference/Modafinil_Tao2010_reference_matlab_simbio.zip" download>Modafinil_Tao2010_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -216,4 +201,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmodafinil%5D%20Modafinil_Tao2010_reference&body=Drug%3A%20modafinil%0ARecord%3A%20Modafinil_Tao2010_reference%0APaper%3A%20Tao_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_modafinil/Modafinil_Tao2010_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 00:55 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:15 UTC</sub>

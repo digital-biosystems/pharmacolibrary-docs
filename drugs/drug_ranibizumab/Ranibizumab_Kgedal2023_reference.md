@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ranibizumab’s reported terminal elimination half-life of 106 days was associated with an implausible clearance/volume magnitude, leading to rejection.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ranibizumab" model-id="Ranibizumab_Kgedal2023_reference" status="rejected" stale="false" population="patients with neovascular age-related macular degeneration" measured-compound="ranibizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Kågedal M, Alskär O, Petersson K, Hanze E, Maia M, Lu T et al. Population Phar
 
 ### Reviewer guidance
 
-**Ranibizumab’s reported terminal elimination half-life of 106 days was associated with an implausible clearance/volume magnitude, leading to rejection.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record flags clearance/volume as outside the physiological window, consistent with a unit or scale extraction error. It was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader supplied no parameter estimates for the listed values. Extracted — ranibizumab: kel 0.00654 1/day, t1/2z 106 days, V 4 mL, kabs 0.0528 days−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ranibizumab: kel 0.00654 1/day, t1/2z 106 days, V 4 mL, kabs 0.0528 days−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ranibizumab, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

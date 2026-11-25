@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ephedrine’s absorption rate constant, recorded as 0.064 l min(-1), has volume/time units rather than the required inverse-time dimension, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l min(-1) ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="ephedrine" model-id="Ephedrine_Csajka2005_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="ephedrine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -50,13 +50,13 @@ Csajka C, Haller CA, Benowitz NL, Verotta D. Mechanistic pharmacokinetic modelli
 
 ### Reviewer guidance
 
-**Ephedrine’s absorption rate constant, recorded as 0.064 l min(-1), has volume/time units rather than the required inverse-time dimension, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l min(-1) ([length] ** 3 / [time]) vs 1 / [time].**
 
-The record defines kabs as an absorption rate constant, but its unit has dimensions of volume per time, whereas the expected dimension is inverse time. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader disputed the attribution of 0.064 and 38.6, assigning both to caffeine rather than ephedrine as this record does. Extracted — caffeine: CL 0.083 l min(-1); ephedrine: V 38.6 l, kabs 0.064 l min(-1), CL 0.34 l min(-1), V 181 l, Frel 32 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — caffeine: CL 0.083 l min(-1); ephedrine: V 38.6 l, kabs 0.064 l min(-1), CL 0.34 l min(-1), V 181 l, Frel 32 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 32, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

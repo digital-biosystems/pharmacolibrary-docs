@@ -32,7 +32,7 @@ Carbon dioxide is a medical gas and a vasodilator agent. It is administered by i
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Hellinga_2023_VE](drugs/drug_carbon_dioxide/pd_Hellinga_2023_VE.md) | Minute ventilation (ventilatory response to brain tissue carbon dioxide partial pressure) biomarker turnover ← carbon dioxide (brain tissue/effect-site PCO2) | — | Hellinga M et al., Oral Oxycodone-Induced Respiratory Depr…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2863](https://doi.org/10.1002/cpt.2863) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Hellinga_2023_VE](drugs/drug_carbon_dioxide/pd_Hellinga_2023_VE.md) | Minute ventilation (ventilatory response to brain tissue carbon dioxide partial pressure) biomarker turnover ← carbon dioxide (brain tissue/effect-site PCO2) | — | Hellinga M et al., Oral Oxycodone-Induced Respiratory Depr…, Clinical pharmacology and t… (2023) | [10.1002/cpt.2863](https://doi.org/10.1002/cpt.2863) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,51 +46,55 @@ Carbon dioxide is a medical gas and a vasodilator agent. It is administered by i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:35 | 3:31 | 1/1/0 | 0/1/0 | 0/0/0 | 172,110/10,794 | ollama / glm-5.3-flash | 7 | 3/4 | 7/0 | 0 |
+| 2026-11-23 19:41 | 0:03 | 1/1/0 | 1/0/0 | 0/0/0 | 3,869/141 | einfracz / qwen3.8-27b | 7 | 3/4 | 7/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 186 matched, 20 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Kazama_1996.pdf` | Kazama T et al., Carbon dioxide output in laparoscopic c…, British journal of anaesthe… (1996) | popPK | 8 | [10.1093/bja/76.4.530](https://doi.org/10.1093/bja/76.4.530) | [8652326](https://pubmed.ncbi.nlm.nih.gov/8652326) | Reports a two-compartment kinetic model of absorbed CO2 in humans with numeric time constants (8.2 and 990 min) present in the abstract, though clearance/volume terms are not given. |
-
-<sub>queue written 2026-10-07 18:33 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Babenco_2000 | irrelevant | 0 | 0 | CO2 is only a ventilatory-response probe; the PK parameters reported are for remifentanil, not carbon dioxide. |
-| popPK | Bouillon_1999 | irrelevant | 2 | 4 | Carbon dioxide is only a measured biomarker (PaCO2) in a PK/PD study of alfentanil; the CO2 elimination rate constant (0.088 min⁻¹) is a pharmacodynamic parameter, not disposition PK of CO2 as the subject drug. |
-| popPK | Dholakia_2020 | irrelevant | 0 | 0 | The drug studied is midazolam; carbon dioxide appears only as a monitored physiologic variable (Pe'CO2), not as the subject drug. |
+| popPK | Babenco_2000 | irrelevant | 0 | 0 | Carbon dioxide is used as a diagnostic stimulus to measure ventilatory responses to remifentanil, not as the subject drug for pharmacokinetic modeling. |
+| PGx | Babenco_2000 | not_relevant | 0 | 0 | The study investigates the pharmacodynamics of remifentanil on carbon dioxide response in healthy volunteers but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| popPK | Bouillon_1999 | irrelevant | 0 | 0 | The study models the pharmacokinetics of alfentanil, and carbon dioxide is used only as a physiologic variable (PaCO2) for pharmacodynamic modeling, not as the subject drug. |
+| PGx | Bouillon_1999 | not_relevant | 0 | 0 | The paper reports a PK/PD model for alfentanil's effect on carbon dioxide (PaCO2), but does not report a pharmacogenomic effect on these parameters. |
+| popPK | Dholakia_2020 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of midazolam in cats, not carbon_dioxide; carbon dioxide is only measured as a physiologic parameter (end-tidal CO2). |
+| PGx | Dholakia_2020 | not_relevant | 0 | 0 | The study focuses on the pharmacokinetics of midazolam in cats and does not investigate any gene variants, genotypes, or phenotypes affecting carbon dioxide parameters. |
 | popPK | Grangeat_2023 | irrelevant | 2 | 1 | This is a sensor/modeling paper for a capnometry wristband using convection-diffusion transport equations, not a pharmacokinetic study of carbon dioxide; no CL/V/ka or population-PK parameters are reported, and no numeric disposition values appear in the evidence. |
 | popPK | Hellinga_2023 | irrelevant | 3 | 4 | Carbon dioxide is used only as a diagnostic challenge/probe in an oxycodone PK/PD study; the reported CL/V/Q values are oxycodone's, and CO2 model parameters (VTS, Q, τ) are physiological ventilation-model terms, not CO2 disposition PK. |
-| popPK | Hoffman_2021 | irrelevant | 0 | 0 | This is a physiology study of pCO2 effects on cerebral blood flow/autoregulation in preterm infants, not a pharmacokinetic study of carbon dioxide disposition; no CL, V, or PK model parameters are reported. |
+| popPK | Hoffman_2021 | irrelevant | 0 | 0 | The study investigates the physiological association between carbon dioxide levels and cerebral hemodynamics in premature infants, not the pharmacokinetic disposition parameters of carbon dioxide as a drug. |
+| PGx | Hoffman_2021 | not_relevant | 0 | 0 | The paper studies the physiological relationship between carbon dioxide levels and cerebral blood flow in neonates, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of a drug. |
 | popPK | Hughes_2023 | irrelevant | 0 | 0 | This is a respiratory physiology editorial on gas exchange (shunt/dead space) in COVID-19, not a pharmacokinetic study of carbon dioxide disposition; no PK parameters (CL, V, half-life) are reported. |
-| popPK | Kang_2021 | irrelevant | 0 | 0 | This is a pharmacodynamic model of sevoflurane's effect on tidal volume in children; CO2 is only a measured vital sign, not the subject drug, and no CO2 disposition parameters are reported. |
-| popPK | Kapke_1980 | irrelevant | 0 | 0 | This is an in-vitro bacterial enzyme kinetics study of PEPCK, not a pharmacokinetic study of carbon dioxide disposition. |
-| popPK | Laurence_2003 | irrelevant | 0 | 0 | This is an ecology paper about ozone effects on plants; carbon dioxide is only mentioned as an environmental stressor, with no PK parameters. |
-| popPK | Lee_2019 | irrelevant | 2 | 3 | This is a pharmacodynamic (RR–ETCO2) model, not a PK disposition study of carbon dioxide; some numeric parameters (ke0 0.467 min⁻¹, Ce50) appear in text but Table 2 values are not shown. |
+| popPK | Kang_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of sevoflurane, and carbon dioxide is mentioned only as a recorded variable (end-tidal CO2), not as the subject drug for PK parameter estimation. |
+| PGx | Kang_2021 | not_relevant | 0 | 0 | The paper models the pharmacodynamic effect of sevoflurane on tidal volume and does not investigate gene variants or their impact on carbon dioxide pharmacokinetics/pharmacodynamics. |
+| popPK | Kapke_1980 | irrelevant | 0 | 0 | The paper investigates carbon dioxide metabolism in bacteria (Capnocytophaga ochracea) via enzyme kinetics, not pharmacokinetic parameters (CL, V, ka) for a drug. |
+| PGx | Kapke_1980 | not_relevant | 0 | 0 | The paper describes bacterial enzymology and carbon fixation by *Capnocytophaga ochracea*, unrelated to human pharmacogenomics or the pharmacokinetics/pharmacodynamics of carbon dioxide as a therapeutic agent. |
+| popPK | Kazama_1996 | irrelevant | 2 | 8 | The study measures carbon dioxide output (physiology/respiration) during laparoscopic surgery and fits a two-compartment model to the *output* kinetics, but does not report pharmacokinetic parameters (CL, Vd) for carbon dioxide as a drug in a PK sense (e.g., plasma clearance). |
+| PGx | Kazama_1996 | not_relevant | 0 | 0 | The paper investigates the physiological impact of laparoscopic surgery and anesthesia on carbon dioxide elimination and does not report any pharmacogenomic effects of a specific drug. |
+| popPK | Laurence_2003 | irrelevant | 0 | 0 | The paper discusses ozone and ecosystem responses, with carbon dioxide mentioned only as an environmental factor, and contains no pharmacokinetic data. |
+| PGx | Laurence_2003 | not_relevant | 0 | 0 | The paper discusses the ecological risk of ozone on natural systems and mentions carbon dioxide as an environmental stressor, not a drug; it contains no pharmacogenomic or PK/PD data. |
+| popPK | Lee_2019 | irrelevant | 0 | 0 | The paper describes a pharmacodynamic model relating respiratory rate to end-tidal carbon dioxide (ETCO2) as a clinical endpoint, not the population pharmacokinetics (clearance, volume, etc.) of carbon dioxide as a drug. |
+| PGx | Lee_2019 | not_relevant | 0 | 0 | The study models the pharmacodynamic relationship between respiratory rate and end-tidal carbon dioxide (ETCO2), which are physiological variables rather than the pharmacokinetics or pharmacodynamics of a specific administered drug; 'carbon_dioxide' is not a drug in this context. |
 | popPK | Lee_2019_2 | irrelevant | 0 | 0 | This is a theoretical/biophysical modeling paper on hemoglobin allostery and the Bohr effect; CO2 is an allosteric ligand, not a dosed drug, and no PK parameters (CL, V, half-life) are reported. |
-| popPK | Liu_2023 | irrelevant | 0 | 0 | This is an agricultural meta-analysis of forage crop responses to drought and elevated CO2, with no pharmacokinetic parameters for carbon dioxide. |
-| popPK | Mertens_2004 | irrelevant | 0 | 0 | The study models propofol PK; carbon dioxide is only a monitored end-tidal vital sign, not the subject drug. |
+| popPK | Liu_2023 | irrelevant | 0 | 0 | The paper is a meta-analysis of forage crop growth under environmental stress, not a pharmacokinetic study of carbon dioxide as a drug. |
+| PGx | Liu_2023 | not_relevant | 0 | 0 | The paper is an agricultural meta-analysis regarding the effects of drought and elevated CO2 on forage crops, not a pharmacogenomic study. |
+| popPK | Mertens_2004 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of propofol, and carbon dioxide is only monitored as an end-tidal measurement, not the subject drug. |
+| PGx | Mertens_2004 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (alfentanil on propofol) rather than pharmacogenomic effects. |
 | popPK | Német_2020 | irrelevant | 0 | 0 | In-vitro chemical oscillator study with no pharmacokinetic disposition parameters for carbon dioxide. |
 | popPK | OConnor_2025 | irrelevant | 0 | 0 | CO2 appears only as a physiological gas-exchange measure (VCO2, PETCO2), not as a drug with PK parameters. |
-| popPK | Scheipers_1975 | irrelevant | 1 | 2 | This is an in-vitro blood gas dissociation/buffering study, not a pharmacokinetic study with disposition parameters for carbon dioxide. |
-| popPK | Yang_2024 | irrelevant | 0 | 0 | Carbon dioxide appears only as a PD mediator in a ventilation–CO2 linear relationship within a naloxone/opioid PK-PD simulation; no CO2 disposition parameters are reported, and numeric PK values concern naloxone and carfentanil (some in supplementary tables). |
+| popPK | Scheipers_1975 | irrelevant | 0 | 0 | The study reports gas dissociation curves and buffering properties of blood, not pharmacokinetic disposition parameters for a drug. |
+| PGx | Scheipers_1975 | not_relevant | 0 | 0 | The paper describes physiological dissociation curves in duck blood and does not report any pharmacogenomic effects on carbon dioxide parameters. |
+| popPK | Yang_2024 | irrelevant | 0 | 0 | The paper is a PK/PD modeling study of naloxone and opioids; carbon dioxide is only used as a physiological variable in the PD model, not the subject drug. |
+| PGx | Yang_2024 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetic-pharmacodynamic modeling of naloxone and opioids; it does not report any pharmacogenomic effects or gene variant impacts on PK/PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarbon_dioxide%5D&body=Drug%3A%20carbon_dioxide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carbon_dioxide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 18:33 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 19:41 UTC</sub>

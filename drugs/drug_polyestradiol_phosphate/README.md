@@ -21,7 +21,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Johansson_2000_serum_testosterone](drugs/drug_polyestradiol_phosphate/pd_Johansson_2000_serum_testosterone.md) | serum testosterone ← estradiol · indirect response — drug inhibits the production of serum testosterone | — | Johansson CJ et al., Pharmacodynamic model of testosterone s…, The Prostate (2000) | [10.1002/1097-0045(20000615)44:1&lt;26::aid-pros4&gt;3.0.co;2-p](https://doi.org/10.1002/1097-0045(20000615)44:1&lt;26::aid-pros4&gt;3.0.co;2-p) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Johansson_2000_serum_testosterone](drugs/drug_polyestradiol_phosphate/pd_Johansson_2000_serum_testosterone.md) | serum testosterone ← estradiol · indirect response — drug inhibits the production of serum testosterone | — | Johansson CJ et al., Pharmacodynamic model of testosterone s…, The Prostate (2000) | [10.1002/1097-0045(20000615)44:1&lt;26::aid-pros4&gt;3.0.co;2-p](https://doi.org/10.1002/1097-0045(20000615)44:1&lt;26::aid-pros4&gt;3.0.co;2-p) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -35,7 +35,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 22:08 | 0:33 | 0/0/0 | 1/0/0 | 0/0/0 | 5,249/668 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-06 22:08 | 0:33 | 0/0/0 | 0/1/0 | 0/0/0 | 5,249/668 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 

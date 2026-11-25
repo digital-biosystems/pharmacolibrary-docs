@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Absorption rate constant units were unconvertible, triggering a dimension mismatch that rejected the record.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit units ([luminosity] / [length] ** 2) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="Imdevimab" model-id="Imdevimab_Lin2024_reference" status="rejected" stale="false" population="pediatric and adult non-infected individuals, patients infected with SARS-CoV-2, or household contacts" measured-compound="imdevimab" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Lin KJ, Turner KC, Rosario M, Harnisch LO, Davis JD, DiCioccio AT. Population Ph
 
 ### Reviewer guidance
 
-**Absorption rate constant units were unconvertible, triggering a dimension mismatch that rejected the record.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit units ([luminosity] / [length] ** 2) vs 1 / [time].**
 
-The record lists the absorption rate constant with the unit string 'units', which cannot be converted to SI seconds. This caused a structural validation failure because the unit dimension conflicted with the required time inverse dimension. Consequently, the model was held back due to this unresolvable unit conversion error. Extracted — imdevimab: CL 0.236 L/day, V1 3.82 L, Q 0.403 L/day, V2 3.2 L, kabs 0.235 units, Fab 0.662 units.
+A reported unit could not be converted (kabs and Fab), so that value has no SI equivalent. Extracted — imdevimab: CL 0.236 L/day, V1 3.82 L, Q 0.403 L/day, V2 3.2 L, kabs 0.235 units, Fab 0.662 units.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has casirivimab/imdevimab, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

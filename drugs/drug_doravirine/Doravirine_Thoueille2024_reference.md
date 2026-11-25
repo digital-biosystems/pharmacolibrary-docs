@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Doravirine’s bioavailability (F) has no paper-supported estimate and was defaulted; simulated Cmax was 0.0009946015418505394 kg/m³, below reported values of 0.001624 and 0.00265.
+> The model does not reproduce the paper's peak concentration (Cmax); f use library defaults, not estimates from this paper (+3 more).
 
 <div class="pk-model-meta" hidden drug="doravirine" model-id="Doravirine_Thoueille2024_reference" status="needs_review" stale="false" population="real-world people with HIV" measured-compound="doravirine" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Thoueille P, Delarive L, Cavassini M, Buclin T, Decosterd LA, Marzolini C et al.
 
 ### Reviewer guidance
 
-**Doravirine’s bioavailability (F) has no paper-supported estimate and was defaulted; simulated Cmax was 0.0009946015418505394 kg/m³, below reported values of 0.001624 and 0.00265.**
+**The model does not reproduce the paper's peak concentration (Cmax); f use library defaults, not estimates from this paper (+3 more).**
 
-The model does not reproduce the paper’s peak concentration (Cmax): the simulated value, 0.0009946015418505394 kg/m³, differs from the two reported converted values, 0.001624 and 0.00265, with ratios of 0.6124 and 0.3753. F and Tlag were defaulted rather than estimated from the paper, so those profile inputs are unsupported by its estimates. The covariate scenarios were not simulated; only the reference individual was simulated despite the defined covariate effect. A second reader disputed the dose compound and primary analyte, and gave theta_age as -0.67 where this record has no value.‌‌ Extracted — doravirine: kabs 1.9 h⁻¹, V 82.2 L, CL 3.98 L/h.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — doravirine: kabs 1.9 h⁻¹, V 82.2 L, CL 3.98 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has doravirine, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -151,11 +151,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 0.0009946 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.75 (9 of 12 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (9 of 12 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 0.0009946 |  | the transcribed record carries no number for this value |
 | T1_cmax | reference | skipped | 1.6 | 0.0009946 |  | unresolved concentration unit (exp '-fold', sim 'kg/m3') |
-| T1_cmax | reference | fail | 0.001624 | 0.0009946 | 0.6124 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00265 | 0.0009946 | 0.3753 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.001624 | 0.0009946 | 0.6124 | reported 1624.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00265 | 0.0009946 | 0.3753 | reported 2650.0 ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 1.6 | 0.0009946 |  | unresolved concentration unit (exp '-fold', sim 'kg/m3') |
 | T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 2.8 |  |  | no simulated metric for this quantity (single reference sim) |

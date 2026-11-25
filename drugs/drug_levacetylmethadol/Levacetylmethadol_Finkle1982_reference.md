@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the nor-LAAM and dinor-LAAM metabolite compartments are unreachable from the levacetylmethadol dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="levacetylmethadol" model-id="Levacetylmethadol_Finkle1982_reference" status="rejected" stale="false" population="human subjects (opioid-dependent/maintenance)" measured-compound="levacetylmethadol" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="levacetylmethadol" model-id="Levacetylmethadol_Finkle1982_reference" status="rejected" stale="false" population="healthy adults" measured-compound="levacetylmethadol" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Finkle BS, Jennison TA, Chinn DM, Ling W, Holmes ED. Plasma and urine disposition of 1-alpha-acetylmethadol and its principal metabolites in man. Journal of analytical toxicology 6(2):100–105 (1982).
@@ -46,13 +46,13 @@ Finkle BS, Jennison TA, Chinn DM, Ling W, Holmes ED. Plasma and urine dispositio
 
 ### Reviewer guidance
 
-**Record rejected because the nor-LAAM and dinor-LAAM metabolite compartments are unreachable from the levacetylmethadol dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure includes metabolism links from levacetylmethadol to nor-LAAM and dinor-LAAM, but these metabolite nodes have zero compartments and no path from the dosing site. Additionally, the record was built from the abstract alone, so the reported half-lives of 2.4, 37.5, and 38.2 hours are summary statistics rather than fitted parameters. A second reader disagreed on the specific drug nomenclature and the presence of any metabolic links, noting the lack of detailed structural information in the source. Extracted — levacetylmethadol: t1/2α 2.4 hours, t1/2β 37.5 hours, t1/2z 38.2 hours.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — levacetylmethadol: t1/2α 2.4 hours, t1/2β 37.5 hours, t1/2z 38.2 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levacetylmethadol, the second reading 1-alpha-acetylmethadol; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,4 +142,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevacetylmethadol%5D%20Levacetylmethadol_Finkle1982_reference&body=Drug%3A%20levacetylmethadol%0ARecord%3A%20Levacetylmethadol_Finkle1982_reference%0APaper%3A%20Finkle_1982%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levacetylmethadol/Levacetylmethadol_Finkle1982_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:29 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:23 UTC</sub>

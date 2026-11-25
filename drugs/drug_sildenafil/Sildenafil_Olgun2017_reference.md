@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Sildenafil record lacks distribution volume and clearance parameters, containing only summary statistics like Cmax and tmax, so it is not a compartmental model.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit ng/mL/hour ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="sildenafil" model-id="Sildenafil_Olgun2017_reference" status="rejected" stale="false" population="children with pulmonary arterial hypertension" measured-compound="sildenafil" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Olguín HJ, Martínez HO, Pérez CF, Mendiola BR, Espinosa LR, Pacheco JLC et al
 
 ### Reviewer guidance
 
-**Sildenafil record lacks distribution volume and clearance parameters, containing only summary statistics like Cmax and tmax, so it is not a compartmental model.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit ng/mL/hour ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.**
 
-The record lists Cmax, tmax, and absorption rate constant but omits specific values for clearance and volume of distribution. Consequently, the data represent exposure metrics rather than a fitted pharmacokinetic model. The abstract-only source means these summary statistics stand in for missing structural parameters. Extracted — sildenafil: kabs 0.343 hour-1.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sildenafil: kabs 0.343 hour-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sildenafil, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time were defaulted because ng/mL units failed conversion, preventing valid simulation of simvastatin.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Kaleem2018_simvastatin_20_mg_with_clarithromycin" status="needs_review" stale="false" population="healthy adult male subjects" measured-compound="simvastatin" parameterization="mechanistic" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Kaleem Z, Khan JA, Mushtaq Z, Altaf S, Javed I. Assessment of potential interact
 
 ### Reviewer guidance
 
-**Bioavailability and lag time were defaulted because ng/mL units failed conversion, preventing valid simulation of simvastatin.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lacks explicit estimates for bioavailability (F) and lag time (Tlag), relying instead on library defaults. The pharmacokinetic profile is therefore unsupported by the paper's data, as these parameters directly shape the absorption phase. This gap arose because the concentration unit ng/mL could not be converted to SI, halting the extraction process. Extracted — simvastatin: Cmax 5.66 ng mL -1, tmax 2.44 hr, kabs 0.47 hr -1, t1/2ka 1.69 hr, kel 0.47 hr -1, t1/2β 1.69 hr, V 20.8 L kg -1, CLb 10.1 L hr -1 kg -1, … (+2).
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — simvastatin: Cmax 5.66 ng mL -1, tmax 2.44 hr, kabs 0.47 hr -1, t1/2ka 1.69 hr, kel 0.47 hr -1, t1/2β 1.69 hr, V 20.8 L kg -1, CLb 10.1 L hr -1 kg -1, … (+2).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -162,14 +162,14 @@ _All readers agree on the compared fields of this record._
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  | no second reading of this record |
-| T1_cmax | reference | skipped |  | 4.542e-06 | non-numeric value |
-| T1_cmax | reference | skipped |  | 4.542e-06 | non-numeric value |
+| T1_cmax | reference | skipped |  | 4.542e-06 | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 4.542e-06 | the transcribed record carries no number for this value |
 | T1_cmax | reference | skipped | 2.3 | 4.542e-06 | unresolved concentration unit (exp 'folds', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 2.47 | 4.542e-06 | unresolved concentration unit (exp 'ng.mL -1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 5.66 | 4.542e-06 | unresolved concentration unit (exp 'ng.mL -1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 23.4 | 4.542e-06 | unresolved concentration unit (exp 'ng.mL -1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 4.16 | 4.542e-06 | unresolved concentration unit (exp 'ng.mL -1', sim 'kg/m3') |
-| T1_t_half_beta | reference | skipped |  | 1.672 | non-numeric value |
+| T1_t_half_beta | reference | skipped |  | 1.672 | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

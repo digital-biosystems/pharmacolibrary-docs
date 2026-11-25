@@ -4,11 +4,11 @@
 
 # tenofovir alafenamide — `TenofovirAlafenamide_Beliveau2026_overall`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The paper reports none of the model's key parameters.
+> Only volume was extracted — no clearance; v/F has no unit (+1 more).
 
-<div class="pk-model-meta" hidden drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Beliveau2026_overall" status="rejected" stale="false" population="South African women in HIV PrEP trial" measured-compound="tenofovir alafenamide" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="tenofovir alafenamide" model-id="TenofovirAlafenamide_Beliveau2026_overall" status="needs_review" stale="false" population="South African women (HIV-1 PrEP)" measured-compound="tenofovir alafenamide" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Beliveau M, Chang C, Lewis L, Letsoalo MP, Karim QA, Karim SSA et al. Population pharmacokinetics of tenofovir alafenamide delivered via an annual subdermal implant in South African women. Scientific reports 16(1) (2026).
@@ -16,23 +16,25 @@ Beliveau M, Chang C, Lewis L, Letsoalo MP, Karim QA, Karim SSA et al. Population
 
 ## Population and dosing
 
-**Population:** South African women in HIV PrEP trial · condition HIV-negative women (PrEP) · age group adult.
+**Population:** South African women (HIV-1 PrEP) · condition HIV-1 pre-exposure prophylaxis · age group adult · n = 45.
 
 ## Model
 
 **Structure:** general linear; no model was built for this record.  
-**Parameterization:** mechanistic.  
-**Parameters:** 0 extracted.  
+**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label | parameter | value | unit |
+|---|---|---|---|
+| V/F | V/F | 54 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -42,53 +44,62 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**Only volume was extracted — no clearance; v/F has no unit (+1 more).**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Extracted — tenofovir alafenamide: V/F 54.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tenofovir alafenamide → tenofovir (tfv) (metabolism); tenofovir (tfv) → tenofovir diphosphate (tfv-dp) (metabolism), the second reading tenofovir alafenamide → tenofovir (metabolism); tenofovir → tenofovir diphosphate (interconversion); it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tenofovir alafenamide → tenofovir (metabolism); tenofovir → tenofovir diphosphate (metabolism), the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | unit_canonical | link | source |
+|---|---|---|---|---|---|---|
+| V/F | `Q76` · V/F | 54 |  | L | exact (1) | Beliveau_2026:other_prose |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Mean (SD)' — extend the ontology if this is a real PK parameter (source ['Beliveau_2026_table_5:row1:col4', 'Beliveau_2026_table_5:row5:col4', 'Beliveau_2026_table_5:row9:col4'])
-- dropped unlinked row (NIL): 'Median (CV%)' — extend the ontology if this is a real PK parameter (source ['Beliveau_2026_table_5:row2:col4', 'Beliveau_2026_table_5:row6:col4', 'Beliveau_2026_table_5:row10:col4'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tenofovir alafenamide
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — only the metabolite is modelled — no parent compartment
-- status held at "Needs review" — not promoted
+- dropped unlinked row (NIL): 'Mean (SD)' — extend the ontology if this is a real PK parameter (source ['Tab5:row2:col4', 'Tab5:row6:col4'])
+- dropped unlinked row (NIL): 'Median (CV%)' — extend the ontology if this is a real PK parameter (source ['Tab5:row3:col4', 'Tab5:row7:col4', 'Tab5:row11:col4'])
+- salvaged Q76 ('V/F'=54) from results prose — parameter table was unreadable
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tenofovir alafenamide
+- topology: 2 first-order transfer(s) across 3 compounds → general_linear
+- template fit: none — a metabolite is formed from another metabolite (a chain)
 - population split: 'overall(n = 30)' subgroup of Beliveau_2026 (paper reports 5 populations: estimate, group 1one taf implant(n = 6), group 2 aone taf implant(n = 12), group 2 ctwo taf implants(n = 12), overall(n = 30))
-- row roles (LLM): model_class=compartmental; 12/12 row label(s) assigned, 9 linked by role; re-tagged parent→tenofovir (TFV) ×4, parent→tenofovir diphosphate (TFV-DP) ×6
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- row roles (LLM): model_class=compartmental; 12/12 row label(s) assigned, 12 linked by role; re-tagged parent→tenofovir ×8, parent→tenofovir diphosphate ×6
 
 **Extraction notes:**
-- unparsed cell Beliveau_2026_table_3:row1:col1 = '0.924a'
-- unparsed cell Beliveau_2026_table_3:row4:col1 = '1360 ×'
-- unparsed cell Beliveau_2026_table_3:row5:col1 = '0.2257 ×'
-- unparsed cell Beliveau_2026_table_3:row6:col1 = '0.2981×'
-- unparsed cell Beliveau_2026_table_3:row7:col1 = '0.039×'
-- companion parameter table 3 transcribed (13 record(s))
-- companion parameter table 5 transcribed (24 record(s))
+- table Tab5: unbound_uncertainty
+- table Tab5: ambiguous_numeric_format
+- table Beliveau_2026_table_3: unparsed_numeric_cell
+- companion parameter table 3 transcribed (16 record(s))
+- table Beliveau_2026_table_4: units_need_context
+- companion parameter table 4 transcribed (2 record(s))
 - LLM selected parameter table(s) 3, 4, 5
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | primary re-run | 0.5 (3/6 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.bioavailability.theta` |  | 9.24 | only_one_extracted |
-| `gpt-oss-120b` | `model.links` | [['tenofovir alafenamide', 'tenofovir (tfv)', 'metabolism'], ['tenofovir (tfv)', 'tenofovir diphosphate (tfv-dp)', 'metabolism']] | [['tenofovir alafenamide', 'tenofovir', 'metabolism'], ['tenofovir', 'tenofovir diphosphate', 'interconversion']] | mismatch |
-| `gpt-oss-120b` | `parameters[frel]` |  | 9.24 | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['tenofovir alafenamide', 'tenofovir', 'metabolism'], ['tenofovir', 'tenofovir diphosphate', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[54% increase in v/f]` |  | 54 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 54 |  | only_one_extracted |
 
 </details>
 
@@ -100,11 +111,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained |
-|---|---|---|---|
-| C0_has_structural_params | fail |  | 0 |
-| C0b_disposition_core | fail |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['unknown', 'unknown'] |
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 1 |  |  |  |
+| C0b_disposition_core | pass |  |  |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |  |  |
+| C2_base_Q76 | fail | 54 | 0.618 | 0.0114 | 0.05 | footnote reference category |
+| C5_unit_missing_Q76 | fail | [length] ** 3 |  |  |  | ['Beliveau_2026:other_prose'] |
+| C7_apparent_coherence | pass |  |  |  |  |  |
+| C8_topology | pass |  |  |  |  |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -116,9 +131,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -128,4 +153,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btenofovir_alafenamide%5D%20TenofovirAlafenamide_Beliveau2026_overall&body=Drug%3A%20tenofovir_alafenamide%0ARecord%3A%20TenofovirAlafenamide_Beliveau2026_overall%0APaper%3A%20Beliveau_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tenofovir_alafenamide/TenofovirAlafenamide_Beliveau2026_overall%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:27 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 17:36 UTC</sub>

@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;icotinib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Icotinib_Hu2015_reference&quot;,&quot;label&quot;:&quot;Hu_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_icotinib/Icotinib_Hu2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # icotinib
 
@@ -23,17 +22,11 @@ It is approved for use in China as a first-line monotherapy for patients with sp
 |---|---|---|---|---|---|---|
 | icotinib | parent | 391.427 | C22H21N3O4 | DrugBank | [22024915](https://pubchem.ncbi.nlm.nih.gov/compound/22024915) | Hu_2015 |
 
-## Start here
-
-> **Hu_2015_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy Chinese volunteers, n = 22. [Run it in the simulator](drugs/drug_icotinib/Icotinib_Hu2015_reference.md?tab=Simulation) · [record](drugs/drug_icotinib/Icotinib_Hu2015_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Hu_2015_reference](drugs/drug_icotinib/Icotinib_Hu2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Hu P et al., Development of population pharmacokinet…, European journal of clinica… (2015) | [10.1007/s00228-015-1864-5](https://doi.org/10.1007/s00228-015-1864-5) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hu_2015_reference](drugs/drug_icotinib/Icotinib_Hu2015_reference.md) | — | 1-compartment (no model) | 5 | Hu P et al., Development of population pharmacokinet…, European journal of clinica… (2015) | [10.1007/s00228-015-1864-5](https://doi.org/10.1007/s00228-015-1864-5) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,35 +40,39 @@ It is approved for use in China as a first-line monotherapy for patients with sp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 01:31 | 0:33 | 1/0/0 | 0/0/0 | 0/0/0 | 23,020/2,700 | openai / gpt-6-luna | 4 | 0/0 | 4/0 | 0 |
+| 2026-11-23 22:43 | 0:04 | 0/1/0 | 0/0/0 | 0/0/0 | 3,657/163 | einfracz / qwen3.8-27b | 4 | 0/0 | 4/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Hu_2015.pdf` | Hu P et al., Development of population pharmacokinet…, European journal of clinica… (2015) | popPK | 10 | [10.1007/s00228-015-1864-5](https://doi.org/10.1007/s00228-015-1864-5) | [25995169](https://pubmed.ncbi.nlm.nih.gov/25995169) | The paper reports numeric population-PK parameters for icotinib in the provided evidence. |
-| `Yong_2025.pdf` | Yong L et al., Modeling exposure-driven adverse events…, Acta pharmacologica Sinica (2025) | popPK | 9 | [10.1038/s41401-025-01573-z](https://doi.org/10.1038/s41401-025-01573-z) | [40481213](https://pubmed.ncbi.nlm.nih.gov/40481213) | PopPK models were constructed for icotinib, but no numeric parameter values are provided in the evidence. |
+| `Yong_2025.pdf` | Yong L et al., Modeling exposure-driven adverse events…, Acta pharmacologica Sinica (2025) | popPK | 7 | [10.1038/s41401-025-01573-z](https://doi.org/10.1038/s41401-025-01573-z) | [40481213](https://pubmed.ncbi.nlm.nih.gov/40481213) | The study constructs population pharmacokinetic models for icotinib, but the specific numeric parameter values are not present in the provided abstract or evidence, likely residing in the full text or supplementary material. |
 
-<sub>queue written 2026-10-07 01:30 UTC</sub>
+<sub>queue written 2026-11-23 22:43 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Yong_2025 | relevant | 9 | 0 | PopPK models were constructed for icotinib, but no numeric parameter values are provided in the evidence. |
+| popPK | Li_2023 | irrelevant | 2 | 0 | The paper reports a validated analytical method and simple concentration ranges (trough/peak) for TDM, but does not report quantitative pharmacokinetic parameters like clearance, volume, or half-life. |
+| PGx | Li_2023 | not_relevant | 0 | 0 | The paper describes an analytical method for TDM and reports observed concentration ranges but does not investigate the impact of gene variants or genotypes on pharmacokinetic parameters. |
+| popPK | Xu_2018 | irrelevant | 0 | 0 | The study reports clinical efficacy outcomes (ORR, PFS, OS) rather than pharmacokinetic parameters. |
+| PGx | Xu_2018 | not_relevant | 0 | 0 | The study evaluates clinical outcomes (efficacy and safety) in patients with unknown EGFR mutation status and does not report specific pharmacogenomic effects on PK or PD parameters. |
+| popPK | Yong_2025 | relevant | 7 | 0 | The study constructs population pharmacokinetic models for icotinib, but the specific numeric parameter values are not present in the provided abstract or evidence, likely residing in the full text or supplementary material. |
+| PGx | Yong_2025 | not_relevant | 1 | 0 | The study focuses on population pharmacokinetics and exposure-driven adverse events, but does not report pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bicotinib%5D&body=Drug%3A%20icotinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_icotinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 01:30 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 22:42 UTC</sub>

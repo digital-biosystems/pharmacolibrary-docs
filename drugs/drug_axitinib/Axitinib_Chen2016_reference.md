@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;axitinib&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/&quot;},{&quot;label&quot;:&quot;Chen_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Axitinib_Garrett2014_base&quot;,&quot;label&quot;:&quot;Garrett_2014_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Garrett2014_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Tortorici2014_reference&quot;,&quot;label&quot;:&quot;Tortorici_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Tortorici2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Garrett2014_final&quot;,&quot;label&quot;:&quot;Garrett_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Garrett2014_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Rini2013_reference&quot;,&quot;label&quot;:&quot;Rini_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Rini2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ma_2019_TV&quot;,&quot;label&quot;:&quot;Ma_2019 \u00b7 TV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/pd_Ma_2019_TV.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Axitinib_Rini2013_reference&quot;,&quot;label&quot;:&quot;Rini_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Rini2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Tortorici2014_reference&quot;,&quot;label&quot;:&quot;Tortorici_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Tortorici2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Garrett2014_base&quot;,&quot;label&quot;:&quot;Garrett_2014_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Garrett2014_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Garrett2014_final&quot;,&quot;label&quot;:&quot;Garrett_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Garrett2014_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Ma2019_reference&quot;,&quot;label&quot;:&quot;Ma_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Ma2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ma_2019_TV&quot;,&quot;label&quot;:&quot;Ma_2019 \u00b7 TV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/pd_Ma_2019_TV.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@ Chen Y, Rini BI, Motzer RJ, Dutcher JP, Rixe O, Wilding G et al. Effect of Renal
 
 ## Population and dosing
 
-**Population:** patients with advanced solid tumors and healthy volunteers · condition advanced solid tumors and healthy · n = 590.
+**Population:** patients with advanced solid tumors and healthy volunteers · condition renal impairment · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -31,12 +31,11 @@ Chen Y, Rini BI, Motzer RJ, Dutcher JP, Rixe O, Wilding G et al. Effect of Renal
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| normal renal function (≥90 ml/min; n = 381) | CL | 14.0 | L/h |
-| k a | kabs | 78.7 | per day |
+| Median axitinib clearance | CL | 14.0 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +47,9 @@ Chen Y, Rini BI, Motzer RJ, Dutcher JP, Rixe O, Wilding G et al. Effect of Renal
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — axitinib: CL 14 L/h, kabs 78.7 per day.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — axitinib: CL 14 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of k a: this record has 78.7, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of median axitinib clearance: this record has 14.0, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,8 +57,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| normal renal function (≥90 ml/min; n = 381) | `Q22` · CL | 14.0 | L/h | 3.889e-06 | m3/s | l/h | llm (0.6) | Chen_2016:abstract |
-| k a | `Q49` · kabs | 78.7 | per day | 0.0009109 | 1/s | 1/h | review_gapfill (0.7) | Ma_2019:review |
+| Median axitinib clearance | `Q22` · CL | 14.0 | L/h | 3.889e-06 | m3/s | l/h | llm_confirmed (0.6) | Chen_2016:abstract, Chen_2016:abstract, Chen_2016:abstract, Chen_2016:abstract, Chen_2016:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -69,15 +67,8 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('mild renal impairment (60-89\xa0ml/min; n\u2009=\u2009139)', value '10.7') — already have one for this compound
-- dropped duplicate Q22 ('moderate renal impairment (30-59\xa0ml/min; n\u2009=\u200964)', value '12.3') — already have one for this compound
-- dropped duplicate Q22 ('severe renal impairment (15-29\xa0ml/min; n\u2009=\u20095)', value '7.81') — already have one for this compound
-- dropped duplicate Q22 ('end-stage renal disease (&lt;15\xa0ml/min; n\u2009=\u20091)', value '12.6') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=axitinib
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Ma_2019's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Chen_2016_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
@@ -85,19 +76,18 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[k a]` | 78.7 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[median axitinib clearance]` |  | 14.0 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[normal renal function]` | 14.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median axitinib clearance - normal renal function]` |  | 14.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median axitinib clearance]` | 14.0 |  | only_one_extracted |
 
 </details>
 
@@ -114,11 +104,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Chen_2016:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Ma_2019:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 14 | ['Chen_2016:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Chen_2016:abstract', 'Chen_2016:abstract', 'Chen_2016:abstract', 'Chen_2016:abstract', 'Chen_2016:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 14 | ['Chen_2016:abstract', 'Chen_2016:abstract', 'Chen_2016:abstract', 'Chen_2016:abstract', 'Chen_2016:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 14 L/h | ['Chen_2016:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 14 L/h | ['Chen_2016:abstract', 'Chen_2016:abstract', 'Chen_2016:abstract', 'Chen_2016:abstract', 'Chen_2016:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -152,4 +141,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baxitinib%5D%20Axitinib_Chen2016_reference&body=Drug%3A%20axitinib%0ARecord%3A%20Axitinib_Chen2016_reference%0APaper%3A%20Chen_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_axitinib/Axitinib_Chen2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 21:35 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:05 UTC</sub>

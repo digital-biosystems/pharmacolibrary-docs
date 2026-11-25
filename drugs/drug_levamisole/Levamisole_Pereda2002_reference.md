@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P02C&quot;,&quot;href&quot;:&quot;atc/P02C.md&quot;},{&quot;label&quot;:&quot;levamisole&quot;,&quot;href&quot;:&quot;drugs/drug_levamisole/&quot;},{&quot;label&quot;:&quot;Pereda_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levamisole_KreeftmeijerVegter2015_reference&quot;,&quot;label&quot;:&quot;Kreeftmeijer-Vegter_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levamisole/Levamisole_KreeftmeijerVegter2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levamisole_KreeftmeijerVegter2015_reference&quot;,&quot;label&quot;:&quot;Kreeftmeijer-Vegter_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levamisole/Levamisole_KreeftmeijerVegter2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Levamisole parameter Q was rejected because the dose value 16 has unit mg kg⁻¹, which conflicts with the required time dimension.
+> The paper reports none of the model's key parameters.
 
 <div class="pk-model-meta" hidden drug="levamisole" model-id="Levamisole_Pereda2002_reference" status="rejected" stale="false" population="rabbits" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></div>
 
@@ -25,23 +25,17 @@ Pereda P, García JJ, Sierra M, Fernández N, Sahagun AM, Diez MJ. Intra-arteria
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| P | Q | 0.05 |  |
-| AUC | AUC | 249.7 | mg*h/L |
-| dose | D1 | 16 | mg kg (-1) |
-| CL | CL | 93.0 | L h À1 |
-| K a | kabs | 0.8 | h À1 |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.667). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,64 +45,38 @@ Pereda P, García JJ, Sierra M, Fernández N, Sahagun AM, Diez MJ. Intra-arteria
 
 ### Reviewer guidance
 
-**Levamisole parameter Q was rejected because the dose value 16 has unit mg kg⁻¹, which conflicts with the required time dimension.**
+**The paper reports none of the model's key parameters.**
 
-The record lists Q as intercompartmental clearance but assigns it the value 0.05 without a time-based unit. The dose parameter is recorded as 16 mg kg⁻¹, a mass dimension that is incompatible with the time dimension expected for structural clearance parameters. This unit conflict caused the dimension check to fail, while the second reader was unable to confirm the validity of the extracted values. Extracted — levamisole: Q 0.05, AUC 250 mg*h/L, D1 16 mg kg (-1), CL 93 L h À1, kabs 0.8 h À1.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 93.0, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has none, the second reading 249.7; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
-
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| P | `Q30` · Q | 0.05 |  |  |  |  | llm (0.6) | Pereda_2002:abstract, Pereda_2002:abstract |
-| AUC | `Q88` · AUC | 249.7 | mg*h/L |  |  | mg*h/L | exact (1) | Pereda_2002:abstract, Pereda_2002:abstract, Pereda_2002:abstract |
-| dose | `Q310` · D1 | 16 | mg kg (-1) |  |  | mg/kg | llm (0.6) | Pereda_2002:abstract, Pereda_2002:abstract |
-| CL | `Q22` · CL | 93.0 | L h À1 | 2.583e-05 | m3/s | L/h | review_gapfill (0.7) | Veltkamp_2024:review |
-| K a | `Q49` · kabs | 0.8 | h À1 | 0.0002222 | 1/s | 1/h | review_gapfill (0.7) | Veltkamp_2024:review |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'microg min ml (-1)' (AUC)
-- unit_dimension_mismatch: 'dose' → Q310 (unit '[mass]' vs ontology '[time]') — route to review
-- implicit units: 'AUC' → mg*h/L (from the popPK convention: 'No unit stated in the paper. AUC for a concentration-time curve is conventionally reported in mg*h/L (concentration unit')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=levamisole
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Veltkamp_2024's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Veltkamp_2024's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Pereda_2002_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Pereda_2002_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.556 (5/9 fields) | 4 |
+| `gpt-oss-120b` | primary re-run | 0.667 (4/6 fields) | 2 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl].value` | 93.0 |  | mismatch |
-| `gpt-oss-120b` | `parameters[dose]` | 16 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k a]` | 0.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[p]` | 0.05 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` |  | 249.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  |  | only_one_extracted |
 
 </details>
 
@@ -120,18 +88,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Veltkamp_2024:review'] |
-| C5_dimension_Q310 | fail | [time] | mg kg (-1) ([mass]) | ['Pereda_2002:abstract', 'Pereda_2002:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Veltkamp_2024:review'] |
-| C5_dimension_Q88 | pass | [time] * [mass] / [length] ** 3 |  | ['Pereda_2002:abstract', 'Pereda_2002:abstract', 'Pereda_2002:abstract'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] |  | ['Pereda_2002:abstract', 'Pereda_2002:abstract'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 93 | ['Veltkamp_2024:review'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 93 L/h | ['Veltkamp_2024:review'] |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | fail | 0 |
+| C0b_disposition_core | fail |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -155,4 +116,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevamisole%5D%20Levamisole_Pereda2002_reference&body=Drug%3A%20levamisole%0ARecord%3A%20Levamisole_Pereda2002_reference%0APaper%3A%20Pereda_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levamisole/Levamisole_Pereda2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 10:28 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:28 UTC</sub>

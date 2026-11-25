@@ -8,7 +8,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="fusidic acid" model-id="FusidicAcid_Bulitta2013_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="fusidic acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fusidic acid" model-id="FusidicAcid_Bulitta2013_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="fusidic acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bulitta JB, Okusanya OO, Forrest A, Bhavnani SM, Clark K, Still JG et al. Population pharmacokinetics of fusidic acid: rationale for front-loaded dosing regimens due to autoinhibition of clearance. Antimicrobial agents and chemotherapy 57(1):498–507 (2013).
@@ -16,7 +16,7 @@ Bulitta JB, Okusanya OO, Forrest A, Bhavnani SM, Clark K, Still JG et al. Popula
 
 ## Population and dosing
 
-**Population:** healthy subjects · condition healthy · n = 75.
+**Population:** healthy adults · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed sodium fusidate, measured fusidic acid.
 
@@ -33,11 +33,11 @@ Bulitta JB, Okusanya OO, Forrest A, Bhavnani SM, Clark K, Still JG et al. Popula
 | label | parameter | value | unit |
 |---|---|---|---|
 | mean total clearance | CL | 1.28 | liters/h |
-| Food decreased the extent of bioavailability | Fab | 18 | % |
+| Food decreased the extent of bioavailability by | Fab | 18 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3), qwen3.8-27b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,9 +49,9 @@ Bulitta JB, Okusanya OO, Forrest A, Bhavnani SM, Clark K, Still JG et al. Popula
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fusidic acid: CL 1.28 liters/h, Fab 18 %.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fusidic acid: CL 1.28 liters/h, Fab 18.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of duration: this record has none, the second reading 7; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium fusidate, the second reading sodium_fusidate; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,7 +60,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | mean total clearance | `Q22` · CL | 1.28 | liters/h | 3.556e-07 | m3/s | l/h | llm_confirmed (0.6) | Bulitta_2013:abstract |
-| Food decreased the extent of bioavailability | `Q40` · Fab | 18 | % |  |  |  | llm_confirmed (0.6) | Bulitta_2013:abstract |
+| Food decreased the extent of bioavailability by | `Q40` · Fab | 18 |  |  |  |  | llm_confirmed (0.6) | Bulitta_2013:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -70,31 +70,35 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped PD-category row 'maximum extent of autoinhibition' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Bulitta_2013:abstract'])
+- dropped unlinked row (NIL): 'maximum extent of autoinhibition' — extend the ontology if this is a real PK parameter (source ['Bulitta_2013:abstract'])
 - dropped PD-category row '50% inhibitory concentration (IC(50))' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Bulitta_2013:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fusidic acid
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Bulitta_2013_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 | `qwen3.8-27b` | partly confirmed | 0.667 (6/9 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[food decreased the extent of bioavailability by]` | 18 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[food decreased the extent of bioavailability]` |  | 18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean total clearance]` | 1.28 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean total clearance]` |  | 1.28 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[n]` |  | 75 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sodium fusidate | sodium_fusidate | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fusidic acid | fusidic_acid | mismatch |
 | `qwen3.8-27b` | `parameters[duration]` |  | 7 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[food decreased the extent of bioavailability]` | 18 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[steady state time]` |  | 8 | only_one_extracted |
@@ -151,4 +155,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfusidic_acid%5D%20FusidicAcid_Bulitta2013_reference&body=Drug%3A%20fusidic_acid%0ARecord%3A%20FusidicAcid_Bulitta2013_reference%0APaper%3A%20Bulitta_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fusidic_acid/FusidicAcid_Bulitta2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 22:05 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:12 UTC</sub>

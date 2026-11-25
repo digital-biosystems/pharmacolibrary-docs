@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Ranibizumab CL/F of 0.130 mL/h was rejected after its clearance-to-volume relationship was flagged as physiologically implausible, suggesting a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ranibizumab" model-id="Ranibizumab_Kim2020_10_rbz_3_0_mg_0_03_ml" status="rejected" stale="false" population="rabbits" measured-compound="ranibizumab" parameterization="apparent" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Kim HM, Park YJ, Lee S, Son JY, Hong HK, Ham MH et al. Intraocular Pharmacokinet
 
 ### Reviewer guidance
 
-**Ranibizumab CL/F of 0.130 mL/h was rejected after its clearance-to-volume relationship was flagged as physiologically implausible, suggesting a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports CL/F of 0.130 mL/h and V/F of 10.03 mL for ranibizumab; their clearance-to-volume relationship triggered the rejection. A reported unit could not be converted to SI, so its parameter reached the review without an SI value. The second reader did not extract kabs, reported here as 0.0528 days−1. Extracted — ranibizumab: t1/2z 53.4 h, MRT 138 h, Cmax 181 µg/mL, tmax 1 h, V/F 10 mL, CL/F 0.13 mL/h, kabs 0.0528 days−1.
+A reported unit could not be converted (Cmax), so that value has no SI equivalent. Extracted — ranibizumab: t1/2z 53.4 h, MRT 138 h, Cmax 181 µg/mL, tmax 1 h, V/F 10 mL, CL/F 0.13 mL/h, kabs 0.0528 days−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 0.0528, the second reading none. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

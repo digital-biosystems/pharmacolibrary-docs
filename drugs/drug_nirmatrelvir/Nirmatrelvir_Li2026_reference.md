@@ -175,22 +175,22 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 0.001629 |  | non-numeric value |
-| T1_cmax | reference | fail | 0.003082 | 0.001629 | 0.5285 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0045 | 0.001629 | 0.362 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.000546 | 0.001629 | 2.983 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.001109 | 0.001629 | 1.469 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped | 39.5% higher | 0.001629 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 3.8% lower | 0.001629 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.667 (10 of 15 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (10 of 15 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 0.001629 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | fail | 0.003082 | 0.001629 | 0.5285 | reported 3.082 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0045 | 0.001629 | 0.362 | reported 4.5 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.000546 | 0.001629 | 2.983 | reported 0.546 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.001109 | 0.001629 | 1.469 | reported 1.109 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped |  | 0.001629 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.001629 |  | the transcribed record carries no number for this value |
 | T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped |  | 6.744 |  | non-numeric value |
-| T1_t_half_terminal | reference | pass | 6.842 | 6.744 | 0.9857 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 5.471 | 6.744 | 1.233 | h→SI vs simulated h |
-| T1_tmax | reference | skipped |  | 6.951 |  | non-numeric value |
-| T1_tmax | reference | fail | 1.76 | 6.951 | 3.949 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 2 | 6.951 | 3.475 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 2 | 6.951 | 3.475 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 6.744 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | pass | 6.842 | 6.744 | 0.9857 | reported 6.842 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 5.471 | 6.744 | 1.233 | reported 5.471 h→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 6.951 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | fail | 1.76 | 6.951 | 3.949 | reported 1.76 h→SI vs simulated h |
+| T1_tmax | reference | fail | 2 | 6.951 | 3.475 | reported 2.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 2 | 6.951 | 3.475 | reported 2.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -206,7 +206,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Li2026_reference/Nirmatrelvir_Li2026_reference_modelica.zip" download>Nirmatrelvir_Li2026_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Li2026_reference/Nirmatrelvir_Li2026_reference_modelica.zip" download>Nirmatrelvir_Li2026_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Li2026_reference/Nirmatrelvir_Li2026_reference_fmi.zip" download>Nirmatrelvir_Li2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Li2026_reference/Nirmatrelvir_Li2026_reference_matlab.zip" download>Nirmatrelvir_Li2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Li2026_reference/Nirmatrelvir_Li2026_reference_matlab_simbio.zip" download>Nirmatrelvir_Li2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

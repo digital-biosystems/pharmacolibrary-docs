@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the extracted steady-state concentration value of 37.7 nM has incompatible physical dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q34 unit nM ([length]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Kearns1994_reference" status="rejected" stale="false" population="children with acute leukemia" measured-compound="cladribine" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Kearns CM, Blakley RL, Santana VM, Crom WR. Pharmacokinetics of cladribine (2-ch
 
 ### Reviewer guidance
 
-**The record was rejected because the extracted steady-state concentration value of 37.7 nM has incompatible physical dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q34 unit nM ([length]) vs [mass] / [length] ** 3.**
 
-The dimension check failed because the unit nanomolar implies molarity, which conflicts with the expected volume dimension for this parameter. Since the model was built from the abstract alone, these summary statistics stand in for a fitted model. The record incorrectly lists the concentration as a structural parameter with dimension mismatch. Extracted — cladribine: CL 39.4 liters/h/m2, Css 37.7 nM, t1/2z 19.7 h, Vss 357 liters/m2, CLR 318 ml/min/m2, V 1.25e+03 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cladribine: CL 39.4 liters/h/m2, Css 37.7 nM, t1/2z 19.7 h, Vss 357 liters/m2, CLR 318 ml/min/m2, V 1.25e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cladribine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

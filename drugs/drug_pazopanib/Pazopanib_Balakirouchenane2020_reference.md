@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because the paper models dabrafenib and trametinib, where pazopanib is only a co-medication, so the extracted pazopanib parameters are incorrect.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Balakirouchenane2020_reference" status="rejected" stale="false" population="" measured-compound="pazopanib" parameterization="apparent" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Balakirouchenane D, Guégan S, Csajka C, Jouinot A, Heidelberger V, Puszkiel A e
 
 ### Reviewer guidance
 
-**Rejected because the paper models dabrafenib and trametinib, where pazopanib is only a co-medication, so the extracted pazopanib parameters are incorrect.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The record lists a two-compartment model for pazopanib with specific clearance and volume parameters, but the source text confirms the study actually models dabrafenib, its metabolite, and trametinib. Pazopanib is mentioned in the paper only as a co-medication or covariate, meaning no parameter values for it were reported in the source. Consequently, the second reader disagreed with several extracted values, indicating the numbers do not correspond to a valid pazopanib model. Extracted — pazopanib: CL/F 17.7 L/h, V/F 25.7 L, V2/F 39.5 L, Q/F 3.85 L/h, kabs 1.8 1/h, tlag 0.5 h.
+Extracted — pazopanib: CL/F 17.7 L/h, V/F 25.7 L, V2/F 39.5 L, Q/F 3.85 L/h, kabs 1.8 1/h, tlag 0.5 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q21: this record has none, the second reading 0.8; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,7 +142,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.643, 0 of 1 reader(s) agree | 0.643 | cross-check disputed by a second reader: verdict disputed, agreement 0.643, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.643 (9 of 14 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.643 | cross-check contradicted by a second reader: verdict disputed; agreement 0.643 (9 of 14 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

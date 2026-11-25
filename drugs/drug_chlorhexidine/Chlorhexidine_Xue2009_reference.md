@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Chlorhexidine's volume of distribution was extracted as 5.0 mL, an implausible magnitude causing the record's rejection.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="chlorhexidine" model-id="Chlorhexidine_Xue2009_reference" status="rejected" stale="false" population="rats" measured-compound="chlorhexidine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Xue Y, Tang M, Hieda Y, Fujihara J, Takayama K, Takatsuka H et al. High-performa
 
 ### Reviewer guidance
 
-**Chlorhexidine's volume of distribution was extracted as 5.0 mL, an implausible magnitude causing the record's rejection.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a volume of distribution (Vo) of 5.0 mL for chlorhexidine, a value outside physiological limits for a rat. This parameter was sourced from the paper's abstract, so summary statistics stood in for a fitted model. A second reader could not identify this value in the source, highlighting the extraction error. Extracted — chlorhexidine: t1/2α 0.05 h, t1/2β 0.55 h, V 5 mL.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — chlorhexidine: t1/2α 0.05 h, t1/2β 0.55 h, V 5 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of vo: this record has 5.0, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

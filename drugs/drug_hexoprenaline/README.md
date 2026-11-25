@@ -43,7 +43,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:00 | 0:30 | 0/0/0 | 0/0/0 | 0/0/1 | 12,804/552 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 22:16 | 0:03 | 0/0/0 | 0/0/0 | 0/0/1 | 3,305/176 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -58,18 +58,20 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Lipshitz_1981.pdf` | Lipshitz J et al., Hexoprenaline pharmacokinetics in pregn…, Research communications in… (1981) | popPK | 7 |  | [7313303](https://pubmed.ncbi.nlm.nih.gov/7313303) | PK study of hexoprenaline in sheep with compartmental model and half-life/clearance/Vd reported, but only ranges given; detailed numeric parameters may be in tables not provided. |
+| `Lipshitz_1981.pdf` | Lipshitz J et al., Hexoprenaline pharmacokinetics in pregn…, Research communications in… (1981) | popPK | 9 |  | [7313303](https://pubmed.ncbi.nlm.nih.gov/7313303) | The study describes a three-compartment PK model for hexoprenaline in sheep, but specific numeric values for clearance, volume, or half-life are not listed in the evidence (only ranges and trends are provided). |
 | `Klukovits_2004.pdf` | Klukovits A et al., Beta 2-agonist treatment enhances uteri…, Molecular reproduction and… (2004) | pd | 4 | [10.1002/mrd.20158](https://doi.org/10.1002/mrd.20158) | [15278905](https://www.ncbi.nlm.nih.gov/pubmed/15278905) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 14:00 UTC</sub>
+<sub>queue written 2026-11-23 22:16 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Klukovits_2004 | irrelevant | 0 | 0 | This is a receptor mRNA expression/pharmacodynamics study in pregnant rats; no PK parameters (CL, V, ka, half-life, model) for hexoprenaline are reported. |
+| popPK | Klukovits_2004 | irrelevant | 0 | 0 | This study investigates the effect of hexoprenaline on uterine oxytocin receptor mRNA expression in rats and contains no pharmacokinetic parameters (CL, V, ka, etc.) for hexoprenaline. |
+| PGx | Klukovits_2004 | not_relevant | 0 | 0 | The study investigates the interaction between beta-2 agonists and oxytocin receptors in rat uteri but does not report any effect of a genetic variant or genotype on the PK or PD of hexoprenaline. |
 | PGx | Landau_2005 | not_relevant | 0 | 0 |  |
-| popPK | Lipshitz_1981 | relevant | 7 | 4 | PK study of hexoprenaline in sheep with compartmental model and half-life/clearance/Vd reported, but only ranges given; detailed numeric parameters may be in tables not provided. |
+| popPK | Lipshitz_1981 | relevant | 9 | 2 | The study describes a three-compartment PK model for hexoprenaline in sheep, but specific numeric values for clearance, volume, or half-life are not listed in the evidence (only ranges and trends are provided). |
+| PGx | Lipshitz_1981 | not_relevant | 0 | 0 | The study investigates the impact of pregnancy status (a physiological state) on hexoprenaline pharmacokinetics, not the effect of a gene variant, genotype, or genotype-phenotype interaction. |
 
 
 </details>

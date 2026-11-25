@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Norethisterone’s reported oral clearance (CL/F) of 7.48 L/h was rejected because the paper concerned another drug, not norethisterone.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="norethisterone" model-id="Norethisterone_Jia2026_reference" status="rejected" stale="false" population="" measured-compound="norethisterone" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Jia M, Chai Y, Gao Y, Jing C, Zhu K, Zhu T et al. Population pharmacokinetics of
 
 ### Reviewer guidance
 
-**Norethisterone’s reported oral clearance (CL/F) of 7.48 L/h was rejected because the paper concerned another drug, not norethisterone.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper’s title and abstract do not name norethisterone, and the record identifies the paper as being about another drug. The builder defaulted the absorption lag time and assumed F=1 and Fm=1, with no molar correction, using apparent parameterization. A second reader disputed the verdict and assigned 1.23 to a quantity recorded as absent here, while matching the other two compared values. Extracted — norethisterone: CL/F 7.48 L/h, V/F 4.75 L, kabs 0.14 1/h.
+Extracted — norethisterone: CL/F 7.48 L/h, V/F 4.75 L, kabs 0.14 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q310: this record has 0.831, the second reading 0.831; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.875 (7 of 8 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.875 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The total clearance value of 302.2 min/ml has units incompatible with clearance, and intercompartmental clearance units were not standardized.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q354 unit min/ml ([time] / [length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Alberts1978_e_m_25_u" status="rejected" stale="false" population="adults" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Alberts DS, Chen HS, Liu R, Himmelstein KJ, Mayersohn M, Perrier D et al. Bleomy
 
 ### Reviewer guidance
 
-**The total clearance value of 302.2 min/ml has units incompatible with clearance, and intercompartmental clearance units were not standardized.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q354 unit min/ml ([time] / [length] ** 3) vs [length] ** 3 / [time].**
 
-The total clearance parameter for bleomycin is listed as 302.2 min/ml, which is dimensionally invalid for a clearance term requiring volume per time. The intercompartmental clearance of 49.5 ml/min/m2 could not be converted to standard SI units due to missing unit definitions. A second reviewer also disagreed on the specific identifiers for the total and intercompartmental clearance parameters. Extracted — bleomycin: t1/2α 32.3 min, t1/2z 183 min, CLnorm 302 min/ml, Vnorm 13 L/M2, Q 49.5 ml/min/m2, fe 49.2, CL 70 ml/min, V 32.2 L.
+A reported unit could not be converted (CLnorm), so that value has no SI equivalent. Extracted — bleomycin: t1/2α 32.3 min, t1/2z 183 min, CLnorm 302 min/ml, Vnorm 13 L/M2, Q 49.5 ml/min/m2, fe 49.2, CL 70 ml/min, V 32.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cxt mu].parameter_id`: this record has Q354, the second reading Q88; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

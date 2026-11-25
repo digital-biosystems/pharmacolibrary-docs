@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The albumin covariate effect on blood clearance is -1.58, a negative value that renders the model implausible.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Ogasawara2020_reference" status="rejected" stale="false" population="patients with hematologic malignancies" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Ogasawara K, Newhall K, Maxwell SE, Dell'Aringa J, Komashko V, Kilavuz N et al. 
 
 ### Reviewer guidance
 
-**The albumin covariate effect on blood clearance is -1.58, a negative value that renders the model implausible.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record lists the albumin covariate on blood clearance as -1.58, which triggers a rejection for negative clearance in a covariate scenario. A second reader disagrees on this field, recording it as null, while other readers map the weight and sex covariates to different parameter labels. The base blood clearance value itself is missing from the record, preventing verification of the final parameter estimate. Extracted — durvalumab: CL 0.0107 L/h, V1 4.63 L, Q 0.0376 L/h, V2 2.68 L, CLb -1.58.
+Extracted — durvalumab: CL 0.0107 L/h, V1 4.63 L, Q 0.0376 L/h, V2 2.68 L, CLb -1.58.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of alb on clb: this record has -1.58, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -174,7 +174,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab3:row3:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab3:row5:col1'] |
 | C5_unit_missing_Q23 | fail | [length] ** 3 / [time] |  | ['Tab3:row6:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0107 | ['Tab3:row2:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | -1.58 | ['Tab3:row6:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0107 L/h | ['Tab3:row2:col1'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 4.63 L | ['Tab3:row3:col1'] |

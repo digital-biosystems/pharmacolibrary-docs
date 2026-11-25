@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R06A&quot;,&quot;href&quot;:&quot;atc/R06A.md&quot;},{&quot;label&quot;:&quot;fexofenadine&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/&quot;},{&quot;label&quot;:&quot;Gaspar_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fexofenadine_Jang2023_mean_standard_error&quot;,&quot;label&quot;:&quot;Jang_2023_mean_standard_error&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/Fexofenadine_Jang2023_mean_standard_error.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fexofenadine_Jang2023_slco1b1_521t_c_genotypes&quot;,&quot;label&quot;:&quot;Jang_2023_slco1b1_521t_c_genotypes&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco1b1_521t_c_genotypes.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fexofenadine_Jang2023_slco2b1_1457c_t_genotypes&quot;,&quot;label&quot;:&quot;Jang_2023_slco2b1_1457c_t_genotypes&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/Fexofenadine_Jang2023_slco2b1_1457c_t_genotypes.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fexofenadine_Gaspar2025_reference&quot;,&quot;label&quot;:&quot;Gaspar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/Fexofenadine_Gaspar2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fexofenadine_Jang2023_reference&quot;,&quot;label&quot;:&quot;Jang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/Fexofenadine_Jang2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fexofenadine_Gaspar2025_reference&quot;,&quot;label&quot;:&quot;Gaspar_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fexofenadine/Fexofenadine_Gaspar2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record confuses a creatinine clearance biomarker value with fexofenadine clearance.
+> biomarker_kinetics_as_drug_pk; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="fexofenadine" model-id="Fexofenadine_Gaspar2025_reference" status="rejected" stale="false" population="hospitalized patients and healthy volunteers" measured-compound="fexofenadine" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Gaspar F, Jacost-Descombes C, Gosselin P, Reny JL, Guidi M, Csajka C et al. Impr
 
 ### Reviewer guidance
 
-**The record confuses a creatinine clearance biomarker value with fexofenadine clearance.**
+**biomarker_kinetics_as_drug_pk; t0_analyte_identity (+1 more).**
 
-The parameter labeled CL has the value 77.2 mL/min, but its verbatim label is 'mean estimated creatinine clearance,' which is a renal function metric, not the drug’s total clearance. This biomarker was incorrectly identified as the analyte for fexofenadine. Additionally, absorption parameters (ka and Tlag) were not reported in the source and were left at defaults. Extracted — fexofenadine: CL 77.2 mL/min, CL/F 115 L/h, V1/F 14.9 L, V2/F 146 L, Q/F 52 L/h.
+Extracted — fexofenadine: CL 77.2 mL/min, CL/F 115 L/h, V1/F 14.9 L, V2/F 146 L, Q/F 52 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of mean estimated creatinine clearance: this record has 77.2, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -161,7 +161,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.889 (8 of 9 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.889 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

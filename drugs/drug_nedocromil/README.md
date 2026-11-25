@@ -41,7 +41,7 @@ Nedocromil is a mast cell stabilizer used to treat asthma and allergic conjuncti
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:15 | 0:41 | 1/0/0 | 0/0/0 | 0/0/0 | 11,630/898 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 01:25 | 0:03 | 1/0/0 | 0/0/0 | 0/0/0 | 3,993/164 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -52,26 +52,30 @@ Nedocromil is a mast cell stabilizer used to treat asthma and allergic conjuncti
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Neale_1987.pdf` | Neale MG et al., The pharmacokinetics of nedocromil sodi…, British journal of clinical… (1987) | popPK | 10 | [10.1111/j.1365-2125.1987.tb03203.x](https://doi.org/10.1111/j.1365-2125.1987.tb03203.x) | [2825746](https://pubmed.ncbi.nlm.nih.gov/2825746) | Original human PK study of nedocromil with numeric CL, k10, beta, and absorption parameters reported directly in the abstract. |
 | `Lindén_1999.pdf` | Lindén A et al., Effect of nedocromil sodium on non-adre…, Regulatory peptides (1999) | pd | 4 | [10.1016/s0167-0115(99)00018-x](https://doi.org/10.1016/s0167-0115(99)00018-x) | [10395407](https://www.ncbi.nlm.nih.gov/pubmed/10395407) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 13:15 UTC</sub>
+<sub>queue written 2026-11-24 01:25 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Lindén_1999 | irrelevant | 0 | 0 | In-vitro mechanistic study of nedocromil's effects on guinea pig bronchi with no pharmacokinetic parameters reported. |
-| PGx | Wu_2009 | not_relevant | 0 | 0 | No gene variant/genotype effects on nedocromil PK/PD parameters are reported; the study assesses repeatability (ICC) of asthma phenotypes by treatment group only. |
-| popPK | Wu_2014 | irrelevant | 0 | 0 | This is a genetics study of longitudinal FEV1 in asthma; nedocromil is only a treatment arm, with no PK parameters reported. |
+| popPK | Lindén_1999 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of neural responses in guinea pig bronchi and reports no pharmacokinetic parameters. |
+| PGx | Lindén_1999 | not_relevant | 0 | 0 | The paper describes the mechanism of action of nedocromil in guinea pig bronchi and does not investigate genetic variants or their effect on PK/PD parameters. |
+| PGx | Neale_1987 | not_relevant | 0 | 0 | The paper reports general pharmacokinetic parameters of nedocromil but does not investigate or report any pharmacogenomic effects. |
+| popPK | Wang_2019 | irrelevant | 0 | 0 | The paper is a pharmacogenomic study analyzing genetic variants and placebo response in asthma, reporting no pharmacokinetic parameters for nedocromil. |
+| popPK | Wu_2009 | irrelevant | 0 | 0 | The paper is a pharmacogenetic/clinical trial analysis assessing the repeatability of clinical asthma outcomes (FEV1, PC20), not a pharmacokinetic study reporting quantitative PK parameters for nedocromil. |
+| PGx | Wu_2009 | not_relevant | 0 | 0 | The paper reports on the repeatability (ICC) of clinical outcomes in asthma patients, not the effect of a specific gene variant on a PK or PD parameter. |
+| popPK | Wu_2014 | irrelevant | 0 | 0 | The study analyzes longitudinal FEV1 lung function and genetics in asthma patients, with no pharmacokinetic data or parameters for nedocromil. |
+| PGx | Wu_2014 | not_relevant | 1 | 0 | The paper focuses on genetic predictors of lung function (FEV1) over time and only mentions nedocromil as a historical comparator group, without reporting any pharmacokinetic or pharmacodynamic effects of gene variants on the drug itself. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnedocromil%5D&body=Drug%3A%20nedocromil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nedocromil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 13:15 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 01:24 UTC</sub>

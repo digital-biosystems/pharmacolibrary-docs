@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;halofantrine&quot;,&quot;href&quot;:&quot;drugs/drug_halofantrine/&quot;},{&quot;label&quot;:&quot;Krishna_1993 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Halofantrine_Klein2012_reference&quot;,&quot;label&quot;:&quot;Klein_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_halofantrine/Halofantrine_Klein2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,7 +16,7 @@ Krishna S, ter Kuile F, Supanaranond W, Pukrittayakamee S, Teja-Isavadharm P, Ky
 
 ## Population and dosing
 
-**Population:** adults with acute uncomplicated falciparum malaria · condition uncomplicated falciparum malaria · age group adult · n = 12.
+**Population:** adults with acute uncomplicated falciparum malaria · condition uncomplicated malaria · age group adult.
 
 ## Model
 
@@ -54,20 +53,19 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'Table 2 Mean (± s.d.) and range of pharmacokinetic parameters describing the fate of halofantrine after i.v. administration to patient with acute malaria (n = 12) and during convalescence (n =9)' (captured trailing unit 'n =9' for child rows)
-- NIL: refused to back-fill base 'Vnorm' from footnote/prose loose number 4.8 (source ['tab_1:footnote', 'tab_1:footnote', 'tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'V1' from footnote/prose loose number 0.36 (source ['tab_1:footnote', 'tab_1:footnote', 'tab_1:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'MRT' from footnote/prose loose number 16.6 (source ['tab_1:footnote', 'tab_1:footnote', 'tab_1:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'V2' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'V1' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'MRT' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=halofantrine
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- final table tab_1: grid unusable → re-running vision table extraction for Krishna_1993
+- table tab_1: no_numeric_grid
+- final table tab_1: no supported point estimates; targeted recovery unresolved
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -111,4 +109,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhalofantrine%5D%20Halofantrine_Krishna1993_reference&body=Drug%3A%20halofantrine%0ARecord%3A%20Halofantrine_Krishna1993_reference%0APaper%3A%20Krishna_1993%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_halofantrine/Halofantrine_Krishna1993_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 07:00 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:01 UTC</sub>

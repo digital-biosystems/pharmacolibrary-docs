@@ -38,8 +38,8 @@ Anakinra is an interleukin-1 receptor antagonist used to treat rheumatoid arthri
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Liu_2011_paw_edema](drugs/drug_anakinra/pd_Liu_2011_paw_edema.md) | paw swelling ← anakinra · disease-progression model | — | Liu D et al., Population pharmacokinetic-pharmacodyna…, Journal of pharmacokinetics… (2011) | [10.1007/s10928-011-9219-z](https://doi.org/10.1007/s10928-011-9219-z) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Ge_2003_TSM_tension](drugs/drug_anakinra/pd_Ge_2003_TSM_tension.md) | tension of isolated trachea biomarker turnover ← IL-1ra | — | Ge XQ et al., [Effects of human recombinant interleuk…, Yao xue xue bao = Acta phar… (2003) | — |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Ge_2003_TSM_tension_2](drugs/drug_anakinra/pd_Ge_2003_TSM_tension_2.md) | tension of isolated trachea biomarker turnover ← IL-1ra | — | Ge XQ et al., [Effects of human recombinant interleuk…, Yao xue xue bao = Acta phar… (2003) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Ge_2003_TSM_tension](drugs/drug_anakinra/pd_Ge_2003_TSM_tension.md) | tension of isolated trachea biomarker turnover ← IL-1ra | — | Ge XQ et al., [Effects of human recombinant interleuk…, Yao xue xue bao = Acta phar… (2003) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Ge_2003_TSM_tension_2](drugs/drug_anakinra/pd_Ge_2003_TSM_tension_2.md) | tension of isolated trachea biomarker turnover ← IL-1ra | — | Ge XQ et al., [Effects of human recombinant interleuk…, Yao xue xue bao = Acta phar… (2003) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Anakinra is an interleukin-1 receptor antagonist used to treat rheumatoid arthri
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:38 | 1:37 | 2/0/0 | 1/2/0 | 0/0/0 | 184,407/10,427 | einfracz / qwen3.8-27b | 8 | 0/8 | 8/0 | 0 |
+| 2026-10-06 23:38 | 1:37 | 2/0/0 | 3/0/0 | 0/0/0 | 184,407/10,427 | einfracz / qwen3.8-27b | 8 | 0/8 | 8/0 | 0 |
 
 ## Coverage
 

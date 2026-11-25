@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Belzutifan model simulated peak concentration (0.000822 mg/L) deviates from paper-reported Cmax (0.00136 mg/L) by 40%, triggering refusal.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00136, model 0.000822); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="belzutifan" model-id="Belzutifan_Marathe2023_arithmetic_mean" status="needs_review" stale="false" population="patients with VHL disease-associated RCC, CNS hemangioblastomas, and pancreatic neuroendocrine tumors" measured-compound="belzutifan" parameterization="apparent" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Marathe DD, Jauslin PM, Kleijn HJ, de Miranda Silva C, Chain A, Bateman T et al.
 
 ### Reviewer guidance
 
-**Belzutifan model simulated peak concentration (0.000822 mg/L) deviates from paper-reported Cmax (0.00136 mg/L) by 40%, triggering refusal.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00136, model 0.000822); x1_cross_check.**
 
-The one-compartment model failed to match the paper's observed maximum concentration, yielding a ratio of 0.603 against the reported 1463.81 ng/mL. Additionally, absolute bioavailability (Fab) was not extracted, leaving this parameter at library defaults rather than using a fitted value. A second reader also disputed the identification of the dose compound and primary analyte, further undermining the record's validity. Extracted — belzutifan: CL/F 8.15 L/h, V/F 138 L, kabs 4.4 1/h, AUCt 18.9 μg∙h/mL, Cmin 406 ng/mL, Cmax 1.46e+03 ng/mL, tmax 1.73 h, t1/2α 2.77 h, … (+2).
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUCt, Cmin and Cmax), so that value has no SI equivalent. Extracted — belzutifan: CL/F 8.15 L/h, V/F 138 L, kabs 4.4 1/h, AUCt 18.9 μg∙h/mL, Cmin 406 ng/mL, Cmax 1.46e+03 ng/mL, tmax 1.73 h, t1/2α 2.77 h, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has belzutifan, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -209,9 +209,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.706, 0 of 1 reader(s) agree | 0.706 | cross-check disputed by a second reader: verdict disputed, agreement 0.706, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 0.001363 | 0.0008219 | 0.603 | ng/mL→SI vs simulated kg/m3 |
-| T1_tmax | reference | pass | 1.42 | 1.099 | 0.7742 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.706 (12 of 17 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.706 | cross-check contradicted by a second reader: verdict disputed; agreement 0.706 (12 of 17 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 0.001363 | 0.0008219 | 0.603 | reported 1363.0 ng/mL→SI vs simulated kg/m3 |
+| T1_tmax | reference | pass | 1.42 | 1.099 | 0.7742 | reported 1.42 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the source paper concerns a different drug, making the bromhexine parameters invalid.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="bromhexine" model-id="Bromhexine_Behrens2026_reference" status="rejected" stale="false" population="" measured-compound="bromhexine" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Behrens E, König C, Jarczak D, Martens-Lobenhoffer J, Bode-Böger SM, Kluge S e
 
 ### Reviewer guidance
 
-**Record rejected because the source paper concerns a different drug, making the bromhexine parameters invalid.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source paper's subject is not bromhexine, as neither the title nor the abstract names this drug. A second reader disagreed with the extracted values for total clearance (4.13 L/h), central volume (7.99 L), intercompartmental clearance (91.2 L/h), and peripheral volume (293.0 L). Extracted — bromhexine: CL 4.13 L/h, V1 7.99 L, V2 293 L, Q 91.2 L/h.
+Extracted — bromhexine: CL 4.13 L/h, V1 7.99 L, V2 293 L, Q 91.2 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 4.13, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.333 (2 of 6 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial; agreement 0.333 (2 of 6 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

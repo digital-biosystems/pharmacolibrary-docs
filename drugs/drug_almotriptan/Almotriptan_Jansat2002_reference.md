@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Renal clearance was recorded as 50 percent, a dimensionless value, conflicting with the required volumetric clearance dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q26 unit % (dimensionless) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="almotriptan" model-id="Almotriptan_Jansat2002_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="almotriptan" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Jansat JM, Costa J, Salvà P, Fernandez FJ, Martinez-Tobed A. Absolute bioavaila
 
 ### Reviewer guidance
 
-**Renal clearance was recorded as 50 percent, a dimensionless value, conflicting with the required volumetric clearance dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q26 unit % (dimensionless) vs [length] ** 3 / [time].**
 
-The record lists almotriptan's renal clearance as 50 %, whereas a clearance value must have units of volume per time. Because the record was built from the abstract alone, these summary statistics stand in for a fitted model. A second reader could not confirm any of the reported pharmacokinetic parameter values. Extracted — almotriptan: Fab 100 %, tmax 5 minutes, t1/2z 3.4 hours, CLR 50 %, kabs 0.648 h -1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — almotriptan: Fab 100 %, tmax 5 minutes, t1/2z 3.4 hours, CLR 50 %, kabs 0.648 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has almotriptan, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

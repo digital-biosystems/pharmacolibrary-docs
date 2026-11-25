@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> Abstract-only procainamide record defined a parent-metabolite structure but simulated a single-compartment oral model, causing the metabolite output check to fail.
+> The covariate scenarios were not simulated; t3_output_variable (+2 more).
 
 <div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Papich1986_reference" status="rejected" stale="false" population="dogs" measured-compound="procainamide" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -57,13 +57,13 @@ Papich MG, Davis LE, Davis CA, McKiernan BC, Brown SA. Pharmacokinetics of proca
 
 ### Reviewer guidance
 
-**Abstract-only procainamide record defined a parent-metabolite structure but simulated a single-compartment oral model, causing the metabolite output check to fail.**
+**The covariate scenarios were not simulated; t3_output_variable (+2 more).**
 
-The declared parent-metabolite topology was inconsistent with the single-compartment absorption structure actually simulated. This mismatch prevented the generation of the required metabolite concentration output, leaving only the parent drug compartment simulated. The rejection was further supported by the second reader’s failure to extract any parameter values, including the 0.5 h absorption half-life. Extracted — procainamide: t1/2z 2.43 hours, V/F 1.44 L/kg, CL 0.412 L/kg/hr, Fab 85 %, t1/2ka 0.5 hours; N-acetylprocainamide: t1/2z 4.7 hours.
+The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — procainamide: t1/2z 2.43 hours, V/F 1.44 L/kg, CL 0.412 L/kg/hr, Fab 85 %, t1/2ka 0.5 hours; N-acetylprocainamide: t1/2z 4.7 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has procainamide, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -169,7 +169,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_shared_parameters |  | pass | 1 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.25 (4 of 16 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (4 of 16 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

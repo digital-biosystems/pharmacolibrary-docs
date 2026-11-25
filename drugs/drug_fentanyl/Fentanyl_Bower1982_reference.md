@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> A 2-compartment fentanyl model was rejected because the terminal half-life of a three-compartment model, 1.59 h, implies a structure with no path from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Bower1982_reference" status="rejected" stale="false" population="healthy adults" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Bower S, Hull CJ. Comparative pharmacokinetics of fentanyl and alfentanil. Briti
 
 ### Reviewer guidance
 
-**A 2-compartment fentanyl model was rejected because the terminal half-life of a three-compartment model, 1.59 h, implies a structure with no path from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record specifies a 2-compartment structure but includes a parameter for the terminal elimination half-life of a three-compartment model (t1/2γ) with a value of 1.59 h. This inconsistency suggests an unreachable or orphan compartment that has no path from the dose, failing the topology check. Additionally, the second reader disagreed on the steady-state volume of distribution, citing 27.23 L instead of 35.48 L, and could not identify the primary analyte. Extracted — fentanyl: V2 16.3 litre, k21 2.14 h⁻¹, CL 14.3 litre h⁻¹, t1/2z 1.63 h, k12 3.3 h⁻¹, V1 10.9 litre, kel 1.34 h⁻¹, Vss 35.5 litre, … (+3).
+Extracted — fentanyl: V2 16.3 litre, k21 2.14 h⁻¹, CL 14.3 litre h⁻¹, t1/2z 1.63 h, k12 3.3 h⁻¹, V1 10.9 litre, kel 1.34 h⁻¹, Vss 35.5 litre, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

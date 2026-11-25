@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because the elimination rate constant has dimensionally incompatible time units and the volume of distribution has incorrect rate units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time]; Q61 unit L/h ([length] ** 3 / [time]) vs [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="repaglinide" model-id="Repaglinide_Ruzilawati2010_reference" status="rejected" stale="false" population="healthy Malaysian volunteers" measured-compound="repaglinide" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Ruzilawati AB, Mohd Suhaimi AW, Gan SH. Population pharmacokinetic modelling of 
 
 ### Reviewer guidance
 
-**Rejected because the elimination rate constant has dimensionally incompatible time units and the volume of distribution has incorrect rate units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time]; Q61 unit L/h ([length] ** 3 / [time]) vs [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The elimination rate constant (kel) value of 0.58 was assigned the unit 'h' instead of the required '1/h', causing a dimensional mismatch. The volume of distribution (V) value of 23.09 was assigned the unit 'L/h' instead of 'L', also causing a dimensional conflict. These unit errors led to the parameters falling outside the physiological window, invalidating the structural model. Extracted — repaglinide: kel 0.58 h, V 23.1 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — repaglinide: kel 0.58 h, V 23.1 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has repaglinide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

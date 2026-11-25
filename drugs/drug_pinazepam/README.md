@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;pinazepam&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pinazepam_Pacifici1983v2_reference&quot;,&quot;label&quot;:&quot;Pacifici_1983_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pinazepam/Pinazepam_Pacifici1983v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # pinazepam
 
@@ -14,9 +15,21 @@ Pinazepam is a benzodiazepine derivative used to treat anxiety. It is administer
 
 <small>Summary written by `qwen3.8-27b` from [Wikidata Q7194856](https://www.wikidata.org/wiki/Q7194856), [Wikipedia](https://en.wikipedia.org/wiki/Pinazepam?oldid=1383527321) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
 
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| pinazepam | parent | 308.762 | C18H13ClN2O | DrugBank | — | Pacifici_1983, Pacifici_1983_2 |
+| N-desmethyldiazepam | metabolite | 270.716 | C15H11ClN2O | PubChem | [2997](https://pubchem.ncbi.nlm.nih.gov/compound/2997) | Pacifici_1983_2 |
+
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Pacifici_1983_reference](drugs/drug_pinazepam/Pinazepam_Pacifici1983_reference.md) | — | 1-compartment (no model) | 2 | Pacifici GM et al., Pharmacokinetics of pinazepam in health…, International journal of cl… (1983) | — |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Pacifici_1983_2_reference](drugs/drug_pinazepam/Pinazepam_Pacifici1983v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Pacifici GM et al., Disposition, distribution, plasma prote…, European journal of drug me… (1983) | [10.1007/BF03188750](https://doi.org/10.1007/BF03188750) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -30,36 +43,43 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 20:00 | 0:53 | 0/0/0 | 0/0/0 | 0/0/0 | 12,837/811 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 04:39 | 2:01 | 0/2/0 | 0/0/0 | 0/0/0 | 17,350/7,034 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Pacifici_1983.pdf` | Pacifici GM et al., Pharmacokinetics of pinazepam in health…, International journal of cl… (1983) | popPK | 10 |  | [6147314](https://pubmed.ncbi.nlm.nih.gov/6147314) | Human PK study of pinazepam with quantitative parameters (ka, alpha, beta, Cmax) reported directly in the abstract; no CL/V values given, hence not 10. |
-| `Pacifici_1983_2.pdf` | Pacifici GM et al., Disposition, distribution, plasma prote…, European journal of drug me… (1983) | popPK | 10 | [10.1007/BF03188750](https://doi.org/10.1007/BF03188750) | [6418547](https://pubmed.ncbi.nlm.nih.gov/6418547) | Rat PK study of pinazepam with numeric Vd (1315 ml), CL (7.23 ml/min), t1/2/Kel/AUC values reported directly in the abstract. |
+| `Pacifici_1983_2.pdf` | Pacifici GM et al., Disposition, distribution, plasma prote…, European journal of drug me… (1983) | popPK | 10 | [10.1007/BF03188750](https://doi.org/10.1007/BF03188750) | [6418547](https://pubmed.ncbi.nlm.nih.gov/6418547) | The text explicitly reports quantitative pharmacokinetic parameters for pinazepam in rats, including volume of distribution (1315 ml) and clearance (7.23 ml/min). |
 
-<sub>queue written 2026-10-06 20:00 UTC</sub>
+<sub>queue written 2026-11-24 04:37 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Boselli_1977 | irrelevant | 0 | 0 | no_text gate: only 49 chars of text extracted (&lt; 400) |
-| popPK | Dinis-Oliveira_2017 | irrelevant | 1 | 0 | A review of oxazepam metabolism; pinazepam is only mentioned as a parent drug producing oxazepam, with no PK parameters for pinazepam itself. |
+| PGx | Boselli_1977 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of pinazepam in rats and does not report any effects of gene variants, genotypes, or phenotypes on PK/PD parameters. |
+| popPK | Dinis-Oliveira_2017 | irrelevant | 0 | 0 | This is a review article focusing on the metabolism of oxazepam; pinazepam is only mentioned as a precursor drug without original quantitative PK parameters provided in the text. |
+| PGx | Dinis-Oliveira_2017 | not_relevant | 0 | 0 | The paper is a review of oxazepam metabolism and does not report pharmacogenomic data or specific PK/PD parameters for pinazepam. |
+| popPK | Fernández-Cancio_2001 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of nitric oxide synthase inhibition, not a pharmacokinetic study, and contains no PK parameters for pinazepam. |
+| PGx | Fernández-Cancio_2001 | not_relevant | 0 | 0 | The paper reports an off-target pharmacological effect of benzodiazepines on nitric oxide synthase activity, not a pharmacogenomic effect on pinazepam's PK or PD parameters. |
+| popPK | Janbroers_1984 | irrelevant | 2 | 0 | The paper is a review that describes pharmacokinetic properties qualitatively (e.g., rapid absorption, steady state times) but does not provide quantitative numeric parameter values (CL, V, ka, t1/2) in the evidence. |
+| PGx | Janbroers_1984 | not_relevant | 0 | 0 | The paper is a general pharmacological review that discusses standard PK/PD properties but does not report any gene variants, genotypes, or pharmacogenomic effects on pinazepam. |
+| PGx | Pacifici_1983 | not_relevant | 0 | 0 | The paper reports standard pharmacokinetics in healthy volunteers without analyzing any gene variants or genotypes. |
+| PGx | Pacifici_1983_2 | not_relevant | 0 | 0 | The study describes standard pharmacokinetics in rats and does not report any gene variant or genotype effects on the drug. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpinazepam%5D&body=Drug%3A%20pinazepam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pinazepam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 04:37 UTC</sub>

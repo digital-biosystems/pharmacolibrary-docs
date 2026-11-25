@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the modeled metabolites ofloxacin and demethyl-ofloxacin lack a metabolic link from the dosed ciprofloxacin.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Lode1988_ofloxacin" status="rejected" stale="false" population="healthy adults" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -54,13 +54,13 @@ Lode H, Höffken G, Olschewski P, Sievers B, Kirch A, Borner K et al. Comparativ
 
 ### Reviewer guidance
 
-**The record is rejected because the modeled metabolites ofloxacin and demethyl-ofloxacin lack a metabolic link from the dosed ciprofloxacin.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure lists ciprofloxacin as the measured compound and absorption parameters (ka, tlag) as specific to ciprofloxacin. However, the links describe the metabolism of ofloxacin into demethyl-ofloxacin and ofloxacin-N-oxide, with no connection to the ciprofloxacin dose. Additionally, a second reader disagreed on whether the clearance value of 231 ml/min was correctly extracted or if the volume of distribution should be 166 L. Extracted — ofloxacin: t1/2z 527 min, AUC∞ 7.7 h. mg/l, CL 228 ml/min, Frel 78.6 % dose, CLu 231 ml/min; ciprofloxacin: V 117 L, kabs 1 h−1, tlag 0.33 h.
+Extracted — ofloxacin: t1/2z 527 min, AUC∞ 7.7 h. mg/l, CL 228 ml/min, Frel 78.6 % dose, CLu 231 ml/min; ciprofloxacin: V 117 L, kabs 1 h−1, tlag 0.33 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ciprofloxacin, the second reading ofloxacin and ciprofloxacin; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The docetaxel record was refused because its two-compartment structure leaves the second peripheral compartment represented by V3 = 132 L unreachable.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="docetaxel" model-id="Docetaxel_Heineman2021_reference" status="rejected" stale="false" population="adults with non-small cell lung cancer" measured-compound="docetaxel" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Heineman T, Baumgart M, Nanavati C, Gabrail N, Van Wart SA, Mager DE et al. Safe
 
 ### Reviewer guidance
 
-**The docetaxel record was refused because its two-compartment structure leaves the second peripheral compartment represented by V3 = 132 L unreachable.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record specifies a two-compartment structure but includes a second peripheral compartment, with V3 = 132 L and transfer rates k13 and k31, indicating an orphan compartment. A reported unit also could not be converted to SI, but the record does not identify which parameter had that unit. Extracted — docetaxel: tmax 1.12 h, Cmax 2.5e+03 μg/L, AUC∞ 3.82e+03 μg•h/L, CL 36.7 L/h, V1 8.12 L, k12 1.07 h–1, k21 1.67 h–1, k13 1.32 h–1, … (+4).
+A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — docetaxel: tmax 1.12 h, Cmax 2.5e+03 μg/L, AUC∞ 3.82e+03 μg•h/L, CL 36.7 L/h, V1 8.12 L, k12 1.07 h–1, k21 1.67 h–1, k13 1.32 h–1, … (+4).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

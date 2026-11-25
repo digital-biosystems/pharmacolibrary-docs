@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Tolfenamic acid's 72.4 L/h clearance and 0.32 L volume of distribution are physiologically implausible, leading to record rejection.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="tolfenamic acid" model-id="TolfenamicAcid_Jaussaud1992_reference" status="rejected" stale="false" population="ponies and horses" measured-compound="tolfenamic acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Jaussaud P, Guieu D, Bellon C, Barbier B, Lhopital MC, Sechet R et al. Pharmacok
 
 ### Reviewer guidance
 
-**Tolfenamic acid's 72.4 L/h clearance and 0.32 L volume of distribution are physiologically implausible, leading to record rejection.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The reported total body clearance of 72.4 L/h is disproportionately large relative to the steady-state volume of distribution of 0.32 L. This extreme mismatch in magnitude indicates a likely extraction error in unit scale or value. The record was built from the abstract alone, so these summary statistics stand in for a fitted model. Extracted — tolfenamic acid: t1/2z 6.1 h, CL 72.4 L/h, Vss 0.32 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tolfenamic acid: t1/2z 6.1 h, CL 72.4 L/h, Vss 0.32 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -21,11 +21,11 @@ Lumefantrine is an antimalarial medication used to treat malaria. It is given or
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| lumefantrine | parent | 528.94 | C30H32Cl3NO | DrugBank | [6437380](https://pubchem.ncbi.nlm.nih.gov/compound/6437380) | Ding_2026, Ezzet_2000, Francis_2020, Hoglund_2015, Kloprogge_2018 |
-| artemether | metabolite | 298.379 | C16H26O5 | PubChem | [68911](https://pubchem.ncbi.nlm.nih.gov/compound/68911) | Ezzet_1998 |
+| lumefantrine | parent | 528.94 | C30H32Cl3NO | DrugBank | [6437380](https://pubchem.ncbi.nlm.nih.gov/compound/6437380) | Ding_2026, Ezzet_2000, Francis_2020, Hoglund_2015, Kloprogge_2018, Sugiarto_2022 |
+| artemether | metabolite | 298.379 | C16H26O5 | PubChem | [68911](https://pubchem.ncbi.nlm.nih.gov/compound/68911) | Ezzet_1998, Sugiarto_2022 |
 | desbutyllumefantrine (desbutyl-lumefantrine) | metabolite | 472.834 | C26H24Cl3NO | PubChem | [9934522](https://pubchem.ncbi.nlm.nih.gov/compound/9934522) | Ding_2026, Hoglund_2015, Kloprogge_2018 |
 | desethylamodiaquine | metabolite | — (mass units only) | — | — | — | — |
-| dihydroartemisinin | metabolite | 284.352 | C15H24O5 | PubChem | [107770](https://pubchem.ncbi.nlm.nih.gov/compound/107770) | Ezzet_1998 |
+| dihydroartemisinin | metabolite | 284.352 | C15H24O5 | PubChem | [107770](https://pubchem.ncbi.nlm.nih.gov/compound/107770) | Ezzet_1998, Sugiarto_2022 |
 
 ## popPK records
 
@@ -37,21 +37,17 @@ Lumefantrine is an antimalarial medication used to treat malaria. It is given or
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Francis_2020_reference](drugs/drug_lumefantrine/Lumefantrine_Francis2020_reference.md) | — | 2-compartment (no model) | 11 (+2 cov.) | Francis J et al., An Individual Participant Data Populati…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.02394-19](https://doi.org/10.1128/AAC.02394-19) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Hoglund_2015_reference](drugs/drug_lumefantrine/Lumefantrine_Hoglund2015_reference.md) | — | general linear (no model) | 4 | Hoglund RM et al., Artemether-lumefantrine co-administrati…, British journal of clinical… (2015) | [10.1111/bcp.12529](https://doi.org/10.1111/bcp.12529) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub> | [Kloprogge_2018_reference](drugs/drug_lumefantrine/Lumefantrine_Kloprogge2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 10 | Kloprogge F et al., Artemether-lumefantrine dosing for mala…, PLoS medicine (2018) | [10.1371/journal.pmed.1002579](https://doi.org/10.1371/journal.pmed.1002579) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Sugiarto_2022_reference](drugs/drug_lumefantrine/Lumefantrine_Sugiarto2022_reference.md) | — | general linear (no model) | 3 | Sugiarto SR et al., The pharmacokinetic properties of artem…, British journal of clinical… (2022) | [10.1111/bcp.15001](https://doi.org/10.1111/bcp.15001) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cao_2020_EC50](drugs/drug_lumefantrine/pd_Cao_2020_EC50.md) | Anti-SARS-CoV-2 activity (EC50) ← lumefantrine · inhibition effect | — | Cao R et al., Anti-SARS-CoV-2 Potential of Artemisini…, ACS infectious diseases (2020) | [10.1021/acsinfecdis.0c00522](https://doi.org/10.1021/acsinfecdis.0c00522) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kyavar_2006_Growth_inhibition_of_Plasmodium_vivax](drugs/drug_lumefantrine/pd_Kyavar_2006_Growth_inhibition_of_Plasmodium_vivax.md) | Growth inhibition of Plasmodium vivax ← desbutyl-benflumetol (DBB) · inhibition effect | — | Kyavar L et al., In vitro interaction between artemisini…, Wiener klinische Wochenschr… (2006) | [10.1007/s00508-006-0677-z](https://doi.org/10.1007/s00508-006-0677-z) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Pirker-Krassnig_2004_inhibition_of_Plasmodium_vivax_parasite_growth](drugs/drug_lumefantrine/pd_Pirker_Krassnig_2004_inhibition_of_Plasmodium_vivax_parasite.md) | inhibition of Plasmodium vivax parasite growth ← lumefantrine · direct log-linear effect | — | Pirker-Krassnig DK et al., Comparative study on the in vitro activ…, Wiener klinische Wochenschr… (2004) | — |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Starzengruber_2007_inhibition_of_schizont_maturation_Plasmodium_falciparum](drugs/drug_lumefantrine/pd_Starzengruber_2007_inhibition_of_schizont_maturation_Plasmod.md) | inhibition of schizont maturation (Plasmodium falciparum) ← lumefantrine · inhibition effect | — | Starzengruber P et al., Specific pharmacokinetic interaction be…, Wiener klinische Wochenschr… (2007) | [10.1007/s00508-007-0861-9](https://doi.org/10.1007/s00508-007-0861-9) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kloprogge_2018_recrudescence](drugs/drug_lumefantrine/pd_Kloprogge_2018_recrudescence.md) | PCR-corrected recrudescent infection (cure) at day 42 ← lumefantrine · time-to-event model | — | Kloprogge F et al., Artemether-lumefantrine dosing for mala…, PLoS medicine (2018) | [10.1371/journal.pmed.1002579](https://doi.org/10.1371/journal.pmed.1002579) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kloprogge_2018_recrudescence_2](drugs/drug_lumefantrine/pd_Kloprogge_2018_recrudescence_2.md) | PCR-corrected recrudescent infection (cure) at day 42 — African children &lt;15 kg ← lumefantrine · time-to-event model | — | Kloprogge F et al., Artemether-lumefantrine dosing for mala…, PLoS medicine (2018) | [10.1371/journal.pmed.1002579](https://doi.org/10.1371/journal.pmed.1002579) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kloprogge_2018_recrudescence_3](drugs/drug_lumefantrine/pd_Kloprogge_2018_recrudescence_3.md) | PCR-corrected recrudescent infection (cure) at day 42 — African children 15–25 kg ← lumefantrine · time-to-event model | — | Kloprogge F et al., Artemether-lumefantrine dosing for mala…, PLoS medicine (2018) | [10.1371/journal.pmed.1002579](https://doi.org/10.1371/journal.pmed.1002579) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Kloprogge_2018_recrudescence_4](drugs/drug_lumefantrine/pd_Kloprogge_2018_recrudescence_4.md) | PCR-corrected recrudescent infection (cure) at day 42 — Southeast Asian pregnant women ← lumefantrine · time-to-event model | — | Kloprogge F et al., Artemether-lumefantrine dosing for mala…, PLoS medicine (2018) | [10.1371/journal.pmed.1002579](https://doi.org/10.1371/journal.pmed.1002579) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Simeon_2024_malaria_reinfection_free_survival_remaining_malaria_free_for_42_days](drugs/drug_lumefantrine/pd_Simeon_2024_malaria_reinfection_free_survival_remaining_mala.md) | malaria reinfection-free survival (remaining malaria free for 42 days) ← lumefantrine · time-to-event model | — | Simeon S et al., Optimizing Lumefantrine Dosing for Youn…, Open forum infectious disea… (2024) | [10.1093/ofid/ofae627](https://doi.org/10.1093/ofid/ofae627) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wernsdorfer_1998_inhibition_of_schizont_maturation](drugs/drug_lumefantrine/pd_Wernsdorfer_1998_inhibition_of_schizont_maturation.md) | inhibition of schizont maturation ← benflumetol · inhibition effect | — | Wernsdorfer WH et al., Activity of benflumetol and its enantio…, Acta tropica (1998) | [10.1016/s0001-706x(97)00141-1](https://doi.org/10.1016/s0001-706x(97)00141-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,50 +61,50 @@ Lumefantrine is an antimalarial medication used to treat malaria. It is given or
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:16 | 6:14 | 2/4/0 | 9/1/0 | 0/0/0 | 280,771/24,056 | ollama / glm-5.3-flash | 5 | 0/5 | 5/0 | 0 |
+| 2026-11-24 00:50 | 0:06 | 2/5/0 | 5/0/0 | 0/0/0 | 3,640/173 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 74 matched, 20 returned
-- **screened:** 6  ·  **relevant:** 6
-- **records:** 6  ·  extracted 0  ·  needs review 2  ·  rejected 4  ·  stale 0
+- **screened:** 7  ·  **relevant:** 6
+- **records:** 7  ·  extracted 0  ·  needs review 2  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Akinrinade_2026.pdf` | Akinrinade TO et al., Population pharmacokinetics of lumefant…, European journal of clinica… (2026) | popPK | 10 | [10.1007/s00228-026-04090-y](https://doi.org/10.1007/s00228-026-04090-y) | [42234159](https://pubmed.ncbi.nlm.nih.gov/42234159) | A population PK study of lumefantrine in humans, but the abstract gives no numeric parameter values (CL, V, ka likely in tables/supplementary not provided). |
-| `Ezzet_1998.pdf` | Ezzet F et al., Population pharmacokinetics and therape…, British journal of clinical… (1998) | popPK | 9 | [10.1046/j.1365-2125.1998.00830.x](https://doi.org/10.1046/j.1365-2125.1998.00830.x) | [9862244](https://pubmed.ncbi.nlm.nih.gov/9862244) | Population PK of benflumetol (lumefantrine) in malaria patients with numeric absorption and elimination half-lives reported in the abstract, though CL/V and full model parameters are not shown here. |
-| `Ezzet_2000.pdf` | Ezzet F et al., Pharmacokinetics and pharmacodynamics o…, Antimicrobial agents and ch… (2000) | popPK | 8 | [10.1128/AAC.44.3.697-704.2000](https://doi.org/10.1128/AAC.44.3.697-704.2000) | [10681341](https://pubmed.ncbi.nlm.nih.gov/10681341) | Population PK of lumefantrine in humans with absorption half-life (4.5 h) and bioavailability reported, but CL/V and full parameter values likely in the model/supplementary text not shown. |
-| `Sugiarto_2022.pdf` | Sugiarto SR et al., The pharmacokinetic properties of artem…, British journal of clinical… (2022) | popPK | 8 | [10.1111/bcp.15001](https://doi.org/10.1111/bcp.15001) | [34296469](https://pubmed.ncbi.nlm.nih.gov/34296469) | Human population-PK study of lumefantrine with compartmental models, but detailed parameter values (CL, V) appear only in the full paper/supplementary material, not in this abstract evidence. |
-| `Borrmann_2010.pdf` | Borrmann S et al., The effect of food consumption on lumef…, Tropical medicine & interna… (2010) | popPK | 7 | [10.1111/j.1365-3156.2010.02477.x](https://doi.org/10.1111/j.1365-3156.2010.02477.x) | [20180933](https://pubmed.ncbi.nlm.nih.gov/20180933) | Population PK model of lumefantrine in children is described, but numeric disposition parameters (CL, V, ka) are not shown in the evidence, likely in supplementary material. |
-
-<sub>queue written 2026-10-07 07:10 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Akinrinade_2026 | relevant | 10 | 2 | A population PK study of lumefantrine in humans, but the abstract gives no numeric parameter values (CL, V, ka likely in tables/supplementary not provided). |
-| popPK | Borrmann_2010 | relevant | 7 | 4 | Population PK model of lumefantrine in children is described, but numeric disposition parameters (CL, V, ka) are not shown in the evidence, likely in supplementary material. |
-| popPK | Cao_2020 | irrelevant | 2 | 1 | In-vitro antiviral study of artemisinins; lumefantrine is only a tested compound with EC50 values, and PK "prediction model" values are not reported in the evidence. |
-| popPK | Kawuma_2021 | irrelevant | 2 | 1 | The population PK model and all numeric parameters (CL, V, ka) are for dolutegravir; lumefantrine is only a co-administered antimalarial with no lumefantrine PK parameters reported. |
-| popPK | Kyavar_2006 | irrelevant | 0 | 0 | This is an in vitro pharmacodynamic drug-interaction study in Plasmodium vivax isolates; no pharmacokinetic disposition parameters for lumefantrine are reported (desbutyl-benflumetol EC values are potency, not PK). |
-| popPK | Müller_2008 | irrelevant | 0 | 0 | In-vitro pharmacodynamic study of benflumetol metabolite and artemisinin in P. falciparum; no lumefantrine PK parameters. |
-| popPK | Noedl_2001 | irrelevant | 0 | 0 | In vitro antimalarial susceptibility study of a lumefantrine metabolite; no PK disposition parameters reported. |
-| popPK | Pirker-Krassnig_2004 | irrelevant | 0 | 0 | In-vitro antiparasitic susceptibility study with EC50/EC90 values, not a PK study reporting disposition parameters for lumefantrine. |
-| popPK | Samal_2005 | irrelevant | 0 | 0 | In vitro antimalarial efficacy study of desbutyl-benflumetol and retinol; no lumefantrine PK parameters reported. |
+| popPK | Akinrinade_2026 | relevant | 10 | 2 | The paper describes a population PK model for lumefantrine, but the specific numeric parameter estimates (CL, V, etc.) are not provided in the extracted evidence text. |
+| PGx | Akinrinade_2026 | not_relevant | 5 | 2 | The study tested CYP3A5 genotype but explicitly reported that it was NOT a significant covariate for lumefantrine pharmacokinetic parameters. |
+| popPK | Borrmann_2010 | irrelevant | 5 | 0 | The study describes a two-compartment model but the evidence only reports relative bioavailability changes and mean concentrations, lacking specific numeric PK parameter values (CL, V, Q, ka). |
+| PGx | Borrmann_2010 | not_relevant | 0 | 0 | The paper reports the effect of food consumption on lumefantrine bioavailability, but does not investigate or report on the impact of any gene variant, genotype, or phenotype (pharmacogenomics). |
+| popPK | Cao_2020 | irrelevant | 1 | 0 | The study focuses on in vitro anti-viral activity of artemisinins, with lumefantrine only mentioned as a comparative reference without original quantitative PK parameters reported in the provided evidence. |
+| PGx | Cao_2020 | not_relevant | 0 | 0 | The paper evaluates anti-viral activity and PK predictions but does not investigate gene variants or genotypes. |
+| popPK | Ezzet_1998 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of artemether and benflumetol, not lumefantrine. |
+| PGx | Ezzet_1998 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of artemether and benflumetol, not lumefantrine, and does not report any pharmacogenomic effects. |
+| PGx | Ezzet_2000 | not_relevant | 0 | 0 | The study reports PK/PD data and the impact of food intake on lumefantrine, but it does not investigate or report pharmacogenomic effects (gene variants). |
+| popPK | Kawuma_2021 | irrelevant | 1 | 0 | The study models the pharmacokinetics of dolutegravir, with lumefantrine acting only as a co-administered comparator agent. |
+| PGx | Kawuma_2021 | not_relevant | 0 | 0 | The paper investigates a drug-drug interaction (dolutegravir and antimalarials) and contains no information on genetic variants or genotypes. |
+| popPK | Kyavar_2006 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic investigation of artemisinin, chloroquine, and desbutyl-benflumetol in Plasmodium vivax, and contains no data for lumefantrine. |
+| PGx | Kyavar_2006 | not_relevant | 0 | 0 | The paper discusses in vitro interactions of artemisinin, chloroquine, and desbutylbenflumetol in P. vivax, but does not involve lumefantrine or any pharmacogenomic variants. |
+| popPK | Müller_2008 | irrelevant | 0 | 0 | The paper is an in-vitro study on Plasmodium falciparum regarding artemisinin and benflumetol derivatives, with no mention of lumefantrine or its pharmacokinetics. |
+| PGx | Müller_2008 | not_relevant | 0 | 0 | The paper investigates drug interaction synergism between artemisinin and monodesbutyl-benflumetol, not the pharmacogenomic effect on lumefantrine. |
+| popPK | Noedl_2001 | irrelevant | 0 | 0 | The study is an in vitro antimalarial activity assay for a metabolite of lumefantrine, not a pharmacokinetic study of lumefantrine. |
+| PGx | Noedl_2001 | not_relevant | 0 | 0 | The paper analyzes the in vitro susceptibility of *P. falciparum* isolates to desbutyl-benflumetol (DBB) based on geographic origin and cross-resistance, without investigating human gene variants or genotypes affecting pharmacokinetics or pharmacodynamics. |
+| popPK | Pirker-Krassnig_2004 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic assay measuring parasite inhibition concentrations (EC50/EC90), not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Pirker-Krassnig_2004 | not_relevant | 0 | 0 | The study compares in vitro drug susceptibility of the parasite to two compounds but does not report human pharmacogenomic effects on PK or PD parameters. |
+| popPK | Samal_2005 | irrelevant | 0 | 0 | The study is an in vitro assessment of desbutyl-benflumetol and retinol activity against Plasmodium falciparum and does not involve lumefantrine pharmacokinetics. |
+| PGx | Samal_2005 | not_relevant | 0 | 0 | The study investigates in vitro antimalarial activity and synergy of desbutyl-benflumetol and retinol, not pharmacogenomic effects on lumefantrine. |
 | popPK | Simeon_2024 | relevant | 7 | 2 | A population PK-PD simulation study of lumefantrine in young children using a published 2-compartment model, but the actual numeric PK parameter values (CL, V, ka, IIV) are not shown in the evidence — they reside in the cited Chotsiri et al. publication/supplementary material. |
-| popPK | Starzengruber_2007 | irrelevant | 0 | 0 | In-vitro pharmacodynamic interaction study in P. falciparum isolates; no PK disposition parameters for lumefantrine. |
-| popPK | Sugiarto_2022 | relevant | 8 | 4 | Human population-PK study of lumefantrine with compartmental models, but detailed parameter values (CL, V) appear only in the full paper/supplementary material, not in this abstract evidence. |
-| popPK | Wernsdorfer_1998 | irrelevant | 0 | 0 | In-vitro antimalarial activity study (EC50 values), no pharmacokinetic disposition parameters for lumefantrine. |
+| popPK | Starzengruber_2007 | irrelevant | 0 | 0 | The study reports in-vitro antimalarial efficacy (EC50/EC90) rather than pharmacokinetic disposition parameters. |
+| PGx | Starzengruber_2007 | not_relevant | 0 | 0 | The study investigates in vitro drug-drug interactions with P. falciparum isolates, not human pharmacogenomics or host genetic variants affecting lumefantrine PK/PD. |
+| PGx | Sugiarto_2022 | not_relevant | 0 | 0 | The study reports population pharmacokinetic parameters for lumefantrine in P. knowlesi malaria but does not assess or report any association with genetic variants, genotypes, or pharmacogenomic factors. |
+| popPK | Wernsdorfer_1998 | irrelevant | 0 | 0 | The study focuses on benflumetol, not lumefantrine, and reports in vitro antimalarial activity rather than pharmacokinetic parameters. |
+| PGx | Wernsdorfer_1998 | not_relevant | 0 | 0 | The paper investigates the antimalarial drug benflumetol, not lumefantrine, and focuses on enantiomer activity in P. falciparum, not pharmacogenomics. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blumefantrine%5D&body=Drug%3A%20lumefantrine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lumefantrine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 07:11 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 00:48 UTC</sub>

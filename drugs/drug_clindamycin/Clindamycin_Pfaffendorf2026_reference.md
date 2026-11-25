@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Clindamycin's clearance, volume, and lag time lacked values, so placeholders were used and the model was held back.
+> No value for clindamycin's clearance, volume of distribution and absorption lag time — all 5 extracted parameters describe fosmidomycin, not clindamycin; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Pfaffendorf2026_reference" status="model_quarantined" stale="false" population="children and adults with uncomplicated P. falciparum malaria" measured-compound="clindamycin, fosmidomycin" parameterization="apparent" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Pfaffendorf C, Dejon-Agobé JC, Edoa JR, Maïga-Ascofaré O, Ahenkan E, Adegnika
 
 ### Reviewer guidance
 
-**Clindamycin's clearance, volume, and lag time lacked values, so placeholders were used and the model was held back.**
+**No value for clindamycin's clearance, volume of distribution and absorption lag time — all 5 extracted parameters describe fosmidomycin, not clindamycin; the covariate scenarios were not simulated (+2 more).**
 
-The five extracted parameters describe fosmidomycin, not clindamycin, leaving clindamycin's clearance, volume of distribution, and absorption lag time undefined. Consequently, the model relied on library placeholders for these missing clindamycin values, preventing publication with an invented number. The second reader disputed the record's primary analyte and dose compound identification, disagreeing that the record correctly identified clindamycin and fosmidomycin. Extracted — fosmidomycin: CL/F 58.3 L/h, V/F 248 L, kabs 0.698 1/h, tlag 0.105 h, Fab 1.
+The model was built, but clindamycin's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — fosmidomycin: CL/F 58.3 L/h, V/F 248 L, kabs 0.698 1/h, tlag 0.105 h, Fab 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clindamycin, fosmidomycin, artesunate, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -182,7 +182,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.583, 0 of 1 reader(s) agree | 0.583 | cross-check disputed by a second reader: verdict disputed, agreement 0.583, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.583 (7 of 12 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.583 | cross-check contradicted by a second reader: verdict disputed; agreement 0.583 (7 of 12 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

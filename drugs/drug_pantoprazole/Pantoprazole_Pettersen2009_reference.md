@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Pantoprazole model fails half-life check with 11.467454592833352 against expected 2.0, and bioavailability was left at library defaults.
+> The model does not reproduce the paper's terminal half-life (paper 2, model 11.5); f use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="pantoprazole" model-id="Pantoprazole_Pettersen2009_reference" status="needs_review" stale="false" population="paediatric intensive care patients" measured-compound="pantoprazole" parameterization="mechanistic" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Pettersen G, Mouksassi MS, Théorêt Y, Labbé L, Faure C, Nguyen B et al. Popul
 
 ### Reviewer guidance
 
-**Pantoprazole model fails half-life check with 11.467454592833352 against expected 2.0, and bioavailability was left at library defaults.**
+**The model does not reproduce the paper's terminal half-life (paper 2, model 11.5); f use library defaults, not estimates from this paper (+2 more).**
 
-The simulated terminal half-life of 11.467454592833352 h is 5.7337 times the expected 2.0 h from the paper. Bioavailability was not reported in the record, so library defaults were used instead of paper-specific estimates. Additionally, covariate scenarios including age, CYP2C19 inhibitor, and hepatic dysfunction effects were defined but not exercised during simulation. Extracted — pantoprazole: CL 5.08 l h -1, V1 2.2 l, Q 1.1 l h -1, V2 2.69 l, kabs 0.325 h -1, tlag 2.5 h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — pantoprazole: CL 5.08 l h -1, V1 2.2 l, Q 1.1 l h -1, V2 2.69 l, kabs 0.325 h -1, tlag 2.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pantoprazole, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -187,7 +187,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_beta | reference | fail | 2 | 11.47 | 5.734 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2 | 11.47 | 5.734 | reported 2.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

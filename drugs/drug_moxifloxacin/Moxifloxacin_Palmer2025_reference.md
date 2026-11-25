@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The apparent clearance, volume, and intercompartmental clearance for moxifloxacin are missing specific physical units, causing dimension mismatches.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit unit ([luminosity] / [length] ** 2) vs [length] ** 3 / [time]; Q76 unit unit ([luminosity] / [length] ** 2) vs [length] ** 3; Q69 unit unit ([luminosity] / [length] ** 2) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="moxifloxacin" model-id="Moxifloxacin_Palmer2025_reference" status="rejected" stale="false" population="children with rifampicin-resistant tuberculosis" measured-compound="moxifloxacin" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Palmer M, Zou Y, Hesseling AC, van der Laan L, Courtney I, Kinikar AA et al. Pop
 
 ### Reviewer guidance
 
-**The apparent clearance, volume, and intercompartmental clearance for moxifloxacin are missing specific physical units, causing dimension mismatches.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit unit ([luminosity] / [length] ** 2) vs [length] ** 3 / [time]; Q76 unit unit ([luminosity] / [length] ** 2) vs [length] ** 3; Q69 unit unit ([luminosity] / [length] ** 2) vs [length] ** 3 / [time].**
 
-The record assigns the generic placeholder 'unit' to CL/F, V/F, and Q/F instead of the specific liters or liters-per-hour indicated in the labels. Because the specific units were not extracted, the parameters could not be converted to standard SI dimensions, resulting in a conflict with their physical meaning. This structural inconsistency prevented the model from being accepted for the child population study. Extracted — moxifloxacin: CL/F 6.9 unit, V/F 61.1 unit, Q/F 0.86 unit, MAT 1.01 h, Fab 1.
+A reported unit could not be converted (CL/F, V/F and Q/F), so that value has no SI equivalent. Extracted — moxifloxacin: CL/F 6.9 unit, V/F 61.1 unit, Q/F 0.86 unit, MAT 1.01 h, Fab 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[vc/f (l) a].parameter_id`: this record has Q76, the second reading Q290; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

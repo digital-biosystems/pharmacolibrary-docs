@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Nivolumab’s two-compartment model was rejected for an unreachable compartment, despite intercompartmental clearance Q of 0.77 L/day and peripheral volume V2 of 2.78 L.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="nivolumab" model-id="Nivolumab_Shang2022_reference" status="rejected" stale="false" population="patients with multiple tumor types" measured-compound="nivolumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Shang J, Huang L, Huang J, Ren X, Liu Y, Feng Y. Population pharmacokinetic mode
 
 ### Reviewer guidance
 
-**Nivolumab’s two-compartment model was rejected for an unreachable compartment, despite intercompartmental clearance Q of 0.77 L/day and peripheral volume V2 of 2.78 L.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record flags a compartment with no path from the dose but does not identify which compartment. It lists no values for total clearance CL or central volume V1. The record identifies nivolumab as the drug and measured compound, while the second reader marked the dose compound and primary analyte as unknown. Extracted — nivolumab: Q 0.77 L/Day, V2 2.78 L.
+Extracted — nivolumab: Q 0.77 L/Day, V2 2.78 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nivolumab, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

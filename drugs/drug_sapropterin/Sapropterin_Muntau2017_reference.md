@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Sapropterin C0 has a dimension mismatch: its unit μg/L conflicts with the required [mass]*[time]/[length]³.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit μg/L ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="sapropterin" model-id="Sapropterin_Muntau2017_reference" status="rejected" stale="false" population="children &lt;4 years with BH4-responsive phenylketonuria or mild hyperphenylalaninemia" measured-compound="sapropterin" parameterization="apparent" topology="1C"></div>
 
@@ -43,7 +43,7 @@ Muntau AC, Burlina A, Eyskens F, Freisinger P, De Laet C, Leuzzi V et al. Effica
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,11 +53,13 @@ Muntau AC, Burlina A, Eyskens F, Freisinger P, De Laet C, Leuzzi V et al. Effica
 
 ### Reviewer guidance
 
-**Sapropterin C0 has a dimension mismatch: its unit μg/L conflicts with the required [mass]*[time]/[length]³.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit μg/L ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The record lists C0 as 12.6 μg/L, an extrapolated concentration at time zero. The review found a dimension mismatch where the reported unit dimension conflicted with the parameter's expected dimensions. Additionally, the unit μg/L could not be converted to standard SI units, preventing further analysis. Extracted — sapropterin: CL/F 2.79e+03 L/h, V/F 3.87e+03 L, kabs 0.234 1/h, tlag 0.342 h, C0 12.6 μg/L.
+A reported unit could not be converted (C0), so that value has no SI equivalent. Extracted — sapropterin: CL/F 2.79e+03 L/h, V/F 3.87e+03 L, kabs 0.234 1/h, tlag 0.342 h, C0 12.6 μg/L.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of % of reference: this record has none, the second reading 10.9; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -93,6 +95,32 @@ The record lists C0 as 12.6 μg/L, an extrapolated concentration at time zero. T
 - LLM selected parameter table(s) 3, 4
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.7 (14/20 fields) | 6 |
+
+<details><summary>6 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[% of reference]` |  | 10.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_f_weight]` |  | 0.839 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight]` | 0.839 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v_f_weight]` |  | 0.573 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

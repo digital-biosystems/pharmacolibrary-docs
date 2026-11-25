@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;cisplatin&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/&quot;},{&quot;label&quot;:&quot;Bonetti_1994 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Imbs2016_reference&quot;,&quot;label&quot;:&quot;Imbs_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Imbs2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mody_2022_R&quot;,&quot;label&quot;:&quot;Mody_2022 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/pd_Mody_2022_R.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mody_2022_R&quot;,&quot;label&quot;:&quot;Mody_2022 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/pd_Mody_2022_R.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Bonetti1994_reference" status="needs_review" stale="false" population="elderly patients with various solid tumors" measured-compound="total and ultrafilterable platinum" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Bonetti1994_reference" status="needs_review" stale="false" population="elderly patients with solid tumors" measured-compound="total platinum" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bonetti A, Franceschi T, Apostoli P, Cetto GL, Recaldin E, Molino A et al. Cisplatin pharmacokinetics in elderly patients. Therapeutic drug monitoring 16(5):477–482 (1994).
@@ -17,15 +17,15 @@ Bonetti A, Franceschi T, Apostoli P, Cetto GL, Recaldin E, Molino A et al. Cispl
 
 ## Population and dosing
 
-**Population:** elderly patients with various solid tumors · condition solid tumors · age group elderly · n = 6.
+**Population:** elderly patients with solid tumors · age group elderly.
 
-**Dosed compound ≠ measured compound:** dosed cisplatin (DDP), measured total and ultrafilterable platinum.
+**Dosed compound ≠ measured compound:** dosed cisplatin, measured total platinum.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,12 +33,13 @@ Bonetti A, Franceschi T, Apostoli P, Cetto GL, Recaldin E, Molino A et al. Cispl
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Total Pt t1/2 alpha | t1/2α | 0.35 | h |
-| Total Pt t1/2 beta | t1/2β | 63.08 | h |
+| creatinine clearance (from | CLR | 44.4 | ml/min |
+| t1/2 alpha | t1/2α | 0.35 | h |
+| t1/2 beta | t1/2β | 63.08 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3), qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +51,9 @@ Bonetti A, Franceschi T, Apostoli P, Cetto GL, Recaldin E, Molino A et al. Cispl
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is cisplatin's own; they describe total and ultrafilterable platinum. Extracted — total and ultrafilterable platinum: t1/2α 0.35 h, t1/2β 63.1 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is cisplatin's own; they describe total platinum. Extracted — total platinum: CLR 44.4 ml/min, t1/2α 0.35 h, t1/2β 63.1 h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has cisplatin (DDP), the second reading cisplatin; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has total platinum, the second reading cisplatin; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,8 +61,9 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Total Pt t1/2 alpha | `Q59` · t1/2α | 0.35 | h | 1260 | s | h | llm_confirmed (0.6) | Bonetti_1994:abstract |
-| Total Pt t1/2 beta | `Q60` · t1/2β | 63.08 | h | 2.271e+05 | s | h | llm_confirmed (0.6) | Bonetti_1994:abstract |
+| creatinine clearance (from | `Q26` · CLR | 44.4 | ml/min | 7.4e-07 | m3/s | ml/min | llm_corrected (0.6) | Bonetti_1994:abstract |
+| t1/2 alpha | `Q59` · t1/2α | 0.35 | h | 1260 | s | h | half_life_rule (0.95) | Bonetti_1994:abstract, Bonetti_1994:abstract |
+| t1/2 beta | `Q60` · t1/2β | 63.08 | h | 2.271e+05 | s | h | half_life_rule (0.95) | Bonetti_1994:abstract, Bonetti_1994:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,29 +73,39 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q59 ('ultrafilterable Pt t1/2 alpha', value 0.54) — already have one for this compound
-- dropped duplicate Q60 ('ultrafilterable Pt t1/2 beta', value 58.91) — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=total and ultrafilterable platinum
+- dropped unlinked row (NIL): 'serum creatinine level (from' — extend the ontology if this is a real PK parameter (source ['Bonetti_1994:abstract'])
+- dropped unlinked row (NIL): 'serum creatinine level (to' — extend the ontology if this is a real PK parameter (source ['Bonetti_1994:abstract'])
+- dropped unlinked row (NIL): 'creatinine clearance (to' — extend the ontology if this is a real PK parameter (source ['Bonetti_1994:abstract'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=total platinum
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- molar mass: no plausible PubChem entry for 'total platinum' ('total platinum') — left in mass units
+- molar mass: none found for 'total platinum' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'total and ultrafilterable platinum', not cisplatin — the review values are the parent's
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Bonetti_1994_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Bonetti_1994_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 | `qwen3.8-27b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[creatinine clearance (from]` | 44.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[creatinine clearance]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 alpha]` |  | 0.35 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 alpha]` | 0.35 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 beta]` |  | 63.08 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 beta]` | 63.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | total platinum | cisplatin | mismatch |
 | `qwen3.8-27b` | `parameters[total pt t1/2 alpha]` | 0.35 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[total pt t1/2 beta]` | 63.08 |  | only_one_extracted |
 | `qwen3.8-27b` | `screen.dose_compound` | cisplatin (DDP) | cisplatin | mismatch |
@@ -111,11 +123,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q59 | pass | [time] |  | ['Bonetti_1994:abstract'] |
-| C5_dimension_Q60 | pass | [time] |  | ['Bonetti_1994:abstract'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Bonetti_1994:abstract'] |
+| C5_dimension_Q59 | pass | [time] |  | ['Bonetti_1994:abstract', 'Bonetti_1994:abstract'] |
+| C5_dimension_Q60 | pass | [time] |  | ['Bonetti_1994:abstract', 'Bonetti_1994:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -150,4 +163,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcisplatin%5D%20Cisplatin_Bonetti1994_reference&body=Drug%3A%20cisplatin%0ARecord%3A%20Cisplatin_Bonetti1994_reference%0APaper%3A%20Bonetti_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cisplatin/Cisplatin_Bonetti1994_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 22:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 17:37 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Basiliximab record failed cross-check due to conflicting parameter assignments where distribution volume and clearance values were inconsistently attributed between readers.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="basiliximab" model-id="Basiliximab_Kovarik1999v2_reference" status="needs_review" stale="false" population="renal transplant patients" measured-compound="basiliximab" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Kovarik JM, Moore R, Wolf P, Abendroth D, Landsberg D, Soulillou JP et al. Scree
 
 ### Reviewer guidance
 
-**Basiliximab record failed cross-check due to conflicting parameter assignments where distribution volume and clearance values were inconsistently attributed between readers.**
+**cross_check_disputed; x1_cross_check.**
 
-The model builder assigned a distribution volume of 7.5 L and a clearance of 33 mL/h, but the second reader could not extract these specific values from the abstract text. Conversely, the second reader identified 7.5 and 33 under different field labels, resulting in a mismatch where the primary record's values were not found in the secondary extraction. This discrepancy, combined with the abstract-only source, prevented a consensus on the specific pharmacokinetic parameters. Extracted — basiliximab: V 7.5 L, t1/2z 7.5 d, CL 33 mL/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — basiliximab: V 7.5 L, t1/2z 7.5 d, CL 33 mL/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of and the clearance: this record has 33, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.364, 0 of 1 reader(s) agree | 0.364 | cross-check agreement 0.364 is below 0.5: verdict partial, agreement 0.364, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.364 (4 of 11 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.364 | cross-check agreement 0.364 is below 0.5: verdict partial; agreement 0.364 (4 of 11 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

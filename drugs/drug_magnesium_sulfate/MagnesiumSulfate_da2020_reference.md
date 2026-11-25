@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The magnesium sulfate model was rejected because its peripheral-compartment volume, V2, is 28, and that compartment is unreachable from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_da2020_reference" status="rejected" stale="false" population="pregnant women with preeclampsia" measured-compound="magnesium_sulfate" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ da Costa TX, Azeredo FJ, Ururahy MAG, da Silva Filho MA, Martins RR, Oliveira AG
 
 ### Reviewer guidance
 
-**The magnesium sulfate model was rejected because its peripheral-compartment volume, V2, is 28, and that compartment is unreachable from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-V2 is defined as the peripheral-compartment volume for magnesium sulfate, and the record describes a two-compartment structure. The peripheral compartment has no path from the dose, making it unreachable in the model topology. Extracted — magnesium sulfate: V 13.3 L, CL 1.38 L/h, V2 28.
+Extracted — magnesium sulfate: V 13.3 L, CL 1.38 L/h, V2 28.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium_sulfate, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

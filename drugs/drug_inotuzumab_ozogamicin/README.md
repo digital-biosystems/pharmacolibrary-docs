@@ -30,7 +30,10 @@ It is given by intravenous infusion as a reconstituted solution. It is authorise
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Betts_2016_tumor_growth_and_inhibition](drugs/drug_inotuzumab_ozogamicin/pd_Betts_2016_tumor_growth_and_inhibition.md) | tumor growth and inhibition ← inotuzumab ozogamicin · disease-progression model | — | Betts AM et al., Preclinical to Clinical Translation of…, The AAPS journal (2016) | [10.1208/s12248-016-9929-7](https://doi.org/10.1208/s12248-016-9929-7) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Luu_2016_platelet](drugs/drug_inotuzumab_ozogamicin/pd_Luu_2016_platelet.md) | platelet ← inotuzumab ozogamicin · indirect response — drug inhibits the production of platelet | — | Luu KT et al., A method for optimizing dosage regimens…, Cancer chemotherapy and pha… (2016) | [10.1007/s00280-016-3118-3](https://doi.org/10.1007/s00280-016-3118-3) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Luu_2016_tumor_size](drugs/drug_inotuzumab_ozogamicin/pd_Luu_2016_tumor_size.md) | tumor size ← inotuzumab ozogamicin · inhibition effect | — | Luu KT et al., A method for optimizing dosage regimens…, Cancer chemotherapy and pha… (2016) | [10.1007/s00280-016-3118-3](https://doi.org/10.1007/s00280-016-3118-3) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Hibma_2019_QTcF](drugs/drug_inotuzumab_ozogamicin/pd_Hibma_2019_QTcF.md) | QT interval corrected using Fridericia's formula (QTcF) ← inotuzumab_ozogamicin · direct linear effect | — | Hibma JE et al., Effect of inotuzumab ozogamicin on the…, British journal of clinical… (2019) | [10.1111/bcp.13832](https://doi.org/10.1111/bcp.13832) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Hibma_2019_QTcS](drugs/drug_inotuzumab_ozogamicin/pd_Hibma_2019_QTcS.md) | QT interval corrected using population-specific formula (QTcS) ← inotuzumab_ozogamicin · direct linear effect | — | Hibma JE et al., Effect of inotuzumab ozogamicin on the…, British journal of clinical… (2019) | [10.1111/bcp.13832](https://doi.org/10.1111/bcp.13832) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,7 +47,7 @@ It is given by intravenous infusion as a reconstituted solution. It is authorise
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:48 | 6:03 | 2/0/0 | 1/0/0 | 0/0/0 | 75,905/37,263 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-23 22:30 | 0:29 | 2/0/0 | 2/2/0 | 0/0/0 | 6,136/1,899 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -55,24 +58,28 @@ It is given by intravenous infusion as a reconstituted solution. It is authorise
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Betts_2016.pdf` | Betts AM et al., Preclinical to Clinical Translation of…, The AAPS journal (2016) | popPK | 9 | [10.1208/s12248-016-9929-7](https://doi.org/10.1208/s12248-016-9929-7) | [27198897](https://pubmed.ncbi.nlm.nih.gov/27198897) | The study models inotuzumab ozogamicin disposition, but no numeric PK parameter values are shown in the provided evidence. |
-| `Luu_2016.pdf` | Luu KT et al., A method for optimizing dosage regimens…, Cancer chemotherapy and pha… (2016) | popPK | 9 | [10.1007/s00280-016-3118-3](https://doi.org/10.1007/s00280-016-3118-3) | [27491482](https://pubmed.ncbi.nlm.nih.gov/27491482) | A two-compartment InO PK model is reported, but no numeric disposition parameter values are provided. |
+| `Luu_2016.pdf` | Luu KT et al., A method for optimizing dosage regimens…, Cancer chemotherapy and pha… (2016) | popPK | 7 | [10.1007/s00280-016-3118-3](https://doi.org/10.1007/s00280-016-3118-3) | [27491482](https://pubmed.ncbi.nlm.nih.gov/27491482) | The paper describes a two-compartment PK model for inotuzumab ozogamicin in humans and aims to optimize dosing, but the specific quantitative parameter values (CL, V, etc.) are not provided in the extracted text. |
 
-<sub>queue written 2026-10-07 12:43 UTC</sub>
+<sub>queue written 2026-11-23 22:29 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Betts_2016 | relevant | 9 | 0 | The study models inotuzumab ozogamicin disposition, but no numeric PK parameter values are shown in the provided evidence. |
-| popPK | Hedrich_2018 | irrelevant | 1 | 0 | This is a review and provides no quantitative inotuzumab ozogamicin disposition parameters. |
-| popPK | Hibma_2019 | irrelevant | 2 | 0 | The study models QTc versus inotuzumab ozogamicin concentration but reports no quantitative disposition parameters. |
-| popPK | Kantarjian_2018 | irrelevant | 0 | 0 | This human patient-reported outcomes study reports no quantitative pharmacokinetic disposition parameters. |
-| popPK | Luu_2016 | relevant | 9 | 1 | A two-compartment InO PK model is reported, but no numeric disposition parameter values are provided. |
+| popPK | Betts_2016 | relevant | 8 | 1 | The paper describes a PK/PD model for inotuzumab ozogamicin but does not contain explicit numeric parameter values (CL, V, etc.) in the provided evidence, which only summarizes the model structure and conclusions. |
+| PGx | Betts_2016 | not_relevant | 0 | 0 | The paper describes a preclinical-to-clinical PK/PD modeling study but does not report any pharmacogenomic analysis or gene variant effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Hedrich_2018 | irrelevant | 0 | 0 | The paper is a review article discussing general antibody-drug conjugate pharmacokinetics and does not report specific quantitative disposition parameters for inotuzumab ozogamicin. |
+| PGx | Hedrich_2018 | not_relevant | 0 | 0 | The paper is a general review of antibody-drug conjugate PK/PD modeling and does not discuss pharmacogenomic variants or their effects on inotuzumab ozogamicin. |
+| popPK | Hibma_2019 | irrelevant | 2 | 2 | The study is a QTc-concentration exposure-response analysis, not a population PK parameter estimation study (no CL, V, ka, or t1/2 reported). |
+| PGx | Hibma_2019 | not_relevant | 0 | 0 | The study characterizes the concentration-QTc relationship for inotuzumab ozogamicin but does not investigate gene variants or genotypes. |
+| popPK | Kantarjian_2018 | irrelevant | 0 | 0 | The paper reports patient-reported outcomes and quality of life data, not pharmacokinetic parameters. |
+| PGx | Kantarjian_2018 | not_relevant | 0 | 0 | The paper reports patient-reported outcomes (quality of life) and does not discuss gene variants or pharmacokinetic/pharmacodynamic parameters. |
+| popPK | Luu_2016 | relevant | 7 | 2 | The paper describes a two-compartment PK model for inotuzumab ozogamicin in humans and aims to optimize dosing, but the specific quantitative parameter values (CL, V, etc.) are not provided in the extracted text. |
+| PGx | Luu_2016 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetic modeling and dose optimization based on safety/efficacy, with no mention of genetic variants or pharmacogenomic effects. |
 
 
 </details>

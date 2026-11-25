@@ -22,7 +22,6 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Basu_2017_cell_proliferation](drugs/drug_vemurafenib/pd_Basu_2017_cell_proliferation.md) | cell proliferation ← vemurafenib · inhibition effect | — | Basu R et al., Growth Hormone Receptor Knockdown Sensi…, Hormones & cancer (2017) | [10.1007/s12672-017-0292-7](https://doi.org/10.1007/s12672-017-0292-7) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hu_2022_CC50](drugs/drug_vemurafenib/pd_Hu_2022_CC50.md) | cytotoxicity ← vemurafenib · stimulation effect | — | Hu B et al., Vemurafenib Inhibits Enterovirus A71 Ge…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15091067](https://doi.org/10.3390/ph15091067) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hu_2022_CPE](drugs/drug_vemurafenib/pd_Hu_2022_CPE.md) | cytopathic effect (CPE) inhibition ← vemurafenib · inhibition effect | — | Hu B et al., Vemurafenib Inhibits Enterovirus A71 Ge…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15091067](https://doi.org/10.3390/ph15091067) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Fallahi-Sichani_2015_apoptosis](drugs/drug_vemurafenib/pd_Fallahi_Sichani_2015_apoptosis.md) | apoptosis ← vemurafenib · direct Emax (saturable) effect | — | Fallahi-Sichani M et al., Systematic analysis of BRAF(V600E) mela…, Molecular systems biology (2015) | [10.15252/msb.20145877](https://doi.org/10.15252/msb.20145877) |
@@ -40,7 +39,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:54 | 1:56 | 0/0/0 | 3/2/0 | 0/0/0 | 69,260/7,889 | openai / gpt-6-luna | 3 | 1/2 | 3/0 | 0 |
+| 2026-11-24 08:24 | 0:04 | 0/0/0 | 2/2/0 | 0/0/0 | 3,538/183 | einfracz / qwen3.8-27b | 3 | 1/2 | 3/0 | 0 |
 
 ## Coverage
 
@@ -51,28 +50,34 @@ _not available_
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Puszkiel_2016.pdf` | Puszkiel A et al., Plasma vemurafenib exposure and pre-tre…, Pharmacological research 11… (2016) | popPK | 10 | [10.1016/j.phrs.2016.06.032](https://doi.org/10.1016/j.phrs.2016.06.032) | [27378568](https://pubmed.ncbi.nlm.nih.gov/27378568) | The study uses a population-PK model for vemurafenib, but no numeric disposition parameter values are provided in the evidence. |
-| `Wang_2020.pdf` | Wang H et al., Population Pharmacokinetics of Vemurafe…, Journal of clinical pharmac… (2020) | popPK | 10 | [10.1002/jcph.1617](https://doi.org/10.1002/jcph.1617) | [32476174](https://pubmed.ncbi.nlm.nih.gov/32476174) | A pediatric population-PK model is reported, but numeric disposition parameter values are not provided in the evidence. |
+| `Zhang_2017.pdf` | Zhang W et al., Clinical Pharmacokinetics of Vemurafenib, Clinical pharmacokinetics (2017) | popPK | 9 | [10.1007/s40262-017-0523-7](https://doi.org/10.1007/s40262-017-0523-7) | [28255850](https://pubmed.ncbi.nlm.nih.gov/28255850) | The paper describes a population PK analysis of vemurafenib in humans but only provides a half-life; key quantitative parameters like clearance and volume are not explicitly listed in the evidence provided. |
 
-<sub>queue written 2026-10-07 08:53 UTC</sub>
+<sub>queue written 2026-11-24 08:24 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Basu_2017 | irrelevant | 0 | 0 | This is an in-vitro melanoma drug-resistance study and reports no vemurafenib disposition parameters. |
+| popPK | Basu_2017 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of drug resistance mechanisms (ABC transporter expression) in melanoma cell lines and does not report population pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Basu_2017 | not_relevant | 0 | 0 | The paper investigates the effect of growth hormone receptor knockdown on vemurafenib resistance in cell lines, but it does not report a pharmacogenomic effect where a specific human gene variant/genotype alters a PK or PD parameter. |
 | popPK | Fallahi-Sichani_2015 | irrelevant | 0 | 0 | This in-vitro signaling study reports no quantitative vemurafenib disposition parameters. |
-| popPK | Han_2015 | irrelevant | 0 | 0 | The study models cobimetinib, and reports no quantitative vemurafenib PK parameters. |
-| popPK | Hong_2015 | irrelevant | 0 | 0 | This is an in-vitro anticancer study and reports no vemurafenib pharmacokinetic parameters. |
+| popPK | Han_2015 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for cobimetinib, not vemurafenib, which is only mentioned as a co-administered drug. |
+| PGx | Han_2015 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of cobimetinib, not vemurafenib, and does not report any pharmacogenomic effects. |
+| popPK | Hong_2015 | irrelevant | 0 | 0 | This is an in-vitro study on novel quinone derivatives for cancer treatment, using vemurafenib only as a comparator for resistance, with no pharmacokinetic data provided. |
+| PGx | Hong_2015 | not_relevant | 0 | 0 | The paper reports the synthesis and anticancer activity of novel quinone derivatives against vemurafenib-resistant cells, but does not report any pharmacogenomic effects on PK or PD parameters of vemurafenib. |
 | popPK | Hu_2022 | irrelevant | 0 | 0 | This is an in-vitro antiviral study and reports no quantitative vemurafenib disposition parameters. |
-| popPK | Kim_2019 | irrelevant | 1 | 0 | This is a review and provides no numeric vemurafenib disposition parameters in the evidence. |
-| popPK | Puszkiel_2016 | relevant | 10 | 0 | The study uses a population-PK model for vemurafenib, but no numeric disposition parameter values are provided in the evidence. |
-| popPK | Wang_2020 | relevant | 10 | 1 | A pediatric population-PK model is reported, but numeric disposition parameter values are not provided in the evidence. |
-| popPK | Zhang_2017 | irrelevant | 2 | 4 | This is a review that summarizes a population-PK half-life (~57 h) but provides no original quantitative model parameters. |
+| popPK | Kim_2019 | irrelevant | 2 | 0 | The paper is a narrative review of clinical PK/PD considerations in melanoma treatment and does not report original quantitative disposition parameters or model fits for vemurafenib in the provided text. |
+| PGx | Kim_2019 | not_relevant | 0 | 0 | The text is a general review introduction discussing the clinical importance of PK/PD for melanoma therapies but does not report specific gene-variant interactions or quantitative pharmacogenomic data for vemurafenib. |
+| popPK | Puszkiel_2016 | relevant | 9 | 2 | The paper describes a population PK study for vemurafenib with a one-compartment model, but the specific numeric parameter values (CL, V, etc.) are not listed in the provided abstract text. |
+| PGx | Puszkiel_2016 | not_relevant | 0 | 0 | The study analyzes pharmacokinetics and the impact of HGF levels on toxicity, but it does not investigate the effect of a gene variant or genotype on PK or PD parameters. |
+| popPK | Wang_2020 | relevant | 10 | 4 | The study develops a population PK model for vemurafenib in children, but the specific numeric parameter estimates (e.g., typical CL, V, ka) are not explicitly listed in the provided abstract text, only variability metrics and bioavailability. |
+| PGx | Wang_2020 | not_relevant | 5 | 4 | The paper describes PK characteristics in a cohort with the BRAF V600E mutation, but it does not analyze the effect of specific pharmacogenomic variants (e.g., CYP3A5 or SLCO1B1) on PK parameters, nor does it compare different genotypes to quantify a pharmacogenomic effect. |
+| popPK | Zhang_2017 | relevant | 9 | 2 | The paper describes a population PK analysis of vemurafenib in humans but only provides a half-life; key quantitative parameters like clearance and volume are not explicitly listed in the evidence provided. |
+| PGx | Zhang_2017 | not_relevant | 0 | 0 | The paper discusses general pharmacokinetics and clinical population covariates (age, sex, race) but does not report on any pharmacogenomic effects (e.g., CYP3A4 polymorphisms) on vemurafenib PK or PD parameters. |
 
 
 </details>

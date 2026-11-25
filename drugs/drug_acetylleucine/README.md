@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:54 | 3:00 | 0/0/0 | 0/0/0 | 0/0/0 | 200,080/1,613 | ollama / glm-5.3-flash | 12 | 7/5 | 12/0 | 0 |
+| 2026-11-23 18:09 | 0:02 | 0/0/0 | 0/0/0 | 0/0/0 | 3,639/170 | einfracz / qwen3.8-27b | 12 | 7/5 | 12/0 | 0 |
 
 ## Coverage
 
@@ -47,7 +47,7 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Loiseau_1998.pdf` | Loiseau PM et al., In vitro antifilarial activity of organ…, International journal for p… (1998) | pd | 5 | [10.1016/s0020-7519(98)00072-1](https://doi.org/10.1016/s0020-7519(98)00072-1) | [9762575](https://www.ncbi.nlm.nih.gov/pubmed/9762575) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 03:54 UTC</sub>
+<sub>queue written 2026-11-23 18:09 UTC</sub>
 
 ## Screened and excluded
 
@@ -56,15 +56,19 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Bräm_2026 | irrelevant | 0 | 0 | This is a methods paper on NODE-LASSO automated model development using simulated PK data, neonatal weight, and warfarin — acetylleucine is not mentioned at all. |
 | popPK | Chen_2026 | irrelevant | 0 | 0 | This is a population-PK study of rivaroxaban, not acetylleucine; no acetylleucine parameters are reported. |
 | popPK | Jia_2026 | irrelevant | 0 | 0 | This is a population-PK study of rivaroxaban in post-TIPS patients, not acetylleucine; no acetylleucine parameters are present. |
-| popPK | Karlsen_2026 | irrelevant | 0 | 0 | This is a simulated popPK benchmarking framework for an unnamed Sanofi molecule, not acetylleucine; no acetylleucine PK parameters are reported. |
+| popPK | Karlsen_2026 | irrelevant | 0 | 0 | This is a methodological data paper introducing a benchmarking framework (PMX-CovEval) with simulated PK datasets for an unspecified molecule, not a study reporting PK parameters for acetylleucine. |
+| PGx | Karlsen_2026 | not_relevant | 0 | 0 | The paper is a methodological benchmarking framework for covariate model building using a simulated PK database of a generic "Sanofi molecule" and does not report pharmacogenomic effects for acetylleucine. |
 | popPK | Kwack_2026 | irrelevant | 0 | 0 | This is an LLM-automation methods paper modeling warfarin, theophylline, and tobramycin — acetylleucine is not studied at all. |
-| popPK | Loiseau_1998 | irrelevant | 0 | 0 | In vitro antifilarial activity study of organometallic complexes; acetylleucine is only a ligand in a Pt complex, no PK parameters. |
+| popPK | Loiseau_1998 | irrelevant | 0 | 0 | The study is an in vitro pharmacological investigation of antifilarial activity, not a pharmacokinetic study, and acetylleucine appears only as part of a test compound name (Pt-DDH-N-acetylleucine). |
+| PGx | Loiseau_1998 | not_relevant | 0 | 0 | The paper evaluates the antifilarial activity of organometallic complexes in vitro and does not investigate pharmacogenomic effects on PK/PD parameters for acetylleucine. |
 | popPK | Serkland_2026 | irrelevant | 0 | 0 | This is a population PKPD study of ocrelizumab, not acetylleucine; no acetylleucine parameters appear. |
 | popPK | Suthahar_2026 | irrelevant | 0 | 0 | This is a systematic review of population-PK models for 5-fluorouracil, not acetylleucine; no acetylleucine parameters are reported. |
 | PGx | Szuch_2018 | not_relevant | 0 | 0 | Paper describes MSUD (BCKDHB variants) and N-acetylleucine as a metabolic biomarker, not a pharmacogenomic effect on PK/PD of a drug. |
 | popPK | Vicente_2026 | irrelevant | 0 | 0 | This is a population-PK study of subcutaneous infliximab, not acetylleucine; no acetylleucine parameters are present. |
 | popPK | Wang_2026 | irrelevant | 0 | 0 | This is a population-PK model library for polymyxin B, not acetylleucine; acetylleucine is not mentioned at all. |
 | popPK | Wanika_2026 | irrelevant | 0 | 0 | This is a methodological UQ paper using simulated Monolix demo data for an unnamed drug; acetylleucine is not the subject and no acetylleucine PK parameters are reported. |
+| popPK | Yue_2026 | irrelevant | 0 | 0 | Acetylleucine is listed as one of many chemical components in a network pharmacology and chemical profiling study, with no quantitative pharmacokinetic parameters reported for it. |
+| PGx | Yue_2026 | not_relevant | 0 | 0 | The study is a network pharmacology and chemical profiling investigation of a traditional formula; it does not report any pharmacogenomic effects (gene variants affecting PK/PD) for acetylleucine. |
 
 
 </details>

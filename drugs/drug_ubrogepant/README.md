@@ -22,8 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2020_PF](drugs/drug_ubrogepant/pd_Li_2020_PF.md) | 2-hour pain freedom ← ubrogepant · direct Emax (saturable) effect | — | Li CC et al., Making Better Dose Decisions: Using Exp…, Clinical and translational… (2020) | [10.1111/cts.12730](https://doi.org/10.1111/cts.12730) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2020_PR](drugs/drug_ubrogepant/pd_Li_2020_PR.md) | 2-hour pain relief ← ubrogepant · direct Emax (saturable) effect | — | Li CC et al., Making Better Dose Decisions: Using Exp…, Clinical and translational… (2020) | [10.1111/cts.12730](https://doi.org/10.1111/cts.12730) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2020_PF](drugs/drug_ubrogepant/pd_Li_2020_PF.md) | 2-hour pain freedom ← ubrogepant · direct Emax (saturable) effect | — | Li CC et al., Making Better Dose Decisions: Using Exp…, Clinical and translational… (2020) | [10.1111/cts.12730](https://doi.org/10.1111/cts.12730) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2020_PR](drugs/drug_ubrogepant/pd_Li_2020_PR.md) | 2-hour pain relief ← ubrogepant · direct Emax (saturable) effect | — | Li CC et al., Making Better Dose Decisions: Using Exp…, Clinical and translational… (2020) | [10.1111/cts.12730](https://doi.org/10.1111/cts.12730) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

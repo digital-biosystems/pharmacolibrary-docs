@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Fleroxacin record lacks volume and elimination clearance, and both metabolites are orphan compartments.
+> No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Jiao2018_reference" status="rejected" stale="false" population="adults with cystic fibrosis and healthy adults" measured-compound="fleroxacin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -45,13 +45,13 @@ Jiao Y, Kim TH, Tao X, Kinzig M, Landersdorfer CB, Drescher SK et al. First popu
 
 ### Reviewer guidance
 
-**Fleroxacin record lacks volume and elimination clearance, and both metabolites are orphan compartments.**
+**No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record contains no distribution volume or elimination clearance for the parent drug, meaning it does not describe a full compartmental population pharmacokinetic model. Both N-oxide fleroxacin and N-demethylfleroxacin have a compartment count of zero, indicating they are orphan compartments with no path from the dose. A second reader identified additional parameters, including linear nonrenal clearance of 1.01, renal clearance of 1.12, and a volume of distribution of 0.81, that are missing from the record. Extracted — N-oxide fleroxacin: CLfm 0.378 L/h; N-demethylfleroxacin: CLfm 0.353 L/h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is fleroxacin's own; they describe N-oxide fleroxacin and N-demethylfleroxacin. Extracted — N-oxide fleroxacin: CLfm 0.378 L/h; N-demethylfleroxacin: CLfm 0.353 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has fleroxacin → n-oxide fleroxacin (metabolism); fleroxacin → n-demethylfleroxacin (metabolism), the second reading fleroxacin → n-oxide fleroxacin (metabolism); fleroxacin → n-demethyl fleroxacin (metabolism); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

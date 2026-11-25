@@ -205,7 +205,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 11 scholar param(s) emitted or defaulted | 11 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | parent_metabolite_hepatic → PK_3M_3C* | PK_3M_3C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.485, 0 of 1 reader(s) agree | 0.485 | cross-check disputed by a second reader: verdict disputed, agreement 0.485, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.485 (16 of 33 compared fields agree, 14 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.485 | cross-check contradicted by a second reader: verdict disputed; agreement 0.485 (16 of 33 compared fields agree, 14 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -221,8 +221,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_paliperidone/Paliperidone_Kozielska2012_reference/Paliperidone_Kozielska2012_reference_modelica.zip" download>Paliperidone_Kozielska2012_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_paliperidone/Paliperidone_Kozielska2012_reference/Paliperidone_Kozielska2012_reference_fmi.zip" download>Paliperidone_Kozielska2012_reference_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PK_3M_3C.fmu" download>PK_3M_3C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_paliperidone/Paliperidone_Kozielska2012_reference/Paliperidone_Kozielska2012_reference_modelica.zip" download>Paliperidone_Kozielska2012_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_paliperidone/Paliperidone_Kozielska2012_reference/Paliperidone_Kozielska2012_reference_fmi.zip" download>Paliperidone_Kozielska2012_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_3M_3C.fmu" download>PK_3M_3C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_paliperidone/Paliperidone_Kozielska2012_reference/Paliperidone_Kozielska2012_reference_matlab.zip" download>Paliperidone_Kozielska2012_reference_matlab.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_paliperidone/Paliperidone_Kozielska2012_reference/Paliperidone_Kozielska2012_reference_sbml.zip" download>Paliperidone_Kozielska2012_reference_sbml.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>

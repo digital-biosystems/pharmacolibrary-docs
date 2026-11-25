@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because 5-FU is an orphan metabolite with no dose path, and Tegafur's clearance parameter lacks a valid numeric value.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="tegafur" model-id="Tegafur_Hirose2010_reference" status="rejected" stale="false" population="Japanese patients with advanced cancer" measured-compound="tegafur" parameterization="apparent" topology="general_linear"></div>
 
@@ -52,13 +52,13 @@ Hirose T, Fujita K, Nishimura K, Ishida H, Yamashita K, Sunakawa Y et al. Pharma
 
 ### Reviewer guidance
 
-**The model was rejected because 5-FU is an orphan metabolite with no dose path, and Tegafur's clearance parameter lacks a valid numeric value.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The 5-FU metabolite is linked to Tegafur via an undefined parameter, meaning it has no path from the dose and is structurally orphaned. Furthermore, the Tegafur clearance parameter is recorded with the value 80.5 ml/min, but its associated unit label is a missing range rather than a valid unit. Consequently, the clearance value could not be converted to SI units, leaving the parameter as an unquantified placeholder. The second reader disagreed on multiple field assignments, including the model's parameterization type and the mapping of specific parameter values to their labels. Extracted — tegafur: Fab 20.3, CL 80.5 (39-174), kabs 1.2 174.6, V/F 38.8 24.6.
+A reported unit could not be converted (CL, kabs and V/F), so that value has no SI equivalent. Extracted — tegafur: Fab 20.3, CL 80.5 (39-174), kabs 1.2 174.6, V/F 38.8 24.6.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has S-1, the second reading tegafur; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

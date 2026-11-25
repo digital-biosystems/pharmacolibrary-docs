@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;cetuximab&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/&quot;},{&quot;label&quot;:&quot;Grisic_2020 \u00b7 tvarcl&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cetuximab_Azzopardi2011_reference&quot;,&quot;label&quot;:&quot;Azzopardi_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Azzopardi2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Cognetti2026_reference&quot;,&quot;label&quot;:&quot;Cognetti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Grisic2020_tvarcl&quot;,&quot;label&quot;:&quot;Grisic_2020_tvarcl&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Grisic2020_tvarcl.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cetuximab_Pointreau2016_reference&quot;,&quot;label&quot;:&quot;Pointreau_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Yang2026_reference&quot;,&quot;label&quot;:&quot;Yang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cetuximab_Azzopardi2011_reference&quot;,&quot;label&quot;:&quot;Azzopardi_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Azzopardi2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Cognetti2026_reference&quot;,&quot;label&quot;:&quot;Cognetti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Grisic2020_tvarcl&quot;,&quot;label&quot;:&quot;Grisic_2020_tvarcl&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Grisic2020_tvarcl.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cetuximab_Pointreau2016_reference&quot;,&quot;label&quot;:&quot;Pointreau_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Yang2026_reference&quot;,&quot;label&quot;:&quot;Yang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cetuximab — `Cetuximab_Grisic2020_tvarcl`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Grisic2020_tvarcl" status="simulated" stale="false" population="adults with metastatic colorectal cancer" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></div>
+> cross_check_disputed; x1_cross_check.
+
+<div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Grisic2020_tvarcl" status="needs_review" stale="false" population="adults with metastatic colorectal cancer" measured-compound="cetuximab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Grisic AM, Khandelwal A, Bertolino M, Huisinga W, Girard P, Kloft C. Semimechanistic Clearance Models of Oncology Biotherapeutics and Impact of Study Design: Cetuximab as a Case Study. CPT: pharmacometrics & systems pharmacology 9(11):628–638 (2020).
@@ -29,6 +31,8 @@ Grisic AM, Khandelwal A, Bertolino M, Huisinga W, Girard P, Kloft C. Semimechani
 <figure class="pk-models-diagram"><img src="drugs/drug_cetuximab/Cetuximab_Grisic2020_tvarcl/Cetuximab_Grisic2020_tvarcl.svg" alt="Cetuximab_Grisic2020_tvarcl diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | LCL, L/h (RSE%) | CL | 0.0262 | L/h |
@@ -39,7 +43,7 @@ Grisic AM, Khandelwal A, Bertolino M, Huisinga W, Girard P, Kloft C. Semimechani
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +53,13 @@ Grisic AM, Khandelwal A, Bertolino M, Huisinga W, Girard P, Kloft C. Semimechani
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**cross_check_disputed; x1_cross_check.**
 
-A reported unit could not be converted (equation variable), so that value has no SI equivalent.
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — cetuximab: CL 0.0262 L/h, V1 3.67 L, Q 0.0282 L/h, V2 1.65 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of lcl: this record has 0.0262, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -101,6 +107,32 @@ A reported unit could not be converted (equation variable), so that value has no
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
+
+<details><summary>6 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[lcl]` | 0.0262 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[nonlinear cl at c max]` |  | 0.00409 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | 0.0282 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 50]` | 7.26 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 1]` | 3.67 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 2]` | 1.65 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -120,17 +152,17 @@ A reported unit could not be converted (equation variable), so that value has no
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=cetuximab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | skipped |  |  | no second reading of this record |
-| T1_cmax | reference | skipped | 0.00409 | 0.002305 | unresolved concentration unit (exp 'L/h', sim 'kg/m3') |
-| T1_cmin_ss | reference | skipped | 0.0139 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable |  | pass | C_central (measured=cetuximab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | no second reader contradicts | verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped | 0.00409 | 0.002305 |  | unresolved concentration unit (exp 'L/h', sim 'kg/m3') |
+| T1_cmin_ss | reference | skipped | 0.0139 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

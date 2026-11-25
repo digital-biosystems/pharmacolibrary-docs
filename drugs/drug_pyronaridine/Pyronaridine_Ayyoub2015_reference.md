@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Pyronaridine CL/F of 377 liters/day yields a 6.88-day terminal half-life, conflicting with the paper's 295-day value.
+> The model does not reproduce the paper's terminal half-life (paper 295, model 6.88); the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="Pyronaridine" model-id="Pyronaridine_Ayyoub2015_reference" status="needs_review" stale="false" population="pediatric malaria patients younger than 16 years with uncomplicated malaria" measured-compound="pyronaridine" parameterization="apparent" topology="1C"></div>
 
@@ -62,13 +62,13 @@ Ayyoub A, Methaneethorn J, Ramharter M, Djimde AA, Tekete M, Duparc S et al. Pop
 
 ### Reviewer guidance
 
-**Pyronaridine CL/F of 377 liters/day yields a 6.88-day terminal half-life, conflicting with the paper's 295-day value.**
+**The model does not reproduce the paper's terminal half-life (paper 295, model 6.88); the covariate scenarios were not simulated (+1 more).**
 
-The simulated terminal half-life deviates significantly from the published report, indicating a structural or parameter mismatch. A second reader disputes the extraction of the age covariate effect on V3/F and the dose compound identity. Additionally, covariate effects defined in the record were not exercised during simulation. Extracted — pyronaridine: CL/F 377 liters/day, V2/F 2.23e+03 liters, V3/F 3.23e+03 liters, Q/F 804 liters/day, kabs 17.9 day−1, V/F 156 L.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — pyronaridine: CL/F 377 liters/day, V2/F 2.23e+03 liters, V3/F 3.23e+03 liters, Q/F 804 liters/day, kabs 17.9 day−1, V/F 156 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pyronaridine (as pyronaridine tetraphosphate, Pyramax granules with artesunate), the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -183,8 +183,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.529, 0 of 1 reader(s) agree | 0.529 | cross-check disputed by a second reader: verdict disputed, agreement 0.529, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | fail | 295.2 | 6.884 | 0.0233 | days→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.529 (9 of 17 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.529 | cross-check contradicted by a second reader: verdict disputed; agreement 0.529 (9 of 17 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | fail | 295.2 | 6.884 | 0.0233 | reported 12.3 days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

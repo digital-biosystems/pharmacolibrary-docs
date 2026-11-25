@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Begg_1990_ACE_inhibition](drugs/drug_quinapril/pd_Begg_1990_ACE_inhibition.md) | ACE inhibition ← quinaprilat · direct sigmoid Emax (Hill) effect | — | Begg EJ et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (1990) | [10.1111/j.1365-2125.1990.tb03767.x](https://doi.org/10.1111/j.1365-2125.1990.tb03767.x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Begg_1990_ACE_inhibition](drugs/drug_quinapril/pd_Begg_1990_ACE_inhibition.md) | ACE inhibition ← quinaprilat · direct sigmoid Emax (Hill) effect | — | Begg EJ et al., The pharmacokinetics and pharmacodynami…, British journal of clinical… (1990) | [10.1111/j.1365-2125.1990.tb03767.x](https://doi.org/10.1111/j.1365-2125.1990.tb03767.x) |
 
 ## Pharmacogenomics (PGx)
 
@@ -50,7 +50,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:15 | 2:13 | 0/0/0 | 1/0/0 | 0/0/2 | 53,318/2,408 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 8/6 | 0/7 | 0 |
+| 2026-10-07 07:15 | 2:13 | 0/0/0 | 0/1/0 | 0/0/2 | 53,318/2,408 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 8/6 | 0/7 | 0 |
 
 ## Coverage
 

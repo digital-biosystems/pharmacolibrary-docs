@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Methyprylon's absorption rate constant lacks a reported value, forcing reliance on unverified library defaults for the model.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="methyprylon" model-id="Methyprylon_Gwilt1985_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="methyprylon" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Gwilt PR, Pankaskie MC, Thornburg JE, Zustiak R, Shoenthal DR. Pharmacokinetics 
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = 10.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -39,7 +39,7 @@ Gwilt PR, Pankaskie MC, Thornburg JE, Zustiak R, Shoenthal DR. Pharmacokinetics 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,19 +49,19 @@ Gwilt PR, Pankaskie MC, Thornburg JE, Zustiak R, Shoenthal DR. Pharmacokinetics 
 
 ### Reviewer guidance
 
-**Methyprylon's absorption rate constant lacks a reported value, forcing reliance on unverified library defaults for the model.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record was constructed solely from the paper's abstract, where absorption kinetics were not reported, leading the builder to default the absorption rate constant and lag time. This resulted in a 'needs review' verdict because the simulated early profile depends on invented absorption parameters rather than measured data. Additionally, the model uses steady-state volume of distribution in place of central volume, which fails to capture the early distribution phase. Extracted — methyprylon: t1/2z 9.2 h, CL/F 11.9 mL/h/kg, Vss 0.97 L/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — methyprylon: t1/2z 9.2 h, CL/F 11.9 mL/h/kg, Vss 0.97 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent clearance: this record has 11.91, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| half-life | `Q57` · t1/2z | 9.2 | h | 3.312e+04 | s | h | llm (0.6) | Gwilt_1985:abstract |
+| half-life | `Q57` · t1/2z | 9.2 | h | 3.312e+04 | s | h | half_life_rule (0.95) | Gwilt_1985:abstract |
 | apparent clearance | `Q27` · CL/F | 11.91 | mL/h/kg | 2.316e-07 | m3/s | ml/(h·kg) | exact (1) | Gwilt_1985:abstract |
 | apparent steady-state volume of distribution | `Q65` · Vss | 0.97 | L/kg | 0.0679 | m3 | l/kg | llm_corrected (0.6) | Gwilt_1985:abstract |
 
@@ -88,23 +88,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>4 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[apparent clearance,]` |  | 11.91 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent clearance]` | 11.91 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent steady-state volume of distribution,]` |  | 0.97 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent steady-state volume of distribution]` | 0.97 |  | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -129,16 +120,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=methyprylon) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.556, 0 of 1 reader(s) agree | 0.556 | a second reader did not contradict the extraction |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=methyprylon) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -154,7 +145,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_methyprylon/Methyprylon_Gwilt1985_reference/Methyprylon_Gwilt1985_reference_modelica.zip" download>Methyprylon_Gwilt1985_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_methyprylon/Methyprylon_Gwilt1985_reference/Methyprylon_Gwilt1985_reference_modelica.zip" download>Methyprylon_Gwilt1985_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_methyprylon/Methyprylon_Gwilt1985_reference/Methyprylon_Gwilt1985_reference_fmi.zip" download>Methyprylon_Gwilt1985_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_methyprylon/Methyprylon_Gwilt1985_reference/Methyprylon_Gwilt1985_reference_matlab.zip" download>Methyprylon_Gwilt1985_reference_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_methyprylon/Methyprylon_Gwilt1985_reference/Methyprylon_Gwilt1985_reference_matlab_simbio.zip" download>Methyprylon_Gwilt1985_reference_matlab_simbio.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
@@ -218,4 +209,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethyprylon%5D%20Methyprylon_Gwilt1985_reference&body=Drug%3A%20methyprylon%0ARecord%3A%20Methyprylon_Gwilt1985_reference%0APaper%3A%20Gwilt_1985%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methyprylon/Methyprylon_Gwilt1985_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 21:41 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:02 UTC</sub>

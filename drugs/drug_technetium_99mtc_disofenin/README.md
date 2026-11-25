@@ -29,7 +29,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:22 | 0:16 | 0/0/0 | 0/0/0 | 0/0/0 | 6,854/580 | openai / gpt-6-luna | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 07:24 | 0:04 | 0/0/0 | 0/0/0 | 0/0/0 | 4,377/173 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -46,14 +46,20 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Michael_2006.pdf` | Michael M et al., Relationship of hepatic functional imag…, Journal of clinical oncolog… (2006) | pgx | 8 | [10.1200/JCO.2005.04.8496](https://doi.org/10.1200/JCO.2005.04.8496) | [16896007](https://www.ncbi.nlm.nih.gov/pubmed/16896007) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 
-<sub>queue written 2026-10-07 19:22 UTC</sub>
+<sub>queue written 2026-11-24 07:24 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Michael_2006 | not_relevant | 0 | 0 | The reported ABCB1 genotype association is with MIBI excretion, not a pharmacokinetic or pharmacodynamic parameter of technetium-99m disofenin. |
-| popPK | Métayer_2004 | irrelevant | 1 | 0 | Technetium-99m disofenin is only a tracer for measuring meal emptying, not the subject of a PK study, and no numeric PK parameter values are provided. |
+| popPK | Charearnrad_2003 | irrelevant | 1 | 0 | The study uses technetium-99m DISIDA (diisopropyl iminodiacetic acid) as a diagnostic imaging agent to evaluate diagnostic accuracy, not to model the pharmacokinetics of disofenin. |
+| PGx | Charearnrad_2003 | not_relevant | 0 | 0 | The paper investigates the diagnostic accuracy of a nuclear medicine scan (99mTc-DISIDA) and the effect of phenobarbital premedication on that accuracy in infants, reporting no pharmacogenomic effect on the PK/PD of the radiopharmaceutical itself. |
+| popPK | Michael_2006 | irrelevant | 0 | 0 | 99mTc-Disofenin is used as a diagnostic imaging probe to assess hepatic function, not as the subject drug for which pharmacokinetic parameters (CL, V, ka, etc.) are reported. |
+| PGx | Michael_2006 | not_relevant | 0 | 0 | The drug technetium_99mtc_disofenin is used as a diagnostic imaging probe to assess hepatic function, whereas the pharmacokinetic parameters (SN-38 AUC) and genetic associations (ABCB1/UGT1A1) are reported for the drug irinotecan. |
+| popPK | Métayer_2004 | irrelevant | 0 | 0 | The study uses 99mTc-disofenin as a radiolabeling agent to measure gastric emptying in horses, rather than studying the pharmacokinetics of the drug itself as the subject of interest. |
+| PGx | Métayer_2004 | not_relevant | 0 | 0 | The study investigates the effect of meal size and composition on gastric emptying in horses and does not report any pharmacogenomic effects. |
+| popPK | Rubow_1994 | irrelevant | 0 | 0 | The study does not include technetium-99mtc_disofenin (it lists DISIDA, not disofenin) and focuses on breast milk excretion/dosimetry rather than formal PK parameter estimation (CL, V) for the target drug. |
+| PGx | Rubow_1994 | not_relevant | 0 | 0 | The paper discusses radiopharmaceutical excretion in breast milk and does not investigate genetic variants or pharmacogenomic effects on PK/PD parameters. |
 
 
 </details>

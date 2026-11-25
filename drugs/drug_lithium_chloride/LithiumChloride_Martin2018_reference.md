@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The lithium concentration parameter C0 (2.19 mmol/L) was rejected due to a dimensional mismatch against the mass-based clearance unit.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit mmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q74 unit mmol/L min ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="lithium chloride" model-id="LithiumChloride_Martin2018_reference" status="rejected" stale="false" population="healthy adult horses" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
@@ -19,7 +19,7 @@ Martin LM, Bukoski AD, Whelchel DD, Evans TJ, Wiedmeyer CE, Black SJ et al. Phar
 
 **Population:** healthy adult horses · condition healthy · age group adult · n = 8.
 
-**Dosed compound ≠ measured compound:** dosed lithium chloride, measured lithium.
+**Dosed compound ≠ measured compound:** dosed lithium_chloride, measured lithium.
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -35,16 +35,16 @@ Martin LM, Bukoski AD, Whelchel DD, Evans TJ, Wiedmeyer CE, Black SJ et al. Phar
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| plasma Li+ concentration at time zero | C0 | 2.19 | mmol/L |
+| plasma Li+ concentration at time zero | Ct | 2.19 | mmol/L |
 | terminal elimination half-life | t1/2z | 25.68 | h |
-| area under the plasma concentration-time curve from time zero to the limit of quantification | AUClast | 550 | h*ng/mL |
+| area under the plasma concentration-time curve from time zero to the limit of quantification | AUClast | 550 | mmol/L min |
 | clearance | CL | 0.273 | mL/min/kg |
 | mean residence time | MRT | 31.22 | h |
 | volume of distribution at steady state | Vss | 511 | mL/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.909). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,21 +54,21 @@ Martin LM, Bukoski AD, Whelchel DD, Evans TJ, Wiedmeyer CE, Black SJ et al. Phar
 
 ### Reviewer guidance
 
-**The lithium concentration parameter C0 (2.19 mmol/L) was rejected due to a dimensional mismatch against the mass-based clearance unit.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit mmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q74 unit mmol/L min ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The record was built from the abstract alone, so summary statistics stood in for a fitted model. The second reader disagreed on the dose compound spelling and expected an interconversion link that was missing from the structure. Extracted — lithium chloride: C0 2.19 mmol/L, t1/2z 25.7 h, AUClast 550 h*ng/mL, CL 0.273 mL/min/kg, MRT 31.2 h, Vss 511 mL/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lithium chloride: Ct 2.19 mmol/L, t1/2z 25.7 h, AUClast 550 mmol/L min, CL 0.273 mL/min/kg, MRT 31.2 h, Vss 511 mL/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lithium chloride, the second reading lithium_chloride; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[plasma li+ concentration at time zero].parameter_id`: this record has Q75, the second reading Q86. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| plasma Li+ concentration at time zero | `Q86` · C0 | 2.19 | mmol/L |  |  | mM/l | llm (0.6) | Martin_2018:abstract |
-| terminal elimination half-life | `Q57` · t1/2z | 25.68 | h | 9.245e+04 | s | h | llm (0.6) | Martin_2018:abstract |
-| area under the plasma concentration-time curve from time zero to the limit of quantification | `Q74` · AUClast | 550 | h*ng/mL |  |  | h*ng/mL | llm (0.6) | Martin_2018:abstract |
+| plasma Li+ concentration at time zero | `Q75` · Ct | 2.19 | mmol/L |  |  | mM/l | llm (0.6) | Martin_2018:abstract |
+| terminal elimination half-life | `Q57` · t1/2z | 25.68 | h | 9.245e+04 | s | h | half_life_rule (0.95) | Martin_2018:abstract |
+| area under the plasma concentration-time curve from time zero to the limit of quantification | `Q74` · AUClast | 550 | mmol/L min |  |  | mM/(min·l) | llm (0.6) | Martin_2018:abstract |
 | clearance | `Q22` · CL | 0.273 | mL/min/kg | 3.185e-07 | m3/s | ml/(min·kg) | exact (1) | Martin_2018:abstract |
 | mean residence time | `Q53` · MRT | 31.22 | h | 1.124e+05 | s | h | exact (1) | Martin_2018:abstract |
 | volume of distribution at steady state | `Q65` · Vss | 511 | mL/kg | 0.03577 | m3 | ml/kg | llm_corrected (0.6) | Martin_2018:abstract |
@@ -81,9 +81,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'plasma Li+ concentration at time zero' → Q86 (unit '[substance] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- unit_dimension_unknown: 'mmol/L min' (AUClast)
-- implicit units: 'area under the plasma concentration-time curve from time zero to the limit of quantification' → h*ng/mL (from the popPK convention: 'No unit stated in text or footnotes; AUC is conventionally reported as concentration x time (e.g., ng/mL x h), consisten')
+- unit_dimension_mismatch: 'plasma Li+ concentration at time zero' → Q75 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
+- unit_dimension_mismatch: 'area under the plasma concentration-time curve from time zero to the limit of quantification' → Q74 (unit '[substance] * [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lithium
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
@@ -97,18 +96,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.8 (8/10 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.909 (10/11 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['lithium_chloride', 'lithium', 'interconversion']] | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | lithium chloride | lithium_chloride | mismatch |
+| `gpt-oss-120b` | `parameters[plasma li+ concentration at time zero].parameter_id` | Q75 | Q86 | mismatch |
 
 </details>
 
@@ -129,8 +127,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q53 | pass | [time] |  | ['Martin_2018:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Martin_2018:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Martin_2018:abstract'] |
-| C5_dimension_Q74 | pass | [time] * [mass] / [length] ** 3 |  | ['Martin_2018:abstract'] |
-| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | mmol/L ([substance] / [length] ** 3) | ['Martin_2018:abstract'] |
+| C5_dimension_Q74 | fail | [mass] * [time] / [length] ** 3 | mmol/L min ([substance] * [time] / [length] ** 3) | ['Martin_2018:abstract'] |
+| C5_dimension_Q75 | fail | [mass] / [length] ** 3 | mmol/L ([substance] / [length] ** 3) | ['Martin_2018:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.273 | ['Martin_2018:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.15 L/h | ['Martin_2018:abstract'] |
@@ -158,4 +156,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blithium_chloride%5D%20LithiumChloride_Martin2018_reference&body=Drug%3A%20lithium_chloride%0ARecord%3A%20LithiumChloride_Martin2018_reference%0APaper%3A%20Martin_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lithium_chloride/LithiumChloride_Martin2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 22:46 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:05 UTC</sub>

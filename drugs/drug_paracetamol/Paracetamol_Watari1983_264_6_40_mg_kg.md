@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The model was rejected due to dimension mismatches in units for intercompartmental clearance, transfer rate, and Vmax parameters.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit μM ([length]) vs [mass] / [length] ** 3; Q30 unit min-1 (1 / [time]) vs [length] ** 3 / [time]; Q66 unit μmol/min/kg ([substance] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Watari1983_264_6_40_mg_kg" status="rejected" stale="false" population="rats" measured-compound="acetaminophen" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -66,13 +66,13 @@ Watari N, Iwai M, Kaneniwa N. Pharmacokinetic study of the fate of acetaminophen
 
 ### Reviewer guidance
 
-**The model was rejected due to dimension mismatches in units for intercompartmental clearance, transfer rate, and Vmax parameters.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit μM ([length]) vs [mass] / [length] ** 3; Q30 unit min-1 (1 / [time]) vs [length] ** 3 / [time]; Q66 unit μmol/min/kg ([substance] / [time]) vs [mass] / [time].**
 
-The intercompartmental clearance parameter is reported in min-1, which conflicts with the required volume/time dimension. The transfer rate constant also carries a min-1 unit, mismatching the expected volume/time dimension. Furthermore, the Vmax parameter is listed in μmol/min/kg, which does not align with the required mass/time dimension. Extracted — paracetamol: Ct 190 μM, A1 0.256 min-1, A2 0.0394 min-1, V 0.174 L/kg, Q 0.0506 min-1, kel 0.0523 min-1, CL 8.65 ml/min/kg, Vss 0.22 L/kg, … (+10).
+A reported unit could not be converted (Ct, A1, A2 and Q), so that value has no SI equivalent. Extracted — paracetamol: Ct 190 μM, A1 0.256 min-1, A2 0.0394 min-1, V 0.174 L/kg, Q 0.0506 min-1, kel 0.0523 min-1, CL 8.65 ml/min/kg, Vss 0.22 L/kg, … (+10).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has acetaminophen → acetaminophen sulfate (metabolism); acetaminophen → acetaminophen glucuronide (metabolism), the second reading acetaminophen → acetaminophen sulfate (metabolism); acetaminophen → acetaminophen glucuronide (metabolism); acetaminophen sulfate → acetaminophen (hydrolysis) …; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

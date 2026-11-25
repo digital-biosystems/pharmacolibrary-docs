@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The erythromycin record was rejected despite reporting clearance of 32.8 L/h, because the paper concerns another drug and bioavailability and lag time were defaulted.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="erythromycin" model-id="Erythromycin_Wen2026_reference" status="rejected" stale="false" population="" measured-compound="erythromycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Wen H, Sadiq MW, Fridén M, Hohlfeld JM, Friberg LE, Svensson EM. Informing Samp
 
 ### Reviewer guidance
 
-**The erythromycin record was rejected despite reporting clearance of 32.8 L/h, because the paper concerns another drug and bioavailability and lag time were defaulted.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-Neither the paper title nor abstract names erythromycin, and the paper was judged to concern another drug. The record reports erythromycin clearance of 32.8 L/h, volume of distribution of 211.0 L, and an absorption rate constant of 2.01 /h. Bioavailability and absorption lag time were defaulted rather than explicitly estimated. A second reader disputed the verdict, with agreement of 0.462 and 0 of 1 reader agreeing. Extracted — erythromycin: CL 32.8 L/h, V 211 L, kabs 2.01 /h.
+Extracted — erythromycin: CL 32.8 L/h, V 211 L, kabs 2.01 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q316: this record has none, the second reading 109; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.462, 0 of 1 reader(s) agree | 0.462 | cross-check disputed by a second reader: verdict disputed, agreement 0.462, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.462 (6 of 13 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.462 | cross-check contradicted by a second reader: verdict disputed; agreement 0.462 (6 of 13 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Nortriptyline total clearance and volume parameters were rejected as physiologically implausible for the rat population.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="nortriptyline" model-id="Nortriptyline_Usach2022_reference" status="rejected" stale="false" population="rats" measured-compound="nortriptyline" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Usach I, Di Marco S, Díez O, Alós M, Peris JE. The Usefulness of In Vitro Perc
 
 ### Reviewer guidance
 
-**Nortriptyline total clearance and volume parameters were rejected as physiologically implausible for the rat population.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a total clearance of 1580 mL/h and a terminal volume of distribution of 1568 mL. These magnitudes fall outside the physiological window for the rat population, indicating a unit or scale extraction error. A second reader could not verify the absorption rate constant or lag time values. Extracted — nortriptyline: CL 1.58e+03 mL/h, V1 488 mL, V 1.57e+03 mL, kabs 0.24 h−1, tlag 1.33 h.
+Extracted — nortriptyline: CL 1.58e+03 mL/h, V1 488 mL, V 1.57e+03 mL, kabs 0.24 h−1, tlag 1.33 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 0.24, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

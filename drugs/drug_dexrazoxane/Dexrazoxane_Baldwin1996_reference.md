@@ -4,11 +4,11 @@
 
 # dexrazoxane — `Dexrazoxane_Baldwin1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Dexrazoxane clearance and partition ratio parameters carry volume units instead of their required dimensions.
+> Only volume was extracted — no clearance.
 
-<div class="pk-model-meta" hidden drug="dexrazoxane" model-id="Dexrazoxane_Baldwin1996_reference" status="rejected" stale="false" population="male beagle dogs" measured-compound="dexrazoxane" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dexrazoxane" model-id="Dexrazoxane_Baldwin1996_reference" status="needs_review" stale="false" population="male beagle dogs" measured-compound="dexrazoxane" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Baldwin JR, Lewis RC, Phillips BA, Overmyer SK, Hatfield NZ, Narang PK. Dose-independent pharmacokinetics of the cardioprotective agent dexrazoxane in dogs. Biopharmaceutics & drug disposition 17(6):541–550 (1996).
@@ -24,26 +24,22 @@ Baldwin JR, Lewis RC, Phillips BA, Overmyer SK, Hatfield NZ, Narang PK. Dose-ind
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 8 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | apparent steady-state distribution volume | Vss | 0.67 | L kg-1 |
-| CL was dose independent (ANOVA, p | CL | 0.33 | CL |
-| directly proportional to the dose (r | AUC/dose | 0.999 | CL |
-| blood cell to plasma partitioning ratio | Kp | 0.517 | CL |
+| blood cell to plasma partitioning ratio | Kp | 0.517 |  |
 | fu | fu | 0.95 |  |
-| hepatic drug extraction ratios | EH | 0.228 | CL |
-| renal drug extraction ratios | E | 0.184 | CL |
-| V | V | 14.6 | L |
+| hepatic and renal drug extraction ratios | EH | 0.228 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.412). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.583). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,53 +49,44 @@ Baldwin JR, Lewis RC, Phillips BA, Overmyer SK, Hatfield NZ, Narang PK. Dose-ind
 
 ### Reviewer guidance
 
-**Dexrazoxane clearance and partition ratio parameters carry volume units instead of their required dimensions.**
+**Only volume was extracted — no clearance.**
 
-The total clearance and blood cell-to-plasma partitioning ratio are both assigned the unit L, which physically denotes volume. These quantities require dimensions of volume per time and a dimensionless ratio, respectively. The record was constructed from the abstract alone, so these reported summary statistics stand in for a fitted model. Extracted — dexrazoxane: Vss 0.67 L kg-1, CL 0.33 CL, AUC/dose 0.999 CL, Kp 0.517 CL, fu 0.95, EH 0.228 CL, E 0.184 CL, V 14.6 L.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dexrazoxane: Vss 0.67 L kg-1, Kp 0.517, fu 0.95, EH 0.228.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl was dose independent (anova, p: this record has 0.33, the second reading none; it also differs on 9 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of gfr: this record has none, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | apparent steady-state distribution volume | `Q65` · Vss | 0.67 | L kg-1 | 0.0469 | m3 | l/kg | llm_corrected (0.6) | Baldwin_1996:abstract |
-| CL was dose independent (ANOVA, p | `Q22` · CL | 0.33 | CL |  |  | cl | llm_confirmed (0.6) | Baldwin_1996:abstract |
-| directly proportional to the dose (r | `Q189` · AUC/dose | 0.999 | CL |  |  | cl | llm (0.6) | Baldwin_1996:abstract |
-| blood cell to plasma partitioning ratio | `Q410` · Kp | 0.517 | CL |  |  | cl | llm (0.6) | Baldwin_1996:abstract |
-| fu | `Q46` · fu | 0.95 |  |  |  |  | exact (1) | Baldwin_1996:abstract |
-| hepatic drug extraction ratios | `Q39` · EH | 0.228 | CL |  |  | cl | llm (0.6) | Baldwin_1996:abstract |
-| renal drug extraction ratios | `Q38` · E | 0.184 | CL |  |  | cl | llm (0.6) | Baldwin_1996:abstract |
-| V | `Q61` · V | 14.6 | L | 0.0146 | m3 | L | review_gapfill (0.7) | Mody_2023_2:review |
+| blood cell to plasma partitioning ratio | `Q410` · Kp | 0.517 |  |  |  |  | llm (0.6) | Baldwin_1996:abstract |
+| fu | `Q46` · fu | 0.95 |  | 0.95 |  |  | exact (1) | Baldwin_1996:abstract |
+| hepatic and renal drug extraction ratios | `Q39` · EH | 0.228 |  | 0.228 |  |  | llm (0.6) | Baldwin_1996:abstract, Baldwin_1996:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| terminal half-life | Q57 | half_life_rule |
+| systemic clearance (CL) | Q22 | llm_confirmed |
+| GFR | Q30 | llm |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'terminal half-life'
-- dropped value-less row: 'systemic clearance (CL)' (captured trailing unit 'CL' for child rows)
-- dropped value-less row: 'glomerular filtration rate (GFR'
-- unit 'CL' inherited from a section-header row for CL (not printed on this row itself) — see the unit_dimension_mismatch check below if this is wrong
-- unit_dimension_mismatch: 'CL was dose independent (ANOVA, p' → Q22 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
-- unit 'CL' inherited from a section-header row for AUC/dose (not printed on this row itself) — see the unit_dimension_mismatch check below if this is wrong
-- unit_dimension_mismatch: 'directly proportional to the dose (r' → Q189 (unit '[length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- unit 'CL' inherited from a section-header row for Kp (not printed on this row itself) — see the unit_dimension_mismatch check below if this is wrong
-- unit_dimension_mismatch: 'blood cell to plasma partitioning ratio' → Q410 (unit '[length] ** 3' vs ontology 'dimensionless') — route to review
-- unit 'CL' inherited from a section-header row for EH (not printed on this row itself) — see the unit_dimension_mismatch check below if this is wrong
-- unit 'CL' inherited from a section-header row for E (not printed on this row itself) — see the unit_dimension_mismatch check below if this is wrong
+- dropped unlinked row (NIL): 'ANOVA, p' — extend the ontology if this is a real PK parameter (source ['Baldwin_1996:abstract'])
+- dropped duplicate Q30 ('r', value None) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dexrazoxane
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Mody_2023_2's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Baldwin_1996_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
@@ -107,26 +94,21 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.412 (7/17 fields) | 10 |
+| `gpt-oss-120b` | partly confirmed | 0.583 (7/12 fields) | 5 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl was dose independent (anova, p]` | 0.33 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[directly proportional to the dose (r]` | 0.999 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[dose]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[gfr]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[hepatic and renal drug extraction ratios]` | 0.228 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[hepatic drug extraction ratio]` |  | 0.228 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[hepatic drug extraction ratios]` | 0.228 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[renal drug extraction ratios]` | 0.184 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[systemic clearance]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[terminal half-life]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v]` | 14.6 |  | only_one_extracted |
 
 </details>
 
@@ -140,17 +122,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 7 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q189 | fail | [mass] * [time] / [length] ** 3 | CL ([length] ** 3) | ['Baldwin_1996:abstract'] |
-| C5_dimension_Q22 | fail | [length] ** 3 / [time] | CL ([length] ** 3) | ['Baldwin_1996:abstract'] |
-| C5_dimension_Q410 | fail | dimensionless | CL ([length] ** 3) | ['Baldwin_1996:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Mody_2023_2:review'] |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Baldwin_1996:abstract'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Baldwin_1996:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Baldwin_1996:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Baldwin_1996:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.33 | ['Baldwin_1996:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 14.6 L | ['Mody_2023_2:review'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 46.9 L | ['Baldwin_1996:abstract'] |
 
 <details class="legend">
@@ -163,9 +142,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -175,4 +164,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdexrazoxane%5D%20Dexrazoxane_Baldwin1996_reference&body=Drug%3A%20dexrazoxane%0ARecord%3A%20Dexrazoxane_Baldwin1996_reference%0APaper%3A%20Baldwin_1996%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dexrazoxane/Dexrazoxane_Baldwin1996_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 19:00 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:37 UTC</sub>

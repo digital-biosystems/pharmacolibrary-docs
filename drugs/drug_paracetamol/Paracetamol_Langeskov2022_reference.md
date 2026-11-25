@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Paracetamol's clearance, volume, lag time, and inter-compartmental clearance were left at library placeholders because all extracted parameters described atorvastatin instead.
+> No value for paracetamol's clearance, volume of distribution, absorption lag time and central→peripheral rate constant — all 8 extracted parameters describe atorvastatin, not paracetamol; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Langeskov2022_reference" status="model_quarantined" stale="false" population="healthy obese adults" measured-compound="paracetamol" parameterization="apparent" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Langeskov EK, Kristensen K. Population pharmacokinetic of paracetamol and atorva
 
 ### Reviewer guidance
 
-**Paracetamol's clearance, volume, lag time, and inter-compartmental clearance were left at library placeholders because all extracted parameters described atorvastatin instead.**
+**No value for paracetamol's clearance, volume of distribution, absorption lag time and central→peripheral rate constant — all 8 extracted parameters describe atorvastatin, not paracetamol; the covariate scenarios were not simulated (+1 more).**
 
-The record lists eight parameters, all attributed to atorvastatin, including a clearance of 620 L/h and a central volume of 1843 L, leaving paracetamol's key structural parameters undefined. Consequently, the model builder relied on default values for paracetamol's clearance, volume of distribution, absorption lag time, and inter-compartmental clearance, triggering a quarantine. Additionally, covariate scenarios were not simulated, as only the reference individual was evaluated despite the record defining covariate effects. Extracted — atorvastatin: kabs 9.4 h−1, ktr 7.28 h−1, V1/F 1.84e+03 L, CL/F 620 L/h, V2/F 4.18e+03 L, Q2/F 873 L/h, Q/F 199 L/h, tlag 0.16 h.
+The model was built, but paracetamol's clearance, volume of distribution, absorption lag time and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — atorvastatin: kabs 9.4 h−1, ktr 7.28 h−1, V1/F 1.84e+03 L, CL/F 620 L/h, V2/F 4.18e+03 L, Q2/F 873 L/h, Q/F 199 L/h, tlag 0.16 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paracetamol, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

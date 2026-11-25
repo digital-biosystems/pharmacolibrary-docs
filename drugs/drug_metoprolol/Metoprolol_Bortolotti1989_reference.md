@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> Total plasma clearance for metoprolol in Bortolotti_1989 has units of 1/h/kg, which are dimensionally inconsistent with volume per time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit 1/h/kg (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="metoprolol" model-id="Metoprolol_Bortolotti1989_reference" status="rejected" stale="false" population="rabbits with liver failure" measured-compound="metoprolol" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Bortolotti A, Castelli D, Verotta D, Bonati M. Pharmacokinetic and pharmacodynam
 
 ### Reviewer guidance
 
-**Total plasma clearance for metoprolol in Bortolotti_1989 has units of 1/h/kg, which are dimensionally inconsistent with volume per time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit 1/h/kg (1 / [time]) vs [length] ** 3 / [time].**
 
-The extracted total plasma drug clearance value of 3.7 uses the unit 1/h/kg, which represents inverse time per mass rather than the required volume per time. This dimensional conflict on a structural parameter caused the record to be rejected. The second reader also noted a discrepancy in the missing dose parameter and the clearance identifier. Extracted — metoprolol: fu 32 %, CL 3.7 1/h/kg, MRT 0.77 h, AUC 0.9 mg h/l, kel 3.17 h-1, Ae 1.5 % of the administered dose.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — metoprolol: fu 32 %, CL 3.7 1/h/kg, MRT 0.77 h, AUC 0.9 mg h/l, kel 3.17 h-1, Ae 1.5 % of the administered dose.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 3.2; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

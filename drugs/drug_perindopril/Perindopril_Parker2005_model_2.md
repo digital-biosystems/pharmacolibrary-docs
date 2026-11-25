@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Perindoprilat intercompartmental clearance was extracted with a rate constant unit of h-1, conflicting with its volume clearance dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit h -1 (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="perindopril" model-id="Perindopril_Parker2005_model_2" status="rejected" stale="false" population="normal volunteers and patients" measured-compound="perindoprilat" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Parker E, Aarons L, Rowland M, Resplandy G. The pharmacokinetics of perindoprila
 
 ### Reviewer guidance
 
-**Perindoprilat intercompartmental clearance was extracted with a rate constant unit of h-1, conflicting with its volume clearance dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit h -1 (1 / [time]) vs [length] ** 3 / [time].**
 
-The parameter labeled k12 (1.3 h-1) represents apparent intercompartmental clearance, which requires volumetric units, but was recorded with a first-order rate unit. This dimension mismatch prevented conversion to SI units, causing the structural check to fail. Consequently, the pharmacokinetic model for perindoprilat was rejected due to incompatible parameter definitions. Extracted — perindoprilat: Bmax 0.95 g L -1, Fab 426, V 6.4 L, CLm/F 7 L h -1, Q 1.3 h -1.
+A reported unit could not be converted (Bmax and Q), so that value has no SI equivalent. None of the extracted parameters is perindopril's own; they describe perindoprilat. Extracted — perindoprilat: Bmax 0.95 g L -1, Fab 426, V 6.4 L, CLm/F 7 L h -1, Q 1.3 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has perindopril, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

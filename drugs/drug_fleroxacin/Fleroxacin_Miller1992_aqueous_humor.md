@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> The fleroxacin record lacks clearance and volume parameters, and its Cmax unit pg/mi is dimensionally invalid.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit pg/mi ([mass] / [length]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Miller1992_aqueous_humor" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Miller MH, Madu A, Samathanam G, Rush D, Madu CN, Mathisson K et al. Fleroxacin 
 
 ### Reviewer guidance
 
-**The fleroxacin record lacks clearance and volume parameters, and its Cmax unit pg/mi is dimensionally invalid.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit pg/mi ([mass] / [length]) vs [mass] / [length] ** 3.**
 
-The extraction omits distribution volume and clearance, meaning the record describes an exposure/outcome study rather than a compartmental model. The Cmax value of 1.54 pg/mi is dimensionally incorrect for a concentration. Additionally, a second reader identified a plasma penetration value of 27.109 that is missing from this record. Extracted — fleroxacin: t1/2α 3.21 h, AUC 7.96 mg·h/L, Cmax 1.54 pg/mi, tmax 0.503 h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent. Extracted — fleroxacin: t1/2α 3.21 h, AUC 7.96 mg·h/L, Cmax 1.54 pg/mi, tmax 0.503 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of % penetration: this record has none, the second reading 27.109; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

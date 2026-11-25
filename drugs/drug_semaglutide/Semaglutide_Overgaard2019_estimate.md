@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the unit for the intercompartmental clearance parameter was recorded as time, conflicting with its required dimension of volume per time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ka ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2019_estimate" status="rejected" stale="false" population="healthy adults and adults with type 2 diabetes" measured-compound="semaglutide" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Overgaard RV, Delff PH, Petri KCC, Anderson TW, Flint A, Ingwersen SH. Populatio
 
 ### Reviewer guidance
 
-**The record was rejected because the unit for the intercompartmental clearance parameter was recorded as time, conflicting with its required dimension of volume per time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ka ([time]) vs 1 / [time].**
 
-The review flagged a dimension mismatch on the intercompartmental clearance parameter, noting its unit was listed as time rather than volume per time. This conflict prevented the parameter from being converted to standard SI units, leaving it without a valid value. Consequently, the structural parameter remained incompatible with the model's two-compartment architecture. Extracted — semaglutide: kabs 0.0253 ka, V1 3.59 L, Q 0.304 L/h, V2 4.1 L, Fab 0.847 F.
+A reported unit could not be converted (kabs and Fab), so that value has no SI equivalent. Extracted — semaglutide: kabs 0.0253 ka, V1 3.59 L, Q 0.304 L/h, V2 4.1 L, Fab 0.847 F.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of body_weight_effect_on_cl_and_q: this record has 1.01, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> The model's simulated peak concentration of 0.00585 differs from the reported value of 0.00301, and the record was held back.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00301, model 0.00585); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="tolfenamic acid" model-id="TolfenamicAcid_Corum2026_reference" status="needs_review" stale="false" population="calves" measured-compound="tolfenamic acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Corum O, Marín P, Badillo E, Durna Corum D, Yuksel M, Oguz H et al. Pharmacokin
 
 ### Reviewer guidance
 
-**The model's simulated peak concentration of 0.00585 differs from the reported value of 0.00301, and the record was held back.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00301, model 0.00585); x1_cross_check.**
 
-The simulation failed to reproduce the paper's reported maximum concentration, with ratios of 1.9421 and 3.6084 indicating significant deviation. A second reader also disputed the identification of the dosed compound and the extracted values for clearance and volume of distribution. Extracted — tolfenamic acid: t1/2γ 6.64 h, V 0.67 L/kg, CL 0.17 L/h/kg.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — tolfenamic acid: t1/2γ 6.64 h, V 0.67 L/kg, CL 0.17 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tolfenamic acid, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,11 +142,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 0.00301 | 0.005846 | 1.942 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00162 | 0.005846 | 3.608 | µg/mL→SI vs simulated kg/m3 |
-| T1_t_half_beta | reference | skipped |  | 2.731 |  | non-numeric value |
-| T1_t_half_beta | reference | skipped |  | 2.731 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.375 | cross-check contradicted by a second reader: verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 0.00301 | 0.005846 | 1.942 | reported 3.01 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00162 | 0.005846 | 3.608 | reported 1.62 µg/mL→SI vs simulated kg/m3 |
+| T1_t_half_beta | reference | skipped |  | 2.731 |  | the transcribed record carries no number for this value |
+| T1_t_half_beta | reference | skipped |  | 2.731 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

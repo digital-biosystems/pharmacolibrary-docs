@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Glimepiride’s absorption-rate constant (ka) was unreported and defaulted, so the record was held back despite a reported CL/F of 45.6 L/h.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="glimepiride" model-id="Glimepiride_Yoo2020v2_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="glimepiride" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Yoo H, Kim Y, Jang IJ, Yu KS, Lee S. Pharmacokinetic/Pharmacodynamic Interaction
 
 ### Reviewer guidance
 
-**Glimepiride’s absorption-rate constant (ka) was unreported and defaulted, so the record was held back despite a reported CL/F of 45.6 L/h.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-Ka uses library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper. The model also defaulted Tlag and used first-order depot input with apparent parameterization, assuming F=1, Fm=1, and no molar correction. The record reports glimepiride CL/F of 45.6 L/h and V/F of 1868.3478 L. Extracted — glimepiride: CL/F 45.6 L/h, V/F 1.87e+03 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — glimepiride: CL/F 45.6 L/h, V/F 1.87e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has none, the second reading 0.97; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.5 (5 of 10 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

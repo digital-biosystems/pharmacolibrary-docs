@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is abstract-only, contains no fitted model, and includes an unlinked inactive metabolite.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="vildagliptin" model-id="Vildagliptin_Landersdorfer2012_reference" status="rejected" stale="false" population="type 2 diabetic patients" measured-compound="vildagliptin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -47,13 +47,13 @@ Landersdorfer CB, He YL, Jusko WJ. Mechanism-based population pharmacokinetic mo
 
 ### Reviewer guidance
 
-**The record is abstract-only, contains no fitted model, and includes an unlinked inactive metabolite.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Only the paper's abstract was read, so its summary statistics stand in for a fitted model. The hydrolysis link to the inactive metabolite is not resolved, leaving it as an orphan compartment with no path from the dose. A second reader disagreed on several fields, including the presence of the metabolite link and the values for the hydrolysis half-life and central volume. Extracted — vildagliptin: CL 36 l h−1, V1 22 l, t1/2z 6.3 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — vildagliptin: CL 36 l h−1, V1 22 l, t1/2z 6.3 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has vildagliptin → inactive metabolite (hydrolysis), the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

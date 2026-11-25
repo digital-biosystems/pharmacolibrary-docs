@@ -26,7 +26,7 @@ Bamipine is a histamine antagonist used to treat itching of the skin. It is give
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Neidlein_1987_3_reference](drugs/drug_bamipine/Bamipine_Neidlein1987v3_reference.md) | — | 1-compartment (no model) | 1 | Neidlein R et al., [Biotransformation and pharmacokinetics…, Arzneimittel-Forschung (1987) | — |
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Neidlein_1987_3_reference](drugs/drug_bamipine/Bamipine_Neidlein1987v3_reference.md) | — | 1-compartment (no model) | 1 | Neidlein R et al., [Biotransformation and pharmacokinetics…, Arzneimittel-Forschung (1987) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,7 +40,7 @@ Bamipine is a histamine antagonist used to treat itching of the skin. It is give
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:10 | 0:57 | 1/0/0 | 0/0/0 | 0/0/0 | 9,550/3,274 | openai / gpt-6-luna | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 16:45 | 0:55 | 1/0/0 | 0/0/0 | 0/0/0 | 13,895/3,425 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -55,20 +55,25 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Neidlein_1987_3.pdf` | Neidlein R et al., [Biotransformation and pharmacokinetics…, Arzneimittel-Forschung (1987) | popPK | 8 |  | [3593448](https://pubmed.ncbi.nlm.nih.gov/3593448) | Reports numeric bamipine elimination and invasion half-lives and a lag time. |
+| `Neidlein_1987_3.pdf` | Neidlein R et al., [Biotransformation and pharmacokinetics…, Arzneimittel-Forschung (1987) | popPK | 9 |  | [3593448](https://pubmed.ncbi.nlm.nih.gov/3593448) | The paper reports specific pharmacokinetic parameters (half-lives, lag time) for bamipine in rats, directly addressing the request for quantitative disposition data. |
 
-<sub>queue written 2026-10-07 14:10 UTC</sub>
+<sub>queue written 2026-11-23 16:44 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Neidlein_1987 | irrelevant | 3 | 1 | The rat study reports excretion fractions but no quantitative pharmacokinetic parameters such as clearance, volume, half-life, or model estimates. |
-| popPK | Neidlein_1987_2 | irrelevant | 1 | 0 | This reports bamipine biotransformation in rats but provides no quantitative pharmacokinetic parameter values. |
+| popPK | Kreiskott_1978 | irrelevant | 0 | 0 | The paper describes a pharmacodynamic study on pilocarpine-induced excitation in rats, not a pharmacokinetic study, and reports no disposition parameters for bamipine. |
+| PGx | Kreiskott_1978 | not_relevant | 0 | 0 | The paper describes drug-drug interactions in rats, not pharmacogenomic effects of gene variants on bamipine's PK or PD parameters. |
+| popPK | Neidlein_1987 | relevant | 10 | 4 | The study reports pharmacokinetics of bamipine in rats with quantitative absorption and elimination percentages, but specific CL/V/ka values are not explicitly listed in the provided text. |
+| PGx | Neidlein_1987 | not_relevant | 0 | 0 | The paper describes standard pharmacokinetics in rats without investigating any gene variants, genotypes, or pharmacogenomic influences. |
+| popPK | Neidlein_1987_2 | irrelevant | 2 | 0 | The paper focuses on qualitative biotransformation (metabolite identification) and reports that unchanged drug was not detected, without providing quantitative PK parameter values (CL, V, etc.) for bamipine. |
+| PGx | Neidlein_1987_2 | not_relevant | 0 | 0 | The study investigates bamipine pharmacokinetics in Wistar rats but does not report any genetic variants, genotypes, or pharmacogenomic effects. |
+| PGx | Neidlein_1987_3 | not_relevant | 0 | 0 | The study investigates pharmacokinetics in rats and does not report any human genetic variants or pharmacogenomic effects. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbamipine%5D&body=Drug%3A%20bamipine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bamipine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 14:10 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 16:44 UTC</sub>

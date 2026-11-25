@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Levetiracetam’s drug-interaction clearance ratio of 0.939 is disputed, so the record was held for review.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="levetiracetam" model-id="Levetiracetam_Li2023_final" status="needs_review" stale="false" population="women with epilepsy during pregnancy" measured-compound="levetiracetam" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Li Y, Wang ML, Guo Y, Cao YF, Zhao MM, Zhao LM. Population pharmacokinetics and 
 
 ### Reviewer guidance
 
-**Levetiracetam’s drug-interaction clearance ratio of 0.939 is disputed, so the record was held for review.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disputed the record, with agreement 0.625 and 0 of 1 readers agreeing; they did not identify the primary analyte or provide values for the clearance ratio or absorption rate constant, recorded as 2.98 1/h. The absorption lag time (Tlag) was defaulted rather than explicitly estimated. The apparent parameterization assumed F=1, Fm=1, and no molar correction. Extracted — levetiracetam: CL/F 3.82 L/h, V/F 42 L, CL_ratio 0.939, kabs 2.98 1/h.
+Extracted — levetiracetam: CL/F 3.82 L/h, V/F 42 L, CL_ratio 0.939, kabs 2.98 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has levetiracetam, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.625 (5 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.625 | cross-check contradicted by a second reader: verdict disputed; agreement 0.625 (5 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

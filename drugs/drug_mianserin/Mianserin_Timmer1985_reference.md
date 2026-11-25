@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record was held back after disagreement over mianserin’s solution absolute bioavailability of 22%, alongside untested covariate effects and abstract-only evidence.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
-<div class="pk-model-meta" hidden drug="mianserin" model-id="Mianserin_Timmer1985_reference" status="needs_review" stale="false" population="healthy male adults" measured-compound="mianserin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mianserin" model-id="Mianserin_Timmer1985_reference" status="needs_review" stale="false" population="healthy adult males" measured-compound="mianserin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Timmer CJ, Pourbaix S, Desager JP, Sclavons M, Harvengt C. Absolute bioavailability of mianserin tablets and solution in healthy humans. European journal of drug metabolism and pharmacokinetics 10(4):315–323 (1985).
@@ -17,9 +17,7 @@ Timmer CJ, Pourbaix S, Desager JP, Sclavons M, Harvengt C. Absolute bioavailabil
 
 ## Population and dosing
 
-**Population:** healthy male adults · condition healthy · age group adult · n = 6.
-
-**Dosed compound ≠ measured compound:** dosed mianserin hydrochloride, measured mianserin.
+**Population:** healthy adult males · condition healthy · age group adult · n = 6.
 
 ## Model
 
@@ -39,7 +37,7 @@ Timmer CJ, Pourbaix S, Desager JP, Sclavons M, Harvengt C. Absolute bioavailabil
 | kinetic volume of distribution | V | 444 | l |
 | steady-state volume of distribution | Vss | 242 | l |
 | elimination half-life | t1/2z | 33 | h |
-| absolute bioavailability in terms of extent of absorption for the solution | Fab | 22 | % |
+| absolute bioavailability in terms of extent of absorption for the solution | Fab | 22 |  |
 
 ## Caveats
 
@@ -47,7 +45,7 @@ Timmer CJ, Pourbaix S, Desager JP, Sclavons M, Harvengt C. Absolute bioavailabil
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,13 +55,13 @@ Timmer CJ, Pourbaix S, Desager JP, Sclavons M, Harvengt C. Absolute bioavailabil
 
 ### Reviewer guidance
 
-**The record was held back after disagreement over mianserin’s solution absolute bioavailability of 22%, alongside untested covariate effects and abstract-only evidence.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. The second reader assigned the 22% value to absolute bioavailability generally, not specifically to the solution, and also disagreed about the elimination half-life mapping and the unreported mean absorption half-life; agreement was 0.615, with 0 of 1 reader agreeing. Only the abstract was read, so reported summary statistics stood in for a fitted model. Extracted — mianserin: CL 19 l h-1, V 444 l, Vss 242 l, t1/2z 33 h, Fab 22 %.
+The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mianserin: CL 19 l h-1, V 444 l, Vss 242 l, t1/2z 33 h, Fab 22.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mianserin hydrochloride, the second reading mianserin HCl; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mianserin, the second reading mianserin HCl; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -72,8 +70,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | mean plasma clearance of mianserin | `Q22` · CL | 19 | l h-1 | 5.278e-06 | m3/s | l/h | llm_confirmed (0.6) | Timmer_1985:abstract |
 | kinetic volume of distribution | `Q61` · V | 444 | l | 0.444 | m3 | l | llm_confirmed (0.6) | Timmer_1985:abstract |
 | steady-state volume of distribution | `Q65` · Vss | 242 | l | 0.242 | m3 | l | llm_corrected (0.6) | Timmer_1985:abstract |
-| elimination half-life | `Q57` · t1/2z | 33 | h | 1.188e+05 | s | h | llm (0.6) | Timmer_1985:abstract |
-| absolute bioavailability in terms of extent of absorption for the solution | `Q40` · Fab | 22 | % |  |  |  | llm_confirmed (0.6) | Timmer_1985:abstract |
+| elimination half-life | `Q57` · t1/2z | 33 | h | 1.188e+05 | s | h | half_life_rule (0.95) | Timmer_1985:abstract |
+| absolute bioavailability in terms of extent of absorption for the solution | `Q40` · Fab | 22 |  |  |  |  | llm_confirmed (0.6) | Timmer_1985:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -85,11 +83,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 **Interpretation flags:**
 - covariate category for t1/2ka  from footnote/prose kept as documentation only (['Timmer_1985:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mianserin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Timmer_1985_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
@@ -97,21 +92,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.615 (8/13 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.667 (8/12 fields) | 4 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[absolute bioavailability in terms of extent of absorption for the solution]` | 22 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[absolute bioavailability in terms of extent of absorption]` |  | 22 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life].parameter_id` | Q57 | Q60 | mismatch |
 | `gpt-oss-120b` | `parameters[mean absorption half-life]` |  | 0.43 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | mianserin hydrochloride | mianserin HCl | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | mianserin | mianserin HCl | mismatch |
 
 </details>
 
@@ -148,7 +142,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.615, 0 of 1 reader(s) agree | 0.615 | cross-check disputed by a second reader: verdict disputed, agreement 0.615, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.667 (8 of 12 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (8 of 12 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -164,7 +158,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mianserin/Mianserin_Timmer1985_reference/Mianserin_Timmer1985_reference_modelica.zip" download>Mianserin_Timmer1985_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mianserin/Mianserin_Timmer1985_reference/Mianserin_Timmer1985_reference_modelica.zip" download>Mianserin_Timmer1985_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_mianserin/Mianserin_Timmer1985_reference/Mianserin_Timmer1985_reference_fmi.zip" download>Mianserin_Timmer1985_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_mianserin/Mianserin_Timmer1985_reference/Mianserin_Timmer1985_reference_matlab.zip" download>Mianserin_Timmer1985_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_mianserin/Mianserin_Timmer1985_reference/Mianserin_Timmer1985_reference_matlab_simbio.zip" download>Mianserin_Timmer1985_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -226,4 +220,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmianserin%5D%20Mianserin_Timmer1985_reference&body=Drug%3A%20mianserin%0ARecord%3A%20Mianserin_Timmer1985_reference%0APaper%3A%20Timmer_1985%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mianserin/Mianserin_Timmer1985_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:36 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:11 UTC</sub>

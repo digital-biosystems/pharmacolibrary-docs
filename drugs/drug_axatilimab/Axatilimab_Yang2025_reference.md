@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because a rate parameter had an incompatible unit, and the target-mediated compartments lacked a clear input path from the dose.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit 1/h (1 / [time]) vs [mass] / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="axatilimab" model-id="Axatilimab_Yang2025_reference" status="rejected" stale="false" population="healthy participants and patients with solid tumors or chronic graft-versus-host disease" measured-compound="axatilimab" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -55,13 +55,13 @@ Yang YO, Sokolov V, Volkova A, Liu X, Leon C, Kosinsky Y et al. Semimechanistic 
 
 ### Reviewer guidance
 
-**The model was rejected because a rate parameter had an incompatible unit, and the target-mediated compartments lacked a clear input path from the dose.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit 1/h (1 / [time]) vs [mass] / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-A structural parameter was assigned a reciprocal time unit, which is physically inconsistent with the required volume/time dimension for flow. The model structure includes downstream compartments for the cytokine and metabolites that are not linked to the initial drug dose. Additionally, a unit provided in the source could not be converted to standard SI units, preventing the parameter from being properly standardized. Extracted — axatilimab: V 1.52 L, CL 8.3 L/h, Q 2.6 L/h, V2 1.8 L, KD 0.264, C0 5.9, kel 3.32 1/h, Vmax 5.16 1/h.
+A reported unit could not be converted (Vmax), so that value has no SI equivalent. Extracted — axatilimab: V 1.52 L, CL 8.3 L/h, Q 2.6 L/h, V2 1.8 L, KD 0.264, C0 5.9, kel 3.32 1/h, Vmax 5.16 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has axatilimab → csf-1 (interconversion); csf-1 → ncmcs (interconversion); ncmcs → ast (interconversion) …, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

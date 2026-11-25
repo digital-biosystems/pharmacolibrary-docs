@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rolapitant absorption parameters were replaced with library defaults, and the model structure was incorrect for the measured compound.
+> Ka use library defaults, not estimates from this paper; t3_output_variable (+4 more).
 
 <div class="pk-model-meta" hidden drug="rolapitant" model-id="Rolapitant_Wang2019_reference" status="rejected" stale="false" population="patients with chemotherapy-induced nausea and vomiting" measured-compound="rolapitant" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -51,13 +51,13 @@ Wang X, Wang J, Zhang ZY, Kansra V. Population Pharmacokinetics of Rolapitant in
 
 ### Reviewer guidance
 
-**Rolapitant absorption parameters were replaced with library defaults, and the model structure was incorrect for the measured compound.**
+**Ka use library defaults, not estimates from this paper; t3_output_variable (+4 more).**
 
-Absorption rate and lag time were not reported in the source, forcing the model builder to use unsupported defaults. The model structure was defined as a single oral compartment rather than the parent-metabolite system required for the measured analyte. Consequently, V2 was omitted from the parameter coverage, and the second reader disputed the identification of the primary analyte. Extracted — rolapitant: CL/F 0.962 L/h, V1 214 L, Q 2.79 L/h, V2 164 L; M19: CL/F 1.83 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — rolapitant: CL/F 0.962 L/h, V1 214 L, Q 2.79 L/h, V2 164 L; M19: CL/F 1.83 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rolapitant, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,7 +148,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2'] |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.778 (7 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | cross-check contradicted by a second reader: verdict disputed; agreement 0.778 (7 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

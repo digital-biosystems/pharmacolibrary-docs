@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Alirocumab Vmax of 0.172 has no unit, preventing conversion and use of this maximum metabolic rate and leading to the record being held back.
+> Vmax has no unit; c2_base_Q61 failed (ratio 0.0036).
 
 <div class="pk-model-meta" hidden drug="alirocumab" model-id="Alirocumab_Martinez2019_reference" status="needs_review" stale="false" population="healthy volunteers or hypercholesterolemic subjects" measured-compound="alirocumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Martinez JM, Brunet A, Hurbin F, DiCioccio AT, Rauch C, Fabre D. Population Phar
 
 ### Reviewer guidance
 
-**Alirocumab Vmax of 0.172 has no unit, preventing conversion and use of this maximum metabolic rate and leading to the record being held back.**
+**Vmax has no unit; c2_base_Q61 failed (ratio 0.0036).**
 
-Vmax has no unit. Without a unit the value cannot be converted, so the model cannot use it. A comparison involving central-to-peripheral intercompartmental clearance also failed, with ratio 0.0036. Extracted — alirocumab: CL 0.0114 L/h, V2 2.66 L, kabs 0.0129 1/h, V3 1.81 L, Q 0.0156 L/h, Vmax 0.172, Km 9.49 mg/L, Fab 0.59, … (+2).
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — alirocumab: CL 0.0114 L/h, V2 2.66 L, kabs 0.0129 1/h, V3 1.81 L, Q 0.0156 L/h, Vmax 0.172, Km 9.49 mg/L, Fab 0.59, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alirocumab, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for protamine was rejected because the dose compound lacks a pharmacokinetic pathway in the model structure.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="protamine" model-id="Protamine_Lanoisele2026_reference" status="rejected" stale="false" population="adults undergoing cardiopulmonary bypass cardiac surgery" measured-compound="unfractionated heparin (anti-Xa activity)" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Lanoiselée J, Gibert A, Gouin-Thibault I, Mansour A, Pontis A, Morizot C et al.
 
 ### Reviewer guidance
 
-**The record for protamine was rejected because the dose compound lacks a pharmacokinetic pathway in the model structure.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model parameters are assigned to unfractionated heparin, while protamine is only linked via an undefined binding relation. This leaves the dose compartment as an orphan with no path from the dose. A second reader disagreed on the dose compound identity and the existence of the link. Extracted — unfractionated heparin (anti-Xa activity): CL 1.5 L h -1, Q 0.29 L h -1.
+None of the extracted parameters is protamine's own; they describe unfractionated heparin (anti-Xa activity). Extracted — unfractionated heparin (anti-Xa activity): CL 1.5 L h -1, Q 0.29 L h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has protamine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

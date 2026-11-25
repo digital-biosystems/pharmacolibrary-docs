@@ -34,7 +34,7 @@ Bentazepam is a benzodiazepine analog used as an anxiolytic. It is administered 
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: F, Cl, Tlag, k12, k21 left at base-class defaults</sub> | [Fernandez_1988_reference](drugs/drug_bentazepam/Bentazepam_Fernandez1988_reference.md) | held back | 2-compartment, oral | 6 | Fernandez Lastra C et al., Discrimination of kinetic models in het…, International journal of cl… (1988) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Colino_1991_reference](drugs/drug_bentazepam/Bentazepam_Colino1991_reference.md) | — | 1-compartment (no model) | 4 | Colino CI et al., Open-loop feedback control of serum ben…, International journal of cl… (1991) | — |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Mariño_1987_reference](drugs/drug_bentazepam/Bentazepam_Mario1987_reference.md) | — | 1-compartment (no model) | 3 | Mariño EL et al., Simulation of plasma bentazepam levels…, International journal of cl… (1987) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Mariño_1987_reference](drugs/drug_bentazepam/Bentazepam_Mario1987_reference.md) | — | 1-compartment (no model) | 2 | Mariño EL et al., Simulation of plasma bentazepam levels…, International journal of cl… (1987) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Mariño_1987_2_reference](drugs/drug_bentazepam/Bentazepam_Mario19872_reference.md) | — | 1-compartment (no model) | 0 | Mariño EL et al., Parametrization by non-linear regressio…, International journal of cl… (1987) | — |
 
 <details class="legend">
@@ -49,7 +49,7 @@ Bentazepam is a benzodiazepine analog used as an anxiolytic. It is administered 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 18:19 | 0:48 | 1/3/0 | 0/0/0 | 0/0/0 | 30,621/2,075 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 19:23 | 0:05 | 1/3/0 | 0/0/0 | 0/0/0 | 5,585/354 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -60,20 +60,26 @@ Bentazepam is a benzodiazepine analog used as an anxiolytic. It is administered 
 
 ## Full-text requests
 
-_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Colino_1991.pdf` | Colino CI et al., Open-loop feedback control of serum ben…, International journal of cl… (1991) | popPK | 10 |  | [1800395](https://pubmed.ncbi.nlm.nih.gov/1800395) | Population PK parameters (Ka, Vd, Ke, half-life) for bentazepam are reported numerically in the abstract. |
-| `Fernandez_1988.pdf` | Fernandez Lastra C et al., Discrimination of kinetic models in het…, International journal of cl… (1988) | popPK | 10 |  | [3209281](https://pubmed.ncbi.nlm.nih.gov/3209281) | Population/compartmental PK parameters for bentazepam (Ka, Vd, Ke, K12, K21) are reported numerically in the abstract for 9 human patients. |
-| `Mariño_1987_2.pdf` | Mariño EL et al., Parametrization by non-linear regressio…, International journal of cl… (1987) | popPK | 10 |  | [3429066](https://pubmed.ncbi.nlm.nih.gov/3429066) | Human PK study of bentazepam with numeric ka, kel, and Vd values reported directly in the abstract. |
-| `Mariño_1987.pdf` | Mariño EL et al., Simulation of plasma bentazepam levels…, International journal of cl… (1987) | popPK | 9 |  | [2893777](https://pubmed.ncbi.nlm.nih.gov/2893777) | Population-style PK parameters (ka, kel, Vd) for bentazepam from patient data are reported numerically in the abstract itself. |
+| `Mariño_1987_2.pdf` | Mariño EL et al., Parametrization by non-linear regressio…, International journal of cl… (1987) | popPK | 10 |  | [3429066](https://pubmed.ncbi.nlm.nih.gov/3429066) | The text explicitly reports quantitative pharmacokinetic parameters (absorption constant, elimination constant, and apparent distribution volume) for bentazepam in humans derived from a one-compartment model. |
 
-<sub>queue written 2026-10-06 18:18 UTC</sub>
+<sub>queue written 2026-11-23 19:23 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Colino_1991 | not_relevant | 0 | 0 | The paper estimates population pharmacokinetic parameters for bentazepam but does not investigate the influence of gene variants or genotypes on these parameters. |
+| PGx | Fernandez_1988 | not_relevant | 0 | 0 | The paper focuses on model discrimination for bentazepam pharmacokinetics in a small cohort but does not report any pharmacogenomic effects or genetic variants. |
+| PGx | Mariño_1987 | not_relevant | 0 | 0 | The paper describes pharmacokinetic simulations based on mean parameters from a small patient cohort but does not report any gene variant, genotype, or phenotype associated with these parameters. |
+| PGx | Mariño_1987_2 | not_relevant | 0 | 0 | The paper describes pharmacokinetic parameter estimation methods for a small cohort but does not report any association between genetic variants and PK parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbentazepam%5D&body=Drug%3A%20bentazepam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bentazepam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 18:18 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 19:23 UTC</sub>

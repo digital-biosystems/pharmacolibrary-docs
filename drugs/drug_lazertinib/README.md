@@ -42,7 +42,7 @@ Lazertinib is an epidermal growth factor receptor tyrosine kinase inhibitor used
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 02:37 | 1:12 | 0/3/0 | 0/0/0 | 0/0/0 | 21,537/5,490 | openai / gpt-6-luna | 3 | 0/1 | 3/0 | 0 |
+| 2026-11-24 00:41 | 0:03 | 0/3/0 | 0/0/0 | 0/0/0 | 4,114/164 | einfracz / qwen3.8-27b | 3 | 2/1 | 3/0 | 0 |
 
 ## Coverage
 
@@ -57,15 +57,20 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Huh_2023.pdf` | Huh KY et al., Effects of food and race on the pharmac…, Lung cancer (Amsterdam, Net… (2023) | popPK | 8 | [10.1016/j.lungcan.2022.11.021](https://doi.org/10.1016/j.lungcan.2022.11.021) | [36495784](https://pubmed.ncbi.nlm.nih.gov/36495784) | This is an original human lazertinib PK study, but numeric disposition parameter values are not shown in the evidence. |
+| `Huh_2023.pdf` | Huh KY et al., Effects of food and race on the pharmac…, Lung cancer (Amsterdam, Net… (2023) | popPK | 7 | [10.1016/j.lungcan.2022.11.021](https://doi.org/10.1016/j.lungcan.2022.11.021) | [36495784](https://pubmed.ncbi.nlm.nih.gov/36495784) | The study is a PK trial for lazertinib, but the specific quantitative parameters (CL, V, ka, etc.) are not present in the provided evidence, only relative exposure percentages. |
 
-<sub>queue written 2026-10-07 02:36 UTC</sub>
+<sub>queue written 2026-11-24 00:41 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Huh_2023 | relevant | 8 | 1 | This is an original human lazertinib PK study, but numeric disposition parameter values are not shown in the evidence. |
+| popPK | Fan_2022 | irrelevant | 0 | 0 | The paper investigates the mechanism of multidrug resistance reversal (inhibiting ABC transporters) using lazertinib, not its pharmacokinetic disposition parameters (CL, V, etc.). |
+| PGx | Fan_2022 | not_relevant | 1 | 0 | The paper investigates lazertinib as a pharmacological modulator of drug resistance (ABCB1/ABCG2), not as a study on how genetic variants affect lazertinib's own PK/PD. |
+| popPK | Gando_2025 | irrelevant | 0 | 0 | The paper describes the development and validation of an HPLC-UV bioanalytical method for measuring lazertinib concentrations in plasma, but it does not report pharmacokinetic parameters (such as CL, V, or t1/2 derived from a PK model) for lazertinib itself. |
+| PGx | Gando_2025 | not_relevant | 1 | 0 | The paper is an analytical method development for measuring lazertinib concentrations and does not report pharmacogenomic effects on PK or PD parameters. |
+| popPK | Huh_2023 | irrelevant | 7 | 0 | The study is a PK trial for lazertinib, but the specific quantitative parameters (CL, V, ka, etc.) are not present in the provided evidence, only relative exposure percentages. |
+| PGx | Huh_2023 | not_relevant | 0 | 0 | The paper analyzes the effects of food and race on lazertinib pharmacokinetics, but does not investigate the influence of specific gene variants or genotypes. |
 
 
 </details>

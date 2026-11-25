@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;nalmefene&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nalmefene_Rosen2000_reference&quot;,&quot;label&quot;:&quot;Rosen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Rosen2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalmefene_Kyhl2016_reference&quot;,&quot;label&quot;:&quot;Kyhl_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nalmefene_Kyhl2016_reference&quot;,&quot;label&quot;:&quot;Kyhl_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalmefene_Rosen2000_reference&quot;,&quot;label&quot;:&quot;Rosen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Rosen2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # nalmefene
 
@@ -25,13 +25,13 @@ Nalmefene is an opioid antagonist used to treat opioid overdose and alcohol depe
 
 ## Start here
 
-> **Rosen_2000_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> children aged 2-12 years undergoing cardiothoracic surgery, n = 34. [Run it in the simulator](drugs/drug_nalmefene/Nalmefene_Rosen2000_reference.md?tab=Simulation) · [record](drugs/drug_nalmefene/Nalmefene_Rosen2000_reference.md)
+> **Kyhl_2016_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy subjects. [Run it in the simulator](drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference.md?tab=Simulation) · [record](drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Rosen_2000 · CL ·/kg</text><circle cx="437.7" cy="30.0" r="4" fill="#78909c"><title>Rosen_2000 · CL ·/kg: 51.03 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kyhl_2016 · CL</text><circle cx="463.4" cy="46.0" r="4" fill="#ef6c00"><title>Kyhl_2016 · CL: 60.4 L/h</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Rosen_2000 · CL ·/kg</text><circle cx="437.7" cy="30.0" r="4" fill="#78909c"><title>Rosen_2000 · CL ·/kg: 51.03 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Kyhl_2016 · CL</text><circle cx="463.4" cy="46.0" r="4" fill="#78909c"><title>Kyhl_2016 · CL: 60.4 L/h</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
 
@@ -39,16 +39,17 @@ Nalmefene is an opioid antagonist used to treat opioid overdose and alcohol depe
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Kyhl_2016_reference](drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Kyhl LE et al., Population pharmacokinetics of nalmefen…, British journal of clinical… (2016) | [10.1111/bcp.12805](https://doi.org/10.1111/bcp.12805) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Rosen_2000_reference](drugs/drug_nalmefene/Nalmefene_Rosen2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Rosen DA et al., Nalmefene to prevent epidural narcotic…, Pharmacotherapy (2000) | [10.1592/phco.20.9.745.35207](https://doi.org/10.1592/phco.20.9.745.35207) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Kyhl_2016_reference](drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Kyhl LE et al., Population pharmacokinetics of nalmefen…, British journal of clinical… (2016) | [10.1111/bcp.12805](https://doi.org/10.1111/bcp.12805) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Barnett_2020_BRET](drugs/drug_nalmefene/pd_Barnett_2020_BRET.md) | BRET signal (G protein activation at kappa opioid receptor) ← nalmefene · direct sigmoid Emax (Hill) effect | — | Barnett ME et al., Unique Pharmacological Properties of th…, Molecular pharmacology (2020) | [10.1124/mol.120.119404](https://doi.org/10.1124/mol.120.119404) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Endt_2025_cAMP](drugs/drug_nalmefene/pd_Endt_2025_cAMP.md) | Reversal of opioid-induced inhibition of FSK-stimulated cAMP accumulation (cAMP accumulation as % of FSK-induced level) ← nalmefene · direct sigmoid Emax (Hill) effect | — | Endt F et al., Carfentanil stabilizes µ opioid recepto…, Archives of toxicology (2025) | [10.1007/s00204-025-04048-6](https://doi.org/10.1007/s00204-025-04048-6) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Veng-Pedersen_1995_tcPCO2](drugs/drug_nalmefene/pd_Veng_Pedersen_1995_tcPCO2.md) | transcutaneous pCO2 (respiratory depression) ← nalmefene · delayed effect through an effect compartment | — | Veng-Pedersen P et al., Duration of opioid antagonism by nalmef…, Journal of pharmaceutical s… (1995) | [10.1002/jps.2600840913](https://doi.org/10.1002/jps.2600840913) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kyhl_2016_MOR_occupancy](drugs/drug_nalmefene/pd_Kyhl_2016_MOR_occupancy.md) | μ-opioid receptor occupancy ← nalmefene · direct Emax (saturable) effect | — | Kyhl LE et al., Population pharmacokinetics of nalmefen…, British journal of clinical… (2016) | [10.1111/bcp.12805](https://doi.org/10.1111/bcp.12805) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Veng-Pedersen_1995_respiratory_depression](drugs/drug_nalmefene/pd_Veng_Pedersen_1995_respiratory_depression.md) | respiratory depression ← nalmefene · inhibition effect | — | Veng-Pedersen P et al., Duration of opioid antagonism by nalmef…, Journal of pharmaceutical s… (1995) | [10.1002/jps.2600840913](https://doi.org/10.1002/jps.2600840913) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Veng-Pedersen_1995_respiratory_depression_2](drugs/drug_nalmefene/pd_Veng_Pedersen_1995_respiratory_depression_2.md) | respiratory depression ← nalmefene · delayed effect through transit (transduction) compartments | — | Veng-Pedersen P et al., Duration of opioid antagonism by nalmef…, Journal of pharmaceutical s… (1995) | [10.1002/jps.2600840913](https://doi.org/10.1002/jps.2600840913) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -62,41 +63,36 @@ Nalmefene is an opioid antagonist used to treat opioid overdose and alcohol depe
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:38 | 1:57 | 2/0/0 | 3/0/0 | 0/0/0 | 97,997/6,975 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 01:24 | 0:21 | 2/0/0 | 4/0/0 | 0/0/0 | 6,064/1,735 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 2  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Kyhl_2016.pdf` | Kyhl LE et al., Population pharmacokinetics of nalmefen…, British journal of clinical… (2016) | popPK | 10 | [10.1111/bcp.12805](https://doi.org/10.1111/bcp.12805) | [26483076](https://pubmed.ncbi.nlm.nih.gov/26483076) | Population PK model of nalmefene in humans with CL 60.4 l/h and Vc 266 l reported in abstract; full parameter set likely in tables. |
-| `Rosen_2000.pdf` | Rosen DA et al., Nalmefene to prevent epidural narcotic…, Pharmacotherapy (2000) | popPK | 10 | [10.1592/phco.20.9.745.35207](https://doi.org/10.1592/phco.20.9.745.35207) | [10907964](https://pubmed.ncbi.nlm.nih.gov/10907964) | Original PK study in children with full numeric two-compartment parameters (t½α, t½β, CL, Vss) reported directly in the abstract. |
-| `Veng-Pedersen_1995.pdf` | Veng-Pedersen P et al., Duration of opioid antagonism by nalmef…, Journal of pharmaceutical s… (1995) | popPK | 6 | [10.1002/jps.2600840913](https://doi.org/10.1002/jps.2600840913) | [8537889](https://pubmed.ncbi.nlm.nih.gov/8537889) | PK/PD study of nalmefene in dogs with noncompartmental analysis, but no numeric parameter values are given in the evidence. |
-
-<sub>queue written 2026-10-07 03:37 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Barnett_2020 | irrelevant | 0 | 0 | In-vitro BRET cell signaling pharmacology study; nalmefene is only a test ligand with no PK disposition parameters. |
+| popPK | Barnett_2020 | irrelevant | 0 | 0 | This is an in-vitro pharmacological study focusing on G-protein coupling and receptor signaling, not a pharmacokinetic study, and nalmefene is used only as a reference ligand. |
+| PGx | Barnett_2020 | not_relevant | 0 | 0 | The paper investigates how G protein subunits affect nalmefene's pharmacodynamics at the kappa opioid receptor, but it does not report pharmacogenomic effects (gene variants/genotypes) on PK/PD parameters. |
 | popPK | Endt_2025 | irrelevant | 0 | 0 | In-vitro pharmacodynamics study of carfentanil in HEK293 cells; nalmefene is only an antagonist comparator with IC50 values, no PK disposition parameters. |
-| popPK | Grant_2006 | irrelevant | 0 | 0 | Clinical efficacy trial of nalmefene in pathological gambling with no pharmacokinetic parameters reported. |
-| popPK | Hashimoto_2025 | irrelevant | 0 | 0 | Pharmacogenetic efficacy study of nalmefene with no PK parameters (CL, V, half-life, or PK model) reported. |
-| popPK | Maillet_2015 | irrelevant | 0 | 0 | Nalmefene is only mentioned as a comparator ligand in a pharmacology study of noribogaine; no PK parameters for nalmefene are reported. |
-| popPK | Veng-Pedersen_1995 | relevant | 6 | 3 | PK/PD study of nalmefene in dogs with noncompartmental analysis, but no numeric parameter values are given in the evidence. |
+| popPK | Grant_2006 | irrelevant | 0 | 0 | This is a clinical efficacy study for pathological gambling, not a pharmacokinetic study, and no disposition parameters are reported. |
+| PGx | Grant_2006 | not_relevant | 0 | 0 | The paper reports clinical efficacy in pathological gambling but contains no pharmacogenomic analysis or genotype-specific PK/PD data. |
+| popPK | Hashimoto_2025 | irrelevant | 0 | 0 | The study is a pharmacogenetic analysis of treatment efficacy (drinking outcomes) and contains no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Hashimoto_2025 | not_relevant | 2 | 8 | The study reports a pharmacogenomic effect on clinical outcomes (heavy drinking days, alcohol consumption) rather than pharmacokinetic (PK) or direct pharmacodynamic (PD) parameters of the drug nalmefene itself. |
+| PGx | Kyhl_2016 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics and PK/PD modeling for nalmefene but does not report any analysis of gene variants, genotypes, or pharmacogenomic effects on PK or PD parameters. |
+| popPK | Maillet_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics and receptor binding of noribogaine, a metabolite of ibogaine, and does not report quantitative pharmacokinetic parameters for nalmefene. |
+| PGx | Maillet_2015 | not_relevant | 0 | 0 | The paper characterizes the receptor pharmacology of noribogaine and does not report any pharmacogenomic effects on nalmefene PK or PD parameters. |
+| PGx | Rosen_2000 | not_relevant | 0 | 0 | The study reports standard pediatric pharmacokinetics for nalmefene but does not assess any gene variants or pharmacogenomic factors. |
+| popPK | Veng-Pedersen_1995 | irrelevant | 2 | 0 | The study reports PK/PD analysis but the specific numeric disposition parameters (CL, V, t1/2) are not present in the provided abstract/evidence text. |
+| PGx | Veng-Pedersen_1995 | not_relevant | 0 | 0 | The study compares PK/PD profiles in animals but does not investigate genetic variants or pharmacogenomics. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnalmefene%5D&body=Drug%3A%20nalmefene%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nalmefene/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 03:37 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 01:23 UTC</sub>

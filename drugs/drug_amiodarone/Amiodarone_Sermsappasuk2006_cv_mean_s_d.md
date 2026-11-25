@@ -43,7 +43,7 @@ Sermsappasuk P, Baek M, Weiss M. Kinetic analysis of myocardial uptake and negat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,6 +56,8 @@ Sermsappasuk P, Baek M, Weiss M. Kinetic analysis of myocardial uptake and negat
 **Only clearance was extracted — no volume.**
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — amiodarone: k12 2.4 1/min, k21 17.5 1/min, MRT 4.9 min, CL 31.1 ml/min, kabs 0.82 h−1.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl d: this record has none, the second reading 31.1; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -95,6 +97,30 @@ A model needs both clearance and volume; without the volume it could only be bui
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.6 (6/10 fields) | 4 |
+
+<details><summary>4 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl d]` |  | 31.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 0.82 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[uptake clearance cl d]` | 31.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[τ]` | 4.9 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

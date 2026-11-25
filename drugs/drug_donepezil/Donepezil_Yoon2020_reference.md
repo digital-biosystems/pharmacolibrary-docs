@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant for donepezil in Yoon_2020 was recorded with hours instead of inverse hours, causing a dimensional mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time]; Q66 unit mg/h ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Yoon2020_reference" status="rejected" stale="false" population="healthy Korean male subjects" measured-compound="donepezil" parameterization="apparent" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Yoon SK, Bae KS, Hong DH, Kim SS, Choi YK, Lim HS. Pharmacokinetic Evaluation by
 
 ### Reviewer guidance
 
-**The absorption rate constant for donepezil in Yoon_2020 was recorded with hours instead of inverse hours, causing a dimensional mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time]; Q66 unit mg/h ([mass] / [time]) vs [mass] / [time].**
 
-The record lists the absorption rate constant (kabs) for donepezil with a value of 4456 and unit hours. Rate constants dimensionally require inverse time (1/h), so hours is incompatible. The unit h could not be converted to standard SI units, preventing the parameter from having a valid value. The record was rejected due to this dimensional conflict on a structural parameter. Extracted — donepezil: kabs 4.46e+03 h, tlag 0.497 h, V1 456 L, V2 517 L, Q 12 L/h, Vmax 376 mg/h, Km 107 ng/mL, CL/F 5.17 L/h, … (+1).
+A reported unit could not be converted (kabs, Vmax, Km and Frel), so that value has no SI equivalent. Extracted — donepezil: kabs 4.46e+03 h, tlag 0.497 h, V1 456 L, V2 517 L, Q 12 L/h, Vmax 376 mg/h, Km 107 ng/mL, CL/F 5.17 L/h, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has donepezil, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

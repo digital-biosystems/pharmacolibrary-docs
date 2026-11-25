@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Demirbas_1998_DXP_HBr](drugs/drug_guaifenesin/pd_Demirbas_1998_DXP_HBr.md) | dextromethorphan bioavailability biomarker turnover ← guaifenesin | — | Demirbas S et al., Bioavailability of dextromethorphan (as…, Biopharmaceutics & drug dis… (1998) | [10.1002/(sici)1099-081x(1998110)19:8&lt;541::aid-bdd138&gt;3.0.co;2-8](https://doi.org/10.1002/(sici)1099-081x(1998110)19:8&lt;541::aid-bdd138&gt;3.0.co;2-8) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Demirbas_1998_DXP_HBr](drugs/drug_guaifenesin/pd_Demirbas_1998_DXP_HBr.md) | dextromethorphan bioavailability biomarker turnover ← guaifenesin | — | Demirbas S et al., Bioavailability of dextromethorphan (as…, Biopharmaceutics & drug dis… (1998) | [10.1002/(sici)1099-081x(1998110)19:8&lt;541::aid-bdd138&gt;3.0.co;2-8](https://doi.org/10.1002/(sici)1099-081x(1998110)19:8&lt;541::aid-bdd138&gt;3.0.co;2-8) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Simvastatin clearance of 0.25 L/hr/kg and volume of distribution of 0.069 L are implausibly low.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Ogungbenro2019_structural_model_estimatea" status="rejected" stale="false" population="children and adolescents" measured-compound="simvastatin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -51,13 +51,13 @@ Ogungbenro K, Wagner JB, Abdel-Rahman S, Leeder JS, Galetin A. A population phar
 
 ### Reviewer guidance
 
-**Simvastatin clearance of 0.25 L/hr/kg and volume of distribution of 0.069 L are implausibly low.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The recorded clearance of 0.25 L/hr/kg and volume of distribution of 0.069 L fall outside physiological windows for simvastatin. This suggests a unit or scale extraction error, likely confusing body-weight-normalized values with total body parameters. The record was rejected due to these implausible magnitudes. Extracted — simvastatin: V 0.069 L, CL 0.25 L/hr/kg, kabs 0.3 hour -1, tlag 0.212 hr; simvastatin acid: V 0.043 L.
+Extracted — simvastatin: V 0.069 L, CL 0.25 L/hr/kg, kabs 0.3 hour -1, tlag 0.212 hr; simvastatin acid: V 0.043 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has simvastatin → simvastatin acid (metabolism); simvastatin → 6-hydroxymethyl simvastatin (metabolism); simvastatin → 3,5 dihydrodiol simvastatin (metabolism) …, the second reading simvastatin → simvastatin acid (metabolism); simvastatin → 6-hydroxymethyl simvastatin (metabolism); simvastatin → 3,5-dihydrodiol simvastatin (metabolism) …; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

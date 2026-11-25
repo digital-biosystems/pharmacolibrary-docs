@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:36 | 0:38 | 0/0/0 | 0/2/0 | 0/0/0 | 10,351/2,691 | openai / gpt-6-luna | 2 | 1/1 | 1/1 | 0 |
+| 2026-11-23 12:44 | 0:03 | 0/0/0 | 0/2/0 | 0/0/0 | 3,087/136 | einfracz / qwen3.8-27b | 2 | 1/1 | 1/1 | 0 |
 
 ## Coverage
 
@@ -45,21 +45,12 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Zuo_2024.pdf` | Zuo P et al., Population Pharmacokinetic Modeling and…, Clinical pharmacology and t… (2024) | popPK | 10 | [10.1002/cpt.3383](https://doi.org/10.1002/cpt.3383) | [39039635](https://pubmed.ncbi.nlm.nih.gov/39039635) | Human population-PK modeling is described, but numeric disposition parameter values are not present in the provided evidence. |
-
-<sub>queue written 2026-10-07 12:36 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Miyake_2026 | irrelevant | 0 | 0 | The evidence only describes patient cohorts and reports no pharmacokinetic parameters. |
+| popPK | Miyake_2026 | irrelevant | 0 | 0 | The evidence contains only a patient recruitment flow diagram and no pharmacokinetic parameter values or model descriptions for enfortumab vedotin. |
+| PGx | Miyake_2026 | not_relevant | 0 | 0 | The text provides only a flow diagram of patient inclusion for late-line EV therapy without any mention of gene variants or genotypes. |
 | popPK | Op_2025 | relevant | 8 | 3 | The study simulates enfortumab vedotin with a two-compartment population-PK model and reports numeric AUC and trough values, but not model parameter estimates. |
 | popPK | Zuo_2024 | relevant | 10 | 0 | Human population-PK modeling is described, but numeric disposition parameter values are not present in the provided evidence. |
 

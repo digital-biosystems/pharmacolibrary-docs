@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected for implausible sufentanil clearance and volume magnitudes, reporting total clearance of 176 L/h and central volume of 519 L.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="sufentanil" model-id="Sufentanil_Nie2025_reference" status="rejected" stale="false" population="laboring women" measured-compound="sufentanil" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Nie Y, Sun X, Cao R, Tang S, Zhou Q, Zhou M et al. Population Pharmacokinetic of
 
 ### Reviewer guidance
 
-**The record was rejected for implausible sufentanil clearance and volume magnitudes, reporting total clearance of 176 L/h and central volume of 519 L.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists sufentanil total clearance as 176 L/h and central volume of distribution as 519 L. It also reports intercompartmental clearance of 0.0134 L/h and peripheral volume of distribution of 0.187 L; the stated finding attributes the rejection to an implausible clearance/volume magnitude, consistent with a unit or scale extraction error. Extracted — sufentanil: CL 176 L/h, V1 519 L, Q 0.0134 L/h, V2 0.187 L.
+Extracted — sufentanil: CL 176 L/h, V1 519 L, Q 0.0134 L/h, V2 0.187 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

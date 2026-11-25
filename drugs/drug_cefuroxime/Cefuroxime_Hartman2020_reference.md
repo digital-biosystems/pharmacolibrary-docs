@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the paper concerns amoxicillin, despite listing cefuroxime as the drug with mismatched parameter values.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Hartman2020_reference" status="rejected" stale="false" population="critically ill children" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Hartman SJF, Brüggemann RJ, Orriëns L, Dia N, Schreuder MF, de Wildt SN. Pharm
 
 ### Reviewer guidance
 
-**The record was rejected because the paper concerns amoxicillin, despite listing cefuroxime as the drug with mismatched parameter values.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The clearance parameter is labeled "Cl of amoxicillin" with a value of 0.242 l/kg/h, indicating the source data pertains to a different antibiotic. The review identifies the paper as a systematic review where cefuroxime is merely a co-medication or covariate, not the primary subject. This mismatch means the extracted parameters do not describe cefuroxime pharmacokinetics, leading to the rejection for subject identity. Extracted — cefuroxime: CL 0.242 l/kg/h, V 0.368 l/kg.
+Extracted — cefuroxime: CL 0.242 l/kg/h, V 0.368 l/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q54: this record has none, the second reading 400. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.857 (6 of 7 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

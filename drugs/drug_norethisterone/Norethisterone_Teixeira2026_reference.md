@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Norethisterone’s peripheral-compartment volume (V2) of 0.402 L/kg was rejected because the recorded two-compartment structure leaves that compartment unreachable from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="norethisterone" model-id="Norethisterone_Teixeira2026_reference" status="rejected" stale="false" population="" measured-compound="norethisterone" parameterization="apparent" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Teixeira FEG, Lock GA, Giacomeli R, Pacheco CO, Maciel TR, Pozzato Funghetto-Rib
 
 ### Reviewer guidance
 
-**Norethisterone’s peripheral-compartment volume (V2) of 0.402 L/kg was rejected because the recorded two-compartment structure leaves that compartment unreachable from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record reports V2 as the peripheral-compartment volume, while the finding identifies an unreachable or orphan compartment—a compartment with no path from the dose. A second reader instead records a one-compartment structure and no V2 value, disagreeing with this record’s two-compartment structure and reported value of 0.402 L/kg. Extracted — norethisterone: CL/F 0.1 mL/min/kg, V/F 0.3 L/kg, V2 0.402 L/kg.
+Extracted — norethisterone: CL/F 0.1 mL/min/kg, V/F 0.3 L/kg, V2 0.402 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of V2: this record has 0.402, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

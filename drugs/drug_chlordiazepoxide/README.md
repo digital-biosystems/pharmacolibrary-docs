@@ -22,9 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Simasko_1984_TRH_binding_displacement_pituitary](drugs/drug_chlordiazepoxide/pd_Simasko_1984_TRH_binding_displacement_pituitary.md) | Displacement of [3H](3MeHis2)TRH binding (pituitary tissue) ← chlordiazepoxide · direct sigmoid Emax (Hill) effect | — | Simasko S et al., Chlordiazepoxide displaces thyrotropin-…, European journal of pharmac… (1984) | [10.1016/0014-2999(84)90291-7](https://doi.org/10.1016/0014-2999(84)90291-7) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [McEachern_1988_Enhancement_of_submaximal_GABA_response_by_chlordiazepoxide](drugs/drug_chlordiazepoxide/pd_McEachern_1988_Enhancement_of_submaximal_GABA_response_by_ch.md) | Enhancement of submaximal GABA response by chlordiazepoxide ← chlordiazepoxide · direct Emax (saturable) effect | — | McEachern AE et al., Benzodiazepine interactions with GABAA…, Molecular pharmacology (1988) | — |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Simasko_1984_TRH_binding_displacement_brain](drugs/drug_chlordiazepoxide/pd_Simasko_1984_TRH_binding_displacement_brain.md) | Displacement of [3H](3MeHis2)TRH binding (brain tissue) ← chlordiazepoxide · direct sigmoid Emax (Hill) effect | — | Simasko S et al., Chlordiazepoxide displaces thyrotropin-…, European journal of pharmac… (1984) | [10.1016/0014-2999(84)90291-7](https://doi.org/10.1016/0014-2999(84)90291-7) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span> | [McEachern_1988_GABA_response](drugs/drug_chlordiazepoxide/pd_McEachern_1988_GABA_response.md) | GABA response ← chlordiazepoxide · direct Emax (saturable) effect | — | McEachern AE et al., Benzodiazepine interactions with GABAA…, Molecular pharmacology (1988) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 18:55 | 1:17 | 0/0/0 | 1/2/0 | 0/0/0 | 101,019/2,384 | ollama / glm-5.3-flash | 6 | 1/5 | 6/0 | 0 |
+| 2026-11-23 17:28 | 0:04 | 0/0/0 | 0/1/0 | 0/0/0 | 4,138/157 | einfracz / qwen3.8-27b | 6 | 1/5 | 6/0 | 0 |
 
 ## Coverage
 
@@ -51,26 +49,43 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Calvi_2022 | irrelevant | 0 | 0 | This is an MRI study of slowly expanding lesions in multiple sclerosis with no chlordiazepoxide pharmacokinetic data whatsoever. |
-| popPK | Daneshmend_1988 | irrelevant | 0 | 0 | This is a review of ketoconazole pharmacokinetics; chlordiazepoxide is only mentioned as an interacting drug, with no PK parameters for it. |
-| popPK | Du_2015 | irrelevant | 0 | 0 | This is a zebrafish developmental cardiotoxicity study of flame retardants with no chlordiazepoxide PK data. |
-| popPK | File_1986 | irrelevant | 0 | 0 | Behavioral place-conditioning study in rats with no pharmacokinetic parameters or numeric disposition values for chlordiazepoxide. |
-| popPK | Fricks_2008 | irrelevant | 0 | 0 | Receptor pharmacology study of UDP at P2Y14 receptors with no chlordiazepoxide or pharmacokinetic parameters. |
+| popPK | Calvi_2022 | irrelevant | 0 | 0 | The paper is a study on Multiple Sclerosis lesion characteristics and does not contain any data for chlordiazepoxide. |
+| PGx | Calvi_2022 | not_relevant | 0 | 0 | The paper focuses on MRI lesion characteristics in multiple sclerosis and does not discuss chlordiazepoxide or pharmacogenomics. |
+| popPK | Daneshmend_1988 | irrelevant | 0 | 0 | The paper is a review of ketoconazole pharmacokinetics, and chlordiazepoxide is only mentioned as a potential interacting drug without any reported PK parameters for it. |
+| PGx | Daneshmend_1988 | not_relevant | 0 | 0 | The paper describes the clinical pharmacokinetics of ketoconazole, not chlordiazepoxide, and does not report pharmacogenomic effects. |
+| popPK | Du_2015 | irrelevant | 0 | 0 | The paper studies the developmental toxicity of flame retardants in zebrafish and does not involve chlordiazepoxide or pharmacokinetics. |
+| PGx | Du_2015 | not_relevant | 0 | 0 | The paper studies the cardiotoxicity of organophosphate flame retardants in zebrafish, not the pharmacogenomics of chlordiazepoxide. |
+| popPK | File_1986 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment (place conditioning) in rats and does not report any pharmacokinetic parameters (CL, V, t1/2, etc.) for chlordiazepoxide. |
+| PGx | File_1986 | not_relevant | 0 | 0 | The paper studies behavioral effects (place conditioning) of anxiolytic drugs in rats and contains no data on gene variants or pharmacokinetic/pharmacodynamic parameters related to genotype. |
+| popPK | Fricks_2008 | irrelevant | 0 | 0 | The paper investigates UDP as an antagonist at P2Y14 receptors and contains no data on chlordiazepoxide pharmacokinetics. |
+| PGx | Fricks_2008 | not_relevant | 0 | 0 | The paper discusses the pharmacology of a P2Y14 receptor antagonist (UDP) and does not mention chlordiazepoxide or any pharmacogenomic interactions affecting its PK/PD parameters. |
 | popPK | Jost_2026 | irrelevant | 0 | 0 | This is a real-world effectiveness/safety study of foslevodopa/foscarbidopa in Parkinson's disease with no chlordiazepoxide PK parameters; no quantitative disposition values appear. |
 | popPK | Kalinowski_2022 | irrelevant | 0 | 0 | This is a clinical outcome study of the timed 25-foot walk in multiple sclerosis patients; no chlordiazepoxide PK parameters are reported anywhere. |
-| popPK | Laliberté_2002 | irrelevant | 0 | 0 | In vitro enzyme study of PDE4A4 with no chlordiazepoxide PK parameters; CDP-840 is a different drug. |
-| popPK | Mathews_1996 | irrelevant | 0 | 0 | In-vitro electrophysiology study of GABAA receptor modulation; chlordiazepoxide is a pharmacological tool, no PK parameters reported. |
-| popPK | McEachern_1988 | irrelevant | 0 | 0 | In vitro receptor pharmacology study (GABAA binding/electrophysiology in chick neurons), not a PK study; EC50 values are pharmacodynamic, not disposition parameters. |
-| popPK | Merlo_1989 | irrelevant | 0 | 0 | Behavioral pharmacology study in rats; chlordiazepoxide is only a test drug with doses, no PK parameters reported. |
-| popPK | Nedelman_2018 | irrelevant | 0 | 0 | This is a population PK study of pasireotide, not chlordiazepoxide; no chlordiazepoxide parameters are reported. |
-| popPK | Niespodziany_2020 | irrelevant | 0 | 0 | In vitro electrophysiology study of padsevonil on GABAA receptors; chlordiazepoxide is only a comparator agonist, no PK parameters. |
+| popPK | Laliberté_2002 | irrelevant | 0 | 0 | The paper describes in vitro enzymology of PDE4A4 and does not report pharmacokinetic parameters for chlordiazepoxide. |
+| PGx | Laliberté_2002 | not_relevant | 0 | 0 | The paper describes in vitro phosphorylation of PDE4A4 and its effect on cAMP hydrolysis and rolipram potency, with no mention of chlordiazepoxide, gene variants, or pharmacogenomics. |
+| popPK | Mathews_1996 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic electrophysiology study comparing receptor modulation, containing no pharmacokinetic parameters for chlordiazepoxide. |
+| PGx | Mathews_1996 | not_relevant | 0 | 0 | The paper describes the pharmacodynamic mechanism of chlordiazepoxide on GABAA receptors in vitro but does not report any pharmacogenomic effects (gene variant/genotype) on PK or PD parameters. |
+| popPK | McEachern_1988 | irrelevant | 0 | 0 | The study reports in-vitro pharmacodynamic potency (EC50) and receptor binding parameters (KD, Bmax) for chlordiazepoxide in chick neurons, not pharmacokinetic disposition parameters (CL, V, ka, t1/2). |
+| PGx | McEachern_1988 | not_relevant | 0 | 0 | The paper reports standard pharmacodynamics (EC50, binding affinity) in an animal model without any analysis of gene variants or genotypes affecting these parameters. |
+| popPK | Merlo_1989 | irrelevant | 0 | 0 | The paper is a behavioral pharmacology study assessing anxiolytic effects in rats, not a pharmacokinetic study, and reports no quantitative disposition parameters (CL, V, t1/2) for chlordiazepoxide. |
+| PGx | Merlo_1989 | not_relevant | 0 | 0 | The paper investigates behavioral pharmacology in rats but does not report any genetic variants or pharmacogenomic effects. |
+| popPK | Nedelman_2018 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for pasireotide, not chlordiazepoxide. |
+| PGx | Nedelman_2018 | not_relevant | 0 | 0 | The paper analyzes population pharmacokinetics of pasireotide, not chlordiazepoxide, and does not report genetic variants or pharmacogenomic effects. |
+| popPK | Niespodziany_2020 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological characterization of a new drug (padsevonil) on GABA receptors, using chlordiazepoxide only as a reference comparator, and does not report any pharmacokinetic parameters. |
+| PGx | Niespodziany_2020 | not_relevant | 0 | 0 | The paper characterizes the pharmacodynamics of the novel drug padsevonil on GABA receptors and does not report any genetic variants affecting the PK or PD of chlordiazepoxide. |
 | popPK | Nonomura_2026 | irrelevant | 0 | 0 | This is a synthetic biology paper about a caffeine-operated protein dissociation system; chlordiazepoxide is not mentioned and no PK parameters for it appear. |
-| popPK | Percival_1997 | irrelevant | 0 | 0 | This is an in-vitro enzymology study of PDE4A with no chlordiazepoxide PK data. |
-| popPK | Sanger_1985 | irrelevant | 0 | 0 | Behavioral pharmacology study in mice with no PK parameters or numeric disposition values. |
-| popPK | Selzer_2015 | irrelevant | 0 | 0 | This is a skin absorption/diffusion modeling study of flufenamic acid, not a PK study of chlordiazepoxide, and no chlordiazepoxide parameters appear. |
-| popPK | Simasko_1984 | irrelevant | 0 | 0 | In-vitro receptor binding study (IC50 for TRH displacement), not a PK study with disposition parameters. |
-| popPK | Teh_2023 | irrelevant | 0 | 0 | This is an in-vitro enzyme inhibition/siRNA study on Entamoeba histolytica choline kinase; chlordiazepoxide is not mentioned and no PK parameters exist. |
-| popPK | Tsuboi_2026 | irrelevant | 0 | 0 | The paper is about foslevodopa/foscarbidopa clinical outcomes in Parkinson's disease, with no chlordiazepoxide PK parameters. |
+| popPK | Percival_1997 | irrelevant | 0 | 0 | The paper describes the biochemistry of PDE4A enzyme activation by zinc and does not involve chlordiazepoxide or any pharmacokinetic parameters. |
+| PGx | Percival_1997 | not_relevant | 0 | 0 | The paper describes the biochemical mechanism of PDE4A activation by zinc, containing no information on chlordiazepoxide, its pharmacokinetics/pharmacodynamics, or genetic variants. |
+| popPK | Sanger_1985 | irrelevant | 0 | 0 | The study is a behavioral pharmacology investigation in mice and does not report any quantitative pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Sanger_1985 | not_relevant | 0 | 0 | The paper studies behavioral effects of benzodiazepines in mice but contains no data on genetic variants or genotypes affecting pharmacokinetics or pharmacodynamics. |
+| popPK | Selzer_2015 | irrelevant | 0 | 0 | The paper investigates the in-silico prediction of skin absorption for flufenamic acid, not the pharmacokinetics of chlordiazepoxide. |
+| PGx | Selzer_2015 | not_relevant | 0 | 0 | The paper focuses on in-silico modeling of skin absorption for flufenamic acid and contains no mention of chlordiazepoxide, gene variants, or pharmacogenomics. |
+| popPK | Simasko_1984 | irrelevant | 0 | 0 | The study reports in vitro receptor binding displacement data (IC50) rather than pharmacokinetic disposition parameters (CL, V, t1/2) for chlordiazepoxide. |
+| PGx | Simasko_1984 | not_relevant | 0 | 0 | The study describes the displacement of TRH binding by chlordiazepoxide in tissue assays and contains no information regarding gene variants/genotypes or pharmacokinetic/pharmacodynamic parameters. |
+| popPK | Teh_2023 | irrelevant | 0 | 0 | The paper investigates choline kinase inhibitors in Entamoeba histolytica and contains no data related to chlordiazepoxide pharmacokinetics. |
+| PGx | Teh_2023 | not_relevant | 0 | 0 | The paper investigates the inhibition of choline kinase in Entamoeba histolytica and does not mention chlordiazepoxide or any human pharmacogenomic effects on its pharmacokinetics or pharmacodynamics. |
+| popPK | Tsuboi_2026 | irrelevant | 0 | 0 | The paper focuses on foslevodopa/foscarbidopa for Parkinson's disease and does not report pharmacokinetic parameters for chlordiazepoxide. |
+| PGx | Tsuboi_2026 | not_relevant | 0 | 0 | The paper studies foslevodopa/foscarbidopa in Parkinson's disease and does not mention chlordiazepoxide or pharmacogenomics. |
 
 
 </details>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Bivalirudin's central compartment volume V1 is recorded as 24.2% instead of a volume dimension like L/kg.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q63 unit % (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="bivalirudin" model-id="Bivalirudin_Zhang2012_reference" status="rejected" stale="false" population="young healthy Chinese volunteers" measured-compound="bivalirudin" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Zhang DM, Wang K, Zhao X, Li YF, Zheng QS, Wang ZN et al. Population pharmacokin
 
 ### Reviewer guidance
 
-**Bivalirudin's central compartment volume V1 is recorded as 24.2% instead of a volume dimension like L/kg.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q63 unit % (dimensionless) vs [length] ** 3.**
 
-The two-compartment model lists the central volume V1 as 24.2% in the abstract-only source. This percent unit conflicts with the required three-dimensional volume unit. Because only the abstract was available, these summary statistics stand in for a fitted model. Consequently, the record was rejected due to this structural parameter dimension mismatch. Extracted — bivalirudin: CL 0.323 L·h-1·kg-1, V 0.086 L/kg, Q 0.0957 L·h-1·kg-1, V1 24.2 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bivalirudin: CL 0.323 L·h-1·kg-1, V 0.086 L/kg, Q 0.0957 L·h-1·kg-1, V1 24.2 %.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

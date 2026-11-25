@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;zanamivir&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/&quot;},{&quot;label&quot;:&quot;Zuo_2020 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zanamivir_Zuo2020_base&quot;,&quot;label&quot;:&quot;Zuo_2020_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/Zanamivir_Zuo2020_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zanamivir_Zuo2020_final&quot;,&quot;label&quot;:&quot;Zuo_2020_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/Zanamivir_Zuo2020_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zanamivir_Zuo2020_full&quot;,&quot;label&quot;:&quot;Zuo_2020_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/Zanamivir_Zuo2020_full.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zanamivir_Wollacott2016_reference&quot;,&quot;label&quot;:&quot;Wollacott_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/Zanamivir_Wollacott2016_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zanamivir_Zuo2020_base&quot;,&quot;label&quot;:&quot;Zuo_2020_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/Zanamivir_Zuo2020_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zanamivir_Zuo2020_final&quot;,&quot;label&quot;:&quot;Zuo_2020_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/Zanamivir_Zuo2020_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zanamivir_Wollacott2016_reference&quot;,&quot;label&quot;:&quot;Wollacott_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/Zanamivir_Wollacott2016_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Zanamivir model terminal half-life (4.69 h) exceeds paper value (3.2 h), and covariate effects were unverified.
+> The model does not reproduce the paper's terminal half-life (paper 3.2, model 4.69); the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="zanamivir" model-id="Zanamivir_Zuo2020_final" status="needs_review" stale="false" population="healthy adults and hospitalized adult and pediatric subjects with influenza" measured-compound="zanamivir" parameterization="mechanistic" topology="2C"></div>
 
@@ -17,9 +17,9 @@ Zuo P, Collins J, Okour M, Barth A, Shortino D, Yates P et al. Population Pharma
 
 ## Population and dosing
 
-**Population:** healthy adults and hospitalized adult and pediatric subjects with influenza · condition healthy or suspected/confirmed influenza; includes renal impairment · age group mixed · n = 658.
+**Population:** healthy adults and hospitalized adult and pediatric subjects with influenza · condition influenza · age group mixed.
 
-**Dosing:** 100, 300, 600, 1200 mg, iv.
+**Dosing:** 100, 300, 600, 1200 mg, iv, multiple, every 12 h.
 
 ## Model
 
@@ -35,14 +35,14 @@ Zuo P, Collins J, Okour M, Barth A, Shortino D, Yates P et al. Population Pharma
 
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
-| CL, L/hour | CL | 6.82 | L/hour | 3.10 (None% RSE) |
+| CL, L/hour | CL | 6.83 | L/hour | 3.12 (None% RSE) |
 | V1, L | V1 | 12.3 | L |  |
-| Q, L/hour | Q | 4.82 | L/hour |  |
-| V2, L | V2 | 6.52 | L |  |
-| theta_q900_crcl_power | theta_q900_crcl_power | 97.0 |  |  |
-| theta_q335_crcl_power | theta_q335_crcl_power | 0.00929 |  |  |
-| theta_q319_wt_power | theta_q319_wt_power | 0.711 |  |  |
-| theta_q_wt_power | theta_q_wt_power | 0.658 |  |  |
+| Q, L/hour | Q | 4.83 | L/hour |  |
+| V2, L | V2 | 6.54 | L |  |
+| theta_cl_crcl_power | theta_cl_crcl_power | 97.1 |  |  |
+| theta_cl_crcl_power | theta_cl_crcl_power | 0.00923 |  |  |
+| theta_q312_wt_power | theta_q312_wt_power | 0.712 |  |  |
+| theta_q900_wt_power | theta_q900_wt_power | 0.659 |  |  |
 
 ## Caveats
 
@@ -50,7 +50,7 @@ Zuo P, Collins J, Okour M, Barth A, Shortino D, Yates P et al. Population Pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.476), qwen3.8-27b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,26 +60,26 @@ Zuo P, Collins J, Okour M, Barth A, Shortino D, Yates P et al. Population Pharma
 
 ### Reviewer guidance
 
-**Zanamivir model terminal half-life (4.69 h) exceeds paper value (3.2 h), and covariate effects were unverified.**
+**The model does not reproduce the paper's terminal half-life (paper 3.2, model 4.69); the covariate scenarios were not simulated (+1 more).**
 
-The simulated terminal half-life of 4.69 hours deviated significantly from the reported 3.2 hours. Although the record includes covariate power exponents for weight and creatinine clearance, these scenarios were not simulated. A second reviewer also disputed the classification of specific weight and clearance covariate assignments. Extracted — zanamivir: CL 6.82 L/hour, V1 12.3 L, Q 4.82 L/hour, V2 6.52 L.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — zanamivir: CL 6.83 L/hour, V1 12.3 L, Q 4.83 L/hour, V2 6.54 L.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl].covariate_forms`: this record has none, the second reading ['power', 'power', 'power']; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].rse_percent`: this record has none, the second reading 2; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|
-| CL, L/hour | `Q22` · CL | 6.82 | L/hour | 1.894e-06 | m3/s | l/h | exact (1) | cts12697-tbl-0002:row2:col4 | 3.10 (None% RSE) |
-| V1, L | `Q63` · V1 | 12.3 | L | 0.0123 | m3 | l | exact (1) | cts12697-tbl-0002:row3:col4 |  |
-| Q, L/hour | `Q30` · Q | 4.82 | L/hour | 1.339e-06 | m3/s | l/h | exact (1) | cts12697-tbl-0002:row4:col4 |  |
-| V2, L | `Q64` · V2 | 6.52 | L | 0.00652 | m3 | l | exact (1) | cts12697-tbl-0002:row5:col4 |  |
-| theta_q900_crcl_power | `Q900` · theta_q900_crcl_power | 97.0 |  |  |  |  |  | cts12697-tbl-0002:row7:col4 |  |
-| theta_q335_crcl_power | `Q900` · theta_q335_crcl_power | 0.00929 |  |  |  |  |  | cts12697-tbl-0002:row8:col4 |  |
-| theta_q319_wt_power | `Q900` · theta_q319_wt_power | 0.711 |  |  |  |  |  | cts12697-tbl-0002:row12:col4 |  |
-| theta_q_wt_power | `Q900` · theta_q_wt_power | 0.658 |  |  |  |  |  | cts12697-tbl-0002:row14:col4 |  |
+| CL, L/hour | `Q22` · CL | 6.83 | L/hour | 1.897e-06 | m3/s | l/h | exact (1) | cts12697-tbl-0002:row2:col4, cts12697-tbl-0002:row2:col5 | 3.12 (None% RSE) |
+| V1, L | `Q63` · V1 | 12.3 | L | 0.0123 | m3 | l | exact (1) | cts12697-tbl-0002:row3:col4, cts12697-tbl-0002:row3:col5 |  |
+| Q, L/hour | `Q30` · Q | 4.83 | L/hour | 1.342e-06 | m3/s | l/h | exact (1) | cts12697-tbl-0002:row4:col4, cts12697-tbl-0002:row4:col5 |  |
+| V2, L | `Q64` · V2 | 6.54 | L | 0.00654 | m3 | l | exact (1) | cts12697-tbl-0002:row5:col4, cts12697-tbl-0002:row5:col5 |  |
+| theta_cl_crcl_power | `Q900` · theta_cl_crcl_power | 97.1 |  |  |  |  |  | cts12697-tbl-0002:row7:col4, cts12697-tbl-0002:row7:col5 |  |
+| theta_cl_crcl_power | `Q900` · theta_cl_crcl_power | 0.00923 |  |  |  |  |  | cts12697-tbl-0002:row8:col4, cts12697-tbl-0002:row8:col5 |  |
+| theta_q312_wt_power | `Q900` · theta_q312_wt_power | 0.712 |  |  |  |  |  | cts12697-tbl-0002:row12:col4, cts12697-tbl-0002:row12:col5 |  |
+| theta_q900_wt_power | `Q900` · theta_q900_wt_power | 0.659 |  |  |  |  |  | cts12697-tbl-0002:row14:col4, cts12697-tbl-0002:row14:col5 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -93,58 +93,42 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 - table section iiv: 'IIVV1, CV% (% η‐shrinkage)' routed out of structural estimates ('IIV')
 - table section residual_error: 'Proportional error, CV% (% RSE)' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive error (μg/mL), SD (% RSE)' routed out of structural estimates ('Residual variability')
-- dropped duplicate Q22 ('CL ~ FLU', value '0.756') — already have one for this compound
-- dropped unlinked row (NIL): 'V1/V2 ~ Study (NAI114346)' — extend the ontology if this is a real PK parameter (source ['cts12697-tbl-0002:row13:col4'])
+- dropped duplicate Q22 ('CL ~ FLU', value '0.760') — already have one for this compound
+- dropped unlinked row (NIL): 'V1/V2 ~ Study (NAI114346)' — extend the ontology if this is a real PK parameter (source ['cts12697-tbl-0002:row13:col4', 'cts12697-tbl-0002:row13:col5'])
+- covariate effect for Q312 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q900 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q335 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=zanamivir
-- model-stage split: 'final model' is the final model of Zuo_2020 (paper reports 3 stages: base model, final model, full model); same population, different model-building step
+- model-stage split: 'final model / parameter estimate (% rse)' is the final model of Zuo_2020 (paper reports 3 stages: base model / parameter estimate (% rse), final model / parameter estimate (% rse), full model / parameter estimate (% rse)); same population, different model-building step
 
 **Extraction notes:**
-- unparsed cell cts12697-tbl-0002:row2:col3 = '6.56, 7.05'
-- unparsed cell cts12697-tbl-0002:row2:col5 = '6.83 (6.60, 7.0909)'
-- unparsed cell cts12697-tbl-0002:row3:col3 = '11.8, 12.8'
-- unparsed cell cts12697-tbl-0002:row3:col5 = '12.3 (11.88, 12.8)'
-- unparsed cell cts12697-tbl-0002:row4:col3 = '4.06, 5.58'
-- unparsed cell cts12697-tbl-0002:row4:col5 = '4.83 (4.20, 5.5858)'
-- unparsed cell cts12697-tbl-0002:row5:col3 = '5.99, 7.05'
-- unparsed cell cts12697-tbl-0002:row5:col5 = '6.54 (6.0606, 7.0404)'
-- unparsed cell cts12697-tbl-0002:row7:col3 = '93.1, 101'
-- unparsed cell cts12697-tbl-0002:row7:col5 = '97.1 (87.55, 111)'
-- unparsed cell cts12697-tbl-0002:row8:col3 = '0.00786, 0.0106'
-- unparsed cell cts12697-tbl-0002:row8:col5 = '0.00923 (0.00754, 0.0110)'
-- unparsed cell cts12697-tbl-0002:row9:col3 = '0.701, 0.825'
-- unparsed cell cts12697-tbl-0002:row9:col5 = '0.760 (0.707, 0.814)'
-- unparsed cell cts12697-tbl-0002:row10:col3 = '0.645, 1.155'
-- unparsed cell cts12697-tbl-0002:row11:col3 = '0.416, 0.992'
-- unparsed cell cts12697-tbl-0002:row12:col3 = '0.652, 0.770'
-- unparsed cell cts12697-tbl-0002:row12:col5 = '0.712 (0.649, 0.769)'
-- unparsed cell cts12697-tbl-0002:row13:col3 = '0.699, 0.759'
-- unparsed cell cts12697-tbl-0002:row13:col5 = '0.728 (0.700, 0.760)'
-- unparsed cell cts12697-tbl-0002:row14:col3 = '0.538, 0.778'
-- unparsed cell cts12697-tbl-0002:row14:col5 = '0.659 (0.514, 0.768)'
-- unparsed cell cts12697-tbl-0002:row15:col3 = '2.41, 3.73'
-- unparsed cell cts12697-tbl-0002:row15:col5 = '3.12 (2.5454, 3.8181)'
-- unparsed cell cts12697-tbl-0002:row17:col5 = '18.5 (15.4, 22.7)'
-- unparsed cell cts12697-tbl-0002:row18:col5 = '34.8 (30.5, 40.7)'
-- unparsed cell cts12697-tbl-0002:row20:col5 = '26.2 (24.9, 27.5)'
-- unparsed cell cts12697-tbl-0002:row21:col5 = '0.0269 (0.0243, 0.0294)'
+- table cts12697-tbl-0002: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.476 (10/21 fields) | 11 |
 | `qwen3.8-27b` | not confirmed | 0.471 (8/17 fields) | 9 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>20 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl].rse_percent` |  | 2 | mismatch |
+| `gpt-oss-120b` | `parameters[q].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[q].rse_percent` |  | 8 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_crcl_power].rse_percent` |  | 2 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q312_wt_power]` | 0.712 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q335_crcl_power]` |  | 0.00929 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q900_wt_power]` | 0.659 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q_wt_power]` |  | 0.658 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1].rse_percent` |  | 2 | mismatch |
+| `gpt-oss-120b` | `parameters[v1_v2_wt]` |  | 0.711 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2].rse_percent` |  | 4 | mismatch |
 | `qwen3.8-27b` | `parameters[cl].covariate_forms` | [] | ['power', 'power', 'power'] | mismatch |
 | `qwen3.8-27b` | `parameters[q].covariate_forms` | ['power'] | [] | mismatch |
 | `qwen3.8-27b` | `parameters[q_wt]` |  | 0.658 | only_one_extracted |
@@ -170,16 +154,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |  |  |
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |  |  |
-| C2_base_Q22 | pass | 6.82 | 6.82 | 1 | 0.05 | footnote reference category |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['cts12697-tbl-0002:row2:col4'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  |  |  | ['cts12697-tbl-0002:row4:col4'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['cts12697-tbl-0002:row3:col4'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['cts12697-tbl-0002:row5:col4'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.82 |  |  | ['cts12697-tbl-0002:row2:col4'] |
+| C2_base_Q22 | pass | 6.83 | 6.82 | 0.9985 | 0.05 | footnote reference category |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['cts12697-tbl-0002:row2:col4', 'cts12697-tbl-0002:row2:col5'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  |  |  | ['cts12697-tbl-0002:row4:col4', 'cts12697-tbl-0002:row4:col5'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['cts12697-tbl-0002:row3:col4', 'cts12697-tbl-0002:row3:col5'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['cts12697-tbl-0002:row5:col4', 'cts12697-tbl-0002:row5:col5'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.83 |  |  | ['cts12697-tbl-0002:row2:col4', 'cts12697-tbl-0002:row2:col5'] |
 | C8_topology | pass |  |  |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 6.82 L/h |  |  | ['cts12697-tbl-0002:row2:col4'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 12.3 L |  |  | ['cts12697-tbl-0002:row3:col4'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 6.52 L |  |  | ['cts12697-tbl-0002:row5:col4'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 6.83 L/h |  |  | ['cts12697-tbl-0002:row2:col4', 'cts12697-tbl-0002:row2:col5'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 12.3 L |  |  | ['cts12697-tbl-0002:row3:col4', 'cts12697-tbl-0002:row3:col5'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 6.54 L |  |  | ['cts12697-tbl-0002:row5:col4', 'cts12697-tbl-0002:row5:col5'] |
 
 **Reviewer per-scenario checks:**
 
@@ -191,8 +175,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.471, 0 of 1 reader(s) agree | 0.471 | cross-check disputed by a second reader: verdict disputed, agreement 0.471, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 3.2 | 4.687 | 1.465 | hours→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.476 (10 of 21 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.476 | cross-check contradicted by a second reader: verdict disputed; agreement 0.476 (10 of 21 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 3.2 | 4.691 | 1.466 | reported 3.2 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -208,7 +192,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_zanamivir/Zanamivir_Zuo2020_final/Zanamivir_Zuo2020_final_modelica.zip" download>Zanamivir_Zuo2020_final_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_zanamivir/Zanamivir_Zuo2020_final/Zanamivir_Zuo2020_final_modelica.zip" download>Zanamivir_Zuo2020_final_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_zanamivir/Zanamivir_Zuo2020_final/Zanamivir_Zuo2020_final_fmi.zip" download>Zanamivir_Zuo2020_final_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_zanamivir/Zanamivir_Zuo2020_final/Zanamivir_Zuo2020_final_matlab.zip" download>Zanamivir_Zuo2020_final_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_zanamivir/Zanamivir_Zuo2020_final/Zanamivir_Zuo2020_final_matlab_simbio.zip" download>Zanamivir_Zuo2020_final_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -230,10 +214,10 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 1.894e-06 | m3/s |
+| input | model | `Cl` | 1.897e-06 | m3/s |
 | input | model | `VdPerKg` | 0.0001757 | m3/kg |
-| input | model | `k12` | 0.0001089 | 1/s |
-| input | model | `k21` | 0.0002054 | 1/s |
+| input | model | `k12` | 0.0001091 | 1/s |
+| input | model | `k21` | 0.0002051 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -272,4 +256,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzanamivir%5D%20Zanamivir_Zuo2020_final&body=Drug%3A%20zanamivir%0ARecord%3A%20Zanamivir_Zuo2020_final%0APaper%3A%20Zuo_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zanamivir/Zanamivir_Zuo2020_final%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:12 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:47 UTC</sub>

@@ -7,34 +7,32 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Toloxatone record lacks distribution volume and clearance values, preventing construction of a compartmental population pharmacokinetic model.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="toloxatone" model-id="Toloxatone_Benedetti1982_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="toloxatone" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="toloxatone" model-id="Toloxatone_Benedetti1982_reference" status="rejected" stale="false" population="healthy adults" measured-compound="toloxatone" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Benedetti MS, Rovei V, Dencker SJ, Nagy A, Johansson R. Pharmacokinetics of toloxatone in man following intravenous and oral administrations. Arzneimittel-Forschung 32(3):276–280 (1982).
 
 ## Population and dosing
 
-**Population:** healthy adult volunteers · condition healthy · age group adult · n = 5.
+**Population:** healthy adults · condition healthy · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 1 extracted.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| Protein binding | fu | 50 | % |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,42 +42,31 @@ Benedetti MS, Rovei V, Dencker SJ, Nagy A, Johansson R. Pharmacokinetics of tolo
 
 ### Reviewer guidance
 
-**Toloxatone record lacks distribution volume and clearance values, preventing construction of a compartmental population pharmacokinetic model.**
+**The paper reports none of the model's key parameters.**
 
-The paper reports summary statistics for toloxatone but provides no fitted values for distribution volume or clearance, rendering it unsuitable for compartmental modeling. Additionally, the reported plasma clearance unit (l/h . kg) conflicts dimensionally with the expected volume-per-time structure for that parameter. Extracted — toloxatone: fu 50 %.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has toloxatone, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[availability].parameter_id`: this record has Q44, the second reading Q87; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
-
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | unit_canonical | link | source |
-|---|---|---|---|---|---|---|
-| Protein binding | `Q46` · fu | 50 | % | % | exact (1) | Benedetti_1982:abstract |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 
 | label (paper) | Q-code | link |
 |---|---|---|
-| Cmax (p.o.) | Q32 | exact |
-| tmax (p.o.) | Q56 | exact |
-| t 1/2 beta (p.o.) | Q60 | llm_corrected |
-| Plasma clearance | Q354 | llm_corrected |
+| Cmax | Q32 | exact |
+| time to Cmax | Q56 | exact |
+| t 1/2 beta | Q60 | half_life_rule |
+| Plasma clearance | Q22 | llm_confirmed |
 | apparent volume of distribution | Q76 | exact |
-| availability of the gelatin capsule | Q41 | llm |
+| Protein binding | Q46 | exact |
+| availability | Q44 | llm |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q32 ('Cmax (i.v.)', value None) — already have one for this compound
-- dropped duplicate Q60 ('t 1/2 beta (i.v.)', value None) — already have one for this compound
-- unit_dimension_mismatch: 'Plasma clearance' → Q354 (unit '[length] ** 3 * [mass] / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q32 ('Cmax values', value None) — already have one for this compound
+- unit_dimension_mismatch: 'Plasma clearance' → Q22 (unit '[length] ** 3 * [mass] / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=toloxatone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
@@ -91,30 +78,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.125 (2/16 fields) | 14 |
+| `gpt-oss-120b` | not confirmed | 0.692 (9/13 fields) | 4 |
 
-<details><summary>14 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[availability of the gelatin capsule]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[plasma clearance]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[plasma clearance]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[protein binding to plasma proteins]` |  | 50 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[protein binding]` | 50 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t 1/2 beta]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2 beta]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tmax]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | toloxatone | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | toloxatone | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[availability].parameter_id` | Q44 | Q87 | mismatch |
+| `gpt-oss-120b` | `parameters[infusion duration]` |  | 0.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[protein binding].value` |  | 50 | mismatch |
+| `gpt-oss-120b` | `parameters[time to cmax]` |  |  | only_one_extracted |
 
 </details>
 
@@ -128,12 +105,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |
+| C0_has_structural_params | fail |  | 0 |  |
 | C0b_disposition_core | fail |  |  |  |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | l/h . kg ([length] ** 3 * [mass] / [time]) | ['Benedetti_1982:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Benedetti_1982:abstract'] |
-| C5_dimension_Q354 | fail | [length] ** 3 / [time] | l/h . kg ([length] ** 3 * [mass] / [time]) | ['Benedetti_1982:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Benedetti_1982:abstract'] |
-| C5_dimension_Q60 | pass | [time] |  | ['Benedetti_1982:abstract'] |
+| C5_dimension_Q60 | pass | [time] |  | ['Benedetti_1982:abstract', 'Benedetti_1982:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Benedetti_1982:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -160,4 +137,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btoloxatone%5D%20Toloxatone_Benedetti1982_reference&body=Drug%3A%20toloxatone%0ARecord%3A%20Toloxatone_Benedetti1982_reference%0APaper%3A%20Benedetti_1982%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_toloxatone/Toloxatone_Benedetti1982_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:51 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:53 UTC</sub>

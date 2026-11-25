@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;duloxetine&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/&quot;},{&quot;label&quot;:&quot;Lobo_2009 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Sharma2000_reference&quot;,&quot;label&quot;:&quot;Sharma_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Sharma2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Shibata2023_reference&quot;,&quot;label&quot;:&quot;Shibata_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Shibata2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Tianmei2007_reference&quot;,&quot;label&quot;:&quot;Tianmei_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Tianmei2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Sharma2000_reference&quot;,&quot;label&quot;:&quot;Sharma_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Sharma2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Shibata2023_reference&quot;,&quot;label&quot;:&quot;Shibata_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Shibata2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Skinner2004_reference&quot;,&quot;label&quot;:&quot;Skinner_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Tianmei2007_reference&quot;,&quot;label&quot;:&quot;Tianmei_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Tianmei2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Lobo2009_reference" status="rejected" stale="false" population="patients with major depressive disorder, diabetic peripheral neuropathic pain, stress urinary incontinence or fibromyalgia" measured-compound="duloxetine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Lobo2009_reference" status="rejected" stale="false" population="patients" measured-compound="duloxetine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lobo ED, Quinlan T, O'Brien L, Knadler MP, Heathman M. Population pharmacokinetics of orally administered duloxetine in patients: implications for dosing recommendation. Clinical pharmacokinetics 48(3):189–197 (2009).
@@ -17,7 +17,7 @@ Lobo ED, Quinlan T, O'Brien L, Knadler MP, Heathman M. Population pharmacokineti
 
 ## Population and dosing
 
-**Population:** patients with major depressive disorder, diabetic peripheral neuropathic pain, stress urinary incontinence or fibromyalgia · condition major depressive disorder, diabetic peripheral neuropathic pain, stress urinary incontinence, fibromyalgia · age group adult · n = 594.
+**Population:** patients · age group adult.
 
 ## Model
 
@@ -57,19 +57,18 @@ Independently confirmed by `gpt-oss-120b`.
 - table section residual_error: 'interpatient variability in apparent oral clearance (CL/F)' routed out of structural estimates ('The residual error was 31%.')
 - table section residual_error: 'interpatient variability in the apparent volume of distribution after oral administration (V(d)/F)' routed out of structural estimates ('The residual error was 31%.')
 - table section residual_error: 'residual error' routed out of structural estimates ('The residual error was 31%.')
-- table section residual_error: 'CL/F lower in females than in males' routed out of structural estimates ('The residual error was 31%.')
-- table section residual_error: 'CL/F lower in nonsmokers than in smokers' routed out of structural estimates ('The residual error was 31%.')
+- table section residual_error: 'CL/F was lower in females than in males' routed out of structural estimates ('The residual error was 31%.')
+- table section residual_error: 'CL/F was lower in nonsmokers than in smokers' routed out of structural estimates ('The residual error was 31%.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=duloxetine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Lobo_2009_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Lobo_2009_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -113,4 +112,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bduloxetine%5D%20Duloxetine_Lobo2009_reference&body=Drug%3A%20duloxetine%0ARecord%3A%20Duloxetine_Lobo2009_reference%0APaper%3A%20Lobo_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_duloxetine/Duloxetine_Lobo2009_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:32 UTC</sub>

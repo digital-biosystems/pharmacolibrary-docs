@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ketorolac’s two-compartment record was refused for an unreachable/orphan compartment; it reports central volume V1 of 1130 ml and peripheral volume V2 of 626 ml.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Lynn2011_reference" status="rejected" stale="false" population="postoperative infants aged 2-18 months" measured-compound="ketorolac (R and S isomers)" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Lynn AM, Bradford H, Kantor ED, Andrew M, Vicini P, Anderson GD. Ketorolac trome
 
 ### Reviewer guidance
 
-**Ketorolac’s two-compartment record was refused for an unreachable/orphan compartment; it reports central volume V1 of 1130 ml and peripheral volume V2 of 626 ml.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record describes ketorolac (R and S isomers) in a two-compartment structure, and the finding is that a compartment is unreachable or orphaned. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — ketorolac (R and S isomers): V1 1.13e+03 ml, V2 626 ml, CL 7.4 ml·min(-1), t1/2β 191 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is ketorolac's own; they describe ketorolac (R and S isomers). Extracted — ketorolac (R and S isomers): V1 1.13e+03 ml, V2 626 ml, CL 7.4 ml·min(-1), t1/2β 191 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ketorolac, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

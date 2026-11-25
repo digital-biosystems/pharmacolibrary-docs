@@ -22,10 +22,10 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mandema_2005_pain_free](drugs/drug_eletriptan/pd_Mandema_2005_pain_free.md) | pain free ← eletriptan · direct Emax (saturable) effect | — | Mandema JW et al., Therapeutic benefit of eletriptan compa…, Cephalalgia : an internatio… (2005) | [10.1111/j.1468-2982.2004.00939.x](https://doi.org/10.1111/j.1468-2982.2004.00939.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mandema_2005_pain_relief](drugs/drug_eletriptan/pd_Mandema_2005_pain_relief.md) | pain relief ← eletriptan · direct Emax (saturable) effect | — | Mandema JW et al., Therapeutic benefit of eletriptan compa…, Cephalalgia : an internatio… (2005) | [10.1111/j.1468-2982.2004.00939.x](https://doi.org/10.1111/j.1468-2982.2004.00939.x) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Tokuoka_2015_1B](drugs/drug_eletriptan/pd_Tokuoka_2015_1B.md) | serotonin 5-HT1B receptor occupancy (Φ1B) ← eletriptan · direct linear effect | — | Tokuoka K et al., Theoretical analysis of headache recurr…, The journal of headache and… (2015) | [10.1186/s10194-015-0558-9](https://doi.org/10.1186/s10194-015-0558-9) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Tokuoka_2015_1D](drugs/drug_eletriptan/pd_Tokuoka_2015_1D.md) | serotonin 5-HT1D receptor occupancy (Φ1D) ← eletriptan · direct linear effect | — | Tokuoka K et al., Theoretical analysis of headache recurr…, The journal of headache and… (2015) | [10.1186/s10194-015-0558-9](https://doi.org/10.1186/s10194-015-0558-9) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mandema_2005_pain_free](drugs/drug_eletriptan/pd_Mandema_2005_pain_free.md) | pain free ← eletriptan · direct Emax (saturable) effect | — | Mandema JW et al., Therapeutic benefit of eletriptan compa…, Cephalalgia : an internatio… (2005) | [10.1111/j.1468-2982.2004.00939.x](https://doi.org/10.1111/j.1468-2982.2004.00939.x) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mandema_2005_pain_relief](drugs/drug_eletriptan/pd_Mandema_2005_pain_relief.md) | pain relief ← eletriptan · direct Emax (saturable) effect | — | Mandema JW et al., Therapeutic benefit of eletriptan compa…, Cephalalgia : an internatio… (2005) | [10.1111/j.1468-2982.2004.00939.x](https://doi.org/10.1111/j.1468-2982.2004.00939.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

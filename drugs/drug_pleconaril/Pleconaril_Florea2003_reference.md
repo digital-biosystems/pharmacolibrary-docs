@@ -5,11 +5,11 @@
 
 # pleconaril — `Pleconaril_Florea2003_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The paper reports none of the model's key parameters.
+> Only volume was extracted — no clearance.
 
-<div class="pk-model-meta" hidden drug="pleconaril" model-id="Pleconaril_Florea2003_reference" status="rejected" stale="false" population="unknown" measured-compound="pleconaril" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pleconaril" model-id="Pleconaril_Florea2003_reference" status="needs_review" stale="false" population="unknown" measured-compound="pleconaril" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Florea NR, Maglio D, Nicolau DP. Pleconaril, a novel antipicornaviral agent. Pharmacotherapy 23(3):339–348 (2003).
@@ -17,23 +17,30 @@ Florea NR, Maglio D, Nicolau DP. Pleconaril, a novel antipicornaviral agent. Pha
 
 ## Population and dosing
 
-**Population:** unknown · condition picornaviral infections.
+**Population:** unknown · condition picornaviral respiratory tract infections.
+
+**Dosing:** 400 mg, oral, single.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** mechanistic.  
-**Parameters:** 0 extracted.  
+**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label | parameter | value | unit |
+|---|---|---|---|
+| Cmax (mg/L)a 200 mg | Cmax | 1.1 | mg/L |
+| Tmax (hrs)a 200 mg | tmax | 6.0 | hrs |
+| Vd/F (L)a 200 mg | V/F | 1762 | L |
+| Bioavailability (%) | Fab | 70 | % |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,34 +50,62 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**Only volume was extracted — no clearance.**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — pleconaril: Cmax 1.1 mg/L, tmax 6 hrs, V/F 1.76e+03 L, Fab 70 %.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| Cmax (mg/L)a 200 mg | `Q32` · Cmax | 1.1 | mg/L | 0.0011 | kg/m3 | mg/l | llm_confirmed (0.6) | Florea_2003_table_2:row0:col1 |
+| Tmax (hrs)a 200 mg | `Q56` · tmax | 6.0 | hrs | 2.16e+04 | s | h | llm_confirmed (0.6) | Florea_2003_table_2:row4:col1 |
+| Vd/F (L)a 200 mg | `Q76` · V/F | 1762 | L | 1.762 | m3 | l | llm_confirmed (0.6) | Florea_2003_table_2:row6:col1 |
+| Bioavailability (%) | `Q40` · Fab | 70 | % |  |  |  | exact (1) | Florea_2003_table_2:row8:col1 |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pleconaril
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- dropped unlinked row (NIL): '400 mg' — extend the ontology if this is a real PK parameter (source ['Florea_2003_table_2:row1:col1'])
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=pleconaril
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
-- text-pointer recovery: parsed 0 structural record(s) from the flattened table 1 sentence
+- LLM selected parameter table(s) 2
+- table Florea_2003_table_2: unparsed_numeric_cell
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>6 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | 70 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[bioavailability]` | 70 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax (mg/l)a 200 mg]` | 1.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax (hrs)a 200 mg]` | 6.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd/f (l)a 200 mg]` | 1762 |  | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -80,11 +115,17 @@ _All readers agree on the compared fields of this record._
 
 **Scholar closed-form checks:**
 
-| check | status | obtained |
-|---|---|---|
-| C0_has_structural_params | fail | 0 |
-| C0b_disposition_core | fail |  |
-| C8_topology | pass |  |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Florea_2003_table_2:row0:col1'] |
+| C5_dimension_Q56 | pass | [time] |  | ['Florea_2003_table_2:row4:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Florea_2003_table_2:row6:col1'] |
+| C7_apparent_coherence | pass |  |  |  |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q76 | pass | volume within physiological range | 1.76e+03 L | ['Florea_2003_table_2:row6:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -96,9 +137,19 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -108,4 +159,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpleconaril%5D%20Pleconaril_Florea2003_reference&body=Drug%3A%20pleconaril%0ARecord%3A%20Pleconaril_Florea2003_reference%0APaper%3A%20Florea_2003%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pleconaril/Pleconaril_Florea2003_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:49 UTC</sub>

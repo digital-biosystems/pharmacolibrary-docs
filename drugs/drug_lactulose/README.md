@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Oku_1998_diarrhea](drugs/drug_lactulose/pd_Oku_1998_diarrhea.md) | diarrhea ← lactulose · direct linear effect | — | Oku T et al., Transitory laxative threshold of trehal…, Journal of nutritional scie… (1998) | [10.3177/jnsv.44.787](https://doi.org/10.3177/jnsv.44.787) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Oku_1998_diarrhea](drugs/drug_lactulose/pd_Oku_1998_diarrhea.md) | diarrhea ← lactulose · direct linear effect | — | Oku T et al., Transitory laxative threshold of trehal…, Journal of nutritional scie… (1998) | [10.3177/jnsv.44.787](https://doi.org/10.3177/jnsv.44.787) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

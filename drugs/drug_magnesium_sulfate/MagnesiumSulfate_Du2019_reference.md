@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Magnesium sulfate clearance is reported as 3.72 L/h, but clearance, distribution volume and central-to-peripheral rate were left at placeholders, so the model was held back.
+> No value for magnesium sulfate's clearance, volume of distribution and central→peripheral rate constant; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Du2019_reference" status="model_quarantined" stale="false" population="pregnant women with preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Du L, Wenning L, Migoya E, Xu Y, Carvalho B, Brookfield K et al. Population Phar
 
 ### Reviewer guidance
 
-**Magnesium sulfate clearance is reported as 3.72 L/h, but clearance, distribution volume and central-to-peripheral rate were left at placeholders, so the model was held back.**
+**No value for magnesium sulfate's clearance, volume of distribution and central→peripheral rate constant; the covariate scenarios were not simulated (+1 more).**
 
-No value for magnesium sulfate's clearance, volume of distribution and central→peripheral rate constant was carried into the built model: the record lists clearance 3.72 L/h, central volume 15.4 L, intercompartmental clearance 3.66 L/h and peripheral volume 17.0 L, but the model builder defaulted clearance, distribution volume and central-to-peripheral rate, so library placeholders stood in and the model was held back rather than published with an invented number. The covariate scenarios were not simulated; only the base model was simulated despite the recorded serum-creatinine effect on clearance of -0.731. A second reader disputed that effect's assignment, placing -0.731 on a creatinine power for clearance instead of the serum-creatinine exponent. Extracted — magnesium sulfate: CL 3.72 L/h, V1 15.4 L, Q 3.66 L/h, V2 17 L.
+The model was built, but magnesium sulfate's clearance, volume of distribution and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — magnesium sulfate: CL 3.72 L/h, V1 15.4 L, Q 3.66 L/h, V2 17 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of serum_creatinine_exponent_for_cl: this record has -0.731, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -149,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.833 (10 of 12 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

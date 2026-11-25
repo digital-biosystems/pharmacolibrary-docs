@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Nalbuphine central volume of distribution (519 L) and clearance (176 L/h) are outside physiological windows, causing rejection due to implausible magnitude.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="nalbuphine" model-id="Nalbuphine_Nie2025_reference" status="rejected" stale="false" population="" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Nie Y, Sun X, Cao R, Tang S, Zhou Q, Zhou M et al. Population Pharmacokinetic of
 
 ### Reviewer guidance
 
-**Nalbuphine central volume of distribution (519 L) and clearance (176 L/h) are outside physiological windows, causing rejection due to implausible magnitude.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record assigns a central volume of distribution of 519 L and total clearance of 176 L/h for nalbuphine. These values are flagged as having implausible magnitudes, suggesting a unit or scale extraction error rather than a valid pharmacokinetic profile. Consequently, the model was rejected because the parameters do not represent a physiological reality for this drug. Extracted — nalbuphine: CL 176 L/h, V1 519 L, V2 0.187 L, Q 0.0134 L/h.
+Extracted — nalbuphine: CL 176 L/h, V1 519 L, V2 0.187 L, Q 0.0134 L/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

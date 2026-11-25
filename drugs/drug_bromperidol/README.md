@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [de_2018_cAMP](drugs/drug_bromperidol/pd_de_2018_cAMP.md) | cAMP concentration (cellular second messenger response to D2 receptor antagonism) biomarker turnover ← bromperidol (with competitive dopamine at the D2 receptor) | — | de Witte WEA et al., In vitro and in silico analysis of the…, British journal of pharmaco… (2018) | [10.1111/bph.14456](https://doi.org/10.1111/bph.14456) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [de_2018_cAMP](drugs/drug_bromperidol/pd_de_2018_cAMP.md) | cAMP biomarker turnover ← Bromperidol | — | de Witte WEA et al., In vitro and in silico analysis of the…, British journal of pharmaco… (2018) | [10.1111/bph.14456](https://doi.org/10.1111/bph.14456) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,12 +36,12 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:23 | 4:13 | 0/0/0 | 0/1/0 | 0/0/0 | 79,207/2,646 | ollama / glm-5.3-flash | 2 | 2/0 | 2/0 | 0 |
+| 2026-11-23 19:23 | 0:04 | 0/0/0 | 1/0/0 | 0/0/0 | 3,998/169 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 34 matched, 34 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -57,20 +57,60 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Suzuki_1996.pdf` | Suzuki A et al., No interaction between desipramine and…, Progress in neuro-psychopha… (1996) | pgx | 7 | [10.1016/s0278-5846(96)00111-x](https://doi.org/10.1016/s0278-5846(96)00111-x) | [8938825](https://www.ncbi.nlm.nih.gov/pubmed/8938825) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Tateishi_2000.pdf` | Tateishi T et al., CYP3A is responsible for N-dealkylation…, Life sciences (2000) | pgx | 7 | [10.1016/s0024-3205(00)00874-2](https://doi.org/10.1016/s0024-3205(00)00874-2) | [11133003](https://www.ncbi.nlm.nih.gov/pubmed/11133003) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 
-<sub>queue written 2026-10-06 15:22 UTC</sub>
+<sub>queue written 2026-11-23 19:23 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Furukori_1998 | not_relevant | 3 | 3 | Drug-drug interaction (itraconazole/CYP3A4 inhibition), not a gene variant/genotype/phenotype effect on PK/PD. |
-| PGx | Furukori_1999 | not_relevant | 2 | 5 | Drug-drug interaction (itraconazole/CYP3A4 inhibition), not a gene variant/genotype effect on bromperidol PK/PD. |
+| popPK | Benfield_1988 | irrelevant | 2 | 0 | The paper is a preliminary review summarizing pharmacodynamic and pharmacokinetic properties but contains no specific quantitative PK parameter values (CL, V, t1/2, etc.) in the provided evidence. |
+| PGx | Benfield_1988 | not_relevant | 0 | 0 | The paper is a general clinical review of bromperidol's efficacy and side effects, with no mention of pharmacogenomics, gene variants, or genotypes. |
+| popPK | Furukori_1998 | irrelevant | 1 | 0 | The study is a drug-drug interaction investigation focused on CYP3A4 involvement and reports only that plasma concentrations were significantly higher, without providing specific quantitative PK parameters like clearance or volume. |
+| PGx | Furukori_1998 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (CYP3A4 inhibition by itraconazole) rather than the effect of a specific genetic variant or genotype on pharmacokinetics. |
+| popPK | Furukori_1999 | irrelevant | 2 | 0 | The study reports only steady-state plasma concentrations (C_ss) to assess a drug-drug interaction and does not provide quantitative disposition parameters (CL, V, half-life) or a population PK model. |
+| PGx | Furukori_1999 | not_relevant | 0 | 0 | The study reports a drug-drug interaction with itraconazole, not a pharmacogenomic effect based on a gene variant. |
 | popPK | Kim_2015 | irrelevant | 0 | 0 | This is a population PK study of paroxetine; bromperidol is only used as an internal standard in the LC-MS assay, with no PK parameters for bromperidol. |
-| PGx | Lee_2006 | not_relevant | 3 | 2 | Study investigated genetic effects on bromperidol PK/EPS but found no significant correlations; no pharmacogenomic effect reported. |
-| PGx | Sato_2000 | not_relevant | 3 | 5 | In vitro enzyme phenotyping of CYP3A4 metabolism, no gene variant/genotype effect on PK/PD parameters in patients. |
-| PGx | Suzuki_1996 | not_relevant | 2 | 5 | This is a drug-drug interaction study (desipramine coadministration), not a pharmacogenomic effect of a gene variant/genotype/phenotype on bromperidol PK/PD. |
-| PGx | Tateishi_2000 | not_relevant | 3 | 5 | In vitro microsome study identifying CYP3A4 as responsible enzyme; no gene variant/genotype effect on in vivo PK/PD parameters reported. |
-| popPK | de_2018 | irrelevant | 0 | 0 | In vitro D2 receptor binding/signalling kinetics study; no pharmacokinetic disposition parameters (CL, V, half-life, PK model) for bromperidol, and any binding values are in figures/tables not provided. |
+| PGx | Lee_2006 | not_relevant | 1 | 1 | The paper explicitly states that significant correlations between genetic factors and bromperidol pharmacokinetics or adverse effects could not be proven. |
+| popPK | Mihara_1999 | irrelevant | 2 | 0 | The study reports only that plasma concentrations did not change significantly (no interaction), without providing quantitative PK parameter values like CL, V, or t1/2. |
+| PGx | Mihara_1999 | not_relevant | 0 | 0 | The study investigates drug-drug interactions between cisapride and bromperidol, but does not mention any gene variants, genotypes, or pharmacogenomic factors. |
+| popPK | Mihara_2001 | irrelevant | 0 | 0 | The study focuses on pharmacogenetics and prolactin response, not on pharmacokinetic parameters like clearance or volume of distribution. |
+| popPK | Sakumoto_2007 | irrelevant | 0 | 0 | The study investigates genetic polymorphisms and clinical response in schizophrenia patients, reporting no pharmacokinetic parameters such as clearance or volume of distribution for bromperidol. |
+| popPK | Sato_2000 | irrelevant | 0 | 0 | The study is in-vitro mechanistic research on CYP enzymes and does not report in-vivo population pharmacokinetic parameters like clearance or volume. |
+| PGx | Sato_2000 | not_relevant | 2 | 0 | The study characterizes enzyme-mediated metabolism (CYP3A4) in vitro but does not report how genetic variants (genotypes) alter pharmacokinetic or pharmacodynamic parameters in humans. |
+| popPK | Schmatolla_1978 | irrelevant | 0 | 0 | The paper is a clinical report on the efficacy and safety of bromperidol in treating delirium tremens and does not contain any pharmacokinetic parameters or data. |
+| PGx | Schmatolla_1978 | not_relevant | 0 | 0 | The paper reports clinical efficacy and safety of high-dose bromperidol in delirium tremens but contains no mention of genetic variants, genotypes, or pharmacogenomic influences on PK or PD. |
+| popPK | Schotte_1995 | irrelevant | 0 | 0 | The paper is a receptor binding and occupancy study comparing risperidone to other antipsychotics, not a pharmacokinetic study reporting disposition parameters (CL, V, t1/2) for bromperidol. |
+| PGx | Schotte_1995 | not_relevant | 0 | 0 | The paper compares in vivo receptor occupancy of various antipsychotics but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Smeraldi_1996 | irrelevant | 0 | 0 | The paper reports on the clinical efficacy and safety of bromperidol decanoate in schizophrenia patients, but contains no pharmacokinetic data, compartmental models, or quantitative disposition parameters. |
+| PGx | Smeraldi_1996 | not_relevant | 0 | 0 | The paper reports a clinical trial of bromperidol decanoate efficacy and safety but contains no data on pharmacogenomics, genotypes, or genetic variants. |
+| popPK | Spanarello_2014 | irrelevant | 2 | 0 | The paper is a narrative review discussing the pharmacokinetics of depot antipsychotics generally, including bromperidol, but contains no original quantitative parameter values or specific numeric data for bromperidol in the provided text. |
+| PGx | Spanarello_2014 | not_relevant | 0 | 0 | The text is a review of the pharmacokinetics of depot antipsychotics and does not report any pharmacogenomic effects or genotype-based differences in PK/PD parameters for bromperidol. |
+| popPK | Suzuki_1996 | irrelevant | 2 | 1 | The study reports plasma concentrations (ng/ml) in a drug interaction study but does not report quantitative PK disposition parameters like clearance (CL), volume (V), or half-life with model fitting. |
+| PGx | Suzuki_1996 | not_relevant | 0 | 0 | The study investigates a pharmacokinetic drug-drug interaction between desipramine and bromperidol, not a pharmacogenomic effect based on genetic variants. |
+| popPK | Suzuki_1998 | irrelevant | 2 | 2 | The study reports steady-state plasma concentrations (Css) rather than quantitative pharmacokinetic disposition parameters (CL, V, t1/2). |
+| PGx | Suzuki_1998 | not_relevant | 2 | 0 | The study concludes that CYP2D6 genotype does not significantly affect bromperidol steady-state plasma concentrations. |
+| popPK | Suárez_1985 | irrelevant | 0 | 0 | The paper is a clinical efficacy study reporting symptom scores and side effects, containing no pharmacokinetic parameters. |
+| PGx | Suárez_1985 | not_relevant | 0 | 0 | The paper reports a clinical study on bromperidol efficacy and safety but contains no mention of genetic variants, genotypes, or pharmacogenomic analyses. |
+| popPK | Tateishi_2000 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of hepatic metabolism (Vmax/Km) and does not report in-vivo pharmacokinetic disposition parameters (CL, V, half-life) for bromperidol. |
+| PGx | Tateishi_2000 | not_relevant | 0 | 0 | The paper describes in vitro CYP3A4 metabolism of bromperidol but does not report any pharmacogenomic association between specific gene variants/genotypes and PK/PD parameters in humans. |
+| popPK | Tsuneizumi_1994 | irrelevant | 0 | 0 | The study is a clinical efficacy case report on Huntington's disease that only reports CSF HVA concentrations, not bromperidol pharmacokinetic parameters. |
+| PGx | Tsuneizumi_1994 | not_relevant | 0 | 0 | The paper reports clinical effects of drugs in a single patient with Huntington disease but does not report any pharmacogenomic effects or gene variants. |
+| popPK | Weiser_1978 | irrelevant | 0 | 0 | The study is a clinical efficacy trial for schizophrenia and does not report any pharmacokinetic parameters. |
+| PGx | Weiser_1978 | not_relevant | 0 | 0 | The paper reports general clinical efficacy and safety in a general population but contains no information regarding gene variants, genotypes, or pharmacogenomic effects. |
+| popPK | Woggon_1978 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial comparing bromperidol and perphenazine, reporting therapeutic doses and side effects but containing no pharmacokinetic parameters (CL, V, t1/2, etc.). |
+| PGx | Woggon_1978 | not_relevant | 0 | 0 | The paper is a clinical comparison of two drugs and contains no information regarding gene variants, genotypes, or pharmacogenomic effects on PK/PD parameters. |
+| popPK | Woggon_1978_2 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy and side effects of bromperidol in schizophrenic patients, with no report of pharmacokinetic parameters. |
+| PGx | Woggon_1978_2 | not_relevant | 0 | 0 | The paper describes clinical effects and side effects of bromperidol but does not investigate gene variants or genotypes. |
+| popPK | Yasui-Furukori_2002 | irrelevant | 1 | 0 | The study focuses on side-effect characteristics in schizophrenic patients and does not report quantitative pharmacokinetic disposition parameters or a PK model for bromperidol. |
+| PGx | Yasui-Furukori_2002 | not_relevant | 0 | 0 | The paper investigates the association between age and side effects of bromperidol but does not examine gene variants or genotypes. |
+| popPK | Yasui-Furukori_2002_2 | irrelevant | 0 | 0 | The study reports therapeutic effects and mean plasma concentrations related to clinical response, but does not report quantitative pharmacokinetic disposition parameters (CL, V, t1/2, ka) or a PK model. |
+| PGx | Yasui-Furukori_2002_2 | not_relevant | 0 | 0 | The paper investigates clinical response and plasma concentration relationships in schizophrenic patients but contains no information regarding genetic variants, genotypes, or pharmacogenomic effects. |
+| popPK | Yasui-Furukori_2002_3 | irrelevant | 2 | 1 | The study focuses on pharmacodynamics (prolactin response) and reports only a mean total plasma concentration, lacking the quantitative disposition parameters (CL, V, ka, half-life) required for population PK modeling. |
+| PGx | Yasui-Furukori_2002_3 | not_relevant | 0 | 0 | The paper compares PK/PD parameters of two drugs in the same individuals but does not report any genetic variants or pharmacogenomic effects. |
+| popPK | Yasui-Furukori_2006 | irrelevant | 1 | 0 | The study investigates pharmacogenetic associations (MDR1 polymorphisms) and therapeutic response rather than reporting quantitative pharmacokinetic parameters like clearance or volume for bromperidol. |
+| PGx | Yasui-Furukori_2006 | not_relevant | 6 | 2 | The study reports an association between MDR1 genotypes and therapeutic response (PD) rather than a specific, quantified change in a PK parameter (e.g., Cmax, AUC) directly caused by the genotype. |
+| popPK | de_2018 | irrelevant | 0 | 0 | The study investigates in vitro binding kinetics and signal transduction of D2 receptor antagonists, not the pharmacokinetic disposition parameters (CL, V, t1/2) of bromperidol in vivo. |
+| PGx | de_2018 | not_relevant | 0 | 0 | The paper studies D2 receptor binding kinetics and cellular cAMP responses to various antagonists (including bromperidol) in vitro but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 
 
 </details>

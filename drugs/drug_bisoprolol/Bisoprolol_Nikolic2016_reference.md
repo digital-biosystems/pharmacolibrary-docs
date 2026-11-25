@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bisoprolol’s absorption-rate constant (ka) was not reported and was defaulted, leaving its value unsupported and the model held back.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Nikolic2016_reference" status="needs_review" stale="false" population="hemodialysis patients with hypertension" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Nikolic VN, Jankovic SM, Dimitrijevic ZM, Sokolovic MJ, Andric BR, Petrovic DS e
 
 ### Reviewer guidance
 
-**Bisoprolol’s absorption-rate constant (ka) was not reported and was defaulted, leaving its value unsupported and the model held back.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The paper does not report ka; a library default was used, so the absorption-rate value affecting the simulated profile is unsupported by the paper. The builder also defaulted Tlag and assumed first-order depot input with apparent bioavailability parameterization (F=1, Fm=1, no molar correction). A second reader disputed the dose compound, primary analyte, and clearance-parameter assignment; agreement was 0.625. Extracted — bisoprolol: CL/F 0.12 l/h, V 44.8 l, CL 6.33 l/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — bisoprolol: CL/F 0.12 l/h, V 44.8 l, CL 6.33 l/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bisoprolol, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.625 (5 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.625 | cross-check contradicted by a second reader: verdict disputed; agreement 0.625 (5 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

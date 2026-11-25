@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record for clevidipine butyrate was held back due to a cross-check disagreement on specific parameter values for the (-)-R enantiomer.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Ericsson2001_reference" status="needs_review" stale="false" population="essential hypertensive patients" measured-compound="clevidipine enantiomers" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Ericsson H, Schwieler J, Lindmark BO, Löfdahl P, Thulin T, Regårdh CG. Enantio
 
 ### Reviewer guidance
 
-**Record for clevidipine butyrate was held back due to a cross-check disagreement on specific parameter values for the (-)-R enantiomer.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagreed on the recorded blood clearance of 0.103 l/min/kg and volume of distribution at steady state of 0.39 l/kg for the (-)-R-clevidipine enantiomer. Additionally, the reader disputed the primary analyte identification, preferring (-)-R-clevidipine over the recorded clevidipine enantiomers. Because the record was built from abstract-only data, these summary statistics stood in for a fitted model, complicating the verification of the specific enantiomer parameters. Extracted — clevidipine enantiomers: CLb 0.103 l/min/kg, Vss 0.39 l/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is clevidipine's own; they describe clevidipine enantiomers. Extracted — clevidipine enantiomers: CLb 0.103 l/min/kg, Vss 0.39 l/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has clevidipine enantiomers, the second reading -R-clevidipine; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -141,7 +141,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.333 (3 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check contradicted by a second reader: verdict disputed; agreement 0.333 (3 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

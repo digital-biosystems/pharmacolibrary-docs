@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Eculizumab Vmax, 25.6 mg/day, was refused because the unit could not be converted to standard SI units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/day ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Ter2025_reference" status="rejected" stale="false" population="adults with paroxysmal nocturnal hemoglobinuria and atypical hemolytic uremic syndrome" measured-compound="eculizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Ter Avest M, Langemeijer SMC, van den Heuvel LPWJ, Baas LM, van de Kar NCAJ, Ter
 
 ### Reviewer guidance
 
-**Eculizumab Vmax, 25.6 mg/day, was refused because the unit could not be converted to standard SI units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/day ([mass] / [time]) vs [mass] / [time].**
 
-The record specifies Vmax, the maximum rate of metabolism, as 25.6 mg/day. The findings indicate this specific unit is not recognized in the standard conversion system, preventing conversion to SI units. Consequently, the parameter was held back as it lacks a valid SI value. Extracted — classical pathway activity: CL 0.163 L/day, V1 4.3 L, V2 2.6 L, Q 0.62 L/day, Vmax 25.6 mg/day.
+A reported unit could not be converted (Vmax), so that value has no SI equivalent. None of the extracted parameters is eculizumab's own; they describe classical pathway activity. Extracted — classical pathway activity: CL 0.163 L/day, V1 4.3 L, V2 2.6 L, Q 0.62 L/day, Vmax 25.6 mg/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has eculizumab, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

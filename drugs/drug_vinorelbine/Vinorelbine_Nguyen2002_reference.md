@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinorelbine&quot;,&quot;href&quot;:&quot;drugs/drug_vinorelbine/&quot;},{&quot;label&quot;:&quot;Nguyen_2002 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinorelbine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinorelbine/Vinorelbine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -8,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="vinorelbine" model-id="Vinorelbine_Nguyen2002_reference" status="rejected" stale="false" population="patients in three phase I trials" measured-compound="vinorelbine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vinorelbine" model-id="Vinorelbine_Nguyen2002_reference" status="rejected" stale="false" population="patients in phase I clinical trials" measured-compound="vinorelbine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nguyen L, Tranchand B, Puozzo C, Variol P. Population pharmacokinetics model and limited sampling strategy for intravenous vinorelbine derived from phase I clinical trials. British journal of clinical pharmacology 53(5):459–468 (2002).
@@ -16,7 +17,7 @@ Nguyen L, Tranchand B, Puozzo C, Variol P. Population pharmacokinetics model and
 
 ## Population and dosing
 
-**Population:** patients in three phase I trials · n = 64.
+**Population:** patients in phase I clinical trials · age group adult.
 
 ## Model
 
@@ -32,7 +33,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,25 +55,25 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 | label (paper) | Q-code | link |
 |---|---|---|
-| CLtotal | Q22 | llm |
+| CLtotal (l h-1) | Q22 | llm |
 
 ## Departures & gaps
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vinorelbine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Nguyen_2002_metadata.yaml (1 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (5/5 fields) | none |
 | `qwen3.8-27b` | partly confirmed | 0.8 (4/5 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
@@ -120,4 +121,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinorelbine%5D%20Vinorelbine_Nguyen2002_reference&body=Drug%3A%20vinorelbine%0ARecord%3A%20Vinorelbine_Nguyen2002_reference%0APaper%3A%20Nguyen_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinorelbine/Vinorelbine_Nguyen2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 15:15 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:20 UTC</sub>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The fosinoprilat record was rejected because macro-rate and elimination constants carry volume per time units instead of reciprocal time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit L/hr ([length] ** 3 / [time]) vs 1 / [time]; Q47 unit L/hr ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="fosinopril" model-id="Fosinopril_Hu1997_caucasian" status="rejected" stale="false" population="healthy Chinese and white men" measured-compound="fosinoprilat" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Hu OY, Ding PY, Huang CS, Hwang GM, Chu KM. Pharmacokinetics of fosinoprilat in 
 
 ### Reviewer guidance
 
-**The fosinoprilat record was rejected because macro-rate and elimination constants carry volume per time units instead of reciprocal time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit L/hr ([length] ** 3 / [time]) vs 1 / [time]; Q47 unit L/hr ([length] ** 3 / [time]) vs 1 / [time].**
 
-The fast-phase macro-rate constant is 3.85 L/hr and the elimination rate constant is 0.55 L/hr, both dimensionally invalid for rate constants. Additionally, the fraction excreted unchanged in urine, reported as 45.90%, is stored with the unit 'n = 9'. A second reader also disagreed on the presence of values for several parameters, including AUC∞ and clearance. Extracted — fosinoprilat: λ1 3.85 L/hr, kel 0.55 L/hr, t1/2α 0.33 hr, t1/2β 1.58 hr, t1/2γ 8.24 hr, V 58.1 mL/kg, Vss 1.16e+04 mL, AUC∞ 3.42e+03 ng · hr/mL, … (+3).
+A reported unit could not be converted (λ1, kel, AUC∞ and fe), so that value has no SI equivalent. None of the extracted parameters is fosinopril's own; they describe fosinoprilat. Extracted — fosinoprilat: λ1 3.85 L/hr, kel 0.55 L/hr, t1/2α 0.33 hr, t1/2β 1.58 hr, t1/2γ 8.24 hr, V 58.1 mL/kg, Vss 1.16e+04 mL, AUC∞ 3.42e+03 ng · hr/mL, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aucinf: this record has 3423, the second reading none; it also differs on 12 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

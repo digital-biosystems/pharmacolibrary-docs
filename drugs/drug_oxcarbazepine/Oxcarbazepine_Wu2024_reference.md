@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because MHD apparent clearance is reported as −5.6 L/h, an implausible negative value.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="oxcarbazepine" model-id="Oxcarbazepine_Wu2024_reference" status="rejected" stale="false" population="Chinese paediatric patients with epilepsy" measured-compound="MHD" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Wu W, Yang WS, Xu XY, Ge XL, Lu J, Wang GF et al. Population pharmacokinetics of
 
 ### Reviewer guidance
 
-**The record was rejected because MHD apparent clearance is reported as −5.6 L/h, an implausible negative value.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-CLm/F is the metabolite’s apparent clearance, and the reported value for MHD is −5.6 L/h. The record also lists a negative elimination rate of −4.8 1/h and a negative peripheral-to-central transfer rate of −4.1 1/h. The second reader disputed the extracted values for these parameters and classified the parameterization as mechanistic rather than apparent. Extracted — MHD: CLm/F -5.6 L/h, V 0.7 L, kabs 0.83 h⁻¹, kel -4.8 1/h, k21 -4.1 1/h.
+None of the extracted parameters is oxcarbazepine's own; they describe MHD. Extracted — MHD: CLm/F -5.6 L/h, V 0.7 L, kabs 0.83 h⁻¹, kel -4.8 1/h, k21 -4.1 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -32,15 +32,11 @@ Remoxipride is a benzamide antipsychotic that was previously used to treat schiz
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Taneja_2016_PRL_2](drugs/drug_remoxipride/pd_Taneja_2016_PRL_2.md) | prolactin ← remoxipride · delayed effect through transit (transduction) compartments | — | Taneja A et al., A comparison of two semi-mechanistic mo…, European journal of pharmac… (2016) | [10.1016/j.ejphar.2016.07.005](https://doi.org/10.1016/j.ejphar.2016.07.005) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ma_2010_PRL](drugs/drug_remoxipride/pd_Ma_2010_PRL.md) | prolactin ← remoxipride · inhibition effect | — | Ma G et al., Comparison of the agonist-antagonist in…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03758.x](https://doi.org/10.1111/j.1365-2125.2010.03758.x) |
 | <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Taneja_2016_2_Prl](drugs/drug_remoxipride/pd_Taneja_2016_2_Prl.md) | plasma prolactin biomarker turnover ← remoxipride | — | Taneja A et al., Summary data of potency and parameter i…, Data in brief (2016) | [10.1016/j.dib.2016.07.060](https://doi.org/10.1016/j.dib.2016.07.060) |
 | <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Taneja_2016_2_Prl_2](drugs/drug_remoxipride/pd_Taneja_2016_2_Prl_2.md) | plasma prolactin biomarker turnover ← remoxipride | — | Taneja A et al., Summary data of potency and parameter i…, Data in brief (2016) | [10.1016/j.dib.2016.07.060](https://doi.org/10.1016/j.dib.2016.07.060) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [van_2017_plasma_endogenous_metabolites_44_detected_18_potential_biomarkers](drugs/drug_remoxipride/pd_van_2017_plasma_endogenous_metabolites_44_detected_18_potent.md) | plasma endogenous metabolites (44 detected; 18 potential biomarkers) ← remoxipride · inhibition effect | — | van den Brink WJ et al., Multivariate pharmacokinetic/pharmacody…, European journal of pharmac… (2017) | [10.1016/j.ejps.2017.08.031](https://doi.org/10.1016/j.ejps.2017.08.031) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Movin-Osswald_1995_PRL](drugs/drug_remoxipride/pd_Movin_Osswald_1995_PRL.md) | prolactin (PRL) plasma levels biomarker turnover ← remoxipride | — | Movin-Osswald G et al., Prolactin release after remoxipride by…, The Journal of pharmacology… (1995) | — |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">rat</span> | [Stevens_2012_PRL](drugs/drug_remoxipride/pd_Stevens_2012_PRL.md) | prolactin plasma concentration biomarker turnover ← remoxipride (free brain extracellular fluid) | — | Stevens J et al., Mechanism-based PK-PD model for the pro…, Journal of pharmacokinetics… (2012) | [10.1007/s10928-012-9262-4](https://doi.org/10.1007/s10928-012-9262-4) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Taneja_2016_PRL](drugs/drug_remoxipride/pd_Taneja_2016_PRL.md) | prolactin ← remoxipride · indirect response — drug inhibits the production of prolactin | — | Taneja A et al., A comparison of two semi-mechanistic mo…, European journal of pharmac… (2016) | [10.1016/j.ejphar.2016.07.005](https://doi.org/10.1016/j.ejphar.2016.07.005) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [van_2017_2_ACTH](drugs/drug_remoxipride/pd_van_2017_2_ACTH.md) | plasma adrenocorticotrophic hormone ← remoxipride · stimulation effect | — | van den Brink WJ et al., Revealing the Neuroendocrine Response A…, The AAPS journal (2017) | [10.1208/s12248-016-0002-3](https://doi.org/10.1208/s12248-016-0002-3) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [van_2017_2_PRL](drugs/drug_remoxipride/pd_van_2017_2_PRL.md) | plasma prolactin ← remoxipride · stimulation effect | — | van den Brink WJ et al., Revealing the Neuroendocrine Response A…, The AAPS journal (2017) | [10.1208/s12248-016-0002-3](https://doi.org/10.1208/s12248-016-0002-3) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [van_2017_2_ACTH](drugs/drug_remoxipride/pd_van_2017_2_ACTH.md) | plasma adrenocorticotrophic hormone ← remoxipride · stimulation effect | — | van den Brink WJ et al., Revealing the Neuroendocrine Response A…, The AAPS journal (2017) | [10.1208/s12248-016-0002-3](https://doi.org/10.1208/s12248-016-0002-3) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [van_2017_2_PRL](drugs/drug_remoxipride/pd_van_2017_2_PRL.md) | plasma prolactin ← remoxipride · stimulation effect | — | van den Brink WJ et al., Revealing the Neuroendocrine Response A…, The AAPS journal (2017) | [10.1208/s12248-016-0002-3](https://doi.org/10.1208/s12248-016-0002-3) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +50,7 @@ Remoxipride is a benzamide antipsychotic that was previously used to treat schiz
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 17:09 | 2:39 | 1/0/0 | 9/0/0 | 0/0/0 | 117,040/11,705 | ollama / glm-5.3-flash | 2 | 1/1 | 2/0 | 0 |
+| 2026-11-24 03:55 | 0:38 | 1/0/0 | 5/0/0 | 0/0/0 | 22,483/4,513 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## Coverage
 
@@ -65,32 +61,37 @@ Remoxipride is a benzamide antipsychotic that was previously used to treat schiz
 
 ## Full-text requests
 
-_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Stevens_2011.pdf` | Stevens J et al., Systemic and direct nose-to-brain trans…, Drug metabolism and disposi… (2011) | popPK | 10 | [10.1124/dmd.111.040782](https://doi.org/10.1124/dmd.111.040782) | [21903866](https://pubmed.ncbi.nlm.nih.gov/21903866) | Population PK model of remoxipride in rats with quantitative bioavailability/absorption parameters, but most parameter values (CL, V, ka) appear only in the full paper/tables not included here; only AUC ratios and bioavailability percentages are in the abstract. |
-| `Widerlöv_1989.pdf` | Widerlöv E et al., Effect of urinary pH on the plasma and…, European journal of clinica… (1989) | popPK | 10 | [10.1007/BF00558500](https://doi.org/10.1007/BF00558500) | [2574673](https://pubmed.ncbi.nlm.nih.gov/2574673) | Human crossover study reporting remoxipride half-life, plasma and renal clearance values directly in the abstract. |
-| `Movin-Osswald_1995.pdf` | Movin-Osswald G et al., Prolactin release after remoxipride by…, The Journal of pharmacology… (1995) | popPK | 8 |  | [7636755](https://pubmed.ncbi.nlm.nih.gov/7636755) | A population/integrated PK-PD model of remoxipride itself in humans, but the evidence contains no numeric parameter values (likely in tables/figures not provided). |
-| `Stevens_2012.pdf` | Stevens J et al., Mechanism-based PK-PD model for the pro…, Journal of pharmacokinetics… (2012) | popPK | 8 | [10.1007/s10928-012-9262-4](https://doi.org/10.1007/s10928-012-9262-4) | [22791078](https://pubmed.ncbi.nlm.nih.gov/22791078) | A PK model for remoxipride (brain ECF concentrations) is central, but no numeric parameter values appear in the evidence; they likely reside in figures/tables not provided. |
+| `Widerlöv_1989.pdf` | Widerlöv E et al., Effect of urinary pH on the plasma and…, European journal of clinica… (1989) | popPK | 10 | [10.1007/BF00558500](https://doi.org/10.1007/BF00558500) | [2574673](https://pubmed.ncbi.nlm.nih.gov/2574673) | The abstract explicitly reports quantitative PK parameters including clearance, half-life, and urinary excretion data for remoxipride in humans. |
 
-<sub>queue written 2026-10-06 17:06 UTC</sub>
+<sub>queue written 2026-11-24 03:54 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ma_2010 | irrelevant | 3 | 2 | This is a PD (prolactin response) modeling study using remoxipride; PK parameters are not reported and any values are not present in the evidence. |
-| popPK | Movin-Osswald_1995 | relevant | 8 | 2 | A population/integrated PK-PD model of remoxipride itself in humans, but the evidence contains no numeric parameter values (likely in tables/figures not provided). |
-| popPK | Rinken_1999 | irrelevant | 0 | 0 | In vitro receptor binding study in rat striatal membranes; remoxipride is only an antagonist in a potency ranking, with no PK parameters. |
-| popPK | Stevens_2011 | relevant | 10 | 4 | Population PK model of remoxipride in rats with quantitative bioavailability/absorption parameters, but most parameter values (CL, V, ka) appear only in the full paper/tables not included here; only AUC ratios and bioavailability percentages are in the abstract. |
-| popPK | Stevens_2012 | relevant | 8 | 2 | A PK model for remoxipride (brain ECF concentrations) is central, but no numeric parameter values appear in the evidence; they likely reside in figures/tables not provided. |
-| popPK | Taneja_2016 | relevant | 4 | 2 | Population PK-PD modeling of remoxipride in rats, but only PD parameters (EC50, KI) are given numerically; PK disposition values are not shown in the evidence. |
-| popPK | van_2017 | irrelevant | 3 | 2 | PKPD modeling of endogenous metabolites in rats dosed with remoxipride; remoxipride PK parameters not reported and numeric values not present in evidence. |
+| popPK | Ma_2010 | irrelevant | 1 | 0 | The study models the pharmacodynamic effect on prolactin (tolerance) rather than reporting pharmacokinetic parameters (CL, V, etc.) for remoxipride. |
+| PGx | Ma_2010 | not_relevant | 0 | 0 | The paper models prolactin response kinetics (pool vs AAI model) in healthy subjects without investigating any genetic variants or pharmacogenomic factors. |
+| popPK | Movin-Osswald_1995 | relevant | 8 | 0 | The paper describes a PK-PD model for remoxipride, but the extracted evidence contains only a qualitative abstract without any specific numeric PK parameter values (e.g., CL, V, t1/2). |
+| PGx | Movin-Osswald_1995 | not_relevant | 0 | 0 | The paper describes a PK/PD model for remoxipride and prolactin but does not report any analysis of gene variants or genotypes affecting these parameters. |
+| popPK | Rinken_1999 | irrelevant | 0 | 0 | This is an in vitro pharmacological study measuring dopamine receptor binding affinities, not a pharmacokinetic study reporting disposition parameters for remoxipride. |
+| PGx | Rinken_1999 | not_relevant | 0 | 0 | The paper reports a binding affinity of remoxipride in an in vitro assay but does not investigate any gene variants, genotypes, or pharmacogenomic effects on its pharmacokinetics or pharmacodynamics. |
+| popPK | Stevens_2011 | relevant | 10 | 3 | The study reports a compartmental pharmacokinetic model for remoxipride in rats, but specific numeric parameter values (CL, V, ka) are not present in the provided abstract text. |
+| PGx | Stevens_2011 | not_relevant | 0 | 0 | The paper reports pharmacokinetic modeling of remoxipride in rats involving intranasal vs. intravenous administration, but does not investigate gene variants or genotypes. |
+| popPK | Stevens_2012 | relevant | 7 | 1 | The paper describes a mechanism-based PK-PD model for remoxipride in rats and humans, but the specific quantitative PK parameter values are not listed in the provided text evidence. |
+| PGx | Stevens_2012 | not_relevant | 0 | 0 | The paper reports a mechanistic PK-PD model for remoxipride in rats and extrapolations to humans, but contains no data on pharmacogenomic effects of genetic variants. |
+| popPK | Taneja_2016 | irrelevant | 1 | 0 | The study focuses on pharmacodynamics (prolactin release and receptor occupancy) rather than reporting quantitative disposition parameters (CL, V, etc.) for remoxipride. |
+| PGx | Taneja_2016 | not_relevant | 0 | 0 | The study compares pharmacokinetic-pharmacodynamic models in rats and does not investigate gene variants or pharmacogenomic effects. |
+| PGx | Widerlöv_1989 | not_relevant | 0 | 0 | The study investigates the effect of urinary pH (induced by ammonium chloride/sodium hydrogen carbonate) on PK parameters, not the effect of a genetic variant, genotype, or phenotype. |
+| popPK | van_2017 | irrelevant | 1 | 0 | The study focuses on pharmacodynamic metabolomics biomarkers and PKPD models for metabolites rather than quantitative pharmacokinetic disposition parameters (CL, V, ka) for remoxipride itself. |
+| PGx | van_2017 | not_relevant | 0 | 0 | The paper analyzes PKPD in rats using metabolomics but does not investigate the influence of genetic variants, genotypes, or pharmacogenomic phenotypes on these parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremoxipride%5D&body=Drug%3A%20remoxipride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remoxipride/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 17:07 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 03:54 UTC</sub>

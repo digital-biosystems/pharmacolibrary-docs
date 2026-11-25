@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The bleomycin Km parameter was rejected because its unit, min/ml, conflicts with the required dimensions for an enzyme affinity constant.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit min/ml ([time] / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Alberts1978_m_r_24_u" status="rejected" stale="false" population="adults" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Alberts DS, Chen HS, Liu R, Himmelstein KJ, Mayersohn M, Perrier D et al. Bleomy
 
 ### Reviewer guidance
 
-**The bleomycin Km parameter was rejected because its unit, min/ml, conflicts with the required dimensions for an enzyme affinity constant.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit min/ml ([time] / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The Km value of 366.8 was recorded with a unit of min/ml, which the review flagged as a dimension mismatch. This unit implies a rate constant rather than the concentration-based affinity expected for Km. Additionally, a second reader disagreed with the classification of the terminal half-life and volume of distribution parameters. Extracted — bleomycin: t1/2α 24.6 min, t1/2z 266 min, Km 367 min/ml, Vnorm 15.2 L/M2, Q 39.9 ml/min/m2, Ae 54.8, CL 70 ml/min, V 32.2 L.
+A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — bleomycin: t1/2α 24.6 min, t1/2z 266 min, Km 367 min/ml, Vnorm 15.2 L/M2, Q 39.9 ml/min/m2, Ae 54.8, CL 70 ml/min, V 32.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[24-h urinary excretion % dose].parameter_id`: this record has Q91, the second reading Q44; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

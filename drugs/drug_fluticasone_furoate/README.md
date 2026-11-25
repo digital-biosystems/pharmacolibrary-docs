@@ -53,7 +53,7 @@ Fluticasone furoate is a corticosteroid used to manage allergic rhinitis and chr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:57 | 2:25 | 6/2/0 | 0/0/0 | 0/0/0 | 90,644/7,518 | ollama / glm-5.3-flash | 4 | 0/4 | 4/0 | 0 |
+| 2026-11-23 23:57 | 0:05 | 6/2/0 | 0/0/0 | 0/0/0 | 5,283/173 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
 
 ## Coverage
 
@@ -64,22 +64,25 @@ Fluticasone furoate is a corticosteroid used to manage allergic rhinitis and chr
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Yang_2021.pdf` | Yang S et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2021) | popPK | 10 | [10.1007/s40262-021-00988-1](https://doi.org/10.1007/s40262-021-00988-1) | [33598874](https://pubmed.ncbi.nlm.nih.gov/33598874) | Population PK model for FF in humans is described, but numeric parameter values (CL, V, ka) are not in the abstract/evidence, likely in tables or supplementary material not provided. |
-| `Allen_2016.pdf` | Allen A et al., Population pharmacokinetics of inhaled…, International journal of cl… (2016) | popPK | 9 | [10.5414/CP202438](https://doi.org/10.5414/CP202438) | [26902504](https://pubmed.ncbi.nlm.nih.gov/26902504) | Population PK model of fluticasone furoate (two-compartment, first-order absorption) in asthma patients, but actual CL/V/ka parameter values are not shown in the evidence, only covariate effect percentages. |
+| `Yang_2021.pdf` | Yang S et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2021) | popPK | 10 | [10.1007/s40262-021-00988-1](https://doi.org/10.1007/s40262-021-00988-1) | [33598874](https://pubmed.ncbi.nlm.nih.gov/33598874) | The study describes a population PK model for fluticasone furoate but provides only qualitative model descriptions and covariate findings without listing the specific numeric parameter values (CL, V, Q, etc.). |
 
-<sub>queue written 2026-10-07 12:55 UTC</sub>
+<sub>queue written 2026-11-23 23:57 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Allen_2016 | relevant | 9 | 3 | Population PK model of fluticasone furoate (two-compartment, first-order absorption) in asthma patients, but actual CL/V/ka parameter values are not shown in the evidence, only covariate effect percentages. |
-| popPK | Yang_2017 | irrelevant | 0 | 0 | The population PK model is for umeclidinium; fluticasone furoate is only mentioned as a co-developed combination partner, with no FF parameters reported. |
-| popPK | Yang_2021 | relevant | 10 | 3 | Population PK model for FF in humans is described, but numeric parameter values (CL, V, ka) are not in the abstract/evidence, likely in tables or supplementary material not provided. |
+| popPK | Allen_2016 | relevant | 10 | 2 | The paper describes a population PK model for fluticasone furoate, but specific numeric parameter estimates (CL, V, Q) are not provided in the text, likely residing in tables or supplementary material not included. |
+| popPK | Venkatesan_2016 | irrelevant | 0 | 0 | The study is a clinical trial investigating immunological and clinical outcomes (IL-17, symptom scores) rather than pharmacokinetic disposition parameters. |
+| PGx | Venkatesan_2016 | not_relevant | 0 | 0 | The paper reports clinical and immunological outcomes of fluticasone furoate but does not investigate pharmacogenomic variations or their effects on PK/PD parameters. |
+| popPK | Yang_2017 | irrelevant | 0 | 0 | The study models the pharmacokinetics of umeclidinium, with fluticasone furoate mentioned only as a co-administered drug in development. |
+| PGx | Yang_2017 | not_relevant | 0 | 0 | The paper focuses on the population pharmacokinetics of umeclidinium and does not report any pharmacogenomic effects on fluticasone furoate. |
+| popPK | Yang_2021 | relevant | 10 | 0 | The study describes a population PK model for fluticasone furoate but provides only qualitative model descriptions and covariate findings without listing the specific numeric parameter values (CL, V, Q, etc.). |
+| PGx | Yang_2021 | not_relevant | 0 | 0 | The paper reports non-genetic covariates (weight, CrCl, race) affecting PK, but does not investigate or report any pharmacogenomic (gene variant) effects. |
 
 
 </details>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clonidine clearance uses an incompatible velocity unit, and the model lacks a flow parameter connecting the two compartments.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time]; Q22 unit c ([length] / [time]) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Potts2007_reference" status="rejected" stale="false" population="children" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Potts AL, Larsson P, Eksborg S, Warman G, Lönnqvist PA, Anderson BJ. Clonidine 
 
 ### Reviewer guidance
 
-**Clonidine clearance uses an incompatible velocity unit, and the model lacks a flow parameter connecting the two compartments.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time]; Q22 unit c ([length] / [time]) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The total clearance of 0.262 is recorded in units of 'c', which represents a velocity rather than the volume per time required for this parameter. Additionally, the two-compartment structure is missing the intercompartmental clearance parameter, leaving the peripheral compartment disconnected from the central one. Extracted — clonidine: kabs 24.5 h, tlag 73.2 min, CL 0.262 c, V1 1.23, V2 1.26.
+A reported unit could not be converted (kabs and CL), so that value has no SI equivalent. Extracted — clonidine: kabs 24.5 h, tlag 73.2 min, CL 0.262 c, V1 1.23, V2 1.26.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clonidine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

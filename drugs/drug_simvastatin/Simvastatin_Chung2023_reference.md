@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Simvastatin clearance and absorption parameters were derived from dabigatran co-administration data, and absorption rates were defaulted.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Chung2023_reference" status="needs_review" stale="false" population="" measured-compound="simvastatin" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Chung H, Kim JM, Park JW, Noh J, Kim KA, Park JY. Effects of Simvastatin on Phar
 
 ### Reviewer guidance
 
-**Simvastatin clearance and absorption parameters were derived from dabigatran co-administration data, and absorption rates were defaulted.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The recorded clearance of 5235.1 L/h and volume of 21147.4279 L are explicitly labeled as dabigatran etexilate values from a co-administration study. The absorption rate constant was not reported in the source, requiring the use of library defaults instead of estimates supported by the Chung_2023 paper. Extracted — simvastatin: CL/F 5.24e+03 L/h, V/F 2.11e+04 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — simvastatin: CL/F 5.24e+03 L/h, V/F 2.11e+04 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 33.7, the second reading 33.7; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.333 (5 of 15 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check contradicted by a second reader: verdict disputed; agreement 0.333 (5 of 15 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

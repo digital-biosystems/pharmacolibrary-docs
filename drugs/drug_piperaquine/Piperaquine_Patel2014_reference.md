@@ -9,7 +9,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="Piperaquine" model-id="Piperaquine_Patel2014_reference" status="needs_review" stale="false" population="Plasmodium berghei-infected Swiss mice" measured-compound="piperaquine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Piperaquine" model-id="Piperaquine_Patel2014_reference" status="needs_review" stale="false" population="mice infected with P. berghei" measured-compound="piperaquine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Patel K, Batty KT, Moore BR, Gibbons PL, Kirkpatrick CM. Predicting the parasite killing effect of artemisinin combination therapy in a murine malaria model. The Journal of antimicrobial chemotherapy 69(8):2155–2163 (2014).
@@ -17,7 +17,7 @@ Patel K, Batty KT, Moore BR, Gibbons PL, Kirkpatrick CM. Predicting the parasite
 
 ## Population and dosing
 
-**Population:** Plasmodium berghei-infected Swiss mice · condition malaria (murine P. berghei infection).
+**Population:** mice infected with P. berghei · condition malaria.
 
 **Dosed compound ≠ measured compound:** dosed piperaquine phosphate, measured piperaquine.
 
@@ -35,11 +35,11 @@ Patel K, Batty KT, Moore BR, Gibbons PL, Kirkpatrick CM. Predicting the parasite
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| estimated clearance | CL | 1.95 | L/h |
+| clearance | CL | 1.95 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,7 +61,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| estimated clearance | `Q22` · CL | 1.95 | L/h | 5.417e-07 | m3/s | l/h | llm_confirmed (0.6) | Patel_2014:abstract, Patel_2014:abstract |
+| clearance | `Q22` · CL | 1.95 | L/h | 5.417e-07 | m3/s | l/h | exact (1) | Patel_2014:abstract, Patel_2014:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,8 +73,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=piperaquine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Patel_2014_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
@@ -82,18 +80,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (1/5 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
 <details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
-| `gpt-oss-120b` | `parameters[estimated clearance]` | 1.95 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 1.95 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated clearance]` |  | 1.95 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | piperaquine phosphate | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | piperaquine | unknown | mismatch |
 
@@ -149,4 +147,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpiperaquine%5D%20Piperaquine_Patel2014_reference&body=Drug%3A%20piperaquine%0ARecord%3A%20Piperaquine_Patel2014_reference%0APaper%3A%20Patel_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_piperaquine/Piperaquine_Patel2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 07:37 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:00 UTC</sub>

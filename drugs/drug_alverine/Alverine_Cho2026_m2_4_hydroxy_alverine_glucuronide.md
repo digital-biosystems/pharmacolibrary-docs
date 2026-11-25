@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> Alverine metabolite M2 is unreachable from the dose, and alverine units failed dimensional validation.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit μmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q74 unit μmol·h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q17 unit μmol·h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="alverine" model-id="Alverine_Cho2026_m2_4_hydroxy_alverine_glucuronide" status="rejected" stale="false" population="mice" measured-compound="alverine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -53,13 +53,13 @@ Cho A, Jeong HC, Kim M, Cho I, Na HJ, Ko KC et al. Development of Integrated Par
 
 ### Reviewer guidance
 
-**Alverine metabolite M2 is unreachable from the dose, and alverine units failed dimensional validation.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit μmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q74 unit μmol·h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q17 unit μmol·h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-Metabolite M2 is formed from M1, but M1 lacks a link from alverine in the provided link list, creating an orphan compartment. Additionally, the units for parameters with values 0.4097, 0.9525, and 0.9457 were flagged as dimensionally inconsistent. A second reader could not confirm the dose compound or the values for Cmax, AUClast, AUCinf, t1/2, and tmax. Extracted — alverine: tmax 0.417 h, Cmax 0.41 μmol/L, AUClast 0.946 μmol·h/L, AUC∞ 0.953 μmol·h/L, t1/2z 1.69 h; M2: AUC ratio 1.67 Metabolite/Parent.
+A reported unit could not be converted (Cmax, AUClast, AUC∞ and AUC ratio), so that value has no SI equivalent. Extracted — alverine: tmax 0.417 h, Cmax 0.41 μmol/L, AUClast 0.946 μmol·h/L, AUC∞ 0.953 μmol·h/L, t1/2z 1.69 h; M2: AUC ratio 1.67 Metabolite/Parent.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alverine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

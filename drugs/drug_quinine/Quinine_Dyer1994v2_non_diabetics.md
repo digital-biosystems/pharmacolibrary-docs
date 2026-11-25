@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;quinine&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/&quot;},{&quot;label&quot;:&quot;Dyer_1994_2 \u00b7 non_diabetics&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Alvan_2017_hearing_threshold_shift_2&quot;,&quot;label&quot;:&quot;Alvan_2017 \u00b7 hearing threshold shift&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Alvan_2017_hearing_threshold_shift_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Garrido_2003_CL_M10&quot;,&quot;label&quot;:&quot;Garrido_2003 \u00b7 CL(M10)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Garrido_2003_CL_M10.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_parasitemia&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 parasitemia&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_parasitemia.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pukrittayakamee_2003_E&quot;,&quot;label&quot;:&quot;Pukrittayakamee_2003 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Pukrittayakamee_2003_E.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Dyer1994v2_diabetics&quot;,&quot;label&quot;:&quot;Dyer_1994_2_diabetics&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Dyer1994v2_diabetics.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Dyer1994v2_non_diabetics&quot;,&quot;label&quot;:&quot;Dyer_1994_2_non_diabetics&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_White1983_reference&quot;,&quot;label&quot;:&quot;White_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_White1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Garrido_2003_CL_M10&quot;,&quot;label&quot;:&quot;Garrido_2003 \u00b7 CL(M10)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Garrido_2003_CL_M10.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_parasitemia&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 parasitemia&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_parasitemia.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Only clearance was extracted — no volume; λ1 has no unit.
+> cross_check_disputed; x1_cross_check.
 
-<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Dyer1994v2_non_diabetics" status="needs_review" stale="false" population="elderly diabetic and non-diabetic adults" measured-compound="quinine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Dyer1994v2_non_diabetics" status="needs_review" stale="false" population="diabetic and non-diabetic elderly" measured-compound="quinine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Dyer JR, Davis TM, Giele C, Annus T, Garcia-Webb P, Robson J. The pharmacokinetics and pharmacodynamics of quinine in the diabetic and non-diabetic elderly. British journal of clinical pharmacology 38(3):205–212 (1994).
@@ -17,34 +17,35 @@ Dyer JR, Davis TM, Giele C, Annus T, Garcia-Webb P, Robson J. The pharmacokineti
 
 ## Population and dosing
 
-**Population:** elderly diabetic and non-diabetic adults · condition non-insulin-dependent diabetes and healthy elderly controls · age group elderly · n = 22.
+**Population:** diabetic and non-diabetic elderly · condition diabetes mellitus and healthy controls · age group elderly.
 
 **Dosing:** 600 mg, oral, single.
 
-**Dosed compound ≠ measured compound:** dosed quinine sulphate, measured quinine.
-
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 6 extracted.  
-**Availability:** No model was generated from this record.
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 7 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics/Quinine_Dyer1994v2_non_diabetics.svg" alt="Quinine_Dyer1994v2_non_diabetics diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Volume of distribution (V/F) 1 kg-1 | Vnorm/F | 1.70 | L/kg |
+| Volume of distribution (V/F) 1 kg-1 | V/F | 1.70 | L/kg |
 | Absorption lag-time (t_lag) h | tlag | 1.0 | h |
 | Absorption half-time (t_1/2,abs) h | t1/2ka | 0.6 | h |
 | Maximum concentration (C_max) mg 1-1 | Cmax | 3.4 | mg/L |
-| Elimination half-time (t_1/2,l) h | λ1 | 19.9 |  |
+| Elimination half-time (t_1/2,l) h | t1/2z | 19.9 | h |
 | Systemic clearance (CL/F) ml kg-1 min-1 | CL/F | 1.07 | mL/kg/min |
+| Serum unbound drug (%) | fu | 19 | % |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.909). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,24 +55,25 @@ Dyer JR, Davis TM, Giele C, Annus T, Garcia-Webb P, Robson J. The pharmacokineti
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; λ1 has no unit.**
+**cross_check_disputed; x1_cross_check.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Cmax), so that value has no SI equivalent. Extracted — quinine: Vnorm/F 1.7 L/kg, tlag 1 h, t1/2ka 0.6 h, Cmax 3.4 mg/L, λ1 19.9, CL/F 1.07 mL/kg/min.
+A reported unit could not be converted (Cmax), so that value has no SI equivalent. Extracted — quinine: V/F 1.7 L/kg, tlag 1 h, t1/2ka 0.6 h, Cmax 3.4 mg/L, t1/2z 19.9 h, CL/F 1.07 mL/kg/min, fu 19 %.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[elimination half-time (t_1/2,l) h].parameter_id`: this record has Q67, the second reading Q57; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has quinine, the second reading quinine sulphate. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Volume of distribution (V/F) 1 kg-1 | `Q353` · Vnorm/F | 1.70 | L/kg | 0.119 | m3 | L | llm_corrected (0.6) | Dyer_1994_2_table_p3_1:row0:col1 |
+| Volume of distribution (V/F) 1 kg-1 | `Q76` · V/F | 1.70 | L/kg | 0.119 | m3 | L | llm_corrected (0.6) | Dyer_1994_2_table_p3_1:row0:col1 |
 | Absorption lag-time (t_lag) h | `Q83` · tlag | 1.0 | h | 3600 | s | h | llm_confirmed (0.6) | Dyer_1994_2_table_p3_1:row1:col1 |
 | Absorption half-time (t_1/2,abs) h | `Q95` · t1/2ka | 0.6 | h | 2160 | s | h | llm_corrected (0.6) | Dyer_1994_2_table_p3_1:row2:col1 |
 | Maximum concentration (C_max) mg 1-1 | `Q32` · Cmax | 3.4 | mg/L |  |  | mg/L | llm_confirmed (0.6) | Dyer_1994_2_table_p3_1:row3:col1 |
-| Elimination half-time (t_1/2,l) h | `Q67` · λ1 | 19.9 |  |  |  |  | llm (0.6) | Dyer_1994_2_table_p3_1:row4:col1 |
+| Elimination half-time (t_1/2,l) h | `Q57` · t1/2z | 19.9 | h | 7.164e+04 | s | h | llm_confirmed (0.6) | Dyer_1994_2_table_p3_1:row4:col1 |
 | Systemic clearance (CL/F) ml kg-1 min-1 | `Q27` · CL/F | 1.07 | mL/kg/min | 1.248e-06 | m3/s | L/h | llm_corrected (0.6) | Dyer_1994_2_table_p3_1:row5:col1 |
+| Serum unbound drug (%) | `Q46` · fu | 19 | % | 0.19 |  | % | llm_confirmed (0.6) | Dyer_1994_2_table_p3_1:row6:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -80,45 +82,38 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 
 ## Departures & gaps
 
+**Deviations:**
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `ka_from_half_life`: ka = ln2 / t1/2ka = ln2 / 2160 s = 0.0003209/s (absorption half-life 0.6 h reported, ka not)
+
 **Interpretation flags:**
-- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number 1.07 (source ['tab_0:footnote', 'tab_0:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'fu' from footnote/prose loose number 19 (source ['tab_0:footnote', 'tab_0:footnote']); the table cell was unparseable — needs review
-- implicit units: 'Volume of distribution (V/F) 1 kg-1' → L/kg (from the paper text: 'Table 2 lists volume of distribution normalized per kg body weight (V/F 1 kg-1), i.e. L/kg.')
-- implicit units: 'Absorption lag-time (t_lag) h' → h (from the paper text: "Table 2 shows absorption lag-time in h (t_lag h = 1.0); abstract also reports 'mean absorption lag-time of approximately")
-- implicit units: 'Absorption half-time (t_1/2,abs) h' → h (from the paper text: 'Table 2 lists absorption half-time in h (t1/2,abs h = 0.6).')
-- implicit units: 'Maximum concentration (C_max) mg 1-1' → mg/L (from the paper text: 'Table 2 gives Cmax as mg 1-1 (mg/L); assay concentrations reported in mg l-1.')
-- implicit units: 'Elimination half-time (t_1/2,l) h' — the LLM proposed 'h', whose dimension does not fit Q67; left unset
-- implicit units: 'Systemic clearance (CL/F) ml kg-1 min-1' → mL/kg/min (from the paper text: 'Table 2 states Systemic clearance (CL/F) ml kg-1 min-1 = 1.07.')
+- 'Volume of distribution (V/F) 1 kg-1': unit 'V/F' is a parameter symbol — dropped
+- implicit units: 'Volume of distribution (V/F) 1 kg-1' → L/kg (from the popPK convention: "The text states 'volume of distribution' was assessed. While Table 2 explicitly lists units for clearance (ml kg-1 min-1")
+- implicit units: 'Absorption lag-time (t_lag) h' → h (from the popPK convention: "The abstract states 'mean absorption lag-time of approximately 1 h'. Lag time is a duration, and hours are the standard ")
+- implicit units: 'Absorption half-time (t_1/2,abs) h' → h (from the popPK convention: "The abstract lists 'Absorption and elimination half-times'. Half-times are durations. The paper uses hours (h) for time ")
+- implicit units: 'Maximum concentration (C_max) mg 1-1' → mg/L (from the popPK convention: "The text mentions quinine assay detection limits and CVs in 'mg 1-1' (which denotes mg per liter, as seen in 'mg 1-1' fo")
+- implicit units: 'Elimination half-time (t_1/2,l) h' → h (from the popPK convention: "The abstract lists 'Absorption and elimination half-times'. Half-times are durations. The paper uses hours (h) for time ")
+- implicit units: 'Systemic clearance (CL/F) ml kg-1 min-1' → mL/kg/min (from the paper text: "The table excerpt explicitly states: 'Systemic clearance ... (CL/F) ml kg-1 min-1'.")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=quinine
 - population split: 'non-diabetics' subgroup of Dyer_1994_2 (paper reports 2 populations: diabetics, non-diabetics)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- final table tab_0: grid unusable → re-running vision table extraction for Dyer_1994_2
-- unparsed cell Dyer_1994_2_table_p3_1:row0:col3 = '0.56, -0.56'
-- unparsed cell Dyer_1994_2_table_p3_1:row1:col3 = '0.3, -0.7'
-- unparsed cell Dyer_1994_2_table_p3_1:row2:col3 = '0.3, -0.5'
-- unparsed cell Dyer_1994_2_table_p3_1:row3:col3 = '0.5, -1.1'
-- unparsed cell Dyer_1994_2_table_p3_1:row4:col3 = '6.4, -6.6'
-- unparsed cell Dyer_1994_2_table_p3_1:row5:col2 = '1.14 ±-0.58'
-- unparsed cell Dyer_1994_2_table_p3_1:row5:col3 = '0.41, -0.55'
+- table Dyer_1994_2_table_p3_1: unparsed_numeric_cell
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.833 (10/12 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.909 (10/11 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[elimination half-time (t_1/2,l) h].parameter_id` | Q67 | Q57 | mismatch |
-| `gpt-oss-120b` | `parameters[volume of distribution (v/f) 1 kg-1].parameter_id` | Q353 | Q76 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | quinine | quinine sulphate | mismatch |
 
 </details>
 
@@ -132,18 +127,32 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Dyer_1994_2_table_p3_1:row5:col1'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Dyer_1994_2_table_p3_1:row3:col1'] |
-| C5_dimension_Q353 | pass | [length] ** 3 |  | ['Dyer_1994_2_table_p3_1:row0:col1'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Dyer_1994_2_table_p3_1:row4:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Dyer_1994_2_table_p3_1:row0:col1'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Dyer_1994_2_table_p3_1:row1:col1'] |
 | C5_dimension_Q95 | pass | [time] |  | ['Dyer_1994_2_table_p3_1:row2:col1'] |
-| C5_unit_missing_Q67 | fail | 1 / [time] |  | ['Dyer_1994_2_table_p3_1:row4:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 4.49 L/h | ['Dyer_1994_2_table_p3_1:row5:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 119 L | ['Dyer_1994_2_table_p3_1:row0:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=quinine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.909 (10 of 11 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.909 | cross-check contradicted by a second reader: verdict disputed; agreement 0.909 (10 of 11 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -159,22 +168,68 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics/Quinine_Dyer1994v2_non_diabetics_modelica.zip" download>Quinine_Dyer1994v2_non_diabetics_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics/Quinine_Dyer1994v2_non_diabetics_fmi.zip" download>Quinine_Dyer1994v2_non_diabetics_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics/Quinine_Dyer1994v2_non_diabetics_matlab.zip" download>Quinine_Dyer1994v2_non_diabetics_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics/Quinine_Dyer1994v2_non_diabetics_matlab_simbio.zip" download>Quinine_Dyer1994v2_non_diabetics_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics/Quinine_Dyer1994v2_non_diabetics_sbml.zip" download>Quinine_Dyer1994v2_non_diabetics_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics/Quinine_Dyer1994v2_non_diabetics_cellml.zip" download>Quinine_Dyer1994v2_non_diabetics_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.3244 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `Tlag` | 3600 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 0.0006 | kg |
+| input | model | `Cl` | 1.248e-06 | m3/s |
+| input | model | `VdPerKg` | 0.0017 | m3/kg |
+| input | model | `ka` | 0.0003209 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Dyer JR, Davis TM, Giele C, Annus T, Garcia-Webb P, Robson J. The pharmacokinetics and pharmacodynamics of quinine in the diabetic and non-diabetic elderly. British journal of clinical pharmacology 38(3):205–212 (1994). [doi:10.1111/j.1365-2125.1994.tb04343.x](https://doi.org/10.1111/j.1365-2125.1994.tb04343.x)
+
+**This record:** Pharmacolibrary, model `Quinine_Dyer1994v2_non_diabetics`. <https://pharmacolibrary.github.io/#/drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics>
+
+```bibtex
+@misc{pharmacolibrary_QuinineDyer1994v2nondiabetics,
+  title  = {{Pharmacolibrary model Quinine_Dyer1994v2_non_diabetics}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics},
+  note   = {Parameters from doi:10.1111/j.1365-2125.1994.tb04343.x},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 600 mg, single dose, first-order absorption (ka 1.16 /h, lag 60 min, F 1). Dose in the paper: 600 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics/Quinine_Dyer1994v2_non_diabetics_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics/Quinine_Dyer1994v2_non_diabetics_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Quinine_Dyer1994v2_non_diabetics_params.json` · controls `Quinine_Dyer1994v2_non_diabetics_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bquinine%5D%20Quinine_Dyer1994v2_non_diabetics&body=Drug%3A%20quinine%0ARecord%3A%20Quinine_Dyer1994v2_non_diabetics%0APaper%3A%20Dyer_1994_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 08:36 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 15:45 UTC</sub>

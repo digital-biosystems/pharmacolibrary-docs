@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant for nemolizumab was rejected because its unit, L/day, is dimensionally incompatible with a first-order rate constant.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/day ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="nemolizumab" model-id="Nemolizumab_Sidbury2022_reference" status="rejected" stale="false" population="adolescents with atopic dermatitis" measured-compound="nemolizumab" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Sidbury R, Alpizar S, Laquer V, Dhawan S, Abramovits W, Loprete L et al. Pharmac
 
 ### Reviewer guidance
 
-**The absorption rate constant for nemolizumab was rejected because its unit, L/day, is dimensionally incompatible with a first-order rate constant.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/day ([length] ** 3 / [time]) vs 1 / [time].**
 
-The record lists the absorption rate constant with a value of 0.402 and a unit of L/day. This volumetric flow unit is dimensionally incompatible with an absorption rate constant, which must have units of inverse time. The unit could not be converted to standard SI units, preventing the calculation of a valid model parameter. Extracted — nemolizumab: CL 0.325 L/d, V/F 7.15 L, t1/2z 16.7 day, kabs 0.402 L/day, Cmax 5.98e+03 ng/mL, AUC∞ 111 ng·d/mL.
+A reported unit could not be converted (kabs, Cmax and AUC∞), so that value has no SI equivalent. Extracted — nemolizumab: CL 0.325 L/d, V/F 7.15 L, t1/2z 16.7 day, kabs 0.402 L/day, Cmax 5.98e+03 ng/mL, AUC∞ 111 ng·d/mL.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

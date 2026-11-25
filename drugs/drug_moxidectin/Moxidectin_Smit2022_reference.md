@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The two-compartment moxidectin model's terminal half-life of 109 hours disagrees with the paper's 278 hours.
+> The model does not reproduce the paper's terminal half-life (paper 278, model 109); the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="moxidectin" model-id="Moxidectin_Smit2022_reference" status="needs_review" stale="false" population="adults infected with Strongyloides stercoralis" measured-compound="moxidectin" parameterization="apparent" topology="2C"></div>
 
@@ -62,13 +62,13 @@ Smit C, Hofmann D, Sayasone S, Keiser J, Pfister M. Characterization of the Popu
 
 ### Reviewer guidance
 
-**The two-compartment moxidectin model's terminal half-life of 109 hours disagrees with the paper's 278 hours.**
+**The model does not reproduce the paper's terminal half-life (paper 278, model 109); the covariate scenarios were not simulated (+1 more).**
 
-The simulated terminal half-life differs from the paper's value, with a comparison ratio of 0.3935. Weight covariate effects were not exercised during simulation, despite being defined in the record. A second reader disagreed on the assignment of specific weight covariate exponents, resulting in an agreement ratio of 0.63. Extracted — moxidectin: tlag 1.64 h, kabs 3.38 /h, CL/F 4.47 L/h, V1/F 136 L, Q/F 10 L/h, V2/F 1.17e+03 L.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — moxidectin: tlag 1.64 h, kabs 3.38 /h, CL/F 4.47 L/h, V1/F 136 L, Q/F 10 L/h, V2/F 1.17e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[q/fpop [l/h]].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -204,8 +204,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.63, 0 of 1 reader(s) agree | 0.63 | cross-check disputed by a second reader: verdict disputed, agreement 0.63, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 278 | 109.4 | 0.3935 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.63 (17 of 27 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.63 | cross-check contradicted by a second reader: verdict disputed; agreement 0.63 (17 of 27 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 278 | 109.4 | 0.3935 | reported 278.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -221,7 +221,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_moxidectin/Moxidectin_Smit2022_reference/Moxidectin_Smit2022_reference_modelica.zip" download>Moxidectin_Smit2022_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_moxidectin/Moxidectin_Smit2022_reference/Moxidectin_Smit2022_reference_modelica.zip" download>Moxidectin_Smit2022_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_moxidectin/Moxidectin_Smit2022_reference/Moxidectin_Smit2022_reference_fmi.zip" download>Moxidectin_Smit2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_moxidectin/Moxidectin_Smit2022_reference/Moxidectin_Smit2022_reference_matlab.zip" download>Moxidectin_Smit2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_moxidectin/Moxidectin_Smit2022_reference/Moxidectin_Smit2022_reference_matlab_simbio.zip" download>Moxidectin_Smit2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

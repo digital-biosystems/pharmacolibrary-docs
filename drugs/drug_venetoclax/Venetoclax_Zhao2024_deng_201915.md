@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Venetoclax was held back because its peripheral-compartment volume V2/F (118 L) was not covered in the record.
+> T3_param_coverage.
 
 <div class="pk-model-meta" hidden drug="venetoclax" model-id="Venetoclax_Zhao2024_deng_201915" status="needs_review" stale="false" population="adults with hematologic malignancies" measured-compound="venetoclax" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Zhao Y, Guo N, Zhu Y, Shang J, Chen J, Luo X et al. Population Pharmacokinetic M
 
 ### Reviewer guidance
 
-**Venetoclax was held back because its peripheral-compartment volume V2/F (118 L) was not covered in the record.**
+**T3_param_coverage.**
 
-The coverage finding says V2/F was neither emitted nor defaulted, although the record lists its value as 118 L. The builder defaulted the time lag rather than using an explicit estimate, and assumed F=1 and Fm=1 with no molar correction. A second reader disagreed with the recorded apparent volume of distribution (181.0 L) and absorption rate constant (0.16 /h), supplying no values for either. Extracted — venetoclax: CL/F 469 L/Day, Q/F 100 L/ Day, V2/F 118 L, V3/F 123 L, V/F 181 L, kabs 0.16 /h.
+Extracted — venetoclax: CL/F 469 L/Day, Q/F 100 L/ Day, V2/F 118 L, V3/F 123 L, V/F 181 L, kabs 0.16 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent volume of distribution: this record has 181.0, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -153,7 +153,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.8 (8 of 10 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

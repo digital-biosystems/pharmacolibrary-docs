@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Absolute bioavailability and lag time defaulted to library placeholders, and the simulated peak concentration ratio was 1.4763, exceeding the paper's reported Cmax.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00112, model 0.00166); f use library defaults, not estimates from this paper (+3 more).
 
 <div class="pk-model-meta" hidden drug="abrocitinib" model-id="Abrocitinib_Wojciechowski2022_reference" status="needs_review" stale="false" population="healthy individuals and patients with psoriasis or atopic dermatitis" measured-compound="abrocitinib" parameterization="mechanistic" topology="2C"></div>
 
@@ -64,13 +64,13 @@ Wojciechowski J, Malhotra BK, Wang X, Fostvedt L, Valdez H, Nicholas T. Populati
 
 ### Reviewer guidance
 
-**Absolute bioavailability and lag time defaulted to library placeholders, and the simulated peak concentration ratio was 1.4763, exceeding the paper's reported Cmax.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00112, model 0.00166); f use library defaults, not estimates from this paper (+3 more).**
 
-The record relies on library defaults for absolute bioavailability and lag time, which are not supported by the paper's estimates. Simulating the model with the paper's dosing profile produced a peak concentration of 0.001657846988037878, while the paper reports 0.0011229999999999999, yielding a ratio of 1.4763. Additionally, the model structure includes covariate effects, such as female sex reducing bioavailability by 0.348, that were not exercised in the simulation. Extracted — abrocitinib: CL 21.7 L/h, V1 86.3 L, Q 1.13 L/h, V2 8.11 L, R1 73.1 mg/h, kabs 3.99 h−1, Fab 1.3.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (R1), so that value has no SI equivalent. Extracted — abrocitinib: CL 21.7 L/h, V1 86.3 L, Q 1.13 L/h, V2 8.11 L, R1 73.1 mg/h, kabs 3.99 h−1, Fab 1.3.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].covariate_forms`: this record has ['linear_fractional', 'linear_fractional'], the second reading ['linear_fractional']; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -248,8 +248,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.393, 0 of 1 reader(s) agree | 0.393 | cross-check disputed by a second reader: verdict disputed, agreement 0.393, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 0.001123 | 0.001658 | 1.476 | ng/mL→SI vs simulated kg/m3 |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.393 (11 of 28 compared fields agree, 13 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.393 | cross-check contradicted by a second reader: verdict disputed; agreement 0.393 (11 of 28 compared fields agree, 13 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 0.001123 | 0.001658 | 1.476 | reported 1123.0 ng/mL→SI vs simulated kg/m3 |
 | T1_t_half_terminal | reference | skipped | 21.6 | 2.967 |  | unresolved time unit '14.5, 28.7' |
 
 <details class="legend">

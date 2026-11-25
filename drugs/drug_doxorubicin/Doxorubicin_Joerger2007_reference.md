@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Doxorubicin clearance, volume of distribution, absorption rate, and lag time lacked source values, so library placeholders were used.
+> No value for doxorubicin's clearance, volume of distribution, absorption rate constant and absorption lag time; t3_output_variable (+2 more).
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Joerger2007_reference" status="model_quarantined" stale="false" population="breast cancer patients" measured-compound="doxorubicin and doxorubicinol" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Joerger M, Huitema AD, Richel DJ, Dittrich C, Pavlidis N, Briasoulis E et al. Po
 
 ### Reviewer guidance
 
-**Doxorubicin clearance, volume of distribution, absorption rate, and lag time lacked source values, so library placeholders were used.**
+**No value for doxorubicin's clearance, volume of distribution, absorption rate constant and absorption lag time; t3_output_variable (+2 more).**
 
-The model builder could not extract estimates for these four doxorubicin parameters, resulting in the use of generic defaults rather than specific fitted values. This lack of explicit data caused the model to be quarantined instead of published. Additionally, the review found discrepancies in the assigned formation clearance value for the metabolite between readers. Extracted — doxorubicin: CL 47.6 L/h, V1 12.3 L, Q 60.3 L/h, V2 421 L, CLfm 108 L/h, V1/F 1.58e+03 L; cyclophosphamide: CL 4.23 L/h, V1 34.6 L.
+The model was built, but doxorubicin's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — doxorubicin: CL 47.6 L/h, V1 12.3 L, Q 60.3 L/h, V2 421 L, CLfm 108 L/h, V1/F 1.58e+03 L; cyclophosphamide: CL 4.23 L/h, V1 34.6 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has doxorubicin and cyclophosphamide, the second reading doxorubicin, cyclophosphamide; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

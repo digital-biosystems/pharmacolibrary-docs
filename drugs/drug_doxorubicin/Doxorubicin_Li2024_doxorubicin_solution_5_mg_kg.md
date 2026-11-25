@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The extracted volume of distribution value of 295.09 mL is outside the physiological window for doxorubicin in rats and mice.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Li2024_doxorubicin_solution_5_mg_kg" status="rejected" stale="false" population="rats and mice" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Li Z, Kovshova T, Malinovskaya J, Knoll J, Shanehsazzadeh S, Osipova N et al. Bl
 
 ### Reviewer guidance
 
-**The extracted volume of distribution value of 295.09 mL is outside the physiological window for doxorubicin in rats and mice.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a volume of distribution based on drug concentration of 295.09 mL for doxorubicin. This value was flagged as having an implausible magnitude, suggesting a unit or scale extraction error. Additionally, the review identified a mismatch in the elimination rate constant for the peripheral compartment and a disagreement regarding the brain unbound fraction value. Extracted — doxorubicin: fu 1.24 %, kout_peripheral 0.73 h⁻¹, kel 0.96 h⁻¹, V 295 mL.
+Extracted — doxorubicin: fu 1.24 %, kout_peripheral 0.73 h⁻¹, kel 0.96 h⁻¹, V 295 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading doxil® → doxorubicin (interconversion); pbca nanoparticles → doxorubicin (interconversion); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

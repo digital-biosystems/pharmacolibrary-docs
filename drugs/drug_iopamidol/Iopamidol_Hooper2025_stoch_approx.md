@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Iopamidol's peripheral compartment was rejected as unreachable, and the population clearance value of 2.394 mL/min contradicts a second reader's 1.639 mL/min.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="iopamidol" model-id="Iopamidol_Hooper2025_stoch_approx" status="rejected" stale="false" population="healthy adults with varying kidney function" measured-compound="iopamidol" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Hooper L, Heung M, Wang L, Matvekas A, Alikhani R, Kenes MT et al. Pharmacokinet
 
 ### Reviewer guidance
 
-**Iopamidol's peripheral compartment was rejected as unreachable, and the population clearance value of 2.394 mL/min contradicts a second reader's 1.639 mL/min.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure for iopamidol was flagged for an unreachable peripheral compartment, indicating a missing path from the dose. Additionally, the first and second readers disagreed on the population clearance, recording 2.394 mL/min versus 1.639 mL/min. Discrepancies also appeared for the central and peripheral volume of distribution, with the first reader citing 457.506 L and 350.195 L, while the second reader reported 399.26 L and 287.311 L. Extracted — iopamidol: CL 2.39 mL/min, V1 458 L, V2 350 L, CLnorm 0.209.
+Extracted — iopamidol: CL 2.39 mL/min, V1 458 L, V2 350 L, CLnorm 0.209.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of beta_cl_logtbsa_mosteller: this record has 0.209, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

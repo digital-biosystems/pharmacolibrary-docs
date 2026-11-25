@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salmeterol&quot;,&quot;href&quot;:&quot;drugs/drug_salmeterol/&quot;},{&quot;label&quot;:&quot;Himstedt_2020 \u00b7 fluticasone_propionate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salmeterol_Himstedt2020_salmeterol&quot;,&quot;label&quot;:&quot;Himstedt_2020_salmeterol&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salmeterol/Salmeterol_Himstedt2020_salmeterol.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salmeterol_Berkhout2025_reference&quot;,&quot;label&quot;:&quot;Berkhout_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salmeterol/Salmeterol_Berkhout2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salmeterol_Thoueille2026_reference&quot;,&quot;label&quot;:&quot;Thoueille_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salmeterol/Salmeterol_Thoueille2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Himstedt_2020_inhibition_of_methacholine_induced_bronchocons&quot;,&quot;label&quot;:&quot;Himstedt_2020 \u00b7 inhibition of methacholine-induced bronchoconstriction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salmeterol/pd_Himstedt_2020_inhibition_of_methacholine_induced_bronchocons.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McCrea_1993_cAMP&quot;,&quot;label&quot;:&quot;McCrea_1993 \u00b7 cAMP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salmeterol/pd_McCrea_1993_cAMP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Scott_1999_cAMP&quot;,&quot;label&quot;:&quot;Scott_1999 \u00b7 cAMP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salmeterol/pd_Scott_1999_cAMP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salmeterol_Himstedt2020_salmeterol&quot;,&quot;label&quot;:&quot;Himstedt_2020_salmeterol&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salmeterol/Salmeterol_Himstedt2020_salmeterol.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salmeterol_Berkhout2025_reference&quot;,&quot;label&quot;:&quot;Berkhout_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salmeterol/Salmeterol_Berkhout2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salmeterol_Thoueille2026_reference&quot;,&quot;label&quot;:&quot;Thoueille_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salmeterol/Salmeterol_Thoueille2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Himstedt_2020_inhibition_of_methacholine_induced_bronchocons&quot;,&quot;label&quot;:&quot;Himstedt_2020 \u00b7 inhibition of methacholine-induced bronchoconstriction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salmeterol/pd_Himstedt_2020_inhibition_of_methacholine_induced_bronchocons.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record is quarantined because salmeterol's bioavailability, clearance, volume of distribution, and central-to-peripheral rate constant lack extracted values, forcing the use of library placeholders.
+> No value for salmeterol's bioavailability, clearance, volume of distribution and central→peripheral rate constant; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="salmeterol" model-id="Salmeterol_Himstedt2020_fluticasone_propionate" status="model_quarantined" stale="false" population="rats after intravenous administration" measured-compound="salmeterol" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Himstedt A, Braun C, Wicha SG, Borghardt JM. Towards a Quantitative Mechanistic 
 
 ### Reviewer guidance
 
-**The record is quarantined because salmeterol's bioavailability, clearance, volume of distribution, and central-to-peripheral rate constant lack extracted values, forcing the use of library placeholders.**
+**No value for salmeterol's bioavailability, clearance, volume of distribution and central→peripheral rate constant; t6_deviations.**
 
-Although the record lists fluticasone propionate parameters, salmeterol-specific pharmacokinetic parameters such as clearance were not provided. Consequently, the model builder was forced to default these values to library placeholders instead of using explicit estimates. A negative absorption rate constant of -0.89 h⁻¹ was recorded for salmeterol, further indicating data inconsistencies. The model could not be published because essential salmeterol parameters relied on these unvalidated defaults rather than fitted data. Extracted — fluticasone propionate: CL 3.37 L/h/kg, V1 0.223 L/kg, Q 4.72 L/h/kg, V2 2.41 L/kg, Kp 5.21, Qb 0.777 L/h/kg; salmeterol: kabs -0.89 h−1, tlag 1.5 h.
+The model was built, but salmeterol's bioavailability, clearance, volume of distribution and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — fluticasone propionate: CL 3.37 L/h/kg, V1 0.223 L/kg, Q 4.72 L/h/kg, V2 2.41 L/kg, Kp 5.21, Qb 0.777 L/h/kg; salmeterol: kabs -0.89 h−1, tlag 1.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption lag gut: this record has 1.5, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -162,7 +162,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.833 (10 of 12 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

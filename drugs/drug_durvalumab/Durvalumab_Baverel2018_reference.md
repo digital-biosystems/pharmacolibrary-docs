@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the 16.9% clearance unit could not be converted to SI, and reviewers disagreed on which parameter holds that value.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Baverel2018_reference" status="rejected" stale="false" population="cancer patients with solid tumors" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Baverel PG, Dubois VFS, Jin CY, Zheng Y, Song X, Jin X et al. Population Pharmac
 
 ### Reviewer guidance
 
-**The model was rejected because the 16.9% clearance unit could not be converted to SI, and reviewers disagreed on which parameter holds that value.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The recorded 16.9% decrease in clearance uses a percentage unit that lacks a defined conversion to standard international units, preventing its use in the two-compartment model. The review notes a structural issue where the peripheral compartment is unreachable from the dose. A second reader also disagreed on the location of the 16.9% value, leaving the primary clearance definition ambiguous. Extracted — durvalumab: CL 16.9 %, V1 3.51 L, V2 3.45 L.
+A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — durvalumab: CL 16.9 %, V1 3.51 L, V2 3.45 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of decrease in clearance from baseline: this record has 16.9, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

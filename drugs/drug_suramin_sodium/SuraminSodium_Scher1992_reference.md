@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;suramin sodium&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/&quot;},{&quot;label&quot;:&quot;Scher_1992 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SuraminSodium_Kosarek2006_reference&quot;,&quot;label&quot;:&quot;Kosarek_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SuraminSodium_Motzer1992_reference&quot;,&quot;label&quot;:&quot;Motzer_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Motzer1992_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SuraminSodium_Naviaux2017_reference&quot;,&quot;label&quot;:&quot;Naviaux_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Naviaux2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SuraminSodium_Kosarek2006_reference&quot;,&quot;label&quot;:&quot;Kosarek_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,22 +7,22 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the peripheral compartment for suramin is unreachable from the dose, and abstract-only statistics were used for clearance of 1.95 mL/h/kg.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="suramin sodium" model-id="SuraminSodium_Scher1992_reference" status="rejected" stale="false" population="cancer patients receiving suramin" measured-compound="suramin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="suramin sodium" model-id="SuraminSodium_Scher1992_reference" status="rejected" stale="false" population="patients with cancer" measured-compound="suramin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Scher HI, Jodrell DI, Iversen JM, Curley T, Tong W, Egorin MJ et al. Use of adaptive control with feedback to individualize suramin dosing. Cancer research 52(1):64–70 (1992).
 
 ## Population and dosing
 
-**Population:** cancer patients receiving suramin · condition cancer (antitumor therapy) · age group adult · n = 7.
+**Population:** patients with cancer · condition cancer · age group adult.
 
 ## Model
 
 **Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -30,15 +30,14 @@ Scher HI, Jodrell DI, Iversen JM, Curley T, Tong W, Egorin MJ et al. Use of adap
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| mean volume of the central compartment | V1 | 4.5 | L |
-| volume of the peripheral compartment | V2 | 10.6 | L |
+| mean volume of the central compartment | V1 | 4.5 | liters/m2 |
+| volume of the peripheral compartment | V2 | 10.6 | liters/m2 |
 | distributional half-life | t1/2α | 25 | h |
 | elimination half-life | t1/2z | 29.7 | h |
-| Clearance | CL | 1.95 | mL/h/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,23 +47,22 @@ Scher HI, Jodrell DI, Iversen JM, Curley T, Tong W, Egorin MJ et al. Use of adap
 
 ### Reviewer guidance
 
-**The record was rejected because the peripheral compartment for suramin is unreachable from the dose, and abstract-only statistics were used for clearance of 1.95 mL/h/kg.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The two-compartment model describes a peripheral volume of 10.6 L for suramin that has no path from the administered dose, rendering it orphaned. The record relies on abstract-only data, so summary statistics for clearance and half-lives stand in for a fitted model. A second reader disagreed on the extraction of all parameters, marking them as null or unknown. Extracted — suramin sodium: V1 4.5 L, V2 10.6 L, t1/2α 25 h, t1/2z 29.7 h, CL 1.95 mL/h/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — suramin sodium: V1 4.5 liters/m2, V2 10.6 liters/m2, t1/2α 25 h, t1/2z 29.7 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has suramin, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has suramin, the second reading suramin_sodium; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| mean volume of the central compartment | `Q63` · V1 | 4.5 | L | 0.0045 | m3 | L | llm_confirmed (0.6) | Scher_1992:abstract |
-| volume of the peripheral compartment | `Q64` · V2 | 10.6 | L | 0.0106 | m3 | L | exact (1) | Scher_1992:abstract |
-| distributional half-life | `Q59` · t1/2α | 25 | h | 9e+04 | s | h | llm (0.6) | Scher_1992:abstract, Scher_1992:abstract |
-| elimination half-life | `Q57` · t1/2z | 29.7 | h | 1.069e+05 | s | h | llm (0.6) | Scher_1992:abstract, Scher_1992:abstract |
-| Clearance | `Q22` · CL | 1.95 | mL/h/kg | 3.792e-08 | m3/s | L/h | review_gapfill (0.7) | Naviaux_2017:review |
+| mean volume of the central compartment | `Q63` · V1 | 4.5 | liters/m2 | 0.007785 | m3 | l/m2 | llm_confirmed (0.6) | Scher_1992:abstract |
+| volume of the peripheral compartment | `Q64` · V2 | 10.6 | liters/m2 | 0.01834 | m3 | l/m2 | exact (1) | Scher_1992:abstract |
+| distributional half-life | `Q59` · t1/2α | 25 | h | 9e+04 | s | h | half_life_rule (0.95) | Scher_1992:abstract |
+| elimination half-life | `Q57` · t1/2z | 29.7 | h | 1.069e+05 | s | h | half_life_rule (0.95) | Scher_1992:abstract, Scher_1992:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -74,13 +72,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'liters/m2' (V1)
-- unit_dimension_unknown: 'liters/m2' (V2)
-- implicit units: 'mean volume of the central compartment' → L (from the popPK convention: 'No unit stated in text or captions; volumes of distribution in population PK are conventionally reported in L, and 4.5 L')
-- implicit units: 'volume of the peripheral compartment' → L (from the popPK convention: 'No unit stated in text or captions; peripheral volumes of distribution are conventionally reported in L, and 10.6 L is a')
+- dropped duplicate Q59 ('resulting distributional half-life', value 22.3) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=suramin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Naviaux_2017's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Scher_1992_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -88,17 +82,16 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[clearance]` | 1.95 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[distributional half-life]` | 25 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[distributional half-life]` |  | 25 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[elimination half-life]` | 29.7 |  | only_one_extracted |
@@ -107,8 +100,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[mean volume of the central compartment]` |  | 4.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of the peripheral compartment]` | 10.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of the peripheral compartment]` |  | 10.6 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | suramin | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | suramin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | suramin | suramin_sodium | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | suramin | suramin_sodium | mismatch |
 
 </details>
 
@@ -125,16 +118,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Naviaux_2017:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Scher_1992:abstract', 'Scher_1992:abstract'] |
-| C5_dimension_Q59 | pass | [time] |  | ['Scher_1992:abstract', 'Scher_1992:abstract'] |
+| C5_dimension_Q59 | pass | [time] |  | ['Scher_1992:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Scher_1992:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Scher_1992:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.95 | ['Naviaux_2017:review'] |
 | C8_topology | fail |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.136 L/h | ['Naviaux_2017:review'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 4.5 L | ['Scher_1992:abstract'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 10.6 L | ['Scher_1992:abstract'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 7.79 L | ['Scher_1992:abstract'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 18.3 L | ['Scher_1992:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -158,4 +148,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsuramin_sodium%5D%20SuraminSodium_Scher1992_reference&body=Drug%3A%20suramin_sodium%0ARecord%3A%20SuraminSodium_Scher1992_reference%0APaper%3A%20Scher_1992%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_suramin_sodium/SuraminSodium_Scher1992_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 09:31 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 07:17 UTC</sub>

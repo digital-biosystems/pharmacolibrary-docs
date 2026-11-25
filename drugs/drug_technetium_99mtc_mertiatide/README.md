@@ -39,52 +39,59 @@ Technetium 99mTc mertiatide is a diagnostic radiopharmaceutical used for imaging
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:08 | 3:09 | 0/1/0 | 0/0/0 | 0/0/0 | 28,058/9,881 | openai / gpt-6-luna | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 04:09 | 0:03 | 0/1/0 | 0/0/0 | 0/0/0 | 3,397/199 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 359 matched, 18 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 2  ·  **relevant:** 0
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Peters_1994.pdf` | Peters AM et al., Measurement of the extravascular concen…, Nuclear medicine communicat… (1994) | popPK | 9 | [10.1097/00006231-199402000-00002](https://doi.org/10.1097/00006231-199402000-00002) | [8170640](https://pubmed.ncbi.nlm.nih.gov/8170640) | MAG3 has a reported numerical plasma clearance in the evidence. |
-| `Piepsz_1994.pdf` | Piepsz A et al., Improving the accuracy of 99Tcm-mercapt…, Nuclear medicine communicat… (1994) | popPK | 9 | [10.1097/00006231-199407000-00006](https://doi.org/10.1097/00006231-199407000-00006) | [7970429](https://pubmed.ncbi.nlm.nih.gov/7970429) | The study models MAG3 clearance, but reports sample times and estimation errors rather than numeric clearance parameter values. |
-| `Russell_1995.pdf` | Russell CD et al., Comparison of single-injection multisam…, Journal of nuclear medicine… (1995) | popPK | 8 |  | [7699449](https://pubmed.ncbi.nlm.nih.gov/7699449) | Human renal-clearance methods are compared, but only the difference between methods is reported, not the MAG3 clearance values themselves. |
-
-<sub>queue written 2026-10-07 19:07 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Beyer-Enke_1991 | irrelevant | 1 | 0 | Technetium-99m-MAG3 is a comparator, and no numeric disposition parameter values are reported. |
-| popPK | Boss_2006 | irrelevant | 0 | 0 | This pediatric imaging study uses gadolinium and only compares results with MAG3 scintigraphy, reporting no mertiatide pharmacokinetic parameters. |
-| popPK | Cayir_2016 | irrelevant | 1 | 0 | Technetium-99m mertiatide is used as a diagnostic agent, and no numeric disposition parameters are reported. |
-| popPK | Dubovsky_1988 | irrelevant | 0 | 0 | This is a review of renal-transplant imaging and reports no quantitative pharmacokinetic parameter values. |
-| popPK | Eshima_1990 | irrelevant | 2 | 0 | This is a review reporting only relative plasma clearance, with no numeric disposition parameter values. |
-| popPK | Faure_2016 | irrelevant | 0 | 0 | This pediatric renography study reports urinary drainage and renal-function outcomes, not pharmacokinetic disposition parameters for technetium-99m mertiatide. |
-| popPK | Ismaili_2005 | irrelevant | 0 | 0 | MAG3 is used as a diagnostic renogram; the reported values are renal-function measures, not its pharmacokinetic parameters. |
-| popPK | Marboeuf_2010 | irrelevant | 0 | 0 | Technetium-99m MAG3 is used for renal scintigraphy, with no pharmacokinetic disposition parameters reported. |
-| popPK | Piepsz_1994 | relevant | 9 | 2 | The study models MAG3 clearance, but reports sample times and estimation errors rather than numeric clearance parameter values. |
-| popPK | Reiners_1993 | irrelevant | 0 | 0 | This clinical diagnostic review gives no quantitative pharmacokinetic disposition parameters for technetium-99m mertiatide. |
-| popPK | Rossleigh_2001 | irrelevant | 0 | 0 | This review discusses diagnostic imaging in children and reports no quantitative pharmacokinetic parameters. |
-| popPK | Russell_1995 | relevant | 8 | 3 | Human renal-clearance methods are compared, but only the difference between methods is reported, not the MAG3 clearance values themselves. |
-| popPK | Szabo_2011 | irrelevant | 0 | 0 | This is a review that mentions Tc99m MAG3 but reports no quantitative disposition parameters. |
-| popPK | Thorson_1992 | irrelevant | 0 | 0 | This is a kit-stability study with no quantitative pharmacokinetic disposition parameters. |
-| popPK | Verdera_1994 | irrelevant | 1 | 0 | MAG3 is only a comparator, and no numeric disposition parameter values for it are provided. |
-| popPK | Vranken_2005 | irrelevant | 0 | 0 | Technetium-99m MAG3 is used as a diagnostic tracer, with no quantitative pharmacokinetic disposition parameters reported. |
-| popPK | Weber_1990 | irrelevant | 0 | 0 | This is a mouse study of a radiolabeled antibody conjugate, not technetium_99mtc_mertiatide, and reports no quantitative PK parameters. |
+| popPK | Beyer-Enke_1991 | irrelevant | 0 | 0 | The study focuses on iodinated contrast media as the primary subject, using Tc-99m MAG3 (mertiatide) only as a comparator for correlation analysis, and does not report specific population PK parameters for mertiatide. |
+| PGx | Beyer-Enke_1991 | not_relevant | 0 | 0 | The paper discusses 99mTc-MAG3 (mertiatide) clearance as a kidney function measure but does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
+| popPK | Boss_2006 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of gadolinium (Gd-DTPA) in children using MRI, and does not report data for the subject drug technetium_99mtc_mertiatide. |
+| PGx | Boss_2006 | not_relevant | 0 | 0 | The study evaluates MR imaging techniques for renal function using gadolinium and compares it to scintigraphy, with no mention of pharmacogenomics or Tc-99m mertiatide. |
+| popPK | Cayir_2016 | irrelevant | 1 | 0 | The study uses the radiopharmaceutical as a diagnostic tool to evaluate renal function in humans rather than conducting a pharmacokinetic study of the agent's disposition. |
+| PGx | Cayir_2016 | not_relevant | 0 | 0 | The study evaluates renal function in volatile substance abusers using a diagnostic tracer and does not investigate the impact of genetic variants on the pharmacokinetics or pharmacodynamics of technetium_99mtc_mertiatide. |
+| popPK | Dubovsky_1988 | irrelevant | 0 | 0 | The paper is a review of radionuclide imaging in renal transplants and does not contain pharmacokinetic data for technetium-99m mertiatide. |
+| PGx | Dubovsky_1988 | not_relevant | 0 | 0 | The paper is a review of radionuclide evaluation methods and does not report any pharmacogenomic effects on the PK or PD of technetium-99mtc mertiatide. |
+| popPK | Eshima_1990 | irrelevant | 0 | 0 | The paper discusses 99mTc mercaptoacetyltriglycine (MAG3) and OIH, not technetium_99mtc_mertiatide, and contains no quantitative PK parameters for the target drug. |
+| PGx | Eshima_1990 | not_relevant | 0 | 0 | The text discusses the development of 99mTc renal tubular agents (e.g., 99mTc MAG3) but contains no information regarding gene variants, genotypes, or pharmacogenomic effects. |
+| popPK | Faure_2016 | irrelevant | 2 | 2 | The study uses technetium-99m mertiatide (MAG-3) as a diagnostic imaging agent for assessing renal function and drainage time (T/2) in a surgical cohort, rather than modeling the pharmacokinetic parameters (CL, V, etc.) of the drug itself. |
+| PGx | Faure_2016 | not_relevant | 0 | 0 | The paper reports clinical outcomes of surgical pyeloplasty using MAG-3 diuretic renography but does not investigate genetic variants or pharmacogenomics. |
+| popPK | Ismaili_2005 | irrelevant | 0 | 0 | The study uses 99mTc-MAG3 (a different drug) as a diagnostic imaging agent, not technetium_99mtc_mertiatide. |
+| PGx | Ismaili_2005 | not_relevant | 0 | 0 | The paper describes renal maturation in pediatric patients and does not investigate any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of technetium-99m mertiatide. |
+| popPK | Marboeuf_2010 | irrelevant | 0 | 0 | The paper is a clinical management study of renal atrophy using MAG3 as a diagnostic probe for blood pressure outcomes, and it does not report pharmacokinetic parameters (CL, V, t1/2) for technetium-99mtc_mertiatide. |
+| PGx | Marboeuf_2010 | not_relevant | 0 | 0 | The paper reports clinical management of renal atrophy and hypertension outcomes, with no mention of pharmacogenomics or drug pharmacokinetics/pharmacodynamics. |
+| popPK | Peters_1994 | irrelevant | 0 | 0 | The study investigates 99TcM-MAG3 (mercaptoacetyl triglycine), not 99TcM-mertiatide, so the subject drug is different. |
+| PGx | Peters_1994 | not_relevant | 0 | 0 | The paper reports population PK parameters for renal agents (including MAG3) but does not investigate or report any pharmacogenomic effects (gene variants) on these parameters. |
+| popPK | Piepsz_1994 | relevant | 9 | 4 | The study reports a compartmental model and quantitative accuracy metrics (SEE) for MAG3 clearance, though specific parameter estimates (mean CL values) are not explicitly listed, only the error ranges and optimal sampling times. |
+| PGx | Piepsz_1994 | not_relevant | 0 | 0 | The paper evaluates sampling times for accurate renal clearance measurement but does not report any association between genetic variants and pharmacokinetic parameters. |
+| popPK | Reiners_1993 | irrelevant | 0 | 0 | The paper is a review of diuresis renography using 99mTc-MAG3 (technetium_99mtc_mertiatide) as a diagnostic imaging agent, not a pharmacokinetic study reporting quantitative disposition parameters. |
+| PGx | Reiners_1993 | not_relevant | 0 | 0 | The paper describes the clinical protocol for diuresis renography using Tc-99m-MAG3 and does not report any pharmacogenomic effects. |
+| popPK | Rossleigh_2001 | irrelevant | 0 | 0 | The paper is a review of diagnostic nuclear medicine techniques using different radiopharmaceuticals (DMSA, MAG3) and does not report pharmacokinetic parameters for mertiatide. |
+| PGx | Rossleigh_2001 | not_relevant | 0 | 0 | The paper describes nuclear medicine techniques and does not report pharmacogenomic effects on the PK/PD of technetium_99mtc_mertiatide. |
+| popPK | Russell_1995 | irrelevant | 2 | 2 | The paper reports renal clearance measurements for 99mTc-MAG3 (a renal agent) rather than technetium_99mtc_mertiatide (a bone agent), and it lacks the specific multi-compartmental PK parameters (V, Q) required. |
+| PGx | Russell_1995 | not_relevant | 0 | 0 | The paper compares renal clearance measurement methods for 99mTc-MAG3 but does not investigate the impact of gene variants or genotypes on these parameters. |
+| popPK | Szabo_2011 | irrelevant | 0 | 0 | The paper is a review of molecular imaging principles and does not report quantitative pharmacokinetic parameters (CL, V, Q, etc.) for technetium_99mtc_mertiatide (Tc-99m MAG3). |
+| PGx | Szabo_2011 | not_relevant | 0 | 0 | The paper discusses molecular imaging of the kidneys and various radiopharmaceuticals but does not report any pharmacogenomic effects of gene variants on the pharmacokinetic or pharmacodynamic parameters of technetium_99mtc_mertiatide. |
+| popPK | Thorson_1992 | irrelevant | 0 | 0 | The study is a radiochemical stability and cost-efficiency analysis of MAG3 kit fractionation, reporting radiochemical purity values rather than pharmacokinetic disposition parameters (CL, V, t1/2). |
+| PGx | Thorson_1992 | not_relevant | 0 | 0 | The paper investigates the feasibility of fractionating and freezing MAG3 kits for cost reduction and stability, reporting no genetic variants or pharmacogenomic effects on pharmacokinetics or pharmacodynamics. |
+| popPK | Verdera_1994 | irrelevant | 0 | 0 | The study evaluates technetium-99mtc-CAMI (a different drug) and only mentions technetium-99mtc-mertiatide (99mTc-MAG3) as a comparator without providing specific PK parameters for it. |
+| PGx | Verdera_1994 | not_relevant | 0 | 0 | The paper evaluates a novel agent (Tc-CAMI) in dogs and does not report pharmacogenomic effects on the PK/PD of technetium_99mtc_mertiatide. |
+| popPK | Vranken_2005 | irrelevant | 3 | 0 | The study uses Tc-99m-MAG3 as a diagnostic imaging agent to assess renal function in children, reporting clinical outcomes (GFR/SRF changes) rather than quantitative pharmacokinetic parameters (CL, V, ka) for the radiotracer itself. |
+| PGx | Vranken_2005 | not_relevant | 0 | 0 | The paper reports on renal maturation in children using Tc-99m MAG3 imaging but contains no information on pharmacogenomics or genetic variants affecting the drug's pharmacokinetics or pharmacodynamics. |
+| popPK | Weber_1990 | irrelevant | 0 | 0 | The paper investigates 99mTc-radiolabeled antibody Fab' conjugates using a chelator related to mercaptoacetyl-triglycine, not the specific drug technetium_99mtc_mertiatide, and reports biodistribution rather than specific PK parameters for the target drug. |
+| PGx | Weber_1990 | not_relevant | 0 | 0 | The paper reports biodistribution differences between ester-linked and amide-linked chelators in a mouse model, but does not investigate any pharmacogenomic effect (gene variant) on PK parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btechnetium_99mtc_mertiatide%5D&body=Drug%3A%20technetium_99mtc_mertiatide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_technetium_99mtc_mertiatide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 19:07 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 04:08 UTC</sub>

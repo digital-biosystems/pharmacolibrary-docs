@@ -58,13 +58,13 @@ Ding J, Coldiron ME, Assao B, Guindo O, Blessborn D, Winterberg M et al. Adheren
 
 ### Reviewer guidance
 
-**The record was held back because the three-compartment metabolite structure was misassigned to a single-compartment design and two peripheral clearances were missing.**
+**The model was built but has not been simulated yet; t3_param_coverage (+2 more).**
 
-The metabolite desethylamodiaquine requires a three-compartment topology, but the model structure used was a single central compartment. Consequently, the two intercompartmental clearances linking the peripheral compartments were not extracted, leaving the parameter coverage incomplete. Additionally, a second reader disagreed with the extracted parameter values for the parent compound, such as the apparent clearance of 101 L/h, disputing the record's accuracy. Extracted — amodiaquine: Frel 100, kabs 2.85 1/h, CLm/F 101 L/hour, Vm/F 314 L, Q/F 119 L/hour, V2/F 1.82e+03 L; desethylamodiaquine: CLm/F 2.33 L/hour, V1/F 49.1 L, Q/F 2.31 L/hour, V2/F 363 L, Q2/F 4.34 L/hour, V3/F 98.1 L.
+Extracted — amodiaquine: Frel 100, kabs 2.85 1/h, CLm/F 101 L/hour, Vm/F 314 L, Q/F 119 L/hour, V2/F 1.82e+03 L; desethylamodiaquine: CLm/F 2.33 L/hour, V1/F 49.1 L, Q/F 2.31 L/hour, V2/F 363 L, Q2/F 4.34 L/hour, V3/F 98.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amodiaquine, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -214,7 +214,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_shared_parameters | pass | 7 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.483, 0 of 1 reader(s) agree | 0.483 | cross-check disputed by a second reader: verdict disputed, agreement 0.483, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.483 (14 of 29 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.483 | cross-check contradicted by a second reader: verdict disputed; agreement 0.483 (14 of 29 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

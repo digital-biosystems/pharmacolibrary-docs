@@ -16,7 +16,7 @@ Nawaz M. Pharmacokinetics and dosage of chlorpromazine in goats. Journal of vete
 
 ## Population and dosing
 
-**Population:** goats · condition healthy · n = 8.
+**Population:** goats · n = 14.
 
 > **Species: goat.** This record comes from an animal study (goat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -37,7 +37,7 @@ Nawaz M. Pharmacokinetics and dosage of chlorpromazine in goats. Journal of vete
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ Nawaz M. Pharmacokinetics and dosage of chlorpromazine in goats. Journal of vete
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — chlorpromazine: t1/2z 1.51 h, CL 80 ml/min/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has chlorpromazine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,7 +59,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| elimination half-life | `Q57` · t1/2z | 1.51 | h | 5436 | s | h | llm (0.6) | Nawaz_1981:abstract |
+| elimination half-life | `Q57` · t1/2z | 1.51 | h | 5436 | s | h | half_life_rule (0.95) | Nawaz_1981:abstract |
 | Total body clearance | `Q22` · CL | 80 | ml/min/kg | 9.333e-05 | m3/s | ml/(min·kg) | llm_confirmed (0.6) | Nawaz_1981:abstract |
 
 <details class="legend">
@@ -72,33 +72,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=chlorpromazine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Nawaz_1981_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>6 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[elimination half-life]` | 1.51 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life]` |  | 1.51 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total body clearance]` | 80 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total body clearance]` |  | 80 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | chlorpromazine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | chlorpromazine | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -151,4 +138,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchlorpromazine%5D%20Chlorpromazine_Nawaz1981_reference&body=Drug%3A%20chlorpromazine%0ARecord%3A%20Chlorpromazine_Nawaz1981_reference%0APaper%3A%20Nawaz_1981%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chlorpromazine/Chlorpromazine_Nawaz1981_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 15:31 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 17:29 UTC</sub>

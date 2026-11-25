@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Sapropterin clearance and initial concentration units conflict with required dimensions, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit units ([luminosity] / [length] ** 2) vs [time]; Q86 unit μg/L ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="sapropterin" model-id="Sapropterin_Qi2015_reference" status="rejected" stale="false" population="pediatric and adult patients with phenylketonuria" measured-compound="sapropterin" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Qi Y, Mould DR, Zhou H, Merilainen M, Musson DG. A prospective population pharma
 
 ### Reviewer guidance
 
-**Sapropterin clearance and initial concentration units conflict with required dimensions, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit units ([luminosity] / [length] ** 2) vs [time]; Q86 unit μg/L ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The absorption half-life is listed with units of 'units' instead of time, while the initial concentration C0 is recorded in μg/L rather than mass. These dimensional mismatches prevent valid physical interpretation. The review confirms the unit conversion failure led to rejection. Extracted — sapropterin: CL/F 2.71e+03 L/h, V/F 3.01e+03 L, t1/2ka 0.235 units, tlag 0.321 h, C0 16.6 μg/L.
+A reported unit could not be converted (t1/2ka  and C0), so that value has no SI equivalent. Extracted — sapropterin: CL/F 2.71e+03 L/h, V/F 3.01e+03 L, t1/2ka 0.235 units, tlag 0.321 h, C0 16.6 μg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sapropterin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

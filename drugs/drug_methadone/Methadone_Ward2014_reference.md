@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;methadone&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/&quot;},{&quot;label&quot;:&quot;Ward_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methadone_Gittel2021_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Gittel2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Shin2024_reference&quot;,&quot;label&quot;:&quot;Shin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Shin2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methadone_Gittel2021_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Gittel2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Shin2024_reference&quot;,&quot;label&quot;:&quot;Shin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Shin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methadone — `Methadone_Ward2014_reference`
 
-> ## <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
 
 <div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Ward2014_reference" status="not_simulated" stale="false" population="neonates, infants, and children" measured-compound="methadone" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -15,7 +15,7 @@ Ward RM, Drover DR, Hammer GB, Stemland CJ, Kern S, Tristani-Firouzi M et al. Th
 
 ## Population and dosing
 
-**Population:** neonates, infants, and children · condition mixed paediatric (opioid withdrawal, post-cardiac surgery analgesia) · age group mixed · n = 56.
+**Population:** neonates, infants, and children · age group mixed.
 
 ## Model
 
@@ -39,13 +39,9 @@ Ward RM, Drover DR, Hammer GB, Stemland CJ, Kern S, Tristani-Firouzi M et al. Th
 | formation clearance of EMDP from EDDP | CLfm | 7.4 | l·h(-1) .70 kg(-1) |
 | elimination clearance of EDDP | CL | 40.9 | l·h(-1) .70 kg(-1) |
 
-## Caveats
-
-- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
-
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.042). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.867). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,27 +51,27 @@ Ward RM, Drover DR, Hammer GB, Stemland CJ, Kern S, Tristani-Firouzi M et al. Th
 
 ### Reviewer guidance
 
-**Methadone’s peripheral-compartment volume V2 (75.1 L per 70 kg) was neither represented nor defaulted, leaving the record not simulated.**
+**The model was built but has not been simulated yet; t3_param_coverage.**
 
-The model was built but has not been simulated yet. The covariate scenarios were not simulated; the base model was simulated, not the covariate effects the record defines. V2, the peripheral-compartment volume reported as 75.1 L per 70 kg, was neither emitted nor defaulted, leaving 5 of 6 parameters covered. Only the abstract was read, so summary statistics stood in for a fitted model; the second reader disputed the methadone-to-EDDP-to-EMDP metabolism links and several parameter values. Extracted — methadone: V1 21.5 l.70 kg(-1), V2 75.1 l.70 kg(-1), V3 484 l.70 kg(-1), CL 9.45 l·h(-1) .70 kg(-1), Q 325 l·h(-1) .70 kg(-1), Q2 136 l·h(-1) .70 kg(-1); EDDP: CLfm 9.1 l·h(-1) .70 kg(-1), CL 40.9 l·h(-1) .70 kg(-1); EMDP: CLfm 7.4 l·h(-1) .70 kg(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — methadone: V1 21.5 l.70 kg(-1), V2 75.1 l.70 kg(-1), V3 484 l.70 kg(-1), CL 9.45 l·h(-1) .70 kg(-1), Q 325 l·h(-1) .70 kg(-1), Q2 136 l·h(-1) .70 kg(-1); EDDP: CLfm 9.1 l·h(-1) .70 kg(-1), CL 40.9 l·h(-1) .70 kg(-1); EMDP: CLfm 7.4 l·h(-1) .70 kg(-1).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has methadone, the second reading unknown; it also differs on 22 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of regimen dose: this record has none, the second reading 0.2; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| central volume (V1) | `Q63` · V1 | 21.5 | l.70 kg(-1) | 1.505 | m3 | l/kg | exact (1) | Ward_2014:abstract |
-| peripheral volumes of distribution V2 | `Q64` · V2 | 75.1 | l.70 kg(-1) | 5.257 | m3 | l/kg | exact (1) | Ward_2014:abstract |
-| V3 | `Q77` · V3 | 484 | l.70 kg(-1) | 33.88 | m3 | l/kg | exact (1) | Ward_2014:abstract |
-| clearance (CL) | `Q22` · CL | 9.45 | l·h(-1) .70 kg(-1) | 0.0001837 | m3/s | l/(h·kg) | exact (1) | Ward_2014:abstract |
-| intercompartment clearances Q2 | `Q30` · Q | 325 | l·h(-1) .70 kg(-1) | 0.006319 | m3/s | l/(h·kg) | exact (1) | Ward_2014:abstract |
-| Q3 | `Q99` · Q2 | 136 | l·h(-1) .70 kg(-1) | 0.002644 | m3/s | l/(h·kg) | exact (1) | Ward_2014:abstract |
-| EDDP formation clearance | `Q370` · CLfm | 9.1 | l·h(-1) .70 kg(-1) | 0.0001769 | m3/s | l/(h·kg) | exact (1) | Ward_2014:abstract |
-| formation clearance of EMDP from EDDP | `Q370` · CLfm | 7.4 | l·h(-1) .70 kg(-1) | 0.0001439 | m3/s | l/(h·kg) | exact (1) | Ward_2014:abstract |
-| elimination clearance of EDDP | `Q22` · CL | 40.9 | l·h(-1) .70 kg(-1) | 0.0007953 | m3/s | l/(h·kg) | exact (1) | Ward_2014:abstract |
+| central volume (V1) | `Q63` · V1 | 21.5 | l.70 kg(-1) | 0.0215 | m3 | l/70kg | exact (1) | Ward_2014:abstract |
+| peripheral volumes of distribution V2 | `Q64` · V2 | 75.1 | l.70 kg(-1) | 0.0751 | m3 | l/70kg | exact (1) | Ward_2014:abstract |
+| V3 | `Q77` · V3 | 484 | l.70 kg(-1) | 0.484 | m3 | l/70kg | exact (1) | Ward_2014:abstract |
+| clearance (CL) | `Q22` · CL | 9.45 | l·h(-1) .70 kg(-1) | 2.625e-06 | m3/s | l/(h·70kg) | exact (1) | Ward_2014:abstract |
+| intercompartment clearances Q2 | `Q30` · Q | 325 | l·h(-1) .70 kg(-1) | 9.028e-05 | m3/s | l/(h·70kg) | exact (1) | Ward_2014:abstract |
+| Q3 | `Q99` · Q2 | 136 | l·h(-1) .70 kg(-1) | 3.778e-05 | m3/s | l/(h·70kg) | exact (1) | Ward_2014:abstract |
+| EDDP formation clearance | `Q370` · CLfm | 9.1 | l·h(-1) .70 kg(-1) | 2.528e-06 | m3/s | l/(h·70kg) | exact (1) | Ward_2014:abstract |
+| formation clearance of EMDP from EDDP | `Q370` · CLfm | 7.4 | l·h(-1) .70 kg(-1) | 2.056e-06 | m3/s | l/(h·70kg) | exact (1) | Ward_2014:abstract |
+| elimination clearance of EDDP | `Q22` · CL | 40.9 | l·h(-1) .70 kg(-1) | 1.136e-05 | m3/s | l/(h·70kg) | exact (1) | Ward_2014:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -85,13 +81,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- covariate category for kcomp from footnote/prose kept as documentation only (['Ward_2014:abstract'])
-- dropped unlinked row (NIL): 'regimen in neonates' — extend the ontology if this is a real PK parameter (source ['Ward_2014:abstract'])
-- dropped PD-category row 'target concentration' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Ward_2014:abstract'])
+- dropped unlinked row (NIL): 'rate constant for intermediate compartments' — extend the ontology if this is a real PK parameter (source ['Ward_2014:abstract'])
+- dropped unlinked row (NIL): 'A regimen of' — extend the ontology if this is a real PK parameter (source ['Ward_2014:abstract'])
+- dropped unlinked row (NIL): 'target concentration of' — extend the ontology if this is a real PK parameter (source ['Ward_2014:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=methadone
-- topology: 2 first-order transfer(s) across 5 compounds → general_linear
+- topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: none — a metabolite is formed from another metabolite (a chain)
-- row roles (LLM): model_class=compartmental; 12/12 row label(s) assigned, 9 linked by role; re-tagged methadone→parent ×6, methadone→EDDP ×2, methadone→EMDP ×1
+- row roles (LLM): model_class=compartmental; 12/12 row label(s) assigned, 9 linked by role; re-tagged methadone→parent ×7, methadone→EDDP ×2, methadone→EMDP ×1
+- molar mass: none of 2 PubChem candidate(s) is 'EDDP' (LLM) — left in mass units
+- molar mass: none of 1 PubChem candidate(s) is 'EMDP' (LLM) — left in mass units
+- molar mass: none found for 'EDDP' — its concentrations stay mass-only
+- molar mass: none found for 'EMDP' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
@@ -99,40 +99,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.042 (1/24 fields) | 23 |
+| `gpt-oss-120b` | partly confirmed | 0.867 (13/15 fields) | 2 |
 
-<details><summary>23 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['methadone', 'eddp', 'metabolism'], ['eddp', 'emdp', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[central volume]` | 21.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[central volume]` |  | 21.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | 9.45 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` |  | 9.45 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[dosing interval]` |  | 8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[eddp formation clearance]` | 9.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[eddp formation clearance]` |  | 9.1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination clearance of eddp]` | 40.9 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[formation clearance of emdp from eddp]` | 7.4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[intercompartment clearances q2]` | 325 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[intercompartment clearances q2]` |  | 325 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[peripheral volumes of distribution v2]` | 75.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[peripheral volumes of distribution v2]` |  | 75.1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q3]` | 136 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q3]` |  | 136 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[regimen dose]` |  | 0.2 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[target concentration]` |  | 0.06 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[time to achieve target concentration]` |  | 36 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v3]` | 484 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v3]` |  | 484 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | methadone | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | methadone | unknown | mismatch |
 
 </details>
 
@@ -160,21 +139,21 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['Ward_2014:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 9.45 | ['Ward_2014:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 662 L/h | ['Ward_2014:abstract'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.86e+03 L/h | ['Ward_2014:abstract'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 1.51e+03 L | ['Ward_2014:abstract'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 5.26e+03 L | ['Ward_2014:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 9.45 L/h | ['Ward_2014:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 40.9 L/h | ['Ward_2014:abstract'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 21.5 L | ['Ward_2014:abstract'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 75.1 L | ['Ward_2014:abstract'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2'] |
-| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.042, 0 of 1 reader(s) agree | 0.042 | cross-check disputed by a second reader: verdict disputed, agreement 0.042, 0 of 1 reader(s) agree |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V1', 'V2'] |
+| T3_topology_template | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict partial; agreement 0.867 (13 of 15 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.867 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -225,4 +204,4 @@ _Browser simulation unavailable: no shared WebAssembly template. The **Models** 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethadone%5D%20Methadone_Ward2014_reference&body=Drug%3A%20methadone%0ARecord%3A%20Methadone_Ward2014_reference%0APaper%3A%20Ward_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methadone/Methadone_Ward2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:48 UTC</sub>

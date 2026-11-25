@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because the paper concerns another drug, making the reported midomafetamine clearance of 6.81 L/hour inapplicable.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Midomafetamine" model-id="Midomafetamine_Hampsey2026_reference" status="rejected" stale="false" population="" measured-compound="midomafetamine" parameterization="mechanistic" topology="1C"></div>
 
@@ -38,7 +38,7 @@ Hampsey E, Martin K, Kalfas M, Benson L, Wihlborg S, Jelen L et al. A systematic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,13 @@ Hampsey E, Martin K, Kalfas M, Benson L, Wihlborg S, Jelen L et al. A systematic
 
 ### Reviewer guidance
 
-**Rejected because the paper concerns another drug, making the reported midomafetamine clearance of 6.81 L/hour inapplicable.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The record lists midomafetamine total clearance as 6.81 L/hour and a derived volume of distribution of 39.1025 L. Neither the paper title nor abstract names midomafetamine, and the relevance screen identifies the paper as about another drug. Extracted — midomafetamine: CL 6.81 L/hour, V 39.1 L.
+Extracted — midomafetamine: CL 6.81 L/hour, V 39.1 L.
 
-<sub>reviewed by gpt-6-luna</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 13.26, the second reading 22.9; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -74,6 +76,34 @@ The record lists midomafetamine total clearance as 6.81 L/hour and a derived vol
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+
+<details><summary>8 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q17]` | 13.26 | 22.9 | mismatch |
+| `gpt-oss-120b` | `values[Q19]` | 12.57 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` | 6.81 | 4.7 | mismatch |
+| `gpt-oss-120b` | `values[Q307]` |  | 0.105 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 1.73 | 5.94 | mismatch |
+| `gpt-oss-120b` | `values[Q364]` |  | 9.0 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 1.43 | 0.16 | mismatch |
+| `gpt-oss-120b` | `values[Q57]` | 3.98 | 3.8 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -90,15 +120,15 @@ The record lists midomafetamine total clearance as 6.81 L/hour and a derived vol
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | fail | midomafetamine (or metabolite) | paper about another drug | paper subject is not midomafetamine: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=midomafetamine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | skipped |  |  | no second reading of this record |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | midomafetamine (or metabolite) | paper about another drug |  | paper subject is not midomafetamine: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=midomafetamine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

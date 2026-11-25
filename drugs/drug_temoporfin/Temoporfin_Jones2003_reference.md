@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Temoporfin’s reported hepatic blood-flow/intercompartmental-clearance parameter QH is 97.3 h, a time unit conflicting with its volume-per-time dimension, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q369 unit h ([time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="temoporfin" model-id="Temoporfin_Jones2003_reference" status="rejected" stale="false" population="BDIX rats with LSBD1 fibrosarcoma" measured-compound="14C m-THPC (temoporfin)" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Jones HJ, Vernon DI, Brown SB. Photodynamic therapy effect of m-THPC (Foscan) in
 
 ### Reviewer guidance
 
-**Temoporfin’s reported hepatic blood-flow/intercompartmental-clearance parameter QH is 97.3 h, a time unit conflicting with its volume-per-time dimension, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q369 unit h ([time]) vs [length] ** 3 / [time].**
 
-QH represents hepatic blood flow or intercompartmental clearance, but its reported unit h is time rather than volume per time. The unit could not be converted to SI, leaving the parameter without an SI value; a second reader did not identify a liver parameter. Extracted — m-THPC (temoporfin): t1/2α 0.46 h, t1/2z 6.91 h, t1/2γ 82.5 h, MRT 32.5 h, QH 97.3 h; 14C m-THPC (temoporfin): V 32 ml kg−1.
+A reported unit could not be converted (QH), so that value has no SI equivalent. None of the extracted parameters is temoporfin's own; they describe m-THPC (temoporfin) and 14C m-THPC (temoporfin). Extracted — m-THPC (temoporfin): t1/2α 0.46 h, t1/2z 6.91 h, t1/2γ 82.5 h, MRT 32.5 h, QH 97.3 h; 14C m-THPC (temoporfin): V 32 ml kg−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has m-THPC (temoporfin), the second reading m-THPC; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

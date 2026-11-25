@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
-> Gabapentin pharmacokinetic parameters extracted solely from the abstract were rejected because a second reader could not verify them, resulting in disputed agreement of 0.176.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Siao2010_reference" status="needs_review" stale="false" population="healthy adult female cats" measured-compound="gabapentin" parameterization="apparent" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Siao KT, Pypendop BH, Ilkiw JE. Pharmacokinetics of gabapentin in cats. American
 
 ### Reviewer guidance
 
-**Gabapentin pharmacokinetic parameters extracted solely from the abstract were rejected because a second reader could not verify them, resulting in disputed agreement of 0.176.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader disagreed on the dose compound, primary analyte, and all reported parameters, assigning null values. Specifically, clearance, central volume, steady-state volume, absorption rate, lag time, half-life, and bioavailability were all marked null by the second reader. Consequently, the cross-check was disputed with an agreement of 0.176 and zero reader agreement. Extracted — gabapentin: V/F 90.4 mL/kg, Vss 650 mL/kg, CL 3 mL/min/kg, t1/2z 170 minutes, Fab 88.7 %, kabs 5.24 1/hr, tlag 0.45 hr.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — gabapentin: V/F 90.4 mL/kg, Vss 650 mL/kg, CL 3 mL/min/kg, t1/2z 170 minutes, Fab 88.7 %, kabs 5.24 1/hr, tlag 0.45 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gabapentin, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -168,7 +168,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.176, 0 of 1 reader(s) agree | 0.176 | cross-check disputed by a second reader: verdict disputed, agreement 0.176, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.176 (3 of 17 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.176 | cross-check contradicted by a second reader: verdict disputed; agreement 0.176 (3 of 17 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

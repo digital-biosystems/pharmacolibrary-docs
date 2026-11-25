@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The vortioxetine record lacks distribution volume and elimination clearance, and the absorption rate constant unit was unconvertible to standard time.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ka ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Areberg2014v2_reference" status="rejected" stale="false" population="healthy individuals" measured-compound="vortioxetine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Areberg J, Petersen KB, Chen G, Naik H. Population pharmacokinetic meta-analysis
 
 ### Reviewer guidance
 
-**The vortioxetine record lacks distribution volume and elimination clearance, and the absorption rate constant unit was unconvertible to standard time.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ka ([time]) vs 1 / [time].**
 
-The extracted parameters include no clearance or elimination rate, so the model is not a compartmental population PK model. The absorption rate constant was recorded with a unit that could not be converted to standard SI units, preventing its use in the model structure. Extracted — vortioxetine: kabs 0.142 ka, Q 22.5 L/hr.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — vortioxetine: kabs 0.142 ka, Q 22.5 L/hr.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

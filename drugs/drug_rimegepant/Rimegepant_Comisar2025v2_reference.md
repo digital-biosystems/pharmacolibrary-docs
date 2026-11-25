@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rimegepant’s apparent clearance, CL/F, of 24.1 L/h was refused because its apparent-parameter values were flagged for double correction.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="rimegepant" model-id="Rimegepant_Comisar2025v2_reference" status="rejected" stale="false" population="healthy adults, elderly, adults with renal or hepatic dysfunction, Japanese and Chinese adults" measured-compound="rimegepant" parameterization="apparent" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Comisar CM, Hughes JH, Francis J, Chinda Y, Sano Y, Muto C et al. Population Pha
 
 ### Reviewer guidance
 
-**Rimegepant’s apparent clearance, CL/F, of 24.1 L/h was refused because its apparent-parameter values were flagged for double correction.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The record reports CL/F as total clearance adjusted for bioavailability, and the finding identifies double correction of apparent parameters. A reported unit could not be converted to SI, so its parameter reached the model builder without an SI value. The second reader assigns −0.706 to the fed effect on transit absorption, whereas this record assigns it to a fed-state covariate effect whose pharmacokinetic target is not specified; the second reader also reports a 0.191 dose effect on relative bioavailability that is absent from this record. Extracted — rimegepant: CL/F 24.1 L/h, V1/F 114 L, V2/F 46 L, Q/F 3.94 L/h, ktr 8.23 h−1, kabs 3.86 h−1, Frel -0.315 F1.
+A reported unit could not be converted (Frel), so that value has no SI equivalent. Extracted — rimegepant: CL/F 24.1 L/h, V1/F 114 L, V2/F 46 L, Q/F 3.94 L/h, ktr 8.23 h−1, kabs 3.86 h−1, Frel -0.315 F1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose effect on f1: this record has none, the second reading 0.191; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Cinacalcet absorption rate constant and lag time used library defaults instead of paper estimates.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="cinacalcet" model-id="Cinacalcet_SchappacherTilp2019_reference" status="needs_review" stale="false" population="chronic kidney disease patients" measured-compound="cinacalcet" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Schappacher-Tilp G, Fuertinger DH, Kotanko P. A Multi-Compartment Model Capturin
 
 ### Reviewer guidance
 
-**Cinacalcet absorption rate constant and lag time used library defaults instead of paper estimates.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record's absorption parameters, ka and Tlag, were not reported in the source and were defaulted. Consequently, the model relied on unsupported assumptions for first-order depot input. A second reader also disagreed on several numeric fields, such as the volume of distribution value of 1000 L. Extracted — cinacalcet: CL/F 314 L/h, V 1e+03 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — cinacalcet: CL/F 314 L/h, V 1e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has none, the second reading 2.4; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.5 (7 of 14 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

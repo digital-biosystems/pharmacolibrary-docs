@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The intercompartmental rate constant k12 was left unextracted, so no explicit estimate supported the derived clearance Q (1.96 L/h).
+> K12 use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="Vaborbactam" model-id="Vaborbactam_Fornari2024_reference" status="needs_review" stale="false" population="paediatric patients with Gram-negative bacterial infections" measured-compound="vaborbactam" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Fornari C, Arrieta A, Bradley JS, Tout M, Magalhaes P, Auriol FK et al. Dose rat
 
 ### Reviewer guidance
 
-**The intercompartmental rate constant k12 was left unextracted, so no explicit estimate supported the derived clearance Q (1.96 L/h).**
+**K12 use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).**
 
-The record specifies a two-compartment model with central volume V1 (14.4 L) and intercompartmental clearance Q (1.96 L/h), but fails to provide an explicit value for the backward rate constant k12. Because this parameter was not extracted from the paper, the model lacks a defined estimate for k12, leaving a structural gap in the kinetic linkage between compartments. Additionally, the covariate effects described in the record were not exercised during the model simulation. Extracted — vaborbactam: CL 9.84 L/h, V1 14.4 L, Q 1.96 L/h, V2 2.56 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — vaborbactam: CL 9.84 L/h, V1 14.4 L, Q 1.96 L/h, V2 2.56 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none → none (none), the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

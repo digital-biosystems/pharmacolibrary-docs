@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The letermovir record was refused because its volume-of-distribution parameter V is −0.280, implicated in an implausible negative clearance or volume.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="letermovir" model-id="Letermovir_Prohn2021_reference" status="rejected" stale="false" population="healthy participants and allogeneic hematopoietic cell transplantation recipients" measured-compound="letermovir" parameterization="mechanistic" topology="3C"></div>
 
@@ -58,13 +58,13 @@ Prohn M, Viberg A, Zhang D, Dykstra K, Davis C, Macha S et al. Population pharma
 
 ### Reviewer guidance
 
-**The letermovir record was refused because its volume-of-distribution parameter V is −0.280, implicated in an implausible negative clearance or volume.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record reports V as −0.280, and its stated meaning identifies V as a volume-of-distribution parameter. The finding flags a negative clearance or volume at baseline or in a covariate scenario, but does not specify which scenario or whether the base value or a shift caused it. Separately, a reported unit could not be converted to SI; the record does not identify which parameter had that unit. Extracted — letermovir: CL 12.2 L/h, V1 7.45 L, V -0.28, n_transit 3.6, MTT 1.04 h, V2 25.8 L, Fab 0.938, FG 0.346, … (+3).
+A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — letermovir: CL 12.2 L/h, V1 7.45 L, V -0.28, n_transit 3.6, MTT 1.04 h, V2 25.8 L, Fab 0.938, FG 0.346, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has letermovir, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

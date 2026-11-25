@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The delapril record lacks distribution volume and clearance, is not a compartmental model, and features an orphan metabolite with an unverifiable AUC value.
+> No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="delapril" model-id="Delapril_Onoyama1988_metabolite_2_m_2_nrf" status="rejected" stale="false" population="adults with normal and deteriorated kidney function" measured-compound="M-1 (CV-3317-COOH)" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -48,13 +48,13 @@ Onoyama K, Nanishi F, Okuda S, Oh Y, Fujishima M, Tateno M et al. Pharmacokineti
 
 ### Reviewer guidance
 
-**The delapril record lacks distribution volume and clearance, is not a compartmental model, and features an orphan metabolite with an unverifiable AUC value.**
+**No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The paper reports only an AUC of 188 ng·h/mL for metabolite M-2, omitting any distribution volume or clearance parameters required for a compartmental population PK model. Structurally, metabolites M-1, M-2, and M-3 are defined with zero central compartments, rendering them orphan structures with no path from the dose. Additionally, a unit discrepancy between the verbatim label and the extracted value prevented the second reader from validating the parameter. Extracted — M-2 (DKP-COOH): AUC 188 ng·h/mL.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (AUC), so that value has no SI equivalent. None of the extracted parameters is delapril's own; they describe M-2 (DKP-COOH). Extracted — M-2 (DKP-COOH): AUC 188 ng·h/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has delapril (cv-3317) → m-1 (cv-3317-cooh) (metabolism); delapril (cv-3317) → m-2 (dkp-cooh) (metabolism); delapril (cv-3317) → m-3 (cv-3317-(5-oh)-cooh) (metabolism), the second reading delapril → m-1 (metabolism); delapril → m-2 (metabolism); delapril → m-3 (metabolism); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

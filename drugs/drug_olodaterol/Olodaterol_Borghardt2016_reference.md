@@ -4,11 +4,11 @@
 
 # olodaterol — `Olodaterol_Borghardt2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was rejected because the 0.178 L volume of distribution for olodaterol is physiologically implausible, stemming from abstract-only data.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="olodaterol" model-id="Olodaterol_Borghardt2016_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="olodaterol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="olodaterol" model-id="Olodaterol_Borghardt2016_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="olodaterol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Borghardt JM, Weber B, Staab A, Kunz C, Formella S, Kloft C. Investigating pulmonary and systemic pharmacokinetics of inhaled olodaterol in healthy volunteers using a population pharmacokinetic approach. British journal of clinical pharmacology 81(3):538–552 (2016).
@@ -16,27 +16,26 @@ Borghardt JM, Weber B, Staab A, Kunz C, Formella S, Kloft C. Investigating pulmo
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = 148.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| pulmonary bioavailable fraction | Fab | 49.4 | % |
+| The dose reaching the lung (pulmonary bioavailable fraction) was estimated to be | Frel | 49.4 |  |
 | half-life | t1/2z | 21.8 | h |
-| ε, L | V | 0.178 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,21 +45,20 @@ Borghardt JM, Weber B, Staab A, Kunz C, Formella S, Kloft C. Investigating pulmo
 
 ### Reviewer guidance
 
-**The record was rejected because the 0.178 L volume of distribution for olodaterol is physiologically implausible, stemming from abstract-only data.**
+**Only clearance was extracted — no volume.**
 
-The 0.178 L volume of distribution is far below typical human physiological values, indicating an extraction error or scale mismatch. Since the record was built from the abstract alone, these summary statistics stand in for a fitted model, leading to the implausible magnitude. A second reader could not confirm the extracted values for half-life, bioavailability fraction, or volume, marking them as null. Extracted — olodaterol: Fab 49.4 %, t1/2z 21.8 h, V 0.178 L.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — olodaterol: Frel 49.4, t1/2z 21.8 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has olodaterol, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose reaching the lung: this record has none, the second reading 49.4; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| pulmonary bioavailable fraction | `Q40` · Fab | 49.4 | % |  |  |  | llm (0.6) | Borghardt_2016:abstract, Borghardt_2016:abstract |
-| half-life | `Q57` · t1/2z | 21.8 | h | 7.848e+04 | s | h | llm (0.6) | Borghardt_2016:abstract, Borghardt_2016:abstract |
-| ε, L | `Q61` · V | 0.178 | L | 0.000178 | m3 | L | review_gapfill (0.7) | Gong_2022:review |
+| The dose reaching the lung (pulmonary bioavailable fraction) was estimated to be | `Q87` · Frel | 49.4 |  |  |  |  | llm (0.6) | Borghardt_2016:abstract |
+| half-life | `Q57` · t1/2z | 21.8 | h | 7.848e+04 | s | h | half_life_rule (0.95) | Borghardt_2016:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,36 +69,27 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=olodaterol
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Gong_2022's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Borghardt_2016_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Borghardt_2016_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+| `gpt-oss-120b` | partly confirmed | 0.667 (6/9 fields) | 3 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[dose reaching the lung]` |  | 49.4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half-life]` | 21.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half-life]` |  | 21.8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[pulmonary bioavailable fraction]` | 49.4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ε]` | 0.178 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | olodaterol | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | olodaterol | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[large proportion of the pulmonary bioavailable fraction]` |  | 70.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the dose reaching the lung (pulmonary bioavailable fraction) was estimated to be]` | 49.4 |  | only_one_extracted |
 
 </details>
 
@@ -117,10 +106,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q57 | pass | [time] |  | ['Borghardt_2016:abstract', 'Borghardt_2016:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Gong_2022:review'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Borghardt_2016:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.178 L | ['Gong_2022:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -132,9 +119,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -144,4 +141,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bolodaterol%5D%20Olodaterol_Borghardt2016_reference&body=Drug%3A%20olodaterol%0ARecord%3A%20Olodaterol_Borghardt2016_reference%0APaper%3A%20Borghardt_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_olodaterol/Olodaterol_Borghardt2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 14:20 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:20 UTC</sub>

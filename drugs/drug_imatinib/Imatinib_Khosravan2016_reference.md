@@ -48,7 +48,7 @@ Khosravan R, Motzer RJ, Fumagalli E, Rini BI. Population Pharmacokinetic/Pharmac
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q312: this record has none, the second reading 24.6; it also differs on 1 more field. That field does not shape the model.
 
@@ -133,7 +133,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.8 (8 of 10 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -149,7 +149,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_imatinib/Imatinib_Khosravan2016_reference/Imatinib_Khosravan2016_reference_modelica.zip" download>Imatinib_Khosravan2016_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_imatinib/Imatinib_Khosravan2016_reference/Imatinib_Khosravan2016_reference_modelica.zip" download>Imatinib_Khosravan2016_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_imatinib/Imatinib_Khosravan2016_reference/Imatinib_Khosravan2016_reference_fmi.zip" download>Imatinib_Khosravan2016_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_imatinib/Imatinib_Khosravan2016_reference/Imatinib_Khosravan2016_reference_matlab.zip" download>Imatinib_Khosravan2016_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_imatinib/Imatinib_Khosravan2016_reference/Imatinib_Khosravan2016_reference_matlab_simbio.zip" download>Imatinib_Khosravan2016_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

@@ -22,7 +22,6 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Castillo_1989_3H_PN200_110_binding_displacement_by_cinnarizine](drugs/drug_cinnarizine/pd_Castillo_1989_3H_PN200_110_binding_displacement_by_cinnarizi.md) | (+)-[3H]PN200-110 binding displacement by cinnarizine ← cinnarizine · inhibition effect | — | Castillo CJ et al., (+)-PN200-110 and ouabain binding sites…, Journal of neurochemistry (1989) | [10.1111/j.1471-4159.1989.tb08536.x](https://doi.org/10.1111/j.1471-4159.1989.tb08536.x) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lemes_2025_L1_viability](drugs/drug_cinnarizine/pd_Lemes_2025_L1_viability.md) | A. cantonensis L1 larval viability ← cinnarizine · direct sigmoid Emax (Hill) effect | — | Lemes BL et al., Structural Exploitation of Cinnarizine…, ACS infectious diseases (2025) | [10.1021/acsinfecdis.5c00634](https://doi.org/10.1021/acsinfecdis.5c00634) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lemes_2025_L3_viability](drugs/drug_cinnarizine/pd_Lemes_2025_L3_viability.md) | A. cantonensis L3 larval viability ← cinnarizine · direct sigmoid Emax (Hill) effect | — | Lemes BL et al., Structural Exploitation of Cinnarizine…, ACS infectious diseases (2025) | [10.1021/acsinfecdis.5c00634](https://doi.org/10.1021/acsinfecdis.5c00634) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Roquini_2024_Larval_motility_of_A_cantonensis_L1_viability](drugs/drug_cinnarizine/pd_Roquini_2024_Larval_motility_of_A_cantonensis_L1_viability.md) | Larval motility of A. cantonensis L1 (viability) ← cinnarizine · direct sigmoid Emax (Hill) effect | — | Roquini DB et al., Antihistamines H, ACS omega (2024) | [10.1021/acsomega.4c04773](https://doi.org/10.1021/acsomega.4c04773) |
@@ -39,7 +38,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:56 | 0:36 | 0/0/0 | 4/0/0 | 0/0/0 | 77,938/1,637 | ollama / glm-5.3-flash | 4 | 0/4 | 4/0 | 0 |
+| 2026-11-23 20:17 | 0:03 | 0/0/0 | 3/0/0 | 0/0/0 | 3,945/163 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
 
 ## Coverage
 
@@ -48,30 +47,28 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Li_2010.pdf` | Li BQ et al., Effect of route of administration on th…, European journal of pharmac… (2010) | popPK | 8 | [10.1016/j.ejps.2010.03.013](https://doi.org/10.1016/j.ejps.2010.03.013) | [20307656](https://pubmed.ncbi.nlm.nih.gov/20307656) | PK study of cinnarizine in Beagle dogs with compartmental models, but numeric parameter values (CL, V, t½) are not shown in the evidence, only bioavailability 46.4%. |
-
-<sub>queue written 2026-10-07 03:56 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Castillo_1989 | irrelevant | 0 | 0 | In-vitro binding study in bovine adrenal membranes; cinnarizine is only a displacing ligand, no PK parameters. |
-| popPK | Castro_2025 | irrelevant | 0 | 0 | This is an antischistosomal efficacy study of clocinizine (a cinnarizine analogue); no PK disposition parameters for cinnarizine are reported, only generic literature statements about antihistamine half-lives. |
-| popPK | Lawson_1989 | irrelevant | 0 | 0 | In-vitro rat aorta pharmacology study; cinnarizine is only a test agent at a fixed concentration, with no PK parameters. |
-| popPK | Lawson_1989_2 | irrelevant | 0 | 0 | In-vitro pharmacology study of calcium antagonists in rat aortic rings; cinnarizine is only a test agent with no PK parameters. |
-| popPK | Lawson_1992 | irrelevant | 0 | 0 | In-vitro rat aorta pharmacology study; cinnarizine is only a tool calcium channel antagonist, no PK parameters. |
+| popPK | Castillo_1989 | irrelevant | 0 | 0 | The paper studies receptor binding in bovine adrenomedullary membranes and is not a pharmacokinetic study of cinnarizine. |
+| PGx | Castillo_1989 | not_relevant | 0 | 0 | The paper reports in vitro binding properties of PN200-110 and ouabain in bovine cells and does not involve human pharmacogenomics, genetic variants, or pharmacokinetic parameters for cinnarizine. |
+| popPK | Castro_2025 | irrelevant | 0 | 0 | The study focuses on the antischistosomal efficacy of clocinizine (an analogue) and cinnarizine, reporting only qualitative pharmacokinetic properties or literature references for cinnarizine without original quantitative PK parameters. |
+| PGx | Castro_2025 | not_relevant | 0 | 0 | The paper investigates the antiparasitic efficacy and synthesis of clocinizine, a cinnarizine analogue, but does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Lawson_1989 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacological study on rat aortic contractions where cinnarizine is used as a mechanism probe, containing no pharmacokinetic data. |
+| PGx | Lawson_1989 | not_relevant | 0 | 0 | The paper is a pharmacology study on rat aorta and does not report any pharmacogenomic effects on the PK or PD of cinnarizine. |
+| popPK | Lawson_1989_2 | irrelevant | 0 | 0 | This is a pharmacodynamic study on rat aortic rings investigating calcium channel mechanisms, not a pharmacokinetic study for cinnarizine. |
+| PGx | Lawson_1989_2 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of cinnarizine on calcium channels in rat aortic rings and does not report any pharmacogenomic effects or gene variants. |
+| popPK | Lawson_1992 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on rat aortic contractions where cinnarizine is used only as a comparative antagonist, not as the subject of pharmacokinetic analysis. |
+| PGx | Lawson_1992 | not_relevant | 0 | 0 | The study investigates the pharmacodynamic effects of cinnarizine on aortic contractions but does not examine any genetic variants or pharmacogenomic factors. |
 | popPK | Lemes_2025 | irrelevant | 0 | 0 | This is a medicinal chemistry/anthelmintic SAR study of cinnarizine analogues with in vitro EC50 values; no pharmacokinetic parameters (CL, V, ka, half-life, PK model) for cinnarizine are reported. |
-| popPK | Li_2010 | relevant | 8 | 3 | PK study of cinnarizine in Beagle dogs with compartmental models, but numeric parameter values (CL, V, t½) are not shown in the evidence, only bioavailability 46.4%. |
+| popPK | Li_2010 | relevant | 10 | 2 | The study reports quantitative PK parameters (CL, V, T1/2) for cinnarizine in dogs, but the abstract lacks the specific numeric values and they are not listed in the provided evidence. |
+| PGx | Li_2010 | not_relevant | 0 | 0 | The study investigates the effect of route of administration on pharmacokinetics in dogs and does not report any gene variants, genotypes, or phenotypes. |
 | popPK | Roquini_2024 | irrelevant | 0 | 0 | In vitro anthelmintic screening study; cinnarizine is only a tested compound with EC50 values, no PK disposition parameters (CL, V, ka, half-life) reported. |
-| popPK | Siqueira_2019 | irrelevant | 1 | 2 | In vitro lipolysis/solubilization study of SNEDDS formulations; no PK disposition parameters (CL, V, ka, half-life) for cinnarizine are reported, only solubility values. |
-| popPK | Spedding_1982 | irrelevant | 0 | 0 | In-vitro smooth muscle pharmacodynamics study; cinnarizine is a test drug, no PK disposition parameters reported. |
+| popPK | Siqueira_2019 | irrelevant | 0 | 0 | The study is an in vitro lipolysis model assessing drug solubilization and does not report pharmacokinetic parameters (CL, V, ka) for cinnarizine. |
+| PGx | Siqueira_2019 | not_relevant | 0 | 0 | The study focuses on the effect of SNEDDS formulation composition on the in vitro solubilization of cinnarizine and does not investigate pharmacogenomic effects. |
+| popPK | Spedding_1982 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study assessing calcium antagonist effects in guinea-pig smooth muscle and contains no pharmacokinetic parameters for cinnarizine. |
+| PGx | Spedding_1982 | not_relevant | 0 | 0 | The paper describes in vitro pharmacology of cinnarizine and other drugs but contains no human genetic or pharmacogenomic data. |
 
 
 </details>

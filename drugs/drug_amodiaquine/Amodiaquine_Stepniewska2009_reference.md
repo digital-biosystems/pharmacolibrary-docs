@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The desethylamodiaquine model includes an orphan peripheral compartment lacking an intercompartmental clearance parameter.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="amodiaquine" model-id="Amodiaquine_Stepniewska2009_reference" status="rejected" stale="false" population="African children with acute uncomplicated falciparum malaria" measured-compound="desethylamodiaquine" parameterization="apparent" topology="general_linear"></div>
 
@@ -58,13 +58,13 @@ Stepniewska K, Taylor W, Sirima SB, Ouedraogo EB, Ouedraogo A, Gansané A et al.
 
 ### Reviewer guidance
 
-**The desethylamodiaquine model includes an orphan peripheral compartment lacking an intercompartmental clearance parameter.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The desethylamodiaquine structure specifies two compartments and an intercompartmental clearance Q of 0.680 L kg-1 h-1. However, the extraction failed to link the peripheral compartment to the central one, rendering the compartment unreachable from the dose. The second reader disagrees on the assignment of clearance and volume parameters, specifically regarding the 0.610 L kg-1 h-1 clearance and 35.4 L kg-1 central volume. Extracted — dihydroartemisinin: kabs 4.27 h -1, CL 0.616 L kg-1 h-1, V1/F 2.13 L kg-1; desethylamodiaquine: kabs 0.13 h-1, CLm/F 0.61 L kg-1 h-1, Q 0.68 L kg-1 h-1, V1/F 35.4 L kg-1, V2/F 87.9 L kg-1.
+None of the extracted parameters is amodiaquine's own; they describe dihydroartemisinin and desethylamodiaquine. Extracted — dihydroartemisinin: kabs 4.27 h -1, CL 0.616 L kg-1 h-1, V1/F 2.13 L kg-1; desethylamodiaquine: kabs 0.13 h-1, CLm/F 0.61 L kg-1 h-1, Q 0.68 L kg-1 h-1, V1/F 35.4 L kg-1, V2/F 87.9 L kg-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl/f: this record has 0.610, the second reading none; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

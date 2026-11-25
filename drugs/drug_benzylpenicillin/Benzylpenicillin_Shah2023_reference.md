@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Benzylpenicillin clearance value 24.0 L/h/70 kg was disputed by a second reader who extracted 23.1.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="benzylpenicillin" model-id="Benzylpenicillin_Shah2023_reference" status="needs_review" stale="false" population="" measured-compound="benzylpenicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Shah RV, Kipper K, Baker EH, Barker CIS, Oldfield I, Philips BJ et al. Populatio
 
 ### Reviewer guidance
 
-**Benzylpenicillin clearance value 24.0 L/h/70 kg was disputed by a second reader who extracted 23.1.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists benzylpenicillin total clearance as 24.0 L/h/70 kg, but the second reader identified the value as 23.1. This discrepancy created a disagreement on the primary pharmacokinetic parameter. Consequently, the cross-check failed with an agreement ratio of 0.4, leaving the record's status unresolved. Extracted — benzylpenicillin: CL 24 L/h/70 kg, V1 15.1 L/70 kg, V2/F 9.8 L/70 kg, Q 11.1 L/h/70 kg.
+Extracted — benzylpenicillin: CL 24 L/h/70 kg, V1 15.1 L/70 kg, V2/F 9.8 L/70 kg, Q 11.1 L/h/70 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 24.0, the second reading 23.1; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check disputed by a second reader: verdict disputed, agreement 0.4, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.4 (6 of 15 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.4 | cross-check contradicted by a second reader: verdict disputed; agreement 0.4 (6 of 15 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

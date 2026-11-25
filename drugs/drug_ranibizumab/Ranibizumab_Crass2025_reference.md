@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because ranibizumab’s oral-adjusted clearance, 0.325 L/day, is assigned from a paper focused on pegcetacoplan, not ranibizumab.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="ranibizumab" model-id="Ranibizumab_Crass2025_reference" status="rejected" stale="false" population="" measured-compound="ranibizumab" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Crass RL, Prem K, Gauderault F, Ribeiro R, Baumal CR, Smith B et al. Population 
 
 ### Reviewer guidance
 
-**The record was rejected because ranibizumab’s oral-adjusted clearance, 0.325 L/day, is assigned from a paper focused on pegcetacoplan, not ranibizumab.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The paper focuses on pegcetacoplan and mentions ranibizumab only in passing as a comparison, so it does not support attributing the reported clearance, central volume adjusted for bioavailability (1.83 L), or absorption rate (0.0528 days−1) to ranibizumab. The model builder defaulted the lag time rather than using an explicit estimate and assumed F=1, Fm=1, with no molar correction. A second reader disputed the record (agreement 0.176, 0 of 1 reader agreeing), including clearance (0.325 versus −1.12) and central-compartment volume (1.83 versus 0.603). Extracted — ranibizumab: CL/F 0.325 L/day, V1/F 1.83 L, kabs 0.0528 days−1.
+Extracted — ranibizumab: CL/F 0.325 L/day, V1/F 1.83 L, kabs 0.0528 days−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has 2409, the second reading none; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,7 +142,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.176, 0 of 1 reader(s) agree | 0.176 | cross-check disputed by a second reader: verdict disputed, agreement 0.176, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.176 (3 of 17 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.176 | cross-check contradicted by a second reader: verdict disputed; agreement 0.176 (3 of 17 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

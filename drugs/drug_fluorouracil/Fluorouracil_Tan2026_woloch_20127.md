@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F and lag time Tlag were not extracted, so library placeholders would have been used instead of paper estimates.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Tan2026_woloch_20127" status="needs_review" stale="false" population="adults with cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Tan Z, Sancho-Araiz A, Völler S, Peeters SLJ, Manten T, Deenen MJ et al. Advanc
 
 ### Reviewer guidance
 
-**Bioavailability F and lag time Tlag were not extracted, so library placeholders would have been used instead of paper estimates.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record for 5-fluorouracil lacks explicit estimates for the bioavailability fraction (F) and the absorption lag time (Tlag). Because no values were found, a library placeholder would have been used, leaving the model held back. The established note confirms these defaults are not supported by the paper, unlike the extracted parameters such as clearance (51 L/h) and Vmax (763 mg/h). Extracted — fluorouracil: CL 51 L/h, V1 22 L, V2 70 L, Q 6 L/h, Vmax 763 mg/h, Km 25 mg/L, kabs 0.13 1/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — fluorouracil: CL 51 L/h, V1 22 L, V2 70 L, Q 6 L/h, Vmax 763 mg/h, Km 25 mg/L, kabs 0.13 1/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

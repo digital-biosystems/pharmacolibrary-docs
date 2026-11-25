@@ -40,7 +40,7 @@ Pirarubicin is an anthracycline antineoplastic antibiotic used to treat cancer. 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Leca_1998_WBCnadir](drugs/drug_pirarubicin/pd_Leca_1998_WBCnadir.md) | white blood cell nadir count ← pirarubicin · direct log-linear effect | model (no simulator) | Leca FR et al., Pharmacokinetic-pharmacodynamic relatio…, Anti-cancer drugs (1998) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Leca_1998_WBC](drugs/drug_pirarubicin/pd_Leca_1998_WBC.md) | white blood cells (WBC) ← pirarubicin · direct linear effect | — | Leca FR et al., Pharmacokinetic-pharmacodynamic relatio…, Anti-cancer drugs (1998) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,41 +54,39 @@ Pirarubicin is an anthracycline antineoplastic antibiotic used to treat cancer. 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 19:45 | 3:41 | 2/0/0 | 1/0/0 | 0/0/0 | 33,631/10,393 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 04:40 | 0:03 | 2/0/0 | 1/0/0 | 0/0/0 | 4,364/162 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 2  ·  **relevant:** 1
 - **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Mader_1995.pdf` | Mader RM et al., Pharmacokinetics of 4'-O-tetrahydropyra…, Cancer chemotherapy and pha… (1995) | popPK | 10 | [10.1007/BF00685634](https://doi.org/10.1007/BF00685634) | [7497603](https://pubmed.ncbi.nlm.nih.gov/7497603) | Human study reports a three-compartment model, half-lives, and clearance for pirarubicin with numeric values. |
-| `Robert_1988.pdf` | Robert J et al., Pharmacokinetics and metabolism of pira…, European journal of cancer… (1988) | popPK | 10 | [10.1016/0277-5379(88)90217-9](https://doi.org/10.1016/0277-5379(88)90217-9) | [3181250](https://pubmed.ncbi.nlm.nih.gov/3181250) | Human two-compartment PK values, including clearance, volume, and half-lives, are reported in the evidence. |
-
-<sub>queue written 2026-10-06 19:43 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Kubota_2001 | not_relevant | 0 | 0 | The text discusses P-glycoprotein-mediated drug resistance but reports no gene variant/genotype effect on a pirarubicin PK or PD parameter. |
-| popPK | Leca_1998 | irrelevant | 2 | 1 | Human exposure–toxicity analysis reports an AUC estimate but no quantitative disposition parameters. |
-| PGx | Lin_2020 | not_relevant | 0 | 0 | The study reports drug resistance and GSPE effects in cell lines, not an effect of a gene variant, genotype, or phenotype on a pirarubicin PK/PD parameter. |
-| popPK | Marbeuf-Gueye_1998 | irrelevant | 1 | 0 | This is an in-vitro cell-efflux study, and pirarubicin’s Ka is described only qualitatively without numeric values. |
-| popPK | Meesungnoen_2002 | irrelevant | 0 | 0 | This is an in-vitro cellular efflux study, not a pharmacokinetic disposition study reporting pirarubicin PK parameters. |
+| popPK | Kubota_2001 | irrelevant | 0 | 0 | The paper is a mechanistic review of drug resistance mechanisms (P-gp, MRP, LRP) and does not report any quantitative pharmacokinetic parameters for pirarubicin. |
+| PGx | Kubota_2001 | not_relevant | 2 | 0 | The paper discusses general resistance mechanisms (P-gp, MRP) in cancer cells but does not report clinical pharmacogenomic data linking specific human genotypes to pirarubicin PK or PD parameters. |
+| popPK | Leca_1998 | irrelevant | 3 | 0 | The study reports a pharmacodynamic predictive model for toxicity using a single-timepoint AUC estimate, but does not report standard quantitative disposition parameters (CL, V, ka) or a compartmental model for pirarubicin. |
+| PGx | Leca_1998 | not_relevant | 0 | 0 | The study evaluates pharmacokinetic-pharmacodynamic relationships for hematological toxicity without examining any gene variants, genotypes, or pharmacogenomic factors. |
+| popPK | Lin_2020 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of multidrug resistance in cell lines where pirarubicin is only used as a probe drug to test resistance, with no pharmacokinetic modeling or disposition parameters reported. |
+| PGx | Lin_2020 | not_relevant | 0 | 0 | The paper investigates the reversal of multidrug resistance by a natural extract in cell lines, not the effect of a specific human gene variant/genotype on pirarubicin's PK or PD parameters. |
+| popPK | Mader_1995 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of 4'-O-tetrahydropyranyladriamycin (THP-ADM), a prodrug, not pirarubicin. |
+| PGx | Mader_1995 | not_relevant | 0 | 0 | The paper reports standard pharmacokinetics of pirarubicin but does not investigate or report any gene variants or genotypes affecting PK or PD parameters. |
+| popPK | Marbeuf-Gueye_1998 | irrelevant | 0 | 0 | The study focuses on in-vitro cellular efflux kinetics of anthracyclines (including pirarubicin) and does not report in-vivo population or systemic pharmacokinetic parameters (CL, V, T1/2). |
+| PGx | Marbeuf-Gueye_1998 | not_relevant | 1 | 1 | The study examines transporter kinetics in cancer cell lines and mentions pirarubicin, but does not report pharmacogenomic effects on patient PK or PD parameters. |
+| popPK | Meesungnoen_2002 | irrelevant | 1 | 0 | The study is in-vitro mechanistic research on P-glycoprotein-mediated efflux in K562 cells, reporting kinetic parameters (Vmax, Km) rather than population pharmacokinetic disposition parameters. |
+| PGx | Meesungnoen_2002 | not_relevant | 0 | 0 | The study investigates drug resistance mechanisms in cell lines rather than a specific human genetic variant affecting pharmacokinetics or pharmacodynamics in vivo. |
+| PGx | Robert_1988 | not_relevant | 0 | 0 | The paper describes standard pharmacokinetics and metabolism in a small patient cohort but does not report any gene variant or pharmacogenomic effect on PK/PD parameters. |
 | PGx | Wu_2016 | not_relevant | 0 | 0 | WT1 genotype is associated with pathologic response to a combination regimen, but the paper reports no pirarubicin-specific PK or PD parameter. |
-| PGx | Zhou_2018 | not_relevant | 0 | 0 | Genotypes were associated with tumor recurrence risk, but the paper reports no pharmacokinetic or pharmacodynamic parameter of pirarubicin. |
+| popPK | Zhou_2018 | irrelevant | 0 | 0 | The study is a pharmacogenomic analysis focusing on tumor recurrence risk and does not report any quantitative pharmacokinetic parameters (CL, V, etc.) for pirarubicin. |
+| PGx | Zhou_2018 | not_relevant | 0 | 0 | The study reports an association with clinical recurrence risk (efficacy), not changes in a pharmacokinetic or pharmacodynamic parameter of pirarubicin. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpirarubicin%5D&body=Drug%3A%20pirarubicin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pirarubicin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 19:43 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 04:40 UTC</sub>

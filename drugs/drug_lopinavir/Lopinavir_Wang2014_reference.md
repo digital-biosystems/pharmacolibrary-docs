@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;Lopinavir&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/&quot;},{&quot;label&quot;:&quot;Wang_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lopinavir_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lopinavir_Wang2014_reference&quot;,&quot;label&quot;:&quot;Wang_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Wang2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lopinavir_Calderin2026_reference&quot;,&quot;label&quot;:&quot;Calderin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Calderin2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lopinavir_Upton2025_reference&quot;,&quot;label&quot;:&quot;Upton_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Upton2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lopinavir_Alvarez2021_reference&quot;,&quot;label&quot;:&quot;Alvarez_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Alvarez2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lopinavir_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lopinavir_Calderin2026_reference&quot;,&quot;label&quot;:&quot;Calderin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Calderin2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lopinavir_Upton2025_reference&quot;,&quot;label&quot;:&quot;Upton_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Upton2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Lopinavir — `Lopinavir_Wang2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is held because the second reader disagreed on key parameters like total clearance and dose compound identification.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q290 unit L/h ([length] ** 3 / [time]) vs [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
-<div class="pk-model-meta" hidden drug="Lopinavir" model-id="Lopinavir_Wang2014_reference" status="needs_review" stale="false" population="treatment-naïve HIV-1 infected patients" measured-compound="lopinavir" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Lopinavir" model-id="Lopinavir_Wang2014_reference" status="rejected" stale="false" population="treatment-naïve HIV-infected patients" measured-compound="lopinavir" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Wang K, D'Argenio DZ, Acosta EP, Sheth AN, Delille C, Lennox JL et al. Integrated population pharmacokinetic/viral dynamic modelling of lopinavir/ritonavir in HIV-1 treatment-naïve patients. Clinical pharmacokinetics 53(4):361–371 (2014).
@@ -17,34 +17,29 @@ Wang K, D'Argenio DZ, Acosta EP, Sheth AN, Delille C, Lennox JL et al. Integrate
 
 ## Population and dosing
 
-**Population:** treatment-naïve HIV-1 infected patients · condition HIV-1 infection · age group adult · n = 35.
+**Population:** treatment-naïve HIV-infected patients · condition HIV-1 infection · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed lopinavir/ritonavir, measured lopinavir.
 
 ## Model
 
-**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameterization:** CL/F, Q/F, V/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 6 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_lopinavir/Lopinavir_Wang2014_reference/Lopinavir_Wang2014_reference.svg" alt="Lopinavir_Wang2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Structure:** 2-compartment; no model was built for this record.  
+**Parameterization:** V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 3 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CLLPVt/F | Q/F | 4.73 | L/h |
-| VLPVt/F | V2/F | 55.7 | L |
-| CLLPVf/F | CL/F | 596 | L/h |
-| Vf/F | V/F | 6370 | L |
-| LPVLPVt C trough (EC90) | Ctrough | 316 | ng/mL |
-| Ka | kabs | 0.758 | 1 /h |
+| CLLPVt/F | V1/F | 4.73 | L/h |
+| Vf/F | V/F | 6 | L |
+| LPVLPVt C trough | Ctrough | 316 | ng/mL |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,24 +49,21 @@ Wang K, D'Argenio DZ, Acosta EP, Sheth AN, Delille C, Lennox JL et al. Integrate
 
 ### Reviewer guidance
 
-**The record is held because the second reader disagreed on key parameters like total clearance and dose compound identification.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q290 unit L/h ([length] ** 3 / [time]) vs [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The model was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader disputed the verdict, noting that the dose compound was listed as lopinavir/ritonavir rather than unknown. Additionally, the second reader could not verify the total clearance value of 596 L/h or the absorption rate constant of 0.758 1/h. Extracted — lopinavir: Q/F 4.73 L/h, V2/F 55.7 L, CL/F 596 L/h, V/F 6.37e+03 L, Ctrough 316 ng/mL, kabs 0.758 1 /h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lopinavir: V1/F 4.73 L/h, V/F 6 L, Ctrough 316 ng/mL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lopinavir/ritonavir, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lopinavir/ritonavir, the second reading lopinavir; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CLLPVt/F | `Q69` · Q/F | 4.73 | L/h | 1.314e-06 | m3/s | l/h | llm (0.6) | Wang_2014:abstract |
-| VLPVt/F | `Q82` · V2/F | 55.7 | L | 0.0557 | m3 | l | llm (0.6) | Wang_2014:abstract |
-| CLLPVf/F | `Q27` · CL/F | 596 | L/h | 0.0001656 | m3/s | l/h | llm (0.6) | Wang_2014:abstract |
-| Vf/F | `Q76` · V/F | 6370 | L | 6.37 | m3 | l | llm (0.6) | Wang_2014:abstract |
-| LPVLPVt C trough (EC90) | `Q37` · Ctrough | 316 | ng/mL |  |  | ng/ml | llm_confirmed (0.6) | Wang_2014:abstract |
-| Ka | `Q49` · kabs | 0.758 | 1 /h | 0.0002106 | 1/s | 1/h | review_gapfill (0.7) | Liang_2026:review |
+| CLLPVt/F | `Q290` · V1/F | 4.73 | L/h | 1.314e-06 | m3/s | l/h | llm (0.6) | Wang_2014:abstract |
+| Vf/F | `Q76` · V/F | 6 | L | 0.006 | m3 | l | llm (0.6) | Wang_2014:abstract |
+| LPVLPVt C trough | `Q37` · Ctrough | 316 | ng/mL | 0.000316 | kg/m3 | ng/ml | llm_confirmed (0.6) | Wang_2014:abstract, Wang_2014:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -80,41 +72,39 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
-- dropped PD-category row 'virion clearance rate' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Wang_2014:abstract'])
-- dropped duplicate Q37 ('LPVLPVt C trough (EC95)', value 726) — already have one for this compound
+- dropped value-less row: 'C trough'
+- unit_dimension_mismatch: 'CLLPVt/F' → Q290 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
+- dropped unlinked row (NIL): 'VLPVt/F' — extend the ontology if this is a real PK parameter (source ['Wang_2014:abstract'])
+- dropped unlinked row (NIL): 'CLLPVf/F' — extend the ontology if this is a real PK parameter (source ['Wang_2014:abstract'])
+- dropped unlinked row (NIL): 'virion clearance rate' — extend the ontology if this is a real PK parameter (source ['Wang_2014:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lopinavir
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q49 (kabs) from Liang_2026's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Wang_2014_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Wang_2014_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.385 (5/13 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cllpvf/f]` | 596 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cllpvt/f].parameter_id` | Q69 | Q27 | mismatch |
-| `gpt-oss-120b` | `parameters[ka]` | 0.758 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[lpvlpvt c trough]` | 316 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vf/f]` | 6370 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[virion clearance rate]` |  | 0.0350 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vlpvt/f].parameter_id` | Q82 | Q76 | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | lopinavir/ritonavir | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [] | [['lopinavir', 'lopinavir free', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `parameters[cllpvt/f].parameter_id` | Q290 | Q27 | mismatch |
+| `gpt-oss-120b` | `parameters[vf/f]` | 6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[virion clearance rate]` |  | 0.035 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vlpvt/f]` |  | 55.7 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | lopinavir/ritonavir | lopinavir | mismatch |
 
 </details>
 
@@ -128,33 +118,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Wang_2014:abstract'] |
-| C5_dimension_Q37 | pass | [mass] / [length] ** 3 |  | ['Wang_2014:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Liang_2026:review'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['Wang_2014:abstract'] |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q290 | fail | [length] ** 3 | L/h ([length] ** 3 / [time]) | ['Wang_2014:abstract'] |
+| C5_dimension_Q37 | pass | [mass] / [length] ** 3 |  | ['Wang_2014:abstract', 'Wang_2014:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Wang_2014:abstract'] |
-| C5_dimension_Q82 | pass | [length] ** 3 |  | ['Wang_2014:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 596 L/h | ['Wang_2014:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 6.37e+03 L | ['Wang_2014:abstract'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 55.7 L | ['Wang_2014:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=lopinavir) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.385, 0 of 1 reader(s) agree | 0.385 | cross-check disputed by a second reader: verdict disputed, agreement 0.385, 0 of 1 reader(s) agree |
+| C9_phys_window_Q290 | fail | volume within physiological range | 0.00131 L | ['Wang_2014:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 6 L | ['Wang_2014:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -166,74 +139,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lopinavir/Lopinavir_Wang2014_reference/Lopinavir_Wang2014_reference_modelica.zip" download>Lopinavir_Wang2014_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lopinavir/Lopinavir_Wang2014_reference/Lopinavir_Wang2014_reference_fmi.zip" download>Lopinavir_Wang2014_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lopinavir/Lopinavir_Wang2014_reference/Lopinavir_Wang2014_reference_matlab.zip" download>Lopinavir_Wang2014_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lopinavir/Lopinavir_Wang2014_reference/Lopinavir_Wang2014_reference_matlab_simbio.zip" download>Lopinavir_Wang2014_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lopinavir/Lopinavir_Wang2014_reference/Lopinavir_Wang2014_reference_sbml.zip" download>Lopinavir_Wang2014_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lopinavir/Lopinavir_Wang2014_reference/Lopinavir_Wang2014_reference_cellml.zip" download>Lopinavir_Wang2014_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.6288 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 0.0001656 | m3/s |
-| input | model | `VdPerKg` | 0.091 | m3/kg |
-| input | model | `k12` | 2.063e-07 | 1/s |
-| input | model | `k21` | 2.359e-05 | 1/s |
-| input | model | `ka` | 0.0002106 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Wang K, D'Argenio DZ, Acosta EP, Sheth AN, Delille C, Lennox JL et al. Integrated population pharmacokinetic/viral dynamic modelling of lopinavir/ritonavir in HIV-1 treatment-naïve patients. Clinical pharmacokinetics 53(4):361–371 (2014). [doi:10.1007/s40262-013-0122-1](https://doi.org/10.1007/s40262-013-0122-1)
-
-**This record:** Pharmacolibrary, model `Lopinavir_Wang2014_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lopinavir/Lopinavir_Wang2014_reference>
-
-```bibtex
-@misc{pharmacolibrary_LopinavirWang2014reference,
-  title  = {{Pharmacolibrary model Lopinavir_Wang2014_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_lopinavir/Lopinavir_Wang2014_reference},
-  note   = {Parameters from doi:10.1007/s40262-013-0122-1},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.758 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_lopinavir/Lopinavir_Wang2014_reference/Lopinavir_Wang2014_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_lopinavir/Lopinavir_Wang2014_reference/Lopinavir_Wang2014_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Lopinavir_Wang2014_reference_params.json` · controls `Lopinavir_Wang2014_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blopinavir%5D%20Lopinavir_Wang2014_reference&body=Drug%3A%20lopinavir%0ARecord%3A%20Lopinavir_Wang2014_reference%0APaper%3A%20Wang_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lopinavir/Lopinavir_Wang2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:41 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:16 UTC</sub>

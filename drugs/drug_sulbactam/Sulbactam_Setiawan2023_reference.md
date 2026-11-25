@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Sulbactam’s central-to-peripheral and peripheral-to-central transfer rate constants were recorded as 0.90 and 0.17 L/h, conflicting with their 1/time meaning and leading to rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q301 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; Q302 unit L/h ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Setiawan2023_reference" status="rejected" stale="false" population="hospitalised adult patients" measured-compound="sulbactam" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Setiawan E, Cotta MO, Abdul-Aziz MH, Widjanarko D, Sosilya H, Lukas DL et al. Po
 
 ### Reviewer guidance
 
-**Sulbactam’s central-to-peripheral and peripheral-to-central transfer rate constants were recorded as 0.90 and 0.17 L/h, conflicting with their 1/time meaning and leading to rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q301 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; Q302 unit L/h ([length] ** 3 / [time]) vs 1 / [time].**
 
-The record defines both parameters as first-order transfer rate constants, but gives them units of L/h rather than inverse time. The reported unit could not be converted to SI, so the parameters reached the model builder without SI values. A second reader transcribed the transfer values as 14.0 and 5.55, rather than the recorded 0.90 and 0.17. Extracted — sulbactam: CL 5.58 L/h, V 12.6 L, k12 0.9 L/h, k21 0.17 L/h, kabs 8.28 1/h.
+A reported unit could not be converted (k12 and k21), so that value has no SI equivalent. Extracted — sulbactam: CL 5.58 L/h, V 12.6 L, k12 0.9 L/h, k21 0.17 L/h, kabs 8.28 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ampicillin-sulbactam, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

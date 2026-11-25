@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bumetanide's total clearance lacked a value, so a placeholder was used, quarantining the model despite reported renal and nonrenal clearances.
+> No value for bumetanide's clearance; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="bumetanide" model-id="Bumetanide_Pentikinen1985_reference" status="model_quarantined" stale="false" population="healthy subjects and patients with renal failure" measured-compound="bumetanide" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Pentikäinen PJ, Pasternack A, Lampainen E, Neuvonen PJ, Penttilä A. Bumetanide
 
 ### Reviewer guidance
 
-**Bumetanide's total clearance lacked a value, so a placeholder was used, quarantining the model despite reported renal and nonrenal clearances.**
+**No value for bumetanide's clearance; t6_deviations (+1 more).**
 
-The record lists renal clearance of 10 ml/min and nonrenal clearance of 153 ml/min, yet total clearance was left at a library placeholder. Built from the abstract alone, the model substituted steady-state volume for central volume, failing to capture the early distribution phase. A second reader disagreed with all parameter assignments, reporting them as unknown. Extracted — bumetanide: Vss 22.1 L, t1/2z 1.9 hours, CLR 10 ml/min, CLNR 153 ml/min.
+The model was built, but bumetanide's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bumetanide: Vss 22.1 L, t1/2z 1.9 hours, CLR 10 ml/min, CLNR 153 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bumetanide, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.154, 0 of 1 reader(s) agree | 0.154 | cross-check disputed by a second reader: verdict disputed, agreement 0.154, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.154 (2 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.154 | cross-check contradicted by a second reader: verdict disputed; agreement 0.154 (2 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

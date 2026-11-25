@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Mometasone furoate was rejected because its absorption rate constant (kabs) is 50 L/h, a volume-per-time unit rather than inverse time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="mometasone" model-id="Mometasone_Bartels2021_reference" status="rejected" stale="false" population="patients with asthma" measured-compound="mometasone furoate" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Bartels C, Jain M, Yu J, Tillmann HC, Vaidya S. Population Pharmacokinetic Analy
 
 ### Reviewer guidance
 
-**Mometasone furoate was rejected because its absorption rate constant (kabs) is 50 L/h, a volume-per-time unit rather than inverse time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record reports kabs as 50 L/h, and that reported unit could not be converted to SI, leaving no SI value. It also flags an unreachable or orphan compartment, meaning a compartment has no path from the dose. A second reader disputed the extracted body-weight effects and CL/F value of 370.0, and attributed the body-weight-effect values 0.75 and 1 to alternative parameters. Extracted — mometasone: V2/F 1.3e+03 L, kabs 50 L/h, D1 0.01 h, CL/F 370 ml/min.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — mometasone: V2/F 1.3e+03 L, kabs 50 L/h, D1 0.01 h, CL/F 370 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of body_weight_on_cl_f: this record has 0.75, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

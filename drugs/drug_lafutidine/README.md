@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Ikawa_2007_DpH](drugs/drug_lafutidine/pd_Ikawa_2007_DpH.md) | DpH ← Lafutidine · direct sigmoid Emax (Hill) effect | — | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ikawa_2007_DpH](drugs/drug_lafutidine/pd_Ikawa_2007_DpH.md) | DpH ← Lafutidine · direct sigmoid Emax (Hill) effect | — | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

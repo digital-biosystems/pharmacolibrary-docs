@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Rufloxacin record held back because a second reader rejected the absorption half-life of 17 min and other parameters extracted from the abstract.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="rufloxacin" model-id="Rufloxacin_Mattina1991_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="rufloxacin" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Mattina R, Bonfiglio G, Cocuzza CE, Gulisano G, Cesana M, Imbimbo BP. Pharmacoki
 
 ### Reviewer guidance
 
-**Rufloxacin record held back because a second reader rejected the absorption half-life of 17 min and other parameters extracted from the abstract.**
+**cross_check_disputed; x1_cross_check.**
 
-The model was built using summary statistics from the abstract rather than fitted data, leading to disputed validity. A second reader could not confirm the values for absorption half-life, clearance, or volume of distribution. This lack of agreement resulted in the record being marked as needing review instead of publication. Extracted — rufloxacin: t1/2ka 17 min, Cmax 2.77 micrograms/ml, tmax 4.2 h, V/F 111 liters, CL/F 46 ml/min, CLR 18 ml/min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — rufloxacin: t1/2ka 17 min, Cmax 2.77 micrograms/ml, tmax 4.2 h, V/F 111 liters, CL/F 46 ml/min, CLR 18 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rufloxacin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -156,7 +156,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.133 (2 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.133 | cross-check contradicted by a second reader: verdict disputed; agreement 0.133 (2 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -39,7 +39,7 @@ Hepatitis B immunoglobulin is a specific immunoglobulin used to prevent hepatiti
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:17 | 0:57 | 1/1/0 | 0/0/0 | 0/0/0 | 50,441/2,421 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-24 00:06 | 0:20 | 1/1/0 | 0/0/0 | 0/0/0 | 8,242/2,229 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -54,9 +54,9 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Wahl_1983.pdf` | Wahl M et al., Recovery and turnover rate of hepatitis…, Developments in biological… (1983) | popPK | 6 |  | [6653889](https://pubmed.ncbi.nlm.nih.gov/6653889) | Reports half-life (21.7 d) and recovery/compartment-model uptake of HBIG in volunteers, but no CL/V values; numbers are in the abstract itself. |
+| `Wahl_1983.pdf` | Wahl M et al., Recovery and turnover rate of hepatitis…, Developments in biological… (1983) | popPK | 10 |  | [6653889](https://pubmed.ncbi.nlm.nih.gov/6653889) | The study reports quantitative disposition parameters (half-life, recovery rate) for hepatitis B immunoglobulin in humans, and the numeric values are present in the text. |
 
-<sub>queue written 2026-10-07 16:16 UTC</sub>
+<sub>queue written 2026-11-24 00:05 UTC</sub>
 
 ## Screened and excluded
 
@@ -64,10 +64,11 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|
 | popPK | Anley_2023 | irrelevant | 0 | 0 | This is an epidemiological compartmental model of HBV vertical transmission; HBIG is only an intervention with assumed efficacy, no PK parameters (CL, V, half-life) for hepatitis_b_immunoglobulin are reported. |
 | popPK | Bierhoff_2019 | irrelevant | 0 | 0 | This is a systematic review of tenofovir pharmacokinetics; hepatitis B immunoglobulin is only mentioned as a co-intervention, with no HBIG PK parameters reported. |
+| PGx | Wahl_1983 | not_relevant | 0 | 0 | The paper reports standard pharmacokinetic parameters (recovery rate, half-life) in healthy volunteers but contains no data on gene variants, genotypes, or pharmacogenomic effects. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhepatitis_b_immunoglobulin%5D&body=Drug%3A%20hepatitis_b_immunoglobulin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hepatitis_b_immunoglobulin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 16:16 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 00:05 UTC</sub>

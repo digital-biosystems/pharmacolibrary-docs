@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because ampicillin’s peripheral-compartment volume, V2, is 40.94 L in an unreachable compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Fernndez2025_reference" status="rejected" stale="false" population="" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Fernández Rubio B, Docobo Pérez F, Herrera Hidalgo L, López-Cortés LE, Luque
 
 ### Reviewer guidance
 
-**The record was rejected because ampicillin’s peripheral-compartment volume, V2, is 40.94 L in an unreachable compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model has a central and a peripheral compartment, but the peripheral compartment has no path from the dose. The record provides no further explanation of this structural disconnection. Extracted — ampicillin: CL 11.6 L/h, V1 43.6 L, V2 40.9 L.
+Extracted — ampicillin: CL 11.6 L/h, V1 43.6 L, V2 40.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q314: this record has none, the second reading 0.48; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

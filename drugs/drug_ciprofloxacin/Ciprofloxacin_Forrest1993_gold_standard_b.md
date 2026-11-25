@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The bioavailability parameter was left at library defaults instead of using estimates from the ciprofloxacin record.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Forrest1993_gold_standard_b" status="needs_review" stale="false" population="acutely ill patients" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Forrest A, Ballow CH, Nix DE, Birmingham MC, Schentag JJ. Development of a popul
 
 ### Reviewer guidance
 
-**The bioavailability parameter was left at library defaults instead of using estimates from the ciprofloxacin record.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists clearance of 17 L/h and intercompartmental clearance of 37 L/h, but lacks an explicit bioavailability estimate. The model builder substituted a library default for bioavailability because it was not reported in the paper. A second reader also disagreed on the intercompartmental clearance, reading it as 38 L/h rather than 37 L/h. Extracted — ciprofloxacin: CL 17 liters/h, Q 37 liters/h, V 46 liters, Vss 121 liters, kabs 1 h−1, tlag 0.33 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ciprofloxacin: CL 17 liters/h, Q 37 liters/h, V 46 liters, Vss 121 liters, kabs 1 h−1, tlag 0.33 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl d: this record has 37, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

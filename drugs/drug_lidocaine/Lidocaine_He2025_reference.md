@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model for lidocaine in hepatectomy patients was rejected because its metabolism pathways to MEGX and GX have no link parameters.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_He2025_reference" status="rejected" stale="false" population="partial hepatectomy patients" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -46,13 +46,13 @@ He C, Qi X, Liu Y, Jin Y, Zhang M, Zhang Y et al. Optimizing Lidocaine Dosing in
 
 ### Reviewer guidance
 
-**The model for lidocaine in hepatectomy patients was rejected because its metabolism pathways to MEGX and GX have no link parameters.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Although the record defines metabolic links from lidocaine to MEGX and from MEGX to GX, no parameters are provided to quantify these rates. This results in a topology where the metabolite compartments are unreachable from the central dose compartment, causing a failure in the structural validation check. Extracted — lidocaine: CL 26.1 L/h.
+Extracted — lidocaine: CL 26.1 L/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

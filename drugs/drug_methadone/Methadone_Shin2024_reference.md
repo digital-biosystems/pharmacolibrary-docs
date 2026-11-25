@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;methadone&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/&quot;},{&quot;label&quot;:&quot;Shin_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methadone_Gittel2021_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Gittel2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Shin2024_reference&quot;,&quot;label&quot;:&quot;Shin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Shin2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Methadone_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methadone_Gittel2021_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Gittel2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Shin2024_reference&quot;,&quot;label&quot;:&quot;Shin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Shin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Methadone_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methadone — `Methadone_Shin2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> Methadone’s reported systemic clearance of 78.9 L/h was held back because the abstract-only record was disputed by a second reader.
-
-<div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Shin2024_reference" status="needs_review" stale="false" population="healthy adult ferrets" measured-compound="methadone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Shin2024_reference" status="simulated" stale="false" population="healthy adult ferrets" measured-compound="methadone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Shin CW, Knych H, Desprez I, Ambros B. Pharmacokinetics of methadone after intravenous and subcutaneous administration in domestic ferrets (Mustela putorius furo). Veterinary anaesthesia and analgesia 51(6):730–737 (2024).
@@ -17,7 +15,7 @@ Shin CW, Knych H, Desprez I, Ambros B. Pharmacokinetics of methadone after intra
 
 ## Population and dosing
 
-**Population:** healthy adult ferrets · condition healthy · age group adult · n = 8.
+**Population:** healthy adult ferrets · condition healthy · age group adult.
 
 > **Species: other animal.** This record comes from an animal study (other animal), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -25,24 +23,21 @@ Shin CW, Knych H, Desprez I, Ambros B. Pharmacokinetics of methadone after intra
 
 **Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_methadone/Methadone_Shin2024_reference/Methadone_Shin2024_reference.svg" alt="Methadone_Shin2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| systemic clearance (Clss) | CL | 78.9 | L/h |
+| systemic clearance (Clss) | CL | 78.9 | mL min-1 kg-1 |
 | volume of distribution (Vdss) | V | 9.8 | L kg-1 |
 | Elimination half-life | t1/2z | 2.0 | hours |
-| SC bioavailability | Fab | 1 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,22 +47,21 @@ Shin CW, Knych H, Desprez I, Ambros B. Pharmacokinetics of methadone after intra
 
 ### Reviewer guidance
 
-**Methadone’s reported systemic clearance of 78.9 L/h was held back because the abstract-only record was disputed by a second reader.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-The record came from the abstract alone, so summary statistics stood in for a fitted model. The second reader disputed the record (agreement 0.231, with 0 of 1 reader agreeing), marked the dose compound and primary analyte unknown, and supplied no values for the reported clearance, volume, half-life, or bioavailability. Extracted — methadone: CL 78.9 L/h, V 9.8 L kg-1, t1/2z 2 hours, Fab 1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has methadone, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of sc bioavailability: this record has none, the second reading 1. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| systemic clearance (Clss) | `Q22` · CL | 78.9 | L/h | 2.192e-05 | m3/s | L/h | llm_confirmed (0.6) | Shin_2024:abstract |
+| systemic clearance (Clss) | `Q22` · CL | 78.9 | mL min-1 kg-1 | 9.205e-05 | m3/s | ml/(min·kg) | llm_confirmed (0.6) | Shin_2024:abstract |
 | volume of distribution (Vdss) | `Q61` · V | 9.8 | L kg-1 | 0.686 | m3 | l/kg | exact (1) | Shin_2024:abstract |
-| Elimination half-life | `Q57` · t1/2z | 2.0 | hours | 7200 | s | h | llm (0.6) | Shin_2024:abstract |
-| SC bioavailability | `Q40` · Fab | 1 |  |  |  |  | llm_confirmed (0.6) | Shin_2024:abstract |
+| Elimination half-life | `Q57` · t1/2z | 2.0 | hours | 7200 | s | h | half_life_rule (0.95) | Shin_2024:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,39 +71,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'mL min-1 kg-1' (CL)
-- implicit units: 'systemic clearance (Clss)' → L/h (from the popPK convention: 'No unit stated in text or table footnotes. Systemic (total) clearance in population PK is conventionally expressed in L/')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=methadone
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Shin_2024_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
+| `gpt-oss-120b` | partly confirmed | 0.889 (8/9 fields) | 1 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[clss]` |  | 78.9 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life]` | 2.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life]` |  | 2.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[sc bioavailability]` | 1 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[sc bioavailability]` |  | 1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[systemic clearance]` | 78.9 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vdss]` |  | 9.8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 9.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | methadone | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | methadone | unknown | mismatch |
 
 </details>
 
@@ -123,7 +104,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Shin_2024:abstract'] |
@@ -131,7 +112,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Shin_2024:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 78.9 | ['Shin_2024:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 78.9 L/h | ['Shin_2024:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 331 L/h | ['Shin_2024:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 686 L | ['Shin_2024:abstract'] |
 
 **Reviewer per-scenario checks:**
@@ -144,7 +125,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.231, 0 of 1 reader(s) agree | 0.231 | cross-check disputed by a second reader: verdict disputed, agreement 0.231, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.889 (8 of 9 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.889 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,7 +141,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_methadone/Methadone_Shin2024_reference/Methadone_Shin2024_reference_modelica.zip" download>Methadone_Shin2024_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_methadone/Methadone_Shin2024_reference/Methadone_Shin2024_reference_modelica.zip" download>Methadone_Shin2024_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_methadone/Methadone_Shin2024_reference/Methadone_Shin2024_reference_fmi.zip" download>Methadone_Shin2024_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_methadone/Methadone_Shin2024_reference/Methadone_Shin2024_reference_matlab.zip" download>Methadone_Shin2024_reference_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_methadone/Methadone_Shin2024_reference/Methadone_Shin2024_reference_matlab_simbio.zip" download>Methadone_Shin2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -182,7 +163,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 2.5e-05 | kg |
-| input | model | `Cl` | 2.192e-05 | m3/s |
+| input | model | `Cl` | 9.205e-05 | m3/s |
 | input | model | `VdPerKg` | 0.0098 | m3/kg |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
@@ -222,4 +203,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethadone%5D%20Methadone_Shin2024_reference&body=Drug%3A%20methadone%0ARecord%3A%20Methadone_Shin2024_reference%0APaper%3A%20Shin_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methadone/Methadone_Shin2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:48 UTC</sub>

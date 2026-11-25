@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because a second reader could not verify the clearance and volume parameters from the abstract-only source.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="immunoglobulins, normal human, for extravascular adm." model-id="ImmunoglobulinsNormalHumanForExtravascularAdm_Zhang2020_refe" status="needs_review" stale="false" population="patients with primary immunodeficiency" measured-compound="serum IgG" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Zhang Y, Baheti G, Chapdelaine H, Hofmann J, Rojavin M, Tortorici M et al. Popul
 
 ### Reviewer guidance
 
-**The record was held back because a second reader could not verify the clearance and volume parameters from the abstract-only source.**
+**cross_check_disputed; x1_cross_check.**
 
-The model for serum IgG in primary immunodeficiency patients was built from summary statistics reported in the abstract rather than fitted individual data. A second reader disagreed on the dose compound, primary analyte, and all four pharmacokinetic parameters, finding them absent or unverified. This lack of agreement resulted in a cross-check failure with an agreement ratio of 0.167. Extracted — serum IgG: CL 0.138 L/day, V1 3.95 L, Q 0.26 L/day, V2 4.44 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is immunoglobulins normal human for extravascular adm's own; they describe serum IgG. Extracted — serum IgG: CL 0.138 L/day, V1 3.95 L, Q 0.26 L/day, V2 4.44 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has IgPro20 (Hizentra), the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -145,7 +145,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

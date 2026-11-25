@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Nalbuphine oral clearance is assigned to age rather than weight, and the second compartment volume is missing.
+> The covariate scenarios were not simulated; t3_param_coverage (+1 more).
 
 <div class="pk-model-meta" hidden drug="nalbuphine" model-id="Nalbuphine_EudyByrne2023_reference" status="needs_review" stale="false" population="patients with prurigo nodularis" measured-compound="nalbuphine" parameterization="apparent" topology="1C"></div>
 
@@ -63,13 +63,13 @@ Eudy-Byrne R, Riggs M, Hawi A, Sciascia T, Rohatagi S. A population pharmacokine
 
 ### Reviewer guidance
 
-**Nalbuphine oral clearance is assigned to age rather than weight, and the second compartment volume is missing.**
+**The covariate scenarios were not simulated; t3_param_coverage (+1 more).**
 
-The record assigns the age power of -1.7 to the intercompartmental clearance instead of the clearance parameter, which the second reader identified as a mislabel. The volume of distribution for the second compartment was not extracted from the paper, leaving the model structurally incomplete. Additionally, the covariate relationships were defined in the record but were not exercised during simulation. Extracted — nalbuphine: CL/F 573 L/h, V2/F 4.82e+03 L, V3/F 3.76e+04 L, Q/F 106 L/h, kabs 0.826 1/h, D1 0.947 h, V/F 2.57e+03 L.
+The base model was simulated, not the covariate effects the record defines. Extracted — nalbuphine: CL/F 573 L/h, V2/F 4.82e+03 L, V3/F 3.76e+04 L, Q/F 106 L/h, kabs 0.826 1/h, D1 0.947 h, V/F 2.57e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nalbuphine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -189,7 +189,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.793, 0 of 1 reader(s) agree | 0.793 | cross-check disputed by a second reader: verdict disputed, agreement 0.793, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.793 (23 of 29 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.793 | cross-check contradicted by a second reader: verdict disputed; agreement 0.793 (23 of 29 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

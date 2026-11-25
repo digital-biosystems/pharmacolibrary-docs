@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Alfentanil clearance was recorded as 20 mL/min/kg but the second reader extracted 4, creating a dispute.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Beers2004_reference" status="needs_review" stale="false" population="" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Beers R, Camporesi E. Remifentanil update: clinical science and utility. CNS dru
 
 ### Reviewer guidance
 
-**Alfentanil clearance was recorded as 20 mL/min/kg but the second reader extracted 4, creating a dispute.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists a clearance value of 20.0 mL/min/kg for alfentanil, while the second reader identified the value as 4. Additionally, the second reader extracted several other parameter values, including 0.1, 6.2, and 20, that are missing from this record. Because zero of the readers agreed, the review verdict was disputed with an agreement ratio of 0.417. Extracted — alfentanil: CL 20 mL/min/kg, V1 0.7 L/kg.
+Extracted — alfentanil: CL 20 mL/min/kg, V1 0.7 L/kg.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on the value of CL: this record has 20, the second reading 4; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.417, 0 of 1 reader(s) agree | 0.417 | cross-check disputed by a second reader: verdict disputed, agreement 0.417, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.417 (5 of 12 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.417 | cross-check contradicted by a second reader: verdict disputed; agreement 0.417 (5 of 12 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (glm-5.3-flash) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

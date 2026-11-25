@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The apparent clearance of 38.9 L/h was flagged as physiologically implausible for equine methylprednisolone, leading to record rejection.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Yu2025_reference" status="rejected" stale="false" population="horses" measured-compound="methylprednisolone" parameterization="apparent" topology="general_linear"></div>
 
@@ -53,13 +53,13 @@ Yu R, Jusko WJ. Meta-Analysis and Mechanism-Based Modeling of Synovial and Plasm
 
 ### Reviewer guidance
 
-**The apparent clearance of 38.9 L/h was flagged as physiologically implausible for equine methylprednisolone, leading to record rejection.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extraction process identified a clearance value of 38.9 L/h for methylprednisolone, which was deemed outside the physiological window. Because the record was abstract-only, these summary statistics stood in for a fitted model, making the magnitude difficult to validate. The second reader found no corresponding parameter values for clearance or bioavailability in the source text. Extracted — methylprednisolone: CLm,norm/F 797 mL/h/kg, FG 100 %, CL/F 38.9 L.h-1, V/F 10 L h−1, kabs 0.35 1/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — methylprednisolone: CLm,norm/F 797 mL/h/kg, FG 100 %, CL/F 38.9 L.h-1, V/F 10 L h−1, kabs 0.35 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has methylprednisolone acetate, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

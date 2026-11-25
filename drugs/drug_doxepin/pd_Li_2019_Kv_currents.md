@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D04A&quot;,&quot;href&quot;:&quot;atc/D04A.md&quot;},{&quot;label&quot;:&quot;doxepin&quot;,&quot;href&quot;:&quot;drugs/drug_doxepin/&quot;},{&quot;label&quot;:&quot;Li_2019 \u00b7 PD Vascular Kv currents&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D04A&quot;,&quot;href&quot;:&quot;atc/D04A.md&quot;},{&quot;label&quot;:&quot;doxepin&quot;,&quot;href&quot;:&quot;drugs/drug_doxepin/&quot;},{&quot;label&quot;:&quot;Li_2019 \u00b7 PD voltage-dependent K+ currents&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Vascular Kv currents — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+# voltage-dependent K+ currents — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 ## Record summary
 
-**As extracted:** Doxepin (measured concentrations) drives Vascular Kv currents: direct sigmoid Emax (Hill) effect.
+**As extracted:** Doxepin (measured concentrations) drives voltage-dependent K+ currents: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -36,8 +36,8 @@ Li H et al., Inhibitory Effect of Tricyclic Antidepr…, Cardiovascular toxicolo
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | IC50 | `Q322` ·  | 6.52 ± 1.35 | μM | llm | Li_2019:pdv3 |
-| PD (effect) | Hill coefficient | `Q325` ·  | 0.72 ± 0.03 |  | llm | Li_2019:pdv3 |
+| PD (effect) | IC50 | `Q322` ·  | 6.52 ± 1.35 | μM | llm | Li_2019:pdv3 |
+| PD (effect) | Hill coefficient | `Q325` ·  | 0.72 ± 0.03 |  | llm | Li_2019:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -46,18 +46,19 @@ Li H et al., Inhibitory Effect of Tricyclic Antidepr…, Cardiovascular toxicolo
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.667 (4/6 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[Q322].value` | 6.52 ± 1.35 | 6.52 | mismatch |
-| `qwen3.8-27b` | `parameters[Q325].value` | 0.72 ± 0.03 | 0.72 | mismatch |
+| `gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
+| `gpt-oss-120b` | `parameters[Q322].value` | 6.52 ± 1.35 | 6.52 | mismatch |
+| `gpt-oss-120b` | `parameters[Q325].value` | 0.72 ± 0.03 | 0.72 | mismatch |
 
 </details>
 

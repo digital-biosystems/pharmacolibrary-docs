@@ -130,9 +130,9 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 1 | a second reader did not contradict the extraction |
 | T1_cmin_ss | reference | skipped | 60 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | fail | 307.2 | 2086 | 6.79 | days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 307.2 | 2086 | 6.79 | reported 12.8 days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

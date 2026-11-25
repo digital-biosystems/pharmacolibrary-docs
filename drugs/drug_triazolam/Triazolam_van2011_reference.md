@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;triazolam&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/&quot;},{&quot;label&quot;:&quot;van_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triazolam_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Triazolam_van2011_reference&quot;,&quot;label&quot;:&quot;van_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_van2011_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Lloyd_1990_35S_TBPS_binding&quot;,&quot;label&quot;:&quot;Lloyd_1990 \u00b7 35S-TBPS binding&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Lloyd_1990_35S_TBPS_binding.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Cognitive_function&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Cognitive function&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Cognitive_function.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Sedation&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Sedation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Sedation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triazolam_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Triazolam_van2011_reference&quot;,&quot;label&quot;:&quot;van_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_van2011_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Okada_2024_Cognitive_function&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Cognitive function&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Cognitive_function.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Sedation&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Sedation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Sedation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The van_2011 paper models sunitinib, so the extracted triazolam parameters do not originate from this source.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="triazolam" model-id="Triazolam_van2011_reference" status="rejected" stale="false" population="" measured-compound="triazolam" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ van Erp NP, Baker SD, Zandvliet AS, Ploeger BA, den Hollander M, Chen Z et al. M
 
 ### Reviewer guidance
 
-**The van_2011 paper models sunitinib, so the extracted triazolam parameters do not originate from this source.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The identity check failed because the paper's subject is sunitinib with midazolam as a probe, not triazolam. The record lists triazolam as the measured compound with specific clearance and volume values, but the source text indicates these parameters do not appear in the paper. Consequently, the record was rejected for misattributing parameters to a drug that is not the study's primary analyte. Extracted — triazolam: CL/F 50.5 L/h, V/F 3.21e+03 L, kabs 0.468 h−1, tlag 0.487 h.
+Extracted — triazolam: CL/F 50.5 L/h, V/F 3.21e+03 L, kabs 0.468 h−1, tlag 0.487 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -125,7 +125,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

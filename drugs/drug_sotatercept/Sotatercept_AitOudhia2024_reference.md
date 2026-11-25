@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Sotatercept’s absolute bioavailability (F) is unreported and defaulted, so the record lacks a paper-supported value for this parameter.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="sotatercept" model-id="Sotatercept_AitOudhia2024_reference" status="needs_review" stale="false" population="healthy participants and patients with pulmonary arterial hypertension" measured-compound="sotatercept" parameterization="mechanistic" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Ait-Oudhia S, Jaworowicz D, Hu Z, Bihorel S, Hu S, Balasubrahmanyam B et al. Pop
 
 ### Reviewer guidance
 
-**Sotatercept’s absolute bioavailability (F) is unreported and defaulted, so the record lacks a paper-supported value for this parameter.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).**
 
-F uses library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper. Tlag was also defaulted instead of explicitly estimated. The covariate scenarios were not simulated: the base model was simulated, not the covariate effects the record defines. A second reader disputed the verdict, with agreement 0.579 and 0 of 1 reader agreeing. Extracted — sotatercept: CL 6.22 L/day, V1 5.5 L, Q 20.5 L/day, V2 15.8 L, kabs 16 1/h, Fab 6.29.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — sotatercept: CL 6.22 L/day, V1 5.5 L, Q 20.5 L/day, V2 15.8 L, kabs 16 1/h, Fab 6.29.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].rse_percent`: this record has 16.9, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -194,11 +194,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.579, 0 of 1 reader(s) agree | 0.579 | cross-check disputed by a second reader: verdict disputed, agreement 0.579, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | skipped |  | 499.5 |  | non-numeric value |
-| T1_t_half_terminal | reference | pass | 528 | 499.5 | 0.9461 | days→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 528 | 499.5 | 0.9461 | days→SI vs simulated h |
-| T1_t_half_terminal | reference | skipped |  | 499.5 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.579 (11 of 19 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.579 | cross-check contradicted by a second reader: verdict disputed; agreement 0.579 (11 of 19 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | skipped |  | 499.5 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | pass | 528 | 499.5 | 0.9461 | reported 22.0 days→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 528 | 499.5 | 0.9461 | reported 22.0 days→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 499.5 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

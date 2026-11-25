@@ -6,22 +6,22 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Quinupramine's apparent parameters (F, V/F) cause a coherence violation by double-correcting for bioavailability in an abstract-only record.
+> C7 apparent-parameter coherence violated (double correction).
 
-<div class="pk-model-meta" hidden drug="quinupramine" model-id="Quinupramine_Bouquet1982_reference" status="rejected" stale="false" population="healthy adults" measured-compound="quinupramine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quinupramine" model-id="Quinupramine_Bouquet1982_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="quinupramine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Bouquet S, Lefebvre MA, Girault J, Fourtillan JB. [Crossover pharmacokinetic study of quinupramine in 6 subjects]. L'Encephale 8(4):449–463 (1982).
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = 6.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 5 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -29,15 +29,16 @@ Bouquet S, Lefebvre MA, Girault J, Fourtillan JB. [Crossover pharmacokinetic stu
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| The coefficient of bioavailability (F) | Fab | 0.75 | F |
+| coefficient of bioavailability (F) | Fab | 0.75 | mg |
 | area under experimental points of the curves (AUC 0 leads to infinity) | AUC∞ | 43.7 | ng.ml-1.h |
 | Blood levels (CMAX) | Cmax | 1.1 | ng.ml-1 |
 | apparent volume of distribution (A.V.D.) | V/F | 34.2 | l.kg-1 |
 | apparent terminal half life of elimination | t1/2z | 33.5 | h |
+| renal elimination (CLr) | CLR | 2.6 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,23 +48,24 @@ Bouquet S, Lefebvre MA, Girault J, Fourtillan JB. [Crossover pharmacokinetic stu
 
 ### Reviewer guidance
 
-**Quinupramine's apparent parameters (F, V/F) cause a coherence violation by double-correcting for bioavailability in an abstract-only record.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The record pairs absolute bioavailability (0.75) with apparent volume of distribution (34.2 l.kg-1), creating a double correction inconsistency. Because the source is abstract-only, these summary statistics stand in for a fitted model without full parameter estimation. A second reader disputed all extracted values, marking parameters as null and questioning the apparent parameterization. Extracted — quinupramine: Fab 0.75 F, AUC∞ 43.7 ng.ml-1.h, Cmax 1.1 ng.ml-1, V/F 34.2 l.kg-1, t1/2z 33.5 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — quinupramine: Fab 0.75 mg, AUC∞ 43.7 ng.ml-1.h, Cmax 1.1 ng.ml-1, V/F 34.2 l.kg-1, t1/2z 33.5 h, CLR 2.6 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has quinupramine, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| The coefficient of bioavailability (F) | `Q40` · Fab | 0.75 | F |  |  |  | llm_confirmed (0.6) | Bouquet_1982:abstract |
-| area under experimental points of the curves (AUC 0 leads to infinity) | `Q17` · AUC∞ | 43.7 | ng.ml-1.h |  |  | ng/(h·ml) | llm (0.6) | Bouquet_1982:abstract, Bouquet_1982:abstract |
-| Blood levels (CMAX) | `Q32` · Cmax | 1.1 | ng.ml-1 |  |  | ng/ml | llm (0.6) | Bouquet_1982:abstract, Bouquet_1982:abstract |
+| coefficient of bioavailability (F) | `Q40` · Fab | 0.75 | mg |  |  |  | llm_confirmed (0.6) | Bouquet_1982:abstract |
+| area under experimental points of the curves (AUC 0 leads to infinity) | `Q17` · AUC∞ | 43.7 | ng.ml-1.h | 0.1573 | kg*s/m3 | ng/(h·ml) | llm (0.6) | Bouquet_1982:abstract, Bouquet_1982:abstract |
+| Blood levels (CMAX) | `Q32` · Cmax | 1.1 | ng.ml-1 | 1.1e-06 | kg/m3 | ng/ml | llm (0.6) | Bouquet_1982:abstract, Bouquet_1982:abstract |
 | apparent volume of distribution (A.V.D.) | `Q76` · V/F | 34.2 | l.kg-1 | 2.394 | m3 | l/kg | exact (1) | Bouquet_1982:abstract |
-| apparent terminal half life of elimination | `Q57` · t1/2z | 33.5 | h | 1.206e+05 | s | h | llm (0.6) | Bouquet_1982:abstract |
+| apparent terminal half life of elimination | `Q57` · t1/2z | 33.5 | h | 1.206e+05 | s | h | half_life_rule (0.95) | Bouquet_1982:abstract, Bouquet_1982:abstract, Bouquet_1982:abstract |
+| renal elimination (CLr) | `Q26` · CLR | 2.6 | L/h | 7.222e-07 | m3/s | L/h | llm (0.6) | Bouquet_1982:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,39 +75,40 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
+- implicit units: 'renal elimination (CLr)' → L/h (from the popPK convention: 'Clearance parameters in population pharmacokinetics are conventionally expressed in volume per time (L/h). The value 2.6')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=quinupramine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Bouquet_1982_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Bouquet_1982_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.125 (2/16 fields) | 14 |
+| `gpt-oss-120b` | not confirmed | 0.176 (3/17 fields) | 14 |
 
 <details><summary>14 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss-120b` | `parameters[a.v.d.]` |  | 34.2 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[apparent terminal half life of elimination]` | 33.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[apparent terminal half life of elimination]` |  | 33.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 34.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` |  | 34.2 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[area under experimental points of the curves]` | 43.7 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[auc 0 leads to infinity]` |  | 43.7 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[blood levels]` | 1.1 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clr]` |  | 2.6 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cmax]` |  | 1.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[coefficient of bioavailability]` | 0.75 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[coefficient of bioavailability]` |  | 0.75 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[the coefficient of bioavailability]` | 0.75 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal elimination]` | 2.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | quinupramine | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | quinupramine | unknown | mismatch |
 
@@ -121,12 +124,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Bouquet_1982:abstract', 'Bouquet_1982:abstract'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Bouquet_1982:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Bouquet_1982:abstract', 'Bouquet_1982:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Bouquet_1982:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Bouquet_1982:abstract', 'Bouquet_1982:abstract', 'Bouquet_1982:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Bouquet_1982:abstract'] |
 | C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.75 with apparent parameterization |  |
 | C8_topology | pass |  |  |  |
@@ -154,4 +158,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bquinupramine%5D%20Quinupramine_Bouquet1982_reference&body=Drug%3A%20quinupramine%0ARecord%3A%20Quinupramine_Bouquet1982_reference%0APaper%3A%20Bouquet_1982%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_quinupramine/Quinupramine_Bouquet1982_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:42 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:49 UTC</sub>

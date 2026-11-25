@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ropivacaine clearance is recorded as 0.006 L/h/70 kg, a physiologically implausible magnitude that suggests a unit or scale error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Osborne2025_reference" status="rejected" stale="false" population="" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Osborne KW, MacFater WS, Anderson BJ, Svirskis D, Hill AG, Hannam JA. Pharmacoki
 
 ### Reviewer guidance
 
-**Ropivacaine clearance is recorded as 0.006 L/h/70 kg, a physiologically implausible magnitude that suggests a unit or scale error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted clearance value of 0.006 L/h/70 kg is orders of magnitude lower than typical human clearance for local anesthetics. This value fails the physiological plausibility check, indicating a likely extraction error in unit or scale. A second reader disagreed on several additional parameter fields, finding values such as 37 and 6 that were missing from the primary extraction. Extracted — ropivacaine: CL 0.006 L/h/70 kg, V 0.1 L.
+Extracted — ropivacaine: CL 0.006 L/h/70 kg, V 0.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 37; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

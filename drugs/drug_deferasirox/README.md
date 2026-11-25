@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Borella_2022_FERRITIN](drugs/drug_deferasirox/pd_Borella_2022_FERRITIN.md) | serum ferritin biomarker turnover ← deferasirox | — | Borella E et al., Characterisation of individual ferritin…, British journal of clinical… (2022) | [10.1111/bcp.15290](https://doi.org/10.1111/bcp.15290) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Borella_2022_FERRITIN](drugs/drug_deferasirox/pd_Borella_2022_FERRITIN.md) | serum ferritin biomarker turnover ← deferasirox | — | Borella E et al., Characterisation of individual ferritin…, British journal of clinical… (2022) | [10.1111/bcp.15290](https://doi.org/10.1111/bcp.15290) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:47 | 0:23 | 0/0/0 | 0/1/0 | 0/0/0 | 41,679/1,021 | ollama / glm-5.3-flash | 3 | 0/3 | 3/0 | 0 |
+| 2026-11-23 20:51 | 0:05 | 0/0/0 | 1/0/0 | 0/0/0 | 4,724/167 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## Coverage
 
@@ -50,7 +50,8 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Borella_2022 | irrelevant | 2 | 1 | This is a drug–disease (ferritin/iron turnover) PD model; deferasirox PK is only cited from a prior publication, and no deferasirox CL/V/ka values appear in the evidence. |
-| popPK | Essmann_2022 | irrelevant | 2 | 3 | Deferasirox is only a co-administered drug; the quantitative PK parameters (clearance, AUC, volume) reported are for busulfan, not deferasirox. |
+| popPK | Essmann_2022 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for busulfan (the subject drug of the PK analysis), while deferasirox acts only as a co-administered agent affecting busulfan clearance, not as the subject of the PK modeling. |
+| PGx | Essmann_2022 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction between deferasirox and busulfan, not a pharmacogenomic effect of deferasirox. |
 | popPK | Galeotti_2021 | relevant | 9 | 4 | A population PK model (one-compartment, F1, ka, CL, V with covariates) for deferasirox in children is presented, but the actual numeric parameter estimates are in Table 3/equations not fully provided in the evidence. |
 | popPK | Peppe_2024 | irrelevant | 0 | 0 | This is a nanoparticle formulation/efficacy study of deferasirox with no PK disposition parameters (no CL, V, half-life, or population-PK model); only release kinetics and biodistribution imaging. |
 

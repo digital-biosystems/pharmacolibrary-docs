@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The artemether record was rejected because the desbutyllumefantrine and desethylamodiaquine metabolites lack a defined metabolic formation rate from their parent drugs.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="artemether" model-id="Artemether_Ding2026_reference" status="rejected" stale="false" population="patients with uncomplicated Plasmodium falciparum malaria" measured-compound="artemether" parameterization="apparent" topology="general_linear"></div>
 
@@ -72,13 +72,13 @@ Ding J, Hoglund RM, van der Pluijm RW, Callery JJ, Peto TJ, Tripura R et al. Pop
 
 ### Reviewer guidance
 
-**The artemether record was rejected because the desbutyllumefantrine and desethylamodiaquine metabolites lack a defined metabolic formation rate from their parent drugs.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure lists lumefantrine and amodiaquine as parents for desbutyllumefantrine and desethylamodiaquine, but the specific rate parameters linking these parent drugs to their metabolites are not provided, rendering those metabolites unreachable from the dose. A unit of 'ARM' for the time-dependency parameter on clearance could not be converted to SI units, leaving that parameter without a standardized value. The second reader disagreed on several values, noting that absorption rate should be null and that clearances for multiple compounds require age-based covariate adjustments that are missing from this record. Extracted — artemether: MTT 5.43 h, n_transit 5 LF, Fab 1, CL/F 79.3 L/h, V1/F 141 L, Q/F 21.7 L/h, V2/F 283 L, CL 0.551 ARM, … (+1); dihydroartemisinin: CL/F 255 L/h, V1/F 64.1 L; amodiaquine: CL/F 2.25e+03 L/h, Q/F 3.02e+03 L/h; desethylamodiaquine: CL/F 32.2 L/h, V1/F 1.26e+03 L, Q/F 117 L/h, V2/F 1.64e+03 L, Q2/F 37.3 L/h, V3/F 6.44e+03 L; lumefantrine: CL/F 4.35 L/h, V1/F 101 L, Q/F 1.65 L/h, V2/F 311 L; desbutyllumefantrine: CL/F 744 L/h, V1/F 8.53e+03 L, Q/F 1.1e+03 L/h.
+A reported unit could not be converted (MTT, n_transit and CL), so that value has no SI equivalent. Extracted — artemether: MTT 5.43 h, n_transit 5 LF, Fab 1, CL/F 79.3 L/h, V1/F 141 L, Q/F 21.7 L/h, V2/F 283 L, CL 0.551 ARM, … (+1); dihydroartemisinin: CL/F 255 L/h, V1/F 64.1 L; amodiaquine: CL/F 2.25e+03 L/h, Q/F 3.02e+03 L/h; desethylamodiaquine: CL/F 32.2 L/h, V1/F 1.26e+03 L, Q/F 117 L/h, V2/F 1.64e+03 L, Q2/F 37.3 L/h, V3/F 6.44e+03 L; lumefantrine: CL/F 4.35 L/h, V1/F 101 L, Q/F 1.65 L/h, V2/F 311 L; desbutyllumefantrine: CL/F 744 L/h, V1/F 8.53e+03 L, Q/F 1.1e+03 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f arm].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Oxymorphone model terminal half-life (1.04 h) exceeded paper value (0.233 h) and bioavailability defaulted.
+> The model does not reproduce the paper's terminal half-life (paper 0.233, model 1.04); f use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="oxymorphone" model-id="Oxymorphone_Sadiq2013_reference" status="needs_review" stale="false" population="male Sprague-Dawley rats" measured-compound="oxymorphone" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Sadiq MW, Boström E, Keizer R, Björkman S, Hammarlund-Udenaes M. Oxymorphone a
 
 ### Reviewer guidance
 
-**Oxymorphone model terminal half-life (1.04 h) exceeded paper value (0.233 h) and bioavailability defaulted.**
+**The model does not reproduce the paper's terminal half-life (paper 0.233, model 1.04); f use library defaults, not estimates from this paper (+2 more).**
 
-The model simulated a terminal half-life of 1.04 hours, compared to the paper's 0.233 hours, with a ratio of 4.4771. Bioavailability (F) and lag time were not extracted and used library defaults. A second reader disputed the record, disagreeing on the absorption rate constant and central volume. Extracted — oxymorphone: CL 54.5 mL/min, V 1.19e+03 mL, Q 5.74 mL/min, fu 0.49, Kp 1.87, kabs 15.3 h−1.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — oxymorphone: CL 54.5 mL/min, V 1.19e+03 mL, Q 5.74 mL/min, fu 0.49, Kp 1.87, kabs 15.3 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of rec brain: this record has none, the second reading 11; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -170,9 +170,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | cross-check disputed by a second reader: verdict disputed, agreement 0.727, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.727 | cross-check contradicted by a second reader: verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_t_half_alpha | reference | skipped | 14.2 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | fail | 0.2333 | 1.045 | 4.477 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.2333 | 1.045 | 4.477 | reported 14.0 min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

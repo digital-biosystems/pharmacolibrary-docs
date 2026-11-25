@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> 5-fluorouracil parameters carry an unconvertible unit, and a metabolite lacks a dose path.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit γ ([mass] / [time] ** 2 / [current]) vs [length] ** 3 / [time]; Q1 unit γ ([mass] / [time] ** 2 / [current]) vs [mass] / [length] ** 3; Q64 unit γ ([mass] / [time] ** 2 / [current]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Port1994_reference" status="rejected" stale="false" population="cancer patients with liver metastases" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -52,13 +52,13 @@ Port RE, Schlemmer HP, Bachert P. Pharmacokinetic analysis of sparse in vivo NMR
 
 ### Reviewer guidance
 
-**5-fluorouracil parameters carry an unconvertible unit, and a metabolite lacks a dose path.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit γ ([mass] / [time] ** 2 / [current]) vs [length] ** 3 / [time]; Q1 unit γ ([mass] / [time] ** 2 / [current]) vs [mass] / [length] ** 3; Q64 unit γ ([mass] / [time] ** 2 / [current]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The clearance, affinity, and peripheral volume distribution parameters for 5-fluoro-2'-ureido-propanoic acid use unit γ, which cannot be converted to SI. This conflict prevents dimensional validation of the model structure. Additionally, 5-fluoro-beta-alanine is an orphan compartment with no path from the dose. Extracted — 5-fluoro-2'-ureido-propanoic acid: CL 121 γ, Km 2.59e+03 γ, V2 0.0648 γ; fluorouracil: V 161 L, kabs 0.13 1/h.
+A reported unit could not be converted (equation variable, CL, Km and V2), so that value has no SI equivalent. Extracted — 5-fluoro-2'-ureido-propanoic acid: CL 121 γ, Km 2.59e+03 γ, V2 0.0648 γ; fluorouracil: V 161 L, kabs 0.13 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has 5-fluorouracil → 5-fluoro-2'-ureido-propanoic acid (metabolism); 5-fluorouracil → 5-fluoro-beta-alanine (metabolism), the second reading 5-fluorouracil → fupa (metabolism); 5-fluorouracil → fbal (metabolism); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

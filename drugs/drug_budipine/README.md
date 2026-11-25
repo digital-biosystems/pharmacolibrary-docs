@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 12:55 | 0:39 | 0/0/0 | 0/0/0 | 0/0/0 | 6,039/602 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 19:10 | 0:04 | 0/0/0 | 0/0/0 | 0/0/0 | 3,355/178 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -47,17 +47,23 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Jackisch_1994.pdf` | Jackisch R et al., The antiparkinsonian drugs budipine and…, European journal of pharmac… (1994) | pd | 4 | [10.1016/0014-2999(94)00528-1](https://doi.org/10.1016/0014-2999(94)00528-1) | [7851484](https://www.ncbi.nlm.nih.gov/pubmed/7851484) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-10-06 12:55 UTC</sub>
+<sub>queue written 2026-11-23 19:10 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Jackisch_1994 | irrelevant | 0 | 0 | In-vitro mechanistic receptor study with no pharmacokinetic disposition parameters for budipine. |
-| PGx | Lelas_1999 | not_relevant | 2 | 3 | Budipine is used as a CYP2D6 inhibitor in monkeys, not as the drug of interest; no gene variant/genotype effect on budipine PK/PD is reported. |
-| PGx | Ramamoorthy_2001 | not_relevant | 2 | 5 | Budipine appears only as an inhibitor (Ki ratio 1.3) of CYP2D6 metabolism of other substrates; no PK/PD parameter of budipine itself is reported. |
-| PGx | Tomkins_1997 | not_relevant | 2 | 3 | Budipine is used as a CYP2D1 inhibitor; no gene variant/genotype effect on budipine's own PK or PD parameters is reported. |
-| PGx | Tomkins_1997_2 | not_relevant | 2 | 3 | Budipine is used as a CYP2D1 inhibitor to alter hydrocodone metabolism; no pharmacogenomic effect on budipine's own PK/PD parameters is reported. |
+| popPK | Jackisch_1994 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study on NMDA receptor binding, not a pharmacokinetic study of budipine disposition. |
+| PGx | Jackisch_1994 | not_relevant | 0 | 0 | The paper describes the mechanism of action of budipine on NMDA receptors in vitro and does not involve any genetic variants or pharmacogenomic analysis. |
+| popPK | Lelas_1999 | irrelevant | 0 | 0 | Budipine is used as a CYP2D6 inhibitor/comparator drug, not the subject of a pharmacokinetic study. |
+| PGx | Lelas_1999 | not_relevant | 3 | 8 | The study investigates CYP2D6 inhibition using drug inhibitors (budipine) in animals, not human genetic variants or genotypes affecting PK/PD. |
+| popPK | Ramamoorthy_2001 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of CYP2D6 alleles where budipine is used only as a probe inhibitor, not as the subject of a pharmacokinetic parameter study. |
+| PGx | Ramamoorthy_2001 | not_relevant | 0 | 0 | Budipine is mentioned only as an inhibitor in a binding assay, not as the substrate undergoing PK/PD evaluation, and the paper focuses on CYP2D6 substrate metabolism. |
+| popPK | Tomkins_1997 | irrelevant | 0 | 0 | Budipine is used as a CYP2D1 inhibitor to study amphetamine pharmacology; no PK parameters are reported for budipine itself. |
+| popPK | Tomkins_1997_2 | irrelevant | 0 | 0 | Budipine is used only as a CYP2D1 inhibitor (comparator/agent) to study hydrocodone metabolism; no PK parameters for budipine are reported. |
+| PGx | Tomkins_1997_2 | not_relevant | 0 | 0 | The paper uses budipine as a CYP2D1 inhibitor to study hydrocodone metabolism, rather than reporting a pharmacogenomic effect on budipine's own PK or PD. |
+| popPK | Uhr_2005 | irrelevant | 4 | 2 | The study reports organ distribution ratios (brain/plasma) rather than standard compartmental PK parameters (CL, V, Q) for budipine, and lacks the specific numeric concentration values needed for extraction. |
+| PGx | Uhr_2005 | not_relevant | 0 | 0 | The study is an in-vivo mouse genetic study (knockout) examining the role of P-gp in budipine distribution, not a human pharmacogenomic study linking specific genotypes to PK parameters. |
 
 
 </details>

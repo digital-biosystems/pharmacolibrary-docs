@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because the source paper studies vixotrigine PK, not carbamazepine, which is only a covariate.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Naik2021_reference" status="rejected" stale="false" population="" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Naik H, Zhao Y, Forrestal F, Cleall S, Bockbrader H, Chapel S. Population Pharma
 
 ### Reviewer guidance
 
-**Rejected because the source paper studies vixotrigine PK, not carbamazepine, which is only a covariate.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The record lists carbamazepine parameters (CL/F 10.8 L/h, V 174.5 L) from Naik_2021, but the paper's subject is actually vixotrigine. Carbamazepine is mentioned only as a co-medication or covariate affecting clearance, not the primary analyte. Additionally, key absorption parameters (ka, Tlag) were left at library placeholders rather than extracted from the source. Extracted — carbamazepine: CL/F 10.8 L/h, V 174 L.
+Extracted — carbamazepine: CL/F 10.8 L/h, V 174 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q40: this record has 10, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

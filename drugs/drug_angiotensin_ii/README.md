@@ -20,15 +20,21 @@ Angiotensin II is a synthetic peptide hormone used to treat hypotension caused b
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">0.1</text><line x1="306.7" y1="18" x2="306.7" y2="58" stroke="#ddd"/><text x="306.7" y="72" font-size="10" text-anchor="middle">1</text><line x1="423.3" y1="18" x2="423.3" y2="58" stroke="#ddd"/><text x="423.3" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">van_2026 · CL</text><circle cx="289.8" cy="30.0" r="4" fill="#ef6c00"><title>van_2026 · CL: 0.7161 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Steichert_2025 · CL/F</text><circle cx="488.8" cy="46.0" r="4" fill="#ef6c00"><title>Steichert_2025 · CL/F: 36.39 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">van_2026 · V</text><circle cx="259.2" cy="30.0" r="4" fill="#ef6c00"><title>van_2026 · V: 24.87 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Steichert_2025 · V1/F</text><circle cx="426.2" cy="46.0" r="4" fill="#ef6c00"><title>Steichert_2025 · V1/F: 223.7 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Steichert_2025_reference](drugs/drug_angiotensin_ii/AngiotensinIi_Steichert2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Steichert M et al., Angiotensin II/Angiotensin I Ratio as a…, Pharmaceutics (2025) | [10.3390/pharmaceutics17101345](https://doi.org/10.3390/pharmaceutics17101345) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [van_2026_reference](drugs/drug_angiotensin_ii/AngiotensinIi_van2026_reference.md) | — | 1-compartment (no model) | 2 | van Lier D et al., Safety, tolerability, and pharmacokinet…, mAbs (2026) | [10.1080/19420862.2026.2671468](https://doi.org/10.1080/19420862.2026.2671468) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Athanassa_2025_reference](drugs/drug_angiotensin_ii/AngiotensinIi_Athanassa2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Athanassa Z et al., Population pharmacokinetic model of ora…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf090](https://doi.org/10.1093/jac/dkaf090) |
 | <span class="pk-rf" hidden data-species="human + animal" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Kurup_2024_reference](drugs/drug_angiotensin_ii/AngiotensinIi_Kurup2024_reference.md) | — | 2-compartment (no model) | 4 | Kurup S et al., Semi-mechanistic population pharmacokin…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09947-2](https://doi.org/10.1007/s10928-024-09947-2) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Moran_1985_reference](drugs/drug_angiotensin_ii/AngiotensinIi_Moran1985_reference.md) | — | 1-compartment (no model) | 2 | Moran SM et al., Pathophysiology of protracted acute ren…, The Journal of clinical inv… (1985) | [10.1172/JCI112122](https://doi.org/10.1172/JCI112122) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [van_2026_reference](drugs/drug_angiotensin_ii/AngiotensinIi_van2026_reference.md) | — | 1-compartment (no model) | 2 | van Lier D et al., Safety, tolerability, and pharmacokinet…, mAbs (2026) | [10.1080/19420862.2026.2671468](https://doi.org/10.1080/19420862.2026.2671468) |
 
 ## Pharmacodynamics (PD)
 
@@ -73,13 +79,13 @@ Angiotensin II is a synthetic peptide hormone used to treat hypotension caused b
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 04:26 | 22:36 | 1/4/0 | 6/1/0 | 4/0/3 | 843,217/27,459 | ollama / qwen3.8:27b-mtp-q8_0 | 74 | 25/60 | 69/5 | 0 |
+| 2026-10-06 04:26 | 22:36 | 2/3/0 | 6/1/0 | 4/0/3 | 843,217/27,459 | ollama / qwen3.8:27b-mtp-q8_0 | 74 | 25/60 | 69/5 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 3271 matched, 233 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 5  ·  extracted 0  ·  needs review 1  ·  rejected 4  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

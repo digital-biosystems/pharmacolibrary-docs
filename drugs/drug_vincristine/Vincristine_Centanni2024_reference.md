@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vincristine&quot;,&quot;href&quot;:&quot;drugs/drug_vincristine/&quot;},{&quot;label&quot;:&quot;Centanni_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vincristine_Centanni2024_reference&quot;,&quot;label&quot;:&quot;Centanni_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vincristine/Vincristine_Centanni2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vincristine_Owellen1977_reference&quot;,&quot;label&quot;:&quot;Owellen_1977_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vincristine/Vincristine_Owellen1977_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vincristine_Centanni2024_reference&quot;,&quot;label&quot;:&quot;Centanni_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vincristine/Vincristine_Centanni2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record is held back because the absorption lag time parameter was not included in the parameter coverage, and the second reader disputed the classification of the peripheral volume parameter.
+> T3_param_coverage; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="vincristine" model-id="Vincristine_Centanni2024_reference" status="needs_review" stale="false" population="pediatric oncology patients" measured-compound="vincristine" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Centanni M, van de Velde ME, Uittenboogaard A, Kaspers GJL, Karlsson MO, Friberg
 
 ### Reviewer guidance
 
-**The record is held back because the absorption lag time parameter was not included in the parameter coverage, and the second reader disputed the classification of the peripheral volume parameter.**
+**T3_param_coverage; x1_cross_check.**
 
-The parameter coverage check expected five parameters but only found four covered, specifically missing the absorption lag time. Additionally, the second reader disagreed on the identification of the peripheral volume of distribution parameter. Extracted — vincristine: CL 45.2 L/h, V1 23.3 L, Q 114 L/h, V2 576 L, tlag 0.058 h.
+Extracted — vincristine: CL 45.2 L/h, V1 23.3 L, Q 114 L/h, V2 576 L, tlag 0.058 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[vp (l)a].parameter_id`: this record has Q64, the second reading Q61. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,7 +142,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.933, 0 of 1 reader(s) agree | 0.933 | cross-check disputed by a second reader: verdict disputed, agreement 0.933, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.933 (14 of 15 compared fields agree); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.933 | cross-check contradicted by a second reader: verdict disputed; agreement 0.933 (14 of 15 compared fields agree); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

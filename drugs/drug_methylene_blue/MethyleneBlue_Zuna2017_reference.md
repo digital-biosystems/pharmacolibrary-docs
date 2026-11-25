@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> The extracted clearance of 12.8 ml/min and volume of 90.0 ml for methylene blue are physiologically implausible.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="methylene blue" model-id="MethyleneBlue_Zuna2017_reference" status="rejected" stale="false" population="" measured-compound="methylene_blue" parameterization="mechanistic" topology="1C"></div>
 
@@ -38,7 +38,7 @@ Zuna I, Holt A. ADAM, a hands-on patient simulator for teaching principles of dr
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,13 @@ Zuna I, Holt A. ADAM, a hands-on patient simulator for teaching principles of dr
 
 ### Reviewer guidance
 
-**The extracted clearance of 12.8 ml/min and volume of 90.0 ml for methylene blue are physiologically implausible.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a total clearance of 12.8 ml/min and a volume of distribution of 90.0 ml for methylene blue. These magnitudes fall outside the acceptable physiological window, suggesting a unit or scale extraction error in the derived parameters. Extracted — methylene blue: CL 12.8 ml min–1, V 90 ml.
+Extracted — methylene blue: CL 12.8 ml min–1, V 90 ml.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q26: this record has 3, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -73,6 +75,36 @@ The record lists a total clearance of 12.8 ml/min and a volume of distribution o
 - volume reported by review
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (5/15 fields) | 10 |
+
+<details><summary>10 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.topology_template` | 1C | 2C | mismatch |
+| `gpt-oss-120b` | `values[Q26]` | 3 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q30]` |  | 3 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` |  | 8 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q33]` |  | 2 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q37]` |  | 4 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q54]` | 100 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q61]` | 90 | 100 | mismatch |
+| `gpt-oss-120b` | `values[Q84]` |  | 70 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q900]` | 70 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

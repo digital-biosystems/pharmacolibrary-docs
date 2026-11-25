@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Artefenomel record refused because absorption rate constant was defaulted, not reported in the source paper.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="Artefenomel" model-id="Artefenomel_McCarthy2019_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="artefenomel" parameterization="apparent" topology="1C"></div>
 
@@ -40,7 +40,7 @@ McCarthy JS, Rückle T, Elliott SL, Ballard E, Collins KA, Marquart L et al. A S
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.083). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,13 @@ McCarthy JS, Rückle T, Elliott SL, Ballard E, Collins KA, Marquart L et al. A S
 
 ### Reviewer guidance
 
-**Artefenomel record refused because absorption rate constant was defaulted, not reported in the source paper.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The model builder substituted library defaults for ka and Tlag because these values were not provided in the source text. This constitutes an invented absorption process and unsupported parameterization deviations. The verdict notes that these defaults affect the simulated profile but lack specific justification from the cited study. Extracted — artefenomel: CL/F 65 liters/h, V/F 8.9e+03 liters.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — artefenomel: CL/F 65 liters/h, V/F 8.9e+03 liters.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 3083, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -82,6 +84,37 @@ The model builder substituted library defaults for ka and Tlag because these val
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.083 (1/12 fields) | 11 |
+
+<details><summary>11 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `values[Q17]` | 3083 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q22]` |  | 65 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q27]` | 65 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` | 3576 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q56]` | 3 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q57]` | 6.5 | 3 | mismatch |
+| `gpt-oss-120b` | `values[Q61]` |  | 28 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q74]` | 3012 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q76]` | 8897 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q88]` | 513573 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -98,15 +131,16 @@ The model builder substituted library defaults for ka and Tlag because these val
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=artefenomel) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=artefenomel) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.083 (1 of 12 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.083 | cross-check contradicted by a second reader: verdict disputed; agreement 0.083 (1 of 12 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

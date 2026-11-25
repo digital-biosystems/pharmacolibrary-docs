@@ -61,7 +61,7 @@ Willmann S, Lloyd A, Austin R, Joseph S, Solms A, Zhang Y et al. Population phar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.227). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -71,11 +71,13 @@ Willmann S, Lloyd A, Austin R, Joseph S, Solms A, Zhang Y et al. Population phar
 
 ### Reviewer guidance
 
-**Simulation failed because eight parameters, including M27 and M30/34 volumes and rate constants, lacked valid SI units.**
+**The model was built but has not been simulated yet; the covariate scenarios were not simulated (+2 more).**
 
-The record specifies 17 parameters, but only 9 were processed with valid SI values. Specific parameters for metabolites M27 and M30/34, such as their peripheral volumes and absorption rate constants, were missing from the simulation due to unconvertible units. Additionally, while the base model was simulated, the defined covariate scenarios were not exercised. Extracted — elinzanetant: CL 7.26 L/h, V 23.7 L, V2 168 L, Q 6.57 L/h, kabs 2.37 1/h, tlag 0.292 h, fe 0.367 THETA, kel 2.07 1/h; M30/34: CL 4.14 L/h, V1 3.58 L, V2 15.6 L, Q 3.65 L/h; M27: CL 4.11 L/h, V1 1.85 L, V2 40.4 L, Q 4.45 L/h, Km 17.7 ng/mL; M18/21: CL 9.1 L/h, V 0.636 L, Km 45.8 ng/mL.
+The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (fe, equation variable, equation variable and equation variable), so that value has no SI equivalent. Extracted — elinzanetant: CL 7.26 L/h, V 23.7 L, V2 168 L, Q 6.57 L/h, kabs 2.37 1/h, tlag 0.292 h, fe 0.367 THETA, kel 2.07 1/h; M30/34: CL 4.14 L/h, V1 3.58 L, V2 15.6 L, Q 3.65 L/h; M27: CL 4.11 L/h, V1 1.85 L, V2 40.4 L, Q 4.45 L/h, Km 17.7 ng/mL; M18/21: CL 9.1 L/h, V 0.636 L, Km 45.8 ng/mL.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has elinzanetant → m27 (metabolism); elinzanetant → m30/34 (metabolism); m27 → m18/21 (metabolism) …, the second reading none; it also differs on 33 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -201,6 +203,60 @@ The record specifies 17 parameters, but only 9 were processed with valid SI valu
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.227 (10/44 fields) | 34 |
+
+<details><summary>34 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['elinzanetant', 'm27', 'metabolism'], ['elinzanetant', 'm30/34', 'metabolism'], ['m27', 'm18/21', 'metabolism'], ['m30/34', 'm18/21', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[alagref d].covariate_forms` | [] | ['additive_shift'] | mismatch |
+| `gpt-oss-120b` | `parameters[alagref d].rse_percent` | 0.163 |  | mismatch |
+| `gpt-oss-120b` | `parameters[alfed2]` | 0.545 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ampmet]` |  | 0.225 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl1821pop]` | 9.10 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl27pop]` | 4.11 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl3034pop]` | 4.14 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clpop].rse_percent` | 4.94 |  | mismatch |
+| `gpt-oss-120b` | `parameters[fref e].parameter_id` | Q44 | Q87 | mismatch |
+| `gpt-oss-120b` | `parameters[fref e].rse_percent` | 1.78 |  | mismatch |
+| `gpt-oss-120b` | `parameters[karef d].rse_percent` | 7.22 |  | mismatch |
+| `gpt-oss-120b` | `parameters[km18/21]` | 45.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km27]` | 17.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km3034]` |  | 7.87 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q27]` |  | 4.45 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q27]` | 4.45 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q3034]` | 3.65 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q].rse_percent` | 2.56 |  | mismatch |
+| `gpt-oss-120b` | `parameters[theta_tlag_category]` |  | 8.05 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc1821]` | 0.636 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc27]` | 1.85 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc3034]` | 3.58 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vcpop].parameter_id` | Q61 | Q63 | mismatch |
+| `gpt-oss-120b` | `parameters[vcpop].rse_percent` | 4.64 |  | mismatch |
+| `gpt-oss-120b` | `parameters[vmax27]` | 42.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax3034]` |  | 24.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax3034]` | 24.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp27]` | 40.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp3034]` | 15.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp].rse_percent` | 2.00 |  | mismatch |
+| `gpt-oss-120b` | `parameters[θshift]` | 8.05 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λ].rse_percent` | 9.51 |  | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -243,17 +299,17 @@ The record specifies 17 parameters, but only 9 were processed with valid SI valu
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | fail | 17 scholar param(s) emitted or defaulted | 9 covered | neither emitted nor in defaulted[]: ['V2', 'kabs', 'tlag', 'V1', 'V2', 'V1', 'V2', 'kel'] |
-| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | skipped |  |  | no second reading of this record |
-| T1_cmax | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 9 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | fail | 17 scholar param(s) emitted or defaulted | 9 covered |  | neither emitted nor in defaulted[]: ['V2', 'kabs', 'tlag', 'V1', 'V2', 'V1', 'V2', 'kel'] |
+| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.227 (10 of 44 compared fields agree, 21 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.227 | cross-check contradicted by a second reader: verdict disputed; agreement 0.227 (10 of 44 compared fields agree, 21 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 9 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

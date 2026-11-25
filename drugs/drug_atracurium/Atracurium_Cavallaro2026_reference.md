@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Atracurium parameters were incorrectly extracted from a paper focused on opioids, where atracurium was only a co-medication.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="atracurium" model-id="Atracurium_Cavallaro2026_reference" status="rejected" stale="false" population="" measured-compound="atracurium" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Cavallaro G, Garrido F, Decembrino N, Bullejos Garcia EE, Raffaeli G. Pharmacolo
 
 ### Reviewer guidance
 
-**Atracurium parameters were incorrectly extracted from a paper focused on opioids, where atracurium was only a co-medication.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The primary reason for refusal is that the source paper is a review on neonatal analgesia discussing opioids like morphine and fentanyl, not atracurium. Atracurium is mentioned only in the context of co-medication or as a covariate, making the extracted values invalid for a dedicated pharmacokinetic model. Furthermore, a second reader disagreed with the reported clearance value of 0.651 L/h/kg, marking it as null due to the lack of appropriate source data. Extracted — atracurium: CL 0.651 L/h/kg, V 4.7 L/kg.
+Extracted — atracurium: CL 0.651 L/h/kg, V 4.7 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.651, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -121,7 +121,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.667 (2 of 3 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

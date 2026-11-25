@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Omeprazole's central volume of distribution (0.14 l/kg) was rejected because the recorded unit 1/kg is dimensionless, conflicting with a volume dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q63 unit 1/kg (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Andersson1990_10_mg_mean" status="rejected" stale="false" population="healthy adult males" measured-compound="omeprazole" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Andersson T, Cederberg C, Regårdh CG, Skånberg I. Pharmacokinetics of various 
 
 ### Reviewer guidance
 
-**Omeprazole's central volume of distribution (0.14 l/kg) was rejected because the recorded unit 1/kg is dimensionless, conflicting with a volume dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q63 unit 1/kg (dimensionless) vs [length] ** 3.**
 
-The unit 1/kg for the central volume of distribution is dimensionless, which is incompatible with the volume dimension required for this parameter. The paper reports this value in 1/kg, a unit that could not be converted to SI units for the model. Extracted — omeprazole: t1/2z 5.3 min, V1 0.14 1/kg, V 0.34 l/kg, AUC 0.75 gmol x h/l, CL 658 ml/min, t1/2ka 0.21 h, Ct 0.55 gmol/1, Q 1 ml min -1, … (+2).
+A reported unit could not be converted (V1, AUC and Ct), so that value has no SI equivalent. Extracted — omeprazole: t1/2z 5.3 min, V1 0.14 1/kg, V 0.34 l/kg, AUC 0.75 gmol x h/l, CL 658 ml/min, t1/2ka 0.21 h, Ct 0.55 gmol/1, Q 1 ml min -1, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cm,-].parameter_id`: this record has Q75, the second reading Q374; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J04A&quot;,&quot;href&quot;:&quot;atc/J04A.md&quot;},{&quot;label&quot;:&quot;terizidone&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/&quot;},{&quot;label&quot;:&quot;Upton_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Terizidone_Mulubwa2019v2_reference&quot;,&quot;label&quot;:&quot;Mulubwa_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/Terizidone_Mulubwa2019v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terizidone_Kengo2024_reference&quot;,&quot;label&quot;:&quot;Kengo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/Terizidone_Kengo2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terizidone_Upton2025_reference&quot;,&quot;label&quot;:&quot;Upton_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/Terizidone_Upton2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Terizidone_Kengo2024_reference&quot;,&quot;label&quot;:&quot;Kengo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/Terizidone_Kengo2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terizidone_Mulubwa2019v2_reference&quot;,&quot;label&quot;:&quot;Mulubwa_2019_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/Terizidone_Mulubwa2019v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terizidone_Upton2025_reference&quot;,&quot;label&quot;:&quot;Upton_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terizidone/Terizidone_Upton2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cycloserine’s apparent clearance (CLm/F 0.54 L/h) was attached to a one-compartment enteral model, which failed the paper’s peak and terminal-half-life comparisons.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0492, model 0.0058); the model does not reproduce the paper's time of the peak (tmax) (paper 3.6, model 5.64) (+5 more).
 
 <div class="pk-model-meta" hidden drug="terizidone" model-id="Terizidone_Upton2025_reference" status="rejected" stale="false" population="adults with pulmonary drug-resistant TB" measured-compound="cycloserine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -52,13 +52,13 @@ Upton CM, Calderin JM, Diacon AH, Boeree MJ, Denti P, Wiesner L et al. Cerebrosp
 
 ### Reviewer guidance
 
-**Cycloserine’s apparent clearance (CLm/F 0.54 L/h) was attached to a one-compartment enteral model, which failed the paper’s peak and terminal-half-life comparisons.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0492, model 0.0058); the model does not reproduce the paper's time of the peak (tmax) (paper 3.6, model 5.64) (+5 more).**
 
-The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0492, model 0.0058) or time of the peak (tmax) (paper 3.6, model 5.64); both differ from the reported values by more than the tolerance. The model also does not reproduce the paper's terminal half-life (paper 69, model 17.8) or the other reported terminal half-life (paper 4.7, model 17.8), each differing by more than the tolerance. Although the measured compound is cycloserine, the model output is the central-compartment concentration rather than the metabolite concentration, and its one-compartment enteral structure does not represent the parent–metabolite structure. The reported cycloserine parameters are apparent metabolite clearance CLm/F 0.54 L/h and volume Vm/F 13.9 L; ka and Tlag were defaulted, and the builder assumed F=1, Fm=1, and no molar correction, with ka unsupported by the paper and affecting the simulated profile. Extracted — cycloserine: CLm/F 0.54 L/h, Vm/F 13.9 L.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. None of the extracted parameters is terizidone's own; they describe cycloserine. Extracted — cycloserine: CLm/F 0.54 L/h, Vm/F 13.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has none, the second reading 0.54; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,16 +144,16 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 0.0492 | 0.005801 | 0.1179 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0515 | 0.005801 | 0.1126 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00049 | 0.005801 | 11.84 | mg/L→SI vs simulated kg/m3 |
-| T1_t_half_beta | reference | fail | 69 | 17.84 | 0.2586 | hours→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 4.7 | 17.84 | 3.796 | hours→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 55.4 | 17.84 | 0.322 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 3.6 | 5.644 | 1.568 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 4.3 | 5.644 | 1.313 | hours→SI vs simulated h |
-| T1_tmax | reference | pass | 5 | 5.644 | 1.129 | hours→SI vs simulated h |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.5 (4 of 8 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 0.0492 | 0.005801 | 0.1179 | reported 49.2 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0515 | 0.005801 | 0.1126 | reported 51.5 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00049 | 0.005801 | 11.84 | reported 0.49 mg/L→SI vs simulated kg/m3 |
+| T1_t_half_beta | reference | fail | 69 | 17.84 | 0.2586 | reported 69.0 hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 4.7 | 17.84 | 3.796 | reported 4.7 hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 55.4 | 17.84 | 0.322 | reported 55.4 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 3.6 | 5.644 | 1.568 | reported 3.6 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 4.3 | 5.644 | 1.313 | reported 4.3 hours→SI vs simulated h |
+| T1_tmax | reference | pass | 5 | 5.644 | 1.129 | reported 5.0 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

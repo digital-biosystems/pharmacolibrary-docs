@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for fentanyl was held back because the bioavailability parameter F was not reported in the paper and was instead left at a library default value.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Ariano2001_reference" status="needs_review" stale="false" population="healthy young and elderly volunteers" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Ariano RE, Duke PC, Sitar DS. Population pharmacokinetics of fentanyl in healthy
 
 ### Reviewer guidance
 
-**The record for fentanyl was held back because the bioavailability parameter F was not reported in the paper and was instead left at a library default value.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The model structure requires a value for F, but no specific estimate was provided in the source paper, resulting in the use of an unsupported library placeholder. Additionally, the extracted values for total clearance (2.12 L/kg/h), intercompartmental clearance (8.43 L/kg/h), central volume (1.22 L/kg), and peripheral volume (1.81 L/kg) were disputed by a second reader who proposed alternative figures of 2.01, 5.79, 1.09, and 2.43 respectively. These discrepancies create uncertainty regarding the accuracy of the pharmacokinetic parameter estimates derived from the study data. Extracted — fentanyl: CL 2.12 L/kg/h, Q 8.43 L/kg/h, V1 1.22 L/kg, V2 1.81 L/kg, kabs 0.27 minute -1, tlag 15 min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — fentanyl: CL 2.12 L/kg/h, Q 8.43 L/kg/h, V1 1.22 L/kg, V2 1.81 L/kg, kabs 0.27 minute -1, tlag 15 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cld].value`: this record has 8.43, the second reading 5.79; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

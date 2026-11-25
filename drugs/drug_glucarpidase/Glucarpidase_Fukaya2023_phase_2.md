@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The Michaelis-Menten hydrolysis link describing methotrexate elimination by glucarpidase is outside the software's supported model structures.
+> nonlinear topology.
 
 <div class="pk-model-meta" hidden drug="glucarpidase" model-id="Glucarpidase_Fukaya2023_phase_2" status="needs_review" stale="false" population="healthy volunteers and patients with delayed MTX excretion after high-dose methotrexate" measured-compound="methotrexate" parameterization="mechanistic" topology="manual_model_class"></div>
 
@@ -49,13 +49,13 @@ Fukaya Y, Kimura T, Hamada Y, Yoshimura K, Hiraga H, Yuza Y et al. Development o
 
 ### Reviewer guidance
 
-**The Michaelis-Menten hydrolysis link describing methotrexate elimination by glucarpidase is outside the software's supported model structures.**
+**nonlinear topology.**
 
-The record defines a nonlinear elimination pathway from methotrexate to DAMPA using a Michaelis-Menten parameter value of 32.826 L/h. Because the review system cannot construct this specific topology, the model was held for review. A second reader additionally disagreed on whether the primary measured compound was methotrexate or glucarpidase, and whether the hydrolysis link involved glucarpidase as the substrate. Extracted — glucarpidase: CL 32.8 L/h, V 32.1 L.
+Extracted — glucarpidase: CL 32.8 L/h, V 32.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has methotrexate, the second reading glucarpidase; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

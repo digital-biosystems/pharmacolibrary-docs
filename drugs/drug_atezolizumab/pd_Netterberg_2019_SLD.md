@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;atezolizumab&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/&quot;},{&quot;label&quot;:&quot;Netterberg_2019 \u00b7 PD tumor size (sum of the longest diameters)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atezolizumab_Stroh2017_reference&quot;,&quot;label&quot;:&quot;Stroh_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Stroh2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_adult_model&quot;,&quot;label&quot;:&quot;Shemesh_2019_adult_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_pediatric_young_adult_model&quot;,&quot;label&quot;:&quot;Shemesh_2019_pediatric_young_adult_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_pediatric_young_adult_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;atezolizumab&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/&quot;},{&quot;label&quot;:&quot;Netterberg_2019 \u00b7 PD sum of the longest diameters&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atezolizumab_Stroh2017_reference&quot;,&quot;label&quot;:&quot;Stroh_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Stroh2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Chan2025_reference&quot;,&quot;label&quot;:&quot;Chan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_adult_model&quot;,&quot;label&quot;:&quot;Shemesh_2019_adult_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_pediatric_young_adult_model&quot;,&quot;label&quot;:&quot;Shemesh_2019_pediatric_young_adult_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_pediatric_young_adult_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# tumor size (sum of the longest diameters) — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+# sum of the longest diameters — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Atezolizumab (concentrations from this paper's PK model) drives tumor size (sum of the longest diameters) (in cm): disease-progression model.
+**As extracted:** Atezolizumab (the dose) drives sum of the longest diameters (in cm): disease-progression model.
 
 **Model:** No model was generated from this record.
 
@@ -24,9 +24,9 @@
 
 - **paper:** `Netterberg_2019`
 - **model family:** `disease_progression`
-- **driver:** `pk_record`
+- **driver:** `dose_only`
 - **tier:** population
-- **effect:** stimulation/proportional
+- **effect:** inhibition/proportional
 
 ## Citation
 Netterberg I et al., A PK/PD Analysis of Circulating Biomark…, Clinical pharmacology and t… (2019)
@@ -36,14 +36,11 @@ Netterberg I et al., A PK/PD Analysis of Circulating Biomark…, Clinical pharma
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
 | PD (effect) | SLD0 | `Q324` ·  | 4.75 | cm | llm | Netterberg_2019:pdv3 |
-| — | R Growth | `Q100` ·  | 0.0169 | cm/week | nil | Netterberg_2019:pdv3 |
-| — | K Shr,Drug | `Q100` ·  | 2.75·10−6 | l/mg/day/week | nil | Netterberg_2019:pdv3 |
+| PD (effect) | R Growth | `Q327` ·  | 0.0169 | cm/week | llm | Netterberg_2019:pdv3 |
+| PD (effect) | K Shr,Drug | `Q335` ·  | 2.75·10−6 | l/mg/day/week | llm | Netterberg_2019:pdv3 |
 | — | λDrug | `Q100` ·  | 0.0609 | week−1 | nil | Netterberg_2019:pdv3 |
-| — | K Shr,IL‐18 | `Q100` ·  | 0.00282 | 1/(% week) | nil | Netterberg_2019:pdv3 |
-| model term | θ Rgrowth‐LiverMets | `Q900` ·  | 8.48 |  | llm | Netterberg_2019:pdv3 |
-| model term | θ SLD0‐Mets | `Q900` ·  | 0.927 |  | llm | Netterberg_2019:pdv3 |
-| model term | θ KShr,Drug‐Non‐Smoking | `Q900` ·  | 0 fixed |  | llm | Netterberg_2019:pdv3 |
-| variability | IIV, CV% on SLD0 | `Q312` ·  | 62 | CV% | llm | Netterberg_2019:pdv3 |
+| — | K Shr,IL-18 | `Q100` ·  | 0.00282 | 1/(% week) | nil | Netterberg_2019:pdv3 |
+| variability | IIV on SLD0 | `Q312` ·  | 62 | % | llm | Netterberg_2019:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -52,20 +49,21 @@ Netterberg I et al., A PK/PD Analysis of Circulating Biomark…, Clinical pharma
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `effect_direction` | stimulation | inhibition | mismatch |
-| `qwen3.8-27b` | `model_family` | disease_progression | tmdd | mismatch |
-| `qwen3.8-27b` | `parameters[Q340]` |  | 0.0169 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q900]` | 0 fixed |  | only_one_extracted |
+| `gpt-oss-120b` | `model_family` | disease_progression | linear | mismatch |
+| `gpt-oss-120b` | `parameters[Q100]` | 0.00282 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q324]` | 4.75 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q327]` | 0.0169 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q335]` | 2.75·10−6 |  | only_one_extracted |
 
 </details>
 

@@ -8,16 +8,14 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="vidarabine" model-id="Vidarabine_Yang1992_reference" status="needs_review" stale="false" population="rabbits and mice" measured-compound="vidarabine (Ara-A)" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="vidarabine" model-id="Vidarabine_Yang1992_reference" status="needs_review" stale="false" population="rabbits and mice" measured-compound="vidarabine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yang TY, Hu J, Li HX. [Studies on pharmacokinetics of 9-beta-D-arabinofuranosyl adenine nanocapsules]. Yao xue xue bao = Acta pharmaceutica Sinica 27(12):923–927 (1992).
 
 ## Population and dosing
 
-**Population:** rabbits and mice.
-
-**Dosed compound ≠ measured compound:** dosed vidarabine (Ara-A), as nanocapsules or injection, measured vidarabine (Ara-A).
+**Population:** rabbits and mice · condition healthy.
 
 > **Species: mouse.** This record comes from an animal study (mouse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -39,7 +37,7 @@ Yang TY, Hu J, Li HX. [Studies on pharmacokinetics of 9-beta-D-arabinofuranosyl 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), qwen3.8-27b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +49,9 @@ Yang TY, Hu J, Li HX. [Studies on pharmacokinetics of 9-beta-D-arabinofuranosyl 
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is vidarabine's own; they describe vidarabine (Ara-A). Extracted — vidarabine (Ara-A): t1/2z 20.3 min, MRT 9.65 min, AUC 233 micrograms.min.ml-1.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — vidarabine: t1/2z 20.3 min, MRT 9.65 min, AUC 233 micrograms.min.ml-1.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has vidarabine (Ara-A), as nanocapsules or injection, the second reading vidarabine; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vidarabine, the second reading Ara-A-NC; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,7 +61,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 |---|---|---|---|---|---|---|---|---|
 | elimination half-time | `Q57` · t1/2z | 20.32 | min | 1219 | s | min | llm (0.6) | Yang_1992:abstract |
 | MRT | `Q53` · MRT | 9.647 | min | 578.8 | s | min | exact (1) | Yang_1992:abstract |
-| AUC | `Q88` · AUC | 233.4 | micrograms.min.ml-1 |  |  | (min·µg)/ml | exact (1) | Yang_1992:abstract |
+| AUC | `Q88` · AUC | 233.4 | micrograms.min.ml-1 | 14 | kg*s/m3 | (min·µg)/ml | exact (1) | Yang_1992:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,27 +71,34 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vidarabine (Ara-A)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vidarabine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Yang_1992_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `qwen3.8-27b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>16 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc]` |  | 233.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 233.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-time]` | 20.32 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` |  | 9.647 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 9.647 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[shorter elimination half-time]` |  | 20.32 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | vidarabine | Ara-A-NC | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | vidarabine | Ara-A | mismatch |
 | `qwen3.8-27b` | `parameters[auc]` |  | 233.4 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[auc]` | 233.4 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[elimination half-time]` |  | 20.32 | only_one_extracted |
@@ -155,4 +160,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvidarabine%5D%20Vidarabine_Yang1992_reference&body=Drug%3A%20vidarabine%0ARecord%3A%20Vidarabine_Yang1992_reference%0APaper%3A%20Yang_1992%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vidarabine/Vidarabine_Yang1992_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:52 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:30 UTC</sub>

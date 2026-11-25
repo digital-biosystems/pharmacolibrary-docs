@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held because the second reader disagreed on the identity and values of emtricitabine clearance and volume parameters.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="emtricitabine" model-id="Emtricitabine_Valade2014_reference" status="needs_review" stale="false" population="HIV-1-infected adult patients" measured-compound="emtricitabine" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Valade E, Tréluyer JM, Bouazza N, Ghosn J, Foissac F, Benaboud S et al. Populat
 
 ### Reviewer guidance
 
-**The record was held because the second reader disagreed on the identity and values of emtricitabine clearance and volume parameters.**
+**cross_check_disputed; x1_cross_check.**
 
-The record extracted from the abstract lists a single apparent clearance of 15.1 L/h and a single volume of 42.3 L, but the second reader assigned these values to elimination clearance and central volume, respectively. The second reader also identified a peripheral volume of 55.4 L and intercompartmental clearance of 5.75 L/h that were absent from the original extraction. This lack of agreement resulted in a cross-check score of 0.25, below the 0.5 threshold for acceptance. Extracted — emtricitabine: CL/F 15.1 liters/h, V 42.3 liters, AUCt 12.5 mg·h/liter, kabs 3.1 1/h, tlag 0.522 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — emtricitabine: CL/F 15.1 liters/h, V 42.3 liters, AUCt 12.5 mg·h/liter, kabs 3.1 1/h, tlag 0.522 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of alag: this record has 0.522, the second reading none; it also differs on 11 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -153,7 +153,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check agreement 0.25 is below 0.5: verdict partial, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.25 (4 of 16 compared fields agree, 12 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check agreement 0.25 is below 0.5: verdict partial; agreement 0.25 (4 of 16 compared fields agree, 12 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

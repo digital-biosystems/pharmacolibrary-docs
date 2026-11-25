@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is not a compartmental PK model because it lacks elimination clearance and instead reports a plasma concentration of 414 micromol/L at 20 minutes.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit micromol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.
 
-<div class="pk-model-meta" hidden drug="gadobutrol" model-id="Gadobutrol_Hahn2009_reference" status="rejected" stale="false" population="pediatric patients aged 2 to 17 years undergoing contrast-enhanced MRI or MR angiography" measured-compound="gadolinium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gadobutrol" model-id="Gadobutrol_Hahn2009_reference" status="rejected" stale="false" population="pediatric patients" measured-compound="gadobutrol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hahn G, Sorge I, Gruhn B, Glutig K, Hirsch W, Bhargava R et al. Pharmacokinetics and safety of gadobutrol-enhanced magnetic resonance imaging in pediatric patients. Investigative radiology 44(12):776–783 (2009).
@@ -16,9 +16,7 @@ Hahn G, Sorge I, Gruhn B, Glutig K, Hirsch W, Bhargava R et al. Pharmacokinetics
 
 ## Population and dosing
 
-**Population:** pediatric patients aged 2 to 17 years undergoing contrast-enhanced MRI or MR angiography · condition patients undergoing routine contrast-enhanced imaging · age group mixed · n = 130.
-
-**Dosed compound ≠ measured compound:** dosed gadobutrol, measured gadolinium.
+**Population:** pediatric patients · condition healthy · age group child.
 
 ## Model
 
@@ -32,13 +30,13 @@ Hahn G, Sorge I, Gruhn B, Glutig K, Hirsch W, Bhargava R et al. Pharmacokinetics
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| body weight-normalized total body clearance (all ages) | CLnorm | 0.1 | L/h/kg |
-| body weight-normalized median estimates of total volume of distribution (for all ages) | Vnorm | 0.2 | L/kg |
-| Median gadolinium plasma concentrations at 20 minutes postinjection (13 kg subject) | Ct | 414 | micromol/L |
+| body weight-normalized total body clearance (L/h/kg) per age group were 0.13 (0.09, 0.17) in the 2 to 6 year age group | CLnorm | 0.13 | L/h/kg |
+| body weight-normalized median estimates of total volume of distribution (L/kg) were 0.24 (0.20, 0.28) in the 2 to 6 year age group | Vnorm | 0.24 | L/kg |
+| Median gadolinium plasma concentrations at 20 minutes postinjection were simulated using the population pharmacokinetic model and ranged from ... to 518 micromol/L (65 kg subject) | Ct | 518 | micromol/L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4), qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,21 +46,21 @@ Hahn G, Sorge I, Gruhn B, Glutig K, Hirsch W, Bhargava R et al. Pharmacokinetics
 
 ### Reviewer guidance
 
-**The record is not a compartmental PK model because it lacks elimination clearance and instead reports a plasma concentration of 414 micromol/L at 20 minutes.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit micromol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The paper is abstract-only, so summary statistics stood in for a fitted model, and the primary analyte is disputed as gadolinium versus gadobutrol. A dimension mismatch occurred on the structural parameter because its unit of micromol/L conflicted with the expected mass dimension. Second readers disagreed on the parameter mappings for body weight-normalized clearance, volume, and concentration, leaving null values for specific fields. Extracted — gadolinium: CLnorm 0.1 L/h/kg, Vnorm 0.2 L/kg, Ct 414 micromol/L.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — gadobutrol: CLnorm 0.13 L/h/kg, Vnorm 0.24 L/kg, Ct 518 micromol/L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has gadolinium, the second reading gadobutrol; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| body weight-normalized total body clearance (all ages) | `Q354` · CLnorm | 0.1 | L/h/kg | 1.944e-06 | m3/s | l/(h·kg) | llm_corrected (0.6) | Hahn_2009:abstract |
-| body weight-normalized median estimates of total volume of distribution (for all ages) | `Q352` · Vnorm | 0.2 | L/kg | 0.014 | m3 | l/kg | llm_corrected (0.6) | Hahn_2009:abstract |
-| Median gadolinium plasma concentrations at 20 minutes postinjection (13 kg subject) | `Q75` · Ct | 414 | micromol/L |  |  | µM/l | llm (0.6) | Hahn_2009:abstract |
+| body weight-normalized total body clearance (L/h/kg) per age group were 0.13 (0.09, 0.17) in the 2 to 6 year age group | `Q354` · CLnorm | 0.13 | L/h/kg | 2.528e-06 | m3/s | l/(h·kg) | llm_corrected (0.6) | Hahn_2009:abstract |
+| body weight-normalized median estimates of total volume of distribution (L/kg) were 0.24 (0.20, 0.28) in the 2 to 6 year age group | `Q352` · Vnorm | 0.24 | L/kg | 0.0168 | m3 | l/kg | llm_corrected (0.6) | Hahn_2009:abstract |
+| Median gadolinium plasma concentrations at 20 minutes postinjection were simulated using the population pharmacokinetic model and ranged from ... to 518 micromol/L (65 kg subject) | `Q75` · Ct | 518 | micromol/L |  |  | µM/l | llm (0.6) | Hahn_2009:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,37 +70,42 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q354 ('body weight-normalized total body clearance (in the 2 to 6 year age group)', value 0.13) — already have one for this compound
-- dropped duplicate Q354 ('body weight-normalized total body clearance (in the 7 to 11 year age group)', value 0.1) — already have one for this compound
-- dropped duplicate Q354 ('body weight-normalized total body clearance (in the 12 to 17 year age group)', value 0.09) — already have one for this compound
-- dropped duplicate Q352 ('body weight-normalized median estimates of total volume of distribution (in the 2 to 6 year age group)', value 0.24) — already have one for this compound
-- dropped duplicate Q352 ('body weight-normalized median estimates of total volume of distribution (in the 7 to 11 year age group)', value 0.19) — already have one for this compound
-- dropped duplicate Q352 ('body weight-normalized median estimates of total volume of distribution (in the 12 to 17 year age group)', value 0.18) — already have one for this compound
-- unit_dimension_mismatch: 'Median gadolinium plasma concentrations at 20 minutes postinjection (13 kg subject)' → Q75 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'Median gadolinium plasma concentrations at 20 minutes postinjection (65 kg subject)' → Q75 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped duplicate Q75 ('Median gadolinium plasma concentrations at 20 minutes postinjection (65 kg subject)', value 518) — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gadolinium
+- covariate body weight for CLnorm from footnote/prose kept as documentation only (['Hahn_2009:abstract'])
+- dropped duplicate Q354 ('body weight-normalized total body clearance (L/h/kg) per age group were 0.10 (0.05, 0.17) in the 7 to 11 year age group', value 0.1) — already have one for this compound
+- dropped duplicate Q354 ('body weight-normalized total body clearance (L/h/kg) per age group were 0.09 (0.05, 0.10) in the 12 to 17 year age group', value 0.09) — already have one for this compound
+- covariate body weight for Vnorm from footnote/prose kept as documentation only (['Hahn_2009:abstract'])
+- dropped duplicate Q352 ('body weight-normalized median estimates of total volume of distribution (L/kg) were 0.19 (0.14, 0.23) in the 7 to 11 year age group', value 0.19) — already have one for this compound
+- dropped duplicate Q352 ('body weight-normalized median estimates of total volume of distribution (L/kg) were 0.18 (0.092, 0.23) in the 12 to 17 year age group', value 0.18) — already have one for this compound
+- dropped unlinked row (NIL): 'Median gadolinium plasma concentrations at 20 minutes postinjection were simulated using the population pharmacokinetic model and ranged from 414 (13 kg subject)' — extend the ontology if this is a real PK parameter (source ['Hahn_2009:abstract'])
+- unit_dimension_mismatch: 'Median gadolinium plasma concentrations at 20 minutes postinjection were simulated using the population pharmacokinetic model and ranged from ... to 518 micromol/L (65 kg subject)' → Q75 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gadobutrol
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'gadolinium', not gadobutrol — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Hahn_2009_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 | `qwen3.8-27b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[body weight-normalized median estimates of total volume of distribution (l/kg) were 0.24 (0.20, 0.28) in the 2 to 6 year age group]` | 0.24 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[body weight-normalized total body clearance (l/h/kg) per age group - all ages]` |  | 0.10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[body weight-normalized total body clearance (l/h/kg) per age group were 0.13 (0.09, 0.17) in the 2 to 6 year age group]` | 0.13 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[body weight-normalized total volume of distribution (l/kg) - all ages]` |  | 0.20 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median gadolinium plasma concentration at 20 minutes postinjection (micromol/l) - 13 kg subject]` |  | 414 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median gadolinium plasma concentrations at 20 minutes postinjection were simulated using the population pharmacokinetic model and ranged from ... to 518 micromol/l]` | 518 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[body weight-normalized median estimates of total volume of distribution]` |  | 0.2 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[body weight-normalized median estimates of total volume of distribution]` | 0.2 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[body weight-normalized total body clearance (l/h/kg) per age group]` |  | 0.1 | only_one_extracted |
@@ -151,4 +154,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgadobutrol%5D%20Gadobutrol_Hahn2009_reference&body=Drug%3A%20gadobutrol%0ARecord%3A%20Gadobutrol_Hahn2009_reference%0APaper%3A%20Hahn_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gadobutrol/Gadobutrol_Hahn2009_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:36 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:16 UTC</sub>

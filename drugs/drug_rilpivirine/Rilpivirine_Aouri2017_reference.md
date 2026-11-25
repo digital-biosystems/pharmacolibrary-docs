@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;rilpivirine&quot;,&quot;href&quot;:&quot;drugs/drug_rilpivirine/&quot;},{&quot;label&quot;:&quot;Aouri_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rilpivirine_Aouri2017_reference&quot;,&quot;label&quot;:&quot;Aouri_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rilpivirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rilpivirine/Rilpivirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Rilpivirine_Aouri2017_reference&quot;,&quot;label&quot;:&quot;Aouri_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Rilpivirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rilpivirine/Rilpivirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # rilpivirine — `Rilpivirine_Aouri2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Bioavailability and lag time for rilpivirine were left at library defaults, while the abstract-only source failed independent verification.
-
-<div class="pk-model-meta" hidden drug="rilpivirine" model-id="Rilpivirine_Aouri2017_reference" status="needs_review" stale="false" population="HIV-1-infected adults" measured-compound="rilpivirine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="rilpivirine" model-id="Rilpivirine_Aouri2017_reference" status="simulated" stale="false" population="HIV-1-infected individuals" measured-compound="rilpivirine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Aouri M, Barcelo C, Guidi M, Rotger M, Cavassini M, Hizrel C et al. Population Pharmacokinetics and Pharmacogenetics Analysis of Rilpivirine in HIV-1-Infected Individuals. Antimicrobial agents and chemotherapy 61(1) (2017).
@@ -17,30 +15,27 @@ Aouri M, Barcelo C, Guidi M, Rotger M, Cavassini M, Hizrel C et al. Population P
 
 ## Population and dosing
 
-**Population:** HIV-1-infected adults · condition HIV-1 infection · age group adult · n = 249.
+**Population:** HIV-1-infected individuals · condition HIV-1 infection · age group adult.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference.svg" alt="Rilpivirine_Aouri2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| clearance (CL) | CL | 11.7 | liters/h |
-| volume of distribution | V | 401 | liters |
+| average RPV clearance (CL) | CL | 11.7 | liters/h |
+| average volume of distribution | V | 401 | liters |
 | mean absorption time | MAT | 4 | h |
-| KAgluteal (low) | kabs | 0.000215 | h−1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,22 +45,21 @@ Aouri M, Barcelo C, Guidi M, Rotger M, Cavassini M, Hizrel C et al. Population P
 
 ### Reviewer guidance
 
-**Bioavailability and lag time for rilpivirine were left at library defaults, while the abstract-only source failed independent verification.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-The record lacks explicit estimates for bioavailability (F) and absorption lag time (Tlag), forcing the use of generic placeholders for the rilpivirine model. The review was disputed by a second reader, with an agreement ratio of 0.182, who identified the reported parameters as unknown or null. Because the data derives solely from the paper abstract, the summary statistics stand in for fitted model values, preventing independent validation of the extraction. Extracted — rilpivirine: CL 11.7 liters/h, V 401 liters, MAT 4 h, kabs 0.000215 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rilpivirine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average rpv clearance: this record has 11.7, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| clearance (CL) | `Q22` · CL | 11.7 | liters/h | 3.25e-06 | m3/s | l/h | exact (1) | Aouri_2017:abstract |
-| volume of distribution | `Q61` · V | 401 | liters | 0.401 | m3 | l | exact (1) | Aouri_2017:abstract |
+| average RPV clearance (CL) | `Q22` · CL | 11.7 | liters/h | 3.25e-06 | m3/s | l/h | llm_confirmed (0.6) | Aouri_2017:abstract |
+| average volume of distribution | `Q61` · V | 401 | liters | 0.401 | m3 | l | llm_confirmed (0.6) | Aouri_2017:abstract |
 | mean absorption time | `Q73` · MAT | 4 | h | 1.44e+04 | s | h | exact (1) | Aouri_2017:abstract |
-| KAgluteal (low) | `Q49` · kabs | 0.000215 | h−1 | 5.972e-08 | 1/s | 1/h | review_gapfill (0.7) | Han_2024:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -74,41 +68,31 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=rilpivirine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Han_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Aouri_2017_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss-120b` | partly confirmed | 0.5 (5/10 fields) | 5 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[average rpv clearance]` |  | 11.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[average volume of distribution]` |  | 401 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | 11.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[kagluteal]` | 0.000215 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean absorption time]` | 4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean absorption time]` |  | 4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 401 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | rilpivirine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | rilpivirine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[average rpv clearance]` | 11.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[average volume of distribution]` | 401 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 11.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[standard dosage]` |  | 25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 401 | only_one_extracted |
 
 </details>
 
@@ -126,7 +110,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Aouri_2017:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Han_2024:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Aouri_2017:abstract'] |
 | C5_dimension_Q73 | pass | [time] |  | ['Aouri_2017:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 11.7 | ['Aouri_2017:abstract'] |
@@ -141,10 +124,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=rilpivirine) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.182, 0 of 1 reader(s) agree | 0.182 | cross-check disputed by a second reader: verdict disputed, agreement 0.182, 0 of 1 reader(s) agree |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict partial; agreement 0.5 (5 of 10 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,15 +143,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_modelica.zip" download>Rilpivirine_Aouri2017_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_fmi.zip" download>Rilpivirine_Aouri2017_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_matlab.zip" download>Rilpivirine_Aouri2017_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_matlab_simbio.zip" download>Rilpivirine_Aouri2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_sbml.zip" download>Rilpivirine_Aouri2017_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_cellml.zip" download>Rilpivirine_Aouri2017_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_modelica.zip" download>Rilpivirine_Aouri2017_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_fmi.zip" download>Rilpivirine_Aouri2017_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_matlab.zip" download>Rilpivirine_Aouri2017_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_matlab_simbio.zip" download>Rilpivirine_Aouri2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_sbml.zip" download>Rilpivirine_Aouri2017_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_cellml.zip" download>Rilpivirine_Aouri2017_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 ## Model interface
@@ -178,20 +161,18 @@ The parameters this record sets on the template, in the template's SI units, and
 | direction | role | name | value | unit (SI) |
 |---|---|---|---|---|
 | input | compound | `MM` | 0.3664 | kg/mol |
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `F` | 1 | 1 |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 2.5e-05 | kg |
+| input | dosing | `adminMass` | 1.5e-05 | kg |
 | input | model | `Cl` | 3.25e-06 | m3/s |
 | input | model | `VdPerKg` | 0.005729 | m3/kg |
-| input | model | `ka` | 5.972e-08 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
 ## Tested with
 
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
 - Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
 - No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
@@ -214,14 +195,14 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 25 mg, single dose, first-order absorption (ka 0.000215 /h, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 25 mg oral (J05AG05) (defined daily dose)._
+**Administration: intravenous** — 15 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 15 mg parenteral (J05AG05) (defined daily dose)._
 
-<dbs-fmusim paramsurl="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference/Rilpivirine_Aouri2017_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Rilpivirine_Aouri2017_reference_params.json` · controls `Rilpivirine_Aouri2017_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Rilpivirine_Aouri2017_reference_params.json` · controls `Rilpivirine_Aouri2017_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brilpivirine%5D%20Rilpivirine_Aouri2017_reference&body=Drug%3A%20rilpivirine%0ARecord%3A%20Rilpivirine_Aouri2017_reference%0APaper%3A%20Aouri_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rilpivirine/Rilpivirine_Aouri2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:56 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Volume of distribution for sodium iothalamate is 0.008 mL, an implausibly low value causing the record to be rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit ml/min ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="iotalamic acid" model-id="IotalamicAcid_Groth1978_case_4" status="rejected" stale="false" population="adults with varying renal function" measured-compound="sodium iothalamate" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Groth T, Tengström B. The usefulness of 125I-sodium lothalamate as a GFR-indica
 
 ### Reviewer guidance
 
-**Volume of distribution for sodium iothalamate is 0.008 mL, an implausibly low value causing the record to be rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit ml/min ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The central compartment volume is listed as 0.008 mL, which is far below the physiological range for a 1-compartment model. This magnitude indicates a significant unit or scale extraction error. Additionally, a clearance parameter reached the review without a valid SI conversion due to a missing unit definition. Extracted — sodium iothalamate: CLR 107 mL/min, kel 0.021 min−1, k21 0.028 min−1, V 0.008 ml, CLint 82 ml/min, Vss 69 ml.
+A reported unit could not be converted (CLint), so that value has no SI equivalent. None of the extracted parameters is iotalamic acid's own; they describe sodium iothalamate. Extracted — sodium iothalamate: CLR 107 mL/min, kel 0.021 min−1, k21 0.028 min−1, V 0.008 ml, CLint 82 ml/min, Vss 69 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clin].parameter_id`: this record has Q3, the second reading Q22; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

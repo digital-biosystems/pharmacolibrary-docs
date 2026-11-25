@@ -47,7 +47,7 @@ Punyawudho B, Ramsay ER, Brundage RC, Macias FM, Collins JF, Birnbaum AK. Popula
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Reproduces paper: every check that could be run on this record passed.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of if taking pht: this record has 1.26, the second reading none. That field does not shape the model.
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_terminal | reference | pass | 19.7 | 19.69 | 0.9993 | hours→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 19.7 | 19.69 | 0.9993 | reported 19.7 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

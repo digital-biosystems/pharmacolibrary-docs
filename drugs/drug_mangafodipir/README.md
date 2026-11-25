@@ -27,7 +27,13 @@ Mangafodipir is a paramagnetic contrast medium used to enhance the quality of ma
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hirt_2009_reference](drugs/drug_mangafodipir/Mangafodipir_Hirt2009_reference.md) | — | 2-compartment (no model) | 5 | Hirt D et al., Pharmacokinetic-pharmacodynamic modelin…, Therapeutic drug monitoring (2009) | [10.1097/FTD.0b013e3181affd6d](https://doi.org/10.1097/FTD.0b013e3181affd6d) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Hirt_2009_reference](drugs/drug_mangafodipir/Mangafodipir_Hirt2009_reference.md) | — | general linear (no model) | 4 | Hirt D et al., Pharmacokinetic-pharmacodynamic modelin…, Therapeutic drug monitoring (2009) | [10.1097/FTD.0b013e3181affd6d](https://doi.org/10.1097/FTD.0b013e3181affd6d) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Hirt_2009_PT](drugs/drug_mangafodipir/pd_Hirt_2009_PT.md) | prothrombin time ← manganese · delayed effect through transit (transduction) compartments | — | Hirt D et al., Pharmacokinetic-pharmacodynamic modelin…, Therapeutic drug monitoring (2009) | [10.1097/FTD.0b013e3181affd6d](https://doi.org/10.1097/FTD.0b013e3181affd6d) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -41,7 +47,7 @@ Mangafodipir is a paramagnetic contrast medium used to enhance the quality of ma
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:07 | 1:23 | 0/1/0 | 0/0/0 | 0/0/0 | 15,209/6,887 | openai / gpt-6-luna | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 00:56 | 2:18 | 0/1/0 | 1/0/0 | 0/0/0 | 3,906/171 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -50,19 +56,19 @@ Mangafodipir is a paramagnetic contrast medium used to enhance the quality of ma
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
-## Full-text requests
+## Screened and excluded
 
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Hirt_2009.pdf` | Hirt D et al., Pharmacokinetic-pharmacodynamic modelin…, Therapeutic drug monitoring (2009) | popPK | 9 | [10.1097/FTD.0b013e3181affd6d](https://doi.org/10.1097/FTD.0b013e3181affd6d) | [19834427](https://pubmed.ncbi.nlm.nih.gov/19834427) | The study reports numeric two-compartment PK parameters for serum manganese after mangafodipir infusion. |
-
-<sub>queue written 2026-10-07 19:06 UTC</sub>
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Hirt_2009 | not_relevant | 0 | 10 | The paper reports pharmacokinetic and pharmacodynamic modeling of mangafodipir but does not investigate gene variants or genotypes as covariates. |
+| popPK | Southon_1997 | irrelevant | 2 | 0 | The study reports NMR relaxation rates (R1, R2) and tissue manganese concentrations for dosing/imaging optimization, not quantitative pharmacokinetic parameters (CL, V, Ka, t1/2) for mangafodipir. |
+| PGx | Southon_1997 | not_relevant | 0 | 0 | The paper compares the pharmacokinetics and MRI effects of MnDPDP vs MnCl2 in animals but does not investigate any gene variants or genotypes. |
+| popPK | Tofts_2010 | irrelevant | 1 | 0 | The study focuses on retinal MRI signal intensity and transfer constants (Ki) for Teslascan (mangafodipir), not on standard systemic pharmacokinetic parameters like clearance, volume, or half-life. |
+| PGx | Tofts_2010 | not_relevant | 0 | 0 | The paper studies Teslascan (Mn-DP-596) in rats, not mangafodipir, and contains no pharmacogenomic analysis. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmangafodipir%5D&body=Drug%3A%20mangafodipir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mangafodipir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 19:06 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 00:50 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The cilgavimab record was rejected for an unreachable compartment or unlinked metabolite, despite reporting total clearance of 13.7 mL/h.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Cilgavimab" model-id="Cilgavimab_Jansen2026_reference" status="rejected" stale="false" population="" measured-compound="cilgavimab" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Jansen E, Bockstal V, Herschke F, Olsson Gisleskog P, Rinaldi M, Boerboom A et a
 
 ### Reviewer guidance
 
-**The cilgavimab record was rejected for an unreachable compartment or unlinked metabolite, despite reporting total clearance of 13.7 mL/h.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The finding means a compartment or metabolite has no path from the dose; it does not specify which. The record also reports central and peripheral distribution volumes of 3620.0 mL and 4730.0 mL, while the second reader reported no values for these parameters or the clearance, and also disagreed on two other extracted values, 1.77 and 15.4. Extracted — cilgavimab: CL 13.7 mL/h, V1 3.62e+03 mL, V2 4.73e+03 mL.
+Extracted — cilgavimab: CL 13.7 mL/h, V1 3.62e+03 mL, V2 4.73e+03 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 13.7, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

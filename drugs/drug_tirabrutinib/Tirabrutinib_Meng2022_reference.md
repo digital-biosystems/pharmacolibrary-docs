@@ -16,9 +16,7 @@ Meng A, Humeniuk R, Jürgensmeier JM, Hsueh CH, Matzkies F, Grant E et al. Semi-
 
 ## Population and dosing
 
-**Population:** healthy volunteers and subjects with rheumatoid arthritis · condition healthy and rheumatoid arthritis · age group adult · n = 55.
-
-**Dosing:** 20, 320 mg, oral.
+**Population:** healthy volunteers and subjects with rheumatoid arthritis · condition rheumatoid arthritis · age group adult · n = 55.
 
 ## Model
 
@@ -32,11 +30,11 @@ Meng A, Humeniuk R, Jürgensmeier JM, Hsueh CH, Matzkies F, Grant E et al. Semi-
 
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
-| θ1 | equation variable | 58.4 |  | 4 |
+| θ2 | equation variable | 357 | L | 7 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6), qwen3.8-27b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,60 +46,85 @@ Meng A, Humeniuk R, Jürgensmeier JM, Hsueh CH, Matzkies F, Grant E et al. Semi-
 
 **The paper reports none of the model's key parameters.**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+No clearance, volume or rate constant of the model is reported in it. A reported unit could not be converted (equation variable), so that value has no SI equivalent. No parameter values were extracted.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of θ2: this record has none, the second reading 357. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θ1: this record has none, the second reading 62.6; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | RSE% | link | source |
-|---|---|---|---|---|---|---|
-| θ1 | `Q900` · equation variable | 58.4 |  | 4 | llm (0.6) | cpt2439-tbl-0003:row3:col2, cpt2439-tbl-0003:row3:col3, cpt2439-tbl-0003:row3:col4, cpt2439-tbl-0003:row3:col5, cpt2439-tbl-0003:row17:col2, cpt2439-tbl-0003:row17:col3, cpt2439-tbl-0003:row17:col4, cpt2439-tbl-0003:row17:col5 |
+| label (paper) | Q-code · name | value | unit | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|
+| θ2 | `Q900` · equation variable | 357 | L | l | 7 | llm (0.6) | cpt2439-tbl-0003:row4:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'parameter description' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped duplicate Q900 ('θ2', value '357') — already have one for this compound
-- dropped duplicate Q900 ('θ3', value None) — already have one for this compound
-- dropped duplicate Q900 ('θ4', value '65.7') — already have one for this compound
-- dropped unlinked row (NIL): 'θ5' — extend the ontology if this is a real PK parameter (source ['cpt2439-tbl-0003:row7:col2', 'cpt2439-tbl-0003:row7:col3', 'cpt2439-tbl-0003:row7:col4', 'cpt2439-tbl-0003:row7:col5', 'cpt2439-tbl-0003:row21:col2', 'cpt2439-tbl-0003:row21:col3', 'cpt2439-tbl-0003:row21:col4', 'cpt2439-tbl-0003:row21:col5'])
-- dropped duplicate Q900 ('θ6', value '0.465') — already have one for this compound
-- dropped duplicate Q900 ('√θ7', value '59.7') — already have one for this compound
-- dropped duplicate Q900 ('θ8', value '0.284') — already have one for this compound
-- dropped unlinked row (NIL): 'θ9' — extend the ontology if this is a real PK parameter (source ['cpt2439-tbl-0003:row11:col2', 'cpt2439-tbl-0003:row11:col3', 'cpt2439-tbl-0003:row11:col4', 'cpt2439-tbl-0003:row11:col5'])
-- dropped duplicate Q900 ('√θ6', value '86.5') — already have one for this compound
-- dropped unlinked row (NIL): 'θ7' — extend the ontology if this is a real PK parameter (source ['cpt2439-tbl-0003:row23:col2', 'cpt2439-tbl-0003:row23:col3', 'cpt2439-tbl-0003:row23:col4', 'cpt2439-tbl-0003:row23:col5'])
-- dropped duplicate Q900 ('√θ8', value '53.3') — already have one for this compound
-- dropped duplicate Q900 ('√θ9', value '73.9') — already have one for this compound
+- column 'final poppk model estimates (rse%)' classified 'rse' by the LLM but kept as the estimate: the header names the point value
+- table representations disagree for 'θ1'; source reconciliation required
+- table representations disagree for 'θ2'; source reconciliation required
+- table representations disagree for 'θ3'; source reconciliation required
+- table representations disagree for 'θ4'; source reconciliation required
+- table representations disagree for 'θ5'; source reconciliation required
+- table representations disagree for 'θ6'; source reconciliation required
+- table representations disagree for '√θ7'; source reconciliation required
+- table representations disagree for 'θ8'; source reconciliation required
+- table representations disagree for 'θ9'; source reconciliation required
+- table representations disagree for 'ω2 CL'; source reconciliation required
+- table representations disagree for 'ω2 VC'; source reconciliation required
+- table representations disagree for 'ω2 ka'; source reconciliation required
+- table representations disagree for 'ω2 CovCLVc'; source reconciliation required
+- table representations disagree for '√θ6'; source reconciliation required
+- table representations disagree for 'θ7'; source reconciliation required
+- table representations disagree for '√θ8'; source reconciliation required
+- table representations disagree for '√θ9'; source reconciliation required
+- table representations disagree for 'ω2 fBTK'; source reconciliation required
+- table representations disagree for 'ω2 tBTK'; source reconciliation required
+- table representations disagree for 'ω2 CovfBTK,tBTK'; source reconciliation required
+- dropped unlinked row (NIL): 'θ1' — extend the ontology if this is a real PK parameter (source ['cpt2439-tbl-0003:row3:col2', 'cpt2439-tbl-0003:row17:col2'])
+- dropped unlinked row (NIL): 'θ3' — extend the ontology if this is a real PK parameter (source ['cpt2439-tbl-0003:row5:col2', 'cpt2439-tbl-0003:row19:col2'])
+- dropped unlinked row (NIL): 'θ4' — extend the ontology if this is a real PK parameter (source ['cpt2439-tbl-0003:row6:col2', 'cpt2439-tbl-0003:row20:col2'])
+- dropped duplicate Q900 ('θ5', value '0.800') — already have one for this compound
+- dropped unlinked row (NIL): 'θ6' — extend the ontology if this is a real PK parameter (source ['cpt2439-tbl-0003:row8:col2'])
+- routed '√θ7' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- dropped duplicate Q900 ('θ8', value '0.285') — already have one for this compound
+- dropped unlinked row (NIL): 'θ9' — extend the ontology if this is a real PK parameter (source ['cpt2439-tbl-0003:row11:col2'])
+- dropped unlinked row (NIL): '√θ6' — extend the ontology if this is a real PK parameter (source ['cpt2439-tbl-0003:row22:col2'])
+- dropped duplicate Q900 ('θ7', value '16.1') — already have one for this compound
+- dropped duplicate Q900 ('√θ8', value '53.4') — already have one for this compound
+- dropped duplicate Q900 ('√θ9', value '74.1') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tirabrutinib
+- status held at "Needs review" — not promoted
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- unparsed cell cpt2439-tbl-0003:row7:col1 = 'Absorption rate constant, ka (h−1)'
-- unparsed cell cpt2439-tbl-0003:row21:col1 = 'Feedback rate constant on protein synthesis from BTK inhibition, ksyn (h−1)'
+- table cpt2439-tbl-0003: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.6 (6/10 fields) | 4 |
 | `qwen3.8-27b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[θ1]` |  | 62.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ2].parameter_id` | Q900 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[θ5]` |  | 0.800 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ6]` |  | 0.465 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[θ2]` |  | 357 | only_one_extracted |
 
 </details>
@@ -142,4 +165,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btirabrutinib%5D%20Tirabrutinib_Meng2022_reference&body=Drug%3A%20tirabrutinib%0ARecord%3A%20Tirabrutinib_Meng2022_reference%0APaper%3A%20Meng_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tirabrutinib/Tirabrutinib_Meng2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 08:21 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:12 UTC</sub>

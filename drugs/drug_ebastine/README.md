@@ -33,11 +33,9 @@ Ebastine is a systemic antihistamine used to treat allergic conditions. It is ad
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Kang_2011_LVDP](drugs/drug_ebastine/pd_Kang_2011_LVDP.md) | change in left ventricular developed pressure ← ebastine · direct Emax (saturable) effect | — | Kang W et al., Myocardial pharmacokinetics of ebastine…, British journal of pharmaco… (2011) | [10.1111/j.1476-5381.2011.01338.x](https://doi.org/10.1111/j.1476-5381.2011.01338.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Kang_2011_LVDP](drugs/drug_ebastine/pd_Kang_2011_LVDP.md) | left ventricular developed pressure ← ebastine · direct Emax (saturable) effect | — | Kang W et al., Myocardial pharmacokinetics of ebastine…, British journal of pharmaco… (2011) | [10.1111/j.1476-5381.2011.01338.x](https://doi.org/10.1111/j.1476-5381.2011.01338.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Ohtani_1999_QT](drugs/drug_ebastine/pd_Ohtani_1999_QT.md) | QT prolongation ← Ebastine · delayed effect through an effect compartment | — | Ohtani H et al., Pharmacokinetic-pharmacodynamic analysi…, Biopharmaceutics & drug dis… (1999) | [10.1002/(sici)1099-081x(199903)20:2&lt;101::aid-bdd160&gt;3.0.co;2-l](https://doi.org/10.1002/(sici)1099-081x(199903)20:2&lt;101::aid-bdd160&gt;3.0.co;2-l) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Vatansever_2021_Mpro](drugs/drug_ebastine/pd_Vatansever_2021_Mpro.md) | Mpro activity ← ebastine · direct sigmoid Emax (Hill) effect | — | Vatansever EC et al., Bepridil is potent against SARS-CoV-2 i…, Proceedings of the National… (2021) | [10.1073/pnas.2012201118](https://doi.org/10.1073/pnas.2012201118) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Ohtani_1999_QT](drugs/drug_ebastine/pd_Ohtani_1999_QT.md) | QT prolongation ← ebastine · delayed effect through an effect compartment | — | Ohtani H et al., Pharmacokinetic-pharmacodynamic analysi…, Biopharmaceutics & drug dis… (1999) | [10.1002/(sici)1099-081x(199903)20:2&lt;101::aid-bdd160&gt;3.0.co;2-l](https://doi.org/10.1002/(sici)1099-081x(199903)20:2&lt;101::aid-bdd160&gt;3.0.co;2-l) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Desager_1995_pharmacokinetic_pharmacodynamic_relationship](drugs/drug_ebastine/pd_Desager_1995_pharmacokinetic_pharmacodynamic_relationship.md) | pharmacokinetic-pharmacodynamic relationship · direct linear effect | — | Desager JP et al., Pharmacokinetic-pharmacodynamic relatio…, Clinical pharmacokinetics (1995) | [10.2165/00003088-199528050-00006](https://doi.org/10.2165/00003088-199528050-00006) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Desager_1995_pharmacokinetic_pharmacodynamic_relationship_2](drugs/drug_ebastine/pd_Desager_1995_pharmacokinetic_pharmacodynamic_relationship_2.md) | pharmacokinetic-pharmacodynamic relationship · model not identified | — | Desager JP et al., Pharmacokinetic-pharmacodynamic relatio…, Clinical pharmacokinetics (1995) | [10.2165/00003088-199528050-00006](https://doi.org/10.2165/00003088-199528050-00006) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +49,7 @@ Ebastine is a systemic antihistamine used to treat allergic conditions. It is ad
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 23:26 | 2:18 | 0/1/0 | 3/2/0 | 0/0/0 | 51,526/11,364 | openai / gpt-6-luna | 2 | 1/1 | 2/0 | 0 |
+| 2026-11-23 20:51 | 0:12 | 0/1/0 | 3/0/0 | 0/0/0 | 5,851/1,480 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## Coverage
 
@@ -60,12 +58,25 @@ Ebastine is a systemic antihistamine used to treat allergic conditions. It is ad
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Ohtani_1999.pdf` | Ohtani H et al., Pharmacokinetic-pharmacodynamic analysi…, Biopharmaceutics & drug dis… (1999) | popPK | 8 | [10.1002/(sici)1099-081x(199903)20:2&lt;101::aid-bdd160&gt;3.0.co;2-l](https://doi.org/10.1002/(sici)1099-081x(199903)20:2<101::aid-bdd160>3.0.co;2-l) | [10206325](https://pubmed.ncbi.nlm.nih.gov/10206325) | The study describes a PK-PD analysis of ebastine in rats and reports PD parameters (EC50, Emax), but the specific quantitative PK parameters (CL, V, ka) are not listed in the provided evidence text. |
+
+<sub>queue written 2026-11-23 20:51 UTC</sub>
+
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Desager_1995 | irrelevant | 2 | 0 | This review mentions nonlinear ebastine pharmacokinetics in dogs but provides no numeric disposition parameters. |
-| popPK | Ohtani_1999 | irrelevant | 2 | 0 | Rat ebastine concentrations were measured, but the reported values are pharmacodynamic effect parameters, not disposition parameters. |
+| popPK | Desager_1995 | irrelevant | 1 | 0 | This is a review article summarizing PK-PD relationships for multiple antihistamines and lacks specific quantitative PK parameter values (CL, V, ka) for ebastine in the provided evidence. |
+| PGx | Desager_1995 | not_relevant | 0 | 0 | The paper reviews PK/PD relationships but does not report effects of gene variants or genotypes on ebastine pharmacokinetics or pharmacodynamics. |
+| PGx | Kang_2011 | not_relevant | 0 | 0 | The study investigates cardiac pharmacokinetics in rat isolated hearts without examining any gene variants or genotypes. |
+| popPK | Ohtani_1999 | relevant | 8 | 0 | The study describes a PK-PD analysis of ebastine in rats and reports PD parameters (EC50, Emax), but the specific quantitative PK parameters (CL, V, ka) are not listed in the provided evidence text. |
+| PGx | Ohtani_1999 | not_relevant | 0 | 0 | The paper investigates the PK/PD profile of ebastine in rats but does not report any pharmacogenomic effects based on gene variants or genotypes. |
 | popPK | Vatansever_2021 | irrelevant | 0 | 0 | Ebastine is tested as an in-vitro protease inhibitor, with no quantitative pharmacokinetic disposition parameters reported. |
 
 
@@ -73,4 +84,4 @@ Ebastine is a systemic antihistamine used to treat allergic conditions. It is ad
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bebastine%5D&body=Drug%3A%20ebastine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ebastine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 23:24 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 12:00 UTC</sub>

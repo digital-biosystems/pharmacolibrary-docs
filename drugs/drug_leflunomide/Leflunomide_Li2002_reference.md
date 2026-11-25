@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Leflunomide record rejected because the elimination rate constant for A771726 is reported as 211 h instead of a rate constant.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="leflunomide" model-id="Leflunomide_Li2002_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="A771726" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Li J, Yao HW, Jin Y, Zhang YF, Li CY, Li YH et al. Pharmacokinetics of leflunomi
 
 ### Reviewer guidance
 
-**Leflunomide record rejected because the elimination rate constant for A771726 is reported as 211 h instead of a rate constant.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].**
 
-The parameter identified as the elimination rate constant (kel) for A771726 has a value of 211 with units of hours, which is dimensionally a time constant rather than a rate. This conflicts with the required dimension of inverse time for a first-order elimination rate constant. The record was built from abstract-only summary statistics, and a second reader disagreed on the assignment of Tmax and Cmax values to the parent and metabolite. Extracted — A771726: kel 211 h, Cmax 41.5 mg/L, tmax 307 h; leflunomide: tmax 13 h, Cmax 2 mg/L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — A771726: kel 211 h, Cmax 41.5 mg/L, tmax 307 h; leflunomide: tmax 13 h, Cmax 2 mg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cmax: this record has 2.0, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

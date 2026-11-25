@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The record was rejected because the peripheral compartment lacks a defined linkage to the central compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2017_reference" status="rejected" stale="false" population="" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Kobuchi S, Ito Y, Sakaeda T. Population Pharmacokinetic-Pharmacodynamic Modeling
 
 ### Reviewer guidance
 
-**The record was rejected because the peripheral compartment lacks a defined linkage to the central compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure specifies two compartments, but the review identified the peripheral compartment as an orphan with no path from the dose. Although central and peripheral volumes were provided, the missing structural connection renders the model topologically invalid. Extracted — fluorouracil: CL 2.5 L/h/kg, V1 0.39 L/kg, V2 0.59 L/kg.
+Extracted — fluorouracil: CL 2.5 L/h/kg, V1 0.39 L/kg, V2 0.59 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 2.5, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

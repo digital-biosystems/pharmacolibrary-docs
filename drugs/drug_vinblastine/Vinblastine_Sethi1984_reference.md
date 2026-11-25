@@ -157,10 +157,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_beta | reference | fail | 3.15 | 1.839 | 0.5839 | min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 3.15 | 1.839 | 0.5839 | reported 189.0 min→SI vs simulated h |
 | T1_t_half_beta | reference | skipped | 175 | 1.839 |  | unresolved time unit 'rain' |
-| T1_t_half_beta | reference | fail | 2.533 | 1.839 | 0.7261 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | skipped |  | 1.839 |  | non-numeric value |
+| T1_t_half_beta | reference | fail | 2.533 | 1.839 | 0.7261 | reported 152.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 1.839 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

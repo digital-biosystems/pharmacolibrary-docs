@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the metabolite 4-hydroxycyclophosphamide is orphaned, lacking a defined path from the dose of thiotepa.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="thiotepa" model-id="Thiotepa_de2004_reference" status="rejected" stale="false" population="patients receiving high-dose chemotherapy" measured-compound="thiotepa" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -45,13 +45,13 @@ de Jonge ME, Huitema AD, Rodenhuis S, Beijnen JH. Integrated Population Pharmaco
 
 ### Reviewer guidance
 
-**The record was rejected because the metabolite 4-hydroxycyclophosphamide is orphaned, lacking a defined path from the dose of thiotepa.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defines a metabolism link from cyclophosphamide to 4-hydroxycyclophosphamide, but cyclophosphamide is not part of the dosed drug or its direct metabolites. Additionally, the record was built from the abstract alone, so the reported elimination rate constant of 0.0343 hr(-1) and half-life of 20 hr stand in for a fitted model. Extracted — thiotepa: kel 0.0343 hr(-1), t1/2z 20 hr.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — thiotepa: kel 0.0343 hr(-1), t1/2z 20 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has thiotepa, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

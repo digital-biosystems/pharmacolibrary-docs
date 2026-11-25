@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The extracted volume of distribution for sumatriptan is 200.0 microliters, a physiologically implausible magnitude indicating a unit or scale error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="sumatriptan" model-id="Sumatriptan_Fox2010_reference" status="rejected" stale="false" population="adults with migraine" measured-compound="sumatriptan" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Fox AW. Subcutaneous sumatriptan pharmacokinetics: delimiting the monoamine oxid
 
 ### Reviewer guidance
 
-**The extracted volume of distribution for sumatriptan is 200.0 microliters, a physiologically implausible magnitude indicating a unit or scale error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The volume of distribution is recorded as 200.0 microliters, which is orders of magnitude too small for an adult human pharmacokinetic parameter. This value is outside the physiological window, suggesting a unit conversion or extraction error. The record was also based on the abstract alone, so the summary statistics do not represent a fitted model. Extracted — sumatriptan: AUC 97.4 ng.hour/mL, V 200 μL.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sumatriptan: AUC 97.4 ng.hour/mL, V 200 μL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sumatriptan, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

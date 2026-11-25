@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> Semaglutide record rejected because Guo_2023 models another drug; absorption parameters ka and Tlag are defaulted, not reported.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Guo2023_reference" status="rejected" stale="false" population="healthy adults" measured-compound="semaglutide" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Guo W, Xu Z, Zou H, Li F, Li Y, Feng J et al. Discovery of ecnoglutide - A novel
 
 ### Reviewer guidance
 
-**Semaglutide record rejected because Guo_2023 models another drug; absorption parameters ka and Tlag are defaulted, not reported.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The paper Guo_2023 is identified as not modeling semaglutide, causing a fundamental analyte identity mismatch despite the listed parameters. The absorption rate constant ka and lag time Tlag were substituted with defaults because the source did not report explicit estimates. A second reader disputed the record, citing conflicting values for several parameters including a discrepancy of 13.2773 versus 10.6958 for a volume-related value. Extracted — semaglutide: CL/F 0.0575 L/hr, V/F 13.3 L.
+Extracted — semaglutide: CL/F 0.0575 L/hr, V/F 13.3 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q174: this record has 1.9248, the second reading 1.7192; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.571 (8 of 14 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.571 | cross-check contradicted by a second reader: verdict disputed; agreement 0.571 (8 of 14 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

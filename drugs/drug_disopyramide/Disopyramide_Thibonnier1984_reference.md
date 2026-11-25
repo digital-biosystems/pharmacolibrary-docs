@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The disopyramide record was rejected because the elimination rate constant and unbound clearance were both extracted, causing a double correction error in the model.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="disopyramide" model-id="Disopyramide_Thibonnier1984_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="disopyramide" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Thibonnier M, Holford NH, Upton RA, Blume CD, Williams RL. Pharmacokinetic-pharm
 
 ### Reviewer guidance
 
-**The disopyramide record was rejected because the elimination rate constant and unbound clearance were both extracted, causing a double correction error in the model.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The record lists both an elimination rate constant of 0.0033 min⁻¹ and an unbound clearance of 0.86 l/min. The presence of both parameters in a single-compartment model structure creates a double correction violation. Additionally, the percentage unit for the gut-wall bioavailability parameter could not be converted to standard SI units. Extracted — disopyramide: V/F 266 l, kel 0.0033 min⁻¹, tlag 22 min, CLu 0.86 l/min, t1/2z 218 min, Fab 0.04, FG 83 %.
+A reported unit could not be converted (FG), so that value has no SI equivalent. Extracted — disopyramide: V/F 266 l, kel 0.0033 min⁻¹, tlag 22 min, CLu 0.86 l/min, t1/2z 218 min, Fab 0.04, FG 83 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has disopyramide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

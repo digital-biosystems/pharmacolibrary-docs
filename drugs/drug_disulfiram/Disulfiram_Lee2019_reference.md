@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Disulfiram was held because its nonlinear metabolism topology uses Vmax/Km, whose value is not reported, and falls outside the available model structures.
+> nonlinear topology.
 
-<div class="pk-model-meta" hidden drug="disulfiram" model-id="Disulfiram_Lee2019_reference" status="needs_review" stale="false" population="HIV+ ART-suppressed adults" measured-compound="disulfiram" parameterization="mechanistic" topology="manual_model_class"></div>
+<div class="pk-model-meta" hidden drug="disulfiram" model-id="Disulfiram_Lee2019_reference" status="needs_review" stale="false" population="HIV+ antiretroviral therapy (ART)-suppressed participants" measured-compound="disulfiram" parameterization="mechanistic" topology="manual_model_class"></div>
 
 ## Citation
 Lee SA, Elliott JH, McMahon J, Hartogenesis W, Bumpus NN, Lifson JD et al. Population Pharmacokinetics and Pharmacodynamics of Disulfiram on Inducing Latent HIV-1 Transcription in a Phase IIb Trial. Clinical pharmacology and therapeutics 105(3):692–702 (2019).
@@ -16,7 +16,7 @@ Lee SA, Elliott JH, McMahon J, Hartogenesis W, Bumpus NN, Lifson JD et al. Popul
 
 ## Population and dosing
 
-**Population:** HIV+ ART-suppressed adults · condition HIV infection (ART-suppressed) · age group adult · n = 30.
+**Population:** HIV+ antiretroviral therapy (ART)-suppressed participants · condition HIV · age group adult · n = 30.
 
 **Dosing:** 500, 1000, 2000 mg, oral, multiple, every 24 h.
 
@@ -48,13 +48,13 @@ Lee SA, Elliott JH, McMahon J, Hartogenesis W, Bumpus NN, Lifson JD et al. Popul
 
 ### Reviewer guidance
 
-**Disulfiram was held because its nonlinear metabolism topology uses Vmax/Km, whose value is not reported, and falls outside the available model structures.**
+**nonlinear topology.**
 
-The record links disulfiram through four sequential metabolites; the first two metabolism links use Vmax/Km, while no value for that parameter is given. The stated limitation is the nonlinear model structure, not a reported failure of disulfiram’s clearance (0.53 L/hr), volume (1.3 L), or absorption rate constant (0.08 hr−1). The second reader gives fuller metabolite names but describes the same sequence. Extracted — disulfiram: CL 0.53 L/hr, V 1.3 L, kabs 0.08 hr−1.
+Extracted — disulfiram: CL 0.53 L/hr, V 1.3 L, kabs 0.08 hr−1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has disulfiram → ddtc (m1) (metabolism); ddtc (m1) → ddtc-me (m2) (metabolism); ddtc-me (m2) → detc-meso (m3) (metabolism) …, the second reading disulfiram → n,n-diethyldithiocarbamate (ddtc) (metabolism); n,n-diethyldithiocarbamate (ddtc) → diethyldithiocarbamate-methyl ester (ddtc-me) (metabolism); diethyldithiocarbamate-methyl ester (ddtc-me) → s-methyl-n,n-diethylthiolcarbamate sulfoxide (detc-meso) (metabolism) …. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has disulfiram → n,n-diethyldithiocarbamate (metabolism); n,n-diethyldithiocarbamate → diethyldithiocarbamate-methyl ester (metabolism); diethyldithiocarbamate-methyl ester → s-methyl-n,n-diethylthiolcarbamate sulfoxide (metabolism) …, the second reading disulfiram → n,n-diethyldithiocarbamate (ddtc) (metabolism); n,n-diethyldithiocarbamate (ddtc) → diethyldithiocarbamate-methyl ester (ddtc-me) (metabolism); diethyldithiocarbamate-methyl ester (ddtc-me) → s-methyl-n,n-diethylthiolcarbamate sulfoxide (detc-meso) (metabolism) …. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -72,18 +72,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'CL/F (L/hr)b'
-- dropped value-less row: 'CLintrinsic (L/hr)b'
-- dropped value-less row: 'V (L)c'
-- dropped value-less row: 'Km (ng/mL)d'
-- dropped value-less row: 'Ka (hr−1)e'
-- dropped value-less row: 'Qf'
-- dropped value-less row: 'Vperiph (L)g'
-- dropped value-less row: 'Additive RE (ng/mL)' (captured trailing unit 'ng/mL' for child rows)
-- dropped value-less row: 'Proportional RE (%)' (captured trailing unit '%' for child rows)
-- dropped value-less row: 'BV (%) in CL/F'
-- dropped value-less row: 'Table 3.. Final PK model estimates for median AUC0–72 exposure to metabolites by dosing cohort.'
-- dropped value-less row: 'Abbreviations: DSF = parent drug, disulfiram; M1 = metabolite 1; M2 = metabolite 2; M3 = metabolite 3; M4 = metabolite 4; DSF = disulfiram; DDTC = N,N-diethyldithiocarbamate; DDTC = diethyldithiocarbamate-methyl ester; DDTC-MeSO = S-methyl-N,N-diethylthiolcarbamate sulfoxide.'
 - salvaged Q22 ('clearance'=0.53) from results prose — parameter table was unreadable
 - salvaged Q61 ('volume of distribution'=1.3) from results prose — parameter table was unreadable
 - salvaged Q49 ('absorption constant'=0.08) from results prose — parameter table was unreadable
@@ -93,23 +81,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 - topology: prose indicates saturable/MM/TMDD/time-varying kinetics — manual_model_class
 - template fit: none — nonlinear / manual model class
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 12/12 row label(s) assigned, 13 linked by role; re-tagged disulfiram→parent ×4, parent→DDTC (M1) ×1
-- molar mass: no plausible PubChem entry for 'carbamathione (M4)' ('carbamathione') — left in mass units
-- molar mass: none of 1 PubChem candidate(s) is 'DETC-MeSO (M3)' (LLM) — left in mass units
-- molar mass: none found for 'DETC-MeSO (M3)' — its concentrations stay mass-only
-- molar mass: none found for 'carbamathione (M4)' — its concentrations stay mass-only
+- molar mass: no plausible PubChem entry for 'carbamathione' ('carbamathione') — left in mass units
+- molar mass: none found for 'carbamathione' — its concentrations stay mass-only
 - skipped review gap-fill of V2: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
+- table T3: ambiguous_numeric_format
+- final table T3: no supported point estimates; targeted recovery unresolved
+- table Lee_2019_table_2: unbound_uncertainty
 - companion parameter table 2 transcribed (26 record(s))
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -119,7 +107,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['disulfiram', 'ddtc (m1)', 'metabolism'], ['ddtc (m1)', 'ddtc-me (m2)', 'metabolism'], ['ddtc-me (m2)', 'detc-meso (m3)', 'metabolism'], ['detc-meso (m3)', 'carbamathione (m4)', 'metabolism']] | [['disulfiram', 'n,n-diethyldithiocarbamate (ddtc)', 'metabolism'], ['n,n-diethyldithiocarbamate (ddtc)', 'diethyldithiocarbamate-methyl ester (ddtc-me)', 'metabolism'], ['diethyldithiocarbamate-methyl ester (ddtc-me)', 's-methyl-n,n-diethylthiolcarbamate sulfoxide (detc-meso)', 'metabolism'], ['s-methyl-n,n-diethylthiolcarbamate sulfoxide (detc-meso)', 'carbamathione', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.links` | [['disulfiram', 'n,n-diethyldithiocarbamate', 'metabolism'], ['n,n-diethyldithiocarbamate', 'diethyldithiocarbamate-methyl ester', 'metabolism'], ['diethyldithiocarbamate-methyl ester', 's-methyl-n,n-diethylthiolcarbamate sulfoxide', 'metabolism'], ['s-methyl-n,n-diethylthiolcarbamate sulfoxide', 'carbamathione', 'metabolism']] | [['disulfiram', 'n,n-diethyldithiocarbamate (ddtc)', 'metabolism'], ['n,n-diethyldithiocarbamate (ddtc)', 'diethyldithiocarbamate-methyl ester (ddtc-me)', 'metabolism'], ['diethyldithiocarbamate-methyl ester (ddtc-me)', 's-methyl-n,n-diethylthiolcarbamate sulfoxide (detc-meso)', 'metabolism'], ['s-methyl-n,n-diethylthiolcarbamate sulfoxide (detc-meso)', 'carbamathione', 'metabolism']] | mismatch |
 
 </details>
 
@@ -173,4 +161,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdisulfiram%5D%20Disulfiram_Lee2019_reference&body=Drug%3A%20disulfiram%0ARecord%3A%20Disulfiram_Lee2019_reference%0APaper%3A%20Lee_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_disulfiram/Disulfiram_Lee2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:19 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 12:35 UTC</sub>

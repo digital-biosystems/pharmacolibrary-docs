@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;idarubicin&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/&quot;},{&quot;label&quot;:&quot;Kuhlmann_2001 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Idarubicin_Kuhlmann2001_reference&quot;,&quot;label&quot;:&quot;Kuhlmann_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Idarubicin_Tamura1996_reference&quot;,&quot;label&quot;:&quot;Tamura_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Tamura1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Meg_as_Vericat_2019_LPC&quot;,&quot;label&quot;:&quot;Meg\u00edas-Vericat_2019 \u00b7 LPC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/pd_Meg_as_Vericat_2019_LPC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Idarubicin_Tamura1996_reference&quot;,&quot;label&quot;:&quot;Tamura_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Tamura1996_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Idarubicin_Kuhlmann2001_reference&quot;,&quot;label&quot;:&quot;Kuhlmann_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Meg_as_Vericat_2019_LPC&quot;,&quot;label&quot;:&quot;Meg\u00edas-Vericat_2019 \u00b7 LPC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/pd_Meg_as_Vericat_2019_LPC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # idarubicin — `Idarubicin_Kuhlmann2001_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Idarubicin clearance (27.0 ml/min) is disputed because the second reader rejected the abstract-derived 1-compartment structure and missing metabolite link.
+> T3_output_variable; t3_topology_template (+1 more).
 
-<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Kuhlmann2001_reference" status="needs_review" stale="false" population="rats" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Kuhlmann2001_reference" status="rejected" stale="false" population="rats" measured-compound="idarubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Kuhlmann O, Hofmann S, Weiss M. Pharmacokinetics and toxicity of idarubicin in the rat. European journal of drug metabolism and pharmacokinetics 26(4):215–219 (2001).
@@ -17,7 +17,7 @@ Kuhlmann O, Hofmann S, Weiss M. Pharmacokinetics and toxicity of idarubicin in t
 
 ## Population and dosing
 
-**Population:** rats.
+**Population:** rats · condition healthy · age group adult.
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -31,17 +31,17 @@ Kuhlmann O, Hofmann S, Weiss M. Pharmacokinetics and toxicity of idarubicin in t
 <figure class="pk-models-diagram"><img src="drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference/Idarubicin_Kuhlmann2001_reference.svg" alt="Idarubicin_Kuhlmann2001_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL | CL | 27.0 | ml min(-1) |
-| MDRT | MRT | 519.2 | min |
-| Vss | Vss | 12.51 | L |
+| clearance | CL | 27.0 | ml min(-1) |
+| mean disposition residence time | MRT | 519.2 | min |
+| volume of distribution at steady state | Vss | 12.51 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3), qwen3.8-27b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,21 +51,21 @@ Kuhlmann O, Hofmann S, Weiss M. Pharmacokinetics and toxicity of idarubicin in t
 
 ### Reviewer guidance
 
-**Idarubicin clearance (27.0 ml/min) is disputed because the second reader rejected the abstract-derived 1-compartment structure and missing metabolite link.**
+**T3_output_variable; t3_topology_template (+1 more).**
 
-The record derives from the abstract only, using total clearance 27.0 ml/min and steady-state volume 12.51 L to define a 1-compartment model. The second reader disagreed on the model structure, insisting on a metabolism link to idarubicinol, and marked the extracted parameter values as null in its review. This structural and parameter disagreement resulted in a cross-check agreement ratio of 0.3. Extracted — idarubicin: CL 27 ml min(-1), MRT 519 min, Vss 12.5 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — idarubicin: CL 27 ml min(-1), MRT 519 min, Vss 12.5 L.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has none, the second reading idarubicin → idarubicinol (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has idarubicin → idarubicinol (metabolism), the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 27.0 | ml min(-1) | 4.5e-07 | m3/s | ml/min | exact (1) | Kuhlmann_2001:abstract |
-| MDRT | `Q53` · MRT | 519.2 | min | 3.115e+04 | s | min | llm (0.6) | Kuhlmann_2001:abstract |
-| Vss | `Q65` · Vss | 12.51 | L | 0.01251 | m3 | L | exact (1) | Kuhlmann_2001:abstract |
+| clearance | `Q22` · CL | 27.0 | ml min(-1) | 4.5e-07 | m3/s | ml/min | exact (1) | Kuhlmann_2001:abstract |
+| mean disposition residence time | `Q53` · MRT | 519.2 | min | 3.115e+04 | s | min | llm (0.6) | Kuhlmann_2001:abstract |
+| volume of distribution at steady state | `Q65` · Vss | 12.51 | L | 0.01251 | m3 | L | llm_corrected (0.6) | Kuhlmann_2001:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,28 +78,38 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the link
 - `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
 
 **Interpretation flags:**
-- implicit units: 'Vss' → L (from the popPK convention: 'Vss is a volume of distribution; population PK volumes are commonly reported in L, and 12.51 is consistent with that uni')
+- implicit units: 'volume of distribution at steady state' → L (from the popPK convention: 'No unit is provided in the text or table. By standard population PK convention, volume of distribution at steady state i')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=idarubicin
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- row roles (LLM): model_class=noncompartmental; 3/3 row label(s) assigned, 1 linked by role; re-tagged idarubicin→parent ×3
+- molar mass: none found for 'idarubicinol' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Kuhlmann_2001_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 | `qwen3.8-27b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>14 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['idarubicin', 'idarubicinol', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[clearance]` | 27.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 27.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean disposition residence time]` | 519.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean disposition residence time]` |  | 519.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` | 12.51 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` |  | 12.51 | only_one_extracted |
 | `qwen3.8-27b` | `model.links` | [] | [['idarubicin', 'idarubicinol', 'metabolism']] | mismatch |
 | `qwen3.8-27b` | `parameters[cl]` | 27.0 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[clearance (cl]` |  | 27.0 | only_one_extracted |
@@ -137,11 +147,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=idarubicin) | central.C |  | output must be the measured/analyte compartment |
+| T3_output_variable | fail | Metabolite_C (measured=idarubicin) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.3, 0 of 1 reader(s) agree | 0.3 | cross-check disputed by a second reader: verdict disputed, agreement 0.3, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.3 (3 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.3 | cross-check contradicted by a second reader: verdict disputed; agreement 0.3 (3 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -153,59 +164,9 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference/Idarubicin_Kuhlmann2001_reference_modelica.zip" download>Idarubicin_Kuhlmann2001_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference/Idarubicin_Kuhlmann2001_reference_fmi.zip" download>Idarubicin_Kuhlmann2001_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference/Idarubicin_Kuhlmann2001_reference_matlab.zip" download>Idarubicin_Kuhlmann2001_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference/Idarubicin_Kuhlmann2001_reference_matlab_simbio.zip" download>Idarubicin_Kuhlmann2001_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference/Idarubicin_Kuhlmann2001_reference_sbml.zip" download>Idarubicin_Kuhlmann2001_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference/Idarubicin_Kuhlmann2001_reference_cellml.zip" download>Idarubicin_Kuhlmann2001_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.4975 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 4.5e-07 | m3/s |
-| input | model | `VdPerKg` | 0.0001787 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Kuhlmann O, Hofmann S, Weiss M. Pharmacokinetics and toxicity of idarubicin in the rat. European journal of drug metabolism and pharmacokinetics 26(4):215–219 (2001). [doi:10.1007/BF03226374](https://doi.org/10.1007/BF03226374)
-
-**This record:** Pharmacolibrary, model `Idarubicin_Kuhlmann2001_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference>
-
-```bibtex
-@misc{pharmacolibrary_IdarubicinKuhlmann2001reference,
-  title  = {{Pharmacolibrary model Idarubicin_Kuhlmann2001_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference},
-  note   = {Parameters from doi:10.1007/BF03226374},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -219,4 +180,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bidarubicin%5D%20Idarubicin_Kuhlmann2001_reference&body=Drug%3A%20idarubicin%0ARecord%3A%20Idarubicin_Kuhlmann2001_reference%0APaper%3A%20Kuhlmann_2001%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:01 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:17 UTC</sub>

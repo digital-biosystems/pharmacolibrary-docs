@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Candesartan covariate effects for weight and eGFR were not simulated, and a second reader disagreed with the model classification.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="candesartan" model-id="Candesartan_Kassem2021_final_model" status="needs_review" stale="false" population="patients with chronic heart failure" measured-compound="candesartan" parameterization="apparent" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Kassem I, Sanche S, Li J, Bonnefois G, Dubé MP, Rouleau JL et al. Population Ph
 
 ### Reviewer guidance
 
-**Candesartan covariate effects for weight and eGFR were not simulated, and a second reader disagreed with the model classification.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The record defines covariate effects for weight (0.963) and eGFR (0.56), but only the reference individual was simulated, leaving these effects unexercised. Additionally, a second reader disputed the record's classification, disagreeing on the dose compound and primary analyte. This resulted in a disputed verdict with an agreement ratio of 0.818. Extracted — candesartan: CL/F 8.63 L/h, V/F 12.5 L, kabs 0.131 h -1, tlag 0.165 h.
+The base model was simulated, not the covariate effects the record defines. Extracted — candesartan: CL/F 8.63 L/h, V/F 12.5 L, kabs 0.131 h -1, tlag 0.165 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has candesartan, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,8 +152,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | cross-check disputed by a second reader: verdict disputed, agreement 0.818, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | pass | 6.2 | 5.291 | 0.8534 | hours→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.818 (9 of 11 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | cross-check contradicted by a second reader: verdict disputed; agreement 0.818 (9 of 11 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | pass | 6.2 | 5.291 | 0.8534 | reported 6.2 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

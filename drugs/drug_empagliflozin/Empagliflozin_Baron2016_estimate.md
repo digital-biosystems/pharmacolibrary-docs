@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Empagliflozin’s volume of distribution and absorption lag time had no extracted values, so placeholders caused the model to be held back.
+> No value for empagliflozin's volume of distribution and absorption lag time; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="empagliflozin" model-id="Empagliflozin_Baron2016_estimate" status="model_quarantined" stale="false" population="patients with type 2 diabetes" measured-compound="empagliflozin" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Baron KT, Macha S, Broedl UC, Nock V, Retlich S, Riggs M. Population Pharmacokin
 
 ### Reviewer guidance
 
-**Empagliflozin’s volume of distribution and absorption lag time had no extracted values, so placeholders caused the model to be held back.**
+**No value for empagliflozin's volume of distribution and absorption lag time; t6_deviations.**
 
-No value for empagliflozin's volume of distribution and absorption lag time. The model was built, but empagliflozin's volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The builder also assumed F=1 and Fm=1, with no molar correction; a reported unit could not be converted to SI, leaving its parameter without an SI value. Readers disagreed over whether ALAG1 was 0.500 h or absent, and the second reader marked the dose compound and primary analyte as unknown. Extracted — empagliflozin: CL 0.011 L/h, V2 1.27 L, Q/F 6.34 L/h, V3 0.959 L, kabs 1.23 1/h.
+The model was built, but empagliflozin's volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — empagliflozin: CL 0.011 L/h, V2 1.27 L, Q/F 6.34 L/h, V3 0.959 L, kabs 1.23 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has empagliflozin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

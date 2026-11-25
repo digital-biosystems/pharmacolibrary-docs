@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F and lag time Tlag were left at library defaults rather than estimated, so the record was held for review.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Yates2001_reference" status="needs_review" stale="false" population="adults with acute respiratory distress syndrome" measured-compound="methylprednisolone" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Yates CR, Vysokanov A, Mukherjee A, Ludden TM, Tolley E, Meduri GU et al. Time-v
 
 ### Reviewer guidance
 
-**Bioavailability F and lag time Tlag were left at library defaults rather than estimated, so the record was held for review.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-Only the abstract was read, so the extracted values (CL 13.2 L/h, Vd 137 L, fu 72%, Ka 0.35 1/h) are summary statistics standing in for a fitted model. The record is marked mechanistic, but the second reader called the parameterization apparent and disagreed on several fields, including a clmax of 25.0 and a t50 of 41.1 that this record left null. Because the source is abstract-only and the bioavailability defaults are unsupported by the paper, the cross-check agreement was only 0.417 with zero readers in agreement. Extracted — methylprednisolone: CL 13.2 L/h, V 137 L, fu 72 %, kabs 0.35 1/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — methylprednisolone: CL 13.2 L/h, V 137 L, fu 72 %, kabs 0.35 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.417, 0 of 1 reader(s) agree | 0.417 | cross-check disputed by a second reader: verdict disputed, agreement 0.417, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.417 (5 of 12 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.417 | cross-check contradicted by a second reader: verdict disputed; agreement 0.417 (5 of 12 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

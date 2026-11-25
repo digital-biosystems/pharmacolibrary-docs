@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;aminohippuric acid&quot;,&quot;href&quot;:&quot;drugs/drug_aminohippuric_acid/&quot;},{&quot;label&quot;:&quot;Estelberger_1995 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminohippuricAcid_Kinowski1995_reference&quot;,&quot;label&quot;:&quot;Kinowski_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminohippuric_acid/AminohippuricAcid_Kinowski1995_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AminohippuricAcid_Kinowski1995_reference&quot;,&quot;label&quot;:&quot;Kinowski_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminohippuric_acid/AminohippuricAcid_Kinowski1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # aminohippuric acid — `AminohippuricAcid_Estelberger1995_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The clearance value for p-aminohippuric acid was recorded with a time unit instead of volume per time, creating a dimensional conflict that resulted in rejection.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="aminohippuric acid" model-id="AminohippuricAcid_Estelberger1995_reference" status="rejected" stale="false" population="renal patients and healthy controls" measured-compound="p-aminohippuric acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aminohippuric acid" model-id="AminohippuricAcid_Estelberger1995_reference" status="needs_review" stale="false" population="renal patients and normal controls" measured-compound="aminohippuric acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Estelberger W, Zitta S, Lang T, Mayer F, Mauric A, Horn S et al. System identification of the low-dose kinetics of p-aminohippuric acid. European journal of clinical chemistry and clinical biochemistry : journal of the Forum of European Clinical Chemistry Societies 33(11):847–853 (1995).
@@ -17,30 +17,29 @@ Estelberger W, Zitta S, Lang T, Mayer F, Mauric A, Horn S et al. System identifi
 
 ## Population and dosing
 
-**Population:** renal patients and healthy controls · condition renal impairment and healthy · age group adult · n = 17.
+**Population:** renal patients and normal controls · condition renal impairment and healthy · age group adult · n = 17.
+
+**Dosing:** 210, 246, 260, 274, 297, 347, 352, 358, 392, 431, 492, 500, 560 mg, iv, single.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| MH* | MRT | 64 | a |
-| PA* | equation variable | 35 | a |
-| KK* | kel | 69 | a |
-| ZE** | tlag | 28 | a |
-| FA** | Fab | 54 | a |
-| volume | V | 6.31 | L |
+| PA* | Q | 295.5 | ml/min |
+| LA* | E | 215.6 | ml/min |
+| PK* | CL | 70.9 | ml/min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,24 +49,21 @@ Estelberger W, Zitta S, Lang T, Mayer F, Mauric A, Horn S et al. System identifi
 
 ### Reviewer guidance
 
-**The clearance value for p-aminohippuric acid was recorded with a time unit instead of volume per time, creating a dimensional conflict that resulted in rejection.**
+**Only clearance was extracted — no volume.**
 
-The parameter representing the rate of drug removal from the body is listed with a unit indicating duration, which is physically incompatible with the required volume per time dimension. Because this non-standard unit could not be interpreted as a standard pharmacokinetic measurement, no valid numerical clearance could be assigned. A second reader also disagreed on the specific drug name used, preferring aminohippuric acid over p-aminohippuric acid, and failed to identify values for the lag time, bioavailability, and elimination rate constant. Extracted — aminohippuric acid: MRT 64 a, kel 69 a, tlag 28 a, Fab 54 a, V 6.31 L.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (E), so that value has no SI equivalent. Extracted — aminohippuric acid: Q 296 ml/min, E 216 ml/min, CL 70.9 ml/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has p-aminohippuric acid, the second reading aminohippuric_acid; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminohippuric acid, the second reading aminohippuric_acid; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| MH* | `Q53` · MRT | 64 | a |  |  | a | llm (0.6) | Estelberger_1995_table_2:row0:col2, Estelberger_1995_table_2:row0:col3, Estelberger_1995_table_2:row0:col4, Estelberger_1995_table_2:row0:col6, Estelberger_1995_table_2:row0:col7, Estelberger_1995_table_2:row0:col8, Estelberger_1995_table_2:row0:col9, Estelberger_1995_table_2:row0:col10 |
-| PA* | `Q900` · equation variable | 35 | a |  |  | a | llm (0.6) | Estelberger_1995_table_2:row2:col2, Estelberger_1995_table_2:row2:col3, Estelberger_1995_table_2:row2:col4, Estelberger_1995_table_2:row2:col6, Estelberger_1995_table_2:row2:col7, Estelberger_1995_table_2:row2:col8, Estelberger_1995_table_2:row2:col9, Estelberger_1995_table_2:row2:col10 |
-| KK* | `Q47` · kel | 69 | a |  |  | a | llm (0.6) | Estelberger_1995_table_2:row5:col2, Estelberger_1995_table_2:row5:col3, Estelberger_1995_table_2:row5:col4, Estelberger_1995_table_2:row5:col6, Estelberger_1995_table_2:row5:col7, Estelberger_1995_table_2:row5:col8, Estelberger_1995_table_2:row5:col9, Estelberger_1995_table_2:row5:col10 |
-| ZE** | `Q83` · tlag | 28 | a |  |  | a | llm (0.6) | Estelberger_1995_table_2:row6:col2, Estelberger_1995_table_2:row6:col3, Estelberger_1995_table_2:row6:col4, Estelberger_1995_table_2:row6:col6, Estelberger_1995_table_2:row6:col7, Estelberger_1995_table_2:row6:col8, Estelberger_1995_table_2:row6:col9, Estelberger_1995_table_2:row6:col10 |
-| FA** | `Q40` · Fab | 54 | a |  |  | a | llm (0.6) | Estelberger_1995_table_2:row10:col2, Estelberger_1995_table_2:row10:col3, Estelberger_1995_table_2:row10:col4, Estelberger_1995_table_2:row10:col6, Estelberger_1995_table_2:row10:col7, Estelberger_1995_table_2:row10:col8, Estelberger_1995_table_2:row10:col9, Estelberger_1995_table_2:row10:col10 |
-| volume | `Q61` · V | 6.31 | L | 0.00631 | m3 | L | review_gapfill (0.7) | Gibiansky_2020:review |
+| PA* | `Q30` · Q | 295.5 | ml/min | 4.925e-06 | m3/s | ml/min | llm (0.6) | Estelberger_1995_table_2:row2:col2, Estelberger_1995_table_2:row2:col3, Estelberger_1995_table_2:row2:col4, Estelberger_1995_table_2:row2:col6, Estelberger_1995_table_2:row2:col7, Estelberger_1995_table_2:row2:col8, Estelberger_1995_table_2:row2:col9, Estelberger_1995_table_2:row2:col10 |
+| LA* | `Q38` · E | 215.6 | ml/min |  |  | ml/min | llm (0.6) | Estelberger_1995_table_2:row3:col2, Estelberger_1995_table_2:row3:col3, Estelberger_1995_table_2:row3:col4, Estelberger_1995_table_2:row3:col6, Estelberger_1995_table_2:row3:col7, Estelberger_1995_table_2:row3:col8, Estelberger_1995_table_2:row3:col9, Estelberger_1995_table_2:row3:col10 |
+| PK* | `Q22` · CL | 70.9 | ml/min | 1.182e-06 | m3/s | ml/min | llm (0.6) | Estelberger_1995_table_2:row4:col2, Estelberger_1995_table_2:row4:col3, Estelberger_1995_table_2:row4:col4, Estelberger_1995_table_2:row4:col6, Estelberger_1995_table_2:row4:col7, Estelberger_1995_table_2:row4:col8, Estelberger_1995_table_2:row4:col9, Estelberger_1995_table_2:row4:col10 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -80,21 +76,16 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - column 'age (a)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'height (cm)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'weight (kg)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 't_c (h)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'tc (h)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'MH*' — extend the ontology if this is a real PK parameter (source ['Estelberger_1995_table_2:row0:col2', 'Estelberger_1995_table_2:row0:col3', 'Estelberger_1995_table_2:row0:col4', 'Estelberger_1995_table_2:row0:col6', 'Estelberger_1995_table_2:row0:col7', 'Estelberger_1995_table_2:row0:col8', 'Estelberger_1995_table_2:row0:col9', 'Estelberger_1995_table_2:row0:col10'])
 - dropped unlinked row (NIL): 'WR*' — extend the ontology if this is a real PK parameter (source ['Estelberger_1995_table_2:row1:col2', 'Estelberger_1995_table_2:row1:col3', 'Estelberger_1995_table_2:row1:col4', 'Estelberger_1995_table_2:row1:col6', 'Estelberger_1995_table_2:row1:col7', 'Estelberger_1995_table_2:row1:col8', 'Estelberger_1995_table_2:row1:col9', 'Estelberger_1995_table_2:row1:col10'])
-- dropped unlinked row (NIL): 'LA*' — extend the ontology if this is a real PK parameter (source ['Estelberger_1995_table_2:row3:col2', 'Estelberger_1995_table_2:row3:col3', 'Estelberger_1995_table_2:row3:col4', 'Estelberger_1995_table_2:row3:col6', 'Estelberger_1995_table_2:row3:col7', 'Estelberger_1995_table_2:row3:col8', 'Estelberger_1995_table_2:row3:col9', 'Estelberger_1995_table_2:row3:col10'])
-- dropped unlinked row (NIL): 'PK*' — extend the ontology if this is a real PK parameter (source ['Estelberger_1995_table_2:row4:col2', 'Estelberger_1995_table_2:row4:col3', 'Estelberger_1995_table_2:row4:col4', 'Estelberger_1995_table_2:row4:col6', 'Estelberger_1995_table_2:row4:col7', 'Estelberger_1995_table_2:row4:col8', 'Estelberger_1995_table_2:row4:col9', 'Estelberger_1995_table_2:row4:col10'])
-- unit_dimension_mismatch: 'KK*' → Q47 (unit '[time]' vs ontology '1 / [time]') — route to review
-- dropped unlinked row (NIL): 'TA**' — extend the ontology if this is a real PK parameter (source ['Estelberger_1995_table_2:row7:col2', 'Estelberger_1995_table_2:row7:col3', 'Estelberger_1995_table_2:row7:col4', 'Estelberger_1995_table_2:row7:col6', 'Estelberger_1995_table_2:row7:col7', 'Estelberger_1995_table_2:row7:col8', 'Estelberger_1995_table_2:row7:col9', 'Estelberger_1995_table_2:row7:col10'])
-- dropped unlinked row (NIL): 'SK**' — extend the ontology if this is a real PK parameter (source ['Estelberger_1995_table_2:row8:col2', 'Estelberger_1995_table_2:row8:col3', 'Estelberger_1995_table_2:row8:col4', 'Estelberger_1995_table_2:row8:col6', 'Estelberger_1995_table_2:row8:col7', 'Estelberger_1995_table_2:row8:col8', 'Estelberger_1995_table_2:row8:col9', 'Estelberger_1995_table_2:row8:col10'])
-- dropped unlinked row (NIL): 'RJ**' — extend the ontology if this is a real PK parameter (source ['Estelberger_1995_table_2:row9:col2', 'Estelberger_1995_table_2:row9:col3', 'Estelberger_1995_table_2:row9:col4', 'Estelberger_1995_table_2:row9:col6', 'Estelberger_1995_table_2:row9:col7', 'Estelberger_1995_table_2:row9:col8', 'Estelberger_1995_table_2:row9:col9', 'Estelberger_1995_table_2:row9:col10'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=p-aminohippuric acid
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
-- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
-- gap-filled Q61 (V) from Gibiansky_2020's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- dropped duplicate Q22 ('KK*', value '66.5') — already have one for this compound
+- dropped duplicate Q22 ('ZE**', value '194.0') — already have one for this compound
+- dropped duplicate Q22 ('TA**', value '122.0') — already have one for this compound
+- dropped duplicate Q22 ('SK**', value '54.4') — already have one for this compound
+- dropped duplicate Q22 ('RJ**', value '71.0') — already have one for this compound
+- dropped unlinked row (NIL): 'FA**' — extend the ontology if this is a real PK parameter (source ['Estelberger_1995_table_2:row10:col2', 'Estelberger_1995_table_2:row10:col3', 'Estelberger_1995_table_2:row10:col4', 'Estelberger_1995_table_2:row10:col6', 'Estelberger_1995_table_2:row10:col7', 'Estelberger_1995_table_2:row10:col8', 'Estelberger_1995_table_2:row10:col9', 'Estelberger_1995_table_2:row10:col10'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=aminohippuric acid
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
@@ -103,24 +94,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[la*]` |  | 65 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mh*]` | 64 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[pa*]` | 35 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume]` | 6.31 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[wr*]` |  | 54 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ze**]` | 28 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | p-aminohippuric acid | aminohippuric_acid | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | p-aminohippuric acid | aminohippuric_acid | mismatch |
+| `gpt-oss-120b` | `parameters[la*].parameter_id` | Q38 | Q83 | mismatch |
+| `gpt-oss-120b` | `parameters[la*].value` | 215.6 | 65 | mismatch |
+| `gpt-oss-120b` | `parameters[mh*]` |  | 64 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pa*]` | 295.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pk*]` | 70.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | aminohippuric acid | aminohippuric_acid | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | aminohippuric acid | aminohippuric_acid | mismatch |
 
 </details>
 
@@ -134,15 +124,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q47 | fail | 1 / [time] | a ([time]) | ['Estelberger_1995_table_2:row5:col2', 'Estelberger_1995_table_2:row5:col3', 'Estelberger_1995_table_2:row5:col4', 'Estelberger_1995_table_2:row5:col6', 'Estelberger_1995_table_2:row5:col7', 'Estelberger_1995_table_2:row5:col8', 'Estelberger_1995_table_2:row5:col9', 'Estelberger_1995_table_2:row5:col10'] |
-| C5_dimension_Q53 | pass | [time] |  | ['Estelberger_1995_table_2:row0:col2', 'Estelberger_1995_table_2:row0:col3', 'Estelberger_1995_table_2:row0:col4', 'Estelberger_1995_table_2:row0:col6', 'Estelberger_1995_table_2:row0:col7', 'Estelberger_1995_table_2:row0:col8', 'Estelberger_1995_table_2:row0:col9', 'Estelberger_1995_table_2:row0:col10'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Gibiansky_2020:review'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Estelberger_1995_table_2:row6:col2', 'Estelberger_1995_table_2:row6:col3', 'Estelberger_1995_table_2:row6:col4', 'Estelberger_1995_table_2:row6:col6', 'Estelberger_1995_table_2:row6:col7', 'Estelberger_1995_table_2:row6:col8', 'Estelberger_1995_table_2:row6:col9', 'Estelberger_1995_table_2:row6:col10'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Estelberger_1995_table_2:row4:col2', 'Estelberger_1995_table_2:row4:col3', 'Estelberger_1995_table_2:row4:col4', 'Estelberger_1995_table_2:row4:col6', 'Estelberger_1995_table_2:row4:col7', 'Estelberger_1995_table_2:row4:col8', 'Estelberger_1995_table_2:row4:col9', 'Estelberger_1995_table_2:row4:col10'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Estelberger_1995_table_2:row2:col2', 'Estelberger_1995_table_2:row2:col3', 'Estelberger_1995_table_2:row2:col4', 'Estelberger_1995_table_2:row2:col6', 'Estelberger_1995_table_2:row2:col7', 'Estelberger_1995_table_2:row2:col8', 'Estelberger_1995_table_2:row2:col9', 'Estelberger_1995_table_2:row2:col10'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 70.9 | ['Estelberger_1995_table_2:row4:col2', 'Estelberger_1995_table_2:row4:col3', 'Estelberger_1995_table_2:row4:col4', 'Estelberger_1995_table_2:row4:col6', 'Estelberger_1995_table_2:row4:col7', 'Estelberger_1995_table_2:row4:col8', 'Estelberger_1995_table_2:row4:col9', 'Estelberger_1995_table_2:row4:col10'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 6.31 L | ['Gibiansky_2020:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 4.25 L/h | ['Estelberger_1995_table_2:row4:col2', 'Estelberger_1995_table_2:row4:col3', 'Estelberger_1995_table_2:row4:col4', 'Estelberger_1995_table_2:row4:col6', 'Estelberger_1995_table_2:row4:col7', 'Estelberger_1995_table_2:row4:col8', 'Estelberger_1995_table_2:row4:col9', 'Estelberger_1995_table_2:row4:col10'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -154,9 +143,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -166,4 +165,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baminohippuric_acid%5D%20AminohippuricAcid_Estelberger1995_reference&body=Drug%3A%20aminohippuric_acid%0ARecord%3A%20AminohippuricAcid_Estelberger1995_reference%0APaper%3A%20Estelberger_1995%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aminohippuric_acid/AminohippuricAcid_Estelberger1995_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 21:10 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:18 UTC</sub>

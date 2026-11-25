@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the paper studies ammonia pharmacokinetics, not sodium phenylbutyrate clearance.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="sodium phenylbutyrate" model-id="SodiumPhenylbutyrate_Eriksen2023_reference" status="rejected" stale="false" population="" measured-compound="sodium_phenylbutyrate" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Eriksen PL, Djernes L, Vilstrup H, Ott P. Clearance and production of ammonia qu
 
 ### Reviewer guidance
 
-**Record rejected because the paper studies ammonia pharmacokinetics, not sodium phenylbutyrate clearance.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The extracted clearance of 2.7 L/min and volume of 13.6 L describe ammonia handling, not the subject drug. Sodium phenylbutyrate appears only as an intervention to alter ammonia levels, not as the measured compound. A second reader disputed the verdict, citing missing values for production rate and other parameters. Extracted — sodium phenylbutyrate: CL 2.7 L/min, V 13.6 L.
+Extracted — sodium phenylbutyrate: CL 2.7 L/min, V 13.6 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 2.7, the second reading 3.5; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (3 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (3 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

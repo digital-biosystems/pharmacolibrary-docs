@@ -45,7 +45,7 @@ Kolowrat S, Riley C, Lam K, Thomson L, Stickle DF, Kraft WK. Real-World Impact o
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has none, the second reading 1.58; it also differs on 6 more fields. That field does not shape the model.
 

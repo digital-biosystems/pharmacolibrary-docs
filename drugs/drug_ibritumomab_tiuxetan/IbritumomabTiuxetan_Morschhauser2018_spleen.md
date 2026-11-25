@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance for ibritumomab tiuxetan was rejected because the reported unit ml/min is dimensionally invalid for a rate parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml.min ([length] ** 3 * [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="ibritumomab tiuxetan" model-id="IbritumomabTiuxetan_Morschhauser2018_spleen" status="rejected" stale="false" population="patients with follicular lymphoma" measured-compound="ibritumomab tiuxetan" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Morschhauser F, Dekyndt B, Baillet C, Barthélémy C, Malek E, Fulcrand J et al.
 
 ### Reviewer guidance
 
-**Clearance for ibritumomab tiuxetan was rejected because the reported unit ml/min is dimensionally invalid for a rate parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml.min ([length] ** 3 * [time]) vs [length] ** 3 / [time].**
 
-The record lists Clearance as 1.03 ml.min, a unit that cannot be converted to standard SI units. The dimensional check failed because milliliters per minute implies a dimension of volume times time, whereas clearance requires volume per time. Additionally, the blood volume parameter was recorded as null, though a second reader identified a value of 81.5 in the source. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
+A reported unit could not be converted (Cmax, AUC and AUCt), so that value has no SI equivalent. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of blood in corresponding volume*: this record has none, the second reading 81.5. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

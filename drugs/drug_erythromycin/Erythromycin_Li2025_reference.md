@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was refused because Li_2025 concerns another drug, despite listing erythromycin clearance (CL) as 0.186 L/h.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="erythromycin" model-id="Erythromycin_Li2025_reference" status="rejected" stale="false" population="" measured-compound="erythromycin" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Li X, Zhou L, Wang D, Wu Q, Huang X, Zhang H et al. Population pharmacokinetics 
 
 ### Reviewer guidance
 
-**The record was refused because Li_2025 concerns another drug, despite listing erythromycin clearance (CL) as 0.186 L/h.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-Neither the title nor abstract names erythromycin, and the relevance assessment identifies the paper as concerning another drug. A second reader disputed the record (agreement 0.778, with 0 of 1 reader agreeing), differing on two reported values: null versus 50 and 100 versus 25. Extracted — erythromycin: CL 0.186 L/h, V1 27.6 L, V2 17.1 L, Q 13.1 L/h.
+Extracted — erythromycin: CL 0.186 L/h, V1 27.6 L, V2 17.1 L, Q 13.1 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q364: this record has none, the second reading 50; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.778 (7 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | cross-check contradicted by a second reader: verdict disputed; agreement 0.778 (7 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

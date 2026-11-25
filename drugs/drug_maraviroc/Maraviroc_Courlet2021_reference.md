@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is for amlodipine, not maraviroc; it reports amlodipine clearance of 15.7 and volume of 42 L.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="maraviroc" model-id="Maraviroc_Courlet2021_reference" status="rejected" stale="false" population="" measured-compound="maraviroc" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Courlet P, Guidi M, Alves Saldanha S, Cavassini M, Stoeckle M, Buclin T et al. P
 
 ### Reviewer guidance
 
-**The record is for amlodipine, not maraviroc; it reports amlodipine clearance of 15.7 and volume of 42 L.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source text is a population PK study of amlodipine, where maraviroc appears only as a covariate. The parameter values (CL/F=17.0, V/F=1000.0) do not match the second reader's amlodipine values (15.7, 42). Cross-check agreement was 0.5, with the second reader identifying the drug identity error. Extracted — maraviroc: CL/F 17 L/h, V/F 1e+03 L, tlag 0.87 h, kabs 0.69 h−1.
+Extracted — maraviroc: CL/F 17 L/h, V/F 1e+03 L, tlag 0.87 h, kabs 0.69 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has none, the second reading 15.7; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (5 of 10 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (5 of 10 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Q/F units were recorded as liters/h, conflicting with the required 1/h dimension for intercompartmental clearance.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit liters/h ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Koshimichi2020_reference" status="rejected" stale="false" population="influenza patients including those at high risk of complications" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></div>
 
@@ -61,13 +61,13 @@ Koshimichi H, Retout S, Cosson V, Duval V, De Buck S, Tsuda Y et al. Population 
 
 ### Reviewer guidance
 
-**Q/F units were recorded as liters/h, conflicting with the required 1/h dimension for intercompartmental clearance.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit liters/h ([length] ** 3 / [time]) vs 1 / [time].**
 
-The recorded unit for the intercompartmental clearance (Q/F) is liters/h, which has dimensions of volume over time. This conflicts with the parameter's required dimension of reciprocal time (1/h). Additionally, the second reader disagrees on whether the weight covariate value of 0.743 applies to the intercompartmental or central volume parameters. Extracted — baloxavir acid: CLm/F 10.4 liters/h, V1/F 528 liters, Q/F 10.3 liters/h, V2/F 130 liters, Q2/F 1.25 liters/h, V3/F 131 liters, kabs 0.905 liters/h, tlag 0.323 h.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. None of the extracted parameters is baloxavir marboxil's own; they describe baloxavir acid. Extracted — baloxavir acid: CLm/F 10.4 liters/h, V1/F 528 liters, Q/F 10.3 liters/h, V2/F 130 liters, Q2/F 1.25 liters/h, V3/F 131 liters, kabs 0.905 liters/h, tlag 0.323 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of theta_q76_wt: this record has none, the second reading 0.743; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

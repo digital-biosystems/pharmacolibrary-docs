@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Nicorandil's clearance, volume of distribution, and absorption parameters lacked specific values, so the model was held back from publication.
+> No value for nicorandil's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="nicorandil" model-id="Nicorandil_Iida2008v2_reference" status="model_quarantined" stale="false" population="healthy subjects and acute heart failure patients" measured-compound="nicorandil" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Iida S, Kinoshita H, Holford NH. Population pharmacokinetic and pharmacodynamic 
 
 ### Reviewer guidance
 
-**Nicorandil's clearance, volume of distribution, and absorption parameters lacked specific values, so the model was held back from publication.**
+**No value for nicorandil's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations.**
 
-The record shows that no estimates for nicorandil's clearance, volume of distribution, absorption rate constant, or absorption lag time were extracted from the source paper. Instead, the model builder applied generic default assumptions to these critical kinetic terms. This resulted in a model structure that could not accurately represent the drug's pharmacokinetics, leading to its quarantine. Extracted — nicorandil: V3/F 0.257 L, t1/2γ 0.957 h.
+The model was built, but nicorandil's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — nicorandil: V3/F 0.257 L, t1/2γ 0.957 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 14: this record has none, the second reading 6.6; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -157,7 +157,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.5 (5 of 10 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
 | T1_t_half_terminal | reference | skipped | 5.3 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 5.8 |  |  | no simulated metric for this quantity (single reference sim) |
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The second reader disputed the verdict by identifying orismilast instead of apremilast and failing to extract the 9.26 l/h clearance value.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="apremilast" model-id="Apremilast_Warren2025_reference" status="needs_review" stale="false" population="atopic dermatitis patients" measured-compound="apremilast" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Warren RB, Weiss A, Felding J, Sommer MOA. Population Pharmacokinetic-Pharmacody
 
 ### Reviewer guidance
 
-**The second reader disputed the verdict by identifying orismilast instead of apremilast and failing to extract the 9.26 l/h clearance value.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader identified the measured compound as orismilast rather than apremilast, directly conflicting with the primary record. Additionally, the second reader extracted a null value for total clearance, whereas this record specifies 9.26 l/h. Although the model used apparent parameterization with bioavailability set to one, the disagreement on the analyte identity prevented consensus on the review. Extracted — apremilast: V/F 118 l, kabs 1.84 1/h, CL/F 9.26 l/h.
+Extracted — apremilast: V/F 118 l, kabs 1.84 1/h, CL/F 9.26 l/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has apremilast, the second reading orismilast; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -141,9 +141,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 0.0001472 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.0001472 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.571 (4 of 7 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.571 | cross-check contradicted by a second reader: verdict disputed; agreement 0.571 (4 of 7 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 0.0001472 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.0001472 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

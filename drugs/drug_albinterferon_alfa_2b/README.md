@@ -30,7 +30,7 @@ Albinterferon is an immunostimulant fusion protein that was under investigation 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Osinusi_2014_HCV_RNA](drugs/drug_albinterferon_alfa_2b/pd_Osinusi_2014_HCV_RNA.md) | HCV RNA biomarker turnover ← albinterferon_alfa_2b | — | Osinusi A et al., Comparative efficacy, pharmacokinetic,…, Journal of medical virology (2014) | [10.1002/jmv.23773](https://doi.org/10.1002/jmv.23773) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Osinusi_2014_HCV_RNA](drugs/drug_albinterferon_alfa_2b/pd_Osinusi_2014_HCV_RNA.md) | HCV RNA biomarker turnover ← albinterferon_alfa_2b | — | Osinusi A et al., Comparative efficacy, pharmacokinetic,…, Journal of medical virology (2014) | [10.1002/jmv.23773](https://doi.org/10.1002/jmv.23773) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

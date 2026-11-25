@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;firmonertinib&quot;,&quot;href&quot;:&quot;drugs/drug_firmonertinib/&quot;},{&quot;label&quot;:&quot;Liu_2020 \u00b7 PD CYP3A4 mRNA expression&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CYP3A4 mRNA expression — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+# CYP3A4 mRNA expression — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,9 +15,9 @@
 
 ## Record summary
 
-**As extracted:** Alflutinib (AST2818) (measured concentrations) drives CYP3A4 mRNA expression (in fold change): direct Emax (saturable) effect.
+**As extracted:** Alflutinib (measured concentrations) drives CYP3A4 mRNA expression (in fold): direct Emax (saturable) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Alflutinib concentrations stimulated CYP3A4 mRNA expression in human hepatocytes; the paper describes CYP3A4 induction but does not specify a production/elimination mechanism. By hepatocyte lot (DJJ, QBU, HVN), maximum induction was 9.24-, 11.2-, and 10.4-fold, with EC50 values of 0.25, 0.24, and 0.25 μM, respectively.
 >
@@ -27,7 +27,7 @@
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** stimulation/unknown
+- **effect:** stimulation/proportional
 
 ## Citation
 Liu XY et al., Alflutinib (AST2818), primarily metabol…, Acta pharmacologica Sinica (2020)
@@ -36,12 +36,12 @@ Liu XY et al., Alflutinib (AST2818), primarily metabol…, Acta pharmacologica S
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | Maximum fold induction (DJJ) | `Q320` ·  | 9.24 | fold | llm | Liu_2020:pdv3 |
-| PD (effect) | Maximum fold induction (QBU) | `Q320` ·  | 11.2 | fold | llm | Liu_2020:pdv3 |
-| PD (effect) | Maximum fold induction (HVN) | `Q320` ·  | 10.4 | fold | llm | Liu_2020:pdv3 |
-| PD (effect) | EC50 (DJJ) | `Q321` ·  | 0.25 | μM | llm | Liu_2020:pdv3 |
-| PD (effect) | EC50 (QBU) | `Q321` ·  | 0.24 | μM | llm | Liu_2020:pdv3 |
-| PD (effect) | EC50 (HVN) | `Q321` ·  | 0.25 | μM | llm | Liu_2020:pdv3 |
+| PD (effect) | Emax | `Q320` ·  | 9.24 | fold | llm | Liu_2020:pdv3 |
+| PD (effect) | Emax | `Q320` ·  | 11.2 | fold | llm | Liu_2020:pdv3 |
+| PD (effect) | Emax | `Q320` ·  | 10.4 | fold | llm | Liu_2020:pdv3 |
+| PD (effect) | EC50 | `Q321` ·  | 0.25 | μM | llm | Liu_2020:pdv3 |
+| PD (effect) | EC50 | `Q321` ·  | 0.24 | μM | llm | Liu_2020:pdv3 |
+| PD (effect) | EC50 | `Q321` ·  | 0.25 | μM | llm | Liu_2020:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -49,19 +49,57 @@ Liu XY et al., Alflutinib (AST2818), primarily metabol…, Acta pharmacologica S
 </details>
 
 
+## Exposure-response model
+
+`Firmonertinib_Liu2020_PD_cyp3a4_mrna` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| Emax | 9.24 fold | — |
+| EC50 | 0.25 μM | — |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 4.62, `at_inf` = 9.24
+
+Deviations:
+
+- `defaulted_parameters` — E0, gamma
+- `pd_binding_exposure_unit_unresolved` — 'μM' — the x axis is in the paper's unit, not SI
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">Needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+- exposure unit not resolved to SI — the x axis is in the paper's unit
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.667 (4/6 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `driver_compound` | alflutinib (AST2818) | alflutinib | mismatch |
-| `qwen3.8-27b` | `effect_form` | unknown | proportional | mismatch |
+| `gpt-oss-120b` | `effect_form` | proportional | additive | mismatch |
+| `gpt-oss-120b` | `parameters[Q320].value` | 10.4 | symbol | mismatch |
+| `gpt-oss-120b` | `parameters[Q321].value` | 0.25 | symbol | mismatch |
 
 </details>
 
@@ -77,19 +115,33 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_firmonertinib/Firmonertinib_Liu2020_PD_cyp3a4_mrna/Firmonertinib_Liu2020_PD_cyp3a4_mrna_modelica.zip" download>Firmonertinib_Liu2020_PD_cyp3a4_mrna_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_firmonertinib/Firmonertinib_Liu2020_PD_cyp3a4_mrna/Firmonertinib_Liu2020_PD_cyp3a4_mrna_matlab.zip" download>Firmonertinib_Liu2020_PD_cyp3a4_mrna_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_firmonertinib/Firmonertinib_Liu2020_PD_cyp3a4_mrna/Firmonertinib_Liu2020_PD_cyp3a4_mrna_sbml.zip" download>Firmonertinib_Liu2020_PD_cyp3a4_mrna_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_firmonertinib/Firmonertinib_Liu2020_PD_cyp3a4_mrna/Firmonertinib_Liu2020_PD_cyp3a4_mrna_cellml.zip" download>Firmonertinib_Liu2020_PD_cyp3a4_mrna_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Firmonertinib_Liu2020_PD_cyp3a4_mrna`. <https://pharmacolibrary.github.io/#/drugs/drug_firmonertinib/pd_Liu_2020_CYP3A4_mRNA>
+
+```bibtex
+@misc{pharmacolibrary_FirmonertinibLiu2020PDcyp3a4mrna,
+  title  = {{Pharmacolibrary model Firmonertinib_Liu2020_PD_cyp3a4_mrna}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_firmonertinib/pd_Liu_2020_CYP3A4_mRNA},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
 
 <div class="pk-tab-end"></div>
 

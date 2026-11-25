@@ -53,7 +53,7 @@ Kotila OA, Ajayi DT, Masimirembwa C, Thelingwani R, Odetunde A, Falusi AG et al.
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Reproduces paper: every check that could be run on this record passed.**
 
 A reported unit could not be converted (Cmax, AUClast and AUC∞), so that value has no SI equivalent.
 
@@ -163,9 +163,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.786, 0 of 1 reader(s) agree | 0.786 | a second reader did not contradict the extraction |
-| T1_t_half_beta | reference | pass | 30.23 | 29.6 | 0.9791 | h→SI vs simulated h |
-| T1_t_half_beta | reference | pass | 30 | 29.6 | 0.9866 | h→SI vs simulated h |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.786 (11 of 14 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.786 | a second reader did not contradict the extraction |
+| T1_t_half_beta | reference | pass | 30.23 | 29.6 | 0.9791 | reported 30.23 h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 30 | 29.6 | 0.9866 | reported 30.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

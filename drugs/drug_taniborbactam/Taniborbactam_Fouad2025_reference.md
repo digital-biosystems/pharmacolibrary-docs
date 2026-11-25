@@ -37,7 +37,7 @@ Fouad A, McGrath C, Buyukyanbolu E, Kuti JL. Ex vivo assessment and simulation t
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.20).">in vitro</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.20).">in vitro</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,6 +50,8 @@ Fouad A, McGrath C, Buyukyanbolu E, Kuti JL. Ex vivo assessment and simulation t
 **No volume or clearance — not a compartmental population PK model.**
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefepime, taniborbactam, the second reading cefepime and taniborbactam; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -85,6 +87,29 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 - unparsed cell Fouad_2025_table_2:row9:col3 = '&lt;0.0001'
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.4 (2/5 fields) | 3 |
+
+<details><summary>3 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[effluent flow rate (l/h)a]` | 0.79 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | cefepime, taniborbactam | cefepime and taniborbactam | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | cefepime, taniborbactam | taniborbactam | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the source paper does not study hydroxyethylstarch, leaving its clearance and volume parameters unsupported by the cited subject.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="hydroxyethylstarch" model-id="Hydroxyethylstarch_Haefliger2025_reference" status="rejected" stale="false" population="" measured-compound="hydroxyethylstarch" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Haefliger D, Mina L, Guidi M, Marzolini C, Thoueille P, Rothuizen LE et al. Indi
 
 ### Reviewer guidance
 
-**Record rejected because the source paper does not study hydroxyethylstarch, leaving its clearance and volume parameters unsupported by the cited subject.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The review determined the paper subject is not hydroxyethylstarch, as the title and abstract do not name the drug and the relevance screen failed. A cross-check showed 0 of 1 readers agreed with the initial verdict, yielding an agreement ratio of 0.625. Disagreements included values for volume parameters, where the record had nulls but the second reader identified 31.1 and 360, while a different field showed 360 in the record versus 8 in the second reader's assessment. Extracted — hydroxyethylstarch: CL 13.8 L/h, V 21.7 L.
+Extracted — hydroxyethylstarch: CL 13.8 L/h, V 21.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 31.1; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.625 (5 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.625 | cross-check contradicted by a second reader: verdict disputed; agreement 0.625 (5 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

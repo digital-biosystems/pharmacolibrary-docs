@@ -5,11 +5,11 @@
 
 # miltefosine — `Miltefosine_Kip2018_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Only volume was extracted — no clearance.
+> No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Kip2018_reference" status="needs_review" stale="false" population="Colombian cutaneous leishmaniasis patients (children and adults)" measured-compound="miltefosine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Kip2018_reference" status="rejected" stale="false" population="New World cutaneous leishmaniasis patients" measured-compound="miltefosine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kip AE, Castro MDM, Gomez MA, Cossio A, Schellens JHM, Beijnen JH et al. Simultaneous population pharmacokinetic modelling of plasma and intracellular PBMC miltefosine concentrations in New World cutaneous leishmaniasis and exploration of exposure-response relationships. The Journal of antimicrobial chemotherapy 73(8):2104–2111 (2018).
@@ -17,27 +17,25 @@ Kip AE, Castro MDM, Gomez MA, Cossio A, Schellens JHM, Beijnen JH et al. Simulta
 
 ## Population and dosing
 
-**Population:** Colombian cutaneous leishmaniasis patients (children and adults) · condition cutaneous leishmaniasis · age group mixed · n = 51.
+**Population:** New World cutaneous leishmaniasis patients · condition cutaneous leishmaniasis · age group mixed · n = 51.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| intracellular-to-plasma concentration ratio | Kp | 2.17 |  |
-| intracellular distribution rate constant | kic | 1.23 | day-1 |
-| area under the plasma concentration-time curve (day 0-28) | AUCt | 535 | mg·day/L |
+| intracellular distribution rate constant | kcomp | 1.23 | day-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +45,11 @@ Kip AE, Castro MDM, Gomez MA, Cossio A, Schellens JHM, Beijnen JH et al. Simulta
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**No volume or clearance — not a compartmental population PK model.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — miltefosine: Kp 2.17, kic 1.23 day-1, AUCt 535 mg·day/L.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has miltefosine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[intracellular distribution rate constant].parameter_id`: this record has Q48, the second reading Q334; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,9 +57,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| intracellular-to-plasma concentration ratio | `Q410` · Kp | 2.17 |  |  |  |  | llm (0.6) | Kip_2018:abstract |
-| intracellular distribution rate constant | `Q350` · kic | 1.23 | day-1 | 1.424e-05 | 1/s | 1/d | llm_corrected (0.6) | Kip_2018:abstract |
-| area under the plasma concentration-time curve (day 0-28) | `Q19` · AUCt | 535 | mg·day/L |  |  | (d·mg)/l | llm (0.6) | Kip_2018:abstract |
+| intracellular distribution rate constant | `Q48` · kcomp | 1.23 | day-1 | 1.424e-05 | 1/s | 1/d | llm_confirmed (0.6) | Kip_2018:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,37 +67,28 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'intracellular-to-plasma concentration ratio' — extend the ontology if this is a real PK parameter (source ['Kip_2018:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=miltefosine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Kip_2018_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Kip_2018_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[area under the plasma concentration-time curve]` | 535 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[intracellular distribution rate constant]` | 1.23 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[intracellular distribution rate constant]` |  | 1.23 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[intracellular-to-plasma concentration ratio]` | 2.17 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[intracellular-to-plasma concentration ratio]` |  | 2.17 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[miltefosine dose]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[pk target auc]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[plasma miltefosine concentrations]` |  | 339 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | miltefosine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | miltefosine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[intracellular distribution rate constant].parameter_id` | Q48 | Q334 | mismatch |
+| `gpt-oss-120b` | `parameters[pbmc miltefosine concentrations]` |  | 194 | only_one_extracted |
 
 </details>
 
@@ -115,11 +102,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Kip_2018:abstract'] |
-| C5_dimension_Q350 | pass | 1 / [time] |  | ['Kip_2018:abstract'] |
+| C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | fail |  |  |  |
+| C5_dimension_Q48 | pass | 1 / [time] |  | ['Kip_2018:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -132,19 +117,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -154,4 +129,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmiltefosine%5D%20Miltefosine_Kip2018_reference&body=Drug%3A%20miltefosine%0ARecord%3A%20Miltefosine_Kip2018_reference%0APaper%3A%20Kip_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_miltefosine/Miltefosine_Kip2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 07:52 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:09 UTC</sub>

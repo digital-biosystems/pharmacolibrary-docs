@@ -39,52 +39,60 @@ Technetium (99mTc) exametazime is a diagnostic radiopharmaceutical used to detec
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:54 | 4:04 | 0/1/0 | 0/0/0 | 0/0/0 | 41,928/15,734 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 05:15 | 0:03 | 0/1/0 | 0/0/0 | 0/0/0 | 4,608/193 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 67 matched, 20 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 2  ·  **relevant:** 0
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Lassen_1988.pdf` | Lassen NA et al., The retention of [99mTc]-d,l-HM-PAO in…, Journal of cerebral blood f… (1988) | popPK | 10 | [10.1038/jcbfm.1988.28](https://doi.org/10.1038/jcbfm.1988.28) | [3192638](https://pubmed.ncbi.nlm.nih.gov/3192638) | Human brain kinetic model reports numeric clearance and compartmental rate parameters for HM-PAO. |
-| `Apostolova_2012.pdf` | Apostolova I et al., Brain perfusion SPECT in the mouse: nor…, NeuroImage (2012) | popPK | 9 | [10.1016/j.neuroimage.2012.08.038](https://doi.org/10.1016/j.neuroimage.2012.08.038) | [22971548](https://pubmed.ncbi.nlm.nih.gov/22971548) | Mouse HMPAO kinetics include numeric peak uptake and tissue washout values. |
-| `Clough_2019.pdf` | Clough AV et al., Pharmacokinetics of 99mTc-HMPAO in isol…, Journal of applied physiolo… (2019) | popPK | 9 | [10.1152/japplphysiol.00717.2018](https://doi.org/10.1152/japplphysiol.00717.2018) | [31414953](https://pubmed.ncbi.nlm.nih.gov/31414953) | A pulmonary disposition model was fit, but its numeric parameters are not included in the evidence. |
-| `Kao_1995.pdf` | Kao CH et al., Supine lung clearance of Tc-99m DTPA an…, Clinical nuclear medicine (1995) | popPK | 7 | [10.1097/00003072-199507000-00016](https://doi.org/10.1097/00003072-199507000-00016) | [7554670](https://pubmed.ncbi.nlm.nih.gov/7554670) | Human lung clearance of HMPAO was measured, but no numeric clearance values are present in the evidence. |
-
-<sub>queue written 2026-10-07 18:52 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Algotsson_1993 | irrelevant | 0 | 0 | HMPAO is used as a cerebral blood-flow imaging agent, with no quantitative pharmacokinetic disposition parameters reported. |
-| popPK | Andersen_1987 | irrelevant | 1 | 1 | This is a human imaging comparison reporting brain-count loss, not quantitative pharmacokinetic disposition parameters. |
-| popPK | Clough_2019 | relevant | 9 | 1 | A pulmonary disposition model was fit, but its numeric parameters are not included in the evidence. |
-| popPK | Friberg_1994 | irrelevant | 0 | 0 | The kinetic values are for 99mTc-bicisate (ECD), not technetium_99mtc_exametazime (HM-PAO). |
-| popPK | Isaka_1994 | irrelevant | 0 | 0 | The study reports cerebral blood flow measurements, not pharmacokinetic disposition parameters for technetium-99m HMPAO. |
-| popPK | Kao_1995 | relevant | 7 | 0 | Human lung clearance of HMPAO was measured, but no numeric clearance values are present in the evidence. |
-| popPK | Kothari_2000 | irrelevant | 0 | 0 | This study reports qualitative biodistribution of different technetium complexes, not pharmacokinetic parameters for technetium_99mtc_exametazime. |
-| popPK | Lukawska_2014 | irrelevant | 1 | 0 | The reported half-lives describe labeled-cell efflux, not technetium_99mtc_exametazime pharmacokinetic parameters. |
-| popPK | Léveillé_1992 | irrelevant | 3 | 1 | Human HMPAO imaging is compared, but the evidence gives no quantitative PK parameters beyond a brain-washout percentage. |
-| popPK | Matsuda_1991 | irrelevant | 0 | 0 | The quantitative findings are for 99mTc-ECD; HMPAO is only a comparison agent. |
+| popPK | Algotsson_1993 | irrelevant | 0 | 0 | The study uses 99mTc-HMPAO (not exametazime) as a diagnostic imaging agent to measure cerebral blood flow, rather than studying the pharmacokinetics of technetium-99mTc-exametazime. |
+| PGx | Algotsson_1993 | not_relevant | 0 | 0 | The paper uses 99mTc-HMPAO as a tracer for cerebral blood flow measurement in carotid endarterectomy patients and does not investigate pharmacogenomic effects or involve technetium_99mtc_exametazime. |
+| popPK | Andersen_1987 | irrelevant | 0 | 0 | The study focuses on 99Tcm-HMPAO as a diagnostic imaging agent for cerebral blood flow, not technetium-99mtc_exametazime, and does not report pharmacokinetic parameters for the subject drug. |
+| PGx | Andersen_1987 | not_relevant | 0 | 0 | The paper compares cerebral blood flow tracers and discusses image physics/clearance, but reports no pharmacogenomic effects on PK or PD parameters. |
+| popPK | Apostolova_2012 | irrelevant | 1 | 0 | The study focuses on Tc-99m-HMPAO and Tc-99m-ECD (a different tracer, not exametazime), and reports only qualitative uptake patterns and washout times rather than compartmental PK parameters. |
+| PGx | Apostolova_2012 | not_relevant | 0 | 0 | The paper studies Tc-99m-HMPAO and Tc-99m-ECD in mice regarding age/gender, not Tc-99m-exametazime, and does not involve genetic variants. |
+| popPK | Boswell_2013 | irrelevant | 0 | 0 | The paper studies a different radiopharmaceutical, (99m)Tc-HMPAO (Ceretec), not (99m)Tc-exametazime (NeuroMIDI/Neurolite). |
+| PGx | Boswell_2013 | not_relevant | 0 | 0 | The paper studies technetium-99m HMPAO, not exametazime, and does not report pharmacogenomic effects. |
+| popPK | Clough_2019 | irrelevant | 1 | 0 | The study focuses on 99mTc-HMPAO (hexamethylpropyleneamine oxime), which is a different radiopharmaceutical from 99mTc-exametazime (ethyl cysteinate dimer). |
+| PGx | Clough_2019 | not_relevant | 0 | 0 | The study investigates pharmacokinetics in an animal model without any genotyping or pharmacogenomic analysis of gene variants. |
+| popPK | Friberg_1994 | irrelevant | 0 | 0 | The paper studies 99mTc-bicisate (ECD), a different radiopharmaceutical agent, not technetium-99mTc-exametazime. |
+| PGx | Friberg_1994 | not_relevant | 0 | 0 | The paper reports the general pharmacokinetics of 99mTc-bicisate in a small clinical cohort but does not investigate or report any association between gene variants and tracer parameters. |
+| popPK | Isaka_1994 | irrelevant | 0 | 0 | The paper studies a different radiopharmaceutical (99mTc-HMPAO) for CBF measurement and does not report PK parameters for technetium-99mtc-exametazime. |
+| PGx | Isaka_1994 | not_relevant | 0 | 0 | The paper discusses 99mTc-HMPAO as a cerebral blood flow tracer, not 99mTc-exametazime, and reports no pharmacogenomic effects. |
+| popPK | Kao_1995 | irrelevant | 0 | 0 | The study measures lung clearance of Tc-99m DTPA and HMPAO, not technetium_99mtc_exametazime. |
+| PGx | Kao_1995 | not_relevant | 0 | 0 | The paper studies Tc-99m DTPA and HMPAO aerosols, not technetium_99mtc_exametazime, and reports no genetic effects. |
+| popPK | Kothari_2000 | irrelevant | 0 | 0 | The paper studies novel technetium-99m complexes of cysteine-oxime ligands, not the specific drug technetium-99mTc-exametazime, and provides no quantitative PK parameters. |
+| PGx | Kothari_2000 | not_relevant | 0 | 0 | The paper does not report any pharmacogenomic effects on the PK/PD of technetium_99mtc_exametazime; it focuses on the synthesis of novel ligands and their biodistribution. |
+| popPK | Lassen_1988 | irrelevant | 2 | 10 | This is a PET/SPECT kinetic modeling study focused on the diagnostic imaging parameters (retention, flow) of the radiotracer, not a population pharmacokinetic study reporting standard disposition parameters (CL, Vss) for systemically administered drug clearance. |
+| PGx | Lassen_1988 | not_relevant | 0 | 0 | The paper reports pharmacokinetic parameters for the tracer but does not investigate the effect of any gene variant or genotype on these parameters. |
+| popPK | Lukawska_2014 | irrelevant | 0 | 0 | The study uses Technetium-99m HMPAO as a diagnostic radiolabel for cell migration, not as a drug for pharmacokinetic analysis, and reports no PK parameters for the tracer itself. |
+| PGx | Lukawska_2014 | not_relevant | 0 | 0 | The study examines neutrophil/eosinophil migration kinetics using a different radiotracer and contains no pharmacogenomic analysis or technetium-99m exametazime PK/PD data. |
+| popPK | Léveillé_1992 | irrelevant | 6 | 0 | The study compares qualitative imaging characteristics and relative washout/clearance rates between two Tc-99m agents but does not report quantitative PK parameters (CL, V, t1/2) for exametazime (ECD). |
+| PGx | Léveillé_1992 | not_relevant | 0 | 0 | The paper compares two different radiotracers (ECD vs HMPAO) in healthy subjects and does not investigate any gene variants or pharmacogenomic effects on PK/PD parameters. |
+| popPK | Matsuda_1991 | irrelevant | 3 | 2 | The study reports qualitative biodistribution and washout rates (percent/hour) for a SPECT imaging agent, but does not provide standard quantitative population-PK parameters like clearance, volume of distribution, or compartmental model estimates. |
+| PGx | Matsuda_1991 | not_relevant | 0 | 0 | The paper describes the pharmacokinetics and biodistribution of 99mTc-ECD in animals/clinical trials but does not report any pharmacogenomic effects (gene variants affecting PK/PD). |
 | popPK | Mills_2013 | irrelevant | 0 | 0 | This is a review of cerebral vasospasm imaging and reports no quantitative pharmacokinetic parameters for technetium-99m exametazime. |
-| popPK | Moerlein_1994 | irrelevant | 1 | 0 | Technetium-99m HMPAO is only a comparator; the reported numeric values are for iodine-123 tracers. |
-| popPK | Ogasawara_1995 | irrelevant | 2 | 0 | Human tracer washout is described qualitatively, with no numeric disposition parameters reported. |
-| popPK | Ruf_2010 | irrelevant | 0 | 0 | This is a clinical review and reports no quantitative disposition parameters for technetium_99mtc_exametazime. |
-| popPK | Sharma_2017 | irrelevant | 0 | 0 | This is a review and provides no quantitative pharmacokinetic parameters for technetium_99mtc_exametazime. |
-| popPK | Youssef_1996 | irrelevant | 1 | 0 | Technetium-99m exametazime is used to label neutrophils, and no drug disposition parameters are reported. |
+| popPK | Moerlein_1994 | irrelevant | 0 | 0 | The study measures I-123 tracers in baboons and only mentions Tc-99m HMPAO as a comparative standard without reporting its PK parameters. |
+| PGx | Moerlein_1994 | not_relevant | 0 | 0 | The paper investigates iodine-123 tracers in baboons and does not report pharmacogenomic effects for technetium_99mtc_exametazime. |
+| popPK | Ogasawara_1995 | irrelevant | 0 | 0 | The study focuses on Technetium-99m ECD (a different drug) rather than Technetium-99m Exametazime, and does not report quantitative PK parameters for the subject drug. |
+| PGx | Ogasawara_1995 | not_relevant | 0 | 0 | The paper investigates the cerebral pharmacokinetics of 99mTc-ECD in pathological conditions (stroke, epilepsy) but does not mention any gene variants, genotypes, or pharmacogenomic effects. |
+| popPK | Ruf_2010 | irrelevant | 0 | 0 | The paper discusses 99mTc-HMPAO (a different radiotracer) and does not contain pharmacokinetic data for 99mTc-exametazime. |
+| PGx | Ruf_2010 | not_relevant | 0 | 0 | The paper compares imaging agents (anti-granulocyte MoAb vs labeled WBC) for infection diagnosis and does not discuss pharmacogenomics or technetium_99mtc_exametazime. |
+| popPK | Sharma_2017 | irrelevant | 0 | 0 | The paper is a review of multimodality neuroimaging techniques and does not report specific quantitative pharmacokinetic parameters for technetium_99mtc_exametazime. |
+| PGx | Sharma_2017 | not_relevant | 0 | 0 | The paper is a review on multimodality neuroimaging methods and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of technetium_99mtc_exametazime. |
+| popPK | Youssef_1996 | irrelevant | 0 | 0 | Technetium-99m exametazime is used here as a radiotracer to label neutrophils for imaging studies, not as the subject drug for pharmacokinetic parameter estimation. |
+| PGx | Youssef_1996 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamic effect of methylprednisolone on neutrophil trafficking using technetium-99m hexametazime as a tracer, but does not report any pharmacogenomic effects (gene variants) on the PK or PD of the radiotracer itself. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btechnetium_99mtc_exametazime%5D&body=Drug%3A%20technetium_99mtc_exametazime%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_technetium_99mtc_exametazime/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 18:53 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 05:14 UTC</sub>

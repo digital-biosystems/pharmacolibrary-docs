@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The model was held back because the elimination clearance for (R)-ibuprofen was missing, forcing the use of a placeholder value instead of a real estimate.
+> No value for ibuprofen's elimination clearance; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Knihinicki1990_r_ibuprofen" status="model_quarantined" stale="false" population="rats" measured-compound="ibuprofen" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -52,13 +52,13 @@ Knihinicki RD, Day RO, Graham GG, Williams KM. Stereoselective disposition of ib
 
 ### Reviewer guidance
 
-**The model was held back because the elimination clearance for (R)-ibuprofen was missing, forcing the use of a placeholder value instead of a real estimate.**
+**No value for ibuprofen's elimination clearance; t6_deviations.**
 
-The record specifies a clearance of 12.6 ml/min/kg, but this parameter was not successfully extracted, leaving the model dependent on library defaults. A second reader also identified the omission of the inversion half-life and bioavailability, which should have been 32.1 and 0.50 respectively. Additionally, the second reader noted that the model should have included the interconversion between (R) and (S) flurbiprofen. Extracted — (R)-ibuprofen: CL 12.6 ml/min/kg, V 0.57 l/kg; ibuprofen: kabs 0.656 hour−1, tlag 0.1 hours.
+The model was built, but ibuprofen's elimination clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — (R)-ibuprofen: CL 12.6 ml/min/kg, V 0.57 l/kg; ibuprofen: kabs 0.656 hour−1, tlag 0.1 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ibuprofen, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

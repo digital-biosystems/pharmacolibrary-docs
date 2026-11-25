@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because cyclosporine total clearance (CL) is reported as −1.07, an implausible negative clearance.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="ciclosporin" model-id="Ciclosporin_Gao2022_reference" status="rejected" stale="false" population="Chinese pediatric patients with acquired aplastic anemia" measured-compound="cyclosporine" parameterization="apparent" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Gao X, Bian ZL, Qiao XH, Qian XW, Li J, Shen GM et al. Population Pharmacokineti
 
 ### Reviewer guidance
 
-**The record was rejected because cyclosporine total clearance (CL) is reported as −1.07, an implausible negative clearance.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The parameter is defined as total clearance, relating the rate of drug elimination to drug concentration, and its recorded value is −1.07. This is the implausible negative clearance identified as the reason for rejection. Extracted — ciclosporin: kabs 1.26 /h, CL/F 29.1 L/h, V1/F 325 L, Q/F 3.1 L/h, V2/F 262 L, CL -1.07.
+Extracted — ciclosporin: kabs 1.26 /h, CL/F 29.1 L/h, V1/F 325 L, Q/F 3.1 L/h, V2/F 262 L, CL -1.07.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

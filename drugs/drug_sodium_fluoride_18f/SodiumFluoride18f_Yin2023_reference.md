@@ -4,11 +4,11 @@
 
 # sodium fluoride (18F) — `SodiumFluoride18f_Yin2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
 > The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="sodium fluoride (18F)" model-id="SodiumFluoride18f_Yin2023_reference" status="rejected" stale="false" population="" measured-compound="sodium_fluoride_18f" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sodium fluoride (18F)" model-id="SodiumFluoride18f_Yin2023_reference" status="needs_review" stale="false" population="" measured-compound="sodium_fluoride_18f" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yin W, Facius A, Wagner T, Tsai M, Asgharnejad M, Lahu G et al. Population pharmacokinetics, enzyme occupancy, and 24S-hydroxycholesterol modeling of soticlestat, a novel cholesterol 24-hydroxylase inhibitor, in healthy adults. Clinical and translational science 16(7):1149-1162 (2023).
@@ -26,7 +26,7 @@ Yin W, Facius A, Wagner T, Tsai M, Asgharnejad M, Lahu G et al. Population pharm
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -35,7 +35,7 @@ Yin W, Facius A, Wagner T, Tsai M, Asgharnejad M, Lahu G et al. Population pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -121,9 +121,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

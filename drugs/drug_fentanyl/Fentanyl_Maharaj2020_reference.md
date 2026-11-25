@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Fentanyl's bioavailability and total clearance lack extracted values, so the model used placeholder defaults instead of concrete estimates.
+> No value for fentanyl's bioavailability and clearance; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Maharaj2020_reference" status="model_quarantined" stale="false" population="predominately obese children" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Maharaj AR, Wu H, Zimmerman KO, Speicher DG, Sullivan JE, Watt K et al. Dosing o
 
 ### Reviewer guidance
 
-**Fentanyl's bioavailability and total clearance lack extracted values, so the model used placeholder defaults instead of concrete estimates.**
+**No value for fentanyl's bioavailability and clearance; t6_deviations.**
 
-The record lists fentanyl clearance without a numerical value or unit, indicating no estimate was extracted from the source. The model builder explicitly defaulted bioavailability and clearance to placeholder values rather than using fitted or reported numbers. Consequently, the model was held back because it relied on generic assumptions instead of specific pharmacokinetic parameters. Extracted — fentanyl: CLnorm 32.5 L/h, V 10.8 L/70 kg, Vnorm 417 L/70 kg, kabs 0.27 minute -1, tlag 15 min.
+The model was built, but fentanyl's bioavailability and clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — fentanyl: CLnorm 32.5 L/h, V 10.8 L/70 kg, Vnorm 417 L/70 kg, kabs 0.27 minute -1, tlag 15 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

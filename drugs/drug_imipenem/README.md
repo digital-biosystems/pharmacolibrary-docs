@@ -48,7 +48,7 @@ Imipenem is a carbapenem antibiotic used to treat serious infections such as sep
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Fujimoto_1995_GABA_induced_Cl_current](drugs/drug_imipenem/pd_Fujimoto_1995_GABA_induced_Cl_current.md) | GABA-induced Cl- current biomarker turnover ← imipenem | — | Fujimoto M et al., Dual mechanisms of GABAA response inhib…, British journal of pharmaco… (1995) | [10.1111/j.1476-5381.1995.tb15957.x](https://doi.org/10.1111/j.1476-5381.1995.tb15957.x) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Fujimoto_1995_GABA_induced_Cl_current](drugs/drug_imipenem/pd_Fujimoto_1995_GABA_induced_Cl_current.md) | GABA-induced Cl- current biomarker turnover ← imipenem | — | Fujimoto M et al., Dual mechanisms of GABAA response inhib…, British journal of pharmaco… (1995) | [10.1111/j.1476-5381.1995.tb15957.x](https://doi.org/10.1111/j.1476-5381.1995.tb15957.x) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koomanachai_2010_CFR](drugs/drug_imipenem/pd_Koomanachai_2010_CFR.md) | Cumulative Fraction of Response (CFR) ← imipenem · model not identified | — | Koomanachai P et al., Pharmacodynamic modeling of intravenous…, Clinical therapeutics (2010) | [10.1016/j.clinthera.2010.04.003](https://doi.org/10.1016/j.clinthera.2010.04.003) |
 
 <details class="legend">

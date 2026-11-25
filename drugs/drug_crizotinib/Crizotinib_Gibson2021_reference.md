@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because the interpretation of crizotinib’s 66.7 L/h CL/F was disputed, with cross-reader agreement of 0.444.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="crizotinib" model-id="Crizotinib_Gibson2021_reference" status="needs_review" stale="false" population="children with progressive or recurrent high-grade and diffuse intrinsic pontine gliomas" measured-compound="crizotinib" parameterization="apparent" topology="1C"></div>
 
@@ -17,13 +17,13 @@ Gibson EG, Campagne O, Selvo NS, Gajjar A, Stewart CF. Population pharmacokineti
 
 ## Population and dosing
 
-**Population:** children with progressive or recurrent high-grade and diffuse intrinsic pontine gliomas · condition progressive or recurrent high-grade and diffuse intrinsic pontine gliomas · age group mixed · n = 36.
+**Population:** children with progressive or recurrent high-grade and diffuse intrinsic pontine gliomas · age group mixed.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference.svg" alt="Crizotinib_Gibson2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -33,13 +33,12 @@ Gibson EG, Campagne O, Selvo NS, Gajjar A, Stewart CF. Population pharmacokineti
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL/F | CL/F | 66.7 | L/h |
-| V1/F | V/F | 73.3 | L |
-| Crizotinib K DRUGIN (h−1) Mean | kabs | 0.672 | h−1 |
+| Crizotinib mean apparent clearance (CL/F) | CL/F | 66.7 | L/h/m2 |
+| Overweight/obese patients crizotinib apparent volume V1/F | V/F | 73.3 | L/m2 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4), qwen3.8-27b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,21 +48,20 @@ Gibson EG, Campagne O, Selvo NS, Gajjar A, Stewart CF. Population pharmacokineti
 
 ### Reviewer guidance
 
-**The record was held back because the interpretation of crizotinib’s 66.7 L/h CL/F was disputed, with cross-reader agreement of 0.444.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The second reader did not assign 66.7 to CL/F, instead assigning it to apparent clearance; they also assigned 73.3 L to apparent V1/F and did not assign the recorded 0.672 h−1 absorption rate. Cross-reader agreement was 0.444, below 0.5, with 0 of 1 reader agreeing. The record was built from the abstract alone, so summary statistics stood in for a fitted model; Tlag was defaulted, and the apparent parameterization assumed F=1, Fm=1, and no molar correction. Extracted — crizotinib: CL/F 66.7 L/h, V/F 73.3 L, kabs 0.672 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — crizotinib: CL/F 66.7 L/h/m2, V/F 73.3 L/m2.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl/f: this record has 66.7, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl/f: this record has none, the second reading 66.7; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 66.7 | L/h | 1.853e-05 | m3/s | L/h | exact (1) | Gibson_2021:abstract, Gibson_2021:abstract, Gibson_2021:abstract, Gibson_2021:abstract, Gibson_2021:abstract |
-| V1/F | `Q76` · V/F | 73.3 | L | 0.0733 | m3 | L | exact (1) | Gibson_2021:abstract, Gibson_2021:abstract |
-| Crizotinib K DRUGIN (h−1) Mean | `Q49` · kabs | 0.672 | h−1 | 0.0001867 | 1/s | 1/h | review_gapfill (0.7) | Wanika_2024:review |
+| Crizotinib mean apparent clearance (CL/F) | `Q27` · CL/F | 66.7 | L/h/m2 | 3.205e-05 | m3/s | l/(h·m2) | llm_confirmed (0.6) | Gibson_2021:abstract, Gibson_2021:abstract, Gibson_2021:abstract |
+| Overweight/obese patients crizotinib apparent volume V1/F | `Q76` · V/F | 73.3 | L/m2 | 0.1268 | m3 | l/m2 | llm_corrected (0.6) | Gibson_2021:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,37 +71,46 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'L/h/m2' (CL/F)
-- unit_dimension_unknown: 'L/m2' (V1/F)
-- implicit units: 'CL/F' → L/h (from the popPK convention: 'Apparent oral clearance is commonly reported in L/h; 66.7 is consistent with that scale.')
-- implicit units: 'V1/F' → L (from the popPK convention: 'Apparent central-compartment volume is commonly reported in L; 73.3 is consistent with that scale.')
+- dropped unlinked row (NIL): 'age range' — extend the ontology if this is a real PK parameter (source ['Gibson_2021:abstract'])
+- dropped unlinked row (NIL): 'crizotinib' — extend the ontology if this is a real PK parameter (source ['Gibson_2021:abstract'])
+- dropped unlinked row (NIL): 'dasatinib' — extend the ontology if this is a real PK parameter (source ['Gibson_2021:abstract'])
+- dropped unlinked row (NIL): 'clinically relevant impact' — extend the ontology if this is a real PK parameter (source ['Gibson_2021:abstract'])
+- dropped duplicate Q27 ('Overweight/obese patients crizotinib CL/F', value 46.2) — already have one for this compound
+- dropped duplicate Q27 ('other patients crizotinib CL/F', value 75.5) — already have one for this compound
+- dropped duplicate Q290 ('other patients crizotinib apparent volume V1/F', value 119.3) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=crizotinib
-- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V1/F' is the general volume)
+- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'Overweight/obese patients crizotinib apparent volume V1/F' is the general volume)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Wanika_2024's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Gibson_2021_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Gibson_2021_metadata.yaml (11 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 | `qwen3.8-27b` | partly confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f]` |  | 66.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[crizotinib dose]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[crizotinib mean apparent clearance]` | 66.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dasatinib dose]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[overweight/obese patients crizotinib apparent volume v1/f]` | 73.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f]` |  | 73.3 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cl/f]` | 66.7 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[crizotinib apparent clearance]` |  | 66.7 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[crizotinib apparent volume v1/f]` |  | 73.3 | only_one_extracted |
@@ -125,13 +132,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Gibson_2021:abstract', 'Gibson_2021:abstract', 'Gibson_2021:abstract', 'Gibson_2021:abstract', 'Gibson_2021:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Wanika_2024:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Gibson_2021:abstract', 'Gibson_2021:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Gibson_2021:abstract', 'Gibson_2021:abstract', 'Gibson_2021:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Gibson_2021:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 66.7 L/h | ['Gibson_2021:abstract', 'Gibson_2021:abstract', 'Gibson_2021:abstract', 'Gibson_2021:abstract', 'Gibson_2021:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 73.3 L | ['Gibson_2021:abstract', 'Gibson_2021:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 115 L/h | ['Gibson_2021:abstract', 'Gibson_2021:abstract', 'Gibson_2021:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 127 L | ['Gibson_2021:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -141,10 +147,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=crizotinib) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check agreement 0.444 is below 0.5: verdict partial, agreement 0.444, 0 of 1 reader(s) agree |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,12 +166,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference_modelica.zip" download>Crizotinib_Gibson2021_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference_fmi.zip" download>Crizotinib_Gibson2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference_matlab.zip" download>Crizotinib_Gibson2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference_matlab_simbio.zip" download>Crizotinib_Gibson2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference_sbml.zip" download>Crizotinib_Gibson2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference_cellml.zip" download>Crizotinib_Gibson2021_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference_modelica.zip" download>Crizotinib_Gibson2021_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference_fmi.zip" download>Crizotinib_Gibson2021_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference_matlab.zip" download>Crizotinib_Gibson2021_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference_matlab_simbio.zip" download>Crizotinib_Gibson2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference_sbml.zip" download>Crizotinib_Gibson2021_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference_cellml.zip" download>Crizotinib_Gibson2021_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
@@ -183,9 +189,9 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 0.0005 | kg |
-| input | model | `Cl` | 1.853e-05 | m3/s |
-| input | model | `VdPerKg` | 0.001047 | m3/kg |
-| input | model | `ka` | 0.0001867 | 1/s |
+| input | model | `Cl` | 3.205e-05 | m3/s |
+| input | model | `VdPerKg` | 0.001812 | m3/kg |
+| input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -214,7 +220,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 500 mg, single dose, first-order absorption (ka 0.672 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 500 mg oral (L01ED01) (defined daily dose)._
+**Administration: oral** — 500 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 500 mg oral (L01ED01) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_crizotinib/Crizotinib_Gibson2021_reference/Crizotinib_Gibson2021_reference_sim_controls.json"></dbs-fmusim>
 
@@ -224,4 +230,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcrizotinib%5D%20Crizotinib_Gibson2021_reference&body=Drug%3A%20crizotinib%0ARecord%3A%20Crizotinib_Gibson2021_reference%0APaper%3A%20Gibson_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_crizotinib/Crizotinib_Gibson2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:03 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:32 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Vinblastine's clearance lacked an extracted value, so a library placeholder stood in, causing the model to be held back.
+> No value for vinblastine's clearance; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Nelson1982_reference" status="model_quarantined" stale="false" population="patients with cancer" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Nelson RL. The comparative clinical pharmacology and pharmacokinetics of vindesi
 
 ### Reviewer guidance
 
-**Vinblastine's clearance lacked an extracted value, so a library placeholder stood in, causing the model to be held back.**
+**No value for vinblastine's clearance; t6_deviations.**
 
-The record lists rate constants for a two-compartment model and a volume of distribution, but omits any estimate for vinblastine's systemic clearance. Because no clearance value was available, the model builder defaulted this parameter to a standard placeholder rather than using a specific number. This substitution prevented the record from meeting publication standards, resulting in its quarantine rather than rejection for incorrect values. Extracted — vinblastine: k12 4.42 hr⁻¹, k21 0.829 hr⁻¹, k13 1.25 hr⁻¹, k31 0.07 hr⁻¹, ki0 0.085 hr⁻¹, V 0.328 liter/kg, t1/2α 0.077 hr, t1/2β 2.27 hr, … (+1).
+The model was built, but vinblastine's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — vinblastine: k12 4.42 hr⁻¹, k21 0.829 hr⁻¹, k13 1.25 hr⁻¹, k31 0.07 hr⁻¹, ki0 0.085 hr⁻¹, V 0.328 liter/kg, t1/2α 0.077 hr, t1/2β 2.27 hr, … (+1).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

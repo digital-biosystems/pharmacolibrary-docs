@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;remimazolam&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/&quot;},{&quot;label&quot;:&quot;Sch\u00fcttler_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remimazolam_Chen2025v2_reference&quot;,&quot;label&quot;:&quot;Chen_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Chen2025_base_model&quot;,&quot;label&quot;:&quot;Chen_2025_base_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025_base_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Chen2025_median_by_1_000_bootstraps&quot;,&quot;label&quot;:&quot;Chen_2025_median_by_1_000_bootstraps&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025_median_by_1_000_bootstraps.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Schttler2020_reference&quot;,&quot;label&quot;:&quot;Sch\u00fcttler_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Schttler2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Remimazolam_de2025_vellinga_38&quot;,&quot;label&quot;:&quot;de_2025_vellinga_38&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_de2025_vellinga_38.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2024_BIS&quot;,&quot;label&quot;:&quot;Chen_2024 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/pd_Chen_2024_BIS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2025_2_BIS&quot;,&quot;label&quot;:&quot;Chen_2025_2 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/pd_Chen_2025_2_BIS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chae_2022_MAP&quot;,&quot;label&quot;:&quot;Chae_2022 \u00b7 MAP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/pd_Chae_2022_MAP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Oh_2025_MBP&quot;,&quot;label&quot;:&quot;Oh_2025 \u00b7 MBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/pd_Oh_2025_MBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remimazolam_Chen2025v2_reference&quot;,&quot;label&quot;:&quot;Chen_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Chen2025_base_model&quot;,&quot;label&quot;:&quot;Chen_2025_base_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025_base_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Chen2025_median_by_1_000_bootstraps&quot;,&quot;label&quot;:&quot;Chen_2025_median_by_1_000_bootstraps&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Chen2025_median_by_1_000_bootstraps.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remimazolam_Schttler2020_reference&quot;,&quot;label&quot;:&quot;Sch\u00fcttler_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_Schttler2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Remimazolam_de2025_vellinga_38&quot;,&quot;label&quot;:&quot;de_2025_vellinga_38&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/Remimazolam_de2025_vellinga_38.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2024_BIS&quot;,&quot;label&quot;:&quot;Chen_2024 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/pd_Chen_2024_BIS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Chen_2025_2_BIS&quot;,&quot;label&quot;:&quot;Chen_2025_2 \u00b7 BIS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/pd_Chen_2025_2_BIS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Oh_2025_MBP&quot;,&quot;label&quot;:&quot;Oh_2025 \u00b7 MBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_remimazolam/pd_Oh_2025_MBP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the output variable points to the parent compartment instead of the measured analyte remimazolam.
+> T3_output_variable; t3_topology_template.
 
 <div class="pk-model-meta" hidden drug="remimazolam" model-id="Remimazolam_Schttler2020_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="remimazolam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -17,7 +17,7 @@ Schüttler J, Eisenried A, Lerch M, Fechner J, Jeleazcov C, Ihmsen H. Pharmacoki
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · condition healthy · age group adult · n = 20.
+**Population:** healthy male volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -39,7 +39,7 @@ Schüttler J, Eisenried A, Lerch M, Fechner J, Jeleazcov C, Ihmsen H. Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +49,13 @@ Schüttler J, Eisenried A, Lerch M, Fechner J, Jeleazcov C, Ihmsen H. Pharmacoki
 
 ### Reviewer guidance
 
-**The record was rejected because the output variable points to the parent compartment instead of the measured analyte remimazolam.**
+**T3_output_variable; t3_topology_template.**
 
-The model structure was incorrectly defined as a single compartment rather than a parent-metabolite system, and the output variable was set to the central compartment concentration rather than the measured compound. The second reader disagreed with the extraction of all parameters and the existence of the metabolite link, resulting in zero agreement. This discrepancy confirms the record's abstract-only limitation, where summary statistics for remimazolam were used without proper structural mapping. Extracted — remimazolam: CL 1.15 l/min, Vss 35.4 l, t1/2z 70 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — remimazolam: CL 1.15 l/min, Vss 35.4 l, t1/2z 70 min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has remimazolam → cns 7054 (metabolism), the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -63,7 +63,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 |---|---|---|---|---|---|---|---|---|
 | clearance | `Q22` · CL | 1.15 | l/min | 1.917e-05 | m3/s | l/min | exact (1) | Schüttler_2020:abstract |
 | steady-state volume of distribution | `Q65` · Vss | 35.4 | l | 0.0354 | m3 | l | llm_corrected (0.6) | Schüttler_2020:abstract |
-| terminal half-life | `Q57` · t1/2z | 70 | min | 4200 | s | min | llm (0.6) | Schüttler_2020:abstract |
+| terminal half-life | `Q57` · t1/2z | 70 | min | 4200 | s | min | half_life_rule (0.95) | Schüttler_2020:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,13 +77,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=remimazolam
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- status held at "Needs review" — not promoted
-- row roles (LLM): model_class=noncompartmental; 3/3 row label(s) assigned, 0 linked by role; re-tagged remimazolam→parent ×3
+- row roles (LLM): model_class=noncompartmental; 3/3 row label(s) assigned, 1 linked by role; re-tagged remimazolam→parent ×3
+- molar mass: no plausible PubChem entry for 'remimazolam metabolite' ('remimazolam metabolite') — left in mass units
+- molar mass: none found for 'remimazolam metabolite' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
@@ -91,26 +89,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>7 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['remimazolam', 'cns 7054', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[clearance]` | 1.15 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` |  | 1.15 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | 35.4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` |  | 35.4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[terminal half-life]` | 70 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[terminal half-life]` |  | 70 | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -141,9 +127,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_output_variable | fail | Metabolite_C (measured=remimazolam) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.3, 0 of 1 reader(s) agree | 0.3 | cross-check disputed by a second reader: verdict disputed, agreement 0.3, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -171,4 +158,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremimazolam%5D%20Remimazolam_Schttler2020_reference&body=Drug%3A%20remimazolam%0ARecord%3A%20Remimazolam_Schttler2020_reference%0APaper%3A%20Sch%C3%BCttler_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remimazolam/Remimazolam_Schttler2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 21:12 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:57 UTC</sub>

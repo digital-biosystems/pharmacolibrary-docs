@@ -32,7 +32,7 @@ Exemestane is an aromatase inhibitor used to treat breast cancer. It is given or
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Valle_2005_E1S](drugs/drug_exemestane/pd_Valle_2005_E1S.md) | plasma estrone sulphate (E1S) concentrations ← exemestane · indirect response — drug inhibits the production of plasma estrone sulphate (E1S) concentrations | — | Valle M et al., A predictive model for exemestane pharm…, British journal of clinical… (2005) | [10.1111/j.1365-2125.2005.02335.x](https://doi.org/10.1111/j.1365-2125.2005.02335.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Valle_2005_E1S](drugs/drug_exemestane/pd_Valle_2005_E1S.md) | plasma estrone sulphate (E1S) concentrations ← exemestane · indirect response — drug inhibits the production of plasma estrone sulphate (E1S) concentrations | — | Valle M et al., A predictive model for exemestane pharm…, British journal of clinical… (2005) | [10.1111/j.1365-2125.2005.02335.x](https://doi.org/10.1111/j.1365-2125.2005.02335.x) |
 
 ## Pharmacogenomics (PGx)
 

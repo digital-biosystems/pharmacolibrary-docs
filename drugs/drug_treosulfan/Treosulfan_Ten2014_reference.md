@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Treosulfan clearance (6.85 L/h) and volume of distribution (13.2 L) were disputed, so this abstract-only record was not accepted as an agreed fitted-model extraction.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="treosulfan" model-id="Treosulfan_Ten2014_reference" status="needs_review" stale="false" population="pediatric patients" measured-compound="treosulfan" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Ten Brink MH, Ackaert O, Zwaveling J, Bredius RG, Smiers FJ, den Hartigh J et al
 
 ### Reviewer guidance
 
-**Treosulfan clearance (6.85 L/h) and volume of distribution (13.2 L) were disputed, so this abstract-only record was not accepted as an agreed fitted-model extraction.**
+**cross_check_disputed; x1_cross_check.**
 
-Only the paper’s abstract was read, so reported summary statistics stood in for a fitted model. The second reader did not report values for clearance or volume of distribution and also disagreed on the dose compound and primary analyte; the agreement was 0.222, with 0 of 1 reader(s) agreeing. The second reader reported an infusion duration of 3, which was absent from this record. Extracted — treosulfan: CL 6.85 L/h, V 13.2 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — treosulfan: CL 6.85 L/h, V 13.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has treosulfan, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check contradicted by a second reader: verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

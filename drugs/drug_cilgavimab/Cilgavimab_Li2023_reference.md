@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cilgavimab’s listed volume of distribution of 4924.82 mL was rejected because the paper reports pharmacokinetics for HFB30132A, not cilgavimab.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="Cilgavimab" model-id="Cilgavimab_Li2023_reference" status="rejected" stale="false" population="" measured-compound="cilgavimab" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Li S, Wu X, Li N, Cao G, Wang J, Chen Y et al. Safety, tolerability, pharmacokin
 
 ### Reviewer guidance
 
-**Cilgavimab’s listed volume of distribution of 4924.82 mL was rejected because the paper reports pharmacokinetics for HFB30132A, not cilgavimab.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper reports clearance, volume of distribution, half-life, and a population pharmacokinetic model for HFB30132A; cilgavimab is mentioned only as a comparator or in the EUA context. The record lists cilgavimab clearance of 1.38 mL/h and volume of distribution of 4924.82 mL, but those values are not attributable to cilgavimab from this paper. Extracted — cilgavimab: CL 1.38 mL/h, V 4.92e+03 mL.
+Extracted — cilgavimab: CL 1.38 mL/h, V 4.92e+03 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 806127.47, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.75 (9 of 12 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

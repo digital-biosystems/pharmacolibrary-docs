@@ -16,7 +16,7 @@ Borghardt JM, Weber B, Staab A, Kunz C, Kloft C. Model-based evaluation of pulmo
 
 ## Population and dosing
 
-**Population:** asthmatic patients, COPD patients and healthy volunteers · condition asthma and COPD · age group adult · n = 710.
+**Population:** asthmatic patients, COPD patients and healthy volunteers · condition asthma, COPD, healthy · age group adult.
 
 ## Model
 
@@ -30,12 +30,12 @@ Borghardt JM, Weber B, Staab A, Kunz C, Kloft C. Model-based evaluation of pulmo
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| PBIO (asthma) | Fab | 48.7 | % |
-| absorption half-life (asthma) | t1/2ka | 18.5 | h |
+| The pulmonary bioavailable fraction (PBIO) ... in asthma | Fab | 48.7 |  |
+| absorption half-life ... in asthma | t1/2ka | 18.5 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.455). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ Borghardt JM, Weber B, Staab A, Kunz C, Kloft C. Model-based evaluation of pulmo
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is olodaterol and tiotropium bromide's own; they describe olodaterol.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has olodaterol, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption half-life (slow) in asthma: this record has none, the second reading 18.5; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -57,8 +57,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| PBIO (asthma) | `Q40` · Fab | 48.7 | % |  |  | % | llm (0.6) | Borghardt_2016:abstract |
-| absorption half-life (asthma) | `Q95` · t1/2ka | 18.5 | h | 6.66e+04 | s | h | llm_corrected (0.6) | Borghardt_2016:abstract |
+| The pulmonary bioavailable fraction (PBIO) ... in asthma | `Q40` · Fab | 48.7 |  |  |  |  | llm (0.6) | Borghardt_2016:abstract |
+| absorption half-life ... in asthma | `Q95` · t1/2ka | 18.5 | h | 6.66e+04 | s | h | half_life_rule (0.95) | Borghardt_2016:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -68,41 +68,37 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q40 ('PBIO (COPD)', value 53.6) — already have one for this compound
-- dropped duplicate Q40 ('slowly absorbed fraction of PBIO (asthma)', value 87.2) — already have one for this compound
-- dropped duplicate Q40 ('absorbed fraction of PBIO (COPD)', value 80.1) — already have one for this compound
-- dropped duplicate Q95 ('absorption half-life (COPD)', value 37.8) — already have one for this compound
-- dropped duplicate Q95 ('half-life of the slowest absorbed process (healthy volunteers)', value 18.5) — already have one for this compound
-- dropped duplicate Q40 ('fraction of PBIO characterized by slowest absorbed process (healthy volunteers)', value 74.6) — already have one for this compound
+- dropped unlinked row (NIL): 'of PBIO was slowly absorbed ... in asthma' — extend the ontology if this is a real PK parameter (source ['Borghardt_2016:abstract'])
+- dropped unlinked row (NIL): 'of PBIO was absorbed ... in COPD' — extend the ontology if this is a real PK parameter (source ['Borghardt_2016:abstract'])
+- dropped duplicate Q95 ('absorption half-life ... in COPD', value 37.8) — already have one for this compound
+- dropped duplicate Q95 ('half-life ... of the slowest absorbed process ... in healthy volunteers', value 18.5) — already have one for this compound
+- dropped unlinked row (NIL): 'of PBIO ... in healthy volunteers' — extend the ontology if this is a real PK parameter (source ['Borghardt_2016:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=olodaterol
 - molar mass: none found for 'olodaterol_and_tiotropium_bromide' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'olodaterol', not olodaterol_and_tiotropium_bromide — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Borghardt_2016_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.455 (5/11 fields) | 6 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.bioavailability.theta` |  | 48.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption half-life]` | 18.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption half‐life (slow) in asthma]` |  | 18.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[pbio]` | 48.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[pulmonary bioavailable fraction]` |  | 48.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[slowly absorbed fraction of pbio in asthma]` |  | 87.2 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | olodaterol | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | olodaterol | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[absorption half-life (slow) in asthma]` |  | 18.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption half-life ... in asthma]` | 18.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction of pbio absorbed in copd]` |  | 80.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pulmonary bioavailable fraction (pbio) in asthma]` |  | 48.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pulmonary bioavailable fraction (pbio) in copd]` |  | 53.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the pulmonary bioavailable fraction (pbio) ... in asthma]` | 48.7 |  | only_one_extracted |
 
 </details>
 
@@ -143,4 +139,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bolodaterol_and_tiotropium_bromide%5D%20OlodaterolAndTiotropiumBromide_Borghardt2016_reference&body=Drug%3A%20olodaterol_and_tiotropium_bromide%0ARecord%3A%20OlodaterolAndTiotropiumBromide_Borghardt2016_reference%0APaper%3A%20Borghardt_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_olodaterol_and_tiotropium_bromide/OlodaterolAndTiotropiumBromide_Borghardt2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 14:24 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:36 UTC</sub>

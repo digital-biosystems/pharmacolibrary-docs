@@ -27,7 +27,9 @@ Phenolsulfonphthalein is a diagnostic agent used to test for renal function and 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Hinchcliff_1987_reference](drugs/drug_phenolsulfonphthalein/Phenolsulfonphthalein_Hinchcliff1987_reference.md) | — | 1-compartment (no model) | 3 | Hinchcliff KW et al., Pharmacokinetics of phenolsulfonphthale…, American journal of veterin… (1987) | — |
-| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Nishida_2003_reference](drugs/drug_phenolsulfonphthalein/Phenolsulfonphthalein_Nishida2003_reference.md) | — | 1-compartment (no model) | 7 | Nishida K et al., Influence of liver disease on phenolsul…, Biological & pharmaceutical… (2003) | [10.1248/bpb.26.988](https://doi.org/10.1248/bpb.26.988) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Nishida_2003_ccl_4](drugs/drug_phenolsulfonphthalein/Phenolsulfonphthalein_Nishida2003_ccl_4.md) | — | 1-compartment (no model) | 7 | Nishida K et al., Influence of liver disease on phenolsul…, Biological & pharmaceutical… (2003) | [10.1248/bpb.26.988](https://doi.org/10.1248/bpb.26.988) |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [↳ gal](drugs/drug_phenolsulfonphthalein/Phenolsulfonphthalein_Nishida2003_gal.md) | — | 1-compartment (no model) | 8 |  |  |
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [↳ none_a](drugs/drug_phenolsulfonphthalein/Phenolsulfonphthalein_Nishida2003_none_a.md) | — | 1-compartment (no model) | 7 |  |  |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -41,37 +43,31 @@ Phenolsulfonphthalein is a diagnostic agent used to test for renal function and 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:20 | 0:59 | 1/1/0 | 0/0/0 | 0/0/0 | 46,365/2,413 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-24 02:59 | 0:03 | 1/3/0 | 0/0/0 | 0/0/0 | 4,294/151 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
-- **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **screened:** 3  ·  **relevant:** 2
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Hinchcliff_1987.pdf` | Hinchcliff KW et al., Pharmacokinetics of phenolsulfonphthale…, American journal of veterin… (1987) | popPK | 10 |  | [3631717](https://pubmed.ncbi.nlm.nih.gov/3631717) | Original PK study of PSP in horses/ponies with numeric CL, Vss, and half-life values reported directly in the abstract. |
-| `Nishida_2004.pdf` | Nishida K et al., Absorption characteristics of compounds…, European journal of pharmac… (2004) | popPK | 7 | [10.1016/j.ejpb.2004.04.016](https://doi.org/10.1016/j.ejpb.2004.04.016) | [15451548](https://pubmed.ncbi.nlm.nih.gov/15451548) | Reports numeric ka (0.0137 min−1) and absorption ratios for PSP from rat kidney surface with a two-compartment first-order absorption model, though it is an absorption study rather than full disposition characterization. |
-| `Honjo_2014.pdf` | Honjo H et al., Effect of selective cyclooxygenase-2 in…, Drug metabolism and drug in… (2014) | popPK | 6 | [10.1515/dmdi-2014-0008](https://doi.org/10.1515/dmdi-2014-0008) | [24870608](https://pubmed.ncbi.nlm.nih.gov/24870608) | PSP is the subject drug with a two-compartment PK analysis in rats, but numeric parameter values (CL, V, etc.) are not shown in the evidence, only percentages of urinary recovery. |
-
-<sub>queue written 2026-10-07 21:19 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Honjo_2014 | relevant | 6 | 3 | PSP is the subject drug with a two-compartment PK analysis in rats, but numeric parameter values (CL, V, etc.) are not shown in the evidence, only percentages of urinary recovery. |
-| popPK | Kym_1996 | irrelevant | 0 | 0 | This is an in-vitro bioassay study of impurities in phenol red, not a pharmacokinetic study of phenolsulfonphthalein; no PK parameters are reported. |
+| PGx | Hinchcliff_1987 | not_relevant | 0 | 0 | The paper reports pharmacokinetic differences between horses and ponies (species/breed), not the effect of a specific gene variant or genotype on PK parameters. |
+| popPK | Honjo_2014 | relevant | 9 | 2 | Study reports PK of PSP in rats using a two-compartment model, but specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
+| PGx | Honjo_2014 | not_relevant | 0 | 10 | The study reports the effect of a drug (lumiracoxib) on pharmacokinetics, not a gene variant/genotype (pharmacogenomic effect). |
+| popPK | Kym_1996 | irrelevant | 0 | 0 | The study investigates chemical impurities in the pH indicator phenol red and their effect on cellular ion transport, not the pharmacokinetics of the phenolsulfonphthalein drug. |
+| PGx | Kym_1996 | not_relevant | 0 | 0 | The paper reports pharmacological effects of impurities on cell ion transport, not pharmacogenomic effects on phenolsulfonphthalein pharmacokinetics/pharmacodynamics. |
+| PGx | Nishida_2003 | not_relevant | 0 | 0 | The paper investigates the influence of liver disease models (chemical intoxication) on PK, not genetic variants or genotypes. |
+| popPK | Nishida_2004 | irrelevant | 3 | 4 | The study reports an absorption rate constant (ka) and a two-compartment model fit for phenolsulfonphthalein in rats, but lacks key disposition parameters like clearance or volume. |
+| PGx | Nishida_2004 | not_relevant | 0 | 0 | The study investigates the physical absorption mechanism based on molecular weight in rats and does not report any pharmacogenomic effects involving gene variants or genotypes. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenolsulfonphthalein%5D&body=Drug%3A%20phenolsulfonphthalein%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenolsulfonphthalein/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 21:19 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 02:59 UTC</sub>

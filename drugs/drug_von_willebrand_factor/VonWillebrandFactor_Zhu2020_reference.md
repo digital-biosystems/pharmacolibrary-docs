@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> The von Willebrand factor record was held back because absorption-rate constant ka was unreported and defaulted, despite reporting CL/F of 0.466 mL/h/kg.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Zhu2020_reference" status="needs_review" stale="false" population="" measured-compound="von_willebrand_factor" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Zhu S, Gilbert JC, Hatala P, Harvey W, Liang Z, Gao S et al. The development and
 
 ### Reviewer guidance
 
-**The von Willebrand factor record was held back because absorption-rate constant ka was unreported and defaulted, despite reporting CL/F of 0.466 mL/h/kg.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-Ka and Tlag were defaulted; ka supplied first-order absorption from an extravascular depot, although it was not reported in the source. Ka used default values rather than estimates from this paper, and these values affect the simulated profile without support from the paper; the apparent parameterization also assumed F=1, Fm=1, and no molar correction. A second reader disputed the verdict, with agreement of 0.611 and disagreements over several parameter readings. Extracted — von willebrand factor: CL/F 0.466 mL/h/kg, V/F 55.3 mL/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — von willebrand factor: CL/F 0.466 mL/h/kg, V/F 55.3 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has none, the second reading 0.437; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.611, 0 of 1 reader(s) agree | 0.611 | cross-check disputed by a second reader: verdict disputed, agreement 0.611, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.611 (11 of 18 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.611 | cross-check contradicted by a second reader: verdict disputed; agreement 0.611 (11 of 18 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

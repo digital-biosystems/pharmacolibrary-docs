@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the cited paper does not study iodine, so the extracted pharmacokinetic parameters are invalid for this molecule.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="iodine" model-id="Iodine_Samukawa2017_reference" status="rejected" stale="false" population="" measured-compound="iodine" parameterization="apparent" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Samukawa Y, Mutoh M, Chen S, Mizui N. Mechanism-Based Pharmacokinetic-Pharmacody
 
 ### Reviewer guidance
 
-**The record was rejected because the cited paper does not study iodine, so the extracted pharmacokinetic parameters are invalid for this molecule.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source text indicates the paper's subject is another drug, and the relevance screen confirmed neither the title nor abstract names iodine. Consequently, the reported values such as oral clearance of 2.78 L/h and volume of distribution of 21.1 L cannot be attributed to iodine. A second reader disagreed on multiple extracted values, further highlighting inconsistencies in the data associated with the incorrect drug. Extracted — iodine: CL/F 2.78 L/h, V1 21.1 L, V2 18.9 L, Q 3.69 L/h, tlag 0.174 h, kabs 20.3 1/h.
+Extracted — iodine: CL/F 2.78 L/h, V1 21.1 L, V2 18.9 L, Q 3.69 L/h, tlag 0.174 h, kabs 20.3 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q329: this record has 9.72, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.562, 0 of 1 reader(s) agree | 0.562 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.562 (9 of 16 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.562 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

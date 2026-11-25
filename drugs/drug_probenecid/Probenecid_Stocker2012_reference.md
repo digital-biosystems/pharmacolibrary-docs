@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the source paper models oxypurinol, where probenecid is only a covariate, so the reported clearance does not describe probenecid pharmacokinetics.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="probenecid" model-id="Probenecid_Stocker2012_reference" status="rejected" stale="false" population="" measured-compound="probenecid" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Stocker SL, McLachlan AJ, Savic RM, Kirkpatrick CM, Graham GG, Williams KM et al
 
 ### Reviewer guidance
 
-**Record rejected because the source paper models oxypurinol, where probenecid is only a covariate, so the reported clearance does not describe probenecid pharmacokinetics.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The identified study subject is oxypurinol, not probenecid, meaning the extracted clearance of 0.6 L/h refers to the wrong molecule. Consequently, the volume of distribution (0.8656 L) and other parameters are invalid for probenecid. The second reader disagreed on the extraction of the clearance value, recording it as null rather than 0.6. Extracted — probenecid: CL/F 0.6 l h -1, V/F 0.866 L.
+Extracted — probenecid: CL/F 0.6 l h -1, V/F 0.866 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 0.6, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.667 (4 of 6 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

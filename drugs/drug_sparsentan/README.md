@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09X&quot;,&quot;href&quot;:&quot;atc/C09X.md&quot;},{&quot;label&quot;:&quot;sparsentan&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sparsentan_Wada2023_reference&quot;,&quot;label&quot;:&quot;Wada_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sparsentan/Sparsentan_Wada2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sparsentan_Wada2023_reference&quot;,&quot;label&quot;:&quot;Wada_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sparsentan/Sparsentan_Wada2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # sparsentan
 
@@ -25,13 +25,13 @@ It is given as a film-coated tablet taken by mouth. The drug is authorised in th
 
 ## Start here
 
-> **Wada_2023_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> healthy volunteers and patients with focal segmental glomerulosclerosis. [Run it in the simulator](drugs/drug_sparsentan/Sparsentan_Wada2023_reference.md?tab=Simulation) · [record](drugs/drug_sparsentan/Sparsentan_Wada2023_reference.md)
+> **Wada_2023_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy volunteers and patients with focal segmental glomerulosclerosis. [Run it in the simulator](drugs/drug_sparsentan/Sparsentan_Wada2023_reference.md?tab=Simulation) · [record](drugs/drug_sparsentan/Sparsentan_Wada2023_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Wada_2023 · CL</text><circle cx="221.5" cy="30.0" r="4" fill="#78909c"><title>Wada_2023 · CL: 1.23 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wada_2023 · CL/F</text><circle cx="396.1" cy="46.0" r="4" fill="#78909c"><title>Wada_2023 · CL/F: 3.88 L/h</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10</text><text x="184" y="34.0" font-size="11" text-anchor="end">Wada_2023 · CL</text><circle cx="221.5" cy="30.0" r="4" fill="#ef6c00"><title>Wada_2023 · CL: 1.23 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wada_2023 · CL/F</text><circle cx="396.1" cy="46.0" r="4" fill="#ef6c00"><title>Wada_2023 · CL/F: 3.88 L/h</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -39,7 +39,7 @@ It is given as a film-coated tablet taken by mouth. The drug is authorised in th
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Wada_2023_reference](drugs/drug_sparsentan/Sparsentan_Wada2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 8 (+3 cov.) | Wada R et al., Population pharmacokinetic analysis of…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12996](https://doi.org/10.1002/psp4.12996) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Wada_2023_reference](drugs/drug_sparsentan/Sparsentan_Wada2023_reference.md) | ▶ model + simulator | 2-compartment, oral | 8 (+3 cov.) | Wada R et al., Population pharmacokinetic analysis of…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12996](https://doi.org/10.1002/psp4.12996) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,7 +59,7 @@ It is given as a film-coated tablet taken by mouth. The drug is authorised in th
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

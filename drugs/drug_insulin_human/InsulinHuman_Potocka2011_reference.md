@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time were assigned generic placeholders because the paper's abstract did not report them for insulin.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="insulin (human)" model-id="InsulinHuman_Potocka2011_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="insulin_human" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Potocka E, Baughman RA, Derendorf H. Population pharmacokinetic model of human i
 
 ### Reviewer guidance
 
-**Bioavailability and lag time were assigned generic placeholders because the paper's abstract did not report them for insulin.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-Since only the abstract was read, the record lacks explicit estimates for these parameters. Consequently, standard values were used in place of specific data. These assumed values influence the simulated concentration-time profile but are not supported by the paper's content. Extracted — insulin human: CL 43.4 L/h, V1 5 L, Q 23.9 L/h, V2 30.7 L, kabs 2.35 h⁻¹.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — insulin human: CL 43.4 L/h, V1 5 L, Q 23.9 L/h, V2 30.7 L, kabs 2.35 h⁻¹.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (9 of 9 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

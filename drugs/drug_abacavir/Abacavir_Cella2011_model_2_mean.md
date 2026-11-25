@@ -52,7 +52,7 @@ Cella M, Zhao W, Jacqz-Aigrain E, Burger D, Danhof M, Della Pasqua O. Paediatric
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**Simulated; the covariate scenarios were not simulated (advisory).**
 
 The base model was simulated, not the covariate effects the record defines.
 

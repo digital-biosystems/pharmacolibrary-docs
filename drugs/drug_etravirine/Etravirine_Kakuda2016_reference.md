@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;etravirine&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/&quot;},{&quot;label&quot;:&quot;Kakuda_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etravirine_Kang2020v3_reference&quot;,&quot;label&quot;:&quot;Kang_2020_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Kang2020v3_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Green2017_reference&quot;,&quot;label&quot;:&quot;Green_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Green2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Lubomirov2013_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Lubomirov2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Courlet2021v2_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Courlet2021v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Duwal2019_reference&quot;,&quot;label&quot;:&quot;Duwal_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Duwal2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Han2024_reference&quot;,&quot;label&quot;:&quot;Han_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Han2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Jin2020_reference&quot;,&quot;label&quot;:&quot;Jin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Jin2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etravirine_Lubomirov2013_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Lubomirov2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Courlet2021v2_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Courlet2021v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Duwal2019_reference&quot;,&quot;label&quot;:&quot;Duwal_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Duwal2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Han2024_reference&quot;,&quot;label&quot;:&quot;Han_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Han2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Jin2020_reference&quot;,&quot;label&quot;:&quot;Jin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Jin2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Kang2020v3_reference&quot;,&quot;label&quot;:&quot;Kang_2020_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Kang2020v3_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="etravirine" model-id="Etravirine_Kakuda2016_reference" status="rejected" stale="false" population="treatment-experienced HIV-1-infected children and adolescents" measured-compound="etravirine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="etravirine" model-id="Etravirine_Kakuda2016_reference" status="rejected" stale="false" population="treatment-experienced, HIV-1-infected children and adolescents" measured-compound="etravirine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kakuda TN, Brochot A, Green B, Nijs S, Vis P, Opsomer M et al. Pharmacokinetics and Pharmacokinetic/Pharmacodynamic Relationships of Etravirine in HIV-1-Infected, Treatment-Experienced Children and Adolescents in PIANO. Journal of clinical pharmacology 56(11):1395–1405 (2016).
@@ -17,7 +17,7 @@ Kakuda TN, Brochot A, Green B, Nijs S, Vis P, Opsomer M et al. Pharmacokinetics 
 
 ## Population and dosing
 
-**Population:** treatment-experienced HIV-1-infected children and adolescents · condition HIV-1 infection · age group mixed.
+**Population:** treatment-experienced, HIV-1-infected children and adolescents · condition HIV-1 infection · age group mixed.
 
 ## Model
 
@@ -33,7 +33,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +47,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-Independently confirmed by `qwen3.8-27b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -56,20 +56,23 @@ Independently confirmed by `qwen3.8-27b`.
 **Interpretation flags:**
 - table section iiv: 'CL/F' routed out of structural estimates ('Interindividual variability terms were included on clearance (CL/F) and the first-order input rate constant (KA).')
 - table section iiv: 'KA' routed out of structural estimates ('Interindividual variability terms were included on clearance (CL/F) and the first-order input rate constant (KA).')
+- table section iiv: 'etravirine C0h' routed out of structural estimates ('Interindividual variability terms were included on clearance (CL/F) and the first-order input rate constant (KA).')
+- table section iiv: 'etravirine AUC0-12h' routed out of structural estimates ('Interindividual variability terms were included on clearance (CL/F) and the first-order input rate constant (KA).')
+- table section iiv: 'Virologic response' routed out of structural estimates ('Interindividual variability terms were included on clearance (CL/F) and the first-order input rate constant (KA).')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=etravirine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Kakuda_2016_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Kakuda_2016_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (4/4 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -110,4 +113,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betravirine%5D%20Etravirine_Kakuda2016_reference&body=Drug%3A%20etravirine%0ARecord%3A%20Etravirine_Kakuda2016_reference%0APaper%3A%20Kakuda_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etravirine/Etravirine_Kakuda2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:49 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:59 UTC</sub>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Adenosine monophosphates' clearance parameters carry substance-based units (nmol/L, µmol/h) conflicting with required mass-based dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q66 unit µmol/h ([substance] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="adefovir dipivoxil" model-id="AdefovirDipivoxil_Dong2024_reference" status="rejected" stale="false" population="healthy adults" measured-compound="adefovir" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Dong Q, Chen C, Taubert M, Bilal M, Kinzig M, Sörgel F et al. Understanding ade
 
 ### Reviewer guidance
 
-**Adenosine monophosphates' clearance parameters carry substance-based units (nmol/L, µmol/h) conflicting with required mass-based dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q66 unit µmol/h ([substance] / [time]) vs [mass] / [time].**
 
-The record lists an apparent metabolite clearance with a unit of nmol/L and a maximum metabolic rate with a unit of µmol/h. These substance-based units are dimensionally incompatible with the model's requirement for mass-based dimensions, such as mass/volume or mass/time. Additionally, one reported unit could not be converted to SI, leaving the parameter without a valid value. Extracted — adefovir: tlag 0.122 h, V 235 L, CLm/F 11.8 L/h, Km 170 nmol/L, Vmax 2.4 µmol/h, FR 0.59, kabs 5.18 h−1.
+A reported unit could not be converted (Km and Vmax), so that value has no SI equivalent. None of the extracted parameters is adefovir dipivoxil's own; they describe adefovir. Extracted — adefovir: tlag 0.122 h, V 235 L, CLm/F 11.8 L/h, Km 170 nmol/L, Vmax 2.4 µmol/h, FR 0.59, kabs 5.18 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

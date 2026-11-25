@@ -1,49 +1,39 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;lithium&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/&quot;},{&quot;label&quot;:&quot;Jermain_1991 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lithium_Jermain1991_reference&quot;,&quot;label&quot;:&quot;Jermain_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Jermain1991_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lithium_Yu2016_reference&quot;,&quot;label&quot;:&quot;Yu_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Yu2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Dickinson2026_reference&quot;,&quot;label&quot;:&quot;Dickinson_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Dickinson2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Gijsen2021_reference&quot;,&quot;label&quot;:&quot;Gijsen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Gijsen2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Morse2025_reference&quot;,&quot;label&quot;:&quot;Morse_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Morse2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Silva2023_reference&quot;,&quot;label&quot;:&quot;Silva_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Silva2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lithium_Jermain1991_reference&quot;,&quot;label&quot;:&quot;Jermain_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Jermain1991_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Lithium_Rosenthal1986_reference&quot;,&quot;label&quot;:&quot;Rosenthal_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Rosenthal1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Christie2025_reference&quot;,&quot;label&quot;:&quot;Christie_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Christie2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Dickinson2026_reference&quot;,&quot;label&quot;:&quot;Dickinson_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Dickinson2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Gijsen2021_reference&quot;,&quot;label&quot;:&quot;Gijsen_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Gijsen2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Morse2025_reference&quot;,&quot;label&quot;:&quot;Morse_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Morse2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lithium_Silva2023_reference&quot;,&quot;label&quot;:&quot;Silva_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lithium/Lithium_Silva2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # lithium — `Lithium_Jermain1991_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Lithium bioavailability F had no reported value and was left at a default; reported Vss 32.8 L was used as distribution volume, so the record was held back.
-
-<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Jermain1991_reference" status="needs_review" stale="false" population="psychiatric inpatients receiving lithium" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lithium" model-id="Lithium_Jermain1991_reference" status="simulated" stale="false" population="adult psychiatric inpatients with normal renal function" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Jermain DM, Crismon ML, Martin ES. Population pharmacokinetics of lithium. Clinical pharmacy 10(5):376–381 (1991).
 
 ## Population and dosing
 
-**Population:** psychiatric inpatients receiving lithium · condition psychiatric disorders · age group adult · n = 79.
+**Population:** adult psychiatric inpatients with normal renal function · condition psychiatric disorders · age group adult · n = 79.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference.svg" alt="Lithium_Jermain1991_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| mean lithium volume of distribution | Vss | 32.8 | L |
+| mean lithium volume of distribution | V | 32.8 | L |
 | mean lithium clearance | CL | 1.36 | L/hr |
-| Ka * (h−1) | kabs | 1.03 | h−1 |
-| Tlag (h) | tlag | 0.186 | h |
-
-## Caveats
-
-- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,22 +43,20 @@ Jermain DM, Crismon ML, Martin ES. Population pharmacokinetics of lithium. Clini
 
 ### Reviewer guidance
 
-**Lithium bioavailability F had no reported value and was left at a default; reported Vss 32.8 L was used as distribution volume, so the record was held back.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-Because only the abstract was read, its summary statistics stood in for a fitted model; lithium F was not reported and used a library default, which affects the simulated profile but is unsupported by this paper. The covariate scenarios were not simulated: the base model was simulated, not the covariate effects the record defines; the 1-compartment model used Vss 32.8 L as distribution volume, reproducing AUC and terminal half-life but not the early distribution phase. A second reader disputed the record (agreement 0.2, 0 of 1 reader agreeing), questioning lithium as the dose compound and primary analyte and the reported parameter estimates. Extracted — lithium: Vss 32.8 L, CL 1.36 L/hr, kabs 1.03 h−1, tlag 0.186 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lithium, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| mean lithium volume of distribution | `Q65` · Vss | 32.8 | L | 0.0328 | m3 | l | llm_corrected (0.6) | Jermain_1991:abstract |
+| mean lithium volume of distribution | `Q61` · V | 32.8 | L | 0.0328 | m3 | l | llm_confirmed (0.6) | Jermain_1991:abstract |
 | mean lithium clearance | `Q22` · CL | 1.36 | L/hr | 3.778e-07 | m3/s | l/h | llm_confirmed (0.6) | Jermain_1991:abstract |
-| Ka * (h−1) | `Q49` · kabs | 1.03 | h−1 | 0.0002861 | 1/s | 1/h | review_gapfill (0.7) | Aurélie_2023:review |
-| Tlag (h) | `Q83` · tlag | 0.186 | h | 669.6 | s | h | review_gapfill (0.7) | Aurélie_2023:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,47 +65,25 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F']
-- `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
-
 **Interpretation flags:**
-- covariate category for IIV from footnote/prose kept as documentation only (['Jermain_1991:abstract'])
-- routed 'coefficient of variation' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'coefficient of variation for lithium clearance' — extend the ontology if this is a real PK parameter (source ['Jermain_1991:abstract'])
+- dropped unlinked row (NIL): 'coefficient of variation, about' — extend the ontology if this is a real PK parameter (source ['Jermain_1991:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lithium
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V from Adamiszak_2025: its label names a different analyte ('flu') — 'volume of distribution (V) of FLU'
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Aurélie_2023's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Aurélie_2023's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Jermain_1991_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>8 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[ka *]` | 1.03 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean lithium clearance]` | 1.36 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean lithium clearance]` |  | 1.36 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean lithium volume of distribution]` | 32.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean lithium volume of distribution]` |  | 32.8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag]` | 0.186 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | lithium | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | lithium | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -133,25 +99,23 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Jermain_1991:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Aurélie_2023:review'] |
-| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Jermain_1991:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Aurélie_2023:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Jermain_1991:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.36 | ['Jermain_1991:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.36 L/h | ['Jermain_1991:abstract'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 32.8 L | ['Jermain_1991:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 32.8 L | ['Jermain_1991:abstract'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=lithium) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=lithium) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -167,15 +131,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_modelica.zip" download>Lithium_Jermain1991_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_fmi.zip" download>Lithium_Jermain1991_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_matlab.zip" download>Lithium_Jermain1991_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_matlab_simbio.zip" download>Lithium_Jermain1991_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_sbml.zip" download>Lithium_Jermain1991_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_cellml.zip" download>Lithium_Jermain1991_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_modelica.zip" download>Lithium_Jermain1991_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_fmi.zip" download>Lithium_Jermain1991_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_matlab.zip" download>Lithium_Jermain1991_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_matlab_simbio.zip" download>Lithium_Jermain1991_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_sbml.zip" download>Lithium_Jermain1991_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_cellml.zip" download>Lithium_Jermain1991_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 ## Model interface
@@ -185,20 +149,18 @@ The parameters this record sets on the template, in the template's SI units, and
 | direction | role | name | value | unit (SI) |
 |---|---|---|---|---|
 | input | compound | `MM` | 0.00694 | kg/mol |
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 669.6 | s |
+| input | dosing | `F` | 1 | 1 |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
+| input | dosing | `adminMass` | 1e-05 | kg |
 | input | model | `Cl` | 3.778e-07 | m3/s |
 | input | model | `VdPerKg` | 0.0004686 | m3/kg |
-| input | model | `ka` | 0.0002861 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
 ## Tested with
 
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
 - Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
 - No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
@@ -220,14 +182,14 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 1.03 /h, lag 11.2 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
-<dbs-fmusim paramsurl="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_lithium/Lithium_Jermain1991_reference/Lithium_Jermain1991_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Lithium_Jermain1991_reference_params.json` · controls `Lithium_Jermain1991_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Lithium_Jermain1991_reference_params.json` · controls `Lithium_Jermain1991_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blithium%5D%20Lithium_Jermain1991_reference&body=Drug%3A%20lithium%0ARecord%3A%20Lithium_Jermain1991_reference%0APaper%3A%20Jermain_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lithium/Lithium_Jermain1991_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 16:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:28 UTC</sub>

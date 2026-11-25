@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the metabolite N-desmethyl loperamide was not modeled as a distinct compartment, and the primary analyte identity was disputed by a second reader.
+> T3_output_variable; t3_param_coverage (+2 more).
 
 <div class="pk-model-meta" hidden drug="loperamide" model-id="Loperamide_Valenzuela2025_m1" status="rejected" stale="false" population="healthy adults" measured-compound="loperamide" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -56,13 +56,13 @@ Valenzuela B, Gisleskog PO, Cirillo I, Coenen E, Ariyawansa J, Ali SR et al. Eva
 
 ### Reviewer guidance
 
-**Record rejected because the metabolite N-desmethyl loperamide was not modeled as a distinct compartment, and the primary analyte identity was disputed by a second reader.**
+**T3_output_variable; t3_param_coverage (+2 more).**
 
-The model structure consisted of a single central compartment with peripheral distribution, omitting any pathway or compartment for the metabolite N-desmethyl loperamide. Consequently, the predicted output represented the parent compound loperamide, not the metabolite, while the review expected the measured analyte to be the metabolite. A second reader disagreed on the primary analyte, identifying it as an unnamed metabolite M1 rather than loperamide, and also disputed the specific identity of the metabolite link. Extracted — loperamide: CL/F 52.4 L/h, V1/F 1.65e+03 L, V2/F 805 L, Q/F 96.4 L/h, Frel 1, kabs 0.258 h−1, tlag 0.162 h, D1 0.714 h.
+Extracted — loperamide: CL/F 52.4 L/h, V1/F 1.65e+03 L, V2/F 805 L, Q/F 96.4 L/h, Frel 1, kabs 0.258 h−1, tlag 0.162 h, D1 0.714 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has loperamide, the second reading M1; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -200,12 +200,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.833 (10 of 12 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | cross-check contradicted by a second reader: verdict disputed; agreement 0.833 (10 of 12 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | -0.53 | 3.613e-06 |  | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 6.06 | 3.613e-06 |  | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
 | T1_cmax | reference | skipped | -0.76 | 3.613e-06 |  | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 5.46 | 3.613e-06 |  | unresolved concentration unit (exp 'msec', sim 'kg/m3') |
-| T1_tmax | reference | skipped |  | 9.379 |  | non-numeric value |
+| T1_tmax | reference | skipped |  | 9.379 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

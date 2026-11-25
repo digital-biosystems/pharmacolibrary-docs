@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Polymyxin b clearance lacks an explicit value, so a placeholder stood in and the model was quarantined.
+> No value for polymyxin b's clearance; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="polymyxin B" model-id="PolymyxinB_Chen2022_reference" status="model_quarantined" stale="false" population="patients with severe infections" measured-compound="polymyxin_b" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Chen N, Guo J, Xie J, Xu M, Hao X, Ma K et al. Population pharmacokinetics of po
 
 ### Reviewer guidance
 
-**Polymyxin b clearance lacks an explicit value, so a placeholder stood in and the model was quarantined.**
+**No value for polymyxin b's clearance; t6_deviations (+1 more).**
 
-While the record lists a total clearance of 2.43 L/h, the parameter was not extracted, forcing the use of a default value. A second reader failed to identify values for the structural parameters, including volumes and intercompartmental clearance. The model was held back to prevent publication with an invented clearance number. Extracted — polymyxin b: V1 13.4 L, V2 51.6 L, Q 8.78 L/h.
+The model was built, but polymyxin b's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — polymyxin b: V1 13.4 L, V2 51.6 L, Q 8.78 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polymyxin_b, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -179,7 +179,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

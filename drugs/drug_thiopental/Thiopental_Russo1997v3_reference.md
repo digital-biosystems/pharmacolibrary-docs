@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Thiopental record held back because bioavailability and lag time lacked explicit estimates, so standard placeholder values were used instead of data from the paper.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="thiopental" model-id="Thiopental_Russo1997v3_reference" status="needs_review" stale="false" population="pediatric patients with increased intracranial pressure" measured-compound="thiopental" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Russo H, Bressolle F, Duboin MP. Pharmacokinetics of high-dose thiopental in ped
 
 ### Reviewer guidance
 
-**Thiopental record held back because bioavailability and lag time lacked explicit estimates, so standard placeholder values were used instead of data from the paper.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record was derived from the abstract alone, meaning summary statistics replaced a fitted model. While the elimination half-life was 11.7 h, clearance was 2.42 ml/min/kg, and absorption rate constant was 1.68 h−1, bioavailability and lag time were not specified in the source. Consequently, generic defaults were applied to these parameters rather than extracting specific values. A second reader also disagreed on the inclusion of a 33% decrease in elimination half-life and the absorption rate constant. Extracted — thiopental: t1/2z 11.7 h, CL 2.42 ml/min/kg, V 2.18 L/kg, kabs 1.68 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — thiopental: t1/2z 11.7 h, CL 2.42 ml/min/kg, V 2.18 L/kg, kabs 1.68 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 33% decrease of the elimination half-life: this record has none, the second reading 33; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.778 (7 of 9 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

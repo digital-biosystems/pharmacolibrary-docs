@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Fluorouracil clearance and two intercompartmental clearances had no values, forcing the model to remain unpublished due to missing estimates.
+> No value for fluorouracil's elimination clearance, intercompartmental clearance and second intercompartmental clearance; t3_param_coverage (+1 more).
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Coustre1991_wm_1" status="model_quarantined" stale="false" population="cancer patients" measured-compound="fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -54,13 +54,13 @@ Coustère C, Mentré F, Sommadossi JP, Diasio RB, Steimer JL. A mathematical mod
 
 ### Reviewer guidance
 
-**Fluorouracil clearance and two intercompartmental clearances had no values, forcing the model to remain unpublished due to missing estimates.**
+**No value for fluorouracil's elimination clearance, intercompartmental clearance and second intercompartmental clearance; t3_param_coverage (+1 more).**
 
-The elimination and intercompartmental clearances were left without explicit values, so library placeholders stood in for them. A coverage check identified only five of eight expected parameters as covered, leaving specific volumes and the absorption rate unaccounted for. A second reader also disputed the elimination rate constant, suggesting 0.181 rather than the recorded 0.053. Extracted — fluorouracil: V1 8.26 L, V2 121 L, kel 0.053 1/min, k21 0.029 1/min, kabs 0.13 1/h; FUH2: V1 1.89 L, V2 4.87 L; FBAL: kel 0.035 1/min.
+The model was built, but fluorouracil's elimination clearance, intercompartmental clearance and second intercompartmental clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — fluorouracil: V1 8.26 L, V2 121 L, kel 0.053 1/min, k21 0.029 1/min, kabs 0.13 1/h; FUH2: V1 1.89 L, V2 4.87 L; FBAL: kel 0.035 1/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading 5-fluorouracil; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The elimination rate constant for tacrolimus lacks a unit, and the second reader identified a missing 4.1 value for fpg0.
+> Kel has no unit; c2_base_Q27 failed (ratio 1.3644).
 
 <div class="pk-model-meta" hidden drug="tacrolimus" model-id="Tacrolimus_Xiang2025_base" status="needs_review" stale="false" population="renal transplant recipients" measured-compound="tacrolimus" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Xiang Q, Yang Y, Li G, Chen S, Yang Y, Liu L et al. Population Pharmacokinetic/P
 
 ### Reviewer guidance
 
-**The elimination rate constant for tacrolimus lacks a unit, and the second reader identified a missing 4.1 value for fpg0.**
+**Kel has no unit; c2_base_Q27 failed (ratio 1.3644).**
 
-The parameter labeled β has a value of 0.264 but no specified unit, preventing necessary conversions. Additionally, a discrepancy exists where the second reader noted a value of 4.1 for a parameter absent from this record. Extracted — tacrolimus: kabs 3.09 h−1, V/F 1.5e+03 L, CL/F 24.7 L/h, kel 0.264.
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — tacrolimus: kabs 3.09 h−1, V/F 1.5e+03 L, CL/F 24.7 L/h, kel 0.264.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fpg0: this record has none, the second reading 4.1. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

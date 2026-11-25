@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Clearance of 12.88 L/kg/h is attributed to both ganaxolone and allopregnanolone without distinct values for each.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ganaxolone" model-id="Ganaxolone_Zolkowska2018_reference" status="needs_review" stale="false" population="mice" measured-compound="ganaxolone and allopregnanolone" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Zolkowska D, Wu CY, Rogawski MA. Intramuscular allopregnanolone and ganaxolone i
 
 ### Reviewer guidance
 
-**Clearance of 12.88 L/kg/h is attributed to both ganaxolone and allopregnanolone without distinct values for each.**
+**cross_check_disputed; x1_cross_check.**
 
-All extracted pharmacokinetic parameters, including clearance and volume of distribution, are labeled for the combined compounds ganaxolone and allopregnanolone rather than individually. The second reader disagreed with these assignments, identifying the clearance value as belonging specifically to allopregnanolone while leaving the ganaxolone value null. This discrepancy reflects the limitation of deriving model parameters from abstract-only summary statistics without explicit compound separation. Extracted — ganaxolone and allopregnanolone: Cmax 645 ng/mL, V 4.95 L/kg, CL 12.9 L/kg/h, t1/2z 16 minutes, Fab 97 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is ganaxolone's own; they describe ganaxolone and allopregnanolone. Extracted — ganaxolone and allopregnanolone: Cmax 645 ng/mL, V 4.95 L/kg, CL 12.9 L/kg/h, t1/2z 16 minutes, Fab 97 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ganaxolone and allopregnanolone, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -151,7 +151,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (3 of 15 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (3 of 15 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

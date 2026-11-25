@@ -26,7 +26,7 @@ _not available_
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Baba_1985_eradication_rate](drugs/drug_josamycin/pd_Baba_1985_eradication_rate.md) | bacteriological effect ← josamycin · model not identified | — | Baba S et al., [Clinical evaluation of the TMS-19-Q.GC…, The Japanese journal of ant… (1985) | — |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Baba_1985_incidence_of_side_effect](drugs/drug_josamycin/pd_Baba_1985_incidence_of_side_effect.md) | safety ← josamycin · model not identified | — | Baba S et al., [Clinical evaluation of the TMS-19-Q.GC…, The Japanese journal of ant… (1985) | — |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Baba_1985_usefulness_rate](drugs/drug_josamycin/pd_Baba_1985_usefulness_rate.md) | utility ← josamycin · model not identified | — | Baba S et al., [Clinical evaluation of the TMS-19-Q.GC…, The Japanese journal of ant… (1985) | — |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">in vitro</span> | [González_2007_none](drugs/drug_josamycin/pd_Gonz_lez_2007_none.md) | none biomarker turnover ← none | — | González de la Huebra MJ et al., Sample preparation strategy for the sim…, Journal of pharmaceutical a… (2007) | [10.1016/j.jpba.2006.12.008](https://doi.org/10.1016/j.jpba.2006.12.008) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.00).">in vitro</span> | [González_2007_none](drugs/drug_josamycin/pd_Gonz_lez_2007_none.md) | none biomarker turnover ← none | — | González de la Huebra MJ et al., Sample preparation strategy for the sim…, Journal of pharmaceutical a… (2007) | [10.1016/j.jpba.2006.12.008](https://doi.org/10.1016/j.jpba.2006.12.008) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Kuno_1988_MIC](drugs/drug_josamycin/pd_Kuno_1988_MIC.md) | MIC ← josamycin · inhibition effect | — | Kuno K et al., [Laboratory and clinical studies of rok…, The Japanese journal of ant… (1988) | — |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Okolicsanyi_1985_none](drugs/drug_josamycin/pd_Okolicsanyi_1985_none.md) | none ← none · model not identified | — | Okolicsanyi L et al., Pharmacokinetics of Josamycin in patien…, International journal of cl… (1985) | — |
 
@@ -42,7 +42,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-13 11:09 | 4:03 | 0/0/0 | 4/3/0 | 0/0/0 | 62,169/3,097 | einfracz / qwen3.8-27b | 30 | 2/28 | 30/0 | 0 |
+| 2026-10-13 11:09 | 4:03 | 0/0/0 | 5/2/0 | 0/0/0 | 62,169/3,097 | einfracz / qwen3.8-27b | 30 | 2/28 | 30/0 | 0 |
 
 ## Coverage
 

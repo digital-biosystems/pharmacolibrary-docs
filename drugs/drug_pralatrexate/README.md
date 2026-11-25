@@ -22,8 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Zhang_2020_viral_copy_numbers](drugs/drug_pralatrexate/pd_Zhang_2020_viral_copy_numbers.md) | viral copy numbers biomarker turnover ← Pralatrexate | — | Zhang H et al., A novel virtual screening procedure ide…, PLoS computational biology (2020) | [10.1371/journal.pcbi.1008489](https://doi.org/10.1371/journal.pcbi.1008489) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Mould_2009_mucositis](drugs/drug_pralatrexate/pd_Mould_2009_mucositis.md) | mucositis ← pralatrexate · categorical (graded) response model | — | Mould DR et al., A population pharmacokinetic and pharma…, Clinical pharmacology and t… (2009) | [10.1038/clpt.2009.80](https://doi.org/10.1038/clpt.2009.80) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Zhang_2020_viral_copy_numbers](drugs/drug_pralatrexate/pd_Zhang_2020_viral_copy_numbers.md) | viral copy numbers biomarker turnover ← Pralatrexate | — | Zhang H et al., A novel virtual screening procedure ide…, PLoS computational biology (2020) | [10.1371/journal.pcbi.1008489](https://doi.org/10.1371/journal.pcbi.1008489) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

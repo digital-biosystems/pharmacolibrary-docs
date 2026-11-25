@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Cefotaxime terminal half-life fails to match reported 0.8 h or 2.1 h, yielding 0.562 h and causing rejection.
+> The model does not reproduce the paper's terminal half-life (paper 0.8, model 0.562); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="cefotaxime" model-id="Cefotaxime_Trang1985_dctx" status="needs_review" stale="false" population="infants and children with meningitis" measured-compound="cefotaxime" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Trang JM, Jacobs RF, Kearns GL, Brown AL, Wells TG, Underwood FL et al. Cefotaxi
 
 ### Reviewer guidance
 
-**Cefotaxime terminal half-life fails to match reported 0.8 h or 2.1 h, yielding 0.562 h and causing rejection.**
+**The model does not reproduce the paper's terminal half-life (paper 0.8, model 0.562); x1_cross_check.**
 
-The simulated terminal half-life of 0.562 h deviates from the expected 0.8 h and 2.1 h values with ratios of 0.7026 and 0.2676. The cross-check agreement is 0.429, below the 0.5 threshold, with zero agreement from the second reader. The second reader disagreed on multiple parameters, including volume of distribution and total body clearance. Extracted — cefotaxime: AUC%ext 35.5, AUC 82.4 µg/ml · h, CLR 0.363 L/h/kg, V 0.361 liter/kg, CL 0.289 L/h/kg.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — cefotaxime: AUC%ext 35.5, AUC 82.4 µg/ml · h, CLR 0.363 L/h/kg, V 0.361 liter/kg, CL 0.289 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent steady-state volume of distribution: this record has 0.361, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -157,12 +157,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.429, 0 of 1 reader(s) agree | 0.429 | cross-check agreement 0.429 is below 0.5: verdict partial, agreement 0.429, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | fail | 0.8 | 0.5621 | 0.7026 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 2.1 | 0.5621 | 0.2676 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.8 | 0.5621 | 0.7026 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.1 | 0.5621 | 0.2676 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.1 | 0.5621 | 0.2676 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict partial; agreement 0.429 (6 of 14 compared fields agree, 8 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.429 | cross-check agreement 0.429 is below 0.5: verdict partial; agreement 0.429 (6 of 14 compared fields agree, 8 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | fail | 0.8 | 0.5621 | 0.7026 | reported 0.8 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.1 | 0.5621 | 0.2676 | reported 2.1 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.8 | 0.5621 | 0.7026 | reported 0.8 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.1 | 0.5621 | 0.2676 | reported 2.1 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.1 | 0.5621 | 0.2676 | reported 2.1 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;duloxetine&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/&quot;},{&quot;label&quot;:&quot;Skinner_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Sharma2000_reference&quot;,&quot;label&quot;:&quot;Sharma_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Sharma2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Shibata2023_reference&quot;,&quot;label&quot;:&quot;Shibata_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Shibata2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Tianmei2007_reference&quot;,&quot;label&quot;:&quot;Tianmei_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Tianmei2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Sharma2000_reference&quot;,&quot;label&quot;:&quot;Sharma_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Sharma2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Shibata2023_reference&quot;,&quot;label&quot;:&quot;Shibata_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Shibata2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Skinner2004_reference&quot;,&quot;label&quot;:&quot;Skinner_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Duloxetine_Tianmei2007_reference&quot;,&quot;label&quot;:&quot;Tianmei_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Tianmei2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # duloxetine — `Duloxetine_Skinner2004_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Duloxetine’s AUCt value of 824.5 was refused because its reported unit has the wrong time dimension for an area under the concentration-time curve.
+> cross_check_disputed; x1_cross_check.
 
-<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Skinner2004_reference" status="rejected" stale="false" population="healthy volunteers and women with urinary incontinence" measured-compound="duloxetine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Skinner2004_reference" status="needs_review" stale="false" population="women" measured-compound="duloxetine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Skinner MH, Kuan HY, Skerjanec A, Seger ME, Heathman M, O'Brien L et al. Effect of age on the pharmacokinetics of duloxetine in women. British journal of clinical pharmacology 57(1):54–61 (2004).
@@ -17,34 +17,31 @@ Skinner MH, Kuan HY, Skerjanec A, Seger ME, Heathman M, O'Brien L et al. Effect 
 
 ## Population and dosing
 
-**Population:** healthy volunteers and women with urinary incontinence · condition healthy and urinary incontinence · age group mixed · n = 222.
+**Population:** women · age group mixed.
 
 **Dosing:** 20, 30, 40, 80 mg, oral, multiple, every 24 h.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 8 extracted.  
-**Availability:** No model was generated from this record.
+**Parameters:** 3 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference.svg" alt="Duloxetine_Skinner2004_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| AUC 0-t (ng h -1 ml -1 ) | AUCt | 824.5 | ng h -1 ml -1 |
-| AUC 0-• (ng h -1 ml -1 ) | AUC∞ | 699.3 | ng h -1 ml -1 |
-| C max (ng ml -1 ) | Cmax | 49.8 | ng ml -1 |
-| T max | tmax | 0.139 | years |
-| CL/F (l h -1 ) | CL/F | 52.9 | l h -1 |
-| V/F (l) | V/F | 962.0 | l |
-| l z (h -1 ) | kel | 0.072 | h -1 |
-| Ka (h-1) | kabs | 1.46 | h-1 |
+| CL/F (l h -1 ) | CL/F | 52.6 | l h -1 |
+| V/F (l) | V/F | 994 | l |
+| Ka (h -1 ) | kabs | 0.268 | h -1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,26 +51,21 @@ Skinner MH, Kuan HY, Skerjanec A, Seger ME, Heathman M, O'Brien L et al. Effect 
 
 ### Reviewer guidance
 
-**Duloxetine’s AUCt value of 824.5 was refused because its reported unit has the wrong time dimension for an area under the concentration-time curve.**
+**cross_check_disputed; x1_cross_check.**
 
-The record reports AUCt 824.5 and AUC∞ 699.3 in ng h -1 ml -1, with dimensions of mass/(time·volume), whereas the parameters require mass·time/volume; the unit could not be converted to SI. The second reader recorded AUC∞ 699.3 and the absorption rate constant 1.46 as null, while this record lists those values. Extracted — duloxetine: AUCt 824 ng h -1 ml -1, AUC∞ 699 ng h -1 ml -1, Cmax 49.8 ng ml -1, tmax 0.139 years, CL/F 52.9 l h -1, V/F 962 l, kel 0.072 h -1, kabs 1.46 h-1.
+Extracted — duloxetine: CL/F 52.6 l h -1, V/F 994 l, kabs 0.268 h -1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc 0-•: this record has 699.3, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].value`: this record has 52.6, the second reading 0; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| AUC 0-t (ng h -1 ml -1 ) | `Q19` · AUCt | 824.5 | ng h -1 ml -1 |  |  | ng/(h·ml) | space_fold (0.95) | Skinner_2004_table_2:row3:col2, Skinner_2004_table_2:row3:col4 |
-| AUC 0-• (ng h -1 ml -1 ) | `Q17` · AUC∞ | 699.3 | ng h -1 ml -1 |  |  | ng/(h·ml) | llm_corrected (0.6) | Skinner_2004_table_2:row4:col1, Skinner_2004_table_2:row4:col2, Skinner_2004_table_2:row4:col4 |
-| C max (ng ml -1 ) | `Q32` · Cmax | 49.8 | ng ml -1 |  |  | ng/ml | space_fold (0.95) | Skinner_2004_table_2:row5:col1, Skinner_2004_table_2:row5:col2, Skinner_2004_table_2:row5:col4 |
-| T max | `Q56` · tmax | 0.139 | years |  |  | years | space_fold (0.95) | Skinner_2004_table_2:row6:col5 |
-| CL/F (l h -1 ) | `Q27` · CL/F | 52.9 | l h -1 | 1.469e-05 | m3/s | l/h | exact (1) | Skinner_2004_table_2:row7:col2, Skinner_2004_table_2:row7:col4 |
-| V/F (l) | `Q76` · V/F | 962.0 | l | 0.962 | m3 | l | exact (1) | Skinner_2004_table_2:row8:col1, Skinner_2004_table_2:row8:col2, Skinner_2004_table_2:row8:col4 |
-| l z (h -1 ) | `Q47` · kel | 0.072 | h -1 | 2e-05 | 1/s | 1/h | llm (0.6) | Skinner_2004_table_2:row9:col1, Skinner_2004_table_2:row9:col2, Skinner_2004_table_2:row9:col4 |
-| Ka (h-1) | `Q49` · kabs | 1.46 | h-1 | 0.0004056 | 1/s | 1/h | review_gapfill (0.7) | Chen_2024:review |
+| CL/F (l h -1 ) | `Q27` · CL/F | 52.6 | l h -1 | 1.461e-05 | m3/s | L/h | exact (1) | Skinner_2004:other_prose |
+| V/F (l) | `Q76` · V/F | 994 | l | 0.994 | m3 | L | exact (1) | Skinner_2004:other_prose |
+| Ka (h -1 ) | `Q49` · kabs | 0.268 | h -1 | 7.444e-05 | 1/s | 1/h | exact (1) | Skinner_2004:other_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -82,48 +74,44 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Parameter' — extend the ontology if this is a real PK parameter (source ['Skinner_2004_table_2:row1:col1', 'Skinner_2004_table_2:row1:col2'])
-- unit_dimension_mismatch: 'AUC 0-t (ng h -1 ml -1 )' → Q19 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'AUC 0-• (ng h -1 ml -1 )' → Q17 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- covariate creatinine for CLR from footnote/prose kept as documentation only (['tab_0:footnote'])
+- salvaged Q27 ('CL/F (l h -1 )'=52.6) from results prose — parameter table was unreadable
+- salvaged Q76 ('V/F (l)'=994) from results prose — parameter table was unreadable
+- salvaged Q49 ('Ka (h -1 )'=0.268) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=duloxetine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- gap-filled Q49 (kabs) from Chen_2024's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell Skinner_2004_table_2:row3:col1 = '6 77.7 (49)'
-- unparsed cell Skinner_2004_table_2:row3:col3 = '146.8 (-123.6, 417.3)'
-- unparsed cell Skinner_2004_table_2:row4:col3 = '167.6 (-119.1, 454.2)'
-- unparsed cell Skinner_2004_table_2:row5:col3 = '-0.4 (-15.1, 14.4)'
-- unparsed cell Skinner_2004_table_2:row6:col2 = '4.0 (2.0-4.0)'
-- unparsed cell Skinner_2004_table_2:row6:col3 = '5.0 (1.0-6.0)'
-- unparsed cell Skinner_2004_table_2:row6:col4 = '1 (-1, 2) b'
-- unparsed cell Skinner_2004_table_2:row7:col1 = '7 0.3 (48)'
-- unparsed cell Skinner_2004_table_2:row7:col3 = '-17.4 (-41.1, 6.23)'
-- unparsed cell Skinner_2004_table_2:row8:col3 = '115.9 (-168.6, 400.4)'
-- unparsed cell Skinner_2004_table_2:row9:col3 = '-0.022 (-0.036, -0.008)'
-- companion parameter table 2 transcribed (19 record(s))
+- table tab_0: no_numeric_grid
+- final table tab_0: no supported point estimates; targeted recovery unresolved
+- table Skinner_2004_table_2: unknown_column_role
+- table Skinner_2004_table_2: units_need_context
+- table Skinner_2004_table_2: ragged_grid
+- table Skinner_2004_table_2: unparsed_numeric_cell
+- companion parameter table 2 transcribed (31 record(s))
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[auc 0-•]` | 699.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 1.46 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f].value` | 52.6 | 0 | mismatch |
+| `gpt-oss-120b` | `parameters[ka].value` | 0.268 | 0.257 | mismatch |
+| `gpt-oss-120b` | `parameters[v/f].value` | 994 | 954 | mismatch |
 
 </details>
 
@@ -137,21 +125,26 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 7 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | ng h -1 ml -1 ([mass] / [time] / [length] ** 3) | ['Skinner_2004_table_2:row4:col1', 'Skinner_2004_table_2:row4:col2', 'Skinner_2004_table_2:row4:col4'] |
-| C5_dimension_Q19 | fail | [mass] * [time] / [length] ** 3 | ng h -1 ml -1 ([mass] / [time] / [length] ** 3) | ['Skinner_2004_table_2:row3:col2', 'Skinner_2004_table_2:row3:col4'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Skinner_2004_table_2:row7:col2', 'Skinner_2004_table_2:row7:col4'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Skinner_2004_table_2:row5:col1', 'Skinner_2004_table_2:row5:col2', 'Skinner_2004_table_2:row5:col4'] |
-| C5_dimension_Q47 | pass | 1 / [time] |  | ['Skinner_2004_table_2:row9:col1', 'Skinner_2004_table_2:row9:col2', 'Skinner_2004_table_2:row9:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Chen_2024:review'] |
-| C5_dimension_Q56 | pass | [time] |  | ['Skinner_2004_table_2:row6:col5'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Skinner_2004_table_2:row8:col1', 'Skinner_2004_table_2:row8:col2', 'Skinner_2004_table_2:row8:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 52.9 L/h | ['Skinner_2004_table_2:row7:col2', 'Skinner_2004_table_2:row7:col4'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 962 L | ['Skinner_2004_table_2:row8:col1', 'Skinner_2004_table_2:row8:col2', 'Skinner_2004_table_2:row8:col4'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 52.6 L/h | ['Skinner_2004:other_prose'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 994 L | ['Skinner_2004:other_prose'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=duloxetine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.571 (4 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.571 | cross-check contradicted by a second reader: verdict disputed; agreement 0.571 (4 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -163,16 +156,72 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_modelica.zip" download>Duloxetine_Skinner2004_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_fmi.zip" download>Duloxetine_Skinner2004_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_matlab.zip" download>Duloxetine_Skinner2004_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_matlab_simbio.zip" download>Duloxetine_Skinner2004_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_sbml.zip" download>Duloxetine_Skinner2004_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_cellml.zip" download>Duloxetine_Skinner2004_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.2974 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 2e-05 | kg |
+| input | model | `Cl` | 1.461e-05 | m3/s |
+| input | model | `VdPerKg` | 0.0142 | m3/kg |
+| input | model | `ka` | 7.444e-05 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Skinner MH, Kuan HY, Skerjanec A, Seger ME, Heathman M, O'Brien L et al. Effect of age on the pharmacokinetics of duloxetine in women. British journal of clinical pharmacology 57(1):54–61 (2004). [doi:10.1046/j.1365-2125.2003.01963.x](https://doi.org/10.1046/j.1365-2125.2003.01963.x)
+
+**This record:** Pharmacolibrary, model `Duloxetine_Skinner2004_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_duloxetine/Duloxetine_Skinner2004_reference>
+
+```bibtex
+@misc{pharmacolibrary_DuloxetineSkinner2004reference,
+  title  = {{Pharmacolibrary model Duloxetine_Skinner2004_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_duloxetine/Duloxetine_Skinner2004_reference},
+  note   = {Parameters from doi:10.1046/j.1365-2125.2003.01963.x},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 20 mg, single dose, first-order absorption (ka 0.268 /h, F 1). Doses in the paper: 20, 30, 40, 80 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_duloxetine/Duloxetine_Skinner2004_reference/Duloxetine_Skinner2004_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Duloxetine_Skinner2004_reference_params.json` · controls `Duloxetine_Skinner2004_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bduloxetine%5D%20Duloxetine_Skinner2004_reference&body=Drug%3A%20duloxetine%0ARecord%3A%20Duloxetine_Skinner2004_reference%0APaper%3A%20Skinner_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_duloxetine/Duloxetine_Skinner2004_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:17 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The abacavir model omits an explicit bioavailability estimate and fails to match the paper's 2.5 h terminal half-life.
+> The model does not reproduce the paper's terminal half-life (paper 2.5, model 1.21); f use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Capparelli2005_reference" status="needs_review" stale="false" population="adults with HIV" measured-compound="abacavir" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Capparelli EV, Letendre SL, Ellis RJ, Patel P, Holland D, McCutchan JA. Populati
 
 ### Reviewer guidance
 
-**The abacavir model omits an explicit bioavailability estimate and fails to match the paper's 2.5 h terminal half-life.**
+**The model does not reproduce the paper's terminal half-life (paper 2.5, model 1.21); f use library defaults, not estimates from this paper (+2 more).**
 
-The model's simulated terminal half-life was 1.21 h, deviating significantly from the 2.5 h reported in the study. Bioavailability was not extracted from the paper, so a placeholder value was used instead of a specific estimate. A second reader identified a potential backward transfer rate constant of 0.28 that was missing from the record. Extracted — abacavir: V 135 liters, AUC ratio 36 %, k12 0.075 h⁻¹, t1/2z 1.2 h, kabs 2.24 h-1, tlag 0.263 h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — abacavir: V 135 liters, AUC ratio 36 %, k12 0.075 h⁻¹, t1/2z 1.2 h, kabs 2.24 h-1, tlag 0.263 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k_csf-to-plasma: this record has none, the second reading 0.28. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_terminal | reference | fail | 2.5 | 1.209 | 0.4835 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.5 | 1.209 | 0.4835 | reported 2.5 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

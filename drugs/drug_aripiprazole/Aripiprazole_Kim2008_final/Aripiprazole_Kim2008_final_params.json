@@ -1,0 +1,49 @@
+{
+ "dose_source": "paper",
+ "model_id": "Aripiprazole_Kim2008_final",
+ "molar_masses": {
+  "C_M1": 0.446372,
+  "central.C": 0.448385
+ },
+ "note": "Values for the shared PK_3M_9C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observable_labels": {
+  "C_M1": "dehydroaripiprazole",
+  "C_central": "aripiprazole"
+ },
+ "observables": [
+  "central.C",
+  "C_M1"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  5.0,
+  15.0,
+  45.0
+ ],
+ "parameters": {
+  "CL1": 0.0,
+  "CLm1": 2.2277777777777777e-06,
+  "F": 1.0,
+  "MW": 0.448385,
+  "MW_m1": 0.446372,
+  "Tlag": 0.0,
+  "Vd1": 0.193,
+  "Vd1m1": 0.587,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-06,
+  "ka": 0.00029444444444444445,
+  "q1_m11": 8.75e-07
+ },
+ "reference_peak_times": {
+  "C_M1": 244655.7114228457,
+  "central.C": 14024.8496993988
+ },
+ "reference_peaks": {
+  "C_M1": 3.400292761057934e-06,
+  "central.C": 2.42596047616298e-05
+ },
+ "stop_time": 777600.0,
+ "template": "PK_3M_9C",
+ "template_fmu": "PK_3M_9C.fmu"
+}

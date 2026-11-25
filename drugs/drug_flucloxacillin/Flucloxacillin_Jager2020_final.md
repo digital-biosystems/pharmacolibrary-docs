@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The intercompartmental clearance Q for flucloxacillin was rejected because its unit L/h conflicts with the required mass/volume dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit mmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="flucloxacillin" model-id="Flucloxacillin_Jager2020_final" status="rejected" stale="false" population="critically ill patients" measured-compound="flucloxacillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Jager NGL, van Hest RM, Xie J, Wong G, Ulldemolins M, Brüggemann RJM et al. Opt
 
 ### Reviewer guidance
 
-**The intercompartmental clearance Q for flucloxacillin was rejected because its unit L/h conflicts with the required mass/volume dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit mmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The record lists the apparent intercompartmental clearance Q as 67.2 L/h. A dimensional check found a mismatch because the unit L/h does not match the parameter's expected mass/volume dimension. Consequently, the parameter lacked a valid SI value, preventing the model from passing validation. Extracted — flucloxacillin: Bmax 0.469 mmol/L, KD 0.0441 mmol/L, CL 55.4 L/h, V1 52.7 L, V2 56.8 L, Q 67.2 L/h.
+A reported unit could not be converted (Bmax and KD), so that value has no SI equivalent. Extracted — flucloxacillin: Bmax 0.469 mmol/L, KD 0.0441 mmol/L, CL 55.4 L/h, V1 52.7 L, V2 56.8 L, Q 67.2 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flucloxacillin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

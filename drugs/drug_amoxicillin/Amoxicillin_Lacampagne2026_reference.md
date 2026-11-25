@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
-> Amoxicillin's intercompartmental clearance and peripheral volume were rejected due to unit dimension mismatches.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit L/h.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time]; Q30 unit L/h.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Lacampagne2026_reference" status="rejected" stale="false" population="post-weaning piglets" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Lacampagne M, Hervé G, Claustre L, Jourdannaud N, Lacroix M, Roques B. Predicte
 
 ### Reviewer guidance
 
-**Amoxicillin's intercompartmental clearance and peripheral volume were rejected due to unit dimension mismatches.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit L/h.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time]; Q30 unit L/h.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].**
 
-The record lists the intercompartmental clearance and peripheral volume of distribution for amoxicillin both with the unit L/h.kg. This unit dimensionally conflicts with the expected dimensions for a volume of distribution, which should be L/kg. Consequently, the model was held back because these specific parameter units could not be converted to SI. Extracted — amoxicillin: CL 0.79 L/h.kg, Q 0.6 L/h.kg, V1 0.28 L/kg, V2 0.17 L/kg, kabs 0.41 1/h, Fab 25.
+A reported unit could not be converted (CL and Q), so that value has no SI equivalent. Extracted — amoxicillin: CL 0.79 L/h.kg, Q 0.6 L/h.kg, V1 0.28 L/kg, V2 0.17 L/kg, kabs 0.41 1/h, Fab 25.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

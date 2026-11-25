@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record for vericiguat was held back because covariate effects were not simulated and the second reader disputed the structural and bioavailability assignments.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="vericiguat" model-id="Vericiguat_Ruehs2021_reference" status="needs_review" stale="false" population="adults with heart failure and reduced ejection fraction" measured-compound="vericiguat" parameterization="apparent" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Ruehs H, Klein D, Frei M, Grevel J, Austin R, Becker C et al. Population Pharmac
 
 ### Reviewer guidance
 
-**The record for vericiguat was held back because covariate effects were not simulated and the second reader disputed the structural and bioavailability assignments.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-Covariate effects for sex, creatinine, body weight, and albumin were defined in the record, but only the reference individual was simulated. A second reader disagreed on model links, assigning a bioavailability value of 1.08 instead of leaving it null, and relocated the sex covariate effect from volume to clearance. The apparent bioavailability was assumed to be 1, and the lag time was left at its default value. Extracted — vericiguat: CL/F 1.3 L/h, V/F 38.9 L, kabs 1.5 1/h.
+The base model was simulated, not the covariate effects the record defines. Extracted — vericiguat: CL/F 1.3 L/h, V/F 38.9 L, kabs 1.5 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → none (none); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -197,7 +197,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.64, 0 of 1 reader(s) agree | 0.64 | cross-check disputed by a second reader: verdict disputed, agreement 0.64, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.64 (16 of 25 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.64 | cross-check contradicted by a second reader: verdict disputed; agreement 0.64 (16 of 25 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

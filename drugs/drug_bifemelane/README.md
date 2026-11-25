@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:46 | 0:32 | 0/0/0 | 0/0/0 | 0/0/0 | 12,745/157 | ollama / glm-5.3-flash | 0 | 1/0 | 0/0 | 0 |
+| 2026-11-23 18:41 | 0:01 | 0/0/0 | 0/0/0 | 0/0/0 | 219/59 | einfracz / qwen3.8-27b | 0 | 1/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -47,19 +47,23 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Kaneko_1991.pdf` | Kaneko S et al., Effects of several cerebroprotective dr…, European journal of pharmac… (1991) | pd | 4 | [10.1016/0922-4106(91)90086-w](https://doi.org/10.1016/0922-4106(91)90086-w) | [1652446](https://www.ncbi.nlm.nih.gov/pubmed/1652446) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-06 21:46 UTC</sub>
+<sub>queue written 2026-11-23 18:41 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bao_1986 | irrelevant | 1 | 0 | This is a pharmacodynamic efficacy study of bifemelane in gerbils with no PK disposition parameters (CL, V, t½, or PK model) reported. |
-| popPK | Gillis_1994 | irrelevant | 0 | 0 | The paper is a review of idebenone, and bifemelane is only mentioned as a comparator drug without any pharmacokinetic data. |
+| popPK | Bao_1986 | irrelevant | 0 | 0 | The study measures cerebral water content and regional cerebral blood flow, not pharmacokinetic disposition parameters like clearance or volume. |
+| PGx | Bao_1986 | not_relevant | 0 | 0 | The study investigates the pharmacodynamic effects of bifemelane on ischemic cerebral edema in gerbils but does not assess any gene variants, genotypes, or pharmacogenomic factors. |
+| popPK | Gillis_1994 | irrelevant | 0 | 0 | The paper is a review of idebenone where bifemelane is only mentioned as a comparator drug, with no PK parameters for bifemelane reported. |
 | PD | Gillis_1994 | not_relevant | 0 | 0 | The text is a review of idebenone and only mentions bifemelane as a comparator in clinical trials without providing any pharmacodynamic or exposure-response data for bifemelane. |
+| PGx | Gillis_1994 | not_relevant | 0 | 0 | The paper is a review of idebenone's pharmacology and does not report any pharmacogenomic effects on the PK/PD of bifemelane. |
 | popPK | Kaneko_1991 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
 | PD | Kaneko_1991 | not_relevant | 0 | 0 | The paper does not mention bifemelane or report any pharmacodynamic or exposure-response data for it. |
-| popPK | Suno_1988 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on lipid peroxidation inhibition, not a pharmacokinetic study, and bifemelane is only a comparator drug. |
+| PGx | Kaneko_1991 | not_relevant | 0 | 0 | The paper studies the effects of drugs on NMDA channels in Xenopus oocytes and does not mention bifemelane or any human pharmacogenomic analysis. |
+| popPK | Suno_1988 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
 | PD | Suno_1988 | not_relevant | 4 | 3 | The paper reports a concentration-effect relationship (IC50) for idebenone, but for bifemelane it only provides a single-point comparison at 100 μM and 1 μM without a dose-response curve or specific PD parameters. |
+| PGx | Suno_1988 | not_relevant | 0 | 0 | The paper studies idebenone and nootropic drugs in rat brain, not bifemelane, and does not report pharmacogenomic effects. |
 
 
 </details>

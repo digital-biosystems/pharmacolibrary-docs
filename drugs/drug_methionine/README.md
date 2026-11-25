@@ -41,8 +41,8 @@ L-methionine is a sulfur-containing amino acid and a nutrient classified as an a
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mizuta_2026_143B_viability](drugs/drug_methionine/pd_Mizuta_2026_143B_viability.md) | Cell viability (proliferation) of 143B cells as a function of methionine concentration ← L-methionine · direct sigmoid Emax (Hill) effect | — | Mizuta K et al., Methionine Restriction Alone Induces T-…, In vivo (Athens, Greece) (2026) | [10.21873/invivo.14239](https://doi.org/10.21873/invivo.14239) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mizuta_2026_K7M2_viability](drugs/drug_methionine/pd_Mizuta_2026_K7M2_viability.md) | Cell viability (proliferation) of K7M2 cells as a function of methionine concentration ← L-methionine · direct sigmoid Emax (Hill) effect | — | Mizuta K et al., Methionine Restriction Alone Induces T-…, In vivo (Athens, Greece) (2026) | [10.21873/invivo.14239](https://doi.org/10.21873/invivo.14239) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Mizuta_2026_viability](drugs/drug_methionine/pd_Mizuta_2026_viability.md) | cell viability ← L-methionine · direct sigmoid Emax (Hill) effect | — | Mizuta K et al., Methionine Restriction Alone Induces T-…, In vivo (Athens, Greece) (2026) | [10.21873/invivo.14239](https://doi.org/10.21873/invivo.14239) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Souza_2023_ADG](drugs/drug_methionine/pd_Souza_2023_ADG.md) | average daily gain ← SID methionine intake · direct linear effect | — | Souza VC et al., Systematic review and meta-analysis of…, Animal : an international j… (2023) | [10.1016/j.animal.2023.100894](https://doi.org/10.1016/j.animal.2023.100894) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span> | [Lignet_2023_Met_EF1](drugs/drug_methionine/pd_Lignet_2023_Met_EF1.md) | Met-EF1α (uncleaved N-terminal methionine elongation factor 1α) in tumor tissue, normalized to total protein ← M8891 (effect compartment concentration Ce) · indirect response — drug inhibits the loss of Met-EF1α (uncleaved N-terminal methionine elongation factor 1α) in tumor tissue, normalized to total protein | model (no simulator) | Lignet F et al., Preclinical Pharmacokinetics and Transl…, Pharmaceutical research (2023) | [10.1007/s11095-023-03611-z](https://doi.org/10.1007/s11095-023-03611-z) |
 
 <details class="legend">
@@ -57,25 +57,14 @@ L-methionine is a sulfur-containing amino acid and a nutrient classified as an a
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:04 | 6:11 | 2/0/0 | 2/1/0 | 0/0/0 | 304,483/22,840 | ollama / glm-5.3-flash | 9 | 0/9 | 9/0 | 0 |
+| 2026-11-24 01:27 | 0:04 | 2/0/0 | 2/1/0 | 0/0/0 | 4,456/198 | einfracz / qwen3.8-27b | 9 | 0/9 | 9/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 208 matched, 20 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Giulidori_1984.pdf` | Giulidori P et al., Pharmacokinetics of S-adenosyl-L-methio…, European journal of clinica… (1984) | popPK | 10 |  | [6489422](https://pubmed.ncbi.nlm.nih.gov/6489422) | Original human PK study of AdoMet (methionine-derived drug) with numeric V, t½, CL reported directly. |
-| `Eymard_2023.pdf` | Eymard N et al., Pharmacokinetic/pharmacodynamic model o…, Medical & biological engine… (2023) | popPK | 5 | [10.1007/s11517-023-02786-2](https://doi.org/10.1007/s11517-023-02786-2) | [36882575](https://pubmed.ncbi.nlm.nih.gov/36882575) | PK/PD modeling of methionine depletion exists, but no numeric parameter values are provided in the evidence; parameters were fitted from mouse data. |
-
-<sub>queue written 2026-10-07 18:59 UTC</sub>
 
 ## Screened and excluded
 
@@ -83,26 +72,38 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|
 | popPK | Begolo_2018 | irrelevant | 0 | 0 | This is a mechanism-of-action study of the benzoxaborole AN7973 in trypanosomes; methionine appears only as a radiolabel and in SAM metabolism, with no PK parameters for methionine. |
 | popPK | Bremm_2024 | irrelevant | 0 | 0 | This is a biomimetic polymersome/peptide self-assembly study; methionine appears only as part of an FFM tripeptide, with no pharmacokinetic parameters. |
-| popPK | Eymard_2023 | irrelevant | 5 | 2 | PK/PD modeling of methionine depletion exists, but no numeric parameter values are provided in the evidence; parameters were fitted from mouse data. |
+| popPK | Eymard_2023 | relevant | 8 | 2 | The study develops a pharmacokinetic model for methionine depletion in mice, but the specific numeric parameter values are not explicitly listed in the provided evidence, only described as being fitted to experimental data. |
+| PGx | Eymard_2023 | not_relevant | 0 | 0 | The paper develops a mathematical PK/PD model for a drug but does not report any pharmacogenomic effects of gene variants on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Giulidori_1984 | irrelevant | 0 | 0 | The study examines the pharmacokinetics of S-adenosyl-L-methionine (AdoMet), which is a downstream metabolite/compound in the methionine cycle, not the pharmacokinetics of methionine itself. |
+| PGx | Giulidori_1984 | not_relevant | 0 | 0 | The study reports PK parameters for S-adenosyl-L-methionine in healthy volunteers but does not assess any genetic variant or genotype effects (pharmacogenomics). |
 | popPK | Gong_2023 | irrelevant | 0 | 0 | This is a metabolomics cohort study of one-carbon metabolite levels and fetal growth, not a pharmacokinetic study of methionine; no disposition parameters (CL, V, ka, half-life, PK model) are reported. |
-| popPK | Huang_2021 | irrelevant | 0 | 0 | Methionine appears only as part of the MCD diet model; no PK parameters for methionine are reported. |
+| popPK | Huang_2021 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of triptolide for NAFLD, using methionine only as part of a dietary regimen (MCD diet) and not as the subject of pharmacokinetic analysis. |
+| PGx | Huang_2021 | not_relevant | 0 | 0 | The paper investigates the effect of triptolide on NAFLD in mice using a methionine/choline-deficient diet as a disease model, but it does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of methionine itself. |
 | popPK | Kim_2025 | irrelevant | 0 | 0 | The paper is about the FXR/PPARα agonist MHY5396, not methionine; methionine appears only as part of a methionine/choline-deficient diet model, and no methionine PK parameters are reported. |
-| popPK | Li_2023 | relevant | 4 | 5 | Reports kinetic parameters (Ki, k4) for [11C]methionine PET in humans, but these are tissue metabolic uptake rates rather than classic disposition PK (CL/V/Q/ka), and only Ki values are given numerically. |
+| popPK | Li_2023 | irrelevant | 2 | 6 | The study uses radiolabeled methionine ([11C]methionine) as a diagnostic PET tracer for myeloma, focusing on net uptake rate (Ki) and metabolic kinetics rather than systemic pharmacokinetic disposition parameters (CL, V) of the drug itself. |
+| PGx | Li_2023 | not_relevant | 2 | 5 | The paper analyzes a specific chromosomal translocation (t(4;14)) and its association with a metabolic parameter (k4) of [11C]methionine in myeloma patients, which is a clinical biomarker study rather than a report on a pharmacogenomic effect on the drug's PK/PD. |
 | popPK | Lignet_2023 | irrelevant | 0 | 0 | The drug studied is M8891, a methionine aminopeptidase-2 inhibitor — methionine is not the subject drug; no methionine PK parameters are reported. |
 | popPK | Martens_2021 | irrelevant | 3 | 2 | This is a PET imaging methodology study using [11C]methionine as a diagnostic tracer in glioma patients; it models tracer transport (K1, k2) but no numeric parameter values are given in the evidence, and methionine is a tracer/probe, not a disposition-PK subject drug. |
 | popPK | Michaud_2020 | irrelevant | 2 | 2 | 11C-methionine is only a comparator PET tracer; the PK modeling (k1, k2, Vb) is for 18F-Fluciclovine, and methionine-specific kinetic parameters are not reported numerically. |
-| popPK | Mizuta_2026 | irrelevant | 0 | 0 | This is a methionine-restriction cancer immunotherapy study with no PK disposition parameters (CL, V, ka, half-life, or PK model) for methionine; only EC50 values for cell proliferation are reported. |
-| popPK | Paiva_2020 | irrelevant | 0 | 0 | This is a phytochemical composition study of tea plant parts; methionine is only measured as a free amino acid content, with no pharmacokinetic parameters. |
-| popPK | Souza_2023 | irrelevant | 0 | 0 | This is a nutrition/utilization-efficiency meta-analysis in piglets, not a pharmacokinetic study reporting CL, V, half-life, or compartmental/PK parameters for methionine. |
-| popPK | Strathe_2011 | irrelevant | 0 | 0 | This is a nutritional dose-response requirement study in laying hens, not a pharmacokinetic study; no CL, V, or PK model parameters for methionine are reported. |
+| popPK | Mizuta_2026 | irrelevant | 0 | 0 | The study is an in-vitro and immunological experiment on methionine restriction and cancer cell viability (EC50), not a pharmacokinetic study reporting disposition parameters like clearance or volume for methionine. |
+| PGx | Mizuta_2026 | not_relevant | 0 | 0 | The paper investigates methionine restriction as a therapeutic intervention for osteosarcoma and does not report on pharmacogenomic effects of gene variants on the PK or PD of any drug. |
+| popPK | Paiva_2020 | irrelevant | 0 | 0 | The paper analyzes tea plant composition and is not a pharmacokinetic study for the drug methionine. |
+| PGx | Paiva_2020 | not_relevant | 0 | 0 | The study analyzes plant chemistry and antioxidant properties, not pharmacogenomics of methionine. |
+| popPK | Souza_2023 | irrelevant | 0 | 0 | The study is a systematic review of methionine utilization efficiency and growth performance (ADG) in piglets, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Souza_2023 | not_relevant | 0 | 0 | The study investigates the comparative efficacy and utilization efficiency of different chemical forms of methionine (an amino acid) in pigs, not the effect of gene variants on the pharmacokinetics or pharmacodynamics of a drug. |
+| popPK | Strathe_2011 | irrelevant | 0 | 0 | The study models methionine nutrient requirements in laying hens rather than pharmacokinetic disposition parameters (CL, V, half-life). |
+| PGx | Strathe_2011 | not_relevant | 0 | 0 | The paper focuses on nutritional requirements for methionine in laying hens and does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
 | popPK | Tatar_2022 | irrelevant | 0 | 0 | This is a medicinal chemistry/antiviral SAR study; methionine is only a synthetic building block, with no PK parameters and only in silico ADMET predictions. |
-| popPK | Vaalburg_1992 | irrelevant | 1 | 0 | A review of PET amino-acid tracers with no numeric PK parameters for methionine; values are not present. |
-| popPK | Zhang_2020 | irrelevant | 0 | 0 | This is a fungicide mechanism study; methionine is only mentioned as a biochemical reagent, with no PK parameters. |
-| popPK | Zhang_2021 | irrelevant | 0 | 0 | This is a fungicide resistance study where methionine is only a measured metabolite/rescue additive, with no pharmacokinetic parameters for methionine. |
+| popPK | Vaalburg_1992 | irrelevant | 1 | 0 | The paper is a review discussing methionine as a radiotracer for measuring protein synthesis via PET, rather than a study reporting pharmacokinetic disposition parameters (CL, V, ka) for methionine as a subject drug. |
+| PGx | Vaalburg_1992 | not_relevant | 0 | 0 | The paper discusses PET imaging methods and radiochemical properties of amino acids, not pharmacogenomic effects on PK/PD. |
+| popPK | Zhang_2020 | irrelevant | 0 | 0 | The study investigates the antifungal activity of a chemical compound on a fungus, with methionine used only as a co-supplement in biochemical assays, not as a subject of pharmacokinetic analysis. |
+| PGx | Zhang_2020 | not_relevant | 0 | 0 | The paper describes the mechanism of action of a fungicide on a plant pathogen and its interaction with methionine/cysteine metabolism in the fungus, not a human pharmacogenomic effect on the PK/PD of methionine. |
+| popPK | Zhang_2021 | irrelevant | 0 | 0 | The paper is a study on fungicide resistance in *Penicillium digitatum*, where methionine is only mentioned as a biochemical intermediate whose production is affected by the fungicide; no pharmacokinetic parameters for methionine are reported. |
+| PGx | Zhang_2021 | not_relevant | 0 | 0 | The paper concerns fungicide resistance in Penicillium digitatum, not the pharmacokinetics or pharmacodynamics of the amino acid methionine in humans or other relevant pharmacological contexts. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethionine%5D&body=Drug%3A%20methionine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methionine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 18:59 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 01:23 UTC</sub>

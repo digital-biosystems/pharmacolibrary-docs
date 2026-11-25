@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper models methylprednisolone, not ketamine, making the listed clearance and volume parameters inapplicable to the target drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="ketamine" model-id="Ketamine_Rantanen2026_reference" status="rejected" stale="false" population="" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Rantanen M, Keski-Nisula J, Olkkola KT, Neuvonen PJ, Pesonen E, Suominen P et al
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper models methylprednisolone, not ketamine, making the listed clearance and volume parameters inapplicable to the target drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source text explicitly states the study reports population pharmacokinetic parameters for methylprednisolone, with ketamine only mentioned as a concomitant anesthetic agent. Consequently, the extracted clearance of 0.076 L/min and volume of distribution of 27.1 L refer to the wrong drug. This subject mismatch invalidates the parameter values for the intended ketamine model. Extracted — ketamine: CL 0.076 L/min, V 27.1 L.
+Extracted — ketamine: CL 0.076 L/min, V 27.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 48.1, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.667 (4 of 6 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

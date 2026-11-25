@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 14:20 | 0:15 | 0/0/0 | 0/0/0 | 0/0/0 | 34,091/431 | ollama / glm-5.3-flash | 2 | 2/0 | 2/0 | 0 |
+| 2026-11-24 03:54 | 0:03 | 0/0/0 | 0/0/0 | 0/0/0 | 3,591/154 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
 
 ## Coverage
 
@@ -45,19 +45,24 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ravi_2013.pdf` | Ravi PR et al., LC method for determination of rasagili…, Journal of chromatographic… (2013) | popPK | 6 | [10.1093/chromsci/bms096](https://doi.org/10.1093/chromsci/bms096) | [22689899](https://pubmed.ncbi.nlm.nih.gov/22689899) | Oral PK study in rabbits with non-compartmental analysis of rasagiline, but no numeric parameter values appear in the evidence. |
+| `Ravi_2013.pdf` | Ravi PR et al., LC method for determination of rasagili…, Journal of chromatographic… (2013) | popPK | 9 | [10.1093/chromsci/bms096](https://doi.org/10.1093/chromsci/bms096) | [22689899](https://pubmed.ncbi.nlm.nih.gov/22689899) | The paper describes a pharmacokinetic study in rabbits and discusses parameter determination, but the specific numeric values for CL, V, etc., are not present in the provided abstract/evidence. |
 
-<sub>queue written 2026-10-06 14:20 UTC</sub>
+<sub>queue written 2026-11-24 03:54 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Fan_2024 | irrelevant | 0 | 0 | Rasagiline is only used as a positive control/comparator in an in-vitro MAO-B inhibitor screening study; no PK disposition parameters for rasagiline are reported. |
-| popPK | Glezer_2003 | irrelevant | 1 | 1 | In-vitro pharmacodynamic study of metabolites in rat vas deferens; no PK disposition parameters for rasagiline. |
-| popPK | Masellis_2016 | irrelevant | 0 | 0 | This is a pharmacogenetic association study of clinical response to rasagiline; no PK parameters (CL, V, ka, half-life, or PK model) are reported, only regression betas for UPDRS changes. |
-| popPK | Müller_2014 | irrelevant | 1 | 0 | This is a narrative review of rasagiline's clinical role in Parkinson's disease with no original PK parameters or numeric disposition values reported. |
-| popPK | Ravi_2013 | relevant | 6 | 2 | Oral PK study in rabbits with non-compartmental analysis of rasagiline, but no numeric parameter values appear in the evidence. |
+| popPK | Fan_2024 | irrelevant | 0 | 0 | This is an in-vitro screening study identifying new MAO-B inhibitors; rasagiline is used only as a positive control, and no pharmacokinetic parameters for rasagiline are reported. |
+| PGx | Fan_2024 | not_relevant | 0 | 0 | The paper focuses on the discovery of novel MAO-B inhibitors and does not investigate the pharmacogenomics of rasagiline. |
+| popPK | Glezer_2003 | irrelevant | 0 | 0 | The study is a pharmacological investigation of sympathomimetic effects in rat vas deferens, not a pharmacokinetic study of rasagiline. |
+| PGx | Glezer_2003 | not_relevant | 0 | 0 | The paper compares sympathomimetic effects of selegiline/rasagiline metabolites in rat vas deferens and does not report any pharmacogenomic (genotype/variant) effects on PK or PD parameters. |
+| popPK | Masellis_2016 | irrelevant | 0 | 0 | The paper is a pharmacogenetic study examining genetic associations with clinical symptom response (UPDRS scores) to rasagiline, not a pharmacokinetic study reporting quantitative disposition parameters. |
+| PGx | Masellis_2016 | not_relevant | 0 | 0 |  |
+| popPK | Müller_2014 | irrelevant | 1 | 0 | The paper is a narrative review without original quantitative PK parameter values. |
+| PGx | Müller_2014 | not_relevant | 0 | 0 | The text is a review discussing the clinical use and pharmacology of rasagiline but does not report any pharmacogenomic studies linking gene variants to its PK or PD parameters. |
+| popPK | Ravi_2013 | relevant | 9 | 2 | The paper describes a pharmacokinetic study in rabbits and discusses parameter determination, but the specific numeric values for CL, V, etc., are not present in the provided abstract/evidence. |
+| PGx | Ravi_2013 | not_relevant | 0 | 0 | The paper reports a standard pharmacokinetic study in rabbits using a new analytical method and contains no data on gene variants or genotypes. |
 
 
 </details>

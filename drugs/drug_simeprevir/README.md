@@ -32,16 +32,12 @@ Simeprevir is a protease inhibitor antiviral medication used for hepatitis C and
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chen_2025_EC50](drugs/drug_simeprevir/pd_Chen_2025_EC50.md) | SFTSV antiviral activity (EC50 of simeprevir) ← simeprevir · inhibition effect | — | Chen Q et al., Drug Repurposing: In Vitro Evaluation o…, Journal of medical virology (2025) | [10.1002/jmv.70655](https://doi.org/10.1002/jmv.70655) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gammeltoft_2021_percent_residual_infectivity_SARS_CoV_2_spike_protein_positive_cells](drugs/drug_simeprevir/pd_Gammeltoft_2021_percent_residual_infectivity_SARS_CoV_2_spik.md) | percent residual infectivity (SARS-CoV-2 spike protein-positive cells) ← simeprevir · direct sigmoid Emax (Hill) effect | — | Gammeltoft KA et al., Hepatitis C Virus Protease Inhibitors S…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02680-20](https://doi.org/10.1128/AAC.02680-20) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gammeltoft_2021_percent_residual_infectivity_SARS_CoV_2_spike_protein_positive_cells_2](drugs/drug_simeprevir/pd_Gammeltoft_2021_percent_residual_infectivity_SARS_CoV_2_spik.md) | percent residual infectivity (SARS-CoV-2 spike protein-positive cells) ← simeprevir · direct sigmoid Emax (Hill) effect | — | Gammeltoft KA et al., Hepatitis C Virus Protease Inhibitors S…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02680-20](https://doi.org/10.1128/AAC.02680-20) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gammeltoft_2021_percent_residual_infectivity_SARS_CoV_2_spike_protein_positive_cells_3](drugs/drug_simeprevir/pd_Gammeltoft_2021_percent_residual_infectivity_SARS_CoV_2_spik.md) | percent residual infectivity (SARS-CoV-2 spike protein-positive cells) ← simeprevir · direct sigmoid Emax (Hill) effect | — | Gammeltoft KA et al., Hepatitis C Virus Protease Inhibitors S…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02680-20](https://doi.org/10.1128/AAC.02680-20) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ma_2022_BRET_ratio](drugs/drug_simeprevir/pd_Ma_2022_BRET_ratio.md) | SARS-CoV-2 3CLpro activity (BRET ratio) ← simeprevir · direct sigmoid Emax (Hill) effect | — | Ma L et al., Repurposing of HIV/HCV protease inhibit…, Antiviral research (2022) | [10.1016/j.antiviral.2022.105419](https://doi.org/10.1016/j.antiviral.2022.105419) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Muturi_2022_SARS_CoV_2_replication_viral_RNA_yield_in_supernatant](drugs/drug_simeprevir/pd_Muturi_2022_SARS_CoV_2_replication_viral_RNA_yield_in_supern.md) | SARS-CoV-2 replication (viral RNA yield in supernatant) ← simeprevir · direct sigmoid Emax (Hill) effect | — | Muturi E et al., Effects of simeprevir on the replicatio…, International journal of an… (2022) | [10.1016/j.ijantimicag.2021.106499](https://doi.org/10.1016/j.ijantimicag.2021.106499) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Muturi_2022_Viral_yield](drugs/drug_simeprevir/pd_Muturi_2022_Viral_yield.md) | SARS-CoV-2 replication ← simeprevir · direct sigmoid Emax (Hill) effect | — | Muturi E et al., Effects of simeprevir on the replicatio…, International journal of an… (2022) | [10.1016/j.ijantimicag.2021.106499](https://doi.org/10.1016/j.ijantimicag.2021.106499) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Pathak_2020_CC50](drugs/drug_simeprevir/pd_Pathak_2020_CC50.md) | Cell viability (MTT assay) ← Simeprevir · direct sigmoid Emax (Hill) effect | — | Pathak N et al., Zika Virus NS3 Protease Pharmacophore A…, Scientific reports (2020) | [10.1038/s41598-020-65489-w](https://doi.org/10.1038/s41598-020-65489-w) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Pathak_2020_EC50](drugs/drug_simeprevir/pd_Pathak_2020_EC50.md) | ZIKV virus titer (virus production) ← Simeprevir · direct sigmoid Emax (Hill) effect | — | Pathak N et al., Zika Virus NS3 Protease Pharmacophore A…, Scientific reports (2020) | [10.1038/s41598-020-65489-w](https://doi.org/10.1038/s41598-020-65489-w) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Pathak_2020_IC50](drugs/drug_simeprevir/pd_Pathak_2020_IC50.md) | ZIKV NS2B/NS3 protease activity (% protease activity) ← Simeprevir · direct sigmoid Emax (Hill) effect | — | Pathak N et al., Zika Virus NS3 Protease Pharmacophore A…, Scientific reports (2020) | [10.1038/s41598-020-65489-w](https://doi.org/10.1038/s41598-020-65489-w) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ma_2022_Kd](drugs/drug_simeprevir/pd_Ma_2022_Kd.md) | Binding of simeprevir to SARS-CoV-2 3CLpro (MST) ← simeprevir · model not identified | — | Ma L et al., Repurposing of HIV/HCV protease inhibit…, Antiviral research (2022) | [10.1016/j.antiviral.2022.105419](https://doi.org/10.1016/j.antiviral.2022.105419) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Pham_2019_EC50](drugs/drug_simeprevir/pd_Pham_2019_EC50.md) | median effective concentration (EC50) ← simeprevir · inhibition effect | — | Pham LV et al., HCV genotype 1-6 NS3 residue 80 substit…, Journal of hepatology (2019) | [10.1016/j.jhep.2018.10.031](https://doi.org/10.1016/j.jhep.2018.10.031) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Valade_2018_odasir_apparent_clearance](drugs/drug_simeprevir/pd_Valade_2018_odasir_apparent_clearance.md) | odasir apparent clearance ← simeprevir · direct Emax (saturable) effect | — | Valade E et al., Characterizing the Pharmacokinetic Inte…, The AAPS journal (2018) | [10.1208/s12248-018-0271-0](https://doi.org/10.1208/s12248-018-0271-0) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,44 +51,46 @@ Simeprevir is a protease inhibitor antiviral medication used for hepatitis C and
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:25 | 2:20 | 0/1/0 | 9/1/0 | 0/0/0 | 163,561/8,560 | ollama / glm-5.3-flash | 5 | 1/4 | 5/0 | 0 |
+| 2026-11-24 04:36 | 0:05 | 0/1/0 | 6/0/0 | 0/0/0 | 3,692/200 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 15 matched, 12 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Valade_2018.pdf` | Valade E et al., Characterizing the Pharmacokinetic Inte…, The AAPS journal (2018) | popPK | 9 | [10.1208/s12248-018-0271-0](https://doi.org/10.1208/s12248-018-0271-0) | [30350297](https://pubmed.ncbi.nlm.nih.gov/30350297) | Population PK model of simeprevir in humans with quantitative DDI parameters (Ki 1610 ng/mL, +26% bioavailability), but full structural parameter values (CL, V) not shown in the abstract. |
-
-<sub>queue written 2026-10-07 17:23 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Balaraju_2015 | irrelevant | 0 | 0 | This is a medicinal chemistry/SAR synthesis study of new analogs; simeprevir is only mentioned as standard of care, with no PK parameters. |
-| popPK | Chen_2025 | irrelevant | 0 | 0 | In vitro antiviral drug screening with EC50/cytotoxicity data only; no PK disposition parameters for simeprevir. |
-| popPK | Gammeltoft_2021 | irrelevant | 0 | 0 | In-vitro antiviral efficacy study (EC50/CC50) of HCV protease inhibitors against SARS-CoV-2; no PK disposition parameters for simeprevir. |
-| popPK | Lenz_2015 | irrelevant | 0 | 0 | This is a virology/resistance study with no pharmacokinetic parameters for simeprevir; only in vitro EC50 fold changes are reported. |
-| popPK | Ma_2022 | irrelevant | 0 | 0 | In-vitro antiviral screening study of simeprevir against SARS-CoV-2 3CLpro; no PK disposition parameters reported. |
-| popPK | Muturi_2022 | irrelevant | 0 | 0 | This is an antiviral efficacy study (EC50/CC50, viral load) with no PK disposition parameters for simeprevir; PK is only mentioned qualitatively as a limitation. |
+| popPK | Balaraju_2015 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study focusing on the synthesis and anti-HCV activity of pyranone carboxamide analogs, and simeprevir is only mentioned as a current comparator treatment, with no pharmacokinetic data provided. |
+| PGx | Balaraju_2015 | not_relevant | 0 | 0 | The paper reports the synthesis of novel anti-HCV compounds and their in vitro activity, not pharmacogenomic effects on the PK/PD of simeprevir. |
+| popPK | Chen_2025 | irrelevant | 0 | 0 | The paper is an in vitro antiviral activity study reporting EC50 values, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for simeprevir. |
+| PGx | Chen_2025 | not_relevant | 0 | 0 | The paper evaluates antiviral activity and cytotoxicity in vitro, containing no data on genetic variants affecting pharmacokinetics or pharmacodynamics. |
+| popPK | Gammeltoft_2021 | irrelevant | 0 | 0 | The paper is an in vitro antiviral efficacy study of HCV protease inhibitors against SARS-CoV-2, containing no pharmacokinetic disposition parameters for simeprevir. |
+| PGx | Gammeltoft_2021 | not_relevant | 0 | 0 | The paper evaluates the in vitro antiviral efficacy of HCV protease inhibitors against SARS-CoV-2 and does not investigate any pharmacogenomic effects on simeprevir's pharmacokinetics or pharmacodynamics. |
+| popPK | Lenz_2015 | irrelevant | 0 | 0 | This is a virology study focusing on HCV genotype mutations and resistance, not a pharmacokinetic study reporting quantitative disposition parameters. |
+| PGx | Lenz_2015 | not_relevant | 0 | 0 | The paper analyzes viral NS3 mutations (HCV genotype) and their effect on drug susceptibility/resistance, rather than human host pharmacogenomics affecting PK/PD. |
+| popPK | Ma_2022 | irrelevant | 0 | 0 | The paper is an in vitro mechanistic study evaluating simeprevir's inhibitory activity against SARS-CoV-2 protease, not a pharmacokinetic study. |
+| PGx | Ma_2022 | not_relevant | 0 | 0 | The paper reports the pharmacodynamic activity of simeprevir against SARS-CoV-2 3CLpro (EC50), but does not report any variation in this effect based on human gene variants or genotypes. |
+| popPK | Muturi_2022 | irrelevant | 0 | 0 | The study evaluates the antiviral efficacy of simeprevir against SARS-CoV-2 in vitro and in mice, but does not report any quantitative pharmacokinetic parameters (clearance, volume, half-life, etc.) for the drug. |
+| PGx | Muturi_2022 | not_relevant | 0 | 0 | The paper assesses the antiviral efficacy of simeprevir against SARS-CoV-2 but does not investigate any gene variant or genotype effects on the pharmacokinetics or pharmacodynamics of the drug. |
 | popPK | Pathak_2020 | irrelevant | 0 | 0 | This is a Zika virus protease drug-discovery study; simeprevir appears only as an antiviral hit with EC50/IC50 values, with no PK disposition parameters. |
-| popPK | Pham_2019 | irrelevant | 0 | 0 | In-vitro virology study of HCV resistance (EC50) with no pharmacokinetic disposition parameters for simeprevir. |
-| popPK | Valade_2018_2 | irrelevant | 2 | 2 | Simeprevir is only a co-administered perpetrator drug; the population-PK model and numeric parameters (CL, Vmax, Km) are for AL-335 and its metabolites, not simeprevir itself. |
-| popPK | Wang_2015 | irrelevant | 0 | 0 | This is a medicinal chemistry/synergy study of HCV NS4B inhibitors; simeprevir is only a co-administered comparator with no PK parameters reported. |
-| popPK | Zhai_2018 | irrelevant | 1 | 2 | This is a preclinical PK study of GP205, a different HCV protease inhibitor; simeprevir is only a comparator (some rat AUC/half-life values for simeprevir appear in text, but simeprevir is not the subject drug). |
+| popPK | Pham_2019 | irrelevant | 0 | 0 | The study focuses on in-vitro viral fitness and resistance mechanisms (EC50, viral escape) rather than pharmacokinetic disposition parameters. |
+| PGx | Pham_2019 | not_relevant | 5 | 8 | The study reports a change in PD parameters (EC50/fold resistance) due to a viral protein mutation (HCV NS3P Q80K) and HCV genotype, rather than a human host pharmacogenomic variant affecting the PK/PD of the drug. |
+| popPK | Valade_2018 | relevant | 10 | 1 | The study is a relevant population PK analysis of simeprevir, but the specific numeric parameter values (CL, V, Q, etc.) are not explicitly listed in the provided text, which only highlights DDI-specific metrics (Ki, IC50) and effect magnitudes. |
+| PGx | Valade_2018 | not_relevant | 0 | 0 | The paper describes a pharmacokinetic drug-drug interaction (DDI) between simeprevir and odalasvir, not a pharmacogenomic effect based on gene variants or genotypes. |
+| popPK | Valade_2018_2 | irrelevant | 1 | 0 | The study focuses on the population PK of AL-335 and its metabolites, with simeprevir acting only as a co-administered interaction probe. |
+| PGx | Valade_2018_2 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of AL-335 and its drug-drug interaction with simeprevir, containing no data on genetic variants or pharmacogenomic effects on simeprevir's PK/PD. |
+| popPK | Wang_2015 | irrelevant | 0 | 0 | The paper describes the discovery of NS4B inhibitors and their synergistic effects with simeprevir in vitro, but does not report any pharmacokinetic parameters (CL, V, t1/2, etc.) for simeprevir. |
+| PGx | Wang_2015 | not_relevant | 0 | 0 | The study reports on the discovery of a new HCV NS4B inhibitor and its synergistic effects with simeprevir, but it does not contain any pharmacogenomic data or genotype-specific PK/PD parameters for simeprevir. |
+| popPK | Zhai_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of a new compound (GP205), with simeprevir serving only as a comparator/reference agent for which no quantitative PK parameters are reported. |
+| PGx | Zhai_2018 | not_relevant | 0 | 0 | The paper describes the preclinical profile of a new drug (GP205) and does not investigate the impact of genetic variants on the PK or PD of simeprevir. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsimeprevir%5D&body=Drug%3A%20simeprevir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_simeprevir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 17:23 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 04:36 UTC</sub>

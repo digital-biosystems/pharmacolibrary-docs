@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Betamethasone was held back because simulated peak timing, terminal half-life, and Cmax miss paper values; its apparent metabolite clearance is recorded as 9.29 L/h.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 3.3, model 3.44); the model does not reproduce the paper's terminal half-life (paper 7.5, model 3.84) (+2 more).
 
 <div class="pk-model-meta" hidden drug="betamethasone" model-id="Betamethasone_Krzyzanski2021v2_reference" status="needs_review" stale="false" population="healthy nonpregnant Indian women" measured-compound="betamethasone" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Krzyzanski W, Milad MA, Jobe AH, Peppard T, Bies RR, Jusko WJ. Population pharma
 
 ### Reviewer guidance
 
-**Betamethasone was held back because simulated peak timing, terminal half-life, and Cmax miss paper values; its apparent metabolite clearance is recorded as 9.29 L/h.**
+**The model does not reproduce the paper's time of the peak (tmax) (paper 3.3, model 3.44); the model does not reproduce the paper's terminal half-life (paper 7.5, model 3.84) (+2 more).**
 
-The model does not reproduce the paper's time of the peak (tmax) (paper 3.3, model 3.44). Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. The model does not reproduce the paper's terminal half-life (paper 7.5, model 3.84). Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The model does not reproduce the paper's peak concentration (Cmax) (paper 6.25e-05, model 6.38e-05). Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The model builder defaulted Tlag and assumed F=1 and Fm=1 with no molar correction; the second reader disputed the dose compound and several estimates, including apparent metabolite clearance (9.29 versus 5.95 L/h), renal bioavailability (1.04 versus 0.935), absorption rate constant (0.460 versus 0.971 1/h), and adjusted volume of distribution (51.3 versus 67.5 L). Extracted — betamethasone: CLm/F 9.29 L/h, V/F 51.3 L, kabs 0.46 1/h, FR 1.04, Fab 0.819, CL/F 0.538 L/h.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — betamethasone: CLm/F 9.29 L/h, V/F 51.3 L, kabs 0.46 1/h, FR 1.04, Fab 0.819, CL/F 0.538 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has betamethasone, the second reading betamethasone phosphate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -163,26 +163,26 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
-| T1_cmax | reference | pass | 6.25e-05 | 6.384e-05 | 1.022 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 7.89e-05 | 6.384e-05 | 0.8092 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 6.69e-05 | 6.384e-05 | 0.9543 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 6.59e-05 | 6.384e-05 | 0.9688 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 3.58e-05 | 6.384e-05 | 1.783 | ng/mL→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | fail | 7.5 | 3.844 | 0.5126 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 7.6 | 3.844 | 0.5058 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 14.9 | 3.844 | 0.258 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 18.7 | 3.844 | 0.2056 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 77.6 | 3.844 | 0.0495 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.74 | 3.844 | 5.195 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.57 | 3.844 | 6.745 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 109 | 3.844 | 0.0353 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 77.6 | 3.844 | 0.0495 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 3.3 | 3.439 | 1.042 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 2.2 | 3.439 | 1.563 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 2.8 | 3.439 | 1.228 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 2.6 | 3.439 | 1.323 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 2.9 | 3.439 | 1.186 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.5 (9 of 18 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (9 of 18 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | pass | 6.25e-05 | 6.384e-05 | 1.022 | reported 62.5 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 7.89e-05 | 6.384e-05 | 0.8092 | reported 78.9 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 6.69e-05 | 6.384e-05 | 0.9543 | reported 66.9 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 6.59e-05 | 6.384e-05 | 0.9688 | reported 65.9 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.58e-05 | 6.384e-05 | 1.783 | reported 35.8 ng/mL→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | fail | 7.5 | 3.844 | 0.5126 | reported 7.5 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 7.6 | 3.844 | 0.5058 | reported 7.6 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 14.9 | 3.844 | 0.258 | reported 14.9 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 18.7 | 3.844 | 0.2056 | reported 18.7 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 77.6 | 3.844 | 0.0495 | reported 77.6 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.74 | 3.844 | 5.195 | reported 0.74 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.57 | 3.844 | 6.745 | reported 0.57 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 109 | 3.844 | 0.0353 | reported 109.0 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 77.6 | 3.844 | 0.0495 | reported 77.6 h→SI vs simulated h |
+| T1_tmax | reference | pass | 3.3 | 3.439 | 1.042 | reported 3.3 h→SI vs simulated h |
+| T1_tmax | reference | fail | 2.2 | 3.439 | 1.563 | reported 2.2 h→SI vs simulated h |
+| T1_tmax | reference | pass | 2.8 | 3.439 | 1.228 | reported 2.8 h→SI vs simulated h |
+| T1_tmax | reference | fail | 2.6 | 3.439 | 1.323 | reported 2.6 h→SI vs simulated h |
+| T1_tmax | reference | pass | 2.9 | 3.439 | 1.186 | reported 2.9 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

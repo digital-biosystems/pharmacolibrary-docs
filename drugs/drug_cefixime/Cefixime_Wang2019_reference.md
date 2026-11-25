@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper does not study cefixime, so the extracted parameters and values are not attributable to this molecule.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="cefixime" model-id="Cefixime_Wang2019_reference" status="rejected" stale="false" population="" measured-compound="cefixime" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Wang D, Chen X, Xu H, Li Z. Population pharmacokinetics of tacrolimus in pediatr
 
 ### Reviewer guidance
 
-**The paper does not study cefixime, so the extracted parameters and values are not attributable to this molecule.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The record links cefixime parameters to Wang_2019, but the relevance screen rejected the paper because its title and abstract name a different drug. The second reader disagrees on a specific value (1.229) where this record holds null, but the primary cause is the incorrect drug subject. Extracted — cefixime: CL/F 29.7 l/h, V/F 1.12e+03 l, kabs 4.48 /h.
+Extracted — cefixime: CL/F 29.7 l/h, V/F 1.12e+03 l, kabs 4.48 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q315: this record has none, the second reading 1.229. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.857 (6 of 7 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

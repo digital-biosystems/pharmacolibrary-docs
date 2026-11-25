@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Nirmatrelvir Cmax simulation (0.00297) failed to match paper values (e.g., 0.00831) due to unit conversion errors.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00831, model 0.00297); the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="Nirmatrelvir" model-id="Nirmatrelvir_Zhang2024_reference" status="needs_review" stale="false" population="Chinese patients with COVID-19 infection" measured-compound="nirmatrelvir" parameterization="apparent" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Zhang R, Fan J, Han L, Mao J, Sun L, Yu Y et al. Population Pharmacokinetics and
 
 ### Reviewer guidance
 
-**Nirmatrelvir Cmax simulation (0.00297) failed to match paper values (e.g., 0.00831) due to unit conversion errors.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00831, model 0.00297); the covariate scenarios were not simulated (+1 more).**
 
-Simulated peak concentrations (0.00297) were consistently 20–80% lower than paper-reported Cmax values like 0.00831 or 0.016, indicating a systematic bias. The mismatch was attributed to a failure converting paper units (µg/mL) to the simulation's SI units (kg/m³). Additionally, the record was held back because the creatinine clearance covariate effect was never simulated, and a second reader disputed the record's compound identification. Extracted — nirmatrelvir: CL/F 3.16 L/h, V/F 39 L, kabs 0.8 h−1.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — nirmatrelvir: CL/F 3.16 L/h, V/F 39 L, kabs 0.8 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nirmatrelvir/ritonavir, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -159,18 +159,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | cross-check disputed by a second reader: verdict disputed, agreement 0.7, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 0.00831 | 0.002971 | 0.3575 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00947 | 0.002971 | 0.3137 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.01092 | 0.002971 | 0.2721 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.016 | 0.002971 | 0.1857 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00546 | 0.002971 | 0.5442 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.008 | 0.002971 | 0.3714 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00514 | 0.002971 | 0.578 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00629 | 0.002971 | 0.4724 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00831 | 0.002971 | 0.3575 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0123 | 0.002971 | 0.2416 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00831 | 0.002971 | 0.3575 | µg/mL→SI vs simulated kg/m3 |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.7 (7 of 10 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.7 | cross-check contradicted by a second reader: verdict disputed; agreement 0.7 (7 of 10 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 0.00831 | 0.002971 | 0.3575 | reported 8.31 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00947 | 0.002971 | 0.3137 | reported 9.47 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.01092 | 0.002971 | 0.2721 | reported 10.92 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.016 | 0.002971 | 0.1857 | reported 16.0 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00546 | 0.002971 | 0.5442 | reported 5.46 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.008 | 0.002971 | 0.3714 | reported 8.0 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00514 | 0.002971 | 0.578 | reported 5.14 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00629 | 0.002971 | 0.4724 | reported 6.29 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00831 | 0.002971 | 0.3575 | reported 8.31 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0123 | 0.002971 | 0.2416 | reported 12.3 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00831 | 0.002971 | 0.3575 | reported 8.31 µg/mL→SI vs simulated kg/m3 |
 
 <details class="legend">
 <summary>Validation definitions</summary>

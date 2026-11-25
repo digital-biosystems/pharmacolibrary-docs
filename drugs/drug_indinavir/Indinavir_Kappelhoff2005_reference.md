@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Indinavir’s bioavailability (F) has no extracted estimate and was defaulted, while a second reader reports 38.3; the record therefore relies on unsupported values.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="indinavir" model-id="Indinavir_Kappelhoff2005_reference" status="needs_review" stale="false" population="" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Kappelhoff BS, Huitema AD, Sankatsing SU, Meenhorst PL, Van Gorp EC, Mulder JW e
 
 ### Reviewer guidance
 
-**Indinavir’s bioavailability (F) has no extracted estimate and was defaulted, while a second reader reports 38.3; the record therefore relies on unsupported values.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-F uses library defaults, not estimates from this paper; these values affect the simulated profile but are unsupported by the paper and are neither extracted nor explicitly justified as conventions. The second reader reports 38.3 for F, but the record itself contains no estimate for this parameter. Extracted — indinavir: CL 10.5 l h -1, V 96.6 l, kabs 0.871 h -1, tlag 0.485 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — indinavir: CL 10.5 l h -1, V 96.6 l, kabs 0.871 h -1, tlag 0.485 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 38.3. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.889 (8 of 9 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.889 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

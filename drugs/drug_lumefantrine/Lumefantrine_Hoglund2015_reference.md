@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Lumefantrine’s Vmax is recorded as 1 L, which lacked SI conversion, while its desbutyl metabolite has 0 compartments, leaving the record rejected.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Hoglund2015_reference" status="rejected" stale="false" population="HIV-infected patients treated with antiretrovirals" measured-compound="lumefantrine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -53,13 +53,13 @@ Hoglund RM, Byakika-Kibwika P, Lamorde M, Merry C, Ashton M, Hanpithakpong W et 
 
 ### Reviewer guidance
 
-**Lumefantrine’s Vmax is recorded as 1 L, which lacked SI conversion, while its desbutyl metabolite has 0 compartments, leaving the record rejected.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists desbutyl-lumefantrine and dihydroartemisinin with 0 compartments; the finding was an unreachable or orphan metabolite. The reported unit L is also attached to lumefantrine’s n_transit value of 1 and Fab value of 1, and could not be converted to SI. Extracted — lumefantrine: n_transit 1 l, Fab 1 l, Vmax 1 l, CL 168 %.
+A reported unit could not be converted (n_transit, Fab and CL), so that value has no SI equivalent. Extracted — lumefantrine: n_transit 1 l, Fab 1 l, Vmax 1 l, CL 168 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artemether-lumefantrine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

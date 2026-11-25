@@ -41,14 +41,13 @@ Ibrutinib is a protein kinase inhibitor used for cancers such as mantle cell lym
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T3_param_coverage</sub> | [Gisleskog_2025_final_updated_population_pk_model](drugs/drug_ibrutinib/Ibrutinib_Gisleskog2025_final_updated_population_pk_model.md) | ▶ model + simulator | 1-compartment, oral | 8 (+1 cov.) | Gisleskog PO et al., Population Pharmacokinetic and Exposure…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70061](https://doi.org/10.1002/psp4.70061) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T3_param_coverage</sub> | [↳ previous_population_pk_model](drugs/drug_ibrutinib/Ibrutinib_Gisleskog2025_previous_population_pk_model.md) | ▶ model + simulator | 1-compartment, oral | 8 (+2 cov.) |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Ogawa_2023_reference](drugs/drug_ibrutinib/Ibrutinib_Ogawa2023_reference.md) | — | 1-compartment (no model) | 1 | Ogawa T et al., Population Pharmacokinetic and Exposure…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2200](https://doi.org/10.1002/jcph.2200) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Ogawa_2023_reference](drugs/drug_ibrutinib/Ibrutinib_Ogawa2023_reference.md) | — | 1-compartment (no model) | 1 | Ogawa T et al., Population Pharmacokinetic and Exposure…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2200](https://doi.org/10.1002/jcph.2200) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Daneshmanesh_2018_MTT](drugs/drug_ibrutinib/pd_Daneshmanesh_2018_MTT.md) | Cytotoxicity (MTT) ← ibrutinib · direct sigmoid Emax (Hill) effect | — | Daneshmanesh AH et al., A receptor tyrosine kinase ROR1 inhibit…, PloS one (2018) | [10.1371/journal.pone.0198038](https://doi.org/10.1371/journal.pone.0198038) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gallais_2021_ALC](drugs/drug_ibrutinib/pd_Gallais_2021_ALC.md) | Absolute lymphocyte count ← ibrutinib · stimulation effect | — | Gallais F et al., Population PK-PD Modeling of Circulatin…, Clinical pharmacology and t… (2021) | [10.1002/cpt.2189](https://doi.org/10.1002/cpt.2189) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sauvey_2021_Percent_inhibition_of_trophozoite_growth](drugs/drug_ibrutinib/pd_Sauvey_2021_Percent_inhibition_of_trophozoite_growth.md) | Percent inhibition of trophozoite growth ← ibrutinib · inhibition effect | — | Sauvey C et al., Antineoplastic kinase inhibitors: A new…, PLoS neglected tropical dis… (2021) | [10.1371/journal.pntd.0008425](https://doi.org/10.1371/journal.pntd.0008425) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gisleskog_2025_CRR](drugs/drug_ibrutinib/pd_Gisleskog_2025_CRR.md) | CRR ← ibrutinib · categorical (graded) response model | — | Gisleskog PO et al., Population Pharmacokinetic and Exposure…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70061](https://doi.org/10.1002/psp4.70061) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Gisleskog_2025_OS](drugs/drug_ibrutinib/pd_Gisleskog_2025_OS.md) | OS ← ibrutinib · time-to-event model | — | Gisleskog PO et al., Population Pharmacokinetic and Exposure…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70061](https://doi.org/10.1002/psp4.70061) |
@@ -73,7 +72,7 @@ Ibrutinib is a protein kinase inhibitor used for cancers such as mantle cell lym
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 01:30 | 8:52 | 2/1/0 | 11/2/0 | 0/0/0 | 261,097/50,402 | openai / gpt-6-luna | 9 | 0/9 | 9/0 | 0 |
+| 2026-11-24 01:13 | 0:07 | 2/1/0 | 10/2/0 | 0/0/0 | 3,667/184 | einfracz / qwen3.8-27b | 9 | 0/9 | 9/0 | 0 |
 
 ## Coverage
 
@@ -82,41 +81,36 @@ Ibrutinib is a protein kinase inhibitor used for cancers such as mantle cell lym
 - **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Al-Ghazawi_2021.pdf` | Al-Ghazawi M et al., Population Pharmacokinetics of Ibrutini…, European journal of drug me… (2021) | popPK | 10 | [10.1007/s13318-021-00679-z](https://doi.org/10.1007/s13318-021-00679-z) | [33740218](https://pubmed.ncbi.nlm.nih.gov/33740218) | The human population-PK model is relevant, but numerical parameter values are not provided in the evidence. |
-| `Gallais_2020.pdf` | Gallais F et al., Population Pharmacokinetics of Ibrutini…, Clinical pharmacokinetics (2020) | popPK | 10 | [10.1007/s40262-020-00884-0](https://doi.org/10.1007/s40262-020-00884-0) | [32328976](https://pubmed.ncbi.nlm.nih.gov/32328976) | The human population-PK model is relevant, but numeric CL and other disposition estimates are not provided; only variability and exposure values appear. |
-| `Ogawa_2023.pdf` | Ogawa T et al., Population Pharmacokinetic and Exposure…, Journal of clinical pharmac… (2023) | popPK | 10 | [10.1002/jcph.2200](https://doi.org/10.1002/jcph.2200) | [36597869](https://pubmed.ncbi.nlm.nih.gov/36597869) | The population-PK analysis reports numeric relative-bioavailability covariate effects, though CL and volume values are not shown. |
-| `Kimura_2025.pdf` | Kimura S et al., Simulation of perioperative Ibrutinib w…, Cancer chemotherapy and pha… (2025) | popPK | 8 | [10.1007/s00280-025-04816-2](https://doi.org/10.1007/s00280-025-04816-2) | [41264019](https://pubmed.ncbi.nlm.nih.gov/41264019) | Uses a previously reported ibrutinib PopPK model, but its parameter values are not given here; only AUC values are reported. |
-
-<sub>queue written 2026-10-07 01:23 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Al-Ghazawi_2021 | relevant | 10 | 1 | The human population-PK model is relevant, but numerical parameter values are not provided in the evidence. |
+| popPK | Al-Ghazawi_2021 | relevant | 10 | 4 | The paper describes a population PK model for ibrutinib in humans, but specific numeric parameter values (CL, V, etc.) are not listed in the provided evidence, only qualitative covariate effects. |
+| PGx | Al-Ghazawi_2021 | not_relevant | 0 | 0 | The paper investigates smoking status as a covariate for ibrutinib pharmacokinetics, which is an environmental/lifestyle factor, not a genetic variant or pharmacogenomic trait. |
 | popPK | Daneshmanesh_2018 | irrelevant | 0 | 0 | This is an in-vitro cytotoxicity study, not a pharmacokinetic study, and reports no ibrutinib disposition parameters. |
 | popPK | Eisenmann_2021 | relevant | 9 | 2 | The study reports mouse ibrutinib pharmacokinetics and a population-PK model, but numeric model parameter estimates are not readable here and appear to be in tables or figures not provided. |
 | popPK | Gallais_2020 | relevant | 10 | 3 | The human population-PK model is relevant, but numeric CL and other disposition estimates are not provided; only variability and exposure values appear. |
-| popPK | Gallais_2021 | irrelevant | 2 | 0 | The model describes lymphocyte dynamics using ibrutinib concentrations but reports no quantitative ibrutinib disposition parameters. |
+| popPK | Gallais_2021 | relevant | 8 | 0 | The study builds a population PK-PD model for ibrutinib and reports PK observations, but the specific numeric PK parameter values (CL, V, etc.) are not present in the provided abstract/evidence. |
+| PGx | Gallais_2021 | not_relevant | 0 | 0 | The study models PK-PD dynamics based on lymphocyte counts and disease status but does not report any pharmacogenomic variants or genetic factors affecting ibrutinib parameters. |
 | popPK | Ghaderi_2020 | irrelevant | 0 | 0 | Ibrutinib is only a comparator, and the mouse half-life mentioned is for KAN0441571C with data not shown. |
-| popPK | Hossain_2025 | irrelevant | 1 | 0 | The numeric disposition values shown are for S-XL6, not ibrutinib. |
+| popPK | Hossain_2025 | irrelevant | 2 | 0 | The paper focuses on the pharmacokinetics of a novel covalent SOD1 stabilizer (S-XL6) in mice, using ibrutinib only as a reference approved covalent drug without reporting its quantitative PK parameters. |
+| PGx | Hossain_2025 | not_relevant | 0 | 0 | The paper reports PK/PD parameters for ibrutinib to validate a new MS-based method but does not investigate gene variants or pharmacogenomic effects. |
 | popPK | Ibrahim_2023 | relevant | 8 | 2 | Human ibrutinib PK-PD modeling uses a referenced two-compartment PK model, but its disposition parameter values are not reported here. |
-| popPK | Kimura_2025 | relevant | 8 | 1 | Uses a previously reported ibrutinib PopPK model, but its parameter values are not given here; only AUC values are reported. |
+| popPK | Kimura_2025 | irrelevant | 3 | 1 | The study applies a previously reported model and reports only individual AUC values and qualitative outcomes, lacking the full set of quantitative PK parameters (CL, V, etc.) for extraction. |
+| PGx | Kimura_2025 | not_relevant | 0 | 0 | The paper focuses on perioperative withdrawal simulations using a PopPK model and does not investigate or report the impact of genetic variants on ibrutinib pharmacokinetics. |
+| PGx | Ogawa_2023 | not_relevant | 3 | 2 | The study reports PK effects driven by CYP3A inhibitors (extrinsic) and ethnicity (demographic), but does not report a specific gene variant/genotype (pharmacogenomic) effect. |
 | popPK | Sauvey_2021 | irrelevant | 0 | 0 | This is an in-vitro anti-amoebic efficacy study, not a PK study, and the referenced EC50 tables and figures are not provided. |
 | popPK | Schulz_2024 | irrelevant | 0 | 0 | This models CLL cell kinetics under ibrutinib, not ibrutinib pharmacokinetics, and reports no drug disposition parameter values. |
-| popPK | Tam_2021 | irrelevant | 0 | 0 | This review focuses on zanubrutinib; ibrutinib is only mentioned as a clinical-trial comparator, with no quantitative PK values reported. |
-| popPK | Waitman_2024 | irrelevant | 0 | 0 | The study tests hybrid compounds, not ibrutinib; the reported PK values are for compound 4f. |
-| popPK | de_2020 | relevant | 9 | 1 | The study measured ibrutinib PK, but its values are only reported in Table S1, which is not provided. |
+| popPK | Tam_2021 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of zanubrutinib, and ibrutinib is only mentioned as a comparator in a clinical trial, so no PK parameters for ibrutinib are reported. |
+| PGx | Tam_2021 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics and pharmacodynamics of zanubrutinib, not ibrutinib, and does not report pharmacogenomic effects on ibrutinib PK/PD parameters. |
+| popPK | Waitman_2024 | irrelevant | 0 | 0 | The study focuses on the in vitro pharmacology and PK properties of hybrid HDAC/kinase inhibitors, using ibrutinib only as a pharmacophore reference rather than as the subject of a PK parameter estimation. |
+| PGx | Waitman_2024 | not_relevant | 0 | 0 | The paper describes the development of novel hybrid inhibitors (combining ibrutinib-like pharmacophores with HDAC inhibitors) and their properties, but does not report a pharmacogenomic effect on ibrutinib's PK or PD. |
+| popPK | de_2020 | irrelevant | 1 | 0 | This is a drug-drug interaction study assessing ibrutinib as a perpetrator of CYP3A4/2B6 effects on probe drugs, not a primary pharmacokinetic study reporting disposition parameters (CL, V) for ibrutinib. |
+| PGx | de_2020 | not_relevant | 0 | 0 | The study evaluates a drug-drug interaction between ibrutinib and other drugs, with no assessment of genetic variants or genotypes. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bibrutinib%5D&body=Drug%3A%20ibrutinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ibrutinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 01:23 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 01:12 UTC</sub>

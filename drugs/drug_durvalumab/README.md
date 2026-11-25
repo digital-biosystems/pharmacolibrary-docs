@@ -16,7 +16,7 @@ Durvalumab is a monoclonal antibody immune checkpoint inhibitor used to treat va
 
 ## Start here
 
-> **Abegesah_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with advanced cancers, including biliary tract cancer, n = 3141. [Run it in the simulator](drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md?tab=Simulation) · [record](drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md)
+> **Abegesah_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with advanced biliary tract cancer and other solid tumors (pooled). [Run it in the simulator](drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md?tab=Simulation) · [record](drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -30,9 +30,9 @@ Durvalumab is a monoclonal antibody immune checkpoint inhibitor used to treat va
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_tmax</sub> | [Abegesah_2025_reference](drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 (+4 cov.) | Abegesah A et al., Population pharmacokinetics and exposur…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-024-04743-8](https://doi.org/10.1007/s00280-024-04743-8) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Proctor_2026_reference](drugs/drug_durvalumab/Durvalumab_Proctor2026_reference.md) | — | 1-compartment (no model) | 2 | Proctor JR et al., Albumin Levels Are Predictive of Cachex…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70185](https://doi.org/10.1002/psp4.70185) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Zhao_2026_reference](drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 (+6 cov.) | Zhao X et al., Population pharmacokinetics and exposur…, British journal of clinical… (2026) | [10.1002/bcp.70287](https://doi.org/10.1002/bcp.70287) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_tmax</sub> | [Abegesah_2025_reference](drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 (+2 cov.) | Abegesah A et al., Population pharmacokinetics and exposur…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-024-04743-8](https://doi.org/10.1007/s00280-024-04743-8) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Proctor_2026_reference](drugs/drug_durvalumab/Durvalumab_Proctor2026_reference.md) | — | 1-compartment (no model) | 1 | Proctor JR et al., Albumin Levels Are Predictive of Cachex…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70185](https://doi.org/10.1002/psp4.70185) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Zhao_2026_reference](drugs/drug_durvalumab/Durvalumab_Zhao2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Zhao X et al., Population pharmacokinetics and exposur…, British journal of clinical… (2026) | [10.1002/bcp.70287](https://doi.org/10.1002/bcp.70287) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Baverel_2018_reference](drugs/drug_durvalumab/Durvalumab_Baverel2018_reference.md) | — | 2-compartment (no model) | 3 | Baverel PG et al., Population Pharmacokinetics of Durvalum…, Clinical pharmacology and t… (2018) | [10.1002/cpt.982](https://doi.org/10.1002/cpt.982) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Ogasawara_2020_reference](drugs/drug_durvalumab/Durvalumab_Ogasawara2020_reference.md) | — | 2-compartment (no model) | 5 (+4 cov.) | Ogasawara K et al., Population Pharmacokinetics of an Anti-…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00804-x](https://doi.org/10.1007/s40262-019-00804-x) |
 
@@ -42,19 +42,6 @@ Durvalumab is a monoclonal antibody immune checkpoint inhibitor used to treat va
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [De_2019_eGFP](drugs/drug_durvalumab/pd_De_2019_eGFP.md) | normalized stimulation (reporter gene expression) ← durvalumab · direct sigmoid Emax (Hill) effect | — | De Sousa Linhares A et al., Therapeutic PD-L1 antibodies are more e…, Scientific reports (2019) | [10.1038/s41598-019-47910-1](https://doi.org/10.1038/s41598-019-47910-1) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [De_2019_gMFI](drugs/drug_durvalumab/pd_De_2019_gMFI.md) | binding ← durvalumab · direct sigmoid Emax (Hill) effect | — | De Sousa Linhares A et al., Therapeutic PD-L1 antibodies are more e…, Scientific reports (2019) | [10.1038/s41598-019-47910-1](https://doi.org/10.1038/s41598-019-47910-1) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lim_2023_AE](drugs/drug_durvalumab/pd_Lim_2023_AE.md) | adverse events ← durvalumab · model not identified | — | Lim K et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2288](https://doi.org/10.1002/jcph.2288) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lim_2023_PFS](drugs/drug_durvalumab/pd_Lim_2023_PFS.md) | progression-free survival ← durvalumab · model not identified | — | Lim K et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2288](https://doi.org/10.1002/jcph.2288) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Abegesah_2025_AESIs](drugs/drug_durvalumab/pd_Abegesah_2025_AESIs.md) | Grade 3/4 drug-related AEs of special interest ← durvalumab · categorical (graded) response model | — | Abegesah A et al., Population pharmacokinetics and exposur…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-024-04743-8](https://doi.org/10.1007/s00280-024-04743-8) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Abegesah_2025_AE_leading_to_treatment_discontinuation](drugs/drug_durvalumab/pd_Abegesah_2025_AE_leading_to_treatment_discontinuation.md) | AEs leading to treatment discontinuation ← durvalumab · categorical (graded) response model | — | Abegesah A et al., Population pharmacokinetics and exposur…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-024-04743-8](https://doi.org/10.1007/s00280-024-04743-8) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Abegesah_2025_OS](drugs/drug_durvalumab/pd_Abegesah_2025_OS.md) | overall survival ← durvalumab · time-to-event model | — | Abegesah A et al., Population pharmacokinetics and exposur…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-024-04743-8](https://doi.org/10.1007/s00280-024-04743-8) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Abegesah_2025_PFS](drugs/drug_durvalumab/pd_Abegesah_2025_PFS.md) | progression-free survival ← durvalumab · time-to-event model | — | Abegesah A et al., Population pharmacokinetics and exposur…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-024-04743-8](https://doi.org/10.1007/s00280-024-04743-8) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Abegesah_2025_TRAEs](drugs/drug_durvalumab/pd_Abegesah_2025_TRAEs.md) | Grade 3/4 treatment-related adverse events ← durvalumab · categorical (graded) response model | — | Abegesah A et al., Population pharmacokinetics and exposur…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-024-04743-8](https://doi.org/10.1007/s00280-024-04743-8) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Lim_2023_OS](drugs/drug_durvalumab/pd_Lim_2023_OS.md) | overall survival ← durvalumab · time-to-event model | — | Lim K et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2288](https://doi.org/10.1002/jcph.2288) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zhao_2026_AESIs](drugs/drug_durvalumab/pd_Zhao_2026_AESIs.md) | grade ≥3 treatment‐related adverse events of special interest ← durvalumab · categorical (graded) response model | — | Zhao X et al., Population pharmacokinetics and exposur…, British journal of clinical… (2026) | [10.1002/bcp.70287](https://doi.org/10.1002/bcp.70287) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zhao_2026_AEs](drugs/drug_durvalumab/pd_Zhao_2026_AEs.md) | grade ≥3 treatment‐related adverse events ← durvalumab · categorical (graded) response model | — | Zhao X et al., Population pharmacokinetics and exposur…, British journal of clinical… (2026) | [10.1002/bcp.70287](https://doi.org/10.1002/bcp.70287) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zhao_2026_AEs_2](drugs/drug_durvalumab/pd_Zhao_2026_AEs_2.md) | AEs leading to durvalumab treatment discontinuation ← durvalumab · categorical (graded) response model | — | Zhao X et al., Population pharmacokinetics and exposur…, British journal of clinical… (2026) | [10.1002/bcp.70287](https://doi.org/10.1002/bcp.70287) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zhao_2026_EFS](drugs/drug_durvalumab/pd_Zhao_2026_EFS.md) | event‐free survival ← durvalumab · time-to-event model | — | Zhao X et al., Population pharmacokinetics and exposur…, British journal of clinical… (2026) | [10.1002/bcp.70287](https://doi.org/10.1002/bcp.70287) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zhao_2026_pCR](drugs/drug_durvalumab/pd_Zhao_2026_pCR.md) | pathological complete response ← durvalumab · categorical (graded) response model | — | Zhao X et al., Population pharmacokinetics and exposur…, British journal of clinical… (2026) | [10.1002/bcp.70287](https://doi.org/10.1002/bcp.70287) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -68,7 +55,7 @@ Durvalumab is a monoclonal antibody immune checkpoint inhibitor used to treat va
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:30 | 13:32 | 3/2/0 | 15/0/0 | 0/0/0 | 317,940/65,350 | openai / gpt-6-luna | 9 | 0/9 | 9/0 | 0 |
+| 2026-11-23 21:37 | 0:04 | 3/2/0 | 2/0/0 | 0/0/0 | 3,808/156 | einfracz / qwen3.8-27b | 9 | 0/9 | 9/0 | 0 |
 
 ## Coverage
 
@@ -77,28 +64,27 @@ Durvalumab is a monoclonal antibody immune checkpoint inhibitor used to treat va
 - **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Lim_2023.pdf` | Lim K et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2023) | popPK | 10 | [10.1002/jcph.2288](https://doi.org/10.1002/jcph.2288) | [37300457](https://pubmed.ncbi.nlm.nih.gov/37300457) | Human durvalumab PopPK is analyzed, but no numeric disposition parameter values are provided in the evidence. |
-
-<sub>queue written 2026-10-07 12:17 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| PGx | Abegesah_2025 | not_relevant | 0 | 0 | The paper reports a standard population pharmacokinetic analysis of durvalumab evaluating clinical covariates (weight, albumin, sex, etc.) and does not assess gene variants or genotypes. |
 | popPK | De_2019 | irrelevant | 0 | 0 | This in-vitro functional assay reports EC50 values, not durvalumab disposition parameters; half-life values are only referenced in an unprovided table. |
-| popPK | He_2023 | irrelevant | 0 | 0 | This reports tremelimumab pharmacokinetics, not durvalumab parameters. |
+| popPK | He_2023 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for tremelimumab, while durvalumab is only mentioned as a co-administered drug in the combination therapy regimen. |
+| PGx | He_2023 | not_relevant | 0 | 0 | The paper describes the PK and exposure-response of tremelimumab, not durvalumab, and contains no pharmacogenomic data. |
 | popPK | Hec-Gałązka_2024 | irrelevant | 0 | 0 | This is an in-vitro inhibitor study where durvalumab is only a comparator, with no durvalumab disposition parameters. |
-| popPK | Hwang_2023 | irrelevant | 0 | 0 | The model reports tremelimumab parameters, not durvalumab parameters. |
-| popPK | Lim_2023 | relevant | 10 | 0 | Human durvalumab PopPK is analyzed, but no numeric disposition parameter values are provided in the evidence. |
-| popPK | Song_2023 | irrelevant | 0 | 0 | The study reports tremelimumab pharmacokinetics, not durvalumab disposition parameters; some tremelimumab model details are only in supplementary material. |
-| popPK | Song_2023_2 | irrelevant | 0 | 0 | The model reports tremelimumab response parameters, not durvalumab disposition values. |
-| popPK | Xu_2019 | irrelevant | 0 | 0 | The model and numeric PK values are for danvatirsen, not durvalumab. |
+| popPK | Hwang_2023 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for tremelimumab, while durvalumab is only a co-administered comparator. |
+| PGx | Hwang_2023 | not_relevant | 0 | 0 | The paper reports on the pharmacokinetics of tremelimumab (not durvalumab) and does not investigate the impact of any gene variants, genotypes, or pharmacogenomic phenotypes on its PK or PD parameters. |
+| popPK | Lim_2023 | relevant | 8 | 0 | The paper reports on a population pharmacokinetic analysis of durvalumab, but the specific numeric parameter values are not present in the provided evidence. |
+| PGx | Lim_2023 | not_relevant | 0 | 0 | The paper reports population PK and exposure-response analysis for tremelimumab and durvalumab, but explicitly states that no covariates (which would include pharmacogenomic factors) had a significant impact on PK parameters. |
+| PGx | Proctor_2026 | not_relevant | 0 | 0 | The paper reports a non-genetic, time-dependent change in pharmacokinetics driven by albumin levels and disease status, not a pharmacogenomic effect based on gene variants or genotypes. |
+| popPK | Song_2023 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and exposure-response of tremelimumab, with durvalumab serving only as a comparator/control arm without reported PK parameters. |
+| PGx | Song_2023 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics and exposure-response relationships of tremelimumab, not durvalumab, and does not investigate pharmacogenomic variants affecting PK/PD. |
+| popPK | Song_2023_2 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics (immune cell response) of tremelimumab, and durvalumab is only a co-administered agent without any reported pharmacokinetic parameters. |
+| PGx | Song_2023_2 | not_relevant | 0 | 0 | The paper analyzes the pharmacodynamic effects of tremelimumab on T-cell counts and does not report any pharmacogenomic variants or genotype-based changes for durvalumab. |
+| popPK | Xu_2019 | irrelevant | 0 | 0 | The paper reports population PK parameters for danvatirsen, not durvalumab, which is only listed as a combination drug. |
+| PGx | Xu_2019 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of danvatirsen, not durvalumab, and reports no effect of gene variants on PK/PD parameters. |
+| PGx | Zhao_2026 | not_relevant | 0 | 0 | The paper reports standard population pharmacokinetics and exposure-response relationships for demographic and clinical covariates (e.g., weight, albumin, creatinine clearance), but does not investigate genetic variants or pharmacogenomic effects. |
 | popPK | de_2025 | relevant | 8 | 3 | Human durvalumab PK simulations report a numeric Km, but the model’s other parameter values are not provided and its code is in supplementary material. |
 
 
@@ -106,4 +92,4 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdurvalumab%5D&body=Drug%3A%20durvalumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_durvalumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 12:18 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 13:18 UTC</sub>

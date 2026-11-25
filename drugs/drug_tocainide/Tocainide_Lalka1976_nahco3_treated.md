@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The tocainide record was rejected because the elimination rate constant unit, min⁻¹, could not be converted to SI, causing a dimension check failure.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min-1 (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="tocainide" model-id="Tocainide_Lalka1976_nahco3_treated" status="rejected" stale="false" population="healthy male subjects" measured-compound="tocainide" parameterization="mechanistic" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Lalka D, Meyer MB, Duce BR, Elvin AT. Kinetics of the oral antiarrhythmic lidoca
 
 ### Reviewer guidance
 
-**The tocainide record was rejected because the elimination rate constant unit, min⁻¹, could not be converted to SI, causing a dimension check failure.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min-1 (1 / [time]) vs 1 / [time].**
 
-The elimination rate constant (kel) is 0.0010 min⁻¹, but the unit min⁻¹ was unrecognized by the system, preventing conversion to SI and leaving the parameter without a standard value. This lack of a valid SI value triggered a dimension mismatch error on the structural parameter. A second reader also failed to extract values for steady-state volume (118.5 L), macro rate constant A (1.64 mcg/ml), and AUC (1530 min mcg/ml). Extracted — tocainide: λ1 0.064 min-1, kel 0.001 min-1, k12 0.027 min-1, k21 0.037 min-1, V 74.7 L, Vss 118 L, CLb 166 ml/min, CLR 64 ml/min, … (+2).
+A reported unit could not be converted (equation variable, λ1 and AUC), so that value has no SI equivalent. Extracted — tocainide: λ1 0.064 min-1, kel 0.001 min-1, k12 0.027 min-1, k21 0.037 min-1, V 74.7 L, Vss 118 L, CLb 166 ml/min, CLR 64 ml/min, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of (vd)ss: this record has 118.5, the second reading none; it also differs on 11 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

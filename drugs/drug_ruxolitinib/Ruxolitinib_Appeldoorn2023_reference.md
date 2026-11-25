@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The ruxolitinib record was rejected due to an unreachable compartment in the two-compartment structure.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="ruxolitinib" model-id="Ruxolitinib_Appeldoorn2023_reference" status="rejected" stale="false" population="" measured-compound="ruxolitinib" parameterization="apparent" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Appeldoorn TYJ, Munnink THO, Morsink LM, Hooge MNL, Touw DJ. Pharmacokinetics an
 
 ### Reviewer guidance
 
-**The ruxolitinib record was rejected due to an unreachable compartment in the two-compartment structure.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The review flagged the model topology for containing a compartment with no path from the dose administration. Although the record lists specific values for clearance and volume of distribution, the structural flaw rendered the model invalid. Second reader disagreements regarding various parameter values did not alter the primary structural rejection reason. Extracted — ruxolitinib: CL/F 20 L/h, V1 58.6 L, V2 11.2 L, kabs 3.43 h−1.
+Extracted — ruxolitinib: CL/F 20 L/h, V1 58.6 L, V2 11.2 L, kabs 3.43 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 27, the second reading 2130; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

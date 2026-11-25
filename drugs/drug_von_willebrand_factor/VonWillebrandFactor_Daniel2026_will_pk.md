@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The von Willebrand factor record was rejected because Q is 3290 mL despite representing intercompartmental clearance, and CL is 447 mL/h with implausible magnitude.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit mL ([length] ** 3) vs [length] ** 3 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Daniel2026_will_pk" status="rejected" stale="false" population="patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -51,13 +51,13 @@ Daniel MY, Rauch A, Paris C, Jeanpierre E, Goudemand J, Marichez C et al. Modeli
 
 ### Reviewer guidance
 
-**The von Willebrand factor record was rejected because Q is 3290 mL despite representing intercompartmental clearance, and CL is 447 mL/h with implausible magnitude.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit mL ([length] ** 3) vs [length] ** 3 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-Q's reported mL conflicts with its meaning as intercompartmental clearance, which requires volume per time; a reported unit could not be converted to SI. CL at 447 mL/h was flagged as outside the physiological window, with a likely unit or scale extraction error. The second reader disputed the recorded clearance and instead listed 74.2 and 157.6 for clearance-related fields. Extracted — von willebrand factor: V2 0.3 mL, CL 447 mL/h, V 193 mL, Q 3.29e+03 mL, kabs 0.5 h−1.
+A reported unit could not be converted (Q), so that value has no SI equivalent. Extracted — von willebrand factor: V2 0.3 mL, CL 447 mL/h, V 193 mL, Q 3.29e+03 mL, kabs 0.5 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has von Willebrand factor, the second reading high-purity VWF concentrate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

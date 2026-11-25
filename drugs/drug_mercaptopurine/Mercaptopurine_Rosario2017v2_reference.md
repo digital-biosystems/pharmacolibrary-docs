@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the peripheral compartment volume is mislabeled as total volume, creating an orphan compartment unreachable from the central drug pool.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Rosario2017v2_reference" status="rejected" stale="false" population="" measured-compound="mercaptopurine" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,13 +46,13 @@ Rosario M, Dirks NL, Milch C, Parikh A, Bargfrede M, Wyant T et al. A Review of 
 
 ### Reviewer guidance
 
-**The model was rejected because the peripheral compartment volume is mislabeled as total volume, creating an orphan compartment unreachable from the central drug pool.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists the peripheral volume of distribution as 4.84 L, which the label identifies as the sum of central and peripheral volumes, rather than the peripheral component alone. A second reader noted this value should be 1.65 L to match the stated peripheral volume. This inconsistency means the peripheral compartment has no valid linkage in the two-compartment structure. Extracted — mercaptopurine: CL 0.159 L/day, V1 3.19 L, V2 4.84 L.
+Extracted — mercaptopurine: CL 0.159 L/day, V1 3.19 L, V2 4.84 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of V2: this record has 4.84, the second reading 1.65. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

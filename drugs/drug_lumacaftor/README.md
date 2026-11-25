@@ -22,8 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Beuschlein_2024_FEV1](drugs/drug_lumacaftor/pd_Beuschlein_2024_FEV1.md) | lung function ← lumacaftor · direct Emax (saturable) effect | — | Beuschlein F et al., European Society of Endocrinology and E…, The Journal of clinical end… (2024) | [10.1210/clinem/dgae250](https://doi.org/10.1210/clinem/dgae250) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Beuschlein_2024_PPA](drugs/drug_lumacaftor/pd_Beuschlein_2024_PPA.md) | plasma protein A ← lumacaftor · direct Emax (saturable) effect | — | Beuschlein F et al., European Society of Endocrinology and E…, The Journal of clinical end… (2024) | [10.1210/clinem/dgae250](https://doi.org/10.1210/clinem/dgae250) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Beuschlein_2024_FEV1](drugs/drug_lumacaftor/pd_Beuschlein_2024_FEV1.md) | lung function ← lumacaftor · direct Emax (saturable) effect | — | Beuschlein F et al., European Society of Endocrinology and E…, The Journal of clinical end… (2024) | [10.1210/clinem/dgae250](https://doi.org/10.1210/clinem/dgae250) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Beuschlein_2024_PPA](drugs/drug_lumacaftor/pd_Beuschlein_2024_PPA.md) | plasma protein A ← lumacaftor · direct Emax (saturable) effect | — | Beuschlein F et al., European Society of Endocrinology and E…, The Journal of clinical end… (2024) | [10.1210/clinem/dgae250](https://doi.org/10.1210/clinem/dgae250) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Hanafin_2021_none](drugs/drug_lumacaftor/pd_Hanafin_2021_none.md) | none ← none · model not identified | — | Hanafin PO et al., Insights Into Patient Variability Durin…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.577263](https://doi.org/10.3389/fphar.2021.577263) |
 
 ## Pharmacogenomics (PGx)

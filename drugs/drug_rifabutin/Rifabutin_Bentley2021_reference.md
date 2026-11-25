@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for rifabutin was rejected because the source paper primarily investigates posaconazole, not rifabutin.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="rifabutin" model-id="Rifabutin_Bentley2021_reference" status="rejected" stale="false" population="" measured-compound="rifabutin" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Bentley S, Davies JC, Gastine S, Donovan J, Standing JF. Clinical pharmacokineti
 
 ### Reviewer guidance
 
-**The record for rifabutin was rejected because the source paper primarily investigates posaconazole, not rifabutin.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The identified subject of the study is posaconazole, with rifabutin mentioned only as a potential interacting drug or covariate. Consequently, the extracted parameters do not represent a fitted model for the intended analyte. Extracted — rifabutin: CL/F 8.43 L/h, V/F 186 L, kabs 0.16 h−1.
+Extracted — rifabutin: CL/F 8.43 L/h, V/F 186 L, kabs 0.16 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 38, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.556, 0 of 1 reader(s) agree | 0.556 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.556 (5 of 9 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.556 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

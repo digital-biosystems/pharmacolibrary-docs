@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the reported total clearance (2.51 L/h) is outside the physiological window, suggesting an extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="tafamidis" model-id="Tafamidis_Scala2018_reference" status="rejected" stale="false" population="" measured-compound="tafamidis" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Scala M, Koob M, de Buttet S, Bourrinet P, Felices M, Jurkiewicz E. A Pharmacoki
 
 ### Reviewer guidance
 
-**The record was rejected because the reported total clearance (2.51 L/h) is outside the physiological window, suggesting an extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted total clearance of 2.51 L/h falls outside the acceptable range for tafamidis, indicating a likely unit or scale mistake during data extraction. The central volume (0.161 L) and intercompartmental clearance (0.335 L/h) appear consistent with the stated two-compartment structure. The second reader did not verify the specific value of 2.51 L/h, with disagreements on other fields showing null or different values for various extracted data points. Extracted — tafamidis: CL 2.51 L/h, V1 0.161 L, Q 0.335 L/h.
+Extracted — tafamidis: CL 2.51 L/h, V1 0.161 L, Q 0.335 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has 0.62, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,4 +138,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btafamidis%5D%20Tafamidis_Scala2018_reference&body=Drug%3A%20tafamidis%0ARecord%3A%20Tafamidis_Scala2018_reference%0APaper%3A%20Scala_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tafamidis/Tafamidis_Scala2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 04:51 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 17:28 UTC</sub>

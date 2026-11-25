@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Gepotidacin model held back because volume of distribution, absorption rate constant, and lag time lacked values, relying on placeholder defaults.
+> No value for gepotidacin's volume of distribution, absorption rate constant and absorption lag time; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="gepotidacin" model-id="Gepotidacin_Al2026_reference" status="model_quarantined" stale="false" population="adult males scheduled for radical prostatectomy" measured-compound="gepotidacin" parameterization="apparent" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Al Jalali V, Aranzana-Climent V, Jorda A, Bergmann F, Lackner E, Wölfl-Duchek M
 
 ### Reviewer guidance
 
-**Gepotidacin model held back because volume of distribution, absorption rate constant, and lag time lacked values, relying on placeholder defaults.**
+**No value for gepotidacin's volume of distribution, absorption rate constant and absorption lag time; t6_deviations (+1 more).**
 
-The record extracted summary statistics from the abstract, but volume of distribution, absorption rate constant, and lag time were not reported in the source text. Consequently, library placeholders were used for these missing parameters instead of explicit estimates. A second reader also disagreed with the primary parameter values, finding them null or misaligned with the abstract's statistics. Extracted — gepotidacin: Cmax 1.34e+03 ng/mL, tmax 4.25 hours, CL/F 65 L/h, V3/F 1.31e+03 L.
+The model was built, but gepotidacin's volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — gepotidacin: Cmax 1.34e+03 ng/mL, tmax 4.25 hours, CL/F 65 L/h, V3/F 1.31e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gepotidacin, the second reading gep­otidacin; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

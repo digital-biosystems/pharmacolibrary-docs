@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
-> Clearance and volume of distribution for amino acids are implausibly low, indicating a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="amino acids" model-id="AminoAcids_Sudarsono2026_reference" status="rejected" stale="false" population="" measured-compound="amino_acids" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Sudarsono LM, Wenker SAM, Liu X, Brink J, van den Berg D-J, van Hasselt JGC et a
 
 ### Reviewer guidance
 
-**Clearance and volume of distribution for amino acids are implausibly low, indicating a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The estimated total clearance of 0.03 L/h and volume of distribution of 0.2 L are far below physiological expectations for an oral amino acid supplement. These magnitudes are inconsistent with the expected pharmacokinetics of a small molecule distributed throughout body water. Extracted — amino acids: CL 0.03 L/h, V 0.2 L.
+Extracted — amino acids: CL 0.03 L/h, V 0.2 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Reviewers could not agree on cisatracurium parameters extracted from abstract-only data, leaving the model record disputed.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Tran1998_reference" status="needs_review" stale="false" population="patients under propofol anesthesia" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Tran TV, Fiset P, Varin F. Pharmacokinetics and pharmacodynamics of cisatracuriu
 
 ### Reviewer guidance
 
-**Reviewers could not agree on cisatracurium parameters extracted from abstract-only data, leaving the model record disputed.**
+**cross_check_disputed; x1_cross_check.**
 
-The record relies on summary statistics like 23.9 min half-life and 3.7 L/h clearance because the full model is unavailable. A second reader reported all three parameters as unknown, directly contradicting the primary extraction. This total disagreement resulted in a cross-check failure with 0 of 1 readers agreeing. Extracted — cisatracurium: t1/2z 23.9 min, CL 3.7 L/h, Vss 0.118 L/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cisatracurium: t1/2z 23.9 min, CL 3.7 L/h, Vss 0.118 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cisatracurium, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -141,7 +141,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

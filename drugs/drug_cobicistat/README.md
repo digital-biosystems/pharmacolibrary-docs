@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;cobicistat&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cobicistat_Barcel2016_reference&quot;,&quot;label&quot;:&quot;Barcel\u00f3_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cobicistat/Cobicistat_Barcel2016_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # cobicistat
 
@@ -21,7 +20,7 @@ Cobicistat is a cytochrome P450 inhibitor used to treat human immunodeficiency v
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| cobicistat | parent | 776.03 | C40H53N7O5S2 | DrugBank | [25151504](https://pubchem.ncbi.nlm.nih.gov/compound/25151504) | Barceló_2016, Overbeek_2025 |
+| cobicistat | parent | 776.03 | C40H53N7O5S2 | DrugBank | [25151504](https://pubchem.ncbi.nlm.nih.gov/compound/25151504) | Overbeek_2025 |
 
 ## popPK records
 
@@ -29,7 +28,6 @@ Cobicistat is a cytochrome P450 inhibitor used to treat human immunodeficiency v
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — volume from this paper; review-gap-filled from other p…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q3 — no SI value to build from</sub> | [Overbeek_2025_reference](drugs/drug_cobicistat/Cobicistat_Overbeek2025_reference.md) | — | 1-compartment (no model) | 5 | Overbeek JK et al., Population Pharmacokinetics of Cobicist…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01480-w](https://doi.org/10.1007/s40262-025-01480-w) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Abdalla_2024_reference](drugs/drug_cobicistat/Cobicistat_Abdalla2024_reference.md) | — | 2-compartment (no model) | 3 | Abdalla S et al., Simultaneous pharmacokinetic modeling o…, Antimicrobial agents and ch… (2024) | [10.1128/aac.01004-23](https://doi.org/10.1128/aac.01004-23) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Barceló_2016_reference](drugs/drug_cobicistat/Cobicistat_Barcel2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Barceló C et al., Population pharmacokinetic analysis of…, The Journal of antimicrobia… (2016) | [10.1093/jac/dkw050](https://doi.org/10.1093/jac/dkw050) |
 
 ## Pharmacodynamics (PD)
 
@@ -50,13 +48,13 @@ Cobicistat is a cytochrome P450 inhibitor used to treat human immunodeficiency v
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:33 | 7:36 | 1/2/0 | 2/0/0 | 0/0/0 | 446,827/23,793 | ollama / glm-5.3-flash | 10 | 1/9 | 10/0 | 0 |
+| 2026-11-23 20:21 | 2:19 | 1/1/0 | 2/0/0 | 0/0/0 | 6,595/545 | einfracz / qwen3.8-27b | 10 | 1/9 | 10/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 32 matched, 20 returned
-- **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
+- **screened:** 4  ·  **relevant:** 4
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -65,27 +63,35 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Barceló_2016.pdf` | Barceló C et al., Population pharmacokinetic analysis of…, The Journal of antimicrobia… (2016) | popPK | 10 | [10.1093/jac/dkw050](https://doi.org/10.1093/jac/dkw050) | [27029846](https://pubmed.ncbi.nlm.nih.gov/27029846) | Population PK model for cobicistat with CL 16.0 L/h (CV 41.9%) and V 88.3 L reported directly in the abstract. |
+| `Moltó_2018.pdf` | Moltó J et al., Pharmacokinetics of darunavir/cobicista…, The Journal of antimicrobia… (2018) | popPK | 6 | [10.1093/jac/dkx459](https://doi.org/10.1093/jac/dkx459) | [29237008](https://pubmed.ncbi.nlm.nih.gov/29237008) | Reports non-compartmental PK parameters (AUC, Cmax, Cmin) and percentage changes for cobicistat, but lacks compartmental model parameters (CL, V, ka) and specific absolute numeric values are only implied via percentages. |
 
-<sub>queue written 2026-10-07 15:26 UTC</sub>
+<sub>queue written 2026-11-23 20:19 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abdalla_2024 | irrelevant | 0 | 0 | This is a population PK study of darunavir and ritonavir in adolescents; cobicistat is only mentioned as an alternative booster, with no cobicistat PK parameters reported. |
-| popPK | Brooks_2023 | irrelevant | 2 | 1 | Cobicistat is only co-administered; PK results (AUC, Cmax, C24h) are reported for darunavir, with no cobicistat disposition parameters given. |
+| popPK | Abdalla_2024 | irrelevant | 1 | 0 | The study focuses on the population pharmacokinetics of darunavir and ritonavir, with cobicistat mentioned only as a general booster alternative in the introduction and not the subject of the PK modeling or parameter estimation. |
+| PGx | Abdalla_2024 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetics of darunavir and ritonavir in adolescents and does not report any pharmacogenomic effects involving cobicistat. |
+| PGx | Barceló_2016 | not_relevant | 0 | 0 | The study analyzes population PK for elvitegravir and cobicistat focusing on drug-drug interactions (specifically with atazanavir/darunavir) and demographic factors, but it does not report specific pharmacogenomic effects (gene variants) on their PK/PD parameters. |
+| popPK | Brooks_2023 | irrelevant | 2 | 0 | The study focuses on the pharmacokinetics of darunavir, with cobicistat serving as a PK enhancer/comparator; no specific quantitative PK parameters (CL, V, etc.) for cobicistat are reported in the provided evidence. |
+| PGx | Brooks_2023 | not_relevant | 0 | 0 | The study evaluates a drug-drug interaction (cobicistat/rifapentine) on darunavir PK, not a pharmacogenomic effect on cobicistat PK/PD. |
 | popPK | Courlet_2021 | irrelevant | 0 | 0 | The subject drug is rosuvastatin; cobicistat appears only as a covariate on non-HDL-cholesterol baseline, with no cobicistat PK parameters reported. |
-| popPK | Crauwels_2019 | relevant | 4 | 3 | Human NCA PK study of cobicistat in pregnant women, but only percent exposure changes are given; full parameter values (CL, V, half-life) are not in the evidence. |
-| popPK | Custodio_2016 | irrelevant | 2 | 1 | Cobicistat is only the boosting co-administered agent; the population PK model and parameters are for elvitegravir, not cobicistat, and no numeric values are provided. |
-| popPK | De_2020 | irrelevant | 0 | 0 | In vitro antiviral study of darunavir against SARS-CoV-2; cobicistat is only mentioned as a pharmacoenhancer with no PK parameters for it. |
+| PGx | Crauwels_2019 | not_relevant | 0 | 0 | The paper reports pharmacokinetic changes due to the physiological state of pregnancy, not due to any gene variant, genotype, or genotype-based phenotype (pharmacogenomics). |
+| popPK | Custodio_2016 | irrelevant | 0 | 0 | The study focuses on the population pharmacokinetics of elvitegravir, using cobicistat only as a booster/comparator agent without reporting cobicistat's own quantitative disposition parameters. |
+| PGx | Custodio_2016 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetics of Elvitegravir and evaluates non-genetic covariates (e.g., weight, age, formulation); it does not report any pharmacogenomic effects on Cobicistat or Elvitegravir PK/PD. |
+| popPK | De_2020 | irrelevant | 0 | 0 | The paper is an in vitro antiviral activity study of darunavir against SARS-CoV-2, where cobicistat is only mentioned as a co-formulated boost in the context of a drug indication, with no pharmacokinetic data for cobicistat reported. |
+| PGx | De_2020 | not_relevant | 0 | 0 | The paper evaluates the antiviral activity of darunavir against SARS-CoV-2 and contains no data regarding cobicistat or any pharmacogenomic effects. |
 | popPK | Eisenmann_2021 | irrelevant | 1 | 2 | Cobicistat is only the CYP3A-inhibiting perpetrator; the PK subject is ibrutinib (and its metabolite PCI-45227), with cobicistat's own disposition parameters not modeled, and numeric values largely in supplementary figures/tables. |
 | popPK | Gallucci_2024 | irrelevant | 0 | 0 | In-vitro antiviral potency study (EC50) with no PK disposition parameters for cobicistat. |
-| popPK | Hsu_2022 | irrelevant | 0 | 0 | Clinical outcomes study of weight gain with cobicistat-containing regimens; no PK parameters reported. |
-| popPK | Kumar_2017 | irrelevant | 2 | 2 | Cobicistat is only a co-administered perpetrator; the PK parameters reported (exposure ratios, half-life) are for dabigatran, not cobicistat's own disposition. |
-| popPK | Li_2022 | irrelevant | 0 | 0 | This is a review of HIV reverse transcriptase inhibitors; cobicistat is only mentioned as a pharmacokinetic booster, with no PK parameters for cobicistat itself. |
+| popPK | Hsu_2022 | irrelevant | 0 | 0 | This is an observational epidemiological study on weight gain associated with antiretroviral regimens; it does not report pharmacokinetic parameters for cobicistat. |
+| PGx | Hsu_2022 | not_relevant | 0 | 0 | The study investigates weight gain across different antiretroviral regimens but does not report pharmacogenomic effects or gene-specific PK/PD parameters for cobicistat. |
+| popPK | Kumar_2017 | irrelevant | 2 | 0 | Cobicistat is a comparator pharmacokinetic enhancer, and the reported quantitative parameters belong to the probe drug dabigatran. |
+| PGx | Kumar_2017 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (cobicistat affecting dabigatran PK/PD) rather than pharmacogenomic effects (gene variants) on cobicistat. |
+| popPK | Li_2022 | irrelevant | 0 | 0 | The paper is a review of HIV reverse transcriptase inhibitors and only mentions cobicistat briefly as a booster that increases TAF absorption; it contains no population PK model or specific disposition parameters for cobicistat. |
+| PGx | Li_2022 | not_relevant | 0 | 0 | The paper is a review of approved HIV RT inhibitors and does not report on pharmacogenomic effects on the PK or PD parameters of cobicistat. |
 | popPK | López-Ruz_2018 | irrelevant | 1 | 0 | Cobicistat is only a pharmacokinetic enhancer co-administered with darunavir; no PK disposition parameters (CL, V, half-life, model) for cobicistat are reported, only DRV seminal concentrations. |
-| popPK | Moltó_2018 | relevant | 4 | 3 | Human PK study with cobicistat as subject drug, but only percentage changes in AUC/Cmax/C24 are given, not full disposition parameters (CL, V, t½), and no numeric absolute values appear. |
+| PGx | Moltó_2018 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (etrazavirine vs. cobicistat) rather than pharmacogenomic effects of genetic variants on cobicistat PK. |
 | popPK | Stillemans_2021 | irrelevant | 3 | 1 | Cobicistat is only the co-administered booster; a COB model was briefly developed but dropped, and no numeric COB parameter values appear (DRV parameters dominate; COB details relegated to ESM). |
 | popPK | Westra_2025 | irrelevant | 2 | 3 | Cobicistat is only a co-administered CYP3A booster; the popPK model and numeric parameters (CL/F, V/F, Ka) are for osimertinib and its metabolite AZ5104, not for cobicistat itself. |
 | popPK | Xie_2020 | irrelevant | 0 | 0 | This is an in vitro SARS-CoV-2 antiviral screening study; cobicistat is only a screened inhibitor with EC50 values, no PK disposition parameters. |
@@ -95,4 +101,4 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcobicistat%5D&body=Drug%3A%20cobicistat%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cobicistat/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 15:26 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 11:31 UTC</sub>

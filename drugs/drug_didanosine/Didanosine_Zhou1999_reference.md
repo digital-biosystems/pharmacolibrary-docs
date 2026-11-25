@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;didanosine&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/&quot;},{&quot;label&quot;:&quot;Zhou_1999 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Drusano1992_reference&quot;,&quot;label&quot;:&quot;Drusano_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Drusano1992_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Zhou1999_reference&quot;,&quot;label&quot;:&quot;Zhou_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Zhou1999_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Didanosine_Drusano1992_reference&quot;,&quot;label&quot;:&quot;Drusano_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Drusano1992_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Pai1992_reference&quot;,&quot;label&quot;:&quot;Pai_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Pai1992_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Zhou1999_reference&quot;,&quot;label&quot;:&quot;Zhou_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Zhou1999_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Didanosine_Greenberg2022_reference&quot;,&quot;label&quot;:&quot;Greenberg_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Greenberg2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Didanosine_Ngara2020_reference&quot;,&quot;label&quot;:&quot;Ngara_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_didanosine/Didanosine_Ngara2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Didanosine’s reported oral clearance (1.84 liters/h/kg) was held for review because a second reader disputed whether that estimate was present.
+> cross_check_disputed; x1_cross_check.
 
-<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Zhou1999_reference" status="needs_review" stale="false" population="HIV-infected adults (ACTG 241)" measured-compound="didanosine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="didanosine" model-id="Didanosine_Zhou1999_reference" status="needs_review" stale="false" population="adults with HIV" measured-compound="didanosine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zhou XJ, Sheiner LB, D'Aquila RT, Hughes MD, Hirsch MS, Fischl MA et al. Population pharmacokinetics of nevirapine, zidovudine, and didanosine in human immunodeficiency virus-infected patients. The National Institute of Allergy and Infectious Diseases AIDS Clinical Trials Group Protocol 241 Investigators. Antimicrobial agents and chemotherapy 43(1):121–128 (1999).
@@ -17,13 +17,13 @@ Zhou XJ, Sheiner LB, D'Aquila RT, Hughes MD, Hirsch MS, Fischl MA et al. Populat
 
 ## Population and dosing
 
-**Population:** HIV-infected adults (ACTG 241) · condition HIV infection · age group adult · n = 175.
+**Population:** adults with HIV · condition HIV infection · age group adult.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameterization:** CL/F, CLnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 7 extracted.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameterization:** mechanistic.  
+**Parameters:** 5 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference.svg" alt="Didanosine_Zhou1999_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -33,17 +33,15 @@ Zhou XJ, Sheiner LB, D'Aquila RT, Hughes MD, Hirsch MS, Fischl MA et al. Populat
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Individual oral clearance (CL) | CLnorm/F | 0.0533 | L/h |
+| Individual oral clearance (CL) | CL | 0.0533 | L/h |
 | volume of distribution (V) | V | 1.17 | liters/kg |
-| Individual mean oral CL (ZDV) | CL/F | 1.84 | liters/h/kg |
-| VSS (ZDV) | Vss | 6.68 | liters/kg |
-| FTRIPLE (ddI) | Frel | 1.05 | ddI |
-| F of ZDV (triple vs double combination) | Fab | 67.7 | % |
-| ka (prior, Horton et al.) | kabs | 2.38 | 1/h |
+| VSS (volume of distribution at steady state) | Vss | 6.68 | liters/kg |
+| average individual oral CL | CLnorm | 1.64 | liters/h/kg |
+| FTRIPLE | Frel | 1.05 | relative bioavailability (F) of ddI |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.538). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,25 +51,23 @@ Zhou XJ, Sheiner LB, D'Aquila RT, Hughes MD, Hirsch MS, Fischl MA et al. Populat
 
 ### Reviewer guidance
 
-**Didanosine’s reported oral clearance (1.84 liters/h/kg) was held for review because a second reader disputed whether that estimate was present.**
+**cross_check_disputed; x1_cross_check.**
 
-The record came from the abstract alone, so reported summary statistics stood in for a fitted model; absorption lag time was defaulted, and bioavailability was assumed to be 1 with no molar correction. The second reader disagreed with the recorded presence of didanosine’s oral clearance of 1.84 liters/h/kg, absolute bioavailability of 67.7%, absorption rate constant of 2.38 1/h, and steady-state volume of distribution of 6.68 liters/kg, and assigned the 6.68 value to the steady-state volume entry instead. The cross-reader result was disputed, with agreement of 0.538 and 0 of 1 readers agreeing. Extracted — didanosine: CLnorm/F 0.0533 L/h, V 1.17 liters/kg, CL/F 1.84 liters/h/kg, Vss 6.68 liters/kg, Frel 1.05 ddI, Fab 67.7 %, kabs 2.38 1/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — didanosine: CL 0.0533 L/h, V 1.17 liters/kg, Vss 6.68 liters/kg, CLnorm 1.64 liters/h/kg, Frel 1.05 relative bioavailability (F) of ddI.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f of zdv: this record has 67.7, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has didanosine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Individual oral clearance (CL) | `Q355` · CLnorm/F | 0.0533 | L/h | 1.481e-08 | m3/s | L/h | llm_corrected (0.6) | Zhou_1999:abstract |
+| Individual oral clearance (CL) | `Q22` · CL | 0.0533 | L/h | 1.481e-08 | m3/s | L/h | llm_corrected (0.6) | Zhou_1999:abstract |
 | volume of distribution (V) | `Q61` · V | 1.17 | liters/kg | 0.0819 | m3 | l/kg | exact (1) | Zhou_1999:abstract |
-| Individual mean oral CL (ZDV) | `Q27` · CL/F | 1.84 | liters/h/kg | 3.578e-05 | m3/s | l/(h·kg) | llm_corrected (0.6) | Zhou_1999:abstract |
-| VSS (ZDV) | `Q65` · Vss | 6.68 | liters/kg | 0.4676 | m3 | l/kg | exact (1) | Zhou_1999:abstract |
-| FTRIPLE (ddI) | `Q87` · Frel | 1.05 | ddI |  |  | d^2·i | llm (0.6) | Zhou_1999:abstract |
-| F of ZDV (triple vs double combination) | `Q40` · Fab | 67.7 | % |  |  | % | llm (0.6) | Zhou_1999:abstract |
-| ka (prior, Horton et al.) | `Q49` · kabs | 2.38 | 1/h | 0.0006611 | 1/s | 1/h | review_gapfill (0.7) | Innes_2018:review |
+| VSS (volume of distribution at steady state) | `Q65` · Vss | 6.68 | liters/kg | 0.4676 | m3 | l/kg | exact (1) | Zhou_1999:abstract |
+| average individual oral CL | `Q354` · CLnorm | 1.64 | liters/h/kg | 3.189e-05 | m3/s | l/(h·kg) | llm_corrected (0.6) | Zhou_1999:abstract |
+| FTRIPLE | `Q87` · Frel | 1.05 | relative bioavailability (F) of ddI |  |  | d^2·bioavailability·f·i·of·relative | llm (0.6) | Zhou_1999:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -80,50 +76,48 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
-- unit_dimension_unknown: 'liters/h/kg of body weight' (CLnorm/F)
-- dropped duplicate Q61 ('V (ZDV)', value 2.67) — already have one for this compound
-- dropped duplicate Q27 ('average individual oral CL (ddI)', value 1.64) — already have one for this compound
-- dropped duplicate Q65 ('VSS (ddI)', value 3.56) — already have one for this compound
-- dropped duplicate Q61 ('V (ddI)', value 2.74) — already have one for this compound
-- unit_dimension_unknown: 'ddI' (Frel)
-- dropped duplicate Q87 ('FDOUBLE (ddI)', value 1) — already have one for this compound
-- routed 'intraindividual variability (&gt;50%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- implicit units: 'Individual oral clearance (CL)' → L/h (from the popPK convention: 'No unit stated in text, caption, or footnotes. CL/F is an apparent oral clearance; in population PK such clearances are ')
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=didanosine
+- unit_dimension_unknown: 'liters/h/kg of body weight' (CL)
+- dropped duplicate Q22 ('Individual mean oral CL', value '1.84') — already have one for this compound
+- dropped duplicate Q61 ('V', value '2.67') — already have one for this compound
+- dropped duplicate Q65 ('VSS', value '3.56') — already have one for this compound
+- unit_dimension_unknown: 'relative bioavailability (F) of ddI' (Frel)
+- dropped duplicate Q87 ('FDOUBLE', value '1') — already have one for this compound
+- dropped value-less row: 'F of ZDV'
+- implicit units: 'Individual oral clearance (CL)' → L/h (from the popPK convention: 'No unit is provided in the text or table. Oral clearance (CL) is standardly reported in L/h in population PK. The value ')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=didanosine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Innes_2018's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Zhou_1999_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Zhou_1999_metadata.yaml (11 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.538 (7/13 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[f of zdv]` | 67.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[individual mean oral cl]` | 1.84 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[individual oral clearance].parameter_id` | Q355 | Q27 | mismatch |
-| `gpt-oss-120b` | `parameters[ka]` | 2.38 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vss (volume of distribution at steady state) of zdv]` |  | 6.68 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[average individual oral cl]` | 1.64 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 0.0533 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f of zdv]` |  | 67.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ftriple]` | 1.05 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ftriple]` |  | 1.05 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[individual oral clearance]` | 0.0533 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` |  | 1.17 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 1.17 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vss]` | 6.68 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` |  | 6.68 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | didanosine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | didanosine | unknown | mismatch |
 
 </details>
 
@@ -137,17 +131,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Zhou_1999:abstract'] |
-| C5_dimension_Q355 | pass | [length] ** 3 / [time] |  | ['Zhou_1999:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Innes_2018:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Zhou_1999:abstract'] |
+| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Zhou_1999:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Zhou_1999:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Zhou_1999:abstract'] |
-| C7_apparent_coherence | pass |  |  |  |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0533 | ['Zhou_1999:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 129 L/h | ['Zhou_1999:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0533 L/h | ['Zhou_1999:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 81.9 L | ['Zhou_1999:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 468 L | ['Zhou_1999:abstract'] |
 
@@ -157,12 +150,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=didanosine) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.538, 0 of 1 reader(s) agree | 0.538 | cross-check disputed by a second reader: verdict disputed, agreement 0.538, 0 of 1 reader(s) agree |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.143 | cross-check contradicted by a second reader: verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -178,15 +170,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_modelica.zip" download>Didanosine_Zhou1999_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_fmi.zip" download>Didanosine_Zhou1999_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_matlab.zip" download>Didanosine_Zhou1999_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_matlab_simbio.zip" download>Didanosine_Zhou1999_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_sbml.zip" download>Didanosine_Zhou1999_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_cellml.zip" download>Didanosine_Zhou1999_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_modelica.zip" download>Didanosine_Zhou1999_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_fmi.zip" download>Didanosine_Zhou1999_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_matlab.zip" download>Didanosine_Zhou1999_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_matlab_simbio.zip" download>Didanosine_Zhou1999_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_sbml.zip" download>Didanosine_Zhou1999_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_cellml.zip" download>Didanosine_Zhou1999_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 ## Model interface
@@ -197,19 +189,17 @@ The parameters this record sets on the template, in the template's SI units, and
 |---|---|---|---|---|
 | input | compound | `MM` | 0.2362 | kg/mol |
 | input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0004 | kg |
-| input | model | `Cl` | 3.578e-05 | m3/s |
+| input | dosing | `adminMass` | 1e-05 | kg |
+| input | model | `Cl` | 1.481e-08 | m3/s |
 | input | model | `VdPerKg` | 0.00117 | m3/kg |
-| input | model | `ka` | 0.0006611 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
 ## Tested with
 
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
 - Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
 - No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
@@ -232,14 +222,14 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 400 mg, single dose, first-order absorption (ka 2.38 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 400 mg oral (J05AF02) (defined daily dose)._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
-<dbs-fmusim paramsurl="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_didanosine/Didanosine_Zhou1999_reference/Didanosine_Zhou1999_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Didanosine_Zhou1999_reference_params.json` · controls `Didanosine_Zhou1999_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Didanosine_Zhou1999_reference_params.json` · controls `Didanosine_Zhou1999_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdidanosine%5D%20Didanosine_Zhou1999_reference&body=Drug%3A%20didanosine%0ARecord%3A%20Didanosine_Zhou1999_reference%0APaper%3A%20Zhou_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_didanosine/Didanosine_Zhou1999_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:10 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:08 UTC</sub>

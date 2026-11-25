@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;idarubicin&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/&quot;},{&quot;label&quot;:&quot;Stewart_1991 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Idarubicin_Kuhlmann2001_reference&quot;,&quot;label&quot;:&quot;Kuhlmann_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Idarubicin_Tamura1996_reference&quot;,&quot;label&quot;:&quot;Tamura_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Tamura1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Meg_as_Vericat_2019_LPC&quot;,&quot;label&quot;:&quot;Meg\u00edas-Vericat_2019 \u00b7 LPC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/pd_Meg_as_Vericat_2019_LPC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Idarubicin_Tamura1996_reference&quot;,&quot;label&quot;:&quot;Tamura_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Tamura1996_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Idarubicin_Kuhlmann2001_reference&quot;,&quot;label&quot;:&quot;Kuhlmann_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Meg_as_Vericat_2019_LPC&quot;,&quot;label&quot;:&quot;Meg\u00edas-Vericat_2019 \u00b7 LPC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/pd_Meg_as_Vericat_2019_LPC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper reports none of the model's key parameters.
+> No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Stewart1991_reference" status="rejected" stale="false" population="patients in a phase I trial and bioavailability study" measured-compound="idarubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Stewart1991_reference" status="rejected" stale="false" population="cancer patients" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Stewart DJ, Grewaal D, Green RM, Verma S, Maroun JA, Redmond D et al. Bioavailability and pharmacology of oral idarubicin. Cancer chemotherapy and pharmacology 27(4):308–314 (1991).
@@ -17,11 +17,11 @@ Stewart DJ, Grewaal D, Green RM, Verma S, Maroun JA, Redmond D et al. Bioavailab
 
 ## Population and dosing
 
-**Population:** patients in a phase I trial and bioavailability study · n = 22.
+**Population:** cancer patients · age group adult.
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
@@ -31,11 +31,11 @@ Stewart DJ, Grewaal D, Green RM, Verma S, Maroun JA, Redmond D et al. Bioavailab
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Oral bioavailability | Fab | 12%-49% | % |
+| Urinary excretion of the drug | fe | 5 | % of the delivered dose |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,61 +45,62 @@ Stewart DJ, Grewaal D, Green RM, Verma S, Maroun JA, Redmond D et al. Bioavailab
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**No volume or clearance — not a compartmental population PK model.**
 
-No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — idarubicin: Fab 12%-49% %.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on bioavailability: this record has 12%-49%, the second reading 12; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 12; it also differs on 4 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | link | source |
-|---|---|---|---|---|---|
-| Oral bioavailability | `Q40` · Fab | 12%-49% | % | exact (1) | Stewart_1991:abstract |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| Urinary excretion of the drug | `Q44` · fe | 5 | % of the delivered dose | 0.05 | s | d·%·dose·elivered·of·the | llm_confirmed (0.6) | Stewart_1991:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
+
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| terminal half-life of idarubicin | Q57 | llm |
+| Oral bioavailability | Q40 | exact |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'terminal half-life of idarubicin'
-- dropped value-less row: 'peak concentrations and AUCs in whole blood ... for idarubicin'
-- dropped value-less row: 'peak concentrations and AUCs in whole blood ... for idarubicinol'
-- dropped value-less row: 'Urinary excretion of the drug ... by 96 h'
+- unit_dimension_unknown: '% of the delivered dose' (fe)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=idarubicin
-- round-trip: Fab value not numeric ('12%-49%')
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=noncompartmental; 7/7 row label(s) assigned, 0 linked by role; re-tagged idarubicin→parent ×6, idarubicin→idarubicinol ×1
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Stewart_1991_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Stewart_1991_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.5 (5/10 fields) | 5 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `model.bioavailability.theta` | 12%-49% | 12 | mismatch |
-| `qwen3.8-27b` | `parameters[bioavailability ... whole-blood values]` |  | 30 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[urinary excretion of the drug]` |  | 5 | only_one_extracted |
+| `gpt-oss-120b` | `model.bioavailability.theta` |  | 12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability lower bound]` |  | 12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[urinary excretion of the drug]` | 5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[urinary excretion]` |  |  | only_one_extracted |
 
 </details>
 
@@ -111,11 +112,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | obtained |
-|---|---|---|
-| C0_has_structural_params | fail | 0 |
-| C0b_disposition_core | fail |  |
-| C8_topology | pass |  |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | fail |  |  |  |
+| C5_dimension_Q57 | pass | [time] |  | ['Stewart_1991:abstract'] |
+| C8_topology | pass |  |  |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -139,4 +141,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bidarubicin%5D%20Idarubicin_Stewart1991_reference&body=Drug%3A%20idarubicin%0ARecord%3A%20Idarubicin_Stewart1991_reference%0APaper%3A%20Stewart_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_idarubicin/Idarubicin_Stewart1991_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:02 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:25 UTC</sub>

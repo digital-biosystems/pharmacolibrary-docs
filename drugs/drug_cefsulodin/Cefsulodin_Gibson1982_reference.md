@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cefsulodin’s renal clearance of 1.09 ml/kg/in and plasma concentration of 60% have incompatible dimensions, so the abstract-only record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q26 unit ml/kg/ in ([length] ** 2) vs [length] ** 3 / [time]; Q75 unit % (dimensionless) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="cefsulodin" model-id="Cefsulodin_Gibson1982_reference" status="rejected" stale="false" population="adults with normal renal function and renal impairment" measured-compound="cefsulodin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Gibson TP, Granneman GR, Kallal JE, Sennello LT. Cefsulodin kinetics in renal im
 
 ### Reviewer guidance
 
-**Cefsulodin’s renal clearance of 1.09 ml/kg/in and plasma concentration of 60% have incompatible dimensions, so the abstract-only record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q26 unit ml/kg/ in ([length] ** 2) vs [length] ** 3 / [time]; Q75 unit % (dimensionless) vs [mass] / [length] ** 3.**
 
-The renal clearance unit does not express volume per time, and percent is dimensionless rather than a plasma concentration unit. Only the abstract was read, so reported summary statistics stood in for a fitted model. A second reader disputed extraction of the listed parameter values. Extracted — cefsulodin: Vss 0.26 l/kg, t1/2z 1.9 hr, CL 2.01 ml/kg/min, CLR 1.09 ml/kg/ in, Q 122 ml/min, Ct 60 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefsulodin: Vss 0.26 l/kg, t1/2z 1.9 hr, CL 2.01 ml/kg/min, CLR 1.09 ml/kg/ in, Q 122 ml/min, Ct 60 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefsulodin, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

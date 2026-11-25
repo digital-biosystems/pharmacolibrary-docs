@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> Fentanyl model rejected due to an orphan compartment without a dose path and a missing absorption rate constant.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Reed2024_reference" status="rejected" stale="false" population="healthy adult horses" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
@@ -60,13 +60,13 @@ Reed RA, Berghaus LJ, Reynolds RM, Holmes BT, Krikorian AM, Sakai DM et al. The 
 
 ### Reviewer guidance
 
-**Fentanyl model rejected due to an orphan compartment without a dose path and a missing absorption rate constant.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure includes a compartment or metabolite unreachable from the site of dosing. The absorption rate constant was not extracted, so no specific value was assigned to the model. A second reader reported a value of 12661.7 for this parameter, contradicting the absence of data in the record. Extracted — fentanyl: λ1 17.8 1/h, kel 2.12 1/h, t1/2α 0.039 h, t1/2β 0.327 h, t1/2γ 1.85 h, AUClast 5.24e+03 h*pg/ml, CL 722 ml/h/kg, V1 0.191 L/kg, … (+4).
+Extracted — fentanyl: λ1 17.8 1/h, kel 2.12 1/h, t1/2α 0.039 h, t1/2β 0.327 h, t1/2γ 1.85 h, AUClast 5.24e+03 h*pg/ml, CL 722 ml/h/kg, V1 0.191 L/kg, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of tva: this record has none, the second reading 12661.7. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

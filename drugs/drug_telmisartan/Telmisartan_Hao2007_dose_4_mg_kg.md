@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Telmisartan bioavailability lacked an extracted value, forcing the use of a library placeholder instead of a study-specific estimate.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Hao2007_dose_4_mg_kg" status="needs_review" stale="false" population="spontaneously hypertensive rats" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Hao K, Chen YC, Cao YG, Yu D, Liu XQ, Wang GJ. Pharmacokinetic-pharmacodynamic m
 
 ### Reviewer guidance
 
-**Telmisartan bioavailability lacked an extracted value, forcing the use of a library placeholder instead of a study-specific estimate.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The bioavailability parameter was not assigned a value from the paper, indicating it remained a default. Consequently, the record relies on a standard library assumption rather than specific estimates from the study. This means the simulated profile uses arbitrary assumptions unsupported by the provided source. Extracted — telmisartan: t1/2z 17.5 h, CL 0.15 L·kg⁻¹·h⁻¹, V 5.19 L·kg⁻¹, MRT 21.4 h, tmax 7.1 h, Cmax 440 ng·mL⁻¹, AUC∞ 2.64e+04 ng·h·mL⁻¹, kabs 4.53 /h, … (+1).
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — telmisartan: t1/2z 17.5 h, CL 0.15 L·kg⁻¹·h⁻¹, V 5.19 L·kg⁻¹, MRT 21.4 h, tmax 7.1 h, Cmax 440 ng·mL⁻¹, AUC∞ 2.64e+04 ng·h·mL⁻¹, kabs 4.53 /h, … (+1).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

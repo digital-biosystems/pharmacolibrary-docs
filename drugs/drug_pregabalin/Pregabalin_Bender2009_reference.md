@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Pregabalin clearance of 0.034 L/hr was rejected as physiologically implausible in relation to distribution volume, consistent with a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="pregabalin" model-id="Pregabalin_Bender2009_reference" status="rejected" stale="false" population="rats" measured-compound="pregabalin" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Bender G, Gosset J, Florian J, Tan K, Field M, Marshall S et al. Population phar
 
 ### Reviewer guidance
 
-**Pregabalin clearance of 0.034 L/hr was rejected as physiologically implausible in relation to distribution volume, consistent with a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports clearance of 0.034 L/hr, central volume of 0.270 L, and peripheral volume of 6.75 L; the stated reason for rejection is an implausible clearance-to-volume magnitude attributed to unit or scale extraction. The second reader did not confirm the reported absorption rate of 2.0, lag time of 0.495 hour, or coefficient of 0.302. Extracted — pregabalin: CL 0.034 L/hr, V1 0.27 L, Q 0.0225 L/hr, V2 6.75 L, kabs 2 h À1, tlag 0.495 hour.
+Extracted — pregabalin: CL 0.034 L/hr, V1 0.27 L, Q 0.0225 L/hr, V2 6.75 L, kabs 2 h À1, tlag 0.495 hour.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption rate constant: this record has 2.0, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

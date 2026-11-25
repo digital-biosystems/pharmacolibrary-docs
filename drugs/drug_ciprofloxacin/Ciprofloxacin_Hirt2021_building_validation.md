@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The peripheral volume of distribution (26.5 L) and second peripheral volume (17.4 L) lack defined compartment roles, leaving structural parameters uncovered.
+> The covariate scenarios were not simulated; t3_param_coverage.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Hirt2021_building_validation" status="needs_review" stale="false" population="children treated with ciprofloxacin" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -61,13 +61,13 @@ Hirt D, Oualha M, Pasquiers B, Blanot S, Rubinstazjn R, Glorion C et al. Populat
 
 ### Reviewer guidance
 
-**The peripheral volume of distribution (26.5 L) and second peripheral volume (17.4 L) lack defined compartment roles, leaving structural parameters uncovered.**
+**The covariate scenarios were not simulated; t3_param_coverage.**
 
-The model defines a total volume of 117.2 L as the sum of V1 and V2, but V1 is not explicitly listed as a parameter. The parameter coverage check identified V2 as missing, preventing the simulation of covariate effects defined for clearance. Consequently, the covariate scenarios for estimated renal function and age were not exercised during validation. Extracted — ciprofloxacin: kabs 0.667 h⁻¹, CL 9.07 L.h⁻¹, V2 26.5 L, Q 3.9 L.h⁻¹, V3 17.4 L, Fab 0.374, V 117 L.
+The base model was simulated, not the covariate effects the record defines. Extracted — ciprofloxacin: kabs 0.667 h⁻¹, CL 9.07 L.h⁻¹, V2 26.5 L, Q 3.9 L.h⁻¹, V3 17.4 L, Fab 0.374, V 117 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

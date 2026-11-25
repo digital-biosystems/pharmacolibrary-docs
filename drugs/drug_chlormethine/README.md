@@ -21,7 +21,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Maisin_1985_proteinuria](drugs/drug_chlormethine/pd_Maisin_1985_proteinuria.md) | proteinuria biomarker turnover ← chlormethine | — | Maisin A et al., [Value of chlormethine in children with…, Archives francaises de pedi… (1985) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Maisin_1985_proteinuria](drugs/drug_chlormethine/pd_Maisin_1985_proteinuria.md) | proteinuria biomarker turnover ← chlormethine | — | Maisin A et al., [Value of chlormethine in children with…, Archives francaises de pedi… (1985) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

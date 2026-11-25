@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F was not extracted from the paper for amoxicillin, so a generic library placeholder was used instead of a fitted estimate.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Carlier2013_reference" status="needs_review" stale="false" population="critically ill patients" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Carlier M, Noë M, De Waele JJ, Stove V, Verstraete AG, Lipman J et al. Populati
 
 ### Reviewer guidance
 
-**Bioavailability F was not extracted from the paper for amoxicillin, so a generic library placeholder was used instead of a fitted estimate.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record provides specific values for clearance, volumes, and absorption parameters for amoxicillin but omits a value for bioavailability. Consequently, the model relies on a standard library default for F rather than a parameter supported by this study. A second reader also disagreed on whether the dose compound was amoxicillin alone or the amoxicillin/clavulanic acid combination. Extracted — amoxicillin: CL 10.3 L/h, V1 13.5 L, V2 14.1 L, Q 15.7 L/h, kabs 0.17 h−1, tlag 0.125 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — amoxicillin: CL 10.3 L/h, V1 13.5 L, V2 14.1 L, Q 15.7 L/h, kabs 0.17 h−1, tlag 0.125 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amoxicillin/clavulanic acid, the second reading amoxicillin. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

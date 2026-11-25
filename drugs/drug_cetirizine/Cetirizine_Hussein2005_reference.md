@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The metabolite clearance parameter was normalized to weight while the relative bioavailability remained unadjusted, causing double correction.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="cetirizine" model-id="Cetirizine_Hussein2005_reference" status="rejected" stale="false" population="atopic children" measured-compound="levocetirizine" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Hussein Z, Pitsiu M, Majid O, Aarons L, de Longueville M, Stockis A. Retrospecti
 
 ### Reviewer guidance
 
-**The metabolite clearance parameter was normalized to weight while the relative bioavailability remained unadjusted, causing double correction.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The record lists a weight-normalized apparent clearance of 0.044 L/h/kg alongside a relative bioavailability of 0.28. This combination violates coherence rules because the clearance already accounts for body size while the bioavailability factor remains unadjusted. Additionally, the record was built from the abstract alone, meaning the AUC value of 1952 microg l(-1) h represents summary statistics rather than a fitted model. Extracted — cetirizine: CLm,norm/F 0.044 L/h/kg, Vm/F 0.639 l kg(-1), Frel 0.28 12% of instances of suspected noncompliance, AUCSS 1.95e+03 microg l(-1) h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cetirizine: CLm,norm/F 0.044 L/h/kg, Vm/F 0.639 l kg(-1), Frel 0.28 12% of instances of suspected noncompliance, AUCSS 1.95e+03 microg l(-1) h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cetirizine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

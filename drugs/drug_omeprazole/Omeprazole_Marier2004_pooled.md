@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because omeprazole's zero-order input rate has a unit dimension conflict.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q307 unit h ([time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Marier2004_pooled" status="rejected" stale="false" population="healthy adults and children with GERD" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Marier JF, Dubuc MC, Drouin E, Alvarez F, Ducharme MP, Brazier JL. Pharmacokinet
 
 ### Reviewer guidance
 
-**The record was rejected because omeprazole's zero-order input rate has a unit dimension conflict.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q307 unit h ([time]) vs [mass] / [time].**
 
-The zero-order input rate parameter is recorded with a value of 15.3 and units of hours, which conflicts with the required mass per time dimension. Additionally, the absorption rate constant uses units of inverse minutes, a unit that could not be converted to standard SI units, so it lacked a compatible value. Extracted — omeprazole: Vss 36.1 L, tlag 0.23 h, R1 15.3 h, CL 6.67 L/h, V 7.47 L, kabs 0.05 min À1.
+A reported unit could not be converted (R1), so that value has no SI equivalent. Extracted — omeprazole: Vss 36.1 L, tlag 0.23 h, R1 15.3 h, CL 6.67 L/h, V 7.47 L, kabs 0.05 min À1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

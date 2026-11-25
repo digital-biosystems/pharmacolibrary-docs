@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> Clonidine apparent steady-state volume of distribution (0.53 ml) and total clearance (14.9 microliter/min) values are physiologically implausible.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Chiang1986_reference" status="rejected" stale="false" population="New Zealand white rabbits" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Chiang CH, Schoenwald RD. Ocular pharmacokinetic models of clonidine-3H hydrochl
 
 ### Reviewer guidance
 
-**Clonidine apparent steady-state volume of distribution (0.53 ml) and total clearance (14.9 microliter/min) values are physiologically implausible.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record was rejected because the extracted volume and clearance magnitudes fall outside the expected physiological range, indicating a unit or scale extraction error. Since the data was derived solely from the paper abstract, summary statistics were used as proxies for a fitted model. A second reader could not independently verify these specific parameter values from the text. Extracted — clonidine: kabs 0.00139 min-1, kel 0.0658 min-1, MRT 35.6 min, Vss 0.53 ml, CL 14.9 microliter/min, V 2.8 L/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clonidine: kabs 0.00139 min-1, kel 0.0658 min-1, MRT 35.6 min, Vss 0.53 ml, CL 14.9 microliter/min, V 2.8 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clonidine, the second reading clonidine hydrochloride; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

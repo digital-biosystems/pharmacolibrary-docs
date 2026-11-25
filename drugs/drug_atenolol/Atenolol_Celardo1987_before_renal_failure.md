@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> Atebrolol clearance and volume parameters were rejected for falling outside physiological windows.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Celardo1987_before_renal_failure" status="rejected" stale="false" population="rabbits on continuous peritoneal dialysis" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
 
@@ -64,13 +64,13 @@ Celardo A, Traina GL, Arboix M, Puigdemont A, Bonati M. Pharmacokinetic and phar
 
 ### Reviewer guidance
 
-**Atebrolol clearance and volume parameters were rejected for falling outside physiological windows.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The clearance values of 0.58 L/h and 0.54 L/h, along with volumes of 0.48 L and 1.56 L, were flagged as implausible. The AUC value of 5.34 mg·h/L was also identified as outside expected physiological ranges. A second reader confirmed the presence of these specific parameter values in the record. Extracted — atenolol: λ1 4.36, λ2 0.32, t1/2α 0.18 h, t1/2β 2.22 h, V 0.48 L, Vss 1.56 L, CL 0.58 L/h, AUC 5.34 mg·h/L, … (+9).
+A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — atenolol: λ1 4.36, λ2 0.32, t1/2α 0.18 h, t1/2β 2.22 h, V 0.48 L, Vss 1.56 L, CL 0.58 L/h, AUC 5.34 mg·h/L, … (+9).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc d: this record has 5.34, the second reading none; it also differs on 13 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

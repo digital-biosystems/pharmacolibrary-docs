@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> The record attributes idarucizumab parameters, like clearance of 0.0394 L/min, to ketamine in a paper about dabigatran.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="ketamine" model-id="Ketamine_Eaton2026_reference" status="rejected" stale="false" population="" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Eaton MP, Nadtochiy SM, Stefanos T, Anderson BJ. Dabigatran-idarucizumab pharmac
 
 ### Reviewer guidance
 
-**The record attributes idarucizumab parameters, like clearance of 0.0394 L/min, to ketamine in a paper about dabigatran.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source paper focuses on dabigatran pharmacokinetics, where ketamine is merely a sedative, yet the extracted parameters are labeled for idarucizumab. Clearance of 0.0394 L/min and volume of 6.47 L are values associated with the wrong molecule. A second reader also disputed the extracted values, disagreeing on specific parameter assignments. Extracted — ketamine: CL 0.0394 L/min, V 6.47 L.
+Extracted — ketamine: CL 0.0394 L/min, V 6.47 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.0394, the second reading 0.0509; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -126,7 +126,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

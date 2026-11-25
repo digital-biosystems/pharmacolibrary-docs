@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The second reader disputed the one-compartment structure for clofazimine, disagreeing on model topology and multiple extracted parameter values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="clofazimine" model-id="Clofazimine_Kengo2024_reference" status="needs_review" stale="false" population="" measured-compound="clofazimine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Kengo A, Nabeemeeah F, Denti P, Sabet R, Okyere-Manu G, Abraham P et al. Assessi
 
 ### Reviewer guidance
 
-**The second reader disputed the one-compartment structure for clofazimine, disagreeing on model topology and multiple extracted parameter values.**
+**cross_check_disputed; x1_cross_check.**
 
-While the record defines a one-compartment model with clearance of 12.2 L/h and volume of 38.7 L, the second reader proposed a two-compartment structure. The disagreement included null values in the primary record for parameters identified by the second reader as 19, 10, and 98.5. Additionally, a parameter value of -4.3 in the record was not corroborated by the second reader, resulting in zero agreement. Extracted — clofazimine: CL 12.2 L/h, V 38.7 L.
+Extracted — clofazimine: CL 12.2 L/h, V 38.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has none, the second reading 19; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -125,7 +125,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check disputed by a second reader: verdict disputed, agreement 0.444, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.444 (4 of 9 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.444 | cross-check contradicted by a second reader: verdict disputed; agreement 0.444 (4 of 9 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

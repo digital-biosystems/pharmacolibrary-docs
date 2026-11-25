@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Eculizumab's maximum metabolic rate unit, mg/day, could not be converted to standard international units, causing the model to be rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/day ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Le2024_reference" status="rejected" stale="false" population="adults with atypical haemolytic uraemic syndrome and C3 glomerulopathy" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Le Tilly O, Gatault P, Semlali S, Sberro-Soussan R, Passot C, Bertrand D et al. 
 
 ### Reviewer guidance
 
-**Eculizumab's maximum metabolic rate unit, mg/day, could not be converted to standard international units, causing the model to be rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/day ([mass] / [time]) vs [mass] / [time].**
 
-The maximum rate of metabolism was recorded as 26.07 mg/day. This unit could not be converted to standard international units. Consequently, the parameter value was not processed into SI units before review. Extracted — eculizumab: V 72.4 mL/kg, CL 1.32 mL/day/kg, Vmax 26.1 mg/day, Km 24.1 mg/L.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — eculizumab: V 72.4 mL/kg, CL 1.32 mL/day/kg, Vmax 26.1 mg/day, Km 24.1 mg/L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

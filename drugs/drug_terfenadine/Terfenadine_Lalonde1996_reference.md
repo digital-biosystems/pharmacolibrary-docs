@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Terfenadine’s CL/F of 4.42 1/hr and distribution volumes V1/F 89.8 and V2 119.2 have units that conflict with their pharmacokinetic dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit 1/hr (1 / [time]) vs [length] ** 3 / [time]; Q290 unit 1 (dimensionless) vs [length] ** 3; Q64 unit 1 (dimensionless) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="terfenadine" model-id="Terfenadine_Lalonde1996_reference" status="rejected" stale="false" population="healthy male adults" measured-compound="terfenadine" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Lalonde RL, Lessard D, Gaudreault J. Population pharmacokinetics of terfenadine.
 
 ### Reviewer guidance
 
-**Terfenadine’s CL/F of 4.42 1/hr and distribution volumes V1/F 89.8 and V2 119.2 have units that conflict with their pharmacokinetic dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit 1/hr (1 / [time]) vs [length] ** 3 / [time]; Q290 unit 1 (dimensionless) vs [length] ** 3; Q64 unit 1 (dimensionless) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-CL/F is clearance, which has dimensions of volume per time, while V1/F and V2 are distribution volumes, but their recorded units are 1/hr and dimensionless, respectively. The reported structure also has an unreachable or orphan compartment; because only the abstract was read, summary statistics stand in for a fitted model. A second reader marked the dose compound and primary analyte unknown and did not identify CL/F or several reported estimates. Extracted — terfenadine: kabs 2.8 hr-1, tlag 0.33 hr, CL/F 4.42 1/hr, V1/F 89.8 1, Cmax 1.54 ng/ml, tmax 1.3 hr, t1/2z 15.1 hr, V2 119 1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — terfenadine: kabs 2.8 hr-1, tlag 0.33 hr, CL/F 4.42 1/hr, V1/F 89.8 1, Cmax 1.54 ng/ml, tmax 1.3 hr, t1/2z 15.1 hr, V2 119 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has terfenadine, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

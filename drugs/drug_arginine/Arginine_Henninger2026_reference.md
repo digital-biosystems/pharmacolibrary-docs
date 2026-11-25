@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> Record rejected because the paper studies DNDI-6148, not arginine, which is only a co-medication.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="Arginine" model-id="Arginine_Henninger2026_reference" status="rejected" stale="false" population="" measured-compound="arginine" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Henninger RH, Schouten WM, Arana B, Gillon JY, Mowbray CE, Kratz JM et al. Trans
 
 ### Reviewer guidance
 
-**Record rejected because the paper studies DNDI-6148, not arginine, which is only a co-medication.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The source paper investigates the pharmacokinetics of DNDI-6148, a benzoxaborole derivative, rather than the amino acid arginine. Arginine appears only as a co-medication or covariate in the study context, not as the primary analyte. Additionally, the model builder defaulted parameters for F and Tlag, and a second reader disagreed on multiple extracted values. Extracted — arginine: CL 3.44 L/h, V 79.5 L, kabs 0.36 h−1.
+Extracted — arginine: CL 3.44 L/h, V 79.5 L, kabs 0.36 h−1.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q1: this record has 8000, the second reading none; it also differs on 11 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -141,7 +141,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.077, 0 of 1 reader(s) agree | 0.077 | cross-check agreement 0.077 is below 0.5: verdict partial, agreement 0.077, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.077 (1 of 13 compared fields agree, 12 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.077 | cross-check agreement 0.077 is below 0.5: verdict partial; agreement 0.077 (1 of 13 compared fields agree, 12 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

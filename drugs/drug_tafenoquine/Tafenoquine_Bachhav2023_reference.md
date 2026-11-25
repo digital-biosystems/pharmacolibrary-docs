@@ -5,11 +5,11 @@
 
 # tafenoquine — `Tafenoquine_Bachhav2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The AUC parameter was rejected for a unit mismatch, and the model is an abstract-only approximation.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Bachhav2023_reference" status="rejected" stale="false" population="paediatric patients with P. vivax malaria" measured-compound="tafenoquine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Bachhav2023_reference" status="needs_review" stale="false" population="paediatric patients" measured-compound="tafenoquine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bachhav SS, Taylor M, Martin A, Green JA, Duparc S, Rolfe K et al. A pharmacometrics approach to assess the feasibility of capillary microsampling to replace venous sampling in clinical studies: Tafenoquine case study. British journal of clinical pharmacology 89(3):1187–1197 (2023).
@@ -17,29 +17,27 @@ Bachhav SS, Taylor M, Martin A, Green JA, Duparc S, Rolfe K et al. A pharmacomet
 
 ## Population and dosing
 
-**Population:** paediatric patients with P. vivax malaria · condition Plasmodium vivax malaria · age group child.
+**Population:** paediatric patients · condition viver malaria · age group child.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | clearance | CL | 3.4 | L/h |
-| AUC0-inf point estimate | AUC∞ | 100.7 | % |
-| Cmax point estimate | Cmax_ratio | 79.7 | % |
-| Cmax 90% CI lower | equation variable | 76.9 | % |
-| Tlag,1 | tlag | 0.147 | h |
+| area under the concentration-time curve from time zero to infinity (AUC0-inf ) | AUC∞ | 100.7 | ng*h/mL |
+| Cmax | Cmax | 79.7 | ng/mL |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,23 +47,21 @@ Bachhav SS, Taylor M, Martin A, Green JA, Duparc S, Rolfe K et al. A pharmacomet
 
 ### Reviewer guidance
 
-**The AUC parameter was rejected for a unit mismatch, and the model is an abstract-only approximation.**
+**Only clearance was extracted — no volume.**
 
-The record lists the area under the concentration-time curve with a unit of percent, which conflicts with the required mass-volume-time dimensions. Consequently, the model was built from the paper's abstract rather than a fitted dataset, meaning the reported summary statistics stand in for actual parameter estimates. Extracted — tafenoquine: CL 3.4 L/h, AUC∞ 101 %, Cmax_ratio 79.7 %, tlag 0.147 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tafenoquine: CL 3.4 L/h, AUC∞ 101 ng*h/mL, Cmax 79.7 ng/mL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tafenoquine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | clearance | `Q22` · CL | 3.4 | L/h | 9.444e-07 | m3/s | l/h | exact (1) | Bachhav_2023:abstract, Bachhav_2023:abstract |
-| AUC0-inf point estimate | `Q17` · AUC∞ | 100.7 | % |  |  | % | llm_confirmed (0.6) | Bachhav_2023:abstract |
-| Cmax point estimate | `Q33` · Cmax_ratio | 79.7 | % |  |  | % | llm_corrected (0.6) | Bachhav_2023:abstract |
-| Cmax 90% CI lower | `Q900` · equation variable | 76.9 | % |  |  | % | llm_corrected (0.6) | Bachhav_2023:abstract |
-| Tlag,1 | `Q83` · tlag | 0.147 | h | 529.2 | s | h | review_gapfill (0.7) | Cherkaoui-Rbati_2023:review |
+| area under the concentration-time curve from time zero to infinity (AUC0-inf ) | `Q17` · AUC∞ | 100.7 | ng*h/mL |  |  | ng*h/mL | llm (0.6) | Bachhav_2023:abstract |
+| Cmax | `Q32` · Cmax | 79.7 | ng/mL |  |  | ng/mL | exact (1) | Bachhav_2023:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,48 +71,24 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- routed 'interindividual variability' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- unit_dimension_mismatch: 'AUC0-inf point estimate' → Q17 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'AUC0-inf 90% CI lower' → Q17 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped duplicate Q17 ('AUC0-inf 90% CI lower', value 98.0) — already have one for this compound
-- dropped unlinked row (NIL): 'AUC0-inf 90% CI upper' — extend the ontology if this is a real PK parameter (source ['Bachhav_2023:abstract'])
-- dropped unlinked row (NIL): 'Cmax 90% CI upper' — extend the ontology if this is a real PK parameter (source ['Bachhav_2023:abstract'])
+- implicit units: 'area under the concentration-time curve from time zero to infinity (AUC0-inf )' → ng*h/mL (from the popPK convention: 'AUC is the integral of concentration over time. In population PK for small molecules, concentration is typically reporte')
+- implicit units: 'Cmax' → ng/mL (from the popPK convention: 'Cmax represents peak drug concentration. In population PK, plasma concentrations are standardly reported in ng/mL.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tafenoquine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q83 (tlag) from Cherkaoui-Rbati_2023's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Bachhav_2023_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Bachhav_2023_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>10 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[area under the concentration-time curve from time zero to infinity]` |  | 100.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc0-inf point estimate]` | 100.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | 3.4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` |  | 3.4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax 90% ci lower]` | 76.9 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax point estimate]` | 79.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` |  | 79.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag,1]` | 0.147 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | tafenoquine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | tafenoquine | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -131,9 +103,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Bachhav_2023:abstract'] |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Bachhav_2023:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bachhav_2023:abstract', 'Bachhav_2023:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Cherkaoui-Rbati_2023:review'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Bachhav_2023:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.4 | ['Bachhav_2023:abstract', 'Bachhav_2023:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 3.4 L/h | ['Bachhav_2023:abstract', 'Bachhav_2023:abstract'] |
@@ -148,9 +120,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -160,4 +142,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btafenoquine%5D%20Tafenoquine_Bachhav2023_reference&body=Drug%3A%20tafenoquine%0ARecord%3A%20Tafenoquine_Bachhav2023_reference%0APaper%3A%20Bachhav_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tafenoquine/Tafenoquine_Bachhav2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 08:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 07:21 UTC</sub>

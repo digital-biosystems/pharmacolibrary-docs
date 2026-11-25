@@ -4,11 +4,11 @@
 
 # valaciclovir — `Valaciclovir_Zeng2009_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Only clearance was extracted — no volume.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="valaciclovir" model-id="Valaciclovir_Zeng2009_reference" status="needs_review" stale="false" population="children and young people with malignancy" measured-compound="acyclovir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="valaciclovir" model-id="Valaciclovir_Zeng2009_reference" status="rejected" stale="false" population="children and young people with malignancy" measured-compound="acyclovir" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Zeng L, Nath CE, Blair EY, Shaw PJ, Stephen K, Earl JW et al. Population pharmacokinetics of acyclovir in children and young people with malignancy after administration of intravenous acyclovir or oral valacyclovir. Antimicrobial agents and chemotherapy 53(7):2918–2927 (2009).
@@ -16,29 +16,29 @@ Zeng L, Nath CE, Blair EY, Shaw PJ, Stephen K, Earl JW et al. Population pharmac
 
 ## Population and dosing
 
-**Population:** children and young people with malignancy · condition malignancy · age group mixed · n = 43.
+**Population:** children and young people with malignancy · condition malignancy · age group mixed.
 
-**Dosing:** 350, 700 mg, iv/oral, multiple.
+**Dosing:** 350, 700 mg, iv, oral, multiple, every 8 h.
 
 **Dosed compound ≠ measured compound:** dosed valaciclovir, measured acyclovir.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 1 extracted.  
+**Structure:** parent + metabolite; no model was built for this record.  
+**Parameterization:** mechanistic.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| 4 | CLm/F | 3 | L/h |
+| 3 | equation variable | 2 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,62 +48,59 @@ Zeng L, Nath CE, Blair EY, Shaw PJ, Stephen K, Earl JW et al. Population pharmac
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**The paper reports none of the model's key parameters.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. None of the extracted parameters is valaciclovir's own; they describe acyclovir. Extracted — acyclovir: CLm/F 3 L/h.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has valaciclovir, the second reading valacyclovir and acyclovir; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has valaciclovir, the second reading valacyclovir; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| 4 | `Q351` · CLm/F | 3 | L/h | 8.333e-07 | m3/s | L/h | llm (0.6) | tab_0:row7:col2, tab_0:row7:col3 |
+| label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|
+| 3 | `Q900` · equation variable | 2 |  | 2 | llm (0.6) | tab_0:row4:col2, tab_0:row4:col3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
 - column 'comparison model no.' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- column 'model' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped value-less row: '1'
 - dropped unlinked row (NIL): '2' — extend the ontology if this is a real PK parameter (source ['tab_0:row2:col3'])
-- dropped unlinked row (NIL): '3' — extend the ontology if this is a real PK parameter (source ['tab_0:row4:col2', 'tab_0:row4:col3'])
-- implicit units: '4' → L/h (from the popPK convention: "The paper does not explicitly state a unit for CL itself; it reports CLCR in liter/h (Fig. 2 caption: 'CL versus CL CR (")
-- metabolite acyclovir: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=acyclovir
+- dropped unlinked row (NIL): '4' — extend the ontology if this is a real PK parameter (source ['tab_0:row7:col2', 'tab_0:row7:col3'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=acyclovir
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — only the metabolite is modelled — no parent compartment
-- row roles (LLM): model_class=compartmental; 4/4 row label(s) assigned, 0 linked by role
+- status held at "Needs review" — not promoted
+- row roles (LLM): model_class=compartmental; 3/3 row label(s) assigned, 0 linked by role
 
 **Extraction notes:**
-- unparsed cell tab_0:row1:col2 = 'C L ϭ 1 ϫ EXP(IIV); V ϭ 2 ϫ EXP(IIV)'
-- unparsed cell tab_0:row2:col2 = 'CL ϭ 1 ϫ EXP(IIV ϩ IOV); V ϭ 2 ϫ'
-- unparsed cell tab_0:row2:col6 = 'Ͻ0.001'
-- unparsed cell tab_0:row4:col6 = 'Ͻ0.001'
-- unparsed cell tab_0:row7:col6 = 'Ͻ0.01'
+- table tab_0: missing_label
+- table tab_0: units_need_context
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['valaciclovir', 'acyclovir', 'metabolism']] | [] | mismatch |
 | `gpt-oss-120b` | `parameters[2]` |  | 1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[4]` | 3 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | valaciclovir | valacyclovir and acyclovir | mismatch |
+| `gpt-oss-120b` | `parameters[3].parameter_id` | Q900 | Q49 | mismatch |
+| `gpt-oss-120b` | `parameters[4]` |  | 3 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | valaciclovir | valacyclovir | mismatch |
 
 </details>
 
@@ -115,14 +112,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['tab_0:row7:col2', 'tab_0:row7:col3'] |
-| C7_apparent_coherence | pass |  |  |  |
-| C8_topology | pass |  |  |  |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | fail | 0 |
+| C0b_disposition_core | fail |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -134,19 +128,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -156,4 +140,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvalaciclovir%5D%20Valaciclovir_Zeng2009_reference&body=Drug%3A%20valaciclovir%0ARecord%3A%20Valaciclovir_Zeng2009_reference%0APaper%3A%20Zeng_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_valaciclovir/Valaciclovir_Zeng2009_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:38 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:28 UTC</sub>

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;lenvatinib&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/&quot;},{&quot;label&quot;:&quot;Hayato_2018 \u00b7 PD sum of diameters of all target lesions&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lenvatinib_Tamai2017_base_base_model_population_mean_rse&quot;,&quot;label&quot;:&quot;Tamai_2017_base_base_model_population_mean_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/Lenvatinib_Tamai2017_base_base_model_population_mean_rse.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenvatinib_Tamai2017_final_final_model_population_mean_rse&quot;,&quot;label&quot;:&quot;Tamai_2017_final_final_model_population_mean_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/Lenvatinib_Tamai2017_final_final_model_population_mean_rse.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sum of diameters of all target lesions — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
@@ -15,7 +16,7 @@
 
 **As extracted:** Lenvatinib (concentrations from the PK model of Gupta_2016) drives sum of diameters of all target lesions (in mm): direct Emax (saturable) effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Lenvatinib exposure (µg·h/mL) was modeled against the sum of target-lesion diameters (mm); the paper excerpts do not specify the pharmacodynamic mechanism. The record gives Emax 0.0834/week, EC50 2.03 µg·h/mL, K_G 0.000932/week, and λ 0.170/week.
 >
@@ -47,6 +48,44 @@ Hayato S et al., Exposure-response analysis and simulati…, Cancer chemotherapy
 </details>
 
 
+## Exposure-response model
+
+`Lenvatinib_Hayato2018_PD_y` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| Emax | -0.0834 /week | -1.379e-07 1/s |
+| EC50 | 2.03 µg h/mL | — |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -6.895e-08, `at_inf` = -1.379e-07
+
+Deviations:
+
+- `defaulted_parameters` — E0, gamma
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
+- `pd_binding_exposure_unit_unresolved` — 'µg h/mL' — the x axis is in the paper's unit, not SI
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">Needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+- exposure unit not resolved to SI — the x axis is in the paper's unit
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
 
@@ -76,19 +115,33 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lenvatinib/Lenvatinib_Hayato2018_PD_y/Lenvatinib_Hayato2018_PD_y_modelica.zip" download>Lenvatinib_Hayato2018_PD_y_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lenvatinib/Lenvatinib_Hayato2018_PD_y/Lenvatinib_Hayato2018_PD_y_matlab.zip" download>Lenvatinib_Hayato2018_PD_y_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lenvatinib/Lenvatinib_Hayato2018_PD_y/Lenvatinib_Hayato2018_PD_y_sbml.zip" download>Lenvatinib_Hayato2018_PD_y_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lenvatinib/Lenvatinib_Hayato2018_PD_y/Lenvatinib_Hayato2018_PD_y_cellml.zip" download>Lenvatinib_Hayato2018_PD_y_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Lenvatinib_Hayato2018_PD_y`. <https://pharmacolibrary.github.io/#/drugs/drug_lenvatinib/pd_Hayato_2018_y>
+
+```bibtex
+@misc{pharmacolibrary_LenvatinibHayato2018PDy,
+  title  = {{Pharmacolibrary model Lenvatinib_Hayato2018_PD_y}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_lenvatinib/pd_Hayato_2018_y},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
 
 <div class="pk-tab-end"></div>
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The total clearance parameter for desipramine is implausible at 3.65 mL/min/g because its label misidentifies the compound as 11C-MIBG.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="desipramine" model-id="Desipramine_Asiimwe2024_reference" status="rejected" stale="false" population="healthy adults (desipramine clinical trial dataset)" measured-compound="desipramine" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Asiimwe IG, S'fiso Ndzamba B, Mouksassi S, Pillai GC, Lombard A, Lang J. Machine
 
 ### Reviewer guidance
 
-**The total clearance parameter for desipramine is implausible at 3.65 mL/min/g because its label misidentifies the compound as 11C-MIBG.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists the total clearance value as 3.65 with the unit mL/min/g, which is a tissue-specific metric rather than a standard physiological clearance unit. The verbatim label for this parameter reads "11C-MIBG", indicating it was extracted from a different context or compound than desipramine. This mismatch in label and unit renders the clearance magnitude outside the physiological window, leading to rejection. Extracted — desipramine: V1 892 L, V2 369 L, Q 79 L/h, CL 3.65 mL/min/g.
+Extracted — desipramine: V1 892 L, V2 369 L, Q 79 L/h, CL 3.65 mL/min/g.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has desipramine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

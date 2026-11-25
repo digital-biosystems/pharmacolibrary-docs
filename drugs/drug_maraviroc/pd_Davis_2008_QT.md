@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Maraviroc_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_maraviroc/Maraviroc_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Maraviroc_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_maraviroc/Maraviroc_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Davis_2008_QT&quot;,&quot;label&quot;:&quot;Davis_2008 \u00b7 QT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_maraviroc/pd_Davis_2008_QT.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# QT interval — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.833), gpt-oss-120b (?, agreement 0.0). Primary extraction retained.">cross-check: disputed</span>
+# QT interval — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Maraviroc (concentrations from the PK model of Chan_2008) drives QT interval (in ms): direct linear effect.
+**As extracted:** Maraviroc (concentrations from the PK model of Chan_2011::pk_alone_pk_estimation_step_of_the_two_stage_approach) drives QT interval (in ms): direct linear effect.
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
@@ -35,8 +35,7 @@ Davis JD et al., Effect of single doses of maraviroc on…, British journal of c
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | slope | `Q335` ·  | 0.97 | micros ml ng(-1) | llm | Davis_2008:pdv3 |
-| model term | QT:RR correction factor | `Q900` ·  | 0.324 |  | llm | Davis_2008:pdv3 |
+| PD (effect) | slope describing the QT-concentration relationship | `Q335` ·  | 0.97 | micros ml ng(-1) | llm | Davis_2008:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,18 +77,17 @@ Advisory:
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.833 (5/6 fields) | 1 |
-| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
+| `gpt-oss-120b` | not confirmed | 0.8 (4/5 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[Q900]` | 0.324 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q335].value` | 0.97 | value | mismatch |
 
 </details>
 
@@ -105,7 +103,7 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_maraviroc/Maraviroc_Davis2008_PD_qt/Maraviroc_Davis2008_PD_qt_modelica.zip" download>Maraviroc_Davis2008_PD_qt_modelica.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_maraviroc/Maraviroc_Davis2008_PD_qt/Maraviroc_Davis2008_PD_qt_modelica.zip" download>Maraviroc_Davis2008_PD_qt_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_maraviroc/Maraviroc_Davis2008_PD_qt/Maraviroc_Davis2008_PD_qt_fmi.zip" download>Maraviroc_Davis2008_PD_qt_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PD_LinearSweep.fmu" download>PD_LinearSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_maraviroc/Maraviroc_Davis2008_PD_qt/Maraviroc_Davis2008_PD_qt_matlab.zip" download>Maraviroc_Davis2008_PD_qt_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>

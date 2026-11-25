@@ -22,9 +22,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Briggs_2021_QTcP](drugs/drug_ozanimod/pd_Briggs_2021_QTcP.md) | QTcP ← Ozanimod · direct Emax (saturable) effect | — | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Briggs_2021_QTcP_2](drugs/drug_ozanimod/pd_Briggs_2021_QTcP_2.md) | QTcP ← CC112273 · direct Emax (saturable) effect | — | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Briggs_2021_QTcP_3](drugs/drug_ozanimod/pd_Briggs_2021_QTcP_3.md) | QTcP ← CC1084037 · direct Emax (saturable) effect | — | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Briggs_2021_QTcP](drugs/drug_ozanimod/pd_Briggs_2021_QTcP.md) | QTcP ← Ozanimod · direct Emax (saturable) effect | — | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Briggs_2021_QTcP_2](drugs/drug_ozanimod/pd_Briggs_2021_QTcP_2.md) | QTcP ← CC112273 · direct Emax (saturable) effect | — | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Briggs_2021_QTcP_3](drugs/drug_ozanimod/pd_Briggs_2021_QTcP_3.md) | QTcP ← CC1084037 · direct Emax (saturable) effect | — | Briggs E et al., Concentration-QTc Modeling of Ozanimod'…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12580](https://doi.org/10.1002/psp4.12580) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +38,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:07 | 0:31 | 0/0/0 | 1/2/0 | 0/0/0 | 23,764/2,496 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-07 00:07 | 0:31 | 0/0/0 | 3/0/0 | 0/0/0 | 23,764/2,496 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 

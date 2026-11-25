@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The second reader disputed the mapping of camel clearance and the extraction of the 1.75 L/kg central compartment volume.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="tripelennamine" model-id="Tripelennamine_Wasfi2000_reference" status="needs_review" stale="false" population="horses and camels" measured-compound="tripelennamine" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Wasfi IA, Abdel Hadi AA, Elghazali M, Boni NS, Alkatheeri NA, Barezaig IM et al.
 
 ## Population and dosing
 
-**Population:** horses and camels · n = 11.
+**Population:** horses and camels · condition healthy · age group adult · n = 11.
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -25,7 +25,7 @@ Wasfi IA, Abdel Hadi AA, Elghazali M, Boni NS, Alkatheeri NA, Barezaig IM et al.
 
 **Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference/Tripelennamine_Wasfi2000_reference.svg" alt="Tripelennamine_Wasfi2000_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -35,15 +35,14 @@ Wasfi IA, Abdel Hadi AA, Elghazali M, Boni NS, Alkatheeri NA, Barezaig IM et al.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| terminal elimination half-lives (camels) | t1/2z | 2.39 | h |
-| total body clearances (camels) | CL | 0.97 | L/h/kg |
-| total body clearances (horses) | CLb | 0.84 | L/h/kg |
-| volumes of distribution at steady state (camels) | Vss | 2.87 | L/kg |
-| volumes of the central compartment of the two compartment pharmacokinetic model (camels) | V | 1.75 | L/kg |
+| terminal elimination half-lives | t1/2z | 2.39 | h |
+| total body clearances | CLb | 0.97 | L/h/kg |
+| volumes of distribution at steady state | Vss | 2.87 | L/kg |
+| volumes of the central compartment of the two compartment pharmacokinetic model | V | 1.75 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308), qwen3.8-27b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,23 +52,22 @@ Wasfi IA, Abdel Hadi AA, Elghazali M, Boni NS, Alkatheeri NA, Barezaig IM et al.
 
 ### Reviewer guidance
 
-**The second reader disputed the mapping of camel clearance and the extraction of the 1.75 L/kg central compartment volume.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the paper's abstract, so the reported summary statistics stand in for a fitted model. The second reader disagreed with the identity of the total body clearance parameter for camels and contested the presence of the central compartment volume parameter. A second reader also assigned the value 1.75 to a different central compartment volume field, creating conflicting parameter records. Extracted — tripelennamine: t1/2z 2.39 h, CL 0.97 L/h/kg, CLb 0.84 L/h/kg, Vss 2.87 L/kg, V 1.75 L/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tripelennamine: t1/2z 2.39 h, CLb 0.97 L/h/kg, Vss 2.87 L/kg, V 1.75 L/kg.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[total body clearances].parameter_id`: this record has Q22, the second reading Q54; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| terminal elimination half-lives (camels) | `Q57` · t1/2z | 2.39 | h | 8604 | s | h | llm (0.6) | Wasfi_2000:abstract |
-| total body clearances (camels) | `Q22` · CL | 0.97 | L/h/kg | 1.886e-05 | m3/s | l/(h·kg) | llm_corrected (0.6) | Wasfi_2000:abstract |
-| total body clearances (horses) | `Q23` · CLb | 0.84 | L/h/kg | 1.633e-05 | m3/s | l/(h·kg) | llm_confirmed (0.6) | Wasfi_2000:abstract |
-| volumes of distribution at steady state (camels) | `Q65` · Vss | 2.87 | L/kg | 0.2009 | m3 | l/kg | llm (0.6) | Wasfi_2000:abstract |
-| volumes of the central compartment of the two compartment pharmacokinetic model (camels) | `Q61` · V | 1.75 | L/kg | 0.1225 | m3 | l/kg | llm (0.6) | Wasfi_2000:abstract |
+| terminal elimination half-lives | `Q57` · t1/2z | 2.39 | h | 8604 | s | h | llm (0.6) | Wasfi_2000:abstract, Wasfi_2000:abstract |
+| total body clearances | `Q23` · CLb | 0.97 | L/h/kg | 1.886e-05 | m3/s | l/(h·kg) | llm_confirmed (0.6) | Wasfi_2000:abstract, Wasfi_2000:abstract |
+| volumes of distribution at steady state | `Q65` · Vss | 2.87 | L/kg | 0.2009 | m3 | l/kg | llm (0.6) | Wasfi_2000:abstract, Wasfi_2000:abstract |
+| volumes of the central compartment of the two compartment pharmacokinetic model | `Q61` · V | 1.75 | L/kg | 0.1225 | m3 | l/kg | llm (0.6) | Wasfi_2000:abstract, Wasfi_2000:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -79,32 +77,43 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q57 ('terminal elimination half-lives (horses)', value 2.08) — already have one for this compound
-- dropped duplicate Q65 ('volumes of distribution at steady state (horses)', value 1.69) — already have one for this compound
-- dropped duplicate Q63 ('volumes of the central compartment of the two compartment pharmacokinetic model (horses)', value 1.06) — already have one for this compound
-- dropped unlinked row (NIL): 'extent of protein binding (horses)' — extend the ontology if this is a real PK parameter (source ['Wasfi_2000:abstract'])
-- dropped unlinked row (NIL): 'extent of protein binding (camels)' — extend the ontology if this is a real PK parameter (source ['Wasfi_2000:abstract'])
+- dropped unlinked row (NIL): 'horses' — extend the ontology if this is a real PK parameter (source ['Wasfi_2000:abstract'])
+- dropped unlinked row (NIL): 'camels' — extend the ontology if this is a real PK parameter (source ['Wasfi_2000:abstract'])
+- dropped unlinked row (NIL): 'dose' — extend the ontology if this is a real PK parameter (source ['Wasfi_2000:abstract'])
+- dropped unlinked row (NIL): 'extent of protein binding' — extend the ontology if this is a real PK parameter (source ['Wasfi_2000:abstract', 'Wasfi_2000:abstract'])
+- dropped unlinked row (NIL): 'T itself could be detected for up to' — extend the ontology if this is a real PK parameter (source ['Wasfi_2000:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tripelennamine
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'volumes of the central compartment of the two compartment pharmacokinetic model (camels)' is the general volume)
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'volumes of the central compartment of the two compartment pharmacokinetic model' is the general volume)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- derived CL=35.5274 L/h from ln2/t½z × V = CL (Q57 × Q61); not separately reported
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Wasfi_2000_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Wasfi_2000_metadata.yaml (14 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.308 (4/13 fields) | 9 |
 | `qwen3.8-27b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[central compartment volume]` |  | 1.75 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[extent of protein binding]` |  | 73.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal elimination half-life]` |  | 2.39 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal elimination half-lives]` | 2.39 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` |  | 0.97 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearances]` | 0.97 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` |  | 2.87 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volumes of distribution at steady state]` | 2.87 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volumes of the central compartment of the two compartment pharmacokinetic model]` | 1.75 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[total body clearances].parameter_id` | Q22 | Q54 | mismatch |
 | `qwen3.8-27b` | `parameters[volumes of the central compartment of the two compartment pharmacokinetic model]` | 1.75 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[volumes of the central compartment]` |  | 1.75 | only_one_extracted |
@@ -121,20 +130,18 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Wasfi_2000:abstract'] |
-| C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['Wasfi_2000:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Wasfi_2000:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Wasfi_2000:abstract'] |
-| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Wasfi_2000:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.97 | ['Wasfi_2000:abstract'] |
+| C5_dimension_Q23 | pass | [length] ** 3 / [time] |  | ['Wasfi_2000:abstract', 'Wasfi_2000:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Wasfi_2000:abstract', 'Wasfi_2000:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Wasfi_2000:abstract', 'Wasfi_2000:abstract'] |
+| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Wasfi_2000:abstract', 'Wasfi_2000:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.97 | ['Wasfi_2000:abstract', 'Wasfi_2000:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 67.9 L/h | ['Wasfi_2000:abstract'] |
-| C9_phys_window_Q23 | pass | clearance within physiological range | 58.8 L/h | ['Wasfi_2000:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 122 L | ['Wasfi_2000:abstract'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 201 L | ['Wasfi_2000:abstract'] |
+| C9_phys_window_Q23 | pass | clearance within physiological range | 67.9 L/h | ['Wasfi_2000:abstract', 'Wasfi_2000:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 122 L | ['Wasfi_2000:abstract', 'Wasfi_2000:abstract'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 201 L | ['Wasfi_2000:abstract', 'Wasfi_2000:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -142,11 +149,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
 | T3_output_variable | pass | C_central (measured=tripelennamine) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | cross-check disputed by a second reader: verdict disputed, agreement 0.7, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.308 (4 of 13 compared fields agree, 9 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.308 | cross-check agreement 0.308 is below 0.5: verdict partial; agreement 0.308 (4 of 13 compared fields agree, 9 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -162,7 +170,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference/Tripelennamine_Wasfi2000_reference_modelica.zip" download>Tripelennamine_Wasfi2000_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference/Tripelennamine_Wasfi2000_reference_modelica.zip" download>Tripelennamine_Wasfi2000_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference/Tripelennamine_Wasfi2000_reference_fmi.zip" download>Tripelennamine_Wasfi2000_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference/Tripelennamine_Wasfi2000_reference_matlab.zip" download>Tripelennamine_Wasfi2000_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference/Tripelennamine_Wasfi2000_reference_matlab_simbio.zip" download>Tripelennamine_Wasfi2000_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -184,7 +192,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 1.886e-05 | m3/s |
+| input | model | `Cl` | 9.869e-06 | m3/s |
 | input | model | `VdPerKg` | 0.00175 | m3/kg |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
@@ -224,4 +232,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btripelennamine%5D%20Tripelennamine_Wasfi2000_reference&body=Drug%3A%20tripelennamine%0ARecord%3A%20Tripelennamine_Wasfi2000_reference%0APaper%3A%20Wasfi_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:12 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:47 UTC</sub>

@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Bang_1998_relaxation_of_contractions_induced_by_K_20_mM](drugs/drug_hydralazine/pd_Bang_1998_relaxation_of_contractions_induced_by_K_20_mM.md) | relaxation of contractions induced by K+ (20 mM) ← hydralazine · direct Emax (saturable) effect | — | Bang L et al., Hydralazine-induced vasodilation involv…, European journal of pharmac… (1998) | [10.1016/s0014-2999(98)00701-8](https://doi.org/10.1016/s0014-2999(98)00701-8) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Bang_1998_relaxation_of_contractions_induced_by_K_20_mM](drugs/drug_hydralazine/pd_Bang_1998_relaxation_of_contractions_induced_by_K_20_mM.md) | relaxation of contractions induced by K+ (20 mM) ← hydralazine · direct Emax (saturable) effect | — | Bang L et al., Hydralazine-induced vasodilation involv…, European journal of pharmac… (1998) | [10.1016/s0014-2999(98)00701-8](https://doi.org/10.1016/s0014-2999(98)00701-8) |
 
 ## Pharmacogenomics (PGx)
 
@@ -67,7 +67,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 13:29 | 7:54 | 0/0/0 | 1/0/0 | 0/0/19 | 228,046/14,291 | ollama / qwen3.8:27b-mtp-q8_0 | 28 | 20/17 | 12/2 | 0 |
+| 2026-10-06 13:29 | 7:54 | 0/0/0 | 0/1/0 | 0/0/19 | 228,046/14,291 | ollama / qwen3.8:27b-mtp-q8_0 | 28 | 20/17 | 12/2 | 0 |
 
 ## Coverage
 

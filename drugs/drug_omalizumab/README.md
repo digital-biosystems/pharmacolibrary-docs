@@ -32,8 +32,8 @@ Omalizumab is a monoclonal antibody used to treat severe allergic asthma, urtica
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Oh_2023_itch_severity_score](drugs/drug_omalizumab/pd_Oh_2023_itch_severity_score.md) | weekly itch severity score ← total omalizumab · delayed effect through an effect compartment | — | Oh E et al., PK/PD modeling to characterize placebo…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12953](https://doi.org/10.1002/psp4.12953) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhao_2024_CFB_UAS7](drugs/drug_omalizumab/pd_Zhao_2024_CFB_UAS7.md) | change from baseline in Urticaria Activity Score ← omalizumab · inhibition effect | — | Zhao A et al., Time-course and dose-effect of omalizum…, European journal of clinica… (2024) | [10.1007/s00228-024-03725-2](https://doi.org/10.1007/s00228-024-03725-2) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Oh_2023_itch_severity_score](drugs/drug_omalizumab/pd_Oh_2023_itch_severity_score.md) | weekly itch severity score ← total omalizumab · delayed effect through an effect compartment | — | Oh E et al., PK/PD modeling to characterize placebo…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12953](https://doi.org/10.1002/psp4.12953) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +47,7 @@ Omalizumab is a monoclonal antibody used to treat severe allergic asthma, urtica
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:08 | 2:17 | 1/3/0 | 2/0/0 | 0/0/0 | 198,498/9,406 | einfracz / qwen3.8-27b | 5 | 2/3 | 5/0 | 0 |
+| 2026-10-07 22:08 | 2:17 | 1/3/0 | 1/1/0 | 0/0/0 | 198,498/9,406 | einfracz / qwen3.8-27b | 5 | 2/3 | 5/0 | 0 |
 
 ## Coverage
 

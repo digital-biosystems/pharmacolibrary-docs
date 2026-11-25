@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The volume of distribution parameter for nelfinavir has unit L/h instead of volume, causing a dimensional mismatch and implausible clearance ratio.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit L/h ([length] ** 3 / [time]) vs [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
-<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Crommentuyn2006_reference" status="rejected" stale="false" population="HIV-1-infected children" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Crommentuyn2006_reference" status="rejected" stale="false" population="HIV-1-infected children" measured-compound="nelfinavir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Crommentuyn KM, Scherpbier HJ, Kuijpers TW, Mathôt RA, Huitema AD, Beijnen JH. Population pharmacokinetics and pharmacodynamics of nelfinavir and its active metabolite M8 in HIV-1-infected children. The Pediatric infectious disease journal 25(6):538–543 (2006).
@@ -16,11 +16,11 @@ Crommentuyn KM, Scherpbier HJ, Kuijpers TW, Mathôt RA, Huitema AD, Beijnen JH. 
 
 ## Population and dosing
 
-**Population:** HIV-1-infected children · condition HIV-1 infection · age group child · n = 38.
+**Population:** HIV-1-infected children · age group child.
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
@@ -45,20 +45,20 @@ Crommentuyn KM, Scherpbier HJ, Kuijpers TW, Mathôt RA, Huitema AD, Beijnen JH. 
 
 ### Reviewer guidance
 
-**The volume of distribution parameter for nelfinavir has unit L/h instead of volume, causing a dimensional mismatch and implausible clearance ratio.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit L/h ([length] ** 3 / [time]) vs [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The volume of distribution (V/F) is assigned a value of 281 with unit L/h, which is dimensionally incorrect for a volume parameter. This unit error triggers a structural parameter check failure and places the calculated clearance-to-volume ratio outside the physiological window. Additionally, the record is based only on the paper's abstract, so the reported summary statistics stand in for a fitted model, and a second reader found the extracted parameters and metabolite link to be unsupported by the source text. Extracted — nelfinavir: CL 32.6 L/h, V 281 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nelfinavir: CL 32.6 L/h, V 281 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has nelfinavir → m8 (metabolism), the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading nelfinavir → m8 (metabolism); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Clearance (CL/F) | `Q22` · CL | 32.6 | L/h | 9.056e-06 | m3/s | l/h | exact (1) | Crommentuyn_2006:abstract |
-| volume of distribution (V/F) | `Q61` · V | 281 | L/h | 7.806e-05 | m3/s | l/h | exact (1) | Crommentuyn_2006:abstract |
+| Clearance (CL/F) | `Q22` · CL | 32.6 | L/h | 9.056e-06 | m3/s | l/h | exact (1) | Crommentuyn_2006:abstract, Crommentuyn_2006:abstract |
+| volume of distribution (V/F) | `Q61` · V | 281 | L/h | 7.806e-05 | m3/s | l/h | exact (1) | Crommentuyn_2006:abstract, Crommentuyn_2006:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -69,17 +69,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'volume of distribution (V/F)' → Q61 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
-- covariate category for CL/F from footnote/prose kept as documentation only (['Crommentuyn_2006:abstract'])
-- covariate category for V/F from footnote/prose kept as documentation only (['Crommentuyn_2006:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nelfinavir
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 0 linked by role; re-tagged nelfinavir→parent ×2, nelfinavir→M8 ×2
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Crommentuyn_2006_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -87,7 +80,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -97,11 +90,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['nelfinavir', 'm8', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[clearance]` | 32.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [] | [['nelfinavir', 'm8', 'metabolism']] | mismatch |
 | `gpt-oss-120b` | `parameters[clearance]` |  | 32.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 281 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 32.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution]` |  | 281 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 281 |  | only_one_extracted |
 
 </details>
 
@@ -118,12 +111,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Crommentuyn_2006:abstract'] |
-| C5_dimension_Q61 | fail | [length] ** 3 | L/h ([length] ** 3 / [time]) | ['Crommentuyn_2006:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 32.6 | ['Crommentuyn_2006:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Crommentuyn_2006:abstract', 'Crommentuyn_2006:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | L/h ([length] ** 3 / [time]) | ['Crommentuyn_2006:abstract', 'Crommentuyn_2006:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 32.6 | ['Crommentuyn_2006:abstract', 'Crommentuyn_2006:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 32.6 L/h | ['Crommentuyn_2006:abstract'] |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.0781 L | ['Crommentuyn_2006:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 32.6 L/h | ['Crommentuyn_2006:abstract', 'Crommentuyn_2006:abstract'] |
+| C9_phys_window_Q61 | fail | volume within physiological range | 0.0781 L | ['Crommentuyn_2006:abstract', 'Crommentuyn_2006:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -147,4 +140,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnelfinavir%5D%20Nelfinavir_Crommentuyn2006_reference&body=Drug%3A%20nelfinavir%0ARecord%3A%20Nelfinavir_Crommentuyn2006_reference%0APaper%3A%20Crommentuyn_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nelfinavir/Nelfinavir_Crommentuyn2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:20 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:24 UTC</sub>

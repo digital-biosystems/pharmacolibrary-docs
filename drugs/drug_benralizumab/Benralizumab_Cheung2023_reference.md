@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Benralizumab clearance lacks explicit absorption rate and lag time values, forcing the use of library defaults instead of paper-supported estimates.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="benralizumab" model-id="Benralizumab_Cheung2023_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="benralizumab" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Cheung TT, Mai TH, Chia YL, Yap DYH, Lee CH, Chen CC et al. Safety, Tolerability
 
 ### Reviewer guidance
 
-**Benralizumab clearance lacks explicit absorption rate and lag time values, forcing the use of library defaults instead of paper-supported estimates.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record's apparent parameterization requires absorption kinetics, but the source paper does not report values for the absorption rate constant or lag time. Consequently, library placeholder defaults were used for these parameters rather than explicit estimates, leading to the record being held back. Additionally, a second reader failed to extract specific numerical values associated with the model's volume parameters. Extracted — benralizumab: CL/F 407 mL/day, V/F 8.9 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — benralizumab: CL/F 407 mL/day, V/F 8.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 24583.8, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.778 (7 of 9 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

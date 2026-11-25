@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was quarantined because no explicit value was provided for fluorouracil's clearance, so a generic library placeholder was used instead.
+> No value for fluorouracil's clearance; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Tan2026_terret_20008" status="model_quarantined" stale="false" population="adults with cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Tan Z, Sancho-Araiz A, Völler S, Peeters SLJ, Manten T, Deenen MJ et al. Advanc
 
 ### Reviewer guidance
 
-**The record was quarantined because no explicit value was provided for fluorouracil's clearance, so a generic library placeholder was used instead.**
+**No value for fluorouracil's clearance; t6_deviations.**
 
-Although the model includes volume and saturation kinetics parameters, no specific numerical value for clearance was extracted from the paper. This omission meant the model relied on a default placeholder rather than an estimated pharmacokinetic value. Consequently, the model was held back to prevent publication with an invented number. Extracted — fluorouracil: V1 12.7 L, V2 11.9 L, Q 67.9 L/h, Vmax 1.39e+03 mg/h, Km 5.57 mg/L.
+The model was built, but fluorouracil's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — fluorouracil: V1 12.7 L, V2 11.9 L, Q 67.9 L/h, Vmax 1.39e+03 mg/h, Km 5.57 mg/L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

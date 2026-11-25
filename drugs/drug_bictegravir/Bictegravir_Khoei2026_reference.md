@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;Bictegravir&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/&quot;},{&quot;label&quot;:&quot;Khoei_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bictegravir_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bictegravir_Khoei2026_reference&quot;,&quot;label&quot;:&quot;Khoei_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Khoei2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Vegas_2025_HIV_RNA&quot;,&quot;label&quot;:&quot;Vegas_2025 \u00b7 HIV-RNA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/pd_Vegas_2025_HIV_RNA.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bictegravir_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bictegravir_Sun2026_reference&quot;,&quot;label&quot;:&quot;Sun_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Sun2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bictegravir_Khoei2026_reference&quot;,&quot;label&quot;:&quot;Khoei_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Khoei2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Vegas_2025_HIV_RNA&quot;,&quot;label&quot;:&quot;Vegas_2025 \u00b7 HIV-RNA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/pd_Vegas_2025_HIV_RNA.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper studies dolutegravir, not bictegravir, making the extracted clearance parameters invalid for this molecule.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Bictegravir" model-id="Bictegravir_Khoei2026_reference" status="rejected" stale="false" population="" measured-compound="bictegravir" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Khoei A, Edmonds A, Chang Y, Ramirez C, Vogan M, Poliseno A et al. Dolutegravir 
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper studies dolutegravir, not bictegravir, making the extracted clearance parameters invalid for this molecule.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The pharmacokinetic parameters, such as a clearance of 1.0 L/h, were extracted from a population study where bictegravir is only a co-medication. The second reader disagreed with the model builder on several parameter values, further highlighting the mismatch between the record and the source material. Extracted — bictegravir: CL/F 1 L/h, V/F 17.4 L, kabs 2.24 1/h.
+Extracted — bictegravir: CL/F 1 L/h, V/F 17.4 L, kabs 2.24 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 12.3, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -127,14 +127,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|
-| T0_analyte_identity | fail | bictegravir (or metabolite) | paper about another drug |  | paper subject is not bictegravir: the paper is about another drug; this one is a co-medication or covariate: This is a population-PK study of dolutegravir (DTG), not bictegravir; bictegravir is not the subject drug. |
+| T0_analyte_identity | fail | bictegravir (or metabolite) | paper about another drug |  | paper subject is not bictegravir: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=bictegravir) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (6 of 12 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (6 of 12 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -162,4 +162,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbictegravir%5D%20Bictegravir_Khoei2026_reference&body=Drug%3A%20bictegravir%0ARecord%3A%20Bictegravir_Khoei2026_reference%0APaper%3A%20Khoei_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bictegravir/Bictegravir_Khoei2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:43 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:43 UTC</sub>

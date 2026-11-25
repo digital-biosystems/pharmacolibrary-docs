@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;droperidol&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/&quot;},{&quot;label&quot;:&quot;Cooper_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Droperidol_Foo2016_reference&quot;,&quot;label&quot;:&quot;Foo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/Droperidol_Foo2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Radke_1998_time_averaged_single_channel_conductance&quot;,&quot;label&quot;:&quot;Radke_1998 \u00b7 time averaged single channel conductance&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/pd_Radke_1998_time_averaged_single_channel_conductance.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Droperidol_Foo2016_reference&quot;,&quot;label&quot;:&quot;Foo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/Droperidol_Foo2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Radke_1998_time_averaged_single_channel_conductance&quot;,&quot;label&quot;:&quot;Radke_1998 \u00b7 time averaged single channel conductance&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/pd_Radke_1998_time_averaged_single_channel_conductance.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Droperidol's intercompartmental clearance Q was rejected because its unit was extracted as 'ka' instead of a time-based unit like L/h.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ka ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="droperidol" model-id="Droperidol_Cooper2018_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="droperidol" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Cooper I, Landersdorfer CB, St John AG, Graudins A. The pharmacokinetics of intr
 
 ### Reviewer guidance
 
-**Droperidol's intercompartmental clearance Q was rejected because its unit was extracted as 'ka' instead of a time-based unit like L/h.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ka ([time]) vs 1 / [time].**
 
-The record lists intercompartmental clearance Q with a value of 9.66 and a unit labeled 'ka', which dimensionally conflicts with a clearance parameter. A second reader noted missing values for the central volume V1 (13.2) and an additional parameter (5.18), but the primary rejection reason remains the invalid unit for Q. Extracted — droperidol: V1 3.16 L, V2 16.9 L, Q 9.66 L/h, kabs 0.517 ka, t1/2β 2 h.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — droperidol: V1 3.16 L, V2 16.9 L, Q 9.66 L/h, kabs 0.517 ka, t1/2β 2 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cvcp: this record has none, the second reading 13.2; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

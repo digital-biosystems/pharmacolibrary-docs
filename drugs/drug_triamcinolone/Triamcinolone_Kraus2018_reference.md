@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Triamcinolone’s reported total clearance of 0.0001 mL/h/kg is an implausible magnitude, consistent with a unit/scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="triamcinolone" model-id="Triamcinolone_Kraus2018_reference" status="rejected" stale="false" population="patients with knee osteoarthritis" measured-compound="triamcinolone" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Kraus VB, Conaghan PG, Aazami HA, Mehra P, Kivitz AJ, Lufkin J et al. Synovial a
 
 ### Reviewer guidance
 
-**Triamcinolone’s reported total clearance of 0.0001 mL/h/kg is an implausible magnitude, consistent with a unit/scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports a volume of distribution of 0.0497 mL/kg. The review found the clearance and volume outside the physiological window because of an implausible magnitude consistent with a unit/scale extraction error. Extracted — triamcinolone: CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
+Extracted — triamcinolone: CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 543, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

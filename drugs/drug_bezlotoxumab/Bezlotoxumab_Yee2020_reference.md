@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-<div class="pk-model-meta" hidden drug="bezlotoxumab" model-id="Bezlotoxumab_Yee2020_reference" status="simulated" stale="false" population="adults with CDI" measured-compound="bezlotoxumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bezlotoxumab" model-id="Bezlotoxumab_Yee2020_reference" status="simulated" stale="false" population="adults with Clostridium difficile infection" measured-compound="bezlotoxumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yee KL, Kleijn HJ, Zajic S, Dorr MB, Wrishko RE. A time-to-event analysis of the exposure-response relationship for bezlotoxumab concentrations and CDI recurrence. Journal of pharmacokinetics and pharmacodynamics 47(2):121–130 (2020).
@@ -44,7 +44,7 @@ Yee KL, Kleijn HJ, Zajic S, Dorr MB, Wrishko RE. A time-to-event analysis of the
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 53, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
@@ -118,7 +118,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.556, 0 of 1 reader(s) agree | 0.556 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.556 (5 of 9 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.556 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -195,4 +195,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbezlotoxumab%5D%20Bezlotoxumab_Yee2020_reference&body=Drug%3A%20bezlotoxumab%0ARecord%3A%20Bezlotoxumab_Yee2020_reference%0APaper%3A%20Yee_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bezlotoxumab/Bezlotoxumab_Yee2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:59 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:34 UTC</sub>

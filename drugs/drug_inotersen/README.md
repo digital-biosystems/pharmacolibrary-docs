@@ -23,7 +23,7 @@ Inotersen is an antisense oligonucleotide used to treat hereditary transthyretin
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yu_2020_2_TTR](drugs/drug_inotersen/pd_Yu_2020_2_TTR.md) | serum TTR (transthyretin) level ← inotersen · indirect response — drug inhibits the production of serum TTR (transthyretin) level | — | Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020) | [10.1089/nat.2019.0822](https://doi.org/10.1089/nat.2019.0822) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Yu_2020_2_TTR](drugs/drug_inotersen/pd_Yu_2020_2_TTR.md) | serum TTR (transthyretin) level ← inotersen · indirect response — drug inhibits the production of serum TTR (transthyretin) level | — | Yu RZ et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020) | [10.1089/nat.2019.0822](https://doi.org/10.1089/nat.2019.0822) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,7 +37,7 @@ Inotersen is an antisense oligonucleotide used to treat hereditary transthyretin
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 05:05 | 2:14 | 1/0/0 | 1/0/0 | 0/0/0 | 115,193/7,976 | ollama / glm-5.3-flash | 2 | 1/1 | 2/0 | 0 |
+| 2026-11-23 23:13 | 0:04 | 1/0/0 | 1/0/0 | 0/0/0 | 4,703/146 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## Coverage
 
@@ -50,8 +50,10 @@ Inotersen is an antisense oligonucleotide used to treat hereditary transthyretin
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Coelho_2023 | irrelevant | 0 | 0 | This is a phase 3 efficacy/safety trial of eplontersen with inotersen only as a comparator/reference group; no PK parameters (CL, V, half-life, or population-PK model) for inotersen are reported. |
-| popPK | Karam_2022 | irrelevant | 0 | 0 | This is an HRQL outcomes study with no PK parameters for inotersen. |
+| popPK | Coelho_2023 | irrelevant | 0 | 0 | The study is a clinical efficacy trial for eplontersen, with inotersen serving only as a small reference group; it reports efficacy endpoints (TTR levels, scores) rather than pharmacokinetic parameters (CL, Vd, etc.). |
+| PGx | Coelho_2023 | not_relevant | 0 | 0 | The paper evaluates the efficacy of eplontersen in ATTRv amyloidosis and does not report how specific gene variants affect the pharmacokinetic or pharmacodynamic parameters of inotersen. |
+| popPK | Karam_2022 | irrelevant | 0 | 0 | The paper reports health-related quality of life (HRQL) outcomes and does not contain any pharmacokinetic parameters such as clearance or volume. |
+| PGx | Karam_2022 | not_relevant | 0 | 0 | The paper reports health-related quality of life outcomes and does not contain any pharmacogenomic data or genotype-stratified PK/PD parameters. |
 
 
 </details>

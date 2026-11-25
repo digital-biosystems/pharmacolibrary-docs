@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Palbociclib's clearance, volume of distribution, and lag time lacked values, so the record was held back.
+> No value for palbociclib's clearance, volume of distribution and absorption lag time — all 4 extracted parameters describe neutrophils (ANC), not palbociclib; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Marouille2021_final_final_population_pk_model_wi" status="model_quarantined" stale="false" population="women with HR+/HER2− advanced or metastatic breast cancer" measured-compound="palbociclib" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Marouille AL, Petit E, Kaderbhaï C, Desmoulins I, Hennequin A, Mayeur D et al. 
 
 ### Reviewer guidance
 
-**Palbociclib's clearance, volume of distribution, and lag time lacked values, so the record was held back.**
+**No value for palbociclib's clearance, volume of distribution and absorption lag time — all 4 extracted parameters describe neutrophils (ANC), not palbociclib; t6_deviations.**
 
-All four extracted parameters describe neutrophils, not palbociclib, leaving the drug's clearance, volume, and lag time undefined. No explicit numeric estimates were provided for these palbociclib parameters. The model relied on library placeholders for these missing values rather than fitted numbers. Extracted — neutrophils (ANC): CL/F 57.1 L/h, V/F 1.58e+03 L, kabs 0.187 h−1, tlag 0.658 h.
+The model was built, but palbociclib's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — neutrophils (ANC): CL/F 57.1 L/h, V/F 1.58e+03 L, kabs 0.187 h−1, tlag 0.658 h.
 
 Independently confirmed by `qwen3.8-27b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,7 +148,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

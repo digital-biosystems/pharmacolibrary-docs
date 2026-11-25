@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Foster_1991_sGaw](drugs/drug_reproterol/pd_Foster_1991_sGaw.md) | specific airways conductance (log sGaw) increase against background bronchoconstriction ← reproterol · direct linear effect | — | Foster RW et al., A method for bioassay of potency and ef…, British journal of clinical… (1991) | [10.1111/j.1365-2125.1991.tb05561.x](https://doi.org/10.1111/j.1365-2125.1991.tb05561.x) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Foster_1991_sGaw](drugs/drug_reproterol/pd_Foster_1991_sGaw.md) | specific airway conductance biomarker turnover ← reproterol | — | Foster RW et al., A method for bioassay of potency and ef…, British journal of clinical… (1991) | [10.1111/j.1365-2125.1991.tb05561.x](https://doi.org/10.1111/j.1365-2125.1991.tb05561.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:18 | 0:12 | 0/0/0 | 1/0/0 | 0/0/0 | 12,705/540 | ollama / glm-5.3-flash | 2 | 1/0 | 2/0 | 0 |
+| 2026-11-24 05:35 | 0:03 | 0/0/0 | 1/0/0 | 0/0/0 | 4,547/152 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
 
 ## Coverage
 
@@ -49,9 +49,14 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Patchett_1985 | irrelevant | 0 | 0 | This is a pharmacodynamic dose-response study of bronchodilation (FEV1/PEFR) with no PK parameters (CL, V, ka, half-life, or PK model) for reproterol. |
-| popPK | Susanna_1990 | irrelevant | 0 | 0 | Reproterol is only a co-administered bronchoprotective agent in a pharmacodynamic adenosine challenge study; no PK parameters or numeric disposition values are reported. |
-| popPK | Zimmer_2000 | irrelevant | 0 | 0 | Isolated working rat heart pharmacodynamic/toxicity study of beta-agonists; no PK disposition parameters for reproterol are reported. |
+| popPK | Foster_1991 | irrelevant | 0 | 0 | The study is a bioassay of pharmacodynamic potency (dose-effect) rather than a pharmacokinetic study, reporting no clearance, volume, or half-life parameters for reproterol. |
+| PGx | Foster_1991 | not_relevant | 0 | 0 | The paper describes a bioassay method for bronchodilators in normal subjects and does not report any pharmacogenomic effects of gene variants on the PK or PD parameters of reproterol. |
+| popPK | Patchett_1985 | irrelevant | 0 | 0 | The paper is a pharmacodynamic dose-response study measuring bronchial (FEV1, PEFR) and cardiovascular responses, and does not report any pharmacokinetic parameters (CL, V, ka, t1/2) for reproterol. |
+| PGx | Patchett_1985 | not_relevant | 0 | 0 | The paper reports general dose-response relationships for reproterol but does not mention or analyze any gene variants or genotypes. |
+| popPK | Susanna_1990 | irrelevant | 0 | 0 | The study investigates pharmacological mechanisms of bronchoreactivity (adenosine dose-response) with reproterol as a comparative treatment, not population pharmacokinetics. |
+| PGx | Susanna_1990 | not_relevant | 0 | 0 | The paper investigates the pharmacological mechanism of reproterol (P1 receptor antagonism) in response to adenosine, but it does not examine the effect of any genetic variant or genotype on reproterol's pharmacokinetics or pharmacodynamics. |
+| popPK | Zimmer_2000 | irrelevant | 0 | 0 | The study is an in-vitro/isolated organ pharmacodynamic comparison of beta-agonists, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Zimmer_2000 | not_relevant | 0 | 0 | The study is an isolated working rat heart experiment comparing beta-agonists and does not involve human subjects, gene variants, or pharmacogenomics. |
 
 
 </details>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The bioavailability parameter F for ciprofloxacin was not reported, leaving it as an unsupported default in the model record.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Alihodzic2022_base" status="needs_review" stale="false" population="adults undergoing ECMO" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Alihodzic D, Wicha SG, Frey OR, König C, Baehr M, Jarczak D et al. Ciprofloxaci
 
 ### Reviewer guidance
 
-**The bioavailability parameter F for ciprofloxacin was not reported, leaving it as an unsupported default in the model record.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists estimates for clearance, volumes, and absorption but lacks an explicit value for F, a critical proportionality factor for the amount of drug reaching the systemic circulation. Consequently, the model builder applied a library default instead of an estimate derived from the data for adults on ECMO. This deviation means the simulated drug concentrations rely on an assumption not supported by the specific paper's findings. Extracted — ciprofloxacin: CL 13.6 L/h, V1 73.2 L, Q 39.4 L/h, V2 88.3 L, kabs 1 h−1, tlag 0.33 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ciprofloxacin: CL 13.6 L/h, V1 73.2 L, Q 39.4 L/h, V2 88.3 L, kabs 1 h−1, tlag 0.33 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

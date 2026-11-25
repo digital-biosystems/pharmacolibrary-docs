@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
 
-> Both 6-mercaptopurine and 8-hydroxymercaptopurine are unreachable metabolites lacking metabolic rate parameters linking them to azathioprine.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="azathioprine" model-id="Azathioprine_Ding1979_reference" status="rejected" stale="false" population="male rhesus monkeys" measured-compound="6-mercaptopurine" parameterization="apparent" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Ding TL, Benet LZ. Comparative bioavailability and pharmacokinetic studies of az
 
 ### Reviewer guidance
 
-**Both 6-mercaptopurine and 8-hydroxymercaptopurine are unreachable metabolites lacking metabolic rate parameters linking them to azathioprine.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record was built from the abstract alone, so the reported half-life (41.6 min), clearance (48.4 ml/min/kg), and volume (1.76 liters/kg) stand in for a fitted model. The second reader identified that all extracted parameter values are null in their review, confirming the source only provided summary statistics without individual model estimates. Extracted — azathioprine: t1/2z 41.6 min, CLm,norm/F 48.4 ml/min/kg, Vm,norm/F 1.76 liters/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — azathioprine: t1/2z 41.6 min, CLm,norm/F 48.4 ml/min/kg, Vm,norm/F 1.76 liters/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has azathioprine, the second reading azathioprine, 6-mercaptopurine; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

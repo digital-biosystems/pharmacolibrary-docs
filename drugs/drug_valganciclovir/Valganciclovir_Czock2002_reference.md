@@ -4,11 +4,11 @@
 
 # valganciclovir — `Valganciclovir_Czock2002_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Only clearance was extracted — no volume.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="valganciclovir" model-id="Valganciclovir_Czock2002_reference" status="needs_review" stale="false" population="adults with renal impairment, HIV/CMV-positive patients and healthy subjects" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="valganciclovir" model-id="Valganciclovir_Czock2002_reference" status="rejected" stale="false" population="patients with renal impairment and healthy subjects" measured-compound="ganciclovir" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Czock D, Scholle C, Rasche FM, Schaarschmidt D, Keller F. Pharmacokinetics of valganciclovir and ganciclovir in renal impairment. Clinical pharmacology and therapeutics 72(2):142–150 (2002).
@@ -16,30 +16,30 @@ Czock D, Scholle C, Rasche FM, Schaarschmidt D, Keller F. Pharmacokinetics of va
 
 ## Population and dosing
 
-**Population:** adults with renal impairment, HIV/CMV-positive patients and healthy subjects · condition renal impairment · age group adult · n = 44.
+**Population:** patients with renal impairment and healthy subjects · condition renal impairment · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed valganciclovir, measured ganciclovir.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| bioavailability | Fab | 60 | % |
-| C(max) | Cmax | 8.5 | microg/mL |
-| T(max) | tmax | 4.3 | hours |
+| ganciclovir bioavailability | Fab | 60 |  |
+| maximum concentration [C(max)] | Cmax | 8.5 | microg/mL |
+| time to maximum concentration [T(max)] | tmax | 4.3 | hours |
 | t(1/2) | t1/2z | 68.1 | hours |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,21 +49,21 @@ Czock D, Scholle C, Rasche FM, Schaarschmidt D, Keller F. Pharmacokinetics of va
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — valganciclovir: Fab 60 %; ganciclovir: Cmax 8.5 microg/mL, tmax 4.3 hours, t1/2z 68.1 hours.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is valganciclovir's own; they describe ganciclovir. Extracted — ganciclovir: Fab 60, Cmax 8.5 microg/mL, tmax 4.3 hours, t1/2z 68.1 hours.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of c: this record has none, the second reading 8.5; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has valganciclovir → ganciclovir (hydrolysis), the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| bioavailability | `Q40` · Fab | 60 | % |  |  |  | exact (1) | Czock_2002:abstract |
-| C(max) | `Q32` · Cmax | 8.5 | microg/mL |  |  | µg/ml | llm (0.6) | Czock_2002:abstract, Czock_2002:abstract |
-| T(max) | `Q56` · tmax | 4.3 | hours | 1.548e+04 | s | h | llm (0.6) | Czock_2002:abstract, Czock_2002:abstract |
+| ganciclovir bioavailability | `Q40` · Fab | 60 |  |  |  |  | llm_confirmed (0.6) | Czock_2002:abstract |
+| maximum concentration [C(max)] | `Q32` · Cmax | 8.5 | microg/mL | 0.0085 | kg/m3 | µg/ml | llm_confirmed (0.6) | Czock_2002:abstract, Czock_2002:abstract |
+| time to maximum concentration [T(max)] | `Q56` · tmax | 4.3 | hours | 1.548e+04 | s | h | llm_confirmed (0.6) | Czock_2002:abstract, Czock_2002:abstract |
 | t(1/2) | `Q57` · t1/2z | 68.1 | hours | 2.452e+05 | s | h | llm (0.6) | Czock_2002:abstract, Czock_2002:abstract |
 
 <details class="legend">
@@ -76,33 +76,36 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'r' — extend the ontology if this is a real PK parameter (source ['Czock_2002:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ganciclovir
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=noncompartmental; 5/5 row label(s) assigned, 0 linked by role; re-tagged ganciclovir→parent ×1
+- row roles (LLM): model_class=noncompartmental; 5/5 row label(s) assigned, 0 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'ganciclovir', not valganciclovir — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Czock_2002_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.6 (6/10 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['valganciclovir', 'ganciclovir', 'hydrolysis']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[bioavailability]` |  | 60 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[c]` |  | 8.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[c]` | 8.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t]` |  | 4.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t]` | 4.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ganciclovir bioavailability]` | 60 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximum concentration [c(max)]]` | 8.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t].parameter_id` | Q57 | Q56 | mismatch |
+| `gpt-oss-120b` | `parameters[t].value` | 68.1 | 4.3 | mismatch |
+| `gpt-oss-120b` | `parameters[time to maximum concentration [t(max)]]` | 4.3 |  | only_one_extracted |
 
 </details>
 
@@ -122,7 +125,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Czock_2002:abstract', 'Czock_2002:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Czock_2002:abstract', 'Czock_2002:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Czock_2002:abstract', 'Czock_2002:abstract'] |
-| C8_topology | pass |  |  |  |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -134,19 +137,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -156,4 +149,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvalganciclovir%5D%20Valganciclovir_Czock2002_reference&body=Drug%3A%20valganciclovir%0ARecord%3A%20Valganciclovir_Czock2002_reference%0APaper%3A%20Czock_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_valganciclovir/Valganciclovir_Czock2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:39 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:53 UTC</sub>

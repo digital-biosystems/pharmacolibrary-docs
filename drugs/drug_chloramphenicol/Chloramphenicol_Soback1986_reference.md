@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;chloramphenicol&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/&quot;},{&quot;label&quot;:&quot;Soback_1986 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloramphenicol_Perucca1982_reference&quot;,&quot;label&quot;:&quot;Perucca_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Perucca1982_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Anadn1994_reference&quot;,&quot;label&quot;:&quot;Anad\u00f3n_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Anadn1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Kume1986_reference&quot;,&quot;label&quot;:&quot;Kume_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Soback1986_reference&quot;,&quot;label&quot;:&quot;Soback_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Soback1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloramphenicol_Perucca1982_reference&quot;,&quot;label&quot;:&quot;Perucca_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Perucca1982_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Anadn1994_30_mg_kg&quot;,&quot;label&quot;:&quot;Anad\u00f3n_1994_30_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Anadn1994_30_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Anadn1994_50_mg_kg&quot;,&quot;label&quot;:&quot;Anad\u00f3n_1994_50_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Anadn1994_50_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Soback1986_reference&quot;,&quot;label&quot;:&quot;Soback_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Soback1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> Chloramphenicol’s blood clearance is recorded as 73.8 ml/min/kg despite reader disagreement, while bioavailability and absorption lag were defaulted, so the record was held back.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="chloramphenicol" model-id="Chloramphenicol_Soback1986_reference" status="needs_review" stale="false" population="" measured-compound="chloramphenicol" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Soback S, Bor A, Paz R, Ziv G. Clinical pharmacology of mecillinam in calves. Jo
 
 ### Reviewer guidance
 
-**Chloramphenicol’s blood clearance is recorded as 73.8 ml/min/kg despite reader disagreement, while bioavailability and absorption lag were defaulted, so the record was held back.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-Bioavailability (F) uses library defaults, not estimates from this paper; these unsupported values affect the simulated profile. The absorption lag time (Tlag) was also defaulted rather than explicitly estimated. The second reader supplied no blood-clearance value, whereas this record gives 73.8 ml/min/kg; overall agreement was 0.1, with 0 of 1 reader agreeing. Extracted — chloramphenicol: CLb 73.8 ml/min/kg, V 397 L, kabs 0.059 min-1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — chloramphenicol: CLb 73.8 ml/min/kg, V 397 L, kabs 0.059 min-1.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on the value of CLb: this record has 73.8, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.1, 0 of 1 reader(s) agree | 0.1 | cross-check agreement 0.1 is below 0.5: verdict partial, agreement 0.1, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.1 (1 of 10 compared fields agree, 9 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.1 | cross-check agreement 0.1 is below 0.5: verdict partial; agreement 0.1 (1 of 10 compared fields agree, 9 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -154,7 +154,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_chloramphenicol/Chloramphenicol_Soback1986_reference/Chloramphenicol_Soback1986_reference_modelica.zip" download>Chloramphenicol_Soback1986_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_chloramphenicol/Chloramphenicol_Soback1986_reference/Chloramphenicol_Soback1986_reference_modelica.zip" download>Chloramphenicol_Soback1986_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_chloramphenicol/Chloramphenicol_Soback1986_reference/Chloramphenicol_Soback1986_reference_fmi.zip" download>Chloramphenicol_Soback1986_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_chloramphenicol/Chloramphenicol_Soback1986_reference/Chloramphenicol_Soback1986_reference_matlab.zip" download>Chloramphenicol_Soback1986_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_chloramphenicol/Chloramphenicol_Soback1986_reference/Chloramphenicol_Soback1986_reference_matlab_simbio.zip" download>Chloramphenicol_Soback1986_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -218,4 +218,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchloramphenicol%5D%20Chloramphenicol_Soback1986_reference&body=Drug%3A%20chloramphenicol%0ARecord%3A%20Chloramphenicol_Soback1986_reference%0APaper%3A%20Soback_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chloramphenicol/Chloramphenicol_Soback1986_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 21:39 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:06 UTC</sub>

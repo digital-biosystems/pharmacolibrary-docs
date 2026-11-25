@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;alectinib&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/&quot;},{&quot;label&quot;:&quot;Mohmaed_2026 \u00b7 fasted_geometric_mean_cv&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_fasted_geometric_mean_cv&quot;,&quot;label&quot;:&quot;Mohmaed_2026_fasted_geometric_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_fed_geometric_mean_cv&quot;,&quot;label&quot;:&quot;Mohmaed_2026_fed_geometric_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_fed_geometric_mean_cv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_estimate&quot;,&quot;label&quot;:&quot;Mohmaed_2026_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_fasted_geometric_mean_cv&quot;,&quot;label&quot;:&quot;Mohmaed_2026_fasted_geometric_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_fed_geometric_mean_cv&quot;,&quot;label&quot;:&quot;Mohmaed_2026_fed_geometric_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_fed_geometric_mean_cv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 7.82e-08, model 8.44e-08); ka use library defaults, not estimates from this paper (+2 more).
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 7.82e-08, model 0.00101); ka use library defaults, not estimates from this paper (+2 more).
 
-<div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_Mohmaed2026_fasted_geometric_mean_cv" status="needs_review" stale="false" population="patients with ALK-positive non-small cell lung cancer" measured-compound="2H6-alectinib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_Mohmaed2026_fasted_geometric_mean_cv" status="needs_review" stale="false" population="patients with ALK-positive, non-small cell lung cancer" measured-compound="2H6-alectinib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Mohmaed Ali MI, van der Heijden LT, Tibben M, Rosing H, Kalicharan R, Ruiter G et al. Reducing the Burden of Interaction Studies in Cancer Patients Using a Stable Isotopically Labeled Microtracer: A Proof-of-Concept Study with Alectinib. Clinical pharmacology and therapeutics 119(3):713–720 (2026).
@@ -17,11 +17,9 @@ Mohmaed Ali MI, van der Heijden LT, Tibben M, Rosing H, Kalicharan R, Ruiter G e
 
 ## Population and dosing
 
-**Population:** patients with ALK-positive non-small cell lung cancer · condition ALK-positive non-small cell lung cancer · n = 10.
+**Population:** patients with ALK-positive, non-small cell lung cancer · condition non-small cell lung cancer · age group adult · n = 10.
 
-**Dosing:** 0.1 mg, oral, single.
-
-**Dosed compound ≠ measured compound:** dosed alectinib and 2H6-alectinib, measured 2H6-alectinib.
+**Dosing:** 100, 600 mg, µg, oral, multiple, every 12 h.
 
 ## Model
 
@@ -35,16 +33,16 @@ Mohmaed Ali MI, van der Heijden LT, Tibben M, Rosing H, Kalicharan R, Ruiter G e
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit | RSE% |
-|---|---|---|---|---|
-| C max (pg/mL) | Cmax | 54.9 | pg/mL | 27.9 |
-| AUC0‐24h (pg*hour/mL) | AUCt | 643.9 | pg*hour/mL | 29.9 |
-| CL/F | CL/F | 84.2 | L/h |  |
-| VD/F | V/F | 776 | L |  |
+| label | parameter | value | unit |
+|---|---|---|---|
+| C max (pg/mL) | Cmax | 54.9 | pg/mL |
+| AUC0‐24h (pg*hour/mL) | AUCt | 643.9 | pg*hour/mL |
+| CL/F | CL/F | 84.2 | L/h |
+| VD/F | V/F | 776 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067), qwen3.8-27b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,26 +52,26 @@ Mohmaed Ali MI, van der Heijden LT, Tibben M, Rosing H, Kalicharan R, Ruiter G e
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 7.82e-08, model 8.44e-08); ka use library defaults, not estimates from this paper (+2 more).**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 7.82e-08, model 0.00101); ka use library defaults, not estimates from this paper (+2 more).**
 
-Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (Cmax and AUCt), so that value has no SI equivalent. Extracted — alectinib: Cmax 54.9 pg/mL, AUCt 644 pg*hour/mL; 2H6-alectinib: CL/F 84.2 L/h, V/F 776 L.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — alectinib: Cmax 54.9 pg/mL, AUCt 644 pg*hour/mL; 2H6-alectinib: CL/F 84.2 L/h, V/F 776 L.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc0‐24h: this record has 643.9, the second reading none; it also differs on 7 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has 2H6-alectinib, the second reading 2H6‑alectinib; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
-|---|---|---|---|---|---|---|---|---|---|
-| C max (pg/mL) | `Q32` · Cmax | 54.9 | pg/mL |  |  | pg/ml | 27.9 | space_fold (0.95) | Mohmaed_2026_table_3:row0:col1 |
-| AUC0‐24h (pg*hour/mL) | `Q19` · AUCt | 643.9 | pg*hour/mL |  |  | (h·pg)/ml | 29.9 | llm (0.6) | Mohmaed_2026_table_3:row1:col1 |
-| CL/F | `Q27` · CL/F | 84.2 | L/h | 2.339e-05 | m3/s | L/h |  | exact (1) | Mohmaed_2026:other_prose |
-| VD/F | `Q76` · V/F | 776 | L | 0.776 | m3 | L |  | exact (1) | Mohmaed_2026:other_prose |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| C max (pg/mL) | `Q32` · Cmax | 54.9 | pg/mL | 5.49e-08 | kg/m3 | pg/ml | space_fold (0.95) | Mohmaed_2026_table_3:row0:col1 |
+| AUC0‐24h (pg*hour/mL) | `Q19` · AUCt | 643.9 | pg*hour/mL | 0.002318 | kg*s/m3 | (h·pg)/ml | llm (0.6) | Mohmaed_2026_table_3:row1:col1 |
+| CL/F | `Q27` · CL/F | 84.2 | L/h | 2.339e-05 | m3/s | L/h | exact (1) | Mohmaed_2026:other_prose |
+| VD/F | `Q76` · V/F | 776 | L | 0.776 | m3 | L | exact (1) | Mohmaed_2026:other_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -85,36 +83,49 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
+- column 'fasted geometric mean (%cv)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - salvaged Q27 ('CL/F'=84.2) from results prose — parameter table was unreadable
 - salvaged Q76 ('VD/F'=776) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=2H6-alectinib
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - population split: 'fasted geometric mean (%cv)' subgroup of Mohmaed_2026 (paper reports 3 populations: estimate, fasted geometric mean (%cv), fed geometric mean (%cv))
-- molar mass: no plausible PubChem entry for '2H6-alectinib' ('no full name in the paper') — left in mass units
+- molar mass: no plausible PubChem entry for '2H6-alectinib' ('2H6-alectinib') — left in mass units
 - molar mass: none found for '2H6-alectinib' — its concentrations stay mass-only
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell Mohmaed_2026_table_3:row0:col3 = '1.42 (1.16–1.76)'
-- unparsed cell Mohmaed_2026_table_3:row1:col3 = '1.52 (1.25–1.89)'
-- companion parameter table 3 transcribed (4 record(s))
+- table cpt70141-tbl-0002: unbound_uncertainty
+- companion parameter table 3 transcribed (6 record(s))
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.067 (1/15 fields) | 14 |
 | `qwen3.8-27b` | partly confirmed | 0.333 (4/12 fields) | 8 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>22 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['alectinib', '2h6‐alectinib', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `parameters[auc0‐24h]` | 643.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` | 54.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` |  | 84.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 84.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ffed]` |  | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time (hours)c]` |  | 1.51 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mttfed]` |  | 3.14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_frel_fed_ffasted_fraction_of_state]` |  | 0.65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_mtt_fed_mttfasted_fraction_of_state]` |  | 0.72 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd/f]` |  | 776 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd/f]` | 776 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | 2H6-alectinib | 2H6‑alectinib | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | 2H6-alectinib | 2H6‑alectinib | mismatch |
 | `qwen3.8-27b` | `parameters[auc0‐24h]` | 643.9 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[c max]` | 54.9 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cl/f]` |  | 84.2 | only_one_extracted |
@@ -157,11 +168,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial, agreement 0.333, 0 of 1 reader(s) agree |
-| T1_cmax | reference | pass | 7.82e-08 | 8.436e-08 | 1.079 | pg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 5.49e-08 | 8.436e-08 | 1.536 | pg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped | 1.42 | 8.436e-08 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 1.42 | 8.436e-08 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.067 (1 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.067 | cross-check contradicted by a second reader: verdict disputed; agreement 0.067 (1 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 7.82e-08 | 0.001012 | 1.295e+04 | reported 78.2 pg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 5.49e-08 | 0.001012 | 1.844e+04 | reported 54.9 pg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped | 1.42 | 0.001012 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
+| T1_cmax | reference | skipped |  | 0.001012 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -177,7 +188,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv/Alectinib_Mohmaed2026_fasted_geometric_mean_cv_modelica.zip" download>Alectinib_Mohmaed2026_fasted_geometric_mean_cv_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv/Alectinib_Mohmaed2026_fasted_geometric_mean_cv_modelica.zip" download>Alectinib_Mohmaed2026_fasted_geometric_mean_cv_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv/Alectinib_Mohmaed2026_fasted_geometric_mean_cv_fmi.zip" download>Alectinib_Mohmaed2026_fasted_geometric_mean_cv_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv/Alectinib_Mohmaed2026_fasted_geometric_mean_cv_matlab.zip" download>Alectinib_Mohmaed2026_fasted_geometric_mean_cv_matlab.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv/Alectinib_Mohmaed2026_fasted_geometric_mean_cv_matlab_simbio.zip" download>Alectinib_Mohmaed2026_fasted_geometric_mean_cv_matlab_simbio.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
@@ -198,7 +209,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `Tlag` | 0 | s |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-07 | kg |
+| input | dosing | `adminMass` | 0.0012 | kg |
 | input | model | `Cl` | 2.339e-05 | m3/s |
 | input | model | `VdPerKg` | 0.01109 | m3/kg |
 | input | model | `ka` | 0.0001389 | 1/s |
@@ -230,7 +241,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 0.1 mg, single dose, first-order absorption (ka 0.5 /h, F 1). Dose in the paper: 0.1 mg.
+**Administration: oral** — 1200 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1200 mg oral (L01ED03) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv/Alectinib_Mohmaed2026_fasted_geometric_mean_cv_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv/Alectinib_Mohmaed2026_fasted_geometric_mean_cv_sim_controls.json"></dbs-fmusim>
 
@@ -240,4 +251,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balectinib%5D%20Alectinib_Mohmaed2026_fasted_geometric_mean_cv&body=Drug%3A%20alectinib%0ARecord%3A%20Alectinib_Mohmaed2026_fasted_geometric_mean_cv%0APaper%3A%20Mohmaed_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 21:15 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:17 UTC</sub>

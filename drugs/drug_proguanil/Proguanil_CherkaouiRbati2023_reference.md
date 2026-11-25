@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;proguanil&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/&quot;},{&quot;label&quot;:&quot;Cherkaoui-Rbati_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Proguanil_McGready2003_reference&quot;,&quot;label&quot;:&quot;McGready_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_McGready2003_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Proguanil clearance of 0.476 L/h is attributed to a paper modeling DSM265, which mentions proguanil only as a co-medication and reports no proguanil parameters.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_CherkaouiRbati2023_reference" status="rejected" stale="false" population="" measured-compound="proguanil" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Cherkaoui-Rbati MH, Andenmatten N, Burgert L, Egbelowo OF, Fendel R, Fornari C e
 
 ### Reviewer guidance
 
-**Proguanil clearance of 0.476 L/h is attributed to a paper modeling DSM265, which mentions proguanil only as a co-medication and reports no proguanil parameters.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The paper models DSM265 PK/PD; proguanil is mentioned only as part of atovaquone–proguanil prophylaxis, so the listed proguanil parameters are unsupported by its subject matter. Although the record lists an absorption lag time of 0.147 h, the findings say that parameter was not emitted or defaulted. The second reader disputed the verdict, with agreement of 0.545 and no agreeing reader. Extracted — proguanil: CL 0.476 L/h, V1 8.58 L, V2 57.3 L, Q 37.1 L/h, tlag 0.147 h.
+Extracted — proguanil: CL 0.476 L/h, V1 8.58 L, V2 57.3 L, Q 37.1 L/h, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q321: this record has 1.6, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.545, 0 of 1 reader(s) agree | 0.545 | cross-check disputed by a second reader: verdict disputed, agreement 0.545, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.545 | cross-check contradicted by a second reader: verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected for an orphan O-desmethyltramadol despite its reported CL/F of 4.11 L/hr and a listed tramadol-to-metabolite formation-clearance link.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Lee2019_reference" status="rejected" stale="false" population="healthy adults" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -56,13 +56,13 @@ Lee J, Yoo HD, Bae JW, Lee S, Shin KH. Population pharmacokinetic analysis of tr
 
 ### Reviewer guidance
 
-**Rejected for an orphan O-desmethyltramadol despite its reported CL/F of 4.11 L/hr and a listed tramadol-to-metabolite formation-clearance link.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists O-desmethyltramadol as formed from tramadol by metabolism, with formation clearance, and reports its central volume as 8.63 L and clearance as 4.11 L/hr. The rejection finding nevertheless identifies an unreachable or orphan metabolite; a second reader also recorded no metabolism link, so the topology finding conflicts with the listed relationship. Extracted — tramadol: CL/F 16.9 L/hr, V2/F 59.9 L, kabs 0.095 hr−1, FR 0.88; O-desmethyltramadol: V1/F 8.63 L, CL/F 4.11 L/hr, D1 1.93 hr, tlag 1.63 hr.
+Extracted — tramadol: CL/F 16.9 L/hr, V2/F 59.9 L, kabs 0.095 hr−1, FR 0.88; O-desmethyltramadol: V1/F 8.63 L, CL/F 4.11 L/hr, D1 1.93 hr, tlag 1.63 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tramadol, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

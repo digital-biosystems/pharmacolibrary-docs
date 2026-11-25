@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record defines covariate effects for luspatercept clearance that the second reader did not extract, causing a cross-check dispute.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="luspatercept" model-id="Luspatercept_Chen2020_reference" status="needs_review" stale="false" population="anemic patients with myelodysplastic syndromes" measured-compound="luspatercept" parameterization="apparent" topology="1C"></div>
 
@@ -60,13 +60,13 @@ Chen N, Kassir N, Laadem A, Maxwell SE, Sriraman P, Giuseppi AC et al. Populatio
 
 ### Reviewer guidance
 
-**The record defines covariate effects for luspatercept clearance that the second reader did not extract, causing a cross-check dispute.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The second reader failed to extract the age effect on clearance (-0.534) and the weight effect on volume (0.878). This disagreement resulted in a cross-check agreement of 0.529, leading to the needs_review verdict. The record remains unverified because the covariate parameters were not consistently recognized. Extracted — luspatercept: CL/F 0.469 L/day, V/F 9.2 L, kabs 0.456 1/day.
+The base model was simulated, not the covariate effects the record defines. Extracted — luspatercept: CL/F 0.469 L/day, V/F 9.2 L, kabs 0.456 1/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of age_years_on_cl_f: this record has -0.534, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -178,7 +178,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.529, 0 of 1 reader(s) agree | 0.529 | cross-check disputed by a second reader: verdict disputed, agreement 0.529, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.529 (9 of 17 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.529 | cross-check contradicted by a second reader: verdict disputed; agreement 0.529 (9 of 17 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> The two-compartment meloxicam model was rejected because the peripheral volume of distribution has no path from the dose, making it an orphan compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Cagnardi2017_reference" status="rejected" stale="false" population="buffalo calves" measured-compound="meloxicam" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Cagnardi P, Guccione J, Villa R, D'Andrea L, Di Loria A, Ferrante MC et al. Clin
 
 ### Reviewer guidance
 
-**The two-compartment meloxicam model was rejected because the peripheral volume of distribution has no path from the dose, making it an orphan compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a two-compartment structure for meloxicam with a peripheral volume (V2) of 101.8 mL/kg. The review flagged this structure as containing an unreachable compartment, meaning the peripheral compartment is not linked to the central compartment where the drug is administered. A second reader disagreed on multiple parameter values, including a clearance of 4.38 mL/kg/h versus the recorded 6.0 mL/kg/h, and a central volume of 32.89 mL/kg versus the recorded 94.88 mL/kg. Extracted — meloxicam: CLb 6 mL/kg/h, V1 94.9 mL/kg, V2 102 mL/kg.
+Extracted — meloxicam: CLb 6 mL/kg/h, V1 94.9 mL/kg, V2 102 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CLb: this record has 6, the second reading 4.38; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

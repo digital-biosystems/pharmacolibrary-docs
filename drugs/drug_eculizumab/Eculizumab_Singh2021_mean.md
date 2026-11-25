@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model's terminal half-life check failed, with a simulated value of 5423.312556868694 against the paper's 414.0.
+> The model does not reproduce the paper's terminal half-life (paper 414, model 5.42e+03); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Singh2021_mean" status="needs_review" stale="false" population="adults with neuromyelitis optica spectrum disorder" measured-compound="eculizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Singh P, Gao X, Kleijn HJ, Bellanti F, Pelto R. Eculizumab Pharmacokinetics and 
 
 ### Reviewer guidance
 
-**The model's terminal half-life check failed, with a simulated value of 5423.312556868694 against the paper's 414.0.**
+**The model does not reproduce the paper's terminal half-life (paper 414, model 5.42e+03); x1_cross_check.**
 
-The model's simulated terminal half-life deviated from the paper's reported value by a ratio of 13.0998. A second reader disputed the record, failing to verify all extracted parameter values including clearance and volume. This resulted in zero agreement with the original assessment. Extracted — eculizumab: CL 0.00759 L/h, V1 2.33 L, V2 2.11 L, Q 0.238 L/h, Cmax 928 μg/ml, Ctrough 405 μg/ml, AUCSS 1.8e+05 μg·h/ml.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax, Ctrough and AUCSS), so that value has no SI equivalent. Extracted — eculizumab: CL 0.00759 L/h, V1 2.33 L, V2 2.11 L, Q 0.238 L/h, Cmax 928 μg/ml, Ctrough 405 μg/ml, AUCSS 1.8e+05 μg·h/ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has eculizumab, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -162,8 +162,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.105, 0 of 1 reader(s) agree | 0.105 | cross-check disputed by a second reader: verdict disputed, agreement 0.105, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | fail | 414 | 5423 | 13.1 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.105 (2 of 19 compared fields agree, 15 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.105 | cross-check contradicted by a second reader: verdict disputed; agreement 0.105 (2 of 19 compared fields agree, 15 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | fail | 414 | 5423 | 13.1 | reported 414.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

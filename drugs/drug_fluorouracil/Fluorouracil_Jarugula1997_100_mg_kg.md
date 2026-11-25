@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Bioavailability and lag time were left at library defaults, unsupported by the paper, preventing a valid one-compartment model.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Jarugula1997_100_mg_kg" status="needs_review" stale="false" population="adult male Sprague-Dawley rats" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Jarugula VR, Lam SS, Boudinot FD. Nonlinear pharmacokinetics of 5-fluorouracil i
 
 ### Reviewer guidance
 
-**Bioavailability and lag time were left at library defaults, unsupported by the paper, preventing a valid one-compartment model.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lacks explicit estimates for bioavailability (F) and absorption lag time (Tlag), forcing the use of placeholder values instead of paper-derived data. These missing inputs mean the simulated concentration profile relies on arbitrary assumptions rather than experimental evidence. Although a second reader noted minor naming variations for fluorouracil, the primary issue remains the unreported pharmacokinetic parameters. Extracted — fluorouracil: AUC 114 mg·h/L, CL 1.1 L/h/kg, CLNR 0.77 L/h/kg, CLR 0.3 L/h/kg, fe 24.9, Vss 0.86 L/kg, V 161 L, kabs 0.13 1/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — fluorouracil: AUC 114 mg·h/L, CL 1.1 L/h/kg, CLNR 0.77 L/h/kg, CLR 0.3 L/h/kg, fe 24.9, Vss 0.86 L/kg, V 161 L, kabs 0.13 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading 5-fluorouracil; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

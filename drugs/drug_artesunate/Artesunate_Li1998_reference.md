@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record was held back because artesunate's elimination clearance lacked an extracted value, causing the model to rely on a library placeholder instead of a real estimate.
+> No value for artesunate's elimination clearance; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Li1998_reference" status="model_quarantined" stale="false" population="rats" measured-compound="dihydroartemisinin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -63,13 +63,13 @@ Li QG, Peggins JO, Fleckenstein LL, Masonic K, Heiffer MH, Brewer TG. The pharma
 
 ### Reviewer guidance
 
-**The record was held back because artesunate's elimination clearance lacked an extracted value, causing the model to rely on a library placeholder instead of a real estimate.**
+**No value for artesunate's elimination clearance; t6_deviations (+1 more).**
 
-Artesunate's elimination clearance was left without a value, so a placeholder stood in, which disqualified the record from publication. The record was built solely from the abstract, meaning reported summary statistics substituted for a fitted model. Additionally, a second reader disagreed on multiple fields, including the dose compound, primary analyte, and specific parameter values for bioavailability and volumes. Extracted — artelinic acid: Vss 0.39 L, t1/2z 1.35 h, Fab 95 %; dihydroartemisinin: Vss 0.5 L, t1/2z 0.95 h, Fab 85 %; artemether: Vss 0.67 L, t1/2z 0.53 h, Fab 54 %; arteether: Vss 0.72 L, t1/2z 0.45 h, Fab 34 %; artesunate: Vss 0.87 L, t1/2z 0.35 h, Fab 105 %.
+The model was built, but artesunate's elimination clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — artelinic acid: Vss 0.39 L, t1/2z 1.35 h, Fab 95 %; dihydroartemisinin: Vss 0.5 L, t1/2z 0.95 h, Fab 85 %; artemether: Vss 0.67 L, t1/2z 0.53 h, Fab 54 %; arteether: Vss 0.72 L, t1/2z 0.45 h, Fab 34 %; artesunate: Vss 0.87 L, t1/2z 0.35 h, Fab 105 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artesunic acid, the second reading unknown; it also differs on 23 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -195,7 +195,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.04, 0 of 1 reader(s) agree | 0.04 | cross-check disputed by a second reader: verdict disputed, agreement 0.04, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.04 (1 of 25 compared fields agree, 20 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.04 | cross-check contradicted by a second reader: verdict disputed; agreement 0.04 (1 of 25 compared fields agree, 20 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -229,4 +229,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bartesunate%5D%20Artesunate_Li1998_reference&body=Drug%3A%20artesunate%0ARecord%3A%20Artesunate_Li1998_reference%0APaper%3A%20Li_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_artesunate/Artesunate_Li1998_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 06:46 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:23 UTC</sub>

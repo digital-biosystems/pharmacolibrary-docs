@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The record was held because a second reader disagreed on diclofenac clearance and volume values, preventing agreement on the model parameters.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Yuan2017_reference" status="needs_review" stale="false" population="male Sprague-Dawley rats" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Yuan J, Ma H, Cen N, Zhou A, Tao H. A pharmacokinetic study of diclofenac sodium
 
 ### Reviewer guidance
 
-**The record was held because a second reader disagreed on diclofenac clearance and volume values, preventing agreement on the model parameters.**
+**cross_check_disputed; x1_cross_check.**
 
-The primary extraction reports a clearance of 0.81 l/h and a volume of distribution of 1.29 l. The second reader disputed these figures, citing a clearance of 0.6 and a volume of 1.05. Additionally, the second reader disagreed on the dose value, reporting 3356 instead of the recorded 2501. Extracted — diclofenac: CL 0.81 l/h, V 1.29 l.
+Extracted — diclofenac: CL 0.81 l/h, V 1.29 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 2501, the second reading 3356; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.6, 0 of 1 reader(s) agree | 0.6 | cross-check disputed by a second reader: verdict disputed, agreement 0.6, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.6 (9 of 15 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.6 | cross-check contradicted by a second reader: verdict disputed; agreement 0.6 (9 of 15 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability was left at an undefined default for ciprofloxacin because the paper provides no explicit estimate for this parameter.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Forrest1993_oss3_c" status="needs_review" stale="false" population="acutely ill patients" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Forrest A, Ballow CH, Nix DE, Birmingham MC, Schentag JJ. Development of a popul
 
 ### Reviewer guidance
 
-**Bioavailability was left at an undefined default for ciprofloxacin because the paper provides no explicit estimate for this parameter.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record omits the bioavailability parameter, meaning the model would use a placeholder value not supported by the paper. The second reader failed to verify total clearance, peripheral clearance, and central volume, creating uncertainty about the fitted parameters. Extracted — ciprofloxacin: CL 17 liters/h, Q 35 liters/h, V 46 liters, Vss 113 liters, kabs 1 h−1, tlag 0.33 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ciprofloxacin: CL 17 liters/h, Q 35 liters/h, V 46 liters, Vss 113 liters, kabs 1 h−1, tlag 0.33 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl d: this record has 35, the second reading none; it also differs on 9 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

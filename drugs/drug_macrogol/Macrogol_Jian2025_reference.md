@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F was left at library defaults, and second readers agreed on zero of four extracted macrogol parameter values, leaving the record unsupported.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="macrogol" model-id="Macrogol_Jian2025_reference" status="needs_review" stale="false" population="" measured-compound="macrogol" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Jian W, Yin Y, Chen R, Luo P, Wang T, Gu J et al. Population Pharmacokinetic Mod
 
 ### Reviewer guidance
 
-**Bioavailability F was left at library defaults, and second readers agreed on zero of four extracted macrogol parameter values, leaving the record unsupported.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The model record omits an explicit estimate for bioavailability F, forcing reliance on unreported defaults that affect the simulated profile. A cross-check found that 0 of 1 second reader agreed on the extracted macrogol parameters, with a 0.0 agreement ratio. Specific disagreements included readers assigning null to the 0.137 L/h clearance and 0.01 /day absorption rate, while assigning 0 to a field the record left null. These conflicts prevented verification that the macrogol pharmacokinetic values represent the paper's reported data. Extracted — macrogol: CL 0.137 L/h, V/F 2.95 L, kabs 0.01 /day.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — macrogol: CL 0.137 L/h, V/F 2.95 L, kabs 0.01 /day.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on the value of CL: this record has 0.137, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check agreement 0.0 is below 0.5: verdict partial, agreement 0.0, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.0 (0 of 5 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0 | cross-check agreement 0.0 is below 0.5: verdict partial; agreement 0.0 (0 of 5 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

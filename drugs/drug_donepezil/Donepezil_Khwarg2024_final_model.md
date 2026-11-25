@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Oral bioavailability (F) for donepezil was missing and defaulted rather than extracted, holding the record back for review.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Khwarg2024_final_model" status="needs_review" stale="false" population="healthy adults" measured-compound="donepezil" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Khwarg J, Lee H, Yu KS, Seol E, Chung JY. Population Pharmacokinetic Modeling an
 
 ### Reviewer guidance
 
-**Oral bioavailability (F) for donepezil was missing and defaulted rather than extracted, holding the record back for review.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists oral bioavailability (F) without a value or unit, indicating it was not reported in the source data. The model builder applied library defaults instead of using estimates from the paper. While other parameters like clearance (14.35 L/h) and volume (40.737 L) were extracted, the missing F prevents accurate simulation of the systemic exposure profile. Extracted — donepezil: kabs 0.21 1/h, CL 14.3 L/h, V 40.7 L, Q 86.5 L/h, tlag 0.931 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — donepezil: kabs 0.21 1/h, CL 14.3 L/h, V 40.7 L, Q 86.5 L/h, tlag 0.931 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f1 oral bioavailability: this record has none, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -237,13 +237,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.9 (9 of 10 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.9 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped | 1.012 | 6.137e-05 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | skipped |  | 6.137e-05 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 6.137e-05 |  | non-numeric value |
-| T1_t_half_beta | reference | skipped |  | 3.456 |  | non-numeric value |
-| T1_t_half_beta | reference | skipped |  | 3.456 |  | non-numeric value |
-| T1_tmax | reference | skipped |  | 4.659 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 6.137e-05 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 6.137e-05 |  | the transcribed record carries no number for this value |
+| T1_t_half_beta | reference | skipped |  | 3.456 |  | the transcribed record carries no number for this value |
+| T1_t_half_beta | reference | skipped |  | 3.456 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | skipped |  | 4.659 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -259,7 +259,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_donepezil/Donepezil_Khwarg2024_final_model/Donepezil_Khwarg2024_final_model_modelica.zip" download>Donepezil_Khwarg2024_final_model_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_donepezil/Donepezil_Khwarg2024_final_model/Donepezil_Khwarg2024_final_model_modelica.zip" download>Donepezil_Khwarg2024_final_model_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_donepezil/Donepezil_Khwarg2024_final_model/Donepezil_Khwarg2024_final_model_fmi.zip" download>Donepezil_Khwarg2024_final_model_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_donepezil/Donepezil_Khwarg2024_final_model/Donepezil_Khwarg2024_final_model_matlab.zip" download>Donepezil_Khwarg2024_final_model_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_donepezil/Donepezil_Khwarg2024_final_model/Donepezil_Khwarg2024_final_model_matlab_simbio.zip" download>Donepezil_Khwarg2024_final_model_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

@@ -22,9 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wu_2021_BKPyV](drugs/drug_acitretin/pd_Wu_2021_BKPyV.md) | BKPyV loads ← acitretin · inhibition effect | — | Wu Z et al., Acitretin and Retinoic Acid Derivatives…, Journal of virology (2021) | [10.1128/JVI.00127-21](https://doi.org/10.1128/JVI.00127-21) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Feld_2026_NAB](drugs/drug_acitretin/pd_Feld_2026_NAB.md) | net antiviral benefit ← acitretin · inhibition effect | — | Feld P et al., Positive net antiviral benefit of bexar…, Antiviral research (2026) | [10.1016/j.antiviral.2026.106398](https://doi.org/10.1016/j.antiviral.2026.106398) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Tippmann_2009_ADAM10_promoter_activity](drugs/drug_acitretin/pd_Tippmann_2009_ADAM10_promoter_activity.md) | ADAM10 promoter activity ← acitretin · stimulation effect | — | Tippmann F et al., Up-regulation of the alpha-secretase AD…, FASEB journal : official pu… (2009) | [10.1096/fj.08-121392](https://doi.org/10.1096/fj.08-121392) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Tippmann_2009_ADAM10_promoter_activity](drugs/drug_acitretin/pd_Tippmann_2009_ADAM10_promoter_activity.md) | ADAM10 promoter activity ← acitretin · direct Emax (saturable) effect | — | Tippmann F et al., Up-regulation of the alpha-secretase AD…, FASEB journal : official pu… (2009) | [10.1096/fj.08-121392](https://doi.org/10.1096/fj.08-121392) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:02 | 0:59 | 0/0/0 | 1/2/0 | 0/0/0 | 13,832/5,075 | openai / gpt-6-luna | 1 | 0/0 | 1/0 | 0 |
+| 2026-11-23 16:24 | 0:03 | 0/0/0 | 0/1/0 | 0/0/0 | 3,137/147 | einfracz / qwen3.8-27b | 1 | 0/0 | 1/0 | 0 |
 
 ## Coverage
 
@@ -51,13 +49,19 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Feld_2026 | irrelevant | 0 | 0 | Acitretin is an in-vitro antiviral comparator, with no quantitative pharmacokinetic parameters reported. |
-| popPK | Hausauer_2015 | irrelevant | 0 | 0 | This is a human case report of acitretin treatment and provides no quantitative pharmacokinetic parameters. |
-| popPK | Ling_1999 | irrelevant | 0 | 0 | This dosing review provides no quantitative pharmacokinetic disposition parameters. |
-| popPK | Tippmann_2009 | irrelevant | 0 | 0 | This is a mechanistic study with no quantitative acitretin disposition parameters. |
+| popPK | Feld_2026 | irrelevant | 0 | 0 | The study focuses on the antiviral activity of bexarotene and fenretinide against BK polyomavirus, using acitretin only as a less effective comparator in an in-vitro viral dynamics model, without reporting acitretin's PK parameters. |
+| PGx | Feld_2026 | not_relevant | 0 | 0 | The paper evaluates antiviral pharmacodynamics of bexarotene and acitretin against BKPyV isolates but contains no information on genetic variants or pharmacogenomics. |
+| popPK | Hausauer_2015 | irrelevant | 0 | 0 | The paper is a clinical case report describing the therapeutic efficacy of acitretin for a dermatological condition and contains no pharmacokinetic data or disposition parameters. |
+| PGx | Hausauer_2015 | not_relevant | 0 | 0 | The paper is a case report on the clinical efficacy of acitretin in treating Keratolysis exfoliativa and does not report any pharmacogenomic effect on a PK/PD parameter. |
+| popPK | Ling_1999 | irrelevant | 0 | 0 | The text is a clinical review discussing dosing strategies and efficacy for psoriasis, with no quantitative pharmacokinetic parameters or model data for acitretin. |
+| PGx | Ling_1999 | not_relevant | 0 | 0 | The text discusses general dosing strategies and side effects but does not report any pharmacogenomic effects on acitretin's pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Tippmann_2009 | irrelevant | 0 | 0 | The study investigates the mechanistic up-regulation of ADAM10 by acitretin in cells and mice, not the pharmacokinetic disposition parameters (CL, V, ka) of acitretin. |
+| PGx | Tippmann_2009 | not_relevant | 0 | 0 | The paper describes the pharmacodynamic effect of acitretin on ADAM10 expression but does not report any influence of genetic variants, genotypes, or phenotypes on acitretin's PK or PD parameters. |
 | popPK | Vahlquist_1995 | irrelevant | 0 | 0 | This clinical lipid-management study reports no quantitative pharmacokinetic parameters for acitretin. |
-| popPK | Wu_2021 | irrelevant | 0 | 0 | This is an in-vitro antiviral study and reports no acitretin disposition parameters. |
-| popPK | van_1989 | irrelevant | 0 | 0 | This is a clinical dose-response report and gives no quantitative pharmacokinetic disposition parameters. |
+| popPK | Wu_2021 | irrelevant | 1 | 0 | The paper is an in vitro mechanistic study of antiviral activity and does not report pharmacokinetic disposition parameters for acitretin. |
+| PGx | Wu_2021 | not_relevant | 0 | 0 | The paper investigates the antiviral pharmacodynamics of acitretin in cell cultures, not the effect of genetic variants on its pharmacokinetics or pharmacodynamics. |
+| popPK | van_1989 | irrelevant | 0 | 0 | The paper describes a clinical dose-response study for Darier's disease and does not report any pharmacokinetic parameters or quantitative disposition data. |
+| PGx | van_1989 | not_relevant | 0 | 0 | The paper describes clinical dose adjustments in Darier's disease patients but does not report any genetic variants or genotypes associated with pharmacokinetic or pharmacodynamic parameters. |
 
 
 </details>

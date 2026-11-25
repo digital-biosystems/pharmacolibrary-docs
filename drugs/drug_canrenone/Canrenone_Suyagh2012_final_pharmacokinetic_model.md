@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Canrenone model predicts terminal half-life of 22.7 h versus paper-reported 11.2 h, and reader disputed clearance classification.
+> The model does not reproduce the paper's terminal half-life (paper 11.2, model 22.7); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="canrenone" model-id="Canrenone_Suyagh2012_final_pharmacokinetic_model" status="needs_review" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Populatio
 
 ### Reviewer guidance
 
-**Canrenone model predicts terminal half-life of 22.7 h versus paper-reported 11.2 h, and reader disputed clearance classification.**
+**The model does not reproduce the paper's terminal half-life (paper 11.2, model 22.7); x1_cross_check.**
 
-The simulated terminal half-life (22.7 h) exceeds the paper's reported value (11.2 h) by a ratio of 2.0307. Although the builder assumed F=1 and Fm=1, the model fails to capture the reported elimination kinetics. A second reader disagreed with the clearance parameter classification, reducing agreement to 0.875. Extracted — canrenone: CLm/F 11.4 l h -1 70 kg -1, V/F 374 l 70 kg -1, kfm 5.25 h -1.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — canrenone: CLm/F 11.4 l h -1 70 kg -1, V/F 374 l 70 kg -1, kfm 5.25 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].parameter_id`: this record has Q351, the second reading Q27. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -146,8 +146,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | cross-check disputed by a second reader: verdict disputed, agreement 0.875, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | fail | 11.2 | 22.74 | 2.031 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.875 (7 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.875 | cross-check contradicted by a second reader: verdict disputed; agreement 0.875 (7 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | fail | 11.2 | 22.74 | 2.031 | reported 11.2 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

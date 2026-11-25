@@ -23,10 +23,7 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bartos_2009_Peak_current](drugs/drug_oxantel/pd_Bartos_2009_Peak_current.md) | Macroscopic peak current of α7-5HT3A receptors ← oxantel · direct sigmoid Emax (Hill) effect | — | Bartos M et al., Glutamine 57 at the complementary bindi…, The Journal of biological c… (2009) | [10.1074/jbc.M109.013797](https://doi.org/10.1074/jbc.M109.013797) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Schärer_2023_hatching](drugs/drug_oxantel/pd_Sch_rer_2023_hatching.md) | T. muris egg hatching (normalized activity %) ← oxantel pamoate · direct sigmoid Emax (Hill) effect | — | Schärer A et al., Trichuris muris egg-hatching assay for…, International journal for p… (2023) | [10.1016/j.ijpddr.2023.10.001](https://doi.org/10.1016/j.ijpddr.2023.10.001) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bavo_2025_Normalized_ACh_evoked_peak_current_at_3_2_nAChR_in_presence_of_10_M_oxantel](drugs/drug_oxantel/pd_Bavo_2025_Normalized_ACh_evoked_peak_current_at_3_2_nAChR_in.md) | Normalized ACh-evoked peak current at α3β2 nAChR in presence of 10 μM oxantel ← acetylcholine (ACh) in coapplication with 10 μM oxantel · direct sigmoid Emax (Hill) effect | — | Bavo F et al., Structural Determinants of Oxantel Anal…, ACS omega (2025) | [10.1021/acsomega.4c11196](https://doi.org/10.1021/acsomega.4c11196) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Bavo_2025_Normalized_ACh_evoked_peak_current_at_4_2_nAChR_in_presence_of_10_M_oxantel](drugs/drug_oxantel/pd_Bavo_2025_Normalized_ACh_evoked_peak_current_at_4_2_nAChR_in.md) | Normalized ACh-evoked peak current at α4β2 nAChR in presence of 10 μM oxantel ← acetylcholine (ACh) in coapplication with 10 μM oxantel · direct sigmoid Emax (Hill) effect | — | Bavo F et al., Structural Determinants of Oxantel Anal…, ACS omega (2025) | [10.1021/acsomega.4c11196](https://doi.org/10.1021/acsomega.4c11196) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Brussee_2021_CR](drugs/drug_oxantel/pd_Brussee_2021_CR.md) | cure rate (probability of being cured of hookworm infection) ← dADT (tribendimidine primary metabolite) · direct Emax (saturable) effect | — | Brussee JM et al., Pharmacometric Analysis of Tribendimidi…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.00714-20](https://doi.org/10.1128/AAC.00714-20) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Schärer_2023_hatching_percentage](drugs/drug_oxantel/pd_Sch_rer_2023_hatching_percentage.md) | egg-hatching ← oxantel pamoate · direct sigmoid Emax (Hill) effect | — | Schärer A et al., Trichuris muris egg-hatching assay for…, International journal for p… (2023) | [10.1016/j.ijpddr.2023.10.001](https://doi.org/10.1016/j.ijpddr.2023.10.001) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:01 | 0:46 | 0/0/0 | 4/1/0 | 0/0/0 | 104,899/2,548 | ollama / glm-5.3-flash | 5 | 0/5 | 5/0 | 0 |
+| 2026-11-24 01:58 | 0:03 | 0/0/0 | 2/0/0 | 0/0/0 | 3,949/207 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
 
 ## Coverage
 
@@ -54,11 +51,14 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Bartos_2009 | irrelevant | 0 | 0 | This is an in vitro electrophysiology/receptor pharmacology study of oxantel on nicotinic receptors, with no pharmacokinetic disposition parameters (CL, V, ka, half-life, PK model). |
-| popPK | Bavo_2025 | irrelevant | 0 | 0 | This is a receptor pharmacology/SAR study of oxantel analogs on nAChRs in Xenopus oocytes; no PK disposition parameters (CL, V, ka, half-life, population-PK model) are reported. |
-| popPK | Brussee_2021 | irrelevant | 2 | 1 | Oxantel is only a co-administered drug; the population PK model covers tribendimidine's metabolites (dADT/adADT), not oxantel, and no oxantel parameter values appear. |
+| popPK | Bavo_2025 | irrelevant | 0 | 0 | The paper is a structure-activity relationship (SAR) and electrophysiological study of oxantel as a nicotinic acetylcholine receptor modulator in oocytes, containing no pharmacokinetic parameters. |
+| PGx | Bavo_2025 | not_relevant | 0 | 0 | The paper investigates the structural determinants of oxantel analogs and their pharmacological activity on nicotinic acetylcholine receptor subtypes, but does not report any gene variants, genotypes, or pharmacogenomic effects on oxantel's PK or PD parameters. |
+| popPK | Brussee_2021 | irrelevant | 0 | 0 | The paper models the pharmacokinetics of tribendimidine metabolites (dADT/adADT), not oxantel; oxantel is only a co-administered drug used to check for drug-drug interactions, and no PK parameters for oxantel itself are reported. |
+| PGx | Brussee_2021 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics and efficacy of tribendimidine (and its metabolites) and investigates drug-drug interactions with oxantel, but does not report any gene variants or genotypes affecting PK/PD parameters for oxantel. |
 | popPK | Easland_2023 | irrelevant | 0 | 0 | In vitro egg-hatching assay only; oxantel is a test compound with EC50 &gt;100 µM, no PK parameters. |
 | popPK | Kaji_2020 | irrelevant | 0 | 0 | This is an electrophysiology/pharmacodynamics study of hookworm nicotinic acetylcholine receptors in Xenopus oocytes; oxantel is only a test ligand, with no PK parameters (CL, V, ka, half-life, or PK model) reported. |
-| popPK | Schärer_2023 | irrelevant | 0 | 0 | In vitro egg-hatching assay with oxantel only as a test compound (EC50 potency); no pharmacokinetic disposition parameters reported. |
+| popPK | Schärer_2023 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological assay measuring egg hatching inhibition (EC50) and does not report any pharmacokinetic parameters (CL, V, etc.) for oxantel. |
+| PGx | Schärer_2023 | not_relevant | 0 | 0 | The paper reports in vitro efficacy (EC50) of oxantel on parasite eggs and does not investigate any gene variants or genotypes affecting pharmacokinetics or pharmacodynamics. |
 
 
 </details>

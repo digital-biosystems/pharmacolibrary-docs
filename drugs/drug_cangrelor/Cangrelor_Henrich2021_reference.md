@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the source paper studies selatogrel, not cangrelor, leaving absorption parameters at defaults.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="cangrelor" model-id="Cangrelor_Henrich2021_reference" status="rejected" stale="false" population="" measured-compound="cangrelor" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Henrich A, Claussen CH, Dingemanse J, Krause A. Pharmacokinetic/pharmacodynamic 
 
 ### Reviewer guidance
 
-**Record rejected because the source paper studies selatogrel, not cangrelor, leaving absorption parameters at defaults.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source text identifies the study as focusing on selatogrel pharmacokinetics, with cangrelor appearing only as a co-medication or covariate. Consequently, the first-order absorption rate constant and absorption lag time were not extracted and were left at library placeholders. A secondary reader identified specific numerical values for absorption and bioavailability parameters, but the primary record retains null values for these fields, confirming the extraction failure. Extracted — cangrelor: CL 8.51 L/h, V1 17 L, V2 51.4 L, Q 3.19 L/h, kabs 5.95 1/h.
+Extracted — cangrelor: CL 8.51 L/h, V1 17 L, V2 51.4 L, Q 3.19 L/h, kabs 5.95 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q3: this record has none, the second reading 0.00773; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.75 (15 of 20 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;gentamicin&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/&quot;},{&quot;label&quot;:&quot;Abbasi_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gentamicin_Crcek2019_reference&quot;,&quot;label&quot;:&quot;Crcek_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/Gentamicin_Crcek2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gentamicin_Abbasi2023_reference&quot;,&quot;label&quot;:&quot;Abbasi_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gentamicin_Abbasi2023_reference&quot;,&quot;label&quot;:&quot;Abbasi_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Gentamicin_Crcek2019_reference&quot;,&quot;label&quot;:&quot;Crcek_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/Gentamicin_Crcek2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gentamicin — `Gentamicin_Abbasi2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 5, model 0.0102).
-
-<div class="pk-model-meta" hidden drug="gentamicin" model-id="Gentamicin_Abbasi2023_reference" status="needs_review" stale="false" population="critically ill adult patients" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gentamicin" model-id="Gentamicin_Abbasi2023_reference" status="simulated" stale="false" population="critically ill adult patients" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Abbasi MY, Chaijamorn W, Wiwattanawongsa K, Charoensareerat T, Doungngern T. Recommendations of Gentamicin Dose Based on Different Pharmacokinetic/Pharmacodynamic Targets for Intensive Care Adult Patients: A Redefining Approach. Clinical pharmacology : advances and applications 15:67–76 (2023).
@@ -31,8 +29,6 @@ Abbasi MY, Chaijamorn W, Wiwattanawongsa K, Charoensareerat T, Doungngern T. Rec
 <figure class="pk-models-diagram"><img src="drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference/Gentamicin_Abbasi2023_reference.svg" alt="Gentamicin_Abbasi2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | 5 (368.2±87.9) | AUC ratio | 0.4 |  |
@@ -42,7 +38,7 @@ Abbasi MY, Chaijamorn W, Wiwattanawongsa K, Charoensareerat T, Doungngern T. Rec
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +48,9 @@ Abbasi MY, Chaijamorn W, Wiwattanawongsa K, Charoensareerat T, Doungngern T. Rec
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 5, model 0.0102).**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — gentamicin: AUC ratio 0.4, AUC 3 mg*h/L, V 0.33 L/kg, CL 4.7 L/h.
+A reported unit could not be converted (AUC), so that value has no SI equivalent.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of 5: this record has 0.4, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
@@ -139,23 +135,23 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.75 (6 of 8 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.75 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped | 5 | 0.01022 |  | unresolved concentration unit (exp 'mg/kg/day', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 8 | 0.01022 |  | unresolved concentration unit (exp 'mg/kg/day', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 10 | 0.01022 |  | unresolved concentration unit (exp 'mg/kg/day', sim 'kg/m3') |
-| T1_cmax | reference | skipped | ≥8–10 | 0.01022 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped |  | 0.01022 |  | the transcribed record carries no number for this value |
 | T1_cmax | reference | skipped | 8 | 0.01022 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 10 | 0.01022 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 76.2 | 0.01022 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 66.9 | 0.01022 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 8 | 0.01022 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | skipped | &gt;10 | 0.01022 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | skipped | &gt;8 | 0.01022 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | skipped | &gt;10 | 0.01022 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | fail | 0.016 | 0.01022 | 0.6385 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.03 | 0.01022 | 0.3405 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped | &gt;8 | 0.01022 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | skipped | ~8–10 | 0.01022 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_cmax | reference | skipped |  | 0.01022 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.01022 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.01022 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.01022 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.01022 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.01022 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.01022 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -171,7 +167,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference/Gentamicin_Abbasi2023_reference_modelica.zip" download>Gentamicin_Abbasi2023_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference/Gentamicin_Abbasi2023_reference_modelica.zip" download>Gentamicin_Abbasi2023_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference/Gentamicin_Abbasi2023_reference_fmi.zip" download>Gentamicin_Abbasi2023_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference/Gentamicin_Abbasi2023_reference_matlab.zip" download>Gentamicin_Abbasi2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference/Gentamicin_Abbasi2023_reference_matlab_simbio.zip" download>Gentamicin_Abbasi2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>

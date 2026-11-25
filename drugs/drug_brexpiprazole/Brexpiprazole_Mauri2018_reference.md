@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Brexpiprazole volume of distribution (1.1 L/kg) and clearance (5.4 mL/min/kg) values are disputed by a second reader.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Mauri2018_reference" status="needs_review" stale="false" population="adults with schizophrenia or bipolar disorder" measured-compound="brexpiprazole" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Mauri MC, Paletta S, Di Pace C, Reggiori A, Cirnigliaro G, Valli I et al. Clinic
 
 ### Reviewer guidance
 
-**Brexpiprazole volume of distribution (1.1 L/kg) and clearance (5.4 mL/min/kg) values are disputed by a second reader.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagrees with the extracted volume of distribution value of 1.1 L/kg, instead proposing 60. Additionally, the second reader suggests a clearance value of 17.46, which conflicts with the recorded 5.4 mL/min/kg. Extracted — brexpiprazole: CL 5.4 mL/min/kg, V 1.1 L/kg.
+Extracted — brexpiprazole: CL 5.4 mL/min/kg, V 1.1 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has 1, the second reading 60; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -124,7 +124,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.8 (8 of 10 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | cross-check contradicted by a second reader: verdict disputed; agreement 0.8 (8 of 10 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

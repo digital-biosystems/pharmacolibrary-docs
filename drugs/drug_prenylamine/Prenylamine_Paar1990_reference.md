@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because prenylamine AUC of the (+)-enantiomer is recorded as 20% instead of a concentration-time integral.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit % (dimensionless) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="prenylamine" model-id="Prenylamine_Paar1990_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="prenylamine" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Paar WD, Brockmeier D, Hirzebruch M, Schmidt EK, von Unruh GE, Dengler HJ. Pharm
 
 ### Reviewer guidance
 
-**Record rejected because prenylamine AUC of the (+)-enantiomer is recorded as 20% instead of a concentration-time integral.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit % (dimensionless) vs [mass] * [time] / [length] ** 3.**
 
-The parameter labelled as the area under the concentration-time curve of the (+)-enantiomer is given a value of 20% rather than a standard mass/time volume unit. This creates a dimensional conflict because a percentage is dimensionless while the area under the curve requires units of mass times time divided by volume. The second reader also flagged this entry, noting the value in this record where their extraction yielded no value. Extracted — prenylamine: t1/2z 14.1 h, CL 5.8 l/min, Frel 82.2 %, Fab 15 %, AUC 20 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — prenylamine: t1/2z 14.1 h, CL 5.8 l/min, Frel 82.2 %, Fab 15 %, AUC 20 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc of (+)-enantiomer: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

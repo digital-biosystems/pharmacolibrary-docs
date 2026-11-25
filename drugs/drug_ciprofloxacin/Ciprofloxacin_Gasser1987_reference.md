@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ciprofloxacin bioavailability and total clearance lacked extracted values, causing the model to use placeholders instead of fitted estimates.
+> No value for ciprofloxacin's bioavailability and clearance; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Gasser1987_reference" status="model_quarantined" stale="false" population="patients with renal impairment" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Gasser TC, Ebert SC, Graversen PH, Madsen PO. Ciprofloxacin pharmacokinetics in 
 
 ### Reviewer guidance
 
-**Ciprofloxacin bioavailability and total clearance lacked extracted values, causing the model to use placeholders instead of fitted estimates.**
+**No value for ciprofloxacin's bioavailability and clearance; t6_deviations.**
 
-The record specifies renal (245 ml/min) and non-renal (780 ml/min) clearance but omits total clearance and bioavailability. Because these values were not extracted from the source data, the model relied on library placeholders rather than explicit estimates. The model was held back to prevent publication with assumed numbers. Extracted — ciprofloxacin: Cmax 2.2 µg/ml, tmax 1.3 h, V 123 liters, t1/2α 0.65 h, t1/2β 4.3 h, AUC∞ 9.8 µg · h/ml, CLR 245 ml/min, CLNR 780 ml/min, … (+2).
+The model was built, but ciprofloxacin's bioavailability and clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — ciprofloxacin: Cmax 2.2 µg/ml, tmax 1.3 h, V 123 liters, t1/2α 0.65 h, t1/2β 4.3 h, AUC∞ 9.8 µg · h/ml, CLR 245 ml/min, CLNR 780 ml/min, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

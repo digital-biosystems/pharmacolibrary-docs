@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The vigabatrin record was rejected because the abstract-only derivation provided summary statistics with dimensionally incompatible units for Km and Vmax.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit mM ([length]) vs [mass] / [length] ** 3; Q66 unit mmol/min ([substance] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="vigabatrin" model-id="Vigabatrin_Nhr2015_reference" status="rejected" stale="false" population="Sprague Dawley rats" measured-compound="vigabatrin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Nøhr MK, Juul RV, Thale ZI, Holm R, Kreilgaard M, Nielsen CU. Is oral absorptio
 
 ### Reviewer guidance
 
-**The vigabatrin record was rejected because the abstract-only derivation provided summary statistics with dimensionally incompatible units for Km and Vmax.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit mM ([length]) vs [mass] / [length] ** 3; Q66 unit mmol/min ([substance] / [time]) vs [mass] / [time].**
 
-The record was constructed from the paper's abstract, meaning the reported values stand in for a fitted model. The dimension check failed because the Km unit mM was interpreted as a length dimension instead of molar concentration, and the Vmax unit mmol/min did not match the required mass flow dimension. A second reader also disagreed on the assignment of the dose compound and primary analyte, flagging them as unknown. Extracted — vigabatrin: Km 32.8 mM, Vmax 64.6 mmol/min, Fab 60.9 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — vigabatrin: Km 32.8 mM, Vmax 64.6 mmol/min, Fab 60.9 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vigabatrin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

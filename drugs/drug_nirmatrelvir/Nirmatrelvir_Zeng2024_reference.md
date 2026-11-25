@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This paper's disposition core is incomplete.
+> Only clearance was extracted — no volume.
 
 <div class="pk-model-meta" hidden drug="Nirmatrelvir" model-id="Nirmatrelvir_Zeng2024_reference" status="needs_review" stale="false" population="Chinese patients with COVID-19" measured-compound="nirmatrelvir" parameterization="apparent" topology="1C"></div>
 
@@ -17,13 +17,13 @@ Zeng L, Chen R, Jiang X, Li F, Zhu Z, Jiao Z et al. Population pharmacokinetics 
 
 ## Population and dosing
 
-**Population:** Chinese patients with COVID-19 · condition COVID-19 · age group mixed · n = 141.
+**Population:** Chinese patients with COVID-19 · condition COVID-19 · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 5 extracted.  
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -35,11 +35,10 @@ Zeng L, Chen R, Jiang X, Li F, Zhu Z, Jiao Z et al. Population pharmacokinetics 
 | apparent clearance | CL/F | 6.83 | L/h |
 | Predicted peak (Cmax) | Cmax | 4004 | ng/mL |
 | trough concentration (Cmin) | Ctrough | 1498 | ng/mL |
-| V/F | V/F | 39.0 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.267). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.455). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +48,11 @@ Zeng L, Chen R, Jiang X, Li F, Zhu Z, Jiao Z et al. Population pharmacokinetics 
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Only clearance was extracted — no volume.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Zhang_2024) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nirmatrelvir: kabs 0.253 h-1, CL/F 6.83 L/h, Cmax 4e+03 ng/mL, Ctrough 1.5e+03 ng/mL, V/F 39 L.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nirmatrelvir: kabs 0.253 h-1, CL/F 6.83 L/h, Cmax 4e+03 ng/mL, Ctrough 1.5e+03 ng/mL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption rate constant: this record has 0.253, the second reading none; it also differs on 10 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent clearance: this record has 6.83, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,9 +62,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 |---|---|---|---|---|---|---|---|---|
 | absorption rate constant | `Q49` · kabs | 0.253 | h-1 | 7.028e-05 | 1/s | 1/h | exact (1) | Zeng_2024:abstract |
 | apparent clearance | `Q27` · CL/F | 6.83 | L/h | 1.897e-06 | m3/s | l/h | exact (1) | Zeng_2024:abstract |
-| Predicted peak (Cmax) | `Q32` · Cmax | 4004 | ng/mL |  |  | ng/ml | llm_confirmed (0.6) | Zeng_2024:abstract |
-| trough concentration (Cmin) | `Q37` · Ctrough | 1498 | ng/mL |  |  | ng/ml | exact (1) | Zeng_2024:abstract |
-| V/F | `Q76` · V/F | 39.0 | L | 0.039 | m3 | L | review_gapfill (0.7) | Zhang_2024:review |
+| Predicted peak (Cmax) | `Q32` · Cmax | 4004 | ng/mL | 0.004004 | kg/m3 | ng/ml | llm_confirmed (0.6) | Zeng_2024:abstract |
+| trough concentration (Cmin) | `Q37` · Ctrough | 1498 | ng/mL | 0.001498 | kg/m3 | ng/ml | exact (1) | Zeng_2024:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,10 +75,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=nirmatrelvir
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q76 (V/F) from Zhang_2024's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Zeng_2024_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -88,27 +82,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.267 (4/15 fields) | 11 |
+| `gpt-oss-120b` | partly confirmed | 0.455 (5/11 fields) | 6 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption rate constant of nmv]` |  | 0.253 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.253 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[apparent clearance of nmv]` |  | 6.83 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[apparent clearance]` | 6.83 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` |  | 4004 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmin]` |  | 1498 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[nmv dose]` |  | 300 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[predicted peak (cmax) under 300 mg nmv/100 mg rtv b.i.d.]` |  | 4004 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[predicted peak]` | 4004 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[rtv dose]` |  | 100 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[predicted trough concentration (cmin) under 300 mg nmv/100 mg rtv b.i.d.]` |  | 1498 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[trough concentration]` | 1498 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f]` | 39.0 |  | only_one_extracted |
 
 </details>
 
@@ -129,11 +118,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Zeng_2024:abstract'] |
 | C5_dimension_Q37 | pass | [mass] / [length] ** 3 |  | ['Zeng_2024:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Zeng_2024:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Zhang_2024:review'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 6.83 L/h | ['Zeng_2024:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 39 L | ['Zhang_2024:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -167,4 +154,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnirmatrelvir%5D%20Nirmatrelvir_Zeng2024_reference&body=Drug%3A%20nirmatrelvir%0ARecord%3A%20Nirmatrelvir_Zeng2024_reference%0APaper%3A%20Zeng_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nirmatrelvir/Nirmatrelvir_Zeng2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:40 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:47 UTC</sub>

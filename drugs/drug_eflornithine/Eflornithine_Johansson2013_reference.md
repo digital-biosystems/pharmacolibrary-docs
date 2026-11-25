@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Eflornithine clearance 3.36 mL/min failed physiological plausibility against volume 0.15 L, rejecting the abstract-only record.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="eflornithine" model-id="Eflornithine_Johansson2013_reference" status="rejected" stale="false" population="rat" measured-compound="L-eflornithine" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Johansson CC, Gennemark P, Artursson P, Äbelö A, Ashton M, Jansson-Löfmark R.
 
 ### Reviewer guidance
 
-**Eflornithine clearance 3.36 mL/min failed physiological plausibility against volume 0.15 L, rejecting the abstract-only record.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader could not verify any parameter values, marking all five as unknown or null. Consequently, the implausible clearance magnitude could not be resolved, leading to the record's rejection. Extracted — L-eflornithine: CL 3.36 mL/min, Fab 30 %, V 0.15 L, kabs 1.16 h -1, tlag 0.447 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is eflornithine's own; they describe L-eflornithine. Extracted — L-eflornithine: CL 3.36 mL/min, Fab 30 %, V 0.15 L, kabs 1.16 h -1, tlag 0.447 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has eflornithine hydrochloride, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Aflibercept clearance and volume of distribution exceed physiological limits, and a parameter unit could not be converted to standard SI form.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit day -1 (1 / [time]) vs 1 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_LuacesRodrguez2020_89_zr_aflibercept" status="rejected" stale="false" population="rats" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Luaces-Rodríguez A, Del Amo EM, Mondelo-García C, Gómez-Lado N, Gonzalez F, R
 
 ### Reviewer guidance
 
-**Aflibercept clearance and volume of distribution exceed physiological limits, and a parameter unit could not be converted to standard SI form.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit day -1 (1 / [time]) vs 1 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The model flags clearance of 16.04 mL/day and volume of 83.31 mL as implausible for a rat population. A reported unit for a parameter was not recognized by the system, preventing conversion to standard units for validation. The record also lists a terminal elimination rate constant despite using a one-compartment structure. Extracted — aflibercept: kabs 5.4 day -1, kel 0.22 day -1, t1/2z 3.18 day, tmax 0.76 day, Cmax 25.4 Bq•µL -1, AUC∞ 136 Bq•µL -1 •day, V 83.3 mL, CL 16 mL/day, … (+4).
+A reported unit could not be converted (Cmax, AUC∞ and λ1), so that value has no SI equivalent. Extracted — aflibercept: kabs 5.4 day -1, kel 0.22 day -1, t1/2z 3.18 day, tmax 0.76 day, Cmax 25.4 Bq•µL -1, AUC∞ 136 Bq•µL -1 •day, V 83.3 mL, CL 16 mL/day, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aflibercept, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

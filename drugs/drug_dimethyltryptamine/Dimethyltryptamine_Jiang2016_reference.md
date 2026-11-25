@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Bioavailability F and lag time Tlag for dimethyltryptamine were left at library defaults rather than using values from the paper.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="Dimethyltryptamine" model-id="Dimethyltryptamine_Jiang2016_reference" status="needs_review" stale="false" population="" measured-compound="dimethyltryptamine" parameterization="mechanistic" topology="1C"></div>
 
@@ -41,7 +41,7 @@ Jiang XL, Shen HW, Mager DE, Schmidt S, Yu AM. Development of a mechanism-based 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +51,13 @@ Jiang XL, Shen HW, Mager DE, Schmidt S, Yu AM. Development of a mechanism-based 
 
 ### Reviewer guidance
 
-**Bioavailability F and lag time Tlag for dimethyltryptamine were left at library defaults rather than using values from the paper.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record lists only clearance, volume, and absorption rate constants, omitting bioavailability and lag time. Consequently, the model builder defaulted these parameters to generic library placeholders. These assumptions affect the simulated plasma concentration profile but lack explicit support from the cited review. Extracted — dimethyltryptamine: CL 0.0962 L/min, V 2.43 L/kg, kabs 0.0748 min − 1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — dimethyltryptamine: CL 0.0962 L/min, V 2.43 L/kg, kabs 0.0748 min − 1.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.0962, the second reading 0.879; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -81,6 +83,34 @@ The record lists only clearance, volume, and absorption rate constants, omitting
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
+
+<details><summary>8 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 0.0962 | 0.879 | mismatch |
+| `gpt-oss-120b` | `values[Q352]` | 0.46 | 2.29 | mismatch |
+| `gpt-oss-120b` | `values[Q356]` | 0.879 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q42]` |  | 34.6 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q49]` | 0.0748 | 0.307 | mismatch |
+| `gpt-oss-120b` | `values[Q61]` | 2.43 | 2.86 | mismatch |
+| `gpt-oss-120b` | `values[Q63]` |  | 2.43 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q75]` |  | 1.88 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -98,14 +128,15 @@ The record lists only clearance, volume, and absorption rate constants, omitting
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=dimethyltryptamine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=dimethyltryptamine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.333 (4 of 12 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check contradicted by a second reader: verdict disputed; agreement 0.333 (4 of 12 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

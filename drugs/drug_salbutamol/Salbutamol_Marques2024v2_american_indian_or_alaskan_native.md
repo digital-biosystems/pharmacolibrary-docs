@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Salbutamol clearance of 6.46 mL/h and peripheral volume of 0.0310 mL are implausibly low for a drug with a 195.75 L total volume of distribution.
+> C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Marques2024v2_american_indian_or_alaskan_native" status="rejected" stale="false" population="virtual patients and asthma patients" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Marques L, Vale N. Toward Personalized Salbutamol Therapy: Validating Virtual Pa
 
 ### Reviewer guidance
 
-**Salbutamol clearance of 6.46 mL/h and peripheral volume of 0.0310 mL are implausibly low for a drug with a 195.75 L total volume of distribution.**
+**C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The model specifies a two-compartment structure, but the peripheral compartment volume is 0.0310 mL. This minute volume makes the peripheral compartment effectively an orphan compartment with negligible capacity. Additionally, the total clearance of 6.46 mL/h is orders of magnitude lower than the physiological expectation for a drug with such a large volume of distribution. Extracted — salbutamol: kabs 0.0082 h−1, CL 6.46 mL/h, V2 0.031 mL, V 196 L.
+Extracted — salbutamol: kabs 0.0082 h−1, CL 6.46 mL/h, V2 0.031 mL, V 196 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

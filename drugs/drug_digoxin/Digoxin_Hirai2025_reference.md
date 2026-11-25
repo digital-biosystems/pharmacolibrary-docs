@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record misclassifies a 21% relative change in clearance as a total clearance parameter with incompatible units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit % (dimensionless) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Hirai2025_reference" status="rejected" stale="false" population="Japanese patients with atrial fibrillation and heart failure" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Hirai T, Kasai H, Shiga T. Population pharmacokinetic analysis of the interactio
 
 ### Reviewer guidance
 
-**The record misclassifies a 21% relative change in clearance as a total clearance parameter with incompatible units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit % (dimensionless) vs [length] ** 3 / [time].**
 
-The parameter labeled 'Digoxin clearance increased by' holds the value 21 with units of percent, representing a relative change rather than an absolute physiological rate. This creates a dimension mismatch, as percent is dimensionless while total clearance requires dimensions of volume per time. Consequently, the extracted value cannot represent the model's actual clearance parameter. Extracted — digoxin: CL 21 %, V 5 L/kg, kabs 2.29 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — digoxin: CL 21 %, V 5 L/kg, kabs 2.29 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has digoxin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

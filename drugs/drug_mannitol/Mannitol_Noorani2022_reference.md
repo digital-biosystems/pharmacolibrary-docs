@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Mannitol clearance was rejected because the specific unit for sucrose efflux does not match the total clearance dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit μl.min-1.g-1 ([length] ** 3 / [time] / [mass]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="mannitol" model-id="Mannitol_Noorani2022_reference" status="rejected" stale="false" population="awake young adult mice" measured-compound="mannitol" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Noorani B, Chowdhury EA, Alqahtani F, Sajib MS, Ahn Y, Nozohouri E et al. A Semi
 
 ### Reviewer guidance
 
-**Mannitol clearance was rejected because the specific unit for sucrose efflux does not match the total clearance dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit μl.min-1.g-1 ([length] ** 3 / [time] / [mass]) vs [length] ** 3 / [time].**
 
-The clearance parameter has a dimensionally incompatible unit of microliters per minute per gram. Additionally, the model lacks a dose value, and a second reader identified a missing elimination rate constant of 0.146. Extracted — mannitol: CL 0.693 μl.min-1.g-1, V 60.2 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mannitol: CL 0.693 μl.min-1.g-1, V 60.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 10; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

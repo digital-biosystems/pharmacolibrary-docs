@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Apparent clearance CLm/F and absorption rate constant Ka for ganciclovir were flagged for double correction.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="ganciclovir" model-id="Ganciclovir_Itohara2025_reference" status="rejected" stale="false" population="Japanese infants with symptomatic congenital cytomegalovirus infection" measured-compound="ganciclovir" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Itohara K, Yamamoto K, Fujinaka S, Hashimoto M, Tamura N, Kitahiro Y et al. Phar
 
 ### Reviewer guidance
 
-**Apparent clearance CLm/F and absorption rate constant Ka for ganciclovir were flagged for double correction.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The apparent clearance parameter CLm/F (13.9 L/h) for ganciclovir violated coherence rules regarding double correction. Additionally, the unit 'weeks' for a time-dependent parameter could not be converted to standard SI units, preventing the value from being processed. A second reader disagreed on the extracted value of 38.7 for a model variable, suggesting the data extraction was inconsistent. Extracted — ganciclovir: CLm/F 13.9 L/h, V 1.15 L/kg, kabs 0.591 /h, Fab 0.536.
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — ganciclovir: CLm/F 13.9 L/h, V 1.15 L/kg, kabs 0.591 /h, Fab 0.536.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of θ2: this record has 38.7, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

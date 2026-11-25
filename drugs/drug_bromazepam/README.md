@@ -30,38 +30,43 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 18:24 | 0:55 | 0/0/0 | 0/0/0 | 0/0/0 | 7,842/423 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 19:19 | 0:04 | 0/0/0 | 0/0/0 | 0/0/0 | 4,857/168 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Khan_2018.pdf` | Khan A et al., Prevalence of selected pharmaceuticals…, Environmental monitoring an… (2018) | pd | 4 | [10.1007/s10661-018-6683-6](https://doi.org/10.1007/s10661-018-6683-6) | [29728779](https://www.ncbi.nlm.nih.gov/pubmed/29728779) | metadata signals extractable PD data (EC50) |
-| `Oda_2003.pdf` | Oda M et al., The effect of itraconazole on the pharm…, European journal of clinica… (2003) | pgx | 7 | [10.1007/s00228-003-0681-4](https://doi.org/10.1007/s00228-003-0681-4) | [14517708](https://www.ncbi.nlm.nih.gov/pubmed/14517708) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `van_1995.pdf` | van Harten J, Overview of the pharmacokinetics of flu…, Clinical pharmacokinetics (1995) | pgx | 7 | [10.2165/00003088-199500291-00003](https://doi.org/10.2165/00003088-199500291-00003) | [8846617](https://www.ncbi.nlm.nih.gov/pubmed/8846617) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-10-06 18:24 UTC</sub>
+<sub>queue written 2026-11-23 19:19 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Ambrosio_2018 | not_relevant | 0 | 0 | In vitro drug-drug interaction study of morphine metabolism; no gene variant/genotype effect on bromazepam PK/PD reported. |
-| popPK | Khan_2018 | irrelevant | 0 | 0 | Environmental monitoring study measuring bromazepam concentrations in wastewater, not a pharmacokinetic study with disposition parameters. |
-| PGx | Oda_2003 | not_relevant | 0 | 0 | Drug-drug interaction (itraconazole/CYP3A4 inhibition), not a gene variant/genotype effect on PK or PD. |
-| PGx | Sproule_1997 | not_relevant | 3 | 3 | Mentions fluvoxamine inhibiting bromazepam metabolism via CYP enzymes, but this is a drug-drug interaction, not a gene variant/genotype effect on PK/PD parameters. |
-| PGx | Takei_2024 | not_relevant | 0 | 0 | No pharmacogenomic effect on bromazepam PK/PD reported; bromazepam only mentioned as within therapeutic range in an autopsy case. |
-| PGx | Vrzal_2010 | not_relevant | 0 | 0 | In vitro study of benzodiazepine effects on CYP induction; no gene variant/genotype effect on bromazepam PK/PD reported. |
-| PGx | van_1995 | not_relevant | 0 | 0 | Bromazepam is only mentioned as a drug interaction substrate of fluvoxamine; no gene variant/genotype effect on bromazepam PK/PD is reported. |
+| popPK | Ambrosio_2018 | irrelevant | 0 | 0 | This is an in vitro study of morphine metabolism where bromazepam is only a co-administered drug to test for interactions, not the subject of a PK study. |
+| PGx | Ambrosio_2018 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (chemical inhibition) on morphine metabolism, not pharmacogenomic effects (gene variants) on bromazepam PK/PD. |
+| popPK | Khan_2018 | irrelevant | 0 | 0 | This is an environmental monitoring study measuring concentrations of bromazepam in wastewater and surface water, not a pharmacokinetic study of drug disposition in an organism. |
+| PGx | Khan_2018 | not_relevant | 0 | 0 | The paper is an environmental study measuring bromazepam concentrations in water and sewage, not a clinical pharmacogenomic study. |
+| PGx | Oda_2003 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (CYP3A4 inhibition by itraconazole) in a general population, rather than a pharmacogenomic effect (gene variant/genotype) on bromazepam pharmacokinetics or pharmacodynamics. |
+| popPK | Sproule_1997 | irrelevant | 1 | 0 | The paper is a review discussing potential CYP-mediated interactions between SSRIs and benzodiazepines like bromazepam, but it does not report original quantitative pharmacokinetic disposition parameters for bromazepam as the subject drug. |
+| PGx | Sproule_1997 | not_relevant | 1 | 0 | The paper reviews drug-drug interactions between SSRIs and CNS drugs (including bromazepam) but does not report pharmacogenomic effects (gene variants changing PK/PD) for bromazepam. |
+| popPK | Takei_2024 | irrelevant | 0 | 0 | Bromazepam is only mentioned as a co-administered drug with concentration within therapeutic ranges in a forensic case report, with no PK parameters reported. |
+| PGx | Takei_2024 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction involving fluvoxamine, levomepromazine, and trihexyphenidyl, but does not discuss pharmacogenomics or gene variants for bromazepam. |
+| popPK | Vrzal_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP450 induction by benzodiazepines and does not report pharmacokinetic disposition parameters for bromazepam. |
+| PGx | Vrzal_2010 | not_relevant | 0 | 0 | The paper investigates the induction of CYP3A4 by various benzodiazepines but does not report pharmacogenomic effects (gene variants altering PK/PD) specifically for bromazepam. |
+| popPK | van_1995 | irrelevant | 0 | 0 | The paper is a review of fluvoxamine pharmacokinetics, and bromazepam is only listed as a co-administered drug whose metabolism is affected by fluvoxamine, with no quantitative PK parameters reported for bromazepam itself. |
+| PGx | van_1995 | not_relevant | 0 | 0 | The paper reviews the pharmacokinetics of fluvoxamine, not a pharmacogenomic effect on bromazepam. |
 
 
 </details>

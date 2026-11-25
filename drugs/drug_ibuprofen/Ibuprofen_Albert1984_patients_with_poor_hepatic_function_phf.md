@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because sulindac metabolites are unlinked to the dose and Cmax units are invalid.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Albert1984_patients_with_poor_hepatic_function_phf" status="rejected" stale="false" population="adults (normal volunteers, elderly, liver disease, rheumatoid arthritis)" measured-compound="ibuprofen" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -63,13 +63,13 @@ Albert KS, Gernaat CM. Pharmacokinetics of ibuprofen. The American journal of me
 
 ### Reviewer guidance
 
-**Record rejected because sulindac metabolites are unlinked to the dose and Cmax units are invalid.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Sulindac sulfide and sulfone are defined as metabolites of sulindac, but no parameter connects sulindac to the dosed ibuprofen, leaving these compartments unreachable. Additionally, Cmax values are recorded in g/ml, a unit that could not be converted to SI, preventing the calculation of standard values. Extracted — ibuprofen: Cmax 21.1 g/ml, tmax 2.6 hours, AUC 100 n = 6, t1/2z 2.6 hours, V 6.35 liters, CL 2.06 ml/kg/h, kabs 0.656 hour−1, tlag 0.1 hours; sulindac: Cmax 5.7 g/ml, tmax 2.5 hours, AUC 37.4 n = 6; sulindac sulfide: Cmax 2.4 g/ml, tmax 7.2 hours, AUC 39.4 n = 6; sulindac sulfone: Cmax 1 g/ml, tmax 14.2 hours, AUC 23.3 n = 6.
+A reported unit could not be converted (AUC, AUC, AUC and AUC), so that value has no SI equivalent. Extracted — ibuprofen: Cmax 21.1 g/ml, tmax 2.6 hours, AUC 100 n = 6, t1/2z 2.6 hours, V 6.35 liters, CL 2.06 ml/kg/h, kabs 0.656 hour−1, tlag 0.1 hours; sulindac: Cmax 5.7 g/ml, tmax 2.5 hours, AUC 37.4 n = 6; sulindac sulfide: Cmax 2.4 g/ml, tmax 7.2 hours, AUC 39.4 n = 6; sulindac sulfone: Cmax 1 g/ml, tmax 14.2 hours, AUC 23.3 n = 6.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

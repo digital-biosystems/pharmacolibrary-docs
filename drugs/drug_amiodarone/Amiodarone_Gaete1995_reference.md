@@ -48,7 +48,7 @@ Gaete LE, Ortiz M, Soto J, Saavedra I. [Amiodarone absorption and elimination af
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 

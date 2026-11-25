@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-> Fentanyl clearance rate units were misrecorded as dimensionless ranges, and one peripheral compartment was structurally unlinked from the dose.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit 13.9-24.3 (dimensionless) vs [length] ** 3 / [time]; Q303 unit 0.455-0.908 (dimensionless) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Pypendop2014_fentanyl" status="rejected" stale="false" population="isoflurane-anesthetized adult cats" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Pypendop BH, Brosnan RJ, Majewski-Tiedeken CR, Stanley SD, Ilkiw JE. Pharmacokin
 
 ### Reviewer guidance
 
-**Fentanyl clearance rate units were misrecorded as dimensionless ranges, and one peripheral compartment was structurally unlinked from the dose.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit 13.9-24.3 (dimensionless) vs [length] ** 3 / [time]; Q303 unit 0.455-0.908 (dimensionless) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists clearance with the unit '13.9-24.3' and the inter-compartmental rate constant with the unit '0.455-0.908', which are numerical ranges rather than time-based units. This dimensional mismatch prevented the values from being converted into standard SI units for the model. Additionally, a check identified an orphan compartment that had no path from the dose, meaning drug could not physically enter that part of the model. Extracted — fentanyl: t1/2α 1 min, t1/2β 17 min, t1/2γ 151 min, V2 0.46 L/kg, V3 1.74 L/kg, CL 76.1 13.9-24.3, k13 0.088 0.455-0.908, MRT 126 min, … (+3).
+A reported unit could not be converted (CL and k13), so that value has no SI equivalent. Extracted — fentanyl: t1/2α 1 min, t1/2β 17 min, t1/2γ 151 min, V2 0.46 L/kg, V3 1.74 L/kg, CL 76.1 13.9-24.3, k13 0.088 0.455-0.908, MRT 126 min, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

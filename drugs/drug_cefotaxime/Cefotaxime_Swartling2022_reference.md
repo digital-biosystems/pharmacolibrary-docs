@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The dialysate flow rate parameter for cefotaxime was recorded as 3.1 L/h.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="cefotaxime" model-id="Cefotaxime_Swartling2022_reference" status="rejected" stale="false" population="adult ICU patients" measured-compound="cefotaxime" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Swartling M, Smekal AK, Furebring M, Lipcsey M, Jönsson S, Nielsen EI. Populati
 
 ### Reviewer guidance
 
-**The dialysate flow rate parameter for cefotaxime was recorded as 3.1 L/h.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defines a second compartment intended to represent the peripheral volume of distribution. However, the specific meaning assigned to the parameter for this compartment's flow is a dialysate flow rate, not a standard inter-compartmental clearance. This creates a structural inconsistency where the peripheral compartment lacks a valid pharmacokinetic link from the central compartment, rendering it an unreachable or orphan compartment in the model. Extracted — cefotaxime: CL 8.5 L/h, V1 1.5 L, V2 8 L, Qd 3.1 L/h.
+Extracted — cefotaxime: CL 8.5 L/h, V1 1.5 L, V2 8 L, Qd 3.1 L/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

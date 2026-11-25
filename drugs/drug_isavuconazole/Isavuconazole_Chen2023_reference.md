@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was quarantined because no explicit value was extracted for isavuconazole's total clearance, forcing the use of a placeholder instead of a fitted estimate.
+> No value for isavuconazole's clearance; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="isavuconazole" model-id="Isavuconazole_Chen2023_reference" status="model_quarantined" stale="false" population="adults (healthy volunteers and patients with invasive fungal infections)" measured-compound="isavuconazole" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Chen N, Wang X, Li Y, Yang P, Huang M, Lu X. Population Pharmacokinetics of Isav
 
 ### Reviewer guidance
 
-**The record was quarantined because no explicit value was extracted for isavuconazole's total clearance, forcing the use of a placeholder instead of a fitted estimate.**
+**No value for isavuconazole's clearance; t6_deviations (+1 more).**
 
-Although the facts list a total clearance of 1.99 L/h, the clearance parameter was treated as having no valid extraction, so a library placeholder stood in. A second reader disagreed on several values, including the central volume of 50.3 L and the peripheral volume of 263.0 L, while also identifying a steady-state volume of distribution of 288.78 L missing from the primary record. The cross-check agreement was low at 0.455, with zero readers agreeing on the dispute. Extracted — isavuconazole: V1 50.3 L, Q 33.7 L/h, V2 263 L.
+The model was built, but isavuconazole's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — isavuconazole: V1 50.3 L, Q 33.7 L/h, V2 263 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -170,7 +170,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check disputed by a second reader: verdict disputed, agreement 0.455, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.455 (5 of 11 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.455 | cross-check contradicted by a second reader: verdict disputed; agreement 0.455 (5 of 11 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmin_ss | reference | skipped | 3.5 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">

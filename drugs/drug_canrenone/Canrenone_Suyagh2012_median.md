@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The canrenone model's terminal half-life is 1.89 hours, deviating from the paper's reported 11.2 hours, and clearance binding failed.
+> The model does not reproduce the paper's terminal half-life (paper 11.2, model 1.89); t3_derived_parameters (+1 more).
 
 <div class="pk-model-meta" hidden drug="canrenone" model-id="Canrenone_Suyagh2012_median" status="needs_review" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Populatio
 
 ### Reviewer guidance
 
-**The canrenone model's terminal half-life is 1.89 hours, deviating from the paper's reported 11.2 hours, and clearance binding failed.**
+**The model does not reproduce the paper's terminal half-life (paper 11.2, model 1.89); t3_derived_parameters (+1 more).**
 
-The simulated terminal half-life of 1.89 hours falls far short of the paper's reported 11.2 hours, failing the reproduction check. Additionally, the model builder assumed absolute bioavailability (F=1) and first-order depot input, which may not match the paper's dosing assumptions. A second reader disputed the parameter identification for canrenone apparent clearance, noting a mismatch in how the parameter was linked to the model. Extracted — canrenone: CLm/F 11.4 l h -1 70 kg -1, V/F 20 l 70 kg -1, kfm 57.8 h -1, t1/2z 12.1 h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — canrenone: CLm/F 11.4 l h -1 70 kg -1, V/F 20 l 70 kg -1, kfm 57.8 h -1, t1/2z 12.1 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].parameter_id`: this record has Q351, the second reading Q27. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -155,8 +155,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | cross-check disputed by a second reader: verdict disputed, agreement 0.889, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | fail | 11.2 | 1.892 | 0.1689 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.889 (8 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.889 | cross-check contradicted by a second reader: verdict disputed; agreement 0.889 (8 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | fail | 11.2 | 1.892 | 0.1689 | reported 11.2 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

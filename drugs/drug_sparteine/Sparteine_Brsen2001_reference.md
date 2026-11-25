@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record lacks explicit estimates for sparteine's absorption rate constant and lag time, forcing the use of unsupported library defaults instead of paper-derived values.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="sparteine" model-id="Sparteine_Brsen2001_reference" status="needs_review" stale="false" population="healthy subjects and patients" measured-compound="sparteine" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Brøsen K, Naranjo CA. Review of pharmacokinetic and pharmacodynamic interaction
 
 ### Reviewer guidance
 
-**The record lacks explicit estimates for sparteine's absorption rate constant and lag time, forcing the use of unsupported library defaults instead of paper-derived values.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The model builder defaulted the absorption rate constant and lag time because these were not reported in the source text. This substitution was flagged as an unacceptable invention of absorption parameters. Additionally, a second reader disagreed on a specific value, recording 15 where the primary record listed null. Extracted — sparteine: CL/F 26 l / h, V 14 l / kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — sparteine: CL/F 26 l / h, V 14 l / kg.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q45: this record has none, the second reading 15. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.833 (5 of 6 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

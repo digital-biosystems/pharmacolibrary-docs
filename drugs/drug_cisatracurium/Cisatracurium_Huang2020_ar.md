@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The second compartment of the cisatracurium model is unreachable from the dose because no intercompartmental clearance parameter was extracted.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Huang2020_ar" status="rejected" stale="false" population="patients with severe aortic regurgitation and control group" measured-compound="cisatracurium" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Huang X, Chen L, Cai Y, Wei J, Lin L, Sun J et al. Abnormal cisatracurium pharma
 
 ### Reviewer guidance
 
-**The second compartment of the cisatracurium model is unreachable from the dose because no intercompartmental clearance parameter was extracted.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines central and peripheral volumes (V1 = 52.34 ml/kg, V2 = 38.90 ml/kg) and elimination rate constants (K10 = 0.07 1/min, K20 = 0.04 1/min), but it lacks a parameter describing drug flow between compartments. Consequently, the structure is flagged as having an unreachable compartment, meaning the model topology does not permit drug to enter the peripheral space after dosing. Extracted — cisatracurium: kel 0.07, ki0 0.04, V1 52.3 ml/kg, V2 38.9 ml/kg, t1/2β 23.8 min, CL 7.06 ml/min/kg.
+Extracted — cisatracurium: kel 0.07, ki0 0.04, V1 52.3 ml/kg, V2 38.9 ml/kg, t1/2β 23.8 min, CL 7.06 ml/min/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

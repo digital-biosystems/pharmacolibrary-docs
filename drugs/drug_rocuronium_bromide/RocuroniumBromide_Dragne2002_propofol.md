@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because a reported unit for a pharmacokinetic parameter could not be converted to standard SI units, and three half-lives contradict the one-compartment structure.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng·mL⁻¹ ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q67 unit min⁻¹ (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="rocuronium bromide" model-id="RocuroniumBromide_Dragne2002_propofol" status="rejected" stale="false" population="surgical patients under anesthesia" measured-compound="rocuronium_bromide" parameterization="mechanistic" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Dragne A, Varin F, Plaud B, Donati F. Rocuronium pharmacokinetic-pharmacodynamic
 
 ### Reviewer guidance
 
-**The record was rejected because a reported unit for a pharmacokinetic parameter could not be converted to standard SI units, and three half-lives contradict the one-compartment structure.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng·mL⁻¹ ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q67 unit min⁻¹ (1 / [time]) vs 1 / [time].**
 
-The record lists half-lives for alpha (1.68 min), beta (18.46 min), and gamma (86.62 min), which contradicts the declared one-compartment topology. The review findings indicate that a reported unit was not recognized by the system for conversion, preventing the parameter from being expressed in standard SI units. Additionally, the fast distribution rate constant of 0.5562 min⁻¹ was flagged for a unit dimension conflict. Extracted — rocuronium bromide: C0 1.49e+03 ng·mL⁻¹, λ1 0.556 min⁻¹, kel 0.047 min⁻¹, t1/2α 1.68 min, t1/2β 18.5 min, t1/2γ 86.6 min, CL 4.37 mL·kg⁻¹·min⁻¹, V 38 mL·kg⁻¹, … (+4).
+A reported unit could not be converted (equation variable, C0, λ1 and Ct), so that value has no SI equivalent. Extracted — rocuronium bromide: C0 1.49e+03 ng·mL⁻¹, λ1 0.556 min⁻¹, kel 0.047 min⁻¹, t1/2α 1.68 min, t1/2β 18.5 min, t1/2γ 86.6 min, CL 4.37 mL·kg⁻¹·min⁻¹, V 38 mL·kg⁻¹, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rocuronium_bromide, the second reading rocuronium bromide; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

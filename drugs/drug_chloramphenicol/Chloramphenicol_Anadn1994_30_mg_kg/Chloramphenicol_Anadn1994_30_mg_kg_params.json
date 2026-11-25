@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Chloramphenicol_Anadn1994_30_mg_kg",
+ "molar_masses": {
+  "central.C": 0.323129
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2100.0,
+  3500.0
+ ],
+ "parameters": {
+  "Cl": 4.277777777777778e-09,
+  "F": 29.0,
+  "MM": 0.323129,
+  "Tlag": 0.0,
+  "VdPerKg": 0.00218,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0021,
+  "ka": 0.0008611111111111111,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 12394.64502947335
+ },
+ "reference_peaks": {
+  "central.C": 0.3989480721407511
+ },
+ "stop_time": 129600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

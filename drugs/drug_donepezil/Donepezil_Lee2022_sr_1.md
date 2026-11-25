@@ -184,15 +184,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.1, 0 of 1 reader(s) agree | 0.1 | cross-check disputed by a second reader: verdict disputed, agreement 0.1, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 1.216e-06 |  | non-numeric value |
-| T1_cmax | reference | fail | 3.19e-06 | 1.216e-06 | 0.3811 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 7.8e-07 | 1.216e-06 | 1.559 | ng/mL→SI vs simulated kg/m3 |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.1 (2 of 20 compared fields agree, 16 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.1 | cross-check contradicted by a second reader: verdict disputed; agreement 0.1 (2 of 20 compared fields agree, 16 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 1.216e-06 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | fail | 3.19e-06 | 1.216e-06 | 0.3811 | reported 3.19 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 7.8e-07 | 1.216e-06 | 1.559 | reported 0.78 ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 6.84 | 1.216e-06 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 8.91 | 1.216e-06 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped |  | 1.216e-06 |  | non-numeric value |
-| T1_tmax | reference | fail | 1 | 1.683 | 1.683 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 1.5 | 1.683 | 1.122 | h→SI vs simulated h |
+| T1_cmax | reference | skipped |  | 1.216e-06 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | fail | 1 | 1.683 | 1.683 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | pass | 1.5 | 1.683 | 1.122 | reported 1.5 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -208,7 +208,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_donepezil/Donepezil_Lee2022_sr_1/Donepezil_Lee2022_sr_1_modelica.zip" download>Donepezil_Lee2022_sr_1_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_donepezil/Donepezil_Lee2022_sr_1/Donepezil_Lee2022_sr_1_modelica.zip" download>Donepezil_Lee2022_sr_1_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_donepezil/Donepezil_Lee2022_sr_1/Donepezil_Lee2022_sr_1_fmi.zip" download>Donepezil_Lee2022_sr_1_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_donepezil/Donepezil_Lee2022_sr_1/Donepezil_Lee2022_sr_1_matlab.zip" download>Donepezil_Lee2022_sr_1_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_donepezil/Donepezil_Lee2022_sr_1/Donepezil_Lee2022_sr_1_matlab_simbio.zip" download>Donepezil_Lee2022_sr_1_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>

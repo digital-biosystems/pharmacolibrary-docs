@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because abstract-only parameters use unit 1/h for clearance, conflicting with dimension checks, and the structure lacks a dose path to a compartment.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q64 unit 1/kg (dimensionless) vs [length] ** 3; Q22 unit 1/h (1 / [time]) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="propafenone" model-id="Propafenone_Arboix1985_reference" status="rejected" stale="false" population="patients with paroxysmal supraventricular tachycardia" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Arboix M, Puigdemont A, Moya A, Cinca J. Pharmacokinetics of intravenous propafe
 
 ### Reviewer guidance
 
-**Record rejected because abstract-only parameters use unit 1/h for clearance, conflicting with dimension checks, and the structure lacks a dose path to a compartment.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q64 unit 1/kg (dimensionless) vs [length] ** 3; Q22 unit 1/h (1 / [time]) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-Clearance is reported as 1.03 1/h, which conflicts with the expected dimension for a clearance parameter. The volume of distribution is given as 1.6 1/kg, creating a dimensional conflict with length cubed. The model structure was identified as having an unreachable compartment or unlinked metabolite. These issues were compounded by the record being derived solely from the abstract, where summary statistics substituted for a fitted model. Extracted — propafenone: t1/2α 2.8 min, t1/2β 80 min, kel 0.12 1/h, V2 1.6 1/kg, CL 1.03 1/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — propafenone: t1/2α 2.8 min, t1/2β 80 min, kel 0.12 1/h, V2 1.6 1/kg, CL 1.03 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has propafenone, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

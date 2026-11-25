@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because a reported unit could not be converted to standard units and the metabolite hydroxyitraconazole is structurally unreachable from the dose.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ka ([time]) vs 1 / [time]; Q1 unit Km ([length]) vs [mass] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="itraconazole" model-id="Itraconazole_Chu2025_reference" status="rejected" stale="false" population="adults with eumycetoma" measured-compound="itraconazole, hydroxyitraconazole" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -58,13 +58,13 @@ Chu WY, Fahal AH, Ahmed ES, Bakhiet SM, Bakhiet OE, Fahal LA et al. Pharmacokine
 
 ### Reviewer guidance
 
-**The record was rejected because a reported unit could not be converted to standard units and the metabolite hydroxyitraconazole is structurally unreachable from the dose.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ka ([time]) vs 1 / [time]; Q1 unit Km ([length]) vs [mass] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-One parameter's unit is not recognized in standard pharmacokinetic terms, preventing its conversion to SI units. The metabolite hydroxyitraconazole is an orphan with no path from the administered dose. Dimension mismatches were also noted for the absorption rate constant and Michaelis-Menten constant associated with ravuconazole. Extracted — ravuconazole: kabs 0.0796 ka, Vmax 4.55, Km 4 Km, V1 20.8 L, Q 9.03 L/h, V2 262 L; itraconazole: CL 10.7 L/h; hydroxyitraconazole: CL 5.16 L/h.
+A reported unit could not be converted (kabs and Km), so that value has no SI equivalent. Extracted — ravuconazole: kabs 0.0796 ka, Vmax 4.55, Km 4 Km, V1 20.8 L, Q 9.03 L/h, V2 262 L; itraconazole: CL 10.7 L/h; hydroxyitraconazole: CL 5.16 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fosravuconazole, itraconazole, the second reading fosravuconazole and itraconazole; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

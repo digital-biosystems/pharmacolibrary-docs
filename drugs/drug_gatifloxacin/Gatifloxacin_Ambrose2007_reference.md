@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The record for gatifloxacin was quarantined because total clearance lacked an explicit value, leaving the parameter at placeholder defaults.
+> No value for gatifloxacin's clearance; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="gatifloxacin" model-id="Gatifloxacin_Ambrose2007_reference" status="model_quarantined" stale="false" population="mice with B. anthracis infection" measured-compound="gatifloxacin" parameterization="apparent" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Ambrose PG, Forrest A, Craig WA, Rubino CM, Bhavnani SM, Drusano GL et al. Pharm
 
 ### Reviewer guidance
 
-**The record for gatifloxacin was quarantined because total clearance lacked an explicit value, leaving the parameter at placeholder defaults.**
+**No value for gatifloxacin's clearance; t6_deviations.**
 
-While the record lists values for volume, intercompartmental clearance, and absorption parameters, the entry for total clearance following oral administration shows no numerical value. Consequently, no specific clearance figure was available to define the model's elimination characteristics for gatifloxacin. The model was held back to prevent publication using a generic library placeholder instead of an actual pharmacokinetic estimate. Extracted — gatifloxacin: V1/F 0.2 L/kg, V2/F 1.6 L/kg, Q/F 7.7 L/h/kg, tlag 0.23 h, t1/2z 0.6 h, kabs 0.397 h−1.
+The model was built, but gatifloxacin's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — gatifloxacin: V1/F 0.2 L/kg, V2/F 1.6 L/kg, Q/F 7.7 L/h/kg, tlag 0.23 h, t1/2z 0.6 h, kabs 0.397 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gatifloxacin, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

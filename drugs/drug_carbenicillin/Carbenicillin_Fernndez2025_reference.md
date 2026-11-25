@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The carbenicillin two-compartment model was rejected because a compartment is structurally disconnected from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="carbenicillin" model-id="Carbenicillin_Fernndez2025_reference" status="rejected" stale="false" population="" measured-compound="carbenicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Fernández Rubio B, Docobo Pérez F, Herrera Hidalgo L, López-Cortés LE, Luque
 
 ### Reviewer guidance
 
-**The carbenicillin two-compartment model was rejected because a compartment is structurally disconnected from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure is flagged as having an unreachable or orphan compartment, meaning a compartment has no path from the dose. This disconnect prevents the model from functioning as intended. Additionally, a second reader identified discrepancies in values where the record contained nulls. Extracted — carbenicillin: CL 11.6 L/h, V1 43.6 L, V2 40.9 L.
+Extracted — carbenicillin: CL 11.6 L/h, V1 43.6 L, V2 40.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 0.77; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

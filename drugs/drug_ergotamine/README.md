@@ -27,7 +27,7 @@ Ergotamine is an ergot alkaloid and serotonin receptor modulator used to treat a
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Bax_1993_contraction](drugs/drug_ergotamine/pd_Bax_1993_contraction.md) | contractile responses of the isolated human coronary artery ← ergotamine · direct Emax (saturable) effect | — | Bax WA et al., 5-HT receptors mediating contractions o…, European journal of pharmac… (1993) | [10.1016/0014-2999(93)90995-t](https://doi.org/10.1016/0014-2999(93)90995-t) |
 | <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [MaassenVanDenBrink_1998_coronary_artery_contraction](drugs/drug_ergotamine/pd_MaassenVanDenBrink_1998_coronary_artery_contraction.md) | coronary artery contraction biomarker turnover ← ergotamine | — | MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circulation (1998) | [10.1161/01.cir.98.1.25](https://doi.org/10.1161/01.cir.98.1.25) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Tfelt-Hansen_1985_toe_arm_systolic_gradients](drugs/drug_ergotamine/pd_Tfelt_Hansen_1985_toe_arm_systolic_gradients.md) | toe-arm systolic gradients ← ergotamine · delayed effect through an effect compartment | — | Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.7](https://doi.org/10.1038/clpt.1985.7) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span> | [Kudupoje_2018_NE_normalized_contraction](drugs/drug_ergotamine/pd_Kudupoje_2018_NE_normalized_contraction.md) | contractile response of saphenous vein smooth muscle to ergotamine tartrate (ETA) ← ergotamine tartrate · direct sigmoid Emax (Hill) effect | — | Kudupoje MB et al., Contractile Response of Bovine Lateral…, Toxins (2018) | [10.3390/toxins10020058](https://doi.org/10.3390/toxins10020058) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span> | [Kudupoje_2018_NE_normalized_contraction](drugs/drug_ergotamine/pd_Kudupoje_2018_NE_normalized_contraction.md) | contractile response of saphenous vein smooth muscle to ergotamine tartrate (ETA) ← ergotamine tartrate · direct sigmoid Emax (Hill) effect | — | Kudupoje MB et al., Contractile Response of Bovine Lateral…, Toxins (2018) | [10.3390/toxins10020058](https://doi.org/10.3390/toxins10020058) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -41,7 +41,7 @@ Ergotamine is an ergot alkaloid and serotonin receptor modulator used to treat a
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:38 | 1:00 | 1/0/0 | 4/0/0 | 0/0/0 | 90,808/3,610 | einfracz / qwen3.8-27b | 7 | 1/6 | 7/0 | 0 |
+| 2026-10-07 06:38 | 1:00 | 1/0/0 | 3/1/0 | 0/0/0 | 90,808/3,610 | einfracz / qwen3.8-27b | 7 | 1/6 | 7/0 | 0 |
 
 ## Coverage
 

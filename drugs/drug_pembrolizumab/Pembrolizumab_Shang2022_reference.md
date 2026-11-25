@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for pembrolizumab was rejected because the central and peripheral volumes of distribution lacked extracted values, leaving the model structure incomplete.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="pembrolizumab" model-id="Pembrolizumab_Shang2022_reference" status="rejected" stale="false" population="patients with multiple tumor types" measured-compound="pembrolizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Shang J, Huang L, Huang J, Ren X, Liu Y, Feng Y. Population pharmacokinetic mode
 
 ### Reviewer guidance
 
-**The record for pembrolizumab was rejected because the central and peripheral volumes of distribution lacked extracted values, leaving the model structure incomplete.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-While the record lists total clearance as 0.22 L/Day and intercompartmental clearance as 0.795 L/Day, it does not provide specific numerical values for the central or peripheral volumes of distribution. Without these extracted values, the model relied on generic placeholder defaults rather than study-specific parameters. This omission left the two-compartment model with missing volume parameters, rendering it incomplete for accurate pharmacokinetic prediction. Extracted — pembrolizumab: Q 0.795 L/Day, V2 4.06 L.
+Extracted — pembrolizumab: Q 0.795 L/Day, V2 4.06 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pembrolizumab, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

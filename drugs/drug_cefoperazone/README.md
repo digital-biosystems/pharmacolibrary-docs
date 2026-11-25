@@ -50,8 +50,8 @@ Cefoperazone is a third-generation cephalosporin antibiotic used to treat bacter
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhu_2020_MIC](drugs/drug_cefoperazone/pd_Zhu_2020_MIC.md) | MIC biomarker turnover ← cefoperazone/sulbactam | — | Zhu W et al., Pharmacokinetic and pharmacodynamic pro…, Microbial pathogenesis (2020) | [10.1016/j.micpath.2019.103809](https://doi.org/10.1016/j.micpath.2019.103809) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">mouse</span> | [van_1990_antibacterial_effect](drugs/drug_cefoperazone/pd_van_1990_antibacterial_effect.md) | antibacterial effect ← cefoperazone · direct Emax (saturable) effect | — | van Ogtrop ML et al., Comparative study of the effects of fou…, Antimicrobial agents and ch… (1990) | [10.1128/AAC.34.10.1932](https://doi.org/10.1128/AAC.34.10.1932) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zhu_2020_MIC](drugs/drug_cefoperazone/pd_Zhu_2020_MIC.md) | MIC biomarker turnover ← cefoperazone/sulbactam | — | Zhu W et al., Pharmacokinetic and pharmacodynamic pro…, Microbial pathogenesis (2020) | [10.1016/j.micpath.2019.103809](https://doi.org/10.1016/j.micpath.2019.103809) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

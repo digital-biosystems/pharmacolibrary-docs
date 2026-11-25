@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record for gabapentin was rejected due to a negative unbound clearance covariate estimate of -0.89.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_AlZubaydi2024_reference" status="rejected" stale="false" population="hospitalized adults" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Al-Zubaydi F, Wassef A, Kagan L, Brunetti L. Development of a Population Pharmac
 
 ### Reviewer guidance
 
-**Record for gabapentin was rejected due to a negative unbound clearance covariate estimate of -0.89.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The parameter representing the unbound clearance covariate with respect to creatinine clearance has a value of -0.89. This negative estimate is considered implausible for a clearance relationship in this covariate scenario. A second reader disagreed with the extraction of this specific negative value. Extracted — gabapentin: kabs 0.778 h−1, V 44.6 L, CL 5.73 L/h, CLu -0.89.
+Extracted — gabapentin: kabs 0.778 h−1, V 44.6 L, CL 5.73 L/h, CLu -0.89.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of β cl_scr: this record has -0.89, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

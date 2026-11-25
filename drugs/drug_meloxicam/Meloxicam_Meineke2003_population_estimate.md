@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Meloxicam clearance was recorded as -0.5169, an implausible negative value for drug elimination in rheumatoid arthritis patients.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Meineke2003_population_estimate" status="rejected" stale="false" population="rheumatoid arthritis patients" measured-compound="meloxicam" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Meineke I, Türck D. Population pharmacokinetic analysis of meloxicam in rheumat
 
 ### Reviewer guidance
 
-**Meloxicam clearance was recorded as -0.5169, an implausible negative value for drug elimination in rheumatoid arthritis patients.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The total clearance parameter is listed as -0.5169, which is physiologically impossible for a linear elimination process. This negative value indicates the base parameter or covariate shift was incorrect, leading to rejection. The volume of distribution of 146.16 mL/kg also lacked a standard unit conversion, preventing it from being used in the model. Extracted — meloxicam: CL -0.517 CL, age, V 146 mL/kg.
+A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — meloxicam: CL -0.517 CL, age, V 146 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has meloxicam, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

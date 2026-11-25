@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper does not name or study dulaglutide, making the extracted parameters for this molecule invalid.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="dulaglutide" model-id="Dulaglutide_Admiraal2023_reference" status="rejected" stale="false" population="" measured-compound="dulaglutide" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Admiraal MM, Velseboer DC, Tjabbes H, Vis P, Peeters-Scholte C, Horn J. Neuropro
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper does not name or study dulaglutide, making the extracted parameters for this molecule invalid.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper subject is another drug, and the relevance screen explicitly rejected it because neither the title nor the abstract mentions dulaglutide. Although the record lists clearance as 12.3 L/h and volume of distribution as 10.0 L for dulaglutide, these values cannot be attributed to the source text. The second reader also disagreed on several parameter values, with one field recorded as 2398 in the record but null by the reviewer. Extracted — dulaglutide: CL 12.3 L/h, V 10 L.
+Extracted — dulaglutide: CL 12.3 L/h, V 10 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 2398, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record refused because the intercompartment clearance for oxycodone was recorded with a volume unit instead of a flow unit.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q99 unit litre ([length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Saari2012_covariate_model" status="rejected" stale="false" population="individuals aged 19-89 years" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Saari TI, Ihmsen H, Neuvonen PJ, Olkkola KT, Schwilden H. Oxycodone clearance is
 
 ### Reviewer guidance
 
-**Record refused because the intercompartment clearance for oxycodone was recorded with a volume unit instead of a flow unit.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q99 unit litre ([length] ** 3) vs [length] ** 3 / [time].**
 
-The parameter labeled as apparent intercompartment clearance between the central and second peripheral compartment was extracted with a value of 153 and a unit of litre. This conflicts with the required dimension of volume per time for a clearance parameter, causing a dimension mismatch. The review also noted that a reported unit was not recognized, preventing the parameter from receiving a valid SI value. Extracted — oxycodone: Q2 153 litre, V3 1.15e+03 L, V 133 litre, t1/2α 2.5 min, t1/2β 4.2 h, Vss 286 litre, CL 38 L/h.
+A reported unit could not be converted (Q2), so that value has no SI equivalent. Extracted — oxycodone: Q2 153 litre, V3 1.15e+03 L, V 133 litre, t1/2α 2.5 min, t1/2β 4.2 h, Vss 286 litre, CL 38 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 38.03, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

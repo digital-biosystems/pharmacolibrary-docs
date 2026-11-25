@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The absorption lag time parameter was rejected because its value of 6.75 was recorded with units of inverse days, conflicting with the required time dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q83 unit d−1 (1 / [time]) vs [time].
 
 <div class="pk-model-meta" hidden drug="linezolid" model-id="Linezolid_Ngara2025_estimates_rse_2" status="rejected" stale="false" population="mice with tuberculosis" measured-compound="linezolid" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Ngara B, Flori L, van Wijk RC, Ernest JP, Tyagi S, Soni H et al. Translational M
 
 ### Reviewer guidance
 
-**The absorption lag time parameter was rejected because its value of 6.75 was recorded with units of inverse days, conflicting with the required time dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q83 unit d−1 (1 / [time]) vs [time].**
 
-The recorded lag time of 6.75 was assigned a unit of d−1, which represents a rate rather than a time duration, causing a structural dimensional mismatch. Consequently, the model structure was rejected due to this fundamental unit conflict on the absorption delay parameter. A secondary reader also identified conflicting values for clearance and absorption rate, but the primary rejection stemmed from the invalid lag time unit. Extracted — linezolid: CL/F 0.01 L/h, V/F 0.73 L, kabs 0.77 h−1, fe 34, tlag 6.75 d−1.
+A reported unit could not be converted (tlag), so that value has no SI equivalent. Extracted — linezolid: CL/F 0.01 L/h, V/F 0.73 L, kabs 0.77 h−1, fe 34, tlag 6.75 d−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading not captured → not captured (not captured); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

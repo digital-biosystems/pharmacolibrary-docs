@@ -48,10 +48,7 @@ Desvenlafaxine is a serotonin-norepinephrine reuptake inhibitor used to treat ma
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Lindauer_2008_amplitude](drugs/drug_desvenlafaxine/pd_Lindauer_2008_amplitude.md) | amplitude of the pupillary light reflex ← O-desmethylvenlafaxine · model not identified | — | Lindauer A et al., Pharmacokinetic/pharmacodynamic modelli…, Clinical pharmacokinetics (2008) | [10.2165/00003088-200847110-00003](https://doi.org/10.2165/00003088-200847110-00003) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Lindauer_2008_recovery_time](drugs/drug_desvenlafaxine/pd_Lindauer_2008_recovery_time.md) | recovery time of the pupillary light reflex ← O-desmethylvenlafaxine · model not identified | — | Lindauer A et al., Pharmacokinetic/pharmacodynamic modelli…, Clinical pharmacokinetics (2008) | [10.2165/00003088-200847110-00003](https://doi.org/10.2165/00003088-200847110-00003) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Wang_2020_R_ODV_toxicity](drugs/drug_desvenlafaxine/pd_Wang_2020_R_ODV_toxicity.md) | toxicity dose-response of R-O-desmethylvenlafaxine to S. scenedesmus ← R-O-desmethylvenlafaxine · inhibition effect | — | Wang W et al., β-cyclodextrin improve the tolerant of…, Journal of hazardous materi… (2020) | [10.1016/j.jhazmat.2020.123076](https://doi.org/10.1016/j.jhazmat.2020.123076) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Wang_2020_S_ODV_toxicity](drugs/drug_desvenlafaxine/pd_Wang_2020_S_ODV_toxicity.md) | toxicity dose-response of S-O-desmethylvenlafaxine to S. scenedesmus ← S-O-desmethylvenlafaxine · inhibition effect | — | Wang W et al., β-cyclodextrin improve the tolerant of…, Journal of hazardous materi… (2020) | [10.1016/j.jhazmat.2020.123076](https://doi.org/10.1016/j.jhazmat.2020.123076) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Wang_2020_growth_inhibition_of_Spiny_scenedesmus](drugs/drug_desvenlafaxine/pd_Wang_2020_growth_inhibition_of_Spiny_scenedesmus.md) | growth inhibition of Spiny scenedesmus ← R-O-desmethylvenlafaxine · direct Emax (saturable) effect | — | Wang W et al., β-cyclodextrin improve the tolerant of…, Journal of hazardous materi… (2020) | [10.1016/j.jhazmat.2020.123076](https://doi.org/10.1016/j.jhazmat.2020.123076) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,47 +62,45 @@ Desvenlafaxine is a serotonin-norepinephrine reuptake inhibitor used to treat ma
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 22:25 | 4:34 | 2/1/0 | 0/4/0 | 0/0/0 | 219,129/16,047 | ollama / glm-5.3-flash | 19 | 1/7 | 7/0 | 0 |
+| 2026-11-23 20:56 | 0:05 | 2/1/0 | 0/1/0 | 0/0/0 | 4,690/154 | einfracz / qwen3.8-27b | 19 | 1/7 | 7/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 23 matched, 14 returned
-- **screened:** 3  ·  **relevant:** 3
+- **screened:** 3  ·  **relevant:** 2
 - **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Nichols_2018.pdf` | Nichols AI et al., Population Pharmacokinetics of Desvenla…, Clinical pharmacology in dr… (2018) | popPK | 10 | [10.1002/cpdd.419](https://doi.org/10.1002/cpdd.419) | [29228473](https://pubmed.ncbi.nlm.nih.gov/29228473) | Population PK model of desvenlafaxine with CL/F and V/F reported, but only relative percent differences given, not absolute parameter values. |
-| `Alves_2026.pdf` | Alves BCM et al., Enantioselective Pharmacokinetics of Ve…, Journal of clinical pharmac… (2026) | popPK | 5 | [10.1002/jcph.70194](https://doi.org/10.1002/jcph.70194) | [42011083](https://pubmed.ncbi.nlm.nih.gov/42011083) | This is a venlafaxine population PK study in which desvenlafaxine (O-desmethylvenlafaxine) is the metabolite, so metabolite disposition parameters are modeled, but the abstract shows only fold-changes, not the numeric CL/V/ka values, which likely reside in tables/figures not provided. |
-
-<sub>queue written 2026-10-06 22:21 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abbas_2022 | irrelevant | 2 | 1 | This is a thorough QT study of venlafaxine; desvenlafaxine appears only as a measured metabolite in an exposure-response analysis with no PK disposition parameters reported. |
-| popPK | Alves_2026 | relevant | 5 | 3 | This is a venlafaxine population PK study in which desvenlafaxine (O-desmethylvenlafaxine) is the metabolite, so metabolite disposition parameters are modeled, but the abstract shows only fold-changes, not the numeric CL/V/ka values, which likely reside in tables/figures not provided. |
+| popPK | Abbas_2022 | irrelevant | 0 | 0 | This is a thorough QT (cardiac safety) study of venlafaxine, not a population pharmacokinetic study for desvenlafaxine. |
+| PGx | Abbas_2022 | not_relevant | 0 | 0 | The paper is a thorough QT study evaluating the safety of supratherapeutic venlafaxine in a general healthy population and does not report any pharmacogenomic effects or gene variant-specific changes in PK/PD parameters for desvenlafaxine. |
+| popPK | Alves_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of venlafaxine and its metabolite O-desmethylvenlafaxine, not desvenlafaxine. |
+| PGx | Alves_2026 | not_relevant | 2 | 1 | The paper studies the pharmacokinetics of venlafaxine and its metabolite O-desmethylvenlafaxine (which is desvenlafaxine), not the specific drug desvenlafaxine, and focuses on CYP2D6 inhibition via paroxetine rather than reporting pharmacogenomic effects on desvenlafaxine parameters. |
 | popPK | Atkinson_2018 | irrelevant | 2 | 0 | This is a pediatric efficacy/safety trial; population PK of desvenlafaxine is only mentioned as to be "reported separately," with no numeric PK parameters in the evidence. |
-| popPK | Katzman_2017 | irrelevant | 0 | 0 | This is a clinical efficacy meta-analysis of depression outcomes with no pharmacokinetic parameters (no CL, V, ka, half-life, or PK model) reported for desvenlafaxine. |
+| popPK | Katzman_2017 | irrelevant | 0 | 0 | The study is a clinical efficacy analysis of desvenlafaxine in major depressive disorder and does not report any pharmacokinetic parameters. |
+| PGx | Katzman_2017 | not_relevant | 0 | 0 | The paper reports standard clinical efficacy and time-to-remission outcomes for desvenlafaxine but does not investigate the influence of gene variants on pharmacokinetics or pharmacodynamics. |
 | popPK | Kilpinen_2023 | irrelevant | 0 | 0 | Environmental wastewater monitoring study with no pharmacokinetic parameters for desvenlafaxine; only mentions O-desmethylvenlafaxine concentrations in effluent. |
 | PD | Kilpinen_2023 | not_relevant | 0 | 0 | The paper is an environmental study on micropollutants in wastewater and does not report any pharmacodynamic or exposure-response relationships for desvenlafaxine. |
-| popPK | Lindauer_2008 | irrelevant | 0 | 0 | The study models venlafaxine and its metabolite O-desmethylvenlafaxine, not desvenlafaxine (desvenlafaxine is a different drug, succinate metabolite of venlafaxine not studied here). |
+| popPK | Lindauer_2008 | irrelevant | 0 | 0 | The study focuses on venlafaxine and its metabolite O-desmethylvenlafaxine, not desvenlafaxine. |
+| PGx | Lindauer_2008 | not_relevant | 0 | 0 | The paper reports a PK/PD model for venlafaxine (not desvenlafaxine) and mentions CYP2D6 polymorphism only as a cause for high clearance variability, without reporting specific genotypic effects on the drug's PK or PD parameters. |
 | popPK | Men_2024 | irrelevant | 0 | 0 | The paper models venlafaxine and its metabolite O-desmethylvenlafaxine, not desvenlafaxine; desvenlafaxine is a different drug. |
-| popPK | Pitts_2025 | irrelevant | 0 | 0 | This is an antiviral efficacy study of obeldesivir/GS-441524 against RSV, not a PK study of desvenlafaxine; no desvenlafaxine disposition parameters appear. |
+| popPK | Nichols_2018 | relevant | 10 | 2 | The paper reports a population PK model for desvenlafaxine, but the specific numeric parameter values (CL/F, V/F) are not listed, only percentage differences relative to US subjects. |
+| PGx | Nichols_2018 | not_relevant | 0 | 0 | The study compares PK parameters between Korean and US populations based on ethnicity and body weight, but does not report effects of specific gene variants or genotypes. |
+| popPK | Pitts_2025 | irrelevant | 0 | 0 | The study focuses on the antiviral efficacy of obeldesivir (ODV) against RSV in African green monkeys and does not report pharmacokinetic parameters for desvenlafaxine. |
 | PD | Pitts_2025 | not_relevant | 0 | 0 | The paper reports pharmacodynamics for obeldesivir (ODV), not desvenlafaxine. |
-| popPK | Wang_2020 | irrelevant | 0 | 0 | This is an algal toxicity/removal study of venlafaxine (not desvenlafaxine) with EC50 values and degradation half-lives, not pharmacokinetic disposition parameters. |
+| PGx | Pitts_2025 | not_relevant | 0 | 0 | The paper reports on the antiviral efficacy and resistance of obeldesivir against RSV, not the pharmacogenomics of desvenlafaxine. |
+| popPK | Wang_2020 | irrelevant | 0 | 0 | The study is an ecotoxicological assessment of venlafaxine and its metabolite O-desmethylvenlafaxine in freshwater algae, not a pharmacokinetic study of desvenlafaxine. |
+| PGx | Wang_2020 | not_relevant | 0 | 0 | The paper studies the effect of beta-cyclodextrin on algae toxicity and removal of venlafaxine, not the pharmacokinetics or pharmacodynamics of desvenlafaxine in humans relative to genetic variants. |
 | popPK | Weihs_2018 | irrelevant | 2 | 0 | This is a pediatric efficacy/safety trial; population PK samples were collected but results are reported separately, with no numeric PK parameters in the evidence. |
-| popPK | Xiang_2026 | irrelevant | 0 | 0 | This is an efficacy/tolerability IPD meta-analysis of antidepressants; desvenlafaxine is only a treatment arm with no PK parameters reported. |
+| popPK | Xiang_2026 | irrelevant | 0 | 0 | The paper is an efficacy and tolerability analysis of antidepressants in pediatric MDD, containing no pharmacokinetic disposition parameters. |
+| PGx | Xiang_2026 | not_relevant | 0 | 0 | The paper analyzes clinical efficacy (symptom change) and tolerability based on demographic characteristics (age, sex, BMI), not gene variants or PK/PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdesvenlafaxine%5D&body=Drug%3A%20desvenlafaxine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_desvenlafaxine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 22:21 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 20:56 UTC</sub>

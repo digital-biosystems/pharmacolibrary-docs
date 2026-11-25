@@ -22,17 +22,23 @@ Sodium fluoride 18F is a diagnostic radiopharmaceutical used for the detection o
 |---|---|---|---|---|---|---|
 | sodium_fluoride_18f | metabolite | 18.0015 | F | DrugBank | [23690531](https://pubchem.ncbi.nlm.nih.gov/compound/23690531) | Cook_2002 |
 
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Cook_2002 · V ·/kg</text><circle cx="301.3" cy="30.0" r="4" fill="#ef6c00"><title>Cook_2002 · V ·/kg: 4.326 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Yin_2023 · V1/F</text><circle cx="507.8" cy="46.0" r="4" fill="#ef6c00"><title>Yin_2023 · V1/F: 65.5 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub> | [Cook_2002_reference](drugs/drug_sodium_fluoride_18f/SodiumFluoride18f_Cook2002_reference.md) | — | 1-compartment (no model) | 2 | Cook GJ et al., Quantification of skeletal kinetic indi…, Journal of bone and mineral… (2002) | [10.1359/jbmr.2002.17.5.854](https://doi.org/10.1359/jbmr.2002.17.5.854) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Yin_2023_reference](drugs/drug_sodium_fluoride_18f/SodiumFluoride18f_Yin2023_reference.md) | — | 1-compartment (no model) | 2 | Yin W et al., Population pharmacokinetics, enzyme occ…, Clinical and translational… (2023) | [10.1111/cts.13517](https://doi.org/10.1111/cts.13517) |
 | <span class="pk-rf" hidden data-species="pig" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Ahmed_1998_reference](drugs/drug_sodium_fluoride_18f/SodiumFluoride18f_Ahmed1998_reference.md) | — | 1-compartment (no model) | 0 | Ahmed K et al., Comparative study of positron emission…, Radiation medicine (1998) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Cook_2000_reference](drugs/drug_sodium_fluoride_18f/SodiumFluoride18f_Cook2000_reference.md) | — | 1-compartment (no model) | 0 | Cook GJ et al., Differences in skeletal kinetics betwee…, Journal of bone and mineral… (2000) | [10.1359/jbmr.2000.15.4.763](https://doi.org/10.1359/jbmr.2000.15.4.763) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Hawkins_1992_reference](drugs/drug_sodium_fluoride_18f/SodiumFluoride18f_Hawkins1992_reference.md) | — | 1-compartment (no model) | 0 | Hawkins RA et al., Evaluation of the skeletal kinetics of…, Journal of nuclear medicine… (1992) | — |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Puri_2012_reference](drugs/drug_sodium_fluoride_18f/SodiumFluoride18f_Puri2012_reference.md) | — | 1-compartment (no model) | 0 | Puri T et al., Comparison of six quantitative methods…, Nuclear medicine communicat… (2012) | [10.1097/MNM.0b013e3283512adb](https://doi.org/10.1097/MNM.0b013e3283512adb) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Raijmakers_2014_reference](drugs/drug_sodium_fluoride_18f/SodiumFluoride18f_Raijmakers2014_reference.md) | — | 1-compartment (no model) | 0 | Raijmakers P et al., Quantification of 18F-Fluoride Kinetics…, Journal of nuclear medicine… (2014) | [10.2967/jnumed.113.135269](https://doi.org/10.2967/jnumed.113.135269) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Yin_2023_reference](drugs/drug_sodium_fluoride_18f/SodiumFluoride18f_Yin2023_reference.md) | — | 1-compartment (no model) | 2 | Yin W et al., Population pharmacokinetics, enzyme occ…, Clinical and translational… (2023) | [10.1111/cts.13517](https://doi.org/10.1111/cts.13517) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +52,13 @@ Sodium fluoride 18F is a diagnostic radiopharmaceutical used for the detection o
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:59 | 38:12 | 1/6/0 | 0/0/0 | 0/0/0 | 929,930/57,863 | ollama / qwen3.8:27b-mtp-q8_0 | 30 | 0/29 | 29/1 | 0 |
+| 2026-10-07 16:59 | 38:12 | 2/5/0 | 0/0/0 | 0/0/0 | 929,930/57,863 | ollama / qwen3.8:27b-mtp-q8_0 | 30 | 0/29 | 29/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 159 matched, 57 returned
 - **screened:** 6  ·  **relevant:** 6
-- **records:** 7  ·  extracted 0  ·  needs review 1  ·  rejected 6  ·  stale 0
+- **records:** 7  ·  extracted 0  ·  needs review 2  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests

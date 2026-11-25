@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper describes a different drug, not atracurium, and absorption parameters were invented or missing.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="atracurium" model-id="Atracurium_de2017_reference" status="rejected" stale="false" population="" measured-compound="atracurium" parameterization="apparent" topology="2C"></div>
 
@@ -50,13 +50,13 @@ de Hoogd S, Välitalo PAJ, Dahan A, van Kralingen S, Coughtrie MMW, van Dongen E
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper describes a different drug, not atracurium, and absorption parameters were invented or missing.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The source paper does not mention atracurium in its title or abstract, meaning the parameters do not originate from a relevant study. The model builder assigned a default absorption rate constant that was not reported in the source. A second reviewer also disagreed on the values for several pharmacokinetic parameters, including the intercompartmental clearance and volumes of distribution. Extracted — atracurium: CL/F 0.725 L/min, V1 3.96 L, V2 101 L, Q 0.625 L/min.
+Extracted — atracurium: CL/F 0.725 L/min, V1 3.96 L, V2 101 L, Q 0.625 L/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 0.129, the second reading 0.131; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,7 +142,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.529, 0 of 1 reader(s) agree | 0.529 | cross-check disputed by a second reader: verdict disputed, agreement 0.529, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.529 (9 of 17 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.529 | cross-check contradicted by a second reader: verdict disputed; agreement 0.529 (9 of 17 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

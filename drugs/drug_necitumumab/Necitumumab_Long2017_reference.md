@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment necitumumab model was rejected because the peripheral compartment is structurally unreachable from the central dose compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="necitumumab" model-id="Necitumumab_Long2017_reference" status="rejected" stale="false" population="cancer patients" measured-compound="necitumumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Long A, Chigutsa E, Wallin J. Population Pharmacokinetics of Necitumumab in Canc
 
 ### Reviewer guidance
 
-**The two-compartment necitumumab model was rejected because the peripheral compartment is structurally unreachable from the central dose compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Although parameters for central volume (3.6 L), peripheral volume (3.31 L), and clearance (0.0198 L/h) are present, the model structure defines an orphan peripheral compartment. This means there is no pharmacokinetic path connecting the dose to the peripheral space, rendering the volume of distribution of the peripheral compartment physiologically meaningless. Additionally, the recorded clearance value of 0.0198 L/h corresponds to the inter-compartmental label rather than total elimination, causing a second reader to identify a discrepancy with an expected value of 0.0141. Extracted — necitumumab: V1 3.6 L, CL 0.0198 L/h, V2 3.31 L.
+Extracted — necitumumab: V1 3.6 L, CL 0.0198 L/h, V2 3.31 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of central volume of distribution, v 1 (l)b: this record has 3.6, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

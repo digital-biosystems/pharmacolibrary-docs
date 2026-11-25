@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [ODonnell_1978_inhibition_of_K_depolarized_uterine_contractions_relaxation](drugs/drug_rimiterol/pd_ODonnell_1978_inhibition_of_K_depolarized_uterine_contractio.md) | inhibition of K(+)-depolarized uterine contractions (relaxation) ← rimiterol · direct Emax (saturable) effect | — | O'Donnell SR et al., An in vitro comparison of beta-adrenoce…, British journal of pharmaco… (1978) | [10.1111/j.1476-5381.1978.tb08450.x](https://doi.org/10.1111/j.1476-5381.1978.tb08450.x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [ODonnell_1978_potency](drugs/drug_rimiterol/pd_ODonnell_1978_potency.md) | potency ← rimiterol · stimulation effect | — | O'Donnell SR et al., An in vitro comparison of beta-adrenoce…, British journal of pharmaco… (1978) | [10.1111/j.1476-5381.1978.tb08450.x](https://doi.org/10.1111/j.1476-5381.1978.tb08450.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:18 | 0:19 | 0/0/0 | 0/1/0 | 0/0/0 | 5,304/557 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 04:20 | 0:15 | 0/0/0 | 0/1/0 | 0/0/0 | 6,065/1,791 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -49,9 +49,12 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Brès_1985 | irrelevant | 1 | 0 | Review article on beta-agonist metabolism mentioning rimiterol qualitatively with no PK parameters or numeric disposition values. |
-| PGx | George_1981 | not_relevant | 0 | 0 | Review of intestinal first-pass metabolism mentions rimiterol sulphate conjugation but no gene variant effect on PK/PD parameters. |
-| popPK | ODonnell_1978 | irrelevant | 0 | 0 | In vitro pharmacodynamic potency study on guinea-pig uterus; no pharmacokinetic disposition parameters for rimiterol. |
+| popPK | Brès_1985 | irrelevant | 0 | 0 | The paper is a qualitative review of metabolism mechanisms for beta-adrenergic agents and does not report quantitative pharmacokinetic parameters (CL, V, Ka, etc.) for rimiterol. |
+| PGx | Brès_1985 | not_relevant | 1 | 1 | The paper discusses the metabolism of rimiterol and mentions general interindividual variability due to genetic factors, but it does not report any specific gene variant or genotype associated with changes in rimiterol's PK or PD parameters. |
+| popPK | George_1981 | irrelevant | 0 | 0 | The paper is a general review of gastrointestinal drug metabolism that mentions rimiterol only as an example of a drug undergoing sulphate conjugation, without providing any quantitative pharmacokinetic parameters or disposition data. |
+| PGx | George_1981 | not_relevant | 0 | 0 | The text discusses general gastrointestinal drug metabolism and mentions rimiterol only as an example of a drug undergoing sulfate conjugation, without reporting any specific pharmacogenomic effects or gene variants influencing its PK or PD parameters. |
+| popPK | ODonnell_1978 | irrelevant | 0 | 0 | The study is an in vitro pharmacological assay comparing relative potency of beta-agonists, containing no pharmacokinetic parameters (CL, V, t1/2, etc.) for rimiterol. |
+| PGx | ODonnell_1978 | not_relevant | 0 | 0 | The paper reports in vitro pharmacological potency of rimiterol on guinea-pig uterus, not the effect of genetic variants on PK or PD parameters in humans. |
 
 
 </details>

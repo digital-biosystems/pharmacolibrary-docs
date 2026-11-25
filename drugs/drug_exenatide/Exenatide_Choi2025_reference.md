@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Exenatide model rejected because a peripheral compartment is unreachable from the dose, despite defined volumes and clearance.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Choi2025_reference" status="rejected" stale="false" population="" measured-compound="exenatide" parameterization="apparent" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Choi S, Seo J, Park S, Kim NY, Kim H, Lim HS. Population pharmacokinetics of efp
 
 ### Reviewer guidance
 
-**Exenatide model rejected because a peripheral compartment is unreachable from the dose, despite defined volumes and clearance.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The two-compartment structure defines a peripheral volume of 3.96 L, yet the model reports an unreachable compartment. This disconnect indicates the structural definition does not allow dose to reach the peripheral space. The record includes standard absorption and clearance parameters, but the topological flaw prevents valid simulation. Extracted — exenatide: CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
+Extracted — exenatide: CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q311: this record has 5.52, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

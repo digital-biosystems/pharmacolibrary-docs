@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Alfentanil's terminal half-life of 128 minutes contradicts the one-compartment model structure, and a reported unit could not be converted to standard SI units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min⁻¹ (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Lemmens1994_reference" status="rejected" stale="false" population="healthy adult male volunteers" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Lemmens HJ, Dyck JB, Shafer SL, Stanski DR. Pharmacokinetic-pharmacodynamic mode
 
 ### Reviewer guidance
 
-**Alfentanil's terminal half-life of 128 minutes contradicts the one-compartment model structure, and a reported unit could not be converted to standard SI units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min⁻¹ (1 / [time]) vs 1 / [time].**
 
-The record specifies a one-compartment structure but includes a terminal half-life parameter of 128 minutes, which implies a multi-compartment disposition. Furthermore, a unit used for a parameter could not be converted to standard SI units, preventing consistent dimensional validation of the model. Extracted — alfentanil: λ1 0.628 min⁻¹, kel 0.053 min⁻¹, t1/2γ 128 min, V 4.5 L, Vss 39.3 L, CL 0.483 L/min, tlag 0.96 min.
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — alfentanil: λ1 0.628 min⁻¹, kel 0.053 min⁻¹, t1/2γ 128 min, V 4.5 L, Vss 39.3 L, CL 0.483 L/min, tlag 0.96 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[c].parameter_id`: this record has Q900, the second reading Q75; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

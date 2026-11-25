@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs='[{"label":"Curator queue","href":"review/README.md"},{"label":"Quarantined models"}]'></div>
 
 
-## Quarantined models (200)
+## Quarantined models (195)
 
 The model was built but held back: its simulation failed a hard check.
 
@@ -10,11 +10,11 @@ The model was built but held back: its simulation failed a hard check.
 | [(S,E)-Zearalenone](/drugs/toxin_se_zearalenone/) | [Hamada_2026 · value_of_zen](/drugs/toxin_se_zearalenone/SEZearalenone_Hamada2026_value_of_zen.md) | model_quarantined | unchecked |
 | [(S,E)-Zearalenone](/drugs/toxin_se_zearalenone/) | [Hamada_2026 · value_of_zen_14_g](/drugs/toxin_se_zearalenone/SEZearalenone_Hamada2026_value_of_zen_14_g.md) | model_quarantined | unchecked |
 | [5-Hydroxy-L-tryptophan](/drugs/toxin_5_hydroxy_l_tryptophan/) | [Guan_2020 · reference](/drugs/toxin_5_hydroxy_l_tryptophan/D_5HydroxyLTryptophan_Guan2020_reference.md) | model_quarantined | unchecked |
+| [acalabrutinib](/drugs/drug_acalabrutinib/) | [Edlund_2019 · reference](/drugs/drug_acalabrutinib/Acalabrutinib_Edlund2019_reference.md) | model_quarantined | partial |
 | [Actinium-227](/drugs/toxin_actinium_227/) | [Sgouros_2021 · reference](/drugs/toxin_actinium_227/Actinium227_Sgouros2021_reference.md) | model_quarantined | unchecked |
 | [afatinib](/drugs/drug_afatinib/) | [Nakao_2019 · reference](/drugs/drug_afatinib/Afatinib_Nakao2019_reference.md) | model_quarantined | partial |
-| [albendazole](/drugs/drug_albendazole/) | [Li_2024 · reference](/drugs/drug_albendazole/Albendazole_Li2024_reference.md) | model_quarantined | unchecked |
 | [amoxicillin](/drugs/drug_amoxicillin/) | [Barker_2023 · benzylpenicillin](/drugs/drug_amoxicillin/Amoxicillin_Barker2023_benzylpenicillin.md) | model_quarantined | partial |
-| [amoxicillin](/drugs/drug_amoxicillin/) | [Barker_2023 · parameter_estimates_flucloxacillin_model](/drugs/drug_amoxicillin/Amoxicillin_Barker2023_parameter_estimates_flucloxacillin_mo.md) | model_quarantined | unchecked |
+| [amoxicillin](/drugs/drug_amoxicillin/) | [Barker_2023 · parameter_estimates_flucloxacillin_model](/drugs/drug_amoxicillin/Amoxicillin_Barker2023_parameter_estimates_flucloxacillin_mo.md) | model_quarantined | partial |
 | [amoxicillin](/drugs/drug_amoxicillin/) | [Keij_2023 · reference](/drugs/drug_amoxicillin/Amoxicillin_Keij2023_reference.md) | model_quarantined | confirmed |
 | [Antimony potassium tartrate](/drugs/toxin_antimony_potassium_tartrate/) | [Coelho_2025 · reference](/drugs/toxin_antimony_potassium_tartrate/AntimonyPotassiumTartrate_Coelho2025_reference.md) | model_quarantined | unchecked |
 | [Arsenic](/drugs/toxin_arsenic/) | [Zhang_2021 · reference](/drugs/toxin_arsenic/Arsenic_Zhang2021_reference.md) | model_quarantined | unchecked |
@@ -24,11 +24,10 @@ The model was built but held back: its simulation failed a hard check.
 | [Aspirin](/drugs/toxin_aspirin/) | [Sun_2020 · p](/drugs/toxin_aspirin/Aspirin_Sun2020_p.md) | model_quarantined | unchecked |
 | [Aspirin](/drugs/toxin_aspirin/) | [Zhang_2026 · aspirin_i_g](/drugs/toxin_aspirin/Aspirin_Zhang2026_aspirin_i_g.md) | model_quarantined | unchecked |
 | [Aspirin](/drugs/toxin_aspirin/) | [Zhang_2026 · aspirin_i_v](/drugs/toxin_aspirin/Aspirin_Zhang2026_aspirin_i_v.md) | model_quarantined | unchecked |
+| [atazanavir](/drugs/drug_atazanavir/) | [Kile_2012 · non_african](/drugs/drug_atazanavir/Atazanavir_Kile2012_non_african.md) | model_quarantined | partial |
+| [atazanavir](/drugs/drug_atazanavir/) | [Kile_2012 · reference](/drugs/drug_atazanavir/Atazanavir_Kile2012_reference.md) | model_quarantined | confirmed |
 | [azithromycin](/drugs/drug_azithromycin/) | [Methaneethorn_2025 · reference](/drugs/drug_azithromycin/Azithromycin_Methaneethorn2025_reference.md) | model_quarantined | partial |
 | [azlocillin](/drugs/drug_azlocillin/) | [Modr_1982 · reference](/drugs/drug_azlocillin/Azlocillin_Modr1982_reference.md) | model_quarantined | partial |
-| [belantamab mafodotin](/drugs/drug_belantamab_mafodotin/) | [Papathanasiou_2025 · adc_changeb](/drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Papathanasiou2025_adc_changeb.md) | model_quarantined | unchecked |
-| [belantamab mafodotin](/drugs/drug_belantamab_mafodotin/) | [Papathanasiou_2025 · covariate_valuesa](/drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Papathanasiou2025_covariate_valuesa.md) | model_quarantined | unchecked |
-| [belantamab mafodotin](/drugs/drug_belantamab_mafodotin/) | [Papathanasiou_2025 · cys_mcmmaf_changeb](/drugs/drug_belantamab_mafodotin/BelantamabMafodotin_Papathanasiou2025_cys_mcmmaf_changeb.md) | model_quarantined | unchecked |
 | [Beta-Aminopropionitrile](/drugs/toxin_beta_aminopropionitrile/) | [Sevil_1996 · reference](/drugs/toxin_beta_aminopropionitrile/BetaAminopropionitrile_Sevil1996_reference.md) | model_quarantined | partial |
 | [bevacizumab](/drugs/drug_bevacizumab/) | [Caulet_2016 · p_value_a](/drugs/drug_bevacizumab/Bevacizumab_Caulet2016_p_value_a.md) | model_quarantined | confirmed |
 | [camrelizumab](/drugs/drug_camrelizumab/) | [Shang_2022 · reference](/drugs/drug_camrelizumab/Camrelizumab_Shang2022_reference.md) | model_quarantined | partial |
@@ -36,12 +35,12 @@ The model was built but held back: its simulation failed a hard check.
 | [Cimetidine](/drugs/toxin_cimetidine/) | [Somogyi_1983 · reference](/drugs/toxin_cimetidine/Cimetidine_Somogyi1983_reference.md) | model_quarantined | partial |
 | [Citalopram](/drugs/toxin_citalopram/) | [Akil_2016 · reference](/drugs/toxin_citalopram/Citalopram_Akil2016_reference.md) | model_quarantined | unchecked |
 | [Clindamycin](/drugs/toxin_clindamycin/) | [Smith_2017 · reference](/drugs/toxin_clindamycin/Clindamycin_Smith2017_reference.md) | model_quarantined | confirmed |
-| [clopidogrel](/drugs/drug_clopidogrel/) | [Grafeneder_2024 · hv_2](/drugs/drug_clopidogrel/Clopidogrel_Grafeneder2024_hv_2.md) | model_quarantined | unchecked |
 | [Clozapine](/drugs/toxin_clozapine/) | [Reeves_2024 · age_exp_cl_fclozapine_parameter_estimates](/drugs/toxin_clozapine/Clozapine_Reeves2024_age_exp_cl_fclozapine_parameter_estimat.md) | model_quarantined | unchecked |
 | [Clozapine](/drugs/toxin_clozapine/) | [Reeves_2024 · base_base_model_parameter_estimates](/drugs/toxin_clozapine/Clozapine_Reeves2024_base_base_model_parameter_estimates.md) | model_quarantined | unchecked |
 | [Clozapine](/drugs/toxin_clozapine/) | [Reeves_2024 · ethnic_cl_fclozapine_parameter_estimates](/drugs/toxin_clozapine/Clozapine_Reeves2024_ethnic_cl_fclozapine_parameter_estimate.md) | model_quarantined | unchecked |
 | [Clozapine](/drugs/toxin_clozapine/) | [Reeves_2024 · smoke_cl_fclozapine_parameter_estimates](/drugs/toxin_clozapine/Clozapine_Reeves2024_smoke_cl_fclozapine_parameter_estimates.md) | model_quarantined | unchecked |
 | [Cobaltous chloride](/drugs/toxin_cobaltous_chloride/) | [Knych_2015 · reference](/drugs/toxin_cobaltous_chloride/CobaltousChloride_Knych2015_reference.md) | model_quarantined | unchecked |
+| [dasabuvir](/drugs/drug_dasabuvir/) | [Mensing_2016 · paritaprevir_r](/drugs/drug_dasabuvir/Dasabuvir_Mensing2016_paritaprevir_r.md) | model_quarantined | partial |
 | [Daunorubicin](/drugs/toxin_daunorubicin/) | [Thompson_2014 · reference](/drugs/toxin_daunorubicin/Daunorubicin_Thompson2014_reference.md) | model_quarantined | unchecked |
 | [Desloratadine](/drugs/toxin_desloratadine/) | [Zhang_2021 · reference](/drugs/toxin_desloratadine/Desloratadine_Zhang2021_reference.md) | model_quarantined | unchecked |
 | [Diclofenac](/drugs/toxin_diclofenac/) | [Kim_2021 · female](/drugs/toxin_diclofenac/Diclofenac_Kim2021_female.md) | model_quarantined | unchecked |
@@ -64,8 +63,6 @@ The model was built but held back: its simulation failed a hard check.
 | [flucytosine](/drugs/drug_flucytosine/) | [Vermes_2000 · reference](/drugs/drug_flucytosine/Flucytosine_Vermes2000_reference.md) | model_quarantined | confirmed |
 | [Flucytosine](/drugs/toxin_flucytosine/) | [Vermes_2000 · reference](/drugs/toxin_flucytosine/Flucytosine_Vermes2000_reference.md) | model_quarantined | unchecked |
 | [flumequine](/drugs/drug_flumequine/) | [Ziv_1986 · reference](/drugs/drug_flumequine/Flumequine_Ziv1986_reference.md) | model_quarantined | partial |
-| [fluorouracil](/drugs/drug_fluorouracil/) | [Deyme_2019 · mueller_22](/drugs/drug_fluorouracil/Fluorouracil_Deyme2019_mueller_22.md) | model_quarantined | unchecked |
-| [fluorouracil](/drugs/drug_fluorouracil/) | [Deyme_2019 · terret_23](/drugs/drug_fluorouracil/Fluorouracil_Deyme2019_terret_23.md) | model_quarantined | unchecked |
 | [fluorouracil](/drugs/drug_fluorouracil/) | [Tan_2026 · briki_202411](/drugs/drug_fluorouracil/Fluorouracil_Tan2026_briki_202411.md) | model_quarantined | confirmed |
 | [fluorouracil](/drugs/drug_fluorouracil/) | [Tan_2026 · terret_20008](/drugs/drug_fluorouracil/Fluorouracil_Tan2026_terret_20008.md) | model_quarantined | confirmed |
 | [fluorouracil](/drugs/drug_fluorouracil/) | [Tan_2026 · van_kuilenburg_201210](/drugs/drug_fluorouracil/Fluorouracil_Tan2026_van_kuilenburg_201210.md) | model_quarantined | confirmed |
@@ -102,21 +99,22 @@ The model was built but held back: its simulation failed a hard check.
 | [gentamicin](/drugs/drug_gentamicin/) | [Albanell-Fernández_2025 · touw_et_al_2001_28](/drugs/drug_gentamicin/Gentamicin_AlbanellFernndez2025_touw_et_al_2001_28.md) | model_quarantined | partial |
 | [gentamicin](/drugs/drug_gentamicin/) | [Albanell-Fernández_2025 · tseng_et_al_2018_49](/drugs/drug_gentamicin/Gentamicin_AlbanellFernndez2025_tseng_et_al_2018_49.md) | model_quarantined | partial |
 | [gentamicin](/drugs/drug_gentamicin/) | [Albanell-Fernández_2025 · zhao_et_al_2013_44](/drugs/drug_gentamicin/Gentamicin_AlbanellFernndez2025_zhao_et_al_2013_44.md) | model_quarantined | partial |
-| [glibenclamide](/drugs/drug_glibenclamide/) | [Rambiritch_2016_2 · final_final_two_compartment_model_estimate](/drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_final_final_two_compartment_m.md) | model_quarantined | unchecked |
+| [glibenclamide](/drugs/drug_glibenclamide/) | [Rambiritch_2016_2 · final_final_two_compartment_model_estimate](/drugs/drug_glibenclamide/Glibenclamide_Rambiritch2016v2_final_final_two_compartment_m.md) | model_quarantined | confirmed |
 | [Heparin](/drugs/toxin_heparin/) | [Jia_2015 · reference](/drugs/toxin_heparin/Heparin_Jia2015_reference.md) | model_quarantined | unchecked |
 | [Heptanoic acid](/drugs/toxin_heptanoic_acid/) | [Lee_2022 · reference](/drugs/toxin_heptanoic_acid/HeptanoicAcid_Lee2022_reference.md) | model_quarantined | unchecked |
 | [Hydromorphone](/drugs/toxin_hydromorphone/) | [Gao_2026 · reference](/drugs/toxin_hydromorphone/Hydromorphone_Gao2026_reference.md) | model_quarantined | confirmed |
 | [Hydromorphone](/drugs/toxin_hydromorphone/) | [Parab_1988 · reference](/drugs/toxin_hydromorphone/Hydromorphone_Parab1988_reference.md) | model_quarantined | confirmed |
-| [iloperidone](/drugs/drug_iloperidone/) | [Pei_2016 · estimate](/drugs/drug_iloperidone/Iloperidone_Pei2016_estimate.md) | model_quarantined | confirmed |
 | [Imipenem](/drugs/toxin_imipenem/) | [Bhagunde_2019 · final_relebactam_final_model_estimate_rse_b](/drugs/toxin_imipenem/Imipenem_Bhagunde2019_final_relebactam_final_model_estimate.md) | model_quarantined | unchecked |
 | [Imipenem](/drugs/toxin_imipenem/) | [Bhagunde_2019 · relebactam_bootstrapa_estimate_rse_b](/drugs/toxin_imipenem/Imipenem_Bhagunde2019_relebactam_bootstrapa_estimate_rse_b.md) | model_quarantined | unchecked |
 | [Imipenem](/drugs/toxin_imipenem/) | [Patel_2022 · relebactam_nonmem_estimate_b_rse_d](/drugs/toxin_imipenem/Imipenem_Patel2022_relebactam_nonmem_estimate_b_rse_d.md) | model_quarantined | unchecked |
 | [Imipenem](/drugs/toxin_imipenem/) | [Rao_2025 · reference](/drugs/toxin_imipenem/Imipenem_Rao2025_reference.md) | model_quarantined | unchecked |
+| [istradefylline](/drugs/drug_istradefylline/) | [Knebel_2011 · reference](/drugs/drug_istradefylline/Istradefylline_Knebel2011_reference.md) | model_quarantined | confirmed |
 | [L-Serine](/drugs/toxin_l_serine/) | [Lee_2022 · reference](/drugs/toxin_l_serine/LSerine_Lee2022_reference.md) | model_quarantined | unchecked |
 | [Lamotrigine](/drugs/toxin_lamotrigine/) | [Zhang_2017 · reference](/drugs/toxin_lamotrigine/Lamotrigine_Zhang2017_reference.md) | model_quarantined | unchecked |
 | [Letrozole](/drugs/toxin_letrozole/) | [Tanii_2011 · reference](/drugs/toxin_letrozole/Letrozole_Tanii2011_reference.md) | model_quarantined | unchecked |
 | [Levetiracetam](/drugs/toxin_levetiracetam/) | [Bilbao-Meseguer_2021 · base](/drugs/toxin_levetiracetam/Levetiracetam_BilbaoMeseguer2021_base.md) | model_quarantined | unchecked |
 | [Levetiracetam](/drugs/toxin_levetiracetam/) | [Bilbao-Meseguer_2021 · final](/drugs/toxin_levetiracetam/Levetiracetam_BilbaoMeseguer2021_final.md) | model_quarantined | unchecked |
+| [lithium](/drugs/drug_lithium/) | [Yu_2016 · reference](/drugs/drug_lithium/Lithium_Yu2016_reference.md) | model_quarantined | confirmed |
 | [magnesium sulfate](/drugs/drug_magnesium_sulfate/) | [Du_2019 · reference](/drugs/drug_magnesium_sulfate/MagnesiumSulfate_Du2019_reference.md) | model_quarantined | partial |
 | [Magnesium Sulfate](/drugs/toxin_magnesium_sulfate/) | [Deng_2024 · reference](/drugs/toxin_magnesium_sulfate/MagnesiumSulfate_Deng2024_reference.md) | model_quarantined | unchecked |
 | [Mazindol](/drugs/toxin_mazindol/) | [Konofal_2014 · basic_model_parameter_estimate](/drugs/toxin_mazindol/Mazindol_Konofal2014_basic_model_parameter_estimate.md) | model_quarantined | unchecked |
@@ -186,8 +184,8 @@ The model was built but held back: its simulation failed a hard check.
 | [Sodium arsenite](/drugs/toxin_sodium_arsenite/) | [Ravandi_2025 · sy_2101_oral_fed_treatment_median](/drugs/toxin_sodium_arsenite/SodiumArsenite_Ravandi2025_sy_2101_oral_fed_treatment_median.md) | model_quarantined | unchecked |
 | [sunitinib](/drugs/drug_sunitinib/) | [Valderrama_2025 · reference](/drugs/drug_sunitinib/Sunitinib_Valderrama2025_reference.md) | model_quarantined | partial |
 | [Tacrolimus](/drugs/toxin_tacrolimus/) | [Cao_2026 · reference](/drugs/toxin_tacrolimus/Tacrolimus_Cao2026_reference.md) | model_quarantined | confirmed |
+| [tafenoquine](/drugs/drug_tafenoquine/) | [Charles_2007 · reference](/drugs/drug_tafenoquine/Tafenoquine_Charles2007_reference.md) | model_quarantined | partial |
 | [talazoparib](/drugs/drug_talazoparib/) | [Guo_2022 · estimate](/drugs/drug_talazoparib/Talazoparib_Guo2022_estimate.md) | model_quarantined | partial |
-| [tenofovir disoproxil](/drugs/drug_tenofovir_disoproxil/) | [Bouazza_2011 · reference](/drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Bouazza2011_reference.md) | model_quarantined | confirmed |
 | [Thiamine](/drugs/toxin_thiamine/) | [Sheng_2021 · mad_150_mg_day_10](/drugs/toxin_thiamine/Thiamine_Sheng2021_mad_150_mg_day_10.md) | model_quarantined | unchecked |
 | [Thiamine](/drugs/toxin_thiamine/) | [Sheng_2021 · mad_300_mg_day_10](/drugs/toxin_thiamine/Thiamine_Sheng2021_mad_300_mg_day_10.md) | model_quarantined | unchecked |
 | [Thiamine](/drugs/toxin_thiamine/) | [Sheng_2021 · sad_150_mg](/drugs/toxin_thiamine/Thiamine_Sheng2021_sad_150_mg.md) | model_quarantined | unchecked |
@@ -200,10 +198,7 @@ The model was built but held back: its simulation failed a hard check.
 | [Tramadol](/drugs/toxin_tramadol/) | [Long_2022 · p_o_19](/drugs/toxin_tramadol/Tramadol_Long2022_p_o_19.md) | model_quarantined | unchecked |
 | [Tramadol](/drugs/toxin_tramadol/) | [Long_2022 · p_o_7](/drugs/toxin_tramadol/Tramadol_Long2022_p_o_7.md) | model_quarantined | unchecked |
 | [Tramadol](/drugs/toxin_tramadol/) | [Nordmeier_2021 · reference](/drugs/toxin_tramadol/Tramadol_Nordmeier2021_reference.md) | model_quarantined | unchecked |
+| [triazolam](/drugs/drug_triazolam/) | [Okada_2024 · reference](/drugs/drug_triazolam/Triazolam_Okada2024_reference.md) | model_quarantined | partial |
 | [Trimipramine](/drugs/toxin_trimipramine/) | [Ochs_1985 · reference](/drugs/toxin_trimipramine/Trimipramine_Ochs1985_reference.md) | model_quarantined | unchecked |
-| [triptorelin](/drugs/drug_triptorelin/) | [Müller_1997 · group_i](/drugs/drug_triptorelin/Triptorelin_Mller1997_group_i.md) | model_quarantined | unchecked |
-| [triptorelin](/drugs/drug_triptorelin/) | [Müller_1997 · group_ii](/drugs/drug_triptorelin/Triptorelin_Mller1997_group_ii.md) | model_quarantined | unchecked |
-| [triptorelin](/drugs/drug_triptorelin/) | [Müller_1997 · group_iii](/drugs/drug_triptorelin/Triptorelin_Mller1997_group_iii.md) | model_quarantined | unchecked |
-| [triptorelin](/drugs/drug_triptorelin/) | [Müller_1997 · group_iv](/drugs/drug_triptorelin/Triptorelin_Mller1997_group_iv.md) | model_quarantined | unchecked |
 | [vinblastine](/drugs/drug_vinblastine/) | [Nelson_1982 · reference](/drugs/drug_vinblastine/Vinblastine_Nelson1982_reference.md) | model_quarantined | confirmed |
 | [Vindesine](/drugs/toxin_vindesine/) | [Owellen_1977 · reference](/drugs/toxin_vindesine/Vindesine_Owellen1977_reference.md) | model_quarantined | unchecked |

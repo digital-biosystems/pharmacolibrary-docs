@@ -5,11 +5,11 @@
 
 # Dimethyltryptamine — `Dimethyltryptamine_Eckerns2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:08 UTC (Rejected), but the paper was screened again on 2026-10-22 09:04 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The model was rejected because the terminal half-life unit, hours, could not be converted to a standard metric time unit.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit m ([length]) vs [length] ** 3 / [time]; Q61 unit m ([length]) vs [length] ** 3.
 
-<div class="pk-model-meta" hidden drug="Dimethyltryptamine" model-id="Dimethyltryptamine_Eckerns2022_reference" status="rejected" stale="true" population="healthy adults" measured-compound="dimethyltryptamine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="Dimethyltryptamine" model-id="Dimethyltryptamine_Eckerns2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="dimethyltryptamine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Eckernäs E, Timmermann C, Carhart-Harris R, Röshammar D, Ashton M. Population pharmacokinetic/pharmacodynamic modeling of the psychedelic experience induced by N,N-dimethyltryptamine - Implications for dose considerations. Clinical and translational science 15(12):2928–2937 (2022).
@@ -44,7 +44,7 @@ Eckernäs E, Timmermann C, Carhart-Harris R, Röshammar D, Ashton M. Population 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.647). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +54,13 @@ Eckernäs E, Timmermann C, Carhart-Harris R, Röshammar D, Ashton M. Population 
 
 ### Reviewer guidance
 
-**The model was rejected because the terminal half-life unit, hours, could not be converted to a standard metric time unit.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit m ([length]) vs [length] ** 3 / [time]; Q61 unit m ([length]) vs [length] ** 3.**
 
-The terminal elimination phase half-life for dimethyltryptamine is recorded as 2.87 h. The review found this time unit incompatible with the required standard metric format for this parameter. This prevented the calculation of a valid standard international value for the half-life. Extracted — dimethyltryptamine: CL 26 L/min, Q 2.99 L/min, V1 221 L, V2 59 L, t1/2γ 2.87 h, kabs 0.0748 min − 1; indole 3-acetic acid: CL 0.093 m, V 9.55 m.
+A reported unit could not be converted (CL and V), so that value has no SI equivalent. Extracted — dimethyltryptamine: CL 26 L/min, Q 2.99 L/min, V1 221 L, V2 59 L, t1/2γ 2.87 h, kabs 0.0748 min − 1; indole 3-acetic acid: CL 0.093 m, V 9.55 m.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has dimethyltryptamine → indole 3-acetic acid (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -100,6 +102,32 @@ The terminal elimination phase half-life for dimethyltryptamine is recorded as 2
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.647 (11/17 fields) | 6 |
+
+<details><summary>6 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['dimethyltryptamine', 'indole 3-acetic acid', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl(m)]` | 0.093 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a-m]` | 0.0748 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v(m)]` |  | 9.55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v(m)]` | 9.55 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[γ]` | 2.87 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

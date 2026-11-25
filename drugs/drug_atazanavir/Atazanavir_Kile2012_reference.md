@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;atazanavir&quot;,&quot;href&quot;:&quot;drugs/drug_atazanavir/&quot;},{&quot;label&quot;:&quot;Kile_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atazanavir_Goutelle2013_reference&quot;,&quot;label&quot;:&quot;Goutelle_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atazanavir/Atazanavir_Goutelle2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atazanavir_Savic2012_reference&quot;,&quot;label&quot;:&quot;Savic_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atazanavir/Atazanavir_Savic2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Atazanavir's volume of distribution and absorption lag time were left at default placeholder values, causing the model to be quarantined.
+> No value for atazanavir's volume of distribution and absorption lag time; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="atazanavir" model-id="Atazanavir_Kile2012_reference" status="model_quarantined" stale="false" population="HIV-negative healthy volunteers" measured-compound="atazanavir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="atazanavir" model-id="Atazanavir_Kile2012_reference" status="model_quarantined" stale="false" population="HIV-negative adults" measured-compound="atazanavir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kile DA, MaWhinney S, Aquilante CL, Rower JE, Castillo-Mancilla JR, Anderson PL. A population pharmacokinetic-pharmacogenetic analysis of atazanavir. AIDS research and human retroviruses 28(10):1227–1234 (2012).
@@ -17,7 +17,7 @@ Kile DA, MaWhinney S, Aquilante CL, Rower JE, Castillo-Mancilla JR, Anderson PL.
 
 ## Population and dosing
 
-**Population:** HIV-negative healthy volunteers · condition healthy · age group adult · n = 30.
+**Population:** HIV-negative adults · condition healthy · age group adult.
 
 **Dosing:** 300, 400 mg, oral, multiple, every 24 h.
 
@@ -40,7 +40,7 @@ Kile DA, MaWhinney S, Aquilante CL, Rower JE, Castillo-Mancilla JR, Anderson PL.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +50,13 @@ Kile DA, MaWhinney S, Aquilante CL, Rower JE, Castillo-Mancilla JR, Anderson PL.
 
 ### Reviewer guidance
 
-**Atazanavir's volume of distribution and absorption lag time were left at default placeholder values, causing the model to be quarantined.**
+**No value for atazanavir's volume of distribution and absorption lag time; t6_deviations.**
 
-The record explicitly lists volume of distribution and Tlag as defaulted parameters rather than estimated values. Consequently, the model was held back from publication to avoid using unverified library placeholders. A second reader also failed to confirm the extracted parameter values for clearance, volume, and absorption rate. Extracted — atazanavir: CL/F 16.7 liters/h, V2/F 32.2 liters, Q/F 7.29 liters/h, kabs 0.394 h -1.
+The model was built, but atazanavir's volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — atazanavir: CL/F 16.7 liters/h, V2/F 32.2 liters, Q/F 7.29 liters/h, kabs 0.394 h -1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atazanavir, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -75,6 +75,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
+- column 'single nucleotide polymorphism' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'CYP3A5 (CYP3A5)' — extend the ontology if this is a real PK parameter (source ['Kile_2012_table_1:row1:col1'])
 - salvaged Q27 ('CL/F'=16.7) from results prose — parameter table was unreadable
 - salvaged Q82 ('V2/F'=32.2) from results prose — parameter table was unreadable
 - salvaged Q69 ('Q/F'=7.29) from results prose — parameter table was unreadable
@@ -83,33 +85,30 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- base model from table(s) without population columns (Kile_2012:other_prose, Kile_2012_table_1); populations african-, non-african- kept as separate records
+
+**Extraction notes:**
+- table tab_3: no_numeric_grid
+- final table tab_3: no supported point estimates; targeted recovery unresolved
+- table Kile_2012_table_1: missing_label
+- table Kile_2012_table_1: unknown_column_role
+- companion parameter table 1 transcribed (1 record(s))
+- table Kile_2012_table_2: unknown_column_role
+- table Kile_2012_table_2: ragged_grid
+- table Kile_2012_table_2: unparsed_numeric_cell
+- companion parameter table 2 transcribed (58 record(s))
+- LLM selected parameter table(s) 1, 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
 
-<details><summary>10 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl/f]` | 16.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` |  | 16.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k a]` | 0.394 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k a]` |  | 0.394 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q/f]` | 7.29 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q/f]` |  | 7.29 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v2/f]` | 32.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v2/f]` |  | 32.2 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | atazanavir | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | atazanavir | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -140,7 +139,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -174,4 +173,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Batazanavir%5D%20Atazanavir_Kile2012_reference&body=Drug%3A%20atazanavir%0ARecord%3A%20Atazanavir_Kile2012_reference%0APaper%3A%20Kile_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_atazanavir/Atazanavir_Kile2012_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:20 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:50 UTC</sub>

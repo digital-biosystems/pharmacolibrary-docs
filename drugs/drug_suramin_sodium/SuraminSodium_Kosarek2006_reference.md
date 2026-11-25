@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;suramin sodium&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/&quot;},{&quot;label&quot;:&quot;Kosarek_2006 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SuraminSodium_Kosarek2006_reference&quot;,&quot;label&quot;:&quot;Kosarek_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;SuraminSodium_Motzer1992_reference&quot;,&quot;label&quot;:&quot;Motzer_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Motzer1992_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SuraminSodium_Naviaux2017_reference&quot;,&quot;label&quot;:&quot;Naviaux_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Naviaux2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SuraminSodium_Kosarek2006_reference&quot;,&quot;label&quot;:&quot;Kosarek_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The record was held for review because the second reader could not confirm the extracted suramin clearance and volume of distribution values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="suramin sodium" model-id="SuraminSodium_Kosarek2006_reference" status="needs_review" stale="false" population="dogs with naturally occurring cancers" measured-compound="suramin" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Kosarek CE, Hu X, Couto CG, Kisseberth WC, Green EM, Au JL et al. Phase I evalua
 
 ## Population and dosing
 
-**Population:** dogs with naturally occurring cancers · condition cancer · age group adult · n = 16.
+**Population:** dogs with naturally occurring cancers · condition cancer · age group adult.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -50,13 +50,13 @@ Kosarek CE, Hu X, Couto CG, Kisseberth WC, Green EM, Au JL et al. Phase I evalua
 
 ### Reviewer guidance
 
-**The record was held for review because the second reader could not confirm the extracted suramin clearance and volume of distribution values.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader disagreed on the dose compound and primary analyte, marking them as unknown. Additionally, the second reader found no values for clearance and distribution volume in the record, whereas they appeared in the second reader's own review. Extracted — suramin sodium: V 0.34 L/kg, CL 1.86 mL/kg/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — suramin sodium: V 0.34 L/kg, CL 1.86 mL/kg/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has suramin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has suramin, the second reading suramin sodium; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -75,8 +75,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=suramin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Kosarek_2006_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
@@ -84,7 +82,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -98,8 +96,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[clearance]` |  | 1.86 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[distribution volume]` | 0.34 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[distribution volume]` |  | 0.34 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | suramin | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | suramin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | suramin | suramin sodium | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | suramin | suramin sodium | mismatch |
 
 </details>
 
@@ -133,7 +131,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -149,7 +147,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference/SuraminSodium_Kosarek2006_reference_modelica.zip" download>SuraminSodium_Kosarek2006_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference/SuraminSodium_Kosarek2006_reference_modelica.zip" download>SuraminSodium_Kosarek2006_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference/SuraminSodium_Kosarek2006_reference_fmi.zip" download>SuraminSodium_Kosarek2006_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference/SuraminSodium_Kosarek2006_reference_matlab.zip" download>SuraminSodium_Kosarek2006_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference/SuraminSodium_Kosarek2006_reference_matlab_simbio.zip" download>SuraminSodium_Kosarek2006_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -211,4 +209,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsuramin_sodium%5D%20SuraminSodium_Kosarek2006_reference&body=Drug%3A%20suramin_sodium%0ARecord%3A%20SuraminSodium_Kosarek2006_reference%0APaper%3A%20Kosarek_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 09:31 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 07:10 UTC</sub>

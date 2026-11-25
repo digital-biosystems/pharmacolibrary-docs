@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The intercompartmental clearance of 62.0 L/h/70 kg for clarithromycin was disputed, and the second reader failed to extract a value for it.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="clarithromycin" model-id="Clarithromycin_Shah2025_reference" status="needs_review" stale="false" population="critically ill adults" measured-compound="clarithromycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Shah RV, Kipper K, Baker EH, Barker CIS, Oldfield I, Davidson HC et al. Intraven
 
 ### Reviewer guidance
 
-**The intercompartmental clearance of 62.0 L/h/70 kg for clarithromycin was disputed, and the second reader failed to extract a value for it.**
+**cross_check_disputed; x1_cross_check.**
 
-A second reader disagreed with the extracted intercompartmental clearance, returning no value instead of the recorded 62.0 L/h/70 kg. Additionally, the second reader identified a volume of distribution of 60.6 L/70 kg that was absent from the current record. The overall agreement between readers was 0.727, with zero agreement on the specific parameter values. Extracted — clarithromycin: CL 8.17 L/h/70 kg, V 25.7 L/70 kg, Q 62 L/h/70 kg.
+Extracted — clarithromycin: CL 8.17 L/h/70 kg, V 25.7 L/70 kg, Q 62 L/h/70 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θq: this record has 62.0, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | cross-check disputed by a second reader: verdict disputed, agreement 0.727, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.727 | cross-check contradicted by a second reader: verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

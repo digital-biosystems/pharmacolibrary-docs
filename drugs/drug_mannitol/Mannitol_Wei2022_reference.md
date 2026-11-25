@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper models vancomycin pharmacokinetics, not mannitol.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="mannitol" model-id="Mannitol_Wei2022_reference" status="rejected" stale="false" population="" measured-compound="mannitol" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Wei S, Zhang D, Zhao Z, Mei S. Population pharmacokinetic model of vancomycin in
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper models vancomycin pharmacokinetics, not mannitol.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-Mannitol is included in the record only as a covariate affecting vancomycin clearance, not as the primary measured compound. The extracted values for mannitol clearance (7.98 L/h) and volume of distribution (60.2 L) are therefore not from a mannitol model. The paper subject check identified the study as modeling another drug rather than mannitol. Extracted — mannitol: CL 7.98 L/h, V 60.2 L.
+Extracted — mannitol: CL 7.98 L/h, V 60.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q88: this record has none, the second reading 400. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -121,7 +121,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.857 (6 of 7 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Fentanyl's bioavailability was left without an extracted value, so the record was held back because it relied on a generic placeholder.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Ariano2001_young" status="needs_review" stale="false" population="healthy young and elderly volunteers" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Ariano RE, Duke PC, Sitar DS. Population pharmacokinetics of fentanyl in healthy
 
 ### Reviewer guidance
 
-**Fentanyl's bioavailability was left without an extracted value, so the record was held back because it relied on a generic placeholder.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists clearance, volumes, and absorption constants but does not provide a numerical estimate for bioavailability (F). Instead, a generic library placeholder was used rather than a value derived from the study. These values affect the simulated profile but are not supported by the paper, meaning the parameter lacks explicit justification. Extracted — fentanyl: CL 1.83 L/kg/h, Q 3.18 L/kg/h, V1 1.21 L/kg, V2 1.71 L/kg, kabs 0.27 minute -1, tlag 15 min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — fentanyl: CL 1.83 L/kg/h, Q 3.18 L/kg/h, V1 1.21 L/kg, V2 1.71 L/kg, kabs 0.27 minute -1, tlag 15 min.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -22,8 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lüllmann-Rauch_1995_35S_GAG_storage](drugs/drug_tilorone/pd_L_llmann_Rauch_1995_35S_GAG_storage.md) | intracellular accumulation of 35S-GAGs ← tilorone · stimulation effect | — | Lüllmann-Rauch R et al., Tilorone-induced lysosomal storage of s…, Biochemical pharmacology (1995) | [10.1016/0006-2952(95)00042-x](https://doi.org/10.1016/0006-2952(95)00042-x) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lüllmann-Rauch_1995_beta_hexosaminidase_release](drugs/drug_tilorone/pd_L_llmann_Rauch_1995_beta_hexosaminidase_release.md) | release of beta-hexosaminidase (enhanced secretion) ← tilorone · stimulation effect | — | Lüllmann-Rauch R et al., Tilorone-induced lysosomal storage of s…, Biochemical pharmacology (1995) | [10.1016/0006-2952(95)00042-x](https://doi.org/10.1016/0006-2952(95)00042-x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2020_CPE](drugs/drug_tilorone/pd_Yang_2020_CPE.md) | cytopathic effects ← Tilorone (dihydrochloride) · inhibition effect | — | Yang CW et al., Repurposing old drugs as antiviral agen…, Biomedical journal (2020) | [10.1016/j.bj.2020.05.003](https://doi.org/10.1016/j.bj.2020.05.003) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yang_2020_nucleocapsid_proteins](drugs/drug_tilorone/pd_Yang_2020_nucleocapsid_proteins.md) | nucleocapsid proteins ← Tilorone (dihydrochloride) · inhibition effect | — | Yang CW et al., Repurposing old drugs as antiviral agen…, Biomedical journal (2020) | [10.1016/j.bj.2020.05.003](https://doi.org/10.1016/j.bj.2020.05.003) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:36 | 0:17 | 0/0/0 | 0/2/0 | 0/0/0 | 22,938/910 | ollama / glm-5.3-flash | 3 | 1/2 | 3/0 | 0 |
+| 2026-11-24 05:50 | 0:03 | 0/0/0 | 0/2/0 | 0/0/0 | 4,274/169 | einfracz / qwen3.8-27b | 3 | 1/2 | 3/0 | 0 |
 
 ## Coverage
 
@@ -51,11 +51,15 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Anantpadma_2019 | irrelevant | 0 | 0 | This is an in vitro antiviral drug-screening/machine-learning study; tilorone is only a test compound with EC50 values, no PK disposition parameters. |
-| popPK | Briggs_2008 | irrelevant | 0 | 0 | In vitro pharmacology study of receptor binding/activation; no PK disposition parameters for tilorone. |
+| popPK | Briggs_2008 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic activity of tilorone as a nicotinic acetylcholine receptor agonist in vitro, not on pharmacokinetic disposition parameters. |
+| PGx | Briggs_2008 | not_relevant | 0 | 0 | The paper characterizes the pharmacological activity of tilorone as an alpha7 nAChR agonist but does not report any pharmacogenomic effects (gene variant impacts) on PK or PD parameters. |
 | popPK | Hamburg_1978 | irrelevant | 0 | 0 | This is a macrophage phagocytosis/interferon-induction study in mice; tilorone is only a co-administered inducer with no PK disposition parameters reported. |
-| popPK | Handrock_1992 | irrelevant | 0 | 0 | In-vitro cell culture study of lysosomal storage with tilorone only as a reference compound; no PK parameters reported. |
-| popPK | Lüllmann-Rauch_1995 | irrelevant | 0 | 0 | In-vitro cell-culture mechanistic study of lysosomal storage with no PK disposition parameters for tilorone. |
-| popPK | Yang_2020 | irrelevant | 0 | 0 | This is an in-vitro antiviral drug screening study; tilorone is only one of 252 screened compounds with EC50 values, and no pharmacokinetic parameters (CL, V, ka, half-life, PK model) are reported. |
+| popPK | Handrock_1992 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of lysosomal storage of glycosaminoglycans by acridine derivatives, not a pharmacokinetic study reporting disposition parameters for tilorone. |
+| PGx | Handrock_1992 | not_relevant | 0 | 0 | The paper investigates the toxicological mechanism of lysosomal storage in cultured cells and does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Lüllmann-Rauch_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation into lysosomal side effects (GAG storage and enzyme release) in bovine fibroblasts, reporting no pharmacokinetic parameters. |
+| PGx | Lüllmann-Rauch_1995 | not_relevant | 0 | 0 | The study examines the mechanism of a drug side effect (lysosomal storage) in cultured cells and does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Yang_2020 | irrelevant | 0 | 0 | This is an in-vitro antiviral screening study reporting EC50 values, not a pharmacokinetic study with disposition parameters. |
+| PGx | Yang_2020 | not_relevant | 0 | 0 | The paper reports in vitro antiviral activity of tilorone against coronaviruses, but does not mention any pharmacogenomic variants or their effects on PK/PD parameters. |
 
 
 </details>

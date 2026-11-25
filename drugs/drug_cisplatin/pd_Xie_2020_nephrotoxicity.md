@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;cisplatin&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/&quot;},{&quot;label&quot;:&quot;Xie_2020 \u00b7 PD nephrotoxicity&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Imbs2016_reference&quot;,&quot;label&quot;:&quot;Imbs_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Imbs2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mody_2022_R&quot;,&quot;label&quot;:&quot;Mody_2022 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/pd_Mody_2022_R.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mody_2022_R&quot;,&quot;label&quot;:&quot;Mody_2022 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/pd_Mody_2022_R.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# nephrotoxicity — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
+# nephrotoxicity — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--neutral" title="gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -35,17 +35,17 @@ Xie F et al., PKPD Modeling and Dosing Considerations…, The AAPS journal (2020
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | B 1\|0 | `Q344` ·  | -7.67 |  | llm | Xie_2020:pdv3 |
-| PD (effect) | B 2\|0 | `Q344` ·  | -2.64 |  | llm | Xie_2020:pdv3 |
-| PD (effect) | B 1\|1 | `Q344` ·  | -3.22 |  | llm | Xie_2020:pdv3 |
-| PD (effect) | B 2\|1 | `Q344` ·  | -2.86 |  | llm | Xie_2020:pdv3 |
-| PD (effect) | B 1\|2 | `Q344` ·  | 11.0 |  | llm | Xie_2020:pdv3 |
-| PD (effect) | B 2\|2 | `Q344` ·  | -14.1 |  | llm | Xie_2020:pdv3 |
-| PD (effect) | B ≥3\|2 | `Q344` ·  | -1.21 |  | llm | Xie_2020:pdv3 |
-| PD (effect) | B 2\|≥3 | `Q344` ·  | -5.45 |  | llm | Xie_2020:pdv3 |
-| PD (effect) | E max | `Q320` ·  | 344 |  | llm | Xie_2020:pdv3 |
-| PD (effect) | EC 50 | `Q321` ·  | 0.433 | μg/ml | llm | Xie_2020:pdv3 |
-| PD (effect) | K IN | `Q327` ·  | 0.00694 | 1•h -1 | llm | Xie_2020:pdv3 |
+| PD (effect) | E_max | `Q320` ·  | 344 |  | llm | Xie_2020:pdv3 |
+| PD (effect) | EC_50 | `Q321` ·  | 0.433 | μg/ml | llm | Xie_2020:pdv3 |
+| PD (effect) | K_IN | `Q327` ·  | 0.00694 | 1•h^-1 | llm | Xie_2020:pdv3 |
+| — | B 1\|0 | `Q100` ·  | -7.67 |  | nil | Xie_2020:pdv3 |
+| — | B 2\|0 | `Q100` ·  | -2.64 |  | nil | Xie_2020:pdv3 |
+| — | B 1\|1 | `Q100` ·  | -3.22 |  | nil | Xie_2020:pdv3 |
+| — | B 2\|1 | `Q100` ·  | -2.86 |  | nil | Xie_2020:pdv3 |
+| — | B 1\|2 | `Q100` ·  | 11.0 |  | nil | Xie_2020:pdv3 |
+| — | B 2\|2 | `Q100` ·  | -14.1 |  | nil | Xie_2020:pdv3 |
+| — | B ≥3\|2 | `Q100` ·  | -1.21 |  | nil | Xie_2020:pdv3 |
+| — | B 2\|≥3 | `Q100` ·  | -5.45 |  | nil | Xie_2020:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -88,21 +88,14 @@ Advisory:
 - defaulted: E0 — a row the paper has and the record lacks
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
 
-<details><summary>2 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[Q344]` | -5.45 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q900]` |  | -5.45 | only_one_extracted |
-
-</details>
+_No second reader extracted anything for this PD record; it is not cross-checked._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -116,7 +109,7 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cisplatin/Cisplatin_Xie2020_PD_nephrotoxicity/Cisplatin_Xie2020_PD_nephrotoxicity_modelica.zip" download>Cisplatin_Xie2020_PD_nephrotoxicity_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cisplatin/Cisplatin_Xie2020_PD_nephrotoxicity/Cisplatin_Xie2020_PD_nephrotoxicity_modelica.zip" download>Cisplatin_Xie2020_PD_nephrotoxicity_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cisplatin/Cisplatin_Xie2020_PD_nephrotoxicity/Cisplatin_Xie2020_PD_nephrotoxicity_matlab.zip" download>Cisplatin_Xie2020_PD_nephrotoxicity_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>

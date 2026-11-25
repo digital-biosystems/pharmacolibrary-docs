@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The parent–metabolite structure for cefotaxime is invalid because the model lacks the metabolite compartment and links.
+> T3_output_variable; t3_topology_template (+1 more).
 
 <div class="pk-model-meta" hidden drug="cefotaxime" model-id="Cefotaxime_Branger2018_reference" status="rejected" stale="false" population="critically ill children" measured-compound="cefotaxime" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -49,13 +49,13 @@ Béranger A, Oualha M, Urien S, Genuini M, Renolleau S, Aboura R et al. Populati
 
 ### Reviewer guidance
 
-**The parent–metabolite structure for cefotaxime is invalid because the model lacks the metabolite compartment and links.**
+**T3_output_variable; t3_topology_template (+1 more).**
 
-The record defines a parent–metabolite structure but omits the metabolite's compartment and elimination clearance, leaving the model structurally incomplete. Only parent drug parameters (clearance 0.97 L/h, volume 0.3 L/kg) were extracted from the abstract. A second reader disputed the extraction, confirming the missing metabolite parameters and unknown analyte. Extracted — cefotaxime: CL 0.97 L·h-1, V 0.3 L·kg-1; desacetylcefotaxime: CL 3.2 L·h-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefotaxime: CL 0.97 L·h-1, V 0.3 L·kg-1; desacetylcefotaxime: CL 3.2 L·h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefotaxime, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -141,7 +141,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_shared_parameters | pass | 1 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.333 (3 of 9 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check contradicted by a second reader: verdict disputed; agreement 0.333 (3 of 9 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

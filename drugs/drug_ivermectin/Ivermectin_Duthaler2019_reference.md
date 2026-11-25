@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption rate constant and lag time lacked paper estimates for ivermectin, leaving the model with unsupported absorption kinetics.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="ivermectin" model-id="Ivermectin_Duthaler2019_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="ivermectin" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Duthaler U, Suenderhauf C, Karlsson MO, Hussner J, Meyer Zu Schwabedissen H, Kr�
 
 ### Reviewer guidance
 
-**Absorption rate constant and lag time lacked paper estimates for ivermectin, leaving the model with unsupported absorption kinetics.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-Derived solely from the abstract, the record contained no fitted values for the absorption rate constant or lag time, requiring generic placeholders rather than specific estimates. This omission invalidated the model's apparent clearance and volume parameters, as the absorption phase was not grounded in the source data. A second reader also disputed the assignment of the clearance and volume values, further undermining the record's consistency. Extracted — ivermectin: CL/F 7.7 l h-1, V 89 l.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ivermectin: CL/F 7.7 l h-1, V 89 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ivermectin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check contradicted by a second reader: verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

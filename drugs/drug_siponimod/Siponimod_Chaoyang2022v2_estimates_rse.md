@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for siponimod was held back because the second reader disputed the verdict and could not identify the dose compound or primary analyte.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="siponimod" model-id="Siponimod_Chaoyang2022v2_estimates_rse" status="needs_review" stale="false" population="healthy volunteers and patients with multiple sclerosis" measured-compound="siponimod" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Chaoyang C, Xiu D, Ran W, Lingyun M, Simiao Z, Ruoming L et al. Pharmacokinetic 
 
 ### Reviewer guidance
 
-**The record for siponimod was held back because the second reader disputed the verdict and could not identify the dose compound or primary analyte.**
+**cross_check_disputed; x1_cross_check.**
 
-The cross-check failed with 0 of 1 readers agreeing, resulting in an agreement score of 0.8. The second reader marked both the dose compound and primary analyte as unknown, whereas the record lists siponimod for both. The model builder also defaulted the lag time parameter and assumed complete bioavailability without molar correction. Extracted — siponimod: CL/F 3.17 L/h, V/F 113 L, kabs 0.38 h−1.
+Extracted — siponimod: CL/F 3.17 L/h, V/F 113 L, kabs 0.38 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has siponimod, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,7 +152,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.8 (8 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | cross-check contradicted by a second reader: verdict disputed; agreement 0.8 (8 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 2.04 | 1.802e-06 |  | unresolved concentration unit (exp 'times', sim 'kg/m3') |
 
 <details class="legend">

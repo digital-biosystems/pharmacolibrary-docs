@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Nimesulide’s reported CL/F of 1.66 L/h was rejected because the paper concerns another drug, and its absorption parameters were defaulted rather than reported.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="nimesulide" model-id="Nimesulide_Huang2025_reference" status="rejected" stale="false" population="" measured-compound="nimesulide" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Huang L, Nie L, Ye X, Lin Z, Liu Y, Wei F. Enterohepatic Recirculation-Mediated 
 
 ### Reviewer guidance
 
-**Nimesulide’s reported CL/F of 1.66 L/h was rejected because the paper concerns another drug, and its absorption parameters were defaulted rather than reported.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The record lists nimesulide CL/F as 1.66 L/h and volume of distribution as 3.36 L, but neither the paper’s title nor abstract names nimesulide. The absorption rate constant and lag time were defaulted, and first-order depot absorption was assumed although absorption was not reported in the source. The paper’s subject mismatch is explicit; these reported values therefore do not establish a nimesulide model from this paper. Extracted — nimesulide: CL/F 1.66 L/h, V 3.36 L.
+Extracted — nimesulide: CL/F 1.66 L/h, V 3.36 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -124,7 +124,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

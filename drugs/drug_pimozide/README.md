@@ -22,12 +22,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Seo_2023_Kv_current](drugs/drug_pimozide/pd_Seo_2023_Kv_current.md) | Kv current inhibition ← pimozide · direct sigmoid Emax (Hill) effect | — | Seo MS et al., The inhibitory effects of pimozide, an…, Drug and chemical toxicology (2023) | [10.1080/01480545.2021.2021932](https://doi.org/10.1080/01480545.2021.2021932) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Seo_2023_Kv_currents](drugs/drug_pimozide/pd_Seo_2023_Kv_currents.md) | Kv currents ← pimozide · direct sigmoid Emax (Hill) effect | — | Seo MS et al., The inhibitory effects of pimozide, an…, Drug and chemical toxicology (2023) | [10.1080/01480545.2021.2021932](https://doi.org/10.1080/01480545.2021.2021932) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Vatansever_2021_Mpro_activity](drugs/drug_pimozide/pd_Vatansever_2021_Mpro_activity.md) | Mpro activity (inhibition of SARS-CoV-2 main protease) ← pimozide · direct sigmoid Emax (Hill) effect | — | Vatansever EC et al., Bepridil is potent against SARS-CoV-2 i…, Proceedings of the National… (2021) | [10.1073/pnas.2012201118](https://doi.org/10.1073/pnas.2012201118) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Newman-Tancredi_1998_35S_GTPgammaS_binding](drugs/drug_pimozide/pd_Newman_Tancredi_1998_35S_GTPgammaS_binding.md) | 5-HT-stimulated [35S]GTPgammaS binding (inhibition by pimozide) ← pimozide · inhibition effect | — | Newman-Tancredi A et al., Agonist and antagonist actions of antip…, European journal of pharmac… (1998) | [10.1016/s0014-2999(98)00483-x](https://doi.org/10.1016/s0014-2999(98)00483-x) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sah_1994_N_type_Ca2_current](drugs/drug_pimozide/pd_Sah_1994_N_type_Ca2_current.md) | N-type Ca2+ channel current (sympathetic neurons) ← pimozide · direct Emax (saturable) effect | — | Sah DW et al., Inhibition of P-type and N-type calcium…, Molecular pharmacology (1994) | — |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sah_1994_P_type_Ca2_current](drugs/drug_pimozide/pd_Sah_1994_P_type_Ca2_current.md) | P-type Ca2+ channel current (cerebellar Purkinje neurons) ← pimozide · direct Emax (saturable) effect | — | Sah DW et al., Inhibition of P-type and N-type calcium…, Molecular pharmacology (1994) | — |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Xia_2004_Ca2_influx](drugs/drug_pimozide/pd_Xia_2004_Ca2_influx.md) | Ca2+ influx ← pimozide · inhibition effect | — | Xia M et al., Functional expression of L- and T-type…, Journal of molecular and ce… (2004) | [10.1016/j.yjmcc.2003.10.007](https://doi.org/10.1016/j.yjmcc.2003.10.007) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Xia_2004_Ca2_influx](drugs/drug_pimozide/pd_Xia_2004_Ca2_influx.md) | Ca2+ influx ← pimozide · direct sigmoid Emax (Hill) effect | — | Xia M et al., Functional expression of L- and T-type…, Journal of molecular and ce… (2004) | [10.1016/j.yjmcc.2003.10.007](https://doi.org/10.1016/j.yjmcc.2003.10.007) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -41,7 +38,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 16:45 | 0:42 | 0/0/0 | 2/4/0 | 0/0/0 | 82,724/2,535 | ollama / glm-5.3-flash | 15 | 0/2 | 2/0 | 0 |
+| 2026-11-24 02:48 | 0:04 | 0/0/0 | 2/1/0 | 0/0/0 | 3,946/190 | einfracz / qwen3.8-27b | 15 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -50,31 +47,30 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Al_2026.pdf` | Al Nebaihi HM et al., Pharmacokinetics of Inhibitors of Succi…, The AAPS journal (2026) | popPK | 8 | [10.1208/s12248-026-01208-z](https://doi.org/10.1208/s12248-026-01208-z) | [41578070](https://pubmed.ncbi.nlm.nih.gov/41578070) | PK study of pimozide in rats with compartmental modeling, but numeric CL/Vd values are not present in the evidence text. |
-
-<sub>queue written 2026-10-06 16:44 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Al_2026 | relevant | 8 | 3 | PK study of pimozide in rats with compartmental modeling, but numeric CL/Vd values are not present in the evidence text. |
+| popPK | Al_2026 | relevant | 10 | 0 | The study reports compartmental PK parameters for pimozide in rats, but no specific numeric values for CL, Vd, or half-life are present in the provided abstract text. |
+| PGx | Al_2026 | not_relevant | 0 | 0 | The study examines the effect of diet and sex on PK, but does not investigate any gene variant or genotype (pharmacogenomics). |
 | popPK | Chen_2022 | irrelevant | 0 | 0 | Pimozide is only a repurposing-screening comparator; the paper studies methotrexate against SARS-CoV-2 with no PK parameters for pimozide. |
-| popPK | Cvetkovic_2003_2 | irrelevant | 0 | 0 | This is a review of lopinavir/ritonavir; pimozide is only mentioned as a contraindicated co-administered drug, with no PK parameters for pimozide. |
-| popPK | Dresser_2000_2 | irrelevant | 1 | 0 | Review of CYP3A4 interactions mentioning pimozide only as a QT-risk drug, with no PK parameters or numeric values. |
-| popPK | Newman-Tancredi_1998 | irrelevant | 0 | 0 | In-vitro receptor binding study with no pharmacokinetic parameters for pimozide. |
-| popPK | Papadopoulos_1990 | irrelevant | 0 | 0 | Pimozide is only used as a calmodulin inhibitor in an in vitro biochemical study; no PK parameters are reported. |
-| popPK | Sah_1994 | irrelevant | 0 | 0 | In-vitro electrophysiology study of calcium channel blockade; no pharmacokinetic disposition parameters for pimozide. |
-| popPK | Seo_2023 | irrelevant | 0 | 0 | In-vitro electrophysiology study of Kv channel inhibition in rabbit coronary smooth muscle cells; no PK disposition parameters for pimozide. |
+| popPK | Cvetkovic_2003_2 | irrelevant | 0 | 0 | This is a review of lopinavir/ritonavir for HIV, and pimozide is only mentioned as a contraindicated drug due to interaction, with no pharmacokinetic parameters for pimozide reported. |
+| PGx | Cvetkovic_2003_2 | not_relevant | 0 | 0 | The paper is a review of lopinavir/ritonavir and mentions pimozide only as a contraindication due to CYP3A4 interaction, not discussing pimozide's pharmacogenomics. |
+| popPK | Dresser_2000_2 | irrelevant | 0 | 0 | The paper is a review discussing the clinical consequences of CYP3A4 inhibition and mentions pimozide only as a drug associated with QT prolongation in the context of drug interactions, without reporting any pharmacokinetic parameters. |
+| PGx | Dresser_2000_2 | not_relevant | 0 | 0 | The paper is a general review of CYP3A4 drug-drug interactions (inhibitors like ketoconazole/ritonavir) rather than a study on genetic variants (pharmacogenomics) affecting pimozide PK/PD. |
+| popPK | Newman-Tancredi_1998 | irrelevant | 0 | 0 | This is an in-vitro receptor binding study characterizing pharmacodynamics, not a pharmacokinetic study reporting disposition parameters for pimozide. |
+| PGx | Newman-Tancredi_1998 | not_relevant | 0 | 0 | This paper describes the in vitro receptor binding and agonist/antagonist activity of antipsychotics (including pimozide) but does not report on any pharmacogenomic effects on PK/PD parameters. |
+| popPK | Papadopoulos_1990 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic analysis of protein phosphorylation in adrenal cells where pimozide is used as a calmodulin inhibitor, not as the subject of pharmacokinetic analysis. |
+| PGx | Papadopoulos_1990 | not_relevant | 0 | 0 | The paper investigates the mechanism of calmodulin inhibition by pimozide in steroidogenesis and contains no data on gene variants or pharmacogenomics. |
+| popPK | Sah_1994 | irrelevant | 0 | 0 | The paper is a mechanistic study of calcium channel inhibition by pimozide and does not contain any pharmacokinetic or disposition parameters. |
+| PGx | Sah_1994 | not_relevant | 0 | 0 | The paper reports in vitro electrophysiological effects of pimozide on calcium channels, not pharmacogenomic effects on PK or PD parameters. |
+| popPK | Seo_2023 | irrelevant | 0 | 0 | The study investigates the electrophysiological effects of pimozide on ion channels in an in vitro model and does not report pharmacokinetic parameters. |
+| PGx | Seo_2023 | not_relevant | 0 | 0 | The study investigates the electrophysiological interaction between pimozide and voltage-gated K+ channels; it does not report any pharmacogenomic effects of genetic variants on pimozide's pharmacokinetics or pharmacodynamics. |
 | popPK | Vatansever_2021 | irrelevant | 0 | 0 | In vitro SARS-CoV-2 Mpro inhibition study; pimozide is only a screened inhibitor with an IC50, no PK disposition parameters. |
-| popPK | Xia_2004 | irrelevant | 0 | 0 | Pimozide is only used as a T-type Ca2+ channel blocker probe in an in vitro pharmacology study; no PK disposition parameters are reported. |
-| popPK | Xiong_2019 | irrelevant | 0 | 0 | Pimozide is only used as an agonist in an in-vitro receptor pharmacology study; no PK parameters for pimozide are reported. |
+| popPK | Xia_2004 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of calcium channels in HL-1 cells where pimozide is used only as a T-type channel blocker probe, not as the subject drug for PK analysis. |
+| PGx | Xia_2004 | not_relevant | 0 | 0 | The paper describes the expression of calcium channels in HL-1 cells and uses pimozide as a T-type channel blocker, but it does not report any pharmacogenomic effects (gene variants altering PK/PD) for pimozide. |
+| popPK | Xiong_2019 | irrelevant | 0 | 0 | The study is a pharmacological characterization of a serotonin receptor in silkworms, using pimozide only as a ligand/agonist to determine rank potency, not as a drug for pharmacokinetic analysis. |
+| PGx | Xiong_2019 | not_relevant | 0 | 0 | The study analyzes the pharmacology of a silkmoth receptor and mentions pimozide only as a reference agonist potency, without investigating any genetic variant effects on pimozide's PK or PD. |
 
 
 </details>

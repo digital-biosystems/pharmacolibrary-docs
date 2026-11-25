@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the peripheral compartment has no connection from the dose, leaving the extracted V2/F value of 22.1 L structurally unreachable.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="pioglitazone" model-id="Pioglitazone_Kadam2013_reference" status="rejected" stale="false" population="healthy Caucasian volunteers" measured-compound="pioglitazone" parameterization="apparent" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Kadam R, Bourne D, Kompella U, Aquilante C. Effect of Cytochrome P450 2C8*3 on t
 
 ### Reviewer guidance
 
-**Record rejected because the peripheral compartment has no connection from the dose, leaving the extracted V2/F value of 22.1 L structurally unreachable.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The one-compartment structure contains an orphan compartment with no path from the administered dose. Consequently, the listed volume of distribution for the peripheral compartment (22.1 L) is disconnected from the drug's entry point. Although a second reader identified missing values for the central volume (26.3 L) and absorption rate, the primary structural defect remains. Extracted — pioglitazone: V2/F 22.1 L.
+Extracted — pioglitazone: V2/F 22.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k a (h -1 )=θ 5: this record has none, the second reading 2.08; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

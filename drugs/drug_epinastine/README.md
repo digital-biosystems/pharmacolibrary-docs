@@ -27,8 +27,7 @@ It is given as eye drops for ocular symptoms and can also be taken orally as tab
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Jang_2025_reference](drugs/drug_epinastine/Epinastine_Jang2025_reference.md) | — | 1-compartment (no model) | 0 | Jang JH et al., Population modeling of pharmacokinetic…, Naunyn-Schmiedeberg's archi… (2025) | [10.1007/s00210-025-04299-1](https://doi.org/10.1007/s00210-025-04299-1) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Sarashina_2005_estimated_value](drugs/drug_epinastine/Epinastine_Sarashina2005_estimated_value.md) | — | 1-compartment (no model) | 3 | Sarashina A et al., Population pharmacokinetics of epinasti…, British journal of clinical… (2005) | [10.1111/j.1365-2125.2005.2250](https://doi.org/10.1111/j.1365-2125.2005.2250) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ hypothesized_value](drugs/drug_epinastine/Epinastine_Sarashina2005_hypothesized_value.md) | — | 1-compartment (no model) | 3 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Sarashina_2005_reference](drugs/drug_epinastine/Epinastine_Sarashina2005_reference.md) | — | 1-compartment (no model) | 0 | Sarashina A et al., Population pharmacokinetics of epinasti…, British journal of clinical… (2005) | [10.1111/j.1365-2125.2005.2250](https://doi.org/10.1111/j.1365-2125.2005.2250) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -42,35 +41,28 @@ It is given as eye drops for ocular symptoms and can also be taken orally as tab
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 23:30 | 4:12 | 0/3/0 | 0/0/0 | 0/0/0 | 65,674/21,345 | openai / gpt-6-luna | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-23 20:57 | 0:04 | 0/2/0 | 0/0/0 | 0/0/0 | 3,850/179 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Jang_2025.pdf` | Jang JH et al., Population modeling of pharmacokinetic…, Naunyn-Schmiedeberg's archi… (2025) | popPK | 10 | [10.1007/s00210-025-04299-1](https://doi.org/10.1007/s00210-025-04299-1) | [40439884](https://pubmed.ncbi.nlm.nih.gov/40439884) | The human population-PK model reports numeric clearance changes by CYP2D6 phenotype, but not absolute clearance values. |
-
-<sub>queue written 2026-10-07 23:26 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ohtani_1997 | irrelevant | 2 | 0 | Rat PK/PD study reports plasma concentrations but no quantitative disposition parameters for epinastine. |
-| popPK | Wu_2017 | irrelevant | 0 | 0 | Epinastine is only a receptor antagonist, and no epinastine pharmacokinetic parameter values are reported. |
+| popPK | Ohtani_1997 | irrelevant | 2 | 0 | The study focuses on pharmacodynamic ECG effects and plasma concentration time-courses for comparison, not the derivation of quantitative disposition parameters (CL, V, ka) or compartmental models for epinastine. |
+| PGx | Ohtani_1997 | not_relevant | 0 | 0 | The study is a comparative pharmacokinetic-pharmacodynamic analysis in rats and does not report any gene variants, genotypes, or phenotypes that influence the drug's PK or PD parameters. |
+| PGx | Sarashina_2005 | not_relevant | 0 | 0 | The study is a population pharmacokinetic analysis for epinastine that investigates non-genetic covariates such as body weight, age, food status, and formulation, with no mention of gene variants, genotypes, or pharmacogenomic effects. |
+| popPK | Wu_2017 | irrelevant | 0 | 0 | The paper is a study on an octopamine receptor in the brown planthopper (Nilaparvata lugens) where epinastine is used solely as a pharmacological antagonist to characterize the receptor, with no PK data reported. |
+| PGx | Wu_2017 | not_relevant | 0 | 0 | The paper studies an octopamine receptor in insects and does not report any pharmacogenomic effects on human PK/PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bepinastine%5D&body=Drug%3A%20epinastine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_epinastine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 23:27 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 20:55 UTC</sub>

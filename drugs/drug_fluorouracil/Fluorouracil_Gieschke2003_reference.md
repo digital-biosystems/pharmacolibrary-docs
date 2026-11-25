@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant for 5'-deoxy-5-fluorouridine has an invalid volume-based unit, and the model lacks a dose entry path for the parent drug.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l h -1 ([length] ** 3 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Gieschke2003_reference" status="rejected" stale="false" population="adults with advanced or metastatic colorectal cancer" measured-compound="5-fluorouracil" parameterization="apparent" topology="general_linear"></div>
 
@@ -56,13 +56,13 @@ Gieschke R, Burger HU, Reigner B, Blesch KS, Steimer JL. Population pharmacokine
 
 ### Reviewer guidance
 
-**The absorption rate constant for 5'-deoxy-5-fluorouridine has an invalid volume-based unit, and the model lacks a dose entry path for the parent drug.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l h -1 ([length] ** 3 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The absorption rate constant of 70 is assigned the unit l h -1, which conflicts with the required dimension of 1 / [time]. Additionally, the model includes a metabolic chain from capecitabine to 5'-deoxy-5-fluorouridine, but the parent drug has no dose link, leaving the initial compartment unreachable. Extracted — 5'-deoxy-5-fluorouridine: kabs 70 l h -1, tlag 0.000552 h, V 30 l, CL 24 l h -1; fluorouracil: V 17.8 l, CLm/F 33 l h -1; alpha-fluorobeta-alanine: V 26 l, CL 32 l h -1.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — 5'-deoxy-5-fluorouridine: kabs 70 l h -1, tlag 0.000552 h, V 30 l, CL 24 l h -1; fluorouracil: V 17.8 l, CLm/F 33 l h -1; alpha-fluorobeta-alanine: V 26 l, CL 32 l h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 5-fluorouracil, the second reading capecitabine; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

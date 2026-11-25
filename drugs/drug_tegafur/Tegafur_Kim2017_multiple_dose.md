@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The single-compartment tegafur model failed to match the paper's terminal half-life and peak time while ignoring the parent-metabolite structure.
+> The model does not reproduce the paper's terminal half-life (paper 2.3, model 8.67); the model does not reproduce the paper's time of the peak (tmax) (paper 1.7, model 7.41) (+2 more).
 
 <div class="pk-model-meta" hidden drug="tegafur" model-id="Tegafur_Kim2017_multiple_dose" status="rejected" stale="false" population="rats" measured-compound="tegafur" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -56,13 +56,13 @@ Kim TH, Shin S, Shin JC, Bulitta JB, Weon KY, Yoo SD et al. Effect of Sipjeondae
 
 ### Reviewer guidance
 
-**The single-compartment tegafur model failed to match the paper's terminal half-life and peak time while ignoring the parent-metabolite structure.**
+**The model does not reproduce the paper's terminal half-life (paper 2.3, model 8.67); the model does not reproduce the paper's time of the peak (tmax) (paper 1.7, model 7.41) (+2 more).**
 
-The model's simulated terminal half-life of 8.67 hours and peak time of 7.41 hours deviated substantially from the paper's reported 2.3 hours and 1.7 hours. The model structure did not reflect the parent-metabolite relationship, and the output variable did not correspond to the measured tegafur. The record was further held back because the absorption rate constant was not confirmed by a second reader and a conversion unit was missing. Extracted — tegafur: AUClast 4.68e+04 ng·h/mL, AUC∞ 4.75e+04 ng·h/mL, CL/F 1.8 mL/min/kg, V/F 0.5 L/kg, tmax 2.4 h, kabs 0.08 h-1.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUClast and AUC∞), so that value has no SI equivalent. Extracted — tegafur: AUClast 4.68e+04 ng·h/mL, AUC∞ 4.75e+04 ng·h/mL, CL/F 1.8 mL/min/kg, V/F 0.5 L/kg, tmax 2.4 h, kabs 0.08 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 0.08, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -172,17 +172,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | a second reader did not contradict the extraction |
-| T1_cmax | reference | skipped |  | 0.002065 |  | non-numeric value |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.9 (9 of 10 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.9 | a second reader did not contradict the extraction |
+| T1_cmax | reference | skipped |  | 0.002065 |  | the transcribed record carries no number for this value |
 | T1_cmax | reference | skipped | 72.6 | 0.002065 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 40.9 | 0.002065 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_t_half_terminal | reference | fail | 2.3 | 8.666 | 3.768 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.6 | 8.666 | 3.333 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.2 | 8.666 | 7.222 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1.7 | 7.414 | 4.361 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.6 | 7.414 | 12.36 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 3.2 | 7.414 | 2.317 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1.2 | 7.414 | 6.178 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.3 | 8.666 | 3.768 | reported 2.3 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.6 | 8.666 | 3.333 | reported 2.6 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.2 | 8.666 | 7.222 | reported 1.2 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.7 | 7.414 | 4.361 | reported 1.7 h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.6 | 7.414 | 12.36 | reported 0.6 h→SI vs simulated h |
+| T1_tmax | reference | fail | 3.2 | 7.414 | 2.317 | reported 3.2 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.2 | 7.414 | 6.178 | reported 1.2 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

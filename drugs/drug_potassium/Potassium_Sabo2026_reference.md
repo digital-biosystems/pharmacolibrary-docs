@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The potassium CL/F estimate of 9.1 L/h was refused because the paper is about another drug, not potassium.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Sabo2026_reference" status="rejected" stale="false" population="" measured-compound="potassium" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Sabo AN, Nazon C, Paillard C, Kemmel V. The Hydroxyurea Absorption Phenotype: A 
 
 ### Reviewer guidance
 
-**The potassium CL/F estimate of 9.1 L/h was refused because the paper is about another drug, not potassium.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The record also gives potassium V/F as 52.0 L, but neither the paper title nor abstract names potassium. The model used default values for the absorption rate and lag time, and assumed bioavailability of 1 with first-order absorption despite these not being reported in the source. A second reader disputed the verdict, with agreement of 0.412. Extracted — potassium: CL/F 9.1 L/h, V/F 52 L.
+Extracted — potassium: CL/F 9.1 L/h, V/F 52 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 101.2, the second reading 101.2; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.412, 0 of 1 reader(s) agree | 0.412 | cross-check disputed by a second reader: verdict disputed, agreement 0.412, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.588 (10 of 17 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.588 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

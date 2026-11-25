@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> Chloroxylenol parameter extraction from the abstract was disputed by a second reader who identified no values or dose compound.
+> cross_check_disputed; x1_cross_check.
 
-<div class="pk-model-meta" hidden drug="chloroxylenol" model-id="Chloroxylenol_Dorantes1992_reference" status="needs_review" stale="false" population="healthy mongrel dogs" measured-compound="chloroxylenol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="chloroxylenol" model-id="Chloroxylenol_Dorantes1992_reference" status="needs_review" stale="false" population="healthy mongrel dogs" measured-compound="p-chloro-m-xylenol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dorantes A, Stavchansky S. Pharmacokinetic and metabolic disposition of p-chloro-m-xylenol (PCMX) in dogs. Pharmaceutical research 9(5):677–682 (1992).
@@ -17,9 +17,7 @@ Dorantes A, Stavchansky S. Pharmacokinetic and metabolic disposition of p-chloro
 
 ## Population and dosing
 
-**Population:** healthy mongrel dogs · age group adult.
-
-**Dosed compound ≠ measured compound:** dosed chloroxylenol (PCMX), measured chloroxylenol.
+**Population:** healthy mongrel dogs · condition healthy · age group adult.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -41,11 +39,11 @@ Dorantes A, Stavchansky S. Pharmacokinetic and metabolic disposition of p-chloro
 | mean residence time | MRT | 1.69 | hr |
 | apparent volume of distribution at steady state | Vss | 22.4 | liters |
 | plasma clearance | CL | 14.6 | liters/hr |
-| bioavailability of PCMX | Fab | 21 | % |
+| bioavailability of PCMX | Fab | 21 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,23 +53,23 @@ Dorantes A, Stavchansky S. Pharmacokinetic and metabolic disposition of p-chloro
 
 ### Reviewer guidance
 
-**Chloroxylenol parameter extraction from the abstract was disputed by a second reader who identified no values or dose compound.**
+**cross_check_disputed; x1_cross_check.**
 
-The record relies on summary statistics from the paper's abstract rather than a fitted model, leading to a low agreement score of 0.133. The second reader disagreed that the dose compound was chloroxylenol and marked all extracted parameters, including elimination half-life and clearance, as unknown. Additionally, the reviewer contested the model's mechanistic parameterization and the specific values reported for bioavailability and volume of distribution. Extracted — chloroxylenol: t1/2z 1.84 hr, MRT 1.69 hr, Vss 22.4 liters, CL 14.6 liters/hr, Fab 21 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — chloroxylenol: t1/2z 1.84 hr, MRT 1.69 hr, Vss 22.4 liters, CL 14.6 liters/hr, Fab 21.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has chloroxylenol (PCMX), the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has p-chloro-m-xylenol, the second reading p-chloro-m-xylenol (PCMX); it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| elimination half-life | `Q57` · t1/2z | 1.84 | hr | 6624 | s | h | llm (0.6) | Dorantes_1992:abstract |
+| elimination half-life | `Q57` · t1/2z | 1.84 | hr | 6624 | s | h | half_life_rule (0.95) | Dorantes_1992:abstract |
 | mean residence time | `Q53` · MRT | 1.69 | hr | 6084 | s | h | exact (1) | Dorantes_1992:abstract |
 | apparent volume of distribution at steady state | `Q65` · Vss | 22.4 | liters | 0.0224 | m3 | l | llm_corrected (0.6) | Dorantes_1992:abstract |
 | plasma clearance | `Q22` · CL | 14.6 | liters/hr | 4.056e-06 | m3/s | l/h | llm_confirmed (0.6) | Dorantes_1992:abstract |
-| bioavailability of PCMX | `Q40` · Fab | 21 | % |  |  |  | llm_confirmed (0.6) | Dorantes_1992:abstract |
+| bioavailability of PCMX | `Q40` · Fab | 21 |  |  |  |  | llm_confirmed (0.6) | Dorantes_1992:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -84,12 +82,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=chloroxylenol
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=p-chloro-m-xylenol
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Dorantes_1992_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
@@ -97,17 +91,16 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
+| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss-120b` | `parameters[apparent volume of distribution at steady state]` | 22.4 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[apparent volume of distribution at steady state]` |  | 22.4 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[bioavailability of pcmx]` | 21 |  | only_one_extracted |
@@ -118,8 +111,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | `gpt-oss-120b` | `parameters[mean residence time]` |  | 1.69 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[plasma clearance]` | 14.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[plasma clearance]` |  | 14.6 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | chloroxylenol (PCMX) | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | chloroxylenol (PCMX) | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | p-chloro-m-xylenol | p-chloro-m-xylenol (PCMX) | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | p-chloro-m-xylenol | p-chloro-m-xylenol (PCMX) | mismatch |
 
 </details>
 
@@ -151,11 +144,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=chloroxylenol) | central.C |  | output must be the measured/analyte compartment |
+| T3_output_variable | pass | C_central (measured=p-chloro-m-xylenol) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (3 of 15 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (3 of 15 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -233,4 +226,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchloroxylenol%5D%20Chloroxylenol_Dorantes1992_reference&body=Drug%3A%20chloroxylenol%0ARecord%3A%20Chloroxylenol_Dorantes1992_reference%0APaper%3A%20Dorantes_1992%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chloroxylenol/Chloroxylenol_Dorantes1992_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 23:11 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:41 UTC</sub>

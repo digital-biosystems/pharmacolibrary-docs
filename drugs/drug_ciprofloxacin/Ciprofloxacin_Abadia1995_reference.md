@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> The ciprofloxacin AUC/dose value of 85.28 mg/kg has incompatible dimensions, causing record rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit mg/kg ([mass]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Abadia1995_reference" status="rejected" stale="false" population="dogs" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Abadia AR, Aramayona JJ, Muñoz MJ, Pla Delfina JM, Bregante MA. Ciprofloxacin p
 
 ### Reviewer guidance
 
-**The ciprofloxacin AUC/dose value of 85.28 mg/kg has incompatible dimensions, causing record rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit mg/kg ([mass]) vs [mass] * [time] / [length] ** 3.**
 
-The parameter is defined as dose-normalized area under the concentration-time curve, requiring units of volume, but the record lists mg/kg (mass per mass). This dimensional conflict prevented the calculation of a valid physical value for the pharmacokinetic parameter. Additionally, the second reviewer could not confirm ciprofloxacin as the primary analyte or the dosed compound, leaving these fields unresolved. Extracted — ciprofloxacin: AUC/dose 85.3 mg/kg, CL 12.9 L/h, V 117 L, kabs 1 h−1, tlag 0.33 h.
+A reported unit could not be converted (AUC/dose), so that value has no SI equivalent. Extracted — ciprofloxacin: AUC/dose 85.3 mg/kg, CL 12.9 L/h, V 117 L, kabs 1 h−1, tlag 0.33 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ciprofloxacin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

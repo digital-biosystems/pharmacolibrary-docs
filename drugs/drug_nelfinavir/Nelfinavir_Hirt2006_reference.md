@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the nelfinavir initial concentration parameter was assigned ng/ml units, which conflict with the required volume dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q83 unit h⁻¹ (1 / [time]) vs [time].
 
-<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Hirt2006_reference" status="rejected" stale="false" population="pregnant and nonpregnant women with HIV infection" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Hirt2006_reference" status="rejected" stale="false" population="women with HIV infection (pregnant and nonpregnant)" measured-compound="nelfinavir" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Hirt D, Treluyer JM, Jullien V, Firtion G, Chappuy H, Rey E et al. Pregnancy-related effects on nelfinavir-M8 pharmacokinetics: a population study with 133 women. Antimicrobial agents and chemotherapy 50(6):2079–2086 (2006).
@@ -16,15 +16,15 @@ Hirt D, Treluyer JM, Jullien V, Firtion G, Chappuy H, Rey E et al. Pregnancy-rel
 
 ## Population and dosing
 
-**Population:** pregnant and nonpregnant women with HIV infection · condition HIV infection · age group adult · n = 133.
+**Population:** women with HIV infection (pregnant and nonpregnant) · condition HIV infection · age group adult.
 
 **Dosing:** 750, 1250 mg, oral, multiple.
 
 ## Model
 
 **Structure:** parent + metabolite; no model was built for this record.  
-**Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 8 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,16 +32,19 @@ Hirt D, Treluyer JM, Jullien V, Firtion G, Chappuy H, Rey E et al. Pregnancy-rel
 
 | label | parameter | value | unit |
 |---|---|---|---|
+| ka (h⁻¹) | kabs | 0.83 | h⁻¹ |
+| Tlag (h⁻¹) | tlag | 0.85 | h⁻¹ |
 | V (liters) | V | 596 | liters |
-| CL 10 (liters/h) | CL | 35.5 | liters/h |
-| k M0 , PREG | kel | 0.51 | h Ϫ1 |
-| NELFI (ng/ml) | C0 | 1.17 | ng/ml |
-| M8 (ng/ml) | Ct | 0.27 | ng/ml |
-| (CL 1M ) (%) | CL | 62 | liters/h |
+| CL10 (liters/h) | CL | 35.5 | liters/h |
+| CL1M, θPREG | CL/F | 0.25 |  |
+| CL1M (liters/h) | CLfm | 0.65 | liters/h |
+| kM0 (h⁻¹) | kel | 3.3 | h⁻¹ |
+| kM00,0PREG | equation variable | 0.51 |  |
+| kM00,0BW | Km | 1.18 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,24 +54,27 @@ Hirt D, Treluyer JM, Jullien V, Firtion G, Chappuy H, Rey E et al. Pregnancy-rel
 
 ### Reviewer guidance
 
-**The model was rejected because the nelfinavir initial concentration parameter was assigned ng/ml units, which conflict with the required volume dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q83 unit h⁻¹ (1 / [time]) vs [time].**
 
-A dimension mismatch was found on the structural parameter for nelfinavir initial concentration, where the recorded unit ng/ml conflicts with the parameter's required volume dimension. This unit conflict indicates the parameter is incorrectly defined or labeled within the model structure. A second reader also disagreed on the specific values extracted for multiple parameters, including the total clearance and volume of distribution. Extracted — nelfinavir: V 596 liters, CL 35.5 liters/h, C0 1.17 ng/ml; M8: kel 0.51 h Ϫ1, Ct 0.27 ng/ml, CL 62 liters/h.
+A reported unit could not be converted (tlag), so that value has no SI equivalent. Extracted — nelfinavir: kabs 0.83 h⁻¹, tlag 0.85 h⁻¹, V 596 liters, CL 35.5 liters/h; M8: CL/F 0.25, CLfm 0.65 liters/h, kel 3.3 h⁻¹, Km 1.18.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl 10].value`: this record has 35.5, the second reading 29.4; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| V (liters) | `Q61` · V | 596 | liters | 0.596 | m3 | l | exact (1) | tab_0:row4:col1, tab_0:row4:col2, tab_0:row4:col3 |
-| CL 10 (liters/h) | `Q22` · CL | 35.5 | liters/h | 9.861e-06 | m3/s | l/h | exact (1) | tab_0:row5:col1, tab_0:row5:col2, tab_0:row5:col3 |
-| k M0 , PREG | `Q47` · kel | 0.51 | h Ϫ1 | 0.0001417 | 1/s | 1/h | llm (0.6) | tab_0:row9:col1, tab_0:row9:col2, tab_0:row9:col3 |
-| NELFI (ng/ml) | `Q86` · C0 | 1.17 | ng/ml |  |  | ng/ml | llm (0.6) | tab_0:row13:col1, tab_0:row13:col2, tab_0:row13:col3 |
-| M8 (ng/ml) | `Q75` · Ct | 0.27 | ng/ml |  |  | ng/ml | llm (0.6) | tab_0:row14:col1, tab_0:row14:col2, tab_0:row14:col3 |
-| (CL 1M ) (%) | `Q22` · CL | 62 | liters/h | 1.722e-05 | m3/s | l/h | metabolite_elimination (0.85) | tab_0:row17:col1, tab_0:row17:col2, tab_0:row17:col3 |
+| ka (h⁻¹) | `Q49` · kabs | 0.83 | h⁻¹ | 0.0002306 | 1/s | 1/h | exact (1) | Hirt_2006_table_3:row1:col1 |
+| Tlag (h⁻¹) | `Q83` · tlag | 0.85 | h⁻¹ |  |  | 1/h | exact (1) | Hirt_2006_table_3:row2:col1 |
+| V (liters) | `Q61` · V | 596 | liters | 0.596 | m3 | l | exact (1) | Hirt_2006_table_3:row3:col1 |
+| CL10 (liters/h) | `Q22` · CL | 35.5 | liters/h | 9.861e-06 | m3/s | l/h | exact (1) | Hirt_2006_table_3:row4:col1 |
+| CL1M, θPREG | `Q27` · CL/F | 0.25 |  |  |  |  | llm (0.6) | Hirt_2006_table_3:row5:col1 |
+| CL1M (liters/h) | `Q370` · CLfm | 0.65 | liters/h | 1.806e-07 | m3/s | l/h | exact (1) | Hirt_2006_table_3:row7:col1 |
+| kM0 (h⁻¹) | `Q47` · kel | 3.3 | h⁻¹ | 0.0009167 | 1/s | 1/h | exact (1) | Hirt_2006_table_3:row8:col1 |
+| kM00,0PREG | `Q900` · equation variable | 0.51 |  | 0.51 |  |  | llm (0.6) | Hirt_2006_table_3:row9:col1 |
+| kM00,0BW | `Q1` · Km | 1.18 |  |  |  |  | llm (0.6) | Hirt_2006_table_3:row10:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,47 +84,41 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'CL 10 , PREG' → Q22 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q22 ('CL 10 , PREG', value '0.25') — already have one for this compound
-- unit_dimension_mismatch: 'CL 10 and V, DEL' → Q22 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q22 ('CL 10 and V, DEL', value '2.63') — already have one for this compound
-- dropped duplicate Q47 ('k M0 , BW', value '1.18') — already have one for this compound
-- dropped duplicate Q47 ('k M0 , INN', value '1.03') — already have one for this compound
-- unit_dimension_mismatch: 'NELFI (ng/ml)' → Q86 (unit '[mass] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped duplicate Q61 ('(V) (%)', value '118') — already have one for this compound
-- dropped duplicate Q22 ('(CL 10 ) (%)', value '50') — already have one for this compound
-- relinked '(CL 1M ) (%)' Q370 → Q22 for M8: a metabolite's own clearance is its elimination, not its formation
-- dropped duplicate Q47 ('(k M0 ) (%)', value '59') — already have one for this compound
-- unit inherited for CL (Q22): 'liters/h' from a same-Q-code sibling (this row's label had no unit)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nelfinavir
+- compound tags: 2 row(s) → M8 (name 2)
+- column 'final model with original dataset mean (cv%)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- unit_dimension_mismatch: 'Tlag (h⁻¹)' → Q83 (unit '1 / [time]' vs ontology '[time]') — route to review
+- dropped unlinked row (NIL): 'CL10 and V, θDEL' — extend the ontology if this is a real PK parameter (source ['Hirt_2006_table_3:row6:col1'])
+- dropped duplicate Q1 ('kM00,0INN', value '1.03') — already have one for this compound
+- implicit units: 'kM00,0BW' — the LLM proposed 'kg', whose dimension does not fit Q1; left unset
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=nelfinavir
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 13/13 row label(s) assigned, 6 linked by role; re-tagged parent→M8 ×18
+- row roles (LLM): model_class=compartmental; 17/17 row label(s) assigned, 6 linked by role; re-tagged parent→M8 ×8
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+
+**Extraction notes:**
+- LLM selected parameter table(s) 3
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.667 (10/15 fields) | 5 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[(cl 1m )].parameter_id` | Q22 | Q370 | mismatch |
-| `gpt-oss-120b` | `parameters[(cl 1m )].value` | 62 | 36 | mismatch |
-| `gpt-oss-120b` | `parameters[cl 10].value` | 35.5 | 29.4 | mismatch |
-| `gpt-oss-120b` | `parameters[k m0 , preg].value` | 0.51 | 0.18 | mismatch |
-| `gpt-oss-120b` | `parameters[m8]` | 0.27 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[nelfi].parameter_id` | Q86 | Q75 | mismatch |
-| `gpt-oss-120b` | `parameters[nelfi].value` | 1.17 | 0.96 | mismatch |
-| `gpt-oss-120b` | `parameters[v].value` | 596 | 200 | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[cl1m, θpreg].parameter_id` | Q27 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[km00,0bw]` | 1.18 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km00,0inn]` |  | 1.03 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km00,0preg]` | 0.51 |  | only_one_extracted |
 
 </details>
 
@@ -132,19 +132,21 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_0:row5:col1', 'tab_0:row5:col2', 'tab_0:row5:col3'] |
-| C5_dimension_Q47 | pass | 1 / [time] |  | ['tab_0:row9:col1', 'tab_0:row9:col2', 'tab_0:row9:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col3'] |
-| C5_dimension_Q75 | pass | [mass] / [length] ** 3 |  | ['tab_0:row14:col1', 'tab_0:row14:col2', 'tab_0:row14:col3'] |
-| C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | ng/ml ([mass] / [length] ** 3) | ['tab_0:row13:col1', 'tab_0:row13:col2', 'tab_0:row13:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 35.5 | ['tab_0:row5:col1', 'tab_0:row5:col2', 'tab_0:row5:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hirt_2006_table_3:row4:col1'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['Hirt_2006_table_3:row7:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Hirt_2006_table_3:row8:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Hirt_2006_table_3:row1:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Hirt_2006_table_3:row3:col1'] |
+| C5_dimension_Q83 | fail | [time] | h⁻¹ (1 / [time]) | ['Hirt_2006_table_3:row2:col1'] |
+| C5_unit_missing_Q1 | fail | [mass] / [length] ** 3 |  | ['Hirt_2006_table_3:row10:col1'] |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] |  | ['Hirt_2006_table_3:row5:col1'] |
+| C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 35.5 L/h | ['tab_0:row5:col1', 'tab_0:row5:col2', 'tab_0:row5:col3'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 62 L/h | ['tab_0:row17:col1', 'tab_0:row17:col2', 'tab_0:row17:col3'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 596 L | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 35.5 L/h | ['Hirt_2006_table_3:row4:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 596 L | ['Hirt_2006_table_3:row3:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -168,4 +170,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnelfinavir%5D%20Nelfinavir_Hirt2006_reference&body=Drug%3A%20nelfinavir%0ARecord%3A%20Nelfinavir_Hirt2006_reference%0APaper%3A%20Hirt_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nelfinavir/Nelfinavir_Hirt2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:20 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:47 UTC</sub>

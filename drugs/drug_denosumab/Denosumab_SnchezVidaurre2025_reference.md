@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the volume of distribution covariate shift was negative and the Vmax unit was dimensionally inconsistent.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit ng/day ([mass] / [time]) vs [mass] / [time]; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="denosumab" model-id="Denosumab_SnchezVidaurre2025_reference" status="rejected" stale="false" population="healthy adult men and postmenopausal women with osteoporosis" measured-compound="denosumab" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Sánchez-Vidaurre S, Paravisini A, Queiruga-Parada J. Population PK Modeling of 
 
 ### Reviewer guidance
 
-**The record was rejected because the volume of distribution covariate shift was negative and the Vmax unit was dimensionally inconsistent.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit ng/day ([mass] / [time]) vs [mass] / [time]; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The model lists a volume of distribution covariate shift of -0.534, which is physically impossible. Additionally, the maximum metabolism rate (Vmax) of 0.139 ng/day failed a dimensional check against its declared unit. These values indicate errors in the parameter estimates or their unit definitions. Extracted — denosumab: kabs 0.406 1/day, V/F 9.33 L, CL/F 0.123 L/day, CL 1.32 L/day/kg, Km 0.124 ng/mL, Vmax 0.139 ng/day, V -0.534.
+A reported unit could not be converted (Km and Vmax), so that value has no SI equivalent. Extracted — denosumab: kabs 0.406 1/day, V/F 9.33 L, CL/F 0.123 L/day, CL 1.32 L/day/kg, Km 0.124 ng/mL, Vmax 0.139 ng/day, V -0.534.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

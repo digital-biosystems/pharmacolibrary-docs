@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;etravirine&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/&quot;},{&quot;label&quot;:&quot;Courlet_2021_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etravirine_Kang2020v3_reference&quot;,&quot;label&quot;:&quot;Kang_2020_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Kang2020v3_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Green2017_reference&quot;,&quot;label&quot;:&quot;Green_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Green2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Lubomirov2013_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Lubomirov2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Courlet2021v2_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Courlet2021v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Etravirine_Duwal2019_reference&quot;,&quot;label&quot;:&quot;Duwal_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Duwal2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Han2024_reference&quot;,&quot;label&quot;:&quot;Han_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Han2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Jin2020_reference&quot;,&quot;label&quot;:&quot;Jin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Jin2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etravirine_Lubomirov2013_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Lubomirov2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Courlet2021v2_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Courlet2021v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Etravirine_Duwal2019_reference&quot;,&quot;label&quot;:&quot;Duwal_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Duwal2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Han2024_reference&quot;,&quot;label&quot;:&quot;Han_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Han2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Jin2020_reference&quot;,&quot;label&quot;:&quot;Jin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Jin2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Kang2020v3_reference&quot;,&quot;label&quot;:&quot;Kang_2020_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Kang2020v3_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the source paper's PK parameters describe amlodipine, not etravirine, which is only a co-administered drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="etravirine" model-id="Etravirine_Courlet2021v2_reference" status="rejected" stale="false" population="" measured-compound="etravirine" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Courlet P, Guidi M, Alves Saldanha S, Cavassini M, Stoeckle M, Buclin T et al. P
 
 ### Reviewer guidance
 
-**Record rejected because the source paper's PK parameters describe amlodipine, not etravirine, which is only a co-administered drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The analytical identity check failed, identifying that the reported clearance and volume of distribution values apply to a different molecule. Although the record lists etravirine, the source text indicates the parameters belong to the primary study drug. The builder's apparent parameterization assumptions do not resolve the mismatch between the claimed compound and the actual paper subject. Extracted — etravirine: CL/F 17 L/h, V/F 1e+03 L, kabs 0.69 h−1, tlag 0.87 h.
+Extracted — etravirine: CL/F 17 L/h, V/F 1e+03 L, kabs 0.69 h−1, tlag 0.87 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q312: this record has 42, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.875 (7 of 8 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.875 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

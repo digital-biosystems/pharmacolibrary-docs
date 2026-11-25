@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper does not study ifosfamide, and the model relied on defaulted parameters.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="ifosfamide" model-id="Ifosfamide_Zhang2015_reference" status="rejected" stale="false" population="" measured-compound="ifosfamide" parameterization="apparent" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Zhang W, Zhang Q, Tian X, Zhao H, Lu W, Zhen J et al. Population pharmacokinetic
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper does not study ifosfamide, and the model relied on defaulted parameters.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The paper subject is identified as a different drug, meaning the provided clearance and volume values are not for ifosfamide. The model builder used default values for absorption rate and delay rather than explicit estimates. Additionally, the second reader disagreed on the clearance value and the model parameterization type. Extracted — ifosfamide: CL/F 0.053 L/h, V1 18.2 L, V2 0.515 L, Q 0.0172 L/h.
+Extracted — ifosfamide: CL/F 0.053 L/h, V1 18.2 L, V2 0.515 L, Q 0.0172 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 0.053, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.714 (5 of 7 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | cross-check contradicted by a second reader: verdict disputed; agreement 0.714 (5 of 7 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

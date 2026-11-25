@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The tislelizumab record mixes an oral subcutaneous model structure with intravenous typical parameters, causing a structural violation.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="tislelizumab" model-id="Tislelizumab_Liu2026_reference" status="rejected" stale="false" population="patients with locally advanced or metastatic non-small cell lung cancer" measured-compound="tislelizumab" parameterization="apparent" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Liu X, Guan Y, Liu Y, Yu T, Abdrashitov R, Niu Z et al. Model-Informed Developme
 
 ### Reviewer guidance
 
-**The tislelizumab record mixes an oral subcutaneous model structure with intravenous typical parameters, causing a structural violation.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The parameter list includes an absorption rate constant of 0.189 1/d and a three-compartment volume system (3.05, 1.27, and 2.1 L) indicative of oral dosing. However, the apparent clearance of 0.153 L/d and intercompartmental clearances are inconsistent with a subcutaneous antibody dosing regimen. This mismatch violates the logical coherence between the administered route and the estimated pharmacokinetic parameters. Extracted — tislelizumab: CL/F 0.153 L/d, V1/F 3.05 L, V2/F 1.27 L, V3/F 2.1 L, Q/F 0.74 L/d, Q3/F 0.092 L/d, kabs 0.189 1/d.
+Extracted — tislelizumab: CL/F 0.153 L/d, V1/F 3.05 L, V2/F 1.27 L, V3/F 2.1 L, Q/F 0.74 L/d, Q3/F 0.092 L/d, kabs 0.189 1/d.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tislelizumab, the second reading unknown; it also differs on 29 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

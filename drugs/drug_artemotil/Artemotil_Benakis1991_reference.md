@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> AUC unit ng/ml/h conflicts with required volume-time dimensions, causing rejection of the arteether model record.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit ng/ml/h ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="artemotil" model-id="Artemotil_Benakis1991_reference" status="rejected" stale="false" population="beagle dogs" measured-compound="arteether" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Benakis A, Schopfer C, Paris M, Plessas CT, Karayannakos PE, Dondas I et al. Pha
 
 ### Reviewer guidance
 
-**AUC unit ng/ml/h conflicts with required volume-time dimensions, causing rejection of the arteether model record.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit ng/ml/h ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.**
 
-The AUC parameter for arteether is listed with a unit of ng/ml/h, which is dimensionally inconsistent with the expected volume-time units for area under the curve. This unit mismatch prevented the validation of the structural parameter, leading to the record's rejection. Additionally, the model was derived from an abstract-only source, meaning the reported summary statistics stand in for a fitted model rather than representing individual-level data. Extracted — artemotil: t1/2ka 0.3 h, t1/2z 27.9 h, Cmax 110 ng/ml, CL/F 1.69 ml/min, AUC 2.8e+03 ng/ml/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — artemotil: t1/2ka 0.3 h, t1/2z 27.9 h, Cmax 110 ng/ml, CL/F 1.69 ml/min, AUC 2.8e+03 ng/ml/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has arteether, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -157,4 +157,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bartemotil%5D%20Artemotil_Benakis1991_reference&body=Drug%3A%20artemotil%0ARecord%3A%20Artemotil_Benakis1991_reference%0APaper%3A%20Benakis_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_artemotil/Artemotil_Benakis1991_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 06:34 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:09 UTC</sub>

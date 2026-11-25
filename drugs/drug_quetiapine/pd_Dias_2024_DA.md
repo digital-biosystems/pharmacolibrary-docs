@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;quetiapine&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/&quot;},{&quot;label&quot;:&quot;Dias_2024 \u00b7 PD Dopamine medial prefrontal cortex extracellular concentrations&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quetiapine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/Quetiapine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quetiapine_Fukushi2020_reference&quot;,&quot;label&quot;:&quot;Fukushi_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quetiapine_Li2026_reference&quot;,&quot;label&quot;:&quot;Li_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/Quetiapine_Li2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quetiapine_Zhou2015_reference&quot;,&quot;label&quot;:&quot;Zhou_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/Quetiapine_Zhou2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;quetiapine&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/&quot;},{&quot;label&quot;:&quot;Dias_2024 \u00b7 PD dopamine (DA) medial prefrontal cortex extracellular concentrations&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quetiapine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/Quetiapine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quetiapine_Fukushi2020_reference&quot;,&quot;label&quot;:&quot;Fukushi_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quetiapine_Li2026_reference&quot;,&quot;label&quot;:&quot;Li_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/Quetiapine_Li2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Dopamine medial prefrontal cortex extracellular concentrations — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+# dopamine (DA) medial prefrontal cortex extracellular concentrations — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,7 +16,7 @@
 
 ## Record summary
 
-**As extracted:** Quetiapine (unbound brain concentration) drives Dopamine medial prefrontal cortex extracellular concentrations (in ng/mL): delayed effect through transit (transduction) compartments.
+**As extracted:** Quetiapine (concentrations from the PK model of Chen_2025) drives dopamine (DA) medial prefrontal cortex extracellular concentrations (in ng/mL): indirect response — drug stimulates the production of dopamine (DA) medial prefrontal cortex extracellular concentrations.
 
 **Model:** No model was generated from this record.
 
@@ -25,8 +25,8 @@
 > <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Dias_2024`
-- **model family:** `transduction`
-- **driver:** `not_resolved`
+- **model family:** `indirect_response_iii`
+- **driver:** `cited_pk`
 - **tier:** population
 - **effect:** stimulation/proportional
 
@@ -37,14 +37,10 @@ Dias BB et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| — | Pool0 | `Q100` ·  | 2.19 (2.97); 2.07 (2.79); 2.57 (1.54); 3.19 (1.21) | ng/mL | nil | Dias_2024:pdv3 |
-| PD (effect) | Kin | `Q327` ·  | 0.299 (0.134); 0.853 (0.902); 0.609 (0.245); 0.913 (0.683) | ng/mL * h | llm | Dias_2024:pdv3 |
-| PD (effect) | DA0 | `Q324` ·  | 0.298 (0.062); 0.222 (0.068); 0.340 (0.057); 0.294 (0.032) | ng/mL | llm | Dias_2024:pdv3 |
-| PD (effect) | EQTP | `Q335` ·  | 37.3 (10.9); 33.6 (18.4); 50.8 (21.5); 100.7 (38.3) |  | llm | Dias_2024:pdv3 |
-| PD (effect) | Keo | `Q326` ·  | 0.450 (0.131); 0.500 (0.188); 0.568 (0.238); 1.01 (0.323) | h−1 | llm | Dias_2024:pdv3 |
-| PD (effect) | Kmod | `Q328` ·  | 0.529 (0.304); 0.910 (0.869); 0.772 (0.646); 1.27 (0.91) | h−1 | llm | Dias_2024:pdv3 |
-| PD (effect) | KNP | `Q328` ·  | 3.79 (0.78); 2.56 (0.42) | h−1 | llm | Dias_2024:pdv3 |
-| — | NP0 | `Q100` ·  | 8.4 × 104 (2.4 × 104); 6.3 × 104 (1.7 × 104) | ng/mL | nil | Dias_2024:pdv3 |
+| PD (effect) | Kin | `Q327` ·  | 0.313 | ng/mL * h | llm | Dias_2024:pdv3 |
+| PD (effect) | DA0 | `Q324` ·  | 0.288 | ng/mL | llm | Dias_2024:pdv3 |
+| PD (effect) | EQTP | `Q335` ·  | 37.3 |  | llm | Dias_2024:pdv3 |
+| PD (effect) | Keo | `Q326` ·  | 0.450 | h-1 | llm | Dias_2024:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -52,11 +48,48 @@ Dias BB et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics
 </details>
 
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+
+<details><summary>7 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `driver_compound` | quetiapine | quetiapine (unbound brain concentration) | mismatch |
+| `gpt-oss-120b` | `effect_form` | proportional | additive | mismatch |
+| `gpt-oss-120b` | `parameters[Q100]` |  | unit": "ng/mL", | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q324].value` | 0.288 | unit": "ng/mL", | mismatch |
+| `gpt-oss-120b` | `parameters[Q326].value` | 0.450 | unit": "h−1", | mismatch |
+| `gpt-oss-120b` | `parameters[Q327].value` | 0.313 | unit": "ng/mL·h", | mismatch |
+| `gpt-oss-120b` | `parameters[Q335].value` | 37.3 | unit": "" , | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

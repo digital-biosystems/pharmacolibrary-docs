@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mercuri_2026_QTcF](drugs/drug_givinostat/pd_Mercuri_2026_QTcF.md) | placebo-corrected, change-from-baseline QTcF ← givinostat · direct Emax (saturable) effect | — | Mercuri E et al., Thorough QT Study on the Effect of Ther…, Clinical pharmacology in dr… (2026) | [10.1002/cpdd.70047](https://doi.org/10.1002/cpdd.70047) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mercuri_2026_QTcF](drugs/drug_givinostat/pd_Mercuri_2026_QTcF.md) | placebo-corrected, change-from-baseline QTcF ← givinostat · direct Emax (saturable) effect | — | Mercuri E et al., Thorough QT Study on the Effect of Ther…, Clinical pharmacology in dr… (2026) | [10.1002/cpdd.70047](https://doi.org/10.1002/cpdd.70047) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

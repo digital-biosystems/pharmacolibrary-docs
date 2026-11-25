@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Nomegestrol acetate clearance (CL) was reported as 5.58 h·kg, a unit inconsistent with clearance, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit h·kg ([time] * [mass]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="nomegestrol" model-id="Nomegestrol_Huang2015_reference" status="rejected" stale="false" population="female Sprague-Dawley rats" measured-compound="nomegestrol acetate" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Huang Q, Chen X, Zhu Y, Cao L, Riviere JE. Pharmacokinetics, tissue distribution
 
 ### Reviewer guidance
 
-**Nomegestrol acetate clearance (CL) was reported as 5.58 h·kg, a unit inconsistent with clearance, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit h·kg ([time] * [mass]) vs [length] ** 3 / [time].**
 
-The reported unit h·kg conflicts with the volume-per-time dimensions of clearance, which relates the rate of drug elimination to drug concentration. The record was built from the abstract alone, so summary statistics stood in for a fitted model; a second reader disagreed about whether the CL value and the equation-variable value of 10.8 h were present. Extracted — nomegestrol: CL 5.58 h·kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nomegestrol: CL 5.58 h·kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nomegestrol acetate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

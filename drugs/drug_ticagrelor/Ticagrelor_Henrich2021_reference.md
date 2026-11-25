@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The ticagrelor record was held because the bioavailability fraction and lag time were left at library defaults instead of being extracted from the paper.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ticagrelor" model-id="Ticagrelor_Henrich2021_reference" status="needs_review" stale="false" population="" measured-compound="ticagrelor" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Henrich A, Claussen CH, Dingemanse J, Krause A. Pharmacokinetic/pharmacodynamic 
 
 ### Reviewer guidance
 
-**The ticagrelor record was held because the bioavailability fraction and lag time were left at library defaults instead of being extracted from the paper.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists a two-compartment model with absorption, but the bioavailability fraction (F) and lag time (Tlag) were not extracted. The model builder used library placeholder values for these parameters, which means the simulated profiles rely on unverified assumptions rather than estimates from Henrich_2021. Consequently, the pharmacokinetic predictions are not supported by the specific data in this paper. Extracted — ticagrelor: CL 8.51 L/h, V 17 L, V2 51.4 L, Q 3.19 L/h, kabs 5.95 1/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ticagrelor: CL 8.51 L/h, V 17 L, V2 51.4 L, Q 3.19 L/h, kabs 5.95 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q3: this record has none, the second reading 0.00773; it also differs on 10 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.522, 0 of 1 reader(s) agree | 0.522 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.522 (12 of 23 compared fields agree, 11 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.522 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

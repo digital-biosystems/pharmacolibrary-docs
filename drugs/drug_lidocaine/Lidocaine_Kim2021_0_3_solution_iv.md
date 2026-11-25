@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The lidocaine model was rejected because the monoethylglycylxylidide metabolite is an orphan compartment with no defined path from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_0_3_solution_iv" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -51,13 +51,13 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 ### Reviewer guidance
 
-**The lidocaine model was rejected because the monoethylglycylxylidide metabolite is an orphan compartment with no defined path from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a metabolism link from lidocaine to monoethylglycylxylidide, but the structure lists lidocaine as the only measured compound, leaving the metabolite disconnected from the input. Although the second reader's use of abbreviations megx and gx matches the intended metabolic sequence, the primary record's orphan compartment violation necessitates refusal. Extracted — lidocaine: t1/2z 0.88 h, Cmax 197 ng/mL, tmax 0.25 h, AUC∞ 97.4 h × ng/mL.
+A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — lidocaine: t1/2z 0.88 h, Cmax 197 ng/mL, tmax 0.25 h, AUC∞ 97.4 h × ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has lidocaine → monoethylglycylxylidide (metabolism); monoethylglycylxylidide → glycylxylidide (metabolism), the second reading lidocaine → megx (metabolism); megx → gx (metabolism). That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

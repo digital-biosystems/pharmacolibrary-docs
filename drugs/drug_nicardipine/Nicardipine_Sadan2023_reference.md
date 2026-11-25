@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Nicardipine central volume of distribution (0.064 L) and total clearance (0.130 L/hr) are physiologically implausible, indicating a scale error in the record.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="nicardipine" model-id="Nicardipine_Sadan2023_reference" status="rejected" stale="false" population="adults with subarachnoid hemorrhage" measured-compound="nicardipine" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Sadan O, Jeong YS, Cohen-Sadan S, Sathialingam E, Buckley EM, Kandiah PA et al. 
 
 ### Reviewer guidance
 
-**Nicardipine central volume of distribution (0.064 L) and total clearance (0.130 L/hr) are physiologically implausible, indicating a scale error in the record.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted central volume of distribution of 0.064 L and total clearance of 0.130 L/hr fall outside physiological windows for nicardipine. These magnitudes suggest a unit or scale extraction error rather than valid pharmacokinetic estimates for adults with subarachnoid hemorrhage. The peripheral volume of 0.73 L and intercompartmental clearance of 0.11 L/hr are similarly inconsistent with typical drug behavior. Extracted — nicardipine: V1 0.064 L, CL 0.13 L/hr, V2 0.73 L, Q 0.11 L/hr, tlag 0.55 hr.
+Extracted — nicardipine: V1 0.064 L, CL 0.13 L/hr, V2 0.73 L, Q 0.11 L/hr, tlag 0.55 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nicardipine, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

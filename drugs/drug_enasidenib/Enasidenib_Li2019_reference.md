@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Enasidenib's predicted peak concentration (0.0003) is far below the paper's value (0.011), and the model structure lacks the defined metabolite compartment.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 1.1e-05, model 0.0003); t3_output_variable (+2 more).
 
 <div class="pk-model-meta" hidden drug="enasidenib" model-id="Enasidenib_Li2019_reference" status="rejected" stale="false" population="subjects with advanced hematologic malignancies" measured-compound="enasidenib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -51,13 +51,13 @@ Li Y, Connarn JN, Chen J, Tong Z, Palmisano M, Zhou S. Modeling and simulation o
 
 ### Reviewer guidance
 
-**Enasidenib's predicted peak concentration (0.0003) is far below the paper's value (0.011), and the model structure lacks the defined metabolite compartment.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 1.1e-05, model 0.0003); t3_output_variable (+2 more).**
 
-The simulated peak concentration ratio is 0.0273, indicating the model fails to reproduce the paper's Cmax. The recorded topology defines a cholesterol-to-4β-hydroxycholesterol link, but the implemented model uses a one-compartment enteral structure. A second reader disputed the identification of enasidenib as the analyte, reporting it as unknown. Extracted — enasidenib: kabs 22.1 1/day, V/F 97.7 L, CL/F 9.41 L/day.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — enasidenib: kabs 22.1 1/day, V/F 97.7 L, CL/F 9.41 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has enasidenib, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,9 +142,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 0.011 | 0.0002998 | 0.0273 | ng/mL→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | skipped |  | 172.7 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.571 (4 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.571 | cross-check contradicted by a second reader: verdict disputed; agreement 0.571 (4 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 1.1e-05 | 0.0002998 | 27.26 | reported 11.0 ng/mL→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | skipped |  | 172.7 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

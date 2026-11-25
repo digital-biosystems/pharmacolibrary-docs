@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Amoxicillin bioavailability was defaulted rather than estimated, and first-order transfer rate constants were omitted from the model.
+> F use library defaults, not estimates from this paper; t3_param_coverage (+1 more).
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Spyker1977_this_study" status="needs_review" stale="false" population="healthy adults" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Spyker DA, Rugloski RJ, Vann RL, O'Brien WM. Pharmacokinetics of amoxicillin: do
 
 ### Reviewer guidance
 
-**Amoxicillin bioavailability was defaulted rather than estimated, and first-order transfer rate constants were omitted from the model.**
+**F use library defaults, not estimates from this paper; t3_param_coverage (+1 more).**
 
-The bioavailability (F) parameter was left at a placeholder value instead of using an estimate from the paper. Additionally, the first-order transfer rate constants between the central and peripheral compartments (1.77 /h and 1.91 /h) were not included in the model definition. The record also contains discrepancies where a second reader identified additional parameters like alpha (4.30) and beta (1.37) that were missing from the primary record. Extracted — amoxicillin: k12 1.77 /h, k21 1.91 /h, CL 0.324 liters/kg/h, V 0.199 liters/kg, Vnorm 0.41 liters/kg, kabs 0.17 h−1, tlag 0.125 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — amoxicillin: k12 1.77 /h, k21 1.91 /h, CL 0.324 liters/kg/h, V 0.199 liters/kg, Vnorm 0.41 liters/kg, kabs 0.17 h−1, tlag 0.125 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the paper does not identify potassium, despite reporting potassium total clearance of 0.16 L/h/kg.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Ji2025_reference" status="rejected" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Ji X-w, Mak WY, Xue F, Yang W-y, Kuan IH-S, Xiang X-q et al. Population pharmaco
 
 ### Reviewer guidance
 
-**The record was rejected because the paper does not identify potassium, despite reporting potassium total clearance of 0.16 L/h/kg.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-Neither the paper’s title nor abstract names potassium, and the relevance screen judged the paper to concern another drug. A second reader disputed the record, agreeing on 0 of 1 review, and gave a different total clearance value: 16.3 rather than 0.16; the reader also disputed other recorded values without providing alternatives for them. Extracted — potassium: CL 0.16 L/h/kg, V1 3.88 L, V2 39 L, Q 33.9 L/h.
+Extracted — potassium: CL 0.16 L/h/kg, V1 3.88 L, V2 39 L, Q 33.9 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.16, the second reading 16.3; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (6 of 12 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (6 of 12 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

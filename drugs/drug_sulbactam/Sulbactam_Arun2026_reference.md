@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
-> Sulbactam’s reported clearance of 60.0 mL/h and derived distribution volume of 0.2597 L were rejected as physiologically implausible, consistent with a unit/scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Arun2026_reference" status="rejected" stale="false" population="" measured-compound="sulbactam" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Arun B, Liu E, Vallé Q, Sharma R, Bui NM, Mezcord V et al. Ampicillin/Sulbactam
 
 ### Reviewer guidance
 
-**Sulbactam’s reported clearance of 60.0 mL/h and derived distribution volume of 0.2597 L were rejected as physiologically implausible, consistent with a unit/scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record gives total clearance as 60.0 mL/h and volume of distribution as 0.2597 L, derived from clearance and half-life. The stated reason for rejection is that the clearance and volume have implausible magnitudes outside the physiological window, consistent with a unit/scale extraction error. Extracted — sulbactam: CL 60 mL/h, V 0.26 L.
+Extracted — sulbactam: CL 60 mL/h, V 0.26 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q1: this record has 3, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

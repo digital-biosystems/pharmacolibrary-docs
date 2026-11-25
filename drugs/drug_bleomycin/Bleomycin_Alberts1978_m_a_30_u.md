@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> AUMC unit min/ml is dimensionally incompatible with its required [mass]·[time]/[length]³ dimensions, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q20 unit min/ml ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Alberts1978_m_a_30_u" status="rejected" stale="false" population="adults" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Alberts DS, Chen HS, Liu R, Himmelstein KJ, Mayersohn M, Perrier D et al. Bleomy
 
 ### Reviewer guidance
 
-**AUMC unit min/ml is dimensionally incompatible with its required [mass]·[time]/[length]³ dimensions, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q20 unit min/ml ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The area under the first moment curve for bleomycin was reported as 350.6 min/ml. This unit represents time divided by volume, which lacks the mass dimension required for an AUMC quantity. Consequently, the dimensional check failed, and the missing SI conversion prevented valid model evaluation. Extracted — bleomycin: t1/2β 26 min, t1/2z 264 min, AUMC 351 min/ml, Vnorm 15.9 L/M2, Qb 41.7 ml/min/m2, fe 46.2, CL 70 ml/min, V 32.2 L.
+A reported unit could not be converted (AUMC), so that value has no SI equivalent. Extracted — bleomycin: t1/2β 26 min, t1/2z 264 min, AUMC 351 min/ml, Vnorm 15.9 L/M2, Qb 41.7 ml/min/m2, fe 46.2, CL 70 ml/min, V 32.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cxt mu].parameter_id`: this record has Q20, the second reading Q22; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

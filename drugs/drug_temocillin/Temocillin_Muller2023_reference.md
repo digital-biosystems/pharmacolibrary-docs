@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Temocillin clearance (1.03 L/h/kg) and volume of distribution (0.457 L/kg) were disputed because abstract-only data left dose compound unknown.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="temocillin" model-id="Temocillin_Muller2023_reference" status="needs_review" stale="false" population="neutropenic mice" measured-compound="temocillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Muller AE, Raaphorst M, van der Meijden A, de Winter BCM, Meletiadis J, van den 
 
 ### Reviewer guidance
 
-**Temocillin clearance (1.03 L/h/kg) and volume of distribution (0.457 L/kg) were disputed because abstract-only data left dose compound unknown.**
+**cross_check_disputed; x1_cross_check.**
 
-The record relies on abstract-only data, meaning summary statistics stand in for a fitted model. A second reader could not confirm the dose compound or primary analyte, marking them as unknown. Consequently, the clearance, volume of distribution, and protein binding values were null in the comparison, resulting in a disagreement. Extracted — temocillin: CL 1.03 L/h/kg, V 0.457 L/kg, fu 78.2 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — temocillin: CL 1.03 L/h/kg, V 0.457 L/kg, fu 78.2 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has temocillin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

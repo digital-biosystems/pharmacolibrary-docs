@@ -51,7 +51,8 @@ Primaquine is an antimalarial aminoquinoline used to treat and prevent malaria. 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chotivanich_2006_percent_inhibition_of_oocyst_development_transmission_blocking_activity](drugs/drug_primaquine/pd_Chotivanich_2006_percent_inhibition_of_oocyst_development_tr.md) | percent inhibition of oocyst development (transmission-blocking activity) ← primaquine · direct Emax (saturable) effect | — | Chotivanich K et al., Transmission-blocking activities of qui…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.01472-05](https://doi.org/10.1128/AAC.01472-05) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Chotivanich_2006_oocysts](drugs/drug_primaquine/pd_Chotivanich_2006_oocysts.md) | oocyst development ← primaquine · direct sigmoid Emax (Hill) effect | — | Chotivanich K et al., Transmission-blocking activities of qui…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.01472-05](https://doi.org/10.1128/AAC.01472-05) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Marino_1994_percentage_methemoglobin_2](drugs/drug_primaquine/pd_Marino_1994_percentage_methemoglobin_2.md) | methemoglobinemia ← metabolite · indirect response — drug inhibits the loss of methemoglobinemia | — | Marino MT et al., Pharmacokinetics and kinetic-dynamic mo…, Drug metabolism and disposi… (1994) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,7 +66,7 @@ Primaquine is an antimalarial aminoquinoline used to treat and prevent malaria. 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:59 | 12:27 | 2/3/0 | 1/0/0 | 0/0/0 | 458,054/44,881 | ollama / glm-5.3-flash | 30 | 1/14 | 14/1 | 1 |
+| 2026-11-24 03:48 | 0:22 | 2/3/0 | 1/1/0 | 0/0/0 | 6,002/1,739 | einfracz / qwen3.8-27b | 30 | 1/14 | 14/1 | 1 |
 
 ## Coverage
 
@@ -78,18 +79,26 @@ Primaquine is an antimalarial aminoquinoline used to treat and prevent malaria. 
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Araujo-Lima_2023 | irrelevant | 0 | 0 | Primaquine is only a structural moiety in synthetic hybrids; PK is in silico ADME prediction of the hybrids, with no quantitative disposition parameters for primaquine itself. |
-| popPK | Bolchoz_2001 | irrelevant | 1 | 1 | In-vitro/mechanistic metabolism and toxicity study of a primaquine metabolite with no PK disposition parameters reported. |
-| popPK | Boonyasuppayakorn_2014 | irrelevant | 0 | 0 | This is an in-vitro antiviral study of amodiaquine against dengue; primaquine is only a screened comparator with no PK parameters. |
-| popPK | Brueckner_1991 | irrelevant | 0 | 0 | The drug studied is WR 238605, a primaquine analogue, not primaquine itself; numeric PK parameters are for the analogue in dogs. |
-| popPK | Capela_2018 | irrelevant | 0 | 0 | Medicinal chemistry study of hybrid compounds; primaquine only as comparator, no PK parameters. |
-| popPK | Chotivanich_2006 | irrelevant | 0 | 0 | In vitro gametocytocidal EC50/EC90 study, not a PK study; no disposition parameters (CL, V, half-life) for primaquine are reported. |
+| popPK | Araujo-Lima_2023 | irrelevant | 0 | 0 | The study focuses on new synthetic hybrids of atorvastatin and aminoquinolines, using primaquine only as a structural reference or comparator, and the pharmacokinetic data are in silico predictions for the hybrids, not quantitative parameters for primaquine itself. |
+| PGx | Araujo-Lima_2023 | not_relevant | 0 | 0 | The paper evaluates in silico PK and in vitro efficacy of new hybrids, and does not report genetic variants or gene-based changes in the PK/PD of primaquine. |
+| popPK | Bolchoz_2001 | irrelevant | 1 | 0 | The study focuses on the in vitro metabolism and in vivo hemotoxicity of a primaquine metabolite (MAQ-NOH) rather than reporting population pharmacokinetic parameters (CL, V, etc.) for primaquine itself. |
+| PGx | Bolchoz_2001 | not_relevant | 0 | 0 | The paper describes the formation of a hemotoxic metabolite of primaquine in rat and human microsomes but does not report pharmacogenomic data linking gene variants to changes in PK or PD parameters. |
+| popPK | Boonyasuppayakorn_2014 | irrelevant | 0 | 0 | The study is an in-vitro virology investigation of amodiaquine's antiviral activity against dengue virus, and primaquine is only mentioned as a screened compound without any pharmacokinetic data. |
+| PGx | Boonyasuppayakorn_2014 | not_relevant | 0 | 0 | The paper investigates the antiviral activity of amodiaquine against dengue virus and contains no information on primaquine or pharmacogenomics. |
+| popPK | Brueckner_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of the compound WR 238605 (a primaquine analogue), not primaquine itself. |
+| PGx | Brueckner_1991 | not_relevant | 0 | 0 | The study focuses on PK/PD modeling of a primaquine analogue in dogs and does not investigate any gene variants or pharmacogenomic effects. |
+| popPK | Capela_2018 | irrelevant | 0 | 0 | The paper is a medicinal chemistry and in-vitro pharmacology study focusing on the synthesis and anti-plasmodial activity of hybrid compounds, with no population pharmacokinetic modeling or quantitative disposition parameters for primaquine. |
+| PGx | Capela_2018 | not_relevant | 0 | 0 | The paper describes the synthesis and preclinical activity of novel hybrid compounds, with no human pharmacogenomic or pharmacokinetic data reported. |
+| popPK | Chotivanich_2006 | irrelevant | 0 | 0 | The study is an in vitro assessment of the transmission-blocking activity (gametocytocidal effect) of primaquine on malaria parasites in mosquitoes, reporting EC50/EC90 values rather than pharmacokinetic disposition parameters (CL, V, ka, etc.) for the drug itself. |
+| PGx | Chotivanich_2006 | not_relevant | 0 | 0 | The paper evaluates the in vitro transmission-blocking activity (EC50/EC90) of primaquine, but does not report any pharmacogenomic effects or genetic variations influencing these pharmacokinetic or pharmacodynamic parameters. |
 | popPK | Chotsiri_2017 | irrelevant | 2 | 1 | Primaquine is only a co-administered probe/placebo arm; the population-PK parameters (CL/F, V, ka, t1/2) reported are for DHA and piperaquine, with no quantitative primaquine PK model values. |
 | popPK | Commons_2019 | irrelevant | 0 | 0 | This is a haematological (haemoglobin response) IPD meta-analysis of vivax malaria; primaquine is a co-intervention, with no PK parameters (CL, V, ka, half-life, or population-PK model) reported anywhere in the evidence. |
 | popPK | Daher_2019_2 | irrelevant | 2 | 1 | PK parameters (AUC, half-life) are for chloroquine/mefloquine/lumefantrine; primaquine PK was not modelled and no numeric primaquine parameters are present. |
-| popPK | Marino_1994 | irrelevant | 0 | 0 | The drug studied is WR242511, a different 8-aminoquinoline; primaquine is only mentioned as background, and no numeric PK parameters for primaquine appear. |
+| popPK | Marino_1994 | irrelevant | 2 | 1 | The study focuses on the pharmacokinetics of the analog WR242511, not primaquine, despite mentioning primaquine as a comparator. |
+| PGx | Marino_1994 | not_relevant | 0 | 0 | The paper describes PK/PD modeling for WR242511 and does not report any genetic variants, genotypes, or pharmacogenomic effects. |
 | popPK | Nyamwihura_2021 | irrelevant | 0 | 0 | This is a medicinal chemistry/synthesis paper on nopol-based quinoline antimalarials with in vitro EC50 data; primaquine is only mentioned as a comparator and no PK parameters are reported. |
-| popPK | Persoons_2021 | irrelevant | 0 | 0 | In-vitro antiviral study of quinoline analogues including primaquine; no PK disposition parameters reported, only EC50/CC50 values. |
+| popPK | Persoons_2021 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic/antiviral efficacy study, not a pharmacokinetic study, and reports no PK parameters for primaquine. |
+| PGx | Persoons_2021 | not_relevant | 0 | 0 | The paper evaluates the antiviral activity of quinoline analogues against coronaviruses and does not investigate the impact of gene variants on the pharmacokinetics or pharmacodynamics of primaquine. |
 | popPK | Rajić_2018 | irrelevant | 0 | 0 | This is a synthetic chemistry/antimicrobial activity paper on primaquine derivatives; no PK parameters for primaquine are reported. |
 | popPK | Watson_2017 | irrelevant | 2 | 1 | This is a model of primaquine-induced haemolysis (RBC dynamics), not a PK model of primaquine disposition; the only PK value is a half-life (~5 hr) mentioned in passing with no CL/V or population-PK parameters, and no numeric PK table is present. |
 

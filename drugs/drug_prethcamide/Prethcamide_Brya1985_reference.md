@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Prethcamide’s reported blood clearance, 0.05 1/min, has inverse-time units rather than the volume-per-time units required for clearance.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q23 unit 1/min (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="prethcamide" model-id="Prethcamide_Brya1985_reference" status="rejected" stale="false" population="rabbits" measured-compound="prethcamide" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Bryła P, Szumiło T. Pharmacokinetics of prethcamide following rapid intravenou
 
 ### Reviewer guidance
 
-**Prethcamide’s reported blood clearance, 0.05 1/min, has inverse-time units rather than the volume-per-time units required for clearance.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q23 unit 1/min (1 / [time]) vs [length] ** 3 / [time].**
 
-The record defines CLb as blood clearance, but its 1/min unit conflicts with the volume-per-time dimension of clearance, and the model was rejected. Only the abstract was read, so reported summary statistics stood in for a fitted model. The second reader disputed the analyte identity, naming ethyl butamide and propyl butamide, and disagreed over whether the parameter values were present. Extracted — prethcamide: t1/2β 43.1 min, CLb 0.05 1/min, kabs 0.033 1/h, tmax 30 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — prethcamide: t1/2β 43.1 min, CLb 0.05 1/min, kabs 0.033 1/h, tmax 30 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has prethcamide, the second reading ethyl butamide and propyl butamide; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

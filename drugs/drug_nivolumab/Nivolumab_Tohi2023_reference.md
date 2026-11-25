@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Nivolumab was rejected for negative clearance or volume, although its reported CL is 0.0064 L h−1 and the finding does not identify the negative parameter or value.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="nivolumab" model-id="Nivolumab_Tohi2023_reference" status="rejected" stale="false" population="Japanese patients with nonsmall cell lung cancer" measured-compound="nivolumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Tohi M, Irie K, Mizuno T, Okuyoshi H, Hirabatake M, Ikesue H et al. Population P
 
 ### Reviewer guidance
 
-**Nivolumab was rejected for negative clearance or volume, although its reported CL is 0.0064 L h−1 and the finding does not identify the negative parameter or value.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record reports nivolumab CL of 0.0064 L h−1, V1 of 2.28 L, and V2 of 1.81 L; the rejection finding says clearance or volume is negative at baseline or in a covariate scenario but specifies neither the affected parameter nor the negative value. A second reader marked the dose compound and primary analyte as unknown, unlike this record, which identifies both as nivolumab. Extracted — nivolumab: CL 0.0064 L h−1, V1 2.28 L, V2 1.81 L, Q 0.018 L h−1.
+Extracted — nivolumab: CL 0.0064 L h−1, V1 2.28 L, V2 1.81 L, Q 0.018 L h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nivolumab, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

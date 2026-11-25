@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because a second reader disagreed, finding the clearance value of 0.7 L/d unverifiable.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="trastuzumab emtansine" model-id="TrastuzumabEmtansine_Gupta2012_reference" status="needs_review" stale="false" population="patients with HER2-positive metastatic breast cancer" measured-compound="trastuzumab emtansine" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Gupta M, Lorusso PM, Wang B, Yi JH, Burris HA, Beeram M et al. Clinical implicat
 
 ### Reviewer guidance
 
-**The record was held back because a second reader disagreed, finding the clearance value of 0.7 L/d unverifiable.**
+**cross_check_disputed; x1_cross_check.**
 
-The pharmacokinetic record was derived solely from the paper's abstract, meaning the summary statistics stand in for a fitted model. Consequently, the second reader could not verify the reported clearance, central compartment volume, intercompartmental clearance, or peripheral compartment volume. This lack of verifiable data resulted in a disputed verdict, preventing the model from being published. Extracted — trastuzumab emtansine: CL 0.7 L/d, V1 3.33 L, V2 0.89 L, Q 0.78 L/d.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — trastuzumab emtansine: CL 0.7 L/d, V1 3.33 L, V2 0.89 L, Q 0.78 L/d.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trastuzumab emtansine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,7 +142,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

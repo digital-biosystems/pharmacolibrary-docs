@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The doxorubicin clearance parameter lacks a value, and four metabolites are structurally unreachable from the parent drug's dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Methaneethorn2023_reference" status="rejected" stale="false" population="oncology patients (cancer)" measured-compound="doxorubicin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -45,13 +45,11 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
-**The doxorubicin clearance parameter lacks a value, and four metabolites are structurally unreachable from the parent drug's dose.**
-
-The record shows doxorubicin's total clearance (CL) is null, so no elimination rate was defined for the parent drug. The four listed metabolites (doxorubicinol, doxorubicinone, 7-deoxydoxorubicinolone, and 7-deoxydoxorubicinone) share a single metabolic rate constant but lack a viable path from the dose compartment. Because the metabolites are orphaned and the parent has no clearance value, the model structure is invalid.
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 

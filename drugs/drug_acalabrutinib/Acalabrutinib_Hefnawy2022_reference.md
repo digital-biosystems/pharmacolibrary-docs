@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The review paper concerns a different drug, so the acalabrutinib clearance value of 0.21 L/h is misattributed.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="acalabrutinib" model-id="Acalabrutinib_Hefnawy2022_reference" status="rejected" stale="false" population="" measured-compound="acalabrutinib" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Hefnawy MM, Alanazi MM, Al-Hossaini AM, Alnasser AI, El-Azab AS, Jardan YAB et a
 
 ### Reviewer guidance
 
-**The review paper concerns a different drug, so the acalabrutinib clearance value of 0.21 L/h is misattributed.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source paper's subject is not acalabrutinib, as neither the title nor abstract names the drug. Consequently, the extracted apparent oral clearance value is incorrect for the intended molecule. The record was rejected because the paper subject is another drug, invalidating the specific parameter values for acalabrutinib. Extracted — acalabrutinib: CL/F 0.21 L/h, V/F 1.03 L.
+Extracted — acalabrutinib: CL/F 0.21 L/h, V/F 1.03 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q900: this record has none, the second reading 44. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.9 (9 of 10 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.9 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

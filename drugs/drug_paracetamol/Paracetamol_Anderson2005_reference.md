@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The propacetamol-to-paracetamol metabolite link is missing, leaving the paracetamol compartment unreachable from the parent dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Anderson2005_reference" status="rejected" stale="false" population="children" measured-compound="paracetamol" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Anderson BJ, Pons G, Autret-Leca E, Allegaert K, Boccard E. Pediatric intravenou
 
 ### Reviewer guidance
 
-**The propacetamol-to-paracetamol metabolite link is missing, leaving the paracetamol compartment unreachable from the parent dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model records paracetamol as a metabolite of propacetamol but defines no links between them, making the metabolite orphaned. A second reader identified a hydrolysis link and a 16 L/h clearance, but the record lists no model links or oral clearance values. Additionally, the record assigns the 45.0 L/70kg value to V2 rather than the specific parameter name used by the second reader. Extracted — paracetamol: CLm/F 0.75, V2 45 L/70kg, V/F 0.16 L/kg, kabs 9.76 h -1, tlag 4.2 min.
+Extracted — paracetamol: CLm/F 0.75, V2 45 L/70kg, V/F 0.16 L/kg, kabs 9.76 h -1, tlag 4.2 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading propacetamol → paracetamol (hydrolysis); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

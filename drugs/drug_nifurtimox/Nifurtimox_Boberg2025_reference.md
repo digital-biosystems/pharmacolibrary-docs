@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the source paper describes eflornithine PK, not nifurtimox, making the extracted nifurtimox parameters invalid.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="nifurtimox" model-id="Nifurtimox_Boberg2025_reference" status="rejected" stale="false" population="" measured-compound="nifurtimox" parameterization="apparent" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Boberg M, Na-Bangchang K, Ashton M, Jansson-Löfmark R. Pharmacokinetics of Race
 
 ### Reviewer guidance
 
-**Record rejected because the source paper describes eflornithine PK, not nifurtimox, making the extracted nifurtimox parameters invalid.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source document models eflornithine, with nifurtimox appearing only as a co-administered partner and lacking its own disposition parameters. The label for the clearance parameter is verbatim 'L-eflornithine CL/F', confirming the extracted values belong to the wrong molecule. Additionally, the record is disputed by a second reader, who assigned different values or nulls for several fields including Q/F and kabs. Extracted — nifurtimox: CL/F 17.2 L/h, V/F 55 L, V2/F 66.3 L, Q/F 8.01 L/h, kabs 1.16 h -1, tlag 0.447 h.
+Extracted — nifurtimox: CL/F 17.2 L/h, V/F 55 L, V2/F 66.3 L, Q/F 8.01 L/h, kabs 1.16 h -1, tlag 0.447 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 16.6, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,7 +147,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (10 of 20 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (10 of 20 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

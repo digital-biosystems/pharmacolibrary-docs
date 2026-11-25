@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was held back because amoxicillin's bioavailability, clearance, and volume of distribution lacked extracted values.
+> No value for amoxicillin's bioavailability, clearance and volume of distribution; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Barker2023_parameter_estimates_flucloxacillin_mo" status="model_quarantined" stale="false" population="neonates and paediatric patients" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -38,7 +38,7 @@ Barker CIS, Kipper K, Lonsdale DO, Wright K, Thompson G, Kim M et al. The Neonat
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,13 @@ Barker CIS, Kipper K, Lonsdale DO, Wright K, Thompson G, Kim M et al. The Neonat
 
 ### Reviewer guidance
 
-**The model was held back because amoxicillin's bioavailability, clearance, and volume of distribution lacked extracted values.**
+**No value for amoxicillin's bioavailability, clearance and volume of distribution; t6_deviations (+1 more).**
 
-The record lists total clearance and volume of distribution for flucloxacillin, not the measured compound, amoxicillin. Consequently, amoxicillin's bioavailability, clearance, and volume of distribution remained unset, causing the model to use library placeholders. The model was quarantined to prevent publication based on these missing structural parameters. Extracted — flucloxacillin: CL 14.6 L/h, V 23.3 L; amoxicillin: kabs 0.17 h−1, tlag 0.125 h.
+The model was built, but amoxicillin's bioavailability, clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — flucloxacillin: CL 14.6 L/h, V 23.3 L; amoxicillin: kabs 0.17 h−1, tlag 0.125 h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 0.17, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -98,6 +100,32 @@ The record lists total clearance and volume of distribution for flucloxacillin, 
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
+
+<details><summary>6 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[ka]` | 0.17 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag [h]]` | 0.125 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvcl]` |  | 16.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvcl]` | 14.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvv]` |  | 46.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvv]` | 23.3 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -116,14 +144,14 @@ The record lists total clearance and volume of distribution for flucloxacillin, 
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| X1_cross_check | skipped |  |  | no second reading of this record |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

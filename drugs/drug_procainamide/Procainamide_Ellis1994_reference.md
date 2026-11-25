@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The procainamide model was rejected because absorption parameters were defaulted, and it failed to reproduce the paper's terminal half-life.
+> The model does not reproduce the paper's terminal half-life (paper 6.31, model 3.4); ka use library defaults, not estimates from this paper (+4 more).
 
 <div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Ellis1994_reference" status="rejected" stale="false" population="horses" measured-compound="procainamide" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -53,13 +53,13 @@ Ellis EJ, Ravis WR, Malloy M, Duran SH, Smyth BG. The pharmacokinetics and pharm
 
 ### Reviewer guidance
 
-**The procainamide model was rejected because absorption parameters were defaulted, and it failed to reproduce the paper's terminal half-life.**
+**The model does not reproduce the paper's terminal half-life (paper 6.31, model 3.4); ka use library defaults, not estimates from this paper (+4 more).**
 
-The record lists a parent-metabolite structure, but the model builder substituted library defaults for absorption parameters that were not estimated in the source. Additionally, the simulated terminal half-life of 3.4 hours deviates significantly from the 6.31 hours reported in the paper. Extracted — procainamide: V/F 1.93 L/kg, CL 0.395 L/h/kg, V 2.4 l/kg.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — procainamide: V/F 1.93 L/kg, CL 0.395 L/h/kg, V 2.4 l/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has procainamide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -164,10 +164,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 6.31 | 3.403 | 0.5392 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 7 | 3.403 | 0.4861 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 6.31 | 3.403 | 0.5392 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.0 (0 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0 | cross-check contradicted by a second reader: verdict disputed; agreement 0.0 (0 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 6.31 | 3.403 | 0.5392 | reported 6.31 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 7 | 3.403 | 0.4861 | reported 7.0 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 6.31 | 3.403 | 0.5392 | reported 6.31 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

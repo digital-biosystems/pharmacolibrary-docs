@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> The volume of distribution for aflibercept in rodents and rabbits is recorded as 0.046 ml, an implausibly small value that indicates a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_Park2022_mouse" status="rejected" stale="false" population="mice, rats, and rabbits" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Park S, Lee YW, Oh J, Kim SJ, Lee S, Lee HY. Pharmacokinetic evaluation of radio
 
 ### Reviewer guidance
 
-**The volume of distribution for aflibercept in rodents and rabbits is recorded as 0.046 ml, an implausibly small value that indicates a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports a volume of distribution of 0.046 ml, a magnitude inconsistent with physiological expectations for these molecules and populations. This likely stems from a failure to correctly interpret the units or scale during data extraction. Although a secondary reader questioned the dose compound and model links, the primary rejection reason is this specific parameter magnitude. Extracted — aflibercept: t1/2z 27.1 h, AUC∞ 9.2e+04, V 0.046 ml, CL 0.0014.
+Extracted — aflibercept: t1/2z 27.1 h, AUC∞ 9.2e+04, V 0.046 ml, CL 0.0014.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aflibercept, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

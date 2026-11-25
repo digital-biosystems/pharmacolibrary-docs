@@ -35,7 +35,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,6 +48,8 @@ _No resolved parameters._
 **Only clearance was extracted — no volume.**
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 2.72, the second reading 27.2; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -159,6 +161,37 @@ A model needs both clearance and volume; without the volume it could only be bui
 - captured model equation Q = 10.8*(BW/50)^
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.267 (4/15 fields) | 11 |
+
+<details><summary>11 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | 2.72 | 27.2 | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f].value` |  | 27.2 | mismatch |
+| `gpt-oss-120b` | `parameters[ka].value` |  | 56.70 | mismatch |
+| `gpt-oss-120b` | `parameters[mtt]` |  | 180.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[nn]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q].value` |  | 63.70 | mismatch |
+| `gpt-oss-120b` | `parameters[tlag].value` |  | 94.02 | mismatch |
+| `gpt-oss-120b` | `parameters[v].value` |  | 23.87 | mismatch |
+| `gpt-oss-120b` | `parameters[vc].value` |  | 24.10 | mismatch |
+| `gpt-oss-120b` | `parameters[vp].value` |  | 190 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

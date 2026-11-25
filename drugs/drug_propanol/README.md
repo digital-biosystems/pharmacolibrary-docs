@@ -22,7 +22,7 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Hsieh_2006_DO](drugs/drug_propanol/pd_Hsieh_2006_DO.md) | DO production ← propanol · inhibition effect | — | Hsieh SH et al., The combined toxic effects of nonpolar…, Water research (2006) | [10.1016/j.watres.2006.03.026](https://doi.org/10.1016/j.watres.2006.03.026) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Di_2020_Botrytis_cinerea_mycelial_growth](drugs/drug_propanol/pd_Di_2020_Botrytis_cinerea_mycelial_growth.md) | Botrytis cinerea mycelial growth biomarker turnover ← 2-methyl-1-propanol | — | Di Francesco A et al., Bioactivity of volatile organic compoun…, World journal of microbiolo… (2020) | [10.1007/s11274-020-02947-7](https://doi.org/10.1007/s11274-020-02947-7) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Di_2020_Botrytis_cinerea_mycelial_growth](drugs/drug_propanol/pd_Di_2020_Botrytis_cinerea_mycelial_growth.md) | Botrytis cinerea mycelial growth biomarker turnover ← 2-methyl-1-propanol | — | Di Francesco A et al., Bioactivity of volatile organic compoun…, World journal of microbiolo… (2020) | [10.1007/s11274-020-02947-7](https://doi.org/10.1007/s11274-020-02947-7) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:38 | 15:07 | 0/0/0 | 1/1/0 | 0/0/0 | 264,507/7,819 | einfracz / qwen3.8-27b | 19 | 7/7 | 17/2 | 0 |
+| 2026-10-07 07:38 | 15:07 | 0/0/0 | 2/0/0 | 0/0/0 | 264,507/7,819 | einfracz / qwen3.8-27b | 19 | 7/7 | 17/2 | 0 |
 
 ## Coverage
 

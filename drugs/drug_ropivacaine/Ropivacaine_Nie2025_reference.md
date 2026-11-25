@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the intercompartmental clearance for ropivacaine is implausibly low, indicating a magnitude error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Nie2025_reference" status="rejected" stale="false" population="" measured-compound="ropivacaine" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Nie Y, Sun X, Cao R, Tang S, Zhou Q, Zhou M et al. Population Pharmacokinetic of
 
 ### Reviewer guidance
 
-**The record is rejected because the intercompartmental clearance for ropivacaine is implausibly low, indicating a magnitude error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The intercompartmental clearance is recorded as 0.0134 L/h, which is inconsistent with the central volume of 519.0 L. A second reader disputed this value, asserting it should be 20.6, while the automated review confirmed the magnitude was outside physiological limits. Extracted — ropivacaine: CL 176 L/h, V1 519 L, V2 0.187 L, Q 0.0134 L/h.
+Extracted — ropivacaine: CL 176 L/h, V1 519 L, V2 0.187 L, Q 0.0134 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q316: this record has none, the second reading 20.6. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;daunorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/&quot;},{&quot;label&quot;:&quot;Quartino_2007 \u00b7 PD survival index&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_daunorubicin&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_daunorubicin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_daunorubicin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present_study&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present_study.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gumbo_2020_2_bacterial_burden&quot;,&quot;label&quot;:&quot;Gumbo_2020_2 \u00b7 bacterial burden&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/pd_Gumbo_2020_2_bacterial_burden.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Quartino_2007_SI&quot;,&quot;label&quot;:&quot;Quartino_2007 \u00b7 SI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/pd_Quartino_2007_SI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Quartino_2007_SI&quot;,&quot;label&quot;:&quot;Quartino_2007 \u00b7 SI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/pd_Quartino_2007_SI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# survival index — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span>
+# survival index — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -12,11 +12,9 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-> **Species: in vitro.** This record comes from an in-vitro study (cells, tissue or microsomes), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 0.00).
-
 ## Record summary
 
-**As extracted:** Daunorubicin (Dnr) (measured concentrations) drives survival index (in %): direct sigmoid Emax (Hill) effect.
+**As extracted:** Daunorubicin (concentrations from the PK model of Thompson_2014_2) drives survival index (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
@@ -26,7 +24,7 @@
 
 - **paper:** `Quartino_2007`
 - **model family:** `sigmoid_emax`
-- **driver:** `conc_no_pk`
+- **driver:** `cited_pk`
 - **tier:** population
 - **effect:** inhibition/proportional
 
@@ -37,12 +35,9 @@ Quartino A et al., Modeling of in vitro drug activity and…, Journal of clinica
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | E max | `Q323` ·  | 0.91 |  | llm | Quartino_2007:pdv3 |
-| PD (effect) | EC 50 | `Q322` ·  | 0.09 | μg/mL | llm | Quartino_2007:pdv3 |
+| PD (effect) | E max | `Q323` ·  | 0.91 |  | direction | Quartino_2007:pdv3 |
+| PD (effect) | EC 50 | `Q321` ·  | 0.09 | μg/mL | llm | Quartino_2007:pdv3 |
 | PD (effect) | Slope | `Q325` ·  | 1.23 |  | llm | Quartino_2007:pdv3 |
-| variability | Interpatient CV for E max | `Q312` ·  | 11 | % | llm | Quartino_2007:pdv3 |
-| variability | Interpatient CV for EC 50 | `Q312` ·  | 118 | % | llm | Quartino_2007:pdv3 |
-| variability | Additive residual error | `Q315` ·  | 10.80 |  | llm | Quartino_2007:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -87,17 +82,19 @@ Advisory:
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.857 (6/7 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `driver_compound` | daunorubicin (Dnr) | daunorubicin | mismatch |
+| `gpt-oss-120b` | `parameters[Q321]` | 0.09 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q323]` | 0.91 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q325]` | 1.23 |  | only_one_extracted |
 
 </details>
 
@@ -114,7 +111,7 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Quartino2007_PD_si/Daunorubicin_Quartino2007_PD_si_modelica.zip" download>Daunorubicin_Quartino2007_PD_si_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Quartino2007_PD_si/Daunorubicin_Quartino2007_PD_si_fmi.zip" download>Daunorubicin_Quartino2007_PD_si_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Quartino2007_PD_si/Daunorubicin_Quartino2007_PD_si_matlab.zip" download>Daunorubicin_Quartino2007_PD_si_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_daunorubicin/Daunorubicin_Quartino2007_PD_si/Daunorubicin_Quartino2007_PD_si_sbml.zip" download>Daunorubicin_Quartino2007_PD_si_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>

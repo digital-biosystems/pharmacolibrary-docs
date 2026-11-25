@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> The record was rejected because the paper studies sulfonamide antibiotics and trimethoprim in pigs, not ketoprofen; ketoprofen’s listed total clearance is 0.015 L/h/kg.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="ketoprofen" model-id="Ketoprofen_Boulanger2025_reference" status="rejected" stale="false" population="" measured-compound="ketoprofen" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Boulanger M, Taillandier JF, Henri J, Devreese M, De Baere S, Lacroix M et al. P
 
 ### Reviewer guidance
 
-**The record was rejected because the paper studies sulfonamide antibiotics and trimethoprim in pigs, not ketoprofen; ketoprofen’s listed total clearance is 0.015 L/h/kg.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper describes ketoprofen only as an analgesic used for animals, while its stated pharmacokinetic focus is sulfonamide antibiotics and trimethoprim in pigs. The record lists ketoprofen total clearance as 0.015 L/h/kg and central-compartment volume as 0.13 L/kg, but the paper’s subject is another drug. Extracted — ketoprofen: CL 0.015 L/h/kg, V1 0.13 L/kg.
+Extracted — ketoprofen: CL 0.015 L/h/kg, V1 0.13 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q310: this record has none, the second reading 12.5; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -125,7 +125,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.625 (5 of 8 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.625 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

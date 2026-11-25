@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Fentanyl central volume of distribution is recorded as 275 mL, failing the physiological window check for rat pharmacokinetics.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Obert2026_reference" status="rejected" stale="false" population="male and female Sprague-Dawley rats" measured-compound="fentanyl" parameterization="mechanistic" topology="manual_model_class"></div>
 
@@ -61,13 +61,13 @@ Obert DP, McKnite A, Park GH, Watt KM, Reilly CA, Vincent KF et al. Pharmacokine
 
 ### Reviewer guidance
 
-**Fentanyl central volume of distribution is recorded as 275 mL, failing the physiological window check for rat pharmacokinetics.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The fentanyl central volume of distribution is recorded as 275 mL, which is implausibly high for the Sprague-Dawley rat population. The model structure uses a manual class containing a Michaelis-Menten metabolic pathway to norfentanyl that the review tool could not process. The review flagged the volume of distribution as having an implausible magnitude, suggesting a unit or scale extraction error, leading to the record's rejection. Extracted — fentanyl: CL 774 mL/h, V1 275 mL, Q 232 mL/h, V2 326 mL, kabs 0.27 minute -1, tlag 15 min; norfentanyl: Km 2.89 ng/mL, Vmax 78.8 ng/mL per h, CL 23.6 mL/h, V 10.4 mL.
+No model template covers this structure. Extracted — fentanyl: CL 774 mL/h, V1 275 mL, Q 232 mL/h, V2 326 mL, kabs 0.27 minute -1, tlag 15 min; norfentanyl: Km 2.89 ng/mL, Vmax 78.8 ng/mL per h, CL 23.6 mL/h, V 10.4 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clfent_sex: this record has -0.158, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

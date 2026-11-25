@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper models DSM265, not mefloquine, and omits an extracted value for the absorption lag time.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_CherkaouiRbati2023_reference" status="rejected" stale="false" population="" measured-compound="mefloquine" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Cherkaoui-Rbati MH, Andenmatten N, Burgert L, Egbelowo OF, Fendel R, Fornari C e
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper models DSM265, not mefloquine, and omits an extracted value for the absorption lag time.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The source text explicitly describes a pharmacokinetic-pharmacodynamic model for DSM265, where mefloquine is only mentioned as a comparator prophylactic without any pharmacokinetic parameters. The extraction process failed to capture the absorption lag time, leaving the record with only four of the five required parameters. Additionally, a second reader disagreed on specific extracted values, including a reported value of 0.147 for the lag time which was flagged as missing. Extracted — mefloquine: CL 0.476 L/h, V1 8.58 L, V2 57.3 L, Q 37.1 L/h, tlag 0.147 h.
+Extracted — mefloquine: CL 0.476 L/h, V1 8.58 L, V2 57.3 L, Q 37.1 L/h, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q310: this record has 2.85, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | cross-check disputed by a second reader: verdict disputed, agreement 0.7, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.7 (7 of 10 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.7 | cross-check contradicted by a second reader: verdict disputed; agreement 0.7 (7 of 10 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

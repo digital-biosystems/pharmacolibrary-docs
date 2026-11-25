@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The flucloxacillin record was rejected because the intrinsic clearance covariate was negative, at -0.653.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="flucloxacillin" model-id="Flucloxacillin_Drennan2021v2_final" status="rejected" stale="false" population="adults with staphylococcal infections and healthy adults" measured-compound="free flucloxacillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Drennan PG, Green JK, Gardiner SJ, Metcalf SCL, Kirkpatrick CMJ, Everts RJ et al
 
 ### Reviewer guidance
 
-**The flucloxacillin record was rejected because the intrinsic clearance covariate was negative, at -0.653.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The parameter representing the ratio of maximum metabolic rate to the Michaelis-Menten constant was estimated at -0.653, which is physically implausible. This negative value rendered the clearance estimate invalid. Additionally, a reported unit could not be converted to SI, leaving the parameter without a standardized value. Extracted — flucloxacillin: tlag 52.6 h, kabs 11.8 h−1, V 48.4 L, CL 18.5 L h−1, CLint -0.653, Fab 51.3.
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — flucloxacillin: tlag 52.6 h, kabs 11.8 h−1, V 48.4 L, CL 18.5 L h−1, CLint -0.653, Fab 51.3.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flucloxacillin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

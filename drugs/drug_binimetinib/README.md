@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:43 | 0:19 | 0/0/0 | 0/0/0 | 0/0/0 | 20,193/1,455 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 19:13 | 0:04 | 0/0/0 | 0/0/0 | 0/0/0 | 4,010/202 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -41,22 +41,23 @@ _not available_
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Pétermann_2026.pdf` | Pétermann YJ et al., Population pharmacokinetics of encorafe…, Cancer chemotherapy and pha… (2026) | popPK | 9 | [10.1007/s00280-026-04876-y](https://doi.org/10.1007/s00280-026-04876-y) | [41843134](https://pubmed.ncbi.nlm.nih.gov/41843134) | The population-PK model and numeric exposure metrics and half-life are reported, but no numeric compartmental parameter estimates are provided. |
-| `Sayadi_2026.pdf` | Sayadi H et al., From empirical caution to precision res…, European journal of clinica… (2026) | popPK | 8 | [10.1007/s00228-026-04040-8](https://doi.org/10.1007/s00228-026-04040-8) | [41896433](https://pubmed.ncbi.nlm.nih.gov/41896433) | The human overdose case uses a binimetinib population-PK model, but no numeric disposition parameters are provided. |
+| `Sayadi_2026.pdf` | Sayadi H et al., From empirical caution to precision res…, European journal of clinica… (2026) | popPK | 9 | [10.1007/s00228-026-04040-8](https://doi.org/10.1007/s00228-026-04040-8) | [41896433](https://pubmed.ncbi.nlm.nih.gov/41896433) | The paper is a case report using a population PK model for binimetinib, but it does not report the underlying model parameter estimates (CL, V, etc.), only the simulated concentration outcomes. |
 
-<sub>queue written 2026-10-06 21:43 UTC</sub>
+<sub>queue written 2026-11-23 19:13 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Kim_2019 | irrelevant | 0 | 0 | This is a review and provides no original numeric binimetinib disposition parameters in the evidence. |
+| popPK | Kim_2019 | irrelevant | 0 | 0 | This is a review article that discusses clinical PK/PD considerations in general without providing original quantitative parameter values for binimetinib in the extracted evidence. |
+| PGx | Kim_2019 | not_relevant | 0 | 0 | The provided text is an abstract of a general review on melanoma treatment and does not contain specific data on pharmacogenomic effects on binimetinib PK/PD. |
 | popPK | Pétermann_2026 | relevant | 9 | 4 | The population-PK model and numeric exposure metrics and half-life are reported, but no numeric compartmental parameter estimates are provided. |
-| popPK | Sayadi_2026 | relevant | 8 | 2 | The human overdose case uses a binimetinib population-PK model, but no numeric disposition parameters are provided. |
+| popPK | Sayadi_2026 | relevant | 9 | 1 | The paper is a case report using a population PK model for binimetinib, but it does not report the underlying model parameter estimates (CL, V, etc.), only the simulated concentration outcomes. |
+| PGx | Sayadi_2026 | not_relevant | 0 | 0 | The paper discusses Model-Informed Precision Dosing (MIPD) for a binimetinib overdose and mentions a BRAF mutation as the indication for treatment, but it does not report any genetic or phenotypic variations affecting the pharmacokinetics (PK) or pharmacodynamics (PD) of binimetinib. |
 | popPK | Yang_2026 | irrelevant | 0 | 0 | The quantitative PK parameters are for encorafenib; binimetinib is only mentioned as a combination treatment. |
 
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> 4-methylaminoantipyrine’s apparent intercompartmental clearance Q was reported as 0.030 1/h, a rate unit rather than a volume-per-time unit.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit 1/h (1 / [time]) vs [length] ** 3 / [time]; Q30 unit 1/h (1 / [time]) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Blaser2021_metamizole" status="rejected" stale="false" population="healthy salt-depleted adults" measured-compound="4-methylaminoantipyrine" parameterization="apparent" topology="general_linear"></div>
 
@@ -63,13 +63,13 @@ Blaser LS, Duthaler U, Bouitbir J, Leuppi-Taegtmeyer AB, Liakoni E, Dolf R et al
 
 ### Reviewer guidance
 
-**4-methylaminoantipyrine’s apparent intercompartmental clearance Q was reported as 0.030 1/h, a rate unit rather than a volume-per-time unit.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit 1/h (1 / [time]) vs [length] ** 3 / [time]; Q30 unit 1/h (1 / [time]) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record gives Q a meaning of apparent intercompartmental clearance, but its reported 1/h unit conflicts with the required volume-per-time dimension. The unit could not be converted to an SI value, so this clearance lacked an SI value. The findings also flag an unreachable compartment or unlinked metabolite, although the recorded metabolism links connect metamizole sodium to each listed metabolite. Extracted — 4-methylaminoantipyrine: kabs 2.53 1/h, V1/F 71.2 L, Q 0.03 1/h, kel 0.178 1/h, t1/2z 0.36 h; 4-aminoantipyrine: V1/F 35.6 L, Q 0.552 1/h, kel 0.008 1/h, t1/2z 2.39 h; 4-acetylaminoantipyrine: V1/F 55.1 L, kel 0.074 1/h, t1/2z 10.3 h; 4-formylaminoantipyrine: V1/F 11.5 L, kel 0.567 1/h, t1/2z 6.95 h.
+A reported unit could not be converted (Q and Q), so that value has no SI equivalent. None of the extracted parameters is metamizole sodium's own; they describe 4-methylaminoantipyrine, 4-aminoantipyrine, 4-acetylaminoantipyrine and 4-formylaminoantipyrine. Extracted — 4-methylaminoantipyrine: kabs 2.53 1/h, V1/F 71.2 L, Q 0.03 1/h, kel 0.178 1/h, t1/2z 0.36 h; 4-aminoantipyrine: V1/F 35.6 L, Q 0.552 1/h, kel 0.008 1/h, t1/2z 2.39 h; 4-acetylaminoantipyrine: V1/F 55.1 L, kel 0.074 1/h, t1/2z 10.3 h; 4-formylaminoantipyrine: V1/F 11.5 L, kel 0.567 1/h, t1/2z 6.95 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 4-methylaminoantipyrine, the second reading 4-MAA; it also differs on 34 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

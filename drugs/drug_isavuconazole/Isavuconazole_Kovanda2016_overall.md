@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The isavuconazole record lacks reported absorption parameters, forcing the model to default ka and Tlag values unsupported by the source paper.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="isavuconazole" model-id="Isavuconazole_Kovanda2016_overall" status="needs_review" stale="false" population="patients with invasive fungal disease" measured-compound="isavuconazole" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Kovanda LL, Desai AV, Lu Q, Townsend RW, Akhtar S, Bonate P et al. Isavuconazole
 
 ### Reviewer guidance
 
-**The isavuconazole record lacks reported absorption parameters, forcing the model to default ka and Tlag values unsupported by the source paper.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The review found that absorption rate constants were not extracted from the Kovanda_2016 data, resulting in library placeholder values for first-order depot input. Although the record specifies an apparent clearance of 2.5 L/h and a volume of distribution of 361.2 L, the missing absorption terms invalidate the simulated profile. The absolute bioavailability of 96.6% was recorded, but the invented absorption mechanism remains unverified against the source. Extracted — isavuconazole: CLm/F 2.5 L/h, V 361 L, Fab 96.6.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — isavuconazole: CLm/F 2.5 L/h, V 361 L, Fab 96.6.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -146,7 +146,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -33,10 +33,10 @@
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Parasrampuria_2025_Proportion_0_5_log10_decrease](drugs/drug_temsavir/pd_Parasrampuria_2025_Proportion_0_5_log10_decrease.md) | Proportion of subjects with &gt;0.5 log10 decrease in plasma HIV-1 RNA on Day 8 ← temsavir · direct Emax (saturable) effect | — | Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025) | [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Parasrampuria_2025_Proportion_1_log10_decrease](drugs/drug_temsavir/pd_Parasrampuria_2025_Proportion_1_log10_decrease.md) | Proportion of subjects with &gt;1 log10 decrease in plasma HIV-1 RNA on Day 8 ← temsavir · direct Emax (saturable) effect | — | Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025) | [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Lagishetty_2020_ddQTcF](drugs/drug_temsavir/pd_Lagishetty_2020_ddQTcF.md) | ddQTcF ← temsavir · direct linear effect | — | Lagishetty C et al., Effects of Temsavir, Active Moiety of A…, Clinical and translational… (2020) | [10.1111/cts.12763](https://doi.org/10.1111/cts.12763) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Parasrampuria_2025_HIV_1_RNA_change](drugs/drug_temsavir/pd_Parasrampuria_2025_HIV_1_RNA_change.md) | Change in plasma HIV-1 RNA from Day 1 to Day 8 ← temsavir · direct Emax (saturable) effect | — | Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025) | [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lagishetty_2020_ddQTcF](drugs/drug_temsavir/pd_Lagishetty_2020_ddQTcF.md) | ddQTcF ← temsavir · direct linear effect | — | Lagishetty C et al., Effects of Temsavir, Active Moiety of A…, Clinical and translational… (2020) | [10.1111/cts.12763](https://doi.org/10.1111/cts.12763) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Parasrampuria_2025_HIV_1_RNA_change](drugs/drug_temsavir/pd_Parasrampuria_2025_HIV_1_RNA_change.md) | Change in plasma HIV-1 RNA from Day 1 to Day 8 ← temsavir · direct Emax (saturable) effect | — | Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025) | [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Parasrampuria_2025_Proportion_0_5_log10_decrease](drugs/drug_temsavir/pd_Parasrampuria_2025_Proportion_0_5_log10_decrease.md) | Proportion of subjects with &gt;0.5 log10 decrease in plasma HIV-1 RNA on Day 8 ← temsavir · direct Emax (saturable) effect | — | Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025) | [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Parasrampuria_2025_Proportion_1_log10_decrease](drugs/drug_temsavir/pd_Parasrampuria_2025_Proportion_1_log10_decrease.md) | Proportion of subjects with &gt;1 log10 decrease in plasma HIV-1 RNA on Day 8 ← temsavir · direct Emax (saturable) effect | — | Parasrampuria R et al., Population pharmacokinetics and exposur…, Pharmacology research & per… (2025) | [10.1002/prp2.70023](https://doi.org/10.1002/prp2.70023) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-22 10:28 | 0:33 | 0/1/0 | 3/1/0 | 0/0/0 | 55,046/2,934 | einfracz / qwen3.8-27b | 8 | 0/4 | 8/0 | 0 |
+| 2026-10-22 10:28 | 0:33 | 0/1/0 | 4/0/0 | 0/0/0 | 55,046/2,934 | einfracz / qwen3.8-27b | 8 | 0/4 | 8/0 | 0 |
 
 ## Coverage
 

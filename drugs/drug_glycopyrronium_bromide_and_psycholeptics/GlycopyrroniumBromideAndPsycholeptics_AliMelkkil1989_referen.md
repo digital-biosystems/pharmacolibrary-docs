@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because a second reader could not verify any of the six glycopyrronium bromide parameters extracted from the abstract.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="glycopyrronium bromide and psycholeptics" model-id="GlycopyrroniumBromideAndPsycholeptics_AliMelkkil1989_referen" status="needs_review" stale="false" population="healthy adults" measured-compound="glycopyrronium_bromide" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Ali-Melkkilä T, Kaila T, Kanto J. Glycopyrrolate: pharmacokinetics and some pha
 
 ### Reviewer guidance
 
-**The record was held back because a second reader could not verify any of the six glycopyrronium bromide parameters extracted from the abstract.**
+**cross_check_disputed; x1_cross_check.**
 
-The abstract-only source provided summary statistics, such as a 0.83 h elimination half-life and 0.64 l/kg distribution volume, which a second reader found unverifiable. The second reader disagreed with the identification of the dose compound and primary analyte, marking them as unknown. Consequently, all six parameter values received null values from the second reader, resulting in zero agreement. Extracted — glycopyrronium_bromide: t1/2α 2.22 min, t1/2z 0.83 h, V 0.64 l/kg, CL 0.54 l/kg/h, tmax 27.5 min, Cmax 3.47 micrograms/l.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is glycopyrronium bromide and psycholeptics's own; they describe glycopyrronium_bromide. Extracted — glycopyrronium_bromide: t1/2α 2.22 min, t1/2z 0.83 h, V 0.64 l/kg, CL 0.54 l/kg/h, tmax 27.5 min, Cmax 3.47 micrograms/l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has glycopyrronium_bromide, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -155,7 +155,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.125 (2 of 16 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.125 | cross-check contradicted by a second reader: verdict disputed; agreement 0.125 (2 of 16 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

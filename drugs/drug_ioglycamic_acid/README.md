@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:18 | 0:21 | 0/0/0 | 0/0/0 | 0/0/0 | 2,076/243 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 23:02 | 0:03 | 0/0/0 | 0/0/0 | 0/0/0 | 3,768/186 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -45,16 +45,18 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Fleck_1991.pdf` | Fleck C et al., Relation between renal and hepatic excr…, Experimental pathology (1991) | popPK | 5 | [10.1016/s0232-1513(11)80150-7](https://doi.org/10.1016/s0232-1513(11)80150-7) | [1783049](https://pubmed.ncbi.nlm.nih.gov/1783049) | Rat PK/elimination study of ioglycamic acid with clearance data mentioned, but no numeric parameter values are present in the abstract. |
+| `Fleck_1991.pdf` | Fleck C et al., Relation between renal and hepatic excr…, Experimental pathology (1991) | popPK | 8 | [10.1016/s0232-1513(11)80150-7](https://doi.org/10.1016/s0232-1513(11)80150-7) | [1783049](https://pubmed.ncbi.nlm.nih.gov/1783049) | The paper describes the pharmacokinetics of ioglycamic acid in rats, including clearance and excretion pathways, but the specific numeric parameter values are not included in the provided abstract/text. |
 
-<sub>queue written 2026-10-07 22:18 UTC</sub>
+<sub>queue written 2026-11-23 23:02 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Blackwell_1979 | irrelevant | 2 | 1 | Diagnostic imaging evaluation of ioglycamic acid with no quantitative PK parameters reported; clearance curves mentioned only qualitatively. |
-| popPK | Fleck_1991 | relevant | 5 | 3 | Rat PK/elimination study of ioglycamic acid with clearance data mentioned, but no numeric parameter values are present in the abstract. |
+| popPK | Blackwell_1979 | irrelevant | 1 | 0 | The study uses ioglycamic acid as a diagnostic radiopharmaceutical for scintiscanning and reports qualitative/visual findings and limited quantitative excretion notes, but does not provide compartmental PK parameter values (CL, V, t1/2) in the evidence. |
+| PGx | Blackwell_1979 | not_relevant | 0 | 0 | The paper reports a disease-based pharmacokinetic effect (hepatic dysfunction increasing urinary excretion) but contains no information on genetic variants, genotypes, or pharmacogenomics. |
+| popPK | Fleck_1991 | relevant | 8 | 1 | The paper describes the pharmacokinetics of ioglycamic acid in rats, including clearance and excretion pathways, but the specific numeric parameter values are not included in the provided abstract/text. |
+| PGx | Fleck_1991 | not_relevant | 0 | 0 | The paper reports physiological effects of age, organ removal, and inducers (T3, dexamethasone, phenobarbital) on ioglycamic acid pharmacokinetics, but does not report pharmacogenomic effects (gene variants/genotypes). |
 
 
 </details>

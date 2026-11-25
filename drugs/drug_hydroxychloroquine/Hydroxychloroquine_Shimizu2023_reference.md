@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;hydroxychloroquine&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/&quot;},{&quot;label&quot;:&quot;Shimizu_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_estimate&quot;,&quot;label&quot;:&quot;Balevic_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_estimate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_postnatal&quot;,&quot;label&quot;:&quot;Balevic_2019_postnatal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_postnatal.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_prenatal&quot;,&quot;label&quot;:&quot;Balevic_2019_prenatal&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_prenatal.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_reference&quot;,&quot;label&quot;:&quot;Zahr_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Thmans2020_corresponding_estimated_value&quot;,&quot;label&quot;:&quot;Th\u00e9mans_2020_corresponding_estimated_value_in_model_by_carmichael_et_al_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Thmans2020_estimate&quot;,&quot;label&quot;:&quot;Th\u00e9mans_2020_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydroxychloroquine_Thmans2020_corresponding_estimated_value&quot;,&quot;label&quot;:&quot;Th\u00e9mans_2020_corresponding_estimated_value_in_model_by_carmichael_et_al_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_corresponding_estimated_value.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Thmans2020_estimate&quot;,&quot;label&quot;:&quot;Th\u00e9mans_2020_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Thmans2020_estimate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Balevic2019_reference&quot;,&quot;label&quot;:&quot;Balevic_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Balevic2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_covid_19f&quot;,&quot;label&quot;:&quot;Zahr_2021_covid_19f&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_covid_19f.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_healthy&quot;,&quot;label&quot;:&quot;Zahr_2021_healthy&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_healthy.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_lupusa&quot;,&quot;label&quot;:&quot;Zahr_2021_lupusa&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_lupusa.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydroxychloroquine_Zahr2021_malariad&quot;,&quot;label&quot;:&quot;Zahr_2021_malariad&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydroxychloroquine/Hydroxychloroquine_Zahr2021_malariad.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="hydroxychloroquine" model-id="Hydroxychloroquine_Shimizu2023_reference" status="needs_review" stale="false" population="Japanese SLE patients with renal impairment" measured-compound="hydroxychloroquine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="hydroxychloroquine" model-id="Hydroxychloroquine_Shimizu2023_reference" status="needs_review" stale="false" population="Japanese systemic lupus erythematosus patients with renal impairment" measured-compound="hydroxychloroquine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Shimizu M, Furudate S, Nagai Y, Shimada K, Ohshima M, Setoguchi K et al. Pharmacokinetics of hydroxychloroquine in Japanese systemic lupus erythematosus patients with renal impairment. Modern rheumatology 33(5):953–960 (2023).
@@ -17,13 +17,13 @@ Shimizu M, Furudate S, Nagai Y, Shimada K, Ohshima M, Setoguchi K et al. Pharmac
 
 ## Population and dosing
 
-**Population:** Japanese SLE patients with renal impairment · condition systemic lupus erythematosus with renal impairment · age group adult · n = 21.
+**Population:** Japanese systemic lupus erythematosus patients with renal impairment · condition systemic lupus erythematosus with renal impairment · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,12 +33,10 @@ Shimizu M, Furudate S, Nagai Y, Shimada K, Ohshima M, Setoguchi K et al. Pharmac
 |---|---|---|---|
 | total clearance | CL | 110 | l/h |
 | central volume of distribution | V | 398 | l |
-| KA (fixed) | kabs | 1.15 | 1/h |
-| Lag (fixed) | tlag | 0.389 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,9 +48,9 @@ Shimizu M, Furudate S, Nagai Y, Shimada K, Ohshima M, Setoguchi K et al. Pharmac
 
 **The clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — hydroxychloroquine: CL 110 l/h, V 398 l, kabs 1.15 1/h, tlag 0.389 h.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — hydroxychloroquine: CL 110 l/h, V 398 l.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hydroxychloroquine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -62,8 +60,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 |---|---|---|---|---|---|---|---|---|
 | total clearance | `Q22` · CL | 110 | l/h | 3.056e-05 | m3/s | l/h | exact (1) | Shimizu_2023:abstract |
 | central volume of distribution | `Q61` · V | 398 | l | 0.398 | m3 | l | boundary_compartment (0.9) | Shimizu_2023:abstract |
-| KA (fixed) | `Q49` · kabs | 1.15 | 1/h | 0.0003194 | 1/s | 1/h | review_gapfill (0.7) | Alvarez_2022:review |
-| Lag (fixed) | `Q83` · tlag | 0.389 | h | 1400 | s | h | review_gapfill (0.7) | Alvarez_2022:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,41 +69,27 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'HCQ:desethylhydroxychloroquine:desethylchloroquine:bisdesethylchloroquine' — extend the ontology if this is a real PK parameter (source ['Shimizu_2023:abstract'])
+- dropped unlinked row (NIL): 'HCQ' — extend the ontology if this is a real PK parameter (source ['Shimizu_2023:abstract'])
+- dropped unlinked row (NIL): 'desethylhydroxychloroquine' — extend the ontology if this is a real PK parameter (source ['Shimizu_2023:abstract'])
+- dropped unlinked row (NIL): 'desethylchloroquine' — extend the ontology if this is a real PK parameter (source ['Shimizu_2023:abstract'])
+- dropped unlinked row (NIL): 'bisdesethylchloroquine' — extend the ontology if this is a real PK parameter (source ['Shimizu_2023:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=hydroxychloroquine
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'central volume of distribution' is the general volume)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Alvarez_2022's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Alvarez_2022's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Shimizu_2023_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Shimizu_2023_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>8 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[central volume of distribution]` | 398 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[central volume of distribution]` |  | 398 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 1.15 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[lag]` | 0.389 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total clearance]` | 110 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total clearance]` |  | 110 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | hydroxychloroquine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | hydroxychloroquine | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -123,9 +105,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Shimizu_2023:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Alvarez_2022:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Shimizu_2023:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Alvarez_2022:review'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 110 | ['Shimizu_2023:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 110 L/h | ['Shimizu_2023:abstract'] |
@@ -163,4 +143,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhydroxychloroquine%5D%20Hydroxychloroquine_Shimizu2023_reference&body=Drug%3A%20hydroxychloroquine%0ARecord%3A%20Hydroxychloroquine_Shimizu2023_reference%0APaper%3A%20Shimizu_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hydroxychloroquine/Hydroxychloroquine_Shimizu2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 07:02 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:39 UTC</sub>

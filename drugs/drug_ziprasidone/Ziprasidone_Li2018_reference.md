@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper studies olanzapine pharmacokinetics, making the recorded ziprasidone clearance value of 25.4 L/h irrelevant to the subject drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="ziprasidone" model-id="Ziprasidone_Li2018_reference" status="rejected" stale="false" population="" measured-compound="ziprasidone" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Li A, Ji S, Yue W, Yan H, Dong F, Ruan C et al. Development of a population phar
 
 ### Reviewer guidance
 
-**The paper studies olanzapine pharmacokinetics, making the recorded ziprasidone clearance value of 25.4 L/h irrelevant to the subject drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source text is explicitly identified as a population PK study of olanzapine, where ziprasidone appears only as a comparator. Consequently, the extracted parameters do not reflect ziprasidone pharmacokinetics but derive from the wrong molecular context. A second reader further disputed the recorded volume of distribution value of 2150 L, leaving the parameter values unverifiable. Extracted — ziprasidone: CL/F 25.4 L h–1, V/F 2.15e+03 L, V2/F 168 L, Q/F 8.41 L h-1, kabs 2.85 h–1.
+Extracted — ziprasidone: CL/F 25.4 L h–1, V/F 2.15e+03 L, V2/F 168 L, Q/F 8.41 L h-1, kabs 2.85 h–1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q316: this record has 21.6, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.7 (7 of 10 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.7 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -21,7 +21,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span> | [Eaton_2025_2_R_time](drugs/drug_idarucizumab/pd_Eaton_2025_2_R_time.md) | thromboelastometric reaction time (R-time) ← idarucizumab · direct linear effect | — | Eaton MP et al., Dabigatran pharmacokinetic-pharmacodyna…, Perfusion (2025) | [10.1177/02676591231226291](https://doi.org/10.1177/02676591231226291) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span> | [Eaton_2025_2_R_time](drugs/drug_idarucizumab/pd_Eaton_2025_2_R_time.md) | thromboelastometric reaction time (R-time) ← idarucizumab · direct linear effect | — | Eaton MP et al., Dabigatran pharmacokinetic-pharmacodyna…, Perfusion (2025) | [10.1177/02676591231226291](https://doi.org/10.1177/02676591231226291) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -35,7 +35,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 20:06 | 0:25 | 0/0/0 | 1/0/0 | 0/0/0 | 30,670/1,855 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-24 00:06 | 0:03 | 0/0/0 | 0/1/0 | 0/0/0 | 3,984/191 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -48,8 +48,10 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Athavale_2020 | relevant | 4 | 3 | A PK analysis of idarucizumab (single-compartment, half-life, Vd mentioned) is included, but the focus is dabigatran rebound modeling and no full numeric idarucizumab parameter set (CL, V, t½ values) is presented in the evidence. |
-| popPK | Di_2015 | irrelevant | 1 | 0 | This is a narrative review on gastrointestinal bleeding management that only mentions idarucizumab qualitatively as an antidote, with no PK parameters for idarucizumab. |
+| popPK | Athavale_2020 | irrelevant | 3 | 0 | The paper is a systematic review and modeling of dabigatran PK/PD interaction with idarucizumab; it does not report original quantitative PK parameters (CL, V, ka) for idarucizumab itself, only using it as a reversal agent in simulations. |
+| PGx | Athavale_2020 | not_relevant | 0 | 0 | The study examines renal function (GFR) and baseline drug concentrations as factors for idarucizumab response, not genetic variants. |
+| popPK | Di_2015 | irrelevant | 0 | 0 | This is a review of gastrointestinal bleeding treatments that mentions idarucizumab only as an antidote to dabigatran, without reporting any quantitative PK parameters for idarucizumab itself. |
+| PGx | Di_2015 | not_relevant | 0 | 0 | The paper discusses the clinical management of gastrointestinal bleeding associated with DOACs and mentions Idarucizumab only as a potential antidote for dabigatran; it does not report on pharmacogenomic variants affecting the PK or PD of Idarucizumab. |
 | popPK | Eaton_2025 | irrelevant | 2 | 2 | Idarucizumab is the reversal agent; no idarucizumab concentrations were assayed and its PK was assumed from human literature values (CL 0.0394 L/min, V 6.47 L), while the quantitative PK model (CL, Q, V1, V2) is for dabigatran in sheep. |
 | popPK | Eaton_2025_2 | irrelevant | 3 | 5 | The PK model and parameters (CL, Q, V1, V2) are for dabigatran; idarucizumab is only a co-administered reversal agent with a single effect-model rate constant (KIDA 0.0218) reported, not a full disposition model for idarucizumab. |
 

@@ -16,7 +16,7 @@ Huang J, Zhang Y, Huang X, Li L, Li Y, Wang K et al. Population pharmacokinetics
 
 ## Population and dosing
 
-**Population:** healthy Chinese volunteers · condition healthy · age group adult · n = 32.
+**Population:** healthy Chinese volunteers · condition healthy · age group adult.
 
 ## Model
 
@@ -63,7 +63,6 @@ Independently confirmed by `gpt-oss-120b`.
 - table section iiv: 'inter-individual variabilities of V2' routed out of structural estimates ('The inter-individual variabilities of CL and V2 were 22.4% and 58.9%, respectively.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=adefovir dipivoxil
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Huang_2014_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
@@ -71,7 +70,7 @@ Independently confirmed by `gpt-oss-120b`.
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -115,4 +114,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Badefovir_dipivoxil%5D%20AdefovirDipivoxil_Huang2014_reference&body=Drug%3A%20adefovir_dipivoxil%0ARecord%3A%20AdefovirDipivoxil_Huang2014_reference%0APaper%3A%20Huang_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_adefovir_dipivoxil/AdefovirDipivoxil_Huang2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:04 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 17:23 UTC</sub>

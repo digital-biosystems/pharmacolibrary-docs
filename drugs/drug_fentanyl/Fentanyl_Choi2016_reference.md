@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability (F) was not reported for fentanyl, so the model record relies on placeholder defaults instead of an estimated value.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Choi2016_reference" status="needs_review" stale="false" population="critically ill adults" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Choi L, Ferrell BA, Vasilevskis EE, Pandharipande PP, Heltsley R, Ely EW et al. 
 
 ### Reviewer guidance
 
-**Bioavailability (F) was not reported for fentanyl, so the model record relies on placeholder defaults instead of an estimated value.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The model structure includes oral absorption with a lag time, requiring a bioavailability parameter to relate the administered dose to the central compartment. The review identifies that the bioavailability parameter was left at library defaults rather than being extracted from the paper or explicitly justified as a convention. Consequently, the simulated pharmacokinetic profile for fentanyl is based on an unsupported placeholder value rather than an estimate derived from the Choi_2016 study. Extracted — fentanyl: CL 32 L/hr, V1 252 L, V2 474 L, Q 43 L/hr, kabs 0.27 minute -1, tlag 15 min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — fentanyl: CL 32 L/hr, V1 252 L, V2 474 L, Q 43 L/hr, kabs 0.27 minute -1, tlag 15 min.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

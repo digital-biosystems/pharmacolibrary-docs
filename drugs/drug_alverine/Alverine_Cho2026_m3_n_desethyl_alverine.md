@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> The alverine record lacks distribution volume and clearance parameters, reporting only exposure metrics like Cmax of 0.0021 μmol/L.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit μmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q74 unit μmol·h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3 (+1 more).
 
 <div class="pk-model-meta" hidden drug="alverine" model-id="Alverine_Cho2026_m3_n_desethyl_alverine" status="rejected" stale="false" population="mice" measured-compound="alverine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -51,13 +51,13 @@ Cho A, Jeong HC, Kim M, Cho I, Na HJ, Ko KC et al. Development of Integrated Par
 
 ### Reviewer guidance
 
-**The alverine record lacks distribution volume and clearance parameters, reporting only exposure metrics like Cmax of 0.0021 μmol/L.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit μmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q74 unit μmol·h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3 (+1 more).**
 
-The record contains Tmax, Cmax, and AUClast but omits volume of distribution and clearance, failing the compartmental population PK requirement. Additionally, the defined metabolite compartments lack explicit structural volume parameters, rendering the model structurally incomplete. A dimension mismatch was also flagged for the concentration units against mass-based dimensions. Extracted — alverine: tmax 0.7 h, Cmax 0.0021 μmol/L, AUClast 0.0036 μmol·h/L; M3: AUC ratio 0.0064 Metabolite/Parent.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Cmax, AUClast and AUC ratio), so that value has no SI equivalent. Extracted — alverine: tmax 0.7 h, Cmax 0.0021 μmol/L, AUClast 0.0036 μmol·h/L; M3: AUC ratio 0.0064 Metabolite/Parent.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alverine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record relies on default values for the absorption rate constant and lag time because the source abstract omitted these specific pharmacokinetic estimates.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="eltrombopag" model-id="Eltrombopag_Gibiansky2011_reference" status="needs_review" stale="false" population="healthy subjects and patients with chronic idiopathic thrombocytopenic purpura" measured-compound="eltrombopag" parameterization="apparent" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Gibiansky E, Zhang J, Williams D, Wang Z, Ouellet D. Population pharmacokinetics
 
 ### Reviewer guidance
 
-**The record relies on default values for the absorption rate constant and lag time because the source abstract omitted these specific pharmacokinetic estimates.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-Although the paper reports apparent clearance of 0.668 L/h and central volume of 8.76 L, the absorption rate constant and lag time were not extracted from the text. Consequently, library placeholder values were used for these parameters instead of paper-derived estimates, leading to a verdict of needs_review. A second reader failed to identify any specific compound or parameters, resulting in a total disagreement with the original extraction. Extracted — eltrombopag: CL/F 0.668 L/h, V1/F 8.76 L, V2/F 11.3 L, Q/F 0.399 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — eltrombopag: CL/F 0.668 L/h, V1/F 8.76 L, V2/F 11.3 L, Q/F 0.399 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has eltrombopag, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,7 +152,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

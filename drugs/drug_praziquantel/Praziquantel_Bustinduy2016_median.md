@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The praziquantel model record is incomplete because the central-to-peripheral transfer rate constant, k12, was not included in the final parameter set despite a value of 22.28 h−1 being present in the source data.
+> T3_param_coverage.
 
 <div class="pk-model-meta" hidden drug="praziquantel" model-id="Praziquantel_Bustinduy2016_median" status="needs_review" stale="false" population="Ugandan children with intestinal schistosomiasis" measured-compound="praziquantel" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Bustinduy AL, Waterhouse D, de Sousa-Figueiredo JC, Roberts SA, Atuhaire A, Van 
 
 ### Reviewer guidance
 
-**The praziquantel model record is incomplete because the central-to-peripheral transfer rate constant, k12, was not included in the final parameter set despite a value of 22.28 h−1 being present in the source data.**
+**T3_param_coverage.**
 
-The review identified that four parameters were covered out of six expected, with k12 and k21 flagged as missing from the emitted or defaulted list. While the facts provide explicit values for k12 (22.28 h−1) and k21 (25.71 h−1), the failed check indicates these transfer constants were not properly emitted. This discrepancy means the two-compartment structure for praziquantel distribution is not fully parameterized in the record. Extracted — praziquantel: kabs 9.88 h−1, CL/F 678 liter/h, V/F 504 liter, k12 22.3 h−1, k21 25.7 h−1, tlag 1.67 h.
+Extracted — praziquantel: kabs 9.88 h−1, CL/F 678 liter/h, V/F 504 liter, k12 22.3 h−1, k21 25.7 h−1, tlag 1.67 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,8 +142,8 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['k12', 'k21'] |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_t_half_terminal | reference | skipped |  | 0.3629 |  | non-numeric value |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (10 of 10 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | skipped |  | 0.3629 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

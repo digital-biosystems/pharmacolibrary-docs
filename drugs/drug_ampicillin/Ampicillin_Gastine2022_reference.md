@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The ampicillin-and-gentamicin model was held back because its Cmax was 4.23e-06 versus the paper’s 0.01, and F and k12 were defaulted rather than estimated.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.01, model 4.23e-06); f, k12 use library defaults, not estimates from this paper (+3 more).
 
 <div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Gastine2022_reference" status="needs_review" stale="false" population="neonates" measured-compound="ampicillin and gentamicin" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Gastine S, Obiero C, Kane Z, Williams P, Readman J, Murunga S et al. Simultaneou
 
 ### Reviewer guidance
 
-**The ampicillin-and-gentamicin model was held back because its Cmax was 4.23e-06 versus the paper’s 0.01, and F and k12 were defaulted rather than estimated.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.01, model 4.23e-06); f, k12 use library defaults, not estimates from this paper (+3 more).**
 
-The model does not reproduce the paper's peak concentration (Cmax) (paper 0.01, model 4.23e-06). F, k12 use library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper; Tlag was also defaulted rather than explicitly estimated. The covariate scenarios were not simulated. A second reader disputed the dose-compound, primary-analyte, and clearance/covariate assignments (agreement 0.526, 0 of 1 reader(s) agree). Extracted — ampicillin: CL 6.89 L/h, V1 26.4 L, Q 0.956 L/h, V2 6.69 L; ampicillin and gentamicin: kabs 6.45 h-1.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — ampicillin: CL 6.89 L/h, V1 26.4 L, Q 0.956 L/h, V2 6.69 L; ampicillin and gentamicin: kabs 6.45 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ampicillin and gentamicin, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -165,8 +165,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.526, 0 of 1 reader(s) agree | 0.526 | cross-check disputed by a second reader: verdict disputed, agreement 0.526, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 0.01 | 4.227e-06 | 0.0004 | mg/L→SI vs simulated kg/m3 |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.526 (10 of 19 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.526 | cross-check contradicted by a second reader: verdict disputed; agreement 0.526 (10 of 19 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 0.01 | 4.227e-06 | 0.0004 | reported 10.0 mg/L→SI vs simulated kg/m3 |
 | T1_cmin_ss | reference | skipped | 1 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">

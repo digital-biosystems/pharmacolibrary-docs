@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The plasma clearance of pipecuronium was recorded as 2.4 min, a time unit incompatible with volume per time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit min ([time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="Pipecuronium" model-id="Pipecuronium_Caldwell1989_reference" status="rejected" stale="false" population="patients with normal renal function and end-stage renal disease" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Caldwell JE, Canfell PC, Castagnoli KP, Lynam DP, Fahey MR, Fisher DM et al. The
 
 ### Reviewer guidance
 
-**The plasma clearance of pipecuronium was recorded as 2.4 min, a time unit incompatible with volume per time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit min ([time]) vs [length] ** 3 / [time].**
 
-Plasma clearance was extracted as 2.4 min, which has the dimension of time rather than volume per time. Consequently, a dimensional consistency check failed for this structural parameter. The record was derived solely from the abstract, so the reported summary statistics were used without verification of a fitted model. Extracted — pipecuronium: Vss 309 ml.kg-1, CL 2.4 min, t1/2z 137 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pipecuronium: Vss 309 ml.kg-1, CL 2.4 min, t1/2z 137 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pipecuronium, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

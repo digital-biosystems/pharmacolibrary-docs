@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the peripheral compartment is unreachable from the dose, and the second reader could not confirm the value 0.810 for the volume scaling exponent.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Zhao2013_reference" status="rejected" stale="false" population="HIV-infected infants, toddlers and children" measured-compound="abacavir" parameterization="apparent" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Zhao W, Piana C, Danhof M, Burger D, Della Pasqua O, Jacqz-Aigrain E. Population
 
 ### Reviewer guidance
 
-**The model was rejected because the peripheral compartment is unreachable from the dose, and the second reader could not confirm the value 0.810 for the volume scaling exponent.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The findings identify an orphan compartment, meaning the peripheral compartment has no path from the dose administration site. Additionally, the second reader disagreed with the extracted value of 0.810 for the volume scaling exponent, recording it as null. This discrepancy prevents verification of the weight-based allometric scaling applied to the central volume of distribution. Consequently, the structural integrity of the two-compartment model for abacavir could not be established. Extracted — abacavir: kabs 0.913 h–1, CL/F 20.1 l h–1, V2/F 13.5 l, Q/F 2 l h–1.
+Extracted — abacavir: kabs 0.913 h–1, CL/F 20.1 l h–1, V2/F 13.5 l, Q/F 2 l h–1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θ2: this record has 0.810, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -28,14 +28,13 @@ Adinazolam is a triazolobenzodiazepine tranquilizer with anxiolytic, anticonvuls
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Venkatakrishnan_2005_reference](drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference.md) | ▶ model + simulator | 1-compartment, oral | 9 | Venkatakrishnan K et al., Kinetics and dynamics of intravenous ad…, Journal of clinical pharmac… (2005) | [10.1177/0091270004269105](https://doi.org/10.1177/0091270004269105) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Venkatakrishnan_2005_reference](drugs/drug_adinazolam/Adinazolam_Venkatakrishnan2005_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Venkatakrishnan K et al., Kinetics and dynamics of intravenous ad…, Journal of clinical pharmac… (2005) | [10.1177/0091270004269105](https://doi.org/10.1177/0091270004269105) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fleishaker_1991_DSST_decrement](drugs/drug_adinazolam/pd_Fleishaker_1991_DSST_decrement.md) | percentage decrement in digit symbol substitution test ← N-desmethyladinazolam · direct sigmoid Emax (Hill) effect | — | Fleishaker JC et al., N-desmethyladinazolam pharmacokinetics…, Psychopharmacology (1991) | [10.1007/BF02244306](https://doi.org/10.1007/BF02244306) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Kozlowski_1988_MeTRH_binding](drugs/drug_adinazolam/pd_Kozlowski_1988_MeTRH_binding.md) | Inhibition of 3H-3-methyl-His-2-TRH (MeTRH) binding to TRH receptors ← adinazolam · inhibition effect | — | Kozlowski MR, Inhibition of the binding and the behav…, Pharmacology, biochemistry,… (1988) | [10.1016/0091-3057(88)90426-1](https://doi.org/10.1016/0091-3057(88)90426-1) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fleishaker_1991_percentage_decrements_in_digit_symbol_substitution](drugs/drug_adinazolam/pd_Fleishaker_1991_percentage_decrements_in_digit_symbol_substi.md) | percentage decrements in digit-symbol substitution ← N-desmethyladinazolam · direct sigmoid Emax (Hill) effect | — | Fleishaker JC et al., N-desmethyladinazolam pharmacokinetics…, Psychopharmacology (1991) | [10.1007/BF02244306](https://doi.org/10.1007/BF02244306) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +48,7 @@ Adinazolam is a triazolobenzodiazepine tranquilizer with anxiolytic, anticonvuls
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 17:57 | 0:58 | 0/1/0 | 1/1/0 | 0/0/0 | 32,151/2,471 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 16:27 | 2:18 | 0/1/0 | 1/0/0 | 0/0/0 | 17,841/7,249 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -60,23 +59,26 @@ Adinazolam is a triazolobenzodiazepine tranquilizer with anxiolytic, anticonvuls
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Venkatakrishnan_2005.pdf` | Venkatakrishnan K et al., Kinetics and dynamics of intravenous ad…, Journal of clinical pharmac… (2005) | popPK | 10 | [10.1177/0091270004269105](https://doi.org/10.1177/0091270004269105) | [15831776](https://pubmed.ncbi.nlm.nih.gov/15831776) | Direct IV PK study of adinazolam in humans with numeric V, CL, and half-life reported in the abstract. |
-| `Fleishaker_1991.pdf` | Fleishaker JC et al., N-desmethyladinazolam pharmacokinetics…, Psychopharmacology (1991) | popPK | 6 | [10.1007/BF02244306](https://doi.org/10.1007/BF02244306) | [1796125](https://pubmed.ncbi.nlm.nih.gov/1796125) | PK of N-desmethyladinazolam (adinazolam's major metabolite) was studied in humans, but the evidence gives only an EC50 (325 ng/ml) and no CL/V/t½ values, which are not shown. |
+| `Venkatakrishnan_2005.pdf` | Venkatakrishnan K et al., Kinetics and dynamics of intravenous ad…, Journal of clinical pharmac… (2005) | popPK | 10 | [10.1177/0091270004269105](https://doi.org/10.1177/0091270004269105) | [15831776](https://pubmed.ncbi.nlm.nih.gov/15831776) | The abstract provides specific numeric values for volume of distribution, elimination half-life, and clearance for adinazolam in healthy volunteers. |
 | `Kozlowski_1988.pdf` | Kozlowski MR, Inhibition of the binding and the behav…, Pharmacology, biochemistry,… (1988) | pd | 4 | [10.1016/0091-3057(88)90426-1](https://doi.org/10.1016/0091-3057(88)90426-1) | [2845442](https://www.ncbi.nlm.nih.gov/pubmed/2845442) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06 17:56 UTC</sub>
+<sub>queue written 2026-11-23 16:25 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | File_1986 | irrelevant | 0 | 0 | Behavioral place-conditioning study in rats with no PK parameters or numeric disposition values for adinazolam. |
-| popPK | Fleishaker_1991 | relevant | 6 | 3 | PK of N-desmethyladinazolam (adinazolam's major metabolite) was studied in humans, but the evidence gives only an EC50 (325 ng/ml) and no CL/V/t½ values, which are not shown. |
-| popPK | Kozlowski_1988 | irrelevant | 0 | 0 | Receptor-binding/pharmacodynamic study with no PK disposition parameters for adinazolam. |
+| popPK | File_1986 | irrelevant | 0 | 0 | The paper is a behavioral pharmacology study using a place-conditioning paradigm in rats to assess the appetitive/aversive properties of adinazolam, reporting no pharmacokinetic parameters. |
+| PGx | File_1986 | not_relevant | 0 | 0 | The paper reports behavioral pharmacodynamics (place conditioning) in rats but does not involve gene variants or genotypes. |
+| popPK | Fleishaker_1991 | irrelevant | 7 | 0 | The study reports PK of the metabolite N-desmethyladinazolam following direct administration of the metabolite, not adinazolam, and the provided evidence lacks specific numeric PK parameter values (CL, V, t1/2). |
+| PGx | Fleishaker_1991 | not_relevant | 0 | 0 | The study describes standard PK/PD in healthy volunteers and does not investigate the effect of any gene variant or genotype on adinazolam or its metabolite. |
+| popPK | Kozlowski_1988 | irrelevant | 0 | 0 | The study focuses on receptor binding and behavioral effects, not pharmacokinetic disposition parameters. |
+| PGx | Kozlowski_1988 | not_relevant | 0 | 0 | The paper investigates receptor binding affinities and behavioral effects of adinazolam and other benzodiazepines, but it does not contain any data regarding gene variants, genotypes, or pharmacogenomic effects on PK/PD parameters. |
+| PGx | Venkatakrishnan_2005 | not_relevant | 0 | 0 | The study reports standard PK/PD parameters in healthy volunteers but does not investigate the impact of gene variants, genotypes, or phenotypes on these parameters. |
 | PGx | Wu_2022 | not_relevant | 2 | 0 | Review only notes genetic polymorphisms' influence on designer benzodiazepine metabolism is unclarified; no gene-variant effect on adinazolam PK/PD is reported. |
 
 
@@ -84,4 +86,4 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Badinazolam%5D&body=Drug%3A%20adinazolam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_adinazolam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 17:56 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 16:26 UTC</sub>

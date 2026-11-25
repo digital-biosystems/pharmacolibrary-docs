@@ -15,7 +15,7 @@ Merchant NM, Azzopardi DV, Hawwa AF, McElnay JC, Middleton B, Arendt J et al. Ph
 
 ## Population and dosing
 
-**Population:** preterm infants · condition preterm birth · age group neonate · n = 18.
+**Population:** preterm infants · age group neonate.
 
 ## Model
 
@@ -36,7 +36,7 @@ Merchant NM, Azzopardi DV, Hawwa AF, McElnay JC, Middleton B, Arendt J et al. Ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +46,11 @@ Merchant NM, Azzopardi DV, Hawwa AF, McElnay JC, Middleton B, Arendt J et al. Ph
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of infusion duration: this record has none, the second reading 2. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,7 +59,7 @@ Independently confirmed by `gpt-oss-120b`.
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | median half-life | `Q57` · t1/2z | 15.82 | h | 5.695e+04 | s | h | llm (0.6) | Merchant_2013:abstract |
-| median maximum plasma concentration | `Q32` · Cmax | 203.3 | pg ml(-1) |  |  | pg/ml | llm (0.6) | Merchant_2013:abstract |
+| median maximum plasma concentration | `Q32` · Cmax | 203.3 | pg ml(-1) | 2.033e-07 | kg/m3 | pg/ml | llm (0.6) | Merchant_2013:abstract |
 | clearance | `Q22` · CL | 0.045 | l h(-1) | 1.25e-08 | m3/s | l/h | exact (1) | Merchant_2013:abstract |
 | volume of distribution | `Q61` · V | 1.098 | l | 0.001098 | m3 | l | exact (1) | Merchant_2013:abstract |
 
@@ -72,26 +72,28 @@ Independently confirmed by `gpt-oss-120b`.
 
 **Interpretation flags:**
 - dropped duplicate Q57 ('elimination half-life', value 16.91) — already have one for this compound
-- dropped unlinked row (NIL): 'gender' — extend the ontology if this is a real PK parameter (source ['Merchant_2013:abstract'])
-- dropped value-less row: 'race'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=melatonin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Merchant_2013_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Merchant_2013_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
+| `gpt-oss-120b` | partly confirmed | 0.889 (8/9 fields) | 1 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[infusion duration]` |  | 2 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -125,7 +127,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.889 (8 of 9 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.889 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -141,7 +143,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_melatonin/Melatonin_Merchant2013_reference/Melatonin_Merchant2013_reference_modelica.zip" download>Melatonin_Merchant2013_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_melatonin/Melatonin_Merchant2013_reference/Melatonin_Merchant2013_reference_modelica.zip" download>Melatonin_Merchant2013_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_melatonin/Melatonin_Merchant2013_reference/Melatonin_Merchant2013_reference_fmi.zip" download>Melatonin_Merchant2013_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_melatonin/Melatonin_Merchant2013_reference/Melatonin_Merchant2013_reference_matlab.zip" download>Melatonin_Merchant2013_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_melatonin/Melatonin_Merchant2013_reference/Melatonin_Merchant2013_reference_matlab_simbio.zip" download>Melatonin_Merchant2013_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -203,4 +205,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmelatonin%5D%20Melatonin_Merchant2013_reference&body=Drug%3A%20melatonin%0ARecord%3A%20Melatonin_Merchant2013_reference%0APaper%3A%20Merchant_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_melatonin/Melatonin_Merchant2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 21:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:15 UTC</sub>

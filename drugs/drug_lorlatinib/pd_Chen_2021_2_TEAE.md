@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;lorlatinib&quot;,&quot;href&quot;:&quot;drugs/drug_lorlatinib/&quot;},{&quot;label&quot;:&quot;Chen_2021_2 \u00b7 PD TEAE grade \u2265 3&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;lorlatinib&quot;,&quot;href&quot;:&quot;drugs/drug_lorlatinib/&quot;},{&quot;label&quot;:&quot;Chen_2021_2 \u00b7 PD TEAEs grade \u2265 3&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lorlatinib_Hibma2022_reference&quot;,&quot;label&quot;:&quot;Hibma_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorlatinib/Lorlatinib_Hibma2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# TEAE grade ≥ 3 — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.8). Primary extraction retained.">cross-check: disputed</span>
+# TEAEs grade ≥ 3 — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,16 +14,16 @@
 
 ## Record summary
 
-**As extracted:** Lorlatinib (concentrations from the PK model of Chen_2021) drives TEAE grade ≥ 3: categorical (graded) response model.
+**As extracted:** Lorlatinib (concentrations from the PK model of Damoiseaux_2022_2) drives TEAEs grade ≥ 3: direct linear effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Lorlatinib steady-state trough exposure, modeled as natural log(Ctrough ss), was associated with increased odds of TEAEs grade ≥ 3 in a logistic regression: coefficient 1.167, corresponding to an odds ratio of 3.214 per unit increase in log(Ctrough ss), adjusted for baseline cholesterol and time on study (coefficient 0.012 each). The paper describes an empirical exposure–risk relationship and does not give a biological mechanism.
 >
 > <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
 
 - **paper:** `Chen_2021_2`
-- **model family:** `categorical`
+- **model family:** `linear`
 - **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** stimulation/additive
@@ -35,10 +35,10 @@ Chen J et al., Lorlatinib Exposure-Response Analyses f…, Clinical pharmacology
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| model term | Intercept | `Q900` ·  | −7.995 |  | llm | Chen_2021_2:pdv3 |
+| — | Intercept | `Q100` ·  | -7.995 |  | nil | Chen_2021_2:pdv3 |
 | model term | BCHOL | `Q900` ·  | 0.012 |  | llm | Chen_2021_2:pdv3 |
 | model term | TE | `Q900` ·  | 0.012 |  | llm | Chen_2021_2:pdv3 |
-| model term | log(Ctrough ss) | `Q900` ·  | 1.167 |  | llm | Chen_2021_2:pdv3 |
+| PD (effect) | log(Ctrough ss) | `Q335` ·  | 1.167 |  | llm | Chen_2021_2:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -46,18 +46,56 @@ Chen J et al., Lorlatinib Exposure-Response Analyses f…, Clinical pharmacology
 </details>
 
 
+## Exposure-response model
+
+`Lorlatinib_Chen2021v2_PD_teae` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0 | — |
+| slope | 1.167 | 1.167e+06 (1)/(kg/m3) |
+
+Closed-form check points (response, SI): `at_0` = 0, `per_exposure_unit` = 1.167e+06
+
+Deviations:
+
+- `defaulted_parameters` — E0
+- `pd_binding_slope_unit_assumed` — slope unit '(none)' read as response per ng/mL
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">Needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.8 (4/5 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `effect_form` | additive | unknown | mismatch |
+| `gpt-oss-120b` | `model_family` | linear | categorical | mismatch |
+| `gpt-oss-120b` | `parameters[Q100].value` | -7.995 | 1.167 | mismatch |
+| `gpt-oss-120b` | `parameters[Q324]` |  | 0.012 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q335]` | 1.167 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q900]` | 0.012 |  | only_one_extracted |
 
 </details>
 
@@ -73,19 +111,33 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lorlatinib/Lorlatinib_Chen2021v2_PD_teae/Lorlatinib_Chen2021v2_PD_teae_modelica.zip" download>Lorlatinib_Chen2021v2_PD_teae_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lorlatinib/Lorlatinib_Chen2021v2_PD_teae/Lorlatinib_Chen2021v2_PD_teae_matlab.zip" download>Lorlatinib_Chen2021v2_PD_teae_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lorlatinib/Lorlatinib_Chen2021v2_PD_teae/Lorlatinib_Chen2021v2_PD_teae_sbml.zip" download>Lorlatinib_Chen2021v2_PD_teae_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lorlatinib/Lorlatinib_Chen2021v2_PD_teae/Lorlatinib_Chen2021v2_PD_teae_cellml.zip" download>Lorlatinib_Chen2021v2_PD_teae_cellml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Lorlatinib_Chen2021v2_PD_teae`. <https://pharmacolibrary.github.io/#/drugs/drug_lorlatinib/pd_Chen_2021_2_TEAE>
+
+```bibtex
+@misc{pharmacolibrary_LorlatinibChen2021v2PDteae,
+  title  = {{Pharmacolibrary model Lorlatinib_Chen2021v2_PD_teae}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_lorlatinib/pd_Chen_2021_2_TEAE},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
 
 <div class="pk-tab-end"></div>
 

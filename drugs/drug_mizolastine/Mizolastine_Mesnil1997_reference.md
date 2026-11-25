@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The mizolastine record was rejected because its single-compartment structure is incompatible with the extracted two-phase volume parameter.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="mizolastine" model-id="Mizolastine_Mesnil1997_reference" status="rejected" stale="false" population="healthy young volunteers" measured-compound="mizolastine" parameterization="apparent" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Mesnil F, Dubruc C, Mentre F, Huet S, Mallet A, Thenot JP. Pharmacokinetic analy
 
 ### Reviewer guidance
 
-**The mizolastine record was rejected because its single-compartment structure is incompatible with the extracted two-phase volume parameter.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure is defined as one compartment, yet a value of 89.6 L was extracted for the peripheral compartment volume. This mismatch leaves the structural component unreachable from the dose. Additionally, the second reader disagreed on the assignment of clearance and half-life values. Extracted — mizolastine: CL 4.9 L/hr, V2/F 89.6 L, t1/2z 12.9 hr.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mizolastine: CL 4.9 L/hr, V2/F 89.6 L, t1/2z 12.9 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has 4.9, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

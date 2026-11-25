@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 23:19 | 0:15 | 0/0/0 | 0/0/0 | 0/0/0 | 2,591/633 | openai / gpt-6-luna | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 21:24 | 0:04 | 0/0/0 | 0/0/0 | 0/0/0 | 3,803/161 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -47,15 +47,18 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Oda_2001.pdf` | Oda Y et al., Metabolism of methadone and levo-alpha-…, The Journal of pharmacology… (2001) | pgx | 7 |  | [11504799](https://www.ncbi.nlm.nih.gov/pubmed/11504799) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-07 23:19 UTC</sub>
+<sub>queue written 2026-11-23 21:24 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Dinis-Oliveira_2016 | irrelevant | 0 | 0 | This is a review of methadone metabolism and reports no quantitative diphenylpyraline disposition parameters. |
-| PGx | Oda_2001 | not_relevant | 0 | 0 | The paper reports CYP3A4-mediated metabolism of methadone and LAAM, not a genetic effect on a PK/PD parameter of diphenylpyraline. |
-| popPK | Santos_1995 | irrelevant | 0 | 0 | Diphenylpyraline is only an in-vitro antagonist comparator, and no pharmacokinetic parameters are reported. |
+| popPK | Dinis-Oliveira_2016 | irrelevant | 0 | 0 | The paper is a review of methadone metabolism where diphenylpyraline (EMDP) is mentioned only as a metabolite name, with no PK parameters reported. |
+| PGx | Dinis-Oliveira_2016 | not_relevant | 0 | 0 | The paper discusses the metabolomics of methadone, where diphenylpyraline (EMDP) is a metabolite, but it does not report a pharmacogenomic effect on the PK/PD of diphenylpyraline itself. |
+| popPK | Oda_2001 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of methadone and LAAM metabolism, not a pharmacokinetic study of diphenylpyraline. |
+| PGx | Oda_2001 | not_relevant | 0 | 0 | The paper discusses the metabolism of methadone and LAAM by CYP3A4, mentioning diphenylpyraline only as a metabolite (EMDP), but does not report any pharmacogenomic effects on its PK/PD parameters. |
+| popPK | Santos_1995 | irrelevant | 0 | 0 | This is an in-vitro electrophysiology study on snail neurons using diphenylpyraline as a comparative antagonist, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Santos_1995 | not_relevant | 0 | 0 | The paper reports receptor binding potency in snail neurons but does not describe any pharmacogenomic effect (gene variant) on PK or PD parameters. |
 
 
 </details>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Cisatracurium clearance was not extracted from the abstract, so a placeholder value was used and the model was quarantined.
+> No value for cisatracurium's clearance; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Dahaba2013_reference" status="model_quarantined" stale="false" population="patients undergoing acute normovolemic hemodilution or control" measured-compound="cisatracurium" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Dahaba AA, Suljevic I, Oettl K, Xiao Z, Dong H, Xiong L et al. Influence of acut
 
 ### Reviewer guidance
 
-**Cisatracurium clearance was not extracted from the abstract, so a placeholder value was used and the model was quarantined.**
+**No value for cisatracurium's clearance; t6_deviations (+1 more).**
 
-The record reports cisatracurium volume of distribution as 90.8 mL/kg and elimination half-life as 37.2 min, but lacks a clearance value. Consequently, a library placeholder was used instead of an explicit estimate. A second reader identified a clearance value of 6.1 in the abstract, which was not extracted by the primary process. The missing parameter and abstract-only source led to the model being held back. Extracted — cisatracurium: V 90.8 mL kg-1, Ct 136 ng·mL-1, t1/2β 37.2 min, t1/2α 2.4 min.
+The model was built, but cisatracurium's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cisatracurium: V 90.8 mL kg-1, Ct 136 ng·mL-1, t1/2β 37.2 min, t1/2α 2.4 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cisatracurium, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.143 | cross-check contradicted by a second reader: verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

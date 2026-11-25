@@ -32,10 +32,10 @@ Romidepsin is an antineoplastic histone deacetylase inhibitor used to treat T-ce
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Moltó_2021_CD4](drugs/drug_romidepsin/pd_Molt_2021_CD4.md) | CD4+ counts ← romidepsin · direct linear effect | — | Moltó J et al., Pharmacokinetic/pharmacodynamic analysi…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkaa523](https://doi.org/10.1093/jac/dkaa523) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Moltó_2021_apoptosis_markers_in_CD4_T_cells](drugs/drug_romidepsin/pd_Molt_2021_apoptosis_markers_in_CD4_T_cells.md) | apoptosis markers in CD4+ T cells ← romidepsin · direct linear effect | — | Moltó J et al., Pharmacokinetic/pharmacodynamic analysi…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkaa523](https://doi.org/10.1093/jac/dkaa523) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Moltó_2021_expression_of_exhaustion_markers_by_CD4_T_cells](drugs/drug_romidepsin/pd_Molt_2021_expression_of_exhaustion_markers_by_CD4_T_cells.md) | expression of exhaustion markers by CD4+ T cells ← romidepsin · direct linear effect | — | Moltó J et al., Pharmacokinetic/pharmacodynamic analysi…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkaa523](https://doi.org/10.1093/jac/dkaa523) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Moltó_2021_expression_of_exhaustion_markers_by_CD8_T_cells](drugs/drug_romidepsin/pd_Molt_2021_expression_of_exhaustion_markers_by_CD8_T_cells.md) | expression of exhaustion markers by CD8+ T cells ← romidepsin · direct linear effect | — | Moltó J et al., Pharmacokinetic/pharmacodynamic analysi…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkaa523](https://doi.org/10.1093/jac/dkaa523) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Moltó_2021_CD4](drugs/drug_romidepsin/pd_Molt_2021_CD4.md) | CD4+ counts ← romidepsin · direct linear effect | — | Moltó J et al., Pharmacokinetic/pharmacodynamic analysi…, The Journal of antimicrobia… (2021) | [10.1093/jac/dkaa523](https://doi.org/10.1093/jac/dkaa523) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

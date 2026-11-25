@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Second reader disputed the review verdict for arginine, disagreeing on specific pharmacokinetic parameter values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="Arginine" model-id="Arginine_Guo2023_reference" status="needs_review" stale="false" population="" measured-compound="arginine" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Guo C, Liao KH, Li M, Wang IM, Shaik N, Yin D. PK/PD model-informed dose selecti
 
 ### Reviewer guidance
 
-**Second reader disputed the review verdict for arginine, disagreeing on specific pharmacokinetic parameter values.**
+**cross_check_disputed; x1_cross_check.**
 
-The cross-check resulted in a disagreement, with an agreement score of 0.706 and zero readers supporting the original verdict. The second reader identified discrepancies in several parameter values, including specific figures such as 46.9, 0.112, and 23.2 that were not matched or were null in the initial record. Additionally, the model builder had defaulted the absorption lag time and assumed a bioavailability of 1.0, which may have contributed to the conflicting interpretations. Extracted — arginine: CL/F 9.53 L/h, V1/F 160 L, V2/F 285 L, Q/F 26.2 L/h, kabs 2.31 h−1.
+Extracted — arginine: CL/F 9.53 L/h, V1/F 160 L, V2/F 285 L, Q/F 26.2 L/h, kabs 2.31 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 46.9, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.706, 0 of 1 reader(s) agree | 0.706 | cross-check disputed by a second reader: verdict disputed, agreement 0.706, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.706 (12 of 17 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.706 | cross-check contradicted by a second reader: verdict disputed; agreement 0.706 (12 of 17 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

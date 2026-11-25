@@ -5,11 +5,11 @@
 
 # mefloquine — `Mefloquine_Simpson1999_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was rejected because the 50% AUC∞ increase for mefloquine monotherapy is treated as a dimensional structural parameter.
+> Only volume was extracted — no clearance; aUC has no unit.
 
-<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Simpson1999_reference" status="rejected" stale="false" population="patients with acute falciparum malaria" measured-compound="mefloquine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Simpson1999_reference" status="needs_review" stale="false" population="adults with acute falciparum malaria" measured-compound="mefloquine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Simpson JA, Price R, ter Kuile F, Teja-Isavatharm P, Nosten F, Chongsuphajaisiddhi T et al. Population pharmacokinetics of mefloquine in patients with acute falciparum malaria. Clinical pharmacology and therapeutics 66(5):472–484 (1999).
@@ -17,30 +17,26 @@ Simpson JA, Price R, ter Kuile F, Teja-Isavatharm P, Nosten F, Chongsuphajaisidd
 
 ## Population and dosing
 
-**Population:** patients with acute falciparum malaria · condition acute falciparum malaria · age group adult · n = 257.
+**Population:** adults with acute falciparum malaria · condition acute falciparum malaria · age group adult · n = 257.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 6 extracted.  
+**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| AUC(0-infinity) increase, monotherapy | AUC∞ | 50 | % |
-| AUC(0-infinity) increase, combined therapy | AUC ratio | 20 | % |
-| V/F, split doses of mefloquine monotherapy | V/F | 8.14 | L/kg |
-| CL/F (L/h) [Dihydroartemisinin GMR (90 % CI)] | CL/F | 1.0 | L/h |
-| absorption rate constant | kabs | 0.28 | h⁻¹ |
-| T lag,1 | tlag | 0.147 | h |
+| AUC(0-infinity) | AUC | 50 |  |
+| V/F | V/F | 8.14 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,24 +46,20 @@ Simpson JA, Price R, ter Kuile F, Teja-Isavatharm P, Nosten F, Chongsuphajaisidd
 
 ### Reviewer guidance
 
-**The record was rejected because the 50% AUC∞ increase for mefloquine monotherapy is treated as a dimensional structural parameter.**
+**Only volume was extracted — no clearance; aUC has no unit.**
 
-The record derives from the paper's abstract, so summary statistics stand in for fitted model parameters. It lists a 50% AUC∞ increase for mefloquine monotherapy and a 20% increase for combined therapy. The reviewer identified a dimension mismatch where the percentage unit of the AUC increase conflicts with a volumetric dimension. Additionally, the second reader could not locate a value for the 0.28 h⁻¹ absorption rate constant in the abstract. Extracted — mefloquine: AUC∞ 50 %, AUC ratio 20 %, V/F 8.14 L/kg, CL/F 1 L/h, kabs 0.28 h⁻¹, tlag 0.147 h.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mefloquine: AUC 50, V/F 8.14 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption rate constant: this record has 0.28, the second reading none; it also differs on 7 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent volume of distribution (v/f) - split doses monotherapy: this record has none, the second reading 8.14; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| AUC(0-infinity) increase, monotherapy | `Q17` · AUC∞ | 50 | % |  |  | % | llm_corrected (0.6) | Simpson_1999:abstract |
-| AUC(0-infinity) increase, combined therapy | `Q21` · AUC ratio | 20 | % |  |  | % | llm_corrected (0.6) | Simpson_1999:abstract |
-| V/F, split doses of mefloquine monotherapy | `Q76` · V/F | 8.14 | L/kg | 0.5698 | m3 | l/kg | llm_confirmed (0.6) | Simpson_1999:abstract |
-| CL/F (L/h) [Dihydroartemisinin GMR (90 % CI)] | `Q27` · CL/F | 1.0 | L/h | 2.778e-07 | m3/s | L/h | review_gapfill (0.7) | Rattanapunya_2015:review |
-| absorption rate constant | `Q49` · kabs | 0.28 | h⁻¹ | 7.778e-05 | 1/s | 1/h | review_gapfill (0.7) | Mim_2026:review |
-| T lag,1 | `Q83` · tlag | 0.147 | h | 529.2 | s | h | review_gapfill (0.7) | Cherkaoui-Rbati_2023:review |
+| AUC(0-infinity) | `Q88` · AUC | 50 |  |  |  |  | exact (1) | Simpson_1999:abstract, Simpson_1999:abstract, Simpson_1999:abstract, Simpson_1999:abstract |
+| V/F | `Q76` · V/F | 8.14 | L/kg | 0.5698 | m3 | l/kg | exact (1) | Simpson_1999:abstract, Simpson_1999:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,45 +69,29 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'AUC(0-infinity) increase, monotherapy' → Q17 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped duplicate Q76 ('V/F, single dose', value 20.37) — already have one for this compound
-- unit_dimension_unknown: 'ng/mL x day' (AUC∞)
-- dropped duplicate Q17 ('AUC(0-infinity), parasite clearance &lt; 48 hours', value 50373) — already have one for this compound
-- dropped duplicate Q17 ('AUC(0-infinity), slower parasite clearance', value 45583) — already have one for this compound
+- dropped unlinked row (NIL): 'mefloquine dose' — extend the ontology if this is a real PK parameter (source ['Simpson_1999:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=mefloquine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q27 (CL/F) from Rattanapunya_2015's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Mim_2026's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Cherkaoui-Rbati_2023's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Simpson_1999_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Simpson_1999_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.333 (4/12 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.28 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc(0-infinity) increase, combined therapy]` | 20 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc(0-infinity) increase, monotherapy]` | 50 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc(0-infinity) increase]` |  | 50 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f (l/h) [dihydroartemisinin gmr (90 % ci)]]` | 1.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t lag,1]` | 0.147 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f, split doses of mefloquine monotherapy]` | 8.14 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f]` |  | 8.14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution (v/f) - split doses monotherapy]` |  | 8.14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 50 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f]` | 8.14 |  | only_one_extracted |
 
 </details>
 
@@ -129,18 +105,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Simpson_1999:abstract'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Rattanapunya_2015:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Mim_2026:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Simpson_1999:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Cherkaoui-Rbati_2023:review'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Simpson_1999:abstract', 'Simpson_1999:abstract'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 |  | ['Simpson_1999:abstract', 'Simpson_1999:abstract', 'Simpson_1999:abstract', 'Simpson_1999:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 1 L/h | ['Rattanapunya_2015:review'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 570 L | ['Simpson_1999:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 570 L | ['Simpson_1999:abstract', 'Simpson_1999:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -152,9 +124,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -164,4 +146,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmefloquine%5D%20Mefloquine_Simpson1999_reference&body=Drug%3A%20mefloquine%0ARecord%3A%20Mefloquine_Simpson1999_reference%0APaper%3A%20Simpson_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mefloquine/Mefloquine_Simpson1999_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 07:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:55 UTC</sub>

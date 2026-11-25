@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;dolutegravir&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/&quot;},{&quot;label&quot;:&quot;Zhang_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolutegravir_Kengo2023_reference&quot;,&quot;label&quot;:&quot;Kengo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dolutegravir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolutegravir_Kengo2023_reference&quot;,&quot;label&quot;:&quot;Kengo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Second-reader disagreements on dolutegravir parameters, including absorption lag time (32.7 vs 0.262 h) and clearance (2.11 vs 0.901 L/h), caused the record to be held for review.
+> CL has no unit.
 
-<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Zhang2015_reference" status="needs_review" stale="false" population="HIV-infected treatment-naive adults" measured-compound="dolutegravir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Zhang2015_reference" status="needs_review" stale="false" population="HIV-infected treatment-naive patients" measured-compound="dolutegravir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Zhang J, Hayes S, Sadler BM, Minto I, Brandt J, Piscitelli S et al. Population pharmacokinetics of dolutegravir in HIV-infected treatment-naive patients. British journal of clinical pharmacology 80(3):502–514 (2015).
@@ -17,34 +17,31 @@ Zhang J, Hayes S, Sadler BM, Minto I, Brandt J, Piscitelli S et al. Population p
 
 ## Population and dosing
 
-**Population:** HIV-infected treatment-naive adults · condition HIV infection · age group adult · n = 563.
+**Population:** HIV-infected treatment-naive patients · condition HIV infection · age group adult.
 
-**Dosing:** 10, 25, 50 mg, oral, multiple, every 24 h.
+**Dosing:** 2, 10, 25, 50 mg, oral, multiple, every 24 h.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 6 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference/Dolutegravir_Zhang2015_reference.svg" alt="Dolutegravir_Zhang2015_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Parameters:** 5 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit | IIV |
+| label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
-| CL/F (l h–1)† | CL/F | 2.11 | l h–1 |  |
-| V/F (l)‡ | V/F | 2.49 | l |  |
-| ka (h–1) | kabs | 15.4 | h–1 |  |
-| ALAG (h) | tlag | 32.7 | h |  |
-| F ∼ GENDER§ | Fab | 3.27 |  |  |
-| CL ∼ SMOKING | CL | 2.45 | L/h | 0.0296 (None% RSE) |
+| CL/F (l h–1)† | CL/F | 0.901 | l h–1 | 2.11 |
+| V/F (l)‡ | V/F | 17.4 | l | 2.49 |
+| ka (h–1) | kabs | 2.24 | h–1 | 15.4 |
+| ALAG (h) | tlag | 0.263 | h | 32.7 |
+| CL ∼ SMOKING | CL | 1.16 |  | 2.45 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,117 +51,66 @@ Zhang J, Hayes S, Sadler BM, Minto I, Brandt J, Piscitelli S et al. Population p
 
 ### Reviewer guidance
 
-**Second-reader disagreements on dolutegravir parameters, including absorption lag time (32.7 vs 0.262 h) and clearance (2.11 vs 0.901 L/h), caused the record to be held for review.**
+**CL has no unit.**
 
-The model was held because a second reader disagreed with the extracted values for all key dolutegravir parameters, resulting in a low agreement score. Specifically, the absorption lag time was recorded as 32.7 h, while the second reader identified it as 0.262 h. Additionally, the clearance values differed substantially, with this record listing 2.11 L/h and 2.45 L/h, compared to the second reader's 0.901 L/h and 1.16 L/h. These significant numerical conflicts across the pharmacokinetic profile prevented verification of the model parameters. Extracted — dolutegravir: CL/F 2.11 l h–1, V/F 2.49 l, kabs 15.4 h–1, tlag 32.7 h, Fab 3.27, CL 2.45 L/h.
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — dolutegravir: CL/F 0.901 l h–1, V/F 17.4 l, kabs 2.24 h–1, tlag 0.263 h, CL 1.16.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dolutegravir, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
 |---|---|---|---|---|---|---|---|---|---|
-| CL/F (l h–1)† | `Q27` · CL/F | 2.11 | l h–1 | 5.861e-07 | m3/s | l/h | space_fold (0.95) | tbl3:row2:col1, tbl3:row2:col2, tbl3:row2:col5 |  |
-| V/F (l)‡ | `Q76` · V/F | 2.49 | l | 0.00249 | m3 | l | space_fold (0.95) | tbl3:row3:col1, tbl3:row3:col2, tbl3:row3:col5 |  |
-| ka (h–1) | `Q49` · kabs | 15.4 | h–1 | 0.004278 | 1/s | 1/h | exact (1) | tbl3:row4:col1, tbl3:row4:col2, tbl3:row4:col5 |  |
-| ALAG (h) | `Q83` · tlag | 32.7 | h | 1.177e+05 | s | h | exact (1) | tbl3:row5:col1, tbl3:row5:col2, tbl3:row5:col5 |  |
-| F ∼ GENDER§ | `Q40` · Fab | 3.27 |  |  |  |  | llm (0.6) | tbl3:row10:col1, tbl3:row10:col2, tbl3:row10:col5 |  |
-| CL ∼ SMOKING | `Q22` · CL | 2.45 | L/h | 6.806e-07 | m3/s | L/h | llm_confirmed (0.6) | tbl3:row11:col1, tbl3:row11:col2, tbl3:row11:col5 | 0.0296 (None% RSE) |
+| CL/F (l h–1)† | `Q27` · CL/F | 0.901 | l h–1 | 2.503e-07 | m3/s | l/h | 2.11 | space_fold (0.95) | tbl3:row2:col1 |
+| V/F (l)‡ | `Q76` · V/F | 17.4 | l | 0.0174 | m3 | l | 2.49 | space_fold (0.95) | tbl3:row3:col1 |
+| ka (h–1) | `Q49` · kabs | 2.24 | h–1 | 0.0006222 | 1/s | 1/h | 15.4 | exact (1) | tbl3:row4:col1 |
+| ALAG (h) | `Q83` · tlag | 0.263 | h | 946.8 | s | h | 32.7 | exact (1) | tbl3:row5:col1 |
+| CL ∼ SMOKING | `Q22` · CL | 1.16 |  |  |  |  | 2.45 | llm_confirmed (0.6) | tbl3:row11:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
-**Deviations:**
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
-- table section iiv: 'ω2CL' routed out of structural estimates ('Inter-individual or inter-occasion variability')
-- table section iiv: 'ω2V' routed out of structural estimates ('Inter-individual or inter-occasion variability')
-- table section iiv: 'ω2ka' routed out of structural estimates ('Inter-individual or inter-occasion variability')
-- table section iiv: 'ω2IOV-CL' routed out of structural estimates ('Inter-individual or inter-occasion variability')
-- table section residual_error: 'σ2prop' routed out of structural estimates ('Residual variability')
-- column 'bootstrap estimates*' classified 'ci' by the LLM but kept as the estimate: the header names the point value
-- dropped duplicate Q27 ('CL/F ∼ proof-of-concept', value '4.83') — already have one for this compound
-- dropped unlinked row (NIL): 'F ∼ 10 mg§' — extend the ontology if this is a real PK parameter (source ['tbl3:row7:col1', 'tbl3:row7:col2', 'tbl3:row7:col5'])
-- dropped duplicate Q27 ('CL/F ∼ WT', value '16.9') — already have one for this compound
-- dropped duplicate Q76 ('V/F ∼ WT', value '10.8') — already have one for this compound
-- dropped duplicate Q22 ('CL ∼ AGE', value '23.7') — already have one for this compound
-- dropped duplicate Q22 ('CL ∼ BILIRUBIN', value '14.0') — already have one for this compound
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['tbl3:footnote']); the table cell was unparseable — needs review
-- dropped value-less row: '95% CI'
-- NIL: refused to back-fill base 'CL/F' from footnote/prose loose number None (source ['tbl3:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'V/F' from footnote/prose loose number None (source ['tbl3:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 9 (source ['tbl3:footnote']); the table cell was unparseable — needs review
-- implicit units: 'CL ∼ SMOKING' → L/h (from the paper text: "The paper states units for apparent clearance: 'CL/F = 0.901 (0.864, 0.938) l h–1' (Abstract: 'apparent clearance ... 0.")
+- table section iiv: 'ω2CL' routed out of structural estimates ('Inter-individual or inter-occasion variability CV%‖')
+- table section iiv: 'ω2V' routed out of structural estimates ('Inter-individual or inter-occasion variability CV%‖')
+- table section iiv: 'ω2ka' routed out of structural estimates ('Inter-individual or inter-occasion variability CV%‖')
+- table section iiv: 'ω2IOV-CL' routed out of structural estimates ('Inter-individual or inter-occasion variability CV%‖')
+- table section residual_error: 'σ2prop' routed out of structural estimates ('Residual variability CV% Median 95% CI')
+- dropped duplicate Q27 ('CL/F ∼ proof-of-concept', value '1.35') — already have one for this compound
+- dropped unlinked row (NIL): 'F ∼ 10 mg§' — extend the ontology if this is a real PK parameter (source ['tbl3:row7:col1'])
+- dropped duplicate Q27 ('CL/F ∼ WT', value '0.438') — already have one for this compound
+- dropped duplicate Q76 ('V/F ∼ WT', value '0.768') — already have one for this compound
+- dropped unlinked row (NIL): 'F ∼ GENDER§' — extend the ontology if this is a real PK parameter (source ['tbl3:row10:col1'])
+- dropped duplicate Q22 ('CL ∼ AGE', value '0.193') — already have one for this compound
+- dropped unlinked row (NIL): 'CL ∼ BILIRUBIN' — extend the ontology if this is a real PK parameter (source ['tbl3:row13:col1'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dolutegravir
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- unparsed cell tbl3:row2:col3 = '0.864, 0.938'
-- unparsed cell tbl3:row2:col6 = '0.866, 0.940'
-- unparsed cell tbl3:row3:col3 = '16.5, 18.3'
-- unparsed cell tbl3:row3:col6 = '16.6, 18.2'
-- unparsed cell tbl3:row4:col3 = '1.56, 2.92'
-- unparsed cell tbl3:row4:col6 = '1.73, 3.10'
-- unparsed cell tbl3:row5:col3 = '0.0942, 0.432'
-- unparsed cell tbl3:row5:col6 = '0.0833, 0.393'
-- unparsed cell tbl3:row6:col3 = '1.22, 1.48'
-- unparsed cell tbl3:row6:col6 = '1.24, 1.51'
-- unparsed cell tbl3:row7:col3 = '1.17, 1.31'
-- unparsed cell tbl3:row7:col6 = '1.17, 1.31'
-- unparsed cell tbl3:row8:col3 = '0.293, 0.583'
-- unparsed cell tbl3:row8:col6 = '0.290, 0.582'
-- unparsed cell tbl3:row9:col3 = '0.605, 0.931'
-- unparsed cell tbl3:row9:col6 = '0.616, 0.944'
-- unparsed cell tbl3:row10:col3 = '1.13, 1.29'
-- unparsed cell tbl3:row10:col6 = '1.13, 1.30'
-- unparsed cell tbl3:row11:col3 = '1.10, 1.22'
-- unparsed cell tbl3:row11:col6 = '1.10, 1.22'
-- unparsed cell tbl3:row12:col3 = '0.103, 0.283'
-- unparsed cell tbl3:row12:col6 = '0.105, 0.283'
-- unparsed cell tbl3:row13:col3 = '–0.269, –0.153'
-- unparsed cell tbl3:row13:col6 = '–0.267, –0.152'
-- unparsed cell tbl3:row15:col3 = '0.0451, 0.0651'
-- unparsed cell tbl3:row15:col6 = '0.0449, 0.0652'
-- unparsed cell tbl3:row16:col3 = '0.00794, 0.0297'
-- unparsed cell tbl3:row16:col6 = '0.00714, 0.0295'
-- unparsed cell tbl3:row17:col3 = '0.0535, 0.395'
-- unparsed cell tbl3:row17:col6 = '0.0613, 1.11'
-- unparsed cell tbl3:row18:col3 = '0.0205, 0.0387'
-- unparsed cell tbl3:row18:col6 = '0.0184, 0.0407'
-- unparsed cell tbl3:row20:col3 = '0.0602, 0.0806'
-- unparsed cell tbl3:row20:col6 = '0.0555, 0.0830'
+- table tbl3: unspecified_interval_bound
+- table tbl3: unparsed_numeric_cell
 - LLM selected parameter table(s) 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss-120b` | partly confirmed | 0.875 (14/16 fields) | 2 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[alag].value` | 32.7 | 0.262 | mismatch |
-| `gpt-oss-120b` | `parameters[cl ∼ smoking].value` | 2.45 | 1.16 | mismatch |
-| `gpt-oss-120b` | `parameters[cl/f (l h-1)].value` | 2.11 | 0.901 | mismatch |
-| `gpt-oss-120b` | `parameters[f ∼ gender].value` | 3.27 | 1.21 | mismatch |
+| `gpt-oss-120b` | `parameters[f ∼ 10 mg]` |  | 1.24 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka].value` | 15.4 | 2.21 | mismatch |
-| `gpt-oss-120b` | `parameters[v/f (l)].value` | 2.49 | 17.4 | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | dolutegravir | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | dolutegravir | unknown | mismatch |
 
 </details>
 
@@ -178,34 +124,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tbl3:row11:col1', 'tbl3:row11:col2', 'tbl3:row11:col5'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['tbl3:row2:col1', 'tbl3:row2:col2', 'tbl3:row2:col5'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['tbl3:row4:col1', 'tbl3:row4:col2', 'tbl3:row4:col5'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['tbl3:row3:col1', 'tbl3:row3:col2', 'tbl3:row3:col5'] |
-| C5_dimension_Q83 | pass | [time] |  | ['tbl3:row5:col1', 'tbl3:row5:col2', 'tbl3:row5:col5'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['tbl3:row2:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['tbl3:row4:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['tbl3:row3:col1'] |
+| C5_dimension_Q83 | pass | [time] |  | ['tbl3:row5:col1'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] |  | ['tbl3:row11:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.45 L/h | ['tbl3:row11:col1', 'tbl3:row11:col2', 'tbl3:row11:col5'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 2.11 L/h | ['tbl3:row2:col1', 'tbl3:row2:col2', 'tbl3:row2:col5'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 2.49 L | ['tbl3:row3:col1', 'tbl3:row3:col2', 'tbl3:row3:col5'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=dolutegravir) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.182, 0 of 1 reader(s) agree | 0.182 | cross-check disputed by a second reader: verdict disputed, agreement 0.182, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped | 3.67 | 0 |  | unresolved concentration unit (exp 'µg ml–1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 3.62 | 0 |  | unresolved concentration unit (exp 'µg ml–1', sim 'kg/m3') |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.901 L/h | ['tbl3:row2:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 17.4 L | ['tbl3:row3:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -222,39 +152,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference/Dolutegravir_Zhang2015_reference_modelica.zip" download>Dolutegravir_Zhang2015_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference/Dolutegravir_Zhang2015_reference_fmi.zip" download>Dolutegravir_Zhang2015_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference/Dolutegravir_Zhang2015_reference_fmi.zip" download>Dolutegravir_Zhang2015_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference/Dolutegravir_Zhang2015_reference_matlab.zip" download>Dolutegravir_Zhang2015_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference/Dolutegravir_Zhang2015_reference_matlab_simbio.zip" download>Dolutegravir_Zhang2015_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference/Dolutegravir_Zhang2015_reference_sbml.zip" download>Dolutegravir_Zhang2015_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference/Dolutegravir_Zhang2015_reference_cellml.zip" download>Dolutegravir_Zhang2015_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.4194 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 1.177e+05 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 5.861e-07 | m3/s |
-| input | model | `VdPerKg` | 3.557e-05 | m3/kg |
-| input | model | `ka` | 0.004278 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -275,14 +180,10 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 10 mg, single dose, first-order absorption (ka 15.4 /h, lag 1.96e+03 min, F 1). Doses in the paper: 10, 25, 50 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference/Dolutegravir_Zhang2015_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference/Dolutegravir_Zhang2015_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Dolutegravir_Zhang2015_reference_params.json` · controls `Dolutegravir_Zhang2015_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdolutegravir%5D%20Dolutegravir_Zhang2015_reference&body=Drug%3A%20dolutegravir%0ARecord%3A%20Dolutegravir_Zhang2015_reference%0APaper%3A%20Zhang_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:10 UTC</sub>

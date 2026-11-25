@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Atracurium metabolite laudanosine is an orphan compartment with no dose path, and parameters were extracted from the abstract only.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="atracurium" model-id="Atracurium_Boyd1996_reference" status="rejected" stale="false" population="critically ill patients" measured-compound="atracurium" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -47,13 +47,13 @@ Boyd AH, Eastwood NB, Parker CJ, Hunter JM. Comparison of the pharmacodynamics a
 
 ### Reviewer guidance
 
-**Atracurium metabolite laudanosine is an orphan compartment with no dose path, and parameters were extracted from the abstract only.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure links both atracurium and cis-atracurium to laudanosine via metabolism, but no parameters are defined for these links, leaving the metabolite unreachable from the dose. The source text was the abstract alone, so the clearance (549 ml min-1), half-life (27.6 min), and volume (4.7 L/kg) are summary statistics rather than fitted model parameters. A second reader disagreed on the primary analyte, suggesting cis-atracurium, and questioned the existence of the metabolism links and the extracted parameter values. Extracted — atracurium: CL 549 ml min-1, t1/2z 27.6 min, V 4.7 L/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — atracurium: CL 549 ml min-1, t1/2z 27.6 min, V 4.7 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has atracurium, the second reading cis-atracurium; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

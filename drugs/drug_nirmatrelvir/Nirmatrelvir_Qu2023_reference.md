@@ -5,11 +5,11 @@
 
 # Nirmatrelvir — `Nirmatrelvir_Qu2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was rejected because the absorption rate constant's unit conflicted with the clearance parameter's dimension.
+> AUC has no unit.
 
-<div class="pk-model-meta" hidden drug="Nirmatrelvir" model-id="Nirmatrelvir_Qu2023_reference" status="rejected" stale="false" population="older adult Chinese patients with COVID-19 infection" measured-compound="nirmatrelvir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Nirmatrelvir" model-id="Nirmatrelvir_Qu2023_reference" status="needs_review" stale="false" population="older Chinese adults with COVID-19 infection" measured-compound="nirmatrelvir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Qu Y, Su C, Xiang Z, Wang Y, Han J, Pan J et al. Population pharmacokinetic modeling and simulation for nirmatrelvir exposure assessment in Chinese older patients with COVID-19 infection. European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences 189:106535 (2023).
@@ -17,7 +17,7 @@ Qu Y, Su C, Xiang Z, Wang Y, Han J, Pan J et al. Population pharmacokinetic mode
 
 ## Population and dosing
 
-**Population:** older adult Chinese patients with COVID-19 infection · condition COVID-19 · age group elderly.
+**Population:** older Chinese adults with COVID-19 infection · condition COVID-19 infection · age group elderly.
 
 ## Model
 
@@ -27,18 +27,18 @@ Qu Y, Su C, Xiang Z, Wang Y, Han J, Pan J et al. Population pharmacokinetic mode
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | apparent clearance (CL/F) | CL/F | 4.16 | L/h |
 | apparent volumes of distribution (V/F) | V/F | 39.1 | L |
-| absorption rate constant (ka) | kabs | 0.776 | ka |
-| simulated AUCs increased (creatinine clearance 60 mL/min) | AUC | 26 | % |
+| absorption rate constant (ka) | kabs | 0.776 | 1/h |
+| simulated AUCs | AUC | 26 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Qu Y, Su C, Xiang Z, Wang Y, Han J, Pan J et al. Population pharmacokinetic mode
 
 ### Reviewer guidance
 
-**The record was rejected because the absorption rate constant's unit conflicted with the clearance parameter's dimension.**
+**AUC has no unit.**
 
-The absorption rate constant of 0.776 was recorded with a dimension mismatch against the expected rate unit. Additionally, the area under the curve parameter of 26% conflicted with mass, time, and length dimensions. The abstract-only source meant summary statistics stood in for a fitted model. Extracted — nirmatrelvir: CL/F 4.16 L/h, V/F 39.1 L, kabs 0.776 ka, AUC 26 %.
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nirmatrelvir: CL/F 4.16 L/h, V/F 39.1 L, kabs 0.776 1/h, AUC 26.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nirmatrelvir, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of creatinine clearances of: this record has none, the second reading 60; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -62,8 +62,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 |---|---|---|---|---|---|---|---|---|
 | apparent clearance (CL/F) | `Q27` · CL/F | 4.16 | L/h | 1.156e-06 | m3/s | l/h | exact (1) | Qu_2023:abstract |
 | apparent volumes of distribution (V/F) | `Q76` · V/F | 39.1 | L | 0.0391 | m3 | l | llm_confirmed (0.6) | Qu_2023:abstract |
-| absorption rate constant (ka) | `Q49` · kabs | 0.776 | ka |  |  | ka | exact (1) | Qu_2023:abstract |
-| simulated AUCs increased (creatinine clearance 60 mL/min) | `Q88` · AUC | 26 | % |  |  | % | llm (0.6) | Qu_2023:abstract |
+| absorption rate constant (ka) | `Q49` · kabs | 0.776 | 1/h | 0.0002156 | 1/s | 1/h | exact (1) | Qu_2023:abstract |
+| simulated AUCs | `Q88` · AUC | 26 |  |  |  |  | llm (0.6) | Qu_2023:abstract, Qu_2023:abstract, Qu_2023:abstract, Qu_2023:abstract, Qu_2023:abstract, Qu_2023:abstract, Qu_2023:abstract, Qu_2023:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,47 +73,28 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'absorption rate constant (ka)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
-- unit_dimension_mismatch: 'simulated AUCs increased (creatinine clearance 60 mL/min)' → Q88 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'simulated AUCs increased (creatinine clearance 45 mL/min)' → Q88 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped duplicate Q88 ('simulated AUCs increased (creatinine clearance 45 mL/min)', value 43) — already have one for this compound
-- unit_dimension_mismatch: 'simulated AUCs increased (creatinine clearance 30 mL/min)' → Q88 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped duplicate Q88 ('simulated AUCs increased (creatinine clearance 30 mL/min)', value 72) — already have one for this compound
-- unit_dimension_mismatch: 'simulated AUCs increased (creatinine clearance 15 mL/min)' → Q88 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped duplicate Q88 ('simulated AUCs increased (creatinine clearance 15 mL/min)', value 135) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=nirmatrelvir
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Qu_2023_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Qu_2023_metadata.yaml (11 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss-120b` | partly confirmed | 0.7 (7/10 fields) | 3 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.776 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption rate constant]` |  | 0.776 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent clearance]` | 4.16 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent clearance]` |  | 4.16 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volumes of distribution]` | 39.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volumes of distribution]` |  | 39.1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[simulated aucs increased]` | 26 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | nirmatrelvir | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | nirmatrelvir | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[creatinine clearances of]` |  | 60 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[simulated aucs were increased by]` |  | 26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[simulated aucs]` | 26 |  | only_one_extracted |
 
 </details>
 
@@ -131,9 +112,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Qu_2023:abstract'] |
-| C5_dimension_Q49 | fail | 1 / [time] | ka ([time]) | ['Qu_2023:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Qu_2023:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Qu_2023:abstract'] |
-| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Qu_2023:abstract'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 |  | ['Qu_2023:abstract', 'Qu_2023:abstract', 'Qu_2023:abstract', 'Qu_2023:abstract', 'Qu_2023:abstract', 'Qu_2023:abstract', 'Qu_2023:abstract', 'Qu_2023:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 4.16 L/h | ['Qu_2023:abstract'] |
@@ -149,9 +130,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -161,4 +152,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnirmatrelvir%5D%20Nirmatrelvir_Qu2023_reference&body=Drug%3A%20nirmatrelvir%0ARecord%3A%20Nirmatrelvir_Qu2023_reference%0APaper%3A%20Qu_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nirmatrelvir/Nirmatrelvir_Qu2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:40 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:42 UTC</sub>

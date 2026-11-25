@@ -27,7 +27,7 @@ Naphthoquine is a chemical compound classified as an antimalarial drug.
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Ali_2022_reference](drugs/drug_naphthoquine/Naphthoquine_Ali2022_reference.md) | — | 1-compartment (no model) | 1 | Ali AM et al., Population Pharmacokinetics of Antimala…, Antimicrobial agents and ch… (2022) | [10.1128/aac.01696-21](https://doi.org/10.1128/aac.01696-21) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from</sub> | [Batty_2012_reference](drugs/drug_naphthoquine/Naphthoquine_Batty2012_reference.md) | — | 1-compartment (no model) | 7 | Batty KT et al., Artemisinin-naphthoquine combination th…, Antimicrobial agents and ch… (2012) | [10.1128/AAC.06250-11](https://doi.org/10.1128/AAC.06250-11) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q27 — no SI value to build from</sub> | [Batty_2012_reference](drugs/drug_naphthoquine/Naphthoquine_Batty2012_reference.md) | — | 1-compartment (no model) | 6 | Batty KT et al., Artemisinin-naphthoquine combination th…, Antimicrobial agents and ch… (2012) | [10.1128/AAC.06250-11](https://doi.org/10.1128/AAC.06250-11) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -41,7 +41,7 @@ Naphthoquine is a chemical compound classified as an antimalarial drug.
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:34 | 0:51 | 2/0/0 | 0/0/0 | 0/0/0 | 40,701/2,884 | ollama / glm-5.3-flash | 2 | 0/1 | 2/0 | 0 |
+| 2026-11-24 04:08 | 1:11 | 2/0/0 | 0/0/0 | 0/0/0 | 3,670/181 | einfracz / qwen3.8-27b | 2 | 0/1 | 2/0 | 0 |
 
 ## Coverage
 
@@ -50,25 +50,19 @@ Naphthoquine is a chemical compound classified as an antimalarial drug.
 - **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Batty_2012.pdf` | Batty KT et al., Artemisinin-naphthoquine combination th…, Antimicrobial agents and ch… (2012) | popPK | 10 | [10.1128/AAC.06250-11](https://doi.org/10.1128/AAC.06250-11) | [22330923](https://pubmed.ncbi.nlm.nih.gov/22330923) | Population PK model for naphthoquine with numeric CL/F, Vss/F, half-lives reported directly in the abstract. |
-
-<sub>queue written 2026-10-07 07:34 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Karl_2016 | irrelevant | 0 | 0 | This is a gametocyte carriage risk-factor study; naphthoquine is only a treatment arm with no PK parameters reported. |
+| PGx | Batty_2012 | not_relevant | 0 | 0 | The paper reports the effects of dosing regimen and food (fat) on naphthoquine pharmacokinetics, but it does not investigate gene variants or genotypes. |
+| popPK | Karl_2016 | irrelevant | 0 | 0 | The study focuses on risk factors for gametocyte carriage in malaria patients treated with naphthoquine, not on the pharmacokinetic parameters of naphthoquine. |
+| PGx | Karl_2016 | not_relevant | 0 | 0 | The paper analyzes risk factors for gametocyte carriage and does not report pharmacogenomic effects on the PK or PD parameters of naphthoquine. |
+| popPK | Mustafa_2017 | irrelevant | 0 | 0 | The paper is a review/overview of a fixed-dose antimalarial combination regimen and discusses clinical efficacy and dosing, but does not report any quantitative pharmacokinetic parameters (CL, V, t1/2, etc.) for naphthoquine. |
+| PGx | Mustafa_2017 | not_relevant | 0 | 0 | The paper is a review of the artemisinin-naphthoquine combination therapy's efficacy and compliance, and it contains no data on genetic variants or pharmacogenomics. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnaphthoquine%5D&body=Drug%3A%20naphthoquine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_naphthoquine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 07:34 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 04:06 UTC</sub>

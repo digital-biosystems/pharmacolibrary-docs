@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper concerns captopril pharmacokinetics, not methyldopa, making the extracted clearance and volume parameters invalid for this drug.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Methyldopa" model-id="Methyldopa_Brogden1988_reference" status="rejected" stale="false" population="adults" measured-compound="methyldopa" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Brogden RN, Todd PA, Sorkin EM. Captopril. An update of its pharmacodynamic and 
 
 ### Reviewer guidance
 
-**The paper concerns captopril pharmacokinetics, not methyldopa, making the extracted clearance and volume parameters invalid for this drug.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source is a review of captopril where methyldopa is only a comparator, so the 0.8 L/kg/h clearance is not methyldopa-specific. The second reader disagreed with the rejection, citing specific values like 19 and 4.8 that were not extracted here. The record was rejected because the primary subject of the study is another drug. Extracted — methyldopa: CL 0.8 L/kg/h, V 2.05 L/kg.
+Extracted — methyldopa: CL 0.8 L/kg/h, V 2.05 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 19; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -127,7 +127,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.583, 0 of 1 reader(s) agree | 0.583 | cross-check disputed by a second reader: verdict disputed, agreement 0.583, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.583 (7 of 12 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.583 | cross-check contradicted by a second reader: verdict disputed; agreement 0.583 (7 of 12 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

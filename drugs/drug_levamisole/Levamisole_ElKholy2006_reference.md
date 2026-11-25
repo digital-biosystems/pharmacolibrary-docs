@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P02C&quot;,&quot;href&quot;:&quot;atc/P02C.md&quot;},{&quot;label&quot;:&quot;levamisole&quot;,&quot;href&quot;:&quot;drugs/drug_levamisole/&quot;},{&quot;label&quot;:&quot;El-Kholy_2006 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levamisole_KreeftmeijerVegter2015_reference&quot;,&quot;label&quot;:&quot;Kreeftmeijer-Vegter_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levamisole/Levamisole_KreeftmeijerVegter2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levamisole_KreeftmeijerVegter2015_reference&quot;,&quot;label&quot;:&quot;Kreeftmeijer-Vegter_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levamisole/Levamisole_KreeftmeijerVegter2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-> This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
+> Only volume was extracted — no clearance.
 
-<div class="pk-model-meta" hidden drug="levamisole" model-id="Levamisole_ElKholy2006_reference" status="needs_review" stale="false" population="broiler breeder chickens (prelay and peak egg production)" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="levamisole" model-id="Levamisole_ElKholy2006_reference" status="needs_review" stale="false" population="broiler breeder chickens" measured-compound="levamisole" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 El-Kholy H, Kemppainen B, Ravis W, Hoerr F. Pharmacokinetics of levamisole in broiler breeder chickens. Journal of veterinary pharmacology and therapeutics 29(1):49–53 (2006).
@@ -17,7 +17,7 @@ El-Kholy H, Kemppainen B, Ravis W, Hoerr F. Pharmacokinetics of levamisole in br
 
 ## Population and dosing
 
-**Population:** broiler breeder chickens (prelay and peak egg production) · condition healthy · age group adult · n = 20.
+**Population:** broiler breeder chickens · condition healthy · age group adult · n = 20.
 
 > **Species: bird.** This record comes from an animal study (bird), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -25,7 +25,7 @@ El-Kholy H, Kemppainen B, Ravis W, Hoerr F. Pharmacokinetics of levamisole in br
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,13 +33,11 @@ El-Kholy H, Kemppainen B, Ravis W, Hoerr F. Pharmacokinetics of levamisole in br
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| V(ss) prelay | Vss | 8.358 | mL/kg |
-| CL | CL | 93.0 | L h À1 |
-| K a | kabs | 0.8 | h À1 |
+| V(ss) | V | 8.358 | mL/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +47,11 @@ El-Kholy H, Kemppainen B, Ravis W, Hoerr F. Pharmacokinetics of levamisole in br
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete; the clearance plausibility check could not be computed.**
+**Only volume was extracted — no clearance.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Veltkamp_2024) cannot stand in for this paper's evidence. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — levamisole: Vss 8.36 mL/kg, CL 93 L h À1, kabs 0.8 h À1.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — levamisole: V 8.36 mL/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levamisole, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of v: this record has 8.358, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,9 +59,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| V(ss) prelay | `Q65` · Vss | 8.358 | mL/kg | 0.0005851 | m3 | ml/kg | llm (0.6) | El-Kholy_2006:abstract |
-| CL | `Q22` · CL | 93.0 | L h À1 | 2.583e-05 | m3/s | L/h | review_gapfill (0.7) | Veltkamp_2024:review |
-| K a | `Q49` · kabs | 0.8 | h À1 | 0.0002222 | 1/s | 1/h | review_gapfill (0.7) | Veltkamp_2024:review |
+| V(ss) | `Q61` · V | 8.358 | mL/kg | 0.0005851 | m3 | ml/kg | exact (1) | El-Kholy_2006:abstract, El-Kholy_2006:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,36 +69,27 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q65 ('V(ss) peak of egg production', value 13.581) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=levamisole
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Veltkamp_2024's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Veltkamp_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in El-Kholy_2006_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl]` | 93.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k a]` | 0.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v(ss) prelay]` | 8.358 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v]` |  | 8.358 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | levamisole | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | levamisole | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[v]` | 8.358 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state (v(ss))]` |  | 8.358 | only_one_extracted |
 
 </details>
 
@@ -119,13 +106,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Veltkamp_2024:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Veltkamp_2024:review'] |
-| C5_dimension_Q65 | pass | [length] ** 3 |  | ['El-Kholy_2006:abstract'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 93 | ['Veltkamp_2024:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['El-Kholy_2006:abstract', 'El-Kholy_2006:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 93 L/h | ['Veltkamp_2024:review'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 0.585 L | ['El-Kholy_2006:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 0.585 L | ['El-Kholy_2006:abstract', 'El-Kholy_2006:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -159,4 +142,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevamisole%5D%20Levamisole_ElKholy2006_reference&body=Drug%3A%20levamisole%0ARecord%3A%20Levamisole_ElKholy2006_reference%0APaper%3A%20El-Kholy_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levamisole/Levamisole_ElKholy2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 10:28 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:24 UTC</sub>

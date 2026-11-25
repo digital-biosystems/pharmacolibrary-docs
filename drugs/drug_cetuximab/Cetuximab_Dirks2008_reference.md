@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;cetuximab&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/&quot;},{&quot;label&quot;:&quot;Dirks_2008 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cetuximab_Azzopardi2011_reference&quot;,&quot;label&quot;:&quot;Azzopardi_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Azzopardi2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Cognetti2026_reference&quot;,&quot;label&quot;:&quot;Cognetti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Grisic2020_tvarcl&quot;,&quot;label&quot;:&quot;Grisic_2020_tvarcl&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Grisic2020_tvarcl.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Pointreau2016_reference&quot;,&quot;label&quot;:&quot;Pointreau_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Yang2026_reference&quot;,&quot;label&quot;:&quot;Yang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cetuximab_Azzopardi2011_reference&quot;,&quot;label&quot;:&quot;Azzopardi_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Azzopardi2011_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Cognetti2026_reference&quot;,&quot;label&quot;:&quot;Cognetti_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Cognetti2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Grisic2020_tvarcl&quot;,&quot;label&quot;:&quot;Grisic_2020_tvarcl&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Grisic2020_tvarcl.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Pointreau2016_reference&quot;,&quot;label&quot;:&quot;Pointreau_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Pointreau2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cetuximab_Yang2026_reference&quot;,&quot;label&quot;:&quot;Yang_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cetuximab/Cetuximab_Yang2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cetuximab's Vd and elimination rate constant have conflicting units that contradict their pharmacokinetic meanings.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit mg/h ([mass] / [time]) vs [length] ** 3; Q47 unit mug/mL ([mass] / [length] ** 3) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="cetuximab" model-id="Cetuximab_Dirks2008_reference" status="rejected" stale="false" population="patients with recurrent and/or metastatic squamous cell carcinoma of the head and neck" measured-compound="cetuximab" parameterization="mechanistic" topology="3C"></div>
 
@@ -49,13 +49,13 @@ Dirks NL, Nolting A, Kovar A, Meibohm B. Population pharmacokinetics of cetuxima
 
 ### Reviewer guidance
 
-**Cetuximab's Vd and elimination rate constant have conflicting units that contradict their pharmacokinetic meanings.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit mg/h ([mass] / [time]) vs [length] ** 3; Q47 unit mug/mL ([mass] / [length] ** 3) vs 1 / [time].**
 
-The volume of distribution is recorded as 4.38 mg/h, a mass flow rate inconsistent with a volume unit. Similarly, the elimination rate constant is given as 74 µg/mL, a concentration unit rather than a rate constant. The record was derived solely from the abstract, so these summary statistics stand in for a fitted model, and a second reader was unable to confirm any of the parameter values. Extracted — cetuximab: V 4.38 mg/h, kel 74 mug/mL, V1 2.83 L, V2 2.43 L, Q 0.103 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cetuximab: V 4.38 mg/h, kel 74 mug/mL, V1 2.83 L, V2 2.43 L, Q 0.103 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of central compartment volume v: this record has 2.83, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

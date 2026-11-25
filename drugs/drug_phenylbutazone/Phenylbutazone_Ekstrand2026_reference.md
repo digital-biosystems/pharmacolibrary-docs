@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The two-compartment model for phenylbutazone was rejected because its structure includes an orphan compartment disconnected from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="phenylbutazone" model-id="Phenylbutazone_Ekstrand2026_reference" status="rejected" stale="false" population="" measured-compound="phenylbutazone" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Ekstrand C, Michanek P, Hernlund E, Gehring R, Spjut K, Salomonsson M. Differenc
 
 ### Reviewer guidance
 
-**The two-compartment model for phenylbutazone was rejected because its structure includes an orphan compartment disconnected from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Although the record lists typical parameters like CL/F of 35.41 L/h/kg and V/F of 454.0 L/kg, the model topology contains a compartment with no path from the administered drug. This structural flaw means the second compartment cannot receive drug mass, rendering the parameter estimates for that compartment irrelevant to the observed plasma concentrations. The review identified this unreachable compartment as the primary reason for refusal, independent of the parameter values extracted. Extracted — phenylbutazone: CL/F 35.4 L/h/kg, V/F 454 L/kg, V2/F 13.5 L/kg, kabs 1.32 1/h, tlag 0.45 h.
+Extracted — phenylbutazone: CL/F 35.4 L/h/kg, V/F 454 L/kg, V2/F 13.5 L/kg, kabs 1.32 1/h, tlag 0.45 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 74.82, the second reading 55.37; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

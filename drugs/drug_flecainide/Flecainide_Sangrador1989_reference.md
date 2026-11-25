@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Flecainide's volume of distribution, 7.99 1/kg, has dimensionless units that conflict with the parameter's volume dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit 1/kg (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="flecainide" model-id="Flecainide_Sangrador1989_reference" status="rejected" stale="false" population="critically ill patients with acute myocardial infarction" measured-compound="flecainide" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Sangrador G, Sánchez-Alcaraz A, Rodriguez M, Ibáñez P. Clinical pharmacokinet
 
 ### Reviewer guidance
 
-**Flecainide's volume of distribution, 7.99 1/kg, has dimensionless units that conflict with the parameter's volume dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit 1/kg (dimensionless) vs [length] ** 3.**
 
-The abstract-only record reports a volume of distribution of 7.99 1/kg, a unit that is dimensionless but conflicts with the volume dimension required for the parameter. A dimensionality check failed on this structural parameter due to the unit mismatch. The second reader disagreed on several parameter values, noting discrepancies for the volume, clearance, and absorption rate constant. Extracted — flecainide: t1/2β 22 h, V 7.99 1/kg, CL 1.72 L/h, kabs 0.62 h À1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flecainide: t1/2β 22 h, V 7.99 1/kg, CL 1.72 L/h, kabs 0.62 h À1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 1: this record has none, the second reading 2.67; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

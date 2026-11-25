@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;daclatasvir&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/&quot;},{&quot;label&quot;:&quot;Al-Nahari_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daclatasvir_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daclatasvir_Wang2018_dcv_estimate_rse&quot;,&quot;label&quot;:&quot;Wang_2018_dcv_estimate_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_Wang2018_dcv_estimate_rse.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ueno_2018_SVR12&quot;,&quot;label&quot;:&quot;Ueno_2018 \u00b7 SVR12&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/pd_Ueno_2018_SVR12.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daclatasvir_AlNahari2020_reference&quot;,&quot;label&quot;:&quot;Al-Nahari_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Daclatasvir_Osawa2018_reference&quot;,&quot;label&quot;:&quot;Osawa_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_Osawa2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daclatasvir_Wang2018_reference&quot;,&quot;label&quot;:&quot;Wang_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/Daclatasvir_Wang2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ueno_2018_SVR12&quot;,&quot;label&quot;:&quot;Ueno_2018 \u00b7 SVR12&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daclatasvir/pd_Ueno_2018_SVR12.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # daclatasvir — `Daclatasvir_AlNahari2020_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record rejected because the zero-order input rate, 1.5 1/h, has units of reciprocal time, which is dimensionally incompatible with a mass per time rate.
+> cross_check_disputed; x1_cross_check.
 
-<div class="pk-model-meta" hidden drug="daclatasvir" model-id="Daclatasvir_AlNahari2020_reference" status="rejected" stale="false" population="adolescents with genotype-4 chronic HCV infection" measured-compound="daclatasvir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="daclatasvir" model-id="Daclatasvir_AlNahari2020_reference" status="needs_review" stale="false" population="Egyptian adolescents with genotype-4 HCV infection" measured-compound="daclatasvir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Al-Nahari MM, Abbassi MM, Ebeid FS, Hassany M, El-Sayed MH, Farid SF. Pharmacokinetics of daclatasvir in Egyptian adolescents with genotype-4 HCV infection. Antiviral therapy 25(2):101–110 (2020).
@@ -17,30 +17,30 @@ Al-Nahari MM, Abbassi MM, Ebeid FS, Hassany M, El-Sayed MH, Farid SF. Pharmacoki
 
 ## Population and dosing
 
-**Population:** adolescents with genotype-4 chronic HCV infection · condition chronic HCV infection (genotype 4) · age group adolescent · n = 17.
+**Population:** Egyptian adolescents with genotype-4 HCV infection · condition HCV infection · age group adolescent.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 6 extracted.  
-**Availability:** No model was generated from this record.
+**Parameters:** 4 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference/Daclatasvir_AlNahari2020_reference.svg" alt="Daclatasvir_AlNahari2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Cmax | Cmax | 1092 | ng/ml |
-| AUC | AUC | 11178 | ng·h/mL |
-| V/F | V/F | 55 | l |
-| CL/F | CL/F | 4.5 | l/h |
-| T1/2 | t1/2z | 8.5 | h |
-| K0 | R1 | 1.5 | /h |
+| apparent oral volume of distribution (V/F) | V/F | 55 | l |
+| apparent oral clearance (CL/F) | CL/F | 4.5 | l/h |
+| half-life (T1/2) | t1/2z | 8.5 | h |
+| The absorption rate constant (K0) | kabs | 1.5 | /h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,24 +50,22 @@ Al-Nahari MM, Abbassi MM, Ebeid FS, Hassany M, El-Sayed MH, Farid SF. Pharmacoki
 
 ### Reviewer guidance
 
-**Record rejected because the zero-order input rate, 1.5 1/h, has units of reciprocal time, which is dimensionally incompatible with a mass per time rate.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists the zero-order input rate (K0) as 1.5 1/h, but this unit represents a frequency rather than a mass transfer rate, creating a fundamental dimension mismatch. Additionally, the record was constructed solely from the abstract, meaning the provided summary statistics do not represent a fitted model. A second reader could not independently verify any of the extracted pharmacokinetic parameter values or the primary analyte, further undermining the record's reliability. Extracted — daclatasvir: Cmax 1.09e+03 ng/ml, AUC 1.12e+04 ng·h/mL, V/F 55 l, CL/F 4.5 l/h, t1/2z 8.5 h, R1 1.5 /h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — daclatasvir: V/F 55 l, CL/F 4.5 l/h, t1/2z 8.5 h, kabs 1.5 /h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has daclatasvir, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent oral clearance: this record has 4.5, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Cmax | `Q32` · Cmax | 1092 | ng/ml |  |  | ng/ml | exact (1) | Al-Nahari_2020:abstract |
-| AUC | `Q88` · AUC | 11178 | ng·h/mL |  |  | ng·h/mL | exact (1) | Al-Nahari_2020:abstract |
-| V/F | `Q76` · V/F | 55 | l | 0.055 | m3 | l | exact (1) | Al-Nahari_2020:abstract, Al-Nahari_2020:abstract |
-| CL/F | `Q27` · CL/F | 4.5 | l/h | 1.25e-06 | m3/s | l/h | exact (1) | Al-Nahari_2020:abstract, Al-Nahari_2020:abstract |
-| T1/2 | `Q57` · t1/2z | 8.5 | h | 3.06e+04 | s | h | exact (1) | Al-Nahari_2020:abstract |
-| K0 | `Q307` · R1 | 1.5 | /h |  |  | 1/h | exact (1) | Al-Nahari_2020:abstract |
+| apparent oral volume of distribution (V/F) | `Q76` · V/F | 55 | l | 0.055 | m3 | l | llm_corrected (0.6) | Al-Nahari_2020:abstract |
+| apparent oral clearance (CL/F) | `Q27` · CL/F | 4.5 | l/h | 1.25e-06 | m3/s | l/h | exact (1) | Al-Nahari_2020:abstract |
+| half-life (T1/2) | `Q57` · t1/2z | 8.5 | h | 3.06e+04 | s | h | half_life_rule (0.95) | Al-Nahari_2020:abstract |
+| The absorption rate constant (K0) | `Q49` · kabs | 1.5 | /h | 0.0004167 | 1/s | 1/h | llm_confirmed (0.6) | Al-Nahari_2020:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -76,47 +74,42 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
-- unit_dimension_unknown: 'ng/ml•h' (AUC)
-- unit_dimension_mismatch: 'K0' → Q307 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
-- dropped value-less row: 'Body weight'
-- dropped value-less row: 'serum albumin'
-- implicit units: 'AUC' → ng·h/mL (from the popPK convention: 'No unit stated in text or footnotes; AUC values in population PK are conventionally reported as concentration×time, e.g.')
+- dropped value-less row: 'maximum plasma concentration (Cmax)' (captured trailing unit 'Cmax' for child rows)
+- dropped value-less row: 'area under the curve (AUC)' (captured trailing unit 'AUC' for child rows)
+- dropped duplicate Q76 ('V/F', value '52') — already have one for this compound
+- dropped duplicate Q27 ('CL/F', value '4.7') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=daclatasvir
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Al-Nahari_2020_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Al-Nahari_2020_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss-120b` | partly confirmed | 0.333 (4/12 fields) | 8 |
 
-<details><summary>12 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[auc]` | 11178 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` | 4.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent oral clearance]` | 4.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent oral volume of distribution]` | 55 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl/f]` |  | 4.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` | 1092 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k0]` | 1.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | 8.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k0]` |  | 1.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2]` | 8.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2]` |  | 8.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f]` | 55 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the absorption rate constant]` | 1.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v/f]` |  | 55 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | daclatasvir | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | daclatasvir | unknown | mismatch |
 
 </details>
 
@@ -130,19 +123,30 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Al-Nahari_2020:abstract', 'Al-Nahari_2020:abstract'] |
-| C5_dimension_Q307 | fail | [mass] / [time] | /h (1 / [time]) | ['Al-Nahari_2020:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Al-Nahari_2020:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Al-Nahari_2020:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Al-Nahari_2020:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Al-Nahari_2020:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Al-Nahari_2020:abstract', 'Al-Nahari_2020:abstract'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Al-Nahari_2020:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Al-Nahari_2020:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 4.5 L/h | ['Al-Nahari_2020:abstract', 'Al-Nahari_2020:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 55 L | ['Al-Nahari_2020:abstract', 'Al-Nahari_2020:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 4.5 L/h | ['Al-Nahari_2020:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 55 L | ['Al-Nahari_2020:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=daclatasvir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.333 (4 of 12 compared fields agree, 8 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial; agreement 0.333 (4 of 12 compared fields agree, 8 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -154,16 +158,72 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference/Daclatasvir_AlNahari2020_reference_modelica.zip" download>Daclatasvir_AlNahari2020_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference/Daclatasvir_AlNahari2020_reference_fmi.zip" download>Daclatasvir_AlNahari2020_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference/Daclatasvir_AlNahari2020_reference_matlab.zip" download>Daclatasvir_AlNahari2020_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference/Daclatasvir_AlNahari2020_reference_matlab_simbio.zip" download>Daclatasvir_AlNahari2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference/Daclatasvir_AlNahari2020_reference_sbml.zip" download>Daclatasvir_AlNahari2020_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference/Daclatasvir_AlNahari2020_reference_cellml.zip" download>Daclatasvir_AlNahari2020_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.7389 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 6e-05 | kg |
+| input | model | `Cl` | 1.25e-06 | m3/s |
+| input | model | `VdPerKg` | 0.0007857 | m3/kg |
+| input | model | `ka` | 0.0004167 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Al-Nahari MM, Abbassi MM, Ebeid FS, Hassany M, El-Sayed MH, Farid SF. Pharmacokinetics of daclatasvir in Egyptian adolescents with genotype-4 HCV infection. Antiviral therapy 25(2):101–110 (2020). [doi:10.3851/IMP3357](https://doi.org/10.3851/IMP3357)
+
+**This record:** Pharmacolibrary, model `Daclatasvir_AlNahari2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference>
+
+```bibtex
+@misc{pharmacolibrary_DaclatasvirAlNahari2020reference,
+  title  = {{Pharmacolibrary model Daclatasvir_AlNahari2020_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference},
+  note   = {Parameters from doi:10.3851/IMP3357},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 60 mg, single dose, first-order absorption (ka 1.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 60 mg oral (J05AP07) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference/Daclatasvir_AlNahari2020_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference/Daclatasvir_AlNahari2020_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Daclatasvir_AlNahari2020_reference_params.json` · controls `Daclatasvir_AlNahari2020_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdaclatasvir%5D%20Daclatasvir_AlNahari2020_reference&body=Drug%3A%20daclatasvir%0ARecord%3A%20Daclatasvir_AlNahari2020_reference%0APaper%3A%20Al-Nahari_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_daclatasvir/Daclatasvir_AlNahari2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:34 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:56 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> The record was rejected because the paper studies eravacycline, not omadacycline, resulting in misattributed clearance values.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Singh2026_reference" status="rejected" stale="false" population="" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Singh S, Shrivastava A, Boorgula GD, Long MC, Robbins B, Gumbo T et al. Eravacyc
 
 ### Reviewer guidance
 
-**The record was rejected because the paper studies eravacycline, not omadacycline, resulting in misattributed clearance values.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The clearance parameter is labeled 'eravacycline clearance rate' with a value of 0.03 L/h, which contradicts the intended analyte omadacycline. The source text explicitly notes that omadacycline is mentioned only as a comparator without PK parameters. A second reader also disputed the model structure, identifying it as a one-compartment model rather than two-compartment. Extracted — omadacycline: CL 0.03 L/h, V 0.58 L, Q 0.12 mL/min.
+Extracted — omadacycline: CL 0.03 L/h, V 0.58 L, Q 0.12 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has none, the second reading 145.47; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.643, 0 of 1 reader(s) agree | 0.643 | cross-check disputed by a second reader: verdict disputed, agreement 0.643, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.643 (9 of 14 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.643 | cross-check contradicted by a second reader: verdict disputed; agreement 0.643 (9 of 14 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

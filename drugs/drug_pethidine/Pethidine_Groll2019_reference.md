@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.98).">human + animal</span>
 
-> Pethidine’s peripheral-compartment volume (V2, 49.2 L) is in a rejected two-compartment record because its topology includes an unreachable compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="pethidine" model-id="Pethidine_Groll2019_reference" status="rejected" stale="false" population="" measured-compound="pethidine" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Groll AH, Rijnders BJA, Walsh TJ, Adler-Moore J, Lewis RE, Brüggemann RJM. Clin
 
 ### Reviewer guidance
 
-**Pethidine’s peripheral-compartment volume (V2, 49.2 L) is in a rejected two-compartment record because its topology includes an unreachable compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists clearance of 0.637 L/h and central and peripheral volumes of 18.6 L and 49.2 L, respectively. The finding means a compartment has no path from the dose; it does not specify which compartment. Extracted — pethidine: CL 0.637 L/h, V1 18.6 L, V2 49.2 L.
+Extracted — pethidine: CL 0.637 L/h, V1 18.6 L, V2 49.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has none, the second reading 430; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

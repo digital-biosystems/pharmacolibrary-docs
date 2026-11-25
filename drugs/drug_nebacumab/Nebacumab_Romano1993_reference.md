@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Nebacumab’s 0.11 L/kg steady-state distribution volume was used as the distribution volume in a one-compartment model, leaving its mechanistic interpretation disputed.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="nebacumab" model-id="Nebacumab_Romano1993_reference" status="needs_review" stale="false" population="pediatric patients with sepsis syndrome or septic shock" measured-compound="nebacumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Romano MJ, Kearns GL, Kaplan SL, Jacobs RF, Killian A, Bradley JS et al. Single-
 
 ### Reviewer guidance
 
-**Nebacumab’s 0.11 L/kg steady-state distribution volume was used as the distribution volume in a one-compartment model, leaving its mechanistic interpretation disputed.**
+**cross_check_disputed; x1_cross_check.**
 
-The paper was available only as an abstract, so reported summary statistics stood in for a fitted model. The model builder used the steady-state distribution volume because no central volume was reported; this reproduces AUC and terminal half-life but not the early distribution phase. The second reader disputed the mechanistic rather than apparent parameterization and disagreed about which parameter represented distribution volume; agreement was 0.778, with 0 of 1 readers agreeing. Extracted — nebacumab: CL 6.1 L/h, Vss 0.11 L/kg, t1/2z 14.5 hours, Ct 30.7 mg/L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nebacumab: CL 6.1 L/h, Vss 0.11 L/kg, t1/2z 14.5 hours, Ct 30.7 mg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.778 (7 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | cross-check contradicted by a second reader: verdict disputed; agreement 0.778 (7 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

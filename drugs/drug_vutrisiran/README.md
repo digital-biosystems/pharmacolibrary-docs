@@ -29,7 +29,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 05:05 | 1:36 | 0/0/0 | 0/0/0 | 0/0/0 | 14,004/432 | ollama / glm-5.3-flash | 2 | 2/0 | 2/0 | 0 |
+| 2026-11-24 06:27 | 0:03 | 0/0/0 | 0/0/0 | 0/0/0 | 3,896/186 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
 
 ## Coverage
 
@@ -44,16 +44,17 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Lumen_2024.pdf` | Lumen A et al., Predicting Clinical Pharmacokinetics/Ph…, Clinical pharmacology and t… (2024) | popPK | 5 | [10.1002/cpt.3160](https://doi.org/10.1002/cpt.3160) | [38282246](https://pubmed.ncbi.nlm.nih.gov/38282246) | PBPK-PD model of vutrisiran is developed, but no numeric PK parameter values appear in the evidence; values likely in figures/supplementary material not provided. |
+| `Lumen_2024.pdf` | Lumen A et al., Predicting Clinical Pharmacokinetics/Ph…, Clinical pharmacology and t… (2024) | popPK | 10 | [10.1002/cpt.3160](https://doi.org/10.1002/cpt.3160) | [38282246](https://pubmed.ncbi.nlm.nih.gov/38282246) | This is a PBPK modeling study for vutrisiran (relevant as a population/mechanistic PK model), but the abstract describes qualitative ranges (30-70% reduction) rather than listing specific quantitative PK parameter values (CL, V, t1/2) in the text. |
 
-<sub>queue written 2026-10-07 05:05 UTC</sub>
+<sub>queue written 2026-11-24 06:27 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Fontana_2026 | not_relevant | 0 | 0 | Paper concerns coramitug in ATTR-CM; vutrisiran is only mentioned as background therapy (n=3) with no gene-variant effect on its PK/PD. |
-| popPK | Lumen_2024 | relevant | 5 | 2 | PBPK-PD model of vutrisiran is developed, but no numeric PK parameter values appear in the evidence; values likely in figures/supplementary material not provided. |
+| popPK | Lumen_2024 | relevant | 10 | 2 | This is a PBPK modeling study for vutrisiran (relevant as a population/mechanistic PK model), but the abstract describes qualitative ranges (30-70% reduction) rather than listing specific quantitative PK parameter values (CL, V, t1/2) in the text. |
+| PGx | Lumen_2024 | not_relevant | 0 | 0 | The paper investigates the impact of organ impairment (hepatic/renal) on PK/PD, not the effect of genetic variants (pharmacogenomics). |
 
 
 </details>

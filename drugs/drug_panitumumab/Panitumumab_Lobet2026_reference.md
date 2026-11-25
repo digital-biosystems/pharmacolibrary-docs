@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Panitumumab’s intercompartmental clearance Q (0.389 L/day) was rejected for a reported structural-unit mismatch, although the cited dimensions agree.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg.day-1 ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="panitumumab" model-id="Panitumumab_Lobet2026_reference" status="rejected" stale="false" population="adults with localized squamous cell carcinoma of the anus" measured-compound="panitumumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Lobet S, Ternant D, Lepage C, Le Malicot K, Azzopardi N, Dolly A et al. Analysis
 
 ### Reviewer guidance
 
-**Panitumumab’s intercompartmental clearance Q (0.389 L/day) was rejected for a reported structural-unit mismatch, although the cited dimensions agree.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg.day-1 ([mass] / [time]) vs [mass] / [time].**
 
-The finding cites mg/day, which matches Vmax (10.6 mg/day), whereas Q is recorded as 0.389 L/day; its stated comparison is mass/time against mass/time, so the mismatch is not supported by the dimensions shown. The record also says a reported unit could not be converted to SI, but does not identify which parameter had that unit. Extracted — panitumumab: V1 3.66 L, CL 0.269 L.day-1, Q 0.389 L.day-1, V2 2.58 L, Vmax 10.6 mg.day-1, Km 0.401 mg/L.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — panitumumab: V1 3.66 L, CL 0.269 L.day-1, Q 0.389 L.day-1, V2 2.58 L, Vmax 10.6 mg.day-1, Km 0.401 mg/L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

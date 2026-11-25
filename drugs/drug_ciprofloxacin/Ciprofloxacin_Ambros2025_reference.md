@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
 
-> The record was rejected because the formation clearance and Vmax parameters have mismatched units, and the substrate affinity and elimination fraction were not extracted.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q370 unit mg/L/h ([mass] / [length] ** 3 / [time]) vs [length] ** 3 / [time]; Q88 unit mg/L/h ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Ambros2025_reference" status="rejected" stale="false" population="pregnant goats" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="manual_model_class"></div>
 
@@ -62,13 +62,13 @@ Ambros LA, Kreil V, de Lucas Burneo JJ, Tinti MG, San Andrés Larrea MI, Lorenzu
 
 ### Reviewer guidance
 
-**The record was rejected because the formation clearance and Vmax parameters have mismatched units, and the substrate affinity and elimination fraction were not extracted.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q370 unit mg/L/h ([mass] / [length] ** 3 / [time]) vs [length] ** 3 / [time]; Q88 unit mg/L/h ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.**
 
-The formation clearance parameter is recorded as 4.61 with units of mg/L/h, which conflicts with the expected dimension of volume per time for a clearance. The Vmax parameter is also listed as 4.61 mg/L/h, creating a dimensional inconsistency with the saturation kinetics expected for the conversion of enrofloxacin to ciprofloxacin. Additionally, no values were extracted for the substrate affinity or elimination fraction, so a library placeholder would have been used for these metabolic terms. Extracted — ciprofloxacin: Fab 0.8, kabs 0.25 1/h, fu 0.39, CL 0.81 L/h/kg, V1 0.65 L/kg, Q 0.28 L/h/kg, V2 2.83 L/kg, CL 4.56 L/h/kg, … (+4).
+No model template covers this structure. Extracted — ciprofloxacin: Fab 0.8, kabs 0.25 1/h, fu 0.39, CL 0.81 L/h/kg, V1 0.65 L/kg, Q 0.28 L/h/kg, V2 2.83 L/kg, CL 4.56 L/h/kg, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Insulin lispro record was held due to a cross-reader disagreement on parameter values and covariate structures.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="insulin lispro" model-id="InsulinLispro_Tham2017_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="insulin_lispro" parameterization="apparent" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Tham LS, Schneck K, Ertekin A, Reviriego J. Modeling Pharmacokinetic Profiles of
 
 ### Reviewer guidance
 
-**Insulin lispro record was held due to a cross-reader disagreement on parameter values and covariate structures.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The second reader disputed the recorded covariate effect of body weight on baseline endogenous insulin (0.739) by reporting it as null. Additionally, the reader identified a missing parameter value for the baseline endogenous insulin concentration, listing 79.7 against the record's null. These specific parameter and covariate conflicts resulted in a cross-check agreement of 0.5. Extracted — insulin lispro: Fab 1, kabs 0.0365 1/h, tlag 0.265 h, V/F 43 L, CL/F 30.5 L/h.
+The base model was simulated, not the covariate effects the record defines. Extracted — insulin lispro: Fab 1, kabs 0.0365 1/h, tlag 0.265 h, V/F 43 L, CL/F 30.5 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has insulin_lispro, the second reading insulin lispro; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -169,7 +169,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.5 (9 of 18 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (9 of 18 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

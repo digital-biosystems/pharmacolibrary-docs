@@ -138,11 +138,11 @@ _All readers agree on the compared fields of this record._
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_terminal | reference | fail | 3.2 | 0.6603 | 0.2063 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.5 | 0.6603 | 0.1887 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.1 | 0.6603 | 0.213 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 6 | 0.6603 | 0.11 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.1 | 0.6603 | 0.3144 | hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.2 | 0.6603 | 0.2063 | reported 3.2 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.5 | 0.6603 | 0.1887 | reported 3.5 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.1 | 0.6603 | 0.213 | reported 3.1 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 6 | 0.6603 | 0.11 | reported 6.0 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.1 | 0.6603 | 0.3144 | reported 2.1 hr→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

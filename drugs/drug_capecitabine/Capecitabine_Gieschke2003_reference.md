@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the absorption rate constant unit (l h⁻¹) conflicts with the required dimension (h⁻¹).
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l h -1 ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Gieschke2003_reference" status="rejected" stale="false" population="adults with advanced or metastatic colorectal cancer" measured-compound="5-fluorouracil" parameterization="apparent" topology="general_linear"></div>
 
@@ -56,13 +56,13 @@ Gieschke R, Burger HU, Reigner B, Blesch KS, Steimer JL. Population pharmacokine
 
 ### Reviewer guidance
 
-**Record rejected because the absorption rate constant unit (l h⁻¹) conflicts with the required dimension (h⁻¹).**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l h -1 ([length] ** 3 / [time]) vs 1 / [time].**
 
-The parameter kabs is defined as an absorption rate constant with a value of 70, but its recorded unit is l h⁻¹. This volume-per-time unit is dimensionally incompatible with a first-order rate constant, which requires a reciprocal time unit. Consequently, the model failed a structural consistency check due to this mismatch. Extracted — capecitabine: kabs 70 l h -1, tlag 0.000552 h; 5'-deoxy-5-fluorouridine: V 30 l, CL 24 l h -1; 5-fluorouracil: V 17.8 l, CLm/F 33 l h -1; fluorobeta-alanine: V 26 l, CL 32 l h -1.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — capecitabine: kabs 70 l h -1, tlag 0.000552 h; 5'-deoxy-5-fluorouridine: V 30 l, CL 24 l h -1; 5-fluorouracil: V 17.8 l, CLm/F 33 l h -1; fluorobeta-alanine: V 26 l, CL 32 l h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 5-fluorouracil, the second reading capecitabine; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

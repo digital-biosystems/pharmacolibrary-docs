@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
-> The record was rejected because the source paper does not study cannabidiol, so the assigned clearance of 7.874 mL/min/kg is invalid.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="cannabidiol" model-id="Cannabidiol_Shaik2026_reference" status="rejected" stale="false" population="" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Shaik RB, Padala SKR, Gupta M, Devi DR, Basavaiah K, Rao BM. Structural and In s
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper does not study cannabidiol, so the assigned clearance of 7.874 mL/min/kg is invalid.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The relevance screen confirmed that neither the title nor the abstract of the cited work names cannabidiol, indicating the paper is about a different drug. Consequently, the clearance value of 7.874 mL/min/kg and the derived volume of distribution of 35.9264 L do not pertain to the measured compound. A cross-reading disagreement was also recorded regarding specific parameter values, further supporting the rejection of the record. Extracted — cannabidiol: CL 7.87 mL/min/kg, V 35.9 L.
+Extracted — cannabidiol: CL 7.87 mL/min/kg, V 35.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q46: this record has none, the second reading 95.1; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -124,7 +124,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.333 (1 of 3 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial; agreement 0.333 (1 of 3 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and absorption lag time were not extracted from the study, so standard placeholder values were used instead of patient-specific estimates.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="Nirmatrelvir" model-id="Nirmatrelvir_Chen2024_reference" status="needs_review" stale="false" population="critically ill adults with COVID-19" measured-compound="nirmatrelvir" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Chen N, Yu X, Li L, Yang P, Dong R, Huang Y et al. Target Attainment and Populat
 
 ### Reviewer guidance
 
-**Bioavailability and absorption lag time were not extracted from the study, so standard placeholder values were used instead of patient-specific estimates.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record lists clearance, volume of distribution, and absorption rate, but omits explicit estimates for bioavailability and absorption lag time. These missing parameters were therefore assigned generic defaults rather than values derived from the critically ill patient data, compromising the simulated concentration profile. A second reader also disagreed with the extracted values for clearance, absorption rate, and volume. Extracted — nirmatrelvir: kabs 0.42 h−1, V 36.5 L, CL 3.6 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — nirmatrelvir: kabs 0.42 h−1, V 36.5 L, CL 3.6 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nirmatrelvir/ritonavir, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,7 +152,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -168,7 +168,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Chen2024_reference/Nirmatrelvir_Chen2024_reference_modelica.zip" download>Nirmatrelvir_Chen2024_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Chen2024_reference/Nirmatrelvir_Chen2024_reference_modelica.zip" download>Nirmatrelvir_Chen2024_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Chen2024_reference/Nirmatrelvir_Chen2024_reference_fmi.zip" download>Nirmatrelvir_Chen2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Chen2024_reference/Nirmatrelvir_Chen2024_reference_matlab.zip" download>Nirmatrelvir_Chen2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Chen2024_reference/Nirmatrelvir_Chen2024_reference_matlab_simbio.zip" download>Nirmatrelvir_Chen2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

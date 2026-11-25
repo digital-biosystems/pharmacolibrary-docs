@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Arginine hydrochloride clearance, distribution volumes, and intercompartmental clearance were missing extracted values, so the model was held back with default placeholders.
+> No value for arginine hydrochloride's clearance, volume of distribution and central→peripheral rate constant; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="arginine hydrochloride" model-id="ArginineHydrochloride_Yeo2013_severemalaria" status="model_quarantined" stale="false" population="adults with severe falciparum malaria" measured-compound="L-arginine" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Yeo TW, Lampah DA, Rooslamiati I, Gitawati R, Tjitra E, Kenangalem E et al. A ra
 
 ### Reviewer guidance
 
-**Arginine hydrochloride clearance, distribution volumes, and intercompartmental clearance were missing extracted values, so the model was held back with default placeholders.**
+**No value for arginine hydrochloride's clearance, volume of distribution and central→peripheral rate constant; t6_deviations.**
 
-Although the record lists numeric values for these parameters, the review found no explicit estimates were extracted, resulting in the use of library placeholders. The model was therefore quarantined to prevent publication with invented numbers. A second reader also disagreed on the identified analyte and dose compound but could not resolve the missing parameter values. Extracted — arginine hydrochloride: CL 61.8 L/h, V1 115 L, V2 70.9 L, Q 21.4 L/h.
+The model was built, but arginine hydrochloride's clearance, volume of distribution and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — arginine hydrochloride: CL 61.8 L/h, V1 115 L, V2 70.9 L, Q 21.4 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has L-arginine hydrochloride, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

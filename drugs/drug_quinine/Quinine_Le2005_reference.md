@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;quinine&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/&quot;},{&quot;label&quot;:&quot;Le_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Alvan_2017_hearing_threshold_shift_2&quot;,&quot;label&quot;:&quot;Alvan_2017 \u00b7 hearing threshold shift&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Alvan_2017_hearing_threshold_shift_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Garrido_2003_CL_M10&quot;,&quot;label&quot;:&quot;Garrido_2003 \u00b7 CL(M10)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Garrido_2003_CL_M10.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_parasitemia&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 parasitemia&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_parasitemia.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pukrittayakamee_2003_E&quot;,&quot;label&quot;:&quot;Pukrittayakamee_2003 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Pukrittayakamee_2003_E.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Dyer1994v2_diabetics&quot;,&quot;label&quot;:&quot;Dyer_1994_2_diabetics&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Dyer1994v2_diabetics.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Dyer1994v2_non_diabetics&quot;,&quot;label&quot;:&quot;Dyer_1994_2_non_diabetics&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_White1983_reference&quot;,&quot;label&quot;:&quot;White_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_White1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Garrido_2003_CL_M10&quot;,&quot;label&quot;:&quot;Garrido_2003 \u00b7 CL(M10)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Garrido_2003_CL_M10.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_parasitemia&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 parasitemia&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_parasitemia.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record failed because quinine's absorption and elimination rate constants were assigned liters per kilogram, which are volume units, instead of reciprocal time units.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q37 unit h ([time]) vs [mass] / [length] ** 3.
 
-<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Le2005_reference" status="rejected" stale="false" population="children with uncomplicated falciparum malaria" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_Le2005_reference" status="rejected" stale="false" population="children with malaria" measured-compound="quinine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Le Jouan M, Jullien V, Tetanye E, Tran A, Rey E, Tréluyer JM et al. Quinine pharmacokinetics and pharmacodynamics in children with malaria caused by Plasmodium falciparum. Antimicrobial agents and chemotherapy 49(9):3658–3662 (2005).
@@ -17,7 +17,7 @@ Le Jouan M, Jullien V, Tetanye E, Tran A, Rey E, Tréluyer JM et al. Quinine pha
 
 ## Population and dosing
 
-**Population:** children with uncomplicated falciparum malaria · condition uncomplicated Plasmodium falciparum malaria · age group child · n = 30.
+**Population:** children with malaria · condition uncomplicated falciparum malaria · age group child.
 
 **Dosing:** 581 mg, oral, multiple, every 8 h.
 
@@ -25,21 +25,21 @@ Le Jouan M, Jullien V, Tetanye E, Tran A, Rey E, Tréluyer JM et al. Quinine pha
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit | RSE% | IIV |
-|---|---|---|---|---|---|
-| K a (1/h) | kabs | 0.934 | liters/kg | 0.244 | 113 (None% RSE) |
-| b (1/h) | λ2 | 0.001 | liters/kg |  |  |
-| CL (free QN) | CL | 0.156 | mL/h |  |  |
+| label | parameter | value | unit |
+|---|---|---|---|
+| K a (1/h) | kabs | 0.934 | 1/h |
+| b (1/h) | equation variable | 0.001 | 1/h |
+| Mean T min (h) | Ctrough | 32 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,68 +49,62 @@ Le Jouan M, Jullien V, Tetanye E, Tran A, Rey E, Tréluyer JM et al. Quinine pha
 
 ### Reviewer guidance
 
-**The record failed because quinine's absorption and elimination rate constants were assigned liters per kilogram, which are volume units, instead of reciprocal time units.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q37 unit h ([time]) vs [mass] / [length] ** 3.**
 
-Both the absorption rate constant (0.934) and the macro-rate constant (0.001) have units of liters per kilogram, which are dimensionally inconsistent with rate constants requiring units of inverse time. A clearance value of 0.156 mL/h is also assigned the unit liters per kilogram, creating a scale error where the drug's total elimination rate is physically implausible. The second reader disagreed on these values, suggesting they may be null or incorrect, while also identifying missing peak concentration and time to peak data that are not present in the main record. Extracted — quinine: kabs 0.934 liters/kg, λ2 0.001 liters/kg, CL 0.156 mL/h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (equation variable and Ctrough), so that value has no SI equivalent. Extracted — quinine: kabs 0.934 1/h, Ctrough 32 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of b: this record has 0.001, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[b].parameter_id`: this record has Q900, the second reading Q47; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| K a (1/h) | `Q49` · kabs | 0.934 | liters/kg |  |  | l/kg | 0.244 | space_fold (0.95) | tab_1:row4:col1 | 113 (None% RSE) |
-| b (1/h) | `Q68` · λ2 | 0.001 | liters/kg |  |  | l/kg |  | llm (0.6) | tab_1:row5:col1 |  |
-| CL (free QN) | `Q22` · CL | 0.156 | mL/h | 4.333e-11 | m3/s | L/h |  | review_gapfill (0.7) | Maciel_2024:review |  |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| K a (1/h) | `Q49` · kabs | 0.934 | 1/h | 0.0002594 | 1/s | 1/h | space_fold (0.95) | tab_1:row4:col1 |
+| b (1/h) | `Q900` · equation variable | 0.001 | 1/h |  |  | 1/h | llm (0.6) | tab_1:row5:col1 |
+| Mean T min (h) | `Q37` · Ctrough | 32 | h |  |  | h | llm (0.6) | Le_2005_table_2:row2:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'Clearance parameters, a 1' routed out of structural estimates ('Interindividual CV (%)')
-- table section iiv: '(liter/h), 5 (liters/h/kg) Volume parameters, a 2' routed out of structural estimates ('Interindividual CV (%)')
-- table section iiv: 'K a (1/h)' routed out of structural estimates ('Interindividual CV (%)')
-- table section iiv: 'b (1/h)' routed out of structural estimates ('Interindividual CV (%)')
-- unit_dimension_mismatch: 'K a (1/h)' → Q49 (unit '[length] ** 3' vs ontology '1 / [time]') — route to review
-- unit_dimension_mismatch: 'b (1/h)' → Q68 (unit '[length] ** 3' vs ontology '[mass] / [time]') — route to review
 - routed 'Variance (ε)' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
+- unit_dimension_mismatch: 'Mean T min (h)' → Q37 (unit '[time]' vs ontology '[mass] / [length] ** 3') — route to review
+- dropped PD-category row 'Mean C 50 (mg/liter)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Le_2005_table_2:row4:col2'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=quinine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
-- gap-filled Q22 (CL) from Maciel_2024's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell tab_1:row1:col1 = '0 (fixed), 0.53 (0.05)'
-- unparsed cell tab_1:row2:col1 = '57 (28), 3.8 (2.0)'
-- LLM selected parameter table(s) 1
+- table tab_1: unbound_uncertainty
+- table tab_1: unparsed_numeric_cell
+- table Le_2005_table_2: unknown_column_role
+- table Le_2005_table_2: ragged_grid
+- table Le_2005_table_2: unparsed_numeric_cell
+- companion parameter table 2 transcribed (12 record(s))
+- LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.6 (6/10 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[b]` | 0.001 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl]` | 0.156 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean c 50]` |  | 6.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean t min]` |  | 35 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[b].parameter_id` | Q900 | Q47 | mismatch |
+| `gpt-oss-120b` | `parameters[mean c 50]` |  | 4.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean t min].parameter_id` | Q37 | Q81 | mismatch |
 
 </details>
 
@@ -125,14 +119,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Maciel_2024:review'] |
-| C5_dimension_Q49 | fail | 1 / [time] | liters/kg ([length] ** 3) | ['tab_1:row4:col1'] |
-| C5_dimension_Q68 | fail | 1 / [time] | liters/kg ([length] ** 3) | ['tab_1:row5:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.156 | ['Maciel_2024:review'] |
+| C0b_disposition_core | fail |  |  |  |
+| C5_dimension_Q37 | fail | [mass] / [length] ** 3 | h ([time]) | ['Le_2005_table_2:row2:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_1:row4:col1'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | fail | clearance within physiological range | 0.000156 L/h | ['Maciel_2024:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -156,4 +146,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bquinine%5D%20Quinine_Le2005_reference&body=Drug%3A%20quinine%0ARecord%3A%20Quinine_Le2005_reference%0APaper%3A%20Le_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_quinine/Quinine_Le2005_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 08:36 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 15:53 UTC</sub>

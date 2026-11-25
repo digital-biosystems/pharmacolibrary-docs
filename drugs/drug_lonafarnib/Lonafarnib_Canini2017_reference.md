@@ -142,13 +142,13 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 0.000256 | 0.0003444 | 1.345 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.001073 | 0.0003444 | 0.321 | ng/mL→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | pass | 15.4 | 15.48 | 1.006 | hours→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 44.88 | 15.48 | 0.345 | days→SI vs simulated h |
-| T1_tmax | reference | fail | 4 | 5.964 | 1.491 | hours→SI vs simulated h |
-| T1_tmax | reference | pass | 6 | 5.964 | 0.994 | hours→SI vs simulated h |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (10 of 10 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 0.000256 | 0.0003444 | 1.345 | reported 256.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.073e-06 | 0.0003444 | 321 | reported 1.073 ng/mL→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | pass | 15.4 | 15.48 | 1.006 | reported 15.4 hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 44.88 | 15.48 | 0.345 | reported 1.87 days→SI vs simulated h |
+| T1_tmax | reference | fail | 4 | 5.964 | 1.491 | reported 4.0 hours→SI vs simulated h |
+| T1_tmax | reference | pass | 6 | 5.964 | 0.994 | reported 6.0 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

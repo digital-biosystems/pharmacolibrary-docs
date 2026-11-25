@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper studies voriconazole, not nirmatrelvir, so its clearance and volume parameters do not apply to the nirmatrelvir record.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="Nirmatrelvir" model-id="Nirmatrelvir_Zaryab2026_reference" status="rejected" stale="false" population="" measured-compound="nirmatrelvir" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Zaryab Zakria K, Usman M, Bilal H, Akbar Z, Hussain T, Ali M et al. Comparative 
 
 ### Reviewer guidance
 
-**The paper studies voriconazole, not nirmatrelvir, so its clearance and volume parameters do not apply to the nirmatrelvir record.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The review identified the source text as a population pharmacokinetic study of voriconazole. Nirmatrelvir was mentioned only as a pharmacokinetic interaction reference, meaning no specific nirmatrelvir data was fitted. Consequently, the clearance of 6.46 L/h and volume of 97.1 L belong to the wrong drug. Extracted — nirmatrelvir: CL 6.46 L/h, V 97.1 L.
+Extracted — nirmatrelvir: CL 6.46 L/h, V 97.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q67: this record has 0.05, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -121,7 +121,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.833 (5 of 6 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

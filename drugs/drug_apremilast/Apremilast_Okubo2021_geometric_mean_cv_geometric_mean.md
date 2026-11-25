@@ -40,7 +40,7 @@ Okubo Y, Ohtsuki M, Komine M, Imafuku S, Kassir N, Petric R et al. Population ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,6 +53,8 @@ Okubo Y, Ohtsuki M, Komine M, Imafuku S, Kassir N, Petric R et al. Population ph
 **No volume or clearance — not a compartmental population PK model.**
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (AUCt, Cmax and Cmin), so that value has no SI equivalent.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0‐8: this record has 1967, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -89,6 +91,34 @@ The paper reports no distribution volume and no clearance or elimination rate; i
 - LLM selected parameter table(s) 2, 4, 5
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.333 (4/12 fields) | 8 |
+
+<details><summary>8 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0‐8]` | 1967 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 374 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmin]` | 104 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[geometric mean (geometric cv%) / aucτ,ss]` |  | 1098.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[geometric mean (geometric cv%) / cmax,ss]` |  | 124.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[geometric mean (geometric cv%) / cmin,ss]` |  | 58.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 1.84 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rifampicin effect on clearance]` |  | 3.6 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

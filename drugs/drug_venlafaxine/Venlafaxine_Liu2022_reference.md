@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Liu_2022 was rejected as a paper about another drug, despite listing venlafaxine oral clearance (CL/F) as 0.48 L/h/kg.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="venlafaxine" model-id="Venlafaxine_Liu2022_reference" status="rejected" stale="false" population="" measured-compound="venlafaxine" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Liu S, Xiao T, Huang S, Li X, Kong W, Yang Y et al. Population pharmacokinetics 
 
 ### Reviewer guidance
 
-**Liu_2022 was rejected as a paper about another drug, despite listing venlafaxine oral clearance (CL/F) as 0.48 L/h/kg.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The relevance finding says neither the title nor abstract names venlafaxine and classifies the paper as being about another drug. The record lists venlafaxine CL/F as 0.48 L/h/kg, while Tlag was defaulted and the apparent parameterization assumed F=1 and Fm=1 with no molar correction. Extracted — venlafaxine: CL/F 0.48 L/h/kg, V/F 815 L, kabs 0.6 h-1.
+Extracted — venlafaxine: CL/F 0.48 L/h/kg, V/F 815 L, kabs 0.6 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q313: this record has none, the second reading 0.0289; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

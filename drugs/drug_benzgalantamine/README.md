@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Bakker_2020_AT](drugs/drug_benzgalantamine/pd_Bakker_2020_AT.md) | adaptive tracking ← galantamine · direct Emax (saturable) effect | — | Bakker C et al., Safety, pharmacokinetics, and pharmacod…, Alzheimer's & dementia (New… (2020) | [10.1002/trc2.12093](https://doi.org/10.1002/trc2.12093) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Bakker_2020_AT](drugs/drug_benzgalantamine/pd_Bakker_2020_AT.md) | adaptive tracking ← galantamine · direct Emax (saturable) effect | — | Bakker C et al., Safety, pharmacokinetics, and pharmacod…, Alzheimer's & dementia (New… (2020) | [10.1002/trc2.12093](https://doi.org/10.1002/trc2.12093) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;zopiclone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zopiclone_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zopiclone/Zopiclone_Han2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zopiclone_Luurila1996_reference&quot;,&quot;label&quot;:&quot;Luurila_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zopiclone/Zopiclone_Luurila1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lloyd_1990_35S_TBPS_binding&quot;,&quot;label&quot;:&quot;Lloyd_1990 \u00b7 35S-TBPS binding&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_zopiclone/pd_Lloyd_1990_35S_TBPS_binding.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zopiclone_Han2025_reference&quot;,&quot;label&quot;:&quot;Han_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zopiclone/Zopiclone_Han2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # zopiclone
 
@@ -29,29 +29,22 @@ Zopiclone is a sedative drug from the benzodiazepine-related group used to treat
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Luurila_1996 · CL</text><circle cx="302.8" cy="30.0" r="4" fill="#ef6c00"><title>Luurila_1996 · CL: 21 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Han_2025 · CL/F</text><circle cx="355.0" cy="46.0" r="4" fill="#78909c"><title>Han_2025 · CL/F: 29.6 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Luurila_1996 · V</text><circle cx="232.2" cy="30.0" r="4" fill="#ef6c00"><title>Luurila_1996 · V: 132 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Han_2025 · V/F</text><circle cx="361.0" cy="46.0" r="4" fill="#78909c"><title>Han_2025 · V/F: 308 L</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Han_2025_reference](drugs/drug_zopiclone/Zopiclone_Han2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Han HH et al., Population pharmacokinetics modelling t…, Frontiers in psychiatry (2025) | [10.3389/fpsyt.2025.1664678](https://doi.org/10.3389/fpsyt.2025.1664678) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Luurila_1996_reference](drugs/drug_zopiclone/Zopiclone_Luurila1996_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Luurila_1996_reference](drugs/drug_zopiclone/Zopiclone_Luurila1996_reference.md) | — | 1-compartment (no model) | 0 | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Lloyd_1990_35S_TBPS_binding](drugs/drug_zopiclone/pd_Lloyd_1990_35S_TBPS_binding.md) | 35S-t-butylbicyclophosphorothionate (35S-TBPS) binding ← zopiclone · direct Emax (saturable) effect | — | Lloyd GK et al., The activity of zolpidem and other hypn…, The Journal of pharmacology… (1990) | — |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Luurila_1996_DSST](drugs/drug_zopiclone/pd_Luurila_1996_DSST.md) | digit symbol substitution test ← zopiclone · inhibition effect | — | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Luurila_1996_DSST_2](drugs/drug_zopiclone/pd_Luurila_1996_DSST_2.md) | digit symbol substitution test ← zopiclone · delayed effect through an effect compartment | — | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Luurila_1996_SPV](drugs/drug_zopiclone/pd_Luurila_1996_SPV.md) | saccadic peak velocity ← zopiclone · inhibition effect | — | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Luurila_1996_SPV_2](drugs/drug_zopiclone/pd_Luurila_1996_SPV_2.md) | saccadic peak velocity ← zopiclone · delayed effect through an effect compartment | — | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Munakata_1996_GABA_response_potentiation_by_zopiclone](drugs/drug_zopiclone/pd_Munakata_1996_GABA_response_potentiation_by_zopiclone.md) | GABA response potentiation by zopiclone ← zopiclone · direct Emax (saturable) effect | — | Munakata M et al., Heterogeneous distribution of benzodiaz…, British journal of pharmaco… (1996) | [10.1111/j.1476-5381.1996.tb15473.x](https://doi.org/10.1111/j.1476-5381.1996.tb15473.x) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Lloyd_1990_35S_TBPS_binding](drugs/drug_zopiclone/pd_Lloyd_1990_35S_TBPS_binding.md) | 35S-TBPS binding to rat cerebral cortex membranes ← zopiclone · direct Emax (saturable) effect | ▶ model + simulator | Lloyd GK et al., The activity of zolpidem and other hypn…, The Journal of pharmacology… (1990) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Luurila_1996_SPV](drugs/drug_zopiclone/pd_Luurila_1996_SPV.md) | changes in saccadic peak velocity ← zopiclone · inhibition effect | — | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Luurila_1996_SPV_2](drugs/drug_zopiclone/pd_Luurila_1996_SPV_2.md) | changes in saccadic peak velocity ← zopiclone · delayed effect through an effect compartment | — | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -65,44 +58,45 @@ Zopiclone is a sedative drug from the benzodiazepine-related group used to treat
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:15 | 0:47 | 2/0/0 | 6/0/0 | 0/0/0 | 48,582/3,454 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 06:12 | 0:04 | 1/1/0 | 5/0/0 | 0/0/0 | 3,833/159 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 13 matched, 13 returned
-- **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **screened:** 3  ·  **relevant:** 1
+- **records:** 2  ·  extracted 1  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Luurila_1996.pdf` | Luurila H et al., Pharmacokinetic-pharmacodynamic modelli…, Pharmacology & toxicology (1996) | popPK | 10 | [10.1111/j.1600-0773.1996.tb01387.x](https://doi.org/10.1111/j.1600-0773.1996.tb01387.x) | [8737972](https://pubmed.ncbi.nlm.nih.gov/8737972) | Human PK-PD study of zopiclone with explicit numeric CL, V, and half-life values in the abstract. |
-| `Gaillot_1982.pdf` | Gaillot J et al., Pharmacokinetics and metabolism of zopi…, International pharmacopsych… (1982) | popPK | 9 |  | [7188377](https://pubmed.ncbi.nlm.nih.gov/7188377) | Original PK study of zopiclone with quantitative parameters (t½ 4–5 h, CL 300 ml/min, renal clearance 10 ml/min, bioavailability, protein binding) reported directly in the abstract. |
-| `Gaillot_1983.pdf` | Gaillot J et al., Pharmacokinetics and metabolism of zopi…, Pharmacology 27 Suppl (1983) | popPK | 9 | [10.1159/000137914](https://doi.org/10.1159/000137914) | [6669634](https://pubmed.ncbi.nlm.nih.gov/6669634) | Original PK study of zopiclone with numeric parameters (t½ 4–5 h, CL 300 ml/min, bioavailability, protein binding) directly in the abstract. |
-
-<sub>queue written 2026-10-06 23:14 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Dresser_2000 | irrelevant | 1 | 0 | Review of CYP3A4 interactions mentioning zopiclone only qualitatively, with no PK parameter values. |
-| popPK | Gex-Fabry_2004 | irrelevant | 0 | 0 | Zopiclone is only mentioned as allowed comedication; the study concerns venlafaxine pharmacodynamics, with no zopiclone PK parameters. |
+| popPK | Dresser_2000 | irrelevant | 0 | 0 | The paper is a review of CYP3A4 inhibition mechanisms and clinical consequences, mentioning zopiclone only as a drug subject to interaction (leading to sedation) without reporting quantitative PK parameters for zopiclone. |
+| PGx | Dresser_2000 | not_relevant | 0 | 0 | The text discusses drug-drug interactions involving CYP3A4 inhibitors, not pharmacogenomic variants affecting zopiclone PK/PD. |
+| popPK | Gaillot_1982 | relevant | 10 | 4 | The abstract provides key quantitative parameters (half-life 4-5h, total clearance 300 ml/min, bioavailability &gt;75%) for zopiclone in humans and animals, but detailed population PK parameter estimates (Vd, Q, ka) are likely in the full text or tables not fully displayed here. |
+| PGx | Gaillot_1982 | not_relevant | 0 | 0 | The paper describes the general pharmacokinetics and metabolism of zopiclone in various populations (age, liver/renal impairment) but does not report any effects of specific gene variants or genotypes (pharmacogenomics). |
+| popPK | Gaillot_1983 | relevant | 10 | 2 | The study is a primary pharmacokinetic investigation of zopiclone in humans and animals, but the provided text contains only qualitative descriptions and a single clearance value (300 ml/mn) without a complete set of quantitative parameters like volume of distribution or absorption rate constants. |
+| PGx | Gaillot_1983 | not_relevant | 0 | 0 | The paper reports pharmacokinetics based on physiological factors (age, liver/renal impairment) and species, not genetic variants or genotypes. |
+| popPK | Gex-Fabry_2004 | irrelevant | 0 | 0 | The study focuses on venlafaxine and its metabolites, with zopiclone only mentioned as a permitted concomitant medication; no PK parameters for zopiclone are reported. |
+| PGx | Gex-Fabry_2004 | not_relevant | 0 | 0 | The study focuses on venlafaxine PK/PD, while zopiclone is only listed as permitted comedication with no pharmacogenomic analysis. |
 | popPK | Han_2025 | irrelevant | 2 | 3 | Zopiclone is only a covariate/DDI perpetrator in a clozapine PPK model; no zopiclone PK parameters of its own are reported (Ka 1.3/h is clozapine's, fixed from literature). |
-| popPK | Lloyd_1990 | irrelevant | 0 | 0 | In-vitro receptor binding study with no pharmacokinetic disposition parameters for zopiclone. |
-| popPK | Munakata_1996 | irrelevant | 0 | 0 | In-vitro electrophysiology study of benzodiazepine receptor pharmacology in rat neurons, with no PK parameters for zopiclone. |
-| popPK | Novotna_2014 | irrelevant | 0 | 0 | In-vitro receptor reporter study of enantiopure drugs; no PK parameters for zopiclone. |
-| popPK | Petroski_2006 | irrelevant | 0 | 0 | This is an in-vitro electrophysiology study of indiplon's GABA(A) receptor selectivity; zopiclone is only mentioned as a potency comparator, with no PK parameters. |
-| popPK | Reynolds_1996 | irrelevant | 0 | 0 | In-vitro electrophysiology study of GABAA receptors; zopiclone is not a PK subject and no disposition parameters are reported. |
-| popPK | Sanger_1985 | irrelevant | 0 | 0 | Behavioral pharmacology study in mice with no PK parameters or numeric disposition values for zopiclone. |
+| popPK | Lloyd_1990 | irrelevant | 0 | 0 | This is an in-vitro receptor binding study (mechanistic) and does not report pharmacokinetic disposition parameters like clearance or volume for zopiclone. |
+| PGx | Lloyd_1990 | not_relevant | 0 | 0 | The paper reports in vitro receptor binding studies of zopiclone without any genetic variation analysis. |
+| PGx | Luurila_1996 | not_relevant | 0 | 0 | The paper describes PK/PD in healthy volunteers but does not involve gene variants or pharmacogenomics. |
+| popPK | Munakata_1996 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of benzodiazepine receptor modulation and reports no pharmacokinetic parameters. |
+| PGx | Munakata_1996 | not_relevant | 0 | 0 | The paper investigates pharmacological properties of zopiclone in rat neuronal subpopulations, not the effect of a human gene variant on PK or PD. |
+| popPK | Novotna_2014 | irrelevant | 0 | 0 | The study is a pharmacological receptor profiling (in vitro) analysis of receptor agonism/antagonism and cytotoxicity, not a pharmacokinetic study reporting disposition parameters like clearance, volume, or half-life. |
+| PGx | Novotna_2014 | not_relevant | 1 | 5 | The paper investigates enantiospecific receptor activity (AhR, GR, PXR) in cell lines, not genetic variation (pharmacogenomics) effects on the PK/PD parameters of zopiclone. |
+| popPK | Petroski_2006 | irrelevant | 0 | 0 | The paper is an in vitro electrophysiology study focusing on receptor selectivity for indiplon, where zopiclone is only used as a comparator for potency without providing pharmacokinetic parameters. |
+| PGx | Petroski_2006 | not_relevant | 0 | 0 | The paper discusses the pharmacodynamics of indiplon compared to zopiclone in recombinant systems, but does not report any pharmacogenomic effects (gene variant impact) on PK/PD parameters. |
+| popPK | Reynolds_1996 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic investigation of GABAA receptor interaction in Xenopus oocytes, containing no pharmacokinetic parameters for zopiclone. |
+| PGx | Reynolds_1996 | not_relevant | 0 | 0 | The paper studies drug-drug interaction (propofol + zopiclone/flurazepam) on GABA receptors but does not investigate any gene variants or pharmacogenomic effects on PK/PD parameters. |
+| popPK | Sanger_1985 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in mice investigating conditioned fear, with no pharmacokinetic parameters or numeric PK values for zopiclone reported. |
+| PGx | Sanger_1985 | not_relevant | 0 | 0 | The paper investigates the behavioral effects (conditioned fear) of zopiclone in mice and does not report any pharmacogenomic effects on PK or PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzopiclone%5D&body=Drug%3A%20zopiclone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zopiclone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 23:14 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 06:11 UTC</sub>

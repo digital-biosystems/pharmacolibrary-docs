@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> Prednisolone clearance of 7.74 L.hour À1 was rejected because its unit/scale produced a clearance/volume magnitude outside the physiological window.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="prednisolone" model-id="Prednisolone_Purcell2025_reference" status="rejected" stale="false" population="dogs receiving prednisolone for medical reasons" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Purcell BL, Woodward AP, Leeming MG, Dandrieux JRS. Influence of bodyweight on p
 
 ### Reviewer guidance
 
-**Prednisolone clearance of 7.74 L.hour À1 was rejected because its unit/scale produced a clearance/volume magnitude outside the physiological window.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports prednisolone clearance of 7.74 L.hour À1, but that unit could not be converted to SI, and the reported clearance/volume magnitude was judged physiologically implausible. A second reader marked the dose compound and primary analyte as unknown, disputed the allometric exponent value of 3.13 (giving −0.19), and did not report the equation variable value of 22.8. Extracted — prednisolone: allometric_exponent 3.13 A, CL 7.74 L.hour À1, V 0.3 L, tlag 0.36 hour.
+A reported unit could not be converted (allometric_exponent), so that value has no SI equivalent. Extracted — prednisolone: allometric_exponent 3.13 A, CL 7.74 L.hour À1, V 0.3 L, tlag 0.36 hour.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has prednisolone, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

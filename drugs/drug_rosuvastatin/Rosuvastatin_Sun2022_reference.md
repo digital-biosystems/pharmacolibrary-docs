@@ -46,7 +46,7 @@ Sun Q, Li L, Zhou Q. Effects of Ethanolic Extract of. Drug design, development a
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q74: this record has none, the second reading 519.28. That field does not shape the model.
 

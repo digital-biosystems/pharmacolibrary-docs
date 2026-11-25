@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper studies a different drug, and the model defaults the absorption rate constant.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="hydroxyethylstarch" model-id="Hydroxyethylstarch_Singh2022_reference" status="rejected" stale="false" population="" measured-compound="hydroxyethylstarch" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Singh D, Fuhr R, Bird NP, Mole S, Hardes K, Man YL et al. A Phase 1 study of the
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper studies a different drug, and the model defaults the absorption rate constant.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The identity check confirmed the paper is not about hydroxyethylstarch, as the relevance screen found no mention in the title or abstract. The model builder substituted default values for the absorption rate constant and lag time, which were not reported in the source. Additionally, a second reader disagreed on multiple extracted values, including 0.08 and 6.11, indicating inconsistency in the record. Extracted — hydroxyethylstarch: CL/F 0.08 L day−1, V/F 6.11 L.
+Extracted — hydroxyethylstarch: CL/F 0.08 L day−1, V/F 6.11 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 24.8, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.154, 0 of 1 reader(s) agree | 0.154 | cross-check disputed by a second reader: verdict disputed, agreement 0.154, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.154 (2 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.154 | cross-check contradicted by a second reader: verdict disputed; agreement 0.154 (2 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

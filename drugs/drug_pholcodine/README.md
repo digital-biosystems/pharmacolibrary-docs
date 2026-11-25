@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Elmansi_2022_Fluorescence](drugs/drug_pholcodine/pd_Elmansi_2022_Fluorescence.md) | fluorescence intensity biomarker turnover ← pholcodine | — | Elmansi H et al., Determination of pholcodine alone or in…, Scientific reports (2022) | [10.1038/s41598-022-13194-1](https://doi.org/10.1038/s41598-022-13194-1) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Elmansi_2022_Fluorescence](drugs/drug_pholcodine/pd_Elmansi_2022_Fluorescence.md) | fluorescence intensity biomarker turnover ← pholcodine | — | Elmansi H et al., Determination of pholcodine alone or in…, Scientific reports (2022) | [10.1038/s41598-022-13194-1](https://doi.org/10.1038/s41598-022-13194-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

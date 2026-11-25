@@ -39,7 +39,7 @@ Olodaterol and tiotropium bromide is an inhaled respiratory drug used for obstru
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:26 | 4:41 | 0/1/0 | 0/0/0 | 0/0/0 | 128,362/7,353 | ollama / glm-5.3-flash | 4 | 0/4 | 4/0 | 0 |
+| 2026-11-24 01:40 | 0:04 | 0/1/0 | 0/0/0 | 0/0/0 | 3,518/160 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
 
 ## Coverage
 
@@ -48,33 +48,29 @@ Olodaterol and tiotropium bromide is an inhaled respiratory drug used for obstru
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Borghardt_2016.pdf` | Borghardt JM et al., Model-based evaluation of pulmonary pha…, British journal of clinical… (2016) | popPK | 9 | [10.1111/bcp.12999](https://doi.org/10.1111/bcp.12999) | [27145733](https://pubmed.ncbi.nlm.nih.gov/27145733) | Population PK model of inhaled olodaterol with quantitative absorption parameters (PBIO, absorption half-lives) reported directly in the abstract; note it covers olodaterol only, not tiotropium. |
-
-<sub>queue written 2026-10-07 14:24 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Barker_2017 | irrelevant | 0 | 0 | This is a prescribing/survey study on sputum clearance devices in COPD; tiotropium is only mentioned as prescription volume, with no PK parameters. |
-| popPK | Berlinski_2020 | irrelevant | 0 | 0 | A narrative year-in-review with no PK parameters for olodaterol/tiotropium; tiotropium only mentioned as a comparator. |
+| popPK | Berlinski_2020 | irrelevant | 0 | 0 | The paper is a general review of aerosol therapy and COPD/asthma treatments for 2019, mentioning tiotropium only as a comparator in a non-PK context and containing no pharmacokinetic data for olodaterol or tiotropium. |
+| PGx | Berlinski_2020 | not_relevant | 0 | 0 | The text is a general year-in-review summary that mentions tiotropium in the context of combination therapy approval, but it does not contain any information regarding gene variants or pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of olodaterol or tiotropium bromide. |
+| PGx | Borghardt_2016 | not_relevant | 0 | 0 | The paper describes population PK of olodaterol based on disease status (asthma/COPD/healthy) but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 | popPK | Borghardt_2018 | irrelevant | 2 | 0 | This is a narrative review of pulmonary PK processes; olodaterol is only mentioned as an example, with no numeric PK parameters (CL, V, ka, half-life) reported. |
-| popPK | Pleasants_2016 | irrelevant | 0 | 0 | Review/meta-analysis of umeclidinium, a different drug; no quantitative PK parameters for olodaterol/tiotropium. |
-| popPK | Rabe_2010 | irrelevant | 0 | 0 | Review of roflumilast, a different drug; tiotropium only mentioned as co-administered comparator, no PK parameters for olodaterol/tiotropium. |
-| popPK | Ramadan_2016 | irrelevant | 1 | 0 | This is a narrative review of olodaterol's pharmacology and efficacy with no original quantitative PK parameters reported. |
+| popPK | Pleasants_2016 | irrelevant | 0 | 0 | The paper is a review of umeclidinium, a different drug, and does not report quantitative pharmacokinetic parameters for olodaterol_and_tiotropium_bromide. |
+| PGx | Pleasants_2016 | not_relevant | 0 | 0 | The paper reviews umeclidinium, not olodaterol_and_tiotropium_bromide, and does not report any pharmacogenomic effects. |
+| popPK | Rabe_2010 | irrelevant | 0 | 0 | The paper is a review of roflumilast's pharmacokinetics and clinical trials, and while it mentions tiotropium as a comparator/standard of care, it does not report quantitative PK parameters for the subject drug olodaterol_and_tiotropium_bromide. |
+| PGx | Rabe_2010 | not_relevant | 0 | 0 | The provided text discusses the drug roflumilast and does not report any pharmacogenomic effects on the pharmacokinetic or pharmacodynamic parameters of olodaterol and tiotropium bromide. |
+| popPK | Ramadan_2016 | irrelevant | 2 | 0 | The paper is a narrative review focusing on efficacy and safety, lacking a quantitative population pharmacokinetic model or specific disposition parameter values for olodaterol_and_tiotropium_bromide. |
+| PGx | Ramadan_2016 | not_relevant | 0 | 0 | The paper is a general review of olodaterol's pharmacology, efficacy, and safety, and does not report any pharmacogenomic effects or gene variant associations. |
 | popPK | Sims_2011 | irrelevant | 1 | 1 | This is a review of aclidinium bromide; tiotropium is only a comparator with scattered half-life/excretion values, no population-PK parameters for olodaterol/tiotropium combination. |
 | popPK | Wang_2020 | irrelevant | 0 | 0 | In vitro study of tiotropium/fluticasone effects on rhinovirus-induced mucin production in airway epithelial cells; no PK parameters for olodaterol/tiotropium reported. |
-| popPK | Wang_2022 | irrelevant | 0 | 0 | This is a review of bronchiectasis literature with no PK parameters for olodaterol/tiotropium; tiotropium is only mentioned as a studied treatment. |
+| popPK | Wang_2022 | irrelevant | 0 | 0 | The paper is a clinical review of bronchiectasis and does not contain population pharmacokinetic modeling or quantitative disposition parameters for olodaterol/tiotropium. |
+| PGx | Wang_2022 | not_relevant | 0 | 0 | The paper is a general review of bronchiectasis management and does not report any pharmacogenomic effects on PK/PD parameters for olodaterol and tiotropium bromide. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bolodaterol_and_tiotropium_bromide%5D&body=Drug%3A%20olodaterol_and_tiotropium_bromide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_olodaterol_and_tiotropium_bromide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 14:24 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 01:36 UTC</sub>

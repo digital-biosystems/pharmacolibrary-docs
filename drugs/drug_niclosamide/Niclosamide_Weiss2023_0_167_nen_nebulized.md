@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> Niclosamide was rejected because its zero-order input duration D1 was recorded as 0.27 mg/kg, a mass-per-dose unit rather than time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg/kg ([mass]) vs [time].
 
 <div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Weiss2023_0_167_nen_nebulized" status="rejected" stale="false" population="sheep" measured-compound="niclosamide" parameterization="mechanistic" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Weiss A, Bischof RJ, Landersdorfer CB, Nguyen TH, Davies A, Ibrahim J et al. Sin
 
 ### Reviewer guidance
 
-**Niclosamide was rejected because its zero-order input duration D1 was recorded as 0.27 mg/kg, a mass-per-dose unit rather than time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg/kg ([mass]) vs [time].**
 
-Although labeled “Dose,” D1 means the duration of a zero-order input; its reported mg/kg unit has mass rather than time dimension. The reported unit could not be converted to SI, so no SI value was available. A second reader did not assign the 0.27 dose and identified niclosamide rather than niclosamide ethanolamine. Extracted — niclosamide: D1 0.27 mg/kg, Cmax 76.6 ng/mL, tmax 27.1 min, AUCt 35.9 ng/mL*h, kabs 20.9 1/h, t1/2α 0.041 h, t1/2β 0.2 h, t1/2z 14 h.
+A reported unit could not be converted (D1, Cmax and AUCt), so that value has no SI equivalent. Extracted — niclosamide: D1 0.27 mg/kg, Cmax 76.6 ng/mL, tmax 27.1 min, AUCt 35.9 ng/mL*h, kabs 20.9 1/h, t1/2α 0.041 h, t1/2β 0.2 h, t1/2z 14 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has niclosamide (niclosamide ethanolamine), the second reading niclosamide; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

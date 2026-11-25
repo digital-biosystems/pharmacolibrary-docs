@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Warfarin bioavailability was left at library defaults instead of being estimated from the Kwack paper data.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Kwack2026_reference" status="needs_review" stale="false" population="" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Kwack H, Kong H, Lim J, Zhang BT, Hahn J, Chang MJ. PKGPT: Expert-Orchestrated R
 
 ### Reviewer guidance
 
-**Warfarin bioavailability was left at library defaults instead of being estimated from the Kwack paper data.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record includes clearance (0.135 L/h), volume (7.86 L), absorption rate (1.15 h⁻¹), and lag time (0.825 h), but lacks an explicit bioavailability estimate. Consequently, the model builder applied default conventions rather than paper-supported values for this parameter. A second reader also disagreed on multiple extracted values, including discrepancies in clearance and volume estimates. Extracted — warfarin: CL 0.135 L/h, V 7.86 L, kabs 1.15 h−1, tlag 0.825 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — warfarin: CL 0.135 L/h, V 7.86 L, kabs 1.15 h−1, tlag 0.825 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.135, the second reading 0.133; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -155,7 +155,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_warfarin/Warfarin_Kwack2026_reference/Warfarin_Kwack2026_reference_modelica.zip" download>Warfarin_Kwack2026_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_warfarin/Warfarin_Kwack2026_reference/Warfarin_Kwack2026_reference_modelica.zip" download>Warfarin_Kwack2026_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_warfarin/Warfarin_Kwack2026_reference/Warfarin_Kwack2026_reference_fmi.zip" download>Warfarin_Kwack2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_warfarin/Warfarin_Kwack2026_reference/Warfarin_Kwack2026_reference_matlab.zip" download>Warfarin_Kwack2026_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_warfarin/Warfarin_Kwack2026_reference/Warfarin_Kwack2026_reference_matlab_simbio.zip" download>Warfarin_Kwack2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was quarantined because the systemic clearance parameter for 5-fluorouracil lacked an explicit value.
+> No value for fluorouracil's clearance; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Tan2026_van_kuilenburg_201210" status="model_quarantined" stale="false" population="adults with cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Tan Z, Sancho-Araiz A, Völler S, Peeters SLJ, Manten T, Deenen MJ et al. Advanc
 
 ### Reviewer guidance
 
-**The model was quarantined because the systemic clearance parameter for 5-fluorouracil lacked an explicit value.**
+**No value for fluorouracil's clearance; t6_deviations.**
 
-Although the record provides values for volumes of distribution, intercompartmental clearance, and Michaelis-Menten parameters, it omits a specific estimate for systemic clearance. Consequently, a library placeholder was used in place of a derived value. The model builder relied on this default convention rather than providing an explicit clearance estimate. Extracted — fluorouracil: V1 15.3 L, V2 15.8 L, Q 68.8 L/h, Vmax 1.51e+03 mg/h, Km 4.55 mg/L.
+The model was built, but fluorouracil's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — fluorouracil: V1 15.3 L, V2 15.8 L, Q 68.8 L/h, Vmax 1.51e+03 mg/h, Km 4.55 mg/L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

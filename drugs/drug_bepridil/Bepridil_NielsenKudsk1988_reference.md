@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> The record lacks a distribution volume and clearance for bepridil, reflecting summary statistics from an abstract rather than a fitted model.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q71 unit micrograms g-1 (dimensionless) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="bepridil" model-id="Bepridil_NielsenKudsk1988_reference" status="rejected" stale="false" population="isolated rabbit hearts" measured-compound="bepridil" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Nielsen-Kudsk F, Askholt J, Jakobsen P. Bepridil, myocardial accumulation kineti
 
 ### Reviewer guidance
 
-**The record lacks a distribution volume and clearance for bepridil, reflecting summary statistics from an abstract rather than a fitted model.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q71 unit micrograms g-1 (dimensionless) vs [mass] / [length] ** 3.**
 
-The extraction contains only an average myocardial concentration of 489 micrograms g-1 and a steady-state time of 20 minutes, with no pharmacokinetic rate constants. A dimension check failed because the concentration unit conflicts with the expected volumetric mass dimension. The second reader also noted the absence of a perfusion liquid concentration and an intracellular compartment fraction. Extracted — bepridil: Cavg 489 micrograms g-1, tss 20 min.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bepridil: Cavg 489 micrograms g-1, tss 20 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bepridil, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

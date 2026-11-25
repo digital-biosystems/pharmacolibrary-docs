@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because Q2, an intercompartment clearance, is assigned a volume unit (L) instead of a flow unit (L/h).
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q99 unit L ([length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2017_estimated_value" status="rejected" stale="false" population="adults with relapsing multiple sclerosis" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Hu X, Hang Y, Cui Y, Zhang J, Liu S, Seddighzadeh A et al. Population-Based Phar
 
 ### Reviewer guidance
 
-**Record rejected because Q2, an intercompartment clearance, is assigned a volume unit (L) instead of a flow unit (L/h).**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q99 unit L ([length] ** 3) vs [length] ** 3 / [time].**
 
-The parameter Q2, defined as the apparent intercompartment clearance between central and peripheral compartments, has a unit of L, which is dimensionally inconsistent with a clearance parameter. A clearance value must have dimensions of volume per time, such as L/h, not just volume. Additionally, the second reader disagrees on the identification of the dose compound, primary analyte, and specific parameter values for θ2, θ4, and θ5. Extracted — peginterferon beta-1a: CL 3.28 L/h, Q2 435 L.
+A reported unit could not be converted (Q2), so that value has no SI equivalent. None of the extracted parameters is sampeginterferon beta 1a's own; they describe peginterferon beta-1a. Extracted — peginterferon beta-1a: CL 3.28 L/h, Q2 435 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has peginterferon beta-1a, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

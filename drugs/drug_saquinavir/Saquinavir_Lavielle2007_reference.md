@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This paper's disposition core is incomplete.
+> Only clearance was extracted — no volume.
 
 <div class="pk-model-meta" hidden drug="saquinavir" model-id="Saquinavir_Lavielle2007_reference" status="needs_review" stale="false" population="HIV patients" measured-compound="saquinavir" parameterization="apparent" topology="1C"></div>
 
@@ -17,13 +17,13 @@ Lavielle M, Mentré F. Estimation of population pharmacokinetic parameters of sa
 
 ## Population and dosing
 
-**Population:** HIV patients · condition HIV infection · age group adult · n = 100.
+**Population:** HIV patients · condition HIV · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,13 +32,10 @@ Lavielle M, Mentré F. Estimation of population pharmacokinetic parameters of sa
 | label | parameter | value | unit |
 |---|---|---|---|
 | Saquinavir oral clearance (CL/F) | CL/F | 1.26 | L/h |
-| V/F (L) Basic model estimate | V/F | 103.0 | L |
-| ka (h−1) Basic model estimate | kabs | 3.5 | h−1 |
-| Lag-time (h) Basic model estimate | tlag | 0.96 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +45,11 @@ Lavielle M, Mentré F. Estimation of population pharmacokinetic parameters of sa
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Only clearance was extracted — no volume.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Dickinson_2009) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — saquinavir: CL/F 1.26 L/h, V/F 103 L, kabs 3.5 h−1, tlag 0.96 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — saquinavir: CL/F 1.26 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has saquinavir, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,9 +58,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | Saquinavir oral clearance (CL/F) | `Q27` · CL/F | 1.26 | L/h | 3.5e-07 | m3/s | l/h | llm_confirmed (0.6) | Lavielle_2007:abstract |
-| V/F (L) Basic model estimate | `Q76` · V/F | 103.0 | L | 0.103 | m3 | L | review_gapfill (0.7) | Dickinson_2009:review |
-| ka (h−1) Basic model estimate | `Q49` · kabs | 3.5 | h−1 | 0.0009722 | 1/s | 1/h | review_gapfill (0.7) | Dickinson_2009:review |
-| Lag-time (h) Basic model estimate | `Q83` · tlag | 0.96 | h | 3456 | s | h | review_gapfill (0.7) | Dickinson_2009:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -76,37 +70,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - covariate category for IIV from footnote/prose kept as documentation only (['Lavielle_2007:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=saquinavir
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q76 (V/F) from Dickinson_2009's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Dickinson_2009's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Dickinson_2009's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Lavielle_2007_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | confirmed | 1.0 (5/5 fields) | none |
 
-<details><summary>7 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl/f]` |  | 1.26 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka (h-1) basic model estimate]` | 3.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[lag-time (h) basic model estimate]` | 0.96 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[saquinavir oral clearance]` | 1.26 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f (l) basic model estimate]` | 103.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | saquinavir | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | saquinavir | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -122,13 +99,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Lavielle_2007:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Dickinson_2009:review'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Dickinson_2009:review'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Dickinson_2009:review'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 1.26 L/h | ['Lavielle_2007:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 103 L | ['Dickinson_2009:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -162,4 +135,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsaquinavir%5D%20Saquinavir_Lavielle2007_reference&body=Drug%3A%20saquinavir%0ARecord%3A%20Saquinavir_Lavielle2007_reference%0APaper%3A%20Lavielle_2007%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_saquinavir/Saquinavir_Lavielle2007_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:11 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:34 UTC</sub>

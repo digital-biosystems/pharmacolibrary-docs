@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> The model was rejected because the equilibrium dissociation constant for trastuzumab emtansine was recorded in nanomolar, conflicting with the required concentration dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nM ([length]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="trastuzumab emtansine" model-id="TrastuzumabEmtansine_Betts2020_t_dm1" status="rejected" stale="false" population="adults with cancer" measured-compound="trastuzumab_emtansine" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Betts A, Clark T, Jasper P, Tolsma J, van der Graaf PH, Graziani EI et al. Use o
 
 ### Reviewer guidance
 
-**The model was rejected because the equilibrium dissociation constant for trastuzumab emtansine was recorded in nanomolar, conflicting with the required concentration dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nM ([length]) vs [mass] / [length] ** 3.**
 
-The parameter for drug-target binding affinity was listed as 0.1 nM. The review flagged a dimension mismatch between this unit and the expected mass-per-volume dimension for the parameter. Additionally, the second reader disagreed with the identified analyte and the model's structural links. Extracted — trastuzumab emtansine: V1 37 mL/kg, CL 7.2 mL/day/kg, V2 30 mL/kg, Q 12 mL/day/kg, KD 0.1 nM, kel 32.6 day−1.
+A reported unit could not be converted (KD), so that value has no SI equivalent. Extracted — trastuzumab emtansine: V1 37 mL/kg, CL 7.2 mL/day/kg, V2 30 mL/kg, Q 12 mL/day/kg, KD 0.1 nM, kel 32.6 day−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trastuzumab_emtansine, the second reading T-DM1; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;olanzapine&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/&quot;},{&quot;label&quot;:&quot;Zang_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olanzapine_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olanzapine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olanzapine_Johnson2011_reference&quot;,&quot;label&quot;:&quot;Johnson_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Johnson2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olanzapine_Zang2024_reference&quot;,&quot;label&quot;:&quot;Zang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Zang2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Eugene_2017_D2RO&quot;,&quot;label&quot;:&quot;Eugene_2017 \u00b7 D2RO&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/pd_Eugene_2017_D2RO.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olanzapine_Zang2024_reference&quot;,&quot;label&quot;:&quot;Zang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Zang2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Olanzapine_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olanzapine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olanzapine_Johnson2011_reference&quot;,&quot;label&quot;:&quot;Johnson_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/Olanzapine_Johnson2011_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Eugene_2017_D2RO&quot;,&quot;label&quot;:&quot;Eugene_2017 \u00b7 D2RO&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_olanzapine/pd_Eugene_2017_D2RO.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # olanzapine — `Olanzapine_Zang2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Olanzapine apparent clearance (CL/F), reported as 10.38 L/h, was held for review because the second reader did not agree with this estimate.
-
-<div class="pk-model-meta" hidden drug="olanzapine" model-id="Olanzapine_Zang2024_reference" status="needs_review" stale="false" population="pediatric Chinese patients with psychiatric disorders" measured-compound="olanzapine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="olanzapine" model-id="Olanzapine_Zang2024_reference" status="simulated" stale="false" population="pediatric patients with psychiatric disorders" measured-compound="olanzapine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Zang YN, Wan Z, Jia F, Yang Q, Liu CG, Wang Q et al. Population pharmacokinetics of olanzapine in pediatric patients with psychiatric disorders. Expert opinion on drug metabolism & toxicology 20(8):827–840 (2024).
@@ -17,29 +15,27 @@ Zang YN, Wan Z, Jia F, Yang Q, Liu CG, Wang Q et al. Population pharmacokinetics
 
 ## Population and dosing
 
-**Population:** pediatric Chinese patients with psychiatric disorders · condition psychiatric disorders · age group adolescent · n = 269.
+**Population:** pediatric patients with psychiatric disorders · condition psychiatric disorders · age group adolescent.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 3 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_olanzapine/Olanzapine_Zang2024_reference/Olanzapine_Zang2024_reference.svg" alt="Olanzapine_Zang2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| apparent clearance (CL/F) | CL/F | 10.38 | L/h |
-| distribution volume (V/F) | V | 9.41 | L/kg |
-| absorption rate constant (Ka) | kabs | 0.3 | h-1 |
+| CL/F | CL/F | 10.38 | L/h |
+| V/F | V/F | 9.41 | L/kg |
+| Ka | kabs | 0.3 | h-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,21 +45,21 @@ Zang YN, Wan Z, Jia F, Yang Q, Liu CG, Wang Q et al. Population pharmacokinetics
 
 ### Reviewer guidance
 
-**Olanzapine apparent clearance (CL/F), reported as 10.38 L/h, was held for review because the second reader did not agree with this estimate.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-The record is abstract-only, so reported summary statistics stood in for a fitted model; the second reader recorded no value for apparent clearance. Cross-check agreement was 0.333, below 0.5, with 0 of 1 reader(s) agreeing. The model builder also defaulted the absorption lag time and used an apparent parameterization with F=1, Fm=1, and no molar correction. Extracted — olanzapine: CL/F 10.4 L/h, V 9.41 L/kg, kabs 0.3 h-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of (body weight∕60)0.25: this record has none, the second reading none; it also differs on 7 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of (body weight∕60)0.25: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| apparent clearance (CL/F) | `Q27` · CL/F | 10.38 | L/h | 2.883e-06 | m3/s | l/h | exact (1) | Zang_2024:abstract |
-| distribution volume (V/F) | `Q61` · V | 9.41 | L/kg | 0.6587 | m3 | l/kg | exact (1) | Zang_2024:abstract |
-| absorption rate constant (Ka) | `Q49` · kabs | 0.3 | h-1 | 8.333e-05 | 1/s | 1/h | exact (1) | Zang_2024:abstract |
+| CL/F | `Q27` · CL/F | 10.38 | L/h | 2.883e-06 | m3/s | l/h | exact (1) | Zang_2024:abstract |
+| V/F | `Q76` · V/F | 9.41 | L/kg | 0.6587 | m3 | l/kg | exact (1) | Zang_2024:abstract |
+| Ka | `Q49` · kabs | 0.3 | h-1 | 8.333e-05 | 1/s | 1/h | exact (1) | Zang_2024:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,38 +73,33 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'L∕h' (CL/F)
-- dropped duplicate Q27 ('CL∕F (L∕h)', value None) — already have one for this compound
+- dropped unlinked row (NIL): 'body weight' — extend the ontology if this is a real PK parameter (source ['Zang_2024:abstract'])
+- dropped unlinked row (NIL): 'male' — extend the ontology if this is a real PK parameter (source ['Zang_2024:abstract'])
+- dropped unlinked row (NIL): 'co-occurrence of infection' — extend the ontology if this is a real PK parameter (source ['Zang_2024:abstract'])
+- dropped unlinked row (NIL): 'co-therapy with fluvoxamine' — extend the ontology if this is a real PK parameter (source ['Zang_2024:abstract'])
+- dropped unlinked row (NIL): 'co-therapy with sertraline' — extend the ontology if this is a real PK parameter (source ['Zang_2024:abstract'])
+- dropped unlinked row (NIL): 'co-therapy with valproate' — extend the ontology if this is a real PK parameter (source ['Zang_2024:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=olanzapine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Zang_2024_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Zang_2024_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.333 (4/12 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[(body weight∕60)0.25]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent clearance]` | 10.38 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` |  | 10.38 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[distribution volume]` | 9.41 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[if male]` |  | 1.33 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` |  | 0.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f]` |  | 9.41 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[1.33]` |  | 1.33 | only_one_extracted |
 
 </details>
 
@@ -127,11 +118,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Zang_2024:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Zang_2024:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Zang_2024:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Zang_2024:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 10.4 L/h | ['Zang_2024:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 659 L | ['Zang_2024:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 659 L | ['Zang_2024:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -144,7 +135,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.778 (7 of 9 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,7 +151,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_olanzapine/Olanzapine_Zang2024_reference/Olanzapine_Zang2024_reference_modelica.zip" download>Olanzapine_Zang2024_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_olanzapine/Olanzapine_Zang2024_reference/Olanzapine_Zang2024_reference_modelica.zip" download>Olanzapine_Zang2024_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_olanzapine/Olanzapine_Zang2024_reference/Olanzapine_Zang2024_reference_fmi.zip" download>Olanzapine_Zang2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_olanzapine/Olanzapine_Zang2024_reference/Olanzapine_Zang2024_reference_matlab.zip" download>Olanzapine_Zang2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_olanzapine/Olanzapine_Zang2024_reference/Olanzapine_Zang2024_reference_matlab_simbio.zip" download>Olanzapine_Zang2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -224,4 +215,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bolanzapine%5D%20Olanzapine_Zang2024_reference&body=Drug%3A%20olanzapine%0ARecord%3A%20Olanzapine_Zang2024_reference%0APaper%3A%20Zang_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_olanzapine/Olanzapine_Zang2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 16:07 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:40 UTC</sub>

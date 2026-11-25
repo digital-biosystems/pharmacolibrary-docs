@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> For niclosamide, the absorption-rate constant ka has no reported value and was defaulted, so this record was held back.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Zhang2019_reference" status="needs_review" stale="false" population="" measured-compound="niclosamide" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Zhang J, Bai Y, Li B, Zhou X, Si H, Zhang J. Determination and pharmacokinetics 
 
 ### Reviewer guidance
 
-**For niclosamide, the absorption-rate constant ka has no reported value and was defaulted, so this record was held back.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record reports CL/F of 11.426 mL/h/kg and V/F of 16.9692 L, but ka uses a library default rather than an estimate from the paper; this affects the simulated profile and is unsupported by the paper. Tlag was also defaulted, and absorption was represented as first-order depot input with apparent parameterization (F=1, Fm=1, no molar correction). A second reader disputed the verdict: agreement was 0.75, with 0 of 1 reader agreeing. Extracted — niclosamide: CL/F 11.4 mL/h/kg, V/F 17 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — niclosamide: CL/F 11.4 mL/h/kg, V/F 17 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q57: this record has 14.706, the second reading 64.4; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.75 (6 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (6 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -147,7 +147,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_niclosamide/Niclosamide_Zhang2019_reference/Niclosamide_Zhang2019_reference_modelica.zip" download>Niclosamide_Zhang2019_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_niclosamide/Niclosamide_Zhang2019_reference/Niclosamide_Zhang2019_reference_modelica.zip" download>Niclosamide_Zhang2019_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_niclosamide/Niclosamide_Zhang2019_reference/Niclosamide_Zhang2019_reference_fmi.zip" download>Niclosamide_Zhang2019_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_niclosamide/Niclosamide_Zhang2019_reference/Niclosamide_Zhang2019_reference_matlab.zip" download>Niclosamide_Zhang2019_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_niclosamide/Niclosamide_Zhang2019_reference/Niclosamide_Zhang2019_reference_matlab_simbio.zip" download>Niclosamide_Zhang2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>

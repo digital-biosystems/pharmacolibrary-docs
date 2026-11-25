@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because melagatran clearance was labeled as a creatine biomarker, rendering the pharmacokinetic parameters invalid.
+> biomarker_kinetics_as_drug_pk; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="melagatran" model-id="Melagatran_Eriksson2003_reference" status="rejected" stale="false" population="orthopaedic surgery patients" measured-compound="melagatran" parameterization="apparent" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Eriksson UG, Mandema JW, Karlsson MO, Frison L, Gisleskog PO, Wählby U et al. P
 
 ### Reviewer guidance
 
-**The record was rejected because melagatran clearance was labeled as a creatine biomarker, rendering the pharmacokinetic parameters invalid.**
+**biomarker_kinetics_as_drug_pk; t0_analyte_identity (+2 more).**
 
-The clearance value of 5.3 L/h for melagatran was mislabeled as a creatinine clearance biomarker. The model relied on abstract-only data and defaulted absorption parameters, leading to second-reader disagreement on the parameterization type. Extracted — melagatran: CL 5.3 L/h, Fab 23 %, V 15.5 L, V/F 159 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — melagatran: CL 5.3 L/h, Fab 23 %, V 15.5 L, V/F 159 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has melagatran and ximelagatran, the second reading melagatran, ximelagatran; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -149,7 +149,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.364, 0 of 1 reader(s) agree | 0.364 | cross-check disputed by a second reader: verdict disputed, agreement 0.364, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.364 (4 of 11 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.364 | cross-check contradicted by a second reader: verdict disputed; agreement 0.364 (4 of 11 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

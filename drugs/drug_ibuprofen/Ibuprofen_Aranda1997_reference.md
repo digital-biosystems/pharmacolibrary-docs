@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record refused due to cross-check disagreement where the second reader disputed clearance and volume of distribution values for ibuprofen.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Aranda1997_reference" status="needs_review" stale="false" population="premature newborn infants" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Aranda JV, Varvarigou A, Beharry K, Bansal R, Bardin C, Modanlou H et al. Pharma
 
 ### Reviewer guidance
 
-**Record refused due to cross-check disagreement where the second reader disputed clearance and volume of distribution values for ibuprofen.**
+**cross_check_disputed; x1_cross_check.**
 
-The review failed because only 0 of 1 second readers agreed with the primary extraction, resulting in a cross-check agreement ratio of 0.455. The second reader specifically disagreed on the extracted values for total clearance and volume of distribution, leaving key pharmacokinetic parameters for ibuprofen unresolved. No values were provided in the primary record for some disputed fields, while the secondary reader provided conflicting numbers for others. Extracted — ibuprofen: CL 2.06 ml/kg/h, V 62.1 ml/kg.
+Extracted — ibuprofen: CL 2.06 ml/kg/h, V 62.1 ml/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q40: this record has none, the second reading 94.98; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check agreement 0.455 is below 0.5: verdict partial, agreement 0.455, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.455 (5 of 11 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.455 | cross-check agreement 0.455 is below 0.5: verdict partial; agreement 0.455 (5 of 11 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The calcium clearance and volume of distribution values were disputed because the second reader could not verify them against the abstract-only source.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="calcium chloride" model-id="CalciumChloride_Ansari2022_reference" status="needs_review" stale="false" population="adults undergoing cesarean delivery" measured-compound="calcium" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Ansari JR, Kalariya N, Carvalho B, Flood P, Guo N, Riley E. Calcium chloride for
 
 ### Reviewer guidance
 
-**The calcium clearance and volume of distribution values were disputed because the second reader could not verify them against the abstract-only source.**
+**cross_check_disputed; x1_cross_check.**
 
-The record relies on summary statistics from the paper's abstract rather than a fitted model, leading to unverifiable parameter values. The second reader disagreed on the dose compound and primary analyte, marking them as unknown. Furthermore, the second reader could not confirm the specific values of 0.93 L/min for clearance and 76 L for volume of distribution. Extracted — calcium chloride: CL 0.93 L/min, V 76 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — calcium chloride: CL 0.93 L/min, V 76 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has calcium_chloride, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

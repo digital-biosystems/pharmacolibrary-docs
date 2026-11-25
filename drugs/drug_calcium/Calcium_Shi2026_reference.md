@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Calcium clearance (6.73 L/h) and volume of distribution (49.1 L) were attributed to a paper about another drug, so the record was rejected.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="Calcium" model-id="Calcium_Shi2026_reference" status="rejected" stale="false" population="" measured-compound="calcium" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Shi Y, Yao Y, He X, Bian X, Yu X, Fang J et al. Vancomycin population pharmacoki
 
 ### Reviewer guidance
 
-**Calcium clearance (6.73 L/h) and volume of distribution (49.1 L) were attributed to a paper about another drug, so the record was rejected.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper’s title and abstract do not name calcium, and the relevance screen classified the paper as being about another drug. A second reader reported 37.9 for an unspecified value, while this record has no value recorded for that field. Extracted — calcium: CL 6.73 L/h, V 49.1 L.
+Extracted — calcium: CL 6.73 L/h, V 49.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 37.9. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.833 (5 of 6 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

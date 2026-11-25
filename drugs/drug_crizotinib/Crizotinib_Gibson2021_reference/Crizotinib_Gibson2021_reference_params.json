@@ -9,22 +9,22 @@
   "central.C"
  ],
  "parameters": {
-  "Cl": 1.852777777777778e-05,
+  "Cl": 3.2053055555555564e-05,
   "F": 1.0,
   "MM": 0.450337,
   "Tlag": 0.0,
-  "VdPerKg": 0.0010471428571428572,
+  "VdPerKg": 0.0018115571428571433,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0005,
-  "ka": 0.0001866666666666667,
+  "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 4953.704140232302
+  "central.C": 5626.793707402123
  },
  "reference_peaks": {
-  "central.C": 0.002138537802091723
+  "central.C": 0.001043211572736626
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

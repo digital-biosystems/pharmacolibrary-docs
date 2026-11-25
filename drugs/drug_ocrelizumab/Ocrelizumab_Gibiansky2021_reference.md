@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The total clearance of 0.17 L/d for ocrelizumab is outside the physiological window, indicating a scale error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ocrelizumab" model-id="Ocrelizumab_Gibiansky2021_reference" status="rejected" stale="false" population="patients with relapsing or primary progressive multiple sclerosis" measured-compound="ocrelizumab" parameterization="mechanistic" topology="3C"></div>
 
@@ -51,13 +51,13 @@ Gibiansky E, Petry C, Mercier F, Günther A, Herman A, Kappos L et al. Ocrelizum
 
 ### Reviewer guidance
 
-**The total clearance of 0.17 L/d for ocrelizumab is outside the physiological window, indicating a scale error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists total clearance as 0.17 L/d, a value inconsistent with the expected magnitude for ocrelizumab. The intercompartmental clearance of 0.294 L/d and central volume of 2.78 L provide the model context. The failed check flagged this clearance value as having an implausible magnitude. Extracted — ocrelizumab: CL 0.17 L/d, V1 2.78 L, V2 2.68 L, Q 0.294 L/d, kel 1.11 1/h, V 0.0403 L.
+Extracted — ocrelizumab: CL 0.17 L/d, V1 2.78 L, V2 2.68 L, Q 0.294 L/d, kel 1.11 1/h, V 0.0403 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ocrelizumab, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

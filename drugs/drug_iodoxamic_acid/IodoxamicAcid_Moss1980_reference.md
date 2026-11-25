@@ -109,4 +109,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biodoxamic_acid%5D%20IodoxamicAcid_Moss1980_reference&body=Drug%3A%20iodoxamic_acid%0ARecord%3A%20IodoxamicAcid_Moss1980_reference%0APaper%3A%20Moss_1980%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iodoxamic_acid/IodoxamicAcid_Moss1980_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 22:17 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:21 UTC</sub>

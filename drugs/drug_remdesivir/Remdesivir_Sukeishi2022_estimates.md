@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Remdesivir record refused because absorption parameters were not reported, forcing reliance on library defaults instead of paper-specific estimates.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Sukeishi2022_estimates" status="needs_review" stale="false" population="Japanese adults with COVID-19 and renal dysfunction" measured-compound="GS-441524" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Sukeishi A, Itohara K, Yonezawa A, Sato Y, Matsumura K, Katada Y et al. Populati
 
 ### Reviewer guidance
 
-**Remdesivir record refused because absorption parameters were not reported, forcing reliance on library defaults instead of paper-specific estimates.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The review found that absorption rate and lag time were not provided in the source material, meaning library defaults were used rather than measured values. These placeholder values influence the simulated concentration profile without support from the actual study. Additionally, the metabolite clearance is reported as an apparent value without a molar correction, which conflicts with mechanistic interpretations. Extracted — GS-441524: CLm/F 4.9 L/h, V 9.9 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. None of the extracted parameters is remdesivir's own; they describe GS-441524. Extracted — GS-441524: CLm/F 4.9 L/h, V 9.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

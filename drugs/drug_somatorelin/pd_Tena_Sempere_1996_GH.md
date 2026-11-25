@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;somatorelin&quot;,&quot;href&quot;:&quot;drugs/drug_somatorelin/&quot;},{&quot;label&quot;:&quot;Tena-Sempere_1996 \u00b7 PD GH release (percent increment over basal GH release)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;somatorelin&quot;,&quot;href&quot;:&quot;drugs/drug_somatorelin/&quot;},{&quot;label&quot;:&quot;Tena-Sempere_1996 \u00b7 PD GH secretion&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# GH release (percent increment over basal GH release) — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+# GH secretion — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 ## Record summary
 
-**As extracted:** GHRH (measured concentrations) drives GH release (percent increment over basal GH release): direct Emax (saturable) effect.
+**As extracted:** GHRH (measured concentrations) drives GH secretion: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
@@ -36,8 +36,7 @@ Tena-Sempere M et al., In vitro pituitary GH secretion after G…, Journal of mo
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | EC50 | `Q321` ·  | 40.82 +/- 12.03 | nM | llm | Tena-Sempere_1996:pdv3 |
-| PD (effect) | EC50 | `Q321` ·  | 0.35 +/- 0.09 | nM | llm | Tena-Sempere_1996:pdv3 |
+| PD (effect) | EC50 | `Q321` ·  | 40.82 | nM | llm | Tena-Sempere_1996:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -46,20 +45,19 @@ Tena-Sempere M et al., In vitro pituitary GH secretion after G…, Journal of mo
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (1/5 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.4 (2/5 fields) | 3 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `driver_compound` | GHRH | somatorelin | mismatch |
 | `gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
-| `gpt-oss-120b` | `model_family` | emax | sigmoid_emax | mismatch |
-| `gpt-oss-120b` | `parameters[Q321].value` | 0.35 +/- 0.09 | 0.35 | mismatch |
+| `gpt-oss-120b` | `parameters[Q321]` | 40.82 |  | only_one_extracted |
 
 </details>
 

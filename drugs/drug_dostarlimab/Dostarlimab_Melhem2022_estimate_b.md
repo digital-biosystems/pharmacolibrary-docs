@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Dostarlimab's total clearance and central volume units were recorded as generic 'units' rather than their specific pharmacokinetic dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit units ([luminosity] / [length] ** 2) vs [length] ** 3 / [time]; Q63 unit units ([luminosity] / [length] ** 2) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="dostarlimab" model-id="Dostarlimab_Melhem2022_estimate_b" status="rejected" stale="false" population="patients with advanced solid tumours" measured-compound="dostarlimab" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Melhem M, Hanze E, Lu S, Alskär O, Visser S, Gandhi Y. Population pharmacokinet
 
 ### Reviewer guidance
 
-**Dostarlimab's total clearance and central volume units were recorded as generic 'units' rather than their specific pharmacokinetic dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit units ([luminosity] / [length] ** 2) vs [length] ** 3 / [time]; Q63 unit units ([luminosity] / [length] ** 2) vs [length] ** 3.**
 
-The total clearance (CL) and central volume of distribution (V1) entries both list their unit as 'units', which fails the dimensionality check against their expected physical dimensions. This ambiguity prevents the record from being converted to standard SI units, causing the structural parameters to be rejected. While other covariates like the effect of ALT on clearance have recorded values, the core compartmental units remain invalid. Extracted — dostarlimab: CL 0.179 units, V1 2.98 units, Q 0.547 L d −1, V2 2.1 L, t1/2z 108 d.
+A reported unit could not be converted (CL, V1 and equation variable), so that value has no SI equivalent. Extracted — dostarlimab: CL 0.179 units, V1 2.98 units, Q 0.547 L d −1, V2 2.1 L, t1/2z 108 d.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl (l d -1 ) a].rse_percent`: this record has none, the second reading 1.57; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

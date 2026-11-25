@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Vestronidase alfa’s model is held back because its CL of 1.99 L/h yields a 45.3-hour terminal half-life, unlike the paper’s 3.6- and 2.5-hour values.
+> The model does not reproduce the paper's terminal half-life (paper 3.6, model 45.3); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="vestronidase alfa" model-id="VestronidaseAlfa_Qi2019_reference" status="needs_review" stale="false" population="adult and pediatric subjects with MPS VII" measured-compound="vestronidase_alfa" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Qi Y, McKeever K, Taylor J, Haller C, Song W, Jones SA et al. Pharmacokinetic an
 
 ### Reviewer guidance
 
-**Vestronidase alfa’s model is held back because its CL of 1.99 L/h yields a 45.3-hour terminal half-life, unlike the paper’s 3.6- and 2.5-hour values.**
+**The model does not reproduce the paper's terminal half-life (paper 3.6, model 45.3); x1_cross_check.**
 
-The model does not reproduce the paper's terminal half-life (paper 3.6, model 45.3); simulated as the paper dosed it, the model's terminal half-life differs from the reported value by more than the tolerance. The model also does not reproduce the paper's terminal half-life (paper 2.5, model 45.3), again differing by more than the tolerance. A second reader disputed the dose compound and primary analyte naming (vestronidase alfa rather than vestronidase_alfa) and identified a body-weight effect on clearance and intercompartmental clearance of 0.574 that is absent from this record. Extracted — vestronidase alfa: CL 1.99 L/h, V1 1.49 L, Q 0.94 L/h, V2 3.03 L.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — vestronidase alfa: CL 1.99 L/h, V1 1.49 L, Q 0.94 L/h, V2 3.03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vestronidase_alfa, the second reading vestronidase alfa; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -171,10 +171,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | fail | 3.6 | 45.28 | 12.58 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.5 | 45.28 | 18.11 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | skipped |  | 45.28 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.667 (6 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (6 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | fail | 3.6 | 45.28 | 12.58 | reported 3.6 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.5 | 45.28 | 18.11 | reported 2.5 h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 45.28 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

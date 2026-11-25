@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;dolutegravir&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/&quot;},{&quot;label&quot;:&quot;Kawuma_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolutegravir_Kengo2023_reference&quot;,&quot;label&quot;:&quot;Kengo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dolutegravir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolutegravir_Kengo2023_reference&quot;,&quot;label&quot;:&quot;Kengo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the second reader found a 144 value for rifampicin coadministration increased dolutegravir clearance that is missing from the record.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Kawuma2022_reference" status="rejected" stale="false" population="healthy volunteers and adults living with HIV (HIV/tuberculosis cotreatment)" measured-compound="dolutegravir" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Kawuma2022_reference" status="rejected" stale="false" population="healthy volunteers and HIV patients" measured-compound="dolutegravir" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Kawuma AN, Wasmann RE, Dooley KE, Boffito M, Maartens G, Denti P. Population Pharmacokinetic Model and Alternative Dosing Regimens for Dolutegravir Coadministered with Rifampicin. Antimicrobial agents and chemotherapy 66(6):e0021522 (2022).
@@ -17,7 +17,7 @@ Kawuma AN, Wasmann RE, Dooley KE, Boffito M, Maartens G, Denti P. Population Pha
 
 ## Population and dosing
 
-**Population:** healthy volunteers and adults living with HIV (HIV/tuberculosis cotreatment) · condition HIV, coadministered with rifampicin · age group adult · n = 41.
+**Population:** healthy volunteers and HIV patients · condition healthy and HIV · age group adult.
 
 ## Model
 
@@ -38,7 +38,7 @@ Kawuma AN, Wasmann RE, Dooley KE, Boffito M, Maartens G, Denti P. Population Pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Kawuma AN, Wasmann RE, Dooley KE, Boffito M, Maartens G, Denti P. Population Pha
 
 ### Reviewer guidance
 
-**The model was rejected because the second reader found a 144 value for rifampicin coadministration increased dolutegravir clearance that is missing from the record.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader disagreed on the parameter for rifampicin coadministration increased dolutegravir clearance, noting a value of 144. The current record contains no value for this parameter. Extracted — dolutegravir: CL 1.03 L/h, kabs 1.61 h-1, V1 12.7 L, V2 3.85 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dolutegravir: CL 1.03 L/h, kabs 1.61 h-1, V1 12.7 L, V2 3.85 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of rifampicin coadministration increased dolutegravir clearance: this record has none, the second reading 144. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -73,32 +73,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'Rifampicin coadministration increased dolutegravir clearance by' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q22 ('Rifampicin coadministration increased dolutegravir clearance by', value 144) — already have one for this compound
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (clearance); Q63 (central volume); Q64 (peripheral volume)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dolutegravir
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Kawuma_2022_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Kawuma_2022_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.889 (8/9 fields) | 1 |
+| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[rifampicin coadministration increased dolutegravir clearance]` |  | 144 | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -145,4 +136,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdolutegravir%5D%20Dolutegravir_Kawuma2022_reference&body=Drug%3A%20dolutegravir%0ARecord%3A%20Dolutegravir_Kawuma2022_reference%0APaper%3A%20Kawuma_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dolutegravir/Dolutegravir_Kawuma2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:25 UTC</sub>

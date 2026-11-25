@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-> Clearance value 8.2 mL·min/kg has a dimension conflict, preventing structural conversion to SI.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit mL·min/kg ([length] ** 3 * [time]) vs [length] ** 3 / [time].
 
-<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Siao2011_reference" status="rejected" stale="false" population="healthy adult domestic shorthair cats" measured-compound="amantadine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Siao2011_reference" status="rejected" stale="false" population="healthy adult cats" measured-compound="amantadine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Siao KT, Pypendop BH, Stanley SD, Ilkiw JE. Pharmacokinetics of amantadine in cats. Journal of veterinary pharmacology and therapeutics 34(6):599–604 (2011).
@@ -17,9 +17,7 @@ Siao KT, Pypendop BH, Stanley SD, Ilkiw JE. Pharmacokinetics of amantadine in ca
 
 ## Population and dosing
 
-**Population:** healthy adult domestic shorthair cats · condition healthy · age group adult · n = 6.
-
-**Dosed compound ≠ measured compound:** dosed amantadine HCl, measured amantadine.
+**Population:** healthy adult cats · condition healthy · age group adult.
 
 > **Species: cat.** This record comes from an animal study (cat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -27,7 +25,7 @@ Siao KT, Pypendop BH, Stanley SD, Ilkiw JE. Pharmacokinetics of amantadine in ca
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 6 extracted.  
+**Parameters:** 5 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -39,12 +37,11 @@ Siao KT, Pypendop BH, Stanley SD, Ilkiw JE. Pharmacokinetics of amantadine in ca
 | apparent volume of distribution at steady-state | Vss | 4.3 | L/kg |
 | clearance | CL | 8.2 | mL·min/kg |
 | terminal half-life | t1/2z | 348 | min |
-| Systemic availability | Fab | 130 | % |
-| KA (h−1) | kabs | 3.3 | h−1 |
+| Systemic availability | Fab | 130 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,13 +51,13 @@ Siao KT, Pypendop BH, Stanley SD, Ilkiw JE. Pharmacokinetics of amantadine in ca
 
 ### Reviewer guidance
 
-**Clearance value 8.2 mL·min/kg has a dimension conflict, preventing structural conversion to SI.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit mL·min/kg ([length] ** 3 * [time]) vs [length] ** 3 / [time].**
 
-The record reports clearance for amantadine as 8.2 mL·min/kg, a unit where time appears in the numerator rather than the denominator. This dimensional mismatch prevents the clearance from being converted to the required standard form. Additionally, the record is abstract-only, so these summary statistics stand in for a fitted model. Extracted — amantadine: V/F 1.5 L/kg, Vss 4.3 L/kg, CL 8.2 mL·min/kg, t1/2z 348 min, Fab 130 %, kabs 3.3 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — amantadine: V/F 1.5 L/kg, Vss 4.3 L/kg, CL 8.2 mL·min/kg, t1/2z 348 min, Fab 130.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amantadine HCl, the second reading amantadine; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[apparent volume of distribution at steady-state].parameter_id`: this record has Q65, the second reading Q76; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -69,9 +66,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | apparent volume of distribution of the central compartment | `Q76` · V/F | 1.5 | L/kg | 0.105 | m3 | l/kg | boundary_compartment (0.9) | Siao_2011:abstract |
 | apparent volume of distribution at steady-state | `Q65` · Vss | 4.3 | L/kg | 0.301 | m3 | l/kg | llm_corrected (0.6) | Siao_2011:abstract |
 | clearance | `Q22` · CL | 8.2 | mL·min/kg |  |  | (min·ml)/kg | exact (1) | Siao_2011:abstract |
-| terminal half-life | `Q57` · t1/2z | 348 | min | 2.088e+04 | s | min | llm (0.6) | Siao_2011:abstract |
-| Systemic availability | `Q40` · Fab | 130 | % |  |  |  | exact (1) | Siao_2011:abstract |
-| KA (h−1) | `Q49` · kabs | 3.3 | h−1 | 0.0009167 | 1/s | 1/h | review_gapfill (0.7) | Jaber_2021:review |
+| terminal half-life | `Q57` · t1/2z | 348 | min | 2.088e+04 | s | min | half_life_rule (0.95) | Siao_2011:abstract |
+| Systemic availability | `Q40` · Fab | 130 |  |  |  |  | exact (1) | Siao_2011:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -85,13 +81,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - dropped duplicate Q57 ('terminal half-life after oral administration', value 324) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=amantadine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'apparent volume of distribution of the central compartment' is the general volume)
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Jaber_2021's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Siao_2011_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -99,18 +91,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.818 (9/11 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.833 (10/12 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[ka]` | 3.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | amantadine HCl | amantadine | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution at steady-state].parameter_id` | Q65 | Q76 | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution of the central compartment].parameter_id` | Q76 | Q290 | mismatch |
 
 </details>
 
@@ -128,7 +120,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | fail | [length] ** 3 / [time] | mL·min/kg ([length] ** 3 * [time]) | ['Siao_2011:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Jaber_2021:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Siao_2011:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Siao_2011:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Siao_2011:abstract'] |
@@ -159,4 +150,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamantadine%5D%20Amantadine_Siao2011_reference&body=Drug%3A%20amantadine%0ARecord%3A%20Amantadine_Siao2011_reference%0APaper%3A%20Siao_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amantadine/Amantadine_Siao2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 12:39 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:24 UTC</sub>

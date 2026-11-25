@@ -178,15 +178,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_terminal | reference | fail | 0.25 | 7.231 | 28.92 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.22 | 7.231 | 32.87 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.08 | 7.231 | 6.695 | h→SI vs simulated h |
-| T1_tmax | reference | skipped |  | 1.621 |  | non-numeric value |
-| T1_tmax | reference | skipped |  | 1.621 |  | non-numeric value |
-| T1_tmax | reference | skipped |  | 1.621 |  | non-numeric value |
-| T1_tmax | reference | skipped |  | 1.621 |  | non-numeric value |
-| T1_tmax | reference | skipped |  | 1.621 |  | non-numeric value |
-| T1_tmax | reference | skipped |  | 1.621 |  | non-numeric value |
+| T1_t_half_terminal | reference | fail | 0.25 | 7.231 | 28.92 | reported 0.25 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.22 | 7.231 | 32.87 | reported 0.22 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.08 | 7.231 | 6.695 | reported 1.08 h→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 1.621 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | skipped |  | 1.621 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | skipped |  | 1.621 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | skipped |  | 1.621 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | skipped |  | 1.621 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | skipped |  | 1.621 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

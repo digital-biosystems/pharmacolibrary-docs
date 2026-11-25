@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record cites dobutamine clearance of 0.004 l/h/kg from a paper whose primary subject is phenobarbital, not dobutamine.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="dobutamine" model-id="Dobutamine_ma2015_reference" status="rejected" stale="false" population="" measured-compound="dobutamine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@
 
 ### Reviewer guidance
 
-**The record cites dobutamine clearance of 0.004 l/h/kg from a paper whose primary subject is phenobarbital, not dobutamine.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The extracted clearance and volume of distribution belong to a study where dobutamine was merely a co-administered drug for interaction testing, while the reported parameters were for phenobarbital. Consequently, the pharmacokinetic values do not describe the target molecule. Additionally, a second reader disputed the initial rejection, noting a mismatch in the extracted volume of distribution value between the record and their reading. Extracted — dobutamine: CL 0.004 l/h/kg, V 0.494 l/kg.
+Extracted — dobutamine: CL 0.004 l/h/kg, V 0.494 l/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.0040, the second reading 0.0043; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -124,7 +124,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.429, 0 of 1 reader(s) agree | 0.429 | cross-check disputed by a second reader: verdict disputed, agreement 0.429, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.429 (3 of 7 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.429 | cross-check contradicted by a second reader: verdict disputed; agreement 0.429 (3 of 7 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

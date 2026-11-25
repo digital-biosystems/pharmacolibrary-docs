@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model record for azithromycin was rejected because the absorption lag time unit hour-1 conflicts with the required clearance dimension, preventing conversion to standard units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q329 unit hour−1 (1 / [time]) vs [length] ** 3 / [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Hughes2020_base" status="rejected" stale="false" population="healthy adults and patients" measured-compound="azithromycin" parameterization="apparent" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Hughes JH, Sweeney K, Ahadieh S, Ouellet D. Predictions of Systemic, Intracellul
 
 ### Reviewer guidance
 
-**The model record for azithromycin was rejected because the absorption lag time unit hour-1 conflicts with the required clearance dimension, preventing conversion to standard units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q329 unit hour−1 (1 / [time]) vs [length] ** 3 / [mass] / [time].**
 
-The record lists an absorption lag time parameter with a value of 1.45 and a unit of hour-1, which is dimensionally incompatible with a clearance parameter that requires volume per time. This unit mismatch prevented the value from being converted to standard SI units. Additionally, no value was extracted for the muscle partition coefficient, so a library placeholder would have been used, despite a second reader noting a value of 0.55 for this field. Extracted — azithromycin: tlag 1.45 hour, kabs 0.88 hour−1, CL/F 258 L/hour, V1/F 160 L, Q/F 207 L/hour, Q2/F 101 L/hour, V3/F 9.72e+03 L, kon 0.56 hour−1, … (+1).
+A reported unit could not be converted (kon), so that value has no SI equivalent. Extracted — azithromycin: tlag 1.45 hour, kabs 0.88 hour−1, CL/F 258 L/hour, V1/F 160 L, Q/F 207 L/hour, Q2/F 101 L/hour, V3/F 9.72e+03 L, kon 0.56 hour−1, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dfmuscle: this record has none, the second reading 0.55. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

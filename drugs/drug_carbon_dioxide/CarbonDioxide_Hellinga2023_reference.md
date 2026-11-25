@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Carbon dioxide record held back due to second-reader cross-check dispute with an agreement ratio of 0.471.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="carbon dioxide" model-id="CarbonDioxide_Hellinga2023_reference" status="needs_review" stale="false" population="" measured-compound="carbon_dioxide" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Hellinga M, Algera MH, Olofsen E, van der Schrier R, Sarton E, van Velzen M et a
 
 ### Reviewer guidance
 
-**Carbon dioxide record held back due to second-reader cross-check dispute with an agreement ratio of 0.471.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagreed with the record on multiple extracted values, resulting in zero agreement out of one reader. For instance, the record contains a value of 0.95 for one parameter while the second reader assigned null. Another discrepancy showed the record with 0.05 against the second reader's value of 5. Extracted — carbon dioxide: CL 76 L/h, V1 37 L, V2 411 L, Q 510 L/h.
+Extracted — carbon dioxide: CL 76 L/h, V1 37 L, V2 411 L, Q 510 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q310: this record has 0.95, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.471, 0 of 1 reader(s) agree | 0.471 | cross-check disputed by a second reader: verdict disputed, agreement 0.471, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.471 (8 of 17 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.471 | cross-check contradicted by a second reader: verdict disputed; agreement 0.471 (8 of 17 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

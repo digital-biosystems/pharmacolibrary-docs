@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time for isoniazid were set to library defaults instead of paper-specific estimates, preventing publication.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="isoniazid" model-id="Isoniazid_Calderin2025_reference" status="needs_review" stale="false" population="South African adults with tuberculous meningitis" measured-compound="pyrazinamide, isoniazid" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Calderin JM, Wasserman S, Resendiz-Galvan JE, Abdelgawad N, Davis A, Stek C et a
 
 ### Reviewer guidance
 
-**Bioavailability and lag time for isoniazid were set to library defaults instead of paper-specific estimates, preventing publication.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The bioavailability parameter (Fab) was not extracted from the study and was instead assigned a placeholder value, meaning the model assumes a fractional absorption not supported by the text. The lag time (Tlag) was similarly defaulted, affecting the time to peak concentration in the simulated profile. Additionally, a second reviewer disagreed with the classification of pyrazinamide as a primary analyte and the associated parameter values, disputing the record's overall validity. Extracted — pyrazinamide, isoniazid: CL 4.19 L/h, V 45 L, kabs 2.95 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. None of the extracted parameters is isoniazid's own; they describe pyrazinamide, isoniazid. Extracted — pyrazinamide, isoniazid: CL 4.19 L/h, V 45 L, kabs 2.95 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pyrazinamide, isoniazid, rifampicin, the second reading pyrazinamide and isoniazid; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -155,7 +155,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.3, 0 of 1 reader(s) agree | 0.3 | cross-check disputed by a second reader: verdict disputed, agreement 0.3, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.3 (3 of 10 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.3 | cross-check contradicted by a second reader: verdict disputed; agreement 0.3 (3 of 10 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

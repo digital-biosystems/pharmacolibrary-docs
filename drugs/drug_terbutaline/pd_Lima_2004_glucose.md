@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Terbutaline_Gupta2019_reference&quot;,&quot;label&quot;:&quot;Gupta_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Gupta2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terbutaline_Pouliquen2015_reference&quot;,&quot;label&quot;:&quot;Pouliquen_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Pouliquen2015_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terbutaline_Singh2022_reference&quot;,&quot;label&quot;:&quot;Singh_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Singh2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terbutaline_Trischler2021_reference&quot;,&quot;label&quot;:&quot;Trischler_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Trischler2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Terbutaline_Wen2026_reference&quot;,&quot;label&quot;:&quot;Wen_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_terbutaline/Terbutaline_Wen2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# glucose — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+# glucose — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -25,8 +25,8 @@
 - **paper:** `Lima_2004`
 - **model family:** `indirect_response_iii`
 - **driver:** `cited_pk`
-- **tier:** descriptive
-- **effect:** stimulation/proportional
+- **tier:** population
+- **effect:** stimulation/unknown
 
 ## Citation
 Lima JJ et al., Modeling the metabolic effects of terbu…, Clinical pharmacology and t… (2004)
@@ -35,8 +35,7 @@ Lima JJ et al., Modeling the metabolic effects of terbu…, Clinical pharmacolog
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| model term | S(1) | `Q900` ·  | 0.039 |  | llm | Lima_2004:pdv3 |
-| model term | S(1) | `Q900` ·  | 0.0276 |  | llm | Lima_2004:pdv3 |
+| PD (effect) | S(1) | `Q335` ·  | 0.039 +/- 0.007 |  | exact | Lima_2004:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -44,22 +43,14 @@ Lima JJ et al., Modeling the metabolic effects of terbu…, Clinical pharmacolog
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
 
-<details><summary>3 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `effect_form` | proportional | unknown | mismatch |
-| `gpt-oss-120b` | `parameters[Q335]` |  | units_of_measurement_are_not_specified_in_the_paper. | only_one_extracted |
-| `gpt-oss-120b` | `parameters[Q900]` | 0.0276 |  | only_one_extracted |
-
-</details>
+_No second reader extracted anything for this PD record; it is not cross-checked._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>

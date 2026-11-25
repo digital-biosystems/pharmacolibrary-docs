@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span>
 
-> The record was rejected because the model structure mismatched the measured metabolite, the bioavailability parameter was left at default, and the peripheral volume was uncovered.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+4 more).
 
 <div class="pk-model-meta" hidden drug="ketamine" model-id="Ketamine_Herd2007_reference" status="rejected" stale="false" population="children and adults" measured-compound="norketamine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -60,13 +60,13 @@ Herd DW, Anderson BJ, Holford NH. Modeling the norketamine metabolite in childre
 
 ### Reviewer guidance
 
-**The record was rejected because the model structure mismatched the measured metabolite, the bioavailability parameter was left at default, and the peripheral volume was uncovered.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+4 more).**
 
-The model used a single central compartment instead of the two-compartment structure described for ketamine, and the simulation output tracked the parent compound rather than the measured metabolite norketamine. The bioavailability parameter was not extracted, so a placeholder value was used. Additionally, the peripheral volume of distribution, listed as 129 L per 70 kg, was not covered by the model parameter output. Extracted — ketamine: V1 22 l.70 kg(-1), V2 129 l.70 kg(-1), CL 47.8 l.h(-1).70 kg(-1), Q 216 l.h(-1).70 kg(-1); norketamine: CLfm 12.4 l.h(-1).70 kg(-1), CL 13.5 l.h(-1).70 kg(-1), t1/2z 2.1 h, kabs 0.66 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ketamine: V1 22 l.70 kg(-1), V2 129 l.70 kg(-1), CL 47.8 l.h(-1).70 kg(-1), Q 216 l.h(-1).70 kg(-1); norketamine: CLfm 12.4 l.h(-1).70 kg(-1), CL 13.5 l.h(-1).70 kg(-1), t1/2z 2.1 h, kabs 0.66 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of elimination half-life: this record has none, the second reading 2.1; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -164,7 +164,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_shared_parameters |  | pass | 3 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.6, 0 of 1 reader(s) agree | 0.6 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.6 (9 of 15 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.6 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> Acriflavine’s reported Ct of 0.064 microgram/g sits in an exposure record lacking volume and clearance, with a structural unit mismatch and disconnected metabolites, so it was refused.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="acriflavinium chloride" model-id="AcriflaviniumChloride_Plakas1998_reference" status="rejected" stale="false" population="channel catfish" measured-compound="acriflavine" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="acriflavinium chloride" model-id="AcriflaviniumChloride_Plakas1998_reference" status="rejected" stale="false" population="channel catfish" measured-compound="acriflavinium_chloride" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Plakas SM, el Said KR, Bencsath FA, Musser SM, Hayton WL. Pharmacokinetics, tissue distribution and metabolism of acriflavine and proflavine in the channel catfish (Ictalurus punctatus). Xenobiotica; the fate of foreign compounds in biological systems 28(6):605–616 (1998).
@@ -22,9 +22,9 @@ Plakas SM, el Said KR, Bencsath FA, Musser SM, Hayton WL. Pharmacokinetics, tiss
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 1 extracted.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,11 +32,11 @@ Plakas SM, el Said KR, Bencsath FA, Musser SM, Hayton WL. Pharmacokinetics, tiss
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| parent PRO concentration in muscle | Ct | 0.064 | microgram/g |
+| parent ACR... concentrations in muscle | equation variable | 0.02 | microgram/g |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,19 +46,19 @@ Plakas SM, el Said KR, Bencsath FA, Musser SM, Hayton WL. Pharmacokinetics, tiss
 
 ### Reviewer guidance
 
-**Acriflavine’s reported Ct of 0.064 microgram/g sits in an exposure record lacking volume and clearance, with a structural unit mismatch and disconnected metabolites, so it was refused.**
+**The paper reports none of the model's key parameters.**
 
-No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model; a structural parameter’s microgram/g unit conflicts with its dimensionless designation, and the proflavine glucuronide and proflavine acetyl conjugate have no path from the dose. Extracted — acriflavinium chloride: Ct 0.064 microgram/g.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has acriflavine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has acriflavinium_chloride, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | unit_canonical | link | source |
 |---|---|---|---|---|---|---|
-| parent PRO concentration in muscle | `Q75` · Ct | 0.064 | microgram/g | µg/g | llm (0.6) | Plakas_1998:abstract |
+| parent ACR... concentrations in muscle | `Q900` · equation variable | 0.02 | microgram/g | µg/g | llm (0.6) | Plakas_1998:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -69,40 +69,32 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'i.v. dosing' — extend the ontology if this is a real PK parameter (source ['Plakas_1998:abstract'])
-- dropped unlinked row (NIL): 'waterborne exposure' — extend the ontology if this is a real PK parameter (source ['Plakas_1998:abstract'])
-- unit_dimension_mismatch: 'parent PRO concentration in muscle' → Q75 (unit 'dimensionless' vs ontology '[mass] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'parent ACR concentration in muscle' → Q75 (unit 'dimensionless' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped duplicate Q75 ('parent ACR concentration in muscle', value 0.02) — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=acriflavine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- status held at "Needs review" — not promoted
+- dropped unlinked row (NIL): 'waterborne exposure' — extend the ontology if this is a real PK parameter (source ['Plakas_1998:abstract', 'Plakas_1998:abstract'])
+- dropped unlinked row (NIL): 'parent PRO... concentrations in muscle' — extend the ontology if this is a real PK parameter (source ['Plakas_1998:abstract'])
+- dropped unlinked row (NIL): 'parent PRO and ACR concentrations in muscle' — extend the ontology if this is a real PK parameter (source ['Plakas_1998:abstract', 'Plakas_1998:abstract'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=acriflavinium_chloride
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Plakas_1998_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Plakas_1998_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[4-h exposure]` |  | 4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[intravenous (i.v.) dosing]` |  | 1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[parent pro concentration in muscle]` | 0.064 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[parent acr... concentrations in muscle]` | 0.02 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[parent pro concentration in muscle]` |  | 0.064 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | acriflavine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | acriflavine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | acriflavinium_chloride | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | acriflavinium_chloride | unknown | mismatch |
 
 </details>
 
@@ -114,12 +106,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q75 | fail | [mass] / [length] ** 3 | microgram/g (dimensionless) | ['Plakas_1998:abstract'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['unknown', 'unknown'] |  |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | fail | 0 |
+| C0b_disposition_core | fail |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -143,4 +134,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bacriflavinium_chloride%5D%20AcriflaviniumChloride_Plakas1998_reference&body=Drug%3A%20acriflavinium_chloride%0ARecord%3A%20AcriflaviniumChloride_Plakas1998_reference%0APaper%3A%20Plakas_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_acriflavinium_chloride/AcriflaviniumChloride_Plakas1998_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 13:27 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:09 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Cross-reader agreement failed (0.2) for albinterferon alfa 2b because the second reader omitted all pharmacokinetic parameters present in the primary record.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="albinterferon alfa-2b" model-id="AlbinterferonAlfa2b_Riggs2012_reference" status="needs_review" stale="false" population="adults with chronic hepatitis C virus" measured-compound="albinterferon_alfa_2b" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Riggs MM, Bergsma TT, Rogers JA, Gastonguay MR, Subramanian GM, Chen C et al. Po
 
 ### Reviewer guidance
 
-**Cross-reader agreement failed (0.2) for albinterferon alfa 2b because the second reader omitted all pharmacokinetic parameters present in the primary record.**
+**cross_check_disputed; x1_cross_check.**
 
-The primary record lists apparent clearance (38.9 mL/h), apparent volume of distribution (11.6 L), and first-order absorption rate constant (0.0148 h^-1). The second reader disagreed by assigning null values to these three parameters, while the primary record provided explicit values. This discrepancy reduced the agreement score to 0.2, resulting in a disputed verdict for the abstract-only data. Extracted — albinterferon alfa 2b: kabs 0.0148 h(-1), CL/F 38.9 mL/h, V/F 11.6 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — albinterferon alfa 2b: kabs 0.0148 h(-1), CL/F 38.9 mL/h, V/F 11.6 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has albinterferon_alfa_2b, the second reading albinterferon alfa-2b; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

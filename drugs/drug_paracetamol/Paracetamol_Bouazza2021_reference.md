@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The bioavailability parameter F lacks an explicit estimate, using library defaults instead of values from the Bouazza_2021 paracetamol model.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Bouazza2021_reference" status="needs_review" stale="false" population="preterm neonates" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></div>
 
@@ -60,13 +60,13 @@ Bouazza N, Treluyer JM, Foissac F, Urien S, Aikio O, Roze JC et al. Pharmacokine
 
 ### Reviewer guidance
 
-**The bioavailability parameter F lacks an explicit estimate, using library defaults instead of values from the Bouazza_2021 paracetamol model.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).**
 
-The record sets bioavailability to a default value rather than reporting an estimate from the preterm neonate population. Additionally, the covariate effects for body weight and gestational age were defined but not simulated in the record. One parameter was reported with a unit that could not be converted to standard international units. Extracted — paracetamol: CL 0.346 L/h, V 1.99 L/70kg, kabs 9.76 h -1, tlag 4.2 min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (theta_cl_bw, theta_v_bw, equation variable and imax_ga), so that value has no SI equivalent. Extracted — paracetamol: CL 0.346 L/h, V 1.99 L/70kg, kabs 9.76 h -1, tlag 4.2 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of p: this record has none, the second reading 4; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Second reader could not confirm any parameter value for asparaginase due to abstract-only source data.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Borghorst2012_reference" status="needs_review" stale="false" population="pediatric patients with previously untreated acute lymphoblastic leukemia" measured-compound="asparaginase" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Borghorst S, Pieters R, Kuehnel HJ, Boos J, Hempel G. Population pharmacokinetic
 
 ### Reviewer guidance
 
-**Second reader could not confirm any parameter value for asparaginase due to abstract-only source data.**
+**cross_check_disputed; x1_cross_check.**
 
-The model record was built solely from the paper's abstract, using summary statistics as a stand-in for a fitted model. A second reader disagreed on every parameter, marking clearance, volumes, and intercompartmental clearance as unknown. Consequently, the cross-check failed with an agreement of 0 of 1 readers, resulting in a needs_review verdict. Extracted — asparaginase: CL 0.13 L/h, V1 4.11 L, V2 1.63 L, Q 0.106 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — asparaginase: CL 0.13 L/h, V1 4.11 L, V2 1.63 L, Q 0.106 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has asparaginase, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,7 +147,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

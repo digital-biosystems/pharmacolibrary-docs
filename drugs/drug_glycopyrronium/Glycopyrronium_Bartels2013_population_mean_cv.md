@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Glycopyrronium model terminal half-life (77 h) deviates from reported value (52.5 h) due to missing lag time and misclassified absorption phases.
+> The model does not reproduce the paper's terminal half-life (paper 52.5, model 77); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="glycopyrronium" model-id="Glycopyrronium_Bartels2013_population_mean_cv" status="needs_review" stale="false" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Bartels C, Looby M, Sechaud R, Kaiser G. Determination of the pharmacokinetics o
 
 ### Reviewer guidance
 
-**Glycopyrronium model terminal half-life (77 h) deviates from reported value (52.5 h) due to missing lag time and misclassified absorption phases.**
+**The model does not reproduce the paper's terminal half-life (paper 52.5, model 77); x1_cross_check.**
 
-The record defines an 'intermediate' half-life of 0.45 h and a 'fast' half-life without a value, despite kabs (0.009 1/h) implying a slow absorption phase of ~77 h. The lag time was not extracted from the paper, so a library placeholder was used in the model simulation. A second reader disputed the systemic clearance (record 44.9 L/h vs reader 42.5 L/h) and Vss (record 102 L vs reader 82.7 L) values, indicating significant uncertainty in the extracted parameters. Extracted — glycopyrronium: CL 44.9 L/h, V1 11.3 L, Q 8.23 L/h, V2 71.5 L, Fab 1.11, kabs 0.009 1/h, Vss 102 L, t1/2z 0.45 h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — glycopyrronium: CL 44.9 L/h, V1 11.3 L, Q 8.23 L/h, V2 71.5 L, Fab 1.11, kabs 0.009 1/h, Vss 102 L, t1/2z 0.45 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 0: this record has none, the second reading 5; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -179,10 +179,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.739, 0 of 1 reader(s) agree | 0.739 | cross-check disputed by a second reader: verdict disputed, agreement 0.739, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 52.5 | 77.01 | 1.467 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 57.2 | 77.01 | 1.346 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 84 | 77.01 | 0.9168 | days→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.739 (17 of 23 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.739 | cross-check contradicted by a second reader: verdict disputed; agreement 0.739 (17 of 23 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 52.5 | 77.01 | 1.467 | reported 52.5 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 57.2 | 77.01 | 1.346 | reported 57.2 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 84 | 77.01 | 0.9168 | reported 3.5 days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

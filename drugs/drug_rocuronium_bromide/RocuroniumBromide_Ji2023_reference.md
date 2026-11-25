@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Cross-checking failed because the second reader disagreed on intercompartmental clearance and volume of distribution values for rocuronium.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="rocuronium bromide" model-id="RocuroniumBromide_Ji2023_reference" status="needs_review" stale="false" population="" measured-compound="rocuronium_bromide" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Ji SH, Huh KY, Oh J, Jeong HJ, Jang YE, Kim EH et al. Reversal of rocuronium-ind
 
 ### Reviewer guidance
 
-**Cross-checking failed because the second reader disagreed on intercompartmental clearance and volume of distribution values for rocuronium.**
+**cross_check_disputed; x1_cross_check.**
 
-The agreement ratio was 0.684, with zero readers agreeing on the verdict. The second reader assigned 1.1 to the peripheral volume, whereas the record listed 1.5. Additionally, the second reader provided values for the central volume and clearances that were missing in the original record. Extracted — rocuronium bromide: CL 0.07 L∙min−1, V1 1.49 L, V2 2.26 L, Q 0.188 L∙min−1.
+Extracted — rocuronium bromide: CL 0.07 L∙min−1, V1 1.49 L, V2 2.26 L, Q 0.188 L∙min−1.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q312: this record has none, the second reading 66.7; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.684, 0 of 1 reader(s) agree | 0.684 | cross-check disputed by a second reader: verdict disputed, agreement 0.684, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.684 (13 of 19 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.684 | cross-check contradicted by a second reader: verdict disputed; agreement 0.684 (13 of 19 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (glm-5.3-flash) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

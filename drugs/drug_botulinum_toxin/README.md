@@ -21,7 +21,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Ojardias_2022_MAS](drugs/drug_botulinum_toxin/pd_Ojardias_2022_MAS.md) | MAS score change from baseline ← Botulinum toxin · direct Emax (saturable) effect | — | Ojardias E et al., Time course response after single injec…, Annals of physical and reha… (2022) | [10.1016/j.rehab.2021.101579](https://doi.org/10.1016/j.rehab.2021.101579) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ojardias_2022_MAS](drugs/drug_botulinum_toxin/pd_Ojardias_2022_MAS.md) | MAS score change from baseline ← Botulinum toxin · direct Emax (saturable) effect | — | Ojardias E et al., Time course response after single injec…, Annals of physical and reha… (2022) | [10.1016/j.rehab.2021.101579](https://doi.org/10.1016/j.rehab.2021.101579) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

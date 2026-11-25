@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The extracted volume parameters for potassium salicylate are recorded with clearance units, making the magnitudes physiologically implausible.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Cao2025_reference" status="rejected" stale="false" population="" measured-compound="potassium_salicylate" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Cao M, Katial R, Liu Y, Lu X, Gu Q, Chen C et al. Safety, efficacy, and immunoge
 
 ### Reviewer guidance
 
-**The extracted volume parameters for potassium salicylate are recorded with clearance units, making the magnitudes physiologically implausible.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The volume of distribution for both the central and peripheral compartments is listed in units of L/h rather than liters. Using volume units for these parameters causes the values to fall outside the expected physiological range. The record reflects a secondary review source where these unit inconsistencies were not corrected. Extracted — potassium salicylate: CL 0.162 L/h, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
+Extracted — potassium salicylate: CL 0.162 L/h, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has none, the second reading 14.426; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

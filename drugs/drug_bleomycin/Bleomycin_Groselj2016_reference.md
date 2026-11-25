@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The absorption rate constant (ka) was left at library defaults because the source paper did not report an estimate for bleomycin.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Groselj2016_reference" status="needs_review" stale="false" population="elderly cancer patients treated with electrochemotherapy" measured-compound="bleomycin" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Groselj A, Krzan M, Kosjek T, Bosnjak M, Sersa G, Cemazar M. Bleomycin pharmacok
 
 ### Reviewer guidance
 
-**The absorption rate constant (ka) was left at library defaults because the source paper did not report an estimate for bleomycin.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The model used a first-order depot input, requiring an explicit absorption rate constant. The source paper does not report this value, forcing the use of generic library placeholders instead of an estimate. These unreported defaults are not supported by the study data and prevent accurate simulation of the drug's absorption profile. Extracted — bleomycin: V/F 13 l, CL 300 ml/min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — bleomycin: V/F 13 l, CL 300 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bleomycin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

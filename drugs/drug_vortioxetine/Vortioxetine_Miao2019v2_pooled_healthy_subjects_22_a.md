@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Vortioxetine's absorption rate constant was rejected because its unit of L/h conflicts with the expected dimension of 1/hour, and the peripheral volume unit was unconvertible.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Miao2019v2_pooled_healthy_subjects_22_a" status="rejected" stale="false" population="Chinese healthy subjects and patients with MDD" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Miao J, Wang G, Hou J, Areberg J, Zhao Y, Højer AM et al. Pharmacokinetics and 
 
 ### Reviewer guidance
 
-**Vortioxetine's absorption rate constant was rejected because its unit of L/h conflicts with the expected dimension of 1/hour, and the peripheral volume unit was unconvertible.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists the absorption rate constant as 0.14 L/h, which contradicts the parameter's requirement for reciprocal time. Additionally, the unit for the peripheral compartment volume, reported as 'N = 887a', could not be converted to standard units. A second reader also disputed the identity of the dose compound and primary analyte, marking them as unknown rather than vortioxetine. Extracted — vortioxetine: kabs 0.14 L/h, CL/F 33 L/h, V2 0.094 N = 887a, t1/2z 65.8 h.
+A reported unit could not be converted (kabs and V2), so that value has no SI equivalent. Extracted — vortioxetine: kabs 0.14 L/h, CL/F 33 L/h, V2 0.094 N = 887a, t1/2z 65.8 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vortioxetine, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

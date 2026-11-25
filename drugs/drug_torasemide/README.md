@@ -32,7 +32,7 @@ Torasemide is a sulfonamide loop diuretic used to manage fluid overload from hea
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Paulin_2016_diuresis](drugs/drug_torasemide/pd_Paulin_2016_diuresis.md) | diuresis ← torasemide excretion rate in urine · indirect response — drug inhibits the loss of diuresis | — | Paulin A et al., A pharmacokinetic/pharmacodynamic model…, Journal of veterinary pharm… (2016) | [10.1111/jvp.12316](https://doi.org/10.1111/jvp.12316) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Paulin_2016_diuresis](drugs/drug_torasemide/pd_Paulin_2016_diuresis.md) | diuresis ← torasemide excretion rate in urine · indirect response — drug inhibits the loss of diuresis | — | Paulin A et al., A pharmacokinetic/pharmacodynamic model…, Journal of veterinary pharm… (2016) | [10.1111/jvp.12316](https://doi.org/10.1111/jvp.12316) |
 
 ## Pharmacogenomics (PGx)
 
@@ -59,7 +59,7 @@ Torasemide is a sulfonamide loop diuretic used to manage fluid overload from hea
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 19:44 | 4:31 | 1/0/0 | 1/0/0 | 0/0/1 | 65,369/10,622 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
+| 2026-10-06 19:44 | 4:31 | 1/0/0 | 0/1/0 | 0/0/1 | 65,369/10,622 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
 
 ## Coverage
 

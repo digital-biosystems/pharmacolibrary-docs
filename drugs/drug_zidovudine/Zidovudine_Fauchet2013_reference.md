@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record rejected a parent-metabolite model for zidovudine because the model structure lacked the metabolite compartment and the output variable was misassigned to the parent drug.
+> T3_output_variable; t3_topology_template (+1 more).
 
 <div class="pk-model-meta" hidden drug="zidovudine" model-id="Zidovudine_Fauchet2013_reference" status="rejected" stale="false" population="HIV-1-infected children" measured-compound="zidovudine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -17,7 +17,7 @@ Fauchet F, Treluyer JM, Frange P, Urien S, Foissac F, Bouazza N et al. Populatio
 
 ## Population and dosing
 
-**Population:** HIV-1-infected children · condition HIV-1 infection · age group mixed · n = 247.
+**Population:** HIV-1-infected children · condition HIV-1 infection · age group mixed.
 
 ## Model
 
@@ -41,7 +41,7 @@ Fauchet F, Treluyer JM, Frange P, Urien S, Foissac F, Bouazza N et al. Populatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545), qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,23 +51,23 @@ Fauchet F, Treluyer JM, Frange P, Urien S, Foissac F, Bouazza N et al. Populatio
 
 ### Reviewer guidance
 
-**The record rejected a parent-metabolite model for zidovudine because the model structure lacked the metabolite compartment and the output variable was misassigned to the parent drug.**
+**T3_output_variable; t3_topology_template (+1 more).**
 
-The reported structure for the G-ZDV metabolite is incompatible with the applied one-compartment model, and the output variable was identified as the parent drug rather than the measured metabolite. Only the abstract was available, so the clearance and volume parameters are summary statistics rather than fitted values, with lag time and bioavailability left at default assumptions. A second reader disagreed on the parameter extraction for the metabolite formation and elimination rate constants, resulting in a disputed cross-check with 0 of 1 readers agreeing. Extracted — zidovudine: kabs 2.86 h(-1), CL 89.7 liters · h(-1), V/F 229 liters; G-ZDV (3′-azido-3′-deoxy-5′-glucuronylthymidine): kfm 12.6 h(-1), kel 2.27 h(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — zidovudine: kabs 2.86 h(-1), CL 89.7 liters · h(-1), V/F 229 liters; 3*-azido-3*-deoxy-5*-glucuronylthymidine: kfm 12.6 h(-1), kel 2.27 h(-1).
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has zidovudine → g-zdv (3′-azido-3′-deoxy-5′-glucuronylthymidine) (metabolism), the second reading zidovudine → g-zdv (metabolism); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has zidovudine → 3*-azido-3*-deoxy-5*-glucuronylthymidine (metabolism), the second reading zidovudine → g-zdv (metabolism); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| absorption rate | `Q49` · kabs | 2.86 | h(-1) | 0.0007944 | 1/s | 1/h | exact (1) | Fauchet_2013:abstract |
-| apparent elimination clearance | `Q22` · CL | 89.7 | liters · h(-1) | 2.492e-05 | m3/s | l/h | llm_confirmed (0.6) | Fauchet_2013:abstract |
-| apparent volume of distribution | `Q76` · V/F | 229 | liters | 0.229 | m3 | l | exact (1) | Fauchet_2013:abstract |
-| metabolic formation rate constant | `Q305` · kfm | 12.6 | h(-1) | 0.0035 | 1/s | 1/h | exact (1) | Fauchet_2013:abstract |
-| elimination rate constant of G-ZDV | `Q47` · kel | 2.27 | h(-1) | 0.0006306 | 1/s | 1/h | exact (1) | Fauchet_2013:abstract |
+| absorption rate | `Q49` · kabs | 2.86 | h(-1) | 0.0007944 | 1/s | 1/h | exact (1) | Fauchet_2013:abstract, Fauchet_2013:abstract |
+| apparent elimination clearance | `Q22` · CL | 89.7 | liters · h(-1) | 2.492e-05 | m3/s | l/h | llm_confirmed (0.6) | Fauchet_2013:abstract, Fauchet_2013:abstract |
+| apparent volume of distribution | `Q76` · V/F | 229 | liters | 0.229 | m3 | l | exact (1) | Fauchet_2013:abstract, Fauchet_2013:abstract |
+| metabolic formation rate constant | `Q305` · kfm | 12.6 | h(-1) | 0.0035 | 1/s | 1/h | exact (1) | Fauchet_2013:abstract, Fauchet_2013:abstract |
+| elimination rate constant of G-ZDV | `Q47` · kel | 2.27 | h(-1) | 0.0006306 | 1/s | 1/h | exact (1) | Fauchet_2013:abstract, Fauchet_2013:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -82,32 +82,35 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the link
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=zidovudine
-- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
-- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 5 linked by role; re-tagged zidovudine→parent ×3, zidovudine→G-ZDV (3′-azido-3′-deoxy-5′-glucuronylthymidine) ×2
-- molar mass: no plausible PubChem entry for 'G-ZDV (3′-azido-3′-deoxy-5′-glucuronylthymidine)' ('3′-azido-3′-deoxy-5′-glucuronylthymidine') — left in mass units
-- molar mass: none found for 'G-ZDV (3′-azido-3′-deoxy-5′-glucuronylthymidine)' — its concentrations stay mass-only
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- row roles (LLM): model_class=noncompartmental; 5/5 row label(s) assigned, 10 linked by role; re-tagged zidovudine→parent ×6, zidovudine→3*-azido-3*-deoxy-5*-glucuronylthymidine ×4
+- molar mass: no plausible PubChem entry for '3*-azido-3*-deoxy-5*-glucuronylthymidine' ("3'-azido-3'-deoxy-5'-glucuronylthymidine") — left in mass units
+- molar mass: none found for '3*-azido-3*-deoxy-5*-glucuronylthymidine' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 - engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Fauchet_2013_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Fauchet_2013_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.545 (6/11 fields) | 5 |
 | `qwen3.8-27b` | not confirmed | 0.5 (6/12 fields) | 6 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['zidovudine', '3*-azido-3*-deoxy-5*-glucuronylthymidine', 'metabolism']] | [['zidovudine', 'g-zdv', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[elimination rate constant of g-zdv]` | 2.27 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination rate constant of g-zdv]` |  | 2.27 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[metabolic formation rate constant]` | 12.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[metabolic formation rate constant]` |  | 12.6 | only_one_extracted |
 | `qwen3.8-27b` | `model.links` | [['zidovudine', 'g-zdv (3′-azido-3′-deoxy-5′-glucuronylthymidine)', 'metabolism']] | [['zidovudine', 'g-zdv', 'metabolism']] | mismatch |
 | `qwen3.8-27b` | `parameters[apparent elimination clearance].parameter_id` | Q22 | Q27 | mismatch |
 | `qwen3.8-27b` | `parameters[elimination rate constant of g-zdv]` |  | 2.27 | only_one_extracted |
@@ -130,15 +133,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Fauchet_2013:abstract'] |
-| C5_dimension_Q305 | pass | 1 / [time] |  | ['Fauchet_2013:abstract'] |
-| C5_dimension_Q47 | pass | 1 / [time] |  | ['Fauchet_2013:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Fauchet_2013:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Fauchet_2013:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Fauchet_2013:abstract', 'Fauchet_2013:abstract'] |
+| C5_dimension_Q305 | pass | 1 / [time] |  | ['Fauchet_2013:abstract', 'Fauchet_2013:abstract'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Fauchet_2013:abstract', 'Fauchet_2013:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Fauchet_2013:abstract', 'Fauchet_2013:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Fauchet_2013:abstract', 'Fauchet_2013:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 89.7 L/h | ['Fauchet_2013:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 229 L | ['Fauchet_2013:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 89.7 L/h | ['Fauchet_2013:abstract', 'Fauchet_2013:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 229 L | ['Fauchet_2013:abstract', 'Fauchet_2013:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -152,7 +155,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.545 | cross-check contradicted by a second reader: verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -180,4 +183,4 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzidovudine%5D%20Zidovudine_Fauchet2013_reference&body=Drug%3A%20zidovudine%0ARecord%3A%20Zidovudine_Fauchet2013_reference%0APaper%3A%20Fauchet_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zidovudine/Zidovudine_Fauchet2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:28 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:47 UTC</sub>

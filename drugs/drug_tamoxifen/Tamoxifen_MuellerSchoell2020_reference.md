@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span>
 
-> The predicted output was the wrong compartment, and the model structure did not match the parent-metabolite design.
+> The covariate scenarios were not simulated; t3_output_variable (+1 more).
 
 <div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_MuellerSchoell2020_reference" status="rejected" stale="false" population="breast cancer patients" measured-compound="endoxifen" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -62,13 +62,13 @@ Mueller-Schoell A, Klopp-Schulze L, Schroth W, Mürdter T, Michelet R, Brauch H 
 
 ### Reviewer guidance
 
-**The predicted output was the wrong compartment, and the model structure did not match the parent-metabolite design.**
+**The covariate scenarios were not simulated; t3_output_variable (+1 more).**
 
-The simulation predicted the wrong compartment concentration instead of the measured metabolite endoxifen. Furthermore, the model structure used a single-compartment absorption setup rather than the parent-metabolite design implied by the data. A second reader also disagreed on several parameter values, including endoxifen clearance and volume assignments. Extracted — tamoxifen: kabs 1.08 1/hour, tlag 0.442 hour, Vm/F 912 L, CLm/F 5.07 L/hour; endoxifen: CLm/F 5.1 L/hour, V1/F 400 L.
+The base model was simulated, not the covariate effects the record defines. Extracted — tamoxifen: kabs 1.08 1/hour, tlag 0.442 hour, Vm/F 912 L, CLm/F 5.07 L/hour; endoxifen: CLm/F 5.1 L/hour, V1/F 400 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tamoxifen → endoxifen (metabolism), the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

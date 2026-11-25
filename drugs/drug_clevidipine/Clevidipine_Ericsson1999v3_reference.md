@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The clevidipine model lacks a metabolic rate constant, leaving metabolite H 152/81 unreachable and orphaned from the drug's dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Ericsson1999v3_reference" status="rejected" stale="false" population="rats, rabbits, and dogs" measured-compound="clevidipine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -47,13 +47,13 @@ Ericsson H, Tholander B, Björkman JA, Nordlander M, Regårdh CG. Pharmacokineti
 
 ### Reviewer guidance
 
-**The clevidipine model lacks a metabolic rate constant, leaving metabolite H 152/81 unreachable and orphaned from the drug's dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The hydrolysis link from clevidipine to metabolite H 152/81 has no assigned rate parameter, meaning no path exists from the dose to the metabolite. The record includes half-life values of 12 s and 20 s, but these do not constitute a functional elimination or formation mechanism. A second reader could not identify any valid model links or specific parameter values for these half-lives in the abstract. Extracted — clevidipine: t1/2z 12 s, t1/2α 20 s.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clevidipine: t1/2z 12 s, t1/2α 20 s.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has clevidipine → h 152/81 (hydrolysis), the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

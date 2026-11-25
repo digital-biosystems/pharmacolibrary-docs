@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the two-compartment structure for efpeglenatide includes an unreachable compartment with no defined connection to the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Efpeglenatide" model-id="Efpeglenatide_Choi2025_reference" status="rejected" stale="false" population="adults with obesity and type 2 diabetes" measured-compound="efpeglenatide" parameterization="apparent" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Choi S, Seo J, Park S, Kim NY, Kim H, Lim HS. Population pharmacokinetics of efp
 
 ### Reviewer guidance
 
-**The record is rejected because the two-compartment structure for efpeglenatide includes an unreachable compartment with no defined connection to the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model defines a central volume of 2.8 L and a peripheral volume of 3.96 L for efpeglenatide. Although absorption and clearance parameters are present, the review identified an orphan compartment with no path from the dose. Consequently, the structural integrity of the model was compromised, leading to its refusal. Extracted — efpeglenatide: CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
+Extracted — efpeglenatide: CL/F 0.044 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q311: this record has none, the second reading 5.52; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

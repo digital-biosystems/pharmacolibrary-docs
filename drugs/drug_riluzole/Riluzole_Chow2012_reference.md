@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the volume of distribution parameter was assigned incorrect dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit /L (1 / [length] ** 3) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="riluzole" model-id="Riluzole_Chow2012_reference" status="rejected" stale="false" population="adults with acute spinal cord injury" measured-compound="riluzole" parameterization="mechanistic" topology="1C"></div>
 
@@ -23,7 +23,7 @@ Chow DS, Teng Y, Toups EG, Aarabi B, Harrop JS, Shaffrey CI et al. Pharmacology 
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted.  
+**Parameters:** 5 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,15 +33,13 @@ Chow DS, Teng Y, Toups EG, Aarabi B, Harrop JS, Shaffrey CI et al. Pharmacology 
 |---|---|---|---|
 | C(max) | Cmax | 128.9 | ng/ml |
 | C(min) | Cmin | 45.6 | ng/ml |
-| AUC(0-12) | AUC | 982.0 | ng·h/mL |
-| AUC(0-12) on Day 14 | AUCt | 521.0 | ng·h/mL |
-| CL (Day 3) | CL | 49.5 | L/hour |
-| V (Day 3) | V | 557.1 | /L |
-| ka (fixed) | kabs | 5.0 | /h |
+| AUC(0-12) | AUC | 982.0 | ng × hr/ml |
+| CL | CL | 49.5 | L/hour |
+| V | V | 557.1 | /L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,25 +49,23 @@ Chow DS, Teng Y, Toups EG, Aarabi B, Harrop JS, Shaffrey CI et al. Pharmacology 
 
 ### Reviewer guidance
 
-**The record was rejected because the volume of distribution parameter was assigned incorrect dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit /L (1 / [length] ** 3) vs [length] ** 3.**
 
-The volume of distribution for riluzole, reported as 557.1, carries a unit of /L which conflicts with the expected cubic length dimension. Additionally, the record was constructed solely from the paper's abstract, so the values are summary statistics rather than fitted model parameters. A second reader also disagreed on the presence of the Day 14 AUC and absorption rate constant values. Extracted — riluzole: Cmax 129 ng/ml, Cmin 45.6 ng/ml, AUC 982 ng·h/mL, AUCt 521 ng·h/mL, CL 49.5 L/hour, V 557 /L, kabs 5 /h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — riluzole: Cmax 129 ng/ml, Cmin 45.6 ng/ml, AUC 982 ng × hr/ml, CL 49.5 L/hour, V 557 /L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc(0-12) on day 14: this record has 521.0, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has 982.0, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| C(max) | `Q32` · Cmax | 128.9 | ng/ml |  |  | ng/ml | llm (0.6) | Chow_2012:abstract |
-| C(min) | `Q36` · Cmin | 45.6 | ng/ml |  |  | ng/ml | llm (0.6) | Chow_2012:abstract |
-| AUC(0-12) | `Q88` · AUC | 982.0 | ng·h/mL |  |  | ng·h/mL | exact (1) | Chow_2012:abstract |
-| AUC(0-12) on Day 14 | `Q19` · AUCt | 521.0 | ng·h/mL |  |  | ng·h/mL | llm_corrected (0.6) | Chow_2012:abstract |
-| CL (Day 3) | `Q22` · CL | 49.5 | L/hour | 1.375e-05 | m3/s | l/h | exact (1) | Chow_2012:abstract |
-| V (Day 3) | `Q61` · V | 557.1 | /L |  |  | 1/l | exact (1) | Chow_2012:abstract |
-| ka (fixed) | `Q49` · kabs | 5.0 | /h | 0.001389 | 1/s | 1/h | review_gapfill (0.7) | Nguyen_2021:review |
+| C(max) | `Q32` · Cmax | 128.9 | ng/ml | 0.0001289 | kg/m3 | ng/ml | llm (0.6) | Chow_2012:abstract, Chow_2012:abstract |
+| C(min) | `Q36` · Cmin | 45.6 | ng/ml | 4.56e-05 | kg/m3 | ng/ml | llm (0.6) | Chow_2012:abstract, Chow_2012:abstract |
+| AUC(0-12) | `Q88` · AUC | 982.0 | ng × hr/ml | 3.535 | kg*s/m3 | (h·ng)/ml | exact (1) | Chow_2012:abstract, Chow_2012:abstract |
+| CL | `Q22` · CL | 49.5 | L/hour | 1.375e-05 | m3/s | l/h | exact (1) | Chow_2012:abstract, Chow_2012:abstract |
+| V | `Q61` · V | 557.1 | /L |  |  | 1/l | exact (1) | Chow_2012:abstract, Chow_2012:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -79,23 +75,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'ng × hr/ml' (AUC)
-- dropped duplicate Q32 ('C(max) on Day 14', value 76.5) — already have one for this compound
-- dropped duplicate Q36 ('C(min) on Day 14', value 19.1) — already have one for this compound
-- unit_dimension_unknown: 'ng × hr/ml' (AUCt)
-- dropped duplicate Q22 ('CL (Day 14)', value 106.2) — already have one for this compound
-- unit_dimension_mismatch: 'V (Day 3)' → Q61 (unit '1 / [length] ** 3' vs ontology '[length] ** 3') — route to review
-- unit_dimension_mismatch: 'V (Day 14)' → Q61 (unit '1 / [length] ** 3' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q61 ('V (Day 14)', value 1297.9) — already have one for this compound
-- implicit units: 'AUC(0-12)' → ng·h/mL (from the popPK convention: 'No unit stated in text or table footnotes; AUC over a 0-12 h dosing interval is conventionally reported in ng·h/mL, cons')
-- implicit units: 'AUC(0-12) on Day 14' → ng·h/mL (from the popPK convention: 'No unit stated in text or table footnotes; AUC(0-12) on Day 14 is conventionally reported in ng·h/mL, consistent with th')
+- unit_dimension_mismatch: 'V' → Q61 (unit '1 / [length] ** 3' vs ontology '[length] ** 3') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=riluzole
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Nguyen_2021's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Chow_2012_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
@@ -103,18 +87,25 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.8 (8/10 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.308 (4/13 fields) | 9 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[auc(0-12) on day 14]` | 521.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 5.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc(0-12) day 3]` |  | 982.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 982.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c(max) day 3]` |  | 128.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c(min) day 3]` |  | 45.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c]` | 128.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl day 3]` |  | 49.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 49.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v day 3]` |  | 557.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 557.1 |  | only_one_extracted |
 
 </details>
 
@@ -128,19 +119,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Chow_2012:abstract'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Chow_2012:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Chow_2012:abstract'] |
-| C5_dimension_Q36 | pass | [mass] / [length] ** 3 |  | ['Chow_2012:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Nguyen_2021:review'] |
-| C5_dimension_Q61 | fail | [length] ** 3 | /L (1 / [length] ** 3) | ['Chow_2012:abstract'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Chow_2012:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 49.5 | ['Chow_2012:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Chow_2012:abstract', 'Chow_2012:abstract'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Chow_2012:abstract', 'Chow_2012:abstract'] |
+| C5_dimension_Q36 | pass | [mass] / [length] ** 3 |  | ['Chow_2012:abstract', 'Chow_2012:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | /L (1 / [length] ** 3) | ['Chow_2012:abstract', 'Chow_2012:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Chow_2012:abstract', 'Chow_2012:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 49.5 | ['Chow_2012:abstract', 'Chow_2012:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 49.5 L/h | ['Chow_2012:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 49.5 L/h | ['Chow_2012:abstract', 'Chow_2012:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -164,4 +153,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Briluzole%5D%20Riluzole_Chow2012_reference&body=Drug%3A%20riluzole%0ARecord%3A%20Riluzole_Chow2012_reference%0APaper%3A%20Chow_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_riluzole/Riluzole_Chow2012_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 04:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:04 UTC</sub>

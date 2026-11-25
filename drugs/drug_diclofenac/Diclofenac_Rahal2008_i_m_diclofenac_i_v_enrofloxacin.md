@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
-> The absorption half-life parameter is recorded with a rate unit instead of time, causing a dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit h-1 (1 / [time]) vs [time].
 
 <div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Rahal2008_i_m_diclofenac_i_v_enrofloxacin" status="rejected" stale="false" population="sheep" measured-compound="diclofenac" parameterization="apparent" topology="1C"></div>
 
@@ -63,13 +63,13 @@ Rahal A, Kumar A, Ahmad AH, Malik JK. Pharmacokinetics of diclofenac and its int
 
 ### Reviewer guidance
 
-**The absorption half-life parameter is recorded with a rate unit instead of time, causing a dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit h-1 (1 / [time]) vs [time].**
 
-The parameter identified as the absorption phase half-life has a value of 23.97 with a unit of h-1, whereas a half-life must have units of time. This dimensional conflict indicates the recorded value likely represents a rate constant rather than the half-life itself. No other parameters show similar unit inconsistencies. Extracted — diclofenac: A2 7.18 µg mL-1, t1/2ka 24 h-1, kel 0.37 h-1, t1/2α 0.04 h, t1/2β 2.09 h, AUC 20.4 µg h mL-1, AUMC 60 µg h2 mL-1, MRT 2.81 h, … (+7).
+A reported unit could not be converted (A2, t1/2ka , AUMC and Fab), so that value has no SI equivalent. Extracted — diclofenac: A2 7.18 µg mL-1, t1/2ka 24 h-1, kel 0.37 h-1, t1/2α 0.04 h, t1/2β 2.09 h, AUC 20.4 µg h mL-1, AUMC 60 µg h2 mL-1, MRT 2.81 h, … (+7).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[b].parameter_id`: this record has Q416, the second reading Q86; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

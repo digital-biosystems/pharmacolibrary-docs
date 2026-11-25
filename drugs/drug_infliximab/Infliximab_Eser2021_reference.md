@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The infliximab model record was held back because the second reader disputed the baseline clearance covariate effects and the covariate scenarios were not simulated.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="infliximab" model-id="Infliximab_Eser2021_reference" status="needs_review" stale="false" population="adults with rheumatoid arthritis and ankylosing spondylitis" measured-compound="infliximab" parameterization="mechanistic" topology="2C"></div>
 
@@ -63,13 +63,13 @@ Eser A, Reinisch W, Schreiber S, Ahmad T, Boulos S, Mould DR. Increased Inductio
 
 ### Reviewer guidance
 
-**The infliximab model record was held back because the second reader disputed the baseline clearance covariate effects and the covariate scenarios were not simulated.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The cross-check failed because the second reader disagreed on the specific values for the weight, albumin, sex, and anti-drug antibody effects on baseline clearance, recording them as null while the primary record lists values like 0.729 and -0.32. Additionally, the covariate scenarios were not exercised, meaning the model was only simulated for a reference individual rather than testing the defined covariate impacts. Extracted — infliximab: CL 0.266 L/day, V1 2.79 L, Q 0.0557 L/day, V2 0.898 L.
+The base model was simulated, not the covariate effects the record defines. Extracted — infliximab: CL 0.266 L/day, V1 2.79 L, Q 0.0557 L/day, V2 0.898 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[baseline cl].covariate_forms`: this record has ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'], the second reading ['linear_fractional', 'linear_fractional']; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -165,7 +165,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.667 (18 of 27 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (18 of 27 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

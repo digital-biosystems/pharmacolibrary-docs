@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> The record was rejected because glyceryl trinitrate’s bioavailability (Fab 0.015) is paired with bioavailability-adjusted clearance (CL/F 16) and volume (V/F 6.5), creating double correction.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="glyceryl trinitrate" model-id="GlycerylTrinitrate_Lee1990_reference" status="rejected" stale="false" population="conscious dogs" measured-compound="glyceryl_trinitrate" parameterization="apparent" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Lee FW, Salmonson T, Metzler CH, Benet LZ. Pharmacokinetics and pharmacodynamics
 
 ### Reviewer guidance
 
-**The record was rejected because glyceryl trinitrate’s bioavailability (Fab 0.015) is paired with bioavailability-adjusted clearance (CL/F 16) and volume (V/F 6.5), creating double correction.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-CL/F and V/F are defined as adjusted for bioavailability, while Fab separately gives the fraction reaching systemic circulation. Only the abstract was read, so its summary statistics stand in for a fitted model. Extracted — glyceryl trinitrate: Fab 0.015 mg/kg, t1/2z 45 min, CL/F 16 ml/min/kg, V/F 6.5 L, kabs 0.02 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — glyceryl trinitrate: Fab 0.015 mg/kg, t1/2z 45 min, CL/F 16 ml/min/kg, V/F 6.5 L, kabs 0.02 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ka was left at library defaults rather than using estimates from the paper, making the dacarbazine absorption model unsupported by source data.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Middleton2000_reference" status="needs_review" stale="false" population="" measured-compound="dacarbazine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Middleton MR, Grob JJ, Aaronson N, Fierlbeck G, Tilgen W, Seiter S et al. Random
 
 ### Reviewer guidance
 
-**Ka was left at library defaults rather than using estimates from the paper, making the dacarbazine absorption model unsupported by source data.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The model uses one-compartment oral PK with CL/F = 189.0 mL/min and V/F = 28.7 L, but ka and Tlag were not reported in Middleton_2000. The record explicitly substitutes library defaults for ka, an invented absorption assumption that contradicts the apparent /F parameterization. Since the source provides no ka estimate, the absorption rate constant remains a placeholder rather than a fitted or justified value. Extracted — dacarbazine: CL/F 189 mL/min, V/F 28.7 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — dacarbazine: CL/F 189 mL/min, V/F 28.7 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

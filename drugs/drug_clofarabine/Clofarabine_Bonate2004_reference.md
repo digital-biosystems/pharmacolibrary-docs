@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clofarabine’s normalized clearance (0.75 kg) and distribution volume (1.0 kg) were recorded with mass units, conflicting with their pharmacokinetic dimensions and leading to rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q354 unit kg ([mass]) vs [length] ** 3 / [time]; Q61 unit kg ([mass]) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="clofarabine" model-id="Clofarabine_Bonate2004_reference" status="rejected" stale="false" population="pediatric patients with acute leukemias" measured-compound="clofarabine" parameterization="mechanistic" topology="3C"></div>
 
@@ -51,13 +51,13 @@ Bonate PL, Craig A, Gaynon P, Gandhi V, Jeha S, Kadota R et al. Population pharm
 
 ### Reviewer guidance
 
-**Clofarabine’s normalized clearance (0.75 kg) and distribution volume (1.0 kg) were recorded with mass units, conflicting with their pharmacokinetic dimensions and leading to rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q354 unit kg ([mass]) vs [length] ** 3 / [time]; Q61 unit kg ([mass]) vs [length] ** 3.**
 
-The clearance term should have volume-per-time dimensions and the distribution volume should have volume dimensions, but both are given in kg. Only the abstract was read, so summary statistics stood in for a fitted model; the second reader did not identify these terms or the 40 kg reference patient, and reported an average predicted concentration of 11.6 where this record has none. Extracted — clofarabine: CLnorm 0.75 kg, V 1 kg, CL 32.8 L/h, V1 115 L, Q 20.5 L/h, V2 94.5 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clofarabine: CLnorm 0.75 kg, V 1 kg, CL 32.8 L/h, V1 115 L, Q 20.5 L/h, V2 94.5 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average predicted concentration: this record has none, the second reading 11.6; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

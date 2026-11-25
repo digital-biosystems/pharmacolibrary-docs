@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the reported fraction of the dose excreted in urine has a mass dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q91 unit % (dimensionless) vs [mass].
 
 <div class="pk-model-meta" hidden drug="dextran" model-id="Dextran_Schwarz1981_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="dextran 1" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Schwarz JA, Koch W, Bühler V, Kaumeier S. Pharmacokinetics of low molecular (mo
 
 ### Reviewer guidance
 
-**The record was rejected because the reported fraction of the dose excreted in urine has a mass dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q91 unit % (dimensionless) vs [mass].**
 
-The value of 75 % for the mean cumulative asymptotic elimination of dextran in the urine is dimensionless, but the parameter definition requires a mass unit. This structural dimension conflict caused the review to fail. Additionally, the record was built from the abstract only, so reported summary statistics stood in for a fitted model. Extracted — dextran 1: Ae 75 %, CLR 137 ml/min, CL 187 ml/min, t1/2z 24 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is dextran's own; they describe dextran 1. Extracted — dextran 1: Ae 75 %, CLR 137 ml/min, CL 187 ml/min, t1/2z 24 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[mean cumulative asymptotic elimination of dextran in the urine].parameter_id`: this record has Q91, the second reading Q44. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

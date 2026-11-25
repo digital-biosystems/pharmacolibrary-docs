@@ -33,7 +33,7 @@ Tripelennamine is a first-generation antihistamine used to treat allergies such 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="horse" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: cross_check_disputed</sub> | [Wasfi_2000_reference](drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Wasfi IA et al., Comparative disposition of tripelennami…, Journal of veterinary pharm… (2000) | [10.1046/j.1365-2885.2000.00261.x](https://doi.org/10.1046/j.1365-2885.2000.00261.x) |
+| <span class="pk-rf" hidden data-species="horse" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span><br><sub>blocking: cross_check_disputed</sub> | [Wasfi_2000_reference](drugs/drug_tripelennamine/Tripelennamine_Wasfi2000_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Wasfi IA et al., Comparative disposition of tripelennami…, Journal of veterinary pharm… (2000) | [10.1046/j.1365-2885.2000.00261.x](https://doi.org/10.1046/j.1365-2885.2000.00261.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +47,7 @@ Tripelennamine is a first-generation antihistamine used to treat allergies such 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:13 | 1:07 | 1/0/0 | 0/0/0 | 0/0/0 | 25,846/4,303 | openai / gpt-6-luna | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 06:48 | 0:58 | 1/0/0 | 0/0/0 | 0/0/0 | 30,675/7,628 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -62,21 +62,32 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Wasfi_2000.pdf` | Wasfi IA et al., Comparative disposition of tripelennami…, Journal of veterinary pharm… (2000) | popPK | 10 | [10.1046/j.1365-2885.2000.00261.x](https://doi.org/10.1046/j.1365-2885.2000.00261.x) | [11110101](https://pubmed.ncbi.nlm.nih.gov/11110101) | Numeric disposition parameters for tripelennamine are reported directly for horses and camels. |
+| `Wasfi_2000.pdf` | Wasfi IA et al., Comparative disposition of tripelennami…, Journal of veterinary pharm… (2000) | popPK | 10 | [10.1046/j.1365-2885.2000.00261.x](https://doi.org/10.1046/j.1365-2885.2000.00261.x) | [11110101](https://pubmed.ncbi.nlm.nih.gov/11110101) | The study reports quantitative PK parameters (CL, Vss, Vc, t1/2) for tripelennamine in horses and camels with numeric values provided in the abstract. |
 | `He_2002.pdf` | He N et al., Inhibitory effects of H1-antihistamines…, European journal of clinica… (2002) | pgx | 8 | [10.1007/s00228-001-0399-0](https://doi.org/10.1007/s00228-001-0399-0) | [11936702](https://www.ncbi.nlm.nih.gov/pubmed/11936702) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-10-07 15:12 UTC</sub>
+<sub>queue written 2026-11-24 06:47 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Hamelin_1998 | not_relevant | 0 | 0 | The study measures tripelennamine inhibition of CYP2D6 in vitro, not a gene variant or phenotype effect on tripelennamine PK or PD. |
-| PGx | He_2002 | not_relevant | 0 | 0 | The study tests tripelennamine’s in vitro inhibition of CYP2D6, not how a genetic variant or phenotype changes a PK/PD parameter of tripelennamine. |
+| popPK | Hamelin_1998 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP2D6 inhibition and does not report pharmacokinetic disposition parameters (CL, V, t1/2) for tripelennamine. |
+| PGx | Hamelin_1998 | not_relevant | 2 | 0 | The study characterizes in vitro CYP2D6 inhibition by antihistamines (including tripelennamine) but does not report pharmacogenomic effects (gene variants/genotypes) on the PK or PD parameters of tripelennamine itself. |
+| popPK | He_2002 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of CYP inhibition by tripelennamine, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | He_2002 | not_relevant | 0 | 0 | The paper describes the inhibitory effects of H1-antihistamines on CYP enzymes, but does not report any pharmacogenomic variation (gene variants) affecting the PK or PD of tripelennamine. |
+| popPK | Samuelov_1979 | irrelevant | 0 | 0 | The study investigates in vitro drug release kinetics from ethylcellulose-polyethylene glycol films, not in vivo pharmacokinetic disposition parameters for tripelennamine. |
+| PGx | Samuelov_1979 | not_relevant | 0 | 0 | The paper reports physical drug release kinetics from films, not pharmacogenomic effects on PK/PD parameters. |
+| popPK | Sansone_1986 | irrelevant | 0 | 0 | The study is a behavioral pharmacology investigation in mice that does not report any pharmacokinetic parameters for tripelennamine. |
+| PGx | Sansone_1986 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (morphine and tripelennamine) in a standard mouse strain without investigating any genetic variants or genotypes. |
+| popPK | Sansone_1987 | irrelevant | 0 | 0 | The paper is a behavioral pharmacology study in mice focusing on locomotor activity interactions, not a pharmacokinetic study. |
+| PGx | Sansone_1987 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions in mice, not pharmacogenomic effects (gene variants) on PK or PD. |
+| popPK | Walker_1985 | irrelevant | 0 | 0 | The paper describes a liquid chromatographic assay method for dosage forms and reports recovery percentages, not pharmacokinetic parameters. |
+| PGx | Walker_1985 | not_relevant | 0 | 0 | The paper describes a liquid chromatographic assay method for various drugs including tripelennamine, but it does not report any pharmacogenomic studies or gene-based effects on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Wasfi_2000 | not_relevant | 0 | 0 | The paper compares pharmacokinetics in different animal species (horses and camels) and does not investigate gene variants or genotypes. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btripelennamine%5D&body=Drug%3A%20tripelennamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tripelennamine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 15:12 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 06:47 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper does not model allopurinol, despite listing allopurinol clearance and volume parameters.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Jonkman1984_reference" status="rejected" stale="false" population="healthy adults and asthmatic patients" measured-compound="allopurinol" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Jonkman JH, Upton RA. Pharmacokinetic drug interactions with theophylline. Clini
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper does not model allopurinol, despite listing allopurinol clearance and volume parameters.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The analyte identity check failed because the source text indicates the paper concerns a different drug rather than allopurinol. A second reader disputed the verdict, noting a discrepancy in the clearance value (0.043 versus 0.0437 L/h/kg). Additionally, the second reader extracted specific numerical values for several parameters that had no values recorded in this file. Extracted — allopurinol: CL 0.043 L/h/kg, V 22.8 L.
+Extracted — allopurinol: CL 0.043 L/h/kg, V 22.8 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.043, the second reading 0.0437; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check contradicted by a second reader: verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

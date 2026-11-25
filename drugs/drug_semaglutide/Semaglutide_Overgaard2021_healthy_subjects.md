@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The semaglutide model was held back because intercompartmental rate constants were missing and defaulted, rather than estimated from the paper.
+> K13, k31 use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2021_healthy_subjects" status="needs_review" stale="false" population="healthy volunteers and subjects with renal or hepatic impairment and type 2 diabetes" measured-compound="semaglutide" parameterization="mechanistic" topology="3C"></div>
 
@@ -56,13 +56,13 @@ Overgaard RV, Navarria A, Ingwersen SH, Bækdal TA, Kildemoes RJ. Clinical Pharm
 
 ### Reviewer guidance
 
-**The semaglutide model was held back because intercompartmental rate constants were missing and defaulted, rather than estimated from the paper.**
+**K13, k31 use library defaults, not estimates from this paper; t6_deviations.**
 
-The record defines a 3-compartment structure with an intercompartmental clearance of 0.28 L/h but omits the specific forward and reverse rate constants. Since these values were not extracted, they were left at generic placeholder levels, meaning the simulated profile relies on assumptions not supported by the Overgaard_2021 data. These unreported parameters affect the predicted drug distribution but lack explicit justification in the source study. Extracted — semaglutide: CL 0.033 L/h, V1 3.4 L, V2 3.9 L, V 7.2 L, Q 0.28 L/h, kabs 2.09 h−1, Fab 0.76 %, t1/2z 158 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — semaglutide: CL 0.033 L/h, V1 3.4 L, V2 3.9 L, V 7.2 L, Q 0.28 L/h, kabs 2.09 h−1, Fab 0.76 %, t1/2z 158 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The intrinsic clearance of 0.0253 for warfarin had an invalid unit, preventing valid dimensional analysis.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit S ([time]) vs [length] ** 3 / [time] / [mass].
 
 <div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Ohtani2016_s_wf" status="rejected" stale="false" population="virtual populations (European Caucasian and Japanese)" measured-compound="(S)-warfarin" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Ohtani H, Hakoda R, Imaoka A, Akiyoshi T. In silico evaluation of warfarin-bucol
 
 ### Reviewer guidance
 
-**The intrinsic clearance of 0.0253 for warfarin had an invalid unit, preventing valid dimensional analysis.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit S ([time]) vs [length] ** 3 / [time] / [mass].**
 
-The intrinsic clearance parameter for warfarin lists a value of 0.0253 with the unit 'S'. This unit cannot be interpreted as a valid volume per time measure, so the parameter lacks a physically meaningful value. Additionally, reviewers disagreed on whether the volume of distribution of 3.0 L/kg applies to (S)-warfarin or the parent compound warfarin. Extracted — warfarin: MW 308 g/mol, Vss 0.114 L/kg, CLint 0.0253 S; (S)-warfarin: V 3 l/kg, CL 0.348 L/h, kabs 0.214 1/h, tlag 1.29 h.
+A reported unit could not be converted (CLint), so that value has no SI equivalent. Extracted — warfarin: MW 308 g/mol, Vss 0.114 L/kg, CLint 0.0253 S; (S)-warfarin: V 3 l/kg, CL 0.348 L/h, kabs 0.214 1/h, tlag 1.29 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has (S)-warfarin, the second reading warfarin; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

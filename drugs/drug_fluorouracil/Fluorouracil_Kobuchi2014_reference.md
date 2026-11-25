@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The review rejected the fluorouracil record because the maximum metabolic rate Vmax unit could not be converted to SI, leaving the parameter without a valid value.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg·kg−1·hr−1 ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2014_reference" status="rejected" stale="false" population="rats" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Kobuchi S, Ito Y, Hayakawa T, Nishimura A, Shibata N, Takada K et al. Pharmacoki
 
 ### Reviewer guidance
 
-**The review rejected the fluorouracil record because the maximum metabolic rate Vmax unit could not be converted to SI, leaving the parameter without a valid value.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg·kg−1·hr−1 ([mass] / [time]) vs [mass] / [time].**
 
-The record lists Vmax as 55.7 mg·kg−1·hr−1, a unit that lacks a defined conversion to standard international units, so the model reached the builder without an SI value. The findings flag a dimension mismatch on this structural parameter, noting the unit conflict. Other parameters, such as k12 (6.21 h−1) and Km (13.7 μg·mL−1), do not share this specific conversion issue. Extracted — fluorouracil: k12 6.21 h−1, k21 3.56 h−1, Vmax 55.7 mg·kg−1·hr−1, Km 13.7 μg·mL−1, V 0.34 L·kg−1, kabs 0.13 1/h.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — fluorouracil: k12 6.21 h−1, k21 3.56 h−1, Vmax 55.7 mg·kg−1·hr−1, Km 13.7 μg·mL−1, V 0.34 L·kg−1, kabs 0.13 1/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

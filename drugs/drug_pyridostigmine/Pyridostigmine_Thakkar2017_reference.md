@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07A&quot;,&quot;href&quot;:&quot;atc/N07A.md&quot;},{&quot;label&quot;:&quot;pyridostigmine&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/&quot;},{&quot;label&quot;:&quot;Thakkar_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pyridostigmine_Seng2009_reference&quot;,&quot;label&quot;:&quot;Seng_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/Pyridostigmine_Seng2009_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pyridostigmine_Hosseini2018_reference&quot;,&quot;label&quot;:&quot;Hosseini_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/Pyridostigmine_Hosseini2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pyridostigmine_Thakkar2017_reference&quot;,&quot;label&quot;:&quot;Thakkar_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Seng_2009_AChE&quot;,&quot;label&quot;:&quot;Seng_2009 \u00b7 AChE&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/pd_Seng_2009_AChE.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pyridostigmine_Seng2009_reference&quot;,&quot;label&quot;:&quot;Seng_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/Pyridostigmine_Seng2009_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pyridostigmine_Hosseini2018_reference&quot;,&quot;label&quot;:&quot;Hosseini_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/Pyridostigmine_Hosseini2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pyridostigmine_Thakkar2017_reference&quot;,&quot;label&quot;:&quot;Thakkar_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper studies 3,4-diaminopyridine, where pyridostigmine is merely a covariate, not the modeled drug.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="pyridostigmine" model-id="Pyridostigmine_Thakkar2017_reference" status="rejected" stale="false" population="" measured-compound="pyridostigmine" parameterization="apparent" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Thakkar N, Guptill JT, Aleš K, Jacobus D, Jacobus L, Peloquin C et al. Populati
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper studies 3,4-diaminopyridine, where pyridostigmine is merely a covariate, not the modeled drug.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source text identifies the study as a population PK analysis of 3,4-diaminopyridine and its metabolite. Consequently, the extracted clearance and volume parameters do not describe pyridostigmine's pharmacokinetics. Additionally, the model builder defaulted the absorption lag time and intercompartmental rate constants instead of using explicit estimates. Extracted — pyridostigmine: CL/F 90 L/h, V1/F 24 L, Q/F 111 L/h, kabs 0.9 h−1.
+Extracted — pyridostigmine: CL/F 90 L/h, V1/F 24 L, Q/F 111 L/h, kabs 0.9 h−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -119,14 +119,14 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|
-| T0_analyte_identity | fail | pyridostigmine (or metabolite) | paper about another drug |  | paper subject is not pyridostigmine: the paper is about another drug; this one is a co-medication or covariate: This is a population PK study of 3,4-diaminopyridine (and its metabolite), not pyridostigmine; pyridostigmine appears only as a comedication covariate. |
+| T0_analyte_identity | fail | pyridostigmine (or metabolite) | paper about another drug |  | paper subject is not pyridostigmine: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=pyridostigmine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (6 of 6 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -154,4 +154,4 @@ _All readers agree on the compared fields of this record._
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpyridostigmine%5D%20Pyridostigmine_Thakkar2017_reference&body=Drug%3A%20pyridostigmine%0ARecord%3A%20Pyridostigmine_Thakkar2017_reference%0APaper%3A%20Thakkar_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pyridostigmine/Pyridostigmine_Thakkar2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 02:11 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 15:28 UTC</sub>

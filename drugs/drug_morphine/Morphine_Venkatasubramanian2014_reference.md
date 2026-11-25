@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02A&quot;,&quot;href&quot;:&quot;atc/N02A.md&quot;},{&quot;label&quot;:&quot;morphine&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/&quot;},{&quot;label&quot;:&quot;Venkatasubramanian_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Venkatasubramanian2014_reference&quot;,&quot;label&quot;:&quot;Venkatasubramanian_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Venkatasubramanian2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Morphine_Andersen1986_reference&quot;,&quot;label&quot;:&quot;Andersen_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Juul2016_reference&quot;,&quot;label&quot;:&quot;Juul_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Juul2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Romberg2004_reference&quot;,&quot;label&quot;:&quot;Romberg_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Romberg2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Morphine_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Andersen1986_reference&quot;,&quot;label&quot;:&quot;Andersen_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Andersen1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Juul2016_reference&quot;,&quot;label&quot;:&quot;Juul_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Juul2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Romberg2004_reference&quot;,&quot;label&quot;:&quot;Romberg_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Romberg2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Morphine_Venkatasubramanian2014_reference&quot;,&quot;label&quot;:&quot;Venkatasubramanian_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Venkatasubramanian2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Morphine_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_morphine/Morphine_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # morphine — `Morphine_Venkatasubramanian2014_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="morphine" model-id="Morphine_Venkatasubramanian2014_reference" status="simulated" stale="false" population="children undergoing outpatient adenotonsillectomy" measured-compound="morphine" parameterization="mechanistic" topology="general_linear"></div>
+> cross_check_disputed; x1_cross_check.
+
+<div class="pk-model-meta" hidden drug="morphine" model-id="Morphine_Venkatasubramanian2014_reference" status="needs_review" stale="false" population="children undergoing outpatient adenotonsillectomy" measured-compound="morphine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Venkatasubramanian R, Fukuda T, Niu J, Mizuno T, Chidambaran V, Vinks AA et al. ABCC3 and OCT1 genotypes influence pharmacokinetics of morphine in children. Pharmacogenomics 15(10):1297–1309 (2014).
@@ -27,6 +29,8 @@ Venkatasubramanian R, Fukuda T, Niu J, Mizuno T, Chidambaran V, Vinks AA et al. 
 <figure class="pk-models-diagram"><img src="drugs/drug_morphine/Morphine_Venkatasubramanian2014_reference/Morphine_Venkatasubramanian2014_reference.svg" alt="Morphine_Venkatasubramanian2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL | CL | 1.3 | L/h |
@@ -42,7 +46,7 @@ Venkatasubramanian R, Fukuda T, Niu J, Mizuno T, Chidambaran V, Vinks AA et al. 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.867). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +56,13 @@ Venkatasubramanian R, Fukuda T, Niu J, Mizuno T, Chidambaran V, Vinks AA et al. 
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**cross_check_disputed; x1_cross_check.**
 
-<sub>reviewed by rule template (no LLM)</sub>
+Extracted — morphine: CL 1.3 L/h, V1 6.28 L, Q 2.1 L/h, V2 29.3 L; morphine-3-glucuronide: CLfm 0.34 L/h, V 23 L, CL 0.29 L/h; morphine-6-glucuronide: CLfm 0.045 L/h, V 30 L, CL 0.097 L/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has morphine → morphine-6-glucuronide (metabolism); morphine → morphine-3-glucuronide (metabolism), the second reading morphine → morphine-3-glucuronide (metabolism); morphine → morphine-6-glucuronide (metabolism); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -108,6 +116,28 @@ Venkatasubramanian R, Fukuda T, Niu J, Mizuno T, Chidambaran V, Vinks AA et al. 
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.867 (13/15 fields) | 2 |
+
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['morphine', 'morphine-6-glucuronide', 'metabolism'], ['morphine', 'morphine-3-glucuronide', 'metabolism']] | [['morphine', 'morphine-3-glucuronide', 'metabolism'], ['morphine', 'morphine-6-glucuronide', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[kdelay]` |  | 0.069 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -137,22 +167,22 @@ Venkatasubramanian R, Fukuda T, Niu J, Mizuno T, Chidambaran V, Vinks AA et al. 
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_metabolite_built[morphine-3-glucuronide] | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.023, 'CL': 8.055555555555555e-08, 'formation': 9.444444444444445e-08} | morphine-3-glucuronide = compartment M2 with its own numbers |
-| T3_metabolite_built[morphine-6-glucuronide] | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.03, 'CL': 2.6944444444444443e-08, 'formation': 1.25e-08} | morphine-6-glucuronide = compartment M1 with its own numbers |
-| T3_metabolite_output[morphine-3-glucuronide] | pass |  | 0.0002786 | C_M2 (morphine-3-glucuronide) must rise above 0 when the parent is dosed |
-| T3_metabolite_output[morphine-6-glucuronide] | pass |  | 3.329e-05 | C_M1 (morphine-6-glucuronide) must rise above 0 when the parent is dosed |
-| T3_molar_mass[morphine-3-glucuronide] | pass |  | {'MW': 0.28533769999999997, 'MW_m2': 0.4615} | formation is molecule-for-molecule |
-| T3_molar_mass[morphine-6-glucuronide] | pass |  | {'MW': 0.28533769999999997, 'MW_m1': 0.4615} | formation is molecule-for-molecule |
-| T3_output_variable | pass | C_central (measured=morphine) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 8 scholar param(s) emitted or defaulted | 8 covered | all structural parameters accounted for |
-| T3_shared_parameters | skipped |  |  | parent–metabolite template: every compound has its own slot |
-| T3_topology_template | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | skipped |  |  | no second reading of this record |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_metabolite_built[morphine-3-glucuronide] | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.023, 'CL': 8.055555555555555e-08, 'formation': 9.444444444444445e-08} |  | morphine-3-glucuronide = compartment M2 with its own numbers |
+| T3_metabolite_built[morphine-6-glucuronide] | pass | own V, CL and formation clearance &gt; 0 | {'V': 0.03, 'CL': 2.6944444444444443e-08, 'formation': 1.25e-08} |  | morphine-6-glucuronide = compartment M1 with its own numbers |
+| T3_metabolite_output[morphine-3-glucuronide] | pass |  | 0.0002786 |  | C_M2 (morphine-3-glucuronide) must rise above 0 when the parent is dosed |
+| T3_metabolite_output[morphine-6-glucuronide] | pass |  | 3.329e-05 |  | C_M1 (morphine-6-glucuronide) must rise above 0 when the parent is dosed |
+| T3_molar_mass[morphine-3-glucuronide] | pass |  | {'MW': 0.28533769999999997, 'MW_m2': 0.4615} |  | formation is molecule-for-molecule |
+| T3_molar_mass[morphine-6-glucuronide] | pass |  | {'MW': 0.28533769999999997, 'MW_m1': 0.4615} |  | formation is molecule-for-molecule |
+| T3_output_variable | pass | C_central (measured=morphine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 8 scholar param(s) emitted or defaulted | 8 covered |  | all structural parameters accounted for |
+| T3_shared_parameters | skipped |  |  |  | parent–metabolite template: every compound has its own slot |
+| T3_topology_template | pass | parent_metabolite_central → PK_3M_9C* | PK_3M_9C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.867 (13 of 15 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.867 | cross-check contradicted by a second reader: verdict disputed; agreement 0.867 (13 of 15 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The famotidine oral clearance value of 11.8 L/h was disputed, as a second reader extracted 12.97 L/h.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="famotidine" model-id="Famotidine_Ikawa2007_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="famotidine" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Ikawa K, Shimatani T, Hayato S, Morikawa N, Tazuma S. Pharmacokinetic and pharma
 
 ### Reviewer guidance
 
-**The famotidine oral clearance value of 11.8 L/h was disputed, as a second reader extracted 12.97 L/h.**
+**cross_check_disputed; x1_cross_check.**
 
-A cross-check failed because the second reader disagreed with the recorded parameter values. Specifically, the apparent clearance (CL/F) of 11.8 L/h conflicted with the reader's value of 12.97 L/h. Additionally, the second reader identified different values for the volume of distribution and other unspecified parameters. Extracted — famotidine: CL/F 11.8 l/h, V/F 172 l, kabs 0.956 1/h, tlag 0.745 h.
+Extracted — famotidine: CL/F 11.8 l/h, V/F 172 l, kabs 0.956 1/h, tlag 0.745 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 11.8, the second reading 12.97; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.667 (8 of 12 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (8 of 12 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

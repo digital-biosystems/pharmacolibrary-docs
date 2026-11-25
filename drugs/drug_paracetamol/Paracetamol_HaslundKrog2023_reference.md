@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paracetamol clearance parameter is labeled as a specific neonate's value rather than a population parameter, and the record relies on abstract-only data.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q34 unit μmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_HaslundKrog2023_reference" status="rejected" stale="false" population="neonates" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Haslund-Krog S, Barry JM, Birnbaum AK, Dalhoff K, Brink Henriksen T, Sherwin CMT
 
 ### Reviewer guidance
 
-**The paracetamol clearance parameter is labeled as a specific neonate's value rather than a population parameter, and the record relies on abstract-only data.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q34 unit μmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The clearance parameter is explicitly labeled 'former 27 weeks postmenstrual age with a postnatal age of 10 days,' which describes a single patient rather than a population estimate. Additionally, the record was built from the abstract alone, so the reported summary statistics stand in for a fitted model. A second reader also disagreed on the extraction of median steady-state concentration and clearance values. Extracted — paracetamol: Css 50.3 μmol/L, t1/2z 3.55 h, CL 0.035 l.min−1, V 6.35 liters, kabs 9.76 h -1, tlag 4.2 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — paracetamol: Css 50.3 μmol/L, t1/2z 3.55 h, CL 0.035 l.min−1, V 6.35 liters, kabs 9.76 h -1, tlag 4.2 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of median steady-state concentration: this record has none, the second reading 50.3; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

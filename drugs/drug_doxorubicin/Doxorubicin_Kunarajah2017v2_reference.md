@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The doxorubicinol formation clearance was rejected because its unit, 'Qm', is not a standard pharmacokinetic unit and cannot be converted to standard SI units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q370 unit Qm ([length]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Kunarajah2017v2_reference" status="rejected" stale="false" population="children with cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -56,13 +56,13 @@ Kunarajah K, Hennig S, Norris RLG, Lobb M, Charles BG, Pinkerton R et al. Popula
 
 ### Reviewer guidance
 
-**The doxorubicinol formation clearance was rejected because its unit, 'Qm', is not a standard pharmacokinetic unit and cannot be converted to standard SI units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q370 unit Qm ([length]) vs [length] ** 3 / [time].**
 
-The formation clearance of doxorubicinol is listed with the unit 'Qm', which is not a recognized pharmacokinetic unit and thus cannot be converted to standard SI units. This prevented the calculation of the parameter's value in standard terms, leading to a dimension mismatch. Additionally, a second reader disagreed on the existence of the metabolite link and associated parameters. Extracted — doxorubicin: CL 58.7 L/h/1.8 m², V1 32.2 L/1.8 m², Q 35.8 L/h/1.8 m², Q2 65.1 L/h/1.8 m²; doxorubicinol: CL 19.9 L/h/1.8 m², V 508 L/1.8 m², CLfm 32.1 Qm.
+A reported unit could not be converted (CL, V1, Q and Q2), so that value has no SI equivalent. Extracted — doxorubicin: CL 58.7 L/h/1.8 m², V1 32.2 L/1.8 m², Q 35.8 L/h/1.8 m², Q2 65.1 L/h/1.8 m²; doxorubicinol: CL 19.9 L/h/1.8 m², V 508 L/1.8 m², CLfm 32.1 Qm.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has doxorubicin → doxorubicinol (metabolism), the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

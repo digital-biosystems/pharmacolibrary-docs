@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;clozapine&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/&quot;},{&quot;label&quot;:&quot;Albitar_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clozapine_Geers2022_reference&quot;,&quot;label&quot;:&quot;Geers_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/Clozapine_Geers2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Parker_2001_beta_amplitude&quot;,&quot;label&quot;:&quot;Parker_2001 \u00b7 beta amplitude&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Parker_2001_beta_amplitude.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Parker_2001_theta_amplitude&quot;,&quot;label&quot;:&quot;Parker_2001 \u00b7 theta amplitude&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Parker_2001_theta_amplitude.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Shang_2014_PANSS&quot;,&quot;label&quot;:&quot;Shang_2014 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Shang_2014_PANSS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zeng_1997_cAMP&quot;,&quot;label&quot;:&quot;Zeng_1997 \u00b7 cAMP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Zeng_1997_cAMP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clozapine_Geers2022_reference&quot;,&quot;label&quot;:&quot;Geers_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/Clozapine_Geers2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clozapine_Parker2001_reference&quot;,&quot;label&quot;:&quot;Parker_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/Clozapine_Parker2001_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Shang_2014_PANSS&quot;,&quot;label&quot;:&quot;Shang_2014 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Shang_2014_PANSS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> No volume or clearance — not a compartmental population PK model.
+> The paper reports none of the model's key parameters.
 
 <div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_Albitar2024_reference" status="rejected" stale="false" population="healthy non-smoking volunteers" measured-compound="clozapine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -23,20 +23,17 @@ Albitar O, Harun SN, Sheikh Ghadzi SM. Semi-physiological Pharmacokinetic Model 
 
 **Structure:** parent + metabolite; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| Clozapine: 2-comp Norclozapine: 2-comp Absorption: Semi-physiological | Fab | 2 |  |
-| Clozapine: 2-comp Norclozapine: 2-comp Fraction metabolized prior and post absorption | fm | 0 |  |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,31 +43,19 @@ Albitar O, Harun SN, Sheikh Ghadzi SM. Semi-physiological Pharmacokinetic Model 
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**The paper reports none of the model's key parameters.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of tvcl = theta(3)*(theta(13)**rc)*(theta(14)**rf); clozapine cl in final model ;tvcl = theta(3)*(theta(13)**abcb); clozapine cl in univariate analysis *wt; total liver blood flow tvf1 = theta(12); bioavailability: this record has none, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clozapine: 2-comp norclozapine: 2-comp fraction metabolized prior and post absorption: this record has none, the second reading 0; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | link | source |
-|---|---|---|---|---|---|
-| Clozapine: 2-comp Norclozapine: 2-comp Absorption: Semi-physiological | `Q40` · Fab | 2 |  | llm_confirmed (0.6) | Albitar_2024_table_2:row2:col1, Albitar_2024_table_2:row2:col3, Albitar_2024_table_2:row2:col4 |
-| Clozapine: 2-comp Norclozapine: 2-comp Fraction metabolized prior and post absorption | `Q45` · fm | 0 |  | llm_confirmed (0.6) | Albitar_2024_table_2:row5:col1, Albitar_2024_table_2:row5:col3, Albitar_2024_table_2:row5:col4 |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 
 | label (paper) | Q-code | link |
 |---|---|---|
-| TVCL = THETA(3)*(THETA(13)**RC)*(THETA(14)**RF); CLOZAPINE CL IN FINAL MODEL ;TVCL = THETA(3)*(THETA(13)**ABCB); CLOZAPINE CL IN UNIVARIATE ANALYSIS *WT; TOTAL LIVER BLOOD FLOW TVF1 = THETA(12); BIOAVAILABILITY | Q40 | llm_corrected |
+| BIOAVAILABILITY | Q40 | exact |
 
 ## Departures & gaps
 
@@ -80,37 +65,40 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - column 'reference' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'Clozapine: 1-comp Norclozapine: 1-comp Absorption: Semi-physiological' — extend the ontology if this is a real PK parameter (source ['Albitar_2024_table_2:row0:col3'])
 - dropped unlinked row (NIL): 'Clozapine: 2-comp Norclozapine: 1-comp Absorption: Semi-physiological' — extend the ontology if this is a real PK parameter (source ['Albitar_2024_table_2:row1:col1', 'Albitar_2024_table_2:row1:col3', 'Albitar_2024_table_2:row1:col4'])
+- dropped unlinked row (NIL): 'Clozapine: 2-comp Norclozapine: 2-comp Absorption: Semi-physiological' — extend the ontology if this is a real PK parameter (source ['Albitar_2024_table_2:row2:col1', 'Albitar_2024_table_2:row2:col3', 'Albitar_2024_table_2:row2:col4'])
 - dropped unlinked row (NIL): 'Clozapine: 3-comp Norclozapine: 2-comp Absorption: Semi-physiological' — extend the ontology if this is a real PK parameter (source ['Albitar_2024_table_2:row3:col1', 'Albitar_2024_table_2:row3:col3', 'Albitar_2024_table_2:row3:col4'])
 - dropped unlinked row (NIL): 'Clozapine: 2-comp Norclozapine: 3-comp Absorption: Semi-physiological' — extend the ontology if this is a real PK parameter (source ['Albitar_2024_table_2:row4:col1', 'Albitar_2024_table_2:row4:col3', 'Albitar_2024_table_2:row4:col4'])
-- dropped duplicate Q45 ('Clozapine: 2-comp Norclozapine: 2-comp Fraction metabolized prior absorption and full metabolism after absorption', value '-1') — already have one for this compound
-- dropped duplicate Q45 ('Clozapine: 2-comp Norclozapine: 2-comp Same fraction metabolized prior and post absorption', value '-1') — already have one for this compound
+- dropped unlinked row (NIL): 'Clozapine: 2-comp Norclozapine: 2-comp Fraction metabolized prior and post absorption' — extend the ontology if this is a real PK parameter (source ['Albitar_2024_table_2:row5:col1', 'Albitar_2024_table_2:row5:col3', 'Albitar_2024_table_2:row5:col4'])
+- dropped unlinked row (NIL): 'Clozapine: 2-comp Norclozapine: 2-comp Fraction metabolized prior absorption and full metabolism after absorption' — extend the ontology if this is a real PK parameter (source ['Albitar_2024_table_2:row6:col1', 'Albitar_2024_table_2:row6:col3', 'Albitar_2024_table_2:row6:col4'])
+- dropped unlinked row (NIL): 'Clozapine: 2-comp Norclozapine: 2-comp Same fraction metabolized prior and post absorption' — extend the ontology if this is a real PK parameter (source ['Albitar_2024_table_2:row7:col1', 'Albitar_2024_table_2:row7:col3', 'Albitar_2024_table_2:row7:col4'])
+- documentation only: 'TVCL' → Q22 (CL) comes from ['fig_1:caption', 'fig_1:caption'], not from a located parameter table — not emitted as a model parameter
+- dropped value-less row: 'TOTAL LIVER BLOOD FLOW'
+- documentation only: 'TVF1' → Q40 (Fab) comes from ['fig_1:caption'], not from a located parameter table — not emitted as a model parameter
+- table mostly unlinked (8/8 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); "Needs review" instead of building a model from the residual linked cell(s)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clozapine
 - template fit: none — only the metabolite is modelled — no parent compartment
-- row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 1 linked by role; re-tagged clozapine→parent ×1
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- status held at "Needs review" — not promoted
+- row roles (LLM): model_class=compartmental; 12/12 row label(s) assigned, 3 linked by role; re-tagged clozapine→parent ×2
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
+- table Albitar_2024_table_2: units_need_context
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[bioavailability]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clozapine: 1-comp norclozapine: 1-comp absorption: semi-physiological]` |  | 1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clozapine: 2-comp norclozapine: 2-comp absorption: semi-physiological]` | 2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clozapine: 2-comp norclozapine: 2-comp fraction metabolized prior and post absorption]` | 0 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clozapine: 2-comp norclozapine: 2-comp fraction metabolized prior and post absorption]` |  | 0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvcl = theta(3)*(theta(13)**rc)*(theta(14)**rf); clozapine cl in final model ;tvcl = theta(3)*(theta(13)**abcb); clozapine cl in univariate analysis *wt; total liver blood flow tvf1 = theta(12); bioavailability]` |  |  | only_one_extracted |
 
 </details>
 
@@ -124,7 +112,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | obtained |
 |---|---|---|
-| C0_has_structural_params | pass | 3 |
+| C0_has_structural_params | fail | 0 |
 | C0b_disposition_core | fail |  |
 | C8_topology | pass |  |
 
@@ -150,4 +138,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclozapine%5D%20Clozapine_Albitar2024_reference&body=Drug%3A%20clozapine%0ARecord%3A%20Clozapine_Albitar2024_reference%0APaper%3A%20Albitar_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clozapine/Clozapine_Albitar2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 15:14 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:16 UTC</sub>

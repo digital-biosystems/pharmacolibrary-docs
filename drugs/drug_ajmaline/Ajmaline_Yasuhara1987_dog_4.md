@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Total clearance for ajmaline was rejected because its specific mass-normalized unit was unrecognized, preventing conversion to standard SI units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min-1 (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Yasuhara1987_dog_4" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajma
 
 ### Reviewer guidance
 
-**Total clearance for ajmaline was rejected because its specific mass-normalized unit was unrecognized, preventing conversion to standard SI units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min-1 (1 / [time]) vs 1 / [time].**
 
-The record provides a total clearance of 3.00 ml/min/kg for ajmaline. This unit was not recognized by the system, so it remained unconverted. Consequently, the model could not establish a valid SI value for this structural parameter, leading to rejection. Extracted — ajmaline: V 15 L/kg, λ1 0.21 min-1, k21 0.304 min-1, kel 0.0213 min-1, CL 3 ml/min/kg.
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — ajmaline: V 15 L/kg, λ1 0.21 min-1, k21 0.304 min-1, kel 0.0213 min-1, CL 3 ml/min/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record conflated the 270 mg/L concentration with clearance and misassigned the 120 ml dose to infusion duration, causing dimensional errors.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit ml ([length] ** 3) vs [time].
 
-<div class="pk-model-meta" hidden drug="iopromide" model-id="Iopromide_Hackstein2002_reference" status="rejected" stale="false" population="adult patients undergoing CT" measured-compound="iopromide" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="iopromide" model-id="Iopromide_Hackstein2002_reference" status="rejected" stale="false" population="adult patients" measured-compound="iopromide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hackstein N, Langheinrich AC, Rau WS. Lopromide one-sample clearance as a measure of glomerular filtration rate. Clinical physiology and functional imaging 22(2):99–107 (2002).
@@ -46,13 +46,13 @@ Hackstein N, Langheinrich AC, Rau WS. Lopromide one-sample clearance as a measur
 
 ### Reviewer guidance
 
-**The record conflated the 270 mg/L concentration with clearance and misassigned the 120 ml dose to infusion duration, causing dimensional errors.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit ml ([length] ** 3) vs [time].**
 
-The 120 ml value, representing iopromide dose volume, was incorrectly mapped to infusion duration, triggering a dimension mismatch with time units. A 270 mg/L concentration measurement was misinterpreted as a clearance time point, leading to a second reader disagreement on parameter values. The abstract-only source provided summary statistics that substituted for fitted model parameters, resulting in structural and unit inconsistencies in the record. Extracted — iopromide: Vss 0.242 Lkg(-1), Ct 270 mg/L, D1 120 ml.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — iopromide: Vss 0.242 Lkg(-1), Ct 270 mg/L, D1 120 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of iopromide dose: this record has 120, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -146,4 +146,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biopromide%5D%20Iopromide_Hackstein2002_reference&body=Drug%3A%20iopromide%0ARecord%3A%20Iopromide_Hackstein2002_reference%0APaper%3A%20Hackstein_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iopromide/Iopromide_Hackstein2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 23:00 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:40 UTC</sub>

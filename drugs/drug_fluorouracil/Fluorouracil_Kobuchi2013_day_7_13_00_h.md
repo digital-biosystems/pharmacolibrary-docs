@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The second peripheral compartment is structurally unreachable from the dose, invalidating the 5-fluorouracil model despite reported clearance of 1.04 L·h−1·kg−1.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2013_day_7_13_00_h" status="rejected" stale="false" population="rats with colorectal cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Kobuchi S, Ito Y, Okada K, Imoto K, Kuwano S, Takada K. Pharmacokinetic/pharmaco
 
 ### Reviewer guidance
 
-**The second peripheral compartment is structurally unreachable from the dose, invalidating the 5-fluorouracil model despite reported clearance of 1.04 L·h−1·kg−1.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The review identified an unreachable compartment in the two-compartment structure, meaning there is no valid kinetic path from the administered dose to the peripheral site. Although specific rate constants like k12 (3.54 h−1) and k21 (1.86 h−1) are listed, the topological error prevents the model from simulating drug distribution correctly. This structural flaw resulted in the rejection of the record for 5-fluorouracil in rats with colorectal cancer. Extracted — fluorouracil: kel 4.05 h−1, k12 3.54 h−1, k21 1.86 h−1, AUC∞ 19.3 µg·h·mL−1, CL 1.04 L·h−1·kg−1, V1 0.26 L·kg−1, V2 0.49 L·kg−1, kabs 0.13 1/h.
+Extracted — fluorouracil: kel 4.05 h−1, k12 3.54 h−1, k21 1.86 h−1, AUC∞ 19.3 µg·h·mL−1, CL 1.04 L·h−1·kg−1, V1 0.26 L·kg−1, V2 0.49 L·kg−1, kabs 0.13 1/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

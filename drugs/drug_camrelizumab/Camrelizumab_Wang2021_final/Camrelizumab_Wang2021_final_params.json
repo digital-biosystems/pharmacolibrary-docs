@@ -1,0 +1,33 @@
+{
+ "dose_source": "paper",
+ "model_id": "Camrelizumab_Wang2021_final",
+ "note": "Values for the shared PK_2C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "range",
+ "paper_doses_mg": [
+  70.0,
+  700.0
+ ],
+ "parameters": {
+  "Cl": 2.673611111111111e-09,
+  "F": 1.0,
+  "VdPerKg": 4.3857142857142853e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 7e-05,
+  "k12": 1.5608034744842562e-06,
+  "k21": 1.6522988505747128e-06,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662118
+ },
+ "reference_peaks": {
+  "central.C": 0.01966259027841224
+ },
+ "stop_time": 4233600.0,
+ "template": "PK_2C",
+ "template_fmu": "PK_2C.fmu"
+}

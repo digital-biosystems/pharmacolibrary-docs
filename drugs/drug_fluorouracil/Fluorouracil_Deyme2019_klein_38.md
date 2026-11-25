@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and absorption lag time were left at library defaults instead of being extracted from the fluorouracil model in Deyme_2019.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Deyme2019_klein_38" status="needs_review" stale="false" population="patients with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
@@ -60,13 +60,13 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 ### Reviewer guidance
 
-**Bioavailability and absorption lag time were left at library defaults instead of being extracted from the fluorouracil model in Deyme_2019.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists structural and kinetic parameters for fluorouracil but omits values for bioavailability and lag time. The review flagged these unreported parameters, meaning library placeholders would substitute for estimates not provided in the paper. Additionally, a second reader identified missing metabolic links to metabolites like 5fuh2 that the primary record did not capture. Extracted — fluorouracil: CL 25.2 L/h, V1 5.52 L, V2 124 L, V3 133 L, Vss 262 L, Q 319 L/h, Q2 10.8 L/h, kel 4.56 h-1, … (+4).
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — fluorouracil: CL 25.2 L/h, V1 5.52 L, V2 124 L, V3 133 L, Vss 262 L, Q 319 L/h, Q2 10.8 L/h, kel 4.56 h-1, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading fluorouracil → 5fuh2 (metabolism); fluorouracil → 5fdhu (metabolism); irinotecan → sn38 (metabolism) …; it also differs on 22 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -195,7 +195,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  | no second reading of this record |
-| T1_cmax | reference | skipped |  | 4.623e-05 | non-numeric value |
+| T1_cmax | reference | skipped |  | 4.623e-05 | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

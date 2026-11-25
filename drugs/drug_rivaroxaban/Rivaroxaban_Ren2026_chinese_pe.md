@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because the second reader could not confirm the extracted values for rivaroxaban's clearance, volume of distribution, and absorption rate constant.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="rivaroxaban" model-id="Rivaroxaban_Ren2026_chinese_pe" status="needs_review" stale="false" population="patients with pulmonary embolism" measured-compound="rivaroxaban" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Ren J, Li Y, Zheng X, Wu Z, Shi J, Han X. Population pharmacokinetic and pharmac
 
 ### Reviewer guidance
 
-**The record was held back because the second reader could not confirm the extracted values for rivaroxaban's clearance, volume of distribution, and absorption rate constant.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader marked the apparent clearance (6.13 L/h), central volume of distribution (53.0 L), and absorption rate constant (1.25 /h) as unknown rather than accepting the extracted values. This disagreement resulted in a 0.2 agreement score. Additionally, the absorption lag time was not explicitly estimated and a standard library placeholder value was used. Extracted — rivaroxaban: kabs 1.25 /h, CL/F 6.13 L/h, V/F 53 L.
+Extracted — rivaroxaban: kabs 1.25 /h, CL/F 6.13 L/h, V/F 53 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rivaroxaban, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -158,7 +158,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -45,7 +45,7 @@ Paradisis M, Jiang X, McLachlan AJ, Evans N, Kluckow M, Osborn D. Population pha
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 

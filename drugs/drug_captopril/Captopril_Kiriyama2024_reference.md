@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Captopril's total clearance of 4.21 mL/min and volume of distribution of 54.2 mL were rejected as physiologically implausible for spontaneously hypertensive rats.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="captopril" model-id="Captopril_Kiriyama2024_reference" status="rejected" stale="false" population="spontaneously hypertensive rats" measured-compound="captopril" parameterization="mechanistic" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Kiriyama A, Kimura S, Yamashita S. Exploring the multiple effects of nifedipine 
 
 ### Reviewer guidance
 
-**Captopril's total clearance of 4.21 mL/min and volume of distribution of 54.2 mL were rejected as physiologically implausible for spontaneously hypertensive rats.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The reported total clearance and central volume values fall outside the expected physiological range for the rat population. Additionally, one reported unit could not be converted to standard international units, preventing the parameter from receiving a valid SI value during processing. Extracted — captopril: V 54.2 mL, kel 0.0521 1/min, k12 0.153 1/min, k21 0.0694 1/min, AUC 1.73e+03 ng·min/mL, t1/2z 81.6 min, CL 4.21 mL/min, Vss 395 mL, … (+1).
+A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — captopril: V 54.2 mL, kel 0.0521 1/min, k12 0.153 1/min, k21 0.0694 1/min, AUC 1.73e+03 ng·min/mL, t1/2z 81.6 min, CL 4.21 mL/min, Vss 395 mL, … (+1).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;amprenavir&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/&quot;},{&quot;label&quot;:&quot;Johnson_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amprenavir_Okusanya2007_mean&quot;,&quot;label&quot;:&quot;Okusanya_2007_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Okusanya2007_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amprenavir_Johnson2014_reference&quot;,&quot;label&quot;:&quot;Johnson_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Johnson2014_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amprenavir_Okusanya2007_reference&quot;,&quot;label&quot;:&quot;Okusanya_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Okusanya2007_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amprenavir_Sale2002_reference&quot;,&quot;label&quot;:&quot;Sale_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Sale2002_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amprenavir_Johnson2014_reference&quot;,&quot;label&quot;:&quot;Johnson_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amprenavir/Amprenavir_Johnson2014_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Amprenavir was refused because its recorded apparent oral clearance of 7.86 L/h is actually an atazanavir estimate.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="amprenavir" model-id="Amprenavir_Johnson2014_reference" status="rejected" stale="false" population="" measured-compound="amprenavir" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Johnson DH, Venuto C, Ritchie MD, Morse GD, Daar ES, McLaren PJ et al. Genomewid
 
 ### Reviewer guidance
 
-**Amprenavir was refused because its recorded apparent oral clearance of 7.86 L/h is actually an atazanavir estimate.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper identifies the absorption rate constant (0.47 h−1), volume of distribution (86.7 L), and clearance (7.86 L/h) as atazanavir parameters; amprenavir is only a comparator. Tlag was defaulted, and the apparent parameterization assumed F=1 and Fm=1, with no molar correction. Extracted — amprenavir: CL/F 7.86 L/h, V 86.7 L, kabs 0.47 h−1.
+Extracted — amprenavir: CL/F 7.86 L/h, V 86.7 L, kabs 0.47 h−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -116,14 +116,14 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|
-| T0_analyte_identity | fail | amprenavir (or metabolite) | paper about another drug |  | paper subject is not amprenavir: the paper is about another drug; this one is a co-medication or covariate: The population-PK model and parameters (ka 0.47 h−1, V 86.7 L, CL 7.86 L/h) are for atazanavir, not amprenavir, which is only mentioned once as a comparator dru |
+| T0_analyte_identity | fail | amprenavir (or metabolite) | paper about another drug |  | paper subject is not amprenavir: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=amprenavir) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -151,4 +151,4 @@ _All readers agree on the compared fields of this record._
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamprenavir%5D%20Amprenavir_Johnson2014_reference&body=Drug%3A%20amprenavir%0ARecord%3A%20Amprenavir_Johnson2014_reference%0APaper%3A%20Johnson_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amprenavir/Amprenavir_Johnson2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:08 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:23 UTC</sub>

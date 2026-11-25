@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model was quarantined because the peripheral compartment volume of distribution (V2/F) value was missing.
+> No value for pomalidomide's volume of distribution; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Li2015_reference" status="model_quarantined" stale="false" population="healthy participants and patients with multiple myeloma" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Li Y, Xu Y, Liu L, Wang X, Palmisano M, Zhou S. Population pharmacokinetics of p
 
 ### Reviewer guidance
 
-**The model was quarantined because the peripheral compartment volume of distribution (V2/F) value was missing.**
+**No value for pomalidomide's volume of distribution; the covariate scenarios were not simulated (+2 more).**
 
-The record defines a three-compartment structure including a second peripheral volume (V3/F, 8.45 L) and a covariate for V2/F, yet no value is provided for the primary V2/F parameter. Consequently, the model was held back to prevent the use of a placeholder value. Additionally, the record failed to simulate the defined covariate scenarios and the second reader disagreed on the primary analyte. Extracted — pomalidomide: kabs 1.25 h−1, V2/F 58.3 L, V3/F 8.45 L, Q/F 1.01 L/h, CL/F 8.52 L/h, tlag 0.385 h, CL_ratio 0.913.
+The model was built, but pomalidomide's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — pomalidomide: kabs 1.25 h−1, V2/F 58.3 L, V3/F 8.45 L, Q/F 1.01 L/h, CL/F 8.52 L/h, tlag 0.385 h, CL_ratio 0.913.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pomalidomide, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -181,7 +181,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.867, 0 of 1 reader(s) agree | 0.867 | cross-check disputed by a second reader: verdict disputed, agreement 0.867, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.867 (13 of 15 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.867 | cross-check contradicted by a second reader: verdict disputed; agreement 0.867 (13 of 15 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_t_half_terminal | reference | skipped | 7.5 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">

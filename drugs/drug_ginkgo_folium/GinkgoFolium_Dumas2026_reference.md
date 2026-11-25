@@ -46,7 +46,7 @@ Dumas T, Mehr S, Avila R, Doman A, Kestenberg K, Melamed I. Pharmacokinetic Mode
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 23.7; it also differs on 2 more fields. That field does not shape the model.
 
@@ -124,7 +124,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.667 (6 of 9 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -203,4 +203,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bginkgo_folium%5D%20GinkgoFolium_Dumas2026_reference&body=Drug%3A%20ginkgo_folium%0ARecord%3A%20GinkgoFolium_Dumas2026_reference%0APaper%3A%20Dumas_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ginkgo_folium/GinkgoFolium_Dumas2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 02:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:15 UTC</sub>

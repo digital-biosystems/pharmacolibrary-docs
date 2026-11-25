@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The escitalopram record was held back because an age consistency check was inconclusive and key parameters, such as distribution volume, lack extracted values.
+> C2_center_consistency_age failed (ratio None).
 
 <div class="pk-model-meta" hidden drug="escitalopram" model-id="Escitalopram_Liu2023_reference" status="needs_review" stale="false" population="virtual adults (repository of published escitalopram PPK models)" measured-compound="escitalopram" parameterization="apparent" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Liu X, Ju G, Yang W, Chen L, Xu N, He Q et al. Escitalopram Personalized Dosing:
 
 ### Reviewer guidance
 
-**The escitalopram record was held back because an age consistency check was inconclusive and key parameters, such as distribution volume, lack extracted values.**
+**C2_center_consistency_age failed (ratio None).**
 
-The age consistency check failed to compute a comparison, so its result is inconclusive rather than a demonstrated fault. The volume of distribution and absorption rate constant parameters were not extracted from the paper, leaving them undefined in the model. Additionally, the second reader disagreed on the BMI power covariate, recording a value of 62 where this record lists it as missing. Extracted — escitalopram: V/F 48.3 L, CL/F 43.9 L/h, V1/F 19.9 L, CL 68.6 L/h.
+Extracted — escitalopram: V/F 48.3 L, CL/F 43.9 L/h, V1/F 19.9 L, CL 68.6 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has escitalopram, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

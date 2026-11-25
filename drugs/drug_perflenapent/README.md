@@ -41,34 +41,32 @@ Perflenapent is an ultrasound contrast medium used for echocardiography. It is a
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:08 | 0:42 | 0/1/0 | 0/0/0 | 0/0/0 | 20,000/3,212 | openai / gpt-6-luna | 2 | 0/1 | 2/0 | 0 |
+| 2026-11-24 02:28 | 0:03 | 0/1/0 | 0/0/0 | 0/0/0 | 3,729/184 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Correas_2001.pdf` | Correas JM et al., Human pharmacokinetics of a perfluoroca…, Ultrasound in medicine & bi… (2001) | popPK | 10 | [10.1016/s0301-5629(00)00363-x](https://doi.org/10.1016/s0301-5629(00)00363-x) | [11368867](https://pubmed.ncbi.nlm.nih.gov/11368867) | Human DDFP pharmacokinetic parameters are reported numerically in the evidence. |
-
-<sub>queue written 2026-10-07 19:08 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Arthur_2017 | irrelevant | 0 | 0 | The study focuses on the neurological effects of dodecafluoropentane (DDFPe) in a rabbit stroke model and does not report pharmacokinetic parameters for perflenapent. |
+| PGx | Arthur_2017 | not_relevant | 0 | 0 | The study investigates the efficacy of dodecafluoropentane in a rabbit stroke model and does not involve perflenapent or any pharmacogenomic analysis. |
+| popPK | Correas_2001 | irrelevant | 0 | 0 | The study evaluates dodecafluoropentane (DDFP), not perflenapent, which is a completely different drug. |
+| PGx | Correas_2001 | not_relevant | 0 | 0 | The study reports standard human pharmacokinetics of dodecafluoropentane (a perfluorocarbon) but does not investigate any gene variants or genotypes. |
 | popPK | Mosier_2023 | irrelevant | 1 | 0 | The mouse study reports oxygenation and lung-injury outcomes, not quantitative pharmacokinetic disposition parameters. |
+| popPK | Wang_2018 | irrelevant | 0 | 0 | The paper investigates the use of dodecafluoropentane (perflenapent) as a submucosal lifting agent for endoscopy, not its pharmacokinetic disposition parameters. |
+| PGx | Wang_2018 | not_relevant | 0 | 0 | The paper describes a physical mechanism (thermoresponsive aerification) of dodecafluoropentane (a perfluorocarbon liquid, distinct from perflenapant) for endoscopic procedures and does not investigate any pharmacogenomic effects on pharmacokinetics or pharmacodynamics. |
+| popPK | Waqar_2022 | irrelevant | 0 | 0 | The paper focuses on the synthesis and characterization of magnetic microbubbles for imaging (US/MRI), not the pharmacokinetics of the drug perflenapent. |
+| PGx | Waqar_2022 | not_relevant | 0 | 0 | The paper describes the synthesis of magnetic microbubbles for imaging, not a pharmacogenomic study of perflenapent. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bperflenapent%5D&body=Drug%3A%20perflenapent%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_perflenapent/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 19:08 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 02:28 UTC</sub>

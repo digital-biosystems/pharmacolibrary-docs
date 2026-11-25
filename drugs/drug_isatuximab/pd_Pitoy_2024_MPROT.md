@@ -1,8 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;isatuximab&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/&quot;},{&quot;label&quot;:&quot;Pitoy_2024 \u00b7 PD serum M-protein level&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isatuximab_Fau2020_reference&quot;,&quot;label&quot;:&quot;Fau_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/Isatuximab_Fau2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/pd_Koiwai_2021_M_protein.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein_2&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/pd_Koiwai_2021_M_protein_2.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein_3&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/pd_Koiwai_2021_M_protein_3.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;isatuximab&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/&quot;},{&quot;label&quot;:&quot;Pitoy_2024 \u00b7 PD serum M-protein&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# serum M-protein level — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+# serum M-protein — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--neutral" title="gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,7 +13,7 @@
 
 ## Record summary
 
-**As extracted:** Isatuximab (concentrations from the PK model of Brillac_2025::final) drives serum M-protein level (in g.L–1): direct Emax (saturable) effect.
+**As extracted:** Isatuximab (concentrations from the PK model of Brillac_2025::final) drives serum M-protein (in g.L−1): target-mediated drug disposition.
 
 **Model:** No model was generated from this record.
 
@@ -23,10 +22,10 @@
 > <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
 
 - **paper:** `Pitoy_2024`
-- **model family:** `emax`
+- **model family:** `tmdd`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** stimulation/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Pitoy A et al., Isatuximab-dexamethasone-pomalidomide c…, CPT: pharmacometrics & syst… (2024)
@@ -35,12 +34,13 @@ Pitoy A et al., Isatuximab-dexamethasone-pomalidomide c…, CPT: pharmacometrics
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | M 0 | `Q324` ·  | 25.6 | g.L–1 | llm | Pitoy_2024:pdv3 |
+| PD (effect) | M0 | `Q324` ·  | 25.6 | g.L−1 | llm | Pitoy_2024:pdv3 |
 | — | kg | `Q100` ·  | 0.003 | days−1 | nil | Pitoy_2024:pdv3 |
-| — | ks | `Q100` ·  | 0.017 | L.mol–1.days–1 | nil | Pitoy_2024:pdv3 |
+| — | ks | `Q100` ·  | 0.017 | L.mol−1.days−1 | nil | Pitoy_2024:pdv3 |
 | — | R | `Q100` ·  | 0.015 | days−1 | nil | Pitoy_2024:pdv3 |
-| PD (effect) | EC50 | `Q321` ·  | 0.516 | mol.L–1 | llm | Pitoy_2024:pdv3 |
-| variability | Interindividual coefficient of variation in % (EC50) | `Q312` ·  | 2.77 | % | llm | Pitoy_2024:pdv3 |
+| PD (effect) | EC50 | `Q321` ·  | 0.516 | mol.L−1 | llm | Pitoy_2024:pdv3 |
+| — | kDex | `Q100` ·  | 9.35 |  | nil | Pitoy_2024:pdv3 |
+| — | kPom | `Q100` ·  | 5.52 |  | nil | Pitoy_2024:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -48,23 +48,14 @@ Pitoy A et al., Isatuximab-dexamethasone-pomalidomide c…, CPT: pharmacometrics
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
 
-<details><summary>4 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `qwen3.8-27b` | `effect_direction` | stimulation | inhibition | mismatch |
-| `qwen3.8-27b` | `effect_form` | proportional | additive | mismatch |
-| `qwen3.8-27b` | `parameters[Q100].value` | 0.015 | 5.52 | mismatch |
-| `qwen3.8-27b` | `parameters[Q324]` | 25.6 |  | only_one_extracted |
-
-</details>
+_No second reader extracted anything for this PD record; it is not cross-checked._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>

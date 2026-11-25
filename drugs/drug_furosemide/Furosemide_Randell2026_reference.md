@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model fails Cmax verification and uses library defaults for bioavailability and lag time instead of paper-specific estimates.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.006, model 0.00304); f use library defaults, not estimates from this paper (+1 more).
 
 <div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Randell2026_reference" status="needs_review" stale="false" population="preterm infants" measured-compound="furosemide" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Randell RL, Maharaj A, Laughon M, Hornik CD, Greenberg RG, Lang JE et al. Popula
 
 ### Reviewer guidance
 
-**The model fails Cmax verification and uses library defaults for bioavailability and lag time instead of paper-specific estimates.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.006, model 0.00304); f use library defaults, not estimates from this paper (+1 more).**
 
-The simulated maximum concentration is 0.003040259421557414, which differs from the expected values of 0.0059954 and 0.0075926 by ratios of 0.5071 and 0.4004. The absorption fraction and lag time were not reported in the record, so standard library values were substituted. These default parameters influence the simulated profile but lack explicit justification from the Randell_2026 study. Extracted — furosemide: kabs 0.679 h−1, CL 0.0125 L/h/kg, V 0.239 L/kg.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — furosemide: kabs 0.679 h−1, CL 0.0125 L/h/kg, V 0.239 L/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -166,11 +166,11 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 0.005995 | 0.00304 | 0.5071 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.007593 | 0.00304 | 0.4004 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1e-05 | 0.00304 | 304 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.4e-05 | 0.00304 | 217.2 | ng/mL→SI vs simulated kg/m3 |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (10 of 10 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 0.005995 | 0.00304 | 0.5071 | reported 5995.4 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.007593 | 0.00304 | 0.4004 | reported 7592.6 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1e-05 | 0.00304 | 304 | reported 10.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.4e-05 | 0.00304 | 217.2 | reported 14.0 ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 0 | 0.00304 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 0.15 | 0.00304 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 1 | 0.00304 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The parent-metabolite model structure for fruquintinib is missing metabolite parameters, causing a half-life mismatch and output variable error.
+> The model does not reproduce the paper's terminal half-life (paper 43.2, model 41.6); t3_output_variable (+2 more).
 
 <div class="pk-model-meta" hidden drug="fruquintinib" model-id="Fruquintinib_Zhou2025_fresco_2_nct04322539" status="rejected" stale="false" population="patients with refractory metastatic colorectal cancer and healthy volunteers" measured-compound="fruquintinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -52,13 +52,13 @@ Zhou X, Yang X, Grinshpun B, Taylor A, Strong L, Dasari A et al. Population Phar
 
 ### Reviewer guidance
 
-**The parent-metabolite model structure for fruquintinib is missing metabolite parameters, causing a half-life mismatch and output variable error.**
+**The model does not reproduce the paper's terminal half-life (paper 43.2, model 41.6); t3_output_variable (+2 more).**
 
-The defined metabolite M11 has no clearance or volume of distribution parameters, preventing the model from simulating the measured metabolite concentrations. Consequently, the simulated terminal half-life of 41.6 hours deviates significantly from the paper's reported 43.2 hours. The model outputs the parent drug concentration instead of the measured metabolite, further invalidating the fit. Extracted — fruquintinib: CL/F 0.808 L/h, V/F 48.5 L, kabs 2.52 per h, tlag 0.463 h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — fruquintinib: CL/F 0.808 L/h, V/F 48.5 L, kabs 2.52 per h, tlag 0.463 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl/f: this record has none, the second reading 0.808; it also differs on 11 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -205,11 +205,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check agreement 0.25 is below 0.5: verdict partial, agreement 0.25, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped | ≤2 | 1.994e-05 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmin_ss | reference | skipped | ≤2 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | pass | 43.2 | 41.6 | 0.9629 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.275 | 41.6 | 151.3 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict partial; agreement 0.25 (4 of 16 compared fields agree, 12 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.25 | cross-check agreement 0.25 is below 0.5: verdict partial; agreement 0.25 (4 of 16 compared fields agree, 12 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) |
+| T1_cmax | reference | skipped |  | 1.994e-05 |  | the transcribed record carries no number for this value |
+| T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | pass | 43.2 | 41.6 | 0.9629 | reported 43.2 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.275 | 41.6 | 151.3 | reported 0.275 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

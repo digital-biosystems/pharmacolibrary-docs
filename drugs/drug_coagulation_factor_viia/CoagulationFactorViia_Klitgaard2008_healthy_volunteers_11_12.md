@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model's terminal half-life (0.579 h) deviates significantly from the reported value (3.08 h), indicating a fundamental kinetic mismatch.
+> The model does not reproduce the paper's terminal half-life (paper 3.08, model 0.579); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="coagulation factor VIIa" model-id="CoagulationFactorViia_Klitgaard2008_healthy_volunteers_11_12" status="needs_review" stale="false" population="healthy volunteers, haemophilia patients, liver surgery, cirrhosis, FVII deficiency, bleeding, trauma" measured-compound="recombinant activated factor VII" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Klitgaard T, Nielsen TG. Overview of the human pharmacokinetics of recombinant a
 
 ### Reviewer guidance
 
-**The model's terminal half-life (0.579 h) deviates significantly from the reported value (3.08 h), indicating a fundamental kinetic mismatch.**
+**The model does not reproduce the paper's terminal half-life (paper 3.08, model 0.579); x1_cross_check.**
 
-The extracted terminal half-life parameter (t1/2z) is 2.37 h, but the paper reports 3.08 h in the context of the failed check. A second reader disputed the verdict, disagreeing only on the naming convention for the compound (recombinant activated factor VII vs. rFVIIa). Extracted — coagulation factor viia: CL 31 ml kg−1 h−1, Vss 174 ml kg−1, t1/2z 2.37 h, V 40 mL kg−1.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — coagulation factor viia: CL 31 ml kg−1 h−1, Vss 174 ml kg−1, t1/2z 2.37 h, V 40 mL kg−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has recombinant activated factor VII, the second reading rFVIIa; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -223,8 +223,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 3.08 | 0.5793 | 0.1881 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.714 (5 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | cross-check contradicted by a second reader: verdict disputed; agreement 0.714 (5 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 3.08 | 0.5793 | 0.1881 | reported 3.08 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

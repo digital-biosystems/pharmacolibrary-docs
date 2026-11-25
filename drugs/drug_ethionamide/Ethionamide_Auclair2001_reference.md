@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The ethionamide record is an exposure summary, not a model, missing volume and clearance values while reporting an incompatible AUC unit.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit % (dimensionless) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Auclair2001_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="ethionamide" parameterization="apparent" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Auclair B, Nix DE, Adam RD, James GT, Peloquin CA. Pharmacokinetics of ethionami
 
 ### Reviewer guidance
 
-**The ethionamide record is an exposure summary, not a model, missing volume and clearance values while reporting an incompatible AUC unit.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit % (dimensionless) vs [mass] * [time] / [length] ** 3.**
 
-The record contains no volume of distribution or clearance parameters, preventing the construction of a compartmental model. It reports an AUC value of 91 with a unit of percent, which is dimensionally invalid for a pharmacokinetic area. Furthermore, the source was abstract-only, so these summary statistics are not derived from a fitted model. Extracted — ethionamide: AUC 91 %, kabs 1.02 h Ϫ1, tlag 0.43 h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ethionamide: AUC 91 %, kabs 1.02 h Ϫ1, tlag 0.43 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ethionamide, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

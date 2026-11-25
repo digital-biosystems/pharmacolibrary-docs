@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Anzoise_2016_PRU](drugs/drug_eosin/pd_Anzoise_2016_PRU.md) | thrombocytes ← clopidogrel H4 · indirect response — drug inhibits the production of thrombocytes | — | Anzoise ML et al., Beneficial properties of Passiflora cae…, Journal of ethnopharmacology (2016) | [10.1016/j.jep.2016.09.002](https://doi.org/10.1016/j.jep.2016.09.002) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Anzoise_2016_PRU](drugs/drug_eosin/pd_Anzoise_2016_PRU.md) | thrombocytes ← clopidogrel H4 · indirect response — drug inhibits the production of thrombocytes | — | Anzoise ML et al., Beneficial properties of Passiflora cae…, Journal of ethnopharmacology (2016) | [10.1016/j.jep.2016.09.002](https://doi.org/10.1016/j.jep.2016.09.002) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:45 | 4:49 | 0/0/0 | 0/1/0 | 0/0/0 | 530,092/17,589 | einfracz / qwen3.8-27b | 70 | 9/71 | 62/8 | 0 |
+| 2026-10-07 21:45 | 4:49 | 0/0/0 | 1/0/0 | 0/0/0 | 530,092/17,589 | einfracz / qwen3.8-27b | 70 | 9/71 | 62/8 | 0 |
 
 ## Coverage
 

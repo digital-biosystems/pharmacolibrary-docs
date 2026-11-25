@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The one-compartment model structure was incorrect for the fruquintinib-metabolite system, causing a failure to simulate the correct terminal half-life and output metabolite concentrations.
+> The model does not reproduce the paper's terminal half-life (paper 43.2, model 41.6); t3_output_variable (+2 more).
 
 <div class="pk-model-meta" hidden drug="fruquintinib" model-id="Fruquintinib_Zhou2025_nct04557397" status="rejected" stale="false" population="patients with refractory metastatic colorectal cancer and healthy volunteers" measured-compound="fruquintinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -53,13 +53,13 @@ Zhou X, Yang X, Grinshpun B, Taylor A, Strong L, Dasari A et al. Population Phar
 
 ### Reviewer guidance
 
-**The one-compartment model structure was incorrect for the fruquintinib-metabolite system, causing a failure to simulate the correct terminal half-life and output metabolite concentrations.**
+**The model does not reproduce the paper's terminal half-life (paper 43.2, model 41.6); t3_output_variable (+2 more).**
 
-The model topology consisted of a single enteral compartment, whereas the study design required a parent-metabolite structure; this structural mismatch prevented the calculation of the metabolite concentration needed for validation. The simulated terminal half-life of 41.6 hours deviated sharply from the expected 0.275 hours, a discrepancy exceeding acceptable tolerance. Additionally, one reported unit could not be converted to standard SI units, leaving a parameter value undefined in the system. Extracted — fruquintinib: CL/F 0.808 L/h, V/F 48.5 L, kabs 2.52 per h, tlag 0.463 h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — fruquintinib: CL/F 0.808 L/h, V/F 48.5 L, kabs 2.52 per h, tlag 0.463 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of black: this record has 6, the second reading none; it also differs on 12 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -208,11 +208,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.235, 0 of 1 reader(s) agree | 0.235 | cross-check agreement 0.235 is below 0.5: verdict partial, agreement 0.235, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped | ≤2 | 1.994e-05 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmin_ss | reference | skipped | ≤2 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | pass | 43.2 | 41.6 | 0.9629 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.275 | 41.6 | 151.3 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict partial; agreement 0.235 (4 of 17 compared fields agree, 13 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.235 | cross-check agreement 0.235 is below 0.5: verdict partial; agreement 0.235 (4 of 17 compared fields agree, 13 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) |
+| T1_cmax | reference | skipped |  | 1.994e-05 |  | the transcribed record carries no number for this value |
+| T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | pass | 43.2 | 41.6 | 0.9629 | reported 43.2 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.275 | 41.6 | 151.3 | reported 0.275 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -55,7 +55,7 @@ Pérez-Blanco JS, Santos-Buelga D, Fernández de Gatta MD, Hernández-Rivas JM, 
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has doxorubicin → doxorubicinol (metabolism), the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Huang_2022_autonomously_bioluminescent_signal](drugs/drug_progesterone/pd_Huang_2022_autonomously_bioluminescent_signal.md) | autonomously bioluminescent signal biomarker turnover ← progesterone | — | Huang Y et al., Rapid and reagent-free bioassay using a…, The Journal of steroid bioc… (2022) | [10.1016/j.jsbmb.2022.106151](https://doi.org/10.1016/j.jsbmb.2022.106151) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Huang_2022_autonomously_bioluminescent_signal](drugs/drug_progesterone/pd_Huang_2022_autonomously_bioluminescent_signal.md) | autonomously bioluminescent signal biomarker turnover ← progesterone | — | Huang Y et al., Rapid and reagent-free bioassay using a…, The Journal of steroid bioc… (2022) | [10.1016/j.jsbmb.2022.106151](https://doi.org/10.1016/j.jsbmb.2022.106151) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Li_2019_hot_flashes](drugs/drug_progesterone/pd_Li_2019_hot_flashes.md) | hot flashes ← progesterone · inhibition effect | — | Li T et al., Quantitative comparison of drug efficac…, Breast cancer research and… (2019) | [10.1007/s10549-018-5029-y](https://doi.org/10.1007/s10549-018-5029-y) |
 
 <details class="legend">

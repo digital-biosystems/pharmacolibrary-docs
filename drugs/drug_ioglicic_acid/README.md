@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:18 | 0:13 | 0/0/0 | 0/0/0 | 0/0/0 | 1,146/139 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 01:38 | 0:04 | 0/0/0 | 0/0/0 | 0/0/0 | 3,174/153 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -45,15 +45,16 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Nagel_1978.pdf` | Nagel R et al., Pharmacokinetics and clinical studies o…, International journal of cl… (1978) | popPK | 5 |  | [631971](https://pubmed.ncbi.nlm.nih.gov/631971) | Human PK study of ioglicinate reporting half-life and distribution volume qualitatively, but no numeric parameter values are present in the evidence. |
+| `Nagel_1978.pdf` | Nagel R et al., Pharmacokinetics and clinical studies o…, International journal of cl… (1978) | popPK | 8 |  | [631971](https://pubmed.ncbi.nlm.nih.gov/631971) | The paper reports pharmacokinetic parameters (Vd, t1/2) for ioglicinate in patients, but the specific numeric values are not present in the provided evidence. |
 
-<sub>queue written 2026-10-07 22:18 UTC</sub>
+<sub>queue written 2026-11-24 01:38 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Nagel_1978 | relevant | 5 | 2 | Human PK study of ioglicinate reporting half-life and distribution volume qualitatively, but no numeric parameter values are present in the evidence. |
+| popPK | Nagel_1978 | relevant | 8 | 0 | The paper reports pharmacokinetic parameters (Vd, t1/2) for ioglicinate in patients, but the specific numeric values are not present in the provided evidence. |
+| PGx | Nagel_1978 | not_relevant | 0 | 0 | The paper describes general pharmacokinetics of ioglicinate in patient groups but reports no gene variants or pharmacogenomic effects. |
 
 
 </details>

@@ -36,8 +36,8 @@ Baricitinib is a Janus kinase inhibitor used to treat rheumatoid arthritis, alop
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Vaskeikina_2026_mRSS](drugs/drug_baricitinib/pd_Vaskeikina_2026_mRSS.md) | modified Rodnan skin score ← baricitinib · direct Emax (saturable) effect | — | Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (2026) | [10.3390/pharmaceutics18020250](https://doi.org/10.3390/pharmaceutics18020250) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhang_2017_ACRL](drugs/drug_baricitinib/pd_Zhang_2017_ACRL.md) | ACR20/50/70 response rate (latent variable ACRL) ← baricitinib · indirect response — drug inhibits the production of ACR20/50/70 response rate (latent variable ACRL) | — | Zhang X et al., Dose/Exposure-Response Modeling to Supp…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12251](https://doi.org/10.1002/psp4.12251) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhang_2017_Hgb](drugs/drug_baricitinib/pd_Zhang_2017_Hgb.md) | Hemoglobin ← baricitinib · delayed effect through transit (transduction) compartments | — | Zhang X et al., Dose/Exposure-Response Modeling to Supp…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12251](https://doi.org/10.1002/psp4.12251) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zhang_2017_ACRL](drugs/drug_baricitinib/pd_Zhang_2017_ACRL.md) | ACR20/50/70 response rate (latent variable ACRL) ← baricitinib · indirect response — drug inhibits the production of ACR20/50/70 response rate (latent variable ACRL) | — | Zhang X et al., Dose/Exposure-Response Modeling to Supp…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12251](https://doi.org/10.1002/psp4.12251) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

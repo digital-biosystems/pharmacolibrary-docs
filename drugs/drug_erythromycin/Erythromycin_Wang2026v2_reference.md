@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The erythromycin record was rejected because the paper is about another drug, despite listing intercompartmental clearance Q as 4.67 L/h.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="erythromycin" model-id="Erythromycin_Wang2026v2_reference" status="rejected" stale="false" population="" measured-compound="erythromycin" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Wang Y, Wang X, Lei L, Sun W, Wu Z, Lan J et al. A Multi-Center Study of Populat
 
 ### Reviewer guidance
 
-**The erythromycin record was rejected because the paper is about another drug, despite listing intercompartmental clearance Q as 4.67 L/h.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-Neither the title nor abstract names erythromycin, and the relevance assessment judged the paper to concern another drug. A second reader disputed the record: agreement was 0.545, with 0 of 1 reader agreeing, including a disagreement over erythromycin intercompartmental clearance, reported here as 4.67 and by the second reader as 1890. Extracted — erythromycin: CL 1.68 L/h, V1 14.3 L, V2 48.8 L, Q 4.67 L/h.
+Extracted — erythromycin: CL 1.68 L/h, V1 14.3 L, V2 48.8 L, Q 4.67 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of Q: this record has 4.67, the second reading 1890; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.545, 0 of 1 reader(s) agree | 0.545 | cross-check disputed by a second reader: verdict disputed, agreement 0.545, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.545 | cross-check contradicted by a second reader: verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

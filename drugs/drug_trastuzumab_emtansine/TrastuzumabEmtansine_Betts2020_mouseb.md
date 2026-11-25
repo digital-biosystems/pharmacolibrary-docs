@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> The record was held back because the terminal half-life was 91101724.13051237 instead of 24.0, and k12 lacked a paper-derived value.
+> The model does not reproduce the paper's terminal half-life (paper 24, model 9.11e+07); k12 use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="trastuzumab emtansine" model-id="TrastuzumabEmtansine_Betts2020_mouseb" status="needs_review" stale="false" population="adults with cancer" measured-compound="trastuzumab_emtansine" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Betts A, Clark T, Jasper P, Tolsma J, van der Graaf PH, Graziani EI et al. Use o
 
 ### Reviewer guidance
 
-**The record was held back because the terminal half-life was 91101724.13051237 instead of 24.0, and k12 lacked a paper-derived value.**
+**The model does not reproduce the paper's terminal half-life (paper 24, model 9.11e+07); k12 use library defaults, not estimates from this paper (+2 more).**
 
-The simulated terminal half-life (91101724.13051237) deviated from the paper's reported value (24.0) by a factor of 3795905.1721. The intercompartmental clearance parameter, k12, was left at library placeholder defaults rather than using an estimate from the study. A second reader also disagreed on the dose compound and analyte, preferring T-DM1 over trastuzumab_emtansine, which further complicated the review. Extracted — trastuzumab emtansine: V1 61 mL/kg, CL 22.8 mL/day/kg, V2 56.2 mL/kg, Q 35 mL/day/kg.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — trastuzumab emtansine: V1 61 mL/kg, CL 22.8 mL/day/kg, V2 56.2 mL/kg, Q 35 mL/day/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trastuzumab_emtansine, the second reading T-DM1; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -158,9 +158,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | fail | 24 | 9.11e+07 | 3.796e+06 | day→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 117.6 | 9.11e+07 | 7.747e+05 | days→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.625 (5 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.625 | cross-check contradicted by a second reader: verdict disputed; agreement 0.625 (5 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | fail | 24 | 9.11e+07 | 3.796e+06 | reported 1.0 day→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 117.6 | 9.11e+07 | 7.747e+05 | reported 4.9 days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

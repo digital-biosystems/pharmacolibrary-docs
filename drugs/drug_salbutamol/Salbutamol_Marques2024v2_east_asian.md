@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance of 6.03 mL/h and central volume of 195.75 L are physiologically implausible for salbutamol, triggering rejection due to unit errors and structural inconsistencies.
+> C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Marques2024v2_east_asian" status="rejected" stale="false" population="virtual patients and asthma patients" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Marques L, Vale N. Toward Personalized Salbutamol Therapy: Validating Virtual Pa
 
 ### Reviewer guidance
 
-**Clearance of 6.03 mL/h and central volume of 195.75 L are physiologically implausible for salbutamol, triggering rejection due to unit errors and structural inconsistencies.**
+**C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The total clearance of 6.03 mL/h is orders of magnitude lower than expected for a small molecule, suggesting a unit or scale extraction error. Simultaneously, the central volume of distribution of 195.75 L is implausibly large, reinforcing the likelihood of a conversion mistake. Additionally, the model structure was flagged for containing an unreachable compartment or unlinked metabolite, which compromises the validity of the pharmacokinetic simulation. Extracted — salbutamol: kabs 0.0071 h−1, CL 6.03 mL/h, V2 0.054 mL, V 196 L.
+Extracted — salbutamol: kabs 0.0071 h−1, CL 6.03 mL/h, V2 0.054 mL, V 196 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

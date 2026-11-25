@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;stavudine&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/&quot;},{&quot;label&quot;:&quot;Jullien_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Sinxadi2010_reference&quot;,&quot;label&quot;:&quot;Sinxadi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Sinxadi2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Jullien2007_reference&quot;,&quot;label&quot;:&quot;Jullien_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Jullien2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Sinxadi2010_reference&quot;,&quot;label&quot;:&quot;Sinxadi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Sinxadi2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Jullien2007_reference&quot;,&quot;label&quot;:&quot;Jullien_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Jullien2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Second reader could not verify stavudine clearance 16.5 or volume 40.9 from abstract-only data, causing model rejection.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="stavudine" model-id="Stavudine_Jullien2007_reference" status="needs_review" stale="false" population="children from birth to 16 years" measured-compound="stavudine" parameterization="apparent" topology="1C"></div>
 
@@ -17,13 +17,13 @@ Jullien V, Raïs A, Urien S, Dimet J, Delaugerre C, Bouillon-Pichault M et al. A
 
 ## Population and dosing
 
-**Population:** children from birth to 16 years · condition HIV infection · age group mixed · n = 272.
+**Population:** children from birth to 16 years · condition healthy · age group mixed.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference.svg" alt="Stavudine_Jullien2007_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -33,14 +33,12 @@ Jullien V, Raïs A, Urien S, Dimet J, Delaugerre C, Bouillon-Pichault M et al. A
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| V/F | V/F | 40.9 | l |
-| CL/F | CL/F | 16.5 | l h(-1) |
-| first-order absorption rate constant | kabs | 11.1 | /h |
-| absorption lag time | tlag | 0.41 | h |
+| apparent distribution volume (V/F) | V/F | 40.9 | l |
+| plasma clearance (CL/F) | CL/F | 16.5 | l h(-1) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,22 +48,20 @@ Jullien V, Raïs A, Urien S, Dimet J, Delaugerre C, Bouillon-Pichault M et al. A
 
 ### Reviewer guidance
 
-**Second reader could not verify stavudine clearance 16.5 or volume 40.9 from abstract-only data, causing model rejection.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record relies on abstract summary statistics rather than fitted parameters, leading to a dispute. A second reader disagreed with the extracted values for clearance and volume of distribution. Consequently, the cross-check failed with an agreement score of 0.2. Extracted — stavudine: V/F 40.9 l, CL/F 16.5 l h(-1), kabs 11.1 /h, tlag 0.41 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — stavudine: V/F 40.9 l, CL/F 16.5 l h(-1).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has stavudine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of mean calculated dose: this record has none, the second reading 0.61. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| V/F | `Q76` · V/F | 40.9 | l | 0.0409 | m3 | l | exact (1) | Jullien_2007:abstract |
-| CL/F | `Q27` · CL/F | 16.5 | l h(-1) | 4.583e-06 | m3/s | l/h | exact (1) | Jullien_2007:abstract |
-| first-order absorption rate constant | `Q49` · kabs | 11.1 | /h | 0.003083 | 1/s | 1/h | review_gapfill (0.7) | Sinxadi_2010:review |
-| absorption lag time | `Q83` · tlag | 0.41 | h | 1476 | s | h | review_gapfill (0.7) | Sinxadi_2010:review |
+| apparent distribution volume (V/F) | `Q76` · V/F | 40.9 | l | 0.0409 | m3 | l | llm_corrected (0.6) | Jullien_2007:abstract |
+| plasma clearance (CL/F) | `Q27` · CL/F | 16.5 | l h(-1) | 4.583e-06 | m3/s | l/h | llm_corrected (0.6) | Jullien_2007:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,43 +71,38 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Mean calculated dose (children less than 2 weeks)' — extend the ontology if this is a real PK parameter (source ['Jullien_2007:abstract'])
-- dropped unlinked row (NIL): 'Mean calculated dose (children more than 2 weeks with bodyweight less than 30 kg)' — extend the ontology if this is a real PK parameter (source ['Jullien_2007:abstract'])
-- dropped unlinked row (NIL): 'Mean calculated dose (children with a bodyweight between 30 and 60 kg)' — extend the ontology if this is a real PK parameter (source ['Jullien_2007:abstract'])
+- dropped unlinked row (NIL): 'Mean calculated doses for children less than 2 weeks' — extend the ontology if this is a real PK parameter (source ['Jullien_2007:abstract'])
+- dropped unlinked row (NIL): 'Mean calculated doses for children more than 2 weeks with bodyweight less than 30 kg' — extend the ontology if this is a real PK parameter (source ['Jullien_2007:abstract'])
+- dropped unlinked row (NIL): 'Mean calculated doses for children with a bodyweight between 30 and 60 kg' — extend the ontology if this is a real PK parameter (source ['Jullien_2007:abstract'])
+- dropped unlinked row (NIL): 'current paediatric doses for children less than 2 weeks' — extend the ontology if this is a real PK parameter (source ['Jullien_2007:abstract'])
+- dropped unlinked row (NIL): 'current paediatric doses for children more than 2 weeks with bodyweight less than 30 kg' — extend the ontology if this is a real PK parameter (source ['Jullien_2007:abstract'])
+- dropped unlinked row (NIL): 'current paediatric doses for children with a bodyweight between 30 and 60 kg' — extend the ontology if this is a real PK parameter (source ['Jullien_2007:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=stavudine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Sinxadi_2010's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Sinxadi_2010's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Jullien_2007_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Jullien_2007_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption lag time]` | 0.41 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` | 16.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` |  | 16.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[first-order absorption rate constant]` | 11.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f]` | 40.9 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f]` |  | 40.9 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | stavudine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | stavudine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[mean calculated dose]` |  | 0.61 | only_one_extracted |
 
 </details>
 
@@ -129,9 +120,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Jullien_2007:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Sinxadi_2010:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Jullien_2007:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Sinxadi_2010:review'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 16.5 L/h | ['Jullien_2007:abstract'] |
@@ -145,10 +134,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=stavudine) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial; agreement 0.857 (6 of 7 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -164,10 +153,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_modelica.zip" download>Stavudine_Jullien2007_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_fmi.zip" download>Stavudine_Jullien2007_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_matlab.zip" download>Stavudine_Jullien2007_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_matlab_simbio.zip" download>Stavudine_Jullien2007_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_modelica.zip" download>Stavudine_Jullien2007_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_fmi.zip" download>Stavudine_Jullien2007_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_matlab.zip" download>Stavudine_Jullien2007_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_matlab_simbio.zip" download>Stavudine_Jullien2007_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_sbml.zip" download>Stavudine_Jullien2007_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_cellml.zip" download>Stavudine_Jullien2007_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
@@ -183,13 +172,13 @@ The parameters this record sets on the template, in the template's SI units, and
 |---|---|---|---|---|
 | input | compound | `MM` | 0.2242 | kg/mol |
 | input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 1476 | s |
+| input | dosing | `Tlag` | 0 | s |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 8e-05 | kg |
 | input | model | `Cl` | 4.583e-06 | m3/s |
 | input | model | `VdPerKg` | 0.0005843 | m3/kg |
-| input | model | `ka` | 0.003083 | 1/s |
+| input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -218,7 +207,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 80 mg, single dose, first-order absorption (ka 11.1 /h, lag 24.6 min, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 80 mg oral (J05AF04) (defined daily dose)._
+**Administration: oral** — 80 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 80 mg oral (J05AF04) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_stavudine/Stavudine_Jullien2007_reference/Stavudine_Jullien2007_reference_sim_controls.json"></dbs-fmusim>
 
@@ -228,4 +217,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bstavudine%5D%20Stavudine_Jullien2007_reference&body=Drug%3A%20stavudine%0ARecord%3A%20Stavudine_Jullien2007_reference%0APaper%3A%20Jullien_2007%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_stavudine/Stavudine_Jullien2007_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:16 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:52 UTC</sub>

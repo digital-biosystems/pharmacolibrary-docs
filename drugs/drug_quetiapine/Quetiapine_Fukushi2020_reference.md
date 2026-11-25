@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;quetiapine&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/&quot;},{&quot;label&quot;:&quot;Fukushi_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quetiapine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/Quetiapine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quetiapine_Fukushi2020_reference&quot;,&quot;label&quot;:&quot;Fukushi_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Quetiapine_Li2026_reference&quot;,&quot;label&quot;:&quot;Li_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/Quetiapine_Li2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quetiapine_Zhou2015_reference&quot;,&quot;label&quot;:&quot;Zhou_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/Quetiapine_Zhou2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quetiapine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/Quetiapine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quetiapine_Fukushi2020_reference&quot;,&quot;label&quot;:&quot;Fukushi_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Quetiapine_Li2026_reference&quot;,&quot;label&quot;:&quot;Li_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quetiapine/Quetiapine_Li2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Quetiapine’s absorption rate constant is recorded as 0.5 h⁻¹, but the second reader disputed this abstract-derived record, leaving it held for review.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="quetiapine" model-id="Quetiapine_Fukushi2020_reference" status="needs_review" stale="false" population="Japanese patients with bipolar depression" measured-compound="quetiapine" parameterization="apparent" topology="1C"></div>
 
@@ -17,15 +17,13 @@ Fukushi R, Nomura Y, Katashima M, Komatsu K, Sato Y, Takada A. Population Pharma
 
 ## Population and dosing
 
-**Population:** Japanese patients with bipolar depression · condition bipolar depression · age group adult · n = 322.
-
-**Dosed compound ≠ measured compound:** dosed quetiapine XR, measured quetiapine.
+**Population:** Japanese patients with bipolar depression · condition bipolar depression · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference/Quetiapine_Fukushi2020_reference.svg" alt="Quetiapine_Fukushi2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -37,11 +35,10 @@ Fukushi R, Nomura Y, Katashima M, Komatsu K, Sato Y, Takada A. Population Pharma
 |---|---|---|---|
 | apparent oral clearance | CL/F | 87.7 | L/h |
 | apparent volume of distribution | V/F | 277 | L |
-| first-order absorption rate (fixed, ziprasidone published model) | kabs | 0.5 | h⁻¹ |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +48,13 @@ Fukushi R, Nomura Y, Katashima M, Komatsu K, Sato Y, Takada A. Population Pharma
 
 ### Reviewer guidance
 
-**Quetiapine’s absorption rate constant is recorded as 0.5 h⁻¹, but the second reader disputed this abstract-derived record, leaving it held for review.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-Only the abstract was read, so reported summary statistics stood in for a fitted model; the second reader did not accept the 0.5 h⁻¹ absorption rate and disputed whether the dose compound was quetiapine XR or quetiapine. The record also defaulted the absorption lag time and assumed F=1 and Fm=1, with no molar correction. Extracted — quetiapine: CL/F 87.7 L/h, V/F 277 L, kabs 0.5 h⁻¹.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — quetiapine: CL/F 87.7 L/h, V/F 277 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has quetiapine XR, the second reading quetiapine; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -65,7 +62,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 |---|---|---|---|---|---|---|---|---|
 | apparent oral clearance | `Q27` · CL/F | 87.7 | L/h | 2.436e-05 | m3/s | l/h | exact (1) | Fukushi_2020:abstract |
 | apparent volume of distribution | `Q76` · V/F | 277 | L | 0.277 | m3 | l | exact (1) | Fukushi_2020:abstract |
-| first-order absorption rate (fixed, ziprasidone published model) | `Q49` · kabs | 0.5 | h⁻¹ | 0.0001389 | 1/s | 1/h | review_gapfill (0.7) | Li_2026:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,40 +71,28 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- routed 'interindividual %CV of apparent oral clearance' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- routed 'interindividual %CV of apparent volume of distribution' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- dropped value-less row: 'γ-glutamyl transpeptidase on apparent oral clearance'
-- dropped value-less row: 'body weight on apparent volume of distribution'
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=quetiapine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Li_2026's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Fukushi_2020_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Fukushi_2020_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>2 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[first-order absorption rate]` | 0.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | quetiapine XR | quetiapine | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -124,7 +108,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Fukushi_2020:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Li_2026:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Fukushi_2020:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -139,10 +122,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=quetiapine) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (6 of 6 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,9 +143,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference/Quetiapine_Fukushi2020_reference_modelica.zip" download>Quetiapine_Fukushi2020_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference/Quetiapine_Fukushi2020_reference_fmi.zip" download>Quetiapine_Fukushi2020_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference/Quetiapine_Fukushi2020_reference_matlab.zip" download>Quetiapine_Fukushi2020_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference/Quetiapine_Fukushi2020_reference_matlab_simbio.zip" download>Quetiapine_Fukushi2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference/Quetiapine_Fukushi2020_reference_sbml.zip" download>Quetiapine_Fukushi2020_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference/Quetiapine_Fukushi2020_reference_matlab.zip" download>Quetiapine_Fukushi2020_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference/Quetiapine_Fukushi2020_reference_matlab_simbio.zip" download>Quetiapine_Fukushi2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference/Quetiapine_Fukushi2020_reference_sbml.zip" download>Quetiapine_Fukushi2020_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference/Quetiapine_Fukushi2020_reference_cellml.zip" download>Quetiapine_Fukushi2020_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
@@ -222,4 +205,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bquetiapine%5D%20Quetiapine_Fukushi2020_reference&body=Drug%3A%20quetiapine%0ARecord%3A%20Quetiapine_Fukushi2020_reference%0APaper%3A%20Fukushi_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_quetiapine/Quetiapine_Fukushi2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 17:03 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:19 UTC</sub>

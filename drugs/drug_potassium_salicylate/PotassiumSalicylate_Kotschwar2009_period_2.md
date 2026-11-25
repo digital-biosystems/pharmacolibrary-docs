@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> The salicylate model fails to reproduce the paper's terminal half-life and uses an unreported bioavailability parameter.
+> The model does not reproduce the paper's terminal half-life (paper 0.615, model 3.15); f use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Kotschwar2009_period_2" status="needs_review" stale="false" population="bovine calves" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Kotschwar JL, Coetzee JF, Anderson DE, Gehring R, KuKanich B, Apley MD. Analgesi
 
 ### Reviewer guidance
 
-**The salicylate model fails to reproduce the paper's terminal half-life and uses an unreported bioavailability parameter.**
+**The model does not reproduce the paper's terminal half-life (paper 0.615, model 3.15); f use library defaults, not estimates from this paper (+2 more).**
 
-Simulated as the paper dosed it, the model's terminal half-life (3.1508668293866733 h) differs from the reported value (0.615 h) by a ratio of 5.1234. The bioavailability parameter F was left at library defaults rather than being extracted from the paper. Additionally, a second reader disagreed with the extracted values for blood clearance and absorption rate constant. Extracted — potassium salicylate: V 0.2 L/kg, CLb 4.3 mL/min/kg, kabs 0.22 h−1, tlag 2.81 h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — potassium salicylate: V 0.2 L/kg, CLb 4.3 mL/min/kg, kabs 0.22 h−1, tlag 2.81 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 1: this record has none, the second reading 6; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -156,9 +156,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial, agreement 0.4, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 0.615 | 3.151 | 5.123 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.63 | 3.151 | 5.001 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 0.615 | 3.151 | 5.123 | reported 36.9 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.63 | 3.151 | 5.001 | reported 0.63 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

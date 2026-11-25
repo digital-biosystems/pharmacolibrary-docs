@@ -26,7 +26,7 @@ Phenylpropanolamine is a sympathomimetic drug used as a nasal decongestant. It i
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Shargel_1990_reference](drugs/drug_phenylpropanolamine/Phenylpropanolamine_Shargel1990_reference.md) | — | 1-compartment (no model) | 6 | Shargel L et al., Bioavailability and cardiovascular safe…, Biopharmaceutics & drug dis… (1990) | [10.1002/bdd.2510110703](https://doi.org/10.1002/bdd.2510110703) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Shargel_1990_reference](drugs/drug_phenylpropanolamine/Phenylpropanolamine_Shargel1990_reference.md) | — | 1-compartment (no model) | 6 | Shargel L et al., Bioavailability and cardiovascular safe…, Biopharmaceutics & drug dis… (1990) | [10.1002/bdd.2510110703](https://doi.org/10.1002/bdd.2510110703) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,13 +40,13 @@ Phenylpropanolamine is a sympathomimetic drug used as a nasal decongestant. It i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:24 | 0:39 | 1/0/0 | 0/0/0 | 0/0/0 | 22,355/2,135 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 04:36 | 2:58 | 0/1/0 | 0/0/0 | 0/0/0 | 15,657/7,699 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -55,24 +55,29 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Shargel_1990.pdf` | Shargel L et al., Bioavailability and cardiovascular safe…, Biopharmaceutics & drug dis… (1990) | popPK | 8 | [10.1002/bdd.2510110703](https://doi.org/10.1002/bdd.2510110703) | [2265237](https://pubmed.ncbi.nlm.nih.gov/2265237) | Human PK study of PPA reporting kA, elimination half-life, and lag time with numeric values directly in the abstract; no CL/V but compartmental model parameters present. |
+| `Shargel_1990.pdf` | Shargel L et al., Bioavailability and cardiovascular safe…, Biopharmaceutics & drug dis… (1990) | popPK | 9 | [10.1002/bdd.2510110703](https://doi.org/10.1002/bdd.2510110703) | [2265237](https://pubmed.ncbi.nlm.nih.gov/2265237) | The study reports quantitative PK parameters (ka, half-life) and non-compartmental metrics (AUC, Cmax) for phenylpropanolamine in humans, with specific numeric values provided in the abstract/text. |
 | `Carrillo_2000.pdf` | Carrillo JA et al., Clinically significant pharmacokinetic…, Clinical pharmacokinetics (2000) | pgx | 7 | [10.2165/00003088-200039020-00004](https://doi.org/10.2165/00003088-200039020-00004) | [10976659](https://www.ncbi.nlm.nih.gov/pubmed/10976659) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-10-07 13:24 UTC</sub>
+<sub>queue written 2026-11-24 04:33 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Altenbach_2002 | irrelevant | 0 | 0 | Phenylpropanolamine is only a comparator in a pharmacology study of ABT-866; no PK parameters for it are reported. |
+| popPK | Altenbach_2002 | irrelevant | 0 | 0 | The paper describes the receptor binding and pharmacodynamic profile of a new drug (ABT-866) using phenylpropanolamine only as a comparator, with no population pharmacokinetic parameters reported for phenylpropanolamine. |
+| PGx | Altenbach_2002 | not_relevant | 0 | 0 | The paper compares the pharmacodynamics of a novel drug (ABT-866) to phenylpropanolamine in animal models but does not report any genetic or pharmacogenomic effects. |
 | PGx | Bedada_2018 | not_relevant | 2 | 5 | Phenylpropanolamine is used only as a urinary metabolite/compliance marker (cathinone/PPA ratio correlated with CYP2D6 genotype), not as a drug with a reported pharmacogenomic effect on its own PK/PD parameter. |
-| PGx | Benedetti_2001 | not_relevant | 0 | 0 | Phenylpropanolamine only mentioned as a possible interaction with MAO-metabolized drugs; no gene variant effect on its PK/PD reported. |
-| PGx | Carrillo_2000 | not_relevant | 0 | 0 | Phenylpropanolamine is only mentioned as a CYP1A2 inhibitor of caffeine; no gene variant effect on its PK/PD is reported. |
-| popPK | Rothman_2003 | irrelevant | 0 | 0 | In vitro receptor/transporter pharmacology study of ephedrine stereoisomers; phenylpropanolamine only mentioned as a related compound, no PK parameters. |
+| popPK | Benedetti_2001 | irrelevant | 0 | 0 | The paper is a review discussing the metabolic role of amine oxidases, mentioning phenylpropanolamine only as an example of a drug containing a sympathomimetic amine, without providing any pharmacokinetic parameters. |
+| PGx | Benedetti_2001 | not_relevant | 0 | 0 | This is a review of amine oxidases in xenobiotic metabolism and mentions phenylpropanolamine as an example of a drug interaction but does not report any pharmacogenomic studies on phenylpropanolamine PK or PD parameters. |
+| popPK | Carrillo_2000 | irrelevant | 0 | 0 | The paper is a review of caffeine interactions that mentions phenylpropanolamine only as a CYP1A2 inhibitor, without reporting any quantitative pharmacokinetic parameters for it. |
+| PGx | Carrillo_2000 | not_relevant | 0 | 0 | The paper discusses pharmacokinetic interactions involving caffeine and phenylpropanolamine but does not report any gene variant or genotype affecting the PK/PD of phenylpropanolamine. |
+| popPK | Rothman_2003 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of ephedrine stereoisomers at transporters and receptors, not a pharmacokinetic study of phenylpropanolamine. |
+| PGx | Rothman_2003 | not_relevant | 0 | 0 | The paper describes in vitro transporter kinetics of ephedrine stereoisomers and mentions phenylpropanolamine only as a related compound, without reporting any gene-variant or genotype-dependent effects on phenylpropanolamine PK/PD parameters. |
+| PGx | Shargel_1990 | not_relevant | 0 | 0 | The paper reports general pharmacokinetics and cardiovascular safety of phenylpropanolamine but does not mention or analyze any gene variants, genotypes, or phenotypes. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bphenylpropanolamine%5D&body=Drug%3A%20phenylpropanolamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_phenylpropanolamine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 13:24 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 04:33 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> The levothyroxine model was rejected due to a dimension mismatch in the dose-normalized AUC unit and an unreachable triiodothyronine compartment.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h⁻¹ (1 / [time]) vs 1 / [time]; Q189 unit µg/d/kg ([mass] / [time]) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_MirallesGarca1981_i" status="rejected" stale="false" population="non-pregnant ewes with acute hepatic insufficiency and controls" measured-compound="triiodothyronine (T3) or thyroxine (T4)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -60,13 +60,13 @@ Miralles-García JM, García-Iglesias C, Garcá-Díez LC, De Pablo-Dávilà F. T
 
 ### Reviewer guidance
 
-**The levothyroxine model was rejected due to a dimension mismatch in the dose-normalized AUC unit and an unreachable triiodothyronine compartment.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h⁻¹ (1 / [time]) vs 1 / [time]; Q189 unit µg/d/kg ([mass] / [time]) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The dose-normalized area under the curve is reported in micrograms per day per kilogram, conflicting with the required concentration-time dimension. Furthermore, the triiodothyronine metabolite compartment has no defined path from the thyroxine dose, rendering it orphaned. A reported unit could not be converted to SI, preventing the model builder from processing the parameter value. Extracted — levothyroxine: λ1 0.315 h⁻¹, kel 0.035 h⁻¹, t1/2α 2.2 h, t1/2β 19.3 h, k12 0.027 h⁻¹, k21 0.039 h⁻¹, k13 0.283 h⁻¹, V1 5.78 l, … (+4).
+A reported unit could not be converted (λ1, R1 and AUC/dose), so that value has no SI equivalent. Extracted — levothyroxine: λ1 0.315 h⁻¹, kel 0.035 h⁻¹, t1/2α 2.2 h, t1/2β 19.3 h, k12 0.027 h⁻¹, k21 0.039 h⁻¹, k13 0.283 h⁻¹, V1 5.78 l, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has triiodothyronine (T3) or thyroxine (T4), the second reading thyroxine (T4); it also differs on 24 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

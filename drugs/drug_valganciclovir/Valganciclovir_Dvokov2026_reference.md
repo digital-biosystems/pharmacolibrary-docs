@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the intercompartmental clearance parameter's unit dimension conflicted with its pharmacokinetic role, and another unit could not be converted to standard SI units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="valganciclovir" model-id="Valganciclovir_Dvokov2026_reference" status="rejected" stale="false" population="lung transplant recipients" measured-compound="ganciclovir" parameterization="apparent" topology="general_linear"></div>
 
@@ -53,13 +53,13 @@ Dvořáčková E, Michaličková D, Petrus J, Klapková E, Dutková A, Kotowski 
 
 ### Reviewer guidance
 
-**The record was rejected because the intercompartmental clearance parameter's unit dimension conflicted with its pharmacokinetic role, and another unit could not be converted to standard SI units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time].**
 
-The parameter Q, representing intercompartmental clearance, was recorded with a volume-per-time unit (L/h), creating a dimension mismatch because clearance requires a time-inverse dimension. Additionally, a reported unit for another parameter was not recognized as a standard measure, preventing the assignment of a valid SI value. Extracted — ganciclovir: V1 43.1 L, CLm/F 2.05 L/h, V2 140 L, Q 2.1 L/h; valganciclovir: kabs 0.334 L/h, tlag 0.563 h, Fab 0.304.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — ganciclovir: V1 43.1 L, CLm/F 2.05 L/h, V2 140 L, Q 2.1 L/h; valganciclovir: kabs 0.334 L/h, tlag 0.563 h, Fab 0.304.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has valganciclovir → ganciclovir (hydrolysis), the second reading valganciclovir → ganciclovir (metabolism); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

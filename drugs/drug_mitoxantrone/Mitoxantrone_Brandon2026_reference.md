@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Covariate effects on clearance and volumes were not simulated, and the second reader disputed the specific covariate forms assigned to peripheral volume.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Brandon2026_reference" status="needs_review" stale="false" population="children with acute myeloid leukaemia" measured-compound="mitoxantrone" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Brandon AM, Huisman-Siebinga H, Barnett S, Wetherell P, Kearns P, Gibson B et al
 
 ### Reviewer guidance
 
-**Covariate effects on clearance and volumes were not simulated, and the second reader disputed the specific covariate forms assigned to peripheral volume.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The record defines a weight-dependent effect on clearance and volumes, yet only the reference individual was simulated, leaving these covariate scenarios unexercised. The second reader disagreed on the covariate forms, specifically noting the absence of a weight effect on peripheral volume distribution in this record while the model parameters suggest a shared weight effect. This discrepancy in how weight influences the peripheral compartment caused the review to be held back. Extracted — mitoxantrone: CL 39.1 L/h, V1 23.2 L, Q 27.6 L/h, V2 85.9 L.
+The base model was simulated, not the covariate effects the record defines. Extracted — mitoxantrone: CL 39.1 L/h, V1 23.2 L, Q 27.6 L/h, V2 85.9 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl].covariate_forms`: this record has ['linear_fractional', 'linear_fractional'], the second reading ['linear_fractional']; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -145,7 +145,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.75 (12 of 16 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (12 of 16 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -161,7 +161,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mitoxantrone/Mitoxantrone_Brandon2026_reference/Mitoxantrone_Brandon2026_reference_modelica.zip" download>Mitoxantrone_Brandon2026_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mitoxantrone/Mitoxantrone_Brandon2026_reference/Mitoxantrone_Brandon2026_reference_modelica.zip" download>Mitoxantrone_Brandon2026_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_mitoxantrone/Mitoxantrone_Brandon2026_reference/Mitoxantrone_Brandon2026_reference_fmi.zip" download>Mitoxantrone_Brandon2026_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_mitoxantrone/Mitoxantrone_Brandon2026_reference/Mitoxantrone_Brandon2026_reference_matlab.zip" download>Mitoxantrone_Brandon2026_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_mitoxantrone/Mitoxantrone_Brandon2026_reference/Mitoxantrone_Brandon2026_reference_matlab_simbio.zip" download>Mitoxantrone_Brandon2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>

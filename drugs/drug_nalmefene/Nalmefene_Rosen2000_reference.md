@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;nalmefene&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/&quot;},{&quot;label&quot;:&quot;Rosen_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nalmefene_Rosen2000_reference&quot;,&quot;label&quot;:&quot;Rosen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Rosen2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Nalmefene_Kyhl2016_reference&quot;,&quot;label&quot;:&quot;Kyhl_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nalmefene_Kyhl2016_reference&quot;,&quot;label&quot;:&quot;Kyhl_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalmefene_Rosen2000_reference&quot;,&quot;label&quot;:&quot;Rosen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Rosen2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-<div class="pk-model-meta" hidden drug="nalmefene" model-id="Nalmefene_Rosen2000_reference" status="simulated" stale="false" population="children aged 2-12 years undergoing cardiothoracic surgery" measured-compound="nalmefene" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nalmefene" model-id="Nalmefene_Rosen2000_reference" status="simulated" stale="false" population="children undergoing cardiothoracic surgery with epidural anesthesia" measured-compound="nalmefene" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rosen DA, Morris JL, Rosen KR, Nelson ER, Steelman RJ, Gustafson RA et al. Nalmefene to prevent epidural narcotic side effects in pediatric patients: a pharmacokinetic and safety study. Pharmacotherapy 20(7):745–749 (2000).
@@ -15,7 +15,7 @@ Rosen DA, Morris JL, Rosen KR, Nelson ER, Steelman RJ, Gustafson RA et al. Nalme
 
 ## Population and dosing
 
-**Population:** children aged 2-12 years undergoing cardiothoracic surgery · condition cardiothoracic surgery with epidural anesthesia · age group child · n = 34.
+**Population:** children undergoing cardiothoracic surgery with epidural anesthesia · age group child.
 
 ## Model
 
@@ -29,14 +29,14 @@ Rosen DA, Morris JL, Rosen KR, Nelson ER, Steelman RJ, Gustafson RA et al. Nalme
 ## Parameters
 | label | parameter | value | unit |
 |---|---|---|---|
-| t(1/2alpha) | t1/2α | 0.36 | hour |
-| t(1/2beta) | t1/2β | 8.7 | hours |
+| The initial disposition half-life (t(1/2alpha)) | t1/2α | 0.36 | hour |
+| the terminal elimination half-life (t(1/2beta)) | t1/2β | 8.7 | hours |
 | clearance | CL | 0.729 | L/kg/hr |
 | steady-state volume of distribution | Vss | 7.21 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +46,11 @@ Rosen DA, Morris JL, Rosen KR, Nelson ER, Steelman RJ, Gustafson RA et al. Nalme
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of initial disposition half-life (t(1/2alpha)): this record has none, the second reading 0.36; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of initial disposition half-life (t(1/2alpha)): this record has none, the second reading 0.36; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,8 +58,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| t(1/2alpha) | `Q59` · t1/2α | 0.36 | hour | 1296 | s | h | llm (0.6) | Rosen_2000:abstract |
-| t(1/2beta) | `Q60` · t1/2β | 8.7 | hours | 3.132e+04 | s | h | llm (0.6) | Rosen_2000:abstract |
+| The initial disposition half-life (t(1/2alpha)) | `Q59` · t1/2α | 0.36 | hour | 1296 | s | h | half_life_rule (0.95) | Rosen_2000:abstract |
+| the terminal elimination half-life (t(1/2beta)) | `Q60` · t1/2β | 8.7 | hours | 3.132e+04 | s | h | half_life_rule (0.95) | Rosen_2000:abstract |
 | clearance | `Q22` · CL | 0.729 | L/kg/hr | 1.418e-05 | m3/s | l/(h·kg) | exact (1) | Rosen_2000:abstract |
 | steady-state volume of distribution | `Q65` · Vss | 7.21 | L/kg | 0.5047 | m3 | l/kg | llm_corrected (0.6) | Rosen_2000:abstract |
 
@@ -77,8 +77,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nalmefene
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Rosen_2000_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -86,19 +84,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.667 (6/9 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.6 (6/10 fields) | 4 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[initial disposition half-life (t(1/2alpha))]` |  | 0.36 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t]` | 0.36 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[terminal elimination half-life (t(1/2beta))]` |  | 8.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the initial disposition half-life (t(1/2alpha))]` | 0.36 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the terminal elimination half-life (t(1/2beta))]` | 8.7 |  | only_one_extracted |
 
 </details>
 
@@ -134,7 +133,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.6 (6 of 10 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.6 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -150,7 +149,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nalmefene/Nalmefene_Rosen2000_reference/Nalmefene_Rosen2000_reference_modelica.zip" download>Nalmefene_Rosen2000_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nalmefene/Nalmefene_Rosen2000_reference/Nalmefene_Rosen2000_reference_modelica.zip" download>Nalmefene_Rosen2000_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_nalmefene/Nalmefene_Rosen2000_reference/Nalmefene_Rosen2000_reference_fmi.zip" download>Nalmefene_Rosen2000_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nalmefene/Nalmefene_Rosen2000_reference/Nalmefene_Rosen2000_reference_matlab.zip" download>Nalmefene_Rosen2000_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nalmefene/Nalmefene_Rosen2000_reference/Nalmefene_Rosen2000_reference_matlab_simbio.zip" download>Nalmefene_Rosen2000_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -212,4 +211,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnalmefene%5D%20Nalmefene_Rosen2000_reference&body=Drug%3A%20nalmefene%0ARecord%3A%20Nalmefene_Rosen2000_reference%0APaper%3A%20Rosen_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nalmefene/Nalmefene_Rosen2000_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:37 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:23 UTC</sub>

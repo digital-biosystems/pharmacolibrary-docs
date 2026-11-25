@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Doxorubicin plasma volume of 13.38 mL and elimination rate of 4.12 h⁻¹ were rejected as physiologically implausible magnitudes.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Li2024_doxorubicin_solution_6_mg_kg" status="rejected" stale="false" population="rats and mice" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Li Z, Kovshova T, Malinovskaya J, Knoll J, Shanehsazzadeh S, Osipova N et al. Bl
 
 ### Reviewer guidance
 
-**Doxorubicin plasma volume of 13.38 mL and elimination rate of 4.12 h⁻¹ were rejected as physiologically implausible magnitudes.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted parameters fall outside expected physiological ranges, indicating a likely unit or scale error in the source data. Additionally, the model omits interconversion links to Doxil and PBCA nanoparticles, and the brain compartment parameter was not recorded. Extracted — doxorubicin: kout_peripheral 0.025 h⁻¹, kel 4.12 h⁻¹, V 13.4 mL.
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — doxorubicin: kout_peripheral 0.025 h⁻¹, kel 4.12 h⁻¹, V 13.4 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading doxil® → doxorubicin (interconversion); pbca nanoparticles → doxorubicin (interconversion); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

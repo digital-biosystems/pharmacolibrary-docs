@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption parameters for carbamazepine lacked source estimates, forcing model defaults that were not supported by the paper data.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Roberti2021_reference" status="needs_review" stale="false" population="adults with focal onset seizures" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Roberti R, De Caro C, Iannone LF, Zaccara G, Lattanzi S, Russo E. Pharmacology o
 
 ### Reviewer guidance
 
-**Absorption parameters for carbamazepine lacked source estimates, forcing model defaults that were not supported by the paper data.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists carbamazepine apparent oral clearance as 1.4 L/h and apparent volume of distribution as 60.5932 L, but omits any absorption rate constant or lag time. Consequently, the model builder applied library defaults for these missing absorption components to simulate the oral dosing profile. Although a second reader noted discrepancies in several extracted values, the primary refusal reason remained the reliance on unsourced default assumptions for absorption. Extracted — carbamazepine: CL/F 1.4 L/h, V/F 60.6 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — carbamazepine: CL/F 1.4 L/h, V/F 60.6 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 35, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

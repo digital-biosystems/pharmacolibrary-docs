@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time were left at library defaults rather than extracted from the abstract-only record for digoxin.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_MartnSurez1993_reference" status="needs_review" stale="false" population="patients with high serum digoxin concentrations" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Martín-Suárez A, Lanao JM, Calvo MV, Martín P, Domínguez-Gil A. Digoxin phar
 
 ### Reviewer guidance
 
-**Bioavailability and lag time were left at library defaults rather than extracted from the abstract-only record for digoxin.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The model structure was built solely from the paper's abstract, which lacks specific parameter estimates. Consequently, bioavailability (F) and lag time (Tlag) had no extracted values and defaulted to library placeholders. These unreported parameters affect the simulated profile but are not supported by the source data. Extracted — digoxin: V 543 litre, CL 8.73 litre/h, kabs 2.29 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — digoxin: V 543 litre, CL 8.73 litre/h, kabs 2.29 h−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

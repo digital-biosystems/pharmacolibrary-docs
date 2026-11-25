@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record is disputed because the abstract-only source lacks dose and metabolite details, conflicting on ifosfamide's 11.5 h half-life.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ifosfamide" model-id="Ifosfamide_Kerbusch2001v4_reference" status="needs_review" stale="false" population="patients with soft tissue sarcoma" measured-compound="ifosfamide" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Kerbusch T, Mathĵt RA, Keizer HJ, Ouwerkerk J, Rodenhuis S, Schellens JH et al.
 
 ### Reviewer guidance
 
-**The record is disputed because the abstract-only source lacks dose and metabolite details, conflicting on ifosfamide's 11.5 h half-life.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was constructed solely from the paper's abstract, causing reported summary statistics to stand in for a fitted model. The second reader could not identify the dose compound or primary analyte, contradicting the record's specification of ifosfamide. Additionally, the reader disagreed on the presence of metabolic pathways to 2-dechloroethylifosfamide, 3-dechloroethylifosfamide, and 4-hydroxyifosfamide. There is also a conflict regarding whether the 11.5 h induction half-life parameter is present in the data. Extracted — ifosfamide: CL 3.03 l/h, V 44 l, t1/2z 11.5 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ifosfamide: CL 3.03 l/h, V 44 l, t1/2z 11.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ifosfamide, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.375 | cross-check contradicted by a second reader: verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

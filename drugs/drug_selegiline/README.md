@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Mahmood_1998_MAO_B_inhibition](drugs/drug_selegiline/pd_Mahmood_1998_MAO_B_inhibition.md) | inhibition of platelet MAO-B activity ← selegiline · delayed effect through an effect compartment | — | Mahmood I, Is 10 milligrams selegiline essential a…, Therapeutic drug monitoring (1998) | [10.1097/00007691-199812000-00024](https://doi.org/10.1097/00007691-199812000-00024) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Mahmood_1998_platelet_MAO_B_activity](drugs/drug_selegiline/pd_Mahmood_1998_platelet_MAO_B_activity.md) | platelet MAO-B activity ← selegiline · direct sigmoid Emax (Hill) effect | — | Mahmood I, Is 10 milligrams selegiline essential a…, Therapeutic drug monitoring (1998) | [10.1097/00007691-199812000-00024](https://doi.org/10.1097/00007691-199812000-00024) |
 
 ## Pharmacogenomics (PGx)
 
@@ -51,7 +51,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 14:31 | 7:17 | 0/0/0 | 0/1/0 | 0/0/3 | 59,698/2,854 | ollama / glm-5.3-flash | 6 | 6/0 | 5/1 | 0 |
+| 2026-11-24 05:44 | 0:03 | 0/0/0 | 0/1/0 | 0/0/3 | 3,975/184 | einfracz / qwen3.8-27b | 6 | 6/0 | 5/1 | 0 |
 
 ## Coverage
 
@@ -62,13 +62,10 @@ _not available_
 
 ## Full-text requests
 
-_14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_11 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Rohatagi_1997_2.pdf` | Rohatagi S et al., Integrated pharmacokinetic and metaboli…, Biopharmaceutics & drug dis… (1997) | popPK | 9 | [10.1002/(sici)1099-081x(199710)18:7&lt;567::aid-bdd49&gt;3.0.co;2-7](https://doi.org/10.1002/(sici)1099-081x(199710)18:7<567::aid-bdd49>3.0.co;2-7) | [9330778](https://pubmed.ncbi.nlm.nih.gov/9330778) | A compartmental PK-metabolic model of selegiline and its metabolites in humans is described, but the abstract reports only fit statistics (R²=0.98, MSC=3.4) without numeric CL/V/ka values, which likely reside in tables/figures not provided. |
-| `Mahmood_1998.pdf` | Mahmood I, Is 10 milligrams selegiline essential a…, Therapeutic drug monitoring (1998) | popPK | 6 | [10.1097/00007691-199812000-00024](https://doi.org/10.1097/00007691-199812000-00024) | [9853994](https://pubmed.ncbi.nlm.nih.gov/9853994) | A PK-PD model for selegiline was developed in humans, but no numeric parameter values (CL, V, Emax, EC50, ke0) appear in the provided evidence. |
-| `Rohatagi_1997.pdf` | Rohatagi S et al., Pharmacokinetic evaluation of a selegil…, Biopharmaceutics & drug dis… (1997) | popPK | 6 | [10.1002/(sici)1099-081x(199711)18:8&lt;665::aid-bdd47&gt;3.0.co;2-a](https://doi.org/10.1002/(sici)1099-081x(199711)18:8<665::aid-bdd47>3.0.co;2-a) | [9373724](https://pubmed.ncbi.nlm.nih.gov/9373724) | Human PK study of selegiline with compartmental analysis, but only the formation-absorption rate constant ratios (1.57±1.04, 0.61±0.54) are given; full CL/V parameters likely in figures/tables not provided. |
 | `Finberg_1985.pdf` | Finberg JP et al., Reduced peripheral presynaptic adrenoce…, British journal of pharmaco… (1985) | pd | 4 | [10.1111/j.1476-5381.1985.tb16140.x](https://doi.org/10.1111/j.1476-5381.1985.tb16140.x) | [2985158](https://www.ncbi.nlm.nih.gov/pubmed/2985158) | metadata signals extractable PD data (EC50) |
 | `Laine_2001.pdf` | Laine K et al., CYP2C19 polymorphism is not important f…, European journal of clinica… (2001) | pgx | 8 | [10.1007/s002280100289](https://doi.org/10.1007/s002280100289) | [11417445](https://www.ncbi.nlm.nih.gov/pubmed/11417445) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Scheinin_1998.pdf` | Scheinin H et al., CYP2D6 polymorphism is not crucial for…, Clinical pharmacology and t… (1998) | pgx | 8 | [10.1016/S0009-9236(98)90071-6](https://doi.org/10.1016/S0009-9236(98)90071-6) | [9797797](https://www.ncbi.nlm.nih.gov/pubmed/9797797) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
@@ -81,43 +78,75 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Walsky_2006.pdf` | Walsky RL et al., Evaluation of 227 drugs for in vitro in…, Journal of clinical pharmac… (2006) | pgx | 7 | [10.1177/0091270006293753](https://doi.org/10.1177/0091270006293753) | [17101742](https://www.ncbi.nlm.nih.gov/pubmed/17101742) | metadata signals extractable PGX data (CYP2B6, PK/PD-context) |
 | `Watanabe_2010.pdf` | Watanabe T et al., Functional characterization of 26 CYP2B…, Pharmacogenetics and genomi… (2010) | pgx | 5 | [10.1097/FPC.0b013e32833bba0e](https://doi.org/10.1097/FPC.0b013e32833bba0e) | [20517174](https://www.ncbi.nlm.nih.gov/pubmed/20517174) | metadata signals extractable PGX data (CYP2B6) |
 
-<sub>queue written 2026-10-06 14:30 UTC</sub>
+<sub>queue written 2026-11-24 05:44 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Agúndez_2013 | not_relevant | 5 | 2 | Abstract only mentions CYP2B6/selegiline as a potential gene/drug pairing without reporting any PK/PD parameter effect sizes. |
-| PGx | Benetton_2007 | not_relevant | 3 | 5 | In vitro enzyme phenotyping with correlation analysis, not a gene variant/genotype effect on in vivo PK/PD parameters. |
+| popPK | Agúndez_2013 | irrelevant | 0 | 0 | This is a review on pharmacogenetics and does not report quantitative pharmacokinetic parameters for selegiline. |
+| PGx | Agúndez_2013 | not_relevant | 4 | 2 | The paper is a review that only mentions the CYP2B6/selegiline gene-drug pairing in a list without reporting specific quantitative PK/PD parameters or fitted effect sizes. |
+| popPK | Benetton_2007 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of P450 phenotyping and metabolic pathways, not a pharmacokinetic study reporting quantitative disposition parameters like clearance or volume of distribution. |
+| PGx | Benetton_2007 | not_relevant | 0 | 0 | The paper identifies the CYP enzymes responsible for selegiline metabolism but does not report specific gene variants, genotypes, or their effect on PK/PD parameters. |
 | PGx | Cacabelos_2017 | not_relevant | 2 | 3 | Review table only lists gene names associated with selegiline metabolism; no variant effect on a PK/PD parameter is reported. |
-| PGx | Chang_2009 | not_relevant | 2 | 3 | Paper studies EE inhibition of CYPs in vitro; selegiline only mentioned as a CYP2B6 substrate, no gene variant effect on its PK/PD reported. |
+| popPK | Chang_2009 | irrelevant | 0 | 0 | The study is an in vitro CYP450 inhibition study for ethinyl estradiol, where selegiline is only mentioned as a probe drug for CYP2B6 activity, not as the subject of a PK analysis. |
+| PGx | Chang_2009 | not_relevant | 0 | 0 | The paper discusses ethinyl estradiol's inhibition of CYP450s and explicitly states it is difficult to rationalize drug interactions involving CYP2B6 (e.g., selegiline), reporting no pharmacogenomic effect on selegiline PK/PD. |
 | PGx | De_2012 | not_relevant | 0 | 0 | Review of ADHD pharmacotherapy with no gene variant/genotype effects on selegiline or any PK/PD parameters reported. |
-| PGx | Di_2009 | not_relevant | 2 | 1 | Selegiline is mentioned only as a mechanism-based inhibitor of CYP2A6; no gene variant effect on selegiline PK/PD is reported. |
-| popPK | Dingemanse_1996 | irrelevant | 3 | 1 | Selegiline is co-administered as one arm of an interaction study; PK parameters reported are for moclobemide and its metabolites, not selegiline, and no numeric selegiline values appear in the evidence. |
-| PGx | Erickson_2007 | not_relevant | 0 | 0 | Selegiline is used only as a metabolic inhibitor tool for bicifadine; no gene variant effect on selegiline PK/PD is reported. |
+| popPK | Di_2009 | irrelevant | 0 | 0 | The paper is a review of the CYP2A6 enzyme and its polymorphisms, mentioning selegiline only as a mechanism-based inhibitor rather than providing any pharmacokinetic parameters for selegiline itself. |
+| PGx | Di_2009 | not_relevant | 0 | 0 | The paper is a review of CYP2A6 and mentions selegiline only as a mechanism-based inhibitor, without reporting any pharmacogenomic effects on selegiline's PK/PD. |
+| popPK | Dingemanse_1996 | irrelevant | 0 | 0 | The study measures pharmacokinetic parameters only for moclobemide and its metabolites; selegiline is a co-administered agent and its specific quantitative PK parameters (CL, V, etc.) are not reported. |
+| PGx | Dingemanse_1996 | not_relevant | 0 | 0 | The paper reports a pharmacokinetic and pharmacodynamic interaction between two drugs (selegiline and moclobemide), not the impact of a specific gene variant or genotype on selegiline's PK or PD parameters. |
+| popPK | Erickson_2007 | irrelevant | 0 | 0 | The paper studies the in vitro metabolism of bicifadine, and selegiline is used only as a mechanistic inhibitor (probe), not as the subject of PK analysis. |
+| PGx | Erickson_2007 | not_relevant | 0 | 0 | The study focuses on the metabolism of the drug bicifadine, not selegiline, and selegiline is only used as an enzyme inhibitor in vitro. |
 | popPK | Finberg_1985 | irrelevant | 0 | 0 | no_text gate: only 106 chars of text extracted (&lt; 400) |
-| popPK | Glezer_2003 | irrelevant | 1 | 1 | This is a pharmacodynamic study of metabolites' sympathomimetic effects in rat vas deferens, not a PK study of selegiline disposition; no CL/V/ka/half-life values. |
-| PGx | Guay_2006 | not_relevant | 0 | 0 | Review of rasagiline (not selegiline) PK/PD; no gene variant effects on selegiline parameters reported. |
-| PGx | Kahma_2021 | not_relevant | 0 | 0 | In vitro CYP inhibition assay; selegiline only used as a TDI probe, no gene variant effect on PK/PD. |
-| PGx | Kivistö_2001 | not_relevant | 2 | 3 | This is a drug–drug interaction study (itraconazole/CYP3A4 inhibition), not a pharmacogenomic variant/genotype effect on selegiline PK/PD. |
-| PGx | Kálmán_2003 | not_relevant | 3 | 2 | Reports APOE genotype effect on clinical response (efficacy scales), not on a PK or PD parameter of selegiline. |
-| PGx | Lecht_2007 | not_relevant | 0 | 0 | Paper reviews rasagiline PK/PD; no gene variant/genotype effects on selegiline PK or PD parameters are reported. |
+| PGx | Finberg_1985 | not_relevant | 0 | 0 | The study focuses on adrenoceptor sensitivity in rats following antidepressant treatment and does not investigate the pharmacokinetics or pharmacodynamics of selegiline. |
+| popPK | Glezer_2003 | irrelevant | 0 | 0 | This is an in-vitro pharmacological study measuring EC50 values in rat vas deferens, not a pharmacokinetic study reporting disposition parameters for selegiline. |
+| PGx | Glezer_2003 | not_relevant | 0 | 0 | The paper reports the pharmacological effects of drug metabolites and does not report any gene variants or genotypes. |
+| popPK | Guay_2006 | irrelevant | 0 | 0 | The paper is a review of rasagiline, a different drug, with selegiline mentioned only as a comparator/context. |
+| PGx | Guay_2006 | not_relevant | 0 | 0 | The paper is a review of Rasagiline, not Selegiline, and does not report any pharmacogenomic effects on Selegiline PK/PD. |
+| popPK | Kahma_2021 | irrelevant | 0 | 0 | The study is an in vitro mechanistic assay measuring CYP enzyme inhibition, where selegiline is used as a probe inhibitor rather than being the subject of a pharmacokinetic disposition study. |
+| PGx | Kahma_2021 | not_relevant | 0 | 0 | The paper describes an in vitro CYP inhibition method and mentions selegiline only as a tool compound (CYP2A6 inhibitor), reporting no genetic variants or pharmacogenomic effects on selegiline's PK/PD. |
+| popPK | Kivistö_2001 | irrelevant | 2 | 0 | The abstract states that selegiline PK variables were unaffected but does not report specific quantitative disposition parameter values (such as CL, V, or ka), only relative changes in metabolite AUC. |
+| PGx | Kivistö_2001 | not_relevant | 0 | 0 | The study examines the effect of a drug-drug interaction (CYP3A4 inhibitor), not a pharmacogenomic effect of a specific gene variant/genotype on the PK parameters of selegiline. |
+| popPK | Kálmán_2003 | irrelevant | 0 | 0 | The study is a clinical trial investigating therapeutic response to selegiline in Alzheimer's patients and does not report any pharmacokinetic parameters. |
+| PGx | Kálmán_2003 | not_relevant | 1 | 0 | The study explicitly reports a lack of influence of APOE genotype on selegiline treatment outcome (no pharmacogenomic effect). |
+| popPK | Laine_2001 | irrelevant | 0 | 0 | no_text gate: only 78 chars of text extracted (&lt; 400) |
+| PGx | Laine_2001 | not_relevant | 1 | 5 | The title explicitly states that the CYP2C19 polymorphism is not important for selegiline metabolism, indicating a null result with no reported genetic effect on PK parameters. |
+| popPK | Lecht_2007 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of rasagiline, mentioning selegiline only as a comparator drug without providing quantitative PK parameters for it. |
+| PGx | Lecht_2007 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics and metabolism of rasagiline (a different drug) and does not report pharmacogenomic effects of selegiline. |
 | PGx | Lee_2019 | not_relevant | 0 | 0 | Paper is a computational drug repositioning study; selegiline is only a predicted anti-AD candidate, with no gene variant effect on any PK/PD parameter reported. |
-| popPK | Mahmood_1998 | relevant | 6 | 2 | A PK-PD model for selegiline was developed in humans, but no numeric parameter values (CL, V, Emax, EC50, ke0) appear in the provided evidence. |
-| PGx | Mitchell_1997 | not_relevant | 1 | 1 | Selegiline is only mentioned as a serotonin syndrome risk with SSRIs; no gene variant effect on its PK/PD is reported. |
-| popPK | Müller_2014 | irrelevant | 1 | 0 | This is a review of rasagiline for Parkinson's disease with no original PK parameters for selegiline reported. |
-| popPK | Nomoto_2005 | irrelevant | 1 | 0 | A narrative review of PK variability in Parkinson's drugs; selegiline is only mentioned qualitatively with no quantitative disposition parameters. |
-| PGx | Nomoto_2005 | not_relevant | 2 | 3 | Selegiline metabolism via CYP2D6/3A4 is mentioned, but only drug interactions affecting bioavailability are reported, with no gene variant/genotype effect on PK/PD parameters. |
-| PGx | Palacharla_2018 | not_relevant | 3 | 5 | Reports fm,CYP2B6 for selegiline in vitro, but no gene variant/genotype effect on PK/PD parameters. |
-| PGx | Riederer_2018 | not_relevant | 0 | 0 | Narrative review mentions ABCB1 transporter conceptually but reports no gene variant effect on selegiline PK/PD parameters. |
-| popPK | Rohatagi_1997 | relevant | 6 | 4 | Human PK study of selegiline with compartmental analysis, but only the formation-absorption rate constant ratios (1.57±1.04, 0.61±0.54) are given; full CL/V parameters likely in figures/tables not provided. |
-| popPK | Rohatagi_1997_2 | relevant | 9 | 3 | A compartmental PK-metabolic model of selegiline and its metabolites in humans is described, but the abstract reports only fit statistics (R²=0.98, MSC=3.4) without numeric CL/V/ka values, which likely reside in tables/figures not provided. |
-| PGx | Schnoll_2006 | not_relevant | 1 | 1 | Selegiline is only mentioned briefly as a possible treatment; no gene variant or PK/PD parameter data reported. |
-| popPK | Schwengber_2017 | irrelevant | 1 | 1 | In vitro transdermal release study of selegiline from carbon nanotube buckypapers, not a pharmacokinetic disposition study; no CL/V/ka values present. |
-| PGx | Shaik_2017 | not_relevant | 0 | 0 | Paper describes MAO enzyme inhibition by chemical inhibitors, not genetic variants affecting selegiline PK/PD. |
-| PGx | Taavitsainen_2000 | not_relevant | 2 | 5 | In vitro enzyme kinetics and chemical inhibition of CYPs; no gene variant/genotype/phenotype effect on selegiline PK/PD reported. |
-| PGx | Walsky_2006 | not_relevant | 1 | 1 | In vitro CYP2B6 inhibition study with no gene variant/genotype effect on selegiline PK/PD parameters. |
-| PGx | Wang_2008 | not_relevant | 3 | 1 | Selegiline is only mentioned as a CYP2B6 substrate; no variant-specific PK/PD effect data are reported. |
+| popPK | Mahmood_1998 | relevant | 8 | 0 | The paper describes the development of a pharmacokinetic-pharmacodynamic model for selegiline, but no specific quantitative PK parameter values (such as clearance, volume, or half-life) are provided in the extracted evidence. |
+| PGx | Mahmood_1998 | not_relevant | 0 | 0 | The study investigates dose-response relationships and PK/PD modeling for selegiline but does not report any effect of genetic variants or genotypes on its pharmacokinetics or pharmacodynamics. |
+| popPK | Mitchell_1997 | irrelevant | 0 | 0 | The paper is a review of SSRIs and mentions selegiline only as a co-administered agent regarding pharmacodynamic interactions (serotonin syndrome), without reporting any PK parameters. |
+| PGx | Mitchell_1997 | not_relevant | 0 | 0 | The text is a general review of pharmacological drug interactions involving SSRIs and mentions selegiline only as a risk factor for serotonin syndrome, without reporting any pharmacogenomic data or specific PK/PD parameter changes driven by genetic variants. |
+| popPK | Müller_2014 | irrelevant | 0 | 0 | The paper is a review of rasagiline, a different drug, and does not contain quantitative pharmacokinetic data for selegiline. |
+| PGx | Müller_2014 | not_relevant | 0 | 0 | The paper is a review of rasagiline's pharmacokinetics and clinical use, with no focus on selegiline or any pharmacogenomic analysis. |
+| popPK | Nomoto_2005 | irrelevant | 0 | 0 | The paper is a general review of Parkinson's disease pharmacokinetics that only mentions selegiline's metabolic pathways qualitatively without reporting any quantitative PK parameters for selegiline. |
+| PGx | Nomoto_2005 | not_relevant | 1 | 0 | The paper mentions CYP2D6/3A4 metabolism of selegiline and drug-drug interactions (e.g., quinidine) but does not report pharmacogenomic effects (genotype/phenotype) on PK/PD parameters. |
+| popPK | Palacharla_2018 | irrelevant | 0 | 0 | The study is an in-vitro enzyme phenotyping study determining CYP2B6 contribution (fm,CYP) and does not report pharmacokinetic disposition parameters (CL, V, ka, etc.) for selegiline in vivo. |
+| PGx | Palacharla_2018 | not_relevant | 0 | 0 | The paper discusses in vitro CYP2B6 fractions for selegiline but does not report a pharmacogenomic effect on PK/PD parameters. |
+| popPK | Riederer_2018 | irrelevant | 0 | 0 | This is a narrative review of MAO-B inhibitors in Parkinson's disease that discusses clinical pharmacology and mechanisms but does not report original quantitative pharmacokinetic parameters (CL, V, ka) for selegiline. |
+| PGx | Riederer_2018 | not_relevant | 0 | 0 | The text is a narrative review of MAO-B inhibitors in Parkinson's disease and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of selegiline. |
+| popPK | Rohatagi_1997 | irrelevant | 5 | 2 | The study describes a pulsatile delivery system and mentions compartmental analysis, but the provided text only reports a ratio of rate constants (1.57 and 0.61) without standard disposition parameters like CL, V, or ka, making it insufficient for standard PK parameter extraction. |
+| PGx | Rohatagi_1997 | not_relevant | 0 | 0 | The study evaluates a new formulation in healthy volunteers and contains no genetic variants or pharmacogenomic analysis. |
+| popPK | Rohatagi_1997_2 | relevant | 9 | 0 | The paper reports a pharmacokinetic model and NCA parameters for selegiline, but the specific numeric values are not listed in the provided abstract/evidence text. |
+| PGx | Rohatagi_1997_2 | not_relevant | 0 | 0 | The paper reports a pharmacokinetic model for selegiline in a small cohort of healthy males without analyzing any gene variants or genetic phenotypes. |
+| popPK | Sarginson_2015 | irrelevant | 0 | 0 | The paper is a pharmacogenetics study on smoking cessation outcomes and does not report pharmacokinetic parameters. |
+| PGx | Sarginson_2015 | not_relevant | 4 | 2 | The paper reports an association between genetic variants and smoking cessation outcomes (abstinence/craving), not pharmacokinetic or direct pharmacodynamic parameters of selegiline. |
+| popPK | Scheinin_1998 | irrelevant | 4 | 0 | The study reports only qualitative findings and range values (e.g., "1 to 32 nmol/L") rather than specific quantitative PK parameters like clearance, volume, or half-life for selegiline. |
+| popPK | Schnoll_2006 | irrelevant | 0 | 0 | The paper is a review of pharmacotherapies for tobacco dependence and mentions selegiline only as a potential treatment without providing any quantitative pharmacokinetic parameters. |
+| PGx | Schnoll_2006 | not_relevant | 0 | 0 | The text is a broad review of pharmacotherapies for tobacco dependence and mentions selegiline only as a drug with limited evidence in certain subgroups, without reporting any specific gene variant or pharmacokinetic/pharmacodynamic parameters. |
+| popPK | Schwengber_2017 | irrelevant | 0 | 0 | The study is an in vitro evaluation of transdermal delivery systems using selegiline as a model drug, reporting release kinetics rather than pharmacokinetic disposition parameters like clearance or volume. |
+| PGx | Schwengber_2017 | not_relevant | 0 | 0 | The paper focuses on in vitro transdermal drug delivery systems and release kinetics, containing no pharmacogenomic data or genotype-based effects on selegiline PK/PD. |
+| popPK | Shaik_2017 | irrelevant | 0 | 0 | The paper describes in-vitro enzyme inhibition studies using selegiline as a probe substrate, not a pharmacokinetic study of selegiline's disposition. |
+| PGx | Shaik_2017 | not_relevant | 0 | 0 | The paper investigates MAO inhibition by novel compounds in vitro and does not report pharmacogenomic effects on selegiline PK/PD. |
+| popPK | Taavitsainen_2000 | irrelevant | 1 | 2 | The study is explicitly in vitro (human liver microsomes) and reports metabolic enzyme kinetics (Km, Vmax, Ki) rather than in vivo disposition parameters (CL, V, ka, t1/2) or population PK models. |
+| PGx | Taavitsainen_2000 | not_relevant | 0 | 0 | The paper characterizes CYP enzyme involvement in selegiline metabolism in vitro but does not report any genetic variants or genotypes affecting PK/PD parameters. |
+| popPK | Walsky_2006 | irrelevant | 0 | 0 | The study is an in vitro mechanistic screen of CYP2B6 inhibitors where selegiline is only mentioned as a substrate example, with no PK parameters for selegiline reported. |
+| PGx | Walsky_2006 | not_relevant | 0 | 0 | The paper focuses on in vitro CYP2B6 inhibition by other drugs (drug-drug interactions) and does not report genetic variants affecting selegiline PK/PD. |
+| popPK | Wang_2008 | irrelevant | 0 | 0 | The paper is a review of the CYP2B6 enzyme and mentions selegiline only as a substrate example, without reporting any pharmacokinetic parameter values. |
+| PGx | Wang_2008 | not_relevant | 0 | 0 | The paper is a review summarizing general CYP2B6 properties and listing selegiline as a substrate, but it does not report specific experimental data or fitted effect sizes of gene variants on selegiline PK/PD parameters. |
+| popPK | Watanabe_2010 | irrelevant | 1 | 1 | The study reports in-vitro enzyme kinetic parameters (Vmax/Km) for CYP2B6 variants metabolizing selegiline, rather than population pharmacokinetic disposition parameters (CL, V, t1/2) in a physiological system. |
 
 
 </details>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because candesartan and tenofovir metabolites are unlinked orphan compartments, unrelated to telmisartan parameters like kel 1.09 h−1.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Liu2023_reference" status="rejected" stale="false" population="healthy adults" measured-compound="telmisartan" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -40,7 +40,7 @@ Liu F, Yi H, Wang L, Cheng Z, Zhang G. A novel method to estimate the absorption
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,13 @@ Liu F, Yi H, Wang L, Cheng Z, Zhang G. A novel method to estimate the absorption
 
 ### Reviewer guidance
 
-**The model was rejected because candesartan and tenofovir metabolites are unlinked orphan compartments, unrelated to telmisartan parameters like kel 1.09 h−1.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record contains structural links describing the metabolism of candesartan cilexetil to candesartan and tenofovir disoproxil fumarate to tenofovir. These linked entities are unreachable from the dose or unlinked, creating orphan compartments in the structure. The extracted parameters, such as kel 1.09 h−1, apply only to telmisartan, leaving the other molecules structurally invalid. Extracted — telmisartan: kel 1.09 h−1, V 500 L, kabs 4.53 /h, tlag 0.25 h.
+Extracted — telmisartan: kel 1.09 h−1, V 500 L, kabs 4.53 /h, tlag 0.25 h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has candesartan cilexetil → candesartan (metabolism); tenofovir disoproxil fumarate → tenofovir (metabolism), the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -92,6 +94,36 @@ The record contains structural links describing the metabolism of candesartan ci
 - LLM region Liu_2023:discussion_prose: no JSON records returned
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
+
+<details><summary>10 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['candesartan cilexetil', 'candesartan', 'metabolism'], ['tenofovir disoproxil fumarate', 'tenofovir', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[1.098]` | 1.09 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k10]` |  | 21.38 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` |  | 0.025 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k21]` |  | 0.100 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 4.53 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kmax]` |  | 0.375 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.25 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` |  | 9.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 500.0 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Sulbactam’s k13 and k31 have no reported values and were left at library defaults, so this record was held back.
+> K13, k31 use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Cammarata2025_reference" status="needs_review" stale="false" population="healthy adults and patients with HABP, VABP, or cUTI/AP" measured-compound="sulbactam" parameterization="apparent" topology="3C"></div>
 
@@ -65,13 +65,13 @@ Cammarata AP, Safir MC, Trang M, Larson KB, O'Donnell JP, Bhavnani SM et al. Pop
 
 ### Reviewer guidance
 
-**Sulbactam’s k13 and k31 have no reported values and were left at library defaults, so this record was held back.**
+**K13, k31 use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).**
 
-K13 and k31 use library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper. The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. The builder also defaulted Tlag and assumed F=1, Fm=1, and no molar correction; a second reader disputed the apparent parameterization, with agreement 0.444 and 0 of 1 readers agreeing. Extracted — sulbactam: CL 14 L/h, V1 8.9 L, Q 18.9 L/h, V2 9.29 L, fe 0.479, Qd 31.7 mL/min, V 49.2 L, V3 25.3 L, … (+2).
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — sulbactam: CL 14 L/h, V1 8.9 L, Q 18.9 L/h, V2 9.29 L, fe 0.479, Qd 31.7 mL/min, V 49.2 L, V3 25.3 L, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulbactam–durlobactam, the second reading sulbactam/durlobactam; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -260,7 +260,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 3C → PK_3C* | PK_3C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check disputed by a second reader: verdict disputed, agreement 0.444, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.444 (8 of 18 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.444 | cross-check contradicted by a second reader: verdict disputed; agreement 0.444 (8 of 18 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

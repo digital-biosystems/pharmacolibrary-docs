@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because the intercompartmental clearance unit is dimensionally inconsistent with a volume flow, causing a structural mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit L/day ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time]; Q66 unit mg/day ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Cirincione2017_single_dose_model_parameter_estimat" status="rejected" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Cirincione B, Edwards J, Mager DE. Population Pharmacokinetics of an Extended-Re
 
 ### Reviewer guidance
 
-**Rejected because the intercompartmental clearance unit is dimensionally inconsistent with a volume flow, causing a structural mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit L/day ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time]; Q66 unit mg/day ([mass] / [time]) vs [mass] / [time].**
 
-The parameter named 'Q' is defined as the apparent intercompartmental clearance between central and peripheral compartments, which requires a volume flow dimension, yet it is listed with the unit L/day and a value of 89.3. This conflicts with the required dimension of length cubed over time. Additionally, the absolute bioavailability Fab is reported as a percentage (1.13%) rather than a dimensionless fraction, contributing to the dimensional inconsistencies identified in the review. Extracted — exenatide: kabs 2.98 1/day, CLint 110 L/day, V 7.03 L, Fab 1.13 %, ktr 0.0872 1/day, Km 567 pg/mL, Vmax 0.037 mg/day, Q 89.3 L/day, … (+2).
+A reported unit could not be converted (CLint, Fab, Km and Vmax), so that value has no SI equivalent. Extracted — exenatide: kabs 2.98 1/day, CLint 110 L/day, V 7.03 L, Fab 1.13 %, ktr 0.0872 1/day, Km 567 pg/mL, Vmax 0.037 mg/day, Q 89.3 L/day, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

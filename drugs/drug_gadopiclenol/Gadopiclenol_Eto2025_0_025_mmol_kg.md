@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for gadopiclenol was held back because a second reader disputed the extraction of all parameters, including Cmax, AUC, and clearance values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="gadopiclenol" model-id="Gadopiclenol_Eto2025_0_025_mmol_kg" status="needs_review" stale="false" population="Japanese and non-Japanese subjects, including adults and pediatric patients" measured-compound="gadopiclenol" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Eto T, Taoka T, Felices M, Pitrou C. Pharmacokinetics and safety of gadopiclenol
 
 ### Reviewer guidance
 
-**The record for gadopiclenol was held back because a second reader disputed the extraction of all parameters, including Cmax, AUC, and clearance values.**
+**cross_check_disputed; x1_cross_check.**
 
-A second reader disagreed with this record's values for Cmax (248.7 µg/mL), AUC (316 µg/mL.h), AUC/dose (183 µg/mL.h), and total clearance (5.5 L/h), returning null for each. Conversely, the second reader assigned the value 5.3 L/h to total clearance, which this record attributed to renal clearance. The disagreement across nearly all parameters resulted in a low agreement score of 0.267, leading to the needs_review verdict. Additionally, a unit issue prevented a parameter from being converted to SI, contributing to the model builder's substitutions. Extracted — gadopiclenol: Cmax 249 µg/mL, AUC∞ 316 µg/mL.h, AUC/dose 183 µg/mL.h, t1/2z 1.65 h, V 13.2 L, CL 5.5 L/h, CLR 5.3 L/h, fe 95.7.
+A reported unit could not be converted (Cmax, AUC∞ and AUC/dose), so that value has no SI equivalent. Extracted — gadopiclenol: Cmax 249 µg/mL, AUC∞ 316 µg/mL.h, AUC/dose 183 µg/mL.h, t1/2z 1.65 h, V 13.2 L, CL 5.5 L/h, CLR 5.3 L/h, fe 95.7.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of aucinf: this record has 316, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -161,14 +161,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.267, 0 of 1 reader(s) agree | 0.267 | cross-check disputed by a second reader: verdict disputed, agreement 0.267, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | pass | 1.4 | 1.67 | 1.193 | h→SI vs simulated h |
-| T1_t_half_beta | reference | pass | 1.4 | 1.67 | 1.193 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.43 | 1.67 | 1.168 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.44 | 1.67 | 1.16 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.7 | 1.67 | 0.9823 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.5 | 1.67 | 1.113 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.8 | 1.67 | 0.9277 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.267 (4 of 15 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.267 | cross-check contradicted by a second reader: verdict disputed; agreement 0.267 (4 of 15 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
+| T1_t_half_beta | reference | skipped |  | 1.67 |  | the transcribed record carries no number for this value |
+| T1_t_half_beta | reference | skipped |  | 1.67 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | pass | 1.43 | 1.67 | 1.168 | reported 1.43 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.44 | 1.67 | 1.16 | reported 1.44 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.7 | 1.67 | 0.9823 | reported 1.7 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.5 | 1.67 | 1.113 | reported 1.5 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.8 | 1.67 | 0.9277 | reported 1.8 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -184,7 +184,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_025_mmol_kg/Gadopiclenol_Eto2025_0_025_mmol_kg_modelica.zip" download>Gadopiclenol_Eto2025_0_025_mmol_kg_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_025_mmol_kg/Gadopiclenol_Eto2025_0_025_mmol_kg_modelica.zip" download>Gadopiclenol_Eto2025_0_025_mmol_kg_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_025_mmol_kg/Gadopiclenol_Eto2025_0_025_mmol_kg_fmi.zip" download>Gadopiclenol_Eto2025_0_025_mmol_kg_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_025_mmol_kg/Gadopiclenol_Eto2025_0_025_mmol_kg_matlab.zip" download>Gadopiclenol_Eto2025_0_025_mmol_kg_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_025_mmol_kg/Gadopiclenol_Eto2025_0_025_mmol_kg_matlab_simbio.zip" download>Gadopiclenol_Eto2025_0_025_mmol_kg_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>

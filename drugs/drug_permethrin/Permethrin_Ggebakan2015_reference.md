@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-> The permethrin AUC∞ unit mg/h/l is dimensionally invalid for an area-under-curve parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit mg/h/l ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="permethrin" model-id="Permethrin_Ggebakan2015_reference" status="rejected" stale="false" population="broiler chickens" measured-compound="permethrin" parameterization="mechanistic" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Gögebakan T, Eraslan G. Single-dose toxicokinetics of permethrin in broiler chi
 
 ## Population and dosing
 
-**Population:** broiler chickens · condition healthy · n = 20.
+**Population:** broiler chickens · condition healthy · age group adult.
 
 > **Species: bird.** This record comes from an animal study (bird), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -24,7 +24,7 @@ Gögebakan T, Eraslan G. Single-dose toxicokinetics of permethrin in broiler chi
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 8 extracted.  
+**Parameters:** 7 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,18 +32,17 @@ Gögebakan T, Eraslan G. Single-dose toxicokinetics of permethrin in broiler chi
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| t1/2λ | t1/2z | 4.73 | h |
-| MRT | MRT | 5.06 | h |
-| AUC0→∞ | AUC∞ | 16.45 | mg/h/l |
+| half-life at λ phase (t1/2λ) | t1/2β | 4.73 | h |
+| mean residence time (MRT) | MRT | 5.06 | h |
+| area under the concentration-time curve in 0→∞ (AUC0→∞) | AUC∞ | 16.45 | mg/h/l |
 | Cmax | Cmax | 0.6 | μg/ml |
 | tmax | tmax | 0.55 | h |
+| t1/2λ | t1/2α | 5.54 | h |
 | bioavailability | Fab | 0.11 |  |
-| typical individual of 37.6 kg clearance | CL | 6.94 | L/h |
-| Tlag [h] | tlag | 18.5 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,26 +52,25 @@ Gögebakan T, Eraslan G. Single-dose toxicokinetics of permethrin in broiler chi
 
 ### Reviewer guidance
 
-**The permethrin AUC∞ unit mg/h/l is dimensionally invalid for an area-under-curve parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit mg/h/l ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The record lists the permethrin AUC∞ as 16.45 mg/h/l, which has dimensions of mass per time per volume rather than concentration-time. Because the model was built from the abstract alone, these summary statistics stand in for a fitted model, and the second reader could not locate the reported values for AUC∞, bioavailability, Cmax, MRT, terminal half-life, or lag time in the source. Extracted — permethrin: t1/2z 4.73 h, MRT 5.06 h, AUC∞ 16.4 mg/h/l, Cmax 0.6 μg/ml, tmax 0.55 h, Fab 0.11, CL 6.94 L/h, tlag 18.5 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — permethrin: t1/2β 4.73 h, MRT 5.06 h, AUC∞ 16.4 mg/h/l, Cmax 0.6 μg/ml, tmax 0.55 h, t1/2α 5.54 h, Fab 0.11.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has permethrin, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bioavailability: this record has 0.11, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| t1/2λ | `Q57` · t1/2z | 4.73 | h | 1.703e+04 | s | h | llm_confirmed (0.6) | Gögebakan_2015:abstract, Gögebakan_2015:abstract |
-| MRT | `Q53` · MRT | 5.06 | h | 1.822e+04 | s | h | exact (1) | Gögebakan_2015:abstract, Gögebakan_2015:abstract |
-| AUC0→∞ | `Q17` · AUC∞ | 16.45 | mg/h/l |  |  | mg/(h·l) | exact (1) | Gögebakan_2015:abstract, Gögebakan_2015:abstract |
-| Cmax | `Q32` · Cmax | 0.6 | μg/ml |  |  | µg/ml | exact (1) | Gögebakan_2015:abstract |
+| half-life at λ phase (t1/2λ) | `Q60` · t1/2β | 4.73 | h | 1.703e+04 | s | h | llm (0.6) | Gögebakan_2015:abstract |
+| mean residence time (MRT) | `Q53` · MRT | 5.06 | h | 1.822e+04 | s | h | exact (1) | Gögebakan_2015:abstract |
+| area under the concentration-time curve in 0→∞ (AUC0→∞) | `Q17` · AUC∞ | 16.45 | mg/h/l |  |  | mg/(h·l) | llm (0.6) | Gögebakan_2015:abstract |
+| Cmax | `Q32` · Cmax | 0.6 | μg/ml | 0.0006 | kg/m3 | µg/ml | exact (1) | Gögebakan_2015:abstract |
 | tmax | `Q56` · tmax | 0.55 | h | 1980 | s | h | exact (1) | Gögebakan_2015:abstract |
+| t1/2λ | `Q59` · t1/2α | 5.54 | h | 1.994e+04 | s | h | llm_corrected (0.6) | Gögebakan_2015:abstract |
 | bioavailability | `Q40` · Fab | 0.11 |  |  |  |  | exact (1) | Gögebakan_2015:abstract |
-| typical individual of 37.6 kg clearance | `Q22` · CL | 6.94 | L/h | 1.928e-06 | m3/s | L/h | review_gapfill (0.7) | Gwee_2020:review |
-| Tlag [h] | `Q83` · tlag | 18.5 | h | 6.66e+04 | s | h | review_gapfill (0.7) | Duthaler_2021:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -82,15 +80,15 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
+- unit_dimension_mismatch: 'area under the concentration-time curve in 0→∞ (AUC0→∞)' → Q17 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped duplicate Q53 ('MRT', value 7.06) — already have one for this compound
 - unit_dimension_mismatch: 'AUC0→∞' → Q17 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped duplicate Q17 ('AUC0→∞', value 1.95) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=permethrin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Gwee_2020's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q83 (tlag) from Duthaler_2021's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Gögebakan_2015_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
@@ -98,32 +96,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.158 (3/19 fields) | 16 |
+| `gpt-oss-120b` | not confirmed | 0.714 (10/14 fields) | 4 |
 
-<details><summary>16 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[auc0-inf]` | 16.45 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc0-inf]` |  | 16.45 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability of permethrin]` |  | 0.11 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[bioavailability]` | 0.11 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailability]` |  | 0.11 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` | 0.6 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` |  | 0.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mrt]` | 5.06 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mrt]` |  | 5.06 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2λ]` | 4.73 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2λ]` |  | 4.73 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag [h]]` | 18.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tmax]` | 0.55 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tmax]` |  | 0.55 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[typical individual of 37.6 kg clearance]` | 6.94 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | permethrin | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | permethrin | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[half-life at λ phase].parameter_id` | Q60 | Q57 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2λ]` | 5.54 |  | only_one_extracted |
 
 </details>
 
@@ -137,19 +123,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | mg/h/l ([mass] / [time] / [length] ** 3) | ['Gögebakan_2015:abstract', 'Gögebakan_2015:abstract'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Gwee_2020:review'] |
+| C5_dimension_Q17 | fail | [mass] * [time] / [length] ** 3 | mg/h/l ([mass] / [time] / [length] ** 3) | ['Gögebakan_2015:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Gögebakan_2015:abstract'] |
-| C5_dimension_Q53 | pass | [time] |  | ['Gögebakan_2015:abstract', 'Gögebakan_2015:abstract'] |
+| C5_dimension_Q53 | pass | [time] |  | ['Gögebakan_2015:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Gögebakan_2015:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Gögebakan_2015:abstract', 'Gögebakan_2015:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Duthaler_2021:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.94 | ['Gwee_2020:review'] |
+| C5_dimension_Q59 | pass | [time] |  | ['Gögebakan_2015:abstract'] |
+| C5_dimension_Q60 | pass | [time] |  | ['Gögebakan_2015:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 6.94 L/h | ['Gwee_2020:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -173,4 +156,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpermethrin%5D%20Permethrin_Ggebakan2015_reference&body=Drug%3A%20permethrin%0ARecord%3A%20Permethrin_Ggebakan2015_reference%0APaper%3A%20G%C3%B6gebakan_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_permethrin/Permethrin_Ggebakan2015_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 11:29 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:04 UTC</sub>

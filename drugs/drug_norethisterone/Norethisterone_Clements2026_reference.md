@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Norethisterone’s recorded total clearance of 0.7 L/day was rejected because the paper concerns another drug, not norethisterone.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="norethisterone" model-id="Norethisterone_Clements2026_reference" status="rejected" stale="false" population="" measured-compound="norethisterone" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Clements JD, Sorribes IC, Kaullen J, Neumar C, Taylor A, Yue MS et al. Simultane
 
 ### Reviewer guidance
 
-**Norethisterone’s recorded total clearance of 0.7 L/day was rejected because the paper concerns another drug, not norethisterone.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-Neither the paper title nor abstract names norethisterone, and the relevance assessment identifies the paper as concerning another drug. Although the record assigns norethisterone total clearance of 0.7 L/day, central and peripheral volumes of 4.81 L and 12.7 L, and intercompartmental clearance of 0.771 L/day, the parameter labels refer to ADC or belantamab mafodotin. Extracted — norethisterone: CL 0.7 L/day, V1 4.81 L, V2 12.7 L, Q 0.771 L/day.
+Extracted — norethisterone: CL 0.7 L/day, V1 4.81 L, V2 12.7 L, Q 0.771 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q48: this record has none, the second reading 4.45. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.9 (9 of 10 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.9 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

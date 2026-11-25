@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> Record rejected because the three-compartment structure for fentanyl contains unreachable compartments.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Bragg1995_reference" status="rejected" stale="false" population="neonatal dogs" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Bragg P, Zwass MS, Lau M, Fisher DM. Opioid pharmacodynamics in neonatal dogs: d
 
 ### Reviewer guidance
 
-**Record rejected because the three-compartment structure for fentanyl contains unreachable compartments.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists three distinct volumes of distribution for fentanyl: V1, V2, and V3. Despite these multiple volumes, the defined model structure is only one compartment. This mismatch means the peripheral compartments have no path from the dose, making them orphan compartments. Extracted — fentanyl: CL 88.8 ml·kg⁻¹·min⁻¹, V2 1.43 l/kg, V3 5.19 l/kg, Vss 7.11 l/kg, kabs 0.27 minute -1, tlag 15 min.
+Extracted — fentanyl: CL 88.8 ml·kg⁻¹·min⁻¹, V2 1.43 l/kg, V3 5.19 l/kg, Vss 7.11 l/kg, kabs 0.27 minute -1, tlag 15 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

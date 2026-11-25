@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Selumetinib's ka was not reported, forcing library defaults and creating a mismatch between the parent-metabolite structure and the one-compartment output used.
+> Ka use library defaults, not estimates from this paper; t3_output_variable (+3 more).
 
 <div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Tong2019_reference" status="rejected" stale="false" population="patients with non-small cell lung cancer" measured-compound="selumetinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -38,7 +38,7 @@ Tong X, Xu H, Carlile DJ, Tomkinson H, Al-Huniti N, Zhou D. Population Pharmacok
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Tong X, Xu H, Carlile DJ, Tomkinson H, Al-Huniti N, Zhou D. Population Pharmacok
 
 ### Reviewer guidance
 
-**Selumetinib's ka was not reported, forcing library defaults and creating a mismatch between the parent-metabolite structure and the one-compartment output used.**
+**Ka use library defaults, not estimates from this paper; t3_output_variable (+3 more).**
 
-The record's one-compartment output does not match the parent-metabolite structure, and the apparent clearance of 11.9 L/h was modeled without an estimated absorption rate. Because the record was abstract-only, the reported values stand in for a fitted model, and the missing ka required using library defaults instead of paper-specific estimates. Extracted — selumetinib: CL/F 11.9 L/h, V1 32.1 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — selumetinib: CL/F 11.9 L/h, V1 32.1 L.
 
-Independently confirmed by `qwen3.8-27b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has selumetinib → n-desmethyl selumetinib (metabolism), the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -78,13 +78,12 @@ Independently confirmed by `qwen3.8-27b`.
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=selumetinib
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
-- status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 2/2 row label(s) assigned, 2 linked by role; re-tagged selumetinib→parent ×2
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- row roles (LLM): model_class=noncompartmental; 2/2 row label(s) assigned, 2 linked by role; re-tagged selumetinib→parent ×2
+- molar mass: PubChem entry choice failed (JSONDecodeError)
+- molar mass: none of 1 PubChem candidate(s) is 'N-desmethyl selumetinib' (LLM) — left in mass units
+- molar mass: none found for 'N-desmethyl selumetinib' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
@@ -92,14 +91,25 @@ Independently confirmed by `qwen3.8-27b`.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 | `qwen3.8-27b` | confirmed | 1.0 (6/6 fields) | none |
 
-_All readers agree on the compared fields of this record._
+<details><summary>5 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['selumetinib', 'n-desmethyl selumetinib', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` | 32.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` |  | 32.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[selumetinib apparent clearance]` | 11.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[selumetinib apparent clearance]` |  | 11.9 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -130,9 +140,10 @@ _All readers agree on the compared fields of this record._
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | fail | Metabolite_C (measured=selumetinib) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.375 | cross-check contradicted by a second reader: verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,4 +171,4 @@ _All readers agree on the compared fields of this record._
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bselumetinib%5D%20Selumetinib_Tong2019_reference&body=Drug%3A%20selumetinib%0ARecord%3A%20Selumetinib_Tong2019_reference%0APaper%3A%20Tong_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_selumetinib/Selumetinib_Tong2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 06:50 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:27 UTC</sub>

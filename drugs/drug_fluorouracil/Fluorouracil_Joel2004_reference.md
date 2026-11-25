@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model record for fluorouracil was held back because bioavailability and lag time were left at library defaults rather than using values from the paper.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Joel2004_reference" status="needs_review" stale="false" population="patients with advanced/metastatic colorectal cancer" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Joel SP, Papamichael D, Richards F, Davis T, Aslanis V, Chatelut E et al. Lack o
 
 ### Reviewer guidance
 
-**The model record for fluorouracil was held back because bioavailability and lag time were left at library defaults rather than using values from the paper.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The model builder substituted default library values for bioavailability (F) and lag time (Tlag) instead of explicit estimates. The review identified these as unreported parameter defaults that affect the simulated profile but are not supported by the source data. Although clearance and volume of distribution were extracted, the missing explicit values for F and Tlag prevented publication. Extracted — fluorouracil: CL 38.5 L/h, V 12.7 L, kabs 0.13 1/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — fluorouracil: CL 38.5 L/h, V 12.7 L, kabs 0.13 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading 5-fluorouracil; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

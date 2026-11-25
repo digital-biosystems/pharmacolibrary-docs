@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R01A&quot;,&quot;href&quot;:&quot;atc/R01A.md&quot;},{&quot;label&quot;:&quot;ciclesonide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclesonide_Xu2010_reference&quot;,&quot;label&quot;:&quot;Xu_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclesonide_Rohatagi2003_reference&quot;,&quot;label&quot;:&quot;Rohatagi_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclesonide/Ciclesonide_Rohatagi2003_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # ciclesonide
 
@@ -22,32 +22,23 @@ Ciclesonide is a glucocorticoid that treats asthma and allergic rhinitis. It is 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | ciclesonide | parent | 540.697 | C32H44O7 | DrugBank | [6918155](https://pubchem.ncbi.nlm.nih.gov/compound/6918155) | Rohatagi_2003, Rohatagi_2005, Xu_2010 |
-| ciclesonide-active principle (CIC-AP) (des-CIC, desisobutyryl-ciclesonide) | metabolite | 470.606 | C28H38O6 | PubChem | [6918281](https://pubchem.ncbi.nlm.nih.gov/compound/6918281) | Rohatagi_2003, Rohatagi_2005, Xu_2010 |
+| C21-desisobutyryl-ciclesonide | metabolite | — (mass units only) | — | — | — | — |
+| ciclesonide-active principle (CIC-AP) (desisobutyryl-ciclesonide) | metabolite | 470.606 | C28H38O6 | PubChem | [6918281](https://pubchem.ncbi.nlm.nih.gov/compound/6918281) | Rohatagi_2003, Xu_2010 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub> | [Rohatagi_2003_reference](drugs/drug_ciclesonide/Ciclesonide_Rohatagi2003_reference.md) | held back | 1-compartment, oral | 2 | Rohatagi S et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2003) | [10.1177/0091270002250998](https://doi.org/10.1177/0091270002250998) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub> | [Rohatagi_2005_reference](drugs/drug_ciclesonide/Ciclesonide_Rohatagi2005_reference.md) | held back | 1-compartment, oral | 2 | Rohatagi S et al., Model-based covariate pharmacokinetic a…, American journal of therape… (2005) | [10.1097/01.mjt.0000155110.69831.75](https://doi.org/10.1097/01.mjt.0000155110.69831.75) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Xu_2010_reference](drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Xu J et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2010) | [10.1177/0091270009354994](https://doi.org/10.1177/0091270009354994) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Xu_2010_reference](drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference.md) | — | 1-compartment (no model) | 5 | Xu J et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2010) | [10.1177/0091270009354994](https://doi.org/10.1177/0091270009354994) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Rohatagi_2003_reference](drugs/drug_ciclesonide/Ciclesonide_Rohatagi2003_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Rohatagi S et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2003) | [10.1177/0091270002250998](https://doi.org/10.1177/0091270002250998) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Pu_2026_COPD_exacerbations](drugs/drug_ciclesonide/pd_Pu_2026_COPD_exacerbations.md) | COPD exacerbations ← ciclesonide · direct Emax (saturable) effect | — | Pu X et al., Adverse events of inhaled corticosteroi…, BMJ evidence-based medicine (2026) | [10.1136/bmjebm-2024-113216](https://doi.org/10.1136/bmjebm-2024-113216) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Pu_2026_URTI](drugs/drug_ciclesonide/pd_Pu_2026_URTI.md) | upper respiratory tract infection ← ciclesonide · direct Emax (saturable) effect | — | Pu X et al., Adverse events of inhaled corticosteroi…, BMJ evidence-based medicine (2026) | [10.1136/bmjebm-2024-113216](https://doi.org/10.1136/bmjebm-2024-113216) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Pu_2026_all_cause_mortality](drugs/drug_ciclesonide/pd_Pu_2026_all_cause_mortality.md) | all-cause mortality ← ciclesonide · direct Emax (saturable) effect | — | Pu X et al., Adverse events of inhaled corticosteroi…, BMJ evidence-based medicine (2026) | [10.1136/bmjebm-2024-113216](https://doi.org/10.1136/bmjebm-2024-113216) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Pu_2026_asthma_exacerbations](drugs/drug_ciclesonide/pd_Pu_2026_asthma_exacerbations.md) | asthma exacerbations ← ciclesonide · direct Emax (saturable) effect | — | Pu X et al., Adverse events of inhaled corticosteroi…, BMJ evidence-based medicine (2026) | [10.1136/bmjebm-2024-113216](https://doi.org/10.1136/bmjebm-2024-113216) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Pu_2026_cataract](drugs/drug_ciclesonide/pd_Pu_2026_cataract.md) | cataract ← ciclesonide · direct Emax (saturable) effect | — | Pu X et al., Adverse events of inhaled corticosteroi…, BMJ evidence-based medicine (2026) | [10.1136/bmjebm-2024-113216](https://doi.org/10.1136/bmjebm-2024-113216) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Pu_2026_diabetes](drugs/drug_ciclesonide/pd_Pu_2026_diabetes.md) | diabetes ← ciclesonide · direct Emax (saturable) effect | — | Pu X et al., Adverse events of inhaled corticosteroi…, BMJ evidence-based medicine (2026) | [10.1136/bmjebm-2024-113216](https://doi.org/10.1136/bmjebm-2024-113216) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Pu_2026_fracture](drugs/drug_ciclesonide/pd_Pu_2026_fracture.md) | fracture ← ciclesonide · direct Emax (saturable) effect | — | Pu X et al., Adverse events of inhaled corticosteroi…, BMJ evidence-based medicine (2026) | [10.1136/bmjebm-2024-113216](https://doi.org/10.1136/bmjebm-2024-113216) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Pu_2026_oral_candidiasis](drugs/drug_ciclesonide/pd_Pu_2026_oral_candidiasis.md) | oral candidiasis ← ciclesonide · direct Emax (saturable) effect | — | Pu X et al., Adverse events of inhaled corticosteroi…, BMJ evidence-based medicine (2026) | [10.1136/bmjebm-2024-113216](https://doi.org/10.1136/bmjebm-2024-113216) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Pu_2026_plasma_cortisol_abnormalities](drugs/drug_ciclesonide/pd_Pu_2026_plasma_cortisol_abnormalities.md) | plasma cortisol abnormalities ← ciclesonide · direct Emax (saturable) effect | — | Pu X et al., Adverse events of inhaled corticosteroi…, BMJ evidence-based medicine (2026) | [10.1136/bmjebm-2024-113216](https://doi.org/10.1136/bmjebm-2024-113216) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Pu_2026_pneumonia](drugs/drug_ciclesonide/pd_Pu_2026_pneumonia.md) | pneumonia ← ciclesonide · direct Emax (saturable) effect | — | Pu X et al., Adverse events of inhaled corticosteroi…, BMJ evidence-based medicine (2026) | [10.1136/bmjebm-2024-113216](https://doi.org/10.1136/bmjebm-2024-113216) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Rohatagi_2003_cortisol](drugs/drug_ciclesonide/pd_Rohatagi_2003_cortisol.md) | endogenous cortisol ← ciclesonide--active principle (CIC-AP) · indirect response — drug inhibits the production of endogenous cortisol | model (no simulator) | Rohatagi S et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2003) | [10.1177/0091270002250998](https://doi.org/10.1177/0091270002250998) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Rohatagi_2005_cortisol](drugs/drug_ciclesonide/pd_Rohatagi_2005_cortisol.md) | circadian endogenous cortisol release ← des-CIC (C21-desisobutyryl-ciclesonide) · direct Emax (saturable) effect | — | Rohatagi S et al., Model-based covariate pharmacokinetic a…, American journal of therape… (2005) | [10.1097/01.mjt.0000155110.69831.75](https://doi.org/10.1097/01.mjt.0000155110.69831.75) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Xu_2010_cortisol](drugs/drug_ciclesonide/pd_Xu_2010_cortisol.md) | serum cortisol ← desisobutyryl-ciclesonide · indirect response — drug inhibits the production of serum cortisol | — | Xu J et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2010) | [10.1177/0091270009354994](https://doi.org/10.1177/0091270009354994) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Rohatagi_2005_cortisol](drugs/drug_ciclesonide/pd_Rohatagi_2005_cortisol.md) | circadian cortisol release biomarker turnover ← des-CIC | — | Rohatagi S et al., Model-based covariate pharmacokinetic a…, American journal of therape… (2005) | [10.1097/01.mjt.0000155110.69831.75](https://doi.org/10.1097/01.mjt.0000155110.69831.75) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,7 +52,7 @@ Ciclesonide is a glucocorticoid that treats asthma and allergic rhinitis. It is 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:42 | 1:00 | 2/1/0 | 11/1/0 | 0/0/0 | 37,220/6,475 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-23 19:53 | 2:39 | 2/1/0 | 2/0/0 | 0/0/0 | 21,396/12,239 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
@@ -72,26 +63,28 @@ Ciclesonide is a glucocorticoid that treats asthma and allergic rhinitis. It is 
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Rohatagi_2003.pdf` | Rohatagi S et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2003) | popPK | 10 | [10.1177/0091270002250998](https://doi.org/10.1177/0091270002250998) | [12723457](https://pubmed.ncbi.nlm.nih.gov/12723457) | Population PK model of ciclesonide's active metabolite (CIC-AP) with numeric CL and V values reported directly in the abstract. |
-| `Rohatagi_2005.pdf` | Rohatagi S et al., Model-based covariate pharmacokinetic a…, American journal of therape… (2005) | popPK | 10 | [10.1097/01.mjt.0000155110.69831.75](https://doi.org/10.1097/01.mjt.0000155110.69831.75) | [16148423](https://pubmed.ncbi.nlm.nih.gov/16148423) | Population PK of des-CIC (active metabolite of ciclesonide) with numeric CL (302 L/h) and V (1310 L) reported in the abstract; ka and full parameter table may be in the paper body. |
-| `Xu_2010.pdf` | Xu J et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2010) | popPK | 10 | [10.1177/0091270009354994](https://doi.org/10.1177/0091270009354994) | [20150524](https://pubmed.ncbi.nlm.nih.gov/20150524) | Population PK model of Des-CIC (active metabolite of ciclesonide) with numeric ka, CL, and V reported directly in the abstract. |
+| `Xu_2010.pdf` | Xu J et al., Population pharmacokinetics and pharmac…, Journal of clinical pharmac… (2010) | popPK | 10 | [10.1177/0091270009354994](https://doi.org/10.1177/0091270009354994) | [20150524](https://pubmed.ncbi.nlm.nih.gov/20150524) | The paper reports quantitative population PK parameters (ka, CL, V) for desisobutyryl-ciclesonide, the active metabolite of ciclesonide, which is explicitly defined as relevant to ciclesonide's pharmacokinetics. |
 
-<sub>queue written 2026-10-07 12:41 UTC</sub>
+<sub>queue written 2026-11-23 19:51 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Pu_2026 | irrelevant | 0 | 0 | This is a safety meta-analysis of inhaled corticosteroids; ciclesonide appears only as a comparator with no PK parameters reported. |
+| popPK | Pu_2026 | irrelevant | 0 | 0 | This is a meta-analysis of adverse events for inhaled corticosteroids and does not report any pharmacokinetic parameters (CL, V, t1/2, etc.) for ciclesonide. |
+| PGx | Pu_2026 | not_relevant | 0 | 0 | The paper is a meta-analysis of adverse events and does not report any gene-based effects on the pharmacokinetic or pharmacodynamic parameters of ciclesonide. |
+| PGx | Rohatagi_2003 | not_relevant | 0 | 0 | The paper reports population PK/PD parameters for ciclesonide but does not mention or analyze any gene variants or genotypes. |
+| PGx | Rohatagi_2005 | not_relevant | 0 | 0 | The study analyzes standard clinical covariates (weight, race, gender) and lacks any analysis of genetic variants, genotypes, or pharmacogenomic effects on ciclesonide PK/PD. |
 | popPK | Sanz_2025 | irrelevant | 0 | 0 | This is a clinical efficacy study of inhaled ciclesonide in horses with asthma; no PK parameters (CL, V, ka, half-life, or PK model) are reported anywhere in the evidence. |
+| PGx | Xu_2010 | not_relevant | 0 | 0 | The study does not investigate gene variants/genotypes/phenotypes, but rather focuses on conventional covariates like gender and treatment regimen. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciclesonide%5D&body=Drug%3A%20ciclesonide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciclesonide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 12:41 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 19:51 UTC</sub>

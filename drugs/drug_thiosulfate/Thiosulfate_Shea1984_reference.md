@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Only clearance was extracted — no volume.
+> Only clearance was extracted — no volume; the clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="thiosulfate" model-id="Thiosulfate_Shea1984_reference" status="needs_review" stale="false" population="adults receiving cisplatin (cisplatin neutralizer)" measured-compound="thiosulfate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="thiosulfate" model-id="Thiosulfate_Shea1984_reference" status="needs_review" stale="false" population="adults" measured-compound="sodium thiosulfate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Shea M, Koziol JA, Howell SB. Kinetics of sodium thiosulfate, a cisplatin neutralizer. Clinical pharmacology and therapeutics 35(3):419–425 (1984).
@@ -17,15 +17,13 @@ Shea M, Koziol JA, Howell SB. Kinetics of sodium thiosulfate, a cisplatin neutra
 
 ## Population and dosing
 
-**Population:** adults receiving cisplatin (cisplatin neutralizer) · condition cisplatin chemotherapy · age group adult · n = 8.
-
-**Dosed compound ≠ measured compound:** dosed sodium thiosulfate, measured thiosulfate.
+**Population:** adults · condition healthy · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,13 +31,12 @@ Shea M, Koziol JA, Howell SB. Kinetics of sodium thiosulfate, a cisplatin neutra
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| t1/2 | t1/2z | 80 | min |
-| Total body thiosulfate clearance | CLnorm | 190 | L/h |
-| renal clearance | CLR | 50 | L/h |
+| Total body thiosulfate clearance | CL | 190 | ml/min/m2 |
+| renal clearance | CLR | 50 | ml/min/m2 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +46,11 @@ Shea M, Koziol JA, Howell SB. Kinetics of sodium thiosulfate, a cisplatin neutra
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**Only clearance was extracted — no volume; the clearance plausibility check could not be computed.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — thiosulfate: t1/2z 80 min, CLnorm 190 L/h, CLR 50 L/h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. None of the extracted parameters is thiosulfate's own; they describe sodium thiosulfate. Extracted — sodium thiosulfate: CL 190 ml/min/m2, CLR 50 ml/min/m2.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has thiosulfate, the second reading sodium thiosulfate; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 12; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,9 +58,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| t1/2 | `Q57` · t1/2z | 80 | min | 4800 | s | min | exact (1) | Shea_1984:abstract |
-| Total body thiosulfate clearance | `Q354` · CLnorm | 190 | L/h | 5.278e-05 | m3/s | L/h | llm_corrected (0.6) | Shea_1984:abstract |
-| renal clearance | `Q26` · CLR | 50 | L/h | 1.389e-05 | m3/s | L/h | exact (1) | Shea_1984:abstract |
+| Total body thiosulfate clearance | `Q22` · CL | 190 | ml/min/m2 | 5.478e-06 | m3/s | ml/(min·m2) | llm_confirmed (0.6) | Shea_1984:abstract |
+| renal clearance | `Q26` · CLR | 50 | ml/min/m2 | 1.442e-06 | m3/s | ml/(min·m2) | exact (1) | Shea_1984:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,39 +69,30 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'ml/min/m2' (CLnorm)
-- unit_dimension_unknown: 'ml/min/m2' (CLR)
-- implicit units: 'Total body thiosulfate clearance' → L/h (from the popPK convention: 'No unit stated in text or table caption; total clearance in population PK conventionally reported in L/h (normalized to ')
-- implicit units: 'renal clearance' → L/h (from the popPK convention: 'No unit stated; renal clearance conventionally in L/h in population PK, consistent with value 50.')
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=thiosulfate
+- dropped unlinked row (NIL): 't1/2 (mean +/- SD)' — extend the ontology if this is a real PK parameter (source ['Shea_1984:abstract'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sodium thiosulfate
 - molar mass: none found for 'thiosulfate' — its concentrations stay mass-only
+- molar mass: none found for 'sodium thiosulfate' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Shea_1984_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
+| `gpt-oss-120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[dose]` |  | 12 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[infusion duration]` |  | 6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[renal clearance]` |  | 50 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[renal clearance]` | 50 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2]` | 80 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total body thiosulfate clearance]` |  | 190 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total body thiosulfate clearance]` | 190 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.primary_analyte` | thiosulfate | sodium thiosulfate | mismatch |
 
 </details>
 
@@ -119,13 +106,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Shea_1984:abstract'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Shea_1984:abstract'] |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Shea_1984:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Shea_1984:abstract'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 190 | ['Shea_1984:abstract'] |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 19.7 L/h | ['Shea_1984:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -159,4 +147,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bthiosulfate%5D%20Thiosulfate_Shea1984_reference&body=Drug%3A%20thiosulfate%0ARecord%3A%20Thiosulfate_Shea1984_reference%0APaper%3A%20Shea_1984%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_thiosulfate/Thiosulfate_Shea1984_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 19:54 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 07:50 UTC</sub>

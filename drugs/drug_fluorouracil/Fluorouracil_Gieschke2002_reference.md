@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the prodrug capecitabine and its immediate metabolite 5'-deoxy-5-fluorocytidine are unreachable from the dose input, rendering their clearance parameters non-identifiable.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Gieschke2002_reference" status="rejected" stale="false" population="patients with various solid tumors" measured-compound="5-fluorouracil" parameterization="apparent" topology="general_linear"></div>
 
@@ -56,13 +56,13 @@ Gieschke R, Reigner B, Blesch KS, Steimer JL. Population pharmacokinetic analysi
 
 ### Reviewer guidance
 
-**The model was rejected because the prodrug capecitabine and its immediate metabolite 5'-deoxy-5-fluorocytidine are unreachable from the dose input, rendering their clearance parameters non-identifiable.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The metabolic pathway includes links from capecitabine to 5'-deoxy-5-fluorocytidine and subsequent steps to 5-fluorouracil, but the dose compartment is missing from this chain. Consequently, the first two metabolites in the sequence have no path from the administration site, classifying them as unreachable. The second reader disagreed on the presence of several volume and clearance values for the intermediate metabolites, noting they were null in their extraction. Extracted — 5'-deoxy-5-fluorouridine: CL 76.6 L/hr, V 88.7 L; alpha-fluoro-beta-alanine: V 64.1 L, CL 21.6 L/hr; fluorouracil: CLm/F 1.23e+03 L/hr, kabs 1.37 1/hr, tlag 0.174 h, V 17.8 L.
+Extracted — 5'-deoxy-5-fluorouridine: CL 76.6 L/hr, V 88.7 L; alpha-fluoro-beta-alanine: V 64.1 L, CL 21.6 L/hr; fluorouracil: CLm/F 1.23e+03 L/hr, kabs 1.37 1/hr, tlag 0.174 h, V 17.8 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 5-fluorouracil, the second reading 5-FU; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

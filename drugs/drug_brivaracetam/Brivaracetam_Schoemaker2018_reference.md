@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Second reader disagrees on model diagnostic values, with nulls versus -95.6 and 260.2, causing verdict dispute.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="brivaracetam" model-id="Brivaracetam_Schoemaker2018_reference" status="needs_review" stale="false" population="" measured-compound="brivaracetam" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Schoemaker R, Wade JR, Stockis A. Extrapolation of a Brivaracetam Exposure-Respo
 
 ### Reviewer guidance
 
-**Second reader disagrees on model diagnostic values, with nulls versus -95.6 and 260.2, causing verdict dispute.**
+**cross_check_disputed; x1_cross_check.**
 
-The cross-check failed with an agreement of 0.545, as 0 of 1 readers agreed with the initial assessment. The second reader identified specific discrepancies in diagnostic values, such as -95.6 versus 260.2 and 2.75 versus 31.4. Additional fields were null in the record but contained values like -14.8, 0.337, and 0.442 for the second reader. Extracted — brivaracetam: CL/F 3.38 L/h, V/F 48.7 L, kabs 2.98 1/h.
+Extracted — brivaracetam: CL/F 3.38 L/h, V/F 48.7 L, kabs 2.98 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q320: this record has -95.6, the second reading 260.2; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.545, 0 of 1 reader(s) agree | 0.545 | cross-check disputed by a second reader: verdict disputed, agreement 0.545, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.545 | cross-check contradicted by a second reader: verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;dexamfetamine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexamfetamine_Roberts2015_final_final_plasma_model&quot;,&quot;label&quot;:&quot;Roberts_2015_final_final_plasma_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final_final_plasma_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexamfetamine_Roberts2015_final_final_plasma_model_mean_para&quot;,&quot;label&quot;:&quot;Roberts_2015_final_final_plasma_model_mean_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final_final_plasma_model_mean_para.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # dexamfetamine
 
@@ -24,7 +24,7 @@ Dexamfetamine is a central nervous system stimulant used to treat attention defi
 
 ## Start here
 
-> **Roberts_2015_final_final_plasma_model** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy adults, n = 40. [Run it in the simulator](drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final_final_plasma_model.md?tab=Simulation) · [record](drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final_final_plasma_model.md)
+> **Roberts_2015_final_final_plasma_model_mean_parameter_estimate** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy adults. [Run it in the simulator](drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final_final_plasma_model_mean_para.md?tab=Simulation) · [record](drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final_final_plasma_model_mean_para.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -32,14 +32,14 @@ Dexamfetamine is a central nervous system stimulant used to treat attention defi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Roberts_2015_final_final_plasma_model](drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final_final_plasma_model.md) | ▶ model + simulator | 1-compartment, oral | 4 | Roberts JK et al., A Population Pharmacokinetic Analysis o…, Clinical drug investigation (2015) | [10.1007/s40261-015-0323-5](https://doi.org/10.1007/s40261-015-0323-5) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ final](drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final.md) | — | 2-compartment (no model) | 5 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Roberts_2015_final_final_plasma_model_mean_parameter_estimate](drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final_final_plasma_model_mean_para.md) | ▶ model + simulator | 1-compartment, oral | 4 | Roberts JK et al., A Population Pharmacokinetic Analysis o…, Clinical drug investigation (2015) | [10.1007/s40261-015-0323-5](https://doi.org/10.1007/s40261-015-0323-5) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ final](drugs/drug_dexamfetamine/Dexamfetamine_Roberts2015_final.md) | — | 2-compartment (no model) | 6 |  |  |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [van_2019_DA](drugs/drug_dexamfetamine/pd_van_2019_DA.md) | extracellular striatal dopamine biomarker turnover ← d-amphetamine (brain extracellular fluid) | — | van Gaalen MM et al., Development of a Semimechanistic Pharma…, The Journal of pharmacology… (2019) | [10.1124/jpet.118.254508](https://doi.org/10.1124/jpet.118.254508) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [van_2019_DA](drugs/drug_dexamfetamine/pd_van_2019_DA.md) | extracellular striatal dopamine biomarker turnover ← d-amphetamine (brain extracellular fluid) | — | van Gaalen MM et al., Development of a Semimechanistic Pharma…, The Journal of pharmacology… (2019) | [10.1124/jpet.118.254508](https://doi.org/10.1124/jpet.118.254508) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Dexamfetamine is a central nervous system stimulant used to treat attention defi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:26 | 1:16 | 1/1/0 | 0/1/0 | 0/0/0 | 84,314/4,170 | ollama / glm-5.3-flash | 4 | 0/4 | 3/1 | 0 |
+| 2026-11-23 20:51 | 0:06 | 1/1/0 | 1/0/0 | 0/0/0 | 5,545/168 | einfracz / qwen3.8-27b | 4 | 0/4 | 3/1 | 0 |
 
 ## Coverage
 
@@ -62,25 +62,19 @@ Dexamfetamine is a central nervous system stimulant used to treat attention defi
 - **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `van_2019.pdf` | van Gaalen MM et al., Development of a Semimechanistic Pharma…, The Journal of pharmacology… (2019) | popPK | 8 | [10.1124/jpet.118.254508](https://doi.org/10.1124/jpet.118.254508) | [30733244](https://pubmed.ncbi.nlm.nih.gov/30733244) | Population PK of dexamfetamine in plasma/brain ECF is the subject, but no numeric parameter values appear in the provided evidence (likely in tables/figures not included). |
-
-<sub>queue written 2026-10-07 00:25 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Aljabasini_2025 | irrelevant | 0 | 0 | This is a zebrafish toxicity study of MDPV; dextroamphetamine is only a reference compound for PPI validation, and no PK disposition parameters (CL, V, ka, half-life) for dexamfetamine are reported. |
 | popPK | Aumann_2025 | irrelevant | 0 | 0 | PET/behavioral study using dexamfetamine as a pharmacological challenge probe; no PK parameters (CL, V, ka, half-life) reported. |
-| popPK | Fudala_1990 | irrelevant | 0 | 0 | Behavioral conditioning study in rats with no pharmacokinetic parameters reported. |
-| popPK | McElroy_2015 | irrelevant | 0 | 0 | Efficacy/safety trial of lisdexamfetamine with no PK parameters reported. |
-| popPK | Overholtzer_2026 | irrelevant | 0 | 0 | This is a neuroimaging study of ADHD medication effects on brain structure, with no pharmacokinetic parameters for dexamfetamine reported. |
+| popPK | Fudala_1990 | irrelevant | 0 | 0 | The paper is a behavioral study on conditioned place aversion in rats and does not report any pharmacokinetic parameters for dexamphetamine. |
+| PGx | Fudala_1990 | not_relevant | 0 | 0 | The paper investigates behavioral conditioning paradigms (place preference/aversion) and does not report pharmacokinetic or pharmacodynamic changes driven by genetic variants. |
+| popPK | McElroy_2015 | irrelevant | 0 | 0 | The study evaluates the efficacy and safety of lisdexamfetamine for binge-eating disorder and does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for dexamfetamine. |
+| PGx | McElroy_2015 | not_relevant | 0 | 0 | The study is a clinical trial for lisdexamfetamine in binge-eating disorder and does not assess the impact of genetic variants on pharmacokinetics or pharmacodynamics. |
+| popPK | Overholtzer_2026 | irrelevant | 0 | 0 | The paper is a neuroimaging study on brain structure associated with ADHD medication use, not a pharmacokinetic study, and contains no PK parameters for dexamfetamine. |
+| PGx | Overholtzer_2026 | not_relevant | 0 | 0 | The paper investigates the neurostructural effects (brain volume/thickness) of ADHD medications, not pharmacogenomic variations affecting PK/PD parameters of dexamfetamine. |
+| PGx | Roberts_2015 | not_relevant | 0 | 0 | The study analyzes the pharmacokinetics of dexamfetamine in a healthy adult population using covariates such as body weight and melanin concentration, but it does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 | popPK | van_2019 | relevant | 8 | 2 | Population PK of dexamfetamine in plasma/brain ECF is the subject, but no numeric parameter values appear in the provided evidence (likely in tables/figures not included). |
 
 
@@ -88,4 +82,4 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdexamfetamine%5D&body=Drug%3A%20dexamfetamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dexamfetamine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 00:25 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 11:44 UTC</sub>

@@ -9,7 +9,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="nevirapine" model-id="Nevirapine_Sabo2000_reference" status="needs_review" stale="false" population="HIV-1 infected adults with CD4+ &lt; 200 cells/mm3 on nucleoside therapy" measured-compound="nevirapine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nevirapine" model-id="Nevirapine_Sabo2000_reference" status="needs_review" stale="false" population="adults with HIV-1 infection" measured-compound="nevirapine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Sabo JP, Lamson MJ, Leitz G, Yong CL, MacGregor TR. Pharmacokinetics of nevirapine and lamivudine in patients with HIV-1 infection. AAPS pharmSci 2(1):E1 (2000).
@@ -17,7 +17,7 @@ Sabo JP, Lamson MJ, Leitz G, Yong CL, MacGregor TR. Pharmacokinetics of nevirapi
 
 ## Population and dosing
 
-**Population:** HIV-1 infected adults with CD4+ &lt; 200 cells/mm3 on nucleoside therapy · condition HIV-1 infection · age group adult · n = 100.
+**Population:** adults with HIV-1 infection · condition HIV-1 infection · age group adult.
 
 ## Model
 
@@ -31,11 +31,11 @@ Sabo JP, Lamson MJ, Leitz G, Yong CL, MacGregor TR. Pharmacokinetics of nevirapi
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL/F (nevirapine) | CL/F | 3.3 | L/hour |
+| CL/F | CL/F | 3.3 | L/hour |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ Sabo JP, Lamson MJ, Leitz G, Yong CL, MacGregor TR. Pharmacokinetics of nevirapi
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nevirapine: CL/F 3.3 L/hour.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nevirapine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nevirapine, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -57,7 +57,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL/F (nevirapine) | `Q27` · CL/F | 3.3 | L/hour | 9.167e-07 | m3/s | l/h | exact (1) | Sabo_2000:abstract |
+| CL/F | `Q27` · CL/F | 3.3 | L/hour | 9.167e-07 | m3/s | l/h | exact (1) | Sabo_2000:abstract, Sabo_2000:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -67,14 +67,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q27 ('CL/F (lamivudine)', value 27.6) — already have one for this compound
-- unit_dimension_mismatch: 'reduction in the apparent clearance of lamivudine' → Q27 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q27 ('reduction in the apparent clearance of lamivudine', value 31) — already have one for this compound
-- covariate category for Css from footnote/prose kept as documentation only (['Sabo_2000:abstract'])
+- covariate category for Css_ratio from footnote/prose kept as documentation only (['Sabo_2000:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=nevirapine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Sabo_2000_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -82,17 +78,16 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[average steady-state lamivudine serum concentrations]` |  | 43 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl/f]` | 3.3 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl/f]` |  | 3.3 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | nevirapine | unknown | mismatch |
@@ -113,10 +108,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Sabo_2000:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Sabo_2000:abstract', 'Sabo_2000:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 3.3 L/h | ['Sabo_2000:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 3.3 L/h | ['Sabo_2000:abstract', 'Sabo_2000:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -150,4 +145,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnevirapine%5D%20Nevirapine_Sabo2000_reference&body=Drug%3A%20nevirapine%0ARecord%3A%20Nevirapine_Sabo2000_reference%0APaper%3A%20Sabo_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nevirapine/Nevirapine_Sabo2000_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:29 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:35 UTC</sub>

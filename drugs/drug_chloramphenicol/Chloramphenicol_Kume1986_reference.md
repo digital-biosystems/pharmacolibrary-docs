@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;chloramphenicol&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/&quot;},{&quot;label&quot;:&quot;Kume_1986 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloramphenicol_Perucca1982_reference&quot;,&quot;label&quot;:&quot;Perucca_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Perucca1982_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Anadn1994_reference&quot;,&quot;label&quot;:&quot;Anad\u00f3n_1994_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Anadn1994_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Kume1986_reference&quot;,&quot;label&quot;:&quot;Kume_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Chloramphenicol_Soback1986_reference&quot;,&quot;label&quot;:&quot;Soback_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Soback1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chloramphenicol_Perucca1982_reference&quot;,&quot;label&quot;:&quot;Perucca_1982_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Perucca1982_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Anadn1994_30_mg_kg&quot;,&quot;label&quot;:&quot;Anad\u00f3n_1994_30_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Anadn1994_30_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Anadn1994_50_mg_kg&quot;,&quot;label&quot;:&quot;Anad\u00f3n_1994_50_mg_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Anadn1994_50_mg_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Chloramphenicol_Soback1986_reference&quot;,&quot;label&quot;:&quot;Soback_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chloramphenicol/Chloramphenicol_Soback1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span>
 
-> The record was held for review because chloramphenicol total clearance of 19.95 ml/kg/min was disputed by the second reader, who reported no value.
+> V/F has no unit.
 
-<div class="pk-model-meta" hidden drug="chloramphenicol" model-id="Chloramphenicol_Kume1986_reference" status="needs_review" stale="false" population="normal and febrile goats" measured-compound="chloramphenicol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="chloramphenicol" model-id="Chloramphenicol_Kume1986_reference" status="needs_review" stale="false" population="normal and febrile goats" measured-compound="chloramphenicol" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Kume BB, Garg RC. Pharmacokinetics and bioavailability of chloramphenicol in normal and febrile goats. Journal of veterinary pharmacology and therapeutics 9(3):254–263 (1986).
@@ -17,30 +17,31 @@ Kume BB, Garg RC. Pharmacokinetics and bioavailability of chloramphenicol in nor
 
 ## Population and dosing
 
-**Population:** review reference.
+**Population:** normal and febrile goats · condition normal and febrile · age group adult.
+
+**Dosing:** 1750 mg, iv, single.
 
 > **Species: goat.** This record comes from an animal study (goat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 ## Model
 
-**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference/Chloramphenicol_Kume1986_reference.svg" alt="Chloramphenicol_Kume1986_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Structure:** 2-compartment; no model was built for this record.  
+**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 3 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
+| a volume of distribution | V | 2.217 | L/kg |
 | total body clearance | CL | 19.95 | ml/kg/min |
-| V (derived from CL·t½/ln2) | V | 147.0748 | L |
+| The mean apparent volume of distribution | V/F | 2.166 | /kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556), qwen3.8-27b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,20 +51,21 @@ Kume BB, Garg RC. Pharmacokinetics and bioavailability of chloramphenicol in nor
 
 ### Reviewer guidance
 
-**The record was held for review because chloramphenicol total clearance of 19.95 ml/kg/min was disputed by the second reader, who reported no value.**
+**V/F has no unit.**
 
-Cross-reader agreement was 0.4, below 0.5, with 0 of 1 reader agreeing. The disagreement list records 19.95 versus no value in two fields and 73.00 versus no value in a third; these facts do not specify the pharmacokinetic meaning of the 73.00 field. Extracted — chloramphenicol: CL 19.9 ml/kg/min, V 147 L.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V/F), so that value has no SI equivalent. Extracted — chloramphenicol: V 2.22 L/kg, CL 19.9 ml/kg/min, V/F 2.17 /kg.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of CL: this record has 19.95, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a volume of distribution: this record has 2.217, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| total body clearance | `Q22` · CL | 19.95 | ml/kg/min | 2.327e-05 | m3/s | L/h | review (0.7) | Kume_1986:review |
-| V (derived from CL·t½/ln2) | `Q61` · V | 147.0748 | L | 0.1471 | m3 | L | review (0.7) | Kume_1986:review |
+| a volume of distribution | `Q61` · V | 2.217 | L/kg | 0.1552 | m3 | L | boundary (0.8) | Kume_1986:other_prose |
+| total body clearance | `Q22` · CL | 19.95 | ml/kg/min | 2.327e-05 | m3/s | L/h | boundary (0.8) | Kume_1986:other_prose |
+| The mean apparent volume of distribution | `Q76` · V/F | 2.166 | /kg |  |  | /kg | boundary (0.8) | Kume_1986:other_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,22 +75,38 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Interpretation flags:**
-- built from REVIEW reference values (Kume_1986) — secondary source
-- central volume derived from CL·t½/ln2
+- column 'of experimental fever on the' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped unlinked row (NIL): 'intramuscular administration (25 mg/kg, single bolus) of' — extend the ontology if this is a real PK parameter (source ['tab_0:row2:col0', 'tab_0:row2:col0'])
+- salvaged Q61 ('a volume of distribution'=2.217) from results prose — parameter table was unreadable
+- salvaged Q22 ('total body clearance'=19.95) from results prose — parameter table was unreadable
+- salvaged Q76 ('The mean apparent volume of distribution'=2.166) from results prose — parameter table was unreadable
+- implicit units: 'a volume of distribution' → L/kg (from the paper text: 'The paper text states: "a volume of distribution of 2.217 f 0.24 I/kg"')
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=chloramphenicol
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 2C vs LLM 1C — review compartment count
+- status held at "Needs review" — not promoted
+
+**Extraction notes:**
+- LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 | `qwen3.8-27b` | partly confirmed | 0.4 (2/5 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a volume of distribution]` | 2.217 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean apparent volume of distribution]` |  | 2.166 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the mean apparent volume of distribution]` | 2.166 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 2.217 | only_one_extracted |
 | `qwen3.8-27b` | `values[Q22]` | 19.95 |  | only_one_extracted |
 | `qwen3.8-27b` | `values[Q354]` | 19.95 |  | only_one_extracted |
 | `qwen3.8-27b` | `values[Q57]` | 73.00 |  | only_one_extracted |
@@ -105,27 +123,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kume_1986:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Kume_1986:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 19.95 | ['Kume_1986:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Kume_1986:other_prose'] |
+| C5_unit_missing_Q76 | fail | [length] ** 3 | /kg | ['Kume_1986:other_prose'] |
+| C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 83.8 L/h | ['Kume_1986:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 147 L | ['Kume_1986:review'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=chloramphenicol) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial, agreement 0.4, 0 of 1 reader(s) agree |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 83.8 L/h | ['Kume_1986:other_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 155 L | ['Kume_1986:other_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -142,37 +148,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference/Chloramphenicol_Kume1986_reference_modelica.zip" download>Chloramphenicol_Kume1986_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference/Chloramphenicol_Kume1986_reference_fmi.zip" download>Chloramphenicol_Kume1986_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference/Chloramphenicol_Kume1986_reference_fmi.zip" download>Chloramphenicol_Kume1986_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference/Chloramphenicol_Kume1986_reference_matlab.zip" download>Chloramphenicol_Kume1986_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference/Chloramphenicol_Kume1986_reference_matlab_simbio.zip" download>Chloramphenicol_Kume1986_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference/Chloramphenicol_Kume1986_reference_sbml.zip" download>Chloramphenicol_Kume1986_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference/Chloramphenicol_Kume1986_reference_cellml.zip" download>Chloramphenicol_Kume1986_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.3231 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.003 | kg |
-| input | model | `Cl` | 2.327e-05 | m3/s |
-| input | model | `VdPerKg` | 0.002101 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
 ## How to cite
 
@@ -193,14 +176,10 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 3000 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 3000 mg parenteral (J01BA01) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference/Chloramphenicol_Kume1986_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference/Chloramphenicol_Kume1986_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Chloramphenicol_Kume1986_reference_params.json` · controls `Chloramphenicol_Kume1986_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchloramphenicol%5D%20Chloramphenicol_Kume1986_reference&body=Drug%3A%20chloramphenicol%0ARecord%3A%20Chloramphenicol_Kume1986_reference%0APaper%3A%20Kume_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chloramphenicol/Chloramphenicol_Kume1986_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 21:38 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:54 UTC</sub>

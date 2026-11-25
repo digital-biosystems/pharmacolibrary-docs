@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Remifentanil central and peripheral volumes of 7.88 and 23.9 mL are physiologically implausible.
+> C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="remifentanil" model-id="Remifentanil_Cascone2013_reference" status="rejected" stale="false" population="" measured-compound="remifentanil" parameterization="mechanistic" topology="2C"></div>
 
@@ -45,13 +45,13 @@ Cascone S, Lamberti G, Titomanlio G, Piazza O. Pharmacokinetics of Remifentanil:
 
 ### Reviewer guidance
 
-**Remifentanil central and peripheral volumes of 7.88 and 23.9 mL are physiologically implausible.**
+**C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted volumes of distribution for both the central and peripheral compartments are orders of magnitude smaller than expected for a drug of this size. This magnitude error indicates a unit or scale extraction failure during the record processing. The second reader did not identify a corresponding value for the third check, leaving that specific discrepancy unresolved. Extracted — remifentanil: CL 2.08 mL·min −1, V1 7.88 mL, V2 23.9 mL.
+Extracted — remifentanil: CL 2.08 mL·min −1, V1 7.88 mL, V2 23.9 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q99: this record has 0.828, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -21,12 +21,13 @@ Baloxavir marboxil is a direct-acting antiviral agent used to treat infections c
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| baloxavir marboxil | parent | 571.55 | C27H23F2N3O7S | DrugBank | — | Kim_2022, Koshimichi_2020, Retout_2026 |
-| baloxavir acid | metabolite | 483.489 | C24H19F2N3O4S | PubChem | [134817204](https://pubchem.ncbi.nlm.nih.gov/compound/134817204) | Kim_2022, Koshimichi_2020, Retout_2026 |
+| baloxavir marboxil | parent | 571.55 | C27H23F2N3O7S | DrugBank | — | Koshimichi_2020, Retout_2026 |
+| baloxavir acid | metabolite | 483.489 | C24H19F2N3O4S | PubChem | [134817204](https://pubchem.ncbi.nlm.nih.gov/compound/134817204) | Koshimichi_2020, Retout_2026 |
+| baloxavir_marboxil | metabolite | 571.55 | C27H23F2N3O7S | DrugBank | — | Kim_2022 |
 
 ## Start here
 
-> **Kim_2022_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy Korean and Japanese adults, n = 48. [Run it in the simulator](drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Kim2022_reference.md?tab=Simulation) · [record](drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Kim2022_reference.md)
+> **Kim_2022_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy Korean and Japanese adults. [Run it in the simulator](drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Kim2022_reference.md?tab=Simulation) · [record](drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Kim2022_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -34,7 +35,7 @@ Baloxavir marboxil is a direct-acting antiviral agent used to treat infections c
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T3_param_coverage</sub> | [Kim_2022_reference](drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Kim2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 10 (+2 cov.) | Kim Y et al., Pharmacokinetics and safety of a novel…, Clinical and translational… (2022) | [10.1111/cts.13160](https://doi.org/10.1111/cts.13160) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T3_param_coverage</sub> | [Kim_2022_reference](drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Kim2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 9 (+2 cov.) | Kim Y et al., Pharmacokinetics and safety of a novel…, Clinical and translational… (2022) | [10.1111/cts.13160](https://doi.org/10.1111/cts.13160) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T3_param_coverage</sub> | [Retout_2026_reference](drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Retout2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 (+5 cov.) | Retout S et al., Population Pharmacokinetic and Exposure…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70204](https://doi.org/10.1002/cpt.70204) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Koshimichi_2020_reference](drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Koshimichi2020_reference.md) | — | 1-compartment (no model) | 8 (+5 cov.) | Koshimichi H et al., Population Pharmacokinetics and Exposur…, Antimicrobial agents and ch… (2020) | [10.1128/AAC.00119-20](https://doi.org/10.1128/AAC.00119-20) |
 
@@ -42,10 +43,8 @@ Baloxavir marboxil is a direct-acting antiviral agent used to treat infections c
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koshimichi_2019_2_reduction_in_the_influenza_virus_titer](drugs/drug_baloxavir_marboxil/pd_Koshimichi_2019_2_reduction_in_the_influenza_virus_titer.md) | reduction in the influenza virus titer ← baloxavir acid · inhibition effect | — | Koshimichi H et al., Population Pharmacokinetic and Exposure…, Journal of pharmaceutical s… (2019) | [10.1016/j.xphs.2018.12.005](https://doi.org/10.1016/j.xphs.2018.12.005) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koshimichi_2019_2_time_to_alleviation_of_symptoms](drugs/drug_baloxavir_marboxil/pd_Koshimichi_2019_2_time_to_alleviation_of_symptoms.md) | time to alleviation of symptoms ← baloxavir acid · model not identified | — | Koshimichi H et al., Population Pharmacokinetic and Exposure…, Journal of pharmaceutical s… (2019) | [10.1016/j.xphs.2018.12.005](https://doi.org/10.1016/j.xphs.2018.12.005) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Watanabe_2019_TTAS](drugs/drug_baloxavir_marboxil/pd_Watanabe_2019_TTAS.md) | time to alleviation of symptoms ← baloxavir marboxil · direct linear effect | — | Watanabe A et al., Baloxavir marboxil in Japanese patients…, Antiviral research (2019) | [10.1016/j.antiviral.2019.01.012](https://doi.org/10.1016/j.antiviral.2019.01.012) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Watanabe_2019_change_in_virus_titer](drugs/drug_baloxavir_marboxil/pd_Watanabe_2019_change_in_virus_titer.md) | change in virus titer ← baloxavir marboxil · direct Emax (saturable) effect | — | Watanabe A et al., Baloxavir marboxil in Japanese patients…, Antiviral research (2019) | [10.1016/j.antiviral.2019.01.012](https://doi.org/10.1016/j.antiviral.2019.01.012) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Watanabe_2019_TTAS](drugs/drug_baloxavir_marboxil/pd_Watanabe_2019_TTAS.md) | time to alleviation of symptoms ← baloxavir · direct linear effect | — | Watanabe A et al., Baloxavir marboxil in Japanese patients…, Antiviral research (2019) | [10.1016/j.antiviral.2019.01.012](https://doi.org/10.1016/j.antiviral.2019.01.012) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Watanabe_2019_change_in_virus_titer](drugs/drug_baloxavir_marboxil/pd_Watanabe_2019_change_in_virus_titer.md) | change in virus titer ← baloxavir · direct Emax (saturable) effect | — | Watanabe A et al., Baloxavir marboxil in Japanese patients…, Antiviral research (2019) | [10.1016/j.antiviral.2019.01.012](https://doi.org/10.1016/j.antiviral.2019.01.012) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,7 +58,7 @@ Baloxavir marboxil is a direct-acting antiviral agent used to treat infections c
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:41 | 8:57 | 2/1/0 | 2/2/0 | 0/0/0 | 405,946/34,751 | ollama / glm-5.3-flash | 8 | 3/5 | 8/0 | 0 |
+| 2026-11-23 16:44 | 0:16 | 2/1/0 | 0/2/0 | 0/0/0 | 5,975/1,531 | einfracz / qwen3.8-27b | 8 | 3/5 | 8/0 | 0 |
 
 ## Coverage
 
@@ -68,37 +67,32 @@ Baloxavir marboxil is a direct-acting antiviral agent used to treat infections c
 - **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Koshimichi_2019.pdf` | Koshimichi H et al., Population Pharmacokinetics of Baloxavi…, Journal of pharmaceutical s… (2019) | popPK | 10 | [10.1016/j.xphs.2019.04.010](https://doi.org/10.1016/j.xphs.2019.04.010) | [30998942](https://pubmed.ncbi.nlm.nih.gov/30998942) | Population PK model of baloxavir acid (2-compartment, first-order absorption) in Japanese pediatric patients, but numeric parameter values are not shown in the abstract. |
-| `Koshimichi_2019_2.pdf` | Koshimichi H et al., Population Pharmacokinetic and Exposure…, Journal of pharmaceutical s… (2019) | popPK | 10 | [10.1016/j.xphs.2018.12.005](https://doi.org/10.1016/j.xphs.2018.12.005) | [30557562](https://pubmed.ncbi.nlm.nih.gov/30557562) | Population PK model of baloxavir acid (2-compartment, CL/V with covariates) is clearly the subject drug, but no numeric parameter values appear in the evidence—likely in tables/supplement not provided. |
-| `Retout_2022.pdf` | Retout S et al., A Pharmacokinetics-Time to Alleviation…, Clinical pharmacology and t… (2022) | popPK | 8 | [10.1002/cpt.2648](https://doi.org/10.1002/cpt.2648) | [35585696](https://pubmed.ncbi.nlm.nih.gov/35585696) | Population PK model of baloxavir acid in influenza patients, but the actual PK parameter values (CL, V, etc.) are not shown in the evidence, only AUC exposure ranges. |
-
-<sub>queue written 2026-10-07 15:33 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Checkmahomed_2020 | irrelevant | 0 | 0 | In vitro antiviral combination study reporting EC50/CI values, not PK disposition parameters (CL, V, half-life, or PK model) for baloxavir. |
-| popPK | He_2025 | irrelevant | 0 | 0 | This is a medicinal chemistry/SAR paper on a new spirocyclic inhibitor; baloxavir is only a reference scaffold and no PK parameters for it are reported. |
-| popPK | Koshimichi_2019 | relevant | 10 | 3 | Population PK model of baloxavir acid (2-compartment, first-order absorption) in Japanese pediatric patients, but numeric parameter values are not shown in the abstract. |
-| popPK | Koshimichi_2019_2 | relevant | 10 | 3 | Population PK model of baloxavir acid (2-compartment, CL/V with covariates) is clearly the subject drug, but no numeric parameter values appear in the evidence—likely in tables/supplement not provided. |
+| popPK | He_2025 | irrelevant | 0 | 0 | The paper focuses on the discovery of new spirocyclic inhibitors and their in vitro/efficacy profiles, reporting no pharmacokinetic parameters for baloxavir marboxil. |
+| PGx | He_2025 | not_relevant | 0 | 0 | The paper reports the discovery of a new spirocyclic influenza inhibitor and its activity, but it does not contain any data on pharmacogenomics, genetic variants, or the effect of genotype on the PK/PD of baloxavir marboxil. |
+| PGx | Kim_2022 | not_relevant | 0 | 0 | The study compares pharmacokinetics between Korean and Japanese populations based on body weight and does not involve any genetic variants, genotypes, or pharmacogenomic markers. |
+| popPK | Koshimichi_2019 | relevant | 10 | 0 | The paper describes a population pharmacokinetic model for baloxavir acid (the active metabolite of baloxavir marboxil) in humans, but the specific numeric parameter values are not present in the provided evidence. |
+| PGx | Koshimichi_2019 | not_relevant | 0 | 0 | The study describes population pharmacokinetics based on body weight but does not report the effect of any gene variant or genotype on PK/PD parameters. |
+| popPK | Koshimichi_2019_2 | relevant | 5 | 0 | The abstract describes a population PK model for baloxavir marboxil's active metabolite but does not provide the specific numeric parameter values (CL, V, Q, ka), which are likely in the full text or figures not provided. |
+| PGx | Koshimichi_2019_2 | not_relevant | 0 | 0 | The paper analyzes population PK and exposure-response but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 | popPK | Koszalka_2019 | irrelevant | 0 | 0 | The evidence contains only GROBID boilerplate with no paper content, so no PK parameters for baloxavir marboxil are present. |
-| popPK | Lou_2021 | irrelevant | 1 | 2 | A COVID-19 efficacy trial measuring only sparse plasma concentrations of baloxavir acid; no PK model or disposition parameters (CL, V, t½ with volume) are reported, and detailed values live in supplementary tables not provided. |
-| popPK | Luo_2023 | irrelevant | 0 | 0 | This is an antiviral efficacy/resistance study of ZX-7101 with BXM only as comparator; no PK parameters (CL, V, half-life, PK model) for baloxavir are reported. |
+| popPK | Lou_2021 | relevant | 4 | 4 | The paper reports sparse plasma concentration data (trough levels) for baloxavir acid in humans to compare with EC50, but does not provide full population-PK model parameters like CL, V, or ka. |
+| PGx | Lou_2021 | not_relevant | 0 | 0 | The paper reports a clinical trial evaluating the efficacy of baloxavir marboxir in COVID-19 and measures its plasma concentration, but it does not study the impact of any gene variant, genotype, or phenotype on the drug's PK or PD parameters. |
+| popPK | Luo_2023 | irrelevant | 0 | 0 | The study characterizes the antiviral efficacy and resistance mechanisms of a novel drug (ZX-7101) using baloxavir as a control, without reporting any pharmacokinetic parameters (CL, V, etc.) for baloxavir. |
+| PGx | Luo_2023 | not_relevant | 0 | 0 | The paper reports on viral resistance mutations (influenza PA gene) affecting drug efficacy, not human host pharmacogenomics affecting PK or PD parameters. |
 | popPK | Omoto_2018 | irrelevant | 0 | 0 | This is a virology/resistance study of baloxavir (EC50 susceptibility, crystal structures) with no PK disposition parameters (CL, V, half-life, or PK model) reported. |
 | popPK | Retout_2022 | relevant | 8 | 3 | Population PK model of baloxavir acid in influenza patients, but the actual PK parameter values (CL, V, etc.) are not shown in the evidence, only AUC exposure ranges. |
 | popPK | Takashita_2025 | irrelevant | 0 | 0 | This is a virology susceptibility study with no pharmacokinetic parameters for baloxavir marboxil. |
-| popPK | Watanabe_2019 | irrelevant | 3 | 1 | This is a PK/PD efficacy study reporting only exposure (C24) relationships, not quantitative disposition parameters (CL, V, ka, half-life) for baloxavir; no numeric PK parameter values appear in the evidence. |
+| popPK | Watanabe_2019 | irrelevant | 2 | 0 | The paper focuses on efficacy and dose-response PK/PD relationships (Cmax, virus titer) rather than reporting standard quantitative disposition parameters (CL, V, half-life) for baloxavir marboxil. |
+| PGx | Watanabe_2019 | not_relevant | 0 | 0 | The paper reports a dose-response relationship in Japanese patients, but does not analyze or report any pharmacogenomic effect of specific gene variants on PK/PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbaloxavir_marboxil%5D&body=Drug%3A%20baloxavir_marboxil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_baloxavir_marboxil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 15:33 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 11:40 UTC</sub>

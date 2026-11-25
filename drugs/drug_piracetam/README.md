@@ -14,15 +14,25 @@ Piracetam is a nootropic agent in the racetam class prescribed for cognitive iss
 
 <small>Summary written by `qwen3.8-27b` from [Wikidata Q410069](https://www.wikidata.org/wiki/Q410069), [Wikipedia](https://en.wikipedia.org/wiki/Piracetam?oldid=1367146418) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
 
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| piracetam | parent | 142.156 | C6H10N2O2 | DrugBank | — | Barkat_2014 |
+
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Barkat_2014_reference](drugs/drug_piracetam/Piracetam_Barkat2014_reference.md) | — | 1-compartment (no model) | 7 | Barkat K et al., Development of a simple chromatographic…, Drug research (2014) | [10.1055/s-0033-1363248](https://doi.org/10.1055/s-0033-1363248) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Bravo-Martínez_2012_CaV2_2_inhibition](drugs/drug_piracetam/pd_Bravo_Mart_nez_2012_CaV2_2_inhibition.md) | CaV2.2 channel current inhibition (percent of inhibition) ← piracetam · direct sigmoid Emax (Hill) effect | — | Bravo-Martínez J et al., A novel CaV2.2 channel inhibition by pi…, Experimental biology and me… (2012) | [10.1258/ebm.2012.012128](https://doi.org/10.1258/ebm.2012.012128) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Bravo-Martínez_2012_Ca_V_2_2](drugs/drug_piracetam/pd_Bravo_Mart_nez_2012_Ca_V_2_2.md) | Ca V 2.2 current ← piracetam · direct sigmoid Emax (Hill) effect | — | Bravo-Martínez J et al., A novel CaV2.2 channel inhibition by pi…, Experimental biology and me… (2012) | [10.1258/ebm.2012.012128](https://doi.org/10.1258/ebm.2012.012128) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chayrov_2022_cell_viability](drugs/drug_piracetam/pd_Chayrov_2022_cell_viability.md) | Cell viability of copper-injured APPswe cells ← piracetam-memantine · stimulation effect | — | Chayrov R et al., Synthesis, Neuroprotective Effect and P…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15091108](https://doi.org/10.3390/ph15091108) |
 
 <details class="legend">
@@ -37,39 +47,33 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:38 | 0:26 | 0/0/0 | 2/0/0 | 0/0/0 | 59,080/1,413 | ollama / glm-5.3-flash | 3 | 1/2 | 2/1 | 0 |
+| 2026-11-24 02:49 | 0:04 | 0/1/0 | 2/0/0 | 0/0/0 | 4,165/175 | einfracz / qwen3.8-27b | 3 | 1/2 | 2/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Barkat_2014.pdf` | Barkat K et al., Development of a simple chromatographic…, Drug research (2014) | popPK | 8 | [10.1055/s-0033-1363248](https://doi.org/10.1055/s-0033-1363248) | [24443305](https://pubmed.ncbi.nlm.nih.gov/24443305) | Human single-dose PK study with numeric non-compartmental parameters (t1/2, Ke, Vd, AUC, Cmax) reported directly in the abstract. |
-| `Abikhalil_1986.pdf` | Abikhalil F et al., A new algorithm for computing the param…, European journal of drug me… (1986) | popPK | 5 | [10.1007/BF03189775](https://doi.org/10.1007/BF03189775) | [3087752](https://pubmed.ncbi.nlm.nih.gov/3087752) | Piracetam PK used to test a fitting algorithm, but no numeric parameter values are given in the evidence. |
-
-<sub>queue written 2026-10-07 00:38 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abikhalil_1986 | relevant | 5 | 1 | Piracetam PK used to test a fitting algorithm, but no numeric parameter values are given in the evidence. |
-| popPK | Bravo-Martínez_2012 | irrelevant | 0 | 0 | In-vitro electrophysiology study of piracetam's effect on calcium channels; no PK disposition parameters reported. |
+| popPK | Abikhalil_1986 | relevant | 8 | 0 | The study describes the pharmacokinetics of piracetam using a compartmental model algorithm, but no specific numeric parameter values are provided in the evidence text. |
+| PGx | Abikhalil_1986 | not_relevant | 0 | 0 | The paper describes a new computational algorithm for pharmacokinetic parameter estimation using Piracetam as a test case, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Barkat_2014 | not_relevant | 0 | 0 | The study evaluates the pharmacokinetics of piracetam in healthy volunteers but does not report any data on gene variants, genotypes, or phenotypes. |
+| popPK | Bravo-Martínez_2012 | irrelevant | 0 | 0 | This is an in vitro electrophysiological study of piracetam's mechanism of action on calcium channels, containing no pharmacokinetic parameters. |
+| PGx | Bravo-Martínez_2012 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of piracetam on calcium channels in cell culture, reporting no pharmacogenomic effects or human PK/PD data. |
 | popPK | Chayrov_2022 | irrelevant | 0 | 0 | This is a synthesis/neuroprotection/solubility study of memantine conjugates; piracetam is only a chemical moiety, with no PK parameters reported. |
-| popPK | Inozemtsev_2007 | irrelevant | 0 | 0 | Behavioral pharmacology study in rats; piracetam is a test drug with no PK parameters reported. |
-| popPK | Kaneko_1991 | irrelevant | 0 | 0 | In-vitro pharmacology study of NMDA channel effects; piracetam shows no effect and no PK parameters are reported. |
+| popPK | Inozemtsev_2007 | irrelevant | 0 | 0 | The paper describes a behavioral pharmacology study (passive avoidance learning) and does not report any pharmacokinetic parameters for piracetam. |
+| PGx | Inozemtsev_2007 | not_relevant | 0 | 0 | The paper describes a behavioral pharmacology study of piracetam in rats and does not report any genetic variants or pharmacogenomic interactions affecting PK or PD parameters. |
+| popPK | Kaneko_1991 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of NMDA channel function in Xenopus oocytes and does not report pharmacokinetic parameters for piracetam. |
+| PGx | Kaneko_1991 | not_relevant | 0 | 0 | The paper investigates the pharmacological mechanism of piracetam on NMDA receptors in Xenopus oocytes and does not report any gene variants or genotypes affecting its pharmacokinetics or pharmacodynamics. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpiracetam%5D&body=Drug%3A%20piracetam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_piracetam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 02:48 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The record was rejected because parameters for intercompartmental clearance and zero-order input rate have units inconsistent with their definitions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit µg * min/ml ([mass] * [time] / [length] ** 3) vs [length] ** 3 / [time]; Q307 unit h ([time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Knihinicki1990_mean_sem" status="rejected" stale="false" population="rats" measured-compound="ibuprofen" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -59,13 +59,13 @@ Knihinicki RD, Day RO, Graham GG, Williams KM. Stereoselective disposition of ib
 
 ### Reviewer guidance
 
-**The record was rejected because parameters for intercompartmental clearance and zero-order input rate have units inconsistent with their definitions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit µg * min/ml ([mass] * [time] / [length] ** 3) vs [length] ** 3 / [time]; Q307 unit h ([time]) vs [mass] / [time].**
 
-The parameter defined as apparent intercompartmental clearance is assigned a value of 1840.1 with units of µg * min/ml, which is dimensionally a first moment of concentration rather than a clearance. Additionally, the parameter defined as a zero-order input rate has a value of 0.045 with units of hours, which represents a time constant rather than a mass rate. A second reader also identified an unlinked flurbiprofen interconversion and disagreed on the dose compound. Extracted — ibuprofen: AUMC 1.7e+03 µg * min/ml, Q 1.84e+03 µg * min/ml, AUC∞ 2.32e+03 µg * min/ml, Cmax 1.13e+04, AUC ratio 132, R1 0.045 h, CL 2.06 ml/kg/h, V 62.1 ml/kg, … (+2).
+A reported unit could not be converted (Q and R1), so that value has no SI equivalent. Extracted — ibuprofen: AUMC 1.7e+03 µg * min/ml, Q 1.84e+03 µg * min/ml, AUC∞ 2.32e+03 µg * min/ml, Cmax 1.13e+04, AUC ratio 132, R1 0.045 h, CL 2.06 ml/kg/h, V 62.1 ml/kg, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ibuprofen, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

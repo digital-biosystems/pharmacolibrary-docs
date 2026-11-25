@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper does not study methylprednisolone, as it focuses on a different drug, so the record was rejected.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Zhang2026_reference" status="rejected" stale="false" population="" measured-compound="methylprednisolone" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Zhang GY, Jin YW, Wang J, Ding KW, Zhao SY, Ping ZH et al. Initial Dosage Optimi
 
 ### Reviewer guidance
 
-**The paper does not study methylprednisolone, as it focuses on a different drug, so the record was rejected.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The relevance screen confirmed the title and abstract do not name methylprednisolone, identifying the paper as subject to another drug. Additionally, the second reader disputed the extraction, disagreeing on the values for two parameters: where this record had null, the reader found 0.48, and where this record had 0.346, the reader found 10.346. Extracted — methylprednisolone: CL/F 20.3 L/h, V/F 1.92e+03 L, kabs 4.48 h−1.
+Extracted — methylprednisolone: CL/F 20.3 L/h, V/F 1.92e+03 L, kabs 4.48 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 0.48; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.714 (5 of 7 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | cross-check contradicted by a second reader: verdict disputed; agreement 0.714 (5 of 7 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

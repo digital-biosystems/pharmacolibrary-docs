@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record assigns capecitabine parameters to a model for bevacizumab, as the source paper studies bevacizumab PK with capecitabine only as co-medication.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Panoilia2015_reference" status="rejected" stale="false" population="" measured-compound="capecitabine" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Panoilia E, Schindler E, Samantas E, Aravantinos G, Kalofonos HP, Christodoulou 
 
 ### Reviewer guidance
 
-**The record assigns capecitabine parameters to a model for bevacizumab, as the source paper studies bevacizumab PK with capecitabine only as co-medication.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The primary subject of the Panoilia_2015 paper is bevacizumab, not capecitabine. The extracted clearance value of 0.17 L/day is explicitly labeled as Bevacizumab CL in the source data. Consequently, the model structure and parameters do not represent the pharmacokinetics of capecitabine. Extracted — capecitabine: CL 0.17 L/day, V1 3.14 L, V2 2.63 L, Q 0.36 L/day.
+Extracted — capecitabine: CL 0.17 L/day, V1 3.14 L, V2 2.63 L, Q 0.36 L/day.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (6 of 6 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

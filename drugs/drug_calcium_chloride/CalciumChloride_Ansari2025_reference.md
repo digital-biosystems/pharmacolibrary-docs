@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because abstract-only source provided no dose-compound link, leaving the peripheral compartment unreachable.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="calcium chloride" model-id="CalciumChloride_Ansari2025_reference" status="rejected" stale="false" population="parturients undergoing cesarean delivery" measured-compound="ionized calcium" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Ansari JR, Conti DJ, Michel G, Yarmosh A, Cole NM, Shafer SL. Bioequivalence and
 
 ### Reviewer guidance
 
-**Rejected because abstract-only source provided no dose-compound link, leaving the peripheral compartment unreachable.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The dose-compound link was not established, leaving the peripheral compartment (V2, 16.5 L) without a path from the dose. The second reader disagreed with the extracted parameter values and primary analyte. Extracted — ionized calcium: CL 0.18 l/min, V1 10.9 l, V2 16.5 l.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is calcium chloride's own; they describe ionized calcium. Extracted — ionized calcium: CL 0.18 l/min, V1 10.9 l, V2 16.5 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has calcium chloride, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

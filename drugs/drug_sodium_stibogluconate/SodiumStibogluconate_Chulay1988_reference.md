@@ -1,44 +1,42 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;sodium stibogluconate&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/&quot;},{&quot;label&quot;:&quot;Chulay_1988 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumStibogluconate_Verrest2021_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Verrest_2024_parasite_load&quot;,&quot;label&quot;:&quot;Verrest_2024 \u00b7 parasite load&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/pd_Verrest_2024_parasite_load.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumStibogluconate_Jaser1995_reference&quot;,&quot;label&quot;:&quot;Jaser_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Jaser1995_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumStibogluconate_Verrest2021_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Verrest_2024_parasite_load&quot;,&quot;label&quot;:&quot;Verrest_2024 \u00b7 parasite load&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/pd_Verrest_2024_parasite_load.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sodium stibogluconate — `SodiumStibogluconate_Chulay1988_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Only clearance was extracted — no volume.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Chulay1988_reference" status="needs_review" stale="false" population="patients with visceral leishmaniasis" measured-compound="antimony" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Chulay1988_reference" status="rejected" stale="false" population="patients with visceral leishmaniasis" measured-compound="antimony" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Chulay JD, Fleckenstein L, Smith DH. Pharmacokinetics of antimony during treatment of visceral leishmaniasis with sodium stibogluconate or meglumine antimoniate. Transactions of the Royal Society of Tropical Medicine and Hygiene 82(1):69–72 (1988).
 
 ## Population and dosing
 
-**Population:** patients with visceral leishmaniasis · condition visceral leishmaniasis · age group adult · n = 5.
+**Population:** patients with visceral leishmaniasis · condition visceral leishmaniasis · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed sodium stibogluconate, measured antimony.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| initial absorption phase mean half-life | t1/2ka | 0.85 | h |
-| rapid elimination phase mean half-life | t1/2α | 2.02 | h |
-| slow elimination phase mean half-life | t1/2γ | 76 | h |
+| mean half-life | t1/2z | 0.85 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,21 +46,19 @@ Chulay JD, Fleckenstein L, Smith DH. Pharmacokinetics of antimony during treatme
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is sodium stibogluconate's own; they describe antimony. Extracted — antimony: t1/2ka 0.85 h, t1/2α 2.02 h, t1/2γ 76 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is sodium stibogluconate's own; they describe antimony. Extracted — antimony: t1/2z 0.85 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[slow elimination phase mean half-life].parameter_id`: this record has Q89, the second reading Q60. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium stibogluconate, the second reading sodium stibogluconate, meglumine antimoniate; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| initial absorption phase mean half-life | `Q95` · t1/2ka | 0.85 | h | 3060 | s | h | llm_corrected (0.6) | Chulay_1988:abstract |
-| rapid elimination phase mean half-life | `Q59` · t1/2α | 2.02 | h | 7272 | s | h | llm (0.6) | Chulay_1988:abstract |
-| slow elimination phase mean half-life | `Q89` · t1/2γ | 76 | h | 2.736e+05 | s | h | llm (0.6) | Chulay_1988:abstract |
+| mean half-life | `Q57` · t1/2z | 0.85 | h | 3060 | s | h | half_life_rule (0.95) | Chulay_1988:abstract, Chulay_1988:abstract, Chulay_1988:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,11 +69,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=antimony
-- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
-- molar mass: no plausible PubChem entry for 'antimony' ('antimony') — left in mass units
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- status held at "Needs review" — not promoted
+- molar mass: PubChem entry choice failed (JSONDecodeError)
+- molar mass: none of 1 PubChem candidate(s) is 'antimony' (LLM) — left in mass units
 - molar mass: none found for 'antimony' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'antimony', not sodium_stibogluconate — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Chulay_1988_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -85,17 +82,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.875 (7/8 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[slow elimination phase mean half-life].parameter_id` | Q89 | Q60 | mismatch |
+| `gpt-oss-120b` | `model.links` | [['sodium stibogluconate', 'antimony', 'interconversion']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[initial absorption phase mean half-life]` |  | 0.85 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean half-life]` | 0.85 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rapid elimination phase mean half-life]` |  | 2.02 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[slow elimination phase mean half-life]` |  | 76 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sodium stibogluconate | sodium stibogluconate, meglumine antimoniate | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | antimony | antimony (Sb) | mismatch |
 
 </details>
 
@@ -109,13 +112,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q59 | pass | [time] |  | ['Chulay_1988:abstract'] |
-| C5_dimension_Q89 | pass | [time] |  | ['Chulay_1988:abstract'] |
-| C5_dimension_Q95 | pass | [time] |  | ['Chulay_1988:abstract'] |
-| C8_topology | pass |  |  |  |
+| C5_dimension_Q57 | pass | [time] |  | ['Chulay_1988:abstract', 'Chulay_1988:abstract', 'Chulay_1988:abstract'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -127,19 +128,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -149,4 +140,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsodium_stibogluconate%5D%20SodiumStibogluconate_Chulay1988_reference&body=Drug%3A%20sodium_stibogluconate%0ARecord%3A%20SodiumStibogluconate_Chulay1988_reference%0APaper%3A%20Chulay_1988%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Chulay1988_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 08:52 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:00 UTC</sub>

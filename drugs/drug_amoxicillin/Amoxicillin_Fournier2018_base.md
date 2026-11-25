@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability (F) for amoxicillin was left at library defaults rather than using the estimate from Fournier_2018.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Fournier2018_base" status="needs_review" stale="false" population="ICU burn patients" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Fournier A, Goutelle S, Que YA, Eggimann P, Pantet O, Sadeghipour F et al. Popul
 
 ### Reviewer guidance
 
-**Bioavailability (F) for amoxicillin was left at library defaults rather than using the estimate from Fournier_2018.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists parameters for clearance, volumes, and absorption, but the bioavailability parameter was not explicitly estimated or reported. Consequently, the model relies on placeholder values for this key input. Since bioavailability directly scales the simulated plasma concentration, using defaults unsupported by the specific study compromises the model's validity. Extracted — amoxicillin: CL 13.1 L/h, V1 10.1 L, Q 20.8 L/h, V2 16.6 L, kabs 0.17 h−1, tlag 0.125 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — amoxicillin: CL 13.1 L/h, V1 10.1 L, Q 20.8 L/h, V2 16.6 L, kabs 0.17 h−1, tlag 0.125 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

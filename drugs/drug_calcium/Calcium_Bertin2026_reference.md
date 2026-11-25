@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The calcium record was rejected because the paper concerns another drug, so its reported clearance (18.2 L/h) and volume of distribution (0.43 L/kg) are not attributable to calcium.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="Calcium" model-id="Calcium_Bertin2026_reference" status="rejected" stale="false" population="" measured-compound="calcium" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Bertin S, Guidi M, Haefliger D, Thoueille P, Bardinet C, Decosterd LA et al. Pop
 
 ### Reviewer guidance
 
-**The calcium record was rejected because the paper concerns another drug, so its reported clearance (18.2 L/h) and volume of distribution (0.43 L/kg) are not attributable to calcium.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The record lists calcium total clearance as 18.2 L/h and volume of distribution as 0.43 L/kg. Neither the paper’s title nor abstract names calcium, and the relevance assessment identifies the paper as concerning another drug. Extracted — calcium: CL 18.2 L/h, V 0.43 L/kg.
+Extracted — calcium: CL 18.2 L/h, V 0.43 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q336: this record has none, the second reading 0.2; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -127,7 +127,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.615, 0 of 1 reader(s) agree | 0.615 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.615 (8 of 13 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.615 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

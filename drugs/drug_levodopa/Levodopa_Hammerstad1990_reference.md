@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N04B&quot;,&quot;href&quot;:&quot;atc/N04B.md&quot;},{&quot;label&quot;:&quot;levodopa&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/&quot;},{&quot;label&quot;:&quot;Hammerstad_1990 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levodopa_Senek2018_reference&quot;,&quot;label&quot;:&quot;Senek_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/Levodopa_Senek2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Suksai_2026_TRS&quot;,&quot;label&quot;:&quot;Suksai_2026 \u00b7 TRS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/pd_Suksai_2026_TRS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Westin_2011_motor_rating&quot;,&quot;label&quot;:&quot;Westin_2011 \u00b7 motor rating&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/pd_Westin_2011_motor_rating.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levodopa_Senek2018_reference&quot;,&quot;label&quot;:&quot;Senek_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/Levodopa_Senek2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Suksai_2026_TRS&quot;,&quot;label&quot;:&quot;Suksai_2026 \u00b7 TRS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/pd_Suksai_2026_TRS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> This paper's disposition core is incomplete.
+> Only clearance was extracted — no volume.
 
 <div class="pk-model-meta" hidden drug="levodopa" model-id="Levodopa_Hammerstad1990_reference" status="needs_review" stale="false" population="Rhesus monkeys" measured-compound="levodopa" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Hammerstad JP, Woodward WR, Gliessman P, Boucher B, Nutt JG. L-dopa pharmacokine
 
 ## Population and dosing
 
-**Population:** Rhesus monkeys · condition healthy · age group adult.
+**Population:** Rhesus monkeys · condition healthy.
 
 > **Species: monkey.** This record comes from an animal study (monkey), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -25,7 +25,7 @@ Hammerstad JP, Woodward WR, Gliessman P, Boucher B, Nutt JG. L-dopa pharmacokine
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -34,12 +34,10 @@ Hammerstad JP, Woodward WR, Gliessman P, Boucher B, Nutt JG. L-dopa pharmacokine
 | label | parameter | value | unit |
 |---|---|---|---|
 | elimination half-life | t1/2z | 100 | minutes |
-| Vb | V | 10.0 | L |
-| ka | kabs | 1.2 | h−1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +47,11 @@ Hammerstad JP, Woodward WR, Gliessman P, Boucher B, Nutt JG. L-dopa pharmacokine
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Only clearance was extracted — no volume.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Suksai_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — levodopa: t1/2z 100 minutes, V 10 L, kabs 1.2 h−1.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — levodopa: t1/2z 100 minutes.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[elimination half-life].parameter_id`: this record has Q57, the second reading Q60; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,9 +59,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| elimination half-life | `Q57` · t1/2z | 100 | minutes | 6000 | s | min | llm (0.6) | Hammerstad_1990:abstract |
-| Vb | `Q61` · V | 10.0 | L | 0.01 | m3 | L | review_gapfill (0.7) | Suksai_2026:review |
-| ka | `Q49` · kabs | 1.2 | h−1 | 0.0003333 | 1/s | 1/h | review_gapfill (0.7) | Suksai_2026:review |
+| elimination half-life | `Q57` · t1/2z | 100 | minutes | 6000 | s | min | half_life_rule (0.95) | Hammerstad_1990:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,32 +71,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=levodopa
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Suksai_2026's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Suksai_2026's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Hammerstad_1990_metadata.yaml (1 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `gpt-oss-120b` | confirmed | 1.0 (5/5 fields) | none |
 
-<details><summary>3 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[elimination half-life].parameter_id` | Q57 | Q60 | mismatch |
-| `gpt-oss-120b` | `parameters[ka]` | 1.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vb]` | 10.0 |  | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -115,11 +99,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Suksai_2026:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Hammerstad_1990:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Suksai_2026:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 10 L | ['Suksai_2026:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -153,4 +134,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevodopa%5D%20Levodopa_Hammerstad1990_reference&body=Drug%3A%20levodopa%0ARecord%3A%20Levodopa_Hammerstad1990_reference%0APaper%3A%20Hammerstad_1990%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levodopa/Levodopa_Hammerstad1990_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 13:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:39 UTC</sub>

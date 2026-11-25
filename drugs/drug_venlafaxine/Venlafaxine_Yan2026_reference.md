@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because Yan_2026 reports mirtazapine, not venlafaxine, despite listing venlafaxine CL/F as 28.9 L·h−1.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="venlafaxine" model-id="Venlafaxine_Yan2026_reference" status="rejected" stale="false" population="" measured-compound="venlafaxine" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Yan H, Huang W, Xia H, Luo Y, Li Y, Shang D. Optimizing Mirtazapine Initial Dosi
 
 ### Reviewer guidance
 
-**The record was rejected because Yan_2026 reports mirtazapine, not venlafaxine, despite listing venlafaxine CL/F as 28.9 L·h−1.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper reports population pharmacokinetic parameters for mirtazapine; venlafaxine is mentioned only as a potential concomitant medication. The record also indicates that Tlag had no explicit estimate and that the model assumed F=1, Fm=1, with no molar correction. Extracted — venlafaxine: CL/F 28.9 L · h−1, V/F 310 L, kabs 1.2 h−1.
+Extracted — venlafaxine: CL/F 28.9 L · h−1, V/F 310 L, kabs 1.2 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q316: this record has 0.0747, the second reading none. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

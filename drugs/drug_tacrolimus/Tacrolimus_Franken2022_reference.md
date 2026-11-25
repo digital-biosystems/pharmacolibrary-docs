@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record for tacrolimus was held back because covariate effects, including the CYP3A5 parameter, were not simulated during the model review.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="tacrolimus" model-id="Tacrolimus_Franken2022_reference" status="needs_review" stale="false" population="kidney transplant recipients" measured-compound="tacrolimus" parameterization="apparent" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Franken LG, Francke MI, Andrews LM, van Schaik RHN, Li Y, de Wit LEA et al. A Po
 
 ### Reviewer guidance
 
-**The record for tacrolimus was held back because covariate effects, including the CYP3A5 parameter, were not simulated during the model review.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The reviewer noted that covariate scenarios were not exercised; only the base model for the reference individual was simulated. Additionally, a second reader disagreed with the identified dose compound and primary analyte, marking them as unknown rather than tacrolimus. The second reader also disputed the existence of the CYP3A5 covariate parameter, listing it as null. Extracted — tacrolimus: tlag 0.38 h, kabs 3.58 h–1, CL/F 23 l h–1, V1/F 692 l, Q/F 11.6 l h–1, V2/F 5.34e+03 l.
+The base model was simulated, not the covariate effects the record defines. Extracted — tacrolimus: tlag 0.38 h, kabs 3.58 h–1, CL/F 23 l h–1, V1/F 692 l, Q/F 11.6 l h–1, V2/F 5.34e+03 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tacrolimus, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -169,7 +169,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.667 (8 of 12 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (8 of 12 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;potassium clorazepate&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/&quot;},{&quot;label&quot;:&quot;Carrigan_1977 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumClorazepate_Diack2024_reference&quot;,&quot;label&quot;:&quot;Diack_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Diack2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Kirschbrown2019_reference&quot;,&quot;label&quot;:&quot;Kirschbrown_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kirschbrown2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Kratochwil2021_reference&quot;,&quot;label&quot;:&quot;Kratochwil_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kratochwil2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Pressler2024_reference&quot;,&quot;label&quot;:&quot;Pressler_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Pressler2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sigel_1988_GABA_current&quot;,&quot;label&quot;:&quot;Sigel_1988 \u00b7 GABA current&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/pd_Sigel_1988_GABA_current.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumClorazepate_Diack2024_reference&quot;,&quot;label&quot;:&quot;Diack_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Diack2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Kirschbrown2019_reference&quot;,&quot;label&quot;:&quot;Kirschbrown_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kirschbrown2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Kratochwil2021_reference&quot;,&quot;label&quot;:&quot;Kratochwil_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kratochwil2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Pressler2024_reference&quot;,&quot;label&quot;:&quot;Pressler_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Pressler2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Parameter D1 (22.5 mg) was assigned to infusion duration, causing a mass-to-time unit mismatch for potassium clorazepate.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg ([mass]) vs [time].
 
 <div class="pk-model-meta" hidden drug="potassium clorazepate" model-id="PotassiumClorazepate_Carrigan1977_reference" status="rejected" stale="false" population="healthy adults" measured-compound="nordiazepam" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Carrigan PJ, Chao GC, Barker WM, Hoffman DJ, Chun AH. Steady-state bioavailabili
 
 ### Reviewer guidance
 
-**Parameter D1 (22.5 mg) was assigned to infusion duration, causing a mass-to-time unit mismatch for potassium clorazepate.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg ([mass]) vs [time].**
 
-The record was built from the abstract only, so summary statistics stand in for a fitted model. The value 22.5 mg, identified as a dose, was mapped to the parameter meaning 'duration of zero-order input', which requires time units. Consequently, the recorded unit (mg) conflicts with the expected unit dimension (time), resulting in rejection. Extracted — nordiazepam: t1/2β 48 hours, tlag 24 hours; potassium clorazepate: D1 22.5 mg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nordiazepam: t1/2β 48 hours, tlag 24 hours; potassium clorazepate: D1 22.5 mg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clorazepate dipotassium, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -150,4 +150,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpotassium_clorazepate%5D%20PotassiumClorazepate_Carrigan1977_reference&body=Drug%3A%20potassium_clorazepate%0ARecord%3A%20PotassiumClorazepate_Carrigan1977_reference%0APaper%3A%20Carrigan_1977%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_potassium_clorazepate/PotassiumClorazepate_Carrigan1977_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:06 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:50 UTC</sub>

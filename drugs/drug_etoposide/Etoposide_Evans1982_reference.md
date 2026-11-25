@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Etoposide total clearance of 5.2 L/h appears in a rejected record with a metabolite unreachable from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="etoposide" model-id="Etoposide_Evans1982_reference" status="rejected" stale="false" population="children with acute leukemia" measured-compound="etoposide" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -47,13 +47,13 @@ Evans WE, Sinkule JA, Crom WR, Dow L, Look AT, Rivera G. Pharmacokinetics of Ten
 
 ### Reviewer guidance
 
-**Etoposide total clearance of 5.2 L/h appears in a rejected record with a metabolite unreachable from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists etoposide and teniposide metabolism links to hydroxy acids and picro-lactone isomers, but a metabolite with no path from the dose triggered rejection. The paper’s abstract alone was read, so its reported summary statistics, including the model-independent systemic clearance of 5.2 L/h, stand in for a fitted model. The second reader disputed the dose compounds, primary analyte, and interpretation of the metabolite links. Extracted — etoposide: CL 5.2 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — etoposide: CL 5.2 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has teniposide and etoposide, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

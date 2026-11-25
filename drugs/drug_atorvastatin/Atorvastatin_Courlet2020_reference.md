@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record omits bioavailability and lag time estimates, and specifies a single-compartment structure inconsistent with the reported metabolite formation.
+> F use library defaults, not estimates from this paper; t3_output_variable (+2 more).
 
 <div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Courlet2020_reference" status="rejected" stale="false" population="aging people living with HIV" measured-compound="atorvastatin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -55,13 +55,13 @@ Courlet P, Decosterd LA, Alves Saldanha S, Cavassini M, Stader F, Stoeckle M et 
 
 ### Reviewer guidance
 
-**The record omits bioavailability and lag time estimates, and specifies a single-compartment structure inconsistent with the reported metabolite formation.**
+**F use library defaults, not estimates from this paper; t3_output_variable (+2 more).**
 
-The model builder left bioavailability (F) and lag time (Tlag) at default library values rather than extracting them from the paper. Additionally, the model structure was implemented as a simple one-compartment model, failing to account for the reported formation of o-OH-atorvastatin. Extracted — atorvastatin: kabs 2.59 1/h, CL 230 L/h, V 2.91e+03 L, Q 98 L/h, kel 0.0072 h−1; o-OH-atorvastatin: fm 10, CL 116 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — atorvastatin: kabs 2.59 1/h, CL 230 L/h, V 2.91e+03 L, Q 98 L/h, kel 0.0072 h−1; o-OH-atorvastatin: fm 10, CL 116 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atorvastatin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

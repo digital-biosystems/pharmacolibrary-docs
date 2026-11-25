@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;varenicline&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/&quot;},{&quot;label&quot;:&quot;Glatard_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Varenicline_Fediuk2021_reference&quot;,&quot;label&quot;:&quot;Fediuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Fediuk2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Varenicline_Glatard2019_reference&quot;,&quot;label&quot;:&quot;Glatard_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Glatard2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Lummis_2011_Rmax&quot;,&quot;label&quot;:&quot;Lummis_2011 \u00b7 Rmax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/pd_Lummis_2011_Rmax.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lummis_2011_Rmax_2&quot;,&quot;label&quot;:&quot;Lummis_2011 \u00b7 Rmax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/pd_Lummis_2011_Rmax_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Varenicline_Fediuk2021_reference&quot;,&quot;label&quot;:&quot;Fediuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Fediuk2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Varenicline_Glatard2019_reference&quot;,&quot;label&quot;:&quot;Glatard_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Glatard2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The 8.5 L/h varenicline clearance entry is labeled as a biomarker estimate rather than varenicline disposition, and terminal half-life is 15.2 h versus the paper’s 19 h.
+> The model does not reproduce the paper's terminal half-life (paper 19, model 15.2); biomarker_kinetics_as_drug_pk (+2 more).
 
 <div class="pk-model-meta" hidden drug="varenicline" model-id="Varenicline_Glatard2019_reference" status="rejected" stale="false" population="adult smokers from the general population" measured-compound="varenicline" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Glatard A, Guidi M, Dobrinas M, Cornuz J, Csajka C, Eap CB. Influence of body we
 
 ### Reviewer guidance
 
-**The 8.5 L/h varenicline clearance entry is labeled as a biomarker estimate rather than varenicline disposition, and terminal half-life is 15.2 h versus the paper’s 19 h.**
+**The model does not reproduce the paper's terminal half-life (paper 19, model 15.2); biomarker_kinetics_as_drug_pk (+2 more).**
 
-The 8.5 L/h clearance label describes an estimate for a 70-kg individual with normal creatinine clearance in Hom-Alt/Het-Alt individuals; the finding flags the disposition label as naming a biomarker, whose kinetics are assigned to a PD record rather than varenicline. The model does not reproduce the paper's terminal half-life (paper 19, model 15.2). Tlag was defaulted, and the apparent parameterization assumes F=1, Fm=1, and no molar correction; a second reader disputed the record overall (agreement 0.2, 0 of 1 readers agree). Extracted — varenicline: CL/F 9.6 L/h, V/F 211 L, CL 8.5 L/h, kabs 0.98 h -1.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — varenicline: CL/F 9.6 L/h, V/F 211 L, CL 8.5 L/h, kabs 0.98 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has varenicline, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |  |  |
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |  |  |
-| C1_half_life_beta | pass | 19 | 17.21 | 0.9056 | 0.25 | reported t½β |
+| C1_half_life_beta | pass | 19 | 15.23 | 0.8018 | 0.25 | reported t½β |
 | C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['Glatard_2019:review'] |
 | C7_apparent_coherence | pass |  |  |  |  |  |
 | C8_topology | pass |  |  |  |  |  |
@@ -151,10 +151,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | pass | 19 | 15.22 | 0.8011 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 24 | 15.22 | 0.6342 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | skipped |  | 15.22 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | pass | 19 | 15.22 | 0.8011 | reported 19.0 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 24 | 15.22 | 0.6342 | reported 24.0 h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 15.22 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

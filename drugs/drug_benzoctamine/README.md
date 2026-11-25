@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 18:23 | 4:04 | 0/0/0 | 0/0/0 | 0/0/0 | 239,234/1,283 | ollama / glm-5.3-flash | 9 | 4/5 | 9/0 | 0 |
+| 2026-11-23 18:38 | 0:03 | 0/0/0 | 0/0/0 | 0/0/0 | 3,619/147 | einfracz / qwen3.8-27b | 9 | 4/5 | 9/0 | 0 |
 
 ## Coverage
 
@@ -47,19 +47,25 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Müller_1978.pdf` | Müller WE et al., Benzodiazepine receptor binding: the in…, Naunyn-Schmiedeberg's archi… (1978) | pd | 4 | [10.1007/BF00497002](https://doi.org/10.1007/BF00497002) | [723967](https://www.ncbi.nlm.nih.gov/pubmed/723967) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06 18:22 UTC</sub>
+<sub>queue written 2026-11-23 18:38 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Campanile_2026 | irrelevant | 0 | 0 | This is a PBPK modeling study of mRNA-LNP-encoded antibodies in mice; benzoctamine is not mentioned anywhere and no benzoctamine PK parameters appear. |
+| popPK | Campanile_2026 | irrelevant | 0 | 0 | The paper is a PBPK modeling study for mRNA-encoded antibodies in mice and does not mention or report any pharmacokinetic parameters for benzoctamine. |
+| PGx | Campanile_2026 | not_relevant | 0 | 0 | The paper focuses on PBPK modeling of mRNA-based antibody therapeutics and does not mention benzoctamine. |
 | popPK | Dumont_2026 | irrelevant | 0 | 0 | This is a pharmacology education study on student exam performance, with no benzoctamine PK data or parameters present. |
-| popPK | Liu_2024 | irrelevant | 0 | 0 | This is a population-PK study of ciprofol (HSK3486), not benzoctamine; benzoctamine is not mentioned anywhere. |
+| popPK | Liu_2024 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for ciprofol, not benzoctamine. |
+| PGx | Liu_2024 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of ciprofol (not benzoctamine) and examines physiological and clinical covariates (age, weight, race, sex) rather than genetic variants, genotypes, or phenotypes. |
 | popPK | McKeown_2024 | irrelevant | 0 | 0 | This is a medicinal chemistry/cancer biology paper on ethanoanthracene compounds in CLL cell lines; benzoctamine is not mentioned and no PK parameters for it appear. |
-| popPK | Rodallec_2026 | irrelevant | 0 | 0 | This is a population PK/PD study of paclitaxel-polyacrylamide prodrug in mice, not benzoctamine; parameter values are in supplementary tables not provided. |
+| popPK | Müller_1978 | irrelevant | 0 | 0 | This is an in vitro receptor binding study investigating the interaction of benzoctamine with benzodiazepine receptors, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Müller_1978 | not_relevant | 0 | 0 | The paper describes in vitro receptor binding assays for benzoctamine and other drugs in rat brain membranes and does not report any pharmacogenomic effects (gene variants) on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Rodallec_2026 | irrelevant | 0 | 0 | The study is a PK/PD modeling study for paclitaxel in mice and does not mention benzoctamine. |
+| PGx | Rodallec_2026 | not_relevant | 0 | 0 | The paper focuses on PK/PD modeling for paclitaxel nanocarriers in mice and does not mention benzoctamine or any pharmacogenomic effects. |
 | popPK | Sethi_2024 | irrelevant | 0 | 0 | This is a medicinal chemistry/computational study of galectin-1 inhibitors; no benzoctamine PK parameters appear anywhere. |
-| popPK | Silmore_2021 | irrelevant | 0 | 0 | This is a review of cannabidiol pharmacokinetics; benzoctamine is not the subject drug and no benzoctamine parameters appear. |
+| popPK | Silmore_2021 | irrelevant | 0 | 0 | The paper is a systematic review regarding the pharmacokinetics of cannabidiol (CBD), not benzoctamine. |
+| PGx | Silmore_2021 | not_relevant | 0 | 0 | The paper discusses the food effects on the pharmacokinetics of cannabidiol (CBD), not benzoctamine, and does not report pharmacogenomic effects. |
 | popPK | Tomasek_2025 | irrelevant | 0 | 0 | This is a UTI/OM-89 epithelial immunity study with no benzoctamine PK parameters; "clearance" refers to bacterial clearance, not drug disposition. |
 | popPK | Tomasek_2026 | irrelevant | 0 | 0 | This is a UTI/OM-89 immunomodulation study with no benzoctamine PK parameters; "clearance" refers to bacterial clearance, not drug disposition. |
 | popPK | van_2026 | irrelevant | 0 | 0 | The paper reports PK of procizumab (PCZ), a DPP3-inhibiting antibody; benzoctamine is never mentioned and no benzoctamine parameters appear. |

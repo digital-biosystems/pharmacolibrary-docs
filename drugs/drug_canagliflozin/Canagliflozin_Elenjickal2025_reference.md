@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Steady-state AUC (66%) and transit compartments (1000) in canagliflozin have dimension mismatch, invalidating the record.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q18 unit % (dimensionless) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="canagliflozin" model-id="Canagliflozin_Elenjickal2025_reference" status="rejected" stale="false" population="patients with advanced chronic kidney disease" measured-compound="canagliflozin" parameterization="apparent" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Elenjickal EJ, Mavrakanas TA, Gritsas A, Suri RS, Marsot A. Population Pharmacok
 
 ### Reviewer guidance
 
-**Steady-state AUC (66%) and transit compartments (1000) in canagliflozin have dimension mismatch, invalidating the record.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q18 unit % (dimensionless) vs [mass] * [time] / [length] ** 3.**
 
-The record lists steady-state AUC as 66%, a dimensionless unit, but the parameter requires dimensions of mass·time/length³. Transit compartments are recorded as 1000 'bootstrap', which is an invalid unit for a dimensionless count. These dimension conflicts on structural parameters caused the rejection. Extracted — canagliflozin: n_transit 1e+03 bootstrap, V/F 80.7 L, AUCSS 66 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — canagliflozin: n_transit 1e+03 bootstrap, V/F 80.7 L, AUCSS 66 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has canagliflozin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

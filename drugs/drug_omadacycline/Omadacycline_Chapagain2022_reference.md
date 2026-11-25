@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Second reader disputes central volume 21.1 L, clearance 10.3 L/h, and peripheral volume 79.9 L values, halting publication.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Chapagain2022_reference" status="needs_review" stale="false" population="simulated healthy adults" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Chapagain M, Pasipanodya JG, Athale S, Bernal C, Trammell R, Howe D et al. Omada
 
 ### Reviewer guidance
 
-**Second reader disputes central volume 21.1 L, clearance 10.3 L/h, and peripheral volume 79.9 L values, halting publication.**
+**cross_check_disputed; x1_cross_check.**
 
-The review was held back because a second reader failed to verify the extracted pharmacokinetic parameters for the two-compartment model. This second reader reported different values for the central volume (95.28 L), total clearance (22.40 L/h), and peripheral volume (26.96 L) compared to the primary extraction. Additionally, the second reader could not locate a corresponding value for the intercompartmental clearance, which was recorded as 0.12 mL/min. Extracted — omadacycline: CL 10.3 L/h, V1 21.1 L, V2 79.9 L, Q 0.12 mL/min.
+Extracted — omadacycline: CL 10.3 L/h, V1 21.1 L, V2 79.9 L, Q 0.12 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[central volume].value`: this record has 21.1, the second reading 95.28; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

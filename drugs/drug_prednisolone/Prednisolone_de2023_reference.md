@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Prednisolone’s KD of 0.0095 nmol was dimensionally incompatible with the expected concentration dimension, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nmol ([substance]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="prednisolone" model-id="Prednisolone_de2023_reference" status="rejected" stale="false" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ de Truchis C, Bouazza N, Foissac F, Charbit M, Dehoux L, Lui G et al. Prednisolo
 
 ### Reviewer guidance
 
-**Prednisolone’s KD of 0.0095 nmol was dimensionally incompatible with the expected concentration dimension, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nmol ([substance]) vs [mass] / [length] ** 3.**
 
-KD is the equilibrium dissociation constant for drug–target binding, but its reported nmol unit is amount, whereas the structural-parameter check expected mass per volume. The reported unit could not be converted to SI, so no SI value was available. Extracted — prednisolone: kabs 12.5 h-1, tlag 0.63 h, V 101 L/70 kg, CLm,norm/F 27.6 L/h/70 kg, Bmax 6.77, KD 0.0095 nmol.
+A reported unit could not be converted (KD), so that value has no SI equivalent. Extracted — prednisolone: kabs 12.5 h-1, tlag 0.63 h, V 101 L/70 kg, CLm,norm/F 27.6 L/h/70 kg, Bmax 6.77, KD 0.0095 nmol.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has prednisone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

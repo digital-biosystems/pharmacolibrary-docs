@@ -1,7 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;trabectedin&quot;,&quot;href&quot;:&quot;drugs/drug_trabectedin/&quot;},{&quot;label&quot;:&quot;Fetterly_2008 \u00b7 PD alanine aminotransferase&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trabectedin_Poggesi2019_reference&quot;,&quot;label&quot;:&quot;Poggesi_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_trabectedin/Trabectedin_Poggesi2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# alanine aminotransferase — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+# alanine aminotransferase — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Trabectedin (concentrations from the PK model of Perez-Ruixo_2007) drives alanine aminotransferase (in IU/L): indirect response — drug stimulates the production of alanine aminotransferase.
+**As extracted:** Trabectedin (concentrations from the PK model of Perez-Ruixo_2007) drives alanine aminotransferase (in IU/L): indirect response — drug stimulates the loss of alanine aminotransferase.
 
 **Model:** No model was generated from this record.
 
@@ -22,7 +23,7 @@
 > <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
 
 - **paper:** `Fetterly_2008`
-- **model family:** `indirect_response_iii`
+- **model family:** `indirect_response_iv`
 - **driver:** `cited_pk`
 - **tier:** population
 - **effect:** stimulation/proportional
@@ -34,10 +35,9 @@ Fetterly GJ et al., Semimechanistic pharmacokinetic/pharmac…, Cancer chemother
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | baseline ALT (ALT(o)) | `Q324` ·  | 31.5 | IU/L | llm | Fetterly_2008:pdv3 |
-| PD (effect) | trabectedin stimulation of the ALT transfer rate | `Q335` ·  | 11.4 | % per 100 pg/mL | llm | Fetterly_2008:pdv3 |
+| PD (effect) | baseline ALT | `Q324` ·  | 31.5 | IU/L | llm | Fetterly_2008:pdv3 |
 | — | t (1/2) in plasma | `Q100` ·  | 1.5 | days | nil | Fetterly_2008:pdv3 |
-| model term | dexamethasone effect on trabectedin-induced ALT release | `Q900` ·  | 63 | % | llm | Fetterly_2008:pdv3 |
+| model term | magnitude of trabectedin stimulation of the ALT transfer rate | `Q900` ·  | 11.4 | % per 100 pg/mL | llm | Fetterly_2008:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -46,19 +46,19 @@ Fetterly GJ et al., Semimechanistic pharmacokinetic/pharmac…, Cancer chemother
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.571 (4/7 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `effect_form` | proportional | unknown | mismatch |
-| `qwen3.8-27b` | `parameters[Q100]` | 1.5 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q900]` | 63 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q100]` | 1.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q324].value` | 31.5 | symbol | mismatch |
+| `gpt-oss-120b` | `parameters[Q900]` | 11.4 |  | only_one_extracted |
 
 </details>
 

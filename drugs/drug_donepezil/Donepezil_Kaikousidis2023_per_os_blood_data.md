@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The model was rejected because the absorption rate constant of 2.73 1/hour and lag time of 0.54 hours were not found by the second reader.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Kaikousidis2023_per_os_blood_data" status="rejected" stale="false" population="mice (brain and blood PK)" measured-compound="donepezil" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Kaikousidis C, Papakyriakopoulou P, Dokoumetzidis A, Valsami G. Donepezil Brain 
 
 ### Reviewer guidance
 
-**The model was rejected because the absorption rate constant of 2.73 1/hour and lag time of 0.54 hours were not found by the second reader.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The rejection reason cites a physiological plausibility error for clearance and volume, but the facts provide no clearance parameter or volume values outside a stated window. The second reader explicitly disagrees with the recorded values for the absorption rate constant (2.73 1/hour) and lag time (0.54 hours), returning null for both fields. The remaining distribution and elimination parameters (0.064 1/min, 0.032 1/min, 0.024 1/min) have consistent units and no specific numerical flags in the findings. Extracted — donepezil: k12 0.064 1/min, kcomp 0.032 1/min, ki0 0.024 1/min, V 0.279 L, kabs 2.73 /hour, tlag 0.54 hours.
+Extracted — donepezil: k12 0.064 1/min, kcomp 0.032 1/min, ki0 0.024 1/min, V 0.279 L, kabs 2.73 /hour, tlag 0.54 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption rate constant: this record has 2.73, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

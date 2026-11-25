@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The clearance value of 21.0 mL/h for carisoprodol is physiologically implausible, indicating a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="carisoprodol" model-id="Carisoprodol_Calvo2022_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="carisoprodol" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Calvo A, Alonso S, Prieto E, Ascaso-Del-Rio A, Ortuño J, Fernandez N et al. Sin
 
 ### Reviewer guidance
 
-**The clearance value of 21.0 mL/h for carisoprodol is physiologically implausible, indicating a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a clearance of 21.0 mL/h, which falls outside the physiological window for this compound. A volume of distribution of 0.0606 L is also derived from these parameters. The second reader did not provide an alternative value for the clearance parameter. Extracted — carisoprodol: CL 21 mL/h, V 0.0606 L.
+Extracted — carisoprodol: CL 21 mL/h, V 0.0606 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 21, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

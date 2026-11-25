@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Q1 has unit μmol instead of the required volume or clearance dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit μmol ([substance]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="glucarpidase" model-id="Glucarpidase_Fukaya2023_original_estimate" status="rejected" stale="false" population="healthy volunteers and patients with delayed MTX excretion after high-dose methotrexate" measured-compound="methotrexate" parameterization="mechanistic" topology="manual_model_class"></div>
 
@@ -54,13 +54,13 @@ Fukaya Y, Kimura T, Hamada Y, Yoshimura K, Hiraga H, Yuza Y et al. Development o
 
 ### Reviewer guidance
 
-**Q1 has unit μmol instead of the required volume or clearance dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit μmol ([substance]) vs [mass] / [length] ** 3.**
 
-The parameter Q1 (clearance) has unit μmol, which is a unit of amount, not mass per volume. This conflicts with the parameter's role as a clearance, which should have units of volume per time or volume. Additionally, there is disagreement on the primary analyte and the metabolic link, with the second reader identifying glucarpidase as the analyte and glucarpidase as the precursor metabolite. Extracted — glucarpidase: CL 0.059 L/h, V 0.957 L, Q 0.0778 L/h, Km 86 μmol.
+No model template covers this structure. Extracted — glucarpidase: CL 0.059 L/h, V 0.957 L, Q 0.0778 L/h, Km 86 μmol.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has methotrexate, the second reading glucarpidase; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

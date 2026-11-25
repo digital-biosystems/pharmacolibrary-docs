@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Spironolactone elimination clearance lacks a value, forcing a placeholder, while the second reader disputed the metabolite links and parameter assignments.
+> No value for spironolactone's elimination clearance; t3_param_coverage (+2 more).
 
 <div class="pk-model-meta" hidden drug="spironolactone" model-id="Spironolactone_Lass2024_model_2" status="model_quarantined" stale="false" population="infants with chronic heart failure, ascites and/or oedema" measured-compound="spironolactone" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -49,13 +49,13 @@ Lass J, Leroux S, Kõrgvee LT, Varendi H, Kipper K, Takkis K et al. Pharmacokine
 
 ### Reviewer guidance
 
-**Spironolactone elimination clearance lacks a value, forcing a placeholder, while the second reader disputed the metabolite links and parameter assignments.**
+**No value for spironolactone's elimination clearance; t3_param_coverage (+2 more).**
 
-The record failed a parameter coverage check, finding that the absorption rate constant was neither emitted nor included in the defaulted list. The second reader disagreed with the extracted metabolite formation links and identified conflicting values for the volume of distribution and clearance of 7 alphathiomethylspironolactone and canrenone. Consequently, the cross-check recorded a low agreement ratio of 0.333, with zero readers agreeing on the record's content. Extracted — 7 alphathiomethylspironolactone: V 103 L, CL 78 L/h; spironolactone: kabs 1.63 h -1.
+The model was built, but spironolactone's elimination clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — 7 alphathiomethylspironolactone: V 103 L, CL 78 L/h; spironolactone: kabs 1.63 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has spironolactone → 7 alphathiomethylspironolactone (metabolism); spironolactone → canrenone (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -151,7 +151,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_shared_parameters |  | pass | 2 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.333 (3 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check contradicted by a second reader: verdict disputed; agreement 0.333 (3 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_t_half_beta | reference | skipped | 1.4 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 1.4 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 2.1 |  |  | no simulated metric for this quantity (single reference sim) |

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> Tramadol’s absorption-rate constant (ka) has no reported value and was defaulted, so the record was held back.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Bao2023_reference" status="needs_review" stale="false" population="" measured-compound="tramadol" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Bao SS, Tang PF, Gao NY, Xiao ZX, Qian JC, Zheng L et al. Effect of apatinib on 
 
 ### Reviewer guidance
 
-**Tramadol’s absorption-rate constant (ka) has no reported value and was defaulted, so the record was held back.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The paper does not report an estimate of ka; a library default was used, affecting the simulated profile without support from this paper. The model builder also defaulted the absorption lag time (Tlag) and assumed F=1 and Fm=1 with no molar correction. First-order depot input was assumed, consistent with the apparent oral parameterization. Extracted — tramadol: CL/F 28.3 L/h/kg, V/F 9.82 L/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — tramadol: CL/F 28.3 L/h/kg, V/F 9.82 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has none, the second reading 7278.701; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

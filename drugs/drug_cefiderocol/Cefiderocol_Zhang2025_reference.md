@@ -44,7 +44,7 @@ Zhang C, Yu S, Li S, Wu X, Wei Q, He J et al. Pharmacokinetic, Pharmacokinetic/P
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has none, the second reading 1.08; it also differs on 1 more field. That field does not shape the model.
 
@@ -116,7 +116,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.867, 0 of 1 reader(s) agree | 0.867 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.867 (13 of 15 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.867 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

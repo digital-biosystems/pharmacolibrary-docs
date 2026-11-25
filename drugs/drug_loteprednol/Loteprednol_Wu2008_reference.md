@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Rejected because the metabolite Delta1-cortienic acid has no path from the dose, leaving the model structurally incomplete.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="loteprednol" model-id="Loteprednol_Wu2008_reference" status="rejected" stale="false" population="rats" measured-compound="Delta1-cortienic acid etabonate / Delta1-cortienic acid" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Wu WM, Huang F, Lee Y, Buchwald P, Bodor N. Pharmacokinetics of the sequential m
 
 ### Reviewer guidance
 
-**Rejected because the metabolite Delta1-cortienic acid has no path from the dose, leaving the model structurally incomplete.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists Delta1-cortienic acid etabonate and Delta1-cortienic acid as metabolites but provides no metabolism link connecting the parent loteprednol etabonate to the first metabolite. Consequently, the final metabolite Delta1-cortienic acid is unreachable from the administered compound, violating the structural requirements for a valid pharmacokinetic model. The second reader disputed the identification of the dose compound and the specific metabolite names, but the structural gap remains evident in the provided links. Extracted — loteprednol: t1/2β 12.5 min, CL 102 mL min(-1) kg(-1), kel 0.24 min(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — loteprednol: t1/2β 12.5 min, CL 102 mL min(-1) kg(-1), kel 0.24 min(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has loteprednol etabonate / Delta1-cortienic acid etabonate / Delta1-cortienic acid, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

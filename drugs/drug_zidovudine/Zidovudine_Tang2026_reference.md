@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Zidovudine metabolite back-conversion parameters use rate-constant units instead of clearances, and an elimination constant value was disputed by the second reader.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q371 unit h^-1 (1 / [time]) vs [length] ** 3 / [time]; Q371 unit h^-1 (1 / [time]) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="zidovudine" model-id="Zidovudine_Tang2026_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="zidovudine (AZT)" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="zidovudine" model-id="Zidovudine_Tang2026_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="zidovudine" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Tang F, Ji S, Lai X, Yan T, Peng J. The study on the transport and phosphorylation kinetics of zidovudine in the Chinese population and its significance for individualized antiretroviral therapy. Scientific reports 16(1) (2026).
@@ -25,7 +25,7 @@ Tang F, Ji S, Lai X, Yan T, Peng J. The study on the transport and phosphorylati
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,17 +33,16 @@ Tang F, Ji S, Lai X, Yan T, Peng J. The study on the transport and phosphorylati
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| kout (h− 1) | kel | 72 | h− 1 |
-| kO−MP (h− 1) | kfm | 45 | h− 1 |
-| kMP−O (h− 1) | kmp | 62 | h− 1 |
-| kMP−DP (h− 1) | kfm | 81 | h− 1 |
-| kDP−MP (h− 1) | CLmp | 76 | h− 1 |
-| kDP−TP (h− 1) | kfm | 79 | h− 1 |
-| kTP−DP (h− 1) | CLmp | 88 | h− 1 |
+| k_in (ng/10^6 cells/µM/h) | kfm | 1.22 | ng/10^6 cells/µM/h |
+| k_out (h^-1) | kel | 3.76 | h^-1 |
+| k_MP-O (h^-1) | CLmp | 0.792 | h^-1 |
+| k_MP-DP (h^-1) | kfm | 0.659 | h^-1 |
+| k_DP-TP (h^-1) | kfm | 3.18 | h^-1 |
+| k_TP-DP (h^-1) | CLmp | 4.62 | h^-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), qwen3.8-27b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,25 +52,24 @@ Tang F, Ji S, Lai X, Yan T, Peng J. The study on the transport and phosphorylati
 
 ### Reviewer guidance
 
-**Zidovudine metabolite back-conversion parameters use rate-constant units instead of clearances, and an elimination constant value was disputed by the second reader.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q371 unit h^-1 (1 / [time]) vs [length] ** 3 / [time]; Q371 unit h^-1 (1 / [time]) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-Parameters representing back-conversion clearance from diphosphate to monophosphate and triphosphate to diphosphate are labeled as clearances but assigned rate-constant units of h−1, causing a dimensional conflict. The elimination rate constant is recorded as 72 h−1, while the second reader identified no value for it. Furthermore, the two readers assigned several metabolite formation and back-conversion rate constants to different positions within the metabolic chain. Extracted — zidovudine: kel 72 h− 1, kmp 62 h− 1; zidovudine monophosphate (AZT-MP): kfm 45 h− 1, CLmp 76 h− 1; zidovudine diphosphate (AZT-DP): kfm 81 h− 1, CLmp 88 h− 1; zidovudine triphosphate (AZT-TP): kfm 79 h− 1.
+A reported unit could not be converted (kfm, CLmp and CLmp), so that value has no SI equivalent. None of the extracted parameters is zidovudine's own; they describe zidovudine monophosphate, zidovudine diphosphate and zidovudine triphosphate. Extracted — zidovudine monophosphate: kfm 1.22 ng/10^6 cells/µM/h, kel 3.76 h^-1, CLmp 0.792 h^-1; zidovudine diphosphate: kfm 0.659 h^-1, CLmp 4.62 h^-1; zidovudine triphosphate: kfm 3.18 h^-1.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has zidovudine (AZT), the second reading zidovudine; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has zidovudine → zidovudine monophosphate (metabolism); zidovudine monophosphate → zidovudine diphosphate (metabolism); zidovudine diphosphate → zidovudine triphosphate (metabolism), the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| kout (h− 1) | `Q47` · kel | 72 | h− 1 | 0.02 | 1/s | 1/h | exact (1) | Tab2:row3:col1, Tab2:row3:col2 |
-| kO−MP (h− 1) | `Q305` · kfm | 45 | h− 1 | 0.0125 | 1/s | 1/h | exact (1) | Tab2:row4:col1, Tab2:row4:col2 |
-| kMP−O (h− 1) | `Q372` · kmp | 62 | h− 1 | 0.01722 | 1/s | 1/h | llm_confirmed (0.6) | Tab2:row5:col1, Tab2:row5:col2 |
-| kMP−DP (h− 1) | `Q305` · kfm | 81 | h− 1 | 0.0225 | 1/s | 1/h | exact (1) | Tab2:row6:col1, Tab2:row6:col2 |
-| kDP−MP (h− 1) | `Q371` · CLmp | 76 | h− 1 |  |  | 1/h | exact (1) | Tab2:row7:col1, Tab2:row7:col2 |
-| kDP−TP (h− 1) | `Q305` · kfm | 79 | h− 1 | 0.02194 | 1/s | 1/h | exact (1) | Tab2:row8:col1, Tab2:row8:col2 |
-| kTP−DP (h− 1) | `Q371` · CLmp | 88 | h− 1 |  |  | 1/h | exact (1) | Tab2:row9:col1, Tab2:row9:col2 |
+| k_in (ng/10^6 cells/µM/h) | `Q305` · kfm | 1.22 | ng/10^6 cells/µM/h |  |  | (ng·106cells)/(h·µM) | exact (1) | Tang_2026_table_2:row0:col1 |
+| k_out (h^-1) | `Q47` · kel | 3.76 | h^-1 | 0.001044 | 1/s | 1/h | exact (1) | Tang_2026_table_2:row1:col1 |
+| k_MP-O (h^-1) | `Q371` · CLmp | 0.792 | h^-1 |  |  | 1/h | exact (1) | Tang_2026_table_2:row3:col1 |
+| k_MP-DP (h^-1) | `Q305` · kfm | 0.659 | h^-1 | 0.0001831 | 1/s | 1/h | exact (1) | Tang_2026_table_2:row4:col1 |
+| k_DP-TP (h^-1) | `Q305` · kfm | 3.18 | h^-1 | 0.0008833 | 1/s | 1/h | exact (1) | Tang_2026_table_2:row6:col1 |
+| k_TP-DP (h^-1) | `Q371` · CLmp | 4.62 | h^-1 |  |  | 1/h | exact (1) | Tang_2026_table_2:row7:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,36 +79,45 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped PD-category row 'kin (ng/106 cells/µM/h)' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row2:col1', 'Tab2:row2:col2'])
-- unit_dimension_mismatch: 'kDP−MP (h− 1)' → Q371 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'kTP−DP (h− 1)' → Q371 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=zidovudine (AZT)
+- unit_dimension_unknown: 'ng/10^6 cells/µM/h' (kfm)
+- dropped unlinked row (NIL): 'k_O-MP (h^-1)' — extend the ontology if this is a real PK parameter (source ['Tang_2026_table_2:row2:col1'])
+- unit_dimension_mismatch: 'k_MP-O (h^-1)' → Q371 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_mismatch: 'k_DP-MP (h^-1)' → Q371 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q371 ('k_DP-MP (h^-1)', value '1.72') — already have one for this compound
+- unit_dimension_mismatch: 'k_TP-DP (h^-1)' → Q371 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=zidovudine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 3 first-order transfer(s) across 4 compounds → general_linear
 - template fit: none — turnover model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=turnover; 8/8 row label(s) assigned, 12 linked by role; re-tagged parent→zidovudine monophosphate (AZT-MP) ×4, parent→zidovudine diphosphate (AZT-DP) ×4, parent→zidovudine triphosphate (AZT-TP) ×2
-- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- row roles (LLM): model_class=turnover; 8/8 row label(s) assigned, 7 linked by role; re-tagged parent→zidovudine monophosphate ×4, parent→zidovudine diphosphate ×2, parent→zidovudine triphosphate ×1
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (3/12 fields) | 9 |
 | `qwen3.8-27b` | not confirmed | 0.154 (2/13 fields) | 11 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>20 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['zidovudine', 'zidovudine monophosphate', 'metabolism'], ['zidovudine monophosphate', 'zidovudine diphosphate', 'metabolism'], ['zidovudine diphosphate', 'zidovudine triphosphate', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[k_dp-tp]` | 3.18 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k_in]` | 1.22 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k_mp-dp]` | 0.659 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k_mp-o]` |  | 0.792 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k_mp-o]` | 0.792 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k_o-mp]` |  | 0.478 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k_out]` | 3.76 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k_tp-dp]` | 4.62 |  | only_one_extracted |
 | `qwen3.8-27b` | `model.links` | [['zidovudine (azt)', 'zidovudine monophosphate (azt-mp)', 'metabolism'], ['zidovudine monophosphate (azt-mp)', 'zidovudine diphosphate (azt-dp)', 'metabolism'], ['zidovudine diphosphate (azt-dp)', 'zidovudine triphosphate (azt-tp)', 'metabolism']] | [['zidovudine', 'zidovudine monophosphate', 'metabolism'], ['zidovudine monophosphate', 'zidovudine diphosphate', 'metabolism'], ['zidovudine diphosphate', 'zidovudine triphosphate', 'metabolism']] | mismatch |
 | `qwen3.8-27b` | `parameters[kdp-mp]` | 76 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[kdp-tp]` |  | 79 | only_one_extracted |
@@ -135,16 +142,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 7 |  |
+| C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q305 | pass | 1 / [time] |  | ['Tab2:row4:col1', 'Tab2:row4:col2'] |
-| C5_dimension_Q305 | pass | 1 / [time] |  | ['Tab2:row6:col1', 'Tab2:row6:col2'] |
-| C5_dimension_Q305 | pass | 1 / [time] |  | ['Tab2:row8:col1', 'Tab2:row8:col2'] |
-| C5_dimension_Q371 | fail | [length] ** 3 / [time] | h− 1 (1 / [time]) | ['Tab2:row7:col1', 'Tab2:row7:col2'] |
-| C5_dimension_Q371 | fail | [length] ** 3 / [time] | h− 1 (1 / [time]) | ['Tab2:row9:col1', 'Tab2:row9:col2'] |
-| C5_dimension_Q372 | pass | 1 / [time] |  | ['Tab2:row5:col1', 'Tab2:row5:col2'] |
-| C5_dimension_Q47 | pass | 1 / [time] |  | ['Tab2:row3:col1', 'Tab2:row3:col2'] |
+| C5_dimension_Q305 | pass | 1 / [time] |  | ['Tang_2026_table_2:row4:col1'] |
+| C5_dimension_Q305 | pass | 1 / [time] |  | ['Tang_2026_table_2:row6:col1'] |
+| C5_dimension_Q371 | fail | [length] ** 3 / [time] | h^-1 (1 / [time]) | ['Tang_2026_table_2:row3:col1'] |
+| C5_dimension_Q371 | fail | [length] ** 3 / [time] | h^-1 (1 / [time]) | ['Tang_2026_table_2:row7:col1'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Tang_2026_table_2:row1:col1'] |
+| C5_unit_missing_Q305 | fail | 1 / [time] | ng/10^6 cells/µM/h | ['Tang_2026_table_2:row0:col1'] |
 | C8_topology | fail |  |  |  |
 
 <details class="legend">
@@ -169,4 +175,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzidovudine%5D%20Zidovudine_Tang2026_reference&body=Drug%3A%20zidovudine%0ARecord%3A%20Zidovudine_Tang2026_reference%0APaper%3A%20Tang_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zidovudine/Zidovudine_Tang2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:28 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:12 UTC</sub>

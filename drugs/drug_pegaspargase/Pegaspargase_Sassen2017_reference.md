@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper concerns another drug, so the pegaspargase parameters were rejected, and a second reader disagreed on several parameter values.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="pegaspargase" model-id="Pegaspargase_Sassen2017_reference" status="rejected" stale="false" population="" measured-compound="pegaspargase" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Sassen SD, Mathôt RA, Pieters R, Kloos RQ, de Haas V, Kaspers GJ et al. Populat
 
 ### Reviewer guidance
 
-**The paper concerns another drug, so the pegaspargase parameters were rejected, and a second reader disagreed on several parameter values.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The relevance screen rejected the paper because the subject was not pegaspargase. A second reader disagreed with the extraction of the intercompartmental clearance, finding a value of 0.64 where the record had none. Other parameter values were also disputed, resulting in an agreement ratio of 0.688. This discrepancy prevented verification of the model's validity for the intended molecule. Extracted — pegaspargase: CL 0.44 L/h/70kg, V1 3.2 L/70kg, V2 2.9 L/70kg, Q 0.15 L/h/70kg.
+Extracted — pegaspargase: CL 0.44 L/h/70kg, V1 3.2 L/70kg, V2 2.9 L/70kg, Q 0.15 L/h/70kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 14; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.688, 0 of 1 reader(s) agree | 0.688 | cross-check disputed by a second reader: verdict disputed, agreement 0.688, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.688 (11 of 16 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.688 | cross-check contradicted by a second reader: verdict disputed; agreement 0.688 (11 of 16 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

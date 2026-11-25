@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The AUCt unit for diclofenac was extracted as micrograms per milliliter rather than microgram-hours per milliliter, causing a dimension mismatch that rejected the record.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q19 unit µg h-1 ml-1 ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Auler1997_cpb" status="rejected" stale="false" population="surgical patients" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Auler Júnior JO, Espada EB, Crivelli E, Quintavalle TB, Kurata A, Stolf NA et a
 
 ### Reviewer guidance
 
-**The AUCt unit for diclofenac was extracted as micrograms per milliliter rather than microgram-hours per milliliter, causing a dimension mismatch that rejected the record.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q19 unit µg h-1 ml-1 ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The record lists AUCt with a value of 4.44 and the unit verbatim 'µg h-1 ml-1', yet the label omits the time dimension entirely. This discrepancy prevented the system from converting the value to standard SI units, leaving the parameter without a valid numeric representation for the model. Additionally, the second reader disagreed on the extraction of binding parameters, citing specific values that were recorded as null in this instance. Extracted — diclofenac: Cmax 2.17e+03 ng/ml, tmax 0.5 h, AUCt 4.44 µg h-1 ml-1, λ1 2.15 h-1, k12 0.49 h-1, k21 0.65 h-1, V 0.51 l/kg, kel 0.39 h-1, … (+4).
+A reported unit could not be converted (AUCt), so that value has no SI equivalent. Extracted — diclofenac: Cmax 2.17e+03 ng/ml, tmax 0.5 h, AUCt 4.44 µg h-1 ml-1, λ1 2.15 h-1, k12 0.49 h-1, k21 0.65 h-1, V 0.51 l/kg, kel 0.39 h-1, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of binding: this record has none, the second reading 94; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

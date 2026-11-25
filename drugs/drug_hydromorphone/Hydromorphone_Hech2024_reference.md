@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> The hydromorphone terminal half-life unit min-1 conflicts with its dimension, causing rejection of the feret study record.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q57 unit min-1 (1 / [time]) vs [time].
 
 <div class="pk-model-meta" hidden drug="hydromorphone" model-id="Hydromorphone_Hech2024_reference" status="rejected" stale="false" population="adult ferrets" measured-compound="hydromorphone" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Hech B, Knych H, Desprez I, Weiner D, Ambros B. Pharmacokinetics of hydrorphone 
 
 ### Reviewer guidance
 
-**The hydromorphone terminal half-life unit min-1 conflicts with its dimension, causing rejection of the feret study record.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q57 unit min-1 (1 / [time]) vs [time].**
 
-The record reports a terminal half-life of 45 min-1, but half-life must have time dimensions, not reciprocal time. This dimensional inconsistency invalidates the structural parameter for the feret model. Additionally, the second reader disputed the extracted half-life value, finding no corresponding data in the abstract. Extracted — hydromorphone: t1/2z 45 min-1, CL 84.8 mL kg-1 min-1, Vss 5.59 L kg-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — hydromorphone: t1/2z 45 min-1, CL 84.8 mL kg-1 min-1, Vss 5.59 L kg-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hydromorphone, the second reading hydromorphone hydrochloride; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

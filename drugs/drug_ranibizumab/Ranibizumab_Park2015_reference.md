@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Ranibizumab was rejected because its reported CL/F of 0.03 ml/h was judged physiologically implausible, consistent with a unit/scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ranibizumab" model-id="Ranibizumab_Park2015_reference" status="rejected" stale="false" population="" measured-compound="ranibizumab" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Park SJ, Oh J, Kim YK, Park JH, Park JY, Hong HK et al. Intraocular pharmacokine
 
 ### Reviewer guidance
 
-**Ranibizumab was rejected because its reported CL/F of 0.03 ml/h was judged physiologically implausible, consistent with a unit/scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports ranibizumab CL/F of 0.03 ml/h, meaning clearance adjusted for bioavailability, and V/F of 3.83 ml, meaning distribution volume adjusted for bioavailability. The review finding says the clearance/volume magnitude is outside the physiological window and attributes this to a unit/scale extraction error. Extracted — ranibizumab: CL/F 0.03 ml/h, V/F 3.83 ml.
+Extracted — ranibizumab: CL/F 0.03 ml/h, V/F 3.83 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has none, the second reading 0.03; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

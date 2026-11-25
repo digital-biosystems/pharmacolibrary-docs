@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Q/F value 296.3 is dimensionally inconsistent as a first-order rate constant despite being labeled with clearance units L h−1.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L h−1 ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="cinacalcet" model-id="Cinacalcet_Chen2019_reference" status="rejected" stale="false" population="adults and paediatrics with secondary hyperparathyroidism on dialysis" measured-compound="cinacalcet" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Chen P, Sohn W, Narayanan A, Gisleskog PO, Melhem M. Bridging adults and paediat
 
 ### Reviewer guidance
 
-**Q/F value 296.3 is dimensionally inconsistent as a first-order rate constant despite being labeled with clearance units L h−1.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L h−1 ([length] ** 3 / [time]) vs 1 / [time].**
 
-The parameter Q/F represents the intercompartmental clearance between the central and peripheral compartments, yet it carries the units L h−1 rather than the expected 1/h for a rate constant. This dimensional conflict caused the model to be rejected because the unit could not be converted to SI for the calculation. The reviewer disagreed on the dose compound identity, marking it as unknown instead of cinacalcet. Extracted — cinacalcet: kabs 0.8 L h−1, CL/F 288 L h−1, V2/F 4.1e+03 L, V3/F 1.98e+04 L, Q/F 296 L h−1, tlag 0.36 h.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — cinacalcet: kabs 0.8 L h−1, CL/F 288 L h−1, V2/F 4.1e+03 L, V3/F 1.98e+04 L, Q/F 296 L h−1, tlag 0.36 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cinacalcet, the second reading unknown. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

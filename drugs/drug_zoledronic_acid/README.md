@@ -23,7 +23,7 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wang_2023_APR](drugs/drug_zoledronic_acid/pd_Wang_2023_APR.md) | acute phase reaction ← zoledronic acid · model not identified | — | Wang H et al., Optimization of the dosage regimen of z…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089774](https://doi.org/10.3389/fphar.2023.1089774) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Wang_2023_BMD](drugs/drug_zoledronic_acid/pd_Wang_2023_BMD.md) | bone mineral density ← zoledronic acid · indirect response — drug stimulates the production of bone mineral density | — | Wang H et al., Optimization of the dosage regimen of z…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089774](https://doi.org/10.3389/fphar.2023.1089774) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wang_2023_BMD](drugs/drug_zoledronic_acid/pd_Wang_2023_BMD.md) | bone mineral density ← zoledronic acid · indirect response — drug stimulates the production of bone mineral density | — | Wang H et al., Optimization of the dosage regimen of z…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089774](https://doi.org/10.3389/fphar.2023.1089774) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The number of absorption transit compartments was assigned the dimensionless unit '4:1' instead of a time unit, creating a structural dimension conflict.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q57 unit 4:1 (dimensionless) vs [time]; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Tikiso2022_reference" status="rejected" stale="false" population="African children living with HIV" measured-compound="abacavir" parameterization="mechanistic" topology="2C"></div>
 
@@ -60,13 +60,13 @@ Tikiso T, McIlleron H, Burger D, Gibb D, Rabie H, Lee J et al. Abacavir pharmaco
 
 ### Reviewer guidance
 
-**The number of absorption transit compartments was assigned the dimensionless unit '4:1' instead of a time unit, creating a structural dimension conflict.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q57 unit 4:1 (dimensionless) vs [time]; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record lists the number of transit compartments as 11.9 with the unit '4:1', which is dimensionless and conflicts with the required time dimension for transit parameters. This unit mismatch, combined with a negative clearance value identified in a covariate scenario, caused the rejection of the model. Extracted — abacavir: CL 10.7 L/h, V1 11 L, kabs 2.29 1/h, Frel 1 F, V2 3.33 L, Q 1.1 L/h, allometric_exponent 8.1 months, MRT 6.24 mins, … (+3).
+A reported unit could not be converted (Frel, allometric_exponent, n_transit and t1/2z), so that value has no SI equivalent. Extracted — abacavir: CL 10.7 L/h, V1 11 L, kabs 2.29 1/h, Frel 1 F, V2 3.33 L, Q 1.1 L/h, allometric_exponent 8.1 months, MRT 6.24 mins, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[change in cl when on efv].covariate_forms`: this record has none, the second reading ['additive_shift']; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

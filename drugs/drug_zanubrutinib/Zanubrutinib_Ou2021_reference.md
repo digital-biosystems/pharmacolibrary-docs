@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The zanubrutinib model’s predicted peak concentration, time of peak, and terminal half-life all deviate substantially from the values reported in the paper.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 2, model 1.25); the model does not reproduce the paper's terminal half-life (+2 more).
 
 <div class="pk-model-meta" hidden drug="zanubrutinib" model-id="Zanubrutinib_Ou2021_reference" status="needs_review" stale="false" population="healthy volunteers and patients with B-cell malignancies" measured-compound="zanubrutinib" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Ou YC, Liu L, Tariq B, Wang K, Jindal A, Tang Z et al. Population Pharmacokineti
 
 ### Reviewer guidance
 
-**The zanubrutinib model’s predicted peak concentration, time of peak, and terminal half-life all deviate substantially from the values reported in the paper.**
+**The model does not reproduce the paper's time of the peak (tmax) (paper 2, model 1.25); the model does not reproduce the paper's terminal half-life (+2 more).**
 
-Simulation using the extracted parameters yields a peak concentration of 2.29e-05 versus the paper’s 0.000254, a time to peak of 1.25 hours versus 2.0 hours, and a terminal half-life of 1.71 hours versus 3.44 hours. A second reader disagreed with the apparent parameterization and failed to identify the extracted clearance and volume parameters. The review consequently marked the record for further review due to these significant mismatches in pharmacokinetic metrics. Extracted — zanubrutinib: CL/F 170 L/hour, V1/F 112 L, Q/F 26.5 L/hour, V2/F 345 L, kabs 0.526 hour -1.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — zanubrutinib: CL/F 170 L/hour, V1/F 112 L, Q/F 26.5 L/hour, V2/F 345 L, kabs 0.526 hour -1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -155,14 +155,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check disputed by a second reader: verdict disputed, agreement 0.4, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 0.000254 | 2.293e-05 | 0.0903 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped |  | 2.293e-05 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.4 (4 of 10 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.4 | cross-check contradicted by a second reader: verdict disputed; agreement 0.4 (4 of 10 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
+| T1_cmax | reference | fail | 0.000254 | 2.293e-05 | 0.0903 | reported 254.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped |  | 2.293e-05 |  | the transcribed record carries no number for this value |
 | T1_cmax | reference | skipped | 26.8 | 2.293e-05 |  | unresolved concentration unit (exp '% higher', sim 'kg/m3') |
 | T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | pass | 2 | 1.707 | 0.8536 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 3.44 | 1.707 | 0.4963 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 2 | 1.251 | 0.6253 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | skipped |  | 1.707 |  | the transcribed record carries no number for this value |
+| T1_t_half_beta | reference | fail | 3.44 | 1.707 | 0.4963 | reported 3.44 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 2 | 1.251 | 0.6253 | reported 2.0 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

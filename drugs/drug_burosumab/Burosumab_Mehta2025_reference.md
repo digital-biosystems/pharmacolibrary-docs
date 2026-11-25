@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and absorption lag time for burosumab were not reported in the paper and were set to unverified placeholder values.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="burosumab" model-id="Burosumab_Mehta2025_reference" status="needs_review" stale="false" population="adults with X-linked hypophosphatemia (XLH)" measured-compound="burosumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Mehta K, Storopoli J, Ramwani N, Quattrocchi E, Gobburu J, Weber T et al. Pharma
 
 ### Reviewer guidance
 
-**Bioavailability and absorption lag time for burosumab were not reported in the paper and were set to unverified placeholder values.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The model's apparent central volume of 7.45 L relies on a bioavailability parameter that was not explicitly estimated, relying instead of standard conventions. The absorption lag time was also omitted from the extracted parameters. A second reader could not confirm several values, including the apparent volume, leaving the record's specific parameter set unsupported by independent verification. Extracted — burosumab: CL 0.012 L/h, V1/F 7.45 L, kabs 0.016 /h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — burosumab: CL 0.012 L/h, V1/F 7.45 L, kabs 0.016 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of V1/F: this record has 7.45, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.667 (8 of 12 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

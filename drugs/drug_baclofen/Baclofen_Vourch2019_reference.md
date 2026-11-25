@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The abstract-only record lists an apparent clearance of 13.5 l/h for baclofen, but the second reader could not agree on this specific value.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="baclofen" model-id="Baclofen_Vourch2019_reference" status="needs_review" stale="false" population="ICU patients with unhealthy alcohol use" measured-compound="baclofen" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Vourc'h M, Dailly E, Hourmant Y, Bellouard R, Mahe PJ, Deslandes G et al. Pharma
 
 ### Reviewer guidance
 
-**The abstract-only record lists an apparent clearance of 13.5 l/h for baclofen, but the second reader could not agree on this specific value.**
+**cross_check_disputed; x1_cross_check.**
 
-Because the model was constructed solely from the paper's abstract, reported summary statistics were used in place of a fitted model. The second reader disagreed with the extracted apparent clearance value of 13.5 l/h, providing a null reading instead. This disagreement regarding the clearance parameter resulted in a verdict of needs review with an agreement score of 0.875. Extracted — baclofen: tlag 0.37 h, kabs 2.2 h-1, V/F 105 L, CL/F 13.5 l/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — baclofen: tlag 0.37 h, kabs 2.2 h-1, V/F 105 L, CL/F 13.5 l/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[apparent clearance].value`: this record has 13.5, the second reading none. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | cross-check disputed by a second reader: verdict disputed, agreement 0.875, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.875 (7 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.875 | cross-check contradicted by a second reader: verdict disputed; agreement 0.875 (7 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

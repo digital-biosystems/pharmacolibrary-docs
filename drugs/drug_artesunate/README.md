@@ -53,7 +53,7 @@ Artesunate is an artemisinin antimalarial used to treat malaria, often in combin
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chotivanich_2006_oocyst_count_in_mosquito_midguts_transmission_blocking_activity](drugs/drug_artesunate/pd_Chotivanich_2006_oocyst_count_in_mosquito_midguts_transmissi.md) | oocyst count in mosquito midguts (transmission-blocking activity) ← artesunate · direct Emax (saturable) effect | — | Chotivanich K et al., Transmission-blocking activities of qui…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.01472-05](https://doi.org/10.1128/AAC.01472-05) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chotivanich_2006_EC50_EC90](drugs/drug_artesunate/pd_Chotivanich_2006_EC50_EC90.md) | oocyst formation / transmission-blocking activity ← artesunate · direct linear effect | — | Chotivanich K et al., Transmission-blocking activities of qui…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.01472-05](https://doi.org/10.1128/AAC.01472-05) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lohy_2017_Parasite_density](drugs/drug_artesunate/pd_Lohy_2017_Parasite_density.md) | Total parasite density (asexual parasite count per microliter of blood multiplied by theoretical blood volume, log-transformed) ← dihydroartemisinin (DHA) · delayed effect through an effect compartment | — | Lohy Das J et al., Population Pharmacokinetic and Pharmaco…, The AAPS journal (2017) | [10.1208/s12248-017-0141-1](https://doi.org/10.1208/s12248-017-0141-1) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zhou_2021_cell_viability](drugs/drug_artesunate/pd_Zhou_2021_cell_viability.md) | Cell viability (VeroE6 cells) ← artesunate · direct sigmoid Emax (Hill) effect | — | Zhou Y et al., In vitro efficacy of artemisinin-based…, Scientific reports (2021) | [10.1038/s41598-021-93361-y](https://doi.org/10.1038/s41598-021-93361-y) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zhou_2021_cell_viability_2](drugs/drug_artesunate/pd_Zhou_2021_cell_viability_2.md) | Cell viability (Huh7.5 cells) ← artesunate · direct sigmoid Emax (Hill) effect | — | Zhou Y et al., In vitro efficacy of artemisinin-based…, Scientific reports (2021) | [10.1038/s41598-021-93361-y](https://doi.org/10.1038/s41598-021-93361-y) |
@@ -76,12 +76,12 @@ Artesunate is an artemisinin antimalarial used to treat malaria, often in combin
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:58 | 14:02 | 4/4/0 | 10/0/0 | 0/0/0 | 587,690/51,891 | ollama / glm-5.3-flash | 10 | 1/9 | 10/0 | 0 |
+| 2026-11-23 18:23 | 0:07 | 4/4/0 | 10/0/0 | 0/0/0 | 5,013/163 | einfracz / qwen3.8-27b | 10 | 1/9 | 10/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 122 matched, 20 returned
-- **screened:** 5  ·  **relevant:** 5
+- **screened:** 5  ·  **relevant:** 4
 - **records:** 8  ·  extracted 1  ·  needs review 3  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -91,26 +91,36 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Li_1998.pdf` | Li QG et al., The pharmacokinetics and bioavailabilit…, The Journal of pharmacy and… (1998) | popPK | 10 | [10.1111/j.2042-7158.1998.tb06173.x](https://doi.org/10.1111/j.2042-7158.1998.tb06173.x) | [9530985](https://pubmed.ncbi.nlm.nih.gov/9530985) | Rat PK study of artesunic acid with numeric CL, Vss, half-life, and bioavailability values reported directly in the abstract. |
+| `Li_1998.pdf` | Li QG et al., The pharmacokinetics and bioavailabilit…, The Journal of pharmacy and… (1998) | popPK | 7 | [10.1111/j.2042-7158.1998.tb06173.x](https://doi.org/10.1111/j.2042-7158.1998.tb06173.x) | [9530985](https://pubmed.ncbi.nlm.nih.gov/9530985) | The study focuses on artemisinin derivatives (dihydroartemisinin, artelinic acid, etc.) in rats, not artesunate, and while PK parameters are reported, they are for the wrong drug. |
 
-<sub>queue written 2026-10-07 06:46 UTC</sub>
+<sub>queue written 2026-11-23 18:23 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Ayyoub_2015 | irrelevant | 0 | 0 | This is a population PK study of pyronaridine; artesunate is only the co-formulated partner drug, with no artesunate (or DHA) disposition parameters reported. |
-| popPK | Cao_2020 | irrelevant | 2 | 1 | In vitro antiviral study with a PK prediction model for efficacy, but no quantitative disposition parameters (CL, V, half-life) for artesunate are reported. |
+| popPK | Cao_2020 | irrelevant | 2 | 0 | The study reports in vitro anti-viral efficacy (EC50) and mentions a "pharmacokinetic prediction model" to assess therapeutic potential, but it does not provide quantitative human or animal pharmacokinetic parameter values (CL, V, t1/2) for artesunate in the provided evidence. |
+| PGx | Cao_2020 | not_relevant | 0 | 0 | The paper reports in vitro antiviral efficacy and pharmacokinetic predictions for artemisinins but does not mention gene variants, genotypes, or phenotypes, so there is no pharmacogenomic effect reported. |
 | popPK | Chairat_2018 | irrelevant | 1 | 2 | This is a population-PK study of primaquine and carboxyprimaquine; artesunate (with pyronaridine) is only a co-administered interaction partner, and no artesunate disposition parameters are reported. |
-| popPK | Chemaly_2019 | irrelevant | 0 | 0 | In vitro antiviral activity review; artesunate is only one of many drugs tested for EC50 against viruses, with no PK parameters. |
-| popPK | Chotivanich_2006 | irrelevant | 0 | 0 | In vitro efficacy study reporting EC50/EC90 values, not pharmacokinetic disposition parameters for artesunate. |
+| popPK | Chemaly_2019 | irrelevant | 0 | 0 | The study is an in vitro antiviral activity review where artesunate is only a comparator antiviral agent, with no pharmacokinetic data reported. |
+| PGx | Chemaly_2019 | not_relevant | 0 | 0 | The paper is a systematic review of in vitro antiviral activity of artesunate and other drugs, reporting EC50 values against viruses, but contains no information on pharmacogenomics or how genetic variants affect the PK/PD of the drug. |
+| popPK | Chotivanich_2006 | irrelevant | 0 | 0 | The study reports in vitro transmission-blocking potency (EC50/EC90) against gametocytes, not pharmacokinetic disposition parameters. |
+| PGx | Chotivanich_2006 | not_relevant | 0 | 0 | The paper evaluates the in vitro transmission-blocking activity of antimalarial drugs in mosquitoes and contains no information on human pharmacokinetics or pharmacodynamics. |
 | popPK | Ding_2024 | irrelevant | 0 | 0 | This is a population PK study of amodiaquine/desethylamodiaquine and piperaquine; artesunate is only a co-administered partner drug with no PK parameters reported for it. |
-| popPK | Dipanjan_2017 | irrelevant | 0 | 0 | A narrative review with no numeric PK parameters for artesunate; values absent. |
-| popPK | Ghosh_2021 | irrelevant | 0 | 0 | In-vitro antiviral study of artesunate against coronaviruses; no PK parameters reported. |
-| popPK | Hahn_2018 | irrelevant | 0 | 0 | In-vitro antiviral drug-development study of artesunate derivatives; no PK parameters reported. |
+| popPK | Dipanjan_2017 | irrelevant | 0 | 0 | The paper is a review on antimalarial drug resistance strategies and does not report original quantitative pharmacokinetic parameter values for artesunate. |
+| PGx | Dipanjan_2017 | not_relevant | 0 | 0 | The paper is a review discussing triple combination therapy and drug cycling strategies for malaria resistance, with no mention of pharmacogenomics or genetic variants affecting artesunate PK/PD. |
+| popPK | Ghosh_2021 | irrelevant | 0 | 0 | The study is an in-vitro antiviral efficacy investigation (EC50, Selectivity Index) and does not report pharmacokinetic disposition parameters (CL, V, ka, t1/2) for artesunate. |
+| PGx | Ghosh_2021 | not_relevant | 0 | 0 | The paper evaluates the in vitro antiviral activity of artesunate against coronaviruses and contains no information on pharmacogenomics or individual genetic variation affecting PK or PD parameters. |
+| popPK | Hahn_2018 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antiviral activity (EC50) of artesunate derivatives, not a pharmacokinetic study. |
+| PGx | Hahn_2018 | not_relevant | 0 | 0 | The paper studies the antiviral activity of artesunate analogs against HCMV and does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
 | popPK | Herrmann_2022 | irrelevant | 0 | 0 | This is a medicinal chemistry/in vitro study of artesunic acid-derived hybrid compounds; no PK disposition parameters for artesunate are reported. |
-| popPK | Kawuma_2021 | irrelevant | 2 | 0 | The population PK model and all numeric parameters (CL, V, ka) are for dolutegravir; artesunate is only a co-administered agent with no artesunate parameters reported. |
-| popPK | Kouakou_2019 | irrelevant | 3 | 1 | A systematic review of artesunate PK studies, but no original quantitative disposition parameter values (CL, V, half-life) are reported in the evidence; values live in the 50 included primary studies. |
+| popPK | Kawuma_2021 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of dolutegravir, with artesunate serving only as a co-administered antimalarial agent, not the subject drug. |
+| PGx | Kawuma_2021 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetic interaction between dolutegravir and antimalarials, but does not report any effect of gene variants or genotypes on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Kouakou_2019 | irrelevant | 1 | 0 | This is a systematic review that evaluates correlations and ratios (Cav/EC50) rather than reporting original quantitative disposition parameters (CL, V, etc.), and specific numeric PK values are not provided in the evidence. |
+| PGx | Kouakou_2019 | not_relevant | 0 | 0 | The paper is a systematic review of artesunate pharmacokinetics in humans but does not report any pharmacogenomic effects or gene variant associations. |
+| popPK | Li_1998 | irrelevant | 7 | 1 | The study focuses on artemisinin derivatives (dihydroartemisinin, artelinic acid, etc.) in rats, not artesunate, and while PK parameters are reported, they are for the wrong drug. |
+| PGx | Li_1998 | not_relevant | 0 | 0 | The study investigates pharmacokinetics in rats but does not report on human gene variants, genotypes, or phenotypes affecting drug parameters. |
 | popPK | Pfaffendorf_2026 | irrelevant | 2 | 0 | Artesunate is only a co-administered drug; the population PK models and all numeric parameters (CL/F, V/F, ka) are for fosmidomycin and clindamycin, with no artesunate PK values reported. |
 | popPK | Zhou_2021 | irrelevant | 1 | 1 | In vitro antiviral study against SARS-CoV-2; only cites Cmax values from literature, no PK disposition parameters for artesunate measured or modeled. |
 
@@ -119,4 +129,4 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bartesunate%5D&body=Drug%3A%20artesunate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_artesunate/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 06:46 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 18:23 UTC</sub>

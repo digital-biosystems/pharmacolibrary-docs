@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
-> The model was rejected due to a dimensional error in the initial concentration C0 and an unreachable peripheral compartment.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit µg mL-1 ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Rahal2008_i_v_diclofenac" status="rejected" stale="false" population="sheep" measured-compound="diclofenac" parameterization="apparent" topology="3C"></div>
 
@@ -61,13 +61,13 @@ Rahal A, Kumar A, Ahmad AH, Malik JK. Pharmacokinetics of diclofenac and its int
 
 ### Reviewer guidance
 
-**The model was rejected due to a dimensional error in the initial concentration C0 and an unreachable peripheral compartment.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit µg mL-1 ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The initial concentration parameter C0 is reported with units of µg mL-1, which conflicts with the required dimensions for the model structure. Additionally, the peripheral compartment is unreachable from the dose, meaning the drug cannot enter that volume. These structural and unit inconsistencies prevent valid pharmacokinetic simulation. Extracted — diclofenac: C0 9.68 µg mL-1, kabs 11.3 h-1, kel 0.73 h-1, t1/2α 0.08 h, t1/2β 1.03 h, AUC 12.2 µg h mL-1, AUMC 18.4 µg h2 mL-1, MRT 1.36 h, … (+5).
+A reported unit could not be converted (C0 and AUMC), so that value has no SI equivalent. Extracted — diclofenac: C0 9.68 µg mL-1, kabs 11.3 h-1, kel 0.73 h-1, t1/2α 0.08 h, t1/2β 1.03 h, AUC 12.2 µg h mL-1, AUMC 18.4 µg h2 mL-1, MRT 1.36 h, … (+5).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 9.68, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

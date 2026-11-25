@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Brain volume distribution of 0.018 L is rejected for donepezil as physiologically implausible for a mouse brain PK model.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Kaikousidis2023_per_os_mean_data" status="rejected" stale="false" population="mice (brain and blood PK)" measured-compound="donepezil" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,7 +46,7 @@ Kaikousidis C, Papakyriakopoulou P, Dokoumetzidis A, Valsami G. Donepezil Brain 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.25). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,11 +56,13 @@ Kaikousidis C, Papakyriakopoulou P, Dokoumetzidis A, Valsami G. Donepezil Brain 
 
 ### Reviewer guidance
 
-**Brain volume distribution of 0.018 L is rejected for donepezil as physiologically implausible for a mouse brain PK model.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The recorded volume of distribution is 0.018 L, which is far too large to represent the brain compartment in mice. This magnitude indicates a likely unit or scale extraction error for the central compartment volume. The record was refused because the volume falls outside the physiological window for the specified species. Extracted — donepezil: k12 0.059 1/min, ki0 0.012 1/min, kcomp 0.014 1/min, V 0.018 L, k21 0.062 1/min, kabs 2.73 /hour, tlag 0.54 hours.
+Extracted — donepezil: k12 0.059 1/min, ki0 0.012 1/min, kcomp 0.014 1/min, V 0.018 L, k21 0.062 1/min, kabs 2.73 /hour, tlag 0.54 hours.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a2: this record has 0.004, the second reading none; it also differs on 11 more fields. That field does not shape the model.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -175,6 +177,38 @@ The recorded volume of distribution is 0.018 L, which is far too large to repres
 - LLM selected parameter table(s) 1, 2, 3, 4
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.25 (4/16 fields) | 12 |
+
+<details><summary>12 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a2]` | 0.004 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 2.73 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[b2]` | 0.062 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12].rse_percent` |  | 6.43 | mismatch |
+| `gpt-oss-120b` | `parameters[k12].value` | 0.059 | 0.064 | mismatch |
+| `gpt-oss-120b` | `parameters[k20].rse_percent` |  | 5.61 | mismatch |
+| `gpt-oss-120b` | `parameters[k20].value` | 0.012 | 0.024 | mismatch |
+| `gpt-oss-120b` | `parameters[k23].rse_percent` |  | 9.78 | mismatch |
+| `gpt-oss-120b` | `parameters[k23].value` | 0.014 | 0.032 | mismatch |
+| `gpt-oss-120b` | `parameters[lag time]` | 0.54 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vblood]` |  | 0.279 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vbrain]` | 0.018 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

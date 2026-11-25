@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Artefenomel record uses library defaults for absorption rate constant (ka) instead of estimates reported in the paper, violating explicit parameter requirements.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Artefenomel" model-id="Artefenomel_McCarthy2020_reference" status="rejected" stale="false" population="" measured-compound="artefenomel" parameterization="apparent" topology="1C"></div>
 
@@ -38,7 +38,7 @@ McCarthy JS, Donini C, Chalon S, Woodford J, Marquart L, Collins KA et al. A Pha
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,13 @@ McCarthy JS, Donini C, Chalon S, Woodford J, Marquart L, Collins KA et al. A Pha
 
 ### Reviewer guidance
 
-**Artefenomel record uses library defaults for absorption rate constant (ka) instead of estimates reported in the paper, violating explicit parameter requirements.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The review found that the absorption rate constant (ka) and lag time (Tlag) were not extracted from McCarthy_2020 and were replaced with placeholder values. This substitution of modeled parameters for unreported data means the simulated absorption profile does not reflect the specific kinetics described in the source text. While clearance (1.3 L/h) and volume (226.7 L) are explicit, the missing absorption data prevents accurate validation of the oral exposure. Extracted — artefenomel: CL/F 1.3 L/h, V/F 227 L.
+Extracted — artefenomel: CL/F 1.3 L/h, V/F 227 L.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 30, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -80,6 +82,28 @@ The review found that the absorption rate constant (ka) and lag time (Tlag) were
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.778 (7/9 fields) | 2 |
+
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q17]` | 30 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q74]` | 29 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -96,15 +120,16 @@ The review found that the absorption rate constant (ka) and lag time (Tlag) were
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | fail | artefenomel (or metabolite) | paper about another drug | paper subject is not artefenomel: the paper is about another drug; this one is a co-medication or covariate: The paper focuses on the pharmacokinetics of MMV390048; artefenomel is only mentioned in passing as a comparator for parasite clearance rates in a different stu |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=artefenomel) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | artefenomel (or metabolite) | paper about another drug |  | paper subject is not artefenomel: the paper is about another drug; this one is a co-medication or covariate: The paper focuses on the pharmacokinetics of MMV390048; artefenomel is only mentioned in passing as a comparator for parasite clearance rates in a different stu |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=artefenomel) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial; agreement 0.778 (7 of 9 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

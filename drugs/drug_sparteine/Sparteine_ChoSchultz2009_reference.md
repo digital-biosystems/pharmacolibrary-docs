@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM popPK screen).">in vitro</span>
 
-> The sparteine volume of distribution value conflicts with the second reader's interpretation of the clearance value.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="sparteine" model-id="Sparteine_ChoSchultz2009_reference" status="needs_review" stale="false" population="unknown" measured-compound="sparteine" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Cho-Schultz S, Patten MJ, Huang B, Elleraas J, Gajiwala KS, Hickey MJ et al. Sol
 
 ### Reviewer guidance
 
-**The sparteine volume of distribution value conflicts with the second reader's interpretation of the clearance value.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists the volume of distribution as 19.7736 L, derived from a clearance of 8.9 mL/min/kg. A second reader disputed the values, assigning 9.1 to the clearance field and leaving the volume field null. This disagreement prevented the required agreement for the cross-check. Extracted — sparteine: CL 8.9 mL/min/kg, V 19.8 L.
+Extracted — sparteine: CL 8.9 mL/min/kg, V 19.8 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q321: this record has 288, the second reading 9.1; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -126,7 +126,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.75 (6 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (6 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

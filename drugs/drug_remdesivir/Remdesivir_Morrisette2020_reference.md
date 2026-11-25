@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
-> Remdesivir clearance is recorded as 15.5 l/h with a mislabeled hy droxychloroquine parameter name, and a second reader disputes the volume value.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Morrisette2020_reference" status="needs_review" stale="false" population="unknown" measured-compound="remdesivir" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Morrisette T, Lodise TP, Scheetz MH, Goswami S, Pogue JM, Rybak MJ. The Pharmaco
 
 ### Reviewer guidance
 
-**Remdesivir clearance is recorded as 15.5 l/h with a mislabeled hy droxychloroquine parameter name, and a second reader disputes the volume value.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists remdesivir clearance as 15.5 l/h, but the verbatim label identifies it as hydroxychloroquine clearance. Volume of distribution is derived from clearance and half-life rather than fitted directly. The second reader disagreed with this record's extracted values, specifically citing different figures for the volume and other parameters. Extracted — remdesivir: CL 15.5 l/h, V 968 L.
+Extracted — remdesivir: CL 15.5 l/h, V 968 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q321: this record has 14.5, the second reading 2.71; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

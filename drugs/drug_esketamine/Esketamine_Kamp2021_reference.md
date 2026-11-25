@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Esketamine CL/F of 0.037 L min−1 and V/F of 0.1217 L were rejected for implausible clearance/volume magnitudes suggesting a unit/scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="esketamine" model-id="Esketamine_Kamp2021_reference" status="rejected" stale="false" population="" measured-compound="esketamine" parameterization="apparent" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Kamp J, van Velzen M, Aarts L, Niesters M, Dahan A, Olofsen E. Stereoselective k
 
 ### Reviewer guidance
 
-**Esketamine CL/F of 0.037 L min−1 and V/F of 0.1217 L were rejected for implausible clearance/volume magnitudes suggesting a unit/scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports esketamine oral-bioavailability-adjusted clearance (CL/F) as 0.037 L min−1 and adjusted volume (V/F) as 0.1217 L. The rejection finding says the clearance/volume magnitude is outside the physiological window and attributes this to a unit/scale extraction error; the source is a secondary review. Extracted — esketamine: CL/F 0.037 L min−1, V/F 0.122 L.
+Extracted — esketamine: CL/F 0.037 L min−1, V/F 0.122 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has none, the second reading 0.037; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

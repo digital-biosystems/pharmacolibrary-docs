@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;lenvatinib&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/&quot;},{&quot;label&quot;:&quot;Hu_2022 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lenvatinib_Tamai2017_base_base_model_population_mean_rse&quot;,&quot;label&quot;:&quot;Tamai_2017_base_base_model_population_mean_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/Lenvatinib_Tamai2017_base_base_model_population_mean_rse.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenvatinib_Tamai2017_final_final_model_population_mean_rse&quot;,&quot;label&quot;:&quot;Tamai_2017_final_final_model_population_mean_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/Lenvatinib_Tamai2017_final_final_model_population_mean_rse.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -8,7 +9,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Hu2022_reference" status="needs_review" stale="false" population="Chinese patients with advanced hepatocellular carcinoma" measured-compound="lenvatinib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Hu2022_reference" status="needs_review" stale="false" population="adults with advanced hepatocellular carcinoma" measured-compound="lenvatinib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hu Y, Chen R, Ye Z, Wei F, Lin K, Liu J et al. Population Pharmacokinetic Modeling of Lenvatinib in Chinese Patients With Advanced Hepatocellular Carcinoma Using Real-World Data. Journal of clinical pharmacology 62(12):1507–1517 (2022).
@@ -16,7 +17,7 @@ Hu Y, Chen R, Ye Z, Wei F, Lin K, Liu J et al. Population Pharmacokinetic Modeli
 
 ## Population and dosing
 
-**Population:** Chinese patients with advanced hepatocellular carcinoma · condition advanced hepatocellular carcinoma · n = 127.
+**Population:** adults with advanced hepatocellular carcinoma · condition advanced hepatocellular carcinoma · age group adult.
 
 ## Model
 
@@ -30,11 +31,11 @@ Hu Y, Chen R, Ye Z, Wei F, Lin K, Liu J et al. Population Pharmacokinetic Modeli
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| The clearance of lenvatinib in Chinese patients with advanced HCC | CL | 5.3 | L/h |
+| clearance of lenvatinib in Chinese patients with advanced HCC | CL | 5.3 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +49,7 @@ Hu Y, Chen R, Ye Z, Wei F, Lin K, Liu J et al. Population Pharmacokinetic Modeli
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lenvatinib: CL 5.3 L/h.
 
-Independently confirmed by `qwen3.8-27b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -56,7 +57,7 @@ Independently confirmed by `qwen3.8-27b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| The clearance of lenvatinib in Chinese patients with advanced HCC | `Q22` · CL | 5.3 | L/h | 1.472e-06 | m3/s | l/h | llm_confirmed (0.6) | Hu_2022:abstract |
+| clearance of lenvatinib in Chinese patients with advanced HCC | `Q22` · CL | 5.3 | L/h | 1.472e-06 | m3/s | l/h | llm_confirmed (0.6) | Hu_2022:abstract, Hu_2022:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -66,26 +67,24 @@ Independently confirmed by `qwen3.8-27b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('The clearance of Child-Pugh class B patients', value 4.82) — already have one for this compound
-- dropped duplicate Q22 ('Child-Pugh class A patients', value 5.53) — already have one for this compound
-- dropped duplicate Q22 ('The clearance of women', value 4.61) — already have one for this compound
-- dropped duplicate Q22 ('men', value 5.6) — already have one for this compound
-- dropped value-less row: 'the area under the plasma concentration-time curve of women'
+- dropped duplicate Q22 ('clearance of Child-Pugh class B patients', value 4.82) — already have one for this compound
+- dropped duplicate Q22 ('clearance of Child-Pugh class A patients', value 5.53) — already have one for this compound
+- dropped duplicate Q22 ('clearance of women', value 4.61) — already have one for this compound
+- dropped duplicate Q22 ('clearance of men', value 5.6) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lenvatinib
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Hu_2022_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (5/5 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (5/5 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -103,10 +102,10 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hu_2022:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.3 | ['Hu_2022:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hu_2022:abstract', 'Hu_2022:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.3 | ['Hu_2022:abstract', 'Hu_2022:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 5.3 L/h | ['Hu_2022:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 5.3 L/h | ['Hu_2022:abstract', 'Hu_2022:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -140,4 +139,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blenvatinib%5D%20Lenvatinib_Hu2022_reference&body=Drug%3A%20lenvatinib%0ARecord%3A%20Lenvatinib_Hu2022_reference%0APaper%3A%20Hu_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lenvatinib/Lenvatinib_Hu2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 02:38 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:26 UTC</sub>

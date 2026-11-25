@@ -16,7 +16,7 @@ Epcoritamab is a monoclonal antibody used to treat diffuse large B-cell lymphoma
 
 ## Start here
 
-> **Li_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adults with relapsed or refractory B-cell non-Hodgkin lymphoma, n = 327. [Run it in the simulator](drugs/drug_epcoritamab/Epcoritamab_Li2025_reference.md?tab=Simulation) · [record](drugs/drug_epcoritamab/Epcoritamab_Li2025_reference.md)
+> **Li_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adults with relapsed or refractory B cell non-Hodgkin lymphoma. [Run it in the simulator](drugs/drug_epcoritamab/Epcoritamab_Li2025_reference.md?tab=Simulation) · [record](drugs/drug_epcoritamab/Epcoritamab_Li2025_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -30,13 +30,7 @@ Epcoritamab is a monoclonal antibody used to treat diffuse large B-cell lymphoma
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_B_cell](drugs/drug_epcoritamab/pd_Li_2022_B_cell.md) | blood B-cell count ← epcoritamab · model not identified | — | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_ORR](drugs/drug_epcoritamab/pd_Li_2022_ORR.md) | response rate ← epcoritamab · direct Emax (saturable) effect | — | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_T_cell](drugs/drug_epcoritamab/pd_Li_2022_T_cell.md) | blood T-cell count ← epcoritamab · model not identified | — | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_trimer_formation](drugs/drug_epcoritamab/pd_Li_2022_trimer_formation.md) | trimer formation ← epcoritamab · model not identified | — | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_tumor_size](drugs/drug_epcoritamab/pd_Li_2022_tumor_size.md) | tumor size ← epcoritamab · disease-progression model | — | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_CRS](drugs/drug_epcoritamab/pd_Li_2022_CRS.md) | CRS (any grade) ← epcoritamab · categorical (graded) response model | — | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Li_2022_CRS_2](drugs/drug_epcoritamab/pd_Li_2022_CRS_2.md) | grade 2 CRS ← epcoritamab · categorical (graded) response model | — | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2022_ORR](drugs/drug_epcoritamab/pd_Li_2022_ORR.md) | clinical response rate ← epcoritamab · direct Emax (saturable) effect | model (no simulator) | Li T et al., Semimechanistic Physiologically-Based P…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2729](https://doi.org/10.1002/cpt.2729) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +44,7 @@ Epcoritamab is a monoclonal antibody used to treat diffuse large B-cell lymphoma
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:40 | 1:41 | 1/0/0 | 7/0/0 | 0/0/0 | 29,553/6,480 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 21:51 | 3:10 | 1/0/0 | 1/0/0 | 0/0/0 | 25,620/3,982 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -65,19 +59,21 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Li_2025.pdf` | Li T et al., Population Pharmacokinetics of Epcorita…, Clinical pharmacokinetics (2025) | popPK | 10 | [10.1007/s40262-024-01464-2](https://doi.org/10.1007/s40262-024-01464-2) | [39708278](https://pubmed.ncbi.nlm.nih.gov/39708278) | Human population-PK model reports numeric epcoritamab disposition parameters in the evidence. |
+| `Li_2025.pdf` | Li T et al., Population Pharmacokinetics of Epcorita…, Clinical pharmacokinetics (2025) | popPK | 10 | [10.1007/s40262-024-01464-2](https://doi.org/10.1007/s40262-024-01464-2) | [39708278](https://pubmed.ncbi.nlm.nih.gov/39708278) | The paper reports quantitative population PK parameters including apparent clearance, volume of distribution, and half-life for epcoritamab in humans. |
 
-<sub>queue written 2026-10-07 12:39 UTC</sub>
+<sub>queue written 2026-11-23 21:50 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Li_2022 | relevant | 9 | 1 | A human and monkey population PK/PD model was fitted, but its numeric PK parameter values are only referenced in supplementary tables not provided. |
+| popPK | Li_2022 | relevant | 8 | 1 | The paper describes a population physiologically-based PK model for epcoritamab and references specific parameter values (CL, V, Q, etc.) in Tables S1 and S2, which are not included in the provided evidence. |
+| PGx | Li_2022 | not_relevant | 0 | 0 | The paper describes a population PK/PD model for epcoritamab dose selection but does not report the influence of specific gene variants or genotypes on PK/PD parameters. |
+| PGx | Li_2025 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics for epcoritamab, analyzing covariates such as age, weight, and organ function, but does not investigate any genetic variants or pharmacogenomic factors. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bepcoritamab%5D&body=Drug%3A%20epcoritamab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_epcoritamab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 12:39 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 21:50 UTC</sub>

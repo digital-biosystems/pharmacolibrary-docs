@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> Moroxydine blood clearance 0.25 was rejected due to a dimension mismatch with the reported unit h·kg, and all other parameters were unsupported by full text.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q23 unit h·kg ([time] * [mass]) vs [length] ** 3 / [time].
 
-<div class="pk-model-meta" hidden drug="moroxydine" model-id="Moroxydine_Liu2016_reference" status="rejected" stale="false" population="gibel carp (Carassius gibelio)" measured-compound="moroxydine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="moroxydine" model-id="Moroxydine_Liu2016_reference" status="rejected" stale="false" population="gibel carp" measured-compound="moroxydine hydrochloride" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Liu W, Xu J, Zhou Y, Chen J, Ma J, Zeng L. Pharmacokinetics and tissue residues of moroxydine hydrochloride in gibel carp, Carassius gibelio after oral administration. Journal of veterinary pharmacology and therapeutics 39(4):398–404 (2016).
@@ -16,9 +16,7 @@ Liu W, Xu J, Zhou Y, Chen J, Ma J, Zeng L. Pharmacokinetics and tissue residues 
 
 ## Population and dosing
 
-**Population:** gibel carp (Carassius gibelio) · condition healthy.
-
-**Dosed compound ≠ measured compound:** dosed moroxydine hydrochloride, measured moroxydine.
+**Population:** gibel carp · condition healthy.
 
 > **Species: fish.** This record comes from an animal study (fish), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -26,7 +24,7 @@ Liu W, Xu J, Zhou Y, Chen J, Ma J, Zeng L. Pharmacokinetics and tissue residues 
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 7 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -34,17 +32,16 @@ Liu W, Xu J, Zhou Y, Chen J, Ma J, Zeng L. Pharmacokinetics and tissue residues 
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| t1/2ka (15 °C) | t1/2ka | 4.29 | h |
-| t1/2ke (15 °C) | t1/2z | 15.87 | h |
-| Cmax (15 °C) | Cmax | 2.98 | μg/mL |
-| Tp (15 °C) | tmax | 10.35 | h |
-| Vd/F (15 °C) | V/F | 4.55 | L/kg |
-| CLb (15 °C) | CLb | 0.25 | h·kg |
-| AUC (15 °C) | AUC | 75.89 | μg·h/mL |
+| t1/2ka | t1/2ka | 4.29 | h |
+| t1/2ke | t1/2z | 15.87 | h |
+| Cmax | Cmax | 2.98 | μg/mL |
+| Vd /F | V/F | 4.55 | L/kg |
+| CLb | CLb | 0.25 | h·kg |
+| AUC | AUC | 75.89 | μg·h/mL |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,25 +51,24 @@ Liu W, Xu J, Zhou Y, Chen J, Ma J, Zeng L. Pharmacokinetics and tissue residues 
 
 ### Reviewer guidance
 
-**Moroxydine blood clearance 0.25 was rejected due to a dimension mismatch with the reported unit h·kg, and all other parameters were unsupported by full text.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q23 unit h·kg ([time] * [mass]) vs [length] ** 3 / [time].**
 
-The blood clearance value of 0.25 h·kg has a unit dimension of time mass, which conflicts with the required volume per time. This dimensional error caused the record to be rejected for the structural parameter. Additionally, the second reader identified all parameter values and analytes as unknown because the source was abstract-only, meaning the reported summary statistics stand in for a fitted model. Extracted — moroxydine: t1/2ka 4.29 h, t1/2z 15.9 h, Cmax 2.98 μg/mL, tmax 10.3 h, V/F 4.55 L/kg, CLb 0.25 h·kg, AUC 75.9 μg·h/mL.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — moroxydine: t1/2ka 4.29 h, t1/2z 15.9 h, Cmax 2.98 μg/mL, V/F 4.55 L/kg, CLb 0.25 h·kg, AUC 75.9 μg·h/mL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has moroxydine hydrochloride, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of area under the concentration-time curve: this record has none, the second reading 75.89; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| t1/2ka (15 °C) | `Q95` · t1/2ka | 4.29 | h | 1.544e+04 | s | h | exact (1) | Liu_2016:abstract |
-| t1/2ke (15 °C) | `Q57` · t1/2z | 15.87 | h | 5.713e+04 | s | h | exact (1) | Liu_2016:abstract |
-| Cmax (15 °C) | `Q32` · Cmax | 2.98 | μg/mL |  |  | µg/ml | exact (1) | Liu_2016:abstract |
-| Tp (15 °C) | `Q56` · tmax | 10.35 | h | 3.726e+04 | s | h | llm (0.6) | Liu_2016:abstract |
-| Vd/F (15 °C) | `Q76` · V/F | 4.55 | L/kg | 0.3185 | m3 | l/kg | exact (1) | Liu_2016:abstract |
-| CLb (15 °C) | `Q23` · CLb | 0.25 | h·kg |  |  | h·kg | exact (1) | Liu_2016:abstract |
-| AUC (15 °C) | `Q88` · AUC | 75.89 | μg·h/mL |  |  | (h·µg)/ml | exact (1) | Liu_2016:abstract |
+| t1/2ka | `Q95` · t1/2ka | 4.29 | h | 1.544e+04 | s | h | exact (1) | Liu_2016:abstract, Liu_2016:abstract |
+| t1/2ke | `Q57` · t1/2z | 15.87 | h | 5.713e+04 | s | h | exact (1) | Liu_2016:abstract, Liu_2016:abstract |
+| Cmax | `Q32` · Cmax | 2.98 | μg/mL | 0.00298 | kg/m3 | µg/ml | exact (1) | Liu_2016:abstract, Liu_2016:abstract |
+| Vd /F | `Q76` · V/F | 4.55 | L/kg | 0.3185 | m3 | l/kg | space_fold (0.95) | Liu_2016:abstract, Liu_2016:abstract |
+| CLb | `Q23` · CLb | 0.25 | h·kg |  |  | h·kg | exact (1) | Liu_2016:abstract, Liu_2016:abstract |
+| AUC | `Q88` · AUC | 75.89 | μg·h/mL | 273.2 | kg*s/m3 | (h·µg)/ml | exact (1) | Liu_2016:abstract, Liu_2016:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -82,54 +78,32 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q95 ('t1/2ka (25 °C)', value 3.02) — already have one for this compound
-- dropped duplicate Q57 ('t1/2ke (25 °C)', value 4.22) — already have one for this compound
-- dropped duplicate Q32 ('Cmax (25 °C)', value 3.12) — already have one for this compound
-- dropped duplicate Q56 ('Tp (25 °C)', value 4.03) — already have one for this compound
-- dropped duplicate Q76 ('Vd/F (25 °C)', value 2.89) — already have one for this compound
-- unit_dimension_mismatch: 'CLb (15 °C)' → Q23 (unit '[time] * [mass]' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: 'CLb (25 °C)' → Q23 (unit '[time] * [mass]' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q23 ('CLb (25 °C)', value 0.49) — already have one for this compound
-- dropped duplicate Q88 ('AUC (25 °C)', value 42.33) — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=moroxydine
+- dropped unlinked row (NIL): 'Tp' — extend the ontology if this is a real PK parameter (source ['Liu_2016:abstract', 'Liu_2016:abstract'])
+- unit_dimension_mismatch: 'CLb' → Q23 (unit '[time] * [mass]' vs ontology '[length] ** 3 / [time]') — route to review
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=moroxydine hydrochloride
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Liu_2016_metadata.yaml (14 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.111 (2/18 fields) | 16 |
+| `gpt-oss-120b` | partly confirmed | 0.75 (9/12 fields) | 3 |
 
-<details><summary>16 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[areas under the concentration-time curve]` |  | 75.89 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[area under the concentration-time curve]` |  | 75.89 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[auc]` | 75.89 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clb]` | 0.25 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clb]` |  | 0.25 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` | 2.98 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` |  | 2.98 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2ka]` | 4.29 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2ka]` |  | 4.29 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2ke]` | 15.87 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2ke]` |  | 15.87 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tp]` | 10.35 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[tp]` |  | 10.35 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vd /f]` |  | 4.55 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vd/f]` | 4.55 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | moroxydine hydrochloride | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | moroxydine | unknown | mismatch |
 
 </details>
 
@@ -143,19 +117,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 7 |  |
+| C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q23 | fail | [length] ** 3 / [time] | h·kg ([time] * [mass]) | ['Liu_2016:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Liu_2016:abstract'] |
-| C5_dimension_Q56 | pass | [time] |  | ['Liu_2016:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Liu_2016:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Liu_2016:abstract'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Liu_2016:abstract'] |
-| C5_dimension_Q95 | pass | [time] |  | ['Liu_2016:abstract'] |
+| C5_dimension_Q23 | fail | [length] ** 3 / [time] | h·kg ([time] * [mass]) | ['Liu_2016:abstract', 'Liu_2016:abstract'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Liu_2016:abstract', 'Liu_2016:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Liu_2016:abstract', 'Liu_2016:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Liu_2016:abstract', 'Liu_2016:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Liu_2016:abstract', 'Liu_2016:abstract'] |
+| C5_dimension_Q95 | pass | [time] |  | ['Liu_2016:abstract', 'Liu_2016:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q76 | pass | volume within physiological range | 318 L | ['Liu_2016:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 318 L | ['Liu_2016:abstract', 'Liu_2016:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -179,4 +152,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmoroxydine%5D%20Moroxydine_Liu2016_reference&body=Drug%3A%20moroxydine%0ARecord%3A%20Moroxydine_Liu2016_reference%0APaper%3A%20Liu_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_moroxydine/Moroxydine_Liu2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:19 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:18 UTC</sub>

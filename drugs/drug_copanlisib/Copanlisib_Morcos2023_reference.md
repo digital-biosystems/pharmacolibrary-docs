@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Copanlisib population clearance was extracted as 22.2 L/h while the reviewer identified a negative covariate effect and 36.3 L/h.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
-<div class="pk-model-meta" hidden drug="copanlisib" model-id="Copanlisib_Morcos2023_reference" status="rejected" stale="false" population="patients across nine phase I–III studies" measured-compound="copanlisib" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="copanlisib" model-id="Copanlisib_Morcos2023_reference" status="rejected" stale="false" population="patients with relapsed indolent non-Hodgkin lymphoma" measured-compound="copanlisib" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Morcos PN, Moss J, Austin R, Hiemeyer F, Zinzani PL, Beckert V et al. Copanlisib population pharmacokinetics from phase I-III studies and exposure-response relationships in combination with rituximab. CPT: pharmacometrics & systems pharmacology 12(11):1666–1686 (2023).
@@ -53,13 +53,13 @@ Morcos PN, Moss J, Austin R, Hiemeyer F, Zinzani PL, Beckert V et al. Copanlisib
 
 ### Reviewer guidance
 
-**Copanlisib population clearance was extracted as 22.2 L/h while the reviewer identified a negative covariate effect and 36.3 L/h.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record lists a total clearance of 22.2 L/h for copanlisib, yet the rejection cites an implausible negative clearance value in a covariate scenario. A second reader identified a 36.3 L/h clearance value not present in the current record. Additionally, the record assigns a 1.91 coefficient to a clearance parameter with an unrecognized unit. Extracted — copanlisib: CL 22.2 L/h, V1 92.1 L, Q 79.3 L/h, V2 508 L, Q3 7.34 L/h, V3 522 L, CL/F -0.204 THETA.
+A reported unit could not be converted (equation variable and CL/F), so that value has no SI equivalent. Extracted — copanlisib: CL 22.2 L/h, V1 92.1 L, Q 79.3 L/h, V2 508 L, Q3 7.34 L/h, V3 522 L, CL/F -0.204 THETA.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -204,4 +204,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcopanlisib%5D%20Copanlisib_Morcos2023_reference&body=Drug%3A%20copanlisib%0ARecord%3A%20Copanlisib_Morcos2023_reference%0APaper%3A%20Morcos_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_copanlisib/Copanlisib_Morcos2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:58 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:31 UTC</sub>

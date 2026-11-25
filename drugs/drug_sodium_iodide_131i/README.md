@@ -40,7 +40,8 @@ Sodium iodide 131I is a radiopharmaceutical used for diagnosing and treating thy
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Topić_2021_hyper_eu_and_hypothyroidism](drugs/drug_sodium_iodide_131i/pd_Topi_2021_hyper_eu_and_hypothyroidism.md) | hyper-, eu- and hypothyroidism ← 131I · categorical (graded) response model | — | Topić Vučenović V et al., Population exposure-response model of, European journal of pharmac… (2021) | [10.1016/j.ejps.2021.105942](https://doi.org/10.1016/j.ejps.2021.105942) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fusella_2026_T_g](drugs/drug_sodium_iodide_131i/pd_Fusella_2026_T_g.md) | serum thyroglobulin ← radioactive iodine activity · disease-progression model | — | Fusella Giuntini M et al., A computational framework for optimizin…, Scientific reports (2026) | [10.1038/s41598-026-56267-1](https://doi.org/10.1038/s41598-026-56267-1) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Topić_2021_131I_therapy_response_in_patients_with_benign_thyroid_disease](drugs/drug_sodium_iodide_131i/pd_Topi_2021_131I_therapy_response_in_patients_with_benign_thyr.md) | 131I therapy response in patients with benign thyroid disease ← sodium_iodide_131i · categorical (graded) response model | — | Topić Vučenović V et al., Population exposure-response model of, European journal of pharmac… (2021) | [10.1016/j.ejps.2021.105942](https://doi.org/10.1016/j.ejps.2021.105942) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +55,7 @@ Sodium iodide 131I is a radiopharmaceutical used for diagnosing and treating thy
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:55 | 3:50 | 2/0/0 | 1/0/0 | 0/0/0 | 166,254/16,637 | openai / gpt-6-luna | 9 | 1/8 | 8/1 | 0 |
+| 2026-11-24 04:37 | 0:12 | 2/0/0 | 2/0/0 | 0/0/0 | 6,132/1,487 | einfracz / qwen3.8-27b | 9 | 1/8 | 8/1 | 0 |
 
 ## Coverage
 
@@ -63,34 +64,34 @@ Sodium iodide 131I is a radiopharmaceutical used for diagnosing and treating thy
 - **records:** 2  ·  extracted 1  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Louis_2024.pdf` | Louis M et al., Radiation Protection Considerations for…, Health physics (2024) | popPK | 8 | [10.1097/HP.0000000000001743](https://doi.org/10.1097/HP.0000000000001743) | [37792406](https://pubmed.ncbi.nlm.nih.gov/37792406) | The study develops a biokinetic model for 131I in human ESRD patients, but no numeric disposition parameters are provided in the evidence. |
-
-<sub>queue written 2026-10-07 19:52 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Dong_2002 | irrelevant | 0 | 0 | This is an in-vitro secretin-receptor study, not a sodium_iodide_131i pharmacokinetic study. |
-| popPK | Fusella_2026 | relevant | 7 | 1 | The human radioiodine compartmental model includes disposition parameters, but their numeric estimates are only referenced in an appendix table not provided. |
-| popPK | Gupta_2016 | irrelevant | 0 | 0 | The paper reports lenvatinib pharmacokinetics, not sodium_iodide_131i. |
+| popPK | Dong_2002 | irrelevant | 0 | 0 | The study describes the synthesis and receptor binding properties of a secretin analogue, not the pharmacokinetics of sodium iodide I-131. |
+| PGx | Dong_2002 | not_relevant | 0 | 0 | The paper describes the development of a radioiodinated secretin analogue for photoaffinity labeling and does not involve pharmacogenomics or sodium iodide 131i. |
+| popPK | Fusella_2026 | irrelevant | 1 | 0 | This is a mechanistic pharmacodynamic model of tumor response and thyroglobulin kinetics, not a study reporting pharmacokinetic disposition parameters (CL, V, ka, etc.) for sodium iodide I-131. |
+| PGx | Fusella_2026 | not_relevant | 0 | 0 | The paper presents a pharmacokinetic/pharmacodynamic model for radioiodine therapy protocol optimization but does not report any pharmacogenomic effects or associations with gene variants/genotypes. |
+| popPK | Gupta_2016 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of lenvatinib, not sodium iodide 131i. |
+| PGx | Gupta_2016 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of lenvatinib, not sodium_iodide_131i, and does not report pharmacogenomic effects. |
 | popPK | Hayato_2018 | irrelevant | 0 | 0 | The study models lenvatinib in human patients and reports no pharmacokinetic parameters for sodium_iodide_131i. |
-| popPK | Hays_1985 | irrelevant | 0 | 0 | The compartmental model concerns radioiodinated T4 and T3, not sodium_iodide_131i, and gives no numeric PK parameter values. |
+| popPK | Hays_1985 | irrelevant | 2 | 0 | The study focuses on radiation dosimetry of radioiodinated thyroid hormones (T3/T4) rather than the disposition of sodium iodide 131i as a therapeutic/diagnostic agent, and it provides no quantitative PK parameters (CL, V, Q) for sodium iodide. |
+| PGx | Hays_1985 | not_relevant | 0 | 0 | The paper describes a physiologically based pharmacokinetic model for radiation dosimetry using iodine isotopes but does not report any pharmacogenomic effects or genotype-phenotype associations. |
 | popPK | Latia_2026 | irrelevant | 0 | 0 | This human thyroid cancer imaging case series reports radioiodine treatment activity, not sodium_iodide_131i pharmacokinetic parameters. |
-| popPK | Louis_2024 | relevant | 8 | 1 | The study develops a biokinetic model for 131I in human ESRD patients, but no numeric disposition parameters are provided in the evidence. |
+| popPK | Louis_2024 | relevant | 8 | 0 | The paper develops a multi-compartment biokinetic model for I-131 in humans, but the specific numeric transfer coefficients or clearance values are not present in the provided evidence text. |
+| PGx | Louis_2024 | not_relevant | 0 | 0 | The paper discusses radiation protection and biokinetic modeling for patients with end-stage renal disease, but does not report on pharmacogenomic variants or their effects on PK/PD parameters. |
 | popPK | Ly_2023 | irrelevant | 0 | 0 | The reported population-PK parameters are for cabozantinib, not sodium_iodide_131i. |
-| popPK | Majid_2024 | irrelevant | 0 | 0 | The quantitative population-PK parameters are for lenvatinib, not sodium_iodide_131i. |
+| popPK | Majid_2024 | irrelevant | 0 | 0 | The paper reports population pharmacokinetic parameters for lenvatinib, not for sodium_iodide_131i. |
+| PGx | Majid_2024 | not_relevant | 0 | 0 | The paper investigates the PK/PD of lenvatinib in thyroid cancer, not sodium iodide 131i, and does not report pharmacogenomic effects. |
 | popPK | Menzel_2024 | irrelevant | 0 | 0 | This study reports clinical outcomes after radioiodine treatment in cats, not pharmacokinetic disposition parameters. |
-| popPK | Reinfelder_2011 | irrelevant | 1 | 0 | The study measures thyroidal radioiodide uptake, not quantitative pharmacokinetic disposition parameters for sodium_iodide_131i. |
-| popPK | Shinohara_2018 | irrelevant | 0 | 0 | This is absorbed-dose modeling of ¹³¹I-MIBG, not sodium iodide ¹³¹I pharmacokinetics. |
-| popPK | Tamai_2017 | irrelevant | 0 | 0 | The population-PK model and numeric parameters are for lenvatinib, not sodium iodide-131I. |
-| popPK | Topić_2021 | irrelevant | 1 | 0 | This is a human exposure-response model and reports no quantitative pharmacokinetic disposition parameters for sodium_iodide_131i. |
+| popPK | Reinfelder_2011 | irrelevant | 1 | 0 | The study focuses on the stimulation of radioiodine uptake by TSH analogs in FRTL-5 cells and mice, not on the population-pharmacokinetic parameters (CL, V, etc.) of sodium iodide 131I as a drug. |
+| PGx | Reinfelder_2011 | not_relevant | 0 | 0 | The paper reports on pharmacological stimulation of radioiodide uptake by TSH analogs, not the effect of a gene variant on the PK/PD of sodium iodide 131I. |
+| popPK | Shinohara_2018 | irrelevant | 0 | 0 | The paper is a Monte Carlo radiation dosimetry simulation study of I-131 labeled MIBG, not a pharmacokinetic study, and does not report PK parameters (CL, V, etc.) for sodium iodide I-131. |
+| PGx | Shinohara_2018 | not_relevant | 0 | 0 | The paper discusses dosimetry and dose distribution of radiolabeled compounds in cell models but does not report pharmacogenomic effects on PK/PD parameters. |
+| popPK | Tamai_2017 | irrelevant | 0 | 0 | The paper reports population PK parameters for lenvatinib, not sodium_iodide_131i. |
+| PGx | Tamai_2017 | not_relevant | 0 | 0 | The study focuses on lenvatinib in hepatocellular carcinoma and does not involve sodium_iodide_131i or report pharmacogenomic effects. |
+| popPK | Topić_2021 | irrelevant | 2 | 0 | The study is a population exposure-response analysis focusing on efficacy (treatment outcome probability) and absorbed dose metrics, not pharmacokinetic disposition parameters (CL, V, half-life) for the subject drug. |
+| PGx | Topić_2021 | not_relevant | 0 | 0 | The paper models the pharmacodynamic response of radioactive iodine therapy as a function of clinical covariates (like thyroid volume and absorbed dose), but it does not report the influence of any specific gene variant, genotype, or pharmacogenomic phenotype on the PK or PD parameters. |
 
 
 </details>

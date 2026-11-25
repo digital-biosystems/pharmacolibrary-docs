@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record lacks explicit bioavailability and absorption lag values, causing a second reader to dispute the model's parameterization and specific AUC estimates.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="dapsone" model-id="Dapsone_Kotila2023_median" status="needs_review" stale="false" population="healthy Nigerians" measured-compound="dapsone" parameterization="apparent" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Kotila OA, Ajayi DT, Masimirembwa C, Thelingwani R, Odetunde A, Falusi AG et al.
 
 ### Reviewer guidance
 
-**The record lacks explicit bioavailability and absorption lag values, causing a second reader to dispute the model's parameterization and specific AUC estimates.**
+**cross_check_disputed; x1_cross_check.**
 
-The model builder defaulted the absorption lag time and assumed full bioavailability (F=1), treating the clearance and volume parameters as apparent rather than mechanistic. A second reader disagreed on this parameterization and provided conflicting values for the area under the curve parameters, including AUC0-inf and AUC0-last. This disagreement resulted in a low agreement score, preventing the record from passing the required cross-check. Extracted — dapsone: Cmax 1.18 µg/mL, tmax 3 h, AUClast 29.3 h.µg/mL, AUC∞ 32.9 h.µg/mL, kel 0.028 h−1, t1/2z 24.8 h, CL/F 1.52 L/h, V/F 55.6 L, … (+1).
+A reported unit could not be converted (Cmax, AUClast and AUC∞), so that value has no SI equivalent. Extracted — dapsone: Cmax 1.18 µg/mL, tmax 3 h, AUClast 29.3 h.µg/mL, AUC∞ 32.9 h.µg/mL, kel 0.028 h−1, t1/2z 24.8 h, CL/F 1.52 L/h, V/F 55.6 L, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -176,9 +176,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | pass | 30.23 | 25.34 | 0.8382 | h→SI vs simulated h |
-| T1_t_half_beta | reference | pass | 30 | 25.34 | 0.8446 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.2 (3 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (3 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | pass | 30.23 | 25.34 | 0.8382 | reported 30.23 h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 30 | 25.34 | 0.8446 | reported 30.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

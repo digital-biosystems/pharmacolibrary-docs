@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper primarily models 5-FU, and the oxaliplatin parameters are embedded in code scripts for co-medication rather than being the primary subject.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="oxaliplatin" model-id="Oxaliplatin_Deyme2019_reference" status="rejected" stale="false" population="unknown" measured-compound="oxaliplatin" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper primarily models 5-FU, and the oxaliplatin parameters are embedded in code scripts for co-medication rather than being the primary subject.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The review identified that the paper's main focus is on other drugs like 5-FU and Irinotecan, with oxaliplatin parameters appearing only within co-administration scripts. This discrepancy is confirmed by the second reader who disagreed with all extracted values for clearance, intercompartmental clearance, and volumes, finding no independent evidence for them. The specific oxaliplatin parameters, such as the 51.0 L/h clearance and 22.0 L central volume, are therefore considered secondary to the primary modeling targets. Extracted — oxaliplatin: CL 51 L/h, V1 22 L, V2 70 L, Q 6 L/h.
+Extracted — oxaliplatin: CL 51 L/h, V1 22 L, V2 70 L, Q 6 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 51, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.6, 0 of 1 reader(s) agree | 0.6 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.6 (9 of 15 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.6 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

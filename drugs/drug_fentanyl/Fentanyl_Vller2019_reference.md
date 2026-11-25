@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Fentanyl bioavailability F was not extracted, and duplicate weight exponent values caused unexercised covariates.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Vller2019_reference" status="needs_review" stale="false" population="preterm neonates" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
@@ -60,13 +60,13 @@ Völler S, Flint RB, Andriessen P, Allegaert K, Zimmermann LJI, Liem KD et al. R
 
 ### Reviewer guidance
 
-**Fentanyl bioavailability F was not extracted, and duplicate weight exponent values caused unexercised covariates.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).**
 
-The bioavailability parameter F was left at defaults, so library placeholders were used instead of estimates from the paper. The record lists two distinct values, 0.528 and 5.43, for the same weight power parameter, conflicting with the second reader’s identification of 0.528 as the clearance exponent. Consequently, the simulation only ran the reference individual, leaving the defined weight covariate scenarios unexercised. Extracted — fentanyl: CL 0.415 L/hour, V1 8.68 L, Q 0.533 L/hour, V2 3.15 L, kabs 0.27 minute -1, tlag 15 min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — fentanyl: CL 0.415 L/hour, V1 8.68 L, Q 0.533 L/hour, V2 3.15 L, kabs 0.27 minute -1, tlag 15 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl (l/hour)=clp].covariate_forms`: this record has none, the second reading ['power']; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

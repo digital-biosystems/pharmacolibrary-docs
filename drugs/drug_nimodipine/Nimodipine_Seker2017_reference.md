@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Nimodipine parameter Cmax has unit '%' which conflicts with required concentration dimensions in a two-compartment model.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit % (dimensionless) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="nimodipine" model-id="Nimodipine_Seker2017_reference" status="rejected" stale="false" population="adults with subarachnoid hemorrhage" measured-compound="nimodipine" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Seker F, Hesser J, Brockmann MA, Neumaier-Probst E, Groden C, Schubert R et al. 
 
 ### Reviewer guidance
 
-**Nimodipine parameter Cmax has unit '%' which conflicts with required concentration dimensions in a two-compartment model.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit % (dimensionless) vs [mass] / [length] ** 3.**
 
-The record lists Cmax as 85 with unit '%', but Cmax is defined as the highest drug concentration, requiring a mass-per-volume unit. The source was abstract-only, so these summary statistics were used instead of fitted parameters. A second reader disagreed on all parameter values, identifying them as null or mislabeled, highlighting the unreliability of the extracted data. Extracted — nimodipine: Q 200 ml/min, CL 70 l/h, Cmax 85 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nimodipine: Q 200 ml/min, CL 70 l/h, Cmax 85 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nimodipine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

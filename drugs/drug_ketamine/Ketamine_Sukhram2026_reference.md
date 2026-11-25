@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The extracted ketamine parameters conflict with a second reader, who found no clearance or volume but listed distribution volumes.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ketamine" model-id="Ketamine_Sukhram2026_reference" status="needs_review" stale="false" population="" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Sukhram SD, Sanchez M, Anidugbe A, Kupa B, Edwards VP, Zia M et al. Ketamine in 
 
 ### Reviewer guidance
 
-**The extracted ketamine parameters conflict with a second reader, who found no clearance or volume but listed distribution volumes.**
+**cross_check_disputed; x1_cross_check.**
 
-The record cites a systemic clearance of 60.0 L/h/70 kg and a derived volume of distribution of 173.1234 L, yet the source is a review reference rather than primary data. A second reader failed to agree with these values, specifically noting the absence of a clearance estimate and the presence of distribution volumes of 40 L and 5 L. Consequently, the model was held back due to the inability to reach consensus on the fundamental pharmacokinetic parameter values. Extracted — ketamine: CL 60 L/h/70 kg, V 173 L.
+Extracted — ketamine: CL 60 L/h/70 kg, V 173 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 60, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -127,7 +127,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check agreement 0.222 is below 0.5: verdict partial, agreement 0.222, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.222 (2 of 9 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check agreement 0.222 is below 0.5: verdict partial; agreement 0.222 (2 of 9 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

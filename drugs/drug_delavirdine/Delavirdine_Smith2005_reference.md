@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because parameter V is dimensionally inconsistent, assigned 1376 mg/day instead of a volume unit.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit micromol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q61 unit mg/day ([mass] / [time]) vs [length] ** 3.
 
-<div class="pk-model-meta" hidden drug="delavirdine" model-id="Delavirdine_Smith2005_reference" status="rejected" stale="false" population="HIV-infected adults (ACTG 260/261)" measured-compound="delavirdine" parameterization="apparent" topology="manual_model_class"></div>
+<div class="pk-model-meta" hidden drug="delavirdine" model-id="Delavirdine_Smith2005_reference" status="rejected" stale="false" population="HIV-infected adults" measured-compound="delavirdine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Smith PF, Dicenzo R, Forrest A, Shelton M, Friedland G, Para M et al. Population pharmacokinetics of delavirdine and N-delavirdine in HIV-infected individuals. Clinical pharmacokinetics 44(1):99–109 (2005).
@@ -16,11 +16,11 @@ Smith PF, Dicenzo R, Forrest A, Shelton M, Friedland G, Para M et al. Population
 
 ## Population and dosing
 
-**Population:** HIV-infected adults (ACTG 260/261) · condition HIV-1 infection · age group adult · n = 234.
+**Population:** HIV-infected adults · condition HIV-1 infection · age group adult · n = 234.
 
 ## Model
 
-**Structure:** nonlinear / manual; no model was built for this record.  
+**Structure:** parent + metabolite; no model was built for this record.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 5 extracted.  
 **Availability:** No model was generated from this record.
@@ -38,7 +38,7 @@ Smith PF, Dicenzo R, Forrest A, Shelton M, Friedland G, Para M et al. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Smith PF, Dicenzo R, Forrest A, Shelton M, Friedland G, Para M et al. Population
 
 ### Reviewer guidance
 
-**Record rejected because parameter V is dimensionally inconsistent, assigned 1376 mg/day instead of a volume unit.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit micromol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q61 unit mg/day ([mass] / [time]) vs [length] ** 3.**
 
-The parameter labeled V is defined as volume of distribution but carries units of mg/day, creating a dimension mismatch with its structural role. This conflict prevents valid model construction. Additionally, the record relies solely on abstract summary statistics rather than a fitted model, and reviewers disagreed on whether the value 1376 was correctly extracted for this parameter. Extracted — delavirdine: Vss 67.6 L, CL/F 19.8 L/h, Km 6.3 micromol/L, V/F 24.7 L, V 1.38e+03 mg/day.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — delavirdine: Vss 67.6 L, CL/F 19.8 L/h, Km 6.3 micromol/L, V/F 24.7 L, V 1.38e+03 mg/day.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of v: this record has 1376, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has delavirdine → n-delavirdine (metabolism), the second reading delavirdine → n‐delavirdine (metabolism); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -80,34 +80,41 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - unit_dimension_mismatch: 'V(max)' → Q61 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=delavirdine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: prose indicates saturable/MM/TMDD/time-varying kinetics — manual_model_class
-- template fit: none — nonlinear / manual model class
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 5 linked by role; re-tagged delavirdine→parent ×7
-- molar mass: no plausible PubChem entry for 'N-delavirdine' ('N-desalkyl delavirdine') — left in mass units
+- row roles (LLM): model_class=noncompartmental; 7/7 row label(s) assigned, 0 linked by role
+- molar mass: no plausible PubChem entry for 'N-delavirdine' ('N-desmethyl delavirdine') — left in mass units
 - molar mass: none found for 'N-delavirdine' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is MANUAL_MODEL_CLASS (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Smith_2005_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.8 (8/10 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.214 (3/14 fields) | 11 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[v]` | 1376 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['delavirdine', 'n-delavirdine', 'metabolism']] | [['delavirdine', 'n‐delavirdine', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` |  | 24.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 24.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[concentration at half the maximum velocity of metabolism (v(max))]` |  | 6.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[concentration at half the maximum velocity of metabolism (v(max))]` | 6.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intrinsic oral clearance]` |  | 19.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intrinsic oral clearance]` | 19.8 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` |  | 1376 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 1376 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` |  | 67.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` | 67.6 |  | only_one_extracted |
 
 </details>
 
@@ -130,7 +137,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Smith_2005:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Smith_2005:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
-| C8_topology | fail |  |  |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 19.8 L/h | ['Smith_2005:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 67.6 L | ['Smith_2005:abstract'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 24.7 L | ['Smith_2005:abstract'] |
@@ -157,4 +164,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdelavirdine%5D%20Delavirdine_Smith2005_reference&body=Drug%3A%20delavirdine%0ARecord%3A%20Delavirdine_Smith2005_reference%0APaper%3A%20Smith_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_delavirdine/Delavirdine_Smith2005_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:56 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:15 UTC</sub>

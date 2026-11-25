@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
-> The record was rejected because the elimination half-life parameter (42.4) has units of /h, a dimension mismatch for a time quantity.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q57 unit /h (1 / [time]) vs [time].
 
 <div class="pk-model-meta" hidden drug="Tocopherol" model-id="Tocopherol_Hidiroglou1996_reference" status="rejected" stale="false" population="sheep" measured-compound="alpha-tocopherol" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Hidiroglou M. Pharmacokinetic profile of plasma tocopherol following intramuscul
 
 ### Reviewer guidance
 
-**The record was rejected because the elimination half-life parameter (42.4) has units of /h, a dimension mismatch for a time quantity.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q57 unit /h (1 / [time]) vs [time].**
 
-The elimination half-life parameter is assigned units of /h, which conflict with the required [time] dimension for this structural parameter. Additionally, the second reader disagreed on several fields, identifying a second elimination half-life of 21.2 that is missing from the primary record. The record relied on abstract-only data, meaning summary statistics stood in for a fitted model. Extracted — tocopherol: kabs 0.29 /h, t1/2z 42.4 /h, MRT 46 h, AUC 290 micrograms/h per ml.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tocopherol: kabs 0.29 /h, t1/2z 42.4 /h, MRT 46 h, AUC 290 micrograms/h per ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption rate constant, ka1: this record has 0.29, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

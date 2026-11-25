@@ -1,8 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;savolitinib&quot;,&quot;href&quot;:&quot;drugs/drug_savolitinib/&quot;},{&quot;label&quot;:&quot;Jones_2023 \u00b7 PD pEGFR&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Savolitinib_Jones2023_reference&quot;,&quot;label&quot;:&quot;Jones_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_savolitinib/Savolitinib_Jones2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jones_2023_TGI&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 TGI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_savolitinib/pd_Jones_2023_TGI.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jones_2023_pEGFR&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 pEGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_savolitinib/pd_Jones_2023_pEGFR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Jones_2023_pMET&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 pMET&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_savolitinib/pd_Jones_2023_pMET.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Schalkwijk_2021_QTcF_2&quot;,&quot;label&quot;:&quot;Schalkwijk_2021 \u00b7 \u0394\u0394QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_savolitinib/pd_Schalkwijk_2021_QTcF_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Savolitinib_Jones2023_reference&quot;,&quot;label&quot;:&quot;Jones_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_savolitinib/Savolitinib_Jones2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# pEGFR — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+# pEGFR — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -16,19 +16,19 @@
 
 ## Record summary
 
-**As extracted:** Savolitinib (concentrations from this paper's PK model) drives pEGFR: indirect response — drug stimulates the loss of pEGFR.
+**As extracted:** Osimertinib (concentrations from this paper's PK model) drives pEGFR: indirect response — drug inhibits the loss of pEGFR.
 
-**Model:** Model and browser simulation available in **Models** and **Simulation**.
+**Model:** No model was generated from this record.
 
 > Osimertinib exposure inhibits pEGFR, and savolitinib-driven pMET suppression enhances this effect by lowering the pEGFR EC50; the paper describes the interaction as an EC50 shift but does not specify the turnover-level mechanism of pEGFR inhibition. Recorded values are a pEGFR EC50base of 0.17 μmol/L, Kout of 0.0152 h⁻¹, Emax of 9.06 (proportional increase in Kout), and a combination pMET-effect slope on EC50 of −0.0317 (unit not stated).
 >
 > <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
 
 - **paper:** `Jones_2023`
-- **model family:** `indirect_response_iv`
+- **model family:** `indirect_response_ii`
 - **driver:** `pk_record`
-- **tier:** population
-- **effect:** unknown/proportional
+- **tier:** descriptive
+- **effect:** inhibition/unknown
 
 ## Citation
 Jones RDO et al., Pharmacokinetic/Pharmacodynamic Analysi…, Molecular cancer therapeuti… (2023)
@@ -37,11 +37,11 @@ Jones RDO et al., Pharmacokinetic/Pharmacodynamic Analysi…, Molecular cancer t
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | pEGFR baseline | `Q324` ·  | 24,300 | — | llm | Jones_2023:pdv3 |
-| PD (effect) | pEGFR EC50base | `Q321` ·  | 0.17 | μmol/L | llm | Jones_2023:pdv3 |
+| PD (effect) | pEGFR baseline | `Q324` ·  | 24,300 |  | llm | Jones_2023:pdv3 |
+| PD (effect) | pEGFR EC50base | `Q321` ·  | 0.17 | µmol/L | llm | Jones_2023:pdv3 |
 | PD (effect) | pEGFR turnover rate constant (Kout) | `Q328` ·  | 0.0152 | /h | llm | Jones_2023:pdv3 |
-| PD (effect) | pEGFR Emax (proportional increase Kout) | `Q320` ·  | 9.06 | — | llm | Jones_2023:pdv3 |
-| PD (effect) | pEGFR combination pMET effect slope on EC50 | `Q335` ·  | −0.0317 | — | llm | Jones_2023:pdv3 |
+| PD (effect) | pEGFR Emax (proportional increase Kout) | `Q323` ·  | 9.06 |  | llm | Jones_2023:pdv3 |
+| PD (effect) | pEGFR combination pMET effect slope on EC50 | `Q335` ·  | −0.0317 |  | llm | Jones_2023:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -49,58 +49,22 @@ Jones RDO et al., Pharmacokinetic/Pharmacodynamic Analysi…, Molecular cancer t
 </details>
 
 
-## Exposure-response model
-
-`Savolitinib_Jones2023_PD_pegfr` — turnover (indirect response type IV), `response = E0/(1 + Emax*frac)`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 2.43e+04 — | — |
-| Emax | 9.06 | — |
-| EC50 | 0.17 μmol/L | 0.00017 mol/m3 |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 2.43e+04, `at_EC50` = 4394, `at_inf` = 2416
-
-Deviations:
-
-- `defaulted_parameters` — gamma
-
-## Review
-
-Verdict <span class="pk-badge pk-badge--blue">Simulated</span>
-
-| check | status | note |
-|---|---|---|
-| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
-| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | the response falls, as IDR-IV predicts |
-| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
-
-Advisory:
-
-- defaulted: gamma (convention)
-
-
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.4 (4/10 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `driver_compound` | savolitinib | osimertinib | mismatch |
-| `qwen3.8-27b` | `effect_direction` | unknown | inhibition | mismatch |
-| `qwen3.8-27b` | `model_family` | indirect_response_iv | indirect_response_ii | mismatch |
-| `qwen3.8-27b` | `parameters[Q320]` | 9.06 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q323]` |  | 9.06 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q335].value` | −0.0317 | -0.0317 | mismatch |
+| `gpt-oss-120b` | `driver_compound` | osimertinib | savolitinib (via pMET inhibition) | mismatch |
+| `gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
+| `gpt-oss-120b` | `model_family` | indirect_response_ii | indirect_response_i | mismatch |
+| `gpt-oss-120b` | `parameters[Q324].value` | 24,300 | 24300 | mismatch |
+| `gpt-oss-120b` | `parameters[Q335].value` | −0.0317 | -0.0317 | mismatch |
 
 </details>
 
@@ -116,54 +80,19 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_savolitinib/Savolitinib_Jones2023_PD_pegfr/Savolitinib_Jones2023_PD_pegfr_modelica.zip" download>Savolitinib_Jones2023_PD_pegfr_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_savolitinib/Savolitinib_Jones2023_PD_pegfr/Savolitinib_Jones2023_PD_pegfr_fmi.zip" download>Savolitinib_Jones2023_PD_pegfr_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PD_IndirectTurnoverSweep.fmu" download>PD_IndirectTurnoverSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_savolitinib/Savolitinib_Jones2023_PD_pegfr/Savolitinib_Jones2023_PD_pegfr_matlab.zip" download>Savolitinib_Jones2023_PD_pegfr_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_savolitinib/Savolitinib_Jones2023_PD_pegfr/Savolitinib_Jones2023_PD_pegfr_sbml.zip" download>Savolitinib_Jones2023_PD_pegfr_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_savolitinib/Savolitinib_Jones2023_PD_pegfr/Savolitinib_Jones2023_PD_pegfr_cellml.zip" download>Savolitinib_Jones2023_PD_pegfr_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_IndirectTurnoverSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | model | `E0` | 2.43e+04 |  |
-| input | model | `EC50` | 0.00017 |  |
-| input | model | `Emax` | 9.06 |  |
-| input | model | `exposure_per_s` | 0.001 |  |
-| input | model | `gamma` | 1 |  |
-| output | concentration | `response` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacodynamic.IndirectTurnoverSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**This record:** Pharmacolibrary, model `Savolitinib_Jones2023_PD_pegfr`. <https://pharmacolibrary.github.io/#/drugs/drug_savolitinib/pd_Jones_2023_pEGFR>
-
-```bibtex
-@misc{pharmacolibrary_SavolitinibJones2023PDpegfr,
-  title  = {{Pharmacolibrary model Savolitinib_Jones2023_PD_pegfr}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_savolitinib/pd_Jones_2023_pEGFR},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_savolitinib/Savolitinib_Jones2023_PD_pegfr/Savolitinib_Jones2023_PD_pegfr_params.json" metaurl="assets/fmu/PD_IndirectTurnoverSweep.vr.json" wasmurl="assets/fmu/PD_IndirectTurnoverSweep.js" controlsurl="drugs/drug_savolitinib/Savolitinib_Jones2023_PD_pegfr/Savolitinib_Jones2023_PD_pegfr_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PD_IndirectTurnoverSweep` · parameters `Savolitinib_Jones2023_PD_pegfr_params.json` · controls `Savolitinib_Jones2023_PD_pegfr_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 

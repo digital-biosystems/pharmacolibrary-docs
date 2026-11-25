@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> Pembrolizumab's central volume of 1.26 mL is physiologically implausible, triggering rejection of the two-compartment model.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="pembrolizumab" model-id="Pembrolizumab_Lindauer2017_reference" status="rejected" stale="false" population="" measured-compound="pembrolizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Lindauer A, Valiathan CR, Mehta K, Sriram V, de Greef R, Elassaiss-Schaap J et a
 
 ### Reviewer guidance
 
-**Pembrolizumab's central volume of 1.26 mL is physiologically implausible, triggering rejection of the two-compartment model.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The review rejected the record because the central compartment volume of 1.26 mL falls outside the physiological window, suggesting a scale or unit error. The peripheral volume is similarly implausible at 0.819 mL. A second reader noted this record is missing values for four parameters, including an alternative clearance value, where they identified 94.7. Extracted — pembrolizumab: CL 0.334 mL/day, V1 1.26 mL, V2 0.819 mL, Q 4.82 mL/day.
+Extracted — pembrolizumab: CL 0.334 mL/day, V1 1.26 mL, V2 0.819 mL, Q 4.82 mL/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q320: this record has none, the second reading 94.7; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

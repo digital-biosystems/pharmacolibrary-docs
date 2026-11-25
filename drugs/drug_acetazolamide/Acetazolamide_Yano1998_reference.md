@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the apparent oral clearance lacks a value and its hourly unit conflicts with a volume dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit h(-1) (1 / [time]) vs [length] ** 3 / [time]; Q76 unit l x kg(-1) ([luminosity] / [length] ** 2) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="acetazolamide" model-id="Acetazolamide_Yano1998_reference" status="rejected" stale="false" population="patients with transient intraocular pressure elevation" measured-compound="acetazolamide" parameterization="apparent" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Yano I, Takayama A, Takano M, Inatani M, Tanihara H, Ogura Y et al. Pharmacokine
 
 ### Reviewer guidance
 
-**The record was rejected because the apparent oral clearance lacks a value and its hourly unit conflicts with a volume dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit h(-1) (1 / [time]) vs [length] ** 3 / [time]; Q76 unit l x kg(-1) ([luminosity] / [length] ** 2) vs [length] ** 3.**
 
-The apparent oral clearance parameter has no extracted value, and its unit (h(-1)) fails the dimension check against the required volume dimension. Additionally, the apparent oral volume of distribution (0.231 l x kg(-1)) fails its specific dimensional check. The record is also based solely on the abstract, meaning summary statistics stand in for a fitted model. Extracted — acetazolamide: V/F 0.231 l x kg(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — acetazolamide: V/F 0.231 l x kg(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has acetazolamide, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

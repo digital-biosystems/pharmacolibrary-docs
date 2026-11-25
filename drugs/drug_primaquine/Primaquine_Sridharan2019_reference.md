@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Primaquine bioavailability and lag time lacked paper estimates, relying on unreported placeholder values instead of fitted parameters.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Sridharan2019_reference" status="needs_review" stale="false" population="healthy volunteers and patients with hepatic or renal dysfunction" measured-compound="primaquine" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Sridharan K, Sannala CKR, Mallayasamy S, Chaturvedula A, Kadam P, Hase N et al. 
 
 ### Reviewer guidance
 
-**Primaquine bioavailability and lag time lacked paper estimates, relying on unreported placeholder values instead of fitted parameters.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record lists clearance of 10.34 L/h and absorption rate constant of 18.08 1/h, but bioavailability and lag time were not extracted. A second reader disagreed on the reported clearance value of 10.34 L/h, suggesting 31.36 L/h instead, and challenged the volume of distribution of 11.9 L. Extracted — primaquine: CL 10.3 L/h, V 11.9 L, kabs 18.1 1/h, E_HD 30.2.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — primaquine: CL 10.3 L/h, V 11.9 L, kabs 18.1 1/h, E_HD 30.2.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl θ].value`: this record has 10.34, the second reading 31.36; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -156,7 +156,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -172,7 +172,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference_modelica.zip" download>Primaquine_Sridharan2019_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference_modelica.zip" download>Primaquine_Sridharan2019_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference_fmi.zip" download>Primaquine_Sridharan2019_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference_matlab.zip" download>Primaquine_Sridharan2019_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_primaquine/Primaquine_Sridharan2019_reference/Primaquine_Sridharan2019_reference_matlab_simbio.zip" download>Primaquine_Sridharan2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

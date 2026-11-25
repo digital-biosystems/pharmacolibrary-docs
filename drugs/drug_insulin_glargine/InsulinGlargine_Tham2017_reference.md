@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Insulin glargine was rejected because its clearance covariate effect is −0.282, with a covariate scenario producing an implausible negative clearance or volume.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="insulin glargine" model-id="InsulinGlargine_Tham2017_reference" status="rejected" stale="false" population="healthy adults" measured-compound="insulin glargine" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Tham LS, Schneck K, Ertekin A, Reviriego J. Modeling Pharmacokinetic Profiles of
 
 ### Reviewer guidance
 
-**Insulin glargine was rejected because its clearance covariate effect is −0.282, with a covariate scenario producing an implausible negative clearance or volume.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record gives apparent clearance of 30.5 L/h and a clearance covariate effect of −0.282; the finding reports negative clearance or volume in a covariate scenario, but gives no scenario value. A second reader disagreed on the apparent clearance estimate (74.5) and whether clearance had a covariate effect. Extracted — insulin glargine: Fab 1, kabs 0.0365 1/h, tlag 0.265 h, V/F 43 L, CL/F 30.5 L/h, CL -0.282.
+Extracted — insulin glargine: Fab 1, kabs 0.0365 1/h, tlag 0.265 h, V/F 43 L, CL/F 30.5 L/h, CL -0.282.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[absorption lag, alag].value`: this record has 0.265, the second reading 0.378; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

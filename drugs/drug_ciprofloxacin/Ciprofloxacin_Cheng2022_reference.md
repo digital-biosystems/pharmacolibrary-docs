@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ciprofloxacin bioavailability F was defaulted rather than estimated, and only abstract-only data supports the two-compartment model's clearance value of 11.08 L/h.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Cheng2022_reference" status="needs_review" stale="false" population="critically ill patients receiving ECMO" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Cheng V, Abdul-Aziz MH, Burrows F, Buscher H, Corley A, Diehl A et al. Populatio
 
 ### Reviewer guidance
 
-**Ciprofloxacin bioavailability F was defaulted rather than estimated, and only abstract-only data supports the two-compartment model's clearance value of 11.08 L/h.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lacks an explicit estimate for bioavailability (F), resulting in the use of library defaults that affect the simulated profile without paper support. Additionally, the model parameters were derived solely from the paper's abstract, meaning reported summary statistics stand in for a fitted model. A second reader also noted missing values for AUC/MIC ratio and creatinine clearance, which were not included in the primary record. Extracted — ciprofloxacin: CL 11.1 L/h, V1 77.3 L, V2 90.7 L, Q 38.8 L/h, kabs 1 h−1, tlag 0.33 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ciprofloxacin: CL 11.1 L/h, V1 77.3 L, V2 90.7 L, Q 38.8 L/h, kabs 1 h−1, tlag 0.33 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0-24/mic ≥: this record has none, the second reading 125; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -21,7 +21,7 @@ Cabotegravir is an integrase inhibitor used to treat and prevent HIV infections.
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| cabotegravir | parent | 405.358 | C19H17F2N3O5 | DrugBank | [54713659](https://pubchem.ncbi.nlm.nih.gov/compound/54713659) | Renou_2026, Thoueille_2024 |
+| cabotegravir | parent | 405.358 | C19H17F2N3O5 | DrugBank | [54713659](https://pubchem.ncbi.nlm.nih.gov/compound/54713659) | Renou_2026, Thoueille_2024, Yu_2022 |
 
 ## Start here
 
@@ -39,16 +39,16 @@ Cabotegravir is an integrase inhibitor used to treat and prevent HIV infections.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Renou_2026_han_et_al](drugs/drug_cabotegravir/Cabotegravir_Renou2026_han_et_al.md) | ▶ model + simulator | 2-compartment, oral | 6 (+2 cov.) | Renou Q et al., External Evaluation of Population Pharm…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70180](https://doi.org/10.1002/psp4.70180) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [↳ thoueille_et_al](drugs/drug_cabotegravir/Cabotegravir_Renou2026_thoueille_et_al.md) | ▶ model + simulator | 1-compartment, oral | 3 (+2 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Renou_2026_han_et_al](drugs/drug_cabotegravir/Cabotegravir_Renou2026_han_et_al.md) | ▶ model + simulator | 2-compartment, oral | 6 (+2 cov.) | Renou Q et al., External Evaluation of Population Pharm…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70180](https://doi.org/10.1002/psp4.70180) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [↳ thoueille_et_al](drugs/drug_cabotegravir/Cabotegravir_Renou2026_thoueille_et_al.md) | ▶ model + simulator | 1-compartment, oral | 3 (+2 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.6258)</sub> | [Thoueille_2024_reference](drugs/drug_cabotegravir/Cabotegravir_Thoueille2024_reference.md) | — | 1-compartment (no model) | 3 | Thoueille P et al., Population Pharmacokinetics of Cabotegr…, Clinical pharmacology and t… (2024) | [10.1002/cpt.3240](https://doi.org/10.1002/cpt.3240) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Han_2024_2_reference](drugs/drug_cabotegravir/Cabotegravir_Han2024v2_reference.md) | — | 1-compartment (no model) | 0 | Han K et al., Population pharmacokinetics of cabotegr…, Antimicrobial agents and ch… (2024) | [10.1128/aac.00880-24](https://doi.org/10.1128/aac.00880-24) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Yu_2022_reference](drugs/drug_cabotegravir/Cabotegravir_Yu2022_reference.md) | — | 1-compartment (no model) | 1 | Yu Y et al., A population pharmacokinetic model base…, British journal of clinical… (2022) | [10.1111/bcp.15477](https://doi.org/10.1111/bcp.15477) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Cheung_2022_HIV_infection_of_GFP_reporter_CD4_T_cells_INSTI_susceptibility](drugs/drug_cabotegravir/pd_Cheung_2022_HIV_infection_of_GFP_reporter_CD4_T_cells_INSTI_.md) | HIV infection of GFP-reporter CD4+ T-cells (INSTI susceptibility) ← cabotegravir · direct sigmoid Emax (Hill) effect | — | Cheung PK et al., Impact of combinations of clinically ob…, The Journal of antimicrobia… (2022) | [10.1093/jac/dkab498](https://doi.org/10.1093/jac/dkab498) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Schneiderman_2022_PVL](drugs/drug_cabotegravir/pd_Schneiderman_2022_PVL.md) | HTLV-1 proviral load ← cabotegravir · inhibition effect | — | Schneiderman BS et al., Cabotegravir, the Long-Acting Integrase…, Frontiers in medicine (2022) | [10.3389/fmed.2022.889621](https://doi.org/10.3389/fmed.2022.889621) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Schneiderman_2022_strand_transfer](drugs/drug_cabotegravir/pd_Schneiderman_2022_strand_transfer.md) | HTLV-1 IN strand transfer activity ← cabotegravir · inhibition effect | — | Schneiderman BS et al., Cabotegravir, the Long-Acting Integrase…, Frontiers in medicine (2022) | [10.3389/fmed.2022.889621](https://doi.org/10.3389/fmed.2022.889621) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Smith_2025_Infectivity](drugs/drug_cabotegravir/pd_Smith_2025_Infectivity.md) | HIV-1 vector infectivity (luciferase activity) in single-round infection assay ← cabotegravir · direct sigmoid Emax (Hill) effect | — | Smith SJ et al., Comparative Analyses of Antiviral Poten…, Viruses (2025) | [10.3390/v17010121](https://doi.org/10.3390/v17010121) |
@@ -65,13 +65,13 @@ Cabotegravir is an integrase inhibitor used to treat and prevent HIV infections.
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:04 | 8:38 | 3/1/0 | 4/0/0 | 0/0/0 | 440,408/28,768 | ollama / glm-5.3-flash | 13 | 4/9 | 13/0 | 0 |
+| 2026-11-23 19:54 | 1:05 | 3/2/0 | 3/0/0 | 0/0/0 | 19,633/5,129 | einfracz / qwen3.8-27b | 13 | 4/9 | 13/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 30 matched, 20 returned
-- **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 0
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -80,34 +80,43 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Yu_2022.pdf` | Yu Y et al., A population pharmacokinetic model base…, British journal of clinical… (2022) | popPK | 10 | [10.1111/bcp.15477](https://doi.org/10.1111/bcp.15477) | [35949044](https://pubmed.ncbi.nlm.nih.gov/35949044) | Population PK model of cabotegravir in humans, but numeric parameter values (CL, V, ka) appear to live in tables/supplementary not included in the evidence. |
+| `Yu_2022.pdf` | Yu Y et al., A population pharmacokinetic model base…, British journal of clinical… (2022) | popPK | 10 | [10.1111/bcp.15477](https://doi.org/10.1111/bcp.15477) | [35949044](https://pubmed.ncbi.nlm.nih.gov/35949044) | The paper describes a population PK model for cabotegravir and reports specific covariate effects (e.g., 67% higher ka in males) and model statistics, but the central numeric parameter estimates (CL, V, ka values) are likely in tables/figures not fully reproduced in the text snippet. |
 
-<sub>queue written 2026-10-07 15:56 UTC</sub>
+<sub>queue written 2026-11-23 19:53 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Cheung_2022 | irrelevant | 0 | 0 | In-vitro phenotypic resistance study (EC50 susceptibility), no PK disposition parameters for cabotegravir. |
-| popPK | Di_2026 | irrelevant | 2 | 2 | This is a review of BIC/FTC/TAF; cabotegravir appears only as a comparator in a summary table (Vd, half-life) without a PK model or dedicated cabotegravir disposition analysis. |
+| popPK | Cheung_2022 | irrelevant | 0 | 0 | The paper is an in-vitro molecular study assessing phenotypic resistance (EC50 changes) and does not report pharmacokinetic disposition parameters. |
+| PGx | Cheung_2022 | not_relevant | 3 | 10 | The paper reports the impact of HIV viral integrase mutations on drug susceptibility (phenotypic resistance/virological PD), not human host pharmacogenomic variants affecting cabotegravir PK or PD. |
+| popPK | Di_2026 | irrelevant | 0 | 0 | The paper is a review focused on the pharmacokinetics of Bictegravir (BIC), Emtricitabine (FTC), and Tenofovir alafenamide (TAF); Cabotegravir (CAB) is mentioned only as a comparator or context, with no PK parameter values reported for it. |
+| PGx | Di_2026 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetic and pharmacodynamic properties of the BIC/FTC/TAF regimen and mentions cabotegravir only in the context of long-acting injectables, without reporting any gene variant effects on its PK/PD. |
 | popPK | Fernández-González_2025 | irrelevant | 3 | 3 | Observational cohort reporting only CAB trough concentrations and covariate associations; no CL, V, ka, half-life, or population-PK model parameters, and detailed values largely in supplementary figures/tables. |
-| popPK | Fernández_2026 | irrelevant | 3 | 2 | This is a drug-distribution/concentration study in human compartments; no PK disposition parameters (CL, V, ka, half-life, model) are reported, and no numeric values appear in the evidence. |
+| popPK | Fernández_2026 | irrelevant | 2 | 0 | The study reports raw concentration data in specific tissues (semen, rectal, CVF) rather than quantitative population-pharmacokinetic parameters (CL, V, ka, t1/2) for cabotegravir. |
+| PGx | Fernández_2026 | not_relevant | 0 | 0 | The paper reports pharmacokinetic distribution and efficacy but does not analyze or report any association with genetic variants or genotypes. |
 | popPK | Ford_2025 | relevant | 8 | 4 | Population PK modeling and NCA of cabotegravir LA in humans, but the actual parameter values (GMRs, model estimates) live in Tables 2 and Figures 3–6 and supplementary material not fully provided; only scattered numbers (half-life 6.4 weeks, Cτ benchmark 0.45 µg/mL, one Cmax 60.9 µg/mL) appear in text. |
 | popPK | Han_2025 | relevant | 8 | 3 | Population PK analysis of cabotegravir in humans, but numeric parameter values (KALA, CL/F, V2/F) appear only in Figure 1, not provided in the evidence. |
-| popPK | Hassounah_2017 | irrelevant | 0 | 0 | In-vitro antiviral susceptibility study (EC50s), no PK disposition parameters for cabotegravir. |
-| popPK | Ivashchenko_2020 | irrelevant | 2 | 1 | Cabotegravir is only a comparator; PK parameters (bioavailability, half-life) are for the novel compound 1{26} in rats, and no numeric cabotegravir PK values are given. |
+| popPK | Hassounah_2017 | irrelevant | 0 | 0 | The study reports antiviral activity and resistance profiles (EC50) for cabotegravir and bictegravir, not pharmacokinetic parameters like clearance or volume. |
+| PGx | Hassounah_2017 | not_relevant | 0 | 0 | The paper reports antiviral susceptibility (EC50) changes against integrase resistance mutations (virus genetics), not human host pharmacogenomic effects on PK or PD. |
+| popPK | Ivashchenko_2020 | irrelevant | 1 | 0 | The study focuses on the synthesis and in silico modeling of new INSTIs, using cabotegravir only as a comparator in biological and limited preclinical comparisons without reporting quantitative population PK parameters (CL, V, etc.) for cabotegravir. |
+| PGx | Ivashchenko_2020 | not_relevant | 0 | 0 | The paper reports on the synthesis and in vitro/animal PK/PD of novel integrase strand transfer inhibitors, not pharmacogenomic effects for cabotegravir. |
 | popPK | Letendre_2020 | irrelevant | 3 | 2 | CSF distribution study reporting concentrations and CSF/plasma ratios, not disposition PK parameters (CL, V, ka, model); half-life values cited only from prior literature. |
-| popPK | Li_2022 | irrelevant | 0 | 0 | This is a review of HIV reverse transcriptase inhibitors (TAF, RPV, DOR, etc.); cabotegravir is only mentioned as an abbreviation/comparator with no PK parameters for it. |
-| popPK | Ndashimye_2021 | irrelevant | 0 | 0 | This is a virology susceptibility (EC50 fold-change) study, not a pharmacokinetic study; no disposition parameters are reported. |
-| popPK | Padilla_2026 | irrelevant | 3 | 2 | Reports only measured plasma trough concentrations, not disposition parameters (CL, V, ka, half-life) or a PK model; no numeric PK parameter values beyond concentrations. |
+| popPK | Li_2022 | irrelevant | 0 | 0 | This is a review of HIV reverse transcriptase inhibitors (NRTIs/NNRTIs); cabotegravir is an integrase inhibitor mentioned only as a component of combination regimens (Cabenuva) with no specific PK parameters reported for it. |
+| PGx | Li_2022 | not_relevant | 0 | 0 | The paper is a review of approved RT inhibitors and does not report any pharmacogenomic effects on the PK or PD of cabotegravir. |
+| popPK | Ndashimye_2021 | irrelevant | 0 | 0 | The study reports in-vitro susceptibility and resistance data (EC50) for HIV-1 integrase, not pharmacokinetic disposition parameters (CL, V, ka) for cabotegravir. |
+| PGx | Ndashimye_2021 | not_relevant | 0 | 0 | The paper reports HIV-1 drug resistance mutations affecting viral susceptibility (EC50) to cabotegravir, not human host pharmacogenomic effects on the drug's PK or PD parameters. |
+| popPK | Padilla_2026 | irrelevant | 1 | 0 | The study reports descriptive plasma concentrations and a comparison of injection sites, but does not present a compartmental or population pharmacokinetic model with estimated parameters (CL, V, Q, ka) for cabotegravir. |
+| PGx | Padilla_2026 | not_relevant | 0 | 0 | The study investigates the effect of point-of-care ultrasound guidance on cabotegravir pharmacokinetics and tolerability, not the impact of genetic variants. |
 | popPK | Schneiderman_2022 | irrelevant | 1 | 1 | In vitro antiviral potency study (IC50/EC50) with no PK disposition parameters for cabotegravir; only half-life mentioned in passing from literature. |
 | popPK | Smith_2025 | irrelevant | 0 | 0 | This is an in-vitro antiviral potency (EC50) study against HIV integrase mutants; cabotegravir is only a comparator drug and no PK parameters (CL, V, ka, half-life) are reported. |
-| popPK | Trezza_2015 | relevant | 6 | 4 | Review of cabotegravir PK with some numeric values in text (half-lives, absorption rate covariate effects), but full population-PK parameter estimates live in cited primary studies/figures not provided. |
-| popPK | Yu_2022 | relevant | 10 | 4 | Population PK model of cabotegravir in humans, but numeric parameter values (CL, V, ka) appear to live in tables/supplementary not included in the evidence. |
+| popPK | Trezza_2015 | relevant | 8 | 2 | The paper is a review summarizing PK parameters (half-life, AUC ratios, tissue ratios) for cabotegravir in humans, but it lacks a compartmental model or specific numeric values for Clearance (CL), Volume of Distribution (V), or Absorption Rate (ka); the detailed population PK parameter estimates are referenced as being in cited external studies (e.g., [16]) or figures not provided. |
+| PGx | Trezza_2015 | not_relevant | 0 | 0 | The paper reviews the formulation and general pharmacokinetics of cabotegravir but does not report any pharmacogenomic effects (gene variant impacts) on PK or PD parameters. |
+| PGx | Yu_2022 | not_relevant | 0 | 0 | The study identifies sex, body weight, and between-occasion variability as PK covariates, but does not investigate or report any genetic variants or pharmacogenomic effects on cabotegravir pharmacokinetics. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcabotegravir%5D&body=Drug%3A%20cabotegravir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cabotegravir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 15:57 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 19:53 UTC</sub>

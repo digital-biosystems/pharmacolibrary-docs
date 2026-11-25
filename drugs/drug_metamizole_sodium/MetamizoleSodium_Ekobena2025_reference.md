@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Metamizole sodium clearance (0.46 L/h) comes from a paper about another drug, and defaulted bioavailability and lag time made the record unacceptable.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Ekobena2025_reference" status="rejected" stale="false" population="" measured-compound="metamizole_sodium" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Ekobena P, Briki M, Dao K, Marzolini C, Andre P, Buclin T et al. Population phar
 
 ### Reviewer guidance
 
-**Metamizole sodium clearance (0.46 L/h) comes from a paper about another drug, and defaulted bioavailability and lag time made the record unacceptable.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-Neither the title nor abstract names metamizole sodium, and the paper was rejected as irrelevant because it concerns another drug. The model also used defaults rather than explicit estimates for bioavailability and absorption lag time. Extracted — metamizole sodium: CL 0.46 L/h, V 10.9 L, kabs 0.64 h−1.
+Extracted — metamizole sodium: CL 0.46 L/h, V 10.9 L, kabs 0.64 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q27: this record has 0.504, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

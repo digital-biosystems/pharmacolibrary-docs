@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> A second reader failed to confirm the record because they could not identify cefaclor as the dose compound or primary analyte.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="cefaclor" model-id="Cefaclor_Jeong2021_estimate" status="needs_review" stale="false" population="healthy adults" measured-compound="cefaclor" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Jeong SH, Jang JH, Cho HY, Lee YB. Population Pharmacokinetic Analysis of Cefacl
 
 ### Reviewer guidance
 
-**A second reader failed to confirm the record because they could not identify cefaclor as the dose compound or primary analyte.**
+**cross_check_disputed; x1_cross_check.**
 
-The review was held back because a second reader disputed the identification of the study's key components. Specifically, the second reader marked the dose compound and the primary analyte as unknown, conflicting with the record's explicit assignment of cefaclor for both. This disagreement on the fundamental identity of the measured and administered molecules prevented consensus on the model's validity. Extracted — cefaclor: V/F 2.26e+04 mL, CL/F 2.72e+04 mL/h, tlag 0.245 h, kabs 5.2 1/h.
+Extracted — cefaclor: V/F 2.26e+04 mL, CL/F 2.72e+04 mL/h, tlag 0.245 h, kabs 5.2 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefaclor, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,11 +148,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 0.007073 |  | non-numeric value |
-| T1_cmax | reference | pass | 0.00787 | 0.007073 | 0.8988 | µg/mL→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | skipped |  | 0.4146 |  | non-numeric value |
-| T1_tmax | reference | skipped |  | 0.7185 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 0.007073 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | pass | 0.00787 | 0.007073 | 0.8988 | reported 7.87 µg/mL→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | skipped |  | 0.4146 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | skipped |  | 0.7185 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

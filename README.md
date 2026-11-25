@@ -68,26 +68,26 @@ Built for model-informed drug development, precision dosing research and teachin
 
 
 <div class="pklg">
-<div class="tiles"><div class="tile"><i>Drugs and toxins with records</i><b>2,629</b><em>1,799 drugs · 830 toxins with at least one record that was not rejected</em></div>
-<div class="tile"><i>popPK · PD · PGx records</i><b>7,916 · 8,021 · 828</b><em>population pharmacokinetics · pharmacodynamics · pharmacogenomics records after validation and review, rejected ones not counted; PD per response, PGx per paper and gene</em></div>
-<div class="tile"><i>Papers behind the records</i><b>9,415</b><em>distinct papers (by DOI) with at least one such record</em></div><div class="tile"><i>Parameter values</i><b>46,587</b><em>values with units of the counted records (rejected ones not counted)</em></div></div>
+<div class="tiles"><div class="tile"><i>Drugs and toxins with records</i><b>2,641</b><em>1,811 drugs · 830 toxins with at least one record that was not rejected</em></div>
+<div class="tile"><i>popPK · PD · PGx records</i><b>8,009 · 7,082 · 829</b><em>population pharmacokinetics · pharmacodynamics · pharmacogenomics records after validation and review, rejected ones not counted; PD per response, PGx per paper and gene</em></div>
+<div class="tile"><i>Papers behind the records</i><b>9,016</b><em>distinct papers (by DOI) with at least one such record</em></div><div class="tile"><i>Parameter values</i><b>46,035</b><em>values with units of the counted records (rejected ones not counted)</em></div></div>
 
-| Counted records (live, 22 Nov 2026) | Drugs | Toxins | Total |
+| Counted records (live, 25 Nov 2026) | Drugs | Toxins | Total |
 |---|---:|---:|---:|
-| Drugs with a counted record | 1,799 | 830 | 2,629 |
-| popPK records | 3,515 | 4,401 | 7,916 |
-| PD records | 6,273 | 1,748 | 8,021 |
-| PGx records | 568 | 260 | 828 |
-| Papers behind them (distinct DOI) | 5,909 | 3,972 | 9,415 |
-| Parameter values of these records | 26,744 | 19,843 | 46,587 |
-| popPK records rejected | 3,136 | 3,383 | 6,519 |
-| PD records rejected | 1,294 | 338 | 1,632 |
+| Drugs with a counted record | 1,811 | 830 | 2,641 |
+| popPK records | 3,608 | 4,401 | 8,009 |
+| PD records | 5,334 | 1,748 | 7,082 |
+| PGx records | 569 | 260 | 829 |
+| Papers behind them (distinct DOI) | 5,521 | 3,972 | 9,016 |
+| Parameter values of these records | 26,192 | 19,843 | 46,035 |
+| popPK records rejected | 3,219 | 3,383 | 6,602 |
+| PD records rejected | 1,030 | 338 | 1,368 |
 | PGx records rejected | 15 | 9 | 24 |
-| Generated models (Modelica) | 3,184 | 4,632 | 7,816 |
-| Drugs with a generated model | 867 | 721 | 1,588 |
+| Generated models (Modelica) | 3,234 | 4,632 | 7,866 |
+| Drugs with a generated model | 875 | 721 | 1,596 |
 
 <p class="pnote">What each row counts, and how it relates to the Zenodo research dataset: <a href="#/pipeline">About</a>.</p>
 </div>
 
-<p class="pk-home-foot">Cite: Kulhanek T. et al., <a href="https://doi.org/10.3384/ecp21861" target="_blank" rel="noopener">Pharmacolibrary-Free Library to Model Pharmacology</a>, Modelica Conferences 2025 · Licences: <a href="#/data">per database, on Downloads</a> · Source: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io" target="_blank" rel="noopener">GitHub</a> · Questions and problems: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues" target="_blank" rel="noopener">GitHub issues</a> · Built 22/11/2026 19:18:50 UTC</p>
+<p class="pk-home-foot">Cite: Kulhanek T. et al., <a href="https://doi.org/10.3384/ecp21861" target="_blank" rel="noopener">Pharmacolibrary-Free Library to Model Pharmacology</a>, Modelica Conferences 2025 · Licences: <a href="#/data">per database, on Downloads</a> · Source: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io" target="_blank" rel="noopener">GitHub</a> · Questions and problems: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues" target="_blank" rel="noopener">GitHub issues</a> · Built 25/11/2026 08:49:05 UTC</p>
 <!-- AUTOGEN:intro END -->

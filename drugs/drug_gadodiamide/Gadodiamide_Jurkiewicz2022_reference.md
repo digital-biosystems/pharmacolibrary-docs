@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Gadodiamide record rejected due to an unreachable peripheral compartment and a disputed parameter value.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="gadodiamide" model-id="Gadodiamide_Jurkiewicz2022_reference" status="rejected" stale="false" population="" measured-compound="gadodiamide" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,13 +46,13 @@ Jurkiewicz E, Tsvetkova S, Grinberg A, Pasquiers B. Pharmacokinetics, Safety, an
 
 ### Reviewer guidance
 
-**Gadodiamide record rejected due to an unreachable peripheral compartment and a disputed parameter value.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record failed a structural check because the peripheral compartment had no path from the dose. The volume of distribution for the central compartment was extracted as 0.12 L/kg, but the second reader identified a different value of 0.08 for that parameter. Extracted — gadodiamide: CL 0.12 L/h/kg, V1 0.12 L/kg, V2 0.06 L/kg.
+Extracted — gadodiamide: CL 0.12 L/h/kg, V1 0.12 L/kg, V2 0.06 L/kg.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q354: this record has none, the second reading 0.08. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,4 +135,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgadodiamide%5D%20Gadodiamide_Jurkiewicz2022_reference&body=Drug%3A%20gadodiamide%0ARecord%3A%20Gadodiamide_Jurkiewicz2022_reference%0APaper%3A%20Jurkiewicz_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gadodiamide/Gadodiamide_Jurkiewicz2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:46 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:03 UTC</sub>

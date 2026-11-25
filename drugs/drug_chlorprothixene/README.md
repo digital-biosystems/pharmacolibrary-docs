@@ -22,10 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Kim_2016_proton_current](drugs/drug_chlorprothixene/pd_Kim_2016_proton_current.md) | proton currents (voltage-gated proton channel current) in BV2 microglial cells ← chlorprothixene · direct sigmoid Emax (Hill) effect | — | Kim J et al., Thioxanthenes, chlorprothixene and flup…, European journal of pharmac… (2016) | [10.1016/j.ejphar.2016.03.009](https://doi.org/10.1016/j.ejphar.2016.03.009) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Bagli_1999_PRL](drugs/drug_chlorprothixene/pd_Bagli_1999_PRL.md) | prolactin biomarker turnover ← chlorprothixene | — | Bagli M et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharmacology… (1999) | — |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Petersson_2013_prolactin](drugs/drug_chlorprothixene/pd_Petersson_2013_prolactin.md) | prolactin ← chlorprothixene · inhibition effect | — | Petersson KJ et al., Predictions of in vivo prolactin levels…, The AAPS journal (2013) | [10.1208/s12248-012-9450-6](https://doi.org/10.1208/s12248-012-9450-6) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">in vitro</span> | [Vasudevan_2012_histamine_induced_calcium_release](drugs/drug_chlorprothixene/pd_Vasudevan_2012_histamine_induced_calcium_release.md) | histamine-induced calcium release ← chlorprothixene · inhibition effect | — | Vasudevan SR et al., Shape-based reprofiling of FDA-approved…, Journal of medicinal chemis… (2012) | [10.1021/jm300671m](https://doi.org/10.1021/jm300671m) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Kim_2016_I_H](drugs/drug_chlorprothixene/pd_Kim_2016_I_H.md) | proton currents ← chlorprothixene · inhibition effect | — | Kim J et al., Thioxanthenes, chlorprothixene and flup…, European journal of pharmac… (2016) | [10.1016/j.ejphar.2016.03.009](https://doi.org/10.1016/j.ejphar.2016.03.009) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:36 | 5:04 | 0/0/0 | 1/3/0 | 0/0/0 | 208,065/2,179 | ollama / glm-5.3-flash | 9 | 4/3 | 9/0 | 0 |
+| 2026-11-23 19:46 | 0:04 | 0/0/0 | 1/0/0 | 0/0/0 | 3,831/182 | einfracz / qwen3.8-27b | 9 | 4/3 | 9/0 | 0 |
 
 ## Coverage
 
@@ -50,31 +47,48 @@ _not available_
 
 ## Full-text requests
 
-_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Bagli_1999.pdf` | Bagli M et al., Pharmacokinetic-pharmacodynamic modelin…, The Journal of pharmacology… (1999) | popPK | 8 |  | [10525070](https://pubmed.ncbi.nlm.nih.gov/10525070) | Human PK-PD study with a three-compartment PK model of chlorprothixene, but numeric parameter values are not present in the provided evidence. |
-| `Petersson_2013.pdf` | Petersson KJ et al., Predictions of in vivo prolactin levels…, The AAPS journal (2013) | popPK | 5 | [10.1208/s12248-012-9450-6](https://doi.org/10.1208/s12248-012-9450-6) | [23392818](https://pubmed.ncbi.nlm.nih.gov/23392818) | Chlorprothixene appears to be one of the D2 antagonists with a population PK model, but no numeric PK parameter values are present in the evidence (likely in supplementary material/tables not provided). |
 | `Kim_2016.pdf` | Kim J et al., Thioxanthenes, chlorprothixene and flup…, European journal of pharmac… (2016) | pd | 4 | [10.1016/j.ejphar.2016.03.009](https://doi.org/10.1016/j.ejphar.2016.03.009) | [26945819](https://www.ncbi.nlm.nih.gov/pubmed/26945819) | metadata signals extractable PD data (IC50) |
 | `Zilberstein_1990.pdf` | Zilberstein D et al., Tricyclic drugs reduce proton motive fo…, Biochemical pharmacology (1990) | pd | 4 | [10.1016/0006-2952(90)90210-c](https://doi.org/10.1016/0006-2952(90)90210-c) | [1968745](https://www.ncbi.nlm.nih.gov/pubmed/1968745) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06 15:36 UTC</sub>
+<sub>queue written 2026-11-23 19:46 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bagli_1999 | relevant | 8 | 3 | Human PK-PD study with a three-compartment PK model of chlorprothixene, but numeric parameter values are not present in the provided evidence. |
-| popPK | Bakshi_2016 | irrelevant | 0 | 0 | This is a dynamical systems tutorial on prolactin pool models; chlorprothixene is only mentioned as a prolactin-stimulating antipsychotic, with no PK parameters for it. |
+| popPK | Bagli_1999 | irrelevant | 7 | 0 | The paper describes a PK-PD study with a 3-compartment model but no numeric parameter values (CL, V, etc.) are present in the provided evidence, which is just the abstract. |
+| PGx | Bagli_1999 | not_relevant | 0 | 0 | The study describes PK/PD modeling in healthy men but does not involve any genetic variants, genotypes, or pharmacogenomic factors. |
+| popPK | Bakshi_2016 | irrelevant | 0 | 0 | The paper is a mathematical tutorial on dynamical systems using a prolactin model, where chlorprothixene is only mentioned as a comparative antipsychotic agent, and no pharmacokinetic parameters for chlorprothixene are reported. |
+| PGx | Bakshi_2016 | not_relevant | 0 | 0 | The paper is a mathematical tutorial on dynamical systems analysis using prolactin modeling and does not report pharmacogenomic effects on chlorprothixene PK/PD. |
+| popPK | Chen_2012 | irrelevant | 0 | 0 | This is a pharmacodynamic study evaluating spinal anesthesia efficacy and duration of action, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Chen_2012 | not_relevant | 0 | 0 | The study investigates the pharmacological potency of antipsychotics in rats but does not examine gene variants or genetic phenotypes. |
 | popPK | Djeddi_2023 | irrelevant | 0 | 0 | This is a machine-learning drug-target interaction prediction paper with no pharmacokinetic parameters for chlorprothixene; "Vd" here refers to vector embeddings, not volume of distribution. |
+| popPK | Eilam_1983 | irrelevant | 0 | 0 | The study investigates in vitro membrane effects in yeast, not pharmacokinetic disposition parameters for chlorprothixene. |
+| PGx | Eilam_1983 | not_relevant | 0 | 0 | The study investigates membrane effects of phenothiazines in yeast cells, not human pharmacogenomics. |
 | popPK | Eugene_2021 | irrelevant | 0 | 0 | This is a pharmacovigilance disproportionality (FAERS ROR) study of sedation/somnolence; chlorprothixene is only listed among 37 antipsychotics with no PK parameters reported. |
 | popPK | Gaudêncio_2023 | irrelevant | 0 | 0 | This is a natural products discovery review; chlorprothixene is only mentioned as an antiviral screening hit, with no PK parameters. |
-| popPK | Jing_2025 | irrelevant | 0 | 0 | This is a FAERS pharmacovigilance disproportionality study of azole-related myopathy with no chlorprothixene PK parameters; chlorprothixene is not mentioned at all. |
-| popPK | Ma_2010 | irrelevant | 0 | 0 | Study models remoxipride's effect on prolactin, not chlorprothixene pharmacokinetics; no chlorprothixene parameters present. |
+| popPK | Jing_2025 | irrelevant | 0 | 0 | The paper is a pharmacovigilance analysis of myopathy associated with azoles and nonstatins using the FAERS database and does not contain pharmacokinetic data for chlorprothixene. |
+| PGx | Jing_2025 | not_relevant | 0 | 0 | The paper focuses on pharmacovigilance signals for azole-associated myopathy and drug-drug interactions, with no mention of chlorprothixene or pharmacogenomic effects on PK/PD. |
+| popPK | Kim_2016 | irrelevant | 0 | 0 | The study investigates the mechanism of action (inhibition of proton currents) in BV2 microglial cells and reports IC50 values, but does not contain any pharmacokinetic parameters (CL, V, etc.) for chlorprothixene. |
+| PGx | Kim_2016 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of chlorprothixene on proton currents in cells but does not report any genetic variants or pharmacogenomic effects. |
+| popPK | Kristiansen_1989 | irrelevant | 0 | 0 | The paper is an in-vitro microbiology study testing the antimicrobial activity of chlorprothixene against Campylobacter pylori, not a pharmacokinetic study. |
+| PGx | Kristiansen_1989 | not_relevant | 0 | 0 | The paper reports in vitro antimicrobial activity against C. pylori, not pharmacogenomic effects on PK/PD parameters. |
+| popPK | Ma_2010 | irrelevant | 0 | 0 | The study models prolactin dynamics in response to remoxipride, not chlorprothixene pharmacokinetics. |
+| PGx | Ma_2010 | not_relevant | 0 | 0 | The study models prolactin response to remoxipride in healthy subjects and does not involve chlorprothixene or any genetic variants. |
 | popPK | Neuner_2022 | irrelevant | 0 | 0 | This is a 7T MRI neuroimaging study of depression; chlorprothixene is only mentioned as a co-administered medication, with no PK parameters. |
-| popPK | Petersson_2013 | relevant | 5 | 2 | Chlorprothixene appears to be one of the D2 antagonists with a population PK model, but no numeric PK parameter values are present in the evidence (likely in supplementary material/tables not provided). |
+| popPK | Petersson_2013 | irrelevant | 0 | 0 | The paper models prolactin response to D2 antagonists in general, not the specific pharmacokinetic parameters of chlorprothixene, and contains no data for this specific drug. |
+| PGx | Petersson_2013 | not_relevant | 0 | 0 | The paper focuses on predicting prolactin levels from D2 receptor affinity for various compounds, but does not mention chlorprothixene or any gene variants affecting its pharmacokinetics or pharmacodynamics. |
+| popPK | Raju_2022 | irrelevant | 0 | 0 | The study focuses on chlorprothixene as a CYP1B1 inhibitor in an in-vitro assay, not as a subject drug for pharmacokinetic parameter estimation. |
+| PGx | Raju_2022 | not_relevant | 0 | 0 | The paper identifies chlorprothixene as a CYP1B1 inhibitor through drug repurposing but does not report pharmacogenomic data linking genetic variants to PK or PD parameters of chlorprothixene itself. |
 | popPK | Tokmakjian_2026 | irrelevant | 0 | 0 | This is a C. elegans CAD defense/metabolism study; chlorprothixene is not the subject and no PK parameters (CL, V, half-life) are reported. |
+| popPK | Vasudevan_2012 | irrelevant | 0 | 0 | The paper is a mechanistic study on histamine H1 receptor binding and cell-based assays, reporting an IC50 value but not any pharmacokinetic parameters (CL, V, t1/2) for chlorprothixene. |
+| PGx | Vasudevan_2012 | not_relevant | 0 | 0 | The paper reports the in vitro efficacy of chlorprothixene as an H1 antagonist but does not investigate any gene variants or pharmacogenomic effects on its PK/PD parameters. |
+| popPK | Zilberstein_1990 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of chlorprothixene's effect on Leishmania parasites, reporting no pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
+| PGx | Zilberstein_1990 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of tricyclics on Leishmania parasites in vitro, not the pharmacogenomic effects of genetic variants on chlorprothixene PK or PD in humans. |
 
 
 </details>

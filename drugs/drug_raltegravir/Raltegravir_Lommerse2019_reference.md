@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was withheld because raltegravir's total volume of distribution and absorption lag time lacked estimated values, requiring the use of generic library placeholders.
+> No value for raltegravir's volume of distribution and absorption lag time; t3_param_coverage (+2 more).
 
 <div class="pk-model-meta" hidden drug="raltegravir" model-id="Raltegravir_Lommerse2019_reference" status="model_quarantined" stale="false" population="mothers and neonates with in utero raltegravir exposure" measured-compound="raltegravir" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Lommerse J, Clarke D, Kerbusch T, Merdjan H, Witjes H, Teppler H et al. Maternal
 
 ### Reviewer guidance
 
-**The model was withheld because raltegravir's total volume of distribution and absorption lag time lacked estimated values, requiring the use of generic library placeholders.**
+**No value for raltegravir's volume of distribution and absorption lag time; t3_param_coverage (+2 more).**
 
-While specific peripheral volumes of distribution (7.04 L and 10.3 L) were provided, the record did not contain explicit estimates for total volume of distribution or absorption lag time. Instead of fitted numbers, these parameters were filled with standard library defaults, preventing publication. A second reviewer also disputed several extracted values, such as clearance and bioavailability, highlighting inconsistencies in the parameter extraction. Extracted — raltegravir: V2 7.04 L, V3 10.3 L, CL 9.44 L/h, Q 0.786 L/h, kabs 0.43 1/h, Fab 0.517.
+The model was built, but raltegravir's volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — raltegravir: V2 7.04 L, V3 10.3 L, CL 9.44 L/h, Q 0.786 L/h, kabs 0.43 1/h, Fab 0.517.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has raltegravir, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -171,7 +171,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['V2'] |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

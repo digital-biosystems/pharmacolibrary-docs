@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;Sulfadoxine&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/&quot;},{&quot;label&quot;:&quot;Trenque_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfadoxine_Corvaisier2004_reference&quot;,&quot;label&quot;:&quot;Corvaisier_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_Corvaisier2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadoxine_Trenque2004_reference&quot;,&quot;label&quot;:&quot;Trenque_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sulfadoxine_de2017_reference&quot;,&quot;label&quot;:&quot;de_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_de2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadoxine_de2018_reference&quot;,&quot;label&quot;:&quot;de_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfadoxine_Trenque2004_reference&quot;,&quot;label&quot;:&quot;Trenque_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sulfadoxine_Corvaisier2004_reference&quot;,&quot;label&quot;:&quot;Corvaisier_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_Corvaisier2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadoxine_de2017_reference&quot;,&quot;label&quot;:&quot;de_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_de2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadoxine_de2018_reference&quot;,&quot;label&quot;:&quot;de_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # Sulfadoxine — `Sulfadoxine_Trenque2004_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Sulfadoxine clearance (5.5 l day(-1)) and volume (36 l) remain unconfirmed because the abstract-only record is disputed by the second reader.
-
-<div class="pk-model-meta" hidden drug="Sulfadoxine" model-id="Sulfadoxine_Trenque2004_reference" status="needs_review" stale="false" population="children with congenital toxoplasmosis" measured-compound="sulfadoxine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Sulfadoxine" model-id="Sulfadoxine_Trenque2004_reference" status="simulated" stale="false" population="children with congenital toxoplasmosis" measured-compound="pyrimethamine and sulfadoxine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Trenque T, Simon N, Villena I, Chemla C, Quereux C, Leroux B et al. Population pharmacokinetics of pyrimethamine and sulfadoxine in children with congenital toxoplasmosis. British journal of clinical pharmacology 57(6):735–741 (2004).
@@ -17,7 +15,7 @@ Trenque T, Simon N, Villena I, Chemla C, Quereux C, Leroux B et al. Population p
 
 ## Population and dosing
 
-**Population:** children with congenital toxoplasmosis · condition congenital toxoplasmosis · age group mixed · n = 89.
+**Population:** children with congenital toxoplasmosis · condition congenital toxoplasmosis · age group child · n = 89.
 
 ## Model
 
@@ -29,16 +27,14 @@ Trenque T, Simon N, Villena I, Chemla C, Quereux C, Leroux B et al. Population p
 <figure class="pk-models-diagram"><img src="drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference/Sulfadoxine_Trenque2004_reference.svg" alt="Sulfadoxine_Trenque2004_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL (PYR) | CL | 5.5 | l day(-1) |
-| V (PYR) | V | 36 | l |
+| CL | CL | 5.5 | l day(-1) |
+| V | V | 36 | l |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,20 +44,20 @@ Trenque T, Simon N, Villena I, Chemla C, Quereux C, Leroux B et al. Population p
 
 ### Reviewer guidance
 
-**Sulfadoxine clearance (5.5 l day(-1)) and volume (36 l) remain unconfirmed because the abstract-only record is disputed by the second reader.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-Only the abstract was read, so its summary statistics stand in for a fitted model. The second reader marked the dose compound and primary analyte as unknown and gave no values for clearance or volume; agreement was 0.333, with 0 of 1 reader(s) agreeing. Extracted — sulfadoxine: CL 5.5 l day(-1), V 36 l.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is sulfadoxine's own; they describe pyrimethamine and sulfadoxine.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulfadoxine, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pyrimethamine and sulfadoxine, the second reading sulfadoxine; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL (PYR) | `Q22` · CL | 5.5 | l day(-1) | 6.366e-08 | m3/s | l/d | exact (1) | Trenque_2004:abstract |
-| V (PYR) | `Q61` · V | 36 | l | 0.036 | m3 | l | exact (1) | Trenque_2004:abstract |
+| CL | `Q22` · CL | 5.5 | l day(-1) | 6.366e-08 | m3/s | l/d | exact (1) | Trenque_2004:abstract, Trenque_2004:abstract |
+| V | `Q61` · V | 36 | l | 0.036 | m3 | l | exact (1) | Trenque_2004:abstract, Trenque_2004:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,12 +67,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('CL (SDX)', value 0.26) — already have one for this compound
-- dropped duplicate Q61 ('V (SDX)', value 2.1) — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sulfadoxine
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pyrimethamine and sulfadoxine
+- molar mass: no plausible PubChem entry for 'pyrimethamine and sulfadoxine' ('no full name in the paper') — left in mass units
+- molar mass: none found for 'pyrimethamine and sulfadoxine' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Trenque_2004_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -84,20 +78,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[cl]` | 5.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 5.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` | 36 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | sulfadoxine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | sulfadoxine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[v]` |  | 36 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | pyrimethamine and sulfadoxine | sulfadoxine | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | pyrimethamine and sulfadoxine | sulfadoxine | mismatch |
 
 </details>
 
@@ -114,24 +110,24 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Trenque_2004:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Trenque_2004:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.5 | ['Trenque_2004:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Trenque_2004:abstract', 'Trenque_2004:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Trenque_2004:abstract', 'Trenque_2004:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.5 | ['Trenque_2004:abstract', 'Trenque_2004:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.229 L/h | ['Trenque_2004:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 36 L | ['Trenque_2004:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.229 L/h | ['Trenque_2004:abstract', 'Trenque_2004:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 36 L | ['Trenque_2004:abstract', 'Trenque_2004:abstract'] |
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=sulfadoxine) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=pyrimethamine and sulfadoxine) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -164,7 +160,6 @@ The parameters this record sets on the template, in the template's SI units, and
 
 | direction | role | name | value | unit (SI) |
 |---|---|---|---|---|
-| input | compound | `MM` | 0.3103 | kg/mol |
 | input | dosing | `F` | 1 | 1 |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
@@ -209,4 +204,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfadoxine%5D%20Sulfadoxine_Trenque2004_reference&body=Drug%3A%20sulfadoxine%0ARecord%3A%20Sulfadoxine_Trenque2004_reference%0APaper%3A%20Trenque_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 08:48 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:22 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record refused because the source paper studied dolutegravir, not abacavir.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Zhang2015_reference" status="rejected" stale="false" population="" measured-compound="abacavir" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Zhang J, Hayes S, Sadler BM, Minto I, Brandt J, Piscitelli S et al. Population p
 
 ### Reviewer guidance
 
-**Record refused because the source paper studied dolutegravir, not abacavir.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The record claims abacavir pharmacokinetic parameters, but the source study focused on dolutegravir with abacavir as background therapy. The second reader disagreed on four specific values, reporting them as null. The model builder assumed a bioavailability of 1 for the apparent parameters. Extracted — abacavir: CL/F 0.901 l h–1, V/F 17.4 l, tlag 0.263 h, kabs 2.24 h-1.
+Extracted — abacavir: CL/F 0.901 l h–1, V/F 17.4 l, tlag 0.263 h, kabs 2.24 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 53.6, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.636, 0 of 1 reader(s) agree | 0.636 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.636 (7 of 11 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.636 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

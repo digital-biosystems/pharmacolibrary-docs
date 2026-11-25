@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Oprelvekin bioavailability and lag time parameters were left at defaults, lacking explicit estimates from the study.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="oprelvekin" model-id="Oprelvekin_Kheifetz2014_3_comp_pe_model" status="needs_review" stale="false" population="healthy males" measured-compound="oprelvekin" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Kheifetz Y, Elishmereni M, Agur Z. Complex pattern of interleukin-11-induced inf
 
 ### Reviewer guidance
 
-**Oprelvekin bioavailability and lag time parameters were left at defaults, lacking explicit estimates from the study.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record relies on library placeholders for bioavailability and lag time, meaning these values are not supported by the paper. A second reader could not verify the recorded absorption rate constant of 0.152 1/h or the equation variable of 0.025 from the source. Extracted — oprelvekin: CL 14.6 l·h⁻¹, V1 4.91 l, Q 0.465 l·h⁻¹, V2 11.5 l, V3 4e+80 l, kabs 0.152 1/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — oprelvekin: CL 14.6 l·h⁻¹, V1 4.91 l, Q 0.465 l·h⁻¹, V2 11.5 l, V3 4e+80 l, kabs 0.152 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of b: this record has 0.025, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,8 +152,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | a second reader did not contradict the extraction |
-| T1_t_half_terminal | reference | skipped |  | 10.97 |  | non-numeric value |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.818 (9 of 11 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | skipped |  | 10.97 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

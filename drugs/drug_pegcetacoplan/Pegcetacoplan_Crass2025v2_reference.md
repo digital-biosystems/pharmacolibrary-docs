@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The volume of distribution of 4.0 mL for pegcetacoplan is physiologically implausible, triggering a magnitude error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="pegcetacoplan" model-id="Pegcetacoplan_Crass2025v2_reference" status="rejected" stale="false" population="" measured-compound="pegcetacoplan" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Crass RL, Prem K, Gaudreault F, Lusk E, Ribeiro R, Chapel S et al. Pharmacokinet
 
 ### Reviewer guidance
 
-**The volume of distribution of 4.0 mL for pegcetacoplan is physiologically implausible, triggering a magnitude error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a volume of distribution of 4.0 mL, which is orders of magnitude too small for any human distribution. This extreme value conflicts with the clearance of 0.36 L/day, causing the model to fall outside the acceptable physiological window. Extracted — pegcetacoplan: CL 0.36 L/day, V 4 mL.
+Extracted — pegcetacoplan: CL 0.36 L/day, V 4 mL.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

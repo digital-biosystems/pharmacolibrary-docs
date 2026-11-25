@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption rate constant defaults were used for capecitabine because the source paper did not report the value.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Schmulenson2022_reference" status="needs_review" stale="false" population="locally advanced rectal cancer" measured-compound="capecitabine" parameterization="apparent" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Schmulenson E, Bovet C, Theurillat R, Decosterd LA, Largiadèr CR, Prost JC et a
 
 ### Reviewer guidance
 
-**Absorption rate constant defaults were used for capecitabine because the source paper did not report the value.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The model structure includes a first-order absorption phase, but the absorption rate constant was not explicitly estimated in the paper. Consequently, standard library defaults were applied to fill this gap, creating a deviation from the source data. A second reader disputed the identification of the dose compound, further complicating the verification of the model's inputs. Extracted — capecitabine: CL/F 1.94 L/h, V1/F 10.4 L, MAT 3.01 h, V2/F 63.9 L, Q/F 13.5 L/h, CLm/F 0.936 L/h, kmet 0.265 1/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — capecitabine: CL/F 1.94 L/h, V1/F 10.4 L, MAT 3.01 h, V2/F 63.9 L, Q/F 13.5 L/h, CLm/F 0.936 L/h, kmet 0.265 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has regorafenib, capecitabine, the second reading capecitabine. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -176,7 +176,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.944, 0 of 1 reader(s) agree | 0.944 | cross-check disputed by a second reader: verdict disputed, agreement 0.944, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.944 (17 of 18 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.944 | cross-check contradicted by a second reader: verdict disputed; agreement 0.944 (17 of 18 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

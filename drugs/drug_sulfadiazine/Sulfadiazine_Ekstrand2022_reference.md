@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The record was rejected because trimethoprim was recorded as a co-administered compound linked to sulfadiazine, creating an unreachable compartment in the model structure.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="sulfadiazine" model-id="Sulfadiazine_Ekstrand2022_reference" status="rejected" stale="false" population="neonatal foals" measured-compound="sulfadiazine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -57,13 +57,13 @@ Ekstrand C, Nostell K, Gehring R, Bondesson U, Bröjer J. The disposition of tri
 
 ### Reviewer guidance
 
-**The record was rejected because trimethoprim was recorded as a co-administered compound linked to sulfadiazine, creating an unreachable compartment in the model structure.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure includes a link from trimethoprim to sulfadiazine described as co-administration, which creates a compartment that has no path from the sulfadiazine dose. The record contains PK parameters only for sulfadiazine, while the second reader disagreed on the presence of the trimethoprim link and the identification of the primary analyte. Extracted — sulfadiazine: V1 0.47 L/kg, CL 0.09 L/kg/h, Q 0.41 L/kg/h, λ1 3.84, kel 0.13 1/h, t1/2α 0.18 h, t1/2β 5.3 h, Vss 0.61 L/kg, … (+1).
+A reported unit could not be converted (AUCt), so that value has no SI equivalent. Extracted — sulfadiazine: V1 0.47 L/kg, CL 0.09 L/kg/h, Q 0.41 L/kg/h, λ1 3.84, kel 0.13 1/h, t1/2α 0.18 h, t1/2β 5.3 h, Vss 0.61 L/kg, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trimethoprim and sulfadiazine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

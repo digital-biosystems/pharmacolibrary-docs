@@ -66,13 +66,13 @@ Cuffari C, Pierce D, Korczowski B, Fyderek K, Van Heusen H, Hossack S et al. Ran
 
 ### Reviewer guidance
 
-**The record was refused because the model was not simulated, leaving mesalazine clearance and other parameters untested.**
+**The model was built but has not been simulated yet; the covariate scenarios were not simulated (+2 more).**
 
-The record indicates the model has not been simulated, so the defined covariate effects were never exercised. Additionally, a second reader disagreed with the record's null values for parameters like CLR/F, noting they should be 1.01 L/h. Extracted — mesalazine: CLR 1.01 L/h, CLm/F 75.9 L/h, V1/F 70.1 L, kabs 0.0207 h−1, tlag 4.31 h, Fab 0.413; Ac-5-ASA: CL/F 2.27 L/h, V1/F 5.31 L.
+The base model was simulated, not the covariate effects the record defines. Extracted — mesalazine: CLR 1.01 L/h, CLm/F 75.9 L/h, V1/F 70.1 L, kabs 0.0207 h−1, tlag 4.31 h, Fab 0.413; Ac-5-ASA: CL/F 2.27 L/h, V1/F 5.31 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mesalazine, the second reading mesalamine; it also differs on 24 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -250,7 +250,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_shared_parameters |  | pass | 5 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.167 (5 of 30 compared fields agree, 22 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (5 of 30 compared fields agree, 22 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_tmax | reference | skipped | 6 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 9 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 2 |  |  | no simulated metric for this quantity (single reference sim) |

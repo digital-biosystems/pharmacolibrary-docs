@@ -1,14 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;aripiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_aripiprazole/&quot;},{&quot;label&quot;:&quot;Xin_2025 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aripiprazole_Kim2008_final&quot;,&quot;label&quot;:&quot;Kim_2008_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aripiprazole/Aripiprazole_Kim2008_final.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aripiprazole_Simon2015_reference&quot;,&quot;label&quot;:&quot;Simon_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aripiprazole/Aripiprazole_Simon2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aripiprazole_Hermans2023_base&quot;,&quot;label&quot;:&quot;Hermans_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aripiprazole/Aripiprazole_Hermans2023_base.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aripiprazole_Hermans2023_final&quot;,&quot;label&quot;:&quot;Hermans_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aripiprazole/Aripiprazole_Hermans2023_final.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # aripiprazole — `Aripiprazole_Xin2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
 
-> The paper reports none of the model's key parameters.
-
-<div class="pk-model-meta" hidden drug="aripiprazole" model-id="Aripiprazole_Xin2025_reference" status="rejected" stale="false" population="pediatric patients with tic disorders" measured-compound="aripiprazole" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="aripiprazole" model-id="Aripiprazole_Xin2025_reference" status="not_simulated" stale="false" population="pediatric tic disorders" measured-compound="aripiprazole" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Xin Y, Gao L, Li S, Wang J, Chen C, Tuo Y et al. Effect of CYP2D6 and ABCB1 polymorphisms on pharmacokinetics and efficacy of aripiprazole in pediatric tic disorders. BMC pediatrics 25(1):495 (2025).
@@ -16,23 +15,33 @@ Xin Y, Gao L, Li S, Wang J, Chen C, Tuo Y et al. Effect of CYP2D6 and ABCB1 poly
 
 ## Population and dosing
 
-**Population:** pediatric patients with tic disorders · condition tic disorders · age group child · n = 84.
+**Population:** pediatric tic disorders · condition tic disorders · age group child.
+
+**Dosing:** 1.25, 2.5, 5, 20 mg/d, oral, multiple, every 24 h.
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 0 extracted.  
-**Availability:** No model was generated from this record.
+**Parameters:** 6 extracted.  
+**Availability:** Model available in **Models**; browser simulation unavailable.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label | parameter | value | unit |
+|---|---|---|---|
+| MRAUC0-t | AUCt | 0.34 | ng*h/mL |
+| MRCmin | Cmin | 0.41 | ng/mL |
+| VARI (L) | V | 110.10 | L |
+| VDARI (L) | V | 220.99 | L |
+| CLARI (L·h-1) | CL | 1.77 | L·h-1 |
+| CLDARI (L·h-1) | CL | 5.62 | L·h-1 |
+| DBIL (mol/L) | equation variable | 3.60 | mol/L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -42,45 +51,79 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**The model was built but has not been simulated yet; t3_topology_template.**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+A reported unit could not be converted (AUCt, Cmin and equation variable), so that value has no SI equivalent. Extracted — dehydroaripiprazole: AUCt 0.34 ng*h/mL, Cmin 0.41 ng/mL, V 221 L, CL 5.62 L·h-1; aripiprazole: V 110 L, CL 1.77 L·h-1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aripiprazole, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dbil: this record has 3.60, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| MRAUC0-t | `Q19` · AUCt | 0.34 | ng*h/mL |  |  | ng*h/mL | llm (0.6) | Xin_2025_table_2:row6:col2 |
+| MRCmin | `Q36` · Cmin | 0.41 | ng/mL |  |  | ng/mL | llm (0.6) | Xin_2025_table_2:row7:col2 |
+| VARI (L) | `Q61` · V | 110.10 | L | 0.1101 | m3 | l | llm (0.6) | Xin_2025_table_2:row9:col2 |
+| VDARI (L) | `Q61` · V | 220.99 | L | 0.221 | m3 | l | exact (1) | Xin_2025_table_2:row10:col2 |
+| CLARI (L·h-1) | `Q22` · CL | 1.77 | L·h-1 | 4.917e-07 | m3/s | l/h | exact (1) | Xin_2025_table_2:row11:col2 |
+| CLDARI (L·h-1) | `Q22` · CL | 5.62 | L·h-1 | 1.561e-06 | m3/s | l/h | exact (1) | Xin_2025_table_2:row12:col2 |
+| DBIL (mol/L) | `Q900` · equation variable | 3.60 | mol/L |  |  | (m·ol)/l | llm (0.6) | Xin_2025_table_2:row17:col2 |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Table' — extend the ontology if this is a real PK parameter (source ['Tab4:row0:col1'])
-- dropped value-less row: 'Patients sex'
+- dropped unlinked row (NIL): 'Age at baseline' — extend the ontology if this is a real PK parameter (source ['Xin_2025_table_2:row2:col2'])
+- dropped unlinked row (NIL): 'Weight (kg)' — extend the ontology if this is a real PK parameter (source ['Xin_2025_table_2:row3:col2'])
+- dropped unlinked row (NIL): 'Hight (cm)' — extend the ontology if this is a real PK parameter (source ['Xin_2025_table_2:row4:col2'])
+- dropped unlinked row (NIL): 'MRCmax' — extend the ontology if this is a real PK parameter (source ['Xin_2025_table_2:row8:col2'])
+- dropped unlinked row (NIL): 'ALT (U/L)' — extend the ontology if this is a real PK parameter (source ['Xin_2025_table_2:row14:col2'])
+- dropped unlinked row (NIL): 'AST (U/L)' — extend the ontology if this is a real PK parameter (source ['Xin_2025_table_2:row15:col2'])
+- dropped unlinked row (NIL): 'TBIL (μmol/L)' — extend the ontology if this is a real PK parameter (source ['Xin_2025_table_2:row18:col2'])
+- dropped unlinked row (NIL): 'CRE (μmol/L)' — extend the ontology if this is a real PK parameter (source ['Xin_2025_table_2:row19:col2'])
+- dropped unlinked row (NIL): 'BUN (mmol/L)' — extend the ontology if this is a real PK parameter (source ['Xin_2025_table_2:row20:col2'])
+- dropped unlinked row (NIL): 'eGFR (mL/min-1.73m2)' — extend the ontology if this is a real PK parameter (source ['Xin_2025_table_2:row21:col2'])
+- implicit units: 'MRAUC0-t' → ng*h/mL (from the popPK convention: "MRAUC0-t is the mean of the AUC0-t (Area Under the Curve) values for aripiprazole. The paper describes these as 'MRs' (m")
+- implicit units: 'MRCmin' → ng/mL (from the popPK convention: 'MRCmin is the mean of Cmin (minimum drug concentration). The standard unit for plasma concentration of aripiprazole in p')
+- metabolite volume: 'VDARI (L)' Q63→Q61 for dehydroaripiprazole — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=aripiprazole
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — only the metabolite is modelled — no parent compartment
-- status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 2/2 row label(s) assigned, 0 linked by role
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [1]
+- row roles (LLM): model_class=compartmental; 17/17 row label(s) assigned, 4 linked by role; re-tagged parent→dehydroaripiprazole ×5
 
 **Extraction notes:**
-- companion parameter table 2 transcribed (1 record(s))
-- LLM selected parameter table(s) 2, 4
+- table Tab4: no_numeric_grid
+- final table Tab4: no supported point estimates; targeted recovery unresolved
+- table Xin_2025_table_2: missing_label
+- table Xin_2025_table_2: unbound_uncertainty
+- table Xin_2025_table_2: unparsed_numeric_cell
+- companion parameter table 2 transcribed (18 record(s))
+- LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.571 (8/14 fields) | 6 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | aripiprazole | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | aripiprazole | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[dbil]` | 3.60 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrauc0-t]` |  | 0.34 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrauc0-t]` | 0.34 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrcmax]` |  | 0.28 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrcmin]` |  | 0.41 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrcmin]` | 0.41 |  | only_one_extracted |
 
 </details>
 
@@ -92,11 +135,38 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | obtained |
-|---|---|---|
-| C0_has_structural_params | fail | 0 |
-| C0b_disposition_core | fail |  |
-| C8_topology | pass |  |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 6 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Xin_2025_table_2:row6:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Xin_2025_table_2:row11:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Xin_2025_table_2:row12:col2'] |
+| C5_dimension_Q36 | pass | [mass] / [length] ** 3 |  | ['Xin_2025_table_2:row7:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Xin_2025_table_2:row9:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Xin_2025_table_2:row10:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.77 | ['Xin_2025_table_2:row11:col2'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.77 L/h | ['Xin_2025_table_2:row11:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 5.62 L/h | ['Xin_2025_table_2:row12:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 110 L | ['Xin_2025_table_2:row9:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 221 L | ['Xin_2025_table_2:row10:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  | no covariate effects in record |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
+| T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
+| T3_shared_parameters |  | pass | 4 shared param(s) bound once | bound once | shared params must bind one value to both compartments |
+| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
+| T1_t_half_beta | reference | skipped | 75 |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 94 |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -108,16 +178,43 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_aripiprazole/Aripiprazole_Xin2025_reference/Aripiprazole_Xin2025_reference_modelica.zip" download>Aripiprazole_Xin2025_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_aripiprazole/Aripiprazole_Xin2025_reference/Aripiprazole_Xin2025_reference_matlab.zip" download>Aripiprazole_Xin2025_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_aripiprazole/Aripiprazole_Xin2025_reference/Aripiprazole_Xin2025_reference_matlab_simbio.zip" download>Aripiprazole_Xin2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_aripiprazole/Aripiprazole_Xin2025_reference/Aripiprazole_Xin2025_reference_sbml.zip" download>Aripiprazole_Xin2025_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_aripiprazole/Aripiprazole_Xin2025_reference/Aripiprazole_Xin2025_reference_cellml.zip" download>Aripiprazole_Xin2025_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+</div></div>
+
+## How to cite
+
+**Source paper** (the parameters are its): Xin Y, Gao L, Li S, Wang J, Chen C, Tuo Y et al. Effect of CYP2D6 and ABCB1 polymorphisms on pharmacokinetics and efficacy of aripiprazole in pediatric tic disorders. BMC pediatrics 25(1):495 (2025). [doi:10.1186/s12887-025-05856-6](https://doi.org/10.1186/s12887-025-05856-6)
+
+**This record:** Pharmacolibrary, model `Aripiprazole_Xin2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_aripiprazole/Aripiprazole_Xin2025_reference>
+
+```bibtex
+@misc{pharmacolibrary_AripiprazoleXin2025reference,
+  title  = {{Pharmacolibrary model Aripiprazole_Xin2025_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_aripiprazole/Aripiprazole_Xin2025_reference},
+  note   = {Parameters from doi:10.1186/s12887-025-05856-6},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baripiprazole%5D%20Aripiprazole_Xin2025_reference&body=Drug%3A%20aripiprazole%0ARecord%3A%20Aripiprazole_Xin2025_reference%0APaper%3A%20Xin_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aripiprazole/Aripiprazole_Xin2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 15:02 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:34 UTC</sub>

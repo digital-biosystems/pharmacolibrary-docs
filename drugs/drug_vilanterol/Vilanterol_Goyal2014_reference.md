@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected with vilanterol’s peripheral-compartment V2/F at 1160 L, although that compartment was reported as unreachable from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Vilanterol" model-id="Vilanterol_Goyal2014_reference" status="rejected" stale="false" population="patients with COPD" measured-compound="vilanterol" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Goyal N, Beerahee M, Kalberg C, Church A, Kilbride S, Mehta R. Population pharma
 
 ### Reviewer guidance
 
-**The record was rejected with vilanterol’s peripheral-compartment V2/F at 1160 L, although that compartment was reported as unreachable from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-V2/F is the peripheral-compartment volume adjusted for bioavailability. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader did not identify the listed V2/F value, but the record provides no further finding that resolves that disagreement. Extracted — vilanterol: CL/F 218 L/h, V2/F 1.16e+03 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — vilanterol: CL/F 218 L/h, V2/F 1.16e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has umeclidinium and vilanterol, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

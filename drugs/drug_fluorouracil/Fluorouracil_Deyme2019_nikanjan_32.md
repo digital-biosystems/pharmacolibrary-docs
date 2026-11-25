@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for fluorouracil was held back because bioavailability, clearance, and absorption lag time lacked extracted values, leaving model structure and rate constants unverified.
+> No value for fluorouracil's bioavailability, clearance and absorption lag time; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Deyme2019_nikanjan_32" status="model_quarantined" stale="false" population="patients with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 ### Reviewer guidance
 
-**The record for fluorouracil was held back because bioavailability, clearance, and absorption lag time lacked extracted values, leaving model structure and rate constants unverified.**
+**No value for fluorouracil's bioavailability, clearance and absorption lag time; t6_deviations.**
 
-Three pharmacokinetic parameters were left without values, requiring placeholder defaults that prevented the model from being accepted. The model builder substituted defaults for bioavailability, clearance, and absorption lag time rather than using explicit estimates. A second reader disagreed with the recorded model structure, identifying missing metabolic links for fluorouracil and irinotecan. Additionally, the second reader failed to confirm the values for elimination, transfer, and clearance parameters, leaving these numerical entries unverified. Extracted — fluorouracil: V1 307 L, V2 399 L, Q 68 L/h, Q2 0.61 L/h, kel 1.6 h-1, k12 0.15 h-1, kabs 0.13 1/h.
+The model was built, but fluorouracil's bioavailability, clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — fluorouracil: V1 307 L, V2 399 L, Q 68 L/h, Q2 0.61 L/h, kel 1.6 h-1, k12 0.15 h-1, kabs 0.13 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading fluorouracil → 5fuh2 (metabolism); fluorouracil → 5fdhu (metabolism); irinotecan → sn38 (metabolism) …; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

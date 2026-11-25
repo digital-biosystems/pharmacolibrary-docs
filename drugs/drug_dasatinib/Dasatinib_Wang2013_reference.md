@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for dasatinib was held back because a second reader disagreed on the identity of the peripheral volume of distribution parameter.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="dasatinib" model-id="Dasatinib_Wang2013_reference" status="needs_review" stale="false" population="patients with chronic myeloid leukemia in chronic phase across seven clinical studies" measured-compound="dasatinib" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Wang X, Roy A, Hochhaus A, Kantarjian HM, Chen TT, Shah NP. Differential effects
 
 ### Reviewer guidance
 
-**The record for dasatinib was held back because a second reader disagreed on the identity of the peripheral volume of distribution parameter.**
+**cross_check_disputed; x1_cross_check.**
 
-The parameters include an apparent peripheral volume of distribution of 1030 L. A second reader disputed the record, assigning a different identifier to this parameter than the first reader did. This disagreement prevented full agreement on the parameter identification. Extracted — dasatinib: CL/F 296 L/h, V1/F 1.23e+03 L, Q/F 119 L/h, V2/F 1.03e+03 L, kabs 2.1 1/h.
+Extracted — dasatinib: CL/F 296 L/h, V1/F 1.23e+03 L, Q/F 119 L/h, V2/F 1.03e+03 L, kabs 2.1 1/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[(vp/f)tv].parameter_id`: this record has Q82, the second reading Q76. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -145,10 +145,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.933, 0 of 1 reader(s) agree | 0.933 | cross-check disputed by a second reader: verdict disputed, agreement 0.933, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.933 (14 of 15 compared fields agree); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.933 | cross-check contradicted by a second reader: verdict disputed; agreement 0.933 (14 of 15 compared fields agree); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 | T1_cmax | reference | skipped | 0.76 | 2.983e-05 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 | T1_cmin_ss | reference | skipped | 0.95 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | pass | 2.93 | 3.02 | 1.031 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 2.93 | 3.02 | 1.031 | reported 2.93 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -164,7 +164,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dasatinib/Dasatinib_Wang2013_reference/Dasatinib_Wang2013_reference_modelica.zip" download>Dasatinib_Wang2013_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dasatinib/Dasatinib_Wang2013_reference/Dasatinib_Wang2013_reference_modelica.zip" download>Dasatinib_Wang2013_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dasatinib/Dasatinib_Wang2013_reference/Dasatinib_Wang2013_reference_fmi.zip" download>Dasatinib_Wang2013_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dasatinib/Dasatinib_Wang2013_reference/Dasatinib_Wang2013_reference_matlab.zip" download>Dasatinib_Wang2013_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dasatinib/Dasatinib_Wang2013_reference/Dasatinib_Wang2013_reference_matlab_simbio.zip" download>Dasatinib_Wang2013_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The doxorubicin model was rejected because its structure matched a single-compartment elimination profile rather than the multi-compartment parent-metabolite design declared for doxorubicinol.
+> T3_output_variable; t3_topology_template.
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Yoshida1994_non_hd_group" status="rejected" stale="false" population="patients with normal renal function and on hemodialysis" measured-compound="doxorubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Yoshida H, Goto M, Honda A, Nabeshima T, Kumazawa T, Inagaki J et al. Pharmacoki
 
 ### Reviewer guidance
 
-**The doxorubicin model was rejected because its structure matched a single-compartment elimination profile rather than the multi-compartment parent-metabolite design declared for doxorubicinol.**
+**T3_output_variable; t3_topology_template.**
 
-The record declares a parent-metabolite structure, yet the model topology corresponds to a single central compartment, omitting the peripheral compartments implied by the intercompartmental clearances. Consequently, the output variable pointed to the parent central compartment instead of the measured analyte. The second reader also disagreed on the parameter identity for the doxorubicinol intercompartmental clearance. Extracted — doxorubicin: V 0.577 L, kel 1.97 1/h, Q 4.2 L/h; doxorubicinol: kfm 0.183 1/h, kel 0.325 1/h, Q 3.14 L/h.
+Extracted — doxorubicin: V 0.577 L, kel 1.97 1/h, Q 4.2 L/h; doxorubicinol: kfm 0.183 1/h, kel 0.325 1/h, Q 3.14 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[k34].parameter_id`: this record has Q30, the second reading Q99. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

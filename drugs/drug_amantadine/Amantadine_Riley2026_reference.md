@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Amantadine model's simulated peak time differs from the paper's, and bioavailability uses library defaults.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 1, model 0.791); f use library defaults, not estimates from this paper (+1 more).
 
 <div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Riley2026_reference" status="needs_review" stale="false" population="healthy adult horses" measured-compound="amantadine" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Riley HL, Mama KR, Jacobs ME, McKemie DS, Kass PH, Knych HK. Assessment of pharm
 
 ### Reviewer guidance
 
-**Amantadine model's simulated peak time differs from the paper's, and bioavailability uses library defaults.**
+**The model does not reproduce the paper's time of the peak (tmax) (paper 1, model 0.791); f use library defaults, not estimates from this paper (+1 more).**
 
-The simulated time of the peak (0.790571545715297) exceeds the paper's reported value (0.63). The bioavailability parameter is set to a library default rather than an explicit estimate from the paper. The intercompartment clearance value of 6.78 mL/min/kg was not confirmed by the second reader. Extracted — amantadine: kabs 3.16 1/h, V 3.19 L/kg, V2 2.17 L/kg, CL 22.4 mL/min/kg, Q2 6.78 mL/min/kg, Fab 23.2, t1/2z 1.64 h, Vss 5.36 L/kg.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — amantadine: kabs 3.16 1/h, V 3.19 L/kg, V2 2.17 L/kg, CL 22.4 mL/min/kg, Q2 6.78 mL/min/kg, Fab 23.2, t1/2z 1.64 h, Vss 5.36 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of tvcl2: this record has 6.78, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -169,10 +169,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.947, 0 of 1 reader(s) agree | 0.947 | a second reader did not contradict the extraction |
-| T1_cmax | reference | pass | 0.0004789 | 0.000549 | 1.147 | ng/mL→SI vs simulated kg/m3 |
-| T1_tmax | reference | pass | 1 | 0.7906 | 0.7906 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.63 | 0.7906 | 1.255 | h→SI vs simulated h |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.947 (18 of 19 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.947 | a second reader did not contradict the extraction |
+| T1_cmax | reference | pass | 0.0004789 | 0.000549 | 1.147 | reported 478.9 ng/mL→SI vs simulated kg/m3 |
+| T1_tmax | reference | pass | 1 | 0.7906 | 0.7906 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.63 | 0.7906 | 1.255 | reported 0.63 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -188,7 +188,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amantadine/Amantadine_Riley2026_reference/Amantadine_Riley2026_reference_modelica.zip" download>Amantadine_Riley2026_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amantadine/Amantadine_Riley2026_reference/Amantadine_Riley2026_reference_modelica.zip" download>Amantadine_Riley2026_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amantadine/Amantadine_Riley2026_reference/Amantadine_Riley2026_reference_fmi.zip" download>Amantadine_Riley2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amantadine/Amantadine_Riley2026_reference/Amantadine_Riley2026_reference_matlab.zip" download>Amantadine_Riley2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amantadine/Amantadine_Riley2026_reference/Amantadine_Riley2026_reference_matlab_simbio.zip" download>Amantadine_Riley2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

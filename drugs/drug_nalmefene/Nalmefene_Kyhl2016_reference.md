@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;nalmefene&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/&quot;},{&quot;label&quot;:&quot;Kyhl_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nalmefene_Rosen2000_reference&quot;,&quot;label&quot;:&quot;Rosen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Rosen2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nalmefene_Kyhl2016_reference&quot;,&quot;label&quot;:&quot;Kyhl_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nalmefene_Kyhl2016_reference&quot;,&quot;label&quot;:&quot;Kyhl_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Nalmefene_Rosen2000_reference&quot;,&quot;label&quot;:&quot;Rosen_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nalmefene/Nalmefene_Rosen2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # nalmefene — `Nalmefene_Kyhl2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Nalmefene’s clearance (60.4 l h(-1)), distribution volume (266 l), and bioavailability (41%) were held back because the abstract-only record was disputed.
-
-<div class="pk-model-meta" hidden drug="nalmefene" model-id="Nalmefene_Kyhl2016_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="nalmefene" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nalmefene" model-id="Nalmefene_Kyhl2016_reference" status="simulated" stale="false" population="healthy subjects" measured-compound="nalmefene" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kyhl LE, Li S, Faerch KU, Soegaard B, Larsen F, Areberg J. Population pharmacokinetics of nalmefene in healthy subjects and its relation to μ-opioid receptor occupancy. British journal of clinical pharmacology 81(2):290–300 (2016).
@@ -17,7 +15,7 @@ Kyhl LE, Li S, Faerch KU, Soegaard B, Larsen F, Areberg J. Population pharmacoki
 
 ## Population and dosing
 
-**Population:** healthy subjects · condition healthy · age group adult · n = 243.
+**Population:** healthy subjects · condition healthy · age group adult.
 
 ## Model
 
@@ -29,17 +27,15 @@ Kyhl LE, Li S, Faerch KU, Soegaard B, Larsen F, Areberg J. Population pharmacoki
 <figure class="pk-models-diagram"><img src="drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference/Nalmefene_Kyhl2016_reference.svg" alt="Nalmefene_Kyhl2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | systemic clearance | CL | 60.4 | l h(-1) |
 | central volume of distribution | V | 266 | l |
-| Absolute oral bioavailability without food intake | Fab | 41 | % |
+| Absolute oral bioavailability | Fab | 41 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +45,13 @@ Kyhl LE, Li S, Faerch KU, Soegaard B, Larsen F, Areberg J. Population pharmacoki
 
 ### Reviewer guidance
 
-**Nalmefene’s clearance (60.4 l h(-1)), distribution volume (266 l), and bioavailability (41%) were held back because the abstract-only record was disputed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-Only the abstract was read, so its summary statistics stand in for a fitted model. A second reader disputed the nalmefene dose and analyte assignment and did not agree with the reported clearance, distribution volume, or bioavailability values; agreement was 0.273, with 0 of 1 reader agreeing. Extracted — nalmefene: CL 60.4 l h(-1), V 266 l, Fab 41 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nalmefene, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 41, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -63,7 +59,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 |---|---|---|---|---|---|---|---|---|
 | systemic clearance | `Q22` · CL | 60.4 | l h(-1) | 1.678e-05 | m3/s | l/h | llm_confirmed (0.6) | Kyhl_2016:abstract |
 | central volume of distribution | `Q61` · V | 266 | l | 0.266 | m3 | l | boundary_compartment (0.9) | Kyhl_2016:abstract |
-| Absolute oral bioavailability without food intake | `Q40` · Fab | 41 | % |  |  |  | llm_confirmed (0.6) | Kyhl_2016:abstract |
+| Absolute oral bioavailability | `Q40` · Fab | 41 |  |  |  |  | exact (1) | Kyhl_2016:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,38 +69,30 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'with food' — extend the ontology if this is a real PK parameter (source ['Kyhl_2016:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nalmefene
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'central volume of distribution' is the general volume)
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Kyhl_2016_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.273 (3/11 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.667 (6/9 fields) | 3 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absolute oral bioavailability without food intake]` | 41 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absolute oral bioavailability]` |  | 41 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[central volume of distribution]` | 266 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[central volume of distribution]` |  | 266 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[systemic clearance]` | 60.4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[systemic clearance]` |  | 60.4 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | nalmefene | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | nalmefene | unknown | mismatch |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 41 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute oral bioavailability]` | 41 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[without food intake]` |  | 41 | only_one_extracted |
 
 </details>
 
@@ -138,7 +126,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.273, 0 of 1 reader(s) agree | 0.273 | cross-check disputed by a second reader: verdict disputed, agreement 0.273, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.667 (6 of 9 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -154,7 +142,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference/Nalmefene_Kyhl2016_reference_modelica.zip" download>Nalmefene_Kyhl2016_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference/Nalmefene_Kyhl2016_reference_modelica.zip" download>Nalmefene_Kyhl2016_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference/Nalmefene_Kyhl2016_reference_fmi.zip" download>Nalmefene_Kyhl2016_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference/Nalmefene_Kyhl2016_reference_matlab.zip" download>Nalmefene_Kyhl2016_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference/Nalmefene_Kyhl2016_reference_matlab_simbio.zip" download>Nalmefene_Kyhl2016_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -216,4 +204,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnalmefene%5D%20Nalmefene_Kyhl2016_reference&body=Drug%3A%20nalmefene%0ARecord%3A%20Nalmefene_Kyhl2016_reference%0APaper%3A%20Kyhl_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nalmefene/Nalmefene_Kyhl2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:37 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:22 UTC</sub>

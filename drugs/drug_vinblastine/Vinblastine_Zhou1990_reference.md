@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Rejected because the model links vincristine to an unreachable metabolite compartment that has no dose path in the population.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Zhou1990_reference" status="rejected" stale="false" population="rats" measured-compound="vinblastine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -56,13 +56,13 @@ Zhou XJ, Martin M, Placidi M, Cano JP, Rahmani R. In vivo and in vitro pharmacok
 
 ### Reviewer guidance
 
-**Rejected because the model links vincristine to an unreachable metabolite compartment that has no dose path in the population.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a metabolic link from vincristine to metabolites, but vincristine is not the dosed compound in this vinblastine study. This creates an orphan compartment with no input, making the model structurally invalid. The second reader confirmed that the links erroneously include vincristine alongside the correct vinblastine metabolite path. Extracted — vinblastine: V1 5.86 l/kg, Vss 11.5 l/kg, CLnorm 1.49 l/h/kg, CL 46.2 L/h.
+Extracted — vinblastine: V1 5.86 l/kg, Vss 11.5 l/kg, CLnorm 1.49 l/h/kg, CL 46.2 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vinblastine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

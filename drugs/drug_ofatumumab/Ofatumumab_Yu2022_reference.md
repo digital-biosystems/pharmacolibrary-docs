@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The equilibrium dissociation constant unit (nmol/L) conflicts with the model's mass-based dimension requirements, causing rejection of the record for ofatumumab.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="ofatumumab" model-id="Ofatumumab_Yu2022_reference" status="rejected" stale="false" population="adults with relapsing multiple sclerosis" measured-compound="ofatumumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Yu H, Graham G, David OJ, Kahn JM, Savelieva M, Pigeolet E et al. Population Pha
 
 ### Reviewer guidance
 
-**The equilibrium dissociation constant unit (nmol/L) conflicts with the model's mass-based dimension requirements, causing rejection of the record for ofatumumab.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The extracted value for KD is 0.167 nmol/L, but the model structure expects dimensions of mass over length cubed rather than substance over length cubed. This dimensional mismatch prevents the parameter from being converted to standard SI units for the model. Additionally, the second reader identified values for the additive residual error and target-mediated clearance that were missing from the primary extraction. Extracted — ofatumumab: kabs 0.157 day−1, Fab 0.685, V1 2.62 L, kel 1.2 Vc,lwt70, CL 0.34 L/day, Q 0.358 L/day, V2 2.8 L, KD 0.167 nmol/L, … (+2).
+A reported unit could not be converted (kel and KD), so that value has no SI equivalent. Extracted — ofatumumab: kabs 0.157 day−1, Fab 0.685, V1 2.62 L, kel 1.2 Vc,lwt70, CL 0.34 L/day, Q 0.358 L/day, V2 2.8 L, KD 0.167 nmol/L, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ofatumumab conc. additive: this record has none, the second reading 0.0316; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

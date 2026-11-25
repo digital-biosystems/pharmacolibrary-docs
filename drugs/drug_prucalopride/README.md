@@ -34,7 +34,7 @@ Prucalopride is a selective serotonin 5-HT4 receptor agonist used to treat chron
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Broad_2013_EFS_evoked_AUC](drugs/drug_prucalopride/pd_Broad_2013_EFS_evoked_AUC.md) | cholinergically mediated contractions ← prucalopride · direct Emax (saturable) effect | — | Broad J et al., Cholinergic interactions between donepe…, British journal of pharmaco… (2013) | [10.1111/bph.12397](https://doi.org/10.1111/bph.12397) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span> | [Broad_2013_EFS_evoked_AUC](drugs/drug_prucalopride/pd_Broad_2013_EFS_evoked_AUC.md) | cholinergically mediated contractions ← prucalopride · direct Emax (saturable) effect | — | Broad J et al., Cholinergic interactions between donepe…, British journal of pharmaco… (2013) | [10.1111/bph.12397](https://doi.org/10.1111/bph.12397) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -58,7 +58,7 @@ Cannabidiol is a cannabinoid antiepileptic used to treat rare forms of childhood
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">mouse</span> | [Reggio_1995_electrically_evoked_contractions_of_the_mouse_vas_deferens](drugs/drug_cannabidiol/pd_Reggio_1995_electrically_evoked_contractions_of_the_mouse_va.md) | electrically-evoked contractions of the mouse vas deferens ← desoxy-CBD · direct Emax (saturable) effect | — | Reggio PH et al., The design, synthesis and testing of de…, Life sciences (1995) | [10.1016/0024-3205(95)00185-9](https://doi.org/10.1016/0024-3205(95)00185-9) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Shu_2024_5_HT1AR_agonism](drugs/drug_cannabidiol/pd_Shu_2024_5_HT1AR_agonism.md) | agonistic activity at 5-HT1A receptor ← Cannabidiol · direct sigmoid Emax (Hill) effect | — | Shu G et al., Cannabidiol exhibits anxiolytic-like ef…, Neuroscience letters (2024) | [10.1016/j.neulet.2024.137723](https://doi.org/10.1016/j.neulet.2024.137723) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Singh_2023_GRABeCB2_0](drugs/drug_cannabidiol/pd_Singh_2023_GRABeCB2_0.md) | 2-AG-stimulated GRABeCB2.0 fluorescent signal ← cannabidiol · direct Emax (saturable) effect | — | Singh S et al., Pharmacological characterization of the…, bioRxiv : the preprint serv… (2023) | [10.1101/2023.03.03.531053](https://doi.org/10.1101/2023.03.03.531053) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Singh_2024_GRABeCB2_0](drugs/drug_cannabidiol/pd_Singh_2024_GRABeCB2_0.md) | GRABeCB2.0 fluorescent signal biomarker turnover ← Cannabidiol | — | Singh S et al., Pharmacological Characterization of the…, Cannabis and cannabinoid re… (2024) | [10.1089/can.2023.0036](https://doi.org/10.1089/can.2023.0036) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Singh_2024_GRABeCB2_0](drugs/drug_cannabidiol/pd_Singh_2024_GRABeCB2_0.md) | GRABeCB2.0 fluorescent signal biomarker turnover ← Cannabidiol | — | Singh S et al., Pharmacological Characterization of the…, Cannabis and cannabinoid re… (2024) | [10.1089/can.2023.0036](https://doi.org/10.1089/can.2023.0036) |
 
 ## Pharmacogenomics (PGx)
 
@@ -91,26 +91,21 @@ Cannabidiol is a cannabinoid antiepileptic used to treat rare forms of childhood
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:21 | 14:18 | 6/3/0 | 6/0/0 | 1/0/6 | 990,131/60,807 | einfracz / qwen3.8-27b | 52 | 11/53 | 49/3 | 0 |
+| 2026-11-25 05:38 | 0:40 | 6/3/0 | 6/0/0 | 1/0/6 | 32,102/182 | einfracz / qwen3.8-27b | 59 | 13/58 | 56/3 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 897 matched, 129 returned
-- **screened:** 6  ·  **relevant:** 5
+- **screened:** 7  ·  **relevant:** 6
 - **records:** 9  ·  extracted 2  ·  needs review 4  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_9 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Lim_2020.pdf` | Lim SY et al., Model-Based Analysis of Cannabidiol Dos…, Pharmacotherapy (2020) | popPK | 10 | [10.1002/phar.2377](https://doi.org/10.1002/phar.2377) | [32058609](https://pubmed.ncbi.nlm.nih.gov/32058609) | The paper is a population PK study of cannabidiol in humans, and the abstract provides specific quantitative parameters like bioavailability, Tmax, and absorption duration, though it lacks primary clearance/volume values. |
-| `Liu_2020.pdf` | Liu Z et al., Model-based analysis on systemic availa…, Internal medicine journal (2020) | popPK | 10 | [10.1111/imj.14415](https://doi.org/10.1111/imj.14415) | [31264294](https://pubmed.ncbi.nlm.nih.gov/31264294) | The paper reports a population PK model for cannabidiol, but the specific numeric parameter values are not present in the provided evidence. |
-| `Schultz_2023.pdf` | Schultz HB et al., Population Pharmacokinetics of Oral-Bas…, Cannabis and cannabinoid re… (2023) | popPK | 10 | [10.1089/can.2021.0202](https://doi.org/10.1089/can.2021.0202) | [35443784](https://pubmed.ncbi.nlm.nih.gov/35443784) | The paper describes a population PK model for cannabidiol, but specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided text, only simulation ranges and qualitative variability. |
-| `Sánchez_2023.pdf` | Sánchez de Medina A et al., Pharmacokinetics and oral bioavailabili…, Equine veterinary journal (2023) | popPK | 10 | [10.1111/evj.13923](https://doi.org/10.1111/evj.13923) | [36624043](https://pubmed.ncbi.nlm.nih.gov/36624043) | The study reports quantitative population PK parameters (CL, V, t1/2) for cannabidiol in horses directly in the abstract text. |
-| `Ochiai_2021.pdf` | Ochiai W et al., Maternal and Fetal Pharmacokinetic Anal…, Drug metabolism and disposi… (2021) | popPK | 8 | [10.1124/dmd.120.000270](https://doi.org/10.1124/dmd.120.000270) | [33531413](https://pubmed.ncbi.nlm.nih.gov/33531413) | The study reports quantitative PK parameters (half-life) for cannabidiol in mice using a two-compartment model, but specific values for clearance or volume of distribution are not provided in the extracted text. |
 | `Klein_2019.pdf` | Klein P et al., Drug-drug interactions and pharmacodyna…, Epilepsy & behavior : E&B (2019) | pd | 5 | [10.1016/j.yebeh.2019.106459](https://doi.org/10.1016/j.yebeh.2019.106459) | [31519475](https://www.ncbi.nlm.nih.gov/pubmed/31519475) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Widyaningsih_2020.pdf` | Widyaningsih V et al., Lack of an Exposure Response and Intera…, Journal of occupational and… (2020) | pd | 5 | [10.1097/JOM.0000000000001766](https://doi.org/10.1097/JOM.0000000000001766) | [31743304](https://www.ncbi.nlm.nih.gov/pubmed/31743304) | metadata signals extractable PD data (ExposureResponse) |
 | `de_2024.pdf` | de Andrade Silva S et al., Effect of Preoperative Oral Cannabidiol…, Journal of endodontics (2024) | pd | 5 | [10.1016/j.joen.2024.10.010](https://doi.org/10.1016/j.joen.2024.10.010) | [39505200](https://www.ncbi.nlm.nih.gov/pubmed/39505200) | metadata signals extractable PD data (exposure-response) |
@@ -121,7 +116,7 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | `Scicluna_2026.pdf` | Scicluna RL et al., Behavioural, pharmacokinetic, and genet…, Biomedicine & pharmacothera… (2026) | pgx | 7 | [10.1016/j.biopha.2026.119277](https://doi.org/10.1016/j.biopha.2026.119277) | [41904896](https://www.ncbi.nlm.nih.gov/pubmed/41904896) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Anderson_2022.pdf` | Anderson LL et al., A Potential Drug-Gene-Drug Interaction…, Journal of clinical psychop… (2022) | pgx | 5 | [10.1097/JCP.0000000000001568](https://doi.org/10.1097/JCP.0000000000001568) | [35652796](https://www.ncbi.nlm.nih.gov/pubmed/35652796) | metadata signals extractable PGX data (CYP2D6*4) |
 
-<sub>queue written 2026-10-07 07:10 UTC</sub>
+<sub>queue written 2026-11-25 05:38 UTC</sub>
 
 ## Screened and excluded
 
@@ -143,6 +138,8 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Bornæs_2026 | irrelevant | 0 | 0 | The study investigates the effect of Sativex on appetite hormones (GLP-1, ghrelin) and only analyzes the plasma concentrations of THC and its metabolites, providing no pharmacokinetic parameters (CL, V, ka, etc.) for cannabidiol. |
 | popPK | Carreño_2026 | irrelevant | 0 | 0 | The paper investigates the pharmacokinetics and pharmacodynamics of belantamab mafodotin, not cannabidiol. |
 | PGx | Chayasirisobhon_2020 | not_relevant | 0 | 0 | The paper discusses general pharmacokinetics of cannabinoids but does not report any effects of gene variants or genotypes on CBD parameters. |
+| popPK | Chen_2024 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cytotoxicity and metabolic pathways in cells, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Chen_2024 | not_relevant | 3 | 5 | The study examines CBD-induced cytotoxicity in hepatic cells, not a pharmacokinetic or pharmacodynamic parameter in humans, and does not report effects of genetic variants. |
 | PGx | Coates_2025 | not_relevant | 3 | 10 | The paper reports a pharmacogenomic effect (UGT2B7 variant) on the PK of a different drug (hydromorphone), not on the PK of cannabidiol. |
 | PGx | Colombo_2014 | not_relevant | 0 | 0 | The paper discusses pharmacokinetic interactions between cyclosporine and herbal supplements (including cannabidiol) but does not report on gene variants, genotypes, or pharmacogenomic effects. |
 | PGx | Damkier_2019 | not_relevant | 0 | 0 | The paper reports on a drug-drug interaction (cannabis/warfarin), not on how a gene variant changes the PK/PD of cannabidiol. |
@@ -150,6 +147,15 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PGx | Doohan_2021 | not_relevant | 0 | 0 | The paper reports CYP450 inhibition by cannabinoids (e.g., CBD) on other drugs, which is a drug-drug interaction study, not a pharmacogenomic study linking a specific gene variant to a PK/PD parameter. |
 | popPK | Draveny_2026 | irrelevant | 0 | 0 | The paper investigates the mechanism of action of the antibiotic adjuvant NV716 on bacteria, not the pharmacokinetics of cannabidiol. |
 | PD | Draveny_2026 | not_relevant | 0 | 0 | The paper studies NV716, a polyaminoisoprenyl antibiotic adjuvant, and does not report any pharmacodynamic or exposure-response data for cannabidiol. |
+| popPK | EFSA_2026 | relevant | 5 | 2 | The paper is a review that summarizes PK parameters (Tmax, t1/2, AUC) for CBD in rats, mice, and cats, but specific values for clearance, volume of distribution, and population-PK model parameters are not explicitly reported in the extracted evidence. |
+| PGx | EFSA_2026 | not_relevant | 0 | 0 | The paper is a safety assessment and benchmark dose analysis for cannabidiol; it does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| PGx | Ekstrand_2026 | not_relevant | 0 | 0 | The study reports population pharmacokinetics of CBD and CBDA in horses without assessing the influence of any gene variants or genotypes on these parameters. |
+| popPK | Engeli_2025 | irrelevant | 4 | 1 | This is a risk-benefit review of CBD as a food supplement, not a primary pharmacokinetic study; it mentions qualitative PK properties (bioavailability, half-life range) but provides no extractable numeric compartmental or population-PK parameters. |
+| PGx | Engeli_2025 | not_relevant | 0 | 0 | The paper is a review on the safety and health benefits of CBD in foods and contains no discussion of pharmacogenomic or genetic effects on its pharmacokinetics or pharmacodynamics. |
+| popPK | Gahr_2026 | irrelevant | 2 | 0 | This is a narrative review of safety and efficacy, not a primary pharmacokinetic study, and it does not report specific quantitative disposition parameters (CL, V, Q) for cannabidiol in the text provided. |
+| PGx | Gahr_2026 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics and safety of cannabidiol products in general, but does not report any specific pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| popPK | Golombek_2020 | irrelevant | 0 | 0 | This is a feature review discussing the chemical conversion of CBD to THC under various conditions, not a pharmacokinetic study reporting quantitative disposition parameters for CBD. |
+| PGx | Golombek_2020 | not_relevant | 0 | 0 | The paper is a review on the chemical stability and metabolic conversion of CBD into THC, with no focus on pharmacogenomics or genotype-dependent PK/PD parameters. |
 | PD | Gong_1984 | not_relevant | 2 | 0 | The paper reports qualitative findings that CBD did not induce significant dose-related physiologic effects, but it does not provide numeric PD parameters, concentration-effect curves, or quantitative dose-response data for CBD. |
 | popPK | Gorbenko_2024 | irrelevant | 1 | 1 | The study measures PK for THC (and its metabolites) as the primary subject, with CBD acting as a modulator/co-administered agent, and no quantitative CBD-specific parameters (CL, V, etc.) are reported. |
 | popPK | Gorbenko_2026 | irrelevant | 2 | 2 | The study is a drug-drug interaction trial where cannabidiol is a perpetrator/co-administered agent, not the subject of PK parameter estimation; only AUC ratios for victim drugs and a qualitative half-life mention for CBD are present. |
@@ -201,6 +207,8 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Page_2024 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of CBD's effect on HCN4 ion channels, reporting biophysical parameters (voltage shifts, time constants) rather than pharmacokinetic disposition parameters (CL, V, ka). |
 | PD | Pertwee_2008 | not_relevant | 2 | 1 | The paper is a review of receptor pharmacology (binding/functional assays) and does not report a PK/PD model or exposure-response analysis with numeric PD parameters for cannabidiol. |
 | popPK | Pipitone_2024 | irrelevant | 0 | 0 | The study is an observational analysis of self-reported symptom relief from cannabis use and does not contain any pharmacokinetic parameters (e.g., clearance, volume, half-life) for cannabidiol. |
+| popPK | Poceviciute_2026 | irrelevant | 0 | 0 | The study is a behavioral analysis of voluntary alcohol consumption in rats; it does not report quantitative pharmacokinetic parameters (CL, V, ka, etc.) for cannabidiol, though it cites a half-life range in the text without providing original PK data. |
+| PGx | Poceviciute_2026 | not_relevant | 0 | 0 | The study investigates the pharmacodynamic effects of cannabinoids on alcohol consumption in rats and does not involve gene variants, genotypes, or pharmacogenomics. |
 | popPK | Ramazanova_2026 | irrelevant | 0 | 0 | The paper is a phytochemical and anti-inflammatory study of Iris songarica rhizomes in mice, containing no data on cannabidiol or its pharmacokinetics. |
 | PD | Ramazanova_2026 | not_relevant | 0 | 0 | The paper studies Iris songarica extracts, not cannabidiol, and reports only a single-dose efficacy result without a dose-response curve or PD parameters. |
 | popPK | Rich_2026 | irrelevant | 0 | 0 | The paper describes the population pharmacokinetics of momelotinib, not cannabidiol. |
@@ -213,16 +221,22 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PGx | Samanta_2019 | not_relevant | 1 | 1 | The paper is a general clinical review of cannabidiol's efficacy and safety, mentioning CYP interactions but not reporting specific pharmacogenomic effects of gene variants on PK or PD parameters. |
 | PGx | Sarris_2020 | not_relevant | 2 | 0 | This is a systematic review of clinical efficacy in psychiatry and mentions pharmacogenomics only as a general prescriptive consideration, without reporting specific gene-variant effects on PK or PD parameters. |
 | popPK | Schoedel_2018 | relevant | 6 | 4 | Reports non-compartmental PK parameters (Cmax, Tmax, AUC) for cannabidiol in humans, but lacks compartmental parameters (CL, V, ka) and full metabolite data which are in supplementary material. |
+| popPK | Schulte_2026 | irrelevant | 2 | 0 | The study measures CBD blood concentrations only as a passive marker to investigate THC metabolism and genetic polymorphisms, reporting no quantitative PK parameters (CL, V, t1/2) for CBD itself. |
+| PGx | Schulte_2026 | not_relevant | 3 | 5 | The study investigated the effect of genotypes on CBD concentrations but reported no statistical differences found. |
 | popPK | Schultz_2023 | relevant | 10 | 3 | The paper describes a population PK model for cannabidiol, but specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided text, only simulation ranges and qualitative variability. |
 | PGx | Scicluna_2026 | not_relevant | 1 | 0 | The study reports a drug-drug interaction affecting oxycodone's pharmacokinetics, but does not report a pharmacogenomic effect (gene variant/genotype) on cannabidiol's PK/PD. |
 | PD | Sepulveda_2024 | not_relevant | 1 | 0 | The paper is a review of Cannabichromene (CBC), not Cannabidiol (CBD), and does not report a PK/PD model or exposure-response relationship for CBD. |
 | popPK | Shaik_2026 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of asciminib degradation products via in-silico predictions, not cannabidiol. |
 | PD | Shaik_2026 | not_relevant | 0 | 0 | The paper focuses on the analytical chemistry (HPLC method development) and structural characterization of asciminib degradation products, containing no pharmacodynamic or exposure-response data for cannabidiol. |
 | popPK | Shu_2024 | irrelevant | 1 | 0 | The study focuses on pharmacodynamics (anxiolytic/antipsychotic effects and mechanism) and reports no quantitative pharmacokinetic parameters such as clearance, volume, or half-life for cannabidiol. |
+| popPK | Silmore_2021 | irrelevant | 3 | 0 | The paper is a systematic review of clinical trials and does not contain original quantitative pharmacokinetic parameter values (e.g., CL, V, ka) in the provided evidence. |
+| PGx | Silmore_2021 | not_relevant | 0 | 0 | The paper reviews food effects on cannabidiol pharmacokinetics but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 | popPK | Singh_2023 | irrelevant | 0 | 0 | The study characterizes the pharmacological response of a fluorescent sensor to cannabidiol in HEK293 cells (in vitro) and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
 | popPK | Singh_2024 | irrelevant | 0 | 0 | This is a pharmacological characterization study of a sensor in HEK293 cells, not a pharmacokinetic study, and cannabidiol is only used as a modulator to test sensor properties without any PK parameters reported. |
 | popPK | Singh_2025 | irrelevant | 0 | 0 | The paper is a synthetic chemistry and drug discovery study focused on novel pyrrole-fused pyrimidine derivatives as InhA inhibitors for tuberculosis, with no mention or measurement of cannabidiol pharmacokinetics. |
 | PD | Singh_2025 | not_relevant | 0 | 0 | The paper studies novel pyrrole-fused pyrimidine derivatives as anti-tubercular agents, not cannabidiol. |
+| popPK | Smith_2024 | irrelevant | 1 | 0 | This is a systematic review focused on CYP450 enzyme inhibition and drug interactions, not a pharmacokinetic study reporting quantitative disposition parameters like clearance or volume for cannabidiol. |
+| PGx | Smith_2024 | not_relevant | 0 | 0 | The paper reviews drug-enzyme interactions (CYP450 inhibition/induction) causing drug-drug interactions, but does not report any effect of a specific gene variant, genotype, or pharmacogenomic phenotype on the PK or PD of cannabidiol. |
 | PGx | So_2025 | not_relevant | 0 | 0 | The study reports a pharmacokinetic interaction between cannabidiol and tacrolimus but does not report pharmacogenomic effects (gene variants) on pharmacokinetic parameters. |
 | PD | Steger_1990 | not_relevant | 2 | 1 | The study reports a qualitative lack of effect for CBD and an inability to demonstrate a dose-response relationship for THC/CBN, providing no numeric PD parameters or extractable concentration-effect curves. |
 | PD | Strickland_2025 | not_relevant | 3 | 1 | The study reports qualitative changes in subjective effects and PK parameters (p-values) for CBD co-administration but does not provide numeric PD parameters (e.g., Emax, EC50) or an explicit concentration-effect curve for CBD itself. |
@@ -242,6 +256,8 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | PD | White_2023 | not_relevant | 1 | 0 | The text is a review article summarizing general knowledge and does not report specific numeric PD parameters or exposure-response data for cannabidiol. |
 | popPK | Widyaningsih_2020 | irrelevant | 0 | 0 | The paper studies beryllium toxicity and HLA polymorphisms, not cannabidiol pharmacokinetics. |
 | PD | Widyaningsih_2020 | not_relevant | 0 | 0 | The paper studies beryllium toxicity and HLA polymorphisms, not cannabidiol pharmacodynamics. |
+| popPK | Winkler_2025 | irrelevant | 0 | 0 | The study is a clinical trial assessing psychological outcomes (stress/distress) and does not report any pharmacokinetic parameters for cannabidiol. |
+| PGx | Winkler_2025 | not_relevant | 0 | 0 | The study assesses the clinical efficacy and placebo effects of CBD, not a pharmacogenomic impact on a PK or PD parameter. |
 | PD | Wisotzki_2024 | not_relevant | 3 | 2 | The paper performs toxicological Benchmark Dose (BMD) modeling to establish safety limits (HBGV), not pharmacodynamic exposure-response modeling for therapeutic efficacy or specific PD parameters like Emax/EC50. |
 | popPK | Ye_2020 | irrelevant | 0 | 0 | The paper investigates the antifungal activity and mechanism of alpha-mangostin against plant pathogens, not the pharmacokinetics of cannabidiol. |
 | PD | Ye_2020 | not_relevant | 0 | 0 | The paper studies alpha-mangostin, not cannabidiol. |
@@ -250,6 +266,8 @@ _14 abstract-screened relevant papers lack full text. Retrieve via the DOI, save
 | popPK | Zhao_2020 | irrelevant | 0 | 0 | The paper focuses on virtual screening for influenza PB2 inhibitors and contains no pharmacokinetic data or mention of cannabidiol. |
 | PD | Zhao_2020 | not_relevant | 0 | 0 | The paper reports in vitro antiviral activity (EC50) and binding affinity (Kd) for novel influenza PB2 inhibitors, not pharmacodynamic or exposure-response data for cannabidiol. |
 | PGx | Zimmerman_1979 | not_relevant | 0 | 0 | The paper reports the toxicological effects of cannabinoids on sperm morphology in a specific mouse strain, not a pharmacogenomic influence on the PK or PD parameters of cannabidiol. |
+| popPK | Zorrilla_2025 | irrelevant | 0 | 0 | The paper is a behavioral pharmacology study assessing the efficacy of cannabidiol and THC in migraine models, reporting no pharmacokinetic parameters. |
+| PGx | Zorrilla_2025 | not_relevant | 0 | 0 | The paper investigates the therapeutic efficacy of CBD and THC combinations on migraine symptoms in mice, including sex differences and mutant models, but does not report any pharmacokinetic (e.g., AUC, Cmax) or pharmacodynamic parameters modulated by specific human gene variants or genotypes. |
 | PD | de_2024 | not_relevant | 0 | 0 | The study is a clinical trial comparing two groups without measuring drug concentrations, and the authors explicitly conclude there is no evidence of an exposure-response relationship. |
 
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The 1.76 L/h value for ivacaftor is flagged as an implausible volume of distribution due to a unit/scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ivacaftor" model-id="Ivacaftor_Vonk2025_elexacaftor_m23" status="rejected" stale="false" population="children with cystic fibrosis" measured-compound="ivacaftor" parameterization="apparent" topology="2C"></div>
 
@@ -43,7 +43,7 @@ Vonk SEM, Terheggen-Lagro SWJ, Haarman EG, Hashimoto S, Maitland-van der Zee AH,
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,11 +53,13 @@ Vonk SEM, Terheggen-Lagro SWJ, Haarman EG, Hashimoto S, Maitland-van der Zee AH,
 
 ### Reviewer guidance
 
-**The 1.76 L/h value for ivacaftor is flagged as an implausible volume of distribution due to a unit/scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record assigns a 1.76 L/h value to ivacaftor with the meaning 'Volume of distribution', which is physiologically impossible for that metric. This indicates a unit or scale extraction error, where the magnitude is inconsistent with the intended parameter. Furthermore, a reported unit could not be converted to SI, leaving the parameter without a valid value. Extracted — ivacaftor: AUC 208 mg*h/L, V 1.76 L/h, CL/F 1.76 L/h/70 kg, V/F 59 L/ 70 kg; elexacaftor: AUC 63.2 mg*h/L.
+A reported unit could not be converted (AUC and AUC), so that value has no SI equivalent. Extracted — ivacaftor: AUC 208 mg*h/L, V 1.76 L/h, CL/F 1.76 L/h/70 kg, V/F 59 L/ 70 kg; elexacaftor: AUC 63.2 mg*h/L.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading elexacaftor → elexacaftor metabolite (metabolism); tezacaftor → tezacaftor metabolite (metabolism); ivacaftor → ivacaftor metabolite (metabolism); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -113,6 +115,35 @@ The record assigns a 1.76 L/h value to ivacaftor with the meaning 'Volume of dis
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (3/12 fields) | 9 |
+
+<details><summary>9 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['elexacaftor', 'elexacaftor metabolite', 'metabolism'], ['tezacaftor', 'tezacaftor metabolite', 'metabolism'], ['ivacaftor', 'ivacaftor metabolite', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[apparent clearance (cl elx /f) and volume of distribution (v elx /f) normalized for a body weight of 70 kg]` | 1.76 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc #]` | 63.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc #]` |  | 11.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[corresponding v/f values ... for eti]` | 59.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose per mean weight]` |  | 5.18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose*]` |  | 200 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical values of cl/f ... for eti]` | 1.76 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

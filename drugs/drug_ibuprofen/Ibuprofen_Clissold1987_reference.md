@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper models a different drug, not ibuprofen.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Clissold1987_reference" status="rejected" stale="false" population="patients with rheumatic diseases and pain states" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Clissold SP, Beresford R. Proquazone. A review of its pharmacodynamic and pharma
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper models a different drug, not ibuprofen.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The identity check failed, identifying the paper's subject as another drug rather than ibuprofen. Consequently, the extracted clearance and volume parameters do not belong to the intended analyte. Second-reader disagreements exist on several unextracted parameter values, but the primary cause remains the subject mismatch. Extracted — ibuprofen: CL 40 L/h, V/F 10.8 L.
+Extracted — ibuprofen: CL 40 L/h, V/F 10.8 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q174: this record has none, the second reading 0.051; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.538, 0 of 1 reader(s) agree | 0.538 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.538 (7 of 13 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.538 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

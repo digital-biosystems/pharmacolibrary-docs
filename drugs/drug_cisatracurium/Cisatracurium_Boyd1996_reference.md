@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Laudanosine is an unreachable metabolite because no kinetic parameters define its formation from cisatracurium in the abstract-only record.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Boyd1996_reference" status="rejected" stale="false" population="critically ill patients" measured-compound="cisatracurium" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -46,13 +46,13 @@ Boyd AH, Eastwood NB, Parker CJ, Hunter JM. Comparison of the pharmacodynamics a
 
 ### Reviewer guidance
 
-**Laudanosine is an unreachable metabolite because no kinetic parameters define its formation from cisatracurium in the abstract-only record.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model links cisatracurium to laudanosine via metabolism, but the record contains no formation rate constant or other parameter connecting the two. Consequently, laudanosine is an orphan compartment with no path from the dose. The record relies on abstract-only summary statistics, such as 549 ml/min clearance, which stand in for a fitted model. Extracted — cisatracurium: CL 549 ml min-1, t1/2z 27.6 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cisatracurium: CL 549 ml min-1, t1/2z 27.6 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cisatracurium, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the absorption rate constant unit hours conflicts with the required reciprocal time dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Anderson2005_34_weeks_pca" status="rejected" stale="false" population="children" measured-compound="paracetamol" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Anderson BJ, Pons G, Autret-Leca E, Allegaert K, Boccard E. Pediatric intravenou
 
 ### Reviewer guidance
 
-**The model was rejected because the absorption rate constant unit hours conflicts with the required reciprocal time dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].**
 
-The parameter labeled 'T1/2 hyd' carries a value of 0.0030 with the unit 'h'. This unit dimension [time] conflicts with the structural requirement for a rate constant, which is 1 / [time]. Additionally, the link from propacetamol to paracetamol was missing from the extracted record. Extracted — paracetamol: CLm/F 4.2 L·h⁻¹ 70 kg⁻¹, V1 0.34 L·kg⁻¹, Q 1.79 L·h⁻¹·kg⁻¹, kabs 0.003 h, V2 41.1 L·70 kg⁻¹.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — paracetamol: CLm/F 4.2 L·h⁻¹ 70 kg⁻¹, V1 0.34 L·kg⁻¹, Q 1.79 L·h⁻¹·kg⁻¹, kabs 0.003 h, V2 41.1 L·70 kg⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading propacetamol → paracetamol (hydrolysis); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

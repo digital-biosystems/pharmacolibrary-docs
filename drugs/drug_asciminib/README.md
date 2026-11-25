@@ -25,7 +25,7 @@ Asciminib is a protein kinase inhibitor used to treat chronic myeloid leukemia. 
 
 ## Start here
 
-> **Darstein_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with CML and Ph+ acute lymphoblastic leukemia. [Run it in the simulator](drugs/drug_asciminib/Asciminib_Darstein2025_reference.md?tab=Simulation) · [record](drugs/drug_asciminib/Asciminib_Darstein2025_reference.md)
+> **Darstein_2025_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with chronic myeloid leukemia. [Run it in the simulator](drugs/drug_asciminib/Asciminib_Darstein2025_reference.md?tab=Simulation) · [record](drugs/drug_asciminib/Asciminib_Darstein2025_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,14 +33,14 @@ Asciminib is a protein kinase inhibitor used to treat chronic myeloid leukemia. 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Darstein_2025_reference](drugs/drug_asciminib/Asciminib_Darstein2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Darstein C et al., Population pharmacokinetic modeling of…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04755-y](https://doi.org/10.1007/s00280-025-04755-y) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Darstein_2025_reference](drugs/drug_asciminib/Asciminib_Darstein2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Darstein C et al., Population pharmacokinetic modeling of…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04755-y](https://doi.org/10.1007/s00280-025-04755-y) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Sy_2025_MMR](drugs/drug_asciminib/pd_Sy_2025_MMR.md) | week-48 major molecular response ← asciminib · direct linear effect | — | Sy SKB et al., Exposure-response analysis of asciminib…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04806-4](https://doi.org/10.1007/s00280-025-04806-4) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Sy_2025_worsening_event_for_grade_3_lipase_increase](drugs/drug_asciminib/pd_Sy_2025_worsening_event_for_grade_3_lipase_increase.md) | worsening event for grade ≥ 3 lipase increase ← asciminib · direct linear effect | — | Sy SKB et al., Exposure-response analysis of asciminib…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04806-4](https://doi.org/10.1007/s00280-025-04806-4) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Combes_2022_BCR_ABL1](drugs/drug_asciminib/pd_Combes_2022_BCR_ABL1.md) | BCR::ABL1 transcript levels ← asciminib · disease-progression model | — | Combes FP et al., Exposure-Efficacy Analysis of Asciminib…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2699](https://doi.org/10.1002/cpt.2699) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Combes_2022_BCR_ABL1_2](drugs/drug_asciminib/pd_Combes_2022_BCR_ABL1_2.md) | BCR::ABL1 transcript levels (T315I mutation subgroup) ← asciminib · direct Emax (saturable) effect | — | Combes FP et al., Exposure-Efficacy Analysis of Asciminib…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2699](https://doi.org/10.1002/cpt.2699) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Asciminib is a protein kinase inhibitor used to treat chronic myeloid leukemia. 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:32 | 1:43 | 1/0/0 | 2/0/0 | 0/0/0 | 33,413/8,256 | openai / gpt-6-luna | 2 | 1/1 | 2/0 | 0 |
+| 2026-11-23 18:45 | 0:03 | 1/0/0 | 2/0/0 | 0/0/0 | 4,250/177 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## Coverage
 
@@ -63,31 +63,26 @@ Asciminib is a protein kinase inhibitor used to treat chronic myeloid leukemia. 
 - **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Darstein_2025.pdf` | Darstein C et al., Population pharmacokinetic modeling of…, Cancer chemotherapy and pha… (2025) | popPK | 10 | [10.1007/s00280-025-04755-y](https://doi.org/10.1007/s00280-025-04755-y) | [40019625](https://pubmed.ncbi.nlm.nih.gov/40019625) | The human popPK model reports numeric apparent clearance and steady-state volume of distribution for asciminib. |
-| `Li_2022.pdf` | Li YF et al., Population Pharmacokinetics of Ascimini…, Clinical pharmacokinetics (2022) | popPK | 10 | [10.1007/s40262-022-01148-9](https://doi.org/10.1007/s40262-022-01148-9) | [35764773](https://pubmed.ncbi.nlm.nih.gov/35764773) | This is a human asciminib population-PK study, but numeric disposition parameter values are not present in the evidence. |
-
-<sub>queue written 2026-10-06 21:31 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Combes_2022 | irrelevant | 2 | 0 | The model describes leukemic cell populations and exposure-efficacy, with no asciminib disposition parameters or numeric values reported. |
+| popPK | Combes_2022 | irrelevant | 2 | 0 | The study focuses on an exposure-efficacy/PD model relating asciminib exposure to BCR::ABL1 transcript levels, not a standard population-PK model reporting specific disposition parameters (CL, V, ka) for the drug itself in the provided evidence. |
+| PGx | Combes_2022 | not_relevant | 0 | 0 | The paper analyzes exposure-efficacy relationships and the impact of the T315I target mutation on drug effect, but does not report any genetic polymorphism (e.g., in CYPs or transporters) affecting the PK or PD parameters of asciminib. |
 | popPK | Combes_2024 | relevant | 9 | 2 | Human PopPK analysis reports AUC and relative Cmax/Cmin, but detailed disposition-model values are referred to a prior publication. |
-| popPK | Li_2022 | relevant | 10 | 0 | This is a human asciminib population-PK study, but numeric disposition parameter values are not present in the evidence. |
-| popPK | Li_2022_2 | relevant | 9 | 1 | The evidence indicates a population-PK model with CL and ka, but provides no numeric parameter values. |
-| popPK | Sy_2025 | irrelevant | 2 | 0 | The study reports exposure-response relationships but no numeric disposition parameters for asciminib. |
-| popPK | Sy_2025_2 | irrelevant | 0 | 0 | The study models nilotinib, and reports no quantitative pharmacokinetic parameters for asciminib. |
+| PGx | Darstein_2025 | not_relevant | 0 | 0 | The study evaluates standard demographic and organ function covariates (weight, age, ethnicity, renal/hepatic function) rather than genetic variants. |
+| popPK | Li_2022 | relevant | 10 | 0 | The paper describes a population PK model for asciminib, but the abstract lacks specific numeric parameter values (CL, V, ka) which are typically found in the results section or supplementary tables not provided in the evidence. |
+| PGx | Li_2022 | not_relevant | 2 | 5 | The paper reports population pharmacokinetics and identifies non-genetic covariates (weight, renal function), noting that T315I mutation status had no statistically significant impact on clearance. |
+| popPK | Li_2022_2 | relevant | 5 | 1 | The text describes a population PK model including clearance and absorption rate, but no numeric parameter values are present in the evidence. |
+| PGx | Li_2022_2 | not_relevant | 0 | 0 | The paper reports covariate analysis (body weight, aGFR, formulation) on PK parameters but contains no information regarding gene variants or genotypes. |
+| popPK | Sy_2025 | irrelevant | 1 | 0 | The study analyzes the relationship between asciminib exposure (AUC, Cmin) and efficacy/safety, but it does not report the underlying pharmacokinetic disposition parameters (such as clearance, volume, or half-life) required for a PK model. |
+| PGx | Sy_2025 | not_relevant | 0 | 0 | The paper reports population exposure-response relationships but contains no pharmacogenomic data or gene variants. |
+| popPK | Sy_2025_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and efficacy of nilotinib, with asciminib mentioned only in the conclusion as a potential candidate for future extrapolation. |
+| PGx | Sy_2025_2 | not_relevant | 0 | 0 | The paper focuses on nilotinib PK/PD modeling in CML and mentions asciminib only in the context of extrapolating responses, with no data or analysis of asciminib PK/PD parameters or pharmacogenomic effects. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Basciminib%5D&body=Drug%3A%20asciminib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_asciminib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 21:31 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 18:43 UTC</sub>

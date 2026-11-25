@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper Steichert_2025 describes another drug, not digoxin, so the digoxin clearance and volume parameters were incorrectly extracted.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Steichert2025_reference" status="rejected" stale="false" population="" measured-compound="digoxin" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Steichert M, Cawello W, Burckhardt BB, Suessenbach FK, Laeer S, On Behalf Of The
 
 ### Reviewer guidance
 
-**The paper Steichert_2025 describes another drug, not digoxin, so the digoxin clearance and volume parameters were incorrectly extracted.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The identity check found that neither the title nor the abstract of Steichert_2025 names digoxin, and the relevance screen rejected the source as irrelevant. Consequently, the extracted parameters for digoxin, such as CL/F of 36.39 L/h and V1/F of 223.71 L, do not correspond to the study's actual subject. The model builder further assumed an apparent parameterization with F=1, which is invalid if the source data does not pertain to digoxin. Extracted — digoxin: CL/F 36.4 L/h, V1/F 224 L, V2/F 108 L, Q/F 6.38 L/h, kabs 1.19 h−1.
+Extracted — digoxin: CL/F 36.4 L/h, V1/F 224 L, V2/F 108 L, Q/F 6.38 L/h, kabs 1.19 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 33.7, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.875 (14 of 16 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.875 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

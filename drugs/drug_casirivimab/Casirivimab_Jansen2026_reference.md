@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the peripheral compartment for casirivimab is structurally unreachable from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Casirivimab" model-id="Casirivimab_Jansen2026_reference" status="rejected" stale="false" population="" measured-compound="casirivimab" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,13 +46,13 @@ Jansen E, Bockstal V, Herschke F, Olsson Gisleskog P, Rinaldi M, Boerboom A et a
 
 ### Reviewer guidance
 
-**The model was rejected because the peripheral compartment for casirivimab is structurally unreachable from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record specifies a two-compartment structure but lists parameters only for total clearance, central volume, and peripheral volume. A second reader disagreed with the extracted values for clearance and volumes, marking them as null. The rejection reason explicitly identifies the peripheral compartment as an orphan structure lacking a path from the dose. Extracted — casirivimab: CL 13.7 mL/h, V1 3.62e+03 mL, V2 4.73e+03 mL.
+Extracted — casirivimab: CL 13.7 mL/h, V1 3.62e+03 mL, V2 4.73e+03 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 13.7, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The source paper concerns a different drug, so the furosemide parameters lack support, with absorption terms left as placeholders.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Xia2026_reference" status="rejected" stale="false" population="" measured-compound="furosemide" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Xia M, Ni Q, Zhu S. Magnesium sulfate pharmacology for maternal and critical-car
 
 ### Reviewer guidance
 
-**The source paper concerns a different drug, so the furosemide parameters lack support, with absorption terms left as placeholders.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The relevance screen rejected the paper because neither title nor abstract identifies furosemide, failing the analyte identity check. Consequently, the absorption rate constant and lag time were left without extracted values, requiring the use of library placeholders. The model builder also assumed unit bioavailability, treating the apparent clearance (2.98 L/h) and volume of distribution (25.1 L) as true physiological values. Extracted — furosemide: CL/F 2.98 L/h, V 25.1 L.
+Extracted — furosemide: CL/F 2.98 L/h, V 25.1 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (4 of 4 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

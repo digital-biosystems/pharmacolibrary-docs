@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Codeine's AUC and Cmax units use nmol, a substance unit that could not be converted to SI, causing dimension mismatches and rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit nmol · hr/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q32 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Tseng1996_c_c188" status="rejected" stale="false" population="Chinese (Han) healthy adults" measured-compound="codeine" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Tseng CY, Wang SL, Lai MD, Lai ML, Huang JD. Formation of morphine from codeine 
 
 ### Reviewer guidance
 
-**Codeine's AUC and Cmax units use nmol, a substance unit that could not be converted to SI, causing dimension mismatches and rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit nmol · hr/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q32 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The record lists codeine AUC as 938 nmol · hr/L and Cmax as 241 nmol/L. Because the unit nmol could not be converted to SI, the values lacked standard equivalents, resulting in dimensional conflicts for these parameters. Extracted — codeine: AUC 938 nmol · hr/L, t1/2z 2.3 hr, Cmax 241 nmol/L, tmax 1.14 hr, CL 132 ml/min, V 6 L/kg, tlag 2.35 (h).
+A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent. Extracted — codeine: AUC 938 nmol · hr/L, t1/2z 2.3 hr, Cmax 241 nmol/L, tmax 1.14 hr, CL 132 ml/min, V 6 L/kg, tlag 2.35 (h).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

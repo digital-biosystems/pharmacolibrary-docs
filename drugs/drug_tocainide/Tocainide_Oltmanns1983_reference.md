@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Second reader disputes the 1.84 mL/min/kg clearance of tocainide, citing 45 instead.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="tocainide" model-id="Tocainide_Oltmanns1983_reference" status="needs_review" stale="false" population="patients with combined hepatic and renal dysfunction" measured-compound="tocainide" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Oltmanns D, Pottage A, Endell W. Pharmacokinetics of tocainide in patients with 
 
 ### Reviewer guidance
 
-**Second reader disputes the 1.84 mL/min/kg clearance of tocainide, citing 45 instead.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists a tocainide clearance of 1.84 mL/min/kg. The second reader disagreed, providing a value of 45, while leaving the volume and half-life fields null. This conflict in extracted parameters caused the cross-check to fail. Extracted — tocainide: CL 1.84 ml/min/kg, V 305 L.
+Extracted — tocainide: CL 1.84 ml/min/kg, V 305 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 31, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.571 (4 of 7 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.571 | cross-check contradicted by a second reader: verdict disputed; agreement 0.571 (4 of 7 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;everolimus&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/&quot;},{&quot;label&quot;:&quot;Moes_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Everolimus_Hirabatake2022_reference&quot;,&quot;label&quot;:&quot;Hirabatake_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Hirabatake2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_Moes2012_reference&quot;,&quot;label&quot;:&quot;Moes_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Moes2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Everolimus_Sakaue2024_base&quot;,&quot;label&quot;:&quot;Sakaue_2024_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Sakaue2024_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_Sakaue2024_final&quot;,&quot;label&quot;:&quot;Sakaue_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Sakaue2024_final.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_de2016_base&quot;,&quot;label&quot;:&quot;de_2016_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_de2016_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_de2016_final&quot;,&quot;label&quot;:&quot;de_2016_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_de2016_final.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Everolimus_Hirabatake2022_reference&quot;,&quot;label&quot;:&quot;Hirabatake_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Hirabatake2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_Sakaue2024_base&quot;,&quot;label&quot;:&quot;Sakaue_2024_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Sakaue2024_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_Sakaue2024_final&quot;,&quot;label&quot;:&quot;Sakaue_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Sakaue2024_final.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_de2016_base&quot;,&quot;label&quot;:&quot;de_2016_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_de2016_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_de2016_final&quot;,&quot;label&quot;:&quot;de_2016_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_de2016_final.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Everolimus_Moes2012_reference&quot;,&quot;label&quot;:&quot;Moes_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_everolimus/Everolimus_Moes2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # everolimus — `Everolimus_Moes2012_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="everolimus" model-id="Everolimus_Moes2012_reference" status="simulated" stale="false" population="renal transplant patients" measured-compound="everolimus" parameterization="apparent" topology="1C"></div>
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
+
+<div class="pk-model-meta" hidden drug="everolimus" model-id="Everolimus_Moes2012_reference" status="needs_review" stale="false" population="renal transplant patients" measured-compound="everolimus" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Moes DJ, Press RR, den Hartigh J, van der Straaten T, de Fijter JW, Guchelaar HJ. Population pharmacokinetics and pharmacogenetics of everolimus in renal transplant patients. Clinical pharmacokinetics 51(7):467–480 (2012).
@@ -15,27 +17,30 @@ Moes DJ, Press RR, den Hartigh J, van der Straaten T, de Fijter JW, Guchelaar HJ
 
 ## Population and dosing
 
-**Population:** renal transplant patients · condition renal transplantation · n = 53.
+**Population:** renal transplant patients · condition renal transplant · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted.  
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 4 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_everolimus/Everolimus_Moes2012_reference/Everolimus_Moes2012_reference.svg" alt="Everolimus_Moes2012_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
+| AUC(12) | AUC | 120 | μg · h/L |
 | oral clearance | CL/F | 17.9 | L/h |
-| volume of distribution of the central compartment after oral administration [V(1)/F] | V | 148 | L |
-| first-order absorption rate constant [k(a)] | kabs | 7.36 | h-1 |
+| V(1)/F | V/F | 148 | L |
+| k(a) | kel | 7.36 | h-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.455), qwen3.8-27b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,21 +50,22 @@ Moes DJ, Press RR, den Hartigh J, van der Straaten T, de Fijter JW, Guchelaar HJ
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — everolimus: AUC 120 μg · h/L, CL/F 17.9 L/h, V/F 148 L, kel 7.36 h-1.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of area under the blood concentration-time curve from time zero to 12 hours (auc(12)): this record has none, the second reading 120; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of area under the blood concentration-time curve from time zero to 12 hours (auc(12)): this record has none, the second reading 120; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
+| AUC(12) | `Q88` · AUC | 120 | μg · h/L | 0.432 | kg*s/m3 | (h·µg)/l | exact (1) | Moes_2012:abstract, Moes_2012:abstract |
 | oral clearance | `Q27` · CL/F | 17.9 | L/h | 4.972e-06 | m3/s | l/h | exact (1) | Moes_2012:abstract |
-| volume of distribution of the central compartment after oral administration [V(1)/F] | `Q61` · V | 148 | L | 0.148 | m3 | l | boundary_compartment (0.9) | Moes_2012:abstract |
-| first-order absorption rate constant [k(a)] | `Q49` · kabs | 7.36 | h-1 | 0.002044 | 1/s | 1/h | llm_confirmed (0.6) | Moes_2012:abstract |
+| V(1)/F | `Q76` · V/F | 148 | L | 0.148 | m3 | l | space_fold (0.95) | Moes_2012:abstract |
+| k(a) | `Q47` · kel | 7.36 | h-1 | 0.002044 | 1/s | 1/h | exact (1) | Moes_2012:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -69,33 +75,38 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=everolimus
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'volume of distribution of the central compartment after oral administration [V(1)/F]' is the general volume)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Moes_2012_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Moes_2012_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.455 (5/11 fields) | 6 |
 | `qwen3.8-27b` | partly confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[area under the blood concentration-time curve from time zero to 12 hours (auc(12))]` |  | 120 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 120 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first-order absorption rate constant [k(a)]]` |  | 7.36 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k]` | 7.36 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v(1)/f]` | 148 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of the central compartment after oral administration [v(1)/f]]` |  | 148 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[area under the blood concentration-time curve from time zero to 12 hours (auc(12))]` |  | 120 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[auc]` |  | 120 | only_one_extracted |
 
@@ -111,16 +122,17 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Moes_2012:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Moes_2012:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Moes_2012:abstract'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Moes_2012:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Moes_2012:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Moes_2012:abstract', 'Moes_2012:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 17.9 L/h | ['Moes_2012:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 148 L | ['Moes_2012:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 148 L | ['Moes_2012:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -132,8 +144,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_output_variable | pass | C_central (measured=everolimus) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | a second reader did not contradict the extraction |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.455 (5 of 11 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.455 | cross-check agreement 0.455 is below 0.5: verdict partial; agreement 0.455 (5 of 11 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -149,12 +161,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_everolimus/Everolimus_Moes2012_reference/Everolimus_Moes2012_reference_modelica.zip" download>Everolimus_Moes2012_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_everolimus/Everolimus_Moes2012_reference/Everolimus_Moes2012_reference_fmi.zip" download>Everolimus_Moes2012_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_everolimus/Everolimus_Moes2012_reference/Everolimus_Moes2012_reference_matlab.zip" download>Everolimus_Moes2012_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_everolimus/Everolimus_Moes2012_reference/Everolimus_Moes2012_reference_matlab_simbio.zip" download>Everolimus_Moes2012_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_everolimus/Everolimus_Moes2012_reference/Everolimus_Moes2012_reference_modelica.zip" download>Everolimus_Moes2012_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_everolimus/Everolimus_Moes2012_reference/Everolimus_Moes2012_reference_fmi.zip" download>Everolimus_Moes2012_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_everolimus/Everolimus_Moes2012_reference/Everolimus_Moes2012_reference_matlab.zip" download>Everolimus_Moes2012_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_everolimus/Everolimus_Moes2012_reference/Everolimus_Moes2012_reference_matlab_simbio.zip" download>Everolimus_Moes2012_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_everolimus/Everolimus_Moes2012_reference/Everolimus_Moes2012_reference_sbml.zip" download>Everolimus_Moes2012_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_everolimus/Everolimus_Moes2012_reference/Everolimus_Moes2012_reference_cellml.zip" download>Everolimus_Moes2012_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_everolimus/Everolimus_Moes2012_reference/Everolimus_Moes2012_reference_cellml.zip" download>Everolimus_Moes2012_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
@@ -174,7 +186,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminMass` | 1.5e-06 | kg |
 | input | model | `Cl` | 4.972e-06 | m3/s |
 | input | model | `VdPerKg` | 0.002114 | m3/kg |
-| input | model | `ka` | 0.002044 | 1/s |
+| input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -203,7 +215,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 1.5 mg, single dose, first-order absorption (ka 7.36 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1.5 mg oral (L04AH02) (defined daily dose)._
+**Administration: oral** — 1.5 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1.5 mg oral (L04AH02) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_everolimus/Everolimus_Moes2012_reference/Everolimus_Moes2012_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_everolimus/Everolimus_Moes2012_reference/Everolimus_Moes2012_reference_sim_controls.json"></dbs-fmusim>
 
@@ -213,4 +225,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Beverolimus%5D%20Everolimus_Moes2012_reference&body=Drug%3A%20everolimus%0ARecord%3A%20Everolimus_Moes2012_reference%0APaper%3A%20Moes_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_everolimus/Everolimus_Moes2012_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 00:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:04 UTC</sub>

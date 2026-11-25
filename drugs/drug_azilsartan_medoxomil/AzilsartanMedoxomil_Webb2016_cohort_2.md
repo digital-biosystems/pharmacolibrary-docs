@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the AUC∞ parameter (29337 ng·h/mL per mg/kg) has a unit dimension mismatch and the azilsartan metabolite is structurally unlinked.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit mg/kg ([mass]) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="azilsartan medoxomil" model-id="AzilsartanMedoxomil_Webb2016_cohort_2" status="rejected" stale="false" population="children and adolescents with hypertension and healthy adults" measured-compound="azilsartan" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Webb NJ, Wells T, Tsai M, Zhao Z, Juhasz A, Dudkowski C. Single-dose pharmacokin
 
 ### Reviewer guidance
 
-**The record was rejected because the AUC∞ parameter (29337 ng·h/mL per mg/kg) has a unit dimension mismatch and the azilsartan metabolite is structurally unlinked.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit mg/kg ([mass]) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The reported unit for AUC∞ is listed as mg/kg, which is dimensionally inconsistent with an area-under-the-curve quantity. Additionally, the model structure leaves the azilsartan metabolite as an orphan compartment with no path from the dose. A second reader also disputed the identification of several parameter entries in the record. Extracted — azilsartan: AUC∞ 2.93e+04 mg/kg, Cmax 4.6e+03 ng/mL, CLm,norm/F 0.03 L/h/kg, V2/F 0.23 L/kg; M-II: Cmax 768 ng/mL.
+A reported unit could not be converted (AUC∞, Cmax and Cmax), so that value has no SI equivalent. None of the extracted parameters is azilsartan medoxomil's own; they describe azilsartan and M-II. Extracted — azilsartan: AUC∞ 2.93e+04 mg/kg, Cmax 4.6e+03 ng/mL, CLm,norm/F 0.03 L/h/kg, V2/F 0.23 L/kg; M-II: Cmax 768 ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has azilsartan_medoxomil, the second reading azilsartan medoxomil; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

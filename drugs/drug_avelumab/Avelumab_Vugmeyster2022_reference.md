@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Avelumab record fails peak concentration checks (model 0.222 vs paper 0.256 µg/mL) and lacks simulated covariate effects, with disputed parameter values.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.256, model 0.222); the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Vugmeyster2022_reference" status="needs_review" stale="false" population="pediatric patients with refractory/relapsed solid tumors" measured-compound="avelumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Vugmeyster Y, Grisic AM, Brockhaus B, Rueckert P, Ruisi M, Dai H et al. Avelumab
 
 ### Reviewer guidance
 
-**Avelumab record fails peak concentration checks (model 0.222 vs paper 0.256 µg/mL) and lacks simulated covariate effects, with disputed parameter values.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.256, model 0.222); the covariate scenarios were not simulated (+1 more).**
 
-The simulated maximum concentration is 0.222 µg/mL, failing four comparison checks against expected values of 0.157, 0.384, 0.338, and 0.496 µg/mL. The record defines a weight covariate for intercompartmental clearance, but only the reference individual was simulated. A second reader disagreed on parameter assignments, including the volume of distribution and the presence of covariate forms. Extracted — avelumab: CL 0.0274 L/h, V 3.15 L, Q 0.0299 L/h, t1/2z 79 h, AUCt 23.7 µg⋅h/mL, Ctrough 97.5 µg/mL.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (AUCt and Ctrough), so that value has no SI equivalent. Extracted — avelumab: CL 0.0274 L/h, V 3.15 L, Q 0.0299 L/h, t1/2z 79 h, AUCt 23.7 µg⋅h/mL, Ctrough 97.5 µg/mL.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc0-336: this record has 23.7, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -181,17 +181,17 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.438, 0 of 1 reader(s) agree | 0.438 | cross-check disputed by a second reader: verdict disputed, agreement 0.438, 0 of 1 reader(s) agree |
-| T1_cmax | reference | pass | 0.2563 | 0.2221 | 0.8664 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 0.19 | 0.2221 | 1.169 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.157 | 0.2221 | 1.414 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 0.281 | 0.2221 | 0.7903 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.384 | 0.2221 | 0.5783 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.338 | 0.2221 | 0.657 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.496 | 0.2221 | 0.4477 | µg/mL→SI vs simulated kg/m3 |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.438 (7 of 16 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.438 | cross-check contradicted by a second reader: verdict disputed; agreement 0.438 (7 of 16 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
+| T1_cmax | reference | pass | 0.2563 | 0.2221 | 0.8664 | reported 256.3 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 0.19 | 0.2221 | 1.169 | reported 190.0 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.157 | 0.2221 | 1.414 | reported 157.0 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 0.281 | 0.2221 | 0.7903 | reported 281.0 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.384 | 0.2221 | 0.5783 | reported 384.0 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.338 | 0.2221 | 0.657 | reported 338.0 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.496 | 0.2221 | 0.4477 | reported 496.0 µg/mL→SI vs simulated kg/m3 |
 | T1_cmin_ss | reference | skipped | 17.2 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 11.2 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 8.80 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 8.8 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 18.3 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 34.8 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 39.4 |  |  | no simulated metric for this quantity (single reference sim) |
@@ -211,15 +211,54 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference/Avelumab_Vugmeyster2022_reference_modelica.zip" download>Avelumab_Vugmeyster2022_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference/Avelumab_Vugmeyster2022_reference_fmi.zip" download>Avelumab_Vugmeyster2022_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference/Avelumab_Vugmeyster2022_reference_matlab.zip" download>Avelumab_Vugmeyster2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference/Avelumab_Vugmeyster2022_reference_matlab_simbio.zip" download>Avelumab_Vugmeyster2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference/Avelumab_Vugmeyster2022_reference_sbml.zip" download>Avelumab_Vugmeyster2022_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference/Avelumab_Vugmeyster2022_reference_cellml.zip" download>Avelumab_Vugmeyster2022_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 0.0007 | kg |
+| input | model | `Cl` | 7.611e-09 | m3/s |
+| input | model | `VdPerKg` | 4.5e-05 | m3/kg |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Vugmeyster Y, Grisic AM, Brockhaus B, Rueckert P, Ruisi M, Dai H et al. Avelumab Dose Selection for Clinical Studies in Pediatric Patients with Solid Tumors. Clinical pharmacokinetics 61(7):985–995 (2022). [doi:10.1007/s40262-022-01111-8](https://doi.org/10.1007/s40262-022-01111-8)
+
+**This record:** Pharmacolibrary, model `Avelumab_Vugmeyster2022_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference>
+
+```bibtex
+@misc{pharmacolibrary_AvelumabVugmeyster2022reference,
+  title  = {{Pharmacolibrary model Avelumab_Vugmeyster2022_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_avelumab/Avelumab_Vugmeyster2022_reference},
+  note   = {Parameters from doi:10.1007/s40262-022-01111-8},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

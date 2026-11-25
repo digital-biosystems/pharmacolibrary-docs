@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The durvalumab model's tmax (0.183) failed to match the paper's value (0.498), and covariate scenarios were not simulated.
+> The model does not reproduce the paper's time of the peak (tmax); the covariate scenarios were not simulated (+1 more).
 
-<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Abegesah2025_reference" status="needs_review" stale="false" population="patients with advanced cancers, including biliary tract cancer" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Abegesah2025_reference" status="needs_review" stale="false" population="patients with advanced biliary tract cancer and other solid tumors (pooled)" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Abegesah A, Oh DY, Lim K, Fan C, Chen C, Kim C et al. Population pharmacokinetics and exposure-response analysis of durvalumab in combination with gemcitabine and cisplatin in patients with advanced biliary tract cancer. Cancer chemotherapy and pharmacology 95(1):23 (2025).
@@ -17,15 +17,15 @@ Abegesah A, Oh DY, Lim K, Fan C, Chen C, Kim C et al. Population pharmacokinetic
 
 ## Population and dosing
 
-**Population:** patients with advanced cancers, including biliary tract cancer · condition advanced cancers, including biliary tract cancer, NSCLC, and SCLC · age group adult · n = 3141.
+**Population:** patients with advanced biliary tract cancer and other solid tumors (pooled) · condition advanced biliary tract cancer, non-small cell lung cancer, small cell lung cancer, advanced solid tumors · age group adult.
 
-**Dosing:** 7, 1400 mg, iv, multiple.
+**Dosing:** 7, 21, 70, 210, 700, 1050, 1400 mg, iv, multiple.
 
 ## Model
 
 **Structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted, plus 4 covariate effects.  
+**Parameters:** 4 extracted, plus 2 covariate effects.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference/Durvalumab_Abegesah2025_reference.svg" alt="Durvalumab_Abegesah2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -35,15 +35,13 @@ Abegesah A, Oh DY, Lim K, Fan C, Chen C, Kim C et al. Population pharmacokinetic
 
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
-| CL | CL | 0.298 | L/day | 1.99 | 0.0795 (None% RSE) |
-| V1 | V1 | 3.42 | L | 0.931 | 0.0593 (None% RSE) |
-| Q | Q | 0.453 | L/day | 5.76 |  |
+| CL | CL | 0.298 | L/day | 1.99 | 0.0390 (6.04% RSE) |
+| V1 | V1 | 3.42 | L | 0.931 |  |
+| Q | Q | 0.452 | L/day | 5.76 |  |
 | V2 | V2 | 1.99 | L | 2.23 |  |
-| crcl_on_cl | crcl_on_cl | 0.134 |  | 15.6 |  |
-| Tumor type 1 on CL | equation variable | 0.0096 |  | 185 |  |
-| sex_on_v1 | sex_on_v1 | -0.140 |  | 8.31 |  |
-| theta_q319_body_weight | theta_q319_body_weight | 0.342 |  | 9.96 |  |
-| theta_q319_body_weight | theta_q319_body_weight | 0.518 |  | 5.39 |  |
+| LAM | equation variable | 1.00 |  |  |  |
+| body_weight_on_v1 | body_weight_on_v1 | 0.515 |  | 5.39 |  |
+| theta_q319_body_weight | theta_q319_body_weight | 0.338 |  | 9.96 |  |
 
 ## Caveats
 
@@ -51,7 +49,7 @@ Abegesah A, Oh DY, Lim K, Fan C, Chen C, Kim C et al. Population pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.762). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.565), qwen3.8-27b (not confirmed, agreement 0.762). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,27 +59,25 @@ Abegesah A, Oh DY, Lim K, Fan C, Chen C, Kim C et al. Population pharmacokinetic
 
 ### Reviewer guidance
 
-**The durvalumab model's tmax (0.183) failed to match the paper's value (0.498), and covariate scenarios were not simulated.**
+**The model does not reproduce the paper's time of the peak (tmax); the covariate scenarios were not simulated (+1 more).**
 
-The simulated time of the peak was 0.183, differing from the paper's reported 0.498, exceeding the tolerance. The record defines covariate effects, but the simulation only exercised the reference individual, omitting the defined covariate scenarios. A second reader disagreed on the extraction of body weight and creatinine clearance covariates, with a verdict agreement of 0.762. Extracted — durvalumab: CL 0.298 L/day, V1 3.42 L, Q 0.453 L/day, V2 1.99 L.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — durvalumab: CL 0.298 L/day, V1 3.42 L, Q 0.452 L/day, V2 1.99 L.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of body_weight_on_v1: this record has none, the second reading 0.518; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of body_weight_on_v1: this record has 0.515, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 0.298 | L/day | 3.449e-09 | m3/s | L/h | 1.99 | exact (1) | Tab4:row2:col1, Tab4:row2:col2, Tab4:row2:col3 | 0.0795 (None% RSE) |
-| V1 | `Q63` · V1 | 3.42 | L | 0.00342 | m3 | L | 0.931 | exact (1) | Tab4:row3:col1, Tab4:row3:col2, Tab4:row3:col3 | 0.0593 (None% RSE) |
-| Q | `Q30` · Q | 0.453 | L/day | 5.243e-09 | m3/s | L/h | 5.76 | exact (1) | Tab4:row4:col1, Tab4:row4:col2, Tab4:row4:col3 |  |
-| V2 | `Q64` · V2 | 1.99 | L | 0.00199 | m3 | L | 2.23 | exact (1) | Tab4:row5:col1, Tab4:row5:col2, Tab4:row5:col3 |  |
-| crcl_on_cl | `Q900` · crcl_on_cl | 0.134 |  |  |  |  | 15.6 |  | Tab4:row11:col1, Tab4:row11:col2, Tab4:row11:col3 |  |
-| Tumor type 1 on CL | `Q900` · equation variable | 0.0096 |  |  |  |  | 185 | llm_corrected (0.6) | Tab4:row18:col1, Tab4:row18:col2, Tab4:row18:col3 |  |
-| sex_on_v1 | `Q900` · sex_on_v1 | -0.140 |  |  |  |  | 8.31 |  | Tab4:row21:col1, Tab4:row21:col2 |  |
-| theta_q319_body_weight | `Q900` · theta_q319_body_weight | 0.342 |  |  |  |  | 9.96 |  | Tab4:row17:col1, Tab4:row17:col2, Tab4:row17:col3 |  |
-| theta_q319_body_weight | `Q900` · theta_q319_body_weight | 0.518 |  |  |  |  | 5.39 |  | Tab4:row22:col1, Tab4:row22:col2, Tab4:row22:col3 |  |
+| CL | `Q22` · CL | 0.298 | L/day | 3.449e-09 | m3/s | l/d | 1.99 | exact (1) | Tab4:row2:col1 | 0.0390 (6.04% RSE) |
+| V1 | `Q63` · V1 | 3.42 | L | 0.00342 | m3 | l | 0.931 | exact (1) | Tab4:row3:col1 |  |
+| Q | `Q30` · Q | 0.452 | L/day | 5.231e-09 | m3/s | l/d | 5.76 | exact (1) | Tab4:row4:col1 |  |
+| V2 | `Q64` · V2 | 1.99 | L | 0.00199 | m3 | l | 2.23 | exact (1) | Tab4:row5:col1 |  |
+| LAM | `Q900` · equation variable | 1.00 |  | 1 |  |  |  | llm (0.6) | Tab4:row8:col1 |  |
+| body_weight_on_v1 | `Q900` · body_weight_on_v1 | 0.515 |  |  |  |  | 5.39 |  | Tab4:row22:col1 |  |
+| theta_q319_body_weight | `Q900` · theta_q319_body_weight | 0.338 |  |  |  |  | 9.96 |  | Tab4:row17:col1 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -97,81 +93,64 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 - table section iiv: 'ETA Tmax' routed out of structural estimates ('Interindividual variability')
 - table section residual_error: 'Proportional component' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive component' routed out of structural estimates ('Residual variability')
-- dropped value-less row: 'Tmax change CL'
-- dropped unlinked row (NIL): 'TC50 change CL' — extend the ontology if this is a real PK parameter (source ['Tab4:row7:col1', 'Tab4:row7:col2', 'Tab4:row7:col3'])
-- dropped unlinked row (NIL): 'LAM' — extend the ontology if this is a real PK parameter (source ['Tab4:row8:col1'])
-- dropped value-less row: 'Albumin on CL'
-- covariate level 'CrCL on CL' → Q900:crcl_on_cl = 0.134 (linear_fractional on Q22)
-- dropped value-less row: 'ECOG status on CL'
-- dropped duplicate Q22 ('LDH on CL', value '0.0516') — already have one for this compound
-- dropped value-less row: 'Sex on CL'
-- dropped value-less row: 'COMB1 on CL'
-- dropped value-less row: 'COMB2 on CL'
-- dropped unlinked row (NIL): 'Tumor type 2 on CL' — extend the ontology if this is a real PK parameter (source ['Tab4:row19:col1', 'Tab4:row19:col2', 'Tab4:row19:col3'])
-- dropped duplicate Q22 ('Tumor type 3 on CL', value '0.1661') — already have one for this compound
-- covariate level 'Sex on V1' → Q900:sex_on_v1 = -0.140 (linear_fractional on Q22)
+- table representations disagree for 'CL'; source reconciliation required
+- table representations disagree for 'V1'; source reconciliation required
+- table representations disagree for 'Q'; source reconciliation required
+- table representations disagree for 'V2'; source reconciliation required
+- table representations disagree for 'TC50 change CL'; source reconciliation required
+- table representations disagree for 'LAM'; source reconciliation required
+- table representations disagree for 'CrCL on CL'; source reconciliation required
+- table representations disagree for 'LDH on CL'; source reconciliation required
+- table representations disagree for 'Body weight on CL'; source reconciliation required
+- table representations disagree for 'Tumor type 1 on CL'; source reconciliation required
+- table representations disagree for 'Tumor type 2 on CL'; source reconciliation required
+- table representations disagree for 'Tumor type 3 on CL'; source reconciliation required
+- table representations disagree for 'Sex on V1'; source reconciliation required
+- table representations disagree for 'Body weight on V1'; source reconciliation required
+- unit_dimension_mismatch: 'TC50 change CL' → Q22 (unit '[time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('TC50 change CL', value '61.3') — already have one for this compound
+- dropped unlinked row (NIL): 'CrCL on CL' — extend the ontology if this is a real PK parameter (source ['Tab4:row11:col1'])
+- dropped unlinked row (NIL): 'LDH on CL' — extend the ontology if this is a real PK parameter (source ['Tab4:row13:col1'])
+- dropped unlinked row (NIL): 'Tumor type 1 on CL' — extend the ontology if this is a real PK parameter (source ['Tab4:row18:col1'])
+- dropped unlinked row (NIL): 'Tumor type 2 on CL' — extend the ontology if this is a real PK parameter (source ['Tab4:row19:col1'])
+- dropped unlinked row (NIL): 'Tumor type 3 on CL' — extend the ontology if this is a real PK parameter (source ['Tab4:row20:col1'])
+- dropped unlinked row (NIL): 'Sex on V1' — extend the ontology if this is a real PK parameter (source ['Tab4:row21:col1'])
+- covariate level 'Body weight on V1' → Q900:body_weight_on_v1 = 0.515 (linear_fractional on Q22)
 - covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'CL' → L/day (from the paper text: 'The paper states: “CL, 0.298 L/day” and identifies CL as clearance.')
-- implicit units: 'V1' → L (from the paper text: 'The paper states: “V1, 3.42 L” and identifies V1 as the volume of distribution of the central compartment.')
-- implicit units: 'Q' → L/day (from the paper text: 'The paper states: “Q, 0.452 L/day” and identifies Q as intercompartmental clearance.')
-- implicit units: 'V2' → L (from the paper text: 'The paper states: “V2, 1.99 L” and identifies V2 as the volume of distribution of the peripheral compartment.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=durvalumab
+- status held at "Needs review" — not promoted
 - molar mass: none found for 'durvalumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell Tab4:row2:col4 = '[0.283; 0.315]'
-- unparsed cell Tab4:row3:col4 = '[3.37; 3.47]'
-- unparsed cell Tab4:row4:col4 = '[0.374; 0.535]'
-- unparsed cell Tab4:row5:col4 = '[1.83; 2.15]'
-- unparsed cell Tab4:row6:col1 = '− 0.498'
-- unparsed cell Tab4:row6:col3 = '− 0.499'
-- unparsed cell Tab4:row6:col4 = '[− 0.551; − 0.446]'
-- unparsed cell Tab4:row7:col4 = '[44.5; 84.5]'
-- unparsed cell Tab4:row10:col1 = '− 0.589'
-- unparsed cell Tab4:row10:col3 = '− 0.596'
-- unparsed cell Tab4:row10:col4 = '[− 0.772; − 0.430]'
-- unparsed cell Tab4:row11:col4 = '[0.0925; 0.178]'
-- unparsed cell Tab4:row12:col1 = '− 0.0501'
-- unparsed cell Tab4:row12:col3 = '− 0.0495'
-- unparsed cell Tab4:row12:col4 = '[− 0.0725; − 0.0232]'
-- unparsed cell Tab4:row13:col4 = '[0.0262; 0.0740]'
-- unparsed cell Tab4:row14:col1 = '− 0.161'
-- unparsed cell Tab4:row14:col3 = '− 0.160'
-- unparsed cell Tab4:row14:col4 = '[− 0.184; − 0.136]'
-- unparsed cell Tab4:row15:col1 = '− 0.163'
-- unparsed cell Tab4:row15:col3 = '− 0.1631'
-- unparsed cell Tab4:row15:col4 = '[−0.192; − 0.132]'
-- unparsed cell Tab4:row16:col1 = '− 0.0929'
-- unparsed cell Tab4:row16:col3 = '− 0.0925'
-- unparsed cell Tab4:row16:col4 = '[− 0.136; 0.0489]'
-- unparsed cell Tab4:row17:col4 = '[0.270; 0.408]'
-- unparsed cell Tab4:row18:col4 = '[− 0.0228; 0.0466]'
-- unparsed cell Tab4:row19:col4 = '[0.00115; 0.143]'
-- unparsed cell Tab4:row20:col4 = '[0.0973; 0.236]'
-- unparsed cell Tab4:row21:col3 = '− 0.141'
-- unparsed cell Tab4:row21:col4 = '[− 0.162; − 0.116]'
-- unparsed cell Tab4:row22:col4 = '[0.463; 0.571]'
-- unparsed cell Tab4:row24:col4 = '[0.0698; 0.0887]'
-- unparsed cell Tab4:row25:col4 = '[0.0339; 0.0442]'
-- unparsed cell Tab4:row26:col4 = '[0.0500; 0.0677]'
-- unparsed cell Tab4:row27:col4 = '[0.0437; 0.0864]'
-- unparsed cell Tab4:row29:col4 = '[0.246; 0.263]'
-- unparsed cell Tab4:row30:col4 = '[3.55; 6.17]'
+- table Tab4: unbound_uncertainty
+- table Tab4: missing_unit_binding
+- table Tab4: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 4
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.565 (13/23 fields) | 10 |
 | `qwen3.8-27b` | not confirmed | 0.762 (16/21 fields) | 5 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>15 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[body_weight_on_v1]` | 0.515 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl].covariate_forms` | ['linear_fractional'] | ['linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[lam].parameter_id` | Q900 | Q67 | mismatch |
+| `gpt-oss-120b` | `parameters[tc50 change cl]` |  | 61.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_body_weight]` |  | 0.338 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_crcl]` |  | 0.136 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q314_body_weight]` |  | 0.515 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_body_weight]` | 0.338 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_sex]` |  | -0.140 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1].covariate_forms` | [] | ['linear_fractional'] | mismatch |
 | `qwen3.8-27b` | `parameters[body_weight_on_v1]` |  | 0.518 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cl].covariate_forms` | ['linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
 | `qwen3.8-27b` | `parameters[crcl_on_cl]` | 0.134 |  | only_one_extracted |
@@ -194,15 +173,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab4:row2:col1', 'Tab4:row2:col2', 'Tab4:row2:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab4:row4:col1', 'Tab4:row4:col2', 'Tab4:row4:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab4:row3:col1', 'Tab4:row3:col2', 'Tab4:row3:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab4:row5:col1', 'Tab4:row5:col2', 'Tab4:row5:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.298 | ['Tab4:row2:col1', 'Tab4:row2:col2', 'Tab4:row2:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab4:row2:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Tab4:row4:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Tab4:row3:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab4:row5:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.298 | ['Tab4:row2:col1'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0124 L/h | ['Tab4:row2:col1', 'Tab4:row2:col2', 'Tab4:row2:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.42 L | ['Tab4:row3:col1', 'Tab4:row3:col2', 'Tab4:row3:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 1.99 L | ['Tab4:row5:col1', 'Tab4:row5:col2', 'Tab4:row5:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0124 L/h | ['Tab4:row2:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.42 L | ['Tab4:row3:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 1.99 L | ['Tab4:row5:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -214,10 +193,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.762, 0 of 1 reader(s) agree | 0.762 | cross-check disputed by a second reader: verdict disputed, agreement 0.762, 0 of 1 reader(s) agree |
-| T1_tmax | reference | skipped | − 0.498 | 0.1833 |  | unresolved time unit '–' |
-| T1_tmax | reference | skipped | 0.0623 | 0.1833 |  | unresolved time unit '–' |
-| T1_tmax | reference | fail | 0.498 | 0.1833 | 0.3681 | →SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.565 (13 of 23 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.565 | cross-check contradicted by a second reader: verdict disputed; agreement 0.565 (13 of 23 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_tmax | reference | skipped |  | 0.1833 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | fail | 0.0623 | 0.1833 | 2.943 | reported 0.0623 →SI vs simulated h |
+| T1_tmax | reference | skipped | 0.498 | 0.1833 |  | unresolved time unit 'maximum change of CL over time' |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -256,8 +235,8 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminMass` | 7e-06 | kg |
 | input | model | `Cl` | 3.449e-09 | m3/s |
 | input | model | `VdPerKg` | 4.886e-05 | m3/kg |
-| input | model | `k12` | 1.533e-06 | 1/s |
-| input | model | `k21` | 2.635e-06 | 1/s |
+| input | model | `k12` | 1.53e-06 | 1/s |
+| input | model | `k21` | 2.629e-06 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -286,7 +265,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 7 mg infusion over 10 min, single dose. Doses in the paper: 7–1400 mg.
+**Administration: intravenous** — 7 mg infusion over 10 min, single dose. Doses in the paper: 7, 21, 70, 210, 700, 1050, 1400 mg.
 
 <dbs-fmusim paramsurl="drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference/Durvalumab_Abegesah2025_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference/Durvalumab_Abegesah2025_reference_sim_controls.json"></dbs-fmusim>
 
@@ -296,4 +275,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdurvalumab%5D%20Durvalumab_Abegesah2025_reference&body=Drug%3A%20durvalumab%0ARecord%3A%20Durvalumab_Abegesah2025_reference%0APaper%3A%20Abegesah_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_durvalumab/Durvalumab_Abegesah2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 12:18 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:13 UTC</sub>

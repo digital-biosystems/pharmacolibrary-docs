@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 01:32 | 0:51 | 0/0/0 | 1/0/0 | 0/0/0 | 51,377/3,892 | openai / gpt-6-luna | 3 | 0/3 | 3/0 | 0 |
+| 2026-11-23 22:44 | 0:12 | 0/0/0 | 1/0/0 | 0/0/0 | 4,398/183 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## Coverage
 
@@ -45,26 +45,19 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Jin_2016.pdf` | Jin F et al., Population pharmacokinetic modeling of…, Cancer chemotherapy and pha… (2016) | popPK | 10 | [10.1007/s00280-015-2891-8](https://doi.org/10.1007/s00280-015-2891-8) | [26645408](https://pubmed.ncbi.nlm.nih.gov/26645408) | A human population-PK model is reported, but numeric parameter values are not present in the provided evidence. |
-
-<sub>queue written 2026-10-07 01:31 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Jin_2016 | relevant | 10 | 1 | A human population-PK model is reported, but numeric parameter values are not present in the provided evidence. |
+| popPK | Jin_2016 | relevant | 10 | 2 | The paper describes a population PK model for idelalisib but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| PGx | Jin_2016 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic model for idelalisib but does not investigate or report the impact of any specific gene variants or genotypes on the drug's pharmacokinetics or pharmacodynamics. |
 | popPK | McLeod_2019 | irrelevant | 1 | 0 | Idelalisib is mentioned as a clinical reference and for an in-vitro IC50, but no numeric disposition parameters are provided. |
 | popPK | Montillo_2019 | irrelevant | 0 | 0 | This human trial reports quality-of-life outcomes, not quantitative pharmacokinetic disposition parameters. |
-| popPK | Ramanathan_2016 | irrelevant | 2 | 1 | This review mentions a population-PK model but provides no numeric disposition parameters. |
+| popPK | Ramanathan_2016 | irrelevant | 1 | 0 | The paper is a narrative review summarizing the pharmacokinetic profile of idelalisib and does not provide specific quantitative disposition parameters (e.g., numerical values for CL, V, or half-life). |
+| PGx | Ramanathan_2016 | not_relevant | 0 | 0 | The paper describes general pharmacokinetics, drug-drug interactions, and special populations (hepatic/renal) but does not report any effect of specific gene variants or genotypes (pharmacogenomics) on idelalisib PK/PD. |
 | popPK | Zimmerman_2023 | irrelevant | 0 | 0 | This is an in-vitro pharmacodynamic study and reports no idelalisib disposition parameters. |
-| popPK | Zimmerman_2023_2 | irrelevant | 0 | 0 | This is an in vitro/ex vivo mechanistic study and reports no quantitative idelalisib disposition parameters. |
+| popPK | Zimmerman_2023_2 | irrelevant | 0 | 0 | The paper is a mechanistic in-vitro study on PI3Kδ inhibition and glucocorticoid synergy, containing no pharmacokinetic parameters (CL, V, etc.) for idelalisib. |
+| PGx | Zimmerman_2023_2 | not_relevant | 2 | 5 | The paper reports a pharmacodynamic interaction (synergy) between idelalisib and glucocorticoids and characterizes the molecular mechanism (GR phosphorylation), but it does not report a pharmacogenomic effect (i.e., a gene variant/genotype in the patient) modifying the PK or PD of idelalisib. |
 
 
 </details>

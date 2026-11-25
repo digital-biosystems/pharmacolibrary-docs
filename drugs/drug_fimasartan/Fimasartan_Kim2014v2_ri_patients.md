@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The elimination rate constant kel for fimasartan is recorded in hours instead of per hour, creating a dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2014v2_ri_patients" status="rejected" stale="false" population="patients with renal impairment and healthy volunteers" measured-compound="fimasartan" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on
 
 ### Reviewer guidance
 
-**The elimination rate constant kel for fimasartan is recorded in hours instead of per hour, creating a dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].**
 
-The parameter kel, representing the terminal elimination rate constant, is assigned the value 0.067 with the unit 'h'. This unit dimension conflicts with the required reciprocal time dimension for a rate constant. Additionally, the model is parameterized as an apparent one-compartment model, whereas the second reader identifies it as mechanistic with specific volume and clearance parameters. Extracted — fimasartan: CL/F 80.2 L/h, kel 0.067 h, t1/2z 11.3 h.
+A reported unit could not be converted (kel), so that value has no SI equivalent. Extracted — fimasartan: CL/F 80.2 L/h, kel 0.067 h, t1/2z 11.3 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

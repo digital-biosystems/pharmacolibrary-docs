@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The exenatide record was rejected because the apparent intercompartmental clearance unit (L/day) conflicts with its required dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit L/day ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time]; Q66 unit mg/day ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Cirincione2017_combined_single_and_multiple_dose_m" status="rejected" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Cirincione B, Edwards J, Mager DE. Population Pharmacokinetics of an Extended-Re
 
 ### Reviewer guidance
 
-**The exenatide record was rejected because the apparent intercompartmental clearance unit (L/day) conflicts with its required dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit L/day ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time]; Q66 unit mg/day ([mass] / [time]) vs [mass] / [time].**
 
-The apparent intercompartmental clearance (Q) is assigned a value of 89.3 with units of L/day, which the review identified as a dimension mismatch against the required mass-based clearance dimension. Additionally, a reported unit could not be converted to standard SI units, leaving a parameter without a standardized value during processing. A second reader disagreed on multiple fields, including the dose compound, primary analyte, and several parameter values such as the EGFR power covariate effect and the bioavailability fraction. Extracted — exenatide: kabs 3.85 1/day, CLint 110 L/day, V 7.03 L, Fab 1.18 %, ktr 0.57 1/day, Km 567 pg/mL, Vmax 0.0372 mg/day, Q 89.3 L/day, … (+2).
+A reported unit could not be converted (CLint, Fab, equation variable and Km), so that value has no SI equivalent. Extracted — exenatide: kabs 3.85 1/day, CLint 110 L/day, V 7.03 L, Fab 1.18 %, ktr 0.57 1/day, Km 567 pg/mL, Vmax 0.0372 mg/day, Q 89.3 L/day, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

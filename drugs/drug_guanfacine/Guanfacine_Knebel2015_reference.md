@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held for review because a second reader could not extract the guanfacine parameters, including clearance of 33.1 L/h.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="guanfacine" model-id="Guanfacine_Knebel2015_reference" status="needs_review" stale="false" population="pediatric patients" measured-compound="guanfacine" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Knebel W, Corcoran M, Ermer J, Gastonguay MR. Population Pharmacokinetic Modelin
 
 ### Reviewer guidance
 
-**The record was held for review because a second reader could not extract the guanfacine parameters, including clearance of 33.1 L/h.**
+**cross_check_disputed; x1_cross_check.**
 
-The initial extraction identified four parameters for guanfacine in a one-compartment model. The second reader reported null values for all parameters, including clearance (33.1 L/h), volume (804 L), absorption rate (0.552 h⁻¹), and lag time (0.651 h). This complete lack of agreement resulted in a 0.25 agreement score. Extracted — guanfacine: CL/F 33.1 L/h, V/F 804 L, kabs 0.552 h -1, tlag 0.651 h.
+Extracted — guanfacine: CL/F 33.1 L/h, V/F 804 L, kabs 0.552 h -1, tlag 0.651 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has guanfacine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -161,7 +161,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (3 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (3 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

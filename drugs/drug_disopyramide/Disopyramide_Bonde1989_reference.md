@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment structure for disopyramide lacks the second peripheral compartment parameters, leaving it unreachable.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="disopyramide" model-id="Disopyramide_Bonde1989_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="disopyramide" parameterization="apparent" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Bonde J, Jensen NM, Pedersen LE, Angelo HR, Rasmussen SN, Trap-Jensen J et al. D
 
 ### Reviewer guidance
 
-**The two-compartment structure for disopyramide lacks the second peripheral compartment parameters, leaving it unreachable.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record specifies a two-compartment model for disopyramide but includes parameters for a second peripheral compartment, such as the transfer rate from the central compartment of 5.8 1/h. This creates an orphan compartment because the model structure does not accommodate the additional tissue volume. Consequently, the second peripheral compartment has no valid path from the dose, making the model structurally invalid. Extracted — disopyramide: kel 1.68 1/h, k12 15 1/h, k21 3.4 1/h, V1/F 18.7 L, V2 72 L, t1/2z 475 min, k13 5.8 1/h, k31 0.48 1/h, … (+1).
+Extracted — disopyramide: kel 1.68 1/h, k12 15 1/h, k21 3.4 1/h, V1/F 18.7 L, V2 72 L, t1/2z 475 min, k13 5.8 1/h, k31 0.48 1/h, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has disopyramide, the second reading unknown; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

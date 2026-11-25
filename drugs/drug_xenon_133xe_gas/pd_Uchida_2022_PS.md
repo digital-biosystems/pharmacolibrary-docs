@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V09E&quot;,&quot;href&quot;:&quot;atc/V09E.md&quot;},{&quot;label&quot;:&quot;xenon (133Xe) gas&quot;,&quot;href&quot;:&quot;drugs/drug_xenon_133xe_gas/&quot;},{&quot;label&quot;:&quot;Uchida_2022 \u00b7 PD steady-state response ratio&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# steady-state response ratio — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
+# steady-state response ratio — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 ## Record summary
 
-**As extracted:** Xe (the dose) drives steady-state response ratio: direct sigmoid Emax (Hill) effect.
+**As extracted:** Xenon_133xe_gas drives steady-state response ratio: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -25,9 +25,9 @@
 
 - **paper:** `Uchida_2022`
 - **model family:** `sigmoid_emax`
-- **driver:** `dose_only`
+- **driver:** `not_resolved`
 - **tier:** descriptive
-- **effect:** inhibition/additive
+- **effect:** inhibition/proportional
 
 ## Citation
 Uchida T et al., Behavior of Stimulus Response Signals i…, Neuroscience (2022)
@@ -36,7 +36,7 @@ Uchida T et al., Behavior of Stimulus Response Signals i…, Neuroscience (2022)
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| model term | k | `Q900` ·  | 0.24 ±0.07 | MPa | llm | Uchida_2022:pdv3 |
+| PD (effect) | k | `Q322` ·  | 0.24 ±0.07 | MPa | llm | Uchida_2022:pdv3 |
 | PD (effect) | n | `Q325` ·  | 2.2 ±0.9 |  | llm | Uchida_2022:pdv3 |
 
 <details class="legend">
@@ -46,20 +46,19 @@ Uchida T et al., Behavior of Stimulus Response Signals i…, Neuroscience (2022)
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.5 (3/6 fields) | 3 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `driver_compound` | Xe | xenon | mismatch |
-| `qwen3.8-27b` | `effect_form` | additive | unknown | mismatch |
-| `qwen3.8-27b` | `parameters[Q322]` |  | 0.24 ±0.07 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q900]` | 0.24 ±0.07 |  | only_one_extracted |
+| `gpt-oss-120b` | `driver_compound` | xenon_133xe_gas | xenon | mismatch |
+| `gpt-oss-120b` | `parameters[Q322].value` | 0.24 ±0.07 | 0.24 | mismatch |
+| `gpt-oss-120b` | `parameters[Q325].value` | 2.2 ±0.9 | 2.2 | mismatch |
 
 </details>
 
@@ -71,19 +70,9 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

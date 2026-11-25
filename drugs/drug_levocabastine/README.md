@@ -22,7 +22,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sharif_1996_3H_IPs_Ca2_i](drugs/drug_levocabastine/pd_Sharif_1996_3H_IPs_Ca2_i.md) | Histamine-induced inositol phosphates generation / intracellular calcium mobilization (antagonized by levocabastine) ← levocabastine · direct Emax (saturable) effect | — | Sharif NA et al., Human conjunctival epithelial cells exp…, Experimental eye research (1996) | [10.1006/exer.1996.0105](https://doi.org/10.1006/exer.1996.0105) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Desager_1995_nonlinear_relationship](drugs/drug_levocabastine/pd_Desager_1995_nonlinear_relationship.md) | nonlinear relationship ← levocabastine · model not identified | — | Desager JP et al., Pharmacokinetic-pharmacodynamic relatio…, Clinical pharmacokinetics (1995) | [10.2165/00003088-199528050-00006](https://doi.org/10.2165/00003088-199528050-00006) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sharif_1996_3H_IPs](drugs/drug_levocabastine/pd_Sharif_1996_3H_IPs.md) | histamine-induced phosphoinositide (PI) turnover ← levocabastine · direct sigmoid Emax (Hill) effect | — | Sharif NA et al., Human conjunctival epithelial cells exp…, Experimental eye research (1996) | [10.1006/exer.1996.0105](https://doi.org/10.1006/exer.1996.0105) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sharif_1996_Ca2_i](drugs/drug_levocabastine/pd_Sharif_1996_Ca2_i.md) | histamine-induced intracellular calcium mobilization ← levocabastine · direct sigmoid Emax (Hill) effect | — | Sharif NA et al., Human conjunctival epithelial cells exp…, Experimental eye research (1996) | [10.1006/exer.1996.0105](https://doi.org/10.1006/exer.1996.0105) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +38,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:09 | 0:26 | 0/0/0 | 1/0/0 | 0/0/0 | 15,238/760 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 23:31 | 0:04 | 0/0/0 | 0/3/0 | 0/0/0 | 4,035/170 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -53,17 +55,22 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Croci_1999.pdf` | Croci T et al., In vitro functional evidence of differe…, British journal of pharmaco… (1999) | pd | 4 | [10.1038/sj.bjp.0702734](https://doi.org/10.1038/sj.bjp.0702734) | [10482925](https://www.ncbi.nlm.nih.gov/pubmed/10482925) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 13:09 UTC</sub>
+<sub>queue written 2026-11-23 23:31 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Belmeguenai_2000 | irrelevant | 0 | 0 | Levocabastine is only used as an nts2 receptor ligand in an electrophysiology study; no PK parameters reported. |
+| popPK | Belmeguenai_2000 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study on neurotensin receptors in frog melanotropes where levocabastine is used only as a specific receptor antagonist probe, not for pharmacokinetic modeling. |
+| PGx | Belmeguenai_2000 | not_relevant | 0 | 0 | The paper does not report a pharmacogenomic effect; it describes the electrophysiological effect of neurotensin and the lack of effect of levocabastine on a G(q/11)-coupled receptor in frog pituitary melanotropes. |
 | popPK | Croci_1999 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
-| popPK | Desager_1995 | irrelevant | 3 | 1 | This is a review of PK-PD relationships for antihistamines; levocabastine is only mentioned as having a nonlinear relationship, with no numeric disposition parameters present in the evidence. |
-| popPK | Sharif_1996 | irrelevant | 0 | 0 | In-vitro receptor pharmacology study; levocabastine is only an antagonist probe with an IC50, no PK disposition parameters. |
-| popPK | Tóth_2016 | irrelevant | 0 | 0 | This is a receptor binding study of neuromedin N; levocabastine appears only as an NTS2 antagonist tool, with no PK parameters. |
+| PGx | Croci_1999 | not_relevant | 0 | 0 | The paper focuses on in vitro neurotensin receptors and colonic muscle response, showing no connection to levocabastine pharmacogenomics. |
+| popPK | Desager_1995 | irrelevant | 0 | 0 | The paper is a review discussing PK-PD relationships and mentions levocabastine, but it does not report original quantitative pharmacokinetic parameters (CL, V, ka, etc.) for the drug. |
+| PGx | Desager_1995 | not_relevant | 0 | 0 | The paper is a review of H1-antihistamines discussing PK-PD relationships but does not report any pharmacogenomic effects or genotype-specific data for levocabastine. |
+| popPK | Sharif_1996 | irrelevant | 0 | 0 | The study is an in vitro mechanistic pharmacology assay measuring receptor affinity (IC50) and cellular signaling, not pharmacokinetic disposition parameters (CL, V, t1/2) for levocabastine. |
+| PGx | Sharif_1996 | not_relevant | 0 | 0 | The paper reports a pharmacodynamic effect (H1 receptor antagonism) of levocabastine in human cells but does not investigate any genetic variants or genotypes that modify this effect. |
+| popPK | Tóth_2016 | irrelevant | 0 | 0 | The paper is a receptor binding study for neuromedin N, where levocabastine is used only as a specific antagonist for inhibition assays, not as a subject of pharmacokinetic analysis. |
+| PGx | Tóth_2016 | not_relevant | 0 | 0 | The paper reports binding characteristics of neuromedin N and receptor antagonism by levocabastine, but contains no pharmacogenomic analysis or gene variants affecting PK/PD parameters. |
 
 
 </details>

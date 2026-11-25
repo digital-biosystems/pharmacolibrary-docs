@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The terminal half-life for procainamide is recorded as 100.5 min, a duration incompatible with an elimination rate constant dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit min ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Kharidia1996_n_acetylprocainamide_a_100_mg_kg" status="rejected" stale="false" population="male Sprague Dawley rats" measured-compound="procainamide" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -53,13 +53,13 @@ Kharidia J, Eddington ND. Application of computer-assisted radiotelemetry in the
 
 ### Reviewer guidance
 
-**The terminal half-life for procainamide is recorded as 100.5 min, a duration incompatible with an elimination rate constant dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit min ([time]) vs 1 / [time].**
 
-The record labels the parameter 100.5 min as the elimination rate constant, which requires a reciprocal time unit. A dimension mismatch check confirmed the time unit conflicts with the required reciprocal time dimension for this structural parameter. Additionally, the unit for the total clearance parameter, mL min-1 kg-1, could not be converted to standard SI units, so no value was assigned. Extracted — procainamide: AUC 4.12e+03 µg·mL⁻¹·min, CL/F 24.6 mL·min⁻¹·kg⁻¹, Vss 3.6 L/kg, kel 100 min; N-acetylprocainamide: AUC 157 µg·mL⁻¹·min.
+A reported unit could not be converted (AUC, AUC and kel), so that value has no SI equivalent. Extracted — procainamide: AUC 4.12e+03 µg·mL⁻¹·min, CL/F 24.6 mL·min⁻¹·kg⁻¹, Vss 3.6 L/kg, kel 100 min; N-acetylprocainamide: AUC 157 µg·mL⁻¹·min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has procainamide, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

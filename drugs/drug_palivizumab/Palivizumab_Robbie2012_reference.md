@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;palivizumab&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/&quot;},{&quot;label&quot;:&quot;Robbie_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_unknown2020_reference&quot;,&quot;label&quot;:&quot;unknown_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_unknown2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_unknown2020_reference&quot;,&quot;label&quot;:&quot;unknown_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_unknown2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Total clearance of 62.3 mL/day is physiologically implausible for palivizumab, causing the record to fail the clearance magnitude check.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="palivizumab" model-id="Palivizumab_Robbie2012_reference" status="rejected" stale="false" population="adults and children" measured-compound="palivizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Robbie GJ, Zhao L, Mondick J, Losonsky G, Roskos LK. Population pharmacokinetics
 
 ### Reviewer guidance
 
-**Total clearance of 62.3 mL/day is physiologically implausible for palivizumab, causing the record to fail the clearance magnitude check.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The total clearance parameter was extracted as 62.3 mL/day, a value far outside the expected physiological range for this monoclonal antibody. A second reader identified the clearance value as 11.0, indicating a discrepancy in how the paper's table was parsed. The record also contains several weight exponent parameters (198, 3.20, 3.83) that do not align with standard allometric scaling powers. Extracted — palivizumab: Q 1.2 mL/day, kabs 1.01 day Ϫ1, Fab 0.694, t1/2β 0.411 day, CL 62.3 mL/day, V1 263 ml, V2 143 ml.
+Extracted — palivizumab: Q 1.2 mL/day, kabs 1.01 day Ϫ1, Fab 0.694, t1/2β 0.411 day, CL 62.3 mL/day, V1 263 ml, V2 143 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading 11.0; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

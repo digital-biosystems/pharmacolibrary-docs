@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Natalizumab Vmax unit mg/d could not be converted to SI, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/d ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_van2025_reference" status="rejected" stale="false" population="patients with multiple sclerosis" measured-compound="natalizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ van den Berg SPH, Toorop AA, Hooijberg F, Wolbink G, Voelkner NMF, Gelissen LMY 
 
 ### Reviewer guidance
 
-**Natalizumab Vmax unit mg/d could not be converted to SI, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/d ([mass] / [time]) vs [mass] / [time].**
 
-The model specifies a maximum elimination rate (Vmax) of 2.86 mg/d, but this unit could not be converted to SI. Additionally, the second reader disagreed on the value for Km, recording 0.85 mg/L instead of the listed 0.875 mg/L. The record also contains duplicate entries for a body weight covariate effect with values 0.6 and 0.26. Extracted — natalizumab: CL 0.164 L/d, V1 3.48 L, V2 3.48 L, Q 0.4 L/d, Vmax 2.86 mg/d, Km 0.875 mg/L, kabs 0.213 /day, tlag 2.61 h.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — natalizumab: CL 0.164 L/d, V1 3.48 L, V2 3.48 L, Q 0.4 L/d, Vmax 2.86 mg/d, Km 0.875 mg/L, kabs 0.213 /day, tlag 2.61 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has natalizumab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

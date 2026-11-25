@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The apparent volume of distribution, recorded as 160983.32 mL, conflicts with the second reader's 12.5 mL.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Matsota2024_arterial" status="needs_review" stale="false" population="adult patients undergoing open thoracotomy" measured-compound="ropivacaine" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Matsota P, Karalis V, Saranteas T, Kiospe F, Markantonis SL. Ropivacaine pharmac
 
 ### Reviewer guidance
 
-**The apparent volume of distribution, recorded as 160983.32 mL, conflicts with the second reader's 12.5 mL.**
+**cross_check_disputed; x1_cross_check.**
 
-For this extravascular drug, the extracted values represent apparent pharmacokinetic parameters divided by bioavailability. A second reader disputed the record, specifically identifying the volume of distribution as 12.5 mL rather than the 160983.32 mL listed. The disagreement also extended to the clearance estimate and the omission of a lag time parameter. Extracted — ropivacaine: V/F 1.61e+05 mL, CL 190 mL/min, kabs 32 h-1.
+Extracted — ropivacaine: V/F 1.61e+05 mL, CL 190 mL/min, kabs 32 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of asince ropivacaine administration is extravascular, the vap and cl estimates actually refer to vap/f and cl/f, respectively, where f is the bioavailable fraction: this record has none, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,7 +152,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.333 (4 of 12 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check contradicted by a second reader: verdict disputed; agreement 0.333 (4 of 12 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

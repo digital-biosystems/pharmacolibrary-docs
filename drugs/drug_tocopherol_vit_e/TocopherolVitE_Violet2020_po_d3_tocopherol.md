@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because d6-α-tocopherol’s elimination rate constant, 0.022, was reported in an incompatible unit, Ke.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit Ke ([current] * [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_po_d3_tocopherol" status="rejected" stale="false" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="d6-α-tocopherol" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Violet PC, Ebenuwa IC, Wang Y, Niyyati M, Padayatty SJ, Head B et al. Vitamin E 
 
 ### Reviewer guidance
 
-**The record was rejected because d6-α-tocopherol’s elimination rate constant, 0.022, was reported in an incompatible unit, Ke.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit Ke ([current] * [time]) vs 1 / [time].**
 
-The reported unit was assessed as current multiplied by time, whereas an elimination rate constant requires reciprocal time; Ke could not be converted to SI, leaving no SI value for the parameter. A second reader recorded the elimination rate as 0.024, rather than 0.022. Extracted — d6-α-tocopherol: kel 0.022 Ke, t1/2z 31.5 h, Cmax 0.28, tmax 11.4 h, AUCt 10.7.
+A reported unit could not be converted (kel), so that value has no SI equivalent. None of the extracted parameters is tocopherol vit e's own; they describe d6-α-tocopherol. Extracted — d6-α-tocopherol: kel 0.022 Ke, t1/2z 31.5 h, Cmax 0.28, tmax 11.4 h, AUCt 10.7.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has deuterated α-tocopherols, the second reading deuterated α-tocopherol (d3 and d6); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

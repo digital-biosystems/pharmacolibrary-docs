@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;cisplatin&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/&quot;},{&quot;label&quot;:&quot;Erdlenbruch_2001 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Imbs2016_reference&quot;,&quot;label&quot;:&quot;Imbs_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Imbs2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mody_2022_R&quot;,&quot;label&quot;:&quot;Mody_2022 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/pd_Mody_2022_R.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mody_2022_R&quot;,&quot;label&quot;:&quot;Mody_2022 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/pd_Mody_2022_R.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Only clearance was extracted — no volume; aUC/dose has no unit.
+> Only clearance was extracted — no volume; aUC has no unit.
 
-<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Erdlenbruch2001_reference" status="needs_review" stale="false" population="paediatric patients with solid tumours receiving cisplatin" measured-compound="free platinum (Pt)" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Erdlenbruch2001_reference" status="needs_review" stale="false" population="paediatric oncology patients" measured-compound="free platinum" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Erdlenbruch B, Nier M, Kern W, Hiddemann W, Pekrun A, Lakomek M. Pharmacokinetics of cisplatin and relation to nephrotoxicity in paediatric patients. European journal of clinical pharmacology 57(5):393–402 (2001).
@@ -17,9 +17,9 @@ Erdlenbruch B, Nier M, Kern W, Hiddemann W, Pekrun A, Lakomek M. Pharmacokinetic
 
 ## Population and dosing
 
-**Population:** paediatric patients with solid tumours receiving cisplatin · condition solid tumours · age group child · n = 12.
+**Population:** paediatric oncology patients · condition solid tumours · age group child.
 
-**Dosed compound ≠ measured compound:** dosed cisplatin, measured free platinum (Pt).
+**Dosed compound ≠ measured compound:** dosed cisplatin, measured free platinum.
 
 ## Model
 
@@ -35,12 +35,12 @@ Erdlenbruch B, Nier M, Kern W, Hiddemann W, Pekrun A, Lakomek M. Pharmacokinetic
 |---|---|---|---|
 | initial half-life | t1/2α | 21.6 | min |
 | terminal half-life | t1/2z | 25.9 | h |
-| area under the plasma concentration-time curve (AUC) | AUC/dose | 13.5 | (microg/ml) x h/(100 mg/m2) |
-| cumulative renal elimination(infinity) | fe | 41.7 | % of dose |
+| area under the plasma concentration-time curve (AUC) | AUC | 13.5 | (microg/ml) x h/(100 mg/m2) |
+| cumulative renal elimination(infinity) | Frel | 41.7 | % of dose |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231), qwen3.8-27b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,11 @@ Erdlenbruch B, Nier M, Kern W, Hiddemann W, Pekrun A, Lakomek M. Pharmacokinetic
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; aUC/dose has no unit.**
+**Only clearance was extracted — no volume; aUC has no unit.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is cisplatin's own; they describe free platinum (Pt). Extracted — free platinum (Pt): t1/2α 21.6 min, t1/2z 25.9 h, AUC/dose 13.5 (microg/ml) x h/(100 mg/m2), fe 41.7 % of dose.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is cisplatin's own; they describe free platinum. Extracted — free platinum: t1/2α 21.6 min, t1/2z 25.9 h, AUC 13.5 (microg/ml) x h/(100 mg/m2), Frel 41.7 % of dose.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has free platinum (Pt), the second reading free platinum; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has free platinum, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,9 +63,9 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | initial half-life | `Q59` · t1/2α | 21.6 | min | 1296 | s | min | llm (0.6) | Erdlenbruch_2001:abstract |
-| terminal half-life | `Q57` · t1/2z | 25.9 | h | 9.324e+04 | s | h | llm (0.6) | Erdlenbruch_2001:abstract |
-| area under the plasma concentration-time curve (AUC) | `Q189` · AUC/dose | 13.5 | (microg/ml) x h/(100 mg/m2) |  |  | (h·µg·ml)/(100mg·m2) | llm (0.6) | Erdlenbruch_2001:abstract |
-| cumulative renal elimination(infinity) | `Q44` · fe | 41.7 | % of dose |  |  | %·ofdose | llm (0.6) | Erdlenbruch_2001:abstract |
+| terminal half-life | `Q57` · t1/2z | 25.9 | h | 9.324e+04 | s | h | half_life_rule (0.95) | Erdlenbruch_2001:abstract |
+| area under the plasma concentration-time curve (AUC) | `Q88` · AUC | 13.5 | (microg/ml) x h/(100 mg/m2) |  |  | (h·µg·ml)/(100mg·m2) | llm (0.6) | Erdlenbruch_2001:abstract |
+| cumulative renal elimination(infinity) | `Q87` · Frel | 41.7 | % of dose | 0.417 |  | %·dose·of | llm (0.6) | Erdlenbruch_2001:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,36 +75,44 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: '(microg/ml) x h/(100 mg/m2)' (AUC/dose)
-- unit_dimension_unknown: '% of dose' (fe)
-- implicit units: 'area under the plasma concentration-time curve (AUC)' — the LLM proposed 'h/L', whose dimension does not fit Q189; left unset
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=free platinum (Pt)
+- unit_dimension_unknown: '(microg/ml) x h/(100 mg/m2)' (AUC)
+- unit_dimension_unknown: '% of dose' (Frel)
+- dropped unlinked row (NIL): 'The creatinine clearance' — extend the ontology if this is a real PK parameter (source ['Erdlenbruch_2001:abstract'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=free platinum
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 0 linked by role
-- molar mass: no plausible PubChem entry for 'free platinum (Pt)' ('free platinum') — left in mass units
-- molar mass: none found for 'free platinum (Pt)' — its concentrations stay mass-only
+- molar mass: no plausible PubChem entry for 'free platinum' ('free platinum') — left in mass units
+- molar mass: none found for 'free platinum' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'free platinum (Pt)', not cisplatin — the review values are the parent's
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Erdlenbruch_2001_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Erdlenbruch_2001_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 | `qwen3.8-27b` | not confirmed | 0.25 (3/12 fields) | 9 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>19 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[area under the plasma concentration-time curve]` |  | 13.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[area under the plasma concentration-time curve]` | 13.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[creatinine clearance]` |  | 70 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cumulative renal elimination]` |  | 41.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cumulative renal elimination]` | 41.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[initial half-life]` |  | 21.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[initial half-life]` | 21.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` |  | 25.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` | 25.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | free platinum | unknown | mismatch |
 | `qwen3.8-27b` | `parameters[area under the plasma concentration-time curve]` |  | 13.5 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[area under the plasma concentration-time curve]` | 13.5 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cumulative renal elimination]` |  | 41.7 | only_one_extracted |
@@ -132,7 +140,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Erdlenbruch_2001:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Erdlenbruch_2001:abstract'] |
-| C5_unit_missing_Q189 | fail | [mass] * [time] / [length] ** 3 | (microg/ml) x h/(100 mg/m2) | ['Erdlenbruch_2001:abstract'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | (microg/ml) x h/(100 mg/m2) | ['Erdlenbruch_2001:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -167,4 +175,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcisplatin%5D%20Cisplatin_Erdlenbruch2001_reference&body=Drug%3A%20cisplatin%0ARecord%3A%20Cisplatin_Erdlenbruch2001_reference%0APaper%3A%20Erdlenbruch_2001%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cisplatin/Cisplatin_Erdlenbruch2001_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 22:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 17:40 UTC</sub>

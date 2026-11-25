@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Rupatadine’s apparent clearance (CL/F), 547 L/h, is held back because a second reader could not confirm rupatadine as the dose compound or primary analyte.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="rupatadine" model-id="Rupatadine_Santamara2017_base" status="needs_review" stale="false" population="6-11 year olds with allergic rhinitis" measured-compound="rupatadine" parameterization="apparent" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Santamaría E, Estévez JA, Riba J, Izquierdo I, Valle M. Population pharmacokin
 
 ### Reviewer guidance
 
-**Rupatadine’s apparent clearance (CL/F), 547 L/h, is held back because a second reader could not confirm rupatadine as the dose compound or primary analyte.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader marked both the dose compound and primary analyte as unknown; agreement was 0.8, with 0 of 1 reader agreeing. The record assumes F=1 and Fm=1 with no molar correction, and reports no parameter-specific failure. Extracted — rupatadine: kabs 0.53 h–1, tlag 0.22 h, CL/F 547 L/h, V1/F 102 L, Q/F 208 L/h, V2/F 1.54e+03 L.
+Extracted — rupatadine: kabs 0.53 h–1, tlag 0.22 h, CL/F 547 L/h, V1/F 102 L, Q/F 208 L/h, V2/F 1.54e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rupatadine, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -145,7 +145,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.8 (8 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | cross-check contradicted by a second reader: verdict disputed; agreement 0.8 (8 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

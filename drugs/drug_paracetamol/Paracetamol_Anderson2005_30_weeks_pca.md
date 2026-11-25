@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The hydrolysis half-life recorded in hours conflicts with the expected rate constant dimension, rejecting the paracetamol record.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Anderson2005_30_weeks_pca" status="rejected" stale="false" population="children" measured-compound="paracetamol" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Anderson BJ, Pons G, Autret-Leca E, Allegaert K, Boccard E. Pediatric intravenou
 
 ### Reviewer guidance
 
-**The hydrolysis half-life recorded in hours conflicts with the expected rate constant dimension, rejecting the paracetamol record.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].**
 
-The parameter for hydrolysis has the value 0.0026 with the unit hour, which is dimensionally incompatible with the expected rate constant units. The model structure lacks a link for propacetamol hydrolysis to paracetamol, leaving the metabolite unlinked from the parent drug. The unit was not recognized, preventing conversion to standard SI units. Extracted — paracetamol: CLm/F 2.9 L·h⁻¹ 70 kg⁻¹, V1 0.34 L·kg⁻¹, Q 2.09 L·h⁻¹·kg⁻¹, kabs 0.0026 h, V2 43.1 L·70 kg⁻¹.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — paracetamol: CLm/F 2.9 L·h⁻¹ 70 kg⁻¹, V1 0.34 L·kg⁻¹, Q 2.09 L·h⁻¹·kg⁻¹, kabs 0.0026 h, V2 43.1 L·70 kg⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading propacetamol → paracetamol (hydrolysis); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

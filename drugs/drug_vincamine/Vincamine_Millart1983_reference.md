@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Vincamine’s reported Tmax of 1.4 h-1 is dimensionally inconsistent with a time, and the exposure-only record lacks volume and clearance for a compartmental popPK model.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q56 unit h-1 (1 / [time]) vs [time]; Q32 unit micrograms ([mass]) vs [mass] / [length] ** 3; Q88 unit micrograms ([mass]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="vincamine" model-id="Vincamine_Millart1983_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="vincamine" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Millart H, Lamiable D, Houin G, Plat M, Choisy H, Tillement JP. Pharmacokinetic 
 
 ### Reviewer guidance
 
-**Vincamine’s reported Tmax of 1.4 h-1 is dimensionally inconsistent with a time, and the exposure-only record lacks volume and clearance for a compartmental popPK model.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q56 unit h-1 (1 / [time]) vs [time]; Q32 unit micrograms ([mass]) vs [mass] / [length] ** 3; Q88 unit micrograms ([mass]) vs [mass] * [time] / [length] ** 3.**
 
-Tmax is the time of peak concentration, but its reported unit is h-1; Cmax 155 micrograms is mass rather than concentration, and AUC 443 micrograms is mass rather than concentration-time. No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — vincamine: tmax 1.4 h-1, Cmax 155 micrograms, AUC 443 micrograms.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — vincamine: tmax 1.4 h-1, Cmax 155 micrograms, AUC 443 micrograms.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

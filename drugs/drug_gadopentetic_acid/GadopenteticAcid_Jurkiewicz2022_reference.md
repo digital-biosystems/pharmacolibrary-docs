@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Gadopentetic acid was rejected because its 2-compartment topology defines a peripheral volume with no path from the central compartment dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="gadopentetic acid" model-id="GadopenteticAcid_Jurkiewicz2022_reference" status="rejected" stale="false" population="" measured-compound="gadopentetic_acid" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,13 +46,13 @@ Jurkiewicz E, Tsvetkova S, Grinberg A, Pasquiers B. Pharmacokinetics, Safety, an
 
 ### Reviewer guidance
 
-**Gadopentetic acid was rejected because its 2-compartment topology defines a peripheral volume with no path from the central compartment dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record specifies a 2-compartment structure with a central volume of 0.12 L/kg and a peripheral volume of 0.06 L/kg. The review found the peripheral compartment unreachable, indicating no connection from the dose site to the peripheral space. Consequently, the model could not simulate the peripheral concentration, leading to rejection. Extracted — gadopentetic acid: CL 0.12 L/h/kg, V1 0.12 L/kg, V2 0.06 L/kg.
+Extracted — gadopentetic acid: CL 0.12 L/h/kg, V1 0.12 L/kg, V2 0.06 L/kg.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q17: this record has none, the second reading 582; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,4 +139,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgadopentetic_acid%5D%20GadopenteticAcid_Jurkiewicz2022_reference&body=Drug%3A%20gadopentetic_acid%0ARecord%3A%20GadopenteticAcid_Jurkiewicz2022_reference%0APaper%3A%20Jurkiewicz_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gadopentetic_acid/GadopenteticAcid_Jurkiewicz2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:59 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 12:31 UTC</sub>

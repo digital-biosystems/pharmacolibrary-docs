@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span>
 
-> Model for trastuzumab deruxtecan rejected because the one-compartment structure ignores the defined metabolite link, and covariate effects were not simulated.
+> The covariate scenarios were not simulated; t3_output_variable (+2 more).
 
 <div class="pk-model-meta" hidden drug="trastuzumab deruxtecan" model-id="TrastuzumabDeruxtecan_Yin2021_final" status="rejected" stale="false" population="patients with HER2-positive breast cancer and other solid tumors" measured-compound="trastuzumab_deruxtecan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -63,13 +63,13 @@ Yin O, Xiong Y, Endo S, Yoshihara K, Garimella T, AbuTarif M et al. Population P
 
 ### Reviewer guidance
 
-**Model for trastuzumab deruxtecan rejected because the one-compartment structure ignores the defined metabolite link, and covariate effects were not simulated.**
+**The covariate scenarios were not simulated; t3_output_variable (+2 more).**
 
-The record specifies a parent-metabolite topology for trastuzumab deruxtecan, yet the model structure is a single central compartment without a path for the released drug. Although covariate effects like body weight on clearance are defined, only the reference individual was simulated, leaving these effects unverified. A second reader also disputed the identification of the dose compound and several parameter values. Extracted — trastuzumab deruxtecan: CL 0.421 L/day, V1 2.77 L, Q 0.199 L/day, V2 5.16 L.
+The base model was simulated, not the covariate effects the record defines. Extracted — trastuzumab deruxtecan: CL 0.421 L/day, V1 2.77 L, Q 0.199 L/day, V2 5.16 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trastuzumab_deruxtecan, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -201,7 +201,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.304, 0 of 1 reader(s) agree | 0.304 | cross-check disputed by a second reader: verdict disputed, agreement 0.304, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.304 (7 of 23 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.304 | cross-check contradicted by a second reader: verdict disputed; agreement 0.304 (7 of 23 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmin_ss | reference | skipped | 23 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">

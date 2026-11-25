@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;dexmedetomidine&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/&quot;},{&quot;label&quot;:&quot;James_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexmedetomidine_Ber2020_reference&quot;,&quot;label&quot;:&quot;Ber_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Ber2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_Huang2025_reference&quot;,&quot;label&quot;:&quot;Huang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Huang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_James2022_reference&quot;,&quot;label&quot;:&quot;James_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_James2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dexmedetomidine_Levionnois2022_reference&quot;,&quot;label&quot;:&quot;Levionnois_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Levionnois2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2A&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12A&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2A.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2B&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2C&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2A&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12A&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2A.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2B&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2C&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexmedetomidine_Ber2020_reference&quot;,&quot;label&quot;:&quot;Ber_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Ber2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_James2022_reference&quot;,&quot;label&quot;:&quot;James_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_James2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dexmedetomidine_Levionnois2022_reference&quot;,&quot;label&quot;:&quot;Levionnois_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Levionnois2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_Huang2025_reference&quot;,&quot;label&quot;:&quot;Huang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Huang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2A&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12A&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2A.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2B&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2C&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2A&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12A&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2A.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2B&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2C&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dexmedetomidine — `Dexmedetomidine_James2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Dexmedetomidine two-compartment parameters from James_2022 are abstract-only and disputed due to conflicting compound identification and null second-reader values.
-
-<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_James2022_reference" status="needs_review" stale="false" population="paediatric post-cardiac surgery patients" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_James2022_reference" status="simulated" stale="false" population="paediatric post-cardiac surgery patients" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 James NT, Breeyear JH, Caprioli R, Edwards T, Hachey B, Kannankeril PJ et al. Population pharmacokinetic analysis of dexmedetomidine in children using real-world data from electronic health records and remnant specimens. British journal of clinical pharmacology 88(6):2885–2898 (2022).
@@ -17,7 +15,7 @@ James NT, Breeyear JH, Caprioli R, Edwards T, Hachey B, Kannankeril PJ et al. Po
 
 ## Population and dosing
 
-**Population:** paediatric post-cardiac surgery patients · condition post-cardiac surgery · age group mixed · n = 354.
+**Population:** paediatric post-cardiac surgery patients · condition post-cardiac surgery · age group mixed.
 
 ## Model
 
@@ -29,8 +27,6 @@ James NT, Breeyear JH, Caprioli R, Edwards T, Hachey B, Kannankeril PJ et al. Po
 <figure class="pk-models-diagram"><img src="drugs/drug_dexmedetomidine/Dexmedetomidine_James2022_reference/Dexmedetomidine_James2022_reference.svg" alt="Dexmedetomidine_James2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | total clearance | CL | 27.3 | L/h |
@@ -40,7 +36,7 @@ James NT, Breeyear JH, Caprioli R, Edwards T, Hachey B, Kannankeril PJ et al. Po
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +46,13 @@ James NT, Breeyear JH, Caprioli R, Edwards T, Hachey B, Kannankeril PJ et al. Po
 
 ### Reviewer guidance
 
-**Dexmedetomidine two-compartment parameters from James_2022 are abstract-only and disputed due to conflicting compound identification and null second-reader values.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-The record was built from the abstract alone, so reported summary statistics stand in for a fitted model. A second reader marked all four parameters as null, disagreeing with the extracted values for clearance, central and peripheral volumes, and intercompartmental clearance. The cross-check failed with an agreement of 0.167 because the second reader also could not identify the dose or analyte compound. Extracted — dexmedetomidine: CL 27.3 L/h, V1 161 L, Q 26 L/h, V2 7.9e+03 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dexmedetomidine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -85,29 +81,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
 
-<details><summary>10 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[central compartment volume of distribution]` | 161 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[central compartment volume of distribution]` |  | 161 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[intercompartmental clearance]` | 26.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[intercompartmental clearance]` |  | 26.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[peripheral compartment volume of distribution]` | 7903 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[peripheral compartment volume of distribution]` |  | 7903 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total clearance]` | 27.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total clearance]` |  | 27.3 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | dexmedetomidine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | dexmedetomidine | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -142,7 +123,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -158,7 +139,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dexmedetomidine/Dexmedetomidine_James2022_reference/Dexmedetomidine_James2022_reference_modelica.zip" download>Dexmedetomidine_James2022_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dexmedetomidine/Dexmedetomidine_James2022_reference/Dexmedetomidine_James2022_reference_modelica.zip" download>Dexmedetomidine_James2022_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dexmedetomidine/Dexmedetomidine_James2022_reference/Dexmedetomidine_James2022_reference_fmi.zip" download>Dexmedetomidine_James2022_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dexmedetomidine/Dexmedetomidine_James2022_reference/Dexmedetomidine_James2022_reference_matlab.zip" download>Dexmedetomidine_James2022_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dexmedetomidine/Dexmedetomidine_James2022_reference/Dexmedetomidine_James2022_reference_matlab_simbio.zip" download>Dexmedetomidine_James2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -222,4 +203,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdexmedetomidine%5D%20Dexmedetomidine_James2022_reference&body=Drug%3A%20dexmedetomidine%0ARecord%3A%20Dexmedetomidine_James2022_reference%0APaper%3A%20James_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dexmedetomidine/Dexmedetomidine_James2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:17 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 20:56 UTC</sub>

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09X&quot;,&quot;href&quot;:&quot;atc/C09X.md&quot;},{&quot;label&quot;:&quot;sparsentan&quot;,&quot;href&quot;:&quot;drugs/drug_sparsentan/&quot;},{&quot;label&quot;:&quot;Wada_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sparsentan_Wada2023_reference&quot;,&quot;label&quot;:&quot;Wada_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sparsentan/Sparsentan_Wada2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sparsentan_Wada2023_reference&quot;,&quot;label&quot;:&quot;Wada_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sparsentan/Sparsentan_Wada2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sparsentan — `Sparsentan_Wada2023_reference`
 
-> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="sparsentan" model-id="Sparsentan_Wada2023_reference" status="simulated" stale="false" population="healthy volunteers and patients with focal segmental glomerulosclerosis" measured-compound="sparsentan" parameterization="apparent" topology="2C"></div>
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
+
+<div class="pk-model-meta" hidden drug="sparsentan" model-id="Sparsentan_Wada2023_reference" status="needs_review" stale="false" population="healthy volunteers and patients with focal segmental glomerulosclerosis" measured-compound="sparsentan" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Wada R, Kleijn HJ, Zhang L, Chen SC. Population pharmacokinetic analysis of sparsentan in healthy volunteers and patients with focal segmental glomerulosclerosis. CPT: pharmacometrics & systems pharmacology 12(8):1080–1092 (2023).
@@ -29,6 +31,8 @@ Wada R, Kleijn HJ, Zhang L, Chen SC. Population pharmacokinetic analysis of spar
 <figure class="pk-models-diagram"><img src="drugs/drug_sparsentan/Sparsentan_Wada2023_reference/Sparsentan_Wada2023_reference.svg" alt="Sparsentan_Wada2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | CL/F (L/h) | CL/F | 3.88 | L/h | 4.6 | 39.5 (None% RSE) |
@@ -49,7 +53,7 @@ Wada R, Kleijn HJ, Zhang L, Chen SC. Population pharmacokinetic analysis of spar
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.655). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,11 +63,13 @@ Wada R, Kleijn HJ, Zhang L, Chen SC. Population pharmacokinetic analysis of spar
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The base model was simulated, not the covariate effects the record defines.
+The base model was simulated, not the covariate effects the record defines. Extracted — sparsentan: CL/F 3.88 L/h, V1/F 49.3 L, Q/F 2.03 L/h, V2/F 12.1 L, kabs 0.74 1/h, tlag 0.32 h, t1/2z 9.6 h, CL 1.23 L/h.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].covariate_forms`: this record has ['linear_fractional', 'linear_fractional', 'power'], the second reading ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional']; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,6 +135,36 @@ The base model was simulated, not the covariate effects the record defines.
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.655 (19/29 fields) | 10 |
+
+<details><summary>10 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | ['linear_fractional', 'linear_fractional', 'power'] | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[crcl]` | 0.222 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cyp3a4_inhibitor]` |  | 5.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose on f rel]` |  | -0.495 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[formulation]` |  | 0.74 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[moderate_cyp3a4]` | -0.273 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[race]` |  | 95 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[sex]` |  | 6.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[strong_cyp3a4]` | -1.069 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical v c /f]` |  | 69 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -154,20 +190,20 @@ The base model was simulated, not the covariate effects the record defines.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=sparsentan) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 7 scholar param(s) emitted or defaulted | 7 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  | no second reading of this record |
-| T1_cmax | reference | skipped |  | 0.002468 | non-numeric value |
-| T1_cmax | reference | skipped | 99 | 0.002468 | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 16 | 0.002468 | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 10 | 0.002468 | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=sparsentan) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 7 scholar param(s) emitted or defaulted | 7 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.655 (19 of 29 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.655 | cross-check contradicted by a second reader: verdict disputed; agreement 0.655 (19 of 29 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 0.002468 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped | 99 | 0.002468 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 16 | 0.002468 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
+| T1_cmax | reference | skipped | 10 | 0.002468 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>

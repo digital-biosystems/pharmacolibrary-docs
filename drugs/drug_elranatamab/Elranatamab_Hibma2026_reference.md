@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The elranatamab record was rejected because intercompartmental clearance Q is listed as 0.225 L/day, while the finding assigns it the incompatible unit nM.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nM ([length]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="elranatamab" model-id="Elranatamab_Hibma2026_reference" status="rejected" stale="false" population="patients with relapsed or refractory multiple myeloma" measured-compound="elranatamab" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Hibma JE, Irby D, Liu A, Elmeliegy M, King LE, Gifondorwa D et al. Elranatamab P
 
 ### Reviewer guidance
 
-**The elranatamab record was rejected because intercompartmental clearance Q is listed as 0.225 L/day, while the finding assigns it the incompatible unit nM.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nM ([length]) vs [mass] / [length] ** 3.**
 
-The record defines Q as apparent intercompartmental clearance between the central and peripheral compartments, but the finding reports a concentration unit, nM, for this parameter. Separately, a reported unit could not be converted to SI, leaving the affected parameter without an SI value. Extracted — sBCMA: CL 0.324 L/day, V1 4.78 L, V2 2.83 L, Q 0.225 L/day, Fab 0.562, kabs 0.287 day–1, KD 3.14 nM.
+A reported unit could not be converted (KD), so that value has no SI equivalent. None of the extracted parameters is elranatamab's own; they describe sBCMA. Extracted — sBCMA: CL 0.324 L/day, V1 4.78 L, V2 2.83 L, Q 0.225 L/day, Fab 0.562, kabs 0.287 day–1, KD 3.14 nM.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has elranatamab, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

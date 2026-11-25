@@ -17,12 +17,6 @@ Glofitamab is a bispecific monoclonal antibody used to treat large B-cell lympho
 
 _not available_
 
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Frances_2022_CR](drugs/drug_glofitamab/pd_Frances_2022_CR.md) | cytokine release ← glofitamab · stimulation effect | — | Frances N et al., Novel in Vivo and in Vitro Pharmacokine…, Journal of pharmaceutical s… (2022) | [10.1016/j.xphs.2021.12.019](https://doi.org/10.1016/j.xphs.2021.12.019) |
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -35,7 +29,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:42 | 0:33 | 0/0/0 | 0/1/0 | 0/0/0 | 9,675/2,290 | openai / gpt-6-luna | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-23 23:54 | 0:04 | 0/0/0 | 0/0/0 | 0/0/0 | 3,780/181 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
@@ -50,16 +44,18 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Frances_2022.pdf` | Frances N et al., Novel in Vivo and in Vitro Pharmacokine…, Journal of pharmaceutical s… (2022) | popPK | 9 | [10.1016/j.xphs.2021.12.019](https://doi.org/10.1016/j.xphs.2021.12.019) | [34953862](https://pubmed.ncbi.nlm.nih.gov/34953862) | Animal glofitamab PK/PD is studied, but no numeric PK parameter values are provided in the evidence. |
+| `Frances_2022.pdf` | Frances N et al., Novel in Vivo and in Vitro Pharmacokine…, Journal of pharmaceutical s… (2022) | popPK | 8 | [10.1016/j.xphs.2021.12.019](https://doi.org/10.1016/j.xphs.2021.12.019) | [34953862](https://pubmed.ncbi.nlm.nih.gov/34953862) | The paper describes PK/PD modeling for glofitamab in preclinical species (mice and cynomolgus monkeys) for human dose selection, but the extracted evidence contains only qualitative descriptions and no specific numeric PK parameter values. |
 
-<sub>queue written 2026-10-07 12:42 UTC</sub>
+<sub>queue written 2026-11-23 23:54 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Frances_2022 | relevant | 9 | 0 | Animal glofitamab PK/PD is studied, but no numeric PK parameter values are provided in the evidence. |
-| popPK | Jamois_2025 | irrelevant | 0 | 0 | The population-PK model and quantitative parameters are for tocilizumab; glofitamab is only the associated therapy. |
+| popPK | Frances_2022 | relevant | 8 | 0 | The paper describes PK/PD modeling for glofitamab in preclinical species (mice and cynomolgus monkeys) for human dose selection, but the extracted evidence contains only qualitative descriptions and no specific numeric PK parameter values. |
+| PGx | Frances_2022 | not_relevant | 0 | 0 | The paper reports preclinical PKPD data in cynomolgus monkeys and humans to select a starting dose, but does not report any pharmacogenomic effects based on gene variants or genotypes. |
+| popPK | Jamois_2025 | irrelevant | 0 | 0 | This paper reports pharmacokinetic parameters for tocilizumab (a drug used to manage CRS), not for glofitamab (the subject drug which acts as the inducing agent). |
+| PGx | Jamois_2025 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of tocilizumab and its effect on sIL-6R, with no investigation into genetic variants or pharmacogenomic influences on drug parameters. |
 
 
 </details>

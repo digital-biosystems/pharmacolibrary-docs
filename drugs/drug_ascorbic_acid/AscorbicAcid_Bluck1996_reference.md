@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ascorbic acid model lacks clearance and volume, and its AUC extrapolation parameter has a unit incompatible with its dimensionless definition.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q84 unit e ([current] * [time]) vs dimensionless.
 
 <div class="pk-model-meta" hidden drug="ascorbic acid" model-id="AscorbicAcid_Bluck1996_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ascorbic acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -36,7 +36,7 @@ Bluck LJ, Izzard AP, Bates CJ. Measurement of ascorbic acid kinetics in man usin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +46,13 @@ Bluck LJ, Izzard AP, Bates CJ. Measurement of ascorbic acid kinetics in man usin
 
 ### Reviewer guidance
 
-**Ascorbic acid model lacks clearance and volume, and its AUC extrapolation parameter has a unit incompatible with its dimensionless definition.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q84 unit e ([current] * [time]) vs dimensionless.**
 
-The record identifies ascorbic acid with a one-compartment structure but omits distribution volume and clearance, indicating it is an exposure/outcome paper rather than a compartmental population PK model. Additionally, the AUC extrapolation parameter is assigned a value of 150.4 with a unit that is dimensionally incompatible with its defined percentage meaning, causing a structural mismatch. Extracted — ascorbic acid: AUC%ext 150 e.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (AUC%ext), so that value has no SI equivalent. Extracted — ascorbic acid: AUC%ext 150 e.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 5% (b) + 95%: this record has none, the second reading 100.000; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -85,6 +87,38 @@ The record identifies ascorbic acid with a one-compartment structure but omits d
 - no TEI final-model table id; trying text-pointer table recovery
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (4/16 fields) | 12 |
+
+<details><summary>12 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[5% (b) + 95%]` |  | 100.000 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[5% (f) + 95%].parameter_id` | Q84 | Q44 | mismatch |
+| `gpt-oss-120b` | `parameters[5% (f) + 95%].value` | 150.4 | 100.000 | mismatch |
+| `gpt-oss-120b` | `parameters[body pool per unit body mass]` |  | 29 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[d]` |  | 39 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12]` |  | 0.00161 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k13]` |  | 0.01505 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k21]` |  | 0.00423 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean plasma concentration]` |  | 60.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q1]` |  | 0.00321 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q2]` |  | 0.0084 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` |  | 53 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

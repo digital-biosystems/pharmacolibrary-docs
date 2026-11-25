@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Ampicillin was rejected with an implausibly small reported central volume, V1, of 0.007 L, and an unreachable compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_JimenezToro2020_reference" status="rejected" stale="false" population="" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Jimenez-Toro I, Rodriguez CA, Zuluaga AF, Otalvaro JD, Vesga O. A new pharmacody
 
 ### Reviewer guidance
 
-**Ampicillin was rejected with an implausibly small reported central volume, V1, of 0.007 L, and an unreachable compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record also reports peripheral volume V2 of 6.14 L and total clearance CL of 10.7 L/h; the clearance/volume magnitudes were flagged as implausible, consistent with a unit or scale extraction error. An unreachable compartment has no path from the dose, and the record does not identify which compartment is unreachable. Extracted — ampicillin: CL 10.7 L/h, V1 0.007 L, V2 6.14 L, kabs 6.45 h-1.
+Extracted — ampicillin: CL 10.7 L/h, V1 0.007 L, V2 6.14 L, kabs 6.45 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q30: this record has none, the second reading 4.48; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

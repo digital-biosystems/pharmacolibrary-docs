@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;sodium stibogluconate&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/&quot;},{&quot;label&quot;:&quot;Zaghloul_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumStibogluconate_Verrest2021_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Verrest_2024_parasite_load&quot;,&quot;label&quot;:&quot;Verrest_2024 \u00b7 parasite load&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/pd_Verrest_2024_parasite_load.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumStibogluconate_Jaser1995_reference&quot;,&quot;label&quot;:&quot;Jaser_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Jaser1995_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumStibogluconate_Verrest2021_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Verrest_2024_parasite_load&quot;,&quot;label&quot;:&quot;Verrest_2024 \u00b7 parasite load&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/pd_Verrest_2024_parasite_load.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Zaghloul2010_reference" status="needs_review" stale="false" population="young male cutaneous leishmaniasis patients" measured-compound="antimony" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Zaghloul2010_reference" status="needs_review" stale="false" population="young male patients with cutaneous leishmaniasis" measured-compound="antimony" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zaghloul IY, Radwan MA, Al Jaser MH, Al Issa R. Clinical efficacy and pharmacokinetics of antimony in cutaneous leishmaniasis patients treated with sodium stibogluconate. Journal of clinical pharmacology 50(11):1230–1237 (2010).
@@ -17,7 +17,7 @@ Zaghloul IY, Radwan MA, Al Jaser MH, Al Issa R. Clinical efficacy and pharmacoki
 
 ## Population and dosing
 
-**Population:** young male cutaneous leishmaniasis patients · condition cutaneous leishmaniasis · age group adult · n = 12.
+**Population:** young male patients with cutaneous leishmaniasis · condition cutaneous leishmaniasis · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed sodium stibogluconate, measured antimony.
 
@@ -33,9 +33,9 @@ Zaghloul IY, Radwan MA, Al Jaser MH, Al Issa R. Clinical efficacy and pharmacoki
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| absorption half-life (first dose) | t1/2ka | 0.21 | hours |
-| elimination half-life (first day) | t1/2z | 9.4 | hours |
-| CL(r) (first day) | CLR | 4.88 | L/h |
+| mean absorption half-life | t1/2ka | 0.21 | hours |
+| half-life | t1/2z | 9.4 | hours |
+| mean CL(r) | CLR | 4.88 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -53,7 +53,7 @@ Zaghloul IY, Radwan MA, Al Jaser MH, Al Issa R. Clinical efficacy and pharmacoki
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is sodium stibogluconate's own; they describe antimony. Extracted — antimony: t1/2ka 0.21 hours, t1/2z 9.4 hours, CLR 4.88 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has antimony, the second reading sodium stibogluconate; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has antimony, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,9 +61,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| absorption half-life (first dose) | `Q95` · t1/2ka | 0.21 | hours | 756 | s | h | llm_corrected (0.6) | Zaghloul_2010:abstract |
-| elimination half-life (first day) | `Q57` · t1/2z | 9.4 | hours | 3.384e+04 | s | h | llm (0.6) | Zaghloul_2010:abstract |
-| CL(r) (first day) | `Q26` · CLR | 4.88 | L/h | 1.356e-06 | m3/s | l/h | exact (1) | Zaghloul_2010:abstract |
+| mean absorption half-life | `Q95` · t1/2ka | 0.21 | hours | 756 | s | h | half_life_rule (0.95) | Zaghloul_2010:abstract, Zaghloul_2010:abstract |
+| half-life | `Q57` · t1/2z | 9.4 | hours | 3.384e+04 | s | h | half_life_rule (0.95) | Zaghloul_2010:abstract, Zaghloul_2010:abstract |
+| mean CL(r) | `Q26` · CLR | 4.88 | L/h | 1.356e-06 | m3/s | l/h | llm_corrected (0.6) | Zaghloul_2010:abstract, Zaghloul_2010:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,14 +73,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q95 ('absorption half-life (last dose)', value 0.36) — already have one for this compound
-- dropped duplicate Q57 ('elimination half-life (last day)', value 9.69) — already have one for this compound
-- dropped duplicate Q26 ('CL(r) (last day)', value 4.58) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=antimony
-- molar mass: no plausible PubChem entry for 'antimony' ('antimony') — left in mass units
+- molar mass: no plausible PubChem entry for 'antimony' ('no full name in the paper') — left in mass units
 - molar mass: none found for 'antimony' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'antimony', not sodium_stibogluconate — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Zaghloul_2010_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -88,7 +84,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -98,13 +94,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption half-life]` | 0.21 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl(r)]` | 4.88 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life]` | 9.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption half-life]` |  | 0.21 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 4.88 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[half-life]` |  | 9.4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean absorption half-life]` |  | 0.21 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean cl]` |  | 4.88 | only_one_extracted |
-| `gpt-oss-120b` | `screen.primary_analyte` | antimony | sodium stibogluconate | mismatch |
+| `gpt-oss-120b` | `parameters[half-life]` | 9.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean absorption half-life]` | 0.21 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean cl]` | 4.88 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | antimony | unknown | mismatch |
 
 </details>
 
@@ -121,9 +117,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Zaghloul_2010:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Zaghloul_2010:abstract'] |
-| C5_dimension_Q95 | pass | [time] |  | ['Zaghloul_2010:abstract'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Zaghloul_2010:abstract', 'Zaghloul_2010:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Zaghloul_2010:abstract', 'Zaghloul_2010:abstract'] |
+| C5_dimension_Q95 | pass | [time] |  | ['Zaghloul_2010:abstract', 'Zaghloul_2010:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -158,4 +154,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsodium_stibogluconate%5D%20SodiumStibogluconate_Zaghloul2010_reference&body=Drug%3A%20sodium_stibogluconate%0ARecord%3A%20SodiumStibogluconate_Zaghloul2010_reference%0APaper%3A%20Zaghloul_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Zaghloul2010_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 08:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:05 UTC</sub>

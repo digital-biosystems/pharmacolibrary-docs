@@ -126,8 +126,8 @@ _All readers agree on the compared fields of this record._
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_beta | reference | fail | 0.9 | 2.201 | 2.446 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 0.8 | 2.201 | 2.752 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.9 | 2.201 | 2.446 | reported 0.9 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.8 | 2.201 | 2.752 | reported 0.8 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

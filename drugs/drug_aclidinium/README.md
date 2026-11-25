@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:30 | 1:51 | 0/0/0 | 2/0/0 | 0/0/0 | 55,256/1,745 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-23 16:24 | 0:02 | 0/0/0 | 2/0/0 | 0/0/0 | 3,748/164 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -54,18 +54,29 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Cazzola_2014.pdf` | Cazzola M et al., Pharmacological characterization of the…, European journal of pharmac… (2014) | pd | 4 | [10.1016/j.ejphar.2014.10.025](https://doi.org/10.1016/j.ejphar.2014.10.025) | [25446566](https://www.ncbi.nlm.nih.gov/pubmed/25446566) | metadata signals extractable PD data (Emax) |
 | `Cazzola_2015.pdf` | Cazzola M et al., Searching for the synergistic effect be…, Respiratory medicine (2015) | pd | 4 | [10.1016/j.rmed.2015.08.005](https://doi.org/10.1016/j.rmed.2015.08.005) | [26303336](https://www.ncbi.nlm.nih.gov/pubmed/26303336) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 13:30 UTC</sub>
+<sub>queue written 2026-11-23 16:24 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Albertí_2011 | not_relevant | 3 | 5 | Identifies CYP3A4/2D6 as enzymes metabolizing aclidinium in vitro, but no gene variant/genotype effect on a PK/PD parameter is reported. |
-| popPK | Babu_2017 | irrelevant | 0 | 0 | This is a review of umeclidinium, a different drug, with no quantitative PK parameters for aclidinium. |
+| popPK | Babu_2017 | irrelevant | 0 | 0 | The paper is a review of umeclidinium, a different drug from aclidinium, and does not report PK parameters for aclidinium. |
+| PGx | Babu_2017 | not_relevant | 0 | 0 | The paper is a review of umeclidinium in COPD and does not report pharmacogenomic effects on the PK or PD of aclidinium. |
+| popPK | Cazzola_2013 | irrelevant | 0 | 0 | This is a narrative review of clinical efficacy in COPD with no quantitative pharmacokinetic parameters for aclidinium provided. |
+| PGx | Cazzola_2013 | not_relevant | 0 | 0 | The text is a review of aclidinium bromide for COPD and does not report any pharmacogenomic effects on its PK or PD parameters. |
 | popPK | Cazzola_2014 | irrelevant | 0 | 0 | no_text gate: only 128 chars of text extracted (&lt; 400) |
+| PGx | Cazzola_2014 | not_relevant | 0 | 0 | The paper describes pharmacological drug-drug interactions in isolated bronchi and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | Cazzola_2015 | irrelevant | 0 | 0 | no_text gate: only 93 chars of text extracted (&lt; 400) |
+| PGx | Cazzola_2015 | not_relevant | 0 | 0 | The paper investigates the synergistic interaction between aclidinium and formoterol, not the effect of genetic variants on aclidinium's PK or PD. |
 | popPK | Gong_2022 | irrelevant | 0 | 0 | This is a pharmacodynamic (Emax/efficacy-loss) meta-analysis of FEV1 for LABA/LAMA combinations; no PK disposition parameters (CL, V, ka, half-life) for aclidinium are reported. |
+| popPK | Joos_2010 | irrelevant | 1 | 0 | The study reports that aclidinium bromide was undetected in plasma, providing no quantitative disposition parameters such as clearance, volume, or half-life. |
+| PGx | Joos_2010 | not_relevant | 0 | 0 | The paper describes general PK/PD in a COPD population but does not report any association with specific gene variants or genotypes. |
+| popPK | Lal_2015 | irrelevant | 0 | 0 | The paper is a review article discussing clinical trial results and pharmacologic profiles, but it does not report original quantitative pharmacokinetic parameters (CL, V, Q, ka) for aclidinium. |
+| PGx | Lal_2015 | not_relevant | 0 | 0 | The paper discusses the clinical trial results and pharmacologic profile of an aclidinium/formoterol combination for COPD but does not report any pharmacogenomic effects of gene variants on its PK or PD. |
 | popPK | Llanos-Paez_2023 | irrelevant | 0 | 0 | This is an MBMA of FEV1/exacerbation efficacy in COPD, not a PK study; aclidinium appears only as a comparator with efficacy (ED50/Effref) parameters, no disposition parameters, and new drug estimates are in supplementary material. |
+| popPK | Malerba_2018 | irrelevant | 2 | 0 | This is a review article discussing the discovery and development of aclidinium; while it mentions its PK profile, no specific quantitative disposition parameters (CL, V, etc.) are provided in the extracted text. |
+| PGx | Malerba_2018 | not_relevant | 0 | 0 | The paper reviews the discovery and development of aclidinium bromide but contains no data on pharmacogenomic effects (gene variants) on its PK or PD parameters. |
 
 
 </details>

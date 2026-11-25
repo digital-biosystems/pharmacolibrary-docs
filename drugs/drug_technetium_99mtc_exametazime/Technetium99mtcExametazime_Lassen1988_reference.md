@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because technetium 99mtc exametazime’s clearance (CL 0.45 ml/g/min) and tissue-to-plasma partition coefficient (Kp 0.67 ml/g) have incompatible dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml/g/min ([length] ** 3 / [mass] / [time]) vs [length] ** 3 / [time]; Q410 unit ml/g ([length] ** 3 / [mass]) vs dimensionless.
 
 <div class="pk-model-meta" hidden drug="technetium (99mTc) exametazime" model-id="Technetium99mtcExametazime_Lassen1988_reference" status="rejected" stale="false" population="human subjects receiving intracarotid HM-PAO" measured-compound="technetium_99mtc_exametazime (lipophilic HM-PAO)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -50,13 +50,13 @@ Lassen NA, Andersen AR, Friberg L, Paulson OB. The retention of [99mTc]-d,l-HM-P
 
 ### Reviewer guidance
 
-**The record was rejected because technetium 99mtc exametazime’s clearance (CL 0.45 ml/g/min) and tissue-to-plasma partition coefficient (Kp 0.67 ml/g) have incompatible dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml/g/min ([length] ** 3 / [mass] / [time]) vs [length] ** 3 / [time]; Q410 unit ml/g ([length] ** 3 / [mass]) vs dimensionless.**
 
-CL is recorded as 0.45 ml/g/min, although its stated meaning is total clearance and the expected dimension is volume/time. Kp is recorded as 0.67 ml/g, although its stated meaning is a tissue-to-plasma partition coefficient, which is dimensionless. Only the abstract was read, so its summary statistics stood in for a fitted model. The second reader also disputed the metabolism link and the 0.80 formation rate. Extracted — hydrophilic HM-PAO: kfm 0.8 min-1; technetium_99mtc_exametazime (lipophilic HM-PAO): kel 0.69 min-1, CL 0.45 ml/g/min, Kp 0.67 ml/g.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is technetium 99mtc exametazime's own; they describe hydrophilic HM-PAO and technetium_99mtc_exametazime (lipophilic HM-PAO). Extracted — hydrophilic HM-PAO: kfm 0.8 min-1; technetium_99mtc_exametazime (lipophilic HM-PAO): kel 0.69 min-1, CL 0.45 ml/g/min, Kp 0.67 ml/g.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has technetium_99mtc_exametazime (HM-PAO), the second reading technetium_99mtc_exametazime; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -166,4 +166,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btechnetium_99mtc_exametazime%5D%20Technetium99mtcExametazime_Lassen1988_reference&body=Drug%3A%20technetium_99mtc_exametazime%0ARecord%3A%20Technetium99mtcExametazime_Lassen1988_reference%0APaper%3A%20Lassen_1988%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_technetium_99mtc_exametazime/Technetium99mtcExametazime_Lassen1988_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 18:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:14 UTC</sub>

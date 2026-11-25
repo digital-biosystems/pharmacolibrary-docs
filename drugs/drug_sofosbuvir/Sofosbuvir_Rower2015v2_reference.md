@@ -8,7 +8,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="sofosbuvir" model-id="Sofosbuvir_Rower2015v2_reference" status="needs_review" stale="false" population="HCV patients receiving sofosbuvir therapy" measured-compound="sofosbuvir triphosphate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sofosbuvir" model-id="Sofosbuvir_Rower2015v2_reference" status="needs_review" stale="false" population="HCV patients" measured-compound="sofosbuvir triphosphate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rower JE, Jimmerson LC, Chen X, Zheng JH, Hodara A, Bushman LR et al. Validation and Application of a Liquid Chromatography-Tandem Mass Spectrometry Method To Determine the Concentrations of Sofosbuvir Anabolites in Cells. Antimicrobial agents and chemotherapy 59(12):7671-7679 (2015).
@@ -150,4 +150,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsofosbuvir%5D%20Sofosbuvir_Rower2015v2_reference&body=Drug%3A%20sofosbuvir%0ARecord%3A%20Sofosbuvir_Rower2015v2_reference%0APaper%3A%20Rower_2015_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sofosbuvir/Sofosbuvir_Rower2015v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:40 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:54 UTC</sub>

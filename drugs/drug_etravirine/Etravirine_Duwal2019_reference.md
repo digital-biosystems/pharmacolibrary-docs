@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;etravirine&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/&quot;},{&quot;label&quot;:&quot;Duwal_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etravirine_Kang2020v3_reference&quot;,&quot;label&quot;:&quot;Kang_2020_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Kang2020v3_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Green2017_reference&quot;,&quot;label&quot;:&quot;Green_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Green2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Lubomirov2013_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Lubomirov2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Courlet2021v2_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Courlet2021v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Duwal2019_reference&quot;,&quot;label&quot;:&quot;Duwal_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Duwal2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Etravirine_Han2024_reference&quot;,&quot;label&quot;:&quot;Han_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Han2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Jin2020_reference&quot;,&quot;label&quot;:&quot;Jin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Jin2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etravirine_Lubomirov2013_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Lubomirov2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Courlet2021v2_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Courlet2021v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Duwal2019_reference&quot;,&quot;label&quot;:&quot;Duwal_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Duwal2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Etravirine_Han2024_reference&quot;,&quot;label&quot;:&quot;Han_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Han2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Jin2020_reference&quot;,&quot;label&quot;:&quot;Jin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Jin2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Kang2020v3_reference&quot;,&quot;label&quot;:&quot;Kang_2020_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Kang2020v3_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper does not study etravirine, so the extracted clearance and volume parameters are not for this drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="etravirine" model-id="Etravirine_Duwal2019_reference" status="rejected" stale="false" population="" measured-compound="etravirine" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Duwal S, Seeler D, Dickinson L, Khoo S, von Kleist M. The Utility of Efavirenz-b
 
 ### Reviewer guidance
 
-**The paper does not study etravirine, so the extracted clearance and volume parameters are not for this drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source paper is not about etravirine, as neither the title nor abstract names the drug, rendering the record invalid. Consequently, the apparent clearance of 11.9 L/h and volume of 282.0 L are not valid for etravirine. Additionally, the model assumed F=1 and defaulted the lag time instead of using explicit estimates. Extracted — etravirine: CL/F 11.9 L/h, V/F 282 L, kabs 0.6 h−1.
+Extracted — etravirine: CL/F 11.9 L/h, V/F 282 L, kabs 0.6 h−1.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q315: this record has none, the second reading 20; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.846, 0 of 1 reader(s) agree | 0.846 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.846 (11 of 13 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.846 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

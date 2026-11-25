@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record held back because the second reader disagreed on the dose compound, absorption rate constant, and creatinine clearance value.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="Nirmatrelvir" model-id="Nirmatrelvir_Yang2024_reference" status="needs_review" stale="false" population="Chinese patients with mild to moderate COVID-19" measured-compound="nirmatrelvir" parameterization="apparent" topology="1C"></div>
 
@@ -17,13 +17,13 @@ Yang P, Liu W, Ying Y, Zhao L, Xiong X, Zhang X et al. Population pharmacokineti
 
 ## Population and dosing
 
-**Population:** Chinese patients with mild to moderate COVID-19 · condition COVID-19 · age group adult · n = 35.
+**Population:** Chinese patients with mild to moderate COVID-19 · condition COVID-19 · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference.svg" alt="Nirmatrelvir_Yang2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -35,11 +35,10 @@ Yang P, Liu W, Ying Y, Zhao L, Xiong X, Zhang X et al. Population pharmacokineti
 |---|---|---|---|
 | apparent clearance | CL/F | 3.45 | L·h-1 |
 | distribution volume | V | 48.71 | L |
-| Ka | kabs | 0.2 | h−1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +48,13 @@ Yang P, Liu W, Ying Y, Zhao L, Xiong X, Zhang X et al. Population pharmacokineti
 
 ### Reviewer guidance
 
-**Record held back because the second reader disagreed on the dose compound, absorption rate constant, and creatinine clearance value.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-Built from the abstract alone, the record lacks a fitted model and uses a default lag time. The second reader identified a 95.5 creatinine clearance value and no absorption rate constant, conflicting with the record's 0.2 h⁻¹. Additionally, the dose compound was unknown to the second reader. Extracted — nirmatrelvir: CL/F 3.45 L·h-1, V 48.7 L, kabs 0.2 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nirmatrelvir: CL/F 3.45 L·h-1, V 48.7 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nirmatrelvir, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of creatinine clearance: this record has none, the second reading 95.5. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -63,7 +62,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 |---|---|---|---|---|---|---|---|---|
 | apparent clearance | `Q27` · CL/F | 3.45 | L·h-1 | 9.583e-07 | m3/s | l/h | exact (1) | Yang_2024:abstract |
 | distribution volume | `Q61` · V | 48.71 | L | 0.04871 | m3 | l | exact (1) | Yang_2024:abstract |
-| Ka | `Q49` · kabs | 0.2 | h−1 | 5.556e-05 | 1/s | 1/h | review_gapfill (0.7) | Yao_2025:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,35 +71,33 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'Ccr' — extend the ontology if this is a real PK parameter (source ['Yang_2024:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=nirmatrelvir
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Yao_2025's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Yang_2024_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Yang_2024_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[creatinine clearance]` |  | 95.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 0.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | nirmatrelvir | unknown | mismatch |
 
 </details>
 
@@ -119,7 +115,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Yang_2024:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Yao_2025:review'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Yang_2024:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -134,10 +129,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=nirmatrelvir) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial; agreement 0.857 (6 of 7 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -153,12 +148,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference_modelica.zip" download>Nirmatrelvir_Yang2024_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference_fmi.zip" download>Nirmatrelvir_Yang2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference_matlab.zip" download>Nirmatrelvir_Yang2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference_matlab_simbio.zip" download>Nirmatrelvir_Yang2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference_sbml.zip" download>Nirmatrelvir_Yang2024_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference_cellml.zip" download>Nirmatrelvir_Yang2024_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference_modelica.zip" download>Nirmatrelvir_Yang2024_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference_fmi.zip" download>Nirmatrelvir_Yang2024_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference_matlab.zip" download>Nirmatrelvir_Yang2024_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference_matlab_simbio.zip" download>Nirmatrelvir_Yang2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference_sbml.zip" download>Nirmatrelvir_Yang2024_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference_cellml.zip" download>Nirmatrelvir_Yang2024_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
@@ -178,7 +173,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminMass` | 0.0001 | kg |
 | input | model | `Cl` | 9.583e-07 | m3/s |
 | input | model | `VdPerKg` | 0.0006959 | m3/kg |
-| input | model | `ka` | 5.556e-05 | 1/s |
+| input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -207,7 +202,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.2 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
 
 <dbs-fmusim paramsurl="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference/Nirmatrelvir_Yang2024_reference_sim_controls.json"></dbs-fmusim>
 
@@ -217,4 +212,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnirmatrelvir%5D%20Nirmatrelvir_Yang2024_reference&body=Drug%3A%20nirmatrelvir%0ARecord%3A%20Nirmatrelvir_Yang2024_reference%0APaper%3A%20Yang_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nirmatrelvir/Nirmatrelvir_Yang2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:40 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:46 UTC</sub>

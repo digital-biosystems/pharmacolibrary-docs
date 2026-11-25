@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The tucatinib model's simulated terminal half-life of 6.33 h contradicts the paper's reported 16.2 h, and absorption rate parameters were left at library defaults.
+> The model does not reproduce the paper's terminal half-life (paper 16.2, model 6.33); ka use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="tucatinib" model-id="Tucatinib_Zhang2024_her2_mcrcn_68" status="needs_review" stale="false" population="healthy participants and patients with HER2+ metastatic breast or colorectal cancer" measured-compound="tucatinib" parameterization="apparent" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Zhang D, Taylor A, Zhao JJ, Endres CJ, Topletz-Erickson A. Population Pharmacoki
 
 ### Reviewer guidance
 
-**The tucatinib model's simulated terminal half-life of 6.33 h contradicts the paper's reported 16.2 h, and absorption rate parameters were left at library defaults.**
+**The model does not reproduce the paper's terminal half-life (paper 16.2, model 6.33); ka use library defaults, not estimates from this paper (+2 more).**
 
-The simulated terminal half-life differs from the reported value by a ratio of 0.3907, indicating the one-compartment structure fails to capture the slow elimination phase described in the source. Because the paper did not report absorption rate parameters, the model relied on library defaults rather than explicit estimates, which distorts the simulated concentration profile. A second reader also disputed the identification of the AUC ratio parameter and the recorded Cmax ratio value of 1.95. Extracted — tucatinib: AUCSS 3.37e+03 ng·h/mL, Cmax 405 ng/mL, Ctrough 197 ng/mL, AUC ratio 2.51, Cmax_ratio 1.95, CL/F 89 L/h, Vss 829 L, t1/2β 23.1 h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (AUCSS, Cmax and Ctrough), so that value has no SI equivalent. Extracted — tucatinib: AUCSS 3.37e+03 ng·h/mL, Cmax 405 ng/mL, Ctrough 197 ng/mL, AUC ratio 2.51, Cmax_ratio 1.95, CL/F 89 L/h, Vss 829 L, t1/2β 23.1 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[rac, auc].parameter_id`: this record has Q21, the second reading Q88; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -193,12 +193,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.846, 0 of 1 reader(s) agree | 0.846 | cross-check disputed by a second reader: verdict disputed, agreement 0.846, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.846 (11 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.846 | cross-check contradicted by a second reader: verdict disputed; agreement 0.846 (11 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 | T1_cmax | reference | skipped | 1.6 | 0.0002376 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 0.8 | 0.0002376 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 0.80 | 0.0002376 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_t_half_beta | reference | fail | 16.2 | 6.329 | 0.3907 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 21.3 | 6.329 | 0.2972 | h→SI vs simulated h |
+| T1_cmax | reference | skipped | 0.8 | 0.0002376 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_t_half_beta | reference | fail | 16.2 | 6.329 | 0.3907 | reported 16.2 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 21.3 | 6.329 | 0.2972 | reported 21.3 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

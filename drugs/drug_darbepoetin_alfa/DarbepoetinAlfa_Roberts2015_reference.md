@@ -46,7 +46,7 @@ Roberts JK, Stockmann C, Ward RM, Beachy J, Baserga MC, Spigarelli MG et al. Pop
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is darbepoetin alfa's own; they describe erythropoietin.
 

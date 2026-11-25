@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Clearance 0.04 ml/s for gadopentetic acid is implausibly low, triggering rejection for physiological mismatch.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="gadopentetic acid" model-id="GadopenteticAcid_Steingoetter2011_reference" status="rejected" stale="false" population="male buffalo rats with implanted hepatocellular carcinoma" measured-compound="Gd-DTPA (gadopentetic acid)" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Steingoetter A, Menne D, Braren RF. Assessing antiangiogenic therapy response by
 
 ### Reviewer guidance
 
-**Clearance 0.04 ml/s for gadopentetic acid is implausibly low, triggering rejection for physiological mismatch.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The clearance value of 0.04 ml/s falls outside the physiological window, indicating a likely unit or scale extraction error. The record was rejected because this magnitude is impossible for the drug. Other parameter checks could not be fully computed due to incomplete data. Extracted — Gd-DTPA (gadopentetic acid): kel 0.013 1/s, k12 0.3 1/s, k21 0.012 1/s, kcomp 0.24 1/s, CL 0.04 ml s−1, V 0.5 mL.
+None of the extracted parameters is gadopentetic acid's own; they describe Gd-DTPA (gadopentetic acid). Extracted — Gd-DTPA (gadopentetic acid): kel 0.013 1/s, k12 0.3 1/s, k21 0.012 1/s, kcomp 0.24 1/s, CL 0.04 ml s−1, V 0.5 mL.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has Gd-DTPA (gadopentetic acid), the second reading Gd-DTPA; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

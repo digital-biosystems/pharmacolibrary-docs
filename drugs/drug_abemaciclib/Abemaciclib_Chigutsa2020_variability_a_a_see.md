@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Abemaciclib’s absorption rate constant is recorded as 77.3 µmol/h, conflicting with the required inverse-time dimension and contributing to rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit µmol/h ([substance] / [time]) vs 1 / [time].
 
-<div class="pk-model-meta" hidden drug="abemaciclib" model-id="Abemaciclib_Chigutsa2020_variability_a_a_see" status="rejected" stale="false" population="healthy subjects and patients with cancer" measured-compound="abemaciclib" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="abemaciclib" model-id="Abemaciclib_Chigutsa2020_variability_a_a_see" status="rejected" stale="false" population="healthy individuals and patients with cancer" measured-compound="abemaciclib" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner PK. Development and Application of a Mechanistic Population Modeling Approach to Describe Abemaciclib Pharmacokinetics. CPT: pharmacometrics & systems pharmacology 9(9):523–533 (2020).
@@ -16,15 +16,15 @@ Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner P
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with cancer · condition cancer, including breast cancer; healthy subjects · age group adult.
+**Population:** healthy individuals and patients with cancer · condition cancer and healthy · age group adult · n = 486.
 
-**Dosing:** 50, 275 mg, oral.
+**Dosing:** 50, 275 mg, oral, multiple, every 12 h.
 
 ## Model
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 10 extracted, plus 3 covariate effects.  
+**Parameters:** 8 extracted, plus 3 covariate effects.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,13 +32,11 @@ Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner P
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Fraction of F a absorbed via transit compartment | Fab | 7.08 | %SEE |
 | Maximum rate of absorption, ka,max (µmol/h) | kabs | 77.3 | µmol/h |
 | MTT (h) | MTT | 71.9 | h |
 | Central volume (L) | V1 | 68.6 | L |
 | Intercompartmental clearance (L/h) | Q | 7.08 | L/h |
 | Peripheral volume (L) | V2 | 7.08 | L |
-| Zero‐order absorption duration (h) | D1 | 638 | h |
 | Absorption lag time (h) | tlag | 7.08 | h |
 | CLint of M2 in liver (L/h) | CL | 41.9 | L/h |
 | CLint of M20 in liver (L/h) | CL | 42.5 | L/h |
@@ -48,7 +46,7 @@ Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.4), qwen3.8-27b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,31 +56,29 @@ Chigutsa E, Kambhampati SRP, Karen Sykes A, Posada MM, van der Walt JS, Turner P
 
 ### Reviewer guidance
 
-**Abemaciclib’s absorption rate constant is recorded as 77.3 µmol/h, conflicting with the required inverse-time dimension and contributing to rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit µmol/h ([substance] / [time]) vs 1 / [time].**
 
-The reported unit could not be converted to SI, and µmol/h is dimensionally inconsistent with an absorption rate constant, which has units of 1/time. M2 and M20 are listed as metabolites of abemaciclib but were flagged as having no modeled path from the dose; neither metabolism link has an identified link parameter. Extracted — abemaciclib: Fab 7.08 %SEE, kabs 77.3 µmol/h, MTT 71.9 h, V1 68.6 L, Q 7.08 L/h, V2 7.08 L, D1 638 h, tlag 7.08 h; M2 (LSN2839567): CL 41.9 L/h; M20 (LSN3106726): CL 42.5 L/h.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — abemaciclib: kabs 77.3 µmol/h, MTT 71.9 h, V1 68.6 L, Q 7.08 L/h, V2 7.08 L, tlag 7.08 h; M2: CL 41.9 L/h; M20: CL 42.5 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has abemaciclib → m2 (lsn2839567) (metabolism); abemaciclib → m20 (lsn3106726) (metabolism), the second reading abemaciclib → m2 (metabolism); abemaciclib → m20 (metabolism); it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has abemaciclib → m2 (metabolism); abemaciclib → m20 (metabolism), the second reading none; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Fraction of F a absorbed via transit compartment | `Q40` · Fab | 7.08 | %SEE |  |  | s·%·ee | llm (0.6) | psp412544-tbl-0002:row2:col2, psp412544-tbl-0002:row2:col4 |
 | Maximum rate of absorption, ka,max (µmol/h) | `Q49` · kabs | 77.3 | µmol/h |  |  | (µM·ol)/h | exact (1) | psp412544-tbl-0002:row3:col2 |
-| MTT (h) | `Q81` · MTT | 71.9 | h |  |  | h | exact (1) | psp412544-tbl-0002:row5:col2 |
+| MTT (h) | `Q81` · MTT | 71.9 | h | 2.588e+05 | s | h | exact (1) | psp412544-tbl-0002:row5:col2 |
 | Central volume (L) | `Q63` · V1 | 68.6 | L | 0.0686 | m3 | l | exact (1) | psp412544-tbl-0002:row6:col2 |
-| Intercompartmental clearance (L/h) | `Q30` · Q | 7.08 | L/h | 1.967e-06 | m3/s | l/h | exact (1) | psp412544-tbl-0002:row7:col2, psp412544-tbl-0002:row7:col4 |
-| Peripheral volume (L) | `Q64` · V2 | 7.08 | L | 0.00708 | m3 | l | exact (1) | psp412544-tbl-0002:row8:col2, psp412544-tbl-0002:row8:col4 |
-| Zero‐order absorption duration (h) | `Q310` · D1 | 638 | h | 2.297e+06 | s | h | llm_corrected (0.6) | psp412544-tbl-0002:row9:col2 |
-| Absorption lag time (h) | `Q83` · tlag | 7.08 | h | 2.549e+04 | s | h | exact (1) | psp412544-tbl-0002:row10:col2, psp412544-tbl-0002:row10:col4 |
+| Intercompartmental clearance (L/h) | `Q30` · Q | 7.08 | L/h | 1.967e-06 | m3/s | l/h | exact (1) | psp412544-tbl-0002:row7:col2 |
+| Peripheral volume (L) | `Q64` · V2 | 7.08 | L | 0.00708 | m3 | l | exact (1) | psp412544-tbl-0002:row8:col2 |
+| Absorption lag time (h) | `Q83` · tlag | 7.08 | h | 2.549e+04 | s | h | exact (1) | psp412544-tbl-0002:row10:col2 |
 | CLint of M2 in liver (L/h) | `Q22` · CL | 41.9 | L/h | 1.164e-05 | m3/s | l/h | exact (1) | psp412544-tbl-0002:row15:col2 |
 | CLint of M20 in liver (L/h) | `Q22` · CL | 42.5 | L/h | 1.181e-05 | m3/s | l/h | exact (1) | psp412544-tbl-0002:row16:col2 |
-| theta_q1_category | `Q900` · theta_q1_category | 7.08 |  |  |  |  |  | psp412544-tbl-0002:row4:col2, psp412544-tbl-0002:row4:col4 |
-| theta_q305_category | `Q900` · theta_q305_category | 7.08 |  |  |  |  |  | psp412544-tbl-0002:row11:col2, psp412544-tbl-0002:row11:col4 |
-| theta_q305_category | `Q900` · theta_q305_category | 7.08 |  |  |  |  |  | psp412544-tbl-0002:row12:col2, psp412544-tbl-0002:row12:col4 |
+| theta_q1_category | `Q900` · theta_q1_category | 7.08 |  |  |  |  |  | psp412544-tbl-0002:row4:col2 |
+| theta_q305_category | `Q900` · theta_q305_category | 7.08 |  |  |  |  |  | psp412544-tbl-0002:row11:col2 |
+| theta_q305_category | `Q900` · theta_q305_category | 7.08 |  |  |  |  |  | psp412544-tbl-0002:row12:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -92,77 +88,64 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the link
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: '%SEE' (Fab)
+- compound tags: 2 row(s) → M2, 2 row(s) → M20 (name 4)
+- dropped unlinked row (NIL): 'Fraction of F a absorbed via transit compartment' — extend the ontology if this is a real PK parameter (source ['psp412544-tbl-0002:row2:col2'])
 - linked 'Maximum rate of absorption, ka,max (µmol/h)' as 'ka' → Q49 (kabs) for  — compound marker removed
 - unit_dimension_mismatch: 'Maximum rate of absorption, ka,max (µmol/h)' → Q49 (unit '[substance] / [time]' vs ontology '1 / [time]') — route to review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number '0.846' (source ['psp412544-tbl-0002:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number '0.968' (source ['psp412544-tbl-0002:footnote', 'psp412544-tbl-0002:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number '6' (source ['psp412544-tbl-0002:footnote']); the table cell was unparseable — needs review
+- linked 'Zero‐order absorption duration (h)' as 'ka' → Q49 (kabs) for  — compound marker removed
+- unit_dimension_mismatch: 'Zero‐order absorption duration (h)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
+- dropped duplicate Q49 ('Zero‐order absorption duration (h)', value '638') — already have one for this compound
 - covariate effect for Q1 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q305 has no base parameter row (kept as unattached equation-variable)
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (Central volume (L)); Q30 (Intercompartmental clearance (L/h)); Q64 (Peripheral volume (L)); Q22 (CLint of M2 in liver (L/h)); Q22 (CLint of M20 in liver (L/h))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=abemaciclib
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0, 0]
+- topology: 2 first-order transfer(s) across 3 compounds → general_linear
+- template fit: none — pbpk model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- population split: '% variability a , a (%see)' subgroup of Chigutsa_2020 (paper reports 5 populations: % variability a , a (%see), estimate (%see), external validation with phase iii data, nca(200 mg), semimechanistic model development)
-- row roles (LLM): model_class=compartmental; 35/35 row label(s) assigned, 44 linked by role; re-tagged parent→M2 (LSN2839567) ×39, parent→M20 (LSN3106726) ×6, abemaciclib→parent ×4
-- molar mass: no plausible PubChem entry for 'M2 (LSN2839567)' ('no full name in the paper') — left in mass units
-- molar mass: no plausible PubChem entry for 'M20 (LSN3106726)' ('no full name in the paper') — left in mass units
-- molar mass: none found for 'M2 (LSN2839567)' — its concentrations stay mass-only
-- molar mass: none found for 'M20 (LSN3106726)' — its concentrations stay mass-only
+- population split: '% variability a , a (%see)' subgroup of Chigutsa_2020 (paper reports 2 populations: % variability a , a (%see), estimate (%see))
+- row roles: 4 per-group rows of abemaciclib covariate_effect but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=pbpk; 23/23 row label(s) assigned, 24 linked by role; re-tagged parent→M2 ×5, parent→M20 ×5
+- molar mass: no plausible PubChem entry for 'M20' ('M20') — left in mass units
+- molar mass: none of 1 PubChem candidate(s) is 'M2' (LLM) — left in mass units
+- molar mass: none found for 'M2' — its concentrations stay mass-only
+- molar mass: none found for 'M20' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell psp412544-tbl-0002:row1:col2 = '7.08 (fixed) b , b'
-- unparsed cell psp412544-tbl-0002:row1:col3 = '0.882 (0.874–0.890)'
-- unparsed cell psp412544-tbl-0002:row1:col4 = '7.08 (fixed) b , b'
-- unparsed cell psp412544-tbl-0002:row2:col3 = '0.479 (0.453–0.507)'
-- unparsed cell psp412544-tbl-0002:row3:col3 = '97.6 (85.0–111)'
-- unparsed cell psp412544-tbl-0002:row3:col4 = '71.5 (60.6–83.7)'
-- unparsed cell psp412544-tbl-0002:row4:col3 = '51.8 (47.8–56.2)'
-- unparsed cell psp412544-tbl-0002:row5:col3 = '1.52 (1.43–1.62)'
-- unparsed cell psp412544-tbl-0002:row5:col4 = '70.1 (64.2–77.9)'
-- unparsed cell psp412544-tbl-0002:row6:col3 = '604 (563–635)'
-- unparsed cell psp412544-tbl-0002:row6:col4 = '65.7 (59.9–72.8)'
-- unparsed cell psp412544-tbl-0002:row7:col3 = '3.66 (3.10–4.29)'
-- unparsed cell psp412544-tbl-0002:row8:col3 = '152 (132–184)'
-- unparsed cell psp412544-tbl-0002:row9:col3 = '3.04 (2.52–3.84)'
-- unparsed cell psp412544-tbl-0002:row9:col4 = '810 (533–1278)'
-- unparsed cell psp412544-tbl-0002:row10:col3 = '1.76 (1.69–1.80)'
-- unparsed cell psp412544-tbl-0002:row11:col3 = '0.401 (0.366–0.432)'
-- unparsed cell psp412544-tbl-0002:row12:col3 = '0.306 (0.276–0.339)'
-- unparsed cell psp412544-tbl-0002:row13:col2 = 'BSV of 44.9 (27.1) for healthy and 57.9 (39.5) for patients. WSV of 68.1 (5.12) for patients'
-- unparsed cell psp412544-tbl-0002:row13:col3 = '235 (199–284)'
-- unparsed cell psp412544-tbl-0002:row13:col4 = 'BSV of 44.3 (36.1–54.5) for healthy and 56.7 (44.8–71.2) for patients. WSV of 68.7 (59.6–80.7) for patients'
-- unparsed cell psp412544-tbl-0002:row14:col2 = 'BSV of 44.9 (27.1) for healthy and 57.9 (39.5) for patients. WSV of 68.1 (5.12) for patients'
-- unparsed cell psp412544-tbl-0002:row14:col3 = '700 (627–775)'
-- unparsed cell psp412544-tbl-0002:row14:col4 = 'BSV of 44.3 (36.1–54.5) for healthy and 56.7 (44.8–71.2) for patients. WSV of 68.7 (59.6–80.7) for patients'
-- unparsed cell psp412544-tbl-0002:row15:col3 = '241 (218–271)'
-- unparsed cell psp412544-tbl-0002:row15:col4 = '42.2 (32.9–50.4)'
-- unparsed cell psp412544-tbl-0002:row16:col3 = '454 (417–489)'
-- unparsed cell psp412544-tbl-0002:row16:col4 = '42.1 (32.6–51.4)'
-- unparsed cell psp412544-tbl-0002:row17:col3 = '0.145 (0.116–0.184)'
-- unparsed cell psp412544-tbl-0002:row18:col3 = '−0.0079 (−1.29, 2.65 × 10−7)'
-- unparsed cell psp412544-tbl-0002:row19:col3 = '0.872 (0.618–1.06)'
-- unparsed cell psp412544-tbl-0002:row20:col3 = '0.982 (0.770–1.12)'
-- unparsed cell psp412544-tbl-0002:row21:col3 = '−0.487 (−0.587 to −0.376)'
-- unparsed cell psp412544-tbl-0002:row23:col4 = '0.908 (0.869–0.927)'
+- table psp412544-tbl-0002: unparsed_numeric_cell
+- table Chigutsa_2020_table_3: ragged_grid
 - companion parameter table 3 transcribed (95 record(s))
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.4 (10/25 fields) | 15 |
 | `qwen3.8-27b` | not confirmed | 0.176 (3/17 fields) | 14 |
 
-<details><summary>14 field discrepancies</summary>
+<details><summary>29 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['abemaciclib', 'm2', 'metabolism'], ['abemaciclib', 'm20', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[absorption lag time].covariate_forms` | [] | ['linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[clint of m2 in liver]` | 41.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clint of m20 in liver]` | 42.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clint to form m2 in liver (l/h) c , c]` |  | 280 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction of dose entering gut compartment, f a]` |  | 0.868 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction of f a absorbed via transit compartment]` |  | 7.08 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximum rate of absorption, ka,max].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_kabs_formulation]` |  | -0.513 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q305_category]` | 7.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q305_category]` | 7.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q342_category]` |  | 0.19 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q51_category]` |  | 7.08 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_tlag_formulation]` |  | 0.846 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[zero‐order absorption duration]` |  | 638 | only_one_extracted |
 | `qwen3.8-27b` | `model.links` | [['abemaciclib', 'm2 (lsn2839567)', 'metabolism'], ['abemaciclib', 'm20 (lsn3106726)', 'metabolism']] | [['abemaciclib', 'm2', 'metabolism'], ['abemaciclib', 'm20', 'metabolism']] | mismatch |
 | `qwen3.8-27b` | `parameters[absorption lag time]` | 7.08 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[central volume]` | 68.6 |  | only_one_extracted |
@@ -190,24 +173,23 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 10 |  |
+| C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp412544-tbl-0002:row15:col2'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp412544-tbl-0002:row16:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp412544-tbl-0002:row7:col2', 'psp412544-tbl-0002:row7:col4'] |
-| C5_dimension_Q310 | pass | [time] |  | ['psp412544-tbl-0002:row9:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp412544-tbl-0002:row7:col2'] |
 | C5_dimension_Q49 | fail | 1 / [time] | µmol/h ([substance] / [time]) | ['psp412544-tbl-0002:row3:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp412544-tbl-0002:row6:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412544-tbl-0002:row8:col2', 'psp412544-tbl-0002:row8:col4'] |
-| C5_dimension_Q83 | pass | [time] |  | ['psp412544-tbl-0002:row10:col2', 'psp412544-tbl-0002:row10:col4'] |
-| C5_unit_missing_Q81 | fail | [time] | h | ['psp412544-tbl-0002:row5:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412544-tbl-0002:row8:col2'] |
+| C5_dimension_Q81 | pass | [time] |  | ['psp412544-tbl-0002:row5:col2'] |
+| C5_dimension_Q83 | pass | [time] |  | ['psp412544-tbl-0002:row10:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 41.9 | ['psp412544-tbl-0002:row15:col2'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 41.9 L/h | ['psp412544-tbl-0002:row15:col2'] |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 42.5 L/h | ['psp412544-tbl-0002:row16:col2'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 68.6 L | ['psp412544-tbl-0002:row6:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 7.08 L | ['psp412544-tbl-0002:row8:col2', 'psp412544-tbl-0002:row8:col4'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 7.08 L | ['psp412544-tbl-0002:row8:col2'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -231,4 +213,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Babemaciclib%5D%20Abemaciclib_Chigutsa2020_variability_a_a_see&body=Drug%3A%20abemaciclib%0ARecord%3A%20Abemaciclib_Chigutsa2020_variability_a_a_see%0APaper%3A%20Chigutsa_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_abemaciclib/Abemaciclib_Chigutsa2020_variability_a_a_see%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:15 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:13 UTC</sub>

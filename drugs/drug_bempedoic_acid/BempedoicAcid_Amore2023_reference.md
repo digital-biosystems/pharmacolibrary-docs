@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bempedoic acid’s k21 has no reported estimate and was left at a default, so this record was held back.
+> K21 use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="bempedoic acid" model-id="BempedoicAcid_Amore2023_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="bempedoic_acid" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Amore BM, Patel N, Batheja P, Templeton IE, Jones HM, Louie MJ et al. Physiologi
 
 ### Reviewer guidance
 
-**Bempedoic acid’s k21 has no reported estimate and was left at a default, so this record was held back.**
+**K21 use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-No value for k21 was extracted from the paper; the library default affects the simulated profile but is unsupported by this paper. A second reader disputed the parameter assignments, with agreement of 0.263; the reported intercompartmental clearance of 1.5 mL/min and total clearance of 0.81 L/h were absent in that reading. Extracted — bempedoic acid: CL 0.81 L/h, V 24.5 L, Q 1.5 mL/min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — bempedoic acid: CL 0.81 L/h, V 24.5 L, Q 1.5 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has 1.06, the second reading 2.3; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,7 +142,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.263, 0 of 1 reader(s) agree | 0.263 | cross-check disputed by a second reader: verdict disputed, agreement 0.263, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.368 (7 of 19 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.368 | cross-check contradicted by a second reader: verdict disputed; agreement 0.368 (7 of 19 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

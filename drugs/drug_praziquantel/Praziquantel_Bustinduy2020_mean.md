@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the peripheral compartment is disconnected from the dose input, rendering the model structurally invalid.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="praziquantel" model-id="Praziquantel_Bustinduy2020_mean" status="rejected" stale="false" population="pregnant and lactating Filipino women infected with Schistosoma japonicum" measured-compound="praziquantel" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Bustinduy AL, Kolamunnage-Dona R, Mirochnick MH, Capparelli EV, Tallo V, Acosta 
 
 ### Reviewer guidance
 
-**The record was rejected because the peripheral compartment is disconnected from the dose input, rendering the model structurally invalid.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The rejection reason cites an unreachable compartment, indicating no path exists from the dose to the peripheral volume. Although a transfer rate constant from the central to peripheral compartment is listed, the model structure fails the connectivity check. The second reader’s disagreement regarding the extraction of the elimination rate constant does not resolve the topological defect identified in the review. Extracted — praziquantel: kabs 2.01 h–1, CL/F 324 liter/h, V1/F 183 liter, k12 19.3 h–1, k21 15.8 h–1, V2/F 612 liter, tlag 0.772 h.
+Extracted — praziquantel: kabs 2.01 h–1, CL/F 324 liter/h, V1/F 183 liter, k12 19.3 h–1, k21 15.8 h–1, V2/F 612 liter, tlag 0.772 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has praziquantel, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

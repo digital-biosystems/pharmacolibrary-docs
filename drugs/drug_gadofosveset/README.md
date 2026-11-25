@@ -47,7 +47,7 @@ Gadofosveset is a paramagnetic contrast medium used to improve images during mag
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:53 | 3:38 | 2/0/0 | 0/0/0 | 0/0/0 | 53,045/21,780 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-24 00:26 | 0:05 | 2/0/0 | 0/0/0 | 0/0/0 | 4,236/142 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -60,8 +60,11 @@ Gadofosveset is a paramagnetic contrast medium used to improve images during mag
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bane_2014 | irrelevant | 1 | 0 | The study models myocardial water exchange and contrast-agent distribution, not gadofosveset pharmacokinetic parameters; no such numeric values are provided. |
+| popPK | Bane_2014 | irrelevant | 0 | 0 | The study focuses on magnetic resonance imaging (MRI) relaxation properties and water exchange modeling for myocardial blood volume quantification, not pharmacokinetic disposition parameters like clearance or volume of distribution. |
+| PGx | Bane_2014 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics and compartmentalization of gadofosveset in the myocardium but does not report any pharmacogenomic effects or genetic variants influencing PK or PD parameters. |
 | popPK | Hindel_2017 | irrelevant | 1 | 0 | Gadofosveset is used as a diagnostic contrast agent to estimate tissue blood volume, not to report its own quantitative disposition parameters. |
+| popPK | Vogt_2007 | irrelevant | 0 | 0 | The study is a diagnostic performance evaluation of gadofosveset for MR angiography and does not report pharmacokinetic parameters. |
+| PGx | Vogt_2007 | not_relevant | 0 | 0 | The paper evaluates diagnostic accuracy of Vasovist for MR angiography and contains no information on gene variants or pharmacogenomics. |
 
 
 </details>

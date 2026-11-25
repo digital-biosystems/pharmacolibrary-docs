@@ -16,16 +16,15 @@ Heptabarbital is a barbiturate used as a sedative and hypnotic for insomnia.
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Dingemanse_1988_reference](drugs/drug_heptabarbital/Heptabarbital_Dingemanse1988_reference.md) | — | 1-compartment (no model) | 0 | Dingemanse J et al., Altered pharmacokinetic-pharmacodynamic…, The Journal of pharmacology… (1988) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Mandema_1990_AMP_TNW_0_5_2_5_Hz_Model_1](drugs/drug_heptabarbital/pd_Mandema_1990_AMP_TNW_0_5_2_5_Hz_Model_1.md) | Biphasic EEG effect (increase followed by decrease), 0.5-2.5 Hz frequency range, Model 1 ← heptabarbital · direct sigmoid Emax (Hill) effect | — | Mandema JW et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmacokinetics… (1990) | [10.1007/BF01061705](https://doi.org/10.1007/BF01061705) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Mandema_1990_AMP_TNW_0_5_2_5_Hz_Model_2](drugs/drug_heptabarbital/pd_Mandema_1990_AMP_TNW_0_5_2_5_Hz_Model_2.md) | Biphasic EEG effect (increase followed by decrease), 0.5-2.5 Hz frequency range, Model 2 ← heptabarbital · direct sigmoid Emax (Hill) effect | — | Mandema JW et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmacokinetics… (1990) | [10.1007/BF01061705](https://doi.org/10.1007/BF01061705) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Mandema_1990_AMP_TNW_2_5_Hz](drugs/drug_heptabarbital/pd_Mandema_1990_AMP_TNW_2_5_Hz.md) | EEG parameters (AMP and TNW) in discrete frequency ranges greater than 2.5 Hz ← heptabarbital · direct sigmoid Emax (Hill) effect | — | Mandema JW et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmacokinetics… (1990) | [10.1007/BF01061705](https://doi.org/10.1007/BF01061705) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Mandema_1990_TNW_2_5_30_Hz](drugs/drug_heptabarbital/pd_Mandema_1990_TNW_2_5_30_Hz.md) | Total number of waves per second, 2.5-30 Hz frequency range ← heptabarbital · direct sigmoid Emax (Hill) effect | — | Mandema JW et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmacokinetics… (1990) | [10.1007/BF01061705](https://doi.org/10.1007/BF01061705) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Mandema_1990_TNW](drugs/drug_heptabarbital/pd_Mandema_1990_TNW.md) | total number of waves per second ← heptabarbital · direct sigmoid Emax (Hill) effect | — | Mandema JW et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of pharmacokinetics… (1990) | [10.1007/BF01061705](https://doi.org/10.1007/BF01061705) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,24 +38,26 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:09 | 0:15 | 0/0/0 | 4/0/0 | 0/0/0 | 20,398/1,615 | ollama / glm-5.3-flash | 1 | 1/0 | 0/1 | 0 |
+| 2026-11-23 22:16 | 0:33 | 0/1/0 | 1/0/0 | 0/0/0 | 6,723/3,396 | einfracz / qwen3.8-27b | 1 | 1/0 | 0/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Mandema_1990 | irrelevant | 4 | 2 | PK-PD study in rats dosed with heptabarbital, but only pharmacodynamic (EEG Emax/EC50) values are reported; no CL/V/compartmental PK parameters appear, and PK values are not shown in the evidence. |
+| PGx | Dingemanse_1988 | not_relevant | 0 | 0 | The paper describes pharmacokinetic and pharmacodynamic modeling methods for heptabarbital but does not report any genetic variants or pharmacogenomic effects. |
+| popPK | Mandema_1990 | irrelevant | 3 | 0 | The paper focuses on pharmacodynamic modeling of EEG effects in rats and does not report pharmacokinetic disposition parameters (CL, V, etc.) for heptabarbital. |
+| PGx | Mandema_1990 | not_relevant | 0 | 0 | The study describes PK-PD modeling of heptabarbital in rats but does not report any pharmacogenomic effects or the impact of gene variants on parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bheptabarbital%5D&body=Drug%3A%20heptabarbital%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_heptabarbital/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 13:21 UTC</sub>

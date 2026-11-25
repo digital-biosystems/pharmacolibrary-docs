@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> Chlorhexidine's volume of distribution is 5.0 mL, an implausibly small value for a rabbit, violating physiological bounds.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="chlorhexidine" model-id="Chlorhexidine_Sherertz1993_reference" status="rejected" stale="false" population="rabbits" measured-compound="chlorhexidine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Sherertz RJ, Carruth WA, Hampton AA, Byron MP, Solomon DD. Efficacy of antibioti
 
 ### Reviewer guidance
 
-**Chlorhexidine's volume of distribution is 5.0 mL, an implausibly small value for a rabbit, violating physiological bounds.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The volume of distribution is recorded as 5.0 mL, a magnitude inconsistent with rabbit physiology and indicative of a unit or scale error. Because the record was built from the abstract alone, these summary statistics stand in for a fitted model. A second reader also disputed the identity of the dose compound and the primary analyte, marking them as unknown. Extracted — chlorhexidine: t1/2α 16.8 h, t1/2β 116 h, V 5 mL.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — chlorhexidine: t1/2α 16.8 h, t1/2β 116 h, V 5 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has chlorhexidine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

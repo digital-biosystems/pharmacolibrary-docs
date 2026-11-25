@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The record was rejected because AZD7648 is defined as an orphan entity with no dose path, creating an unreachable compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="olaparib" model-id="Olaparib_DeJongh2025_reference" status="rejected" stale="false" population="SCID and Nude mice" measured-compound="olaparib" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -58,13 +58,13 @@ DeJongh J, Cadogan E, Davies M, Ramos-Montoya A, Smith A, van Steeg T et al. Def
 
 ### Reviewer guidance
 
-**The record was rejected because AZD7648 is defined as an orphan entity with no dose path, creating an unreachable compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure links AZD7648 to olaparib via an interconversion parameter, but neither compound is designated as the sole dose compound, leaving one without a valid input path. A second reader disagreed on whether AZD7648 is a distinct dose compound or merely an interaction partner. Additionally, the absolute bioavailability parameter was identified as a different pharmacokinetic property by the second reader. Extracted — olaparib: fe 0.598, CL 0.251 L/h, V1 1.17 L, V2 2.66 L, kabs 2.77 1/h, Vmax 4.27, Km 3.73.
+Extracted — olaparib: fe 0.598, CL 0.251 L/h, V1 1.17 L, V2 2.66 L, kabs 2.77 1/h, Vmax 4.27, Km 3.73.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has AZD7648, olaparib, the second reading olaparib; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

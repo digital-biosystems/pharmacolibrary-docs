@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> The record cites clearance and volume for ketamine, but the source paper actually describes a different drug, so its subject mismatch invalidates the parameters.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="ketamine" model-id="Ketamine_Boulanger2025_reference" status="rejected" stale="false" population="" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Boulanger M, Taillandier JF, Henri J, Devreese M, De Baere S, Lacroix M et al. P
 
 ### Reviewer guidance
 
-**The record cites clearance and volume for ketamine, but the source paper actually describes a different drug, so its subject mismatch invalidates the parameters.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The relevance screen rejected the paper because neither the title nor the abstract names ketamine, identifying the source as describing another drug. Consequently, the extracted clearance of 0.015 L/h/kg and volume of 0.13 L/kg are attributed to ketamine despite originating from a study of a different molecule. Extracted — ketamine: CL 0.015 L/h/kg, V1 0.13 L/kg.
+Extracted — ketamine: CL 0.015 L/h/kg, V1 0.13 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q335: this record has 25, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.833 (5 of 6 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

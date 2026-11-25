@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant was rejected because its assigned volume per time unit conflicts with the required inverse time dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="ganciclovir" model-id="Ganciclovir_Dvokov2026_reference" status="rejected" stale="false" population="lung transplant recipients" measured-compound="ganciclovir" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Dvořáčková E, Michaličková D, Petrus J, Klapková E, Dutková A, Kotowski 
 
 ### Reviewer guidance
 
-**The absorption rate constant was rejected because its assigned volume per time unit conflicts with the required inverse time dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time].**
 
-The parameter describing the speed of drug absorption, valued at 0.334, was recorded with units of L/h. This unit represents volume divided by time, which is dimensionally inconsistent with a rate constant that must be expressed as inverse time. Additionally, the record lists no connection between valganciclovir and ganciclovir, despite the second reader noting a metabolic link. Extracted — ganciclovir: V1 43.1 L, CL 2.05 L/h, V2 140 L, kabs 0.334 L/h, Q 2.1 L/h, tlag 0.563 h, Frel 0.304.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — ganciclovir: V1 43.1 L, CL 2.05 L/h, V2 140 L, kabs 0.334 L/h, Q 2.1 L/h, tlag 0.563 h, Frel 0.304.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has valganciclovir and ganciclovir, the second reading valganciclovir; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

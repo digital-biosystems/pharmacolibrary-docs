@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;mitomycin&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/&quot;},{&quot;label&quot;:&quot;van_1983 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mitomycin_den1983_reference&quot;,&quot;label&quot;:&quot;den_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/Mitomycin_den1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,16 +7,16 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Only clearance was extracted — no volume.
+> Only clearance was extracted — no volume; the clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_van1983_reference" status="needs_review" stale="false" population="patients receiving mitomycin C alone or in combination with other chemotherapeutic drugs" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_van1983_reference" status="needs_review" stale="false" population="patients" measured-compound="mitomycin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 van Hazel GA, Scott M, Rubin J, Moertel CG, Eagan RT, O'Connell MJ et al. Pharmacokinetics of mitomycin C in patients receiving the drug alone or in combination. Cancer treatment reports 67(9):805–810 (1983).
 
 ## Population and dosing
 
-**Population:** patients receiving mitomycin C alone or in combination with other chemotherapeutic drugs · condition cancer · n = 30.
+**Population:** patients · condition cancer · age group adult.
 
 ## Model
 
@@ -31,11 +32,11 @@ van Hazel GA, Scott M, Rubin J, Moertel CG, Eagan RT, O'Connell MJ et al. Pharma
 |---|---|---|---|
 | alpha-half-life | t1/2α | 8.2 | mins |
 | beta-half-life | t1/2β | 51.8 | mins |
-| total body clearance | CLnorm | 332.9 | mL/min |
+| total body clearance | CL | 332.9 | ml/min/m2 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2), qwen3.8-27b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,11 +46,11 @@ van Hazel GA, Scott M, Rubin J, Moertel CG, Eagan RT, O'Connell MJ et al. Pharma
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**Only clearance was extracted — no volume; the clearance plausibility check could not be computed.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mitomycin: t1/2α 8.2 mins, t1/2β 51.8 mins, CLnorm 333 mL/min.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — mitomycin: t1/2α 8.2 mins, t1/2β 51.8 mins, CL 333 ml/min/m2.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[total body clearance].parameter_id`: this record has Q354, the second reading Q22. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mitomycin, the second reading mitomycin C; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -57,9 +58,9 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| alpha-half-life | `Q59` · t1/2α | 8.2 | mins |  |  | min | llm_corrected (0.6) | van_1983:abstract |
-| beta-half-life | `Q60` · t1/2β | 51.8 | mins |  |  | min | llm_corrected (0.6) | van_1983:abstract |
-| total body clearance | `Q354` · CLnorm | 332.9 | mL/min | 5.548e-06 | m3/s | L/h | llm_corrected (0.6) | van_1983:abstract |
+| alpha-half-life | `Q59` · t1/2α | 8.2 | mins | 492 | s | min | half_life_rule (0.95) | van_1983:abstract |
+| beta-half-life | `Q60` · t1/2β | 51.8 | mins | 3108 | s | min | half_life_rule (0.95) | van_1983:abstract |
+| total body clearance | `Q22` · CL | 332.9 | ml/min/m2 | 9.599e-06 | m3/s | ml/(min·m2) | llm_confirmed (0.6) | van_1983:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -69,30 +70,35 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'ml/min/m2' (CLnorm)
-- implicit units: 'total body clearance' → mL/min (from the popPK convention: 'No unit is stated in the provided text. For clearance normalized to a 70 kg reference, 332.9 is consistent with mL/min (')
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mitomycin C
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mitomycin
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in van_1983_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 | `qwen3.8-27b` | not confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[alpha-half-life]` | 8.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alpha-half-life]` |  | 8.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[beta-half-life]` | 51.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[beta-half-life]` |  | 51.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` | 332.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance]` |  | 332.9 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | mitomycin | mitomycin C | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | mitomycin | mitomycin C | mismatch |
 | `qwen3.8-27b` | `parameters[total body clearance].parameter_id` | Q354 | Q22 | mismatch |
 
 </details>
@@ -110,10 +116,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['van_1983:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['van_1983:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['van_1983:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['van_1983:abstract'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 332.9 | ['van_1983:abstract'] |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 34.6 L/h | ['van_1983:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -147,4 +155,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitomycin%5D%20Mitomycin_van1983_reference&body=Drug%3A%20mitomycin%0ARecord%3A%20Mitomycin_van1983_reference%0APaper%3A%20van_1983%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitomycin/Mitomycin_van1983_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:58 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:05 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Adalimumab’s absorption-rate constant ka is unreported, so the record was held back rather than treating it as a paper-supported estimate.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="adalimumab" model-id="Adalimumab_van2024_reference" status="needs_review" stale="false" population="patients with psoriasis" measured-compound="adalimumab" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ van Huizen A, Bank P, van der Kraaij G, Musters A, Busard C, Menting S et al. Qu
 
 ### Reviewer guidance
 
-**Adalimumab’s absorption-rate constant ka is unreported, so the record was held back rather than treating it as a paper-supported estimate.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-Ka uses library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by the paper and need to be extracted or explicitly justified as conventions. Tlag was also defaulted, and the model assumed F=1, Fm=1, no molar correction, and first-order depot input under apparent (/F) parameterization. Extracted — adalimumab: CL/F 0.365 l/day/82 kg, V/F 14.7 l/82 kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — adalimumab: CL/F 0.365 l/day/82 kg, V/F 14.7 l/82 kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

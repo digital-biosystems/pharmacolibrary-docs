@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The 70 kg-normalized clearance and volume values for ivacaftor were mislabeled as generic V, causing the model to fail physiological plausibility checks.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ivacaftor" model-id="Ivacaftor_Vonk2025_ivacaftor_m6" status="rejected" stale="false" population="children with cystic fibrosis" measured-compound="ivacaftor" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Vonk SEM, Terheggen-Lagro SWJ, Haarman EG, Hashimoto S, Maitland-van der Zee AH,
 
 ### Reviewer guidance
 
-**The 70 kg-normalized clearance and volume values for ivacaftor were mislabeled as generic V, causing the model to fail physiological plausibility checks.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The parameter labeled 'V' carries the value 1.76 L/h, which is an oral clearance magnitude, not a volume. Consequently, the record lacks the correct volume value of 59.0 L/70 kg associated with that compound. Additionally, the extraction process failed to convert the provided units to standard SI, leaving the model builder with incomplete data. Extracted — ivacaftor: AUC 208 mg*h/L, AUC 19 mg*h/L, V 1.76 L/h, CL/F 1.76 L/h/70 kg, V/F 59 L/ 70 kg.
+A reported unit could not be converted (AUC and AUC), so that value has no SI equivalent. Extracted — ivacaftor: AUC 208 mg*h/L, AUC 19 mg*h/L, V 1.76 L/h, CL/F 1.76 L/h/70 kg, V/F 59 L/ 70 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading elexacaftor → elexacaftor metabolite (metabolism); tezacaftor → tezacaftor metabolite (metabolism); ivacaftor → ivacaftor metabolite (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

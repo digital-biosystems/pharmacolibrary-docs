@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the maximum metabolic rate (Vmax) unit of mg/d could not be converted to standard international units, preventing valid dimensionality checks on the structural parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/d ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="brodalumab" model-id="Brodalumab_Timmermann2019_value_rse" status="rejected" stale="false" population="patients with moderate to severe plaque psoriasis" measured-compound="brodalumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Timmermann S, Hall A. Population pharmacokinetics of brodalumab in patients with
 
 ### Reviewer guidance
 
-**Record rejected because the maximum metabolic rate (Vmax) unit of mg/d could not be converted to standard international units, preventing valid dimensionality checks on the structural parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/d ([mass] / [time]) vs [mass] / [time].**
 
-The record lists the maximum rate of metabolism (Vmax) for brodalumab as 6.07 mg/d. The review identified a dimension mismatch on this structural parameter because the specific unit format was not recognized for conversion to SI. Consequently, the parameter lacked a standardized value, which caused the model review to fail. Extracted — brodalumab: kabs 0.3 d−1, V1 4.68 L, CL 0.155 L/d, Vmax 6.07 mg/d, Km 0.02 µg/mL, Q 0.328 L/d, V2 2.41 L, Fab 54.8.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — brodalumab: kabs 0.3 d−1, V1 4.68 L, CL 0.155 L/d, Vmax 6.07 mg/d, Km 0.02 µg/mL, Q 0.328 L/d, V2 2.41 L, Fab 54.8.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

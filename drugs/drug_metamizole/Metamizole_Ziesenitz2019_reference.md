@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record lacks distribution volume and clearance, and contains an AUC value of 29.9 mg/L/h for 4-methylaminoantipyrine instead of structural parameters.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit mg/L/h ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="Metamizole" model-id="Metamizole_Ziesenitz2019_reference" status="rejected" stale="false" population="infants and children" measured-compound="4-methylaminoantipyrine" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Ziesenitz VC, Rodieux F, Atkinson A, Borter C, Bielicki JA, Haschke M et al. Dos
 
 ### Reviewer guidance
 
-**The record lacks distribution volume and clearance, and contains an AUC value of 29.9 mg/L/h for 4-methylaminoantipyrine instead of structural parameters.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit mg/L/h ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.**
 
-The paper is an exposure/outcome study reporting only the area under the concentration-time curve extrapolated to infinity. No distribution volume or elimination clearance was extracted, so the record does not represent a compartmental population pharmacokinetic model. The recorded AUC value of 29.9 mg/L/h has a dimension incompatible with a structural parameter, as area units do not match volume or clearance dimensions. Additionally, the second reader disagreed on whether the AUC value was present in the record. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is metamizole's own; they describe 4-methylaminoantipyrine. Extracted — 4-methylaminoantipyrine: AUC∞ 29.9 mg/L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0-inf of 4-methylaminoantipyrine in children 2-6 years: this record has 29.9, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

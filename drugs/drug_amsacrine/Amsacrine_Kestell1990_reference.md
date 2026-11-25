@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Amsacrine parameters Km, Vmax, and AUC were rejected because their molar units are dimensionally inconsistent with the expected mass-based quantities.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit mumol/liter ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q66 unit mumol/h/kg ([substance] / [time]) vs [mass] / [time]; Q88 unit mumol.h/liter ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="amsacrine" model-id="Amsacrine_Kestell1990_reference" status="rejected" stale="false" population="male B6D2F1 mice" measured-compound="amsacrine" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Kestell P, Paxton JW, Evans PC, Young D, Jurlina JL, Robertson IG et al. Disposi
 
 ### Reviewer guidance
 
-**Amsacrine parameters Km, Vmax, and AUC were rejected because their molar units are dimensionally inconsistent with the expected mass-based quantities.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit mumol/liter ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q66 unit mumol/h/kg ([substance] / [time]) vs [mass] / [time]; Q88 unit mumol.h/liter ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The recorded Km (3.7 µmol/liter), Vmax (18 µmol/h/kg), and AUC (31 µmol·h/liter) use molar units, which conflict with the mass dimensions required for these structural parameters. Although the second reader identified a dose of 57.7 and a free drug fraction of 0.63, the primary rejection stems from the unit type mismatch. This dimensional error persists despite the record being derived solely from the paper's abstract, where these summary statistics stand in for a fitted model. Extracted — amsacrine: Km 3.7 mumol/liter, Vmax 18 mumol/h/kg, Vss 3.3 liter/kg, AUC 31 mumol.h/liter, fu 0.63.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — amsacrine: Km 3.7 mumol/liter, Vmax 18 mumol/h/kg, Vss 3.3 liter/kg, AUC 31 mumol.h/liter, fu 0.63.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 57.7; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

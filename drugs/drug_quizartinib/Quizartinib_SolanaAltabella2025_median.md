@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;quizartinib&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/&quot;},{&quot;label&quot;:&quot;Solana-Altabella_2025 \u00b7 median&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quizartinib_Vaddady2024_final&quot;,&quot;label&quot;:&quot;Vaddady_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/Quizartinib_Vaddady2024_final.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quizartinib_Vaddady2024_final_final_quizartinib_model&quot;,&quot;label&quot;:&quot;Vaddady_2024_final_final_quizartinib_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/Quizartinib_Vaddady2024_final_final_quizartinib_model.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kang_2021_QTcF&quot;,&quot;label&quot;:&quot;Kang_2021 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/pd_Kang_2021_QTcF.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The quizartinib record was rejected because a peripheral compartment is structurally unlinked, and a volume parameter lacks a second reader's value.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="quizartinib" model-id="Quizartinib_SolanaAltabella2025_median" status="rejected" stale="false" population="adult patients with newly diagnosed FLT3-ITD-negative AML" measured-compound="quizartinib" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +55,13 @@ Solana-Altabella A, Iniesta-Navalón C, Chovi-Trull M, Rodriguez-Veiga R, Lopez-
 
 ### Reviewer guidance
 
-**The quizartinib record was rejected because a peripheral compartment is structurally unlinked, and a volume parameter lacks a second reader's value.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure was flagged as containing an unreachable or orphan compartment, meaning part of the quizartinib distribution model has no path from the dose. Additionally, the second reader disagreed on the value of the distribution volume V4 (39.30 L), recording it as null. A further disagreement exists on the parameter identification for the intercompartmental clearance Q3 (26.56 L/h). Extracted — quizartinib: CL 1.76 L/h, kel 0.01 1/h, kabs 1.68 1/h, Fab 0.75, t1/2z 82.5 h, V2 227 L, V3 176 L, Q3 26.6 L/h, … (+1).
+Extracted — quizartinib: CL 1.76 L/h, kel 0.01 1/h, kabs 1.68 1/h, Fab 0.75, t1/2z 82.5 h, V2 227 L, V3 176 L, Q3 26.6 L/h, … (+1).
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[q4].parameter_id`: this record has Q900, the second reading Q99; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

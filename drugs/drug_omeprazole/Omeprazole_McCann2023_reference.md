@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the cited paper studies posaconazole, not omeprazole, which appears only as a covariate.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_McCann2023_reference" status="rejected" stale="false" population="" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ McCann S, Sinha J, Wilson WS, McKinzie CJ, Garner LM, Gonzalez D. Population Pha
 
 ### Reviewer guidance
 
-**The record was rejected because the cited paper studies posaconazole, not omeprazole, which appears only as a covariate.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The primary cause for refusal is that the source text describes a pharmacokinetic study of posaconazole, with omeprazole serving merely as a co-medication or covariate affecting posaconazole bioavailability rather than the main drug of interest. This identity mismatch means the extracted parameters do not belong to a primary omeprazole model. Additionally, the review flagged that a bioavailability parameter was not explicitly estimated and was left at library defaults instead of using a specific value from the text. Extracted — omeprazole: CL 6.5 L/h, V 226 L, kabs 0.325 h -1, tlag 2.5 h.
+Extracted — omeprazole: CL 6.5 L/h, V 226 L, kabs 0.325 h -1, tlag 2.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 6.5, the second reading 6.00; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.429, 0 of 1 reader(s) agree | 0.429 | cross-check disputed by a second reader: verdict disputed, agreement 0.429, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.429 (6 of 14 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.429 | cross-check contradicted by a second reader: verdict disputed; agreement 0.429 (6 of 14 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

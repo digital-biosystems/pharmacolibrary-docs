@@ -1,7 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;trabectedin&quot;,&quot;href&quot;:&quot;drugs/drug_trabectedin/&quot;},{&quot;label&quot;:&quot;Hing_2008 \u00b7 PD absolute neutrophil counts&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trabectedin_Poggesi2019_reference&quot;,&quot;label&quot;:&quot;Poggesi_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_trabectedin/Trabectedin_Poggesi2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# absolute neutrophil counts — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+# absolute neutrophil counts — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Trabectedin (concentrations from the PK model of Perez-Ruixo_2007) drives absolute neutrophil counts (in 10(9)/l): delayed effect through transit (transduction) compartments.
+**As extracted:** Trabectedin (concentrations from the PK model of Perez-Ruixo_2007) drives absolute neutrophil counts (in /l): disease-progression model.
 
 **Model:** No model was generated from this record.
 
@@ -22,7 +23,7 @@
 > <sub>Source-based summary by gpt-6-luna from the paper's text; not human-verified</sub>
 
 - **paper:** `Hing_2008`
-- **model family:** `transduction`
+- **model family:** `disease_progression`
 - **driver:** `cited_pk`
 - **tier:** population
 - **effect:** inhibition/unknown
@@ -34,17 +35,9 @@ Hing J et al., Mechanism-based pharmacokinetic/pharmac…, Clinical pharmacology
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | ANC at baseline | `Q324` ·  | 4.46 x 10(9)/l | 10(9)/l | llm | Hing_2008:pdv3 |
-| PK (driver) | mean transit time in bone marrow | `Q81` ·  | 4.0 | days | boundary | Hing_2008:pdv3 |
-| model term | feedback parameter | `Q900` ·  | 0.218 |  | llm | Hing_2008:pdv3 |
-| PD (effect) | effect compartment rate constant | `Q326` ·  | 2.09 | h(-1) | llm | Hing_2008:pdv3 |
-| model term | concentration-effect parameter | `Q900` ·  | 2.00 | l/microg | llm | Hing_2008:pdv3 |
-| model term | concentration-effect exponent | `Q900` ·  | 1.26 |  | llm | Hing_2008:pdv3 |
-| variability | between-subject variability of ANC at baseline | `Q312` ·  | 37.9% | % | llm | Hing_2008:pdv3 |
-| variability | between-subject variability of mean transit time | `Q312` ·  | 37.5% | % | llm | Hing_2008:pdv3 |
-| variability | between-subject variability of feedback parameter | `Q312` ·  | 41.8% | % | llm | Hing_2008:pdv3 |
-| variability | between-subject variability of effect compartment rate constant | `Q312` ·  | 77.9% | % | llm | Hing_2008:pdv3 |
-| variability | between-subject variability of concentration-effect parameter | `Q312` ·  | 85.1% | % | llm | Hing_2008:pdv3 |
+| PD (effect) | Circ0 | `Q324` ·  | 4.46 x 10(9) | /l | llm | Hing_2008:pdv3 |
+| PD (effect) | gamma | `Q325` ·  | 0.218 |  | exact | Hing_2008:pdv3 |
+| PD (effect) | k(e0) | `Q326` ·  | 2.09 | h(-1) | llm | Hing_2008:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -53,21 +46,20 @@ Hing J et al., Mechanism-based pharmacokinetic/pharmac…, Clinical pharmacology
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `model_family` | transduction | disease_progression | mismatch |
-| `qwen3.8-27b` | `parameters[Q325]` |  | 0.218 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q326].value` | 2.09 | 2.09 h(-1) | mismatch |
-| `qwen3.8-27b` | `parameters[Q81]` | 4.0 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q900]` | 1.26 |  | only_one_extracted |
+| `gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
+| `gpt-oss-120b` | `model_family` | disease_progression | indirect_response_i | mismatch |
+| `gpt-oss-120b` | `parameters[Q325]` | 0.218 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q326].value` | 2.09 | 2.09 h(-1) | mismatch |
 
 </details>
 

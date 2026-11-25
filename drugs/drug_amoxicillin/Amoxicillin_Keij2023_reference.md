@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Amoxicillin's clearance, volume, and lag time lacked values, causing the model to use placeholders and be held back.
+> No value for amoxicillin's clearance, volume of distribution and absorption lag time; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Keij2023_reference" status="model_quarantined" stale="false" population="neonates with possible serious bacterial infection" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Keij FM, Schouwenburg S, Kornelisse RF, Preijers T, Mir F, Degraeuwe P et al. Or
 
 ### Reviewer guidance
 
-**Amoxicillin's clearance, volume, and lag time lacked values, causing the model to use placeholders and be held back.**
+**No value for amoxicillin's clearance, volume of distribution and absorption lag time; the covariate scenarios were not simulated (+1 more).**
 
-The record provides no explicit estimates for amoxicillin's clearance, volume of distribution, or absorption lag time. Consequently, library placeholders were used instead of fitted parameters. Additionally, the defined covariate effects were not simulated during the model check. Extracted — amoxicillin: kabs 0.085 h−1, Fab 0.873 %.
+The model was built, but amoxicillin's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — amoxicillin: kabs 0.085 h−1, Fab 0.873 %.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

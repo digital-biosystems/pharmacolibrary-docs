@@ -22,8 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zang_2016_PASI](drugs/drug_tapinarof/pd_Zang_2016_PASI.md) | PASI change rate ← benvitimod · direct Emax (saturable) effect | — | Zang YN et al., Use of a dose-response model to guide f…, International journal of cl… (2016) | [10.5414/CP202486](https://doi.org/10.5414/CP202486) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Zhao_2025_AHR](drugs/drug_tapinarof/pd_Zhao_2025_AHR.md) | AHR agonist activity ← Tapinarof · stimulation effect | — | Zhao Y et al., Design, Optimization, and Biological Ev…, Journal of medicinal chemis… (2025) | [10.1021/acs.jmedchem.5c01060](https://doi.org/10.1021/acs.jmedchem.5c01060) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zang_2016_PASI](drugs/drug_tapinarof/pd_Zang_2016_PASI.md) | psoriasis area and severity index (PASI) change rate ← dose of benvitimod cream · direct Emax (saturable) effect | — | Zang YN et al., Use of a dose-response model to guide f…, International journal of cl… (2016) | [10.5414/CP202486](https://doi.org/10.5414/CP202486) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:40 | 0:39 | 0/0/0 | 2/0/0 | 0/0/0 | 12,693/3,550 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 07:23 | 0:03 | 0/0/0 | 1/0/0 | 0/0/0 | 3,442/174 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -51,8 +50,10 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Jett_2022 | irrelevant | 2 | 3 | The human trial reports numeric AUC and Cmax, but no quantitative disposition parameters; half-life values are not provided. |
-| popPK | Zang_2016 | irrelevant | 0 | 0 | This is an efficacy dose-response model, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper reports AHR activity and efficacy for tapinarof analogues, not quantitative pharmacokinetic parameters for tapinarof. |
+| popPK | Zang_2016 | irrelevant | 0 | 0 | The study investigates benvitimod, not tapinarof, and focuses on pharmacodynamic dose-response modeling rather than pharmacokinetic parameters. |
+| PGx | Zang_2016 | not_relevant | 0 | 0 | The paper investigates dose-response for benvitimod cream, not tapinarof, and reports no pharmacogenomic findings. |
+| popPK | Zhao_2025 | irrelevant | 0 | 0 | The paper focuses on the design and biological evaluation of novel tapinarof analogues (pharmacodynamics/mechanism) and does not report pharmacokinetic parameters for tapinarof itself. |
+| PGx | Zhao_2025 | not_relevant | 0 | 0 | The paper describes the design and biological evaluation of new tapinarof analogues for topical psoriasis treatment and does not report any pharmacogenomic effects on PK or PD parameters of tapinarof. |
 
 
 </details>

@@ -45,7 +45,7 @@ Yamakage M, Bepperling F, Wargenau M, Miyao H. Pharmacokinetics and safety of 6Â
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is hydroxyethylstarch's own; they describe hydroxyethylstarch 130/0.4.
 

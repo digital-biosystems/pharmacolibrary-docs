@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Magnesium sulfate was rejected because its reported normalized apparent clearance, CLnorm/F, is −0.54, an implausible negative clearance value.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Deng2024_reference" status="rejected" stale="false" population="Chinese preeclampsia population" measured-compound="magnesium_sulfate" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Deng J, Peng L, Wang Y, Li J, Tang L, Yu Y. Population pharmacokinetics and dose
 
 ### Reviewer guidance
 
-**Magnesium sulfate was rejected because its reported normalized apparent clearance, CLnorm/F, is −0.54, an implausible negative clearance value.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record reports CLnorm/F as −0.54, while total clearance is 2.98 L/h and volume of distribution is 25.07 L. The second reader disputed the CLnorm/F entry, recording no value, and disagreed with its apparent-clearance parameterization. Extracted — magnesium sulfate: V 25.1 L, CL 2.98 L/h, CLnorm/F -0.54.
+Extracted — magnesium sulfate: V 25.1 L, CL 2.98 L/h, CLnorm/F -0.54.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium_sulfate, the second reading magnesium sulfate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

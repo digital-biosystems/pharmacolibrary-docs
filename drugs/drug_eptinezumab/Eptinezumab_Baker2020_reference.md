@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because a second reader disputed the extraction of eptinezumab clearance 0.0062 L/h and other pharmacokinetic values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="eptinezumab" model-id="Eptinezumab_Baker2020_reference" status="needs_review" stale="false" population="patients with episodic or chronic migraine" measured-compound="eptinezumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Baker B, Schaeffler B, Beliveau M, Rubets I, Pederson S, Trinh M et al. Populati
 
 ### Reviewer guidance
 
-**The record was held back because a second reader disputed the extraction of eptinezumab clearance 0.0062 L/h and other pharmacokinetic values.**
+**cross_check_disputed; x1_cross_check.**
 
-The initial reviewer extracted clearance as 0.0062 L/h, central volume of distribution as 3.64 L, and AUC0-12wk as 158 h·μg/mL. A second reader marked all these parameters as null, disagreeing with their extraction. Furthermore, the second reader was unable to identify the dose compound and primary analyte, marking both as unknown. Extracted — eptinezumab: AUCt 158 h·μg mL−1, Cmax 0.279 μg mL−1, Cavg 0.0785 μg mL−1, Ctrough 0.0232 μg mL−1, Css 0.091 μg mL−1, CL 0.0062 L h−1, V 3.64 L.
+A reported unit could not be converted (AUCt, Cmax, Cavg and Ctrough), so that value has no SI equivalent. Extracted — eptinezumab: AUCt 158 h·μg mL−1, Cmax 0.279 μg mL−1, Cavg 0.0785 μg mL−1, Ctrough 0.0232 μg mL−1, Css 0.091 μg mL−1, CL 0.0062 L h−1, V 3.64 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has eptinezumab, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -180,13 +180,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.1, 0 of 1 reader(s) agree | 0.1 | cross-check disputed by a second reader: verdict disputed, agreement 0.1, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.1 (2 of 20 compared fields agree, 16 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.1 | cross-check contradicted by a second reader: verdict disputed; agreement 0.1 (2 of 20 compared fields agree, 16 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 37.3 | 0.002747 |  | unresolved concentration unit (exp 'μg mL−1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 114 | 0.002747 |  | unresolved concentration unit (exp 'μg mL−1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 30 | 0.002747 |  | unresolved concentration unit (exp 'minutes', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 60 | 0.002747 |  | unresolved concentration unit (exp 'minutes', sim 'kg/m3') |
-| T1_cmax | reference | skipped |  | 0.002747 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.002747 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.002747 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.002747 |  | the transcribed record carries no number for this value |
 | T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">

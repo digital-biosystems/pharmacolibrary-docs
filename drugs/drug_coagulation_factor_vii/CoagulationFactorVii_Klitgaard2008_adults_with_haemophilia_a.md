@@ -215,8 +215,8 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_t_half_terminal | reference | fail | 3.08 | 2.24 | 0.7274 | h→SI vs simulated h |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | fail | 3.08 | 2.24 | 0.7274 | reported 3.08 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

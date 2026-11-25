@@ -52,7 +52,7 @@ Rabie H, Tikiso T, Lee J, Fairlie L, Strehlau R, Bobat R et al. Abacavir Exposur
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of lpv/r-4:4 + rifampin effect on bioavailability: this record has none, the second reading -36.0; it also differs on 1 more field. That field does not shape the model.
 

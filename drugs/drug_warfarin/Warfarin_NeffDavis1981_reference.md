@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> The terminal elimination rate constant for warfarin is recorded with mass-based units (mg/kg) instead of inverse time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit mg/kg ([mass]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_NeffDavis1981_reference" status="rejected" stale="false" population="healthy adult male beagle dogs" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Neff-Davis CA, Davis LE, Gillette EL. Warfarin in the dog: pharmacokinetics as r
 
 ### Reviewer guidance
 
-**The terminal elimination rate constant for warfarin is recorded with mass-based units (mg/kg) instead of inverse time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit mg/kg ([mass]) vs 1 / [time].**
 
-The record lists the terminal elimination rate constant with a value of 0.050 and units of mg/kg, which is dimensionally inconsistent with a rate constant. The second reader identified the elimination rate constant value as 0.052 and suggested a different parameter identifier. Additional disagreements exist for the terminal half-life (13.17 h vs 14.48 h) and volume of distribution (2.07 L vs 2.34 L). Extracted — warfarin: V 2.34 litres, Vnorm 0.22 litre/kg, t1/2z 14.5 h, kel 0.05 mg/kg, kabs 0.214 1/h, tlag 1.29 h.
+A reported unit could not be converted (kel), so that value has no SI equivalent. Extracted — warfarin: V 2.34 litres, Vnorm 0.22 litre/kg, t1/2z 14.5 h, kel 0.05 mg/kg, kabs 0.214 1/h, tlag 1.29 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of b: this record has none, the second reading 7.55; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Donepezil model mismatches Cmax (3.19 ng/mL) and tmax (1.0 h); units hindered conversion.
+> The model does not reproduce the paper's peak concentration (Cmax); the model does not reproduce the paper's time of the peak (tmax) (paper 1, model 1.8) (+1 more).
 
 <div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Lee2022_ir" status="needs_review" stale="false" population="Beagle dogs" measured-compound="donepezil" parameterization="apparent" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Lee DY, Shin S, Kim TH, Shin BS. Establishment of Level a In Vitro-In Vivo Corre
 
 ### Reviewer guidance
 
-**Donepezil model mismatches Cmax (3.19 ng/mL) and tmax (1.0 h); units hindered conversion.**
+**The model does not reproduce the paper's peak concentration (Cmax); the model does not reproduce the paper's time of the peak (tmax) (paper 1, model 1.8) (+1 more).**
 
-Simulated Cmax ratios were 0.457 and 1.8689, and tmax ratio was 1.8016, exceeding tolerance. A reported unit could not be converted to SI, impeding validation. The second reader disputed all extracted parameters, recording them as null. Extracted — donepezil: t1/2z 5.39 h, Cmax 3.19 ng/mL, AUClast 11.1 ng·h/mL, AUC∞ 13.3 ng·h/mL, V/F 2.68e+03 L, CL/F 5.94e+03 mL/min, MRT 6.55 h, kabs 2.73 /hour, … (+1).
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax, AUClast and AUC∞), so that value has no SI equivalent. Extracted — donepezil: t1/2z 5.39 h, Cmax 3.19 ng/mL, AUClast 11.1 ng·h/mL, AUC∞ 13.3 ng·h/mL, V/F 2.68e+03 L, CL/F 5.94e+03 mL/min, MRT 6.55 h, kabs 2.73 /hour, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has donepezil, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -184,15 +184,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.1, 0 of 1 reader(s) agree | 0.1 | cross-check disputed by a second reader: verdict disputed, agreement 0.1, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 1.458e-06 |  | non-numeric value |
-| T1_cmax | reference | fail | 3.19e-06 | 1.458e-06 | 0.457 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 7.8e-07 | 1.458e-06 | 1.869 | ng/mL→SI vs simulated kg/m3 |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.1 (2 of 20 compared fields agree, 16 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.1 | cross-check contradicted by a second reader: verdict disputed; agreement 0.1 (2 of 20 compared fields agree, 16 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 1.458e-06 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | fail | 3.19e-06 | 1.458e-06 | 0.457 | reported 3.19 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 7.8e-07 | 1.458e-06 | 1.869 | reported 0.78 ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 6.84 | 1.458e-06 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 8.91 | 1.458e-06 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped |  | 1.458e-06 |  | non-numeric value |
-| T1_tmax | reference | fail | 1 | 1.802 | 1.802 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 1.5 | 1.802 | 1.201 | h→SI vs simulated h |
+| T1_cmax | reference | skipped |  | 1.458e-06 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | fail | 1 | 1.802 | 1.802 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | pass | 1.5 | 1.802 | 1.201 | reported 1.5 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -208,7 +208,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_donepezil/Donepezil_Lee2022_ir/Donepezil_Lee2022_ir_modelica.zip" download>Donepezil_Lee2022_ir_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_donepezil/Donepezil_Lee2022_ir/Donepezil_Lee2022_ir_modelica.zip" download>Donepezil_Lee2022_ir_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_donepezil/Donepezil_Lee2022_ir/Donepezil_Lee2022_ir_fmi.zip" download>Donepezil_Lee2022_ir_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_donepezil/Donepezil_Lee2022_ir/Donepezil_Lee2022_ir_matlab.zip" download>Donepezil_Lee2022_ir_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_donepezil/Donepezil_Lee2022_ir/Donepezil_Lee2022_ir_matlab_simbio.zip" download>Donepezil_Lee2022_ir_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>

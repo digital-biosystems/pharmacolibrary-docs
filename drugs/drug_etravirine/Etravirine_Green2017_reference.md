@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;etravirine&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/&quot;},{&quot;label&quot;:&quot;Green_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etravirine_Kang2020v3_reference&quot;,&quot;label&quot;:&quot;Kang_2020_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Kang2020v3_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Green2017_reference&quot;,&quot;label&quot;:&quot;Green_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Green2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Etravirine_Lubomirov2013_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Lubomirov2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Courlet2021v2_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Courlet2021v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Duwal2019_reference&quot;,&quot;label&quot;:&quot;Duwal_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Duwal2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Han2024_reference&quot;,&quot;label&quot;:&quot;Han_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Han2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Jin2020_reference&quot;,&quot;label&quot;:&quot;Jin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Jin2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etravirine_Lubomirov2013_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Lubomirov2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Courlet2021v2_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Courlet2021v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Duwal2019_reference&quot;,&quot;label&quot;:&quot;Duwal_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Duwal2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Han2024_reference&quot;,&quot;label&quot;:&quot;Han_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Han2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Jin2020_reference&quot;,&quot;label&quot;:&quot;Jin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Jin2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Kang2020v3_reference&quot;,&quot;label&quot;:&quot;Kang_2020_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Kang2020v3_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # etravirine — `Etravirine_Green2017_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record failed because the second reader disputed the interpretation of the 35.5 value as between-subject variability on bioavailability.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].
 
-<div class="pk-model-meta" hidden drug="etravirine" model-id="Etravirine_Green2017_reference" status="needs_review" stale="false" population="adult subjects with HIV" measured-compound="etravirine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="etravirine" model-id="Etravirine_Green2017_reference" status="rejected" stale="false" population="adult treatment-experienced HIV patients" measured-compound="etravirine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Green B, Crauwels H, Kakuda TN, Vanveggel S, Brochot A. Evaluation of Concomitant Antiretrovirals and CYP2C9/CYP2C19 Polymorphisms on the Pharmacokinetics of Etravirine. Clinical pharmacokinetics 56(5):525–536 (2017).
@@ -17,32 +17,29 @@ Green B, Crauwels H, Kakuda TN, Vanveggel S, Brochot A. Evaluation of Concomitan
 
 ## Population and dosing
 
-**Population:** adult subjects with HIV · condition HIV infection · age group adult · n = 817.
+**Population:** adult treatment-experienced HIV patients · condition HIV · age group adult.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 6 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_etravirine/Etravirine_Green2017_reference/Etravirine_Green2017_reference.svg" alt="Etravirine_Green2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Parameters:** 5 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | apparent total clearance (CL/F) | CL/F | 41.7 | L/h |
 | apparent central volume of distribution (V c/F) | V/F | 972 | L |
-| first-order absorption rate constant (k a) | t1/2ka | 1.16 | h |
+| first-order absorption rate constant (k a) | kabs | 1.16 | h |
 | absorption lag-time | tlag | 1.32 | h |
 | between-subject variability on relative bioavailability (F) | IIV | 35.5 |  |
-| KA | kabs | 0.455 | h−1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8), qwen3.8-27b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +49,13 @@ Green B, Crauwels H, Kakuda TN, Vanveggel S, Brochot A. Evaluation of Concomitan
 
 ### Reviewer guidance
 
-**The record failed because the second reader disputed the interpretation of the 35.5 value as between-subject variability on bioavailability.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].**
 
-This record is abstract-only, so summary statistics stand in for a fitted model. The model builder assumed relative bioavailability F=1 and no molar correction. The second reader disagreed with the assignment of the value 35.5 to between-subject variability on relative bioavailability, instead returning null for that field. Extracted — etravirine: CL/F 41.7 L/h, V/F 972 L, t1/2ka 1.16 h, tlag 1.32 h, IIV 35.5, kabs 0.455 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — etravirine: CL/F 41.7 L/h, V/F 972 L, kabs 1.16 h, tlag 1.32 h, IIV 35.5.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on bioavailability: this record has 35.5, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -66,10 +63,9 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on bioavail
 |---|---|---|---|---|---|---|---|---|
 | apparent total clearance (CL/F) | `Q27` · CL/F | 41.7 | L/h | 1.158e-05 | m3/s | l/h | llm_corrected (0.6) | Green_2017:abstract |
 | apparent central volume of distribution (V c/F) | `Q76` · V/F | 972 | L | 0.972 | m3 | l | llm_confirmed (0.6) | Green_2017:abstract |
-| first-order absorption rate constant (k a) | `Q95` · t1/2ka | 1.16 | h | 4176 | s | h | llm_corrected (0.6) | Green_2017:abstract |
+| first-order absorption rate constant (k a) | `Q49` · kabs | 1.16 | h |  |  | h | llm_confirmed (0.6) | Green_2017:abstract |
 | absorption lag-time | `Q83` · tlag | 1.32 | h | 4752 | s | h | llm_confirmed (0.6) | Green_2017:abstract |
 | between-subject variability on relative bioavailability (F) | `Q312` · IIV | 35.5 |  |  |  |  | llm_confirmed (0.6) | Green_2017:abstract |
-| KA | `Q49` · kabs | 0.455 | h−1 | 0.0001264 | 1/s | 1/h | review_gapfill (0.7) | Brochot_2015:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,35 +74,35 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on bioavail
 
 ## Departures & gaps
 
-**Deviations:**
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
+- unit_dimension_mismatch: 'first-order absorption rate constant (k a)' → Q49 (unit '[time]' vs ontology '1 / [time]') — route to review
 - routed 'between-subject variability on CL/F' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - routed 'between-subject variability on V c/F' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=etravirine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'apparent central volume of distribution (V c/F)' is the general volume)
+- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Brochot_2015's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Green_2017_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.8 (8/10 fields) | 2 |
 | `qwen3.8-27b` | not confirmed | 0.615 (8/13 fields) | 5 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | 35.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[between-subject variability on relative bioavailability]` | 35.5 |  | only_one_extracted |
 | `qwen3.8-27b` | `model.bioavailability.theta` | 35.5 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[between-subject variability on relative bioavailability]` | 35.5 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[first-order absorption rate constant].parameter_id` | Q95 | Q49 | mismatch |
@@ -129,27 +125,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Green_2017:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Brochot_2015:review'] |
+| C5_dimension_Q49 | fail | 1 / [time] | h ([time]) | ['Green_2017:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Green_2017:abstract'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Green_2017:abstract'] |
-| C5_dimension_Q95 | pass | [time] |  | ['Green_2017:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 41.7 L/h | ['Green_2017:abstract'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 972 L | ['Green_2017:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=etravirine) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.615, 0 of 1 reader(s) agree | 0.615 | cross-check disputed by a second reader: verdict disputed, agreement 0.615, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -161,72 +143,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_etravirine/Etravirine_Green2017_reference/Etravirine_Green2017_reference_modelica.zip" download>Etravirine_Green2017_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_etravirine/Etravirine_Green2017_reference/Etravirine_Green2017_reference_fmi.zip" download>Etravirine_Green2017_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_etravirine/Etravirine_Green2017_reference/Etravirine_Green2017_reference_matlab.zip" download>Etravirine_Green2017_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_etravirine/Etravirine_Green2017_reference/Etravirine_Green2017_reference_matlab_simbio.zip" download>Etravirine_Green2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_etravirine/Etravirine_Green2017_reference/Etravirine_Green2017_reference_sbml.zip" download>Etravirine_Green2017_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_etravirine/Etravirine_Green2017_reference/Etravirine_Green2017_reference_cellml.zip" download>Etravirine_Green2017_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.4353 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 4752 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0004 | kg |
-| input | model | `Cl` | 1.158e-05 | m3/s |
-| input | model | `VdPerKg` | 0.01389 | m3/kg |
-| input | model | `ka` | 0.0001264 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Green B, Crauwels H, Kakuda TN, Vanveggel S, Brochot A. Evaluation of Concomitant Antiretrovirals and CYP2C9/CYP2C19 Polymorphisms on the Pharmacokinetics of Etravirine. Clinical pharmacokinetics 56(5):525–536 (2017). [doi:10.1007/s40262-016-0454-8](https://doi.org/10.1007/s40262-016-0454-8)
-
-**This record:** Pharmacolibrary, model `Etravirine_Green2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_etravirine/Etravirine_Green2017_reference>
-
-```bibtex
-@misc{pharmacolibrary_EtravirineGreen2017reference,
-  title  = {{Pharmacolibrary model Etravirine_Green2017_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_etravirine/Etravirine_Green2017_reference},
-  note   = {Parameters from doi:10.1007/s40262-016-0454-8},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 400 mg, single dose, first-order absorption (ka 0.455 /h, lag 79.2 min, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 400 mg oral (J05AG04) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_etravirine/Etravirine_Green2017_reference/Etravirine_Green2017_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_etravirine/Etravirine_Green2017_reference/Etravirine_Green2017_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Etravirine_Green2017_reference_params.json` · controls `Etravirine_Green2017_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betravirine%5D%20Etravirine_Green2017_reference&body=Drug%3A%20etravirine%0ARecord%3A%20Etravirine_Green2017_reference%0APaper%3A%20Green_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etravirine/Etravirine_Green2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:49 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:50 UTC</sub>

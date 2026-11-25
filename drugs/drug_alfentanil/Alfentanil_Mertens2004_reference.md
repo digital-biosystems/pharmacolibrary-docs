@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record lacks a value for the alfentanil absorption lag time, preventing complete model simulation.
+> T3_param_coverage.
 
 <div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Mertens2004_reference" status="needs_review" stale="false" population="" measured-compound="alfentanil" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Mertens MJ, Olofsen E, Burm AG, Bovill JG, Vuyk J. Mixed-effects modeling of the
 
 ### Reviewer guidance
 
-**The record lacks a value for the alfentanil absorption lag time, preventing complete model simulation.**
+**T3_param_coverage.**
 
-The parameter list includes an absorption lag time (tlag) of 0.96 min, yet this specific parameter was not emitted or defaulted in the final record structure. This omission means the model cannot account for the delay in drug absorption, leaving the simulation incomplete for the alfentanil molecule. Consequently, the record requires review to resolve this missing parameter coverage. Extracted — alfentanil: CL 2 l/min, V1 43.6 l, V2 158 l, Q 2.3 l/min, tlag 0.96 min.
+Extracted — alfentanil: CL 2 l/min, V1 43.6 l, V2 158 l, Q 2.3 l/min, tlag 0.96 min.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q312: this record has none, the second reading 44; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.7 (7 of 10 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.7 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

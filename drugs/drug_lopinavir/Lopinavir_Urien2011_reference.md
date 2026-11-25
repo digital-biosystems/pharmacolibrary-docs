@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;Lopinavir&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/&quot;},{&quot;label&quot;:&quot;Urien_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lopinavir_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lopinavir_Wang2014_reference&quot;,&quot;label&quot;:&quot;Wang_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Wang2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lopinavir_Calderin2026_reference&quot;,&quot;label&quot;:&quot;Calderin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Calderin2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lopinavir_Upton2025_reference&quot;,&quot;label&quot;:&quot;Upton_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Upton2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lopinavir_Alvarez2021_reference&quot;,&quot;label&quot;:&quot;Alvarez_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Alvarez2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lopinavir_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lopinavir_Calderin2026_reference&quot;,&quot;label&quot;:&quot;Calderin_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Calderin2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lopinavir_Upton2025_reference&quot;,&quot;label&quot;:&quot;Upton_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lopinavir/Lopinavir_Upton2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The lopinavir volume of distribution value of 91.7 L/70 kg has a dimensionless unit that conflicts with its required volume dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit h(-1) (1 / [time]) vs [length] ** 3 / [time]; Q61 unit 70 kg(-1) (dimensionless) vs [length] ** 3.
 
-<div class="pk-model-meta" hidden drug="Lopinavir" model-id="Lopinavir_Urien2011_reference" status="rejected" stale="false" population="neonates and infants" measured-compound="lopinavir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Lopinavir" model-id="Lopinavir_Urien2011_reference" status="rejected" stale="false" population="neonates and infants" measured-compound="lopinavir/ritonavir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Urien S, Firtion G, Anderson ST, Hirt D, Solas C, Peytavin G et al. Lopinavir/ritonavir population pharmacokinetics in neonates and infants. British journal of clinical pharmacology 71(6):956–960 (2011).
@@ -17,15 +17,13 @@ Urien S, Firtion G, Anderson ST, Hirt D, Solas C, Peytavin G et al. Lopinavir/ri
 
 ## Population and dosing
 
-**Population:** neonates and infants · condition HIV-exposed neonates/infants · age group neonate · n = 96.
-
-**Dosed compound ≠ measured compound:** dosed lopinavir/ritonavir, measured lopinavir.
+**Population:** neonates and infants · condition HIV · age group mixed · n = 96.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameterization:** mechanistic.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,14 +31,12 @@ Urien S, Firtion G, Anderson ST, Hirt D, Solas C, Peytavin G et al. Lopinavir/ri
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL/F | CL/F | 5.87 | L/h |
-| V/F | V/F | 91.7 | 70 kg(-1) |
-| F | Fab | 50 | % |
-| Ka | kabs | 0.758 | 1 /h |
+| clearance (CL/F) | CL | 5.87 | h(-1) |
+| distribution volume (V/F) | V | 91.7 | 70 kg(-1) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,69 +46,63 @@ Urien S, Firtion G, Anderson ST, Hirt D, Solas C, Peytavin G et al. Lopinavir/ri
 
 ### Reviewer guidance
 
-**The lopinavir volume of distribution value of 91.7 L/70 kg has a dimensionless unit that conflicts with its required volume dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit h(-1) (1 / [time]) vs [length] ** 3 / [time]; Q61 unit 70 kg(-1) (dimensionless) vs [length] ** 3.**
 
-The recorded volume of distribution parameter uses a weight-normalized unit that is dimensionless, rather than a volume unit. This dimensional mismatch prevents the model from structurally representing the pharmacokinetic compartment size. Additionally, the record relies on abstract summary statistics rather than fitted model parameters. Extracted — lopinavir: CL/F 5.87 L/h, V/F 91.7 70 kg(-1), Fab 50 %, kabs 0.758 1 /h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lopinavir: CL 5.87 h(-1), V 91.7 70 kg(-1).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lopinavir/ritonavir, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has lopinavir/ritonavir, the second reading lopinavir; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 5.87 | L/h | 1.631e-06 | m3/s | L/h | exact (1) | Urien_2011:abstract |
-| V/F | `Q76` · V/F | 91.7 | 70 kg(-1) |  |  | 1/kg | exact (1) | Urien_2011:abstract |
-| F | `Q40` · Fab | 50 | % |  |  |  | exact (1) | Urien_2011:abstract |
-| Ka | `Q49` · kabs | 0.758 | 1 /h | 0.0002106 | 1/s | 1/h | review_gapfill (0.7) | Liang_2026:review |
+| label (paper) | Q-code · name | value | unit | unit_canonical | link | source |
+|---|---|---|---|---|---|---|
+| clearance (CL/F) | `Q22` · CL | 5.87 | h(-1) | 1/h | exact (1) | Urien_2011:abstract |
+| distribution volume (V/F) | `Q61` · V | 91.7 | 70 kg(-1) | 70/kg | exact (1) | Urien_2011:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'h(-1) 70 kg(-1)' (CL/F)
-- unit_dimension_mismatch: 'V/F' → Q76 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- dropped unlinked row (NIL): 'PMA' — extend the ontology if this is a real PK parameter (source ['Urien_2011:abstract'])
-- implicit units: 'CL/F' → L/h (from the popPK convention: 'No unit stated in text or table footnotes; CL/F is a clearance, conventionally expressed in L/h in population PK, consis')
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lopinavir
+- unit_dimension_mismatch: 'clearance (CL/F)' → Q22 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_mismatch: 'distribution volume (V/F)' → Q61 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lopinavir/ritonavir
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
+- molar mass: none of 1 PubChem candidate(s) is 'lopinavir/ritonavir' (LLM) — left in mass units
+- molar mass: none found for 'lopinavir/ritonavir' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Liang_2026's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Urien_2011_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Urien_2011_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl/f]` | 5.87 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.bioavailability.theta` |  | 50 | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss-120b` | `parameters[cl/f]` |  | 5.87 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 5.87 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution volume]` | 91.7 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[dose]` |  | 40 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f]` | 50 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 0.758 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[relative bioavailabilty, f]` |  | 50 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f]` | 91.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` |  | 50 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v/f]` |  | 91.7 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | lopinavir/ritonavir | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | lopinavir | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | lopinavir/ritonavir | lopinavir | mismatch |
 
 </details>
 
@@ -126,15 +116,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Urien_2011:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Liang_2026:review'] |
-| C5_dimension_Q76 | fail | [length] ** 3 | 70 kg(-1) (dimensionless) | ['Urien_2011:abstract'] |
-| C7_apparent_coherence | pass |  |  |  |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | h(-1) (1 / [time]) | ['Urien_2011:abstract'] |
+| C5_dimension_Q61 | fail | [length] ** 3 | 70 kg(-1) (dimensionless) | ['Urien_2011:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.87 | ['Urien_2011:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 5.87 L/h | ['Urien_2011:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -158,4 +146,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blopinavir%5D%20Lopinavir_Urien2011_reference&body=Drug%3A%20lopinavir%0ARecord%3A%20Lopinavir_Urien2011_reference%0APaper%3A%20Urien_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lopinavir/Lopinavir_Urien2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:41 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:14 UTC</sub>

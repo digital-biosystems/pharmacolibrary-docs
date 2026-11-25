@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The 5-hydroxymethyl tolterodine record was held for review because its CYP2D6 clearance effect, 0.534, was not simulated and a second reader disputed the extraction.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="fesoterodine" model-id="Fesoterodine_Sano2023_reference" status="needs_review" stale="false" population="pediatric patients with neurogenic detrusor overactivity or overactive bladder" measured-compound="5-hydroxymethyl tolterodine" parameterization="apparent" topology="1C"></div>
 
@@ -63,13 +63,13 @@ Sano Y, Shoji S, Shahin M, Sweeney K, Darekar A, Malhotra BK. Population Pharmac
 
 ### Reviewer guidance
 
-**The 5-hydroxymethyl tolterodine record was held for review because its CYP2D6 clearance effect, 0.534, was not simulated and a second reader disputed the extraction.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. The second reader disputed the record (agreement 0.125, 0 of 1 reader agreeing), differing on the analyte name and whether lag time 0.279 h, absorption rate 0.0902 h−1, and apparent clearance 71.4 L/h were captured; the model builder assumed F=1 and Fm=1 with no molar correction. Extracted — 5-hydroxymethyl tolterodine: CLm/F 71.4 L/h, V/F 73.7 L, kabs 0.0902 h−1, tlag 0.279 h.
+The base model was simulated, not the covariate effects the record defines. None of the extracted parameters is fesoterodine's own; they describe 5-hydroxymethyl tolterodine. Extracted — 5-hydroxymethyl tolterodine: CLm/F 71.4 L/h, V/F 73.7 L, kabs 0.0902 h−1, tlag 0.279 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 5-hydroxymethyl tolterodine, the second reading 5-HMT; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -198,9 +198,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.125 (3 of 24 compared fields agree, 20 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.125 | cross-check contradicted by a second reader: verdict disputed; agreement 0.125 (3 of 24 compared fields agree, 20 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 2.55 | 1.98e-06 |  | unresolved concentration unit (exp 'h', sim 'kg/m3') |
-| T1_t_half_terminal | reference | pass | 7.73 | 7.683 | 0.9939 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 7.73 | 7.683 | 0.9939 | reported 7.73 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

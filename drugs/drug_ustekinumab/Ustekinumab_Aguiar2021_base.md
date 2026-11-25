@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The KD parameter unit of nmol/L conflicts with the expected mass-based clearance dimension, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="ustekinumab" model-id="Ustekinumab_Aguiar2021_base" status="rejected" stale="false" population="patients with Crohn&#39;s disease" measured-compound="ustekinumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Aguiar Zdovc J, Hanžel J, Kurent T, Sever N, Koželj M, Smrekar N et al. Usteki
 
 ### Reviewer guidance
 
-**The KD parameter unit of nmol/L conflicts with the expected mass-based clearance dimension, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The dissociation constant KD is recorded with a unit of nmol/L, which represents molar concentration. This concentration unit conflicts with the dimensional requirement for a mass-based parameter in this model context. The review notes a dimension mismatch because the recorded unit lacks the necessary mass dimension, preventing successful conversion to SI units. Extracted — ustekinumab: kabs 0.518 day−1, CL 0.264, V1 2.18, Q 20.1 L/day, V2 5.04, Fab 71.7, KD 0.35 nmol/L.
+A reported unit could not be converted (KD), so that value has no SI equivalent. Extracted — ustekinumab: kabs 0.518 day−1, CL 0.264, V1 2.18, Q 20.1 L/day, V2 5.04, Fab 71.7, KD 0.35 nmol/L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

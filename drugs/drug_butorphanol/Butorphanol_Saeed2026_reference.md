@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> The record for butorphanol was rejected because structural parameters lacked valid units, preventing conversion to SI standards.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q410 unit units ([luminosity] / [length] ** 2) vs dimensionless; Q310 unit units ([luminosity] / [length] ** 2) vs [time].
 
 <div class="pk-model-meta" hidden drug="butorphanol" model-id="Butorphanol_Saeed2026_reference" status="rejected" stale="false" population="13 species" measured-compound="butorphanol" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Saeed AM, Jusko WJ. Butorphanol Pharmacokinetics Across Species: Meta-Analysis I
 
 ### Reviewer guidance
 
-**The record for butorphanol was rejected because structural parameters lacked valid units, preventing conversion to SI standards.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q410 unit units ([luminosity] / [length] ** 2) vs dimensionless; Q310 unit units ([luminosity] / [length] ** 2) vs [time].**
 
-The tissue-to-plasma partition coefficient (Kp) and zero-order duration (D1) were recorded with generic 'units' instead of dimensionless or time values. This unit mismatch prevented the model from computing correct SI values for the structural parameters. Additionally, the second reader was unable to verify the values for Kp, absorption rate, and zero-order duration, leaving their extraction unconfirmed. Extracted — butorphanol: Kp 3.55 units, D1 0.0191 units, kabs 1.96 h -1.
+A reported unit could not be converted (equation variable, Kp and D1), so that value has no SI equivalent. Extracted — butorphanol: Kp 3.55 units, D1 0.0191 units, kabs 1.96 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has butorphanol, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -22,9 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other organism</span> | [Sarma_2025_anti_leishmanial_activity_on_amastigotes](drugs/drug_valrubicin/pd_Sarma_2025_anti_leishmanial_activity_on_amastigotes.md) | anti-leishmanial activity on amastigotes ← valrubicin · inhibition effect | — | Sarma M et al., Identification of novel anti-leishmania…, FEBS letters (2025) | [10.1002/1873-3468.15016](https://doi.org/10.1002/1873-3468.15016) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other organism</span> | [Sarma_2025_anti_leishmanial_activity_on_promastigotes](drugs/drug_valrubicin/pd_Sarma_2025_anti_leishmanial_activity_on_promastigotes.md) | anti-leishmanial activity on promastigotes ← valrubicin · inhibition effect | — | Sarma M et al., Identification of novel anti-leishmania…, FEBS letters (2025) | [10.1002/1873-3468.15016](https://doi.org/10.1002/1873-3468.15016) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kumar_2026_cell_viability](drugs/drug_valrubicin/pd_Kumar_2026_cell_viability.md) | cell viability ← valrubicin · inhibition effect | — | Kumar H et al., FusionTarget: Computational framework f…, iScience (2026) | [10.1016/j.isci.2026.116076](https://doi.org/10.1016/j.isci.2026.116076) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sabnis_2012_CCK_8_assay](drugs/drug_valrubicin/pd_Sabnis_2012_CCK_8_assay.md) | cell viability ← AD-32 · inhibition effect | — | Sabnis N et al., Enhanced solubility and functionality o…, International journal of na… (2012) | [10.2147/IJN.S28029](https://doi.org/10.2147/IJN.S28029) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 19:56 | 3:50 | 0/0/0 | 2/1/0 | 0/0/0 | 92,326/6,426 | openai / gpt-6-luna | 7 | 2/0 | 7/0 | 0 |
+| 2026-11-24 05:29 | 0:03 | 0/0/0 | 1/0/0 | 0/0/0 | 4,196/167 | einfracz / qwen3.8-27b | 7 | 3/4 | 7/0 | 0 |
 
 ## Coverage
 
@@ -51,10 +49,40 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Al-Shdifat_2026 | irrelevant | 0 | 0 | The study focuses on in vitro physicochemical properties (solubility, stability, binding) of valrubicin-cucurbituril complexes, not pharmacokinetic disposition parameters. |
+| PGx | Al-Shdifat_2026 | not_relevant | 0 | 0 | The paper explores physical chemistry and drug delivery using cucurbiturils, not the effect of a genetic variant on PK or PD parameters. |
+| popPK | Andersen_2010 | irrelevant | 0 | 0 | The study is a pharmacological/toxicological investigation of valrubicin's anti-tumor effects in a mouse skin cancer model and human cell lines, reporting no pharmacokinetic parameters. |
+| PGx | Andersen_2010 | not_relevant | 0 | 0 | The paper reports general pharmacodynamic effects of valrubicin on skin tumors in animal and cell models, but contains no data on gene variants or genotypes influencing PK or PD parameters. |
+| popPK | Baby_2021 | irrelevant | 0 | 0 | The study is an in silico molecular docking and dynamics simulation exploring valrubicin as a potential SARS-CoV-2 inhibitor, containing no pharmacokinetic data. |
+| PGx | Baby_2021 | not_relevant | 0 | 0 | The paper is an in silico study on drug repurposing for SARS-CoV-2 and does not contain any pharmacogenomic data regarding the PK or PD of valrubicin. |
+| popPK | Gul_2023 | irrelevant | 0 | 0 | The paper is an in vitro structural dynamics simulation study focusing on Roxadustat, with valrubicin serving only as a comparative ligand and containing no pharmacokinetic parameters. |
+| PGx | Gul_2023 | not_relevant | 0 | 0 | The paper discusses molecular dynamics of PHD2 inhibitors and proposes valrubicin as a therapeutic candidate but does not report any pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
 | popPK | Islam_2022 | irrelevant | 0 | 0 | This review reports no quantitative valrubicin disposition parameters. |
-| popPK | Kumar_2026 | irrelevant | 0 | 0 | This is an in-silico drug-screening and cell-assay study with no quantitative valrubicin pharmacokinetic parameters. |
-| PGx | Lau_2017 | not_relevant | 0 | 0 | The paper studies Sgsh genotype effects on disease phenotypes in mice and does not report valrubicin PK or PD parameters. |
-| popPK | Smith_2019 | irrelevant | 0 | 0 | This computational study reports no valrubicin-specific pharmacokinetic parameter values. |
+| popPK | Kumar_2026 | irrelevant | 0 | 0 | The paper describes a bioinformatics pipeline for drug repurposing targeting fusion proteins (EWSR1::FLI1, KMT2A::AFF1) and does not contain any pharmacokinetic data for valrubicin. |
+| PGx | Kumar_2026 | not_relevant | 0 | 0 | The paper focuses on drug repurposing against fusion protein structures (specifically EWSR1::FLI1 and KMT2A::AFF1) using brigatinib, and contains no information regarding valrubicin or its pharmacokinetic/pharmacodynamic parameters. |
+| popPK | Lau_2017 | irrelevant | 0 | 0 | The paper describes a genetic mouse model for Sanfilippo syndrome and does not involve the drug valrubicin or its pharmacokinetics. |
+| PGx | Lau_2017 | not_relevant | 0 | 0 | The paper discusses a mouse model of Sanfilippo syndrome and does not mention valrubicin or any pharmacogenomic effects on its pharmacokinetics or pharmacodynamics. |
+| popPK | Laugesen_2013 | irrelevant | 0 | 0 | The study investigates the mechanistic mode of action (PKC activation) in vitro, not pharmacokinetic disposition parameters. |
+| PGx | Laugesen_2013 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of valrubicin via PKC activation but does not report any association with gene variants or genotypes affecting PK or PD parameters. |
+| popPK | Mahmud_2021 | irrelevant | 0 | 0 | The paper is an in silico molecular docking study assessing binding affinity to a viral protein, not a pharmacokinetic study of valrubicin. |
+| PGx | Mahmud_2021 | not_relevant | 0 | 0 | The paper performs in silico molecular docking to assess antiviral potential against SARS-CoV-2, containing no data on pharmacogenomics or PK/PD parameters. |
+| popPK | Onrust_1999 | irrelevant | 0 | 0 | no_text gate: only 35 chars of text extracted (&lt; 400) |
+| PGx | Onrust_1999 | not_relevant | 0 | 0 | The provided text consists only of a drug code (C1340 for Valrubicin) and does not contain any pharmacogenomic data or analysis. |
+| popPK | Rameika_2025 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on NAT2 metabolism of valrubicin and other drugs, not a pharmacokinetic study reporting quantitative disposition parameters. |
+| popPK | Rosada_2010 | irrelevant | 0 | 0 | The study investigates the therapeutic efficacy of topical valrubicin in a psoriasis model and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Rosada_2010 | not_relevant | 0 | 0 | The study investigates the pharmacodynamic effects of valrubicin on a psoriasis xenograft model but contains no information regarding gene variants, genotypes, or pharmacogenomic effects. |
+| popPK | Rottboell_2015 | irrelevant | 0 | 0 | The paper investigates the antibacterial and anti-inflammatory effects of valrubicin, not its pharmacokinetics. |
+| PGx | Rottboell_2015 | not_relevant | 0 | 0 | The paper investigates the anti-inflammatory and antibacterial effects of valrubicin, not the influence of gene variants on its pharmacokinetics or pharmacodynamics. |
+| popPK | Sabnis_2012 | irrelevant | 0 | 0 | The paper is an in-vitro drug delivery and cytotoxicity study focusing on nanoparticle formulation and cell uptake, containing no pharmacokinetic parameters (CL, V, ka) for valrubicin. |
+| PGx | Sabnis_2012 | not_relevant | 0 | 0 | The paper focuses on drug formulation and nanocarrier delivery efficacy, containing no data on genetic variants or pharmacogenomic effects on valrubicin PK/PD. |
+| popPK | Sarma_2025 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of anti-leishmanial activity and does not report pharmacokinetic parameters for valrubicin. |
+| PGx | Sarma_2025 | not_relevant | 0 | 0 | The paper investigates the anti-leishmanial activity and mechanism of action (targeting glutathione synthetase) of valrubicin, but does not report any pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Smith_2019 | irrelevant | 0 | 0 | The paper focuses on fluid mechanics and biphasic solute transport modeling for intravesical delivery, not on the pharmacokinetics of valrubicin or specific drug disposition parameters. |
+| PGx | Smith_2019 | not_relevant | 0 | 0 | The paper analyzes the physical effects of instillation volume on intravesical drug delivery (specifically for valrubicin implied by context or general intravesical therapy) but contains no information regarding gene variants, genotypes, or pharmacogenomics. |
+| popPK | Vallejo-Diez_2018 | irrelevant | 0 | 0 | The paper describes the generation of induced pluripotent stem cells for a lysosomal storage disease and does not contain any pharmacokinetic data for valrubicin. |
+| PGx | Vallejo-Diez_2018 | not_relevant | 0 | 0 | The paper describes the generation of iPSC lines for Mucopolysaccharydosis IIIB and does not mention valrubicin or any pharmacokinetic/pharmacodynamic parameters. |
+| popPK | Wani_2000 | irrelevant | 0 | 0 | The study is an in vitro/in vivo efficacy and mechanistic study of valrubicin for tumor treatment, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Wani_2000 | not_relevant | 0 | 0 | The paper reports preclinical efficacy and mechanism of action (PKC inhibition, cell cycle arrest) but does not investigate any gene variants or genetic differences affecting pharmacokinetics or pharmacodynamics. |
 
 
 </details>

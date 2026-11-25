@@ -27,7 +27,7 @@ Fitusiran is a synthetic double-stranded siRNA that inhibits the liver productio
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Fan_2026_Protein](drugs/drug_fitusiran/pd_Fan_2026_Protein.md) | target protein ← fitusiran · indirect response — drug inhibits the production of target protein | — | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Fan_2026_mRNA](drugs/drug_fitusiran/pd_Fan_2026_mRNA.md) | target mRNA ← fitusiran · indirect response — drug inhibits the production of target mRNA | — | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Fan_2026_mRNA](drugs/drug_fitusiran/pd_Fan_2026_mRNA.md) | target mRNA ← fitusiran · indirect response — drug inhibits the production of target mRNA | — | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -41,7 +41,7 @@ Fitusiran is a synthetic double-stranded siRNA that inhibits the liver productio
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 19:45 | 20:20 | 0/4/0 | 1/1/0 | 0/0/0 | 374,208/57,898 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 2/6 | 8/0 | 0 |
+| 2026-10-05 19:45 | 20:20 | 0/4/0 | 2/0/0 | 0/0/0 | 374,208/57,898 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 2/6 | 8/0 | 0 |
 
 ## Coverage
 

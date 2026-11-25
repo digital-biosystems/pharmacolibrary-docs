@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The ticlopidine record incorrectly contains S-ketamine data, and the intercompartmental clearance parameter has incompatible physical dimensions.
+> 'nonmem' is a column of the estimates table, not a study population; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit L/h ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="ticlopidine" model-id="Ticlopidine_Ashraf2018_nonmem" status="rejected" stale="false" population="healthy adults" measured-compound="S-ketamine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -48,11 +48,11 @@ Ashraf MW, Peltoniemi MA, Olkkola KT, Neuvonen PJ, Saari TI. Semimechanistic Pop
 
 ### Reviewer guidance
 
-**The ticlopidine record incorrectly contains S-ketamine data, and the intercompartmental clearance parameter has incompatible physical dimensions.**
+**'nonmem' is a column of the estimates table, not a study population; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit L/h ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time].**
 
-The measured compound is S-ketamine in a parent-metabolite structure, whereas the drug is identified as ticlopidine. The intercompartmental clearance parameter, Q, has a unit of L/h that conflicts with required volume per mass per time dimensions. A reported unit could not be converted to standard SI units, leaving the parameter without a consistent value. Extracted — ticlopidine: CLint 301 L/h, V 14.4 L, Q 287 L/h.
+The table was split into one record per column, and 'nonmem' holds a statistic rather than a second set of estimates. A reported unit could not be converted (CLint), so that value has no SI equivalent. Extracted — ticlopidine: CLint 301 L/h, V 14.4 L, Q 287 L/h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

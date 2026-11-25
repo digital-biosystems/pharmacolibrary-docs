@@ -160,4 +160,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinpocetine%5D%20Vinpocetine_Vereczkey1987_reference&body=Drug%3A%20vinpocetine%0ARecord%3A%20Vinpocetine_Vereczkey1987_reference%0APaper%3A%20Vereczkey_1987%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinpocetine/Vinpocetine_Vereczkey1987_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 00:43 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:26 UTC</sub>

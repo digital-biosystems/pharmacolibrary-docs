@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because metabolite K1O is an orphan compartment with no defined link from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Yuen2010_parameter_estimates_estimate" status="rejected" stale="false" population="healthy Chinese and Indian volunteers" measured-compound="S-warfarin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -44,7 +44,7 @@ Yuen E, Gueorguieva I, Wise S, Soon D, Aarons L. Ethnic differences in the popul
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +54,13 @@ Yuen E, Gueorguieva I, Wise S, Soon D, Aarons L. Ethnic differences in the popul
 
 ### Reviewer guidance
 
-**The model was rejected because metabolite K1O is an orphan compartment with no defined link from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The structure describes an interconversion between parent S-warfarin and metabolite K1O, yet both directions lack a link parameter. Consequently, metabolite K1O has no path from the dose, making it unreachable within the pharmacokinetic system. Extracted — warfarin: Ct 479 ng/ml; S-warfarin: CL 0.348 L/h, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
+Extracted — warfarin: Ct 479 ng/ml; S-warfarin: CL 0.348 L/h, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has S-warfarin, the second reading warfarin; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -110,6 +112,35 @@ The structure describes an interconversion between parent S-warfarin and metabol
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+
+<details><summary>9 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['k1', 'k1o', 'interconversion'], ['k1o', 'k1', 'interconversion']] | [['warfarin', 'prothrombin complex activity', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `parameters[c 50,s (h1h7) [ng/ml]]` |  | 288 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c 50,s (h7h7) [ng/ml]]` | 479 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 0.348 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.214 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag]` | 1.29 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[parameter estimates / estimate]` | 0.180 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 14.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | S-warfarin | warfarin | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

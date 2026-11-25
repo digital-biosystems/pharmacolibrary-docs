@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Naloxegol record held back because absorption rate constant and lag time used library placeholders instead of estimates from the source.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="naloxegol" model-id="Naloxegol_AlHuniti2016_reference" status="needs_review" stale="false" population="healthy subjects and patients with OIC and non-OIC" measured-compound="naloxegol" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Al-Huniti N, Chapel S, Xu H, Bui KH, Sostek M. Population pharmacokinetics of na
 
 ### Reviewer guidance
 
-**Naloxegol record held back because absorption rate constant and lag time used library placeholders instead of estimates from the source.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The model relies on default values for the absorption rate constant and lag time rather than estimates from the paper. This occurred because only the abstract was read, so summary statistics stood in for fitted model parameters. A second reader also disagreed with the assignment of naloxegol as the measured compound, citing unknown values. Extracted — naloxegol: CL/F 115 l h(-1), V/F 160 l.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — naloxegol: CL/F 115 l h(-1), V/F 160 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has naloxegol, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

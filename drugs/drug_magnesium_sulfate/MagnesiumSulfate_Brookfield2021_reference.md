@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Magnesium sulfate was held back because clearance was treated as missing, despite a reported CL of 3.52 L/h; volume, absorption lag, and transfer rate were also defaulted.
+> No value for magnesium sulfate's clearance, volume of distribution, absorption lag time and central→peripheral rate constant; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Brookfield2021_reference" status="model_quarantined" stale="false" population="women with severe preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Brookfield K, Galadanci H, Du L, Wenning L, Mohammed I, Suleiman M et al. Magnes
 
 ### Reviewer guidance
 
-**Magnesium sulfate was held back because clearance was treated as missing, despite a reported CL of 3.52 L/h; volume, absorption lag, and transfer rate were also defaulted.**
+**No value for magnesium sulfate's clearance, volume of distribution, absorption lag time and central→peripheral rate constant; the covariate scenarios were not simulated (+2 more).**
 
-The disposition treats magnesium sulfate’s clearance, volume of distribution, absorption lag time, and central-to-peripheral rate constant as having no extracted value, so library placeholders stood in and the model was held back; however, the record lists CL 3.52 L/h and V1 and V2 volumes of 16.9 L and 14.3 L. The covariate scenarios were not simulated: only the reference individual was simulated, not the covariate effects defined in the record. A second reader disputed the analyte identification and the interpretation of the clearance covariate, including whether −0.73 is its creatinine exponent; the recorded agreement was 0.8, with 0 of 1 reader agreeing. જુ Extracted — magnesium sulfate: CL 3.52 L/h, V1 16.9 L, Q 3.62 L/h, V2 14.3 L, kabs 0.451 hr−1, Fab 0.91.
+The model was built, but magnesium sulfate's clearance, volume of distribution, absorption lag time and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — magnesium sulfate: CL 3.52 L/h, V1 16.9 L, Q 3.62 L/h, V2 14.3 L, kabs 0.451 hr−1, Fab 0.91.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has magnesium, the second reading magnesium sulfate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -154,7 +154,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.8 (16 of 20 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | cross-check contradicted by a second reader: verdict disputed; agreement 0.8 (16 of 20 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Lumefantrine’s mean transit time of 5.43 lacked a usable unit, and artemether’s apparent clearance of 79.3 L/h failed its comparison.
+> MTT has no unit; c2_base_Q40 failed (ratio 79.3).
 
 <div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Ding2026_reference" status="needs_review" stale="false" population="patients with uncomplicated Plasmodium falciparum malaria" measured-compound="lumefantrine" parameterization="apparent" topology="general_linear"></div>
 
@@ -73,13 +73,13 @@ Ding J, Hoglund RM, van der Pluijm RW, Callery JJ, Peto TJ, Tripura R et al. Pop
 
 ### Reviewer guidance
 
-**Lumefantrine’s mean transit time of 5.43 lacked a usable unit, and artemether’s apparent clearance of 79.3 L/h failed its comparison.**
+**MTT has no unit; c2_base_Q40 failed (ratio 79.3).**
 
-The findings state that lumefantrine’s mean transit time has no usable unit, so its value cannot be converted and the model cannot use it. Artemether’s apparent clearance is 79.3 L/h, and its comparison failed at ratio 79.3. Extracted — lumefantrine: MTT 5.43 h, n_transit 5 LF, Fab 1, CL/F 4.35 L/h, V1/F 101 L, Q/F 1.65 L/h, V2/F 311 L; desbutyllumefantrine: CL/F 744 L/h, V1/F 8.53e+03 L, Q/F 1.1e+03 L/h; artemether: CL/F 79.3 L/h, V1/F 141 L, Q/F 21.7 L/h, V3/F 283 L; dihydroartemisinin: CL/F 255 L/h, V1/F 64.1 L; amodiaquine: kabs 1.93 1/h, CL/F 2.25e+03 L/h, Q/F 3.02e+03 L/h; desethylamodiaquine: CL/F 32.2 L/h, V1/F 1.26e+03 L, Q/F 117 L/h, V2/F 1.64e+03 L, Q2/F 37.3 L/h, V3/F 6.44e+03 L.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (MTT and n_transit), so that value has no SI equivalent. Extracted — lumefantrine: MTT 5.43 h, n_transit 5 LF, Fab 1, CL/F 4.35 L/h, V1/F 101 L, Q/F 1.65 L/h, V2/F 311 L; desbutyllumefantrine: CL/F 744 L/h, V1/F 8.53e+03 L, Q/F 1.1e+03 L/h; artemether: CL/F 79.3 L/h, V1/F 141 L, Q/F 21.7 L/h, V3/F 283 L; dihydroartemisinin: CL/F 255 L/h, V1/F 64.1 L; amodiaquine: kabs 1.93 1/h, CL/F 2.25e+03 L/h, Q/F 3.02e+03 L/h; desethylamodiaquine: CL/F 32.2 L/h, V1/F 1.26e+03 L, Q/F 117 L/h, V2/F 1.64e+03 L, Q2/F 37.3 L/h, V3/F 6.44e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artemether-lumefantrine plus amodiaquine, the second reading lumefantrine; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The parent compound's intercompartmental clearance parameter has unit /h, conflicting with the required volume-time dimension, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit /h (1 / [time]) vs [length] ** 3 / [time]; Q30 unit /h (1 / [time]) vs [length] ** 3 / [time]; Q370 unit /h (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient" status="rejected" stale="false" population="healthy subjects and patients with renal impairment" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -56,13 +56,13 @@ Zhang S, Jeong S, Jiang B, Ho H. Pharmacokinetic simulations for remdesivir and 
 
 ### Reviewer guidance
 
-**The parent compound's intercompartmental clearance parameter has unit /h, conflicting with the required volume-time dimension, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit /h (1 / [time]) vs [length] ** 3 / [time]; Q30 unit /h (1 / [time]) vs [length] ** 3 / [time]; Q370 unit /h (1 / [time]) vs [length] ** 3 / [time].**
 
-The parameter labeled CLC,RDV for remdesivir has a value of 2.3 with unit /h. Its definition is apparent intercompartmental clearance, which physically requires units of volume divided by time, not the reciprocal of time alone. A secondary check also failed to convert the reported units to standard international units. Extracted — intermediate metabolites (IM): Q 83.8 /h; nucleoside monophosphate (NUC): Q 50 /h, CLfm 0.15 /h; remdesivir: kic 0.037 /h, Q 2.3 /h, CL 18.1 L/h, V 90.3 L.
+A reported unit could not be converted (equation variable, Q, Q and CLfm), so that value has no SI equivalent. Extracted — intermediate metabolites (IM): Q 83.8 /h; nucleoside monophosphate (NUC): Q 50 /h, CLfm 0.15 /h; remdesivir: kic 0.037 /h, Q 2.3 /h, CL 18.1 L/h, V 90.3 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has remdesivir → intermediate metabolites (im) (metabolism); intermediate metabolites (im) → nucleoside monophosphate (nuc) (metabolism), the second reading remdesivir → intermediate metabolite (im) (metabolism); intermediate metabolite (im) → nucleoside monophosphate (nuc) (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

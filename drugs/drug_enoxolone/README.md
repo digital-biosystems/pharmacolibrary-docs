@@ -31,12 +31,6 @@ Enoxolone is a pentacyclic triterpenoid derivative used as a cicatrizant for wou
 | <span class="pk-rf" hidden data-species="rat" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Lu_2008_reference](drugs/drug_enoxolone/Enoxolone_Lu2008_reference.md) | — | 1-compartment (no model) | 6 | Lu Y et al., [Study on pharmacokinetics of glycyrrhe…, Zhongguo Zhong yao za zhi =… (2008) | — |
 | <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Xu_2014_reference](drugs/drug_enoxolone/Enoxolone_Xu2014_reference.md) | — | general linear (no model) | 11 | Xu R et al., A semi-physiologically based pharmacoki…, PloS one (2014) | [10.1371/journal.pone.0114049](https://doi.org/10.1371/journal.pone.0114049) |
 
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Ploeger_2001_urinary_cortisol_cortisone_ratio](drugs/drug_enoxolone/pd_Ploeger_2001_urinary_cortisol_cortisone_ratio.md) | urinary cortisol-cortisone ratio ← glycyrrhetic acid · inhibition effect | — | Ploeger B et al., A population physiologically based phar…, Toxicology and applied phar… (2001) | [10.1006/taap.2000.9078](https://doi.org/10.1006/taap.2000.9078) |
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -49,40 +43,35 @@ Enoxolone is a pentacyclic triterpenoid derivative used as a cicatrizant for wou
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:42 | 5:53 | 0/2/0 | 0/1/0 | 0/0/0 | 114,015/29,564 | openai / gpt-6-luna | 3 | 1/2 | 3/0 | 0 |
+| 2026-11-23 20:51 | 0:06 | 0/2/0 | 0/0/0 | 0/0/0 | 3,278/159 | einfracz / qwen3.8-27b | 3 | 1/2 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 2  ·  **relevant:** 1
 - **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Lu_2008.pdf` | Lu Y et al., [Study on pharmacokinetics of glycyrrhe…, Zhongguo Zhong yao za zhi =… (2008) | popPK | 10 |  | [18831211](https://pubmed.ncbi.nlm.nih.gov/18831211) | Glycyrrhetic acid (enoxolone) was modeled in rats, and numeric disposition parameters are provided. |
-| `Ploeger_2001.pdf` | Ploeger B et al., A population physiologically based phar…, Toxicology and applied phar… (2001) | popPK | 10 | [10.1006/taap.2000.9078](https://doi.org/10.1006/taap.2000.9078) | [11141355](https://pubmed.ncbi.nlm.nih.gov/11141355) | A population PBPK model of glycyrrhetic acid is reported, but no numeric disposition parameter values are present in the evidence. |
-| `Peng_2010.pdf` | Peng WB et al., In vitro and in vivo pharmacokinetics o…, Journal of Asian natural pr… (2010) | popPK | 8 | [10.1080/10286020.2010.508283](https://doi.org/10.1080/10286020.2010.508283) | [20924902](https://pubmed.ncbi.nlm.nih.gov/20924902) | Rat plasma data for released enoxolone were fit with a two-compartment model, but no numeric parameter values are provided. |
-
-<sub>queue written 2026-10-07 13:37 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bera_2025 | irrelevant | 0 | 0 | This is an in-vitro anticancer study with SwissADME predictions, not quantitative enoxolone disposition parameters. |
-| popPK | Ishida_1989 | irrelevant | 0 | 0 | The evidence contains only extraction-software boilerplate, with no study details or numeric pharmacokinetic values. |
-| popPK | Peng_2010 | relevant | 8 | 1 | Rat plasma data for released enoxolone were fit with a two-compartment model, but no numeric parameter values are provided. |
-| popPK | Ploeger_2001 | relevant | 10 | 1 | A population PBPK model of glycyrrhetic acid is reported, but no numeric disposition parameter values are present in the evidence. |
-| popPK | Rakhimova_2023 | irrelevant | 0 | 0 | This is an in-vitro rat thymocyte study of cell-volume regulation, with no enoxolone pharmacokinetic parameters. |
+| popPK | Bera_2025 | irrelevant | 0 | 0 | The paper studies the antioxidant and anticancer properties of a fungal extract (Daldinia eschscholtzii) and does not involve the drug enoxolone. |
+| PGx | Bera_2025 | not_relevant | 0 | 0 | The paper studies a fungal extract, not enoxolone, and contains no pharmacogenomic analysis. |
+| popPK | Ishida_1989 | irrelevant | 0 | 0 | The provided evidence contains only software metadata (GROBID) and no scientific content regarding enoxolone pharmacokinetics. |
+| PGx | Ishida_1989 | not_relevant | 0 | 0 | The provided text is GROBID software metadata and does not contain information regarding enoxolone pharmacogenomics. |
+| popPK | Lu_2008 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of glycyrrhetic acid in rats, not enoxolone. |
+| PGx | Lu_2008 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of glycyrrhetic acid in rats and does not involve enoxolone or pharmacogenomics. |
+| popPK | Peng_2010 | irrelevant | 0 | 0 | The study focuses on prodrugs of 18β-glycyrrhetic acid in rats and does not involve the drug enoxolone. |
+| PGx | Peng_2010 | not_relevant | 0 | 0 | The paper studies prodrugs of glycyrrhetic acid in rats, not enoxolone, and does not involve pharmacogenomics. |
+| popPK | Ploeger_2001 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of glycyrrhetic acid, not enoxolone. |
+| PGx | Ploeger_2001 | not_relevant | 0 | 0 | The paper focuses on glycyrrhetic acid and does not mention enoxolone or any genetic variants affecting its pharmacokinetics or pharmacodynamics. |
+| popPK | Rakhimova_2023 | irrelevant | 0 | 0 | The paper studies the effect of glycyrrhetic acid derivatives on thymocyte volume, not the pharmacokinetics of enoxolone. |
+| PGx | Rakhimova_2023 | not_relevant | 0 | 0 | The paper discusses glycyrrhetinic acid derivatives, not enoxolone, and does not report pharmacogenomic effects on a PK/PD parameter. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Benoxolone%5D&body=Drug%3A%20enoxolone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_enoxolone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 13:37 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 20:51 UTC</sub>

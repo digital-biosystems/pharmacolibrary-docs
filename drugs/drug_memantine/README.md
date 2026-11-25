@@ -25,7 +25,7 @@ Memantine is an anti-dementia medication used to treat moderate-to-severe Alzhei
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ridley_2022_ASIC1a_current](drugs/drug_memantine/pd_Ridley_2022_ASIC1a_current.md) | hASIC1a current biomarker turnover ← Memantine | — | Ridley J et al., Development of ASIC1a ligand-gated ion…, Frontiers in molecular neur… (2022) | [10.3389/fnmol.2022.982689](https://doi.org/10.3389/fnmol.2022.982689) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ridley_2022_ASIC1a_current](drugs/drug_memantine/pd_Ridley_2022_ASIC1a_current.md) | hASIC1a current biomarker turnover ← Memantine | — | Ridley J et al., Development of ASIC1a ligand-gated ion…, Frontiers in molecular neur… (2022) | [10.3389/fnmol.2022.982689](https://doi.org/10.3389/fnmol.2022.982689) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

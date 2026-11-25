@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Dostarlimab simulated peak concentration 0.138 mg/L fails to match reported 0.382 mg/L, and covariate scenarios were not simulated.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.382, model 0.138); the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="dostarlimab" model-id="Dostarlimab_Kuchimanchi2025_reference" status="needs_review" stale="false" population="patients with primary advanced or recurrent endometrial cancer" measured-compound="dostarlimab" parameterization="mechanistic" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Kuchimanchi M, Jørgensen TL, Hanze E, André T, Jain A, Berton D et al. Populat
 
 ### Reviewer guidance
 
-**Dostarlimab simulated peak concentration 0.138 mg/L fails to match reported 0.382 mg/L, and covariate scenarios were not simulated.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.382, model 0.138); the covariate scenarios were not simulated (+1 more).**
 
-The model’s simulated peak concentration was 0.138 mg/L compared to the paper’s reported value of 0.382 mg/L, resulting in a ratio of 0.3606. The record defines covariate effects for weight, age, and liver function, but these scenarios were not exercised during simulation. A second reader disputed the assigned covariate forms, specifically disagreeing that central volume of distribution has a linear fractional form. Extracted — dostarlimab: CL 0.00732 L/h, V1 3.09 L, Q 0.0191 L/h, V2 2.48 L, t1/2z 145 days.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — dostarlimab: CL 0.00732 L/h, V1 3.09 L, Q 0.0191 L/h, V2 2.48 L, t1/2z 145 days.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[central volume of distribution (vc (l))].covariate_forms`: this record has ['linear_fractional'], the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -182,13 +182,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.522, 0 of 1 reader(s) agree | 0.522 | cross-check disputed by a second reader: verdict disputed, agreement 0.522, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 0.382 | 0.1377 | 0.3606 | mg/L→SI vs simulated kg/m3 |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.522 (12 of 23 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.522 | cross-check contradicted by a second reader: verdict disputed; agreement 0.522 (12 of 23 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
+| T1_cmax | reference | fail | 0.382 | 0.1377 | 0.3606 | reported 382.0 mg/L→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 1.72 | 0.1377 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
-| T1_cmax | reference | pass | 0.147 | 0.1377 | 0.9369 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 0.145 | 0.1377 | 0.9499 | mg/L→SI vs simulated kg/m3 |
-| T1_cmin_ss | reference | skipped | 39.70 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 39.50 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | pass | 0.147 | 0.1377 | 0.9369 | reported 147.0 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 0.145 | 0.1377 | 0.9499 | reported 145.0 mg/L→SI vs simulated kg/m3 |
+| T1_cmin_ss | reference | skipped | 39.7 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmin_ss | reference | skipped | 39.5 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 15.5 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">

@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B06A&quot;,&quot;href&quot;:&quot;atc/B06A.md&quot;},{&quot;label&quot;:&quot;voxelotor&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/&quot;},{&quot;label&quot;:&quot;Savic_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voxelotor_Savic2022_reference&quot;,&quot;label&quot;:&quot;Savic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Voxelotor_Savic2022_reference&quot;,&quot;label&quot;:&quot;Savic_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_voxelotor/Voxelotor_Savic2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # voxelotor — `Voxelotor_Savic2022_reference`
 
-> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="voxelotor" model-id="Voxelotor_Savic2022_reference" status="simulated" stale="false" population="adults and adolescents with sickle cell disease" measured-compound="voxelotor" parameterization="apparent" topology="2C"></div>
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
+
+<div class="pk-model-meta" hidden drug="voxelotor" model-id="Voxelotor_Savic2022_reference" status="needs_review" stale="false" population="adults and adolescents with sickle cell disease" measured-compound="voxelotor" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Savic RM, Green ML, Jorga K, Zager M, Washington CB. Model-informed drug development of voxelotor in sickle cell disease: Population pharmacokinetics in whole blood and plasma. CPT: pharmacometrics & systems pharmacology 11(6):687–697 (2022).
@@ -29,6 +31,8 @@ Savic RM, Green ML, Jorga K, Zager M, Washington CB. Model-informed drug develop
 <figure class="pk-models-diagram"><img src="drugs/drug_voxelotor/Voxelotor_Savic2022_reference/Voxelotor_Savic2022_reference.svg" alt="Voxelotor_Savic2022_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
 | CL/F (L/h) | CL/F | 6.14 | L/h | 2.8 | 0.1 (123% RSE) |
@@ -45,7 +49,7 @@ Savic RM, Green ML, Jorga K, Zager M, Washington CB. Model-informed drug develop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.353). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,11 +59,13 @@ Savic RM, Green ML, Jorga K, Zager M, Washington CB. Model-informed drug develop
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The base model was simulated, not the covariate effects the record defines.
+The base model was simulated, not the covariate effects the record defines. Extracted — voxelotor: CL/F 6.14 L/h, V1/F 333 L, Q/F 0.39 L/h, V2/F 72.3 L, kel 0.43 1/h, kabs 2.38 1/h.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of blood volume: this record has none, the second reading 2.9; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -110,6 +116,37 @@ The base model was simulated, not the covariate effects the record defines.
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.353 (6/17 fields) | 11 |
+
+<details><summary>11 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[blood volume]` |  | 2.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | ['linear_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f].rse_percent` | 2.8 |  | mismatch |
+| `gpt-oss-120b` | `parameters[cyp3a4_inducer_on_cl_f_expth]` | 0.39 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 2.38 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k bp]` | 0.43 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f].rse_percent` | 1.9 |  | mismatch |
+| `gpt-oss-120b` | `parameters[v c/f]` | 333 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v p/f]` | 72.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f]` |  | 333 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp/f]` |  | 72.3 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -132,16 +169,16 @@ The base model was simulated, not the covariate effects the record defines.
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=voxelotor) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  | no second reading of this record |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=voxelotor) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.353 (6 of 17 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.353 | cross-check contradicted by a second reader: verdict disputed; agreement 0.353 (6 of 17 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

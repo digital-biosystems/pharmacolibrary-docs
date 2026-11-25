@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Iopamidol's two-compartment model was rejected because the inter-compartmental clearance parameter was not extracted, leaving the peripheral compartment structurally disconnected from the central one.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="iopamidol" model-id="Iopamidol_Hooper2025_value" status="rejected" stale="false" population="healthy adults with varying kidney function" measured-compound="iopamidol" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Hooper L, Heung M, Wang L, Matvekas A, Alikhani R, Kenes MT et al. Pharmacokinet
 
 ### Reviewer guidance
 
-**Iopamidol's two-compartment model was rejected because the inter-compartmental clearance parameter was not extracted, leaving the peripheral compartment structurally disconnected from the central one.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines central and peripheral volumes (5920.612 mL and 6021.421 mL) but contains no value for the inter-compartmental clearance that links them. The review flagged the peripheral compartment as unreachable from the dose due to this missing structural link. A second reader disputed the record by providing a specific inter-compartmental clearance value of 118.57, indicating the parameter existed in the source but was omitted. Extracted — iopamidol: CL 69.7 mL/min, V1 5.92e+03 mL, V2 6.02e+03 mL, CLnorm 0.589, allometric_exponent 1.86.
+Extracted — iopamidol: CL 69.7 mL/min, V1 5.92e+03 mL, V2 6.02e+03 mL, CLnorm 0.589, allometric_exponent 1.86.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has none, the second reading 0.00122; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

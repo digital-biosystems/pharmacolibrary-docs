@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;levomethadone&quot;,&quot;href&quot;:&quot;drugs/drug_levomethadone/&quot;},{&quot;label&quot;:&quot;Gittel_2021_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levomethadone_Gittel2021v2_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levomethadone/Levomethadone_Gittel2021v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levomethadone_Gittel2021v2_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levomethadone/Levomethadone_Gittel2021v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # levomethadone — `Levomethadone_Gittel2021v2_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-<div class="pk-model-meta" hidden drug="levomethadone" model-id="Levomethadone_Gittel2021v2_reference" status="simulated" stale="false" population="isoflurane-anaesthetized healthy adult ponies" measured-compound="l-methadone" parameterization="mechanistic" topology="1C"></div>
+> cross_check_disputed; x1_cross_check.
+
+<div class="pk-model-meta" hidden drug="levomethadone" model-id="Levomethadone_Gittel2021v2_reference" status="needs_review" stale="false" population="isoflurane-anaesthetized ponies" measured-compound="l-methadone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gittel C, Schulz-Kornas E, Sandbaumhüter FA, Theurillat R, Vervuert I, Larenza Menzies MP et al. Pharmacokinetics and pharmacodynamics of l-methadone in isoflurane-anaesthetized and mechanically ventilated ponies. Veterinary anaesthesia and analgesia 48(2):213–222 (2021).
@@ -15,7 +17,7 @@ Gittel C, Schulz-Kornas E, Sandbaumhüter FA, Theurillat R, Vervuert I, Larenza 
 
 ## Population and dosing
 
-**Population:** isoflurane-anaesthetized healthy adult ponies · condition healthy (anaesthetized) · age group adult · n = 6.
+**Population:** isoflurane-anaesthetized ponies · condition healthy · age group adult.
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -29,15 +31,17 @@ Gittel C, Schulz-Kornas E, Sandbaumhüter FA, Theurillat R, Vervuert I, Larenza 
 <figure class="pk-models-diagram"><img src="drugs/drug_levomethadone/Levomethadone_Gittel2021v2_reference/Levomethadone_Gittel2021v2_reference.svg" alt="Levomethadone_Gittel2021v2_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | terminal half-life | t1/2z | 44.3 | minutes |
 | volume of distribution | V | 0.43 | L kg-1 |
-| plasma clearance | CL | 7.77 | L/h |
+| plasma clearance | CL | 7.77 | mL minute-1 kg-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,21 +51,21 @@ Gittel C, Schulz-Kornas E, Sandbaumhüter FA, Theurillat R, Vervuert I, Larenza 
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**cross_check_disputed; x1_cross_check.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — levomethadone: t1/2z 44.3 minutes, V 0.43 L kg-1, CL 7.77 mL minute-1 kg-1.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has l-methadone, the second reading levomethadone; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| terminal half-life | `Q57` · t1/2z | 44.3 | minutes | 2658 | s | min | llm (0.6) | Gittel_2021_2:abstract |
+| terminal half-life | `Q57` · t1/2z | 44.3 | minutes | 2658 | s | min | half_life_rule (0.95) | Gittel_2021_2:abstract |
 | volume of distribution | `Q61` · V | 0.43 | L kg-1 | 0.0301 | m3 | l/kg | exact (1) | Gittel_2021_2:abstract |
-| plasma clearance | `Q22` · CL | 7.77 | L/h | 2.158e-06 | m3/s | L/h | llm_confirmed (0.6) | Gittel_2021_2:abstract |
+| plasma clearance | `Q22` · CL | 7.77 | mL minute-1 kg-1 | 9.065e-06 | m3/s | ml/(min·kg) | llm_confirmed (0.6) | Gittel_2021_2:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,26 +75,35 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'mL minute-1 kg-1' (CL)
-- implicit units: 'plasma clearance' → L/h (from the popPK convention: 'No unit stated in text or table caption/footnotes. Plasma (total) clearance in population PK is conventionally expressed')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=l-methadone
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Gittel_2021_2_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>8 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[plasma clearance]` | 7.77 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance]` |  | 7.77 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` | 44.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life]` |  | 44.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 0.43 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 0.43 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | l-methadone | levomethadone | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | l-methadone | levomethadone | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -110,7 +123,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Gittel_2021_2:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.77 | ['Gittel_2021_2:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 7.77 L/h | ['Gittel_2021_2:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 32.6 L/h | ['Gittel_2021_2:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 30.1 L | ['Gittel_2021_2:abstract'] |
 
 **Reviewer per-scenario checks:**
@@ -123,7 +136,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -139,7 +152,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_levomethadone/Levomethadone_Gittel2021v2_reference/Levomethadone_Gittel2021v2_reference_modelica.zip" download>Levomethadone_Gittel2021v2_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_levomethadone/Levomethadone_Gittel2021v2_reference/Levomethadone_Gittel2021v2_reference_modelica.zip" download>Levomethadone_Gittel2021v2_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_levomethadone/Levomethadone_Gittel2021v2_reference/Levomethadone_Gittel2021v2_reference_fmi.zip" download>Levomethadone_Gittel2021v2_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_levomethadone/Levomethadone_Gittel2021v2_reference/Levomethadone_Gittel2021v2_reference_matlab.zip" download>Levomethadone_Gittel2021v2_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_levomethadone/Levomethadone_Gittel2021v2_reference/Levomethadone_Gittel2021v2_reference_matlab_simbio.zip" download>Levomethadone_Gittel2021v2_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -161,7 +174,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 2.158e-06 | m3/s |
+| input | model | `Cl` | 9.065e-06 | m3/s |
 | input | model | `VdPerKg` | 0.00043 | m3/kg |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
@@ -201,4 +214,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevomethadone%5D%20Levomethadone_Gittel2021v2_reference&body=Drug%3A%20levomethadone%0ARecord%3A%20Levomethadone_Gittel2021v2_reference%0APaper%3A%20Gittel_2021_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levomethadone/Levomethadone_Gittel2021v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:30 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:58 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span>
 
-> The record lacks the absorption bioavailability parameter and fails to reproduce the reported terminal half-life of 127 minutes.
+> The model does not reproduce the paper's terminal half-life (paper 1.75, model 1.49); f use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Andersen1986_reference" status="needs_review" stale="false" population="goats" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,7 +50,7 @@ Andersen HB, Christensen B, Findlay JW, Jansen JA. Pharmacokinetics of intraveno
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.588). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">goat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,11 +60,13 @@ Andersen HB, Christensen B, Findlay JW, Jansen JA. Pharmacokinetics of intraveno
 
 ### Reviewer guidance
 
-**The record lacks the absorption bioavailability parameter and fails to reproduce the reported terminal half-life of 127 minutes.**
+**The model does not reproduce the paper's terminal half-life (paper 1.75, model 1.49); f use library defaults, not estimates from this paper (+2 more).**
 
-The bioavailability was not extracted from the paper and remained at library defaults, meaning it was assumed rather than estimated. When simulated, the model produced a terminal half-life of 1.49 hours, which contradicts the paper's reported value of 127 minutes. Consequently, the model structure did not match the elimination kinetics described in the source data. Extracted — fentanyl: V1 0.77 l/kg, V2 1.61 l/kg, V3 5.26 l/kg, t1/2α 2.1 min, t1/2γ 127 min, CLnorm 83.7 ml/min/kg, CL 83.7 ml/min/kg, Q 6.79 L/min, … (+2).
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — fentanyl: V1 0.77 l/kg, V2 1.61 l/kg, V3 5.26 l/kg, t1/2α 2.1 min, t1/2γ 127 min, CLnorm 83.7 ml/min/kg, CL 83.7 ml/min/kg, Q 6.79 L/min, … (+2).
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl total].parameter_id`: this record has Q354, the second reading Q22; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -105,6 +107,33 @@ The bioavailability was not extracted from the paper and remained at library def
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.588 (10/17 fields) | 7 |
+
+<details><summary>7 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl total].parameter_id` | Q354 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[co]` | 6.79 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pt number 1 keo three doses]` | 0.27 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2b]` |  | 22.36 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2y].parameter_id` | Q89 | Q57 | mismatch |
+| `gpt-oss-120b` | `parameters[t1pp ranged from]` | 15.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the total body clearance was]` | 83.7 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -138,15 +167,15 @@ The bioavailability was not extracted from the paper and remained at library def
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_beta | reference | pass | 1.75 | 1.489 | 0.851 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 2.9 | 1.489 | 0.5135 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 3 | 1.489 | 0.4964 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 4 | 1.489 | 0.3723 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 1 | 1.489 | 1.489 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.05667 | 1.489 | 26.28 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.1783 | 1.489 | 8.351 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.1283 | 1.489 | 11.6 | min→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.588 (10 of 17 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.588 | cross-check contradicted by a second reader: verdict disputed; agreement 0.588 (10 of 17 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | pass | 1.75 | 1.489 | 0.851 | reported 105.0 min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.9 | 1.489 | 0.5135 | reported 174.0 min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 3 | 1.489 | 0.4964 | reported 3.0 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 4 | 1.489 | 0.3723 | reported 4.0 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 1 | 1.489 | 1.489 | reported 1.0 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.05667 | 1.489 | 26.28 | reported 3.4 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.1783 | 1.489 | 8.351 | reported 10.7 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.1283 | 1.489 | 11.6 | reported 7.7 min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

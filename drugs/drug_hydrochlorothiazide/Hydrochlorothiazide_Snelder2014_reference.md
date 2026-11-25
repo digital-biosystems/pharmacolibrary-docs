@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The paper studies a different drug, so hydrochlorothiazide clearance (69.0 mL/min) is cited while bioavailability and lag time remain unspecified placeholders.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Snelder2014_reference" status="rejected" stale="false" population="" measured-compound="hydrochlorothiazide" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Snelder N, Ploeger BA, Luttringer O, Rigel DF, Fu F, Beil M et al. Drug effects 
 
 ### Reviewer guidance
 
-**The paper studies a different drug, so hydrochlorothiazide clearance (69.0 mL/min) is cited while bioavailability and lag time remain unspecified placeholders.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The source is a systems pharmacology model of cardiovascular dynamics where hydrochlorothiazide is a co-administered test drug, not the primary subject. Consequently, its clearance is cited rather than fitted, and bioavailability and absorption lag time lack explicit estimates, resulting in undefined default values. A second reader disagreed on multiple values, including bioavailability and lag time, which were absent in the current record. Extracted — hydrochlorothiazide: CL 69 mL min -1, V 52.1 L, kabs 1.17 h -1.
+Extracted — hydrochlorothiazide: CL 69 mL min -1, V 52.1 L, kabs 1.17 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q25: this record has 4.7, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.357, 0 of 1 reader(s) agree | 0.357 | cross-check agreement 0.357 is below 0.5: verdict partial, agreement 0.357, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.357 (5 of 14 compared fields agree, 9 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.357 | cross-check agreement 0.357 is below 0.5: verdict partial; agreement 0.357 (5 of 14 compared fields agree, 9 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

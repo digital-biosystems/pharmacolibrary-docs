@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 02:35 | 1:43 | 0/0/0 | 0/1/0 | 0/0/0 | 127,723/7,619 | openai / gpt-6-luna | 5 | 0/5 | 5/0 | 0 |
+| 2026-11-23 23:23 | 0:05 | 0/0/0 | 0/1/0 | 0/0/0 | 4,149/193 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
 
 ## Coverage
 
@@ -49,14 +49,20 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Attia_2020 | irrelevant | 0 | 0 | This is an in-vitro study of larotrectinib analogs and reports no larotrectinib disposition parameters. |
-| popPK | Liu_2021 | irrelevant | 0 | 0 | Larotrectinib is mentioned as background; no quantitative PK parameters for it are reported. |
-| popPK | Ma_2024 | irrelevant | 0 | 0 | This is a review of anti-breast-cancer pyrazoles, with no quantitative larotrectinib pharmacokinetic parameters. |
-| popPK | Qin_2023 | irrelevant | 0 | 0 | Larotrectinib is only mentioned as background; the reported pharmacokinetics are for compound 24b. |
+| popPK | Attia_2020 | irrelevant | 0 | 0 | The paper reports in-vitro synthesis and anti-proliferative activity of larotrectinib analogs, containing no pharmacokinetic data for larotrectinib. |
+| PGx | Attia_2020 | not_relevant | 0 | 0 | The paper reports the synthesis and in-vitro activity of novel analogs of larotrectinib, not the pharmacogenomics of the actual drug. |
+| popPK | Liu_2021 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on new pan-TRK inhibitors, not a pharmacokinetic study of larotrectinib, and contains no quantitative PK parameters for larotrectinib. |
+| PGx | Liu_2021 | not_relevant | 0 | 0 | The paper discusses the discovery of a new drug candidate and general pharmacokinetics, but does not report any pharmacogenomic effects or genotype-based changes in the PK/PD of larotrectinib. |
+| popPK | Ma_2024 | irrelevant | 0 | 0 | The paper is a review on pyrazole hybrids for breast cancer and mentions larotrectinib only as a structural example, providing no pharmacokinetic data. |
+| PGx | Ma_2024 | not_relevant | 0 | 0 | The paper is a review of pyrazole hybrids for breast cancer and does not report pharmacogenomic effects on larotrectinib PK/PD. |
+| popPK | Qin_2023 | irrelevant | 1 | 0 | The study focuses on a novel compound (24b), and larotrectinib is mentioned only as a comparator/context, with no PK parameters reported for it. |
+| PGx | Qin_2023 | not_relevant | 0 | 0 | The paper describes the design and preclinical evaluation of a new TRK inhibitor (compound 24b) and does not investigate pharmacogenomic effects on the PK/PD of larotrectinib. |
 | popPK | Roa_2024 | irrelevant | 1 | 0 | Larotrectinib is only a comparator, and no larotrectinib disposition parameters are reported. |
-| popPK | Schmidt_2025 | irrelevant | 0 | 0 | Larotrectinib is tested only for tumor inhibition, with no pharmacokinetic parameters or values reported. |
+| popPK | Schmidt_2025 | irrelevant | 0 | 0 | The paper focuses on the genetic and oncogenic properties of thyroglobulin gene fusions, and larotrectinib is used only as a therapeutic agent in a mechanistic xenograft model without reporting quantitative pharmacokinetic parameters. |
+| PGx | Schmidt_2025 | not_relevant | 0 | 0 | The paper discusses larotrectinib's efficacy against a specific tumor fusion (TG::NTRK1) in a preclinical model, but does not report pharmacogenomic effects of human gene variants on larotrectinib's PK or PD parameters. |
 | popPK | Vanoli_2023 | irrelevant | 0 | 0 | This in vitro cancer-model study measures inhibitor response, not larotrectinib pharmacokinetics or disposition parameters. |
-| popPK | Xu_2026 | irrelevant | 0 | 0 | Larotrectinib is used as a TrkA inhibitor, and no larotrectinib pharmacokinetic parameters are reported. |
+| popPK | Xu_2026 | irrelevant | 0 | 0 | The paper investigates the mechanism of lenvatinib resistance in hepatocellular carcinoma, using larotrectinib only as a pharmacological tool to inhibit TrkA in preclinical models, and does not report any pharmacokinetic parameters for larotrectinib. |
+| PGx | Xu_2026 | not_relevant | 0 | 0 | The paper investigates NGF/TrkA-mediated resistance to lenvatinib and reports the efficacy of larotrectinib as a combination therapy, but it does not report any pharmacogenomic data (gene variants/polymorphisms) affecting the pharmacokinetics or pharmacodynamics of larotrectinib. |
 | popPK | Zhang_2024 | irrelevant | 0 | 0 | Larotrectinib is used as a TrkA inhibitor in cancer experiments, with no pharmacokinetic disposition parameters reported. |
 
 

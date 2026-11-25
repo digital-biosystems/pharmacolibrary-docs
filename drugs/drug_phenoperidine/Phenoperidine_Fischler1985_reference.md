@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The cross-reader agreement of 0.417 for phenoperidine parameters triggered a review hold due to conflicting label assignments.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="phenoperidine" model-id="Phenoperidine_Fischler1985_reference" status="needs_review" stale="false" population="anaesthetized patients undergoing general surgery" measured-compound="phenoperidine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Fischler M, Levron JC, Trang H, Vaxelaire JF, Flaisler B, Vourc'h G. Pharmacokin
 
 ### Reviewer guidance
 
-**The cross-reader agreement of 0.417 for phenoperidine parameters triggered a review hold due to conflicting label assignments.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so reported summary statistics stand in for a fitted model. A second reader disagreed on the assignment of phenoperidine values, mapping the 2.2 min distribution half-life and 193 min elimination half-life to different parameter names than the current record. This discrepancy resulted in a cross-check agreement of 0.417, which is below the 0.5 threshold required for consensus. Extracted — phenoperidine: t1/2α 2.2 min, t1/2β 193 min, CL 22 L/h, Vss 5.7 litre kg-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — phenoperidine: t1/2α 2.2 min, t1/2β 193 min, CL 22 L/h, Vss 5.7 litre kg-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bolus dose i.v.: this record has none, the second reading 2; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,7 +142,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.417, 0 of 1 reader(s) agree | 0.417 | cross-check agreement 0.417 is below 0.5: verdict partial, agreement 0.417, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.417 (5 of 12 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.417 | cross-check agreement 0.417 is below 0.5: verdict partial; agreement 0.417 (5 of 12 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F was assigned a generic placeholder value because no explicit estimate was provided in the paper's abstract.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Sridharan2021v2_reference" status="needs_review" stale="false" population="preterm neonates with hemodynamically significant patent ductus arteriosus" measured-compound="acetaminophen" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Sridharan K, Ansari EA, Mulubwa M, Raju AP, Madhoob AA, Jufairi MA et al. Popula
 
 ### Reviewer guidance
 
-**Bioavailability F was assigned a generic placeholder value because no explicit estimate was provided in the paper's abstract.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lacks a specific value for the fraction of acetaminophen absorbed, so a standard library default was used instead of a fitted parameter. This omission affects the simulated profile, as the bioavailability is not supported by the data in this study. Because the source was abstract-only, the clearance and volume statistics stand in for a fitted model, but F remains an unsupported assumption. Extracted — paracetamol: CL 0.0452 L/h, V 1.18 L, kabs 9.76 h -1, tlag 4.2 min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — paracetamol: CL 0.0452 L/h, V 1.18 L, kabs 9.76 h -1, tlag 4.2 min.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

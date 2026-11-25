@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Review held back because the second reader disagreed on parameter extraction and dose identification for salmon calcitonin, specifically citing a bioavailability discrepancy of 66 versus 71.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="calcitonin (salmon synthetic)" model-id="CalcitoninSalmonSynthetic_Beveridge1976_reference" status="needs_review" stale="false" population="patients" measured-compound="synthetic salmon calcitonin" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Beveridge T, Niederer W, Nüesch E, Petrin A. Pharmacokinetic study with synthet
 
 ### Reviewer guidance
 
-**Review held back because the second reader disagreed on parameter extraction and dose identification for salmon calcitonin, specifically citing a bioavailability discrepancy of 66 versus 71.**
+**cross_check_disputed; x1_cross_check.**
 
-The record relies on abstract-only data, meaning summary statistics like the 1.1-hour elimination half-life and 11-litre volume of distribution substitute for a fitted model. A second reader disputed the verdict with an agreement score of 0.182, flagging inconsistent naming for the analyte and conflicting values for the bioavailability parameter. The disagreements centered on specific parameter entries, where the record left half-life fields null while the reader extracted the 1.1-hour value, and a bioavailability mismatch of 66 versus 71. Extracted — synthetic salmon calcitonin: t1/2z 1.1 hours, V 11 litres.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is calcitonin salmon synthetic's own; they describe synthetic salmon calcitonin. Extracted — synthetic salmon calcitonin: t1/2z 1.1 hours, V 11 litres.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has synthetic salmon calcitonin, the second reading calcitonin_salmon_synthetic; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.182, 0 of 1 reader(s) agree | 0.182 | cross-check disputed by a second reader: verdict disputed, agreement 0.182, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.182 (2 of 11 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.182 | cross-check contradicted by a second reader: verdict disputed; agreement 0.182 (2 of 11 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
-> The record is held because a second reader disputes the extracted clearance value of 0.1 L/h/kg.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="isoniazid" model-id="Isoniazid_Deshpande2018_reference" status="needs_review" stale="false" population="" measured-compound="isoniazid" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Deshpande D, Srivastava S, Bendet P, Martin KR, Cirrincione KN, Lee PS et al. An
 
 ### Reviewer guidance
 
-**The record is held because a second reader disputes the extracted clearance value of 0.1 L/h/kg.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists isoniazid total clearance as 0.1 L/h/kg and central volume as 0.36 L/kg. A second reader identified significant discrepancies in multiple parameter values compared to this record. These disagreements resulted in an agreement score of 0.417, failing the cross-check requirement. Extracted — isoniazid: CL 0.1 liters/h/kg, V1 0.36 liters/kg.
+Extracted — isoniazid: CL 0.1 liters/h/kg, V1 0.36 liters/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has 587.6, the second reading 0.262; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.417, 0 of 1 reader(s) agree | 0.417 | cross-check disputed by a second reader: verdict disputed, agreement 0.417, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.417 (5 of 12 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.417 | cross-check contradicted by a second reader: verdict disputed; agreement 0.417 (5 of 12 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

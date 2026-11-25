@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> Quinidine clearance is dimensionally inconsistent as an elimination parameter, and its value is 16.80 ml/min/kg.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min⁻¹ (1 / [time]) vs 1 / [time]; Q30 unit min⁻¹ (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="quinidine" model-id="Quinidine_Ueda1980_reference" status="rejected" stale="false" population="rabbits" measured-compound="quinidine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -56,13 +56,13 @@ Ueda CT, Nickols JG. Comparative pharmacokinetics of quinidine and its O-desmeth
 
 ### Reviewer guidance
 
-**Quinidine clearance is dimensionally inconsistent as an elimination parameter, and its value is 16.80 ml/min/kg.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min⁻¹ (1 / [time]) vs 1 / [time]; Q30 unit min⁻¹ (1 / [time]) vs [length] ** 3 / [time].**
 
-The record lists the total clearance (CL) as 16.80 ml/min/kg but labels it with the dimension of an elimination rate constant. The second reader could not identify the primary analyte or several parameter values, indicating ambiguity in the source data. These discrepancies led to the rejection of the pharmacokinetic model for the metabolite 6'-hydroxycinchonine. Extracted — 6'-hydroxycinchonine: λ1 0.445 min⁻¹, t1/2α 1.72 min, kel 0.006 min⁻¹, t1/2β 132 min, Q 0.226 min⁻¹, V1 0.2 liters/kg, CL 16.8 ml/min/kg, V2 3.26 liters/kg.
+A reported unit could not be converted (λ1 and Q), so that value has no SI equivalent. None of the extracted parameters is quinidine's own; they describe 6'-hydroxycinchonine. Extracted — 6'-hydroxycinchonine: λ1 0.445 min⁻¹, t1/2α 1.72 min, kel 0.006 min⁻¹, t1/2β 132 min, Q 0.226 min⁻¹, V1 0.2 liters/kg, CL 16.8 ml/min/kg, V2 3.26 liters/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has quinidine, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

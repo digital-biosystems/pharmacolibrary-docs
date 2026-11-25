@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for acetaminophen and diclofenac was rejected due to a dimension mismatch in the intercompartmental clearance parameter Q/F.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Hannam2014_reference" status="rejected" stale="false" population="children and adults" measured-compound="acetaminophen and diclofenac" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Hannam JA, Anderson BJ, Mahadevan M, Holford NH. Postoperative analgesia using d
 
 ### Reviewer guidance
 
-**The record for acetaminophen and diclofenac was rejected due to a dimension mismatch in the intercompartmental clearance parameter Q/F.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].**
 
-The extracted value of 53.5 L/h/kg for the apparent intercompartmental clearance Q/F has a unit dimension that conflicts with the parameter's required reciprocal time dimension. Additionally, the second reader disagreed with the record's classification of the drug as a mixture of acetaminophen and diclofenac, identifying only acetaminophen as the primary analyte. There were also disagreements regarding the model's parameterization type and the presence of several specific parameter values, including a null value for 'b' in the record versus a value of 67.97 reported by the second reader. Extracted — paracetamol: kel 0.23 h, t1/2z 2.65 h; acetaminophen and diclofenac: CL 10.6 L/h/kg, V/F 62.3 L/kg, Q/F 53.5 L/h/kg, kabs 9.76 h -1, tlag 4.2 min.
+A reported unit could not be converted (kel and equation variable), so that value has no SI equivalent. Extracted — paracetamol: kel 0.23 h, t1/2z 2.65 h; acetaminophen and diclofenac: CL 10.6 L/h/kg, V/F 62.3 L/kg, Q/F 53.5 L/h/kg, kabs 9.76 h -1, tlag 4.2 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has acetaminophen and diclofenac, the second reading acetaminophen; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

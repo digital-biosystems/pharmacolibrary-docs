@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> The record was held over a disputed dose-compound assignment; sulbactam’s reported AUC0–8 is 1247.02 h·mg/L.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Abouelhassan2024v2_200_mg_kg" status="needs_review" stale="false" population="healthy volunteers" measured-compound="sulbactam" parameterization="apparent" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Abouelhassan Y, Kuti JL, Nicolau DP, Abdelraouf K. Pharmacokinetic/pharmacodynam
 
 ### Reviewer guidance
 
-**The record was held over a disputed dose-compound assignment; sulbactam’s reported AUC0–8 is 1247.02 h·mg/L.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader identified the dose compound as sulbactam rather than ampicillin-sulbactam; agreement was 0.889, with 0 of 1 reader agreeing, leaving the verdict disputed. A reported unit could not be converted to SI, although the record does not identify which parameter’s unit was affected. Tlag had no explicit estimate and was defaulted; the model also assumed F=1 and Fm=1, with no molar correction. Extracted — sulbactam: V/F 0.57 L/kg, kabs 78.4 1/h, kel 0.24 1/h, AUCt 1.25e+03 h.mg/L, AUC ratio 0.67.
+A reported unit could not be converted (AUCt), so that value has no SI equivalent. Extracted — sulbactam: V/F 0.57 L/kg, kabs 78.4 1/h, kel 0.24 1/h, AUCt 1.25e+03 h.mg/L, AUC ratio 0.67.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ampicillin-sulbactam, the second reading sulbactam. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -151,7 +151,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | cross-check disputed by a second reader: verdict disputed, agreement 0.889, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.889 (8 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.889 | cross-check contradicted by a second reader: verdict disputed; agreement 0.889 (8 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

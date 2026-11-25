@@ -34,7 +34,7 @@ Mesna is a protective agent used to prevent bladder bleeding in patients treated
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Smith_2003_plasma_cysteine](drugs/drug_mesna/pd_Smith_2003_plasma_cysteine.md) | plasma cysteine ← mesna · direct Emax (saturable) effect | — | Smith PF et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2003) | [10.1177/0091270003260332](https://doi.org/10.1177/0091270003260332) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Smith_2003_plasma_cysteine](drugs/drug_mesna/pd_Smith_2003_plasma_cysteine.md) | plasma cysteine ← mesna · direct Emax (saturable) effect | — | Smith PF et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2003) | [10.1177/0091270003260332](https://doi.org/10.1177/0091270003260332) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

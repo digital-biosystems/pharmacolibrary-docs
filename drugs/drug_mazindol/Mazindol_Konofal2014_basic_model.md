@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Mazindol’s clearance and volume of distribution were left at defaults despite listed oral-adjusted typical values of 29.9 L h−1 and 271 L.
+> No value for mazindol's clearance and volume of distribution; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="mazindol" model-id="Mazindol_Konofal2014_basic_model" status="model_quarantined" stale="false" population="children with ADHD" measured-compound="mazindol" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Konofal E, Zhao W, Laouénan C, Lecendreux M, Kaguelidou F, Benadjaoud L et al. 
 
 ### Reviewer guidance
 
-**Mazindol’s clearance and volume of distribution were left at defaults despite listed oral-adjusted typical values of 29.9 L h−1 and 271 L.**
+**No value for mazindol's clearance and volume of distribution; t6_deviations (+1 more).**
 
-No value for mazindol's clearance and volume of distribution. The model was built, but mazindol's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The record lists apparent assumptions of F=1 and Fm=1, with no molar correction. A second reader disputed the verdict (agreement 0.75) and marked the dose compound and primary analyte as unknown, while this record identifies mazindol for both. Extracted — mazindol: tlag 0.3 h, kabs 1.01 h−1.
+The model was built, but mazindol's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — mazindol: tlag 0.3 h, kabs 1.01 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mazindol, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 2.99 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 2.99 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 4.23 |  |  | no simulated metric for this quantity (single reference sim) |

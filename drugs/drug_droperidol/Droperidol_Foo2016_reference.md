@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;droperidol&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/&quot;},{&quot;label&quot;:&quot;Foo_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Droperidol_Foo2016_reference&quot;,&quot;label&quot;:&quot;Foo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/Droperidol_Foo2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Radke_1998_time_averaged_single_channel_conductance&quot;,&quot;label&quot;:&quot;Radke_1998 \u00b7 time averaged single channel conductance&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/pd_Radke_1998_time_averaged_single_channel_conductance.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Droperidol_Foo2016_reference&quot;,&quot;label&quot;:&quot;Foo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/Droperidol_Foo2016_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Radke_1998_time_averaged_single_channel_conductance&quot;,&quot;label&quot;:&quot;Radke_1998 \u00b7 time averaged single channel conductance&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_droperidol/pd_Radke_1998_time_averaged_single_channel_conductance.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # droperidol — `Droperidol_Foo2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Bioavailability and absorption delay were not reported, so library defaults were used for droperidol instead of paper-derived estimates.
-
-<div class="pk-model-meta" hidden drug="droperidol" model-id="Droperidol_Foo2016_reference" status="needs_review" stale="false" population="acutely agitated patients" measured-compound="droperidol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="droperidol" model-id="Droperidol_Foo2016_reference" status="simulated" stale="false" population="acutely agitated patients" measured-compound="droperidol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Foo LK, Duffull SB, Calver L, Schneider J, Isbister GK. Population pharmacokinetics of intramuscular droperidol in acutely agitated patients. British journal of clinical pharmacology 82(6):1550–1556 (2016).
@@ -17,32 +15,29 @@ Foo LK, Duffull SB, Calver L, Schneider J, Isbister GK. Population pharmacokinet
 
 ## Population and dosing
 
-**Population:** acutely agitated patients · condition acute agitation · age group adult · n = 41.
+**Population:** acutely agitated patients · condition acute agitation · age group adult.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameters:** 5 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference.svg" alt="Droperidol_Foo2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| absorption rate constant (fixed) | kabs | 10 | h-1 |
-| half-life of absorption | t1/2ka | 5 | min |
+| half-life | t1/2z | 5 | min |
 | clearance | CL | 41.9 | l h-1 |
 | volume of distribution of the central compartment | V | 73.6 | l |
-| initial (alpha) half-life, median | t1/2α | 0.32 | h |
-| second (beta) half-life, median | t1/2β | 3.0 | h |
+| initial (alpha) half-life | t1/2α | 0.32 | h |
+| second (beta) half-life | t1/2β | 3.0 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.9). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,24 +47,23 @@ Foo LK, Duffull SB, Calver L, Schneider J, Isbister GK. Population pharmacokinet
 
 ### Reviewer guidance
 
-**Bioavailability and absorption delay were not reported, so library defaults were used for droperidol instead of paper-derived estimates.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-The model includes bioavailability and a lag time that were not extracted from the abstract, meaning a library placeholder would have been used. Since the record was built from abstract-only data, these specific pharmacokinetic values are not supported by the source text. Additionally, the second reader disagreed with the record, finding the dose compound and all parameter values unconfirmed. Extracted — droperidol: kabs 10 h-1, t1/2ka 5 min, CL 41.9 l h-1, V 73.6 l, t1/2α 0.32 h, t1/2β 3 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has droperidol, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of first order rate constant of absorption: this record has none, the second reading 10. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| absorption rate constant (fixed) | `Q49` · kabs | 10 | h-1 | 0.002778 | 1/s | 1/h | exact (1) | Foo_2016:abstract |
-| half-life of absorption | `Q95` · t1/2ka | 5 | min | 300 | s | min | llm_corrected (0.6) | Foo_2016:abstract |
+| half-life | `Q57` · t1/2z | 5 | min | 300 | s | min | half_life_rule (0.95) | Foo_2016:abstract |
 | clearance | `Q22` · CL | 41.9 | l h-1 | 1.164e-05 | m3/s | l/h | exact (1) | Foo_2016:abstract |
 | volume of distribution of the central compartment | `Q61` · V | 73.6 | l | 0.0736 | m3 | l | boundary_compartment (0.9) | Foo_2016:abstract |
-| initial (alpha) half-life, median | `Q59` · t1/2α | 0.32 | h | 1152 | s | h | llm_corrected (0.6) | Foo_2016:abstract |
-| second (beta) half-life, median | `Q60` · t1/2β | 3.0 | h | 1.08e+04 | s | h | llm_corrected (0.6) | Foo_2016:abstract |
+| initial (alpha) half-life | `Q59` · t1/2α | 0.32 | h | 1152 | s | h | half_life_rule (0.95) | Foo_2016:abstract |
+| second (beta) half-life | `Q60` · t1/2β | 3.0 | h | 1.08e+04 | s | h | half_life_rule (0.95) | Foo_2016:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,48 +72,30 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
-- dropped value-less row: 'initial (alpha) half-life, interquartile range'
-- dropped value-less row: 'second (beta) half-life, interquartile range'
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (clearance); Q63 (volume of distribution of the central compartment)
+- dropped value-less row: 'absorption rate constant'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=droperidol
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'volume of distribution of the central compartment' is the general volume)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Foo_2016_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Foo_2016_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.125 (2/16 fields) | 14 |
+| `gpt-oss-120b` | partly confirmed | 0.9 (9/10 fields) | 1 |
 
-<details><summary>14 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption rate constant]` | 10 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | 41.9 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` |  | 41.9 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[first order rate constant of absorption]` |  | 10 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half-life of absorption]` | 5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half-life]` |  | 5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[initial (alpha) half-life,]` | 0.32 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[initial (alpha) half-life]` |  | 0.32 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[second (beta) half-life,]` | 3.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[second (beta) half-life]` |  | 3.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution of the central compartment]` | 73.6 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution of the central compartment]` |  | 73.6 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | droperidol | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | droperidol | unknown | mismatch |
 
 </details>
 
@@ -133,15 +109,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Foo_2016:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Foo_2016:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Foo_2016:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Foo_2016:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Foo_2016:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Foo_2016:abstract'] |
-| C5_dimension_Q95 | pass | [time] |  | ['Foo_2016:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 41.9 | ['Foo_2016:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 41.9 L/h | ['Foo_2016:abstract'] |
@@ -154,10 +129,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=droperidol) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict partial; agreement 0.9 (9 of 10 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.9 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -173,15 +148,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_modelica.zip" download>Droperidol_Foo2016_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_fmi.zip" download>Droperidol_Foo2016_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_modelica.zip" download>Droperidol_Foo2016_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_fmi.zip" download>Droperidol_Foo2016_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_matlab.zip" download>Droperidol_Foo2016_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_matlab_simbio.zip" download>Droperidol_Foo2016_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_sbml.zip" download>Droperidol_Foo2016_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_cellml.zip" download>Droperidol_Foo2016_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_matlab_simbio.zip" download>Droperidol_Foo2016_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_sbml.zip" download>Droperidol_Foo2016_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_cellml.zip" download>Droperidol_Foo2016_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 ## Model interface
@@ -191,20 +166,18 @@ The parameters this record sets on the template, in the template's SI units, and
 | direction | role | name | value | unit (SI) |
 |---|---|---|---|---|
 | input | compound | `MM` | 0.3794 | kg/mol |
-| input | dosing | `F` | 0.9 | 1 |
-| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `F` | 1 | 1 |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
+| input | dosing | `adminMass` | 2.5e-06 | kg |
 | input | model | `Cl` | 1.164e-05 | m3/s |
 | input | model | `VdPerKg` | 0.001051 | m3/kg |
-| input | model | `ka` | 0.002778 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
 ## Tested with
 
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
 - Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
 - No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
@@ -227,14 +200,14 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 10 /h, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 2.5 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 2.5 mg parenteral (N05AD08) (defined daily dose)._
 
-<dbs-fmusim paramsurl="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_droperidol/Droperidol_Foo2016_reference/Droperidol_Foo2016_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Droperidol_Foo2016_reference_params.json` · controls `Droperidol_Foo2016_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Droperidol_Foo2016_reference_params.json` · controls `Droperidol_Foo2016_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdroperidol%5D%20Droperidol_Foo2016_reference&body=Drug%3A%20droperidol%0ARecord%3A%20Droperidol_Foo2016_reference%0APaper%3A%20Foo_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_droperidol/Droperidol_Foo2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 15:27 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:35 UTC</sub>

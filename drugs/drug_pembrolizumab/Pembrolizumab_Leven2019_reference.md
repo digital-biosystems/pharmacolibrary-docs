@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The peripheral compartment is unreachable from the dose, and the record contains null values for two parameters.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="pembrolizumab" model-id="Pembrolizumab_Leven2019_reference" status="rejected" stale="false" population="melanoma patients" measured-compound="pembrolizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,13 +46,13 @@ Leven C, Padelli M, Carré JL, Bellissant E, Misery L. Immune Checkpoint Inhibit
 
 ### Reviewer guidance
 
-**The peripheral compartment is unreachable from the dose, and the record contains null values for two parameters.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defines a central and a peripheral compartment, but the peripheral volume of distribution (4.15 L) is not linked to the central compartment. Additionally, two parameter values are missing (null) rather than being estimated. A second reader also disagreed on specific numerical values, identifying 27.4 and 25 as correct where this record held null or different figures. Extracted — pembrolizumab: CL 0.36 L/day, V1 3.11 L, V2 4.15 L.
+Extracted — pembrolizumab: CL 0.36 L/day, V1 3.11 L, V2 4.15 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q57: this record has 27.4, the second reading 14.7; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

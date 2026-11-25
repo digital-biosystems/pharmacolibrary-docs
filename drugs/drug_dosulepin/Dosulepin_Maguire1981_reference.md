@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for dosulepin is rejected because the metabolite compartments have zero volume and lack formation rate constants, rendering them structurally unreachable.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="dosulepin" model-id="Dosulepin_Maguire1981_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="dothiepin" parameterization="apparent" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Maguire KP, Burrows GD, Norman TR, Scoggins BA. Metabolism and pharmacokinetics 
 
 ### Reviewer guidance
 
-**The record for dosulepin is rejected because the metabolite compartments have zero volume and lack formation rate constants, rendering them structurally unreachable.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Both dothiepin S-oxide and northiaden are defined with a compartment count of zero and connected to the parent drug without specified link parameters. This structural deficiency means there is no defined path for drug to enter these metabolite compartments. The second reader also disputed the inclusion of the metabolites and several parent drug parameters, which were derived from abstract-only summary statistics rather than fitted model estimates. Extracted — dosulepin: t1/2ka 1.2 h, t1/2α 2.6 h, t1/2z 22 h, V/F 45 l/kg, CL/F 1.36 l kg-1 h-1; dothiepin S-oxide: t1/2z 19 h; northiaden: t1/2z 33 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dosulepin: t1/2ka 1.2 h, t1/2α 2.6 h, t1/2z 22 h, V/F 45 l/kg, CL/F 1.36 l kg-1 h-1; dothiepin S-oxide: t1/2z 19 h; northiaden: t1/2z 33 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has dothiepin → dothiepin s-oxide (metabolism); dothiepin → northiaden (metabolism), the second reading none; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -167,4 +167,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdosulepin%5D%20Dosulepin_Maguire1981_reference&body=Drug%3A%20dosulepin%0ARecord%3A%20Dosulepin_Maguire1981_reference%0APaper%3A%20Maguire_1981%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dosulepin/Dosulepin_Maguire1981_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:51 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:26 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
-> Held for review because the dose-compound assignment for orphenadrine is disputed: this record names orphenadrine, while the second reader marked it unknown.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="Orphenadrine" model-id="Orphenadrine_Elghazali2008_reference" status="needs_review" stale="false" population="camels" measured-compound="orphenadrine" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Elghazali M, Wasfi IA, Abdel Hadi AA, Latum AM. Pharmacokinetic, metabolism and 
 
 ### Reviewer guidance
 
-**Held for review because the dose-compound assignment for orphenadrine is disputed: this record names orphenadrine, while the second reader marked it unknown.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so reported summary statistics stand in for a fitted model. The second reader disagreed with the dose-compound assignment; agreement was 0.9, with 0 of 1 reader agreeing. Extracted — orphenadrine: t1/2α 0.5 h, t1/2β 3.57 h, AUC 1.03 mg*h/L, Vss 1.92 lkg(-1), V 0.87 lkg(-1), CL 0.6 l/hkg(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — orphenadrine: t1/2α 0.5 h, t1/2β 3.57 h, AUC 1.03 mg*h/L, Vss 1.92 lkg(-1), V 0.87 lkg(-1), CL 0.6 l/hkg(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has orphenadrine, the second reading unknown. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | cross-check disputed by a second reader: verdict disputed, agreement 0.9, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.9 (9 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.9 | cross-check contradicted by a second reader: verdict disputed; agreement 0.9 (9 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

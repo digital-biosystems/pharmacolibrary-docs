@@ -60,7 +60,7 @@ Majid O, Cao Y, Willis BA, Hayato S, Takenaka O, Lalovic B et al. Population pha
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**Simulated; the covariate scenarios were not simulated (advisory).**
 
 The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (CL_ratio), so that value has no SI equivalent.
 

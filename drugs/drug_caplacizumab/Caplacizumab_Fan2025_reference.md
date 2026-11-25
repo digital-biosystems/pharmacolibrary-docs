@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> The record was rejected because Fan_2025 concerns another drug, despite listing caplacizumab clearance as 0.35 mL/h/kg.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="caplacizumab" model-id="Caplacizumab_Fan2025_reference" status="rejected" stale="false" population="" measured-compound="caplacizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Fan X, Cao K, Wu X, Yan X. Pharmacokinetic-pharmacodynamic modeling of a highly 
 
 ### Reviewer guidance
 
-**The record was rejected because Fan_2025 concerns another drug, despite listing caplacizumab clearance as 0.35 mL/h/kg.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-Neither the paper’s title nor its abstract names caplacizumab, and the relevance screen classified it as a paper about another drug. The model builder defaulted bioavailability, absorption lag time, and one additional parameter rather than using explicit estimates. The second reader disputed the verdict, with agreement of 0.562. Extracted — caplacizumab: CL 0.35 mL/h/kg, V1 26.9 mL/kg, Q 1.86 mL/h, kabs 0.46 1/h.
+Extracted — caplacizumab: CL 0.35 mL/h/kg, V1 26.9 mL/kg, Q 1.86 mL/h, kabs 0.46 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.35, the second reading 0.69; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.562, 0 of 1 reader(s) agree | 0.562 | cross-check disputed by a second reader: verdict disputed, agreement 0.562, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.562 (9 of 16 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.562 | cross-check contradicted by a second reader: verdict disputed; agreement 0.562 (9 of 16 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

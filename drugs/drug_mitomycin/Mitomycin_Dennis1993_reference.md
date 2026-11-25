@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;mitomycin&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/&quot;},{&quot;label&quot;:&quot;Dennis_1993 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mitomycin_den1983_reference&quot;,&quot;label&quot;:&quot;den_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/Mitomycin_den1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Only clearance was extracted — no volume; aUC has no unit.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Dennis1993_reference" status="needs_review" stale="false" population="patients with advanced gastrointestinal cancer" measured-compound="BW12C and mitomycin C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Dennis1993_reference" status="needs_review" stale="false" population="patients with advanced gastrointestinal cancer" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dennis IF, Ramsay JR, Workman P, Bleehen NM. Pharmacokinetics of BW12C and mitomycin C, given in combination in a phase 1 study in patients with advanced gastrointestinal cancer. Cancer chemotherapy and pharmacology 32(1):67–72 (1993).
@@ -16,7 +17,7 @@ Dennis IF, Ramsay JR, Workman P, Bleehen NM. Pharmacokinetics of BW12C and mitom
 
 ## Population and dosing
 
-**Population:** patients with advanced gastrointestinal cancer · condition advanced gastrointestinal cancer · age group adult · n = 26.
+**Population:** patients with advanced gastrointestinal cancer · condition advanced gastrointestinal cancer · age group adult.
 
 ## Model
 
@@ -31,12 +32,12 @@ Dennis IF, Ramsay JR, Workman P, Bleehen NM. Pharmacokinetics of BW12C and mitom
 | label | parameter | value | unit |
 |---|---|---|---|
 | half-life | t1/2z | 2.1 | h |
-| beta half-life | t1/2β | 50 | min |
+| mean beta half-life | t1/2β | 50 | min |
 | AUC | AUC | 1.1 | micrograms/ml h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875), qwen3.8-27b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +47,9 @@ Dennis IF, Ramsay JR, Workman P, Bleehen NM. Pharmacokinetics of BW12C and mitom
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; aUC has no unit.**
+**Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is mitomycin's own; they describe BW12C and mitomycin C. Extracted — BW12C and mitomycin C: t1/2z 2.1 h, t1/2β 50 min, AUC 1.1 micrograms/ml h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mitomycin: t1/2z 2.1 h, t1/2β 50 min, AUC 1.1 micrograms/ml h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has BW12C and mitomycin C, the second reading mitomycin; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -58,9 +59,9 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| half-life | `Q57` · t1/2z | 2.1 | h | 7560 | s | h | llm (0.6) | Dennis_1993:abstract, Dennis_1993:abstract |
-| beta half-life | `Q60` · t1/2β | 50 | min | 3000 | s | min | llm_corrected (0.6) | Dennis_1993:abstract |
-| AUC | `Q88` · AUC | 1.1 | micrograms/ml h |  |  | µg/(h·ml) | exact (1) | Dennis_1993:abstract |
+| half-life | `Q57` · t1/2z | 2.1 | h | 7560 | s | h | half_life_rule (0.95) | Dennis_1993:abstract, Dennis_1993:abstract |
+| mean beta half-life | `Q60` · t1/2β | 50 | min | 3000 | s | min | half_life_rule (0.95) | Dennis_1993:abstract |
+| AUC | `Q88` · AUC | 1.1 | micrograms/ml h | 3.96 | kg*s/m3 | µg/(h·ml) | exact (1) | Dennis_1993:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -70,33 +71,29 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'micrograms/ml h' (AUC)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=BW12C and mitomycin C
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- dropped unlinked row (NIL): 'dose' — extend the ontology if this is a real PK parameter (source ['Dennis_1993:abstract'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mitomycin C
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- status held at "Needs review" — not promoted
-- molar mass: no plausible PubChem entry for 'BW12C and mitomycin C' ('no full name in the paper') — left in mass units
-- molar mass: none found for 'BW12C and mitomycin C' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Dennis_1993_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Dennis_1993_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 | `qwen3.8-27b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[dose]` |  | 20 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[auc]` | 1.1 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[auc]` |  | 1.1 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[beta half-life]` | 50 |  | only_one_extracted |
@@ -123,7 +120,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Dennis_1993:abstract', 'Dennis_1993:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Dennis_1993:abstract'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | micrograms/ml h | ['Dennis_1993:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Dennis_1993:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -158,4 +155,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitomycin%5D%20Mitomycin_Dennis1993_reference&body=Drug%3A%20mitomycin%0ARecord%3A%20Mitomycin_Dennis1993_reference%0APaper%3A%20Dennis_1993%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitomycin/Mitomycin_Dennis1993_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:57 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:43 UTC</sub>

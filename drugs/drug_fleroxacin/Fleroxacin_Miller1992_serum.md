@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Fleroxacin Cmax unit pg/mi caused dimension mismatch, triggering record rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit pg/mi ([mass] / [length]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="fleroxacin" model-id="Fleroxacin_Miller1992_serum" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="fleroxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Miller MH, Madu A, Samathanam G, Rush D, Madu CN, Mathisson K et al. Fleroxacin 
 
 ### Reviewer guidance
 
-**Fleroxacin Cmax unit pg/mi caused dimension mismatch, triggering record rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit pg/mi ([mass] / [length]) vs [mass] / [length] ** 3.**
 
-Cmax (13.05) is recorded as pg/mi, which does not resolve to a valid volume dimension. The elimination rate constant kel (0.554 h-1) and transfer rate constant k21 (0.97 h-1) were unreadable to the second reader, appearing as null. The half-life t1/2α (2.340 h) was assigned an inconsistent identifier by the second reader. Extracted — fleroxacin: t1/2α 2.34 h, kel 0.554 h-', AUC 23.5 mg h/liter, Cmax 13.1 pg/mi, tmax 0 h, k12 0.59 W-, k21 0.97 h-'.
+A reported unit could not be converted (kel, AUC, Cmax and k12), so that value has no SI equivalent. Extracted — fleroxacin: t1/2α 2.34 h, kel 0.554 h-', AUC 23.5 mg h/liter, Cmax 13.1 pg/mi, tmax 0 h, k12 0.59 W-, k21 0.97 h-'.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ice: this record has 0.554, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

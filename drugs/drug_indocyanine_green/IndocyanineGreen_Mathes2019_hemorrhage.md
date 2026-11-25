@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The calculated clearance for indocyanine green, reported as 174.0 mL/min, is physiologically implausible for a rat, suggesting a unit or scale extraction error.
+> C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Mathes2019_hemorrhage" status="rejected" stale="false" population="anesthetized Sprague-Dawley rats with hemorrhagic shock or endotoxemia" measured-compound="indocyanine green" parameterization="mechanistic" topology="3C"></div>
 
@@ -55,13 +55,13 @@ Mathes A, Plata C, Rensing H, Kreuer S, Fink T, Raddatz A. Plasma Disappearance 
 
 ### Reviewer guidance
 
-**The calculated clearance for indocyanine green, reported as 174.0 mL/min, is physiologically implausible for a rat, suggesting a unit or scale extraction error.**
+**C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record provides a clearance value of 174.0 mL/min, which is implausibly high for the anesthetized rat population. Although the label mentions normalization to a standard body size, the extracted unit remains mL/min rather than a normalized metric. This discrepancy triggered a physiological plausibility check failure, while the second reader disagreed on the classification of the clearance parameter. Extracted — indocyanine green: V 41.6 mL, CLnorm 174 mL/min, V1 20.2 mL, V2 85.6 mL, kel 0.04 1/h, k12 0.08 1/h, k21 0.01 1/h.
+Extracted — indocyanine green: V 41.6 mL, CLnorm 174 mL/min, V1 20.2 mL, V2 85.6 mL, kel 0.04 1/h, k12 0.08 1/h, k21 0.01 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[calculated icg clearance].parameter_id`: this record has Q354, the second reading Q22. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

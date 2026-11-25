@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> Pertuzumab tmax is recorded as 0.0833 hours, but the model fails to reproduce the paper's 72-hour peak time, resulting in a 0.183-hour simulated value.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 72, model 0.183); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="pertuzumab" model-id="Pertuzumab_Sakaeda2024_10_mg_kg_iv" status="needs_review" stale="false" population="healthy adult males" measured-compound="pertuzumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Sakaeda M, Kotani N, Yoneya T, Zheng Y, Habara Y. [Pharmacological properties an
 
 ### Reviewer guidance
 
-**Pertuzumab tmax is recorded as 0.0833 hours, but the model fails to reproduce the paper's 72-hour peak time, resulting in a 0.183-hour simulated value.**
+**The model does not reproduce the paper's time of the peak (tmax) (paper 72, model 0.183); x1_cross_check.**
 
-The record lists a time to maximum concentration of 0.0833 hours, which is physiologically inconsistent with the 72-hour value reported in the source study. Simulation checks confirm the model outputs a peak time of 0.183 hours, deviating significantly from the expected 72 hours. Additionally, a second reader disputes the identification of pertuzumab as the primary analyte and rejects the extracted AUC and clearance values. Extracted — pertuzumab: tmax 0.0833 h, Cmax 288 μg/mL, t1/2z 612 h, AUC∞ 1.08e+05 μg·h/mL, AUCt 5.96e+04 μg·h/mL, CL 0.00158 mL/min/kg, Vss 0.0782 L/kg, MRT 844 h, … (+1).
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax, AUC∞ and AUCt), so that value has no SI equivalent. Extracted — pertuzumab: tmax 0.0833 h, Cmax 288 μg/mL, t1/2z 612 h, AUC∞ 1.08e+05 μg·h/mL, AUCt 5.96e+04 μg·h/mL, CL 0.00158 mL/min/kg, Vss 0.0782 L/kg, MRT 844 h, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pertuzumab, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -172,15 +172,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.059, 0 of 1 reader(s) agree | 0.059 | cross-check disputed by a second reader: verdict disputed, agreement 0.059, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 0.004986 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.004986 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.004986 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.004986 |  | non-numeric value |
-| T1_tmax | reference | fail | 72 | 0.1833 | 0.0025 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 24 | 0.1833 | 0.0076 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 24 | 0.1833 | 0.0076 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 24 | 0.1833 | 0.0076 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.059 (1 of 17 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.059 | cross-check contradicted by a second reader: verdict disputed; agreement 0.059 (1 of 17 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 0.004986 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.004986 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.004986 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.004986 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | fail | 72 | 0.1833 | 0.0025 | reported 72.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 24 | 0.1833 | 0.0076 | reported 24.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 24 | 0.1833 | 0.0076 | reported 24.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 24 | 0.1833 | 0.0076 | reported 24.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

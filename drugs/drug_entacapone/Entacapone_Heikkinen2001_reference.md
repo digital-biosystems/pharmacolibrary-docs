@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Entacapone bioavailability, AUC, Cmax, and clearance were omitted from the record, causing a cross-check dispute.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="entacapone" model-id="Entacapone_Heikkinen2001_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="entacapone" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,13 +17,13 @@ Heikkinen H, Saraheimo M, Antila S, Ottoila P, Pentikäinen PJ. Pharmacokinetics
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · condition healthy · age group adult · n = 8.
+**Population:** healthy male volunteers · condition healthy · age group adult.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 9 extracted.  
+**Parameters:** 8 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference.svg" alt="Entacapone_Heikkinen2001_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -33,19 +33,19 @@ Heikkinen H, Saraheimo M, Antila S, Ottoila P, Pentikäinen PJ. Pharmacokinetics
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Vc | V | 0.08 | l/kg |
-| Vss | Vss | 0.27 | l/kg |
-| Cltot | CL | 11.7 | ml/min kg(-1) |
-| AUC (i.v.) | AUC | 409 | mg·h/L |
-| tmax | tmax | 0.9 | h |
-| Cmax | Cmax | 457 | ng/ml |
-| recovery of free and conjugated unchanged 13C-entacapone in urine | fe | 38.1 | % |
-| bioavailability of oral entacapone (based on AUC values) | Fab | 25 | % |
-| ka (fixed) | kabs | 50.0 | h-1 |
+| The volume of the central compartment (Vc) | V | 0.08 | l/kg |
+| the volume of distribution at steady state (Vss) | Vss | 0.27 | l/kg |
+| Total plasma clearance (Cltot) | CL | 11.7 | ml/min kg(-1) |
+| a time to reach the peak concentration (tmax) | tmax | 0.9 | h |
+| a maximum concentration (Cmax) | Cmax | 457 | ng/ml |
+| an AUC | AUCt | 497 | ng h/ml |
+| the recovery of free and conjugated unchanged 13C-entacapone in urine was | fe | 38.1 | % of the i.v. |
+| The bioavailability of oral entacapone was | Fab | 25 |  |
+| and | equation variable | 35 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.136). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,27 +55,27 @@ Heikkinen H, Saraheimo M, Antila S, Ottoila P, Pentikäinen PJ. Pharmacokinetics
 
 ### Reviewer guidance
 
-**Entacapone bioavailability, AUC, Cmax, and clearance were omitted from the record, causing a cross-check dispute.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists bioavailability as 25%, AUC as 409 mg·h/L, Cmax as 457 ng/ml, and clearance as 11.7 ml/min kg(-1). However, the second reader noted these values were null in the review record. This discrepancy resulted in a verdict dispute with an agreement ratio of 0.182. The primary analyte was also disputed, with the second reader identifying 13C-entacapone. Extracted — entacapone: V 0.08 l/kg, Vss 0.27 l/kg, CL 11.7 ml/min kg(-1), AUC 409 mg·h/L, tmax 0.9 h, Cmax 457 ng/ml, fe 38.1 %, Fab 25 %, … (+1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — entacapone: V 0.08 l/kg, Vss 0.27 l/kg, CL 11.7 ml/min kg(-1), tmax 0.9 h, Cmax 457 ng/ml, AUCt 497 ng h/ml, fe 38.1 % of the i.v., Fab 25.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has entacapone, the second reading 13C-entacapone; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has entacapone, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Vc | `Q61` · V | 0.08 | l/kg | 0.0056 | m3 | l/kg | exact (1) | Heikkinen_2001:abstract |
-| Vss | `Q65` · Vss | 0.27 | l/kg | 0.0189 | m3 | l/kg | exact (1) | Heikkinen_2001:abstract |
-| Cltot | `Q22` · CL | 11.7 | ml/min kg(-1) | 1.365e-05 | m3/s | ml/(min·kg) | exact (1) | Heikkinen_2001:abstract |
-| AUC (i.v.) | `Q88` · AUC | 409 | mg·h/L |  |  | mg·h/L | exact (1) | Heikkinen_2001:abstract |
-| tmax | `Q56` · tmax | 0.9 | h | 3240 | s | h | exact (1) | Heikkinen_2001:abstract |
-| Cmax | `Q32` · Cmax | 457 | ng/ml |  |  | ng/ml | exact (1) | Heikkinen_2001:abstract |
-| recovery of free and conjugated unchanged 13C-entacapone in urine | `Q44` · fe | 38.1 | % |  |  | % | llm (0.6) | Heikkinen_2001:abstract |
-| bioavailability of oral entacapone (based on AUC values) | `Q40` · Fab | 25 | % |  |  |  | llm_confirmed (0.6) | Heikkinen_2001:abstract |
-| ka (fixed) | `Q49` · kabs | 50.0 | h-1 | 0.01389 | 1/s | 1/h | review_gapfill (0.7) | Senek_2020:review |
+| The volume of the central compartment (Vc) | `Q61` · V | 0.08 | l/kg | 0.0056 | m3 | l/kg | llm_confirmed (0.6) | Heikkinen_2001:abstract |
+| the volume of distribution at steady state (Vss) | `Q65` · Vss | 0.27 | l/kg | 0.0189 | m3 | l/kg | llm_corrected (0.6) | Heikkinen_2001:abstract |
+| Total plasma clearance (Cltot) | `Q22` · CL | 11.7 | ml/min kg(-1) | 1.365e-05 | m3/s | ml/(min·kg) | llm_confirmed (0.6) | Heikkinen_2001:abstract |
+| a time to reach the peak concentration (tmax) | `Q56` · tmax | 0.9 | h | 3240 | s | h | llm_corrected (0.6) | Heikkinen_2001:abstract |
+| a maximum concentration (Cmax) | `Q32` · Cmax | 457 | ng/ml | 0.000457 | kg/m3 | ng/ml | llm_confirmed (0.6) | Heikkinen_2001:abstract |
+| an AUC | `Q19` · AUCt | 497 | ng h/ml | 1.789 | kg*s/m3 | (h·ng)/ml | llm_corrected (0.6) | Heikkinen_2001:abstract |
+| the recovery of free and conjugated unchanged 13C-entacapone in urine was | `Q44` · fe | 38.1 | % of the i.v. | 0.381 |  | %·i·of·the·v | llm (0.6) | Heikkinen_2001:abstract |
+| The bioavailability of oral entacapone was | `Q40` · Fab | 25 |  |  |  |  | llm_confirmed (0.6) | Heikkinen_2001:abstract |
+| and | `Q900` · equation variable | 35 |  | 35 |  |  | llm (0.6) | Heikkinen_2001:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -84,22 +84,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Tlag']
-
 **Interpretation flags:**
-- unit_dimension_unknown: 'ng h/ml' (AUC)
-- dropped duplicate Q88 ('AUC (oral)', value 497) — already have one for this compound
-- implicit units: 'AUC (i.v.)' → mg·h/L (from the popPK convention: 'No unit stated in text, caption, or footnotes. AUC after i.v. dosing is conventionally reported in mg·h/L in population ')
+- dropped unlinked row (NIL): 'The terminal elimination phase accounted for only 9% of the total area under the plasma concentration-time curve (AUC), which was' — extend the ontology if this is a real PK parameter (source ['Heikkinen_2001:abstract'])
+- unit_dimension_unknown: '% of the i.v.' (fe)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=entacapone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'Vc' is the general volume)
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'The volume of the central compartment (Vc)' is the general volume)
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Senek_2020's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Heikkinen_2001_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
@@ -107,33 +99,34 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.182 (4/22 fields) | 18 |
+| `gpt-oss-120b` | not confirmed | 0.136 (3/22 fields) | 19 |
 
-<details><summary>18 field discrepancies</summary>
+<details><summary>19 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a maximum concentration]` | 457 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a time to reach the peak concentration]` | 0.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[an auc]` | 497 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[and]` | 35 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[auc]` |  | 409 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc]` | 409 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[bioavailability of oral entacapone]` |  | 25 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailability of oral entacapone]` | 25 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cltot]` | 11.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` | 457 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 50.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[maximum concentration]` |  | 457 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` |  | 457 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[recovery of free and conjugated unchanged 13c-entacapone in urine]` |  | 38.1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[recovery of free and conjugated unchanged 13c-entacapone in urine]` | 38.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[time to reach the peak concentration]` |  | 0.9 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tmax]` | 0.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the bioavailability of oral entacapone was]` | 25 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the recovery of free and conjugated unchanged 13c-entacapone in urine was]` | 38.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the volume of distribution at steady state]` | 0.27 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the volume of the central compartment]` | 0.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` |  | 0.9 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[total plasma clearance]` |  | 11.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vc]` | 0.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance]` | 11.7 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution at steady state]` |  | 0.27 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of the central compartment]` |  | 0.08 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vss]` | 0.27 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | entacapone | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | entacapone | 13C-entacapone | mismatch |
 
 </details>
@@ -151,14 +144,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Heikkinen_2001:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Heikkinen_2001:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Heikkinen_2001:abstract'] |
-| C5_dimension_Q44 | pass | dimensionless |  | ['Heikkinen_2001:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Senek_2020:review'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Heikkinen_2001:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Heikkinen_2001:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Heikkinen_2001:abstract'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Heikkinen_2001:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 11.7 | ['Heikkinen_2001:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 49.1 L/h | ['Heikkinen_2001:abstract'] |
@@ -172,10 +163,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=entacapone) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.182, 0 of 1 reader(s) agree | 0.182 | cross-check disputed by a second reader: verdict disputed, agreement 0.182, 0 of 1 reader(s) agree |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.136 (3 of 22 compared fields agree, 17 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.136 | cross-check contradicted by a second reader: verdict disputed; agreement 0.136 (3 of 22 compared fields agree, 17 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -191,15 +182,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_modelica.zip" download>Entacapone_Heikkinen2001_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_fmi.zip" download>Entacapone_Heikkinen2001_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_matlab.zip" download>Entacapone_Heikkinen2001_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_matlab_simbio.zip" download>Entacapone_Heikkinen2001_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_sbml.zip" download>Entacapone_Heikkinen2001_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_cellml.zip" download>Entacapone_Heikkinen2001_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_modelica.zip" download>Entacapone_Heikkinen2001_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_fmi.zip" download>Entacapone_Heikkinen2001_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_matlab.zip" download>Entacapone_Heikkinen2001_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_matlab_simbio.zip" download>Entacapone_Heikkinen2001_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_sbml.zip" download>Entacapone_Heikkinen2001_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_cellml.zip" download>Entacapone_Heikkinen2001_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 ## Model interface
@@ -209,20 +200,18 @@ The parameters this record sets on the template, in the template's SI units, and
 | direction | role | name | value | unit (SI) |
 |---|---|---|---|---|
 | input | compound | `MM` | 0.3053 | kg/mol |
-| input | dosing | `F` | 25 | 1 |
-| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `F` | 1 | 1 |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.001 | kg |
+| input | dosing | `adminMass` | 1e-05 | kg |
 | input | model | `Cl` | 1.365e-05 | m3/s |
 | input | model | `VdPerKg` | 8e-05 | m3/kg |
-| input | model | `ka` | 0.01389 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
 ## Tested with
 
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
 - Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
 - No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
@@ -245,14 +234,14 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 1000 mg, single dose, first-order absorption (ka 50 /h, F 25). _The paper's dose was not captured; the default is the WHO ATC DDD 1000 mg oral (N04BX02) (defined daily dose)._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
-<dbs-fmusim paramsurl="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_entacapone/Entacapone_Heikkinen2001_reference/Entacapone_Heikkinen2001_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Entacapone_Heikkinen2001_reference_params.json` · controls `Entacapone_Heikkinen2001_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Entacapone_Heikkinen2001_reference_params.json` · controls `Entacapone_Heikkinen2001_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bentacapone%5D%20Entacapone_Heikkinen2001_reference&body=Drug%3A%20entacapone%0ARecord%3A%20Entacapone_Heikkinen2001_reference%0APaper%3A%20Heikkinen_2001%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_entacapone/Entacapone_Heikkinen2001_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 13:00 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:41 UTC</sub>

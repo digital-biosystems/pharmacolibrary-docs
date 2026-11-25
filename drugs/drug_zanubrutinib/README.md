@@ -47,7 +47,7 @@ Zanubrutinib is a Bruton's tyrosine kinase inhibitor used to treat mantle cell l
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:58 | 1:50 | 1/0/0 | 0/0/0 | 0/0/0 | 23,792/9,220 | openai / gpt-6-luna | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-24 07:26 | 0:03 | 1/0/0 | 0/0/0 | 0/0/0 | 3,624/177 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
@@ -56,22 +56,14 @@ Zanubrutinib is a Bruton's tyrosine kinase inhibitor used to treat mantle cell l
 - **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Ou_2021_2.pdf` | Ou YC et al., Rationale for once-daily or twice-daily…, Leukemia & lymphoma (2021) | popPK | 8 | [10.1080/10428194.2021.1929961](https://doi.org/10.1080/10428194.2021.1929961) | [34159878](https://pubmed.ncbi.nlm.nih.gov/34159878) | Human zanubrutinib population-PK analyses are described, but no numeric disposition parameter values are provided. |
-
-<sub>queue written 2026-10-07 08:56 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ou_2021_2 | relevant | 8 | 0 | Human zanubrutinib population-PK analyses are described, but no numeric disposition parameter values are provided. |
-| popPK | Tam_2021 | irrelevant | 1 | 0 | This is a clinical pharmacology review, and no numeric zanubrutinib disposition parameters are provided in the evidence. |
+| popPK | Ou_2021_2 | irrelevant | 6 | 0 | The text describes a population PK analysis supporting dosing recommendations but provides no specific numeric parameter values (CL, V, etc.) for extraction, only qualitative statements about similar exposure. |
+| PGx | Ou_2021_2 | not_relevant | 0 | 0 | The paper discusses dose optimization (once-daily vs twice-daily) and population PK/PD but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Tam_2021 | irrelevant | 3 | 0 | This is a review article that discusses qualitative PK properties and dose justification but does not report specific quantitative numeric disposition parameters (e.g., CL, V, ka) for zanubrutinib in the provided evidence. |
+| PGx | Tam_2021 | not_relevant | 0 | 0 | The text describes general clinical pharmacology and PK/PD factors (food, hepatic impairment, DDI) but does not report any specific pharmacogenomic variants or genotype-based effects on zanubrutinib parameters. |
 
 
 </details>

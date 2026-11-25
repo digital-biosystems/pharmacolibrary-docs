@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the amoxicillin volume of distribution parameter was extracted as 0.239 L, which is implausibly low.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_da2021_reference" status="rejected" stale="false" population="adults undergoing colorectal surgery" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ da Silva Neto MJJ, MacKay G, Agaram R, MacLeod M, Watson DG, Thomson AH. Evaluat
 
 ### Reviewer guidance
 
-**The record was rejected because the amoxicillin volume of distribution parameter was extracted as 0.239 L, which is implausibly low.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The volume of distribution parameter value of 0.239 L is physically implausible for amoxicillin in adults undergoing colorectal surgery. This magnitude suggests a unit or scale extraction error rather than a physiological reality. The associated clearance value of 3.22 L/h does not offset this structural inconsistency. Extracted — amoxicillin: CL 3.22 L/h, V 0.239 L, kabs 0.17 h−1, tlag 0.125 h.
+Extracted — amoxicillin: CL 3.22 L/h, V 0.239 L, kabs 0.17 h−1, tlag 0.125 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

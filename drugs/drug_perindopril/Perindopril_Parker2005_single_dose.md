@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Q was mislabeled as intercompartmental clearance but has units of 1/time, and kabs was mislabeled as absorption rate constant but has units of time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit h -1 (1 / [time]) vs [length] ** 3 / [time]; Q49 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="perindopril" model-id="Perindopril_Parker2005_single_dose" status="rejected" stale="false" population="normal volunteers and patients" measured-compound="perindoprilat" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Parker E, Aarons L, Rowland M, Resplandy G. The pharmacokinetics of perindoprila
 
 ### Reviewer guidance
 
-**Q was mislabeled as intercompartmental clearance but has units of 1/time, and kabs was mislabeled as absorption rate constant but has units of time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit h -1 (1 / [time]) vs [length] ** 3 / [time]; Q49 unit h ([time]) vs 1 / [time].**
 
-The intercompartmental clearance parameter has units of h^-1, which is dimensionally incompatible with clearance. The absorption rate constant parameter has units of h, which is dimensionally incompatible with a rate constant. These unit mismatches indicate the values were assigned to the wrong parameters. Extracted — perindoprilat: V 6.4 L, CLm/F 7 L h -1, Bmax 2.5 g L -1, Q 1.3 h -1, kabs 6.6 h.
+A reported unit could not be converted (Bmax, Q and kabs), so that value has no SI equivalent. None of the extracted parameters is perindopril's own; they describe perindoprilat. Extracted — perindoprilat: V 6.4 L, CLm/F 7 L h -1, Bmax 2.5 g L -1, Q 1.3 h -1, kabs 6.6 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has perindopril, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

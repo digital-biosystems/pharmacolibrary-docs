@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Q2, the apparent intercompartmental clearance for pomalidomide, was rejected because its assigned units conflict with the model's structural dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit L/h ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Li2017_reference" status="rejected" stale="false" population="adults with relapsed or refractory multiple myeloma" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
 
@@ -44,7 +44,7 @@ Li Y, Wang X, O'Mara E, Dimopoulos MA, Sonneveld P, Weisel KC et al. Population 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +54,13 @@ Li Y, Wang X, O'Mara E, Dimopoulos MA, Sonneveld P, Weisel KC et al. Population 
 
 ### Reviewer guidance
 
-**Q2, the apparent intercompartmental clearance for pomalidomide, was rejected because its assigned units conflict with the model's structural dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit L/h ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time].**
 
-The record lists the parameter with a value of 0.221 but lacks a corresponding unit field in the extraction. The dimension check flagged a mismatch between the expected units for an intercompartmental clearance and the units actually applied during the model run. Extracted — pomalidomide: kabs 0.526, V/F 54.5 L, CLnorm/F 5.16 L/h, CL_ratio 1.02 group 2 vs group 1, CL/F 1.02 group 3 vs group 1, tlag 0.183 h, Q2 0.221, CLint 2.58 L/h.
+A reported unit could not be converted (CL_ratio, CL/F and CLint), so that value has no SI equivalent. Extracted — pomalidomide: kabs 0.526, V/F 54.5 L, CLnorm/F 5.16 L/h, CL_ratio 1.02 group 2 vs group 1, CL/F 1.02 group 3 vs group 1, tlag 0.183 h, Q2 0.221, CLint 2.58 L/h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/fnormal].parameter_id`: this record has Q355, the second reading Q27; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -100,6 +102,32 @@ The record lists the parameter with a value of 0.221 but lacks a corresponding u
 - LLM selected parameter table(s) 4, 6
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (6/12 fields) | 6 |
+
+<details><summary>6 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/fnormal].parameter_id` | Q355 | Q27 | mismatch |
+| `gpt-oss-120b` | `parameters[intercept]` | 2.577 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka].value` | 0.526 | 0.724 | mismatch |
+| `gpt-oss-120b` | `parameters[tlag].value` | 0.183 | 0.154 | mismatch |
+| `gpt-oss-120b` | `parameters[v/f].value` | 54.502 | 58.300 | mismatch |
+| `gpt-oss-120b` | `parameters[δ2]` | 0.221 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

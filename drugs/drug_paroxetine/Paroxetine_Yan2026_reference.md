@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Paroxetine’s absorption-rate constant (ka) was unreported and defaulted, holding back the record despite reported CL/F of 28.9 L/h.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="paroxetine" model-id="Paroxetine_Yan2026_reference" status="needs_review" stale="false" population="" measured-compound="paroxetine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Yan H, Huang W, Xia H, Luo Y, Li Y, Shang D. Optimizing Mirtazapine Initial Dosi
 
 ### Reviewer guidance
 
-**Paroxetine’s absorption-rate constant (ka) was unreported and defaulted, holding back the record despite reported CL/F of 28.9 L/h.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-Ka use library defaults, not estimates from this paper. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Tlag was also defaulted, and the model assumed F=1 and Fm=1 with no molar correction, using first-order depot input for apparent (/F) parameterization. Extracted — paroxetine: CL/F 28.9 L/h, V/F 310 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — paroxetine: CL/F 28.9 L/h, V/F 310 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

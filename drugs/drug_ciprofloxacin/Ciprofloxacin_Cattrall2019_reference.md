@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The ciprofloxacin model was rejected because it incorrectly links unrelated fosfomycin, rendering the ciprofloxacin compartment orphaned.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Cattrall2019_reference" status="rejected" stale="false" population="patients" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -49,13 +49,13 @@ Cattrall JWS, Asín-Prieto E, Freeman J, Trocóniz IF, Kirby A. A pharmacokineti
 
 ### Reviewer guidance
 
-**The ciprofloxacin model was rejected because it incorrectly links unrelated fosfomycin, rendering the ciprofloxacin compartment orphaned.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a hydrolysis link from fosfomycin trometamol to fosfomycin, creating a structural mismatch for the measured ciprofloxacin. Consequently, the ciprofloxacin compartment is unreachable from the dose within this topology. Additionally, no value was extracted for the volume of distribution, leaving this parameter undefined. Extracted — ciprofloxacin: Fab 69, fu 25, CL 12.9 L/h, kabs 1 h−1, tlag 0.33 h.
+Extracted — ciprofloxacin: Fab 69, fu 25, CL 12.9 L/h, kabs 1 h−1, tlag 0.33 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ciprofloxacin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

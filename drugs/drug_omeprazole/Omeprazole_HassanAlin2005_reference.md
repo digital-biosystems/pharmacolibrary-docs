@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Omeprazole clearance of 6.67 L/h is mislabeled as caffeine clearance, and the metabolite links are absent.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit µmol/l ([substance] / [length] ** 3) vs [mass] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_HassanAlin2005_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="omeprazole" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -53,13 +53,13 @@ Hassan-Alin M, Andersson T, Niazi M, Röhss K. A pharmacokinetic study comparing
 
 ### Reviewer guidance
 
-**Omeprazole clearance of 6.67 L/h is mislabeled as caffeine clearance, and the metabolite links are absent.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit µmol/l ([substance] / [length] ** 3) vs [mass] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The clearance parameter is explicitly labeled 'systemic caffeine clearance' in the source, despite being assigned to omeprazole. The model structure lacks the metabolic pathways to 5-hydroxy omeprazole and omeprazole sulphone, rendering these compartments orphaned. Additionally, the absorption rate constant uses a unit not convertible to standard international units, preventing numerical evaluation. Extracted — omeprazole: AUC 5.79 µmol×h/l, Cmax 3.87 µmol/l, t1/2z 0.99 h, CL 6.67 L/h, V 7.47 L, kabs 0.05 min À1, tlag 0.26 h.
+A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent. Extracted — omeprazole: AUC 5.79 µmol×h/l, Cmax 3.87 µmol/l, t1/2z 0.99 h, CL 6.67 L/h, V 7.47 L, kabs 0.05 min À1, tlag 0.26 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has omeprazole → 5-hydroxy omeprazole (metabolism); omeprazole → omeprazole sulphone (metabolism), the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

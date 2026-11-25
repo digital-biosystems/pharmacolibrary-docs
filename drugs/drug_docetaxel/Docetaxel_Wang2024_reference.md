@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Docetaxel AUC is recorded as 80% despite a concentration-dimension assignment, and the paper reports no volume or clearance, so it is not a compartmental population PK model.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit % (dimensionless) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="docetaxel" model-id="Docetaxel_Wang2024_reference" status="rejected" stale="false" population="patients" measured-compound="docetaxel" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Wang D, Jackson C, Hung N, Hung T, Kwan R, Chan WK et al. Oral docetaxel plus en
 
 ### Reviewer guidance
 
-**Docetaxel AUC is recorded as 80% despite a concentration-dimension assignment, and the paper reports no volume or clearance, so it is not a compartmental population PK model.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit % (dimensionless) vs [mass] * [time] / [length] ** 3.**
 
-No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. AUC means area under the concentration-time curve, but the recorded 80% is dimensionless and conflicts with its assigned concentration dimension; the percent unit could not be expressed in SI units, leaving the parameter without an SI value. Extracted — docetaxel: Fab 8 %, AUC 80 %.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Fab and AUC), so that value has no SI equivalent. Extracted — docetaxel: Fab 8 %, AUC 80 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has docetaxel, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

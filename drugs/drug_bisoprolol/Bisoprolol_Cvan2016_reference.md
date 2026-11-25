@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Bisoprolol bioavailability (F) has no reported estimate and was defaulted, leaving the simulated profile dependent on unsupported values.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Cvan2016_reference" status="needs_review" stale="false" population="patients with chronic heart failure" measured-compound="bisoprolol" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,13 +56,13 @@ KatjaCvan Trobec katja.cvan.trobec@gmail.com Faculty of Pharmacy University of L
 
 ### Reviewer guidance
 
-**Bisoprolol bioavailability (F) has no reported estimate and was defaulted, leaving the simulated profile dependent on unsupported values.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).**
 
-F for bisoprolol has no reported estimate and was supplied from library defaults, so the simulated profile depends on values unsupported by this paper; Tlag was also defaulted. Covariate scenarios were not simulated: only the base model was simulated, not the covariate effects defined in the record. A reported unit could not be converted to SI, and a second reader disputed the record, reporting CL 10.4 versus 3.5 L/h, absorption rate constant 2.31 versus 12.2 h−1, and volume 218 versus 3.6 L; the reader also marked the dose compound and primary analyte as unknown. Extracted — bisoprolol: kabs 12.2 h -1, CL 3.5 L/h, V 3.6 L, add_error 49.9 ng/mL.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (add_error), so that value has no SI equivalent. Extracted — bisoprolol: kabs 12.2 h -1, CL 3.5 L/h, V 3.6 L, add_error 49.9 ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bisoprolol, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -176,7 +176,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

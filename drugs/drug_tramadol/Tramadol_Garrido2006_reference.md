@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Tramadol’s clearance is reported as 15.2 l/h, but the record was rejected because its measured output and parent–metabolite topology were represented incorrectly.
+> T3_output_variable; t3_topology_template.
 
 <div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Garrido2006_reference" status="rejected" stale="false" population="pediatric patients" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -50,13 +50,13 @@ Garrido MJ, Habre W, Rombout F, Trocóniz IF. Population pharmacokinetic/pharmac
 
 ### Reviewer guidance
 
-**Tramadol’s clearance is reported as 15.2 l/h, but the record was rejected because its measured output and parent–metabolite topology were represented incorrectly.**
+**T3_output_variable; t3_topology_template.**
 
-Only the abstract was read, so its summary statistics stood in for a fitted model; the reported tramadol parameters include V1/F of 8 l and Vss of 46.2 l. The measured analyte was tramadol, but the output was assigned to the central compartment, and the parent–metabolite structure was represented as a one-compartment enteral model. Tlag was defaulted rather than explicitly estimated, and the apparent parameterization assumed F=1 and Fm=1 with no molar correction; the second reader considered the dose compound and primary analyte unknown and did not confirm the reported volume and clearance values. Extracted — tramadol: V1/F 8 l, Vss 46.2 l, CL 15.2 l/h, kabs 0.65 1/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tramadol: V1/F 8 l, Vss 46.2 l, CL 15.2 l/h, kabs 0.65 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tramadol, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

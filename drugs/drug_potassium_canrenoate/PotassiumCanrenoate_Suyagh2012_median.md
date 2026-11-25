@@ -151,16 +151,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.417, 0 of 1 reader(s) agree | 0.417 | cross-check agreement 0.417 is below 0.5: verdict partial, agreement 0.417, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | pass | 11.2 | 10.22 | 0.9127 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.13 | 10.22 | 78.63 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.13 | 10.22 | 78.63 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 12.09 | 10.22 | 0.8455 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 4.38 | 10.22 | 2.334 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 19.57 | 10.22 | 0.5223 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 12.12 | 10.22 | 0.8434 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 4.14 | 10.22 | 2.469 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 19.58 | 10.22 | 0.5221 | hr→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict partial; agreement 0.417 (5 of 12 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.417 | cross-check agreement 0.417 is below 0.5: verdict partial; agreement 0.417 (5 of 12 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | pass | 11.2 | 10.22 | 0.9127 | reported 11.2 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.13 | 10.22 | 78.63 | reported 0.13 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.13 | 10.22 | 78.63 | reported 7.8 min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 12.09 | 10.22 | 0.8455 | reported 12.09 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 4.38 | 10.22 | 2.334 | reported 4.38 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 19.57 | 10.22 | 0.5223 | reported 19.57 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 12.12 | 10.22 | 0.8434 | reported 12.12 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 4.14 | 10.22 | 2.469 | reported 4.14 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 19.58 | 10.22 | 0.5221 | reported 19.58 hr→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -55,7 +55,7 @@ Fruquintinib is a vascular endothelial growth factor receptor tyrosine kinase in
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:56 | 9:19 | 1/7/0 | 0/0/0 | 0/0/0 | 284,784/41,318 | openai / gpt-6-luna | 6 | 0/2 | 6/0 | 0 |
+| 2026-11-23 21:47 | 0:04 | 1/7/0 | 0/0/0 | 0/0/0 | 3,838/159 | einfracz / qwen3.8-27b | 6 | 0/3 | 6/0 | 0 |
 
 ## Coverage
 
@@ -68,6 +68,20 @@ Fruquintinib is a vascular endothelial growth factor receptor tyrosine kinase in
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Aref_2026 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic and cytotoxicity study of novel quinazoline derivatives, not a PK study of fruquintinib. |
+| PGx | Aref_2026 | not_relevant | 0 | 0 | The paper describes the synthesis and in vitro screening of novel compounds, not the pharmacogenomics of fruquintinib. |
+| popPK | Fang_2023 | irrelevant | 3 | 0 | This is a drug-drug interaction study focusing on warfarin's PK in rats, where fruquintinib is a co-administered agent, and no quantitative PK parameters (CL, V, etc.) for fruquintinib itself are reported. |
+| PGx | Fang_2023 | not_relevant | 0 | 0 | The study investigates drug-drug interactions between fruquintinib and warfarin, not the impact of genetic variants (pharmacogenomics) on fruquintinib PK/PD parameters. |
+| popPK | Gu_2014 | relevant | 9 | 1 | The study reports preclinical PK of fruquintinib but the abstract only contains qualitative ranges (bioavailability, protein binding) and lacks specific numeric values for CL, V, or Q which are likely in the excluded tables or supplementary data. |
+| PGx | Gu_2014 | not_relevant | 0 | 0 | The paper describes standard preclinical pharmacokinetics and ADME properties across multiple species without analyzing any genetic variants or pharmacogenomic effects. |
+| popPK | Gu_2026 | irrelevant | 0 | 0 | The paper is a mechanistic study of colorectal cancer biology (CTMP/REV7/CDK1 axis) and only mentions fruquintinib as part of a clinical treatment regimen or trial context, without reporting any pharmacokinetic parameters for the drug. |
+| PGx | Gu_2026 | not_relevant | 1 | 0 | The paper investigates the role of CTMP-REV7 axis in MHC-I expression and immune response in colorectal cancer, not the effect of a patient's germline genotype on the pharmacokinetics or pharmacodynamics of fruquintinib. |
+| popPK | Qi_2022 | irrelevant | 0 | 0 | Fruquintinib is only mentioned as a comparator in in-vitro cytotoxicity assays, with no pharmacokinetic parameters reported. |
+| PGx | Qi_2022 | not_relevant | 0 | 0 | The paper is a medicinal chemistry study reporting in vitro kinase and cytotoxicity data for a novel compound, with no mention of pharmacogenomics, genetic variants, or pharmacokinetic parameters. |
+| popPK | Wang_2026 | irrelevant | 0 | 0 | The paper is a drug delivery and mechanistic study (nanosystem) that uses fruquintinib as a cargo, but it does not report population-pharmacokinetic parameters (CL, V, ka, etc.) for fruquintinib. |
+| PGx | Wang_2026 | not_relevant | 0 | 0 | The paper focuses on a drug delivery nanosystem for oxaliplatin and fruquintinib, with no mention of genetic variants or pharmacogenomic effects on PK/PD. |
+| popPK | Zhang_2022 | irrelevant | 0 | 0 | The study focuses on the development of a nano-drug delivery system for tumor therapy and efficacy, not on pharmacokinetic modeling or the reporting of quantitative disposition parameters for fruquintinib. |
+| PGx | Zhang_2022 | not_relevant | 0 | 0 | The paper focuses on the development of a nano-drug delivery system for combined therapy and does not investigate pharmacogenomic effects of fruquintinib. |
 | popPK | Zhou_2025_2 | irrelevant | 1 | 1 | This is a human concentration-QTc analysis, not a disposition PK study, and reports no fruquintinib clearance, volume, or PK model parameters. |
 
 

@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Chen_2026_AP](drugs/drug_danicopan/pd_Chen_2026_AP.md) | alternative pathway (AP) activity ← danicopan · direct Emax (saturable) effect | — | Chen J et al., Population PK-PD Modeling of Danicopan…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70209](https://doi.org/10.1002/psp4.70209) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Chen_2026_AP](drugs/drug_danicopan/pd_Chen_2026_AP.md) | alternative pathway (AP) activity ← danicopan · direct Emax (saturable) effect | — | Chen J et al., Population PK-PD Modeling of Danicopan…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70209](https://doi.org/10.1002/psp4.70209) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

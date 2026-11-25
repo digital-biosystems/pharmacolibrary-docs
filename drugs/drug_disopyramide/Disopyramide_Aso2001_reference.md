@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Disopyramide absorption parameters were defaulted because the source omitted them, and a bioavailability value had an unconvertible unit preventing standardization.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="disopyramide" model-id="Disopyramide_Aso2001_reference" status="needs_review" stale="false" population="adults with arrhythmia" measured-compound="disopyramide" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Aso R, Ohashi K, Katoh T, Ogata H. Population pharmacokinetics, protein binding 
 
 ### Reviewer guidance
 
-**Disopyramide absorption parameters were defaulted because the source omitted them, and a bioavailability value had an unconvertible unit preventing standardization.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The absorption rate constant and lag time were not reported in the study, so placeholder values were used instead of explicit estimates. The paper provided an objective function value of -13.795, indicating the summary statistics stand in for a fitted model. One parameter's unit could not be converted to standard units, leaving its value unscaled. Extracted — disopyramide: kel 0.0648 h-1, V/F 63.2 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — disopyramide: kel 0.0648 h-1, V/F 63.2 L.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has dp → s(+)-dp (interconversion); dp → r(-)-dp (interconversion), the second reading none. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

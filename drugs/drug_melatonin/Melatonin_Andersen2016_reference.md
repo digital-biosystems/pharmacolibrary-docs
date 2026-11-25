@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Melatonin clearance in L/min/kg conflicts with L/h/kg, causing simulated terminal half-life and peak time to mismatch paper values.
+> The model does not reproduce the paper's terminal half-life (paper 0.1, model 2.49); the model does not reproduce the paper's time of the peak (tmax) (paper 0.68, model 0.183) (+1 more).
 
 <div class="pk-model-meta" hidden drug="melatonin" model-id="Melatonin_Andersen2016_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="melatonin" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Andersen LP, Werner MU, Rosenkilde MM, Harpsøe NG, Fuglsang H, Rosenberg J et a
 
 ### Reviewer guidance
 
-**Melatonin clearance in L/min/kg conflicts with L/h/kg, causing simulated terminal half-life and peak time to mismatch paper values.**
+**The model does not reproduce the paper's terminal half-life (paper 0.1, model 2.49); the model does not reproduce the paper's time of the peak (tmax) (paper 0.68, model 0.183) (+1 more).**
 
-The record lists melatonin clearance as 0.0218 L/min/kg alongside 5.21 L/h/kg, representing a unit inconsistency. Simulated peak time is 0.183 h versus 0.68 h in the paper, and terminal half-life is 2.49 h versus 0.1 h. A second reader disputed the clearance classification and could not confirm the 5.21 value. Extracted — melatonin: t1/2z 39.4 min, V 1.2 L/kg, CLnorm 0.0218 L/min/kg, CL 5.21 L/h/kg.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Extracted — melatonin: t1/2z 39.4 min, V 1.2 L/kg, CLnorm 0.0218 L/min/kg, CL 5.21 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl l min-1 kg-1].parameter_id`: this record has Q354, the second reading Q22; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,20 +148,20 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.778 (7 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | cross-check contradicted by a second reader: verdict disputed; agreement 0.778 (7 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 3550 | 0.0001092 |  | unresolved concentration unit (exp 'pg ml-1', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 389,875.0 | 0.0001092 |  | unresolved concentration unit (exp 'pg ml-1', sim 'kg/m3') |
-| T1_cmax | reference | skipped |  | 0.0001092 |  | non-numeric value |
-| T1_t_half_beta | reference | skipped |  | 2.488 |  | non-numeric value |
-| T1_t_half_beta | reference | fail | 0.895 | 2.488 | 2.78 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 0.6567 | 2.488 | 3.789 | min→SI vs simulated h |
-| T1_t_half_beta | reference | skipped |  | 2.488 |  | non-numeric value |
-| T1_t_half_beta | reference | fail | 0.9 | 2.488 | 2.765 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.1 | 2.488 | 24.88 | min→SI vs simulated h |
-| T1_tmax | reference | fail | 0.68 | 0.1833 | 0.2696 | min→SI vs simulated h |
-| T1_tmax | reference | fail | 0.6833 | 0.1833 | 0.2683 | min→SI vs simulated h |
-| T1_tmax | reference | skipped |  | 0.1833 |  | non-numeric value |
-| T1_tmax | reference | fail | 0.6833 | 0.1833 | 0.2683 | min→SI vs simulated h |
+| T1_cmax | reference | skipped |  | 0.0001092 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.0001092 |  | the transcribed record carries no number for this value |
+| T1_t_half_beta | reference | skipped |  | 2.488 |  | the transcribed record carries no number for this value |
+| T1_t_half_beta | reference | fail | 0.895 | 2.488 | 2.78 | reported 53.7 min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 0.6567 | 2.488 | 3.789 | reported 39.4 min→SI vs simulated h |
+| T1_t_half_beta | reference | skipped |  | 2.488 |  | the transcribed record carries no number for this value |
+| T1_t_half_beta | reference | fail | 0.9 | 2.488 | 2.765 | reported 54.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.1 | 2.488 | 24.88 | reported 6.0 min→SI vs simulated h |
+| T1_tmax | reference | fail | 0.68 | 0.1833 | 0.2696 | reported 40.8 min→SI vs simulated h |
+| T1_tmax | reference | fail | 0.6833 | 0.1833 | 0.2683 | reported 41.0 min→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 0.1833 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | fail | 0.6833 | 0.1833 | 0.2683 | reported 41.0 min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -177,15 +177,55 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_melatonin/Melatonin_Andersen2016_reference/Melatonin_Andersen2016_reference_modelica.zip" download>Melatonin_Andersen2016_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_melatonin/Melatonin_Andersen2016_reference/Melatonin_Andersen2016_reference_fmi.zip" download>Melatonin_Andersen2016_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_melatonin/Melatonin_Andersen2016_reference/Melatonin_Andersen2016_reference_matlab.zip" download>Melatonin_Andersen2016_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_melatonin/Melatonin_Andersen2016_reference/Melatonin_Andersen2016_reference_matlab_simbio.zip" download>Melatonin_Andersen2016_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_melatonin/Melatonin_Andersen2016_reference/Melatonin_Andersen2016_reference_sbml.zip" download>Melatonin_Andersen2016_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_melatonin/Melatonin_Andersen2016_reference/Melatonin_Andersen2016_reference_cellml.zip" download>Melatonin_Andersen2016_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.2323 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 1e-05 | kg |
+| input | model | `Cl` | 2.463e-05 | m3/s |
+| input | model | `VdPerKg` | 0.0012 | m3/kg |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Andersen LP, Werner MU, Rosenkilde MM, Harpsøe NG, Fuglsang H, Rosenberg J et al. Pharmacokinetics of oral and intravenous melatonin in healthy volunteers. BMC pharmacology & toxicology 17:8 (2016). [doi:10.1186/s40360-016-0052-2](https://doi.org/10.1186/s40360-016-0052-2)
+
+**This record:** Pharmacolibrary, model `Melatonin_Andersen2016_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_melatonin/Melatonin_Andersen2016_reference>
+
+```bibtex
+@misc{pharmacolibrary_MelatoninAndersen2016reference,
+  title  = {{Pharmacolibrary model Melatonin_Andersen2016_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_melatonin/Melatonin_Andersen2016_reference},
+  note   = {Parameters from doi:10.1186/s40360-016-0052-2},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

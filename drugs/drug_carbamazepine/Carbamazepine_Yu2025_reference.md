@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Carbamazepine clearance and volume were extracted from a perampanel model where carbamazepine was only a covariate.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Yu2025_reference" status="rejected" stale="false" population="" measured-compound="carbamazepine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Yu L, Mao F, Chen S, Liu J, Xiao J, Chen M et al. Development and Validation of 
 
 ### Reviewer guidance
 
-**Carbamazepine clearance and volume were extracted from a perampanel model where carbamazepine was only a covariate.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source study describes a population model for perampanel, listing carbamazepine only as a covariate for drug-drug interaction rather than the primary analyte. The record includes apparent clearance and volume for carbamazepine, but the paper does not report specific parameters for this drug as the subject. Furthermore, the absorption rate constant was not reported in the source and was defaulted during model construction. Extracted — carbamazepine: CL/F 0.177 L/h, V 227 L.
+Extracted — carbamazepine: CL/F 0.177 L/h, V 227 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q315: this record has 0.13, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

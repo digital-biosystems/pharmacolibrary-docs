@@ -50,7 +50,7 @@ Hooper L, Heung M, Wang L, Matvekas A, Alikhani R, Kenes MT et al. Pharmacokinet
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of beta_cl_logtegfr_comb: this record has 0.535, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
@@ -165,7 +165,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.727 (8 of 11 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.727 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

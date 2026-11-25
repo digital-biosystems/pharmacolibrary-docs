@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The model was rejected because metabolites monoethylglycylxylidide and glycylxylidide lack a dose input path, rendering them orphan compartments.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_lha_3_sc" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -51,13 +51,13 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 ### Reviewer guidance
 
-**The model was rejected because metabolites monoethylglycylxylidide and glycylxylidide lack a dose input path, rendering them orphan compartments.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Both metabolites are defined in the central compartment but have no direct administration or upstream dose, creating unreachable nodes in the structure. A second reader disputed the metabolite names, suggesting 'megx' and 'gx' instead of the full names. Additionally, the unit ng/mL for the maximum concentration could not be converted to standard SI units, preventing a valid parameter value assignment. Extracted — lidocaine: t1/2z 1.12 h, Cmax 469 ng/mL, tmax 2.25 h, AUC∞ 1.98e+03 h × ng/mL.
+A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — lidocaine: t1/2z 1.12 h, Cmax 469 ng/mL, tmax 2.25 h, AUC∞ 1.98e+03 h × ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has lidocaine → monoethylglycylxylidide (metabolism); monoethylglycylxylidide → glycylxylidide (metabolism), the second reading lidocaine → megx (metabolism); megx → gx (metabolism). That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

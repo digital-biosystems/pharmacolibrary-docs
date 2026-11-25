@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Vmax for the metabolite has a mass-flow unit incompatible with its pharmacokinetic role.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit μg/d ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="patritumab deruxtecan" model-id="PatritumabDeruxtecan_Lu2023_mean" status="rejected" stale="false" population="patients with HER3-expressing solid tumors" measured-compound="patritumab_deruxtecan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -57,13 +57,13 @@ Lu Y, Shimizu S, Sawamura R, Tajima N, He L, Lee M et al. Population Pharmacokin
 
 ### Reviewer guidance
 
-**Vmax for the metabolite has a mass-flow unit incompatible with its pharmacokinetic role.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit μg/d ([mass] / [time]) vs [mass] / [time].**
 
-The parameter Vmax, described as the maximum rate of metabolism, carries the unit μg/d. This unit is dimensionally inconsistent with a volumetric clearance metric, triggering a structural check failure. Consequently, the record was rejected due to this dimensional mismatch. Extracted — patritumab deruxtecan: CL 0.342 L/d, V1 2.94 L, Vmax 4.35e+03 μg/d, Km 576 ng/mL, Q 0.443 L/d, V2 5.37 L; deruxtecan: kfm 0.03 1/h, CL 5.71 L/h, kel 0.18 1/h.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — patritumab deruxtecan: CL 0.342 L/d, V1 2.94 L, Vmax 4.35e+03 μg/d, Km 576 ng/mL, Q 0.443 L/d, V2 5.37 L; deruxtecan: kfm 0.03 1/h, CL 5.71 L/h, kel 0.18 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has patritumab_deruxtecan, the second reading patritumab deruxtecan; it also differs on 28 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

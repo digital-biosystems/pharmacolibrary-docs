@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;sulpiride&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/&quot;},{&quot;label&quot;:&quot;Helmy_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulpiride_Bressolle1984_reference&quot;,&quot;label&quot;:&quot;Bressolle_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Peris_1988_3H_ASP_release&quot;,&quot;label&quot;:&quot;Peris_1988 \u00b7 [3H]ASP release&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/pd_Peris_1988_3H_ASP_release.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulpiride_Bressolle1984_reference&quot;,&quot;label&quot;:&quot;Bressolle_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The peripheral volume of distribution for sulpiride is reported as 392.0 L/kg, a physiologically implausible unit and value that conflicts with the central volume of 45.1 L.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="sulpiride" model-id="Sulpiride_Helmy2013_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="sulpiride" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="sulpiride" model-id="Sulpiride_Helmy2013_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="sulpiride" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Helmy SA. Therapeutic drug monitoring and pharmacokinetic compartmental analysis of sulpiride double-peak absorption profile after oral administration to human volunteers. Biopharmaceutics & drug disposition 34(5):288–301 (2013).
@@ -17,34 +17,23 @@ Helmy SA. Therapeutic drug monitoring and pharmacokinetic compartmental analysis
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = 16.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
-**Structure:** 2-compartment; no model was built for this record.  
-**Parameterization:** CL/F, V/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 10 extracted.  
+**Structure:** 1-compartment; no model was built for this record.  
+**Parameterization:** CL/F, V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| k | kel | 0.079 | h(-1) |
-| t1/2 | t1/2z | 9.0 | h |
-| Vd /F | V/F | 330.5 | L |
-| Cl/F | CL/F | 38.2 | L/h |
-| AUC0→∞ | AUC∞ | 1402.5 | ng.h/mL |
-| k21 | k21 | 0.68 | h(-1) |
-| ka1 | kabs | 0.7 | h(-1) |
-| Vc/F | V1/F | 45.1 | L |
-| α | λ1 | 33.3 | h(-1) |
-| Vp,sul/F | V2/F | 392.0 | L/kg |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.929). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,66 +43,65 @@ Helmy SA. Therapeutic drug monitoring and pharmacokinetic compartmental analysis
 
 ### Reviewer guidance
 
-**The peripheral volume of distribution for sulpiride is reported as 392.0 L/kg, a physiologically implausible unit and value that conflicts with the central volume of 45.1 L.**
+**The paper reports none of the model's key parameters.**
 
-The record lists the peripheral compartment volume of distribution for sulpiride as 392.0 L/kg, whereas the central compartment volume is 45.1 L. The peripheral value’s unit of L/kg is inconsistent with the central volume’s unit of L and yields a non-physiological magnitude. Additionally, the review notes the peripheral compartment was unreachable from the dose, and the model relied solely on abstract-only summary statistics rather than fitted data. Extracted — sulpiride: kel 0.079 h(-1), t1/2z 9 h, V/F 330 L, CL/F 38.2 L/h, AUC∞ 1.4e+03 ng.h/mL, k21 0.68 h(-1), kabs 0.7 h(-1), V1/F 45.1 L, … (+2).
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of vp,sul/f: this record has 392.0, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc0-inf].value`: this record has none, the second reading 1402.5; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
-### All parameter columns
+### Unresolved rows _(no Q-code or no value — not parameters)_
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| k | `Q47` · kel | 0.079 | h(-1) | 2.194e-05 | 1/s | 1/h | exact (1) | Helmy_2013:abstract |
-| t1/2 | `Q57` · t1/2z | 9.0 | h | 3.24e+04 | s | h | exact (1) | Helmy_2013:abstract |
-| Vd /F | `Q76` · V/F | 330.5 | L | 0.3305 | m3 | l | space_fold (0.95) | Helmy_2013:abstract |
-| Cl/F | `Q27` · CL/F | 38.2 | L/h | 1.061e-05 | m3/s | l/h | exact (1) | Helmy_2013:abstract |
-| AUC0→∞ | `Q17` · AUC∞ | 1402.5 | ng.h/mL |  |  | (h·ng)/ml | exact (1) | Helmy_2013:abstract |
-| k21 | `Q302` · k21 | 0.68 | h(-1) | 0.0001889 | 1/s | 1/h | exact (1) | Helmy_2013:abstract |
-| ka1 | `Q49` · kabs | 0.7 | h(-1) | 0.0001944 | 1/s | 1/h | llm (0.6) | Helmy_2013:abstract |
-| Vc/F | `Q290` · V1/F | 45.1 | L | 0.0451 | m3 | l | exact (1) | Helmy_2013:abstract |
-| α | `Q67` · λ1 | 33.3 | h(-1) |  |  | 1/h | exact (1) | Helmy_2013:abstract |
-| Vp,sul/F | `Q82` · V2/F | 392.0 | L/kg | 27.44 | m3 | L | review_gapfill (0.7) | Yao_2019:review |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+| label (paper) | Q-code | link |
+|---|---|---|
+| k | Q47 | exact |
+| t1/2 | Q57 | half_life_rule |
+| Vd /F | Q76 | space_fold |
+| Cl/F | Q27 | exact |
+| AUC0→∞ | Q17 | exact |
+| k21 | Q302 | exact |
+| ka1 | Q49 | llm |
+| ka2 | Q68 | llm |
+| Vc/F | Q290 | exact |
+| α | Q67 | exact |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q49 ('ka2', value 2.7) — already have one for this compound
-- unit_dimension_mismatch: 'α' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
-- dropped duplicate Q47 ('β', value 0.11) — already have one for this compound
+- dropped duplicate Q47 ('β', value None) — already have one for this compound
 - covariate category for tlag from footnote/prose kept as documentation only (['Helmy_2013:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=sulpiride
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- 1C volume Q290 kept: Q76 already present — review duplicate volume
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q82 (V2/F) from Yao_2019's review values (primary lacked it)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Helmy_2013_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.929 (13/14 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.286 (4/14 fields) | 10 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[vp,sul/f]` | 392.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf].value` |  | 1402.5 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f].value` |  | 38.2 | mismatch |
+| `gpt-oss-120b` | `parameters[k21].value` |  | 0.68 | mismatch |
+| `gpt-oss-120b` | `parameters[k].value` |  | 0.079 | mismatch |
+| `gpt-oss-120b` | `parameters[ka1].value` |  | 0.7 | mismatch |
+| `gpt-oss-120b` | `parameters[ka2]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2].value` |  | 9.0 | mismatch |
+| `gpt-oss-120b` | `parameters[vc/f].value` |  | 45.1 | mismatch |
+| `gpt-oss-120b` | `parameters[vd /f].value` |  | 330.5 | mismatch |
+| `gpt-oss-120b` | `parameters[α].value` |  | 33.3 | mismatch |
 
 </details>
 
@@ -127,9 +115,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 9 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
+| C0_has_structural_params | fail |  | 0 |  |
+| C0b_disposition_core | fail |  |  |  |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Helmy_2013:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Helmy_2013:abstract'] |
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['Helmy_2013:abstract'] |
@@ -137,15 +124,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Helmy_2013:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Helmy_2013:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Helmy_2013:abstract'] |
-| C5_dimension_Q67 | fail | 1 / [time] | h(-1) (1 / [time]) | ['Helmy_2013:abstract'] |
+| C5_dimension_Q67 | pass | 1 / [time] |  | ['Helmy_2013:abstract'] |
+| C5_dimension_Q68 | pass | 1 / [time] |  | ['Helmy_2013:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Helmy_2013:abstract'] |
-| C5_dimension_Q82 | pass | [length] ** 3 |  | ['Yao_2019:review'] |
 | C7_apparent_coherence | pass |  |  |  |
-| C8_topology | fail |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 38.2 L/h | ['Helmy_2013:abstract'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 45.1 L | ['Helmy_2013:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 330 L | ['Helmy_2013:abstract'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 2.74e+04 L | ['Yao_2019:review'] |
+| C8_topology | pass |  |  |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -169,4 +152,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulpiride%5D%20Sulpiride_Helmy2013_reference&body=Drug%3A%20sulpiride%0ARecord%3A%20Sulpiride_Helmy2013_reference%0APaper%3A%20Helmy_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulpiride/Sulpiride_Helmy2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 17:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:32 UTC</sub>

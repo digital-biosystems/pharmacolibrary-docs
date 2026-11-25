@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the unit for λ1 conflicts with its dimension, while other parameters lack values or SI conversions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Nelson1980_reference" status="rejected" stale="false" population="adults with cancer" measured-compound="vinblastine" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Nelson RL, Dyke RW, Root MA. Comparative pharmacokinetics of vindesine, vincrist
 
 ### Reviewer guidance
 
-**The record was rejected because the unit for λ1 conflicts with its dimension, while other parameters lack values or SI conversions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h ([time]) vs 1 / [time].**
 
-The unit 'h' (time) for λ1 was flagged as a dimension mismatch against the required reciprocal time. The second reader identified missing values for several rate constants and the volume of distribution. Additionally, the unit for the volume of distribution adjusted for bioavailability could not be converted to standard SI units. Extracted — vinblastine: λ1 0.037 h, t1/2β 0.912 h, t1/2γ 24.2 h, k31 0.098 1/h, Km 0.527, V/F 0.054.
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — vinblastine: λ1 0.037 h, t1/2β 0.912 h, t1/2γ 24.2 h, k31 0.098 1/h, Km 0.527, V/F 0.054.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

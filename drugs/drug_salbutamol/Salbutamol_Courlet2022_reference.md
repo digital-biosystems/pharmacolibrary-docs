@@ -151,11 +151,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['kcomp'] |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.857 (12 of 14 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped | 200 | 3.576e-06 |  | unresolved concentration unit (exp 'µg q.i.d.', sim 'kg/m3') |
-| T1_tmax | reference | fail | 0.17 | 0.3006 | 1.768 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1.8 | 0.3006 | 0.167 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1.45 | 0.3006 | 0.2073 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.17 | 0.3006 | 1.768 | reported 0.17 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.8 | 0.3006 | 0.167 | reported 1.8 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.45 | 0.3006 | 0.2073 | reported 1.45 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

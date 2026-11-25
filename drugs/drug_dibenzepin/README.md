@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Zahradník_2008_I_Ca_inhibition](drugs/drug_dibenzepin/pd_Zahradn_k_2008_I_Ca_inhibition.md) | L-type calcium channel current inhibition (I_Ca block) ← dibenzepin · direct sigmoid Emax (Hill) effect | — | Zahradník I et al., Inhibition of the cardiac L-type calciu…, The Journal of pharmacology… (2008) | [10.1124/jpet.107.132456](https://doi.org/10.1124/jpet.107.132456) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Zahradník_2008_I_Ca](drugs/drug_dibenzepin/pd_Zahradn_k_2008_I_Ca.md) | I(Ca) ← dibenzepin · inhibition effect | — | Zahradník I et al., Inhibition of the cardiac L-type calciu…, The Journal of pharmacology… (2008) | [10.1124/jpet.107.132456](https://doi.org/10.1124/jpet.107.132456) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 22:50 | 0:20 | 0/0/0 | 0/1/0 | 0/0/0 | 6,328/418 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 20:02 | 0:13 | 0/0/0 | 0/1/0 | 0/0/0 | 6,385/1,662 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -50,8 +50,11 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Gauch_1973 | irrelevant | 0 | 0 | no_text gate: only 32 chars of text extracted (&lt; 400) |
-| popPK | Miyakawa_1986 | irrelevant | 0 | 0 | In-vitro electrophysiology study in canine Purkinje fibers with no PK disposition parameters for dibenzepin. |
-| popPK | Zahradník_2008 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of calcium channel inhibition and does not report pharmacokinetic parameters for dibenzepin. |
+| PGx | Gauch_1973 | not_relevant | 1 | 1 | The paper title indicates a general pharmacokinetic study of dibenzepin, but the provided text contains no information regarding gene variants or pharmacogenomic influences on PK/PD parameters. |
+| popPK | Miyakawa_1986 | irrelevant | 0 | 0 | The study describes electrophysiologic actions on canine Purkinje fibers, not pharmacokinetic disposition parameters. |
+| PGx | Miyakawa_1986 | not_relevant | 0 | 0 | The paper studies the electrophysiologic effects of dibenzepin in normal canine Purkinje fibers without any analysis of genetic variants or pharmacogenomics. |
+| popPK | Zahradník_2008 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium channel inhibition, reporting IC50 values rather than pharmacokinetic disposition parameters. |
+| PGx | Zahradník_2008 | not_relevant | 0 | 0 | The paper reports in vitro channel inhibition properties (IC50) of dibenzepin but does not investigate genetic variants or pharmacogenomic effects. |
 
 
 </details>

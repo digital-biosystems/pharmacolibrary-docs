@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> Clomipramine’s Css (340 micrograms) and AUCSS (1055 micrograms) use mass-only units inconsistent with their concentration and concentration–time meanings, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q34 unit micrograms ([mass]) vs [mass] / [length] ** 3; Q18 unit micrograms ([mass]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="clomipramine" model-id="Clomipramine_NielsenKudsk1980_reference" status="rejected" stale="false" population="isolated perfused rabbit hearts" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Nielsen-Kudsk F, Quist S. Myocardial pharmacokinetics of amitriptyline and clomi
 
 ### Reviewer guidance
 
-**Clomipramine’s Css (340 micrograms) and AUCSS (1055 micrograms) use mass-only units inconsistent with their concentration and concentration–time meanings, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q34 unit micrograms ([mass]) vs [mass] / [length] ** 3; Q18 unit micrograms ([mass]) vs [mass] * [time] / [length] ** 3.**
 
-Css is defined as steady-state drug concentration and AUCSS as concentration–time area, but each is recorded in micrograms, a mass unit. The record came from the abstract alone, so reported summary statistics stood in for a fitted model. The half-life entry is assigned to clomipramine but its label names amitriptyline; the second reader also marked the compound and analyte as unknown and disagreed about the parameter entries. Extracted — clomipramine: t1/2z 37.7 min, Css 340 micrograms, AUCSS 1.06e+03 micrograms.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clomipramine: t1/2z 37.7 min, Css 340 micrograms, AUCSS 1.06e+03 micrograms.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clomipramine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -149,4 +149,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclomipramine%5D%20Clomipramine_NielsenKudsk1980_reference&body=Drug%3A%20clomipramine%0ARecord%3A%20Clomipramine_NielsenKudsk1980_reference%0APaper%3A%20Nielsen-Kudsk_1980%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clomipramine/Clomipramine_NielsenKudsk1980_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:16 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 20:51 UTC</sub>

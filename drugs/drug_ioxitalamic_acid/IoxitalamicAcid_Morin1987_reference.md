@@ -8,16 +8,14 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="ioxitalamic acid" model-id="IoxitalamicAcid_Morin1987_reference" status="rejected" stale="false" population="male and female rabbits" measured-compound="ioxitalamic acid, ioxaglic acid, iohexol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ioxitalamic acid" model-id="IoxitalamicAcid_Morin1987_reference" status="rejected" stale="false" population="rabbits" measured-compound="ioxitalamic_acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Morin JP, Boutelet I, Toutain H, Fillastre JP. [Comparative pharmacokinetics and renal accumulation of the iodized contrast media: ioxitalamic acid, ioxaglic acid and iohexol in the rabbit]. Pathologie-biologie 35(9):1215–1220 (1987).
 
 ## Population and dosing
 
-**Population:** male and female rabbits · condition healthy rabbits.
-
-**Dosed compound ≠ measured compound:** dosed ioxitalamic acid, ioxaglic acid, iohexol (separate groups), measured ioxitalamic acid, ioxaglic acid, iohexol.
+**Population:** rabbits · condition healthy.
 
 > **Species: rabbit.** This record comes from an animal study (rabbit), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -35,7 +33,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,33 +47,35 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has ioxitalamic acid, ioxaglic acid, iohexol (separate groups), the second reading ioxitalamic acid; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ioxitalamic_acid, the second reading ioxitalamic acid, ioxaglic acid, iohexol; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ioxitalamic acid, ioxaglic acid, iohexol
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ioxitalamic_acid
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Morin_1987_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 | `qwen3.8-27b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `screen.dose_compound` | ioxitalamic_acid | ioxitalamic acid, ioxaglic acid, iohexol | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ioxitalamic_acid | ioxitalamic acid | mismatch |
 | `qwen3.8-27b` | `screen.dose_compound` | ioxitalamic acid, ioxaglic acid, iohexol (separate groups) | ioxitalamic acid | mismatch |
 | `qwen3.8-27b` | `screen.primary_analyte` | ioxitalamic acid, ioxaglic acid, iohexol | ioxitalamic acid | mismatch |
 
@@ -117,4 +117,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bioxitalamic_acid%5D%20IoxitalamicAcid_Morin1987_reference&body=Drug%3A%20ioxitalamic_acid%0ARecord%3A%20IoxitalamicAcid_Morin1987_reference%0APaper%3A%20Morin_1987%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ioxitalamic_acid/IoxitalamicAcid_Morin1987_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:15 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:47 UTC</sub>

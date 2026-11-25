@@ -209,8 +209,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.88, 0 of 1 reader(s) agree | 0.88 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 0.00146 | 0.0001739 | 0.1191 | μg/L→SI vs simulated kg/m3 |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.88 (22 of 25 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.88 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 0.00146 | 0.0001739 | 0.1191 | reported 1460.0 μg/L→SI vs simulated kg/m3 |
 
 <details class="legend">
 <summary>Validation definitions</summary>

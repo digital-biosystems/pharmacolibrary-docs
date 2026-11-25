@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The review rejected the record because the extracted volume of distribution value of 10 L h−1 is physiologically implausible due to a unit extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Cai2022_reference" status="rejected" stale="false" population="" measured-compound="methylprednisolone" parameterization="apparent" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Cai XJ, Li RD, Li JH, Tao YF, Zhang QB, Shen CH et al. Prospective population ph
 
 ### Reviewer guidance
 
-**The review rejected the record because the extracted volume of distribution value of 10 L h−1 is physiologically implausible due to a unit extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The volume of distribution is reported as 10 L h−1, which is dimensionally incorrect for a volume parameter and triggers a failure for implausible magnitude. Additionally, the second reader disagrees with the clearance value of 456 L h−1, reporting 64.4 instead. There is also a discrepancy regarding a value of 10 versus 10700, indicating significant uncertainty in the extracted data. Extracted — methylprednisolone: CL/F 456 L h−1, V/F 10 L h−1, kabs 4.48 h−1.
+Extracted — methylprednisolone: CL/F 456 L h−1, V/F 10 L h−1, kabs 4.48 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 16.8, the second reading 64.4; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

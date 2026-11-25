@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for homoarginine was held back because a reference comparison could not be computed, rendering the review inconclusive.
+> C2_reference failed (ratio None).
 
 <div class="pk-model-meta" hidden drug="amino acids" model-id="AminoAcids_Kleist2022_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="homoarginine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Kleist CJ, Choe CU, Atzler D, Schönhoff M, Böger R, Schwedhelm E et al. Popula
 
 ### Reviewer guidance
 
-**The record for homoarginine was held back because a reference comparison could not be computed, rendering the review inconclusive.**
+**C2_reference failed (ratio None).**
 
-The record defines clearance and a peripheral volume for a one-compartment structure, yet the reference check failed without producing a numerical ratio. Consequently, no specific parameter value or molecule is demonstrated to be incorrect. A second reader also disagreed on the recorded parameter identifier for the peripheral volume of distribution, noting a mismatch with the label. Extracted — homoarginine: V 0.092 ml g−1.
+None of the extracted parameters is amino acids's own; they describe homoarginine. Extracted — homoarginine: V 0.092 ml g−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clearance, cl = θ1 × (ibw/75)^θ7 [l/h]].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

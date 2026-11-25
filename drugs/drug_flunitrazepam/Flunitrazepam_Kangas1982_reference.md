@@ -7,22 +7,22 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
+> Only clearance was extracted — no volume; the clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="flunitrazepam" model-id="Flunitrazepam_Kangas1982_reference" status="needs_review" stale="false" population="adults undergoing otologic surgery" measured-compound="flunitrazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flunitrazepam" model-id="Flunitrazepam_Kangas1982_reference" status="needs_review" stale="false" population="patients undergoing otologic operations" measured-compound="flunitrazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kangas L, Kanto J, Pakkanen A. A pharmacokinetic and pharmacodynamic study of flunitrazepam. International journal of clinical pharmacology, therapy, and toxicology 20(12):585–588 (1982).
 
 ## Population and dosing
 
-**Population:** adults undergoing otologic surgery · condition anesthesia (otologic surgery) · age group adult · n = 12.
+**Population:** patients undergoing otologic operations · condition otologic surgery · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -30,14 +30,12 @@ Kangas L, Kanto J, Pakkanen A. A pharmacokinetic and pharmacodynamic study of fl
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| mean elimination half-life | t1/2z | 25 | h |
+| elimination half-life | t1/2z | 25 | h |
 | serum clearance | CL | 94 | ml/min |
-| V (M3G compartment) | V | 7.65 | L |
-| Ka (subcutaneous injection) | kabs | 10.0 | h−1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +45,11 @@ Kangas L, Kanto J, Pakkanen A. A pharmacokinetic and pharmacodynamic study of fl
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete; the clearance plausibility check could not be computed.**
+**Only clearance was extracted — no volume; the clearance plausibility check could not be computed.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Franken_2016) cannot stand in for this paper's evidence. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — flunitrazepam: t1/2z 25 h, CL 94 ml/min, V 7.65 L, kabs 10 h−1.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — flunitrazepam: t1/2z 25 h, CL 94 ml/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 10.0, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of elimination half-life: this record has 25, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,10 +57,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| mean elimination half-life | `Q57` · t1/2z | 25 | h | 9e+04 | s | h | llm (0.6) | Kangas_1982:abstract |
+| elimination half-life | `Q57` · t1/2z | 25 | h | 9e+04 | s | h | half_life_rule (0.95) | Kangas_1982:abstract |
 | serum clearance | `Q22` · CL | 94 | ml/min | 1.567e-06 | m3/s | ml/min | llm_confirmed (0.6) | Kangas_1982:abstract |
-| V (M3G compartment) | `Q61` · V | 7.65 | L | 0.00765 | m3 | L | review_gapfill (0.7) | Franken_2016:review |
-| Ka (subcutaneous injection) | `Q49` · kabs | 10.0 | h−1 | 0.002778 | 1/s | 1/h | review_gapfill (0.7) | Franken_2016:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -74,30 +70,25 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=flunitrazepam
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Franken_2016's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Franken_2016's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Kangas_1982_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.667 (6/9 fields) | 3 |
+| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[ka]` | 10.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean elimination half-life].parameter_id` | Q57 | Q60 | mismatch |
-| `gpt-oss-120b` | `parameters[v]` | 7.65 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life]` | 25 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean elimination half-life]` |  | 25 | only_one_extracted |
 
 </details>
 
@@ -115,13 +106,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kangas_1982:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Franken_2016:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Kangas_1982:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Franken_2016:review'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 94 | ['Kangas_1982:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 5.64 L/h | ['Kangas_1982:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 7.65 L | ['Franken_2016:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -155,4 +143,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflunitrazepam%5D%20Flunitrazepam_Kangas1982_reference&body=Drug%3A%20flunitrazepam%0ARecord%3A%20Flunitrazepam_Kangas1982_reference%0APaper%3A%20Kangas_1982%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flunitrazepam/Flunitrazepam_Kangas1982_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:40 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:22 UTC</sub>

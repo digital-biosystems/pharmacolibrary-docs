@@ -134,9 +134,9 @@ _All readers agree on the compared fields of this record._
 | T1_cmax | reference | skipped | 807 | 0.01262 |  | unresolved concentration unit (exp 'nM', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 726 | 0.01262 |  | unresolved concentration unit (exp 'nM', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 645.5 | 0.01262 |  | unresolved concentration unit (exp 'nM', sim 'kg/m3') |
-| T1_t_half_terminal | reference | fail | 29.36 | 4.303 | 0.1466 | h→SI vs simulated h |
-| T1_tmax | reference | skipped |  | 0.1833 |  | non-numeric value |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 29.36 | 4.303 | 0.1466 | reported 29.36 h→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 0.1833 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

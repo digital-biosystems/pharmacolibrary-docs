@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Metamizole sodium’s reported CL/F of 0.314 L/h is unsupported because the paper concerns another drug, so this record was rejected.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="metamizole sodium" model-id="MetamizoleSodium_Stoschus2025_reference" status="rejected" stale="false" population="" measured-compound="metamizole_sodium" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Stoschus M, Schmidbauer ML, Starp J, Kunst S, Gakis G, Paal M et al. Optimizing 
 
 ### Reviewer guidance
 
-**Metamizole sodium’s reported CL/F of 0.314 L/h is unsupported because the paper concerns another drug, so this record was rejected.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper’s title and abstract do not name metamizole sodium, and the relevance assessment identified the paper as concerning another drug. The model builder had no explicit estimate for the absorption lag time (Tlag) and assumed bioavailability and metabolite formation fractions of 1, with no molar correction. Extracted — metamizole sodium: CL/F 0.314 L/h, V 34.3 L, kabs 1.9 h−1.
+Extracted — metamizole sodium: CL/F 0.314 L/h, V 34.3 L, kabs 1.9 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q319: this record has 78.5, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

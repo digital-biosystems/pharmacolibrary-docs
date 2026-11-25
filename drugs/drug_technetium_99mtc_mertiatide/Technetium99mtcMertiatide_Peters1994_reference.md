@@ -142,4 +142,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btechnetium_99mtc_mertiatide%5D%20Technetium99mtcMertiatide_Peters1994_reference&body=Drug%3A%20technetium_99mtc_mertiatide%0ARecord%3A%20Technetium99mtcMertiatide_Peters1994_reference%0APaper%3A%20Peters_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_technetium_99mtc_mertiatide/Technetium99mtcMertiatide_Peters1994_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 19:07 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:08 UTC</sub>

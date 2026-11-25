@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The source paper does not study fenofibrate, so its parameters do not describe the intended drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="fenofibrate" model-id="Fenofibrate_Zhang2024_reference" status="rejected" stale="false" population="" measured-compound="fenofibrate" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Zhang C, Jiang L, Hu K, Zhang YJ, Han J, Chen J et al. Drug-drug interaction and
 
 ### Reviewer guidance
 
-**The source paper does not study fenofibrate, so its parameters do not describe the intended drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The relevance screen rejected the paper because neither the title nor the abstract names fenofibrate, identifying it as the wrong drug subject. Consequently, the listed clearance, volume, and absorption values do not correspond to fenofibrate pharmacokinetics. A second reader also disagreed on a missing parameter value, further undermining the record's validity. Extracted — fenofibrate: CL/F 3.23 L/h, V/F 157 L, kabs 1.06 /h.
+Extracted — fenofibrate: CL/F 3.23 L/h, V/F 157 L, kabs 1.06 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q314: this record has none, the second reading 0.233. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.857 (6 of 7 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

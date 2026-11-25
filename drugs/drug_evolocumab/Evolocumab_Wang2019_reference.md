@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption rate, volume of distribution, and clearance values are summary statistics from the abstract, not fitted estimates, and bioavailability defaults lack paper support.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="evolocumab" model-id="Evolocumab_Wang2019_reference" status="needs_review" stale="false" population="Caucasian and Asian populations" measured-compound="evolocumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Wang C, Zheng Q, Zhang M, Lu H. Lack of ethnic differences in the pharmacokineti
 
 ### Reviewer guidance
 
-**Absorption rate, volume of distribution, and clearance values are summary statistics from the abstract, not fitted estimates, and bioavailability defaults lack paper support.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record relies on abstract-only data, using summary statistics to represent the pharmacokinetic parameters for evolocumab. The absorption rate of 0.245 day-1, volume of 2.75 L, and clearance of 0.24 L day-1 are not direct model estimates. Additionally, the second reader identified missing volume and absorption rate values, contradicting the extracted figures. Extracted — evolocumab: CL 0.24 l day-1, V 2.75 l, kabs 0.245 1/day.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — evolocumab: CL 0.24 l day-1, V 2.75 l, kabs 0.245 1/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 0.245, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.625 (5 of 8 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.625 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

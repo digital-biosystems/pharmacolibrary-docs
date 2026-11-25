@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant was recorded with an incompatible unit, causing the model to be rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit nmol/hr ([substance] / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="selumetinib" model-id="Selumetinib_Patel2017_reference" status="rejected" stale="false" population="adults with advanced solid tumors and children with recurrent low-grade gliomas" measured-compound="selumetinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -59,13 +59,13 @@ Patel YT, Daryani VM, Patel P, Zhou D, Fangusaro J, Carlile DJ et al. Population
 
 ### Reviewer guidance
 
-**The absorption rate constant was recorded with an incompatible unit, causing the model to be rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit nmol/hr ([substance] / [time]) vs 1 / [time].**
 
-The record lists kabs with a value of 0.622 and units of nmol/hr. A dimension check flagged that these units, representing amount over time, conflict with the rate constant's requirement for inverse time. Additionally, a second reader could not confirm the values for the first six parameters, which were otherwise extracted from the paper. Extracted — selumetinib: kabs 0.622 nmol/hr, tlag 0.319 hr, CL 13.5 L/hr, V1 32.6 L, V2 55 L, Q 8.2 L/hr; N-desmethyl-selumetinib: V1 1.37 L, Q 240 L/hr, CL 49.5 L/hr, V2 413 L, CLfm 0.274 L/hr, fm 0.908.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — selumetinib: kabs 0.622 nmol/hr, tlag 0.319 hr, CL 13.5 L/hr, V1 32.6 L, V2 55 L, Q 8.2 L/hr; N-desmethyl-selumetinib: V1 1.37 L, Q 240 L/hr, CL 49.5 L/hr, V2 413 L, CLfm 0.274 L/hr, fm 0.908.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has selumetinib, the second reading unknown; it also differs on 24 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

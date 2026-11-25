@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The ambrisentan body-weight covariate effect, valued at 1, was not tested, and a second reader disputed the recorded dose compound and primary analyte.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="ambrisentan" model-id="Ambrisentan_Okour2023_reference" status="needs_review" stale="false" population="pediatric patients with pulmonary arterial hypertension" measured-compound="ambrisentan" parameterization="apparent" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Okour M, Thapar MM, Farrell C, Lukas MA, Beghetti M, Beerahee M. Pediatric Popul
 
 ### Reviewer guidance
 
-**The ambrisentan body-weight covariate effect, valued at 1, was not tested, and a second reader disputed the recorded dose compound and primary analyte.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. The second reader marked the dose compound and primary analyte as unknown rather than ambrisentan; the cross-check was disputed, with agreement 0.882 and 0 of 1 reader agreeing. Extracted — ambrisentan: CL/F 1.17 L/hr, V1/F 12.3 L, Q/F 0.457 L/hr, V2/F 81.3 L, kabs 2.46 1/h, tlag 0.525 hr.
+The base model was simulated, not the covariate effects the record defines. Extracted — ambrisentan: CL/F 1.17 L/hr, V1/F 12.3 L, Q/F 0.457 L/hr, V2/F 81.3 L, kabs 2.46 1/h, tlag 0.525 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ambrisentan, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -165,7 +165,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.882, 0 of 1 reader(s) agree | 0.882 | cross-check disputed by a second reader: verdict disputed, agreement 0.882, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.882 (15 of 17 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.882 | cross-check contradicted by a second reader: verdict disputed; agreement 0.882 (15 of 17 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

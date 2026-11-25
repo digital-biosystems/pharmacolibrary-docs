@@ -20,21 +20,13 @@ Fosamprenovir is an antiretroviral protease inhibitor used to treat HIV/AIDS. It
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| fosamprenavir | parent | 585.607 | C25H36N3O9PS | DrugBank | [131536](https://pubchem.ncbi.nlm.nih.gov/compound/131536) | Dailly_2008 |
-| amprenavir | metabolite | 505.63 | C25H35N3O6S | PubChem | [65016](https://pubchem.ncbi.nlm.nih.gov/compound/65016) | Dailly_2008 |
+| amprenavir | metabolite | — (mass units only) | — | — | — | — |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Dailly_2008_reference](drugs/drug_fosamprenavir/Fosamprenavir_Dailly2008_reference.md) | — | 1-compartment (no model) | 1 | Dailly E et al., Impact of nevirapine or efavirenz co-ad…, Fundamental & clinical phar… (2008) | [10.1111/j.1472-8206.2007.00556.x](https://doi.org/10.1111/j.1472-8206.2007.00556.x) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Kan_2025_DENV_infectivity](drugs/drug_fosamprenavir/pd_Kan_2025_DENV_infectivity.md) | DENV infectivity ← fosamprenavir (FPV) · inhibition effect | — | Kan JY et al., Darunavir inhibits dengue virus replica…, Biochemical pharmacology (2025) | [10.1016/j.bcp.2025.116839](https://doi.org/10.1016/j.bcp.2025.116839) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Kan_2025_virus_yield](drugs/drug_fosamprenavir/pd_Kan_2025_virus_yield.md) | virus yield ← fosamprenavir (FPV) · inhibition effect | — | Kan JY et al., Darunavir inhibits dengue virus replica…, Biochemical pharmacology (2025) | [10.1016/j.bcp.2025.116839](https://doi.org/10.1016/j.bcp.2025.116839) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Dailly_2008_reference](drugs/drug_fosamprenavir/Fosamprenavir_Dailly2008_reference.md) | — | 1-compartment (no model) | 0 | Dailly E et al., Impact of nevirapine or efavirenz co-ad…, Fundamental & clinical phar… (2008) | [10.1111/j.1472-8206.2007.00556.x](https://doi.org/10.1111/j.1472-8206.2007.00556.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,38 +40,32 @@ Fosamprenovir is an antiretroviral protease inhibitor used to treat HIV/AIDS. It
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:34 | 1:25 | 1/0/0 | 2/0/0 | 0/0/0 | 38,100/7,078 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 00:09 | 0:04 | 0/1/0 | 0/0/0 | 0/0/0 | 4,098/163 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Dailly_2008.pdf` | Dailly E et al., Impact of nevirapine or efavirenz co-ad…, Fundamental & clinical phar… (2008) | popPK | 10 | [10.1111/j.1472-8206.2007.00556.x](https://doi.org/10.1111/j.1472-8206.2007.00556.x) | [18251726](https://pubmed.ncbi.nlm.nih.gov/18251726) | Population pharmacokinetics reports numeric amprenavir clearance after fosamprenavir/ritonavir dosing. |
-| `Barbour_2014.pdf` | Barbour AM et al., Population pharmacokinetic modeling and…, Journal of clinical pharmac… (2014) | popPK | 9 | [10.1002/jcph.205](https://doi.org/10.1002/jcph.205) | [25272370](https://pubmed.ncbi.nlm.nih.gov/25272370) | It models amprenavir after fosamprenavir dosing, but no numeric PK parameter values are present in the evidence. |
-
-<sub>queue written 2026-10-07 17:32 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Barbour_2014 | relevant | 9 | 0 | It models amprenavir after fosamprenavir dosing, but no numeric PK parameter values are present in the evidence. |
-| popPK | Dolton_2014 | irrelevant | 0 | 0 | Fosamprenavir is only a coadministered drug affecting posaconazole clearance; no fosamprenavir disposition parameters are reported. |
-| popPK | Jacqmin_2013 | irrelevant | 0 | 0 | Fosamprenavir is only a background-treatment covariate; no fosamprenavir disposition parameters are reported. |
-| popPK | Kan_2025 | irrelevant | 0 | 0 | Fosamprenavir is evaluated for antiviral efficacy, with no quantitative pharmacokinetic disposition parameters reported. |
+| popPK | Barbour_2014 | relevant | 10 | 3 | Study reports a population PK model for the prodrug fosamprenavir (metabolite amprenavir), but specific numeric parameter estimates (CL, V, Q) are not provided in the text. |
+| PGx | Barbour_2014 | not_relevant | 0 | 0 | The paper reports covariates such as race and age, but does not mention any genetic variants or genotypes affecting pharmacokinetic parameters. |
+| PGx | Dailly_2008 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions with nevirapine and efavirenz, not the impact of genetic variants or genotypes on pharmacokinetics. |
+| popPK | Dolton_2014 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of posaconazole, with fosamprenavir mentioned only as a co-administered drug affecting posaconazole clearance, rather than as the subject of PK parameter estimation. |
+| PGx | Dolton_2014 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of posaconazole, not fosamprenavir, and does not report genetic variants affecting PK/PD. |
+| popPK | Jacqmin_2013 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and exposure-response of maraviroc, with fosamprenavir mentioned only as a component of the background regimen (OBT) and a minor covariate. |
+| PGx | Jacqmin_2013 | not_relevant | 0 | 0 | The study analyzes the exposure-response relationship of maraviroc, not fosamprenavir, and does not report pharmacogenomic effects on fosamprenavir PK or PD. |
+| popPK | Kan_2025 | irrelevant | 0 | 0 | The study focuses on the antiviral activity and molecular docking of fosamprenavir against Dengue virus, with no pharmacokinetic parameter estimation (CL, V, ka) for the drug itself. |
+| PGx | Kan_2025 | not_relevant | 0 | 0 | The paper reports antiviral activity against dengue virus, not a pharmacogenomic effect on PK or PD parameters of fosamprenavir. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfosamprenavir%5D&body=Drug%3A%20fosamprenavir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fosamprenavir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 17:33 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 00:08 UTC</sub>

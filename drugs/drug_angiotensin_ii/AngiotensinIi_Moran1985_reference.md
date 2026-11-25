@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Angiotensin II’s reported volume of distribution, 0.5 ml/min, has an implausible magnitude or unit/scale, so the record was rejected.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="angiotensin II" model-id="AngiotensinIi_Moran1985_reference" status="rejected" stale="false" population="" measured-compound="angiotensin_ii" parameterization="apparent" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Moran SM, Myers BD. Pathophysiology of protracted acute renal failure in man. Th
 
 ### Reviewer guidance
 
-**Angiotensin II’s reported volume of distribution, 0.5 ml/min, has an implausible magnitude or unit/scale, so the record was rejected.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record gives angiotensin II an unbound clearance of 1.4 ml/min and a volume of distribution of 0.5 ml/min. The volume is reported in clearance units, consistent with the cited unit/scale extraction concern. Extracted — angiotensin ii: CLu 1.4 ml/min, V 0.5 ml/min.
+Extracted — angiotensin ii: CLu 1.4 ml/min, V 0.5 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 9.6, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

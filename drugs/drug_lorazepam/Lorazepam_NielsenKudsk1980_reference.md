@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;lorazepam&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/&quot;},{&quot;label&quot;:&quot;Nielsen-Kudsk_1980 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lorazepam_Healy2025_mean&quot;,&quot;label&quot;:&quot;Healy_2025_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Healy2025_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Healy2025_median&quot;,&quot;label&quot;:&quot;Healy_2025_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Healy2025_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_NielsenKudsk1983_reference&quot;,&quot;label&quot;:&quot;Nielsen-Kudsk_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_NielsenKudsk1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Papini2006_reference&quot;,&quot;label&quot;:&quot;Papini_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Papini2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Khakshoor2025_reference&quot;,&quot;label&quot;:&quot;Khakshoor_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Khakshoor2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Panetta2024_reference&quot;,&quot;label&quot;:&quot;Panetta_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Panetta2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2024v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2024v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2025v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_le2024_reference&quot;,&quot;label&quot;:&quot;le_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_le2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Greenblatt_2000_EEG_effect&quot;,&quot;label&quot;:&quot;Greenblatt_2000 \u00b7 EEG effect&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/pd_Greenblatt_2000_EEG_effect.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gupta_1990_TRKN&quot;,&quot;label&quot;:&quot;Gupta_1990 \u00b7 TRKN&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/pd_Gupta_1990_TRKN.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lorazepam_Chamberlain2012_reference&quot;,&quot;label&quot;:&quot;Chamberlain_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chamberlain2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Healy2025_mean&quot;,&quot;label&quot;:&quot;Healy_2025_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Healy2025_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Healy2025_median&quot;,&quot;label&quot;:&quot;Healy_2025_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Healy2025_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Khakshoor2025_reference&quot;,&quot;label&quot;:&quot;Khakshoor_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Khakshoor2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Panetta2024_reference&quot;,&quot;label&quot;:&quot;Panetta_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Panetta2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2024v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2024v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2025v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_le2024_reference&quot;,&quot;label&quot;:&quot;le_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_le2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gupta_1990_TRKN&quot;,&quot;label&quot;:&quot;Gupta_1990 \u00b7 TRKN&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/pd_Gupta_1990_TRKN.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> The steady-state and central volume of distribution parameters are recorded in dimensionless units instead of required volume units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q65 unit 1 kg-1 (dimensionless) vs [length] ** 3; Q61 unit 1 kg-1 (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_NielsenKudsk1980_reference" status="rejected" stale="false" population="rabbits" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Nielsen-Kudsk F, Jakobsen P. Disposition pharmacokinetics of lorazepam in the ra
 
 ## Population and dosing
 
-**Population:** rabbits · condition healthy · age group adult · n = 8.
+**Population:** rabbits · condition healthy · n = 8.
 
 > **Species: rabbit.** This record comes from an animal study (rabbit), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -25,7 +25,7 @@ Nielsen-Kudsk F, Jakobsen P. Disposition pharmacokinetics of lorazepam in the ra
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,17 +33,14 @@ Nielsen-Kudsk F, Jakobsen P. Disposition pharmacokinetics of lorazepam in the ra
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| t 1/2 beta | t1/2β | 73.7 | min |
+| biological half-life (t 1/2 beta) | t1/2z | 73.7 | min |
 | half-life of the alpha phase of distribution | t1/2α | 18.4 | min |
 | apparent steady state volume of distribution | Vss | 1.64 | 1 kg-1 |
 | Vc-mean | V | 1.11 | 1 kg-1 |
-| CL (70 kg patient) | CL | 68.0 | L/h |
-| Ka | kabs | 0.5 | h-1 |
-| Tlag | tlag | 0.8 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.6). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,25 +50,22 @@ Nielsen-Kudsk F, Jakobsen P. Disposition pharmacokinetics of lorazepam in the ra
 
 ### Reviewer guidance
 
-**The steady-state and central volume of distribution parameters are recorded in dimensionless units instead of required volume units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q65 unit 1 kg-1 (dimensionless) vs [length] ** 3; Q61 unit 1 kg-1 (dimensionless) vs [length] ** 3.**
 
-The record lists the apparent steady-state volume of distribution (1.64) and central volume of distribution (1.11) with units of 1 kg-1. These units are dimensionless and do not provide the volume dimension required for these parameters. Additionally, the record was built from the abstract alone, so the reported statistics stand in for a fitted model. Extracted — lorazepam: t1/2β 73.7 min, t1/2α 18.4 min, Vss 1.64 1 kg-1, V 1.11 1 kg-1, CL 68 L/h, kabs 0.5 h-1, tlag 0.8 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lorazepam: t1/2z 73.7 min, t1/2α 18.4 min, Vss 1.64 1 kg-1, V 1.11 1 kg-1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lorazepam, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent steady state volume of distribution: this record has 1.64, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| t 1/2 beta | `Q60` · t1/2β | 73.7 | min | 4422 | s | min | llm_corrected (0.6) | Nielsen-Kudsk_1980:abstract |
-| half-life of the alpha phase of distribution | `Q59` · t1/2α | 18.4 | min | 1104 | s | min | llm_corrected (0.6) | Nielsen-Kudsk_1980:abstract |
+| biological half-life (t 1/2 beta) | `Q57` · t1/2z | 73.7 | min | 4422 | s | min | exact (1) | Nielsen-Kudsk_1980:abstract |
+| half-life of the alpha phase of distribution | `Q59` · t1/2α | 18.4 | min | 1104 | s | min | half_life_rule (0.95) | Nielsen-Kudsk_1980:abstract |
 | apparent steady state volume of distribution | `Q65` · Vss | 1.64 | 1 kg-1 |  |  | 1/kg | llm_corrected (0.6) | Nielsen-Kudsk_1980:abstract |
 | Vc-mean | `Q61` · V | 1.11 | 1 kg-1 |  |  | 1/kg | llm_confirmed (0.6) | Nielsen-Kudsk_1980:abstract |
-| CL (70 kg patient) | `Q22` · CL | 68.0 | L/h | 1.889e-05 | m3/s | L/h | review_gapfill (0.7) | Bertin_2026:review |
-| Ka | `Q49` · kabs | 0.5 | h-1 | 0.0001389 | 1/s | 1/h | review_gapfill (0.7) | Chen_2024:review |
-| Tlag | `Q83` · tlag | 0.8 | h | 2880 | s | h | review_gapfill (0.7) | Panetta_2024:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -89,41 +83,27 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'Vc-mean' is the general volume)
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Bertin_2026's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Chen_2024's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Panetta_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Nielsen-Kudsk_1980_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
+| `gpt-oss-120b` | partly confirmed | 0.6 (6/10 fields) | 4 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[apparent steady state volume of distribution]` | 1.64 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent steady state volume of distribution]` |  | 1.64 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl]` | 68.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half-life of the alpha phase of distribution]` | 18.4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half-life of the alpha phase of distribution]` |  | 18.4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 0.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t 1/2 beta]` | 73.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[biological half-life]` | 73.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean apparent steady state volume of distribution]` |  | 1.64 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t 1/2 beta]` |  | 73.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag]` | 0.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vc-mean]` | 1.11 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vc-mean]` |  | 1.11 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | lorazepam | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | lorazepam | unknown | mismatch |
 
 </details>
 
@@ -140,16 +120,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bertin_2026:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Chen_2024:review'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Nielsen-Kudsk_1980:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Nielsen-Kudsk_1980:abstract'] |
-| C5_dimension_Q60 | pass | [time] |  | ['Nielsen-Kudsk_1980:abstract'] |
 | C5_dimension_Q61 | fail | [length] ** 3 | 1 kg-1 (dimensionless) | ['Nielsen-Kudsk_1980:abstract'] |
 | C5_dimension_Q65 | fail | [length] ** 3 | 1 kg-1 (dimensionless) | ['Nielsen-Kudsk_1980:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Panetta_2024:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 68 | ['Bertin_2026:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 68 L/h | ['Bertin_2026:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -173,4 +148,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blorazepam%5D%20Lorazepam_NielsenKudsk1980_reference&body=Drug%3A%20lorazepam%0ARecord%3A%20Lorazepam_NielsenKudsk1980_reference%0APaper%3A%20Nielsen-Kudsk_1980%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lorazepam/Lorazepam_NielsenKudsk1980_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:13 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:29 UTC</sub>

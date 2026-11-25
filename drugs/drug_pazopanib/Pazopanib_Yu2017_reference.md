@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This paper's disposition core is incomplete.
+> Only clearance was extracted — no volume.
 
 <div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Yu2017_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="pazopanib" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,13 +17,13 @@ Yu H, van Erp N, Bins S, Mathijssen RH, Schellens JH, Beijnen JH et al. Developm
 
 ## Population and dosing
 
-**Population:** cancer patients · condition cancer · n = 96.
+**Population:** cancer patients · condition cancer · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -31,15 +31,11 @@ Yu H, van Erp N, Bins S, Mathijssen RH, Schellens JH, Beijnen JH et al. Developm
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| relative bioavailability (rF) at a dose of 200 mg | Frel | 1 |  |
 | first-order decay constant | kel | 0.15 | day-1 |
-| volume of distribution in the current analysis | V | 5.05 | L |
-| k a | kabs | 1.8 | 1/h |
-| Tlag | tlag | 0.5 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714), qwen3.8-27b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +45,11 @@ Yu H, van Erp N, Bins S, Mathijssen RH, Schellens JH, Beijnen JH et al. Developm
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Only clearance was extracted — no volume.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Attia_2023, Balakirouchenane_2020) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pazopanib: Frel 1, kel 0.15 day-1, V 5.05 L, kabs 1.8 1/h, tlag 0.5 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pazopanib: kel 0.15 day-1.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of a first-order decay constant: this record has none, the second reading 0.15; it also differs on 6 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 1; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,11 +57,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| relative bioavailability (rF) at a dose of 200 mg | `Q87` · Frel | 1 |  |  |  |  | llm_confirmed (0.6) | Yu_2017:abstract |
 | first-order decay constant | `Q47` · kel | 0.15 | day-1 | 1.736e-06 | 1/s | 1/d | llm (0.6) | Yu_2017:abstract |
-| volume of distribution in the current analysis | `Q61` · V | 5.05 | L | 0.00505 | m3 | L | review_gapfill (0.7) | Attia_2023:review |
-| k a | `Q49` · kabs | 1.8 | 1/h | 0.0005 | 1/s | 1/h | review_gapfill (0.7) | Balakirouchenane_2020:review |
-| Tlag | `Q83` · tlag | 0.5 | h | 1800 | s | h | review_gapfill (0.7) | Balakirouchenane_2020:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,34 +67,30 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped PD-category row 'E max (maximum effect)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2017:abstract'])
-- dropped unlinked row (NIL): 'dose at half of maximum effect' — extend the ontology if this is a real PK parameter (source ['Yu_2017:abstract'])
-- dropped PD-category row 'maximum magnitude' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2017:abstract'])
+- dropped PD-category row 'The dose at half of maximum effect' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Yu_2017:abstract'])
+- dropped unlinked row (NIL): 'maximum magnitude' — extend the ontology if this is a real PK parameter (source ['Yu_2017:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pazopanib
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
-- gap-filled Q61 (V) from Attia_2023's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- gap-filled Q49 (kabs) from Balakirouchenane_2020's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Balakirouchenane_2020's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Yu_2017_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Yu_2017_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 | `qwen3.8-27b` | partly confirmed | 0.417 (5/12 fields) | 7 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` |  | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability]` |  | 1 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[a first-order decay constant]` |  | 0.15 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[first-order decay constant]` | 0.15 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[k a]` | 1.8 |  | only_one_extracted |
@@ -123,15 +111,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Yu_2017:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Balakirouchenane_2020:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Attia_2023:review'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Balakirouchenane_2020:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 5.05 L | ['Attia_2023:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -165,4 +149,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpazopanib%5D%20Pazopanib_Yu2017_reference&body=Drug%3A%20pazopanib%0ARecord%3A%20Pazopanib_Yu2017_reference%0APaper%3A%20Yu_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pazopanib/Pazopanib_Yu2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 04:38 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:29 UTC</sub>

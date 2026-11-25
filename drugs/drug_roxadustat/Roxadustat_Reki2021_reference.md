@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Roxadustat’s peripheral compartment was structurally unreachable, causing rejection despite abstract-only source data.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="roxadustat" model-id="Roxadustat_Reki2021_reference" status="rejected" stale="false" population="dialysis- and non-dialysis-dependent patients with chronic kidney disease" measured-compound="roxadustat" parameterization="apparent" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Rekić D, Kerbusch-Herben V, Någård M, Chou J, Huang J, Bradley C et al. Pharm
 
 ### Reviewer guidance
 
-**Roxadustat’s peripheral compartment was structurally unreachable, causing rejection despite abstract-only source data.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record was built from the abstract alone, meaning the reported summary statistics stood in for a fitted model. The findings identified an unreachable or orphan compartment in the model structure. No specific numerical checks failed, but the structural defect prevented the model from being valid. Extracted — roxadustat: CL/F 1.1 L/h, V1/F 14.9 L, V2/F 9.5 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — roxadustat: CL/F 1.1 L/h, V1/F 14.9 L, V2/F 9.5 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;protein C&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/&quot;},{&quot;label&quot;:&quot;Li_2025 \u00b7 adolescents_12_to_16_y&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;ProteinC_Cojutti2024_reference&quot;,&quot;label&quot;:&quot;Cojutti_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Cojutti2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;ProteinC_Troisi2024_reference&quot;,&quot;label&quot;:&quot;Troisi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_protein_c/ProteinC_Troisi2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # protein C — `ProteinC_Li2025_adolescents_12_to_16_y`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:11 UTC (Needs review), but the paper was screened again on 2026-10-05 15:21 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
+> No value for protein c's clearance; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Li2025_adolescents_12_to_16_y" status="extracted" stale="true" population="patients with severe congenital or acquired protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="protein C" model-id="ProteinC_Li2025_adolescents_12_to_16_y" status="model_quarantined" stale="false" population="patients with severe congenital or acquired protein C deficiency" measured-compound="protein C" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intravenous protein C concentrate in protein C deficiency: implications for treatment initiation and maintenance. Research and practice in thrombosis and haemostasis 9(3):102859 (2025).
@@ -31,6 +31,8 @@ Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intr
 **Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
 | t½, hh | t1/2z | 11.9 | h |
@@ -40,7 +42,7 @@ Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intr
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +52,13 @@ Li Z, Sorribes IC, Schneider J, Taylor A. Evaluation of pharmacokinetics of intr
 
 ### Reviewer guidance
 
-**The record was quarantined because protein C's clearance parameter had no extracted value, forcing reliance on a library placeholder instead of a specific estimate.**
+**No value for protein c's clearance; t6_deviations.**
 
-The record lists a clearance value of 0.0511 dL/kg/h, yet the model builder defaulted the clearance parameter because no explicit estimate was accepted. This discrepancy is highlighted by a second reader who identified a different clearance value of 7.14 from the source. The model remains in quarantine because the clearance used for the final build was a placeholder rather than a validated, extracted number. Extracted — protein c: t1/2z 11.9 h, CL 0.0511 dL/kg/h, Vss 0.804 dL/kg, V 20 L.
+The model was built, but protein c's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — protein c: t1/2z 11.9 h, CL 0.0511 dL/kg/h, Vss 0.804 dL/kg, V 20 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has protein C, the second reading protein C concentrate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -167,7 +169,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T2_covariates |  | skipped |  |  | no covariate effects in record |
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | deviation_id: defaulted_parameters: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check |  | skipped |  |  | no second reading of this record |
 | T1_cmax | reference | skipped | 100 |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 100 |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 100 |  | no simulated metric for this quantity (single reference sim) |

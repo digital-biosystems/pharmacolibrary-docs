@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Absorption rate and transit times used library placeholders, and age and eGFR covariates were not simulated.
+> Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Roberts2025_reference" status="needs_review" stale="false" population="hospitalised adults with COVID-19" measured-compound="GS-441524" parameterization="apparent" topology="1C"></div>
 
@@ -60,13 +60,13 @@ Roberts DM, Liu X, Parker SL, Burke A, Peek J, Carland JE et al. Population Phar
 
 ### Reviewer guidance
 
-**Absorption rate and transit times used library placeholders, and age and eGFR covariates were not simulated.**
+**Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).**
 
-The record lists covariate effects for age and eGFR, but the review found these scenarios were not exercised in the simulation. Additionally, the absorption rate and transit times were not extracted, so generic library values were used instead of estimates from this paper. This means the simulated profile relies on unverified assumptions for absorption and lacks the covariate adjustments defined in the record. Extracted — GS-441524: CL 105 L/h, V 121 L, CLm/F 15.9 L/h, Vm/F 429 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. None of the extracted parameters is remdesivir's own; they describe GS-441524. Extracted — GS-441524: CL 105 L/h, V 121 L, CLm/F 15.9 L/h, Vm/F 429 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has GS-441524, the second reading remdesivir; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

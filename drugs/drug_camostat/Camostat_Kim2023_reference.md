@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected due to a volume of distribution unit error and an orphan compartment in the GBPA/GBA model.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit h ([time]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="camostat" model-id="Camostat_Kim2023_reference" status="rejected" stale="false" population="healthy adults" measured-compound="GBPA" parameterization="apparent" topology="general_linear"></div>
 
@@ -44,7 +44,7 @@ Kim G, Moon HK, Kim T, Yun SH, Yun HY, Hong JH et al. Safety Evaluation and Popu
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +54,13 @@ Kim G, Moon HK, Kim T, Yun SH, Yun HY, Hong JH et al. Safety Evaluation and Popu
 
 ### Reviewer guidance
 
-**The record was rejected due to a volume of distribution unit error and an orphan compartment in the GBPA/GBA model.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit h ([time]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The volume of distribution parameter for GBA is listed with a unit of hours instead of a volume dimension, creating a structural mismatch. Additionally, the metabolite GBPA is identified as an unreachable compartment with no link from the dose to the central compartment. Extracted — GBA: t1/2z 1.01 h, Cmax 72.7 ng/mL, AUClast 152 h × ng/mL, AUC∞ 156 h × ng/mL, CL/F 142 L/h, V 1.05e+03 h.
+A reported unit could not be converted (Cmax, AUClast, AUC∞ and V), so that value has no SI equivalent. None of the extracted parameters is camostat's own; they describe GBA. Extracted — GBA: t1/2z 1.01 h, Cmax 72.7 ng/mL, AUClast 152 h × ng/mL, AUC∞ 156 h × ng/mL, CL/F 142 L/h, V 1.05e+03 h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has camostat mesylate → gbpa (metabolism); gbpa → gba (metabolism), the second reading camostat mesylate → gbpa (metabolism); camostat mesylate → gba (metabolism); it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -100,6 +102,39 @@ The volume of distribution parameter for GBA is listed with a unit of hours inst
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.188 (3/16 fields) | 13 |
+
+<details><summary>13 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['camostat mesylate', 'gbpa', 'metabolism'], ['gbpa', 'gba', 'metabolism']] | [['camostat mesylate', 'gbpa', 'metabolism'], ['camostat mesylate', 'gba', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[aucinf]` |  | 156.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucinf].value` | 156.5 | 762.8 | mismatch |
+| `gpt-oss-120b` | `parameters[auclast]` |  | 152.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auclast].value` | 152.3 | 618.2 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f]` |  | 141.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f].value` | 141.7 | 718.6 | mismatch |
+| `gpt-oss-120b` | `parameters[cmax]` |  | 72.68 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax].value` | 72.68 | 175.5 | mismatch |
+| `gpt-oss-120b` | `parameters[half-life]` |  | 1.012 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life].value` | 1.012 | 1.942 | mismatch |
+| `gpt-oss-120b` | `parameters[vd]` |  | 1046 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd].value` | 1046 | 404.5 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

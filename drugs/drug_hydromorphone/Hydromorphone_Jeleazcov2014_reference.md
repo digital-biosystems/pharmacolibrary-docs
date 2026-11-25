@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The elimination clearance value of 43 was recorded with a dimensionless percentage unit, conflicting with the required volume-per-time dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit % (dimensionless) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="hydromorphone" model-id="Hydromorphone_Jeleazcov2014_reference" status="rejected" stale="false" population="cardiac surgery patients" measured-compound="hydromorphone" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Jeleazcov C, Saari TI, Ihmsen H, Mell J, Fröhlich K, Krajinovic L et al. Popula
 
 ### Reviewer guidance
 
-**The elimination clearance value of 43 was recorded with a dimensionless percentage unit, conflicting with the required volume-per-time dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit % (dimensionless) vs [length] ** 3 / [time].**
 
-The single extracted parameter, total clearance for hydromorphone, is assigned a value of 43 with the unit '%'. A clearance parameter must have dimensions of volume per time, making the percentage unit physically incompatible with the model structure. Additionally, the record was built solely from the paper's abstract, meaning no fitted population parameters were available to cross-check the reported value. Extracted — hydromorphone: CL 43 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — hydromorphone: CL 43 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hydromorphone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

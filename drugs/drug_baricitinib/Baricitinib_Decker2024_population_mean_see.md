@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Baricitinib's apparent intercompartmental clearance and absolute bioavailability lack extracted values, leaving the peripheral compartment disconnected.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="baricitinib" model-id="Baricitinib_Decker2024_population_mean_see" status="rejected" stale="false" population="pediatric patients with juvenile idiopathic arthritis" measured-compound="baricitinib" parameterization="apparent" topology="3C"></div>
 
@@ -56,13 +56,13 @@ Decker RL, Steven Ernest C, Radtke DB, Wang R, Araújo J, Keller SY et al. A pop
 
 ### Reviewer guidance
 
-**Baricitinib's apparent intercompartmental clearance and absolute bioavailability lack extracted values, leaving the peripheral compartment disconnected.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The parameters for apparent intercompartmental clearance (Q) and absolute bioavailability (Fab) show no extracted values, meaning library placeholders would have been used. The second reader also disagreed with the extracted value of 0.00586 for the eGFR covariate effect. These missing structural definitions and disputed covariate values prevented the model from being fully defined. Extracted — baricitinib: D1 0.457 h, CLNR 3.36 L/h, CL/F 6.34 L/h, V1/F 92.6 L, Qd 2.67 L/h, V2/F 25.6 L, tlag 0.147 h, CLb 0.75 %SEE, … (+1).
+A reported unit could not be converted (CLb, V1 and theta_d1_category), so that value has no SI equivalent. Extracted — baricitinib: D1 0.457 h, CLNR 3.36 L/h, CL/F 6.34 L/h, V1/F 92.6 L, Qd 2.67 L/h, V2/F 25.6 L, tlag 0.147 h, CLb 0.75 %SEE, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[allometric scaling v c , e].parameter_id`: this record has Q63, the second reading Q319; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

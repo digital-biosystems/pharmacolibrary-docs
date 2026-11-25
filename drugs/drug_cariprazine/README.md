@@ -66,7 +66,7 @@ Cariprazine is an atypical antipsychotic used to treat schizophrenia and bipolar
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:28 | 5:16 | 1/0/0 | 12/0/0 | 0/0/0 | 223,565/20,827 | ollama / glm-5.3-flash | 7 | 1/6 | 7/0 | 0 |
+| 2026-11-23 20:00 | 0:03 | 1/0/0 | 12/0/0 | 0/0/0 | 3,898/179 | einfracz / qwen3.8-27b | 7 | 1/6 | 7/0 | 0 |
 
 ## Coverage
 
@@ -83,14 +83,19 @@ Cariprazine is an atypical antipsychotic used to treat schizophrenia and bipolar
 | popPK | Falkai_2023 | irrelevant | 0 | 0 | This is a post hoc efficacy/safety analysis of cariprazine in schizophrenia with no pharmacokinetic parameters reported. |
 | popPK | Girgis_2016 | irrelevant | 3 | 2 | PET receptor-occupancy study with only noncompartmental exposure summaries (Cmax, AUC, troughs) and no CL/V/ka/population-PK parameters; detailed PK values are in Supplemental Table 1 and figures not provided. |
 | popPK | Hovgesen_2025 | irrelevant | 0 | 0 | This is a clinical trial protocol for efficacy/tolerability of lithium vs cariprazine in bipolar depression, with no pharmacokinetic parameters or quantitative disposition data for cariprazine. |
-| popPK | Kiss_2010 | irrelevant | 0 | 0 | In vitro/neurochemical receptor-binding and functional profile study with no PK parameters for cariprazine. |
+| popPK | Kiss_2010 | irrelevant | 0 | 0 | The paper describes in vitro and neurochemical pharmacological profiles (binding affinities and functional assays) rather than pharmacokinetic disposition parameters. |
+| PGx | Kiss_2010 | not_relevant | 0 | 0 | The paper describes the in vitro pharmacological profile and receptor affinities of cariprazine, containing no information on genetic variants, genotypes, or pharmacogenomic effects on PK/PD parameters. |
 | popPK | McIntyre_2025 | irrelevant | 0 | 0 | This is a clinical efficacy (anhedonia) post hoc analysis with no PK parameters for cariprazine. |
-| popPK | Meszár_2024 | irrelevant | 3 | 4 | Bioequivalence study with only NCA exposure metrics (AUC, Cmax, ratios); no clearance, volume, half-life, or compartmental/population-PK parameters reported. |
-| popPK | Németh_2017 | irrelevant | 0 | 0 | This is a clinical efficacy trial with no PK parameters or compartmental model reported for cariprazine. |
+| popPK | Meszár_2024 | irrelevant | 2 | 2 | This is a bioequivalence study reporting non-compartmental parameters (AUC, Cmax) and geometric mean ratios, but it does not report compartmental population PK parameters (CL, V, ka, Q) or absolute clearance values required for the task. |
+| PGx | Meszár_2024 | not_relevant | 0 | 0 | The paper is a bioequivalence study comparing two formulations and does not investigate any genetic variants or pharmacogenomic effects on cariprazine PK/PD. |
+| popPK | Németh_2017 | irrelevant | 0 | 0 | The paper is a Phase 3b clinical efficacy trial for schizophrenia, not a pharmacokinetic study, and contains no disposition parameters. |
+| PGx | Németh_2017 | not_relevant | 0 | 0 | The paper is a clinical efficacy trial comparing cariprazine and risperidone for negative symptoms of schizophrenia, with no pharmacogenomic data or gene-variant analysis. |
 | popPK | Periclou_2020 | relevant | 5 | 2 | Population PK models of cariprazine (and metabolites DCAR/DDCAR) are used to derive exposures, but the PK parameter values (CL, V, etc.) are in unpublished analyses/supplementary material not provided; only PD parameters (Emax, EC50-related values) appear. |
-| popPK | Sachs_2023 | irrelevant | 0 | 0 | This is an efficacy/safety clinical trial with no PK parameters or quantitative disposition values reported. |
+| popPK | Sachs_2023 | irrelevant | 0 | 0 | This is a clinical efficacy study for major depressive disorder that does not report pharmacokinetic parameters. |
+| PGx | Sachs_2023 | not_relevant | 0 | 0 | The paper is a Phase 3 clinical trial evaluating the efficacy and safety of cariprazine for depression and does not report any pharmacogenomic analysis or association between genetic variants and PK/PD parameters. |
 | popPK | Vieta_2024 | irrelevant | 0 | 0 | Efficacy post hoc analysis of RCTs with no PK parameters reported. |
-| popPK | Vogt_2026 | irrelevant | 1 | 1 | Medicinal chemistry/in-vitro receptor binding and microsomal stability study; no PK disposition parameters for cariprazine, only Ki and microsomal t1/2 values. |
+| popPK | Vogt_2026 | irrelevant | 0 | 0 | The study is a medicinal chemistry/polypharmacology paper focusing on receptor binding and in-vitro metabolic stability of analogues, with no population pharmacokinetic modeling or disposition parameters (CL, V, etc.) reported for cariprazine. |
+| PGx | Vogt_2026 | not_relevant | 0 | 0 | The paper describes structural optimization and pharmacological profiling of cariprazine analogs, not the effect of genetic variants on cariprazine's PK or PD parameters. |
 
 
 </details>

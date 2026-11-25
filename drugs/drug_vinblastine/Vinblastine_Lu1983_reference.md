@@ -45,7 +45,7 @@ Lu K, Yap HY, Loo TL. Clinical pharmacokinetics of vinblastine by continuous int
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 

@@ -17,7 +17,7 @@ Lebel L, Fraser JR, Kimpton WS, Gabrielsson J, Gerdin B, Laurent TC. A pharmacok
 
 ## Population and dosing
 
-**Population:** conscious sheep · condition normal · n = 10.
+**Population:** conscious sheep · condition healthy · age group adult.
 
 > **Species: sheep.** This record comes from an animal study (sheep), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -25,7 +25,7 @@ Lebel L, Fraser JR, Kimpton WS, Gabrielsson J, Gerdin B, Laurent TC. A pharmacok
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -34,13 +34,10 @@ Lebel L, Fraser JR, Kimpton WS, Gabrielsson J, Gerdin B, Laurent TC. A pharmacok
 | label | parameter | value | unit |
 |---|---|---|---|
 | apparent T 1/2 of 3H-HA | t1/2z | 5.3 | min |
-| r | equation variable | 0.96 |  |
-| KA | kabs | 0.00653 | h-1 |
-| ALAG | tlag | 85.7 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +49,9 @@ Lebel L, Fraser JR, Kimpton WS, Gabrielsson J, Gerdin B, Laurent TC. A pharmacok
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — hyaluronic acid: t1/2z 5.3 min, kabs 0.00653 h-1, tlag 85.7 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — hyaluronic acid: t1/2z 5.3 min.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has hyaluronic_acid, the second reading hyaluronic acid; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of normal plasma ha concentration: this record has none, the second reading 0.12. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,9 +60,6 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | apparent T 1/2 of 3H-HA | `Q57` · t1/2z | 5.3 | min | 318 | s | min | llm (0.6) | Lebel_1989:abstract |
-| r | `Q900` · equation variable | 0.96 |  |  |  |  | llm (0.6) | Lebel_1989:abstract |
-| KA | `Q49` · kabs | 0.00653 | h-1 | 1.814e-06 | 1/s | 1/h | review_gapfill (0.7) | Jeon_2013:review |
-| ALAG | `Q83` · tlag | 85.7 | h | 3.085e+05 | s | h | review_gapfill (0.7) | Jeon_2013:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -76,39 +70,31 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'normal plasma HA concentration' — extend the ontology if this is a real PK parameter (source ['Lebel_1989:abstract'])
-- dropped value-less row: 'range'
+- dropped value-less row: 'range, 0.072-0.228'
+- dropped value-less row: 'range, 3.3-6.5'
+- dropped value-less row: 'plasma concentrations'
 - dropped value-less row: 'apparent T 1/2'
+- dropped unlinked row (NIL): 'r' — extend the ontology if this is a real PK parameter (source ['Lebel_1989:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=hyaluronic_acid
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Jeon_2013's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Jeon_2013's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Lebel_1989_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Lebel_1989_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.833 (5/6 fields) | 1 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[alag]` | 85.7 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[apparent t 1/2 of 3h-ha]` |  | 5.3 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[apparent t 1/2 of 3h-ha]` | 5.3 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[ka]` | 0.00653 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[r]` |  | 0.96 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[r]` | 0.96 |  | only_one_extracted |
-| `qwen3.8-27b` | `screen.dose_compound` | hyaluronic_acid | hyaluronic acid | mismatch |
-| `qwen3.8-27b` | `screen.primary_analyte` | hyaluronic_acid | hyaluronic acid | mismatch |
+| `gpt-oss-120b` | `parameters[normal plasma ha concentration]` |  | 0.12 | only_one_extracted |
 
 </details>
 
@@ -125,9 +111,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Jeon_2013:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Lebel_1989:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Jeon_2013:review'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -162,4 +146,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhyaluronic_acid%5D%20HyaluronicAcid_Lebel1989_reference&body=Drug%3A%20hyaluronic_acid%0ARecord%3A%20HyaluronicAcid_Lebel1989_reference%0APaper%3A%20Lebel_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hyaluronic_acid/HyaluronicAcid_Lebel1989_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 13:44 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:08 UTC</sub>

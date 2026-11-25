@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Indinavir’s Ct (0.42 micromol/l) and Cmax (9.51 micromol/l) were rejected because their units conflict with the expected mass-concentration dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit micromol/l ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q32 unit micromol/l ([substance] / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="indinavir" model-id="Indinavir_Zhou2000_reference" status="rejected" stale="false" population="HIV-1-infected adults" measured-compound="indinavir" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Zhou XJ, Havlir DV, Richman DD, Acosta EP, Hirsch M, Collier AC et al. Plasma po
 
 ### Reviewer guidance
 
-**Indinavir’s Ct (0.42 micromol/l) and Cmax (9.51 micromol/l) were rejected because their units conflict with the expected mass-concentration dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit micromol/l ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q32 unit micromol/l ([substance] / [length] ** 3) vs [mass] / [length] ** 3.**
 
-Both values are concentrations reported in micromol/l, whereas the failed dimensional comparison expected mass per volume. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader also disputed the mechanistic interpretation and several extracted parameters, including volume of distribution (96.6 l here versus 1.74 l in that reading). Extracted — indinavir: Ct 0.42 micromol/l, Cmax 9.51 micromol/l, AUCt 29.6 mg*h/L, t1/2z 1.5 h, CL 10.5 l h -1, V 96.6 l, kabs 0.871 h -1, tlag 0.485 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — indinavir: Ct 0.42 micromol/l, Cmax 9.51 micromol/l, AUCt 29.6 mg*h/L, t1/2z 1.5 h, CL 10.5 l h -1, V 96.6 l, kabs 0.871 h -1, tlag 0.485 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

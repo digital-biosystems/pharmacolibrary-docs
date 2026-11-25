@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Apomorphine-sulfate has a recorded formation rate, kfm 0.00480 1/h, but zero compartments (n_cmt 0), leaving the metabolite orphaned and the record rejected.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Agbo2021_reference" status="rejected" stale="false" population="healthy subjects and patients with Parkinson&#39;s disease" measured-compound="apomorphine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -50,7 +50,7 @@ Agbo F, Crass RL, Chiu YY, Chapel S, Galluppi G, Blum D et al. Population pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,11 +60,13 @@ Agbo F, Crass RL, Chiu YY, Chapel S, Galluppi G, Blum D et al. Population pharma
 
 ### Reviewer guidance
 
-**Apomorphine-sulfate has a recorded formation rate, kfm 0.00480 1/h, but zero compartments (n_cmt 0), leaving the metabolite orphaned and the record rejected.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record describes kfm as the first-order rate of formation of apomorphine-sulfate from apomorphine and records a formation link. However, apomorphine-sulfate has no compartments (n_cmt 0), so the metabolite is orphaned despite that link. Extracted — apomorphine: CL/F 80.7 L/h, V1/F 438 L, V2/F 1.42 L, kel 1.28 1/h, Frel 0.202, kel 0.613 1/h, kfm 0.0048 1/h, kabs 14.9 h−1.
+Extracted — apomorphine: CL/F 80.7 L/h, V1/F 438 L, V2/F 1.42 L, kel 1.28 1/h, Frel 0.202, kel 0.613 1/h, kfm 0.0048 1/h, kabs 14.9 h−1.
 
-<sub>reviewed by gpt-6-luna</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has apomorphine → apomorphine-sulfate (metabolism), the second reading none; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,6 +142,47 @@ The record describes kfm as the first-order rate of formation of apomorphine-sul
 - LLM selected parameter table(s) 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.417 (15/36 fields) | 21 |
+
+<details><summary>21 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['apomorphine', 'apomorphine-sulfate', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[body_weight_on_v_2_f]` | 1.53 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | ['additive_shift', 'additive_shift', 'linear_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[contact_time_under_the_tongue_for_sublingual_film_on_k_a_for_sublingual_administration]` | -0.194 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fraction_not_swallowed_and_available_for_sublingual_absorption]` | 0.910 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k26]` | 0.613 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k30].parameter_id` | Q47 | Q373 | mismatch |
+| `gpt-oss-120b` | `parameters[k62]` |  | 0.00480 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k62]` | 0.00480 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 14.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q40_category]` |  | 0.910 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q49_category]` | 0.205 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q78_sex]` | -0.310 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q83_category]` |  | -0.194 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q95_category]` | 17.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v2_f_body_weight]` |  | 1.53 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v3_f_sex]` |  | -0.310 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 2/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[v 2/f].parameter_id` | Q290 | Q82 | mismatch |
+| `gpt-oss-120b` | `parameters[v 3/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[v 3/f].parameter_id` | Q82 | Q78 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

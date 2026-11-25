@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Arginine hydrochloride clearance and distribution volumes had no extracted values, so placeholder defaults caused the model to be quarantined.
+> No value for arginine hydrochloride's clearance, volume of distribution and central→peripheral rate constant; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="arginine hydrochloride" model-id="ArginineHydrochloride_Yeo2013_moderately_severemalaria_ref_1" status="model_quarantined" stale="false" population="adults with severe falciparum malaria" measured-compound="L-arginine" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Yeo TW, Lampah DA, Rooslamiati I, Gitawati R, Tjitra E, Kenangalem E et al. A ra
 
 ### Reviewer guidance
 
-**Arginine hydrochloride clearance and distribution volumes had no extracted values, so placeholder defaults caused the model to be quarantined.**
+**No value for arginine hydrochloride's clearance, volume of distribution and central→peripheral rate constant; t6_deviations.**
 
-The record lists specific parameters like total clearance and central volume, but the review found no explicit estimates for them. Consequently, the model relied on generic library placeholders instead of fitted data, leading to its holdback. A second reader also marked the dose compound and primary analyte as unknown. Extracted — arginine hydrochloride: CL 31 L/h, V1 27 L, V2 21 L, Q 74 L/h.
+The model was built, but arginine hydrochloride's clearance, volume of distribution and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — arginine hydrochloride: CL 31 L/h, V1 27 L, V2 21 L, Q 74 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has L-arginine hydrochloride, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

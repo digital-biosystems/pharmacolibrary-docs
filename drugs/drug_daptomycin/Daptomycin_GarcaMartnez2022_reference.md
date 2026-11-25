@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> V2 uses L/h units for a volume of distribution, causing a dimension mismatch and physiological range flag on CL.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q64 unit L/h ([length] ** 3 / [time]) vs [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="daptomycin" model-id="Daptomycin_GarcaMartnez2022_reference" status="rejected" stale="false" population="patients with normal and impaired renal function" measured-compound="daptomycin" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ García-Martínez T, Bellés-Medall MD, García-Cremades M, Ferrando-Piqueres R,
 
 ### Reviewer guidance
 
-**V2 uses L/h units for a volume of distribution, causing a dimension mismatch and physiological range flag on CL.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q64 unit L/h ([length] ** 3 / [time]) vs [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The parameter V2 is a volume of distribution but its record shows unit L/h, which conflicts with the required volume dimension. The value 6.98 L/h for clearance CL falls outside the plausible physiological window for daptomycin. A reported unit could not be converted to standard SI units, preventing proper validation. A second reader disagrees on CL, V1, V2, Q, KD, Bmax, and the renal covariate effect, indicating major extraction inconsistencies. Extracted — daptomycin: CL 6.98 L/h, V1 0.95 L, Q 1.96 L/h, V2 21 L/h, Bmax 160 mg/L, KD 3.56 mg/L.
+A reported unit could not be converted (Bmax and KD), so that value has no SI equivalent. Extracted — daptomycin: CL 6.98 L/h, V1 0.95 L, Q 1.96 L/h, V2 21 L/h, Bmax 160 mg/L, KD 3.56 mg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[bmax].value`: this record has 160, the second reading 26; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

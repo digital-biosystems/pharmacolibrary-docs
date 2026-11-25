@@ -22,11 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Tanito_2001_3H_NMS_binding_M2](drugs/drug_edrophonium/pd_Tanito_2001_3H_NMS_binding_M2.md) | Specific [3H]N-methylscopolamine binding to guinea pig atrial M2 receptors ← edrophonium · inhibition effect | — | Tanito Y et al., Interaction of edrophonium with muscari…, Anesthesiology (2001) | [10.1097/00000542-200105000-00019](https://doi.org/10.1097/00000542-200105000-00019) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Tanito_2001_3H_NMS_binding_M3](drugs/drug_edrophonium/pd_Tanito_2001_3H_NMS_binding_M3.md) | Specific [3H]N-methylscopolamine binding to guinea pig submandibular gland M3 receptors ← edrophonium · inhibition effect | — | Tanito Y et al., Interaction of edrophonium with muscari…, Anesthesiology (2001) | [10.1097/00000542-200105000-00019](https://doi.org/10.1097/00000542-200105000-00019) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Unadkat_1986_twitch_tension_of_the_anterior_tibialis_muscle](drugs/drug_edrophonium/pd_Unadkat_1986_twitch_tension_of_the_anterior_tibialis_muscle.md) | twitch tension of the anterior tibialis muscle ← edrophonium · delayed effect through an effect compartment | — | Unadkat JD et al., An integrated model for the interaction…, Journal of applied physiolo… (1986) | [10.1152/jappl.1986.61.4.1593](https://doi.org/10.1152/jappl.1986.61.4.1593) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Yamamoto_1996_HR](drugs/drug_edrophonium/pd_Yamamoto_1996_HR.md) | heart rate (bradycardiac response) ← edrophonium · delayed effect through an effect compartment | — | Yamamoto K et al., Toxicodynamic analysis of cardiac effec…, The Journal of pharmacy and… (1996) | [10.1111/j.2042-7158.1996.tb06006.x](https://doi.org/10.1111/j.2042-7158.1996.tb06006.x) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Yamamoto_1996_HR_2](drugs/drug_edrophonium/pd_Yamamoto_1996_HR_2.md) | heart rate (tachycardiac response) ← edrophonium · delayed effect through an effect compartment | — | Yamamoto K et al., Toxicodynamic analysis of cardiac effec…, The Journal of pharmacy and… (1996) | [10.1111/j.2042-7158.1996.tb06006.x](https://doi.org/10.1111/j.2042-7158.1996.tb06006.x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Yamamoto_1996_HR](drugs/drug_edrophonium/pd_Yamamoto_1996_HR.md) | heart rate ← edrophonium · delayed effect through an effect compartment | — | Yamamoto K et al., Toxicodynamic analysis of cardiac effec…, The Journal of pharmacy and… (1996) | [10.1111/j.2042-7158.1996.tb06006.x](https://doi.org/10.1111/j.2042-7158.1996.tb06006.x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Yamamoto_1996_HR_2](drugs/drug_edrophonium/pd_Yamamoto_1996_HR_2.md) | heart rate ← edrophonium · delayed effect through an effect compartment | — | Yamamoto K et al., Toxicodynamic analysis of cardiac effec…, The Journal of pharmacy and… (1996) | [10.1111/j.2042-7158.1996.tb06006.x](https://doi.org/10.1111/j.2042-7158.1996.tb06006.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:29 | 0:20 | 0/0/0 | 0/5/0 | 0/0/0 | 20,944/2,064 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-23 21:41 | 0:24 | 0/0/0 | 0/2/0 | 0/0/0 | 6,223/1,867 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
@@ -49,33 +46,31 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Morris_1981.pdf` | Morris RB et al., Pharmacokinetics of edrophonium in anep…, British journal of anaesthe… (1981) | popPK | 8 | [10.1093/bja/53.12.1311](https://doi.org/10.1093/bja/53.12.1311) | [7032560](https://pubmed.ncbi.nlm.nih.gov/7032560) | Human PK study of edrophonium with clearance and half-life reported, but the abstract gives only relative changes, not the actual numeric parameter values. |
-| `Hennis_1984.pdf` | Hennis PJ et al., Metabolites of neostigmine and pyridost…, Anesthesiology (1984) | popPK | 7 | [10.1097/00000542-198411000-00010](https://doi.org/10.1097/00000542-198411000-00010) | [6149707](https://pubmed.ncbi.nlm.nih.gov/6149707) | Edrophonium PK (three-compartment model, CL, Vdss, half-lives) was determined in dogs, but the abstract only summarizes values qualitatively without numeric parameter values. |
-| `Unadkat_1986.pdf` | Unadkat JD et al., An integrated model for the interaction…, Journal of applied physiolo… (1986) | popPK | 6 | [10.1152/jappl.1986.61.4.1593](https://doi.org/10.1152/jappl.1986.61.4.1593) | [3781972](https://pubmed.ncbi.nlm.nih.gov/3781972) | Edrophonium arterial concentrations were measured in anesthetized dogs and modeled, but no numeric PK parameter values (CL, V, etc.) appear in the evidence. |
-
-<sub>queue written 2026-10-07 21:29 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Back_1974 | relevant | 9 | 4 | A compartmental PK study of [14C]-edrophonium in rats with model parameters (rate constants, half-lives, Vc) reported in Tables 1–2, but the table values are largely truncated/not readable in the evidence provided. |
-| popPK | Baker_1986 | irrelevant | 0 | 0 | Edrophonium is only used as a co-administered cholinesterase inhibitor in a receptor-binding study; no PK parameters for it are reported. |
-| popPK | Dreyer_1978 | irrelevant | 0 | 0 | Frog neuromuscular junction ionophoresis study; edrophonium is only an AChE inhibitor tool, no PK parameters. |
-| popPK | Hennis_1984 | relevant | 7 | 3 | Edrophonium PK (three-compartment model, CL, Vdss, half-lives) was determined in dogs, but the abstract only summarizes values qualitatively without numeric parameter values. |
-| popPK | Jaklitsch_1990 | irrelevant | 3 | 0 | A simulation study of neuromuscular blockade; edrophonium is one of many modeled agents and no numeric PK parameter values for edrophonium appear in the evidence. |
-| popPK | Lenz_1984 | irrelevant | 0 | 0 | In-vitro enzyme kinetics study of AChE inhibition; edrophonium is only an inhibitor probe, no PK parameters. |
-| popPK | Mills_1999 | irrelevant | 0 | 0 | The pharmacokinetic model and parameters (CL, V1) describe rapacuronium, not edrophonium, which is only used as a reversal agent. |
-| popPK | Morris_1981 | relevant | 8 | 3 | Human PK study of edrophonium with clearance and half-life reported, but the abstract gives only relative changes, not the actual numeric parameter values. |
-| popPK | Tanito_2001 | irrelevant | 0 | 0 | In vitro receptor pharmacology study of edrophonium's muscarinic antagonism; no pharmacokinetic disposition parameters. |
-| popPK | Unadkat_1986 | relevant | 6 | 2 | Edrophonium arterial concentrations were measured in anesthetized dogs and modeled, but no numeric PK parameter values (CL, V, etc.) appear in the evidence. |
-| popPK | Yamamoto_1996 | irrelevant | 2 | 1 | This is a toxicodynamic (PD) study in rats using an effect-compartment model for heart-rate effects, not a PK study reporting edrophonium disposition parameters; no numeric PK values are present. |
+| popPK | Back_1974 | relevant | 10 | 3 | The paper presents a quantitative three-compartment PK model for edrophonium in rats, but specific numeric parameter values are contained in Table 2 which is not fully provided in the evidence. |
+| popPK | Baker_1986 | irrelevant | 0 | 0 | The paper studies the binding of acetylethylcholine mustard to muscarinic receptors in vitro, and edrophonium is used only as a co-treatment agent in a mechanistic assay, not as a subject drug for PK analysis. |
+| PGx | Baker_1986 | not_relevant | 0 | 0 | The paper studies the mechanism of acetylethylcholine mustard (Aech-M) binding to muscarinic receptors; edrophonium is only used as a co-treatment in one experimental arm, and there is no study of gene variants or genotypes affecting PK/PD. |
+| popPK | Dreyer_1978 | irrelevant | 0 | 0 | The study is an electrophysiological investigation of receptor conductance and dose-response curves in frogs, with edrophonium used only as an acetylcholinesterase inhibitor to modify local ACh concentration, rather than as the subject of a pharmacokinetic study. |
+| PGx | Dreyer_1978 | not_relevant | 0 | 0 | The paper describes pharmacological mechanisms in frog neuromuscular junctions and does not investigate human genetic variants or pharmacogenomics. |
+| popPK | Hennis_1984 | irrelevant | 3 | 0 | The study reports pharmacokinetic parameters for edrophonium in dogs, but they are absent from the provided abstract text (likely in the full text or tables not included), and edrophonium is studied alongside other agents in a comparative context. |
+| PGx | Hennis_1984 | not_relevant | 0 | 0 | The study reports pharmacokinetic and pharmacodynamic parameters for edrophonium in dogs but does not investigate gene variants or genotypes (pharmacogenomics). |
+| popPK | Jaklitsch_1990 | relevant | 5 | 0 | The study involves a compartmental simulation model for edrophonium (a reversal agent), implying quantitative PK parameters were used, but the specific numeric values (CL, V, etc.) are not present in the provided evidence. |
+| PGx | Jaklitsch_1990 | not_relevant | 0 | 0 | The paper describes a general pharmacokinetic/pharmacodynamic simulation model for neuromuscular blocking agents and reversal agents, including edrophonium, but does not investigate or report any effects of genetic variants or genotypes on these parameters. |
+| popPK | Lenz_1984 | irrelevant | 0 | 0 | The study focuses on in vitro kinetic properties of acetylcholinesterase from electric eel, not the pharmacokinetic disposition parameters of edrophonium. |
+| PGx | Lenz_1984 | not_relevant | 0 | 0 | The study examines the kinetic properties of acetylcholinesterase in electric eels with edrophonium and does not report any human gene variants or genotypes affecting pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Mills_1999 | irrelevant | 1 | 0 | The study reports pharmacokinetic parameters (clearance, volume) for rapacuronium, while edrophonium is only used as an antagonist/probe drug without its own PK disposition parameters reported. |
+| PGx | Mills_1999 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics and pharmacodynamics of rapacuronium and its antagonism by edrophonium in healthy subjects, but it does not report any association with gene variants or genotypes. |
+| popPK | Morris_1981 | relevant | 10 | 2 | The study reports quantitative pharmacokinetic parameters for edrophonium, but specific numeric values for clearance and half-life are not provided in the evidence text, only relative changes (e.g., 67% decrease). |
+| PGx | Morris_1981 | not_relevant | 0 | 0 | The paper examines edrophonium PK in the context of renal function, not genetic variants. |
+| popPK | Tanito_2001 | irrelevant | 0 | 0 | This study characterizes receptor affinity (pA2, Ki, KD) in guinea pigs, not pharmacokinetic disposition parameters. |
+| PGx | Tanito_2001 | not_relevant | 0 | 0 | The study investigates the interaction of edrophonium with muscarinic receptors in animal models, not the effect of a gene variant/genotype on edrophonium's pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Unadkat_1986 | relevant | 5 | 2 | The study is a pharmacodynamic/pharmacokinetic model using edrophonium in dogs, but specific quantitative PK parameter values (CL, V) are not explicitly listed in the provided evidence. |
+| PGx | Unadkat_1986 | not_relevant | 0 | 0 | The paper describes pharmacokinetic/pharmacodynamic modeling of drug interactions in dogs and does not report any pharmacogenomic effects of gene variants on edrophonium. |
+| popPK | Yamamoto_1996 | irrelevant | 1 | 0 | The study focuses on toxicodynamics (cardiac effects/EC50) and pharmacodynamics rather than quantitative pharmacokinetic disposition parameters like clearance or volume of distribution. |
+| PGx | Yamamoto_1996 | not_relevant | 0 | 0 | The study investigates toxicodynamics in rats and does not report any pharmacogenomic effects based on gene variants or genotypes. |
 
 
 </details>

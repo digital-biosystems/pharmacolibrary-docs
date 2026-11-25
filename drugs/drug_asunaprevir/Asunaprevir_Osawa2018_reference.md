@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record lists daclatasvir values for clearance, volume, and absorption rate, while asunaprevir parameters were left at library placeholders.
+> No value for asunaprevir's clearance, volume of distribution and absorption lag time — all 3 extracted parameters describe daclatasvir, not asunaprevir; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="asunaprevir" model-id="Asunaprevir_Osawa2018_reference" status="model_quarantined" stale="false" population="Japanese adults with chronic HCV genotype 1 infection" measured-compound="asunaprevir" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Osawa M, Ueno T, Ishikawa H, Imai Y, Garimella T. Population Pharmacokinetic Ana
 
 ### Reviewer guidance
 
-**The record lists daclatasvir values for clearance, volume, and absorption rate, while asunaprevir parameters were left at library placeholders.**
+**No value for asunaprevir's clearance, volume of distribution and absorption lag time — all 3 extracted parameters describe daclatasvir, not asunaprevir; t6_deviations (+1 more).**
 
-All three extracted parameters—clearance (5.29 L/h), volume (64.2 L), and absorption rate (0.865 1/h)—are explicitly assigned to daclatasvir in the facts. However, the model builder left asunaprevir's clearance, volume of distribution, and lag time without extracted values, forcing the use of default placeholders. A second reader also disputed the primary analyte identification, noting that the dose and analyte compound were not confirmed as asunaprevir. Extracted — daclatasvir: CL/F 5.29 L/h, V/F 64.2 L, kabs 0.865 1/h.
+The model was built, but asunaprevir's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — daclatasvir: CL/F 5.29 L/h, V/F 64.2 L, kabs 0.865 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has asunaprevir, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -170,9 +170,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 0.0001216 |  | non-numeric value |
-| T1_tmax | reference | skipped |  | 3.134 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.714 (5 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | cross-check contradicted by a second reader: verdict disputed; agreement 0.714 (5 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 0.0001216 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | skipped |  | 3.134 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

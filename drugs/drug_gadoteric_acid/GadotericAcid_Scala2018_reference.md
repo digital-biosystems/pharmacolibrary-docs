@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance of 2.51 L/h was rejected as physiologically implausible for gadoteric acid in young children, likely due to a scale extraction error.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit h µmol/L ([time] * [substance] / [length] ** 3) vs [mass] * [time] / [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
-<div class="pk-model-meta" hidden drug="gadoteric acid" model-id="GadotericAcid_Scala2018_reference" status="rejected" stale="false" population="pediatric subjects younger than 2 years with normal estimated glomerular filtration rate" measured-compound="gadoteric acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gadoteric acid" model-id="GadotericAcid_Scala2018_reference" status="rejected" stale="false" population="pediatric subjects younger than 2 years" measured-compound="gadoteric acid" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Scala M, Koob M, de Buttet S, Bourrinet P, Felices M, Jurkiewicz E. A Pharmacokinetics, Efficacy, and Safety Study of Gadoterate Meglumine in Pediatric Subjects Aged Younger Than 2 Years. Investigative radiology 53(2):70–79 (2018).
@@ -16,7 +16,7 @@ Scala M, Koob M, de Buttet S, Bourrinet P, Felices M, Jurkiewicz E. A Pharmacoki
 
 ## Population and dosing
 
-**Population:** pediatric subjects younger than 2 years with normal estimated glomerular filtration rate · condition normal estimated glomerular filtration rate · age group infant · n = 45.
+**Population:** pediatric subjects younger than 2 years · condition healthy · age group infant.
 
 **Dosing:** 0.1 mmol/kg, iv, single.
 
@@ -24,9 +24,9 @@ Scala M, Koob M, de Buttet S, Bourrinet P, Felices M, Jurkiewicz E. A Pharmacoki
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 7 extracted.  
+**Parameters:** 8 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -34,17 +34,18 @@ Scala M, Koob M, de Buttet S, Bourrinet P, Felices M, Jurkiewicz E. A Pharmacoki
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| AUC, h µmol/L | AUC | 1591.1 |  |
-| CL/kg, L/h per kg* | CLnorm | 0.0602 | L/h/kg |
-| Vss/kg, L/kg* | Vss | 0.0473 | L/kg |
+| AUC, h µmol/L | AUC | 1591.1 | h µmol/L |
+| CL/kg, L/h per kg* | CLnorm | 0.0602 | L/h per kg* |
+| Vss/kg, L/kg* | Vnorm | 0.0473 | L/kg* |
 | t1/2β, h | t1/2β | 1.3545 | h |
 | CL | CL | 2.51 | L/h |
-| V1 | V | 0.161 | L |
+| V1 | V1 | 0.161 | L |
 | Q | Q | 0.335 | L/h |
+| volume of distribution Vdss estimated in the study | V | 0.0473 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.312). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.214), qwen3.8-27b (not confirmed, agreement 0.312). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,25 +55,26 @@ Scala M, Koob M, de Buttet S, Bourrinet P, Felices M, Jurkiewicz E. A Pharmacoki
 
 ### Reviewer guidance
 
-**Clearance of 2.51 L/h was rejected as physiologically implausible for gadoteric acid in young children, likely due to a scale extraction error.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit h µmol/L ([time] * [substance] / [length] ** 3) vs [mass] * [time] / [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The total clearance of 2.51 L/h, paired with a volume of distribution of 0.161 L, failed the physiological plausibility check. A second reader disputed the absence of a metabolic link between gadoterate meglumine and gadoteric acid, and challenged whether the model was mechanistic or apparent. Extracted — gadoteric acid: AUC 1.59e+03, CLnorm 0.0602 L/h/kg, Vss 0.0473 L/kg, t1/2β 1.35 h, CL 2.51 L/h, V 0.161 L, Q 0.335 L/h.
+A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — gadoteric acid: AUC 1.59e+03 h µmol/L, CLnorm 0.0602 L/h per kg*, Vnorm 0.0473 L/kg*, t1/2β 1.35 h, CL 2.51 L/h, V1 0.161 L, Q 0.335 L/h, V 0.0473 L/kg.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has none, the second reading gadoterate meglumine → gadoteric acid (hydrolysis); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has gadoteric acid, the second reading gadoterate meglumine; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| AUC, h µmol/L | `Q88` · AUC | 1591.1 |  |  |  |  | llm_confirmed (0.6) | Scala_2018_table_p4_3:row0:col1, Scala_2018_table_p4_3:row0:col2, Scala_2018_table_p4_3:row0:col3 |
-| CL/kg, L/h per kg* | `Q354` · CLnorm | 0.0602 | L/h/kg | 1.171e-06 | m3/s | L/h | llm (0.6) | Scala_2018_table_p4_3:row1:col1, Scala_2018_table_p4_3:row1:col2, Scala_2018_table_p4_3:row1:col3 |
-| Vss/kg, L/kg* | `Q65` · Vss | 0.0473 | L/kg | 0.003311 | m3 | L | llm (0.6) | Scala_2018_table_p4_3:row2:col1, Scala_2018_table_p4_3:row2:col2, Scala_2018_table_p4_3:row2:col3 |
-| t1/2β, h | `Q60` · t1/2β | 1.3545 | h | 4876 | s | h | exact (1) | Scala_2018_table_p4_3:row3:col1, Scala_2018_table_p4_3:row3:col2, Scala_2018_table_p4_3:row3:col3 |
+| AUC, h µmol/L | `Q88` · AUC | 1591.1 | h µmol/L |  |  | (h·µM·ol)/l | exact (1) | Scala_2018_table_p4_3:row0:col1, Scala_2018_table_p4_3:row0:col2, Scala_2018_table_p4_3:row0:col3 |
+| CL/kg, L/h per kg* | `Q354` · CLnorm | 0.0602 | L/h per kg* | 1.171e-06 | m3/s | l/(h·kg) | llm (0.6) | Scala_2018_table_p4_3:row1:col1, Scala_2018_table_p4_3:row1:col2, Scala_2018_table_p4_3:row1:col3 |
+| Vss/kg, L/kg* | `Q352` · Vnorm | 0.0473 | L/kg* | 0.003311 | m3 | l/kg | llm (0.6) | Scala_2018_table_p4_3:row2:col1, Scala_2018_table_p4_3:row2:col2, Scala_2018_table_p4_3:row2:col3 |
+| t1/2β, h | `Q60` · t1/2β | 1.3545 | h | 4876 | s | h | half_life_rule (0.95) | Scala_2018_table_p4_3:row3:col1, Scala_2018_table_p4_3:row3:col2, Scala_2018_table_p4_3:row3:col3 |
 | CL | `Q22` · CL | 2.51 | L/h | 6.972e-07 | m3/s | L/h | exact (1) | Scala_2018:results_prose |
-| V1 | `Q61` · V | 0.161 | L | 0.000161 | m3 | L | exact (1) | Scala_2018:results_prose |
+| V1 | `Q63` · V1 | 0.161 | L | 0.000161 | m3 | L | exact (1) | Scala_2018:results_prose |
 | Q | `Q30` · Q | 0.335 | L/h | 9.306e-08 | m3/s | L/h | exact (1) | Scala_2018:results_prose |
+| volume of distribution Vdss estimated in the study | `Q61` · V | 0.0473 | L/kg | 0.003311 | m3 | L | boundary (0.8) | Scala_2018:discussion_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -82,37 +84,42 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the link
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'L/kg*' (Vss)
+- unit_dimension_mismatch: 'AUC, h µmol/L' → Q88 (unit '[time] * [substance] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- unit_dimension_unknown: 'L/h per kg*' (CLnorm)
+- unit_dimension_unknown: 'L/kg*' (Vnorm)
 - salvaged Q22 ('CL'=2.51) from results prose — parameter table was unreadable
 - salvaged Q63 ('V1'=0.161) from results prose — parameter table was unreadable
 - salvaged Q30 ('Q'=0.335) from results prose — parameter table was unreadable
-- implicit units: 'AUC, h µmol/L' — the LLM proposed 'μmol·h/L', whose dimension does not fit Q88; left unset
-- implicit units: 'CL/kg, L/h per kg*' → L/h/kg (from the paper text: 'The paper states “The median CL adjusted to BW was estimated at 0.06 L/h per kg.”')
-- implicit units: 'Vss/kg, L/kg*' → L/kg (from the paper text: 'The paper states “The median Vss adjusted to BW was estimated at 0.047 L/kg.”')
+- salvaged Q61 ('volume of distribution Vdss estimated in the study'=0.0473) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gadoteric acid
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V1' is the general volume)
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-
-**Extraction notes:**
-- final table T3: grid unusable → re-running vision table extraction for Scala_2018
-- LLM region Scala_2018:other_prose: no JSON records returned
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.214 (3/14 fields) | 11 |
 | `qwen3.8-27b` | not confirmed | 0.312 (5/16 fields) | 11 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>22 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc].value` | 1591.1 | 2841 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/kg].parameter_id` | Q354 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/kg].value` | 0.0602 | 0.1019 | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` | 2.51 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` | 0.335 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2β].value` | 1.3545 | 3.0291 | mismatch |
+| `gpt-oss-120b` | `parameters[v1]` | 0.161 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution vdss estimated in the study]` | 0.0473 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss/kg].parameter_id` | Q352 | Q65 | mismatch |
+| `gpt-oss-120b` | `parameters[vss/kg].value` | 0.0473 | 0.1597 | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | gadoteric acid | gadoterate meglumine | mismatch |
 | `qwen3.8-27b` | `model.links` | [] | [['gadoterate meglumine', 'gadoteric acid', 'hydrolysis']] | mismatch |
 | `qwen3.8-27b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `qwen3.8-27b` | `parameters[auc, h umol/l]` |  | 1591.1 | only_one_extracted |
@@ -135,21 +142,18 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 7 |  |  |  |
-| C0b_disposition_core | pass |  |  |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |  |  |
-| C1_half_life_beta | fail | 1.35 | 0.044 | 0.0326 | 0.25 | reported t½β |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  |  |  | ['Scala_2018_table_p4_3:row1:col1', 'Scala_2018_table_p4_3:row1:col2', 'Scala_2018_table_p4_3:row1:col3'] |
-| C5_dimension_Q60 | pass | [time] |  |  |  | ['Scala_2018_table_p4_3:row3:col1', 'Scala_2018_table_p4_3:row3:col2', 'Scala_2018_table_p4_3:row3:col3'] |
-| C5_dimension_Q65 | pass | [length] ** 3 |  |  |  | ['Scala_2018_table_p4_3:row2:col1', 'Scala_2018_table_p4_3:row2:col2', 'Scala_2018_table_p4_3:row2:col3'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 |  |  |  | ['Scala_2018_table_p4_3:row0:col1', 'Scala_2018_table_p4_3:row0:col2', 'Scala_2018_table_p4_3:row0:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.51 |  |  | ['Scala_2018:results_prose'] |
-| C8_topology | pass |  |  |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.51 L/h |  |  | ['Scala_2018:results_prose'] |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.161 L |  |  | ['Scala_2018:results_prose'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 3.31 L |  |  | ['Scala_2018_table_p4_3:row2:col1', 'Scala_2018_table_p4_3:row2:col2', 'Scala_2018_table_p4_3:row2:col3'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 8 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q60 | pass | [time] |  | ['Scala_2018_table_p4_3:row3:col1', 'Scala_2018_table_p4_3:row3:col2', 'Scala_2018_table_p4_3:row3:col3'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | h µmol/L ([time] * [substance] / [length] ** 3) | ['Scala_2018_table_p4_3:row0:col1', 'Scala_2018_table_p4_3:row0:col2', 'Scala_2018_table_p4_3:row0:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.51 | ['Scala_2018:results_prose'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.51 L/h | ['Scala_2018:results_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 3.31 L | ['Scala_2018:discussion_prose'] |
+| C9_phys_window_Q63 | fail | volume within physiological range | 0.161 L | ['Scala_2018:results_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -173,4 +177,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgadoteric_acid%5D%20GadotericAcid_Scala2018_reference&body=Drug%3A%20gadoteric_acid%0ARecord%3A%20GadotericAcid_Scala2018_reference%0APaper%3A%20Scala_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gadoteric_acid/GadotericAcid_Scala2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 18:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:06 UTC</sub>

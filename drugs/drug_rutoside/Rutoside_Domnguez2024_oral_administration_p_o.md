@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> The record was rejected because the dose-normalised AUC unit h/L/kg is dimensionally incorrect, and apparent clearance and volume parameters violate coherence rules.
+> C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit h/L/kg ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2024_oral_administration_p_o" status="rejected" stale="false" population="New Zealand rabbits" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -59,13 +59,13 @@ Domínguez Moré GP, Rey DP, Valderrama IH, Ospina LF, Aragón DM. Rutin and Phy
 
 ### Reviewer guidance
 
-**The record was rejected because the dose-normalised AUC unit h/L/kg is dimensionally incorrect, and apparent clearance and volume parameters violate coherence rules.**
+**C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit h/L/kg ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The reported unit for dose-normalised AUC is h/L/kg, which dimensionally conflicts with the expected mass-time/volume form. Additionally, the apparent parameters clearance (13.59 L/h/kg) and volume (59.08 L/kg) exhibit double correction incoherence. A secondary reviewer disagreed on several extracted values, leaving the record with unverified parameters. Extracted — rutoside: AUC∞ 7.79e+03 ng·h/mL, Cmax 1.17e+03 ng/mL, tmax 0.75 h, V/F 59.1 L/kg, CL/F 13.6 L/h/kg, kel 0.234 h−1, MRT 11.8 h, AUC/dose 0.078 h/L/kg, … (+2); quercetin: fm 2.38 p.o..
+A reported unit could not be converted (AUC∞, Cmax, AUC/dose and C0), so that value has no SI equivalent. Extracted — rutoside: AUC∞ 7.79e+03 ng·h/mL, Cmax 1.17e+03 ng/mL, tmax 0.75 h, V/F 59.1 L/kg, CL/F 13.6 L/h/kg, kel 0.234 h−1, MRT 11.8 h, AUC/dose 0.078 h/L/kg, … (+2); quercetin: fm 2.38 p.o..
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rutin, the second reading unknown; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

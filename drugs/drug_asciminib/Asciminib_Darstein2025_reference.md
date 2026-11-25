@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Asciminib’s ka was unreported and defaulted, so this record was held back despite listing CL/F at 6.84 L/h.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="asciminib" model-id="Asciminib_Darstein2025_reference" status="needs_review" stale="false" population="patients with CML and Ph+ acute lymphoblastic leukemia" measured-compound="asciminib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="asciminib" model-id="Asciminib_Darstein2025_reference" status="needs_review" stale="false" population="patients with chronic myeloid leukemia" measured-compound="asciminib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Darstein C, Yoon D, Yang Y, Kapoor S, Dasgupta K, Wu S et al. Population pharmacokinetic modeling of asciminib in support of exposure-response and ethnic sensitivity analyses in patients with chronic myeloid leukemia. Cancer chemotherapy and pharmacology 95(1):39 (2025).
@@ -17,13 +17,13 @@ Darstein C, Yoon D, Yang Y, Kapoor S, Dasgupta K, Wu S et al. Population pharmac
 
 ## Population and dosing
 
-**Population:** patients with CML and Ph+ acute lymphoblastic leukemia · condition chronic myeloid leukemia and Ph+ acute lymphoblastic leukemia.
+**Population:** patients with chronic myeloid leukemia · condition chronic myeloid leukemia · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 2 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_asciminib/Asciminib_Darstein2025_reference/Asciminib_Darstein2025_reference.svg" alt="Asciminib_Darstein2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -35,10 +35,11 @@ Darstein C, Yoon D, Yang Y, Kapoor S, Dasgupta K, Wu S et al. Population pharmac
 |---|---|---|---|
 | apparent clearance | CL/F | 6.84 | L/h |
 | steady-state volume of distribution | Vss | 110 | L |
+| steady-state daily AUC | AUCSS | 12 | ng.h/mL |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +49,13 @@ Darstein C, Yoon D, Yang Y, Kapoor S, Dasgupta K, Wu S et al. Population pharmac
 
 ### Reviewer guidance
 
-**Asciminib’s ka was unreported and defaulted, so this record was held back despite listing CL/F at 6.84 L/h.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record came from the abstract alone, so reported summary statistics stood in for a fitted model. Ka and Tlag were defaulted rather than estimated from this paper; ka therefore lacks paper support and affects the simulated profile. First-order depot absorption was imposed with F=1 and Fm=1, and Vss of 110 L was used as the distribution volume; this reproduces AUC and terminal half-life but not the early distribution phase. The record has no steady-state daily AUC, whereas the second reader reports 12. Extracted — asciminib: CL/F 6.84 L/h, Vss 110 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — asciminib: CL/F 6.84 L/h, Vss 110 L, AUCSS 12 ng.h/mL.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of steady-state daily auc: this record has none, the second reading 12. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absolute glomerular filtration rate: this record has none, the second reading 90; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -62,6 +63,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 |---|---|---|---|---|---|---|---|---|
 | apparent clearance | `Q27` · CL/F | 6.84 | L/h | 1.9e-06 | m3/s | l/h | exact (1) | Darstein_2025:abstract |
 | steady-state volume of distribution | `Q65` · Vss | 110 | L | 0.11 | m3 | l | llm_corrected (0.6) | Darstein_2025:abstract |
+| steady-state daily AUC | `Q18` · AUCSS | 12 | ng.h/mL | 0.0432 | kg*s/m3 | (h·ng)/ml | llm_corrected (0.6) | Darstein_2025:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,11 +80,8 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 - `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
 
 **Interpretation flags:**
-- dropped value-less row: 'steady-state daily AUC'
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=asciminib
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Darstein_2025_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -90,17 +89,18 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.857 (6/7 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[steady-state daily auc]` |  | 12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absolute glomerular filtration rate]` |  | 90 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[steady-state daily auc]` | 12 |  | only_one_extracted |
 
 </details>
 
@@ -114,9 +114,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q18 | pass | [mass] * [time] / [length] ** 3 |  | ['Darstein_2025:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Darstein_2025:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Darstein_2025:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -126,16 +127,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=asciminib) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=asciminib) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -215,4 +216,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Basciminib%5D%20Asciminib_Darstein2025_reference&body=Drug%3A%20asciminib%0ARecord%3A%20Asciminib_Darstein2025_reference%0APaper%3A%20Darstein_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_asciminib/Asciminib_Darstein2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 21:31 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:43 UTC</sub>

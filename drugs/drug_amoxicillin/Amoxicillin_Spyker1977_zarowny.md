@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability was not extracted, leaving it at library defaults, while central-peripheral transfer rate constants were missing from the record.
+> F use library defaults, not estimates from this paper; t3_param_coverage (+1 more).
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Spyker1977_zarowny" status="needs_review" stale="false" population="healthy adults" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Spyker DA, Rugloski RJ, Vann RL, O'Brien WM. Pharmacokinetics of amoxicillin: do
 
 ### Reviewer guidance
 
-**Bioavailability was not extracted, leaving it at library defaults, while central-peripheral transfer rate constants were missing from the record.**
+**F use library defaults, not estimates from this paper; t3_param_coverage (+1 more).**
 
-The model record lacks explicit estimates for bioavailability, forcing the use of generic placeholder values not supported by the paper. Additionally, the central-to-peripheral transfer rate constant was not emitted, causing a parameter coverage failure. A second reader also identified value discrepancies for the transfer rate constant and clearance, complicating the record's validation. Extracted — amoxicillin: k12 1.29 /h, k21 1.94 /h, kabs 1.43 /h, CL 0.245 liters/kg/h, V 0.187 liters/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — amoxicillin: k12 1.29 /h, k21 1.94 /h, kabs 1.43 /h, CL 0.245 liters/kg/h, V 0.187 liters/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

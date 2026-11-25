@@ -22,7 +22,8 @@ Selumetinib is a protein kinase inhibitor used to treat neurofibromatosis type I
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | selumetinib | parent | 457.68 | C17H15BrClFN4O3 | DrugBank | [10127622](https://pubchem.ncbi.nlm.nih.gov/compound/10127622) | Köllő_2026, Patel_2017, Patel_2018, Tong_2019 |
-| N-desmethyl-selumetinib (N-desmethyl selumetinib) | metabolite | 443.657 | C16H13BrClFN4O3 | PubChem | [10238358](https://pubchem.ncbi.nlm.nih.gov/compound/10238358) | Patel_2017, Patel_2018, Tong_2019 |
+| N-desmethyl selumetinib | metabolite | — (mass units only) | — | — | — | — |
+| N-desmethyl-selumetinib | metabolite | 443.657 | C16H13BrClFN4O3 | PubChem | [10238358](https://pubchem.ncbi.nlm.nih.gov/compound/10238358) | Patel_2017 |
 
 ## popPK records
 
@@ -32,6 +33,13 @@ Selumetinib is a protein kinase inhibitor used to treat neurofibromatosis type I
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Patel_2017_reference](drugs/drug_selumetinib/Selumetinib_Patel2017_reference.md) | — | parent + metabolite (no model) | 12 | Patel YT et al., Population Pharmacokinetics of Selumeti…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12175](https://doi.org/10.1002/psp4.12175) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Patel_2018_reference](drugs/drug_selumetinib/Selumetinib_Patel2018_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Patel P et al., Population pharmacokinetics of the MEK…, British journal of clinical… (2018) | [10.1111/bcp.13404](https://doi.org/10.1111/bcp.13404) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Tong_2019_reference](drugs/drug_selumetinib/Selumetinib_Tong2019_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Tong X et al., Population Pharmacokinetic and Exposure…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1295](https://doi.org/10.1002/jcph.1295) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Zuo_2024_reference](drugs/drug_selumetinib/Selumetinib_Zuo2024_reference.md) | — | parent + metabolite (no model) | 0 | Zuo P et al., A Population Pharmacokinetic Assessment…, Clinical pharmacology in dr… (2024) | [10.1002/cpdd.1400](https://doi.org/10.1002/cpdd.1400) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhou_2016_QTcF](drugs/drug_selumetinib/pd_Zhou_2016_QTcF.md) | QTcF ← selumetinib · model not identified | — | Zhou D et al., Evaluation of the Effect of Selumetinib…, Clinical therapeutics (2016) | [10.1016/j.clinthera.2016.10.004](https://doi.org/10.1016/j.clinthera.2016.10.004) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,40 +53,44 @@ Selumetinib is a protein kinase inhibitor used to treat neurofibromatosis type I
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:54 | 5:29 | 0/4/0 | 0/0/0 | 0/0/0 | 105,185/25,310 | openai / gpt-6-luna | 4 | 1/3 | 3/1 | 0 |
+| 2026-11-24 04:29 | 0:24 | 0/5/0 | 1/0/0 | 0/0/0 | 9,519/3,135 | einfracz / qwen3.8-27b | 4 | 1/3 | 3/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned
-- **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 0
+- **screened:** 5  ·  **relevant:** 5
+- **records:** 5  ·  extracted 0  ·  needs review 0  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Patel_2018.pdf` | Patel P et al., Population pharmacokinetics of the MEK…, British journal of clinical… (2018) | popPK | 10 | [10.1111/bcp.13404](https://doi.org/10.1111/bcp.13404) | [28833380](https://pubmed.ncbi.nlm.nih.gov/28833380) | The human population-PK model reports numeric selumetinib clearance and central volume estimates. |
-| `Tong_2019.pdf` | Tong X et al., Population Pharmacokinetic and Exposure…, Journal of clinical pharmac… (2019) | popPK | 10 | [10.1002/jcph.1295](https://doi.org/10.1002/jcph.1295) | [30102413](https://pubmed.ncbi.nlm.nih.gov/30102413) | Human population-PK model reports numeric selumetinib clearance and central volume in the evidence. |
-| `Zuo_2024.pdf` | Zuo P et al., A Population Pharmacokinetic Assessment…, Clinical pharmacology in dr… (2024) | popPK | 10 | [10.1002/cpdd.1400](https://doi.org/10.1002/cpdd.1400) | [38591154](https://pubmed.ncbi.nlm.nih.gov/38591154) | The human population-PK models are described, but numeric disposition parameter values are not provided. |
+| `Zuo_2024.pdf` | Zuo P et al., A Population Pharmacokinetic Assessment…, Clinical pharmacology in dr… (2024) | popPK | 10 | [10.1002/cpdd.1400](https://doi.org/10.1002/cpdd.1400) | [38591154](https://pubmed.ncbi.nlm.nih.gov/38591154) | The study reports a population PK model and specific geometric mean AUC ratios for selumetinib, but detailed numeric parameter estimates (CL, V, etc.) are not fully enumerated in the text evidence. |
 
-<sub>queue written 2026-10-07 06:49 UTC</sub>
+<sub>queue written 2026-11-24 04:29 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Campagne_2021 | irrelevant | 2 | 1 | This review gives an approximate half-life but no original quantitative disposition or population-PK parameter values. |
-| popPK | Schalkwijk_2021 | relevant | 8 | 0 | The evidence suggests a compartmental model for selumetinib’s metabolite, but includes no readable numeric parameter values. |
-| popPK | Zhou_2016 | irrelevant | 0 | 0 | This is an exposure–QTc analysis and reports no quantitative selumetinib disposition parameters. |
-| popPK | Zuo_2024 | relevant | 10 | 2 | The human population-PK models are described, but numeric disposition parameter values are not provided. |
-| popPK | unknown_2017 | relevant | 9 | 0 | This is a corrigendum to a human population-PK study, but no numeric parameter values are present in the provided evidence. |
+| popPK | Campagne_2021 | irrelevant | 2 | 0 | The paper is a narrative review that summarizes pharmacokinetic characteristics and mentions the development of population models, but it does not present original quantitative parameter values (CL, V, etc.) in the provided text. |
+| PGx | Campagne_2021 | not_relevant | 2 | 5 | The text mentions "Asian ethnicity" as a covariate for clearance but does not report specific genetic variants, genotypes, or a pharmacogenomic effect size. |
+| PGx | Patel_2018 | not_relevant | 0 | 0 | The study reports population pharmacokinetics and evaluates non-genetic covariates (e.g., race, weight, hepatic function, drug interactions) but does not investigate or report the impact of specific gene variants or genotypes on selumetinib PK. |
+| popPK | Schalkwijk_2021 | irrelevant | 0 | 0 | The provided text contains only a structural diagram label and software metadata, with no quantitative pharmacokinetic parameters or study details for selumetinib. |
+| PGx | Schalkwijk_2021 | not_relevant | 0 | 0 | The text is a fragment containing chemical identifiers and software metadata, with no report of a pharmacogenomic effect on PK or PD parameters. |
+| PGx | Tong_2019 | not_relevant | 0 | 0 | The paper describes a population pharmacokinetic and exposure-response analysis but does not report any analysis of the impact of genetic variants or genotypes on the pharmacokinetic or pharmacodynamic parameters of selumetinib. |
+| popPK | Zhou_2016 | irrelevant | 0 | 0 | The study is a QT/QTc safety assessment that focuses on cardiac repolarization and exposure-QT modeling, not on pharmacokinetic disposition parameters like clearance or volume of distribution. |
+| PGx | Zhou_2016 | not_relevant | 0 | 0 | The paper is a Thorough QT study in healthy subjects and does not investigate any pharmacogenomic variant or genotype. |
+| PGx | Zuo_2024 | not_relevant | 0 | 0 | The paper evaluates the effect of food intake on pharmacokinetics, not genetic variants or phenotypes. |
+| popPK | unknown_2017 | irrelevant | 0 | 0 | The paper is a corrigendum (errata) containing only typographical corrections and no original quantitative pharmacokinetic data. |
+| PGx | unknown_2017 | not_relevant | 0 | 0 | The text is a corrigendum correcting typographical errors in a pharmacokinetic paper and does not report any pharmacogenomic effects or findings. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bselumetinib%5D&body=Drug%3A%20selumetinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_selumetinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 06:50 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 04:29 UTC</sub>

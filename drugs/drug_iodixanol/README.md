@@ -14,9 +14,19 @@ Iodixanol is a non-ionic iodinated radiocontrast agent used for imaging. It is g
 
 <small>Summary written by `qwen3.8-27b` from [Wikidata Q2419291](https://www.wikidata.org/wiki/Q2419291), [Wikipedia](https://en.wikipedia.org/wiki/Iodixanol?oldid=1365021466) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
 
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| iodixanol | parent | 1550.18 | C35H44I6N6O15 | DrugBank | [3724](https://pubchem.ncbi.nlm.nih.gov/compound/3724) | Nossen_1995 |
+
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Nossen_1995_reference](drugs/drug_iodixanol/Iodixanol_Nossen1995_reference.md) | — | 1-compartment (no model) | 5 | Nossen JO et al., Elimination of the non-ionic X-ray cont…, Scandinavian journal of cli… (1995) | [10.3109/00365519509104972](https://doi.org/10.3109/00365519509104972) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -30,36 +40,42 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:11 | 0:24 | 0/0/0 | 0/0/0 | 0/0/0 | 39,751/703 | ollama / glm-5.3-flash | 6 | 0/2 | 6/0 | 0 |
+| 2026-11-24 00:28 | 0:03 | 0/1/0 | 0/0/0 | 0/0/0 | 4,029/175 | einfracz / qwen3.8-27b | 6 | 0/3 | 6/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 20 matched, 14 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Nossen_1995.pdf` | Nossen JO et al., Elimination of the non-ionic X-ray cont…, Scandinavian journal of cli… (1995) | popPK | 10 | [10.3109/00365519509104972](https://doi.org/10.3109/00365519509104972) | [7569737](https://pubmed.ncbi.nlm.nih.gov/7569737) | PK parameters for iodixanol (half-life, Vd, plasma and renal clearance) are reported directly in the abstract. |
-
-<sub>queue written 2026-10-07 22:10 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Eide_2026 | relevant | 8 | 3 | Population PK model of intrathecal iodixanol in humans is described (Ka, Tlag, absorption half-life, Cmax, AUC), but the actual numeric parameter values appear only in tables/figures/supplementary material not included in the evidence. |
-| popPK | Joshi-Barr_2013 | irrelevant | 0 | 0 | Iodixanol is used only as an inert density modifier in a tissue-engineering scaffold protocol; no PK parameters are reported. |
-| popPK | Li_2012 | irrelevant | 0 | 0 | This is a BOLD MRI oxygenation study in rats; iodixanol is a contrast agent administered for its renal effect, with no PK disposition parameters (CL, V, half-life, or model) reported. |
+| popPK | Eide_2026 | relevant | 7 | 1 | The study reports a population pharmacokinetic model for iodixanol, but the specific numeric parameter values (CL, V, Ka, etc.) are referenced in tables and figures not fully provided in the evidence. |
+| PGx | Eide_2026 | not_relevant | 0 | 0 | The study evaluates pharmacokinetics in a population context and correlates clearance with demographic/imaging variables, but it does not report any specific effect of a gene variant or genotype on the PK parameters of iodixanol. |
+| popPK | Erdogan_2003 | irrelevant | 1 | 0 | The paper is a clinical review focusing on the nephrotoxicity (renal safety) of iodixanol and does not report pharmacokinetic parameters such as clearance or volume of distribution. |
+| PGx | Erdogan_2003 | not_relevant | 0 | 0 | The paper discusses the clinical efficacy of iodixanol in preventing nephropathy and contains no information on pharmacogenomics, gene variants, or their effect on PK/PD. |
+| popPK | Falkenberg-Jensen_2016 | irrelevant | 0 | 0 | This is a diagnostic imaging feasibility study using iodixanol as a local contrast medium in rabbits and human cadavers, not a pharmacokinetic study reporting systemic disposition parameters. |
+| PGx | Falkenberg-Jensen_2016 | not_relevant | 0 | 0 | The paper is a feasibility study on using iodixanol for CT imaging of the Eustachian tube in animals and cadavers, containing no pharmacogenomic analysis or PK/PD parameter measurements related to gene variants. |
+| popPK | Joshi-Barr_2013 | irrelevant | 0 | 0 | Iodixanol is used as a density modifier in tissue engineering scaffolds, not as the subject of a pharmacokinetic study. |
+| PGx | Joshi-Barr_2013 | not_relevant | 0 | 0 | The paper discusses using iodixanol as a density modifier in a tissue engineering protocol, not as a drug subject to pharmacogenomic analysis. |
+| popPK | Lenhard_2013 | irrelevant | 2 | 0 | The study reports qualitative CT attenuation trends and qualitative renal oxygenation/viscosity changes, but does not provide quantitative pharmacokinetic parameters (e.g., clearance, volume) for iodixanol. |
+| PGx | Lenhard_2013 | not_relevant | 0 | 0 | The paper investigates the physicochemical properties (osmolality) of iodixanol and its effects on renal kinetics and oxygenation in rats, but does not report any gene variants, genotypes, or phenotypes influencing these parameters. |
+| popPK | Li_2012 | irrelevant | 1 | 0 | The study focuses on the physiological effect of iodixanol on renal oxygenation using MRI as a diagnostic tool, not on pharmacokinetic parameters (clearance, volume, etc.). |
+| PGx | Li_2012 | not_relevant | 0 | 0 | The study is a preclinical animal model investigating the effects of physical properties (viscosity/osmolality) and dose on renal oxygenation, with no assessment of genetic variants or pharmacogenomic effects. |
+| PGx | Nossen_1995 | not_relevant | 0 | 0 | The study reports pharmacokinetics in patients with renal impairment but does not involve genetic variants or pharmacogenomics. |
+| popPK | Prionas_2011 | irrelevant | 0 | 0 | The study is an imaging physics/optimization study using iodixanol as a contrast medium to measure attenuation coefficients, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Prionas_2011 | not_relevant | 0 | 0 | The study focuses on optimizing breast CT imaging parameters using iodixanol as a phantom material, with no mention of pharmacogenomics or gene variants. |
+| popPK | Saade_2021 | irrelevant | 0 | 0 | The study is an in-vitro phantom imaging study assessing image reconstruction quality, not a pharmacokinetic study. |
+| PGx | Saade_2021 | not_relevant | 0 | 0 | The study investigates imaging quality and iodine concentration in phantoms, not pharmacokinetic or pharmacodynamic effects of gene variants in humans. |
+| popPK | Van_2019 | irrelevant | 0 | 0 | The study investigates radiation-induced DNA damage in minipigs using iodixanol as a diagnostic contrast agent, without reporting any pharmacokinetic parameters (CL, V, t1/2, etc.) for the drug itself. |
+| PGx | Van_2019 | not_relevant | 0 | 0 | The study investigates the effect of iodine dose on radiation-induced DNA damage in minipigs, not the effect of genetic variants on the pharmacokinetics or pharmacodynamics of iodixanol. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biodixanol%5D&body=Drug%3A%20iodixanol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iodixanol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 00:26 UTC</sub>

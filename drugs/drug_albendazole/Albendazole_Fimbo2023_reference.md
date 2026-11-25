@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P02C&quot;,&quot;href&quot;:&quot;atc/P02C.md&quot;},{&quot;label&quot;:&quot;albendazole&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/&quot;},{&quot;label&quot;:&quot;Fimbo_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Albendazole_Castro2009_reference&quot;,&quot;label&quot;:&quot;Castro_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Castro2009_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Algorta2022_reference&quot;,&quot;label&quot;:&quot;Algorta_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Algorta2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Chhonker2023_reference&quot;,&quot;label&quot;:&quot;Chhonker_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Chhonker2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Formentini2001_reference&quot;,&quot;label&quot;:&quot;Formentini_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Formentini2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Fimbo2023_reference&quot;,&quot;label&quot;:&quot;Fimbo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Fimbo2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Albendazole_Algorta2022_reference&quot;,&quot;label&quot;:&quot;Algorta_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Algorta2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Chhonker2023_reference&quot;,&quot;label&quot;:&quot;Chhonker_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Chhonker2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Formentini2001_reference&quot;,&quot;label&quot;:&quot;Formentini_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Formentini2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Fimbo2023_reference&quot;,&quot;label&quot;:&quot;Fimbo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Fimbo2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper studies ivermectin, not albendazole, so the extracted albendazole parameters are not from a relevant model.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="albendazole" model-id="Albendazole_Fimbo2023_reference" status="rejected" stale="false" population="" measured-compound="albendazole" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Fimbo AM, Mlugu EM, Kitabi EN, Kulwa GS, Iwodyah MA, Mnkugwe RH et al. Populatio
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper studies ivermectin, not albendazole, so the extracted albendazole parameters are not from a relevant model.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source text is identified as a population-PK study of ivermectin where albendazole is merely a co-administered drug. Consequently, the paper does not report fitted albendazole pharmacokinetic parameters, making the specific values for clearance and volumes invalid for this drug. Additionally, the absorption lag time and bioavailability were not explicitly estimated, so no specific values were extracted for these parameters. Extracted — albendazole: CL 7.7 L/h, V1 146 L, V2 207 L, Q 20.4 L/h, kabs 0.708 /h.
+Extracted — albendazole: CL 7.7 L/h, V1 146 L, V2 207 L, Q 20.4 L/h, kabs 0.708 /h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,13 +122,13 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|
-| T0_analyte_identity | fail | albendazole (or metabolite) | paper about another drug |  | paper subject is not albendazole: the paper is about another drug; this one is a co-medication or covariate: This is a population-PK study of ivermectin; albendazole is only a co-administered drug with no albendazole PK parameters reported. |
+| T0_analyte_identity | fail | albendazole (or metabolite) | paper about another drug |  | paper subject is not albendazole: the paper is about another drug; this one is a co-medication or covariate: The study focuses on the pharmacokinetics of ivermectin, while albendazole is only a co-administered agent without reported PK parameters. |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=albendazole) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (10 of 10 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -156,4 +156,4 @@ _All readers agree on the compared fields of this record._
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balbendazole%5D%20Albendazole_Fimbo2023_reference&body=Drug%3A%20albendazole%0ARecord%3A%20Albendazole_Fimbo2023_reference%0APaper%3A%20Fimbo_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_albendazole/Albendazole_Fimbo2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 10:01 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:23 UTC</sub>

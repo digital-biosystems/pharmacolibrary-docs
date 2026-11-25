@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;fostemsavir&quot;,&quot;href&quot;:&quot;drugs/drug_fostemsavir/&quot;},{&quot;label&quot;:&quot;Lagishetty_2020 \u00b7 PD difference vs. placebo for change from baseline in Fridericia-corrected QT interval&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;fostemsavir&quot;,&quot;href&quot;:&quot;drugs/drug_fostemsavir/&quot;},{&quot;label&quot;:&quot;Lagishetty_2020 \u00b7 PD ddQTcF&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fostemsavir_Parasrampuria2025_reference&quot;,&quot;label&quot;:&quot;Parasrampuria_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fostemsavir/Fostemsavir_Parasrampuria2025_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# difference vs. placebo for change from baseline in Fridericia-corrected QT interval — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed</span>
+# ddQTcF — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--neutral" title="gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,9 +14,9 @@
 
 ## Record summary
 
-**As extracted:** Temsavir (TMR) (measured concentrations) drives difference vs. placebo for change from baseline in Fridericia-corrected QT interval (in msec): direct linear effect.
+**As extracted:** Temsavir (concentrations from the PK model of Parasrampuria_2025) drives ddQTcF (in msec): direct linear effect.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Temsavir (TMR) plasma concentration was modeled as a linear predictor of ddQTcF (the difference vs. placebo in change from baseline in Fridericia-corrected QT interval); the paper does not specify a biological mechanism. The slope was 0.00126 msec per ng/mL TMR.
 >
@@ -23,7 +24,7 @@
 
 - **paper:** `Lagishetty_2020`
 - **model family:** `linear`
-- **driver:** `conc_no_pk`
+- **driver:** `cited_pk`
 - **tier:** population
 - **effect:** stimulation/additive
 
@@ -34,7 +35,7 @@ Lagishetty C et al., Effects of Temsavir, Active Moiety of A…, Clinical and tr
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| model term | Intercept | `Q900` ·  | –0.783 | msec | llm | Lagishetty_2020:pdv3 |
+| PD (effect) | Intercept | `Q324` ·  | -0.783 | msec | llm | Lagishetty_2020:pdv3 |
 | PD (effect) | Slope | `Q335` ·  | 0.00126 | msec per ng/mL TMR | llm | Lagishetty_2020:pdv3 |
 
 <details class="legend">
@@ -43,22 +44,47 @@ Lagishetty C et al., Effects of Temsavir, Active Moiety of A…, Clinical and tr
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+## Exposure-response model
+
+`Fostemsavir_Lagishetty2020_PD_ddqtcf` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | -0.783 msec | -0.000783 s |
+| slope | 0.00126 msec per ng/mL TMR | 1.26 (s)/(kg/m3) |
+
+Closed-form check points (response, SI): `at_0` = -0.000783, `per_exposure_unit` = 1.26
+
+Deviations:
+
+- `pd_binding_slope_unit_assumed` — slope unit 'msec per ng/mL TMR' read as msec per ng/mL
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--red">Rejected</span> · route to `human_review`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | fail | negative baseline -0.000783 for a response in msec |
+| `T4_defaults` | pass | nothing defaulted |
+
+Blocking:
+
+- T3 negative baseline -0.000783 for a response in msec
+
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
 
-<details><summary>3 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `qwen3.8-27b` | `driver_compound` | temsavir (TMR) | temsavir | mismatch |
-| `qwen3.8-27b` | `parameters[Q324]` |  | -0.783 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q900]` | –0.783 |  | only_one_extracted |
-
-</details>
+_No second reader extracted anything for this PD record; it is not cross-checked._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -68,23 +94,13 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
 
 <div class="pk-tab-end"></div>
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Prazosin’s absorption-rate constant (ka) had no reported value and was defaulted, so this abstract-only record was held back.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="prazosin" model-id="Prazosin_Grahnn1981_reference" status="needs_review" stale="false" population="patients with hypertension" measured-compound="prazosin" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Grahnén A, Seideman P, Lindström B, Haglund K, von Bahr C. Prazosin kinetics i
 
 ### Reviewer guidance
 
-**Prazosin’s absorption-rate constant (ka) had no reported value and was defaulted, so this abstract-only record was held back.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-Ka used library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by the paper, and Tlag was also defaulted. Only the abstract was read, so its summary statistics stood in for a fitted model; the model also assumed F=1, Fm=1, no molar correction, and first-order depot input for apparent-parameterization extravascular dosing. Extracted — prazosin: t1/2β 3 hr, V/F 0.6 l/kg, CL 0.14 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — prazosin: t1/2β 3 hr, V/F 0.6 l/kg, CL 0.14 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of % of dose recovered unchanged in urine: this record has none, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -149,7 +149,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.727 (8 of 11 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.727 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

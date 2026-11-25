@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-> AUMC and MAT units are recorded as mg/kg, dimensionally inconsistent with their definitions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q20 unit mg/kg ([mass]) vs [mass] * [time] / [length] ** 3; Q73 unit mg/kg ([mass]) vs [time].
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Roder1996_p_o_50_mg_kg" status="rejected" stale="false" population="broiler chickens" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></div>
 
@@ -60,13 +60,13 @@ Roder JD, Chen CL, Chen H, Sangiah S. Bioavailability and pharmacokinetics of ib
 
 ### Reviewer guidance
 
-**AUMC and MAT units are recorded as mg/kg, dimensionally inconsistent with their definitions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q20 unit mg/kg ([mass]) vs [mass] * [time] / [length] ** 3; Q73 unit mg/kg ([mass]) vs [time].**
 
-The area under the first moment curve (AUMC) is listed as 61.20 mg/kg, while its label specifies μg·h²/mL. The mean absorption time (MAT) is recorded as 1.262 mg/kg, contradicting its label which indicates a time unit. These mismatches caused the review to reject the record due to invalid parameter dimensions. Extracted — ibuprofen: A1 70.9 μg/mL, A2 0.38 μg/mL, kabs 6.45 h⁻¹, AUC 26.6 μg·h/mL, AUMC 61.2 mg/kg, MRT 2.29 h, Cmax 23.9 μg/mL, tmax 0.31 h, … (+4).
+A reported unit could not be converted (A1, A2, AUMC and Fab), so that value has no SI equivalent. Extracted — ibuprofen: A1 70.9 μg/mL, A2 0.38 μg/mL, kabs 6.45 h⁻¹, AUC 26.6 μg·h/mL, AUMC 61.2 mg/kg, MRT 2.29 h, Cmax 23.9 μg/mL, tmax 0.31 h, … (+4).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

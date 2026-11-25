@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Fluorouracil's central elimination clearance and second intercompartmental clearance were missing, forcing the use of library defaults that caused the model to be quarantined.
+> No value for fluorouracil's elimination clearance and second intercompartmental clearance; t3_param_coverage (+1 more).
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Coustre1991_wm_jrl" status="model_quarantined" stale="false" population="cancer patients" measured-compound="fluorouracil" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -56,13 +56,13 @@ Coustère C, Mentré F, Sommadossi JP, Diasio RB, Steimer JL. A mathematical mod
 
 ### Reviewer guidance
 
-**Fluorouracil's central elimination clearance and second intercompartmental clearance were missing, forcing the use of library defaults that caused the model to be quarantined.**
+**No value for fluorouracil's elimination clearance and second intercompartmental clearance; t3_param_coverage (+1 more).**
 
-The model record lacks explicit values for fluorouracil's central elimination clearance and second intercompartmental clearance, resulting in the application of library placeholders. Additionally, the absorption rate constant for fluorouracil was identified as missing from the emitted parameter set, contributing to the quarantine decision. The second reader disagreed on the metabolic pathway structure, arguing that 5-fluorouracil should form FUPA directly rather than sequentially through FUH2. Extracted — fluorouracil: V1 6.3 L, V2 228 L, Q 0.042 L/min, kel 0.181 1/min, k21 0.116 1/min, kabs 0.13 1/h; FUH2: V1 34 L, V2 6.85 L; FUPA: k41 0.058 1/min; FBAL: kel 0.041 1/min.
+The model was built, but fluorouracil's elimination clearance and second intercompartmental clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — fluorouracil: V1 6.3 L, V2 228 L, Q 0.042 L/min, kel 0.181 1/min, k21 0.116 1/min, kabs 0.13 1/h; FUH2: V1 34 L, V2 6.85 L; FUPA: k41 0.058 1/min; FBAL: kel 0.041 1/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading 5-fluorouracil; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -5,11 +5,11 @@
 
 # Arketamine — `Arketamine_Stojanova2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:15 UTC (Rejected), but the paper was screened again on 2026-10-09 09:11 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The intercompartmental clearance Q for tacrolimus has a dimension mismatch because it is reported in mass-normalized units (L/h/70 kg) instead of pure clearance units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q48 unit L/h/70 kg ([length] ** 3 / [time]) vs 1 / [time].
 
-<div class="pk-model-meta" hidden drug="Arketamine" model-id="Arketamine_Stojanova2026_reference" status="rejected" stale="true" population="heart transplant recipient" measured-compound="tacrolimus" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="Arketamine" model-id="Arketamine_Stojanova2026_reference" status="rejected" stale="false" population="heart transplant recipient" measured-compound="tacrolimus" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Stojanova J, Murnion B, Burrows F, Carlos L, Mizuno T, Nadai T et al. Continuous Subcutaneous Ketamine Infusion May Induce Tacrolimus and Sirolimus Clearance: A Case Report. Pharmacotherapy 46(6):e70150 (2026).
@@ -46,7 +46,7 @@ Stojanova J, Murnion B, Burrows F, Carlos L, Mizuno T, Nadai T et al. Continuous
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,11 +56,13 @@ Stojanova J, Murnion B, Burrows F, Carlos L, Mizuno T, Nadai T et al. Continuous
 
 ### Reviewer guidance
 
-**The intercompartmental clearance Q for tacrolimus has a dimension mismatch because it is reported in mass-normalized units (L/h/70 kg) instead of pure clearance units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q48 unit L/h/70 kg ([length] ** 3 / [time]) vs 1 / [time].**
 
-The parameter Q, representing drug distribution between kinetic compartments, is given a value of 23.7 with the unit L/h/70 kg. This unit includes a body weight normalization that is dimensionally incompatible with a simple intercompartmental clearance term in a two-compartment model. Consequently, the model record was rejected due to this structural unit inconsistency. Extracted — arketamine: CL 8.39 L/h/70 kg, V1 104 L/70 kg, ktr 3.3, kcomp 0.129 L/h/70 kg, V2 417 L/70 kg, kabs 2.18, Q 23.7 L/h/70 kg, tlag 0.24 h.
+A reported unit could not be converted (kcomp), so that value has no SI equivalent. Extracted — arketamine: CL 8.39 L/h/70 kg, V1 104 L/70 kg, ktr 3.3, kcomp 0.129 L/h/70 kg, V2 417 L/70 kg, kabs 2.18, Q 23.7 L/h/70 kg, tlag 0.24 h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 8.39, the second reading 5.10; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -98,6 +100,34 @@ The parameter Q, representing drug distribution between kinetic compartments, is
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (4/12 fields) | 8 |
+
+<details><summary>8 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl].value` | 8.39 | 5.10 | mismatch |
+| `gpt-oss-120b` | `parameters[k56].value` | 0.129 | 0.094 | mismatch |
+| `gpt-oss-120b` | `parameters[ka].value` | 2.18 | 3.86 | mismatch |
+| `gpt-oss-120b` | `parameters[ktr].value` | 3.3 | 2.09 | mismatch |
+| `gpt-oss-120b` | `parameters[lag time].value` | 0.24 | 0.98 | mismatch |
+| `gpt-oss-120b` | `parameters[q].value` | 23.7 | 8.9 | mismatch |
+| `gpt-oss-120b` | `parameters[v1].value` | 104.1 | 228.7 | mismatch |
+| `gpt-oss-120b` | `parameters[v2].value` | 416.9 | 791.9 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

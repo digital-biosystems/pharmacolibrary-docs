@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;teniposide&quot;,&quot;href&quot;:&quot;drugs/drug_teniposide/&quot;},{&quot;label&quot;:&quot;Cheng_1999 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Teniposide_Sinkule1984_reference&quot;,&quot;label&quot;:&quot;Sinkule_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_teniposide/Teniposide_Sinkule1984_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -154,4 +155,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bteniposide%5D%20Teniposide_Cheng1999_reference&body=Drug%3A%20teniposide%0ARecord%3A%20Teniposide_Cheng1999_reference%0APaper%3A%20Cheng_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_teniposide/Teniposide_Cheng1999_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 13:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:40 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected due to a unit dimension error for AUC/dose and conflicting parameter values.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit h∙L−1 ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="cefazolin" model-id="Cefazolin_Wassef2026_all" status="rejected" stale="false" population="adults undergoing abdominal surgery (obese and non-obese)" measured-compound="cefazolin" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Wassef A, Kosicka-Noworzyń K, Back H, Siemiątkowska A, Yohn C, Sadek R et al. 
 
 ### Reviewer guidance
 
-**The record was rejected due to a unit dimension error for AUC/dose and conflicting parameter values.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit h∙L−1 ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The dose-normalized area under the curve (AUC/dose) is reported with units of h∙L⁻¹, which is dimensionally incompatible with the expected mass-based dimension. Additionally, multiple key pharmacokinetic values, including AUC∞ and Clearance, differ between the original record and a secondary review. Extracted — cefazolin: AUC∞ 0.74 h∙g∙L−1, AUC/dose 0.33 h∙L−1, AUCt 0.48 h∙g∙L−1, CL 3.59 L∙h⁻¹, t1/2z 2.58 h, Vss 11.1 L, V 11.9 L.
+A reported unit could not be converted (AUC∞, AUC/dose and AUCt), so that value has no SI equivalent. Extracted — cefazolin: AUC∞ 0.74 h∙g∙L−1, AUC/dose 0.33 h∙L−1, AUCt 0.48 h∙g∙L−1, CL 3.59 L∙h⁻¹, t1/2z 2.58 h, Vss 11.1 L, V 11.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc0-inf].value`: this record has 0.74, the second reading 0.83; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N04B&quot;,&quot;href&quot;:&quot;atc/N04B.md&quot;},{&quot;label&quot;:&quot;rotigotine&quot;,&quot;href&quot;:&quot;drugs/drug_rotigotine/&quot;},{&quot;label&quot;:&quot;Zhang_2019 \u00b7 PD Change in International Restless Leg Syndrome Study Group rating scale score&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N04B&quot;,&quot;href&quot;:&quot;atc/N04B.md&quot;},{&quot;label&quot;:&quot;rotigotine&quot;,&quot;href&quot;:&quot;drugs/drug_rotigotine/&quot;},{&quot;label&quot;:&quot;Zhang_2019 \u00b7 PD International Restless Leg Syndrome Study Group (IRLS) rating scale&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Change in International Restless Leg Syndrome Study Group rating scale score — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+# International Restless Leg Syndrome Study Group (IRLS) rating scale — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,7 +13,7 @@
 
 ## Record summary
 
-**As extracted:** Rotigotine (the dose) drives Change in International Restless Leg Syndrome Study Group rating scale score (in points): direct Emax (saturable) effect.
+**As extracted:** Rotigotine (the dose) drives International Restless Leg Syndrome Study Group (IRLS) rating scale (in points) (inhibition; the model form was not identified).
 
 **Model:** No model was generated from this record.
 
@@ -22,10 +22,10 @@
 > <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Zhang_2019`
-- **model family:** `emax`
+- **model family:** `unknown`
 - **driver:** `dose_only`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/additive
 
 ## Citation
 Zhang N et al., Quantitative Comparison of the Efficaci…, Journal of clinical pharmac… (2019)
@@ -34,8 +34,7 @@ Zhang N et al., Quantitative Comparison of the Efficaci…, Journal of clinical 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | Emax,IRLS (placebo) | `Q323` ·  | -9.34 | points | direction | Zhang_2019:pdv3 |
-| PD (effect) | Emax,IRLS (dopaminergic agonists, incl. rotigotine) | `Q323` ·  | -7.7-0.682×(baselineIRLSscore-24) | points | direction | Zhang_2019:pdv3 |
+| PD (effect) | Emax,IRLS | `Q323` ·  | -7.7-0.682×(baselineIRLSscore-24) | points | direction | Zhang_2019:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -44,7 +43,7 @@ Zhang N et al., Quantitative Comparison of the Efficaci…, Journal of clinical 
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -54,7 +53,7 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `effect_form` | proportional | additive | mismatch |
+| `gpt-oss-120b` | `model_family` | unknown | emax | mismatch |
 | `gpt-oss-120b` | `parameters[Q323]` | -7.7-0.682×(baselineIRLSscore-24) |  | only_one_extracted |
 
 </details>

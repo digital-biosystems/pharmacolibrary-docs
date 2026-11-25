@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Aflibercept clearance (49.35 µL/day) and volume (58.71 mL) fail physiological plausibility checks due to unit extraction errors.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit day -1 (1 / [time]) vs 1 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_LuacesRodrguez2020_89_zr_dfo" status="rejected" stale="false" population="rats" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Luaces-Rodríguez A, Del Amo EM, Mondelo-García C, Gómez-Lado N, Gonzalez F, R
 
 ### Reviewer guidance
 
-**Aflibercept clearance (49.35 µL/day) and volume (58.71 mL) fail physiological plausibility checks due to unit extraction errors.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit day -1 (1 / [time]) vs 1 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists ocular clearance as 49.35 µL/day and volume of distribution as 58.71 mL, magnitudes outside physiological ranges. This indicates unit or scale extraction errors. Additionally, a reported time unit could not be converted to SI, preventing validation of the rate constants. Extracted — aflibercept: λ1 3.76 day -1, kel 0.15 day -1, t1/2α 0.19 day, t1/2β 4.69 day, AUC∞ 15, CL 49.4 µL•day -1, V 58.7 mL.
+A reported unit could not be converted (λ1 and CL), so that value has no SI equivalent. Extracted — aflibercept: λ1 3.76 day -1, kel 0.15 day -1, t1/2α 0.19 day, t1/2β 4.69 day, AUC∞ 15, CL 49.4 µL•day -1, V 58.7 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aflibercept, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

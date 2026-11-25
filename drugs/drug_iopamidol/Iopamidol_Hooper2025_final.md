@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The iopamidol renal clearance exponent and blood clearance parameter values were not independently verified by a second reader, resulting in a disputed model review.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="iopamidol" model-id="Iopamidol_Hooper2025_final" status="needs_review" stale="false" population="healthy adults with varying kidney function" measured-compound="iopamidol" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Hooper L, Heung M, Wang L, Matvekas A, Alikhani R, Kenes MT et al. Pharmacokinet
 
 ### Reviewer guidance
 
-**The iopamidol renal clearance exponent and blood clearance parameter values were not independently verified by a second reader, resulting in a disputed model review.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists the renal function coefficient for iopamidol clearance as 0.535 and blood clearance as 0.59 mL/min. A second reader disagreed with the existence of the renal coefficient and the blood clearance value, failing to confirm these specific entries. Additionally, the volume normalization parameter was classified with a different identifier than intended by the original reviewer. Extracted — iopamidol: CL 61.7 mL/min, CLb 0.59 mL/min, V1 6.03e+03 mL, Q 119 mL/min, V2 4.15e+03 mL, Vnorm 0.908 L.
+Extracted — iopamidol: CL 61.7 mL/min, CLb 0.59 mL/min, V1 6.03e+03 mL, Q 119 mL/min, V2 4.15e+03 mL, Vnorm 0.908 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of beta_cl_logtegfr_comb: this record has 0.535, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -176,7 +176,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.75 (9 of 12 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (9 of 12 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

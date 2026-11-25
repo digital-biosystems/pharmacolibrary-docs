@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Indocyanine green clearance was rejected for implausible magnitude due to a unit or scale extraction error in the record.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Carpenter2018_reference" status="rejected" stale="false" population="" measured-compound="indocyanine_green" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Carpenter GW, Myers HG, Sherer EA, Evans KA, O'Neal DP. Closed-Loop Intravenous 
 
 ### Reviewer guidance
 
-**Indocyanine green clearance was rejected for implausible magnitude due to a unit or scale extraction error in the record.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a total clearance of 1.1 mL/min for indocyanine green. This value falls outside the expected physiological range, indicating a likely extraction error in units or scale. The review identified this parameter as the primary cause for the rejection of the model. Extracted — indocyanine green: CL 1.1 mL/min, V 3.01 mL.
+Extracted — indocyanine green: CL 1.1 mL/min, V 3.01 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q315: this record has 0.0906, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,4 +134,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindocyanine_green%5D%20IndocyanineGreen_Carpenter2018_reference&body=Drug%3A%20indocyanine_green%0ARecord%3A%20IndocyanineGreen_Carpenter2018_reference%0APaper%3A%20Carpenter_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indocyanine_green/IndocyanineGreen_Carpenter2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 21:02 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:02 UTC</sub>

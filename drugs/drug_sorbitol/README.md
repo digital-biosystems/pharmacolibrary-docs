@@ -33,7 +33,7 @@ Sorbitol is a sugar alcohol used as an osmotically acting laxative to treat cons
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span> | [Takada_2017_inward_current](drugs/drug_sorbitol/pd_Takada_2017_inward_current.md) | inward current biomarker turnover ← sorbitol | — | Takada T et al., A mannitol/sorbitol receptor stimulates…, PloS one (2017) | [10.1371/journal.pone.0186420](https://doi.org/10.1371/journal.pone.0186420) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span> | [Takada_2017_inward_current](drugs/drug_sorbitol/pd_Takada_2017_inward_current.md) | inward current biomarker turnover ← sorbitol | — | Takada T et al., A mannitol/sorbitol receptor stimulates…, PloS one (2017) | [10.1371/journal.pone.0186420](https://doi.org/10.1371/journal.pone.0186420) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

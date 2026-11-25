@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Lenalidomide clearance and central volume parameters are non-positive, violating pharmacokinetic plausibility.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="lenalidomide" model-id="Lenalidomide_Kim2026_severe_ri" status="rejected" stale="false" population="adults with multiple myeloma and renal impairment" measured-compound="lenalidomide" parameterization="apparent" topology="3C"></div>
 
@@ -59,13 +59,13 @@ Kim H, Park SS, Choi S, Han S, Han S, Lee Y et al. Population Pharmacokinetics a
 
 ### Reviewer guidance
 
-**Lenalidomide clearance and central volume parameters are non-positive, violating pharmacokinetic plausibility.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The total clearance and central volume distribution parameters are both zero or negative, which is impossible for a 3-compartment model. The review rejected the record specifically for negative clearance and volume values in the base scenario. Additionally, the clearance coefficient for estimated GFR is disputed, with the second reader identifying a null value instead of 0.8. Extracted — lenalidomide: CL/F 0 L/h, V1/F -0.8 L, Q/F 0.1 L/h, V2/F -0.5 L, fu 0.2, CL 0 L/h, V 0.9 L, Cmax 227 ng/mL, … (+4).
+A reported unit could not be converted (Cmax and AUCt), so that value has no SI equivalent. Extracted — lenalidomide: CL/F 0 L/h, V1/F -0.8 L, Q/F 0.1 L/h, V2/F -0.5 L, fu 0.2, CL 0 L/h, V 0.9 L, Cmax 227 ng/mL, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θ clegfr: this record has 0.8, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

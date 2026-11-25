@@ -148,9 +148,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 0.0001289 | 8.339e-05 | 0.647 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 7.65e-05 | 8.339e-05 | 1.09 | ng/mL→SI vs simulated kg/m3 |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.778 (7 of 9 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 0.0001289 | 8.339e-05 | 0.647 | reported 128.9 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 7.65e-05 | 8.339e-05 | 1.09 | reported 76.5 ng/mL→SI vs simulated kg/m3 |
 | T1_cmin_ss | reference | skipped | 45.6 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 19.1 |  |  | no simulated metric for this quantity (single reference sim) |
 
@@ -168,7 +168,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_riluzole/Riluzole_Nguyen2021_reference/Riluzole_Nguyen2021_reference_modelica.zip" download>Riluzole_Nguyen2021_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_riluzole/Riluzole_Nguyen2021_reference/Riluzole_Nguyen2021_reference_modelica.zip" download>Riluzole_Nguyen2021_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_riluzole/Riluzole_Nguyen2021_reference/Riluzole_Nguyen2021_reference_fmi.zip" download>Riluzole_Nguyen2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_riluzole/Riluzole_Nguyen2021_reference/Riluzole_Nguyen2021_reference_matlab.zip" download>Riluzole_Nguyen2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_riluzole/Riluzole_Nguyen2021_reference/Riluzole_Nguyen2021_reference_matlab_simbio.zip" download>Riluzole_Nguyen2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Potassium’s CL/F of 24.1 L/h was rejected because the paper concerns another drug, not potassium.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Comisar2025_reference" status="rejected" stale="false" population="" measured-compound="potassium" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Comisar CM, Hughes JH, Francis J, Chinda Y, Sano Y, Muto C et al. Population Pha
 
 ### Reviewer guidance
 
-**Potassium’s CL/F of 24.1 L/h was rejected because the paper concerns another drug, not potassium.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The paper’s title and abstract do not name potassium, and the relevance screen identifies it as a paper about another drug. A second reader disputed the verdict (agreement 0.727; 0 of 1 reader agreed). The reported parameterization assumes F=1 and Fm=1, omits molar correction, and defaults Tlag rather than using an explicit estimate. Extracted — potassium: CL/F 24.1 L/h, V1/F 114 L, V2/F 46 L, Q/F 3.94 L/h, kabs 3.86 h−1.
+Extracted — potassium: CL/F 24.1 L/h, V1/F 114 L, V2/F 46 L, Q/F 3.94 L/h, kabs 3.86 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 4160, the second reading 2780; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | cross-check disputed by a second reader: verdict disputed, agreement 0.727, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.727 | cross-check contradicted by a second reader: verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

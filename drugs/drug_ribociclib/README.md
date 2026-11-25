@@ -39,10 +39,8 @@ Ribociclib is a kinase inhibitor used to treat certain kinds of breast cancer. I
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ji_2023_OS](drugs/drug_ribociclib/pd_Ji_2023_OS.md) | overall survival ← ribociclib · model not identified | — | Ji Y et al., Quantitative Assessment of Ribociclib E…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2310](https://doi.org/10.1002/jcph.2310) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ji_2023_PFS](drugs/drug_ribociclib/pd_Ji_2023_PFS.md) | progression-free survival ← ribociclib · model not identified | — | Ji Y et al., Quantitative Assessment of Ribociclib E…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2310](https://doi.org/10.1002/jcph.2310) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ji_2023_QT_interval_prolongation](drugs/drug_ribociclib/pd_Ji_2023_QT_interval_prolongation.md) | QT interval prolongation ← ribociclib · model not identified | — | Ji Y et al., Quantitative Assessment of Ribociclib E…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2310](https://doi.org/10.1002/jcph.2310) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ji_2023_neutropenia](drugs/drug_ribociclib/pd_Ji_2023_neutropenia.md) | neutropenia ← ribociclib · model not identified | — | Ji Y et al., Quantitative Assessment of Ribociclib E…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2310](https://doi.org/10.1002/jcph.2310) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ji_2023_time_to_response](drugs/drug_ribociclib/pd_Ji_2023_time_to_response.md) | time to response ← ribociclib · model not identified | — | Ji Y et al., Quantitative Assessment of Ribociclib E…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2310](https://doi.org/10.1002/jcph.2310) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lu_2021_ANC](drugs/drug_ribociclib/pd_Lu_2021_ANC.md) | absolute neutrophil count ← ribociclib · model not identified | — | Lu Y et al., Ribociclib Population Pharmacokinetics…, Journal of clinical pharmac… (2021) | [10.1002/jcph.1856](https://doi.org/10.1002/jcph.1856) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ji_2023_QT](drugs/drug_ribociclib/pd_Ji_2023_QT.md) | QT interval prolongation ← ribociclib · stimulation effect | — | Ji Y et al., Quantitative Assessment of Ribociclib E…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2310](https://doi.org/10.1002/jcph.2310) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ji_2023_neutropenia](drugs/drug_ribociclib/pd_Ji_2023_neutropenia.md) | neutropenia ← ribociclib · inhibition effect | — | Ji Y et al., Quantitative Assessment of Ribociclib E…, Journal of clinical pharmac… (2023) | [10.1002/jcph.2310](https://doi.org/10.1002/jcph.2310) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zhang_2022_ATPase_activity](drugs/drug_ribociclib/pd_Zhang_2022_ATPase_activity.md) | P-gp transporter ATPase activity ← ribociclib · stimulation effect | — | Zhang L et al., Ribociclib Inhibits P-gp-Mediated Multi…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.867128](https://doi.org/10.3389/fphar.2022.867128) |
 
 <details class="legend">
@@ -57,37 +55,35 @@ Ribociclib is a kinase inhibitor used to treat certain kinds of breast cancer. I
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:35 | 7:39 | 4/2/0 | 7/0/0 | 0/0/0 | 146,142/34,965 | openai / gpt-6-luna | 7 | 1/6 | 7/0 | 0 |
+| 2026-11-24 03:56 | 0:05 | 4/2/0 | 5/0/0 | 0/0/0 | 4,094/189 | einfracz / qwen3.8-27b | 7 | 1/6 | 7/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 13 matched, 13 returned
-- **screened:** 4  ·  **relevant:** 4
+- **screened:** 4  ·  **relevant:** 2
 - **records:** 6  ·  extracted 0  ·  needs review 4  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Lu_2021.pdf` | Lu Y et al., Ribociclib Population Pharmacokinetics…, Journal of clinical pharmac… (2021) | popPK | 10 | [10.1002/jcph.1856](https://doi.org/10.1002/jcph.1856) | [33713359](https://pubmed.ncbi.nlm.nih.gov/33713359) | Human ribociclib population-PK modeling is reported, but no numeric disposition parameter values are included in the evidence. |
-| `Patel_2019.pdf` | Patel YT et al., CNS penetration of the CDK4/6 inhibitor…, Cancer chemotherapy and pha… (2019) | popPK | 9 | [10.1007/s00280-019-03864-9](https://doi.org/10.1007/s00280-019-03864-9) | [31079218](https://pubmed.ncbi.nlm.nih.gov/31079218) | Mouse ribociclib PK is modeled and numeric Kp,uu values are reported, though compartmental parameter estimates are absent. |
-
-<sub>queue written 2026-10-07 06:29 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | André_2025 | irrelevant | 0 | 0 | This is a human ctDNA resistance-biomarker analysis and reports no ribociclib pharmacokinetic parameters. |
+| popPK | André_2025 | irrelevant | 0 | 0 | The paper analyzes circulating tumor DNA (ctDNA) for genetic resistance markers and does not report any pharmacokinetic parameters for ribociclib. |
+| PGx | André_2025 | not_relevant | 0 | 0 | The paper focuses on acquired somatic gene alterations in tumor ctDNA as markers of acquired resistance, not on pharmacogenomic effects of host germline variants on ribociclib PK/PD parameters. |
 | popPK | Cohen_2025 | irrelevant | 1 | 0 | This is an ECG monitoring study, not a ribociclib pharmacokinetic study; the cited half-life is background information. |
-| popPK | Deb_2023 | irrelevant | 1 | 0 | Ribociclib is only included in an in-silico DDI analysis, with no quantitative disposition parameters reported. |
-| popPK | Ji_2023 | irrelevant | 2 | 0 | The evidence describes exposure-response analyses but reports no quantitative ribociclib disposition parameters. |
-| popPK | Lu_2021 | relevant | 10 | 0 | Human ribociclib population-PK modeling is reported, but no numeric disposition parameter values are included in the evidence. |
+| popPK | Deb_2023 | irrelevant | 0 | 0 | The study is an in silico simulation of drug-drug interactions and does not report quantitative population PK parameters (CL, V, etc.) for ribociclib. |
+| PGx | Deb_2023 | not_relevant | 0 | 0 | The paper focuses on in silico drug-drug interactions (CYP inhibition/induction) and does not report pharmacogenomic effects (gene variants/genotypes) on the PK or PD of ribociclib. |
+| popPK | Ji_2023 | irrelevant | 2 | 0 | The paper describes an exposure-response analysis for dose justification rather than reporting specific quantitative disposition parameters (CL, V, Q, ka) or a new compartmental model, and no numeric values are present in the evidence. |
+| PGx | Ji_2023 | not_relevant | 0 | 0 | The paper analyzes population PK/PD and exposure-response relationships to justify dosing but does not report the effect of specific gene variants, genotypes, or phenotypes on ribociclib pharmacokinetics or pharmacodynamics. |
+| popPK | Lu_2021 | relevant | 9 | 0 | The paper describes a population pharmacokinetic study of ribociclib, but the abstract and provided evidence contain no quantitative parameter estimates (e.g., CL, V values), which are typically found in tables or figures not included here. |
+| PGx | Lu_2021 | not_relevant | 0 | 0 | The study analyzes population PK/PD using clinical covariates (age, weight, organ function) but does not investigate or report the impact of gene variants or genotypes on ribociclib parameters. |
+| popPK | Patel_2019 | relevant | 9 | 2 | The study reports a population PK model for ribociclib in mice with specific compartmental parameters (Kp,uu), but most specific quantitative disposition parameters (CL, V) are not explicitly detailed in the provided evidence. |
+| PGx | Patel_2019 | not_relevant | 0 | 0 | The study investigates the CNS penetration of ribociclib in mice (comparing tumor vs. non-tumor) and does not report any genetic or pharmacogenomic analysis. |
 | popPK | Roncato_2022 | irrelevant | 1 | 1 | The human case series reports ribociclib concentrations but no quantitative disposition parameters or PK model. |
-| popPK | Sorf_2018 | irrelevant | 0 | 0 | This is an in-vitro transporter and enzyme interaction study with no quantitative ribociclib disposition parameters. |
+| popPK | Samant_2018 | relevant | 5 | 2 | The paper reports NCA parameters (Cmax, AUC, t1/2) for ribociclib in humans, but does not explicitly report clearance (CL), volume of distribution (V), or intercompartmental clearance (Q) values in the text or tables, and the population PK model parameter estimates are explicitly stated to be in Supplementary Table S3 which is not provided. |
+| PGx | Samant_2018 | not_relevant | 0 | 0 | The paper evaluates the impact of gastric pH changes and food intake on ribociclib pharmacokinetics, not gene variants or genotypes. |
+| popPK | Sorf_2018 | irrelevant | 1 | 0 | The study is purely in vitro mechanistic (transporter inhibition/substrate characterization) and does not report quantitative population pharmacokinetic parameters (CL, V, Q, ka, t1/2) for ribociclib. |
+| PGx | Sorf_2018 | not_relevant | 0 | 0 | The paper describes general pharmacokinetic interactions (DDIs) and transport mechanisms in vitro, but does not report pharmacogenomic effects (gene variant/genotype) on PK/PD parameters. |
 | popPK | Zhang_2022 | irrelevant | 0 | 0 | This is an in vitro transporter study and reports no quantitative ribociclib disposition parameters. |
 
 
@@ -95,4 +91,4 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bribociclib%5D&body=Drug%3A%20ribociclib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ribociclib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 06:29 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 03:55 UTC</sub>

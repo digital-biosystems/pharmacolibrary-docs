@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The central-to-peripheral transfer rate constant for clonidine was rejected due to a dimensional conflict in its unit.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min⁻¹ (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Davies1977_reference" status="rejected" stale="false" population="normotensive subjects" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Davies DS, Wing AM, Reid JL, Neill DM, Tippett P, Dollery CT. Pharmacokinetics a
 
 ### Reviewer guidance
 
-**The central-to-peripheral transfer rate constant for clonidine was rejected due to a dimensional conflict in its unit.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min⁻¹ (1 / [time]) vs 1 / [time].**
 
-The first-order rate constant (k12) describing drug movement to peripheral tissues was recorded with units of min⁻¹. A validation check found this unit dimension incompatible with the parameter's structural definition. Consequently, the parameter was held back from the model without a valid SI value. Extracted — clonidine: λ1 0.134 min⁻¹, t1/2α 10.8 min, kel 0.084 hr⁻¹, t1/2β 8.5 hr, k12 0.105 min⁻¹, k21 0.022 min⁻¹, V 0.51 L/kg, Vss 2.09 L/kg, … (+4).
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — clonidine: λ1 0.134 min⁻¹, t1/2α 10.8 min, kel 0.084 hr⁻¹, t1/2β 8.5 hr, k12 0.105 min⁻¹, k21 0.022 min⁻¹, V 0.51 L/kg, Vss 2.09 L/kg, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clonidine, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

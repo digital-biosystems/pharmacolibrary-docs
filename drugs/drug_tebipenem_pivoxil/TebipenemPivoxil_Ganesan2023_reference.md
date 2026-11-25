@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The cross-check failed with 0.312 agreement as the second reader disagreed on key clearance values.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="tebipenem pivoxil" model-id="TebipenemPivoxil_Ganesan2023_reference" status="needs_review" stale="false" population="adults with cUTI/AP and healthy adults" measured-compound="tebipenem" parameterization="apparent" topology="2C"></div>
 
@@ -62,13 +62,13 @@ Ganesan H, Gupta VK, Safir MC, Bhavnani SM, Talley AK, Melnick D et al. Populati
 
 ### Reviewer guidance
 
-**The cross-check failed with 0.312 agreement as the second reader disagreed on key clearance values.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The second reader's extracted values diverge significantly, citing 21 L/h for total clearance against the record's 0.479 L/h. Additionally, renal clearance is 5.87 L/h in the record versus 5.96 L/h expected by the reader. The second reader also identified a different dose compound form, citing tebipenem pivoxil hydrobromide instead of tebipenem pivoxil. Extracted — tebipenem: CLNR 15.6 L/h, CL/F 0.479 L/h, V1/F 38.5 L, Q/F 2.23 L/h, V2/F 4.84 L, kabs 1.23 1/h.
+The base model was simulated, not the covariate effects the record defines. None of the extracted parameters is tebipenem pivoxil's own; they describe tebipenem. Extracted — tebipenem: CLNR 15.6 L/h, CL/F 0.479 L/h, V1/F 38.5 L, Q/F 2.23 L/h, V2/F 4.84 L, kabs 1.23 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tebipenem_pivoxil, the second reading tebipenem pivoxil hydrobromide; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -223,7 +223,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.312, 0 of 1 reader(s) agree | 0.312 | cross-check disputed by a second reader: verdict disputed, agreement 0.312, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.312 (5 of 16 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.312 | cross-check contradicted by a second reader: verdict disputed; agreement 0.312 (5 of 16 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

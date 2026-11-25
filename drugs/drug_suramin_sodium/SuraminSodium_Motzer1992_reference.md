@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;suramin sodium&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/&quot;},{&quot;label&quot;:&quot;Motzer_1992 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SuraminSodium_Kosarek2006_reference&quot;,&quot;label&quot;:&quot;Kosarek_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SuraminSodium_Motzer1992_reference&quot;,&quot;label&quot;:&quot;Motzer_1992_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Motzer1992_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;SuraminSodium_Naviaux2017_reference&quot;,&quot;label&quot;:&quot;Naviaux_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Naviaux2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SuraminSodium_Kosarek2006_reference&quot;,&quot;label&quot;:&quot;Kosarek_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_suramin_sodium/SuraminSodium_Kosarek2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,39 +7,35 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The abstract-only source prevented parameter verification, causing a second reader to dispute the suramin values and compound identity.
+> No value for suramin sodium's clearance; t6_deviations (+1 more).
 
-<div class="pk-model-meta" hidden drug="suramin sodium" model-id="SuraminSodium_Motzer1992_reference" status="needs_review" stale="false" population="patients with advanced renal cell carcinoma" measured-compound="suramin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="suramin sodium" model-id="SuraminSodium_Motzer1992_reference" status="model_quarantined" stale="false" population="patients with advanced renal cell carcinoma" measured-compound="suramin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Motzer RJ, Nanus DM, O'Moore P, Scher HI, Bajorin DF, Reuter V et al. Phase II trial of suramin in patients with advanced renal cell carcinoma: treatment results, pharmacokinetics, and tumor growth factor expression. Cancer research 52(20):5775–5779 (1992).
 
 ## Population and dosing
 
-**Population:** patients with advanced renal cell carcinoma · condition advanced renal cell carcinoma · age group adult · n = 26.
+**Population:** patients with advanced renal cell carcinoma · condition advanced renal cell carcinoma · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_suramin_sodium/SuraminSodium_Motzer1992_reference/SuraminSodium_Motzer1992_reference.svg" alt="SuraminSodium_Motzer1992_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Parameters:** 2 extracted.  
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| time to target level | tss | 13.8 | days |
-| volume of distribution | V | 15.2 | L |
+| volume of distribution | V | 15.2 | liters/m2 |
 | t1/2-beta | t1/2β | 20.6 | days |
-| Clearance | CL | 1.95 | mL/h/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,22 +45,20 @@ Motzer RJ, Nanus DM, O'Moore P, Scher HI, Bajorin DF, Reuter V et al. Phase II t
 
 ### Reviewer guidance
 
-**The abstract-only source prevented parameter verification, causing a second reader to dispute the suramin values and compound identity.**
+**No value for suramin sodium's clearance; t6_deviations (+1 more).**
 
-The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. A second reader disputed the record, agreeing with only 0.2 of the fields and identifying no reader agreement. The second reader disagreed on the dose compound, labeling it suramin sodium instead of suramin. Furthermore, the second reader marked all extracted parameters, including clearance and volume of distribution, as null. Extracted — suramin sodium: tss 13.8 days, V 15.2 L, t1/2β 20.6 days, CL 1.95 mL/h/kg.
+The model was built, but suramin sodium's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — suramin sodium: V 15.2 liters/m2, t1/2β 20.6 days.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has suramin, the second reading suramin_sodium; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has suramin, the second reading suramin sodium; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| time to target level | `Q72` · tss | 13.8 | days | 1.192e+06 | s | d | llm (0.6) | Motzer_1992:abstract |
-| volume of distribution | `Q61` · V | 15.2 | L | 0.0152 | m3 | L | exact (1) | Motzer_1992:abstract |
-| t1/2-beta | `Q60` · t1/2β | 20.6 | days | 1.78e+06 | s | d | llm_corrected (0.6) | Motzer_1992:abstract |
-| Clearance | `Q22` · CL | 1.95 | mL/h/kg | 3.792e-08 | m3/s | L/h | review_gapfill (0.7) | Naviaux_2017:review |
+| volume of distribution | `Q61` · V | 15.2 | liters/m2 | 0.0263 | m3 | l/m2 | exact (1) | Motzer_1992:abstract |
+| t1/2-beta | `Q60` · t1/2β | 20.6 | days | 1.78e+06 | s | d | half_life_rule (0.95) | Motzer_1992:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -74,14 +68,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'liters/m2' (V)
-- implicit units: 'volume of distribution' → L (from the popPK convention: 'No unit stated in text or table caption/footnotes. Volume of distribution based on drug concentration is conventionally ')
+- dropped unlinked row (NIL): 'time to target level' — extend the ontology if this is a real PK parameter (source ['Motzer_1992:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=suramin
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Naviaux_2017's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Motzer_1992_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -89,24 +78,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[clearance]` | 1.95 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2-beta]` | 20.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2-beta]` |  | 20.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[time to target level]` | 13.8 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution]` | 15.2 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution]` |  | 15.2 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | suramin | suramin_sodium | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | suramin | suramin_sodium | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | suramin | suramin sodium | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | suramin | suramin sodium | mismatch |
 
 </details>
 
@@ -120,17 +107,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Naviaux_2017:review'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Motzer_1992:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Motzer_1992:abstract'] |
-| C5_dimension_Q72 | pass | [time] |  | ['Motzer_1992:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.95 | ['Naviaux_2017:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.136 L/h | ['Naviaux_2017:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 15.2 L | ['Motzer_1992:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 26.3 L | ['Motzer_1992:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -139,10 +122,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=suramin) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -159,7 +142,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
@@ -170,14 +153,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 270 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 270 mg parenteral (P01CX02) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_suramin_sodium/SuraminSodium_Motzer1992_reference/SuraminSodium_Motzer1992_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_suramin_sodium/SuraminSodium_Motzer1992_reference/SuraminSodium_Motzer1992_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `SuraminSodium_Motzer1992_reference_params.json` · controls `SuraminSodium_Motzer1992_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsuramin_sodium%5D%20SuraminSodium_Motzer1992_reference&body=Drug%3A%20suramin_sodium%0ARecord%3A%20SuraminSodium_Motzer1992_reference%0APaper%3A%20Motzer_1992%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_suramin_sodium/SuraminSodium_Motzer1992_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 09:31 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 07:12 UTC</sub>

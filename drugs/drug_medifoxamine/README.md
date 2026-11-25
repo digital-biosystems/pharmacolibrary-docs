@@ -26,7 +26,7 @@ Medifoxamine is an atypical antidepressant that also helps reduce anxiety.
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Saleh_1990_reference](drugs/drug_medifoxamine/Medifoxamine_Saleh1990_reference.md) | — | 1-compartment (no model) | 4 | Saleh S et al., Tolerability and kinetics of intravenou…, International clinical psyc… (1990) | [10.1097/00004850-199004000-00003](https://doi.org/10.1097/00004850-199004000-00003) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Saleh_1990_reference](drugs/drug_medifoxamine/Medifoxamine_Saleh1990_reference.md) | — | 1-compartment (no model) | 3 | Saleh S et al., Tolerability and kinetics of intravenou…, International clinical psyc… (1990) | [10.1097/00004850-199004000-00003](https://doi.org/10.1097/00004850-199004000-00003) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,7 +40,7 @@ Medifoxamine is an atypical antidepressant that also helps reduce anxiety.
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:28 | 0:18 | 0/1/0 | 0/0/0 | 0/0/0 | 11,043/564 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 00:59 | 0:30 | 0/1/0 | 0/0/0 | 0/0/0 | 13,783/3,105 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -55,19 +55,21 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Saleh_1990.pdf` | Saleh S et al., Tolerability and kinetics of intravenou…, International clinical psyc… (1990) | popPK | 10 | [10.1097/00004850-199004000-00003](https://doi.org/10.1097/00004850-199004000-00003) | [2380545](https://pubmed.ncbi.nlm.nih.gov/2380545) | Original PK study of medifoxamine in humans with numeric parameters (t1/2 1.2 h, CL, Vd) reported directly in the abstract. |
+| `Saleh_1990.pdf` | Saleh S et al., Tolerability and kinetics of intravenou…, International clinical psyc… (1990) | popPK | 10 | [10.1097/00004850-199004000-00003](https://doi.org/10.1097/00004850-199004000-00003) | [2380545](https://pubmed.ncbi.nlm.nih.gov/2380545) | The abstract explicitly reports quantitative pharmacokinetic parameters (CL, Vd, t1/2) for medifoxamine in a human study. |
 
-<sub>queue written 2026-10-06 23:27 UTC</sub>
+<sub>queue written 2026-11-24 00:58 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Dumortier_2002 | irrelevant | 0 | 0 | The paper is a review on hepatotoxicity of antipsychotics that mentions medifoxamine only as a withdrawn drug, containing no pharmacokinetic parameters or data. |
 | PD | Dumortier_2002 | not_relevant | 0 | 0 | The paper is a clinical review of hepatic tolerance for atypical antipsychotics and mentions medifoxamine only as a withdrawn drug; it contains no PK/PD data, concentration-effect analysis, or numeric PD parameters. |
+| PGx | Dumortier_2002 | not_relevant | 0 | 0 | The paper discusses general hepatic tolerance and hepatotoxicity of atypical antipsychotics, mentioning medifoxamine only as a withdrawn drug without reporting any gene-variant specific PK or PD effects. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmedifoxamine%5D&body=Drug%3A%20medifoxamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_medifoxamine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 23:27 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 00:58 UTC</sub>

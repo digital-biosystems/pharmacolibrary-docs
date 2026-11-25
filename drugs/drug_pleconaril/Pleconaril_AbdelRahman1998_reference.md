@@ -17,7 +17,7 @@ Abdel-Rahman SM, Kearns GL. Single-dose pharmacokinetics of a pleconaril (VP6384
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = 12.
+**Population:** healthy adults · condition healthy · age group adult.
 
 ## Model
 
@@ -31,12 +31,12 @@ Abdel-Rahman SM, Kearns GL. Single-dose pharmacokinetics of a pleconaril (VP6384
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| area under the concentration-time curve and maximum concentration of pleconaril in plasma achieved following the standard English breakfast | Cmax | 9.08 | mg/liter |
-| Mean plasma pleconaril concentrations 12 h after a single 200-mg oral dose (fed | Ct | 0.25 | mg/liter |
+| The area under the concentration-time curve and maximum concentration of pleconaril in plasma achieved following the standard English breakfast (i.e., | Cmax | 9.08 | mg/liter |
+| Mean plasma pleconaril concentrations 12 h after a single 200-mg oral dose (fed, | Ct | 0.25 | mg/liter |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,45 +50,52 @@ Abdel-Rahman SM, Kearns GL. Single-dose pharmacokinetics of a pleconaril (VP6384
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of area under the concentration-time curve and maximum concentration of pleconaril in plasma achieved following the standard english breakfast: this record has none, the second reading 9.08; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | unit_canonical | link | source |
-|---|---|---|---|---|---|---|
-| area under the concentration-time curve and maximum concentration of pleconaril in plasma achieved following the standard English breakfast | `Q32` · Cmax | 9.08 | mg/liter | mg/l | llm_confirmed (0.6) | Abdel-Rahman_1998:abstract |
-| Mean plasma pleconaril concentrations 12 h after a single 200-mg oral dose (fed | `Q75` · Ct | 0.25 | mg/liter | mg/l | llm (0.6) | Abdel-Rahman_1998:abstract |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| The area under the concentration-time curve and maximum concentration of pleconaril in plasma achieved following the standard English breakfast (i.e., | `Q32` · Cmax | 9.08 | mg/liter | 0.00908 | kg/m3 | mg/l | boundary_llm_dim_refused (0.8) | Abdel-Rahman_1998:abstract |
+| Mean plasma pleconaril concentrations 12 h after a single 200-mg oral dose (fed, | `Q75` · Ct | 0.25 | mg/liter | 0.00025 | kg/m3 | mg/l | llm (0.6) | Abdel-Rahman_1998:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'fasting' — extend the ontology if this is a real PK parameter (source ['Abdel-Rahman_1998:abstract'])
-- dropped unlinked row (NIL): 'required to inhibit more than 90% of the enteroviruses in cell culture' — extend the ontology if this is a real PK parameter (source ['Abdel-Rahman_1998:abstract'])
+- dropped unlinked row (NIL): 'Mean plasma pleconaril concentrations 12 h after a single 200-mg oral dose (fasting,' — extend the ontology if this is a real PK parameter (source ['Abdel-Rahman_1998:abstract'])
+- dropped PD-category row 'that required to inhibit more than 90% of the enteroviruses in cell culture (i.e.,' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Abdel-Rahman_1998:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pleconaril
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Abdel-Rahman_1998_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>4 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[area under the concentration-time curve and maximum concentration of pleconaril in plasma achieved following the standard english breakfast]` |  | 9.08 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean plasma pleconaril concentrations 12 h after a single 200-mg oral dose (fed,]` | 0.25 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean plasma pleconaril concentrations 12 h after a single 200-mg oral dose (fed]` |  | 0.25 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the area under the concentration-time curve and maximum concentration of pleconaril in plasma achieved following the standard english breakfast (i.e.,]` | 9.08 |  | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -128,4 +135,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpleconaril%5D%20Pleconaril_AbdelRahman1998_reference&body=Drug%3A%20pleconaril%0ARecord%3A%20Pleconaril_AbdelRahman1998_reference%0APaper%3A%20Abdel-Rahman_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pleconaril/Pleconaril_AbdelRahman1998_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:18 UTC</sub>

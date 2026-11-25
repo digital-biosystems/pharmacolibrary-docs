@@ -8,7 +8,7 @@
 
 > CL/F has no unit.
 
-<div class="pk-model-meta" hidden drug="Naphthoquine" model-id="Naphthoquine_Batty2012_reference" status="needs_review" stale="false" population="Papua New Guinea children with uncomplicated malaria" measured-compound="naphthoquine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Naphthoquine" model-id="Naphthoquine_Batty2012_reference" status="needs_review" stale="false" population="children with uncomplicated malaria" measured-compound="naphthoquine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Batty KT, Salman S, Moore BR, Benjamin J, Lee ST, Page-Sharp M et al. Artemisinin-naphthoquine combination therapy for uncomplicated pediatric malaria: a pharmacokinetic study. Antimicrobial agents and chemotherapy 56(5):2472–2484 (2012).
@@ -16,15 +16,13 @@ Batty KT, Salman S, Moore BR, Benjamin J, Lee ST, Page-Sharp M et al. Artemisini
 
 ## Population and dosing
 
-**Population:** Papua New Guinea children with uncomplicated malaria · condition uncomplicated malaria · age group child · n = 46.
-
-**Dosed compound ≠ measured compound:** dosed artemisinin-naphthoquine, measured naphthoquine.
+**Population:** children with uncomplicated malaria · condition uncomplicated malaria · age group child · n = 46.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F, CLnorm/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 7 extracted.  
+**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -34,15 +32,14 @@ Batty KT, Salman S, Moore BR, Benjamin J, Lee ST, Page-Sharp M et al. Artemisini
 |---|---|---|---|
 | mean absorption half-life (t(1/2)) | t1/2ka | 1.0 | h |
 | predicted median maximum plasma concentrations | Cmax | 57 | μg/liter |
-| mean NQ elimination t(1/2) | t1/2z | 22.8 | days |
+| NQ elimination t(1/2) | t1/2z | 22.8 | days |
 | clearance relative to bioavailability (CL/F) | CL/F | 1.1 | liters/h/kg |
-| Administration of NQ with fat (8.5 g; 615 kJ) versus water was associated with | Frel | 25 | % |
-| mean CL/F | CLnorm/F | 4.1 | liters/h/kg |
+| bioavailability | Fab | 25 |  |
 | V/F | V/F | 21 | liters/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.105). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +51,9 @@ Batty KT, Salman S, Moore BR, Benjamin J, Lee ST, Page-Sharp M et al. Artemisini
 
 **CL/F has no unit.**
 
-Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — naphthoquine: t1/2ka 1 h, Cmax 57 μg/liter, t1/2z 22.8 days, CL/F 1.1 liters/h/kg, Frel 25 %, CLnorm/F 4.1 liters/h/kg, V/F 21 liters/kg.
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — naphthoquine: t1/2ka 1 h, Cmax 57 μg/liter, t1/2z 22.8 days, CL/F 1.1 liters/h/kg, Fab 25, V/F 21 liters/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artemisinin-naphthoquine, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has naphthoquine, the second reading artemisinin-naphthoquine; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,12 +61,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| mean absorption half-life (t(1/2)) | `Q95` · t1/2ka | 1.0 | h | 3600 | s | h | llm_corrected (0.6) | Batty_2012:abstract |
-| predicted median maximum plasma concentrations | `Q32` · Cmax | 57 | μg/liter |  |  | µg/l | llm (0.6) | Batty_2012:abstract |
-| mean NQ elimination t(1/2) | `Q57` · t1/2z | 22.8 | days | 1.97e+06 | s | d | llm (0.6) | Batty_2012:abstract |
+| mean absorption half-life (t(1/2)) | `Q95` · t1/2ka | 1.0 | h | 3600 | s | h | half_life_rule (0.95) | Batty_2012:abstract |
+| predicted median maximum plasma concentrations | `Q32` · Cmax | 57 | μg/liter | 5.7e-05 | kg/m3 | µg/l | llm (0.6) | Batty_2012:abstract |
+| NQ elimination t(1/2) | `Q57` · t1/2z | 22.8 | days | 1.97e+06 | s | d | llm (0.6) | Batty_2012:abstract |
 | clearance relative to bioavailability (CL/F) | `Q27` · CL/F | 1.1 | liters/h/kg |  |  |  | llm_corrected (0.6) | Batty_2012:abstract |
-| Administration of NQ with fat (8.5 g; 615 kJ) versus water was associated with | `Q87` · Frel | 25 | % |  |  | % | llm (0.6) | Batty_2012:abstract |
-| mean CL/F | `Q355` · CLnorm/F | 4.1 | liters/h/kg | 7.972e-05 | m3/s | l/(h·kg) | llm_corrected (0.6) | Batty_2012:abstract |
+| bioavailability | `Q40` · Fab | 25 |  |  |  |  | exact (1) | Batty_2012:abstract |
 | V/F | `Q76` · V/F | 21 | liters/kg | 1.47 | m3 | l/kg | exact (1) | Batty_2012:abstract |
 
 <details class="legend">
@@ -80,12 +76,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped duplicate Q27 ('CL/F', value 4.1) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=naphthoquine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Batty_2012_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
@@ -93,33 +88,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.105 (2/19 fields) | 17 |
+| `gpt-oss-120b` | not confirmed | 0.5 (7/14 fields) | 7 |
 
-<details><summary>17 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['none', '', '']] | mismatch |
-| `gpt-oss-120b` | `parameters[administration of nq with fat (8.5 g; 615 kj) versus water was associated with]` | 25 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[administration of nq with fat (8.5 g; 615 kj) versus water]` |  | 25 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance relative to bioavailability]` | 1.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance relative to bioavailability]` |  | 1.1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean absorption half-life (t(1/2))]` | 1.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean absorption half-life (t(1/2))]` |  | 1.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean cl/f]` | 4.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean nq elimination t]` | 22.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[bioavailability]` | 25 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[mean nq elimination t]` |  | 22.8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[predicted median maximum plasma concentrations]` | 57 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[predicted median maximum plasma concentrations]` |  | 57 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[nq elimination t]` | 22.8 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[reduction in the bioavailability of the second art dose]` |  | 77 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v/f]` | 21 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume at steady state relative to bioavailability (v(ss)/f)]` |  | 710 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | artemisinin-naphthoquine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | naphthoquine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | naphthoquine | artemisinin-naphthoquine | mismatch |
 
 </details>
 
@@ -133,11 +118,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 7 |  |
+| C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Batty_2012:abstract'] |
-| C5_dimension_Q355 | pass | [length] ** 3 / [time] |  | ['Batty_2012:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Batty_2012:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Batty_2012:abstract'] |
 | C5_dimension_Q95 | pass | [time] |  | ['Batty_2012:abstract'] |
@@ -178,4 +162,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnaphthoquine%5D%20Naphthoquine_Batty2012_reference&body=Drug%3A%20naphthoquine%0ARecord%3A%20Naphthoquine_Batty2012_reference%0APaper%3A%20Batty_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_naphthoquine/Naphthoquine_Batty2012_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 07:34 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:06 UTC</sub>

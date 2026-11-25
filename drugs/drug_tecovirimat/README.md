@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:24 | 0:39 | 0/0/0 | 1/0/0 | 0/0/0 | 102,495/1,274 | ollama / glm-5.3-flash | 7 | 0/7 | 7/0 | 0 |
+| 2026-11-24 07:32 | 0:03 | 0/0/0 | 1/0/0 | 0/0/0 | 4,109/194 | einfracz / qwen3.8-27b | 7 | 0/7 | 7/0 | 0 |
 
 ## Coverage
 
@@ -49,17 +49,23 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Buchholz_2026 | irrelevant | 3 | 1 | This is a regulatory review discussing tecovirimat as an example; no original quantitative PK parameter values are present in the evidence. |
-| popPK | Chen_2026 | irrelevant | 0 | 0 | This is a medicinal chemistry/SAR study of tecovirimat derivatives (C12), not a PK study of tecovirimat itself; no disposition parameters for tecovirimat are reported. |
+| popPK | Buchholz_2026 | irrelevant | 0 | 0 | The paper is a regulatory review discussing the approval framework for CBRN medical countermeasures using tecovirimat as a case study, but it does not report original quantitative PK parameters or extractable numeric values. |
+| PGx | Buchholz_2026 | not_relevant | 0 | 0 | The paper is a regulatory review discussing approval pathways for CBRN countermeasures (including tecovirimat) and does not report any pharmacogenomic effects on PK/PD parameters. |
+| popPK | Chen_2026 | irrelevant | 1 | 1 | The paper reports bioavailability for a tecovirimat derivative (C12), not the parent drug, and does not provide quantitative population-pharmacokinetic parameters (CL, V, Q) for tecovirimat itself. |
+| PGx | Chen_2026 | not_relevant | 0 | 0 | The paper describes the design of tecovirimat derivatives and their general PK properties in mice, but does not report the influence of human genetic variants on tecovirimat pharmacokinetics or pharmacodynamics. |
 | popPK | Chen_2026_2 | irrelevant | 0 | 0 | This is a narrative review of mpox virology/immunology/vaccines with no PK parameters for tecovirimat. |
-| popPK | Grosenbach_2019 | irrelevant | 0 | 0 | This is an in vitro antiviral screening methods paper with no PK parameters for tecovirimat. |
+| popPK | Grosenbach_2019 | irrelevant | 0 | 0 | The paper describes in vitro antiviral screening methods (EC50/IC50) and lacks any pharmacokinetic disposition parameters for tecovirimat. |
+| PGx | Grosenbach_2019 | not_relevant | 0 | 0 | The paper describes in vitro screening methods for antivirals and does not report any pharmacogenomic studies or genetic effects on tecovirimat PK/PD. |
 | popPK | Higashi-Kuwata_2025 | irrelevant | 0 | 0 | In-vitro antiviral/cytotoxicity study of tecovirimat against MPXV in cell lines; no PK disposition parameters (CL, V, ka, half-life, PK model) reported. |
 | popPK | Luan_2025 | irrelevant | 0 | 0 | In-vitro antiviral drug discovery study of JCS-2022; tecovirimat is only a comparator, with no PK parameters reported. |
-| popPK | Russo_2020 | irrelevant | 0 | 0 | This is an immunogenicity/efficacy study of ACAM2000 vaccine with tecovirimat co-administration in NHPs; no PK parameters (CL, V, ka, half-life, or PK model) for tecovirimat are reported. |
+| popPK | Russo_2020 | irrelevant | 0 | 0 | The study evaluates the effect of tecovirimat on vaccine immunogenicity and viral challenge efficacy in non-human primates, but does not report quantitative pharmacokinetic parameters (CL, V, t1/2) for tecovirimat. |
+| PGx | Russo_2020 | not_relevant | 0 | 0 | The paper investigates the interaction between tecovirimat and the ACAM2000 vaccine in non-human primates, focusing on immunogenicity and efficacy against viral challenge, but contains no information on pharmacogenomic effects or specific PK/PD parameters of tecovirimat influenced by genetic variants. |
 | popPK | Sudarmaji_2022 | irrelevant | 1 | 1 | Systematic review of monkeypox preclinical efficacy/vaccine studies; no PK disposition parameters (CL, V, ka, half-life) for tecovirimat, only sparse concentration/Tmax mentions without a PK model. |
-| popPK | Xu_2026 | irrelevant | 0 | 0 | This is an antiviral efficacy study of diphyllin with tecovirimat only as a co-administered comparator; no PK parameters (CL, V, ka, half-life, or PK model) for tecovirimat are reported. |
+| popPK | Xu_2026 | irrelevant | 0 | 0 | This is an antiviral efficacy and mechanistic study (in vitro/in vivo) where tecovirimat is used as a comparator, with no pharmacokinetic parameters reported. |
+| PGx | Xu_2026 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (Diphyllin and Tecovirimat) in an animal model, not a pharmacogenomic effect of a gene variant on tecovirimat's PK or PD. |
 | popPK | Zhang_2025 | irrelevant | 0 | 0 | This is a drug-discovery study of brincidofovir/HPMPA prodrugs; tecovirimat is only mentioned as a comparator and no PK parameters for it are reported. |
-| popPK | Zhang_2026 | irrelevant | 0 | 0 | Tecovirimat is only a co-administered comparator in an antiviral efficacy/synergy study; no PK parameters for tecovirimat are reported. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The paper focuses on the antiviral efficacy and mechanism of salinomycin, using tecovirimat only as a comparator drug for synergy testing, and contains no pharmacokinetic data. |
+| PGx | Zhang_2026 | not_relevant | 0 | 0 | The paper focuses on the host-directed antiviral activity of salinomycin and its synergy with tecovirimat, but it does not report on any pharmacogenomic effects (gene variants, genotypes, or phenotypes) on the PK or PD parameters of tecovirimat. |
 
 
 </details>

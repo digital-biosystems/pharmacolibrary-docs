@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:13 | 1:19 | 0/0/0 | 0/1/0 | 0/0/0 | 107,088/3,192 | ollama / glm-5.3-flash | 8 | 2/6 | 7/1 | 0 |
+| 2026-11-24 02:05 | 0:04 | 0/0/0 | 0/1/0 | 0/0/0 | 3,808/149 | einfracz / qwen3.8-27b | 8 | 2/6 | 7/1 | 0 |
 
 ## Coverage
 
@@ -53,21 +53,34 @@ _not available_
 | popPK | Ahn_2023 | irrelevant | 0 | 0 | This is a materials-science paper on alginate multicompartment capsules; oxygen appears only as a gas byproduct of H2O2 decomposition, with no PK parameters. |
 | popPK | Arulrajah_2025 | irrelevant | 0 | 0 | This is a review of scale-down bioreactors in bioprocessing; oxygen appears only as dissolved oxygen gradients in fermentation, with no pharmacokinetic parameters for oxygen as a drug. |
 | popPK | Chen_2026 | irrelevant | 0 | 0 | This is an in-vitro ion channel biophysics study of TRPV1/TRPA1 modification by singlet oxygen; no pharmacokinetic parameters for oxygen are reported. |
-| popPK | Drábková_2007 | irrelevant | 0 | 0 | This is an algal toxicity study of photosensitizers producing reactive oxygen species; oxygen is not a dosed drug and no PK parameters are reported. |
-| popPK | Fortier_2023 | irrelevant | 0 | 0 | This is an MRI relaxometry phantom study of oxygen relaxivity, not a pharmacokinetic study with disposition parameters for oxygen. |
-| popPK | Gawarammana_2011 | irrelevant | 0 | 0 | This is a review of paraquat poisoning; oxygen is only mentioned as reactive oxygen species, with no PK parameters for oxygen. |
-| popPK | Goutelle_2008 | irrelevant | 0 | 0 | A mathematical review of the Hill equation; oxygen is only mentioned historically, with no PK parameters or numeric values. |
-| popPK | Gudelunas_2024 | irrelevant | 0 | 0 | This is a pulse oximeter accuracy study measuring SpO2 bias, not a pharmacokinetic study of oxygen disposition (no CL, V, or PK model). |
+| popPK | Drábková_2007 | irrelevant | 0 | 0 | The paper discusses photodynamic therapy and toxicity of photosensitizers to algae, not the pharmacokinetics of oxygen as a drug. |
+| PGx | Drábková_2007 | not_relevant | 0 | 0 | The paper investigates the toxic effects of photosensitizers and reactive oxygen species on cyanobacteria and algae, with no mention of human gene variants or pharmacokinetic/pharmacodynamic parameters of oxygen as a drug. |
+| popPK | Fortier_2023 | irrelevant | 0 | 0 | This study reports magnetic resonance relaxation rates (R1) for oxygenation mapping, not pharmacokinetic disposition parameters like clearance, volume, or half-life for oxygen as a drug. |
+| PGx | Fortier_2023 | not_relevant | 0 | 0 | The paper describes an MRI technique (Fat DESPOT) for measuring tissue oxygenation and its sensitivity to oxygen partial pressure, but does not investigate pharmacogenomic variants or their effects on pharmacokinetics or pharmacodynamics. |
+| popPK | Gawarammana_2011 | irrelevant | 0 | 0 | The paper is a review of paraquat poisoning, not a pharmacokinetic study of oxygen as the subject drug. |
+| PGx | Gawarammana_2011 | not_relevant | 0 | 0 | The paper discusses paraquat toxicokinetics and management, not the pharmacogenetics of oxygen. |
+| popPK | Goutelle_2008 | irrelevant | 0 | 0 | The paper is a theoretical review of the Hill equation's mathematical properties and does not report any quantitative pharmacokinetic disposition parameters for oxygen. |
+| PGx | Goutelle_2008 | not_relevant | 0 | 0 | The paper is a mathematical review of the Hill equation and does not report any pharmacogenomic effects or clinical data. |
+| popPK | Gudelunas_2024 | irrelevant | 0 | 0 | This is a study on pulse oximeter diagnostic accuracy and bias in different skin tones, not a pharmacokinetic study of oxygen disposition parameters. |
+| PGx | Gudelunas_2024 | not_relevant | 0 | 0 | The study analyzes pulse oximetry bias in different skin tones, not the pharmacokinetics or pharmacodynamics of a drug. |
 | popPK | Hughes_2023 | irrelevant | 0 | 0 | This is a respiratory physiology editorial on gas exchange (shunt/dead space), not a pharmacokinetic study of oxygen disposition; no CL, V, or PK model parameters for oxygen are reported. |
-| popPK | Kietzmann_2019 | irrelevant | 0 | 0 | This is a review-style text on ROS cell biology with no pharmacokinetic parameters for oxygen as a drug. |
+| popPK | Kietzmann_2019 | irrelevant | 0 | 0 | The paper is a review of cellular redox mechanisms and does not report any quantitative pharmacokinetic parameters for oxygen. |
+| PGx | Kietzmann_2019 | not_relevant | 0 | 0 | The text describes general cellular redox biology and ROS signaling pathways, not a pharmacogenomic effect on the PK/PD of a specific drug or oxygen. |
 | popPK | Lavrinenko_2022 | irrelevant | 0 | 0 | This is a biophysical model of hemoglobin oxygenation (Hill/Adair curve fitting), not a pharmacokinetic study of oxygen disposition; no CL/V/ka/population-PK parameters are reported. |
-| popPK | Lavrinenko_2023 | irrelevant | 0 | 0 | A review of hemoglobin-oxygen binding equations, not a pharmacokinetic study of oxygen disposition; no CL, V, or PK model values present. |
-| popPK | Suga_1990 | irrelevant | 0 | 0 | Review of cardiac mechanics concepts; oxygen consumption is only a physiologic correlate, no PK parameters for oxygen. |
-| popPK | Thompson_2012 | irrelevant | 0 | 0 | This is a review of hydroxocobalamin (a different drug); oxygen is only mentioned as a co-administered therapy, with no PK parameters for oxygen. |
-| popPK | Torda_1997 | irrelevant | 0 | 0 | Oxygen is only mentioned as part of the anaesthetic gas mixture; the PK parameters reported (half-life, effect-compartment equilibration) are for suxamethonium, not oxygen. |
-| popPK | Venitz_2007 | irrelevant | 0 | 0 | Oxygen is only a biomarker context (p50, SpO2) for efaproxiral; no PK parameters for oxygen itself and no numeric values present. |
-| popPK | Wardman_2022 | irrelevant | 0 | 0 | A review of chemical reaction modeling in radiobiology; oxygen is discussed as a reactant, not a drug with PK disposition parameters, and no numeric PK values are present. |
-| popPK | Wilson_2017 | irrelevant | 0 | 0 | This is a mechanistic review of oxidative phosphorylation bioenergetics, not a PK study of oxygen with disposition parameters. |
+| popPK | Lavrinenko_2023 | irrelevant | 0 | 0 | This is a review of mathematical models for oxygen binding to hemoglobin (biochemistry/physics), not a pharmacokinetic study of oxygen disposition in a biological system. |
+| PGx | Lavrinenko_2023 | not_relevant | 0 | 0 | The paper reviews mathematical models of oxygen binding to hemoglobin and does not report any pharmacogenomic effects (gene variants) on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Suga_1990 | irrelevant | 0 | 0 | The paper is a review of cardiac mechanics and energetics concepts (Emax, PVA) and does not report pharmacokinetic parameters for oxygen. |
+| PGx | Suga_1990 | not_relevant | 0 | 0 | The paper reviews cardiac mechanics and energetics (Emax, PVA) and is unrelated to pharmacogenomics or oxygen pharmacokinetics. |
+| popPK | Thompson_2012 | irrelevant | 0 | 0 | The paper is a review of hydroxocobalamin for cyanide poisoning, not a study of oxygen pharmacokinetics. |
+| PGx | Thompson_2012 | not_relevant | 0 | 0 | The paper reviews the pharmacokinetics and efficacy of hydroxocobalamin in cyanide poisoning but does not report any pharmacogenomic effects or genetic variants influencing the PK/PD parameters. |
+| popPK | Torda_1997 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for suxamethonium, with oxygen only mentioned as part of the anaesthetic gas mixture. |
+| PGx | Torda_1997 | not_relevant | 0 | 0 | The paper describes the PK/PD of suxamethonium, not oxygen, and does not report any gene-variant or genotype effects on these parameters. |
+| popPK | Venitz_2007 | irrelevant | 0 | 0 | The paper discusses efaproxiral, a hemoglobin modifier, and oxygen is only mentioned as a biomarker context (oxygen affinity), not as a subject drug for PK parameter estimation. |
+| PGx | Venitz_2007 | not_relevant | 0 | 0 | The text discusses biomarkers and PK/PD modeling for efaproxiral but does not report any pharmacogenomic effects of gene variants on these parameters. |
+| popPK | Wardman_2022 | irrelevant | 0 | 0 | The paper is a mechanistic review of chemical reaction pathways in radiobiology and does not report pharmacokinetic parameters for oxygen. |
+| PGx | Wardman_2022 | not_relevant | 0 | 0 | The paper is a review on modeling chemical reaction pathways in radiobiology (FLASH radiotherapy) and does not discuss pharmacogenomics or specific drug PK/PD parameters related to oxygen. |
+| popPK | Wilson_2017 | irrelevant | 0 | 0 | The paper is a review of oxidative phosphorylation and mitochondrial biology, not a pharmacokinetic study, and contains no quantitative disposition parameters for oxygen. |
+| PGx | Wilson_2017 | not_relevant | 0 | 0 | The paper discusses general physiological regulation of oxidative phosphorylation and metabolic homeostasis, not the pharmacokinetic or pharmacodynamic effects of oxygen influenced by genetic variants. |
 | popPK | Świerczek_2023 | irrelevant | 0 | 0 | This is a population PK/PD study of dexamethasone in COVID-19 patients; oxygen is only mentioned as a therapy requirement, not the subject drug. |
 
 

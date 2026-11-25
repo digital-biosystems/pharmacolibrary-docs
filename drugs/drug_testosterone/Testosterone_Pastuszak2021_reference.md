@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because two testosterone clearance parameters are labeled with volume/time units instead of mass/time units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; Q351 unit mg/h ([mass] / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="testosterone" model-id="Testosterone_Pastuszak2021_reference" status="rejected" stale="false" population="adult males with hypogonadism" measured-compound="testosterone" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Pastuszak AW, Bush M, Curd L, Vijayan S, Priestley T, Xiang Q et al. Population 
 
 ### Reviewer guidance
 
-**Record rejected because two testosterone clearance parameters are labeled with volume/time units instead of mass/time units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; Q351 unit mg/h ([mass] / [time]) vs [length] ** 3 / [time].**
 
-The apparent clearance of testosterone, 0.572 mg/h, and the intercompartmental clearance, 10 L/h, are both recorded with volume/time units. This conflicts with the mass/time dimension required for apparent clearance and creates ambiguity for the intercompartmental parameter. Extracted — testosterone: CLm/F 197 L/h, kabs 0.001 L/h, CLm/F 0.572 mg/h, Q 10 L/h.
+A reported unit could not be converted (kabs and CLm/F), so that value has no SI equivalent. Extracted — testosterone: CLm/F 197 L/h, kabs 0.001 L/h, CLm/F 0.572 mg/h, Q 10 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has testosterone undecanoate, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

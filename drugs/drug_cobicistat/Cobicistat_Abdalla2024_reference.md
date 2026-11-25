@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;cobicistat&quot;,&quot;href&quot;:&quot;drugs/drug_cobicistat/&quot;},{&quot;label&quot;:&quot;Abdalla_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cobicistat_Barcel2016_reference&quot;,&quot;label&quot;:&quot;Barcel\u00f3_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cobicistat/Cobicistat_Barcel2016_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The cobicistat record is rejected because its two-compartment structure leaves the peripheral compartment orphaned from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="cobicistat" model-id="Cobicistat_Abdalla2024_reference" status="rejected" stale="false" population="" measured-compound="cobicistat" parameterization="apparent" topology="2C"></div>
 
@@ -47,13 +46,13 @@ Abdalla S, Compagnucci A, Riault Y, Chan MK, Bamford A, Nolan A et al. Simultane
 
 ### Reviewer guidance
 
-**The cobicistat record is rejected because its two-compartment structure leaves the peripheral compartment orphaned from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model defines a peripheral volume of 83.0 L for cobicistat but the structure check found this compartment unreachable from the administration site. Additionally, the parameter labels inconsistently refer to darunavir and ritonavir despite the drug being cobicistat. Extracted — cobicistat: CL/F 9.7 L/h, V/F 108 L, V2 83 L.
+Extracted — cobicistat: CL/F 9.7 L/h, V/F 108 L, V2 83 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has 5.8, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -141,4 +140,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcobicistat%5D%20Cobicistat_Abdalla2024_reference&body=Drug%3A%20cobicistat%0ARecord%3A%20Cobicistat_Abdalla2024_reference%0APaper%3A%20Abdalla_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cobicistat/Cobicistat_Abdalla2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:31 UTC</sub>

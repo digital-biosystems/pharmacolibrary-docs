@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record lacks distribution volume and clearance for permethrin, and its trans-DCCA metabolite compartment has no elimination path.
+> No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="permethrin" model-id="Permethrin_Ct2014_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="trans-DCCA" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -48,13 +48,13 @@ Côté J, Bonvalot Y, Carrier G, Lapointe C, Fuhr U, Tomalik-Scharte D et al. A 
 
 ### Reviewer guidance
 
-**The record lacks distribution volume and clearance for permethrin, and its trans-DCCA metabolite compartment has no elimination path.**
+**No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The paper is an exposure/outcome study that reports no distribution volume or clearance, so the model cannot be evaluated as a compartmental population pharmacokinetic model. Additionally, the central metabolite compartment for trans-DCCA is unreachable because it lacks a link to an elimination pathway. A second reader disagreed on whether the absorption rate constant of 0.033 h−1 applies to trans-DCCA or is absent. Extracted — trans-DCCA: kabs 0.033 h−1.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. None of the extracted parameters is permethrin's own; they describe trans-DCCA. Extracted — trans-DCCA: kabs 0.033 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cypermethrin, the second reading permethrin; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

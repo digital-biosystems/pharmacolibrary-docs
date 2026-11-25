@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance of 80.8 mL/min and volume of 256 mL for technetium 99mtc succimer were flagged as outside the physiological window.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="technetium (99mTc) succimer" model-id="Technetium99mtcSuccimer_Gracia2025_reference" status="rejected" stale="false" population="" measured-compound="technetium_99mtc_succimer" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Gracia M, Ankaoua V, Alonso M, Pasquet M, Chatelut E. A population pharmacokinet
 
 ### Reviewer guidance
 
-**Clearance of 80.8 mL/min and volume of 256 mL for technetium 99mtc succimer were flagged as outside the physiological window.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted clearance and volume parameters fall outside expected physiological ranges, indicating a potential scale or unit extraction error. A secondary review identified multiple additional parameter values and a clearance value that were not present in the primary record. Extracted — technetium 99mtc succimer: CL 80.8 mL/min, V 256 mL.
+Extracted — technetium 99mtc succimer: CL 80.8 mL/min, V 256 mL.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of CL: this record has 80.8, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

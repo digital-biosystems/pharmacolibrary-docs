@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The AUC/dose parameter for myo-inositol was rejected because its unit, mg/L·h/kg, caused a dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit mg/L ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="inositol" model-id="Inositol_Antonowski2022_reference" status="rejected" stale="false" population="Wistar rats" measured-compound="myo-inositol" parameterization="apparent" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Antonowski T, Osowski A, Szczesny D, Szablińska-Piernik J, Juśkiewicz J, Lahut
 
 ### Reviewer guidance
 
-**The AUC/dose parameter for myo-inositol was rejected because its unit, mg/L·h/kg, caused a dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit mg/L ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The record lists the dose-normalised area under the concentration time curve for myo-inositol as 2.34 mg/L·h/kg. A dimension check identified a conflict between this mass-volume-time-mass unit and the expected dimension for the parameter. Consequently, the parameter was excluded from the review due to this unit inconsistency. Extracted — inositol: V/F 5.1 L, CL/F 0.853 L/h, kabs 1.89 1/h, C0 10 mg/L, kel 0.17 1/h, t1/2z 4.08 h, AUC/dose 2.34 mg/L·h/kg.
+A reported unit could not be converted (C0 and AUC/dose), so that value has no SI equivalent. Extracted — inositol: V/F 5.1 L, CL/F 0.853 L/h, kabs 1.89 1/h, C0 10 mg/L, kel 0.17 1/h, t1/2z 4.08 h, AUC/dose 2.34 mg/L·h/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The oral bioavailability F for ciprofloxacin was not extracted from the paper, and the covariate scenarios for ICU patients were not simulated.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Guo2022_final" status="needs_review" stale="false" population="ICU patients" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Guo T, Abdulla A, Koch BCP, van Hasselt JGC, Endeman H, Schouten JA et al. Poole
 
 ### Reviewer guidance
 
-**The oral bioavailability F for ciprofloxacin was not extracted from the paper, and the covariate scenarios for ICU patients were not simulated.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).**
 
-The record lacks an estimated value for the bioavailability F, so a generic placeholder was used instead of a paper-specific estimate. Although the model defines a covariate effect on clearance, the simulation only covered the reference individual, meaning the specific covariate effects were not evaluated. Extracted — ciprofloxacin: CL 14.7 L/h, V1 61.2 L, Q 44.9 L/h, V2 71.6 L, kabs 1 h−1, tlag 0.33 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — ciprofloxacin: CL 14.7 L/h, V1 61.2 L, Q 44.9 L/h, V2 71.6 L, kabs 1 h−1, tlag 0.33 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

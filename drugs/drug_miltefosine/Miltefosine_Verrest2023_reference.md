@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Miltefosine absolute bioavailability and absorption lag time lack paper estimates, forcing reliance on unreported library defaults.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="miltefosine" model-id="Miltefosine_Verrest2023_reference" status="needs_review" stale="false" population="Eastern African children and adults with visceral leishmaniasis" measured-compound="miltefosine" parameterization="mechanistic" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Verrest L, Roseboom IC, Wasunna M, Mbui J, Njenga S, Musa AM et al. Population p
 
 ### Reviewer guidance
 
-**Miltefosine absolute bioavailability and absorption lag time lack paper estimates, forcing reliance on unreported library defaults.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).**
 
-The record lists absolute bioavailability of 1.17, but both this parameter and the absorption lag time were defaulted rather than extracted. Consequently, the simulated plasma profile relies on library placeholders not supported by the study. A second reader also disagreed on the central and peripheral volume of distribution values. Extracted — miltefosine: CL 1.85 L/day, V1 9.17 L, Q 0.17 L/day, V2 6.55 L, kabs 0.037 day−1, Fab 1.17.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — miltefosine: CL 1.85 L/day, V1 9.17 L, Q 0.17 L/day, V2 6.55 L, kabs 0.037 day−1, Fab 1.17.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has miltefosine and paromomycin, the second reading miltefosine; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -170,7 +170,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.538, 0 of 1 reader(s) agree | 0.538 | cross-check disputed by a second reader: verdict disputed, agreement 0.538, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.538 (7 of 13 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.538 | cross-check contradicted by a second reader: verdict disputed; agreement 0.538 (7 of 13 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

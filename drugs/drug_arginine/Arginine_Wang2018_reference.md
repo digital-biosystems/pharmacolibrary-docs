@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the parent drug arginine glutamate is an orphan compartment lacking any link to the measured arginine metabolite, and the record is abstract-only.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Arginine" model-id="Arginine_Wang2018_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="arginine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -49,13 +49,13 @@ Wang J, Zheng H, Wang K, Wang Z, Ding Y. Population pharmacokinetics of arginine
 
 ### Reviewer guidance
 
-**The record is rejected because the parent drug arginine glutamate is an orphan compartment lacking any link to the measured arginine metabolite, and the record is abstract-only.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model defines arginine glutamate as a precursor that hydrolyses into arginine and glutamate, but no clearance or elimination path exists for the parent compound itself, leaving it unreachable from the dose. Because the record was built from the abstract alone, the reported arginine clearance of 44.1 L/h and volume of 22.4 L are summary statistics rather than fitted parameters. The second reader disagreed on the dose compound and could not verify the link structure, confirming the parent drug's status as an unlinked orphan. Extracted — arginine: CL 44.1 L/h, V 22.4 L, kabs 0.226 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — arginine: CL 44.1 L/h, V 22.4 L, kabs 0.226 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has arginine glutamate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

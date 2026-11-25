@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The amiodarone parent-metabolite structure was incorrectly specified using a one-compartment oral architecture, and the absorption lag time was left unspecified.
+> T3_output_variable; t3_topology_template.
 
 <div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Pollak2000_amitarone_typical_value" status="rejected" stale="false" population="patients with cardiac arrhythmias" measured-compound="amiodarone" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -53,13 +53,13 @@ Pollak PT, Bouillon T, Shafer SL. Population pharmacokinetics of long-term oral 
 
 ### Reviewer guidance
 
-**The amiodarone parent-metabolite structure was incorrectly specified using a one-compartment oral architecture, and the absorption lag time was left unspecified.**
+**T3_output_variable; t3_topology_template.**
 
-Although the record defines desethylamiodarone formation from amiodarone, the underlying model structure used was a one-compartment oral model rather than a parent-metabolite architecture. The absorption lag time was not explicitly estimated. Additionally, the second reader reported inconsistencies in the apparent clearance and volume of distribution values, identifying missing parameters that the original record contained. Extracted — amiodarone: V1/F 882 L, CL/F 229 L/d, Q/F 588 L/d, kel 55 1/d, kabs 0.82 h−1.
+Extracted — amiodarone: V1/F 882 L, CL/F 229 L/d, Q/F 588 L/d, kel 55 1/d, kabs 0.82 h−1.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of cl 1 /f: this record has 229, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

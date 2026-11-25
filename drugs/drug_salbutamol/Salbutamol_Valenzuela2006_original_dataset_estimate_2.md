@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Salbutamol sulphate Vmax unit mM/h is dimensionally invalid for a mass-based rate.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mM/h ([length] / [time]) vs [mass] / [time]; Q1 unit mM ([length]) vs [mass] / [length] ** 3; Q307 unit 1/h (1 / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Valenzuela2006_original_dataset_estimate_2" status="rejected" stale="false" population="rats" measured-compound="salbutamol sulphate" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Valenzuela B, López-Pintor E, Pérez-Ruixo JJ, Nácher A, Martín-Villodre A, C
 
 ### Reviewer guidance
 
-**Salbutamol sulphate Vmax unit mM/h is dimensionally invalid for a mass-based rate.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mM/h ([length] / [time]) vs [mass] / [time]; Q1 unit mM ([length]) vs [mass] / [length] ** 3; Q307 unit 1/h (1 / [time]) vs [mass] / [time].**
 
-The maximum metabolism rate Vmax is assigned the unit mM/h, which is dimensionally incompatible with a mass-based rate. The review notes that this specific unit could not be converted to standard SI units. Consequently, the parameter lacks a valid SI representation for the model. Extracted — salbutamol: FR 79.3 %, kabs 0.636 1/h, Vmax 0.678 mM/h, Km 0.494 mM, R1 19 1/h, CL 46.8 L/h, V 196 L.
+A reported unit could not be converted (Vmax, Km and R1), so that value has no SI equivalent. Extracted — salbutamol: FR 79.3 %, kabs 0.636 1/h, Vmax 0.678 mM/h, Km 0.494 mM, R1 19 1/h, CL 46.8 L/h, V 196 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

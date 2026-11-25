@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Pyrimethamine clearance was defined as -20.2, an impossible negative value indicating an error in the covariate shift for the Mozambique cohort.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_de2017_reference" status="rejected" stale="false" population="pregnant and postpartum women receiving IPTp" measured-compound="pyrimethamine" parameterization="apparent" topology="2C"></div>
 
@@ -56,13 +56,13 @@ de Kock M, Tarning J, Workman L, Nyunt MM, Adam I, Barnes KI et al. Pharmacokine
 
 ### Reviewer guidance
 
-**Pyrimethamine clearance was defined as -20.2, an impossible negative value indicating an error in the covariate shift for the Mozambique cohort.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record lists a parameter labeled 'Difference in clearance in Mozambique' with a value of -20.2. While the other clearance parameters have plausible positive values, this negative figure renders the model structurally invalid. A second reader also noted discrepancies in the dose compound and a missing value for the intercompartmental clearance. Extracted — pyrimethamine: Fab 1, CL/F 1.35 L/h, V1/F 163 L, kabs 1.31 /h, Q2/F 1.45 L/h, V2/F 29.8 L, Kp 0.324, CL_ratio 21.2, … (+1).
+Extracted — pyrimethamine: Fab 1, CL/F 1.35 L/h, V1/F 163 L, kabs 1.31 /h, Q2/F 1.45 L/h, V2/F 29.8 L, Kp 0.324, CL_ratio 21.2, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulfadoxine/pyrimethamine, the second reading pyrimethamine and sulfadoxine; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

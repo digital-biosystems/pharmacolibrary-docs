@@ -51,18 +51,8 @@ Zolpidem is a nonbenzodiazepine hypnotic used for the short-term treatment of in
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kim_2026_CRT](drugs/drug_zolpidem/pd_Kim_2026_CRT.md) | choice reaction time ← zolpidem · direct sigmoid Emax (Hill) effect | — | Kim HC et al., Population Pharmacokinetic-Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70208](https://doi.org/10.1002/psp4.70208) |
 | <span class="pk-badge pk-badge--blue">Simulated</span> | [Kim_2026_DSST](drugs/drug_zolpidem/pd_Kim_2026_DSST.md) | digit symbol substitution test ← zolpidem · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Kim HC et al., Population Pharmacokinetic-Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70208](https://doi.org/10.1002/psp4.70208) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kim_2026_VAS](drugs/drug_zolpidem/pd_Kim_2026_VAS.md) | sedation visual analog scale ← zolpidem · direct sigmoid Emax (Hill) effect | — | Kim HC et al., Population Pharmacokinetic-Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70208](https://doi.org/10.1002/psp4.70208) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Tuk_2002_EEG_amplitude](drugs/drug_zolpidem/pd_Tuk_2002_EEG_amplitude.md) | amplitude in the 11.5-30 Hz frequency band of the EEG ← zolpidem · direct sigmoid Emax (Hill) effect | — | Tuk B et al., Mechanism-based pharmacodynamic modelin…, Journal of pharmacokinetics… (2002) | [10.1023/a:1020202806759](https://doi.org/10.1023/a:1020202806759) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [de_2010_EEG_alpha_power](drugs/drug_zolpidem/pd_de_2010_EEG_alpha_power.md) | EEG alpha power ← zolpidem · direct sigmoid Emax (Hill) effect | — | de Haas SL et al., Pharmacokinetics, pharmacodynamics and…, Journal of psychopharmacolo… (2010) | [10.1177/0269881109106898](https://doi.org/10.1177/0269881109106898) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [de_2010_EEG_alpha_power_2](drugs/drug_zolpidem/pd_de_2010_EEG_alpha_power_2.md) | EEG alpha power ← zolpidem · inhibition effect | — | de Haas SL et al., Pharmacokinetics, pharmacodynamics and…, Journal of psychopharmacolo… (2010) | [10.1177/0269881109106898](https://doi.org/10.1177/0269881109106898) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [de_2010_EEG_beta_power](drugs/drug_zolpidem/pd_de_2010_EEG_beta_power.md) | EEG beta power ← zolpidem · direct sigmoid Emax (Hill) effect | — | de Haas SL et al., Pharmacokinetics, pharmacodynamics and…, Journal of psychopharmacolo… (2010) | [10.1177/0269881109106898](https://doi.org/10.1177/0269881109106898) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [de_2010_SPV](drugs/drug_zolpidem/pd_de_2010_SPV.md) | saccadic peak velocity ← zolpidem · direct sigmoid Emax (Hill) effect | — | de Haas SL et al., Pharmacokinetics, pharmacodynamics and…, Journal of psychopharmacolo… (2010) | [10.1177/0269881109106898](https://doi.org/10.1177/0269881109106898) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [de_2010_SPV_2](drugs/drug_zolpidem/pd_de_2010_SPV_2.md) | saccadic peak velocity ← zolpidem · inhibition effect | — | de Haas SL et al., Pharmacokinetics, pharmacodynamics and…, Journal of psychopharmacolo… (2010) | [10.1177/0269881109106898](https://doi.org/10.1177/0269881109106898) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [de_2010_VAS](drugs/drug_zolpidem/pd_de_2010_VAS.md) | VAS alertness score ← zolpidem · direct sigmoid Emax (Hill) effect | — | de Haas SL et al., Pharmacokinetics, pharmacodynamics and…, Journal of psychopharmacolo… (2010) | [10.1177/0269881109106898](https://doi.org/10.1177/0269881109106898) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [de_2010_VAS_2](drugs/drug_zolpidem/pd_de_2010_VAS_2.md) | VAS 'feeling high' ← zolpidem · direct sigmoid Emax (Hill) effect | — | de Haas SL et al., Pharmacokinetics, pharmacodynamics and…, Journal of psychopharmacolo… (2010) | [10.1177/0269881109106898](https://doi.org/10.1177/0269881109106898) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [de_2010_adaptive_tracking_performance](drugs/drug_zolpidem/pd_de_2010_adaptive_tracking_performance.md) | adaptive tracking performance ← zolpidem · direct sigmoid Emax (Hill) effect | — | de Haas SL et al., Pharmacokinetics, pharmacodynamics and…, Journal of psychopharmacolo… (2010) | [10.1177/0269881109106898](https://doi.org/10.1177/0269881109106898) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [de_2010_adaptive_tracking_performance_2](drugs/drug_zolpidem/pd_de_2010_adaptive_tracking_performance_2.md) | adaptive tracking performance ← zolpidem · inhibition effect | — | de Haas SL et al., Pharmacokinetics, pharmacodynamics and…, Journal of psychopharmacolo… (2010) | [10.1177/0269881109106898](https://doi.org/10.1177/0269881109106898) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [de_2010_body_sway](drugs/drug_zolpidem/pd_de_2010_body_sway.md) | body sway ← zolpidem · direct sigmoid Emax (Hill) effect | — | de Haas SL et al., Pharmacokinetics, pharmacodynamics and…, Journal of psychopharmacolo… (2010) | [10.1177/0269881109106898](https://doi.org/10.1177/0269881109106898) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Perrais_1999_mIPSC_duration](drugs/drug_zolpidem/pd_Perrais_1999_mIPSC_duration.md) | mIPSC duration (relative to control) ← zolpidem · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Perrais D et al., Effect of zolpidem on miniature IPSCs a…, The Journal of neuroscience… (1999) | [10.1523/JNEUROSCI.19-02-00578.1999](https://doi.org/10.1523/JNEUROSCI.19-02-00578.1999) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Tuk_2002_amplitude_in_the_11_5_30_Hz_frequency_band_of_the_EEG](drugs/drug_zolpidem/pd_Tuk_2002_amplitude_in_the_11_5_30_Hz_frequency_band_of_the_E.md) | amplitude in the 11.5-30 Hz frequency band of the EEG ← zolpidem · direct sigmoid Emax (Hill) effect | model (no simulator) | Tuk B et al., Mechanism-based pharmacodynamic modelin…, Journal of pharmacokinetics… (2002) | [10.1023/a:1020202806759](https://doi.org/10.1023/a:1020202806759) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -76,51 +66,60 @@ Zolpidem is a nonbenzodiazepine hypnotic used for the short-term treatment of in
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:14 | 4:49 | 4/0/0 | 15/0/0 | 0/0/0 | 260,937/18,282 | ollama / glm-5.3-flash | 6 | 3/3 | 6/0 | 0 |
+| 2026-11-24 08:29 | 0:05 | 4/0/0 | 5/0/0 | 0/0/0 | 3,968/154 | einfracz / qwen3.8-27b | 6 | 3/3 | 6/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 61 matched, 20 returned
-- **screened:** 6  ·  **relevant:** 6
+- **screened:** 6  ·  **relevant:** 5
 - **records:** 4  ·  extracted 0  ·  needs review 4  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_7 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Stockmann_2014.pdf` | Stockmann C et al., Preliminary assessment of zolpidem phar…, Therapeutic drug monitoring (2014) | popPK | 10 | [10.1097/FTD.0000000000000017](https://doi.org/10.1097/FTD.0000000000000017) | [24365985](https://pubmed.ncbi.nlm.nih.gov/24365985) | Population PK model of zolpidem in pediatric burn patients with CL and Vc values reported directly in the abstract. |
-| `Drover_2000.pdf` | Drover D et al., Pharmacokinetics, pharmacodynamics, and…, Clinical therapeutics (2000) | popPK | 7 | [10.1016/s0149-2918(00)83043-x](https://doi.org/10.1016/s0149-2918(00)83043-x) | [11192136](https://pubmed.ncbi.nlm.nih.gov/11192136) | Human population PK (NONMEM) of zolpidem was performed, but the evidence only shows the half-life (124.5±37.9 min); other parameter values (CL, V, ka) are not included in the provided text. |
-| `Vlase_2011.pdf` | Vlase L et al., Pharmacokinetic interaction between zol…, European journal of drug me… (2011) | popPK | 7 | [10.1007/s13318-010-0014-9](https://doi.org/10.1007/s13318-010-0014-9) | [21302033](https://pubmed.ncbi.nlm.nih.gov/21302033) | Human NCA study reporting numeric zolpidem PK parameters (Cmax, tmax, AUC, half-life) directly in the abstract, though no CL/V values. |
-| `Vlase_2012.pdf` | Vlase L et al., Effect of fluvoxamine on the pharmokine…, Clinical and experimental p… (2012) | popPK | 7 | [10.1111/j.1440-1681.2011.05625.x](https://doi.org/10.1111/j.1440-1681.2011.05625.x) | [21985609](https://pubmed.ncbi.nlm.nih.gov/21985609) | Human NCA study of zolpidem with numeric Cmax, tmax, AUC, and half-life reported in the abstract, though no CL/V values are given. |
-| `Weinling_2006.pdf` | Weinling E et al., Pharmacokinetic profile of a new modifi…, Fundamental & clinical phar… (2006) | popPK | 7 | [10.1111/j.1472-8206.2006.00415.x](https://doi.org/10.1111/j.1472-8206.2006.00415.x) | [16867025](https://pubmed.ncbi.nlm.nih.gov/16867025) | Human PK study of zolpidem with NCA parameters, but the evidence shows only ratios (Cmax 0.82, HVD) and no full CL/V/t½ numeric values, which may be in tables not provided. |
-| `de_2010.pdf` | de Haas SL et al., Pharmacokinetics, pharmacodynamics and…, Journal of psychopharmacolo… (2010) | popPK | 6 | [10.1177/0269881109106898](https://doi.org/10.1177/0269881109106898) | [19648220](https://pubmed.ncbi.nlm.nih.gov/19648220) | Human PK study of zolpidem with t½ and Tmax reported, but full population-PK parameters (CL, V) are not shown in the evidence. |
-| `Tuk_2002.pdf` | Tuk B et al., Mechanism-based pharmacodynamic modelin…, Journal of pharmacokinetics… (2002) | popPK | 5 | [10.1023/a:1020202806759](https://doi.org/10.1023/a:1020202806759) | [12449497](https://pubmed.ncbi.nlm.nih.gov/12449497) | Rat PK-PD study of zolpidem, but evidence contains only PD parameters (EC50, Emax); PK disposition values are not shown and likely live in figures/supplements. |
+| `de_2010.pdf` | de Haas SL et al., Pharmacokinetics, pharmacodynamics and…, Journal of psychopharmacolo… (2010) | popPK | 7 | [10.1177/0269881109106898](https://doi.org/10.1177/0269881109106898) | [19648220](https://pubmed.ncbi.nlm.nih.gov/19648220) | The study reports PK parameters (Tmax, t1/2) for zolpidem in humans, but lacks detailed compartmental model parameters (CL, V, ka) in the provided text. |
 
-<sub>queue written 2026-10-06 23:10 UTC</sub>
+<sub>queue written 2026-11-24 08:29 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Drover_2000 | relevant | 7 | 4 | Human population PK (NONMEM) of zolpidem was performed, but the evidence only shows the half-life (124.5±37.9 min); other parameter values (CL, V, ka) are not included in the provided text. |
-| popPK | Feigenspan_2004 | irrelevant | 0 | 0 | In-vitro electrophysiology of GABAA receptors where zolpidem is only a pharmacological modulator; no PK parameters for zolpidem. |
-| popPK | Hoever_2010 | irrelevant | 2 | 1 | Zolpidem is only a comparator/diagnostic agent in an almorexant PK study; no zolpidem disposition parameters are reported. |
-| popPK | Lalovic_2023 | irrelevant | 0 | 0 | Zolpidem is only a comparator arm in lemborexant exposure-response analyses; no zolpidem PK parameters are reported. |
-| popPK | Myers_2012 | irrelevant | 2 | 3 | This is a PET receptor-occupancy study of [11C]Ro15-4513/[11C]flumazenil binding; zolpidem is only a blocking drug, and no zolpidem disposition PK parameters (CL, V, ka, half-life) are reported — only plasma levels and ligand binding rate constants. |
-| popPK | Niespodziany_2020 | irrelevant | 0 | 0 | In vitro electrophysiology study of padsevonil at GABA-A receptors; zolpidem is only a reference agonist, no PK parameters. |
+| popPK | Drover_2000 | relevant | 8 | 3 | The study reports zolpidem pharmacokinetics (half-life) but uses a noncompartmental method and lacks detailed volume/clearance values in the provided evidence. |
+| PGx | Drover_2000 | not_relevant | 0 | 0 | The study compares the PK/PD of two drugs (zaleplon vs zolpidem) in healthy volunteers and does not involve genetic variants or pharmacogenomics. |
+| popPK | Feigenspan_2004 | irrelevant | 0 | 0 | The study is an electrophysiological investigation of GABAA receptors in mouse retinal cells where zolpidem is used as a pharmacological probe, not a pharmacokinetic study. |
+| PGx | Feigenspan_2004 | not_relevant | 0 | 0 | The paper characterizes electrophysiological properties of mouse GABAA receptors and mentions zolpidem as a modulator, but does not report a pharmacogenomic effect (gene variant impact) on zolpidem's PK or PD parameters. |
+| popPK | Hoever_2010 | irrelevant | 0 | 0 | Zolpidem is used only as an active control/comparator, not the subject of PK parameter estimation, and no zolpidem PK values are provided. |
+| PGx | Hoever_2010 | not_relevant | 0 | 0 | The study focuses on the tolerability and PK/PD of almorexant, using zolpidem as an active control, but does not investigate pharmacogenomic effects or gene variant influence on zolpidem. |
+| popPK | Lalovic_2023 | irrelevant | 0 | 0 | The study focuses on lemborexant, with zolpidem serving only as a comparator in exposure-response analyses, and no specific PK parameters for zolpidem are reported. |
+| PGx | Lalovic_2023 | not_relevant | 0 | 0 | The paper analyzes exposure-response relationships for lemborexant and zolpidem based on demographic covariates (age, sex, race), but does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| popPK | Myers_2012 | irrelevant | 1 | 1 | This is a PET receptor binding study using zolpidem as a blocking agent to assess receptor occupancy, not a pharmacokinetic study reporting disposition parameters (CL, V, ka) for zolpidem itself. |
+| PGx | Myers_2012 | not_relevant | 0 | 0 | The study investigates the binding selectivity of a PET tracer using zolpidem as a blocker, but does not report pharmacogenomic effects (gene variants) on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Niespodziany_2020 | irrelevant | 0 | 0 | The study investigates the electrophysiological effects of Padsevonil on GABA-A receptors, using zolpidem only as a reference comparator, and contains no pharmacokinetic parameters. |
+| PGx | Niespodziany_2020 | not_relevant | 0 | 0 | The paper investigates the pharmacology of padsevonil using zolpidem as a comparator reference in in vitro systems, without reporting any pharmacogenomic data or gene variant effects on pharmacokinetics or pharmacodynamics. |
 | popPK | Perrais_1999 | irrelevant | 0 | 0 | This is an electrophysiology study of zolpidem's effect on GABA_A receptor currents in rat brain slices, not a pharmacokinetic study; no CL, V, ka, or PK model parameters are reported. |
-| popPK | Schönrock_1993 | irrelevant | 0 | 0 | In-vitro electrophysiology study of GABAA receptors in rat hippocampal neurons; zolpidem is only a pharmacological tool with no PK parameters. |
-| popPK | Tuk_2002 | relevant | 5 | 2 | Rat PK-PD study of zolpidem, but evidence contains only PD parameters (EC50, Emax); PK disposition values are not shown and likely live in figures/supplements. |
-| popPK | Ufer_2022 | irrelevant | 0 | 0 | Zolpidem is only an active comparator in an abuse-potential study; no PK disposition parameters for zolpidem are reported. |
-| popPK | Weinling_2006 | relevant | 7 | 4 | Human PK study of zolpidem with NCA parameters, but the evidence shows only ratios (Cmax 0.82, HVD) and no full CL/V/t½ numeric values, which may be in tables not provided. |
-| popPK | de_2010 | relevant | 6 | 4 | Human PK study of zolpidem with t½ and Tmax reported, but full population-PK parameters (CL, V) are not shown in the evidence. |
+| popPK | Schönrock_1993 | irrelevant | 0 | 0 | The study investigates the pharmacological modulation of GABA receptors by zolpidem in an in vitro/neuronal model, not its pharmacokinetics. |
+| PGx | Schönrock_1993 | not_relevant | 0 | 0 | The paper studies GABAA receptor heterogeneity in rat hippocampus and mentions zolpidem's effect on currents, but it does not investigate human gene variants or their impact on PK/PD parameters. |
+| PGx | Stockmann_2014 | not_relevant | 0 | 0 | The study evaluates population pharmacokinetics in pediatric burn patients but does not investigate gene variants or genotypes. |
+| popPK | Tuk_2002 | irrelevant | 4 | 0 | The study reports pharmacodynamic parameters (EC50, Emax) for zolpidem in rats, but does not provide quantitative pharmacokinetic disposition parameters (CL, Vd, ka) or a PK model, which are required for relevance. |
+| PGx | Tuk_2002 | not_relevant | 0 | 0 | The study focuses on drug-drug interactions (ethanol) in rats and does not involve any gene variants, genotypes, or pharmacogenomic factors. |
+| popPK | Ufer_2022 | irrelevant | 0 | 0 | Zolpidem serves only as an active comparator in an abuse potential study focused on daridorexant, with no quantitative zolpidem PK parameters reported. |
+| PGx | Ufer_2022 | not_relevant | 0 | 0 | The study assesses abuse potential and PK/PD of daridorexant, suvorexant, and zolpidem in healthy volunteers but does not report any pharmacogenomic effects or genotype-stratified data for zolpidem. |
+| popPK | Vlase_2011 | relevant | 4 | 5 | The study reports non-compartmental parameters (Cmax, AUC, t1/2) for zolpidem in humans, but lacks specific clearance (CL) or volume (V) values required for full PK disposition characterization. |
+| PGx | Vlase_2011 | not_relevant | 0 | 0 | The study reports a drug-drug interaction between zolpidem and ciprofloxacin, not a pharmacogenomic effect based on genetic variation. |
+| PGx | Vlase_2012 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (fluvoxamine) rather than a pharmacogenomic effect of a gene variant. |
+| popPK | Weinling_2006 | relevant | 9 | 2 | The study is a human PK comparison of zolpidem formulations, but the specific numeric values for clearance (CL), volume (V), and half-life are not explicitly provided in the text, only derived ratios (Cmax) and a specific duration metric (HVD). |
+| PGx | Weinling_2006 | not_relevant | 0 | 0 | The study compares pharmacokinetic profiles of different zolpidem formulations (modified-release vs immediate-release) but does not report any genetic variants or pharmacogenomic effects. |
+| popPK | de_2010 | relevant | 7 | 3 | The study reports PK parameters (Tmax, t1/2) for zolpidem in humans, but lacks detailed compartmental model parameters (CL, V, ka) in the provided text. |
+| PGx | de_2010 | not_relevant | 0 | 0 | The study characterizes PK/PD in healthy subjects but does not investigate the influence of genetic variants or genotypes. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzolpidem%5D&body=Drug%3A%20zolpidem%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zolpidem/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 23:10 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 08:27 UTC</sub>

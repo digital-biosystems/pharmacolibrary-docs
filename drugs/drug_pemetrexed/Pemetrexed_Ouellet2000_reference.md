@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Pemetrexed's central volume of distribution has an incorrect unit dimension recorded as dimensionless.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q63 unit 1 (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_Ouellet2000_reference" status="rejected" stale="false" population="cancer patients" measured-compound="pemetrexed disodium" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Ouellet D, Periclou AP, Johnson RD, Woodworth JR, Lalonde RL. Population pharmac
 
 ### Reviewer guidance
 
-**Pemetrexed's central volume of distribution has an incorrect unit dimension recorded as dimensionless.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q63 unit 1 (dimensionless) vs [length] ** 3.**
 
-The recorded unit for the 11.3 L central volume is listed as '1', creating a dimensional conflict with the required volume dimension. The abstract-only source provided summary statistics rather than fitted model results. The intercompartmental clearance of 3.21 l/h and peripheral volume of 5.2 l were recorded without unit errors. Extracted — pemetrexed: V1 11.3 1, Q 3.21 l/h, V2 5.2 l.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pemetrexed: V1 11.3 1, Q 3.21 l/h, V2 5.2 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pemetrexed disodium, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

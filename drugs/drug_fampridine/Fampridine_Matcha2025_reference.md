@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper describes a different drug, and the volume parameter is disputed.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="fampridine" model-id="Fampridine_Matcha2025_reference" status="rejected" stale="false" population="" measured-compound="fampridine" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Matcha S, Dilli Batcha JS, Raju AP, Chaudhari BB, Moorkoth S, Mallayasamy S et a
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper describes a different drug, and the volume parameter is disputed.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The source paper's subject is not fampridine, as it names neither the drug nor its metabolites in the title or abstract. Additionally, a second reader disagreed with the central volume of distribution value of 1.281 L, proposing 0.316 L instead. The model builder also used a library default for the intercompartmental clearance rate constant instead of an explicit estimate. Extracted — fampridine: CL 0.064 L/h, V1 1.28 L, Q 0.055 L/h.
+Extracted — fampridine: CL 0.064 L/h, V1 1.28 L, Q 0.055 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of V1: this record has 1.281, the second reading 0.316. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -127,7 +127,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | cross-check disputed by a second reader: verdict disputed, agreement 0.857, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.857 (6 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | cross-check contradicted by a second reader: verdict disputed; agreement 0.857 (6 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

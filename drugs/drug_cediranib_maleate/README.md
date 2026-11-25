@@ -29,7 +29,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:26 | 0:52 | 0/0/0 | 0/0/0 | 0/0/0 | 10,475/1,012 | openai / gpt-6-luna | 3 | 1/2 | 2/1 | 0 |
+| 2026-11-23 20:28 | 0:04 | 0/0/0 | 0/0/0 | 0/0/0 | 3,773/158 | einfracz / qwen3.8-27b | 3 | 1/2 | 2/1 | 0 |
 
 ## Coverage
 
@@ -46,19 +46,24 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Gu_2014.pdf` | Gu R et al., The multikinase inhibitor axitinib is a…, Biochemical pharmacology (2014) | pgx | 7 | [10.1016/j.bcp.2014.01.016](https://doi.org/10.1016/j.bcp.2014.01.016) | [24462920](https://www.ncbi.nlm.nih.gov/pubmed/24462920) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-10-07 22:25 UTC</sub>
+<sub>queue written 2026-11-23 20:28 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | PGx | Adamu_2024 | not_relevant | 0 | 0 | The review reports BRCA-status associations with progression-free survival for combination therapies, not a pharmacogenomic effect on a cediranib pharmacokinetic or pharmacodynamic parameter. |
-| PGx | Gu_2014 | not_relevant | 0 | 0 | The study examines axitinib-mediated CYP inhibition, not a genetic effect on cediranib_maleate PK or PD. |
-| PGx | Hu_2024 | not_relevant | 0 | 0 | The paper evaluates ctDNA dynamics and clinical outcomes, not a gene variant, genotype, or phenotype effect on cediranib pharmacokinetics or pharmacodynamics. |
-| PGx | Lassen_2013 | not_relevant | 0 | 0 | The paper reports drug–drug interaction effects of ketoconazole and rifampicin on cediranib exposure, not effects of genetic variants or phenotypes. |
+| popPK | Gu_2014 | irrelevant | 0 | 0 | The study focuses on in-vitro CYP inhibition by axitinib and other kinase inhibitors, not the population pharmacokinetics of cediranib maleate. |
+| PGx | Gu_2014 | not_relevant | 0 | 0 | The paper studies the inhibition of CYP1A2 by axitinib, not the pharmacogenomics of cediranib maleate. |
+| popPK | Hu_2024 | irrelevant | 0 | 0 | The study investigates ctDNA dynamics as a biomarker for efficacy and does not report pharmacokinetic parameters for cediranib. |
+| PGx | Hu_2024 | not_relevant | 0 | 0 | The study investigates ctDNA dynamics as a biomarker for clinical outcome in a population cohort, reporting no pharmacogenomic association with pharmacokinetic or pharmacodynamic parameters of cediranib. |
+| popPK | Lassen_2013 | irrelevant | 0 | 0 | The provided evidence contains only demographic data and references to PK figures/tables but does not include the actual numeric pharmacokinetic parameter values (CL, V, etc.). |
+| PGx | Lassen_2013 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (ketoconazole/rifampicin) and demographic baseline characteristics, but does not investigate the effect of genetic variants or genotypes on the pharmacokinetics or pharmacodynamics of cediranib. |
 | PGx | Lee_2015 | not_relevant | 0 | 0 | XRCC1 polymorphisms were assessed only for association with PFS, with no significant association; no genotype-related cediranib pharmacokinetic or pharmacodynamic parameter is reported. |
-| PGx | Lheureux_2020 | not_relevant | 0 | 0 | Reports genomic resistance mechanisms associated with treatment outcomes, but not their effects on a cediranib pharmacokinetic or pharmacodynamic parameter. |
-| PGx | Tao_2009 | not_relevant | 0 | 0 | The study examines cediranib inhibition of ABCB1/ABCC1-mediated resistance to other drugs, not a gene-related effect on cediranib’s PK or PD parameters. |
+| popPK | Lheureux_2020 | irrelevant | 0 | 0 | This is a clinical efficacy (Phase II) study reporting response rates and survival outcomes, with no pharmacokinetic parameters (CL, V, etc.) for cediranib provided in the evidence. |
+| PGx | Lheureux_2020 | not_relevant | 0 | 0 | The paper investigates genomic mechanisms of resistance to PARP inhibitors and clinical outcomes of a combination therapy, but it does not report pharmacogenomic effects on the PK or PD parameters of cediranib. |
+| popPK | Tao_2009 | irrelevant | 0 | 0 | The study investigates the mechanism of multidrug resistance reversal in cell lines (in vitro) and does not report pharmacokinetic parameters. |
+| PGx | Tao_2009 | not_relevant | 1 | 0 | The paper describes cediranib as a transporter inhibitor reversing MDR in cell lines, but does not report a human pharmacogenomic association (gene variant effect) on cediranib's own PK/PD. |
 
 
 </details>

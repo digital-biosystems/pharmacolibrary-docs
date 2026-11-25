@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance (0.0289 L/h) and volumes (0.250 L, 0.326 L) are outside physiological windows for erythropoietin in neonates.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="erythropoietin" model-id="Erythropoietin_Frymoyer2017_reference" status="rejected" stale="false" population="neonates with hypoxic-ischemic encephalopathy receiving hypothermia" measured-compound="erythropoietin" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Frymoyer A, Juul SE, Massaro AN, Bammler TK, Wu YW. High-dose erythropoietin pop
 
 ### Reviewer guidance
 
-**Clearance (0.0289 L/h) and volumes (0.250 L, 0.326 L) are outside physiological windows for erythropoietin in neonates.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record was rejected because the clearance and volume of distribution values fall outside the expected physiological range, suggesting a unit or scale extraction error. Additionally, a second reader disagreed with the recorded values, citing different figures for clearance, intercompartmental clearance, and both volumes of distribution. Extracted — erythropoietin: CL 0.0289 L/h, V1 0.25 L, V2 0.326 L, Q 0.0308 L/h.
+Extracted — erythropoietin: CL 0.0289 L/h, V1 0.25 L, V2 0.326 L, Q 0.0308 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl (l/h)1].value`: this record has 0.0289, the second reading 0.0263; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

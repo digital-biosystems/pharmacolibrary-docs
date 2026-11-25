@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;tenofovir disoproxil&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_disoproxil/&quot;},{&quot;label&quot;:&quot;Bouazza_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Jayachandran_2021_p24&quot;,&quot;label&quot;:&quot;Jayachandran_2021 \u00b7 p24&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_disoproxil/pd_Jayachandran_2021_p24.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tenofovir disoproxil — `TenofovirDisoproxil_Bouazza2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Tenofovir disoproxil's clearance, absorption lag time, and central-to-peripheral rate constant were left as placeholder defaults.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit L ([length] ** 3) vs [length] ** 3 / [time]; Q49 unit L·h⁻¹ ([length] ** 3 / [time]) vs 1 / [time].
 
-<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Bouazza2011_reference" status="model_quarantined" stale="false" population="HIV-1-infected pediatric patients" measured-compound="tenofovir" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Bouazza2011_reference" status="rejected" stale="false" population="HIV-1-infected pediatric patients" measured-compound="tenofovir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Bouazza N, Urien S, Hirt D, Frange P, Rey E, Benaboud S et al. Population pharmacokinetics of tenofovir in HIV-1-infected pediatric patients. Journal of acquired immune deficiency syndromes (1999) 58(3):283–288 (2011).
@@ -17,31 +16,30 @@ Bouazza N, Urien S, Hirt D, Frange P, Rey E, Benaboud S et al. Population pharma
 
 ## Population and dosing
 
-**Population:** HIV-1-infected pediatric patients · condition HIV-1 infection · age group child · n = 93.
+**Population:** HIV-1-infected pediatric patients · condition HIV-1 infection · age group child.
 
 **Dosed compound ≠ measured compound:** dosed tenofovir disoproxil fumarate, measured tenofovir.
 
 ## Model
 
-**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 5 extracted.  
-**Availability:** Model withheld: a core parameter is unspecified.
+**Parameters:** 4 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | apparent clearance | CLm/F | 59.8 | L·h⁻¹ |
-| central volume of distribution | V1 | 386 | L |
-| peripheral volume of distribution | V2 | 666 | L |
-| intercompartmental clearance | Q | 92.8 | L·h⁻¹ |
-| absorption rate constant | kabs | 0.43 | h⁻¹ |
+| central and peripheral volume of distribution | V2 | 386 | L |
+| intercompartmental clearance | Q | 666 | L |
+| absorption rate constant | kabs | 92.8 | L·h⁻¹ |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,23 +49,22 @@ Bouazza N, Urien S, Hirt D, Frange P, Rey E, Benaboud S et al. Population pharma
 
 ### Reviewer guidance
 
-**Tenofovir disoproxil's clearance, absorption lag time, and central-to-peripheral rate constant were left as placeholder defaults.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit L ([length] ** 3) vs [length] ** 3 / [time]; Q49 unit L·h⁻¹ ([length] ** 3 / [time]) vs 1 / [time].**
 
-The record was built from the paper's abstract alone, so summary statistics stood in for fitted parameter estimates. Consequently, no explicit values were assigned to the parent drug's clearance, absorption lag time, or intercompartmental transfer rate. These missing values forced the use of library placeholders, resulting in the model being quarantined rather than published. Extracted — tenofovir disoproxil: CLm/F 59.8 L·h⁻¹, V1 386 L, V2 666 L, Q 92.8 L·h⁻¹, kabs 0.43 h⁻¹.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tenofovir disoproxil: CLm/F 59.8 L·h⁻¹, V2 386 L, Q 666 L, kabs 92.8 L·h⁻¹.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has tenofovir, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | apparent clearance | `Q351` · CLm/F | 59.8 | L·h⁻¹ | 1.661e-05 | m3/s | l/h | exact (1) | Bouazza_2011:abstract |
-| central volume of distribution | `Q63` · V1 | 386 | L | 0.386 | m3 | l | boundary_compartment (0.9) | Bouazza_2011:abstract |
-| peripheral volume of distribution | `Q64` · V2 | 666 | L | 0.666 | m3 | l | boundary_compartment (0.9) | Bouazza_2011:abstract |
-| intercompartmental clearance | `Q30` · Q | 92.8 | L·h⁻¹ | 2.578e-05 | m3/s | l/h | exact (1) | Bouazza_2011:abstract |
-| absorption rate constant | `Q49` · kabs | 0.43 | h⁻¹ | 0.0001194 | 1/s | 1/h | exact (1) | Bouazza_2011:abstract |
+| central and peripheral volume of distribution | `Q64` · V2 | 386 | L | 0.386 | m3 | l | boundary_compartment (0.9) | Bouazza_2011:abstract |
+| intercompartmental clearance | `Q30` · Q | 666 | L |  |  | l | exact (1) | Bouazza_2011:abstract |
+| absorption rate constant | `Q49` · kabs | 92.8 | L·h⁻¹ |  |  | l/h | exact (1) | Bouazza_2011:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,26 +74,46 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Interpretation flags:**
+- unit_dimension_mismatch: 'intercompartmental clearance' → Q30 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_mismatch: 'absorption rate constant' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
 - metabolite tenofovir: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=tenofovir
-- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
-- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 5 linked by role; re-tagged tenofovir→parent ×5
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at "Needs review" — not promoted
+- row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 3 linked by role
+- molar mass: none found for 'tenofovir' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Bouazza_2011_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Bouazza_2011_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>10 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption rate constant]` |  | 0.43 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate constant]` | 92.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance]` |  | 59.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance]` | 59.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central and peripheral volume of distribution]` | 386 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` |  | 386 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` |  | 92.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` | 666 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` |  | 666 | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | tenofovir | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -108,30 +125,16 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Bouazza_2011:abstract'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | L ([length] ** 3) | ['Bouazza_2011:abstract'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Bouazza_2011:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Bouazza_2011:abstract'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Bouazza_2011:abstract'] |
+| C5_dimension_Q49 | fail | 1 / [time] | L·h⁻¹ ([length] ** 3 / [time]) | ['Bouazza_2011:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Bouazza_2011:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q63 | pass | volume within physiological range | 386 L | ['Bouazza_2011:abstract'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 666 L | ['Bouazza_2011:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| C9_phys_window_Q64 | pass | volume within physiological range | 386 L | ['Bouazza_2011:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -143,19 +146,9 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -165,4 +158,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btenofovir_disoproxil%5D%20TenofovirDisoproxil_Bouazza2011_reference&body=Drug%3A%20tenofovir_disoproxil%0ARecord%3A%20TenofovirDisoproxil_Bouazza2011_reference%0APaper%3A%20Bouazza_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Bouazza2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:51 UTC</sub>

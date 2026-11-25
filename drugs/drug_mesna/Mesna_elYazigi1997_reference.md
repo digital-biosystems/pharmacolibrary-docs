@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model for mesna was rejected due to unit inconsistencies in clearance parameters and the exclusion of the dimesna metabolite from the model structure.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit L/hr.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time]; Q26 unit L/hr.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="mesna" model-id="Mesna_elYazigi1997_reference" status="rejected" stale="false" population="patients undergoing bone marrow transplantation" measured-compound="mesna" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ el-Yazigi A, Ernst P, al-Rawithi S, Legayada E, Raines DA. Pharmacokinetics of m
 
 ### Reviewer guidance
 
-**The model for mesna was rejected due to unit inconsistencies in clearance parameters and the exclusion of the dimesna metabolite from the model structure.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit L/hr.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time]; Q26 unit L/hr.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The total and renal clearance values were recorded in L/hr.kg, a unit dimension that conflicts with the expected L/hr. Additionally, a second reader disagreed on the model topology, removing the metabolism link from mesna to dimesna, which leaves the dimesna compartment unreachable. The record was constructed solely from the abstract, meaning the provided summary statistics are not derived from a fitted model. There is also a conflict regarding the renal clearance value, with the second reader marking it as missing rather than 0.244 L/hr.kg. Extracted — mesna: t1/2α 0.12 hours, t1/2β 2.12 hours, V1 0.324 L/kg, Vss 1.09 L/kg, V2 2.09 L/kg, CL 0.755 L/hr.kg, MRT 6.77 hours, t1/2z 1.29 hours, … (+3).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mesna: t1/2α 0.12 hours, t1/2β 2.12 hours, V1 0.324 L/kg, Vss 1.09 L/kg, V2 2.09 L/kg, CL 0.755 L/hr.kg, MRT 6.77 hours, t1/2z 1.29 hours, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has mesna → dimesna (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

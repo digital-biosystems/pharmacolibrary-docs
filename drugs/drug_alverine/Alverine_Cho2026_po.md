@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> The record was rejected due to dimension mismatches for concentration and AUC parameters, as their molar units were treated as mass-based dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit μmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q74 unit μmol·h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="alverine" model-id="Alverine_Cho2026_po" status="rejected" stale="false" population="mice" measured-compound="alverine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -52,13 +52,13 @@ Cho A, Jeong HC, Kim M, Cho I, Na HJ, Ko KC et al. Development of Integrated Par
 
 ### Reviewer guidance
 
-**The record was rejected due to dimension mismatches for concentration and AUC parameters, as their molar units were treated as mass-based dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit μmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q74 unit μmol·h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The model parameters Cmax (0.3473 μmol/L) and AUClast (0.3517 μmol·h/L) use molar concentration units. The structural check flagged these as conflicting with the expected mass-based dimensions, specifically identifying a conflict between substance/length^3 and mass/length^3. This indicates the record failed to correctly align the molar unit definitions with the physical dimensions required for the alverine model structure. Extracted — alverine: tmax 0.242 h, Cmax 0.347 μmol/L, AUClast 0.352 μmol·h/L, V 1.26 L/kg, t1/2z 0.191 h.
+A reported unit could not be converted (Cmax and AUClast), so that value has no SI equivalent. Extracted — alverine: tmax 0.242 h, Cmax 0.347 μmol/L, AUClast 0.352 μmol·h/L, V 1.26 L/kg, t1/2z 0.191 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alverine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

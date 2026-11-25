@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> Dolasetron’s kfm is recorded as 7 h−1, while the refused record maps measured dolasetron to the parent compartment and substitutes a one-compartment enteral structure for its parent–metabolite model.
+> T3_output_variable; t3_topology_template (+1 more).
 
 <div class="pk-model-meta" hidden drug="dolasetron" model-id="Dolasetron_Dow1996_reference" status="rejected" stale="false" population="dogs" measured-compound="dolasetron" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -56,13 +56,13 @@ Dow J, Francesco GF, Berg C. Comparison of the pharmacokinetics of dolasetron an
 
 ### Reviewer guidance
 
-**Dolasetron’s kfm is recorded as 7 h−1, while the refused record maps measured dolasetron to the parent compartment and substitutes a one-compartment enteral structure for its parent–metabolite model.**
+**T3_output_variable; t3_topology_template (+1 more).**
 
-The measured compound is dolasetron, but the output is assigned to the central compartment rather than the metabolite compartment, and the one-compartment enteral structure does not match the parent–metabolite structure. Because only the abstract was read, summary statistics stood in for a fitted model; the builder also defaulted Tlag and assumed F=1, Fm=1, with no molar correction. The second reader disputed the dose compound, analyte, metabolic link, and apparent parameterization, and did not agree with the recorded bioavailability, formation-rate, or volume estimates; agreement was 0 of 1 reader(s). Extracted — dolasetron: t1/2z 0.1 h, CL 109 mL/min/kg, V/F 0.83 L/kg, Fab 7 %, V1 8.5 L/kg, kfm 7 h-1, tmax 0.33 h, kabs 14 h-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dolasetron: t1/2z 0.1 h, CL 109 mL/min/kg, V/F 0.83 L/kg, Fab 7 %, V1 8.5 L/kg, kfm 7 h-1, tmax 0.33 h, kabs 14 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dolasetron, the second reading dolasetron or red-dolasetron; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -173,7 +173,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.0 (0 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0 | cross-check contradicted by a second reader: verdict disputed; agreement 0.0 (0 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

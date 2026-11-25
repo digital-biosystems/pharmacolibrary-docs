@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinorelbine&quot;,&quot;href&quot;:&quot;drugs/drug_vinorelbine/&quot;},{&quot;label&quot;:&quot;Deporte-Fety_2004 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinorelbine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinorelbine/Vinorelbine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -16,7 +17,7 @@ Deporte-Fety R, Simon N, Fumoleau P, Campone M, Kerbrat P, Bonneterre J et al. P
 
 ## Population and dosing
 
-**Population:** patients with metastatic breast cancer · condition metastatic breast cancer · age group adult · n = 30.
+**Population:** patients with metastatic breast cancer · condition metastatic breast cancer · age group adult.
 
 ## Model
 
@@ -32,7 +33,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +47,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-Independently confirmed by `qwen3.8-27b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -55,22 +56,20 @@ Independently confirmed by `qwen3.8-27b`.
 **Interpretation flags:**
 - table section iiv: 'CL' routed out of structural estimates ('The interindividual population coefficients of variation for CL and V(1) were 17.0% and 32.0%, respectively.')
 - table section iiv: 'V(1)' routed out of structural estimates ('The interindividual population coefficients of variation for CL and V(1) were 17.0% and 32.0%, respectively.')
-- table section iiv: 'interindividual population coefficients of variation for CL' routed out of structural estimates ('The interindividual population coefficients of variation for CL and V(1) were 17.0% and 32.0%, respectively.')
-- table section iiv: 'interindividual population coefficients of variation for V(1)' routed out of structural estimates ('The interindividual population coefficients of variation for CL and V(1) were 17.0% and 32.0%, respectively.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vinorelbine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Deporte-Fety_2004_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Deporte-Fety_2004_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (4/4 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -111,4 +110,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvinorelbine%5D%20Vinorelbine_DeporteFety2004_reference&body=Drug%3A%20vinorelbine%0ARecord%3A%20Vinorelbine_DeporteFety2004_reference%0APaper%3A%20Deporte-Fety_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vinorelbine/Vinorelbine_DeporteFety2004_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 15:14 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:16 UTC</sub>

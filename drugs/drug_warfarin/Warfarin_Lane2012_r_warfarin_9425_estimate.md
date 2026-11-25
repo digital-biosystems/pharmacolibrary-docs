@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The warfarin model is rejected because R-warfarin and S-warfarin are defined as interconverted metabolites without a path from the dose compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Lane2012_r_warfarin_9425_estimate" status="rejected" stale="false" population="patients on long-term warfarin therapy" measured-compound="R-warfarin and S-warfarin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Lane S, Al-Zubiedi S, Hatch E, Matthews I, Jorgensen AL, Deloukas P et al. The p
 
 ### Reviewer guidance
 
-**The warfarin model is rejected because R-warfarin and S-warfarin are defined as interconverted metabolites without a path from the dose compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines links where warfarin interconverts to R-warfarin and S-warfarin, but both metabolites are marked as unreachable or orphan compartments. The second reader disagrees with the primary analyte assignment and the existence of these interconversion links, noting they should not be present. This structural inconsistency means the measured compounds have no defined input from the administered warfarin dose. Extracted — warfarin: CL 0.132 l h-1, V 9.11 l; R-warfarin and S-warfarin: kabs 0.214 1/h, tlag 1.29 h.
+Extracted — warfarin: CL 0.132 l h-1, V 9.11 l; R-warfarin and S-warfarin: kabs 0.214 1/h, tlag 1.29 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has R-warfarin and S-warfarin, the second reading warfarin; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

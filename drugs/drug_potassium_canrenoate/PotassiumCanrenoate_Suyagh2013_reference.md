@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Potassium canrenoate record was held back because absorption rate constants were not reported, and apparent metabolite clearance of 1.11 l/h was disputed.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="potassium canrenoate" model-id="PotassiumCanrenoate_Suyagh2013_reference" status="needs_review" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Potassium
 
 ### Reviewer guidance
 
-**Potassium canrenoate record was held back because absorption rate constants were not reported, and apparent metabolite clearance of 1.11 l/h was disputed.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record was built from the abstract only, so reported summary statistics stood in for a fitted model, and absorption rate constants were assigned arbitrary default values rather than estimated from the paper. The apparent clearance of canrenone (1.11 l/h) and its volume of distribution (20.48 l) were flagged as deviations because they rely on apparent parameterization assumptions (F=1, Fm=1) without explicit estimates. A second reader disputed the identification of the dose compound as potassium canrenoate and the assignment of the clearance and half-life values to specific parameter types, resulting in zero agreement. Extracted — canrenone: CLm/F 1.11 l/h, Vm/F 20.5 l, t1/2z 20 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is potassium canrenoate's own; they describe canrenone. Extracted — canrenone: CLm/F 1.11 l/h, Vm/F 20.5 l, t1/2z 20 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has potassium canrenoate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -145,7 +145,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.3, 0 of 1 reader(s) agree | 0.3 | cross-check disputed by a second reader: verdict disputed, agreement 0.3, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.3 (3 of 10 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.3 | cross-check contradicted by a second reader: verdict disputed; agreement 0.3 (3 of 10 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

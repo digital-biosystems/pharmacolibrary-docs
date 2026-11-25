@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Record rejected because absorption rate constant was unreported, model structure mismatched the parent-metabolite topology, and terminal half-life was incorrect.
+> The model does not reproduce the paper's terminal half-life (paper 7.53, model 2.22); ka use library defaults, not estimates from this paper (+4 more).
 
 <div class="pk-model-meta" hidden drug="tianeptine" model-id="Tianeptine_Szafarz2018_intravenous_1_mg_kg" status="rejected" stale="false" population="rats" measured-compound="tianeptine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -58,13 +58,13 @@ Szafarz M, Wencel A, Pociecha K, Fedak FA, Wlaź P, Wyska E. Pharmacokinetic stu
 
 ### Reviewer guidance
 
-**Record rejected because absorption rate constant was unreported, model structure mismatched the parent-metabolite topology, and terminal half-life was incorrect.**
+**The model does not reproduce the paper's terminal half-life (paper 7.53, model 2.22); ka use library defaults, not estimates from this paper (+4 more).**
 
-The record defines a parent-metabolite structure, but the simulation used a single-compartment oral model. The absorption rate constant was not provided, so a placeholder value was used. Simulated as the paper dosed it, the model's terminal half-life (2.22 h) differed from the reported value (7.53 h). Extracted — tianeptine: tmax 86.6 h, kel 41.7 h−1, t1/2z 64.3 h, V 40.2 L/kg, AUC∞ 19.4 mg∙h/L, CL/F 21.4 L/h/kg, Vss 55.6 L/kg, MRT 32.6 h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (AUC∞), so that value has no SI equivalent. Extracted — tianeptine: tmax 86.6 h, kel 41.7 h−1, t1/2z 64.3 h, V 40.2 L/kg, AUC∞ 19.4 mg∙h/L, CL/F 21.4 L/h/kg, Vss 55.6 L/kg, MRT 32.6 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tianeptine → mc5 (metabolism), the second reading not captured → not captured (not captured); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -190,10 +190,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.846, 0 of 1 reader(s) agree | 0.846 | cross-check disputed by a second reader: verdict disputed, agreement 0.846, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | fail | 7.53 | 2.219 | 0.2947 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 1.16 | 2.219 | 1.913 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | skipped |  | 2.219 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.846 (11 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.846 | cross-check contradicted by a second reader: verdict disputed; agreement 0.846 (11 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | fail | 7.53 | 2.219 | 0.2947 | reported 7.53 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 1.16 | 2.219 | 1.913 | reported 1.16 h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 2.219 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

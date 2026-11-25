@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper reports pharmacokinetic parameters for alprazolam, not brivaracetam.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="brivaracetam" model-id="Brivaracetam_Klein2026_reference" status="rejected" stale="false" population="" measured-compound="brivaracetam" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Klein P, Aungaroon G, Biton V, Liow KK, Phillips S, Wychowski T et al. Pharmacok
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper reports pharmacokinetic parameters for alprazolam, not brivaracetam.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The primary check failed because the source text discusses alprazolam, with brivaracetam mentioned only as a concomitant medication. Consequently, the extracted parameters (Clearance 8.23 L/h, Volume 1.5317 L, Absorption 5.37 h−1) belong to the wrong drug. A secondary reviewer also noted discrepancies in bioavailability values that were left as nulls in this record. Extracted — brivaracetam: CL 8.23 L/h, V 1.53 L, kabs 5.37 h−1.
+Extracted — brivaracetam: CL 8.23 L/h, V 1.53 L, kabs 5.37 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 95.5; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.818 (9 of 11 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

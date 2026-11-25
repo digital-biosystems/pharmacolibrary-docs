@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Hydroxocobalamin absorption rate constant ka was missing, forcing assumed values, while the abstract-only record mislabels total clearance as renal clearance 0.31 L/h.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="hydroxocobalamin" model-id="Hydroxocobalamin_Houeto1996_reference" status="needs_review" stale="false" population="smoke inhalation victims" measured-compound="hydroxocobalamin" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Houeto P, Borron SW, Sandouk P, Imbert M, Levillain P, Baud FJ. Pharmacokinetics
 
 ### Reviewer guidance
 
-**Hydroxocobalamin absorption rate constant ka was missing, forcing assumed values, while the abstract-only record mislabels total clearance as renal clearance 0.31 L/h.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-No explicit ka estimate was extracted, so placeholder values were used for absorption rather than data from this paper. The abstract provided only summary statistics, leading to apparent parameterization assumptions like F=1. A second reader disagrees on clearance, identifying 0.31 L/h as renal clearance and 0.83 L/h as total body clearance, conflicting with the record's single clearance value. Extracted — hydroxocobalamin: t1/2α 1.86 h, t1/2z 26.2 h, V/F 0.45 L/kg, CL 0.31 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — hydroxocobalamin: t1/2α 1.86 h, t1/2z 26.2 h, V/F 0.45 L/kg, CL 0.31 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of renal and total body clearance: this record has 0.31, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.7 (7 of 10 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.7 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the drug interaction parameter θCL-VPA (40.5) has an incompatible unit of h⁻¹, implying it is a rate constant rather than a dimensionless clearance ratio.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q31 unit h-1 (1 / [time]) vs None.
 
 <div class="pk-model-meta" hidden drug="lurasidone" model-id="Lurasidone_Yang2026_pop" status="rejected" stale="false" population="Chinese psychiatric inpatients" measured-compound="lurasidone" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Yang Y, Lu H, Xiao T, Ni X, Wang Z, Chen Y et al. Impact of valproate co-medicat
 
 ### Reviewer guidance
 
-**The record was rejected because the drug interaction parameter θCL-VPA (40.5) has an incompatible unit of h⁻¹, implying it is a rate constant rather than a dimensionless clearance ratio.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q31 unit h-1 (1 / [time]) vs None.**
 
-The record defines θCL-VPA as a ratio of clearances, which should be dimensionless, but assigns it the unit h⁻¹. This dimensional conflict indicates the parameter was not properly characterized as a scalar ratio. Additionally, a second reader identified a missing age coefficient value of 22.5 and disagreed on the identification of the primary analyte and dose compound. Extracted — lurasidone: CL/F 8.6 L·h-1, V/F 18.2 L, CL_ratio 40.5 h-1.
+A reported unit could not be converted (CL_ratio), so that value has no SI equivalent. Extracted — lurasidone: CL/F 8.6 L·h-1, V/F 18.2 L, CL_ratio 40.5 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lurasidone, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

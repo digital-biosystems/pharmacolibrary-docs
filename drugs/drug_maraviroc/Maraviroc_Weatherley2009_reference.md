@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This paper's disposition core is incomplete.
+> Only clearance was extracted — no volume.
 
 <div class="pk-model-meta" hidden drug="maraviroc" model-id="Maraviroc_Weatherley2009_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="maraviroc" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,13 +17,13 @@ Weatherley B, McFadyen L. Maraviroc modelling strategy: use of early phase 1 dat
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = 154.
+**Population:** healthy adults · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,13 +32,10 @@ Weatherley B, McFadyen L. Maraviroc modelling strategy: use of early phase 1 dat
 | label | parameter | value | unit |
 |---|---|---|---|
 | Total clearance | CL | 48 | l h(-1) |
-| V | V | 80.0 | L |
-| ka (h−1) | kabs | 0.69 | h−1 |
-| ALAG (h) | tlag | 0.87 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +45,11 @@ Weatherley B, McFadyen L. Maraviroc modelling strategy: use of early phase 1 dat
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Only clearance was extracted — no volume.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Courlet_2021, Ren_2022) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — maraviroc: CL 48 l h(-1), V 80 L, kabs 0.69 h−1, tlag 0.87 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — maraviroc: CL 48 l h(-1).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has maraviroc, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,9 +58,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | Total clearance | `Q22` · CL | 48 | l h(-1) | 1.333e-05 | m3/s | l/h | exact (1) | Weatherley_2009:abstract, Weatherley_2009:abstract |
-| V | `Q61` · V | 80.0 | L | 0.08 | m3 | L | review_gapfill (0.7) | Ren_2022:review |
-| ka (h−1) | `Q49` · kabs | 0.69 | h−1 | 0.0001917 | 1/s | 1/h | review_gapfill (0.7) | Courlet_2021:review |
-| ALAG (h) | `Q83` · tlag | 0.87 | h | 3132 | s | h | review_gapfill (0.7) | Courlet_2021:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,37 +69,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=maraviroc
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Ren_2022's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Courlet_2021's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Courlet_2021's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Weatherley_2009_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | confirmed | 1.0 (5/5 fields) | none |
 
-<details><summary>7 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[alag]` | 0.87 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 0.69 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total clearance]` | 48 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total clearance]` |  | 48 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v]` | 80.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | maraviroc | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | maraviroc | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -121,13 +98,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Weatherley_2009:abstract', 'Weatherley_2009:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Courlet_2021:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Ren_2022:review'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Courlet_2021:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 48 | ['Weatherley_2009:abstract', 'Weatherley_2009:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 48 L/h | ['Weatherley_2009:abstract', 'Weatherley_2009:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 80 L | ['Ren_2022:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -161,4 +134,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmaraviroc%5D%20Maraviroc_Weatherley2009_reference&body=Drug%3A%20maraviroc%0ARecord%3A%20Maraviroc_Weatherley2009_reference%0APaper%3A%20Weatherley_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_maraviroc/Maraviroc_Weatherley2009_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:59 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:09 UTC</sub>

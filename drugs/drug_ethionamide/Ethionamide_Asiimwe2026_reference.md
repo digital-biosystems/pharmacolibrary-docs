@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper concerns another drug, not ethionamide, leaving the clearance and volume parameters unverified.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Asiimwe2026_reference" status="rejected" stale="false" population="" measured-compound="ethionamide" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Asiimwe IG, You T, Carr DF, Pirmohamed M, Davies G, Jorgensen AL et al. Improvin
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper concerns another drug, not ethionamide, leaving the clearance and volume parameters unverified.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The relevance screen confirmed the paper's title and abstract do not name ethionamide. Consequently, the extracted clearance of 3.52 L/hour and central volume of 28.57 L were not sourced from ethionamide data. Additionally, the absorption rate constant was set to a default value rather than being estimated from the text. Extracted — ethionamide: CL/F 3.52 L/hour, V1/F 28.6 L.
+Extracted — ethionamide: CL/F 3.52 L/hour, V1/F 28.6 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q316: this record has none, the second reading 0.22; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.714 (5 of 7 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

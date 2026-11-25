@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Bioavailability F was not estimated, and a reported unit could not be converted to standard PK units.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Vegas2021_reference" status="needs_review" stale="false" population="healthy and critically ill dogs" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Vegas Cómitre MD, Cortellini S, Cherlet M, Devreese M, Roques BB, Bousquet-Melo
 
 ### Reviewer guidance
 
-**Bioavailability F was not estimated, and a reported unit could not be converted to standard PK units.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The bioavailability (F) was assigned a standard placeholder value rather than an estimate from this paper, which affects simulated concentration profiles. One reported unit could not be converted to standard units, leaving that parameter unquantified in SI terms. A second reviewer could not verify the normalized clearance of 0.0373 L/kg/h or the covariate coefficient of -0.829. Extracted — amoxicillin: CL 0.336 L/kg/h, V1 0.173 L/kg, Q 0.861 L/kg/h, V2 0.174 L/kg, CLnorm 0.0373 L/kg/h, V3 0.0776 L/kg, kabs 0.17 h−1, tlag 0.125 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — amoxicillin: CL 0.336 L/kg/h, V1 0.173 L/kg, Q 0.861 L/kg/h, V2 0.174 L/kg, CLnorm 0.0373 L/kg/h, V3 0.0776 L/kg, kabs 0.17 h−1, tlag 0.125 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl3: this record has 0.0373, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

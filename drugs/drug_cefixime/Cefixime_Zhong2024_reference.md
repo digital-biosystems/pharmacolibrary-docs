@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span>
 
-> The cefixime record was rejected because the extracted volume of distribution (0.05 L) is implausibly low, indicating a likely unit or scale error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="cefixime" model-id="Cefixime_Zhong2024_reference" status="rejected" stale="false" population="" measured-compound="cefixime" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Zhong J, Le W, Li X, Su X. Evaluating the efficacy of different antibiotics agai
 
 ### Reviewer guidance
 
-**The cefixime record was rejected because the extracted volume of distribution (0.05 L) is implausibly low, indicating a likely unit or scale error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The label for the volume of distribution parameter explicitly identifies the value as belonging to ceftriaxone rather than the recorded drug, cefixime. The second reader notes that the 0.05 L value corresponds to the clearance field, while the 14.7 L/h value corresponds to the volume field, confirming a misalignment. Consequently, the recorded volume of 0.05 L falls outside the physiological window for cefixime. Extracted — cefixime: CL 14.7 L/h, V 0.05 L.
+Extracted — cefixime: CL 14.7 L/h, V 0.05 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has none, the second reading 14.7; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

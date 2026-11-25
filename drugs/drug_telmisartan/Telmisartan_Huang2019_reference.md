@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record was refused because bioavailability and lag time were defaulted, clearance was misread as 25.1 L/h instead of 8.2 L/h, and a three-compartment structure was used for a one-compartment model.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Huang2019_reference" status="needs_review" stale="false" population="Chinese patients with hypertension" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Huang L, Yang L, Huang J, Tan HY, Liu SK, Guo CX et al. Effects of UGT1A1 Polymo
 
 ### Reviewer guidance
 
-**The record was refused because bioavailability and lag time were defaulted, clearance was misread as 25.1 L/h instead of 8.2 L/h, and a three-compartment structure was used for a one-compartment model.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).**
 
-The model builder substituted library defaults for the oral bioavailability fraction and absorption lag time instead of using explicit estimates from the paper. A second reader identified major discrepancies in the extracted parameters, specifically noting clearance at 8.2 L/h rather than 25.1 L/h and the absorption rate constant at 9.4 per hour rather than 0.571 per hour. The structure lists a volume of distribution for a second peripheral compartment, which contradicts the declared one-compartment topology. Extracted — telmisartan: CL 25.1 L/h, V2 30 L, V3 958 L, Q 14.6 L/h, kabs 0.571 h-1, V 500 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — telmisartan: CL 25.1 L/h, V2 30 L, V3 958 L, Q 14.6 L/h, kabs 0.571 h-1, V 500 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 25.1, the second reading 8.2; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

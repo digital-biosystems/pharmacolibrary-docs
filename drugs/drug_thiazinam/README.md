@@ -22,8 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Holford_1987_FEV1](drugs/drug_thiazinam/pd_Holford_1987_FEV1.md) | bronchodilator response (expressed as % predicted FEV1) ← thiazinamium · direct sigmoid Emax (Hill) effect | — | Holford NH et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1987) | [10.1007/BF00637555](https://doi.org/10.1007/BF00637555) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Holford_1987_HR](drugs/drug_thiazinam/pd_Holford_1987_HR.md) | anticholinergic activity, measured by the change in heart rate ← thiazinamium · direct sigmoid Emax (Hill) effect | — | Holford NH et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1987) | [10.1007/BF00637555](https://doi.org/10.1007/BF00637555) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Holford_1987_FEV1](drugs/drug_thiazinam/pd_Holford_1987_FEV1.md) | bronchodilator response (expressed as % predicted FEV1) ← thiazinamium · direct sigmoid Emax (Hill) effect | — | Holford NH et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1987) | [10.1007/BF00637555](https://doi.org/10.1007/BF00637555) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Holford_1987_HR](drugs/drug_thiazinam/pd_Holford_1987_HR.md) | anticholinergic activity, measured by the change in heart rate ← thiazinamium · direct sigmoid Emax (Hill) effect | — | Holford NH et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (1987) | [10.1007/BF00637555](https://doi.org/10.1007/BF00637555) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:45 | 0:36 | 0/0/0 | 2/0/0 | 0/0/0 | 19,473/1,630 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 21:45 | 0:36 | 0/0/0 | 0/2/0 | 0/0/0 | 19,473/1,630 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 

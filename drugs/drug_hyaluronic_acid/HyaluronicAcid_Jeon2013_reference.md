@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The second reader disagreed with the extracted hyaluronic acid parameters, preventing verification of the review reference values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="hyaluronic acid" model-id="HyaluronicAcid_Jeon2013_reference" status="needs_review" stale="false" population="" measured-compound="hyaluronic_acid" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Jeon S, Juhn JH, Han S, Lee J, Hong T, Paek J et al. Saturable human neopterin r
 
 ### Reviewer guidance
 
-**The second reader disagreed with the extracted hyaluronic acid parameters, preventing verification of the review reference values.**
+**cross_check_disputed; x1_cross_check.**
 
-The source text is a secondary review reference, so the parameters are reported estimates rather than fitted model values. A cross-check failed because the second reader could not agree on the extracted values, resulting in an agreement score of 0.471. The second reader specifically contested the values for absorption rate constant and volume of distribution, identifying discrepancies in the reported numbers. Extracted — hyaluronic acid: CL/F 12.2 L/h, V/F 691 L, tlag 85.7 h, kabs 0.00653 h-1.
+Extracted — hyaluronic acid: CL/F 12.2 L/h, V/F 691 L, tlag 85.7 h, kabs 0.00653 h-1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q312: this record has 26.1, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.471, 0 of 1 reader(s) agree | 0.471 | cross-check disputed by a second reader: verdict disputed, agreement 0.471, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.471 (8 of 17 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.471 | cross-check contradicted by a second reader: verdict disputed; agreement 0.471 (8 of 17 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cycloserine was classified as an orphan metabolite because its formation from terizidone had no defined rate constant.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="cycloserine" model-id="Cycloserine_Upton2025_reference" status="rejected" stale="false" population="adults with pulmonary drug-resistant tuberculosis" measured-compound="cycloserine" parameterization="apparent" topology="general_linear"></div>
 
@@ -52,13 +52,13 @@ Upton CM, Calderin JM, Diacon AH, Boeree MJ, Denti P, Wiesner L et al. Cerebrosp
 
 ### Reviewer guidance
 
-**Cycloserine was classified as an orphan metabolite because its formation from terizidone had no defined rate constant.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure links terizidone to cycloserine via interconversion, but the link parameter is recorded as none, leaving the metabolite without a quantitative formation path. Consequently, the system flagged cycloserine as an unreachable compartment. A second reader disagreed, asserting the link was metabolism, the parameters were mechanistic rather than apparent, and the absorption rate constant of 0.14 h⁻¹ was absent. Extracted — cycloserine: CLm/F 0.54 L/h, Vm/F 13.9 L, CL/F 2 liter/h, V/F 24.9 liters, kabs 0.14 h−1, tlag 0.333 h.
+Extracted — cycloserine: CLm/F 0.54 L/h, Vm/F 13.9 L, CL/F 2 liter/h, V/F 24.9 liters, kabs 0.14 h−1, tlag 0.333 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has terizidone → cycloserine (interconversion), the second reading terizidone → cycloserine (metabolism); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

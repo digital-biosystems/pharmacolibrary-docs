@@ -4,11 +4,11 @@
 
 # pyrimethamine — `Pyrimethamine_Falloon1994_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This paper's disposition core is incomplete.
+> No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_Falloon1994_reference" status="needs_review" stale="false" population="HIV-infected adults for Pneumocystis pneumonia prophylaxis" measured-compound="dapsone and pyrimethamine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_Falloon1994_reference" status="rejected" stale="false" population="adults infected with HIV" measured-compound="pyrimethamine and dapsone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Falloon J, Lavelle J, Ogata-Arakaki D, Byrne A, Graziani A, Morgan A et al. Pharmacokinetics and safety of weekly dapsone and dapsone plus pyrimethamine for prevention of pneumocystis pneumonia. Antimicrobial agents and chemotherapy 38(7):1580–1587 (1994).
@@ -16,28 +16,29 @@ Falloon J, Lavelle J, Ogata-Arakaki D, Byrne A, Graziani A, Morgan A et al. Phar
 
 ## Population and dosing
 
-**Population:** HIV-infected adults for Pneumocystis pneumonia prophylaxis · condition HIV infection / Pneumocystis pneumonia prophylaxis · age group adult.
+**Population:** adults infected with HIV · condition HIV infection · age group adult.
 
 **Dosing:** 100, 200, 300 mg, oral, multiple, every 168 h.
+
+**Dosed compound ≠ measured compound:** dosed dapsone and pyrimethamine, measured pyrimethamine and dapsone.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | Mean | MRT | 0.579 | h |
-| total volume of distribution | V | 1330.0 | liters |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +48,11 @@ Falloon J, Lavelle J, Ogata-Arakaki D, Byrne A, Graziani A, Morgan A et al. Phar
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**No volume or clearance — not a compartmental population PK model.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Ramharter_2019) cannot stand in for this paper's evidence. Extracted — pyrimethamine: MRT 0.579 h; dapsone and pyrimethamine: V 1.33e+03 liters.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dapsone and pyrimethamine, the second reading dapsone, pyrimethamine; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dapsone and pyrimethamine, the second reading pyrimethamine; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,7 +61,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | Mean | `Q53` · MRT | 0.579 | h | 2084 | s | h | llm (0.6) | tab_4:row3:col1, tab_4:row3:col2, tab_4:row3:col3, tab_4:row3:col4, tab_4:row3:col5, tab_4:row3:col6, tab_4:row3:col7, tab_4:row7:col1, tab_4:row7:col2, tab_4:row7:col3, tab_4:row7:col4, tab_4:row7:col5, tab_4:row7:col6, tab_4:row7:col7 |
-| total volume of distribution | `Q61` · V | 1330.0 | liters | 1.33 | m3 | L | review_gapfill (0.7) | Ramharter_2019:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,25 +71,29 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 **Interpretation flags:**
 - column 'tiag (h)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- table representations disagree for 'Median'; source reconciliation required
 - column "k, (h-')" classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'vj/f (liters/kg)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'vpi/ (liters/kg)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'cld/f (liters/h/kg)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'cl/hf (liters/h/kg)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 't1n (h)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- table representations disagree for 'Mean'; source reconciliation required
+- table representations disagree for 'CV (%)'; source reconciliation required
 - dropped unlinked row (NIL): 'Median' — extend the ontology if this is a real PK parameter (source ['tab_4:row2:col1', 'tab_4:row2:col2', 'tab_4:row2:col3', 'tab_4:row2:col4', 'tab_4:row2:col5', 'tab_4:row2:col6', 'tab_4:row2:col7', 'tab_4:row6:col1', 'tab_4:row6:col2', 'tab_4:row6:col3', 'tab_4:row6:col4', 'tab_4:row6:col5', 'tab_4:row6:col6', 'tab_4:row6:col7'])
 - dropped unlinked row (NIL): 'CV (%)' — extend the ontology if this is a real PK parameter (source ['tab_4:row4:col1', 'tab_4:row4:col2', 'tab_4:row4:col3', 'tab_4:row4:col4', 'tab_4:row4:col5', 'tab_4:row4:col6', 'tab_4:row4:col7', 'tab_4:row8:col1', 'tab_4:row8:col2', 'tab_4:row8:col3', 'tab_4:row8:col4', 'tab_4:row8:col5', 'tab_4:row8:col6', 'tab_4:row8:col7'])
-- dropped value-less row: 'TABLE 5 . Fitted pharmacokinetic parameters for dapsone and pyrimethaminea'
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dapsone and pyrimethamine
-- molar mass: none of 1 PubChem candidate(s) is 'dapsone and pyrimethamine' (LLM) — left in mass units
-- gap-filled Q61 (V) from Ramharter_2019's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pyrimethamine and dapsone
+- status held at "Needs review" — not promoted
+- molar mass: none found for 'pyrimethamine and dapsone' — its concentrations stay mass-only
+
+**Extraction notes:**
+- table tab_4: representations disagree; selected evidence retained, not merged
+- LLM selected parameter table(s) 4
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -100,9 +104,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[mean].value` | 0.579 | 131 | mismatch |
-| `gpt-oss-120b` | `parameters[total volume of distribution]` | 1330.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | dapsone and pyrimethamine | dapsone, pyrimethamine | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | dapsone and pyrimethamine | pyrimethamine | mismatch |
+| `gpt-oss-120b` | `parameters[median]` |  | 111 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | dapsone and pyrimethamine | pyrimethamine | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | pyrimethamine and dapsone | pyrimethamine | mismatch |
 
 </details>
 
@@ -117,11 +121,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 1 |  |
-| C0c_disposition_complete | fail |  |  |  |
+| C0b_disposition_core | fail |  |  |  |
 | C5_dimension_Q53 | pass | [time] |  | ['tab_4:row3:col1', 'tab_4:row3:col2', 'tab_4:row3:col3', 'tab_4:row3:col4', 'tab_4:row3:col5', 'tab_4:row3:col6', 'tab_4:row3:col7', 'tab_4:row7:col1', 'tab_4:row7:col2', 'tab_4:row7:col3', 'tab_4:row7:col4', 'tab_4:row7:col5', 'tab_4:row7:col6', 'tab_4:row7:col7'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Ramharter_2019:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.33e+03 L | ['Ramharter_2019:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -133,19 +135,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -155,4 +147,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpyrimethamine%5D%20Pyrimethamine_Falloon1994_reference&body=Drug%3A%20pyrimethamine%0ARecord%3A%20Pyrimethamine_Falloon1994_reference%0APaper%3A%20Falloon_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pyrimethamine/Pyrimethamine_Falloon1994_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 08:08 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:37 UTC</sub>

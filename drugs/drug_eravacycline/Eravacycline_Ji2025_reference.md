@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The eravacycline record's dose compound and primary analyte are disputed by a second reader who found them unspecified.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="eravacycline" model-id="Eravacycline_Ji2025_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="eravacycline" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Ji X-w, Mak WY, Xue F, Yang W-y, Kuan IH-S, Xiang X-q et al. Population pharmaco
 
 ### Reviewer guidance
 
-**The eravacycline record's dose compound and primary analyte are disputed by a second reader who found them unspecified.**
+**cross_check_disputed; x1_cross_check.**
 
-The primary analyte and dose compound were recorded as eravacycline, but a second reader disagreed on both fields, marking them as unknown. Consequently, zero of one readers agreed with the initial assignment, leading to a verdict agreement of 0.778. This cross-check dispute resulted in the record being held back for further review. Extracted — eravacycline: CL 16.3 L/h, V1 3.88 L, Q 33.9 L/h, V2 39 L, V3 122 L.
+Extracted — eravacycline: CL 16.3 L/h, V1 3.88 L, Q 33.9 L/h, V2 39 L, V3 122 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has eravacycline, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -161,7 +161,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.778 (7 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | cross-check contradicted by a second reader: verdict disputed; agreement 0.778 (7 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

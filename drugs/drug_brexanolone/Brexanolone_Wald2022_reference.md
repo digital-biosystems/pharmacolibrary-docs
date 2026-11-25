@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record describes brexanolone as the dose, yet the pharmacokinetic parameters listed belong to its metabolite, allopregnanolone.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="brexanolone" model-id="Brexanolone_Wald2022_reference" status="rejected" stale="false" population="healthy lactating women and patients with postpartum depression" measured-compound="allopregnanolone" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -47,7 +47,7 @@ Wald J, Henningsson A, Hanze E, Hoffmann E, Li H, Colquhoun H et al. Allopregnan
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,11 +57,13 @@ Wald J, Henningsson A, Hanze E, Hoffmann E, Li H, Colquhoun H et al. Allopregnan
 
 ### Reviewer guidance
 
-**The record describes brexanolone as the dose, yet the pharmacokinetic parameters listed belong to its metabolite, allopregnanolone.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Although brexanolone is the administered drug, all extracted values for clearance, volume of distribution, and exposure describe allopregnanolone. This creates an orphan metabolite in the model structure because no dose is assigned to the metabolite itself. The clearance value of 87.5 L/h and volume of 1431.2 L are therefore pharmacokinetically incoherent with the stated dosing of brexanolone. Extracted — brexanolone: Cmax 89.7 ng/mL, tmax 47.8 h, Cavg 70.6 ng/mL, Css 80.1 ng/mL, AUCt 3.36e+03 ng·h/mL, AUC∞ 3.74e+03 ng·h/mL, t1/2z 11.3 h, kel 0.06 1/h, … (+2).
+A reported unit could not be converted (Cmax, Cavg, Css and AUCt), so that value has no SI equivalent. Extracted — brexanolone: Cmax 89.7 ng/mL, tmax 47.8 h, Cavg 70.6 ng/mL, Css 80.1 ng/mL, AUCt 3.36e+03 ng·h/mL, AUC∞ 3.74e+03 ng·h/mL, t1/2z 11.3 h, kel 0.06 1/h, … (+2).
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has brexanolone → allopregnanolone (interconversion), the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -115,6 +117,39 @@ Although brexanolone is the administered drug, all extracted values for clearanc
 - LLM selected parameter table(s) 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.188 (3/16 fields) | 13 |
+
+<details><summary>13 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['brexanolone', 'allopregnanolone', 'interconversion']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[auc0-60]` | 3358.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 3736.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cavg]` | 70.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 87.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 89.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[css]` | 80.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximum]` |  | 193.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[minimum]` |  | 3927 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1⁄2]` | 11.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 47.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz]` | 1431.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λz]` | 0.06 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

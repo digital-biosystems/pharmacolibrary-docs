@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (paper 0.8, model 0.562).
+> The model does not reproduce the paper's terminal half-life (paper 0.8, model 0.562); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="cefotaxime" model-id="Cefotaxime_Trang1985_noncompartmental" status="needs_review" stale="false" population="infants and children with meningitis" measured-compound="cefotaxime" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Trang JM, Jacobs RF, Kearns GL, Brown AL, Wells TG, Underwood FL et al. Cefotaxi
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 0.8, model 0.562).**
+**The model does not reproduce the paper's terminal half-life (paper 0.8, model 0.562); x1_cross_check.**
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — cefotaxime: kel 0.954 1/h, t1/2z 0.81 h, Vss 0.361 liter/kg, CL 0.289 L/h/kg, CLR 0.174 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of mean ± sda auc: this record has none, the second reading 82.4; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -155,12 +155,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | a second reader did not contradict the extraction |
-| T1_t_half_beta | reference | fail | 0.8 | 0.5621 | 0.7026 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 2.1 | 0.5621 | 0.2676 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.8 | 0.5621 | 0.7026 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.1 | 0.5621 | 0.2676 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.1 | 0.5621 | 0.2676 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.727 | cross-check contradicted by a second reader: verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | fail | 0.8 | 0.5621 | 0.7026 | reported 0.8 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.1 | 0.5621 | 0.2676 | reported 2.1 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.8 | 0.5621 | 0.7026 | reported 0.8 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.1 | 0.5621 | 0.2676 | reported 2.1 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.1 | 0.5621 | 0.2676 | reported 2.1 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

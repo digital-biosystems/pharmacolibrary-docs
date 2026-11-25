@@ -22,7 +22,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">in vitro</span> | [Bausch_1996_swelling_activated_anionic_channel_blockade](drugs/drug_nizofenone/pd_Bausch_1996_swelling_activated_anionic_channel_blockade.md) | swelling-activated anionic channel blockade ← nizofenone · inhibition effect | — | Bausch AR et al., Volume-sensitive chloride channels bloc…, Glia (1996) | [10.1002/(SICI)1098-1136(199609)18:1&lt;73::AID-GLIA8&gt;3.0.CO;2-4](https://doi.org/10.1002/(SICI)1098-1136(199609)18:1&lt;73::AID-GLIA8&gt;3.0.CO;2-4) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.90).">in vitro</span> | [Bausch_1996_VSCC](drugs/drug_nizofenone/pd_Bausch_1996_VSCC.md) | swelling-activated anionic channels ← nizofenone · direct Emax (saturable) effect | — | Bausch AR et al., Volume-sensitive chloride channels bloc…, Glia (1996) | [10.1002/(SICI)1098-1136(199609)18:1&lt;73::AID-GLIA8&gt;3.0.CO;2-4](https://doi.org/10.1002/(SICI)1098-1136(199609)18:1&lt;73::AID-GLIA8&gt;3.0.CO;2-4) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span> | [Ochiai_1982_infarction_size](drugs/drug_nizofenone/pd_Ochiai_1982_infarction_size.md) | infarction size ← nizofenone · inhibition effect | — | Ochiai C et al., Mechanisms of cerebral protection by pe…, Stroke (1982) | [10.1161/01.str.13.6.788](https://doi.org/10.1161/01.str.13.6.788) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span> | [Ochiai_1982_lCBF](drugs/drug_nizofenone/pd_Ochiai_1982_lCBF.md) | local cerebral blood flow ← nizofenone · model not identified | — | Ochiai C et al., Mechanisms of cerebral protection by pe…, Stroke (1982) | [10.1161/01.str.13.6.788](https://doi.org/10.1161/01.str.13.6.788) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +38,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 01:00 | 2:27 | 0/0/0 | 0/1/0 | 0/0/0 | 45,371/654 | ollama / glm-5.3-flash | 2 | 2/0 | 2/0 | 0 |
+| 2026-11-24 01:53 | 0:03 | 0/0/0 | 0/3/0 | 0/0/0 | 4,535/165 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
 
 ## Coverage
 
@@ -53,16 +55,25 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Bausch_1996.pdf` | Bausch AR et al., Volume-sensitive chloride channels bloc…, Glia (1996) | pd | 4 | [10.1002/(SICI)1098-1136(199609)18:1&lt;73::AID-GLIA8&gt;3.0.CO;2-4](https://doi.org/10.1002/(SICI)1098-1136(199609)18:1<73::AID-GLIA8>3.0.CO;2-4) | [8891694](https://www.ncbi.nlm.nih.gov/pubmed/8891694) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-07 01:00 UTC</sub>
+<sub>queue written 2026-11-24 01:53 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Bausch_1996 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of channel blocking by nizofenone, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Bausch_1996 | not_relevant | 0 | 0 | The paper investigates pharmacological blocking of chloride channels by drugs like nizofenone but does not examine the impact of gene variants on PK/PD parameters (pharmacogenomics). |
+| popPK | Kirino_1986 | irrelevant | 0 | 0 | This is a preclinical neuroprotective study in gerbils that reports effective dosages for neuronal survival but does not contain any pharmacokinetic parameter estimation (CL, V, ka, etc.). |
+| PGx | Kirino_1986 | not_relevant | 0 | 0 | The paper does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of nizofenone. |
 | popPK | Kuchimanchi_2022 | irrelevant | 0 | 0 | This is a population PK study of diroximel fumarate metabolites (MMF/HES), not nizofenone; no nizofenone data appear. |
-| popPK | Ochiai_1982 | irrelevant | 0 | 0 | Pharmacodynamic cerebral-ischemia study in cats; no PK disposition parameters for nizofenone are reported. |
-| popPK | Ochiai_1982_2 | irrelevant | 0 | 0 | This is a cerebral blood flow/infarction efficacy study in cats; nizofenone is a treatment, with no PK disposition parameters reported. |
-| popPK | Shuto_1984 | irrelevant | 0 | 0 | This is a neurophysiology/pharmacodynamics study of nizofenone's protective effects in cat brain ischemia, with no PK disposition parameters (CL, V, half-life, compartmental model) reported. |
+| popPK | Mizoi_1984 | irrelevant | 1 | 0 | The study focuses on the neuroprotective mechanism and EEG changes during cerebral ischemia in dogs, reporting no quantitative pharmacokinetic disposition parameters (CL, V, ka). |
+| PGx | Mizoi_1984 | not_relevant | 0 | 0 | The paper describes a pharmacodynamic study in a canine model but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Ochiai_1982 | irrelevant | 0 | 0 | The paper studies cerebral blood flow and infarction size in a neuroprotective context, not pharmacokinetic parameters. |
+| PGx | Ochiai_1982 | not_relevant | 0 | 0 | The paper studies the mechanism of cerebral protection in cats but does not report any pharmacogenomic effects or genetic variants influencing PK/PD parameters. |
+| popPK | Ochiai_1982_2 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study measuring cerebral blood flow and infarction size in cats, containing no pharmacokinetic parameters (CL, V, etc.) for nizofenone. |
+| PGx | Ochiai_1982_2 | not_relevant | 0 | 0 | The paper studies the pharmacodynamic effects of nizofenone on cerebral blood flow and infarction in cats but does not investigate any genetic variants or pharmacogenomic factors. |
+| popPK | Shuto_1984 | irrelevant | 0 | 0 | The paper is a neurophysiological study on brain ischemia in cats measuring pyramidal response and cerebral blood flow, not a pharmacokinetic study, and reports no PK parameters like clearance or volume for nizofenone. |
+| PGx | Shuto_1984 | not_relevant | 0 | 0 | The paper describes the physiological effects of nizofenone on cerebral blood flow and ECoG in an ischemia model, but contains no pharmacogenomic data (gene variants/genotypes) influencing PK or PD parameters. |
 
 
 </details>

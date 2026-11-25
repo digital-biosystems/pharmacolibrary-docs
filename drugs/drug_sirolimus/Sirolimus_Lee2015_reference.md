@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;sirolimus&quot;,&quot;href&quot;:&quot;drugs/drug_sirolimus/&quot;},{&quot;label&quot;:&quot;Lee_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sirolimus_de2023_reference&quot;,&quot;label&quot;:&quot;de_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirolimus/Sirolimus_de2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sirolimus_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirolimus/Sirolimus_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sirolimus_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirolimus/Sirolimus_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="sirolimus" model-id="Sirolimus_Lee2015_reference" status="needs_review" stale="false" population="neonates who underwent sirolimus-eluting stent implantation in the arterial duct" measured-compound="sirolimus" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sirolimus" model-id="Sirolimus_Lee2015_reference" status="needs_review" stale="false" population="neonates" measured-compound="sirolimus" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Lee KJ, Seto W, Benson L, Chaturvedi RR. Pharmacokinetics of sirolimus-eluting stents implanted in the neonatal arterial duct. Circulation. Cardiovascular interventions 8(5) (2015).
@@ -17,7 +17,7 @@ Lee KJ, Seto W, Benson L, Chaturvedi RR. Pharmacokinetics of sirolimus-eluting s
 
 ## Population and dosing
 
-**Population:** neonates who underwent sirolimus-eluting stent implantation in the arterial duct · condition pulmonary blood flow augmentation · age group neonate · n = 9.
+**Population:** neonates · condition patent ductus arteriosus · age group neonate.
 
 ## Model
 
@@ -32,11 +32,11 @@ Lee KJ, Seto W, Benson L, Chaturvedi RR. Pharmacokinetics of sirolimus-eluting s
 | label | parameter | value | unit |
 |---|---|---|---|
 | Peak sirolimus concentrations | Cmax | 13.6 | μg/L |
-| clearance (noncompartmental analysis) | CL | 0.042 | L/hour |
+| clearance | CL | 0.042 | L/hour |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Lee KJ, Seto W, Benson L, Chaturvedi RR. Pharmacokinetics of sirolimus-eluting s
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sirolimus: Cmax 13.6 μg/L, CL 0.042 L/hour.
 
-Independently confirmed by `qwen3.8-27b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,8 +58,8 @@ Independently confirmed by `qwen3.8-27b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Peak sirolimus concentrations | `Q32` · Cmax | 13.6 | μg/L |  |  | µg/l | llm_confirmed (0.6) | Lee_2015:abstract, Lee_2015:abstract |
-| clearance (noncompartmental analysis) | `Q22` · CL | 0.042 | L/hour | 1.167e-08 | m3/s | l/h | exact (1) | Lee_2015:abstract |
+| Peak sirolimus concentrations | `Q32` · Cmax | 13.6 | μg/L | 1.36e-05 | kg/m3 | µg/l | llm_confirmed (0.6) | Lee_2015:abstract |
+| clearance | `Q22` · CL | 0.042 | L/hour | 1.167e-08 | m3/s | l/h | exact (1) | Lee_2015:abstract, Lee_2015:abstract, Lee_2015:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -69,22 +69,25 @@ Independently confirmed by `qwen3.8-27b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('clearance (nonlinear mixed model)', value '0.051') — already have one for this compound
+- dropped unlinked row (NIL): 'highest' — extend the ontology if this is a real PK parameter (source ['Lee_2015:abstract'])
+- dropped unlinked row (NIL): '95% credible intervals' — extend the ontology if this is a real PK parameter (source ['Lee_2015:abstract', 'Lee_2015:abstract'])
+- unit_normalisation_failed: '×' → '' (Cmax)
+- unit_dimension_unknown: '×' (Cmax)
+- dropped duplicate Q32 ('peak sirolimus levels', value 20) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sirolimus
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Lee_2015_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Lee_2015_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (6/6 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -102,11 +105,11 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Lee_2015:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Lee_2015:abstract', 'Lee_2015:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.042 | ['Lee_2015:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Lee_2015:abstract', 'Lee_2015:abstract', 'Lee_2015:abstract'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Lee_2015:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.042 | ['Lee_2015:abstract', 'Lee_2015:abstract', 'Lee_2015:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.042 L/h | ['Lee_2015:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.042 L/h | ['Lee_2015:abstract', 'Lee_2015:abstract', 'Lee_2015:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -140,4 +143,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsirolimus%5D%20Sirolimus_Lee2015_reference&body=Drug%3A%20sirolimus%0ARecord%3A%20Sirolimus_Lee2015_reference%0APaper%3A%20Lee_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sirolimus/Sirolimus_Lee2015_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 06:57 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:48 UTC</sub>

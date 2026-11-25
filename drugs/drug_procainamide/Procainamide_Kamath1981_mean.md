@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The N-acetylprocainamide metabolite is an orphan compartment with no link from the procainamide parent, making the model structurally invalid.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Kamath1981_mean" status="rejected" stale="false" population="rats" measured-compound="procainamide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Kamath BL, Lai CM, Gupta SD, Durrani MJ, Yacobi A. Pharmacokinetics of procainam
 
 ### Reviewer guidance
 
-**The N-acetylprocainamide metabolite is an orphan compartment with no link from the procainamide parent, making the model structurally invalid.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model defines a metabolism link from procainamide to N-acetylprocainamide but the metabolite compartment remains unreachable. This structural flaw renders the model rejected. Second readers disagreed on several parameter values, citing them as unknown where the record listed them. Extracted — procainamide: t1/2z 0.658 hr, Vnorm 4.6 liters/kg, CLR 1.92 liters/hr/kg; N-acetylprocainamide: t1/2z 2.13 hr, V2 3.82 liters/kg, CL 0.919 liters/hr/kg.
+Extracted — procainamide: t1/2z 0.658 hr, Vnorm 4.6 liters/kg, CLR 1.92 liters/hr/kg; N-acetylprocainamide: t1/2z 2.13 hr, V2 3.82 liters/kg, CL 0.919 liters/hr/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has procainamide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

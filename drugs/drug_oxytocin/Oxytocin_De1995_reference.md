@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Oxytocin’s absolute bioavailability has no reported value, so a default was used and the record was held back.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="oxytocin" model-id="Oxytocin_De1995_reference" status="needs_review" stale="false" population="male volunteers" measured-compound="oxytocin" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ De Groot AN, Vree TB, Hekster YA, Pesman GJ, Sweep FC, Van Dongen PJ et al. Bioa
 
 ### Reviewer guidance
 
-**Oxytocin’s absolute bioavailability has no reported value, so a default was used and the record was held back.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The bioavailability value is a default, not an estimate from this paper; it affects the simulated profile but is unsupported by the paper. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader disputed the record (agreement 0.769), assigning bioavailability 0.07 and omitting the reported 0.69 h apparent terminal half-life. Extracted — oxytocin: t1/2α 0.049 h, t1/2β 0.33 h, CL 67.1 L h-1, V 33.2 L, t1/2ka 0.45 h, t1/2z 0.69 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — oxytocin: t1/2α 0.049 h, t1/2β 0.33 h, CL 67.1 L h-1, V 33.2 L, t1/2ka 0.45 h, t1/2z 0.69 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 0.07; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -153,7 +153,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.769, 0 of 1 reader(s) agree | 0.769 | cross-check disputed by a second reader: verdict disputed, agreement 0.769, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.769 (10 of 13 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.769 | cross-check contradicted by a second reader: verdict disputed; agreement 0.769 (10 of 13 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

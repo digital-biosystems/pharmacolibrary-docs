@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The risankizumab model's terminal half-life was 6.117 times the paper's value, and one parameter unit could not be converted to standard units.
+> The model does not reproduce the paper's terminal half-life (paper 672, model 4.11e+03); the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Suleiman2019_reference" status="needs_review" stale="false" population="healthy volunteers and subjects with moderate to severe plaque psoriasis" measured-compound="risankizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -63,13 +63,13 @@ Suleiman AA, Minocha M, Khatri A, Pang Y, Othman AA. Population Pharmacokinetics
 
 ### Reviewer guidance
 
-**The risankizumab model's terminal half-life was 6.117 times the paper's value, and one parameter unit could not be converted to standard units.**
+**The model does not reproduce the paper's terminal half-life (paper 672, model 4.11e+03); the covariate scenarios were not simulated (+1 more).**
 
-The model simulated a terminal half-life of 4110.60800837522, compared to the expected 672.0. One parameter had a unit that could not be converted to SI, so it reached the simulation without a standard value. A second reader disagreed on the absolute bioavailability value and the assignment of covariate exponents. Extracted — risankizumab: CL 0.243 L/day, V1 4.86 L, kabs 0.229 day−1, Q 0.656 L/day, V2 4.25 L, FG 0.89.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (theta_cl_ada), so that value has no SI equivalent. Extracted — risankizumab: CL 0.243 L/day, V1 4.86 L, kabs 0.229 day−1, Q 0.656 L/day, V2 4.25 L, FG 0.89.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absolute sc bioavailability of formulation used in phase i and ii studiesc: this record has none, the second reading 0.710; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -195,8 +195,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.846, 0 of 1 reader(s) agree | 0.846 | cross-check disputed by a second reader: verdict disputed, agreement 0.846, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 672 | 4111 | 6.117 | days→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.846 (22 of 26 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.846 | cross-check contradicted by a second reader: verdict disputed; agreement 0.846 (22 of 26 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 672 | 4111 | 6.117 | reported 28.0 days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

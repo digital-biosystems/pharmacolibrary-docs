@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Omalizumab has no structural path to free IgE, and a reported unit for the 29% clearance parameter could not be converted to standard SI units.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="omalizumab" model-id="Omalizumab_Li2022_chinese_subjects" status="rejected" stale="false" population="patients with moderate-to-severe asthma (Chinese and Caucasian)" measured-compound="omalizumab" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -53,13 +53,13 @@ Li J, Yang J, Kong L, Huang Y, Chen P, Yan X et al. Efficacy and safety of omali
 
 ### Reviewer guidance
 
-**Omalizumab has no structural path to free IgE, and a reported unit for the 29% clearance parameter could not be converted to standard SI units.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model defines an interconversion link between omalizumab and free IgE, but the free IgE compartment is orphaned with no valid path from the dose. The 29% parameter, labeled as faster clearance, uses a percent unit that failed to convert to SI, preventing the model from computing elimination rates. A secondary review also identified a 436% decrease in free IgE that the primary record left null. Extracted — omalizumab: Cmax 22 µg/mL, AUClast 744 d*µg/mL, AUC∞ 780 d*µg/mL, t1/2z 21 days, Cmin 7.46 ng/mL, CL 29 %, kabs 0.92 1/day, tlag 0.06 day.
+A reported unit could not be converted (Cmax, AUClast, AUC∞ and Cmin), so that value has no SI equivalent. Extracted — omalizumab: Cmax 22 µg/mL, AUClast 744 d*µg/mL, AUC∞ 780 d*µg/mL, t1/2z 21 days, Cmin 7.46 ng/mL, CL 29 %, kabs 0.92 1/day, tlag 0.06 day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of % decrease of free ige at t max: this record has none, the second reading 436; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

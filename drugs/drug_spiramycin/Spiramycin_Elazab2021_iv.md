@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-> The record was held for review due to a second reader dispute regarding the identity of the administered dose compound and primary analyte for spiramycin.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="spiramycin" model-id="Spiramycin_Elazab2021_iv" status="needs_review" stale="false" population="chickens" measured-compound="spiramycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Elazab ST, Elshater NS, Hashem YH, Al-Atfeehy NM, Lee EB, Park SC et al. Pharmac
 
 ### Reviewer guidance
 
-**The record was held for review due to a second reader dispute regarding the identity of the administered dose compound and primary analyte for spiramycin.**
+**cross_check_disputed; x1_cross_check.**
 
-Although the pharmacokinetic parameters for spiramycin in chickens are internally consistent, the review process flagged a disagreement on the dose compound. A second reader identified the dose compound and primary analyte as unknown, contradicting the record's assignment of spiramycin for both fields. Extracted — spiramycin: kel 0.22 1/h, t1/2z 3.97 h, AUClast 29.9 µg*h/mL, AUC∞ 30.2 µg*h/mL, V 3.3 L/kg, CL 0.68 L/h/kg, MRT 5.04 h.
+A reported unit could not be converted (AUClast and AUC∞), so that value has no SI equivalent. Extracted — spiramycin: kel 0.22 1/h, t1/2z 3.97 h, AUClast 29.9 µg*h/mL, AUC∞ 30.2 µg*h/mL, V 3.3 L/kg, CL 0.68 L/h/kg, MRT 5.04 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has spiramycin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,8 +147,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | cross-check disputed by a second reader: verdict disputed, agreement 0.818, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | skipped |  | 3.363 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.818 (9 of 11 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | cross-check contradicted by a second reader: verdict disputed; agreement 0.818 (9 of 11 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | skipped |  | 3.363 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

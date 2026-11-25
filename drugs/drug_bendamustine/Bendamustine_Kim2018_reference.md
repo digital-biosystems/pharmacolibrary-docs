@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bendamustine's terminal half-life is predicted as 2.29 h rather than the paper's 0.3 h, and bioavailability F was defaulted rather than estimated.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 1, model 0.39); the model does not reproduce the paper's peak concentration (Cmax) (paper 0.00267, model 0.00233) (+4 more).
 
 <div class="pk-model-meta" hidden drug="bendamustine" model-id="Bendamustine_Kim2018_reference" status="needs_review" stale="false" population="primary central nervous system lymphoma" measured-compound="bendamustine" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Kim T, Choi HY, Lee HS, Jung SH, Ahn JS, Kim HJ et al. Clinical response and pha
 
 ### Reviewer guidance
 
-**Bendamustine's terminal half-life is predicted as 2.29 h rather than the paper's 0.3 h, and bioavailability F was defaulted rather than estimated.**
+**The model does not reproduce the paper's time of the peak (tmax) (paper 1, model 0.39); the model does not reproduce the paper's peak concentration (Cmax) (paper 0.00267, model 0.00233) (+4 more).**
 
-Simulated as the paper dosed it, the model's tmax is 0.39 versus the paper's 1, and its Cmax is 0.00233 versus 0.00267; both differ beyond tolerance, as does terminal half-life (2.29 versus 0.3). F uses library defaults, not estimates from this paper, and Tlag was also defaulted. The second reader disputed reported estimates, including CL (39.2 versus 32.5), and gave a V4 value of 0.032 where this record has none; the cross-check reported agreement of 0.556, with 0 of 1 readers agreeing. Extracted — bendamustine: V1 20.7 L, CL 39.2 L/h, V2 0.846 L, Q 0.66 L/h, V3 0.442 L, Q3 1.36 L/h, kabs 6 h−1.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — bendamustine: V1 20.7 L, CL 39.2 L/h, V2 0.846 L, Q 0.66 L/h, V3 0.442 L, Q3 1.36 L/h, kabs 6 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 39.2, the second reading 32.5; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -163,12 +163,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.556, 0 of 1 reader(s) agree | 0.556 | cross-check disputed by a second reader: verdict disputed, agreement 0.556, 0 of 1 reader(s) agree |
-| T1_cmax | reference | pass | 0.002669 | 0.002328 | 0.8724 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 3.97e-07 | 0.002328 | 5865 | ng/mL→SI vs simulated kg/m3 |
-| T1_t_half_beta | reference | fail | 0.3 | 2.294 | 7.647 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.3897 | 0.3897 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1.5 | 0.3897 | 0.2598 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.556 (10 of 18 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.556 | cross-check contradicted by a second reader: verdict disputed; agreement 0.556 (10 of 18 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | pass | 0.002669 | 0.002328 | 0.8724 | reported 2669.0 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.97e-07 | 0.002328 | 5865 | reported 0.397 ng/mL→SI vs simulated kg/m3 |
+| T1_t_half_beta | reference | fail | 0.3 | 2.294 | 7.647 | reported 0.3 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.3897 | 0.3897 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.5 | 0.3897 | 0.2598 | reported 1.5 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

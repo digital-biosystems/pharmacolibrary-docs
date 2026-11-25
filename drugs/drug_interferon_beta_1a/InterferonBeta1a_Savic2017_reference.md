@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper focuses on cladribine, not interferon beta 1a.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="interferon beta-1a" model-id="InterferonBeta1a_Savic2017_reference" status="rejected" stale="false" population="" measured-compound="interferon_beta_1a" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Savic RM, Novakovic AM, Ekblom M, Munafo A, Karlsson MO. Population Pharmacokine
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper focuses on cladribine, not interferon beta 1a.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The study describes the population pharmacokinetics of cladribine, with interferon beta 1a serving only as a co-administered agent. Consequently, the extracted parameters, such as the total clearance of 39.3 L/h, describe cladribine rather than the target drug. A second reader disagreed on several parameter values, failing to confirm the extraction accuracy. Extracted — interferon beta 1a: CL 39.3 L/h, V1/F 365 L, Q 53.7 L/h, tlag 0.319 h, kabs 1.08 h−1.
+Extracted — interferon beta 1a: CL 39.3 L/h, V1/F 365 L, Q 53.7 L/h, tlag 0.319 h, kabs 1.08 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 39.3, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.545 (12 of 22 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.545 | cross-check contradicted by a second reader: verdict disputed; agreement 0.545 (12 of 22 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

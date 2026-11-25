@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Amrubicin model rejected for a dimension mismatch in a structural parameter, expected as a first-order rate constant but listed with L/h units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q89 unit γ ([mass] / [time] ** 2 / [current]) vs [time].
 
-<div class="pk-model-meta" hidden drug="amrubicin" model-id="Amrubicin_Makino2019_base" status="rejected" stale="false" population="Japanese patients with lung cancer after platinum-based treatment" measured-compound="amrubicin and amrubicinol" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="amrubicin" model-id="Amrubicin_Makino2019_base" status="rejected" stale="false" population="Japanese patients with lung cancer" measured-compound="amrubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Makino Y, Makihara-Ando R, Ogawa T, Sato H, Goto Y, Kanda S et al. Individual optimal dose of amrubicin to prevent severe neutropenia in Japanese patients with lung cancer. Cancer science 110(11):3573–3583 (2019).
@@ -16,11 +16,9 @@ Makino Y, Makihara-Ando R, Ogawa T, Sato H, Goto Y, Kanda S et al. Individual op
 
 ## Population and dosing
 
-**Population:** Japanese patients with lung cancer after platinum-based treatment · condition lung cancer after platinum-based treatment · age group adult · n = 50.
+**Population:** Japanese patients with lung cancer · condition lung cancer · age group adult · n = 50.
 
 **Dosing:** 35, 40 mg/m2, iv, multiple, every 24 h.
-
-**Dosed compound ≠ measured compound:** dosed amrubicin, measured amrubicin and amrubicinol.
 
 ## Model
 
@@ -41,13 +39,12 @@ Makino Y, Makihara-Ando R, Ogawa T, Sato H, Goto Y, Kanda S et al. Individual op
 | tvVm, L | V | 1032.2 | L |  |
 | tvCLp, L/h | CLfm | 19.4 | L/h |  |
 | tvCLm, L/h | CL | 97.0 | L/h | 20.0 (None% RSE) |
-| tvKdc, L/h | kfm | 0.1 | L/h |  |
-| tvMMT | MTT | 157.0 |  |  |
-| tvGamma‐m, γm | equation variable | 0.2 |  |  |
+| tvMMT | CL | 157.0 | L/h |  |
+| tvGamma, γ | t1/2γ | 0.4 | γ |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.316), qwen3.8-27b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,28 +54,27 @@ Makino Y, Makihara-Ando R, Ogawa T, Sato H, Goto Y, Kanda S et al. Individual op
 
 ### Reviewer guidance
 
-**Amrubicin model rejected for a dimension mismatch in a structural parameter, expected as a first-order rate constant but listed with L/h units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q89 unit γ ([mass] / [time] ** 2 / [current]) vs [time].**
 
-The findings report a unit conflict for a parameter that should have dimensions of inverse time, yet the record shows units of L/h. Additionally, a reported unit in the record could not be converted to standard SI units, leaving the parameter without a compatible value for the model structure. Extracted — amrubicin: V2 10.1 L, Q 9.1 L/h, V3 32.7 L, Q2 50.5 L/h, MTT 157; amrubicinol: V 1.03e+03 L, CLfm 19.4 L/h, CL 97 L/h, kfm 0.1 L/h.
+A reported unit could not be converted (t1/2γ), so that value has no SI equivalent. Extracted — amrubicin: V2 10.1 L, Q 9.1 L/h, V3 32.7 L, Q2 50.5 L/h, CL 157 L/h, t1/2γ 0.4 γ; amrubicinol: V 1.03e+03 L, CLfm 19.4 L/h, CL 97 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has amrubicin and amrubicinol, the second reading amrubicin; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has amrubicin → amrubicinol (metabolism), the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|
-| tvVp, L | `Q64` · V2 | 10.1 | L | 0.0101 | m3 | l | tv_prefix (0.95) | cas14194-tbl-0001:row4:col1, cas14194-tbl-0001:row4:col2 | 32.7 (None% RSE) |
-| tvCL2, L/h | `Q30` · Q | 9.1 | L/h | 2.528e-06 | m3/s | l/h | exact (1) | cas14194-tbl-0001:row6:col1, cas14194-tbl-0001:row6:col2 |  |
-| tvV3, L | `Q77` · V3 | 32.7 | L | 0.0327 | m3 | l | exact (1) | cas14194-tbl-0001:row7:col1, cas14194-tbl-0001:row7:col2 | 30.7 (None% RSE) |
-| tvCL3, L/h | `Q99` · Q2 | 50.5 | L/h | 1.403e-05 | m3/s | l/h | exact (1) | cas14194-tbl-0001:row8:col1, cas14194-tbl-0001:row8:col2 |  |
-| tvVm, L | `Q61` · V | 1032.2 | L | 1.032 | m3 | l | exact (1) | cas14194-tbl-0001:row9:col1, cas14194-tbl-0001:row9:col2 |  |
-| tvCLp, L/h | `Q370` · CLfm | 19.4 | L/h | 5.389e-06 | m3/s | l/h | exact (1) | cas14194-tbl-0001:row10:col1, cas14194-tbl-0001:row10:col2 |  |
-| tvCLm, L/h | `Q22` · CL | 97.0 | L/h | 2.694e-05 | m3/s | l/h | exact (1) | cas14194-tbl-0001:row11:col1, cas14194-tbl-0001:row11:col2 | 20.0 (None% RSE) |
-| tvKdc, L/h | `Q305` · kfm | 0.1 | L/h |  |  | l/h | exact (1) | cas14194-tbl-0001:row12:col1, cas14194-tbl-0001:row12:col2 |  |
-| tvMMT | `Q81` · MTT | 157.0 |  |  |  |  | llm (0.6) | cas14194-tbl-0001:row36:col1, cas14194-tbl-0001:row36:col2 |  |
-| tvGamma‐m, γm | `Q900` · equation variable | 0.2 |  |  |  |  | llm (0.6) | cas14194-tbl-0001:row38:col1, cas14194-tbl-0001:row38:col2 |  |
+| tvVp, L | `Q64` · V2 | 10.1 | L | 0.0101 | m3 | l | tv_prefix (0.95) | cas14194-tbl-0001:row4:col1 | 32.7 (None% RSE) |
+| tvCL2, L/h | `Q30` · Q | 9.1 | L/h | 2.528e-06 | m3/s | l/h | exact (1) | cas14194-tbl-0001:row6:col1 |  |
+| tvV3, L | `Q77` · V3 | 32.7 | L | 0.0327 | m3 | l | exact (1) | cas14194-tbl-0001:row7:col1 | 30.7 (None% RSE) |
+| tvCL3, L/h | `Q99` · Q2 | 50.5 | L/h | 1.403e-05 | m3/s | l/h | exact (1) | cas14194-tbl-0001:row8:col1 |  |
+| tvVm, L | `Q61` · V | 1032.2 | L | 1.032 | m3 | l | exact (1) | cas14194-tbl-0001:row9:col1 |  |
+| tvCLp, L/h | `Q370` · CLfm | 19.4 | L/h | 5.389e-06 | m3/s | l/h | exact (1) | cas14194-tbl-0001:row10:col1 |  |
+| tvCLm, L/h | `Q22` · CL | 97.0 | L/h | 2.694e-05 | m3/s | l/h | exact (1) | cas14194-tbl-0001:row11:col1 | 20.0 (None% RSE) |
+| tvMMT | `Q22` · CL | 157.0 | L/h | 4.361e-05 | m3/s | l/h | llm (0.6) | cas14194-tbl-0001:row36:col1 |  |
+| tvGamma, γ | `Q89` · t1/2γ | 0.4 | γ |  |  | γ | llm (0.6) | cas14194-tbl-0001:row37:col1 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -90,36 +86,54 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 **Interpretation flags:**
 - dropped unlinked row (NIL): '−2 Log likelihood' — extend the ontology if this is a real PK parameter (source ['cas14194-tbl-0001:row3:col1'])
 - dropped duplicate Q64 ('tvV2, L', value '28.5') — already have one for this compound
-- unit_dimension_mismatch: 'tvKdc, L/h' → Q305 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- dropped duplicate Q305 ('Kdc=tvKdc·ecovSLC28A3(Kdc)·(SLC28A3)·eηKdc', value None) — already have one for this compound
+- dropped duplicate Q22 ('tvKdc, L/h', value '0.1') — already have one for this compound
+- dropped unlinked row (NIL): 'Kdc=tvKdc·ecovSLC28A3(Kdc)·(SLC28A3)·eηKdc' — extend the ontology if this is a real PK parameter (source ['cas14194-tbl-0001:row32:col1'])
 - dropped unlinked row (NIL): '−2 Log Likelihood' — extend the ontology if this is a real PK parameter (source ['cas14194-tbl-0001:row34:col1'])
-- dropped PD-category row 'tvCirc0' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['cas14194-tbl-0001:row35:col1', 'cas14194-tbl-0001:row35:col2'])
-- dropped PD-category row 'tvGamma, γ' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['cas14194-tbl-0001:row37:col1', 'cas14194-tbl-0001:row37:col2'])
-- dropped PD-category row 'tvSlope' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['cas14194-tbl-0001:row39:col1', 'cas14194-tbl-0001:row39:col2'])
+- dropped unlinked row (NIL): 'tvCirc0' — extend the ontology if this is a real PK parameter (source ['cas14194-tbl-0001:row35:col1'])
+- unit_dimension_mismatch: 'tvGamma, γ' → Q89 (unit '[mass] / [time] ** 2 / [current]' vs ontology '[time]') — route to review
+- dropped duplicate Q89 ('tvGamma‐m, γm', value '0.2') — already have one for this compound
+- dropped PD-category row 'tvSlope' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['cas14194-tbl-0001:row39:col1'])
+- unit inherited for CL (Q22): 'L/h' from a same-Q-code sibling (this row's label had no unit)
 - metabolite volume: 'tvVm, L' Q63→Q61 for amrubicinol — it is 1-compartment, so its central volume is its only volume
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amrubicin and amrubicinol
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amrubicin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- edge amrubicin → amrubicinol: 'Kfm' (Q305) relinked to Q370, the formation parameter the metabolite carries
 - template fit: PK_3M_9C — formed from central; parent 2, metabolites [1]
 - status held at "Needs review" — not promoted
-- model-stage split: 'base model' is the base model of Makino_2019 (paper reports 2 stages: base model, final model); same population, different model-building step
-- row roles (LLM): model_class=compartmental; 37/37 row label(s) assigned, 50 linked by role; re-tagged parent→amrubicinol ×57
+- model-stage split: 'base model / estimate' is the base model of Makino_2019 (paper reports 2 stages: base model / estimate, final model / estimate); same population, different model-building step
+- row roles (LLM): model_class=compartmental; 37/37 row label(s) assigned, 16 linked by role; re-tagged parent→amrubicinol ×22
 
 **Extraction notes:**
+- table cas14194-tbl-0001: unbound_uncertainty
 - LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.316 (6/19 fields) | 13 |
 | `qwen3.8-27b` | not confirmed | 0.667 (10/15 fields) | 5 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>18 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['amrubicin', 'amrubicinol', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[kdc=tvkdc ecovslc28a3(kdc) (slc28a3) eηkdc]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvcirc0]` |  | 3.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvcl2].parameter_id` | Q30 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[tvcl3]` | 50.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvclm]` |  | 97.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvclm]` | 97.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvclp]` | 19.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvgamma, γ]` | 0.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvmmt].parameter_id` | Q22 | Q81 | mismatch |
+| `gpt-oss-120b` | `parameters[tvvm]` |  | 1032.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvvm]` | 1032.2 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[kdc=tvkdc ecovslc28a3(kdc) (slc28a3) eηkdc]` |  |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[tvgamma‐m, γm]` | 0.2 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[tvkdc]` | 0.1 |  | only_one_extracted |
@@ -141,20 +155,20 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 9 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row11:col1', 'cas14194-tbl-0001:row11:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row6:col1', 'cas14194-tbl-0001:row6:col2'] |
-| C5_dimension_Q305 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['cas14194-tbl-0001:row12:col1', 'cas14194-tbl-0001:row12:col2'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row10:col1', 'cas14194-tbl-0001:row10:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['cas14194-tbl-0001:row9:col1', 'cas14194-tbl-0001:row9:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['cas14194-tbl-0001:row4:col1', 'cas14194-tbl-0001:row4:col2'] |
-| C5_dimension_Q77 | pass | [length] ** 3 |  | ['cas14194-tbl-0001:row7:col1', 'cas14194-tbl-0001:row7:col2'] |
-| C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row8:col1', 'cas14194-tbl-0001:row8:col2'] |
-| C5_unit_missing_Q81 | fail | [time] |  | ['cas14194-tbl-0001:row36:col1', 'cas14194-tbl-0001:row36:col2'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 97 | ['cas14194-tbl-0001:row11:col1', 'cas14194-tbl-0001:row11:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row11:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row6:col1'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row10:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['cas14194-tbl-0001:row9:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['cas14194-tbl-0001:row4:col1'] |
+| C5_dimension_Q77 | pass | [length] ** 3 |  | ['cas14194-tbl-0001:row7:col1'] |
+| C5_dimension_Q89 | fail | [time] | γ ([mass] / [time] ** 2 / [current]) | ['cas14194-tbl-0001:row37:col1'] |
+| C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['cas14194-tbl-0001:row8:col1'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 97 | ['cas14194-tbl-0001:row11:col1'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 97 L/h | ['cas14194-tbl-0001:row11:col1', 'cas14194-tbl-0001:row11:col2'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.03e+03 L | ['cas14194-tbl-0001:row9:col1', 'cas14194-tbl-0001:row9:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 10.1 L | ['cas14194-tbl-0001:row4:col1', 'cas14194-tbl-0001:row4:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 97 L/h | ['cas14194-tbl-0001:row11:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 157 L/h | ['cas14194-tbl-0001:row36:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 1.03e+03 L | ['cas14194-tbl-0001:row9:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 10.1 L | ['cas14194-tbl-0001:row4:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -178,4 +192,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamrubicin%5D%20Amrubicin_Makino2019_base&body=Drug%3A%20amrubicin%0ARecord%3A%20Amrubicin_Makino2019_base%0APaper%3A%20Makino_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amrubicin/Amrubicin_Makino2019_base%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 16:19 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:23 UTC</sub>

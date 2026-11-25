@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Lidocaine's metabolite monoethylglycylxylidide is an orphan with no elimination path, and its half-life unit prevented standard conversion.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_gx" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -40,7 +40,7 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,13 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 ### Reviewer guidance
 
-**Lidocaine's metabolite monoethylglycylxylidide is an orphan with no elimination path, and its half-life unit prevented standard conversion.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defines monoethylglycylxylidide as a metabolite of lidocaine that forms glycylxylidide, but it lacks a direct elimination route. Additionally, the terminal half-life of 61.78 h uses a unit that could not be converted to standard SI units. These issues resulted in the record being rejected. Extracted — lidocaine: t1/2z 61.8 h, Cmax 0.33 ng/mL, tmax 1.79e+03 h.
+A reported unit could not be converted (Cmax), so that value has no SI equivalent. Extracted — lidocaine: t1/2z 61.8 h, Cmax 0.33 ng/mL, tmax 1.79e+03 h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has lidocaine → monoethylglycylxylidide (metabolism); monoethylglycylxylidide → glycylxylidide (metabolism), the second reading lidocaine → megx (metabolism); megx → gx (metabolism); it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -113,6 +115,44 @@ The model structure defines monoethylglycylxylidide as a metabolite of lidocaine
 - LLM selected parameter table(s) 3, 4
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.1 (2/20 fields) | 18 |
+
+<details><summary>18 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['lidocaine', 'monoethylglycylxylidide', 'metabolism'], ['monoethylglycylxylidide', 'glycylxylidide', 'metabolism']] | [['lidocaine', 'megx', 'metabolism'], ['megx', 'gx', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[cld/f]` |  | 0.13 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm1/f]` |  | 14.94 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm2/f]` |  | 1.09 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax or co]` | 0.33 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm1]` |  | 0.65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm2]` |  | 0.47 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fr]` |  | 0.373 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | 61.78 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka1]` |  | 5.92 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` |  | 136808.67 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtt]` |  | 0.64 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ntr]` |  | 4.97 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 1786.53 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f]` |  | 2.57 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2/f]` |  | 0.07 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax]` |  | 423962.94 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

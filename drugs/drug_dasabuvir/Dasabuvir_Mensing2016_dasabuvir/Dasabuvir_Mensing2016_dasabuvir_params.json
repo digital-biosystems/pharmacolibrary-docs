@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "Dasabuvir_Mensing2016_dasabuvir",
+ "molar_masses": {
+  "central.C": 0.49357999999999996
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  25.0,
+  100.0,
+  150.0,
+  400.0,
+  600.0
+ ],
+ "parameters": {
+  "Cl": 1.9560185185185185e-05,
+  "F": 1.0,
+  "MM": 0.49357999999999996,
+  "Tlag": 0.0,
+  "VdPerKg": 0.005957142857142857,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-05,
+  "ka": 0.00016203703703703703,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 11066.93386773547
+ },
+ "reference_peaks": {
+  "central.C": 3.617406284068944e-05
+ },
+ "stop_time": 93600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

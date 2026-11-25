@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The second reader disputed the extraction of linezolid clearance (6.2 L/h) and volume of distribution (0.782 L/kg), identifying missing data for these parameters.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="linezolid" model-id="Linezolid_BandnVilar2022_reference" status="needs_review" stale="false" population="adults and children with various infections" measured-compound="linezolid" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Bandín-Vilar E, García-Quintanilla L, Castro-Balado A, Zarra-Ferro I, Gonzále
 
 ### Reviewer guidance
 
-**The second reader disputed the extraction of linezolid clearance (6.2 L/h) and volume of distribution (0.782 L/kg), identifying missing data for these parameters.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists a clearance of 6.2 L/h and a volume of distribution of 0.782 L/kg for linezolid. A second reader identified both values as null, disagreeing with the initial extraction. This discrepancy resulted in a low agreement ratio of 0.222, flagging the model for further review. Extracted — linezolid: CL 6.2 L/h, V 0.782 L/kg.
+Extracted — linezolid: CL 6.2 L/h, V 0.782 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has linezolid, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -170,7 +170,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check contradicted by a second reader: verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

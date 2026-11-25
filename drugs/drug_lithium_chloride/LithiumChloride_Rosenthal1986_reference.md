@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The lithium chloride record was held because a second reader disputed the verdict, disagreeing on whether the bioavailability value of 78.8% represents a specific or mean parameter.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="lithium chloride" model-id="LithiumChloride_Rosenthal1986_reference" status="needs_review" stale="false" population="adult dogs" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,9 +17,9 @@ Rosenthal RC, Koritz GD, Davis LE. Pharmacokinetics of lithium in the dog. Journ
 
 ## Population and dosing
 
-**Population:** adult dogs · condition healthy · age group adult · n = 8.
+**Population:** adult dogs · condition healthy · age group adult.
 
-**Dosed compound ≠ measured compound:** dosed lithium chloride, measured lithium.
+**Dosed compound ≠ measured compound:** dosed lithium_chloride, measured lithium.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -37,13 +37,13 @@ Rosenthal RC, Koritz GD, Davis LE. Pharmacokinetics of lithium in the dog. Journ
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| t1/2 | t1/2z | 21.6 | h |
-| V'c | V | 0.189 | l/kg |
-| bioavailability | Fab | 78.8 | % |
+| mean plasma lithium half-life (t1/2) | t1/2z | 21.6 | h |
+| mean apparent specific volume of distribution of the central compartment (V'c) | V | 0.189 | l/kg |
+| Mean bioavailability | Fab | 78.8 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,21 +53,21 @@ Rosenthal RC, Koritz GD, Davis LE. Pharmacokinetics of lithium in the dog. Journ
 
 ### Reviewer guidance
 
-**The lithium chloride record was held because a second reader disputed the verdict, disagreeing on whether the bioavailability value of 78.8% represents a specific or mean parameter.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was constructed using abstract-only data, so the reported half-life of 21.6 h and volume of distribution of 0.189 l/kg stand in for fitted model parameters. A second reader challenged the primary verdict, noting discrepancies in how the dose compounds and bioavailability metrics were categorized. Specifically, the reader disagreed on whether the 78.8% value referred to specific or mean bioavailability, leading to a cross-check agreement of only 0.364. Extracted — lithium chloride: t1/2z 21.6 h, V 0.189 l/kg, Fab 78.8 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lithium chloride: t1/2z 21.6 h, V 0.189 l/kg, Fab 78.8.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lithium chloride, the second reading lithium chloride and lithium carbonate; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lithium_chloride, the second reading lithium chloride; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| t1/2 | `Q57` · t1/2z | 21.6 | h | 7.776e+04 | s | h | exact (1) | Rosenthal_1986:abstract |
-| V'c | `Q61` · V | 0.189 | l/kg | 0.01323 | m3 | l/kg | llm (0.6) | Rosenthal_1986:abstract |
-| bioavailability | `Q40` · Fab | 78.8 | % |  |  |  | exact (1) | Rosenthal_1986:abstract |
+| mean plasma lithium half-life (t1/2) | `Q57` · t1/2z | 21.6 | h | 7.776e+04 | s | h | llm (0.6) | Rosenthal_1986:abstract |
+| mean apparent specific volume of distribution of the central compartment (V'c) | `Q61` · V | 0.189 | l/kg | 0.01323 | m3 | l/kg | boundary_compartment (0.9) | Rosenthal_1986:abstract |
+| Mean bioavailability | `Q40` · Fab | 78.8 |  |  |  |  | llm_confirmed (0.6) | Rosenthal_1986:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,9 +78,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lithium
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V'c' is the general volume)
-- status held at "Needs review" — not promoted
+- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'mean apparent specific volume of distribution of the central compartment (V'c)' is the general volume)
 - molar mass: no plausible PubChem entry for 'lithium' ('lithium') — left in mass units
 - molar mass: none found for 'lithium' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
@@ -92,23 +90,24 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.273 (3/11 fields) | 8 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[apparent specific volume of distribution of the central compartment]` |  | 0.189 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailability]` | 78.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean bioavailability]` |  | 78.8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean plasma lithium half-life]` |  | 21.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2]` | 21.6 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v'c]` | 0.189 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | lithium chloride | lithium chloride and lithium carbonate | mismatch |
+| `gpt-oss-120b` | `parameters[bioavailability]` |  | 78.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean apparent specific volume of distribution of the central compartment]` | 0.189 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean bioavailability]` | 78.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean plasma lithium half-life]` | 21.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` |  | 21.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v'c]` |  | 0.189 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | lithium_chloride | lithium chloride | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | lithium | lithium chloride | mismatch |
 
 </details>
 
@@ -141,7 +140,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.364, 0 of 1 reader(s) agree | 0.364 | cross-check disputed by a second reader: verdict disputed, agreement 0.364, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.273 (3 of 11 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.273 | cross-check contradicted by a second reader: verdict disputed; agreement 0.273 (3 of 11 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -157,15 +156,54 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lithium_chloride/LithiumChloride_Rosenthal1986_reference/LithiumChloride_Rosenthal1986_reference_modelica.zip" download>LithiumChloride_Rosenthal1986_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lithium_chloride/LithiumChloride_Rosenthal1986_reference/LithiumChloride_Rosenthal1986_reference_fmi.zip" download>LithiumChloride_Rosenthal1986_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 1e-05 | kg |
+| input | model | `Cl` | 1.179e-07 | m3/s |
+| input | model | `VdPerKg` | 0.000189 | m3/kg |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Rosenthal RC, Koritz GD, Davis LE. Pharmacokinetics of lithium in the dog. Journal of veterinary pharmacology and therapeutics 9(1):81–87 (1986). [doi:10.1111/j.1365-2885.1986.tb00015.x](https://doi.org/10.1111/j.1365-2885.1986.tb00015.x)
+
+**This record:** Pharmacolibrary, model `LithiumChloride_Rosenthal1986_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_lithium_chloride/LithiumChloride_Rosenthal1986_reference>
+
+```bibtex
+@misc{pharmacolibrary_LithiumChlorideRosenthal1986reference,
+  title  = {{Pharmacolibrary model LithiumChloride_Rosenthal1986_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_lithium_chloride/LithiumChloride_Rosenthal1986_reference},
+  note   = {Parameters from doi:10.1111/j.1365-2885.1986.tb00015.x},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -179,4 +217,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blithium_chloride%5D%20LithiumChloride_Rosenthal1986_reference&body=Drug%3A%20lithium_chloride%0ARecord%3A%20LithiumChloride_Rosenthal1986_reference%0APaper%3A%20Rosenthal_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lithium_chloride/LithiumChloride_Rosenthal1986_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 22:46 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:07 UTC</sub>

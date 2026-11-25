@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The zero-order input duration parameter for donepezil was incorrectly assigned a value of 5 mg, causing a time dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg ([mass]) vs [time].
 
 <div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Lee2022_sr_3" status="rejected" stale="false" population="Beagle dogs" measured-compound="donepezil" parameterization="apparent" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Lee DY, Shin S, Kim TH, Shin BS. Establishment of Level a In Vitro-In Vivo Corre
 
 ### Reviewer guidance
 
-**The zero-order input duration parameter for donepezil was incorrectly assigned a value of 5 mg, causing a time dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg ([mass]) vs [time].**
 
-The record lists a duration of 5 mg for the zero-order input, which conflicts with the required time dimension. A reported unit could not be converted to SI, so the model was held back. A second reader could not identify the primary analyte or verify several key pharmacokinetic parameter values. Extracted — donepezil: D1 5 mg, t1/2z 7.16 h, Cmax 0.78 ng/mL, AUClast 4.91 ng·h/mL, AUC∞ 6.21 ng·h/mL, V/F 8.36e+03 L, CL/F 1.45e+04 mL/min, MRT 11.7 h, … (+2).
+A reported unit could not be converted (D1, Cmax, AUClast and AUC∞), so that value has no SI equivalent. Extracted — donepezil: D1 5 mg, t1/2z 7.16 h, Cmax 0.78 ng/mL, AUClast 4.91 ng·h/mL, AUC∞ 6.21 ng·h/mL, V/F 8.36e+03 L, CL/F 1.45e+04 mL/min, MRT 11.7 h, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has donepezil, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

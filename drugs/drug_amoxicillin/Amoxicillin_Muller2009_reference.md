@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability (F) for amoxicillin was not estimated, so a generic library placeholder was used instead of a paper-supported value.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Muller2009_reference" status="needs_review" stale="false" population="pregnant women and neonates" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -60,13 +60,13 @@ Muller AE, Oostvogel PM, DeJongh J, Mouton JW, Steegers EA, Dörr PJ et al. Phar
 
 ### Reviewer guidance
 
-**Bioavailability (F) for amoxicillin was not estimated, so a generic library placeholder was used instead of a paper-supported value.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record specifies a two-compartment structure for amoxicillin with a clearance of 19.7 liters/h and defined volumes, but lacks an extracted value for F. Because no explicit estimate was provided, a generic default value was substituted, which is not supported by the paper's data. A second reader also disagreed on the value of k48, noting it as 5.1 where this record lists it as missing. Extracted — amoxicillin: CL 19.7 liters/h, V1 6.4 liters, V2 5.88 liters, V3 5.88 liters, Q 56.6 liters/h, Q2 10.7 liters/h, k14 0.76 1/h, k41 1.4 1/h, … (+4).
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — amoxicillin: CL 19.7 liters/h, V1 6.4 liters, V2 5.88 liters, V3 5.88 liters, Q 56.6 liters/h, Q2 10.7 liters/h, k14 0.76 1/h, k41 1.4 1/h, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k48: this record has none, the second reading 5.1; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

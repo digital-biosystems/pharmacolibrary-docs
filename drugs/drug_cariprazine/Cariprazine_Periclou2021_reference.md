@@ -40,7 +40,7 @@ Periclou A, Phillips L, Ghahramani P, Kapás M, Carrothers T, Khariton T. Popula
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,13 @@ Periclou A, Phillips L, Ghahramani P, Kapás M, Carrothers T, Khariton T. Popula
 
 ### Reviewer guidance
 
-**Simulation was not executed for the cariprazine model, leaving its parameter coverage incomplete and preventing publication.**
+**The model was built but has not been simulated yet; t3_param_coverage (+1 more).**
 
-The record shows the model was built but not simulated. Three of six expected parameters, including central and peripheral volumes, lacked emitted values or defaults. Consequently, the apparent volume and clearance parameters could not be validated through simulation. Extracted — cariprazine: kabs 0.352 h−1, CL 21.5 l/h, V1/F 266 l, Q 0.431 l/h, V2 149 l, V1 128 l.
+Extracted — cariprazine: kabs 0.352 h−1, CL 21.5 l/h, V1/F 266 l, Q 0.431 l/h, V2 149 l, V1 128 l.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has cariprazine → desmethyl-cariprazine (dcar) (metabolism); desmethyl-cariprazine (dcar) → didesmethyl-cariprazine (ddcar) (metabolism), the second reading cariprazine → desmethyl-cariprazine (metabolism); desmethyl-cariprazine → didesmethyl-cariprazine (metabolism); it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -150,6 +152,39 @@ The record shows the model was built but not simulated. Three of six expected pa
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
+
+<details><summary>13 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['cariprazine', 'desmethyl-cariprazine (dcar)', 'metabolism'], ['desmethyl-cariprazine (dcar)', 'didesmethyl-cariprazine (ddcar)', 'metabolism']] | [['cariprazine', 'desmethyl-cariprazine', 'metabolism'], ['desmethyl-cariprazine', 'didesmethyl-cariprazine', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f apparent elimination clearance]` | 21.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dvc/f apparent dcar central volume]` | 128 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effective t1/2]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka first-order absorption rate constant]` | 0.352 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kafirst-order absorption rate constant]` |  | 0.352 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q3/f apparent first distribution clearance]` | 0.431 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q3/fapparent first distribution clearance]` |  | 0.431 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f apparent central volume]` | 266 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/fapparent central volume e]` |  | 266 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp1/f apparent first peripheral volume]` | 149 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp1/fapparent first peripheral volume]` |  | 149 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -167,24 +202,24 @@ The record shows the model was built but not simulated. Three of six expected pa
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 3 covered | neither emitted nor in defaulted[]: ['V1/F', 'V2', 'V1'] |
-| T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  | no second reading of this record |
-| T1_t_half_beta | reference | skipped | 10.1 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 5.9 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 19.1 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | skipped | 18.9 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 1.5 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 1.5 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 7 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 5.8 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | fail | 6 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['V1/F', 'V2', 'V1'] |
+| T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.133 (2 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.133 | cross-check contradicted by a second reader: verdict disputed; agreement 0.133 (2 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | skipped | 10.1 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 5.9 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 19.1 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | 18.9 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 1.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 1.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 7 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 5.8 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

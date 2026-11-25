@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Donepezil model failed Cmax and half-life checks due to missing bioavailability and large simulation deviations.
+> The model does not reproduce the paper's peak concentration (Cmax); the model does not reproduce the paper's terminal half-life (+3 more).
 
 <div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Park2025_reference" status="needs_review" stale="false" population="healthy male adults" measured-compound="donepezil" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Park YC, Seol E, Lee J, Hong JH, Jung JG, Sunwoo J. Pharmacokinetic Evaluation o
 
 ### Reviewer guidance
 
-**Donepezil model failed Cmax and half-life checks due to missing bioavailability and large simulation deviations.**
+**The model does not reproduce the paper's peak concentration (Cmax); the model does not reproduce the paper's terminal half-life (+3 more).**
 
-Simulated peak concentration ratios ranged from 0.061 to 0.2098, and the terminal half-life ratio was 1.9427. Bioavailability was not extracted, so a library placeholder was used instead of a paper-supported estimate. A second reader disagreed on the dose compound identification and the absence of a metabolite link. Extracted — donepezil: CL 9.57 L/h, V1 58.2 L, V2 2.05e+03 L, kabs 0.00173 1/h, Q 100 L/h, D1 497 h, tlag 299 h.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — donepezil: CL 9.57 L/h, V1 58.2 L, V2 2.05e+03 L, kabs 0.00173 1/h, Q 100 L/h, D1 497 h, tlag 299 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has donepezil (GB-5001A LAI / oral Aricept), the second reading GB-5001A; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -158,26 +158,26 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 6.109e-06 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 6.109e-06 |  | non-numeric value |
-| T1_cmax | reference | pass | 5.28e-06 | 6.109e-06 | 1.157 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 2.912e-05 | 6.109e-06 | 0.2098 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0001001 | 6.109e-06 | 0.061 | ng/mL→SI vs simulated kg/m3 |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.833 (15 of 18 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | cross-check contradicted by a second reader: verdict disputed; agreement 0.833 (15 of 18 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 6.109e-06 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 6.109e-06 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | pass | 5.28e-06 | 6.109e-06 | 1.157 | reported 5.28 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 2.912e-05 | 6.109e-06 | 0.2098 | reported 29.12 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0001001 | 6.109e-06 | 0.061 | reported 100.12 ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 1.24 | 6.109e-06 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | fail | 2.62e-05 | 6.109e-06 | 0.2332 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 5.24e-05 | 6.109e-06 | 0.1166 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 5.14e-05 | 6.109e-06 | 0.1188 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 2.62e-05 | 6.109e-06 | 0.2332 | reported 26.2 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 5.24e-05 | 6.109e-06 | 0.1166 | reported 52.4 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 5.14e-05 | 6.109e-06 | 0.1188 | reported 51.4 ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 2.61 | 6.109e-06 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | skipped |  | 6.109e-06 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 6.109e-06 |  | the transcribed record carries no number for this value |
 | T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 18.3 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 36.8 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 36 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped |  | 433.5 |  | non-numeric value |
-| T1_t_half_terminal | reference | fail | 223.2 | 433.5 | 1.943 | h→SI vs simulated h |
-| T1_tmax | reference | skipped |  | 659 |  | non-numeric value |
-| T1_tmax | reference | pass | 552 | 659 | 1.194 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 433.5 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | fail | 223.2 | 433.5 | 1.943 | reported 223.16 h→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 659 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | pass | 552 | 659 | 1.194 | reported 552.03 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -193,7 +193,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_donepezil/Donepezil_Park2025_reference/Donepezil_Park2025_reference_modelica.zip" download>Donepezil_Park2025_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_donepezil/Donepezil_Park2025_reference/Donepezil_Park2025_reference_modelica.zip" download>Donepezil_Park2025_reference_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_donepezil/Donepezil_Park2025_reference/Donepezil_Park2025_reference_fmi.zip" download>Donepezil_Park2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_donepezil/Donepezil_Park2025_reference/Donepezil_Park2025_reference_matlab.zip" download>Donepezil_Park2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_donepezil/Donepezil_Park2025_reference/Donepezil_Park2025_reference_matlab_simbio.zip" download>Donepezil_Park2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

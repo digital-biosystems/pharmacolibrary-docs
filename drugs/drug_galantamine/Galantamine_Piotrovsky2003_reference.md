@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The apparent metabolite clearance parameter was assigned a 60% unit instead of volumetric flow, causing a dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q351 unit % (dimensionless) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="galantamine" model-id="Galantamine_Piotrovsky2003_reference" status="rejected" stale="false" population="patients with Alzheimer&#39;s disease" measured-compound="galantamine" parameterization="apparent" topology="1C"></div>
 
@@ -44,13 +44,13 @@ Piotrovsky V, Van Peer A, Van Osselaer N, Armstrong M, Aerssens J. Galantamine p
 
 ### Reviewer guidance
 
-**The apparent metabolite clearance parameter was assigned a 60% unit instead of volumetric flow, causing a dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q351 unit % (dimensionless) vs [length] ** 3 / [time].**
 
-The record lists the parameter as a 60% reduction in metabolic clearance rather than a specific clearance value. The review identified a unit conflict where the dimensionless percentage symbol conflicted with the required cubic volume per time dimension. Additionally, the second reader disputed the assignment of the male clearance value to the general clearance field. Extracted — galantamine: CL 14.8 L/h, CLm/F 60 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — galantamine: CL 14.8 L/h, CLm/F 60 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

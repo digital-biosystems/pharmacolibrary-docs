@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the source paper does not study fampridine, and bioavailability and lag time were not explicitly estimated.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="fampridine" model-id="Fampridine_Simon2026v3_reference" status="rejected" stale="false" population="" measured-compound="fampridine" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Simon N, von Fabeck K. Residual Error Coding in NONMEM Can Mislead Diagnostic Re
 
 ### Reviewer guidance
 
-**Record rejected because the source paper does not study fampridine, and bioavailability and lag time were not explicitly estimated.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The paper's title and abstract do not name fampridine, confirming the record does not describe the target drug. The bioavailability fraction and absorption lag time lacked explicit estimates, so standard placeholders were used instead of fitted values. A second reader suggested a bioavailability value of 0.09, disagreeing with the record's omission. Extracted — fampridine: CL 5 L/h, V 50 L, kabs 1 h−1.
+Extracted — fampridine: CL 5 L/h, V 50 L, kabs 1 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q314: this record has none, the second reading 0.09. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -127,7 +127,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.889 (8 of 9 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.889 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

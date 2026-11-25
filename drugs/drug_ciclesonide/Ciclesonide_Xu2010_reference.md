@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R01A&quot;,&quot;href&quot;:&quot;atc/R01A.md&quot;},{&quot;label&quot;:&quot;ciclesonide&quot;,&quot;href&quot;:&quot;drugs/drug_ciclesonide/&quot;},{&quot;label&quot;:&quot;Xu_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclesonide_Xu2010_reference&quot;,&quot;label&quot;:&quot;Xu_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclesonide_Rohatagi2003_reference&quot;,&quot;label&quot;:&quot;Rohatagi_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclesonide/Ciclesonide_Rohatagi2003_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ciclesonide — `Ciclesonide_Xu2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Desisobutyryl-ciclesonide clearance is inconsistently reported as 202 L/h and 890 L/h within the abstract-derived record.
+> The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="ciclesonide" model-id="Ciclesonide_Xu2010_reference" status="rejected" stale="false" population="adults with persistent asthma" measured-compound="desisobutyryl-ciclesonide" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="ciclesonide" model-id="Ciclesonide_Xu2010_reference" status="needs_review" stale="false" population="patients with persistent asthma" measured-compound="desisobutyryl-ciclesonide" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Xu J, Nave R, Lahu G, Derom E, Derendorf H. Population pharmacokinetics and pharmacodynamics of inhaled ciclesonide and fluticasone propionate in patients with persistent asthma. Journal of clinical pharmacology 50(10):1118–1127 (2010).
@@ -17,33 +17,31 @@ Xu J, Nave R, Lahu G, Derom E, Derendorf H. Population pharmacokinetics and phar
 
 ## Population and dosing
 
-**Population:** adults with persistent asthma · condition persistent asthma · age group adult · n = 32.
+**Population:** patients with persistent asthma · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed ciclesonide, measured desisobutyryl-ciclesonide.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Structure:** 1-compartment; no model was built for this record.  
+**Parameterization:** mechanistic.  
 **Parameters:** 5 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference/Ciclesonide_Xu2010_reference.svg" alt="Ciclesonide_Xu2010_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | first-order rate constant | kel | 4.07 | 1/h |
-| relative clearance | CLm/F | 890 | L/h |
+| relative clearance | CL_ratio | 890 | L/h |
 | volume of distribution | V | 9800 | L |
 | first-order absorption rate constant | kabs | 2.63 | 1/h |
-| clearance (non-CIC treatment) | CLm/F | 202 | L/h |
+| clearance | CL | 202 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.455). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,23 +51,23 @@ Xu J, Nave R, Lahu G, Derom E, Derendorf H. Population pharmacokinetics and phar
 
 ### Reviewer guidance
 
-**Desisobutyryl-ciclesonide clearance is inconsistently reported as 202 L/h and 890 L/h within the abstract-derived record.**
+**The clearance plausibility check could not be computed.**
 
-Two distinct values exist for the metabolite's apparent clearance: 202 L/h (non-CIC treatment) and 890 L/h. A second reader disagreed on the existence of the metabolism link and the clearance value (202 L/h vs null). The abstract-only source meant summary statistics replaced the fitted model. Extracted — desisobutyryl-ciclesonide: kel 4.07 1/h, CLm/F 890 L/h, V 9.8e+03 L; ciclesonide: kabs 2.63 1/h, CLm/F 202 L/h.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. None of the extracted parameters is ciclesonide's own; they describe desisobutyryl-ciclesonide. Extracted — desisobutyryl-ciclesonide: kel 4.07 1/h, CL_ratio 890 L/h, V 9.8e+03 L, kabs 2.63 1/h, CL 202 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has ciclesonide → desisobutyryl-ciclesonide (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading ciclesonide → desisobutyryl-ciclesonide (metabolism); it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| first-order rate constant | `Q47` · kel | 4.07 | 1/h | 0.001131 | 1/s | 1/h | exact (1) | Xu_2010:abstract |
-| relative clearance | `Q351` · CLm/F | 890 | L/h | 0.0002472 | m3/s | l/h | exact (1) | Xu_2010:abstract |
+| first-order rate constant | `Q47` · kel | 4.07 | 1/h | 0.001131 | 1/s | 1/h | llm_corrected (0.6) | Xu_2010:abstract |
+| relative clearance | `Q31` · CL_ratio | 890 | L/h |  |  | l/h | llm_corrected (0.6) | Xu_2010:abstract |
 | volume of distribution | `Q61` · V | 9800 | L | 9.8 | m3 | l | exact (1) | Xu_2010:abstract, Xu_2010:abstract |
 | first-order absorption rate constant | `Q49` · kabs | 2.63 | 1/h | 0.0007306 | 1/s | 1/h | llm_confirmed (0.6) | Xu_2010:abstract |
-| clearance (non-CIC treatment) | `Q351` · CLm/F | 202 | L/h | 5.611e-05 | m3/s | l/h | exact (1) | Xu_2010:abstract |
+| clearance | `Q22` · CL | 202 | L/h | 5.611e-05 | m3/s | l/h | exact (1) | Xu_2010:abstract, Xu_2010:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,25 +76,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
-- metabolite desisobutyryl-ciclesonide: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
-- metabolite volume: 'volume of distribution' Q63→Q61 for desisobutyryl-ciclesonide — it is 1-compartment, so its central volume is its only volume
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=desisobutyryl-ciclesonide
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — only the metabolite is modelled — no parent compartment
-- status held at "Needs review" — not promoted
-- row roles: per-genotype parameters — typical value from the reference group: clearance (non-CIC treatment)
-- row roles (LLM): model_class=compartmental; 6/6 row label(s) assigned, 6 linked by role; re-tagged desisobutyryl-ciclesonide→parent ×2
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (volume of distribution); Q22 (clearance)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=desisobutyryl-ciclesonide
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
-- engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Xu_2010_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
@@ -104,22 +87,26 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.455 (5/11 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['ciclesonide', 'desisobutyryl-ciclesonide', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss-120b` | `parameters[clearance]` | 202 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[first-order absorption rate constant]` | 2.63 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [] | [['ciclesonide', 'desisobutyryl-ciclesonide', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[clearance].parameter_id` | Q22 | Q351 | mismatch |
 | `gpt-oss-120b` | `parameters[first-order absorption rate constant]` |  | 2.63 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[relative clearance].parameter_id` | Q351 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[first-order absorption rate constant]` | 2.63 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[first-order rate constant]` | 4.07 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative clearance]` |  | 890 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative clearance]` | 890 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 9800 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 9800 |  | only_one_extracted |
 
 </details>
 
@@ -136,27 +123,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Xu_2010:abstract'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Xu_2010:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Xu_2010:abstract', 'Xu_2010:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Xu_2010:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Xu_2010:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Xu_2010:abstract', 'Xu_2010:abstract'] |
-| C7_apparent_coherence | pass |  |  |  |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 202 | ['Xu_2010:abstract', 'Xu_2010:abstract'] |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 202 L/h | ['Xu_2010:abstract', 'Xu_2010:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 9.8e+03 L | ['Xu_2010:abstract', 'Xu_2010:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable | fail | Metabolite_C (measured=desisobutyryl-ciclesonide) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check disputed by a second reader: verdict disputed, agreement 0.455, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -168,20 +142,26 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 2.63 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference/Ciclesonide_Xu2010_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference/Ciclesonide_Xu2010_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Ciclesonide_Xu2010_reference_params.json` · controls `Ciclesonide_Xu2010_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciclesonide%5D%20Ciclesonide_Xu2010_reference&body=Drug%3A%20ciclesonide%0ARecord%3A%20Ciclesonide_Xu2010_reference%0APaper%3A%20Xu_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 12:41 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:51 UTC</sub>

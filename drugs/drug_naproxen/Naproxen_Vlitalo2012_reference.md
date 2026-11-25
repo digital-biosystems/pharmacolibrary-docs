@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record uses abstract-only summary statistics where fitted model parameters are required.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Vlitalo2012_reference" status="needs_review" stale="false" population="healthy children" measured-compound="naproxen" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Välitalo P, Kumpulainen E, Manner M, Kokki M, Lehtonen M, Hooker AC et al. Plas
 
 ### Reviewer guidance
 
-**Record uses abstract-only summary statistics where fitted model parameters are required.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built solely from the paper's abstract, so the listed values for clearance (0.62 L/h), volume of distribution (12.5 L), and absorption rate (0.237 h⁻¹) are not fitted model parameters. Additionally, the lag time parameter label incorrectly identifies 'Esomeprazole' for the naproxen record. A second reader disagreed with the extracted values, finding them null or unknown, resulting in a disputed cross-check. Extracted — naproxen: CL/F 0.62 L/h, Vss 12.5 L, kabs 0.237 h -1, tlag 0 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — naproxen: CL/F 0.62 L/h, Vss 12.5 L, kabs 0.237 h -1, tlag 0 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has naproxen, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

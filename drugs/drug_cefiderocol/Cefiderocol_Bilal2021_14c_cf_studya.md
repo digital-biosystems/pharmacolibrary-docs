@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0744, model 0.00617); the model does not reproduce the paper's time of the peak (tmax) (paper 1, model 0.183) (+1 more).
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0744, model 0.00617); the model does not reproduce the paper's time of the peak (tmax) (paper 1, model 0.183) (+2 more).
 
 <div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_Bilal2021_14c_cf_studya" status="needs_review" stale="false" population="mixed" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,7 +44,7 @@ Bilal M, El Tabei L, Büsker S, Krauss C, Fuhr U, Taubert M. Clinical Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +54,13 @@ Bilal M, El Tabei L, Büsker S, Krauss C, Fuhr U, Taubert M. Clinical Pharmacoki
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0744, model 0.00617); the model does not reproduce the paper's time of the peak (tmax) (paper 1, model 0.183) (+1 more).**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0744, model 0.00617); the model does not reproduce the paper's time of the peak (tmax) (paper 1, model 0.183) (+2 more).**
 
 Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax, AUClast and AUC∞), so that value has no SI equivalent. Extracted — cefiderocol: Cmax 72.9 mg/L, AUClast 171 mg∙h/L, AUC∞ 172 mg∙h/L, t1/2z 2.3 h, CL 4.78 L/h, V 15.8 L.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0-inf: this record has 172, the second reading none; it also differs on 7 more fields. That field does not shape the model.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -91,6 +93,34 @@ Simulated as the paper dosed it, the model's peak concentration (Cmax) differs f
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.333 (4/12 fields) | 8 |
+
+<details><summary>8 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 172 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-last]` | 171 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 4.78 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 72.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[higher central volume of distribution in infected patients compared with subjects without infection]` |  | 39 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[higher clearance in patients with cuti/aup compared with subjects without infection]` |  | 27 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2,z]` | 2.30 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz]` | 15.8 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -119,34 +149,34 @@ Simulated as the paper dosed it, the model's peak concentration (Cmax) differs f
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_cmax | reference | fail | 0.0744 | 0.006172 | 0.083 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.156 | 0.006172 | 0.0396 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0681 | 0.006172 | 0.0906 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.141 | 0.006172 | 0.0438 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0729 | 0.006172 | 0.0847 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.081 | 0.006172 | 0.0762 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0801 | 0.006172 | 0.0771 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.093 | 0.006172 | 0.0664 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.093 | 0.006172 | 0.0664 | mg/L→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | pass | 2.26 | 2.29 | 1.013 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.74 | 2.29 | 0.8357 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.19 | 2.29 | 1.046 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.4 | 2.29 | 0.9541 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.3 | 2.29 | 0.9956 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.8 | 2.29 | 0.8178 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 6.9 | 2.29 | 0.3319 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 9.6 | 2.29 | 0.2385 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 9.6 | 2.29 | 0.2385 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.97 | 0.1833 | 0.189 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict partial; agreement 0.333 (4 of 12 compared fields agree, 8 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial; agreement 0.333 (4 of 12 compared fields agree, 8 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 0.0744 | 0.006172 | 0.083 | reported 74.4 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.156 | 0.006172 | 0.0396 | reported 156.0 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0681 | 0.006172 | 0.0906 | reported 68.1 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.141 | 0.006172 | 0.0438 | reported 141.0 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0729 | 0.006172 | 0.0847 | reported 72.9 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.081 | 0.006172 | 0.0762 | reported 81.0 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0801 | 0.006172 | 0.0771 | reported 80.1 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.093 | 0.006172 | 0.0664 | reported 93.0 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.093 | 0.006172 | 0.0664 | reported 93.0 mg/L→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | pass | 2.26 | 2.29 | 1.013 | reported 2.26 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.74 | 2.29 | 0.8357 | reported 2.74 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.19 | 2.29 | 1.046 | reported 2.19 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.4 | 2.29 | 0.9541 | reported 2.4 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.3 | 2.29 | 0.9956 | reported 2.3 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.8 | 2.29 | 0.8178 | reported 2.8 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 6.9 | 2.29 | 0.3319 | reported 6.9 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 9.6 | 2.29 | 0.2385 | reported 9.6 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 9.6 | 2.29 | 0.2385 | reported 9.6 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.97 | 0.1833 | 0.189 | reported 0.97 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

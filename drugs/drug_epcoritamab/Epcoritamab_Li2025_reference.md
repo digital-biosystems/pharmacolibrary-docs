@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Epcoritamab record held back because absorption rate constant was assumed at library defaults rather than estimated from the abstract.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
-<div class="pk-model-meta" hidden drug="epcoritamab" model-id="Epcoritamab_Li2025_reference" status="needs_review" stale="false" population="adults with relapsed or refractory B-cell non-Hodgkin lymphoma" measured-compound="epcoritamab" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="epcoritamab" model-id="Epcoritamab_Li2025_reference" status="needs_review" stale="false" population="adults with relapsed or refractory B cell non-Hodgkin lymphoma" measured-compound="epcoritamab" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Li T, Gibiansky L, Parikh A, van der Linden M, Sanghavi K, Putnins M et al. Population Pharmacokinetics of Epcoritamab Following Subcutaneous Administration in Relapsed or Refractory B Cell Non-Hodgkin Lymphoma. Clinical pharmacokinetics 64(1):127–141 (2025).
@@ -17,12 +17,12 @@ Li T, Gibiansky L, Parikh A, van der Linden M, Sanghavi K, Putnins M et al. Popu
 
 ## Population and dosing
 
-**Population:** adults with relapsed or refractory B-cell non-Hodgkin lymphoma · condition relapsed or refractory B-cell non-Hodgkin lymphoma · age group adult · n = 327.
+**Population:** adults with relapsed or refractory B cell non-Hodgkin lymphoma · condition relapsed or refractory B cell non-Hodgkin lymphoma · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 4 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
@@ -33,14 +33,14 @@ Li T, Gibiansky L, Parikh A, van der Linden M, Sanghavi K, Putnins M et al. Popu
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| time to maximum concentration (tmax) | tmax | 4 | days |
-| apparent total volume of distribution | V/F | 25.6 | L |
-| apparent total clearance | CL | 0.53 | L/day |
-| terminal half-life | t1/2z | 22 | days |
+| median time to maximum concentration (tmax) after the first full dose | tmax | 4 | days |
+| geometric mean of the apparent total volume of distribution | V | 25.6 | L |
+| geometric mean of apparent total clearance | CL/F | 0.53 | L/day |
+| geometric mean of terminal half-life | t1/2z | 22 | days |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333), qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,22 +50,22 @@ Li T, Gibiansky L, Parikh A, van der Linden M, Sanghavi K, Putnins M et al. Popu
 
 ### Reviewer guidance
 
-**Epcoritamab record held back because absorption rate constant was assumed at library defaults rather than estimated from the abstract.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record uses abstract summary statistics, such as a terminal half-life of 22 days, as a stand-in for a fitted model. The absorption rate constant and lag time were assigned standard library values instead of being derived from the source, creating an unsupported assumption for the simulated profile. A second reader also disputed the apparent parameterization, preferring a mechanistic classification for the volume and clearance parameters. Extracted — epcoritamab: tmax 4 days, V/F 25.6 L, CL 0.53 L/day, t1/2z 22 days.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — epcoritamab: tmax 4 days, V 25.6 L, CL/F 0.53 L/day, t1/2z 22 days.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| time to maximum concentration (tmax) | `Q56` · tmax | 4 | days | 3.456e+05 | s | d | exact (1) | Li_2025:abstract, Li_2025:abstract |
-| apparent total volume of distribution | `Q76` · V/F | 25.6 | L | 0.0256 | m3 | l | llm_corrected (0.6) | Li_2025:abstract |
-| apparent total clearance | `Q22` · CL | 0.53 | L/day | 6.134e-09 | m3/s | l/d | llm_confirmed (0.6) | Li_2025:abstract |
-| terminal half-life | `Q57` · t1/2z | 22 | days | 1.901e+06 | s | d | llm (0.6) | Li_2025:abstract |
+| median time to maximum concentration (tmax) after the first full dose | `Q56` · tmax | 4 | days | 3.456e+05 | s | d | llm_confirmed (0.6) | Li_2025:abstract |
+| geometric mean of the apparent total volume of distribution | `Q61` · V | 25.6 | L | 0.0256 | m3 | l | llm_confirmed (0.6) | Li_2025:abstract |
+| geometric mean of apparent total clearance | `Q27` · CL/F | 0.53 | L/day | 6.134e-09 | m3/s | l/d | llm_corrected (0.6) | Li_2025:abstract |
+| geometric mean of terminal half-life | `Q57` · t1/2z | 22 | days | 1.901e+06 | s | d | llm (0.6) | Li_2025:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,29 +81,37 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
+- dropped duplicate Q56 ('median time to maximum concentration (tmax) at the end of the weekly dosing regimen (end of cycle 3)', value 2.3) — already have one for this compound
+- dropped unlinked row (NIL): 'Antidrug antibodies' — extend the ontology if this is a real PK parameter (source ['Li_2025:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=epcoritamab
 - molar mass: none found for 'epcoritamab' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- derived CL/F=0.0336071 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Li_2025_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Li_2025_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.333 (4/12 fields) | 8 |
 | `qwen3.8-27b` | not confirmed | 0.6 (6/10 fields) | 4 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[geometric mean (coefficient of variation [cv], %) of the apparent total volume of distribution]` |  | 25.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[geometric mean (cv%) values of apparent total clearance]` |  | 0.53 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[geometric mean (cv%) values of terminal half-life]` |  | 22 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[geometric mean of apparent total clearance]` | 0.53 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[geometric mean of terminal half-life]` | 22 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[geometric mean of the apparent total volume of distribution]` | 25.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median time to maximum concentration (tmax) after the first full dose]` | 4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median time to maximum concentration]` |  | 4 | only_one_extracted |
 | `qwen3.8-27b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `qwen3.8-27b` | `parameters[apparent total volume of distribution].parameter_id` | Q76 | Q61 | mismatch |
 | `qwen3.8-27b` | `parameters[time to maximum concentration]` | 4 |  | only_one_extracted |
@@ -124,14 +132,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Li_2025:abstract'] |
-| C5_dimension_Q56 | pass | [time] |  | ['Li_2025:abstract', 'Li_2025:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Li_2025:abstract'] |
+| C5_dimension_Q56 | pass | [time] |  | ['Li_2025:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Li_2025:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Li_2025:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Li_2025:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0221 L/h | ['Li_2025:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 25.6 L | ['Li_2025:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 0.0221 L/h | ['Li_2025:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 25.6 L | ['Li_2025:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -140,12 +148,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
 | T3_output_variable | pass | C_central (measured=epcoritamab) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.6, 0 of 1 reader(s) agree | 0.6 | cross-check disputed by a second reader: verdict disputed, agreement 0.6, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.333 (4 of 12 compared fields agree, 8 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial; agreement 0.333 (4 of 12 compared fields agree, 8 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -161,7 +168,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_modelica.zip" download>Epcoritamab_Li2025_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_modelica.zip" download>Epcoritamab_Li2025_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_fmi.zip" download>Epcoritamab_Li2025_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_matlab.zip" download>Epcoritamab_Li2025_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_epcoritamab/Epcoritamab_Li2025_reference/Epcoritamab_Li2025_reference_matlab_simbio.zip" download>Epcoritamab_Li2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
@@ -183,7 +190,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 9.335e-09 | m3/s |
+| input | model | `Cl` | 6.134e-09 | m3/s |
 | input | model | `VdPerKg` | 0.0003657 | m3/kg |
 | input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |
@@ -224,4 +231,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bepcoritamab%5D%20Epcoritamab_Li2025_reference&body=Drug%3A%20epcoritamab%0ARecord%3A%20Epcoritamab_Li2025_reference%0APaper%3A%20Li_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_epcoritamab/Epcoritamab_Li2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 12:39 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:50 UTC</sub>

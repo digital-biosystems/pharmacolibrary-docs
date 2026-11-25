@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Ivermectin record was held back because the sex covariate effect of -0.74 was not simulated, preventing verification of its impact on peripheral volume.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="ivermectin" model-id="Ivermectin_Alshehri2023_reference" status="needs_review" stale="false" population="Wuchereria bancrofti-infected and uninfected adults in Côte d’Ivoire" measured-compound="ivermectin" parameterization="apparent" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Alshehri A, Chhonker YS, Bala V, Edi C, Bjerum CM, Koudou BG et al. Population p
 
 ### Reviewer guidance
 
-**Ivermectin record was held back because the sex covariate effect of -0.74 was not simulated, preventing verification of its impact on peripheral volume.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The record includes a covariate adjustment for sex on the peripheral volume of distribution, but the simulation only ran the base model. Consequently, the specific effect of -0.74 on the apparent volume was never tested. Additionally, a second reader disputed the record, disagreeing on the location and form of the covariate effect. The record was therefore kept for further review due to these unverified assumptions and discrepancies. Extracted — ivermectin: CL/F 7.02 L/h, Q/F 9.11 L/h, V1/F 138 L, V2/F 424 L, tlag 0.75 h, kabs 0.71 1/h.
+The base model was simulated, not the covariate effects the record defines. Extracted — ivermectin: CL/F 7.02 L/h, Q/F 9.11 L/h, V1/F 138 L, V2/F 424 L, tlag 0.75 h, kabs 0.71 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].covariate_forms`: this record has ['linear_fractional'], the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -174,7 +174,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.8 (16 of 20 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | cross-check contradicted by a second reader: verdict disputed; agreement 0.8 (16 of 20 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

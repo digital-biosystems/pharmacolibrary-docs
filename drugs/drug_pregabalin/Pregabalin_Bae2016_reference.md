@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Pregabalin’s apparent clearance (CL/F, 1.16 L/h) was rejected because the paper reports topiramate pharmacokinetics, with pregabalin only a concomitant medication.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="pregabalin" model-id="Pregabalin_Bae2016_reference" status="rejected" stale="false" population="" measured-compound="pregabalin" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Bae EK, Lee J, Shin JW, Moon J, Lee KJ, Shin YW et al. Factors influencing topir
 
 ### Reviewer guidance
 
-**Pregabalin’s apparent clearance (CL/F, 1.16 L/h) was rejected because the paper reports topiramate pharmacokinetics, with pregabalin only a concomitant medication.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The paper reports population pharmacokinetic parameters for topiramate, not pregabalin; pregabalin is listed only as a concomitant medication. A second reader disputed the verdict (agreement 0.286; 0 of 1 agreed). Tlag was defaulted, and the apparent parameterization assumed F=1 and Fm=1, with no molar correction. Extracted — pregabalin: CL/F 1.16 L/h, V/F 109 L, kabs 2 h À1.
+Extracted — pregabalin: CL/F 1.16 L/h, V/F 109 L, kabs 2 h À1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 58; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.286, 0 of 1 reader(s) agree | 0.286 | cross-check disputed by a second reader: verdict disputed, agreement 0.286, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.429 (3 of 7 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.429 | cross-check agreement 0.429 is below 0.5: verdict partial; agreement 0.429 (3 of 7 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

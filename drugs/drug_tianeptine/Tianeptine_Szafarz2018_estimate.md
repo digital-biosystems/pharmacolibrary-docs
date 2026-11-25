@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The intercompartmental clearance parameter has units of inverse time, conflicting with its required volume-per-time dimension.
+> C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit h−1 (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="tianeptine" model-id="Tianeptine_Szafarz2018_estimate" status="rejected" stale="false" population="rats" measured-compound="tianeptine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Szafarz M, Wencel A, Pociecha K, Fedak FA, Wlaź P, Wyska E. Pharmacokinetic stu
 
 ### Reviewer guidance
 
-**The intercompartmental clearance parameter has units of inverse time, conflicting with its required volume-per-time dimension.**
+**C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit h−1 (1 / [time]) vs [length] ** 3 / [time].**
 
-The parameter Q, representing intercompartmental clearance, is reported with units of h−1 rather than a clearance dimension like L/h. This dimensional inconsistency violates the structural requirements for a model parameter defined as a flow between compartments. Additionally, the record exhibits an apparent parameterization where bioavailability is already corrected in the volume and clearance terms, leading to a coherence violation. Extracted — tianeptine: V1 0.761 L/kg, kel 2.79 h−1, Q 0.504 h−1, Fab 0.694; MC5: V1/F 2.97 L/kg.
+A reported unit could not be converted (Q), so that value has no SI equivalent. Extracted — tianeptine: V1 0.761 L/kg, kel 2.79 h−1, Q 0.504 h−1, Fab 0.694; MC5: V1/F 2.97 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tianeptine → mc5 (metabolism), the second reading not captured → not captured (not captured); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

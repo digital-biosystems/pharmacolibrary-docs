@@ -8,7 +8,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="gadoteric acid" model-id="GadotericAcid_Mhler2011_reference" status="needs_review" stale="false" population="pregnant Balb/C mice at 16 days of gestation" measured-compound="gadolinium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gadoteric acid" model-id="GadotericAcid_Mhler2011_reference" status="needs_review" stale="false" population="pregnant mice" measured-compound="gadoterate meglumine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Mühler MR, Clément O, Salomon LJ, Balvay D, Autret G, Vayssettes C et al. Maternofetal pharmacokinetics of a gadolinium chelate contrast agent in mice. Radiology 258(2):455–460 (2011).
@@ -16,9 +16,7 @@ Mühler MR, Clément O, Salomon LJ, Balvay D, Autret G, Vayssettes C et al. Mate
 
 ## Population and dosing
 
-**Population:** pregnant Balb/C mice at 16 days of gestation · condition pregnancy · n = 23.
-
-**Dosed compound ≠ measured compound:** dosed gadoterate meglumine, measured gadolinium.
+**Population:** pregnant mice.
 
 > **Species: mouse.** This record comes from an animal study (mouse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -39,7 +37,7 @@ Mühler MR, Clément O, Salomon LJ, Balvay D, Autret G, Vayssettes C et al. Mate
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +49,9 @@ Mühler MR, Clément O, Salomon LJ, Balvay D, Autret G, Vayssettes C et al. Mate
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is gadoteric acid's own; they describe gadolinium. Extracted — gadolinium: t1/2α 47 minutes, t1/2β 107 hours.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — gadoteric acid: t1/2α 47 minutes, t1/2β 107 hours.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has none, the second reading gadoterate meglumine → gadolinium (interconversion); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,7 +59,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the link
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| first half-life of distribution | `Q59` · t1/2α | 47 | minutes | 2820 | s | min | llm (0.6) | Mühler_2011:abstract |
+| first half-life of distribution | `Q59` · t1/2α | 47 | minutes | 2820 | s | min | half_life_rule (0.95) | Mühler_2011:abstract |
 | second half-life of elimination | `Q60` · t1/2β | 107 | hours | 3.852e+05 | s | h | llm (0.6) | Mühler_2011:abstract |
 
 <details class="legend">
@@ -72,34 +70,23 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the link
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gadolinium
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gadoterate meglumine
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'gadolinium', not gadoteric_acid — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Mühler_2011_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.375 (3/8 fields) | 5 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>5 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `qwen3.8-27b` | `model.links` | [] | [['gadoterate meglumine', 'gadolinium', 'interconversion']] | mismatch |
-| `qwen3.8-27b` | `parameters[first half-life of distribution]` | 47 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[half-life of distribution]` |  | 47 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[half-life of elimination]` |  | 107 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[second half-life of elimination]` | 107 |  | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -150,4 +137,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgadoteric_acid%5D%20GadotericAcid_Mhler2011_reference&body=Drug%3A%20gadoteric_acid%0ARecord%3A%20GadotericAcid_Mhler2011_reference%0APaper%3A%20M%C3%BChler_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gadoteric_acid/GadotericAcid_Mhler2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 18:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:53 UTC</sub>

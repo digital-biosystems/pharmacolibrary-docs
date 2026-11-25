@@ -64,7 +64,7 @@ It is given by mouth in forms such as tablets and capsules. It is a widely used 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:08 | 7:28 | 3/3/0 | 0/1/0 | 0/0/0 | 415,435/26,177 | ollama / glm-5.3-flash | 10 | 1/9 | 10/0 | 0 |
+| 2026-11-24 03:23 | 0:04 | 3/3/0 | 0/1/0 | 0/0/0 | 3,933/171 | einfracz / qwen3.8-27b | 10 | 1/9 | 10/0 | 0 |
 
 ## Coverage
 
@@ -78,27 +78,38 @@ It is given by mouth in forms such as tablets and capsules. It is a widely used 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Agyeman_2026 | irrelevant | 0 | 0 | This is a population PK study of favipiravir; ritonavir (lopinavir-ritonavir) is only a co-administered interaction covariate, with no ritonavir disposition parameters reported. |
-| popPK | Alvarez_2021 | irrelevant | 2 | 3 | This is a population PK model of lopinavir in Covid-19 patients; ritonavir is only a co-administered booster whose trough concentrations serve as a covariate on lopinavir clearance, with no ritonavir disposition parameters (CL, V, Q, ka) modeled or reported. |
-| popPK | Barrett_2002 | irrelevant | 1 | 1 | This is a population PK model of efavirenz; ritonavir appears only as a co-administered interaction covariate, with no ritonavir disposition parameters reported. |
-| popPK | Boffito_2008 | irrelevant | 3 | 2 | Ritonavir is only a pharmacokinetic booster; no ritonavir disposition parameters (CL, V, half-life) are reported, and darunavir values are narrative only. |
+| popPK | Alvarez_2021 | irrelevant | 1 | 0 | The study reports population pharmacokinetic parameters for lopinavir, with ritonavir included only as a booster covariate and not modeled as the subject drug. |
+| PGx | Alvarez_2021 | not_relevant | 0 | 0 | The study analyzes population pharmacokinetics of lopinavir boosted by ritonavir but explicitly excludes genetic variants as covariates, focusing instead on clinical variables like weight, age, and ritonavir trough concentrations. |
+| popPK | Barrett_2002 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of efavirenz, with ritonavir mentioned only as a co-administered drug influencing efavirenz clearance. |
+| PGx | Barrett_2002 | not_relevant | 0 | 0 | The study focuses on the population pharmacokinetics of efavirenz, not ritonavir, and does not analyze genetic variants or pharmacogenomic effects on ritonavir parameters. |
+| popPK | Boffito_2008 | irrelevant | 1 | 0 | The study focuses on darunavir pharmacokinetics and efficacy with ritonavir acting only as a pharmacokinetic booster, and no quantitative disposition parameters for ritonavir are provided. |
+| PGx | Boffito_2008 | not_relevant | 0 | 0 | The paper describes the pharmacokinetics and efficacy of the drug darunavir/ritonavir but does not report how a specific gene variant (pharmacogenomic effect) alters its PK or PD parameters. |
 | popPK | Calderin_2025 | irrelevant | 0 | 0 | This is a population-PK study of dexamethasone; ritonavir appears only as a co-administered CYP3A4 inhibitor affecting dexamethasone clearance, with no ritonavir PK parameters reported. |
 | popPK | Calderin_2026 | irrelevant | 0 | 0 | This is a population-PK study of dexamethasone; ritonavir appears only as a co-administered CYP3A4 inhibitor covariate, with no ritonavir PK parameters reported. |
-| popPK | Chandasana_2024 | irrelevant | 0 | 0 | This is a population PK study of dolutegravir; ritonavir appears only as a covariate (atazanavir-ritonavir in background ART), with no ritonavir PK parameters reported. |
-| popPK | Dresser_2000 | irrelevant | 0 | 0 | Review of CYP3A4 inhibitor interactions; ritonavir is only an inhibitor/comparator, no PK parameters for ritonavir itself. |
-| popPK | Joshi_2021 | irrelevant | 0 | 0 | This is a review of favipiravir for COVID-19; ritonavir appears only as a comparator (LPV/RTV) with no ritonavir PK parameters reported. |
-| popPK | Kile_2012 | irrelevant | 2 | 1 | This is a population PK study of atazanavir; ritonavir is only a boosting co-agent, and no ritonavir disposition parameters are reported. |
-| popPK | King_2004 | irrelevant | 2 | 1 | This is a narrative review of ritonavir as a PK booster for other PIs; no ritonavir disposition parameters (CL, V, half-life) are reported, only AUC/Cmin changes for saquinavir and lopinavir. |
-| popPK | Qazi_2002 | irrelevant | 2 | 1 | Narrative review text about lopinavir/ritonavir boosting with no quantitative PK parameters for ritonavir reported. |
+| popPK | Chandasana_2024 | irrelevant | 1 | 0 | The study reports PK parameters for dolutegravir, not ritonavir. |
+| PGx | Chandasana_2024 | not_relevant | 0 | 0 | The paper analyzes dolutegravir (DTG) pharmacokinetics and does not report pharmacogenomic effects on ritonavir. |
+| popPK | Dresser_2000 | irrelevant | 0 | 0 | This is a review article on the mechanisms of CYP3A4 inhibition where ritonavir is mentioned only as a general inhibitor/comparator, with no quantitative pharmacokinetic parameters reported for it. |
+| PGx | Dresser_2000 | not_relevant | 0 | 0 | The paper describes general pharmacokinetic interactions caused by CYP3A4 inhibition, but it does not report specific pharmacogenomic effects (gene variants/genotypes) on PK/PD parameters for ritonavir. |
+| popPK | Joshi_2021 | irrelevant | 0 | 0 | The paper is a review of favipiravir for COVID-19; ritonavir is mentioned only as a comparator agent (in LPV/RTV) and no pharmacokinetic parameters for ritonavir are reported. |
+| PGx | Joshi_2021 | not_relevant | 0 | 0 | The paper focuses on the use of favipiravir for COVID-19 and does not report pharmacogenomic effects on the PK/PD of ritonavir. |
+| popPK | Kile_2012 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of atazanavir, with ritonavir serving only as a context for boosting effects rather than being the subject of PK parameter estimation. |
+| PGx | Kile_2012 | not_relevant | 1 | 0 | The study reports pharmacogenomic effects on the pharmacokinetics of atazanavir (CYP3A5, ABCB1, PXR), not on ritonavir. |
+| popPK | King_2004 | irrelevant | 0 | 0 | The text is a review describing ritonavir's role as a pharmacokinetic enhancer for other protease inhibitors (e.g., saquinavir, lopinavir), not a primary study reporting quantitative PK parameters for ritonavir itself. |
+| PGx | King_2004 | not_relevant | 0 | 0 | The text describes pharmacokinetic drug-drug interactions (pharmacokinetic enhancement by ritonavir as a CYP inhibitor) but does not report any genetic or pharmacogenomic effect (gene variant/genotype) on ritonavir PK/PD. |
+| popPK | Qazi_2002 | irrelevant | 0 | 0 | The text is a narrative introduction to a study on lopinavir/ritonavir that discusses pharmacokinetic concepts but provides no quantitative PK parameters for ritonavir itself. |
+| PGx | Qazi_2002 | not_relevant | 1 | 0 | The text describes the general pharmacokinetic boosting effect of ritonavir on lopinavir (CYP3A4 inhibition) and clinical utility, but contains no specific data or discussion on how genetic variants influence these parameters. |
 | popPK | Salinger_2019 | irrelevant | 0 | 0 | This is a population-PK model of pretomanid; ritonavir appears only as part of co-administered lopinavir/ritonavir affecting pretomanid exposure, with no ritonavir PK parameters reported. |
 | popPK | Shinha_2020 | irrelevant | 0 | 0 | Ritonavir is only a CYP3A4 inhibitor co-administered in an in vitro organ-on-a-chip study of CPT-11/SN-38; no ritonavir PK parameters are reported. |
 | popPK | Tikiso_2022 | irrelevant | 0 | 0 | This is a population PK study of ethambutol in children; ritonavir (with lopinavir) is only a co-administered covariate affecting ethambutol bioavailability, with no ritonavir PK parameters reported. |
-| popPK | Vargas_2020 | irrelevant | 0 | 0 | A systematic review of clinical efficacy with no PK parameters or numeric disposition values for ritonavir. |
+| popPK | Vargas_2020 | irrelevant | 0 | 0 | This is a systematic review of antiviral efficacy and clinical outcomes for lopinavir/ritonavir, not a pharmacokinetic study reporting quantitative disposition parameters. |
+| PGx | Vargas_2020 | not_relevant | 0 | 0 | The paper is a systematic review of clinical efficacy and usage of lopinavir/ritonavir for respiratory viruses and contains no data on genetic variants affecting PK or PD parameters. |
 | popPK | Zeitlinger_2020 | irrelevant | 2 | 1 | This is a narrative review of antivirals for COVID-19; ritonavir appears only as a booster/comparator in LPV/r with no ritonavir disposition parameters (CL, V, Q, ka, half-life) reported, and no population-PK model. |
-| popPK | Zeng_2024 | irrelevant | 2 | 1 | This is a population-PK study of nirmatrelvir with ritonavir only as the co-administered booster; no ritonavir PK parameters are reported. |
+| popPK | Zeng_2024 | irrelevant | 2 | 1 | The study reports pharmacokinetic parameters for nirmatrelvir (the subject drug), not ritonavir, which is only mentioned as a co-administered pharmacokinetic enhancer. |
+| PGx | Zeng_2024 | not_relevant | 0 | 0 | The paper analyzes the population pharmacokinetics of nirmatrelvir in Chinese patients but does not report any association between genetic variants, genotypes, or phenotypes and PK/PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Britonavir%5D&body=Drug%3A%20ritonavir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ritonavir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 17:02 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 16:45 UTC</sub>

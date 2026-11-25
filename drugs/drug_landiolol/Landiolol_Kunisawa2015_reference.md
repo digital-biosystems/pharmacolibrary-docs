@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record lacks a value for the absorption lag time (tlag) for landiolol, resulting in incomplete parameter coverage for the two-compartment model.
+> T3_param_coverage; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="landiolol" model-id="Landiolol_Kunisawa2015_reference" status="needs_review" stale="false" population="gynecologic patients" measured-compound="landiolol" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Kunisawa T, Yamagishi A, Suno M, Nakade S, Higashi R, Kurosawa A et al. Target-c
 
 ### Reviewer guidance
 
-**The record lacks a value for the absorption lag time (tlag) for landiolol, resulting in incomplete parameter coverage for the two-compartment model.**
+**T3_param_coverage; x1_cross_check.**
 
-The record was constructed from the paper's abstract alone, so the extracted pharmacokinetic values are summary statistics rather than fitted model estimates. Although values exist for clearance, volumes, and intercompartmental clearance, the absorption lag time (0.634 min) was not successfully linked to the parameter list, leaving the model structure without a defined absorption delay. A second reader also failed to confirm the extracted values for the central and peripheral compartment volumes, adding uncertainty to the data reliability. Extracted — landiolol: CL 34 mL/min/kg, V1 74.9 mL/kg, Q 70.9 mL/min/kg, V2 38.9 mL/kg, tlag 0.634 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — landiolol: CL 34 mL/min/kg, V1 74.9 mL/kg, Q 70.9 mL/min/kg, V2 38.9 mL/kg, tlag 0.634 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has landiolol hydrochloride, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,7 +148,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.143 | cross-check contradicted by a second reader: verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

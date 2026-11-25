@@ -51,7 +51,7 @@ Léger F, Loos WJ, Fourcade J, Bugat R, Goffinet M, Mathijssen RH et al. Factors
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**Simulated; the covariate scenarios were not simulated (advisory).**
 
 The base model was simulated, not the covariate effects the record defines.
 
@@ -169,7 +169,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | pass |  | verdict partial, agreement 1.0, 1 of 2 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.929 (26 of 27 compared fields agree, 1 extracted by one reader only); 2 of 2 reader(s) without a contradiction (gpt-oss-120b, qwen3.8-27b) | 0.929 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

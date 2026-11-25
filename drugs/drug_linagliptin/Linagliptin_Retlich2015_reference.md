@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The linagliptin record contains a negative total clearance value, an unconverted absorption rate constant unit, and a missing binding link to DPP-4.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="linagliptin" model-id="Linagliptin_Retlich2015_reference" status="rejected" stale="false" population="patients with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="apparent" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Retlich S, Duval V, Graefe-Mody U, Friedrich C, Patel S, Jaehde U et al. Populat
 
 ### Reviewer guidance
 
-**The linagliptin record contains a negative total clearance value, an unconverted absorption rate constant unit, and a missing binding link to DPP-4.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The parameter labeled Corr F_CL is reported as -0.765, which is an impossible value for total clearance. The half-life of the absorption phase, t1/2ka, is given as 0.795 but lacks a unit, preventing conversion to a standard rate constant. The second reader indicated a binding relationship between linagliptin and DPP-4 activity that is absent from the model structure. Extracted — linagliptin: kabs 0.933 1/h, t1/2ka 0.795, k13 0.441 1/h, V1/F 715 L, Q/F 412 L/h, V 1.65e+03 L, CL/F 258 L/h, Bmax 4.97 nmol/L, … (+3).
+A reported unit could not be converted (Bmax), so that value has no SI equivalent. Extracted — linagliptin: kabs 0.933 1/h, t1/2ka 0.795, k13 0.441 1/h, V1/F 715 L, Q/F 412 L/h, V 1.65e+03 L, CL/F 258 L/h, Bmax 4.97 nmol/L, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has linagliptin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

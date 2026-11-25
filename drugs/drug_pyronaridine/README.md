@@ -44,7 +44,7 @@ Pyronaridine is an antimalarial drug that is part of the combination therapy pyr
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Alin_1990_Growth_inhibition_of_Plasmodium_falciparum](drugs/drug_pyronaridine/pd_Alin_1990_Growth_inhibition_of_Plasmodium_falciparum.md) | Growth inhibition of Plasmodium falciparum ← pyronaridine · direct sigmoid Emax (Hill) effect | — | Alin MH et al., In vitro activity of artemisinin, its d…, Transactions of the Royal S… (1990) | [10.1016/0035-9203(90)90129-3](https://doi.org/10.1016/0035-9203(90)90129-3) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Alin_1990_Growth_inhibition](drugs/drug_pyronaridine/pd_Alin_1990_Growth_inhibition.md) | Growth inhibition ← pyronaridine · direct sigmoid Emax (Hill) effect | — | Alin MH et al., In vitro activity of artemisinin, its d…, Transactions of the Royal S… (1990) | [10.1016/0035-9203(90)90129-3](https://doi.org/10.1016/0035-9203(90)90129-3) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">in vitro</span> | [Gendrot_2020_SARS_CoV_2_replication_RT_PCR](drugs/drug_pyronaridine/pd_Gendrot_2020_SARS_CoV_2_replication_RT_PCR.md) | SARS-CoV-2 replication (RT-PCR) ← pyronaridine · direct sigmoid Emax (Hill) effect | — | Gendrot M et al., Antimalarial drugs inhibit the replicat…, Travel medicine and infecti… (2020) | [10.1016/j.tmaid.2020.101873](https://doi.org/10.1016/j.tmaid.2020.101873) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Felices_2025_QTcF](drugs/drug_pyronaridine/pd_Felices_2025_QTcF.md) | Change from baseline in Fridericia-corrected QT interval (ΔQTcF) ← pyronaridine · direct linear effect | ▶ model + simulator | Felices M et al., Concentration-Response Analysis of the…, Clinical and translational… (2025) | [10.1111/cts.70305](https://doi.org/10.1111/cts.70305) |
 
@@ -60,7 +60,7 @@ Pyronaridine is an antimalarial drug that is part of the combination therapy pyr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:35 | 11:35 | 1/3/0 | 3/0/0 | 0/0/0 | 489,642/40,827 | ollama / glm-5.3-flash | 11 | 0/11 | 11/0 | 0 |
+| 2026-11-24 03:42 | 0:04 | 1/3/0 | 3/0/0 | 0/0/0 | 3,596/179 | einfracz / qwen3.8-27b | 11 | 0/11 | 11/0 | 0 |
 
 ## Coverage
 
@@ -73,14 +73,16 @@ Pyronaridine is an antimalarial drug that is part of the combination therapy pyr
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Alin_1990 | irrelevant | 0 | 0 | In vitro antimalarial potency study (EC50) with no pharmacokinetic disposition parameters for pyronaridine. |
+| popPK | Alin_1990 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic assay measuring parasite growth inhibition (EC50), not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Alin_1990 | not_relevant | 0 | 0 | The paper investigates the in vitro activity of pyronaridine against different *Plasmodium falciparum* strains, not the effect of human gene variants on the drug's PK or PD parameters. |
 | popPK | Anantpadma_2019 | irrelevant | 0 | 0 | In vitro antiviral screening study; pyronaridine is only a test compound with EC50/IC50 values, no PK disposition parameters. |
 | popPK | Chairat_2018 | irrelevant | 2 | 3 | The population-PK models and parameters (CL/F, V/F) are for primaquine and carboxyprimaquine; pyronaridine/artesunate appears only as a co-administered interaction probe, with no pyronaridine disposition parameters reported. |
 | popPK | Ekins_2015 | irrelevant | 0 | 0 | This is a drug-discovery/efficacy study (pyronaridine as an antichagasic hit, 85.2% efficacy in mice) with no PK parameters such as CL, V, or a PK model reported. |
 | popPK | Felices_2025 | irrelevant | 2 | 2 | This is a concentration–QTc (PD) modeling study; PK data (Cmax, Tmax) are only cited as published elsewhere and no pyronaridine disposition parameters (CL, V, half-life with volume, population-PK model) are reported here. |
 | popPK | Gendrot_2020 | irrelevant | 2 | 3 | In vitro SARS-CoV-2 study; pyronaridine PK values (Cmax 271 ng/ml, t1/2 33.5 d human; rat Cmax 223 ng/ml) are only cited from literature, not a PK study of pyronaridine itself. |
 | popPK | Gendrot_2021 | irrelevant | 0 | 0 | In-vitro antiviral study of methylene blue; pyronaridine is only a co-administered comparator with no PK disposition parameters for it. |
-| popPK | Gupta_2002 | irrelevant | 0 | 0 | In vitro drug-interaction assay against P. falciparum with no pharmacokinetic parameters for pyronaridine. |
+| popPK | Gupta_2002 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic assay measuring synergy indices (O/E) of drug combinations, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Gupta_2002 | not_relevant | 0 | 0 | The paper reports in vitro drug-drug interactions (synergism) between artemisinin and pyronaridine against P. falciparum, but does not report any human pharmacogenomic variants or their effects on pyronaridine PK/PD. |
 | popPK | Lane_2019 | relevant | 7 | 3 | Pyronaridine PK was measured in BALB/c mice with non-compartmental analysis (t1/2, Cmax, AUC, CL/F, V/F), but the numeric values are in Table 2, which is not included in the evidence. |
 | popPK | Tan_2009 | irrelevant | 0 | 0 | This is a population PK study of artesunate and its metabolite DHA; pyronaridine is only a co-administered comparator drug, and no pyronaridine PK parameters are reported. |
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Levothyroxine clearance of 0.187 ml/h is physiologically implausible, indicating a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Zeghal1992_reference" status="rejected" stale="false" population="" measured-compound="levothyroxine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Zeghal N, Gondran F, Redjem M, Giudicelli MD, Aissouni Y, Vigouroux E. Iodide an
 
 ### Reviewer guidance
 
-**Levothyroxine clearance of 0.187 ml/h is physiologically implausible, indicating a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The recorded clearance value is 0.187 ml/h, which is far below the expected physiological range for levothyroxine. The volume of distribution is listed as 3.59 ml, compounding the implausibility. The record was rejected because these magnitudes suggest an error in unit conversion or extraction rather than a valid PK estimate. Extracted — levothyroxine: CL 0.187 ml/h, V 3.59 ml.
+Extracted — levothyroxine: CL 0.187 ml/h, V 3.59 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q1: this record has 0.406, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

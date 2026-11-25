@@ -45,13 +45,13 @@ Kerbusch T, de Kraker J, Mathĵt RA, Beijnen JH. Population pharmacokinetics of 
 
 ### Reviewer guidance
 
-**Abstract-only record for ifosfamide failed simulation due to cross-check disputes on clearance, volume, and metabolism links.**
+**The model was built but has not been simulated yet; x1_cross_check.**
 
-The record was derived solely from the paper's abstract, so reported summary statistics stood in for a fitted model. A second reader disputed the assigned values for clearance (2.36 L/h), volume (20.6 L), and elimination rate (3.64 h-1), as well as the metabolic links to three metabolites. Consequently, the model was not simulated and was held back pending resolution of these inconsistencies. Extracted — ifosfamide: CL 2.36 L/h, V 20.6 L, kel 3.64 h(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ifosfamide: CL 2.36 L/h, V 20.6 L, kel 3.64 h(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has ifosfamide → 2-dechloroethyl-ifosfamide (metabolism); ifosfamide → 3-dechloroethyl-ifosfamide (metabolism); ifosfamide → 4-hydroxy-ifosfamide (metabolism), the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.3, 0 of 1 reader(s) agree | 0.3 | cross-check disputed by a second reader: verdict disputed, agreement 0.3, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.3 (3 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.3 | cross-check contradicted by a second reader: verdict disputed; agreement 0.3 (3 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

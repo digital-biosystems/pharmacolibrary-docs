@@ -20,24 +20,17 @@ Nelfinavir is a protease inhibitor used to treat HIV infections. It is taken by 
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| nelfinavir | parent | 567.782 | C32H45N3O4S | DrugBank | [64143](https://pubchem.ncbi.nlm.nih.gov/compound/64143) | Crommentuyn_2006, Hirt_2006, Hirt_2006_2, Jackson_2000 |
-| M8 | metabolite | 583.788 | C32H45N3O5S | PubChem | [475066](https://pubchem.ncbi.nlm.nih.gov/compound/475066) | Crommentuyn_2006, Hirt_2006 |
-| M8 (hydroxy-tert-butylamide) | metabolite | — (mass units only) | — | — | — | — |
-
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Hirt_2006_2 · V ·/kg</text><circle cx="429.4" cy="30.0" r="4" fill="#ef6c00"><title>Hirt_2006_2 · V ·/kg: 483 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Jackson_2000 · V/F</text><circle cx="461.3" cy="46.0" r="4" fill="#ef6c00"><title>Jackson_2000 · V/F: 596 L</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+| nelfinavir | parent | 567.782 | C32H45N3O4S | DrugBank | [64143](https://pubchem.ncbi.nlm.nih.gov/compound/64143) | Crommentuyn_2006, Hirt_2006, Hirt_2006_2 |
+| M8 | metabolite | 583.788 | C32H45N3O5S | PubChem | [475066](https://pubchem.ncbi.nlm.nih.gov/compound/475066) | Hirt_2006, Hirt_2006_2 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: F, Cl, Tlag left at base-class defaults</sub> | [Hirt_2006_2_reference](drugs/drug_nelfinavir/Nelfinavir_Hirt2006v2_reference.md) | held back | 1-compartment, oral | 5 | Hirt D et al., Age-related effects on nelfinavir and M…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.50.3.910-916.2006](https://doi.org/10.1128/AAC.50.3.910-916.2006) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Jackson_2000_reference](drugs/drug_nelfinavir/Nelfinavir_Jackson2000_reference.md) | — | 1-compartment (no model) | 2 | Jackson KA et al., A population pharmacokinetic analysis o…, Antimicrobial agents and ch… (2000) | [10.1128/AAC.44.7.1832-1837.2000](https://doi.org/10.1128/AAC.44.7.1832-1837.2000) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Crommentuyn_2006_reference](drugs/drug_nelfinavir/Nelfinavir_Crommentuyn2006_reference.md) | — | parent + metabolite (no model) | 2 | Crommentuyn KM et al., Population pharmacokinetics and pharmac…, The Pediatric infectious di… (2006) | [10.1097/01.inf.0000215242.70300.95](https://doi.org/10.1097/01.inf.0000215242.70300.95) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hirt_2006_reference](drugs/drug_nelfinavir/Nelfinavir_Hirt2006_reference.md) | — | parent + metabolite (no model) | 6 | Hirt D et al., Pregnancy-related effects on nelfinavir…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.01596-05](https://doi.org/10.1128/AAC.01596-05) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q370 — no SI value to build from</sub> | [Hirt_2006_2_reference](drugs/drug_nelfinavir/Nelfinavir_Hirt2006v2_reference.md) | — | parent + metabolite (no model) | 5 | Hirt D et al., Age-related effects on nelfinavir and M…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.50.3.910-916.2006](https://doi.org/10.1128/AAC.50.3.910-916.2006) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Crommentuyn_2006_reference](drugs/drug_nelfinavir/Nelfinavir_Crommentuyn2006_reference.md) | — | 1-compartment (no model) | 2 | Crommentuyn KM et al., Population pharmacokinetics and pharmac…, The Pediatric infectious di… (2006) | [10.1097/01.inf.0000215242.70300.95](https://doi.org/10.1097/01.inf.0000215242.70300.95) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hirt_2006_reference](drugs/drug_nelfinavir/Nelfinavir_Hirt2006_reference.md) | — | parent + metabolite (no model) | 8 | Hirt D et al., Pregnancy-related effects on nelfinavir…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.01596-05](https://doi.org/10.1128/AAC.01596-05) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Jackson_2000_reference](drugs/drug_nelfinavir/Nelfinavir_Jackson2000_reference.md) | — | 1-compartment (no model) | 0 | Jackson KA et al., A population pharmacokinetic analysis o…, Antimicrobial agents and ch… (2000) | [10.1128/AAC.44.7.1832-1837.2000](https://doi.org/10.1128/AAC.44.7.1832-1837.2000) |
 
 ## Pharmacodynamics (PD)
 
@@ -48,6 +41,7 @@ Nelfinavir is a protease inhibitor used to treat HIV infections. It is taken by 
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gidari_2022_PFU_mL_3](drugs/drug_nelfinavir/pd_Gidari_2022_PFU_mL_3.md) | Viral titer (plaque-forming units) of SARS-CoV-2 strain P.1 ← nelfinavir · direct sigmoid Emax (Hill) effect | — | Gidari A et al., Nelfinavir: An Old Ally in the COVID-19…, Microorganisms (2022) | [10.3390/microorganisms10122471](https://doi.org/10.3390/microorganisms10122471) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gidari_2022_PFU_mL_4](drugs/drug_nelfinavir/pd_Gidari_2022_PFU_mL_4.md) | Viral titer (plaque-forming units) of SARS-CoV-2 strain B.1.617.2 ← nelfinavir · direct sigmoid Emax (Hill) effect | — | Gidari A et al., Nelfinavir: An Old Ally in the COVID-19…, Microorganisms (2022) | [10.3390/microorganisms10122471](https://doi.org/10.3390/microorganisms10122471) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Xie_2020_Nluc_signal](drugs/drug_nelfinavir/pd_Xie_2020_Nluc_signal.md) | SARS-CoV-2-Nluc luciferase signal (relative, normalized to DMSO control) in A549-hACE2 cells ← nelfinavir · direct sigmoid Emax (Hill) effect | — | Xie X et al., A nanoluciferase SARS-CoV-2 for rapid n…, Nature communications (2020) | [10.1038/s41467-020-19055-7](https://doi.org/10.1038/s41467-020-19055-7) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Pellegrin_2002_failure](drugs/drug_nelfinavir/pd_Pellegrin_2002_failure.md) | Virologic failure ← Nelfinavir · categorical (graded) response model | — | Pellegrin I et al., Virologic response to nelfinavir-based…, AIDS (London, England) (2002) | [10.1097/00002030-200207050-00004](https://doi.org/10.1097/00002030-200207050-00004) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,47 +55,47 @@ Nelfinavir is a protease inhibitor used to treat HIV infections. It is taken by 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:28 | 8:41 | 2/2/0 | 5/0/0 | 0/0/0 | 414,290/28,496 | ollama / glm-5.3-flash | 8 | 1/7 | 8/0 | 0 |
+| 2026-11-24 01:28 | 0:05 | 1/3/0 | 6/0/0 | 0/0/0 | 4,110/146 | einfracz / qwen3.8-27b | 8 | 1/7 | 8/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 52 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Crommentuyn_2006.pdf` | Crommentuyn KM et al., Population pharmacokinetics and pharmac…, The Pediatric infectious di… (2006) | popPK | 10 | [10.1097/01.inf.0000215242.70300.95](https://doi.org/10.1097/01.inf.0000215242.70300.95) | [16732153](https://pubmed.ncbi.nlm.nih.gov/16732153) | Population PK model of nelfinavir and M8 in children with numeric CL/F and V/F values reported directly in the abstract. |
-| `Hirt_2006_2.pdf` | Hirt D et al., Age-related effects on nelfinavir and M…, Antimicrobial agents and ch… (2006) | popPK | 10 | [10.1128/AAC.50.3.910-916.2006](https://doi.org/10.1128/AAC.50.3.910-916.2006) | [16495250](https://pubmed.ncbi.nlm.nih.gov/16495250) | Population PK model for nelfinavir with numeric CL, V, ka, and M8 parameters reported directly in the abstract. |
-| `Jackson_2000.pdf` | Jackson KA et al., A population pharmacokinetic analysis o…, Antimicrobial agents and ch… (2000) | popPK | 10 | [10.1128/AAC.44.7.1832-1837.2000](https://doi.org/10.1128/AAC.44.7.1832-1837.2000) | [10858338](https://pubmed.ncbi.nlm.nih.gov/10858338) | Population PK (NONMEM) of nelfinavir in HIV patients with numeric CL/F values (41.9–45.1 L/h) reported directly in the abstract. |
-| `Methaneethorn_2014.pdf` | Methaneethorn J et al., Pharmacokinetic modeling of simvastatin…, Annual International Confer… (2014) | popPK | 8 | [10.1109/EMBC.2014.6944925](https://doi.org/10.1109/EMBC.2014.6944925) | [25571293](https://pubmed.ncbi.nlm.nih.gov/25571293) | Population/compartmental PK model of nelfinavir (parent-metabolite) in humans is described, but no numeric parameter values appear in the evidence. |
-| `Pellegrin_2002.pdf` | Pellegrin I et al., Virologic response to nelfinavir-based…, AIDS (London, England) (2002) | popPK | 6 | [10.1097/00002030-200207050-00004](https://doi.org/10.1097/00002030-200207050-00004) | [12131209](https://pubmed.ncbi.nlm.nih.gov/12131209) | Population PK analysis of nelfinavir (Cmin, Cmax, AUC) in HIV patients is described, but no numeric parameter values (only a Cmin threshold of 1 mg/l) appear in the evidence. |
-
-<sub>queue written 2026-10-07 17:20 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Arshad_2020 | irrelevant | 2 | 1 | This is a drug-repurposing prioritization analysis using published Cmax values and predicted lung partitioning for many drugs including nelfinavir; it reports no original PK disposition parameters (CL, V, ka, half-life with volume, or population-PK model) for nelfinavir, and numeric values largely live in supplementary tables/figures not provided. |
+| popPK | Arshad_2020 | irrelevant | 0 | 0 | This is a review paper analyzing drug repurposing for SARS-CoV-2 based on existing literature data; it does not report original quantitative population PK parameters (CL, V, ka) for nelfinavir, nor does it provide the specific numeric values in the text (referring instead to external sources or supplementary data not included). |
+| PGx | Arshad_2020 | not_relevant | 0 | 0 | The paper analyzes population pharmacokinetics and pharmacodynamic efficacy for drug repurposing but does not report any pharmacogenomic effects (gene variants) on PK/PD parameters. |
 | popPK | Burk_2021 | irrelevant | 1 | 1 | In-vitro mechanistic study of nelfinavir's PXR interaction; no PK disposition parameters (CL, V, half-life, population-PK model) reported. |
-| popPK | Chan_2013 | irrelevant | 0 | 0 | In-vitro antiviral screening study; nelfinavir is only a tested compound with no PK parameters reported. |
-| popPK | Cvetkovic_2003 | irrelevant | 0 | 0 | This is a review of lopinavir/ritonavir; nelfinavir appears only as a comparator with no PK parameters for nelfinavir reported. |
-| popPK | Ford_2004 | irrelevant | 3 | 4 | Non-compartmental AUC/Cmin exposure data for nelfinavir and M8 are present, but no clearance, volume, half-life, or population-PK model parameters are reported. |
+| popPK | Chan_2013 | irrelevant | 0 | 0 | The paper is an in-vitro virology study assessing antiviral activity of nelfinavir against MERS-CoV and does not report any pharmacokinetic parameters for nelfinavir. |
+| PGx | Chan_2013 | not_relevant | 0 | 0 | The paper reports the in vitro antiviral efficacy of nelfinavir (and other drugs) against MERS-CoV, but it does not contain any data on pharmacogenomics (genetic variants) affecting nelfinavir's PK or PD. |
+| PGx | Crommentuyn_2006 | not_relevant | 0 | 0 | The study identifies no covariates (including genetic factors) affecting the pharmacokinetics of nelfinavir or its metabolite M8, and reports no pharmacogenomic effects. |
+| popPK | Cvetkovic_2003 | irrelevant | 0 | 0 | The paper is a review of lopinavir/ritonavir where nelfinavir is only mentioned as a comparator drug, and no quantitative PK parameters for nelfinavir are reported. |
+| PGx | Cvetkovic_2003 | not_relevant | 0 | 0 | The paper is a review of lopinavir/ritonavir and mentions nelfinavir only for comparative efficacy; it does not report pharmacogenomic effects on nelfinavir. |
+| popPK | Ford_2004 | irrelevant | 2 | 0 | The study reports non-compartmental AUC values for intracellular/plasma distribution but does not provide compartmental parameters (CL, V, Q) or half-life, which are required for relevance scoring. |
+| PGx | Ford_2004 | not_relevant | 2 | 5 | The paper investigates the association between P-glycoprotein expression (a protein phenotype, not a genetic variant) and drug accumulation, and finds no significant relationship, thus not reporting a pharmacogenomic effect. |
 | popPK | Francis_2021 | irrelevant | 0 | 0 | Nelfinavir is only a co-administered comparator affecting medroxyprogesterone acetate PK; no nelfinavir disposition parameters are reported. |
-| popPK | Gaucher_2004 | irrelevant | 1 | 2 | In vitro prodrug chemistry study; only chemical hydrolysis half-lives, no PK disposition parameters for nelfinavir. |
+| popPK | Gaucher_2004 | irrelevant | 0 | 0 | The study focuses on the synthesis, in vitro stability, and antiviral activity of prodrugs, reporting no in vivo pharmacokinetic parameters (CL, V, etc.) for nelfinavir. |
+| PGx | Gaucher_2004 | not_relevant | 0 | 0 | The paper describes the synthesis and in vitro stability of prodrugs; it does not report on gene variants affecting nelfinavir's PK or PD. |
 | popPK | Gidari_2022 | irrelevant | 1 | 2 | In-vitro antiviral potency study (EC50/EC90 in Vero E6 cells) with only literature-derived Cmax ratios; no PK disposition parameters (CL, V, half-life, PK model) for nelfinavir are reported. |
 | popPK | Hattori_2020 | irrelevant | 0 | 0 | In-vitro antiviral study of SARS-CoV-2 Mpro inhibitors; nelfinavir is only a comparator with EC50/cytotoxicity data, no PK parameters. |
-| popPK | Methaneethorn_2014 | relevant | 8 | 3 | Population/compartmental PK model of nelfinavir (parent-metabolite) in humans is described, but no numeric parameter values appear in the evidence. |
-| popPK | Millán_2005 | irrelevant | 1 | 1 | Nelfinavir is only a co-administered HAART component; the PK parameters reported are for mycophenolic acid, not nelfinavir. |
-| popPK | Panhard_2007 | irrelevant | 0 | 0 | Nelfinavir appears only as a co-administered drug/covariate; the PK parameters reported are for lamivudine, stavudine and zidovudine, not nelfinavir. |
-| popPK | Pellegrin_2002 | relevant | 6 | 3 | Population PK analysis of nelfinavir (Cmin, Cmax, AUC) in HIV patients is described, but no numeric parameter values (only a Cmin threshold of 1 mg/l) appear in the evidence. |
-| popPK | Pfister_2002 | irrelevant | 2 | 3 | Nelfinavir is only a co-administered interacting drug; the PK model and parameters (amprenavir clearance) are for amprenavir, not nelfinavir itself. |
+| PGx | Hirt_2006 | not_relevant | 0 | 0 | The study investigates physiological effects of pregnancy and delivery on nelfinavir pharmacokinetics but does not report any pharmacogenomic data (gene variants or genotypes). |
+| PGx | Hirt_2006_2 | not_relevant | 0 | 0 | The study focuses on age-related pharmacokinetic changes in children; there is no mention of pharmacogenomic effects on nelfinavir. |
+| PGx | Jackson_2000 | not_relevant | 0 | 0 | The study reports a pharmacokinetic analysis of nelfinavir but does not investigate any gene variants or genotypes, focusing instead on clinical covariates like fluconazole use. |
+| popPK | Methaneethorn_2014 | irrelevant | 8 | 0 | The study reports a nelfinavir pharmacokinetic model but no quantitative parameter values (CL, V, ka, etc.) are present in the provided evidence. |
+| PGx | Methaneethorn_2014 | not_relevant | 0 | 0 | The paper models a drug-drug interaction between simvastatin and nelfinavir, not a pharmacogenomic effect of a gene variant on nelfinavir. |
+| popPK | Millán_2005 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of mycophenolate mofetil (MPA), with nelfinavir serving only as a concomitant HAART agent, and no nelfinavir PK parameters are reported. |
+| PGx | Millán_2005 | not_relevant | 0 | 0 | The study reports the pharmacokinetics and pharmacodynamics of mycophenolate mofetil in patients treated with nelfinavir, but it does not report any pharmacogenomic effects (gene variants) on the PK/PD of nelfinavir. |
+| popPK | Panhard_2007 | irrelevant | 0 | 0 | The study reports population PK parameters for lamivudine, stavudine, and zidovudine; nelfinavir is only mentioned as a co-administered protease inhibitor, with no quantitative PK parameters provided for nelfinavir itself. |
+| PGx | Panhard_2007 | not_relevant | 0 | 0 | The study does not report any pharmacogenomic effects (gene variants) on the pharmacokinetic parameters of nelfinavir. |
+| popPK | Pellegrin_2002 | relevant | 9 | 2 | The paper describes a population pharmacokinetic analysis of nelfinavir, but the specific quantitative model parameters (CL, V, etc.) are not provided in the evidence, only PK descriptors like Cmin. |
+| PGx | Pellegrin_2002 | not_relevant | 0 | 0 | The study analyzes the impact of HIV drug resistance mutations and PK parameters on virologic outcomes; it does not report any human gene variants (pharmacogenomics) affecting nelfinavir PK or PD parameters. |
+| popPK | Pfister_2002 | irrelevant | 0 | 0 | The study reports population PK parameters for amprenavir (the subject drug), while nelfinavir is only a co-administered interacting agent. |
+| PGx | Pfister_2002 | not_relevant | 0 | 0 | The paper reports pharmacokinetic interactions between drugs, not the effect of a gene variant on PK parameters. |
 | popPK | Xie_2020 | irrelevant | 0 | 0 | In vitro antiviral screening study (SARS-CoV-2-Nluc); nelfinavir is only a screened inhibitor with EC50 values, no PK disposition parameters. |
 | popPK | Xu_2023 | irrelevant | 3 | 2 | This is an efficacy/clinical study of nelfinavir for COVID-19; only sparse concentration data (Cmax, C5h, trough) appear, with detailed PK values in supplementary tables not provided, and no CL/V/compartmental parameters. |
 
@@ -110,4 +104,4 @@ _5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnelfinavir%5D&body=Drug%3A%20nelfinavir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nelfinavir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 17:20 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 01:26 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N04B&quot;,&quot;href&quot;:&quot;atc/N04B.md&quot;},{&quot;label&quot;:&quot;levodopa&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/&quot;},{&quot;label&quot;:&quot;Westin_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levodopa_Senek2018_reference&quot;,&quot;label&quot;:&quot;Senek_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/Levodopa_Senek2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Suksai_2026_TRS&quot;,&quot;label&quot;:&quot;Suksai_2026 \u00b7 TRS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/pd_Suksai_2026_TRS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Westin_2011_motor_rating&quot;,&quot;label&quot;:&quot;Westin_2011 \u00b7 motor rating&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/pd_Westin_2011_motor_rating.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levodopa_Senek2018_reference&quot;,&quot;label&quot;:&quot;Senek_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/Levodopa_Senek2018_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Suksai_2026_TRS&quot;,&quot;label&quot;:&quot;Suksai_2026 \u00b7 TRS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_levodopa/pd_Suksai_2026_TRS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # levodopa — `Levodopa_Westin2011_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This paper's disposition core is incomplete.
+> No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="levodopa" model-id="Levodopa_Westin2011_reference" status="needs_review" stale="false" population="adults with advanced Parkinson disease" measured-compound="levodopa" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="levodopa" model-id="Levodopa_Westin2011_reference" status="rejected" stale="false" population="advanced Parkinson disease patients" measured-compound="levodopa" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Westin J, Nyholm D, Pålhagen S, Willows T, Groth T, Dougherty M et al. A pharmacokinetic-pharmacodynamic model for duodenal levodopa infusion. Clinical neuropharmacology 34(2):61–65 (2011).
@@ -17,31 +17,29 @@ Westin J, Nyholm D, Pålhagen S, Willows T, Groth T, Dougherty M et al. A pharma
 
 ## Population and dosing
 
-**Population:** adults with advanced Parkinson disease · condition advanced Parkinson disease · age group adult · n = 20.
+**Population:** advanced Parkinson disease patients · condition Parkinson disease · age group adult · n = 20.
 
-**Dosed compound ≠ measured compound:** dosed levodopa/carbidopa gel (Duodopa), measured levodopa.
+**Dosed compound ≠ measured compound:** dosed levodopa/carbidopa, measured levodopa.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | mean absorption time | MAT | 28.5 | minutes |
 | lag time | tlag | 2.9 | minutes |
-| bioavailability | Fab | 88 | % |
-| Vb | V | 10.0 | L |
-| ka | kabs | 1.2 | h−1 |
+| bioavailability | Fab | 88 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.636). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +49,11 @@ Westin J, Nyholm D, Pålhagen S, Willows T, Groth T, Dougherty M et al. A pharma
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**No volume or clearance — not a compartmental population PK model.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Suksai_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — levodopa: MAT 28.5 minutes, tlag 2.9 minutes, Fab 88 %, V 10 L, kabs 1.2 h−1.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levodopa/carbidopa gel (Duodopa), the second reading levodopa/carbidopa gel; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levodopa/carbidopa, the second reading levodopa; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -65,9 +63,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 |---|---|---|---|---|---|---|---|---|
 | mean absorption time | `Q73` · MAT | 28.5 | minutes | 1710 | s | min | exact (1) | Westin_2011:abstract |
 | lag time | `Q83` · tlag | 2.9 | minutes | 174 | s | min | exact (1) | Westin_2011:abstract |
-| bioavailability | `Q40` · Fab | 88 | % |  |  |  | exact (1) | Westin_2011:abstract |
-| Vb | `Q61` · V | 10.0 | L | 0.01 | m3 | L | review_gapfill (0.7) | Suksai_2026:review |
-| ka | `Q49` · kabs | 1.2 | h−1 | 0.0003333 | 1/s | 1/h | review_gapfill (0.7) | Suksai_2026:review |
+| bioavailability | `Q40` · Fab | 88 |  |  |  |  | exact (1) | Westin_2011:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,18 +73,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped PD-category row 'half-life of effect delay' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Westin_2011:abstract'])
+- dropped unlinked row (NIL): 'half-life of effect delay' — extend the ontology if this is a real PK parameter (source ['Westin_2011:abstract'])
 - dropped PD-category row 'concentration at 50% effect' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Westin_2011:abstract'])
 - dropped PD-category row 'Emax' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Westin_2011:abstract'])
 - dropped PD-category row 'sigmoidicity of the Emax function' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Westin_2011:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=levodopa
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Suksai_2026's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Suksai_2026's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Westin_2011_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
@@ -96,20 +86,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.636 (7/11 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[half-life of effect delay]` |  | 21 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 1.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vb]` | 10.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | levodopa/carbidopa gel (Duodopa) | levodopa/carbidopa gel | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | levodopa/carbidopa | levodopa | mismatch |
 
 </details>
 
@@ -124,13 +112,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Suksai_2026:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Suksai_2026:review'] |
+| C0b_disposition_core | fail |  |  |  |
 | C5_dimension_Q73 | pass | [time] |  | ['Westin_2011:abstract'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Westin_2011:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 10 L | ['Suksai_2026:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -142,19 +127,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -164,4 +139,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blevodopa%5D%20Levodopa_Westin2011_reference&body=Drug%3A%20levodopa%0ARecord%3A%20Levodopa_Westin2011_reference%0APaper%3A%20Westin_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_levodopa/Levodopa_Westin2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 13:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:55 UTC</sub>

@@ -16,13 +16,15 @@ Distigmine is an anticholinesterase used to treat myasthenia gravis and neurogen
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="pig" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Obara_2017_reference](drugs/drug_distigmine/Distigmine_Obara2017_reference.md) | — | 1-compartment (no model) | 0 | Obara K et al., Distigmine Bromide Produces Sustained P…, Biological & pharmaceutical… (2017) | [10.1248/bpb.b16-00901](https://doi.org/10.1248/bpb.b16-00901) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Ito_2010_AChE](drugs/drug_distigmine/pd_Ito_2010_AChE.md) | acetylcholinesterase (AChE) activity in whole blood ← distigmine · delayed effect through an effect compartment | — | Ito Y et al., Pharmacokinetic and pharmacodynamic ana…, Drug metabolism and pharmac… (2010) | [10.2133/dmpk.25.254](https://doi.org/10.2133/dmpk.25.254) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Ito_2010_AChE](drugs/drug_distigmine/pd_Ito_2010_AChE.md) | AChE activity in whole blood ← distigmine · direct sigmoid Emax (Hill) effect | — | Ito Y et al., Pharmacokinetic and pharmacodynamic ana…, Drug metabolism and pharmac… (2010) | [10.2133/dmpk.25.254](https://doi.org/10.2133/dmpk.25.254) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,13 +38,13 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 01:47 | 0:18 | 0/0/0 | 0/1/0 | 0/0/0 | 12,344/605 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-23 20:21 | 2:25 | 0/1/0 | 1/0/0 | 0/0/0 | 5,640/1,215 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
@@ -51,19 +53,21 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ito_2010.pdf` | Ito Y et al., Pharmacokinetic and pharmacodynamic ana…, Drug metabolism and pharmac… (2010) | popPK | 7 | [10.2133/dmpk.25.254](https://doi.org/10.2133/dmpk.25.254) | [20610884](https://pubmed.ncbi.nlm.nih.gov/20610884) | PK/PD modeling of distigmine in rats, but no numeric parameter values (CL, V, ka, ke0) appear in the abstract; values likely in figures/tables not provided. |
+| `Ito_2010.pdf` | Ito Y et al., Pharmacokinetic and pharmacodynamic ana…, Drug metabolism and pharmac… (2010) | popPK | 9 | [10.2133/dmpk.25.254](https://doi.org/10.2133/dmpk.25.254) | [20610884](https://pubmed.ncbi.nlm.nih.gov/20610884) | The paper describes a PK/PD study on distigmine in rats, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract or text. |
 
-<sub>queue written 2026-10-07 01:47 UTC</sub>
+<sub>queue written 2026-11-23 20:21 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ito_2010 | relevant | 7 | 2 | PK/PD modeling of distigmine in rats, but no numeric parameter values (CL, V, ka, ke0) appear in the abstract; values likely in figures/tables not provided. |
+| popPK | Ito_2010 | relevant | 9 | 0 | The paper describes a PK/PD study on distigmine in rats, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract or text. |
+| PGx | Ito_2010 | not_relevant | 0 | 0 | The paper describes PK/PD analysis in rats but does not report any gene variants or genotypes affecting these parameters. |
+| PGx | Obara_2017 | not_relevant | 0 | 0 | The paper reports standard PK/PD data in guinea-pigs but contains no information on the effect of any gene variant, genotype, or phenotype. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdistigmine%5D&body=Drug%3A%20distigmine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_distigmine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 12:33 UTC</sub>

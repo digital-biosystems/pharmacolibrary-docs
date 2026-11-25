@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Vegas_2025_HIV_RNA](drugs/drug_lenacapavir/pd_Vegas_2025_HIV_RNA.md) | HIV-RNA biomarker turnover ← lenacapavir | — | Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS journal (2025) | [10.1208/s12248-025-01136-4](https://doi.org/10.1208/s12248-025-01136-4) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Vegas_2025_HIV_RNA](drugs/drug_lenacapavir/pd_Vegas_2025_HIV_RNA.md) | HIV-RNA biomarker turnover ← lenacapavir | — | Vegas Rodriguez A et al., Integrated Population Pharmacokinetic-p…, The AAPS journal (2025) | [10.1208/s12248-025-01136-4](https://doi.org/10.1208/s12248-025-01136-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

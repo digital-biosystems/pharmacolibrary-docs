@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;halofantrine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Halofantrine_Klein2012_reference&quot;,&quot;label&quot;:&quot;Klein_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_halofantrine/Halofantrine_Klein2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # halofantrine
 
@@ -23,17 +22,11 @@ Halofantrine is an antimalarial medication indicated for the treatment of malari
 |---|---|---|---|---|---|---|
 | halofantrine | parent | 500.424 | C26H30Cl2F3NO | DrugBank | [37393](https://pubchem.ncbi.nlm.nih.gov/compound/37393) | Klein_2012 |
 
-## Start here
-
-> **Klein_2012_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy volunteers and patients with symptomatic falciparum malaria, n = 194. [Run it in the simulator](drugs/drug_halofantrine/Halofantrine_Klein2012_reference.md?tab=Simulation) · [record](drugs/drug_halofantrine/Halofantrine_Klein2012_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Klein_2012_reference](drugs/drug_halofantrine/Halofantrine_Klein2012_reference.md) | ▶ model + simulator | 2-compartment, oral | 4 | Klein K et al., Population pharmacokinetics of halofant…, The Journal of pharmacy and… (2012) | [10.1111/j.2042-7158.2012.01554.x](https://doi.org/10.1111/j.2042-7158.2012.01554.x) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Klein_2012_reference](drugs/drug_halofantrine/Halofantrine_Klein2012_reference.md) | — | 2-compartment (no model) | 4 | Klein K et al., Population pharmacokinetics of halofant…, The Journal of pharmacy and… (2012) | [10.1111/j.2042-7158.2012.01554.x](https://doi.org/10.1111/j.2042-7158.2012.01554.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Krishna_1993_reference](drugs/drug_halofantrine/Halofantrine_Krishna1993_reference.md) | — | 1-compartment (no model) | 0 | Krishna S et al., Pharmacokinetics, efficacy and toxicity…, British journal of clinical… (1993) | [10.1111/j.1365-2125.1993.tb00419.x](https://doi.org/10.1111/j.1365-2125.1993.tb00419.x) |
 
 ## Pharmacodynamics (PD)
@@ -54,35 +47,28 @@ Halofantrine is an antimalarial medication indicated for the treatment of malari
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 07:01 | 1:19 | 1/1/0 | 1/0/0 | 0/0/0 | 52,920/3,984 | ollama / glm-5.3-flash | 2 | 1/1 | 2/0 | 0 |
+| 2026-11-23 22:11 | 0:04 | 0/2/0 | 1/0/0 | 0/0/0 | 4,096/171 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Klein_2012.pdf` | Klein K et al., Population pharmacokinetics of halofant…, The Journal of pharmacy and… (2012) | popPK | 10 | [10.1111/j.2042-7158.2012.01554.x](https://doi.org/10.1111/j.2042-7158.2012.01554.x) | [23058047](https://pubmed.ncbi.nlm.nih.gov/23058047) | Population PK (two-compartment, NONMEM) of halofantrine with full numeric CL, V1, CLD, V2 estimates reported directly in the abstract. |
-
-<sub>queue written 2026-10-07 07:00 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Kinoshita_2010 | irrelevant | 0 | 0 | In-vitro isolated guinea pig heart pharmacodynamics (QT prolongation EC50) study, not a PK study reporting halofantrine disposition parameters. |
-| popPK | Philipps_1998 | irrelevant | 0 | 0 | In vitro parasite susceptibility study reporting EC50 values, not pharmacokinetic disposition parameters for halofantrine. |
+| PGx | Klein_2012 | not_relevant | 0 | 0 | The paper investigates non-genetic covariates (weight, sex, malaria status) on halofantrine PK and contains no genetic data or pharmacogenomic analysis. |
+| PGx | Krishna_1993 | not_relevant | 0 | 0 | The study evaluates the pharmacokinetics of halofantrine in malaria patients but does not assess any genetic variants or genotypes. |
+| popPK | Philipps_1998 | irrelevant | 0 | 0 | This is an in-vitro parasite susceptibility study reporting EC50 values for Plasmodium falciparum, not a pharmacokinetic study of the drug. |
+| PGx | Philipps_1998 | not_relevant | 0 | 0 | The paper describes in vitro drug susceptibility of Plasmodium falciparum, not the effect of human genetic variants on pharmacokinetic or pharmacodynamic parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhalofantrine%5D&body=Drug%3A%20halofantrine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_halofantrine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 07:00 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 22:11 UTC</sub>

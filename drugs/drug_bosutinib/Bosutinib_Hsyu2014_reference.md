@@ -17,13 +17,13 @@ Hsyu PH, Mould DR, Abbas R, Amantea M. Population pharmacokinetic and pharmacody
 
 ## Population and dosing
 
-**Population:** patients with solid tumors or Philadelphia chromosome-positive leukemia · condition solid tumors or Philadelphia chromosome-positive leukemia · age group mixed · n = 870.
+**Population:** patients with solid tumors or Philadelphia chromosome-positive leukemia · condition solid tumors or Philadelphia chromosome-positive leukemia · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -31,14 +31,12 @@ Hsyu PH, Mould DR, Abbas R, Amantea M. Population pharmacokinetic and pharmacody
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| half-time | t1/2z | 1.14 | h |
 | lag-time | tlag | 0.87 | h |
 | Apparent clearance | CL/F | 120 | L/h |
-| First‐order absorption rate constant (ka) | kabs | 0.358 | per hour |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857), qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +48,7 @@ Hsyu PH, Mould DR, Abbas R, Amantea M. Population pharmacokinetic and pharmacody
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bosutinib: t1/2z 1.14 h, tlag 0.87 h, CL/F 120 L/h, kabs 0.358 per hour.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bosutinib: tlag 0.87 h, CL/F 120 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -60,10 +58,8 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| half-time | `Q57` · t1/2z | 1.14 | h | 4104 | s | h | llm (0.6) | Hsyu_2014:abstract |
 | lag-time | `Q83` · tlag | 0.87 | h | 3132 | s | h | llm (0.6) | Hsyu_2014:abstract |
 | Apparent clearance | `Q27` · CL/F | 120 | L/h | 3.333e-05 | m3/s | l/h | exact (1) | Hsyu_2014:abstract |
-| First‐order absorption rate constant (ka) | `Q49` · kabs | 0.358 | per hour | 9.944e-05 | 1/s | 1/h | review_gapfill (0.7) | Garrett_2023:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,29 +69,32 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped value-less row: 'aged'
+- dropped value-less row: 'weighing'
+- dropped value-less row: 'bosutinib'
+- dropped unlinked row (NIL): 'half-time' — extend the ontology if this is a real PK parameter (source ['Hsyu_2014:abstract'])
 - dropped value-less row: 'time to peak concentration'
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=bosutinib
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Garrett_2023's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Hsyu_2014_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Hsyu_2014_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 | `qwen3.8-27b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[half-time]` |  | 1.14 | only_one_extracted |
 | `qwen3.8-27b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `qwen3.8-27b` | `parameters[apparent clearance]` | 120 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[first‐order absorption rate constant]` | 0.358 |  | only_one_extracted |
@@ -114,12 +113,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Hsyu_2014:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Garrett_2023:review'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Hsyu_2014:abstract'] |
 | C5_dimension_Q83 | pass | [time] |  | ['Hsyu_2014:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -157,4 +154,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbosutinib%5D%20Bosutinib_Hsyu2014_reference&body=Drug%3A%20bosutinib%0ARecord%3A%20Bosutinib_Hsyu2014_reference%0APaper%3A%20Hsyu_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bosutinib/Bosutinib_Hsyu2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 21:44 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:52 UTC</sub>

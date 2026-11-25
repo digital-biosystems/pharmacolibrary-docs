@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Diltiazem’s apparent oral clearance of 92.4 L/h remains under review because the abstract-only record’s parameter extraction was disputed by the second reader.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="diltiazem" model-id="Diltiazem_Guan2018_reference" status="needs_review" stale="false" population="Chinese renal transplant recipients" measured-compound="diltiazem" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Guan XF, Li DY, Yin WJ, Ding JJ, Zhou LY, Wang JL et al. Population Pharmacokine
 
 ### Reviewer guidance
 
-**Diltiazem’s apparent oral clearance of 92.4 L/h remains under review because the abstract-only record’s parameter extraction was disputed by the second reader.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disputed the dose compound and primary analyte (both recorded as diltiazem but returned as unknown) and did not agree with the listed apparent oral clearance (92.4 L/h), absorption rate constant (1.96 /h), or V/F (3550 L); agreement was 0.2, with 0 of 1 reader agreeing. Because only the abstract was read, its summary statistics stood in for a fitted model. Tlag was defaulted rather than explicitly estimated, and the apparent parameterization assumed F=1 and Fm=1, with no molar correction. Extracted — diltiazem: kabs 1.96 /h, V/F 3.55e+03 L, CL/F 92.4 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — diltiazem: kabs 1.96 /h, V/F 3.55e+03 L, CL/F 92.4 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diltiazem, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,7 +142,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

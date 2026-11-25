@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> The model's absorption parameters are missing and defaults were used, causing the simulated cannabidiol peak to be four times higher than the reported value.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 3.9e-07, model 1.57e-06); ka use library defaults, not estimates from this paper (+1 more).
 
 <div class="pk-model-meta" hidden drug="cannabidiol" model-id="Cannabidiol_Eichler2023_population_value" status="needs_review" stale="false" population="horses" measured-compound="cannabidiol" parameterization="apparent" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Eichler F, Poźniak B, Machnik M, Schenk I, Wingender A, Baudisch N et al. Pharm
 
 ### Reviewer guidance
 
-**The model's absorption parameters are missing and defaults were used, causing the simulated cannabidiol peak to be four times higher than the reported value.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 3.9e-07, model 1.57e-06); ka use library defaults, not estimates from this paper (+1 more).**
 
-Absorption rate constants and lag times were not extracted from the paper, so the model relied on library defaults for absorption. This deviation resulted in a simulated peak concentration of 1.57e-06 kg/m³, which is approximately four times the paper's reported value of 3.9e-07. The record was held because these unsupported defaults significantly altered the predicted pharmacokinetic profile. Extracted — cannabidiol: CL/F 10.8 L/h/kg, V1/F 77.1 L/kg, Q 1.35 L/h/kg, V2/F 313 L/kg, Q3 38.2 L/h/kg, V3/F 242 L/kg.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — cannabidiol: CL/F 10.8 L/h/kg, V1/F 77.1 L/kg, Q 1.35 L/h/kg, V2/F 313 L/kg, Q3 38.2 L/h/kg, V3/F 242 L/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,9 +147,9 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 3.9e-07 | 1.573e-06 | 4.033 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 7e-07 | 1.573e-06 | 2.247 | ng/mL→SI vs simulated kg/m3 |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (10 of 10 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 3.9e-07 | 1.573e-06 | 4.033 | reported 0.39 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 7e-07 | 1.573e-06 | 2.247 | reported 0.7 ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 0.72 | 1.573e-06 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 0.8 | 1.573e-06 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 0.72 | 1.573e-06 |  | unresolved concentration unit (exp 'β', sim 'kg/m3') |
@@ -168,7 +168,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_modelica.zip" download>Cannabidiol_Eichler2023_population_value_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_modelica.zip" download>Cannabidiol_Eichler2023_population_value_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_fmi.zip" download>Cannabidiol_Eichler2023_population_value_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_matlab.zip" download>Cannabidiol_Eichler2023_population_value_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cannabidiol/Cannabidiol_Eichler2023_population_value/Cannabidiol_Eichler2023_population_value_matlab_simbio.zip" download>Cannabidiol_Eichler2023_population_value_matlab_simbio.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>

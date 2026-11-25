@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Omadacycline bioavailability and lag time lacked explicit values, and a second reader disputed the food covariate assignments.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Lakota2020_reference" status="needs_review" stale="false" population="mixed" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Lakota EA, Van Wart SA, Trang M, Tzanis E, Bhavnani SM, Safir MC et al. Populati
 
 ### Reviewer guidance
 
-**Omadacycline bioavailability and lag time lacked explicit values, and a second reader disputed the food covariate assignments.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).**
 
-Bioavailability and lag time were not extracted from the paper, so standard placeholder values were used for the simulation. The second reader disagreed on three points, including a missing intercompartmental clearance covariate and misassigned food effect values. The covariate scenarios defined in the record were not simulated, limiting the validation of these effects. Extracted — omadacycline: CL 10.3 liters/h, V1 21.1 liters, V2 79.9 liters, Q 21.3 liters/h, V3 129 liters, kabs 1.74 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — omadacycline: CL 10.3 liters/h, V1 21.1 liters, V2 79.9 liters, Q 21.3 liters/h, V3 129 liters, kabs 1.74 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of amtime50: this record has none, the second reading 0.568; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -184,7 +184,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.667 (16 of 24 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (16 of 24 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 9 | 0.0003156 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmin_ss | reference | skipped | 25 |  |  | no simulated metric for this quantity (single reference sim) |
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Meclofenamic acid’s 0.9 h terminal elimination half-life and 0.128 litre/kg distribution volume remain under review because the abstract-only record was disputed.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="meclofenamic acid" model-id="MeclofenamicAcid_Snow1981_reference" status="needs_review" stale="false" population="Thoroughbred horses and ponies" measured-compound="meclofenamic acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Snow DH, Baxter P, Whiting B. The pharmacokinetics of meclofenamic acid in the h
 
 ### Reviewer guidance
 
-**Meclofenamic acid’s 0.9 h terminal elimination half-life and 0.128 litre/kg distribution volume remain under review because the abstract-only record was disputed.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The cross-reader comparison was disputed, with agreement of 0.2 and 0 of 1 readers agreeing. The second reader marked the dose compound and primary analyte unknown and omitted the half-life and volume estimates in some entries, but also listed those same estimates and supplied intravenous and oral dose values of 2 and 4. Extracted — meclofenamic acid: t1/2z 0.9 h, V 0.128 litre/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — meclofenamic acid: t1/2z 0.9 h, V 0.128 litre/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium meclofenamate, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

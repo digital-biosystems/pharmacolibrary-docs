@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span>
 
-> Paracetamol model rejected because simulated tmax (0.644 h) missed the paper's 9.0 h, and the structure ignored the measured metabolite.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 9, model 0.644); the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Jiang2020_metabolite_modelb_value" status="rejected" stale="false" population="adults and children" measured-compound="acetaminophen protein adducts" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -61,13 +61,13 @@ Jiang S, Madrasi K, Samant T, Lagishetty C, Vozmediano V, Chiew A et al. Populat
 
 ### Reviewer guidance
 
-**Paracetamol model rejected because simulated tmax (0.644 h) missed the paper's 9.0 h, and the structure ignored the measured metabolite.**
+**The model does not reproduce the paper's time of the peak (tmax) (paper 9, model 0.644); the covariate scenarios were not simulated (+2 more).**
 
-The record defines a parent-metabolite structure but the simulation used a simple one-compartment absorption model. The time of the peak was 0.644 hours instead of the expected 9.0 hours. Additionally, the output variable was the parent central compartment rather than the measured protein adducts. Extracted — paracetamol: CLm/F 0.248 L/h, Vm/F 2.21 L; acetaminophen protein adducts: V/F 0.16 L/kg, kabs 9.76 h -1, tlag 4.2 min.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (theta_cl_f_category), so that value has no SI equivalent. Extracted — paracetamol: CLm/F 0.248 L/h, Vm/F 2.21 L; acetaminophen protein adducts: V/F 0.16 L/kg, kabs 9.76 h -1, tlag 4.2 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paracetamol, the second reading acetaminophen; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -169,7 +169,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
 | T1_cmax | reference | skipped | 0.1 | 0.1502 |  | unresolved concentration unit (exp 'nmol/mL', sim 'kg/m3') |
-| T1_tmax | reference | fail | 9 | 0.644 | 0.0716 | hours→SI vs simulated h |
+| T1_tmax | reference | fail | 9 | 0.644 | 0.0716 | reported 9.0 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was quarantined because clearance, volume of distribution, and intercompartmental clearance lacked values for flurbiprofen, while all extracted parameters describe S(+)-flurbiprofen.
+> No value for flurbiprofen's clearance, volume of distribution and central→peripheral rate constant — all 6 extracted parameters describe S(+)-flurbiprofen, not flurbiprofen; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Yao2025_reference" status="model_quarantined" stale="false" population="selective joint replacement patients with postoperative pain" measured-compound="S(+)-flurbiprofen, R(-)-flurbiprofen" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Yao H, Luo X, Yuan J, Zhang H, An H, Feng Y. Exploring the Population Pharmacoki
 
 ### Reviewer guidance
 
-**The record was quarantined because clearance, volume of distribution, and intercompartmental clearance lacked values for flurbiprofen, while all extracted parameters describe S(+)-flurbiprofen.**
+**No value for flurbiprofen's clearance, volume of distribution and central→peripheral rate constant — all 6 extracted parameters describe S(+)-flurbiprofen, not flurbiprofen; t6_deviations (+1 more).**
 
-All six extracted parameters, including S(+)-flurbiprofen clearance of 11.8 L·h−1 and central volume of 17.0 L, were assigned to the specific enantiomer rather than the drug entity. Consequently, the model builder defaulted the clearance, volume of distribution, and intercompartmental clearance for flurbiprofen to library placeholders instead of using explicit estimates. A second reader disputed the record, disagreeing with the clearance value (reading 16.7 instead of 11.8 L·h−1) and the allometric exponent (reading null instead of 1.37). Extracted — S(+)-flurbiprofen: V1 17 L, CL 11.8 L·h−1, V2 79.1 L, Q 0.45 L·h−1, FG -2.01, allometric_exponent 1.37.
+The model was built, but flurbiprofen's clearance, volume of distribution and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — S(+)-flurbiprofen: V1 17 L, CL 11.8 L·h−1, V2 79.1 L, Q 0.45 L·h−1, FG -2.01, allometric_exponent 1.37.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flurbiprofen, the second reading flurbiprofen (intravenous); it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -161,7 +161,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.143 | cross-check contradicted by a second reader: verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

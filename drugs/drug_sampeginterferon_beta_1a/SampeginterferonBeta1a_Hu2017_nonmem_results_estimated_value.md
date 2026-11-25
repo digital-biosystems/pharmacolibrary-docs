@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The allometric exponent for peginterferon beta-1a has time units, conflicting with its dimensionless nature, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q99 unit L ([length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2017_nonmem_results_estimated_value" status="rejected" stale="false" population="adults with relapsing multiple sclerosis" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Hu X, Hang Y, Cui Y, Zhang J, Liu S, Seddighzadeh A et al. Population-Based Phar
 
 ### Reviewer guidance
 
-**The allometric exponent for peginterferon beta-1a has time units, conflicting with its dimensionless nature, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q99 unit L ([length] ** 3) vs [length] ** 3 / [time].**
 
-The record lists the allometric exponent (θ8) with a value of 0.20 and units of h⁻¹, which is incorrect as allometric exponents are dimensionless. This unit conflict caused the parameter to fail dimensional consistency checks, leading to the record's rejection. Additionally, a reported unit for another parameter could not be converted to standard units, preventing value calculation. Extracted — peginterferon beta-1a: CL 3.2 L/h, Q2 484 L, allometric_exponent 0.2 h⁻¹.
+A reported unit could not be converted (Q2 and allometric_exponent), so that value has no SI equivalent. None of the extracted parameters is sampeginterferon beta 1a's own; they describe peginterferon beta-1a. Extracted — peginterferon beta-1a: CL 3.2 L/h, Q2 484 L, allometric_exponent 0.2 h⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has peginterferon beta-1a, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

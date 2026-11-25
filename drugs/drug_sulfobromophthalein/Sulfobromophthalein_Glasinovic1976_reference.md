@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;sulfobromophthalein&quot;,&quot;href&quot;:&quot;drugs/drug_sulfobromophthalein/&quot;},{&quot;label&quot;:&quot;Glasinovic_1976 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfobromophthalein_Das1990_tpn&quot;,&quot;label&quot;:&quot;Das_1990_tpn&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfobromophthalein/Sulfobromophthalein_Das1990_tpn.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -107,4 +108,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfobromophthalein%5D%20Sulfobromophthalein_Glasinovic1976_reference&body=Drug%3A%20sulfobromophthalein%0ARecord%3A%20Sulfobromophthalein_Glasinovic1976_reference%0APaper%3A%20Glasinovic_1976%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfobromophthalein/Sulfobromophthalein_Glasinovic1976_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 21:52 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:08 UTC</sub>

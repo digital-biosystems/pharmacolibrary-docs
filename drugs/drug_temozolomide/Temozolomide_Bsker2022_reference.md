@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time were left at defaults, lacking support from the Büsker temozolomide record.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="temozolomide" model-id="Temozolomide_Bsker2022_reference" status="needs_review" stale="false" population="children with malignant central nervous system tumors" measured-compound="temozolomide" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Büsker S, Jäger W, Poschner S, Mayr L, Al Jalali V, Gojo J et al. Pharmacokine
 
 ### Reviewer guidance
 
-**Bioavailability and lag time were left at defaults, lacking support from the Büsker temozolomide record.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record lacks explicit estimates for bioavailability (F) and lag time (Tlag), so library defaults were applied. A second reader disputed the verdict, identifying a missing volume value of 0.09. The agreement ratio of 0.875 reflects this discrepancy. Extracted — temozolomide: kabs 9.64 h−1, CL 3.29 liter/h, V 10.5 liter, Q 0.0327 liter/h, ktr 0.983 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — temozolomide: kabs 9.64 h−1, CL 3.29 liter/h, V 10.5 liter, Q 0.0327 liter/h, ktr 0.983 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[vcd].parameter_id`: this record has Q61, the second reading Q63; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -156,7 +156,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | cross-check disputed by a second reader: verdict disputed, agreement 0.875, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.875 (14 of 16 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.875 | cross-check contradicted by a second reader: verdict disputed; agreement 0.875 (14 of 16 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

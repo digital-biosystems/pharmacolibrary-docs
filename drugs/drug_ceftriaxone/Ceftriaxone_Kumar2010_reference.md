@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> Bioavailability and absorption delay used unreported placeholder values instead of estimates from the abstract-only ceftriaxone study.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="ceftriaxone" model-id="Ceftriaxone_Kumar2010_reference" status="needs_review" stale="false" population="healthy and endometritic cows" measured-compound="ceftriaxone" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Kumar S, Srivastava AK, Dumka VK, Kumar N, Raina RK. Plasma pharmacokinetics and
 
 ### Reviewer guidance
 
-**Bioavailability and absorption delay used unreported placeholder values instead of estimates from the abstract-only ceftriaxone study.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record relied on the paper's abstract alone, so summary statistics substituted for a fitted model. Bioavailability and absorption lag time were not extracted, resulting in generic defaults rather than study-specific estimates. A second reader disputed the record, finding zero agreement on the dose compound, analyte, and all listed pharmacokinetic parameters. Extracted — ceftriaxone: V 0.5 L.kg(-1), AUC 62.2 microg.ml(-1).h, t1/2β 1.02 h, CL 0.3 L.kg(-1).h(-1), MRT 1.55 h, kabs 1 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ceftriaxone: V 0.5 L.kg(-1), AUC 62.2 microg.ml(-1).h, t1/2β 1.02 h, CL 0.3 L.kg(-1).h(-1), MRT 1.55 h, kabs 1 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ceftriaxone, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -158,7 +158,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.125 (2 of 16 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.125 | cross-check contradicted by a second reader: verdict disputed; agreement 0.125 (2 of 16 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

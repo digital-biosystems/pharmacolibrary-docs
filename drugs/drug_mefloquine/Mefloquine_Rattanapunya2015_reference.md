@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption rate constant and lag time were not extracted, so unreported placeholder values were used for mefloquine.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Rattanapunya2015_reference" status="needs_review" stale="false" population="healthy Thai adults" measured-compound="mefloquine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Rattanapunya S, Cressey TR, Rueangweerayut R, Tawon Y, Kongjam P, Na-Bangchang K
 
 ### Reviewer guidance
 
-**Absorption rate constant and lag time were not extracted, so unreported placeholder values were used for mefloquine.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record lists clearance (1.0 L/h) and volume (5.7996 L) but lacks explicit estimates for absorption kinetics. Consequently, the absorption parameters relied on assumed default values rather than data from the source. A second reader also disputed the extracted values, resulting in an agreement ratio of 0.385 and a pending status. Extracted — mefloquine: CL/F 1 L/h, V/F 5.8 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — mefloquine: CL/F 1 L/h, V/F 5.8 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has 240, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.385, 0 of 1 reader(s) agree | 0.385 | cross-check disputed by a second reader: verdict disputed, agreement 0.385, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.385 (5 of 13 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.385 | cross-check contradicted by a second reader: verdict disputed; agreement 0.385 (5 of 13 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -151,7 +151,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mefloquine/Mefloquine_Rattanapunya2015_reference/Mefloquine_Rattanapunya2015_reference_modelica.zip" download>Mefloquine_Rattanapunya2015_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_mefloquine/Mefloquine_Rattanapunya2015_reference/Mefloquine_Rattanapunya2015_reference_modelica.zip" download>Mefloquine_Rattanapunya2015_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_mefloquine/Mefloquine_Rattanapunya2015_reference/Mefloquine_Rattanapunya2015_reference_fmi.zip" download>Mefloquine_Rattanapunya2015_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_mefloquine/Mefloquine_Rattanapunya2015_reference/Mefloquine_Rattanapunya2015_reference_matlab.zip" download>Mefloquine_Rattanapunya2015_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_mefloquine/Mefloquine_Rattanapunya2015_reference/Mefloquine_Rattanapunya2015_reference_matlab_simbio.zip" download>Mefloquine_Rattanapunya2015_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>

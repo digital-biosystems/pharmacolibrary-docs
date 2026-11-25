@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> Bretylium’s total clearance of 15 ml/min is labeled as creatinine clearance, misclassifying a drug-disposition parameter as a biomarker.
+> The model does not reproduce the paper's terminal half-life (paper 6, model 329); biomarker_kinetics_as_drug_pk (+3 more).
 
 <div class="pk-model-meta" hidden drug="bretylium tosilate" model-id="BretyliumTosilate_Rapeport1985_narang_et_al" status="rejected" stale="false" population="adults" measured-compound="bretylium" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Rapeport WG. Clinical pharmacokinetics of bretylium. Clinical pharmacokinetics 1
 
 ### Reviewer guidance
 
-**Bretylium’s total clearance of 15 ml/min is labeled as creatinine clearance, misclassifying a drug-disposition parameter as a biomarker.**
+**The model does not reproduce the paper's terminal half-life (paper 6, model 329); biomarker_kinetics_as_drug_pk (+3 more).**
 
-The model does not reproduce the paper's terminal half-life (paper 6, model 329). Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The model does not reproduce the paper's terminal half-life (paper 12, model 329). Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The bretylium clearance parameter is labeled “Creatinine clearance (ml/min)” at 15 ml/min, although its stated meaning is total drug clearance; this biomarker label is the basis for the analyte-identity concern. The model also defaulted ka and Tlag, with ka not reported, and assumed F=1, Fm=1 and a first-order depot input; the second reader disputed apparent rather than mechanistic parameterization and did not identify the listed clearance or volume. Extracted — bretylium tosilate: CL 15 ml/min, V/F 6.1 L/kg.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — bretylium tosilate: CL 15 ml/min, V/F 6.1 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bretylium_tosilate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -149,15 +149,15 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.143 (1 of 7 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.143 | cross-check contradicted by a second reader: verdict disputed; agreement 0.143 (1 of 7 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_t_half_alpha | reference | skipped | 25 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | fail | 6 | 328.9 | 54.81 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 14 | 328.9 | 23.49 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 0.8 | 328.9 | 411.1 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 16 | 328.9 | 20.55 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 44 | 328.9 | 7.474 | hours→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 12 | 328.9 | 27.4 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 11 | 328.9 | 29.9 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 6 | 328.9 | 54.81 | reported 6.0 hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 14 | 328.9 | 23.49 | reported 14.0 hours→SI vs simulated h |
+| T1_t_half_beta | reference | skipped |  | 328.9 |  | the transcribed record carries no number for this value |
+| T1_t_half_beta | reference | fail | 16 | 328.9 | 20.55 | reported 16.0 hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 44 | 328.9 | 7.474 | reported 44.0 hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 12 | 328.9 | 27.4 | reported 12.0 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 11 | 328.9 | 29.9 | reported 11.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

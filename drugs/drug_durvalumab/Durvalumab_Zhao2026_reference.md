@@ -5,11 +5,11 @@
 
 # durvalumab — `Durvalumab_Zhao2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because a second reader disagreed on parameter assignments, and covariate scenarios were not simulated.
+> cross_check_disputed; x1_cross_check.
 
-<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Zhao2026_reference" status="needs_review" stale="false" population="Patients with urothelial carcinoma, NSCLC, SCLC and other solid tumours in the pooled PopPK dataset, including patients with resectable NSCLC" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="durvalumab" model-id="Durvalumab_Zhao2026_reference" status="needs_review" stale="false" population="patients with resectable stage II to IIIB (N2) NSCLC" measured-compound="durvalumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Zhao X, Ding J, Zhao J, Zhang L, Abegesah A, Zhang YQ et al. Population pharmacokinetics and exposure-response analysis of durvalumab in patients with resectable stage II to IIIB (N2) NSCLC in the phase III AEGEAN study. British journal of clinical pharmacology 92(3):980–996 (2026).
@@ -17,15 +17,15 @@ Zhao X, Ding J, Zhao J, Zhang L, Abegesah A, Zhang YQ et al. Population pharmaco
 
 ## Population and dosing
 
-**Population:** Patients with urothelial carcinoma, NSCLC, SCLC and other solid tumours in the pooled PopPK dataset, including patients with resectable NSCLC · condition Cancer, including urothelial carcinoma, NSCLC, SCLC and other solid tumours · age group adult.
+**Population:** patients with resectable stage II to IIIB (N2) NSCLC · condition non-small-cell lung cancer (NSCLC) · age group adult.
 
-**Dosing:** 1500 mg, iv, multiple.
+**Dosing:** 1500 mg, iv, multiple, every 21 h.
 
 ## Model
 
 **Structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted, plus 6 covariate effects.  
+**Parameters:** 4 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_durvalumab/Durvalumab_Zhao2026_reference/Durvalumab_Zhao2026_reference.svg" alt="Durvalumab_Zhao2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -35,24 +35,15 @@ Zhao X, Ding J, Zhao J, Zhang L, Abegesah A, Zhang YQ et al. Population pharmaco
 
 | label | parameter | value | unit | RSE% | IIV |
 |---|---|---|---|---|---|
-| CL | CL | 0.285 | L/day | 1.68 | 0.0845 (None% RSE) |
-| V1 | V1 | 3.42 | L | 0.962 | 0.0563 (None% RSE) |
+| CL | CL | 0.285 | L/day | 1.68 | 0.0408 (5.77% RSE) |
+| V1 | V1 | 3.42 | L | 0.962 |  |
 | V2 | V2 | 2.30 | L | 2.09 |  |
-| Qintercompartmental | Q | 0.381 | L/h | 4.90 |  |
-| albumin_on_cl | albumin_on_cl | -0.537 |  | 2.88 |  |
-| sex_on_v1 | sex_on_v1 | -0.143 |  | 8.27 |  |
-| theta_cl_creatinine | theta_cl_creatinine | 0.111 |  | 19.1 |  |
-| theta_cl_sex | theta_cl_sex | -0.165 |  | 7.40 |  |
-| theta_q319_bodyweight | theta_q319_bodyweight | 0.382 |  | 9.31 |  |
-| theta_q319_bodyweight | theta_q319_bodyweight | 0.502 |  | 5.73 |  |
-
-## Caveats
-
-- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+| Qintercompartmental | Q | 0.381 | L/day | 4.90 |  |
+| COMB1 on CL | equation variable | -0.0701 | ‐ | 17.9 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6), qwen3.8-27b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -62,28 +53,23 @@ Zhao X, Ding J, Zhao J, Zhang L, Abegesah A, Zhang YQ et al. Population pharmaco
 
 ### Reviewer guidance
 
-**The record was held back because a second reader disagreed on parameter assignments, and covariate scenarios were not simulated.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader identified missing or mismatched covariate parameters, such as bodyweight on clearance and sex on clearance, and assigned different values to intercompartmental clearance exponents. Additionally, the model was simulated only for the reference individual, so the defined albumin and sex effects on durvalumab pharmacokinetics were not exercised. Extracted — durvalumab: CL 0.285 L/day, V1 3.42 L, V2 2.3 L, Q 0.381 L/h.
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — durvalumab: CL 0.285 L/day, V1 3.42 L, V2 2.3 L, Q 0.381 L/day.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has durvalumab, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].covariate_forms`: this record has none, the second reading ['linear_fractional', 'linear_fractional', 'linear_fractional']; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 0.285 | L/day | 3.299e-09 | m3/s | L/h | 1.68 | exact (1) | bcp70287-tbl-0003:row2:col1, bcp70287-tbl-0003:row2:col2, bcp70287-tbl-0003:row2:col3 | 0.0845 (None% RSE) |
-| V1 | `Q63` · V1 | 3.42 | L | 0.00342 | m3 | L | 0.962 | exact (1) | bcp70287-tbl-0003:row3:col1, bcp70287-tbl-0003:row3:col2, bcp70287-tbl-0003:row3:col3 | 0.0563 (None% RSE) |
-| V2 | `Q64` · V2 | 2.30 | L | 0.0023 | m3 | L | 2.09 | exact (1) | bcp70287-tbl-0003:row4:col1, bcp70287-tbl-0003:row4:col2, bcp70287-tbl-0003:row4:col3 |  |
-| Qintercompartmental | `Q30` · Q | 0.381 | L/h | 1.058e-07 | m3/s | L/h | 4.90 | llm (0.6) | bcp70287-tbl-0003:row5:col1, bcp70287-tbl-0003:row5:col2, bcp70287-tbl-0003:row5:col3 |  |
-| albumin_on_cl | `Q900` · albumin_on_cl | -0.537 |  |  |  |  | 2.88 |  | bcp70287-tbl-0003:row10:col1, bcp70287-tbl-0003:row10:col2, bcp70287-tbl-0003:row10:col3 |  |
-| sex_on_v1 | `Q900` · sex_on_v1 | -0.143 |  |  |  |  | 8.27 |  | bcp70287-tbl-0003:row17:col1, bcp70287-tbl-0003:row17:col2, bcp70287-tbl-0003:row17:col3 |  |
-| theta_cl_creatinine | `Q900` · theta_cl_creatinine | 0.111 |  |  |  |  | 19.1 |  | bcp70287-tbl-0003:row11:col1, bcp70287-tbl-0003:row11:col2, bcp70287-tbl-0003:row11:col3 |  |
-| theta_cl_sex | `Q900` · theta_cl_sex | -0.165 |  |  |  |  | 7.40 |  | bcp70287-tbl-0003:row13:col1, bcp70287-tbl-0003:row13:col2, bcp70287-tbl-0003:row13:col3 |  |
-| theta_q319_bodyweight | `Q900` · theta_q319_bodyweight | 0.382 |  |  |  |  | 9.31 |  | bcp70287-tbl-0003:row16:col1, bcp70287-tbl-0003:row16:col2, bcp70287-tbl-0003:row16:col3 |  |
-| theta_q319_bodyweight | `Q900` · theta_q319_bodyweight | 0.502 |  |  |  |  | 5.73 |  | bcp70287-tbl-0003:row18:col1, bcp70287-tbl-0003:row18:col2, bcp70287-tbl-0003:row18:col3 |  |
+| CL | `Q22` · CL | 0.285 | L/day | 3.299e-09 | m3/s | l/d | 1.68 | exact (1) | bcp70287-tbl-0003:row2:col1 | 0.0408 (5.77% RSE) |
+| V1 | `Q63` · V1 | 3.42 | L | 0.00342 | m3 | l | 0.962 | exact (1) | bcp70287-tbl-0003:row3:col1 |  |
+| V2 | `Q64` · V2 | 2.30 | L | 0.0023 | m3 | l | 2.09 | exact (1) | bcp70287-tbl-0003:row4:col1 |  |
+| Qintercompartmental | `Q30` · Q | 0.381 | L/day | 4.41e-09 | m3/s | l/d | 4.90 | llm (0.6) | bcp70287-tbl-0003:row5:col1 |  |
+| COMB1 on CL | `Q900` · equation variable | -0.0701 | ‐ |  |  | - | 17.9 | llm_corrected (0.6) | bcp70287-tbl-0003:row14:col1 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -99,59 +85,50 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 - table section iiv: 'ETA T max' routed out of structural estimates ('Interindividual variability')
 - table section residual_error: 'Proportional component' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive component' routed out of structural estimates ('Residual variability')
-- dropped duplicate Q22 ('T max change CL', value '-0.414') — already have one for this compound
-- dropped duplicate Q22 ('TC50 change CL', value '47.4') — already have one for this compound
+- dropped 'T max change CL' → Q22 = -0.412: a clearance of -0.412 is not a parameter value (source ['bcp70287-tbl-0003:row6:col1'])
+- unit_dimension_mismatch: 'TC50 change CL' → Q22 (unit '[time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('TC50 change CL', value '48.0') — already have one for this compound
+- unit_dimension_unknown: '‐' (CL)
 - dropped duplicate Q22 ('LAM change CL', value '1.00') — already have one for this compound
-- covariate level 'Albumin on CL' → Q900:albumin_on_cl = -0.537 (linear_fractional on Q22)
-- dropped unlinked row (NIL): 'ECOG status on CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row12:col1', 'bcp70287-tbl-0003:row12:col2', 'bcp70287-tbl-0003:row12:col3'])
-- dropped duplicate Q22 ('COMB1 on CL', value '-0.0694') — already have one for this compound
-- dropped duplicate Q22 ('COMB 2 on CL', value '-0.0561') — already have one for this compound
-- covariate level 'Sex on V1' → Q900:sex_on_v1 = -0.143 (linear_fractional on Q22)
-- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'CL' → L/day (from the paper text: 'The text states that the typical parameter estimate for clearance was “0.285 L/day.”')
-- implicit units: 'V1' → L (from the paper text: 'The text states that the typical parameter estimate for central volume of distribution was “3.42 L.”')
-- implicit units: 'V2' → L (from the paper text: 'The text states that the typical parameter estimate for peripheral volume of distribution was “2.30 L.”')
-- implicit units: 'Qintercompartmental' → L/h (from the popPK convention: 'No unit is stated for Qintercompartmental. Intercompartmental clearances are conventionally expressed in L/h.')
+- dropped unlinked row (NIL): 'Albumin on CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row10:col1'])
+- dropped unlinked row (NIL): 'Creatinine clearance on CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row11:col1'])
+- dropped unlinked row (NIL): 'ECOG status on CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row12:col1'])
+- dropped unlinked row (NIL): 'Sex on CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row13:col1'])
+- unit_dimension_unknown: '‐' (equation variable)
+- dropped unlinked row (NIL): 'COMB 2 on CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row15:col1'])
+- dropped unlinked row (NIL): 'Bodyweight on CL' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row16:col1'])
+- dropped unlinked row (NIL): 'Sex on V1' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row17:col1'])
+- dropped unlinked row (NIL): 'Bodyweight on V1' — extend the ontology if this is a real PK parameter (source ['bcp70287-tbl-0003:row18:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=durvalumab
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
 - molar mass: none found for 'durvalumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell bcp70287-tbl-0003:row2:col4 = '[0.270; 0.303]'
-- unparsed cell bcp70287-tbl-0003:row3:col4 = '[3.38; 3.48]'
-- unparsed cell bcp70287-tbl-0003:row4:col4 = '[2.15; 2.44]'
-- unparsed cell bcp70287-tbl-0003:row5:col4 = '[0.297; 0.465]'
-- unparsed cell bcp70287-tbl-0003:row6:col4 = '[−0.465; −0.360]'
-- unparsed cell bcp70287-tbl-0003:row7:col4 = '[32.8; 71.9]'
-- unparsed cell bcp70287-tbl-0003:row10:col4 = '[−0.776; −0.389]'
-- unparsed cell bcp70287-tbl-0003:row11:col4 = '[0.0699; 0.153]'
-- unparsed cell bcp70287-tbl-0003:row12:col4 = '[−0.0836; −0.0325]'
-- unparsed cell bcp70287-tbl-0003:row13:col4 = '[−0.189; −0.139]'
-- unparsed cell bcp70287-tbl-0003:row14:col4 = '[−0.0984; −0.0406]'
-- unparsed cell bcp70287-tbl-0003:row15:col4 = '[−0.108; −0.00867]'
-- unparsed cell bcp70287-tbl-0003:row16:col4 = '[0.311; 0.453]'
-- unparsed cell bcp70287-tbl-0003:row17:col4 = '[−0.166; −0.121]'
-- unparsed cell bcp70287-tbl-0003:row18:col4 = '[0.446; 0.558]'
-- unparsed cell bcp70287-tbl-0003:row20:col4 = '[0.0737; 0.0942]'
-- unparsed cell bcp70287-tbl-0003:row21:col4 = '[0.0345; 0.0471]'
-- unparsed cell bcp70287-tbl-0003:row22:col4 = '[0.0482; 0.0644]'
-- unparsed cell bcp70287-tbl-0003:row23:col4 = '[0.0341; 0.0772]'
-- unparsed cell bcp70287-tbl-0003:row25:col4 = '[0.245; 0.261]'
-- unparsed cell bcp70287-tbl-0003:row26:col4 = '[4.16; 6.80]'
 - LLM selected parameter table(s) 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.6 (12/20 fields) | 8 |
 | `qwen3.8-27b` | not confirmed | 0.583 (14/24 fields) | 10 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>18 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl].covariate_forms` | [] | ['linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[comb1 on cl]` | -0.0701 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_albumin]` |  | -0.526 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_bodyweight]` |  | 0.378 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_sex]` |  | -0.166 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_bodyweight]` |  | 0.503 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_sex]` |  | -0.144 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1].covariate_forms` | [] | ['linear_fractional', 'linear_fractional'] | mismatch |
 | `qwen3.8-27b` | `parameters[bodyweight_on_cl]` |  | 0.382 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[bodyweight_on_v1]` |  | 0.502 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cl].covariate_forms` | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
@@ -173,33 +150,32 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |  |  |
-| C0b_disposition_core | pass |  |  |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |  |  |
-| C2_base_Q22 | pass | 0.285 | 0.285 | 1 | 0.05 | footnote reference category |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['bcp70287-tbl-0003:row2:col1', 'bcp70287-tbl-0003:row2:col2', 'bcp70287-tbl-0003:row2:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  |  |  | ['bcp70287-tbl-0003:row5:col1', 'bcp70287-tbl-0003:row5:col2', 'bcp70287-tbl-0003:row5:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['bcp70287-tbl-0003:row3:col1', 'bcp70287-tbl-0003:row3:col2', 'bcp70287-tbl-0003:row3:col3'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['bcp70287-tbl-0003:row4:col1', 'bcp70287-tbl-0003:row4:col2', 'bcp70287-tbl-0003:row4:col3'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.285 |  |  | ['bcp70287-tbl-0003:row2:col1', 'bcp70287-tbl-0003:row2:col2', 'bcp70287-tbl-0003:row2:col3'] |
-| C8_topology | pass |  |  |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0119 L/h |  |  | ['bcp70287-tbl-0003:row2:col1', 'bcp70287-tbl-0003:row2:col2', 'bcp70287-tbl-0003:row2:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.42 L |  |  | ['bcp70287-tbl-0003:row3:col1', 'bcp70287-tbl-0003:row3:col2', 'bcp70287-tbl-0003:row3:col3'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.3 L |  |  | ['bcp70287-tbl-0003:row4:col1', 'bcp70287-tbl-0003:row4:col2', 'bcp70287-tbl-0003:row4:col3'] |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 4 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['bcp70287-tbl-0003:row2:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['bcp70287-tbl-0003:row5:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['bcp70287-tbl-0003:row3:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['bcp70287-tbl-0003:row4:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.285 | ['bcp70287-tbl-0003:row2:col1'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0119 L/h | ['bcp70287-tbl-0003:row2:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.42 L | ['bcp70287-tbl-0003:row3:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.3 L | ['bcp70287-tbl-0003:row4:col1'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=durvalumab) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.583, 0 of 1 reader(s) agree | 0.583 | cross-check disputed by a second reader: verdict disputed, agreement 0.583, 0 of 1 reader(s) agree |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=durvalumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.6 (12 of 20 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.6 | cross-check contradicted by a second reader: verdict disputed; agreement 0.6 (12 of 20 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -215,7 +191,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_durvalumab/Durvalumab_Zhao2026_reference/Durvalumab_Zhao2026_reference_modelica.zip" download>Durvalumab_Zhao2026_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_durvalumab/Durvalumab_Zhao2026_reference/Durvalumab_Zhao2026_reference_modelica.zip" download>Durvalumab_Zhao2026_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_durvalumab/Durvalumab_Zhao2026_reference/Durvalumab_Zhao2026_reference_fmi.zip" download>Durvalumab_Zhao2026_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_durvalumab/Durvalumab_Zhao2026_reference/Durvalumab_Zhao2026_reference_matlab.zip" download>Durvalumab_Zhao2026_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_durvalumab/Durvalumab_Zhao2026_reference/Durvalumab_Zhao2026_reference_matlab_simbio.zip" download>Durvalumab_Zhao2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -238,8 +214,8 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminMass` | 0.0015 | kg |
 | input | model | `Cl` | 3.299e-09 | m3/s |
 | input | model | `VdPerKg` | 4.886e-05 | m3/kg |
-| input | model | `k12` | 3.095e-05 | 1/s |
-| input | model | `k21` | 4.601e-05 | 1/s |
+| input | model | `k12` | 1.289e-06 | 1/s |
+| input | model | `k21` | 1.917e-06 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -278,4 +254,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdurvalumab%5D%20Durvalumab_Zhao2026_reference&body=Drug%3A%20durvalumab%0ARecord%3A%20Durvalumab_Zhao2026_reference%0APaper%3A%20Zhao_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_durvalumab/Durvalumab_Zhao2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 12:18 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:18 UTC</sub>

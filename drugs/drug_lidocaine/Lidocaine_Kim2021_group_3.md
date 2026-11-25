@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Metabolite compartments were orphaned, and a missing unit prevented SI conversion, causing rejection.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_group_3" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -51,13 +51,13 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 ### Reviewer guidance
 
-**Metabolite compartments were orphaned, and a missing unit prevented SI conversion, causing rejection.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defined monoethylglycylxylidide and glycylxylidide as formed from lidocaine but failed to link them, leaving these compartments unreachable from the dose. Additionally, a reported unit could not be converted to SI, preventing the parameter from being processed. The second reader disagreed on the metabolite naming convention, using abbreviations instead of full names. Extracted — lidocaine: t1/2z 1.2 h, Cmax 1.2e+03 ng/mL, tmax 0.58 h, AUC∞ 2.59e+03 h × ng/mL.
+A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — lidocaine: t1/2z 1.2 h, Cmax 1.2e+03 ng/mL, tmax 0.58 h, AUC∞ 2.59e+03 h × ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has lidocaine → monoethylglycylxylidide (metabolism); monoethylglycylxylidide → glycylxylidide (metabolism), the second reading lidocaine → megx (metabolism); megx → gx (metabolism). That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

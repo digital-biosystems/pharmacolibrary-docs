@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The allopurinol model uses apparent clearance parameters without accounting for bioavailability, causing incoherent double correction of absorption effects.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Wright2013_base" status="rejected" stale="false" population="patients with gout and healthy volunteers" measured-compound="oxypurinol" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -57,13 +57,13 @@ Wright DF, Stamp LK, Merriman TR, Barclay ML, Duffull SB, Holford NH. The popula
 
 ### Reviewer guidance
 
-**The allopurinol model uses apparent clearance parameters without accounting for bioavailability, causing incoherent double correction of absorption effects.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The record defines allopurinol apparent clearance as 49.6 L/h and oxypurinol apparent clearance as 0.58 L/h, both divided by unidentifiable fractions. The model also specifies an absolute bioavailability of 0.85, creating conflicting corrections for oral dose exposure. A second reader disagrees with the apparent parameterization, classifying the model as mechanistic instead. Extracted — allopurinol: CLm/F 49.6 L/h, V1 11.4 L, V2 90.7 L, Q 142 L/h, kabs 1.6 h−1, Fab 0.85; oxypurinol: CLm/F 0.58 L/h, V 39.1 L.
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — allopurinol: CLm/F 49.6 L/h, V1 11.4 L, V2 90.7 L, Q 142 L/h, kabs 1.6 h−1, Fab 0.85; oxypurinol: CLm/F 0.58 L/h, V 39.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has oxypurinol, the second reading allopurinol; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

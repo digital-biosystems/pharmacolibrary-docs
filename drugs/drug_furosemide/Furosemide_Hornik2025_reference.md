@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The furosemide model uses default bioavailability, fails Cmax checks, and lacks the expected egfr_on_cl parameter value.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00259, model 0.000392); f use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Hornik2025_reference" status="needs_review" stale="false" population="adults with heart failure" measured-compound="furosemide" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Hornik CP, Foote HP, Kendig E, Mohr J. An Adult Population Pharmacokinetic Model
 
 ### Reviewer guidance
 
-**The furosemide model uses default bioavailability, fails Cmax checks, and lacks the expected egfr_on_cl parameter value.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.00259, model 0.000392); f use library defaults, not estimates from this paper (+2 more).**
 
-The record's egfr_on_cl parameter is null in the source data, though a second reader identified a value of 0.74. Bioavailability (F) was left at library defaults rather than using an extracted estimate. The model's peak concentration (0.000392) deviates significantly from the paper's reported value (0.00259), with a ratio of 0.1514. Additionally, covariate scenarios involving renal function were not simulated. Extracted — furosemide: kabs 1.3 h–1, CL 6.51 L/h, V1 5.37 L, Q 3.74 L/h, V2 5.95 L.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — furosemide: kabs 1.3 h–1, CL 6.51 L/h, V1 5.37 L, Q 3.74 L/h, V2 5.95 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of egfr_on_cl: this record has 0.74, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -169,14 +169,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.882, 0 of 1 reader(s) agree | 0.882 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 0.00259 | 0.0003922 | 0.1514 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00224 | 0.0003922 | 0.1751 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00196 | 0.0003922 | 0.2001 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00196 | 0.0003922 | 0.2001 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0019 | 0.0003922 | 0.2064 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00259 | 0.0003922 | 0.1514 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0019 | 0.0003922 | 0.2064 | µg/L→SI vs simulated kg/m3 |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.882 (15 of 17 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.882 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 0.00259 | 0.0003922 | 0.1514 | reported 2590.0 µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00224 | 0.0003922 | 0.1751 | reported 2240.0 µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00196 | 0.0003922 | 0.2001 | reported 1960.0 µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00196 | 0.0003922 | 0.2001 | reported 1960.0 µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0019 | 0.0003922 | 0.2064 | reported 1900.0 µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00259 | 0.0003922 | 0.1514 | reported 2590.0 µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0019 | 0.0003922 | 0.2064 | reported 1900.0 µg/L→SI vs simulated kg/m3 |
 
 <details class="legend">
 <summary>Validation definitions</summary>

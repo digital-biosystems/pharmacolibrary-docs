@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The tofacitinib record was held back because the absorption rate constant was left at library defaults, not extracted from the source.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="tofacitinib" model-id="Tofacitinib_Mohamed2020_reference" status="needs_review" stale="false" population="healthy adults, rheumatoid arthritis adults" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Mohamed MF, Beck D, Camp HS, Othman AA. Preferential Inhibition of JAK1 Relative
 
 ### Reviewer guidance
 
-**The tofacitinib record was held back because the absorption rate constant was left at library defaults, not extracted from the source.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-No estimate for the absorption rate constant or lag time was found in the paper, so standard library placeholders would have been used. This invalidates the simulated profile based on the reported apparent oral clearance of 45.0 L/h. A second reader also disputed the record's values, showing low agreement at 0.583. Extracted — tofacitinib: CL/F 45 L/h, V/F 149 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — tofacitinib: CL/F 45 L/h, V/F 149 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 135, the second reading 135; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.583, 0 of 1 reader(s) agree | 0.583 | cross-check disputed by a second reader: verdict disputed, agreement 0.583, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.667 (8 of 12 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

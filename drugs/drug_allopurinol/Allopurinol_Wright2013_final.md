@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Allopurinol parameters were recorded as apparent values despite absolute bioavailability being reported, creating a double correction.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Wright2013_final" status="rejected" stale="false" population="patients with gout and healthy volunteers" measured-compound="oxypurinol" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -55,13 +55,13 @@ Wright DF, Stamp LK, Merriman TR, Barclay ML, Duffull SB, Holford NH. The popula
 
 ### Reviewer guidance
 
-**Allopurinol parameters were recorded as apparent values despite absolute bioavailability being reported, creating a double correction.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The record lists allopurinol clearance as 49.6 L/h and volume as 11.4 L, both identified as apparent parameters. This conflicts with the reported absolute bioavailability of 0.85, which renders the apparent correction invalid. Additionally, the oxypurinol clearance parameter lacks a numeric value, leaving its specific magnitude undefined in the record. Extracted — allopurinol: CLm/F 49.6 L/h, V1 11.4 L, V2 90.7 L, Q 142 L/h, kabs 1.6 h−1, Fab 0.85; oxypurinol: V 41.4 L.
+Extracted — allopurinol: CLm/F 49.6 L/h, V1 11.4 L, V2 90.7 L, Q 142 L/h, kabs 1.6 h−1, Fab 0.85; oxypurinol: V 41.4 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has oxypurinol, the second reading allopurinol; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;triazolam&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/&quot;},{&quot;label&quot;:&quot;Gaudreault_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triazolam_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Triazolam_van2011_reference&quot;,&quot;label&quot;:&quot;van_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_van2011_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lloyd_1990_35S_TBPS_binding&quot;,&quot;label&quot;:&quot;Lloyd_1990 \u00b7 35S-TBPS binding&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Lloyd_1990_35S_TBPS_binding.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Cognitive_function&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Cognitive function&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Cognitive_function.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Sedation&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Sedation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Sedation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triazolam_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Triazolam_van2011_reference&quot;,&quot;label&quot;:&quot;van_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_van2011_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Cognitive_function&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Cognitive function&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Cognitive_function.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Sedation&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Sedation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Sedation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # triazolam — `Triazolam_Gaudreault1996_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Only volume was extracted — no clearance.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="triazolam" model-id="Triazolam_Gaudreault1996_reference" status="needs_review" stale="false" population="Sprague-Dawley rats" measured-compound="triazolam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="triazolam" model-id="Triazolam_Gaudreault1996_reference" status="rejected" stale="false" population="Sprague-Dawley rats" measured-compound="triazolam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gaudreault J, Varin F, Pollack GM. Anticonvulsant pharmacodynamics and disposition of triazolam in rats. Journal of pharmaceutical sciences 85(9):999–1004 (1996).
@@ -17,7 +17,7 @@ Gaudreault J, Varin F, Pollack GM. Anticonvulsant pharmacodynamics and dispositi
 
 ## Population and dosing
 
-**Population:** Sprague-Dawley rats · condition healthy (pentylenetetrazol seizure model) · age group adult.
+**Population:** Sprague-Dawley rats · condition healthy.
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -25,23 +25,17 @@ Gaudreault J, Varin F, Pollack GM. Anticonvulsant pharmacodynamics and dispositi
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| systemic clearance | CLnorm | 2.45 | L/h/ kg |
-| steady-state volume of distribution | Vss | 2.1 | L/kg |
-| mean residence time | MRT | 47 | min |
-| Ka (1/h) | kabs | 5.41 | 1/h |
-| ALAG (h) | tlag | 0.394 | h |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,70 +45,38 @@ Gaudreault J, Varin F, Pollack GM. Anticonvulsant pharmacodynamics and dispositi
 
 ### Reviewer guidance
 
-**Only volume was extracted — no clearance.**
+**The paper reports none of the model's key parameters.**
 
-A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — triazolam: CLnorm 2.45 L/h/ kg, Vss 2.1 L/kg, MRT 47 min, kabs 5.41 1/h, tlag 0.394 h.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has triazolam, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
-
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| systemic clearance | `Q354` · CLnorm | 2.45 | L/h/ kg | 4.764e-05 | m3/s | l/(h·kg) | llm_corrected (0.6) | Gaudreault_1996:abstract |
-| steady-state volume of distribution | `Q65` · Vss | 2.1 | L/kg | 0.147 | m3 | l/kg | llm_corrected (0.6) | Gaudreault_1996:abstract |
-| mean residence time | `Q53` · MRT | 47 | min | 2820 | s | min | exact (1) | Gaudreault_1996:abstract |
-| Ka (1/h) | `Q49` · kabs | 5.41 | 1/h | 0.001503 | 1/s | 1/h | review_gapfill (0.7) | Cha_2024:review |
-| ALAG (h) | `Q83` · tlag | 0.394 | h | 1418 | s | h | review_gapfill (0.7) | Cha_2024:review |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped value-less row: 'systemic clearance'
+- dropped value-less row: 'steady-state volume of distribution'
+- dropped value-less row: 'mean residence time'
 - dropped PD-category row 'Emax' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Gaudreault_1996:abstract'])
-- dropped PD-category row 'EC50 (serum)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Gaudreault_1996:abstract'])
-- dropped PD-category row 'EC50 (whole brain tissue)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Gaudreault_1996:abstract'])
+- dropped PD-category row 'EC50' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Gaudreault_1996:abstract', 'Gaudreault_1996:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=triazolam
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Cha_2024's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Cha_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Gaudreault_1996_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 
-<details><summary>10 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[alag]` | 0.394 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 5.41 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean residence time]` | 47 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean residence time]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | 2.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[systemic clearance]` | 2.45 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[systemic clearance]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | triazolam | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | triazolam | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -124,18 +86,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Gaudreault_1996:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Cha_2024:review'] |
-| C5_dimension_Q53 | pass | [time] |  | ['Gaudreault_1996:abstract'] |
-| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Gaudreault_1996:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Cha_2024:review'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q65 | pass | volume within physiological range | 147 L | ['Gaudreault_1996:abstract'] |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | fail | 0 |
+| C0b_disposition_core | fail |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -147,19 +102,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -169,4 +114,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btriazolam%5D%20Triazolam_Gaudreault1996_reference&body=Drug%3A%20triazolam%0ARecord%3A%20Triazolam_Gaudreault1996_reference%0APaper%3A%20Gaudreault_1996%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_triazolam/Triazolam_Gaudreault1996_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:55 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:22 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Parameter KD (0.050 min⁻¹) has a unit mismatch, while central (0.38 l/g) and peripheral (0.43 l/g) volumes use invalid units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit min⁻¹ (1 / [time]) vs [mass] / [length] ** 3; Q61 unit l.g⁻¹ ([length] ** 3 / [mass]) vs [length] ** 3; Q63 unit l.g⁻¹ ([length] ** 3 / [mass]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Forfar1980_hypothyroid" status="rejected" stale="false" population="patients with thyroid disease" measured-compound="paracetamol" parameterization="mechanistic" topology="3C"></div>
 
@@ -54,13 +54,13 @@ Forfar JC, Pottage A, Toft AD, Irvine WJ, Clements JA, Prescott LF. Paracetamol 
 
 ### Reviewer guidance
 
-**Parameter KD (0.050 min⁻¹) has a unit mismatch, while central (0.38 l/g) and peripheral (0.43 l/g) volumes use invalid units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit min⁻¹ (1 / [time]) vs [mass] / [length] ** 3; Q61 unit l.g⁻¹ ([length] ** 3 / [mass]) vs [length] ** 3; Q63 unit l.g⁻¹ ([length] ** 3 / [mass]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The dissociation constant is recorded as 0.050 min⁻¹, which is a rate unit, not a concentration-based affinity metric. The central and peripheral compartment volumes are defined in liters per gram, a unit that could not be converted to standard SI units. Additionally, the three-compartment structure contains an unreachable or orphan compartment that is not linked to the dose. Extracted — paracetamol: Cmax 36.6 ug/mL, tmax 33.8 min, kabs 0.072 min⁻¹, KD 0.05 min⁻¹, kel 0.004 min⁻¹, t1/2z 166 min, CL 3.6 mL/min/kg, V 0.81 l.g⁻¹, … (+2).
+A reported unit could not be converted (Cmax and KD), so that value has no SI equivalent. Extracted — paracetamol: Cmax 36.6 ug/mL, tmax 33.8 min, kabs 0.072 min⁻¹, KD 0.05 min⁻¹, kel 0.004 min⁻¹, t1/2z 166 min, CL 3.6 mL/min/kg, V 0.81 l.g⁻¹, … (+2).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

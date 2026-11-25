@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The timolol model was quarantined because its clearance was left as a placeholder, despite an abstract-derived AUC of 265.7 ng/ml.h.
+> No value for timolol's clearance; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="timolol" model-id="Timolol_Ji1993_reference" status="model_quarantined" stale="false" population="healthy volunteers" measured-compound="timolol" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Ji XF, Ping QN, Liu GJ, Yu ST. [The bioavailability of transdermal therapeutic s
 
 ### Reviewer guidance
 
-**The timolol model was quarantined because its clearance was left as a placeholder, despite an abstract-derived AUC of 265.7 ng/ml.h.**
+**No value for timolol's clearance; t6_deviations (+1 more).**
 
-The record was constructed solely from the paper's abstract, using summary statistics like Cmax (11.2 ng/ml) and AUC (265.7 ng/ml.h) in place of fitted parameters. Consequently, the clearance parameter lacked an explicit estimate, forcing the use of a default value that prevented publication. A second reader also disputed the model's validity, finding agreement of only 0.143 and failing to confirm any of the extracted parameters. Extracted — timolol: tmax 18.8 h, Cmax 11.2 ng/ml, AUC 266 ng/ml.h, Vss 120 L, kel 0.084 h-1.
+The model was built, but timolol's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — timolol: tmax 18.8 h, Cmax 11.2 ng/ml, AUC 266 ng/ml.h, Vss 120 L, kel 0.084 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has timolol, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.143 | cross-check contradicted by a second reader: verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

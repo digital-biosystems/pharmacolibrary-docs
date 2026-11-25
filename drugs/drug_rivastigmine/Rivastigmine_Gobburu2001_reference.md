@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The rivastigmine record was rejected because absorption parameters were defaulted and the model structure did not match the parent-metabolite relationship.
+> Ka use library defaults, not estimates from this paper; t3_output_variable (+3 more).
 
 <div class="pk-model-meta" hidden drug="rivastigmine" model-id="Rivastigmine_Gobburu2001_reference" status="rejected" stale="false" population="patients with Alzheimer&#39;s disease" measured-compound="rivastigmine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -17,13 +17,13 @@ Gobburu JV, Tammara V, Lesko L, Jhee SS, Sramek JJ, Cutler NR et al. Pharmacokin
 
 ## Population and dosing
 
-**Population:** patients with Alzheimer's disease · condition Alzheimer's disease · age group elderly · n = 18.
+**Population:** patients with Alzheimer's disease · condition Alzheimer's disease · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 5 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference/Rivastigmine_Gobburu2001_reference.svg" alt="Rivastigmine_Gobburu2001_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -35,13 +35,14 @@ Gobburu JV, Tammara V, Lesko L, Jhee SS, Sramek JJ, Cutler NR et al. Pharmacokin
 |---|---|---|---|
 | apparent clearance | CL/F | 120 | L/h |
 | volume of distribution (plasma) | V | 236 | L |
-| relative bioavailability at the 6 mg dose | Frel | 140 | % |
+| relative bioavailability | Frel | 140 |  |
 | clearance | CL | 100 | L/h |
 | volume of distribution | V | 256 | L |
+| equilibration half-life | t1/2α | 0.2 | hours |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.235). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.643). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,13 +52,13 @@ Gobburu JV, Tammara V, Lesko L, Jhee SS, Sramek JJ, Cutler NR et al. Pharmacokin
 
 ### Reviewer guidance
 
-**The rivastigmine record was rejected because absorption parameters were defaulted and the model structure did not match the parent-metabolite relationship.**
+**Ka use library defaults, not estimates from this paper; t3_output_variable (+3 more).**
 
-Absorption rate constants were left at library defaults rather than extracted from the paper, and the assumed model structure did not align with the defined parent-metabolite topology. The abstract-only source meant summary statistics stood in for fitted parameters, and the second reader disagreed with all extracted values, resulting in a cross-check agreement ratio of 0.235. Extracted — rivastigmine: CL/F 120 L/h, V 236 L, Frel 140 %; ZNS 114-666 (NAP 226-90): CL 100 L/h, V 256 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — rivastigmine: CL/F 120 L/h, V 236 L, Frel 140; ZNS 114-666: CL 100 L/h, V 256 L, t1/2α 0.2 hours.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has rivastigmine → zns 114-666 (nap 226-90) (metabolism), the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of equilibration half-life: this record has none, the second reading 0.2; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -65,9 +66,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 |---|---|---|---|---|---|---|---|---|
 | apparent clearance | `Q27` · CL/F | 120 | L/h | 3.333e-05 | m3/s | l/h | exact (1) | Gobburu_2001:abstract |
 | volume of distribution (plasma) | `Q61` · V | 236 | L | 0.236 | m3 | l | exact (1) | Gobburu_2001:abstract |
-| relative bioavailability at the 6 mg dose | `Q87` · Frel | 140 | % |  |  |  | llm_confirmed (0.6) | Gobburu_2001:abstract |
+| relative bioavailability | `Q87` · Frel | 140 |  |  |  |  | exact (1) | Gobburu_2001:abstract |
 | clearance | `Q22` · CL | 100 | L/h | 2.778e-05 | m3/s | l/h | exact (1) | Gobburu_2001:abstract |
 | volume of distribution | `Q61` · V | 256 | L | 0.256 | m3 | l | exact (1) | Gobburu_2001:abstract |
+| equilibration half-life | `Q59` · t1/2α | 0.2 | hours | 720 | s | h | llm (0.6) | Gobburu_2001:abstract, Gobburu_2001:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -83,19 +85,15 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- dropped PD-category row 'equilibration half-life' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Gobburu_2001:abstract', 'Gobburu_2001:abstract'])
-- metabolite volume: 'volume of distribution' Q63→Q61 for ZNS 114-666 (NAP 226-90) — it is 1-compartment, so its central volume is its only volume
+- metabolite volume: 'volume of distribution' Q63→Q61 for ZNS 114-666 — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=rivastigmine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=noncompartmental; 6/6 row label(s) assigned, 4 linked by role; re-tagged rivastigmine→parent ×3, rivastigmine→ZNS 114-666 (NAP 226-90) ×4
-- molar mass: no plausible PubChem entry for 'ZNS 114-666 (NAP 226-90)' ('ZNS 114-666 (NAP 226-90)') — left in mass units
-- molar mass: none found for 'ZNS 114-666 (NAP 226-90)' — its concentrations stay mass-only
+- row roles (LLM): model_class=noncompartmental; 6/6 row label(s) assigned, 4 linked by role; re-tagged rivastigmine→parent ×3, rivastigmine→ZNS 114-666 ×4
+- molar mass: no plausible PubChem entry for 'ZNS 114-666' ('ZNS 114-666') — left in mass units
+- molar mass: none found for 'ZNS 114-666' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**
@@ -104,29 +102,21 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.235 (4/17 fields) | 13 |
+| `gpt-oss-120b` | not confirmed | 0.643 (9/14 fields) | 5 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['rivastigmine', 'zns 114-666 (nap 226-90)', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[apparent clearance]` | 120 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent clearance]` |  | 120 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance of the metabolite]` |  | 100 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | 100 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[equilibration half-life (metabolite) in csf]` |  | 0.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[equilibration half-life (parent) in csf]` |  | 0.2 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[relative bioavailability at the 6 mg dose]` | 140 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[relative bioavailability]` |  | 140 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution of the metabolite]` |  | 256 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 236 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 256 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 236 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[equilibration half-life]` |  | 0.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[equilibration half-life].parameter_id` | Q59 | Q30 | mismatch |
+| `gpt-oss-120b` | `parameters[equilibration half-life].value` | 0.2 | 0.5 | mismatch |
+| `gpt-oss-120b` | `parameters[relative bioavailability at the 6 mg dose]` |  | 140 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[relative bioavailability]` | 140 |  | only_one_extracted |
 
 </details>
 
@@ -140,11 +130,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Gobburu_2001:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Gobburu_2001:abstract'] |
+| C5_dimension_Q59 | pass | [time] |  | ['Gobburu_2001:abstract', 'Gobburu_2001:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Gobburu_2001:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Gobburu_2001:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
@@ -165,7 +156,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.235, 0 of 1 reader(s) agree | 0.235 | cross-check disputed by a second reader: verdict disputed, agreement 0.235, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.643 (9 of 14 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.643 | cross-check contradicted by a second reader: verdict disputed; agreement 0.643 (9 of 14 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -193,4 +184,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brivastigmine%5D%20Rivastigmine_Gobburu2001_reference&body=Drug%3A%20rivastigmine%0ARecord%3A%20Rivastigmine_Gobburu2001_reference%0APaper%3A%20Gobburu_2001%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:06 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:04 UTC</sub>

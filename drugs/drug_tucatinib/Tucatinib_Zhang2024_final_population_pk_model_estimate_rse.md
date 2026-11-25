@@ -180,12 +180,12 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (16 of 16 compared fields agree); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 1 | a second reader did not contradict the extraction |
 | T1_cmax | reference | skipped | 1.6 | 0.0003036 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 0.8 | 0.0003036 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | skipped | 0.80 | 0.0003036 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_t_half_beta | reference | fail | 16.2 | 3.044 | 0.1879 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 21.3 | 3.044 | 0.1429 | h→SI vs simulated h |
+| T1_cmax | reference | skipped | 0.8 | 0.0003036 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| T1_t_half_beta | reference | fail | 16.2 | 3.044 | 0.1879 | reported 16.2 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 21.3 | 3.044 | 0.1429 | reported 21.3 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> Niclosamide’s zero-order input duration is recorded as 27.88 mg/kg, a dose unit rather than time; absent distribution volume and clearance leave this exposure/outcome report without a compartmental popPK model.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg/kg ([mass]) vs [time].
 
 <div class="pk-model-meta" hidden drug="niclosamide" model-id="Niclosamide_Weiss2023_oral_niclosamide" status="rejected" stale="false" population="sheep" measured-compound="niclosamide" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Weiss A, Bischof RJ, Landersdorfer CB, Nguyen TH, Davies A, Ibrahim J et al. Sin
 
 ### Reviewer guidance
 
-**Niclosamide’s zero-order input duration is recorded as 27.88 mg/kg, a dose unit rather than time; absent distribution volume and clearance leave this exposure/outcome report without a compartmental popPK model.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg/kg ([mass]) vs [time].**
 
-The parameter is defined as the duration of a zero-order input, but is labeled Dose and recorded as 27.88 mg/kg, conflicting with its time dimension; the reported unit could not be converted to SI. No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Extracted — niclosamide: D1 27.9 mg/kg, Cmax 13.6 ng/mL, tmax 340 min, AUCt 17 ng/mL·h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (D1, Cmax and AUCt), so that value has no SI equivalent. Extracted — niclosamide: D1 27.9 mg/kg, Cmax 13.6 ng/mL, tmax 340 min, AUCt 17 ng/mL·h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has niclosamide (niclosamide ethanolamine), the second reading niclosamide; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

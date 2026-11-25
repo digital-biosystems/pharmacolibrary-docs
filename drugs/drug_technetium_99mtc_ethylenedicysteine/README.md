@@ -15,7 +15,10 @@ Technetium 99mTc ethylenedicysteine is a diagnostic radiopharmaceutical used for
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Kabasakal_1995_reference](drugs/drug_technetium_99mtc_ethylenedicysteine/Technetium99mtcEthylenedicysteine_Kabasakal1995_reference.md) | — | 1-compartment (no model) | 2 | Kabasakal L et al., Evaluation of technetium-99m-ethylenedi…, Journal of nuclear medicine… (1995) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Kabasakal_1995_2_reference](drugs/drug_technetium_99mtc_ethylenedicysteine/Technetium99mtcEthylenedicysteine_Kabasakal1995v2_reference.md) | — | 1-compartment (no model) | 1 | Kabasakal L et al., Clinical comparison of technetium-99m-E…, Journal of nuclear medicine… (1995) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,44 +32,42 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:04 | 2:15 | 0/0/0 | 0/0/0 | 0/0/0 | 42,107/7,533 | openai / gpt-6-luna | 4 | 3/1 | 4/0 | 0 |
+| 2026-11-24 07:28 | 0:03 | 1/1/0 | 0/0/0 | 0/0/0 | 4,585/204 | einfracz / qwen3.8-27b | 4 | 3/1 | 4/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 35 matched, 12 returned
-- **screened:** 3  ·  **relevant:** 3
-- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **screened:** 4  ·  **relevant:** 4
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Kabasakal_1995.pdf` | Kabasakal L et al., Evaluation of technetium-99m-ethylenedi…, Journal of nuclear medicine… (1995) | popPK | 10 |  | [7629584](https://pubmed.ncbi.nlm.nih.gov/7629584) | Human study reports a two-compartment model and numeric distribution volume and clearance half-life for technetium-99m-EC. |
-| `Kabasakal_1995_2.pdf` | Kabasakal L et al., Clinical comparison of technetium-99m-E…, Journal of nuclear medicine… (1995) | popPK | 10 |  | [7830118](https://pubmed.ncbi.nlm.nih.gov/7830118) | Reports numeric renal clearance ratios and distribution volumes for technetium-99m-EC in patients. |
-| `Kabasakal_1999.pdf` | Kabasakal L et al., Reproducibility of technetium-99m ethyl…, European journal of nuclear… (1999) | popPK | 9 | [10.1007/s002590050465](https://doi.org/10.1007/s002590050465) | [10436204](https://pubmed.ncbi.nlm.nih.gov/10436204) | Reports numeric plasma clearance values for technetium-99m ethylenedicysteine in patients. |
-
-<sub>queue written 2026-10-07 19:03 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Das_2000 | irrelevant | 1 | 0 | The study reports biodistribution of 188Re-EC, not quantitative pharmacokinetic parameters for 99mTc-EC. |
-| popPK | Filipczak_2020 | irrelevant | 2 | 1 | This is a human renal-scintigraphy study using 99mTc-EC as a diagnostic tracer, and it reports no readable numeric K or clearance values. |
-| popPK | Kabasakal_2000 | irrelevant | 2 | 8 | This is a review summarizing reported EC disposition values, not an original pharmacokinetic study. |
-| popPK | Kuśmierek_2017 | irrelevant | 1 | 0 | Technetium-99m EC is used as a diagnostic tracer, and no numeric drug-disposition parameters are reported; referenced table values are not provided. |
-| popPK | Moran_1999 | irrelevant | 1 | 0 | This is a review and provides no numeric disposition parameters for technetium-99m-EC. |
-| popPK | Pagou_2009 | irrelevant | 0 | 0 | This review discusses gallium-68 imaging agents, not technetium-99m ethylenedicysteine, and reports no relevant quantitative PK values. |
-| popPK | Pietrzak-Stelasiak_2017 | irrelevant | 0 | 0 | This human diagnostic imaging study reports no quantitative pharmacokinetic disposition parameters for technetium-99m EC. |
+| popPK | Das_2000 | irrelevant | 0 | 0 | The paper studies 188Re-ethylene dicysteine, not 99mTc-ethylene dicysteine, and provides biodistribution percentages rather than compartmental PK parameters for the target drug. |
+| PGx | Das_2000 | not_relevant | 0 | 0 | The paper evaluates 188Re-ethylene dicysteine and does not report any pharmacogenomic effects (gene variants) on the pharmacokinetics of 99mTc-ethylene dicysteine. |
+| popPK | Filipczak_2020 | irrelevant | 2 | 0 | The study reports diagnostic imaging parameters (uptake constant K and efficiency index KEi) derived from dynamic renal scintigraphy images, rather than standard population pharmacokinetic parameters (CL, V, ka, t1/2) from plasma concentration-time data. |
+| PGx | Filipczak_2020 | not_relevant | 0 | 0 | The paper describes a new quantitative parameter (Kidney Efficiency Index) for dynamic renal scintigraphy using 99mTc-EC but does not report any pharmacogenomic effects on PK or PD parameters. |
+| PGx | Kabasakal_1995 | not_relevant | 0 | 0 | The paper reports pharmacokinetic parameters of technetium-99m-ethylenedicysteine in renal disorders but does not investigate or report any pharmacogenomic effects (gene variants/genotypes) on these parameters. |
+| PGx | Kabasakal_1995_2 | not_relevant | 0 | 0 | The paper compares the pharmacokinetics of different radiotracers but does not investigate any genetic variants or pharmacogenomic effects on the drug's PK/PD parameters. |
+| PGx | Kabasakal_1999 | not_relevant | 0 | 0 | The paper investigates the technical reproducibility of (99m)Tc-EC clearance in a small patient cohort but does not report any pharmacogenomic effects or gene variants. |
+| PGx | Kabasakal_2000 | not_relevant | 0 | 0 | The paper describes the general pharmacokinetics and clinical utility of 99mTc-EC but contains no information on gene variants, genotypes, or pharmacogenomic effects. |
+| popPK | Kuśmierek_2017 | irrelevant | 3 | 2 | The study uses technetium-99m-EC as a diagnostic agent to evaluate renal function parameters (split function, transit times) after ESWL, rather than reporting population-pharmacokinetic parameters (CL, V, half-life) of the drug itself. |
+| PGx | Kuśmierek_2017 | not_relevant | 0 | 0 | The paper investigates renal scintigraphy imaging techniques and does not report any pharmacogenomic effects on the PK or PD of the tracer. |
+| popPK | Moran_1999 | irrelevant | 1 | 0 | The text is a review discussing the development of radiopharmaceuticals and does not contain specific quantitative pharmacokinetic parameter values (such as clearance, volume, or half-life) for the subject drug. |
+| PGx | Moran_1999 | not_relevant | 0 | 0 | The text is a review of renal nuclear imaging agents and discusses renal clearance in general, but it does not report any pharmacogenomic effects (gene variant/genotype/phenotype) on the PK or PD of Technetium-99m-EC. |
+| popPK | Pagou_2009 | irrelevant | 0 | 0 | The paper is a review discussing gallium-68 compounds for PET imaging and does not report pharmacokinetic parameters for technetium-99mtc ethylenedicysteine. |
+| PGx | Pagou_2009 | not_relevant | 0 | 0 | The paper discusses gallium-68 compounds and their applications in molecular imaging; it does not report pharmacogenomic effects on the PK/PD of technetium_99mtc_ethylenedicysteine. |
+| popPK | Pietrzak-Stelasiak_2017 | irrelevant | 2 | 0 | The study evaluates the diagnostic efficacy of parametric renal clearance images generated from 99mTc-EC data for detecting renal scars, but does not report quantitative pharmacokinetic disposition parameters (e.g., GFR, clearance rates, volume of distribution) for the drug itself. |
+| PGx | Pietrzak-Stelasiak_2017 | not_relevant | 0 | 0 | The paper evaluates diagnostic imaging methods for renal scarring in children and does not investigate pharmacogenomic effects on PK/PD parameters. |
 | popPK | Schechter_2009 | irrelevant | 1 | 0 | This studies 99mTc-EC-DG, not technetium-99m ethylenedicysteine itself, and provides no readable numeric PK parameters; residence times are referred to in a table not provided. |
-| popPK | Yanagi_2013 | irrelevant | 1 | 0 | Tc-EC is only a comparator, and no numeric disposition parameters are provided. |
+| popPK | Yanagi_2013 | irrelevant | 1 | 0 | The study investigates a novel conjugate (EC-[(d-Asp)5]2) rather than pure technetium_99mtc_ethylenedicysteine, and reports qualitative biodistribution data without providing quantitative compartmental PK parameters (CL, V, Q) for the subject drug. |
+| PGx | Yanagi_2013 | not_relevant | 0 | 0 | The paper is a chemical/radiochemical design study of a new radiotracer and contains no information on human gene variants, genotypes, or pharmacogenomic effects on PK/PD. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btechnetium_99mtc_ethylenedicysteine%5D&body=Drug%3A%20technetium_99mtc_ethylenedicysteine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_technetium_99mtc_ethylenedicysteine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 07:27 UTC</sub>

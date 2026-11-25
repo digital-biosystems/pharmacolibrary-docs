@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:11 | 0:25 | 0/0/0 | 0/0/0 | 0/0/0 | 14,049/347 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 02:20 | 0:03 | 0/0/0 | 0/0/0 | 0/0/0 | 3,578/167 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -45,18 +45,22 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Swift_1985.pdf` | Swift CG et al., Single dose pharmacokinetics and pharma…, British journal of clinical… (1985) | popPK | 7 | [10.1111/j.1365-2125.1985.tb05041.x](https://doi.org/10.1111/j.1365-2125.1985.tb05041.x) | [2864049](https://pubmed.ncbi.nlm.nih.gov/2864049) | PK study of loprazolam in young vs elderly volunteers, but the abstract only states t1/2 and AUC differed without giving numeric values. |
+| `Swift_1985.pdf` | Swift CG et al., Single dose pharmacokinetics and pharma…, British journal of clinical… (1985) | popPK | 9 | [10.1111/j.1365-2125.1985.tb05041.x](https://doi.org/10.1111/j.1365-2125.1985.tb05041.x) | [2864049](https://pubmed.ncbi.nlm.nih.gov/2864049) | The paper reports single-dose pharmacokinetics of loprazolam in humans, but the extracted evidence contains no specific numeric values for clearance, volume, or half-life. |
 
-<sub>queue written 2026-10-06 21:11 UTC</sub>
+<sub>queue written 2026-11-24 02:20 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ashton_1994 | irrelevant | 0 | 0 | A clinical review of benzodiazepine use with no PK parameters or numeric disposition values for loprazolam. |
-| popPK | Illing_1983 | irrelevant | 2 | 1 | Metabolism/identification study with no quantitative disposition parameters (CL, V, t½, model) reported; only qualitative metabolite profiles. |
-| popPK | Rickels_1986 | irrelevant | 1 | 0 | Narrative review of hypnotic clinical use; loprazolam only mentioned as having an intermediate half-life, with no quantitative PK parameters reported. |
-| popPK | Swift_1985 | relevant | 7 | 2 | PK study of loprazolam in young vs elderly volunteers, but the abstract only states t1/2 and AUC differed without giving numeric values. |
+| popPK | Ashton_1994 | irrelevant | 0 | 0 | The paper is a clinical guideline/review regarding the rational use of benzodiazepines and does not report quantitative pharmacokinetic parameters for loprazolam. |
+| PGx | Ashton_1994 | not_relevant | 0 | 0 | The paper is a clinical guideline on the rational use of benzodiazepines and does not discuss pharmacogenomics, gene variants, or their impact on pharmacokinetics or pharmacodynamics. |
+| popPK | Illing_1983 | irrelevant | 2 | 0 | The paper is a qualitative metabolite identification study describing chemical pathways and extraction data, not a quantitative pharmacokinetic parameter estimation study. |
+| PGx | Illing_1983 | not_relevant | 0 | 1 | The paper describes the general metabolism of loprazolam across different species without analyzing the effects of genetic variants or genotypes on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Rickels_1986 | irrelevant | 0 | 0 | The paper is a general clinical review of hypnotics that mentions loprazolam only in a qualitative context (categorized by half-life) without providing any quantitative pharmacokinetic parameter values. |
+| PGx | Rickels_1986 | not_relevant | 0 | 0 | The text is a general review of hypnotic benzodiazepines and their clinical use, with no mention of genetics or pharmacogenomics. |
+| popPK | Swift_1985 | relevant | 9 | 0 | The paper reports single-dose pharmacokinetics of loprazolam in humans, but the extracted evidence contains no specific numeric values for clearance, volume, or half-life. |
+| PGx | Swift_1985 | not_relevant | 0 | 0 | The study compares pharmacokinetics and pharmacodynamics in young versus elderly volunteers (age-based differences) but does not report any effects of gene variants, genotypes, or genotypes on these parameters. |
 
 
 </details>

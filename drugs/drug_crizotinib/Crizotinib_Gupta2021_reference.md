@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Crizotinib’s absorption-rate constant (ka) has no reported value and was defaulted, so the record was held back.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="crizotinib" model-id="Crizotinib_Gupta2021_reference" status="needs_review" stale="false" population="" measured-compound="crizotinib" parameterization="apparent" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Gupta N, Wang X, Offman E, Prohn M, Narasimhan N, Kerstein D et al. Population P
 
 ### Reviewer guidance
 
-**Crizotinib’s absorption-rate constant (ka) has no reported value and was defaulted, so the record was held back.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-Ka uses a library default, not an estimate from this paper; this affects the simulated profile but is unsupported by the paper. The model also defaulted Tlag, assumed F=1 and Fm=1 with no molar correction, and used first-order depot input for the apparent (/F) parameterization. Extracted — crizotinib: CL/F 10.6 L/h, V1/F 207 L, V2/F 114 L, Q/F 12.6 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — crizotinib: CL/F 10.6 L/h, V1/F 207 L, V2/F 114 L, Q/F 12.6 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q22: this record has 12.8, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.733, 0 of 1 reader(s) agree | 0.733 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.733 (11 of 15 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.733 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

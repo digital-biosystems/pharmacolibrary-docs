@@ -25,6 +25,12 @@ Cilgavimab is an antiviral monoclonal antibody used to treat certain viral infec
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Li_2025_reference](drugs/drug_cilgavimab/Cilgavimab_Li2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Li N et al., Safety, Tolerability, and Pharmacokinet…, Clinical pharmacology in dr… (2025) | [10.1002/cpdd.1583](https://doi.org/10.1002/cpdd.1583) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="not_reviewed" data-sim="no"></span><span class="pk-badge pk-badge--neutral">not_reviewed</span> | [Bender_2025_tixagevimab_cilgavimab_im_placebo](drugs/drug_cilgavimab/Cilgavimab_Bender2025_tixagevimab_cilgavimab_im_placebo.md) | — | general linear (no model) | 1 | Bender Ignacio RA et al., Tixagevimab/cilgavimab or placebo for C…, iScience (2025) | [10.1016/j.isci.2025.111938](https://doi.org/10.1016/j.isci.2025.111938) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="not_reviewed" data-sim="no"></span><span class="pk-badge pk-badge--neutral">not_reviewed</span> | [↳ tixagevimab_cilgavimab_im_t_c_im](drugs/drug_cilgavimab/Cilgavimab_Bender2025_tixagevimab_cilgavimab_im_t_c_im.md) | — | general linear (no model) | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="not_reviewed" data-sim="no"></span><span class="pk-badge pk-badge--neutral">not_reviewed</span> | [↳ tixagevimab_cilgavimab_im_total](drugs/drug_cilgavimab/Cilgavimab_Bender2025_tixagevimab_cilgavimab_im_total.md) | — | general linear (no model) | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="not_reviewed" data-sim="no"></span><span class="pk-badge pk-badge--neutral">not_reviewed</span> | [↳ tixagevimab_cilgavimab_iv_placebo](drugs/drug_cilgavimab/Cilgavimab_Bender2025_tixagevimab_cilgavimab_iv_placebo.md) | — | general linear (no model) | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="not_reviewed" data-sim="no"></span><span class="pk-badge pk-badge--neutral">not_reviewed</span> | [↳ tixagevimab_cilgavimab_iv_t_c_iv](drugs/drug_cilgavimab/Cilgavimab_Bender2025_tixagevimab_cilgavimab_iv_t_c_iv.md) | — | general linear (no model) | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ tixagevimab_cilgavimab_iv_total](drugs/drug_cilgavimab/Cilgavimab_Bender2025_tixagevimab_cilgavimab_iv_total.md) | — | general linear (no model) | 0 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Clegg_2024_azd7442](drugs/drug_cilgavimab/Cilgavimab_Clegg2024_azd7442.md) | — | 1-compartment (no model) | 2 | Clegg LE et al., Accelerating therapeutics development d…, Antimicrobial agents and ch… (2024) | [10.1128/aac.01587-23](https://doi.org/10.1128/aac.01587-23) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ cilgavimab](drugs/drug_cilgavimab/Cilgavimab_Clegg2024_cilgavimab.md) | — | 1-compartment (no model) | 2 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Jansen_2026_reference](drugs/drug_cilgavimab/Cilgavimab_Jansen2026_reference.md) | — | 2-compartment (no model) | 3 | Jansen E et al., Characterization of the VHH-Fc construc…, PLoS medicine (2026) | [10.1371/journal.pmed.1004609](https://doi.org/10.1371/journal.pmed.1004609) |
@@ -50,14 +56,24 @@ Cilgavimab is an antiviral monoclonal antibody used to treat certain viral infec
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:14 | 7:40 | 1/4/0 | 2/1/0 | 0/0/0 | 402,747/25,703 | ollama / glm-5.3-flash | 29 | 4/22 | 29/0 | 0 |
+| 2026-11-23 20:37 | 0:09 | 1/5/5 | 2/1/0 | 0/0/0 | 5,940/450 | einfracz / qwen3.8-27b | 29 | 4/22 | 29/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 51 matched, 44 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 5  ·  extracted 0  ·  needs review 1  ·  rejected 4  ·  stale 0
+- **screened:** 3  ·  **relevant:** 3
+- **records:** 11  ·  extracted 0  ·  needs review 1  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Okada_2023.pdf` | Okada H et al., Safety, tolerability, and pharmacokinet…, Journal of infection and ch… (2023) | popPK | 10 | [10.1016/j.jiac.2023.07.014](https://doi.org/10.1016/j.jiac.2023.07.014) | [37524201](https://pubmed.ncbi.nlm.nih.gov/37524201) | Reports quantitative half-life values for cilgavimab in humans, but specific clearance and volume parameters are likely in the full text or figures not fully detailed in the excerpt. |
+
+<sub>queue written 2026-11-23 20:37 UTC</sub>
 
 ## Screened and excluded
 
@@ -65,18 +81,22 @@ Cilgavimab is an antiviral monoclonal antibody used to treat certain viral infec
 |---|---|---|---|---|---|
 | PGx | Basoulis_2024 | not_relevant | 0 | 0 | Clinical efficacy study of tixagevimab/cilgavimab in immunocompromised patients; no gene variant/genotype effects on PK or PD parameters reported. |
 | PGx | Beaulieu_2024 | not_relevant | 0 | 0 | The paper examines variant-dependent antiviral efficacy of Evusheld (viral variant, not host gene variant) with no pharmacogenomic effect on PK/PD parameters. |
-| PGx | Bender_2025 | not_relevant | 0 | 0 | Reports PK, ADA, and neutralization of tixagevimab/cilgavimab but no gene variant/genotype/phenotype effects on PK or PD parameters. |
-| popPK | Cai_2024 | irrelevant | 2 | 1 | Cilgavimab is only a co-formulated comparator; no quantitative PK parameters for it are reported, and concentration data are referenced to a population PK model without values. |
-| PGx | Cai_2024 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effects on cilgavimab PK/PD are reported; only viral escape mutations affect neutralization. |
+| PGx | Bender_2025 | not_relevant | 0 | 0 | The paper reports general population pharmacokinetics and safety of cilgavimab but does not link any genetic variant, genotype, or phenotype to changes in PK or PD parameters. |
+| popPK | Cai_2024 | irrelevant | 1 | 0 | Cilgavimab is only a component of a combination used for comparison; the paper reports PK for AZD3152, and cilgavimab values are not provided numerically. |
+| PGx | Cai_2024 | not_relevant | 0 | 0 | The paper describes the efficacy, safety, and population PK of the antibody AZD3152/cilgavimab combination in general adult populations, but does not report any pharmacogenomic effects (gene variants altering PK/PD). |
 | PGx | Clegg_2024 | not_relevant | 0 | 0 | Covariates are demographic/clinical (weight, sex, diabetes, race, injection site, TEADA); no gene variant/genotype/phenotype effects on cilgavimab PK/PD are reported. |
 | PGx | Clegg_2024_2 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effects on cilgavimab PK/PD are reported; only serum concentrations and IC50 correlations. |
 | PGx | Focosi_2022 | not_relevant | 3 | 5 | Reports viral Spike mutations affecting in vitro neutralization (PD efficacy), not host gene variants altering cilgavimab PK/PD parameters. |
-| PGx | Forte-Soto_2023 | not_relevant | 0 | 0 | Phase 1 PK/safety study of cilgavimab in healthy adults with no gene variant/genotype/phenotype analysis. |
+| popPK | Forte-Soto_2023 | relevant | 8 | 4 | The study reports half-life and Cmax values for cilgavimab in humans, but lacks specific clearance (CL) or volume (V) parameters which are likely detailed in the referenced Table 2 or Supplementary Appendix not provided. |
+| PGx | Forte-Soto_2023 | not_relevant | 0 | 0 | The paper reports standard PK/PD safety and efficacy data for AZD7442 in healthy adults but does not analyze the impact of any gene variants, genotypes, or genetic phenotypes on drug pharmacokinetics or pharmacodynamics. |
 | popPK | Gidari_2024 | irrelevant | 1 | 2 | This is an efficacy/neutralization study; Cmax is taken from literature and EC50 values are pharmacodynamics, not PK disposition parameters (no CL, V, or half-life model for cilgavimab). |
 | PGx | Gidari_2024 | not_relevant | 0 | 0 | The paper evaluates viral variant effects on Evusheld neutralization, not host gene variant/genotype effects on PK/PD parameters. |
-| popPK | Gonzalez-Bocco_2025 | irrelevant | 0 | 0 | This is a population PK study of sotrovimab; cilgavimab is only mentioned as co-administered prophylaxis in 83 participants, with no cilgavimab PK parameters reported. |
-| popPK | Hirsch_2022 | irrelevant | 0 | 0 | A Cochrane systematic review of prophylaxis efficacy with no PK parameters for cilgavimab; no numeric disposition values present. |
-| PGx | Huygens_2024 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effects on cilgavimab PK/PD parameters are reported; outcomes are clinical/virological only. |
+| popPK | Gonzalez-Bocco_2025 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of sotrovimab, not cilgavimab (cilgavimab is mentioned only as a prophylactic agent received by some participants). |
+| PGx | Gonzalez-Bocco_2025 | not_relevant | 0 | 0 | The paper studies sotrovimab, not cilgavimab, and evaluates standard covariates (weight, renal function) rather than pharmacogenomic variants. |
+| popPK | Hirsch_2022 | irrelevant | 0 | 0 | The paper is a systematic review of clinical efficacy for preventing infection and reports no pharmacokinetic parameters. |
+| PGx | Hirsch_2022 | not_relevant | 0 | 0 | The paper is a systematic review of clinical trial efficacy and safety for monoclonal antibodies; it contains no pharmacokinetic data, pharmacodynamic modeling, or analysis of genetic variants affecting drug exposure or response. |
+| popPK | Huygens_2024 | irrelevant | 0 | 0 | The study reports clinical outcomes and viral clearance kinetics, not pharmacokinetic parameters (CL, V, ka) for cilgavimab. |
+| PGx | Huygens_2024 | not_relevant | 0 | 0 | The paper reports clinical and virological outcomes of mAbs in immunocompromised patients but does not investigate pharmacogenomic variants or their effects on cilgavimab PK/PD. |
 | popPK | Jansen_2026 | irrelevant | 0 | 0 | The paper reports PK of rimteravimab (XVR011), a different drug; cilgavimab is only mentioned as a comparator therapeutic antibody with no PK values for it. |
 | PGx | Jiménez_2026 | not_relevant | 3 | 2 | Reports viral spike mutations under cilgavimab selection pressure, not a host gene variant effect on cilgavimab PK/PD parameters. |
 | popPK | Kekic_2026 | irrelevant | 3 | 1 | This is a covariate-selection methodology paper using cilgavimab popPK data as an example; no numeric PK parameter values (CL, V, ka) for cilgavimab are reported, and details are deferred to original publications/supplementary figures. |
@@ -84,6 +104,7 @@ Cilgavimab is an antiviral monoclonal antibody used to treat certain viral infec
 | PGx | Li_2025 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effects on cilgavimab PK or PD are reported; only dose, safety, and PK/PD data in healthy Chinese adults. |
 | PGx | Loo_2022 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effects on cilgavimab PK/PD are reported; PK data are from healthy participants without pharmacogenomic stratification. |
 | PGx | Massonnaud_2026 | not_relevant | 0 | 0 | No pharmacogenomic/genotype effects on cilgavimab PK or PD parameters are reported; the paper covers clinical efficacy, safety, PK, immunogenicity without gene-variant associations. |
+| PGx | Okada_2023 | not_relevant | 0 | 0 | The paper reports general pharmacokinetics in healthy Japanese adults but does not report any genetic variants or genotypes associated with the drug's PK or PD parameters. |
 | PGx | Perrotta_2024 | not_relevant | 1 | 3 | No gene variant/genotype/phenotype is studied; only vaccination status and mAb treatment effects on virological clearance are reported. |
 | PGx | Reindl-Schwaighofer_2024 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype is examined; PK (half-life) and PD outcomes are reported without any pharmacogenomic stratification. |
 | PGx | Roe_2023 | not_relevant | 2 | 5 | Describes SARS-CoV-2 viral spike mutations affecting in vitro neutralization (IC50) of cilgavimab, not host gene variants altering PK/PD parameters. |
@@ -91,7 +112,8 @@ Cilgavimab is an antiviral monoclonal antibody used to treat certain viral infec
 | popPK | Schilling_2024 | irrelevant | 0 | 0 | This is a viral clearance study of molnupiravir vs nirmatrelvir; cilgavimab is only a mentioned treatment arm with no PK parameters reported. |
 | PGx | Schilling_2024 | not_relevant | 0 | 0 | No gene variant/genotype/phenotype effects on cilgavimab PK/PD are reported; tixagevimab–cilgavimab is only a listed treatment arm. |
 | popPK | Stadler_2023 | irrelevant | 3 | 4 | This is an efficacy/immunocorrelate modeling study, not a PK study; only a half-life (95 days) for the cilgavimab/tixagevimab combination is cited, with no CL/V/compartmental parameters, and detailed values live in supplementary tables not provided. |
-| PGx | Tebas_2025 | not_relevant | 0 | 0 | Phase 1 PK/safety study of DNA-encoded mAbs with no pharmacogenomic (gene variant/genotype) effects on PK or PD parameters reported. |
+| popPK | Tebas_2025 | irrelevant | 2 | 1 | The study reports pharmacokinetics for DNA-encoded monoclonal antibodies (AZD5396/AZD8076) which are modified versions of the cilgavimab/tixagevimab cocktail, but does not report disposition parameters for cilgavimab itself, and no numeric clearance or volume values are present. |
+| PGx | Tebas_2025 | not_relevant | 0 | 0 | The paper is a Phase 1 PK/safety trial of a DNA-encoded antibody but does not report any pharmacogenomic analysis or gene variant stratification. |
 | popPK | Wang_2026 | irrelevant | 0 | 0 | In vitro drug-combination efficacy study of sotrovimab with antivirals; cilgavimab is not the subject and no PK disposition parameters are reported. |
 | popPK | Wongnak_2024 | irrelevant | 0 | 0 | This is a viral clearance (SARS-CoV-2) pharmacodynamic study, not a PK study of cilgavimab; the tixagevimab/cilgavimab arm's data are explicitly not included in this manuscript. |
 | popPK | Zheng_2026 | irrelevant | 0 | 0 | In vitro S-RBD binding/entry-inhibition screening study; cilgavimab is only mentioned as a comparator antibody, with no PK parameters for it. |
@@ -101,4 +123,4 @@ Cilgavimab is an antiviral monoclonal antibody used to treat certain viral infec
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcilgavimab%5D&body=Drug%3A%20cilgavimab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cilgavimab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 16:07 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 12:08 UTC</sub>

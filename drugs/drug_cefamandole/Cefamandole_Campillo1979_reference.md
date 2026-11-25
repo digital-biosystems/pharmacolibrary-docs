@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cefamandole’s λ1 value of 5.006 hr−1 is associated with a reported unit failure, but the stated dimensions both equal 1/[time].
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="cefamandole" model-id="Cefamandole_Campillo1979_reference" status="rejected" stale="false" population="patients with terminal renal impairment" measured-compound="cefamandole" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Campillo JA, Lanao JM, Dominguez-Gil A, Tabernero JM, Rubio F. Pharmacokinetics 
 
 ### Reviewer guidance
 
-**Cefamandole’s λ1 value of 5.006 hr−1 is associated with a reported unit failure, but the stated dimensions both equal 1/[time].**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The unit finding therefore does not establish a dimensional mismatch for λ1. Separately, the 2C topology has an unreachable compartment; the abstract-only record uses reported summary statistics in place of a fitted model, and the second reader did not recover the listed parameter values. Extracted — cefamandole: λ1 5.01 hr-1, kel 0.182 hr-1, k12 2.6 hr-1, k21 2.15 hr-1, k13 0.441 hr-1, V1 5.7 l, V2 6.19 l, Vss 11.9 l.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefamandole: λ1 5.01 hr-1, kel 0.182 hr-1, k12 2.6 hr-1, k21 2.15 hr-1, k13 0.441 hr-1, V1 5.7 l, V2 6.19 l, Vss 11.9 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefamandole, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

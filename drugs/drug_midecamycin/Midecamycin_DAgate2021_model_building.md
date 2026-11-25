@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the paper models a different drug, and the model's simulated peak concentration (1.09) far exceeds the paper's reported value (0.0144).
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0144, model 1.09); paper_subject_is_other_drug (+1 more).
 
 <div class="pk-model-meta" hidden drug="midecamycin" model-id="Midecamycin_DAgate2021_model_building" status="rejected" stale="false" population="unknown" measured-compound="unknown" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ D'Agate S, Musuamba FT, Jacqz-Aigrain E, Della Pasqua O. Simplified Dosing Regim
 
 ### Reviewer guidance
 
-**The record was rejected because the paper models a different drug, and the model's simulated peak concentration (1.09) far exceeds the paper's reported value (0.0144).**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0144, model 1.09); paper_subject_is_other_drug (+1 more).**
 
-The source paper's subject is not midecamycin, as its title and abstract do not name the drug. The model's clearance (0.089 L/h) and volume of distribution (0.908 L) produce a peak concentration ratio of 75.8593 compared to the paper's observation. Extracted — unknown: CL 0.089 L/h, V 0.908 L.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. None of the extracted parameters is midecamycin's own; they describe unknown. Extracted — unknown: CL 0.089 L/h, V 0.908 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,8 +123,8 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 0.0144 | 1.092 | 75.86 | mg/L→SI vs simulated kg/m3 |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (6 of 6 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 0.0144 | 1.092 | 75.86 | reported 14.4 mg/L→SI vs simulated kg/m3 |
 | T1_cmin_ss | reference | skipped | 0.66 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">

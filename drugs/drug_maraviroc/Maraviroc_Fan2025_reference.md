@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Maraviroc clearance and central volume are physiologically implausible, indicating a unit or scale error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="maraviroc" model-id="Maraviroc_Fan2025_reference" status="rejected" stale="false" population="" measured-compound="maraviroc" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Fan X, Cao K, Wu X, Yan X. Pharmacokinetic-pharmacodynamic modeling of a highly 
 
 ### Reviewer guidance
 
-**Maraviroc clearance and central volume are physiologically implausible, indicating a unit or scale error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The central volume of distribution is recorded as 0.73 mL and total clearance as 0.69 mL/h. These values are far below normal physiological ranges for a small molecule. The review reference source suggests these are not standard human PK parameters. Extracted — maraviroc: CL 0.69 mL/h, V1 0.73 mL, V2 0.12 mL, Q 1.86 mL/h, kabs 0.46 1/h.
+Extracted — maraviroc: CL 0.69 mL/h, V1 0.73 mL, V2 0.12 mL, Q 1.86 mL/h, kabs 0.46 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 0.87, the second reading 0.082; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper models DSM265, not tafenoquine, despite listing tafenoquine parameters.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_CherkaouiRbati2023_reference" status="rejected" stale="false" population="" measured-compound="tafenoquine" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Cherkaoui-Rbati MH, Andenmatten N, Burgert L, Egbelowo OF, Fendel R, Fornari C e
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper models DSM265, not tafenoquine, despite listing tafenoquine parameters.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The source text identifies the modeled drug as DSM265, with tafenoquine serving only as a comparator prophylactic without reported PK parameters. Consequently, the extracted values for tafenoquine are not derived from the paper's primary analysis. A second reader also disagreed on multiple parameter assignments, noting that specific values were not found in the text. Extracted — tafenoquine: CL 0.476 L/h, V1 8.58 L, V2 57.3 L, Q 37.1 L/h, tlag 0.147 h.
+Extracted — tafenoquine: CL 0.476 L/h, V1 8.58 L, V2 57.3 L, Q 37.1 L/h, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q306: this record has 0.563, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (6 of 12 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (6 of 12 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

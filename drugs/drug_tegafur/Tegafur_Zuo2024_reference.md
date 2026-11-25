@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The study describes apatinib pharmacokinetics with tegafur as co-medication, not a primary model for tegafur.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="tegafur" model-id="Tegafur_Zuo2024_reference" status="rejected" stale="false" population="" measured-compound="tegafur" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Zuo L, Ling J, Hu N, Chen R. Establishment and validation of a population pharma
 
 ### Reviewer guidance
 
-**The study describes apatinib pharmacokinetics with tegafur as co-medication, not a primary model for tegafur.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source text confirms the subject is apatinib, with tegafur mentioned only as a co-administered agent. Consequently, the extracted tegafur parameters, such as CL/F 56.7 L/h, do not represent a fitted model for the drug. A second reader disagreed with the absorption rate constant value of 0.08 h-1, citing null data. Extracted — tegafur: CL/F 56.7 L/h, V/F 674 L, kabs 0.08 h-1.
+Extracted — tegafur: CL/F 56.7 L/h, V/F 674 L, kabs 0.08 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 19.57, the second reading 19.57; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.875 (7 of 8 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.875 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

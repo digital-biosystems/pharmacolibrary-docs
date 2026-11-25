@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Motoki_2019_CLRUA](drugs/drug_dotinurad/pd_Motoki_2019_CLRUA.md) | renal urate clearance (CLRUA) ← dotinurad · direct Emax (saturable) effect | — | Motoki K et al., Pharmacokinetic/pharmacodynamic modelin…, Pharmacology research & per… (2019) | [10.1002/prp2.533](https://doi.org/10.1002/prp2.533) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Motoki_2019_CLRUA](drugs/drug_dotinurad/pd_Motoki_2019_CLRUA.md) | renal urate clearance (CLRUA) ← dotinurad · direct Emax (saturable) effect | — | Motoki K et al., Pharmacokinetic/pharmacodynamic modelin…, Pharmacology research & per… (2019) | [10.1002/prp2.533](https://doi.org/10.1002/prp2.533) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

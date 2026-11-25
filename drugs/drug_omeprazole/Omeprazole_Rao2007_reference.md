@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because the source paper studies escitalopram and citalopram, not omeprazole, which appears only as a co-medication.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Rao2007_reference" status="rejected" stale="false" population="" measured-compound="omeprazole" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Rao N. The clinical pharmacokinetics of escitalopram. Clinical pharmacokinetics 
 
 ### Reviewer guidance
 
-**Rejected because the source paper studies escitalopram and citalopram, not omeprazole, which appears only as a co-medication.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The extracted parameters (CL/F 34.9 L/h, V/F 1254.7 L) cannot be validated because the study does not fit omeprazole pharmacokinetics. Absorption parameters (ka, Tlag) were substituted with defaults rather than explicit estimates. A second reader disagreed on multiple values, including the volume of distribution (1254.7 L vs. 1100 L). Extracted — omeprazole: CL/F 34.9 L/h, V/F 1.25e+03 L.
+Extracted — omeprazole: CL/F 34.9 L/h, V/F 1.25e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 685, the second reading 685; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.533, 0 of 1 reader(s) agree | 0.533 | cross-check disputed by a second reader: verdict disputed, agreement 0.533, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.667 (10 of 15 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (10 of 15 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

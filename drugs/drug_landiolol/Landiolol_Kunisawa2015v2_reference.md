@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The absorption lag time for landiolol was not extracted, and a second reader disputed the dose compound identification.
+> T3_param_coverage; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="landiolol" model-id="Landiolol_Kunisawa2015v2_reference" status="needs_review" stale="false" population="patients with peripheral arterial disease" measured-compound="landiolol" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Kunisawa T, Yamagishi A, Suno M, Nakade S, Honda N, Kurosawa A et al. Target-con
 
 ### Reviewer guidance
 
-**The absorption lag time for landiolol was not extracted, and a second reader disputed the dose compound identification.**
+**T3_param_coverage; x1_cross_check.**
 
-The record lists a typical absorption lag time of 0.820 min for landiolol, but the model coverage check found this parameter was neither emitted nor defaulted. Additionally, a second reader disagreed with the identified dose compound, suggesting landiolol hydrochloride rather than landiolol, resulting in a disputed verdict with 0 of 1 readers agreeing. Extracted — landiolol: CL 36.6 ml/min/kg, V1 101 ml/kg, Q 16.1 ml/min/kg, V2 55.6 ml/kg, tlag 0.82 min.
+Extracted — landiolol: CL 36.6 ml/min/kg, V1 101 ml/kg, Q 16.1 ml/min/kg, V2 55.6 ml/kg, tlag 0.82 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has landiolol, the second reading landiolol hydrochloride. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | cross-check disputed by a second reader: verdict disputed, agreement 0.889, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.889 (8 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.889 | cross-check contradicted by a second reader: verdict disputed; agreement 0.889 (8 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

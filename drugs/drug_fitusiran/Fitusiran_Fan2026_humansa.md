@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> Fitusiran was refused because target concentration Rtot (14.34 nM) and metabolic Vmax (4.37 nmol/h) have dimensions incompatible with their structural parameters.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q333 unit nM ([length]) vs [mass] / [length] ** 3; Q66 unit nmol/h ([substance] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="fitusiran" model-id="Fitusiran_Fan2026_humansa" status="rejected" stale="false" population="multiple species (mouse, rat, monkey, human)" measured-compound="fitusiran" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Fan X, Xiao Y, Cao K, Zhang R, Yan X. A computational model-powered platform to 
 
 ### Reviewer guidance
 
-**Fitusiran was refused because target concentration Rtot (14.34 nM) and metabolic Vmax (4.37 nmol/h) have dimensions incompatible with their structural parameters.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q333 unit nM ([length]) vs [mass] / [length] ** 3; Q66 unit nmol/h ([substance] / [time]) vs [mass] / [time].**
 
-The record reports Rtot in nM rather than the required mass-per-volume dimension, and Vmax in nmol/h rather than mass-per-time. A reported unit could not be converted to SI, leaving the affected parameter without an SI value. Extracted — fitusiran: kabs 0.23 1/h, fu 39.3, Rtot 14.3 nM, Vmax 4.37 nmol/h, Km 97.8, koff 0.023 1/h, kint 4.69 1/h, kel 0.0076 1/h.
+A reported unit could not be converted (Rtot and Vmax), so that value has no SI equivalent. Extracted — fitusiran: kabs 0.23 1/h, fu 39.3, Rtot 14.3 nM, Vmax 4.37 nmol/h, Km 97.8, koff 0.023 1/h, kint 4.69 1/h, kel 0.0076 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fitusiran, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Record disputed due to missing CHF covariate simulation and unit conversion failure for bioavailability.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Grasela1984_reference" status="needs_review" stale="false" population="patients receiving procainamide" measured-compound="procainamide" parameterization="mechanistic" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Grasela TH, Sheiner LB. Population pharmacokinetics of procainamide from routine
 
 ### Reviewer guidance
 
-**Record disputed due to missing CHF covariate simulation and unit conversion failure for bioavailability.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The bioavailability parameter is tagged with 'Pronestyl®' instead of a standard unit, preventing SI conversion. Simulations covered only the reference individual, omitting the 11% clearance reduction for heart failure. A second reader disagreed on the dose compound and identified an additional 0.68 bioavailability parameter. Extracted — procainamide: CLR 14.4 L/h, CL 1.2 L/h, V 136 L, Fab 0.85 Pronestyl®, tmax 0.7 hours.
+The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — procainamide: CLR 14.4 L/h, CL 1.2 L/h, V 136 L, Fab 0.85 Pronestyl®, tmax 0.7 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has procainamide, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -151,9 +151,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.737, 0 of 1 reader(s) agree | 0.737 | cross-check disputed by a second reader: verdict disputed, agreement 0.737, 0 of 1 reader(s) agree |
-| T1_tmax | reference | skipped |  | 0.1833 |  | non-numeric value |
-| T1_tmax | reference | skipped |  | 0.1833 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.737 (14 of 19 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.737 | cross-check contradicted by a second reader: verdict disputed; agreement 0.737 (14 of 19 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_tmax | reference | skipped |  | 0.1833 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | skipped |  | 0.1833 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -37,7 +37,7 @@ Perindopril is a long-acting ACE inhibitor prescribed for arterial hypertension,
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Bellissant_1990_CEA](drugs/drug_perindopril/pd_Bellissant_1990_CEA.md) | plasma converting enzyme activity ← perindoprilat · delayed effect through an effect compartment | — | Bellissant E et al., [Modeling of the relation between plasm…, Archives des maladies du co… (1990) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Bellissant_1990_CEA](drugs/drug_perindopril/pd_Bellissant_1990_CEA.md) | plasma converting enzyme activity ← perindoprilat · delayed effect through an effect compartment | — | Bellissant E et al., [Modeling of the relation between plasm…, Archives des maladies du co… (1990) | — |
 
 ## Pharmacogenomics (PGx)
 

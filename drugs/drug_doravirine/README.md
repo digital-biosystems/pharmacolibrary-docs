@@ -35,6 +35,13 @@ Doravirine is a non-nucleoside reverse transcriptase inhibitor used to treat HIV
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): F</sub> | [Thoueille_2024_reference](drugs/drug_doravirine/Doravirine_Thoueille2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+1 cov.) | Thoueille P et al., Population pharmacokinetic analysis of…, British journal of clinical… (2024) | [10.1111/bcp.15975](https://doi.org/10.1111/bcp.15975) |
 
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Yee_2019_proportion_of_individuals_achieving_50_copies_ml](drugs/drug_doravirine/pd_Yee_2019_proportion_of_individuals_achieving_50_copies_ml.md) | proportion of individuals achieving &lt;50 copies/ml ← doravirine · categorical (graded) response model | — | Yee KL et al., Population Pharmacokinetics of Doraviri…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02502-18](https://doi.org/10.1128/AAC.02502-18) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Yee_2019_virologic_failure](drugs/drug_doravirine/pd_Yee_2019_virologic_failure.md) | virologic failure ← doravirine · categorical (graded) response model | — | Yee KL et al., Population Pharmacokinetics of Doraviri…, Antimicrobial agents and ch… (2019) | [10.1128/AAC.02502-18](https://doi.org/10.1128/AAC.02502-18) |
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -47,39 +54,36 @@ Doravirine is a non-nucleoside reverse transcriptase inhibitor used to treat HIV
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:32 | 1:24 | 1/0/0 | 0/0/0 | 0/0/0 | 96,244/5,268 | ollama / glm-5.3-flash | 3 | 2/1 | 3/0 | 0 |
+| 2026-11-23 22:42 | 0:09 | 1/0/0 | 2/0/0 | 0/0/0 | 9,483/826 | einfracz / qwen3.8-27b | 3 | 2/1 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 2  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Yee_2019.pdf` | Yee KL et al., Population Pharmacokinetics of Doraviri…, Antimicrobial agents and ch… (2019) | popPK | 10 | [10.1128/AAC.02502-18](https://doi.org/10.1128/AAC.02502-18) | [30745394](https://pubmed.ncbi.nlm.nih.gov/30745394) | Population PK model of doravirine in humans, but no numeric parameter values (CL, V, etc.) appear in the evidence provided. |
-| `Fromage_2024.pdf` | Fromage Y et al., In Silico Pharmacokinetics Evaluation o…, Therapeutic drug monitoring (2024) | popPK | 6 | [10.1097/FTD.0000000000001169](https://doi.org/10.1097/FTD.0000000000001169) | [38158596](https://pubmed.ncbi.nlm.nih.gov/38158596) | Simulation study using population PK models for doravirine, but only simulated concentrations are reported; the actual PK parameter values (CL, V, etc.) live in the underlying published models, not in this evidence. |
-
-<sub>queue written 2026-10-07 16:31 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Fromage_2024 | relevant | 6 | 3 | Simulation study using population PK models for doravirine, but only simulated concentrations are reported; the actual PK parameter values (CL, V, etc.) live in the underlying published models, not in this evidence. |
-| popPK | Li_2022 | irrelevant | 2 | 1 | This is a review of HIV RT inhibitors; doravirine is discussed qualitatively with no quantitative PK parameters (CL, V, ka, or population-PK model) for doravirine present in the evidence. |
-| popPK | Moltó_2022 | irrelevant | 3 | 4 | This is a dialysis removal study reporting extraction ratio and concentrations, not disposition PK parameters (CL, V, half-life, or a PK model) for doravirine. |
-| popPK | Sun_2024 | irrelevant | 2 | 3 | Doravirine is only a comparator; only T1/2 and F are given (no CL/V/compartmental model), and the PK data appear to be from animal testing of the novel compound. |
+| popPK | Fromage_2024 | irrelevant | 0 | 0 | The study is an in silico simulation using pre-existing models and does not report the original quantitative pharmacokinetic parameter estimates (CL, V, etc.) for doravirine. |
+| PGx | Fromage_2024 | not_relevant | 0 | 0 | The paper is an in silico pharmacokinetic simulation of drug forgiveness (adherence impact) and does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| popPK | Li_2022 | irrelevant | 1 | 0 | This is a review article, and while it mentions doravirine, the provided text snippet does not contain specific quantitative population-pharmacokinetic parameter values (CL, V, etc.) for doravirine. |
+| PGx | Li_2022 | not_relevant | 0 | 0 | The paper is a general review of HIV RT inhibitors and does not report any pharmacogenomic effects on the PK or PD of doravirine. |
+| popPK | Moltó_2022 | irrelevant | 2 | 3 | The study reports dialysis extraction ratios and point plasma concentrations but does not provide quantitative compartmental pharmacokinetic parameters (e.g., CL, Vd) or a population PK model for doravirine. |
+| PGx | Moltó_2022 | not_relevant | 0 | 0 | The paper investigates the effect of haemodialysis on doravirine clearance, not the impact of any genetic variant or genotype. |
+| popPK | Sun_2024 | irrelevant | 3 | 1 | The paper focuses on a new compound (10n) and uses doravirine only as a comparator, providing no disposition parameters (CL, V) for doravirine itself. |
+| PGx | Sun_2024 | not_relevant | 0 | 0 | The paper reports the discovery and PK/PD profiles of a new compound (10n) compared to doravirine, but does not investigate pharmacogenomic effects of gene variants on doravirine's PK or PD parameters. |
 | popPK | Vaddady_2020 | relevant | 8 | 4 | Population PK model for doravirine in humans, but final model parameter values (CL/F, V/F) are in Table S1 of supplemental material not provided; only AUC/C24/Cmax summary values appear. |
-| popPK | Wang_2019 | irrelevant | 0 | 0 | Medicinal chemistry study of doravirine analogs/prodrugs with only potency and solubility data; no PK parameters. |
-| popPK | Wang_2024 | irrelevant | 0 | 0 | Doravirine is only a potency comparator; the paper studies a different drug (compound 11h) with in vitro data, no PK disposition parameters for doravirine. |
-| popPK | Yee_2019 | relevant | 10 | 3 | Population PK model of doravirine in humans, but no numeric parameter values (CL, V, etc.) appear in the evidence provided. |
-| popPK | Zhao_2022 | irrelevant | 3 | 4 | Doravirine is only the comparator/lead scaffold; only F and T1/2 (no CL/V or PK model) are reported for it, with the new analog ZLM-66 as the subject. |
+| popPK | Wang_2019 | irrelevant | 0 | 0 | The paper reports in vitro biological evaluation (EC50) of doravirine derivatives and prodrugs, not pharmacokinetic disposition parameters. |
+| PGx | Wang_2019 | not_relevant | 0 | 0 | The paper describes the design and in vitro biological evaluation of novel doravirine derivatives and prodrugs, but does not report pharmacogenomic effects on doravirine's PK or PD parameters. |
+| popPK | Wang_2024 | irrelevant | 0 | 0 | The paper focuses on the synthesis and biological characterization of novel HIV inhibitors, with doravirine only mentioned as a comparator agent. |
+| PGx | Wang_2024 | not_relevant | 0 | 0 | The paper describes the design and synthesis of new NNRTI compounds and does not report on pharmacogenomic effects on doravirine. |
+| popPK | Yee_2019 | relevant | 10 | 0 | The paper describes a population PK model for doravirine, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| PGx | Yee_2019 | not_relevant | 0 | 0 | The paper analyzes standard demographic and physiological covariates (weight, age, renal function) but does not assess genetic variants or genotypes. |
+| popPK | Zhao_2022 | relevant | 4 | 6 | The study reports pharmacokinetic parameters (half-life, bioavailability) for doravirine as a comparator in an animal model, providing quantitative context for the subject drug's disposition. |
+| PGx | Zhao_2022 | not_relevant | 0 | 0 | The paper describes the discovery and pharmacokinetic comparison of a new analog (ZLM-66) to doravirine, but does not report any pharmacogenomic effects (gene variants) on doravirine's PK/PD parameters. |
 
 
 </details>

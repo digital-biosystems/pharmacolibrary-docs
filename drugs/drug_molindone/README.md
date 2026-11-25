@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 16:05 | 0:37 | 0/0/0 | 0/0/0 | 0/0/0 | 7,347/354 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 01:20 | 0:03 | 0/0/0 | 0/0/0 | 0/0/0 | 3,718/160 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -48,18 +48,24 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Zeng_1997.pdf` | Zeng XP et al., Muscarinic m4 receptor activation by so…, European journal of pharmac… (1997) | pd | 4 | [10.1016/s0014-2999(96)00956-9](https://doi.org/10.1016/s0014-2999(96)00956-9) | [9085047](https://www.ncbi.nlm.nih.gov/pubmed/9085047) | metadata signals extractable PD data (EC50) |
 | `Schoretsanitis_2019.pdf` | Schoretsanitis G et al., Clinically Significant Drug-Drug Intera…, CNS drugs (2019) | pgx | 8 | [10.1007/s40263-019-00683-7](https://doi.org/10.1007/s40263-019-00683-7) | [31776871](https://www.ncbi.nlm.nih.gov/pubmed/31776871) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-10-06 16:05 UTC</sub>
+<sub>queue written 2026-11-24 01:20 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chang_1988 | irrelevant | 0 | 0 | Rat neurochemical dose-response study of HVA elevation; no PK parameters for molindone are reported. |
-| popPK | Oliver_1982 | irrelevant | 0 | 0 | In vitro guinea pig hippocampal slice study of neuroleptic excitability with no PK parameters for molindone. |
-| popPK | Schaefer_1984 | irrelevant | 0 | 0 | Behavioral pharmacology study in rats with no PK parameters for molindone. |
-| PGx | Schoretsanitis_2019 | not_relevant | 0 | 0 | Molindone is only mentioned as lacking DDI data; no pharmacogenomic effect on its PK/PD parameters is reported. |
-| popPK | Severson_1984 | irrelevant | 0 | 0 | Receptor binding study in mice with no PK parameters for molindone. |
-| popPK | Zeng_1997 | irrelevant | 0 | 0 | In vitro pharmacology study of muscarinic receptor effects; molindone only mentioned as a comparator with no PK parameters. |
+| popPK | Chang_1988 | irrelevant | 0 | 0 | The study measures homovanillic acid levels (pharmacodynamics) in rat brain tissue, not the pharmacokinetic parameters of molindone. |
+| PGx | Chang_1988 | not_relevant | 0 | 0 | The paper compares the potency of antipsychotics on HVA levels in rats and does not report any pharmacogenomic effects (gene variant/genotype) on pharmacokinetic or pharmacodynamic parameters for molindone. |
+| popPK | Oliver_1982 | irrelevant | 0 | 0 | The study is an in-vitro mechanism study assessing neuroleptic-induced seizures in guinea pig hippocampal slices and contains no pharmacokinetic disposition parameters. |
+| PGx | Oliver_1982 | not_relevant | 0 | 0 | The study investigates neuroleptic-induced excitability in vitro and does not report any genetic variants or pharmacogenomic effects on the PK or PD of molindone. |
+| popPK | Schaefer_1984 | irrelevant | 0 | 0 | The paper reports behavioral data (locomotor activity) and contains no pharmacokinetic parameters or disposition data for molindone. |
+| PGx | Schaefer_1984 | not_relevant | 0 | 0 | The paper studies drug interactions and pharmacodynamics in rats, not pharmacogenomics of molindone. |
+| popPK | Schoretsanitis_2019 | irrelevant | 0 | 0 | This is a review of drug-drug interactions where molindone is mentioned only as an agent with insufficient data to provide PK comments, with no quantitative parameters reported. |
+| PGx | Schoretsanitis_2019 | not_relevant | 0 | 0 | The paper explicitly states that there are no comments or available data regarding the pharmacokinetic drug-drug interactions for molindone. |
+| popPK | Severson_1984 | irrelevant | 0 | 0 | The paper investigates dopamine receptor supersensitivity in mice (pharmacodynamics/mechanism) and does not report any quantitative pharmacokinetic parameters (clearance, volume, etc.) for molindone. |
+| PGx | Severson_1984 | not_relevant | 0 | 0 | The study is a preclinical animal study (mice) examining dose-dependent receptor supersensitivity, not a human pharmacogenomic study of molindone. |
+| popPK | Zeng_1997 | irrelevant | 0 | 0 | The study is a pharmacological investigation of muscarinic receptor activation in cells and tissues, not a pharmacokinetic study, and molindone is only mentioned as a comparator with no disposition parameters. |
+| PGx | Zeng_1997 | not_relevant | 0 | 0 | The study examines receptor binding/functional activity in vitro and does not report pharmacogenomic effects on PK/PD parameters. |
 
 
 </details>

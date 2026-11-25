@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="tianeptine" model-id="Tianeptine_Grasela1993_reference" status="rejected" stale="false" population="patients in nine tianeptine PK studies (including alcoholics and depressed patients)" measured-compound="tianeptine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="tianeptine" model-id="Tianeptine_Grasela1993_reference" status="rejected" stale="false" population="patients with alcoholism or depression" measured-compound="tianeptine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Grasela TH, Fiedler-Kelly JB, Salvadori C, Marey C, Jochemsen R. Development of a population pharmacokinetic database for tianeptine. European journal of clinical pharmacology 45(2):173–179 (1993).
@@ -17,7 +17,7 @@ Grasela TH, Fiedler-Kelly JB, Salvadori C, Marey C, Jochemsen R. Development of 
 
 ## Population and dosing
 
-**Population:** patients in nine tianeptine PK studies (including alcoholics and depressed patients) · condition depression / alcoholism · age group adult · n = 112.
+**Population:** patients with alcoholism or depression · condition alcoholism or depression · age group adult.
 
 ## Model
 
@@ -33,7 +33,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,45 +47,37 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tianeptine, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section residual_error: 'clearance increase' routed out of structural estimates ('The residual variability was approximately 30% at concentrations expected during clinical use of the drug.')
-- table section residual_error: 'volume of the central compartment increase' routed out of structural estimates ('The residual variability was approximately 30% at concentrations expected during clinical use of the drug.')
-- table section residual_error: 'clearance' routed out of structural estimates ('The residual variability was approximately 30% at concentrations expected during clinical use of the drug.')
-- table section residual_error: 'volume of central compartment' routed out of structural estimates ('The residual variability was approximately 30% at concentrations expected during clinical use of the drug.')
+- table section residual_error: 'clearance (124% increase)' routed out of structural estimates ('The residual variability was approximately 30% at concentrations expected during clinical use of the drug.')
+- table section residual_error: 'volume of the central compartment (161% increase)' routed out of structural estimates ('The residual variability was approximately 30% at concentrations expected during clinical use of the drug.')
+- table section residual_error: 'population mean (interindividual variability) clearance' routed out of structural estimates ('The residual variability was approximately 30% at concentrations expected during clinical use of the drug.')
+- table section residual_error: 'the volume of central compartment' routed out of structural estimates ('The residual variability was approximately 30% at concentrations expected during clinical use of the drug.')
 - table section residual_error: 'intercompartmental clearance' routed out of structural estimates ('The residual variability was approximately 30% at concentrations expected during clinical use of the drug.')
 - table section residual_error: 'volume of the tissue compartment' routed out of structural estimates ('The residual variability was approximately 30% at concentrations expected during clinical use of the drug.')
-- table section residual_error: 'absorption rate constant' routed out of structural estimates ('The residual variability was approximately 30% at concentrations expected during clinical use of the drug.')
-- table section residual_error: 'residual variability' routed out of structural estimates ('The residual variability was approximately 30% at concentrations expected during clinical use of the drug.')
+- table section residual_error: 'the absorption rate constant' routed out of structural estimates ('The residual variability was approximately 30% at concentrations expected during clinical use of the drug.')
+- table section residual_error: 'The residual variability' routed out of structural estimates ('The residual variability was approximately 30% at concentrations expected during clinical use of the drug.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tianeptine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Grasela_1993_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 
-<details><summary>2 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | tianeptine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | tianeptine | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -123,4 +115,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btianeptine%5D%20Tianeptine_Grasela1993_reference&body=Drug%3A%20tianeptine%0ARecord%3A%20Tianeptine_Grasela1993_reference%0APaper%3A%20Grasela_1993%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tianeptine/Tianeptine_Grasela1993_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:48 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:41 UTC</sub>

@@ -44,12 +44,6 @@ Raltegravir is an antiretroviral integrase inhibitor used to manage HIV infectio
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub> | [Lommerse_2019_reference](drugs/drug_raltegravir/Raltegravir_Lommerse2019_reference.md) | held back | 1-compartment, oral | 6 | Lommerse J et al., Maternal-Neonatal Raltegravir Populatio…, CPT: pharmacometrics & syst… (2019) | [10.1002/psp4.12443](https://doi.org/10.1002/psp4.12443) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Rizk_2015_reference](drugs/drug_raltegravir/Raltegravir_Rizk2015_reference.md) | — | 1-compartment (no model) | 2 | Rizk ML et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2015) | [10.1002/jcph.493](https://doi.org/10.1002/jcph.493) |
 
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Smith_2011_EC50](drugs/drug_raltegravir/pd_Smith_2011_EC50.md) | raltegravir susceptibility of HIV-2 (EC50 in single-cycle assay) ← raltegravir · direct sigmoid Emax (Hill) effect | — | Smith RA et al., Phenotypic susceptibility of HIV-2 to r…, AIDS (London, England) (2011) | [10.1097/QAD.0b013e32834d8e52](https://doi.org/10.1097/QAD.0b013e32834d8e52) |
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -62,50 +56,51 @@ Raltegravir is an antiretroviral integrase inhibitor used to manage HIV infectio
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:31 | 4:49 | 3/1/0 | 1/0/0 | 0/0/0 | 299,302/14,111 | ollama / glm-5.3-flash | 10 | 1/9 | 10/0 | 0 |
+| 2026-11-24 03:19 | 0:03 | 3/1/0 | 0/0/0 | 0/0/0 | 3,912/170 | einfracz / qwen3.8-27b | 10 | 1/9 | 10/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 61 matched, 20 returned
-- **screened:** 4  ·  **relevant:** 4
+- **screened:** 4  ·  **relevant:** 3
 - **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Rizk_2015.pdf` | Rizk ML et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2015) | popPK | 10 | [10.1002/jcph.493](https://doi.org/10.1002/jcph.493) | [25753401](https://pubmed.ncbi.nlm.nih.gov/25753401) | Population PK (2-compartment, CL/V with allometric scaling) of raltegravir in children; AUC and C12h values are given but CL/V estimates themselves may be in tables/supplement not shown. |
-| `Clarke_2020.pdf` | Clarke DF et al., Raltegravir (RAL) in Neonates: Dosing,…, Journal of acquired immune… (2020) | popPK | 7 | [10.1097/QAI.0000000000002294](https://doi.org/10.1097/QAI.0000000000002294) | [31913995](https://pubmed.ncbi.nlm.nih.gov/31913995) | Population PK modeling of raltegravir in neonates is described, but no numeric CL/V or parameter values appear in the evidence (likely in tables/supplement not provided). |
-
-<sub>queue written 2026-10-07 16:27 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Cheung_2022 | irrelevant | 0 | 0 | In-vitro phenotypic resistance study; raltegravir is only a probe drug with EC50 susceptibility fold-changes, no PK disposition parameters. |
-| popPK | Clarke_2020 | relevant | 7 | 3 | Population PK modeling of raltegravir in neonates is described, but no numeric CL/V or parameter values appear in the evidence (likely in tables/supplement not provided). |
-| popPK | Cottrell_2013 | irrelevant | 1 | 0 | This is a review of dolutegravir; raltegravir appears only as a comparator with no PK parameters for raltegravir reported. |
+| popPK | Cheung_2022 | irrelevant | 0 | 0 | The paper is an in-vitro molecular study assessing phenotypic resistance (EC50/fold changes) to raltegravir, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.). |
+| PGx | Cheung_2022 | not_relevant | 0 | 0 | The paper investigates resistance to raltegravir due to HIV viral integrase mutations, not human host pharmacogenomic variants affecting PK or PD. |
+| popPK | Clarke_2020 | relevant | 9 | 0 | The study describes a population PK analysis and dose selection for raltegravir in neonates, but the specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided abstract text. |
+| PGx | Clarke_2020 | not_relevant | 0 | 0 | The paper reports population PK and dosing optimization in neonates based on age and weight, but contains no analysis of pharmacogenomic variants or genotypes. |
+| popPK | Cottrell_2013 | irrelevant | 0 | 0 | The paper is a review focused on the pharmacokinetics of dolutegravir, with raltegravir mentioned only as a comparator for variability and clinical trials; it does not provide original quantitative PK parameters (CL, V, ka) for raltegravir. |
+| PGx | Cottrell_2013 | not_relevant | 0 | 0 | The paper describes the general pharmacokinetic profile of dolutegravir and its metabolic pathways but does not report any specific genetic variants or genotypes influencing PK or PD parameters for raltegravir. |
 | popPK | De_2026 | irrelevant | 4 | 2 | This is a machine-learning limited sampling strategy for predicting raltegravir AUC; it references population PK models (Bukkems, Arab-Alameddine) but does not itself report numeric CL/V/Q/ka values, which live in cited papers/supplementary material. |
-| popPK | Heredia_2017 | irrelevant | 1 | 1 | Efficacy study in humanized mice reporting only EC50 susceptibility values and qualitative drug levels, no PK disposition parameters. |
+| popPK | Heredia_2017 | irrelevant | 0 | 0 | The study is an antiviral efficacy/phenotyping study in humanized mice that reports plasma drug levels comparable to humans but does not provide specific quantitative PK parameters (CL, V, etc.) for raltegravir. |
+| PGx | Heredia_2017 | not_relevant | 0 | 0 | The study describes pharmacovigilance and resistance mutation outcomes in a murine model, not the influence of human genetic variants on raltegravir's PK/PD. |
 | popPK | Herrera_2021 | irrelevant | 3 | 2 | PK/PD PrEP study reporting only concentration ratios and summary statistics; no CL/V/ka/half-life or population-PK model, and detailed values are in supplementary tables/figures not provided. |
 | popPK | Isaacs_2020 | irrelevant | 0 | 0 | Computational docking/structural study of INSTI binding to HIV integrase; no PK parameters for raltegravir are reported. |
 | popPK | Mohammadzadeh_2021 | irrelevant | 1 | 0 | This is a virology/neuropathology study of HIV/SIV brain reservoirs; raltegravir appears only as an ART drug with EC50 potency comparisons, no PK disposition parameters (CL, V, half-life) reported. |
-| popPK | Ndashimye_2021 | irrelevant | 0 | 0 | This is a virology/resistance study with no pharmacokinetic parameters for raltegravir; raltegravir is only the exposure context. |
-| popPK | Pressiat_2018 | irrelevant | 2 | 1 | Raltegravir is only a co-administered drug; no raltegravir PK parameters are reported, and exposures were estimated from published external models. |
-| popPK | Reynolds_2015 | relevant | 4 | 3 | Human PK study of raltegravir with NCA parameters, but only ratio/percentage changes (C12, Cmax, AUC) are given in the abstract; absolute CL/V values are not present in the evidence. |
-| popPK | Smith_2011 | irrelevant | 0 | 0 | In-vitro virology study of HIV susceptibility/resistance; no PK parameters for raltegravir. |
+| popPK | Ndashimye_2021 | irrelevant | 0 | 0 | The study focuses on HIV-1 phenotypic susceptibility and resistance to bictegravir and cabotegravir, with no pharmacokinetic data or disposition parameters for raltegravir. |
+| PGx | Ndashimye_2021 | not_relevant | 0 | 0 | The paper analyzes HIV-1 viral resistance mutations (virogenomics) and their effect on drug susceptibility, not human host pharmacogenomics affecting PK or PD parameters. |
+| popPK | Pressiat_2018 | irrelevant | 1 | 0 | Raltegravir is a co-administered agent in a trial primarily focused on darunavir PK interactions, with no specific quantitative PK parameters for raltegravir reported. |
+| PGx | Pressiat_2018 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (PK) but does not investigate or report any pharmacogenomic effect (gene variant/genotype/phenotype) on a PK or PD parameter. |
+| popPK | Reynolds_2015 | relevant | 8 | 2 | The study reports raltegravir PK (AUC, Cmax, C12) in humans but only provides percentage changes relative to a reference, not the absolute numeric parameter values. |
+| PGx | Reynolds_2015 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction with rifampicin, not the effect of a gene variant or genotype on raltegravir pharmacokinetics. |
+| popPK | Rizk_2015 | relevant | 10 | 3 | The paper describes a population PK model for raltegravir, but specific numeric parameter values (CL, V, Q) are not provided in the abstract, only summary AUC/C12h values. |
+| PGx | Rizk_2015 | not_relevant | 0 | 0 | The paper analyzes population PK of raltegravir in pediatric patients based on weight and age, but does not report any pharmacogenomic analysis or association with specific gene variants. |
+| popPK | Smith_2011 | irrelevant | 0 | 0 | The paper reports in-vitro susceptibility data (EC50 values) for HIV strains, which is virological/mechanistic data, not pharmacokinetic disposition parameters for the drug. |
+| PGx | Smith_2011 | not_relevant | 0 | 0 | The paper describes viral integrase mutations (pathogen resistance) rather than host pharmacogenomic variants affecting raltegravir PK or PD. |
 | popPK | Smith_2015 | irrelevant | 0 | 0 | In vitro antiviral susceptibility study of dolutegravir against HIV-2; raltegravir is only a comparator with EC50 values, no PK parameters. |
-| popPK | Smith_2022 | irrelevant | 0 | 0 | In-vitro phenotypic susceptibility (EC50) study of HIV-2 mutants, not a pharmacokinetic study with disposition parameters. |
+| popPK | Smith_2022 | irrelevant | 0 | 0 | The study is a phenotypic analysis of viral resistance (EC50) rather than a pharmacokinetic study, and it reports no disposition parameters such as clearance or volume. |
+| PGx | Smith_2022 | not_relevant | 2 | 2 | The study characterizes viral integrase mutations causing drug resistance in HIV-2, which is a virological resistance phenotype, not a human pharmacogenomic effect on pharmacokinetics or pharmacodynamics. |
 | popPK | Van_2014 | irrelevant | 0 | 0 | This is a statistical methodology paper on genetic-algorithm variable selection for predicting raltegravir resistance from HIV genotype; no PK parameters (CL, V, ka, half-life) are reported. |
-| popPK | Wu_2024 | irrelevant | 0 | 0 | This is a pharmacogenetics/weight-gain study; raltegravir is only a subgroup of INSTI switch, with no PK parameters reported. |
+| popPK | Wu_2024 | irrelevant | 0 | 0 | The study focuses on pharmacogenetics and weight gain outcomes, not pharmacokinetic parameters, and raltegravir is only a subgroup comparator for weight changes. |
+| PGx | Wu_2024 | not_relevant | 0 | 0 | The paper studies the association between CYP2B6 genotype and weight gain (a clinical outcome/toxicity), not the pharmacokinetics or pharmacodynamics (PK/PD) of raltegravir. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Braltegravir%5D&body=Drug%3A%20raltegravir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_raltegravir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 16:27 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 03:19 UTC</sub>

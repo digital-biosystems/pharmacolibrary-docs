@@ -25,7 +25,7 @@ Butriptyline is a tricyclic antidepressant used for treating depression. It is g
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Bourgouin_1981_reference](drugs/drug_butriptyline/Butriptyline_Bourgouin1981_reference.md) | — | 1-compartment (no model) | 3 | Bourgouin J et al., Butriptyline: human pharmacokinetics an…, Biopharmaceutics & drug dis… (1981) | [10.1002/bdd.2510020204](https://doi.org/10.1002/bdd.2510020204) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Bourgouin_1981_reference](drugs/drug_butriptyline/Butriptyline_Bourgouin1981_reference.md) | — | 1-compartment (no model) | 1 | Bourgouin J et al., Butriptyline: human pharmacokinetics an…, Biopharmaceutics & drug dis… (1981) | [10.1002/bdd.2510020204](https://doi.org/10.1002/bdd.2510020204) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,7 +39,7 @@ Butriptyline is a tricyclic antidepressant used for treating depression. It is g
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 22:11 | 0:22 | 1/0/0 | 0/0/0 | 0/0/0 | 15,894/954 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 17:24 | 0:06 | 1/0/0 | 0/0/0 | 0/0/0 | 4,193/163 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -50,35 +50,43 @@ Butriptyline is a tricyclic antidepressant used for treating depression. It is g
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Bourgouin_1981.pdf` | Bourgouin J et al., Butriptyline: human pharmacokinetics an…, Biopharmaceutics & drug dis… (1981) | popPK | 8 | [10.1002/bdd.2510020204](https://doi.org/10.1002/bdd.2510020204) | [6894708](https://pubmed.ncbi.nlm.nih.gov/6894708) | Human PK study with two-compartment model; some numeric values (Tmax, Cmax, half-life ~20 h) present in abstract, but full CL/V parameters likely in tables not shown. |
 | `Randrup_1977.pdf` | Randrup A et al., Uptake inhibition of biogenic amines by…, Psychopharmacology (1977) | pd | 4 | [10.1007/BF00492370](https://doi.org/10.1007/BF00492370) | [408861](https://www.ncbi.nlm.nih.gov/pubmed/408861) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06 22:11 UTC</sub>
+<sub>queue written 2026-11-23 17:24 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Amsterdam_1980 | irrelevant | 1 | 0 | A review of tricyclic antidepressant PK that only mentions butriptyline as needing further study, with no quantitative parameters. |
-| popPK | Bonnet_1984 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of dopamine uptake/release in rat synaptosomes, not a pharmacokinetic study reporting disposition parameters for butriptyline. |
+| popPK | Amsterdam_1980 | irrelevant | 1 | 0 | This is a review article that explicitly states more definitive studies are needed for butriptyline and provides no original quantitative pharmacokinetic parameters or numeric values. |
+| PGx | Amsterdam_1980 | not_relevant | 0 | 0 | The paper discusses general clinical pharmacokinetics and therapeutic ranges for tricyclic antidepressants but does not report any pharmacogenomic effects of gene variants on butriptyline PK/PD. |
+| popPK | Bonnet_1984 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of dopamine uptake inhibition and release in rat synaptosomes, not a pharmacokinetic study reporting disposition parameters for butriptyline. |
 | PD | Bonnet_1984 | not_relevant | 3 | 2 | The paper reports a qualitative observation of dopamine release at high concentrations (&gt;3 x 10^-6 M) for butriptyline but does not provide specific numeric PD parameters (like IC50 or Emax) or a full concentration-effect curve for this specific drug in the provided text. |
-| popPK | Boyer_1980 | irrelevant | 0 | 0 | A narrative review of plasma level–efficacy correlations with no quantitative PK parameters for butriptyline. |
-| popPK | Crawley_1981 | irrelevant | 0 | 0 | The paper is a behavioral pharmacology study using butriptyline only as a negative control to demonstrate specificity, with no pharmacokinetic parameters reported. |
+| PGx | Bonnet_1984 | not_relevant | 0 | 0 | The paper reports in-vitro synaptosomal studies of dopamine uptake/release and does not report pharmacogenomic effects on the PK or PD of butriptyline. |
+| PGx | Bourgouin_1981 | not_relevant | 0 | 0 | The paper investigates formulation effects (conventional vs. sustained release) on pharmacokinetics, not genetic variants or genotypes. |
+| popPK | Boyer_1980 | irrelevant | 1 | 0 | The paper is a general review of clinical efficacy and plasma level correlations without reporting original quantitative pharmacokinetic parameters (CL, V, etc.) for butriptyline. |
+| PGx | Boyer_1980 | not_relevant | 0 | 0 | The paper is a general review of TCA plasma levels and efficacy, mentions butriptyline only as having limited studies, and does not report any pharmacogenomic effects (gene variants) on PK or PD. |
+| popPK | Crawley_1981 | irrelevant | 0 | 0 | The paper is a behavioral pharmacology study using butriptyline as a negative control to establish specificity, with no pharmacokinetic data or disposition parameters reported. |
 | PD | Crawley_1981 | not_relevant | 0 | 0 | The paper only qualitatively states that butriptyline did not produce the behavioral effect in a specific animal model, without providing any numeric dose-response data, concentration-effect curves, or PD parameters. |
-| popPK | Guelfi_1983 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial comparing butriptyline and amitriptyline, reporting no pharmacokinetic parameters. |
+| PGx | Crawley_1981 | not_relevant | 0 | 0 | The paper describes behavioral effects of benzodiazepines in animals and mentions butriptyline only as a negative control with no genetic component. |
+| popPK | Guelfi_1983 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial comparing antidepressant outcomes and side effects, not a pharmacokinetic study, and reports no disposition parameters. |
 | PD | Guelfi_1983 | not_relevant | 0 | 0 | The paper is a clinical trial comparing efficacy and side effects at fixed/flexible doses but does not report plasma concentrations or any quantitative exposure-response or dose-response modeling. |
-| popPK | Kopanski_1983 | irrelevant | 0 | 0 | This is a receptor pharmacology study in rat brain slices with no PK disposition parameters for butriptyline. |
+| PGx | Guelfi_1983 | not_relevant | 0 | 0 | The study is a clinical trial comparing the efficacy and side effects of two drugs in a general population, with no mention of genetic variants or pharmacogenomics. |
+| popPK | Kopanski_1983 | irrelevant | 0 | 0 | The study investigates pharmacodynamic effects (receptor sensitivity) in rats, not pharmacokinetic disposition parameters for butriptyline. |
+| PGx | Kopanski_1983 | not_relevant | 0 | 0 | The paper studies the effects of antidepressants on rat adrenergic receptors, not the effect of human gene variants on the PK or PD of butriptyline. |
 | popPK | Randrup_1977 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
 | PD | Randrup_1977 | not_relevant | 0 | 0 | The paper is a theoretical review discussing the dopamine hypothesis and amine uptake inhibition, containing no experimental PK/PD data or numeric parameters for butriptyline. |
-| popPK | Risch_1979 | irrelevant | 0 | 0 | This is a review of plasma level–efficacy relationships; butriptyline is only mentioned as awaiting further study, with no PK parameters reported. |
+| PGx | Randrup_1977 | not_relevant | 0 | 0 | The paper discusses the mechanism of action of antidepressants regarding biogenic amine uptake and does not contain pharmacogenomic data for amitriptyline. |
+| popPK | Risch_1979 | irrelevant | 0 | 0 | The paper is a review of literature regarding plasma levels and clinical efficacy, and it explicitly states that the relationship for butriptyline awaits further elucidation without providing specific quantitative PK parameters. |
+| PGx | Risch_1979 | not_relevant | 0 | 0 | The paper discusses plasma levels and efficacy of tricyclic antidepressants but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters for butriptyline. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbutriptyline%5D&body=Drug%3A%20butriptyline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_butriptyline/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 22:11 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 17:23 UTC</sub>

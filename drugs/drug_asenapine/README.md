@@ -27,17 +27,14 @@ Asenapine is an atypical antipsychotic used to treat schizophrenia, acute mania,
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub> | [Dogterom_2018_reference](drugs/drug_asenapine/Asenapine_Dogterom2018_reference.md) | held back | 1-compartment, oral | 5 | Dogterom P et al., Asenapine pharmacokinetics and tolerabi…, Drug design, development an… (2018) | [10.2147/DDDT.S171475](https://doi.org/10.2147/DDDT.S171475) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Dogterom_2015_reference](drugs/drug_asenapine/Asenapine_Dogterom2015_reference.md) | — | 1-compartment (no model) | 0 | Dogterom P et al., The effect of food on the high clearanc…, European journal of clinica… (2015) | [10.1007/s00228-013-1587-4](https://doi.org/10.1007/s00228-013-1587-4) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Chapel_2009_QTcF](drugs/drug_asenapine/pd_Chapel_2009_QTcF.md) | QTcF prolongation (change from baseline) ← asenapine · direct linear effect | — | Chapel S et al., Exposure-response analysis in patients…, Journal of clinical pharmac… (2009) | [10.1177/0091270009344855](https://doi.org/10.1177/0091270009344855) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Chapel_2011_ddQTc](drugs/drug_asenapine/pd_Chapel_2011_ddQTc.md) | time-matched, placebo-corrected mean change in QTc from baseline ← asenapine · stimulation effect | — | Chapel S et al., Comparison of QTc data analysis methods…, Clinical pharmacology and t… (2011) | [10.1038/clpt.2010.220](https://doi.org/10.1038/clpt.2010.220) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Friberg_2009_PANSS](drugs/drug_asenapine/pd_Friberg_2009_PANSS.md) | total Positive and Negative Syndrome Scale score ← asenapine · direct Emax (saturable) effect | — | Friberg LE et al., Modeling and simulation of the time cou…, Clinical pharmacology and t… (2009) | [10.1038/clpt.2009.44](https://doi.org/10.1038/clpt.2009.44) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Knauer_2008_5_HT2A_receptor_occupancy_inhibition_of_in_vivo_3_H_M100907_binding](drugs/drug_asenapine/pd_Knauer_2008_5_HT2A_receptor_occupancy_inhibition_of_in_vivo_.md) | 5-HT2A receptor occupancy (inhibition of in vivo [(3)H]M100907 binding) ← asenapine · direct sigmoid Emax (Hill) effect | — | Knauer CS et al., Validation of a rat in vivo [(3)H]M1009…, European journal of pharmac… (2008) | [10.1016/j.ejphar.2008.06.063](https://doi.org/10.1016/j.ejphar.2008.06.063) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Seo_2022_Kv_current](drugs/drug_asenapine/pd_Seo_2022_Kv_current.md) | Kv current inhibition ← asenapine · direct sigmoid Emax (Hill) effect | — | Seo MS et al., Asenapine, an atypical antipsychotic, b…, European journal of pharmac… (2022) | [10.1016/j.ejphar.2022.175318](https://doi.org/10.1016/j.ejphar.2022.175318) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Friberg_2009_time_course_of_dropouts](drugs/drug_asenapine/pd_Friberg_2009_time_course_of_dropouts.md) | time course of dropouts ← asenapine · time-to-event model | — | Friberg LE et al., Modeling and simulation of the time cou…, Clinical pharmacology and t… (2009) | [10.1038/clpt.2009.44](https://doi.org/10.1038/clpt.2009.44) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Friberg_2009_PANSS](drugs/drug_asenapine/pd_Friberg_2009_PANSS.md) | total Positive and Negative Syndrome Scale scores ← asenapine · direct Emax (saturable) effect | — | Friberg LE et al., Modeling and simulation of the time cou…, Clinical pharmacology and t… (2009) | [10.1038/clpt.2009.44](https://doi.org/10.1038/clpt.2009.44) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Seo_2022_Kv_current](drugs/drug_asenapine/pd_Seo_2022_Kv_current.md) | Kv current ← asenapine · direct sigmoid Emax (Hill) effect | — | Seo MS et al., Asenapine, an atypical antipsychotic, b…, European journal of pharmac… (2022) | [10.1016/j.ejphar.2022.175318](https://doi.org/10.1016/j.ejphar.2022.175318) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,41 +48,38 @@ Asenapine is an atypical antipsychotic used to treat schizophrenia, acute mania,
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:12 | 0:45 | 1/0/0 | 6/0/0 | 0/0/0 | 44,149/4,104 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 18:50 | 0:03 | 1/1/0 | 2/0/0 | 0/0/0 | 3,761/214 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Dogterom_2015.pdf` | Dogterom P et al., The effect of food on the high clearanc…, European journal of clinica… (2015) | popPK | 7 | [10.1007/s00228-013-1587-4](https://doi.org/10.1007/s00228-013-1587-4) | [25552402](https://pubmed.ncbi.nlm.nih.gov/25552402) | Compartmental PK modelling of asenapine in humans is described, but numeric parameter values (CL, V) are not present in the evidence, likely in figures/supplementary material. |
-
-<sub>queue written 2026-10-06 15:11 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chapel_2009 | irrelevant | 2 | 1 | This is an exposure-response QTc analysis; no PK disposition parameters (CL, V, ka, half-life) for asenapine are reported, only concentration-effect modeling. |
-| popPK | Chapel_2011 | irrelevant | 3 | 2 | This is a QTc exposure-response analysis, not a PK disposition study; no clearance/volume/ka values for asenapine appear in the evidence. |
-| popPK | Citrome_2022 | irrelevant | 0 | 0 | Efficacy post hoc analysis of hostility scores; no PK disposition parameters for asenapine reported. |
-| popPK | Dogterom_2015 | relevant | 7 | 3 | Compartmental PK modelling of asenapine in humans is described, but numeric parameter values (CL, V) are not present in the evidence, likely in figures/supplementary material. |
-| popPK | Friberg_2009 | irrelevant | 3 | 1 | This is a PK/PD efficacy modeling paper; PK parameters for asenapine are not reported in the evidence, and any PK model values likely reside in supplementary material not provided. |
-| popPK | Knauer_2008 | irrelevant | 2 | 3 | Asenapine is only a test compound in a receptor-occupancy assay; only ED50/EC50 exposure values are given, no PK disposition parameters (CL, V, t½, model). |
-| popPK | Seo_2022 | irrelevant | 0 | 0 | In-vitro electrophysiology study of Kv channel blockade in rabbit coronary artery cells; no PK disposition parameters (CL, V, ka, half-life, or PK model) for asenapine are reported. |
-| popPK | Xu_2020 | irrelevant | 0 | 0 | Asenapine is only used as a pharmacological antagonist probe on an insect receptor; no PK parameters for asenapine are reported. |
+| popPK | Chapel_2009 | irrelevant | 2 | 0 | This is a pharmacodynamic exposure-response (QTc) study that uses asenapine concentrations primarily as a covariate for cardiac safety, rather than reporting population pharmacokinetic parameters (CL, V, etc.) as the primary objective. |
+| PGx | Chapel_2009 | not_relevant | 0 | 0 | The paper focuses on the exposure-response relationship between asenapine concentration and QTc prolongation, but does not report on pharmacogenomic effects (gene variants) on pharmacokinetics or pharmacodynamics. |
+| popPK | Chapel_2011 | irrelevant | 1 | 0 | The study focuses on QTc safety analysis and exposure-response simulations regarding cardiac effects, not the estimation of quantitative pharmacokinetic disposition parameters (CL, V, etc.) for asenapine. |
+| PGx | Chapel_2011 | not_relevant | 0 | 0 | The study evaluates QTc analysis methods (IUT vs E-R) in a TQT study and does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters of asenapine. |
+| popPK | Citrome_2022 | irrelevant | 0 | 0 | The paper is a post hoc analysis of the efficacy (hostility symptoms) of an asenapine transdermal patch and does not report any pharmacokinetic parameters or disposition data. |
+| PGx | Citrome_2022 | not_relevant | 0 | 0 | The paper reports clinical efficacy outcomes (PANSS scores) and does not investigate the impact of gene variants or genotypes on pharmacokinetics or pharmacodynamics. |
+| PGx | Dogterom_2015 | not_relevant | 0 | 0 | The study investigates the effect of food intake on the pharmacokinetics of asenapine in healthy volunteers and does not report any pharmacogenomic (gene variant/genotype) influences. |
+| popPK | Friberg_2009 | irrelevant | 2 | 0 | The paper describes a pharmacokinetic-pharmacodynamic (PK-PD) model focused on efficacy and dropout, but does not report quantitative disposition parameters (CL, V, etc.) for asenapine in the provided evidence. |
+| PGx | Friberg_2009 | not_relevant | 0 | 0 | The paper focuses on general pharmacokinetic-pharmacodynamic modeling and trial simulation for asenapine, with no mention of gene variants or pharmacogenomic factors. |
+| popPK | Knauer_2008 | irrelevant | 0 | 0 | The paper describes a receptor occupancy study measuring ED50 values, not population pharmacokinetic parameters (CL, V, Q, ka) for asenapine. |
+| PGx | Knauer_2008 | not_relevant | 0 | 0 | The paper reports preclinical pharmacokinetic/pharmacodynamic data for asenapine in rats but does not report any pharmacogenomic effects (gene variants affecting the parameters). |
+| popPK | Seo_2022 | irrelevant | 0 | 0 | The paper is an electrophysiology study investigating asenapine's effect on potassium channels in cells, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Seo_2022 | not_relevant | 0 | 0 | The paper reports the pharmacological mechanism of asenapine on potassium channels in animal tissue, not a pharmacogenomic effect (gene variant influence) on PK/PD parameters. |
+| popPK | Xu_2020 | irrelevant | 0 | 0 | The study characterizes an insect octopamine receptor in vitro and uses asenapine only as a test antagonist, reporting receptor pharmacology (EC50/antagonism) rather than population pharmacokinetic disposition parameters (CL, V, T1/2) for asenapine in any subject. |
+| PGx | Xu_2020 | not_relevant | 0 | 0 | The paper characterizes an insect octopamine receptor and reports asenapine as a pharmacological antagonist in a heterologous expression system, which does not constitute a pharmacogenomic effect on PK or PD parameters in humans. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Basenapine%5D&body=Drug%3A%20asenapine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_asenapine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 15:11 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 18:48 UTC</sub>

@@ -42,7 +42,7 @@ Nicotinic acid is a vitamin B3 derivative and lipid-regulating agent used to tre
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Andersson_2017_FFA](drugs/drug_nicotinic_acid/pd_Andersson_2017_FFA.md) | FFA ← NiAc · indirect response — drug inhibits the loss of FFA | — | Andersson R et al., Modeling of free fatty acid dynamics: i…, Journal of pharmacokinetics… (2017) | [10.1007/s10928-017-9512-6](https://doi.org/10.1007/s10928-017-9512-6) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Andersson_2017_insulin](drugs/drug_nicotinic_acid/pd_Andersson_2017_insulin.md) | insulin ← NiAc · indirect response — drug inhibits the loss of insulin | — | Andersson R et al., Modeling of free fatty acid dynamics: i…, Journal of pharmacokinetics… (2017) | [10.1007/s10928-017-9512-6](https://doi.org/10.1007/s10928-017-9512-6) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Andersson_2016_FFA](drugs/drug_nicotinic_acid/pd_Andersson_2016_FFA.md) | FFA ← nicotinic_acid · indirect response — drug inhibits the production of FFA | — | Andersson R et al., Dose-response-time modelling: Second-ge…, European journal of pharmac… (2016) | [10.1016/j.ejps.2015.10.018](https://doi.org/10.1016/j.ejps.2015.10.018) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Andersson_2016_FFA](drugs/drug_nicotinic_acid/pd_Andersson_2016_FFA.md) | FFA ← nicotinic_acid · indirect response — drug inhibits the production of FFA | — | Andersson R et al., Dose-response-time modelling: Second-ge…, European journal of pharmac… (2016) | [10.1016/j.ejps.2015.10.018](https://doi.org/10.1016/j.ejps.2015.10.018) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +56,7 @@ Nicotinic acid is a vitamin B3 derivative and lipid-regulating agent used to tre
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 20:46 | 17:49 | 2/0/0 | 3/0/0 | 0/0/0 | 297,121/49,547 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 2/6 | 8/0 | 0 |
+| 2026-10-06 20:46 | 17:49 | 2/0/0 | 2/1/0 | 0/0/0 | 297,121/49,547 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 2/6 | 8/0 | 0 |
 
 ## Coverage
 

@@ -51,7 +51,7 @@ Tomita Y, Hansson E, Mazuir F, Wellhagen GJ, Ooi QX, Mezzalana E et al. Imeglimi
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f: this record has none, the second reading 0.492. That field does not shape the model.
 
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.947, 0 of 1 reader(s) agree | 0.947 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.947 (18 of 19 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.947 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

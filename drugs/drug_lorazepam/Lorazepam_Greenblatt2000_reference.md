@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;lorazepam&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/&quot;},{&quot;label&quot;:&quot;Greenblatt_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lorazepam_Healy2025_mean&quot;,&quot;label&quot;:&quot;Healy_2025_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Healy2025_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Healy2025_median&quot;,&quot;label&quot;:&quot;Healy_2025_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Healy2025_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_NielsenKudsk1983_reference&quot;,&quot;label&quot;:&quot;Nielsen-Kudsk_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_NielsenKudsk1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Papini2006_reference&quot;,&quot;label&quot;:&quot;Papini_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Papini2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Khakshoor2025_reference&quot;,&quot;label&quot;:&quot;Khakshoor_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Khakshoor2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Panetta2024_reference&quot;,&quot;label&quot;:&quot;Panetta_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Panetta2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2024v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2024v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2025v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_le2024_reference&quot;,&quot;label&quot;:&quot;le_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_le2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Greenblatt_2000_EEG_effect&quot;,&quot;label&quot;:&quot;Greenblatt_2000 \u00b7 EEG effect&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/pd_Greenblatt_2000_EEG_effect.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gupta_1990_TRKN&quot;,&quot;label&quot;:&quot;Gupta_1990 \u00b7 TRKN&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/pd_Gupta_1990_TRKN.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lorazepam_Chamberlain2012_reference&quot;,&quot;label&quot;:&quot;Chamberlain_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chamberlain2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Healy2025_mean&quot;,&quot;label&quot;:&quot;Healy_2025_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Healy2025_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Healy2025_median&quot;,&quot;label&quot;:&quot;Healy_2025_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Healy2025_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Khakshoor2025_reference&quot;,&quot;label&quot;:&quot;Khakshoor_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Khakshoor2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Panetta2024_reference&quot;,&quot;label&quot;:&quot;Panetta_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Panetta2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2024v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2024v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2025v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_le2024_reference&quot;,&quot;label&quot;:&quot;le_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_le2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gupta_1990_TRKN&quot;,&quot;label&quot;:&quot;Gupta_1990 \u00b7 TRKN&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/pd_Gupta_1990_TRKN.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Greenblatt2000_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Greenblatt2000_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="lorazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Greenblatt DJ, von Moltke LL, Ehrenberg BL, Harmatz JS, Corbett KE, Wallace DW et al. Kinetics and dynamics of lorazepam during and after continuous intravenous infusion. Critical care medicine 28(8):2750–2757 (2000).
@@ -17,13 +17,13 @@ Greenblatt DJ, von Moltke LL, Ehrenberg BL, Harmatz JS, Corbett KE, Wallace DW e
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = 9.
+**Population:** healthy adults · condition healthy · age group adult · n = 9.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -34,12 +34,11 @@ Greenblatt DJ, von Moltke LL, Ehrenberg BL, Harmatz JS, Corbett KE, Wallace DW e
 | volume of distribution | V | 126 | L |
 | elimination half-life | t1/2z | 13.8 | hrs |
 | clearance | CL | 109 | mL/min |
-| Ka | kabs | 0.5 | h-1 |
-| Tlag | tlag | 0.8 | h |
+| maximum electroencephalographic effect | E | 12.7 | % over baseline |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +50,9 @@ Greenblatt DJ, von Moltke LL, Ehrenberg BL, Harmatz JS, Corbett KE, Wallace DW e
 
 **The clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — lorazepam: V 126 L, t1/2z 13.8 hrs, CL 109 mL/min, kabs 0.5 h-1, tlag 0.8 h.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — lorazepam: V 126 L, t1/2z 13.8 hrs, CL 109 mL/min, E 12.7 % over baseline.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lorazepam, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of maximum electroencephalographic effect: this record has 12.7, the second reading none. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -62,10 +61,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | volume of distribution | `Q61` · V | 126 | L | 0.126 | m3 | l | exact (1) | Greenblatt_2000:abstract |
-| elimination half-life | `Q57` · t1/2z | 13.8 | hrs | 4.968e+04 | s | h | llm (0.6) | Greenblatt_2000:abstract |
+| elimination half-life | `Q57` · t1/2z | 13.8 | hrs | 4.968e+04 | s | h | half_life_rule (0.95) | Greenblatt_2000:abstract |
 | clearance | `Q22` · CL | 109 | mL/min | 1.817e-06 | m3/s | ml/min | exact (1) | Greenblatt_2000:abstract |
-| Ka | `Q49` · kabs | 0.5 | h-1 | 0.0001389 | 1/s | 1/h | review_gapfill (0.7) | Chen_2024:review |
-| Tlag | `Q83` · tlag | 0.8 | h | 2880 | s | h | review_gapfill (0.7) | Panetta_2024:review |
+| maximum electroencephalographic effect | `Q38` · E | 12.7 | % over baseline | 0.127 |  | %·baseline·over | llm (0.6) | Greenblatt_2000:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,42 +73,31 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped PD-category row 'maximum electroencephalographic effect' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Greenblatt_2000:abstract'])
+- unit_dimension_unknown: '% over baseline' (E)
 - dropped PD-category row '50% effective concentration' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Greenblatt_2000:abstract'])
 - dropped PD-category row 'effect-site equilibration half-life' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Greenblatt_2000:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lorazepam
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Chen_2024's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Panetta_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Greenblatt_2000_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[clearance]` | 109 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` |  | 109 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life]` | 13.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life]` |  | 13.8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 0.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag]` | 0.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 126 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 126 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | lorazepam | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | lorazepam | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[maximum electroencephalographic effect]` | 12.7 |  | only_one_extracted |
 
 </details>
 
@@ -124,14 +111,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Greenblatt_2000:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Chen_2024:review'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Greenblatt_2000:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Greenblatt_2000:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Panetta_2024:review'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 109 | ['Greenblatt_2000:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 6.54 L/h | ['Greenblatt_2000:abstract'] |
@@ -169,4 +154,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blorazepam%5D%20Lorazepam_Greenblatt2000_reference&body=Drug%3A%20lorazepam%0ARecord%3A%20Lorazepam_Greenblatt2000_reference%0APaper%3A%20Greenblatt_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lorazepam/Lorazepam_Greenblatt2000_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:13 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:20 UTC</sub>

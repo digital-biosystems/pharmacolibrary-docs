@@ -57,32 +57,27 @@ It is given by intravascular, intravenous, or intrathecal injection. Iopamidol i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:57 | 16:44 | 3/2/0 | 0/0/0 | 0/0/0 | 225,977/9,533 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-23 23:07 | 0:04 | 3/2/0 | 0/0/0 | 0/0/0 | 4,202/163 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 2  ·  **relevant:** 1
 - **records:** 5  ·  extracted 1  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Rodríguez-Romero_2015.pdf` | Rodríguez-Romero V et al., A novel, simple and inexpensive procedu…, Journal of pharmaceutical a… (2015) | popPK | 7 | [10.1016/j.jpba.2014.12.009](https://doi.org/10.1016/j.jpba.2014.12.009) | [25594899](https://pubmed.ncbi.nlm.nih.gov/25594899) | Reports numeric plasma clearance of iopamidol (1.49±0.20 ml/min) from NCA analysis in rats, though limited to clearance without volume or full PK model. |
-
-<sub>queue written 2026-10-07 22:40 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Allegrini_2024 | irrelevant | 2 | 2 | Study measures urinary iodine excretion kinetics, not iopamidol PK parameters (no CL, V, half-life, or compartmental model for the drug itself); only fold-changes and time-to-baseline reported. |
-| popPK | Gilroy_2017 | irrelevant | 1 | 1 | Toxicity/bioconcentration study in mussels; no PK disposition parameters (CL, V, half-life) for iopamidol are reported. |
-| popPK | Zhang_2014 | irrelevant | 2 | 2 | Iopamidol is used as a diagnostic/renal-impairing agent; the kinetic model parameters (VB, VE, GFR) describe the MR tracer, not iopamidol's own disposition. |
+| popPK | Allegrini_2024 | irrelevant | 2 | 0 | The study measures urinary iodine concentrations over time in cats to determine a dosing delay interval, but it does not report quantitative plasma pharmacokinetic parameters (CL, Vd, ka) or fit a compartmental PK model for iopamidol. |
+| PGx | Allegrini_2024 | not_relevant | 0 | 0 | The paper investigates iodine clearance in cats and does not involve pharmacogenomics, gene variants, or human PK/PD parameters. |
+| popPK | Gilroy_2017 | irrelevant | 0 | 0 | The study examines the toxicity and bioconcentration of iopamidol in mussels, not its population pharmacokinetics (CL, V, etc.). |
+| PGx | Gilroy_2017 | not_relevant | 0 | 0 | The study investigates the toxicity of pharmaceuticals on freshwater mussels (ecotoxicology), not human pharmacogenomics or PK/PD parameters. |
+| popPK | Rodríguez-Romero_2015 | relevant | 5 | 3 | The study reports iopamidol clearance (1.49 ml/min) in rats using a non-compartmental model, but lacks volume of distribution or other parameters for a full PK description. |
+| PGx | Rodríguez-Romero_2015 | not_relevant | 0 | 0 | The paper describes an analytical method for measuring renal function in rats and does not report any pharmacogenomic effects or gene variant associations. |
+| popPK | Zhang_2014 | irrelevant | 2 | 0 | Iopamidol is a diagnostic contrast agent used to measure renal function (GFR) in rabbits, not the subject of a pharmacokinetic study reporting its own disposition parameters. |
+| PGx | Zhang_2014 | not_relevant | 0 | 0 | The study examines the pharmacodynamic effect of iopamidol on renal function in an animal model without involving any genetic variants, genotypes, or pharmacogenomic factors. |
 
 
 </details>

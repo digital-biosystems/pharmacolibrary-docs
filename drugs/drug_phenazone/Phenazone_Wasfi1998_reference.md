@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Antipyrine clearance (0.148 l/kg/hr) has a unit dimension that conflicts with the expected pharmacokinetic dimension for blood clearance.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit micrograms.ml.hr ([mass] * [length] ** 3 * [time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="phenazone" model-id="Phenazone_Wasfi1998_reference" status="rejected" stale="false" population="horses and camels" measured-compound="antipyrine" parameterization="apparent" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Wasfi IA, Zorob OM, Boni NS, Hadi AA, Agha BA, Elghazali M. The activity of mixe
 
 ### Reviewer guidance
 
-**Antipyrine clearance (0.148 l/kg/hr) has a unit dimension that conflicts with the expected pharmacokinetic dimension for blood clearance.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit micrograms.ml.hr ([mass] * [length] ** 3 * [time]) vs [mass] * [time] / [length] ** 3.**
 
-The record lists total body clearance as 0.148 l/kg/hr, but the unit's dimensions conflict with the parameter's expected dimension. Additionally, the record was built from the abstract alone, so the reported summary statistics stand in for a fitted model. A second reader disagreed on the dose compound, primary analyte, and all listed parameter values, marking them as unknown or null. Extracted — phenazone: t1/2z 3.25 hr, V/F 0.691 l/kg, Vss 0.659 l/kg, V1 0.386 l/kg, CLb 0.148 l/kg/hr, AUC∞ 171 micrograms.ml.hr, kabs 5.54 h -1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — phenazone: t1/2z 3.25 hr, V/F 0.691 l/kg, Vss 0.659 l/kg, V1 0.386 l/kg, CLb 0.148 l/kg/hr, AUC∞ 171 micrograms.ml.hr, kabs 5.54 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has antipyrine, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

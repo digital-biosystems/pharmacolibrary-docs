@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The sulfamethoxazole CRRT-effect clearance (CL) value 1.13 lacks a unit, preventing conversion and use of the model.
+> CL has no unit; c2_reference failed (ratio None).
 
 <div class="pk-model-meta" hidden drug="sulfamethoxazole" model-id="Sulfamethoxazole_Leegwater2025_reference" status="needs_review" stale="false" population="hospitalized patients with renal insufficiency or receiving CRRT" measured-compound="sulfamethoxazole" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Leegwater E, Baidjoe L, Wilms EB, Visser LG, Touw DJ, de Winter BCM et al. Popul
 
 ### Reviewer guidance
 
-**The sulfamethoxazole CRRT-effect clearance (CL) value 1.13 lacks a unit, preventing conversion and use of the model.**
+**CL has no unit; c2_reference failed (ratio None).**
 
-CL has no unit. Without a unit the value cannot be converted, so the model cannot use it. The reference comparison could not compute a ratio, so that failure is inconclusive rather than a demonstrated fault. The second reader disagreed about the dose compound and metabolism link, and reported different values for absorption rate constant (0.95 versus 0.364), apparent clearance (1.33 versus 4.23), CRRT effect on clearance (0.68 versus 1.13), volume of distribution (3.87 versus 132), and the eGFR effect (0.79 versus 0.319). Extracted — sulfamethoxazole: Fab 1, kabs 0.364 1/h, CL/F 4.23 L/h, CL 1.13, V 132 L; N-acetyl sulfamethoxazole: CL 0.194 L/h.
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — sulfamethoxazole: Fab 1, kabs 0.364 1/h, CL/F 4.23 L/h, CL 1.13, V 132 L; N-acetyl sulfamethoxazole: CL 0.194 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cotrimoxazole, the second reading sulfamethoxazole; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

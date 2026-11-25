@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The abacavir model was rejected because the peripheral compartment had no defined path from the central compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_van2021_reference" status="rejected" stale="false" population="HIV-positive children" measured-compound="abacavir" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ van der Laan LE, Garcia-Prats AJ, Schaaf HS, Winckler JL, Draper H, Norman J et 
 
 ### Reviewer guidance
 
-**The abacavir model was rejected because the peripheral compartment had no defined path from the central compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record describes a two-compartment structure with a central volume of 21.7 L and a peripheral volume of 12.0 L. However, the inter-compartmental clearance parameter, Qb, was extracted as null, meaning the link between these compartments is missing. This creates an unreachable compartment, preventing the model from simulating drug distribution correctly. Extracted — abacavir: CLb 16.3 L/h, V1 21.7 L, kabs 1.77 1/h, MTT 0.458 h, n_transit 3.7, Fab 1, Qb 1.42 L/h, V2 12 L.
+Extracted — abacavir: CLb 16.3 L/h, V1 21.7 L, kabs 1.77 1/h, MTT 0.458 h, n_transit 3.7, Fab 1, Qb 1.42 L/h, V2 12 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abacavir, the second reading unknown; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

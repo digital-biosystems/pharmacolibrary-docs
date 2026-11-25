@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant for umeclidinium is negative, an implausible value that violates physical laws for a one-compartment model.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Mehta2018_combined_model_ln_estimates" status="rejected" stale="false" population="patients with symptomatic COPD" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Mehta R, Pefani E, Beerahee M, Brealey N, Barnacle H, Birk R et al. Population P
 
 ### Reviewer guidance
 
-**The absorption rate constant for umeclidinium is negative, an implausible value that violates physical laws for a one-compartment model.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record assigns a value of -2.94 1/h to the absorption rate constant. This negative magnitude is physiologically impossible for a drug elimination or absorption process. Additionally, the second reader disagreed on the dose compound identification, listing it as unknown rather than the combination therapy. Extracted — umeclidinium: CL/F 5.43 L/h, V2/F 0.31 L, Q/F 5.74 L/h, V3/F 4.66 L, kabs -2.94 1/h.
+Extracted — umeclidinium: CL/F 5.43 L/h, V2/F 0.31 L, Q/F 5.74 L/h, V3/F 4.66 L, kabs -2.94 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluticasone furoate/umeclidinium/vilanterol, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

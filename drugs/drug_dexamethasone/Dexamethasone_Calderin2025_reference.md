@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The dexamethasone model's simulated peak concentration is 100-fold lower than the paper's reported value, and the second reader could not confirm any extracted parameter.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 2.75e-05, model 3.57e-07); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="dexamethasone" model-id="Dexamethasone_Calderin2025_reference" status="needs_review" stale="false" population="adults with HIV-associated tuberculous meningitis" measured-compound="dexamethasone" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Calderin JM, Resendiz-Galvan JE, Abdelgawad N, Davis A, Stek C, Wiesner L et al.
 
 ### Reviewer guidance
 
-**The dexamethasone model's simulated peak concentration is 100-fold lower than the paper's reported value, and the second reader could not confirm any extracted parameter.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 2.75e-05, model 3.57e-07); x1_cross_check.**
 
-The model predicted a Cmax of 3.57e-07 kg/m3, while the paper reports 2.75e-05 kg/m3. The second reader disputed the verdict, assigning 'unknown' to the dose compound and primary analyte. They also listed all extracted parameters, including CL/F (131 L/h) and V/F (26.6 L), as null. Extracted — dexamethasone: V/F 26.6 L, CL/F 131 L/h, kabs 0.773 day -1, tlag 0.29 h.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — dexamethasone: V/F 26.6 L, CL/F 131 L/h, kabs 0.773 day -1, tlag 0.29 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dexamethasone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -154,9 +154,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.273, 0 of 1 reader(s) agree | 0.273 | cross-check disputed by a second reader: verdict disputed, agreement 0.273, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 2.75e-05 | 3.57e-07 | 0.013 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 3.47e-05 | 3.57e-07 | 0.0103 | mg/L→SI vs simulated kg/m3 |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.273 (3 of 11 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.273 | cross-check contradicted by a second reader: verdict disputed; agreement 0.273 (3 of 11 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 2.75e-05 | 3.57e-07 | 0.013 | reported 0.0275 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.47e-05 | 3.57e-07 | 0.0103 | reported 0.0347 mg/L→SI vs simulated kg/m3 |
 
 <details class="legend">
 <summary>Validation definitions</summary>

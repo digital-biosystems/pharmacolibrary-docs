@@ -22,21 +22,20 @@ Rivastigmine is an acetylcholinesterase inhibitor used to treat dementia associa
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | rivastigmine | parent | 250.337 | C14H22N2O2 | DrugBank | [77991](https://pubchem.ncbi.nlm.nih.gov/compound/77991) | Gobburu_2001 |
-| ZNS 114-666 (NAP 226-90) | metabolite | — (mass units only) | — | — | — | — |
+| ZNS 114-666 | metabolite | — (mass units only) | — | — | — | — |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Gobburu_2001_reference](drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | [10.1177/00912700122012689](https://doi.org/10.1177/00912700122012689) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Gobburu_2001_reference](drugs/drug_rivastigmine/Rivastigmine_Gobburu2001_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | [10.1177/00912700122012689](https://doi.org/10.1177/00912700122012689) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gobburu_2001_AChE](drugs/drug_rivastigmine/pd_Gobburu_2001_AChE.md) | acetylcholinesterase activity ← ZNS 114-666 · direct Emax (saturable) effect | — | Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | [10.1177/00912700122012689](https://doi.org/10.1177/00912700122012689) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Manalo_2017_AChE_inhibition](drugs/drug_rivastigmine/pd_Manalo_2017_AChE_inhibition.md) | Acetylcholinesterase inhibition (positive control Rivastigmine) ← Rivastigmine · direct Emax (saturable) effect | — | Manalo RV et al., Coconut (Cocos nucifera) Ethanolic Leaf…, Biomedicines (2017) | [10.3390/biomedicines5020017](https://doi.org/10.3390/biomedicines5020017) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ndongo_2021_AChE_inhibition](drugs/drug_rivastigmine/pd_Ndongo_2021_AChE_inhibition.md) | acetylcholinesterase inhibition ← rivastigmine · inhibition effect | — | Ndongo TM et al., Microsequential injection analysis/lab-…, Archiv der Pharmazie (2021) | [10.1002/ardp.202100150](https://doi.org/10.1002/ardp.202100150) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Gobburu_2001_AChE_inhibition](drugs/drug_rivastigmine/pd_Gobburu_2001_AChE_inhibition.md) | acetylcholinesterase activity inhibition ← ZNS 114-666 (NAP 226-90, rivastigmine metabolite) · direct Emax (saturable) effect | — | Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | [10.1177/00912700122012689](https://doi.org/10.1177/00912700122012689) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +49,7 @@ Rivastigmine is an acetylcholinesterase inhibitor used to treat dementia associa
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:11 | 6:02 | 0/1/0 | 2/1/0 | 0/0/0 | 323,080/26,412 | ollama / glm-5.3-flash | 7 | 0/7 | 7/0 | 0 |
+| 2026-11-24 04:05 | 0:04 | 0/1/0 | 2/0/0 | 0/0/0 | 3,503/164 | einfracz / qwen3.8-27b | 7 | 0/7 | 7/0 | 0 |
 
 ## Coverage
 
@@ -59,19 +58,6 @@ Rivastigmine is an acetylcholinesterase inhibitor used to treat dementia associa
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Gobburu_2001.pdf` | Gobburu JV et al., Pharmacokinetic-pharmacodynamic modelin…, Journal of clinical pharmac… (2001) | popPK | 10 | [10.1177/00912700122012689](https://doi.org/10.1177/00912700122012689) | [11583476](https://pubmed.ncbi.nlm.nih.gov/11583476) | Population PK (NONMEM) of rivastigmine with numeric CL, V, bioavailability, and metabolite parameters reported directly in the abstract. |
-| `Mita_2016.pdf` | Mita S et al., Pharmacokinetic Modeling to Simulate th…, Journal of pharmaceutical s… (2016) | popPK | 8 | [10.1016/j.xphs.2016.04.011](https://doi.org/10.1016/j.xphs.2016.04.011) | [27212635](https://pubmed.ncbi.nlm.nih.gov/27212635) | A rivastigmine dermal PK model is described, but no numeric parameter values (CL, V, ka) appear in the evidence, likely residing in tables/figures not provided. |
-| `Liu_2021.pdf` | Liu X et al., Relating transdermal delivery plasma ph…, Journal of controlled relea… (2021) | popPK | 7 | [10.1016/j.jconrel.2021.04.010](https://doi.org/10.1016/j.jconrel.2021.04.010) | [33857564](https://pubmed.ncbi.nlm.nih.gov/33857564) | Rivastigmine transdermal plasma PK is modeled with diffusion/compartment-in-series models, but no numeric parameter values appear in the evidence (likely in figures/tables not provided). |
-| `Mercier_2007.pdf` | Mercier F et al., Rivastigmine exposure provided by a tra…, Current medical research an… (2007) | popPK | 7 | [10.1185/030079908X253438](https://doi.org/10.1185/030079908X253438) | [18001519](https://pubmed.ncbi.nlm.nih.gov/18001519) | Population/compartmental PK of rivastigmine in AD patients, but numeric CL/V/ka values are not shown in the evidence (likely in tables/figures not provided). |
-
-<sub>queue written 2026-10-07 03:06 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
@@ -79,17 +65,26 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | popPK | Atri_2015 | irrelevant | 0 | 0 | This is a clinical efficacy (AUC of clinical outcome scores) study of memantine-donepezil in Alzheimer's disease; no PK parameters for rivastigmine are reported. |
 | popPK | Bhuiyan_2026 | irrelevant | 0 | 0 | Rivastigmine is only used as a comparator/standard in AChE inhibition and docking; no PK parameters for rivastigmine are reported. |
 | popPK | Bon_2024 | irrelevant | 0 | 0 | Medicinal chemistry paper synthesizing rivastigmine–indole hybrids with in vitro enzyme inhibition assays; no PK parameters for rivastigmine are reported. |
-| popPK | Camargo-Ayala_2024 | irrelevant | 0 | 0 | In-vitro medicinal chemistry study of novel cholinesterase inhibitors; rivastigmine is only a comparator, with no PK parameters. |
+| popPK | Camargo-Ayala_2024 | irrelevant | 0 | 0 | The paper focuses on the synthesis and in vitro cholinesterase inhibition/antioxidant activity of novel compounds, using rivastigmine only as a comparator in binding energy calculations, with no PK data. |
+| PGx | Camargo-Ayala_2024 | not_relevant | 0 | 0 | The paper describes new cholinesterase inhibitors and compares them to rivastigmine, but does not study pharmacogenomic effects on rivastigmine's PK/PD. |
 | popPK | Chen_2025 | irrelevant | 0 | 0 | This is a registry-based effectiveness study of cognitive trajectories, not a PK study; no disposition parameters for rivastigmine are reported. |
-| popPK | Farlow_2005 | irrelevant | 0 | 0 | This is an efficacy meta-analysis of rivastigmine in Alzheimer's disease with no pharmacokinetic parameters or disposition values reported. |
-| popPK | Kato_1999 | irrelevant | 0 | 0 | Rivastigmine is only a comparator with no PK parameters reported; the study is about TAK-147's neurotrophic effects. |
+| popPK | Farlow_2005 | irrelevant | 0 | 0 | The study is a clinical efficacy meta-analysis evaluating cognitive outcomes (ADAS-cog) and does not report any pharmacokinetic parameters for rivastigmine. |
+| PGx | Farlow_2005 | not_relevant | 0 | 0 | The paper analyzes the effect of disease progression rate (clinical phenotype) on rivastigmine efficacy, not the effect of a genetic variant or genotype on PK/PD parameters. |
+| PGx | Gobburu_2001 | not_relevant | 0 | 0 | The paper reports PK-PD modeling in Alzheimer's patients but does not analyze gene variants or pharmacogenomic effects. |
+| popPK | Kato_1999 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of TAK-147 on choline acetyltransferase activity, where rivastigmine serves only as a negative control with no pharmacokinetic parameters reported. |
+| PGx | Kato_1999 | not_relevant | 0 | 0 | The paper reports a neurotrophic effect of a different AChE inhibitor (TAK-147) on rat neurons and does not involve a pharmacogenomic effect on rivastigmine. |
 | popPK | Lefèvre_2016 | relevant | 4 | 3 | Population PK analysis of rivastigmine in Alzheimer's patients, but reports only steady-state concentrations (not CL/V/ka or model parameters); concentration values are present in tables, though the PK model parameters appear only in referenced prior analyses. |
-| popPK | Liu_2021 | relevant | 7 | 3 | Rivastigmine transdermal plasma PK is modeled with diffusion/compartment-in-series models, but no numeric parameter values appear in the evidence (likely in figures/tables not provided). |
-| popPK | Mamikonyan_2015 | irrelevant | 0 | 0 | This is a clinical efficacy trial of rivastigmine in PD-MCI with no pharmacokinetic parameters or model reported. |
+| popPK | Liu_2021 | irrelevant | 2 | 0 | The study focuses on relating in vivo PK to in vitro permeation data using mechanistic models, and no specific quantitative rivastigmine PK parameter values (CL, V, etc.) are present in the provided evidence. |
+| PGx | Liu_2021 | not_relevant | 0 | 0 | The paper focuses on modeling in vivo pharmacokinetics from in vitro permeation data and contains no information regarding gene variants or pharmacogenomics. |
+| popPK | Mamikonyan_2015 | irrelevant | 0 | 0 | The paper is a clinical efficacy study assessing cognitive outcomes in Parkinson's disease patients and does not report pharmacokinetic parameters such as clearance, volume of distribution, or half-life for rivastigmine. |
+| PGx | Mamikonyan_2015 | not_relevant | 0 | 0 | The paper reports clinical efficacy and tolerability of rivastigmine in Parkinson's disease patients but contains no analysis of genetic variants or pharmacogenomic effects on PK/PD parameters. |
 | popPK | Manalo_2017 | irrelevant | 0 | 0 | Rivastigmine is only an in-vitro AChE-inhibition comparator (IC50 24.52 µg/mL); no PK disposition parameters for rivastigmine are reported. |
-| popPK | Mercier_2007 | relevant | 7 | 3 | Population/compartmental PK of rivastigmine in AD patients, but numeric CL/V/ka values are not shown in the evidence (likely in tables/figures not provided). |
-| popPK | Mita_2016 | relevant | 8 | 3 | A rivastigmine dermal PK model is described, but no numeric parameter values (CL, V, ka) appear in the evidence, likely residing in tables/figures not provided. |
-| popPK | Ndongo_2021 | irrelevant | 0 | 0 | In-vitro acetylcholinesterase inhibition assay; rivastigmine is only a comparator with EC50 values, no PK parameters. |
+| popPK | Mercier_2007 | relevant | 9 | 2 | The study reports quantitative pharmacokinetic parameters (compartmental and non-compartmental) for rivastigmine in humans, but the specific numeric values are not explicitly listed in the provided evidence text, though the abstract confirms their analysis. |
+| PGx | Mercier_2007 | not_relevant | 0 | 0 | The study compares pharmacokinetic parameters between different delivery formulations (transdermal patch vs capsules) and adjusts for body weight and gender, but it does not report any gene variant or genotype effects on rivastigmine PK or PD. |
+| popPK | Mita_2016 | relevant | 9 | 0 | The paper describes a PK model for rivastigmine, but the specific numeric parameter values are not present in the provided abstract text. |
+| PGx | Mita_2016 | not_relevant | 0 | 0 | The paper describes a pharmacokinetic model for dermal absorption but does not investigate the impact of gene variants or genotypes on PK or PD parameters. |
+| popPK | Ndongo_2021 | irrelevant | 0 | 0 | This is an in-vitro pharmacodynamic study measuring acetylcholinesterase inhibition (EC50 values), not a pharmacokinetic study reporting disposition parameters for rivastigmine. |
+| PGx | Ndongo_2021 | not_relevant | 0 | 0 | The paper describes an analytical method for measuring enzyme inhibition of rivastigmine in vitro, containing no genetic variants, genotypes, or pharmacogenomic analysis. |
 | popPK | Wattmo_2011 | irrelevant | 0 | 0 | Clinical outcome study of ChEI efficacy in AD; no PK parameters (CL, V, ka, half-life) for rivastigmine are reported, only mean doses. |
 
 
@@ -97,4 +92,4 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brivastigmine%5D&body=Drug%3A%20rivastigmine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rivastigmine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 03:06 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 04:04 UTC</sub>

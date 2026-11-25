@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
-> The AUC parameter for amoxicillin was rejected due to a unit dimension mismatch on the structural parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit mg/h/l ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Carceles1995_reference" status="rejected" stale="false" population="turkeys and chickens" measured-compound="amoxicillin" parameterization="apparent" topology="1C"></div>
 
@@ -63,13 +63,13 @@ Carceles CM, Vicente MS, Escudero E. Pharmacokinetics of amoxicillin-clavulanic 
 
 ### Reviewer guidance
 
-**The AUC parameter for amoxicillin was rejected due to a unit dimension mismatch on the structural parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit mg/h/l ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The record lists the AUC as 16.75 mg/h/l, but this unit creates a dimensional conflict with the parameter’s definition. The second reader could not locate the AUC value in the source, confirming the parameter was unreachable. The model builder’s substitution of a structural placeholder triggered the rejection. Extracted — amoxicillin: kabs 7.35 h⁻¹, λ1 14.1 h⁻¹, λ2 0.68 h⁻¹, t1/2ka 0.09 h, t1/2β 0.05 h, t1/2z 1.03 h, tmax 0.38 h, Cmax 7.99 mg/l, … (+7).
+A reported unit could not be converted (AUC and Fab), so that value has no SI equivalent. Extracted — amoxicillin: kabs 7.35 h⁻¹, λ1 14.1 h⁻¹, λ2 0.68 h⁻¹, t1/2ka 0.09 h, t1/2β 0.05 h, t1/2z 1.03 h, tmax 0.38 h, Cmax 7.99 mg/l, … (+7).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amoxicillin, the second reading unknown; it also differs on 31 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

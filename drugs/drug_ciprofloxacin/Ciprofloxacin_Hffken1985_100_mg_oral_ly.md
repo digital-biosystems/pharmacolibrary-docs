@@ -154,11 +154,11 @@ _All readers agree on the compared fields of this record._
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_beta | reference | fail | 3 | 11.43 | 3.812 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 3.067 | 11.43 | 3.729 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 3.433 | 11.43 | 3.33 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 4.1 | 11.43 | 2.789 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 4.75 | 11.43 | 2.407 | min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 3 | 11.43 | 3.812 | reported 180.0 min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 3.067 | 11.43 | 3.729 | reported 184.0 min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 3.433 | 11.43 | 3.33 | reported 206.0 min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 4.1 | 11.43 | 2.789 | reported 246.0 min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 4.75 | 11.43 | 2.407 | reported 285.0 min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

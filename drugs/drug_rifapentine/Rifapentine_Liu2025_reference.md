@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rifapentine record lacks volume and clearance parameters, failing to form a compartmental population PK model.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q31 unit % (dimensionless) vs None.
 
 <div class="pk-model-meta" hidden drug="rifapentine" model-id="Rifapentine_Liu2025_reference" status="rejected" stale="false" population="children with latent tuberculosis infection" measured-compound="rifapentine" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Liu W, Xu N, Li W, Mak WY, He T, Qin H et al. Pharmacokinetics and safety of rif
 
 ### Reviewer guidance
 
-**Rifapentine record lacks volume and clearance parameters, failing to form a compartmental population PK model.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q31 unit % (dimensionless) vs None.**
 
-The record omits distribution volume and clearance, which are essential for a one-compartment population pharmacokinetic model. It reports a 70.4% clearance ratio and a 21-day plateau time, but these do not constitute a complete PK parameter set. The second reader disputed the presence of the 70.4% value and the 21-day plateau in the extracted parameters. Extracted — rifapentine: tss 21 days, CL_ratio 70.4 %.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — rifapentine: tss 21 days, CL_ratio 70.4 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of increasing clearance: this record has 70.4, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

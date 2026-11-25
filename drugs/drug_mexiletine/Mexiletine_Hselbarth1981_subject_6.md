@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the AUC parameters used unit µg/ml/hr, conflicting with their expected dimensionality, and multiple summary statistics were not extracted.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3; Q88 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="mexiletine" model-id="Mexiletine_Hselbarth1981_subject_6" status="rejected" stale="false" population="healthy adults" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Häselbarth V, Doevendans JE, Wolf M. Kinetics and bioavailability of mexiletine
 
 ### Reviewer guidance
 
-**The record was rejected because the AUC parameters used unit µg/ml/hr, conflicting with their expected dimensionality, and multiple summary statistics were not extracted.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3; Q88 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.**
 
-The extraction process failed to convert the unit µg/ml/hr for the AUC∞ (15.492) and AUC (13.353) parameters, leaving them without a valid SI value. This caused a dimensionality mismatch that prevented the model from being built. A second reader also failed to extract values for Cmax, elimination rate constant, and tmax, identifying a different lag time value. Extracted — mexiletine: kel 1.11 1/h, tlag 1 hr, tmax 4.29 hr, Cmax 0.94 µg/ml, AUC∞ 15.5 µg/ml/hr, AUC 13.4 µg/ml/hr, V 74 L.
+A reported unit could not be converted (Cmax, AUC∞ and AUC), so that value has no SI equivalent. Extracted — mexiletine: kel 1.11 1/h, tlag 1 hr, tmax 4.29 hr, Cmax 0.94 µg/ml, AUC∞ 15.5 µg/ml/hr, AUC 13.4 µg/ml/hr, V 74 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0^inf: this record has 15.492, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

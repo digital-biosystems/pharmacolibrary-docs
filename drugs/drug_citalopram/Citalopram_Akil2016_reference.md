@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;citalopram&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/&quot;},{&quot;label&quot;:&quot;Akil_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friberg_2006_QTci&quot;,&quot;label&quot;:&quot;Friberg_2006 \u00b7 QTci&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/pd_Friberg_2006_QTci.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_estimate&quot;,&quot;label&quot;:&quot;Weisskopf_2020_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_estimate.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma&quot;,&quot;label&quot;:&quot;Weisskopf_2020_model_for_scit_sdcit_in_plasma&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea&quot;,&quot;label&quot;:&quot;Weisskopf_2020_model_for_scit_sdcit_in_plasma_breast_milk&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friberg_2006_QTci&quot;,&quot;label&quot;:&quot;Friberg_2006 \u00b7 QTci&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/pd_Friberg_2006_QTci.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the desmethylcitalopram metabolites were identified as orphans with no path from the administered dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="citalopram" model-id="Citalopram_Akil2016_reference" status="rejected" stale="false" population="Alzheimer&#39;s disease patients with agitation" measured-compound="R,S-citalopram and R,S-desmethylcitalopram" parameterization="apparent" topology="general_linear"></div>
 
@@ -54,13 +54,13 @@ Akil A, Bies RR, Pollock BG, Avramopoulos D, Devanand DP, Mintzer JE et al. A po
 
 ### Reviewer guidance
 
-**The model was rejected because the desmethylcitalopram metabolites were identified as orphans with no path from the administered dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Although links define formation clearances from both citalopram enantiomers to their respective desmethylcitalopram metabolites, the review findings explicitly classify the structure as having unreachable compartments or unlinked metabolites. Additionally, the second reader could not verify the primary analyte or the extraction of the absorption rate constant and volume of distribution parameters. Extracted — R,S-citalopram and R,S-desmethylcitalopram: V/F 1.39e+03 L, kabs 1 h−1; R-desmethylcitalopram: CL/F 24.4 L/h; S-desmethylcitalopram: CL/F 38.8 L/h.
+None of the extracted parameters is citalopram's own; they describe R,S-citalopram and R,S-desmethylcitalopram, R-desmethylcitalopram and S-desmethylcitalopram. Extracted — R,S-citalopram and R,S-desmethylcitalopram: V/F 1.39e+03 L, kabs 1 h−1; R-desmethylcitalopram: CL/F 24.4 L/h; S-desmethylcitalopram: CL/F 38.8 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has citalopram (racemic), the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

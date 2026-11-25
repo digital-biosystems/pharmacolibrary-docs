@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Eculizumab's maximum elimination rate of 29.6 mg/day was rejected because its unit could not be converted to standard international units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/day ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Ter2023_reference" status="rejected" stale="false" population="aHUS patients (adults and children)" measured-compound="eculizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Ter Avest M, Bouwmeester RN, Duineveld C, Wijnsma KL, Volokhina EB, van den Heuv
 
 ### Reviewer guidance
 
-**Eculizumab's maximum elimination rate of 29.6 mg/day was rejected because its unit could not be converted to standard international units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/day ([mass] / [time]) vs [mass] / [time].**
 
-The record specifies a Vmax of 29.6 mg/day, but this specific unit was unavailable for conversion to SI standards. This prevented the system from validating the parameter's dimensional consistency during review. Consequently, the record was held back due to this unresolvable unit mismatch. Extracted — eculizumab: CL 0.163 L/day, V 6.42 L, Vmax 29.6 mg/day.
+A reported unit could not be converted (Vmax), so that value has no SI equivalent. Extracted — eculizumab: CL 0.163 L/day, V 6.42 L, Vmax 29.6 mg/day.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

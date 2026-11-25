@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 20:27 | 0:34 | 0/0/0 | 0/0/0 | 0/0/0 | 2,089/225 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 22:58 | 0:05 | 0/0/0 | 0/0/0 | 0/0/0 | 3,694/193 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -48,16 +48,21 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Kozlowski_1988.pdf` | Kozlowski MR, Inhibition of the binding and the behav…, Pharmacology, biochemistry,… (1988) | pd | 4 | [10.1016/0091-3057(88)90426-1](https://doi.org/10.1016/0091-3057(88)90426-1) | [2845442](https://www.ncbi.nlm.nih.gov/pubmed/2845442) | metadata signals extractable PD data (IC50) |
 | `Aoshima_2003.pdf` | Aoshima T et al., Effects of the CYP2C19 genotype and cig…, Progress in neuro-psychopha… (2003) | pgx | 8 | [10.1016/S0278-5846(02)00357-3](https://doi.org/10.1016/S0278-5846(02)00357-3) | [12691790](https://www.ncbi.nlm.nih.gov/pubmed/12691790) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 
-<sub>queue written 2026-10-06 20:26 UTC</sub>
+<sub>queue written 2026-11-23 22:58 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Fang_2025 | not_relevant | 0 | 0 | Estazolam is only used as a positive control for anti-anxiety effect; no gene variant or PK/PD pharmacogenomic effect is reported. |
+| popPK | Aoshima_2003 | irrelevant | 0 | 0 | no_text gate: only 128 chars of text extracted (&lt; 400) |
+| popPK | Fang_2025 | irrelevant | 0 | 0 | The paper studies a new amino acid (camptinine) and uses estazolam only as a positive control for anti-anxiety effects, without reporting any pharmacokinetic parameters for estazolam. |
+| PGx | Fang_2025 | not_relevant | 0 | 0 | The paper identifies a natural amino acid in tea and compares its physiological effects to estazolam, but it does not report pharmacogenomic effects on estazolam PK/PD. |
 | popPK | Kozlowski_1988 | irrelevant | 0 | 0 | no_text gate: only 122 chars of text extracted (&lt; 400) |
-| popPK | Li_2025_2 | irrelevant | 0 | 0 | This is a neuroimaging/clinical efficacy study of estazolam in insomnia with no PK parameters or numeric disposition values reported. |
-| PGx | Miura_2005 | not_relevant | 0 | 0 | In vitro enzyme identification study; no gene variant/genotype/phenotype effect on estazolam PK/PD parameters reported. |
+| PGx | Kozlowski_1988 | not_relevant | 0 | 0 | The paper investigates the effect of triazolobenzodiazepines on TRH binding and behavioral effects, not pharmacogenomic effects on estazolam PK/PD. |
+| popPK | Li_2025_2 | irrelevant | 0 | 0 | This is a neuroimaging and clinical efficacy study for chronic insomnia, reporting no pharmacokinetic parameters for estazolam. |
+| PGx | Li_2025_2 | not_relevant | 0 | 0 | The study focuses on neuroimaging markers and gene expression profiles associated with chronic insomnia and treatment response, but does not investigate specific gene variants affecting the pharmacokinetics or pharmacodynamics of estazolam. |
+| popPK | Miura_2005 | irrelevant | 2 | 1 | The study reports in-vitro intrinsic metabolic kinetics (Km, Vmax, IC50) rather than in-vivo pharmacokinetic disposition parameters (CL, V, t1/2) for the drug. |
+| PGx | Miura_2005 | not_relevant | 0 | 0 | The paper identifies CYP3A4 as the enzyme metabolizing estazolam but does not report any pharmacogenomic study linking specific gene variants (e.g., CYP3A5*3) to changes in pharmacokinetic or pharmacodynamic parameters. |
 
 
 </details>

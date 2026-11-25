@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> Tramadol’s peripheral-compartment volume, V2, is 2.37 l/kg in a rejected two-compartment record with an unreachable compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Itami2016_reference" status="rejected" stale="false" population="young and middle-aged dogs" measured-compound="tramadol" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Itami T, Saito Y, Ishizuka T, Tamura J, Umar MA, Inoue H et al. Comparison of ph
 
 ### Reviewer guidance
 
-**Tramadol’s peripheral-compartment volume, V2, is 2.37 l/kg in a rejected two-compartment record with an unreachable compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record reports tramadol total clearance of 29.9 ml·min−1·kg−1 and central and peripheral distribution volumes of 2.3 and 2.37 l/kg, respectively. It was rejected because a compartment or metabolite has no path from the dose; the record does not identify which compartment is unreachable. Extracted — tramadol: CL 29.9 ml·min−1·kg−1, V1 2.3 l/kg, V2 2.37 l/kg.
+Extracted — tramadol: CL 29.9 ml·min−1·kg−1, V1 2.3 l/kg, V2 2.37 l/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 2257.7, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

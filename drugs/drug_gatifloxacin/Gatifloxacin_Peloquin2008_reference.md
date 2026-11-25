@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F for gatifloxacin was left at library defaults, not estimated in this abstract-only record.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="gatifloxacin" model-id="Gatifloxacin_Peloquin2008_reference" status="needs_review" stale="false" population="adults with pulmonary tuberculosis" measured-compound="gatifloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Peloquin CA, Hadad DJ, Molino LP, Palaci M, Boom WH, Dietze R et al. Population 
 
 ### Reviewer guidance
 
-**Bioavailability F for gatifloxacin was left at library defaults, not estimated in this abstract-only record.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record was built from the paper's abstract alone, so summary statistics like the 7.4 h half-life stand in for a fitted model. Because the bioavailability F was not extracted, a library placeholder is used instead of an explicit estimate. A second reader disagreed on the extraction of the dose compound and primary analyte, both recorded as gatifloxacin. Extracted — gatifloxacin: Cmax 15.6 microg/ml, V 81 liters, t1/2z 7.4 h, CL 5.28 L h−1, kabs 0.397 h−1, tlag 0.825 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — gatifloxacin: Cmax 15.6 microg/ml, V 81 liters, t1/2z 7.4 h, CL 5.28 L h−1, kabs 0.397 h−1, tlag 0.825 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gatifloxacin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

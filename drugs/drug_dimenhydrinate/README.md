@@ -23,7 +23,7 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kranke_2002_PONV](drugs/drug_dimenhydrinate/pd_Kranke_2002_PONV.md) | complete absence of postoperative nausea and vomiting within 6 hours ← dimenhydrinate · inhibition effect | — | Kranke P et al., Dimenhydrinate for prophylaxis of posto…, Acta anaesthesiologica Scan… (2002) | [10.1034/j.1399-6576.2002.t01-1-460303.x](https://doi.org/10.1034/j.1399-6576.2002.t01-1-460303.x) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Sher_2022_Nv](drugs/drug_dimenhydrinate/pd_Sher_2022_Nv.md) | Number of vomits biomarker turnover ← dimenhydrinate | — | Sher AA et al., GC-MS analysis of organic fractions of…, Brazilian journal of biolog… (2022) | [10.1590/1519-6984.260566](https://doi.org/10.1590/1519-6984.260566) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Sher_2022_Nv](drugs/drug_dimenhydrinate/pd_Sher_2022_Nv.md) | Number of vomits biomarker turnover ← dimenhydrinate | — | Sher AA et al., GC-MS analysis of organic fractions of…, Brazilian journal of biolog… (2022) | [10.1590/1519-6984.260566](https://doi.org/10.1590/1519-6984.260566) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

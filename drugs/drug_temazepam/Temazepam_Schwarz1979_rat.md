@@ -5,11 +5,11 @@
 
 # temazepam — `Temazepam_Schwarz1979_rat`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.00).">human + animal</span>
 
-> Temazepam D1 (80 mg/kg) has time dimension but mass units, and no volume or clearance defines a compartmental model.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg/kg ([mass]) vs [time].
 
-<div class="pk-model-meta" hidden drug="temazepam" model-id="Temazepam_Schwarz1979_rat" status="rejected" stale="false" population="healthy adults" measured-compound="temazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="temazepam" model-id="Temazepam_Schwarz1979_rat" status="rejected" stale="false" population="man and several animal species" measured-compound="temazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Schwarz HJ. Pharmacokinetics and metabolism of temazepam in man and several animal species. British journal of clinical pharmacology 8(1):23S–29S (1979).
@@ -20,6 +20,8 @@ Schwarz HJ. Pharmacokinetics and metabolism of temazepam in man and several anim
 **Population:** healthy adults · condition healthy · age group adult.
 
 **Dosing:** 15, 30, 45 mg, oral, multiple, every 24 h.
+
+> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.00).
 
 ## Model
 
@@ -39,7 +41,7 @@ Schwarz HJ. Pharmacokinetics and metabolism of temazepam in man and several anim
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.00).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +51,13 @@ Schwarz HJ. Pharmacokinetics and metabolism of temazepam in man and several anim
 
 ### Reviewer guidance
 
-**Temazepam D1 (80 mg/kg) has time dimension but mass units, and no volume or clearance defines a compartmental model.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg/kg ([mass]) vs [time].**
 
-The duration parameter D1 is 80 with units of mg/kg, a mass dimension that conflicts with its required time dimension. The record lacks distribution volume and clearance or elimination rate, meaning it is not a compartmental population pharmacokinetic model. Consequently, the paper's exposure and outcome data cannot support the standard structural framework. Extracted — temazepam: D1 80 mg/kg, fe 14.8, Fab 73.9.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (D1), so that value has no SI equivalent. Extracted — temazepam: D1 80 mg/kg, fe 14.8, Fab 73.9.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has temazepam, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -145,4 +147,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btemazepam%5D%20Temazepam_Schwarz1979_rat&body=Drug%3A%20temazepam%0ARecord%3A%20Temazepam_Schwarz1979_rat%0APaper%3A%20Schwarz_1979%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_temazepam/Temazepam_Schwarz1979_rat%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:42 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:15 UTC</sub>

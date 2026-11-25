@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The extracted durlobactam clearance and volume parameters are invalid because the source paper describes sulbactam pharmacokinetics, not durlobactam.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="Durlobactam" model-id="Durlobactam_Onita2026_reference" status="rejected" stale="false" population="" measured-compound="durlobactam" parameterization="mechanistic" topology="2C"></div>
 
@@ -40,7 +40,7 @@ Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation o
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,13 @@ Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation o
 
 ### Reviewer guidance
 
-**The extracted durlobactam clearance and volume parameters are invalid because the source paper describes sulbactam pharmacokinetics, not durlobactam.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source paper explicitly reports parameters for sulbactam, treating durlobactam only as a co-administered agent. Consequently, the recorded values for total clearance (7.65 L/h) and central volume (4.75 L) do not represent the intended molecule. The identity check failed because the study's primary subject was the wrong compound. Extracted — durlobactam: CL 7.65 L/h, V1 4.75 L, V2 4.88 L, Q 3.03 L/h.
+Extracted — durlobactam: CL 7.65 L/h, V1 4.75 L, V2 4.88 L, Q 3.03 L/h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 7.65, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -78,6 +80,28 @@ The source paper explicitly reports parameters for sulbactam, treating durlobact
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.5 (2/4 fields) | 2 |
+
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q22]` | 7.65 |  | only_one_extracted |
+| `gpt-oss-120b` | `values[Q63]` | 4.75 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -97,15 +121,15 @@ The source paper explicitly reports parameters for sulbactam, treating durlobact
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | fail | durlobactam (or metabolite) | paper about another drug | paper subject is not durlobactam: the paper is about another drug; this one is a co-medication or covariate: The study reports pharmacokinetic parameters for sulbactam, not durlobactam, which is only mentioned as a co-administered agent in the introduction. |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=durlobactam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | skipped |  |  | no second reading of this record |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | durlobactam (or metabolite) | paper about another drug |  | paper subject is not durlobactam: the paper is about another drug; this one is a co-medication or covariate: The study reports pharmacokinetic parameters for sulbactam, not durlobactam, which is only mentioned as a co-administered agent in the introduction. |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=durlobactam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict partial; agreement 0.5 (2 of 4 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

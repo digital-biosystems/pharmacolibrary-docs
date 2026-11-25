@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 0.95).">in vitro</span>
 
-> Record rejected because the Ren_2022 paper studies a different drug, not olmesartan, invalidating the 20.0 L/h clearance value.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="Olmesartan" model-id="Olmesartan_Ren2022_reference" status="rejected" stale="false" population="" measured-compound="olmesartan" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Ren T, Zhu X, Jusko NM, Krzyzanski W, Jusko WJ. Pharmacodynamic model of slow re
 
 ### Reviewer guidance
 
-**Record rejected because the Ren_2022 paper studies a different drug, not olmesartan, invalidating the 20.0 L/h clearance value.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The relevance screen confirmed that neither the paper's title nor its abstract names olmesartan, identifying the study subject as another drug. Consequently, the assigned pharmacokinetic parameters for olmesartan, specifically the 20.0 L/h clearance and 80.0 L volume of distribution, are not supported by the cited source. Although a second reader suggested a value of 7.7 for one field, the primary identity mismatch prevents the record from being valid. Extracted — olmesartan: CL 20 L/h, V 80 L.
+Extracted — olmesartan: CL 20 L/h, V 80 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q57: this record has none, the second reading 7.7. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.9 (9 of 10 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.9 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

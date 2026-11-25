@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the absorption rate constant has an incompatible time unit instead of inverse time, and the parent-to-metabolite link is missing.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Anderson2005_1_year_pna" status="rejected" stale="false" population="children" measured-compound="paracetamol" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Anderson BJ, Pons G, Autret-Leca E, Allegaert K, Boccard E. Pediatric intravenou
 
 ### Reviewer guidance
 
-**The record was rejected because the absorption rate constant has an incompatible time unit instead of inverse time, and the parent-to-metabolite link is missing.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].**
 
-The parameter labeled as an absorption rate constant is assigned a unit of hours, which conflicts with the required dimension of inverse time. Additionally, the model structure lacks the link defining propacetamol as the parent compound that forms paracetamol via hydrolysis. A second reader noted these omissions, disagreeing with the record's lack of model links and the specific identification of the rate constant parameter. Extracted — paracetamol: CLm/F 13.6 L·h⁻¹ 70 kg⁻¹, V1 0.34 L·kg⁻¹, Q 1.25 L·h⁻¹·kg⁻¹, kabs 0.0043 h, V2 31.2 L·70 kg⁻¹.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — paracetamol: CLm/F 13.6 L·h⁻¹ 70 kg⁻¹, V1 0.34 L·kg⁻¹, Q 1.25 L·h⁻¹·kg⁻¹, kabs 0.0043 h, V2 31.2 L·70 kg⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading propacetamol → paracetamol (hydrolysis); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

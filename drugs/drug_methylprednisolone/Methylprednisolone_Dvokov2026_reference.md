@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The review record for methylprednisolone was rejected because the source paper does not actually study this drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Dvokov2026_reference" status="rejected" stale="false" population="" measured-compound="methylprednisolone" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,11 +48,11 @@ Dvořáčková E, Michaličková D, Petrus J, Klapková E, Dutková A, Kotowski 
 
 ### Reviewer guidance
 
-**The review record for methylprednisolone was rejected because the source paper does not actually study this drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The extracted parameters describe methylprednisolone, including a clearance of 0.06 L/h and a volume of distribution of 1.385 L. However, the relevance screen determined that neither the title nor the abstract of Dvořáčková_2026 names methylprednisolone. The paper subject was identified as another drug, causing the analyte identity check to fail. Extracted — methylprednisolone: CL 0.06 L/h, V 1.39 L.
+Extracted — methylprednisolone: CL 0.06 L/h, V 1.39 L.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

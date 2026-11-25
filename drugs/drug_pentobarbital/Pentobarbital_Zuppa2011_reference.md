@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;pentobarbital&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/&quot;},{&quot;label&quot;:&quot;Zuppa_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentobarbital_Frederiksen1983_reference&quot;,&quot;label&quot;:&quot;Frederiksen_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Frederiksen1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Ketharanathan2023_base&quot;,&quot;label&quot;:&quot;Ketharanathan_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Ketharanathan2023_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Ketharanathan2023_final&quot;,&quot;label&quot;:&quot;Ketharanathan_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Ketharanathan2023_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_12_years&quot;,&quot;label&quot;:&quot;Helfer_2026_12_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Helfer2026_12_years.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_2_to_6_years&quot;,&quot;label&quot;:&quot;Helfer_2026_2_to_6_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Helfer2026_2_to_6_years.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_2_years&quot;,&quot;label&quot;:&quot;Helfer_2026_2_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Helfer2026_2_years.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_6_to_12_years&quot;,&quot;label&quot;:&quot;Helfer_2026_6_to_12_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Helfer2026_6_to_12_years.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_estimate&quot;,&quot;label&quot;:&quot;Helfer_2026_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Helfer2026_estimate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Ketharanathan2023_base&quot;,&quot;label&quot;:&quot;Ketharanathan_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Ketharanathan2023_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Ketharanathan2023_final&quot;,&quot;label&quot;:&quot;Ketharanathan_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Ketharanathan2023_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The second compartment for pentobarbital lacks an elimination path, and the record relies on abstract-only summary statistics rather than fitted model parameters.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="pentobarbital" model-id="Pentobarbital_Zuppa2011_reference" status="rejected" stale="false" population="neonates, infants, and children after open-heart surgery with congenital heart disease" measured-compound="pentobarbital" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="pentobarbital" model-id="Pentobarbital_Zuppa2011_reference" status="rejected" stale="false" population="neonates, infants, and children after open heart surgery" measured-compound="pentobarbital" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Zuppa AF, Nicolson SC, Barrett JS, Gastonguay MR. Population pharmacokinetics of pentobarbital in neonates, infants, and children after open heart surgery. The Journal of pediatrics 159(3):414–419.e4193 (2011).
@@ -17,7 +17,7 @@ Zuppa AF, Nicolson SC, Barrett JS, Gastonguay MR. Population pharmacokinetics of
 
 ## Population and dosing
 
-**Population:** neonates, infants, and children after open-heart surgery with congenital heart disease · condition congenital heart disease after open-heart surgery · age group mixed · n = 35.
+**Population:** neonates, infants, and children after open heart surgery · condition congenital heart disease · age group mixed · n = 35.
 
 ## Model
 
@@ -31,13 +31,13 @@ Zuppa AF, Nicolson SC, Barrett JS, Gastonguay MR. Population pharmacokinetics of
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL | CL | 0.12 | L/hr/kg |
-| V1 | V1 | 0.45 | L/kg |
-| peripheral volume of distributions | V2 | 0.98 | L/kg |
+| A typical infant (two-ventricle physiology, 6.9 kg, 5.2 months, and bypass grafting time of 60 minutes) had a CL of | CL | 0.12 | L/hr/kg |
+| V1 of | V1 | 0.45 | L/kg |
+| peripheral volume of distributions of | V2 | 0.98 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,21 +47,21 @@ Zuppa AF, Nicolson SC, Barrett JS, Gastonguay MR. Population pharmacokinetics of
 
 ### Reviewer guidance
 
-**The second compartment for pentobarbital lacks an elimination path, and the record relies on abstract-only summary statistics rather than fitted model parameters.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The two-compartment structure includes a peripheral volume (V2) of 0.98 L/kg that is unreachable from the dose, meaning there is no defined path for drug elimination from that space. Additionally, the record was built from the abstract alone, so the listed clearance of 0.12 L/hr/kg and central volume of 0.45 L/kg are summary statistics that stand in for a fully fitted model. A second reader also disagreed on a bypass grafting time parameter, identifying a value of 60 minutes where this record recorded null. Extracted — pentobarbital: CL 0.12 L/hr/kg, V1 0.45 L/kg, V2 0.98 L/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pentobarbital: CL 0.12 L/hr/kg, V1 0.45 L/kg, V2 0.98 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bypass grafting time: this record has none, the second reading 60. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a typical infant (two-ventricle physiology, 6.9 kg, 5.2 months, and bypass grafting time of 60 minutes) had a cl of: this record has 0.12, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 0.12 | L/hr/kg | 2.333e-06 | m3/s | l/(h·kg) | exact (1) | Zuppa_2011:abstract |
-| V1 | `Q63` · V1 | 0.45 | L/kg | 0.0315 | m3 | l/kg | exact (1) | Zuppa_2011:abstract |
-| peripheral volume of distributions | `Q64` · V2 | 0.98 | L/kg | 0.0686 | m3 | l/kg | llm_confirmed (0.6) | Zuppa_2011:abstract |
+| A typical infant (two-ventricle physiology, 6.9 kg, 5.2 months, and bypass grafting time of 60 minutes) had a CL of | `Q22` · CL | 0.12 | L/hr/kg | 2.333e-06 | m3/s | l/(h·kg) | llm_confirmed (0.6) | Zuppa_2011:abstract |
+| V1 of | `Q63` · V1 | 0.45 | L/kg | 0.0315 | m3 | l/kg | llm_confirmed (0.6) | Zuppa_2011:abstract |
+| peripheral volume of distributions of | `Q64` · V2 | 0.98 | L/kg | 0.0686 | m3 | l/kg | llm_confirmed (0.6) | Zuppa_2011:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,17 +81,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[bypass grafting time]` |  | 60 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[a typical infant (two-ventricle physiology, 6.9 kg, 5.2 months, and bypass grafting time of 60 minutes) had a cl of]` | 0.12 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 0.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distributions of]` | 0.98 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distributions]` |  | 0.98 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1 of]` | 0.45 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` |  | 0.45 | only_one_extracted |
 
 </details>
 
@@ -139,4 +144,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpentobarbital%5D%20Pentobarbital_Zuppa2011_reference&body=Drug%3A%20pentobarbital%0ARecord%3A%20Pentobarbital_Zuppa2011_reference%0APaper%3A%20Zuppa_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pentobarbital/Pentobarbital_Zuppa2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:43 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:52 UTC</sub>

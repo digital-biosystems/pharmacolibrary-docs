@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record describes pyrazinamide pharmacokinetics but is labeled as ethionamide, so it was rejected for subject mismatch.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Xu2024_reference" status="rejected" stale="false" population="" measured-compound="ethionamide" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Xu AY, Velásquez GE, Zhang N, Chang VK, Phillips PPJ, Nahid P et al. Pyrazinami
 
 ### Reviewer guidance
 
-**The record describes pyrazinamide pharmacokinetics but is labeled as ethionamide, so it was rejected for subject mismatch.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The apparent clearance parameter is explicitly labeled for pyrazinamide rather than the intended ethionamide. A second reader identified discrepancies in volume values, reporting 33.5 L compared to the 33.4 L in the record. The model builder also defaulted absorption parameters that were not provided in the source. Extracted — ethionamide: CL/F 3.53 L/h, V1/F 33.4 L.
+Extracted — ethionamide: CL/F 3.53 L/h, V1/F 33.4 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has none, the second reading 351; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.75 (6 of 8 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

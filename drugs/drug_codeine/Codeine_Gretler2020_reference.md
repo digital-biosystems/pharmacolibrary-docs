@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> Codeine metabolites lack metabolic rate constants, and the unit ng mL⁻¹ could not be converted to standard SI units.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Gretler2020_reference" status="rejected" stale="false" population="Thoroughbred horses" measured-compound="codeine" parameterization="apparent" topology="general_linear"></div>
 
@@ -61,13 +61,13 @@ Gretler SR, Finno CJ, McKemie DS, Kass PH, Knych HK. Metabolism, pharmacokinetic
 
 ### Reviewer guidance
 
-**Codeine metabolites lack metabolic rate constants, and the unit ng mL⁻¹ could not be converted to standard SI units.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-All five metabolic links in the model structure have undefined rate parameters, rendering the metabolite compartments unreachable from the dose. A unit conversion error prevented the model from processing specific parameters, contributing to the record's refusal. Additionally, the second reader disagreed on the model topology, asserting that morphine glucuronides form directly from codeine rather than from morphine, and disputed the presence of the second exponential coefficient. Extracted — codeine: kabs 19.3 hour−1, CL/F 45.9 mL minute−1 kg−1, Q/F 6.98 mL minute−1 kg−1, V1/F 2.07 L kg−1, V2/F 0.916 L kg−1, Cmax 271 ng mL−1, tmax 0.438 hour, AUC 286 ng hour mL−1, … (+5).
+A reported unit could not be converted (A1), so that value has no SI equivalent. Extracted — codeine: kabs 19.3 hour−1, CL/F 45.9 mL minute−1 kg−1, Q/F 6.98 mL minute−1 kg−1, V1/F 2.07 L kg−1, V2/F 0.916 L kg−1, Cmax 271 ng mL−1, tmax 0.438 hour, AUC 286 ng hour mL−1, … (+5).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has codeine → norcodeine (metabolism); codeine → codeine-6-glucuronide (metabolism); codeine → morphine (metabolism) …, the second reading codeine → norcodeine (metabolism); codeine → codeine-6-glucuronide (metabolism); codeine → morphine (metabolism) …; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

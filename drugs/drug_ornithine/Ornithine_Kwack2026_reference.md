@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The ornithine record is rejected because the source paper studies a different drug, and the bioavailability parameter lacks an explicit value.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Ornithine" model-id="Ornithine_Kwack2026_reference" status="rejected" stale="false" population="" measured-compound="ornithine" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Kwack H, Kong H, Lim J, Zhang BT, Hahn J, Chang MJ. PKGPT: Expert-Orchestrated R
 
 ### Reviewer guidance
 
-**The ornithine record is rejected because the source paper studies a different drug, and the bioavailability parameter lacks an explicit value.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The relevance screen identified the paper as describing a different drug, as ornithine is not named in the title or abstract. Furthermore, the bioavailability parameter was not explicitly estimated from the data; no value was extracted for it, so it remains undefined in the model. Extracted — ornithine: CL 0.133 L/h, V1 4.59 L, V2 13.2 L, Q 6.85 L/h, kabs 0.545 h−1, tlag 0.825 h.
+Extracted — ornithine: CL 0.133 L/h, V1 4.59 L, V2 13.2 L, Q 6.85 L/h, kabs 0.545 h−1, tlag 0.825 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (13 of 13 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

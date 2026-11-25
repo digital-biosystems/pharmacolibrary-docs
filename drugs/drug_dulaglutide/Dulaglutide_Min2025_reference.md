@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Dulaglutide absorption parameters ka and Tlag were defaulted because the source did not report them.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="dulaglutide" model-id="Dulaglutide_Min2025_reference" status="needs_review" stale="false" population="" measured-compound="dulaglutide" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Min JS, Jo SJ, Lee S, Kim DY, Kim DH, Lee CB et al. A Comprehensive Review on th
 
 ### Reviewer guidance
 
-**Dulaglutide absorption parameters ka and Tlag were defaulted because the source did not report them.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists CL/F of 9.1 L/h and V/F of 28.3 L, but absorption parameters ka and Tlag are missing. The model builder substituted library defaults for these values instead of extracting estimates from the paper. This deviation means the simulated absorption profile relies on placeholder conventions rather than source data. Extracted — dulaglutide: CL/F 9.1 L/h, V/F 28.3 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — dulaglutide: CL/F 9.1 L/h, V/F 28.3 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has 2, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

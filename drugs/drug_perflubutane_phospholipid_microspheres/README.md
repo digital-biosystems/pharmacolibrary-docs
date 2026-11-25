@@ -15,7 +15,9 @@ Perflubutane phospholipid microspheres are an ultrasound contrast medium.
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Landmark_2008_reference](drugs/drug_perflubutane_phospholipid_microspheres/PerflubutanePhospholipidMicrospheres_Landmark2008_reference.md) | — | 1-compartment (no model) | 0 | Landmark KE et al., Pharmacokinetics of perfluorobutane fol…, Ultrasound in medicine & bi… (2008) | [10.1016/j.ultrasmedbio.2007.09.019](https://doi.org/10.1016/j.ultrasmedbio.2007.09.019) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,42 +31,40 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:11 | 2:02 | 0/0/0 | 0/0/0 | 0/0/0 | 11,738/4,979 | openai / gpt-6-luna | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 02:45 | 0:03 | 0/1/0 | 0/0/0 | 0/0/0 | 4,137/191 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 15 matched, 9 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Landmark_2008.pdf` | Landmark KE et al., Pharmacokinetics of perfluorobutane fol…, Ultrasound in medicine & bi… (2008) | popPK | 8 | [10.1016/j.ultrasmedbio.2007.09.019](https://doi.org/10.1016/j.ultrasmedbio.2007.09.019) | [18096304](https://pubmed.ncbi.nlm.nih.gov/18096304) | The study reports numeric perfluorobutane half-lives, though no numeric clearance or compartmental model values are provided. |
-| `Melich_2024.pdf` | Melich R et al., In Vitro and In Vivo Behavioral Evaluat…, Ultrasound in medicine & bi… (2024) | popPK | 8 | [10.1016/j.ultrasmedbio.2024.03.009](https://doi.org/10.1016/j.ultrasmedbio.2024.03.009) | [38637170](https://pubmed.ncbi.nlm.nih.gov/38637170) | Rat in-vivo persistence and half-life are studied, but no numeric disposition values are present in the provided evidence. |
-
-<sub>queue written 2026-10-07 19:10 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bijland_2011 | irrelevant | 0 | 0 | This is a mouse study of perfluorobutane sulfonate, a different compound, and reports no disposition parameters for the subject drug. |
-| popPK | Dixon_2013 | irrelevant | 0 | 0 | This in-vitro study uses perfluorobutane microbubbles as a delivery aid, not the subject drug, and reports no pharmacokinetic parameters for it. |
-| popPK | Kindberg_2003 | irrelevant | 1 | 0 | Rat cellular uptake study reports no numeric pharmacokinetic disposition parameters. |
-| popPK | Lau_2020 | irrelevant | 0 | 0 | The numeric pharmacokinetic values are for perfluorobutane sulfonate, not perflubutane phospholipid microspheres. |
-| popPK | Li_2017 | irrelevant | 2 | 2 | It reports numeric Cmax and AUC, but no quantitative disposition parameters or compartmental/population-PK model. |
-| popPK | Li_2026 | irrelevant | 0 | 0 | Sonazoid is used as a macrophage-blocking agent, with no quantitative pharmacokinetic parameters reported. |
-| popPK | Melich_2024 | relevant | 8 | 0 | Rat in-vivo persistence and half-life are studied, but no numeric disposition values are present in the provided evidence. |
-| popPK | Zhao_2015 | irrelevant | 0 | 0 | The evidence concerns different compounds (PFASs), not perflubutane_phospholipid_microspheres, and reports in-vitro transporter kinetics. |
+| popPK | Bijland_2011 | irrelevant | 0 | 0 | The study focuses on the metabolic effects of perfluoroalkyl sulfonates (PFAS) in mice, not the pharmacokinetics of perflubutane phospholipid microspheres. |
+| PGx | Bijland_2011 | not_relevant | 0 | 0 | The paper investigates the toxicity of PFAS surfactants on lipoprotein metabolism in mice, not the pharmacokinetics or pharmacodynamics of perflubutane phospholipid microspheres. |
+| popPK | Dixon_2013 | irrelevant | 0 | 0 | The study investigates the delivery of a model drug (calcein) using microbubbles in an in vitro flow chamber system, not the population pharmacokinetics of perflubutane phospholipid microspheres. |
+| PGx | Dixon_2013 | not_relevant | 0 | 0 | The paper describes microbubble technology for drug delivery and does not investigate any genetic variants or pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of perflubutane phospholipid microspheres. |
+| popPK | Kindberg_2003 | irrelevant | 1 | 0 | The study is a qualitative mechanistic investigation of cellular uptake (Kupffer cells) via electron microscopy, and it does not report quantitative pharmacokinetic parameters (such as clearance, volume, or half-life) for the drug. |
+| PGx | Kindberg_2003 | not_relevant | 0 | 0 | The paper describes the hepatic clearance of an ultrasound contrast agent in rats without mentioning any pharmacogenomic or genetic effects on pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Landmark_2008 | not_relevant | 0 | 0 | The paper reports pharmacokinetics of perfluorobutane in healthy volunteers vs. patients with reduced pulmonary diffusing capacity, but does not investigate gene variants or genotypes. |
+| popPK | Lau_2020 | irrelevant | 0 | 0 | The study is about Perfluorobutane Sulfonate (PFBS), not perflubutane phospholipid microspheres. |
+| PGx | Lau_2020 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of perfluorobutane sulfonate (PFBS), an environmental chemical, not the drug perflubutane phospholipid microspheres, and it does not report gene-based effects. |
+| popPK | Li_2017 | irrelevant | 0 | 0 | The study analyzes perfluorobutane (the gas in Sonazoid microbubbles), not perflubutane phospholipid microspheres, which are distinct drug substances. |
+| PGx | Li_2017 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics in healthy volunteers and compares ethnic groups (Chinese vs. Caucasian) but does not analyze specific gene variants or genotypes. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The paper describes an mRNA delivery strategy using exosomes and ultrasound contrast agents, not the pharmacokinetics of perflubutane phospholipid microspheres. |
+| PGx | Li_2026 | not_relevant | 0 | 0 | The paper discusses mRNA delivery for familial hypercholesterolemia using exosomes and the ultrasound contrast agent Sonazoid, with no mention of perflubutane phospholipid microspheres or pharmacogenomic effects on its PK/PD parameters. |
+| popPK | Melich_2024 | irrelevant | 3 | 2 | The study focuses on the characterization of perfluorobutane nanodroplets (contrast agents) and reports qualitative half-life variations rather than quantitative compartmental PK parameters (CL, V) for a therapeutic drug. |
+| PGx | Melich_2024 | not_relevant | 0 | 0 | The paper describes the physicochemical and pharmacokinetic behavior of perfluorobutane nanodroplets but contains no pharmacogenomic analysis or data on gene variants. |
+| popPK | Zhao_2015 | irrelevant | 0 | 0 | The study investigates the transporter kinetics of perfluorinated sulfonates (PFASs) in vitro, which is a different class of compounds from the subject drug perflubutane. |
+| PGx | Zhao_2015 | not_relevant | 0 | 0 | The paper discusses perfluorooctane sulfonate (PFOS) and other perfluoroalkyl sulfonates, not perflubutane phospholipid microspheres, and does not report pharmacogenomic effects on PK/PD parameters for the target drug. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bperflubutane_phospholipid_microspheres%5D&body=Drug%3A%20perflubutane_phospholipid_microspheres%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_perflubutane_phospholipid_microspheres/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 02:41 UTC</sub>

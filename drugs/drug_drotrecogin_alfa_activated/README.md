@@ -23,7 +23,7 @@ This recombinant serine protease was approved for sepsis management. It is admin
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Dömötör_2003_Ca2_i](drugs/drug_drotrecogin_alfa_activated/pd_D_m_t_r_2003_Ca2_i.md) | intracellular calcium concentration ← APC · direct sigmoid Emax (Hill) effect | — | Dömötör E et al., Activated protein C alters cytosolic ca…, Blood (2003) | [10.1182/blood-2002-12-3680](https://doi.org/10.1182/blood-2002-12-3680) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Dömötör_2003_Ca2_i](drugs/drug_drotrecogin_alfa_activated/pd_D_m_t_r_2003_Ca2_i.md) | intracellular calcium concentration ← APC · direct sigmoid Emax (Hill) effect | — | Dömötör E et al., Activated protein C alters cytosolic ca…, Blood (2003) | [10.1182/blood-2002-12-3680](https://doi.org/10.1182/blood-2002-12-3680) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

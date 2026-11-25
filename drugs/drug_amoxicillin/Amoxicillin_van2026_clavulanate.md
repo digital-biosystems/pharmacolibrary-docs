@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The first-order transfer rate constant k14 was recorded with units of hours instead of reciprocal hours, causing a dimensional error.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q347 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_van2026_clavulanate" status="rejected" stale="false" population="African children with severe community acquired pneumonia" measured-compound="amoxicillin" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ van Dyk J, Gebreyesus MS, Clements M, Standing JF, Moore DP, Dangor Z et al. Pop
 
 ### Reviewer guidance
 
-**The first-order transfer rate constant k14 was recorded with units of hours instead of reciprocal hours, causing a dimensional error.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q347 unit h ([time]) vs 1 / [time].**
 
-The parameter labeled 'Zero-order input' carries the meaning of a first-order transfer rate constant from the central to the peripheral compartment. Its value is 0.394 with units listed as h, which contradicts the reciprocal time dimension required for a rate constant. A second reader disagreed on this parameter, reporting the value as null, indicating a data extraction or interpretation conflict. Extracted — amoxicillin: CL/F 6.1 L/h, V/F 7 L, tlag 0.37 h, k14 0.394 h, kabs 1.6 h⁻¹, Fab 1 F.
+A reported unit could not be converted (k14 and Fab), so that value has no SI equivalent. Extracted — amoxicillin: CL/F 6.1 L/h, V/F 7 L, tlag 0.37 h, k14 0.394 h, kabs 1.6 h⁻¹, Fab 1 F.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of zero-order input: this record has 0.394, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The sparteine model was rejected because a model compartment was unreachable from the dose, and a parameter for the drug-target dissociation constant was extracted instead of a rate constant.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="sparteine" model-id="Sparteine_Eichelbaum1979_nonmetaboliser" status="rejected" stale="false" population="healthy adult male volunteers" measured-compound="sparteine" parameterization="mechanistic" topology="3C"></div>
 
@@ -54,13 +54,13 @@ Eichelbaum M, Spannbrucker N, Dengler HJ. Influence of the defective metabolism 
 
 ### Reviewer guidance
 
-**The sparteine model was rejected because a model compartment was unreachable from the dose, and a parameter for the drug-target dissociation constant was extracted instead of a rate constant.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The review found an unreachable compartment in the three-compartment structure, meaning the dose administration has no path to that part of the model. Additionally, the parameter labeled 'k d' is defined in the record as an equilibrium dissociation constant, which is a binding affinity measure, but the model structure requires a first-order rate constant. The second reader disagreed on several parameters that were left as null, including the renal clearance parameter and specific values for other compartments. Extracted — sparteine: AUC 255, V2 436 L, k21 0.0774 1/min, k12 0.0401 1/min, KD 0.00929, V1 68.2 L, V 132 L, CLNR 126 ml/min.
+Extracted — sparteine: AUC 255, V2 436 L, k21 0.0774 1/min, k12 0.0401 1/min, KD 0.00929, V1 68.2 L, V 132 L, CLNR 126 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of /3: this record has none, the second reading 0.0046; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

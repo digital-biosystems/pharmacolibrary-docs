@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the paper studies interferon-alpha, not macrogol, which appears only as a formulation excipient.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="macrogol" model-id="Macrogol_Jeon2013_reference" status="rejected" stale="false" population="" measured-compound="macrogol" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Jeon S, Juhn JH, Han S, Lee J, Hong T, Paek J et al. Saturable human neopterin r
 
 ### Reviewer guidance
 
-**The record was rejected because the paper studies interferon-alpha, not macrogol, which appears only as a formulation excipient.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The study investigates the pharmacokinetics of interferon-alpha, treating macrogol as a co-medication or excipient rather than the primary measured compound. Consequently, the extracted parameters do not describe macrogol's pharmacokinetics. A second reader disagreed on the final verdict, recording a disagreement ratio of 0.368. Extracted — macrogol: CL/F 12.2 L/h, V/F 691 L, kabs 0.00653 h-1, tlag 85.7 h.
+Extracted — macrogol: CL/F 12.2 L/h, V/F 691 L, kabs 0.00653 h-1, tlag 85.7 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 26.1; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.368, 0 of 1 reader(s) agree | 0.368 | cross-check disputed by a second reader: verdict disputed, agreement 0.368, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.368 (7 of 19 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.368 | cross-check contradicted by a second reader: verdict disputed; agreement 0.368 (7 of 19 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

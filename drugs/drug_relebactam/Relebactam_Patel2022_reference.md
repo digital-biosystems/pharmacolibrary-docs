@@ -50,7 +50,7 @@ Patel M, Bellanti F, Daryani NM, Noormohamed N, Hilbert DW, Young K et al. Popul
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has imipenem/cilastatin/relebactam, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 

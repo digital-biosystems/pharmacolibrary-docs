@@ -50,7 +50,7 @@ Dacomitinib is a protein kinase inhibitor used to treat non-small-cell lung carc
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:21 | 3:47 | 2/3/0 | 0/0/0 | 0/0/0 | 97,953/19,551 | openai / gpt-6-luna | 6 | 0/3 | 6/0 | 0 |
+| 2026-11-23 21:18 | 0:04 | 2/3/0 | 0/0/0 | 0/0/0 | 4,309/170 | einfracz / qwen3.8-27b | 6 | 0/3 | 6/0 | 0 |
 
 ## Coverage
 
@@ -64,6 +64,10 @@ Dacomitinib is a protein kinase inhibitor used to treat non-small-cell lung carc
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Li_2021 | irrelevant | 2 | 0 | This is a clinical PPI exposure analysis, not a disposition-parameter study; trough values appear only in a figure not provided. |
+| popPK | Peng_2021 | irrelevant | 0 | 0 | The paper is a clinical efficacy study reporting objective response rates for brain metastases, containing no pharmacokinetic parameters (CL, V, ka, t1/2) or PK modeling data. |
+| PGx | Peng_2021 | not_relevant | 0 | 0 | The paper reports clinical efficacy (response rates) in a patient population, not a pharmacogenomic effect of a host gene variant on the drug's PK or PD parameters. |
+| popPK | Shin_2025 | irrelevant | 0 | 0 | This is a clinical efficacy and safety study (real-world data on NSCLC outcomes) that reports no quantitative pharmacokinetic parameters such as clearance, volume, or half-life for dacomitinib. |
+| PGx | Shin_2025 | not_relevant | 0 | 0 | The paper reports clinical efficacy (PFS, OS) and safety outcomes of dacomitinib based on tumor EGFR mutation status, but does not report pharmacokinetic (PK) or pharmacodynamic (PD) parameters (e.g., Cmax, AUC, receptor occupancy) influenced by host pharmacogenomic variants. |
 
 
 </details>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">rat</span>
 
-> Volume of distribution for diclofenac was recorded as 64.6 mL/min, an implausible magnitude causing rejection.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_RodriguezCruz2021_reference" status="rejected" stale="false" population="rats" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Vivian Rodriguez-Cruz, Tianjing Ren, Marilyn E Morris. Drug-drug interaction bet
 
 ### Reviewer guidance
 
-**Volume of distribution for diclofenac was recorded as 64.6 mL/min, an implausible magnitude causing rejection.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists the volume of distribution with units of mL/min and a value of 64.6, which is inconsistent with physiological volume units. This extraction error triggered the physiological plausibility check failure for the parameter magnitude. The second reader disagreed with the extracted volume value, marking it as null instead of 64.6. Extracted — diclofenac: CL 6 mL/min/kg, V 64.6 mL/min.
+Extracted — diclofenac: CL 6 mL/min/kg, V 64.6 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q57: this record has 1, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

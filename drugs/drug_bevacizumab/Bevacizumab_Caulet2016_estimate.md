@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;bevacizumab&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/&quot;},{&quot;label&quot;:&quot;Caulet_2016 \u00b7 estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bevacizumab_Caulet2016_estimate&quot;,&quot;label&quot;:&quot;Caulet_2016_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bevacizumab_Turner2014_reference&quot;,&quot;label&quot;:&quot;Turner_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Turner2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bevacizumab_Caulet2016_estimate&quot;,&quot;label&quot;:&quot;Caulet_2016_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Record refused because the second reader disputed the 3.2 value for theta_v1_height and omitted the linear fractional covariate form.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Caulet2016_estimate" status="needs_review" stale="false" population="patients with metastatic colorectal cancer" measured-compound="bevacizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Caulet M, Lecomte T, Bouché O, Rollin J, Gouilleux-Gruart V, Azzopardi N et al.
 
 ### Reviewer guidance
 
-**Record refused because the second reader disputed the 3.2 value for theta_v1_height and omitted the linear fractional covariate form.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The record defines a covariate effect for height (theta_v1_height = 3.2) and a linear fractional covariate form for the central volume. The second reader failed to extract the theta_v1_height value and identified no covariate forms, leading to a disputed agreement ratio of 0.846. Consequently, the covariate scenarios were not simulated, as only the reference individual was exercised in the model. Extracted — bevacizumab: V1 4.2 L, kel 0.045 /day, k12 0.16 /day, k21 0.1 /day, CL 0.19 L/day, V2 7.7 L, Q 0.69 L/day.
+The base model was simulated, not the covariate effects the record defines. Extracted — bevacizumab: V1 4.2 L, kel 0.045 /day, k12 0.16 /day, k21 0.1 /day, CL 0.19 L/day, V2 7.7 L, Q 0.69 L/day.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of theta_v1_height: this record has 3.2, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -159,7 +159,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 7 scholar param(s) emitted or defaulted | 7 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.846, 0 of 1 reader(s) agree | 0.846 | cross-check disputed by a second reader: verdict disputed, agreement 0.846, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.846 (11 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.846 | cross-check contradicted by a second reader: verdict disputed; agreement 0.846 (11 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -175,15 +175,56 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate/Bevacizumab_Caulet2016_estimate_modelica.zip" download>Bevacizumab_Caulet2016_estimate_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate/Bevacizumab_Caulet2016_estimate_fmi.zip" download>Bevacizumab_Caulet2016_estimate_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate/Bevacizumab_Caulet2016_estimate_matlab.zip" download>Bevacizumab_Caulet2016_estimate_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate/Bevacizumab_Caulet2016_estimate_matlab_simbio.zip" download>Bevacizumab_Caulet2016_estimate_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate/Bevacizumab_Caulet2016_estimate_sbml.zip" download>Bevacizumab_Caulet2016_estimate_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate/Bevacizumab_Caulet2016_estimate_cellml.zip" download>Bevacizumab_Caulet2016_estimate_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 1e-05 | kg |
+| input | model | `Cl` | 2.199e-09 | m3/s |
+| input | model | `VdPerKg` | 6e-05 | m3/kg |
+| input | model | `k12` | 1.901e-06 | 1/s |
+| input | model | `k21` | 1.037e-06 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Caulet M, Lecomte T, Bouché O, Rollin J, Gouilleux-Gruart V, Azzopardi N et al. Bevacizumab Pharmacokinetics Influence Overall and Progression-Free Survival in Metastatic Colorectal Cancer Patients. Clinical pharmacokinetics 55(11):1381–1394 (2016). [doi:10.1007/s40262-016-0406-3](https://doi.org/10.1007/s40262-016-0406-3)
+
+**This record:** Pharmacolibrary, model `Bevacizumab_Caulet2016_estimate`. <https://pharmacolibrary.github.io/#/drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate>
+
+```bibtex
+@misc{pharmacolibrary_BevacizumabCaulet2016estimate,
+  title  = {{Pharmacolibrary model Bevacizumab_Caulet2016_estimate}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate},
+  note   = {Parameters from doi:10.1007/s40262-016-0406-3},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

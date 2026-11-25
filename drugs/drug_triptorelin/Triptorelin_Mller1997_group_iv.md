@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Triptorelin clearance lacked an explicit value, so a library placeholder substituted for the parameter, quarantining the one-compartment model.
+> No value for triptorelin's clearance; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="triptorelin" model-id="Triptorelin_Mller1997_group_iv" status="model_quarantined" stale="false" population="healthy males and males with renal or hepatic insufficiency" measured-compound="triptorelin" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,7 +44,7 @@ Müller FO, Terblanchè J, Schall R, van Zyl Smit R, Tucker T, Marais K et al. P
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +54,13 @@ Müller FO, Terblanchè J, Schall R, van Zyl Smit R, Tucker T, Marais K et al. P
 
 ### Reviewer guidance
 
-**Triptorelin clearance lacked an explicit value, so a library placeholder substituted for the parameter, quarantining the one-compartment model.**
+**No value for triptorelin's clearance; t6_deviations (+1 more).**
 
-The record contains no estimated clearance value, leading the model builder to use a default placeholder. Additionally, the reported volume of distribution of 34.7 l was used as the primary volume, despite the structure being one-compartment. The model was not published because it relied on this unestimated clearance value rather than an explicit estimate. Extracted — triptorelin: t1/2z 220 h, t1/2β 50 h, Cmax 46.6 ng ml -1, MRT 10.1 h, Vss 34.7 l, Ae 144 mg, CLnorm 88.9 ml min-1.
+The model was built, but triptorelin's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (Cmax and Ae ), so that value has no SI equivalent. Extracted — triptorelin: t1/2z 220 h, t1/2β 50 h, Cmax 46.6 ng ml -1, MRT 10.1 h, Vss 34.7 l, Ae 144 mg, CLnorm 88.9 ml min-1.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has triptorelin acetate, the second reading triptorelin; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -106,6 +108,38 @@ The record contains no estimated clearance value, leading the model builder to u
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
+
+<details><summary>12 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[ae ur (0-4 h)]` | 144 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl creat (0-24 h) ##]` | 88.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 46.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[creatinine clearance]` |  | 100 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[group iv vs group i / mean ratio]` |  | 53 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 10.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[serum aliquot volume]` |  | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2, z]` | 220 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2, x]` | 50 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[variable]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | 34.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | triptorelin acetate | triptorelin | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -125,14 +159,14 @@ The record contains no estimated clearance value, leading the model builder to u
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | skipped |  |  | no structural disposition parameters in record |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| X1_cross_check | skipped |  |  | no second reading of this record |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (3 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (3 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

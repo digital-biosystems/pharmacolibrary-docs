@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The sapropterin model record was held back because the absorption rate constant was not reported and was instead left at default values.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="sapropterin" model-id="Sapropterin_Feillet2008_reference" status="needs_review" stale="false" population="patients with phenylketonuria" measured-compound="sapropterin" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Feillet F, Clarke L, Meli C, Lipson M, Morris AA, Harmatz P et al. Pharmacokinet
 
 ### Reviewer guidance
 
-**The sapropterin model record was held back because the absorption rate constant was not reported and was instead left at default values.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The source text provided only the paper's abstract, meaning the summary statistics stand in for a fitted population model. The absorption rate constant was not reported, so it was set to a placeholder value rather than an estimate derived from the study. Although the oral dosing was specified, the lack of an explicit absorption parameter prevents validation of the input mechanism. The apparent clearance and volume of distribution remain, but the missing absorption kinetics compromise the overall structural fidelity. Extracted — sapropterin: CL/F 2.1e+03 L/h/70 kg, V 8.35e+03 L/70 kg, t1/2z 6.69 hours.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sapropterin: CL/F 2.1e+03 L/h/70 kg, V 8.35e+03 L/70 kg, t1/2z 6.69 hours.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;amisulpride&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/&quot;},{&quot;label&quot;:&quot;Reeves_2016 \u00b7 combined&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amisulpride_Liu2023_reference&quot;,&quot;label&quot;:&quot;Liu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/Amisulpride_Liu2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amisulpride_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/Amisulpride_Li2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amisulpride_Reeves2016_combined&quot;,&quot;label&quot;:&quot;Reeves_2016_combined&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/Amisulpride_Reeves2016_combined.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amisulpride_Reeves2016_group_1&quot;,&quot;label&quot;:&quot;Reeves_2016_group_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/Amisulpride_Reeves2016_group_1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amisulpride_Yan2024_final&quot;,&quot;label&quot;:&quot;Yan_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/Amisulpride_Yan2024_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amisulpride_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/Amisulpride_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Glatard_2020_PRL&quot;,&quot;label&quot;:&quot;Glatard_2020 \u00b7 PRL&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/pd_Glatard_2020_PRL.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Glatard_2020_BW&quot;,&quot;label&quot;:&quot;Glatard_2020 \u00b7 BW&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/pd_Glatard_2020_BW.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amisulpride_Li2023_reference&quot;,&quot;label&quot;:&quot;Li_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/Amisulpride_Li2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amisulpride_Liu2023_reference&quot;,&quot;label&quot;:&quot;Liu_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/Amisulpride_Liu2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amisulpride_Reeves2016_combined&quot;,&quot;label&quot;:&quot;Reeves_2016_combined&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/Amisulpride_Reeves2016_combined.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amisulpride_Reeves2016_group_1&quot;,&quot;label&quot;:&quot;Reeves_2016_group_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/Amisulpride_Reeves2016_group_1.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amisulpride_Yan2024_final&quot;,&quot;label&quot;:&quot;Yan_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/Amisulpride_Yan2024_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amisulpride_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/Amisulpride_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Glatard_2020_PRL&quot;,&quot;label&quot;:&quot;Glatard_2020 \u00b7 PRL&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/pd_Glatard_2020_PRL.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Glatard_2020_BW&quot;,&quot;label&quot;:&quot;Glatard_2020 \u00b7 BW&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amisulpride/pd_Glatard_2020_BW.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Amisulpride Cmax and terminal half-life mismatch paper values, and bioavailability F and lag time were left at library defaults.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 6.4e-05, model 3.04e-05); the model does not reproduce the paper's terminal half-life (paper 13.6, model 7.16) (+2 more).
 
 <div class="pk-model-meta" hidden drug="amisulpride" model-id="Amisulpride_Reeves2016_combined" status="needs_review" stale="false" population="older people (healthy elderly and Alzheimer&#39;s disease patients)" measured-compound="amisulpride" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Reeves S, Bertrand J, D'Antonio F, McLachlan E, Nair A, Brownings S et al. A pop
 
 ### Reviewer guidance
 
-**Amisulpride Cmax and terminal half-life mismatch paper values, and bioavailability F and lag time were left at library defaults.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 6.4e-05, model 3.04e-05); the model does not reproduce the paper's terminal half-life (paper 13.6, model 7.16) (+2 more).**
 
-The model's simulated peak concentration of 3.04e-05 kg/m3 is less than half the paper's reported value of 6.4e-05 kg/m3. The simulated terminal half-life of 7.16 h is roughly half the paper's reported 13.6 h. Bioavailability (F) and absorption lag time (Tlag) were not extracted from the paper and thus used generic library placeholders rather than study-specific estimates. Extracted — amisulpride: kabs 0.85 1/h, CL 54.3 L/h, V1 455 L, Q 111 L/h, V2 736 L.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — amisulpride: kabs 0.85 1/h, CL 54.3 L/h, V1 455 L, Q 111 L/h, V2 736 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -164,21 +164,21 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 6.4e-05 | 3.044e-05 | 0.4756 | ng/ml→SI vs simulated kg/m3 |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (9 of 9 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 6.4e-05 | 3.044e-05 | 0.4756 | reported 64.0 ng/ml→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 2.1 | 3.044e-05 |  | unresolved concentration unit (exp 'h', sim 'kg/m3') |
-| T1_cmax | reference | fail | 7.75e-05 | 3.044e-05 | 0.3927 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 5.05e-05 | 3.044e-05 | 0.6027 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 7.75e-05 | 3.044e-05 | 0.3927 | reported 77.5 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 5.05e-05 | 3.044e-05 | 0.6027 | reported 50.5 ng/ml→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | -0.11 | 3.044e-05 |  | unresolved concentration unit (exp 'r', sim 'kg/m3') |
 | T1_cmax | reference | skipped | -0.33 | 3.044e-05 |  | unresolved concentration unit (exp 'r', sim 'kg/m3') |
 | T1_cmax | reference | skipped | -0.33 | 3.044e-05 |  | unresolved concentration unit (exp 'r', sim 'kg/m3') |
 | T1_cmax | reference | skipped | -0.17 | 3.044e-05 |  | unresolved concentration unit (exp 'r', sim 'kg/m3') |
-| T1_t_half_terminal | reference | fail | 13.6 | 7.163 | 0.5267 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 15.2 | 7.163 | 0.4713 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 12.4 | 7.163 | 0.5777 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 22.7 | 7.163 | 0.3156 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 15.3 | 7.163 | 0.4682 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 13.6 | 7.163 | 0.5267 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 13.6 | 7.163 | 0.5267 | reported 13.6 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 15.2 | 7.163 | 0.4713 | reported 15.2 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 12.4 | 7.163 | 0.5777 | reported 12.4 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 22.7 | 7.163 | 0.3156 | reported 22.7 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 15.3 | 7.163 | 0.4682 | reported 15.3 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 13.6 | 7.163 | 0.5267 | reported 13.6 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -194,7 +194,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amisulpride/Amisulpride_Reeves2016_combined/Amisulpride_Reeves2016_combined_modelica.zip" download>Amisulpride_Reeves2016_combined_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amisulpride/Amisulpride_Reeves2016_combined/Amisulpride_Reeves2016_combined_modelica.zip" download>Amisulpride_Reeves2016_combined_modelica.zip</a> <span class="pk-size">(5.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amisulpride/Amisulpride_Reeves2016_combined/Amisulpride_Reeves2016_combined_fmi.zip" download>Amisulpride_Reeves2016_combined_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amisulpride/Amisulpride_Reeves2016_combined/Amisulpride_Reeves2016_combined_matlab.zip" download>Amisulpride_Reeves2016_combined_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amisulpride/Amisulpride_Reeves2016_combined/Amisulpride_Reeves2016_combined_matlab_simbio.zip" download>Amisulpride_Reeves2016_combined_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

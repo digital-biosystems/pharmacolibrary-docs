@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;aminophylline&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/&quot;},{&quot;label&quot;:&quot;Goetz_1989 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aminophylline_Jameson1990_reference&quot;,&quot;label&quot;:&quot;Jameson_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Jameson1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Frymoyer2020_reference&quot;,&quot;label&quot;:&quot;Frymoyer_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Frymoyer2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Goetz1989_reference&quot;,&quot;label&quot;:&quot;Goetz_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Goetz1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Aminophylline_Shi2013_reference&quot;,&quot;label&quot;:&quot;Shi_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Shi2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Amponsah2017_reference&quot;,&quot;label&quot;:&quot;Amponsah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Amponsah2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aminophylline_Goetz1989_reference&quot;,&quot;label&quot;:&quot;Goetz_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Goetz1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Aminophylline_Jameson1990_reference&quot;,&quot;label&quot;:&quot;Jameson_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Jameson1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Shiu1989_reference&quot;,&quot;label&quot;:&quot;Shiu_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Shiu1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Amponsah2017_reference&quot;,&quot;label&quot;:&quot;Amponsah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Amponsah2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The aminophylline model was held back because the absorption rate constant was not reported in the abstract-only source, leaving it as an unsupported placeholder.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Goetz1989_reference" status="needs_review" stale="false" population="healthy adult horses" measured-compound="theophylline" parameterization="apparent" topology="1C"></div>
 
@@ -26,7 +26,7 @@ Goetz TE, Munsiff IJ, McKiernan BC. Pharmacokinetic disposition of an immediate-
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameterization:** CLm,norm/F, Vm,norm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 4 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
@@ -38,13 +38,13 @@ Goetz TE, Munsiff IJ, McKiernan BC. Pharmacokinetic disposition of an immediate-
 | label | parameter | value | unit |
 |---|---|---|---|
 | elimination rate constant (lambda z) | kel | 0.07 | h-1 |
-| apparent volume of distribution (Vz) | V/F | 0.8 | l/kg |
-| clearance (Cl) | CL | 0.06 | l/kg/h |
-| Absolute bioavailability (immediate-release) | Fab | 87 | % |
+| apparent volume of distribution (Vz) | Vm,norm/F | 0.8 | l/kg |
+| clearance (Cl) | CLm,norm/F | 0.06 | l/kg/h |
+| Absolute bioavailability | Fab | 87 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,22 +54,22 @@ Goetz TE, Munsiff IJ, McKiernan BC. Pharmacokinetic disposition of an immediate-
 
 ### Reviewer guidance
 
-**The aminophylline model was held back because the absorption rate constant was not reported in the abstract-only source, leaving it as an unsupported placeholder.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-Since only the paper's abstract was read, reported summary statistics stood in for a fitted model. The absorption rate constant and lag time had no values extracted, so a library placeholder was used instead of a paper-based estimate. A second reader also disagreed with the extraction, failing to identify the reported values for clearance, volume of distribution, and bioavailability. Extracted — theophylline: kel 0.07 h-1, V/F 0.8 l/kg, CL 0.06 l/kg/h, Fab 87 %.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is aminophylline's own; they describe theophylline. Extracted — theophylline: kel 0.07 h-1, Vm,norm/F 0.8 l/kg, CLm,norm/F 0.06 l/kg/h, Fab 87.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aminophylline, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[apparent volume of distribution].parameter_id`: this record has Q376, the second reading Q76; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | elimination rate constant (lambda z) | `Q47` · kel | 0.07 | h-1 | 1.944e-05 | 1/s | 1/h | exact (1) | Goetz_1989:abstract |
-| apparent volume of distribution (Vz) | `Q76` · V/F | 0.8 | l/kg | 0.056 | m3 | l/kg | exact (1) | Goetz_1989:abstract |
-| clearance (Cl) | `Q22` · CL | 0.06 | l/kg/h | 1.167e-06 | m3/s | l/(h·kg) | exact (1) | Goetz_1989:abstract |
-| Absolute bioavailability (immediate-release) | `Q40` · Fab | 87 | % |  |  |  | exact (1) | Goetz_1989:abstract |
+| apparent volume of distribution (Vz) | `Q376` · Vm,norm/F | 0.8 | l/kg | 0.056 | m3 | l/kg | exact (1) | Goetz_1989:abstract |
+| clearance (Cl) | `Q375` · CLm,norm/F | 0.06 | l/kg/h | 1.167e-06 | m3/s | l/(h·kg) | exact (1) | Goetz_1989:abstract |
+| Absolute bioavailability | `Q40` · Fab | 87 |  |  |  |  | exact (1) | Goetz_1989:abstract, Goetz_1989:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -85,12 +85,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
+- metabolite theophylline: Q76→Q376 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided), normalised to a standard size
+- metabolite theophylline: Q22→Q375 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided), normalised to a standard size
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=theophylline
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 0 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'theophylline', not aminophylline — the review values are the parent's
-- derived CL/F=3.92 L/h from Ke × V/F = CL/F (Q47 × Q76); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Goetz_1989_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
@@ -98,26 +98,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.818 (9/11 fields) | 2 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absolute bioavailability]` |  | 87 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absolute bioavailability]` | 87 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` |  | 0.8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 0.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` |  | 0.06 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | 0.06 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination rate constant]` |  | 0.07 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination rate constant]` | 0.07 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | aminophylline | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | theophylline | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution].parameter_id` | Q376 | Q76 | mismatch |
+| `gpt-oss-120b` | `parameters[clearance].parameter_id` | Q375 | Q22 | mismatch |
 
 </details>
 
@@ -134,13 +126,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Goetz_1989:abstract'] |
+| C5_dimension_Q375 | pass | [length] ** 3 / [time] |  | ['Goetz_1989:abstract'] |
+| C5_dimension_Q376 | pass | [length] ** 3 |  | ['Goetz_1989:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Goetz_1989:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Goetz_1989:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 4.2 L/h | ['Goetz_1989:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 56 L | ['Goetz_1989:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -149,12 +139,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
 | T3_output_variable | pass | C_central (measured=theophylline) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.231, 0 of 1 reader(s) agree | 0.231 | cross-check disputed by a second reader: verdict disputed, agreement 0.231, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.818 (9 of 11 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | cross-check contradicted by a second reader: verdict disputed; agreement 0.818 (9 of 11 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -193,7 +182,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 0.0006 | kg |
-| input | model | `Cl` | 1.089e-06 | m3/s |
+| input | model | `Cl` | 1.167e-06 | m3/s |
 | input | model | `VdPerKg` | 0.0008 | m3/kg |
 | input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |
@@ -234,4 +223,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baminophylline%5D%20Aminophylline_Goetz1989_reference&body=Drug%3A%20aminophylline%0ARecord%3A%20Aminophylline_Goetz1989_reference%0APaper%3A%20Goetz_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aminophylline/Aminophylline_Goetz1989_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 23:44 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:06 UTC</sub>

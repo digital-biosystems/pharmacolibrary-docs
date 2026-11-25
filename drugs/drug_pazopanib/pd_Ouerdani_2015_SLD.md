@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pazopanib&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/&quot;},{&quot;label&quot;:&quot;Ouerdani_2015 \u00b7 PD tumor size, expressed as the sum of longest diameters&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;pazopanib&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/&quot;},{&quot;label&quot;:&quot;Ouerdani_2015 \u00b7 PD sum of longest tumor diameter (SLD)&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pazopanib_Ozbey2021_reference&quot;,&quot;label&quot;:&quot;Ozbey_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Ozbey2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_base&quot;,&quot;label&quot;:&quot;Bins_2019_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Bins2019_final&quot;,&quot;label&quot;:&quot;Bins_2019_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Bins2019_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Attia2023_reference&quot;,&quot;label&quot;:&quot;Attia_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Attia2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pazopanib_Balakirouchenane2020_reference&quot;,&quot;label&quot;:&quot;Balakirouchenane_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pazopanib/Pazopanib_Balakirouchenane2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# tumor size, expressed as the sum of longest diameters — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 1.00).">human + animal</span>
+# sum of longest tumor diameter (SLD) — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -12,13 +12,13 @@
 <p><small><b>Status</b> reports validation and review outcomes; <b>cross-check</b> reports agreement between independent extractions. Agreement does not establish plausibility, model validity, or clinical applicability.</small></p>
 </details>
 
-> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
+> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.50).
 
 ## Record summary
 
-**As extracted:** Pazopanib (concentrations from the PK model of Attia_2023) drives tumor size, expressed as the sum of longest diameters (in mm): disease-progression model.
+**As extracted:** Pazopanib (concentrations from the PK model of Attia_2023) drives sum of longest tumor diameter (SLD) (in mm): disease-progression model.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Pazopanib exposure (driver in μg·h/mL) was modeled to affect tumor size (SLD, mm) through dual actions: indirect inhibition of tumor growth by inhibiting the vasculature/angiogenesis, and a cytotoxic effect; the supplied excerpts do not specify a concentration–response potency for the fitted model. The record reports λ = 0.0021 day−1, b = 0.0392 day−1, γ = 0.0023 day−1, α = 0.0032 day−1, and δ = 0.0153 day−1 (with β_γ = 0.142 and β_α = 0.125); the excerpt gives molecular-target IC50 values of 0.074 μmol/L for c-KIT, 0.010, 0.030, and 0.047 μmol/L for VEGFR1, VEGFR2, and VEGFR3, and 0.071 and 0.084 μmol/L for PDGFR-α and PDGFR-β, respectively.
 >
@@ -28,7 +28,7 @@
 - **model family:** `disease_progression`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** stimulation/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Ouerdani A et al., Preclinical Modeling of Tumor Growth an…, CPT: pharmacometrics & syst… (2015)
@@ -37,14 +37,14 @@ Ouerdani A et al., Preclinical Modeling of Tumor Growth an…, CPT: pharmacometr
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | λ | `Q340` ·  | 0.0021 | day−1 | llm | Ouerdani_2015:pdv3 |
-| model term | K 0 | `Q900` ·  | 329 | mm | llm | Ouerdani_2015:pdv3 |
-| model term | b | `Q900` ·  | 0.0392 | day−1 | llm | Ouerdani_2015:pdv3 |
+| PD (effect) | λ | `Q335` ·  | 0.0021 | day−1 | llm | Ouerdani_2015:pdv3 |
+| PD (effect) | K 0 | `Q324` ·  | 329 | mm | llm | Ouerdani_2015:pdv3 |
+| PD (effect) | b | `Q327` ·  | 0.0392 | day−1 | llm | Ouerdani_2015:pdv3 |
 | PD (effect) | γ | `Q328` ·  | 0.0023 | day−1 | llm | Ouerdani_2015:pdv3 |
-| model term | β_γ | `Q900` ·  | 0.142 |  | llm | Ouerdani_2015:pdv3 |
-| model term | α | `Q900` ·  | 0.0032 | day−1 | llm | Ouerdani_2015:pdv3 |
-| model term | β_α | `Q900` ·  | 0.125 |  | llm | Ouerdani_2015:pdv3 |
-| PD (effect) | δ | `Q337` ·  | 0.0153 | day−1 | llm | Ouerdani_2015:pdv3 |
+| — | β_γ | `Q100` ·  | 0.142 |  | nil | Ouerdani_2015:pdv3 |
+| PD (effect) | α | `Q335` ·  | 0.0032 | day−1 | llm | Ouerdani_2015:pdv3 |
+| — | β_α | `Q100` ·  | 0.125 |  | nil | Ouerdani_2015:pdv3 |
+| — | δ | `Q100` ·  | 0.0153 | day−1 | nil | Ouerdani_2015:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -52,24 +52,54 @@ Ouerdani A et al., Preclinical Modeling of Tumor Growth an…, CPT: pharmacometr
 </details>
 
 
+## Exposure-response model
+
+`Pazopanib_Ouerdani2015_PD_sld` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 329 mm | — |
+| slope | 0.0021 day−1 | 2.431e-08 1 / second |
+
+Closed-form check points (response, SI): `at_0` = 329, `per_exposure_unit` = 2.431e-08
+
+Deviations:
+
+- `pd_binding_family_inferred` — the record's model family is disease_progression; read from the parameters: a slope and no Emax — linear
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--blue">Simulated</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | a line has no plateau to compare |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `effect_direction` | stimulation | inhibition | mismatch |
-| `qwen3.8-27b` | `effect_form` | proportional | unknown | mismatch |
-| `qwen3.8-27b` | `parameters[Q324]` |  | 329 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q328]` | 0.0023 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q337]` | 0.0153 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q340]` | 0.0021 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q900].value` | 0.125 | 0.0153 | mismatch |
+| `gpt-oss-120b` | `effect_form` | unknown | proportional | mismatch |
+| `gpt-oss-120b` | `model_family` | disease_progression | linear | mismatch |
+| `gpt-oss-120b` | `parameters[Q100].value` | 0.0153 | 0.125 (14) | mismatch |
+| `gpt-oss-120b` | `parameters[Q323]` |  | 0.0032 (2) | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q324]` | 329 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q327]` | 0.0392 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q328]` | 0.0023 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q335]` | 0.0032 |  | only_one_extracted |
 
 </details>
 
@@ -85,19 +115,33 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pazopanib/Pazopanib_Ouerdani2015_PD_sld/Pazopanib_Ouerdani2015_PD_sld_modelica.zip" download>Pazopanib_Ouerdani2015_PD_sld_modelica.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pazopanib/Pazopanib_Ouerdani2015_PD_sld/Pazopanib_Ouerdani2015_PD_sld_matlab.zip" download>Pazopanib_Ouerdani2015_PD_sld_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pazopanib/Pazopanib_Ouerdani2015_PD_sld/Pazopanib_Ouerdani2015_PD_sld_sbml.zip" download>Pazopanib_Ouerdani2015_PD_sld_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_pazopanib/Pazopanib_Ouerdani2015_PD_sld/Pazopanib_Ouerdani2015_PD_sld_cellml.zip" download>Pazopanib_Ouerdani2015_PD_sld_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Pazopanib_Ouerdani2015_PD_sld`. <https://pharmacolibrary.github.io/#/drugs/drug_pazopanib/pd_Ouerdani_2015_SLD>
+
+```bibtex
+@misc{pharmacolibrary_PazopanibOuerdani2015PDsld,
+  title  = {{Pharmacolibrary model Pazopanib_Ouerdani2015_PD_sld}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_pazopanib/pd_Ouerdani_2015_SLD},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
 
 <div class="pk-tab-end"></div>
 

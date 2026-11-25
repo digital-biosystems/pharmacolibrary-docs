@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 22:53 | 1:46 | 0/0/0 | 0/0/0 | 0/0/0 | 12,590/1,417 | openai / gpt-6-luna | 3 | 1/2 | 2/1 | 0 |
+| 2026-11-23 20:26 | 0:04 | 0/0/0 | 0/0/0 | 0/0/0 | 3,749/180 | einfracz / qwen3.8-27b | 3 | 1/2 | 2/1 | 0 |
 
 ## Coverage
 
@@ -41,15 +41,14 @@ _not available_
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Li_2017.pdf` | Li J et al., Population pharmacokinetic and exposure…, British journal of clinical… (2017) | popPK | 10 | [10.1111/bcp.13266](https://doi.org/10.1111/bcp.13266) | [28213941](https://pubmed.ncbi.nlm.nih.gov/28213941) | Human cediranib population-PK model is described, but numeric disposition parameter values are not provided. |
 | `Al-Huniti_2018.pdf` | Al-Huniti N et al., Population exposure-safety analysis of…, British journal of clinical… (2018) | pd | 5 | [10.1111/bcp.13495](https://doi.org/10.1111/bcp.13495) | [29274100](https://www.ncbi.nlm.nih.gov/pubmed/29274100) | metadata signals extractable PD data (indirectresponse) |
 | `Gu_2014.pdf` | Gu R et al., The multikinase inhibitor axitinib is a…, Biochemical pharmacology (2014) | pgx | 7 | [10.1016/j.bcp.2014.01.016](https://doi.org/10.1016/j.bcp.2014.01.016) | [24462920](https://www.ncbi.nlm.nih.gov/pubmed/24462920) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-10-06 22:53 UTC</sub>
+<sub>queue written 2026-11-23 20:25 UTC</sub>
 
 ## Screened and excluded
 
@@ -57,14 +56,22 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|
 | PGx | Adamu_2024 | not_relevant | 0 | 0 | The review reports BRCA status associations with progression-free survival for treatment combinations, but no pharmacogenomic effect on a cediranib PK or PD parameter. |
 | popPK | Al-Huniti_2018 | irrelevant | 0 | 0 | no_text gate: only 99 chars of text extracted (&lt; 400) |
-| popPK | Grkovski_2017 | irrelevant | 0 | 0 | The kinetic parameters are for the imaging tracer 18F-FMISO, not cediranib. |
-| PGx | Gu_2014 | not_relevant | 0 | 0 | The paper studies axitinib inhibition of CYP enzymes, not genetic effects on cediranib PK or PD. |
-| PGx | Hu_2024 | not_relevant | 0 | 0 | The paper evaluates ctDNA dynamics as response biomarkers, not how a gene variant or genotype changes a cediranib PK or PD parameter. |
-| PGx | Lassen_2013 | not_relevant | 0 | 0 | Reports drug–drug interactions with ketoconazole and rifampicin, not a genetic or phenotypic effect on cediranib PK/PD. |
+| PGx | Al-Huniti_2018 | not_relevant | 0 | 0 | The study analyzes population exposure and safety without reporting genetic variants or pharmacogenomic effects. |
+| popPK | Grkovski_2017 | irrelevant | 1 | 0 | This study measures the pharmacokinetics of the PET tracer 18F-FMISO in tumor xenografts to assess perfusion changes, not the disposition parameters of the drug cediranib itself. |
+| PGx | Grkovski_2017 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamic effects of cediranib on tumor perfusion and hypoxia in a rat xenograft model, but it does not report any pharmacogenomic effects or associations between gene variants and PK/PD parameters. |
+| popPK | Gu_2014 | irrelevant | 0 | 0 | The paper is an in vitro study focusing on axitinib's CYP1A2 inhibition and does not report population pharmacokinetic parameters for cediranib. |
+| PGx | Gu_2014 | not_relevant | 0 | 0 | The paper investigates CYP1A2 inhibition by axitinib, not cediranib, and does not report pharmacogenomic effects. |
+| popPK | Hu_2024 | irrelevant | 0 | 0 | The study focuses on circulating tumor DNA (ctDNA) as a biomarker for efficacy and does not report any pharmacokinetic parameters for cediranib. |
+| PGx | Hu_2024 | not_relevant | 0 | 0 | The paper evaluates circulating tumor DNA (ctDNA) as a biomarker for treatment response but does not investigate the impact of germline gene variants on the pharmacokinetics or pharmacodynamics of cediranib. |
+| popPK | Lassen_2013 | irrelevant | 0 | 0 | The provided evidence contains only demographic data and figure captions; no quantitative PK parameters (CL, V, etc.) are present in the text. |
+| PGx | Lassen_2013 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (ketoconazole/rifampicin) on cediranib PK, not pharmacogenomic (gene-based) effects. |
 | PGx | Lee_2015 | not_relevant | 0 | 0 | XRCC1 polymorphisms were assessed for association with PFS, but no association was found and no genotype effect on cediranib PK or PD parameters is reported. |
-| PGx | Lheureux_2020 | not_relevant | 0 | 0 | Genomic resistance mechanisms are associated with clinical outcomes on cediranib plus olaparib, but no pharmacokinetic or pharmacodynamic parameter of cediranib is reported. |
-| popPK | Li_2017 | relevant | 10 | 1 | Human cediranib population-PK model is described, but numeric disposition parameter values are not provided. |
-| PGx | Tao_2009 | not_relevant | 0 | 0 | The study examines cediranib inhibiting ABCB1/ABCC1 transport in cell models, not how a genetic variant or phenotype changes cediranib’s PK or PD. |
+| popPK | Lheureux_2020 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial reporting response rates and genomic mechanisms, containing no pharmacokinetic parameters or models for cediranib. |
+| PGx | Lheureux_2020 | not_relevant | 0 | 0 | The paper investigates genomic mechanisms of resistance to olaparib (PARPi) and reports clinical outcomes (response/PFS) for the combination with cediranib, but it does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of cediranib itself. |
+| popPK | Li_2017 | relevant | 10 | 4 | The study is a population PK analysis of cediranib in humans, but the abstract lacks specific numeric parameter estimates (CL, V, etc.) which are likely in the full text or tables not provided. |
+| PGx | Li_2017 | not_relevant | 0 | 0 | The paper analyzes population PK based on demographic (body weight, age) and pharmacokinetic (co-medication) covariates, but does not report effects of gene variants/genotypes. |
+| popPK | Tao_2009 | irrelevant | 0 | 0 | The study investigates the in vitro mechanism of cediranib as a P-gp/MRP1 inhibitor and does not report any pharmacokinetic parameters (CL, V, t1/2) for cediranib. |
+| PGx | Tao_2009 | not_relevant | 0 | 0 | The paper investigates cediranib's ability to reverse multidrug resistance in cell lines by inhibiting transporters, but it does not report pharmacogenomic effects (gene variants changing PK/PD) in humans or animal models. |
 
 
 </details>

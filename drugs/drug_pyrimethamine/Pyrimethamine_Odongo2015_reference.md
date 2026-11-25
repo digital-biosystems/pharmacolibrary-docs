@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the peripheral compartment (V3) has no defined path to the dose, leaving it unreachable from the central compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="pyrimethamine" model-id="Pyrimethamine_Odongo2015_reference" status="rejected" stale="false" population="pregnant and nonpregnant Ugandan women" measured-compound="pyrimethamine" parameterization="apparent" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Odongo CO, Bisaso KR, Ntale M, Odia G, Ojara FW, Byamugisha J et al. Trimester-S
 
 ### Reviewer guidance
 
-**The model was rejected because the peripheral compartment (V3) has no defined path to the dose, leaving it unreachable from the central compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record describes a two-compartment structure, yet it includes a parameter for the volume of a second peripheral compartment (V3/F) at 49.53 L. The review confirmed an unreachable compartment, indicating that the model structure does not connect this peripheral volume to the dosing site. Consequently, the model builder's inclusion of V3 parameters contradicts the declared two-compartment topology, rendering the compartment unlinked. Extracted — pyrimethamine: kabs 1.05 /h, V2/F 154 L, CL/F 0.799 L/h, V3/F 49.5 L, Q 0.282 L/h, tlag 0.394 h, CLb 0.319 L/h, V2 0.0079.
+Extracted — pyrimethamine: kabs 1.05 /h, V2/F 154 L, CL/F 0.799 L/h, V3/F 49.5 L, Q 0.282 L/h, tlag 0.394 h, CLb 0.319 L/h, V2 0.0079.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulphadoxine-pyrimethamine, the second reading pyrimethamine; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

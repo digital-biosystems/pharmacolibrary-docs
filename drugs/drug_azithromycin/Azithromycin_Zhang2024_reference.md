@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Azithromycin bioavailability F was left at library default, lacking an explicit estimate from the abstract.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Zhang2024_reference" status="needs_review" stale="false" population="children under 6 years old" measured-compound="azithromycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Zhang Y, Wang Y, Li J, Wang H, Hou M, Dong R et al. Population Pharmacokinetics 
 
 ### Reviewer guidance
 
-**Azithromycin bioavailability F was left at library default, lacking an explicit estimate from the abstract.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader disagreed on the dose compound and primary analyte, and failed to extract values for clearance, volume, absorption rate, and lag time. Extracted — azithromycin: CL 1.27 L/h/kg, V 45.6 L/kg, kabs 0.71 1/h, tlag 0.75 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — azithromycin: CL 1.27 L/h/kg, V 45.6 L/kg, kabs 0.71 1/h, tlag 0.75 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has azithromycin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

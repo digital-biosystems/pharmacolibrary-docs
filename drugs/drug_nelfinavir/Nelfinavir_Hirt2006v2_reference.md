@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Nelfinavir clearance, bioavailability, and lag time had no extracted values, so placeholders were used, causing the model to be held back.
+> CLfm has no unit.
 
-<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Hirt2006v2_reference" status="model_quarantined" stale="false" population="children treated with nelfinavir" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="nelfinavir" model-id="Nelfinavir_Hirt2006v2_reference" status="needs_review" stale="false" population="children" measured-compound="nelfinavir" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Hirt D, Urien S, Jullien V, Firtion G, Rey E, Pons G et al. Age-related effects on nelfinavir and M8 pharmacokinetics: a population study with 182 children. Antimicrobial agents and chemotherapy 50(3):910–916 (2006).
@@ -16,29 +16,29 @@ Hirt D, Urien S, Jullien V, Firtion G, Rey E, Pons G et al. Age-related effects 
 
 ## Population and dosing
 
-**Population:** children treated with nelfinavir · condition HIV infection · age group mixed · n = 182.
+**Population:** children · condition HIV · age group mixed · n = 182.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** parent + metabolite; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 5 extracted.  
-**Availability:** Model withheld: a core parameter is unspecified.
+**Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| nelfinavir total clearance | CLnorm | 0.93 | liters/h/kg |
+| nelfinavir total clearance | CL | 0.93 | liters/h/kg |
 | volume of distribution | V | 6.9 | liters/kg |
 | absorption rate | kabs | 0.5 | h(-1) |
-| formation clearance fraction to hydroxy-tert-butylamide (M8) | fm | 0.025 | M8 |
+| formation clearance fraction to hydroxy-tert-butylamide (M8) | CLfm | 0.025 | M8 |
 | M8 elimination rate | kel | 1.88 | h(-1) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.9). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,22 +48,22 @@ Hirt D, Urien S, Jullien V, Firtion G, Rey E, Pons G et al. Age-related effects 
 
 ### Reviewer guidance
 
-**Nelfinavir clearance, bioavailability, and lag time had no extracted values, so placeholders were used, causing the model to be held back.**
+**CLfm has no unit.**
 
-The record provides a total clearance of 0.93 L/h/kg but no bioavailability or absorption lag time, forcing the use of library defaults for those parameters. Because the model was derived solely from the abstract, these missing inputs remained as placeholders rather than specific estimates. A second reader also disputed the extraction of the clearance, volume, and absorption rate, leading to a cross-check agreement of 0.143. Extracted — nelfinavir: CLnorm 0.93 liters/h/kg, V 6.9 liters/kg, kabs 0.5 h(-1); M8 (hydroxy-tert-butylamide): fm 0.025 M8, kel 1.88 h(-1).
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nelfinavir: CL 0.93 liters/h/kg, V 6.9 liters/kg, kabs 0.5 h(-1); M8: CLfm 0.025 M8, kel 1.88 h(-1).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nelfinavir, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[formation clearance fraction to hydroxy-tert-butylamide].parameter_id`: this record has Q370, the second reading Q45. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| nelfinavir total clearance | `Q354` · CLnorm | 0.93 | liters/h/kg | 1.808e-05 | m3/s | l/(h·kg) | llm_corrected (0.6) | Hirt_2006_2:abstract |
+| nelfinavir total clearance | `Q22` · CL | 0.93 | liters/h/kg | 1.808e-05 | m3/s | l/(h·kg) | llm_confirmed (0.6) | Hirt_2006_2:abstract |
 | volume of distribution | `Q61` · V | 6.9 | liters/kg | 0.483 | m3 | l/kg | exact (1) | Hirt_2006_2:abstract |
 | absorption rate | `Q49` · kabs | 0.5 | h(-1) | 0.0001389 | 1/s | 1/h | exact (1) | Hirt_2006_2:abstract |
-| formation clearance fraction to hydroxy-tert-butylamide (M8) | `Q45` · fm | 0.025 | M8 |  |  | m8 | exact (1) | Hirt_2006_2:abstract |
+| formation clearance fraction to hydroxy-tert-butylamide (M8) | `Q370` · CLfm | 0.025 | M8 |  |  | m8 | exact (1) | Hirt_2006_2:abstract |
 | M8 elimination rate | `Q47` · kel | 1.88 | h(-1) | 0.0005222 | 1/s | 1/h | exact (1) | Hirt_2006_2:abstract |
 
 <details class="legend">
@@ -74,20 +74,15 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'M8' (fm)
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (volume of distribution)
+- unit_dimension_unknown: 'M8' (CLfm)
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (nelfinavir total clearance); Q61 (volume of distribution)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nelfinavir
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- edge nelfinavir → M8: 'Fm' (Q45) relinked to Q370, the formation parameter the metabolite carries
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 5 linked by role; re-tagged nelfinavir→parent ×3, nelfinavir→M8 (hydroxy-tert-butylamide) ×2
-- molar mass: no plausible PubChem entry for 'M8 (hydroxy-tert-butylamide)' ('Nelfinavir hydroxyl-t- butylamide') — left in mass units
-- molar mass: none found for 'M8 (hydroxy-tert-butylamide)' — its concentrations stay mass-only
+- row roles (LLM): model_class=compartmental; 5/5 row label(s) assigned, 5 linked by role; re-tagged nelfinavir→parent ×3, nelfinavir→M8 ×2
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Hirt_2006_2_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
@@ -95,28 +90,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.9 (9/10 fields) | 1 |
 
-<details><summary>12 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption rate]` | 0.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption rate]` |  | 0.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[formation clearance fraction to hydroxy-tert-butylamide]` |  | 0.025 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[formation clearance fraction to hydroxy-tert-butylamide]` | 0.025 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[m8 elimination rate]` |  | 1.88 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[m8 elimination rate]` | 1.88 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[nelfinavir total clearance]` | 0.93 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[nelfinavir total clearance]` |  | 0.93 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 6.9 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 6.9 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | nelfinavir | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | nelfinavir | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[formation clearance fraction to hydroxy-tert-butylamide].parameter_id` | Q370 | Q45 | mismatch |
 
 </details>
 
@@ -133,23 +117,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Hirt_2006_2:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hirt_2006_2:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Hirt_2006_2:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Hirt_2006_2:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Hirt_2006_2:abstract'] |
+| C5_unit_missing_Q370 | fail | [length] ** 3 / [time] | M8 | ['Hirt_2006_2:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.93 | ['Hirt_2006_2:abstract'] |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 65.1 L/h | ['Hirt_2006_2:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 483 L | ['Hirt_2006_2:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -183,4 +159,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnelfinavir%5D%20Nelfinavir_Hirt2006v2_reference&body=Drug%3A%20nelfinavir%0ARecord%3A%20Nelfinavir_Hirt2006v2_reference%0APaper%3A%20Hirt_2006_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nelfinavir/Nelfinavir_Hirt2006v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:20 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:25 UTC</sub>

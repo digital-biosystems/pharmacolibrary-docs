@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because talazoparib’s absorption-rate constant kabs is 0.157 mL/ng, a unit inconsistent with inverse time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit mL/ng ([length] ** 3 / [mass]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="talazoparib" model-id="Talazoparib_Hadigol2026_reference" status="rejected" stale="false" population="patients with metastatic castration-resistant prostate cancer" measured-compound="talazoparib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -65,13 +65,13 @@ Hadigol M, Williams JH, Shi H, Yang DZ, Hoffman J, Wang DD. Population Pharmacok
 
 ### Reviewer guidance
 
-**The record was rejected because talazoparib’s absorption-rate constant kabs is 0.157 mL/ng, a unit inconsistent with inverse time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit mL/ng ([length] ** 3 / [mass]) vs 1 / [time].**
 
-The reported unit could not be converted to SI, leaving no SI value for this parameter; its dimensions conflict with those of an absorption-rate constant. A second reader did not extract the 0.157 estimate. Extracted — talazoparib: CL 5.08 L/h, V1/F 14.4 L, V 382 L, Q 15.6 L/h, kabs 0.157 mL/ng; enzalutamide: CL/F 0.425 L/h, V/F 25.3 L, Q/F 20.6 L/h, kabs 3.43 mL/ng, fe 1 Fixed; N-desmethyl enzalutamide: CL 0.286 L/h, V1 44.9 L, Q 9.44 L/h, V2 52.4 L, fm 0.634 Fixed.
+A reported unit could not be converted (kabs, kabs, fe and fm), so that value has no SI equivalent. Extracted — talazoparib: CL 5.08 L/h, V1/F 14.4 L, V 382 L, Q 15.6 L/h, kabs 0.157 mL/ng; enzalutamide: CL/F 0.425 L/h, V/F 25.3 L, Q/F 20.6 L/h, kabs 3.43 mL/ng, fe 1 Fixed; N-desmethyl enzalutamide: CL 0.286 L/h, V1 44.9 L, Q 9.44 L/h, V2 52.4 L, fm 0.634 Fixed.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has talazoparib, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

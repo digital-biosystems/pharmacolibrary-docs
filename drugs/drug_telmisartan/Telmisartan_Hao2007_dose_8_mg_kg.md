@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The oral bioavailability (F) was assigned generic placeholders for telmisartan, as no specific value was extracted from the Hao_2007 data.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Hao2007_dose_8_mg_kg" status="needs_review" stale="false" population="spontaneously hypertensive rats" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Hao K, Chen YC, Cao YG, Yu D, Liu XQ, Wang GJ. Pharmacokinetic-pharmacodynamic m
 
 ### Reviewer guidance
 
-**The oral bioavailability (F) was assigned generic placeholders for telmisartan, as no specific value was extracted from the Hao_2007 data.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lacks an explicit estimate for the oral bioavailability of telmisartan in spontaneously hypertensive rats. Consequently, the model relies on standard library assumptions for F instead of parameters derived from the cited study. This omission means the simulated concentration profile does not reflect the specific absorption characteristics reported in the source literature. Extracted — telmisartan: t1/2z 15.4 h, CL 0.14 L·kg⁻¹·h⁻¹, V 5.51 L·kg⁻¹, MRT 20.4 h, tmax 7.1 h, Cmax 809 ng·mL⁻¹, AUC∞ 5.52e+04 ng·h·mL⁻¹, kabs 4.53 /h, … (+1).
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — telmisartan: t1/2z 15.4 h, CL 0.14 L·kg⁻¹·h⁻¹, V 5.51 L·kg⁻¹, MRT 20.4 h, tmax 7.1 h, Cmax 809 ng·mL⁻¹, AUC∞ 5.52e+04 ng·h·mL⁻¹, kabs 4.53 /h, … (+1).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

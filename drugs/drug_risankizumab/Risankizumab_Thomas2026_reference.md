@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The first-order absorption constant for risankizumab was left at library defaults instead of being reported in the source text.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Thomas2026_reference" status="needs_review" stale="false" population="chronic plaque psoriasis patients" measured-compound="risankizumab" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Thomas CM, Wei JR, Baudry D, Arkir Z, Coker B, Dasandi T et al. Pharmacokinetic-
 
 ### Reviewer guidance
 
-**The first-order absorption constant for risankizumab was left at library defaults instead of being reported in the source text.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists risankizumab clearance as 0.341 L/day and volume as 12.9 L, but the absorption constant is absent. The model builder therefore substituted standard library defaults for this parameter. This deviation means the simulated profile relies on assumed absorption kinetics that are not supported by the source. Extracted — risankizumab: CL/F 0.341 L/day, V/F 12.9 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — risankizumab: CL/F 0.341 L/day, V/F 12.9 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (11 of 11 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

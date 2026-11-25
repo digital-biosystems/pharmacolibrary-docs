@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> The hydromorphone record is held back because the reverse intercompartmental clearance k21 was not explicitly estimated from the paper.
+> K21 use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="hydromorphone" model-id="Hydromorphone_Wimbish2024_reference" status="needs_review" stale="false" population="healthy Beagle dogs" measured-compound="hydromorphone" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Wimbish C, Lynch AM, Knych HK, Ueda Y, Messenger KM. Pharmacokinetics of a conti
 
 ### Reviewer guidance
 
-**The hydromorphone record is held back because the reverse intercompartmental clearance k21 was not explicitly estimated from the paper.**
+**K21 use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record defines the reverse intercompartmental clearance (k21) using library placeholders rather than a derived value. This conflicts with the paper's explicit 2.7 mL/min/kg forward clearance (Q). A second reader disputed the 2-compartment structure and the extracted Q value, disagreeing that the model should be 1-compartment. Extracted — hydromorphone: CL 30.4 mL/min/kg, V1 2 L/kg, Q 2.7 mL/min/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — hydromorphone: CL 30.4 mL/min/kg, V1 2 L/kg, Q 2.7 mL/min/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of Q: this record has 2.7, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.786, 0 of 1 reader(s) agree | 0.786 | cross-check disputed by a second reader: verdict disputed, agreement 0.786, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.786 (11 of 14 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.786 | cross-check contradicted by a second reader: verdict disputed; agreement 0.786 (11 of 14 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

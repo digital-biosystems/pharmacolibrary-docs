@@ -4,11 +4,11 @@
 
 # daridorexant — `Daridorexant_Krause2023_all_phase_i_data_estimate`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Daridorexant’s Vmax estimate of 6.94 mg/h was refused on a reported dimensional mismatch, despite its stated metabolic-rate meaning matching those units.
+> Vss and t1/2ka  have no unit.
 
-<div class="pk-model-meta" hidden drug="daridorexant" model-id="Daridorexant_Krause2023_all_phase_i_data_estimate" status="rejected" stale="false" population="healthy subjects and patients with insomnia disorder (phase I-III pooled)" measured-compound="daridorexant" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="daridorexant" model-id="Daridorexant_Krause2023_all_phase_i_data_estimate" status="needs_review" stale="false" population="healthy adults and patients with insomnia" measured-compound="daridorexant" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokinetic modeling of daridorexant, a novel dual orexin receptor antagonist. CPT: pharmacometrics & systems pharmacology 12(1):74–86 (2023).
@@ -16,40 +16,43 @@ Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokineti
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with insomnia disorder (phase I-III pooled) · condition insomnia; healthy subjects; hepatic/renal impairment · age group adult.
+**Population:** healthy adults and patients with insomnia · condition insomnia · age group adult.
 
-**Dosing:** 5, 200 mg, oral.
+**Dosing:** 5, 200 mg, oral, multiple.
 
 ## Model
 
 **Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 8 extracted, plus 6 covariate effects.  
+**Parameters:** 11 extracted, plus 6 covariate effects.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
 | F | Fab | 0.41 |  | 1.53 |
 | t_lag (h) | tlag | 0.41 | h | 7.94 |
 | k_a (1/h) | kabs | 1.05 | 1/h | 18.70 |
+| food_fasted_on_k_a | food_fasted_on_k_a | 0.09 |  | 172.00 |
 | V_c (L) | V1 | 14.60 | L | 1.42 |
 | lean_body_weight_on_v_c | lean_body_weight_on_v_c | 0.37 |  | 18.20 |
 | V_p (L) | V2 | 13.70 | L | 1.91 |
+| Fat mass on V_p | Vss | 0.72 |  | 8.70 |
 | Q (L/h) | Q | 3.58 | L/h | 3.24 |
+| Fat mass on Q | fm | 1.21 |  | 8.57 |
 | V_m (mg/h) | Vmax | 6.94 | mg/h | 1.13 |
 | K_m (μg/ml) | Km | 2.36 | μg/ml | 2.20 |
+| SD(k_a) | t1/2ka | 0.59 | k_a | 9.12 |
 | theta_tlag_food | theta_tlag_food | -0.51 |  | 16.50 |
 | theta_tlag_food | theta_tlag_food | 0.62 |  | 17.80 |
-| theta_kabs_food | theta_kabs_food | 0.09 |  | 172.00 |
 | theta_kabs_food | theta_kabs_food | -1.19 |  | 16.90 |
 | theta_km_body_weight | theta_km_body_weight | -0.12 |  | 79.30 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.765). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.692). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,32 +62,35 @@ Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokineti
 
 ### Reviewer guidance
 
-**Daridorexant’s Vmax estimate of 6.94 mg/h was refused on a reported dimensional mismatch, despite its stated metabolic-rate meaning matching those units.**
+**Vss and t1/2ka  have no unit.**
 
-The finding pairs mg/h ([mass]/[time]) with [mass]/[time], which is dimensionally consistent for Vmax, the maximum enzymatic metabolic rate; the stated mismatch is not supported by the supplied dimensions. Separately, the record says a reported unit could not be converted to SI but does not identify the affected parameter, so this limitation is inconclusive as to which estimate lacked SI conversion. Extracted — daridorexant: Fab 0.41, tlag 0.41 h, kabs 1.05 1/h, V1 14.6 L, V2 13.7 L, Q 3.58 L/h, Vmax 6.94 mg/h, Km 2.36 μg/ml.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (t1/2ka ), so that value has no SI equivalent. Extracted — daridorexant: Fab 0.41, tlag 0.41 h, kabs 1.05 1/h, V1 14.6 L, V2 13.7 L, Vss 0.72, Q 3.58 L/h, fm 1.21, … (+3).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has daridorexant, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fat mass on q: this record has 1.21, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
 |---|---|---|---|---|---|---|---|---|---|
-| F | `Q40` · Fab | 0.41 |  |  |  |  | 1.53 | exact (1) | Krause_2023_table_2:row0:col3, Krause_2023_table_2:row0:col4 |
-| t_lag (h) | `Q83` · tlag | 0.41 | h | 1476 | s | h | 7.94 | exact (1) | Krause_2023_table_2:row2:col3, Krause_2023_table_2:row2:col4 |
-| k_a (1/h) | `Q49` · kabs | 1.05 | 1/h | 0.0002917 | 1/s | 1/h | 18.70 | exact (1) | Krause_2023_table_2:row5:col3, Krause_2023_table_2:row5:col4 |
-| V_c (L) | `Q63` · V1 | 14.60 | L | 0.0146 | m3 | l | 1.42 | exact (1) | Krause_2023_table_2:row9:col3, Krause_2023_table_2:row9:col4 |
-| lean_body_weight_on_v_c | `Q900` · lean_body_weight_on_v_c | 0.37 |  |  |  |  | 18.20 |  | Krause_2023_table_2:row10:col3, Krause_2023_table_2:row10:col4 |
-| V_p (L) | `Q64` · V2 | 13.70 | L | 0.0137 | m3 | l | 1.91 | exact (1) | Krause_2023_table_2:row11:col3, Krause_2023_table_2:row11:col4 |
-| Q (L/h) | `Q30` · Q | 3.58 | L/h | 9.944e-07 | m3/s | l/h | 3.24 | exact (1) | Krause_2023_table_2:row13:col3, Krause_2023_table_2:row13:col4 |
-| V_m (mg/h) | `Q66` · Vmax | 6.94 | mg/h |  |  | mg/h | 1.13 | llm (0.6) | Krause_2023_table_2:row15:col3, Krause_2023_table_2:row15:col4 |
-| K_m (μg/ml) | `Q1` · Km | 2.36 | μg/ml |  |  | µg/ml | 2.20 | exact (1) | Krause_2023_table_2:row16:col3, Krause_2023_table_2:row16:col4 |
-| theta_tlag_food | `Q900` · theta_tlag_food | -0.51 |  |  |  |  | 16.50 |  | Krause_2023_table_2:row3:col3, Krause_2023_table_2:row3:col4 |
-| theta_tlag_food | `Q900` · theta_tlag_food | 0.62 |  |  |  |  | 17.80 |  | Krause_2023_table_2:row4:col3, Krause_2023_table_2:row4:col4 |
-| theta_kabs_food | `Q900` · theta_kabs_food | 0.09 |  |  |  |  | 172.00 |  | Krause_2023_table_2:row6:col3, Krause_2023_table_2:row6:col4 |
-| theta_kabs_food | `Q900` · theta_kabs_food | -1.19 |  |  |  |  | 16.90 |  | Krause_2023_table_2:row7:col3, Krause_2023_table_2:row7:col4 |
-| theta_km_body_weight | `Q900` · theta_km_body_weight | -0.12 |  |  |  |  | 79.30 |  | Krause_2023_table_2:row19:col3, Krause_2023_table_2:row19:col4 |
+| F | `Q40` · Fab | 0.41 |  |  |  |  | 1.53 | exact (1) | Krause_2023_table_2:row0:col3 |
+| t_lag (h) | `Q83` · tlag | 0.41 | h | 1476 | s | h | 7.94 | exact (1) | Krause_2023_table_2:row2:col3 |
+| k_a (1/h) | `Q49` · kabs | 1.05 | 1/h | 0.0002917 | 1/s | 1/h | 18.70 | exact (1) | Krause_2023_table_2:row5:col3 |
+| food_fasted_on_k_a | `Q900` · food_fasted_on_k_a | 0.09 |  |  |  |  | 172.00 |  | Krause_2023_table_2:row6:col3 |
+| V_c (L) | `Q63` · V1 | 14.60 | L | 0.0146 | m3 | l | 1.42 | exact (1) | Krause_2023_table_2:row9:col3 |
+| lean_body_weight_on_v_c | `Q900` · lean_body_weight_on_v_c | 0.37 |  |  |  |  | 18.20 |  | Krause_2023_table_2:row10:col3 |
+| V_p (L) | `Q64` · V2 | 13.70 | L | 0.0137 | m3 | l | 1.91 | exact (1) | Krause_2023_table_2:row11:col3 |
+| Fat mass on V_p | `Q65` · Vss | 0.72 |  |  |  |  | 8.70 | llm_corrected (0.6) | Krause_2023_table_2:row12:col3 |
+| Q (L/h) | `Q30` · Q | 3.58 | L/h | 9.944e-07 | m3/s | l/h | 3.24 | exact (1) | Krause_2023_table_2:row13:col3 |
+| Fat mass on Q | `Q45` · fm | 1.21 |  | 0.0121 |  |  | 8.57 | llm (0.6) | Krause_2023_table_2:row14:col3 |
+| V_m (mg/h) | `Q66` · Vmax | 6.94 | mg/h | 1.928e-09 | kg/s | mg/h | 1.13 | llm (0.6) | Krause_2023_table_2:row15:col3 |
+| K_m (μg/ml) | `Q1` · Km | 2.36 | μg/ml | 0.00236 | kg/m3 | µg/ml | 2.20 | exact (1) | Krause_2023_table_2:row16:col3 |
+| SD(k_a) | `Q95` · t1/2ka | 0.59 | k_a |  |  | a·k_ | 9.12 | llm (0.6) | Krause_2023_table_2:row24:col3 |
+| theta_tlag_food | `Q900` · theta_tlag_food | -0.51 |  |  |  |  | 16.50 |  | Krause_2023_table_2:row3:col3 |
+| theta_tlag_food | `Q900` · theta_tlag_food | 0.62 |  |  |  |  | 17.80 |  | Krause_2023_table_2:row4:col3 |
+| theta_kabs_food | `Q900` · theta_kabs_food | -1.19 |  |  |  |  | 16.90 |  | Krause_2023_table_2:row7:col3 |
+| theta_km_body_weight | `Q900` · theta_km_body_weight | -0.12 |  |  |  |  | 79.30 |  | Krause_2023_table_2:row19:col3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -94,59 +100,58 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Dose' — extend the ontology if this is a real PK parameter (source ['Krause_2023_table_2:row1:col3', 'Krause_2023_table_2:row1:col4'])
+- dropped unlinked row (NIL): 'Dose' — extend the ontology if this is a real PK parameter (source ['Krause_2023_table_2:row1:col3'])
+- covariate level 'Food: fasted on k_a' → Q900:food_fasted_on_k_a = 0.09 (linear_fractional on the model)
 - dropped duplicate Q49 ('Morning administration on k_a', value '1.05') — already have one for this compound
 - covariate level 'Lean body weight on V_c' → Q900:lean_body_weight_on_v_c = 0.37 (linear_fractional on the model)
-- dropped duplicate Q64 ('Fat mass on V_p', value '0.72') — already have one for this compound
-- dropped duplicate Q30 ('Fat mass on Q', value '1.21') — already have one for this compound
-- unit_dimension_mismatch: 'V_m (mg/h)' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
-- routed 'SD(F)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- unit_dimension_unknown: 't_lag' (tlag)
+- 'Fat mass on Q' → Q45: printed without a unit and above 1 — read as a percentage
+- 'SD(F)': unit 'F' is a parameter symbol — dropped
+- dropped unlinked row (NIL): 'SD(F)' — extend the ontology if this is a real PK parameter (source ['Krause_2023_table_2:row22:col3'])
 - dropped duplicate Q83 ('SD(t_lag)', value '0.26') — already have one for this compound
-- unit_dimension_unknown: 'k_a' (kabs)
-- dropped duplicate Q49 ('SD(k_a)', value '0.59') — already have one for this compound
-- unit_dimension_unknown: 'V_c' (V1)
-- dropped duplicate Q63 ('SD(V_c)', value '0.17') — already have one for this compound
-- unit_dimension_unknown: 'V_p' (V2)
-- dropped duplicate Q64 ('SD(V_p)', value '0.23') — already have one for this compound
-- unit_dimension_unknown: 'Q' (Q)
+- unit_dimension_unknown: 'k_a' (t1/2ka )
+- unit_dimension_unknown: 'V_c' (Vss)
+- dropped duplicate Q65 ('SD(V_c)', value '0.17') — already have one for this compound
+- dropped unlinked row (NIL): 'SD(V_p)' — extend the ontology if this is a real PK parameter (source ['Krause_2023_table_2:row26:col3'])
 - dropped duplicate Q30 ('SD(Q)', value '0.50') — already have one for this compound
 - unit_dimension_unknown: 'V_m' (Vmax)
 - dropped duplicate Q66 ('SD(V_m)', value '0.09') — already have one for this compound
 - unit_dimension_unknown: 'K_m' (Km)
 - dropped duplicate Q1 ('SD(K_m)', value '0.36') — already have one for this compound
-- routed 'Multiplicative error' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- implicit units: 'k_a (1/h)' → 1/h (from the paper text: 'Table 2 lists the parameter as "k a (1/h)" with estimate 1.05.')
+- dropped unlinked row (NIL): 'Multiplicative error' — extend the ontology if this is a real PK parameter (source ['Krause_2023_table_2:row35:col3'])
+- implicit units: 'SD(k_a)' — the LLM proposed '1/h', whose dimension does not fit Q95; left unset
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=daridorexant
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
-- population split: 'all phase i data estimate' subgroup of Krause_2023 (paper reports 5 populations: all data, final model estimate, all data, final model rse(%), all phase i data estimate, food, phase i data (intense pk) estimate)
+- population split: 'all phase i data estimate' subgroup of Krause_2023 (paper reports 4 populations: all data, final model estimate, all phase i data estimate, food, phase i data (intense pk) estimate)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.765 (26/34 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.692 (27/39 fields) | 12 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[dose]` |  | -0.47 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fat mass on q]` | 1.21 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fat mass on v_p]` | 0.72 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[food_fasted_on_k_a]` | 0.09 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k_a].covariate_forms` | ['linear_fractional'] | ['linear_fractional', 'linear_fractional'] | mismatch |
 | `gpt-oss-120b` | `parameters[lean_body_weight_on_v_c]` | 0.37 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[q]` | 3.58 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[sd]` |  | 0.09 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[sd].parameter_id` | Q95 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[sd].rse_percent` | 9.12 | 11.90 | mismatch |
+| `gpt-oss-120b` | `parameters[sd].value` | 0.59 | 0.09 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_kabs_food].rse_percent` | 16.90 | 172.00 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_kabs_food].value` | -1.19 | 0.09 | mismatch |
 | `gpt-oss-120b` | `parameters[theta_v1_body_weight]` |  | 0.37 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v_c].covariate_forms` | [] | ['linear_fractional'] | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | daridorexant | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | daridorexant | unknown | mismatch |
 
 </details>
 
@@ -160,20 +165,22 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 8 |  |
+| C0_has_structural_params | pass |  | 11 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
-| C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Krause_2023_table_2:row16:col3', 'Krause_2023_table_2:row16:col4'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Krause_2023_table_2:row13:col3', 'Krause_2023_table_2:row13:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Krause_2023_table_2:row5:col3', 'Krause_2023_table_2:row5:col4'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Krause_2023_table_2:row9:col3', 'Krause_2023_table_2:row9:col4'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Krause_2023_table_2:row11:col3', 'Krause_2023_table_2:row11:col4'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/h ([mass] / [time]) | ['Krause_2023_table_2:row15:col3', 'Krause_2023_table_2:row15:col4'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Krause_2023_table_2:row2:col3', 'Krause_2023_table_2:row2:col4'] |
+| C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['Krause_2023_table_2:row16:col3'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Krause_2023_table_2:row13:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Krause_2023_table_2:row5:col3'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Krause_2023_table_2:row9:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Krause_2023_table_2:row11:col3'] |
+| C5_dimension_Q66 | pass | [mass] / [time] |  | ['Krause_2023_table_2:row15:col3'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Krause_2023_table_2:row2:col3'] |
+| C5_unit_missing_Q65 | fail | [length] ** 3 |  | ['Krause_2023_table_2:row12:col3'] |
+| C5_unit_missing_Q95 | fail | [time] | k_a | ['Krause_2023_table_2:row24:col3'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q63 | pass | volume within physiological range | 14.6 L | ['Krause_2023_table_2:row9:col3', 'Krause_2023_table_2:row9:col4'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 13.7 L | ['Krause_2023_table_2:row11:col3', 'Krause_2023_table_2:row11:col4'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 14.6 L | ['Krause_2023_table_2:row9:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 13.7 L | ['Krause_2023_table_2:row11:col3'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -185,9 +192,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -197,4 +214,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdaridorexant%5D%20Daridorexant_Krause2023_all_phase_i_data_estimate&body=Drug%3A%20daridorexant%0ARecord%3A%20Daridorexant_Krause2023_all_phase_i_data_estimate%0APaper%3A%20Krause_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_daridorexant/Daridorexant_Krause2023_all_phase_i_data_estimate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:11 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 12:26 UTC</sub>

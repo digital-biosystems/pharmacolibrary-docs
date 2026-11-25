@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;clopidogrel&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/&quot;},{&quot;label&quot;:&quot;Grafeneder_2024 \u00b7 hv_2&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;Curated (human-checked)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yousef2013_reference&quot;,&quot;label&quot;:&quot;Yousef_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yousef2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jung_2024_PRU&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Jung_2024_PRU.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Simon_2015_IPA&quot;,&quot;label&quot;:&quot;Simon_2015 \u00b7 IPA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Simon_2015_IPA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Jung_2024_CYP2C19_Q45&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;Curated (human-checked)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yousef2013_reference&quot;,&quot;label&quot;:&quot;Yousef_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yousef2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jung_2024_PRU&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Jung_2024_PRU.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Simon_2015_IPA&quot;,&quot;label&quot;:&quot;Simon_2015 \u00b7 IPA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Simon_2015_IPA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Jung_2024_CYP2C19_Q45&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45.md&quot;,&quot;status&quot;:&quot;Simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The clopidogrel model was quarantined because its clearance and volume of distribution were left as placeholders.
+> No value for clopidogrel's clearance and volume of distribution; the covariate scenarios were not simulated (+3 more).
 
 <div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Grafeneder2024_hv_2" status="model_quarantined" stale="false" population="hemodialysis patients and healthy volunteers" measured-compound="clopidogrel active metabolite" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -56,7 +56,7 @@ Grafeneder J, van Os W, Minichmayr IK, Kovacevic Miljevic KD, Reiter B, Säemann
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.15). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -66,11 +66,13 @@ Grafeneder J, van Os W, Minichmayr IK, Kovacevic Miljevic KD, Reiter B, Säemann
 
 ### Reviewer guidance
 
-**The clopidogrel model was quarantined because its clearance and volume of distribution were left as placeholders.**
+**No value for clopidogrel's clearance and volume of distribution; the covariate scenarios were not simulated (+3 more).**
 
-No explicit values were extracted for the parent compound's elimination rate or distribution volume, forcing the use of library defaults. The simulation process also failed to exercise the CYP2C19 metabolic covariates defined in the record. Extracted — clopidogrel: Cmax 2.3 ng/ml, Cmax_ratio 12.8, AUClast 188 ng/ml·min, AUC∞ 227 ng/ml·min, t1/2z 87.5 min; pantoprazole: Cmax 9.6 μg/ml, AUClast 409 μg/ml·min, AUC∞ 468 μg/ml·min, t1/2z 76.8 min, CL 85.7 ml/min, V 7.53e+03 ml.
+The model was built, but clopidogrel's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — clopidogrel: Cmax 2.3 ng/ml, Cmax_ratio 12.8, AUClast 188 ng/ml·min, AUC∞ 227 ng/ml·min, t1/2z 87.5 min; pantoprazole: Cmax 9.6 μg/ml, AUClast 409 μg/ml·min, AUC∞ 468 μg/ml·min, t1/2z 76.8 min, CL 85.7 ml/min, V 7.53e+03 ml.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has clopidogrel → clopidogrel active metabolite (metabolism), the second reading none; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,6 +130,43 @@ No explicit values were extracted for the parent compound's elimination rate or 
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.15 (3/20 fields) | 17 |
+
+<details><summary>17 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['clopidogrel', 'clopidogrel active metabolite', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[aucinf [ug/ml min]]` | 468 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[aucinf_clo [ng/ml min]]` | 227 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auclast [ug/ml min]]` | 409 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auclast_clo [ng/ml min]]` | 188 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance [ml/min]]` | 85.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 85.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax [ug/ml]]` | 9.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax ratio cam:clo]` | 12.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax,clo [ng/ml]]` | 2.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intermediate_metabolizer]` | 7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[normal_metabolizer]` | 8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rapid_metabolizer]` | 1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 [min]]` | 76.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2_clo [min]]` | 87.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd [ml]]` | 7528 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` |  | 7528 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -152,71 +191,71 @@ No explicit values were extracted for the parent compound's elimination rate or 
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  | no second reading of this record |
-| T1_cmax | reference | skipped | 3.3 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 7.7 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 51% |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 12.2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 1.5 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 1.5 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 12.8 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 2.3 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 7.7 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 24.7 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 12.2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 12.8 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 1.5 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 9.6 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 2.9 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 1.9 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 3.1 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 1.54 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 7.6 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 10.2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 22.1 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 24.8 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 35.45 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 12.2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 12.2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 13.5 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 8.1 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 24.2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 1.6 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 1.4 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 12 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 6.8 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 18.7 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 3.2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 2.7 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 87.5 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 127 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 35.2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 74.1 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 76.8 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 130 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 87.5 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 82 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 131 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 81.8 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 138 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 33 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 43.2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 24 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 49.2 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 197 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 83.9 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 69.3 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 57.3 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 195 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 112 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 130 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.15 (3 of 20 compared fields agree, 16 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.15 | cross-check contradicted by a second reader: verdict disputed; agreement 0.15 (3 of 20 compared fields agree, 16 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped | 3.3 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 7.7 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 12.2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 1.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 1.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 12.8 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 2.3 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 7.7 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 24.7 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 12.2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 12.8 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 1.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 9.6 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 2.9 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 1.9 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 3.1 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 1.54 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 7.6 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 10.2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 22.1 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 24.8 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 35.45 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 12.2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 12.2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 13.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 8.1 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 24.2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 1.6 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 1.4 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 12 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 6.8 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 18.7 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 3.2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 2.7 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 87.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 127 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 35.2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 74.1 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 76.8 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 130 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 87.5 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 82 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 131 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 81.8 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 138 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 33 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 43.2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 24 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 49.2 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 197 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 83.9 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 69.3 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 57.3 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 195 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 112 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 130 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -199,8 +199,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_terminal | reference | fail | 0.1917 | 2.516 | 13.13 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.445 | 2.516 | 5.654 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.1917 | 2.516 | 13.13 | reported 11.5 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.445 | 2.516 | 5.654 | reported 26.7 min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

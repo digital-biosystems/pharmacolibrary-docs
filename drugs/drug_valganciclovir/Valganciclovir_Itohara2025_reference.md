@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The 38.7-week absorption lag time is unphysiological and lacks a value from the second reader, violating apparent-parameter coherence.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="valganciclovir" model-id="Valganciclovir_Itohara2025_reference" status="rejected" stale="false" population="Japanese infants with symptomatic congenital cytomegalovirus infection" measured-compound="ganciclovir" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Itohara K, Yamamoto K, Fujinaka S, Hashimoto M, Tamura N, Kitahiro Y et al. Phar
 
 ### Reviewer guidance
 
-**The 38.7-week absorption lag time is unphysiological and lacks a value from the second reader, violating apparent-parameter coherence.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The absorption lag time is reported as 38.7 weeks, which is pharmacokinetically implausible for oral ganciclovir. The second reader provided no value for this parameter, confirming it as an unidentifiable extraction error. This inconsistency triggers the coherence check because the lag time contradicts the other absorption parameters. Extracted — ganciclovir: CLm/F 13.9 L/h, tlag 38.7 weeks, V 1.15 L/kg, kabs 0.591 /h, Fab 0.536.
+A reported unit could not be converted (tlag), so that value has no SI equivalent. None of the extracted parameters is valganciclovir's own; they describe ganciclovir. Extracted — ganciclovir: CLm/F 13.9 L/h, tlag 38.7 weeks, V 1.15 L/kg, kabs 0.591 /h, Fab 0.536.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θ2: this record has 38.7, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

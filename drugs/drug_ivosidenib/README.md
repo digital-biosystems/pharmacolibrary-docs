@@ -32,7 +32,7 @@ Ivosidenib is an anti-cancer medication and isocitrate dehydrogenase inhibitor u
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Jiang_2021_QTcF](drugs/drug_ivosidenib/pd_Jiang_2021_QTcF.md) | mean change in corrected QT interval using Fridericia's method (ΔQTcF) ← ivosidenib · direct linear effect | — | Jiang X et al., Population pharmacokinetic and exposure…, Clinical and translational… (2021) | [10.1111/cts.12959](https://doi.org/10.1111/cts.12959) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Jiang_2021_QTcF](drugs/drug_ivosidenib/pd_Jiang_2021_QTcF.md) | mean change in corrected QT interval using Fridericia's method (ΔQTcF) ← ivosidenib · direct linear effect | — | Jiang X et al., Population pharmacokinetic and exposure…, Clinical and translational… (2021) | [10.1111/cts.12959](https://doi.org/10.1111/cts.12959) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

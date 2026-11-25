@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> The volume of distribution and retention coefficient parameters are incorrectly reported in mg/kg instead of volume units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q63 unit mg/kg ([mass]) vs [length] ** 3; Q61 unit mg/kg ([mass]) vs [length] ** 3; Q53 unit mg/kg ([mass]) vs [time].
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Abada1994_reference" status="rejected" stale="false" population="dogs" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Abadía AR, Aramayona JJ, Muñoz MJ, Pla Delfina JM, Saez MP, Bregante MA. Dispo
 
 ### Reviewer guidance
 
-**The volume of distribution and retention coefficient parameters are incorrectly reported in mg/kg instead of volume units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q63 unit mg/kg ([mass]) vs [length] ** 3; Q61 unit mg/kg ([mass]) vs [length] ** 3; Q53 unit mg/kg ([mass]) vs [time].**
 
-The central and total volumes of distribution, as well as the second exponential phase coefficient, are listed with mass-based units rather than volume or dimensionless quantities. This dimensional conflict causes the model to be rejected because pharmacokinetic volumes cannot be expressed as mass per kilogram. Additionally, the record contains discrepancies regarding the dose variable, which is recorded as 6.91 mg/kg in one version but missing in the reviewer's assessment. Extracted — ciprofloxacin: A2 0.0061 mg/kg, V1 0.72 mg/kg, V 3.06 mg/kg, MRT 241 mg/kg, CL 12.9 L/h, V2 87.6 L, Q 38.8 L/h, kabs 1 h−1, … (+1).
+A reported unit could not be converted (equation variable, A2, V1 and V), so that value has no SI equivalent. Extracted — ciprofloxacin: A2 0.0061 mg/kg, V1 0.72 mg/kg, V 3.06 mg/kg, MRT 241 mg/kg, CL 12.9 L/h, V2 87.6 L, Q 38.8 L/h, kabs 1 h−1, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of parameter: this record has none, the second reading 5.0; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

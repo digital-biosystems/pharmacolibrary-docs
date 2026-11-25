@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Levothyroxine model refused because absorption rate constant was defaulted, lacking source support.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Younis2018_reference" status="needs_review" stale="false" population="adults with hypothyroidism" measured-compound="levothyroxine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Younis IR, Ahmed MA, Burman KD, Soldin OP, Jonklaas J. Stable Isotope Pharmacoki
 
 ### Reviewer guidance
 
-**Levothyroxine model refused because absorption rate constant was defaulted, lacking source support.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record uses library placeholder values for the absorption rate constant rather than estimates from the paper, affecting the simulated profile. A second reader disagreed on specific parameter values, citing discrepancies in the extracted data. The model relies on an invented absorption component since the source does not report this parameter. Extracted — levothyroxine: CL/F 0.712 L/h, V/F 165 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — levothyroxine: CL/F 0.712 L/h, V/F 165 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q174: this record has 7.5, the second reading 7.5; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

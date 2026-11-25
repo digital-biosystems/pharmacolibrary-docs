@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Clonazepam record omits the maximum ratio parameter and failed to convert a reported unit to standard SI, causing a cross-check dispute.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="clonazepam" model-id="Clonazepam_Kruizinga2022_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="clonazepam" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Kruizinga MD, Zuiker RGJA, Bergmann KR, Egas AC, Cohen AF, Santen GWE et al. Pop
 
 ### Reviewer guidance
 
-**Clonazepam record omits the maximum ratio parameter and failed to convert a reported unit to standard SI, causing a cross-check dispute.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader identified a maximum ratio value of 0.031, whereas this record lists the parameter as null. Additionally, one parameter had a reported unit that could not be converted to standard SI, leaving it without a standardized value for the model. The second reader also disagreed that the primary analyte was clonazepam, labeling it unknown instead. Extracted — clonazepam: V1 11.5 L, CL 0.16 L h−1, V2 12.9 L, Q 11.2 L h−1, kel 0.12 h−1, Km 0.74 μg/L.
+A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — clonazepam: V1 11.5 L, CL 0.16 L h−1, V2 12.9 L, Q 11.2 L h−1, kel 0.12 h−1, Km 0.74 μg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clonazepam, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -156,7 +156,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.824, 0 of 1 reader(s) agree | 0.824 | cross-check disputed by a second reader: verdict disputed, agreement 0.824, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.824 (14 of 17 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.824 | cross-check contradicted by a second reader: verdict disputed; agreement 0.824 (14 of 17 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

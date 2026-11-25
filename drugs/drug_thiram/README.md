@@ -23,11 +23,6 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Zhu_2022_Alternaria_alternata_mycelial_growth_inhibition](drugs/drug_thiram/pd_Zhu_2022_Alternaria_alternata_mycelial_growth_inhibition.md) | Alternaria alternata mycelial growth inhibition ← thiram · direct sigmoid Emax (Hill) effect | — | Zhu GY et al., Peel Diffusion and Antifungal Efficacy…, Journal of fungi (Basel, Sw… (2022) | [10.3390/jof8050547](https://doi.org/10.3390/jof8050547) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Budge_2001_C_minitans_mycelial_growth_inhibition_by_thiram](drugs/drug_thiram/pd_Budge_2001_C_minitans_mycelial_growth_inhibition_by_thiram.md) | C. minitans mycelial growth inhibition by thiram ← thiram · inhibition effect | — | Budge SP et al., Potential for Integrated Control of Scl…, Phytopathology (2001) | [10.1094/PHYTO.2001.91.2.221](https://doi.org/10.1094/PHYTO.2001.91.2.221) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Glynn_2008_EC50](drugs/drug_thiram/pd_Glynn_2008_EC50.md) | In vitro sensitivity of Microdochium isolates to fungicide seed treatment (EC50) ← carboxin + thiram · inhibition effect | — | Glynn NC et al., Fungicide seed treatment efficacy again…, Pest management science (2008) | [10.1002/ps.1558](https://doi.org/10.1002/ps.1558) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Milenkovski_2010_Leucine_incorporation_sediment_column_bacterial_community](drugs/drug_thiram/pd_Milenkovski_2010_Leucine_incorporation_sediment_column_bacte.md) | Leucine incorporation (sediment column bacterial community) ← thiram · direct sigmoid Emax (Hill) effect | — | Milenkovski S et al., Toxicity of fungicides to natural bacte…, Ecotoxicology (London, Engl… (2010) | [10.1007/s10646-009-0411-5](https://doi.org/10.1007/s10646-009-0411-5) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Milenkovski_2010_Leucine_incorporation_water_column_bacterial_community](drugs/drug_thiram/pd_Milenkovski_2010_Leucine_incorporation_water_column_bacteria.md) | Leucine incorporation (water column bacterial community) ← thiram · direct sigmoid Emax (Hill) effect | — | Milenkovski S et al., Toxicity of fungicides to natural bacte…, Ecotoxicology (London, Engl… (2010) | [10.1007/s10646-009-0411-5](https://doi.org/10.1007/s10646-009-0411-5) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Milenkovski_2010_Potential_denitrification](drugs/drug_thiram/pd_Milenkovski_2010_Potential_denitrification.md) | Potential denitrification ← thiram · direct sigmoid Emax (Hill) effect | — | Milenkovski S et al., Toxicity of fungicides to natural bacte…, Ecotoxicology (London, Engl… (2010) | [10.1007/s10646-009-0411-5](https://doi.org/10.1007/s10646-009-0411-5) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -41,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:25 | 4:57 | 0/0/0 | 1/5/0 | 0/0/0 | 86,388/2,901 | ollama / glm-5.3-flash | 4 | 4/0 | 4/0 | 0 |
+| 2026-11-24 07:52 | 0:03 | 0/0/0 | 1/0/0 | 0/0/0 | 4,024/157 | einfracz / qwen3.8-27b | 4 | 4/0 | 4/0 | 0 |
 
 ## Coverage
 
@@ -54,22 +49,35 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Aguirrezabalaga_1994 | irrelevant | 0 | 0 | This is a genotoxicity (SMART) assay in Drosophila with no pharmacokinetic parameters for thiram. |
-| popPK | Alves_2013 | irrelevant | 0 | 0 | Ecotoxicological toxicity study (LC50/EC50 in earthworms), no pharmacokinetic parameters for thiram. |
-| popPK | Budge_2001 | irrelevant | 0 | 0 | This is an in vitro biocontrol/fungicide compatibility study; thiram appears only as a test fungicide with EC50 values, not as a pharmacokinetic subject drug. |
-| popPK | Fan_2024 | irrelevant | 0 | 0 | This is a fungicide efficacy study on walnut anthracnose with EC50 values, not a pharmacokinetic study of thiram. |
-| popPK | Glynn_2008 | irrelevant | 0 | 0 | This is a fungicide efficacy study reporting EC50 values, not pharmacokinetic disposition parameters for thiram. |
-| popPK | Iljin_2009 | irrelevant | 0 | 0 | In-vitro cell screening study of disulfiram/thiram as anticancer agents with no pharmacokinetic disposition parameters reported. |
-| popPK | Lalancette_2020 | irrelevant | 0 | 0 | Plant pathology study of fungicide efficacy on peaches; no pharmacokinetic parameters for thiram are reported. |
-| popPK | Lowy_1980 | irrelevant | 0 | 0 | Toxicology dose-response study of thiram in rats with no pharmacokinetic disposition parameters (no CL, V, ka, half-life, or PK model). |
-| popPK | Martins_2007 | irrelevant | 0 | 0 | Toxicity/bioindicator study in Daphnia magna with no pharmacokinetic disposition parameters for thiram. |
-| popPK | Milenkovski_2010 | irrelevant | 0 | 0 | This is an in-vitro ecotoxicity study reporting EC50 toxicity values, not pharmacokinetic disposition parameters for thiram. |
-| popPK | Polemi_2021 | irrelevant | 0 | 0 | This is an in vitro/exposure biomarker toxicology study; thiram is only a screened chemical with no PK disposition parameters reported. |
-| popPK | Putnam_2017 | irrelevant | 1 | 0 | In vitro cell-line metabolomics study of thiram exposure with no PK disposition parameters (CL, V, ka, half-life) reported. |
+| popPK | Aguirrezabalaga_1994 | irrelevant | 0 | 0 | The study focuses on the genotoxicity of thiram in Drosophila using the SMART test, not on pharmacokinetic parameters. |
+| PGx | Aguirrezabalaga_1994 | not_relevant | 0 | 0 | The paper studies the genotoxicity of thiram in Drosophila and genotype-dependent sensitivity to another compound (HMPA), but does not report pharmacokinetic or pharmacodynamic parameters of thiram affected by genetic variants. |
+| popPK | Alves_2013 | irrelevant | 0 | 0 | The paper is an ecotoxicological study on earthworms measuring toxicity endpoints (LC50, EC50) rather than pharmacokinetic parameters for thiram. |
+| PGx | Alves_2013 | not_relevant | 0 | 0 | The paper assesses the ecotoxicological effects of thiram on earthworms, not pharmacogenomic variations in human PK/PD parameters. |
+| popPK | Budge_2001 | irrelevant | 0 | 0 | The paper is an agricultural study on fungicide compatibility with biocontrol agents and does not contain any pharmacokinetic data for thiram. |
+| PGx | Budge_2001 | not_relevant | 0 | 0 | The paper investigates the effect of fungicides on biological control agents, not human pharmacogenomics. |
+| popPK | Fan_2024 | irrelevant | 0 | 0 | The paper is a fungicide screening study on fungal pathogens of walnut and reports efficacy data, not pharmacokinetic parameters for thiram in an animal or human host. |
+| PGx | Fan_2024 | not_relevant | 0 | 0 | The paper discusses the efficacy of fungicides against a fungal pathogen in plants, containing no human pharmacogenomic data. |
+| popPK | Glynn_2008 | irrelevant | 0 | 0 | The study evaluates fungicide efficacy against fungal pathogens and does not contain pharmacokinetic parameters for thiram. |
+| PGx | Glynn_2008 | not_relevant | 0 | 0 | The paper evaluates fungicide efficacy in plants/organisms, not human pharmacogenomics of thiram. |
+| popPK | Iljin_2009 | irrelevant | 0 | 0 | The paper is an in-vitro screening and mechanistic study of thiram as a cancer cell growth inhibitor and does not report pharmacokinetic disposition parameters. |
+| PGx | Iljin_2009 | not_relevant | 0 | 0 | The paper investigates the anticancer activity of thiram and disulfiram but does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Lalancette_2020 | irrelevant | 0 | 0 | The paper is a plant pathology study on fungicide efficacy in peaches and does not contain pharmacokinetic data for thiram in a biological host. |
+| PGx | Lalancette_2020 | not_relevant | 0 | 0 | The paper discusses agricultural fungicide efficacy for plant disease management and does not report on human pharmacogenomics, pharmacokinetics, or pharmacodynamics. |
+| popPK | Lowy_1980 | irrelevant | 0 | 0 | This is a toxicology study focused on dose-response modeling and organ weight/metabolite changes, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Lowy_1980 | not_relevant | 0 | 0 | The paper is a toxicology study on rats determining a no-effect level and does not involve human genetic variants or pharmacogenomics. |
+| popPK | Martins_2007 | irrelevant | 0 | 0 | The study investigates the toxicological effect of thiram on Daphnia magna behavior (phototaxis) and does not report any pharmacokinetic disposition parameters. |
+| PGx | Martins_2007 | not_relevant | 0 | 0 | The paper investigates toxicological bioindicators in Daphnia magna and does not address human pharmacogenomics or genetic variants affecting the PK/PD of thiram. |
+| popPK | Milenkovski_2010 | irrelevant | 0 | 0 | The paper is an ecotoxicology study measuring fungal and bacterial toxicity endpoints, not a pharmacokinetic study of thiram disposition. |
+| PGx | Milenkovski_2010 | not_relevant | 0 | 0 | The paper studies the toxicity of fungicides to bacterial communities, not human pharmacogenomics. |
+| popPK | Polemi_2021 | irrelevant | 0 | 0 | The paper analyzes in vitro toxicology and exposure biomarkers, not in vivo pharmacokinetics, and contains no quantitative disposition parameters for thiram. |
+| PGx | Polemi_2021 | not_relevant | 0 | 0 | The paper analyzes chemical exposure disparities and in vitro toxicity of thiram as an environmental chemical, not the pharmacogenomics of thiram as a drug. |
+| popPK | Putnam_2017 | irrelevant | 0 | 0 | The study is an in vitro metabolomics/toxicology assay in fish cell lines and does not report pharmacokinetic parameters like clearance or volume for thiram. |
+| PGx | Putnam_2017 | not_relevant | 0 | 0 | The paper studies metabolomic fingerprints in fish cell lines exposed to thiram and does not report pharmacogenomic effects on PK or PD parameters. |
 | popPK | Staal_2018 | irrelevant | 0 | 0 | This is a zebrafish embryo developmental toxicity (skeletal malformation) study; thiram is a test compound with dose-response/BMC data, not a pharmacokinetic study with CL/V/ka parameters. |
 | popPK | Vasamsetti_2022 | irrelevant | 0 | 0 | This is a zebrafish embryo developmental toxicity study reporting LC50/EC50 values, not pharmacokinetic disposition parameters (CL, V, ka, half-life, or PK model) for thiram. |
 | popPK | Wrobel_2025 | irrelevant | 0 | 0 | In-vitro study of pesticide effects on bovine cervical smooth muscle contractions; no PK parameters for thiram. |
-| popPK | Zhang_2024 | irrelevant | 0 | 0 | This is a plant pathology study of Bipolaris fujianensis on Chinese fir; thiram appears only as an ineffective fungicide in sensitivity testing, with no pharmacokinetic parameters. |
+| popPK | Zhang_2024 | irrelevant | 0 | 0 | The study investigates a fungal pathogen and fungicide sensitivity, not the pharmacokinetics of the drug thiram. |
+| PGx | Zhang_2024 | not_relevant | 0 | 0 | The paper describes the identification of a new fungal pathogen and its sensitivity to fungicides, with no human pharmacogenomics or PK/PD parameters involved. |
 | popPK | Zhu_2022 | irrelevant | 1 | 2 | This is a plant/fruit diffusion and antifungal efficacy study in pears, not a pharmacokinetic study; no CL, V, ka, half-life, or PK model for thiram is reported (only diffusion percentages and degradation rates). |
 
 

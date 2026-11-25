@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Tanezumab Vmax unit μg/day was unrecognized, preventing SI conversion and causing rejection despite a dimension check failure.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit μg day –1 ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="tanezumab" model-id="Tanezumab_Jonsson2016_reference" status="rejected" stale="false" population="adults with osteoarthritis" measured-compound="tanezumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Jonsson EN, Xie R, Marshall SF, Arends RH. Population pharmacokinetics of tanezu
 
 ### Reviewer guidance
 
-**Tanezumab Vmax unit μg/day was unrecognized, preventing SI conversion and causing rejection despite a dimension check failure.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit μg day –1 ([mass] / [time]) vs [mass] / [time].**
 
-The Vmax value of 8.03 μg/day could not be converted to SI units, leaving the parameter without a valid numeric value for modeling. This unit incompatibility triggered a dimension mismatch error during validation. Additionally, there were disagreements between readers on the assignment of covariate effects for weight and gender to specific pharmacokinetic parameters. Extracted — tanezumab: CL 0.135 l day –1, V1 2.71 l, Q 0.371 l day –1, V2 1.98 l, Km 27.7 ng ml –1, Vmax 8.03 μg day –1.
+A reported unit could not be converted (Km and Vmax), so that value has no SI equivalent. Extracted — tanezumab: CL 0.135 l day –1, V1 2.71 l, Q 0.371 l day –1, V2 1.98 l, Km 27.7 ng ml –1, Vmax 8.03 μg day –1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of gender_on_cl: this record has 0.143, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

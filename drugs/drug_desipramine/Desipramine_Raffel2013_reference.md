@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> Record rejected due to implausible desipramine clearance of 3.65 mL/min/g and volume of distribution of 46444.6815 L.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="desipramine" model-id="Desipramine_Raffel2013_reference" status="rejected" stale="false" population="" measured-compound="desipramine" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Raffel DM, Koeppe RA, Jung YW, Gu G, Jang KS, Sherman PS et al. Quantification o
 
 ### Reviewer guidance
 
-**Record rejected due to implausible desipramine clearance of 3.65 mL/min/g and volume of distribution of 46444.6815 L.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted clearance value of 3.65 mL/min/g and the derived volume of distribution of 46444.6815 L fall outside the expected physiological range for desipramine. This magnitude suggests a unit or scale extraction error rather than a valid pharmacokinetic estimate. A second reader also noted missing values for two additional fields, indicating broader data quality issues. Extracted — desipramine: CL 3.65 mL/min/g, V 4.64e+04 L.
+Extracted — desipramine: CL 3.65 mL/min/g, V 4.64e+04 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q322: this record has 0.087, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,4 +133,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdesipramine%5D%20Desipramine_Raffel2013_reference&body=Drug%3A%20desipramine%0ARecord%3A%20Desipramine_Raffel2013_reference%0APaper%3A%20Raffel_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_desipramine/Desipramine_Raffel2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:17 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:43 UTC</sub>

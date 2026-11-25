@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Nimesulide’s apparent clearance (CL/F) of 36.5 L/h/kg and volume (V/F) of 187.73 L/kg were refused because the paper concerns another drug.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="nimesulide" model-id="Nimesulide_Dziubina2026_reference" status="rejected" stale="false" population="" measured-compound="nimesulide" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Dziubina A, Szkatuła D, Szafarz M, Siwek A, Kowalski M, Gdula-Argasińska J. Se
 
 ### Reviewer guidance
 
-**Nimesulide’s apparent clearance (CL/F) of 36.5 L/h/kg and volume (V/F) of 187.73 L/kg were refused because the paper concerns another drug.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The paper’s title and abstract do not name nimesulide, and the relevance screen identifies it as a paper about another drug. The recorded model defaults the absorption rate and lag time, uses an unreported absorption rate, assumes F=1 and Fm=1 with no molar correction, and uses first-order depot input. A second reader disputed the verdict, with agreement of 0 of 1 readers. Extracted — nimesulide: CL/F 36.5 L/h/kg, V/F 188 L/kg.
+Extracted — nimesulide: CL/F 36.5 L/h/kg, V/F 188 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 16.11, the second reading 16.11; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

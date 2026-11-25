@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The bioavailability parameter for casirivimab was rejected because its dimensionless unit failed a time-based dimensional check.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit units ([luminosity] / [length] ** 2) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="Casirivimab" model-id="Casirivimab_Lin2024_reference" status="rejected" stale="false" population="pediatric and adult non-infected individuals and SARS-CoV-2 infected patients or household contacts" measured-compound="casirivimab" parameterization="mechanistic" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Lin KJ, Turner KC, Rosario M, Harnisch LO, Davis JD, DiCioccio AT. Population Ph
 
 ### Reviewer guidance
 
-**The bioavailability parameter for casirivimab was rejected because its dimensionless unit failed a time-based dimensional check.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit units ([luminosity] / [length] ** 2) vs 1 / [time].**
 
-The record lists the bioavailability unit as generic 'units' rather than a dimensionless quantity, triggering a mismatch against a required inverse time dimension. This dimensional error on a structural parameter caused the automatic rejection of the model record. A secondary reviewer disagreed with the single-analyte classification, noting the compound is administered with imdevimab. Extracted — casirivimab: CL 0.236 L/day, V1 3.82 L, Q 0.403 L/day, V2 3.2 L, kabs 0.235 units, Fab 0.662 units.
+A reported unit could not be converted (kabs, Fab and equation variable), so that value has no SI equivalent. Extracted — casirivimab: CL 0.236 L/day, V1 3.82 L, Q 0.403 L/day, V2 3.2 L, kabs 0.235 units, Fab 0.662 units.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has casirivimab, the second reading casirivimab and imdevimab; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

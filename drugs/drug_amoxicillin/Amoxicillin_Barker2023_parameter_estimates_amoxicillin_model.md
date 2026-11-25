@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Amoxicillin bioavailability F used library placeholders because no paper-derived estimate was available, hindering accurate simulation.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Barker2023_parameter_estimates_amoxicillin_model" status="needs_review" stale="false" population="neonates and paediatric patients" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Barker CIS, Kipper K, Lonsdale DO, Wright K, Thompson G, Kim M et al. The Neonat
 
 ### Reviewer guidance
 
-**Amoxicillin bioavailability F used library placeholders because no paper-derived estimate was available, hindering accurate simulation.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record omits an explicit bioavailability value, so standard library defaults were applied instead of data from Barker_2023. A secondary review identified a possible error in the Km parameter classification and highlighted a missing half-life value of 42.6. Extracted — amoxicillin: CL 16.4 L/h, V 46.2 L, Km 0.516 mg/L, kabs 0.17 h−1, tlag 0.125 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — amoxicillin: CL 16.4 L/h, V 46.2 L, Km 0.516 mg/L, kabs 0.17 h−1, tlag 0.125 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[m].parameter_id`: this record has Q1, the second reading Q32; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

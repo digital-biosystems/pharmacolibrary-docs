@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper concerns a different drug, not natalizumab.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_Moes2022_reference" status="rejected" stale="false" population="" measured-compound="natalizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Moes DJAR, van Westerloo DJ, Arend SM, Swen JJ, de Vries A, Guchelaar HJ et al. 
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper concerns a different drug, not natalizumab.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source document is identified as a review reference for a different molecule, with neither the title nor abstract naming natalizumab. Although clearance and volume parameters for natalizumab are listed, they do not correspond to the paper's actual subject. A secondary reader disagreed on two specific values, but this does not change the fundamental mismatch of the paper's drug subject. Extracted — natalizumab: CL 0.725 L/day, V 4.34 L.
+Extracted — natalizumab: CL 0.725 L/day, V 4.34 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 18.9; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.8 (8 of 10 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

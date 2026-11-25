@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
-> Clearance and volume of distribution for amino acids are physiologically implausible.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="amino acids" model-id="AminoAcids_Sudarsono2026v2_reference" status="rejected" stale="false" population="" measured-compound="amino_acids" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Sudarsono LM, Wenker SA, Liu X, Brink J, van den Berg D, van Hasselt J et al. A 
 
 ### Reviewer guidance
 
-**Clearance and volume of distribution for amino acids are physiologically implausible.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted clearance is 0.03 L/h and the volume of distribution is 0.2 L. These magnitudes are far outside physiological windows for a drug administered to a population. The record was rejected due to an extraction error resulting in impossible parameter values. Extracted — amino acids: CL 0.03 L/h, V 0.2 L.
+Extracted — amino acids: CL 0.03 L/h, V 0.2 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

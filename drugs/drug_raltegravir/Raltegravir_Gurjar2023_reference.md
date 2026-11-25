@@ -144,12 +144,12 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_cmax | reference | pass | 0.00144 | 0.001138 | 0.7905 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped |  | 0.001138 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.001138 |  | non-numeric value |
-| T1_t_half_terminal | reference | fail | 9.13 | 2.954 | 0.3235 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 1.5 | 1.698 | 1.132 | h→SI vs simulated h |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (14 of 14 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | pass | 0.00144 | 0.001138 | 0.7905 | reported 1.44 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped |  | 0.001138 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.001138 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | fail | 9.13 | 2.954 | 0.3235 | reported 9.13 h→SI vs simulated h |
+| T1_tmax | reference | pass | 1.5 | 1.698 | 1.132 | reported 1.5 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;afatinib&quot;,&quot;href&quot;:&quot;drugs/drug_afatinib/&quot;},{&quot;label&quot;:&quot;Freiwald_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Zhang_2017_pEGFR&quot;,&quot;label&quot;:&quot;Zhang_2017 \u00b7 pEGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_afatinib/pd_Zhang_2017_pEGFR.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Only clearance was extracted — no volume.
+> The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="afatinib" model-id="Afatinib_Freiwald2014_reference" status="needs_review" stale="false" population="patients with advanced solid tumors" measured-compound="afatinib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="afatinib" model-id="Afatinib_Freiwald2014_reference" status="needs_review" stale="false" population="patients with advanced solid tumors" measured-compound="afatinib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Freiwald M, Schmid U, Fleury A, Wind S, Stopfer P, Staab A. Population pharmacokinetics of afatinib, an irreversible ErbB family blocker, in patients with various solid tumors. Cancer chemotherapy and pharmacology 73(4):759–770 (2014).
@@ -17,13 +16,13 @@ Freiwald M, Schmid U, Fleury A, Wind S, Stopfer P, Staab A. Population pharmacok
 
 ## Population and dosing
 
-**Population:** patients with advanced solid tumors · condition advanced solid tumors · n = 927.
+**Population:** patients with advanced solid tumors · condition advanced solid tumors · age group adult · n = 927.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 1 extracted.  
+**Parameterization:** mechanistic.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -31,11 +30,13 @@ Freiwald M, Schmid U, Fleury A, Wind S, Stopfer P, Staab A. Population pharmacok
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| apparent total clearance | CL/F | 734 | mL/min |
+| dose | equation variable | 40 | mg |
+| estimated apparent total clearance | CL | 734 | mL/min |
+| distribution volume | V | 2370 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,11 +46,11 @@ Freiwald M, Schmid U, Fleury A, Wind S, Stopfer P, Staab A. Population pharmacok
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**The clearance plausibility check could not be computed.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — afatinib: CL/F 734 mL/min.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — afatinib: CL 734 mL/min, V 2.37e+03 L.
 
-Independently confirmed by `qwen3.8-27b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -57,7 +58,9 @@ Independently confirmed by `qwen3.8-27b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| apparent total clearance | `Q27` · CL/F | 734 | mL/min | 1.223e-05 | m3/s | ml/min | llm_corrected (0.6) | Freiwald_2014:abstract |
+| dose | `Q900` · equation variable | 40 | mg |  |  | mg | llm (0.6) | Freiwald_2014:abstract |
+| estimated apparent total clearance | `Q22` · CL | 734 | mL/min | 1.223e-05 | m3/s | ml/min | llm_confirmed (0.6) | Freiwald_2014:abstract |
+| distribution volume | `Q61` · V | 2370 | L | 2.37 | m3 | l | exact (1) | Freiwald_2014:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -67,25 +70,35 @@ Independently confirmed by `qwen3.8-27b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'distribution volume at steady state'
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=afatinib
+- dropped unlinked row (NIL): 'proportional change in exposure' — extend the ontology if this is a real PK parameter (source ['Freiwald_2014:abstract'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=afatinib
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Freiwald_2014_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Freiwald_2014_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 | `qwen3.8-27b` | confirmed | 1.0 (5/5 fields) | none |
 
-_All readers agree on the compared fields of this record._
+<details><summary>6 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[apparent total clearance]` |  | 734 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution volume]` | 2370 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dose]` | 40 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated apparent total clearance]` | 734 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[therapeutic dose]` |  | 40 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -97,13 +110,15 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Freiwald_2014:abstract'] |
-| C7_apparent_coherence | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Freiwald_2014:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Freiwald_2014:abstract'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 734 | ['Freiwald_2014:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 44 L/h | ['Freiwald_2014:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 44 L/h | ['Freiwald_2014:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 2.37e+03 L | ['Freiwald_2014:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -137,4 +152,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bafatinib%5D%20Afatinib_Freiwald2014_reference&body=Drug%3A%20afatinib%0ARecord%3A%20Afatinib_Freiwald2014_reference%0APaper%3A%20Freiwald_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_afatinib/Afatinib_Freiwald2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 21:07 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 17:15 UTC</sub>

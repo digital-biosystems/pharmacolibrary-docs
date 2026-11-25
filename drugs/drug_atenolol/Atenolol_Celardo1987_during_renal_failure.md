@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> The record was rejected because total and blood clearances for atenolol (0.086 and 0.095 L/h) are implausibly low, indicating a likely extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Celardo1987_during_renal_failure" status="rejected" stale="false" population="rabbits on continuous peritoneal dialysis" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
 
@@ -63,13 +63,13 @@ Celardo A, Traina GL, Arboix M, Puigdemont A, Bonati M. Pharmacokinetic and phar
 
 ### Reviewer guidance
 
-**The record was rejected because total and blood clearances for atenolol (0.086 and 0.095 L/h) are implausibly low, indicating a likely extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The clearance values fall outside physiological windows for rabbits, suggesting a unit or scale error, compounded by a missing conversion entry that left parameters without standardized SI values. A second reader also disagreed with the extraction of several parameters, finding the reported blood clearance to be 0.54 L/h rather than 0.095 L/h. Furthermore, the second reader could not independently verify the AUC, elimination rate constant, and various transfer rate constants, noting their values as null. Extracted — atenolol: λ1 3.98, λ2 0.039, t1/2α 0.21 h, t1/2β 18.1 h, V 0.36 L, Vss 2.03 L, CL 0.086 L/h, AUC 39.4 mg·h/L, … (+8).
+A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — atenolol: λ1 3.98, λ2 0.039, t1/2α 0.21 h, t1/2β 18.1 h, V 0.36 L, Vss 2.03 L, CL 0.086 L/h, AUC 39.4 mg·h/L, … (+8).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc d: this record has 39.41, the second reading none; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

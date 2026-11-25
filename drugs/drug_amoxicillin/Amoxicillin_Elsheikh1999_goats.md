@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> The total clearance unit min kg is dimensionally incorrect, and the intercompartmental clearance unit L/h/70 kg lacks a standard pharmacokinetic equivalent.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit µg/ml ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q22 unit min kg ([mass] * [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Elsheikh1999_goats" status="rejected" stale="false" population="Desert sheep and Nubian goats" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -69,13 +69,13 @@ Elsheikh HA, Taha AA, Khalafalla AE, Osman IA, Wasfi IA. Pharmacokinetics of amo
 
 ### Reviewer guidance
 
-**The total clearance unit min kg is dimensionally incorrect, and the intercompartmental clearance unit L/h/70 kg lacks a standard pharmacokinetic equivalent.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit µg/ml ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q22 unit min kg ([mass] * [time]) vs [length] ** 3 / [time].**
 
-The record lists the total clearance unit as min kg, which represents mass times time rather than volume over time, making it dimensionally invalid for clearance. Additionally, the intercompartmental clearance unit L/h/70 kg is a non-standard allometric scaling format that cannot be directly interpreted as a standard volume flow rate. These unit errors prevented valid dimensional validation of the model parameters. A second reader also disputed the identification of the administered compound as amoxicillin rather than amoxicillin trihydrate. Extracted — amoxicillin trihydrate: C0 14.7 µg/ml, t1/2z 6.43 min, t1/2β 61.2 min, λ1 0.104 min⁻¹, λ2 0.0118 min⁻¹, AUC 1.83e+03 µg min/ml, V1 0.15 L/kg, V2 0.44 L/kg, … (+7); amoxicillin: Q 3.26 L/h/70 kg, kabs 0.17 h−1, tlag 0.125 h.
+A reported unit could not be converted (equation variable, C0 and CL), so that value has no SI equivalent. Extracted — amoxicillin trihydrate: C0 14.7 µg/ml, t1/2z 6.43 min, t1/2β 61.2 min, λ1 0.104 min⁻¹, λ2 0.0118 min⁻¹, AUC 1.83e+03 µg min/ml, V1 0.15 L/kg, V2 0.44 L/kg, … (+7); amoxicillin: Q 3.26 L/h/70 kg, kabs 0.17 h−1, tlag 0.125 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amoxicillin trihydrate, the second reading amoxicillin; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -32,10 +32,6 @@ Protamine is a protein class classified as an antidote. It is given intravenousl
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Lanoiselée_2026_ACT](drugs/drug_protamine/pd_Lanoisel_e_2026_ACT.md) | activated clotting time ← unfractionated heparin (anti-Xa activity) · direct sigmoid Emax (Hill) effect | — | Lanoiselée J et al., Optimising protamine dosing for heparin…, British journal of anaesthe… (2026) | [10.1016/j.bja.2025.11.057](https://doi.org/10.1016/j.bja.2025.11.057) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Moreira-Ludewig_1992_lysozyme_release](drugs/drug_protamine/pd_Moreira_Ludewig_1992_lysozyme_release.md) | lysozyme release from human neutrophils (rhC5a-induced) ← protamine · direct sigmoid Emax (Hill) effect | — | Moreira-Ludewig R et al., A rapid microtiter plate method for the…, Journal of pharmacological… (1992) | [10.1016/1056-8719(92)90027-x](https://doi.org/10.1016/1056-8719(92)90027-x) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Orescanin-Dusić_2009_calcium_induced_rhythmic_contractions_of_isolated_rat_uterus_relaxation](drugs/drug_protamine/pd_Orescanin_Dusi_2009_calcium_induced_rhythmic_contractions_of.md) | calcium-induced rhythmic contractions of isolated rat uterus (relaxation) ← protamine sulphate · direct Emax (saturable) effect | — | Orescanin-Dusić Z et al., Effects of protamine sulphate on sponta…, General physiology and biop… (2009) | — |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Orescanin-Dusić_2009_spontaneous_rhythmic_contractions_of_isolated_rat_uterus_relaxation](drugs/drug_protamine/pd_Orescanin_Dusi_2009_spontaneous_rhythmic_contractions_of_iso.md) | spontaneous rhythmic contractions of isolated rat uterus (relaxation) ← protamine sulphate · direct Emax (saturable) effect | — | Orescanin-Dusić Z et al., Effects of protamine sulphate on sponta…, General physiology and biop… (2009) | — |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Rüdiger_1999_Ca2_i](drugs/drug_protamine/pd_R_diger_1999_Ca2_i.md) | cytosolic calcium activity ([Ca2+]i) in podocytes ← protamine sulfate · direct Emax (saturable) effect | — | Rüdiger F et al., Polycations induce calcium signaling in…, Kidney international (1999) | [10.1046/j.1523-1755.1999.00729.x](https://doi.org/10.1046/j.1523-1755.1999.00729.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +45,7 @@ Protamine is a protein class classified as an antidote. It is given intravenousl
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:29 | 4:15 | 1/1/0 | 2/3/0 | 0/0/0 | 175,099/9,696 | ollama / glm-5.3-flash | 5 | 5/0 | 5/0 | 0 |
+| 2026-11-24 03:12 | 0:04 | 1/1/0 | 1/0/0 | 0/0/0 | 3,981/175 | einfracz / qwen3.8-27b | 5 | 5/0 | 5/0 | 0 |
 
 ## Coverage
 
@@ -58,39 +54,42 @@ Protamine is a protein class classified as an antidote. It is given intravenousl
 - **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Butterworth_2002.pdf` | Butterworth J et al., The pharmacokinetics and cardiovascular…, Anesthesia and analgesia (2002) | popPK | 10 | [10.1097/00000539-200203000-00008](https://doi.org/10.1097/00000539-200203000-00008) | [11867368](https://pubmed.ncbi.nlm.nih.gov/11867368) | Human volunteer PK study of protamine with numeric Vss, CL, and t1/2 reported directly in the abstract. |
-
-<sub>queue written 2026-10-07 19:25 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Al-Sallami_2016 | irrelevant | 0 | 0 | The subject drug is heparin; protamine appears only as a titration assay reagent, not as a drug with PK parameters. |
-| popPK | Bellvé_1992 | irrelevant | 0 | 0 | This is a cell biology study of sperm nuclear protamines, not a pharmacokinetic study of the drug protamine. |
-| popPK | Chang_2025 | irrelevant | 0 | 0 | The subject drug is insulin (NPH insulin merely contains protamine as a complexing excipient); no protamine PK parameters are reported. |
+| popPK | Al-Sallami_2016 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of unfractionated heparin, using a protamine titration assay only as a quantification method for heparin, not as the subject drug. |
+| PGx | Al-Sallami_2016 | not_relevant | 0 | 0 | The study develops a PKPD model for unfractionated heparin and uses protamine only as part of the quantification assay; it does not report pharmacogenomic effects on protamine's PK/PD. |
+| popPK | Bellvé_1992 | irrelevant | 0 | 0 | The study is a structural/molecular biology investigation of the mouse sperm nucleus involving the displacement of protamines from DNA, not a pharmacokinetic study of protamine as a drug. |
+| PGx | Bellvé_1992 | not_relevant | 0 | 0 | The paper focuses on the physical structure of mouse sperm and the displacement of protamines by chemicals, not on human pharmacokinetics, pharmacodynamics, or gene-variant effects on drug response. |
+| PGx | Butterworth_2002 | not_relevant | 0 | 0 | The study reports general pharmacokinetics in normal volunteers and a sex-based difference, but does not investigate genetic variants, genotypes, or pharmacogenomic effects. |
+| popPK | Chang_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of insulin analogs, not protamine, and reports parameters for insulin (Smax, SC50), not for protamine. |
+| PGx | Chang_2025 | not_relevant | 0 | 0 | The study compares insulin analogs, not protamine, and reports no pharmacogenomic effects. |
 | popPK | Jia_2015 | irrelevant | 0 | 0 | This is a population PK study of unfractionated heparin; protamine is only the neutralizing co-agent, with no protamine disposition parameters reported. |
-| popPK | Kulesh_2022 | irrelevant | 0 | 0 | The subject drug is insulin aspart; protamine appears only as a formulation component of the insulin suspension, with no protamine disposition parameters reported. |
+| popPK | Kulesh_2022 | irrelevant | 0 | 0 | The study models the pharmacokinetics of insulin aspart, where protamine is only part of the formulation (insulin aspart protamine), not the subject drug. |
+| PGx | Kulesh_2022 | not_relevant | 0 | 0 | The paper models the pharmacokinetics of insulin aspart and biphasic insulin aspart 30/70, not protamine, and does not report any pharmacogenomic effects. |
 | popPK | Miles_2021 | irrelevant | 2 | 1 | This is a clinical trial of protamine dosing guided by a heparin PK model; no protamine disposition parameters (CL, V, half-life) for protamine itself are reported. |
-| popPK | Moreira-Ludewig_1992 | irrelevant | 0 | 0 | Protamine is only used as an in-vitro inhibitor of C5a-induced lysozyme release; no PK disposition parameters are reported. |
-| popPK | Morris_2007 | irrelevant | 2 | 0 | This is a perfusion simulator paper; protamine is only one of many simulated drugs with a three-compartment model, and no numeric PK parameter values are provided. |
-| popPK | Orescanin-Dusić_2009 | irrelevant | 0 | 0 | In-vitro pharmacodynamic study of protamine on rat uterine contractions; no PK disposition parameters reported. |
+| popPK | Moreira-Ludewig_1992 | irrelevant | 0 | 0 | Protamine is used only as a C5a receptor antagonist/inhibitor in an in-vitro assay for lysozyme release, not as a subject drug for PK analysis. |
+| PGx | Moreira-Ludewig_1992 | not_relevant | 0 | 0 | The paper reports an assay method and pharmacodynamic data for protamine as a C5a inhibitor, but contains no pharmacogenomic analysis of genetic variants. |
+| popPK | Morris_2007 | irrelevant | 0 | 0 | The paper describes a simulation system for training and mentions protamine is included with a 3-compartment model, but no quantitative PK parameter values (CL, V, etc.) for protamine are reported in the evidence. |
+| PGx | Morris_2007 | not_relevant | 0 | 0 | The paper describes a simulation system for cardiopulmonary bypass training and does not report any pharmacogenomic effects on protamine pharmacokinetics or pharmacodynamics. |
+| popPK | Orescanin-Dusić_2009 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic mechanism of action (uterine relaxation) of protamine in an in vitro rat model, not its pharmacokinetic parameters. |
+| PGx | Orescanin-Dusić_2009 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of protamine on rat uterine smooth muscle (pharmacodynamics) but does not involve any gene variants or genotypes. |
 | popPK | Raner_2024 | irrelevant | 1 | 0 | This is a meta-analysis of heparin/protamine dosing strategies for CPB outcomes; no protamine PK parameters (CL, V, half-life, compartmental model) are reported, only dose ratios and clinical outcomes. |
-| popPK | Rüdiger_1999 | irrelevant | 0 | 0 | In vitro mechanistic study of calcium signaling in cultured podocytes; no PK disposition parameters for protamine. |
-| popPK | Saville_1993 | irrelevant | 0 | 0 | In-vitro biochemical study of insulin receptor phosphorylation; protamine is only a reagent, with no PK parameters. |
-| popPK | Tallant_1984 | irrelevant | 0 | 0 | This is an in-vitro enzyme biochemistry study where protamine is merely a substrate, with no pharmacokinetic parameters. |
-| popPK | Tham_2017 | irrelevant | 0 | 0 | This is a population PK study of insulin formulations; protamine appears only as a formulation excipient (NPH, lispro protamine suspension), not as the subject drug with its own disposition parameters. |
-| popPK | Vespe_2024 | irrelevant | 0 | 0 | Clinical dosing/outcomes study of protamine in cardiac surgery with no PK disposition parameters (CL, V, half-life, or model) reported. |
+| popPK | Rüdiger_1999 | irrelevant | 0 | 0 | The study investigates the mechanism of protamine-induced calcium signaling in podocytes (in vitro/toxicology) and does not report any pharmacokinetic parameters. |
+| PGx | Rüdiger_1999 | not_relevant | 0 | 0 | The study investigates the cellular mechanism of action of protamine on podocytes (calcium signaling) but does not report any pharmacogenomic effects (gene variants) on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Saville_1993 | irrelevant | 0 | 0 | The study focuses on the mechanism of tyrosyl phosphorylation of calmodulin by the insulin receptor, using protamine only as a polybasic reagent to facilitate aggregation, not for pharmacokinetic evaluation. |
+| PGx | Saville_1993 | not_relevant | 0 | 0 | The paper discusses protamine sulphate as a polybasic compound in a biochemical assay and does not report any pharmacogenomic effects on its pharmacokinetics or pharmacodynamics. |
+| popPK | Tallant_1984 | irrelevant | 0 | 0 | The paper characterizes a bovine brain enzyme and lists protamine only as a dephosphorylation substrate, not as a drug subject to pharmacokinetic analysis. |
+| PGx | Tallant_1984 | not_relevant | 0 | 0 | The paper characterizes a bovine brain enzyme where protamine is used as a substrate; it does not study pharmacogenomics of protamine as a drug in humans. |
+| popPK | Tham_2017 | irrelevant | 0 | 0 | The study models the pharmacokinetics of insulin formulations (including those containing protamine as a stabilizer, such as NPH or lispro protamine suspensions), not protamine itself as the subject drug. |
+| PGx | Tham_2017 | not_relevant | 0 | 0 | The paper focuses on insulin pharmacokinetics and mentions protamine only as part of insulin formulation names (NPH, lispro mix), with no analysis of protamine's PK/PD or any genetic variants. |
+| popPK | Vespe_2024 | irrelevant | 0 | 0 | The study is a clinical quality improvement investigation regarding protamine dosing accuracy and bleeding outcomes, containing no pharmacokinetic modeling or quantitative disposition parameters (CL, V, t1/2) for protamine. |
+| PGx | Vespe_2024 | not_relevant | 0 | 0 | The paper discusses protamine dosing strategies and clinical outcomes (bleeding) but contains no information regarding gene variants, genotypes, or pharmacogenomic effects on protamine pharmacokinetics or pharmacodynamics. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprotamine%5D&body=Drug%3A%20protamine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_protamine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 19:26 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 03:11 UTC</sub>

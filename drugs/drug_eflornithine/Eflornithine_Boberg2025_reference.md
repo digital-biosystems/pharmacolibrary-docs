@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The second reader disputed the eflornithine record, disagreeing on parameter values including 55.0 L and 66.3 L.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="eflornithine" model-id="Eflornithine_Boberg2025_reference" status="needs_review" stale="false" population="adults with human African trypanosomiasis" measured-compound="eflornithine" parameterization="apparent" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Boberg M, Na-Bangchang K, Ashton M, Jansson-Löfmark R. Pharmacokinetics of Race
 
 ### Reviewer guidance
 
-**The second reader disputed the eflornithine record, disagreeing on parameter values including 55.0 L and 66.3 L.**
+**cross_check_disputed; x1_cross_check.**
 
-The review was held back because a second reader disagreed with the extracted model parameters, resulting in zero reader agreement. Discrepancies included this record having null values where the second reader identified 0.154 and 30.3. The record listed 55.0 L and 66.3 L, while the second reader identified different numeric values for related parameters. Extracted — eflornithine: CL/F 17.2 L/h, V1/F 55 L, V2/F 66.3 L, Q/F 8.01 L/h, kabs 1.16 h -1, tlag 0.447 h.
+Extracted — eflornithine: CL/F 17.2 L/h, V1/F 55 L, V2/F 66.3 L, Q/F 8.01 L/h, kabs 1.16 h -1, tlag 0.447 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 0.154; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.471, 0 of 1 reader(s) agree | 0.471 | cross-check disputed by a second reader: verdict disputed, agreement 0.471, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.529 (9 of 17 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.529 | cross-check contradicted by a second reader: verdict disputed; agreement 0.529 (9 of 17 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

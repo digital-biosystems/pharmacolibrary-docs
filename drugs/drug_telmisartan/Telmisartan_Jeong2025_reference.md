@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The dose-normalized AUC∞ parameter carries a concentration unit instead of a rate, creating a dimensional mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q174 unit ng/mL/mg (1 / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Jeong2025_reference" status="rejected" stale="false" population="healthy subjects and hypertensive patients" measured-compound="telmisartan" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Jeong IH, Ryu S, Han N, Staatz CE, Baek IH. Population Pharmacokinetics of Telmi
 
 ### Reviewer guidance
 
-**The dose-normalized AUC∞ parameter carries a concentration unit instead of a rate, creating a dimensional mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q174 unit ng/mL/mg (1 / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The record lists AUC∞ with a value of 40.26 ng/mL/mg, where the unit represents concentration rather than the required rate of change. This conflict prevents standardization to SI units, leaving the parameter without a valid numerical value for the model. Consequently, the structural dimension check failed, causing the record to be rejected. Extracted — telmisartan: Cmax/dose 4 ng/mL/mg, AUCt 30.4 ng•h/mL/mg, AUC/dose 40.3 ng•h/mL/mg, t1/2z 20.9 h, CL/F 552 mL/min, V/F 1.33e+03 L, kabs 4.53 /h, tlag 0.25 h.
+A reported unit could not be converted (Cmax/dose, AUCt and AUC/dose), so that value has no SI equivalent. Extracted — telmisartan: Cmax/dose 4 ng/mL/mg, AUCt 30.4 ng•h/mL/mg, AUC/dose 40.3 ng•h/mL/mg, t1/2z 20.9 h, CL/F 552 mL/min, V/F 1.33e+03 L, kabs 4.53 /h, tlag 0.25 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[dose-normalized auc inf].parameter_id`: this record has Q189, the second reading Q17; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

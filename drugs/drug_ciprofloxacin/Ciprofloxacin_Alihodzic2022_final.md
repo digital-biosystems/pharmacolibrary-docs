@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability for ciprofloxacin was not estimated from the paper, so a library placeholder value was used instead.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Alihodzic2022_final" status="needs_review" stale="false" population="adults undergoing ECMO" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Alihodzic D, Wicha SG, Frey OR, König C, Baehr M, Jarczak D et al. Ciprofloxaci
 
 ### Reviewer guidance
 
-**Bioavailability for ciprofloxacin was not estimated from the paper, so a library placeholder value was used instead.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists explicit values for clearance (12.9 L/h) and absorption, but lacks an estimate for bioavailability. Consequently, the model was held back because this parameter relied on library placeholders rather than data from Alihodzic_2022. This means the simulated profile includes assumptions not supported by the specific paper. Extracted — ciprofloxacin: CL 12.9 L/h, V1 73.4 L, Q 38.8 L/h, V2 87.6 L, kabs 1 h−1, tlag 0.33 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ciprofloxacin: CL 12.9 L/h, V1 73.4 L, Q 38.8 L/h, V2 87.6 L, kabs 1 h−1, tlag 0.33 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

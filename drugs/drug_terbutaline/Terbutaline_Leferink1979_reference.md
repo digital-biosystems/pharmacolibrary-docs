@@ -9,14 +9,14 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="terbutaline" model-id="Terbutaline_Leferink1979_reference" status="rejected" stale="false" population="patients receiving subcutaneous terbutaline" measured-compound="terbutaline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="terbutaline" model-id="Terbutaline_Leferink1979_reference" status="rejected" stale="false" population="patients" measured-compound="terbutaline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Leferink JG, Lamont H, Wagemaker-Engels I, Maes RA, Pouwels R, van der Straeten M. Pharmacokinetics of terbutaline after subcutaneous administration. International journal of clinical pharmacology and biopharmacy 17(4):181–185 (1979).
 
 ## Population and dosing
 
-**Population:** patients receiving subcutaneous terbutaline · age group adult · n = 14.
+**Population:** patients · age group adult.
 
 ## Model
 
@@ -32,7 +32,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +46,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has terbutaline, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -54,28 +54,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=terbutaline
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available; abstract in Leferink_1979_metadata.yaml carries no parameter-bearing sentence
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 
-<details><summary>2 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | terbutaline | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | terbutaline | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -113,4 +105,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bterbutaline%5D%20Terbutaline_Leferink1979_reference&body=Drug%3A%20terbutaline%0ARecord%3A%20Terbutaline_Leferink1979_reference%0APaper%3A%20Leferink_1979%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_terbutaline/Terbutaline_Leferink1979_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 14:49 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:38 UTC</sub>

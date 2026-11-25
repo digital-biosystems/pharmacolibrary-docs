@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;lenvatinib&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/&quot;},{&quot;label&quot;:&quot;Tamai_2017 \u00b7 base&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lenvatinib_Tamai2017_base_base_model_population_mean_rse&quot;,&quot;label&quot;:&quot;Tamai_2017_base_base_model_population_mean_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/Lenvatinib_Tamai2017_base_base_model_population_mean_rse.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenvatinib_Tamai2017_final_final_model_population_mean_rse&quot;,&quot;label&quot;:&quot;Tamai_2017_final_final_model_population_mean_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/Lenvatinib_Tamai2017_final_final_model_population_mean_rse.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The lenvatinib record was rejected because the intercompartmental clearance parameter has a unit of L/h, conflicting with its defined first-order rate constant dimension.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Tamai2017_base" status="rejected" stale="false" population="healthy subjects and subjects with cancer, including HCC" measured-compound="lenvatinib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lenvatinib" model-id="Lenvatinib_Tamai2017_base" status="rejected" stale="false" population="pooled population of healthy adults, patients with mixed tumor types, and patients with hepatocellular carcinoma" measured-compound="lenvatinib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Tamai T, Hayato S, Hojo S, Suzuki T, Okusaka T, Ikeda K et al. Dose Finding of Lenvatinib in Subjects With Advanced Hepatocellular Carcinoma Based on Population Pharmacokinetic and Exposure-Response Analyses. Journal of clinical pharmacology 57(9):1138–1147 (2017).
@@ -16,30 +17,23 @@ Tamai T, Hayato S, Hojo S, Suzuki T, Okusaka T, Ikeda K et al. Dose Finding of L
 
 ## Population and dosing
 
-**Population:** healthy subjects and subjects with cancer, including HCC · condition healthy and cancer, including hepatocellular carcinoma · age group adult · n = 452.
-
-**Dosing:** 8, 16 mg/day, oral, multiple, every 24 h.
+**Population:** pooled population of healthy adults, patients with mixed tumor types, and patients with hepatocellular carcinoma · condition mixed (healthy, various cancers, hepatocellular carcinoma) · age group adult · n = 452.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F, Q/F, Q2/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted, plus 1 covariate effect.  
+**Parameterization:** mechanistic.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| Basal CL/F in L/h [ΘCL] | CL/F | 6.50 | L/h |
-| Ka (L/h) | kabs | 1.02 | L/h |
-| D1 (hours) | D1 | 1.05 | hours |
-| theta_q40_formulation_f1_capsule_vs_tablet | theta_q40_formulation_f1_capsule_vs_tablet | 0.832 |  |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,91 +43,37 @@ Tamai T, Hayato S, Hojo S, Suzuki T, Okusaka T, Ikeda K et al. Dose Finding of L
 
 ### Reviewer guidance
 
-**The lenvatinib record was rejected because the intercompartmental clearance parameter has a unit of L/h, conflicting with its defined first-order rate constant dimension.**
+**The paper reports none of the model's key parameters.**
 
-The parameter representing clearance between the central and second peripheral compartment is labeled with units of L/h. Its meaning, however, defines it as a rate constant requiring units of 1/time. This dimensional mismatch prevents the parameter from being converted to standard SI units. Extracted — lenvatinib: CL/F 6.5 L/h, kabs 1.02 L/h, D1 1.05 hours.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-Independently confirmed by `qwen3.8-27b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
-
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| Basal CL/F in L/h [ΘCL] | `Q27` · CL/F | 6.50 | L/h | 1.806e-06 | m3/s | l/h | llm_confirmed (0.6) | jcph917-tbl-0002:row3:col1, jcph917-tbl-0002:row3:col2 |
-| Ka (L/h) | `Q49` · kabs | 1.02 | L/h |  |  | l/h | exact (1) | jcph917-tbl-0002:row20:col1, jcph917-tbl-0002:row20:col2 |
-| D1 (hours) | `Q310` · D1 | 1.05 | hours | 3780 | s | h | exact (1) | jcph917-tbl-0002:row21:col1, jcph917-tbl-0002:row21:col2 |
-| theta_q40_formulation_f1_capsule_vs_tablet | `Q900` · theta_q40_formulation_f1_capsule_vs_tablet | 0.832 |  |  |  |  |  | jcph917-tbl-0002:row22:col1 |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
-
-### Unresolved rows _(no Q-code or no value — not parameters)_
-
-| label (paper) | Q-code | link |
-|---|---|---|
-| Q1/F [L/h] = ΘQ1 · (WGT/75) ΘWGT1 | Q69 | llm_confirmed |
-| Q2/F [L/h] = ΘQ2 · (WGT/75) ΘWGT1 | Q80 | llm_confirmed |
-| V1/F [L] = ΘV1 · (WGT/75) ΘWGT2 | Q290 | llm_confirmed |
-| V2/F [L] = ΘV2 · (WGT/75) ΘWGT2 | Q82 | llm_confirmed |
-| V3/F [L] = ΘV3 · (WGT/75) ΘWGT2 | Q78 | llm_confirmed |
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q69 ('Basal Q1/F in L/h [ΘQ1]', value '3.91') — already have one for this compound
-- dropped duplicate Q80 ('Basal Q2/F in L/h [ΘQ2]', value '0.724') — already have one for this compound
-- unit_dimension_mismatch: 'Basal V1/F in L [ΘV1]' → Q290 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q290 ('Basal V1/F in L [ΘV1]', value '45.6') — already have one for this compound
-- unit_dimension_mismatch: 'Basal V2/F in L [ΘV2]' → Q82 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q82 ('Basal V2/F in L [ΘV2]', value '31.4') — already have one for this compound
-- unit_dimension_mismatch: 'Basal V3/F in L [ΘV3]' → Q78 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q78 ('Basal V3/F in L [ΘV3]', value '33.6') — already have one for this compound
-- unit_dimension_mismatch: 'Ka (L/h)' → Q49 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
-- routed 'Proportional (%CV) (Clinical pharmacology studies)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- routed 'Proportional (%CV) (Patient studies)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- routed 'Proportional (%CV) (TAD ≤ 2 hours)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- dropped unlinked row (NIL): 'Additional (ng/mL) (TAD ≤ 2 hours)' — extend the ontology if this is a real PK parameter (source ['jcph917-tbl-0002:row26:col1'])
-- covariate effect for Q40 has no base parameter row (kept as unattached equation-variable)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=lenvatinib
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
-- status held at "Needs review" — not promoted
-- model-stage split: 'base model' is the base model of Tamai_2017 (paper reports 2 stages: base model, final model); same population, different model-building step
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- table section iiv: 'Basal CL/F in L/h [ΘCL]' routed out of structural estimates ('Base Model Interindividual Variability (%CV)')
+- table section iiv: 'Basal V1/F in L [ΘV1]' routed out of structural estimates ('Base Model Interindividual Variability (%CV)')
+- table section iiv: 'Basal V2/F in L [ΘV2]' routed out of structural estimates ('Base Model Interindividual Variability (%CV)')
+- table section iiv: 'Basal V3/F in L [ΘV3]' routed out of structural estimates ('Base Model Interindividual Variability (%CV)')
+- table section iiv: 'Ka (1/h)' routed out of structural estimates ('Base Model Interindividual Variability (%CV)')
+- table section iiv: 'D1 (hours)' routed out of structural estimates ('Base Model Interindividual Variability (%CV)')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lenvatinib
+- model-stage split: 'base model interindividual variability (%cv)' is the base model of Tamai_2017 (paper reports 4 stages: base model interindividual variability (%cv), base model population mean (%rse), final model interindividual variability (%cv), final model population mean (%rse)); same population, different model-building step
 
 **Extraction notes:**
-- unparsed cell jcph917-tbl-0002:row3:col5 = '6.42 (6.07‐6.76)'
-- unparsed cell jcph917-tbl-0002:row4:col5 = '0.711 (0.538‐0.886)'
-- unparsed cell jcph917-tbl-0002:row5:col5 = '1.30 (1.23‐1.38)'
-- unparsed cell jcph917-tbl-0002:row6:col5 = '0.921 (0.893‐0.951)'
-- unparsed cell jcph917-tbl-0002:row7:col5 = '1.19 (1.11‐1.27)'
-- unparsed cell jcph917-tbl-0002:row8:col5 = '0.855 (0.807‐0.910)'
-- unparsed cell jcph917-tbl-0002:row10:col5 = '3.99 (3.57‐4.49)'
-- unparsed cell jcph917-tbl-0002:row12:col5 = '0.738 (0.639‐0.845)'
-- unparsed cell jcph917-tbl-0002:row14:col5 = '46.8 (43.9‐49.8)'
-- unparsed cell jcph917-tbl-0002:row15:col5 = '1.08 (0.876‐1.28)'
-- unparsed cell jcph917-tbl-0002:row17:col5 = '31.1 (28.3‐33.7)'
-- unparsed cell jcph917-tbl-0002:row19:col5 = '34.7 (31.6‐37.7)'
-- unparsed cell jcph917-tbl-0002:row20:col5 = '1.04 (0.933‐1.13)'
-- unparsed cell jcph917-tbl-0002:row21:col5 = '1.06 (0.987‐1.14)'
-- unparsed cell jcph917-tbl-0002:row22:col5 = '0.867 (0.815‐0.908)'
-- unparsed cell jcph917-tbl-0002:row23:col5 = '17.1 (15.5‐18.8)'
-- unparsed cell jcph917-tbl-0002:row24:col5 = '30.1 (27.7‐32.2)'
-- unparsed cell jcph917-tbl-0002:row25:col5 = '44.8 (40.7‐48.8)'
-- unparsed cell jcph917-tbl-0002:row26:col5 = '7.50 (4.62‐9.85)'
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (13/13 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -146,22 +86,11 @@ _All readers agree on the compared fields of this record._
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['jcph917-tbl-0002:row3:col1', 'jcph917-tbl-0002:row3:col2'] |
-| C5_dimension_Q290 | pass | [length] ** 3 |  | ['jcph917-tbl-0002:row13:col1', 'jcph917-tbl-0002:row13:col2'] |
-| C5_dimension_Q310 | pass | [time] |  | ['jcph917-tbl-0002:row21:col1', 'jcph917-tbl-0002:row21:col2'] |
-| C5_dimension_Q49 | fail | 1 / [time] | L/h ([length] ** 3 / [time]) | ['jcph917-tbl-0002:row20:col1', 'jcph917-tbl-0002:row20:col2'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['jcph917-tbl-0002:row9:col1', 'jcph917-tbl-0002:row9:col2'] |
-| C5_dimension_Q78 | pass | [length] ** 3 |  | ['jcph917-tbl-0002:row18:col1', 'jcph917-tbl-0002:row18:col2'] |
-| C5_dimension_Q80 | pass | [length] ** 3 / [time] |  | ['jcph917-tbl-0002:row11:col1', 'jcph917-tbl-0002:row11:col2'] |
-| C5_dimension_Q82 | pass | [length] ** 3 |  | ['jcph917-tbl-0002:row16:col1', 'jcph917-tbl-0002:row16:col2'] |
-| C7_apparent_coherence | pass |  |  |  |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 6.5 L/h | ['jcph917-tbl-0002:row3:col1', 'jcph917-tbl-0002:row3:col2'] |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | fail | 0 |
+| C0b_disposition_core | fail |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -185,4 +114,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blenvatinib%5D%20Lenvatinib_Tamai2017_base&body=Drug%3A%20lenvatinib%0ARecord%3A%20Lenvatinib_Tamai2017_base%0APaper%3A%20Tamai_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lenvatinib/Lenvatinib_Tamai2017_base%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 02:38 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:06 UTC</sub>

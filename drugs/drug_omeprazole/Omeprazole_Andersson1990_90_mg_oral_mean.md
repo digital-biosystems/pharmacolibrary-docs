@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the absorption lag time parameter has a unit of hours, which is dimensionally incompatible with its structural role.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q36 unit h ([time]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Andersson1990_90_mg_oral_mean" status="rejected" stale="false" population="healthy adult males" measured-compound="omeprazole" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Andersson T, Cederberg C, Regårdh CG, Skånberg I. Pharmacokinetics of various 
 
 ### Reviewer guidance
 
-**The record was rejected because the absorption lag time parameter has a unit of hours, which is dimensionally incompatible with its structural role.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q36 unit h ([time]) vs [mass] / [length] ** 3.**
 
-The absorption lag time is recorded as 0.25 hours, but this parameter requires a dimensionless or time-based constant rather than a direct time measurement in this context. A second reader disagreed on the extraction of the minimum concentration and terminal half-life, identifying discrepancies in the reported values for those specific parameters. Extracted — omeprazole: tmax 0.58 h, Cmax 1.8 gmol/1, t1/2z 2.21 h, AUC 3.11 gmol x h/l, Cmin 0.25 h, CL 6.67 L/h, V 7.47 L, kabs 0.05 min À1, … (+1).
+A reported unit could not be converted (Cmax, AUC and Cmin), so that value has no SI equivalent. Extracted — omeprazole: tmax 0.58 h, Cmax 1.8 gmol/1, t1/2z 2.21 h, AUC 3.11 gmol x h/l, Cmin 0.25 h, CL 6.67 L/h, V 7.47 L, kabs 0.05 min À1, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of h tm-x: this record has 0.25, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

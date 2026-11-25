@@ -104,15 +104,29 @@ _All readers agree on the compared fields of this PD record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_warfarin/Warfarin_RodrguezFernndez2024_PD_inr/Warfarin_RodrguezFernndez2024_PD_inr_modelica.zip" download>Warfarin_RodrguezFernndez2024_PD_inr_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_warfarin/Warfarin_RodrguezFernndez2024_PD_inr/Warfarin_RodrguezFernndez2024_PD_inr_matlab.zip" download>Warfarin_RodrguezFernndez2024_PD_inr_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_warfarin/Warfarin_RodrguezFernndez2024_PD_inr/Warfarin_RodrguezFernndez2024_PD_inr_sbml.zip" download>Warfarin_RodrguezFernndez2024_PD_inr_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_warfarin/Warfarin_RodrguezFernndez2024_PD_inr/Warfarin_RodrguezFernndez2024_PD_inr_cellml.zip" download>Warfarin_RodrguezFernndez2024_PD_inr_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Warfarin_RodrguezFernndez2024_PD_inr`. <https://pharmacolibrary.github.io/#/drugs/drug_warfarin/pd_Rodr_guez_Fern_ndez_2024_INR>
+
+```bibtex
+@misc{pharmacolibrary_WarfarinRodrguezFernndez2024PDinr,
+  title  = {{Pharmacolibrary model Warfarin_RodrguezFernndez2024_PD_inr}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_warfarin/pd_Rodr_guez_Fern_ndez_2024_INR},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

@@ -33,8 +33,8 @@ Ipragliflozin is a sodium-glucose co-transporter 2 inhibitor used to treat type 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Demin_2014_SGLT2_inhibition_level](drugs/drug_ipragliflozin/pd_Demin_2014_SGLT2_inhibition_level.md) | Inhibition of glucose reabsorption mediated by SGLT2 ← ipragliflozin · direct sigmoid Emax (Hill) effect | — | Demin O et al., Analysis of the efficacy of SGLT2 inhib…, Frontiers in pharmacology (2014) | [10.3389/fphar.2014.00218](https://doi.org/10.3389/fphar.2014.00218) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Toyoshima_2020_renal_glucose_clearance](drugs/drug_ipragliflozin/pd_Toyoshima_2020_renal_glucose_clearance.md) | renal glucose clearance ← ipragliflozin · direct Emax (saturable) effect | — | Toyoshima J et al., Comparison of the Pharmacokinetic and P…, Clinical therapeutics (2020) | [10.1016/j.clinthera.2020.07.009](https://doi.org/10.1016/j.clinthera.2020.07.009) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Saito_2019_UGE24h](drugs/drug_ipragliflozin/pd_Saito_2019_UGE24h.md) | change from baseline in UGE for 24 hours biomarker turnover ← ipragliflozin | — | Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2019) | [10.1111/bcp.13972](https://doi.org/10.1111/bcp.13972) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Toyoshima_2020_renal_glucose_clearance](drugs/drug_ipragliflozin/pd_Toyoshima_2020_renal_glucose_clearance.md) | renal glucose clearance ← ipragliflozin · direct Emax (saturable) effect | — | Toyoshima J et al., Comparison of the Pharmacokinetic and P…, Clinical therapeutics (2020) | [10.1016/j.clinthera.2020.07.009](https://doi.org/10.1016/j.clinthera.2020.07.009) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

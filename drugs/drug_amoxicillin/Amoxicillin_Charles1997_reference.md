@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability (F) was left at library defaults, lacking explicit support from the amoxicillin study in very low birth weight infants.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Charles1997_reference" status="needs_review" stale="false" population="very low birth weight infants" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Charles BG, Preechagoon Y, Lee TC, Steer PA, Flenady VJ, Debuse N. Population ph
 
 ### Reviewer guidance
 
-**Bioavailability (F) was left at library defaults, lacking explicit support from the amoxicillin study in very low birth weight infants.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record defines clearance (0.061 L/h) and volume of distribution (0.678 L) but omits an estimate for bioavailability. Consequently, the model relies on placeholder values for F rather than data-derived parameters. This discrepancy prevents the record from being published until the bioavailability convention is explicitly justified or extracted. Extracted — amoxicillin: CL 0.061 L/h, V 0.678 L, kabs 0.17 h−1, tlag 0.125 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — amoxicillin: CL 0.061 L/h, V 0.678 L, kabs 0.17 h−1, tlag 0.125 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average population volume of distribution: this record has 0.678, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

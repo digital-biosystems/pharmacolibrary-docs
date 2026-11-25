@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> Artesunate record rejected because parameters for pyronaridine and dihydroartemisinin have physiologically impossible magnitudes and units.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Kang2024_reference" status="rejected" stale="false" population="hamsters, rats, and dogs (preclinical PK for allometric scaling)" measured-compound="artesunate" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -58,13 +58,13 @@ Kang DW, Kim JH, Kim KM, Cho SJ, Choi GW, Cho HY. Inter-Species Pharmacokinetic 
 
 ### Reviewer guidance
 
-**Artesunate record rejected because parameters for pyronaridine and dihydroartemisinin have physiologically impossible magnitudes and units.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-Clearance and volume parameters for dihydroartemisinin, such as 237.25 L/h/kg, fall outside physiological windows, suggesting scale extraction errors. The absorption rate constant of 1.54 1/h is attributed to pyronaridine, a molecule absent from the model structure. A second reader could not identify the primary analyte or the metabolism link from artesunate to dihydroartemisinin. Extracted — pyronaridine: kabs 1.54 1/h, V/F 33 L/kg, CL/F 13.3 L/h/kg, V2/F 481 L/kg, Q/F 82.7 L/h/kg; dihydroartemisinin: V 0.16 L/kg, CL 237 L/h/kg, kfm 1.04 1/h; artesunate: kel 35.2 artesunate.
+A reported unit could not be converted (kel), so that value has no SI equivalent. Extracted — pyronaridine: kabs 1.54 1/h, V/F 33 L/kg, CL/F 13.3 L/h/kg, V2/F 481 L/kg, Q/F 82.7 L/h/kg; dihydroartemisinin: V 0.16 L/kg, CL 237 L/h/kg, kfm 1.04 1/h; artesunate: kel 35.2 artesunate.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artesunate, the second reading unknown; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

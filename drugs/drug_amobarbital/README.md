@@ -14,19 +14,20 @@ Amobarbital is a barbiturate used to treat anxiety, insomnia, and certain types 
 
 <small>Summary written by `qwen3.8-27b` from [Wikidata Q415850](https://www.wikidata.org/wiki/Q415850), [Wikipedia](https://en.wikipedia.org/wiki/Amobarbital?oldid=1355771919) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
 
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| amobarbital | parent | 226.272 | C11H18N2O3 | DrugBank | [2164](https://pubchem.ncbi.nlm.nih.gov/compound/2164) | Endrenyi_1976 |
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Endrenyi_1976_reference](drugs/drug_amobarbital/Amobarbital_Endrenyi1976_reference.md) | — | 1-compartment (no model) | 3 | Endrenyi L et al., Genetic study of amobarbital eliminatio…, Clinical pharmacology and t… (1976) | [10.1002/cpt1976206701](https://doi.org/10.1002/cpt1976206701) |
 | <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Mandema_1991_reference](drugs/drug_amobarbital/Amobarbital_Mandema1991_reference.md) | — | 1-compartment (no model) | 0 | Mandema JW et al., Estimation of amobarbital plasma-effect…, Journal of pharmacokinetics… (1991) | [10.1007/BF01080870](https://doi.org/10.1007/BF01080870) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Mandema_1991_EEG](drugs/drug_amobarbital/pd_Mandema_1991_EEG.md) | EEG effect measure (amplitudes in the 2.5-30 Hz frequency band, aperiodic analysis) ← amobarbital · delayed effect through an effect compartment | — | Mandema JW et al., Estimation of amobarbital plasma-effect…, Journal of pharmacokinetics… (1991) | [10.1007/BF01080870](https://doi.org/10.1007/BF01080870) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Mathers_2007_IPSC_decay_time_constant](drugs/drug_amobarbital/pd_Mathers_2007_IPSC_decay_time_constant.md) | decay time constant of GABA(A)ergic IPSCs ← amobarbital · direct sigmoid Emax (Hill) effect | — | Mathers DA et al., Barbiturate activation and modulation o…, Neuropharmacology (2007) | [10.1016/j.neuropharm.2006.12.004](https://doi.org/10.1016/j.neuropharm.2006.12.004) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Veng-Pedersen_1991_effect_response_amobarbital_PD_effect](drugs/drug_amobarbital/pd_Veng_Pedersen_1991_effect_response_amobarbital_PD_effect.md) | effect response (amobarbital PD effect) ← amobarbital · delayed effect through transit (transduction) compartments | — | Veng-Pedersen P et al., A system approach to pharmacodynamics.…, Journal of pharmaceutical s… (1991) | [10.1002/jps.2600800518](https://doi.org/10.1002/jps.2600800518) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,46 +41,54 @@ Amobarbital is a barbiturate used to treat anxiety, insomnia, and certain types 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 19:41 | 1:01 | 0/1/0 | 3/0/0 | 0/0/0 | 21,544/2,244 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 18:54 | 0:04 | 1/1/0 | 0/0/0 | 0/0/0 | 3,769/172 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 13 matched, 13 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **screened:** 2  ·  **relevant:** 1
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_5 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Mandema_1991.pdf` | Mandema JW et al., Estimation of amobarbital plasma-effect…, Journal of pharmacokinetics… (1991) | popPK | 7 | [10.1007/BF01080870](https://doi.org/10.1007/BF01080870) | [1815044](https://pubmed.ncbi.nlm.nih.gov/1815044) | Rat PK/effect-site equilibration study with numeric equilibration parameters (t50, t95, conductance structure) present, though full disposition parameters (CL, V) are not given. |
-| `Verpooten_1982.pdf` | Verpooten GA et al., Prediction of the efficacy of hemoperfu…, Archives of toxicology. Sup… (1982) | popPK | 7 | [10.1007/978-3-642-68511-8_54](https://doi.org/10.1007/978-3-642-68511-8_54) | [6954915](https://pubmed.ncbi.nlm.nih.gov/6954915) | Amobarbital is a subject drug with a one-compartment PK model in intoxicated patients, but no numeric parameter values appear in the evidence (likely in tables/figures not provided). |
-| `Reilly_1978.pdf` | Reilly PA et al., Enzyme induction following a single dos…, Journal of pharmacokinetics… (1978) | popPK | 6 | [10.1007/BF01060094](https://doi.org/10.1007/BF01060094) | [702272](https://pubmed.ncbi.nlm.nih.gov/702272) | PK of amobarbital in dogs with kinetic characterization, but no numeric parameter values (half-lives, CL, V) appear in the evidence. |
 | `Veng-Pedersen_1991.pdf` | Veng-Pedersen P et al., A system approach to pharmacodynamics.…, Journal of pharmaceutical s… (1991) | pd | 4 | [10.1002/jps.2600800518](https://doi.org/10.1002/jps.2600800518) | [1880731](https://www.ncbi.nlm.nih.gov/pubmed/1880731) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Foster_1997.pdf` | Foster RH et al., Paroxetine : a review of its pharmacolo…, CNS drugs (1997) | pgx | 8 | [10.2165/00023210-199708020-00010](https://doi.org/10.2165/00023210-199708020-00010) | [23338224](https://www.ncbi.nlm.nih.gov/pubmed/23338224) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-10-06 19:41 UTC</sub>
+<sub>queue written 2026-11-23 18:54 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Brien_1975 | irrelevant | 4 | 1 | Amobarbital is used only as a probe compared with phenytoin; its half-life is referenced but no numeric amobarbital PK values are given. |
-| PGx | Foster_1997 | not_relevant | 0 | 0 | Paper is a review of paroxetine for panic disorder; no pharmacogenomic effect on amobarbital PK/PD reported. |
-| PGx | Lähdesmäki_1999 | not_relevant | 0 | 0 | Paper describes an oxygen-consumption sensing method using amobarbital only as a metabolic inhibitor; no gene variant or pharmacogenomic effect on PK/PD parameters is reported. |
-| popPK | Mathers_2007 | irrelevant | 0 | 0 | In-vitro electrophysiology study of barbiturate effects on GABA(A) receptors in rat brain slices; no pharmacokinetic disposition parameters reported. |
-| popPK | Reilly_1978 | relevant | 6 | 2 | PK of amobarbital in dogs with kinetic characterization, but no numeric parameter values (half-lives, CL, V) appear in the evidence. |
-| PGx | Toide_2004 | not_relevant | 2 | 3 | Correlation of amobarbital N-glucosyltransferase with AS-3201 activity across livers; no gene variant/genotype effect on amobarbital PK/PD reported. |
-| popPK | Veng-Pedersen_1991 | irrelevant | 2 | 1 | This is a pharmacodynamic modeling paper using amobarbital as an example; no numeric PK disposition parameters (CL, V, half-life) are reported in the evidence. |
-| popPK | Verpooten_1982 | relevant | 7 | 2 | Amobarbital is a subject drug with a one-compartment PK model in intoxicated patients, but no numeric parameter values appear in the evidence (likely in tables/figures not provided). |
-| popPK | Yost_1993 | irrelevant | 0 | 0 | In-vitro electrophysiology study of receptor inhibition; no pharmacokinetic parameters for amobarbital are reported. |
+| popPK | Brien_1975 | relevant | 6 | 0 | The study is a PK study of amobarbital in humans, but no quantitative amobarbital parameters (half-life, CL, V) are reported in the evidence; only DPH data and a qualitative correlation are given. |
+| PGx | Brien_1975 | not_relevant | 0 | 0 | The study analyzes pharmacokinetic parameters in a general population and correlates DPH and amobarbital half-lives, but reports no data on gene variants or genotypes affecting drug disposition. |
+| popPK | Foster_1997 | irrelevant | 0 | 0 | no_text gate: only 103 chars of text extracted (&lt; 400) |
+| PGx | Foster_1997 | not_relevant | 0 | 0 | The paper reviews Paroxetine, not amobarbital, and does not report pharmacogenomic effects on amobarbital PK/PD. |
+| popPK | Lähdesmäki_1999 | irrelevant | 0 | 0 | The paper describes a method for measuring oxygen consumption in cells and uses amobarbital only as a metabolic inhibitor to validate the sensor, reporting no pharmacokinetic parameters. |
+| PGx | Lähdesmäki_1999 | not_relevant | 0 | 0 | The paper describes a method for measuring oxygen consumption in cells and does not report pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters of amobarbital. |
+| popPK | Mandema_1991 | irrelevant | 4 | 2 | The study focuses on pharmacodynamic effect-site equilibration kinetics (conductance functions, hysteresis, EC50) rather than standard pharmacokinetic disposition parameters like clearance or volume of distribution, and specific kinetic rate constants are not explicitly provided in the text. |
+| PGx | Mandema_1991 | not_relevant | 0 | 0 | The study focuses on pharmacokinetic modeling of plasma-effect site equilibration in rats and contains no information regarding genetic variants or pharmacogenomics. |
+| popPK | Mathers_2007 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology study measuring receptor potency (EC50) in brain slices, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Mathers_2007 | not_relevant | 0 | 0 | The paper studies the electrophysiological effects of barbiturates on GABA(A) receptors in brain slices but does not report any pharmacogenomic (gene variant) influence on PK or PD parameters. |
+| popPK | Reilly_1978 | irrelevant | 1 | 0 | The study describes qualitative pharmacokinetic changes (enzyme induction/saturation) in dogs following a single dose of amobarbital, but does not report quantitative disposition parameters (CL, V, ka) for amobarbital itself. |
+| PGx | Reilly_1978 | not_relevant | 0 | 0 | The paper investigates dose-dependent enzyme induction in dogs, not the impact of a specific gene variant or genotype on pharmacokinetics. |
+| popPK | Toide_2004 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study characterizing UGT enzymes using AS-3201, mentioning amobarbital only as a correlate for enzymatic activity without reporting any quantitative PK parameters (CL, V, etc.) for amobarbital. |
+| PGx | Toide_2004 | not_relevant | 3 | 0 | The paper discusses the enzymes involved in amobarbital metabolism using a surrogate substrate (AS-3201) and reports correlations in liver microsomes, but it does not report pharmacogenomic effects (gene variants affecting PK/PD parameters) in humans. |
+| popPK | Veng-Pedersen_1991 | irrelevant | 0 | 0 | The paper is a pharmacodynamic modeling study (COLAPS algorithm) that uses amobarbital only as an illustrative example for PD modeling, without reporting quantitative pharmacokinetic parameters (CL, V, etc.) for amobarbital. |
+| PGx | Veng-Pedersen_1991 | not_relevant | 0 | 0 | The paper describes a pharmacodynamic modeling algorithm (COLAPS) and its application to amobarbital, but does not report any pharmacogenomic effects or gene-variant interactions. |
+| popPK | Verpooten_1982 | relevant | 8 | 0 | The paper explicitly states that amobarbital showed one-compartment kinetics in intoxicated patients, making it a relevant PK study, but the provided evidence contains no numeric parameter values (CL, V, etc.). |
+| PGx | Verpooten_1982 | not_relevant | 0 | 0 | The paper studies extracorporeal clearance in poisoning and does not investigate the influence of genetic variants on pharmacokinetics. |
+| popPK | Yost_1993 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiological investigation of receptor binding/inhibition, not a pharmacokinetic study, and contains no disposition parameters (CL, V, t1/2) for amobarbital. |
+| PGx | Yost_1993 | not_relevant | 0 | 0 | The study investigates the electrophysiological mechanism of action (binding site) on receptor mutants, not human pharmacogenomic effects on PK/PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamobarbital%5D&body=Drug%3A%20amobarbital%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amobarbital/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 19:41 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 18:54 UTC</sub>

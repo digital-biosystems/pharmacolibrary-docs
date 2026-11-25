@@ -111,7 +111,7 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dasatinib/Dasatinib_Ande2018_PD_cell_viability/Dasatinib_Ande2018_PD_cell_viability_modelica.zip" download>Dasatinib_Ande2018_PD_cell_viability_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dasatinib/Dasatinib_Ande2018_PD_cell_viability/Dasatinib_Ande2018_PD_cell_viability_modelica.zip" download>Dasatinib_Ande2018_PD_cell_viability_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dasatinib/Dasatinib_Ande2018_PD_cell_viability/Dasatinib_Ande2018_PD_cell_viability_fmi.zip" download>Dasatinib_Ande2018_PD_cell_viability_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dasatinib/Dasatinib_Ande2018_PD_cell_viability/Dasatinib_Ande2018_PD_cell_viability_matlab.zip" download>Dasatinib_Ande2018_PD_cell_viability_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>

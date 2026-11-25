@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Arpraziquantel’s CL/F of 677.59 liter/h is attributed to a paper measuring praziquantel racemate, so the record was rejected as the wrong drug.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="arpraziquantel" model-id="Arpraziquantel_Bustinduy2016_median" status="rejected" stale="false" population="Ugandan children with intestinal schistosomiasis" measured-compound="praziquantel racemate (R-PZQ plus S-PZQ)" parameterization="apparent" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Bustinduy AL, Waterhouse D, de Sousa-Figueiredo JC, Roberts SA, Atuhaire A, Van 
 
 ### Reviewer guidance
 
-**Arpraziquantel’s CL/F of 677.59 liter/h is attributed to a paper measuring praziquantel racemate, so the record was rejected as the wrong drug.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The paper concerns praziquantel in Ugandan children and measured praziquantel racemate, not arpraziquantel; the evidence cites CL/F of 608.02 liter/h and V/F of 473.97 liter. Only 4 of 6 parameters were covered: central-to-peripheral and peripheral-to-central transfer rates were absent, and the model builder marked the absorption lag time as defaulted despite the listed value of 1.67 h. A second reader identified the analyte as praziquantel rather than praziquantel racemate; the record reports agreement of 0.9 while 0 of 1 reader agreed. Extracted — arpraziquantel: kabs 9.88 h−1, CL/F 678 liter/h, V/F 504 liter, k12 22.3 h−1, k21 25.7 h−1, tlag 1.67 h.
+Extracted — arpraziquantel: kabs 9.88 h−1, CL/F 678 liter/h, V/F 504 liter, k12 22.3 h−1, k21 25.7 h−1, tlag 1.67 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has praziquantel racemate (R-PZQ plus S-PZQ), the second reading praziquantel. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,7 +152,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['k12', 'k21'] |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | cross-check disputed by a second reader: verdict disputed, agreement 0.9, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.9 (9 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.9 | cross-check contradicted by a second reader: verdict disputed; agreement 0.9 (9 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

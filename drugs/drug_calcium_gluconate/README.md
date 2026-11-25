@@ -23,7 +23,7 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Giuliano_2021_iCa](drugs/drug_calcium_gluconate/pd_Giuliano_2021_iCa.md) | Change in iCa level ← calcium_gluconate · direct linear effect | — | Giuliano CA et al., Dose-response of intravenous calcium in…, International journal of cl… (2021) | [10.1007/s11096-020-01145-7](https://doi.org/10.1007/s11096-020-01145-7) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">dog</span> | [Verine_1977_blood_total_Ca_increase_rate](drugs/drug_calcium_gluconate/pd_Verine_1977_blood_total_Ca_increase_rate.md) | blood total [Ca] increase rate ← calcium gluconate · direct linear effect | — | Verine HJ et al., Dose-time pattern of the hypercalcemic…, Biomedicine / [publiee pour… (1977) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">dog</span> | [Verine_1977_blood_total_Ca_increase_rate](drugs/drug_calcium_gluconate/pd_Verine_1977_blood_total_Ca_increase_rate.md) | blood total [Ca] increase rate ← calcium gluconate · direct linear effect | — | Verine HJ et al., Dose-time pattern of the hypercalcemic…, Biomedicine / [publiee pour… (1977) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

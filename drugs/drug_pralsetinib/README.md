@@ -22,11 +22,10 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Kassir_2024_PFS](drugs/drug_pralsetinib/pd_Kassir_2024_PFS.md) | PFS in patients with thyroid cancer ← pralsetinib · model not identified | — | Kassir N et al., Exposure-Response Relationships for Pra…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2409](https://doi.org/10.1002/jcph.2409) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Kassir_2024_PFS_2](drugs/drug_pralsetinib/pd_Kassir_2024_PFS_2.md) | PFS in patients with NSCLC ← pralsetinib · model not identified | — | Kassir N et al., Exposure-Response Relationships for Pra…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2409](https://doi.org/10.1002/jcph.2409) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Kassir_2024_grade_3_anemia](drugs/drug_pralsetinib/pd_Kassir_2024_grade_3_anemia.md) | grade ≥3 anemia ← pralsetinib · model not identified | — | Kassir N et al., Exposure-Response Relationships for Pra…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2409](https://doi.org/10.1002/jcph.2409) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Kassir_2024_grade_3_lymphopenia](drugs/drug_pralsetinib/pd_Kassir_2024_grade_3_lymphopenia.md) | grade ≥3 lymphopenia ← pralsetinib · model not identified | — | Kassir N et al., Exposure-Response Relationships for Pra…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2409](https://doi.org/10.1002/jcph.2409) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Kassir_2024_grade_3_pneumonia](drugs/drug_pralsetinib/pd_Kassir_2024_grade_3_pneumonia.md) | grade ≥3 pneumonia ← pralsetinib · model not identified | — | Kassir N et al., Exposure-Response Relationships for Pra…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2409](https://doi.org/10.1002/jcph.2409) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Kassir_2024_PFS](drugs/drug_pralsetinib/pd_Kassir_2024_PFS.md) | progression-free survival ← pralsetinib · time-to-event model | — | Kassir N et al., Exposure-Response Relationships for Pra…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2409](https://doi.org/10.1002/jcph.2409) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Kassir_2024_grade_3_anemia](drugs/drug_pralsetinib/pd_Kassir_2024_grade_3_anemia.md) | grade ≥3 anemia ← pralsetinib · categorical (graded) response model | — | Kassir N et al., Exposure-Response Relationships for Pra…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2409](https://doi.org/10.1002/jcph.2409) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Kassir_2024_grade_3_lymphopenia](drugs/drug_pralsetinib/pd_Kassir_2024_grade_3_lymphopenia.md) | grade ≥3 lymphopenia ← pralsetinib · categorical (graded) response model | — | Kassir N et al., Exposure-Response Relationships for Pra…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2409](https://doi.org/10.1002/jcph.2409) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Kassir_2024_grade_3_pneumonia](drugs/drug_pralsetinib/pd_Kassir_2024_grade_3_pneumonia.md) | grade ≥3 pneumonia ← pralsetinib · categorical (graded) response model | — | Kassir N et al., Exposure-Response Relationships for Pra…, Journal of clinical pharmac… (2024) | [10.1002/jcph.2409](https://doi.org/10.1002/jcph.2409) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,7 +39,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 05:29 | 0:29 | 0/0/0 | 0/5/0 | 0/0/0 | 22,534/2,484 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 03:02 | 0:20 | 0/0/0 | 4/0/0 | 0/0/0 | 6,222/2,347 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -54,7 +53,8 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Jade_2023 | irrelevant | 0 | 0 | This is a computational drug-screening study and reports no pralsetinib pharmacokinetic parameters. |
-| popPK | Kassir_2024 | irrelevant | 1 | 0 | This is a human exposure-response analysis and reports no quantitative pralsetinib disposition parameters in the provided evidence. |
+| popPK | Kassir_2024 | irrelevant | 0 | 0 | The paper describes exposure-response analyses for efficacy and safety, not the pharmacokinetic parameters (CL, V, ka, etc.) themselves. |
+| PGx | Kassir_2024 | not_relevant | 1 | 0 | The paper reports exposure-response relationships for dose, demographics, and ECOG score, but does not investigate the impact of genetic variants or genotypes on PK/PD parameters. |
 
 
 </details>

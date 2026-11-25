@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Finerenone’s model, with an absorption rate constant of 22.5 1/h, failed to reproduce reported peak timing, peak concentration, and terminal half-life, leaving the record under review.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 0.75, model 0.543); the model does not reproduce the paper's peak concentration (Cmax) (paper 9.62e-05, model 1.04e-05) (+3 more).
 
 <div class="pk-model-meta" hidden drug="finerenone" model-id="Finerenone_Heinig2023_reference" status="needs_review" stale="false" population="adults with CKD and T2D" measured-compound="finerenone" parameterization="apparent" topology="1C"></div>
 
@@ -66,13 +66,13 @@ Heinig R, Eissing T. The Pharmacokinetics of the Nonsteroidal Mineralocorticoid 
 
 ### Reviewer guidance
 
-**Finerenone’s model, with an absorption rate constant of 22.5 1/h, failed to reproduce reported peak timing, peak concentration, and terminal half-life, leaving the record under review.**
+**The model does not reproduce the paper's time of the peak (tmax) (paper 0.75, model 0.543); the model does not reproduce the paper's peak concentration (Cmax) (paper 9.62e-05, model 1.04e-05) (+3 more).**
 
-The model does not reproduce the paper's time of the peak (tmax) (paper 0.75, model 0.543). Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. The model does not reproduce the paper's peak concentration (Cmax) (paper 9.62e-05, model 1.04e-05). Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The model does not reproduce the paper's terminal half-life (paper 2.25, model 2.63). Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The covariate scenarios were not simulated; the base model was simulated, not the covariate effects the record defines, and a reported unit could not be converted to SI before reaching the model builder; the builder assumed F=1, Fm=1, and no molar correction, and the second reader disputed the verdict (agreement 0.594, 0 of 1 reader(s) agree). Extracted — finerenone: kabs 22.5 1/h, CL/F 29.9 L/h, V/F 113 L, Q/F 0.335 L/h, tlag 0.215 h, Frel 1.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (theta_v1_f_category), so that value has no SI equivalent. Extracted — finerenone: kabs 22.5 1/h, CL/F 29.9 L/h, V/F 113 L, Q/F 0.335 L/h, tlag 0.215 h, Frel 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has finerenone, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -192,38 +192,38 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.594, 0 of 1 reader(s) agree | 0.594 | cross-check disputed by a second reader: verdict disputed, agreement 0.594, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 9.62e-05 | 1.043e-05 | 0.1084 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.000118 | 1.043e-05 | 0.0884 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 9.99e-05 | 1.043e-05 | 0.1044 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 8.84e-05 | 1.043e-05 | 0.118 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.000163 | 1.043e-05 | 0.064 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00016 | 1.043e-05 | 0.0652 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.000149 | 1.043e-05 | 0.07 | µg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped |  | 1.043e-05 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.594 (19 of 32 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.594 | cross-check contradicted by a second reader: verdict disputed; agreement 0.594 (19 of 32 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 9.62e-05 | 1.043e-05 | 0.1084 | reported 96.2 µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.000118 | 1.043e-05 | 0.0884 | reported 118.0 µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 9.99e-05 | 1.043e-05 | 0.1044 | reported 99.9 µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 8.84e-05 | 1.043e-05 | 0.118 | reported 88.4 µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.000163 | 1.043e-05 | 0.064 | reported 163.0 µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00016 | 1.043e-05 | 0.0652 | reported 160.0 µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.000149 | 1.043e-05 | 0.07 | reported 149.0 µg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped |  | 1.043e-05 |  | the transcribed record carries no number for this value |
 | T1_cmax | reference | skipped | 88.2 | 1.043e-05 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 122 | 1.043e-05 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 15.7 | 1.043e-05 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_t_half_beta | reference | skipped |  | 2.629 |  | non-numeric value |
-| T1_t_half_terminal | reference | pass | 2.25 | 2.629 | 1.169 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.23 | 2.629 | 1.179 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.6 | 2.629 | 1.011 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.78 | 2.629 | 0.9458 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.59 | 2.629 | 1.015 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 3.18 | 2.629 | 0.8268 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.6 | 2.629 | 1.011 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.3 | 2.629 | 1.143 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.6 | 2.629 | 1.643 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.5 | 2.629 | 1.052 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.9 | 2.629 | 1.384 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 3.2 | 2.629 | 0.8216 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | skipped |  | 2.629 |  | non-numeric value |
-| T1_t_half_terminal | reference | skipped |  | 2.629 |  | non-numeric value |
-| T1_tmax | reference | fail | 0.75 | 0.5432 | 0.7243 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 0.5 | 0.5432 | 1.086 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.75 | 0.5432 | 0.7243 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.75 | 0.5432 | 0.7243 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 0.65 | 0.5432 | 0.8357 | h→SI vs simulated h |
+| T1_t_half_beta | reference | skipped |  | 2.629 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | pass | 2.25 | 2.629 | 1.169 | reported 2.25 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.23 | 2.629 | 1.179 | reported 2.23 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.6 | 2.629 | 1.011 | reported 2.6 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.78 | 2.629 | 0.9458 | reported 2.78 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.59 | 2.629 | 1.015 | reported 2.59 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 3.18 | 2.629 | 0.8268 | reported 3.18 h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 2.629 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | pass | 2.3 | 2.629 | 1.143 | reported 2.3 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.6 | 2.629 | 1.643 | reported 1.6 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.5 | 2.629 | 1.052 | reported 2.5 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.9 | 2.629 | 1.384 | reported 1.9 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 3.2 | 2.629 | 0.8216 | reported 3.2 h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 2.629 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | skipped |  | 2.629 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | fail | 0.75 | 0.5432 | 0.7243 | reported 0.75 h→SI vs simulated h |
+| T1_tmax | reference | pass | 0.5 | 0.5432 | 1.086 | reported 0.5 h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.75 | 0.5432 | 0.7243 | reported 0.75 h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.75 | 0.5432 | 0.7243 | reported 0.75 h→SI vs simulated h |
+| T1_tmax | reference | pass | 0.65 | 0.5432 | 0.8357 | reported 0.65 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The AUC/dose parameter for rutin is rejected because its unit h/L lacks a valid physical dimension for a pharmacokinetic quantity.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit h/L ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2021_rutin" status="rejected" stale="false" population="Wistar rats" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -51,7 +51,7 @@ Domínguez Moré GP, Cardona MI, Sepúlveda PM, Echeverry SM, Oliveira Simões C
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.067). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,11 +61,13 @@ Domínguez Moré GP, Cardona MI, Sepúlveda PM, Echeverry SM, Oliveira Simões C
 
 ### Reviewer guidance
 
-**The AUC/dose parameter for rutin is rejected because its unit h/L lacks a valid physical dimension for a pharmacokinetic quantity.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit h/L ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The recorded AUC/dose value of 10243.52 uses the unit h/L, which represents time per volume. A dose-normalized area under the curve requires dimensions including mass, such as mass·time/volume, so the recorded unit is physically inconsistent. Because this specific unit was not recognized as a valid pharmacokinetic measure, no standard SI value could be derived. Extracted — rutoside: AUC∞ 1.49e+04 ng*h/mL, Vss 0.11 L/kg, CL 0.1 L/h/kg, kel 1.08 h−1, t1/2z 0.66 h, MRT 1.08 h, Vnorm 0.096 L/kg, AUC/dose 1.02e+04 h/L, … (+5).
+A reported unit could not be converted (AUC∞, AUC/dose, Cmax and Frel), so that value has no SI equivalent. Extracted — rutoside: AUC∞ 1.49e+04 ng*h/mL, Vss 0.11 L/kg, CL 0.1 L/h/kg, kel 1.08 h−1, t1/2z 0.66 h, MRT 1.08 h, Vnorm 0.096 L/kg, AUC/dose 1.02e+04 h/L, … (+5).
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has rutin → quercetin (metabolism), the second reading rutin → quercetin (metabolism); quercetin-3-o-glucuronide → quercetin (interconversion); quercetin-3-o-sulfate → quercetin (interconversion); it also differs on 27 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -156,6 +158,54 @@ The recorded AUC/dose value of 10243.52 uses the unit h/L, which represents time
 - LLM selected parameter table(s) 2, 3, 4, 5
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.067 (2/30 fields) | 28 |
+
+<details><summary>28 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` | 1.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['rutin', 'quercetin', 'metabolism']] | [['rutin', 'quercetin', 'metabolism'], ['quercetin-3-o-glucuronide', 'quercetin', 'interconversion'], ['quercetin-3-o-sulfate', 'quercetin', 'interconversion']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[auc/dose× 10-3]` | 10243.52 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 14853.11 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` | 18.36 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 0.10 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 462.78 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f1_pop]` |  | 0.565 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[frel]` | 1.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12_pop]` |  | 5.24 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12_pop]` |  | 2.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k21_pop]` |  | 19.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k21_pop]` |  | 13.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k]` | 1.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k_pop]` |  | 1.61 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka1_pop]` |  | 0.104 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kpop]` |  | 1.47 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 1.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2]` | 0.66 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_kel_gext]` |  | 0.395 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag2_pop]` |  | 3.91 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax]` | 6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vdss]` | 0.11 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vdz/f]` | 86.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vdz]` | 0.096 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vgext]` |  | 0.478 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vpop]` |  | 0.0646 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

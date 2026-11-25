@@ -8,7 +8,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Mario19872_reference" status="rejected" stale="false" population="patients on oral bentazepam multiple-dose regimen" measured-compound="bentazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Mario19872_reference" status="rejected" stale="false" population="adult patients" measured-compound="bentazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Mariño EL, Fernandez Lastra C, Gonzalez Lopez F, Dominguez-Gil A, Garcia Santalla JL, Vorca G et al. Parametrization by non-linear regression and bayesian estimation of bentazepam in a multiple dosage regimen in humans. International journal of clinical pharmacology, therapy, and toxicology 25(11):627–632 (1987).
@@ -104,4 +104,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbentazepam%5D%20Bentazepam_Mario19872_reference&body=Drug%3A%20bentazepam%0ARecord%3A%20Bentazepam_Mario19872_reference%0APaper%3A%20Mari%C3%B1o_1987_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bentazepam/Bentazepam_Mario19872_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:18 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:23 UTC</sub>

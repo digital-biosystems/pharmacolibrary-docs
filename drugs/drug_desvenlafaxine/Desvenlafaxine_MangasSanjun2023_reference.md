@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time were left as library placeholders without paper support, causing the desvenlafaxine model review hold.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="desvenlafaxine" model-id="Desvenlafaxine_MangasSanjun2023_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="desvenlafaxine" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Mangas-Sanjuán V, Simón M, González-Rojano E, Ochoa D, Abad-Santos F, Román 
 
 ### Reviewer guidance
 
-**Bioavailability and lag time were left as library placeholders without paper support, causing the desvenlafaxine model review hold.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The model builder used default values for bioavailability and lag time instead of extracting estimates from the study. Although clearance and volume of distribution are reported, these unsupported absorption terms prevented publication. A second reader also disputed the classification of the plasma measurement parameter. Extracted — desvenlafaxine: kabs 21 h–1, ktr 31 h–1, CL 12 L/h, V 19 L, AUC%ext 8.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — desvenlafaxine: kabs 21 h–1, ktr 31 h–1, CL 12 L/h, V 19 L, AUC%ext 8.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[plasma].parameter_id`: this record has Q84, the second reading Q46. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -151,11 +151,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | cross-check disputed by a second reader: verdict disputed, agreement 0.9, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 0.00419 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.00419 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.9 (9 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.9 | cross-check contradicted by a second reader: verdict disputed; agreement 0.9 (9 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 0.00419 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.00419 |  | the transcribed record carries no number for this value |
 | T1_cmax | reference | skipped | 19.21 | 0.00419 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
-| T1_cmax | reference | skipped |  | 0.00419 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.00419 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

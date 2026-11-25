@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the total clearance unit, milliliters per minute, was incorrectly interpreted as volume rather than a volumetric flow rate.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml.min ([length] ** 3 * [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="ibritumomab tiuxetan" model-id="IbritumomabTiuxetan_Morschhauser2018_f2" status="rejected" stale="false" population="patients with follicular lymphoma" measured-compound="ibritumomab tiuxetan" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Morschhauser F, Dekyndt B, Baillet C, Barthélémy C, Malek E, Fulcrand J et al.
 
 ### Reviewer guidance
 
-**The record was rejected because the total clearance unit, milliliters per minute, was incorrectly interpreted as volume rather than a volumetric flow rate.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml.min ([length] ** 3 * [time]) vs [length] ** 3 / [time].**
 
-The parameter labeled 'Clearance' has a value of 1.03 with the unit 'ml.min', which physically implies a volume rather than a flow rate. A pharmacometric clearance must have dimensions of volume per time, so the recorded unit conflicts with the parameter's meaning. Additionally, two second readers provided tissue distribution values for blood and liver that are entirely missing from this single-compartment record. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, k12 0.033 min−1, k21 0.516 min−1, AUCt 262 µg.min.mL−1, … (+2).
+A reported unit could not be converted (Cmax, AUC and AUCt), so that value has no SI equivalent. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, k12 0.033 min−1, k21 0.516 min−1, AUCt 262 µg.min.mL−1, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of blood: this record has none, the second reading 4064.8; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

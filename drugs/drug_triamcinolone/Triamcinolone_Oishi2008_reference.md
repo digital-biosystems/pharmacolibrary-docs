@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record was rejected because triamcinolone acetonide clearance of 0.0001 mL/h/kg and volume of 0.0497 mL/kg have implausible magnitudes, suggesting unit/scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="triamcinolone" model-id="Triamcinolone_Oishi2008_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="triamcinolone acetonide" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Oishi M, Maeda S, Hashida N, Ohguro N, Tano Y, Kurokawa N. Pharmacokinetic behav
 
 ### Reviewer guidance
 
-**The record was rejected because triamcinolone acetonide clearance of 0.0001 mL/h/kg and volume of 0.0497 mL/kg have implausible magnitudes, suggesting unit/scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The abstract-only record uses summary statistics in place of a fitted model: it lists terminal elimination half-life of 6.08 days, clearance of 0.0001 mL/h/kg, and volume of distribution of 0.0497 mL/kg, all for triamcinolone acetonide. The clearance and volume were judged outside the physiological window, consistent with a unit/scale extraction error. A second reader did not identify the dose compound, primary analyte, or half-life, unlike this record. Extracted — triamcinolone: t1/2z 6.08 days, CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — triamcinolone: t1/2z 6.08 days, CL 0.0001 mL/h/kg, V 0.0497 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has triamcinolone acetonide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

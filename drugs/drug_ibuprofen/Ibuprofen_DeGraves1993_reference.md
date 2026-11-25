@@ -50,7 +50,7 @@ DeGraves FJ, Anderson KL, Aucoin DP. Pharmacokinetics of ibuprofen in lactating 
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 

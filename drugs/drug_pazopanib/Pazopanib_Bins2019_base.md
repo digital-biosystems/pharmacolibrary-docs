@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for pazopanib was held for review because a second reader disputed the verdict, citing a missing slow absorption rate constant.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Bins2019_base" status="needs_review" stale="false" population="cancer patients" measured-compound="pazopanib" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Bins S, Huitema ADR, Laven P, Bouazzaoui SE, Yu H, van Erp N et al. Impact of CY
 
 ### Reviewer guidance
 
-**The record for pazopanib was held for review because a second reader disputed the verdict, citing a missing slow absorption rate constant.**
+**cross_check_disputed; x1_cross_check.**
 
-A second reader disagreed with the extracted model parameters, identifying a slow absorption rate constant of 0.12 h⁻¹ that was missing from this record. Additionally, the reader noted a dose level parameter value of 478 mg, which was also absent from the initial extraction. These discrepancies regarding the absorption mechanism parameters resulted in a cross-check disagreement. Extracted — pazopanib: kabs 0.38 1/h, Fab 35, tlag 0.98 h, CL 0.27 L/h, V1 2.39 L, Q 0.99 L/h, V2 25.3 L, Frel 49.7, … (+1).
+Extracted — pazopanib: kabs 0.38 1/h, Fab 35, tlag 0.98 h, CL 0.27 L/h, V1 2.39 L, Q 0.99 L/h, V2 25.3 L, Frel 49.7, … (+1).
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of dose level with half of bioavailability at dose 200 mg: this record has none, the second reading 478; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -168,7 +168,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 7 scholar param(s) emitted or defaulted | 7 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.808, 0 of 1 reader(s) agree | 0.808 | cross-check disputed by a second reader: verdict disputed, agreement 0.808, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.808 (21 of 26 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.808 | cross-check contradicted by a second reader: verdict disputed; agreement 0.808 (21 of 26 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -184,7 +184,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pazopanib/Pazopanib_Bins2019_base/Pazopanib_Bins2019_base_modelica.zip" download>Pazopanib_Bins2019_base_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pazopanib/Pazopanib_Bins2019_base/Pazopanib_Bins2019_base_modelica.zip" download>Pazopanib_Bins2019_base_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pazopanib/Pazopanib_Bins2019_base/Pazopanib_Bins2019_base_fmi.zip" download>Pazopanib_Bins2019_base_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pazopanib/Pazopanib_Bins2019_base/Pazopanib_Bins2019_base_matlab.zip" download>Pazopanib_Bins2019_base_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pazopanib/Pazopanib_Bins2019_base/Pazopanib_Bins2019_base_matlab_simbio.zip" download>Pazopanib_Bins2019_base_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>

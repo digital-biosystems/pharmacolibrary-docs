@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Glibenclamide’s reported distribution volume of 51 L/h was rejected because its clearance-to-volume ratio was outside the physiological window.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="glibenclamide" model-id="Glibenclamide_Rambiritch2016v2_final" status="rejected" stale="false" population="South African adults with type 2 diabetes" measured-compound="glibenclamide" parameterization="mechanistic" topology="2C"></div>
 
@@ -40,7 +40,7 @@ Rambiritch V, Naidoo P, Maharaj B, Pillai G. Population pharmacokinetic modeling
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,13 @@ Rambiritch V, Naidoo P, Maharaj B, Pillai G. Population pharmacokinetic modeling
 
 ### Reviewer guidance
 
-**Glibenclamide’s reported distribution volume of 51 L/h was rejected because its clearance-to-volume ratio was outside the physiological window.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record gives glibenclamide’s volume of distribution as 51 L/h, although the parameter’s meaning is volume, indicating a unit or scale extraction error. The finding reports an out-of-window clearance-to-volume ratio but provides no ratio or physiological bounds. Extracted — glibenclamide: V 51 L/h, V2 11.7 L, CL 1.52 L/h, Q 3.84 L/h.
+Extracted — glibenclamide: V 51 L/h, V2 11.7 L, CL 1.52 L/h, Q 3.84 L/h.
 
-<sub>reviewed by gpt-6-luna</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average clearance for glibenclamide ... for the one-compartment model: this record has 1.52, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -100,6 +102,29 @@ The record gives glibenclamide’s volume of distribution as 51 L/h, although th
 - captured model equation Pj = TVP*exp(ηj)(1)where TVP is the typical value of the PK parameter Pv (eg, CL/f) in the population, Pj is the individual value for P in the jth individual, and ηj is a random variable with mean of zero and variance ωP2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.667 (6/9 fields) | 3 |
+
+<details><summary>3 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[average clearance for glibenclamide ... for the one-compartment model]` | 1.52 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 1.52 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution ± se of glibenclamide for the two-compartment model ... for the central and peripheral compartments, respectively]` | 11.7 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

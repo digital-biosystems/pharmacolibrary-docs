@@ -47,13 +47,13 @@ Rakhit A, Holford NH, Guentert TW, Maloney K, Riegelman S. Pharmacokinetics of q
 
 ### Reviewer guidance
 
-**Record for quinidine was held back because the simulation failed and the second reader could not verify any extracted parameters.**
+**The model was built but has not been simulated yet; t3_param_coverage (+1 more).**
 
-The model structure includes three metabolites linked to quinidine, but the parameter coverage check found that the elimination rate constant for quinidine was missing. The record was constructed from the abstract alone, so the reported summary statistics, such as clearance of 3.86 ml/min/kg, stand in for a fitted model. A second reader disagreed with all extracted parameter values, including bioavailability of 0.78 and the formation rate constant for 3-hydroxy quinidine. Extracted — quinidine: V 0.37 L/kg, CL 3.86 ml/min/kg, kfm 0.0012 min-1, kel 0.003 min-1, Fab 0.78.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — quinidine: V 0.37 L/kg, CL 3.86 ml/min/kg, kfm 0.0012 min-1, kel 0.003 min-1, Fab 0.78.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 0.78, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -141,7 +141,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check disputed by a second reader: verdict disputed, agreement 0.4, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

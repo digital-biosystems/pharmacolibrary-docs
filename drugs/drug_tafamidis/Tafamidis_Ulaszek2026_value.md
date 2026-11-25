@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The transthyretin binding target is structurally disconnected from the dose, leaving the tafamidis association and dissociation rates in an orphan compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="tafamidis" model-id="Tafamidis_Ulaszek2026_value" status="rejected" stale="false" population="virtual healthy male subjects aged 30-40 years" measured-compound="tafamidis" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -55,13 +55,13 @@ Ulaszek S, Lisowski B, Wiśniowska B, Polak S. Exploring Tafamidis Effects Throu
 
 ### Reviewer guidance
 
-**The transthyretin binding target is structurally disconnected from the dose, leaving the tafamidis association and dissociation rates in an orphan compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model links tafamidis to transthyretin but lacks a path from the dose to the target, making the binding compartment unreachable. Consequently, the association rate (kon = 360000) and dissociation rate (koff = 0.0024 1/h) are isolated from the administered drug. The second reader disagreed on the dose compound identity and questioned the existence of the binding link itself. Extracted — tafamidis: koff 0.0024 1/h, kon 3.6e+05, CL 0.12 l/h/kg, kabs 0.41 1/h.
+Extracted — tafamidis: koff 0.0024 1/h, kon 3.6e+05, CL 0.12 l/h/kg, kabs 0.41 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tafamidis meglumine, the second reading tafamidis; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

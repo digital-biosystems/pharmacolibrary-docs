@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Melphalan's desethyl-melflufen link is missing, and its apparent clearance's dimension mismatches its units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit % (dimensionless) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="melphalan flufenamide" model-id="MelphalanFlufenamide_Huledal2024_reference" status="rejected" stale="false" population="adults with relapsed refractory multiple myeloma" measured-compound="melphalan" parameterization="apparent" topology="general_linear"></div>
 
@@ -49,13 +49,13 @@ Huledal G, Ruiz-Garcia A, Kawakatsu S, Wang X, Sjöberg P, Gullbo J et al. Pharm
 
 ### Reviewer guidance
 
-**Melphalan's desethyl-melflufen link is missing, and its apparent clearance's dimension mismatches its units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit % (dimensionless) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record shows the desethyl-melflufen link from melphalan flufenamide with no parameter, so that metabolite has no path from the dose. The apparent metabolite clearance, CLm/F, is 13.4 L/min, yet the units' dimension conflicts with the parameter's mass-time-length dimension. Since the abstract alone was read, these summary statistics stand in for a fitted model. The second reader also found the 2.7 L Vss assigned to combined volumes instead of separate central and deep peripheral volumes. Extracted — melphalan flufenamide: t1/2α 1.24 minutes, t1/2β 26.7 minutes, CLm/F 13.4 L/min, Vss 2.7 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — melphalan flufenamide: t1/2α 1.24 minutes, t1/2β 26.7 minutes, CLm/F 13.4 L/min, Vss 2.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has melphalan_flufenamide, the second reading melphalan flufenamide; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

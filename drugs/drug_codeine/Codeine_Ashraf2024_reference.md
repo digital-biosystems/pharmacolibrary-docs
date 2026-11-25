@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because codeine-6-glucuronide is an unlinked metabolite with no metabolic rate parameter connecting it to codeine.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Ashraf2024_reference" status="rejected" stale="false" population="ambulatory surgical patients" measured-compound="codeine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -57,13 +57,13 @@ Ashraf MW, Poikola S, Neuvonen M, Kiiski JI, Kontinen VK, Olkkola KT et al. Popu
 
 ### Reviewer guidance
 
-**The record was rejected because codeine-6-glucuronide is an unlinked metabolite with no metabolic rate parameter connecting it to codeine.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The link from codeine to codeine-6-glucuronide has no associated metabolic fraction or rate parameter, rendering the metabolite compartment unreachable from the dose. Additionally, the second reader identified a bioavailability fraction of 0.84 and a residual variance of 0.149 for morphine that are missing from the primary extraction. Extracted — codeine: kabs 8.74 h-1, CL 110 L/h, V1 428 L, kout_peripheral 1 1/h; morphine: CL 358 L/h, V 22.8 L, fm 0.16; codeine-6-glucuronide: CL 7.96 L/h, V 5.36 L; morphine-3-glucuronide: CL 9.45 L/h, V 8.47 L.
+Extracted — codeine: kabs 8.74 h-1, CL 110 L/h, V1 428 L, kout_peripheral 1 1/h; morphine: CL 358 L/h, V 22.8 L, fm 0.16; codeine-6-glucuronide: CL 7.96 L/h, V 5.36 L; morphine-3-glucuronide: CL 9.45 L/h, V 8.47 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fcod: this record has none, the second reading 0.84; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

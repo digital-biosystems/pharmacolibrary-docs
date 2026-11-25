@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;dolutegravir&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/&quot;},{&quot;label&quot;:&quot;Kawuma_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolutegravir_Kengo2023_reference&quot;,&quot;label&quot;:&quot;Kengo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dolutegravir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolutegravir_Kengo2023_reference&quot;,&quot;label&quot;:&quot;Kengo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The peripheral compartment of the two-compartment dolutegravir model is orphaned because the inter-compartmental transfer parameter was not extracted.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Kawuma2021_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="dolutegravir" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Kawuma2021_reference" status="rejected" stale="false" population="healthy adults" measured-compound="dolutegravir" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Kawuma AN, Walimbwa SI, Pillai GC, Khoo S, Lamorde M, Wasmann RE et al. Dolutegravir pharmacokinetics during co-administration with either artemether/lumefantrine or artesunate/amodiaquine. The Journal of antimicrobial chemotherapy 76(5):1269–1272 (2021).
@@ -17,7 +17,7 @@ Kawuma AN, Walimbwa SI, Pillai GC, Khoo S, Lamorde M, Wasmann RE et al. Dolutegr
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = 26.
+**Population:** healthy adults · condition healthy · age group adult · n = 26.
 
 ## Model
 
@@ -49,13 +49,13 @@ Kawuma AN, Walimbwa SI, Pillai GC, Khoo S, Lamorde M, Wasmann RE et al. Dolutegr
 
 ### Reviewer guidance
 
-**The peripheral compartment of the two-compartment dolutegravir model is orphaned because the inter-compartmental transfer parameter was not extracted.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists central and peripheral volumes (13.2 L and 5.73 L) but omits the specific inter-compartmental clearance or rate constant required to link them. Because the source text was abstract-only, no fitted model parameters were available to provide this missing structural link. Consequently, the peripheral compartment remained unreachable from the dose, rendering the two-compartment structure invalid. Extracted — dolutegravir: CL 0.713 L/h, kabs 1.68 h-1, V1 13.2 L, V2 5.73 L, MAT 1.18 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dolutegravir: CL 0.713 L/h, kabs 1.68 h-1, V1 13.2 L, V2 5.73 L, MAT 1.18 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -75,14 +75,11 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'Co-administration of artemether/lumefantrine increased dolutegravir clearance by' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q22 ('Co-administration of artemether/lumefantrine increased dolutegravir clearance by', value 10.6) — already have one for this compound
-- unit_dimension_mismatch: 'Co-administration of artesunate/amodiaquine increased dolutegravir clearance by' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q22 ('Co-administration of artesunate/amodiaquine increased dolutegravir clearance by', value 26.4) — already have one for this compound
+- dropped unlinked row (NIL): 'Co-administration of artemether/lumefantrine' — extend the ontology if this is a real PK parameter (source ['Kawuma_2021:abstract'])
+- dropped unlinked row (NIL): 'Co-administration of artesunate/amodiaquine' — extend the ontology if this is a real PK parameter (source ['Kawuma_2021:abstract'])
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (clearance); Q63 (central volume); Q64 (peripheral volume)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dolutegravir
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Kawuma_2021_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
@@ -90,7 +87,7 @@ Independently confirmed by `gpt-oss-120b`.
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -144,4 +141,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdolutegravir%5D%20Dolutegravir_Kawuma2021_reference&body=Drug%3A%20dolutegravir%0ARecord%3A%20Dolutegravir_Kawuma2021_reference%0APaper%3A%20Kawuma_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dolutegravir/Dolutegravir_Kawuma2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:24 UTC</sub>

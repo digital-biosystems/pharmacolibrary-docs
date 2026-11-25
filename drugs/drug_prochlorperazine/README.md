@@ -22,9 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Otręba_2017_cell_viability_of_melanocytes_WST_1_assay](drugs/drug_prochlorperazine/pd_Otr_ba_2017_cell_viability_of_melanocytes_WST_1_assay.md) | cell viability of melanocytes (WST-1 assay) ← prochlorperazine · inhibition effect | — | Otręba M et al., Prochlorperazine interaction with melan…, Die Pharmazie (2017) | [10.1691/ph.2017.6787](https://doi.org/10.1691/ph.2017.6787) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Otręba_2018_cell_viability_of_U87_MG_cells](drugs/drug_prochlorperazine/pd_Otr_ba_2018_cell_viability_of_U87_MG_cells.md) | cell viability of U87-MG cells ← prochlorperazine · inhibition effect | — | Otręba M et al., Perphenazine and prochlorperazine induc…, Die Pharmazie (2018) | [10.1691/ph.2018.7806](https://doi.org/10.1691/ph.2018.7806) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Otręba_2018_2_viability](drugs/drug_prochlorperazine/pd_Otr_ba_2018_2_viability.md) | cell viability of lightly pigmented melanocytes (WST-1 assay) ← prochlorperazine · inhibition effect | — | Otręba M et al., In vitro melanogenesis inhibition by fl…, Daru : journal of Faculty o… (2018) | [10.1007/s40199-018-0206-4](https://doi.org/10.1007/s40199-018-0206-4) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Otręba_2018_cell_viability](drugs/drug_prochlorperazine/pd_Otr_ba_2018_cell_viability.md) | cell viability ← prochlorperazine · direct Emax (saturable) effect | — | Otręba M et al., Perphenazine and prochlorperazine induc…, Die Pharmazie (2018) | [10.1691/ph.2018.7806](https://doi.org/10.1691/ph.2018.7806) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 16:48 | 1:00 | 0/0/0 | 3/0/0 | 0/0/0 | 37,175/1,185 | ollama / glm-5.3-flash | 3 | 2/1 | 3/0 | 0 |
+| 2026-11-24 03:29 | 0:03 | 0/0/0 | 1/0/0 | 0/0/0 | 4,321/176 | einfracz / qwen3.8-27b | 3 | 2/1 | 3/0 | 0 |
 
 ## Coverage
 
@@ -47,25 +45,20 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Avram_2009.pdf` | Avram MJ et al., The pharmacokinetics and bioavailabilit…, Clinical pharmacology and t… (2009) | popPK | 8 | [10.1038/clpt.2008.184](https://doi.org/10.1038/clpt.2008.184) | [18830225](https://pubmed.ncbi.nlm.nih.gov/18830225) | Human PK study with a two-compartment population model of prochlorperazine, but numeric parameter values (CL, V, etc.) are not present in the evidence, only bioavailability 1.10. |
-
-<sub>queue written 2026-10-06 16:47 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Avram_2009 | relevant | 8 | 3 | Human PK study with a two-compartment population model of prochlorperazine, but numeric parameter values (CL, V, etc.) are not present in the evidence, only bioavailability 1.10. |
-| popPK | Berg_2004 | irrelevant | 0 | 0 | Prochlorperazine is only mentioned as a co-administered antiemetic; the PK model is for rebeccamycin, a different drug. |
-| popPK | Otręba_2017 | irrelevant | 0 | 0 | In vitro study of prochlorperazine binding to melanin and effects on melanocytes; no PK disposition parameters (CL, V, half-life, PK model) reported. |
-| popPK | Otręba_2018 | irrelevant | 0 | 0 | In-vitro cytotoxicity study (EC50 in U87-MG cells) with no PK disposition parameters for prochlorperazine. |
-| popPK | Otręba_2018_2 | irrelevant | 0 | 0 | In-vitro melanogenesis/cytotoxicity study in melanocytes; no PK disposition parameters (CL, V, ka, half-life, PK model) for prochlorperazine are reported. |
+| popPK | Avram_2009 | relevant | 9 | 1 | The study describes a compartmental PK model for prochlorperazine in humans, but no specific numeric parameter values (CL, V, ka, etc.) are present in the provided evidence. |
+| PGx | Avram_2009 | not_relevant | 0 | 0 | The study focuses on the pharmacokinetics and bioavailability of prochlorperazine via inhalation in healthy volunteers and does not report any pharmacogenomic effects or genetic variants. |
+| popPK | Berg_2004 | irrelevant | 0 | 0 | The study reports pharmacokinetics for rebeccamycin (NSC 655649), while prochlorperazine is mentioned only as a drug administered to treat side effects. |
+| PGx | Berg_2004 | not_relevant | 0 | 0 | The paper reports pharmacokinetics of rebeccamycin in nonhuman primates and mentions prochlorperazine only as a treatment for adverse effects, not as the subject of pharmacogenomic analysis. |
+| popPK | Otręba_2017 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of prochlorperazine binding to melanin and its effects on melanocyte viability and oxidative stress, reporting no pharmacokinetic disposition parameters (CL, V, ka, etc.). |
+| PGx | Otręba_2017 | not_relevant | 0 | 0 | The paper investigates the interaction between prochlorperazine and melanin/melanocytes, focusing on binding constants and cellular effects, but does not report any pharmacogenomic analysis or effects of genetic variants on PK/PD parameters. |
+| popPK | Otręba_2018 | irrelevant | 0 | 0 | The study is an in vitro cytotoxicity assay measuring cell viability and EC50, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Otręba_2018 | not_relevant | 0 | 0 | The paper investigates the cytotoxic effects of prochlorperazine on glioblastoma cells and does not report any pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Otręba_2018_2 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of melanogenesis and cell viability, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Otręba_2018_2 | not_relevant | 0 | 0 | The paper reports in vitro drug effects on melanocytes without any genetic variation or pharmacogenomic analysis. |
 
 
 </details>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Record refused for dimension mismatch on parameters with incorrect units for intercompartmental and metabolic clearances.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit min-1 (1 / [time]) vs [length] ** 3 / [time]; Q66 unit μmol/min/kg ([substance] / [time]) vs [mass] / [time]; Q1 unit μM ([length]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Watari1983_1058_160_mg_kg" status="rejected" stale="false" population="rats" measured-compound="acetaminophen" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -65,13 +65,13 @@ Watari N, Iwai M, Kaneniwa N. Pharmacokinetic study of the fate of acetaminophen
 
 ### Reviewer guidance
 
-**Record refused for dimension mismatch on parameters with incorrect units for intercompartmental and metabolic clearances.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit min-1 (1 / [time]) vs [length] ** 3 / [time]; Q66 unit μmol/min/kg ([substance] / [time]) vs [mass] / [time]; Q1 unit μM ([length]) vs [mass] / [length] ** 3.**
 
-The recorded intercompartmental transfer rate constant has time-based units, which conflicts with the required volume-based dimensions. The metabolic maximum rate unit is a substance concentration, which conflicts with the required mass-based dimensions. The absorption rate constant has units of inverse hours, but other absorption parameters use minutes. Extracted — paracetamol: A1 0.256 min-1, A2 0.0394 min-1, V 0.174 L/kg, Q 0.0506 min-1, kel 0.0523 min-1, CL 8.65 ml/min/kg, Vss 0.22 L/kg, CLb 9.16 ml/min/kg, … (+9).
+A reported unit could not be converted (A1, A2, Q and Vmax), so that value has no SI equivalent. Extracted — paracetamol: A1 0.256 min-1, A2 0.0394 min-1, V 0.174 L/kg, Q 0.0506 min-1, kel 0.0523 min-1, CL 8.65 ml/min/kg, Vss 0.22 L/kg, CLb 9.16 ml/min/kg, … (+9).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has acetaminophen → acetaminophen sulfate (metabolism); acetaminophen → acetaminophen glucuronide (metabolism), the second reading acetaminophen → acetaminophen sulfate (metabolism); acetaminophen → acetaminophen glucuronide (metabolism); acetaminophen sulfate → acetaminophen (hydrolysis) …; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

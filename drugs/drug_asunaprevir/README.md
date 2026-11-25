@@ -48,7 +48,7 @@ Asunaprevir is a protease inhibitor used to treat hepatitis C. It is taken orall
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:19 | 2:09 | 2/0/0 | 0/0/0 | 0/0/0 | 80,525/14,030 | ollama / glm-5.3-flash | 6 | 0/3 | 6/0 | 0 |
+| 2026-11-23 19:11 | 0:07 | 2/0/0 | 0/0/0 | 0/0/0 | 3,880/162 | einfracz / qwen3.8-27b | 6 | 0/3 | 6/0 | 0 |
 
 ## Coverage
 
@@ -63,15 +63,16 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Osawa_2019.pdf` | Osawa M et al., Population Pharmacokinetic Analysis of…, Clinical pharmacology in dr… (2019) | popPK | 9 | [10.1002/cpdd.649](https://doi.org/10.1002/cpdd.649) | [30629858](https://pubmed.ncbi.nlm.nih.gov/30629858) | Population PK model of asunaprevir (2-compartment, covariates on clearance) in HCV-infected subjects, but no numeric parameter values (CL, V, Q) appear in the evidence. |
+| `Osawa_2019.pdf` | Osawa M et al., Population Pharmacokinetic Analysis of…, Clinical pharmacology in dr… (2019) | popPK | 10 | [10.1002/cpdd.649](https://doi.org/10.1002/cpdd.649) | [30629858](https://pubmed.ncbi.nlm.nih.gov/30629858) | The paper describes a population PK model for asunaprevir, but specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
 
-<sub>queue written 2026-10-07 15:17 UTC</sub>
+<sub>queue written 2026-11-23 19:11 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Osawa_2019 | relevant | 9 | 2 | Population PK model of asunaprevir (2-compartment, covariates on clearance) in HCV-infected subjects, but no numeric parameter values (CL, V, Q) appear in the evidence. |
+| popPK | Osawa_2019 | relevant | 10 | 2 | The paper describes a population PK model for asunaprevir, but specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| PGx | Osawa_2019 | not_relevant | 0 | 0 | The study analyzes demographic covariates (race, liver function) but does not report any genetic variants or pharmacogenomic effects on asunaprevir PK parameters. |
 | popPK | Ueno_2018 | irrelevant | 3 | 2 | This is an exposure-response (efficacy) analysis; ASV popPK parameters (CL, V) are only referenced as being from a prior/separate popPK model (Osawa manuscript) and no ASV PK parameter values appear in the evidence. |
 
 

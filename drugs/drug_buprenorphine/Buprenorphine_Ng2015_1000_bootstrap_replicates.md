@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Buprenorphine affinity constant Km was recorded as 0.214 days, creating a dimension mismatch with its required mass-volume unit.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit days ([time]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="buprenorphine" model-id="Buprenorphine_Ng2015_1000_bootstrap_replicates" status="rejected" stale="false" population="neonates with NAS and healthy adults" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Ng CM, Dombrowsky E, Lin H, Erlich ME, Moody DE, Barrett JS et al. Population Ph
 
 ### Reviewer guidance
 
-**Buprenorphine affinity constant Km was recorded as 0.214 days, creating a dimension mismatch with its required mass-volume unit.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit days ([time]) vs [mass] / [length] ** 3.**
 
-The record lists the enzyme affinity parameter Km as 0.214 days, which conflicts with the expected mass-volume dimension. This unit mismatch prevented the parameter from being converted to standard SI units. The record was rejected because the dimensional conflict on this structural parameter could not be resolved. Extracted — buprenorphine: CL 157 L/hr, V2 203 L, Q 589 L/hr, V3 3.51e+03 L, Km 0.214 days, V 2.8 L/kg.
+A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — buprenorphine: CL 157 L/hr, V2 203 L, Q 589 L/hr, V3 3.51e+03 L, Km 0.214 days, V 2.8 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has buprenorphine, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

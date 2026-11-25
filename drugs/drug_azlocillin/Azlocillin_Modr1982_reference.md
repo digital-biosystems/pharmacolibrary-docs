@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Azlocillin’s model clearance (Cl) was left without an estimate and defaulted, despite a listed total-clearance value (CL) of 1.869 ml/sec, so the record was held back.
+> No value for azlocillin's clearance; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="azlocillin" model-id="Azlocillin_Modr1982_reference" status="model_quarantined" stale="false" population="healthy persons" measured-compound="azlocillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Modr Z, Dvorácek K, Janků I, Krebs V. [Azlocillin--a new anti-pseudomonas peni
 
 ### Reviewer guidance
 
-**Azlocillin’s model clearance (Cl) was left without an estimate and defaulted, despite a listed total-clearance value (CL) of 1.869 ml/sec, so the record was held back.**
+**No value for azlocillin's clearance; t6_deviations.**
 
-The record lists total clearance as 1.869 ml/sec and distribution volume as 11.34 l, but its deviations say clearance was defaulted; a library placeholder stood in, so the model was held back rather than published with an invented number. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. This record has no value for average biological half-life, while the second reader reports 70.2. Extracted — azlocillin: CL 1.87 ml/sec, V 11.3 l.
+The model was built, but azlocillin's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — azlocillin: CL 1.87 ml/sec, V 11.3 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average biological half-life: this record has none, the second reading 70.2. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.857 (6 of 7 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

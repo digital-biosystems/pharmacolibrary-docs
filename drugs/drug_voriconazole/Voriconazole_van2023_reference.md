@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Voriconazole’s Vmax of 86.4 mg/h triggered rejection for a stated dimension mismatch, although the recorded unit and expected dimension are both mass/time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/h ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="voriconazole" model-id="Voriconazole_van2023_reference" status="rejected" stale="false" population="patients with invasive fungal infections" measured-compound="voriconazole" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ van den Born DA, Märtson AG, Veringa A, Punt NC, van der Werf TS, Alffenaar JC 
 
 ### Reviewer guidance
 
-**Voriconazole’s Vmax of 86.4 mg/h triggered rejection for a stated dimension mismatch, although the recorded unit and expected dimension are both mass/time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/h ([mass] / [time]) vs [mass] / [time].**
 
-The rejection cites Vmax, whose meaning is the maximum rate of enzymatic metabolism, and records mg/h as both the unit’s dimension and the expected dimension; the stated mismatch is therefore inconclusive from the recorded facts. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — voriconazole: V 145 L, Km 5.7 mg/L, Vmax 86.4 mg/h, Fab 0.83, CL 9.16 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — voriconazole: V 145 L, Km 5.7 mg/L, Vmax 86.4 mg/h, Fab 0.83, CL 9.16 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has voriconazole, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

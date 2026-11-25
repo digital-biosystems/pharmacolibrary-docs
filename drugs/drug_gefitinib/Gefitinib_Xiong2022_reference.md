@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the paper studies tepotinib, making the extracted apparent clearance of 20.4 L/h incorrect for gefitinib.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="gefitinib" model-id="Gefitinib_Xiong2022_reference" status="rejected" stale="false" population="" measured-compound="gefitinib" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Xiong W, Papasouliotis O, Jonsson EN, Strotmann R, Girard P. Population pharmaco
 
 ### Reviewer guidance
 
-**The record is rejected because the paper studies tepotinib, making the extracted apparent clearance of 20.4 L/h incorrect for gefitinib.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-Gefitinib appears only as a co-medication in the tepotinib study, with no disposition parameters reported for it. The clearance value of 20.4 L/h was taken from the wrong drug's data. A second reader disagreed with the extracted values, resulting in an agreement ratio of 0.455. Extracted — gefitinib: CL/F 20.4 L/h, V/F 942 L.
+Extracted — gefitinib: CL/F 20.4 L/h, V/F 942 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q22: this record has none, the second reading 20.4; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check disputed by a second reader: verdict disputed, agreement 0.455, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.455 (5 of 11 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.455 | cross-check contradicted by a second reader: verdict disputed; agreement 0.455 (5 of 11 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F for simvastatin lacks a paper-derived value, forcing use of unreported placeholder values.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Kaleem2018_simvastatin_20_mg_alone" status="needs_review" stale="false" population="healthy adult male subjects" measured-compound="simvastatin" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Kaleem Z, Khan JA, Mushtaq Z, Altaf S, Javed I. Assessment of potential interact
 
 ### Reviewer guidance
 
-**Bioavailability F for simvastatin lacks a paper-derived value, forcing use of unreported placeholder values.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The bioavailability parameter remained unreported, so no explicit estimate from the study was used to simulate the concentration profile. This reliance on default conventions means the resulting values are not supported by the extracted data. Additionally, one reported unit could not be converted to standard international units, leaving a parameter without a standardized value. Extracted — simvastatin: Cmax 2.47 ng mL -1, V 50.6 L kg -1, CLb 23.2 L hr -1 kg -1, AUC 15.1 ng.hr.mL-1, kabs 0.3 hour -1, tlag 0.212 hr.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (equation variable and AUC), so that value has no SI equivalent. Extracted — simvastatin: Cmax 2.47 ng mL -1, V 50.6 L kg -1, CLb 23.2 L hr -1 kg -1, AUC 15.1 ng.hr.mL-1, kabs 0.3 hour -1, tlag 0.212 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[b].parameter_id`: this record has Q900, the second reading Q86. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -156,14 +156,14 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  | no second reading of this record |
-| T1_cmax | reference | skipped |  | 1.491e-06 | non-numeric value |
-| T1_cmax | reference | skipped |  | 1.491e-06 | non-numeric value |
+| T1_cmax | reference | skipped |  | 1.491e-06 | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 1.491e-06 | the transcribed record carries no number for this value |
 | T1_cmax | reference | skipped | 2.3 | 1.491e-06 | unresolved concentration unit (exp 'folds', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 2.47 | 1.491e-06 | unresolved concentration unit (exp 'ng.mL -1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 5.66 | 1.491e-06 | unresolved concentration unit (exp 'ng.mL -1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 23.4 | 1.491e-06 | unresolved concentration unit (exp 'ng.mL -1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 4.16 | 1.491e-06 | unresolved concentration unit (exp 'ng.mL -1', sim 'kg/m3') |
-| T1_t_half_beta | reference | skipped |  | 2.377 | non-numeric value |
+| T1_t_half_beta | reference | skipped |  | 2.377 | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

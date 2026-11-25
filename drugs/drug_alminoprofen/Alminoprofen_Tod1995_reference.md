@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability was missing from the record, so a generic placeholder value was used instead of an estimate.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="alminoprofen" model-id="Alminoprofen_Tod1995_reference" status="needs_review" stale="false" population="patients with knee effusion" measured-compound="alminoprofen" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Tod M, Pobel C, Le Gros V, Louchahi K, Petitjean O, Brion N et al. A population 
 
 ### Reviewer guidance
 
-**Bioavailability was missing from the record, so a generic placeholder value was used instead of an estimate.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record lacks an explicit bioavailability estimate for alminoprofen, resulting in the use of a non-study-specific default. The source text provided only summary statistics, such as a volume of distribution of 11.0 L and clearance of 0.29 mL min-1, without deriving bioavailability. A second reader disputed the extraction of all other parameters, including the absorption rate constant of 2.8 h-1. Extracted — alminoprofen: V 11 L, kel 0.236 h-1, kabs 2.8 h-1, CL 0.29 mL min-1, Cmax 8.1 mg L-1, tmax 4 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — alminoprofen: V 11 L, kel 0.236 h-1, kabs 2.8 h-1, CL 0.29 mL min-1, Cmax 8.1 mg L-1, tmax 4 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alminoprofen, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -157,7 +157,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.133 (2 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.133 | cross-check contradicted by a second reader: verdict disputed; agreement 0.133 (2 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

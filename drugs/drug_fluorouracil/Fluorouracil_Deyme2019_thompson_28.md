@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F and absorption lag Tlag for fluorouracil were left at library defaults, lacking specific estimates from the study.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Deyme2019_thompson_28" status="needs_review" stale="false" population="patients with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 ### Reviewer guidance
 
-**Bioavailability F and absorption lag Tlag for fluorouracil were left at library defaults, lacking specific estimates from the study.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record omits explicit values for bioavailability F and absorption lag Tlag, causing the model to use placeholder values rather than data from the paper. This lack of specific estimates for fluorouracil's absorption characteristics renders the simulated pharmacokinetic profile unsupported by the source data. Additionally, a second reader disagreed with the absence of metabolic links for fluorouracil, indicating potential structural omissions in the model. Extracted — fluorouracil: CL 34.2 L/h, V1 95.5 L, V2 101 L, Vss 196 L, Q 23.1 L/h, kel 0.358 h-1, k12 0.242 h-1, k21 0.229 h-1, … (+1).
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — fluorouracil: CL 34.2 L/h, V1 95.5 L, V2 101 L, Vss 196 L, Q 23.1 L/h, kel 0.358 h-1, k12 0.242 h-1, k21 0.229 h-1, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading fluorouracil → 5fuh2 (metabolism); fluorouracil → 5fdhu (metabolism); irinotecan → sn38 (metabolism) …; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -178,7 +178,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  | no second reading of this record |
-| T1_cmax | reference | skipped |  | 0.0001557 | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.0001557 | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Prednisolone unbound clearance was rejected because its 67% value lacks volume/time dimensions required for clearance.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q24 unit % (dimensionless) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="prednisone" model-id="Prednisone_de2023_reference" status="rejected" stale="false" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ de Truchis C, Bouazza N, Foissac F, Charbit M, Dehoux L, Lui G et al. Prednisolo
 
 ### Reviewer guidance
 
-**Prednisolone unbound clearance was rejected because its 67% value lacks volume/time dimensions required for clearance.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q24 unit % (dimensionless) vs [length] ** 3 / [time].**
 
-The record lists a 67% value for unbound clearance, creating a dimensional conflict with the required L/h units. The paper's abstract-only source provided summary statistics that masked this structural error. A second reader also disagreed on the presence of the 27.6 L/h clearance and 101 L volume parameters. Extracted — prednisolone: CLm/F 27.6 L/h, CLu 67 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is prednisone's own; they describe prednisolone. Extracted — prednisolone: CLm/F 27.6 L/h, CLu 67 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has none, the second reading 27.6; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

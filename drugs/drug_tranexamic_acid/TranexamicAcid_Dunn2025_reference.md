@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment model for tranexamic acid was rejected because one compartment has no path from the dose, despite defined parameters.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="tranexamic acid" model-id="TranexamicAcid_Dunn2025_reference" status="rejected" stale="false" population="pregnant individuals" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Dunn A, Felfeli M, Seifert SM, Gilliot S, Ducloy-Bouthors AS, Shakur-Still H et 
 
 ### Reviewer guidance
 
-**The two-compartment model for tranexamic acid was rejected because one compartment has no path from the dose, despite defined parameters.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The review identified an unreachable or orphan compartment, meaning part of the two-compartment structure is disconnected from the administration site. The record defines central and peripheral volumes of distribution along with a blood flow rate, yet the topology fails to link all components. This structural flaw prevents valid simulation of drug distribution, leading to the rejection of the model for the pregnant population. Extracted — tranexamic acid: CLb 8.59 L/h, V1 10.7 L, Qb 28.9 L/h, V2 15 L, tlag 0.16 h.
+Extracted — tranexamic acid: CLb 8.59 L/h, V1 10.7 L, Qb 28.9 L/h, V2 15 L, tlag 0.16 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading tranexamic_acid; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

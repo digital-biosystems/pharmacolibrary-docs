@@ -41,7 +41,7 @@ Mu R, Gao J, Wang X, Ling J, Hu N, Yang H. Pharmacokinetics of CYP2C19- and CYP3
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.417). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,6 +54,8 @@ Mu R, Gao J, Wang X, Ling J, Hu N, Yang H. Pharmacokinetics of CYP2C19- and CYP3
 **This paper's disposition core is incomplete.**
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Carlos_2002, Chung_2022, Lammers_2017, Marques_2026) cannot stand in for this paper's evidence. Extracted — omeprazole: AUCt 1.28e+03 ng × Hour/mL, CL 6.67 L/h, V 7.47 L, kabs 0.05 min À1, tlag 0.26 h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc0-t (ng × hour/ml) obs].parameter_id`: this record has Q19, the second reading Q74; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -101,6 +103,33 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 - LLM selected parameter table(s) 5, 6, 7, 8
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.417 (5/12 fields) | 7 |
+
+<details><summary>7 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0-t (ng × hour/ml) obs].parameter_id` | Q19 | Q74 | mismatch |
+| `gpt-oss-120b` | `parameters[auc0-t (ng × hour/ml) pre]` |  | 1650.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t (ng × hour/ml) ratio]` |  | 1.29 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 01]` | 0.05 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time]` | 0.26 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[systemic caffeine clearance]` | 6.67 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 7.47 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

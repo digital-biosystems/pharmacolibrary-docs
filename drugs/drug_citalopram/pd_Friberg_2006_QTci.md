@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;citalopram&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/&quot;},{&quot;label&quot;:&quot;Friberg_2006 \u00b7 PD Heart-rate corrected QT interval&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friberg_2006_QTci&quot;,&quot;label&quot;:&quot;Friberg_2006 \u00b7 QTci&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/pd_Friberg_2006_QTci.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;citalopram&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/&quot;},{&quot;label&quot;:&quot;Friberg_2006 \u00b7 PD heart-rate corrected QT interval&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_estimate&quot;,&quot;label&quot;:&quot;Weisskopf_2020_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_estimate.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma&quot;,&quot;label&quot;:&quot;Weisskopf_2020_model_for_scit_sdcit_in_plasma&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea&quot;,&quot;label&quot;:&quot;Weisskopf_2020_model_for_scit_sdcit_in_plasma_breast_milk&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friberg_2006_QTci&quot;,&quot;label&quot;:&quot;Friberg_2006 \u00b7 QTci&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/pd_Friberg_2006_QTci.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Heart-rate corrected QT interval — PD  <span class="pk-badge pk-badge--blue">Simulated</span>
+# heart-rate corrected QT interval — PD  <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Citalopram (concentrations from this paper's PK model) drives Heart-rate corrected QT interval (in ms): direct linear effect.
+**As extracted:** Citalopram (concentrations from this paper's PK model) drives heart-rate corrected QT interval (in ms): delayed effect through an effect compartment.
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
@@ -23,7 +23,7 @@
 > <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Friberg_2006`
-- **model family:** `linear`
+- **model family:** `effect_compartment`
 - **driver:** `pk_record`
 - **tier:** population
 - **effect:** stimulation/additive
@@ -35,16 +35,15 @@ Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal o
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | QTci0, women | `Q324` ·  | 429 | ms | llm | Friberg_2006:pdv3 |
-| PD (effect) | QTci0, men | `Q324` ·  | 420 | ms | llm | Friberg_2006:pdv3 |
-| PD (effect) | Slope | `Q335` ·  | 40.0 | ms l mg-1 | llm | Friberg_2006:pdv3 |
-| model term | α | `Q900` ·  | 0.364 |  | llm | Friberg_2006:pdv3 |
-| PD (effect) | teq | `Q326` ·  | 1.43 | h | llm | Friberg_2006:pdv3 |
-| model term | ΔQTci0,age | `Q900` ·  | 1.07 |  | llm | Friberg_2006:pdv3 |
+| PD (effect) | Slope | `Q335` ·  | 40.0 | ms l mg -1 | llm | Friberg_2006:pdv3 |
+| PD (effect) | QTci 0, women | `Q324` ·  | 429 | ms | llm | Friberg_2006:pdv3 |
+| PD (effect) | QTci 0, men | `Q324` ·  | 420 | ms | llm | Friberg_2006:pdv3 |
+| — | t eq | `Q100` ·  | 1.43 | h | nil | Friberg_2006:pdv3 |
+| — | ΔQTci age | `Q100` ·  | 1.07 |  | nil | Friberg_2006:pdv3 |
 | PD (effect) | E max (ms) | `Q320` ·  | 20 | ms | review_gapfill | Friberg_2006:review |
 | PD (effect) | Ec 50 (mg/l -1 ) | `Q321` ·  | 0.2 | mg/l -1 | review_gapfill | Friberg_2006:review |
-| variability | BSV Slope | `Q312` ·  | 70.2 | % | llm | Friberg_2006:pdv3 |
-| variability | BSV QTci0 | `Q312` ·  | 5.3 | % | llm | Friberg_2006:pdv3 |
+| variability | Slope BSV | `Q312` ·  | 70.2 | CV% | llm | Friberg_2006:pdv3 |
+| variability | QTci 0, women BSV | `Q312` ·  | 5.3 | CV% | llm | Friberg_2006:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -54,76 +53,73 @@ Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal o
 
 ## Exposure-response model
 
-`Citalopram_Friberg2006_PD_qtci` — linear, `response = E0 + slope*exposure`
+`Citalopram_Friberg2006_PD_qtci` — sigmoid_emax, `response = E0 + Emax*frac`
 
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 429 ms | 0.429 s |
 | Emax | 20 ms | 0.02 s |
-| slope | 40 ms l mg-1 | 40 meter ** 3 * second / kilogram |
+| EC50 | 0.2 mg/l -1 | — |
+| gamma | 1 | — |
 
-Closed-form check points (response, SI): `at_0` = 0.429, `per_exposure_unit` = 40
+Closed-form check points (response, SI): `at_0` = 0.429, `at_EC50` = 0.439, `at_inf` = 0.449
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+- `pd_binding_family_inferred` — the record's model family is effect_compartment; read from the parameters: Emax/Imax and EC50/IC50 without a Hill coefficient — Emax
+- `pd_binding_exposure_unit_unresolved` — 'mg/l -1' — the x axis is in the paper's unit, not SI
 
 ## Review
 
-Verdict <span class="pk-badge pk-badge--blue">Simulated</span>
+Verdict <span class="pk-badge pk-badge--red">Rejected</span> · route to `human_review`
 
 | check | status | note |
 |---|---|---|
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | skipped | a line has no plateau to compare |
+| `T1b_fmu` | fail | shared PD_LinearSweep FMU reproduces the reference points (worst 8.53%) |
+| `T2_direction` | pass | the response rises, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
-| `T4_defaults` | pass | nothing defaulted |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Blocking:
+
+- T1b the template FMU departs from the closed form by 8.5%
+
+Advisory:
+
+- defaulted: gamma (convention)
+- exposure unit not resolved to SI — the x axis is in the paper's unit
+
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
+
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[Q100].value` | 1.07 | 1.43 | mismatch |
+| `gpt-oss-120b` | `parameters[Q324].value` | 420 | 1.07 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_citalopram/Citalopram_Friberg2006_PD_qtci/Citalopram_Friberg2006_PD_qtci_modelica.zip" download>Citalopram_Friberg2006_PD_qtci_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_citalopram/Citalopram_Friberg2006_PD_qtci/Citalopram_Friberg2006_PD_qtci_fmi.zip" download>Citalopram_Friberg2006_PD_qtci_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PD_LinearSweep.fmu" download>PD_LinearSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_citalopram/Citalopram_Friberg2006_PD_qtci/Citalopram_Friberg2006_PD_qtci_matlab.zip" download>Citalopram_Friberg2006_PD_qtci_matlab.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_citalopram/Citalopram_Friberg2006_PD_qtci/Citalopram_Friberg2006_PD_qtci_sbml.zip" download>Citalopram_Friberg2006_PD_qtci_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_citalopram/Citalopram_Friberg2006_PD_qtci/Citalopram_Friberg2006_PD_qtci_cellml.zip" download>Citalopram_Friberg2006_PD_qtci_cellml.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PD_LinearSweep.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | model | `E0` | 0.429 |  |
-| input | model | `exposure_per_s` | 0.001 |  |
-| input | model | `slope` | 40 |  |
-| output | concentration | `response` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacodynamic.LinearSweep`, compiled by OpenModelica Compiler OpenModelica 1.26.3.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**This record:** Pharmacolibrary, model `Citalopram_Friberg2006_PD_qtci`. <https://pharmacolibrary.github.io/#/drugs/drug_citalopram/pd_Friberg_2006_QTci>
-
-```bibtex
-@misc{pharmacolibrary_CitalopramFriberg2006PDqtci,
-  title  = {{Pharmacolibrary model Citalopram_Friberg2006_PD_qtci}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_citalopram/pd_Friberg_2006_QTci},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

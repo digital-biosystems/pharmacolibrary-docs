@@ -40,7 +40,7 @@ Pipamperone is a butyrophenone antipsychotic intended for schizophrenia and depr
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 16:46 | 1:12 | 0/1/0 | 0/0/0 | 0/0/0 | 65,232/2,172 | ollama / glm-5.3-flash | 3 | 0/1 | 3/0 | 0 |
+| 2026-11-24 03:17 | 0:03 | 0/1/0 | 0/0/0 | 0/0/0 | 3,331/152 | einfracz / qwen3.8-27b | 3 | 1/2 | 3/0 | 0 |
 
 ## Coverage
 
@@ -48,6 +48,27 @@ Pipamperone is a butyrophenone antipsychotic intended for schizophrenia and depr
 - **screened:** 1  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Bohny_2023 | irrelevant | 0 | 0 | The study is a clinical evaluation of QTc interval prolongation and side effects, not a pharmacokinetic study, and reports no PK parameters (CL, V, ka, etc.) for pipamperone. |
+| PGx | Bohny_2023 | not_relevant | 0 | 0 | The study reports dose-dependent QTc prolongation in a clinical cohort but does not investigate any gene variants or genotypes. |
+| popPK | Gangapersad_2026 | irrelevant | 0 | 0 | The study is a pharmacoeconomic/dispensing analysis reporting dosage and duration metrics, not pharmacokinetic parameters. |
+| PGx | Gangapersad_2026 | not_relevant | 0 | 0 | The paper analyzes dispensing patterns of sedative antipsychotics and contains no data on pharmacogenomics, gene variants, or their effects on pharmacokinetic/pharmacodynamic parameters. |
+| popPK | Krauss_2025 | irrelevant | 0 | 0 | The paper is a Delphi consensus study on sedation cut-off doses, not a pharmacokinetic study reporting disposition parameters for pipamperone. |
+| PGx | Krauss_2025 | not_relevant | 0 | 0 | The study is a consensus process defining dosing cut-offs for sedation in palliative care and contains no pharmacogenomic analysis or gene-drug interactions. |
+| popPK | Löffler_2008 | irrelevant | 0 | 0 | The paper is a clinical case report on vegetative disturbances (hypothermia/fever) and does not report any pharmacokinetic parameters for pipamperone. |
+| PGx | Löffler_2008 | not_relevant | 0 | 0 | The paper is a case report on recurrent hypothermia during antipsychotic therapy and does not report any gene variants or pharmacogenomic effects. |
+| popPK | Squelart_1977 | irrelevant | 0 | 0 | The paper is a clinical efficacy study reporting behavioral improvements in schizophrenic patients, with no pharmacokinetic parameters (CL, V, ka, etc.) reported. |
+| PGx | Squelart_1977 | not_relevant | 0 | 0 | The study reports clinical efficacy and safety in a general patient population but does not investigate genetic variants or their impact on pipamperone pharmacokinetics or pharmacodynamics. |
+| popPK | Stegmann_2015 | irrelevant | 0 | 0 | This is an epidemiological study on the prevalence and medication usage of hyperkinetic disorders, not a pharmacokinetic study, and contains no PK parameters for pipamperone. |
+| PGx | Stegmann_2015 | not_relevant | 0 | 0 | The paper discusses the prevalence and prescription of pipamperone in ADHD patients but does not report any pharmacogenomic effects on PK/PD parameters. |
+| popPK | Wouters_1978 | irrelevant | 0 | 0 | This is a clinical follow-up study on efficacy/switching treatments, not a pharmacokinetic study, and contains no PK parameters for pipamperone. |
+| PGx | Wouters_1978 | not_relevant | 0 | 0 | The paper describes a clinical case series regarding dosage changes in psychiatric patients and contains no data on gene variants or their effects on pharmacokinetics or pharmacodynamics. |
+| popPK | van_1975 | irrelevant | 0 | 0 | The paper is a clinical efficacy study in mental retardates and does not report any pharmacokinetic parameters for pipamperone. |
+| PGx | van_1975 | not_relevant | 0 | 0 | The paper is a clinical trial in mental retardates reporting behavioral outcomes, with no mention of pharmacogenomics, gene variants, or PK/PD parameter changes. |
 
 
 </details>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sufentanil clearance is disputed: this record gives 51.8 L/h versus the second reader’s 32.8 L/h, leaving the record needing review.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="sufentanil" model-id="Sufentanil_Khaowroongrueng2024_reference" status="needs_review" stale="false" population="adults undergoing cardiopulmonary bypass surgery" measured-compound="sufentanil" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Khaowroongrueng V, Son KH, Lee SM, Lee J, Park CG, Lee SI et al. Population phar
 
 ### Reviewer guidance
 
-**Sufentanil clearance is disputed: this record gives 51.8 L/h versus the second reader’s 32.8 L/h, leaving the record needing review.**
+**cross_check_disputed; x1_cross_check.**
 
-For sufentanil, the record lists clearance 51.8 L/h, intercompartmental clearance 55.2 L/h, central-compartment volume 72.5 L, and peripheral-compartment volume 390 L; the second reader gave 32.8 L/h, 43.3 L/h, 58.2 L, and 129 L, respectively. The cross-reader verdict is disputed, with agreement 0.444 and 0 of 1 readers agreeing. Extracted — sufentanil: CL 51.8 L/h, V1 72.5 L, Q 55.2 L/h, V2 390 L.
+Extracted — sufentanil: CL 51.8 L/h, V1 72.5 L, Q 55.2 L/h, V2 390 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 51.8, the second reading 32.8; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -149,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check disputed by a second reader: verdict disputed, agreement 0.444, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.444 (4 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.444 | cross-check contradicted by a second reader: verdict disputed; agreement 0.444 (4 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
-> Clonazepam absorption rate (ka) and lag time (Tlag) were left at library defaults, lacking source support in this abstract-only record.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="clonazepam" model-id="Clonazepam_Hampton2024_reference" status="needs_review" stale="false" population="growing commercial cross pigs" measured-compound="clonazepam" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Hampton CE, Kleine SA, Smith JS, Mulon PY, Smith CK, Shanks GA et al. Pharmacoki
 
 ### Reviewer guidance
 
-**Clonazepam absorption rate (ka) and lag time (Tlag) were left at library defaults, lacking source support in this abstract-only record.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The paper reports only elimination half-life (7.3 h), mean residence time (7.4 h), and apparent volume of distribution (5.7 L/kg), omitting any absorption parameters. Consequently, the model builder defaulted ka and Tlag to library values and assumed first-order absorption with complete bioavailability. These invented absorption values affect the simulated profile but are not supported by the source text, preventing valid PK characterization. Extracted — clonazepam: t1/2z 7.3 h, MRT 7.4 h, V/F 5.7 L/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clonazepam: t1/2z 7.3 h, MRT 7.4 h, V/F 5.7 L/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

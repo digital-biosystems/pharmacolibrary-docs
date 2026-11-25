@@ -31,7 +31,7 @@ Cenegermin is a recombinant nerve growth factor prescribed to treat severe kerat
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:18 | 4:35 | 0/1/0 | 0/0/0 | 0/0/0 | 183,512/5,184 | ollama / glm-5.3-flash | 4 | 0/1 | 4/0 | 0 |
+| 2026-11-23 20:12 | 2:19 | 0/1/0 | 0/0/0 | 0/0/0 | 3,181/176 | einfracz / qwen3.8-27b | 4 | 0/1 | 4/0 | 0 |
 
 ## Coverage
 
@@ -40,23 +40,60 @@ Cenegermin is a recombinant nerve growth factor prescribed to treat severe kerat
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Dai_2025.pdf` | Dai Y et al., Safety and pharmacokinetics of escalati…, European journal of pharmac… (2025) | popPK | 8 | [10.1016/j.ejps.2025.107314](https://doi.org/10.1016/j.ejps.2025.107314) | [41076137](https://pubmed.ncbi.nlm.nih.gov/41076137) | A human PK study of recombinant human NGF (the same active moiety as cenegermin) with tear-fluid PK values (Tmax 0.17 h, Cmax 3.63 µg/g, t1/2 4.21 h) reported directly in the abstract; no systemic CL/V reported. |
-
-<sub>queue written 2026-10-07 17:15 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Jia_2026 | irrelevant | 0 | 0 | In-vitro expression of recombinant human NGF in tobacco cells; no PK or disposition parameters for cenegermin. |
-| popPK | Shen_2023 | irrelevant | 3 | 2 | This is a different recombinant human NGF product (intramuscular, Chinese subjects) rather than cenegermin, and only Tmax and t1/2 are reported with no CL/V or population-PK parameters. |
-| popPK | Wen_2011 | irrelevant | 0 | 0 | This is a review of intranasal drug delivery with no quantitative PK parameters for cenegermin. |
+| popPK | Altar_1991 | irrelevant | 0 | 0 | The paper studies nerve growth factor (NGF) binding in rat brain, not the pharmacokinetics of the drug cenegermin. |
+| PGx | Altar_1991 | not_relevant | 0 | 0 | The paper characterizes NGF binding sites in the rat brain and does not involve cenegermin or any pharmacogenomic effects. |
+| popPK | Barnett_1991 | irrelevant | 0 | 0 | The paper discusses the physicochemical characterization of nerve growth factor (NGF), not cenegermin. |
+| PGx | Barnett_1991 | not_relevant | 0 | 0 | The paper describes the physicochemical characterization of recombinant NGF, not the pharmacogenomics of cenegermin. |
+| popPK | Cenciarelli_2006 | irrelevant | 0 | 0 | The paper describes in vitro gene expression and cell biology of neural stem cells and is completely unrelated to the pharmacokinetics of cenegermin. |
+| PGx | Cenciarelli_2006 | not_relevant | 0 | 0 | The paper discusses in vitro gene therapy for neurodegenerative diseases and has no connection to cenegermin or its pharmacogenomics. |
+| popPK | Coco_2023 | irrelevant | 0 | 0 | The paper is a clinical review of the efficacy of cenegermin in dry eye disease and does not report any pharmacokinetic parameters. |
+| PGx | Coco_2023 | not_relevant | 0 | 0 | The paper is a review on the clinical efficacy of cenegermin for dry eye disease and does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Colangelo_2005 | irrelevant | 0 | 0 | The study is about the production and activity of recombinant human nerve growth factor (rhNGF), not cenegermin, and does not contain any pharmacokinetic data for cenegermin. |
+| PGx | Colangelo_2005 | not_relevant | 0 | 0 | The paper reports the laboratory production and in vitro/animal efficacy of recombinant human nerve growth factor (rhNGF), which is a different drug from cenegermin and does not involve pharmacogenomic analysis. |
+| popPK | Dicou_1992 | irrelevant | 0 | 0 | The paper describes the production of recombinant nerve growth factor in E. coli and contains no pharmacokinetic data for cenegermin. |
+| PGx | Dicou_1992 | not_relevant | 0 | 0 | The paper reports on the production of recombinant NGF and does not mention cenegermin or pharmacogenomics. |
+| popPK | Emmett_1995 | irrelevant | 0 | 0 | The study investigates the neuroprotective effects of NGF and bFGF in a rat model and does not involve cenegermin or pharmacokinetic parameters. |
+| PGx | Emmett_1995 | not_relevant | 0 | 0 | The paper evaluates the efficacy of NGF and FGF in Alzheimer's models and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of cenegermin. |
+| popPK | Garrett_1997 | irrelevant | 0 | 0 | The study focuses on neurotrophic effects of alpha-lipoic acid in diabetic rats and does not involve the drug cenegermin or its pharmacokinetics. |
+| PGx | Garrett_1997 | not_relevant | 0 | 0 | The study focuses on alpha-lipoic acid and NGF in diabetic rats, not the pharmacogenomics of cenegermin. |
+| popPK | Gazzano-Santoro_1999 | irrelevant | 0 | 0 | The paper describes a cell survival assay for recombinant human nerve growth factor (rhNGF) in rat PC12 cells and contains no data regarding cenegermin. |
+| PGx | Gazzano-Santoro_1999 | not_relevant | 0 | 0 | The paper describes a bioassay for nerve growth factor potency, not pharmacogenomics or PK/PD of cenegermin. |
+| popPK | Gu_2009 | irrelevant | 0 | 0 | The study concerns nerve growth factor (NGF) and Alzheimer's disease in rats, not the drug cenegermin. |
+| PGx | Gu_2009 | not_relevant | 0 | 0 | The paper studies the efficacy of NGF-loaded microspheres in a rat model of Alzheimer's disease and does not mention cenegermin or any pharmacogenomic effects. |
+| popPK | Iwane_1990 | irrelevant | 0 | 0 | The paper describes the production of recombinant nerve growth factor (NGF) and contains no data on cenegermin. |
+| PGx | Iwane_1990 | not_relevant | 0 | 0 | The paper focuses on the production of recombinant human nerve growth factor (NGF), not cenegermin, and contains no pharmacogenomic data. |
+| popPK | Jia_2026 | irrelevant | 0 | 0 | The paper concerns the expression of nerve growth factor in tobacco cells and does not involve the drug cenegermin or any pharmacokinetic parameters. |
+| PGx | Jia_2026 | not_relevant | 0 | 0 | The paper discusses the expression of nerve growth factor in tobacco cells and has no mention of cenegermin or pharmacogenomic effects. |
+| popPK | Kakihana_1993 | irrelevant | 0 | 0 | The paper investigates the biological activity of nerve growth factor (NGF) and contains no data regarding cenegermin. |
+| PGx | Kakihana_1993 | not_relevant | 0 | 0 | The paper describes the biological activity of recombinant nerve growth factor and does not discuss the drug cenegermin or pharmacogenomic effects. |
+| popPK | Koliatsos_1991 | irrelevant | 0 | 0 | The paper investigates the neuroprotective effects of recombinant human nerve growth factor (rhNGF) in rats, not the pharmacokinetics of cenegermin. |
+| PGx | Koliatsos_1991 | not_relevant | 0 | 0 | The paper discusses recombinant human nerve growth factor (rhNGF) in rats and does not mention cenegermin or any pharmacogenomic effects on PK/PD parameters. |
+| popPK | Lam_2001 | irrelevant | 0 | 0 | The paper describes the formulation and in vitro release of nerve growth factor (rhNGF), not the pharmacokinetics of cenegermin. |
+| PGx | Lam_2001 | not_relevant | 0 | 0 | The paper focuses on the formulation of nerve growth factor (rhNGF) and does not mention cenegermin or pharmacogenomic effects. |
+| popPK | Lapchak_1992 | irrelevant | 0 | 0 | The study investigates the effects of recombinant human nerve growth factor on cholinergic function in rats and does not involve cenegermin. |
+| PGx | Lapchak_1992 | not_relevant | 0 | 0 | The paper does not discuss cenegermin or any pharmacogenomic interactions. |
+| popPK | Nguyen_2000 | irrelevant | 0 | 0 | The study focuses on recombinant human nerve growth factor (rhNGF) and not the drug cenegermin. |
+| PGx | Nguyen_2000 | not_relevant | 0 | 0 | The paper investigates the stability and plasma protein binding of recombinant human nerve growth factor (rhNGF), not the pharmacogenomics of cenegermin. |
+| popPK | Pagani_2008 | irrelevant | 0 | 0 | The paper concerns nerve growth factor (NGF) and neural stem cells, not the pharmacokinetics of cenegermin. |
+| PGx | Pagani_2008 | not_relevant | 0 | 0 | The paper is about cell therapy using rhNGF in rats, not a pharmacogenomic study of cenegermin. |
+| popPK | Shen_2023 | irrelevant | 0 | 0 | The paper investigates the pharmacokinetics of recombinant human nerve growth factor (rhNGF), not cenegermin. |
+| PGx | Shen_2023 | not_relevant | 0 | 0 | The paper studies recombinant human nerve growth factor (rhNGF), not cenegermin, and does not report pharmacogenomic effects. |
+| popPK | Wan_2021 | irrelevant | 0 | 0 | The study concerns rhNGF (recombinant human nerve growth factor), not cenegermin (rhEGF), and does not report population pharmacokinetic parameters. |
+| PGx | Wan_2021 | not_relevant | 0 | 0 | The paper evaluates a pharmacodynamic model in rabbits and reports no gene variant/genotype data or pharmacogenomic analysis. |
+| popPK | Wen_2011 | irrelevant | 0 | 0 | This is a review on intranasal delivery to the brain and does not report specific pharmacokinetic parameters for cenegermin. |
+| PGx | Wen_2011 | not_relevant | 0 | 0 | The paper is a review on intranasal drug delivery to the brain and does not mention cenegermin or any pharmacogenomic effects. |
+| popPK | Xia_2018 | irrelevant | 0 | 0 | The paper studies the release of VEGF and NGF for nerve regeneration and does not involve the drug cenegermin. |
+| PGx | Xia_2018 | not_relevant | 0 | 0 | The paper discusses VEGF and NGF delivery for nerve regeneration and does not mention cenegermin or any pharmacogenomic effects. |
+| popPK | Xiao_2008 | irrelevant | 0 | 0 | The paper studies the production of nerve growth factor beta in rabbit milk and contains no pharmacokinetic data or mention of cenegermin. |
+| PGx | Xiao_2008 | not_relevant | 0 | 0 | The paper describes the production of recombinant human nerve growth factor beta (hNGF-beta) in rabbit milk, not the pharmacogenomics of cenegermin. |
+| popPK | Xiao_2009 | irrelevant | 0 | 0 | The paper describes the production of recombinant human nerve growth factor beta (hNGF-beta) in goat milk and is not a pharmacokinetic study of cenegermin. |
+| PGx | Xiao_2009 | not_relevant | 0 | 0 | The paper describes the recombinant production of human nerve growth factor beta (hNGF-beta) in goat milk using adenovirus, which is unrelated to the pharmacogenomics, PK, or PD of cenegermin. |
+| popPK | Zhang_2023 | irrelevant | 0 | 0 | The paper focuses on nerve regeneration scaffolds in rats and does not involve the drug cenegermin or pharmacokinetic modeling. |
+| PGx | Zhang_2023 | not_relevant | 0 | 0 | The paper focuses on nerve regeneration using nanofibrous scaffolds and stem cells, with no mention of cenegermin or pharmacogenomics. |
 
 
 </details>

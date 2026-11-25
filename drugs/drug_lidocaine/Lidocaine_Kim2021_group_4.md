@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The model record was rejected because the terminal metabolite glycylxylidide was identified as an unreachable or orphan compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Kim2021_group_4" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -51,13 +51,13 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 ### Reviewer guidance
 
-**The model record was rejected because the terminal metabolite glycylxylidide was identified as an unreachable or orphan compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The findings flag the model structure as containing an unreachable or orphan compartment, meaning the terminal metabolite glycylxylidide has no valid path from the dose. Although the record includes links for lidocaine to monoethylglycylxylidide and monoethylglycylxylidide to glycylxylidide, the check determined these connections did not form a continuous route. A second reader disagreed on the specific metabolite names used in the links, suggesting the structural definition was ambiguous. Extracted — lidocaine: t1/2z 0.94 h, Cmax 2.03e+03 ng/mL, tmax 0.54 h, AUC∞ 3.09e+03 h × ng/mL.
+A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — lidocaine: t1/2z 0.94 h, Cmax 2.03e+03 ng/mL, tmax 0.54 h, AUC∞ 3.09e+03 h × ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has lidocaine → monoethylglycylxylidide (metabolism); monoethylglycylxylidide → glycylxylidide (metabolism), the second reading lidocaine → megx (metabolism); megx → gx (metabolism). That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

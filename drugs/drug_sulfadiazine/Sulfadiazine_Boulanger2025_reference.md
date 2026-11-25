@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> Sulfadiazine was rejected as an orphan metabolite lacking a dosed parent, and its bioavailability parameter had no extracted value.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="sulfadiazine" model-id="Sulfadiazine_Boulanger2025_reference" status="rejected" stale="false" population="growing pigs" measured-compound="sulfadiazine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -53,13 +53,13 @@ Boulanger M, Taillandier JF, Henri J, Devreese M, De Baere S, Lacroix M et al. P
 
 ### Reviewer guidance
 
-**Sulfadiazine was rejected as an orphan metabolite lacking a dosed parent, and its bioavailability parameter had no extracted value.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The structure links sulfadimethoxine to sulfadiazine via metabolism, but sulfadimethoxine is not defined as a dosed compartment, leaving sulfadiazine with no path from the dose. The absolute bioavailability parameter for sulfadiazine has no numerical value, so it remains undefined in the model. The clearance value of 0.015 L/h/kg is mislabeled as sulfadiazine clearance but describes sulfadimethoxine. Extracted — sulfadiazine: t1/2β 3.7 h, AUC∞ 99.2 h x µg/mL, CL 0.015 L/h/kg.
+A reported unit could not be converted (AUC∞), so that value has no SI equivalent. Extracted — sulfadiazine: t1/2β 3.7 h, AUC∞ 99.2 h x µg/mL, CL 0.015 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has TMP/SDZ, TMP/SDMX, TMP/SMX combinations, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

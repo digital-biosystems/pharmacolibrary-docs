@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The second reader could not confirm oxacillin as the dosing compound or primary analyte, resulting in a disputed verdict.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="oxacillin" model-id="Oxacillin_Lee2026_reference" status="needs_review" stale="false" population="preterm and term neonates and infants" measured-compound="oxacillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Lee A, Liu C, Tran MT, Phal S, Peloquin CA, Nieves D et al. Population pharmacok
 
 ### Reviewer guidance
 
-**The second reader could not confirm oxacillin as the dosing compound or primary analyte, resulting in a disputed verdict.**
+**cross_check_disputed; x1_cross_check.**
 
-This record models oxacillin in neonates and infants using a one-compartment structure with a clearance of 1.01 L/h and a volume of distribution of 1.87 L. A cross-check failed because the second reader identified the dosing compound and primary analyte as unknown, rather than oxacillin. This disagreement led to an agreement score of 0.667, where zero of one reader agreed, causing the record to be held for review. Extracted — oxacillin: CL 1.01 L/h, V 1.87 L.
+Extracted — oxacillin: CL 1.01 L/h, V 1.87 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has oxacillin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.667 (4 of 6 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (4 of 6 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

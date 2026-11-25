@@ -23,7 +23,7 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.10).">human + animal</span> | [Krasula_1991_ERG](drugs/drug_temafloxacin/pd_Krasula_1991_ERG.md) | electroretinographic (ERG) changes ← temafloxacin · inhibition effect | — | Krasula RW et al., Comparison of organ-specific toxicity o…, The American journal of med… (1991) | [10.1016/0002-9343(91)90309-l](https://doi.org/10.1016/0002-9343(91)90309-l) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">mouse</span> | [Pattyn_1991_activity](drugs/drug_temafloxacin/pd_Pattyn_1991_activity.md) | Anti-Mycobacterium leprae activity biomarker turnover ← temafloxacin | — | Pattyn SR, Anti-Mycobacterium leprae activity of s…, International journal of le… (1991) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">mouse</span> | [Pattyn_1991_activity](drugs/drug_temafloxacin/pd_Pattyn_1991_activity.md) | Anti-Mycobacterium leprae activity biomarker turnover ← temafloxacin | — | Pattyn SR, Anti-Mycobacterium leprae activity of s…, International journal of le… (1991) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> The cefoperazone record's extracted parameters were disputed by the second reader, who could not confirm the values from the abstract-only source.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="cefoperazone" model-id="Cefoperazone_Soback1989_reference" status="needs_review" stale="false" population="unweaned calves" measured-compound="cefoperazone" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Soback S, Ziv G. Pharmacokinetics of single doses of cefoperazone given by the i
 
 ### Reviewer guidance
 
-**The cefoperazone record's extracted parameters were disputed by the second reader, who could not confirm the values from the abstract-only source.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so the reported summary statistics stand in for a fitted model. A second reader disagreed with the identified dose compound and primary analyte, marking them as unknown. The second reader also could not confirm any of the extracted pharmacokinetic parameters, including bioavailability, mean absorption time, and clearance. Extracted — cefoperazone: t1/2z 128 min, CL 8.16 L/h, Vss 0.713 litre kg-1, MAT 53.1 min, Fab 76.3 per cent, V 20.9 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefoperazone: t1/2z 128 min, CL 8.16 L/h, Vss 0.713 litre kg-1, MAT 53.1 min, Fab 76.3 per cent, V 20.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefoperazone, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -158,7 +158,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.188, 0 of 1 reader(s) agree | 0.188 | cross-check disputed by a second reader: verdict disputed, agreement 0.188, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.188 (3 of 16 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.188 | cross-check contradicted by a second reader: verdict disputed; agreement 0.188 (3 of 16 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

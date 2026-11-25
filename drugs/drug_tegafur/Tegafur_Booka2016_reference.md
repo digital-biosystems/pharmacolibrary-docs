@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because 5-FU is an orphan metabolite lacking a metabolic link from the administered tegafur dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="tegafur" model-id="Tegafur_Booka2016_reference" status="rejected" stale="false" population="cancer patients with various degrees of renal function" measured-compound="5-FU" parameterization="apparent" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Booka E, Imamura CK, Takeuchi H, Hamamoto Y, Gomi D, Mizukami T et al. Developme
 
 ### Reviewer guidance
 
-**The record is rejected because 5-FU is an orphan metabolite lacking a metabolic link from the administered tegafur dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Tegafur and 5-chloro-2,4-dihydroxypyridine are linked from an unidentifiable source S-1 rather than the drug itself. No metabolic link exists between tegafur and the measured compound 5-FU. The apparent clearance and volume parameters for 5-FU therefore lack a valid upstream dose connection. Extracted — tegafur: CLm/F 41.8 L/h/m2, Vm/F 23.6 L/m2.
+A reported unit could not be converted (CLm/F and Vm/F), so that value has no SI equivalent. Extracted — tegafur: CLm/F 41.8 L/h/m2, Vm/F 23.6 L/m2.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has S-1, the second reading tegafur; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

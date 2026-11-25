@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
-> Ethambutol clearance is recorded as 0.002 L/h, an implausibly low value that fails physiological plausibility checks for a two-compartment model.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ethambutol" model-id="Ethambutol_Deshpande2024_reference" status="rejected" stale="false" population="" measured-compound="ethambutol" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Deshpande D, Magombedze G, Srivastava S, Gumbo T. Antibacterial action of penici
 
 ### Reviewer guidance
 
-**Ethambutol clearance is recorded as 0.002 L/h, an implausibly low value that fails physiological plausibility checks for a two-compartment model.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted clearance of 0.002 L/h is several orders of magnitude lower than typical human values, triggering a magnitude-based rejection. A second reader disputed the parameter mapping, arguing that the 0.07 L/h value corresponds to clearance rather than intercompartmental clearance. This disagreement extends to the model structure, with the second reader identifying a one-compartment topology instead of the recorded two-compartment design. Extracted — ethambutol: CL 0.002 L/h, V 0.31 L, Q 0.07 L/h.
+Extracted — ethambutol: CL 0.002 L/h, V 0.31 L, Q 0.07 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.002, the second reading 0.07; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

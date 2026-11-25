@@ -8,7 +8,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="daridorexant" model-id="Daridorexant_Krause2023_food" status="rejected" stale="false" population="healthy subjects and patients with insomnia disorder (phase I-III pooled)" measured-compound="daridorexant" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="daridorexant" model-id="Daridorexant_Krause2023_food" status="rejected" stale="false" population="healthy adults and patients with insomnia" measured-compound="daridorexant" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokinetic modeling of daridorexant, a novel dual orexin receptor antagonist. CPT: pharmacometrics & systems pharmacology 12(1):74–86 (2023).
@@ -16,9 +16,9 @@ Krause A, Lott D, Brussee JM, Muehlan C, Dingemanse J. Population pharmacokineti
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with insomnia disorder (phase I-III pooled) · condition insomnia; healthy subjects; hepatic/renal impairment · age group adult.
+**Population:** healthy adults and patients with insomnia · condition insomnia · age group adult.
 
-**Dosing:** 5, 200 mg, oral.
+**Dosing:** 5, 200 mg, oral, multiple.
 
 ## Model
 
@@ -34,7 +34,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,6 +48,8 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
+Independently confirmed by `gpt-oss-120b`.
+
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
@@ -60,14 +62,31 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 ## Departures & gaps
 
 **Interpretation flags:**
+- unit_dimension_unknown: '50mg' (tlag)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=daridorexant
-- population split: 'food' subgroup of Krause_2023 (paper reports 5 populations: all data, final model estimate, all data, final model rse(%), all phase i data estimate, food, phase i data (intense pk) estimate)
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
+- population split: 'food' subgroup of Krause_2023 (paper reports 4 populations: all data, final model estimate, all phase i data estimate, food, phase i data (intense pk) estimate)
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
+
+_All readers agree on the compared fields of this record._
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -99,4 +118,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdaridorexant%5D%20Daridorexant_Krause2023_food&body=Drug%3A%20daridorexant%0ARecord%3A%20Daridorexant_Krause2023_food%0APaper%3A%20Krause_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_daridorexant/Daridorexant_Krause2023_food%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:11 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 12:26 UTC</sub>

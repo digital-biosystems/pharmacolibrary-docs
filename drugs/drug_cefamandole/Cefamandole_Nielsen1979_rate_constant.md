@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cefamandole was rejected because the cefamandole nafate-to-cefamandole hydrolysis-rate parameter has no reported value, leaving cefamandole without a supported path from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="cefamandole" model-id="Cefamandole_Nielsen1979_rate_constant" status="rejected" stale="false" population="dialysis patients and subjects with normal renal function" measured-compound="cefamandole" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -48,13 +48,13 @@ Nielsen RL, Wolen R, Luft FC, Ozawa T. Hydrolysis of cefamandole nafate in dialy
 
 ### Reviewer guidance
 
-**Cefamandole was rejected because the cefamandole nafate-to-cefamandole hydrolysis-rate parameter has no reported value, leaving cefamandole without a supported path from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record identifies cefamandole as formed from cefamandole nafate, but supplies no parameter value for the hydrolysis links to cefamandole or formate; the reported 0.292 L/h is intercompartmental clearance, not a hydrolysis rate. The second reader disputed the dose compound and measured compound and did not accept either hydrolysis link. Extracted — cefamandole: Q2 0.292 L/h, V 17.9 liters.
+Extracted — cefamandole: Q2 0.292 L/h, V 17.9 liters.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefamandole nafate, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

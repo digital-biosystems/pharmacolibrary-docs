@@ -22,15 +22,20 @@ Daridorexant is an orexin receptor antagonist used to treat insomnia. It is take
 |---|---|---|---|---|---|---|
 | daridorexant | parent | 450.93 | C23H23ClN6O2 | DrugBank | — | Krause_2023 |
 
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Krause_2023 · V1</text><circle cx="247.5" cy="30.0" r="4" fill="#ef6c00"><title>Krause_2023 · V1: 14.6 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Krause_2023 · V1</text><circle cx="325.6" cy="46.0" r="4" fill="#ef6c00"><title>Krause_2023 · V1: 24.4 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q64, Q30, Q1 — no SI value to build…</sub> | [Krause_2023_final_all_data_final_model_rse](drugs/drug_daridorexant/Daridorexant_Krause2023_final_all_data_final_model_rse.md) | — | 1-compartment (no model) | 3 (+3 cov.) | Krause A et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12877](https://doi.org/10.1002/psp4.12877) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ all_phase_i_data_estimate](drugs/drug_daridorexant/Daridorexant_Krause2023_all_phase_i_data_estimate.md) | — | 2-compartment (no model) | 8 (+6 cov.) |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ final](drugs/drug_daridorexant/Daridorexant_Krause2023_final.md) | — | 2-compartment (no model) | 8 (+7 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q65, Q95 — no SI value to build from</sub> | [Krause_2023_all_phase_i_data_estimate](drugs/drug_daridorexant/Daridorexant_Krause2023_all_phase_i_data_estimate.md) | — | 2-compartment (no model) | 11 (+6 cov.) | Krause A et al., Population pharmacokinetic modeling of…, CPT: pharmacometrics & syst… (2023) | [10.1002/psp4.12877](https://doi.org/10.1002/psp4.12877) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q95 — no SI value to build from</sub> | [↳ phase_i_data_intense_pk_estimate](drugs/drug_daridorexant/Daridorexant_Krause2023_phase_i_data_intense_pk_estimate.md) | — | 2-compartment (no model) | 9 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [↳ all_data_final_model_estimate](drugs/drug_daridorexant/Daridorexant_Krause2023_all_data_final_model_estimate.md) | — | 2-compartment (no model) | 10 (+7 cov.) |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ food](drugs/drug_daridorexant/Daridorexant_Krause2023_food.md) | — | 1-compartment (no model) | 0 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ phase_i_data_intense_pk_estimate](drugs/drug_daridorexant/Daridorexant_Krause2023_phase_i_data_intense_pk_estimate.md) | — | 2-compartment (no model) | 9 |  |  |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,24 +49,26 @@ Daridorexant is an orexin receptor antagonist used to treat insomnia. It is take
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 20:15 | 3:26 | 1/4/0 | 0/0/0 | 0/0/0 | 151,724/11,824 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-23 20:50 | 0:05 | 2/2/0 | 0/0/0 | 0/0/0 | 4,581/166 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 5  ·  extracted 0  ·  needs review 1  ·  rejected 4  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ufer_2022 | irrelevant | 2 | 0 | Abuse-potential PD study; PK only mentioned qualitatively ("consistent with earlier trials") with no numeric disposition parameters in the evidence. |
+| PGx | Krause_2023 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic model for daridorexant based on demographic and physiological covariates (weight, age, food status, etc.), but does not investigate or report the impact of any specific gene variants or genotypes on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Ufer_2022 | irrelevant | 2 | 0 | The study is an abuse potential (pharmacodynamic) study; the abstract only qualitatively states PK was consistent with earlier trials without reporting any quantitative PK parameters (CL, V, half-life, etc.). |
+| PGx | Ufer_2022 | not_relevant | 0 | 0 | The study assesses abuse potential in a general population and does not report any pharmacogenomic analysis or genotype-stratified PK/PD results. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdaridorexant%5D&body=Drug%3A%20daridorexant%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_daridorexant/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 20:11 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 12:26 UTC</sub>

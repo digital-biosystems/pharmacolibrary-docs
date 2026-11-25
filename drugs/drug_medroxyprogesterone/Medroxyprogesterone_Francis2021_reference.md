@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Medroxyprogesterone acetate bioavailability F was missing an explicit estimate, so a library placeholder was used instead of a study-derived value.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="medroxyprogesterone" model-id="Medroxyprogesterone_Francis2021_reference" status="needs_review" stale="false" population="women with HIV and/or tuberculosis" measured-compound="medroxyprogesterone acetate" parameterization="mechanistic" topology="1C"></div>
 
@@ -62,13 +62,13 @@ Francis J, Mngqibisa R, McIlleron H, Kendall MA, Wu X, Dooley KE et al. A Semime
 
 ### Reviewer guidance
 
-**Medroxyprogesterone acetate bioavailability F was missing an explicit estimate, so a library placeholder was used instead of a study-derived value.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).**
 
-The record includes covariate effects for anti-tuberculosis treatment and efavirenz on clearance, but these scenarios were not simulated. Only the reference individual was simulated, leaving the impact of these factors unverified. Extracted — medroxyprogesterone: CL 47.2 L/h, V 8.91e+03 L, fu 76, kabs 0.578 1/day, kel 0.0193 1/day.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — medroxyprogesterone: CL 47.2 L/h, V 8.91e+03 L, fu 76, kabs 0.578 1/day, kel 0.0193 1/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has depot medroxyprogesterone, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -196,7 +196,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.471, 0 of 1 reader(s) agree | 0.471 | cross-check disputed by a second reader: verdict disputed, agreement 0.471, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.471 (8 of 17 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.471 | cross-check contradicted by a second reader: verdict disputed; agreement 0.471 (8 of 17 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

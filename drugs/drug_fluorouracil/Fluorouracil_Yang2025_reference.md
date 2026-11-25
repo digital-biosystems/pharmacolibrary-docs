@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is for zolbetuximab, not fluorouracil, so the extracted clearance and volume parameters do not describe the target drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Yang2025_reference" status="rejected" stale="false" population="" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Yang J, Yamada A, Shitara K, Xu RH, Ilson D, Lonardi S et al. Clinical Pharmacol
 
 ### Reviewer guidance
 
-**The record is for zolbetuximab, not fluorouracil, so the extracted clearance and volume parameters do not describe the target drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source paper focuses on the pharmacokinetics of zolbetuximab, a monoclonal antibody, where fluorouracil is only a concomitant chemotherapy agent. The parameters for clearance (0.0117 L/h) and volume (5.53 L) therefore likely refer to the wrong molecule. A second reader disagreed on five extracted values, indicating further uncertainty in the data mapping. Extracted — fluorouracil: CL 0.0117 L/h, V 5.53 L.
+Extracted — fluorouracil: CL 0.0117 L/h, V 5.53 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q311: this record has 135, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -125,7 +125,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.583, 0 of 1 reader(s) agree | 0.583 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.583 (7 of 12 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.583 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

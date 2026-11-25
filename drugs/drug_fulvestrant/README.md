@@ -24,7 +24,7 @@ Fulvestrant is a selective estrogen receptor degrader used to treat advanced bre
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Chigutsa_2026_TS](drugs/drug_fulvestrant/pd_Chigutsa_2026_TS.md) | Tumor size ← abemaciclib + fulvestrant · disease-progression model | — | Chigutsa E et al., Longitudinal Tumor Size and Survival Mo…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70212](https://doi.org/10.1002/cpt.70212) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chigutsa_2026_TS](drugs/drug_fulvestrant/pd_Chigutsa_2026_TS.md) | Tumor size ← abemaciclib + fulvestrant · disease-progression model | — | Chigutsa E et al., Longitudinal Tumor Size and Survival Mo…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70212](https://doi.org/10.1002/cpt.70212) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

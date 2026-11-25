@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The clindamycin oral clearance value of 55.1 was rejected due to a unit conflict between inverse time and volume per time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit h−1 (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="clindamycin" model-id="Clindamycin_Solli2023_reference" status="rejected" stale="false" population="adults receiving chronic haemodialysis" measured-compound="clindamycin and amoxicillin" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Solli CN, Bock M, Kaur KP, Kristensen JH, Greibe E, Hansen HP et al. Plasma conc
 
 ### Reviewer guidance
 
-**The clindamycin oral clearance value of 55.1 was rejected due to a unit conflict between inverse time and volume per time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit h−1 (1 / [time]) vs [length] ** 3 / [time].**
 
-The parameter for total clearance is recorded with units of h−1, which represents inverse time rather than volume per time required for clearance. This dimensional mismatch prevented the value from being converted to standard SI units. A second reader confirmed the extracted value of 55.1 but noted the unit dimension error remains the primary issue. Extracted — clindamycin and amoxicillin: CL/F 55.1 h−1.
+A reported unit could not be converted (CL/F), so that value has no SI equivalent. None of the extracted parameters is clindamycin's own; they describe clindamycin and amoxicillin. Extracted — clindamycin and amoxicillin: CL/F 55.1 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clindamycin and amoxicillin/clavulanic acid, the second reading clindamycin; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

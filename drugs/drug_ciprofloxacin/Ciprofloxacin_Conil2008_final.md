@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability was unreported and defaulted, while peripheral transfer rates were omitted despite a one-compartment structure, leaving 5 of 7 parameters covered.
+> F use library defaults, not estimates from this paper; t3_param_coverage (+1 more).
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Conil2008_final" status="needs_review" stale="false" population="intensive care patients" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Conil JM, Georges B, de Lussy A, Khachman D, Seguin T, Ruiz S et al. Ciprofloxac
 
 ### Reviewer guidance
 
-**Bioavailability was unreported and defaulted, while peripheral transfer rates were omitted despite a one-compartment structure, leaving 5 of 7 parameters covered.**
+**F use library defaults, not estimates from this paper; t3_param_coverage (+1 more).**
 
-The record lists a one-compartment structure yet includes peripheral transfer rate constants, creating a mismatch where 5 of 7 expected parameters were covered. Bioavailability lacked an extracted value, so library placeholders were used instead of estimates from the paper. Consequently, the simulated profile relies on unreported conventions rather than study-specific estimates. Extracted — ciprofloxacin: V 62 L, kel 0.216 h -1, k12 0.499 h -1, k21 0.12 h -1, CL 13.6 L/h, t1/2z 3.7 h, kabs 1 h−1, tlag 0.33 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ciprofloxacin: V 62 L, kel 0.216 h -1, k12 0.499 h -1, k21 0.12 h -1, CL 13.6 L/h, t1/2z 3.7 h, kabs 1 h−1, tlag 0.33 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,7 +147,7 @@ _All readers agree on the compared fields of this record._
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  | no second reading of this record |
-| T1_cmax | reference | skipped |  | 0.001895 | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.001895 | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

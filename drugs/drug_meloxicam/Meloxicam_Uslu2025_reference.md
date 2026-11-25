@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> The two-compartment model for meloxicam was rejected because the peripheral compartment, with a volume of 0.08 L/kg, is an unreachable orphan node with no defined link to the central compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Uslu2025_reference" status="rejected" stale="false" population="" measured-compound="meloxicam" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Uslu M, Corum O, Yazar E. Effect of Meloxicam on the Pharmacokinetics of Cefquin
 
 ### Reviewer guidance
 
-**The two-compartment model for meloxicam was rejected because the peripheral compartment, with a volume of 0.08 L/kg, is an unreachable orphan node with no defined link to the central compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record specifies a two-compartment structure with a peripheral volume (V2) of 0.08 L/kg, yet the connectivity check identified this compartment as unreachable from the dose. Consequently, the model structure is invalid because the peripheral volume cannot be populated by the drug. A secondary reader also disagreed with the extracted parameter values, citing nulls for the volumes and other kinetic constants. Extracted — meloxicam: CL 0.17 L/h/kg, V1 0.13 L/kg, V2 0.08 L/kg.
+Extracted — meloxicam: CL 0.17 L/h/kg, V1 0.13 L/kg, V2 0.08 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q301: this record has 1.1, the second reading none; it also differs on 9 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Trastuzumab deruxtecan clearance and volume of distribution lack values, leaving the parent drug compartment unparameterized.
+> No value for trastuzumab deruxtecan's clearance and volume of distribution — all 3 extracted parameters describe released drug, not trastuzumab deruxtecan; the covariate scenarios were not simulated (+3 more).
 
 <div class="pk-model-meta" hidden drug="trastuzumab deruxtecan" model-id="TrastuzumabDeruxtecan_Yin2021_final_final_released_drug_mode" status="model_quarantined" stale="false" population="patients with HER2-positive breast cancer and other solid tumors" measured-compound="trastuzumab_deruxtecan" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -58,13 +58,13 @@ Yin O, Xiong Y, Endo S, Yoshihara K, Garimella T, AbuTarif M et al. Population P
 
 ### Reviewer guidance
 
-**Trastuzumab deruxtecan clearance and volume of distribution lack values, leaving the parent drug compartment unparameterized.**
+**No value for trastuzumab deruxtecan's clearance and volume of distribution — all 3 extracted parameters describe released drug, not trastuzumab deruxtecan; the covariate scenarios were not simulated (+3 more).**
 
-The record provides values only for the released drug metabolite, while trastuzumab deruxtecan’s own clearance and volume of distribution remain unset. Consequently, a library placeholder stood in for the missing parent drug parameters, causing the model to be held back. Additionally, the defined covariate effects on the released drug were not exercised during simulation. Extracted — released drug: CL 19.2 L/h, V 42 L, kfm 0.0159 1/h.
+The model was built, but trastuzumab deruxtecan's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — released drug: CL 19.2 L/h, V 42 L, kfm 0.0159 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trastuzumab_deruxtecan, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -193,7 +193,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_rate_constant_conversion |  | pass | Krel (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.211, 0 of 1 reader(s) agree | 0.211 | cross-check disputed by a second reader: verdict disputed, agreement 0.211, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.211 (4 of 19 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.211 | cross-check contradicted by a second reader: verdict disputed; agreement 0.211 (4 of 19 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmin_ss | reference | skipped | 23 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">

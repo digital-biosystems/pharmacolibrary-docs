@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;sunitinib&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/&quot;},{&quot;label&quot;:&quot;Liu_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sunitinib_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sunitinib_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sunitinib_Naeem2024_reference&quot;,&quot;label&quot;:&quot;Naeem_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Naeem2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sunitinib_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sunitinib_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> This paper's disposition core is incomplete; the clearance plausibility check could not be computed.
+> Only volume was extracted — no clearance.
 
-<div class="pk-model-meta" hidden drug="sunitinib" model-id="Sunitinib_Liu2020_reference" status="needs_review" stale="false" population="rats administered high-dose sunitinib" measured-compound="sunitinib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sunitinib" model-id="Sunitinib_Liu2020_reference" status="needs_review" stale="false" population="rats" measured-compound="sunitinib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Liu HC, Zhou XT, Zheng YS, He H, Liu XQ. PK/PD modeling based on NO-ET homeostasis for improving management of sunitinib-induced hypertension in rats. Acta pharmacologica Sinica 41(5):719–728 (2020).
@@ -17,7 +17,7 @@ Liu HC, Zhou XT, Zheng YS, He H, Liu XQ. PK/PD modeling based on NO-ET homeostas
 
 ## Population and dosing
 
-**Population:** rats administered high-dose sunitinib · condition sunitinib-induced hypertension · n = 6.
+**Population:** rats · condition healthy · n = 12.
 
 **Dosing:** 1869 mg, oral, multiple, every 24 h.
 
@@ -27,7 +27,7 @@ Liu HC, Zhou XT, Zheng YS, He H, Liu XQ. PK/PD modeling based on NO-ET homeostas
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -35,14 +35,15 @@ Liu HC, Zhou XT, Zheng YS, He H, Liu XQ. PK/PD modeling based on NO-ET homeostas
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_a^{\mathrm{sunitinib}}$$\end{document}kasunitinib | kabs | 1.14 | 1/h |
-| Vsunitinib | V | 87821.75 | mL/kg |
-| EET | equation variable | 93.38 |  |
-| CL Schmulenson et al. [15] | CL | 223.0 | L/h |
+| k2sunitinib | k21 | 0.019 | 1/h |
+| k1 | k12 | 250.04 | 1/h |
+| k5SBPout | equation variable | 9.69 |  |
+| ka (h−1) | kabs | 13.9 | h−1 |
+| V (L) | V | 24.39 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.308), qwen3.8-27b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +53,11 @@ Liu HC, Zhou XT, Zheng YS, He H, Liu XQ. PK/PD modeling based on NO-ET homeostas
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete; the clearance plausibility check could not be computed.**
+**Only volume was extracted — no clearance.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Valderrama_2025) cannot stand in for this paper's evidence. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — sunitinib: kabs 1.14 1/h, V 8.78e+04 mL/kg, CL 223 L/h.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — sunitinib: k21 0.019 1/h, k12 250 1/h, kabs 13.9 h−1, V 24.4 L.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl schmulenson et al. [15]: this record has 223.0, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k1: this record has 250.04, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,10 +65,11 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$k_a^{\mathrm{sunitinib}}$$\end{document}kasunitinib | `Q49` · kabs | 1.14 | 1/h | 0.0003167 | 1/s | 1/h | llm (0.6) | Tab2:row2:col1 |
-| Vsunitinib | `Q61` · V | 87821.75 | mL/kg | 6.148 | m3 | L | llm (0.6) | Tab2:row3:col1 |
-| EET | `Q900` · equation variable | 93.38 |  |  |  |  | llm (0.6) | Tab2:row6:col1 |
-| CL Schmulenson et al. [15] | `Q22` · CL | 223.0 | L/h | 6.194e-05 | m3/s | L/h | review_gapfill (0.7) | Valderrama_2025:review |
+| k2sunitinib | `Q302` · k21 | 0.019 | 1/h | 5.278e-06 | 1/s | 1/h | llm (0.6) | Liu_2020_table_2:row2:col1, Liu_2020_table_2:row2:col4 |
+| k1 | `Q301` · k12 | 250.04 | 1/h | 0.06946 | 1/s | 1/h | llm (0.6) | Liu_2020_table_2:row5:col1, Liu_2020_table_2:row5:col4, Liu_2020_table_2:row5:col5 |
+| k5SBPout | `Q900` · equation variable | 9.69 |  | 9.69 |  |  | llm (0.6) | Liu_2020_table_2:row13:col1, Liu_2020_table_2:row13:col4, Liu_2020_table_2:row13:col5 |
+| ka (h−1) | `Q49` · kabs | 13.9 | h−1 | 0.003861 | 1/s | 1/h | exact (1) | Liu_2020:other_prose |
+| V (L) | `Q61` · V | 24.39 | L | 0.02439 | m3 | L | exact (1) | Liu_2020:other_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,57 +79,61 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped PD-category row '\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$k_{\\mathrm{out}}^{\\mathrm{sunitinib}}$$\\end{document}koutsunitinib' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row4:col1'])
-- dropped PD-category row '\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$k_{\\mathrm{in}}^{\\mathrm{NO}}$$\\end{document}kinNO' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row5:col1'])
-- dropped duplicate Q900 ('k1', value '250.04') — already have one for this compound
-- dropped PD-category row '\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$k_{\\mathrm{out}}^{\\mathrm{NO}}$$\\end{document}koutNO' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row8:col1'])
-- dropped PD-category row 'k2' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row10:col1'])
-- dropped PD-category row '\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$k_{\\mathrm{out}}^{\\mathrm{ET}}$$\\end{document}koutET' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row11:col1'])
-- dropped PD-category row '\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$k_{\\mathrm{in}}^{\\mathrm{SBP}}$$\\end{document}kinSBP' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row12:col1'])
-- dropped duplicate Q900 ('k3', value '0.23') — already have one for this compound
-- dropped unlinked row (NIL): 'k4' — extend the ontology if this is a real PK parameter (source ['Tab2:row14:col1'])
-- dropped PD-category row '\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$k_{\\mathrm{out}}^{\\mathrm{SBP}}$$\\end{document}koutSBP' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab2:row15:col1'])
-- implicit units: '\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$k_a^{\\mathrm{sunitinib}}$$\\end{document}kasunitinib' → 1/h (from the popPK convention: 'The text identifies ka as a first-order absorption rate constant but states no unit; 1/h is the conventional unit for a ')
-- implicit units: 'Vsunitinib' → mL/kg (from the popPK convention: 'The text identifies V as an apparent volume but states no unit. Given the body-weight-normalized dose and the estimate m')
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (Vsunitinib)
+- dropped unlinked row (NIL): 'k1sunitinib' — extend the ontology if this is a real PK parameter (source ['Liu_2020_table_2:row0:col1', 'Liu_2020_table_2:row0:col4'])
+- dropped unlinked row (NIL): 'Vsunitinib' — extend the ontology if this is a real PK parameter (source ['Liu_2020_table_2:row1:col1', 'Liu_2020_table_2:row1:col4'])
+- dropped unlinked row (NIL): 'k1NOin' — extend the ontology if this is a real PK parameter (source ['Liu_2020_table_2:row3:col1', 'Liu_2020_table_2:row3:col4', 'Liu_2020_table_2:row3:col5'])
+- dropped unlinked row (NIL): 'EET' — extend the ontology if this is a real PK parameter (source ['Liu_2020_table_2:row4:col1', 'Liu_2020_table_2:row4:col4', 'Liu_2020_table_2:row4:col5'])
+- dropped unlinked row (NIL): 'k2NOout' — extend the ontology if this is a real PK parameter (source ['Liu_2020_table_2:row6:col1', 'Liu_2020_table_2:row6:col4', 'Liu_2020_table_2:row6:col5'])
+- dropped duplicate Q302 ('k2', value '1349.4') — already have one for this compound
+- dropped PD-category row 'k4ETout' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Liu_2020_table_2:row9:col1', 'Liu_2020_table_2:row9:col4', 'Liu_2020_table_2:row9:col5'])
+- dropped unlinked row (NIL): 'k1SBPin' — extend the ontology if this is a real PK parameter (source ['Liu_2020_table_2:row10:col1', 'Liu_2020_table_2:row10:col4', 'Liu_2020_table_2:row10:col5'])
+- dropped unlinked row (NIL): 'k3' — extend the ontology if this is a real PK parameter (source ['Liu_2020_table_2:row11:col1', 'Liu_2020_table_2:row11:col4', 'Liu_2020_table_2:row11:col5'])
+- dropped unlinked row (NIL): 'k4' — extend the ontology if this is a real PK parameter (source ['Liu_2020_table_2:row12:col1', 'Liu_2020_table_2:row12:col4', 'Liu_2020_table_2:row12:col5'])
+- salvaged Q49 ('ka (h−1)'=13.9) from results prose — parameter table was unreadable
+- salvaged Q61 ('V (L)'=24.39) from results prose — parameter table was unreadable
+- implicit units: 'k2sunitinib' → 1/h (from the popPK convention: "The parameter k2sunitinib is described in the table caption as a 'First-order transfer rate constant'. In population pha")
+- implicit units: 'k1' → 1/h (from the popPK convention: "The parameter k1 is described in the table caption as a 'First-order transfer rate constant'. Consistent with standard P")
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (V (L))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sunitinib
-- gap-filled Q22 (CL) from Valderrama_2025's review values (primary lacked it)
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at "Needs review" — not promoted
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell Tab2:row2:col2 = '44.74%'
-- unparsed cell Tab2:row3:col2 = '0.78%'
-- unparsed cell Tab2:row4:col2 = '5.26%'
-- unparsed cell Tab2:row5:col2 = '10.64%'
-- unparsed cell Tab2:row6:col2 = '1.25%'
-- unparsed cell Tab2:row7:col2 = '0.18%'
-- unparsed cell Tab2:row8:col2 = '15.91%'
-- unparsed cell Tab2:row10:col2 = '5.34%'
-- unparsed cell Tab2:row11:col2 = '84.62%'
-- unparsed cell Tab2:row12:col2 = '4.89%'
-- unparsed cell Tab2:row13:col2 = '4.35%'
-- unparsed cell Tab2:row14:col2 = '4.35%'
-- unparsed cell Tab2:row15:col2 = '4.64%'
-- transposed table Liu_2020_table_1: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- companion parameter table 1 transcribed (10 record(s))
-- LLM selected parameter table(s) 1
-- dropped sensitivity-analysis table(s) 2 from the LLM selection — perturbations of a model, not a model
+- table Liu_2020_table_2: unspecified_interval_bound
+- table Liu_2020_table_2: unbound_uncertainty
+- table Liu_2020_table_2: units_need_context
+- table Liu_2020_table_2: ragged_grid
+- table Liu_2020_table_2: unparsed_numeric_cell
+- LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.308 (4/13 fields) | 9 |
 | `qwen3.8-27b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[k1]` | 250.04 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k1sbpin]` |  | 10.84 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k1sunitinib]` |  | 1.14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k2]` |  | 1349.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k2sunitinib]` | 0.019 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k5sbpout]` | 9.69 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 13.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 24.39 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vsunitinib]` |  | 87821.75 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cl schmulenson et al. [15]]` | 223.0 |  | only_one_extracted |
 
 </details>
@@ -142,16 +148,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Valderrama_2025:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Tab2:row2:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab2:row3:col1'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 223 | ['Valderrama_2025:review'] |
+| C5_dimension_Q301 | pass | 1 / [time] |  | ['Liu_2020_table_2:row5:col1', 'Liu_2020_table_2:row5:col4', 'Liu_2020_table_2:row5:col5'] |
+| C5_dimension_Q302 | pass | 1 / [time] |  | ['Liu_2020_table_2:row2:col1', 'Liu_2020_table_2:row2:col4'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 223 L/h | ['Valderrama_2025:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 6.15e+03 L | ['Tab2:row3:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 24.4 L | ['Liu_2020:other_prose'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -185,4 +188,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsunitinib%5D%20Sunitinib_Liu2020_reference&body=Drug%3A%20sunitinib%0ARecord%3A%20Sunitinib_Liu2020_reference%0APaper%3A%20Liu_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sunitinib/Sunitinib_Liu2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 07:31 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 15:25 UTC</sub>

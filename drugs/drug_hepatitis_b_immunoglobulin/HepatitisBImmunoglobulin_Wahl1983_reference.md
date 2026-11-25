@@ -18,7 +18,7 @@ Wahl M, Hermodsson S, Kjellman H, Iwarson S. Recovery and turnover rate of hepat
 
 **Population:** healthy female volunteers · condition healthy · age group adult.
 
-**Dosed compound ≠ measured compound:** dosed hepatitis B immunoglobulin, measured anti-HBs.
+**Dosed compound ≠ measured compound:** dosed hepatitis_b_immunoglobulin, measured anti-HBs.
 
 ## Model
 
@@ -48,7 +48,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hepatitis B immunoglobulin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hepatitis_b_immunoglobulin, the second reading hepatitis B immunoglobulin; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -56,7 +56,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=anti-HBs
-- review gap-fill skipped: this record measures 'anti-HBs', not hepatitis_b_immunoglobulin — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available; abstract in Wahl_1983_metadata.yaml carries no parameter-bearing sentence
@@ -64,7 +63,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -74,8 +73,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | hepatitis B immunoglobulin | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | anti-HBs | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | hepatitis_b_immunoglobulin | hepatitis B immunoglobulin | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | anti-HBs | hepatitis B immunoglobulin | mismatch |
 
 </details>
 
@@ -115,4 +114,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhepatitis_b_immunoglobulin%5D%20HepatitisBImmunoglobulin_Wahl1983_reference&body=Drug%3A%20hepatitis_b_immunoglobulin%0ARecord%3A%20HepatitisBImmunoglobulin_Wahl1983_reference%0APaper%3A%20Wahl_1983%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hepatitis_b_immunoglobulin/HepatitisBImmunoglobulin_Wahl1983_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:16 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:05 UTC</sub>

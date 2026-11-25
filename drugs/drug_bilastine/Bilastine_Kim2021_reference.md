@@ -41,7 +41,7 @@ Kim C, Lo Re V, Rodriguez M, Lukas JC, Leal N, Campo C et al. Application of a d
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,6 +54,8 @@ Kim C, Lo Re V, Rodriguez M, Lukas JC, Leal N, Campo C et al. Application of a d
 **CL and V1 have no unit.**
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — bilastine: V1/F 66.9 L, V2/F 36 L, CL/F 12.8 L/h, Q/F 1.4 L/h, kabs 1.28 1/h, CL 8.91, V1 10.3.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cv (%) cl: this record has 8.91, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -99,6 +101,30 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 - LLM selected parameter table(s) 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.714 (10/14 fields) | 4 |
+
+<details><summary>4 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cv (%) cl]` | 8.91 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cv (%) q]` |  | 8.51 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cv (%) vp]` |  | 10.33 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[senescence model (20 mg p.o.) f = 61%]` |  |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;mitomycin&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/&quot;},{&quot;label&quot;:&quot;Rump_2002 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mitomycin_den1983_reference&quot;,&quot;label&quot;:&quot;den_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/Mitomycin_den1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> AUC has no unit; the clearance plausibility check could not be computed.
+> The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Rump2002_reference" status="needs_review" stale="false" population="patients with liver metastases undergoing chemoembolization" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Rump2002_reference" status="needs_review" stale="false" population="adults with liver metastases" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rump AF, Woschée U, Theisohn M, Fischbach R, Heindel W, Lackner K et al. Pharmacokinetics of intra-arterial mitomycin C in the chemoembolization treatment of liver metastases with polyvinylalcohol or degradable starch microspheres. European journal of clinical pharmacology 58(7):459–465 (2002).
@@ -16,7 +17,7 @@ Rump AF, Woschée U, Theisohn M, Fischbach R, Heindel W, Lackner K et al. Pharma
 
 ## Population and dosing
 
-**Population:** patients with liver metastases undergoing chemoembolization · condition liver metastases · n = 25.
+**Population:** adults with liver metastases · condition liver metastases · age group adult.
 
 ## Model
 
@@ -36,11 +37,11 @@ Rump AF, Woschée U, Theisohn M, Fischbach R, Heindel W, Lackner K et al. Pharma
 | Cl | CL | 757 | ml/min |
 | T(1/2 alpha) | t1/2α | 5.8 | min |
 | T(1/2 beta) | t1/2β | 50.4 | min |
-| AUC | AUC | 1472 | microg min/l per 1 mg MMC |
+| AUC | AUC | 1472 | ng*h/mL |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +51,11 @@ Rump AF, Woschée U, Theisohn M, Fischbach R, Heindel W, Lackner K et al. Pharma
 
 ### Reviewer guidance
 
-**AUC has no unit; the clearance plausibility check could not be computed.**
+**The clearance plausibility check could not be computed.**
 
-Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — mitomycin: Cmax 913 ng/ml, tmax 7.7 min, V 0.27 l/kg, CL 757 ml/min, t1/2α 5.8 min, t1/2β 50.4 min, AUC 1.47e+03 microg min/l per 1 mg MMC.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — mitomycin: Cmax 913 ng/ml, tmax 7.7 min, V 0.27 l/kg, CL 757 ml/min, t1/2α 5.8 min, t1/2β 50.4 min, AUC 1.47e+03 ng*h/mL.
 
-Independently confirmed by `qwen3.8-27b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mitomycin C, the second reading mitomycin; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -62,13 +63,13 @@ Independently confirmed by `qwen3.8-27b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| C(max) | `Q32` · Cmax | 913 | ng/ml |  |  | ng/ml | llm (0.6) | Rump_2002:abstract |
+| C(max) | `Q32` · Cmax | 913 | ng/ml | 0.000913 | kg/m3 | ng/ml | llm (0.6) | Rump_2002:abstract |
 | T(max) | `Q56` · tmax | 7.7 | min | 462 | s | min | llm (0.6) | Rump_2002:abstract |
 | V(c) | `Q61` · V | 0.27 | l/kg | 0.0189 | m3 | l/kg | exact (1) | Rump_2002:abstract |
 | Cl | `Q22` · CL | 757 | ml/min | 1.262e-05 | m3/s | ml/min | exact (1) | Rump_2002:abstract |
 | T(1/2 alpha) | `Q59` · t1/2α | 5.8 | min | 348 | s | min | llm (0.6) | Rump_2002:abstract |
 | T(1/2 beta) | `Q60` · t1/2β | 50.4 | min | 3024 | s | min | llm (0.6) | Rump_2002:abstract |
-| AUC | `Q88` · AUC | 1472 | microg min/l per 1 mg MMC |  |  | (min·µg)/(mg·l·mM·c·per1) | exact (1) | Rump_2002:abstract, Rump_2002:abstract |
+| AUC | `Q88` · AUC | 1472 | ng*h/mL |  |  | ng*h/mL | exact (1) | Rump_2002:abstract, Rump_2002:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,29 +79,44 @@ Independently confirmed by `qwen3.8-27b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q61 ('V(ss)', value '0.59') — already have one for this compound
+- dropped duplicate Q61 ('V(ss)', value 0.59) — already have one for this compound
 - unit_dimension_unknown: 'microg min/l per 1 mg MMC' (AUC)
+- implicit units: 'AUC' → ng*h/mL (from the popPK convention: 'Area Under the Curve (AUC) is typically expressed as the product of the concentration unit and the time unit. In the abs')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mitomycin C
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Rump_2002_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 | `qwen3.8-27b` | confirmed | 1.0 (9/9 fields) | none |
 
-_All readers agree on the compared fields of this record._
+<details><summary>12 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc]` |  | 1472 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 1472 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c]` |  | 913 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c]` | 913 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 757 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 757 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t]` |  | 7.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t]` | 7.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` |  | 0.27 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` | 0.27 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | mitomycin C | mitomycin | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | mitomycin C | mitomycin | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -121,7 +137,7 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q59 | pass | [time] |  | ['Rump_2002:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Rump_2002:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Rump_2002:abstract'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | microg min/l per 1 mg MMC | ['Rump_2002:abstract', 'Rump_2002:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Rump_2002:abstract', 'Rump_2002:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 757 | ['Rump_2002:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 45.4 L/h | ['Rump_2002:abstract'] |
@@ -159,4 +175,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitomycin%5D%20Mitomycin_Rump2002_reference&body=Drug%3A%20mitomycin%0ARecord%3A%20Mitomycin_Rump2002_reference%0APaper%3A%20Rump_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitomycin/Mitomycin_Rump2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:58 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:58 UTC</sub>

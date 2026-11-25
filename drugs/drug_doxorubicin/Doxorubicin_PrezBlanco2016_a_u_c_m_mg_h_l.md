@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The doxorubicin clearance value of 62 l/h is implausibly high, suggesting a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_PrezBlanco2016_a_u_c_m_mg_h_l" status="rejected" stale="false" population="adults with non-Hodgkin&#39;s lymphoma" measured-compound="doxorubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -48,13 +48,13 @@ Pérez-Blanco JS, Santos-Buelga D, Fernández de Gatta MD, Hernández-Rivas JM, 
 
 ### Reviewer guidance
 
-**The doxorubicin clearance value of 62 l/h is implausibly high, suggesting a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports doxorubicin clearance as 62 l/h, which falls outside the physiological window for this adult population. Although the volume of distribution is 0.0764 l, the clearance magnitude is inconsistent with typical pharmacokinetics. The primary reason for rejection is this implausible clearance value indicating a potential extraction error. Extracted — doxorubicin: CL 62 l h À1, V 0.0764 l.
+Extracted — doxorubicin: CL 62 l h À1, V 0.0764 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has doxorubicin → doxorubicinol (metabolism), the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

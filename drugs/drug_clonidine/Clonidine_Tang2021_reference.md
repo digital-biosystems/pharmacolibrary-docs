@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The clonidine record was held because the second reader disagreed with the extracted total clearance and volume of distribution values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Tang2021_reference" status="needs_review" stale="false" population="neonates/infants with neonatal opioid withdrawal syndrome" measured-compound="clonidine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Tang F, Ng CM, Bada HS, Leggas M. Clinical pharmacology and dosing regimen optim
 
 ### Reviewer guidance
 
-**The clonidine record was held because the second reader disagreed with the extracted total clearance and volume of distribution values.**
+**cross_check_disputed; x1_cross_check.**
 
-The cross-check agreement ratio of 0.375 fell below the required 0.5 threshold, indicating a failure in the verification process. The second reader could not confirm the total clearance value of 75.0 L/h or the volume of distribution value of 2.8 L/kg. Consequently, the model record was flagged as needing further review due to these specific parameter discrepancies. Extracted — clonidine: CL 75 L/h, V 2.8 L/kg.
+Extracted — clonidine: CL 75 L/h, V 2.8 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 75, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -127,7 +127,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check agreement 0.375 is below 0.5: verdict partial, agreement 0.375, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.375 (3 of 8 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.375 | cross-check agreement 0.375 is below 0.5: verdict partial; agreement 0.375 (3 of 8 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

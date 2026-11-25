@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The oral absorption rate constant for omadacycline was rejected due to a unit dimension mismatch conflicting with its half-life meaning.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit h −1 (1 / [time]) vs [time].
 
 <div class="pk-model-meta" hidden drug="omadacycline" model-id="Omadacycline_Yang2022_oral_administration_a" status="rejected" stale="false" population="healthy adults" measured-compound="omadacycline" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Yang H, Huang Z, Chen Y, Zhu Y, Cao G, Wang J et al. Pharmacokinetics, Safety an
 
 ### Reviewer guidance
 
-**The oral absorption rate constant for omadacycline was rejected due to a unit dimension mismatch conflicting with its half-life meaning.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit h −1 (1 / [time]) vs [time].**
 
-The record lists the parameter as a half-life (t1/2ka) with a meaning describing absorption time, but the assigned identifier expects a first-order rate constant. The recorded value of 0.967 is given in units of h⁻¹, which contradicts the required dimension of [time] for a half-life parameter. Extracted — omadacycline: V1 110 L, V2 215 L, CL 14.5 L/h, Q 38.8 L/h, t1/2ka 0.967 h −1, tlag 0.678 h, AUC∞ 5.7.
+A reported unit could not be converted (t1/2ka ), so that value has no SI equivalent. Extracted — omadacycline: V1 110 L, V2 215 L, CL 14.5 L/h, Q 38.8 L/h, t1/2ka 0.967 h −1, tlag 0.678 h, AUC∞ 5.7.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[k a1].parameter_id`: this record has Q95, the second reading Q49. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

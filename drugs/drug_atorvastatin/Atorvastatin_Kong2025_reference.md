@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because the distribution rate constant and absorption lag time were left at generic library placeholders instead of using estimates from the paper.
+> K12 use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Kong2025_reference" status="needs_review" stale="false" population="healthy volunteers and end-stage renal disease patients" measured-compound="atorvastatin" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Kong W, Pan Y, Wu Y, Hu Y, Jiang Z, Tian X et al. Microdose Cocktail Study Revea
 
 ### Reviewer guidance
 
-**The record was held back because the distribution rate constant and absorption lag time were left at generic library placeholders instead of using estimates from the paper.**
+**K12 use library defaults, not estimates from this paper; t6_deviations.**
 
-The model builder used generic library values for the distribution rate constant and absorption lag time, meaning the simulated profile relies on assumptions not supported by this paper's data. Additionally, the second reader disagrees on several parameter uncertainties, citing an albumin covariate value of -6.42 that is missing from this record. Extracted — atorvastatin: kabs 7.53 1/h, CL/F 363 L/h, V1/F 835 L, V2/F 5.83e+03 L, Q/F 3.92e+03 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — atorvastatin: kabs 7.53 1/h, CL/F 363 L/h, V1/F 835 L, V2/F 5.83e+03 L, Q/F 3.92e+03 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atorvastatin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

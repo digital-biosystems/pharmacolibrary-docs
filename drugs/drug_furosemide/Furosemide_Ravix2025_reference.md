@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model record for furosemide is invalid because the source paper studies piperacillin, mentioning furosemide only as a renal covariate.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Ravix2025_reference" status="rejected" stale="false" population="" measured-compound="furosemide" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Ravix A, Di Paolo ER, Dao K, Perez MH, Crisinel PA, Buclin T et al. Piperacillin
 
 ### Reviewer guidance
 
-**The model record for furosemide is invalid because the source paper studies piperacillin, mentioning furosemide only as a renal covariate.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The review identified the paper subject as piperacillin, not furosemide, which disqualifies the record. The source text confirms furosemide appears merely as a covariate marker for renal dysfunction in a cited study. Consequently, the extracted clearance, volume, and intercompartmental parameters do not reflect a fitted furosemide model. Extracted — furosemide: CL 9.3 L/h, V1 8.4 L, V2 2 L, Q 0.63 L/h.
+Extracted — furosemide: CL 9.3 L/h, V1 8.4 L, V2 2 L, Q 0.63 L/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Fluorouracil apparent clearance was recorded as 1190 L/h, conflicting with the required time dimension for its metabolic rate constant.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l/h ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Blesch2003_reference" status="rejected" stale="false" population="patients with cancer" measured-compound="5-fluorouracil" parameterization="apparent" topology="general_linear"></div>
 
@@ -59,13 +59,13 @@ Blesch KS, Gieschke R, Tsukamoto Y, Reigner BG, Burger HU, Steimer JL. Clinical 
 
 ### Reviewer guidance
 
-**Fluorouracil apparent clearance was recorded as 1190 L/h, conflicting with the required time dimension for its metabolic rate constant.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l/h ([length] ** 3 / [time]) vs 1 / [time].**
 
-The record lists a value of 1190 L/h for the apparent clearance of 5-fluorouracil, which describes a volume flow. This unit is dimensionally incompatible with the time-based nature of the structural rate constant required for the metabolism link from 5-H-DFUR. A reported unit could not be converted to SI units, so the parameter lacked a valid standardized value. Extracted — fluorouracil: kabs 1.09 l/h, tlag 0.000552 h, V 17.8 L, CLm/F 1.19e+03 L/h; 5-H-DFUR: V 90.6 L, CL 75.8 L/h; 5-FBAL: V1 73.6 L, CL 27.5 L/h, Km 0.812, CLR 0.615, V2/F 0.394.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — fluorouracil: kabs 1.09 l/h, tlag 0.000552 h, V 17.8 L, CLm/F 1.19e+03 L/h; 5-H-DFUR: V 90.6 L, CL 75.8 L/h; 5-FBAL: V1 73.6 L, CL 27.5 L/h, Km 0.812, CLR 0.615, V2/F 0.394.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 5-fluorouracil, the second reading capecitabine; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

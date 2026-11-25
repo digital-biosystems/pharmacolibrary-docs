@@ -28,7 +28,7 @@ Bromhexine is a mucolytic medication used to treat cough and respiratory disorde
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Bergogne-Bérézin_1985_bronchial_serum_ratio_of_amoxycillin](drugs/drug_bromhexine/pd_Bergogne_B_r_zin_1985_bronchial_serum_ratio_of_amoxycillin.md) | bronchial/serum ratio of amoxycillin biomarker turnover ← bromhexine | — | Bergogne-Bérézin E et al., Influence of a fluidifying agent (bromh…, International journal of cl… (1985) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Bergogne-Bérézin_1985_bronchial_serum_ratio_of_amoxycillin](drugs/drug_bromhexine/pd_Bergogne_B_r_zin_1985_bronchial_serum_ratio_of_amoxycillin.md) | bronchial/serum ratio of amoxycillin biomarker turnover ← bromhexine | — | Bergogne-Bérézin E et al., Influence of a fluidifying agent (bromh…, International journal of cl… (1985) | — |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">in vitro</span> | [Kukita_1992_sorption_of_bromhexine_HCl](drugs/drug_bromhexine/pd_Kukita_1992_sorption_of_bromhexine_HCl.md) | sorption of bromhexine HCl ← bromhexine HCl · model not identified | — | Kukita T et al., Interaction between polyethylene films…, Chemical & pharmaceutical b… (1992) | [10.1248/cpb.40.3110](https://doi.org/10.1248/cpb.40.3110) |
 
 <details class="legend">

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;triazolam&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/&quot;},{&quot;label&quot;:&quot;Okada_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triazolam_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Triazolam_van2011_reference&quot;,&quot;label&quot;:&quot;van_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_van2011_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lloyd_1990_35S_TBPS_binding&quot;,&quot;label&quot;:&quot;Lloyd_1990 \u00b7 35S-TBPS binding&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Lloyd_1990_35S_TBPS_binding.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Cognitive_function&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Cognitive function&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Cognitive_function.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Sedation&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Sedation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Sedation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Triazolam_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Triazolam_van2011_reference&quot;,&quot;label&quot;:&quot;van_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/Triazolam_van2011_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Cognitive_function&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Cognitive function&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Cognitive_function.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Okada_2024_Sedation&quot;,&quot;label&quot;:&quot;Okada_2024 \u00b7 Sedation&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_triazolam/pd_Okada_2024_Sedation.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # triazolam — `Triazolam_Okada2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The triazolam model was rejected because its peripheral compartment lacks a connection to the dose, making the 119 L volume parameter unreachable.
+> No value for triazolam's bioavailability, clearance, volume of distribution, absorption rate constant and absorption lag time; the covariate scenarios were not simulated (+2 more).
 
-<div class="pk-model-meta" hidden drug="triazolam" model-id="Triazolam_Okada2024_reference" status="rejected" stale="false" population="elderly patients (and young adults from literature data)" measured-compound="triazolam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="triazolam" model-id="Triazolam_Okada2024_reference" status="model_quarantined" stale="false" population="young and elderly patients" measured-compound="triazolam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Okada A, Sera S, Nagai N. Appropriate use of triazolam in elderly patients considering a quantitative benefit-risk assessment based on the pharmacokinetic-pharmacodynamic modeling and simulation approach supported by real-world data. BMC pharmacology & toxicology 25(1):60 (2024).
@@ -17,29 +17,29 @@ Okada A, Sera S, Nagai N. Appropriate use of triazolam in elderly patients consi
 
 ## Population and dosing
 
-**Population:** elderly patients (and young adults from literature data) · condition insomnia (elderly; adverse event risk assessment) · age group elderly.
-
-**Dosing:** 0.0625, 0.15 mg, oral, single.
+**Population:** young and elderly patients · condition healthy · age group mixed.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted, plus 2 covariate effects.  
-**Availability:** No model was generated from this record.
+**Parameters:** 0 extracted, plus 2 covariate effects.  
+**Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit | RSE% |
-|---|---|---|---|---|
-| θ1 (1/hr) | kel | 3.16 | 1/h | 5.27 |
-| θ2 (L) | V2 | 119 | L | 1.86 |
-| θ3 (L/hr/kg) | CLnorm | 0.47 | L/hr/kg | 1.92 |
+| label | parameter | value | unit |
+|---|---|---|---|
+| θ1 (1/hr) | equation variable | 3.16 | 1/hr |
+
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.409). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.357). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,25 +49,23 @@ Okada A, Sera S, Nagai N. Appropriate use of triazolam in elderly patients consi
 
 ### Reviewer guidance
 
-**The triazolam model was rejected because its peripheral compartment lacks a connection to the dose, making the 119 L volume parameter unreachable.**
+**No value for triazolam's bioavailability, clearance, volume of distribution, absorption rate constant and absorption lag time; the covariate scenarios were not simulated (+2 more).**
 
-The record structure is listed as a single-compartment model, yet it includes parameters for a peripheral volume (119 L) and inter-compartmental clearances, indicating an orphan compartment. No pathway links this peripheral volume to the site of drug administration. This topological error invalidates the model's ability to simulate triazolam distribution. Extracted — triazolam: kel 3.16 1/h, V2 119 L, CLnorm 0.47 L/hr/kg.
+The model was built, but triazolam's bioavailability, clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (equation variable), so that value has no SI equivalent. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
-|---|---|---|---|---|---|---|---|---|---|
-| θ1 (1/hr) | `Q47` · kel | 3.16 | 1/h | 0.0008778 | 1/s | 1/h | 5.27 | llm (0.6) | Tab3:row4:col1, Tab3:row4:col2 |
-| θ2 (L) | `Q64` · V2 | 119 | L | 0.119 | m3 | l | 1.86 | llm (0.6) | Tab3:row6:col1, Tab3:row6:col2 |
-| θ3 (L/hr/kg) | `Q354` · CLnorm | 0.47 | L/hr/kg | 9.139e-06 | m3/s | l/(h·kg) | 1.92 | llm (0.6) | Tab3:row9:col1, Tab3:row9:col2 |
+| label (paper) | Q-code · name | value | unit | unit_canonical | link | source |
+|---|---|---|---|---|---|---|
+| θ1 (1/hr) | `Q900` · equation variable | 3.16 | 1/hr | 1/h | llm (0.6) | Tab3:row4:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
@@ -86,57 +84,52 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - table section residual_error: 'σ (%)' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'σ Sedation (mm)' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'σ Cognitive function (%)' routed out of structural estimates ('Residual variability')
-- routed 'θ4' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- dropped unlinked row (NIL): 'θ5' — extend the ontology if this is a real PK parameter (source ['Tab3:row10:col1', 'Tab3:row10:col2'])
-- dropped PD-category row 'Keo (1/hr)' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row15:col1', 'Tab3:row15:col2'])
-- dropped PD-category row 'Sedation constant' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row16:col1', 'Tab3:row16:col2'])
-- dropped PD-category row 'Cognitive function constant' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row17:col1', 'Tab3:row17:col2'])
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number 12.1 (source ['Tab3:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number -11.0 (source ['Tab3:footnote']); the table cell was unparseable — needs review
+- dropped unlinked row (NIL): 'θ2 (L)' — extend the ontology if this is a real PK parameter (source ['Tab3:row6:col1'])
+- dropped unlinked row (NIL): 'θ4' — extend the ontology if this is a real PK parameter (source ['Tab3:row7:col1'])
+- dropped unlinked row (NIL): 'θ3 (L/hr/kg)' — extend the ontology if this is a real PK parameter (source ['Tab3:row9:col1'])
+- dropped unlinked row (NIL): 'θ5' — extend the ontology if this is a real PK parameter (source ['Tab3:row10:col1'])
+- dropped PD-category row 'Keo (1/hr)' → Q326 (ke0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Tab3:row15:col1'])
+- dropped unlinked row (NIL): 'Sedation constant' — extend the ontology if this is a real PK parameter (source ['Tab3:row16:col1'])
+- dropped unlinked row (NIL): 'Cognitive function constant' — extend the ontology if this is a real PK parameter (source ['Tab3:row17:col1'])
+- NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['Tab3:footnote']); the table cell was unparseable — needs review
 - covariate effect for Q61 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'θ1 (1/hr)' → 1/h (from the popPK convention: 'No unit stated in caption or text; kel is a first-order elimination rate constant, conventionally in 1/h, consistent wit')
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q64 (θ2 (L))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=triazolam
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - bound model equation to Q61 (V): Vd = θ2* (age/30)^θ4
 - bound model equation to Q22 (CL): CL = θ3 * (age/30)^θ5 * 1/AUCR
 - Q61 (V) is equation-defined: value moved to equation-variable 'Vd'; equation kept verbatim
 - Q22 (CL) is equation-defined: value moved to equation-variable 'CL'; equation kept verbatim
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
+- table Tab3: unbound_uncertainty
 - LLM selected parameter table(s) 3
 - captured model equation Vd = θ2* (age/30)^θ4
 - captured model equation CL = θ3 * (age/30)^θ5 * 1/AUCR
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.409 (9/22 fields) | 13 |
+| `gpt-oss-120b` | partly confirmed | 0.357 (5/14 fields) | 9 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[cl]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cognitive function constant]` |  | -11.0 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_cl_age_power]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q22_age_power]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q61_age_power]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_v_age_power]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vd]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[θ2].covariate_forms` | [] | ['power'] | mismatch |
-| `gpt-oss-120b` | `parameters[θ2].parameter_id` | Q64 | Q61 | mismatch |
-| `gpt-oss-120b` | `parameters[θ2].value` | 119 |  | mismatch |
-| `gpt-oss-120b` | `parameters[θ3].covariate_forms` | [] | ['power'] | mismatch |
-| `gpt-oss-120b` | `parameters[θ3].parameter_id` | Q354 | Q22 | mismatch |
-| `gpt-oss-120b` | `parameters[θ3].value` | 0.47 |  | mismatch |
+| `gpt-oss-120b` | `parameters[θ1]` | 3.16 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ2]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ3]` |  |  | only_one_extracted |
 
 </details>
 
@@ -148,16 +141,24 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Tab3:row9:col1', 'Tab3:row9:col2'] |
-| C5_dimension_Q47 | pass | 1 / [time] |  | ['Tab3:row4:col1', 'Tab3:row4:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Tab3:row6:col1', 'Tab3:row6:col2'] |
-| C8_topology | fail |  |  |  |
-| C9_phys_window_Q64 | pass | volume within physiological range | 119 L | ['Tab3:row6:col1', 'Tab3:row6:col2'] |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | pass | 2 |
+| C0b_disposition_core | pass |  |
+| C0c_disposition_complete | pass |  |
+| C8_topology | pass |  |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_param_coverage |  | skipped |  |  |  | no structural disposition parameters in record |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict partial; agreement 0.357 (5 of 14 compared fields agree, 9 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.357 | cross-check agreement 0.357 is below 0.5: verdict partial; agreement 0.357 (5 of 14 compared fields agree, 9 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | skipped | 2.9 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -169,9 +170,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -181,4 +192,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btriazolam%5D%20Triazolam_Okada2024_reference&body=Drug%3A%20triazolam%0ARecord%3A%20Triazolam_Okada2024_reference%0APaper%3A%20Okada_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_triazolam/Triazolam_Okada2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:55 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:01 UTC</sub>

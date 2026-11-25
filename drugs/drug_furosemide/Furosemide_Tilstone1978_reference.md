@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record held for review because a second reader could not verify the abstract-sourced values for furosemide clearance, volume, and bioavailability.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Tilstone1978_reference" status="needs_review" stale="false" population="normal volunteers and patients with renal failure" measured-compound="furosemide" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Tilstone WJ, Fine A. Furosemide kinetics in renal failure. Clinical pharmacology
 
 ### Reviewer guidance
 
-**Record held for review because a second reader could not verify the abstract-sourced values for furosemide clearance, volume, and bioavailability.**
+**cross_check_disputed; x1_cross_check.**
 
-The model relies on abstract-only summary statistics rather than fitted parameters, including a total clearance of 1.53 ml/min/kg and bioavailability of 43.4%. A second reader disagreed with the identification of furosemide as the dose compound and primary analyte. Additionally, the second reader marked the clearance, half-life, absorption rate constant, intercompartmental clearance, and bioavailability parameters as null. Extracted — furosemide: CL 1.53 ml/min/kg, V1 2.61 L, V2 2.48 L, t1/2z 0.8 hr, Fab 43.4 %, Q 0.63 L/h, kabs 4.51 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — furosemide: CL 1.53 ml/min/kg, V1 2.61 L, V2 2.48 L, t1/2z 0.8 hr, Fab 43.4 %, Q 0.63 L/h, kabs 4.51 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has furosemide, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -161,7 +161,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.118, 0 of 1 reader(s) agree | 0.118 | cross-check disputed by a second reader: verdict disputed, agreement 0.118, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.118 (2 of 17 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.118 | cross-check contradicted by a second reader: verdict disputed; agreement 0.118 (2 of 17 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

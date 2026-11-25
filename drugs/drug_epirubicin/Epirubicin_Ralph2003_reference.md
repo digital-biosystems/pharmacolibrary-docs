@@ -17,7 +17,7 @@ Ralph LD, Thomson AH, Dobbs NA, Twelves C. A population model of epirubicin phar
 
 ## Population and dosing
 
-**Population:** patients with advanced breast cancer · condition advanced breast cancer · n = 109.
+**Population:** patients with advanced breast cancer · condition advanced breast cancer · age group adult.
 
 ## Model
 
@@ -33,7 +33,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,29 +47,39 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-Independently confirmed by `qwen3.8-27b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'CL' routed out of structural estimates ('Inclusion of this factor reduced the interindividual variability in CL from 49% to 39%.')
-- table section iiv: 'AST' routed out of structural estimates ('Inclusion of this factor reduced the interindividual variability in CL from 49% to 39%.')
+- table section iiv: 'Individual clearance (CL) estimates' routed out of structural estimates ('Inclusion of this factor reduced the interindividual variability in CL from 49% to 39%.')
+- table section iiv: 'CL (l/h)' routed out of structural estimates ('Inclusion of this factor reduced the interindividual variability in CL from 49% to 39%.')
+- table section iiv: 'interindividual variability in CL' routed out of structural estimates ('Inclusion of this factor reduced the interindividual variability in CL from 49% to 39%.')
+- table section iiv: 'target AUC' routed out of structural estimates ('Inclusion of this factor reduced the interindividual variability in CL from 49% to 39%.')
+- table section iiv: 'AST &lt;150 IU/l' routed out of structural estimates ('Inclusion of this factor reduced the interindividual variability in CL from 49% to 39%.')
+- table section iiv: 'AST 150-250 IU/l' routed out of structural estimates ('Inclusion of this factor reduced the interindividual variability in CL from 49% to 39%.')
+- table section iiv: 'AST 250-500 IU/l' routed out of structural estimates ('Inclusion of this factor reduced the interindividual variability in CL from 49% to 39%.')
+- table section iiv: 'AST &gt;500 IU/l' routed out of structural estimates ('Inclusion of this factor reduced the interindividual variability in CL from 49% to 39%.')
+- table section iiv: 'rmse' routed out of structural estimates ('Inclusion of this factor reduced the interindividual variability in CL from 49% to 39%.')
+- table section iiv: 'current UK guidelines' routed out of structural estimates ('Inclusion of this factor reduced the interindividual variability in CL from 49% to 39%.')
+- table section iiv: 'current USA guidelines' routed out of structural estimates ('Inclusion of this factor reduced the interindividual variability in CL from 49% to 39%.')
+- table section iiv: 'earlier equation based on AST' routed out of structural estimates ('Inclusion of this factor reduced the interindividual variability in CL from 49% to 39%.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=epirubicin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Ralph_2003_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Ralph_2003_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (4/4 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -110,4 +120,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bepirubicin%5D%20Epirubicin_Ralph2003_reference&body=Drug%3A%20epirubicin%0ARecord%3A%20Epirubicin_Ralph2003_reference%0APaper%3A%20Ralph_2003%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_epirubicin/Epirubicin_Ralph2003_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 17:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:50 UTC</sub>

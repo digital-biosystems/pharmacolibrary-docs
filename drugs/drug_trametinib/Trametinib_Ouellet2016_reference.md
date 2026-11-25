@@ -147,4 +147,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrametinib%5D%20Trametinib_Ouellet2016_reference&body=Drug%3A%20trametinib%0ARecord%3A%20Trametinib_Ouellet2016_reference%0APaper%3A%20Ouellet_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trametinib/Trametinib_Ouellet2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 08:28 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 08:06 UTC</sub>

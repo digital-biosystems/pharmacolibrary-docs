@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated. · molar_mass_missing:free SN-38: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Needs review</span>
 
-> Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+5 more).
+> Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+6 more).
 
 <div class="pk-model-meta" hidden drug="sacituzumab govitecan" model-id="SacituzumabGovitecan_Sathe2025_reference" status="needs_review" stale="false" population="patients with HR+/HER2− mBC, mTNBC, or other solid tumors" measured-compound="sacituzumab_govitecan" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -64,7 +64,7 @@ Sathe AG, Jones AK, Diderichsen PM, Wang X, Chang P, Verret W et al. Sacituzumab
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated. · molar_mass_missing:free SN-38: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated. · molar_mass_missing:free SN-38: a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -74,9 +74,11 @@ Sathe AG, Jones AK, Diderichsen PM, Wang X, Chang P, Verret W et al. Sacituzumab
 
 ### Reviewer guidance
 
-**Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+5 more).**
+**Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+6 more).**
 
 These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — sacituzumab govitecan: CL 0.128 L/h, Q 0.00513 L/h, V1 2.65 L, V2 0.929 L; free SN-38: kfm 0.0937 1/h, CL/F 401 L/h, Q/F 243 L/h, V1/F 49 L, V2/F 2.18e+03 L; total antibody: CL 0.0155 L/h, Q 0.0105 L/h, V1 2.97 L, V2 1.32 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sacituzumab_govitecan, the second reading sacituzumab govitecan; it also differs on 29 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>the checker's own wording — not yet put into words by an LLM</sub>
 
@@ -140,6 +142,56 @@ These values affect the simulated profile but are not supported by this paper; t
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.143 (5/35 fields) | 30 |
+
+<details><summary>30 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['sacituzumab_govitecan', 'free sn-38', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[baseline_serum_albumin_exponent_on_clsg]` | -0.395 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[baseline_serum_albumin_exponent_on_cltab]` | -0.734 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clsg].covariate_forms` | ['linear_fractional', 'power', 'power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[clsg].value` | 0.128 | 0.133 | mismatch |
+| `gpt-oss-120b` | `parameters[cltab]` | 0.0155 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[log (clsn38/f)]` |  | 6.02 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[log (clsn38/f)]` | 401 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[log (krel)]` | 0.0937 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[log (qsn38/f)]` | 243 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[male_sex_on_v1tab]` | 0.153 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[maximum relative reduction of cltab, %]` |  | 16.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qsg]` | 0.00513 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qtab]` | 0.0105 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power]` | 0.519 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power]` | 0.422 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power].value` | 0.523 | 0.508 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q38_albumin_power]` |  | -0.355 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_sex]` |  | 0.121 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1sg].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[v1sg].value` | 2.650 | 2.770 | mismatch |
+| `gpt-oss-120b` | `parameters[v1sn38/f, l b]` |  | 49.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1sn38/f, l b]` | 49.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1tab]` | 2.97 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2sg].value` | 0.929 | 0.908 | mismatch |
+| `gpt-oss-120b` | `parameters[v2sn38/f, l b]` |  | 2177 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2sn38/f, l b]` | 2177 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2tab]` | 1.32 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sacituzumab_govitecan | sacituzumab govitecan | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | sacituzumab_govitecan | sacituzumab govitecan | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -175,19 +227,19 @@ These values affect the simulated profile but are not supported by this paper; t
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_metabolite_built[free SN-38] |  | fail | own V, CL and formation clearance &gt; 0 | {'V': 0, 'CL': 0, 'formation': 0} | free SN-38: V, CL, formation not set — the metabolite's compartment would be the template default |
-| T3_metabolite_output[free SN-38] |  | skipped |  |  | the simulation recorded no per-molecule outputs |
-| T3_molar_mass[free SN-38] |  | fail |  | {'MW': 0, 'MW_m1': 0} | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
-| T3_param_coverage |  | fail | 12 scholar param(s) emitted or defaulted | 11 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model | rate constant must not be used raw as a clearance |
-| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  | no second reading of this record |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_metabolite_built[free SN-38] |  | fail | own V, CL and formation clearance &gt; 0 | {'V': 0, 'CL': 0, 'formation': 0} |  | free SN-38: V, CL, formation not set — the metabolite's compartment would be the template default |
+| T3_metabolite_output[free SN-38] |  | skipped |  |  |  | the simulation recorded no per-molecule outputs |
+| T3_molar_mass[free SN-38] |  | fail |  | {'MW': 0, 'MW_m1': 0} |  | a molar mass is missing: the model forms 1 mg of metabolite per mg of parent converted, not one molecule per molecule |
+| T3_param_coverage |  | fail | 12 scholar param(s) emitted or defaulted | 11 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.143 (5 of 35 compared fields agree, 21 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.143 | cross-check contradicted by a second reader: verdict disputed; agreement 0.143 (5 of 35 compared fields agree, 21 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

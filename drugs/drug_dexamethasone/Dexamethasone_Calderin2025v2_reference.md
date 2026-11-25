@@ -148,9 +148,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 2.75e-05 | 3.57e-07 | 0.013 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 3.47e-05 | 3.57e-07 | 0.0103 | mg/L→SI vs simulated kg/m3 |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.778 (7 of 9 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 2.75e-05 | 3.57e-07 | 0.013 | reported 0.0275 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.47e-05 | 3.57e-07 | 0.0103 | reported 0.0347 mg/L→SI vs simulated kg/m3 |
 
 <details class="legend">
 <summary>Validation definitions</summary>

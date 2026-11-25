@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The absorption rate constant for remdesivir was defaulted rather than estimated, making the input assumptions unsupported.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="remdesivir" model-id="Remdesivir_Sukeishi2022_final_model_1485" status="needs_review" stale="false" population="Japanese adults with COVID-19 and renal dysfunction" measured-compound="GS-441524" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Sukeishi A, Itohara K, Yonezawa A, Sato Y, Matsumura K, Katada Y et al. Populati
 
 ### Reviewer guidance
 
-**The absorption rate constant for remdesivir was defaulted rather than estimated, making the input assumptions unsupported.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record explicitly flags absorption rate constant and lag time as defaulted parameters instead of values derived from the source data. Consequently, the model relies on library conventions for input kinetics that are not supported by the paper's estimates. This lack of empirical support for the absorption parameters prevented the record from being approved. Extracted — GS-441524: CLm/F 11.8 L/h, V 382 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. None of the extracted parameters is remdesivir's own; they describe GS-441524. Extracted — GS-441524: CLm/F 11.8 L/h, V 382 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

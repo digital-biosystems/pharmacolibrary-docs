@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Physostigmine record rejected because clearance (12.43 ml/min) and volume (270 ml) are implausible for rats, stemming from abstract-only data.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="physostigmine" model-id="Physostigmine_Somani1987_reference" status="rejected" stale="false" population="rats" measured-compound="physostigmine" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Somani SM, Khalique A. Pharmacokinetics and pharmacodynamics of physostigmine in
 
 ### Reviewer guidance
 
-**Physostigmine record rejected because clearance (12.43 ml/min) and volume (270 ml) are implausible for rats, stemming from abstract-only data.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The clearance and volume of distribution values fall outside physiological limits for rats, indicating a unit or scale error. The record is abstract-only, so these summary statistics substitute for fitted parameters without underlying data. The second reader disagreed that the values for all five parameters, including the half-lives and clearance, could be verified. Extracted — physostigmine: t1/2α 1.31 min, t1/2β 15 min, V/F 270 ml, CL 12.4 ml min-1, t1/2z 11 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — physostigmine: t1/2α 1.31 min, t1/2β 15 min, V/F 270 ml, CL 12.4 ml min-1, t1/2z 11 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has physostigmine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

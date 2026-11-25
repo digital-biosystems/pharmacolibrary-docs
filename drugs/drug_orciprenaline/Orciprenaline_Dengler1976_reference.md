@@ -4,18 +4,18 @@
 
 # orciprenaline — `Orciprenaline_Dengler1976_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> Orciprenaline’s renal clearance value of 10% was rejected for a dimensional mismatch with clearance units of volume per time.
+> The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="orciprenaline" model-id="Orciprenaline_Dengler1976_reference" status="rejected" stale="false" population="healthy adults (man) plus rat, rabbit, cat" measured-compound="orciprenaline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="orciprenaline" model-id="Orciprenaline_Dengler1976_reference" status="needs_review" stale="false" population="adults" measured-compound="orciprenaline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dengler HG, Hengstmann JH. Metabolism and pharmacokinetics of orciprenaline in various animal species and man. Archives internationales de pharmacodynamie et de therapie 223(1):71–87 (1976).
 
 ## Population and dosing
 
-**Population:** healthy adults (man) plus rat, rabbit, cat · condition healthy · age group adult.
+**Population:** adults · condition healthy · age group adult.
 
 > **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from the LLM relevance screen, p(non-human) 0.50).
 
@@ -23,22 +23,21 @@ Dengler HG, Hengstmann JH. Metabolism and pharmacokinetics of orciprenaline in v
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | half-life | t1/2z | 15 | hr |
 | volume of distribution | V | 700 | liters |
 | total clearance | CL | 1400 | ml/min |
-| renal clearance | CLR | 10 | per cent |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,22 +47,21 @@ Dengler HG, Hengstmann JH. Metabolism and pharmacokinetics of orciprenaline in v
 
 ### Reviewer guidance
 
-**Orciprenaline’s renal clearance value of 10% was rejected for a dimensional mismatch with clearance units of volume per time.**
+**The clearance plausibility check could not be computed.**
 
-The record defines renal clearance as the renal portion of total clearance, so 10% is a proportion, while the rejection flags it as dimensionless where volume per time was expected. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader placed the value 10 under renal clearance contribution and left renal clearance null. Extracted — orciprenaline: t1/2z 15 hr, V 700 liters, CL 1.4e+03 ml/min, CLR 10 per cent.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — orciprenaline: t1/2z 15 hr, V 700 liters, CL 1.4e+03 ml/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of renal clearance: this record has 10, the second reading none; it also differs on 1 more field. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| half-life | `Q57` · t1/2z | 15 | hr | 5.4e+04 | s | h | llm (0.6) | Dengler_1976:abstract, Dengler_1976:abstract |
+| half-life | `Q57` · t1/2z | 15 | hr | 5.4e+04 | s | h | half_life_rule (0.95) | Dengler_1976:abstract, Dengler_1976:abstract |
 | volume of distribution | `Q61` · V | 700 | liters | 0.7 | m3 | l | exact (1) | Dengler_1976:abstract |
 | total clearance | `Q22` · CL | 1400 | ml/min | 2.333e-05 | m3/s | ml/min | exact (1) | Dengler_1976:abstract |
-| renal clearance | `Q26` · CLR | 10 | per cent |  |  | % | exact (1) | Dengler_1976:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,34 +71,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'renal clearance' → Q26 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped 'renal clearance' → Q26: unit 'per cent' is a statistic (%, CV, RSE, shrinkage or fold), not a clearance — the row is a variability or a ratio, not the estimate
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=orciprenaline
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Dengler_1976_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>2 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[renal clearance contribution]` |  | 10 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[renal clearance]` | 10 |  | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -112,11 +99,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Dengler_1976:abstract'] |
-| C5_dimension_Q26 | fail | [length] ** 3 / [time] | per cent (dimensionless) | ['Dengler_1976:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Dengler_1976:abstract', 'Dengler_1976:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Dengler_1976:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1400 | ['Dengler_1976:abstract'] |
@@ -134,9 +120,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -146,4 +142,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Borciprenaline%5D%20Orciprenaline_Dengler1976_reference&body=Drug%3A%20orciprenaline%0ARecord%3A%20Orciprenaline_Dengler1976_reference%0APaper%3A%20Dengler_1976%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_orciprenaline/Orciprenaline_Dengler1976_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 14:12 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:41 UTC</sub>

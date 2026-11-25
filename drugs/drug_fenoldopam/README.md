@@ -33,7 +33,7 @@ Fenoldopam is a dopamine agonist and antihypertensive agent used to treat severe
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Grenader_1991_cAMP](drugs/drug_fenoldopam/pd_Grenader_1991_cAMP.md) | cyclic AMP (cAMP) synthesis ← fenoldopam · direct Emax (saturable) effect | — | Grenader A et al., Fenoldopam is a partial agonist at dopa…, The Journal of pharmacology… (1991) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Grenader_1991_cAMP](drugs/drug_fenoldopam/pd_Grenader_1991_cAMP.md) | cyclic AMP (cAMP) synthesis ← fenoldopam · direct Emax (saturable) effect | — | Grenader A et al., Fenoldopam is a partial agonist at dopa…, The Journal of pharmacology… (1991) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

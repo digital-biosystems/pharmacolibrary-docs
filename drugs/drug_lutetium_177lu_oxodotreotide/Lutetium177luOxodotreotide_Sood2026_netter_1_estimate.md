@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The review is held back because a second reader disputed the verdict, citing hyphenation discrepancies in the lutetium 177lu oxodotreotide identity fields.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="lutetium (177Lu) oxodotreotide" model-id="Lutetium177luOxodotreotide_Sood2026_netter_1_estimate" status="needs_review" stale="false" population="adolescent and adult patients with somatostatin receptor–positive gastroenteropancreatic neuroendocrine tumors" measured-compound="lutetium_177lu_oxodotreotide" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Sood M, Lachi Silva L, Ho YY, Blumenstein L, Cherfi A, Xu L et al. [. Journal of
 
 ### Reviewer guidance
 
-**The review is held back because a second reader disputed the verdict, citing hyphenation discrepancies in the lutetium 177lu oxodotreotide identity fields.**
+**cross_check_disputed; x1_cross_check.**
 
-The record’s verdict was not finalized because the independent second reader disagreed with the initial assessment. The disagreement centered on the specific formatting of the drug name, where the second reader used hyphens in 'lutetium-177lu-oxodotreotide' while the record used spaces. This identity mismatch resulted in an agreement ratio of 0.75, meaning zero out of one reader agreed with the original conclusion. Extracted — lutetium 177lu oxodotreotide: CL 4.95 L/h, V1 21.6 L, Q 4.78 L/h, V2 202 L.
+Extracted — lutetium 177lu oxodotreotide: CL 4.95 L/h, V1 21.6 L, Q 4.78 L/h, V2 202 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lutetium_177lu_oxodotreotide, the second reading lutetium-177lu-oxodotreotide; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

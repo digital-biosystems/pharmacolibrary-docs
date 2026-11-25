@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Perindoprilat intercompartmental clearance and absorption parameters carry units that contradict their meanings as rate constants.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit h -1 (1 / [time]) vs [length] ** 3 / [time]; Q49 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="perindopril" model-id="Perindopril_Parker2005_multiple_dose" status="rejected" stale="false" population="normal volunteers and patients" measured-compound="perindoprilat" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Parker E, Aarons L, Rowland M, Resplandy G. The pharmacokinetics of perindoprila
 
 ### Reviewer guidance
 
-**Perindoprilat intercompartmental clearance and absorption parameters carry units that contradict their meanings as rate constants.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit h -1 (1 / [time]) vs [length] ** 3 / [time]; Q49 unit h ([time]) vs 1 / [time].**
 
-The record assigns a unit of L/h to the intercompartmental clearance but identifies the source label as k12 (h^-1), causing a dimensional conflict. Additionally, the absorption rate constant is labeled T_inp (h) yet is described as kabs, which should have a time-inverse unit. A unit conversion issue prevented the record from receiving a valid SI value for review. Extracted — perindoprilat: V 6.4 L, CLm/F 7 L h -1, Bmax 2.5 g L -1, Q 1.3 h -1, kabs 3.6 h.
+A reported unit could not be converted (Bmax, Q and kabs), so that value has no SI equivalent. None of the extracted parameters is perindopril's own; they describe perindoprilat. Extracted — perindoprilat: V 6.4 L, CLm/F 7 L h -1, Bmax 2.5 g L -1, Q 1.3 h -1, kabs 3.6 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has perindopril, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

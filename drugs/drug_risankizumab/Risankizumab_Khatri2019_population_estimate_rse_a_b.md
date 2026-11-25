@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The intercompartmental clearance unit (L/d) caused a dimension mismatch, and the absolute bioavailability parameter was misidentified as renal clearance.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit CL; L/d ([length] ** 6 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Khatri2019_population_estimate_rse_a_b" status="rejected" stale="false" population="healthy subjects and patients with psoriasis, GPP, or EP" measured-compound="risankizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -60,13 +60,13 @@ Khatri A, Eckert D, Oberoi R, Suleiman A, Pang Y, Cheng L et al. Pharmacokinetic
 
 ### Reviewer guidance
 
-**The intercompartmental clearance unit (L/d) caused a dimension mismatch, and the absolute bioavailability parameter was misidentified as renal clearance.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit CL; L/d ([length] ** 6 / [time]) vs [length] ** 3 / [time].**
 
-The intercompartmental clearance of 0.648 L/d was assigned a dimensional unit of length to the sixth power over time, conflicting with the expected length cubed over time. Additionally, the absolute subcutaneous bioavailability of 0.89 was defined as renal bioavailability rather than systemic absorption fraction. A covariate effect for clearance was assigned an incorrect unit of L/d. Extracted — risankizumab: CL 0.244 CL; L/d, V1 4.87 L, kabs 0.23 1/d, Q 0.648 L/d, V2 4.25 L, FR 0.89 d.
+A reported unit could not be converted (CL, FR and theta_cl_ada), so that value has no SI equivalent. Extracted — risankizumab: CL 0.244 CL; L/d, V1 4.87 L, kabs 0.23 1/d, Q 0.648 L/d, V2 4.25 L, FR 0.89 d.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[absolute sc bioavailability (f)c].parameter_id`: this record has Q43, the second reading Q41; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

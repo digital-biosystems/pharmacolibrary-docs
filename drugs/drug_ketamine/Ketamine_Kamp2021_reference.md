@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ketamine clearance of 0.037 L/min and volume of 0.1217 L are physiologically implausible.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ketamine" model-id="Ketamine_Kamp2021_reference" status="rejected" stale="false" population="" measured-compound="ketamine" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Kamp J, van Velzen M, Aarts L, Niesters M, Dahan A, Olofsen E. Stereoselective k
 
 ### Reviewer guidance
 
-**Ketamine clearance of 0.037 L/min and volume of 0.1217 L are physiologically implausible.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted total clearance of 0.037 L/min and volume of distribution of 0.1217 L fall outside the expected physiological range for ketamine, suggesting a unit or scale error. The record was sourced from a secondary review reference rather than original experimental data, which may contribute to the extraction inaccuracies. A second reader disagreed on several specific field values, noting discrepancies in numeric extractions where the current record lists values such as 29.3, 6.8, and 93.8. Extracted — ketamine: CL 0.037 L min−1, V 0.122 L.
+Extracted — ketamine: CL 0.037 L min−1, V 0.122 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q326: this record has 29.3, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -8,7 +8,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="gadoxetic acid" model-id="GadoxeticAcid_Truhn2019_reference" status="rejected" stale="false" population="patients undergoing dynamic liver MRI" measured-compound="gadoxetic acid" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gadoxetic acid" model-id="GadoxeticAcid_Truhn2019_reference" status="rejected" stale="false" population="patients" measured-compound="gadoxetic acid" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Truhn D, Kuhl CK, Ciritsis A, Barabasch A, Kraemer NA. A New Model for MR Evaluation of Liver Function with Gadoxetic Acid, Including Both Uptake and Excretion. European radiology 29(1):383–391 (2019).
@@ -16,7 +16,7 @@ Truhn D, Kuhl CK, Ciritsis A, Barabasch A, Kraemer NA. A New Model for MR Evalua
 
 ## Population and dosing
 
-**Population:** patients undergoing dynamic liver MRI · n = 16.
+**Population:** patients · age group adult.
 
 ## Model
 
@@ -32,7 +32,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +46,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has gadoxetic acid, the second reading gadoxetic_acid; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gadoxetic acid, the second reading gadoxetic_acid; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -54,24 +54,26 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gadoxetic acid
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available; abstract in Truhn_2019_metadata.yaml carries no parameter-bearing sentence
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 | `qwen3.8-27b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `screen.dose_compound` | gadoxetic acid | gadoxetic_acid | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | gadoxetic acid | gadoxetic_acid | mismatch |
 | `qwen3.8-27b` | `screen.dose_compound` | gadoxetic acid | gadoxetic_acid | mismatch |
 | `qwen3.8-27b` | `screen.primary_analyte` | gadoxetic acid | gadoxetic_acid | mismatch |
 
@@ -113,4 +115,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgadoxetic_acid%5D%20GadoxeticAcid_Truhn2019_reference&body=Drug%3A%20gadoxetic_acid%0ARecord%3A%20GadoxeticAcid_Truhn2019_reference%0APaper%3A%20Truhn_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gadoxetic_acid/GadoxeticAcid_Truhn2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 18:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:01 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The alfentanil volume of distribution value of 33 is dimensionless, conflicting with required cubic length units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit 1 (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Schttler1982_reference" status="rejected" stale="false" population="patients (ASA class I and II)" measured-compound="alfentanyl" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Schüttler J, Stoeckel H. [Clinical pharmacokinetics of alfentanyl (author's tra
 
 ### Reviewer guidance
 
-**The alfentanil volume of distribution value of 33 is dimensionless, conflicting with required cubic length units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit 1 (dimensionless) vs [length] ** 3.**
 
-The record lists a total volume of distribution of 33 with unit '1', which is dimensionless rather than volume. This conflict prevented the volume parameter from satisfying structural dimension requirements. Additionally, the lag time and volume values were not corroborated by the second reader, leaving them null. Extracted — alfentanil: t1/2α 4 min, t1/2z 70 min, V 33 1, CL 336 ml/min, fu 92 %, tlag 0.96 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — alfentanil: t1/2α 4 min, t1/2z 70 min, V 33 1, CL 336 ml/min, fu 92 %, tlag 0.96 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[elimination half-life].parameter_id`: this record has Q57, the second reading Q60; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

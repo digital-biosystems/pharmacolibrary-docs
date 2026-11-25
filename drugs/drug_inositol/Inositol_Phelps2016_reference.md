@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The inositol record was held because the standard error unit for endogenous concentration cannot be converted to SI, blocking parameter standardization.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="inositol" model-id="Inositol_Phelps2016_reference" status="needs_review" stale="false" population="preterm infants" measured-compound="inositol" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Phelps DL, Ward RM, Williams RL, Nolen TL, Watterberg KL, Oh W et al. Safety and
 
 ### Reviewer guidance
 
-**The inositol record was held because the standard error unit for endogenous concentration cannot be converted to SI, blocking parameter standardization.**
+**cross_check_disputed; x1_cross_check.**
 
-The reported unit for the endogenous concentration parameter is labeled 'Standard Error,' which is not a physical unit convertible to SI units. Consequently, the model builder received this parameter without a standardized value. A second reader also disagreed on the specific isomer identity and the parameter identifier for the endogenous concentration, leaving the record's validity unconfirmed. Extracted — inositol: V 0.561 L/kg, CL 0.0616 L/kg/hr, R1 2.45 mg/kg/hr, kel 0.11 1/hr, t1/2z 6.31 hr.
+A reported unit could not be converted (R1 and equation variable), so that value has no SI equivalent. Extracted — inositol: V 0.561 L/kg, CL 0.0616 L/kg/hr, R1 2.45 mg/kg/hr, kel 0.11 1/hr, t1/2z 6.31 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has inositol, the second reading myo-Inositol; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -165,10 +165,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.882, 0 of 1 reader(s) agree | 0.882 | cross-check disputed by a second reader: verdict disputed, agreement 0.882, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | pass | 5.22 | 6.313 | 1.209 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 7.9 | 6.313 | 0.7991 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 6.31 | 6.313 | 1 | hr→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.882 (15 of 17 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.882 | cross-check contradicted by a second reader: verdict disputed; agreement 0.882 (15 of 17 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | pass | 5.22 | 6.313 | 1.209 | reported 5.22 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 7.9 | 6.313 | 0.7991 | reported 7.9 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 6.31 | 6.313 | 1 | reported 6.31 hr→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

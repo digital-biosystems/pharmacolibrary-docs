@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Promazine model uses placeholder defaults for absorption rate constant and lag time, not values from the paper.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="promazine" model-id="Promazine_McGree2013_reference" status="needs_review" stale="false" population="" measured-compound="promazine" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ McGree JM, Noble G, Schneiders F, Dunstan AJ, McKinney AR, Boston R et al. A Bay
 
 ### Reviewer guidance
 
-**Promazine model uses placeholder defaults for absorption rate constant and lag time, not values from the paper.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The source paper does not report estimates for the absorption rate constant or lag time. Consequently, the model relies on generic library placeholders for these parameters rather than study-specific values. A second reader also disagreed on which numerical value corresponds to clearance and volume, identifying a mismatch in the parameter assignments. Extracted — promazine: CL/F 769 L/hr, V/F 6.87e+03 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — promazine: CL/F 769 L/hr, V/F 6.87e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q315: this record has none, the second reading 109; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.778 (7 of 9 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -147,7 +147,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_promazine/Promazine_McGree2013_reference/Promazine_McGree2013_reference_modelica.zip" download>Promazine_McGree2013_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_promazine/Promazine_McGree2013_reference/Promazine_McGree2013_reference_modelica.zip" download>Promazine_McGree2013_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_promazine/Promazine_McGree2013_reference/Promazine_McGree2013_reference_fmi.zip" download>Promazine_McGree2013_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_promazine/Promazine_McGree2013_reference/Promazine_McGree2013_reference_matlab.zip" download>Promazine_McGree2013_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_promazine/Promazine_McGree2013_reference/Promazine_McGree2013_reference_matlab_simbio.zip" download>Promazine_McGree2013_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
@@ -211,4 +211,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpromazine%5D%20Promazine_McGree2013_reference&body=Drug%3A%20promazine%0ARecord%3A%20Promazine_McGree2013_reference%0APaper%3A%20McGree_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_promazine/Promazine_McGree2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 16:55 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 15:37 UTC</sub>

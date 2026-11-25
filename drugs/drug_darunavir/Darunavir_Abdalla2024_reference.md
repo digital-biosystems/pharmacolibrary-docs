@@ -5,11 +5,11 @@
 
 # darunavir — `Darunavir_Abdalla2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Darunavir’s reported distribution volume, V = 5.54 L/mmol, is dimensionally incompatible with volume, and its unit could not be converted to SI, so the record was rejected.
+> KD has no unit.
 
-<div class="pk-model-meta" hidden drug="darunavir" model-id="Darunavir_Abdalla2024_reference" status="rejected" stale="false" population="HIV-1 infected adolescents aged 12-18 years" measured-compound="darunavir" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="darunavir" model-id="Darunavir_Abdalla2024_reference" status="needs_review" stale="false" population="HIV-1 infected adolescents" measured-compound="darunavir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Abdalla S, Compagnucci A, Riault Y, Chan MK, Bamford A, Nolan A et al. Simultaneous pharmacokinetic modeling of unbound and total darunavir with ritonavir in adolescents: a substudy of the SMILE trial. Antimicrobial agents and chemotherapy 68(2):e0100423 (2024).
@@ -17,33 +17,33 @@ Abdalla S, Compagnucci A, Riault Y, Chan MK, Bamford A, Nolan A et al. Simultane
 
 ## Population and dosing
 
-**Population:** HIV-1 infected adolescents aged 12-18 years · condition HIV-1 infection · age group adolescent · n = 152.
+**Population:** HIV-1 infected adolescents · condition HIV-1 infection · age group adolescent.
 
 **Dosing:** 800 mg, oral, multiple, every 24 h.
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 6 extracted, plus 1 covariate effect.  
+**Parameters:** 5 extracted, plus 1 covariate effect.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit | RSE% | IIV |
-|---|---|---|---|---|---|
-| ka DRV (h -1 ) | kabs | 0.43 | h -1 | 21 |  |
-| CL/F DRV, u (L/h) | CL/F | 169 | L/h | 4 | 29.3 (None% RSE) |
-| V/F DRV, u (L) | V/F | 2601 | L | 18 | 76.1 (None% RSE) |
-| K d, AAG (×10 -3 mmol/L) | KD | 0.85 |  | 10 |  |
-| Θ HSA (L/mmol) | V | 5.54 | L/mmol | 25 |  |
-| Unbound DRV concentrations | Ct | 40 | mg/L | 4 |  |
-| theta_q314_weight | theta_q314_weight | 1 |  |  |  |
+| label | parameter | value | unit | IIV |
+|---|---|---|---|---|
+| ka DRV (h -1 ) | kabs | 0.43 | h -1 |  |
+| CL/F DRV, u (L/h) | CLu | 169 | L/h |  |
+| V/F DRV, u (L) | V/F | 2601 | L | 76.1 (None% RSE) |
+| K d, AAG (×10 -3 mmol/L) | KD | 0.85 |  |  |
+| CL/F RTV (L/h) | CL/F | 21.6 | L/h | 29.3 (None% RSE) |
+| weight_effect_on | weight_effect_on | 1 |  |  |
+| RTV concentrations | equation variable | 50 |  |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.524). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,36 +53,30 @@ Abdalla S, Compagnucci A, Riault Y, Chan MK, Bamford A, Nolan A et al. Simultane
 
 ### Reviewer guidance
 
-**Darunavir’s reported distribution volume, V = 5.54 L/mmol, is dimensionally incompatible with volume, and its unit could not be converted to SI, so the record was rejected.**
+**KD has no unit.**
 
-The record defines V as volume of distribution but reports 5.54 L/mmol, a unit of volume per amount of substance rather than volume. The reported unit could not be converted to SI, and the dimensional comparison found it inconsistent with volume. Extracted — darunavir: kabs 0.43 h -1, CL/F 169 L/h, V/F 2.6e+03 L, KD 0.85, V 5.54 L/mmol, Ct 40 mg/L.
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — darunavir: kabs 0.43 h -1, CLu 169 L/h, V/F 2.6e+03 L, KD 0.85, CL/F 21.6 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has darunavir, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc rtv effect on cl/f drv: this record has none, the second reading -0.5; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| ka DRV (h -1 ) | `Q49` · kabs | 0.43 | h -1 | 0.0001194 | 1/s | 1/h | 21 | llm_confirmed (0.6) | tab_1:row3:col1, tab_1:row3:col2 |  |
-| CL/F DRV, u (L/h) | `Q27` · CL/F | 169 | L/h | 4.694e-05 | m3/s | l/h | 4 | llm_confirmed (0.6) | tab_1:row4:col1, tab_1:row4:col2 | 29.3 (None% RSE) |
-| V/F DRV, u (L) | `Q76` · V/F | 2601 | L | 2.601 | m3 | l | 18 | llm_confirmed (0.6) | tab_1:row6:col1, tab_1:row6:col2 | 76.1 (None% RSE) |
-| K d, AAG (×10 -3 mmol/L) | `Q331` · KD | 0.85 |  |  |  |  | 10 | llm (0.6) | tab_1:row8:col1, tab_1:row8:col2 |  |
-| Θ HSA (L/mmol) | `Q61` · V | 5.54 | L/mmol |  |  | l/mM | 25 | llm (0.6) | tab_1:row9:col1, tab_1:row9:col2 |  |
-| Unbound DRV concentrations | `Q75` · Ct | 40 | mg/L |  |  | mg/L | 4 | llm_corrected (0.6) | tab_1:row23:col1, tab_1:row23:col2 |  |
-| theta_q314_weight | `Q900` · theta_q314_weight | 1 |  |  |  |  |  |  | tab_1:row13:col1, tab_1:row16:col1 |  |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
+|---|---|---|---|---|---|---|---|---|---|
+| ka DRV (h -1 ) | `Q49` · kabs | 0.43 | h -1 | 0.0001194 | 1/s | 1/h | llm_confirmed (0.6) | tab_1:row3:col1 |  |
+| CL/F DRV, u (L/h) | `Q24` · CLu | 169 | L/h | 4.694e-05 | m3/s | l/h | llm_corrected (0.6) | tab_1:row4:col1 |  |
+| V/F DRV, u (L) | `Q76` · V/F | 2601 | L | 2.601 | m3 | l | llm_confirmed (0.6) | tab_1:row6:col1 | 76.1 (None% RSE) |
+| K d, AAG (×10 -3 mmol/L) | `Q331` · KD | 0.85 |  |  |  |  | llm (0.6) | tab_1:row8:col1 |  |
+| CL/F RTV (L/h) | `Q27` · CL/F | 21.6 | L/h | 6e-06 | m3/s | l/h | llm_confirmed (0.6) | tab_1:row12:col1 | 29.3 (None% RSE) |
+| weight_effect_on | `Q900` · weight_effect_on | 1 |  |  |  |  |  | tab_1:row13:col1, tab_1:row16:col1 |  |
+| RTV concentrations | `Q900` · equation variable | 50 |  | 50 |  |  | llm (0.6) | tab_1:row25:col1 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
-
-### Unresolved rows _(no Q-code or no value — not parameters)_
-
-| label (paper) | Q-code | link |
-|---|---|---|
-| F | Q40 | exact |
 
 ## Departures & gaps
 
@@ -90,52 +84,61 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - table section iiv: 'CL/F DRV,u' routed out of structural estimates ('Inter-individual variability (CV%)')
 - table section iiv: 'V/F DRV,u' routed out of structural estimates ('Inter-individual variability (CV%)')
 - table section iiv: 'CL/F RTV' routed out of structural estimates ('Inter-individual variability (CV%)')
-- unit_dimension_mismatch: 'AUC RTV effect on CL/F DRV, u' → Q27 (unit '[mass]' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q27 ('AUC RTV effect on CL/F DRV, u', value '-0.5') — already have one for this compound
-- dropped unlinked row (NIL): 'N AAG' — extend the ontology if this is a real PK parameter (source ['tab_1:row7:col1'])
-- unit_dimension_mismatch: 'Θ HSA (L/mmol)' → Q61 (unit '[length] ** 3 / [substance]' vs ontology '[length] ** 3') — route to review
+- table representations disagree for 'ka DRV (h -1 )'; source reconciliation required
+- table representations disagree for 'CL/F DRV, u (L/h)'; source reconciliation required
+- table representations disagree for 'AUC RTV effect on CL/F DRV, u'; source reconciliation required
+- table representations disagree for 'V/F DRV, u (L)'; source reconciliation required
+- table representations disagree for 'K d, AAG (×10 -3 mmol/L)'; source reconciliation required
+- table representations disagree for 'Θ HSA (L/mmol)'; source reconciliation required
+- table representations disagree for 'ka RTV (h -1 )'; source reconciliation required
+- table representations disagree for 'CL/F RTV (L/h)'; source reconciliation required
+- table representations disagree for 'Weight effect on'; source reconciliation required
+- table representations disagree for 'V/F RTV (L)'; source reconciliation required
+- table representations disagree for 'Unbound DRV concentrations'; source reconciliation required
+- table representations disagree for 'Total DRV concentrations'; source reconciliation required
+- table representations disagree for 'RTV concentrations'; source reconciliation required
+- dropped 'AUC RTV effect on CL/F DRV, u' → Q27 = -0.5: a clearance of -0.5 is not a parameter value (source ['tab_1:row5:col1'])
+- dropped unlinked row (NIL): 'Θ HSA (L/mmol)' — extend the ontology if this is a real PK parameter (source ['tab_1:row9:col1'])
 - dropped duplicate Q49 ('ka RTV (h -1 )', value '0.18') — already have one for this compound
-- dropped duplicate Q27 ('CL/F RTV (L/h)', value '21.6') — already have one for this compound
+- covariate level 'Weight effect on' → Q900:weight_effect_on = 1 (linear_fractional on Q24)
 - dropped duplicate Q76 ('V/F RTV (L)', value '105.7') — already have one for this compound
-- dropped unlinked row (NIL): 'Total DRV concentrations' — extend the ontology if this is a real PK parameter (source ['tab_1:row24:col1', 'tab_1:row24:col2'])
-- dropped duplicate Q75 ('RTV concentrations', value '50') — already have one for this compound
-- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
+- dropped unlinked row (NIL): 'Unbound DRV concentrations' — extend the ontology if this is a real PK parameter (source ['tab_1:row23:col1'])
+- dropped unlinked row (NIL): 'Total DRV concentrations' — extend the ontology if this is a real PK parameter (source ['tab_1:row24:col1'])
 - implicit units: 'K d, AAG (×10 -3 mmol/L)' — the LLM proposed 'mmol/L', whose dimension does not fit Q331; left unset
-- implicit units: 'Unbound DRV concentrations' → mg/L (from the paper text: "Concentrations in the paper are expressed in mg/L (e.g., 'WT EC 90 (0.00243 mg/L)' for unbound DRV trough concentrations")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=darunavir
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
+- table tab_1: unbound_uncertainty
+- table tab_1: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.524 (11/21 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.444 (8/18 fields) | 10 |
 
 <details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['ritonavir', 'darunavir', 'metabolism']] | [] | mismatch |
 | `gpt-oss-120b` | `parameters[auc rtv effect on cl/f drv]` |  | -0.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f drv].covariate_forms` | ['linear_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f drv].parameter_id` | Q24 | Q27 | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f rtv]` | 21.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k d, aag]` | 0.85 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q314_weight]` | 1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rtv concentrations]` | 50 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q319_weight]` |  | 1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[unbound drv concentrations].parameter_id` | Q75 | Q46 | mismatch |
-| `gpt-oss-120b` | `screen.dose_compound` | darunavir | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | darunavir | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[unbound drv concentrations]` |  | 40 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[weight_effect_on]` | 1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ hsa]` |  | 5.54 | only_one_extracted |
 
 </details>
 
@@ -149,19 +152,20 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['tab_1:row4:col1', 'tab_1:row4:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_1:row3:col1', 'tab_1:row3:col2'] |
-| C5_dimension_Q61 | fail | [length] ** 3 | L/mmol ([length] ** 3 / [substance]) | ['tab_1:row9:col1', 'tab_1:row9:col2'] |
-| C5_dimension_Q75 | pass | [mass] / [length] ** 3 |  | ['tab_1:row23:col1', 'tab_1:row23:col2'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
-| C5_unit_missing_Q331 | fail | [mass] / [length] ** 3 |  | ['tab_1:row8:col1', 'tab_1:row8:col2'] |
+| C2_reference | pass |  |  |  |
+| C5_dimension_Q24 | pass | [length] ** 3 / [time] |  | ['tab_1:row4:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['tab_1:row12:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_1:row3:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['tab_1:row6:col1'] |
+| C5_unit_missing_Q331 | fail | [mass] / [length] ** 3 |  | ['tab_1:row8:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 169 L/h | ['tab_1:row4:col1', 'tab_1:row4:col2'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 2.6e+03 L | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
+| C9_phys_window_Q24 | pass | clearance within physiological range | 169 L/h | ['tab_1:row4:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 21.6 L/h | ['tab_1:row12:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 2.6e+03 L | ['tab_1:row6:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -173,9 +177,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -185,4 +199,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdarunavir%5D%20Darunavir_Abdalla2024_reference&body=Drug%3A%20darunavir%0ARecord%3A%20Darunavir_Abdalla2024_reference%0APaper%3A%20Abdalla_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_darunavir/Darunavir_Abdalla2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:42 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:13 UTC</sub>

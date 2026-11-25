@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cyclophosphamide clearance of 12.7 mL/day/kg was rejected because the paper reports polatuzumab vedotin pharmacokinetics, with cyclophosphamide only a co-administered comparator.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="cyclophosphamide" model-id="Cyclophosphamide_Shemesh2020_reference" status="rejected" stale="false" population="" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Shemesh CS, Agarwal P, Lu T, Lee C, Dere RC, Li X et al. Pharmacokinetics of pol
 
 ### Reviewer guidance
 
-**Cyclophosphamide clearance of 12.7 mL/day/kg was rejected because the paper reports polatuzumab vedotin pharmacokinetics, with cyclophosphamide only a co-administered comparator.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The record lists cyclophosphamide clearance as 12.7 mL/day/kg and volume of distribution as 6.0921 L, but the paper reports pharmacokinetic parameters for polatuzumab vedotin (acMMAE and unconjugated MMAE). The second reader disputed the verdict, with agreement of 0.143 and 0 of 1 reader agreeing, and disagreed over several extracted values. Extracted — cyclophosphamide: CL 12.7 mL/day/kg, V 6.09 L.
+Extracted — cyclophosphamide: CL 12.7 mL/day/kg, V 6.09 L.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q17: this record has 1800, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -127,7 +127,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.143 (1 of 7 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.143 | cross-check contradicted by a second reader: verdict disputed; agreement 0.143 (1 of 7 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (glm-5.3-flash) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

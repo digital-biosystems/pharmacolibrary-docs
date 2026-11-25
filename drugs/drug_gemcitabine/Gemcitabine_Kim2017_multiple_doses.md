@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Gemcitabine parameters are dimensionally invalid, and the erlotinib model contains an orphan compartment.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng/mL ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="gemcitabine" model-id="Gemcitabine_Kim2017_multiple_doses" status="rejected" stale="false" population="rats" measured-compound="erlotinib, OSI-420, OSI-413" parameterization="apparent" topology="general_linear"></div>
 
@@ -60,13 +60,13 @@ Kim TH, Shin S, Kim S, Bulitta JB, Weon KY, Joo SH et al. Alterations in Pharmac
 
 ### Reviewer guidance
 
-**Gemcitabine parameters are dimensionally invalid, and the erlotinib model contains an orphan compartment.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng/mL ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists gemcitabine values like AUC 29383.8 ng·h/mL alongside a structural check that flagged a unit dimension conflict with expected mass-volume-time units. The model structure links erlotinib to metabolites OSI-420 and OSI-413, but these compartments are marked unreachable from the dose. Consequently, the model was rejected due to these fundamental pharmacokinetic inconsistencies. Extracted — gemcitabine: C0 1.01e+04 ng/mL, AUClast 2.94e+04 ng·h/mL, AUC∞ 2.97e+04 ng·h/mL, V/F 5.2 L/kg, CL/F 5.7 mL/min/kg, Vss 1.9 L/kg; dFdU: Cmax 722 ng/mL, AUC ratio 0.7, tmax 1.5 h; erlotinib: tmax 3.7 hr.
+A reported unit could not be converted (C0, AUClast, AUC∞ and Cmax), so that value has no SI equivalent. Extracted — gemcitabine: C0 1.01e+04 ng/mL, AUClast 2.94e+04 ng·h/mL, AUC∞ 2.97e+04 ng·h/mL, V/F 5.2 L/kg, CL/F 5.7 mL/min/kg, Vss 1.9 L/kg; dFdU: Cmax 722 ng/mL, AUC ratio 0.7, tmax 1.5 h; erlotinib: tmax 3.7 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gemcitabine, erlotinib, the second reading gemcitabine and erlotinib; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

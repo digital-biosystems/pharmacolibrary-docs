@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The review held the model because absorption rate constants were defaulted rather than reported, and readers disagreed on the parameterization type.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Ryynnen1998_reference" status="needs_review" stale="false" population="patients with brain tumors" measured-compound="bleomycin" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Ryynänen PM, Savolainen SE, Aronen HJ, Korppi-Tommola ET, Huhmar HM, Kallio ME 
 
 ### Reviewer guidance
 
-**The review held the model because absorption rate constants were defaulted rather than reported, and readers disagreed on the parameterization type.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record lacks an explicit estimate for the absorption rate constant, relying on library defaults for the first-order depot input instead of data from the paper. A second reader disputed the model's classification as apparent rather than mechanistic and identified inconsistencies in the extracted clearance and volume values. These discrepancies prevented consensus on whether the model correctly represented the bleomycin dosing scenario. Extracted — bleomycin: CLu 5 ml/min, V/F 1.51 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — bleomycin: CLu 5 ml/min, V/F 1.51 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has none, the second reading 5; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (3 of 6 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (3 of 6 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

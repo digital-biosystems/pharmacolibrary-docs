@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The clearance and volume of distribution for cladribine are disputed because a second reader found no supporting values in the text.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Lu2024_reference" status="needs_review" stale="false" population="" measured-compound="cladribine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Lu H, Klopp-Schulze L, Mukker JK, Li D, Kuroki Y, Bolleddula J et al. Asia-inclu
 
 ### Reviewer guidance
 
-**The clearance and volume of distribution for cladribine are disputed because a second reader found no supporting values in the text.**
+**cross_check_disputed; x1_cross_check.**
 
-The record reports a total clearance of 60.0 L/h and a volume of distribution of 1250.0 L for cladribine. These values originate from a review reference rather than a primary population modeling study. A second reader disagreed with both values, failing to identify them in the source material, which caused the cross-check to fail. Extracted — cladribine: CL 60 L/h, V 1.25e+03 L.
+Extracted — cladribine: CL 60 L/h, V 1.25e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 60, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.333 (1 of 3 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial; agreement 0.333 (1 of 3 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

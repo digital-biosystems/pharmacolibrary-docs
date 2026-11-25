@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;benznidazole&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/&quot;},{&quot;label&quot;:&quot;Soy_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Benznidazole_Frade2022_reference&quot;,&quot;label&quot;:&quot;Frade_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/Benznidazole_Frade2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Benznidazole_Soy2015_reference&quot;,&quot;label&quot;:&quot;Soy_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/Benznidazole_Soy2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Assmus_2025_2_qPCR_positivity&quot;,&quot;label&quot;:&quot;Assmus_2025_2 \u00b7 qPCR positivity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/pd_Assmus_2025_2_qPCR_positivity.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Benznidazole_Soy2015_reference&quot;,&quot;label&quot;:&quot;Soy_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/Benznidazole_Soy2015_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Benznidazole_Frade2022_reference&quot;,&quot;label&quot;:&quot;Frade_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/Benznidazole_Frade2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Assmus_2025_2_qPCR_positivity&quot;,&quot;label&quot;:&quot;Assmus_2025_2 \u00b7 qPCR positivity&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_benznidazole/pd_Assmus_2025_2_qPCR_positivity.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # benznidazole — `Benznidazole_Soy2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Reviewers disputed the record because abstract-only statistics for benznidazole's clearance, volume, and absorption parameters could not be verified by a second reader.
-
-<div class="pk-model-meta" hidden drug="benznidazole" model-id="Benznidazole_Soy2015_reference" status="needs_review" stale="false" population="adults with chronic Chagas disease" measured-compound="benznidazole" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="benznidazole" model-id="Benznidazole_Soy2015_reference" status="simulated" stale="false" population="adult patients with Chagas disease" measured-compound="benznidazole" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Soy D, Aldasoro E, Guerrero L, Posada E, Serret N, Mejía T et al. Population pharmacokinetics of benznidazole in adult patients with Chagas disease. Antimicrobial agents and chemotherapy 59(6):3342–3349 (2015).
@@ -17,7 +15,7 @@ Soy D, Aldasoro E, Guerrero L, Posada E, Serret N, Mejía T et al. Population ph
 
 ## Population and dosing
 
-**Population:** adults with chronic Chagas disease · condition chronic Chagas disease · age group adult · n = 39.
+**Population:** adult patients with Chagas disease · condition Chagas disease · age group adult · n = 39.
 
 ## Model
 
@@ -29,8 +27,6 @@ Soy D, Aldasoro E, Guerrero L, Posada E, Serret N, Mejía T et al. Population ph
 <figure class="pk-models-diagram"><img src="drugs/drug_benznidazole/Benznidazole_Soy2015_reference/Benznidazole_Soy2015_reference.svg" alt="Benznidazole_Soy2015_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F | CL/F | 1.73 | liters/h |
@@ -39,7 +35,7 @@ Soy D, Aldasoro E, Guerrero L, Posada E, Serret N, Mejía T et al. Population ph
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,13 +45,13 @@ Soy D, Aldasoro E, Guerrero L, Posada E, Serret N, Mejía T et al. Population ph
 
 ### Reviewer guidance
 
-**Reviewers disputed the record because abstract-only statistics for benznidazole's clearance, volume, and absorption parameters could not be verified by a second reader.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-The model was constructed from the paper's abstract, meaning summary statistics like CL/F of 1.73 L/h stood in for fitted values. A second reader disagreed on all extracted parameters, returning null for CL/F, V/F, and Ka. This resulted in a cross-check agreement of 0.2, where 0 of 1 readers agreed with the primary extraction. Extracted — benznidazole: CL/F 1.73 liters/h, V/F 89.6 liters, kabs 1.15 h(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has benznidazole, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -79,36 +75,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=benznidazole
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Soy_2015_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>8 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl/f]` | 1.73 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` |  | 1.73 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 1.15 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` |  | 1.15 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f]` | 89.6 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f]` |  | 89.6 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | benznidazole | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | benznidazole | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -142,7 +122,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -222,4 +202,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbenznidazole%5D%20Benznidazole_Soy2015_reference&body=Drug%3A%20benznidazole%0ARecord%3A%20Benznidazole_Soy2015_reference%0APaper%3A%20Soy_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_benznidazole/Benznidazole_Soy2015_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 07:36 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:49 UTC</sub>

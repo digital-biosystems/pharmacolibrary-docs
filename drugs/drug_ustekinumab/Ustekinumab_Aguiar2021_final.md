@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The equilibrium dissociation constant for ustekinumab-target binding (0.168 nmol/L) uses a molar unit that the model engine cannot convert to mass-based SI units, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="ustekinumab" model-id="Ustekinumab_Aguiar2021_final" status="rejected" stale="false" population="patients with Crohn&#39;s disease" measured-compound="ustekinumab" parameterization="mechanistic" topology="3C"></div>
 
@@ -55,13 +55,13 @@ Aguiar Zdovc J, Hanžel J, Kurent T, Sever N, Koželj M, Smrekar N et al. Usteki
 
 ### Reviewer guidance
 
-**The equilibrium dissociation constant for ustekinumab-target binding (0.168 nmol/L) uses a molar unit that the model engine cannot convert to mass-based SI units, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The recorded unit for the dissociation constant is nmol/L, which represents molar concentration, but the model validation requires mass per volume. This conflict prevented the parameter from being converted to a compatible SI value, resulting in the record being held back. Additionally, a second reader disagreed with the extracted covariate assignments for albumin on clearance and gut-wall bioavailability, noting discrepancies in the associated covariate effects. Extracted — ustekinumab: kabs 0.381 day−1, CL 0.277, FG 0.598, V1 3.57, Q 1.89 L/day, V2 3.3, V 0.586, KD 0.168 nmol/L.
+A reported unit could not be converted (KD), so that value has no SI equivalent. Extracted — ustekinumab: kabs 0.381 day−1, CL 0.277, FG 0.598, V1 3.57, Q 1.89 L/day, V2 3.3, V 0.586, KD 0.168 nmol/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl (l/day) a].covariate_forms`: this record has none, the second reading ['linear_fractional']; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

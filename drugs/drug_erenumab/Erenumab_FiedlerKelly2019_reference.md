@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Paper Fiedler-Kelly_2019 describes a different drug, not erenumab, so its clearance and volume values cannot be attributed to erenumab.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="erenumab" model-id="Erenumab_FiedlerKelly2019_reference" status="rejected" stale="false" population="" measured-compound="erenumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Fiedler-Kelly JB, Cohen-Barak O, Morris DN, Ludwig E, Rasamoelisolo M, Shen H et
 
 ### Reviewer guidance
 
-**Paper Fiedler-Kelly_2019 describes a different drug, not erenumab, so its clearance and volume values cannot be attributed to erenumab.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The relevance screen failed because neither the title nor the abstract of Fiedler-Kelly_2019 names erenumab, identifying it as a paper about another drug. The extracted erenumab clearance of 0.0902 L/d and volume of distribution of 1.88 L therefore derive from a mismatched source. A second reader also disagreed on several extracted values, including 23.4 and 23.1 for fields missing in this record, and swapped the 1.88 L volume assignment, keeping the cross-check agreement at only 0.444. Extracted — erenumab: CL 0.0902 L/d, V 1.88 L.
+Extracted — erenumab: CL 0.0902 L/d, V 1.88 L.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q312: this record has none, the second reading 23.4; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -126,7 +126,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check agreement 0.444 is below 0.5: verdict partial, agreement 0.444, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.444 (4 of 9 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.444 | cross-check agreement 0.444 is below 0.5: verdict partial; agreement 0.444 (4 of 9 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

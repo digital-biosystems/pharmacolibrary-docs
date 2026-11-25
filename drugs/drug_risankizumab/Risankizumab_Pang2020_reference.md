@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the peripheral compartment, with a volume of 4.67 L, was unreachable from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Pang2020_reference" status="rejected" stale="false" population="patients with moderate-to-severe plaque psoriasis" measured-compound="risankizumab" parameterization="mechanistic" topology="3C"></div>
 
@@ -51,13 +51,13 @@ Pang Y, Khatri A, Suleiman AA, Othman AA. Clinical Pharmacokinetics and Pharmaco
 
 ### Reviewer guidance
 
-**The model was rejected because the peripheral compartment, with a volume of 4.67 L, was unreachable from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The three-compartment structure defines a peripheral compartment (V2) of 4.67 L, but this compartment had no path from the dose site. This orphaned compartment made the model invalid. Additionally, a second reader disagreed with the extracted clearance value of 0.19 L/day, proposing 0.31 L/day instead. Extracted — risankizumab: V1 6.52 L, V2 4.67 L, V 11.2 L, CL 0.19 L/day, kabs 0.908 day−1.
+Extracted — risankizumab: V1 6.52 L, V2 4.67 L, V 11.2 L, CL 0.19 L/day, kabs 0.908 day−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has risankizumab, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The C-peptide distribution volume of 12.3 L is misattributed to insulin human, creating an orphan metabolite structure.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="insulin (human)" model-id="InsulinHuman_Vlund1987_reference" status="rejected" stale="false" population="conscious dogs" measured-compound="insulin_human" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -48,13 +48,13 @@ Vølund A, Polonsky KS, Bergman RN. Calculated pattern of intraportal insulin ap
 
 ### Reviewer guidance
 
-**The C-peptide distribution volume of 12.3 L is misattributed to insulin human, creating an orphan metabolite structure.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record assigns the C-peptide distribution volume of 12.3 L to the insulin_human compound, while the C-peptide itself lacks any parameters. This mismatch leaves the C-peptide compartment unlinked and orphaned within the model structure. Additionally, the second reader did not detect the insulin-to-C-peptide interconversion or the specific parameter values. Extracted — insulin human: t1/2z 6.9 min, V 12.3 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — insulin human: t1/2z 6.9 min, V 12.3 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has insulin_human, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

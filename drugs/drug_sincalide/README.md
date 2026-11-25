@@ -21,8 +21,6 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Roche_1989_3H_inositol_phosphates](drugs/drug_sincalide/pd_Roche_1989_3H_inositol_phosphates.md) | [3H]inositol phosphates cellular contents ← CCK-8 · direct Emax (saturable) effect | — | Roche S et al., Gastrin and CCK-8 induce inositol 1,4,5…, Biochimica et biophysica ac… (1989) | [10.1016/0167-4889(89)90228-0](https://doi.org/10.1016/0167-4889(89)90228-0) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Roche_1989_AP_uptake](drugs/drug_sincalide/pd_Roche_1989_AP_uptake.md) | [14C]aminopyrine (AP) uptake by parietal cells ← CCK-8 · direct Emax (saturable) effect | — | Roche S et al., Gastrin and CCK-8 induce inositol 1,4,5…, Biochimica et biophysica ac… (1989) | [10.1016/0167-4889(89)90228-0](https://doi.org/10.1016/0167-4889(89)90228-0) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Taghizadeh_2022_IP1](drugs/drug_sincalide/pd_Taghizadeh_2022_IP1.md) | IP1 production (fold difference over baseline) ← CCK-8 (sincalide) · direct Emax (saturable) effect | — | Taghizadeh MS et al., Discovery of the cyclotide caripe 11 as…, Scientific reports (2022) | [10.1038/s41598-022-13142-z](https://doi.org/10.1038/s41598-022-13142-z) |
 
 <details class="legend">
@@ -37,7 +35,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:33 | 0:59 | 0/0/0 | 3/0/0 | 0/0/0 | 125,615/2,045 | ollama / glm-5.3-flash | 7 | 1/6 | 7/0 | 0 |
+| 2026-11-24 05:45 | 0:03 | 0/0/0 | 1/0/0 | 0/0/0 | 3,890/157 | einfracz / qwen3.8-27b | 7 | 1/6 | 7/0 | 0 |
 
 ## Coverage
 
@@ -50,19 +48,28 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abidi_2022 | irrelevant | 0 | 0 | In vitro study of phytocannabinoids in human gingival fibroblasts; no sincalide or PK parameters present. |
-| popPK | Chen_2024 | irrelevant | 0 | 0 | This is a pharmacology/mechanism study of coptisine in rats with no sincalide PK parameters reported. |
+| popPK | Abidi_2022 | irrelevant | 0 | 0 | The paper investigates phytocannabinoids in gingival fibroblasts and does not study sincalide or report any pharmacokinetic parameters for it. |
+| PGx | Abidi_2022 | not_relevant | 0 | 0 | The paper studies phytocannabinoids in gingival fibroblasts and does not mention sincalide or any pharmacogenomic effects. |
+| popPK | Chen_2024 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics and mechanism of action of coptisine in rats, not the pharmacokinetics of sincalide. |
+| PGx | Chen_2024 | not_relevant | 0 | 0 | The paper studies Coptisine (CTS) and does not mention Sincalide or any pharmacogenomic effects. |
 | popPK | El-Saber_2020 | irrelevant | 0 | 0 | This is an in-vitro/in-vivo efficacy study of hydroxyurea and eflornithine against Babesia/Theileria; "CLF" is clofazimine, not sincalide, and no PK parameters for sincalide appear. |
-| popPK | Franco_2023 | irrelevant | 0 | 0 | This is an in vitro pharmacodynamic study of chloroquine and trastuzumab in JIMT-1 breast cancer cells; sincalide is not mentioned at all. |
-| popPK | Hirsh_1998 | irrelevant | 0 | 0 | Study of CCK-8 effects on glucose absorption in perfused rat intestine; no sincalide PK parameters reported. |
+| popPK | Franco_2023 | irrelevant | 0 | 0 | The paper studies the pharmacodynamics of chloroquine and trastuzumab in breast cancer cells, not the pharmacokinetics of sincalide. |
+| PGx | Franco_2023 | not_relevant | 0 | 0 | The paper reports on pharmacodynamic interactions between chloroquine and trastuzumab, not pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of sincalide. |
+| popPK | Hirsh_1998 | irrelevant | 0 | 0 | The paper studies the mechanism of cholecystokinin (CCK-8) on glucose absorption in rats, not the pharmacokinetics of sincalide. |
+| PGx | Hirsh_1998 | not_relevant | 0 | 0 | The paper studies the effect of cholecystokinin (CCK) on intestinal glucose absorption, not the pharmacokinetics or pharmacodynamics of sincalide, and contains no pharmacogenomic analysis. |
 | popPK | Lv_2024 | irrelevant | 0 | 0 | Network pharmacology study of Astragalus in Alzheimer's disease; no sincalide PK parameters reported anywhere. |
 | popPK | Peng_2022 | irrelevant | 0 | 0 | This is an in vitro antioxidant/antitumor study of Camellia fascicularis leaf extracts; no sincalide PK parameters appear anywhere. |
-| popPK | Roche_1989 | irrelevant | 0 | 0 | In-vitro rabbit parietal cell signaling study with CCK-8, not a PK study of sincalide and no disposition parameters. |
+| popPK | Roche_1989 | irrelevant | 0 | 0 | The paper describes in vitro cell signaling mechanisms involving gastrin and CCK-8, and does not involve the drug sincalide or any pharmacokinetic analysis. |
+| PGx | Roche_1989 | not_relevant | 0 | 0 | The paper studies signal transduction in rabbit parietal cells and does not involve sincalide or any pharmacogenomic analysis. |
 | popPK | Taghizadeh_2022 | irrelevant | 0 | 0 | This is an in-vitro pharmacology study of cyclotide peptides at the CCK2 receptor with no sincalide PK or disposition parameters. |
-| popPK | Tang_2026 | irrelevant | 0 | 0 | The paper is about zidovudine (AZT) transport/phosphorylation kinetics; sincalide is never mentioned, so no sincalide PK parameters exist in the evidence. |
-| popPK | Tian_2025 | irrelevant | 0 | 0 | This is an anti-cancer efficacy study of MI-503 in osteosarcoma; sincalide is not mentioned and no PK disposition parameters are reported. |
-| popPK | Yu_2023 | irrelevant | 0 | 0 | This is a mycotoxin (zearalenone) degradation/toxicity study with no sincalide PK data. |
-| popPK | Zhao_2016 | irrelevant | 0 | 0 | This is a glucose metabolism/gene expression study in rheumatoid arthritis with no sincalide PK data or parameters. |
+| popPK | Tang_2026 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of zidovudine (AZT), not sincalide. |
+| PGx | Tang_2026 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of zidovudine, not sincalide. |
+| popPK | Tian_2025 | irrelevant | 0 | 0 | The paper studies the pharmacology of the Menin inhibitor MI-503, not sincalide. |
+| PGx | Tian_2025 | not_relevant | 0 | 0 | The paper investigates the anti-cancer activity of the Menin inhibitor MI-503 in osteosarcoma and does not mention the drug sincalide. |
+| popPK | Yu_2023 | irrelevant | 0 | 0 | The study focuses on the electrochemical degradation of the mycotoxin zearalenone and its toxicity, not the pharmacokinetics of the drug sincalide. |
+| PGx | Yu_2023 | not_relevant | 0 | 0 | The paper concerns the electrochemical degradation and toxicity of the mycotoxin zearalenone, not the pharmacokinetics or pharmacodynamics of the drug sincalide. |
+| popPK | Zhao_2016 | irrelevant | 0 | 0 | The paper is a mechanistic study of the enzyme PGK1 in rheumatoid arthritis and contains no pharmacokinetic data for sincalide. |
+| PGx | Zhao_2016 | not_relevant | 0 | 0 | The paper investigates PGK1 in rheumatoid arthritis and does not mention sincalide or any pharmacokinetic/pharmacodynamic parameters of a drug. |
 
 
 </details>

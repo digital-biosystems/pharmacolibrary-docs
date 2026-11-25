@@ -46,7 +46,7 @@ Chairat K, Jittamala P, Hanboonkunupakarn B, Pukrittayakamee S, Hanpithakpong W,
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,6 +59,8 @@ Chairat K, Jittamala P, Hanboonkunupakarn B, Pukrittayakamee S, Hanpithakpong W,
 **MTT has no unit.**
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — primaquine: Fab 100, MTT 0.833 h, n_transit 5, CL/F 23.1 L/h, V3/F 160 L, V/F 22.3 L, tlag 0 h; carboxyprimaquine: fm 0.46, CL 0.377 L/h, V 10.5 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has primaquine → carboxyprimaquine (metabolism), the second reading none; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -102,6 +104,42 @@ Without a unit the value cannot be converted, so the model cannot use it. A repo
 - LLM region Chairat_2018:other_prose: no JSON records returned
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (4/20 fields) | 16 |
+
+<details><summary>16 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['primaquine', 'carboxyprimaquine', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/fcprq]` | 0.377 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/fprq]` | 23.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/fprq]` |  | 23.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` | 100 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` |  | 100 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm]` | 0.460 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fm]` |  | 0.460 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time]` | 0.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtt]` | 0.833 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtt]` |  | 0.833 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[no. of transit compartments]` | 5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[no. of transit compartments]` |  | 5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/fcprq]` | 10.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/fprq]` | 160 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/fprq]` |  | 160 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

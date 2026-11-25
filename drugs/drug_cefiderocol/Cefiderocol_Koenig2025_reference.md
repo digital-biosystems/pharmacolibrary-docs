@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Cefiderocol model lacks central-to-peripheral and peripheral-to-central transfer rate constants, causing incomplete parameter coverage.
+> T3_param_coverage.
 
 <div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_Koenig2025_reference" status="needs_review" stale="false" population="critically-ill patients receiving ECMO" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Koenig C, Fratoni AJ, Abouelhassan Y, Gluck JA, Nicolau DP, Kuti JL. Cefiderocol
 
 ### Reviewer guidance
 
-**Cefiderocol model lacks central-to-peripheral and peripheral-to-central transfer rate constants, causing incomplete parameter coverage.**
+**T3_param_coverage.**
 
-The record contains a one-compartment structure with clearance and volume, yet lists transfer rate constants k12 and k21 without assigning them to the model. The review flagged that two required parameters were neither extracted nor assigned default values. Additionally, the record is based on the paper's abstract, so its summary statistics stand in for a fitted model. Extracted — cefiderocol: CL 2.3 L/h, V 4.8 L, k12 5.1 h-1, k21 3.9 h-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefiderocol: CL 2.3 L/h, V 4.8 L, k12 5.1 h-1, k21 3.9 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of mean protein binding: this record has none, the second reading 41; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 2 covered |  | neither emitted nor in defaulted[]: ['k12', 'k21'] |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.636, 0 of 1 reader(s) agree | 0.636 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.636 (7 of 11 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.636 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

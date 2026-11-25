@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;mitomycin&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/&quot;},{&quot;label&quot;:&quot;van_2004 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mitomycin_den1983_reference&quot;,&quot;label&quot;:&quot;den_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/Mitomycin_den1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Mitomycin's peripheral volume of distribution is null, creating an orphan compartment in the two-compartment model.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_van2004_reference" status="rejected" stale="false" population="patients undergoing cytoreductive surgery with HIPEC" measured-compound="mitomycin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_van2004_reference" status="rejected" stale="false" population="patients undergoing HIPEC" measured-compound="mitomycin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 van Ruth S, Mathôt RA, Sparidans RW, Beijnen JH, Verwaal VJ, Zoetmulder FA. Population pharmacokinetics and pharmacodynamics of mitomycin during intraoperative hyperthermic intraperitoneal chemotherapy. Clinical pharmacokinetics 43(2):131–143 (2004).
@@ -16,7 +17,7 @@ van Ruth S, Mathôt RA, Sparidans RW, Beijnen JH, Verwaal VJ, Zoetmulder FA. Pop
 
 ## Population and dosing
 
-**Population:** patients undergoing cytoreductive surgery with HIPEC · condition malignancy · age group adult · n = 47.
+**Population:** patients undergoing HIPEC · condition malignancy · age group adult · n = 47.
 
 ## Model
 
@@ -30,14 +31,14 @@ van Ruth S, Mathôt RA, Sparidans RW, Beijnen JH, Verwaal VJ, Zoetmulder FA. Pop
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| volume of distribution of the perfusate compartment (V1) | V1 | 4.5 | L |
+| The average volume of distribution of the perfusate compartment (V1) | V1 | 4.5 | L |
 | rate constant from the perfusate to the systemic circulation (k12) | k12 | 0.014 | min(-1) |
 | clearance from the central compartment (CL) | CL | 0.55 | L/min |
 | volume of distribution of the peripheral plasma compartment (V3) | V2 | 36 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.778), qwen3.8-27b (partly confirmed, agreement 0.778). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,19 +48,19 @@ van Ruth S, Mathôt RA, Sparidans RW, Beijnen JH, Verwaal VJ, Zoetmulder FA. Pop
 
 ### Reviewer guidance
 
-**Mitomycin's peripheral volume of distribution is null, creating an orphan compartment in the two-compartment model.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists a peripheral volume of 36 L, yet the second reader's disagreement shows the perfusate compartment volume as null in the extracted data. This inconsistency renders the peripheral compartment unreachable from the dose. The record was built from the abstract alone, so these summary statistics stand in for a fitted model. Extracted — mitomycin: V1 4.5 L, k12 0.014 min(-1), CL 0.55 L/min, V2 36 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mitomycin: V1 4.5 L, k12 0.014 min(-1), CL 0.55 L/min, V2 36 L.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of the average volume of distribution of the perfusate compartment: this record has none, the second reading 4.5; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average volume of distribution of the perfusate compartment: this record has none, the second reading 4.5; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| volume of distribution of the perfusate compartment (V1) | `Q63` · V1 | 4.5 | L | 0.0045 | m3 | l | llm_corrected (0.6) | van_2004:abstract |
+| The average volume of distribution of the perfusate compartment (V1) | `Q63` · V1 | 4.5 | L | 0.0045 | m3 | l | llm_corrected (0.6) | van_2004:abstract |
 | rate constant from the perfusate to the systemic circulation (k12) | `Q301` · k12 | 0.014 | min(-1) | 0.0002333 | 1/s | 1/min | llm (0.6) | van_2004:abstract |
 | clearance from the central compartment (CL) | `Q22` · CL | 0.55 | L/min | 9.167e-06 | m3/s | l/min | llm_confirmed (0.6) | van_2004:abstract |
 | volume of distribution of the peripheral plasma compartment (V3) | `Q64` · V2 | 36 | L | 0.036 | m3 | l | boundary_compartment (0.9) | van_2004:abstract |
@@ -72,27 +73,29 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q63 ('volume of distribution of the central plasma compartment (V2)', value '28') — already have one for this compound
+- dropped duplicate Q63 ('The average volume of distribution of the central plasma compartment (V2)', value 28) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mitomycin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in van_2004_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.778 (7/9 fields) | 2 |
 | `qwen3.8-27b` | partly confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[average volume of distribution of the perfusate compartment]` |  | 4.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the average volume of distribution of the perfusate compartment]` | 4.5 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[the average volume of distribution of the perfusate compartment]` |  | 4.5 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[volume of distribution of the perfusate compartment]` | 4.5 |  | only_one_extracted |
 
@@ -143,4 +146,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitomycin%5D%20Mitomycin_van2004_reference&body=Drug%3A%20mitomycin%0ARecord%3A%20Mitomycin_van2004_reference%0APaper%3A%20van_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitomycin/Mitomycin_van2004_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:58 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:06 UTC</sub>

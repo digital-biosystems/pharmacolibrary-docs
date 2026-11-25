@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Golimumab record held back due to cross-check dispute; second reader rejected the value 3.85 and identified missing parameters.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="golimumab" model-id="Golimumab_Dreesen2020_reference" status="needs_review" stale="false" population="adults with ulcerative colitis" measured-compound="golimumab" parameterization="apparent" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Dreesen E, Kantasiripitak W, Detrez I, Stefanović S, Vermeire S, Ferrante M et 
 
 ### Reviewer guidance
 
-**Golimumab record held back due to cross-check dispute; second reader rejected the value 3.85 and identified missing parameters.**
+**cross_check_disputed; x1_cross_check.**
 
-The model builder did not extract a value for the lag time, resulting in an implicit default assumption. The second reader disagreed with the recorded value of 3.85 and identified additional parameter values, such as 4.09, that are absent from this record. This conflict produced a cross-check agreement ratio of 0.583, indicating insufficient consensus for publication. Extracted — golimumab: kabs 0.473 d -1, CL/F 0.442 L/d, V1/F 8.64 L, Q/F 0.43 L/d, V2/F 4.48 L.
+Extracted — golimumab: kabs 0.473 d -1, CL/F 0.442 L/d, V1/F 8.64 L, Q/F 0.43 L/d, V2/F 4.48 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has golimumab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -194,7 +194,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.583, 0 of 1 reader(s) agree | 0.583 | cross-check disputed by a second reader: verdict disputed, agreement 0.583, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.583 (7 of 12 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.583 | cross-check contradicted by a second reader: verdict disputed; agreement 0.583 (7 of 12 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

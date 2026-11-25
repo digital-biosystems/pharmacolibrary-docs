@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record cites erenumab parameters, but the source paper studies galcanezumab and only mentions erenumab as a comparator without providing its specific PK values.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="erenumab" model-id="Erenumab_Kielbasa2019_reference" status="rejected" stale="false" population="" measured-compound="erenumab" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Kielbasa W, Helton DL. A new era for migraine: Pharmacokinetic and pharmacodynam
 
 ### Reviewer guidance
 
-**The record cites erenumab parameters, but the source paper studies galcanezumab and only mentions erenumab as a comparator without providing its specific PK values.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The identified parameters for clearance (0.008 L/h) and volume of distribution (6.5 L) are attributed to erenumab, yet the source text is a review on galcanezumab. The model builder assumed unit bioavailability and used default values for lag time because the paper contained no original quantitative data for erenumab. This confirms the parameters do not belong to the intended compound, leading to rejection. Extracted — erenumab: CL/F 0.008 L/h, V/F 6.5 L, kabs 0.02 h−1.
+Extracted — erenumab: CL/F 0.008 L/h, V/F 6.5 L, kabs 0.02 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q56: this record has 3, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.8 (8 of 10 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

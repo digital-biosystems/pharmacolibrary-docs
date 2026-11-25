@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;axitinib&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/&quot;},{&quot;label&quot;:&quot;Ma_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Axitinib_Garrett2014_base&quot;,&quot;label&quot;:&quot;Garrett_2014_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Garrett2014_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Tortorici2014_reference&quot;,&quot;label&quot;:&quot;Tortorici_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Tortorici2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Garrett2014_final&quot;,&quot;label&quot;:&quot;Garrett_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Garrett2014_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Rini2013_reference&quot;,&quot;label&quot;:&quot;Rini_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Rini2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ma_2019_TV&quot;,&quot;label&quot;:&quot;Ma_2019 \u00b7 TV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/pd_Ma_2019_TV.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Axitinib_Rini2013_reference&quot;,&quot;label&quot;:&quot;Rini_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Rini2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Tortorici2014_reference&quot;,&quot;label&quot;:&quot;Tortorici_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Tortorici2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Garrett2014_base&quot;,&quot;label&quot;:&quot;Garrett_2014_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Garrett2014_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Garrett2014_final&quot;,&quot;label&quot;:&quot;Garrett_2014_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Garrett2014_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Axitinib_Ma2019_reference&quot;,&quot;label&quot;:&quot;Ma_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/Axitinib_Ma2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Ma_2019_TV&quot;,&quot;label&quot;:&quot;Ma_2019 \u00b7 TV&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_axitinib/pd_Ma_2019_TV.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Λ1 has no unit.
+> cross_check_disputed; x1_cross_check.
 
-<div class="pk-model-meta" hidden drug="axitinib" model-id="Axitinib_Ma2019_reference" status="needs_review" stale="false" population="MCF-7/ADR breast cancer xenograft-bearing mice" measured-compound="axitinib" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="axitinib" model-id="Axitinib_Ma2019_reference" status="needs_review" stale="false" population="mice with MCF-7/ADR breast cancer xenograft" measured-compound="axitinib" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Ma YH, Wang SY, Ren YP, Li J, Guo TJ, Lu W et al. Antitumor effect of axitinib combined with dopamine and PK-PD modeling in the treatment of human breast cancer xenograft. Acta pharmacologica Sinica 40(2):243–256 (2019).
@@ -17,20 +17,20 @@ Ma YH, Wang SY, Ren YP, Li J, Guo TJ, Lu W et al. Antitumor effect of axitinib c
 
 ## Population and dosing
 
-**Population:** MCF-7/ADR breast cancer xenograft-bearing mice · condition breast cancer xenograft.
+**Population:** mice with MCF-7/ADR breast cancer xenograft · condition breast cancer.
 
-**Dosing:** 4200 mg, oral, multiple, every 24 h.
-
-**Dosed compound ≠ measured compound:** dosed axitinib and dopamine, measured axitinib.
+**Dosing:** 2100, 4200, 8400 mg, other, multiple, every 24 h.
 
 > **Species: mouse.** This record comes from an animal study (mouse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 4 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_axitinib/Axitinib_Ma2019_reference/Axitinib_Ma2019_reference.svg" alt="Axitinib_Ma2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -40,12 +40,11 @@ Ma YH, Wang SY, Ren YP, Li J, Guo TJ, Lu W et al. Antitumor effect of axitinib c
 | k a (per day) | kabs | 78.7 | per day | 0 (None% RSE) |
 | V/F (L/kg) | V/F | 16.5 | L/kg | 0 (None% RSE) |
 | CL/F (L/kg/day) | CL/F | 319 | L/kg/day | 0 (None% RSE) |
-| N 0 (mm 3 ) | equation variable | 50.4 | mm 3 |  |
-| λ 1 (mm 3 /day) | λ1 | 273 | mm 3 /day | 17.9 (None% RSE) |
+| λ 1 (mm 3 /day) | λ1 | 273 | /day | 17.9 (None% RSE) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778), qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,13 +54,13 @@ Ma YH, Wang SY, Ren YP, Li J, Guo TJ, Lu W et al. Antitumor effect of axitinib c
 
 ### Reviewer guidance
 
-**Λ1 has no unit.**
+**cross_check_disputed; x1_cross_check.**
 
-Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (equation variable and λ1), so that value has no SI equivalent. Extracted — axitinib: kabs 78.7 per day, V/F 16.5 L/kg, CL/F 319 L/kg/day, λ1 273 mm 3 /day.
+Extracted — axitinib: kabs 78.7 per day, V/F 16.5 L/kg, CL/F 319 L/kg/day, λ1 273 /day.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has axitinib and dopamine, the second reading axitinib; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has axitinib, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -70,8 +69,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 | k a (per day) | `Q49` · kabs | 78.7 | per day | 0.0009109 | 1/s | 1/d | space_fold (0.95) | tab_0:row2:col1 | 0 (None% RSE) |
 | V/F (L/kg) | `Q76` · V/F | 16.5 | L/kg | 1.155 | m3 | l/kg | exact (1) | tab_0:row3:col1 | 0 (None% RSE) |
 | CL/F (L/kg/day) | `Q27` · CL/F | 319 | L/kg/day | 0.0002584 | m3/s | l/(d·kg) | exact (1) | tab_0:row4:col1 | 0 (None% RSE) |
-| N 0 (mm 3 ) | `Q900` · equation variable | 50.4 | mm 3 |  |  | mm3 | llm (0.6) | tab_0:row5:col1, tab_0:row5:col2, tab_0:row5:col4 |  |
-| λ 1 (mm 3 /day) | `Q67` · λ1 | 273 | mm 3 /day |  |  | mm3/d | space_fold (0.95) | tab_0:row7:col1, tab_0:row7:col2, tab_0:row7:col4 | 17.9 (None% RSE) |
+| λ 1 (mm 3 /day) | `Q67` · λ1 | 273 | /day | 0.00316 | 1/s | 1/d | space_fold (0.95) | tab_0:row7:col1 | 17.9 (None% RSE) |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -80,46 +78,49 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
-- table section iiv: 'k a (per day)' routed out of structural estimates ('IIV')
-- table section iiv: 'V/F (L/kg)' routed out of structural estimates ('IIV')
-- table section iiv: 'CL/F (L/kg/day)' routed out of structural estimates ('IIV')
-- table section iiv: 'N 0 (mm 3 )' routed out of structural estimates ('IIV')
-- table section iiv: 'λ 0 (per day)' routed out of structural estimates ('IIV')
-- table section iiv: 'λ 1 (mm 3 /day)' routed out of structural estimates ('IIV')
-- table section iiv: 'k max (per day)' routed out of structural estimates ('IIV')
-- table section iiv: 'kC 50 (mg/L)' routed out of structural estimates ('IIV')
-- table section iiv: 'ψ' routed out of structural estimates ('IIV')
-- unit_dimension_unknown: 'mm 3' (equation variable)
-- dropped duplicate Q900 ('λ 0 (per day)', value '0.229') — already have one for this compound
-- unit_dimension_unknown: 'mm 3 /day' (λ1)
-- dropped PD-category row 'k max (per day)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_0:row8:col1', 'tab_0:row8:col2'])
-- dropped PD-category row 'kC 50 (mg/L)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_0:row9:col1', 'tab_0:row9:col2'])
-- dropped duplicate Q900 ('ψ', value '2.43') — already have one for this compound
-- implicit units: 'λ 1 (mm 3 /day)' — the LLM proposed 'mm3/day', whose dimension does not fit Q67; left unset
+- table section iiv: 'k a (per day)' routed out of structural estimates ('IIV / CV (%)')
+- table section iiv: 'V/F (L/kg)' routed out of structural estimates ('IIV / CV (%)')
+- table section iiv: 'CL/F (L/kg/day)' routed out of structural estimates ('IIV / CV (%)')
+- table section iiv: 'λ 0 (per day)' routed out of structural estimates ('IIV / CV (%)')
+- table section iiv: 'λ 1 (mm 3 /day)' routed out of structural estimates ('IIV / CV (%)')
+- table section iiv: 'k max (per day)' routed out of structural estimates ('IIV / CV (%)')
+- table section iiv: 'kC 50 (mg/L)' routed out of structural estimates ('IIV / CV (%)')
+- table section iiv: 'ψ' routed out of structural estimates ('IIV / CV (%)')
+- dropped unlinked row (NIL): 'λ 0 (per day)' — extend the ontology if this is a real PK parameter (source ['tab_0:row6:col1'])
+- dropped PD-category row 'k max (per day)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tab_0:row8:col1'])
+- dropped unlinked row (NIL): 'kC 50 (mg/L)' — extend the ontology if this is a real PK parameter (source ['tab_0:row9:col1'])
+- dropped unlinked row (NIL): 'ψ' — extend the ontology if this is a real PK parameter (source ['tab_0:row10:col1'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=axitinib
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
+- table tab_0: unbound_uncertainty
 - LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 | `qwen3.8-27b` | not confirmed | 0.6 (6/10 fields) | 4 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[λ 0]` |  | 0.229 | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | axitinib | unknown | mismatch |
 | `qwen3.8-27b` | `parameters[n 0]` | 50.4 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[λ 0]` |  | 0.229 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[λ 1]` | 273 |  | only_one_extracted |
@@ -142,12 +143,25 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['tab_0:row4:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_0:row2:col1'] |
+| C5_dimension_Q67 | pass | 1 / [time] |  | ['tab_0:row7:col1'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['tab_0:row3:col1'] |
-| C5_unit_missing_Q67 | fail | 1 / [time] | mm 3 /day | ['tab_0:row7:col1', 'tab_0:row7:col2', 'tab_0:row7:col4'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 930 L/h | ['tab_0:row4:col1'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 1.16e+03 L | ['tab_0:row3:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=axitinib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.778 (7 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | cross-check contradicted by a second reader: verdict disputed; agreement 0.778 (7 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -163,22 +177,68 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_axitinib/Axitinib_Ma2019_reference/Axitinib_Ma2019_reference_modelica.zip" download>Axitinib_Ma2019_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_axitinib/Axitinib_Ma2019_reference/Axitinib_Ma2019_reference_fmi.zip" download>Axitinib_Ma2019_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_axitinib/Axitinib_Ma2019_reference/Axitinib_Ma2019_reference_matlab.zip" download>Axitinib_Ma2019_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_axitinib/Axitinib_Ma2019_reference/Axitinib_Ma2019_reference_matlab_simbio.zip" download>Axitinib_Ma2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_axitinib/Axitinib_Ma2019_reference/Axitinib_Ma2019_reference_sbml.zip" download>Axitinib_Ma2019_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_axitinib/Axitinib_Ma2019_reference/Axitinib_Ma2019_reference_cellml.zip" download>Axitinib_Ma2019_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.3865 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 0.0021 | kg |
+| input | model | `Cl` | 0.0002584 | m3/s |
+| input | model | `VdPerKg` | 0.0165 | m3/kg |
+| input | model | `ka` | 0.0009109 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Ma YH, Wang SY, Ren YP, Li J, Guo TJ, Lu W et al. Antitumor effect of axitinib combined with dopamine and PK-PD modeling in the treatment of human breast cancer xenograft. Acta pharmacologica Sinica 40(2):243–256 (2019). [doi:10.1038/s41401-018-0006-x](https://doi.org/10.1038/s41401-018-0006-x)
+
+**This record:** Pharmacolibrary, model `Axitinib_Ma2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_axitinib/Axitinib_Ma2019_reference>
+
+```bibtex
+@misc{pharmacolibrary_AxitinibMa2019reference,
+  title  = {{Pharmacolibrary model Axitinib_Ma2019_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_axitinib/Axitinib_Ma2019_reference},
+  note   = {Parameters from doi:10.1038/s41401-018-0006-x},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 2100 mg, single dose, first-order absorption (ka 3.28 /h, F 1). Doses in the paper: 2100, 4200, 8400 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_axitinib/Axitinib_Ma2019_reference/Axitinib_Ma2019_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_axitinib/Axitinib_Ma2019_reference/Axitinib_Ma2019_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Axitinib_Ma2019_reference_params.json` · controls `Axitinib_Ma2019_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baxitinib%5D%20Axitinib_Ma2019_reference&body=Drug%3A%20axitinib%0ARecord%3A%20Axitinib_Ma2019_reference%0APaper%3A%20Ma_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_axitinib/Axitinib_Ma2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 21:35 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:57 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Valdecoxib’s absorption rate constant ka and distribution-rate constants k13 and k31 had no reported values and were defaulted; reported total clearance was 9.53 L·h−1·70 kg−1.
+> Ka, k13, k31 use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="valdecoxib" model-id="Valdecoxib_Tan2016_reference" status="needs_review" stale="false" population="children undergoing tonsillectomy +/- adenoidectomy" measured-compound="valdecoxib" parameterization="apparent" topology="3C"></div>
 
@@ -55,13 +55,13 @@ Tan L, Taylor E, Hannam JA, Salkeld L, Salman S, Anderson BJ. Pharmacokinetics a
 
 ### Reviewer guidance
 
-**Valdecoxib’s absorption rate constant ka and distribution-rate constants k13 and k31 had no reported values and were defaulted; reported total clearance was 9.53 L·h−1·70 kg−1.**
+**Ka, k13, k31 use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-Ka, k13, and k31 use library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by the paper. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model; it also assumes F=1 and Fm=1, no molar correction, and first-order depot input consistent with extravascular dosing. The second reader disputed the record, with agreement 0.278, including whether parecoxib metabolism to valdecoxib and several parecoxib-labeled parameter estimates belonged in the model. Extracted — valdecoxib: CLnorm 19.1 L·h-1 ·70 kg-1, V1 4.2 L·70 kg-1, Q 6.29 L·h-1 ·70 kg-1, V2/F 130 L·70 kg-1, V3 2.03 L·70 kg-1, CL 9.53 L·h-1 ·70 kg-1, V 51 L·70 kg-1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — valdecoxib: CLnorm 19.1 L·h-1 ·70 kg-1, V1 4.2 L·70 kg-1, Q 6.29 L·h-1 ·70 kg-1, V2/F 130 L·70 kg-1, V3 2.03 L·70 kg-1, CL 9.53 L·h-1 ·70 kg-1, V 51 L·70 kg-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading parecoxib → valdecoxib (metabolism); it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -163,7 +163,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 3C → PK_3C* | PK_3C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.278, 0 of 1 reader(s) agree | 0.278 | cross-check disputed by a second reader: verdict disputed, agreement 0.278, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.278 (5 of 18 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.278 | cross-check contradicted by a second reader: verdict disputed; agreement 0.278 (5 of 18 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

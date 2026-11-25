@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ketorolac clearance of 2.8 L/h was flagged as physiologically implausible, so the abstract-derived record was rejected.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Zuppa2009_reference" status="rejected" stale="false" population="neonates and young infants" measured-compound="ketorolac" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Zuppa AF, Mondick JT, Davis L, Cohen D. Population pharmacokinetics of ketorolac
 
 ### Reviewer guidance
 
-**Ketorolac clearance of 2.8 L/h was flagged as physiologically implausible, so the abstract-derived record was rejected.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports ketorolac total clearance of 2.8 L/h, intercompartmental clearance of 11.5 mL/min, and central and peripheral volumes of 535 mL and 322 mL; the finding flags clearance/volume magnitude as implausible because of a unit or scale extraction error. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader disputed the dose compound, primary analyte, and whether the parameters were extracted, so those identifications were not confirmed by that reader. Extracted — ketorolac: CL 2.8 L/h, Q 11.5 mL/min, V1 535 mL, V2 322 mL.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ketorolac: CL 2.8 L/h, Q 11.5 mL/min, V1 535 mL, V2 322 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ketorolac, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

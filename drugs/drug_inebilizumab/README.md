@@ -23,7 +23,7 @@ Inebilizumab is a monoclonal antibody used to treat neuromyelitis optica spectru
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Yan_2022_2_CD20](drugs/drug_inebilizumab/pd_Yan_2022_2_CD20.md) | CD20+ B-cell count ← inebilizumab · delayed effect through transit (transduction) compartments | — | Yan L et al., Pharmacodynamic modelling and exposure-…, British journal of clinical… (2022) | [10.1111/bcp.15332](https://doi.org/10.1111/bcp.15332) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Yan_2022_2_CD20](drugs/drug_inebilizumab/pd_Yan_2022_2_CD20.md) | CD20+ B-cell count ← inebilizumab · delayed effect through transit (transduction) compartments | — | Yan L et al., Pharmacodynamic modelling and exposure-…, British journal of clinical… (2022) | [10.1111/bcp.15332](https://doi.org/10.1111/bcp.15332) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

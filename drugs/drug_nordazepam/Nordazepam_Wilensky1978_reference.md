@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Nordazepam's clearance, volume of distribution, absorption rate constant, and lag time were missing, forcing the use of placeholder values.
+> No value for nordazepam's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="nordazepam" model-id="Nordazepam_Wilensky1978_reference" status="model_quarantined" stale="false" population="treated epileptic patients" measured-compound="desmethyldiazepam" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Wilensky AJ, Levy RH, Troupin AS, Moretti-Ojemann L. Clorazepate kinetics in tre
 
 ### Reviewer guidance
 
-**Nordazepam's clearance, volume of distribution, absorption rate constant, and lag time were missing, forcing the use of placeholder values.**
+**No value for nordazepam's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations (+1 more).**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Nordazepam's clearance, volume of distribution, absorption rate constant, and absorption lag time were not reported in the source. A second reader disputed the assignment of the distribution phase half-life of 1.28 hours. Extracted — nordazepam: t1/2α 1.28 hr, t1/2z 40.8 hr, Vm,norm/F 1.63 L/kg, CLm/F 34.4 ml/min.
+The model was built, but nordazepam's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nordazepam: t1/2α 1.28 hr, t1/2z 40.8 hr, Vm,norm/F 1.63 L/kg, CLm/F 34.4 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent t1/2 of the distribution phase: this record has none, the second reading 1.28; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | cross-check disputed by a second reader: verdict disputed, agreement 0.7, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.7 (7 of 10 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.7 | cross-check contradicted by a second reader: verdict disputed; agreement 0.7 (7 of 10 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -171,4 +171,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnordazepam%5D%20Nordazepam_Wilensky1978_reference&body=Drug%3A%20nordazepam%0ARecord%3A%20Nordazepam_Wilensky1978_reference%0APaper%3A%20Wilensky_1978%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nordazepam/Nordazepam_Wilensky1978_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:44 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:36 UTC</sub>

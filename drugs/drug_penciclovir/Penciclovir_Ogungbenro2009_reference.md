@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Penciclovir clearance (31.2 l h(-1) 70 kg(-1)) and distribution volume (83.1 l.70 kg(-1)) remain under review because their status as fitted-model estimates is disputed.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="penciclovir" model-id="Penciclovir_Ogungbenro2009_reference" status="needs_review" stale="false" population="adults and children" measured-compound="penciclovir" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Ogungbenro K, Matthews I, Looby M, Kaiser G, Graham G, Aarons L. Population phar
 
 ### Reviewer guidance
 
-**Penciclovir clearance (31.2 l h(-1) 70 kg(-1)) and distribution volume (83.1 l.70 kg(-1)) remain under review because their status as fitted-model estimates is disputed.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader called the parameterization apparent rather than mechanistic and disputed whether clearance 31.2 and distribution volume 83.1 belonged in the record. Agreement was 0.375, with 0 of 1 reader agreeing. Extracted — penciclovir: CL 31.2 l h(-1) 70 kg(-1), V 83.1 l.70 kg(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — penciclovir: CL 31.2 l h(-1) 70 kg(-1), V 83.1 l.70 kg(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.375 | cross-check contradicted by a second reader: verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

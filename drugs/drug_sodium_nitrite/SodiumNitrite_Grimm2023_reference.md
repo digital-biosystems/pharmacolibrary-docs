@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> Parameters were extracted from a paper about Trontinemab, not sodium nitrite, and the peripheral volume was 63.2 instead of 63.29.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="sodium nitrite" model-id="SodiumNitrite_Grimm2023_reference" status="rejected" stale="false" population="" measured-compound="sodium_nitrite" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Grimm HP, Schumacher V, Schäfer M, Imhof-Jung S, Freskgård PO, Brady K et al. 
 
 ### Reviewer guidance
 
-**Parameters were extracted from a paper about Trontinemab, not sodium nitrite, and the peripheral volume was 63.2 instead of 63.29.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-All parameters are mislabeled as belonging to Trontinemab in cynomolgus monkeys, while the record identifies the drug as sodium nitrite. The paper was rejected because its subject is not sodium nitrite. A second reader disputed the record, disagreeing that the peripheral volume was 63.2 rather than 63.29 mL/kg. Extracted — sodium nitrite: CL 1.01 mL/h/kg, V1 45.4 mL/kg, V2 63.2 mL/kg, Q 0.746 mL/h/kg.
+Extracted — sodium nitrite: CL 1.01 mL/h/kg, V1 45.4 mL/kg, V2 63.2 mL/kg, Q 0.746 mL/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of V2: this record has 63.2, the second reading 63.29. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (6 of 6 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

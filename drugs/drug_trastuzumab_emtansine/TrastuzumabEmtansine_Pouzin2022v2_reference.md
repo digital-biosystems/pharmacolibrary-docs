@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Trastuzumab emtansine model rejected because the 2.66 L peripheral compartment is unreachable from the dose input.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="trastuzumab emtansine" model-id="TrastuzumabEmtansine_Pouzin2022v2_reference" status="rejected" stale="false" population="" measured-compound="trastuzumab_emtansine" parameterization="apparent" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Pouzin C, Tod M, Chadjaa M, Fagniez N, Nguyen L. Covariate analysis of tusamitam
 
 ### Reviewer guidance
 
-**Trastuzumab emtansine model rejected because the 2.66 L peripheral compartment is unreachable from the dose input.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The two-compartment structure defines a peripheral volume (V2) of 2.66 L that has no path from the dose, rendering it an orphan compartment. The second reader could not verify the 253 L/day clearance value and disagreed on the parameterization, noting the record uses apparent clearance. This structural disconnect means the model does not represent the drug's distribution correctly. Extracted — trastuzumab emtansine: CL/F 253 L/day, V1 3.31 L, V2 2.66 L.
+Extracted — trastuzumab emtansine: CL/F 253 L/day, V1 3.31 L, V2 2.66 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 253, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

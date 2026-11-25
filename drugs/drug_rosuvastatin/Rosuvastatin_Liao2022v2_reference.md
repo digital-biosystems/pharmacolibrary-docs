@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the paper subjects rucaparib, not rosuvastatin, and includes default absorption parameters for rosuvastatin.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="rosuvastatin" model-id="Rosuvastatin_Liao2022v2_reference" status="rejected" stale="false" population="" measured-compound="rosuvastatin" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Liao M, Beltman J, Giordano H, Harding TC, Maloney L, Simmons AD et al. Clinical
 
 ### Reviewer guidance
 
-**Record rejected because the paper subjects rucaparib, not rosuvastatin, and includes default absorption parameters for rosuvastatin.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source text describes a review of rucaparib pharmacokinetics, where rosuvastatin appears only as a co-medication without dedicated PK data. The recorded clearance value of 11.4 L/h is attributed to rosuvastatin but verbatim refers to total 14C-rucaparib. The record relies on defaulted absorption parameters and an apparent bioavailability assumption of 1, as no specific estimates were provided for rosuvastatin. Extracted — rosuvastatin: CLu 11.4 L/h, V/F 426 L.
+Extracted — rosuvastatin: CLu 11.4 L/h, V/F 426 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 38, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

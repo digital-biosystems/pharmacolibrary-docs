@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span>
 
-> The record was rejected because the third volume of distribution is orphaned, and the absolute bioavailability value of 1.422 is physically impossible.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="oxytetracycline" model-id="Oxytetracycline_Winter2024_reference" status="rejected" stale="false" population="calves and adult cattle" measured-compound="oxytetracycline" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Winter EA, Pelligand L, Toutain PL, Lees P, Milanova A, Gehring R. Determination
 
 ### Reviewer guidance
 
-**The record was rejected because the third volume of distribution is orphaned, and the absolute bioavailability value of 1.422 is physically impossible.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure is two compartments, yet a third volume of distribution (2458 L) is listed, creating an unlinked compartment. Additionally, the absolute bioavailability is recorded as 1.422, exceeding the maximum possible fraction of 1.0. A second reader disagreed on the clearance value and several other parameter extractions. Extracted — oxytetracycline: V1 143 L, V2 973 L, V3 2.46e+03 L, CL 68.3 L/h, kabs 0.235 1/h, Fab 1.42, tlag 0.0405 h.
+Extracted — oxytetracycline: V1 143 L, V2 973 L, V3 2.46e+03 L, CL 68.3 L/h, kabs 0.235 1/h, Fab 1.42, tlag 0.0405 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

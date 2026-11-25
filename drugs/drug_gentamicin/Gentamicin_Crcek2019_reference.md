@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D06A&quot;,&quot;href&quot;:&quot;atc/D06A.md&quot;},{&quot;label&quot;:&quot;gentamicin&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/&quot;},{&quot;label&quot;:&quot;Crcek_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gentamicin_Crcek2019_reference&quot;,&quot;label&quot;:&quot;Crcek_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/Gentamicin_Crcek2019_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Gentamicin_Abbasi2023_reference&quot;,&quot;label&quot;:&quot;Abbasi_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gentamicin_Abbasi2023_reference&quot;,&quot;label&quot;:&quot;Abbasi_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/Gentamicin_Abbasi2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gentamicin_Crcek2019_reference&quot;,&quot;label&quot;:&quot;Crcek_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gentamicin/Gentamicin_Crcek2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gentamicin — `Gentamicin_Crcek2019_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="gentamicin" model-id="Gentamicin_Crcek2019_reference" status="simulated" stale="false" population="paediatric patients" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></div>
+> cross_check_disputed; x1_cross_check.
+
+<div class="pk-model-meta" hidden drug="gentamicin" model-id="Gentamicin_Crcek2019_reference" status="needs_review" stale="false" population="paediatric patients" measured-compound="gentamicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Crcek M, Zdovc J, Kerec Kos M. A review of population pharmacokinetic models of gentamicin in paediatric patients. Journal of clinical pharmacy and therapeutics 44(5):659–674 (2019).
@@ -15,7 +17,7 @@ Crcek M, Zdovc J, Kerec Kos M. A review of population pharmacokinetic models of 
 
 ## Population and dosing
 
-**Population:** paediatric patients · age group mixed.
+**Population:** paediatric patients · condition Gram-negative infections · age group mixed.
 
 ## Model
 
@@ -27,14 +29,16 @@ Crcek M, Zdovc J, Kerec Kos M. A review of population pharmacokinetic models of 
 <figure class="pk-models-diagram"><img src="drugs/drug_gentamicin/Gentamicin_Crcek2019_reference/Gentamicin_Crcek2019_reference.svg" alt="Gentamicin_Crcek2019_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
-| Bijleveld 18 Cl | CL | 0.035 | L/h/kg |
-| Bijleveld 18 Vd | V | 0.534 | L/kg |
+| gentamicin Cl | CL | 0.09 | L/h/kg |
+| Vd | V | 0.35 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.5), gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: partial 1/2</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), qwen3.8-27b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,18 +48,20 @@ Crcek M, Zdovc J, Kerec Kos M. A review of population pharmacokinetic models of 
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**cross_check_disputed; x1_cross_check.**
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of bijleveld 18 cl: this record has 0.035, the second reading none; it also differs on 3 more fields. That field does not shape the model.
+Extracted — gentamicin: CL 0.09 L/h/kg, V 0.35 L/kg.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gentamicin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Bijleveld 18 Cl | `Q22` · CL | 0.035 | L/h/kg | 6.806e-07 | m3/s | L/h | boundary (0.8) | Crcek_2019:other_prose |
-| Bijleveld 18 Vd | `Q61` · V | 0.534 | L/kg | 0.03738 | m3 | L | boundary (0.8) | Crcek_2019:other_prose |
+| gentamicin Cl | `Q22` · CL | 0.09 | L/h/kg | 1.75e-06 | m3/s | L/h | boundary (0.8) | Crcek_2019:other_prose |
+| Vd | `Q61` · V | 0.35 | L/kg | 0.0245 | m3 | L | exact (1) | Crcek_2019:other_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -65,28 +71,36 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q22 ('Bijleveld 18 Cl'=0.035) from results prose — parameter table was unreadable
-- salvaged Q61 ('Bijleveld 18 Vd'=0.534) from results prose — parameter table was unreadable
+- salvaged Q22 ('gentamicin Cl'=0.09) from results prose — parameter table was unreadable
+- salvaged Q61 ('Vd'=0.35) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gentamicin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+
+**Extraction notes:**
+- no TEI final-model table id; trying text-pointer table recovery
+- text-pointer recovery found no readable extracted parameter table
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 | `qwen3.8-27b` | partly confirmed | 0.5 (4/8 fields) | 4 |
-| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl]` |  | 0.035 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[gentamicin cl]` | 0.09 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` | 0.35 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` |  | 0.534 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | gentamicin | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | gentamicin | unknown | mismatch |
 | `qwen3.8-27b` | `parameters[bijleveld 18 cl]` | 0.035 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[bijleveld 18 vd]` | 0.534 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cl]` |  | 0.035 | only_one_extracted |
@@ -107,10 +121,10 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.035 | ['Crcek_2019:other_prose'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.09 | ['Crcek_2019:other_prose'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.45 L/h | ['Crcek_2019:other_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 37.4 L | ['Crcek_2019:other_prose'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 6.3 L/h | ['Crcek_2019:other_prose'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 24.5 L | ['Crcek_2019:other_prose'] |
 
 **Reviewer per-scenario checks:**
 
@@ -122,7 +136,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.5, 1 of 2 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,8 +174,8 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 0.00024 | kg |
-| input | model | `Cl` | 6.806e-07 | m3/s |
-| input | model | `VdPerKg` | 0.000534 | m3/kg |
+| input | model | `Cl` | 1.75e-06 | m3/s |
+| input | model | `VdPerKg` | 0.00035 | m3/kg |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -200,4 +214,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgentamicin%5D%20Gentamicin_Crcek2019_reference&body=Drug%3A%20gentamicin%0ARecord%3A%20Gentamicin_Crcek2019_reference%0APaper%3A%20Crcek_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gentamicin/Gentamicin_Crcek2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 22:10 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:45 UTC</sub>

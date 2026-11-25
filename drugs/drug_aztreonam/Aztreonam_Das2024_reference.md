@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Aztreonam’s AUC value of 10.7 is reported in L/h, a clearance-like unit incompatible with an area-under-the-curve parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit L/h ([length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="aztreonam" model-id="Aztreonam_Das2024_reference" status="rejected" stale="false" population="patients with complicated infections (healthy subjects and patients with cIAI/cUTI)" measured-compound="aztreonam" parameterization="mechanistic" topology="3C"></div>
 
@@ -57,7 +57,7 @@ Das S, Riccobene T, Carrothers TJ, Wright JG, MacPherson M, Cristinacce A et al.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.458). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -67,11 +67,13 @@ Das S, Riccobene T, Carrothers TJ, Wright JG, MacPherson M, Cristinacce A et al.
 
 ### Reviewer guidance
 
-**Aztreonam’s AUC value of 10.7 is reported in L/h, a clearance-like unit incompatible with an area-under-the-curve parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit L/h ([length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.**
 
-The record defines AUC as area under the drug concentration–time curve, but reports 10.7 L/h, a volume-per-time unit rather than concentration multiplied by time. The reported unit could not be converted to SI, so no SI value was available for this parameter. Extracted — aztreonam: CLnorm 5.21 L/h, V1 6.83 L, AUC 10.7 L/h, V2 5.76 L, Bmax 3.24, CL 10.4 L/h, Q 4.96 L/h, kabs 0.459 1/h, … (+3).
+A reported unit could not be converted (AUC and theta_cl_category), so that value has no SI equivalent. Extracted — aztreonam: CLnorm 5.21 L/h, V1 6.83 L, AUC 10.7 L/h, V2 5.76 L, Bmax 3.24, CL 10.4 L/h, Q 4.96 L/h, kabs 0.459 1/h, … (+3).
 
-<sub>reviewed by gpt-6-luna</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aztreonam, the second reading aztremonam‑avibactam; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -183,6 +185,52 @@ The record defines AUC as area under the drug concentration–time curve, but re
 - LLM selected parameter table(s) S2, S3, S4, S5
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.458 (22/48 fields) | 26 |
+
+<details><summary>26 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[theta_cl_age]` |  | -1.13 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_category].covariate_forms` | ['power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_category].rse_percent` | 7.9 | 9.8 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_category].value` | 20.5 | 17.1 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_crcl_power]` | 1.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_sex].covariate_forms` | ['power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_wt_power]` |  | 0.206 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_clnorm_wt_power]` | 0.206 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_equation_variable_wt_power]` | 1.23 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q1_age]` | -1.13 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q356_category]` | 17.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q_wt_power].covariate_forms` | ['power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_v1_wt_power].covariate_forms` | ['power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_v2_wt_power]` |  | 1.23 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ηcl2]` | 0.313 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ηvp2]` | 1.683 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ18: θ18** phase ii ciai patient effect on vc]` | 2.66 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ1: cl*wt/70** 0.75].covariate_forms` | ['power'] | ['additive_shift', 'linear_fractional', 'linear_fractional', 'power'] | mismatch |
+| `gpt-oss-120b` | `parameters[θ1: cl*wt/70** 0.75].parameter_id` | Q354 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[θ1: cl]` | 10.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ2: vc*wt/70].covariate_forms` | ['power', 'power'] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[θ3: q*wt/70** 0.75]` | 10.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ4: vp*wt/70].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[θ5: (cl + θ5*(crcl-80))]` | 0.0158 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ7: f1]` |  | 0.0656 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | aztreonam | aztremonam‑avibactam | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Methylprednisolone model rejected because peak concentration, time to peak, and terminal half-life simulated values exceeded tolerance thresholds.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 9.08e-05, model 0.000414); the model does not reproduce the paper's time of the peak (tmax) (paper 1.6, model 1.31) (+2 more).
 
 <div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Coll2026_reference" status="needs_review" stale="false" population="healthy male adults" measured-compound="methylprednisolone" parameterization="apparent" topology="1C"></div>
 
@@ -60,13 +60,13 @@ Coll S, Bressan C, Monfort N, Aldea-Perona A, Carbó ML, Ventura R. Revisited Ph
 
 ### Reviewer guidance
 
-**Methylprednisolone model rejected because peak concentration, time to peak, and terminal half-life simulated values exceeded tolerance thresholds.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 9.08e-05, model 0.000414); the model does not reproduce the paper's time of the peak (tmax) (paper 1.6, model 1.31) (+2 more).**
 
-Simulated peak concentration (0.000414) deviated significantly from the paper's reported values, as did time to peak (1.31 vs 1.6 h) and terminal half-life (0.948 vs 0.83 h). The model relied on default transit delay time and assumed complete bioavailability, contributing to these discrepancies. Extracted — methylprednisolone: AUClast 245 ng·h/mL, AUC∞ 245 ng·h/mL, Cmax 20.7 ng/mL, tmax 1 h, kabs 0.75 1/h, kel 0.24 1/h, t1/2z 0.35 h, CL 8.6 L/h, … (+4).
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUClast, AUC∞ and Cmax), so that value has no SI equivalent. Extracted — methylprednisolone: AUClast 245 ng·h/mL, AUC∞ 245 ng·h/mL, Cmax 20.7 ng/mL, tmax 1 h, kabs 0.75 1/h, kel 0.24 1/h, t1/2z 0.35 h, CL 8.6 L/h, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[fel].parameter_id`: this record has Q40, the second reading Q44. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -183,16 +183,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.941, 0 of 1 reader(s) agree | 0.941 | cross-check disputed by a second reader: verdict disputed, agreement 0.941, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 9.08e-05 | 0.0004142 | 4.562 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 8.27e-05 | 0.0004142 | 5.009 | ng/mL→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | pass | 0.83 | 0.9484 | 1.143 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.07 | 0.9484 | 0.8864 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.5 | 0.9484 | 0.6323 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.3 | 0.9484 | 0.7296 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.5 | 0.9484 | 0.6323 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 1.6 | 1.307 | 0.817 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 2.25 | 1.307 | 0.581 | hours→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.941 (16 of 17 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.941 | cross-check contradicted by a second reader: verdict disputed; agreement 0.941 (16 of 17 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 9.08e-05 | 0.0004142 | 4.562 | reported 90.8 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 8.27e-05 | 0.0004142 | 5.009 | reported 82.7 ng/mL→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | pass | 0.83 | 0.9484 | 1.143 | reported 0.83 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.07 | 0.9484 | 0.8864 | reported 1.07 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.5 | 0.9484 | 0.6323 | reported 1.5 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.3 | 0.9484 | 0.7296 | reported 1.3 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.5 | 0.9484 | 0.6323 | reported 1.5 h→SI vs simulated h |
+| T1_tmax | reference | pass | 1.6 | 1.307 | 0.817 | reported 1.6 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 2.25 | 1.307 | 0.581 | reported 2.25 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

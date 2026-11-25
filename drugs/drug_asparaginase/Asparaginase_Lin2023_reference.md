@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Asparaginase absorption rate constant has inconsistent units, and body surface area covariate on volume was not extracted.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l/h ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="asparaginase" model-id="Asparaginase_Lin2023_reference" status="rejected" stale="false" population="patients with acute lymphoblastic leukemia/lymphoblastic lymphoma" measured-compound="serum asparaginase activity" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Lin T, Whigham T, Fernando I, Choi MR, Wang Q, Silverman JA. Population pharmaco
 
 ### Reviewer guidance
 
-**Asparaginase absorption rate constant has inconsistent units, and body surface area covariate on volume was not extracted.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l/h ([length] ** 3 / [time]) vs 1 / [time].**
 
-The absorption rate constant is recorded as 0.0369 l/h, a unit that does not match the required 1/time dimension. Additionally, the body surface area covariate on central volume, with a value of 1.61, was missing from this record. The second reader also disagreed that the dose compound and primary analyte were identified. Extracted — JZP458: CL 146 mL/h, V 445 mL, kabs 0.0369 l/h, Frel 0.359.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. None of the extracted parameters is asparaginase's own; they describe JZP458. Extracted — JZP458: CL 146 mL/h, V 445 mL, kabs 0.0369 l/h, Frel 0.359.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has JZP458, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -51,7 +51,7 @@ van Dyk J, Gebreyesus MS, Clements M, Standing JF, Moore DP, Dangor Z et al. Pop
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A reported unit could not be converted (Fab), so that value has no SI equivalent.
 

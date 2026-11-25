@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ciclosporin CL/F of 14.3 L/h was refused because Kauv_2025 studies mycophenolic acid, with ciclosporin only a co-medication or covariate.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="ciclosporin" model-id="Ciclosporin_Kauv2025_reference" status="rejected" stale="false" population="" measured-compound="ciclosporin" parameterization="apparent" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Kauv J, Feuillet S, Barrail-Tran A, Delemos A, Legrand T, Verstuyft C et al. Pop
 
 ### Reviewer guidance
 
-**Ciclosporin CL/F of 14.3 L/h was refused because Kauv_2025 studies mycophenolic acid, with ciclosporin only a co-medication or covariate.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The record reports ciclosporin CL/F as 14.3 L/h, but the paper focuses on mycophenolic acid pharmacokinetics and mentions ciclosporin only as a co-administered immunosuppressant or covariate. The record also assumes F=1 and Fm=1, with no molar correction, under apparent parameterization. A second reader disputed the verdict (agreement 0.5; 0 of 1 agreed) and disagreed on several extracted values. Extracted — ciclosporin: CL/F 14.3 L/h, V1 27.4 L, V2 6.6e+03 L, Q 1.2 mL/min, kabs 1.21 h -1, tlag 0.25 h.
+Extracted — ciclosporin: CL/F 14.3 L/h, V1 27.4 L, V2 6.6e+03 L, Q 1.2 mL/min, kabs 1.21 h -1, tlag 0.25 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 30, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,7 +142,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (5 of 10 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (5 of 10 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

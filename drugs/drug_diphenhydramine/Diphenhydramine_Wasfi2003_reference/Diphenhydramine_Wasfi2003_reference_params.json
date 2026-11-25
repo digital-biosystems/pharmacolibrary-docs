@@ -9,20 +9,20 @@
   "central.C"
  ],
  "parameters": {
-  "Cl": 3.9444444444444444e-07,
+  "Cl": 1.3477861844221159e-05,
   "F": 1.0,
   "MM": 0.2553547,
-  "VdPerKg": 2.257142857142857e-05,
+  "VdPerKg": 0.00158,
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0002,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662001
+  "central.C": 660.0000000662027
  },
  "reference_peaks": {
-  "central.C": 0.1175581033443891
+  "central.C": 0.001743791245325107
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

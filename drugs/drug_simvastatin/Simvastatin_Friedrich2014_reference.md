@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper reports evacetrapib pharmacokinetics, not simvastatin, making the extracted parameters invalid for the target drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Friedrich2014_reference" status="rejected" stale="false" population="" measured-compound="simvastatin" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Friedrich S, Kastelein JJ, James D, Waterhouse T, Nissen SE, Nicholls SJ et al. 
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper reports evacetrapib pharmacokinetics, not simvastatin, making the extracted parameters invalid for the target drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The identity check confirmed the paper is about another drug where simvastatin acts only as a comparator. Consequently, the listed parameters (e.g., CL/F of 15.3 l/hour) do not describe simvastatin. The model also relied on apparent clearance assumptions with bioavailability fixed at unity. Extracted — simvastatin: CL/F 15.3 l/hour, V1 228 l, V2 827 l, Q/F 9.79 l/hour, kabs 0.3 hour -1.
+Extracted — simvastatin: CL/F 15.3 l/hour, V1 228 l, V2 827 l, Q/F 9.79 l/hour, kabs 0.3 hour -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 39.4, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.667 (8 of 12 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

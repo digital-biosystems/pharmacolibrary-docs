@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Cyclosporine’s k12 and k21 have no reported values and were defaulted, leaving the model unsupported and causing the record to be held back.
+> K12, k21 use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="ciclosporin" model-id="Ciclosporin_Han2013_reference" status="needs_review" stale="false" population="transplant recipients" measured-compound="cyclosporine" parameterization="apparent" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Han K, Pillai VC, Venkataramanan R. Population pharmacokinetics of cyclosporine 
 
 ### Reviewer guidance
 
-**Cyclosporine’s k12 and k21 have no reported values and were defaulted, leaving the model unsupported and causing the record to be held back.**
+**K12, k21 use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-k12 and k21 use library defaults, not estimates from this paper; these values affect the simulated profile but are unsupported by the paper and are not explicitly justified as conventions. The model also assumes bioavailability and metabolite formation fractions of 1, with no molar correction. A second reader disputed the cyclosporine dose compound and primary analyte, and did not confirm the reported absorption rate constant of 1.21 h⁻¹ or absorption lag time of 0.25 h; agreement was 0.6, with 0 of 1 reader agreeing. Extracted — ciclosporin: CL 23.5 L/h, CL/F 53 L/h, V 94.4 L, V/F 227 L, kabs 1.21 h -1, tlag 0.25 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ciclosporin: CL 23.5 L/h, CL/F 53 L/h, V 94.4 L, V/F 227 L, kabs 1.21 h -1, tlag 0.25 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cyclosporine, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -190,8 +190,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.6, 0 of 1 reader(s) agree | 0.6 | cross-check disputed by a second reader: verdict disputed, agreement 0.6, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | skipped |  | 4.643 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.6 (6 of 10 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.6 | cross-check contradicted by a second reader: verdict disputed; agreement 0.6 (6 of 10 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | skipped |  | 4.643 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

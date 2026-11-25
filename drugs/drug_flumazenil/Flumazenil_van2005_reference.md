@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;flumazenil&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/&quot;},{&quot;label&quot;:&quot;van_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flumazenil_Jones1993_reference&quot;,&quot;label&quot;:&quot;Jones_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Jones1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flumazenil_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flumazenil_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flumazenil_Jones1993_reference&quot;,&quot;label&quot;:&quot;Jones_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Jones1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flumazenil_RousseauBlass2021_reference&quot;,&quot;label&quot;:&quot;Rousseau-Blass_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_RousseauBlass2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flumazenil_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flumazenil_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # flumazenil — `Flumazenil_van2005_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Only clearance was extracted — no volume; the clearance plausibility check could not be computed.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
-<div class="pk-model-meta" hidden drug="flumazenil" model-id="Flumazenil_van2005_reference" status="needs_review" stale="false" population="patients with depression or epilepsy" measured-compound="11C-flumazenil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flumazenil" model-id="Flumazenil_van2005_reference" status="rejected" stale="false" population="patients with depression or epilepsy" measured-compound="11C-flumazenil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 van Rij CM, Huitema AD, Swart EL, Greuter HN, Lammertsma AA, van Loenen AC et al. Population plasma pharmacokinetics of 11C-flumazenil at tracer concentrations. British journal of clinical pharmacology 60(5):477–485 (2005).
@@ -17,29 +17,28 @@ van Rij CM, Huitema AD, Swart EL, Greuter HN, Lammertsma AA, van Loenen AC et al
 
 ## Population and dosing
 
-**Population:** patients with depression or epilepsy · condition depression or epilepsy · age group adult · n = 51.
+**Population:** patients with depression or epilepsy · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL | CL | 1530 | mL min(-1) |
+| V(1) | V | 24.8 | mL |
 | Q | Q | 2510 | mL min(-1) |
-| observed AUC | AUC | 296 | ng·h/mL |
-| Ka (1/h) | kabs | 5.41 | 1/h |
-| ALAG (h) | tlag | 0.394 | h |
+| observed AUC | AUC | 296 | MBql(-1) min(-1) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.7). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,23 +48,22 @@ van Rij CM, Huitema AD, Swart EL, Greuter HN, Lammertsma AA, van Loenen AC et al
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; the clearance plausibility check could not be computed.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. None of the extracted parameters is flumazenil's own; they describe 11C-flumazenil. Extracted — 11C-flumazenil: CL 1.53e+03 mL min(-1), Q 2.51e+03 mL min(-1), AUC 296 ng·h/mL, kabs 5.41 1/h, tlag 0.394 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is flumazenil's own; they describe 11C-flumazenil. Extracted — 11C-flumazenil: CL 1.53e+03 mL min(-1), V 24.8 mL, Q 2.51e+03 mL min(-1), AUC 296 MBql(-1) min(-1).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of alag: this record has 0.394, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[v].value`: this record has 24.8, the second reading 0.55. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 1530 | mL min(-1) | 2.55e-05 | m3/s | ml/min | exact (1) | van_2005:abstract |
+| CL | `Q22` · CL | 1530 | mL min(-1) | 2.55e-05 | m3/s | ml/min | exact (1) | van_2005:abstract, van_2005:abstract |
+| V(1) | `Q61` · V | 24.8 | mL | 2.48e-05 | m3 | ml | exact (1) | van_2005:abstract |
 | Q | `Q30` · Q | 2510 | mL min(-1) | 4.183e-05 | m3/s | ml/min | exact (1) | van_2005:abstract |
-| observed AUC | `Q88` · AUC | 296 | ng·h/mL |  |  | ng·h/mL | llm_confirmed (0.6) | van_2005:abstract |
-| Ka (1/h) | `Q49` · kabs | 5.41 | 1/h | 0.001503 | 1/s | 1/h | review_gapfill (0.7) | Cha_2024:review |
-| ALAG (h) | `Q83` · tlag | 0.394 | h | 1418 | s | h | review_gapfill (0.7) | Cha_2024:review |
+| observed AUC | `Q88` · AUC | 296 | MBql(-1) min(-1) |  |  | m/(min·bql) | llm_confirmed (0.6) | van_2005:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,41 +73,35 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'V(1)' (captured trailing unit '1' for child rows)
-- dropped value-less row: 'V(2)' (captured trailing unit '2' for child rows)
-- dropped value-less row: 'CL (patients with epilepsy)'
+- dropped duplicate Q61 ('V(2)', value 27.3) — already have one for this compound
 - covariate weight for V1 from footnote/prose kept as documentation only (['van_2005:abstract'])
-- routed 'bias' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- routed 'precision' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'bias' — extend the ontology if this is a real PK parameter (source ['van_2005:abstract'])
+- dropped unlinked row (NIL): 'precision' — extend the ontology if this is a real PK parameter (source ['van_2005:abstract'])
 - unit_dimension_unknown: 'MBql(-1) min(-1)' (AUC)
 - dropped duplicate Q88 ('predicted AUC', value 288) — already have one for this compound
-- implicit units: 'observed AUC' → ng·h/mL (from the popPK convention: 'No unit stated in text or table footnotes. AUC for a small-molecule drug in population PK is conventionally reported as ')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=11C-flumazenil
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Cha_2024's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Cha_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in van_2005_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.7 (7/10 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[alag]` | 0.394 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 5.41 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v].value` | 24.8 | 0.55 | mismatch |
 
 </details>
 
@@ -123,17 +115,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['van_2005:abstract'] |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['van_2005:abstract', 'van_2005:abstract'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['van_2005:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Cha_2024:review'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Cha_2024:review'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['van_2005:abstract'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1530 | ['van_2005:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['van_2005:abstract'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | MBql(-1) min(-1) | ['van_2005:abstract'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1530 | ['van_2005:abstract', 'van_2005:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 91.8 L/h | ['van_2005:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 91.8 L/h | ['van_2005:abstract', 'van_2005:abstract'] |
+| C9_phys_window_Q61 | fail | volume within physiological range | 0.0248 L | ['van_2005:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -145,19 +137,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -167,4 +149,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflumazenil%5D%20Flumazenil_van2005_reference&body=Drug%3A%20flumazenil%0ARecord%3A%20Flumazenil_van2005_reference%0APaper%3A%20van_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flumazenil/Flumazenil_van2005_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 19:22 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:33 UTC</sub>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment model for dantrolene was rejected because the peripheral compartment was unreachable and the record was abstract-only.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="dantrolene" model-id="Dantrolene_Podranski2005_reference" status="rejected" stale="false" population="adults" measured-compound="dantrolene" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,13 +46,13 @@ Podranski T, Bouillon T, Schumacher PM, Taguchi A, Sessler DI, Kurz A. Compartme
 
 ### Reviewer guidance
 
-**The two-compartment model for dantrolene was rejected because the peripheral compartment was unreachable and the record was abstract-only.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a peripheral volume of 22.9 L, but no elimination pathway is specified for this compartment. Consequently, the drug dose has no path to exit from the second compartment, rendering it an orphan compartment. Additionally, the model is based solely on the abstract's summary statistics, not fitted data. Extracted — dantrolene: V1 3.24 L, V2 22.9 L, CL 0.03 L/min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dantrolene: V1 3.24 L, V2 22.9 L, CL 0.03 L/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl el: this record has none, the second reading 0.03; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

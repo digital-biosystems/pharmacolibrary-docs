@@ -42,40 +42,36 @@ Rivoceranib is a tyrosine kinase inhibitor under study for several cancers, incl
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:38 | 2:51 | 3/0/0 | 0/0/0 | 0/0/0 | 73,393/13,705 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-24 05:37 | 0:03 | 3/0/0 | 0/0/0 | 0/0/0 | 3,874/136 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 2  ·  **relevant:** 0
 - **records:** 3  ·  extracted 0  ·  needs review 3  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Sachar_2021.pdf` | Sachar M et al., Absence of ethnic difference on single-…, Fundamental & clinical phar… (2021) | popPK | 10 | [10.1111/fcp.12619](https://doi.org/10.1111/fcp.12619) | [33098705](https://pubmed.ncbi.nlm.nih.gov/33098705) | Human rivoceranib PK study reports compartmental analysis, but no numeric parameter values are provided. |
-| `Yang_2023.pdf` | Yang XM et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2023) | popPK | 10 | [10.1111/bcp.15665](https://doi.org/10.1111/bcp.15665) | [36662574](https://pubmed.ncbi.nlm.nih.gov/36662574) | The human population-PK study reports no numeric disposition parameter values in the provided evidence. |
-| `Yu_2017.pdf` | Yu M et al., Population Pharmacokinetic and Covariat…, Clinical pharmacokinetics (2017) | popPK | 10 | [10.1007/s40262-016-0427-y](https://doi.org/10.1007/s40262-016-0427-y) | [27379402](https://pubmed.ncbi.nlm.nih.gov/27379402) | Apatinib (rivoceranib) popPK model reports numeric CL/F and volume estimates. |
-
-<sub>queue written 2026-10-07 06:36 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Liu_2022 | irrelevant | 1 | 0 | The model reports nifedipine parameters; apatinib is the interacting co-drug, and its input data are only referenced in a table not provided. |
-| popPK | Qiu_2017 | irrelevant | 0 | 0 | This is an in-vitro study of MDR reversal agents, with apatinib only a comparator and no rivoceranib disposition parameters reported. |
-| popPK | Sachar_2021 | relevant | 10 | 1 | Human rivoceranib PK study reports compartmental analysis, but no numeric parameter values are provided. |
-| popPK | Xu_2022 | irrelevant | 0 | 0 | This review discusses apatinib (rivoceranib) only as a co-treatment and provides no quantitative rivoceranib PK values. |
-| popPK | Yang_2023 | relevant | 10 | 0 | The human population-PK study reports no numeric disposition parameter values in the provided evidence. |
+| popPK | Qiu_2017 | irrelevant | 0 | 0 | The paper focuses on P-glycoprotein reversal agents and does not mention rivoceranib or provide any pharmacokinetic data for it. |
+| PGx | Qiu_2017 | not_relevant | 0 | 0 | The paper focuses on P-glycoprotein reversal agents and does not mention rivoceranib or pharmacogenomic effects on its PK/PD. |
+| popPK | Sachar_2021 | relevant | 5 | 0 | The study describes a population PK analysis of rivoceranib in humans and mentions that apparent clearance, volume of distribution, and rate constants were analyzed, but no specific numeric values for these parameters are provided in the extracted evidence text. |
+| PGx | Sachar_2021 | not_relevant | 2 | 5 | The study examines ethnic differences in PK but explicitly reports the absence of significant differences in key PK parameters and does not report a pharmacogenomic effect of CYP2C19/3A4 genotypes on PK. |
+| popPK | Xu_2022 | irrelevant | 0 | 0 | The paper focuses on camrelizumab (a PD-1 inhibitor) and apatinib for hepatocellular carcinoma, not rivoceranib. |
+| PGx | Xu_2022 | not_relevant | 0 | 0 | The paper discusses camrelizumab, not rivoceranib, and contains no pharmacogenomic data. |
+| popPK | Yang_2023 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for apatinib, not rivoceranib. |
+| PGx | Yang_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacogenetics of apatinib, not rivoceranib. |
+| popPK | Yu_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of apatinib, not rivoceranib. |
+| PGx | Yu_2017 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of apatinib, not rivoceranib, and does not report pharmacogenomic effects. |
+| popPK | Zuo_2024 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for apatinib, not rivoceranib. |
+| PGx | Zuo_2024 | not_relevant | 0 | 0 | The paper reports the pharmacokinetics of apatinib, not rivoceranib, and does not analyze genetic variants. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Brivoceranib%5D&body=Drug%3A%20rivoceranib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_rivoceranib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 06:36 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 05:37 UTC</sub>

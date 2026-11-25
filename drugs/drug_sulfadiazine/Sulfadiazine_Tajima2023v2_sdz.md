@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> Sulfadiazine model rejected as simulated peak time and terminal half-life failed checks against paper values.
+> The model does not reproduce the paper's time of the peak (tmax); the model does not reproduce the paper's terminal half-life (+1 more).
 
 <div class="pk-model-meta" hidden drug="sulfadiazine" model-id="Sulfadiazine_Tajima2023v2_sdz" status="needs_review" stale="false" population="female Holstein milking cows" measured-compound="sulfadiazine" parameterization="mechanistic" topology="1C"></div>
 
@@ -61,13 +61,13 @@ Tajima T, Saiga M, Yamamoto H, Elbadawy M, Abugomaa A, Miura R et al. Oral pharm
 
 ### Reviewer guidance
 
-**Sulfadiazine model rejected as simulated peak time and terminal half-life failed checks against paper values.**
+**The model does not reproduce the paper's time of the peak (tmax); the model does not reproduce the paper's terminal half-life (+1 more).**
 
-The simulated time of peak differed from the expected 2.75 hours, yielding a ratio of 1.7674. The simulated terminal half-life also failed, with ratios of 2.9629 and 1.8045 against expected values. The second reader disputed the record, disagreeing that sulfadiazine was the sole analyte and identifying sulfamonomethoxine. Extracted — sulfadiazine: kabs 0.158 1/hr, t1/2ka 4.51 hr, kel 0.262 1/hr, t1/2z 2.66 hr, Cmax 7.01 µg/mL, tmax 5 hr, Fab 85.7, MAT 5.92 hr, … (+3).
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax and AUC), so that value has no SI equivalent. Extracted — sulfadiazine: kabs 0.158 1/hr, t1/2ka 4.51 hr, kel 0.262 1/hr, t1/2z 2.66 hr, Cmax 7.01 µg/mL, tmax 5 hr, Fab 85.7, MAT 5.92 hr, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulfadiazine, the second reading sulfadiazine and sulfamonomethoxine; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -191,25 +191,25 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 0.328 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.328 |  | non-numeric value |
-| T1_t_half_terminal | reference | skipped |  | 4.8 |  | non-numeric value |
-| T1_t_half_terminal | reference | skipped |  | 4.8 |  | non-numeric value |
-| T1_t_half_terminal | reference | skipped |  | 4.8 |  | non-numeric value |
-| T1_t_half_terminal | reference | skipped |  | 4.8 |  | non-numeric value |
-| T1_t_half_terminal | reference | skipped |  | 4.8 |  | non-numeric value |
-| T1_t_half_terminal | reference | skipped |  | 4.8 |  | non-numeric value |
-| T1_t_half_terminal | reference | pass | 3.91 | 4.8 | 1.228 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 4.51 | 4.8 | 1.064 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.62 | 4.8 | 2.963 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.66 | 4.8 | 1.804 | hr→SI vs simulated h |
-| T1_tmax | reference | skipped |  | 4.86 |  | non-numeric value |
-| T1_tmax | reference | skipped |  | 4.86 |  | non-numeric value |
-| T1_tmax | reference | fail | 2.75 | 4.86 | 1.767 | hr→SI vs simulated h |
-| T1_tmax | reference | pass | 5 | 4.86 | 0.9721 | hr→SI vs simulated h |
-| T1_tmax | reference | fail | 2.75 | 4.86 | 1.767 | hr→SI vs simulated h |
-| T1_tmax | reference | pass | 5 | 4.86 | 0.9721 | hr→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.778 (14 of 18 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | cross-check contradicted by a second reader: verdict disputed; agreement 0.778 (14 of 18 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 0.328 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.328 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | skipped |  | 4.8 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | skipped |  | 4.8 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | skipped |  | 4.8 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | skipped |  | 4.8 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | skipped |  | 4.8 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | skipped |  | 4.8 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | pass | 3.91 | 4.8 | 1.228 | reported 3.91 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 4.51 | 4.8 | 1.064 | reported 4.51 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.62 | 4.8 | 2.963 | reported 1.62 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.66 | 4.8 | 1.804 | reported 2.66 hr→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 4.86 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | skipped |  | 4.86 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | fail | 2.75 | 4.86 | 1.767 | reported 2.75 hr→SI vs simulated h |
+| T1_tmax | reference | pass | 5 | 4.86 | 0.9721 | reported 5.0 hr→SI vs simulated h |
+| T1_tmax | reference | fail | 2.75 | 4.86 | 1.767 | reported 2.75 hr→SI vs simulated h |
+| T1_tmax | reference | pass | 5 | 4.86 | 0.9721 | reported 5.0 hr→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -5,11 +5,11 @@
 
 # Artefenomel — `Artefenomel_Adoke2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:07 UTC (Rejected), but the paper was screened again on 2026-10-22 10:44 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The volume of distribution for artefenomel is 1.5 mL, a magnitude far outside physiological limits indicating an extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
-<div class="pk-model-meta" hidden drug="Artefenomel" model-id="Artefenomel_Adoke2021_reference" status="rejected" stale="true" population="adults and children with uncomplicated P. falciparum malaria" measured-compound="artefenomel" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Artefenomel" model-id="Artefenomel_Adoke2021_reference" status="rejected" stale="false" population="adults and children with uncomplicated P. falciparum malaria" measured-compound="artefenomel" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Adoke Y, Zoleko-Manego R, Ouoba S, Tiono AB, Kaguthi G, Bonzela JE et al. A randomized, double-blind, phase 2b study to investigate the efficacy, safety, tolerability and pharmacokinetics of a single-dose regimen of ferroquine with artefenomel in adults and children with uncomplicated Plasmodium falciparum malaria. Malaria journal 20(1):222 (2021).
@@ -40,7 +40,7 @@ Adoke Y, Zoleko-Manego R, Ouoba S, Tiono AB, Kaguthi G, Bonzela JE et al. A rand
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.545). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,13 @@ Adoke Y, Zoleko-Manego R, Ouoba S, Tiono AB, Kaguthi G, Bonzela JE et al. A rand
 
 ### Reviewer guidance
 
-**The volume of distribution for artefenomel is 1.5 mL, a magnitude far outside physiological limits indicating an extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record specifies a volume of distribution of 1.5 mL for the drug. This value is physiologically implausible for a systemic volume, suggesting a unit or scale error during data extraction. The review rejected the model specifically because this parameter fell outside the physiological window. Extracted — artefenomel: Ae 3, V 1.5 mL, kabs 0.943 hour−1.
+Extracted — artefenomel: Ae 3, V 1.5 mL, kabs 0.943 hour−1.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading ferroquine → ssr97213 (metabolism); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -92,6 +94,31 @@ The record specifies a volume of distribution of 1.5 mL for the drug. This value
 - gap-filled Q49 (kabs) from Abd-Rahman_2020's review values (primary lacked it)
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.545 (6/11 fields) | 5 |
+
+<details><summary>5 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['ferroquine', 'ssr97213', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[criteria_met_for_established_anti_malarial_treatmenta]` |  | 44 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[estimated volume of distribution]` | 1.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.943 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[percentage of patients achieving parasite clearance after 72 h]` |  | 76.7 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

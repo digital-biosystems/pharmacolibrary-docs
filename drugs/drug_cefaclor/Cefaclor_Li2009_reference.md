@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Cefaclor clearance of 347.0 ml/min lacks a reported absorption rate, so library defaults were used for ka and Tlag.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="cefaclor" model-id="Cefaclor_Li2009_reference" status="needs_review" stale="false" population="" measured-compound="cefaclor" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Li M, Andrew MA, Wang J, Salinger DH, Vicini P, Grady RW et al. Effects of cranb
 
 ### Reviewer guidance
 
-**Cefaclor clearance of 347.0 ml/min lacks a reported absorption rate, so library defaults were used for ka and Tlag.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record defines cefaclor clearance (347.0 ml/min) and volume of distribution (28.9 liters) but omits the absorption rate constant. Consequently, the model builder defaulted ka and Tlag to library values rather than extracting estimates from the source. A second reader disputed the verification, failing to confirm these parameter assignments. Extracted — cefaclor: CL/F 347 ml/min, V/F 28.9 liters.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — cefaclor: CL/F 347 ml/min, V/F 28.9 liters.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q26: this record has 218, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.462, 0 of 1 reader(s) agree | 0.462 | cross-check disputed by a second reader: verdict disputed, agreement 0.462, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.462 (6 of 13 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.462 | cross-check contradicted by a second reader: verdict disputed; agreement 0.462 (6 of 13 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

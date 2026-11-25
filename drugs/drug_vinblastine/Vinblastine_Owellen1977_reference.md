@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment structure for vinblastine fails because the gamma phase half-life has no corresponding compartment or linked pathway.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Owellen1977_reference" status="rejected" stale="false" population="humans" measured-compound="vinblastine" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Owellen RJ, Hartke CA, Hains FO. Pharmacokinetics and metabolism of vinblastine 
 
 ### Reviewer guidance
 
-**The two-compartment structure for vinblastine fails because the gamma phase half-life has no corresponding compartment or linked pathway.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model specifies a two-compartment topology yet includes parameters for a terminal gamma phase, leaving that elimination pathway unlinked from the dose. The record relies on abstract-only summary statistics, so the values for half-lives and volumes stand in for fitted model parameters. Discrepancies exist regarding the assignment of the alpha half-life and the identification of the gamma volume, further complicating the interpretation. Extracted — vinblastine: t1/2α 3.9 min, V1 16.8 liters, t1/2β 53 min, V2 79 liters, t1/2γ 1.17e+03 min, CL 46.2 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — vinblastine: t1/2α 3.9 min, V1 16.8 liters, t1/2β 53 min, V2 79 liters, t1/2γ 1.17e+03 min, CL 46.2 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

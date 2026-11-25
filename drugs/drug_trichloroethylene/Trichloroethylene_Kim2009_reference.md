@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The trichloroacetic acid metabolite has no defined link parameter from trichloroethylene, rendering it an orphan compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="trichloroethylene" model-id="Trichloroethylene_Kim2009_reference" status="rejected" stale="false" population="male B6C3F1 mice" measured-compound="trichloroacetic acid" parameterization="apparent" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Kim S, Kim D, Pollack GM, Collins LB, Rusyn I. Pharmacokinetic analysis of trich
 
 ### Reviewer guidance
 
-**The trichloroacetic acid metabolite has no defined link parameter from trichloroethylene, rendering it an orphan compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The metabolic link from trichloroethylene to trichloroacetic acid is missing its quantitative rate parameter, which isolates the metabolite from the dosed parent. Although apparent parameters like a 74% bioavailability and 0.6 h half-life are listed, the abstract-only source prevented these summary statistics from defining a functional model. A second reader also noted the missing link parameter and suggested a mechanistic approach, further highlighting the structural incompleteness. Extracted — trichloroethylene: Fab 74 %, t1/2z 0.6 h, CLm/F 0.081 ml/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — trichloroethylene: Fab 74 %, t1/2z 0.6 h, CLm/F 0.081 ml/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trichloroethylene, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;potassium clorazepate&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/&quot;},{&quot;label&quot;:&quot;Wilensky_1978 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumClorazepate_Diack2024_reference&quot;,&quot;label&quot;:&quot;Diack_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Diack2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Kirschbrown2019_reference&quot;,&quot;label&quot;:&quot;Kirschbrown_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kirschbrown2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Kratochwil2021_reference&quot;,&quot;label&quot;:&quot;Kratochwil_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kratochwil2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Pressler2024_reference&quot;,&quot;label&quot;:&quot;Pressler_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Pressler2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sigel_1988_GABA_current&quot;,&quot;label&quot;:&quot;Sigel_1988 \u00b7 GABA current&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/pd_Sigel_1988_GABA_current.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumClorazepate_Diack2024_reference&quot;,&quot;label&quot;:&quot;Diack_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Diack2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Kirschbrown2019_reference&quot;,&quot;label&quot;:&quot;Kirschbrown_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kirschbrown2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Kratochwil2021_reference&quot;,&quot;label&quot;:&quot;Kratochwil_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Kratochwil2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumClorazepate_Pressler2024_reference&quot;,&quot;label&quot;:&quot;Pressler_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_clorazepate/PotassiumClorazepate_Pressler2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Potassium clorazepate's clearance, volume, absorption rate, and lag time were missing, forcing the use of placeholder defaults that quarantined the record.
+> No value for potassium clorazepate's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations (+1 more).
 
-<div class="pk-model-meta" hidden drug="potassium clorazepate" model-id="PotassiumClorazepate_Wilensky1978_reference" status="model_quarantined" stale="false" population="treated epileptic patients" measured-compound="desmethyldiazepam" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="potassium clorazepate" model-id="PotassiumClorazepate_Wilensky1978_reference" status="model_quarantined" stale="false" population="treated epileptics" measured-compound="desmethyldiazepam" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Wilensky AJ, Levy RH, Troupin AS, Moretti-Ojemann L. Clorazepate kinetics in treated epileptics. Clinical pharmacology and therapeutics 24(1):22–30 (1978).
@@ -17,7 +17,7 @@ Wilensky AJ, Levy RH, Troupin AS, Moretti-Ojemann L. Clorazepate kinetics in tre
 
 ## Population and dosing
 
-**Population:** treated epileptic patients · condition epilepsy · age group adult.
+**Population:** treated epileptics · condition epilepsy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed clorazepate, measured desmethyldiazepam.
 
@@ -33,14 +33,14 @@ Wilensky AJ, Levy RH, Troupin AS, Moretti-Ojemann L. Clorazepate kinetics in tre
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| t1/2 of the distribution phase | t1/2α | 1.28 | hr |
-| t1/2 of the disposition phase | t1/2β | 40.8 | hr |
+| The apparent t1/2 of the distribution phase | t1/2α | 1.28 | hr |
+| t1/2 of the disposition phase | t1/2z | 40.8 | hr |
 | Whole body apparent volume of distribution (VB/F) | Vm,norm/F | 1.63 | L/kg |
 | Total plasma clearance | CLm/F | 34.4 | ml/min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,20 +50,20 @@ Wilensky AJ, Levy RH, Troupin AS, Moretti-Ojemann L. Clorazepate kinetics in tre
 
 ### Reviewer guidance
 
-**Potassium clorazepate's clearance, volume, absorption rate, and lag time were missing, forcing the use of placeholder defaults that quarantined the record.**
+**No value for potassium clorazepate's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations (+1 more).**
 
-The record lacks explicit estimates for potassium clorazepate's clearance, volume of distribution, absorption rate constant, and absorption lag time. Because the study was abstract-only, these critical absorption and disposition parameters for the parent drug could not be extracted from the source text. The second reader disagreed on several parameter assignments and compound identities, but the primary cause for refusal remains the absence of values for these four kinetic parameters. Extracted — potassium clorazepate: t1/2α 1.28 hr, t1/2β 40.8 hr, Vm,norm/F 1.63 L/kg, CLm/F 34.4 ml/min.
+The model was built, but potassium clorazepate's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — potassium clorazepate: t1/2α 1.28 hr, t1/2z 40.8 hr, Vm,norm/F 1.63 L/kg, CLm/F 34.4 ml/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clorazepate, the second reading potassium clorazepate; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading clorazepate → desmethyldiazepam (metabolism); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| t1/2 of the distribution phase | `Q59` · t1/2α | 1.28 | hr | 4608 | s | h | llm_corrected (0.6) | Wilensky_1978:abstract |
-| t1/2 of the disposition phase | `Q60` · t1/2β | 40.8 | hr | 1.469e+05 | s | h | llm_corrected (0.6) | Wilensky_1978:abstract |
+| The apparent t1/2 of the distribution phase | `Q59` · t1/2α | 1.28 | hr | 4608 | s | h | half_life_rule (0.95) | Wilensky_1978:abstract |
+| t1/2 of the disposition phase | `Q57` · t1/2z | 40.8 | hr | 1.469e+05 | s | h | llm_confirmed (0.6) | Wilensky_1978:abstract |
 | Whole body apparent volume of distribution (VB/F) | `Q376` · Vm,norm/F | 1.63 | L/kg | 0.1141 | m3 | l/kg | llm_confirmed (0.6) | Wilensky_1978:abstract |
 | Total plasma clearance | `Q351` · CLm/F | 34.4 | ml/min | 5.733e-07 | m3/s | ml/min | llm_confirmed (0.6) | Wilensky_1978:abstract |
 
@@ -82,7 +82,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 0 linked by role; re-tagged desmethyldiazepam→parent ×4
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'desmethyldiazepam', not potassium_clorazepate — the review values are the parent's
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Wilensky_1978_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -90,26 +89,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.667 (6/9 fields) | 3 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['clorazepate', 'desmethyldiazepam', 'metabolism']] | mismatch |
 | `gpt-oss-120b` | `parameters[apparent t1/2 of the distribution phase]` |  | 1.28 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2 of the disposition phase]` | 40.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2 of the disposition phase]` |  | 40.8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2 of the distribution phase]` | 1.28 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total plasma clearance]` | 34.4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total plasma clearance]` |  | 34.4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[whole body apparent volume of distribution]` | 1.63 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[whole body apparent volume of distribution]` |  | 1.63 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | clorazepate | potassium clorazepate | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | desmethyldiazepam | potassium clorazepate | mismatch |
+| `gpt-oss-120b` | `parameters[the apparent t1/2 of the distribution phase]` | 1.28 |  | only_one_extracted |
 
 </details>
 
@@ -128,8 +120,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Wilensky_1978:abstract'] |
 | C5_dimension_Q376 | pass | [length] ** 3 |  | ['Wilensky_1978:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Wilensky_1978:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Wilensky_1978:abstract'] |
-| C5_dimension_Q60 | pass | [time] |  | ['Wilensky_1978:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 
@@ -143,7 +135,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.667 (6 of 9 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (6 of 9 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -177,4 +169,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpotassium_clorazepate%5D%20PotassiumClorazepate_Wilensky1978_reference&body=Drug%3A%20potassium_clorazepate%0ARecord%3A%20PotassiumClorazepate_Wilensky1978_reference%0APaper%3A%20Wilensky_1978%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_potassium_clorazepate/PotassiumClorazepate_Wilensky1978_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:06 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:57 UTC</sub>

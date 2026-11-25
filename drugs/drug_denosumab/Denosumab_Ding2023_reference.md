@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Denosumab absorption parameters were left at defaults instead of using estimates from the Ding_2023 paper, as the source did not report them.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="denosumab" model-id="Denosumab_Ding2023_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="denosumab" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Ding Y, Liu Y, Dou C, Guo S. A randomized trial comparing LY01011, biosimilar ca
 
 ### Reviewer guidance
 
-**Denosumab absorption parameters were left at defaults instead of using estimates from the Ding_2023 paper, as the source did not report them.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record models apparent oral clearance and volume but relies on placeholder defaults for absorption rate and lag time because the source paper did not provide these estimates. A second reader also disagreed with a specific reported parameter value, which is currently null in the record. This discrepancy indicates the extracted data point is missing or incorrect relative to the source. Extracted — denosumab: CL/F 248 mL/day, V/F 6.54e+03 mL.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — denosumab: CL/F 248 mL/day, V/F 6.54e+03 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q88: this record has none, the second reading -19634.136. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.917, 0 of 1 reader(s) agree | 0.917 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.917 (11 of 12 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.917 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

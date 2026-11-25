@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Codeine clearance was recorded with time units (10.8 h) instead of volume/time, and all metabolites lacked defined rate parameters.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit h ([time]) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Persson1992_reference" status="rejected" stale="false" population="postoperative cholecystectomy patients" measured-compound="codeine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -53,13 +53,13 @@ Persson K, Hammarlund-Udenaes M, Mortimer O, Rane A. The postoperative pharmacok
 
 ### Reviewer guidance
 
-**Codeine clearance was recorded with time units (10.8 h) instead of volume/time, and all metabolites lacked defined rate parameters.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit h ([time]) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The total clearance for codeine is listed as 10.8 h, a unit of time that is dimensionally incompatible with a clearance parameter. All three listed metabolites, morphine, norcodeine, and codeine-6-glucuronide, are structurally unreachable because their formation links have no associated rate parameters. A second reader disagreed with the presence of these metabolic links and the extraction of the lag time value. Extracted — codeine: CL 10.8 h, V2 2.2 L/kg, tlag 2.35 h, fu 40 %, tmax 1.3 h, V 6 L/kg.
+A reported unit could not be converted (CL and equation variable), so that value has no SI equivalent. Extracted — codeine: CL 10.8 h, V2 2.2 L/kg, tlag 2.35 h, fu 40 %, tmax 1.3 h, V 6 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has codeine → morphine (metabolism); codeine → norcodeine (metabolism); codeine → codeine-6-glucuronide (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

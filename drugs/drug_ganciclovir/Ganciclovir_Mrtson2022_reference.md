@@ -9,7 +9,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="ganciclovir" model-id="Ganciclovir_Mrtson2022_reference" status="needs_review" stale="false" population="unknown" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ganciclovir" model-id="Ganciclovir_Mrtson2022_reference" status="needs_review" stale="false" population="mixed" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Märtson AG, Edwina AE, Kim HY, Knoester M, Touw DJ, Sturkenboom MGG et al. Therapeutic Drug Monitoring of Ganciclovir: Where Are We?. Therapeutic drug monitoring 44(1):138–147 (2022).
@@ -17,7 +17,7 @@ Märtson AG, Edwina AE, Kim HY, Knoester M, Touw DJ, Sturkenboom MGG et al. Ther
 
 ## Population and dosing
 
-**Population:** unknown · condition cytomegalovirus.
+**Population:** mixed · condition cytomegalovirus · age group mixed.
 
 ## Model
 
@@ -29,11 +29,13 @@ Märtson AG, Edwina AE, Kim HY, Knoester M, Touw DJ, Sturkenboom MGG et al. Ther
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label | parameter | value | unit |
+|---|---|---|---|
+| ganciclovir clearance | ganciclovir clearance | 14.9 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,20 +49,33 @@ _No resolved parameters._
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. No parameter values were extracted.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of czock et al, 200254: this record has none, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ganciclovir, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+### All parameter columns
+
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | source |
+|---|---|---|---|---|---|---|
+| ganciclovir clearance | `Q900` · ganciclovir clearance | 14.9 | L/h | 4.139e-06 | m3/s | Märtson_2022:other_prose |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 
 | label (paper) | Q-code | link |
 |---|---|---|
-| CL | Q22 | exact |
+| ganciclovir clearance | Q22 | boundary |
 | CL/F | Q27 | exact |
 
 ## Departures & gaps
 
 **Interpretation flags:**
+- column 'population (n), country' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- column 'route of administration or formulation' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'Wiltshire et al, 200558' — extend the ontology if this is a real PK parameter (source ['T2:row1:col3', 'T2:row1:col4'])
 - dropped unlinked row (NIL): 'Chen et al, 202153' — extend the ontology if this is a real PK parameter (source ['T2:row2:col3', 'T2:row2:col4'])
 - dropped unlinked row (NIL): 'Czock et al, 200254' — extend the ontology if this is a real PK parameter (source ['T2:row3:col3', 'T2:row3:col4'])
@@ -71,40 +86,39 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 - dropped unlinked row (NIL): 'Caldés et al, 200952' — extend the ontology if this is a real PK parameter (source ['T2:row8:col2', 'T2:row8:col3', 'T2:row8:col4'])
 - dropped unlinked row (NIL): 'Billat et al, 201610' — extend the ontology if this is a real PK parameter (source ['T2:row9:col3', 'T2:row9:col4'])
 - table mostly unlinked (9/9 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); "Needs review" instead of building a model from the residual linked cell(s)
+- salvaged Q22 ('ganciclovir clearance'=14.9) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ganciclovir
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - bound model equation to Q22 (CL): CL = 12.4 * (CLCR/median)^0.925 * (WT/79.6)^0.725CLCR median males = 80.4 mL/min females = 65.8 mL/minVc (L) = 25Vp (L) = 49Inter-tissue CL (L/h) = 12 tlag (h) = 0.883Ka (h-1) = 0.128
 - bound model equation to Q27 (CL/F): CL/F = 14.5 * ((CLCR/60) * (70/WT))^0.492 * (WT/70)^0.75Vc/F (L) = 87.5 * (WT/70)Vp/F (L) = 42.6 * (WT/70)Q/F (L/h) = 4.8 * (WT/70)^0.75
-- Q22 (CL) is equation-defined: value moved to equation-variable 'CL'; equation kept verbatim
+- Q22 (CL) is equation-defined: value moved to equation-variable 'ganciclovir clearance'; equation kept verbatim
 - Q27 (CL/F) is equation-defined: value moved to equation-variable 'CL/F'; equation kept verbatim
 - status held at "Needs review" — not promoted
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- unparsed cell T2:row1:col2 = 'Oral ganciclovir 1000 mg 3dd and valganciclovir 900 mg 1dd'
-- unparsed cell T2:row2:col2 = 'Valganciclovir 450 mg and 900 mg 1dd'
-- unparsed cell T2:row3:col2 = 'Valganciclovir 900 mg 1dd'
-- unparsed cell T2:row4:col2 = 'Valganciclovir 900 mg 1dd'
-- unparsed cell T2:row6:col2 = 'Valganciclovir 900 mg 1dd'
-- unparsed cell T2:row9:col2 = 'Valganciclovir 900 mg 1dd and 450 mg 1dd (renal impairment)'
 - LLM selected parameter table(s) 2
 - captured model equation CL = 12.4 * (CLCR/median)^0.925 * (WT/79.6)^0.725CLCR median males = 80.4 mL/min females = 65.8 mL/minVc (L) = 25Vp (L) = 49Inter-tissue CL (L/h) = 12 tlag (h) = 0.883Ka (h-1) = 0.128
 - captured model equation CL/F = 14.5 * ((CLCR/60) * (70/WT))^0.492 * (WT/70)^0.75Vc/F (L) = 87.5 * (WT/70)Vp/F (L) = 42.6 * (WT/70)Q/F (L/h) = 4.8 * (WT/70)^0.75
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | partly confirmed | 0.857 (6/7 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[czock et al, 200254]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ganciclovir clearance]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[wiltshire et al, 200558]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | ganciclovir | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ganciclovir | unknown | mismatch |
 
 </details>
 
@@ -155,4 +169,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bganciclovir%5D%20Ganciclovir_Mrtson2022_reference&body=Drug%3A%20ganciclovir%0ARecord%3A%20Ganciclovir_Mrtson2022_reference%0APaper%3A%20M%C3%A4rtson_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ganciclovir/Ganciclovir_Mrtson2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:41 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:42 UTC</sub>

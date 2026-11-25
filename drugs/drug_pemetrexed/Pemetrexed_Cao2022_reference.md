@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because a second reader disputed the verdict, identifying missing relative standard errors for clearance and volume parameters.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="pemetrexed" model-id="Pemetrexed_Cao2022_reference" status="needs_review" stale="false" population="Chinese patients with primary advanced non-small cell lung carcinoma" measured-compound="pemetrexed" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Cao P, Guo W, Wang J, Wu S, Huang Y, Wang Y et al. Population pharmacokinetic st
 
 ### Reviewer guidance
 
-**The record was held back because a second reader disputed the verdict, identifying missing relative standard errors for clearance and volume parameters.**
+**cross_check_disputed; x1_cross_check.**
 
-The initial record lists no relative standard errors for total clearance, central volume, or peripheral volume, whereas the second reader extracted values of 0.12, 0.11, and 0.59 respectively. The second reader also disagreed on the presence of the parameter θ3, which the original record lists as 0.11. These discrepancies regarding parameter uncertainty and identification prevented agreement on the model's validity. Extracted — pemetrexed: V1 17.5 L, V2 3.86 L, CL 7.63 L·h−1, Q 0.08 L·h−1.
+Extracted — pemetrexed: V1 17.5 L, V2 3.86 L, CL 7.63 L·h−1, Q 0.08 L·h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pemetrexed, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -149,7 +149,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.462, 0 of 1 reader(s) agree | 0.462 | cross-check disputed by a second reader: verdict disputed, agreement 0.462, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.462 (6 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.462 | cross-check contradicted by a second reader: verdict disputed; agreement 0.462 (6 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

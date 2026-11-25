@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The volume of distribution parameter's unit was misinterpreted as luminosity per area instead of volume, causing a dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q65 unit l x kg(-1) ([luminosity] / [length] ** 2) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Ericsson1999v2_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="clevidipine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -49,13 +49,13 @@ Ericsson H, Fakt C, Höglund L, Jolin-Mellgård A, Nordlander M, Sunzel M et al.
 
 ### Reviewer guidance
 
-**The volume of distribution parameter's unit was misinterpreted as luminosity per area instead of volume, causing a dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q65 unit l x kg(-1) ([luminosity] / [length] ** 2) vs [length] ** 3.**
 
-The record's volume of distribution value of 0.6 l x kg(-1) was flagged because its unit dimension conflicted with the required volume dimension. Additionally, the second reader could not verify the extracted parameters or the parent-metabolite link, leaving their validity unconfirmed. Since the data were abstract-only, these summary statistics stand in for a fitted model, further limiting confidence in the extracted values. Extracted — clevidipine: CLb 0.14 L/h, Vss 0.6 l x kg(-1), t1/2α 1.6 min, t1/2z 15 min; H 152/81: t1/2z 9.5 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clevidipine: CLb 0.14 L/h, Vss 0.6 l x kg(-1), t1/2α 1.6 min, t1/2z 15 min; H 152/81: t1/2z 9.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has clevidipine → h 152/81 (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -33,9 +33,9 @@ Cilostazol is a phosphodiesterase 3 inhibitor used to treat intermittent claudic
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Jung_2018_CT](drugs/drug_cilostazol/pd_Jung_2018_CT.md) | closure time ← cilostazol · indirect response — drug inhibits the loss of closure time | — | Jung YS et al., Population pharmacodynamics of cilostaz…, Translational and clinical… (2018) | [10.12793/tcp.2018.26.2.93](https://doi.org/10.12793/tcp.2018.26.2.93) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Woo_2002_DBP](drugs/drug_cilostazol/pd_Woo_2002_DBP.md) | diastolic blood pressure ← cilostazol · direct sigmoid Emax (Hill) effect | — | Woo SK et al., Pharmacokinetic and pharmacodynamic mod…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.122474](https://doi.org/10.1067/mcp.2002.122474) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Woo_2002_platelet_aggregation](drugs/drug_cilostazol/pd_Woo_2002_platelet_aggregation.md) | platelet aggregation ← cilostazol · direct sigmoid Emax (Hill) effect | — | Woo SK et al., Pharmacokinetic and pharmacodynamic mod…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.122474](https://doi.org/10.1067/mcp.2002.122474) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Jung_2018_CT](drugs/drug_cilostazol/pd_Jung_2018_CT.md) | closure time ← cilostazol · indirect response — drug inhibits the loss of closure time | — | Jung YS et al., Population pharmacodynamics of cilostaz…, Translational and clinical… (2018) | [10.12793/tcp.2018.26.2.93](https://doi.org/10.12793/tcp.2018.26.2.93) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Woo_2002_HR](drugs/drug_cilostazol/pd_Woo_2002_HR.md) | heart rate ← cilostazol · direct sigmoid Emax (Hill) effect | — | Woo SK et al., Pharmacokinetic and pharmacodynamic mod…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.122474](https://doi.org/10.1067/mcp.2002.122474) |
 
 ## Pharmacogenomics (PGx)

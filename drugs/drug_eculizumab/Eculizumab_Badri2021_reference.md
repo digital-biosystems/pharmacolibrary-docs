@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper studies cemdisiran, not eculizumab, despite listing eculizumab clearance of 92.2 L/h.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Badri2021_reference" status="rejected" stale="false" population="" measured-compound="eculizumab" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Badri P, Jiang X, Borodovsky A, Najafian N, Kim J, Clausen VA et al. Pharmacokin
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper studies cemdisiran, not eculizumab, despite listing eculizumab clearance of 92.2 L/h.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The paper evaluates the pharmacokinetics of cemdisiran, where eculizumab serves only as a co-administered comparator agent. Consequently, no quantitative PK parameters for eculizumab were actually reported in the source study. The extracted clearance value of 92.2 L/h and derived volume of 570.6407 L cannot be attributed to the primary subject of the paper. Extracted — eculizumab: CL/F 92.2 L/h, V/F 571 L.
+Extracted — eculizumab: CL/F 92.2 L/h, V/F 571 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q174: this record has 0.54, the second reading 0.54; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | cross-check disputed by a second reader: verdict disputed, agreement 0.7, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (10 of 10 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

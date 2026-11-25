@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Fentanyl Tag was misidentified as a concentration, creating a unit mismatch against its expected mass-volume dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit h ([time]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_AlQurain2021_reference" status="rejected" stale="false" population="older acute care patients" measured-compound="fentanyl" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Al-Qurain AA, Upton R, Williams DB, Mackenzie L, Phillips C, Russell PT et al. P
 
 ### Reviewer guidance
 
-**Fentanyl Tag was misidentified as a concentration, creating a unit mismatch against its expected mass-volume dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit h ([time]) vs [mass] / [length] ** 3.**
 
-The parameter labeled 'Tag, (h)' has a value of 0.648 h, yet its meaning defines it as a drug concentration. This causes a conflict between the assigned time unit and the required mass-volume dimension for a concentration. The record was rejected due to this structural dimension mismatch on the Tag parameter. Extracted — fentanyl: Ct 0.648 h, kabs 0.124 h⁻¹, V/F 5.31 L, CL/F 9.08 L.h⁻¹.
+A reported unit could not be converted (Ct), so that value has no SI equivalent. Extracted — fentanyl: Ct 0.648 h, kabs 0.124 h⁻¹, V/F 5.31 L, CL/F 9.08 L.h⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[tag,].parameter_id`: this record has Q75, the second reading Q83. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
-> The second reader disputed the record due to conflicting interpretations of the abstract's reported summary statistics.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="phenylbutazone" model-id="Phenylbutazone_Kadir1997_reference" status="needs_review" stale="false" population="female dromedary camels" measured-compound="phenylbutazone" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Kadir A, Ali BH, al Hadrami G, Bashir AK, Landoni MF, Lees P. Phenylbutazone pha
 
 ### Reviewer guidance
 
-**The second reader disputed the record due to conflicting interpretations of the abstract's reported summary statistics.**
+**cross_check_disputed; x1_cross_check.**
 
-The cross-check failed with an agreement ratio of 0.467 because the second reader disagreed on several parameters. For instance, the second reader identified a dosage rate of 4.4, which was not present in this record. Additionally, the second reader disagreed on the presence or absence of parameters like bioavailability (97%) and the absorption rate constant (1.32 1/h). These discrepancies led to the verdict being marked as needs_review. Extracted — phenylbutazone: V 0.174 l.kg-1, t1/2β 0.43 h, t1/2z 12.5 h, Fab 97 %, kabs 1.32 1/h, tlag 0.45 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — phenylbutazone: V 0.174 l.kg-1, t1/2β 0.43 h, t1/2z 12.5 h, Fab 97 %, kabs 1.32 1/h, tlag 0.45 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bioavailability: this record has 97, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,7 +152,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.467, 0 of 1 reader(s) agree | 0.467 | cross-check disputed by a second reader: verdict disputed, agreement 0.467, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.467 (7 of 15 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.467 | cross-check contradicted by a second reader: verdict disputed; agreement 0.467 (7 of 15 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

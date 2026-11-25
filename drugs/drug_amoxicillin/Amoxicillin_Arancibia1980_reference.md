@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Three rate constants for amoxicillin in this one-compartment record were recorded with time units instead of reciprocal time, causing a dimensional mismatch that led to rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q302 unit h ([time]) vs 1 / [time]; Q47 unit h ([time]) vs 1 / [time]; Q301 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Arancibia1980_reference" status="rejected" stale="false" population="healthy fasted subjects" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Arancibia A, Guttmann J, González G, González C. Absorption and disposition ki
 
 ### Reviewer guidance
 
-**Three rate constants for amoxicillin in this one-compartment record were recorded with time units instead of reciprocal time, causing a dimensional mismatch that led to rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q302 unit h ([time]) vs 1 / [time]; Q47 unit h ([time]) vs 1 / [time]; Q301 unit h ([time]) vs 1 / [time].**
 
-The elimination, central-to-peripheral, and peripheral-to-central rate constants (1.16, 0.92, and 1.99, respectively) are structurally dimensionless over time but were listed in the record with units of hours. The intercompartmental clearance of 13.3 liters per hour is dimensionally correct, but the presence of the erroneous rate constants forced the record to be held back. A second reader also disagreed on the steady-state volume of distribution and the absorption rate constant, but the primary failure was the unit inconsistency on the rate parameters. Extracted — amoxicillin: t1/2z 0.27 h, k21 1.99 h, kel 1.16 h, k12 0.92 h, Q 13.3 liters/h, V 11.8 liters, Vss 20.2 liters, AUC 37 h, … (+3).
+A reported unit could not be converted (k21, kel, k12 and AUC), so that value has no SI equivalent. Extracted — amoxicillin: t1/2z 0.27 h, k21 1.99 h, kel 1.16 h, k12 0.92 h, Q 13.3 liters/h, V 11.8 liters, Vss 20.2 liters, AUC 37 h, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cib].parameter_id`: this record has Q30, the second reading Q22; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

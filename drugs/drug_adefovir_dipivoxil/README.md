@@ -48,7 +48,7 @@ Adefovir dipivoxil is a nucleoside analog reverse transcriptase inhibitor used t
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:07 | 3:07 | 0/2/0 | 1/0/0 | 0/0/0 | 170,400/10,767 | ollama / glm-5.3-flash | 4 | 0/4 | 4/0 | 0 |
+| 2026-11-23 17:24 | 0:04 | 0/2/0 | 1/0/0 | 0/0/0 | 4,259/163 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
 
 ## Coverage
 
@@ -57,35 +57,34 @@ Adefovir dipivoxil is a nucleoside analog reverse transcriptase inhibitor used t
 - **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Huang_2014.pdf` | Huang J et al., Population pharmacokinetics of adefovir…, International journal of cl… (2014) | popPK | 10 | [10.5414/CP201928](https://doi.org/10.5414/CP201928) | [24219967](https://pubmed.ncbi.nlm.nih.gov/24219967) | Population PK model of adefovir dipivoxil with all numeric parameters (CL, V2, Q, V3, ka, lag time) reported directly in the abstract. |
-
-<sub>queue written 2026-10-07 15:04 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Fu_2007 | irrelevant | 0 | 0 | Adefovir dipivoxil is only a comparator in an in-vitro synthesis/antiviral study; no PK disposition parameters for it are reported. |
-| popPK | Fu_2008 | irrelevant | 0 | 0 | This is a medicinal chemistry/antiviral activity study of prodrug design; adefovir dipivoxil is only a lead comparator and no PK parameters are reported. |
-| popPK | Lee_2014 | irrelevant | 0 | 0 | Clinical efficacy study of renal function (eGFR) outcomes; no PK disposition parameters for adefovir are reported. |
-| popPK | Li_2019 | irrelevant | 2 | 1 | Adefovir dipivoxil is only a comparator; PK data concern derivative 6c and no numeric disposition parameters appear in the evidence. |
+| popPK | Fu_2007 | irrelevant | 0 | 0 | The paper is an in-vitro medicinal chemistry study of new PMEA prodrugs, and adefovir dipivoxil is only used as a control; no quantitative PK parameters for adefovir dipivoxil are reported. |
+| PGx | Fu_2007 | not_relevant | 0 | 0 | The paper reports on the synthesis and in vitro activity of new PMEA prodrugs, not on pharmacogenomic effects on adefovir dipivoxil. |
+| popPK | Fu_2008 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study focusing on the synthesis and in-vitro antiviral activity (anti-HBV) of new prodrugs, with no pharmacokinetic parameters reported for adefovir dipivoxil. |
+| PGx | Fu_2008 | not_relevant | 0 | 0 | The paper reports the design and synthesis of prodrugs and their in vitro anti-HBV activity, but does not report pharmacogenomic effects on PK or PD parameters. |
+| PGx | Huang_2014 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics in healthy volunteers but does not investigate or report on the effects of specific gene variants or genotypes on PK parameters. |
+| popPK | Lee_2014 | irrelevant | 0 | 0 | The study focuses on renal safety and efficacy (eGFR, HBV DNA) of combination therapy, reporting no pharmacokinetic parameters like clearance or volume of distribution for adefovir. |
+| PGx | Lee_2014 | not_relevant | 0 | 0 | The study investigates the clinical outcome (renal function) of drug combination therapy but contains no genetic or pharmacogenomic data regarding adefovir dipivoxil. |
+| popPK | Li_2019 | irrelevant | 2 | 0 | The study focuses on the synthesis and mechanistic evaluation of adefovir derivatives, and while it mentions pharmacokinetic characterization, no specific quantitative PK parameter values (CL, V, ka, etc.) for adefovir dipivoxil or the derivatives are present in the provided evidence. |
+| PGx | Li_2019 | not_relevant | 0 | 0 | The paper reports on new chemical derivatives and general PK/toxicity comparisons, not on the impact of specific human genetic variants on the PK/PD of adefovir dipivoxil. |
 | popPK | Liu_2014 | irrelevant | 0 | 0 | This is an HBV drug-resistance study; adefovir dipivoxil is only a rescue therapy/comparator with EC50 susceptibility data, no PK disposition parameters. |
-| popPK | Liu_2015 | irrelevant | 0 | 0 | This is a virology/resistance study reporting EC50 values in cell culture, not pharmacokinetic disposition parameters for adefovir dipivoxil. |
-| popPK | Pfister_2002 | irrelevant | 0 | 0 | Adefovir dipivoxil is only a background co-administered medication; the PK model and parameters concern amprenavir, not adefovir. |
-| popPK | Pfister_2003 | irrelevant | 0 | 0 | Adefovir dipivoxil is only a co-administered drug in the study; all PK parameters reported are for efavirenz, nelfinavir, and indinavir, not adefovir. |
-| popPK | Qi_2012 | irrelevant | 0 | 0 | In vitro antiviral study of a heteropolytungstate; adefovir dipivoxil is only a comparator with EC50/CC50 values, no PK parameters. |
+| popPK | Liu_2015 | irrelevant | 0 | 0 | The paper focuses on viral resistance mechanisms (EC50) and genotypic analysis of HBV mutants, not the pharmacokinetic disposition parameters (CL, V, t1/2) of adefovir dipivoxil in a biological host. |
+| popPK | Pfister_2002 | irrelevant | 0 | 0 | The study is a pharmacokinetic analysis of amprenavir (subject drug), and adefovir dipivoxil is only a co-administered background medication. |
+| PGx | Pfister_2002 | not_relevant | 0 | 0 | The paper investigates pharmacokinetic drug-drug interactions for amprenavir; adefovir is only a background medication and no genetic effects are reported. |
+| popPK | Pfister_2003 | irrelevant | 0 | 0 | The study models the pharmacokinetics of efavirenz, nelfinavir, and indinavir, not adefovir dipivoxil, which is only a background component of the treatment regimen. |
+| PGx | Pfister_2003 | not_relevant | 0 | 0 | The paper reports population PK of efavirenz and protease inhibitors but contains no pharmacogenomic data or PK/PD parameters for adefovir dipivoxil. |
+| popPK | Qi_2012 | irrelevant | 0 | 0 | The paper is an in vitro antiviral activity study of a novel compound where adefovir is only used as a positive control, and no pharmacokinetic parameters for adefovir are reported. |
+| PGx | Qi_2012 | not_relevant | 0 | 0 | The paper reports in vitro anti-viral activity of a titanium-substituted heteropolytungstate and compares it to adefovir dipivoxil, but does not investigate any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 | popPK | Su_2018 | irrelevant | 0 | 0 | This is a renal-safety (eGFR) trial of adefovir dipivoxil plus PEG-IFN; no PK disposition parameters (CL, V, ka, half-life, or PK model) for adefovir are reported. |
-| popPK | Svarovskaia_2013 | irrelevant | 0 | 0 | This is a viral resistance/response study with no PK disposition parameters for adefovir dipivoxil. |
+| popPK | Svarovskaia_2013 | irrelevant | 0 | 0 | The study focuses on viral load decline kinetics and resistance mutations, not pharmacokinetic parameters like clearance or volume. |
+| PGx | Svarovskaia_2013 | not_relevant | 0 | 0 | The paper studies the impact of a viral mutation (rtN236T) on the efficacy of tenofovir, not the impact of a human gene variant on the PK or PD of adefovir dipivoxil. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Badefovir_dipivoxil%5D&body=Drug%3A%20adefovir_dipivoxil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_adefovir_dipivoxil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 15:04 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 17:23 UTC</sub>

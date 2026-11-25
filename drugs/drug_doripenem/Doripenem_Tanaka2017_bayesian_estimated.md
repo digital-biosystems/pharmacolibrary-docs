@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The doripenem record needs review because a second reader disputed its parameter extraction, including clearance 4.7 L/h and intercompartmental clearance 3.4 L/h.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="doripenem" model-id="Doripenem_Tanaka2017_bayesian_estimated" status="needs_review" stale="false" population="ICU patients" measured-compound="doripenem" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Tanaka R, Sato Y, Goto K, Yasuda N, Ohchi Y, Suzuki Y et al. Pharmacokinetic/Pha
 
 ### Reviewer guidance
 
-**The doripenem record needs review because a second reader disputed its parameter extraction, including clearance 4.7 L/h and intercompartmental clearance 3.4 L/h.**
+**cross_check_disputed; x1_cross_check.**
 
-The cross-check was disputed, with agreement 0.167 and 0 of 1 readers agreeing. The second reader marked the dose compound and primary analyte as unknown and provided no values for doripenem clearance (4.7 L/h), intercompartmental clearance (3.4 L/h), or central and peripheral compartment volumes (9.6 L and 3.4 L). Extracted — doripenem: CL 4.7 L/h, V1 9.6 L, V2 3.4 L, Q 3.4 L/h.
+Extracted — doripenem: CL 4.7 L/h, V1 9.6 L, V2 3.4 L, Q 3.4 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has doripenem, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

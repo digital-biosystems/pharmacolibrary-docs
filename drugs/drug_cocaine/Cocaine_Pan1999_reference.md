@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The cocaine elimination half-life value of 26.3 min has a dimension mismatch because it is labeled as a rate constant.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit min ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="cocaine" model-id="Cocaine_Pan1999_reference" status="rejected" stale="false" population="awake, freely moving rats" measured-compound="cocaine" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Pan WJ, Hedaya MA. Cocaine and alcohol interactions in the rat: effect on cocain
 
 ### Reviewer guidance
 
-**The cocaine elimination half-life value of 26.3 min has a dimension mismatch because it is labeled as a rate constant.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit min ([time]) vs 1 / [time].**
 
-The parameter labeled 'cocaine elimination half-life' is semantically defined as an elimination rate constant, which requires units of inverse time. The extracted value of 26.3 min provides a time dimension, creating a conflict with the required 1/[time] unit. Additionally, the second reader could not confirm the extracted values of 26.3 and 0.55 from the abstract-only source. Extracted — cocaine: Fab 0.55 to 0., kel 26.3 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cocaine: Fab 0.55 to 0., kel 26.3 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cocaine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

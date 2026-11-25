@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cefpirome’s record was rejected for an unreachable compartment despite reporting total clearance of 0.11 L/kg/h.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="cefpirome" model-id="Cefpirome_Haseeb2022_reference" status="rejected" stale="false" population="" measured-compound="cefpirome" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,13 +46,13 @@ Haseeb A, Faidah HS, Alghamdi S, Alotaibi AF, Elrggal ME, Mahrous AJ et al. Dose
 
 ### Reviewer guidance
 
-**Cefpirome’s record was rejected for an unreachable compartment despite reporting total clearance of 0.11 L/kg/h.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record describes a two-compartment structure, with a central volume of 9.07 L/70 kg and a peripheral volume of 5.43 L/kg. The stated finding is that a compartment is unreachable or orphaned; it does not identify which compartment. Extracted — cefpirome: CL 0.11 L/kg/h, V1 9.07 L/70 kg, V2 5.43 L/kg.
+Extracted — cefpirome: CL 0.11 L/kg/h, V1 9.07 L/70 kg, V2 5.43 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has 11.9, the second reading 26; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

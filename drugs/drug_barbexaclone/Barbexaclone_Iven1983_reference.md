@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> The record was rejected because the hydrolysis link from barbexaclone to phenobarbital lacks a defined rate constant.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="barbexaclone" model-id="Barbexaclone_Iven1983_reference" status="rejected" stale="false" population="mice" measured-compound="phenobarbital" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -53,13 +53,13 @@ Iven H, Feldbusch E. Pharmacokinetics of phenobarbital and propylhexedrine after
 
 ### Reviewer guidance
 
-**The record was rejected because the hydrolysis link from barbexaclone to phenobarbital lacks a defined rate constant.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-Both metabolites are described as products of hydrolysis, but the specific rate parameter for this conversion is absent. Additionally, the phenobarbital volume of distribution is labeled with the unit 'monoexponentially', which is not a valid physical quantity. Extracted — phenobarbital: t1/2z 7.5 h, V 0.78 l/kg, t1/2α 0.31 h, t1/2β 2.5 h, V2 19.3 l/kg, Fab 0.37 monoexponentially.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is barbexaclone's own; they describe phenobarbital. Extracted — phenobarbital: t1/2z 7.5 h, V 0.78 l/kg, t1/2α 0.31 h, t1/2β 2.5 h, V2 19.3 l/kg, Fab 0.37 monoexponentially.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has barbexaclone → phenobarbital (hydrolysis); barbexaclone → propylhexedrine (hydrolysis), the second reading barbexaclone → propylhexedrine (interconversion); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

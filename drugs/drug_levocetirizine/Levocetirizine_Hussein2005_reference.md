@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Levocetirizine’s apparent clearance (CL/F) of 0.044 L/h/kg was rejected because the record also applies relative bioavailability, creating a double correction.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="levocetirizine" model-id="Levocetirizine_Hussein2005_reference" status="rejected" stale="false" population="atopic children (12-24 months)" measured-compound="levocetirizine" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Hussein Z, Pitsiu M, Majid O, Aarons L, de Longueville M, Stockis A. Retrospecti
 
 ### Reviewer guidance
 
-**Levocetirizine’s apparent clearance (CL/F) of 0.044 L/h/kg was rejected because the record also applies relative bioavailability, creating a double correction.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The record reports CL/F of 0.044 L/h/kg alongside relative bioavailability of 0.28 and total clearance of 0.6 L/h, the combination underlying the apparent-parameter coherence finding. The record was built from the abstract alone, so its reported summary statistics stood in for a fitted model. A second reader disagreed about whether several values, including AUC at steady state and the absorption rate constant, belonged in the record. Extracted — levocetirizine: CL/F 0.044 L/h/kg, Vnorm 0.639 l kg(-1), CL 0.6 l h(-1), Frel 0.28 in, AUCSS 1.95e+03 ng·h/mL, AUC/dose 2.04e+03 microg l(-1) h, kabs 0.095 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — levocetirizine: CL/F 0.044 L/h/kg, Vnorm 0.639 l kg(-1), CL 0.6 l h(-1), Frel 0.28 in, AUCSS 1.95e+03 ng·h/mL, AUC/dose 2.04e+03 microg l(-1) h, kabs 0.095 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has none, the second reading 1952; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

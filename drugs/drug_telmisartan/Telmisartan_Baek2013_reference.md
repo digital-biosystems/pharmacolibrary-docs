@@ -164,20 +164,20 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_cmax | reference | fail | 0.0087 | 8.901e-05 | 0.0102 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00121 | 8.901e-05 | 0.0736 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00268 | 8.901e-05 | 0.0332 | μg/ mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00413 | 8.901e-05 | 0.0216 | μg/mL→SI vs simulated kg/m3 |
-| T1_t_half_beta | reference | fail | 10.63 | 160.7 | 15.12 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 7.43 | 160.7 | 21.63 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 5.31 | 160.7 | 30.27 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3 | 160.7 | 53.57 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 6 | 160.7 | 26.78 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 24 | 160.7 | 6.696 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 5.43 | 160.7 | 29.6 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.8 | 0.3573 | 0.4466 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1.83 | 0.3573 | 0.1952 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1.8 | 0.3573 | 0.1985 | h→SI vs simulated h |
+| T1_cmax | reference | fail | 0.0087 | 8.901e-05 | 0.0102 | reported 8.7 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00121 | 8.901e-05 | 0.0736 | reported 1.21 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00268 | 8.901e-05 | 0.0332 | reported 2.68 μg/ mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00413 | 8.901e-05 | 0.0216 | reported 4.13 μg/mL→SI vs simulated kg/m3 |
+| T1_t_half_beta | reference | fail | 10.63 | 160.7 | 15.12 | reported 10.63 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 7.43 | 160.7 | 21.63 | reported 7.43 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 5.31 | 160.7 | 30.27 | reported 5.31 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3 | 160.7 | 53.57 | reported 3.0 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 6 | 160.7 | 26.78 | reported 6.0 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 24 | 160.7 | 6.696 | reported 24.0 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 5.43 | 160.7 | 29.6 | reported 5.43 h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.8 | 0.3573 | 0.4466 | reported 0.8 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.83 | 0.3573 | 0.1952 | reported 1.83 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1.8 | 0.3573 | 0.1985 | reported 1.8 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

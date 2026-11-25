@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected for metabolite connectivity; diltiazem’s 72% urinary-radioactivity figure is an abstract summary recorded as unchanged-drug excretion.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="diltiazem" model-id="Diltiazem_Hglund1989_reference" status="rejected" stale="false" population="healthy middle-aged volunteers" measured-compound="diltiazem" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -45,13 +45,13 @@ Höglund P, Nilsson LG. Pharmacokinetics of diltiazem and its metabolites after 
 
 ### Reviewer guidance
 
-**The record was rejected for metabolite connectivity; diltiazem’s 72% urinary-radioactivity figure is an abstract summary recorded as unchanged-drug excretion.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The stated rejection is an unreachable or orphan metabolite, although the listed links connect N-demethyldeacetyldiltiazem through N-demethyldiltiazem and deacetyldiltiazem; the second reader instead linked it directly from diltiazem. The paper was read from its abstract alone, so its summary statistics stood in for a fitted model. The 72% value is labeled cumulative urinary excretion of radioactivity, while its recorded meaning is the fraction excreted unchanged. Extracted — diltiazem: t1/2z 6.27 h, fe 72 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — diltiazem: t1/2z 6.27 h, fe 72 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diltiazem, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

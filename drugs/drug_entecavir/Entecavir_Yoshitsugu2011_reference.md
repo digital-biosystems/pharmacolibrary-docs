@@ -8,7 +8,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="entecavir" model-id="Entecavir_Yoshitsugu2011_reference" status="needs_review" stale="false" population="Japanese patients with chronic hepatitis B" measured-compound="entecavir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="entecavir" model-id="Entecavir_Yoshitsugu2011_reference" status="needs_review" stale="false" population="Japanese chronic hepatitis B patients" measured-compound="entecavir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Yoshitsugu H, Sakurai T, Ishikawa H, Roy A, Bifano M, Pfister M et al. Pooled model-based approach to compare the pharmacokinetics of entecavir between Japanese and non-Japanese chronic hepatitis B patients. Diagnostic microbiology and infectious disease 70(1):91–100 (2011).
@@ -16,7 +16,7 @@ Yoshitsugu H, Sakurai T, Ishikawa H, Roy A, Bifano M, Pfister M et al. Pooled mo
 
 ## Population and dosing
 
-**Population:** Japanese patients with chronic hepatitis B · condition chronic hepatitis B · n = 142.
+**Population:** Japanese chronic hepatitis B patients · condition chronic hepatitis B · age group adult.
 
 ## Model
 
@@ -30,12 +30,11 @@ Yoshitsugu H, Sakurai T, Ishikawa H, Roy A, Bifano M, Pfister M et al. Pooled mo
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| oral clearance | CL/F | 26.4 | L/h |
-| ICrCL | equation variable | 100 | mL/min |
+| population average of oral clearance in a typical patient with a reference ICrCL value of 100 mL/min | CL/F | 26.4 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667), qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,8 +56,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| oral clearance | `Q27` · CL/F | 26.4 | L/h | 7.333e-06 | m3/s | l/h | exact (1) | Yoshitsugu_2011:abstract |
-| ICrCL | `Q900` · equation variable | 100 | mL/min |  |  | ml/min | llm (0.6) | Yoshitsugu_2011:abstract |
+| population average of oral clearance in a typical patient with a reference ICrCL value of 100 mL/min | `Q27` · CL/F | 26.4 | L/h | 7.333e-06 | m3/s | l/h | llm_confirmed (0.6) | Yoshitsugu_2011:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -70,25 +68,26 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=entecavir
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Yoshitsugu_2011_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Yoshitsugu_2011_metadata.yaml (1 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
 | `qwen3.8-27b` | not confirmed | 0.5 (3/6 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[oral clearance]` |  | 26.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[population average of oral clearance in a typical patient with a reference icrcl value of 100]` | 26.4 |  | only_one_extracted |
 | `qwen3.8-27b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `qwen3.8-27b` | `parameters[icrcl]` | 100 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[oral clearance]` | 26.4 |  | only_one_extracted |
@@ -145,4 +144,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bentecavir%5D%20Entecavir_Yoshitsugu2011_reference&body=Drug%3A%20entecavir%0ARecord%3A%20Entecavir_Yoshitsugu2011_reference%0APaper%3A%20Yoshitsugu_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_entecavir/Entecavir_Yoshitsugu2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 20:55 UTC</sub>

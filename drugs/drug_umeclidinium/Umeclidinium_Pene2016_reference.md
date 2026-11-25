@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The umeclidinium absorption rate constant was recorded with an invalid unit dimension, causing a dimensional mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit units ([luminosity] / [length] ** 2) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Pene2016_reference" status="rejected" stale="false" population="healthy males" measured-compound="umeclidinium" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Pene Dumitrescu T, Santos LL, Hughes SC, Pereira AI, Young GC, Hussey E et al. A
 
 ### Reviewer guidance
 
-**The umeclidinium absorption rate constant was recorded with an invalid unit dimension, causing a dimensional mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit units ([luminosity] / [length] ** 2) vs 1 / [time].**
 
-The absorption rate constant is specified as 0.0934 with the unit 'units' instead of a time-based reciprocal. This conflicts with the required first-order rate constant dimension of inverse time. The unconvertible unit prevented the parameter from being expressed in standard SI units, causing the model to be held back. Extracted — umeclidinium: V1 7.56 L, CL 55 L/h, V2 195 L, Q 40.9 L/h, kabs 0.0934 units, Fab 0.312, tlag 10.6 h.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — umeclidinium: V1 7.56 L, CL 55 L/h, V2 195 L, Q 40.9 L/h, kabs 0.0934 units, Fab 0.312, tlag 10.6 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper describes cotadutide, not dulaglutide, so the extracted PK parameters do not belong to the intended drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="dulaglutide" model-id="Dulaglutide_Yu2024_reference" status="rejected" stale="false" population="" measured-compound="dulaglutide" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Yu H, Ueckert S, Zhou L, Cheng J, Robertson D, Hansen L et al. Exposure-response
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper describes cotadutide, not dulaglutide, so the extracted PK parameters do not belong to the intended drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The failed analyte identity check confirmed the study subject was cotadutide, a dual GLP-1/glucagon agonist, rather than dulaglutide. Consequently, the reported CL/F (1.05 L/h) and V/F (20.0 L) values cannot be attributed to dulaglutide. The model builder also assumed F=1 and Fm=1 without explicit estimates. Extracted — dulaglutide: CL/F 1.05 L/h, V/F 20 L, kabs 0.38 h−1.
+Extracted — dulaglutide: CL/F 1.05 L/h, V/F 20 L, kabs 0.38 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q56: this record has 24, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

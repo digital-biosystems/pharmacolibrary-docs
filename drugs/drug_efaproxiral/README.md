@@ -37,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 23:04 | 0:22 | 0/0/0 | 2/0/0 | 0/0/0 | 17,361/1,983 | openai / gpt-6-luna | 2 | 1/1 | 1/1 | 0 |
+| 2026-11-23 12:02 | 0:04 | 0/0/0 | 2/0/0 | 0/0/0 | 4,021/156 | einfracz / qwen3.8-27b | 2 | 1/1 | 1/1 | 0 |
 
 ## Coverage
 
@@ -51,7 +51,8 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Cione_2021 | irrelevant | 0 | 0 | This is an in vitro activity study reporting EC50 values, not efaproxiral disposition parameters. |
-| popPK | Venitz_2007 | irrelevant | 1 | 0 | This discusses efaproxiral biomarkers and PK/PD scaling but provides no quantitative disposition parameters. |
+| popPK | Venitz_2007 | relevant | 3 | 0 | The paper discusses the use of biomarkers and PK/PD modeling for efaproxiral in development, but the provided evidence contains no specific numeric PK parameter values (CL, V, t1/2, etc.). |
+| PGx | Venitz_2007 | not_relevant | 0 | 0 | The text discusses pharmacodynamic biomarkers for efaproxiral but does not report any pharmacogenomic effects. |
 
 
 </details>

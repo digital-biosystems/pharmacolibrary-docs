@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Gabapentin Km unit mg/kg conflicts with dimensional mass/volume requirements for a one-compartment model.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit mg/kg ([mass]) vs [mass] / [length] ** 3; Q66 unit mg/h∙kg ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Larsen2016_reference" status="rejected" stale="false" population="rats with CFA-induced inflammatory hyperalgesia" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Larsen MS, Keizer R, Munro G, Mørk A, Holm R, Savic R et al. Pharmacokinetic/Ph
 
 ### Reviewer guidance
 
-**Gabapentin Km unit mg/kg conflicts with dimensional mass/volume requirements for a one-compartment model.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit mg/kg ([mass]) vs [mass] / [length] ** 3; Q66 unit mg/h∙kg ([mass] / [time]) vs [mass] / [time].**
 
-The parameter Km is assigned 44.1 mg/kg, creating a dimension mismatch between mass and mass-per-volume. Additionally, the source text is abstract-only, meaning summary statistics substitute for fitted model parameters. A second reader failed to extract values for CL, kabs, and tlag. Extracted — gabapentin: Km 44.1 mg/kg, Vmax 41.9 mg/h∙kg, CL 161 mL/kg/hr, kabs 5.24 1/hr, tlag 0.45 hr.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — gabapentin: Km 44.1 mg/kg, Vmax 41.9 mg/h∙kg, CL 161 mL/kg/hr, kabs 5.24 1/hr, tlag 0.45 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 160.67, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

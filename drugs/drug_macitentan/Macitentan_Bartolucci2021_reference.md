@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The macitentan record lacks the metabolite's specific pharmacokinetic parameters and uses an incorrect model structure for the measured parent drug.
+> T3_output_variable; t3_topology_template (+1 more).
 
 <div class="pk-model-meta" hidden drug="macitentan" model-id="Macitentan_Bartolucci2021_reference" status="rejected" stale="false" population="healthy adults and adult subjects with pulmonary arterial hypertension" measured-compound="macitentan" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -51,13 +51,13 @@ Bartolucci R, Dosne AG, Csonka D, Pérez-Ruixo JJ, Magni P, Poggesi I. A Populat
 
 ### Reviewer guidance
 
-**The macitentan record lacks the metabolite's specific pharmacokinetic parameters and uses an incorrect model structure for the measured parent drug.**
+**T3_output_variable; t3_topology_template (+1 more).**
 
-The parent metabolite structure requires a different model topology than the single central compartment used here, leading to the refusal. The record is missing distinct values for the metabolite's time to maximum concentration and steady-state time, while the parent's parameters are ambiguous due to abstract-only sourcing. The model builder defaulted the lag time to zero and assumed complete bioavailability, which further compromises the validity of the fitted model. Extracted — macitentan: tmax 9 h, tss 3 days, V/F 34 L, CL 1.39 L/h, kabs 13.9 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — macitentan: tmax 9 h, tss 3 days, V/F 34 L, CL 1.39 L/h, kabs 13.9 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has macitentan, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -154,7 +154,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.308, 0 of 1 reader(s) agree | 0.308 | cross-check disputed by a second reader: verdict disputed, agreement 0.308, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.308 (4 of 13 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.308 | cross-check contradicted by a second reader: verdict disputed; agreement 0.308 (4 of 13 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

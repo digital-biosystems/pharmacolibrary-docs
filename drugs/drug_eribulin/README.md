@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [van_2013_ANC](drugs/drug_eribulin/pd_van_2013_ANC.md) | absolute neutrophil counts ← eribulin · disease-progression model | — | van Hasselt JG et al., Population pharmacokinetic-pharmacodyna…, British journal of clinical… (2013) | [10.1111/bcp.12143](https://doi.org/10.1111/bcp.12143) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [van_2013_ANC](drugs/drug_eribulin/pd_van_2013_ANC.md) | absolute neutrophil counts ← eribulin · disease-progression model | — | van Hasselt JG et al., Population pharmacokinetic-pharmacodyna…, British journal of clinical… (2013) | [10.1111/bcp.12143](https://doi.org/10.1111/bcp.12143) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 20:43 | 0:16 | 0/0/0 | 1/0/0 | 0/0/0 | 14,099/1,288 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
+| 2026-10-06 20:43 | 0:16 | 0/0/0 | 0/1/0 | 0/0/0 | 14,099/1,288 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 

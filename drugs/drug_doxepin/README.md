@@ -21,21 +21,21 @@ Doxepin is a tricyclic antidepressant used for depression, anxiety, chronic hive
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | doxepin | parent | 279.376 | C19H21NO | DrugBank | [667468](https://pubchem.ncbi.nlm.nih.gov/compound/667468) | Kirchheiner_2002 |
+| E-doxepin | metabolite | 279.383 | C19H21NO | PubChem | [667477](https://pubchem.ncbi.nlm.nih.gov/compound/667477) | Kirchheiner_2002 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Kirchheiner_2002_reference](drugs/drug_doxepin/Doxepin_Kirchheiner2002_reference.md) | — | general linear (no model) | 2 | Kirchheiner J et al., Contributions of CYP2D6, CYP2C9 and CYP…, Pharmacogenetics (2002) | [10.1097/00008571-200210000-00010](https://doi.org/10.1097/00008571-200210000-00010) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Kirchheiner_2002_reference](drugs/drug_doxepin/Doxepin_Kirchheiner2002_reference.md) | — | parent + metabolite (no model) | 3 | Kirchheiner J et al., Contributions of CYP2D6, CYP2C9 and CYP…, Pharmacogenetics (2002) | [10.1097/00008571-200210000-00010](https://doi.org/10.1097/00008571-200210000-00010) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Li_2019_Kv_currents](drugs/drug_doxepin/pd_Li_2019_Kv_currents.md) | Vascular Kv currents ← doxepin · direct sigmoid Emax (Hill) effect | — | Li H et al., Inhibitory Effect of Tricyclic Antidepr…, Cardiovascular toxicology (2019) | [10.1007/s12012-019-09519-8](https://doi.org/10.1007/s12012-019-09519-8) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Li_2019_Kv_currents](drugs/drug_doxepin/pd_Li_2019_Kv_currents.md) | voltage-dependent K+ currents ← doxepin · direct sigmoid Emax (Hill) effect | — | Li H et al., Inhibitory Effect of Tricyclic Antidepr…, Cardiovascular toxicology (2019) | [10.1007/s12012-019-09519-8](https://doi.org/10.1007/s12012-019-09519-8) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Meyer_2012_cAMP](drugs/drug_doxepin/pd_Meyer_2012_cAMP.md) | cAMP accumulation ← doxepin · inhibition effect | — | Meyer JM et al., A "genome-to-lead" approach for insecti…, PLoS neglected tropical dis… (2012) | [10.1371/journal.pntd.0001478](https://doi.org/10.1371/journal.pntd.0001478) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Meyer_2012_cAMP_2](drugs/drug_doxepin/pd_Meyer_2012_cAMP_2.md) | cAMP accumulation ← doxepin · inhibition effect | — | Meyer JM et al., A "genome-to-lead" approach for insecti…, PLoS neglected tropical dis… (2012) | [10.1371/journal.pntd.0001478](https://doi.org/10.1371/journal.pntd.0001478) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Claro_1986_3H_inositol_1_phosphate_accumulation](drugs/drug_doxepin/pd_Claro_1986_3H_inositol_1_phosphate_accumulation.md) | [3H]inositol 1-phosphate accumulation ← doxepin · inhibition effect | — | Claro E et al., Phosphoinositide hydrolysis mediated by…, European journal of pharmac… (1986) | [10.1016/0014-2999(86)90659-x](https://doi.org/10.1016/0014-2999(86)90659-x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ Doxepin is a tricyclic antidepressant used for depression, anxiety, chronic hive
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:42 | 3:41 | 0/1/0 | 3/1/0 | 0/0/0 | 74,805/17,275 | openai / gpt-6-luna | 15 | 0/1 | 1/0 | 0 |
+| 2026-11-23 21:31 | 0:03 | 0/1/0 | 3/0/0 | 0/0/0 | 3,239/155 | einfracz / qwen3.8-27b | 15 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -58,35 +58,31 @@ Doxepin is a tricyclic antidepressant used for depression, anxiety, chronic hive
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Kirchheiner_2002.pdf` | Kirchheiner J et al., Contributions of CYP2D6, CYP2C9 and CYP…, Pharmacogenetics (2002) | popPK | 10 | [10.1097/00008571-200210000-00010](https://doi.org/10.1097/00008571-200210000-00010) | [12360109](https://pubmed.ncbi.nlm.nih.gov/12360109) | Reports quantitative doxepin clearances and population-PK analysis in healthy volunteers. |
-| `Meyer-Barner_2002.pdf` | Meyer-Barner M et al., Pharmacokinetics of doxepin and desmeth…, European journal of clinica… (2002) | popPK | 10 | [10.1007/s00228-002-0448-3](https://doi.org/10.1007/s00228-002-0448-3) | [12136371](https://pubmed.ncbi.nlm.nih.gov/12136371) | Human population-PK model, but numeric CL/F and V/F estimates are absent; only a 15% CL reduction is reported. |
-| `Yan_2002_2.pdf` | Yan JH et al., Absolute bioavailability and stereosele…, Xenobiotica; the fate of fo… (2002) | popPK | 10 | [10.1080/00498250210131879](https://doi.org/10.1080/00498250210131879) | [12162857](https://pubmed.ncbi.nlm.nih.gov/12162857) | The human study models doxepin disposition, but the evidence gives no numeric model parameters beyond the absorbed fraction. |
-
-<sub>queue written 2026-10-07 14:39 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Claro_1986 | irrelevant | 0 | 0 | Doxepin is only an H1-receptor antagonist here; no pharmacokinetic parameters are reported. |
-| popPK | Li_2019 | irrelevant | 0 | 0 | This is an in-vitro ion-channel study and reports no doxepin pharmacokinetic parameters. |
-| popPK | Meyer-Barner_2002 | relevant | 10 | 2 | Human population-PK model, but numeric CL/F and V/F estimates are absent; only a 15% CL reduction is reported. |
+| popPK | Claro_1986 | irrelevant | 0 | 0 | The study is an in vitro mechanistic receptor binding/phosphoinositide assay where doxepin is used as a pharmacological antagonist, not a PK study. |
+| PGx | Claro_1986 | not_relevant | 0 | 0 | The paper reports in vitro receptor binding and pharmacological data for doxepin, not a pharmacogenomic effect on a PK or PD parameter in humans. |
+| popPK | Li_2019 | irrelevant | 0 | 0 | The study reports pharmacological mechanism (K+ channel inhibition) and IC50 values, not population pharmacokinetic parameters like clearance or volume. |
+| PGx | Li_2019 | not_relevant | 0 | 0 | The paper investigates the direct pharmacodynamic effect of doxepin on Kv channels in rabbit cells and does not report any gene variant or genotype. |
+| popPK | Meyer-Barner_2002 | relevant | 10 | 3 | The study reports a population PK model for doxepin, but the specific numeric parameter estimates (CL/F, V/F values) are not present in the provided abstract/text evidence. |
+| PGx | Meyer-Barner_2002 | not_relevant | 0 | 0 | The study investigates demographic covariates (age, weight) and drug interactions but does not report any gene variant, genotype, or phenotype effects on PK parameters. |
 | popPK | Meyer_2012 | irrelevant | 0 | 0 | The paper reports doxepin receptor activity and mosquito toxicity, but no pharmacokinetic disposition parameters. |
-| popPK | Mochizuki_2004 | irrelevant | 1 | 0 | Doxepin is a PET tracer for receptor measurement, and no numeric doxepin disposition parameters are provided. |
-| popPK | Mochizuki_2004_2 | irrelevant | 2 | 0 | Doxepin is used as a PET receptor-imaging tracer, and no numeric disposition parameter values are provided. |
-| popPK | Pancrazio_1998 | irrelevant | 0 | 0 | This in-vitro ion-channel study reports no quantitative doxepin disposition parameters. |
-| popPK | Yan_2002_2 | relevant | 10 | 4 | The human study models doxepin disposition, but the evidence gives no numeric model parameters beyond the absorbed fraction. |
-| popPK | Yanai_1991 | irrelevant | 0 | 0 | Doxepin is only a PET tracer, and no quantitative doxepin disposition parameters are reported. |
+| popPK | Mochizuki_2004 | irrelevant | 0 | 0 | The study is a PET imaging study focusing on histamine H1 receptor quantification, not a pharmacokinetic study reporting disposition parameters for doxepin. |
+| PGx | Mochizuki_2004 | not_relevant | 0 | 0 | The study focuses on PET modeling of doxepin as a radioligand to measure histamine receptors, not on pharmacogenomic effects on doxepin's PK/PD. |
+| popPK | Mochizuki_2004_2 | irrelevant | 4 | 0 | The study focuses on receptor binding (distribution volume/DV) using a two-compartment model, which is a compartmental model, but it lacks explicit quantitative disposition parameters like CL or V, and no numeric values are provided in the text. |
+| PGx | Mochizuki_2004_2 | not_relevant | 0 | 0 | The study focuses on developing a PET imaging method for histamine H1 receptors and does not investigate genetic variants or their effects on doxepin pharmacokinetics or pharmacodynamics. |
+| popPK | Pancrazio_1998 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of sodium channel inhibition, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Pancrazio_1998 | not_relevant | 0 | 0 | The study investigates the mechanism of action of doxepin on neuronal sodium channels in an in vitro setting, not the effect of genetic variants on its pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Yan_2002_2 | relevant | 10 | 2 | The paper reports pharmacokinetic parameters (Vd, half-life, clearance, absorption fraction) for doxepin in humans, but the specific numeric values for volume and clearance are described qualitatively (e.g., "large", "short") rather than listed in the provided text. |
+| PGx | Yan_2002_2 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics of doxepin in healthy volunteers but does not report any genetic variants or genotypes affecting PK parameters. |
+| popPK | Yanai_1991 | irrelevant | 0 | 0 | Doxepin is used as a PET tracer for H1-receptor imaging, not as the subject of a pharmacokinetic study reporting disposition parameters. |
+| PGx | Yanai_1991 | not_relevant | 0 | 0 | The paper uses doxepin as a PET tracer for histamine H1-receptor imaging and does not report pharmacogenomic effects on its PK/PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxepin%5D&body=Drug%3A%20doxepin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxepin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 14:39 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 21:29 UTC</sub>

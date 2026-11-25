@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because abstract-only source lacks structural parameters, causing dimension mismatches for V2/F and CL/F, and leaving the peripheral compartment unreachable.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Goyal2014_reference" status="rejected" stale="false" population="patients with COPD" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Goyal2014_reference" status="rejected" stale="false" population="patients with COPD" measured-compound="umeclidinium" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Goyal N, Beerahee M, Kalberg C, Church A, Kilbride S, Mehta R. Population pharmacokinetics of inhaled umeclidinium and vilanterol in patients with chronic obstructive pulmonary disease. Clinical pharmacokinetics 53(7):637–648 (2014).
@@ -17,13 +17,15 @@ Goyal N, Beerahee M, Kalberg C, Church A, Kilbride S, Mehta R. Population pharma
 
 ## Population and dosing
 
-**Population:** patients with COPD · condition COPD · age group adult · n = 1635.
+**Population:** patients with COPD · condition chronic obstructive pulmonary disease · age group adult · n = 1635.
+
+**Dosed compound ≠ measured compound:** dosed umeclidinium/vilanterol, measured umeclidinium.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** CL/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 2 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -31,13 +33,13 @@ Goyal N, Beerahee M, Kalberg C, Church A, Kilbride S, Mehta R. Population pharma
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| 10 % increase in bodyweight → increase in umeclidinium V 2/F | V2/F | 6 | % |
-| 10 % increase in age → decrease in umeclidinium CL/F | CL/F | 7 | % |
-| 10 % decrease in CLCR → decrease in umeclidinium CL/F | equation variable | 3 | % |
+| apparent inhaled clearance (CL/F) | CL/F | 218 | L/h |
+| volume of distribution of central compartment (V 2/F) | V1 | 1160 | L |
+| V 2/F | V2/F | 268 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.273). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,68 +49,57 @@ Goyal N, Beerahee M, Kalberg C, Church A, Kilbride S, Mehta R. Population pharma
 
 ### Reviewer guidance
 
-**Record rejected because abstract-only source lacks structural parameters, causing dimension mismatches for V2/F and CL/F, and leaving the peripheral compartment unreachable.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record was built from the abstract alone, so summary statistics stood in for a fitted model, resulting in no base parameter values. The extracted values of 6 and 7 percent were assigned to structural parameters V2/F and CL/F, causing a dimension mismatch as percentages are dimensionless while these parameters require volume or clearance units. Additionally, the model structure left the peripheral compartment unreachable from the dose. Extracted — umeclidinium: V2/F 6 %, CL/F 7 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — umeclidinium: CL/F 218 L/h, V1 1.16e+03 L, V2/F 268 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has umeclidinium, the second reading umeclidinium, vilanterol; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has umeclidinium/vilanterol, the second reading umeclidinium; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | unit_canonical | link | source |
-|---|---|---|---|---|---|---|
-| 10 % increase in bodyweight → increase in umeclidinium V 2/F | `Q82` · V2/F | 6 | % | % | llm (0.6) | Goyal_2014:abstract |
-| 10 % increase in age → decrease in umeclidinium CL/F | `Q27` · CL/F | 7 | % | % | llm_confirmed (0.6) | Goyal_2014:abstract |
-| 10 % decrease in CLCR → decrease in umeclidinium CL/F | `Q900` · equation variable | 3 | % | % | llm_corrected (0.6) | Goyal_2014:abstract |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| apparent inhaled clearance (CL/F) | `Q27` · CL/F | 218 | L/h | 6.056e-05 | m3/s | l/h | llm_corrected (0.6) | Goyal_2014:abstract, Goyal_2014:abstract, Goyal_2014:abstract, Goyal_2014:abstract, Goyal_2014:abstract |
+| volume of distribution of central compartment (V 2/F) | `Q63` · V1 | 1160 | L | 1.16 | m3 | l | boundary_compartment (0.9) | Goyal_2014:abstract, Goyal_2014:abstract |
+| V 2/F | `Q82` · V2/F | 268 | L | 0.268 | m3 | l | space_fold (0.95) | Goyal_2014:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- covariate category for CL/F from footnote/prose kept as documentation only (['Goyal_2014:abstract'])
-- covariate category for V2/F from footnote/prose kept as documentation only (['Goyal_2014:abstract'])
-- covariate bodyweight for allometric_exponent from footnote/prose kept as documentation only (['Goyal_2014:abstract'])
-- covariate bodyweight for CL/F from footnote/prose kept as documentation only (['Goyal_2014:abstract'])
-- unit_dimension_mismatch: '10 % increase in bodyweight → increase in umeclidinium V 2/F' → Q82 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- unit_dimension_mismatch: '10 % increase in age → decrease in umeclidinium CL/F' → Q27 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: '10 % increase in age → decrease in vilanterol CL/F' → Q27 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q27 ('10 % increase in age → decrease in vilanterol CL/F', value 4) — already have one for this compound
+- dropped value-less row: 'patient demographics and baseline characteristics'
+- dropped unlinked row (NIL): 'umeclidinium' — extend the ontology if this is a real PK parameter (source ['Goyal_2014:abstract', 'Goyal_2014:abstract'])
+- dropped unlinked row (NIL): 'vilanterol' — extend the ontology if this is a real PK parameter (source ['Goyal_2014:abstract', 'Goyal_2014:abstract'])
+- dropped duplicate Q27 ('CL/F', value 40.9) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=umeclidinium
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Goyal_2014_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Goyal_2014_metadata.yaml (14 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.273 (3/11 fields) | 8 |
+| `gpt-oss-120b` | not confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[10 % decrease in clcr - decrease in umeclidinium cl/f]` | 3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[10 % increase in age - decrease in umeclidinium cl/f]` | 7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[10 % increase in bodyweight - increase in umeclidinium v 2/f]` | 6 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` |  | 218 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[umeclidinium observations]` |  | 8498 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[umeclidinium patients]` |  | 1635 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v 2/f]` |  | 1160 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | umeclidinium | umeclidinium, vilanterol | mismatch |
+| `gpt-oss-120b` | `parameters[10 % increase in bodyweight will result in a 6 % increase in umeclidinium v 2/f]` |  | 6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 2/f]` | 268 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution of central compartment]` | 1160 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | umeclidinium/vilanterol | umeclidinium | mismatch |
 
 </details>
 
@@ -122,13 +113,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Goyal_2014:abstract'] |
-| C5_dimension_Q82 | fail | [length] ** 3 | % (dimensionless) | ['Goyal_2014:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Goyal_2014:abstract', 'Goyal_2014:abstract', 'Goyal_2014:abstract', 'Goyal_2014:abstract', 'Goyal_2014:abstract'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Goyal_2014:abstract', 'Goyal_2014:abstract'] |
+| C5_dimension_Q82 | pass | [length] ** 3 |  | ['Goyal_2014:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | fail |  |  |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 218 L/h | ['Goyal_2014:abstract', 'Goyal_2014:abstract', 'Goyal_2014:abstract', 'Goyal_2014:abstract', 'Goyal_2014:abstract'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.16e+03 L | ['Goyal_2014:abstract', 'Goyal_2014:abstract'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 268 L | ['Goyal_2014:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -152,4 +147,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bumeclidinium%5D%20Umeclidinium_Goyal2014_reference&body=Drug%3A%20umeclidinium%0ARecord%3A%20Umeclidinium_Goyal2014_reference%0APaper%3A%20Goyal_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_umeclidinium/Umeclidinium_Goyal2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:14 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:50 UTC</sub>

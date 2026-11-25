@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The bioavailability fraction (F) is missing, forcing reliance on library defaults unsupported by the paper.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Benn2017_reference" status="needs_review" stale="false" population="paediatric oncology patient" measured-compound="azithromycin" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Benn K, Salman S, Page-Sharp M, Davis TME, Buttery JP. Bradycardia and Hypotherm
 
 ### Reviewer guidance
 
-**The bioavailability fraction (F) is missing, forcing reliance on library defaults unsupported by the paper.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record lacks an extracted value for the bioavailability fraction, meaning the model relied on generic placeholders rather than study-specific data. The second reader disputed the identification of the dose compound and primary analyte, both marked as 'unknown'. Additionally, the reader disagreed on the presence of the absorption rate constant and lag time, suggesting potential extraction errors. Extracted — azithromycin: CL 18.1 L/h, V1 305 L, Q 46.2 L/h, V2 451 L, t1/2α 2.4 h, t1/2z 33 h, AUC∞ 18.8 μg.h/L, kabs 0.71 1/h, … (+1).
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (AUC∞), so that value has no SI equivalent. Extracted — azithromycin: CL 18.1 L/h, V1 305 L, Q 46.2 L/h, V2 451 L, t1/2α 2.4 h, t1/2z 33 h, AUC∞ 18.8 μg.h/L, kabs 0.71 1/h, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has azithromycin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -167,7 +167,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.6, 0 of 1 reader(s) agree | 0.6 | cross-check disputed by a second reader: verdict disputed, agreement 0.6, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.6 (9 of 15 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.6 | cross-check contradicted by a second reader: verdict disputed; agreement 0.6 (9 of 15 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

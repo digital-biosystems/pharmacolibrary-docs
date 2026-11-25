@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant fentanyl value 4.8 was rejected due to a unit dimension conflict with time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ka ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Kokubun2012_reference" status="rejected" stale="false" population="adults with cancer-related pain" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Kokubun H, Ebinuma K, Matoba M, Takayanagi R, Yamada Y, Yago K. Population pharm
 
 ### Reviewer guidance
 
-**The absorption rate constant fentanyl value 4.8 was rejected due to a unit dimension conflict with time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ka ([time]) vs 1 / [time].**
 
-The extraction assigned a unit that conflicts with the required dimension for an absorption rate constant. This dimensional mismatch caused the validation check to fail for the parameter. Additionally, a negative value of -3.6 was recorded for an unexplained structural variable, which the second reader did not confirm. Extracted — fentanyl: kabs 4.8 ka, CL 83.7 ml/min/kg, V 270 litre.
+A reported unit could not be converted (kabs and equation variable), so that value has no SI equivalent. Extracted — fentanyl: kabs 4.8 ka, CL 83.7 ml/min/kg, V 270 litre.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θ3: this record has -3.6, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

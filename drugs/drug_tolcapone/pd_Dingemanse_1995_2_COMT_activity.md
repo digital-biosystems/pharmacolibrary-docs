@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N04B&quot;,&quot;href&quot;:&quot;atc/N04B.md&quot;},{&quot;label&quot;:&quot;tolcapone&quot;,&quot;href&quot;:&quot;drugs/drug_tolcapone/&quot;},{&quot;label&quot;:&quot;Dingemanse_1995_2 \u00b7 PD COMT activity in erythrocytes&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolcapone_Jorga2000_final_non_fluctuator_model_final_estimat&quot;,&quot;label&quot;:&quot;Jorga_2000_final_non_fluctuator_model_final_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolcapone/Tolcapone_Jorga2000_final_non_fluctuator_model_final_estimat.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tolcapone_Jorga2000_non_fluctuator_model_s_e_of_the_estimate&quot;,&quot;label&quot;:&quot;Jorga_2000_non_fluctuator_model_s_e_of_the_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tolcapone/Tolcapone_Jorga2000_non_fluctuator_model_s_e_of_the_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # COMT activity in erythrocytes — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
@@ -13,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Tolcapone (concentrations from the PK model of Jorga_2000::fluctuator_model) drives COMT activity in erythrocytes: direct Emax (saturable) effect.
+**As extracted:** Tolcapone (concentrations from this paper's PK model) drives COMT activity in erythrocytes: direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
@@ -23,7 +24,7 @@
 
 - **paper:** `Dingemanse_1995_2`
 - **model family:** `emax`
-- **driver:** `cited_pk`
+- **driver:** `pk_record`
 - **tier:** descriptive
 - **effect:** inhibition/unknown
 
@@ -36,7 +37,7 @@ _No resolved parameters._
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|

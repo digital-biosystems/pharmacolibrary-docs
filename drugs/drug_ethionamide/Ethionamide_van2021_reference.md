@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper studies lamivudine and abacavir, not ethionamide, and the model lacks explicit estimates for bioavailability and lag time.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_van2021_reference" status="rejected" stale="false" population="" measured-compound="ethionamide" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ van der Laan LE, Garcia-Prats AJ, Schaaf HS, Winckler JL, Draper H, Norman J et 
 
 ### Reviewer guidance
 
-**The paper studies lamivudine and abacavir, not ethionamide, and the model lacks explicit estimates for bioavailability and lag time.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source text describes a study on lamivudine and abacavir pharmacokinetics, where ethionamide is mentioned only as a co-medication. Consequently, the extracted clearance, volume, and intercompartmental parameters are not valid for the target drug. The model builder also relied on default values for bioavailability and lag time instead of providing explicit estimates. Extracted — ethionamide: CL 10.8 L/h, V1 26.5 L, V2 69.8 L, Q 2.25 L/h, kabs 1.07 1/h.
+Extracted — ethionamide: CL 10.8 L/h, V1 26.5 L, V2 69.8 L, Q 2.25 L/h, kabs 1.07 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 10.8, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.647, 0 of 1 reader(s) agree | 0.647 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.647 (11 of 17 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.647 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

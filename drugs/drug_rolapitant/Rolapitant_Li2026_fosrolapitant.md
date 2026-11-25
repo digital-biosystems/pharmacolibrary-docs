@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Rolapitant PK record was quarantined because clearance, volume, ka, and lag time lacked values, forcing placeholder defaults.
+> No value for rolapitant's clearance, volume of distribution, absorption rate constant and absorption lag time; t3_topology_template (+2 more).
 
 <div class="pk-model-meta" hidden drug="rolapitant" model-id="Rolapitant_Li2026_fosrolapitant" status="model_quarantined" stale="false" population="Chinese subjects with impaired or normal liver function" measured-compound="rolapitant" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Li Q, Mai J, Wu M, Zhang H, Yang X, Huang Y et al. Pharmacokinetics, safety, and
 
 ### Reviewer guidance
 
-**Rolapitant PK record was quarantined because clearance, volume, ka, and lag time lacked values, forcing placeholder defaults.**
+**No value for rolapitant's clearance, volume of distribution, absorption rate constant and absorption lag time; t3_topology_template (+2 more).**
 
-The record lists apparent metabolite parameters (CLm/F 21.98 L/h, Vm/F 13.64 L) but lacks explicit values for parent drug clearance, volume, ka, or Tlag. These missing values were replaced by library placeholders, violating requirements for explicit estimates. A second reader disputed the model structure and parameter assignments, reporting 0.0 agreement. Extracted — rolapitant: Cmax 1.07e+04 ng/mL, AUCt 1.03e+04 h*ng/mL, AUC∞ 1.03e+04 h*ng/mL, t1/2z 0.42 hour, Vm/F 13.6 L, CLm/F 22 L/h.
+The model was built, but rolapitant's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (Cmax, AUCt and AUC∞), so that value has no SI equivalent. Extracted — rolapitant: Cmax 1.07e+04 ng/mL, AUCt 1.03e+04 h*ng/mL, AUC∞ 1.03e+04 h*ng/mL, t1/2z 0.42 hour, Vm/F 13.6 L, CLm/F 22 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fosrolapitant, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -164,7 +164,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.0 (0 of 16 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0 | cross-check contradicted by a second reader: verdict disputed; agreement 0.0 (0 of 16 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 1.27 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 0.61 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 0.74 |  |  | no simulated metric for this quantity (single reference sim) |
@@ -173,7 +173,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T1_t_half_terminal | reference | skipped | 81.8 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 44.32 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 0.5 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_tmax | reference | skipped | 1.00–1.25 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 240 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 192 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_tmax | reference | skipped | 1 |  |  | no simulated metric for this quantity (single reference sim) |

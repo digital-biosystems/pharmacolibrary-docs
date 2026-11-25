@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> The oral absorption rate constant (ka) for potassium salicylate was left at library defaults instead of using a value from the paper.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Buntenktter2017_reference" status="needs_review" stale="false" population="" measured-compound="potassium_salicylate" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Buntenkötter K, Osmers M, Schenk I, Schänzer W, Machnik M, Düe M et al. Pharm
 
 ### Reviewer guidance
 
-**The oral absorption rate constant (ka) for potassium salicylate was left at library defaults instead of using a value from the paper.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The source text provides no explicit estimate for ka or Tlag, forcing the use of placeholder defaults that do not reflect the specific study. A second reader disagreed with the primary record, assigning the clearance value of 82.2 ml/h/kg to a different parameter field and leaving the expected field null. The model builder also assumed bioavailability (F=1) and molar efficiency (Fm=1), which were not derived from the data. Extracted — potassium salicylate: CL/F 82.2 ml/h/kg, V/F 42.3 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — potassium salicylate: CL/F 82.2 ml/h/kg, V/F 42.3 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has none, the second reading 82.2; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.111, 0 of 1 reader(s) agree | 0.111 | cross-check disputed by a second reader: verdict disputed, agreement 0.111, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.111 (1 of 9 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.111 | cross-check contradicted by a second reader: verdict disputed; agreement 0.111 (1 of 9 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Umeclidinium bromide’s absorption rate constant (0.0934) was rejected because its reported unit “units” has dimensions of luminosity per area, not inverse time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit units ([luminosity] / [length] ** 2) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="umeclidinium bromide" model-id="UmeclidiniumBromide_Pene2016_reference" status="rejected" stale="false" population="healthy males" measured-compound="umeclidinium" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Pene Dumitrescu T, Santos LL, Hughes SC, Pereira AI, Young GC, Hussey E et al. A
 
 ### Reviewer guidance
 
-**Umeclidinium bromide’s absorption rate constant (0.0934) was rejected because its reported unit “units” has dimensions of luminosity per area, not inverse time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit units ([luminosity] / [length] ** 2) vs 1 / [time].**
 
-The absorption rate constant’s reported unit was dimensioned as luminosity per length squared rather than inverse time, and could not be converted to SI, leaving no SI value. A second reader marked the dose compound and primary analyte as unknown, unlike this record, which lists umeclidinium bromide and umeclidinium. Extracted — umeclidinium bromide: V1 7.56 L, CL 55 L/h, V2 195 L, Q 40.9 L/h, kabs 0.0934 units, Fab 0.312, tlag 10.6 h.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — umeclidinium bromide: V1 7.56 L, CL 55 L/h, V2 195 L, Q 40.9 L/h, kabs 0.0934 units, Fab 0.312, tlag 10.6 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has umeclidinium bromide, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

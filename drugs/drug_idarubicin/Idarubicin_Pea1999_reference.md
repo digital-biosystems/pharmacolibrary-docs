@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;idarubicin&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/&quot;},{&quot;label&quot;:&quot;Pea_1999 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Idarubicin_Kuhlmann2001_reference&quot;,&quot;label&quot;:&quot;Kuhlmann_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Idarubicin_Tamura1996_reference&quot;,&quot;label&quot;:&quot;Tamura_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Tamura1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Meg_as_Vericat_2019_LPC&quot;,&quot;label&quot;:&quot;Meg\u00edas-Vericat_2019 \u00b7 LPC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/pd_Meg_as_Vericat_2019_LPC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Idarubicin_Tamura1996_reference&quot;,&quot;label&quot;:&quot;Tamura_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Tamura1996_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Idarubicin_Kuhlmann2001_reference&quot;,&quot;label&quot;:&quot;Kuhlmann_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Meg_as_Vericat_2019_LPC&quot;,&quot;label&quot;:&quot;Meg\u00edas-Vericat_2019 \u00b7 LPC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/pd_Meg_as_Vericat_2019_LPC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Only clearance was extracted — no volume; aUC has no unit.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Pea1999_reference" status="needs_review" stale="false" population="patients with acute myelogenous leukemia" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Pea1999_reference" status="needs_review" stale="false" population="patients with acute myelogenous leukemia" measured-compound="idarubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Pea F, Damiani D, Michieli M, Ermacora A, Baraldo M, Russo D et al. Multidrug resistance modulation in vivo: the effect of cyclosporin A alone or with dexverapamil on idarubicin pharmacokinetics in acute leukemia. European journal of clinical pharmacology 55(5):361–368 (1999).
@@ -17,13 +17,13 @@ Pea F, Damiani D, Michieli M, Ermacora A, Baraldo M, Russo D et al. Multidrug re
 
 ## Population and dosing
 
-**Population:** patients with acute myelogenous leukemia · condition acute myelogenous leukemia · n = 27.
+**Population:** patients with acute myelogenous leukemia · condition acute myelogenous leukemia · age group adult.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** parent + metabolite; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 5 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -31,12 +31,15 @@ Pea F, Damiani D, Michieli M, Ermacora A, Baraldo M, Russo D et al. Multidrug re
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| IDA AUC | AUC | 558.26 | microg x h x l(-1) |
-| CL | CL | 83.51 | L/h |
+| AUC of both IDA [558.26 (197.25) | AUC | 558.26 | microg x h x l(-1) |
+| total body clearance (CL) [83.51 (52.44) | CL | 83.51 | L/h |
+| IDA exposure was essentially the same as in those of the no inhibitor group [331.29 (95.49) | AUC | 331.29 | microg x h x l(-1) |
+| IDAOL total body exposure was greater than in the no inhibitor group [2030.32 (401.11) | AUC | 2030.32 | microg x h x l(-1) |
+| AUC 2030.32 (401.11) | AUCt | 2030.32 | microg x h x l(-1) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), qwen3.8-27b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +49,11 @@ Pea F, Damiani D, Michieli M, Ermacora A, Baraldo M, Russo D et al. Multidrug re
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; aUC has no unit.**
+**Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — idarubicin: AUC 558 microg x h x l(-1), CL 83.5 L/h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — idarubicin: AUC 558 microg x h x l(-1), CL 83.5 L/h, AUC 331 microg x h x l(-1); idarubicinol: AUC 2.03e+03 microg x h x l(-1), AUCt 2.03e+03 microg x h x l(-1).
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the links between molecules: this record has none, the second reading idarubicin → idarubicinol (metabolism); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has idarubicin → idarubicinol (metabolism), the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,8 +61,11 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the link
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| IDA AUC | `Q88` · AUC | 558.26 | microg x h x l(-1) |  |  | (h·µg)/l | llm_confirmed (0.6) | Pea_1999:abstract, Pea_1999:abstract |
-| CL | `Q22` · CL | 83.51 | L/h | 2.32e-05 | m3/s | L/h | exact (1) | Pea_1999:abstract, Pea_1999:abstract |
+| AUC of both IDA [558.26 (197.25) | `Q88` · AUC | 558.26 | microg x h x l(-1) | 2.01 | kg*s/m3 | (h·µg)/l | llm_confirmed (0.6) | Pea_1999:abstract, Pea_1999:abstract |
+| total body clearance (CL) [83.51 (52.44) | `Q22` · CL | 83.51 | L/h | 2.32e-05 | m3/s | L/h | exact (1) | Pea_1999:abstract, Pea_1999:abstract |
+| IDA exposure was essentially the same as in those of the no inhibitor group [331.29 (95.49) | `Q88` · AUC | 331.29 | microg x h x l(-1) | 1.193 | kg*s/m3 | (h·µg)/l | llm_confirmed (0.6) | Pea_1999:abstract, Pea_1999:abstract |
+| IDAOL total body exposure was greater than in the no inhibitor group [2030.32 (401.11) | `Q88` · AUC | 2030.32 | microg x h x l(-1) | 7.309 | kg*s/m3 | (h·µg)/l | llm_confirmed (0.6) | Pea_1999:abstract, Pea_1999:abstract |
+| AUC 2030.32 (401.11) | `Q19` · AUCt | 2030.32 | microg x h x l(-1) | 7.309 | kg*s/m3 | (h·µg)/l | llm_corrected (0.6) | Pea_1999:abstract, Pea_1999:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -69,36 +75,43 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the link
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'microg x h x l(-1)' (AUC)
-- dropped duplicate Q88 ('IDAOL AUC', value '2896.60') — already have one for this compound
+- dropped unlinked row (NIL): 'IDAOL [2896.60 (736.38)' — extend the ontology if this is a real PK parameter (source ['Pea_1999:abstract', 'Pea_1999:abstract'])
 - unit_dimension_unknown: 'l x h(-1) x m(-2)' (CL)
-- dropped duplicate Q88 ('IDA exposure', value '331.29') — already have one for this compound
-- dropped duplicate Q88 ('IDAOL total body exposure', value '2030.32') — already have one for this compound
-- dropped duplicate Q88 ('AUC', value '2030.32') — already have one for this compound
-- implicit units: 'CL' → L/h (from the popPK convention: 'Clearances are conventionally reported in L/h in population PK, and 83.51 is consistent with that scale.')
+- dropped unlinked row (NIL): 'dose of 10 mg x kg(-1) daily' — extend the ontology if this is a real PK parameter (source ['Pea_1999:abstract'])
+- implicit units: 'total body clearance (CL) [83.51 (52.44)' → L/h (from the popPK convention: 'The paper provides no explicit units. Total body clearance (CL) is standardly reported in L/h in population pharmacokine')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=idarubicin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
+- row roles (LLM): model_class=noncompartmental; 7/7 row label(s) assigned, 2 linked by role; re-tagged idarubicin→idarubicinol ×6, idarubicin→parent ×4
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Pea_1999_metadata.yaml (12 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Pea_1999_metadata.yaml (13 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (3/12 fields) | 9 |
 | `qwen3.8-27b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>15 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['idarubicin', 'idarubicinol', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[auc 2030.32]` | 2030.32 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc of both ida [558.26]` | 558.26 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 83.51 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cya dose]` |  | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ida exposure was essentially the same as in those of the no inhibitor group [331.29]` | 331.29 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ida]` |  | 558.26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[idaol total body exposure was greater than in the no inhibitor group [2030.32]` | 2030.32 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total body clearance (cl) [83.51]` | 83.51 |  | only_one_extracted |
 | `qwen3.8-27b` | `model.links` | [] | [['idarubicin', 'idarubicinol', 'metabolism']] | mismatch |
 | `qwen3.8-27b` | `parameters[auc of ida]` |  | 558.26 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[auc of idaol]` |  | 2896.6 | only_one_extracted |
@@ -118,11 +131,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Pea_1999:abstract', 'Pea_1999:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Pea_1999:abstract', 'Pea_1999:abstract'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | microg x h x l(-1) | ['Pea_1999:abstract', 'Pea_1999:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Pea_1999:abstract', 'Pea_1999:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Pea_1999:abstract', 'Pea_1999:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Pea_1999:abstract', 'Pea_1999:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 83.51 | ['Pea_1999:abstract', 'Pea_1999:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 83.5 L/h | ['Pea_1999:abstract', 'Pea_1999:abstract'] |
@@ -159,4 +175,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bidarubicin%5D%20Idarubicin_Pea1999_reference&body=Drug%3A%20idarubicin%0ARecord%3A%20Idarubicin_Pea1999_reference%0APaper%3A%20Pea_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_idarubicin/Idarubicin_Pea1999_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:02 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:21 UTC</sub>

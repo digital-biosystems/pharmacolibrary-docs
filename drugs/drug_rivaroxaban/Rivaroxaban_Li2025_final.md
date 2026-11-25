@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Rivaroxaban clearance was held back because no explicit estimate was extracted, leaving the model with a placeholder instead of a fitted value.
+> No value for rivaroxaban's clearance; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="rivaroxaban" model-id="Rivaroxaban_Li2025_final" status="model_quarantined" stale="false" population="elderly Chinese patients with non-valvular atrial fibrillation" measured-compound="rivaroxaban" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Li TY, Liu X, Tang L, Cai W, Zhang J, Su Y et al. Dose Optimization of Rivaroxab
 
 ### Reviewer guidance
 
-**Rivaroxaban clearance was held back because no explicit estimate was extracted, leaving the model with a placeholder instead of a fitted value.**
+**No value for rivaroxaban's clearance; t6_deviations (+1 more).**
 
-The record identifies a clearance parameter but contains no numeric value for rivaroxaban, so a default placeholder was used during model construction. A second reader disputed the record, noting that the clearance value is missing in the primary data while a separate estimate of -0.124 exists in the findings. This discrepancy confirmed that the primary elimination parameter lacked a fitted value, resulting in the model being quarantined. Extracted — rivaroxaban: V 30.7 L.
+The model was built, but rivaroxaban's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — rivaroxaban: V 30.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rivaroxaban, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.625 (5 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.625 | cross-check contradicted by a second reader: verdict disputed; agreement 0.625 (5 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

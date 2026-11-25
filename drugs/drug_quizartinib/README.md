@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;quizartinib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quizartinib_Vaddady2024_final&quot;,&quot;label&quot;:&quot;Vaddady_2024_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/Quizartinib_Vaddady2024_final.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quizartinib_Vaddady2024_final_final_quizartinib_model&quot;,&quot;label&quot;:&quot;Vaddady_2024_final_final_quizartinib_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/Quizartinib_Vaddady2024_final_final_quizartinib_model.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kang_2021_QTcF&quot;,&quot;label&quot;:&quot;Kang_2021 \u00b7 QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quizartinib/pd_Kang_2021_QTcF.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # quizartinib
 
@@ -21,8 +20,8 @@ Quizartinib is a protein kinase inhibitor used to treat acute myeloid leukemia. 
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| quizartinib | parent | 560.67 | C29H32N6O4S | DrugBank | [24889392](https://pubchem.ncbi.nlm.nih.gov/compound/24889392) | Kang_2020, Solana-Altabella_2025, Vaddady_2024 |
-| AC886 | metabolite | 576.67 | — | the paper | — | Vaddady_2024 |
+| quizartinib | parent | 560.67 | C29H32N6O4S | DrugBank | [24889392](https://pubchem.ncbi.nlm.nih.gov/compound/24889392) | Kang_2020, Solana-Altabella_2025 |
+| AC886 | metabolite | — (mass units only) | — | — | — | — |
 
 ## popPK records
 
@@ -30,15 +29,17 @@ Quizartinib is a protein kinase inhibitor used to treat acute myeloid leukemia. 
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub> | [Solana-Altabella_2025_mean](drugs/drug_quizartinib/Quizartinib_SolanaAltabella2025_mean.md) | — | 2-compartment (no model) | 10 | Solana-Altabella A et al., Validation of pharmacokinetic model for…, European journal of clinica… (2025) | [10.1007/s00228-025-03909-4](https://doi.org/10.1007/s00228-025-03909-4) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ median](drugs/drug_quizartinib/Quizartinib_SolanaAltabella2025_median.md) | — | 2-compartment (no model) | 9 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Kang_2020_reference](drugs/drug_quizartinib/Quizartinib_Kang2020_reference.md) | — | parent + metabolite (no model) | 5 (+22 cov.) | Kang D et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1680](https://doi.org/10.1002/jcph.1680) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub> | [Vaddady_2024_final](drugs/drug_quizartinib/Quizartinib_Vaddady2024_final.md) | ▶ model + simulator | 1-compartment, IV | 6 (+4 cov.) | Vaddady P et al., Population pharmacokinetic analysis of…, Clinical and translational… (2024) | [10.1111/cts.70074](https://doi.org/10.1111/cts.70074) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub> | [↳ final_final_quizartinib_model](drugs/drug_quizartinib/Quizartinib_Vaddady2024_final_final_quizartinib_model.md) | ▶ model + simulator | 1-compartment, oral | 11 (+5 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Kang_2020_final](drugs/drug_quizartinib/Quizartinib_Kang2020_final.md) | — | parent + metabolite (no model) | 5 (+22 cov.) | Kang D et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2020) | [10.1002/jcph.1680](https://doi.org/10.1002/jcph.1680) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ final_magnitude_of_interindividual_variability_final_estimate](drugs/drug_quizartinib/Quizartinib_Kang2020_final_magnitude_of_interindividual_vari.md) | — | parent + metabolite (no model) | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Vaddady_2024_final](drugs/drug_quizartinib/Quizartinib_Vaddady2024_final.md) | — | parent + metabolite (no model) | 0 | Vaddady P et al., Population pharmacokinetic analysis of…, Clinical and translational… (2024) | [10.1111/cts.70074](https://doi.org/10.1111/cts.70074) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ final_final_quizartinib_model](drugs/drug_quizartinib/Quizartinib_Vaddady2024_final_final_quizartinib_model.md) | — | parent + metabolite (no model) | 0 |  |  |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Kang_2021_QTcF](drugs/drug_quizartinib/pd_Kang_2021_QTcF.md) | QTcF ← quizartinib and AC886 · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Kang D et al., Concentration-QTc analysis of quizartin…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04204-y](https://doi.org/10.1007/s00280-020-04204-y) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Kang_2021_QTcF](drugs/drug_quizartinib/pd_Kang_2021_QTcF.md) | QTcF ← quizartinib and AC886 · direct sigmoid Emax (Hill) effect | — | Kang D et al., Concentration-QTc analysis of quizartin…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04204-y](https://doi.org/10.1007/s00280-020-04204-y) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Vaddady_2024_2_QTcF](drugs/drug_quizartinib/pd_Vaddady_2024_2_QTcF.md) | Fridericia‐corrected QT interval (QTcF) ← quizartinib · direct sigmoid Emax (Hill) effect | — | Vaddady P et al., Concentration-QTcF analysis of quizarti…, Clinical and translational… (2024) | [10.1111/cts.70065](https://doi.org/10.1111/cts.70065) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,26 +53,30 @@ Quizartinib is a protein kinase inhibitor used to treat acute myeloid leukemia. 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 05:37 | 8:29 | 1/4/0 | 1/0/0 | 0/0/0 | 178,381/46,206 | openai / gpt-6-luna | 5 | 0/5 | 5/0 | 0 |
+| 2026-11-24 03:54 | 0:04 | 1/5/0 | 2/0/0 | 0/0/0 | 5,692/144 | einfracz / qwen3.8-27b | 5 | 0/5 | 5/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 5  ·  extracted 0  ·  needs review 1  ·  rejected 4  ·  stale 0
+- **records:** 6  ·  extracted 0  ·  needs review 1  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| PGx | Kang_2020 | not_relevant | 1 | 0 | The paper reports population PK covariates like race and CYP3A inhibitors but does not report specific gene variants/genotypes affecting quizartinib PK. |
 | popPK | Kang_2021 | irrelevant | 1 | 0 | This is a human concentration–QTc analysis, not a disposition study, and no quizartinib PK parameter values are reported here. |
-| popPK | Olíva_2026 | irrelevant | 0 | 0 | This patient-reported-outcomes trial reports no quantitative quizartinib pharmacokinetic parameters. |
-| popPK | Vaddady_2024_2 | irrelevant | 2 | 0 | This human concentration–QTcF analysis reports pharmacodynamic parameters, while quizartinib disposition parameters are only referenced from another population-PK model. |
+| popPK | Olíva_2026 | irrelevant | 0 | 0 | The paper focuses on patient-reported outcomes and quality of life in a clinical trial, containing no pharmacokinetic parameters or disposition data for quizartinib. |
+| PGx | Olíva_2026 | not_relevant | 0 | 0 | The paper evaluates patient-reported outcomes and quality of life, not pharmacokinetic or pharmacodynamic parameters modified by genetic variants. |
+| PGx | Vaddady_2024 | not_relevant | 0 | 0 | The paper is a population PK analysis of quizartinib that identifies covariates such as CYP3A inhibitor use, body weight, age, sex, race, and treatment phase, but it does not analyze specific gene variants or genotypes (e.g., CYP3A5*3, SLCO1B1) as covariates affecting PK parameters. |
+| popPK | Vaddady_2024_2 | irrelevant | 2 | 1 | The paper reports a concentration-QTcF pharmacodynamic model, not a pharmacokinetic model, and does not provide quantitative PK disposition parameters (CL, V, etc.) for quizartinib. |
+| PGx | Vaddady_2024_2 | not_relevant | 0 | 0 | The paper analyzes concentration-QTcF relationships and identifies demographic covariates (age) and electrolytes, but does not report any gene variant, genotype, or pharmacogenomic effect on PK or PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bquizartinib%5D&body=Drug%3A%20quizartinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_quizartinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 05:30 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 15:10 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper does not report PK parameters for bretylium, despite listing 12.0 L/hr clearance.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="Bretylium" model-id="Bretylium_Greenberg2022_reference" status="rejected" stale="false" population="" measured-compound="bretylium" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Greenberg RG, Landersdorfer CB, Rivera-Chaparro N, Harward M, Conrad T, Nakamura
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper does not report PK parameters for bretylium, despite listing 12.0 L/hr clearance.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The relevance screen identified that the source paper's subject is not bretylium, as neither the title nor abstract names the drug. Consequently, the extracted apparent total body clearance of 12.0 L/hr and volume of distribution of 167.0 L do not pertain to bretylium in this context. A second reader disagreed with the initial verdict, citing a 0.75 agreement ratio. Extracted — bretylium: CL 12 L/hr, V 167 L.
+Extracted — bretylium: CL 12 L/hr, V 167 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 41, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.833 (10 of 12 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

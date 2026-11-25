@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Misoprostol acid’s Vmax (5.45 pg/ml) and Km (2.5 pg) have units inconsistent with metabolic rate and substrate concentration, contributing to rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit pg/ml ([mass] / [length] ** 3) vs [mass] / [time]; Q1 unit pg ([mass]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="misoprostol" model-id="Misoprostol_Vorontsova2022_reference" status="rejected" stale="false" population="women undergoing labor induction at term" measured-compound="misoprostol acid" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Vorontsova Y, Haas DM, Flannery K, Masters AR, Silva LL, Pierson RC et al. Pharm
 
 ### Reviewer guidance
 
-**Misoprostol acid’s Vmax (5.45 pg/ml) and Km (2.5 pg) have units inconsistent with metabolic rate and substrate concentration, contributing to rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit pg/ml ([mass] / [length] ** 3) vs [mass] / [time]; Q1 unit pg ([mass]) vs [mass] / [length] ** 3.**
 
-Vmax is a maximum metabolic rate, but its reported unit, pg/ml, is concentration; Km measures enzyme affinity, but its reported unit, pg, is mass rather than concentration. A reported unit could not be converted to SI, leaving a parameter without an SI value. Extracted — misoprostol acid: CLm/F 730 L/h, V 610 L, kabs 0.709 1/h, Vmax 5.45 pg/ml, Km 2.5 pg.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. None of the extracted parameters is misoprostol's own; they describe misoprostol acid. Extracted — misoprostol acid: CLm/F 730 L/h, V 610 L, kabs 0.709 1/h, Vmax 5.45 pg/ml, Km 2.5 pg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/fb].parameter_id`: this record has Q351, the second reading Q27; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

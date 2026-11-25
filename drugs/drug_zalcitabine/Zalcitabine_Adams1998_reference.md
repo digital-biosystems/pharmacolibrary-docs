@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;zalcitabine&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/&quot;},{&quot;label&quot;:&quot;Adams_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zalcitabine_Adams1998_reference&quot;,&quot;label&quot;:&quot;Adams_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zalcitabine_Ibrahim1991_reference&quot;,&quot;label&quot;:&quot;Ibrahim_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/Zalcitabine_Ibrahim1991_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zalcitabine_Ibrahim1991_reference&quot;,&quot;label&quot;:&quot;Ibrahim_1991_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/Zalcitabine_Ibrahim1991_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zalcitabine_Adams1998_reference&quot;,&quot;label&quot;:&quot;Adams_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # zalcitabine — `Zalcitabine_Adams1998_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Zalcitabine's absorption rate constant (50.0 h-1) was missing for a second reader, and the abstract-only source hindered agreement.
+> biomarker_kinetics_as_drug_pk; t0_analyte_identity (+1 more).
 
-<div class="pk-model-meta" hidden drug="zalcitabine" model-id="Zalcitabine_Adams1998_reference" status="needs_review" stale="false" population="HIV-infected patients" measured-compound="zalcitabine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="zalcitabine" model-id="Zalcitabine_Adams1998_reference" status="rejected" stale="false" population="HIV-infected adults" measured-compound="zalcitabine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Adams JM, Shelton MJ, Hewitt RG, DeRemer M, DiFrancesco R, Grasela TH et al. Zalcitabine population pharmacokinetics: application of radioimmunoassay. Antimicrobial agents and chemotherapy 42(2):409–413 (1998).
@@ -17,30 +17,29 @@ Adams JM, Shelton MJ, Hewitt RG, DeRemer M, DiFrancesco R, Grasela TH et al. Zal
 
 ## Population and dosing
 
-**Population:** HIV-infected patients · condition HIV infection · age group adult · n = 44.
+**Population:** HIV-infected adults · condition HIV infection · age group adult · n = 44.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference/Zalcitabine_Adams1998_reference.svg" alt="Zalcitabine_Adams1998_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| estimated creatinine clearance | CLR | 89.1 | ml/min |
+| estimated creatinine clearance | CL | 89.1 | ml/min |
 | Oral clearance | CL/F | 14.8 | liters/h |
 | volume of distribution | V | 87.6 | liters |
-| ka | kabs | 50.0 | h-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,22 +49,21 @@ Adams JM, Shelton MJ, Hewitt RG, DeRemer M, DiFrancesco R, Grasela TH et al. Zal
 
 ### Reviewer guidance
 
-**Zalcitabine's absorption rate constant (50.0 h-1) was missing for a second reader, and the abstract-only source hindered agreement.**
+**biomarker_kinetics_as_drug_pk; t0_analyte_identity (+1 more).**
 
-The model is based solely on the paper's abstract, meaning summary statistics substitute for a fitted model. A second reader disagreed on the identity of the creatinine clearance parameter and failed to extract the 50.0 h-1 absorption rate constant. These discrepancies resulted in a cross-check agreement of 0.778 with no reader concurrence. Extracted — zalcitabine: CLR 89.1 ml/min, CL/F 14.8 liters/h, V 87.6 liters, kabs 50 h-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — zalcitabine: CL 89.1 ml/min, CL/F 14.8 liters/h, V 87.6 liters.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[estimated creatinine clearance].parameter_id`: this record has Q26, the second reading Q22; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| estimated creatinine clearance | `Q26` · CLR | 89.1 | ml/min | 1.485e-06 | m3/s | ml/min | llm_corrected (0.6) | Adams_1998:abstract |
+| estimated creatinine clearance | `Q22` · CL | 89.1 | ml/min | 1.485e-06 | m3/s | ml/min | llm_confirmed (0.6) | Adams_1998:abstract |
 | Oral clearance | `Q27` · CL/F | 14.8 | liters/h | 4.111e-06 | m3/s | l/h | exact (1) | Adams_1998:abstract, Adams_1998:abstract |
-| volume of distribution | `Q61` · V | 87.6 | liters | 0.0876 | m3 | l | exact (1) | Adams_1998:abstract, Adams_1998:abstract, Adams_1998:abstract |
-| ka | `Q49` · kabs | 50.0 | h-1 | 0.01389 | 1/s | 1/h | review_gapfill (0.7) | Senek_2020:review |
+| volume of distribution | `Q61` · V | 87.6 | liters | 0.0876 | m3 | l | exact (1) | Adams_1998:abstract, Adams_1998:abstract, Adams_1998:abstract, Adams_1998:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,31 +73,29 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'age' — extend the ontology if this is a real PK parameter (source ['Adams_1998:abstract'])
 - dropped unlinked row (NIL): 'weight' — extend the ontology if this is a real PK parameter (source ['Adams_1998:abstract'])
-- dropped value-less row: 'individual estimates of oral clearance (range'
 - dropped value-less row: 'individual estimates of oral clearance'
-- dropped value-less row: 'volume of distribution (range'
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=zalcitabine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Senek_2020's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Adams_1998_metadata.yaml (11 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 | `qwen3.8-27b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
@@ -124,27 +120,27 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Adams_1998:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Adams_1998:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Adams_1998:abstract', 'Adams_1998:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Senek_2020:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Adams_1998:abstract', 'Adams_1998:abstract', 'Adams_1998:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Adams_1998:abstract', 'Adams_1998:abstract', 'Adams_1998:abstract', 'Adams_1998:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 5.35 L/h | ['Adams_1998:abstract'] |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 14.8 L/h | ['Adams_1998:abstract', 'Adams_1998:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 87.6 L | ['Adams_1998:abstract', 'Adams_1998:abstract', 'Adams_1998:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 87.6 L | ['Adams_1998:abstract', 'Adams_1998:abstract', 'Adams_1998:abstract', 'Adams_1998:abstract'] |
 
 **Reviewer per-scenario checks:**
 
 | check | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T0_analyte_identity | fail | zalcitabine (or metabolite) | estimated creatinine clearance |  | disposition label(s) name a biomarker, not zalcitabine: 'estimated creatinine clearance' |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=zalcitabine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -156,65 +152,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference/Zalcitabine_Adams1998_reference_modelica.zip" download>Zalcitabine_Adams1998_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference/Zalcitabine_Adams1998_reference_fmi.zip" download>Zalcitabine_Adams1998_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference/Zalcitabine_Adams1998_reference_matlab.zip" download>Zalcitabine_Adams1998_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference/Zalcitabine_Adams1998_reference_matlab_simbio.zip" download>Zalcitabine_Adams1998_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference/Zalcitabine_Adams1998_reference_sbml.zip" download>Zalcitabine_Adams1998_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference/Zalcitabine_Adams1998_reference_cellml.zip" download>Zalcitabine_Adams1998_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2112 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 2.25e-06 | kg |
-| input | model | `Cl` | 4.111e-06 | m3/s |
-| input | model | `VdPerKg` | 0.001251 | m3/kg |
-| input | model | `ka` | 0.01389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Adams JM, Shelton MJ, Hewitt RG, DeRemer M, DiFrancesco R, Grasela TH et al. Zalcitabine population pharmacokinetics: application of radioimmunoassay. Antimicrobial agents and chemotherapy 42(2):409–413 (1998). [doi:10.1128/AAC.42.2.409](https://doi.org/10.1128/AAC.42.2.409)
-
-**This record:** Pharmacolibrary, model `Zalcitabine_Adams1998_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference>
-
-```bibtex
-@misc{pharmacolibrary_ZalcitabineAdams1998reference,
-  title  = {{Pharmacolibrary model Zalcitabine_Adams1998_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference},
-  note   = {Parameters from doi:10.1128/AAC.42.2.409},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 2.25 mg, single dose, first-order absorption (ka 50 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 2.25 mg oral (J05AF03) (defined daily dose)._
+**Administration: oral** — 2.25 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 2.25 mg oral (J05AF03) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference/Zalcitabine_Adams1998_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference/Zalcitabine_Adams1998_reference_sim_controls.json"></dbs-fmusim>
 
@@ -224,4 +168,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzalcitabine%5D%20Zalcitabine_Adams1998_reference&body=Drug%3A%20zalcitabine%0ARecord%3A%20Zalcitabine_Adams1998_reference%0APaper%3A%20Adams_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zalcitabine/Zalcitabine_Adams1998_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:02 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:40 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record was rejected because the paper's pharmacokinetic parameters refer to a P-gp inhibitor, not doxorubicin.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Qiu2017_reference" status="rejected" stale="false" population="" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Qiu Q, Liu B, Cui J, Li Z, Deng X, Qiang H et al. Design, Synthesis, and Pharmac
 
 ### Reviewer guidance
 
-**The record was rejected because the paper's pharmacokinetic parameters refer to a P-gp inhibitor, not doxorubicin.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The check for analyte identity found that the reported half-life, AUC, and bioavailability belong to compound 12k. Doxorubicin appears only as a co-medication or covariate in the study. A second reader disputed the initial verdict, with an agreement score of 0.4. Extracted — doxorubicin: CL 47.8 ml.min -1 kg -1, V 1.71e+03 L.
+Extracted — doxorubicin: CL 47.8 ml.min -1 kg -1, V 1.71e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has none, the second reading 1754; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check disputed by a second reader: verdict disputed, agreement 0.4, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.533 (8 of 15 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.533 | cross-check contradicted by a second reader: verdict disputed; agreement 0.533 (8 of 15 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

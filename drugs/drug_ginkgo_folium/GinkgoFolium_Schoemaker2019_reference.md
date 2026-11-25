@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span>
 
-> Record rejected because Schoemaker_2019 does not study ginkgo folium; paper is about another drug.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Ginkgo folium" model-id="GinkgoFolium_Schoemaker2019_reference" status="rejected" stale="false" population="" measured-compound="ginkgo_folium" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Schoemaker R, Fidler M, Laveille C, Wilkins JJ, Hooijmaijers R, Post TM et al. P
 
 ### Reviewer guidance
 
-**Record rejected because Schoemaker_2019 does not study ginkgo folium; paper is about another drug.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The identity check failed: neither the paper's title nor abstract names ginkgo folium, and the relevance screen rejected it as unrelated. The second reader disagreed on three numeric fields, but the rejection is caused by the paper being about a different molecule entirely. Extracted — ginkgo folium: CL 4 L/hour, V1 70 L, V2 40 L, Q 4 L/hour, kabs 1 hour−1.
+Extracted — ginkgo folium: CL 4 L/hour, V1 70 L, V2 40 L, Q 4 L/hour, kabs 1 hour−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q315: this record has 20, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.75 (9 of 12 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

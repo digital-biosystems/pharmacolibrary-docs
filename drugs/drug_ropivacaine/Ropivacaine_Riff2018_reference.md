@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> CL/F is given in h-1 instead of volumetric units, and only abstract statistics were used for this intravenous study.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit h-1 (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Riff2018_reference" status="rejected" stale="false" population="women undergoing unilateral mastectomy" measured-compound="ropivacaine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Riff C, Guilhaumou R, Marsot A, Beaussier M, Cohen M, Blin O et al. Ropivacaine 
 
 ### Reviewer guidance
 
-**CL/F is given in h-1 instead of volumetric units, and only abstract statistics were used for this intravenous study.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit h-1 (1 / [time]) vs [length] ** 3 / [time].**
 
-The apparent clearance value of 18.8 was recorded with units of h-1, which is dimensionally invalid for clearance. The study population received intravenous injections, yet the record includes an absorption rate constant and bioavailability-adjusted parameters. The second reader identified a missing time of maximum concentration of 42.4 that the record omitted. Extracted — ropivacaine: V/F 269 L, CL/F 18.8 h-1, kabs 0.406 h-1, Cmax 1.45 μg/mL.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ropivacaine: V/F 269 L, CL/F 18.8 h-1, kabs 0.406 h-1, Cmax 1.45 μg/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of time of cmax: this record has none, the second reading 42.4. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

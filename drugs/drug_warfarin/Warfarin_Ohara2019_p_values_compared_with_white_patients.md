@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> S-warfarin clearance was extracted as 0.010 mL/min, an implausibly low value indicating a unit or scale error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Ohara2019_p_values_compared_with_white_patients" status="rejected" stale="false" population="adult outpatients (Asian, White, African American)" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Ohara M, Suzuki Y, Shinohara S, Gong IY, Schmerk CL, Tirona RG et al. Difference
 
 ### Reviewer guidance
 
-**S-warfarin clearance was extracted as 0.010 mL/min, an implausibly low value indicating a unit or scale error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a clearance parameter for S-warfarin with a value of 0.010 mL/min, derived from a label explicitly identifying it as creatinine clearance. This magnitude is physiologically impossible for total drug clearance, triggering a rejection for an out-of-window magnitude. A second reader could not confirm the extraction of this specific parameter value, noting it as null in their assessment. Extracted — S-warfarin: CL 0.01 mL/min, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
+None of the extracted parameters is warfarin's own; they describe S-warfarin. Extracted — S-warfarin: CL 0.01 mL/min, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has S-warfarin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

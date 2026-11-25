@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected despite reporting erythromycin clearance of 2.6 L/h, because the paper is about another drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="erythromycin" model-id="Erythromycin_Zhang2026v2_reference" status="rejected" stale="false" population="" measured-compound="erythromycin" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Zhang S, Li Y, Tan H, Li Y, Qin Y, Wu T et al. Effect of Adjunctive Inhalation o
 
 ### Reviewer guidance
 
-**The record was rejected despite reporting erythromycin clearance of 2.6 L/h, because the paper is about another drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-Neither the title nor abstract names erythromycin, and the paper’s relevance screen rejected it as being about another drug. The record also reports erythromycin central and peripheral volumes of 13.6 L and 17.6 L, respectively, and intercompartmental clearance of 22.1 L/h. Extracted — erythromycin: CL 2.6 L/h, V1 13.6 L, V2 17.6 L, Q 22.1 L/h.
+Extracted — erythromycin: CL 2.6 L/h, V1 13.6 L, V2 17.6 L, Q 22.1 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has 94.37, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.636, 0 of 1 reader(s) agree | 0.636 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.636 (7 of 11 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.636 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Angiotensin II’s reported V/F of 74.0 L was rejected because the paper concerns another drug, and bioavailability and absorption lag time were defaulted.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="angiotensin II" model-id="AngiotensinIi_Athanassa2025_reference" status="rejected" stale="false" population="" measured-compound="angiotensin_ii" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Athanassa Z, Papakyriakopoulou P, Marquez Megias S, Saitani EM, Manioudaki S, Di
 
 ### Reviewer guidance
 
-**Angiotensin II’s reported V/F of 74.0 L was rejected because the paper concerns another drug, and bioavailability and absorption lag time were defaulted.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The record lists V/F, the volume of distribution adjusted for bioavailability, as 74.0 L for angiotensin II. The paper’s title and abstract do not name angiotensin II, and the relevance screen identifies another drug as the paper’s subject. Bioavailability (F) and absorption lag time (Tlag) were defaulted rather than explicitly estimated. Extracted — angiotensin ii: CL 7.71 L/h, V/F 74 L, kabs 1.66 h⁻¹.
+Extracted — angiotensin ii: CL 7.71 L/h, V/F 74 L, kabs 1.66 h⁻¹.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q312: this record has 0.59, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.562, 0 of 1 reader(s) agree | 0.562 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.562 (9 of 16 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.562 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

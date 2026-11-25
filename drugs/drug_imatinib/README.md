@@ -42,7 +42,7 @@ Imatinib is a protein kinase inhibitor used to treat cancers like chronic myelog
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Khosravan_2016_reference](drugs/drug_imatinib/Imatinib_Khosravan2016_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Khosravan R et al., Population Pharmacokinetic/Pharmacodyna…, Clinical pharmacokinetics (2016) | [10.1007/s40262-016-0404-5](https://doi.org/10.1007/s40262-016-0404-5) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q81 — no SI value to build from</sub><br><sub>blocking: C2_base_Q311 failed (ratio 3.6464)</sub> | [Chien_2022_reference](drugs/drug_imatinib/Imatinib_Chien2022_reference.md) | — | 2-compartment (no model) | 7 | Chien YH et al., Population pharmacokinetic modelling of…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-022-04454-y](https://doi.org/10.1007/s00280-022-04454-y) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Delbaldo_2006_reference](drugs/drug_imatinib/Imatinib_Delbaldo2006_reference.md) | — | parent + metabolite (no model) | 4 | Delbaldo C et al., Pharmacokinetic-pharmacodynamic relatio…, Clinical cancer research :… (2006) | [10.1158/1078-0432.CCR-05-2596](https://doi.org/10.1158/1078-0432.CCR-05-2596) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Delbaldo_2006_reference](drugs/drug_imatinib/Imatinib_Delbaldo2006_reference.md) | — | parent + metabolite (no model) | 3 | Delbaldo C et al., Pharmacokinetic-pharmacodynamic relatio…, Clinical cancer research :… (2006) | [10.1158/1078-0432.CCR-05-2596](https://doi.org/10.1158/1078-0432.CCR-05-2596) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Garrett_2023_reference](drugs/drug_imatinib/Imatinib_Garrett2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Garrett M et al., Population modeling of bosutinib exposu…, Cancer medicine (2023) | [10.1002/cam4.6439](https://doi.org/10.1002/cam4.6439) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Baalbaki_2023_reference](drugs/drug_imatinib/Imatinib_Baalbaki2023_reference.md) | — | 1-compartment (no model) | 0 | Baalbaki N et al., Pharmacokinetics and pharmacodynamics o…, European journal of pharmac… (2023) | [10.1016/j.ejps.2023.106418](https://doi.org/10.1016/j.ejps.2023.106418) |
 
@@ -71,7 +71,7 @@ Imatinib is a protein kinase inhibitor used to treat cancers like chronic myelog
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 01:42 | 10:32 | 4/1/0 | 3/5/0 | 0/0/0 | 303,416/60,479 | openai / gpt-6-luna | 12 | 2/10 | 10/2 | 0 |
+| 2026-11-24 00:13 | 0:05 | 4/1/0 | 3/5/0 | 0/0/0 | 3,862/173 | einfracz / qwen3.8-27b | 12 | 2/10 | 10/2 | 0 |
 
 ## Coverage
 
@@ -82,15 +82,13 @@ Imatinib is a protein kinase inhibitor used to treat cancers like chronic myelog
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Delbaldo_2006.pdf` | Delbaldo C et al., Pharmacokinetic-pharmacodynamic relatio…, Clinical cancer research :… (2006) | popPK | 10 | [10.1158/1078-0432.CCR-05-2596](https://doi.org/10.1158/1078-0432.CCR-05-2596) | [17062683](https://pubmed.ncbi.nlm.nih.gov/17062683) | Human population-PK results report numeric imatinib clearance and metabolite clearance values. |
-| `Said_2025.pdf` | Said MM et al., Exposure-response analysis of oral and…, European journal of pharmac… (2025) | popPK | 9 | [10.1016/j.ejps.2025.107332](https://doi.org/10.1016/j.ejps.2025.107332) | [41109533](https://pubmed.ncbi.nlm.nih.gov/41109533) | Human imatinib PK modeling is described, but numeric disposition parameter values are not present in the evidence. |
-| `Corral_2022.pdf` | Corral Alaejos Á et al., External evaluation of population pharm…, British journal of clinical… (2022) | popPK | 8 | [10.1111/bcp.15122](https://doi.org/10.1111/bcp.15122) | [34705297](https://pubmed.ncbi.nlm.nih.gov/34705297) | This is an external evaluation of imatinib popPK models, but no numeric disposition parameter values are present in the evidence. |
+| `Gotta_2013.pdf` | Gotta V et al., Systematic review of population pharmac…, Therapeutic drug monitoring (2013) | popPK | 7 | [10.1097/FTD.0b013e318284ef11](https://doi.org/10.1097/FTD.0b013e318284ef11) | [23503441](https://pubmed.ncbi.nlm.nih.gov/23503441) | The paper is a systematic review that summarizes PPK parameter estimates from nine studies but does not provide the specific numeric CL/V values in the provided evidence, only simulated exposure ranges. |
 
-<sub>queue written 2026-10-07 01:33 UTC</sub>
+<sub>queue written 2026-11-24 00:13 UTC</sub>
 
 ## Screened and excluded
 
@@ -98,16 +96,22 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|
 | popPK | Cardoso_2018 | irrelevant | 0 | 0 | This is a review and reports no quantitative imatinib disposition parameters. |
 | popPK | Corral_2022 | relevant | 8 | 0 | This is an external evaluation of imatinib popPK models, but no numeric disposition parameter values are present in the evidence. |
-| popPK | Cortes_2009 | irrelevant | 1 | 1 | This is a review, not an original population-PK study, and the reported numbers are exposure concentrations rather than disposition parameters. |
+| popPK | Cortes_2009 | irrelevant | 2 | 1 | This is a review of therapeutic drug monitoring for imatinib; while it mentions PK characteristics (half-life, bioavailability) and cites studies with trough concentration data, it does not report original quantitative disposition parameters (CL, V, Q, ka) or a population-PK model derived from the authors' own analysis. |
+| PGx | Cortes_2009 | not_relevant | 0 | 0 | The paper discusses the correlation between imatinib plasma levels and clinical response, but does not report any specific gene variants or genotypes affecting pharmacokinetics or pharmacodynamics. |
+| PGx | Delbaldo_2006 | not_relevant | 0 | 0 | The study investigates the impact of clinical covariates (specifically plasma alpha1-acid glycoprotein levels) on pharmacokinetics, but does not report effects of gene variants or genotypes. |
 | popPK | Dilli_2024 | relevant | 9 | 2 | The paper evaluates imatinib population-PK models, but the parameter-value snippets are too corrupted to read reliably. |
 | popPK | Garrett_2023 | irrelevant | 0 | 0 | The quantitative PK parameters are for bosutinib; imatinib is only a comparator. |
-| popPK | Giles_2013 | irrelevant | 0 | 0 | The study models nilotinib; imatinib is mentioned only as prior resistance or intolerance, with no imatinib PK values. |
-| popPK | Gotta_2013 | irrelevant | 2 | 1 | This is a review, and the evidence gives exposure summaries but no numeric imatinib disposition parameter estimates. |
+| popPK | Giles_2013 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of nilotinib, with imatinib only serving as a diagnostic context (resistant/intolerant patients) and not as the subject drug for PK modeling. |
+| PGx | Giles_2013 | not_relevant | 0 | 0 | The paper analyzes the population pharmacokinetics of nilotinib and its exposure-response relationship, but it does not report on any gene variants or pharmacogenomic factors influencing PK or PD parameters. |
+| popPK | Gotta_2013 | relevant | 7 | 2 | The paper is a systematic review that summarizes PPK parameter estimates from nine studies but does not provide the specific numeric CL/V values in the provided evidence, only simulated exposure ranges. |
+| PGx | Gotta_2013 | not_relevant | 0 | 0 | The paper is a systematic review of PPK covariates (weight, albumin, etc.) and does not report the effect of gene variants/genotypes on imatinib pharmacokinetics or pharmacodynamics. |
 | popPK | Hanley_2025 | irrelevant | 0 | 0 | The population-PK analyses are for ponatinib; imatinib is only a comparator and no imatinib disposition parameters are reported. |
-| popPK | Hansson_2013 | irrelevant | 0 | 0 | The study models sunitinib in human patients; imatinib is only mentioned as prior therapy, and no imatinib parameters are reported. |
+| popPK | Hansson_2013 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of sunitinib, not imatinib, which is only mentioned as context for patient history. |
+| PGx | Hansson_2013 | not_relevant | 0 | 0 | The paper focuses on sunitinib PKPD and biomarker prediction, not on a pharmacogenomic effect on imatinib. |
 | popPK | Huynh_2023 | irrelevant | 0 | 0 | Imatinib is tested in cell-based antiviral assays, reporting efficacy values rather than pharmacokinetic parameters. |
 | popPK | Khosravan_2016 | irrelevant | 0 | 0 | The quantitative PK model is for sunitinib and its metabolite, not imatinib. |
-| popPK | Michor_2005 | irrelevant | 1 | 0 | This models CML cell kinetics during imatinib therapy, not imatinib disposition, and reports no pharmacokinetic parameter values. |
+| popPK | Michor_2005 | irrelevant | 0 | 0 | The paper describes a mathematical model of leukaemic cell dynamics in CML rather than reporting quantitative pharmacokinetic parameters (CL, V, ka, etc.) for the drug imatinib. |
+| PGx | Michor_2005 | not_relevant | 0 | 0 | The paper presents a mathematical model of CML disease dynamics and does not report clinical pharmacokinetic or pharmacodynamic data or pharmacogenomic associations for imatinib. |
 | popPK | Rasmussen_2026 | irrelevant | 3 | 5 | Human concentration-ratio and time-trend estimates are reported, but no quantitative disposition parameters such as CL, V, or ka are given. |
 | popPK | Said_2025 | relevant | 9 | 1 | Human imatinib PK modeling is described, but numeric disposition parameter values are not present in the evidence. |
 | popPK | Yang_2025 | relevant | 8 | 1 | This evaluates population-PK models for imatinib, but readable model parameter values are not provided here and appear to be in omitted tables or supplementary material. |
@@ -117,4 +121,4 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bimatinib%5D&body=Drug%3A%20imatinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_imatinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 01:34 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 00:12 UTC</sub>

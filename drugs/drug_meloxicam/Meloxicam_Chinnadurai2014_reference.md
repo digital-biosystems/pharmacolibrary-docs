@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span>
 
-> The elimination half-life of 11.4 hours is implausibly short for a 13.4 mL/h clearance in ferrets.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Chinnadurai2014_reference" status="rejected" stale="false" population="male and female ferrets" measured-compound="meloxicam" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Chinnadurai SK, Messenger KM, Papich MG, Harms CA. Meloxicam pharmacokinetics us
 
 ### Reviewer guidance
 
-**The elimination half-life of 11.4 hours is implausibly short for a 13.4 mL/h clearance in ferrets.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record contains only abstract summary statistics rather than fitted model parameters. A clearance of 13.4 mL/h combined with an elimination half-life of 11.4 hours implies a physiologically impossible volume of distribution. This contradiction triggered a rejection due to magnitude inconsistencies typical of unit or scale extraction errors. Extracted — meloxicam: Cmax 0.663 μg/mL, V 0.21 L, t1/2z 11.4 h, CL/F 13.4 mL/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — meloxicam: Cmax 0.663 μg/mL, V 0.21 L, t1/2z 11.4 h, CL/F 13.4 mL/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[elimination half-life].parameter_id`: this record has Q57, the second reading Q60; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

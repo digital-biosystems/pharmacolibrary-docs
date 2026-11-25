@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Omeprazole's elimination clearance was missing, forcing a default placeholder, and one parameter unit could not be converted.
+> No value for omeprazole's elimination clearance; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="omeprazole" model-id="Omeprazole_Zhao2018_reference" status="model_quarantined" stale="false" population="neonates and young infants" measured-compound="omeprazole" parameterization="apparent" topology="general_linear"></div>
 
@@ -62,13 +62,13 @@ Zhao W, Leroux S, Biran V, Jacqz-Aigrain E. Developmental pharmacogenetics of CY
 
 ### Reviewer guidance
 
-**Omeprazole's elimination clearance was missing, forcing a default placeholder, and one parameter unit could not be converted.**
+**No value for omeprazole's elimination clearance; the covariate scenarios were not simulated (+2 more).**
 
-The record lacks an explicit value for omeprazole's central elimination clearance, so a library placeholder was used instead of a fitted estimate. Additionally, a reported unit for a parameter was unrecognizable, preventing it from being converted to standard SI units. The defined covariate scenarios for CYP2C19 status were not simulated, only the reference individual was. Extracted — omeprazole: kabs 0.0509 h-1, Fab 1.78 h-1, V1/F 0.508 l; 5-hydroxy-omeprazole: V1/F 1 l, CL/F 0.863 l h-1; omeprazole sulfone: V1/F 1 l, CLfm 0.142 l h-1, CL/F 0.135 l h-1.
+The model was built, but omeprazole's elimination clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — omeprazole: kabs 0.0509 h-1, Fab 1.78 h-1, V1/F 0.508 l; 5-hydroxy-omeprazole: V1/F 1 l, CL/F 0.863 l h-1; omeprazole sulfone: V1/F 1 l, CLfm 0.142 l h-1, CL/F 0.135 l h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 02: this record has none, the second reading 0.676; it also differs on 8 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

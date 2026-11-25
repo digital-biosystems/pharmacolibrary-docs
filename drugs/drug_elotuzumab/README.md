@@ -18,6 +18,7 @@ Elotuzumab is a monoclonal antibody medication used to treat multiple myeloma. I
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub> | [Ide_2022_reference](drugs/drug_elotuzumab/Elotuzumab_Ide2022_reference.md) | — | 1-compartment (no model) | 1 | Ide T et al., Population pharmacokinetic and exposure…, Cancer chemotherapy and pha… (2022) | [10.1007/s00280-021-04365-4](https://doi.org/10.1007/s00280-021-04365-4) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Gibiansky_2016_reference](drugs/drug_elotuzumab/Elotuzumab_Gibiansky2016_reference.md) | — | 1-compartment (no model) | 0 | Gibiansky L et al., Model-based pharmacokinetic analysis of…, Journal of pharmacokinetics… (2016) | [10.1007/s10928-016-9469-x](https://doi.org/10.1007/s10928-016-9469-x) |
 
 ## Pharmacodynamics (PD)
 
@@ -38,39 +39,30 @@ Elotuzumab is a monoclonal antibody medication used to treat multiple myeloma. I
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:33 | 1:58 | 1/0/0 | 2/0/0 | 0/0/0 | 36,285/10,539 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 21:46 | 0:04 | 1/1/0 | 2/0/0 | 0/0/0 | 4,036/169 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 6 matched, 6 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Gibiansky_2016.pdf` | Gibiansky L et al., Model-based pharmacokinetic analysis of…, Journal of pharmacokinetics… (2016) | popPK | 10 | [10.1007/s10928-016-9469-x](https://doi.org/10.1007/s10928-016-9469-x) | [26993283](https://pubmed.ncbi.nlm.nih.gov/26993283) | The human population-PK model is relevant, but numeric disposition parameter estimates are not included in the evidence. |
-| `Ide_2021.pdf` | Ide T et al., Model-Based Determination of Elotuzumab…, Journal of clinical pharmac… (2021) | popPK | 10 | [10.1002/jcph.1698](https://doi.org/10.1002/jcph.1698) | [32656777](https://pubmed.ncbi.nlm.nih.gov/32656777) | A human population-PK model is reported, but numeric disposition parameter estimates are not included in the evidence. |
-| `Passey_2017.pdf` | Passey C et al., An Integrated Assessment of the Effects…, The AAPS journal (2017) | popPK | 8 | [10.1208/s12248-016-0033-9](https://doi.org/10.1208/s12248-016-0033-9) | [28070715](https://pubmed.ncbi.nlm.nih.gov/28070715) | Human population-PK modeling is described, but no numeric parameter values appear in the supplied evidence. |
-
-<sub>queue written 2026-10-07 12:31 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Gibiansky_2016 | relevant | 10 | 2 | The human population-PK model is relevant, but numeric disposition parameter estimates are not included in the evidence. |
-| popPK | Ide_2021 | relevant | 10 | 0 | A human population-PK model is reported, but numeric disposition parameter estimates are not included in the evidence. |
-| popPK | Passey_2017 | relevant | 8 | 0 | Human population-PK modeling is described, but no numeric parameter values appear in the supplied evidence. |
-| popPK | Passey_2018 | irrelevant | 2 | 0 | This is a clinical pharmacology review that mentions population PK but provides no numeric disposition parameter values in the evidence. |
+| PGx | Gibiansky_2016 | not_relevant | 0 | 0 | The study analyzes non-genetic covariates (body weight, M-protein, ADAs) and does not report pharmacogenomic effects. |
+| popPK | Ide_2021 | relevant | 10 | 2 | The paper describes a population PK model for elotuzumab with specific parameter names (CL, Vmax, Vc), but the evidence provided contains only qualitative descriptions of effects and relative exposures, lacking specific numeric parameter values (e.g., clearance in L/h, volume in L). |
+| PGx | Ide_2021 | not_relevant | 0 | 10 | The study investigates population pharmacokinetics in a specific ethnic group (Japanese), not the effect of specific gene variants/genotypes. |
+| popPK | Passey_2017 | irrelevant | 2 | 0 | The paper discusses immunogenicity effects and mentions PK modeling qualitatively (higher Vmax, lower KM) but provides no quantitative PK parameter values for elotuzumab. |
+| PGx | Passey_2017 | not_relevant | 0 | 0 | The paper analyzes the effect of immunogenicity (Anti-Drug Antibodies) on pharmacokinetics, not the effect of genetic variants or genotypes. |
+| popPK | Passey_2018 | irrelevant | 2 | 0 | This is a clinical pharmacology review that mentions population PK data and dosing appropriateness but does not provide specific quantitative parameter values (CL, V, etc.) in the extracted text. |
+| PGx | Passey_2018 | not_relevant | 0 | 0 | The paper is a clinical pharmacology review that mentions ethnicity has minimal effects on exposure, but it does not report specific gene variants, genotypes, or phenotypes altering PK/PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Belotuzumab%5D&body=Drug%3A%20elotuzumab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_elotuzumab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 12:31 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 21:45 UTC</sub>

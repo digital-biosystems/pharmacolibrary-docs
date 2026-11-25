@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because parameter V2/F carries a time unit (a) conflicting with its required volume dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q82 unit a ([time]) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Anderson2005_estimate" status="rejected" stale="false" population="children" measured-compound="paracetamol" parameterization="apparent" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Anderson BJ, Pons G, Autret-Leca E, Allegaert K, Boccard E. Pediatric intravenou
 
 ### Reviewer guidance
 
-**Record rejected because parameter V2/F carries a time unit (a) conflicting with its required volume dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q82 unit a ([time]) vs [length] ** 3.**
 
-The record lists V2/F with a unit of 'a' (time), which conflicts with the expected volume dimension for a distribution parameter. A second reader notes the missing hydrolysis link from propacetamol to paracetamol and discrepancies in parameter values, including a total clearance of 26.6 not present in the record. Extracted — paracetamol: CLm/F 16.3 l h-1 70 kg-1, V1 24 l 70 kg-1, Q 54.7 l h-1 70 kg-1, V2 30.4 l 70 kg-1, kabs 0.007, V2/F 0.499 a.
+A reported unit could not be converted (V2/F), so that value has no SI equivalent. Extracted — paracetamol: CLm/F 16.3 l h-1 70 kg-1, V1 24 l 70 kg-1, Q 54.7 l h-1 70 kg-1, V2 30.4 l 70 kg-1, kabs 0.007, V2/F 0.499 a.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading propacetamol → paracetamol (hydrolysis); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

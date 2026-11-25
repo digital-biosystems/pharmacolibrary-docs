@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Nitrazepam apparent volume of distribution and plasma level achieved have incorrect units and values.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q76 unit 1/kg (dimensionless) vs [length] ** 3.
 
-<div class="pk-model-meta" hidden drug="nitrazepam" model-id="Nitrazepam_Kangas1979_reference" status="rejected" stale="false" population="young healthy volunteers, geriatric and psychiatric patients, epileptic children" measured-compound="nitrazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nitrazepam" model-id="Nitrazepam_Kangas1979_reference" status="rejected" stale="false" population="adults and children with psychiatric, epileptic, or geriatric conditions" measured-compound="nitrazepam" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kangas L, Iisalo E, Kanto J, Lehtinen V, Pynnönen S, Ruikka I et al. Human pharmacokinetics of nitrazepam: effect of age and diseases. European journal of clinical pharmacology 15(3):163–170 (1979).
@@ -16,13 +16,13 @@ Kangas L, Iisalo E, Kanto J, Lehtinen V, Pynnönen S, Ruikka I et al. Human phar
 
 ## Population and dosing
 
-**Population:** young healthy volunteers, geriatric and psychiatric patients, epileptic children · condition healthy, geriatric, psychiatric, epilepsy · age group mixed.
+**Population:** adults and children with psychiatric, epileptic, or geriatric conditions · condition mixed · age group mixed.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -31,13 +31,11 @@ Kangas L, Iisalo E, Kanto J, Lehtinen V, Pynnönen S, Ruikka I et al. Human phar
 | label | parameter | value | unit |
 |---|---|---|---|
 | beta-phase half-life | t1/2β | 29 | h |
-| apparent volume of distribution during the beta-phase | V | 2.4 | 1/kg |
-| plasma level achieved | Cmax | 3.5 | d |
-| plasma concentration of nitrazepam | Ct | 40 | ng/ml |
+| apparent volume of distribution during the beta-phase | V/F | 2.4 | 1/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.308). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,22 +45,20 @@ Kangas L, Iisalo E, Kanto J, Lehtinen V, Pynnönen S, Ruikka I et al. Human phar
 
 ### Reviewer guidance
 
-**Nitrazepam apparent volume of distribution and plasma level achieved have incorrect units and values.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q76 unit 1/kg (dimensionless) vs [length] ** 3.**
 
-The volume of distribution (2.4 1/kg) has a dimensionless unit, which is physically incorrect for a volume parameter. The plasma level achieved (3.5 d) uses a time unit rather than a concentration unit. The record is abstract-only, so these summary statistics stand in for a fitted model. Extracted — nitrazepam: t1/2β 29 h, V 2.4 1/kg, Cmax 3.5 d, Ct 40 ng/ml.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nitrazepam: t1/2β 29 h, V/F 2.4 1/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of plasma concentration: this record has none, the second reading 114. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| beta-phase half-life | `Q60` · t1/2β | 29 | h | 1.044e+05 | s | h | llm_corrected (0.6) | Kangas_1979:abstract, Kangas_1979:abstract |
-| apparent volume of distribution during the beta-phase | `Q61` · V | 2.4 | 1/kg |  |  | 1/kg | llm_corrected (0.6) | Kangas_1979:abstract, Kangas_1979:abstract |
-| plasma level achieved | `Q32` · Cmax | 3.5 | d |  |  | d | llm (0.6) | Kangas_1979:abstract, Kangas_1979:abstract |
-| plasma concentration of nitrazepam | `Q75` · Ct | 40 | ng/ml |  |  | ng/ml | llm (0.6) | Kangas_1979:abstract, Kangas_1979:abstract |
+| beta-phase half-life | `Q60` · t1/2β | 29 | h | 1.044e+05 | s | h | half_life_rule (0.95) | Kangas_1979:abstract, Kangas_1979:abstract |
+| apparent volume of distribution during the beta-phase | `Q76` · V/F | 2.4 | 1/kg |  |  | 1/kg | llm_confirmed (0.6) | Kangas_1979:abstract, Kangas_1979:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,10 +68,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'apparent volume of distribution during the beta-phase' → Q61 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- unit_dimension_mismatch: 'plasma level achieved' → Q32 (unit '[time]' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped duplicate Q75 ('plasma concentration of nitrazepam (mean)', value 114) — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nitrazepam
+- unit_dimension_mismatch: 'apparent volume of distribution during the beta-phase' → Q76 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q60 ('plasma level rose at a rate proportional to the beta-phase half-life', value 3.5) — already have one for this compound
+- dropped unlinked row (NIL): 'plasma concentration of nitrazepam' — extend the ontology if this is a real PK parameter (source ['Kangas_1979:abstract', 'Kangas_1979:abstract', 'Kangas_1979:abstract'])
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=nitrazepam
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
@@ -86,26 +82,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.308 (4/13 fields) | 9 |
+| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
-| `gpt-oss-120b` | `parameters[apparent volume of distribution during the beta-phase].parameter_id` | Q61 | Q76 | mismatch |
-| `gpt-oss-120b` | `parameters[beta-phase half-life mean]` |  | 29 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[beta-phase half-life]` | 29 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[plasma concentration of nitrazepam].parameter_id` | Q75 | Q71 | mismatch |
-| `gpt-oss-120b` | `parameters[plasma concentration of nitrazepam].value` | 40 | 114 | mismatch |
-| `gpt-oss-120b` | `parameters[plasma level achieved]` | 3.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[single oral dose of nitrazepam]` |  | 5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[time to achieve]` |  | 3.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma concentration]` |  | 114 | only_one_extracted |
 
 </details>
 
@@ -119,13 +107,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q32 | fail | [mass] / [length] ** 3 | d ([time]) | ['Kangas_1979:abstract', 'Kangas_1979:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Kangas_1979:abstract', 'Kangas_1979:abstract'] |
-| C5_dimension_Q61 | fail | [length] ** 3 | 1/kg (dimensionless) | ['Kangas_1979:abstract', 'Kangas_1979:abstract'] |
-| C5_dimension_Q75 | pass | [mass] / [length] ** 3 |  | ['Kangas_1979:abstract', 'Kangas_1979:abstract'] |
+| C5_dimension_Q76 | fail | [length] ** 3 | 1/kg (dimensionless) | ['Kangas_1979:abstract', 'Kangas_1979:abstract'] |
+| C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -150,4 +137,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnitrazepam%5D%20Nitrazepam_Kangas1979_reference&body=Drug%3A%20nitrazepam%0ARecord%3A%20Nitrazepam_Kangas1979_reference%0APaper%3A%20Kangas_1979%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nitrazepam/Nitrazepam_Kangas1979_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:41 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:50 UTC</sub>

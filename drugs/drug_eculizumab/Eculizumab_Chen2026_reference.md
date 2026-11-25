@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The eculizumab record defines an inaccessible peripheral volume parameter without a linking transfer clearance.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="eculizumab" model-id="Eculizumab_Chen2026_reference" status="rejected" stale="false" population="" measured-compound="eculizumab" parameterization="apparent" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Chen J, Yang F, Li H, Pradhan R, Ortiz S. Population PK-PD Modeling of Danicopan
 
 ### Reviewer guidance
 
-**The eculizumab record defines an inaccessible peripheral volume parameter without a linking transfer clearance.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record specifies a peripheral volume of distribution (V2/F) of 232.0 L. However, the parameter list lacks the first-order rate constants required to connect this peripheral compartment to the central compartment. This structural gap leaves the peripheral compartment orphaned from the dose administration site. Extracted — eculizumab: CL/F 79.5 L/h, V1/F 163 L, V2/F 232 L.
+Extracted — eculizumab: CL/F 79.5 L/h, V1/F 163 L, V2/F 232 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Raltitrexed clearance is disputed: this record reports 2.06 l h−1, while the second reader reports 0.92, leaving the record needing review.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="raltitrexed" model-id="Raltitrexed_Blair2004_total_cohort" status="needs_review" stale="false" population="patients with advanced solid tumours" measured-compound="raltitrexed" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Blair EY, Rivory LP, Clarke SJ, McLachlan AJ. Population pharmacokinetics of ral
 
 ### Reviewer guidance
 
-**Raltitrexed clearance is disputed: this record reports 2.06 l h−1, while the second reader reports 0.92, leaving the record needing review.**
+**cross_check_disputed; x1_cross_check.**
 
-The record gives total raltitrexed clearance as 2.06 l h−1; the second reader gives 0.92. The cross-check was disputed, with agreement 0.857 and 0 of 1 reader(s) agreeing. Extracted — raltitrexed: CL 2.06 l h -1, V 6.65 l, Q 0.54 l h -1.
+Extracted — raltitrexed: CL 2.06 l h -1, V 6.65 l, Q 0.54 l h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 2.06, the second reading 0.92. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,7 +147,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | cross-check disputed by a second reader: verdict disputed, agreement 0.857, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.857 (6 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | cross-check contradicted by a second reader: verdict disputed; agreement 0.857 (6 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

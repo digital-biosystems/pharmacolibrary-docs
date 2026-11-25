@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;varenicline&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/&quot;},{&quot;label&quot;:&quot;Ravva_2009 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Varenicline_Fediuk2021_reference&quot;,&quot;label&quot;:&quot;Fediuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Fediuk2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Varenicline_Glatard2019_reference&quot;,&quot;label&quot;:&quot;Glatard_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Glatard2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lummis_2011_Rmax&quot;,&quot;label&quot;:&quot;Lummis_2011 \u00b7 Rmax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/pd_Lummis_2011_Rmax.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lummis_2011_Rmax_2&quot;,&quot;label&quot;:&quot;Lummis_2011 \u00b7 Rmax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/pd_Lummis_2011_Rmax_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Varenicline_Fediuk2021_reference&quot;,&quot;label&quot;:&quot;Fediuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Fediuk2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Varenicline_Glatard2019_reference&quot;,&quot;label&quot;:&quot;Glatard_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Glatard2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> No volume or clearance — not a compartmental population PK model.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit h⁻¹ (1 / [time]) vs [time].
 
 <div class="pk-model-meta" hidden drug="varenicline" model-id="Varenicline_Ravva2009_reference" status="rejected" stale="false" population="adult smokers" measured-compound="varenicline" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,15 +17,15 @@ Ravva P, Gastonguay MR, Tensfeldt TG, Faessel HM. Population pharmacokinetic ana
 
 ## Population and dosing
 
-**Population:** adult smokers · condition smoking (healthy adult smokers, incl. renal impairment subgroups) · age group adult · n = 1878.
+**Population:** adult smokers · condition smoking · age group adult · n = 1878.
 
-**Dosing:** 0.3, 3 mg/day, oral, multiple.
+**Dosing:** 0.3, 3 mg day -1, oral, multiple.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameters:** 7 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,16 +33,19 @@ Ravva P, Gastonguay MR, Tensfeldt TG, Faessel HM. Population pharmacokinetic ana
 
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
-| qCL | Q | 10.4 | L/h |  |
-| qCRCL | CLR | 0.54 | l h -1 |  |
-| qV2 | Q2 | 337 |  |  |
-| qV3 | Q3 | 78.1 |  |  |
-| qKa | kabs | 1.69 | 1/h | 38.9 (None% RSE) |
-| qAlag | tlag | 0.43 | h |  |
+| θ_CL | CL | 10.4 | l h⁻¹ | None (None% RSE) |
+| θ_CRCL | CLR | 0.54 | l h⁻¹ |  |
+| θ_black | equation variable | 0.92 | l |  |
+| θ_V2 | V2 | 337 | l | None (None% RSE) |
+| θ_V3 | V3 | 78.1 | l |  |
+| θ_Q | Q2 | 2.08 | l h⁻¹ |  |
+| θ_ka | t1/2ka | 1.69 | h⁻¹ |  |
+| θ_Al原因ag | t1/2α | 0.43 | h |  |
+| θ_other | θ_other | 0.71 |  |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.579). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,24 +55,27 @@ Ravva P, Gastonguay MR, Tensfeldt TG, Faessel HM. Population pharmacokinetic ana
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit h⁻¹ (1 / [time]) vs [time].**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper.
+A reported unit could not be converted (equation variable and t1/2ka ), so that value has no SI equivalent. Extracted — varenicline: CL 10.4 l h⁻¹, CLR 0.54 l h⁻¹, V2 337 l, V3 78.1 l, Q2 2.08 l h⁻¹, t1/2ka 1.69 h⁻¹, t1/2α 0.43 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has varenicline, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 059: this record has none, the second reading 19715.9; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|
-| qCL | `Q30` · Q | 10.4 | L/h | 2.889e-06 | m3/s | L/h | llm (0.6) | tab_2:row4:col1, tab_2:row4:col2 |  |
-| qCRCL | `Q26` · CLR | 0.54 | l h -1 | 1.5e-07 | m3/s | l/h | llm (0.6) | tab_2:row5:col1, tab_2:row5:col2 |  |
-| qV2 | `Q99` · Q2 | 337 |  |  |  |  | llm (0.6) | tab_2:row9:col1, tab_2:row9:col2 |  |
-| qV3 | `Q308` · Q3 | 78.1 |  |  |  |  | llm (0.6) | tab_2:row15:col1, tab_2:row15:col2 |  |
-| qKa | `Q49` · kabs | 1.69 | 1/h | 0.0004694 | 1/s | 1/h | llm (0.6) | tab_2:row21:col1, tab_2:row21:col2 | 38.9 (None% RSE) |
-| qAlag | `Q83` · tlag | 0.43 | h | 1548 | s | h | llm (0.6) | tab_2:row23:col1, tab_2:row23:col2 |  |
+| θ_CL | `Q22` · CL | 10.4 | l h⁻¹ | 2.889e-06 | m3/s | l/h | llm (0.6) | Ravva_2009_table_p6_2:row1:col1 | None (None% RSE) |
+| θ_CRCL | `Q26` · CLR | 0.54 | l h⁻¹ | 1.5e-07 | m3/s | l/h | llm (0.6) | Ravva_2009_table_p6_2:row2:col1 |  |
+| θ_black | `Q900` · equation variable | 0.92 | l |  |  | l | llm (0.6) | Ravva_2009_table_p6_2:row3:col1, Ravva_2009_table_p6_2:row9:col1 |  |
+| θ_V2 | `Q64` · V2 | 337 | l | 0.337 | m3 | l | llm (0.6) | Ravva_2009_table_p6_2:row6:col1 | None (None% RSE) |
+| θ_V3 | `Q77` · V3 | 78.1 | l | 0.0781 | m3 | l | llm (0.6) | Ravva_2009_table_p6_2:row12:col1 |  |
+| θ_Q | `Q99` · Q2 | 2.08 | l h⁻¹ | 5.778e-07 | m3/s | l/h | llm (0.6) | Ravva_2009_table_p6_2:row15:col1 |  |
+| θ_ka | `Q95` · t1/2ka | 1.69 | h⁻¹ |  |  | 1/h | llm (0.6) | Ravva_2009_table_p6_2:row18:col1 |  |
+| θ_Al原因ag | `Q59` · t1/2α | 0.43 | h | 1548 | s | h | llm (0.6) | Ravva_2009_table_p6_2:row20:col1 |  |
+| θ_other | `Q900` · θ_other | 0.71 |  |  |  |  |  |  |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -79,89 +85,55 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'w 2 CL' routed out of structural estimates ('Interindividual variance')
-- table section iiv: 'w 2 V2' routed out of structural estimates ('Interindividual variance')
-- table section iiv: 'w 2 Ka' routed out of structural estimates ('Interindividual variance')
-- table section iiv: 'covKa-V2' routed out of structural estimates ('Interindividual variance')
-- table section iiv: 'covCL-V2' routed out of structural estimates ('Interindividual variance')
-- table section iiv: 'covKa-CL' routed out of structural estimates ('Interindividual variance')
-- table section iiv: 'w 2 V3' routed out of structural estimates ('Interindividual variance')
-- table section iiv: 'w 2 Q' routed out of structural estimates ('Interindividual variance')
-- dropped duplicate Q30 ('qBlack', value '1.16') — already have one for this compound
-- dropped duplicate Q30 ('qOther', value '1.11') — already have one for this compound
-- dropped duplicate Q30 ('qWT', value '0.77') — already have one for this compound
-- dropped unlinked row (NIL): 'qAGE' — extend the ontology if this is a real PK parameter (source ['tab_2:row11:col1', 'tab_2:row11:col2'])
-- dropped duplicate Q30 ('qQ', value '2.08') — already have one for this compound
-- routed 's 2 add, 1' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
-- routed 's 2 prop, 1' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- routed 's 2 add, 2' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
-- routed 's 2 prop, 2' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- implicit units: 'qCL' → L/h (from the paper text: "Text: 'apparent intercompartmental clearance (Q/F; l h -1)' and 'Q/F, 2.08 l h -1'.")
-- implicit units: 'qV2' — the LLM proposed 'L', whose dimension does not fit Q99; left unset
-- implicit units: 'qV3' — the LLM proposed 'L', whose dimension does not fit Q308; left unset
-- implicit units: 'qKa' → 1/h (from the paper text: "Text: 'first-order absorption rate constant (Ka; h -1)' and 'Ka, 1.69 h -1'.")
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q30 (qCL); Q99 (qV2)
+- table section iiv: 'ω²_CL' routed out of structural estimates ('Interindividual variance')
+- table section iiv: 'ω²_V2' routed out of structural estimates ('Interindividual variance')
+- table section iiv: 'ω²_Ka' routed out of structural estimates ('Interindividual variance')
+- table section iiv: 'cov_Ka-V2' routed out of structural estimates ('Interindividual variance')
+- table section iiv: 'cov_CL-V2' routed out of structural estimates ('Interindividual variance')
+- table section iiv: 'cov_Ka-CL' routed out of structural estimates ('Interindividual variance')
+- table section iiv: 'ω²_V3' routed out of structural estimates ('Interindividual variance')
+- table section iiv: 'ω²_Q' routed out of structural estimates ('Interindividual variance')
+- kept covariate coefficient θ_other=0.71 (covariate other) — not an ontology parameter
+- dropped duplicate Q22 ('θ_WT', value '0.75') — already have one for this compound
+- routed 'θ_AGE' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- unit_dimension_mismatch: 'θ_ka' → Q95 (unit '1 / [time]' vs ontology '[time]') — route to review
+- dropped unlinked row (NIL): '013' — extend the ontology if this is a real PK parameter (source ['Ravva_2009_table_p6_1:row1:col2'])
+- dropped unlinked row (NIL): '016' — extend the ontology if this is a real PK parameter (source ['Ravva_2009_table_p6_1:row3:col2'])
+- dropped duplicate Q900 ('042', value '-823') — already have one for this compound
+- dropped unlinked row (NIL): '043' — extend the ontology if this is a real PK parameter (source ['Ravva_2009_table_p6_1:row5:col2', 'Ravva_2009_table_p6_1:row5:col3'])
+- dropped unlinked row (NIL): '059' — extend the ontology if this is a real PK parameter (source ['Ravva_2009_table_p6_1:row7:col2', 'Ravva_2009_table_p6_1:row7:col3'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=varenicline
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- status held at "Needs review" — not promoted
 
 **Extraction notes:**
-- unparsed cell tab_2:row4:col3 = '(10.2, 10.6)'
-- unparsed cell tab_2:row5:col3 = '(0.48, 0.59)'
-- unparsed cell tab_2:row6:col3 = '(1.11, 1.21)'
-- unparsed cell tab_2:row7:col3 = '(1.04, 1.18)'
-- unparsed cell tab_2:row9:col3 = '(309, 364)'
-- unparsed cell tab_2:row10:col3 = '(0.50, 1.05)'
-- unparsed cell tab_2:row11:col3 = '(-0.01, 0.30)'
-- unparsed cell tab_2:row12:col3 = '(0.83, 1.00)'
-- unparsed cell tab_2:row13:col3 = '(0.58, 0.89)'
-- unparsed cell tab_2:row15:col3 = '(61.9, 98.9)'
-- unparsed cell tab_2:row18:col3 = '(1.39, 3.79)'
-- unparsed cell tab_2:row21:col3 = '(1.27, 2.00)'
-- unparsed cell tab_2:row23:col3 = '(0.37, 0.46)'
-- unparsed cell tab_2:row25:col1 = '0.061 (24.7% CV)'
-- unparsed cell tab_2:row25:col3 = '(0.054, 0.069)'
-- unparsed cell tab_2:row26:col1 = '0.25 (50.0% CV)'
-- unparsed cell tab_2:row26:col3 = '(0.15, 0.40)'
-- unparsed cell tab_2:row27:col1 = '0.49 (70.1% CV)'
-- unparsed cell tab_2:row27:col3 = '(0.23, 0.97)'
-- unparsed cell tab_2:row28:col3 = '(-0.05, 0.53)'
-- unparsed cell tab_2:row29:col3 = '(-0.013, 0.021)'
-- unparsed cell tab_2:row30:col3 = '(-0.045, 0.040)'
-- unparsed cell tab_2:row34:col3 = '(0.155, 0.358)'
-- unparsed cell tab_2:row35:col1 = '0.030 (17.2% CV)'
-- unparsed cell tab_2:row35:col3 = '(0.024, 0.036)'
-- unparsed cell tab_2:row36:col3 = '(0.047, 5.89)'
-- unparsed cell tab_2:row37:col1 = '0.046 (21.5% CV)'
-- unparsed cell tab_2:row37:col3 = '(0.025, 0.128)'
+- table Ravva_2009_table_p6_2: unbound_uncertainty
+- table Ravva_2009_table_p6_1: units_need_context
+- table Ravva_2009_table_p6_1: unparsed_numeric_cell
+- companion parameter table p6_1 transcribed (8 record(s), model stage 'full')
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.125 (2/16 fields) | 14 |
+| `gpt-oss-120b` | not confirmed | 0.579 (11/19 fields) | 8 |
 
-<details><summary>14 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[qalag]` |  | 0.43 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qalag]` | 0.43 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qblack]` |  | 1.16 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qcl]` |  | 10.4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qcl]` | 10.4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qcrcl]` | 0.54 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qka]` |  | 1.69 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qka]` | 1.69 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qv2]` |  | 337 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qv2]` | 337 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qv3]` |  | 78.1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[qv3]` | 78.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | varenicline | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | varenicline | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[059]` |  | 19715.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ_age]` |  | 0.13 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ_al原因ag].parameter_id` | Q59 | Q83 | mismatch |
+| `gpt-oss-120b` | `parameters[θ_black].parameter_id` | Q900 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[θ_crcl]` | 0.54 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ_ka].parameter_id` | Q95 | Q49 | mismatch |
+| `gpt-oss-120b` | `parameters[θ_other]` | 0.71 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θ_q].parameter_id` | Q99 | Q30 | mismatch |
 
 </details>
 
@@ -175,15 +147,20 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['tab_2:row5:col1', 'tab_2:row5:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_2:row4:col1', 'tab_2:row4:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_2:row21:col1', 'tab_2:row21:col2'] |
-| C5_dimension_Q83 | pass | [time] |  | ['tab_2:row23:col1', 'tab_2:row23:col2'] |
-| C5_unit_missing_Q308 | fail | [length] ** 3 / [time] |  | ['tab_2:row15:col1', 'tab_2:row15:col2'] |
-| C5_unit_missing_Q99 | fail | [length] ** 3 / [time] |  | ['tab_2:row9:col1', 'tab_2:row9:col2'] |
+| C0_has_structural_params | pass |  | 7 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Ravva_2009_table_p6_2:row1:col1'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Ravva_2009_table_p6_2:row2:col1'] |
+| C5_dimension_Q59 | pass | [time] |  | ['Ravva_2009_table_p6_2:row20:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Ravva_2009_table_p6_2:row6:col1'] |
+| C5_dimension_Q77 | pass | [length] ** 3 |  | ['Ravva_2009_table_p6_2:row12:col1'] |
+| C5_dimension_Q95 | fail | [time] | h⁻¹ (1 / [time]) | ['Ravva_2009_table_p6_2:row18:col1'] |
+| C5_dimension_Q99 | pass | [length] ** 3 / [time] |  | ['Ravva_2009_table_p6_2:row15:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.4 | ['Ravva_2009_table_p6_2:row1:col1'] |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 10.4 L/h | ['Ravva_2009_table_p6_2:row1:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 337 L | ['Ravva_2009_table_p6_2:row6:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -207,4 +184,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvarenicline%5D%20Varenicline_Ravva2009_reference&body=Drug%3A%20varenicline%0ARecord%3A%20Varenicline_Ravva2009_reference%0APaper%3A%20Ravva_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_varenicline/Varenicline_Ravva2009_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:49 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:50 UTC</sub>

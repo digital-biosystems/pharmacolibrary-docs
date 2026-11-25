@@ -8,7 +8,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="nedocromil" model-id="Nedocromil_Neale1987_reference" status="needs_review" stale="false" population="healthy volunteers and asthmatic patients" measured-compound="nedocromil sodium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nedocromil" model-id="Nedocromil_Neale1987_reference" status="needs_review" stale="false" population="healthy volunteers and patients with reversible obstructive airways disease" measured-compound="nedocromil sodium" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Neale MG, Brown K, Foulds RA, Lal S, Morris DA, Thomas D. The pharmacokinetics of nedocromil sodium, a new drug for the treatment of reversible obstructive airways disease, in human volunteers and patients with reversible obstructive airways disease. British journal of clinical pharmacology 24(4):493–501 (1987).
@@ -16,7 +16,7 @@ Neale MG, Brown K, Foulds RA, Lal S, Morris DA, Thomas D. The pharmacokinetics o
 
 ## Population and dosing
 
-**Population:** healthy volunteers and asthmatic patients · condition reversible obstructive airways disease / healthy · age group adult · n = 24.
+**Population:** healthy volunteers and patients with reversible obstructive airways disease · condition reversible obstructive airways disease · age group adult · n = 24.
 
 ## Model
 
@@ -30,12 +30,12 @@ Neale MG, Brown K, Foulds RA, Lal S, Morris DA, Thomas D. The pharmacokinetics o
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| clearance | CL | 10.2 | L/h |
+| clearance | CL | 10.2 | ml min-1 kg-1 |
 | half-life | t1/2z | 2 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,9 +47,9 @@ Neale MG, Brown K, Foulds RA, Lal S, Morris DA, Thomas D. The pharmacokinetics o
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nedocromil: CL 10.2 L/h, t1/2z 2 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nedocromil: CL 10.2 ml min-1 kg-1, t1/2z 2 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nedocromil sodium, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of single dose: this record has none, the second reading 4. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -57,8 +57,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| clearance | `Q22` · CL | 10.2 | L/h | 2.833e-06 | m3/s | L/h | exact (1) | Neale_1987:abstract |
-| half-life | `Q57` · t1/2z | 2 | h | 7200 | s | h | llm (0.6) | Neale_1987:abstract |
+| clearance | `Q22` · CL | 10.2 | ml min-1 kg-1 | 1.19e-05 | m3/s | ml/(min·kg) | exact (1) | Neale_1987:abstract |
+| half-life | `Q57` · t1/2z | 2 | h | 7200 | s | h | half_life_rule (0.95) | Neale_1987:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -68,8 +68,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'ml min-1 kg-1' (CL)
-- implicit units: 'clearance' → L/h (from the popPK convention: 'No unit stated in text, caption, or footnotes. Total clearance in population PK is conventionally reported in L/h; value')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nedocromil sodium
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
@@ -78,24 +76,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[clearance]` | 10.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` |  | 10.2 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[dose]` |  | 4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half-life]` | 2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half‐life]` |  | 2 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | nedocromil sodium | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | nedocromil sodium | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[single dose]` |  | 4 | only_one_extracted |
 
 </details>
 
@@ -116,7 +108,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C5_dimension_Q57 | pass | [time] |  | ['Neale_1987:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.2 | ['Neale_1987:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 10.2 L/h | ['Neale_1987:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 42.8 L/h | ['Neale_1987:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -150,4 +142,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnedocromil%5D%20Nedocromil_Neale1987_reference&body=Drug%3A%20nedocromil%0ARecord%3A%20Nedocromil_Neale1987_reference%0APaper%3A%20Neale_1987%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nedocromil/Nedocromil_Neale1987_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 13:15 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:24 UTC</sub>

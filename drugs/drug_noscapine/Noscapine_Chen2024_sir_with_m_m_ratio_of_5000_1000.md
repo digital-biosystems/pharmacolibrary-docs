@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The noscapine model predicts a terminal half-life of 0.0397 and peak concentration of 0.000238, failing to match paper values of 8.42 and 3.68e-05.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 0.5, model 0.197); the model does not reproduce the paper's terminal half-life (paper 8.42, model 0.0397) (+3 more).
 
 <div class="pk-model-meta" hidden drug="noscapine" model-id="Noscapine_Chen2024_sir_with_m_m_ratio_of_5000_1000" status="needs_review" stale="false" population="healthy adults" measured-compound="noscapine" parameterization="apparent" topology="1C"></div>
 
@@ -61,13 +61,13 @@ Chen Z, Taubert M, Chen C, Boland J, Dong Q, Bilal M et al. A Semi-Mechanistic P
 
 ### Reviewer guidance
 
-**The noscapine model predicts a terminal half-life of 0.0397 and peak concentration of 0.000238, failing to match paper values of 8.42 and 3.68e-05.**
+**The model does not reproduce the paper's time of the peak (tmax) (paper 0.5, model 0.197); the model does not reproduce the paper's terminal half-life (paper 8.42, model 0.0397) (+3 more).**
 
-The simulated time to peak is 0.197, only 0.393 of the paper's 0.5. The terminal half-life is 0.0397, a ratio of 0.0047 to the paper's 8.42. The peak concentration is 0.000238, a ratio of 6.4781 to the paper's 3.68e-05. A second reader disagreed with the extraction of the clearance and volume parameters. Extracted — noscapine: D1 0.0663 h, CL/F 939 L/h, V1/F 49.6 L, Q/F 18.8 L/h, Q2/F 25.8 L/h, V3/F 31.2 L, Fab 83.1, ktr 13 1/h.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — noscapine: D1 0.0663 h, CL/F 939 L/h, V1/F 49.6 L, Q/F 18.8 L/h, Q2/F 25.8 L/h, V3/F 31.2 L, Fab 83.1, ktr 13 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has noscapine, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -207,13 +207,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.071, 0 of 1 reader(s) agree | 0.071 | cross-check disputed by a second reader: verdict disputed, agreement 0.071, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 3.68e-05 | 0.0002384 | 6.478 | μg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 4.69e-05 | 0.0002384 | 5.083 | μg/L→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | fail | 8.42 | 0.03972 | 0.0047 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 8.29 | 0.03972 | 0.0048 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.5 | 0.1965 | 0.393 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.5 | 0.1965 | 0.393 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.071 (2 of 28 compared fields agree, 24 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.071 | cross-check contradicted by a second reader: verdict disputed; agreement 0.071 (2 of 28 compared fields agree, 24 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 3.68e-05 | 0.0002384 | 6.478 | reported 36.8 μg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 4.69e-05 | 0.0002384 | 5.083 | reported 46.9 μg/L→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | fail | 8.42 | 0.03972 | 0.0047 | reported 8.42 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 8.29 | 0.03972 | 0.0048 | reported 8.29 h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.5 | 0.1965 | 0.393 | reported 0.5 h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.5 | 0.1965 | 0.393 | reported 0.5 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

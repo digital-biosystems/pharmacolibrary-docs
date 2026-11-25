@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Prednisolone clearance of 7.74 was rejected because Tan_2024 studied methotrexate polyglutamates, with prednisolone only a concomitant medication or covariate.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="prednisolone" model-id="Prednisolone_Tan2024_reference" status="rejected" stale="false" population="" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Tan JM, Upton RN, Foster DJR, Proudman SM, Dhir V, Wiese MD. Pharmacokinetic-pha
 
 ### Reviewer guidance
 
-**Prednisolone clearance of 7.74 was rejected because Tan_2024 studied methotrexate polyglutamates, with prednisolone only a concomitant medication or covariate.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The paper focuses on methotrexate polyglutamates, not prednisolone. The record lists prednisolone clearance of 7.74, central-compartment volume of 9.6 L, and absorption lag time of 0.36 hour; the lag time was not covered among the 3 parameters. A second reader disputed the verdict, with agreement of 0.333, and disagreed on several recorded values. Extracted — prednisolone: CL 7.74 L.hour À1, V1 9.6 L, tlag 0.36 hour.
+Extracted — prednisolone: CL 7.74 L.hour À1, V1 9.6 L, tlag 0.36 hour.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 7.74, the second reading 8.4; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | fail | 3 scholar param(s) emitted or defaulted | 2 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.333 (6 of 18 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check contradicted by a second reader: verdict disputed; agreement 0.333 (6 of 18 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Lamivudine was rejected because apparent clearance CL/F (1.03 l/h) is paired with bioavailability Fab (0.496), indicating double correction.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="lamivudine" model-id="Lamivudine_Chandasana2024_reference" status="rejected" stale="false" population="children with HIV-1" measured-compound="lamivudine" parameterization="apparent" topology="2C"></div>
 
@@ -62,13 +62,13 @@ Chandasana H, van Dijkman SC, Mehta R, Bush M, Rabie H, Flynn P et al. Populatio
 
 ### Reviewer guidance
 
-**Lamivudine was rejected because apparent clearance CL/F (1.03 l/h) is paired with bioavailability Fab (0.496), indicating double correction.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The record lists CL/F as total clearance adjusted for bioavailability and V1/F as central volume adjusted for bioavailability, alongside Fab, the fraction reaching systemic circulation. Applying bioavailability separately to already adjusted apparent parameters would double-correct them, matching the stated reason for rejection. Extracted — lamivudine: kabs 0.85 1/h, tlag 0.297 h, V1/F 13.6 l, CL/F 1.03 l/h, Fab 0.496, V2/F 10.1 l, Q/F 1.69 l/h, V3/F 23 l, … (+2).
+Extracted — lamivudine: kabs 0.85 1/h, tlag 0.297 h, V1/F 13.6 l, CL/F 1.03 l/h, Fab 0.496, V2/F 10.1 l, Q/F 1.69 l/h, V3/F 23 l, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abacavir/dolutegravir/lamivudine fixed-dose combination, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

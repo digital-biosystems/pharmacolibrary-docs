@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Factor VIII clearance of 0.000321 L/h and peripheral volume of 1150 L were flagged as implausible in scale, and a table statistic was mistaken for a study population, so the record was rejected.
+> '5' is a column of the estimates table, not a study population; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Kim2024_5" status="rejected" stale="false" population="humans" measured-compound="factor VIII" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Kim MS, Hajducek DM, Gilbert JC, Iorio A, Jilma B, Edginton AN. Kinetic Modeling
 
 ### Reviewer guidance
 
-**Factor VIII clearance of 0.000321 L/h and peripheral volume of 1150 L were flagged as implausible in scale, and a table statistic was mistaken for a study population, so the record was rejected.**
+**'5' is a column of the estimates table, not a study population; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-“5” is a column of the estimates table, not a study population; the table was split into one record per column, and “5” holds a statistic rather than a second set of estimates. Factor VIII clearance (0.000321 L/h) and peripheral volume (1150 L) triggered the finding of implausible clearance or volume magnitude, attributed to a unit/scale extraction error. The second reader disagreed about the primary analyte, identifying von willebrand factor rather than factor VIII, and supplied a different clearance estimate of 0.000242. Extracted — factor VIII: CL 0.000321 L/h, V1 5.8 L, Q 0.0342 L/h, V2 1.15e+03 L, kabs 0.0127.
+The table was split into one record per column, and '5' holds a statistic rather than a second set of estimates. None of the extracted parameters is von willebrand factor's own; they describe factor VIII. Extracted — factor VIII: CL 0.000321 L/h, V1 5.8 L, Q 0.0342 L/h, V2 1.15e+03 L, kabs 0.0127.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has BT200, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

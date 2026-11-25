@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the cited paper models a different drug, and the extracted volume of distribution is mislabeled as tenoxicam rather than ibuprofen.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Gonzalez1987_reference" status="rejected" stale="false" population="healthy subjects and patients with rheumatic diseases" measured-compound="ibuprofen" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Gonzalez JP, Todd PA. Tenoxicam. A preliminary review of its pharmacodynamic and
 
 ### Reviewer guidance
 
-**The record was rejected because the cited paper models a different drug, and the extracted volume of distribution is mislabeled as tenoxicam rather than ibuprofen.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The volume of distribution parameter is explicitly labeled 'apparent volume of distribution of tenoxicam' in the source text, despite being assigned to the ibuprofen compound field. A screening check confirmed the paper's subject is not ibuprofen, indicating the data does not pertain to the recorded drug. The second reader disagreed with the extraction of the clearance and volume values, citing discrepancies and missing entries for several parameters. Extracted — ibuprofen: CL 0.1 L/h, V/F 0.15 L/kg.
+Extracted — ibuprofen: CL 0.1 L/h, V/F 0.15 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.1, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

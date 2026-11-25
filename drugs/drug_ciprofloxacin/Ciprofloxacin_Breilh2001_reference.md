@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model record for ciprofloxacin lacks explicit values for bioavailability and absorption lag time, relying on library defaults instead of paper estimates.
+> F use library defaults, not estimates from this paper; t3_param_coverage (+1 more).
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Breilh2001_reference" status="needs_review" stale="false" population="patients with bronchial epithelioma" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Breilh D, Saux MC, Maire P, Vergnaud JM, Jelliffe RW. Mixed pharmacokinetic popu
 
 ### Reviewer guidance
 
-**The model record for ciprofloxacin lacks explicit values for bioavailability and absorption lag time, relying on library defaults instead of paper estimates.**
+**F use library defaults, not estimates from this paper; t3_param_coverage (+1 more).**
 
-The record fails parameter coverage because the transfer rate constants between central and peripheral compartments were not included in the model output. The bioavailability parameter was left at library defaults rather than using estimates from the paper. Consequently, the simulated profile relies on assumptions not supported by the study data, leading to the needs_review verdict. Extracted — ciprofloxacin: kabs 1.29 h⁻¹, kel 0.173 h⁻¹, k12 0.85 h⁻¹, k21 0.17 h⁻¹, V 39.5 l, Vss 146 l, CL 35.8 l/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ciprofloxacin: kabs 1.29 h⁻¹, kel 0.173 h⁻¹, k12 0.85 h⁻¹, k21 0.17 h⁻¹, V 39.5 l, Vss 146 l, CL 35.8 l/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

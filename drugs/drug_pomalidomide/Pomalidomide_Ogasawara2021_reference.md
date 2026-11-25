@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held for review because the second reader disagreed with the recorded absorption and absorption rate constant values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="pomalidomide" model-id="Pomalidomide_Ogasawara2021_reference" status="needs_review" stale="false" population="pediatric patients with recurrent or progressive primary brain tumors" measured-compound="pomalidomide" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Ogasawara K, Kassir N, Wang X, Benettaib B, Zhou S, Palmisano M et al. Recurrent
 
 ### Reviewer guidance
 
-**The record was held for review because the second reader disagreed with the recorded absorption and absorption rate constant values.**
+**cross_check_disputed; x1_cross_check.**
 
-The recorded absolute bioavailability is 0.380, but the second reader identified it as 0.454. The recorded absorption rate constant is 0.759 h-1, while the second reader read it as 1.45. This discrepancy in the core pharmacokinetic parameters caused the cross-check to fail with an agreement of 0.75. Extracted — pomalidomide: CL/F 3.92 L/h, V/F 42.7 L, kabs 0.759 h -1, Fab 0.38.
+Extracted — pomalidomide: CL/F 3.92 L/h, V/F 42.7 L, kabs 0.759 h -1, Fab 0.38.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[absorption].value`: this record has 0.380, the second reading 0.454; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -156,8 +156,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | pass | 7.33 | 7.549 | 1.03 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | pass | 7.33 | 7.549 | 1.03 | reported 7.33 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

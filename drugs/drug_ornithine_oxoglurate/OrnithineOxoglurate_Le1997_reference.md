@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for ornithine oxoglurate was rejected because its metabolite pathways lack defined rate parameters, rendering them unreachable.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="ornithine oxoglurate" model-id="OrnithineOxoglurate_Le1997_reference" status="rejected" stale="false" population="burn patients" measured-compound="ornithine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Le Bricon T, Coudray-Lucas C, Lioret N, Lim SK, Plassart F, Schlegel L et al. Or
 
 ### Reviewer guidance
 
-**The record for ornithine oxoglurate was rejected because its metabolite pathways lack defined rate parameters, rendering them unreachable.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure lists ornithine, proline, glutamine, and arginine as metabolites, but all links from the parent drug to these compartments have no assigned rate constants. Consequently, the model cannot calculate the formation rates for these metabolites, leaving them as unlinked compartments. Furthermore, the parameters for arginine, glutamine, and proline AUC were missing from the record, although a second reader identified values of 7.3, 20.4, and 41.4 respectively. The entire record was derived solely from the paper abstract, meaning no fitted model parameters were extracted. Extracted — ornithine oxoglurate: kabs 0.028 min-1, t1/2z 89 min, CL 26 mL/min, V 33.2 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ornithine oxoglurate: kabs 0.028 min-1, t1/2z 89 min, CL 26 mL/min, V 33.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ornithine_oxoglurate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

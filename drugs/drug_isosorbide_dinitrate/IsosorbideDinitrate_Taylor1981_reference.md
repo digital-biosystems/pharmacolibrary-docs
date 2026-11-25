@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The isosorbide 5-mononitrate absorption rate constant ka has no reported estimate and was defaulted, so the record was held back.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Taylor1981_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="isosorbide 5-mononitrate" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Taylor T, Chasseaud LF, Major R, Doyle E, Darragh A. Isosorbide 5-mononitrate ph
 
 ### Reviewer guidance
 
-**The isosorbide 5-mononitrate absorption rate constant ka has no reported estimate and was defaulted, so the record was held back.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-Ka used library defaults, not estimates from this paper; these values affect the simulated profile but are unsupported by this paper, and the record states they need extraction or explicit justification as conventions. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The model builder also assumed F=1 and Fm=1 with no molar correction and used first-order depot input; a second reader disputed the apparent rather than mechanistic parameterization and the reported parameter values, with agreement 0.056 and 0 of 1 readers agreeing. Extracted — isosorbide 5-mononitrate: t1/2z 4.2 h, CLm/F 132 ml min-1, V 48.4 L, Cmax 191 ng ml-1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is isosorbide dinitrate's own; they describe isosorbide 5-mononitrate. Extracted — isosorbide 5-mononitrate: t1/2z 4.2 h, CLm/F 132 ml min-1, V 48.4 L, Cmax 191 ng ml-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has isosorbide 5-mononitrate, the second reading isosorbide_5_mononitrate; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -167,7 +167,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.056, 0 of 1 reader(s) agree | 0.056 | cross-check disputed by a second reader: verdict disputed, agreement 0.056, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.056 (1 of 18 compared fields agree, 14 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.056 | cross-check contradicted by a second reader: verdict disputed; agreement 0.056 (1 of 18 compared fields agree, 14 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

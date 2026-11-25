@@ -32,21 +32,11 @@ Nilotinib is a protein kinase inhibitor used to treat chronic myelogenous leukem
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [DCunha_2019_BCRP](drugs/drug_nilotinib/pd_DCunha_2019_BCRP.md) | BCRP-mediated afatinib efflux ← nilotinib · inhibition effect | — | D'Cunha RR et al., Nilotinib Alters the Efflux Transporter…, Journal of pharmaceutical s… (2019) | [10.1016/j.xphs.2019.05.028](https://doi.org/10.1016/j.xphs.2019.05.028) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [DCunha_2019_Bcrp1](drugs/drug_nilotinib/pd_DCunha_2019_Bcrp1.md) | Bcrp1-mediated afatinib efflux ← nilotinib · inhibition effect | — | D'Cunha RR et al., Nilotinib Alters the Efflux Transporter…, Journal of pharmaceutical s… (2019) | [10.1016/j.xphs.2019.05.028](https://doi.org/10.1016/j.xphs.2019.05.028) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [DCunha_2019_Pgp](drugs/drug_nilotinib/pd_DCunha_2019_Pgp.md) | Pgp-mediated afatinib efflux ← nilotinib · inhibition effect | — | D'Cunha RR et al., Nilotinib Alters the Efflux Transporter…, Journal of pharmaceutical s… (2019) | [10.1016/j.xphs.2019.05.028](https://doi.org/10.1016/j.xphs.2019.05.028) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Giles_2013_TTP](drugs/drug_nilotinib/pd_Giles_2013_TTP.md) | time to progression ← nilotinib · model not identified | — | Giles FJ et al., Nilotinib population pharmacokinetics a…, European journal of clinica… (2013) | [10.1007/s00228-012-1385-4](https://doi.org/10.1007/s00228-012-1385-4) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Giles_2013_all_grade_elevations_in_lipase_levels](drugs/drug_nilotinib/pd_Giles_2013_all_grade_elevations_in_lipase_levels.md) | all-grade elevations in lipase levels ← nilotinib · model not identified | — | Giles FJ et al., Nilotinib population pharmacokinetics a…, European journal of clinica… (2013) | [10.1007/s00228-012-1385-4](https://doi.org/10.1007/s00228-012-1385-4) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Giles_2013_all_grade_elevations_in_total_bilirubin_levels](drugs/drug_nilotinib/pd_Giles_2013_all_grade_elevations_in_total_bilirubin_levels.md) | all-grade elevations in total bilirubin levels ← nilotinib · model not identified | — | Giles FJ et al., Nilotinib population pharmacokinetics a…, European journal of clinica… (2013) | [10.1007/s00228-012-1385-4](https://doi.org/10.1007/s00228-012-1385-4) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Giles_2013_response_rates](drugs/drug_nilotinib/pd_Giles_2013_response_rates.md) | response rates ← nilotinib · model not identified | — | Giles FJ et al., Nilotinib population pharmacokinetics a…, European journal of clinica… (2013) | [10.1007/s00228-012-1385-4](https://doi.org/10.1007/s00228-012-1385-4) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Giles_2013_time_to_complete_cytogenetic_response](drugs/drug_nilotinib/pd_Giles_2013_time_to_complete_cytogenetic_response.md) | time to complete cytogenetic response ← nilotinib · model not identified | — | Giles FJ et al., Nilotinib population pharmacokinetics a…, European journal of clinica… (2013) | [10.1007/s00228-012-1385-4](https://doi.org/10.1007/s00228-012-1385-4) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Giles_2013_time_to_major_molecular_response](drugs/drug_nilotinib/pd_Giles_2013_time_to_major_molecular_response.md) | time to major molecular response ← nilotinib · model not identified | — | Giles FJ et al., Nilotinib population pharmacokinetics a…, European journal of clinica… (2013) | [10.1007/s00228-012-1385-4](https://doi.org/10.1007/s00228-012-1385-4) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Hoshino-Yoshino_2011_efficacy](drugs/drug_nilotinib/pd_Hoshino_Yoshino_2011_efficacy.md) | efficacy ← nilotinib · direct Emax (saturable) effect | — | Hoshino-Yoshino A et al., Bridging from preclinical to clinical s…, Drug metabolism and pharmac… (2011) | [10.2133/dmpk.DMPK-11-RG-043](https://doi.org/10.2133/dmpk.DMPK-11-RG-043) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Hoshino-Yoshino_2011_efficacy_in_xenograft_mice](drugs/drug_nilotinib/pd_Hoshino_Yoshino_2011_efficacy_in_xenograft_mice.md) | efficacy in xenograft mice ← nilotinib · direct Emax (saturable) effect | — | Hoshino-Yoshino A et al., Bridging from preclinical to clinical s…, Drug metabolism and pharmac… (2011) | [10.2133/dmpk.DMPK-11-RG-043](https://doi.org/10.2133/dmpk.DMPK-11-RG-043) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ji_2009_CCNB2](drugs/drug_nilotinib/pd_Ji_2009_CCNB2.md) | CCNB2 ← nilotinib · direct sigmoid Emax (Hill) effect | — | Ji RR et al., Transcriptional profiling of the dose r…, PLoS computational biology (2009) | [10.1371/journal.pcbi.1000512](https://doi.org/10.1371/journal.pcbi.1000512) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Larson_2012_QTcF_change](drugs/drug_nilotinib/pd_Larson_2012_QTcF_change.md) | QTcF change on electrocardiograms from baseline ← nilotinib · stimulation effect | — | Larson RA et al., Population pharmacokinetic and exposure…, European journal of clinica… (2012) | [10.1007/s00228-011-1200-7](https://doi.org/10.1007/s00228-011-1200-7) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Sy_2025_BCR_ABL1](drugs/drug_nilotinib/pd_Sy_2025_BCR_ABL1.md) | BCR::ABL1 ← nilotinib · disease-progression model | — | Sy SKB et al., Population modelling of nilotinib expos…, British journal of clinical… (2025) | [10.1111/bcp.16381](https://doi.org/10.1111/bcp.16381) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Xia_2020_TR4](drugs/drug_nilotinib/pd_Xia_2020_TR4.md) | TR4 transactivation activity ← nilotinib · inhibition effect | — | Xia L et al., Identification of Small-Molecule Regula…, ACS omega (2020) | [10.1021/acsomega.0c04623](https://doi.org/10.1021/acsomega.0c04623) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Larson_2012_MMR](drugs/drug_nilotinib/pd_Larson_2012_MMR.md) | major molecular response at 12 months ← nilotinib · categorical (graded) response model | — | Larson RA et al., Population pharmacokinetic and exposure…, European journal of clinica… (2012) | [10.1007/s00228-011-1200-7](https://doi.org/10.1007/s00228-011-1200-7) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Larson_2012_total_bilirubin_elevation](drugs/drug_nilotinib/pd_Larson_2012_total_bilirubin_elevation.md) | all-grade total bilirubin elevation ← nilotinib · categorical (graded) response model | — | Larson RA et al., Population pharmacokinetic and exposure…, European journal of clinica… (2012) | [10.1007/s00228-011-1200-7](https://doi.org/10.1007/s00228-011-1200-7) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mauro_2025_BCR_ABL1_autophosphorylation](drugs/drug_nilotinib/pd_Mauro_2025_BCR_ABL1_autophosphorylation.md) | BCR-ABL1 autophosphorylation biomarker turnover ← nilotinib | — | Mauro M et al., Pharmacokinetic profile of novel reduce…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04777-6](https://doi.org/10.1007/s00280-025-04777-6) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,43 +50,51 @@ Nilotinib is a protein kinase inhibitor used to treat chronic myelogenous leukem
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:18 | 5:59 | 0/1/0 | 15/0/0 | 0/0/0 | 154,001/31,342 | openai / gpt-6-luna | 7 | 1/6 | 6/1 | 0 |
+| 2026-11-24 02:25 | 0:16 | 0/1/0 | 5/0/0 | 0/0/0 | 6,618/1,719 | einfracz / qwen3.8-27b | 7 | 1/6 | 6/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 17 matched, 17 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Giles_2013.pdf` | Giles FJ et al., Nilotinib population pharmacokinetics a…, European journal of clinica… (2013) | popPK | 10 | [10.1007/s00228-012-1385-4](https://doi.org/10.1007/s00228-012-1385-4) | [23052406](https://pubmed.ncbi.nlm.nih.gov/23052406) | This is a human nilotinib population-PK study, but no numeric disposition parameter values are provided in the evidence. |
-| `Larson_2012.pdf` | Larson RA et al., Population pharmacokinetic and exposure…, European journal of clinica… (2012) | popPK | 10 | [10.1007/s00228-011-1200-7](https://doi.org/10.1007/s00228-011-1200-7) | [22207416](https://pubmed.ncbi.nlm.nih.gov/22207416) | The human population-PK study reports relative bioavailability of 0.84, but detailed disposition parameter estimates are not provided. |
-| `Li_2015.pdf` | Li CH et al., Clinical trial simulation to evaluate p…, Journal of clinical pharmac… (2015) | popPK | 8 | [10.1002/jcph.449](https://doi.org/10.1002/jcph.449) | [25511575](https://pubmed.ncbi.nlm.nih.gov/25511575) | The study simulates nilotinib population pharmacokinetics, but no numeric nilotinib disposition parameter values are provided. |
+| `Sy_2025.pdf` | Sy SKB et al., Population modelling of nilotinib expos…, British journal of clinical… (2025) | popPK | 6 | [10.1111/bcp.16381](https://doi.org/10.1111/bcp.16381) | [39739907](https://pubmed.ncbi.nlm.nih.gov/39739907) | The study utilizes empirical Bayes estimates from a population PK model for nilotinib, but the specific numeric PK parameter values (CL, V, etc.) are not reported in the provided abstract or evidence text. |
 
-<sub>queue written 2026-10-07 03:13 UTC</sub>
+<sub>queue written 2026-11-24 02:25 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Alshurafa_2026 | irrelevant | 0 | 0 | This study evaluates renal outcomes and reports no quantitative nilotinib pharmacokinetic parameters. |
-| popPK | Banerjee_2021 | irrelevant | 0 | 0 | The study reports computational and cell-culture antiviral results, not nilotinib pharmacokinetic parameters. |
+| popPK | Alshurafa_2026 | irrelevant | 0 | 0 | The study evaluates renal function (eGFR) and nephrotoxicity outcomes, not pharmacokinetic parameters such as clearance or volume of distribution for nilotinib. |
+| PGx | Alshurafa_2026 | not_relevant | 0 | 0 | The study investigates the effect of TKIs on renal function (eGFR) in CML patients but does not report on pharmacogenomic variants or genetic factors influencing the pharmacokinetics or pharmacodynamics of nilotinib. |
+| popPK | Banerjee_2021 | irrelevant | 0 | 0 | This is a computational and in-vitro antiviral activity study (EC50/CC50) with no pharmacokinetic parameters reported. |
+| PGx | Banerjee_2021 | not_relevant | 0 | 0 | The paper focuses on the in vitro antiviral activity and computational binding of nilotinib against SARS-CoV-2, without reporting any pharmacogenomic effects on its pharmacokinetics or pharmacodynamics. |
 | popPK | Brooks_2021 | irrelevant | 0 | 0 | Nilotinib is administered for survival studies, but no nilotinib disposition parameters or numeric PK values are reported. |
-| popPK | DCunha_2019 | irrelevant | 0 | 0 | Nilotinib is a coadministered transporter inhibitor; the reported pharmacokinetic parameters are for afatinib. |
+| popPK | DCunha_2019 | irrelevant | 2 | 0 | Nilotinib is used as a co-administered inhibitor to study the pharmacokinetics of afatinib, not as the primary subject for PK parameter extraction. |
+| PGx | DCunha_2019 | not_relevant | 0 | 0 | The study evaluates a drug-drug interaction (nilotinib altering afatinib pharmacokinetics via transporters) rather than a pharmacogenomic effect of a genetic variant on nilotinib's PK/PD. |
 | popPK | Dogra_2024 | irrelevant | 0 | 0 | no_text gate: extracted text is mostly non-alphabetic (garbled or binary) |
-| popPK | Giles_2013 | relevant | 10 | 0 | This is a human nilotinib population-PK study, but no numeric disposition parameter values are provided in the evidence. |
-| popPK | Hoshino-Yoshino_2011 | irrelevant | 2 | 0 | It compares exposure AUCs but reports no nilotinib disposition parameters or readable numeric values in the provided evidence. |
+| popPK | Giles_2013 | relevant | 10 | 2 | The paper describes a population PK study for nilotinib in humans, but the specific quantitative parameter values (CL, V, etc.) are not listed in the provided abstract/evidence text. |
+| PGx | Giles_2013 | not_relevant | 0 | 0 | The study reports population pharmacokinetics and exposure-response relationships but does not investigate or report any effect of gene variants or genotypes on nilotinib PK/PD parameters. |
+| popPK | Hoshino-Yoshino_2011 | irrelevant | 1 | 0 | The paper is a comparative toxicokinetic review focusing on exposure (AUC) and efficacy correlations rather than reporting specific quantitative population-pharmacokinetic parameters (CL, V, ka, t1/2) for nilotinib. |
+| PGx | Hoshino-Yoshino_2011 | not_relevant | 0 | 0 | The paper discusses preclinical-to-clinical PK/PD bridging for tyrosine kinase inhibitors but does not report any pharmacogenomic effects or gene-variant specific data. |
 | popPK | Ji_2009 | irrelevant | 0 | 0 | This is an in-vitro transcriptional dose-response study and reports no nilotinib disposition parameters. |
-| popPK | Li_2015 | relevant | 8 | 0 | The study simulates nilotinib population pharmacokinetics, but no numeric nilotinib disposition parameter values are provided. |
-| popPK | Mauro_2025 | relevant | 10 | 2 | The human nilotinib PopPK model is relevant, but its numeric model parameter estimates are only in supplementary material not provided here. |
+| popPK | Larson_2012 | relevant | 10 | 2 | The paper describes a population PK study of nilotinib in humans, but the abstract only provides relative bioavailability and exposure differences, lacking specific numeric values for CL, V, or Ka. |
+| PGx | Larson_2012 | not_relevant | 0 | 0 | The paper analyzes population pharmacokinetics and exposure-response relationships but explicitly states that demographics did not affect pharmacokinetics and does not report any genetic variant or genotype analysis. |
+| popPK | Li_2015 | irrelevant | 3 | 0 | The study is a simulation using known PK parameters to evaluate trial design, not a primary study reporting new quantitative disposition parameters or models for nilotinib, and no numeric PK values for nilotinib are provided in the evidence. |
+| PGx | Li_2015 | not_relevant | 0 | 0 | The paper is a methodological simulation study on trial design for PK analysis and does not report any pharmacogenomic effects or genetic variants. |
+| popPK | Mauro_2025 | relevant | 9 | 3 | The study presents a PopPK model for nilotinib in humans, but the specific numeric parameter values (CL, V, etc.) are explicitly stated to be in the Supplemental Information, Table 2, which is not included in the evidence. |
+| PGx | Mauro_2025 | not_relevant | 0 | 0 | The paper analyzes the impact of food intake and formulation type (tablets vs. capsules) on nilotinib PK, but does not report any pharmacogenomic effects of gene variants. |
 | popPK | Pagan_2019 | relevant | 8 | 1 | This is a human nilotinib PK study, but no numeric disposition parameters are readable here and concentration results appear in figures not provided. |
-| popPK | Sy_2025 | irrelevant | 1 | 0 | This is an exposure-response disease-model study and reports no numeric nilotinib disposition parameters. |
+| popPK | Sy_2025 | relevant | 6 | 2 | The study utilizes empirical Bayes estimates from a population PK model for nilotinib, but the specific numeric PK parameter values (CL, V, etc.) are not reported in the provided abstract or evidence text. |
+| PGx | Sy_2025 | not_relevant | 0 | 0 | The study focuses on population PK/PD modeling and BCR::ABL1 response prediction based on treatment line, but does not analyze or report the impact of genetic variants or genotypes on nilotinib pharmacokinetics or pharmacodynamics. |
 | popPK | Xia_2020 | irrelevant | 0 | 0 | The study reports nilotinib binding and activity values, not pharmacokinetic disposition parameters. |
 | popPK | de_2014 | irrelevant | 0 | 0 | The study models sunitinib and its metabolite; nilotinib is only mentioned as prior comparative evidence. |
 
@@ -105,4 +103,4 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnilotinib%5D&body=Drug%3A%20nilotinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nilotinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 03:13 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 02:25 UTC</sub>

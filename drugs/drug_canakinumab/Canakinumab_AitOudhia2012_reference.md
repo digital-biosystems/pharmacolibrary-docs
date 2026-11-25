@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The canakinumab record was rejected because the Km parameter has a dimension mismatch between its substance concentration unit and its mass clearance meaning.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit day⁻¹ (1 / [time]) vs [time]; Q1 unit nmol/l ([substance] / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="canakinumab" model-id="Canakinumab_AitOudhia2012_reference" status="rejected" stale="false" population="patients with rheumatoid arthritis" measured-compound="canakinumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Ait-Oudhia S, Lowe PJ, Mager DE. Bridging Clinical Outcomes of Canakinumab Treat
 
 ### Reviewer guidance
 
-**The canakinumab record was rejected because the Km parameter has a dimension mismatch between its substance concentration unit and its mass clearance meaning.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit day⁻¹ (1 / [time]) vs [time]; Q1 unit nmol/l ([substance] / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The Km parameter is labeled with a unit of nmol/l but is defined as a measure of affinity, causing a dimension conflict with the expected mass-based units. This unit error prevented the value from being converted to standard SI units, so the parameter was held back. A second reader also disagreed on several missing parameter values and identified different ontology codes for the absorption half-life and dissociation constant. Extracted — canakinumab: t1/2ka 0.266 day⁻¹, V1 3.71 l, V 2.24 l, CL 0.104 l/day, Km 0.38 nmol/l, t1/2γ 1.92 h, V2 2.71 L, Q 0.174 L/day, … (+1).
+A reported unit could not be converted (t1/2ka  and Km), so that value has no SI equivalent. Extracted — canakinumab: t1/2ka 0.266 day⁻¹, V1 3.71 l, V 2.24 l, CL 0.104 l/day, Km 0.38 nmol/l, t1/2γ 1.92 h, V2 2.71 L, Q 0.174 L/day, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has canakinumab, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

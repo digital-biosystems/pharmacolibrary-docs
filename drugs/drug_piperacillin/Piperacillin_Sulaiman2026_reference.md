@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Second readership disagreement prevented publication: one reader identified missing parameters and a compound mismatch, while the other validated the piperacillin-only structure.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="piperacillin" model-id="Piperacillin_Sulaiman2026_reference" status="needs_review" stale="false" population="critically ill adults with sepsis or septic shock" measured-compound="piperacillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Sulaiman H, Wölky SA, Rozali MA, Adiraju SKS, Hasan MS, Hernandez-Mitre MP et a
 
 ### Reviewer guidance
 
-**Second readership disagreement prevented publication: one reader identified missing parameters and a compound mismatch, while the other validated the piperacillin-only structure.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists 27.15 L for Vss but labels it "Vtaz", creating a mismatch between the parameter name and the stated steady-state volume meaning. A second reader disagreed on the dose compound, arguing it should be piperacillin/tazobactam rather than piperacillin, and cited a missing additive parameter of 0.4. This reader also identified a missing piperacillin volume of 25.53 L and rejected the recorded 24.1 L average Vd. The conflicting interpretations of the model's structure and parameter extraction resulted in a 0.5 agreement ratio. Extracted — piperacillin: CL 8.78 L/h, Vss 27.1 L, V 24.1 L.
+Extracted — piperacillin: CL 8.78 L/h, Vss 27.1 L, V 24.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has piperacillin, the second reading piperacillin/tazobactam; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -171,7 +171,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (5 of 10 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (5 of 10 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

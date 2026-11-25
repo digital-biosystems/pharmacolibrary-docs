@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Noh_2018_MPA](drugs/drug_indobufen/pd_Noh_2018_MPA.md) | maximal platelet aggregation ← S- and R-indobufen · direct sigmoid Emax (Hill) effect | — | Noh YH et al., Prediction of the human, Translational and clinical… (2018) | [10.12793/tcp.2018.26.4.160](https://doi.org/10.12793/tcp.2018.26.4.160) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Noh_2018_MPA](drugs/drug_indobufen/pd_Noh_2018_MPA.md) | maximal platelet aggregation ← S- and R-indobufen · direct sigmoid Emax (Hill) effect | — | Noh YH et al., Prediction of the human, Translational and clinical… (2018) | [10.12793/tcp.2018.26.4.160](https://doi.org/10.12793/tcp.2018.26.4.160) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

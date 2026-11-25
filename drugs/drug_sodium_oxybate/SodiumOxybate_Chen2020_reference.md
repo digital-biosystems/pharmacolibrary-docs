@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the peripheral volume of distribution lacks a valid unit and the model structure has an unreachable compartment.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/h ([mass] / [time]) vs [mass] / [time]; Q64 unit units ([luminosity] / [length] ** 2) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="sodium oxybate" model-id="SodiumOxybate_Chen2020_reference" status="rejected" stale="false" population="children and adults with narcolepsy and healthy adults" measured-compound="sodium oxybate" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Chen C, Rosen CL, Ruoff C, Boyce LH, Parvataneni R, Zomorodi K et al. Population
 
 ### Reviewer guidance
 
-**The record was rejected because the peripheral volume of distribution lacks a valid unit and the model structure has an unreachable compartment.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/h ([mass] / [time]) vs [mass] / [time]; Q64 unit units ([luminosity] / [length] ** 2) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The peripheral volume parameter, listed as 5.33 with the unit 'units', is missing a standard volume dimension. Additionally, the model contains an unreachable compartment that has no path from the dose. These structural and dimensional flaws prevented the model from being accepted. Extracted — sodium oxybate: Vmax 1.51e+03 mg/h, Km 22 mg/L, V1 29.5 L, V2 5.33 units, kabs 4.12 h−1, Fab 1 NA, kcomp 0.0968 h−1.
+A reported unit could not be converted (Vmax, Km, V2 and Fab), so that value has no SI equivalent. Extracted — sodium oxybate: Vmax 1.51e+03 mg/h, Km 22 mg/L, V1 29.5 L, V2 5.33 units, kabs 4.12 h−1, Fab 1 NA, kcomp 0.0968 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium oxybate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

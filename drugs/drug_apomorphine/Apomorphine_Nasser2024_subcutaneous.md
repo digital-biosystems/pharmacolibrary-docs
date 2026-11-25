@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Apomorphine’s molecular-weight value of 7.34 mg has units of mass rather than mass per amount, causing a dimensional mismatch and rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q374 unit mg ([mass]) vs [mass] / [substance]; Q19 unit mg ([mass]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Nasser2024_subcutaneous" status="rejected" stale="false" population="hypothetical subjects" measured-compound="apomorphine" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Nasser A, Gomeni R, Ceresoli-Borroni G, Xie L, Busse GD, Melyan Z et al. Model-b
 
 ### Reviewer guidance
 
-**Apomorphine’s molecular-weight value of 7.34 mg has units of mass rather than mass per amount, causing a dimensional mismatch and rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q374 unit mg ([mass]) vs [mass] / [substance]; Q19 unit mg ([mass]) vs [mass] * [time] / [length] ** 3.**
 
-The record also reports apomorphine AUCt as 1 mg, although an area under a concentration–time curve has concentration-times-time dimensions, not mass. A reported unit could not be converted to SI, leaving a parameter without an SI value; the record does not identify which parameter. The second reader listed the dose compound and primary analyte as unknown and supplied no values for the disputed parameters. Extracted — apomorphine: MW 7.34 mg, AUCt 1 mg, tmax 1 min, CL/F 191 L/h, V/F 153 L, kabs 14.9 h−1, Fab 1.
+A reported unit could not be converted (MW and AUCt), so that value has no SI equivalent. Extracted — apomorphine: MW 7.34 mg, AUCt 1 mg, tmax 1 min, CL/F 191 L/h, V/F 153 L, kabs 14.9 h−1, Fab 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has apomorphine, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

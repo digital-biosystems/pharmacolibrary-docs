@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ethanol’s Ae parameter is recorded as 0.3%, a dimensionless fraction where the amount-excreted parameter requires mass, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q91 unit % (dimensionless) vs [mass].
 
 <div class="pk-model-meta" hidden drug="ethanol" model-id="Ethanol_Holford1987_reference" status="rejected" stale="false" population="adults" measured-compound="ethanol" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Holford NH. Clinical pharmacokinetics of ethanol. Clinical pharmacokinetics 13(5
 
 ### Reviewer guidance
 
-**Ethanol’s Ae parameter is recorded as 0.3%, a dimensionless fraction where the amount-excreted parameter requires mass, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q91 unit % (dimensionless) vs [mass].**
 
-Ae is the amount of the administered dose excreted unchanged; its recorded percent unit is dimensionless, conflicting with the required mass dimension. The record came from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — ethanol: V 37 L/70 kg, Ae 0.3 %, fe 0.1 %, E 0.2, CL 0.16 L/h, CLR 0.06 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ethanol: V 37 L/70 kg, Ae 0.3 %, fe 0.1 %, E 0.2, CL 0.16 L/h, CLR 0.06 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ethanol, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

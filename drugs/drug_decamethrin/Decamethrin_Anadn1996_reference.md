@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The 4′-HO-deltamethrin metabolism link has no link parameter (none), leaving the metabolite unreachable and the record rejected.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="decamethrin" model-id="Decamethrin_Anadn1996_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="deltamethrin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Anadón A, Martinez-Larrañaga MR, Fernandez-Cruz ML, Diaz MJ, Fernandez MC, Mar
 
 ### Reviewer guidance
 
-**The 4′-HO-deltamethrin metabolism link has no link parameter (none), leaving the metabolite unreachable and the record rejected.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record links deltamethrin to 4′-HO-deltamethrin by metabolism, but the link parameter is listed as none, so the metabolite has no path from the dose. Only the abstract was read, so reported summary statistics stood in for a fitted model. A second reader disagreed about whether the record contained the reported values 2.32, 33.0, 14.43, 1.83, and 0.11 for tissue-to-plasma exposure, terminal half-life, oral bioavailability, time to peak concentration, and total plasma clearance. Extracted — decamethrin: t1/2z 33 hr, V2 5.33 liters, V 2.04 liters, CL 0.11 liter/hr, tmax 1.83 hr, Fab 14.4 %, Kp 2.32 deltamethrin, medulla oblongata, AUC ratio 295 deltamethrin, hypothalamus; 4'-HO-deltamethrin: t1/2z 25.7 hr.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — decamethrin: t1/2z 33 hr, V2 5.33 liters, V 2.04 liters, CL 0.11 liter/hr, tmax 1.83 hr, Fab 14.4 %, Kp 2.32 deltamethrin, medulla oblongata, AUC ratio 295 deltamethrin, hypothalamus; 4'-HO-deltamethrin: t1/2z 25.7 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auctissue/aucplasma: this record has 2.32, the second reading none; it also differs on 12 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -184,4 +184,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdecamethrin%5D%20Decamethrin_Anadn1996_reference&body=Drug%3A%20decamethrin%0ARecord%3A%20Decamethrin_Anadn1996_reference%0APaper%3A%20Anad%C3%B3n_1996%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_decamethrin/Decamethrin_Anadn1996_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 12:44 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 20:32 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> A second reader disagreed with the identified dose compound and primary analyte for mecillinam, disputing the record's validation.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="mecillinam" model-id="Mecillinam_Koumaki2023_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="mecillinam" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Koumaki V, Dokoumetzidis A, Angelerou MGF, Baka S, Balakrishnan I, Tsakris A. Ph
 
 ### Reviewer guidance
 
-**A second reader disagreed with the identified dose compound and primary analyte for mecillinam, disputing the record's validation.**
+**cross_check_disputed; x1_cross_check.**
 
-The record identifies mecillinam as the measured compound and primary analyte, but a second reader marked both as unknown. This disagreement resulted in an agreement score of 0.833, meaning 0 of 1 readers agreed with the initial classification. The conflicting identification of the study's central molecule caused the record to be held back. Extracted — mecillinam: CL 3.45 mL/min/kg, V1 123 mL/kg, Q 6.74 mL/min/kg, V2 80.6 mL/kg.
+Extracted — mecillinam: CL 3.45 mL/min/kg, V1 123 mL/kg, Q 6.74 mL/min/kg, V2 80.6 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mecillinam, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.833 (10 of 12 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | cross-check contradicted by a second reader: verdict disputed; agreement 0.833 (10 of 12 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

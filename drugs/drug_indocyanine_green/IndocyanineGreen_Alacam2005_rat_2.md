@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Rejected because the two-compartment model contains an unreachable compartment, rendering the structure invalid.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Alacam2005_rat_2" status="rejected" stale="false" population="Fischer rats with adenocarcinoma tumors" measured-compound="indocyanine green" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Alacam2005_rat_2" status="rejected" stale="false" population="Fischer rats with adenocarcinoma" measured-compound="indocyanine green" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Alacam B, Yazici B, Intes X, Chance B. Analysis of ICG Pharmacokinetics in Cancerous Tumors using NIR Optical Methods. Conference proceedings : ... Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual Conference 2006:62–65 (2005).
@@ -18,6 +18,8 @@ Alacam B, Yazici B, Intes X, Chance B. Analysis of ICG Pharmacokinetics in Cance
 ## Population and dosing
 
 **Population:** Fischer rats with adenocarcinoma tumors · condition adenocarcinoma (cancerous tumors) · age group adult · n = 4.
+
+**Dosed compound ≠ measured compound:** dosed indocyanine_green, measured indocyanine green.
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -50,13 +52,13 @@ Alacam B, Yazici B, Intes X, Chance B. Analysis of ICG Pharmacokinetics in Cance
 
 ### Reviewer guidance
 
-**Rejected because the two-compartment model contains an unreachable compartment, rendering the structure invalid.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a two-compartment topology for indocyanine green but lacks a path from the dose site to one of the compartments. Specifically, the peripheral compartment (V2 = 2.42 L) is not linked to the central compartment (V1 = 25.4 L) or the elimination route. The second reader also flagged discrepancies in the assignment of the elimination rate constant and central volume, though the structural defect is the primary cause of rejection. Extracted — indocyanine green: kabs 3.54 1/s, kel 2.98 1/s, V1 25.4 L, V2 2.42 L.
+Extracted — indocyanine green: kabs 3.54 1/s, kel 2.98 1/s, V1 25.4 L, V2 2.42 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indocyanine green, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -155,4 +157,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindocyanine_green%5D%20IndocyanineGreen_Alacam2005_rat_2&body=Drug%3A%20indocyanine_green%0ARecord%3A%20IndocyanineGreen_Alacam2005_rat_2%0APaper%3A%20Alacam_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indocyanine_green/IndocyanineGreen_Alacam2005_rat_2%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 21:10 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:02 UTC</sub>

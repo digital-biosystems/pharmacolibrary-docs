@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The second compartment in this trastuzumab emtansine model is structurally unreachable from the dose, rendering the two-compartment topology invalid.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="trastuzumab emtansine" model-id="TrastuzumabEmtansine_Quartino2019_reference" status="rejected" stale="false" population="" measured-compound="trastuzumab_emtansine" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Quartino AL, Li H, Kirschbrown WP, Mangat R, Wada DR, Garg A et al. Population p
 
 ### Reviewer guidance
 
-**The second compartment in this trastuzumab emtansine model is structurally unreachable from the dose, rendering the two-compartment topology invalid.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists a volume of distribution for the peripheral compartment of 2.97 L, but the structural check identified this compartment as orphaned. This means there is no elimination or distribution path connecting the central compartment to this peripheral space. Consequently, the model structure fails to support valid pharmacokinetic simulation for this molecule. Extracted — trastuzumab emtansine: CL 0.127 L/day, V1 2.62 L, V2 2.97 L.
+Extracted — trastuzumab emtansine: CL 0.127 L/day, V1 2.62 L, V2 2.97 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q30: this record has none, the second reading 0.544; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected due to apparent-parameter coherence violation, as the metabolite clearance and volume of distribution are reported with bioavailability adjustments.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="rifapentine" model-id="Rifapentine_Savic2017_reference" status="rejected" stale="false" population="adults with pulmonary tuberculosis" measured-compound="rifapentine" parameterization="apparent" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Savic RM, Weiner M, MacKenzie WR, Engle M, Whitworth WC, Johnson JL et al. Defin
 
 ### Reviewer guidance
 
-**The record was rejected due to apparent-parameter coherence violation, as the metabolite clearance and volume of distribution are reported with bioavailability adjustments.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-Metabolite parameters CLm/F and Vm/F are recorded as 1.91 L/h and 8.83 L, explicitly defined as apparent values divided by the fraction metabolized (fm). This creates a double correction because the system availability fraction (fm) is already accounted for in the parent drug clearance parameters CL/F and V/F. The review identified this structural inconsistency, where metabolite apparent parameters are used despite the parent drug having explicit bioavailability-corrected clearance and volume parameters. Extracted — rifapentine: CL/F 1.86 L/h, V/F 12.8 L, kabs 0.07 1/h, CLm/F 1.91 L/h, Vm/F 8.83 L, Fab 1 reference, Frel 0.74, fm 1.34 fraction.
+A reported unit could not be converted (Fab and fm), so that value has no SI equivalent. Extracted — rifapentine: CL/F 1.86 L/h, V/F 12.8 L, kabs 0.07 1/h, CLm/F 1.91 L/h, Vm/F 8.83 L, Fab 1 reference, Frel 0.74, fm 1.34 fraction.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rifapentine, the second reading unknown; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

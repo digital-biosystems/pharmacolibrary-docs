@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zvidzayi_2021_AUEC](drugs/drug_halcinonide/pd_Zvidzayi_2021_AUEC.md) | skin blanching response ← halcinonide · direct Emax (saturable) effect | — | Zvidzayi M et al., A Novel Approach to Assess the Potency…, Pharmaceutics (2021) | [10.3390/pharmaceutics13091456](https://doi.org/10.3390/pharmaceutics13091456) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zvidzayi_2021_AUEC](drugs/drug_halcinonide/pd_Zvidzayi_2021_AUEC.md) | skin blanching response ← halcinonide · direct Emax (saturable) effect | — | Zvidzayi M et al., A Novel Approach to Assess the Potency…, Pharmaceutics (2021) | [10.3390/pharmaceutics13091456](https://doi.org/10.3390/pharmaceutics13091456) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

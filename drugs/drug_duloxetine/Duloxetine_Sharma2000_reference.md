@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;duloxetine&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/&quot;},{&quot;label&quot;:&quot;Sharma_2000 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Sharma2000_reference&quot;,&quot;label&quot;:&quot;Sharma_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Sharma2000_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Duloxetine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Shibata2023_reference&quot;,&quot;label&quot;:&quot;Shibata_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Shibata2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Tianmei2007_reference&quot;,&quot;label&quot;:&quot;Tianmei_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Tianmei2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Duloxetine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Sharma2000_reference&quot;,&quot;label&quot;:&quot;Sharma_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Sharma2000_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Duloxetine_Shibata2023_reference&quot;,&quot;label&quot;:&quot;Shibata_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Shibata2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Skinner2004_reference&quot;,&quot;label&quot;:&quot;Skinner_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Duloxetine_Tianmei2007_reference&quot;,&quot;label&quot;:&quot;Tianmei_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_duloxetine/Duloxetine_Tianmei2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # duloxetine — `Duloxetine_Sharma2000_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Sharma2000_reference" status="simulated" stale="false" population="healthy male subjects" measured-compound="duloxetine" parameterization="apparent" topology="1C"></div>
+> Ka use library defaults, not estimates from this paper; t6_deviations.
+
+<div class="pk-model-meta" hidden drug="duloxetine" model-id="Duloxetine_Sharma2000_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="duloxetine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Sharma A, Goldberg MJ, Cerimele BJ. Pharmacokinetics and safety of duloxetine, a dual-serotonin and norepinephrine reuptake inhibitor. Journal of clinical pharmacology 40(2):161–167 (2000).
@@ -21,22 +23,23 @@ Sharma A, Goldberg MJ, Cerimele BJ. Pharmacokinetics and safety of duloxetine, a
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_duloxetine/Duloxetine_Sharma2000_reference/Duloxetine_Sharma2000_reference.svg" alt="Duloxetine_Sharma2000_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
-| mean oral clearance | CL/F | 114 | L/h |
+| oral clearance | CL/F | 114 | L/h |
 | apparent volume of distribution | V/F | 1943 | L |
 | half-life | t1/2z | 12.5 | h |
-| Ka (h-1) | kabs | 1.46 | h-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,22 +49,21 @@ Sharma A, Goldberg MJ, Cerimele BJ. Pharmacokinetics and safety of duloxetine, a
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-Only the abstract was available, so reported summary statistics stand in for a fitted model.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — duloxetine: CL/F 114 L/h, V/F 1.94e+03 L, t1/2z 12.5 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent volume of distribution: this record has 1943, the second reading none; it also differs on 4 more fields. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| mean oral clearance | `Q27` · CL/F | 114 | L/h | 3.167e-05 | m3/s | l/h | llm_confirmed (0.6) | Sharma_2000:abstract, Sharma_2000:abstract |
-| apparent volume of distribution | `Q76` · V/F | 1943 | L | 1.943 | m3 | l | exact (1) | Sharma_2000:abstract, Sharma_2000:abstract |
-| half-life | `Q57` · t1/2z | 12.5 | h | 4.5e+04 | s | h | llm (0.6) | Sharma_2000:abstract, Sharma_2000:abstract |
-| Ka (h-1) | `Q49` · kabs | 1.46 | h-1 | 0.0004056 | 1/s | 1/h | review_gapfill (0.7) | Chen_2024:review |
+| oral clearance | `Q27` · CL/F | 114 | L/h | 3.167e-05 | m3/s | l/h | exact (1) | Sharma_2000:abstract |
+| apparent volume of distribution | `Q76` · V/F | 1943 | L | 1.943 | m3 | l | exact (1) | Sharma_2000:abstract |
+| half-life | `Q57` · t1/2z | 12.5 | h | 4.5e+04 | s | h | half_life_rule (0.95) | Sharma_2000:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,39 +73,28 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=duloxetine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Chen_2024's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Sharma_2000_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Sharma_2000_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.5 (5/10 fields) | 5 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>5 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 1943 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half-life]` | 12.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 1.46 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean apparent volume of distribution]` |  | 1943 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean half-life]` |  | 12.5 | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -118,14 +109,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Sharma_2000:abstract', 'Sharma_2000:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Chen_2024:review'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Sharma_2000:abstract', 'Sharma_2000:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Sharma_2000:abstract', 'Sharma_2000:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Sharma_2000:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Sharma_2000:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Sharma_2000:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 114 L/h | ['Sharma_2000:abstract', 'Sharma_2000:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 1.94e+03 L | ['Sharma_2000:abstract', 'Sharma_2000:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 114 L/h | ['Sharma_2000:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 1.94e+03 L | ['Sharma_2000:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -135,10 +125,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=duloxetine) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -154,12 +144,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_duloxetine/Duloxetine_Sharma2000_reference/Duloxetine_Sharma2000_reference_modelica.zip" download>Duloxetine_Sharma2000_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_duloxetine/Duloxetine_Sharma2000_reference/Duloxetine_Sharma2000_reference_modelica.zip" download>Duloxetine_Sharma2000_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_duloxetine/Duloxetine_Sharma2000_reference/Duloxetine_Sharma2000_reference_fmi.zip" download>Duloxetine_Sharma2000_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Sharma2000_reference/Duloxetine_Sharma2000_reference_matlab.zip" download>Duloxetine_Sharma2000_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Sharma2000_reference/Duloxetine_Sharma2000_reference_matlab_simbio.zip" download>Duloxetine_Sharma2000_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Sharma2000_reference/Duloxetine_Sharma2000_reference_sbml.zip" download>Duloxetine_Sharma2000_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Sharma2000_reference/Duloxetine_Sharma2000_reference_cellml.zip" download>Duloxetine_Sharma2000_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Sharma2000_reference/Duloxetine_Sharma2000_reference_matlab.zip" download>Duloxetine_Sharma2000_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Sharma2000_reference/Duloxetine_Sharma2000_reference_matlab_simbio.zip" download>Duloxetine_Sharma2000_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Sharma2000_reference/Duloxetine_Sharma2000_reference_sbml.zip" download>Duloxetine_Sharma2000_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_duloxetine/Duloxetine_Sharma2000_reference/Duloxetine_Sharma2000_reference_cellml.zip" download>Duloxetine_Sharma2000_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
@@ -179,7 +169,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminMass` | 6e-05 | kg |
 | input | model | `Cl` | 3.167e-05 | m3/s |
 | input | model | `VdPerKg` | 0.02776 | m3/kg |
-| input | model | `ka` | 0.0004056 | 1/s |
+| input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -208,7 +198,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 60 mg, single dose, first-order absorption (ka 1.46 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 60 mg oral (N06AX21) (defined daily dose)._
+**Administration: oral** — 60 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 60 mg oral (N06AX21) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_duloxetine/Duloxetine_Sharma2000_reference/Duloxetine_Sharma2000_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_duloxetine/Duloxetine_Sharma2000_reference/Duloxetine_Sharma2000_reference_sim_controls.json"></dbs-fmusim>
 
@@ -218,4 +208,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bduloxetine%5D%20Duloxetine_Sharma2000_reference&body=Drug%3A%20duloxetine%0ARecord%3A%20Duloxetine_Sharma2000_reference%0APaper%3A%20Sharma_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_duloxetine/Duloxetine_Sharma2000_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:34 UTC</sub>

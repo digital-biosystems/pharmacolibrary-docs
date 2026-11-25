@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ranibizumab clearance of 0.023 mL/h relative to its 4.0 mL vitreous volume was judged physiologically implausible, so the record was rejected.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ranibizumab" model-id="Ranibizumab_Xu2013_reference" status="rejected" stale="false" population="patients with neovascular age-related macular degeneration" measured-compound="ranibizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Xu L, Lu T, Tuomi L, Jumbe N, Lu J, Eppler S et al. Pharmacokinetics of ranibizu
 
 ### Reviewer guidance
 
-**Ranibizumab clearance of 0.023 mL/h relative to its 4.0 mL vitreous volume was judged physiologically implausible, so the record was rejected.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The rejection finding identifies the clearance-to-volume relationship as outside the physiological window, consistent with a unit or scale extraction error. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model; a second reader did not identify a clearance value. Extracted — ranibizumab: t1/2z 9 DAYS, AUC ratio 9e+04 1: 90,000, CL 0.023 mL/h, V 4 mL, kabs 0.0528 days−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ranibizumab: t1/2z 9 DAYS, AUC ratio 9e+04 1: 90,000, CL 0.023 mL/h, V 4 mL, kabs 0.0528 days−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ranibizumab, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

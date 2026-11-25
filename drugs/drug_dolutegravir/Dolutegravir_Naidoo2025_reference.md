@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;dolutegravir&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/&quot;},{&quot;label&quot;:&quot;Naidoo_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolutegravir_Kengo2023_reference&quot;,&quot;label&quot;:&quot;Kengo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dolutegravir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolutegravir_Kengo2023_reference&quot;,&quot;label&quot;:&quot;Kengo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This paper's disposition core is incomplete.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Naidoo2025_reference" status="needs_review" stale="false" population="children with HIV receiving rifampicin tuberculosis treatment" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Naidoo2025_reference" status="needs_review" stale="false" population="children with HIV and tuberculosis receiving rifampicin" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Naidoo A, Waalewijn H, Naidoo K, Letsoalo M, Cromhout G, Sewnarain L et al. Pharmacokinetics and safety of dolutegravir in children receiving rifampicin tuberculosis treatment in South Africa (ORCHID): a prospective cohort study. The lancet. HIV 12(4):e273–e282 (2025).
@@ -17,13 +17,13 @@ Naidoo A, Waalewijn H, Naidoo K, Letsoalo M, Cromhout G, Sewnarain L et al. Phar
 
 ## Population and dosing
 
-**Population:** children with HIV receiving rifampicin tuberculosis treatment · condition HIV with tuberculosis · age group child · n = 13.
+**Population:** children with HIV and tuberculosis receiving rifampicin · condition HIV and tuberculosis · age group child.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,11 +32,10 @@ Naidoo A, Waalewijn H, Naidoo K, Letsoalo M, Cromhout G, Sewnarain L et al. Phar
 | label | parameter | value | unit |
 |---|---|---|---|
 | Typical dolutegravir clearance | CL | 0.584 | L/h |
-| Vd | V | 0.2 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.667). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,11 +45,11 @@ Naidoo A, Waalewijn H, Naidoo K, Letsoalo M, Cromhout G, Sewnarain L et al. Phar
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Only clearance was extracted — no volume.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Di_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dolutegravir: CL 0.584 L/h, V 0.2 L/kg.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dolutegravir: CL 0.584 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of typical dolutegravir clearance: this record has 0.584, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of typical dolutegravir clearance: this record has 0.584, the second reading none. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,7 +58,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | Typical dolutegravir clearance | `Q22` · CL | 0.584 | L/h | 1.622e-07 | m3/s | l/h | llm_confirmed (0.6) | Naidoo_2025:abstract |
-| Vd | `Q61` · V | 0.2 | L/kg | 0.014 | m3 | L | review_gapfill (0.7) | Di_2026:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -69,12 +67,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- covariate category for CL_ratio from footnote/prose kept as documentation only (['Naidoo_2025:abstract'])
+- covariate category for CL from footnote/prose kept as documentation only (['Naidoo_2025:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dolutegravir
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Di_2026's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Naidoo_2025_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
@@ -82,18 +77,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.8 (4/5 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[typical dolutegravir clearance]` | 0.584 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vd]` | 0.2 |  | only_one_extracted |
 
 </details>
 
@@ -111,11 +105,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Naidoo_2025:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Di_2026:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.584 | ['Naidoo_2025:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.584 L/h | ['Naidoo_2025:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 14 L | ['Di_2026:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -149,4 +141,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdolutegravir%5D%20Dolutegravir_Naidoo2025_reference&body=Drug%3A%20dolutegravir%0ARecord%3A%20Dolutegravir_Naidoo2025_reference%0APaper%3A%20Naidoo_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dolutegravir/Dolutegravir_Naidoo2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:27 UTC</sub>

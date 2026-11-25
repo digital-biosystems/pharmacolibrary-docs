@@ -21,16 +21,14 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fostvedt_2019_platelet_count](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_platelet_count.md) | platelet count ← total hP67.6 antibody · indirect response — drug inhibits the production of platelet count | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Gómez-Castañeda_2022_viable_cells](drugs/drug_gemtuzumab_ozogamicin/pd_G_mez_Casta_eda_2022_viable_cells.md) | viable cells ← gemtuzumab-ozogamicin · inhibition effect | — | Gómez-Castañeda E et al., Tyrosine Kinase Inhibitor Independent G…, Cancers (2022) | [10.3390/cancers14215253](https://doi.org/10.3390/cancers14215253) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fostvedt_2019_ALB](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_ALB.md) | Grade ≥ 3 hypoalbuminemia ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fostvedt_2019_ALP](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_ALP.md) | Grade ≥ 3 elevated alkaline phosphatase ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fostvedt_2019_AST](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_AST.md) | Grade ≥ 3 elevated aspartate transaminase ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fostvedt_2019_BF](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_BF.md) | Blast-free status ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fostvedt_2019_Bilirubin](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_Bilirubin.md) | Grade ≥ 3 bilirubinemia ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fostvedt_2019_CR_CRp](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_CR_CRp.md) | Complete remission/complete remission without platelet recovery ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fostvedt_2019_VOD](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_VOD.md) | Veno-occlusive disease ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Fostvedt_2019_Neutrophils](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_Neutrophils.md) | Neutrophil count ← total hP67.6 antibody · indirect response — drug inhibits the production of Neutrophil count | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Fostvedt_2019_Platelets](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_Platelets.md) | Platelet count ← total hP67.6 antibody · indirect response — drug inhibits the production of Platelet count | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fostvedt_2019_ALB](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_ALB.md) | grade ≥ 3 hypoalbuminemia ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fostvedt_2019_AST](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_AST.md) | grade ≥ 3 aspartate transaminase (AST) ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fostvedt_2019_BF](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_BF.md) | blast-free status ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fostvedt_2019_Bilirubin](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_Bilirubin.md) | grade ≥ 3 bilirubinemia ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fostvedt_2019_CR_CRp](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_CR_CRp.md) | complete remission (CR) or complete remission with platelet recovery (CRp) ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fostvedt_2019_VOD](drugs/drug_gemtuzumab_ozogamicin/pd_Fostvedt_2019_VOD.md) | venous-occlusive disease (VOD) ← total hP67.6 antibody · categorical (graded) response model | — | Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019) | [10.1002/cpt.1500](https://doi.org/10.1002/cpt.1500) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,7 +42,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 12:42 | 1:50 | 0/0/0 | 8/2/0 | 0/0/0 | 45,736/10,269 | openai / gpt-6-luna | 2 | 2/0 | 2/0 | 0 |
+| 2026-11-24 00:32 | 0:03 | 0/0/0 | 8/0/0 | 0/0/0 | 4,027/161 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
 
 ## Coverage
 
@@ -55,24 +53,27 @@ _not available_
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Hibma_2019.pdf` | Hibma J et al., Population Pharmacokinetic Modeling of…, Clinical pharmacokinetics (2019) | popPK | 10 | [10.1007/s40262-018-0699-5](https://doi.org/10.1007/s40262-018-0699-5) | [30062662](https://pubmed.ncbi.nlm.nih.gov/30062662) | The paper describes a human population-PK model, but no numeric disposition parameter estimates are provided in the evidence. |
-| `Masters_2019.pdf` | Masters JC et al., Population Pharmacokinetics of Gemtuzum…, Clinical pharmacokinetics (2019) | popPK | 10 | [10.1007/s40262-018-0694-x](https://doi.org/10.1007/s40262-018-0694-x) | [30022367](https://pubmed.ncbi.nlm.nih.gov/30022367) | The paper reports population-PK models for GO, but no numeric parameter estimates are present in the evidence. |
+| `Masters_2019.pdf` | Masters JC et al., Population Pharmacokinetics of Gemtuzum…, Clinical pharmacokinetics (2019) | popPK | 10 | [10.1007/s40262-018-0694-x](https://doi.org/10.1007/s40262-018-0694-x) | [30022367](https://pubmed.ncbi.nlm.nih.gov/30022367) | The paper describes a population PK model for gemtuzumab ozogamicin with quantitative parameters (CL, V), but the specific numeric values are not present in the provided abstract/text. |
 
-<sub>queue written 2026-10-07 12:40 UTC</sub>
+<sub>queue written 2026-11-24 00:32 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Fostvedt_2019 | irrelevant | 3 | 0 | The paper uses a two-compartment population PK model but reports no numeric gemtuzumab ozogamicin disposition parameters in the supplied evidence. |
+| popPK | Fostvedt_2019 | irrelevant | 2 | 0 | The paper focuses on pharmacodynamic and exposure-response modeling; while it references a population PK model, it does not report the quantitative PK parameters (CL, V, Q) for gemtuzumab ozogamicin itself within the provided text. |
+| PGx | Fostvedt_2019 | not_relevant | 0 | 0 | The paper focuses on PK/PD modeling for dosing optimization and exposure-response relationships but does not report pharmacogenomic effects (gene variants/genotypes) on these parameters. |
 | popPK | Gómez-Castañeda_2022 | irrelevant | 0 | 0 | This is an in-vitro drug-response study and reports no gemtuzumab-ozogamicin disposition parameters. |
-| popPK | Hedrich_2018 | irrelevant | 1 | 0 | This is a review with no numeric gemtuzumab ozogamicin disposition parameters in the provided evidence. |
-| popPK | Hibma_2019 | relevant | 10 | 0 | The paper describes a human population-PK model, but no numeric disposition parameter estimates are provided in the evidence. |
-| popPK | Masters_2019 | relevant | 10 | 0 | The paper reports population-PK models for GO, but no numeric parameter estimates are present in the evidence. |
+| popPK | Hedrich_2018 | irrelevant | 2 | 0 | The paper is a review discussing the class of antibody-drug conjugates and mentions gemtuzumab ozogamicin as an approved therapy, but does not provide original quantitative pharmacokinetic parameter values or models for the drug in the provided evidence. |
+| PGx | Hedrich_2018 | not_relevant | 0 | 0 | The paper is a general review of antibody-drug conjugate PK/PD modeling and does not report pharmacogenomic effects on gemtuzumab ozogamicin. |
+| popPK | Hibma_2019 | relevant | 10 | 2 | The paper describes a population PK study of gemtuzumab ozogamicin with quantitative models, but the specific numeric parameter values (CL, V, etc.) are not listed in the provided abstract text. |
+| PGx | Hibma_2019 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic model for gemtuzumab ozogamicin but does not include genetic variants or genotypes as covariates. |
+| popPK | Masters_2019 | relevant | 10 | 0 | The paper describes a population PK model for gemtuzumab ozogamicin with quantitative parameters (CL, V), but the specific numeric values are not present in the provided abstract/text. |
+| PGx | Masters_2019 | not_relevant | 0 | 0 | The paper describes population pharmacokinetics based on demographic factors (e.g., body weight) but does not report any pharmacogenomic effects or gene variants. |
 
 
 </details>

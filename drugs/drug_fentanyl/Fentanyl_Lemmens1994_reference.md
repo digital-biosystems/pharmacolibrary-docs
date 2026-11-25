@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The fentanyl model record was held back because the absolute bioavailability F was left at a library default instead of an explicit paper estimate.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Lemmens1994_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Lemmens HJ, Dyck JB, Shafer SL, Stanski DR. Pharmacokinetic-pharmacodynamic mode
 
 ### Reviewer guidance
 
-**The fentanyl model record was held back because the absolute bioavailability F was left at a library default instead of an explicit paper estimate.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists a lag time of 15.0 min and absorption rate constant of 0.27 min-1, but the bioavailability parameter F has no value in the extracted facts. A deviation check flagged this as a defaulted parameter, meaning a placeholder value would be used for the simulated concentration profile rather than one derived from the study. The second reader also could not confirm the dose compound, identifying it as unknown rather than fentanyl. Extracted — fentanyl: λ1 0.628 min-1, kel 0.053 min-1, t1/2γ 128 min, V 4.5 L, Vss 39.3 L, CL 0.483 L/min, kabs 0.27 minute -1, tlag 15 min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — fentanyl: λ1 0.628 min-1, kel 0.053 min-1, t1/2γ 128 min, V 4.5 L, Vss 39.3 L, CL 0.483 L/min, kabs 0.27 minute -1, tlag 15 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

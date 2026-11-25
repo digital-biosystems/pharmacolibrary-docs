@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record incorrectly attributes a clearance value of 42.1 L.h−1.70 kg−1 to atracurium from a review of dexmedetomidine.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="atracurium" model-id="Atracurium_Janse2025_reference" status="rejected" stale="false" population="" measured-compound="atracurium" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Janse van Rensburg E, Indiveri L, Mogane P. The Perioperative Use of Dexmedetomi
 
 ### Reviewer guidance
 
-**The record incorrectly attributes a clearance value of 42.1 L.h−1.70 kg−1 to atracurium from a review of dexmedetomidine.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source paper is a review of dexmedetomidine where atracurium is only a comparator agent, so the extracted clearance does not belong to the target molecule. A second reader disputed the values, proposing 42.4 for clearance instead of 42.1. Additional parameter values were also contested by the second reader, confirming the extraction error. Extracted — atracurium: CL 42.1 L.h−1.70 kg−1, V 8.5e+03 L.
+Extracted — atracurium: CL 42.1 L.h−1.70 kg−1, V 8.5e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 42.4; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -124,7 +124,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

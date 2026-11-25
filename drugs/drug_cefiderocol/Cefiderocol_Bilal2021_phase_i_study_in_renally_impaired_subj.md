@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the fraction of unbound drug was assigned a unit of hours instead of being dimensionless.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q44 unit h ([time]) vs dimensionless.
 
 <div class="pk-model-meta" hidden drug="cefiderocol" model-id="Cefiderocol_Bilal2021_phase_i_study_in_renally_impaired_subj" status="rejected" stale="false" population="mixed" measured-compound="cefiderocol" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,7 +46,7 @@ Bilal M, El Tabei L, Büsker S, Krauss C, Fuhr U, Taubert M. Clinical Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.25). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,11 +56,13 @@ Bilal M, El Tabei L, Büsker S, Krauss C, Fuhr U, Taubert M. Clinical Pharmacoki
 
 ### Reviewer guidance
 
-**The record was rejected because the fraction of unbound drug was assigned a unit of hours instead of being dimensionless.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q44 unit h ([time]) vs dimensionless.**
 
-The parameter representing the unbound fraction of cefiderocol is recorded with a value of 0.44 and a unit of hours. This creates a dimension mismatch, as the proportion of unbound drug should be dimensionless. Consequently, the software could not convert this invalid unit to SI units, leaving the structural parameter without a valid value. Extracted — cefiderocol: Cmax 81 mg/L, AUClast 212 mg∙h/L, AUC∞ 213 mg∙h/L, t1/2z 2.8 h, CL 4.7 L/h, Vss 13.5 L, CLR 3.2 L/h, fe 68.6 h, … (+2).
+A reported unit could not be converted (Cmax, AUClast, AUC∞ and fe), so that value has no SI equivalent. Extracted — cefiderocol: Cmax 81 mg/L, AUClast 212 mg∙h/L, AUC∞ 213 mg∙h/L, t1/2z 2.8 h, CL 4.7 L/h, Vss 13.5 L, CLR 3.2 L/h, fe 68.6 h, … (+2).
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0-inf: this record has 213, the second reading none; it also differs on 11 more fields. That field does not shape the model.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -100,6 +102,38 @@ The parameter representing the unbound fraction of cefiderocol is recorded with 
 - LLM selected parameter table(s) 1, 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.25 (4/16 fields) | 12 |
+
+<details><summary>12 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0-inf]` | 213 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-last]` | 212 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 4.70 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clr]` | 3.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` | 81.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fe]` | 68.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fu]` | 0.44 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[higher central volume of distribution in infected patients compared with subjects without infection]` |  | 39 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[higher clearance in patients with cuti/aup compared with subjects without infection]` |  | 27 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2,z]` | 2.80 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vss]` | 13.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz]` | 19.4 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

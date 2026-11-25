@@ -1,6 +1,9 @@
 {
  "dose_source": "library default",
  "model_id": "Selumetinib_Patel2018_reference",
+ "molar_masses": {
+  "central.C": 0.45768000000000003
+ },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -8,6 +11,7 @@
  "parameters": {
   "Cl": 3.5277777777777775e-06,
   "F": 1.0,
+  "MM": 0.45768000000000003,
   "VdPerKg": 0.0005085714285714285,
   "adminCount": 1.0,
   "adminDuration": 600.0,

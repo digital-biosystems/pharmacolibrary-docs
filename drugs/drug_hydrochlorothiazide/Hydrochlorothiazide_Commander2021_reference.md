@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for hydrochlorothiazide was quarantined because volume of distribution and absorption lag time lacked extracted values, forcing the use of library placeholders.
+> No value for hydrochlorothiazide's volume of distribution and absorption lag time; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Commander2021_reference" status="model_quarantined" stale="false" population="children" measured-compound="hydrochlorothiazide" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Commander SJ, Wu H, Boakye-Agyeman F, Melloni C, Hornik CD, Zimmerman K et al. P
 
 ### Reviewer guidance
 
-**The record for hydrochlorothiazide was quarantined because volume of distribution and absorption lag time lacked extracted values, forcing the use of library placeholders.**
+**No value for hydrochlorothiazide's volume of distribution and absorption lag time; t6_deviations.**
 
-The model structure included total clearance and apparent volume of distribution, but specific numeric values for volume of distribution and absorption lag time were not extracted from the source. Consequently, the record relied on default parameters rather than explicit estimates for these key pharmacokinetic components. The absence of these values prevented the model from being fully defined with concrete, literature-derived numbers. Extracted — hydrochlorothiazide: kabs 0.43 1/h, CL/F 19 L/h, Vnorm/F 191 L.
+The model was built, but hydrochlorothiazide's volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — hydrochlorothiazide: kabs 0.43 1/h, CL/F 19 L/h, Vnorm/F 191 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fi: this record has none, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

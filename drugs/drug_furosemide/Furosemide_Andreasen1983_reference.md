@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The volume of distribution under steady-state concentration unit of 1 kg-1 is dimensionally incompatible with the expected volume dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q65 unit 1 kg-1 (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Andreasen1983_reference" status="rejected" stale="false" population="young and elderly healthy male volunteers" measured-compound="frusemide" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Andreasen F, Hansen U, Husted SE, Jansen JA. The pharmacokinetics of frusemide a
 
 ### Reviewer guidance
 
-**The volume of distribution under steady-state concentration unit of 1 kg-1 is dimensionally incompatible with the expected volume dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q65 unit 1 kg-1 (dimensionless) vs [length] ** 3.**
 
-The record lists the steady-state volume of distribution as 0.13 1 kg-1, which treats the parameter as dimensionless rather than a volume. A second reader disagreed on several extracted values, including the renal clearance, which the second reader left null. The record was built from the abstract alone, so summary statistics stand in for a fitted model. Extracted — furosemide: CL 170 ml min-1, CLR 67 L/h, Vss 0.13 1 kg-1, t1/2z 70 min, V 5 L/kg, kabs 4.51 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — furosemide: CL 170 ml min-1, CLR 67 L/h, Vss 0.13 1 kg-1, t1/2z 70 min, V 5 L/kg, kabs 4.51 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average renal clearance: this record has 67, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

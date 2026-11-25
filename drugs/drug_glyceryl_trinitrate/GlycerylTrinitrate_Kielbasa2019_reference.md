@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Glyceryl trinitrate’s reported CL/F of 0.008 L/h was rejected because the paper reviews monoclonal-antibody pharmacokinetics, not glyceryl trinitrate.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="glyceryl trinitrate" model-id="GlycerylTrinitrate_Kielbasa2019_reference" status="rejected" stale="false" population="" measured-compound="glyceryl_trinitrate" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Kielbasa W, Helton DL. A new era for migraine: Pharmacokinetic and pharmacodynam
 
 ### Reviewer guidance
 
-**Glyceryl trinitrate’s reported CL/F of 0.008 L/h was rejected because the paper reviews monoclonal-antibody pharmacokinetics, not glyceryl trinitrate.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The paper concerns monoclonal antibodies used for migraine, and glyceryl trinitrate is mentioned only as a co-medication or covariate. The record also defaulted Tlag and assumed F=1, Fm=1, with no molar correction; a second reader disputed the verdict, with agreement 0.727. Extracted — glyceryl trinitrate: CL/F 0.008 L/h, V/F 6.5 L, kabs 0.02 h−1.
+Extracted — glyceryl trinitrate: CL/F 0.008 L/h, V/F 6.5 L, kabs 0.02 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q56: this record has 3, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | cross-check disputed by a second reader: verdict disputed, agreement 0.727, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.727 | cross-check contradicted by a second reader: verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

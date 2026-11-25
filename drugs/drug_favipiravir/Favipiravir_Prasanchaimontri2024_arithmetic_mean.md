@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;favipiravir&quot;,&quot;href&quot;:&quot;drugs/drug_favipiravir/&quot;},{&quot;label&quot;:&quot;Prasanchaimontri_2024 \u00b7 arithmetic_mean&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Favipiravir_Irie2023_reference&quot;,&quot;label&quot;:&quot;Irie_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_favipiravir/Favipiravir_Irie2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Favipiravir_Agyeman2026_reference&quot;,&quot;label&quot;:&quot;Agyeman_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_favipiravir/Favipiravir_Agyeman2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Favipiravir_Prasanchaimontri2024_arithmetic_mean&quot;,&quot;label&quot;:&quot;Prasanchaimontri_2024_arithmetic_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_arithmetic_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Favipiravir_Prasanchaimontri2024_geometric_mean&quot;,&quot;label&quot;:&quot;Prasanchaimontri_2024_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Favipiravir_Pertinez2021_reference&quot;,&quot;label&quot;:&quot;Pertinez_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_favipiravir/Favipiravir_Pertinez2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Favipiravir_Prasanchaimontri2024_arithmetic_mean&quot;,&quot;label&quot;:&quot;Prasanchaimontri_2024_arithmetic_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_arithmetic_mean.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Favipiravir_Prasanchaimontri2024_geometric_mean&quot;,&quot;label&quot;:&quot;Prasanchaimontri_2024_geometric_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Favipiravir_Agyeman2026_reference&quot;,&quot;label&quot;:&quot;Agyeman_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_favipiravir/Favipiravir_Agyeman2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Favipiravir_Irie2023_reference&quot;,&quot;label&quot;:&quot;Irie_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_favipiravir/Favipiravir_Irie2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Favipiravir_Pertinez2021_reference&quot;,&quot;label&quot;:&quot;Pertinez_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_favipiravir/Favipiravir_Pertinez2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # favipiravir — `Favipiravir_Prasanchaimontri2024_arithmetic_mean`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0145, model 0.0372).
-
-<div class="pk-model-meta" hidden drug="favipiravir" model-id="Favipiravir_Prasanchaimontri2024_arithmetic_mean" status="needs_review" stale="false" population="Thai adults with mild COVID-19" measured-compound="favipiravir" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="favipiravir" model-id="Favipiravir_Prasanchaimontri2024_arithmetic_mean" status="simulated" stale="false" population="Thai adults with mild COVID-19" measured-compound="favipiravir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Prasanchaimontri IO, Manosuthi W, Pertinez H, Owen A, Niyomnaitham S, Sirijatuphat R et al. Favipiravir pharmacokinetics in Thai adults with mild COVID-19: A sub-study of interpatient variability and ethnic differences in exposure. Pharmacology research & perspectives 12(6):e1233 (2024).
@@ -17,7 +15,7 @@ Prasanchaimontri IO, Manosuthi W, Pertinez H, Owen A, Niyomnaitham S, Sirijatuph
 
 ## Population and dosing
 
-**Population:** Thai adults with mild COVID-19 · condition mild COVID-19 without pneumonia · age group adult · n = 8.
+**Population:** Thai adults with mild COVID-19 · age group adult.
 
 **Dosing:** 800, 1800 mg, oral, multiple, every 12 h.
 
@@ -31,17 +29,15 @@ Prasanchaimontri IO, Manosuthi W, Pertinez H, Owen A, Niyomnaitham S, Sirijatuph
 <figure class="pk-models-diagram"><img src="drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_arithmetic_mean/Favipiravir_Prasanchaimontri2024_arithmetic_mean.svg" alt="Favipiravir_Prasanchaimontri2024_arithmetic_mean diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL/F (L/h) [%RSE] | CL/F | 1.1 | L/h |
 | V/F (L) [%RSE] | V/F | 20.6 | L |
-| K A (h−1) [%RSE] | kabs | 6.0 | 1/h |
+| K_A (h-1) [%RSE] | kabs | 6.0 | h-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +47,9 @@ Prasanchaimontri IO, Manosuthi W, Pertinez H, Owen A, Niyomnaitham S, Sirijatuph
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0145, model 0.0372).**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — favipiravir: CL/F 1.1 L/h, V/F 20.6 L, kabs 6 1/h.
-
-Independently confirmed by `qwen3.8-27b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,9 +57,9 @@ Independently confirmed by `qwen3.8-27b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) [%RSE] | `Q27` · CL/F | 1.1 | L/h | 3.056e-07 | m3/s | L/h | llm_confirmed (0.6) | prp21233-tbl-0001:row0:col13 |
-| V/F (L) [%RSE] | `Q76` · V/F | 20.6 | L | 0.0206 | m3 | L | llm_confirmed (0.6) | prp21233-tbl-0001:row1:col13 |
-| K A (h−1) [%RSE] | `Q49` · kabs | 6.0 | 1/h | 0.001667 | 1/s | 1/h | llm (0.6) | prp21233-tbl-0001:row2:col13 |
+| CL/F (L/h) [%RSE] | `Q27` · CL/F | 1.1 | L/h | 3.056e-07 | m3/s | l/h | llm_confirmed (0.6) | Prasanchaimontri_2024_table_p7_1:row11:col1 |
+| V/F (L) [%RSE] | `Q76` · V/F | 20.6 | L | 0.0206 | m3 | l | llm_confirmed (0.6) | Prasanchaimontri_2024_table_p7_1:row11:col2 |
+| K_A (h-1) [%RSE] | `Q49` · kabs | 6.0 | h-1 | 0.001667 | 1/s | 1/h | llm_confirmed (0.6) | Prasanchaimontri_2024_table_p7_1:row11:col3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -80,60 +74,22 @@ Independently confirmed by `qwen3.8-27b`.
 
 **Interpretation flags:**
 - dropped duplicate Q27 ('Daily % change in CL/F [%RSE]', value '2.4') — already have one for this compound
-- implicit units: 'CL/F (L/h) [%RSE]' → L/h (from the paper text: 'The paper states: “apparent clearance (CL/F, L/h)”.')
-- implicit units: 'V/F (L) [%RSE]' → L (from the paper text: 'The paper states: “apparent volume of distribution (V/F, L)”.')
-- implicit units: 'K A (h−1) [%RSE]' → 1/h (from the paper text: 'The paper states: “absorption rate constant (K A, h−1)”.')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=favipiravir
 - population split: 'arithmetic mean' subgroup of Prasanchaimontri_2024 (paper reports 2 populations: arithmetic mean, geometric mean)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- transposed table prp21233-tbl-0001: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell prp21233-tbl-0001:row0:col2 = '1.2 [14.7]'
-- unparsed cell prp21233-tbl-0001:row0:col3 = '0.7 [17.5]'
-- unparsed cell prp21233-tbl-0001:row0:col4 = '1.5 [117.7]'
-- unparsed cell prp21233-tbl-0001:row0:col5 = '0.8 [986.7]'
-- unparsed cell prp21233-tbl-0001:row0:col6 = '0.7 [1311.9]'
-- unparsed cell prp21233-tbl-0001:row0:col7 = '2.7 [23.1]'
-- unparsed cell prp21233-tbl-0001:row0:col8 = '1.0 [9.3]'
-- unparsed cell prp21233-tbl-0001:row0:col9 = '0.6 [25.4]'
-- unparsed cell prp21233-tbl-0001:row1:col2 = '22.8 [18.5]'
-- unparsed cell prp21233-tbl-0001:row1:col3 = '13.5 [16.3]'
-- unparsed cell prp21233-tbl-0001:row1:col4 = '24.9 [48.6]'
-- unparsed cell prp21233-tbl-0001:row1:col5 = '14.7 [2154.2]'
-- unparsed cell prp21233-tbl-0001:row1:col6 = '14.1 [4893.9]'
-- unparsed cell prp21233-tbl-0001:row1:col7 = '38.0 [34.5]'
-- unparsed cell prp21233-tbl-0001:row1:col8 = '17.8 [12.7]'
-- unparsed cell prp21233-tbl-0001:row1:col9 = '19.1 [35.1]'
-- unparsed cell prp21233-tbl-0001:row2:col1 = 'K A (h−1) [%RSE]'
-- unparsed cell prp21233-tbl-0001:row2:col2 = '1.5 [1.0]'
-- unparsed cell prp21233-tbl-0001:row2:col3 = '6.3 [1906.0]'
-- unparsed cell prp21233-tbl-0001:row2:col4 = '5.9 [6175.6]'
-- unparsed cell prp21233-tbl-0001:row2:col5 = '6.0 [1827.2]'
-- unparsed cell prp21233-tbl-0001:row2:col6 = '1.8 [14982.2]'
-- unparsed cell prp21233-tbl-0001:row2:col7 = '19.4 [0.5]'
-- unparsed cell prp21233-tbl-0001:row2:col8 = '7.1 [965.6]'
-- unparsed cell prp21233-tbl-0001:row2:col9 = '0.2 [51.7]'
-- unparsed cell prp21233-tbl-0001:row3:col2 = '10.6 [41.3]'
-- unparsed cell prp21233-tbl-0001:row3:col3 = '−7.8 [324.0]'
-- unparsed cell prp21233-tbl-0001:row3:col4 = '6.3 [142.2]'
-- unparsed cell prp21233-tbl-0001:row3:col5 = '8.1 [1901.4]'
-- unparsed cell prp21233-tbl-0001:row3:col6 = '9.5 [5274.3]'
-- unparsed cell prp21233-tbl-0001:row3:col7 = '−3.8 [206.2]'
-- unparsed cell prp21233-tbl-0001:row3:col8 = '−7.2 [50.3]'
-- unparsed cell prp21233-tbl-0001:row3:col9 = '3.5 [286.8]'
-- unparsed cell prp21233-tbl-0001:row3:col10 = '−7.8‐10.6'
+- table Prasanchaimontri_2024_table_p7_1: unbound_uncertainty
+- transposed table Prasanchaimontri_2024_table_p7_1: logical view retains original source coordinates
 - LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (7/7 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -151,13 +107,13 @@ _All readers agree on the compared fields of this record._
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['prp21233-tbl-0001:row0:col13'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['prp21233-tbl-0001:row2:col13'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['prp21233-tbl-0001:row1:col13'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Prasanchaimontri_2024_table_p7_1:row11:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Prasanchaimontri_2024_table_p7_1:row11:col3'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Prasanchaimontri_2024_table_p7_1:row11:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 1.1 L/h | ['prp21233-tbl-0001:row0:col13'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 20.6 L | ['prp21233-tbl-0001:row1:col13'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 1.1 L/h | ['Prasanchaimontri_2024_table_p7_1:row11:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 20.6 L | ['Prasanchaimontri_2024_table_p7_1:row11:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -170,12 +126,8 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 0.0145 | 0.03721 | 2.566 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.002 | 0.03721 | 18.6 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped | 2 | 0.03721 |  | unresolved concentration unit (exp 'h', sim 'kg/m3') |
-| T1_cmin_ss | reference | skipped | 12.1 to 132.2 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmin_ss | reference | skipped | 1.6 to 6.7 |  |  | no simulated metric for this quantity (single reference sim) |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | skipped |  | 0.03721 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -191,7 +143,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_arithmetic_mean/Favipiravir_Prasanchaimontri2024_arithmetic_mean_modelica.zip" download>Favipiravir_Prasanchaimontri2024_arithmetic_mean_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_arithmetic_mean/Favipiravir_Prasanchaimontri2024_arithmetic_mean_modelica.zip" download>Favipiravir_Prasanchaimontri2024_arithmetic_mean_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_arithmetic_mean/Favipiravir_Prasanchaimontri2024_arithmetic_mean_fmi.zip" download>Favipiravir_Prasanchaimontri2024_arithmetic_mean_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_arithmetic_mean/Favipiravir_Prasanchaimontri2024_arithmetic_mean_matlab.zip" download>Favipiravir_Prasanchaimontri2024_arithmetic_mean_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_arithmetic_mean/Favipiravir_Prasanchaimontri2024_arithmetic_mean_matlab_simbio.zip" download>Favipiravir_Prasanchaimontri2024_arithmetic_mean_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
@@ -255,4 +207,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfavipiravir%5D%20Favipiravir_Prasanchaimontri2024_arithmetic_mean&body=Drug%3A%20favipiravir%0ARecord%3A%20Favipiravir_Prasanchaimontri2024_arithmetic_mean%0APaper%3A%20Prasanchaimontri_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_favipiravir/Favipiravir_Prasanchaimontri2024_arithmetic_mean%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:17 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:48 UTC</sub>

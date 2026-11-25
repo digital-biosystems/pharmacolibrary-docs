@@ -21,12 +21,13 @@ Moroxydine is an antiviral compound that was originally developed to treat influ
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | moroxydine | parent | 171.204 | C6H13N5O | DrugBank | — | Liu_2016 |
+| moroxydine hydrochloride | metabolite | 207.662 | C6H14ClN5O | PubChem | [76621](https://pubchem.ncbi.nlm.nih.gov/compound/76621) | Liu_2016 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="fish" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Liu_2016_reference](drugs/drug_moroxydine/Moroxydine_Liu2016_reference.md) | — | 1-compartment (no model) | 7 | Liu W et al., Pharmacokinetics and tissue residues of…, Journal of veterinary pharm… (2016) | [10.1111/jvp.12289](https://doi.org/10.1111/jvp.12289) |
+| <span class="pk-rf" hidden data-species="fish" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Liu_2016_reference](drugs/drug_moroxydine/Moroxydine_Liu2016_reference.md) | — | 1-compartment (no model) | 6 | Liu W et al., Pharmacokinetics and tissue residues of…, Journal of veterinary pharm… (2016) | [10.1111/jvp.12289](https://doi.org/10.1111/jvp.12289) |
 
 ## Pharmacodynamics (PD)
 
@@ -34,7 +35,6 @@ Moroxydine is an antiviral compound that was originally developed to treat influ
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Barbieri_2018_CLIC1_current](drugs/drug_moroxydine/pd_Barbieri_2018_CLIC1_current.md) | CLIC1-mediated ion current ← moroxydine · inhibition effect | — | Barbieri F et al., Inhibition of Chloride Intracellular Ch…, Frontiers in pharmacology (2018) | [10.3389/fphar.2018.00899](https://doi.org/10.3389/fphar.2018.00899) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Barbieri_2018_GSC_viability](drugs/drug_moroxydine/pd_Barbieri_2018_GSC_viability.md) | glioblastoma stem cell viability ← moroxydine · inhibition effect | — | Barbieri F et al., Inhibition of Chloride Intracellular Ch…, Frontiers in pharmacology (2018) | [10.3389/fphar.2018.00899](https://doi.org/10.3389/fphar.2018.00899) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">in vitro</span> | [Lu_2012_PTP1B](drugs/drug_moroxydine/pd_Lu_2012_PTP1B.md) | Protein tyrosine phosphatase (PTP1B) inhibition ← biguanido-oxovanadium complex 3 (moroxydine ligand) · inhibition effect | — | Lu L et al., Exploration of biguanido-oxovanadium co…, Biometals : an internationa… (2012) | [10.1007/s10534-012-9548-4](https://doi.org/10.1007/s10534-012-9548-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +48,7 @@ Moroxydine is an antiviral compound that was originally developed to treat influ
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:19 | 0:27 | 0/1/0 | 3/0/0 | 0/0/0 | 23,815/2,188 | ollama / glm-5.3-flash | 3 | 0/0 | 3/0 | 0 |
+| 2026-11-24 01:19 | 0:04 | 0/1/0 | 2/0/0 | 0/0/0 | 3,135/164 | einfracz / qwen3.8-27b | 3 | 0/0 | 3/0 | 0 |
 
 ## Coverage
 
@@ -57,26 +57,23 @@ Moroxydine is an antiviral compound that was originally developed to treat influ
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Liu_2016.pdf` | Liu W et al., Pharmacokinetics and tissue residues of…, Journal of veterinary pharm… (2016) | popPK | 10 | [10.1111/jvp.12289](https://doi.org/10.1111/jvp.12289) | [26763124](https://pubmed.ncbi.nlm.nih.gov/26763124) | Original PK study of moroxydine in gibel carp with full numeric parameters (Vd, CL, t1/2, ka, AUC) present in the abstract. |
-
-<sub>queue written 2026-10-07 17:19 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Kandeel_2021 | irrelevant | 0 | 0 | In silico docking/virtual screening study; moroxydine is only a docking hit with no PK parameters reported. |
-| popPK | Riley_1990 | irrelevant | 0 | 0 | This is a review of chromatographic bioanalytical methods for antiviral drugs; moroxydine is only mentioned in a list, with no PK parameters reported. |
+| popPK | Kandeel_2021 | irrelevant | 0 | 0 | The paper is a computational docking study for SARS-CoV-2 PLpro and does not report quantitative pharmacokinetic disposition parameters for moroxydine. |
+| PGx | Kandeel_2021 | not_relevant | 0 | 0 | The paper discusses in silico docking of moroxydine against SARS-CoV-2 PLpro and does not report any pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
+| PGx | Liu_2016 | not_relevant | 0 | 0 | The study investigates the effect of water temperature on the pharmacokinetics of moroxydine in fish, not the effect of genetic variants. |
+| popPK | Lu_2012 | irrelevant | 0 | 0 | The study is a mechanistic in vitro enzyme inhibition assay of moroxydine complexes, not a pharmacokinetic study. |
+| PGx | Lu_2012 | not_relevant | 0 | 0 | The paper investigates the in vitro enzyme inhibition properties of a vanadium complex containing moroxydine as a ligand, not the pharmacogenomics of moroxydine itself. |
+| popPK | Riley_1990 | irrelevant | 0 | 0 | This is a review of chromatographic methods for antiviral agents; moroxydine is listed as a drug category but no PK parameters are reported. |
+| PGx | Riley_1990 | not_relevant | 0 | 0 | The paper is a review of chromatographic methods for antiviral agents and does not report any pharmacogenomic effects of moroxydine on PK or PD parameters. |
+| popPK | Zhou_1997 | irrelevant | 0 | 0 | The paper describes an in-vitro antiviral study measuring effective concentrations against RSV, not the pharmacokinetic disposition of moroxydine. |
+| PGx | Zhou_1997 | not_relevant | 0 | 0 | The paper reports antiviral efficacy and dosage of moroxydine against RSV in HeLa cells, with no mention of genetic variants, pharmacogenomics, or specific PK/PD parameters influenced by genotype. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmoroxydine%5D&body=Drug%3A%20moroxydine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_moroxydine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 17:19 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 01:18 UTC</sub>

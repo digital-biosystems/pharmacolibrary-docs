@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Free SN-38 has no dosing path because the hydrolysis link is not assigned to the metabolite.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="sacituzumab govitecan" model-id="SacituzumabGovitecan_Sathe2024_final" status="rejected" stale="false" population="patients with metastatic triple-negative breast cancer and other solid tumors" measured-compound="sacituzumab_govitecan" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -61,13 +61,13 @@ Sathe AG, Singh I, Singh P, Diderichsen PM, Wang X, Chang P et al. Population Ph
 
 ### Reviewer guidance
 
-**Free SN-38 has no dosing path because the hydrolysis link is not assigned to the metabolite.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The metabolite free SN-38 has no dose input and no path from the sacituzumab govitecan central compartment. The hydrolysis relation exists but the link is missing the metabolite target assignment. Second reader disagreements on covariate values for clearance and volume of distribution do not change the structural defect. Extracted — sacituzumab govitecan: CL 0.133 L/h, Q 0.006 L/h, V1 2.77 L, V2 0.908 L; total antibody: CL 0.016 L/h, Q 0.01 L/h, V1 3.06 L, V2 1.2 L.
+Extracted — sacituzumab govitecan: CL 0.133 L/h, Q 0.006 L/h, V1 2.77 L, V2 0.908 L; total antibody: CL 0.016 L/h, Q 0.01 L/h, V1 3.06 L, V2 1.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sacituzumab_govitecan, the second reading sacituzumab govitecan; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

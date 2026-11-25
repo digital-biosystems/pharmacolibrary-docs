@@ -50,7 +50,7 @@ Kramer WG, Feldman S, Broughton A, Strong JE, Hall SW, Holoye PY. The pharmacoki
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of qβ: this record has none, the second reading 128.0; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

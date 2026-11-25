@@ -53,7 +53,7 @@ Marier JF, Dubuc MC, Drouin E, Alvarez F, Ducharme MP, Brazier JL. Pharmacokinet
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of mof: this record has 507.811, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

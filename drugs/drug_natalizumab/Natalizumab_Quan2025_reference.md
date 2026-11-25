@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper reports pharmacokinetic parameters for teriflunomide, not natalizumab, making the extracted values for CL/F and V/F inapplicable to the intended molecule.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_Quan2025_reference" status="rejected" stale="false" population="" measured-compound="natalizumab" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Quan C, Zhou H, Yang H, Jiao Z, Zhang M, Zhang B et al. Safety of teriflunomide 
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper reports pharmacokinetic parameters for teriflunomide, not natalizumab, making the extracted values for CL/F and V/F inapplicable to the intended molecule.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The primary finding indicates the paper’s subject is teriflunomide, where natalizumab appears only as an excluded co-administered drug. Consequently, the reported apparent clearance of 0.0084 L/h and apparent volume of distribution of 4.92 L are derived from a different therapeutic agent. Although the model builder applied an apparent parameterization assuming complete bioavailability, these structural and parameter assumptions do not resolve the fundamental mismatch between the measured compound and the drug’s identity. Extracted — natalizumab: CL/F 0.0084 L/h, V/F 4.92 L, kabs 2.3 /h.
+Extracted — natalizumab: CL/F 0.0084 L/h, V/F 4.92 L, kabs 2.3 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has none, the second reading 1564.5; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.714 (5 of 7 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

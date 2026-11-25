@@ -157,7 +157,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check agreement 0.25 is below 0.5: verdict partial, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.25 (4 of 16 compared fields agree, 12 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check agreement 0.25 is below 0.5: verdict partial; agreement 0.25 (4 of 16 compared fields agree, 12 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

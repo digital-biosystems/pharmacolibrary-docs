@@ -44,7 +44,7 @@ Bryson SM, Whiting B, Lawrence JR. Disopyramide serum and pharmacologic effect k
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 61.57, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 

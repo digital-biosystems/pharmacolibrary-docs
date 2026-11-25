@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Dupilumab absorption fraction and lag time defaulted to library values, and defined covariate effects were not simulated in the model.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="dupilumab" model-id="Dupilumab_Kovalenko2020_population_estimates" status="needs_review" stale="false" population="healthy volunteers and patients with moderate‐to‐severe atopic dermatitis" measured-compound="dupilumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,7 +54,7 @@ Kovalenko P, Davis JD, Li M, Rippley R, Ardeleanu M, Shumel B et al. Base and Co
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.269). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,11 +64,13 @@ Kovalenko P, Davis JD, Li M, Rippley R, Ardeleanu M, Shumel B et al. Base and Co
 
 ### Reviewer guidance
 
-**Dupilumab absorption fraction and lag time defaulted to library values, and defined covariate effects were not simulated in the model.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).**
 
-The bioavailability fraction (F) and lag time (Tlag) were assigned standard defaults rather than values estimated from the paper. Furthermore, although the record defines covariate effects for clearance and volume, the simulation only modeled the reference individual, leaving these structural components untested. Extracted — dupilumab: V 2.74 L, kel 0.0477 1/d, CL 0.13 L/d, kabs 0.548 1/day.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — dupilumab: V 2.74 L, kel 0.0477 1/d, CL 0.13 L/d, kabs 0.548 1/day.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has none, the second reading 0.642; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,6 +142,45 @@ The bioavailability fraction (F) and lag time (Tlag) were assigned standard defa
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.269 (7/26 fields) | 19 |
+
+<details><summary>19 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.bioavailability.theta` |  | 0.642 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl].covariate_forms` | ['linear_fractional', 'power', 'power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl_bmi]` | 0.372 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f]` |  | 0.642 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka].value` | 0.548 | 0.306 | mismatch |
+| `gpt-oss-120b` | `parameters[kcp]` |  | 0.211 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ke].covariate_forms` | ['linear_fractional', 'power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[km]` |  | 0.01 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kpc]` |  | 0.310 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtt]` |  | 0.105 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_albumin_power]` | -0.800 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_race_cl_white]` | -0.118 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_kel_bmi_power]` | 0.368 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_kel_race_ke_white]` | -0.123 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_weight_power]` | 0.806 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_albumin_power]` | -0.653 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_weight_power]` | 0.817 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc].covariate_forms` | ['power', 'power'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[vm]` |  | 1.07 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -159,15 +200,15 @@ The bioavailability fraction (F) and lag time (Tlag) were assigned standard defa
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | pass | C_central (measured=dupilumab) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  | no second reading of this record |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=dupilumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.269 (7 of 26 compared fields agree, 15 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.269 | cross-check contradicted by a second reader: verdict disputed; agreement 0.269 (7 of 26 compared fields agree, 15 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

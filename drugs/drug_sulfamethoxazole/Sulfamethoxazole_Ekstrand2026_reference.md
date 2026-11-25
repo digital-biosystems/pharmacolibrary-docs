@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Sulfamethoxazole was held back because its simulated terminal half-life was 3359.5785423853636 h, versus reported half-lives as low as 0.1 h.
+> The model does not reproduce the paper's terminal half-life; k12, k13, k31 use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="sulfamethoxazole" model-id="Sulfamethoxazole_Ekstrand2026_reference" status="needs_review" stale="false" population="Beagle dogs" measured-compound="sulfamethoxazole" parameterization="mechanistic" topology="3C"></div>
 
@@ -47,7 +47,7 @@ Ekstrand C, Löwgren M, Erkas M, Devreese M, De Baere S, Vo-Thanh J et al. Compa
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.85). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,11 +57,13 @@ Ekstrand C, Löwgren M, Erkas M, Devreese M, De Baere S, Vo-Thanh J et al. Compa
 
 ### Reviewer guidance
 
-**Sulfamethoxazole was held back because its simulated terminal half-life was 3359.5785423853636 h, versus reported half-lives as low as 0.1 h.**
+**The model does not reproduce the paper's terminal half-life; k12, k13, k31 use library defaults, not estimates from this paper (+2 more).**
 
-Reported terminal or beta half-lives ranged from 0.1 to 12.6 h, while the simulated terminal half-life was 3359.5785423853636 h; the comparison notes an hours-to-SI versus simulated-hours mismatch. An absorption lag and three compartment-transfer rate constants were defaulted, and the record states those rate constants use library defaults rather than estimates from this paper. Extracted — sulfamethoxazole: CL 0.43 L/h/kg, V1 0.37 L/kg, V2 0.09 L/kg, Q 0.14 L/h/kg, kabs 3.69 1/h, Fab 0.94, V 2.62 L/kg.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — sulfamethoxazole: CL 0.43 L/h/kg, V1 0.37 L/kg, V2 0.09 L/kg, Q 0.14 L/h/kg, kabs 3.69 1/h, Fab 0.94, V 2.62 L/kg.
 
-<sub>reviewed by gpt-6-luna</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulfamethoxazole, trimethoprim, the second reading sulfamethoxazole; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -116,6 +118,29 @@ Reported terminal or beta half-lives ranged from 0.1 to 12.6 h, while the simula
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.85 (17/20 fields) | 3 |
+
+<details><summary>3 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[b]` |  | 0.41 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q].rse_percent` | 30.3 |  | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | sulfamethoxazole, trimethoprim | sulfamethoxazole | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -146,20 +171,20 @@ Reported terminal or beta half-lives ranged from 0.1 to 12.6 h, while the simula
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 3C → PK_3C* | PK_3C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_beta | reference | skipped |  | 3360 |  | non-numeric value |
-| T1_t_half_beta | reference | fail | 7.5 | 3360 | 447.9 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 12.6 | 3360 | 266.6 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 4.2 | 3360 | 799.9 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | skipped |  | 3360 |  | non-numeric value |
-| T1_t_half_terminal | reference | fail | 0.1 | 3360 | 3.36e+04 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.1 | 3360 | 3054 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.39 | 3360 | 8614 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.61 | 3360 | 5508 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.19 | 3360 | 1.768e+04 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 4.2 | 3360 | 799.9 | h→SI vs simulated h |
-| T1_tmax | reference | skipped |  | 2.693 |  | non-numeric value |
-| T1_tmax | reference | skipped |  | 2.693 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.85 (17 of 20 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.85 | cross-check contradicted by a second reader: verdict disputed; agreement 0.85 (17 of 20 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | skipped |  | 3360 |  | the transcribed record carries no number for this value |
+| T1_t_half_beta | reference | fail | 7.5 | 3360 | 447.9 | reported 7.5 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 12.6 | 3360 | 266.6 | reported 12.6 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 4.2 | 3360 | 799.9 | reported 4.2 h→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 3360 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | fail | 0.1 | 3360 | 3.36e+04 | reported 0.1 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.1 | 3360 | 3054 | reported 1.1 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.39 | 3360 | 8614 | reported 0.39 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.61 | 3360 | 5508 | reported 0.61 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.19 | 3360 | 1.768e+04 | reported 0.19 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 4.2 | 3360 | 799.9 | reported 4.2 h→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 2.693 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | skipped |  | 2.693 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

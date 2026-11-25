@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment model for tranexamic acid was rejected because the peripheral compartment is an orphan with no structural link to the central compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="tranexamic acid" model-id="TranexamicAcid_Liu2025_the_final_model" status="rejected" stale="false" population="Chinese adults undergoing cardiac surgery with cardiopulmonary bypass" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Liu Y, Zhou C, Lv H, Tian L, Jiang J, Shi J. Population Pharmacokinetics of Tran
 
 ### Reviewer guidance
 
-**The two-compartment model for tranexamic acid was rejected because the peripheral compartment is an orphan with no structural link to the central compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists the intercompartmental clearance Q as missing, which leaves the peripheral compartment unlinked in the two-compartment structure. Consequently, the model contains an unreachable compartment, a structural flaw that invalidates the parameter estimates for tranexamic acid. Extracted — tranexamic acid: CL 4.7 L/h, V1 4.9 L, V2 11.1 L.
+Extracted — tranexamic acid: CL 4.7 L/h, V1 4.9 L, V2 11.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

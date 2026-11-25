@@ -8,14 +8,14 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="chlorpromazine" model-id="Chlorpromazine_Nielsen1983_reference" status="needs_review" stale="false" population="neonate with in utero chlorpromazine exposure" measured-compound="chlorpromazine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="chlorpromazine" model-id="Chlorpromazine_Nielsen1983_reference" status="needs_review" stale="false" population="neonates with chronic in utero exposure" measured-compound="chlorpromazine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nielsen HC, Wiriyathian S, Rosenfeld R, Leveno K, Garriott JC. Chlorpromazine excretion by the neonate following chronic in utero exposure. Pediatric pharmacology (New York, N.Y.) 3(1):1–5 (1983).
 
 ## Population and dosing
 
-**Population:** neonate with in utero chlorpromazine exposure · condition neonatal neurologic depression following in utero exposure · age group neonate · n = 1.
+**Population:** neonates with chronic in utero exposure · condition severe neurologic depression · age group neonate.
 
 ## Model
 
@@ -29,12 +29,12 @@ Nielsen HC, Wiriyathian S, Rosenfeld R, Leveno K, Garriott JC. Chlorpromazine ex
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| rapid half-life | t1/2α | 1.46 | days |
-| slow half-life | t1/2z | 3.19 | days |
+| rapid half-life | t1/2z | 1.46 | days |
+| slow half-life | t1/2β | 3.19 | days |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,9 +46,9 @@ Nielsen HC, Wiriyathian S, Rosenfeld R, Leveno K, Garriott JC. Chlorpromazine ex
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — chlorpromazine: t1/2α 1.46 days, t1/2z 3.19 days.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — chlorpromazine: t1/2z 1.46 days, t1/2β 3.19 days.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has chlorpromazine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[rapid half-life].parameter_id`: this record has Q57, the second reading Q59. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -56,8 +56,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| rapid half-life | `Q59` · t1/2α | 1.46 | days | 1.261e+05 | s | d | llm (0.6) | Nielsen_1983:abstract |
-| slow half-life | `Q57` · t1/2z | 3.19 | days | 2.756e+05 | s | d | llm (0.6) | Nielsen_1983:abstract |
+| rapid half-life | `Q57` · t1/2z | 1.46 | days | 1.261e+05 | s | d | llm (0.6) | Nielsen_1983:abstract |
+| slow half-life | `Q60` · t1/2β | 3.19 | days | 2.756e+05 | s | d | llm (0.6) | Nielsen_1983:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -70,8 +70,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=chlorpromazine
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Nielsen_1983_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
@@ -79,22 +77,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[rapid half-life]` | 1.46 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[rapid half-life]` |  | 1.46 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[slow half-life]` | 3.19 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[slow half-life]` |  | 3.19 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | chlorpromazine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | chlorpromazine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[rapid half-life].parameter_id` | Q57 | Q59 | mismatch |
 
 </details>
 
@@ -112,7 +105,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Nielsen_1983:abstract'] |
-| C5_dimension_Q59 | pass | [time] |  | ['Nielsen_1983:abstract'] |
+| C5_dimension_Q60 | pass | [time] |  | ['Nielsen_1983:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -147,4 +140,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bchlorpromazine%5D%20Chlorpromazine_Nielsen1983_reference&body=Drug%3A%20chlorpromazine%0ARecord%3A%20Chlorpromazine_Nielsen1983_reference%0APaper%3A%20Nielsen_1983%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_chlorpromazine/Chlorpromazine_Nielsen1983_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 15:31 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 17:30 UTC</sub>

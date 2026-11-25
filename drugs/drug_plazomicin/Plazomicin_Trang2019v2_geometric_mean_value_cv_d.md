@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> All plazomicin PK parameters failed second-reader agreement, including AUC, clearance, Cmax, and volumes.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="plazomicin" model-id="Plazomicin_Trang2019v2_geometric_mean_value_cv_d" status="needs_review" stale="false" population="adult patients with cUTI/AP and serious infections caused by CRE" measured-compound="plazomicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Trang M, Seroogy JD, Van Wart SA, Bhavnani SM, Kim A, Gibbons JA et al. Populati
 
 ### Reviewer guidance
 
-**All plazomicin PK parameters failed second-reader agreement, including AUC, clearance, Cmax, and volumes.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader provided conflicting values for every extracted pharmacokinetic parameter, resulting in an agreement of 0.571. Specific discrepancies include the AUC0–24 (248 vs 235 mg·h/L) and clearance (4.50 vs 2.91 L/h). Additional disagreements were noted for Cmax, Cmin, half-lives, and volume of distribution. The record was held back due to these widespread value conflicts. Extracted — plazomicin: AUCt 248 mg·h/L, CL 4.5 liters/h, Cmax 84.6 mg/L, Cmin 0.372 mg/L, t1/2α 0.328 h, t1/2β 2.77 h, t1/2γ 25.8 h, Vss 25 liters, … (+1).
+A reported unit could not be converted (AUCt, Cmax and Cmin), so that value has no SI equivalent. Extracted — plazomicin: AUCt 248 mg·h/L, CL 4.5 liters/h, Cmax 84.6 mg/L, Cmin 0.372 mg/L, t1/2α 0.328 h, t1/2β 2.77 h, t1/2γ 25.8 h, Vss 25 liters, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc0-24 (mg h/liter)a].value`: this record has 248, the second reading 235; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -204,7 +204,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.571 (12 of 21 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.571 | cross-check contradicted by a second reader: verdict disputed; agreement 0.571 (12 of 21 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

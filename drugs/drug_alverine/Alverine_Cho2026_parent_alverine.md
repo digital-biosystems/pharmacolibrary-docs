@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span>
 
-> Alverine AUC units use micromoles instead of mass, causing a dimensional conflict that rejected the record.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q74 unit μmol·h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q17 unit μmol·h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="alverine" model-id="Alverine_Cho2026_parent_alverine" status="rejected" stale="false" population="mice" measured-compound="alverine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -52,13 +52,13 @@ Cho A, Jeong HC, Kim M, Cho I, Na HJ, Ko KC et al. Development of Integrated Par
 
 ### Reviewer guidance
 
-**Alverine AUC units use micromoles instead of mass, causing a dimensional conflict that rejected the record.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q74 unit μmol·h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q17 unit μmol·h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The area under the curve parameters (0.5660 and 0.5712 μmol·h/L) carry a substance dimension that conflicts with the mass dimension required by the model structure. Clearance is 18.5030 L/h/kg. The micromole unit could not be converted to standard SI mass units, leaving the parameter without a valid value for the final model build. Extracted — alverine: AUClast 0.566 μmol·h/L, AUC∞ 0.571 μmol·h/L, CL 18.5 L/h/kg, V 34.7 L/kg, t1/2z 1.3 h.
+A reported unit could not be converted (AUClast and AUC∞), so that value has no SI equivalent. Extracted — alverine: AUClast 0.566 μmol·h/L, AUC∞ 0.571 μmol·h/L, CL 18.5 L/h/kg, V 34.7 L/kg, t1/2z 1.3 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alverine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

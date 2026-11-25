@@ -49,13 +49,13 @@ Abouellil A, Bilal M, Taubert M, Fuhr U. A population pharmacokinetic model of r
 
 ### Reviewer guidance
 
-**The remdesivir model was refused because central and peripheral volume of distribution parameters were not extracted, leaving them at library defaults, and all four core parameter values disagreed with a second reader’s review.**
+**The model was built but has not been simulated yet; t3_param_coverage.**
 
-Parameter coverage failed: the record emitted values for total body clearance (36.9 L/h) and central formation clearance (16.9 L/h), but central volume (V1) and peripheral volume (V2) were neither extracted nor defaulted, so a placeholder would have been used. A second reader disputed all four recorded values, citing 4.89 L for central volume, 46.5 L for peripheral volume, 13.2 L/h for inter-compartmental clearance, and 18.1 L/h for total body clearance. The second reader also did not identify a central formation clearance value, in contrast to the recorded 16.9 L/h. Extracted — remdesivir: V1 96.4 L, V2 8.64 L, Q 0.12 L/h, CL 36.9 L/h; GS-704277: CLfm 16.9 L/h.
+Extracted — remdesivir: V1 96.4 L, V2 8.64 L, Q 0.12 L/h, CL 36.9 L/h; GS-704277: CLfm 16.9 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[central compartment volume of distribution].value`: this record has 96.4, the second reading 4.89; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

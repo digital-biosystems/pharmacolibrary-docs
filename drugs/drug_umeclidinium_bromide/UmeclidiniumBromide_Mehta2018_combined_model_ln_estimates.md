@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Umeclidinium CL/F is recorded as 5.43 L/h, flagged for implausible magnitude consistent with a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="umeclidinium bromide" model-id="UmeclidiniumBromide_Mehta2018_combined_model_ln_estimates" status="rejected" stale="false" population="patients with symptomatic COPD" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Mehta R, Pefani E, Beerahee M, Brealey N, Barnacle H, Birk R et al. Population P
 
 ### Reviewer guidance
 
-**Umeclidinium CL/F is recorded as 5.43 L/h, flagged for implausible magnitude consistent with a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-CL/F means total clearance following oral administration adjusted for bioavailability; the finding flags a clearance/volume value as outside the physiological window because of an apparent unit or scale extraction error. The second reader identified the dose compound as umeclidinium rather than fluticasone furoate/umeclidinium/vilanterol, while both identified the analyte as umeclidinium, with a spelling difference in the second reader’s entry. Extracted — umeclidinium bromide: CL/F 5.43 L/h, V2/F 0.31 L, Q/F 5.74 L/h, V3/F 4.66 L, kabs -2.94 1/h.
+Extracted — umeclidinium bromide: CL/F 5.43 L/h, V2/F 0.31 L, Q/F 5.74 L/h, V3/F 4.66 L, kabs -2.94 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluticasone furoate/umeclidinium/vilanterol, the second reading umeclidinium; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

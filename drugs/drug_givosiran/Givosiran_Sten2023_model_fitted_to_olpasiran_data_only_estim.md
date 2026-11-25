@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> Givosiran parameters were missing because all extracted values describe olpasiran, leaving key kinetics to default placeholders.
+> No value for givosiran's clearance, volume of distribution, absorption lag time and central→peripheral rate constant — all 6 extracted parameters describe olpasiran, not givosiran; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="givosiran" model-id="Givosiran_Sten2023_model_fitted_to_olpasiran_data_only_estim" status="model_quarantined" stale="false" population="adults with acute intermittent porphyria" measured-compound="givosiran" parameterization="apparent" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Sten S, Cardilin T, Antonsson M, Gennemark P. Plasma Pharmacokinetics of N-Acety
 
 ### Reviewer guidance
 
-**Givosiran parameters were missing because all extracted values describe olpasiran, leaving key kinetics to default placeholders.**
+**No value for givosiran's clearance, volume of distribution, absorption lag time and central→peripheral rate constant — all 6 extracted parameters describe olpasiran, not givosiran; t6_deviations (+1 more).**
 
-The record lists six parameters (e.g., CL/F 27.7 L/h) explicitly assigned to olpasiran, not the drug givosiran. Consequently, givosiran’s clearance, volume, lag time, and rate constant had no values, requiring defaults. A second reader also disputed the model structure and suggested different parameter estimates. Extracted — olpasiran: kabs 0.635 1/h, V1/F 27.9 L, V2/F 1.47e+03 L, V3/F 296 L, CL/F 27.7 L/h, Q/F 2.62 L/h.
+The model was built, but givosiran's clearance, volume of distribution, absorption lag time and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — olpasiran: kabs 0.635 1/h, V1/F 27.9 L, V2/F 1.47e+03 L, V3/F 296 L, CL/F 27.7 L/h, Q/F 2.62 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading givosiran → as(n-1)3’ givosiran (metabolism); it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -156,7 +156,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.188, 0 of 1 reader(s) agree | 0.188 | cross-check disputed by a second reader: verdict disputed, agreement 0.188, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.188 (3 of 16 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.188 | cross-check contradicted by a second reader: verdict disputed; agreement 0.188 (3 of 16 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">

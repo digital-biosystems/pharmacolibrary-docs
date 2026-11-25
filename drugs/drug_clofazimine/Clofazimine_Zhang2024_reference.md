@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The peripheral compartment lacks a connection to the central compartment, making the two-compartment model structurally invalid.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="clofazimine" model-id="Clofazimine_Zhang2024_reference" status="rejected" stale="false" population="" measured-compound="clofazimine" parameterization="apparent" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Zhang CX, Conrad TM, Hermann D, Gordon MA, Houpt E, Iroh Tam PY et al. Clofazimi
 
 ### Reviewer guidance
 
-**The peripheral compartment lacks a connection to the central compartment, making the two-compartment model structurally invalid.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model defines a central volume of 473.0 L and a peripheral volume of 3434.0 L, but the peripheral compartment is unreachable from the dose. This orphan structure means the peripheral parameter has no path from administration, invalidating the 2C topology. Additionally, the second reader disagreed on the absorption rate constant, recording 0.601 h−1 instead of 0.625 h−1. Extracted — clofazimine: CL/F 3.71 L/h, V/F 473 L, V2/F 3.43e+03 L, kabs 0.625 h−1.
+Extracted — clofazimine: CL/F 3.71 L/h, V/F 473 L, V2/F 3.43e+03 L, kabs 0.625 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 3.71, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

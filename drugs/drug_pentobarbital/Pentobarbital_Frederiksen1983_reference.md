@@ -1,46 +1,44 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;pentobarbital&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/&quot;},{&quot;label&quot;:&quot;Frederiksen_1983 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentobarbital_Frederiksen1983_reference&quot;,&quot;label&quot;:&quot;Frederiksen_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Frederiksen1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Ketharanathan2023_base&quot;,&quot;label&quot;:&quot;Ketharanathan_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Ketharanathan2023_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Ketharanathan2023_final&quot;,&quot;label&quot;:&quot;Ketharanathan_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Ketharanathan2023_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_12_years&quot;,&quot;label&quot;:&quot;Helfer_2026_12_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Helfer2026_12_years.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_2_to_6_years&quot;,&quot;label&quot;:&quot;Helfer_2026_2_to_6_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Helfer2026_2_to_6_years.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_2_years&quot;,&quot;label&quot;:&quot;Helfer_2026_2_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Helfer2026_2_years.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_6_to_12_years&quot;,&quot;label&quot;:&quot;Helfer_2026_6_to_12_years&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Helfer2026_6_to_12_years.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Helfer2026_estimate&quot;,&quot;label&quot;:&quot;Helfer_2026_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Helfer2026_estimate.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Ketharanathan2023_base&quot;,&quot;label&quot;:&quot;Ketharanathan_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Ketharanathan2023_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Pentobarbital_Ketharanathan2023_final&quot;,&quot;label&quot;:&quot;Ketharanathan_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pentobarbital/Pentobarbital_Ketharanathan2023_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # pentobarbital — `Pentobarbital_Frederiksen1983_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Pentobarbital clearance 0.0013 L/h, half-life 8.2 hr, and Vss 1.08 L/kg were disputed by a second reader who failed to identify the analyte or values.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit liters/min X kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].
 
-<div class="pk-model-meta" hidden drug="pentobarbital" model-id="Pentobarbital_Frederiksen1983_reference" status="needs_review" stale="false" population="dogs" measured-compound="pentobarbital" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="pentobarbital" model-id="Pentobarbital_Frederiksen1983_reference" status="rejected" stale="false" population="dogs" measured-compound="pentobarbital" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Frederiksen MC, Henthorn TK, Ruo TI, Atkinson AJ. Pharmacokinetics of pentobarbital in the dog. The Journal of pharmacology and experimental therapeutics 225(2):355–360 (1983).
 
 ## Population and dosing
 
-**Population:** dogs · condition healthy · age group adult · n = 5.
+**Population:** dogs · condition healthy · n = 5.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 ## Model
 
-**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 3 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_pentobarbital/Pentobarbital_Frederiksen1983_reference/Pentobarbital_Frederiksen1983_reference.svg" alt="Pentobarbital_Frederiksen1983_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| elimination-phase half-life | t1/2z | 8.2 | hr |
+| elimination-phase half-life of pentobarbital | t1/2z | 8.2 | hr |
 | steady-state volume of pentobarbital distribution | Vss | 1.08 | liters/kg |
-| elimination clearance | CL | 0.0013 | L/h |
+| elimination clearance | CL | 0.0013 | liters/min X kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,21 +48,21 @@ Frederiksen MC, Henthorn TK, Ruo TI, Atkinson AJ. Pharmacokinetics of pentobarbi
 
 ### Reviewer guidance
 
-**Pentobarbital clearance 0.0013 L/h, half-life 8.2 hr, and Vss 1.08 L/kg were disputed by a second reader who failed to identify the analyte or values.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit liters/min X kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].**
 
-The record was constructed solely from the abstract, causing summary statistics to stand in for a fitted model. The second reader could not confirm the dose compound, primary analyte, or any specific parameter values. Consequently, the cross-check for reader agreement failed with a ratio of 0.2, resulting in a needs_review verdict. Extracted — pentobarbital: t1/2z 8.2 hr, Vss 1.08 liters/kg, CL 0.0013 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pentobarbital: t1/2z 8.2 hr, Vss 1.08 liters/kg, CL 0.0013 liters/min X kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pentobarbital, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of threshold pentobarbital concentration required to suppress the corneal reflex: this record has none, the second reading 26.4. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| elimination-phase half-life | `Q57` · t1/2z | 8.2 | hr | 2.952e+04 | s | h | llm (0.6) | Frederiksen_1983:abstract |
+| elimination-phase half-life of pentobarbital | `Q57` · t1/2z | 8.2 | hr | 2.952e+04 | s | h | llm (0.6) | Frederiksen_1983:abstract |
 | steady-state volume of pentobarbital distribution | `Q65` · Vss | 1.08 | liters/kg | 0.0756 | m3 | l/kg | llm_corrected (0.6) | Frederiksen_1983:abstract |
-| elimination clearance | `Q22` · CL | 0.0013 | L/h | 3.611e-10 | m3/s | L/h | llm_confirmed (0.6) | Frederiksen_1983:abstract |
+| elimination clearance | `Q22` · CL | 0.0013 | liters/min X kg |  |  | l/(min·kg) | llm_confirmed (0.6) | Frederiksen_1983:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,43 +71,33 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
-**Deviations:**
-- `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
-
 **Interpretation flags:**
-- unit_dimension_unknown: 'liters/min X kg' (CL)
-- dropped PD-category row 'Threshold pentobarbital concentrations required to suppress the corneal reflex' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Frederiksen_1983:abstract'])
-- dropped unlinked row (NIL): 'withdrawal response to pain' — extend the ontology if this is a real PK parameter (source ['Frederiksen_1983:abstract'])
-- implicit units: 'elimination clearance' → L/h (from the popPK convention: 'No unit stated in text, caption, or footnotes. Total clearance in population PK is conventionally expressed in L/h; the ')
+- dropped unlinked row (NIL): 'dose' — extend the ontology if this is a real PK parameter (source ['Frederiksen_1983:abstract'])
+- unit_dimension_mismatch: 'elimination clearance' → Q22 (unit '[length] ** 3 * [mass] / [time]' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped unlinked row (NIL): 'Threshold pentobarbital concentrations required to suppress the corneal reflex' — extend the ontology if this is a real PK parameter (source ['Frederiksen_1983:abstract'])
+- dropped PD-category row 'Threshold pentobarbital concentrations required to ... suppress the ... withdrawal response to pain' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Frederiksen_1983:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pentobarbital
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Frederiksen_1983_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Frederiksen_1983_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[elimination clearance]` | 0.0013 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination clearance]` |  | 0.0013 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination-phase half-life]` | 8.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination-phase half-life]` |  | 8.2 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state volume of pentobarbital distribution]` | 1.08 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state volume of pentobarbital distribution]` |  | 1.08 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | pentobarbital | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | pentobarbital | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[threshold pentobarbital concentration required to suppress the corneal reflex]` |  | 26.4 | only_one_extracted |
 
 </details>
 
@@ -126,25 +114,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Frederiksen_1983:abstract'] |
+| C5_dimension_Q22 | fail | [length] ** 3 / [time] | liters/min X kg ([length] ** 3 * [mass] / [time]) | ['Frederiksen_1983:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Frederiksen_1983:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Frederiksen_1983:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0013 | ['Frederiksen_1983:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0013 L/h | ['Frederiksen_1983:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 75.6 L | ['Frederiksen_1983:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=pentobarbital) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -156,69 +131,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_pentobarbital/Pentobarbital_Frederiksen1983_reference/Pentobarbital_Frederiksen1983_reference_modelica.zip" download>Pentobarbital_Frederiksen1983_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_pentobarbital/Pentobarbital_Frederiksen1983_reference/Pentobarbital_Frederiksen1983_reference_fmi.zip" download>Pentobarbital_Frederiksen1983_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_pentobarbital/Pentobarbital_Frederiksen1983_reference/Pentobarbital_Frederiksen1983_reference_matlab.zip" download>Pentobarbital_Frederiksen1983_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_pentobarbital/Pentobarbital_Frederiksen1983_reference/Pentobarbital_Frederiksen1983_reference_matlab_simbio.zip" download>Pentobarbital_Frederiksen1983_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_pentobarbital/Pentobarbital_Frederiksen1983_reference/Pentobarbital_Frederiksen1983_reference_sbml.zip" download>Pentobarbital_Frederiksen1983_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_pentobarbital/Pentobarbital_Frederiksen1983_reference/Pentobarbital_Frederiksen1983_reference_cellml.zip" download>Pentobarbital_Frederiksen1983_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2263 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0001 | kg |
-| input | model | `Cl` | 3.611e-10 | m3/s |
-| input | model | `VdPerKg` | 0.00108 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Frederiksen MC, Henthorn TK, Ruo TI, Atkinson AJ. Pharmacokinetics of pentobarbital in the dog. The Journal of pharmacology and experimental therapeutics 225(2):355–360 (1983).
-
-**This record:** Pharmacolibrary, model `Pentobarbital_Frederiksen1983_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_pentobarbital/Pentobarbital_Frederiksen1983_reference>
-
-```bibtex
-@misc{pharmacolibrary_PentobarbitalFrederiksen1983reference,
-  title  = {{Pharmacolibrary model Pentobarbital_Frederiksen1983_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_pentobarbital/Pentobarbital_Frederiksen1983_reference},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 100 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 100 mg parenteral (N05CA01) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_pentobarbital/Pentobarbital_Frederiksen1983_reference/Pentobarbital_Frederiksen1983_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_pentobarbital/Pentobarbital_Frederiksen1983_reference/Pentobarbital_Frederiksen1983_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Pentobarbital_Frederiksen1983_reference_params.json` · controls `Pentobarbital_Frederiksen1983_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpentobarbital%5D%20Pentobarbital_Frederiksen1983_reference&body=Drug%3A%20pentobarbital%0ARecord%3A%20Pentobarbital_Frederiksen1983_reference%0APaper%3A%20Frederiksen_1983%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pentobarbital/Pentobarbital_Frederiksen1983_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:43 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:49 UTC</sub>

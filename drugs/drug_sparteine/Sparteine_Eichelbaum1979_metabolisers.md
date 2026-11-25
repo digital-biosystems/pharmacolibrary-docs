@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Sparteine's non-renal clearance parameter lacks a unit, and the second reader found missing parameter values.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="sparteine" model-id="Sparteine_Eichelbaum1979_metabolisers" status="rejected" stale="false" population="healthy adult male volunteers" measured-compound="sparteine" parameterization="mechanistic" topology="3C"></div>
 
@@ -54,13 +54,13 @@ Eichelbaum M, Spannbrucker N, Dengler HJ. Influence of the defective metabolism 
 
 ### Reviewer guidance
 
-**Sparteine's non-renal clearance parameter lacks a unit, and the second reader found missing parameter values.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The non-renal clearance parameter for sparteine has a value of 126.3 but no specified unit, preventing conversion to standard units. The second reader identified multiple parameter entries with missing values that were not captured in this record. The model was rejected due to an unreachable compartment, though the specific structural defect is not detailed in the findings. Extracted — sparteine: AUC 255, V2 436 L, k21 0.0774 1/h, k12 0.0661 1/h, KD 0.00929, V1 59.4 L, V 99.3 L, CLNR 126 ml/min.
+Extracted — sparteine: AUC 255, V2 436 L, k21 0.0774 1/h, k12 0.0661 1/h, KD 0.00929, V1 59.4 L, V 99.3 L, CLNR 126 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of /3: this record has none, the second reading 0.0046; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

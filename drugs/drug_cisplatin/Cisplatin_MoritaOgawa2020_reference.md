@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;cisplatin&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/&quot;},{&quot;label&quot;:&quot;Morita-Ogawa_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Imbs2016_reference&quot;,&quot;label&quot;:&quot;Imbs_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Imbs2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Mody_2022_R&quot;,&quot;label&quot;:&quot;Mody_2022 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/pd_Mody_2022_R.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mody_2022_R&quot;,&quot;label&quot;:&quot;Mody_2022 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/pd_Mody_2022_R.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cisplatin — `Cisplatin_MoritaOgawa2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> The abstract-only cisplatin record is disputed over unchanged cisplatin’s 19.1 L/h clearance and 13.8 L volume of distribution, so it remains under review.
-
-<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_MoritaOgawa2020_reference" status="needs_review" stale="false" population="cancer patients with moderate renal dysfunction" measured-compound="unchanged cisplatin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_MoritaOgawa2020_reference" status="simulated" stale="false" population="cancer patients with moderate renal dysfunction" measured-compound="cisplatin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Morita-Ogawa T, Sugita H, Minami H, Yamaguchi T, Hanada K. Population pharmacokinetics and renal toxicity of cisplatin in cancer patients with renal dysfunction. Cancer chemotherapy and pharmacology 86(4):559–566 (2020).
@@ -17,9 +15,7 @@ Morita-Ogawa T, Sugita H, Minami H, Yamaguchi T, Hanada K. Population pharmacoki
 
 ## Population and dosing
 
-**Population:** cancer patients with moderate renal dysfunction · condition cancer with moderate renal dysfunction · age group adult · n = 23.
-
-**Dosed compound ≠ measured compound:** dosed cisplatin, measured unchanged cisplatin.
+**Population:** cancer patients with moderate renal dysfunction · age group adult.
 
 ## Model
 
@@ -31,16 +27,14 @@ Morita-Ogawa T, Sugita H, Minami H, Yamaguchi T, Hanada K. Population pharmacoki
 <figure class="pk-models-diagram"><img src="drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference/Cisplatin_MoritaOgawa2020_reference.svg" alt="Cisplatin_MoritaOgawa2020_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| CLtot | CL | 19.1 | L/h |
-| Vd | V | 13.8 | L |
+| clearance (CLtot) | CL | 19.1 | L/h |
+| volume of distribution (Vd) | V | 13.8 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5), qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,20 +44,20 @@ Morita-Ogawa T, Sugita H, Minami H, Yamaguchi T, Hanada K. Population pharmacoki
 
 ### Reviewer guidance
 
-**The abstract-only cisplatin record is disputed over unchanged cisplatin’s 19.1 L/h clearance and 13.8 L volume of distribution, so it remains under review.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-The record identifies the measured compound as unchanged cisplatin, while the second reader identifies it as cisplatin. The second reader maps the same values to clearance and volume of distribution rather than the record’s CLtot and Vd labels; the record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — unchanged cisplatin: CL 19.1 L/h, V 13.8 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has unchanged cisplatin, the second reading cisplatin; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CLtot | `Q22` · CL | 19.1 | L/h | 5.306e-06 | m3/s | l/h | exact (1) | Morita-Ogawa_2020:abstract |
-| Vd | `Q61` · V | 13.8 | L | 0.0138 | m3 | l | exact (1) | Morita-Ogawa_2020:abstract |
+| clearance (CLtot) | `Q22` · CL | 19.1 | L/h | 5.306e-06 | m3/s | l/h | exact (1) | Morita-Ogawa_2020:abstract |
+| volume of distribution (Vd) | `Q61` · V | 13.8 | L | 0.0138 | m3 | l | exact (1) | Morita-Ogawa_2020:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,27 +67,30 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=unchanged cisplatin
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cisplatin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Morita-Ogawa_2020_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
 | `qwen3.8-27b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clearance]` | 19.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cltot]` |  | 19.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` |  | 13.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 13.8 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[clearance]` |  | 19.1 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cltot]` | 19.1 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[vd]` | 13.8 |  | only_one_extracted |
@@ -128,11 +125,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=unchanged cisplatin) | central.C |  | output must be the measured/analyte compartment |
+| T3_output_variable | pass | C_central (measured=cisplatin) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.5 (4 of 8 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -165,7 +162,7 @@ The parameters this record sets on the template, in the template's SI units, and
 
 | direction | role | name | value | unit (SI) |
 |---|---|---|---|---|
-| input | compound | `MM` | 0.3 | kg/mol |
+| input | compound | `MM` | 0.3001 | kg/mol |
 | input | dosing | `F` | 1 | 1 |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
@@ -210,4 +207,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcisplatin%5D%20Cisplatin_MoritaOgawa2020_reference&body=Drug%3A%20cisplatin%0ARecord%3A%20Cisplatin_MoritaOgawa2020_reference%0APaper%3A%20Morita-Ogawa_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 22:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 17:43 UTC</sub>

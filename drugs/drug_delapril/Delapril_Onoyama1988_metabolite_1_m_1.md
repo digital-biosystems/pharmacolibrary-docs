@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because M-2 and M-3 metabolites are unreachable and the AUC unit ng·hr/ml could not be converted to standard units.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="delapril" model-id="Delapril_Onoyama1988_metabolite_1_m_1" status="rejected" stale="false" population="adults with normal and deteriorated kidney function" measured-compound="M-1 (CV-3317-COOH)" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -51,13 +51,13 @@ Onoyama K, Nanishi F, Okuda S, Oh Y, Fujishima M, Tateno M et al. Pharmacokineti
 
 ### Reviewer guidance
 
-**The record was rejected because M-2 and M-3 metabolites are unreachable and the AUC unit ng·hr/ml could not be converted to standard units.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The metabolite links for M-2 (DKP-COOH) and M-3 (CV-3317-(5-OH)-COOH) have no specified link parameters, leaving them unlinked from the parent compound. The AUC value of 3150 ng·hr/ml was recorded with a unit that could not be converted to standard SI units, leaving the parameter without a usable numerical value. The second reader disagreed with the extracted values for Cmax (1215 ng/ml), AUC (3150 ng·hr/ml), t1/2 (1.22 hr), and tmax (1.41 hr). Extracted — M-1 (CV-3317-COOH): Cmax 1.22e+03 ng/ml, tmax 1.41 hr, t1/2z 1.22 hr, AUC 3.15e+03 ng · hr/ml.
+A reported unit could not be converted (Cmax and AUC), so that value has no SI equivalent. None of the extracted parameters is delapril's own; they describe M-1 (CV-3317-COOH). Extracted — M-1 (CV-3317-COOH): Cmax 1.22e+03 ng/ml, tmax 1.41 hr, t1/2z 1.22 hr, AUC 3.15e+03 ng · hr/ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has delapril (cv-3317) → m-1 (cv-3317-cooh) (metabolism); delapril (cv-3317) → m-2 (dkp-cooh) (metabolism); delapril (cv-3317) → m-3 (cv-3317-(5-oh)-cooh) (metabolism), the second reading delapril → m-1 (metabolism); delapril → m-2 (metabolism); delapril → m-3 (metabolism); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

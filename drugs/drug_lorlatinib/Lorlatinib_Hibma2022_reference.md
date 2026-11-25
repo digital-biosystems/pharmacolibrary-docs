@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Lorlatinib’s absorption-rate constant (ka) has no reported value and was defaulted, so the record was held back.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="lorlatinib" model-id="Lorlatinib_Hibma2022_reference" status="needs_review" stale="false" population="healthy participants" measured-compound="lorlatinib" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Hibma JE, O'Gorman M, Nepal S, Pawlak S, Ginman K, Pithavala YK. Evaluation of t
 
 ### Reviewer guidance
 
-**Lorlatinib’s absorption-rate constant (ka) has no reported value and was defaulted, so the record was held back.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-Ka uses library defaults, not estimates from this paper; these values affect the simulated profile but are unsupported by this paper. Tlag was also defaulted, and first-order depot absorption was assumed with apparent parameterization (F=1, Fm=1, and no molar correction). The second reader disagreed on two other recorded values: 90 versus 97 and 97 versus 100. Extracted — lorlatinib: CL/F 11 L/h, V/F 381 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — lorlatinib: CL/F 11 L/h, V/F 381 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q369: this record has none, the second reading 90; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.667 (4 of 6 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (4 of 6 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -145,7 +145,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lorlatinib/Lorlatinib_Hibma2022_reference/Lorlatinib_Hibma2022_reference_modelica.zip" download>Lorlatinib_Hibma2022_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lorlatinib/Lorlatinib_Hibma2022_reference/Lorlatinib_Hibma2022_reference_modelica.zip" download>Lorlatinib_Hibma2022_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_lorlatinib/Lorlatinib_Hibma2022_reference/Lorlatinib_Hibma2022_reference_fmi.zip" download>Lorlatinib_Hibma2022_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lorlatinib/Lorlatinib_Hibma2022_reference/Lorlatinib_Hibma2022_reference_matlab.zip" download>Lorlatinib_Hibma2022_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_lorlatinib/Lorlatinib_Hibma2022_reference/Lorlatinib_Hibma2022_reference_matlab_simbio.zip" download>Lorlatinib_Hibma2022_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>

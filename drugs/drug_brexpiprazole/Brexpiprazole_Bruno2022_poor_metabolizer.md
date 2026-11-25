@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model's terminal half-life (83 h) deviates from the paper's 57.3 h, and absorption parameters ka and Tlag were defaulted.
+> The model does not reproduce the paper's terminal half-life (paper 57.3, model 83); ka use library defaults, not estimates from this paper (+1 more).
 
 <div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Bruno2022_poor_metabolizer" status="needs_review" stale="false" population="virtual population (normal-weight and obese adults)" measured-compound="brexpiprazole" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Bruno CD, Elmokadem A, Housand C, Jordie EB, Chow CR, Laughren TP et al. Impact 
 
 ### Reviewer guidance
 
-**The model's terminal half-life (83 h) deviates from the paper's 57.3 h, and absorption parameters ka and Tlag were defaulted.**
+**The model does not reproduce the paper's terminal half-life (paper 57.3, model 83); ka use library defaults, not estimates from this paper (+1 more).**
 
-The simulated terminal half-life of 83 h contradicts the 57.3 h reported in the source, creating a ratio of 1.4483. Additionally, the absorption rate constant (ka) and lag time (Tlag) were set to library defaults because they were not reported in the paper. The apparent parameterization assumed full bioavailability (F=1) and first-order absorption from a depot compartment. Extracted — brexpiprazole: AUC∞ 2e+03 ng*h/mL, Cmax 19.7 ng/mL, t1/2z 83 h, CL 999 mL/h, V/F 120 L.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — brexpiprazole: AUC∞ 2e+03 ng*h/mL, Cmax 19.7 ng/mL, t1/2z 83 h, CL 999 mL/h, V/F 120 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -143,8 +143,8 @@ _All readers agree on the compared fields of this record._
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_beta | reference | fail | 57.3 | 82.99 | 1.448 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 83 | 82.99 | 0.9999 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 57.3 | 82.99 | 1.448 | reported 57.3 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 83 | 82.99 | 0.9999 | reported 83.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -36,8 +36,8 @@
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Tompkins_2025_T_cells_CD4_CD8_TCM_TEM](drugs/drug_islatravir/pd_Tompkins_2025_T_cells_CD4_CD8_TCM_TEM.md) | T cells (CD4, CD8, TCM, TEM) biomarker turnover ← Islatravir | — | Tompkins LAR et al., HIV Pharmacology Data Repository: Setti…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3699](https://doi.org/10.1002/cpt.3699) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Wensing_2026_HIV_1_RNA](drugs/drug_islatravir/pd_Wensing_2026_HIV_1_RNA.md) | HIV-1 RNA ← Islatravir · inhibition effect | — | Wensing AM et al., Current evidence on islatravir drug res…, Topics in antiviral medicine (2026) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Tompkins_2025_T_cells_CD4_CD8_TCM_TEM](drugs/drug_islatravir/pd_Tompkins_2025_T_cells_CD4_CD8_TCM_TEM.md) | T cells (CD4, CD8, TCM, TEM) biomarker turnover ← Islatravir | — | Tompkins LAR et al., HIV Pharmacology Data Repository: Setti…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3699](https://doi.org/10.1002/cpt.3699) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

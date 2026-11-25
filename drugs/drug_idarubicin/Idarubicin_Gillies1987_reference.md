@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;idarubicin&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/&quot;},{&quot;label&quot;:&quot;Gillies_1987 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Idarubicin_Kuhlmann2001_reference&quot;,&quot;label&quot;:&quot;Kuhlmann_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Idarubicin_Tamura1996_reference&quot;,&quot;label&quot;:&quot;Tamura_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Tamura1996_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Meg_as_Vericat_2019_LPC&quot;,&quot;label&quot;:&quot;Meg\u00edas-Vericat_2019 \u00b7 LPC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/pd_Meg_as_Vericat_2019_LPC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Idarubicin_Tamura1996_reference&quot;,&quot;label&quot;:&quot;Tamura_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Tamura1996_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Idarubicin_Kuhlmann2001_reference&quot;,&quot;label&quot;:&quot;Kuhlmann_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/Idarubicin_Kuhlmann2001_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Meg_as_Vericat_2019_LPC&quot;,&quot;label&quot;:&quot;Meg\u00edas-Vericat_2019 \u00b7 LPC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_idarubicin/pd_Meg_as_Vericat_2019_LPC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # idarubicin — `Idarubicin_Gillies1987_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Only clearance was extracted — no volume; cL has no unit (+1 more).
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit nmol l⁻¹ h ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
-<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Gillies1987_reference" status="needs_review" stale="false" population="patients with advanced malignant disease" measured-compound="idarubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="idarubicin" model-id="Idarubicin_Gillies1987_reference" status="rejected" stale="false" population="adults with advanced malignant disease" measured-compound="idarubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Gillies HC, Herriott D, Liang R, Ohashi K, Rogers HJ, Harper PG. Pharmacokinetics of idarubicin (4-demethoxydaunorubicin; IMI-30; NSC 256439) following intravenous and oral administration in patients with advanced cancer. British journal of clinical pharmacology 23(3):303–310 (1987).
@@ -17,27 +17,30 @@ Gillies HC, Herriott D, Liang R, Ohashi K, Rogers HJ, Harper PG. Pharmacokinetic
 
 ## Population and dosing
 
-**Population:** patients with advanced malignant disease · condition advanced malignant disease · n = 20.
+**Population:** adults with advanced malignant disease · condition advanced malignant disease · age group adult · n = 20.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** parent + metabolite; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 5 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| ka | kabs | 1.58 | 1/h |
-| Lag time | tlag | 0.51 | (h) |
-| CL | CL | 107.9 | (1 h-1 m-2) |
+| C₁ (nmol l⁻¹) | equation variable | 88.1 | nmol l⁻¹ |
+| λ₁ (h⁻¹) | λ1 | 1.83 | h⁻¹ |
+| λ₂ (h⁻¹) | λ2 | 0.082 | h⁻¹ |
+| t½z₁ (h) | t1/2z | 0.49 | h |
+| AUC (nmol l⁻¹ h) | AUC | 366.0 | nmol l⁻¹ h |
+| CL (l h⁻¹ m⁻²) | CL | 98.7 | L/h/m^2 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,21 +50,24 @@ Gillies HC, Herriott D, Liang R, Ohashi K, Rogers HJ, Harper PG. Pharmacokinetic
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; cL has no unit (+1 more).**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit nmol l⁻¹ h ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — idarubicin: kabs 1.58 1/h, tlag 0.51 (h), CL 108 (1 h-1 m-2).
+A reported unit could not be converted (equation variable, AUC and CL), so that value has no SI equivalent. Extracted — idarubicin: λ1 1.83 h⁻¹, λ2 0.082 h⁻¹, t1/2z 0.49 h, AUC 366 nmol l⁻¹ h, CL 98.7 L/h/m^2.
 
-Independently confirmed by `qwen3.8-27b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has idarubicin → idarubicinol (metabolism), the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| ka | `Q49` · kabs | 1.58 | 1/h | 0.0004389 | 1/s | 1/h | exact (1) | Gillies_1987:results_prose |
-| Lag time | `Q83` · tlag | 0.51 | (h) | 1836 | s | h | exact (1) | Gillies_1987:results_prose |
-| CL | `Q22` · CL | 107.9 | (1 h-1 m-2) |  |  | (1 h-1 m-2) | exact (1) | Gillies_1987:results_prose |
+| C₁ (nmol l⁻¹) | `Q900` · equation variable | 88.1 | nmol l⁻¹ |  |  | nM/l | llm (0.6) | Gillies_1987_table_p5_1:row0:col1 |
+| λ₁ (h⁻¹) | `Q67` · λ1 | 1.83 | h⁻¹ | 0.0005083 | 1/s | 1/h | exact (1) | Gillies_1987_table_p5_1:row2:col1 |
+| λ₂ (h⁻¹) | `Q68` · λ2 | 0.082 | h⁻¹ | 2.278e-05 | 1/s | 1/h | exact (1) | Gillies_1987_table_p5_1:row3:col1 |
+| t½z₁ (h) | `Q57` · t1/2z | 0.49 | h | 1764 | s | h | llm (0.6) | Gillies_1987_table_p5_1:row4:col1 |
+| AUC (nmol l⁻¹ h) | `Q88` · AUC | 366.0 | nmol l⁻¹ h |  |  | nM/(h·l) | exact (1) | Gillies_1987_table_p5_1:row6:col1 |
+| CL (l h⁻¹ m⁻²) | `Q22` · CL | 98.7 | L/h/m^2 |  |  | L/h/m^2 | exact (1) | Gillies_1987_table_p5_1:row7:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,31 +77,51 @@ Independently confirmed by `qwen3.8-27b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q49 ('ka'=1.58) from results prose — parameter table was unreadable
-- salvaged Q83 ('Lag time'=0.51) from results prose — parameter table was unreadable
-- salvaged Q22 ('CL'=107.9) from results prose — parameter table was unreadable
-- implicit units: 'ka' → 1/h (from the popPK convention: 'The paper identifies ka as the absorption rate constant but states no unit for it. A first-order rate constant is conven')
-- implicit units: 'CL' — the LLM proposed 'L/h/m^2', whose dimension does not fit Q22; left unset
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL)
+- dropped duplicate Q900 ('C₂ (nmol l⁻¹)', value '18.0') — already have one for this compound
+- dropped duplicate Q57 ('t½z₂ (h)', value '12.7') — already have one for this compound
+- unit_dimension_mismatch: 'AUC (nmol l⁻¹ h)' → Q88 (unit '[substance] * [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- unit_dimension_unknown: 'l h⁻¹ m⁻²' (CL)
+- dropped unlinked row (NIL): 'Varea (l m⁻²)' — extend the ontology if this is a real PK parameter (source ['Gillies_1987_table_p5_1:row8:col1'])
+- implicit units: 'CL (l h⁻¹ m⁻²)' → L/h/m^2 (from the paper text: "Abstract: 'clearance 98.7 ± 47.3 1 h-1 m-2'")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=idarubicin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- row roles (LLM): model_class=noncompartmental; 9/9 row label(s) assigned, 0 linked by role; re-tagged idarubicin→parent ×9
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.188 (3/16 fields) | 13 |
 | `qwen3.8-27b` | confirmed | 1.0 (7/7 fields) | none |
 
-_All readers agree on the compared fields of this record._
+<details><summary>13 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['idarubicin', 'idarubicinol', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[auc]` | 366.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` |  | 366.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c1]` | 88.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 98.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 98.7 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1⁄2z1]` | 0.49 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1⁄2z1]` |  | 0.49 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[varea]` |  | 1533.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λ1]` | 1.83 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λ1]` |  | 1.83 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λ2]` | 0.082 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[λ2]` |  | 0.082 | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -107,12 +133,15 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Gillies_1987:results_prose'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | (1 h-1 m-2) | ['Gillies_1987:results_prose'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 107.9 | ['Gillies_1987:results_prose'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Gillies_1987_table_p5_1:row7:col1'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Gillies_1987_table_p5_1:row4:col1'] |
+| C5_dimension_Q67 | pass | 1 / [time] |  | ['Gillies_1987_table_p5_1:row2:col1'] |
+| C5_dimension_Q68 | pass | 1 / [time] |  | ['Gillies_1987_table_p5_1:row3:col1'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | nmol l⁻¹ h ([substance] * [time] / [length] ** 3) | ['Gillies_1987_table_p5_1:row6:col1'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 98.7 | ['Gillies_1987_table_p5_1:row7:col1'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -125,19 +154,9 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -147,4 +166,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bidarubicin%5D%20Idarubicin_Gillies1987_reference&body=Drug%3A%20idarubicin%0ARecord%3A%20Idarubicin_Gillies1987_reference%0APaper%3A%20Gillies_1987%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_idarubicin/Idarubicin_Gillies1987_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:01 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 12:44 UTC</sub>

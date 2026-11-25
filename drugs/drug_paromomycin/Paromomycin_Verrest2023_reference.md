@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Paromomycin bioavailability was set to a placeholder rather than an estimate, and volume values were disputed.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="paromomycin" model-id="Paromomycin_Verrest2023_reference" status="needs_review" stale="false" population="children and adults with visceral leishmaniasis" measured-compound="paromomycin" parameterization="mechanistic" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Verrest L, Roseboom IC, Wasunna M, Mbui J, Njenga S, Musa AM et al. Population p
 
 ### Reviewer guidance
 
-**Paromomycin bioavailability was set to a placeholder rather than an estimate, and volume values were disputed.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).**
 
-The record lists absolute bioavailability as '1', but the findings indicate this is a library default not supported by the paper's data. A second reader disagreed with the extracted central and peripheral volumes of 13.6 L and 2.22 L, proposing 9.17 L and 6.55 L instead. The cross-check agreement ratio was 0.667, with zero readers agreeing on the final verdict. Extracted — paromomycin: CL 2.62 L/h, V1 13.6 L, Q 0.26 L/h, V2 2.22 L, kabs 2.05 h−1, Fab 1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — paromomycin: CL 2.62 L/h, V1 13.6 L, Q 0.26 L/h, V2 2.22 L, kabs 2.05 h−1, Fab 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of paromomycin exposure: this record has none, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -164,7 +164,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.667 (8 of 12 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (8 of 12 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

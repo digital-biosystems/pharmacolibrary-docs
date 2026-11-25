@@ -21,7 +21,7 @@ Dasatinib is a targeted therapy that works by blocking tyrosine kinases to treat
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| dasatinib | parent | 488.006 | C22H26ClN7O2S | DrugBank | [3062316](https://pubchem.ncbi.nlm.nih.gov/compound/3062316) | He_2023, Wang_2013 |
+| dasatinib | parent | 488.006 | C22H26ClN7O2S | DrugBank | [3062316](https://pubchem.ncbi.nlm.nih.gov/compound/3062316) | Wang_2013 |
 
 ## Start here
 
@@ -29,20 +29,14 @@ Dasatinib is a targeted therapy that works by blocking tyrosine kinases to treat
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
-## Parameters across studies
-
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">He_2023 · CL/F</text><circle cx="225.1" cy="30.0" r="4" fill="#ef6c00"><title>He_2023 · CL/F: 126 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Wang_2013 · CL/F</text><circle cx="355.0" cy="46.0" r="4" fill="#ef6c00"><title>Wang_2013 · CL/F: 296 L/h</title></circle></svg></div>
-
-<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [He_2023_reference](drugs/drug_dasatinib/Dasatinib_He2023_reference.md) | — | 1-compartment (no model) | 1 | He S et al., Population Pharmacokinetics and Pharmac…, Pharmaceutical research (2023) | [10.1007/s11095-023-03603-z](https://doi.org/10.1007/s11095-023-03603-z) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Wang_2013_reference](drugs/drug_dasatinib/Dasatinib_Wang2013_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Wang X et al., Differential effects of dosing regimen…, Clinical pharmacology : adv… (2013) | [10.2147/CPAA.S42796](https://doi.org/10.2147/CPAA.S42796) |
 | <span class="pk-rf" hidden data-species="in vitro" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Ande_2018_reference](drugs/drug_dasatinib/Dasatinib_Ande2018_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Ande A et al., Utility of a Novel Three-Dimensional an…, Frontiers in pharmacology (2018) | [10.3389/fphar.2018.00403](https://doi.org/10.3389/fphar.2018.00403) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Hassouneh_2024_reference](drugs/drug_dasatinib/Dasatinib_Hassouneh2024_reference.md) | — | 1-compartment (no model) | 0 | Hassouneh WB et al., Population Pharmacokinetics of Dasatini…, Pharmaceuticals (Basel, Swi… (2024) | [10.3390/ph17060671](https://doi.org/10.3390/ph17060671) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [He_2023_reference](drugs/drug_dasatinib/Dasatinib_He2023_reference.md) | — | 1-compartment (no model) | 0 | He S et al., Population Pharmacokinetics and Pharmac…, Pharmaceutical research (2023) | [10.1007/s11095-023-03603-z](https://doi.org/10.1007/s11095-023-03603-z) |
 
 ## Pharmacodynamics (PD)
 
@@ -50,7 +44,7 @@ Dasatinib is a targeted therapy that works by blocking tyrosine kinases to treat
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ande_2018_active_caspase_3](drugs/drug_dasatinib/pd_Ande_2018_active_caspase_3.md) | active caspase-3 ← dasatinib and everolimus · delayed effect through transit (transduction) compartments | ▶ model + simulator | Ande A et al., Utility of a Novel Three-Dimensional an…, Frontiers in pharmacology (2018) | [10.3389/fphar.2018.00403](https://doi.org/10.3389/fphar.2018.00403) |
 | <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ande_2018_active_caspase_3_activity](drugs/drug_dasatinib/pd_Ande_2018_active_caspase_3_activity.md) | active caspase-3 activity ← dasatinib and everolimus · delayed effect through transit (transduction) compartments | ▶ model + simulator | Ande A et al., Utility of a Novel Three-Dimensional an…, Frontiers in pharmacology (2018) | [10.3389/fphar.2018.00403](https://doi.org/10.3389/fphar.2018.00403) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Araujo_2009_osteoclast_differentiation](drugs/drug_dasatinib/pd_Araujo_2009_osteoclast_differentiation.md) | osteoclast differentiation ← dasatinib · inhibition effect | — | Araujo JC et al., Dasatinib inhibits both osteoclast acti…, Cancer biology & therapy (2009) | [10.4161/cbt.8.22.9770](https://doi.org/10.4161/cbt.8.22.9770) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ishida_2016_BCR_ABL](drugs/drug_dasatinib/pd_Ishida_2016_BCR_ABL.md) | BCR-ABL transcript level ← dasatinib · inhibition effect | — | Ishida Y et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (2016) | [10.1007/s00228-015-1968-y](https://doi.org/10.1007/s00228-015-1968-y) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Ji_2009_200799_at](drugs/drug_dasatinib/pd_Ji_2009_200799_at.md) | HSP1A1 ← dasatinib · direct sigmoid Emax (Hill) effect | — | Ji RR et al., Transcriptional profiling of the dose r…, PLoS computational biology (2009) | [10.1371/journal.pcbi.1000512](https://doi.org/10.1371/journal.pcbi.1000512) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Ji_2009_202705_at](drugs/drug_dasatinib/pd_Ji_2009_202705_at.md) | CCNB2 ← dasatinib · direct sigmoid Emax (Hill) effect | — | Ji RR et al., Transcriptional profiling of the dose r…, PLoS computational biology (2009) | [10.1371/journal.pcbi.1000512](https://doi.org/10.1371/journal.pcbi.1000512) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Ji_2009_203077_s_at](drugs/drug_dasatinib/pd_Ji_2009_203077_s_at.md) | SMAD2 ← dasatinib · direct sigmoid Emax (Hill) effect | — | Ji RR et al., Transcriptional profiling of the dose r…, PLoS computational biology (2009) | [10.1371/journal.pcbi.1000512](https://doi.org/10.1371/journal.pcbi.1000512) |
@@ -68,6 +62,8 @@ Dasatinib is a targeted therapy that works by blocking tyrosine kinases to treat
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Obr_2014_cell_growth_inhibition](drugs/drug_dasatinib/pd_Obr_2014_cell_growth_inhibition.md) | cell growth inhibition ← dasatinib · direct sigmoid Emax (Hill) effect | — | Obr A et al., Real-time analysis of imatinib- and das…, PloS one (2014) | [10.1371/journal.pone.0107367](https://doi.org/10.1371/journal.pone.0107367) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sauvey_2021_percent_inhibition_of_E_histolytica_trophozoite_growth](drugs/drug_dasatinib/pd_Sauvey_2021_percent_inhibition_of_E_histolytica_trophozoite_.md) | percent inhibition of E. histolytica trophozoite growth ← dasatinib · inhibition effect | — | Sauvey C et al., Antineoplastic kinase inhibitors: A new…, PLoS neglected tropical dis… (2021) | [10.1371/journal.pntd.0008425](https://doi.org/10.1371/journal.pntd.0008425) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ande_2018_cell_viability](drugs/drug_dasatinib/pd_Ande_2018_cell_viability.md) | cell viability ← dasatinib · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Ande A et al., Utility of a Novel Three-Dimensional an…, Frontiers in pharmacology (2018) | [10.3389/fphar.2018.00403](https://doi.org/10.3389/fphar.2018.00403) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Ishida_2016_deep_molecular_response_less_than_4_0_log_reduction_at_6_months](drugs/drug_dasatinib/pd_Ishida_2016_deep_molecular_response_less_than_4_0_log_reduct.md) | deep molecular response less than 4.0 log reduction at 6 months ← dasatinib · categorical (graded) response model | — | Ishida Y et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (2016) | [10.1007/s00228-015-1968-y](https://doi.org/10.1007/s00228-015-1968-y) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Ishida_2016_molecular_response_of_3_0_log_reduction_at_3_months](drugs/drug_dasatinib/pd_Ishida_2016_molecular_response_of_3_0_log_reduction_at_3_mon.md) | molecular response of 3.0 log reduction at 3 months ← dasatinib · categorical (graded) response model | — | Ishida Y et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (2016) | [10.1007/s00228-015-1968-y](https://doi.org/10.1007/s00228-015-1968-y) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wang_2013_MCyR](drugs/drug_dasatinib/pd_Wang_2013_MCyR.md) | major cytogenetic response ← dasatinib · categorical (graded) response model | — | Wang X et al., Differential effects of dosing regimen…, Clinical pharmacology : adv… (2013) | [10.2147/CPAA.S42796](https://doi.org/10.2147/CPAA.S42796) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Wang_2013_pleural_effusion](drugs/drug_dasatinib/pd_Wang_2013_pleural_effusion.md) | pleural effusion ← dasatinib · time-to-event model | — | Wang X et al., Differential effects of dosing regimen…, Clinical pharmacology : adv… (2013) | [10.2147/CPAA.S42796](https://doi.org/10.2147/CPAA.S42796) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Ande_2018_cellular_response_cell_count](drugs/drug_dasatinib/pd_Ande_2018_cellular_response_cell_count.md) | cellular response (cell count) ← active caspase-3 · disease-progression model | — | Ande A et al., Utility of a Novel Three-Dimensional an…, Frontiers in pharmacology (2018) | [10.3389/fphar.2018.00403](https://doi.org/10.3389/fphar.2018.00403) |
@@ -85,50 +81,60 @@ Dasatinib is a targeted therapy that works by blocking tyrosine kinases to treat
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:31 | 9:20 | 2/2/0 | 22/2/0 | 0/0/0 | 249,227/52,880 | openai / gpt-6-luna | 8 | 2/6 | 8/0 | 0 |
+| 2026-11-23 19:03 | 0:06 | 1/3/0 | 24/2/0 | 0/0/0 | 4,214/160 | einfracz / qwen3.8-27b | 8 | 2/6 | 8/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 26 matched, 20 returned
 - **screened:** 4  ·  **relevant:** 4
-- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `He_2023.pdf` | He S et al., Population Pharmacokinetics and Pharmac…, Pharmaceutical research (2023) | popPK | 10 | [10.1007/s11095-023-03603-z](https://doi.org/10.1007/s11095-023-03603-z) | [37726405](https://pubmed.ncbi.nlm.nih.gov/37726405) | Human dasatinib population-PK model reports numeric CL/F of 126 L/h. |
-| `Yang_2022.pdf` | Yang F et al., Population Pharmacokinetics and Safety…, Clinical pharmacokinetics (2022) | popPK | 10 | [10.1007/s40262-021-01054-6](https://doi.org/10.1007/s40262-021-01054-6) | [34240339](https://pubmed.ncbi.nlm.nih.gov/34240339) | This is a pediatric dasatinib population-PK study, but the evidence gives AUC values rather than numeric model disposition parameters. |
-| `Ishida_2016.pdf` | Ishida Y et al., Pharmacokinetics and pharmacodynamics o…, European journal of clinica… (2016) | popPK | 9 | [10.1007/s00228-015-1968-y](https://doi.org/10.1007/s00228-015-1968-y) | [26507546](https://pubmed.ncbi.nlm.nih.gov/26507546) | Human population-PK analysis is reported, but no numeric dasatinib disposition parameters are provided in the evidence. |
+| `Yang_2022.pdf` | Yang F et al., Population Pharmacokinetics and Safety…, Clinical pharmacokinetics (2022) | popPK | 10 | [10.1007/s40262-021-01054-6](https://doi.org/10.1007/s40262-021-01054-6) | [34240339](https://pubmed.ncbi.nlm.nih.gov/34240339) | The study is a population PK analysis of dasatinib in humans, but the specific parameter values (CL, V, etc.) are not listed in the abstract, only AUC summary statistics. |
 
-<sub>queue written 2026-10-06 23:23 UTC</sub>
+<sub>queue written 2026-11-23 19:03 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Ande_2018 | irrelevant | 0 | 0 | Dasatinib is co-administered in an in vitro study, but the numeric disposition parameters shown are for paclitaxel, not dasatinib. |
-| popPK | Araujo_2009 | irrelevant | 0 | 0 | In vitro pharmacology study with no quantitative dasatinib disposition parameters. |
-| popPK | Chen_2024 | irrelevant | 0 | 0 | Dasatinib is only a co-administered covariate in a methotrexate PK study, with no dasatinib parameters reported. |
-| popPK | Gibson_2021 | irrelevant | 0 | 0 | The study models crizotinib, while dasatinib is only co-administered and no dasatinib PK values are reported. |
-| popPK | Ishida_2016 | relevant | 9 | 1 | Human population-PK analysis is reported, but no numeric dasatinib disposition parameters are provided in the evidence. |
+| popPK | Araujo_2009 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of dasatinib's effect on osteoclast differentiation and activity, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for dasatinib. |
+| PGx | Araujo_2009 | not_relevant | 0 | 0 | The study reports in vitro pharmacodynamic effects of dasatinib on osteoclast differentiation but contains no genetic variants or pharmacogenomic data. |
+| popPK | Chen_2024 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of methotrexate, with dasatinib only mentioned as a covariate for concurrent administration, not as the subject of PK analysis. |
+| PGx | Chen_2024 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of methotrexate, not dasatinib, and does not report pharmacogenomic effects. |
+| popPK | Gibson_2021 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for crizotinib, with dasatinib only serving as a co-administered agent to assess drug-drug interaction. |
+| PGx | Gibson_2021 | not_relevant | 0 | 0 | The study focuses on crizotinib PK and covariates, not on pharmacogenomic effects on dasatinib PK/PD parameters. |
+| PGx | He_2023 | not_relevant | 1 | 0 | The study explicitly states that none of the genetic factors were confirmed as significant covariates for dasatinib PK, finding only age as a significant covariate. |
+| popPK | Ishida_2016 | relevant | 9 | 2 | The paper describes a population pharmacokinetic analysis of dasatinib in humans, but the specific numeric PK parameter values (CL, V, etc.) are not listed in the provided abstract or evidence. |
+| PGx | Ishida_2016 | not_relevant | 0 | 0 | The study reports population PK/PD correlations in CML patients but does not investigate the impact of specific gene variants or genotypes on dasatinib pharmacokinetics or pharmacodynamics. |
 | popPK | Ji_2009 | irrelevant | 0 | 0 | This is an in-vitro transcriptional dose-response study, not a study reporting dasatinib disposition parameters. |
-| popPK | Kim_2009 | irrelevant | 2 | 0 | Human dasatinib pharmacokinetic analyses are mentioned, but no quantitative disposition parameter values are provided. |
-| popPK | Mashkani_2016 | irrelevant | 0 | 0 | This docking and cell-assay study reports no quantitative dasatinib pharmacokinetic parameters. |
-| popPK | Moghrabi_2022 | irrelevant | 1 | 1 | This is an in vitro dissolution/absorption study, not a quantitative disposition-parameter study; no such parameter values are provided. |
+| popPK | Kim_2009 | relevant | 9 | 1 | The study reports comparable pharmacokinetic profiles for dasatinib in humans, but the specific quantitative parameter values (CL, V, etc.) are not present in the provided text, only the statement that analyses were comparable. |
+| PGx | Kim_2009 | not_relevant | 0 | 0 | The paper compares pharmacokinetics based on ethnicity, not specific genetic variants or genotypes. |
+| popPK | Mashkani_2016 | irrelevant | 0 | 0 | The study is a molecular docking and in vitro mechanistic study of FLT3 inhibition, not a pharmacokinetic study of dasatinib. |
+| PGx | Mashkani_2016 | not_relevant | 0 | 0 | The paper studies FLT3 gene mutations (disease phenotype) affecting drug potency, not how patient host gene variants affect the PK or PD of dasatinib. |
+| popPK | Moghrabi_2022 | irrelevant | 0 | 0 | The study is an in vitro mechanism investigation using a simulated stomach-duodenum model to test solubility changes, not a pharmacokinetic study reporting disposition parameters (CL, V, t1/2). |
+| PGx | Moghrabi_2022 | not_relevant | 0 | 0 | The paper reports a pH-dependent drug-drug interaction and solubility effect, not a pharmacogenomic effect. |
 | popPK | Obr_2014 | irrelevant | 0 | 0 | This is an in-vitro cell study reporting kinase-inhibition EC50 values, not dasatinib disposition parameters. |
 | popPK | Sauvey_2021 | irrelevant | 0 | 0 | Dasatinib is tested for anti-amoebic activity in vitro, with no quantitative pharmacokinetic disposition parameters reported. |
-| popPK | Vechalapu_2024 | irrelevant | 0 | 0 | Dasatinib is only a combination-treatment agent; no dasatinib disposition parameters are reported. |
-| popPK | Wang_2015 | irrelevant | 0 | 0 | This is an in-vitro ADC activity study with no quantitative pharmacokinetic parameters reported. |
-| popPK | Yang_2022 | relevant | 10 | 2 | This is a pediatric dasatinib population-PK study, but the evidence gives AUC values rather than numeric model disposition parameters. |
-| popPK | Yuan_2025 | irrelevant | 0 | 0 | This is a pediatric vincristine PopPK study; dasatinib is only co-administered, with no dasatinib parameters reported. |
+| popPK | Vechalapu_2024 | irrelevant | 0 | 0 | The study investigates copper and manganese complexes for anticancer activity, with dasatinib only mentioned as a co-administered comparator agent, and contains no pharmacokinetic data. |
+| PGx | Vechalapu_2024 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of copper and manganese complexes and their combination with dasatinib, but does not report pharmacogenomic effects on dasatinib's PK or PD parameters. |
+| popPK | Wang_2015 | irrelevant | 0 | 0 | The paper describes an antibody-drug conjugate mechanism and efficacy in cells, with no pharmacokinetic modeling or quantitative disposition parameters reported. |
+| PGx | Wang_2015 | not_relevant | 0 | 0 | The paper describes a novel antibody-drug conjugate formulation of dasatinib and its mechanism of action in T-cells, but it does not report any association between a genetic variant and the pharmacokinetic or pharmacodynamic parameters of dasatinib. |
+| popPK | Yang_2022 | relevant | 10 | 3 | The study is a population PK analysis of dasatinib in humans, but the specific parameter values (CL, V, etc.) are not listed in the abstract, only AUC summary statistics. |
+| PGx | Yang_2022 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics in pediatric patients but does not analyze or report the influence of genetic variants or genotypes on dasatinib exposure. |
+| popPK | Yuan_2025 | irrelevant | 0 | 0 | The study focuses on the population pharmacokinetics of vincristine, with dasatinib only mentioned as a non-significant co-administered drug; no PK parameters for dasatinib are reported. |
+| PGx | Yuan_2025 | not_relevant | 0 | 0 | The study focuses on the pharmacogenetics of vincristine, and dasatinib is only mentioned as a co-administered drug with no reported effect on vincristine PK/PD. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdasatinib%5D&body=Drug%3A%20dasatinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dasatinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 23:23 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 18:58 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the paper concerns a different drug and the elimination rate constant was not explicitly estimated.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Alshehri2023_reference" status="rejected" stale="false" population="" measured-compound="azithromycin" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Alshehri A, Chhonker YS, Bala V, Edi C, Bjerum CM, Koudou BG et al. Population p
 
 ### Reviewer guidance
 
-**Record rejected because the paper concerns a different drug and the elimination rate constant was not explicitly estimated.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source paper does not name azithromycin in its title or abstract, causing the analyte identity check to fail. Additionally, the elimination rate constant k21 was not explicitly estimated, so no value was extracted from the record. A second reader disagreed on a specific value, reading 1759 where the record contained null. Extracted — azithromycin: CL/F 7.02 liters/h, V1/F 138 liters, Q/F 9.11 liters/h, tlag 0.75 h, kabs 0.71 1/h.
+Extracted — azithromycin: CL/F 7.02 liters/h, V1/F 138 liters, Q/F 9.11 liters/h, tlag 0.75 h, kabs 0.71 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q74: this record has none, the second reading 1759. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.9 (9 of 10 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.9 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

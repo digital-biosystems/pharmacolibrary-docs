@@ -49,7 +49,7 @@ Melphalan is an alkylating agent chemotherapy medication used to treat multiple 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Cho_2018_ANC](drugs/drug_melphalan/pd_Cho_2018_ANC.md) | absolute neutrophil count (ANC) biomarker turnover ← melphalan | — | Cho YK et al., Pharmacokinetic-Pharmacodynamic Model o…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12345](https://doi.org/10.1002/psp4.12345) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Cho_2018_ANC](drugs/drug_melphalan/pd_Cho_2018_ANC.md) | absolute neutrophil count (ANC) biomarker turnover ← melphalan | — | Cho YK et al., Pharmacokinetic-Pharmacodynamic Model o…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12345](https://doi.org/10.1002/psp4.12345) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

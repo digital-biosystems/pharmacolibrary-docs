@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Record rejected because the source paper studies SSR504734, not tetracaine, which is merely mentioned as a procedural anesthetic.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="tetracaine" model-id="Tetracaine_Gapiska2025_reference" status="rejected" stale="false" population="" measured-compound="tetracaine" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Gapińska N, Wlaź P, Wyska E, Świerczek A, Kamiński K, Jakubiec M et al. Effe
 
 ### Reviewer guidance
 
-**Record rejected because the source paper studies SSR504734, not tetracaine, which is merely mentioned as a procedural anesthetic.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-Tetracaine serves as a covariate in the study of SSR504734 pharmacokinetics in mice rather than being the primary drug of interest. The model builder applied default values for the absorption rate constant, lag time, and back-transfer rate, assuming an apparent parameterization with bioavailability of one. A second reviewer disagreed with the two-compartment topology and the inter-compartmental clearance value of 0.5 mL/min, disputing the overall verdict with 0.846 agreement. Extracted — tetracaine: CL/F 0.0778 L/min/kg, V/F 11.1 L/kg, Q 0.5 mL/min.
+Extracted — tetracaine: CL/F 0.0778 L/min/kg, V/F 11.1 L/kg, Q 0.5 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of Q: this record has 0.5, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.846, 0 of 1 reader(s) agree | 0.846 | cross-check disputed by a second reader: verdict disputed, agreement 0.846, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.846 (11 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.846 | cross-check contradicted by a second reader: verdict disputed; agreement 0.846 (11 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

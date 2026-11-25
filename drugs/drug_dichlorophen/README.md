@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Aggarwal_2020_NAPE_PLD_activity](drugs/drug_dichlorophen/pd_Aggarwal_2020_NAPE_PLD_activity.md) | Recombinant mouse Nape-pld activity (normalized % activity, PED-A1 hydrolysis) ← dichlorophen (Inh 17) · direct sigmoid Emax (Hill) effect | — | Aggarwal G et al., Symmetrically substituted dichlorophene…, The Journal of biological c… (2020) | [10.1074/jbc.RA120.013362](https://doi.org/10.1074/jbc.RA120.013362) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Aggarwal_2020_NAPE_PLD_activity](drugs/drug_dichlorophen/pd_Aggarwal_2020_NAPE_PLD_activity.md) | NAPE-PLD activity ← dichlorophen · direct sigmoid Emax (Hill) effect | — | Aggarwal G et al., Symmetrically substituted dichlorophene…, The Journal of biological c… (2020) | [10.1074/jbc.RA120.013362](https://doi.org/10.1074/jbc.RA120.013362) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:51 | 0:21 | 0/0/0 | 1/0/0 | 0/0/0 | 24,745/532 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-23 21:38 | 0:03 | 0/0/0 | 1/0/0 | 0/0/0 | 4,480/193 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
@@ -49,9 +49,12 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Aggarwal_2020 | irrelevant | 0 | 0 | In vitro enzyme-inhibition screening study; dichlorophen is only one of many tested analogs, with no PK/disposition parameters reported. |
-| popPK | Matuszek_1998 | irrelevant | 0 | 0 | Dichlorophen appears only as part of a chemical name (dichlorophenyl) in an antagonist; no PK parameters for dichlorophen. |
-| popPK | Zhang_2026 | irrelevant | 0 | 0 | In-vitro enzyme inhibition study of 11β-HSD2; dichlorophen is only an inhibitor tested, with no PK disposition parameters. |
+| popPK | Aggarwal_2020 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study identifying dichlorophenes as NAPE-PLD inhibitors, reporting IC50 values for enzyme inhibition but containing no pharmacokinetic parameters (CL, V, Ka, etc.) for the compound. |
+| PGx | Aggarwal_2020 | not_relevant | 0 | 0 | The paper is a chemical biology study identifying dichlorophenes as inhibitors of the NAPE-PLD enzyme and does not report any pharmacogenomic studies or effects of genetic variants on the PK or PD of dichlorophenes. |
+| popPK | Matuszek_1998 | irrelevant | 0 | 0 | The paper studies tachykinin NK2 receptors and dichlorophen is only mentioned as part of a chemical name, not as a subject drug for PK analysis. |
+| PGx | Matuszek_1998 | not_relevant | 0 | 0 | The paper investigates rat NK2 receptor binding and does not report any pharmacogenomic effect of gene variants on the pharmacokinetics or pharmacodynamics of dichlorophen. |
+| popPK | Zhang_2026 | irrelevant | 0 | 0 | The study investigates the enzymatic inhibition of 11β-HSD2 by halogenated phenols in vitro and ex vivo, reporting IC50 and KD values rather than pharmacokinetic disposition parameters (CL, V, etc.). |
+| PGx | Zhang_2026 | not_relevant | 0 | 0 | The paper investigates the inhibition of the 11β-HSD2 enzyme by halogenated phenolic disinfectants (including dichlorophene) but does not report any genetic variants or genotypes affecting pharmacokinetic or pharmacodynamic parameters. |
 
 
 </details>

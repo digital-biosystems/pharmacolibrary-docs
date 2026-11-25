@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The hepatitis B immunoglobulin (HBIG) record was held back: clearance is 0.0064 L/h, and the model predicts a terminal half-life of 347 h rather than 19.8 h.
+> The model does not reproduce the paper's terminal half-life (paper 19.8, model 347); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="hepatitis B immunoglobulin" model-id="HepatitisBImmunoglobulin_Han2017_reference" status="needs_review" stale="false" population="adult liver transplant recipients" measured-compound="hepatitis B immunoglobulin (HBIG)" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Han S, Na GH, Kim DG. A 6-month mixed-effect pharmacokinetic model for post-tran
 
 ### Reviewer guidance
 
-**The hepatitis B immunoglobulin (HBIG) record was held back: clearance is 0.0064 L/h, and the model predicts a terminal half-life of 347 h rather than 19.8 h.**
+**The model does not reproduce the paper's terminal half-life (paper 19.8, model 347); x1_cross_check.**
 
-The model does not reproduce the paper's terminal half-life (paper 19.8, model 347). A second reader disputed the compound and analyte naming, identifying them as hepatitis B immunoglobulin, and mapped 0.0064 and 3.20 to clearance and volume, respectively, rather than the record's verbatim parameter labels. The cross-reader agreement was 0.25, with 0 of 1 reader agreeing. Extracted — hepatitis B immunoglobulin (HBIG): CL 0.0064 L/h, V 3.2 L.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. None of the extracted parameters is hepatitis b immunoglobulin's own; they describe hepatitis B immunoglobulin (HBIG). Extracted — hepatitis B immunoglobulin (HBIG): CL 0.0064 L/h, V 3.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has hepatitis B immunoglobulin (HBIG), the second reading hepatitis B immunoglobulin; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -170,9 +170,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | pass | 346.5 | 346.6 | 1 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 19.8 | 346.6 | 17.5 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | pass | 346.5 | 346.6 | 1 | reported 346.5 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 19.8 | 346.6 | 17.5 | reported 19.8 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

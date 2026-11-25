@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;gemtuzumab ozogamicin&quot;,&quot;href&quot;:&quot;drugs/drug_gemtuzumab_ozogamicin/&quot;},{&quot;label&quot;:&quot;Fostvedt_2019 \u00b7 PD Grade \u2265 3 hypoalbuminemia&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;gemtuzumab ozogamicin&quot;,&quot;href&quot;:&quot;drugs/drug_gemtuzumab_ozogamicin/&quot;},{&quot;label&quot;:&quot;Fostvedt_2019 \u00b7 PD grade \u2265 3 hypoalbuminemia&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Grade ≥ 3 hypoalbuminemia — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+# grade ≥ 3 hypoalbuminemia — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--neutral" title="gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,7 +13,7 @@
 
 ## Record summary
 
-**As extracted:** Total hP67.6 antibody (measured concentrations) drives Grade ≥ 3 hypoalbuminemia: categorical (graded) response model.
+**As extracted:** Total hP67.6 antibody drives grade ≥ 3 hypoalbuminemia: categorical (graded) response model.
 
 **Model:** No model was generated from this record.
 
@@ -23,9 +23,9 @@
 
 - **paper:** `Fostvedt_2019`
 - **model family:** `categorical`
-- **driver:** `conc_no_pk`
+- **driver:** `not_resolved`
 - **tier:** descriptive
-- **effect:** stimulation/additive
+- **effect:** stimulation/unknown
 
 ## Citation
 Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmacology and t… (2019)
@@ -34,11 +34,9 @@ Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmac
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| model term | Intercept | `Q900` ·  | 2.023 |  | llm | Fostvedt_2019:pdv3 |
-| model term | AraC + GO | `Q900` ·  | .981 |  | llm | Fostvedt_2019:pdv3 |
-| model term | AraC + DNR + GO | `Q900` ·  | 1.304 |  | llm | Fostvedt_2019:pdv3 |
-| model term | First dose total hP67.6 antibody C max | `Q900` ·  | 0.517 |  | llm | Fostvedt_2019:pdv3 |
-| model term | Baseline ALB | `Q900` ·  | -1.934 |  | llm | Fostvedt_2019:pdv3 |
+| PD (effect) | Intercept | `Q344` ·  | 2.023 |  | llm | Fostvedt_2019:pdv3 |
+| PD (effect) | First dose total hP67.6 antibody C max | `Q335` ·  | 0.517 |  | llm | Fostvedt_2019:pdv3 |
+| PD (effect) | Baseline ALB | `Q324` ·  | -1.934 |  | boundary | Fostvedt_2019:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -46,22 +44,14 @@ Fostvedt LK et al., Pharmacokinetic/Pharmacodynamic Modelin…, Clinical pharmac
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.5 (3/6 fields) | 3 |
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
 
-<details><summary>3 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `qwen3.8-27b` | `effect_direction` | stimulation | inhibition | mismatch |
-| `qwen3.8-27b` | `effect_form` | additive | unknown | mismatch |
-| `qwen3.8-27b` | `parameters[Q344]` |  | 2.023 | only_one_extracted |
-
-</details>
+_No second reader extracted anything for this PD record; it is not cross-checked._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>

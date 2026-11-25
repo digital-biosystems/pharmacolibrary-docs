@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The hyaluronic acid central volume of 2.57 L is physiologically implausible, rejecting the record.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="hyaluronic acid" model-id="HyaluronicAcid_Kim2021_reference" status="rejected" stale="false" population="" measured-compound="hyaluronic_acid" parameterization="apparent" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Kim JH, Kang DW, Choi GW, Lee SB, Lee S, Cho HY. Evaluation of Lidocaine and Met
 
 ### Reviewer guidance
 
-**The hyaluronic acid central volume of 2.57 L is physiologically implausible, rejecting the record.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted volume of distribution for the central compartment is recorded as 2.57 L, which is outside the physiological window for this molecule. This magnitude suggests a unit or scale extraction error rather than a valid pharmacokinetic estimate. Additionally, the second reader could not validate several numerical values in the record, confirming the data extraction was unreliable. Extracted — hyaluronic acid: CL/F 0.13 L/h, V1/F 2.57 L, V2/F 0.07 L, Q/F 0.132 L/h, kabs 5.92 h−1.
+Extracted — hyaluronic acid: CL/F 0.13 L/h, V1/F 2.57 L, V2/F 0.07 L, Q/F 0.132 L/h, kabs 5.92 h−1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q174: this record has 1677.66, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

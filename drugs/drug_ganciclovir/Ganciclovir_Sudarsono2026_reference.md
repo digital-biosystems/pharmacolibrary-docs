@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span>
 
-> Ganciclovir clearance and volume values are implausibly high for an in vitro system, indicating a unit conversion error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ganciclovir" model-id="Ganciclovir_Sudarsono2026_reference" status="rejected" stale="false" population="in vitro hollow-fiber CMV infection model using MRC-5 cells" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Sudarsono LM, Wenker SAM, Liu X, Brink J, van den Berg D-J, van Hasselt JGC et a
 
 ### Reviewer guidance
 
-**Ganciclovir clearance and volume values are implausibly high for an in vitro system, indicating a unit conversion error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The reported clearance of 0.033 L/h and volume of 0.3 L are unphysically large for an in vitro hollow-fiber model. The record was rejected because these values fall outside the expected physiological range, suggesting a failure in unit standardization during data processing. Extracted — ganciclovir: CL 0.033 L/h, V 0.3 L, kel 0.11 h−1, AUCt 42.2 mg.h/L.
+A reported unit could not be converted (AUCt), so that value has no SI equivalent. Extracted — ganciclovir: CL 0.033 L/h, V 0.3 L, kel 0.11 h−1, AUCt 42.2 mg.h/L.
 
 Independently confirmed by `qwen3.8-27b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

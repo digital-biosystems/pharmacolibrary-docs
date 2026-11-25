@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper does not study colecalciferol, so the extracted clearance, volume, and absorption rate values are invalid for this molecule.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="colecalciferol" model-id="Colecalciferol_Jia2026_reference" status="rejected" stale="false" population="" measured-compound="colecalciferol" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Jia M, Chai Y, Gao Y, Jing C, Zhu K, Zhu T et al. Population pharmacokinetics of
 
 ### Reviewer guidance
 
-**The paper does not study colecalciferol, so the extracted clearance, volume, and absorption rate values are invalid for this molecule.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source publication is about a different drug and explicitly excludes colecalciferol, making the reported pharmacokinetic parameters irrelevant. The record includes default assumptions for lag time and bioavailability that do not reflect the actual drug substance. A secondary reader discrepancy exists regarding a missing value field, though the primary rejection stems from the mismatched study subject. Extracted — colecalciferol: CL/F 7.48 L/h, V/F 4.75 L, kabs 0.14 1/h.
+Extracted — colecalciferol: CL/F 7.48 L/h, V/F 4.75 L, kabs 0.14 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q83: this record has none, the second reading 1.23. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.875 (7 of 8 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.875 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

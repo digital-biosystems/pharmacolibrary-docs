@@ -21,7 +21,6 @@ Gadobutrol is a gadolinium-based contrast agent used for magnetic resonance imag
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | gadobutrol | parent | 604.72 | C18H31GdN4O9 | DrugBank | [70678987](https://pubchem.ncbi.nlm.nih.gov/compound/70678987) | Eide_2023, Hahn_2009, Hovd_2022 |
-| gadolinium | metabolite | 157.25 | Gd | PubChem | [23982](https://pubchem.ncbi.nlm.nih.gov/compound/23982) | Hahn_2009 |
 
 ## popPK records
 
@@ -29,7 +28,7 @@ Gadobutrol is a gadolinium-based contrast agent used for magnetic resonance imag
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Eide_2023_sleep_deprivation_group](drugs/drug_gadobutrol/Gadobutrol_Eide2023_sleep_deprivation_group.md) | — | 1-compartment (no model) | 5 | Eide PK et al., Mechanisms behind changes of neurodegen…, Brain communications (2023) | [10.1093/braincomms/fcad343](https://doi.org/10.1093/braincomms/fcad343) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ sleep_group](drugs/drug_gadobutrol/Gadobutrol_Eide2023_sleep_group.md) | — | 1-compartment (no model) | 5 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hahn_2009_reference](drugs/drug_gadobutrol/Gadobutrol_Hahn2009_reference.md) | — | 1-compartment (no model) | 3 | Hahn G et al., Pharmacokinetics and safety of gadobutr…, Investigative radiology (2009) | [10.1097/RLI.0b013e3181bfe2d2](https://doi.org/10.1097/RLI.0b013e3181bfe2d2) |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Hahn_2009_reference](drugs/drug_gadobutrol/Gadobutrol_Hahn2009_reference.md) | — | 1-compartment (no model) | 3 | Hahn G et al., Pharmacokinetics and safety of gadobutr…, Investigative radiology (2009) | [10.1097/RLI.0b013e3181bfe2d2](https://doi.org/10.1097/RLI.0b013e3181bfe2d2) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Hovd_2022_reference](drugs/drug_gadobutrol/Gadobutrol_Hovd2022_reference.md) | — | 1-compartment (no model) | 1 | Hovd MH et al., Population pharmacokinetic modeling of…, Fluids and barriers of the… (2022) | [10.1186/s12987-022-00352-w](https://doi.org/10.1186/s12987-022-00352-w) |
 
 <details class="legend">
@@ -44,7 +43,7 @@ Gadobutrol is a gadolinium-based contrast agent used for magnetic resonance imag
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:42 | 8:15 | 0/4/0 | 0/0/0 | 0/0/0 | 196,337/38,003 | openai / gpt-6-luna | 11 | 0/7 | 11/0 | 0 |
+| 2026-11-23 22:18 | 0:08 | 0/4/0 | 0/0/0 | 0/0/0 | 3,961/152 | einfracz / qwen3.8-27b | 11 | 1/7 | 11/0 | 0 |
 
 ## Coverage
 
@@ -53,26 +52,30 @@ Gadobutrol is a gadolinium-based contrast agent used for magnetic resonance imag
 - **records:** 4  ·  extracted 0  ·  needs review 0  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Hahn_2009.pdf` | Hahn G et al., Pharmacokinetics and safety of gadobutr…, Investigative radiology (2009) | popPK | 10 | [10.1097/RLI.0b013e3181bfe2d2](https://doi.org/10.1097/RLI.0b013e3181bfe2d2) | [19858730](https://pubmed.ncbi.nlm.nih.gov/19858730) | Pediatric population-PK model reports numeric clearance and volume estimates directly in the evidence. |
-| `Kunze_2016.pdf` | Kunze C et al., Pharmacokinetics and Safety of Macrocyc…, Investigative radiology (2016) | popPK | 10 | [10.1097/RLI.0000000000000204](https://doi.org/10.1097/RLI.0000000000000204) | [26340504](https://pubmed.ncbi.nlm.nih.gov/26340504) | A two-compartment population-PK model is reported, but numeric disposition parameters are absent; only AUC and C20 values are provided. |
-
-<sub>queue written 2026-10-07 17:35 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Aumiller_2024 | irrelevant | 0 | 0 | The study uses gadobutrol as an ingredient to create tissue phantoms for MRI/optical property characterization, not as a subject drug for pharmacokinetic analysis. |
+| PGx | Aumiller_2024 | not_relevant | 0 | 0 | The study investigates physical tissue properties (optical and NMR) in phantoms and porcine brain for photodynamic therapy, not the pharmacokinetics or pharmacodynamics of gadobutrol in relation to genetic variants. |
 | popPK | Backhaus_2020 | irrelevant | 2 | 0 | Gadobutrol is used as an imaging contrast agent, but no quantitative disposition parameters for it are reported. |
-| popPK | Eide_2026 | irrelevant | 2 | 0 | Gadobutrol is used as a comparison tracer, and its numeric parameter values are not shown in the evidence. |
-| popPK | Guenther_2025 | irrelevant | 1 | 0 | The quantitative PK results are for gadoquatrane and the Dy-butrol comparator analog, not gadobutrol itself. |
-| popPK | Hao_2024 | irrelevant | 1 | 0 | This review reports gadopiclenol pharmacokinetics, while gadobutrol is only a comparator and has no quantitative disposition parameters here. |
-| popPK | Kunze_2016 | relevant | 10 | 3 | A two-compartment population-PK model is reported, but numeric disposition parameters are absent; only AUC and C20 values are provided. |
+| popPK | Blaszczyk_2017 | irrelevant | 1 | 0 | The study focuses on MRI T1 relaxation mapping and partition coefficients rather than pharmacokinetic disposition parameters like clearance or volume. |
+| PGx | Blaszczyk_2017 | not_relevant | 0 | 0 | The paper investigates the impact of MRI spatial resolution and gadobutrol dosage on myocardial T1 relaxation times, with no mention of genetic variants or pharmacogenomic effects. |
+| popPK | Eide_2026 | irrelevant | 2 | 0 | Gadobutrol is used as a CSF tracer for brain imaging, and the text explicitly states the PK model for gadobutrol was established in previous studies [25, 29], meaning this paper does not report the quantitative PK parameters for gadobutrol itself, but rather for iodixanol. |
+| PGx | Eide_2026 | not_relevant | 0 | 0 | The paper investigates population pharmacokinetics of gadobutrol to measure brain fluid clearance in a clinical cohort but contains no data on gene variants, genotypes, or pharmacogenomic effects. |
+| popPK | Guenther_2025 | irrelevant | 3 | 2 | The study's primary subject is gadoquatrane, and gadobutrol is represented by a lanthanide analog (Dy-butrol) used as a comparator, with specific quantitative PK parameters for gadobutrol itself not explicitly provided in the evidence (likely in supplementary tables). |
+| PGx | Guenther_2025 | not_relevant | 0 | 0 | The study is a preclinical PK analysis in cynomolgus monkeys comparing gadoquatrane to analogs, with no evaluation of genetic variants or pharmacogenomic effects on gadobutrol. |
+| popPK | Hadizadeh_2010 | irrelevant | 0 | 0 | This is an MRI image quality comparison study that does not report pharmacokinetic parameters such as clearance, volume of distribution, or half-life. |
+| PGx | Hadizadeh_2010 | not_relevant | 0 | 0 | The paper compares two different MRI contrast agents for imaging quality and does not investigate genetic variants or pharmacogenomic effects on gadobutrol. |
+| PGx | Hahn_2009 | not_relevant | 0 | 0 | The study reports population pharmacokinetics based on age and body weight, with no assessment of genetic variants or genotypes. |
+| popPK | Hao_2024 | irrelevant | 0 | 0 | The paper is a review of gadopiclenol where gadobutrol serves only as a comparator for efficacy, with no quantitative pharmacokinetic parameters reported for gadobutrol itself. |
+| PGx | Hao_2024 | not_relevant | 0 | 0 | The paper is a review describing the efficacy and safety of gadopiclenol compared to gadobutrol, and does not report any gene variants or pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Heiland_1997 | irrelevant | 1 | 0 | This is a perfusion MRI imaging study in a rat stroke model that uses gadobutrol as a contrast agent to assess imaging sensitivity, not a pharmacokinetic study reporting disposition parameters like clearance, volume of distribution, or compartmental model parameters. |
+| PGx | Heiland_1997 | not_relevant | 0 | 0 | The study examines the effects of dose and concentration on MRI signal in a rat stroke model and does not involve genetic variants or pharmacogenomics. |
+| popPK | Kunze_2016 | relevant | 10 | 3 | The paper describes a population PK study of gadobutrol using a 2-compartment model, but the specific numeric parameter values (CL, V, Q) are not explicitly listed in the provided evidence text. |
+| PGx | Kunze_2016 | not_relevant | 0 | 0 | The paper reports pharmacokinetics of gadobutrol in pediatric patients but does not investigate or report the impact of any gene variant, genotype, or phenotype on these parameters. |
+| popPK | Laader_2018 | irrelevant | 0 | 0 | The study is an MRI feasibility study focused on image quality and does not report pharmacokinetic parameters for gadobutrol. |
+| PGx | Laader_2018 | not_relevant | 0 | 0 | The paper is a feasibility study of imaging techniques and does not analyze the effect of gene variants on the pharmacokinetics or pharmacodynamics of gadobutrol. |
 | popPK | Segeroth_2023 | irrelevant | 2 | 0 | Gadobutrol is an MRI tracer for brain solute-clearance modeling, and no numeric gadobutrol disposition parameters are shown (model results are only referenced in figures). |
 | popPK | Spath_2021 | irrelevant | 0 | 0 | Gadobutrol is used only for LGE, and the reported kinetic values are for manganese. |
 
@@ -81,4 +84,4 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgadobutrol%5D&body=Drug%3A%20gadobutrol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gadobutrol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 17:36 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 22:16 UTC</sub>

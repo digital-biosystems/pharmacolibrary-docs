@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Infliximab model rejected due to double correction involving absolute clearance, bioavailability, and apparent clearance parameters.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="infliximab" model-id="Infliximab_Song2025_reference" status="rejected" stale="false" population="patients with inflammatory bowel disease" measured-compound="infliximab" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Song JH, Hong SN, Kim MG, Kim M, Kim SK, Kim ER et al. Population Pharmacokineti
 
 ### Reviewer guidance
 
-**Infliximab model rejected due to double correction involving absolute clearance, bioavailability, and apparent clearance parameters.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The record defines both total clearance (CL) and apparent clearance (CL/F) alongside bioavailability (Fab), violating parameter coherence for a subcutaneously administered drug. A second reader disagreed on a model parameter value, citing a discrepancy between null and -0.213, though the specific parameter identity is unclear from the record. Extracted — infliximab: CL 0.248 L/day, V1 1.87 L, V2 1.96 L, Q 0.599 L/day, Fab 0.667, kabs 0.083 day-1, CL/F 0.017.
+Extracted — infliximab: CL 0.248 L/day, V1 1.87 L, V2 1.96 L, Q 0.599 L/day, Fab 0.667, kabs 0.083 day-1, CL/F 0.017.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θada-f: this record has none, the second reading -0.213. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

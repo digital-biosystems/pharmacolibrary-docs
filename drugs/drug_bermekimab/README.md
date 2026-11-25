@@ -21,7 +21,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Simpson_2024_Inflammatory_cytokine_and_chemokine_proteins](drugs/drug_bermekimab/pd_Simpson_2024_Inflammatory_cytokine_and_chemokine_proteins.md) | Inflammatory cytokine and chemokine proteins biomarker turnover ← bermekimab | — | Simpson EL et al., Interleukin-1α inhibitor bermekimab in…, Archives of dermatological… (2024) | [10.1007/s00403-024-03319-z](https://doi.org/10.1007/s00403-024-03319-z) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Simpson_2024_Inflammatory_cytokine_and_chemokine_proteins](drugs/drug_bermekimab/pd_Simpson_2024_Inflammatory_cytokine_and_chemokine_proteins.md) | Inflammatory cytokine and chemokine proteins biomarker turnover ← bermekimab | — | Simpson EL et al., Interleukin-1α inhibitor bermekimab in…, Archives of dermatological… (2024) | [10.1007/s00403-024-03319-z](https://doi.org/10.1007/s00403-024-03319-z) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

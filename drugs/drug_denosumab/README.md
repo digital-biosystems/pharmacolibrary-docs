@@ -40,7 +40,7 @@ Denosumab is a monoclonal antibody primarily used to treat osteoporosis, bone me
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Choi_2025_BMD](drugs/drug_denosumab/pd_Choi_2025_BMD.md) | lumbar spine BMD biomarker turnover ← denosumab | — | Choi S et al., Population pharmacokinetics/pharmacodyn…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1631034](https://doi.org/10.3389/fphar.2025.1631034) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Choi_2025_BMD](drugs/drug_denosumab/pd_Choi_2025_BMD.md) | lumbar spine BMD biomarker turnover ← denosumab | — | Choi S et al., Population pharmacokinetics/pharmacodyn…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1631034](https://doi.org/10.3389/fphar.2025.1631034) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

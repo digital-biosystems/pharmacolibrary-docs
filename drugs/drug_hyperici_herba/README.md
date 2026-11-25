@@ -13,19 +13,11 @@ St. John's wort is a plant-based antidepressant used to treat mild to moderate d
 
 <small>Summary written by `qwen3.8-27b` from [Wikidata Q158289](https://www.wikidata.org/wiki/Q158289), [Wikipedia](https://en.wikipedia.org/wiki/Hypericum_perforatum?oldid=1375575520) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
 
-## Molecular properties
-
-> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
-
-| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
-|---|---|---|---|---|---|---|
-| hyperforin | metabolite | 536.797 | C35H52O4 | PubChem | [441298](https://pubchem.ncbi.nlm.nih.gov/compound/441298) | Biber_1998 |
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Biber_1998_reference](drugs/drug_hyperici_herba/HypericiHerba_Biber1998_reference.md) | — | 1-compartment (no model) | 5 | Biber A et al., Oral bioavailability of hyperforin from…, Pharmacopsychiatry 31 Suppl (1998) | [10.1055/s-2007-979344](https://doi.org/10.1055/s-2007-979344) |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="unknown" data-status="" data-sim="no"></span><span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span><br><sub>stale — current check: </sub> | [Biber_1998_reference](drugs/drug_hyperici_herba/HypericiHerba_Biber1998_reference.md) | — | — (no model) | 0 | Biber A et al., Oral bioavailability of hyperforin from…, Pharmacopsychiatry 31 Suppl (1998) | [10.1055/s-2007-979344](https://doi.org/10.1055/s-2007-979344) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,46 +31,54 @@ St. John's wort is a plant-based antidepressant used to treat mild to moderate d
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:13 | 2:07 | 1/0/0 | 0/0/0 | 0/0/0 | 69,071/13,413 | ollama / glm-5.3-flash | 3 | 2/0 | 1/2 | 0 |
+| 2026-11-23 22:42 | 0:04 | 0/0/1 | 0/0/0 | 0/0/0 | 3,937/164 | einfracz / qwen3.8-27b | 3 | 3/0 | 1/2 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 183 matched, 15 returned
-- **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **screened:** 2  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 1
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Biber_1998.pdf` | Biber A et al., Oral bioavailability of hyperforin from…, Pharmacopsychiatry 31 Suppl (1998) | popPK | 8 | [10.1055/s-2007-979344](https://doi.org/10.1055/s-2007-979344) | [9684946](https://pubmed.ncbi.nlm.nih.gov/9684946) | Reports numeric PK parameters (half-life, clearance, Cmax, tmax, MRT) for hyperforin from hypericum extract in both rats and humans, though no full compartmental model parameters (V, Q) are given. |
-| `Staffeldt_1994.pdf` | Staffeldt B et al., Pharmacokinetics of hypericin and pseud…, Journal of geriatric psychi… (1994) | popPK | 8 | [10.1177/089198879400700113](https://doi.org/10.1177/089198879400700113) | [7857509](https://pubmed.ncbi.nlm.nih.gov/7857509) | Human PK study of hypericin/pseudohypericin from St. John's wort with numeric half-lives, lag times, Cmax, and AUC reported in the abstract, though no CL/V or compartmental model values. |
-
-<sub>queue written 2026-10-06 23:11 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Alahmad_2022 | irrelevant | 0 | 0 | The paper is an in-vitro phytochemical study identifying compounds in plant extracts via HPLC-MS, containing no pharmacokinetic data, clearance, volume, or half-life measurements. |
 | PD | Alahmad_2022 | not_relevant | 0 | 0 | The paper focuses on the chemical identification of constituents and their in vitro antioxidant activities, not on pharmacokinetic or pharmacodynamic modeling in biological systems. |
-| popPK | Boyle_2024 | irrelevant | 0 | 0 | A nursing review discussing SJW pharmacokinetics qualitatively with no numeric PK parameters reported. |
-| popPK | Cheng_2023 | irrelevant | 0 | 0 | A review of herb-drug interactions with no original PK parameter values for St. John's wort in the evidence. |
+| PGx | Alahmad_2022 | not_relevant | 0 | 0 | The paper focuses on the chemical identification and antioxidant activity of Hypericum perforatum extracts, not on pharmacogenomics or pharmacokinetic/pharmacodynamic parameters. |
+| PGx | Biber_1998 | not_relevant | 0 | 1 | The paper reports general pharmacokinetic parameters of hyperforin in rats and healthy volunteers but does not investigate or report any specific gene variants, genotypes, or phenotypes affecting these parameters. |
+| popPK | Boyle_2024 | irrelevant | 0 | 0 | The paper is a nursing review discussing St. John's Wort (hyperici_herba) in cancer care and lacks specific quantitative pharmacokinetic parameter values (CL, V, etc.) required for extraction. |
+| PGx | Boyle_2024 | not_relevant | 0 | 0 | The paper is a nursing review discussing general interactions and toxicity of St. John's wort in cancer care, with no focus on pharmacogenomic effects. |
+| popPK | Cheng_2023 | irrelevant | 2 | 0 | This is a review article summarizing mechanisms of herb-drug interactions without providing original quantitative pharmacokinetic parameter values for hyperici_herba (St. John's wort). |
+| PGx | Cheng_2023 | not_relevant | 0 | 0 | The paper is a general review of herb-drug interactions and does not report pharmacogenomic effects of hyperici_herba. |
+| popPK | Dimpfel_1997 | irrelevant | 0 | 0 | The study investigates pharmacodynamic effects (EEG changes) in rats, not pharmacokinetic parameters (CL, V, ka) for hyperici_herba. |
 | PD | Dimpfel_1997 | not_relevant | 2 | 0 | The paper describes qualitative EEG changes (delta/alpha waves) and trends in discriminant analysis but does not provide numeric concentration-effect data, dose-response curves, or specific PD parameters (Emax, EC50) that can be extracted. |
-| popPK | Goey_2014 | irrelevant | 0 | 0 | Hyperici herba (St John's wort) is only the co-administered inducer; the PK parameters reported (CL, AUC, half-life) are for docetaxel, not for hyperici herba or its metabolites. |
-| popPK | Izzo_2009 | irrelevant | 0 | 0 | This is a review of herbal-drug interactions; St John's wort appears only as a perpetrator affecting other drugs' concentrations, with no PK parameters for hypericin/hyperforin itself. |
+| PGx | Dimpfel_1997 | not_relevant | 0 | 0 | The paper reports pharmacodynamic effects (EEG changes) in rats but contains no pharmacogenomic data regarding gene variants or genotypes. |
+| popPK | Goey_2014 | irrelevant | 0 | 0 | The study measures the pharmacokinetics of docetaxel in the presence of St. John's wort as an interaction perpetrator, rather than reporting quantitative disposition parameters for St. John's wort itself. |
+| PGx | Goey_2014 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (St John's Wort affecting docetaxel PK), not a pharmacogenomic effect of a gene variant on the PK/PD of hyperici_herba (St John's Wort). |
+| popPK | Izzo_2009 | irrelevant | 0 | 0 | The paper is a review of clinical interactions and case reports for various herbal medicines (including St John's Wort/hyperici_herba) and prescribed drugs, but it does not report quantitative population-pharmacokinetic parameters (CL, V, etc.) for hyperici_herba itself. |
+| PGx | Izzo_2009 | not_relevant | 0 | 0 | The paper reports clinical case series of herb-drug interactions (e.g., St John's wort and Ciclosporin) involving environmental induction of enzymes, not specific gene variants/genotypes altering PK/PD. |
+| popPK | Kladar_2020 | irrelevant | 0 | 0 | no_text gate: extracted text is mostly non-alphabetic (garbled or binary) |
 | PD | Kladar_2020 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) and antioxidant assays for various Hypericum samples, but does not contain any pharmacokinetic (PK) data, exposure-response analysis, or pharmacodynamic (PD) modeling. |
-| popPK | Maideen_2021 | irrelevant | 0 | 0 | Review of β-blocker drug interactions; hyperici_herba (St. John's wort) is only mentioned as an interacting herb, no PK parameters for it. |
-| popPK | Mohammadinia_2018 | irrelevant | 2 | 1 | Hyperici herba is only a P-gp inducer modulating clearance of Tc-99-sestamibi, not the subject drug; no PK parameters for hyperici herba itself are reported. |
+| PGx | Kladar_2020 | not_relevant | 0 | 0 | The paper characterizes the chemical composition and biological activity of *Hypericum* samples from different geographical origins but does not study human pharmacokinetics, pharmacodynamics, or the influence of genetic variants on the response to the drug. |
+| popPK | Maideen_2021 | irrelevant | 0 | 0 | The paper is a review of beta-blocker interactions and does not report quantitative PK parameters for hyperici_herba (St. John's Wort). |
+| PGx | Maideen_2021 | not_relevant | 0 | 0 | The paper discusses drug-herb interactions involving St. John's Wort (Hypericum) and beta-blockers, but it is a general review of pharmacokinetic and pharmacodynamic interactions, not a pharmacogenomic study reporting specific genotype effects on parameters. |
+| popPK | Mohammadinia_2018 | irrelevant | 0 | 0 | The study measures the pharmacokinetics of the probe drug Technetium-99-sesamibi (Tc-MIBI) in the presence of St. John's Wort (Hyperici Herba), rather than measuring the pharmacokinetic parameters of St. John's Wort itself. |
+| PGx | Mohammadinia_2018 | not_relevant | 0 | 0 | The study reports a drug-drug interaction (St. John's Wort inducing P-gp to alter Tc-99m Sestamibi kinetics), not a pharmacogenomic effect (gene variant/genotype) on the pharmacokinetics of hyperici_herba itself. |
+| popPK | Neagoe_2004 | irrelevant | 0 | 0 | The study is an in-vitro investigation of the interaction of the extract with artificial lipid bilayers, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Neagoe_2004 | not_relevant | 0 | 0 | The study investigates the effect of Hyperici herba on artificial lipid bilayers in vitro and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | Nicolussi_2020 | irrelevant | 1 | 0 | A review of SJW's interactions with OTHER drugs; no PK parameters for hyperici_herba itself and no numeric values present. |
-| popPK | Tan_2021 | irrelevant | 0 | 0 | Systematic review of warfarin interactions; St. John's Wort is only a listed interacting supplement with no PK parameters reported. |
-| popPK | Wise_2019 | irrelevant | 3 | 2 | In silico prediction of phytochemical Tmax only; no clearance, volume, or compartmental PK parameters for hyperici_herba are reported, and no numeric parameter values beyond a Tmax range appear. |
+| popPK | Staffeldt_1994 | irrelevant | 2 | 6 | The study measures the pharmacokinetics of the constituents hypericin and pseudohypericin, not the extract itself as a whole, and does not report specific values for clearance, volume of distribution, or absorption rate constants. |
+| PGx | Staffeldt_1994 | not_relevant | 0 | 0 | The study investigates the general pharmacokinetics of hypericin and pseudohypericin in healthy volunteers but does not report any pharmacogenomic effects based on gene variants. |
+| popPK | Tan_2021 | irrelevant | 0 | 0 | The paper is a systematic review of warfarin interactions and does not report original quantitative pharmacokinetic parameters for hyperici_herba (St. John's Wort) as the subject drug. |
+| PGx | Tan_2021 | not_relevant | 0 | 0 | The paper is a systematic review on drug-herb interactions and does not report pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| popPK | Wise_2019 | irrelevant | 0 | 0 | The study is an in silico prediction of phytochemical absorption times and does not report actual quantitative pharmacokinetic parameters (e.g., CL, V, ka) from experimental data. |
+| PGx | Wise_2019 | not_relevant | 0 | 0 | The paper focuses on general pharmacokinetic modeling of phytochemicals in Hypericum perforatum and does not report any pharmacogenomic effects of genetic variants. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhyperici_herba%5D&body=Drug%3A%20hyperici_herba%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hyperici_herba/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 23:11 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 22:41 UTC</sub>

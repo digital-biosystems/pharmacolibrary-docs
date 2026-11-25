@@ -22,9 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gammeltoft_2021_percent_residual_infectivity_in_A549_hACE2_cells](drugs/drug_voxilaprevir/pd_Gammeltoft_2021_percent_residual_infectivity_in_A549_hACE2_c.md) | percent residual infectivity in A549-hACE2 cells ← voxilaprevir · direct sigmoid Emax (Hill) effect | — | Gammeltoft KA et al., Hepatitis C Virus Protease Inhibitors S…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02680-20](https://doi.org/10.1128/AAC.02680-20) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gammeltoft_2021_percent_residual_infectivity_in_Vero_E6_cells](drugs/drug_voxilaprevir/pd_Gammeltoft_2021_percent_residual_infectivity_in_Vero_E6_cell.md) | percent residual infectivity in Vero E6 cells ← voxilaprevir · direct sigmoid Emax (Hill) effect | — | Gammeltoft KA et al., Hepatitis C Virus Protease Inhibitors S…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02680-20](https://doi.org/10.1128/AAC.02680-20) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Pham_2019_PI_activity](drugs/drug_voxilaprevir/pd_Pham_2019_PI_activity.md) | PI activity ← voxilaprevir · inhibition effect | — | Pham LV et al., HCV genotype 1-6 NS3 residue 80 substit…, Journal of hepatology (2019) | [10.1016/j.jhep.2018.10.031](https://doi.org/10.1016/j.jhep.2018.10.031) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gammeltoft_2021_percent_cell_viability](drugs/drug_voxilaprevir/pd_Gammeltoft_2021_percent_cell_viability.md) | percent cell viability ← voxilaprevir · direct sigmoid Emax (Hill) effect | — | Gammeltoft KA et al., Hepatitis C Virus Protease Inhibitors S…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02680-20](https://doi.org/10.1128/AAC.02680-20) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gammeltoft_2021_percent_residual_infectivity](drugs/drug_voxilaprevir/pd_Gammeltoft_2021_percent_residual_infectivity.md) | percent residual infectivity ← voxilaprevir · direct sigmoid Emax (Hill) effect | — | Gammeltoft KA et al., Hepatitis C Virus Protease Inhibitors S…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02680-20](https://doi.org/10.1128/AAC.02680-20) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:59 | 0:53 | 0/0/0 | 2/1/0 | 0/0/0 | 31,708/4,825 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 07:26 | 0:03 | 0/0/0 | 2/0/0 | 0/0/0 | 4,642/170 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -47,23 +46,16 @@ _not available_
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Indolfi_2022.pdf` | Indolfi G et al., Sofosbuvir-velpatasvir-voxilaprevir in…, Hepatology (Baltimore, Md.) (2022) | popPK | 8 | [10.1002/hep.32393](https://doi.org/10.1002/hep.32393) | [35112372](https://pubmed.ncbi.nlm.nih.gov/35112372) | Population pharmacokinetics were assessed, but no numeric disposition parameter values are present in the provided evidence. |
-
-<sub>queue written 2026-10-07 15:59 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Gammeltoft_2021 | irrelevant | 0 | 0 | This is an in-vitro antiviral potency study, not a voxilaprevir pharmacokinetic study reporting disposition parameters. |
-| popPK | Indolfi_2022 | relevant | 8 | 0 | Population pharmacokinetics were assessed, but no numeric disposition parameter values are present in the provided evidence. |
-| popPK | Pham_2019 | irrelevant | 0 | 0 | This is an in-vitro antiviral resistance study and reports no voxilaprevir disposition parameters. |
+| popPK | Gammeltoft_2021 | irrelevant | 0 | 0 | This is an in-vitro study of antiviral efficacy and cytotoxicity (EC50, CC50) against SARS-CoV-2, not a pharmacokinetic study of voxilaprevir. |
+| PGx | Gammeltoft_2021 | not_relevant | 0 | 0 | The paper investigates the in vitro antiviral activity of HCV protease inhibitors against SARS-CoV-2 and does not report any pharmacogenomic data or effects on the pharmacokinetics/pharmacodynamics of voxilaprevir. |
+| popPK | Indolfi_2022 | irrelevant | 5 | 0 | The study mentions pharmacokinetics and exposure but does not provide specific quantitative parameter values (CL, V, etc.) in the provided evidence. |
+| PGx | Indolfi_2022 | not_relevant | 0 | 0 | The paper evaluates the safety and efficacy of the drug in adolescents but does not report any pharmacogenomic effects of gene variants on PK or PD parameters. |
+| popPK | Pham_2019 | irrelevant | 0 | 0 | The study is an in vitro mechanistic/resistance paper measuring EC50 values and viral fitness, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for voxilaprevir. |
+| PGx | Pham_2019 | not_relevant | 1 | 0 | The paper studies HCV viral resistance and viral genotype effects on drug sensitivity in vitro, not human host pharmacogenomics (patient genotype effects on drug PK/PD). |
 
 
 </details>

@@ -1,9 +1,6 @@
 {
  "dose_source": "paper",
  "model_id": "Molnupiravir_Gouda2022_reference",
- "molar_masses": {
-  "central.C": 0.259218
- },
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -21,17 +18,12 @@
    {
     "source": "Gouda_2022:other_prose",
     "value_si": 0.0038269999999999997
-   },
-   {
-    "source": "Gouda_2022:other_prose",
-    "value_si": 1.05
    }
   ]
  },
  "parameters": {
   "Cl": 2.088888888888889e-05,
   "F": 1.0,
-  "MM": 0.259218,
   "Tlag": 0.0,
   "VdPerKg": 0.001687142857142857,
   "adminCount": 1.0,
@@ -41,10 +33,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 3152.189156741945
+  "central.C": 3152.189156741906
  },
  "reference_peaks": {
-  "central.C": 0.004135961181333375
+  "central.C": 0.004135961181333427
  },
  "stop_time": 86400.0,
  "template": "PK_1C_enteral",

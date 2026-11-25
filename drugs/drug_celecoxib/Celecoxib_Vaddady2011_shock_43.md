@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
-> The record was held back because its reported clearance of 21 L/h for THC and celecoxib is disputed; a second reader reported mean clearance 22.9.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Vaddady2011_shock_43" status="needs_review" stale="false" population="pigs in hemorrhagic shock and normotensive pigs" measured-compound="THC and celecoxib" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Vaddady PK, Mehrotra N, Zhang X, Yates CR, Moore BM, Meibohm B. Pharmacokinetics
 
 ### Reviewer guidance
 
-**The record was held back because its reported clearance of 21 L/h for THC and celecoxib is disputed; a second reader reported mean clearance 22.9.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader marked the measured compound as unknown and did not report the 34.4 h terminal half-life or 21 L/h clearance, instead giving mean clearance 22.9. The record’s steady-state distribution volume of 22.8 L was used as the distribution volume; this reproduced AUC and terminal half-life but not early distribution. Cross-reader agreement was 0.5, with 0 of 1 reader agreeing. Extracted — celecoxib: Vss 22.8 L, t1/2z 34.4 h; THC and celecoxib: CL 21 l/h.
+Extracted — celecoxib: Vss 22.8 L, t1/2z 34.4 h; THC and celecoxib: CL 21 l/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has THC and celecoxib, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,8 +148,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | pass | 2.08 | 1.678 | 0.8068 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | pass | 2.08 | 1.678 | 0.8068 | reported 2.08 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because von Willebrand factor’s intercompartmental clearance Q is reported as 3290 mL, a volume unit rather than clearance.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit mL ([length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Daniel2026_value" status="rejected" stale="false" population="patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Daniel MY, Rauch A, Paris C, Jeanpierre E, Goudemand J, Marichez C et al. Modeli
 
 ### Reviewer guidance
 
-**The record was rejected because von Willebrand factor’s intercompartmental clearance Q is reported as 3290 mL, a volume unit rather than clearance.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit mL ([length] ** 3) vs [length] ** 3 / [time].**
 
-Q is defined as apparent intercompartmental clearance, but its reported value of 3290 mL has volume rather than volume-per-time dimensions. The reported unit could not be converted to SI, leaving a structural-parameter dimension mismatch. Extracted — von willebrand factor: V 4.54e+03 mL, CL 74.2 mL/h, Q 3.29e+03 mL, kabs 0.5 h−1.
+A reported unit could not be converted (Q), so that value has no SI equivalent. Extracted — von willebrand factor: V 4.54e+03 mL, CL 74.2 mL/h, Q 3.29e+03 mL, kabs 0.5 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has von Willebrand factor, the second reading high-purity VWF concentrate; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Dexamethasone's two-compartment model was rejected because the peripheral compartment lacks a valid path from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="dexamethasone" model-id="Dexamethasone_Papathanasiou2025_reference" status="rejected" stale="false" population="" measured-compound="dexamethasone" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Papathanasiou T, Kaullen J, Polireddy K, Chen X, Ho YL, Taylor A et al. Populati
 
 ### Reviewer guidance
 
-**Dexamethasone's two-compartment model was rejected because the peripheral compartment lacks a valid path from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record specifies a two-compartment structure for dexamethasone but fails to link the peripheral compartment to the dosing site. Additionally, a second reviewer disagreed on the model topology, arguing for a one-compartment structure, and identified conflicting values for specific parameters. Extracted — dexamethasone: CL 0.926 L/day, V1 12.3 L, V2 6.63 L.
+Extracted — dexamethasone: CL 0.926 L/day, V1 12.3 L, V2 6.63 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q37: this record has none, the second reading 2.03; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

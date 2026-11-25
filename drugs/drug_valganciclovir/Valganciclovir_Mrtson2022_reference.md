@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The valganciclovir two-compartment model was rejected because a peripheral compartment has no structural link to the central compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="valganciclovir" model-id="Valganciclovir_Mrtson2022_reference" status="rejected" stale="false" population="unknown" measured-compound="valganciclovir" parameterization="apparent" topology="2C"></div>
 
@@ -17,6 +17,8 @@ Märtson AG, Edwina AE, Kim HY, Knoester M, Touw DJ, Sturkenboom MGG et al. Ther
 ## Population and dosing
 
 **Population:** review reference.
+
+**Dosed compound ≠ measured compound:** dosed unknown, measured valganciclovir.
 
 ## Model
 
@@ -48,13 +50,13 @@ Märtson AG, Edwina AE, Kim HY, Knoester M, Touw DJ, Sturkenboom MGG et al. Ther
 
 ### Reviewer guidance
 
-**The valganciclovir two-compartment model was rejected because a peripheral compartment has no structural link to the central compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model specifies a peripheral volume (V2) of 49.0 L but lacks a transfer rate constant to link this compartment to the central one, rendering it unreachable from the dose. The second reader disagrees on several extracted values, noting the apparent clearance should be 14.9 L/h rather than null. Additionally, the second reader argues the model parameterization is mechanistic, while this record classifies it as apparent. Extracted — valganciclovir: CL/F 14.9 L/h, V1 25 L, V2 49 L, tlag 0.883 h, kabs 0.128 h−1.
+Extracted — valganciclovir: CL/F 14.9 L/h, V1 25 L, V2 49 L, tlag 0.883 h, kabs 0.128 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 0.6, the second reading 12; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -146,4 +148,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvalganciclovir%5D%20Valganciclovir_Mrtson2022_reference&body=Drug%3A%20valganciclovir%0ARecord%3A%20Valganciclovir_Mrtson2022_reference%0APaper%3A%20M%C3%A4rtson_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_valganciclovir/Valganciclovir_Mrtson2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:39 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:25 UTC</sub>

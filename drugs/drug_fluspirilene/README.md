@@ -22,11 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Grantham_1994_N_type_Ca2_current](drugs/drug_fluspirilene/pd_Grantham_1994_N_type_Ca2_current.md) | N-type calcium current block (fraction of current blocked) ← fluspirilene · direct sigmoid Emax (Hill) effect | — | Grantham CJ et al., Fluspirilene block of N-type calcium cu…, British journal of pharmaco… (1994) | [10.1111/j.1476-5381.1994.tb14762.x](https://doi.org/10.1111/j.1476-5381.1994.tb14762.x) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Kenny_1990_3H_PN_200_110_binding](drugs/drug_fluspirilene/pd_Kenny_1990_3H_PN_200_110_binding.md) | Displacement of [3H]-PN-200-110 binding to rat cerebral cortical membranes ← fluspirilene · direct sigmoid Emax (Hill) effect | — | Kenny BA et al., Selective antagonism of calcium channel…, British journal of pharmaco… (1990) | [10.1111/j.1476-5381.1990.tb15784.x](https://doi.org/10.1111/j.1476-5381.1990.tb15784.x) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sah_1994_N_type_current](drugs/drug_fluspirilene/pd_Sah_1994_N_type_current.md) | N-type Ca2+ channel current inhibition ← fluspirilene · direct Emax (saturable) effect | — | Sah DW et al., Inhibition of P-type and N-type calcium…, Molecular pharmacology (1994) | — |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sah_1994_P_type_current](drugs/drug_fluspirilene/pd_Sah_1994_P_type_current.md) | P-type Ca2+ channel current inhibition ← fluspirilene · direct Emax (saturable) effect | — | Sah DW et al., Inhibition of P-type and N-type calcium…, Molecular pharmacology (1994) | — |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Sczekan_1996_Ca_2_release](drugs/drug_fluspirilene/pd_Sczekan_1996_Ca_2_release.md) | IP3-induced Ca(2+)-release from Ca(2+)-loaded rat brain microsomes ← fluspirilene · inhibition effect | — | Sczekan SR et al., Antipsychotic drugs block IP3-dependent…, Biological psychiatry (1996) | [10.1016/0006-3223(95)00657-5](https://doi.org/10.1016/0006-3223(95)00657-5) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sah_1994_N_type](drugs/drug_fluspirilene/pd_Sah_1994_N_type.md) | N-type current ← fluspirilene · direct sigmoid Emax (Hill) effect | — | Sah DW et al., Inhibition of P-type and N-type calcium…, Molecular pharmacology (1994) | — |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Sah_1994_P_type](drugs/drug_fluspirilene/pd_Sah_1994_P_type.md) | P-type current ← fluspirilene · direct sigmoid Emax (Hill) effect | — | Sah DW et al., Inhibition of P-type and N-type calcium…, Molecular pharmacology (1994) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:45 | 0:27 | 0/0/0 | 2/3/0 | 0/0/0 | 42,423/1,628 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 23:57 | 0:03 | 0/0/0 | 0/2/0 | 0/0/0 | 3,686/164 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -53,12 +50,18 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Dhaka_2025 | irrelevant | 0 | 0 | This is an antiviral/host-protein interaction study; fluspirilene is only a tested inhibitor with EC50 values, no PK parameters reported. |
-| popPK | Grantham_1994 | irrelevant | 0 | 0 | In-vitro electrophysiology study of calcium channel blockade; no pharmacokinetic parameters for fluspirilene. |
-| popPK | Kenny_1990 | irrelevant | 0 | 0 | In-vitro pharmacology study of calcium channel antagonism; no PK disposition parameters for fluspirilene. |
-| popPK | Sah_1994 | irrelevant | 0 | 0 | In-vitro electrophysiology study of calcium channel blockade; no pharmacokinetic disposition parameters for fluspirilene. |
-| popPK | Sczekan_1996 | irrelevant | 0 | 0 | In-vitro mechanistic study of Ca2+ release in rat brain microsomes with no pharmacokinetic parameters for fluspirilene. |
-| popPK | Vaidya_2025 | irrelevant | 0 | 0 | This is an AI/ML QSAR drug-repurposing study for EBV; fluspirilene appears only as a docking hit with no PK parameters. |
+| popPK | Dhaka_2025 | irrelevant | 0 | 0 | The paper studies the antiviral efficacy of fluspirilene in SARS-CoV-2 replication, not its pharmacokinetic parameters. |
+| PGx | Dhaka_2025 | not_relevant | 0 | 0 | The study focuses on antiviral efficacy (EC50) of fluspirilene against SARS-CoV-2, not pharmacogenomic effects on PK/PD parameters. |
+| popPK | Grantham_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium channel binding, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Grantham_1994 | not_relevant | 0 | 0 | The paper investigates the electrophysiological mechanism of fluspirilene (N-type calcium channel blockade) in cell lines; it does not report a pharmacogenomic effect (genotype influence) on any pharmacokinetic or pharmacodynamic parameter. |
+| popPK | Kenny_1990 | irrelevant | 0 | 0 | The paper is a pharmacological study on calcium channel antagonism in tissue preparations and binding assays, reporting no pharmacokinetic parameters (CL, V, t1/2) for fluspirilene. |
+| PGx | Kenny_1990 | not_relevant | 0 | 0 | The paper describes the pharmacological mechanism of action (calcium channel antagonism) of fluspirilene in isolated tissues, but contains no information regarding genetic variants or pharmacogenomics. |
+| popPK | Sah_1994 | irrelevant | 0 | 0 | The study is an in-vitro pharmacodynamic/mechanistic analysis of calcium channel inhibition, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Sah_1994 | not_relevant | 0 | 0 | The paper describes a direct physicochemical interaction between the drug and a protein (calcium channel) in a cell-free/cell-based assay, not a pharmacogenomic effect on a pharmacokinetic or pharmacodynamic parameter in a human or animal subject. |
+| popPK | Sczekan_1996 | irrelevant | 0 | 0 | The study is an in vitro mechanistic assay measuring inhibition of IP3-induced calcium release, not a pharmacokinetic study of fluspirilene disposition. |
+| PGx | Sczekan_1996 | not_relevant | 0 | 0 | The paper does not report any pharmacogenomic effect on PK or PD parameters of fluspirilene, but rather examines its mechanism of action in a brain microsome assay. |
+| popPK | Vaidya_2025 | irrelevant | 0 | 0 | The paper is an in silico machine learning study for antiviral drug repurposing against EBV where fluspirilene is only mentioned as a compound with predicted binding affinity, not as the subject of a pharmacokinetic study. |
+| PGx | Vaidya_2025 | not_relevant | 0 | 0 | The paper focuses on in silico prediction and docking of antiviral activity against EBV proteins, with no data on pharmacokinetics, pharmacodynamics, or pharmacogenomics of fluspirilene. |
 
 
 </details>

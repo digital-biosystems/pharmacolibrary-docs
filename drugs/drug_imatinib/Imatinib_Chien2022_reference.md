@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The mean transit time (MTT) value of 0.537 lacks a specified unit, preventing conversion to SI units and blocking model construction.
+> MTT has no unit; c2_base_Q311 failed (ratio 3.6464).
 
 <div class="pk-model-meta" hidden drug="imatinib" model-id="Imatinib_Chien2022_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="imatinib" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Chien YH, Würthwein G, Zubiaur P, Posocco B, Pena MÁ, Borobia AM et al. Popula
 
 ### Reviewer guidance
 
-**The mean transit time (MTT) value of 0.537 lacks a specified unit, preventing conversion to SI units and blocking model construction.**
+**MTT has no unit; c2_base_Q311 failed (ratio 3.6464).**
 
-The record lists MTT as 0.537 but provides no unit, meaning the value cannot be converted for use in the model. Additionally, the transit compartment count (3.62) failed a structural check with a ratio of 3.6464. A second reader disputed the identification of the intercompartmental clearance parameter, though the primary issue remains the missing time unit for MTT. Extracted — imatinib: CL/F 13.2 L/h, Q/F 3.75 L/h, V1/F 172 L, V2/F 43.6 L, kabs 1.22 h−1, MTT 0.537 h, n_transit 3.62.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — imatinib: CL/F 13.2 L/h, Q/F 3.75 L/h, V1/F 172 L, V2/F 43.6 L, kabs 1.22 h−1, MTT 0.537 h, n_transit 3.62.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[n].parameter_id`: this record has Q311, the second reading Q900. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

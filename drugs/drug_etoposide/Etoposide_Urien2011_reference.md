@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Etoposide was rejected because its two-compartment model has an unreachable compartment, despite reporting intercompartmental clearance Q of 0.68 L/h/70 kg.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="etoposide" model-id="Etoposide_Urien2011_reference" status="rejected" stale="false" population="pediatric cancer patients" measured-compound="etoposide" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Urien S, Doz F, Giraud C, Rey E, Gentet JC, Chastagner P et al. Developmental ph
 
 ### Reviewer guidance
 
-**Etoposide was rejected because its two-compartment model has an unreachable compartment, despite reporting intercompartmental clearance Q of 0.68 L/h/70 kg.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The finding indicates that a compartment has no path from the dose, but does not identify which compartment. The record reports a central volume of 9.3 L/70 kg, Q of 0.68 L/h/70 kg, and a peripheral volume of 5.7 L/70 kg. Extracted — etoposide: allometric_exponent 2.05.
+Extracted — etoposide: allometric_exponent 2.05.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 2.05x: this record has none, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

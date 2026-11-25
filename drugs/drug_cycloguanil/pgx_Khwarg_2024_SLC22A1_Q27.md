@@ -23,7 +23,6 @@
 
 - genotype-stratified θ from Q74 (AUClast) — AUC/Cmax inverted to a clearance effect (∝1/CL)
 - reference genotype = CC (most-populous stratum; paper did not designate a reference — engineer may rebase)
-- multi-gene table (2 PK genes): genotype→gene assignment unverified — θ may conflate co-tabulated genes
 
 ## Citation
 Khwarg J et al., Effect of SLC22A1 polymorphism on the p…, Clinical and translational… (2024)

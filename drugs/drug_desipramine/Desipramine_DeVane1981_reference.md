@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The desipramine clearance and volume of distribution parameters were rejected due to unit dimension mismatches with their structural definitions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit 1/kg/h (1 / [time]) vs [length] ** 3 / [time]; Q352 unit 1/kg (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="desipramine" model-id="Desipramine_DeVane1981_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="desipramine" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ DeVane CL, Savett M, Jusko WJ. Desipramine and 2-hydroxy-desipramine pharmacokin
 
 ### Reviewer guidance
 
-**The desipramine clearance and volume of distribution parameters were rejected due to unit dimension mismatches with their structural definitions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit 1/kg/h (1 / [time]) vs [length] ** 3 / [time]; Q352 unit 1/kg (dimensionless) vs [length] ** 3.**
 
-The total clearance parameter was recorded in 1/kg/h, which conflicts with the required volume per time dimension, while the normalized volume of distribution was recorded in 1/kg, conflicting with the required volume dimension. A missing unit conversion prevented the generation of valid SI values for these parameters. Additionally, there were discrepancies in the extraction of absorption rate constants and AUC values between the primary record and the second reader. Extracted — desipramine: Cmax 11.5 ng/ml, t1/2ka 0.74, CL 1.86 1/kg/h, Vnorm 22.4 1/kg, t1/2z 21.8 h, AUC 487, Ct 11.8 ng/ml, AUCt 391.
+A reported unit could not be converted (Cmax, CL, Vnorm and Ct), so that value has no SI equivalent. Extracted — desipramine: Cmax 11.5 ng/ml, t1/2ka 0.74, CL 1.86 1/kg/h, Vnorm 22.4 1/kg, t1/2z 21.8 h, AUC 487, Ct 11.8 ng/ml, AUCt 391.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc [h -ng/ml] 243: this record has 391, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -163,4 +163,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdesipramine%5D%20Desipramine_DeVane1981_reference&body=Drug%3A%20desipramine%0ARecord%3A%20Desipramine_DeVane1981_reference%0APaper%3A%20DeVane_1981%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_desipramine/Desipramine_DeVane1981_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-09-23 20:06 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:38 UTC</sub>

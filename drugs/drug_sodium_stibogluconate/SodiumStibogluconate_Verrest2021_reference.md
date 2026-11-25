@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01C&quot;,&quot;href&quot;:&quot;atc/P01C.md&quot;},{&quot;label&quot;:&quot;sodium stibogluconate&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/&quot;},{&quot;label&quot;:&quot;Verrest_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumStibogluconate_Verrest2021_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Verrest_2024_parasite_load&quot;,&quot;label&quot;:&quot;Verrest_2024 \u00b7 parasite load&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/pd_Verrest_2024_parasite_load.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SodiumStibogluconate_Jaser1995_reference&quot;,&quot;label&quot;:&quot;Jaser_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Jaser1995_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SodiumStibogluconate_Verrest2021_reference&quot;,&quot;label&quot;:&quot;Verrest_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/SodiumStibogluconate_Verrest2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Verrest_2024_parasite_load&quot;,&quot;label&quot;:&quot;Verrest_2024 \u00b7 parasite load&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sodium_stibogluconate/pd_Verrest_2024_parasite_load.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the source paper studies paromomycin PK, while the reported parameters for sodium stibogluconate were not explicitly estimated in that study.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="sodium stibogluconate" model-id="SodiumStibogluconate_Verrest2021_reference" status="rejected" stale="false" population="" measured-compound="sodium_stibogluconate" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Verrest L, Wasunna M, Kokwaro G, Aman R, Musa AM, Khalil EAG et al. Geographical
 
 ### Reviewer guidance
 
-**Record rejected because the source paper studies paromomycin PK, while the reported parameters for sodium stibogluconate were not explicitly estimated in that study.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The analysis identified the primary subject as a population-PK study of paromomycin, where sodium stibogluconate served only as a co-administered comparator. Consequently, the listed parameters (CL 4.38 L/h, V 15.6 L, kabs 1.99 h–1) were not explicitly reported for sodium stibogluconate in the source. Additionally, the model builder defaulted the bioavailability (F) and lag time (Tlag) parameters rather than using explicit estimates. Extracted — sodium stibogluconate: CL 4.38 L/h, V 15.6 L, kabs 1.99 h–1.
+Extracted — sodium stibogluconate: CL 4.38 L/h, V 15.6 L, kabs 1.99 h–1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q40: this record has 1.0, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -127,7 +127,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.833 (5 of 6 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

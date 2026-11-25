@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03D&quot;,&quot;href&quot;:&quot;atc/R03D.md&quot;},{&quot;label&quot;:&quot;aminophylline&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/&quot;},{&quot;label&quot;:&quot;Loughnan_1976 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aminophylline_Jameson1990_reference&quot;,&quot;label&quot;:&quot;Jameson_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Jameson1990_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Frymoyer2020_reference&quot;,&quot;label&quot;:&quot;Frymoyer_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Frymoyer2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Goetz1989_reference&quot;,&quot;label&quot;:&quot;Goetz_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Goetz1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Shi2013_reference&quot;,&quot;label&quot;:&quot;Shi_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Shi2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Amponsah2017_reference&quot;,&quot;label&quot;:&quot;Amponsah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Amponsah2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Aminophylline_Goetz1989_reference&quot;,&quot;label&quot;:&quot;Goetz_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Goetz1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Jameson1990_reference&quot;,&quot;label&quot;:&quot;Jameson_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Jameson1990_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Shiu1989_reference&quot;,&quot;label&quot;:&quot;Shiu_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Shiu1989_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Aminophylline_Amponsah2017_reference&quot;,&quot;label&quot;:&quot;Amponsah_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_aminophylline/Aminophylline_Amponsah2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because aminophylline volume units 1/kg and steady-state concentration units mg/1 are dimensionally incompatible with their physical quantities.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit 1/kg (dimensionless) vs [length] ** 3.
 
-<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Loughnan1976_reference" status="rejected" stale="false" population="asthmatic children 1-4 years" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="aminophylline" model-id="Aminophylline_Loughnan1976_reference" status="rejected" stale="false" population="young asthmatic children" measured-compound="theophylline" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Loughnan PM, Sitar DS, Ogilvie RI, Eisen A, Fox Z, Neims AH. Pharmacokinetic analysis of the disposition of intravenous theophylline in young children. The Journal of pediatrics 88(5):874–879 (1976).
@@ -17,13 +17,13 @@ Loughnan PM, Sitar DS, Ogilvie RI, Eisen A, Fox Z, Neims AH. Pharmacokinetic ana
 
 ## Population and dosing
 
-**Population:** asthmatic children 1-4 years · condition asthma · age group child · n = 10.
+**Population:** young asthmatic children · condition asthma · age group child · n = 10.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameters:** 5 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -31,16 +31,15 @@ Loughnan PM, Sitar DS, Ogilvie RI, Eisen A, Fox Z, Neims AH. Pharmacokinetic ana
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| man plasma theophylline clearance | CLnorm | 0.1 | l/kg/hr |
+| plasma theophylline clearance | CL | 0.1 | l/kg/hr |
 | kel | kel | 0.49 | hr-1 |
 | betat1/2 | t1/2β | 3.38 | hr |
 | alphat1/2 | t1/2α | 0.13 | hr |
 | V1 | V | 0.25 | 1/kg |
-| mean steady-state plasma concentration of theophylline | Css | 10 | mg/1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.118). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.818). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,24 +49,23 @@ Loughnan PM, Sitar DS, Ogilvie RI, Eisen A, Fox Z, Neims AH. Pharmacokinetic ana
 
 ### Reviewer guidance
 
-**The record was rejected because aminophylline volume units 1/kg and steady-state concentration units mg/1 are dimensionally incompatible with their physical quantities.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit 1/kg (dimensionless) vs [length] ** 3.**
 
-The volume of distribution parameter lists a value of 0.25 in units of 1/kg, which is dimensionless rather than having a volume dimension. Additionally, the steady-state concentration is recorded as 10 mg/1, representing mass without a volume denominator. These dimensional conflicts caused the structural consistency check to fail. The abstract-only source also means summary statistics stand in for fitted model parameters. Extracted — theophylline: CLnorm 0.1 l/kg/hr, kel 0.49 hr-1, t1/2β 3.38 hr, t1/2α 0.13 hr, V 0.25 1/kg, Css 10 mg/1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is aminophylline's own; they describe theophylline. Extracted — theophylline: CL 0.1 l/kg/hr, kel 0.49 hr-1, t1/2β 3.38 hr, t1/2α 0.13 hr, V 0.25 1/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has theophylline, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of loading dose: this record has none, the second reading 5.6; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| man plasma theophylline clearance | `Q354` · CLnorm | 0.1 | l/kg/hr | 1.944e-06 | m3/s | l/(h·kg) | llm_corrected (0.6) | Loughnan_1976:abstract |
+| plasma theophylline clearance | `Q22` · CL | 0.1 | l/kg/hr | 1.944e-06 | m3/s | l/(h·kg) | llm_confirmed (0.6) | Loughnan_1976:abstract |
 | kel | `Q47` · kel | 0.49 | hr-1 | 0.0001361 | 1/s | 1/h | exact (1) | Loughnan_1976:abstract |
 | betat1/2 | `Q60` · t1/2β | 3.38 | hr | 1.217e+04 | s | h | llm (0.6) | Loughnan_1976:abstract |
 | alphat1/2 | `Q59` · t1/2α | 0.13 | hr | 468 | s | h | llm (0.6) | Loughnan_1976:abstract |
 | V1 | `Q61` · V | 0.25 | 1/kg |  |  | 1/kg | exact (1) | Loughnan_1976:abstract |
-| mean steady-state plasma concentration of theophylline | `Q34` · Css | 10 | mg/1 |  |  | mg/1 | llm (0.6) | Loughnan_1976:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,48 +76,31 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 **Interpretation flags:**
 - unit_dimension_mismatch: 'V1' → Q63 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- dropped unlinked row (NIL): 'maintenance dose rate for aminophylline' — extend the ontology if this is a real PK parameter (source ['Loughnan_1976:abstract'])
-- dropped unlinked row (NIL): 'loading dose' — extend the ontology if this is a real PK parameter (source ['Loughnan_1976:abstract'])
-- unit_dimension_mismatch: 'mean steady-state plasma concentration of theophylline' → Q34 (unit '[mass]' vs ontology '[mass] / [length] ** 3') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=theophylline
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V1' is the general volume)
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'theophylline', not aminophylline — the review values are the parent's
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Loughnan_1976_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Loughnan_1976_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.118 (2/17 fields) | 15 |
+| `gpt-oss-120b` | partly confirmed | 0.818 (9/11 fields) | 2 |
 
-<details><summary>15 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[alphat1/2]` | 0.13 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[alphat1/2]` |  | 0.13 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[betat1/2]` | 3.38 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[betat1/2]` |  | 3.38 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[kel]` | 0.49 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[kel]` |  | 0.49 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[loading dose]` |  | 5.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[man plasma theophylline clearance]` | 0.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean steady-state plasma concentration of theophylline]` | 10 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[plasma theophylline clearance]` |  | 0.1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state plasma concentration of theophylline]` |  | 10 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1]` | 0.25 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1]` |  | 0.25 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | theophylline | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | theophylline | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[mean steady-state plasma concentration of theophylline]` |  | 10 | only_one_extracted |
 
 </details>
 
@@ -133,16 +114,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q34 | fail | [mass] / [length] ** 3 | mg/1 ([mass]) | ['Loughnan_1976:abstract'] |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Loughnan_1976:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Loughnan_1976:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Loughnan_1976:abstract'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Loughnan_1976:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Loughnan_1976:abstract'] |
 | C5_dimension_Q61 | fail | [length] ** 3 | 1/kg (dimensionless) | ['Loughnan_1976:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.1 | ['Loughnan_1976:abstract'] |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 7 L/h | ['Loughnan_1976:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -166,4 +148,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Baminophylline%5D%20Aminophylline_Loughnan1976_reference&body=Drug%3A%20aminophylline%0ARecord%3A%20Aminophylline_Loughnan1976_reference%0APaper%3A%20Loughnan_1976%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_aminophylline/Aminophylline_Loughnan1976_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 23:44 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:24 UTC</sub>

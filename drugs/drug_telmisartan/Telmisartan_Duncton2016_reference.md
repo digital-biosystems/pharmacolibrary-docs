@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The telmisartan clearance value of 7.2 ml/min/kg conflicts with the second reader's extraction of 0.79.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Duncton2016_reference" status="needs_review" stale="false" population="" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Duncton MA, Murray RB, Park G, Singh R. Tetrazolone as an acid bioisostere: appl
 
 ### Reviewer guidance
 
-**The telmisartan clearance value of 7.2 ml/min/kg conflicts with the second reader's extraction of 0.79.**
+**cross_check_disputed; x1_cross_check.**
 
-The review recorded a total clearance of 7.2 ml/min/kg for telmisartan, while the second reader extracted 0.79 for the same parameter. Additionally, the two readers disagreed on the volume of distribution, with the second reader finding no value where this record lists 37. The second reader also identified a parameter value of 5460 that is absent from this record. Extracted — telmisartan: CL 7.2 ml min -1 kg -1, V 16.7 L.
+Extracted — telmisartan: CL 7.2 ml min -1 kg -1, V 16.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 7.2, the second reading 0.79; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -125,7 +125,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | cross-check disputed by a second reader: verdict disputed, agreement 0.727, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.727 | cross-check contradicted by a second reader: verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Olmesartan medoxomil's clearance, volume of distribution, absorption rate constant, and lag time were left at defaults, quarantining the model.
+> No value for olmesartan medoxomil's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="olmesartan medoxomil" model-id="OlmesartanMedoxomil_Kodati2017_reference" status="model_quarantined" stale="false" population="patients with hypertension" measured-compound="olmesartan" parameterization="apparent" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Kodati D, Kotakonda HK, Yellu N. Population Pharmacokinetic Modeling of Olmesart
 
 ### Reviewer guidance
 
-**Olmesartan medoxomil's clearance, volume of distribution, absorption rate constant, and lag time were left at defaults, quarantining the model.**
+**No value for olmesartan medoxomil's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations (+1 more).**
 
-The record lists no values for these four pharmacokinetic parameters, causing the model to rely on placeholder values rather than estimates from the study. Because only the paper's abstract was analyzed, summary statistics were used in place of a fitted model, further limiting the data available for these parameters. Additionally, a second reader disputed the extracted values for the metabolite's clearance and volume, noting they were missing or inconsistent in their reading. Extracted — olmesartan medoxomil: CLm/F 0.316 L/h, Vm/F 44.5 L.
+The model was built, but olmesartan medoxomil's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — olmesartan medoxomil: CLm/F 0.316 L/h, Vm/F 44.5 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has olmesartan_medoxomil, the second reading olmesartan medoxomil; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.375 | cross-check contradicted by a second reader: verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

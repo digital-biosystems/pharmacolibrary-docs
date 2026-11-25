@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;carboplatin&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/&quot;},{&quot;label&quot;:&quot;B\u00e9guin_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_1_14&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_1_14&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_1_14.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_2_15&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_2_15&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_2_15.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_3_16&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_3_16&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_3_16.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Brandon2026_reference&quot;,&quot;label&quot;:&quot;Brandon_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Brandon2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Centanni2024_reference&quot;,&quot;label&quot;:&quot;Centanni_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Centanni2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Schneider2025_reference&quot;,&quot;label&quot;:&quot;Schneider_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Schneider2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_VarelaGonzlezAller2025_reference&quot;,&quot;label&quot;:&quot;Varela-Gonz\u00e1lez-Aller_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_VarelaGonzlezAller2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_B_guin_2024_Thrombocyte_reduction&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024 \u00b7 Thrombocyte reduction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/pd_B_guin_2024_Thrombocyte_reduction.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_B_guin_2024_Thrombocyte_reduction_2&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024 \u00b7 Thrombocyte reduction&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/pd_B_guin_2024_Thrombocyte_reduction_2.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carboplatin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_1_14&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_1_14&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_1_14.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_2_15&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_2_15&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_2_15.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Jeon2026_reference_3_16&quot;,&quot;label&quot;:&quot;Jeon_2026_reference_3_16&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Jeon2026_reference_3_16.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Brandon2026_reference&quot;,&quot;label&quot;:&quot;Brandon_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Brandon2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Centanni2024_reference&quot;,&quot;label&quot;:&quot;Centanni_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Centanni2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_Schneider2025_reference&quot;,&quot;label&quot;:&quot;Schneider_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_Schneider2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Carboplatin_VarelaGonzlezAller2025_reference&quot;,&quot;label&quot;:&quot;Varela-Gonz\u00e1lez-Aller_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_carboplatin/Carboplatin_VarelaGonzlezAller2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # carboplatin — `Carboplatin_Bguin2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The record was rejected because the clearance base value was -1.1 L/h/kg, an impossible negative number for carboplatin elimination.
-
-<div class="pk-model-meta" hidden drug="carboplatin" model-id="Carboplatin_Bguin2024_reference" status="rejected" stale="false" population="client-owned dogs" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="carboplatin" model-id="Carboplatin_Bguin2024_reference" status="simulated" stale="false" population="client owned dogs" measured-compound="carboplatin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Béguin J, Mahfoudhi S, Uzel M, Rostang A, Ibish C, Ferran AA et al. Population pharmacokinetics modelling for clinical dose adjustment of carboplatin in dogs. BMC veterinary research 20(1):575 (2024).
@@ -17,7 +15,7 @@ Béguin J, Mahfoudhi S, Uzel M, Rostang A, Ibish C, Ferran AA et al. Population 
 
 ## Population and dosing
 
-**Population:** client-owned dogs · condition solid tumors · n = 16.
+**Population:** client owned dogs · condition solid tumors · age group adult.
 
 **Dosing:** 300 mg/m2, iv, multiple.
 
@@ -25,26 +23,28 @@ Béguin J, Mahfoudhi S, Uzel M, Rostang A, Ibish C, Ferran AA et al. Population 
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted, plus 2 covariate effects.  
-**Availability:** No model was generated from this record.
+**Parameters:** 2 extracted, plus 2 covariate effects.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_carboplatin/Carboplatin_Bguin2024_reference/Carboplatin_Bguin2024_reference.svg" alt="Carboplatin_Bguin2024_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| Volume of distribution (L/kg) | V | 0.3 | L/kg |
-| Clearance (L/h/kg) | CL | -1.1 | L/h/kg |
-| coefficient_for_the_effect_of_creatinine_plasma_concentration_log_transformed_on_clearance | coefficient_for_the_effect_of_creatinine_plasma_concentration_log_transformed_on_clearance | -10.9 |  |
-| theta_q900_category | theta_q900_category | 7.9 |  |
-| Ka | kabs | 0.26 | 1/hr |
-| LAGT | tlag | 0.058 | h |
+| Volume of distribution (L/kg) | V | 6.04 | L/kg |
+| Clearance (L/h/kg) | CL | 24.7 | L/h/kg |
+| coefficient_for_the_effect_of_creatinine_plasma_concentration_log_transformed_on_clearance | coefficient_for_the_effect_of_creatinine_plasma_concentration_log_transformed_on_clearance | 50.3 |  |
+| theta_cl_category | theta_cl_category | 34.2 | L/h/kg |
+
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (not confirmed, agreement 0.385). Primary extraction retained.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,24 +54,22 @@ Béguin J, Mahfoudhi S, Uzel M, Rostang A, Ibish C, Ferran AA et al. Population 
 
 ### Reviewer guidance
 
-**The record was rejected because the clearance base value was -1.1 L/h/kg, an impossible negative number for carboplatin elimination.**
+**Simulated; the covariate scenarios were not simulated (advisory).**
 
-Clearance cannot be negative, and the record lists the base value as -1.1 L/h/kg, which fails basic physiological plausibility. This error likely stems from misreading the creatinine covariate coefficient of -10.9 as the base clearance itself. Consequently, the model cannot predict drug elimination, rendering the pharmacokinetic record invalid. Extracted — carboplatin: V 0.3 L/kg, CL -1.1 L/h/kg, kabs 0.26 1/hr, tlag 0.058 h.
+The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (theta_cl_category), so that value has no SI equivalent.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[clearance].value`: this record has -1.1, the second reading 24.7; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Volume of distribution (L/kg) | `Q61` · V | 0.3 | L/kg | 0.021 | m3 | l/kg | exact (1) | Tab1:row2:col2, Tab1:row2:col3, Tab1:row2:col4, Tab1:row2:col6 |
-| Clearance (L/h/kg) | `Q22` · CL | -1.1 | L/h/kg | -2.139e-05 | m3/s | l/(h·kg) | exact (1) | Tab1:row3:col2, Tab1:row3:col3, Tab1:row3:col4, Tab1:row3:col6 |
-| coefficient_for_the_effect_of_creatinine_plasma_concentration_log_transformed_on_clearance | `Q900` · coefficient_for_the_effect_of_creatinine_plasma_concentration_log_transformed_on_clearance | -10.9 |  |  |  |  |  | Tab1:row5:col2, Tab1:row5:col3, Tab1:row5:col4, Tab1:row5:col6 |
-| theta_q900_category | `Q900` · theta_q900_category | 7.9 |  |  |  |  |  | Tab1:row6:col2, Tab1:row6:col3, Tab1:row6:col4, Tab1:row6:col6 |
-| Ka | `Q49` · kabs | 0.26 | 1/hr | 7.222e-05 | 1/s | 1/h | review_gapfill (0.7) | Yang_2025:review |
-| LAGT | `Q83` · tlag | 0.058 | h | 208.8 | s | h | review_gapfill (0.7) | Centanni_2024:review |
+| Volume of distribution (L/kg) | `Q61` · V | 6.04 | L/kg | 0.4228 | m3 | l/kg | exact (1) | Tab1:row2:col2, Tab1:row2:col3 |
+| Clearance (L/h/kg) | `Q22` · CL | 24.7 | L/h/kg | 0.0004803 | m3/s | l/(h·kg) | exact (1) | Tab1:row3:col2, Tab1:row3:col3 |
+| coefficient_for_the_effect_of_creatinine_plasma_concentration_log_transformed_on_clearance | `Q900` · coefficient_for_the_effect_of_creatinine_plasma_concentration_log_transformed_on_clearance | 50.3 |  |  |  |  |  | Tab1:row5:col2, Tab1:row5:col3 |
+| theta_cl_category | `Q900` · theta_cl_category | 34.2 | L/h/kg |  |  |  |  | Tab1:row6:col2, Tab1:row6:col3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,36 +79,29 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'IIV of Cl' routed out of structural estimates ('IIV of V')
-- table section iov: 'IOV of Cl' routed out of structural estimates ('IOV of V')
+- table section iiv: 'IIV of Cl' routed out of structural estimates ('IIV of V ωv 0.1a -')
+- table section iov: 'IOV of Cl' routed out of structural estimates ('IOV of V γV 0.1a -')
 - table section residual_error: 'Additive constant of the combined error model' routed out of structural estimates ('Residual error model')
 - table section residual_error: 'Proportional constant of the combined error model' routed out of structural estimates ('Residual error model')
-- covariate level 'Coefficient for the effect of creatinine plasma concentration (log-transformed) on clearance' → Q900:coefficient_for_the_effect_of_creatinine_plasma_concentration_log_transformed_on_clearance = -10.9 (additive_shift on Q22)
-- covariate effect for Q900 has no base parameter row (kept as unattached equation-variable)
+- covariate level 'Coefficient for the effect of creatinine plasma concentration (log-transformed) on clearance' → Q900:coefficient_for_the_effect_of_creatinine_plasma_concentration_log_transformed_on_clearance = 50.3 (additive_shift on Q22)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=carboplatin
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Yang_2025's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Centanni_2024's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell Tab1:row2:col5 = '[3.65 – 4.52]'
-- unparsed cell Tab1:row3:col5 = '[3.94 – 10.35]'
-- unparsed cell Tab1:row5:col5 = '[−0.45 – 0.07]'
-- unparsed cell Tab1:row6:col5 = '[−0.44—−0.07]'
-- unparsed cell Tab1:row9:col5 = '[0.004 – 0.16]'
-- unparsed cell Tab1:row11:col5 = '[0.02 – 0.15]'
-- unparsed cell Tab1:row13:col5 = '[7.3 – 19.9]'
-- unparsed cell Tab1:row14:col5 = '[0.17 – 0.25]'
+- table Tab1: unparsed_numeric_cell
 - LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
 | `qwen3.8-27b` | not confirmed | 0.385 (5/13 fields) | 8 |
 
 <details><summary>8 field discrepancies</summary>
@@ -141,15 +132,25 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_base_sign_Q22 | fail |  | -1.1 |  |
-| C2_sign_Q22_creatinine | fail | -12 |  | base -1.1 + shift -10.9 (creatinine) |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab1:row3:col2', 'Tab1:row3:col3', 'Tab1:row3:col4', 'Tab1:row3:col6'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Yang_2025:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab1:row2:col2', 'Tab1:row2:col3', 'Tab1:row2:col4', 'Tab1:row2:col6'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Centanni_2024:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | -1.1 | ['Tab1:row3:col2', 'Tab1:row3:col3', 'Tab1:row3:col4', 'Tab1:row3:col6'] |
+| C2_reference | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tab1:row3:col2', 'Tab1:row3:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Tab1:row2:col2', 'Tab1:row2:col3'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 24.7 | ['Tab1:row3:col2', 'Tab1:row3:col3'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 21 L | ['Tab1:row2:col2', 'Tab1:row2:col3', 'Tab1:row2:col4', 'Tab1:row2:col6'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.73e+03 L/h | ['Tab1:row3:col2', 'Tab1:row3:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 423 L | ['Tab1:row2:col2', 'Tab1:row2:col3'] |
+
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | pass | C_central (measured=carboplatin) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (9 of 9 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -161,16 +162,70 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_carboplatin/Carboplatin_Bguin2024_reference/Carboplatin_Bguin2024_reference_modelica.zip" download>Carboplatin_Bguin2024_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_carboplatin/Carboplatin_Bguin2024_reference/Carboplatin_Bguin2024_reference_fmi.zip" download>Carboplatin_Bguin2024_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_carboplatin/Carboplatin_Bguin2024_reference/Carboplatin_Bguin2024_reference_matlab.zip" download>Carboplatin_Bguin2024_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_carboplatin/Carboplatin_Bguin2024_reference/Carboplatin_Bguin2024_reference_matlab_simbio.zip" download>Carboplatin_Bguin2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_carboplatin/Carboplatin_Bguin2024_reference/Carboplatin_Bguin2024_reference_sbml.zip" download>Carboplatin_Bguin2024_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_carboplatin/Carboplatin_Bguin2024_reference/Carboplatin_Bguin2024_reference_cellml.zip" download>Carboplatin_Bguin2024_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.3713 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 1e-05 | kg |
+| input | model | `Cl` | 0.0004803 | m3/s |
+| input | model | `VdPerKg` | 0.00604 | m3/kg |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Béguin J, Mahfoudhi S, Uzel M, Rostang A, Ibish C, Ferran AA et al. Population pharmacokinetics modelling for clinical dose adjustment of carboplatin in dogs. BMC veterinary research 20(1):575 (2024). [doi:10.1186/s12917-024-04404-1](https://doi.org/10.1186/s12917-024-04404-1)
+
+**This record:** Pharmacolibrary, model `Carboplatin_Bguin2024_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_carboplatin/Carboplatin_Bguin2024_reference>
+
+```bibtex
+@misc{pharmacolibrary_CarboplatinBguin2024reference,
+  title  = {{Pharmacolibrary model Carboplatin_Bguin2024_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_carboplatin/Carboplatin_Bguin2024_reference},
+  note   = {Parameters from doi:10.1186/s12917-024-04404-1},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_carboplatin/Carboplatin_Bguin2024_reference/Carboplatin_Bguin2024_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_carboplatin/Carboplatin_Bguin2024_reference/Carboplatin_Bguin2024_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Carboplatin_Bguin2024_reference_params.json` · controls `Carboplatin_Bguin2024_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcarboplatin%5D%20Carboplatin_Bguin2024_reference&body=Drug%3A%20carboplatin%0ARecord%3A%20Carboplatin_Bguin2024_reference%0APaper%3A%20B%C3%A9guin_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_carboplatin/Carboplatin_Bguin2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 21:39 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:51 UTC</sub>

@@ -4,11 +4,9 @@
 
 # armodafinil — `Armodafinil_Willavize2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
 
-> Armodafinil’s reported steady-state AUC of 16.4% has a unit-dimension mismatch; abstract-only reporting and unlinked metabolites also contributed to rejection.
-
-<div class="pk-model-meta" hidden drug="armodafinil" model-id="Armodafinil_Willavize2017_reference" status="rejected" stale="false" population="healthy subjects and patients with bipolar I disorder" measured-compound="armodafinil" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="armodafinil" model-id="Armodafinil_Willavize2017_reference" status="not_simulated" stale="false" population="healthy subjects and patients with bipolar I disorder" measured-compound="armodafinil" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Willavize S, Fiedler-Kelly J, Ludwig E, Guan L. Population Pharmacokinetic Modeling of Armodafinil and Its Major Metabolites. Journal of clinical pharmacology 57(2):255–265 (2017).
@@ -16,28 +14,27 @@ Willavize S, Fiedler-Kelly J, Ludwig E, Guan L. Population Pharmacokinetic Model
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with bipolar I disorder · condition healthy and bipolar I disorder · age group adult · n = 583.
+**Population:** healthy subjects and patients with bipolar I disorder · condition healthy | bipolar I disorder · age group adult · n = 583.
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
-**Parameterization:** CL/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
-**Availability:** No model was generated from this record.
+**Structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 3 extracted.  
+**Availability:** Model available in **Models**; browser simulation unavailable.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL/F | CL/F | 2.01 | L/h |
-| Vc/F | V1/F | 45 | L |
+| armodafinil apparent oral clearance (CL/F) | CL/F | 2.01 | L/h |
+| volume of distribution (Vc/F) | V | 45 | L |
 | absorption t½ | t1/2ka | 0.226 | hours |
-| predicted steady-state area under the curve (50 kg relative to 70-kg patient) | AUCSS | 16.4 | % |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.545). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,22 +44,21 @@ Willavize S, Fiedler-Kelly J, Ludwig E, Guan L. Population Pharmacokinetic Model
 
 ### Reviewer guidance
 
-**Armodafinil’s reported steady-state AUC of 16.4% has a unit-dimension mismatch; abstract-only reporting and unlinked metabolites also contributed to rejection.**
+**The model was built but has not been simulated yet; t3_param_coverage.**
 
-The record gives AUCSS as 16.4% (dimensionless), although the required dimension is mass × time / length³. Both metabolites are listed with zero compartments, and their metabolism links have unknown parameters, leaving them without a path from the dose. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — armodafinil: CL/F 2.01 L/h, V1/F 45 L, t1/2ka 0.226 hours, AUCSS 16.4 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — armodafinil: CL/F 2.01 L/h, V 45 L, t1/2ka 0.226 hours.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of armodafinil apparent oral clearance: this record has none, the second reading 2.01; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption t1⁄2: this record has 0.226, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL/F | `Q27` · CL/F | 2.01 | L/h | 5.583e-07 | m3/s | l/h | exact (1) | Willavize_2017:abstract |
-| Vc/F | `Q290` · V1/F | 45 | L | 0.045 | m3 | l | exact (1) | Willavize_2017:abstract |
-| absorption t½ | `Q95` · t1/2ka | 0.226 | hours | 813.6 | s | h | llm_corrected (0.6) | Willavize_2017:abstract |
-| predicted steady-state area under the curve (50 kg relative to 70-kg patient) | `Q18` · AUCSS | 16.4 | % |  |  | % | llm_corrected (0.6) | Willavize_2017:abstract |
+| armodafinil apparent oral clearance (CL/F) | `Q27` · CL/F | 2.01 | L/h | 5.583e-07 | m3/s | l/h | llm_confirmed (0.6) | Willavize_2017:abstract |
+| volume of distribution (Vc/F) | `Q61` · V | 45 | L | 0.045 | m3 | l | exact (1) | Willavize_2017:abstract |
+| absorption t½ | `Q95` · t1/2ka | 0.226 | hours | 813.6 | s | h | half_life_rule (0.95) | Willavize_2017:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,43 +67,38 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 ## Departures & gaps
 
+**Deviations:**
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `ka_from_half_life`: ka = ln2 / t1/2ka = ln2 / 813.6 s = 0.000852/s (absorption half-life 0.226 hours reported, ka not)
+
 **Interpretation flags:**
-- unit_dimension_mismatch: 'predicted steady-state area under the curve (50 kg relative to 70-kg patient)' → Q18 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- unit_dimension_mismatch: 'predicted steady-state area under the curve (150 kg relative to 70-kg patient)' → Q18 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- dropped duplicate Q18 ('predicted steady-state area under the curve (150 kg relative to 70-kg patient)', value 29.1) — already have one for this compound
-- unit_dimension_mismatch: 'Vc/F (female participants compared with male participants)' → Q290 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q290 ('Vc/F (female participants compared with male participants)', value 10.2) — already have one for this compound
-- covariate category for CL/F from footnote/prose kept as documentation only (['Willavize_2017:abstract'])
-- covariate category for V1/F from footnote/prose kept as documentation only (['Willavize_2017:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=armodafinil
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0, 0]
-- status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 10/10 row label(s) assigned, 7 linked by role; re-tagged armodafinil→parent ×6, armodafinil→R-modafinil acid ×2, armodafinil→modafinil sulfone ×2
+- topology: 2 first-order transfer(s) across 3 compounds → general_linear
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- row roles (LLM): model_class=noncompartmental; 3/3 row label(s) assigned, 3 linked by role; re-tagged armodafinil→parent ×3
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Willavize_2017_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Willavize_2017_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.545 (6/11 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.5 (5/10 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[armodafinil apparent oral clearance]` |  | 2.01 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[armodafinil vc/f]` |  | 10.2 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` | 2.01 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vc/f]` | 45 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 45 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption t1⁄2]` | 0.226 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[armodafinil absorption t1⁄2]` |  | 0.226 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[armodafinil volume of distribution]` |  | 45 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[female participants had 10.2% lower armodafinil vc/f compared with male participants]` |  | 10.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 45 |  | only_one_extracted |
 
 </details>
 
@@ -121,17 +112,29 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q18 | fail | [mass] * [time] / [length] ** 3 | % (dimensionless) | ['Willavize_2017:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Willavize_2017:abstract'] |
-| C5_dimension_Q290 | pass | [length] ** 3 |  | ['Willavize_2017:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Willavize_2017:abstract'] |
 | C5_dimension_Q95 | pass | [time] |  | ['Willavize_2017:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['unknown', 'unknown'] |  |
+| C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 2.01 L/h | ['Willavize_2017:abstract'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 45 L | ['Willavize_2017:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 45 L | ['Willavize_2017:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage | fail | 2 scholar param(s) emitted or defaulted | 1 covered |  | neither emitted nor in defaulted[]: ['CL/F'] |
+| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict partial; agreement 0.5 (5 of 10 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -143,16 +146,43 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_armodafinil/Armodafinil_Willavize2017_reference/Armodafinil_Willavize2017_reference_modelica.zip" download>Armodafinil_Willavize2017_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_armodafinil/Armodafinil_Willavize2017_reference/Armodafinil_Willavize2017_reference_matlab.zip" download>Armodafinil_Willavize2017_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_armodafinil/Armodafinil_Willavize2017_reference/Armodafinil_Willavize2017_reference_matlab_simbio.zip" download>Armodafinil_Willavize2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_armodafinil/Armodafinil_Willavize2017_reference/Armodafinil_Willavize2017_reference_sbml.zip" download>Armodafinil_Willavize2017_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_armodafinil/Armodafinil_Willavize2017_reference/Armodafinil_Willavize2017_reference_cellml.zip" download>Armodafinil_Willavize2017_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+</div></div>
+
+## How to cite
+
+**Source paper** (the parameters are its): Willavize S, Fiedler-Kelly J, Ludwig E, Guan L. Population Pharmacokinetic Modeling of Armodafinil and Its Major Metabolites. Journal of clinical pharmacology 57(2):255–265 (2017). [doi:10.1002/jcph.800](https://doi.org/10.1002/jcph.800)
+
+**This record:** Pharmacolibrary, model `Armodafinil_Willavize2017_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_armodafinil/Armodafinil_Willavize2017_reference>
+
+```bibtex
+@misc{pharmacolibrary_ArmodafinilWillavize2017reference,
+  title  = {{Pharmacolibrary model Armodafinil_Willavize2017_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_armodafinil/Armodafinil_Willavize2017_reference},
+  note   = {Parameters from doi:10.1002/jcph.800},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Barmodafinil%5D%20Armodafinil_Willavize2017_reference&body=Drug%3A%20armodafinil%0ARecord%3A%20Armodafinil_Willavize2017_reference%0APaper%3A%20Willavize_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_armodafinil/Armodafinil_Willavize2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 00:11 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:40 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the paper reports levofloxacin and moxifloxacin kinetics, while clofazimine is only a concurrent covariate.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="clofazimine" model-id="Clofazimine_AlShaer2019_reference" status="rejected" stale="false" population="" measured-compound="clofazimine" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Al-Shaer MH, Alghamdi WA, Alsultan A, An G, Ahmed S, Alkabab Y et al. Fluoroquin
 
 ### Reviewer guidance
 
-**Record rejected because the paper reports levofloxacin and moxifloxacin kinetics, while clofazimine is only a concurrent covariate.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source text confirms the paper is about another drug, identifying clofazimine strictly as a co-medication. Extracted values like 6.22 liters/h for clearance and 60.5 liters for volume apply to the incorrect primary analytes. Additionally, the absorption rate constant of 2.95 h−1 lacks a valid source in the clofazimine context. Extracted — clofazimine: CL/F 6.22 liters/h, V/F 60.5 liters, kabs 2.95 h−1.
+Extracted — clofazimine: CL/F 6.22 liters/h, V/F 60.5 liters, kabs 2.95 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has none, the second reading 84.98; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.8 (8 of 10 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

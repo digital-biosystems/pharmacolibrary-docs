@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Prasugrel’s clearance, volume, absorption rate and lag time had no values, so placeholders led to withholding the model; the metabolite’s apparent clearance was 172 L/h.
+> No value for prasugrel's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="prasugrel" model-id="Prasugrel_Moser2018_reference" status="model_quarantined" stale="false" population="pediatric patients with sickle cell anemia" measured-compound="prasugrel active metabolite" parameterization="apparent" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Moser BA, LaBell ES, Chigutsa E, Jakubowski JA, Small DS. Population Pharmacokin
 
 ### Reviewer guidance
 
-**Prasugrel’s clearance, volume, absorption rate and lag time had no values, so placeholders led to withholding the model; the metabolite’s apparent clearance was 172 L/h.**
+**No value for prasugrel's clearance, volume of distribution, absorption rate constant and absorption lag time; t6_deviations (+1 more).**
 
-No value for prasugrel's clearance, volume of distribution, absorption rate constant and absorption lag time. The model was built, but prasugrel's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a placeholder stood in and the model was held back rather than published with an invented number. Only the prasugrel active metabolite was measured; its apparent clearance was 172 L/h and apparent volume was 51.7 L, while abstract-only summary statistics stood in for a fitted model. The builder assumed F=1 and Fm=1 with no molar correction, defaulted the unreported absorption rate, and represented input as a first-order depot (extravascular dosing); a second reader disputed the verdict (agreement 0.833) and named the analyte Pras-AM rather than prasugrel active metabolite. Extracted — prasugrel: CLm/F 172 L/h, Vm/F 51.7 L.
+The model was built, but prasugrel's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — prasugrel: CLm/F 172 L/h, Vm/F 51.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has prasugrel active metabolite, the second reading Pras-AM. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -126,7 +126,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.833 (5 of 6 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | cross-check contradicted by a second reader: verdict disputed; agreement 0.833 (5 of 6 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

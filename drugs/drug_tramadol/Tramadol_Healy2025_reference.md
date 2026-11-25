@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Tramadol’s central-compartment volume, V1, is recorded as 0.211 L/70 kg, an implausible magnitude that led to rejection.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Healy2025_reference" status="rejected" stale="false" population="neonatal patients" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -58,13 +58,13 @@ Healy P, Allegaert K, Della Pasqua O. Evaluation of the effect of CYP2D6 and OCT
 
 ### Reviewer guidance
 
-**Tramadol’s central-compartment volume, V1, is recorded as 0.211 L/70 kg, an implausible magnitude that led to rejection.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record gives tramadol a central volume of distribution of 0.211 L/70 kg, the magnitude flagged by the clearance/volume assessment. A reported unit could not be converted to SI, leaving the affected parameter without an SI value; the facts do not identify that parameter. A second reader disagreed with the extracted metabolic link and supplied CLPM of 0.628 and CLMO of 57.7, values absent from this record. Extracted — tramadol: CL/F 25.6 L/h/70 kg, Q 111 L/h/70 kg, V1 0.211 L/70 kg, V2 102 L/70 kg, kabs 0.65 1/h; O-desmethyltramadol: CL 78.7 L/h/70 kg, Q 1.98 L/h/70 kg, V1 1.45 L/70 kg, V2 101 L/70 kg, CLnorm 39.8 PMA.
+A reported unit could not be converted (CLnorm), so that value has no SI equivalent. Extracted — tramadol: CL/F 25.6 L/h/70 kg, Q 111 L/h/70 kg, V1 0.211 L/70 kg, V2 102 L/70 kg, kabs 0.65 1/h; O-desmethyltramadol: CL 78.7 L/h/70 kg, Q 1.98 L/h/70 kg, V1 1.45 L/70 kg, V2 101 L/70 kg, CLnorm 39.8 PMA.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tramadol → o-desmethyltramadol (metabolism), the second reading none; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

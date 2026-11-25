@@ -1,17 +1,13 @@
 {
  "dose_source": "WHO ATC DDD 25 mg parenteral (N07BC02)",
  "model_id": "Methadone_Gittel2021_reference",
- "molar_masses": {
-  "central.C": 0.309453
- },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
  ],
  "parameters": {
-  "Cl": 7.849409381058825e-06,
+  "Cl": 9.064999999999997e-06,
   "F": 1.0,
-  "MM": 0.309453,
   "VdPerKg": 0.00043,
   "adminCount": 1.0,
   "adminDuration": 600.0,
@@ -19,10 +15,10 @@
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 660.0000000662001
+  "central.C": 660.0000000662089
  },
  "reference_peaks": {
-  "central.C": 0.0007688472040424188
+  "central.C": 0.0007598468282384159
  },
  "stop_time": 86400.0,
  "template": "PK_1C",

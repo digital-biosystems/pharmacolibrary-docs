@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Tigecycline’s reported distribution volume of 364.0 mL is implausibly small, so the record was rejected for a likely unit/scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="tigecycline" model-id="Tigecycline_Luo2023_reference" status="rejected" stale="false" population="critically ill patients" measured-compound="tigecycline" parameterization="mechanistic" topology="1C"></div>
 
@@ -40,7 +40,7 @@ Luo X, Wang S, Li D, Wen J, Sun N, Fan G. Population pharmacokinetics of tigecyc
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,13 @@ Luo X, Wang S, Li D, Wen J, Sun N, Fan G. Population pharmacokinetics of tigecyc
 
 ### Reviewer guidance
 
-**Tigecycline’s reported distribution volume of 364.0 mL is implausibly small, so the record was rejected for a likely unit/scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports a volume of distribution of 364.0 mL, total clearance of 8.75 L/h, and intercompartmental clearance of 54.7 L/h. The review found the clearance/volume magnitude outside the physiological window and attributed it to a likely unit/scale extraction error. Extracted — tigecycline: CL 8.75 L/h, Q2 54.7 L/h, V 364 mL.
+Extracted — tigecycline: CL 8.75 L/h, Q2 54.7 L/h, V 364 mL.
 
-<sub>reviewed by gpt-6-luna</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[theta1].value`: this record has 8.75, the second reading 11.30; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -87,6 +89,31 @@ The record reports a volume of distribution of 364.0 mL, total clearance of 8.75
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
+
+<details><summary>5 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[theta1].value` | 8.75 | 11.30 | mismatch |
+| `gpt-oss-120b` | `parameters[theta2].parameter_id` | Q99 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[theta2].value` | 54.7 | 105.00 | mismatch |
+| `gpt-oss-120b` | `parameters[theta4]` | 0.0033 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume]` | 364.0 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

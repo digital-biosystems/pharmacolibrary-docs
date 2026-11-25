@@ -23,7 +23,7 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [García_2017_growth_inhibition](drugs/drug_bioallethrin/pd_Garc_a_2017_growth_inhibition.md) | Growth inhibition of Pseudokirchneriella subcapitata ← bioallethrin (R/S-bioallethrin and esbiol) · direct sigmoid Emax (Hill) effect | — | García MÁ et al., A capillary micellar electrokinetic chr…, Journal of chromatography. A (2017) | [10.1016/j.chroma.2017.06.056](https://doi.org/10.1016/j.chroma.2017.06.056) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Cao_2011_Ca_2_i](drugs/drug_bioallethrin/pd_Cao_2011_Ca_2_i.md) | intracellular calcium concentration ← S-bioallethrin · direct Emax (saturable) effect | — | Cao Z et al., Mechanisms of pyrethroid insecticide-in…, The Journal of pharmacology… (2011) | [10.1124/jpet.110.171850](https://doi.org/10.1124/jpet.110.171850) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">other animal</span> | [Norris_2024_LC50](drugs/drug_bioallethrin/pd_Norris_2024_LC50.md) | LC50 ← bioallethrin · model not identified | — | Norris EJ et al., Repellency and Toxicity of Vapor-Active…, ACS infectious diseases (2024) | [10.1021/acsinfecdis.3c00294](https://doi.org/10.1021/acsinfecdis.3c00294) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 10:08 | 0:23 | 0/0/0 | 1/1/0 | 0/0/0 | 28,474/1,397 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-23 19:14 | 0:04 | 0/0/0 | 2/0/0 | 0/0/0 | 3,785/157 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
@@ -50,11 +50,15 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ahlbom_1994 | irrelevant | 0 | 0 | Toxicology/receptor-binding study with no PK disposition parameters for bioallethrin. |
-| popPK | Cao_2011 | irrelevant | 0 | 0 | In-vitro mechanistic study of calcium influx in mouse neurons; no PK disposition parameters for bioallethrin. |
+| popPK | Ahlbom_1994 | irrelevant | 0 | 0 | The study focuses on neurotoxicology and receptor binding, containing no pharmacokinetic parameters or quantitative disposition data for bioallethrin. |
+| PGx | Ahlbom_1994 | not_relevant | 0 | 0 | The study investigates the toxicological effects of bioallethrin on receptor binding and behavior, not the effect of genetic variants on bioallethrin's PK/PD parameters. |
+| popPK | Cao_2011 | irrelevant | 0 | 0 | The paper describes an in-vitro mechanistic study of calcium influx in neurons, not a pharmacokinetic study, and reports no disposition parameters for bioallethrin. |
+| PGx | Cao_2011 | not_relevant | 0 | 0 | The paper investigates the mechanistic effects of pyrethroids on neuronal calcium influx, not the impact of genetic variants on pharmacokinetics or pharmacodynamics. |
 | popPK | García_2017 | irrelevant | 0 | 0 | This is an analytical chemistry/ecotoxicity study (CE separation method, EC50 in algae/plants) with no pharmacokinetic disposition parameters for bioallethrin. |
-| popPK | Norris_2024 | irrelevant | 0 | 0 | Bioallethrin is only a toxicity comparator (LC50); no pharmacokinetic parameters are reported. |
-| popPK | Wolansky_2006 | irrelevant | 0 | 0 | This is a pharmacodynamic dose-response (motor function) study in rats, not a PK study, and no disposition parameters for bioallethrin are reported. |
+| popPK | Norris_2024 | irrelevant | 0 | 0 | The study focuses on the repellency and toxicity of benzaldehydes in mosquitoes, using bioallethrin only as a toxicant comparator with no pharmacokinetic data. |
+| PGx | Norris_2024 | not_relevant | 0 | 0 | The paper studies the toxicity and repellency of benzaldehyde analogues in mosquitoes, not the pharmacokinetics or pharmacodynamics of bioallethrin in relation to a gene variant or genotype. |
+| popPK | Wolansky_2006 | irrelevant | 0 | 0 | The study focuses on toxicology (dose-response for motor function) rather than pharmacokinetics, and reports no PK parameters like clearance or half-life. |
+| PGx | Wolansky_2006 | not_relevant | 0 | 0 | The paper reports dose-response relationships and relative potencies of pyrethroids in rats but does not investigate pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | Wolansky_2008 | irrelevant | 0 | 0 | This is a neurobehavioral toxicology review with no PK parameters for bioallethrin; no numeric disposition values appear. |
 
 

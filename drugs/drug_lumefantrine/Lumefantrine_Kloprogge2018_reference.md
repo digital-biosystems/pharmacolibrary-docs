@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because lumefantrine V2/F 59.0 L and desbutyl-lumefantrine V2/F 8650 L were uncovered, alongside mismatched model structure and measured-compound output.
+> T3_output_variable; t3_param_coverage (+2 more).
 
 <div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Kloprogge2018_reference" status="rejected" stale="false" population="patients with uncomplicated Plasmodium falciparum malaria (children and pregnant women)" measured-compound="lumefantrine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -60,13 +60,13 @@ Kloprogge F, Workman L, Borrmann S, Tékété M, Lefèvre G, Hamed K et al. Arte
 
 ### Reviewer guidance
 
-**Rejected because lumefantrine V2/F 59.0 L and desbutyl-lumefantrine V2/F 8650 L were uncovered, alongside mismatched model structure and measured-compound output.**
+**T3_output_variable; t3_param_coverage (+2 more).**
 
-Only 7 of 9 parameters were covered; the missing entries were the peripheral-compartment volumes for lumefantrine and desbutyl-lumefantrine. The model structure was one-compartment enteral rather than parent–metabolite, and its output was central concentration instead of the compartment for measured lumefantrine. The builder assumed F=1 and Fm=1 with no molar correction and defaulted the lag time; a second reader disputed the record, including bioavailability of 1 versus 57.9, with agreement 0.136. Extracted — lumefantrine: Fab 1, kabs 0.0386 h−1, CL/F 1.35 l/h, V1/F 11.2 l, Q/F 0.344 l/h, V2/F 59 l; desbutyl-lumefantrine: CL/F 78.4 l/h, V1/F 2.47e+03 l, Q/F 104 l/h, V2/F 8.65e+03 l.
+Extracted — lumefantrine: Fab 1, kabs 0.0386 h−1, CL/F 1.35 l/h, V1/F 11.2 l, Q/F 0.344 l/h, V2/F 59 l; desbutyl-lumefantrine: CL/F 78.4 l/h, V1/F 2.47e+03 l, Q/F 104 l/h, V2/F 8.65e+03 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artemether-lumefantrine, the second reading lumefantrine; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -236,7 +236,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_shared_parameters | pass | 4 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.136, 0 of 1 reader(s) agree | 0.136 | cross-check disputed by a second reader: verdict disputed, agreement 0.136, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.136 (3 of 22 compared fields agree, 13 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.136 | cross-check contradicted by a second reader: verdict disputed; agreement 0.136 (3 of 22 compared fields agree, 13 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

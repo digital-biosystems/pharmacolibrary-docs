@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The record was rejected because the elimination rate constant parameter was recorded as a half-life value of 113.6 minutes instead of the required rate constant.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit min ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Kharidia1996_n_acetylprocainamide_a_50_mg_kg" status="rejected" stale="false" population="male Sprague Dawley rats" measured-compound="procainamide" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -53,13 +53,13 @@ Kharidia J, Eddington ND. Application of computer-assisted radiotelemetry in the
 
 ### Reviewer guidance
 
-**The record was rejected because the elimination rate constant parameter was recorded as a half-life value of 113.6 minutes instead of the required rate constant.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit min ([time]) vs 1 / [time].**
 
-The parameter labeled 'kel' holds the value 113.6 minutes, which corresponds to a time duration rather than the reciprocal time dimension required for an elimination rate constant. This mismatch indicates the terminal half-life was entered directly without conversion to the rate constant. Additionally, a conversion unit was missing, preventing the parameter from being correctly converted to SI values. Extracted — procainamide: AUC 1.66e+03 µg·mL⁻¹·min, CL/F 36.6 mL·min⁻¹·kg⁻¹, Vss 5.9 L/kg, kel 114 min; N-acetylprocainamide: AUC 52.1 µg·mL⁻¹·min.
+A reported unit could not be converted (AUC, AUC and kel), so that value has no SI equivalent. Extracted — procainamide: AUC 1.66e+03 µg·mL⁻¹·min, CL/F 36.6 mL·min⁻¹·kg⁻¹, Vss 5.9 L/kg, kel 114 min; N-acetylprocainamide: AUC 52.1 µg·mL⁻¹·min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has procainamide, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

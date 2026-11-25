@@ -42,7 +42,7 @@ Tezacaftor is a respiratory system medication prescribed to treat cystic fibrosi
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Pigliasco_2023_Sweat_chloride_concentration](drugs/drug_tezacaftor/pd_Pigliasco_2023_Sweat_chloride_concentration.md) | Sweat chloride concentration biomarker turnover ← Tezacaftor | — | Pigliasco F et al., Simultaneous Quantification of Ivacafto…, Biomedicines (2023) | [10.3390/biomedicines11020628](https://doi.org/10.3390/biomedicines11020628) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Pigliasco_2023_Sweat_chloride_concentration](drugs/drug_tezacaftor/pd_Pigliasco_2023_Sweat_chloride_concentration.md) | Sweat chloride concentration biomarker turnover ← Tezacaftor | — | Pigliasco F et al., Simultaneous Quantification of Ivacafto…, Biomedicines (2023) | [10.3390/biomedicines11020628](https://doi.org/10.3390/biomedicines11020628) |
 
 ## Pharmacogenomics (PGx)
 

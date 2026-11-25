@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Parameter λ1 has a unit of minutes instead of reciprocal time, causing a dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="colchicine" model-id="Colchicine_Rochdi1994_reference" status="rejected" stale="false" population="healthy adult males and elderly females" measured-compound="colchicine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Rochdi M, Sabouraud A, Girre C, Venet R, Scherrmann JM. Pharmacokinetics and abs
 
 ### Reviewer guidance
 
-**Parameter λ1 has a unit of minutes instead of reciprocal time, causing a dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min ([time]) vs 1 / [time].**
 
-The fast phase macro-rate constant λ1 is listed with a value of 9.2 minutes. A rate constant requires a unit of reciprocal time, not duration. This structural inconsistency was the primary reason for rejection. Extracted — colchicine: λ1 9.2 min, t1/2β 1.2 h, V 6.7 l.kg-1, Vss 4.2 l.kg-1, CL 10.5 l.h-1, Cmax 5.5 ng.ml-1, Fab 44 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — colchicine: λ1 9.2 min, t1/2β 1.2 h, V 6.7 l.kg-1, Vss 4.2 l.kg-1, CL 10.5 l.h-1, Cmax 5.5 ng.ml-1, Fab 44 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has colchicine, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

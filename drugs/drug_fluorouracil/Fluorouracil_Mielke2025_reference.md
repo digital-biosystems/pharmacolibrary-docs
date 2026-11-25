@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The 5-fluorouracil model was rejected because a reported unit could not be converted to standard SI units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/h ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Mielke2025_reference" status="rejected" stale="false" population="adult cancer patients" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Mielke H, Algharably EAE, Gundert-Remy U. 5-Fluorouracil Toxicity: Revisiting th
 
 ### Reviewer guidance
 
-**The 5-fluorouracil model was rejected because a reported unit could not be converted to standard SI units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/h ([mass] / [time]) vs [mass] / [time].**
 
-The intercompartmental clearance parameter was reported with a value of 401.7 L/h. The associated unit was not recognized for conversion to standard units, preventing the parameter from being validated. This unconvertible unit led to the rejection of the model record. Extracted — fluorouracil: Q 402 L/h, fu 8, Vmax 1.22e+03 mg/h, Km 11.7 mg/L, CL 256 L/h, V 161 L, kabs 0.13 1/h.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — fluorouracil: Q 402 L/h, fu 8, Vmax 1.22e+03 mg/h, Km 11.7 mg/L, CL 256 L/h, V 161 L, kabs 0.13 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl5fu: this record has 256.0, the second reading none; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

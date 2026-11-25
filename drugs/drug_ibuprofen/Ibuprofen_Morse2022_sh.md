@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Ibuprofen record failed terminal half-life verification and lacks an explicit bioavailability estimate.
+> The model does not reproduce the paper's terminal half-life (paper 0.192, model 1.65); f use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Morse2022_sh" status="needs_review" stale="false" population="healthy adults" measured-compound="ibuprofen" parameterization="mechanistic" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Morse JD, Stanescu I, Atkinson HC, Anderson BJ. Population Pharmacokinetic Model
 
 ### Reviewer guidance
 
-**Ibuprofen record failed terminal half-life verification and lacks an explicit bioavailability estimate.**
+**The model does not reproduce the paper's terminal half-life (paper 0.192, model 1.65); f use library defaults, not estimates from this paper (+2 more).**
 
-The model's simulated terminal half-life of 1.65 hours significantly exceeds the paper's reported value of 0.192 hours. Bioavailability was not extracted from the paper and relied on library defaults rather than specific estimates. Additionally, the record defines covariate effects that were not exercised in the simulation. Extracted — ibuprofen: CL 28.8 L/h/70 kg, Q 25.4 L/h/70 kg, V1 21.7 L/70 kg, V2 15.8 L/70 kg, t1/2ka 7.4 min, tlag 8.9 min, kabs 0.656 hour−1.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — ibuprofen: CL 28.8 L/h/70 kg, Q 25.4 L/h/70 kg, V1 21.7 L/70 kg, V2 15.8 L/70 kg, t1/2ka 7.4 min, tlag 8.9 min, kabs 0.656 hour−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -163,8 +163,8 @@ _All readers agree on the compared fields of this record._
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_terminal | reference | fail | 0.1917 | 1.65 | 8.611 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.445 | 1.65 | 3.709 | min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.1917 | 1.65 | 8.611 | reported 11.5 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.445 | 1.65 | 3.709 | reported 26.7 min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

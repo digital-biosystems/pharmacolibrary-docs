@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> A second reader could not verify the etomidate clearance, volume, and half-life values extracted from the abstract, causing a dispute.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_van1983_reference" status="needs_review" stale="false" population="patients with cirrhosis of the liver" measured-compound="etomidate" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ van Beem H, Manger FW, van Boxtel C, van Bentem N. Etomidate anaesthesia in pati
 
 ### Reviewer guidance
 
-**A second reader could not verify the etomidate clearance, volume, and half-life values extracted from the abstract, causing a dispute.**
+**cross_check_disputed; x1_cross_check.**
 
-The record contains summary statistics for etomidate derived solely from the paper's abstract, lacking a full fitted model. A second reader marked the dose compound and primary analyte as unknown instead of etomidate. Additionally, the second reader was unable to confirm the reported clearance, volume of distribution, or mean half-life values. Extracted — etomidate: t1/2z 540 minutes, V 8.9 litres/kg, CL 12.7 ml/kg/minute.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — etomidate: t1/2z 540 minutes, V 8.9 litres/kg, CL 12.7 ml/kg/minute.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etomidate, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

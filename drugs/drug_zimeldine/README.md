@@ -13,9 +13,20 @@ Zimelidine is a selective serotonin reuptake inhibitor (SSRI) used as an antidep
 
 <small>Summary written by `qwen3.8-27b` from [Wikidata Q203483](https://www.wikidata.org/wiki/Q203483), [Wikipedia](https://en.wikipedia.org/wiki/Zimelidine?oldid=1373242152) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
 
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| zimeldine | parent | 317.23 | C16H17BrN2 | PubChem | [5365247](https://pubchem.ncbi.nlm.nih.gov/compound/5365247) | Ferry_1985 |
+| norzimelidine | metabolite | 303.203 | C15H15BrN2 | PubChem | [6437872](https://pubchem.ncbi.nlm.nih.gov/compound/6437872) | Ferry_1985 |
+
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q19 — no SI value to build from</sub> | [Ferry_1985_reference](drugs/drug_zimeldine/Zimeldine_Ferry1985_reference.md) | — | parent + metabolite (no model) | 3 | Ferry N et al., Influence of renal failure on the kinet…, European journal of clinica… (1985) | [10.1007/BF00544366](https://doi.org/10.1007/BF00544366) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,65 +40,73 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:22 | 0:30 | 0/0/0 | 0/0/0 | 0/0/0 | 15,762/1,058 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 06:56 | 0:03 | 1/0/0 | 0/0/0 | 0/0/0 | 3,636/147 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 25 matched, 25 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
-
-## Full-text requests
-
-_6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Ferry_1985.pdf` | Ferry N et al., Influence of renal failure on the kinet…, European journal of clinica… (1985) | popPK | 8 | [10.1007/BF00544366](https://doi.org/10.1007/BF00544366) | [3161742](https://pubmed.ncbi.nlm.nih.gov/3161742) | Original PK study of zimeldine and its metabolite norzimelidine with numeric half-lives and renal clearances reported directly in the abstract. |
-| `Love_1981.pdf` | Love BL et al., Pharmacokinetics of zimelidine in human…, European journal of clinica… (1981) | popPK | 8 | [10.1007/BF00607150](https://doi.org/10.1007/BF00607150) | [6455297](https://pubmed.ncbi.nlm.nih.gov/6455297) | Human PK study of zimelidine with numeric half-lives, bioavailability, and urinary excretion reported in the abstract, though CL/V values are not explicitly given. |
-| `McMahon_1987.pdf` | McMahon TF et al., Effects of age on antidepressant kineti…, Pharmacology, biochemistry,… (1987) | popPK | 7 | [10.1016/0091-3057(87)90124-9](https://doi.org/10.1016/0091-3057(87)90124-9) | [2953033](https://pubmed.ncbi.nlm.nih.gov/2953033) | Zimelidine PK (half-life, clearance, volume) was measured in rats, but the abstract gives only qualitative direction of change, no numeric values. |
-| `Dehlin_1981.pdf` | Dehlin O et al., Zimelidine to geriatric patients: a pha…, Acta psychiatrica Scandinav… (1981) | popPK | 6 | [10.1111/j.1600-0447.1981.tb00747.x](https://doi.org/10.1111/j.1600-0447.1981.tb00747.x) | [6452803](https://pubmed.ncbi.nlm.nih.gov/6452803) | Human PK study of zimelidine reporting half-lives (15 h, 35 h) and AUCs, but no CL/V or compartmental parameters and no detailed numeric table in the evidence. |
-| `Gottfries_1986.pdf` | Gottfries CG et al., Pharmacokinetics of zimeldine in male a…, Acta pharmacologica et toxi… (1986) | popPK | 6 | [10.1111/j.1600-0773.1986.tb00140.x](https://doi.org/10.1111/j.1600-0773.1986.tb00140.x) | [2946168](https://pubmed.ncbi.nlm.nih.gov/2946168) | Human PK study of zimeldine with half-life and AUC reported, but no numeric parameter values appear in the evidence. |
-| `Potter_1979.pdf` | Potter WZ et al., Comparative pharmacokinetics of zimelid…, Psychiatry research (1979) | popPK | 6 | [10.1016/0165-1781(79)90009-x](https://doi.org/10.1016/0165-1781(79)90009-x) | [298355](https://pubmed.ncbi.nlm.nih.gov/298355) | Human PK study of zimelidine/norzimelidine, but only qualitative statements (ratio ~3:1, twofold variability) — no CL/V/t½ values in the evidence. |
-
-<sub>queue written 2026-10-07 00:22 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Aberg-Wistedt_1985 | irrelevant | 0 | 0 | The study is a clinical/biochemical comparison of antidepressant effects and CSF metabolites, not a pharmacokinetic study reporting disposition parameters for zimeldine. |
+| popPK | Aberg-Wistedt_1985 | irrelevant | 0 | 0 | The study focuses on clinical efficacy and biochemical markers (CSF metabolites, platelet uptake), not pharmacokinetic parameters like clearance or volume. |
 | PD | Aberg-Wistedt_1985 | not_relevant | 1 | 0 | The study reports qualitative clinical and biochemical changes (MADRS scores, CSF metabolites, platelet uptake) at a fixed dose, but does not provide plasma concentrations or numeric PD parameters (e.g., EC50, Emax) to derive an exposure-response relationship. |
+| PGx | Aberg-Wistedt_1985 | not_relevant | 0 | 0 | The paper compares the clinical and biochemical efficacy of zimeldine and alaproclate but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 | popPK | Borg_1979 | irrelevant | 0 | 0 | no_text gate: only 186 chars of text extracted (&lt; 400) |
+| PGx | Borg_1979 | not_relevant | 0 | 0 | The paper reports drug-drug interaction studies and standard pharmacokinetics, but does not investigate pharmacogenomic effects (gene variants) on zimeldine. |
 | popPK | Brown_1980 | irrelevant | 0 | 0 | no_text gate: only 105 chars of text extracted (&lt; 400) |
-| popPK | Chrétien_2025 | irrelevant | 0 | 0 | The paper is a pharmacovigilance safety signal analysis regarding hypertension and does not report any pharmacokinetic parameters for zimeldine. |
+| PGx | Brown_1980 | not_relevant | 0 | 0 | The paper describes general pharmacokinetics in human volunteers but does not report any pharmacogenomic effects (gene variants/genotypes) on PK/PD parameters. |
+| popPK | Chrétien_2025 | irrelevant | 0 | 0 | The study is a pharmacovigilance analysis of hypertension reports and does not contain pharmacokinetic parameters for zimeldine. |
 | PD | Chrétien_2025 | not_relevant | 1 | 0 | The paper is a pharmacovigilance disproportionality analysis that explicitly states no dose-response relationship was identified and provides no numeric PD parameters. |
-| popPK | Claghorn_1983 | irrelevant | 0 | 0 | The paper is a clinical tolerability study comparing side effects and does not report quantitative pharmacokinetic parameters such as clearance or volume of distribution. |
+| PGx | Chrétien_2025 | not_relevant | 0 | 0 | The paper reports adverse event reporting odds ratios for hypertension among SRI users, which is not a pharmacogenomic effect on PK or PD parameters. |
+| popPK | Claghorn_1983 | irrelevant | 1 | 0 | The paper is a clinical tolerability/safety trial comparing zimeldine to amitriptyline and placebo, and does not report quantitative pharmacokinetic disposition parameters (CL, V, etc.). |
 | PD | Claghorn_1983 | not_relevant | 0 | 0 | The paper reports only qualitative tolerability comparisons and mentions plasma levels were measured, but provides no numeric PD parameters, dose-response curves, or exposure-response analysis. |
-| popPK | Cronholm_1979 | irrelevant | 1 | 0 | A review-style discussion of antidepressant pharmacokinetics with no numeric disposition parameters for zimeldine. |
-| popPK | Dehlin_1981 | relevant | 6 | 4 | Human PK study of zimelidine reporting half-lives (15 h, 35 h) and AUCs, but no CL/V or compartmental parameters and no detailed numeric table in the evidence. |
-| popPK | Dehlin_1984 | irrelevant | 4 | 2 | Reports steady-state plasma concentrations and ratios but no quantitative disposition parameters (CL, V, t½, model); no numeric concentration values are given in the evidence. |
+| PGx | Claghorn_1983 | not_relevant | 0 | 0 | The paper reports a clinical tolerability trial comparing zimeldine to amitriptyline and placebo, but it does not investigate pharmacogenomic effects on PK or PD parameters. |
+| popPK | Cronholm_1979 | irrelevant | 0 | 0 | The text is a review discussing the general importance of pharmacokinetics and mentions zimelidine only as an example of a drug with active metabolites, without providing any original quantitative PK data. |
+| PGx | Cronholm_1979 | not_relevant | 1 | 2 | Mentions zimelidine only to note that clinical implications of dimethylated drug metabolism are obscure. |
+| popPK | Dehlin_1981 | relevant | 8 | 2 | The study reports elimination half-lives and AUC trends for zimelidine in geriatric patients, but specific clearance (CL) and volume of distribution (V) values are not provided in the text. |
+| PGx | Dehlin_1981 | not_relevant | 0 | 0 | The study examines pharmacokinetic changes associated with age (geriatric patients) rather than genetic variants, so it is not a pharmacogenomic study. |
+| popPK | Dehlin_1984 | relevant | 5 | 0 | The study is a pharmacokinetic investigation of zimeldine in humans, but the provided evidence contains no quantitative parameters (CL, V, t1/2, etc.), only qualitative descriptions of plasma concentrations and metabolite ratios. |
 | PD | Dehlin_1984 | not_relevant | 2 | 1 | The study reports PK linearity and clinical improvement but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative exposure-response model. |
-| popPK | Fagan_1984 | irrelevant | 2 | 1 | Zimelidine is only the co-administered probe drug; the pharmacokinetic analysis concerns temazepam, and no zimelidine disposition parameters are reported. |
-| popPK | Gottfries_1986 | relevant | 6 | 2 | Human PK study of zimeldine with half-life and AUC reported, but no numeric parameter values appear in the evidence. |
-| popPK | Kopanski_1983 | irrelevant | 0 | 0 | Receptor pharmacology study in rat brain slices; zimeldine is only one of many tested drugs, with no PK parameters reported. |
-| popPK | Linnoila_1986 | irrelevant | 0 | 0 | Zimelidine is used only as a probe affecting MHPG production; no PK disposition parameters for zimelidine are reported. |
-| popPK | Luthman_1997 | irrelevant | 0 | 0 | Zimelidine is only a co-applied uptake inhibitor in a rat serotonin clearance study; no PK disposition parameters for zimelidine are reported. |
-| popPK | McMahon_1987 | relevant | 7 | 3 | Zimelidine PK (half-life, clearance, volume) was measured in rats, but the abstract gives only qualitative direction of change, no numeric values. |
-| popPK | Melander_1983 | irrelevant | 1 | 0 | Zimelidine is only mentioned as an example drug in a review of food effects on presystemic clearance, with no PK parameter values reported. |
-| popPK | Njunge_1991 | irrelevant | 0 | 0 | Behavioral pharmacology study in mice; zimeldine is only a test drug dose, with no PK parameters reported. |
-| popPK | Nyström_1986 | irrelevant | 2 | 0 | The study is a clinical trial focusing on treatment outcomes and biochemical predictors, and the provided evidence contains no quantitative pharmacokinetic parameter values (CL, V, etc.) for zimeldine. |
-| popPK | Pottage_1983 | irrelevant | 0 | 0 | The paper discusses cardiovascular safety and toxicity of zimeldine, not pharmacokinetic parameters. |
+| PGx | Dehlin_1984 | not_relevant | 0 | 0 | The study investigates pharmacokinetics in geriatric patients compared to younger adults, which is a study of population subgroups and age-related physiology, not a pharmacogenomic effect caused by a specific gene variant. |
+| popPK | Fagan_1984 | irrelevant | 0 | 0 | Zimelidine is used as a co-administered agent to test for interactions with temazepam, not as the subject of the pharmacokinetic analysis. |
+| PGx | Fagan_1984 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction between zimelidine and temazepam, not a pharmacogenomic effect on zimelidine. |
+| PGx | Ferry_1985 | not_relevant | 0 | 0 | The paper reports the effect of renal failure (a physiological/clinical condition) on the kinetics of zimeldine, not a genetic variant, genotype, or pharmacogenomic phenotype. |
+| popPK | Gottfries_1986 | relevant | 10 | 2 | The paper describes a PK study of zimeldine in humans but the abstract only reports qualitative differences (higher AUC, longer half-life) without specific numeric values for CL, V, or t1/2. |
+| PGx | Gottfries_1986 | not_relevant | 0 | 0 | The study evaluates PK changes due to liver status in alcoholics, not a specific gene variant, genotype, or pharmacogenomic phenotype. |
+| popPK | Kopanski_1983 | irrelevant | 0 | 0 | The paper investigates pharmacodynamic effects on adrenergic receptors in rats and does not report pharmacokinetic parameters for zimeldine. |
+| PGx | Kopanski_1983 | not_relevant | 2 | 1 | The paper studies the effects of zimelidine on adrenergic receptor sensitivity in rats but does not report on gene variants/genotypes affecting PK or PD parameters (pharmacogenomics). |
+| popPK | Linnoila_1986 | irrelevant | 0 | 0 | Zimelidine is used only as a probe drug to assess norepinephrine metabolism (MHPG production rate), and no pharmacokinetic parameters (CL, V, etc.) for zimelidine itself are reported. |
+| PGx | Linnoila_1986 | not_relevant | 0 | 0 | The paper investigates the effect of zimeldine on norepinephrine metabolism in depressed patients but does not report any pharmacogenomic analysis or gene variants affecting PK/PD parameters. |
+| PGx | Love_1981 | not_relevant | 0 | 0 | The paper describes standard pharmacokinetics in healthy adults and does not report any gene variants or pharmacogenomic effects. |
+| popPK | Luthman_1997 | irrelevant | 0 | 0 | The study measures in vivo extracellular serotonin clearance in rat striatum using zimelidine only as a probe inhibitor, not as the subject drug for PK parameter estimation. |
+| PGx | Luthman_1997 | not_relevant | 0 | 0 | The paper describes in vivo neurochemical experiments measuring serotonin clearance and the effects of zimelidine as a transporter inhibitor; it does not investigate the impact of any gene variant on the pharmacokinetics or pharmacodynamics of zimelidine. |
+| popPK | McMahon_1987 | relevant | 9 | 2 | The paper reports qualitative changes in zimelidine's PK parameters (half-life, clearance, volume) in rats, but specific numeric values are not present in the provided evidence. |
+| PGx | McMahon_1987 | not_relevant | 0 | 0 | The paper investigates the effect of age (a physiological factor) on zimeldine kinetics in rats, not a genetic variant or genotype. |
+| popPK | Melander_1983 | irrelevant | 1 | 0 | The paper is a mechanistic review regarding food effects on presystemic clearance and mentions zimelidine only as a qualitative example of a drug unaffected by food, with no quantitative pharmacokinetic parameters provided. |
+| PGx | Melander_1983 | not_relevant | 0 | 0 | The paper discusses food effects on zimelidine's presystemic clearance, not genetic or pharmacogenomic influences. |
+| popPK | Njunge_1991 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in mice using zimeldine as a probe drug to test an anxiolytic model, and it reports no pharmacokinetic parameters (CL, V, t1/2, etc.). |
+| PGx | Njunge_1991 | not_relevant | 0 | 0 | The paper describes preclinical behavioral pharmacology in mice and does not report any human pharmacogenomic variants or genotypes affecting PK or PD parameters. |
+| popPK | Nyström_1986 | relevant | 4 | 0 | The study investigates zimeldine pharmacokinetics in humans and reports relationships between steady-state concentrations and treatment outcome, but no specific numeric disposition parameters (CL, V, etc.) are present in the provided evidence. |
+| PGx | Nyström_1986 | not_relevant | 0 | 0 | The paper describes pharmacodynamic predictors (plasma effects on synaptosomes) and concentration-response relationships, but does not report any gene variants or genotypes affecting zimeldine's PK/PD. |
+| popPK | Pottage_1983 | irrelevant | 0 | 0 | The paper discusses the cardiovascular safety profile and toxicity of zimeldine, not its pharmacokinetic parameters such as clearance or volume of distribution. |
 | PD | Pottage_1983 | not_relevant | 1 | 0 | The text is a qualitative review of cardiovascular safety and toxicity, containing no numeric PD parameters, concentration-effect data, or dose-response curves. |
-| popPK | Potter_1979 | relevant | 6 | 2 | Human PK study of zimelidine/norzimelidine, but only qualitative statements (ratio ~3:1, twofold variability) — no CL/V/t½ values in the evidence. |
-| popPK | Scott_1982 | irrelevant | 3 | 1 | Zimelidine is a co-administered study drug but no quantitative PK parameters for it are reported; only ethanol PK is mentioned, with no numeric values present. |
-| popPK | Wallace_1987 | irrelevant | 0 | 0 | Review of protein binding in the elderly; no PK disposition parameters or numeric values for zimeldine. |
+| PGx | Pottage_1983 | not_relevant | 0 | 0 | The text describes general cardiovascular safety profile and toxicity comparisons with tricyclics, but reports no gene variant or genotype affecting PK/PD parameters. |
+| popPK | Potter_1979 | irrelevant | 4 | 0 | The evidence describes the study design and qualitative findings (e.g., metabolite ratio) but contains no quantitative numeric values for clearance, volume, or other specific PK parameters. |
+| PGx | Potter_1979 | not_relevant | 0 | 0 | The paper reports general pharmacokinetic variability and comparison with another drug, but does not link any genetic variant or genotype to changes in zimelidine PK/PD parameters. |
+| popPK | Scott_1982 | irrelevant | 0 | 0 | The study is a pharmacodynamic/interaction study with no reported quantitative pharmacokinetic parameters (CL, V, ka) for zimelidine in the provided text. |
+| PGx | Scott_1982 | not_relevant | 0 | 0 | The study investigates drug-drug interactions with ethanol in healthy volunteers, not the effect of genetic variants on zimelidine PK or PD. |
+| popPK | Wallace_1987 | irrelevant | 0 | 0 | The paper is a review of plasma protein binding and does not report quantitative disposition parameters (CL, V, t1/2) for zimeldine. |
 | PD | Wallace_1987 | not_relevant | 1 | 0 | The text is a review of plasma protein binding in the elderly and mentions zimeldine only as an example of a drug with altered free fraction, without providing any concentration-effect data, dose-response curves, or numeric PD parameters. |
+| PGx | Wallace_1987 | not_relevant | 0 | 0 | The paper discusses the effect of age on plasma protein binding, not a gene variant or genotype, despite mentioning zimeldine. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzimeldine%5D&body=Drug%3A%20zimeldine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zimeldine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 06:49 UTC</sub>

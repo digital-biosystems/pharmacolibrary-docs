@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Telmisartan bioavailability F is missing, so the model uses library defaults instead of the paper's estimate.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Chae2018_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Chae D, Son M, Kim Y, Son H, Park K. Mechanistic Model for Blood Pressure and He
 
 ### Reviewer guidance
 
-**Telmisartan bioavailability F is missing, so the model uses library defaults instead of the paper's estimate.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lacks an explicit value for the bioavailability parameter F. Consequently, the review flagged the use of default conventions rather than paper-supported estimates. This unreported parameter affects the simulated profile but is not justified by the source data. Extracted — telmisartan: CL 22 L/h, V2 67.9 L, Q 19.1 L/h, V3 835 L, kabs 4.53 /h, tlag 0.25 h, V 500 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — telmisartan: CL 22 L/h, V2 67.9 L, Q 19.1 L/h, V3 835 L, kabs 4.53 /h, tlag 0.25 h, V 500 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

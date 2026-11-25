@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;levomethadone&quot;,&quot;href&quot;:&quot;drugs/drug_levomethadone/&quot;},{&quot;label&quot;:&quot;Casoni_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levomethadone_Gittel2021v2_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levomethadone/Levomethadone_Gittel2021v2_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levomethadone_Gittel2021v2_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_levomethadone/Levomethadone_Gittel2021v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The 2-compartment levomethadone model has an unreachable peripheral compartment and uses S-ketamine clearance (36.3 mL/kg/min) and volumes (132.7, 376.3 mL/kg) for levomethadone.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="levomethadone" model-id="Levomethadone_Casoni2015_reference" status="rejected" stale="false" population="" measured-compound="levomethadone" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Casoni D, Spadavecchia C, Wampfler B, Thormann W, Levionnois OL. Clinical and ph
 
 ### Reviewer guidance
 
-**The 2-compartment levomethadone model has an unreachable peripheral compartment and uses S-ketamine clearance (36.3 mL/kg/min) and volumes (132.7, 376.3 mL/kg) for levomethadone.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defines a peripheral compartment that has no elimination or transfer path to the rest of the system, rendering it pharmacokinetically inactive. Additionally, the extraction process mapped S-ketamine parameter values and labels to levomethadone, resulting in mismatched clearance and volume distributions. A second reader disagreed on the extracted values for specific parameters, noting discrepancies in the reported numerical values compared to the primary extraction. Extracted — levomethadone: CL 36.3 mL/kg/min, V1 133 mL/kg, V2 376 mL/kg.
+Extracted — levomethadone: CL 36.3 mL/kg/min, V1 133 mL/kg, V2 376 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q30: this record has none, the second reading 14.9; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

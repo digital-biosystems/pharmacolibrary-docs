@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because rate constants for oseltamivir and oseltamivir carboxylate had incorrect time units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time]; Q305 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="oseltamivir" model-id="Oseltamivir_Chairat2016_reference" status="rejected" stale="false" population="obese and non-obese Thai adult volunteers" measured-compound="oseltamivir carboxylate" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -55,13 +55,13 @@ Chairat K, Jittamala P, Hanpithakpong W, Day NP, White NJ, Pukrittayakamee S et 
 
 ### Reviewer guidance
 
-**The record was rejected because rate constants for oseltamivir and oseltamivir carboxylate had incorrect time units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time]; Q305 unit h ([time]) vs 1 / [time].**
 
-The absorption rate constant (2.81) and metabolite formation rate constant (2.13) were assigned units of hours, which conflicts with the required inverse time dimension. A reported unit could not be converted to standard units, so the parameters lacked valid values. A second reader disputed the metabolic link and several parameter values, including the 585 L/h clearance. Extracted — oseltamivir: Fab 100, kabs 2.81 h, CLm/F 585 l h −1, Vm/F 1.11e+03 l; oseltamivir carboxylate: kfm 2.13 h, CLm/F 20.6 l h −1, V1/F 159 l.
+A reported unit could not be converted (kabs and kfm), so that value has no SI equivalent. Extracted — oseltamivir: Fab 100, kabs 2.81 h, CLm/F 585 l h −1, Vm/F 1.11e+03 l; oseltamivir carboxylate: kfm 2.13 h, CLm/F 20.6 l h −1, V1/F 159 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has oseltamivir → oseltamivir carboxylate (metabolism), the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The dose-normalised maximum concentration parameter has a unit dimension that conflicts with its definition as a clearance.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q174 unit μg ml−1 mg−1 (1 / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Zhai2017_fl_2" status="rejected" stale="false" population="Chinese patients with B-cell lymphomas" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Zhai J, Qin Y, Zhu J, Song Y, Shen Z, Du X et al. Pharmacokinetics of obinutuzum
 
 ### Reviewer guidance
 
-**The dose-normalised maximum concentration parameter has a unit dimension that conflicts with its definition as a clearance.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q174 unit μg ml−1 mg−1 (1 / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The Cmax/dose parameter is defined as dose-normalised highest drug concentration, but its recorded unit of μg ml−1 mg−1 creates a dimensional mismatch with the expected mass-volume ratio. A second reader could not identify a clearance value, marking the reported clearance of 0.584 L/day as null. Additionally, the second reader could not confirm obinutuzumab as the primary analyte or dose compound. Extracted — obinutuzumab: AUCt 1.75e+03 day·μg ml−1, Cmax 0.751 μg ml−1, Cmax/dose 416 μg ml−1 mg−1, Ctrough 0.52 μg ml−1, CL 0.584 L/day.
+A reported unit could not be converted (AUCt, Cmax, Cmax/dose and Ctrough), so that value has no SI equivalent. Extracted — obinutuzumab: AUCt 1.75e+03 day·μg ml−1, Cmax 0.751 μg ml−1, Cmax/dose 416 μg ml−1 mg−1, Ctrough 0.52 μg ml−1, CL 0.584 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has obinutuzumab, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -32,7 +32,7 @@ Carumonam is a monobactam antibiotic used to treat bacterial infections.
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Whitby_1989_CP](drugs/drug_carumonam/pd_Whitby_1989_CP.md) | Prostatic tissue concentration biomarker turnover ← carumonam | — | Whitby M et al., Penetration of monobactam antibiotics (…, Chemotherapy (1989) | [10.1159/000238629](https://doi.org/10.1159/000238629) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Whitby_1989_CP](drugs/drug_carumonam/pd_Whitby_1989_CP.md) | Prostatic tissue concentration biomarker turnover ← carumonam | — | Whitby M et al., Penetration of monobactam antibiotics (…, Chemotherapy (1989) | [10.1159/000238629](https://doi.org/10.1159/000238629) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Bérubé_1988_None](drugs/drug_carumonam/pd_B_rub_1988_None.md) | None ← None · model not identified | — | Bérubé D et al., Pharmacokinetics of carumonam after sin…, Antimicrobial agents and ch… (1988) | [10.1128/AAC.32.3.354](https://doi.org/10.1128/AAC.32.3.354) |
 
 <details class="legend">

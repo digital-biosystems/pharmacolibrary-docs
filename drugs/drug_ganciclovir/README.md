@@ -48,7 +48,7 @@ Ganciclovir is a nucleoside analogue antiviral used to treat cytomegalovirus inf
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q307, Q373 — no SI value to build f…</sub> | [↳ model_v_the_wt_dependent_exponent_model](drugs/drug_ganciclovir/Ganciclovir_Li2020v2_model_v_the_wt_dependent_exponent_model.md) | — | 1-compartment (no model) | 4 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q307, Q373 — no SI value to build f…</sub> | [↳ model_vi_the_age_dependent_exponent_model](drugs/drug_ganciclovir/Ganciclovir_Li2020v2_model_vi_the_age_dependent_exponent_mod.md) | — | 1-compartment (no model) | 4 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q307, Q373 — no SI value to build f…</sub> | [↳ model_vii_the_bsa_dependent_exponent_model](drugs/drug_ganciclovir/Ganciclovir_Li2020v2_model_vii_the_bsa_dependent_exponent_mo.md) | — | 1-compartment (no model) | 4 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Märtson_2022_reference](drugs/drug_ganciclovir/Ganciclovir_Mrtson2022_reference.md) | — | 1-compartment (no model) | 0 | Märtson AG et al., Therapeutic Drug Monitoring of Ganciclo…, Therapeutic drug monitoring (2022) | [10.1097/FTD.0000000000000925](https://doi.org/10.1097/FTD.0000000000000925) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Märtson_2022_reference](drugs/drug_ganciclovir/Ganciclovir_Mrtson2022_reference.md) | — | 1-compartment (no model) | 0 | Märtson AG et al., Therapeutic Drug Monitoring of Ganciclo…, Therapeutic drug monitoring (2022) | [10.1097/FTD.0000000000000925](https://doi.org/10.1097/FTD.0000000000000925) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Dvořáčková_2026_reference](drugs/drug_ganciclovir/Ganciclovir_Dvokov2026_reference.md) | — | 2-compartment (no model) | 7 (+1 cov.) | Dvořáčková E et al., Population Pharmacokinetics and Dose Op…, Medical principles and prac… (2026) | [10.1159/000548942](https://doi.org/10.1159/000548942) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [Itohara_2025_reference](drugs/drug_ganciclovir/Ganciclovir_Itohara2025_reference.md) | — | 1-compartment (no model) | 4 | Itohara K et al., Pharmacokinetic and Pharmacodynamic Ass…, Therapeutic drug monitoring (2025) | [10.1097/FTD.0000000000001257](https://doi.org/10.1097/FTD.0000000000001257) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Krens_2020_reference](drugs/drug_ganciclovir/Ganciclovir_Krens2020_reference.md) | — | 1-compartment (no model) | 0 | Krens SD et al., Population Pharmacokinetics of Ganciclo…, Therapeutic drug monitoring (2020) | [10.1097/FTD.0000000000000689](https://doi.org/10.1097/FTD.0000000000000689) |
@@ -58,7 +58,6 @@ Ganciclovir is a nucleoside analogue antiviral used to treat cytomegalovirus inf
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chou_2024_growth_readout](drugs/drug_ganciclovir/pd_Chou_2024_growth_readout.md) | growth readout ← ganciclovir · inhibition effect | — | Chou S et al., Ganciclovir and maribavir cross-resista…, Antiviral research (2024) | [10.1016/j.antiviral.2023.105792](https://doi.org/10.1016/j.antiviral.2023.105792) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Guo_2022_pp28_luciferase](drugs/drug_ganciclovir/pd_Guo_2022_pp28_luciferase.md) | percent inhibition of pp28-luciferase CMV ← ganciclovir · direct sigmoid Emax (Hill) effect | — | Guo X et al., The Synthesis and Anti-Cytomegalovirus…, Viruses (2022) | [10.3390/v14020234](https://doi.org/10.3390/v14020234) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Koloskoff_2025_CMV](drugs/drug_ganciclovir/pd_Koloskoff_2025_CMV.md) | CMV viral load ← ganciclovir · indirect response — drug stimulates the loss of CMV viral load | ▶ model + simulator | Koloskoff K et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01526-z](https://doi.org/10.1007/s40262-025-01526-z) |
 
@@ -74,49 +73,45 @@ Ganciclovir is a nucleoside analogue antiviral used to treat cytomegalovirus inf
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:53 | 12:05 | 9/4/0 | 3/0/0 | 0/0/0 | 337,516/56,383 | openai / gpt-6-luna | 8 | 2/6 | 8/0 | 0 |
+| 2026-11-24 00:32 | 0:05 | 9/4/0 | 2/0/0 | 0/0/0 | 4,188/188 | einfracz / qwen3.8-27b | 8 | 2/6 | 8/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 148 matched, 20 returned
-- **screened:** 6  ·  **relevant:** 5
+- **screened:** 6  ·  **relevant:** 6
 - **records:** 13  ·  extracted 0  ·  needs review 9  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Facchin_2019.pdf` | Facchin A et al., Population pharmacokinetics of ganciclo…, Antimicrobial agents and ch… (2019) | popPK | 10 | [10.1128/AAC.01192-19](https://doi.org/10.1128/AAC.01192-19) | [31527022](https://pubmed.ncbi.nlm.nih.gov/31527022) | The human population-PK model reports numeric clearance and volume covariate effects, but not their absolute parameter estimates. |
-| `Krens_2020.pdf` | Krens SD et al., Population Pharmacokinetics of Ganciclo…, Therapeutic drug monitoring (2020) | popPK | 10 | [10.1097/FTD.0000000000000689](https://doi.org/10.1097/FTD.0000000000000689) | [31425489](https://pubmed.ncbi.nlm.nih.gov/31425489) | The study reports numeric population-PK clearance and volume estimates for ganciclovir in ICU patients. |
-| `Selby_2023.pdf` | Selby PR et al., Population Pharmacokinetics of Ganciclo…, Antimicrobial agents and ch… (2023) | popPK | 10 | [10.1128/aac.01550-22](https://doi.org/10.1128/aac.01550-22) | [36815858](https://pubmed.ncbi.nlm.nih.gov/36815858) | The study models human ganciclovir pharmacokinetics, but no numeric disposition parameter values are provided. |
-
-<sub>queue written 2026-10-07 17:42 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Babaev_2022 | irrelevant | 0 | 0 | Ganciclovir is mentioned only as a potency comparator, with no pharmacokinetic parameters reported. |
-| popPK | Carter_2025 | irrelevant | 0 | 0 | This is an in-vitro antiviral resistance study and reports no ganciclovir pharmacokinetic parameters. |
-| popPK | Chemaly_2019 | irrelevant | 0 | 0 | This systematic review summarizes in-vitro antiviral activity, not ganciclovir disposition parameters. |
-| popPK | Chou_2024 | irrelevant | 0 | 0 | This is an in-vitro viral susceptibility study reporting EC50 changes, not ganciclovir disposition parameters. |
+| popPK | Carter_2025 | irrelevant | 0 | 0 | This is an in vitro virology study characterizing drug-resistant HSV mutants, not a pharmacokinetic study of ganciclovir. |
+| PGx | Carter_2025 | not_relevant | 0 | 0 | The study investigates viral resistance mutations (pharmacoresistance) and antiviral efficacy, not host pharmacogenomic variants affecting ganciclovir PK or PD. |
+| popPK | Chemaly_2019 | irrelevant | 1 | 0 | The study reports in vitro EC50 values for antiviral activity against viruses, which is a pharmacodynamic measurement, not pharmacokinetic disposition parameters for ganciclovir. |
+| PGx | Chemaly_2019 | not_relevant | 0 | 0 | The paper is a systematic review of in vitro antiviral activity (EC50) and contains no pharmacogenomic data or genetic variant analysis. |
+| popPK | Chou_2024 | irrelevant | 0 | 0 | The study reports in vitro viral susceptibility (EC50) and resistance profiles, not pharmacokinetic disposition parameters. |
+| PGx | Chou_2024 | not_relevant | 0 | 0 | The paper reports viral resistance mutations (UL97 gene) affecting drug susceptibility, not human patient pharmacogenomic variants affecting ganciclovir PK or PD. |
 | popPK | Codde_2025 | irrelevant | 0 | 0 | This is a review and provides no original quantitative ganciclovir disposition parameters. |
-| popPK | Facchin_2019 | relevant | 10 | 4 | The human population-PK model reports numeric clearance and volume covariate effects, but not their absolute parameter estimates. |
+| popPK | Facchin_2019 | relevant | 9 | 1 | The study reports a population pharmacokinetic model for ganciclovir (via valganciclovir) in humans, but the specific numeric parameter values (e.g., typical CL, V, Q) are not provided in the extracted abstract text, only qualitative trends. |
+| PGx | Facchin_2019 | not_relevant | 0 | 0 | The study reports population pharmacokinetics based on covariates like body surface area, sex, and creatinine, but does not analyze genetic variants or pharmacogenomic effects on ganciclovir PK/PD. |
 | popPK | Guo_2022 | irrelevant | 0 | 0 | Ganciclovir is only mentioned as an in-vitro activity comparator, with no pharmacokinetic parameters reported. |
 | popPK | Koloskoff_2025 | irrelevant | 2 | 1 | This pediatric PK/PD study reports AUC and pharmacodynamic values, but no numeric ganciclovir disposition parameters; the PK model estimates are from a prior study. |
 | popPK | Lynch_2025 | irrelevant | 0 | 0 | This review does not report ganciclovir pharmacokinetic parameters or numeric values. |
-| popPK | Märtson_2022 | irrelevant | 2 | 9 | This is a narrative review, not an original PK study, though readable population-model parameters appear in the included table. |
-| popPK | Sauer_2020 | irrelevant | 1 | 8 | The paper reports an intracellular GCV-triphosphate half-life in infected cells, but no quantitative disposition model for ganciclovir in human or animal subjects. |
-| popPK | Selby_2023 | relevant | 10 | 0 | The study models human ganciclovir pharmacokinetics, but no numeric disposition parameter values are provided. |
-| popPK | Stockmann_2015 | irrelevant | 1 | 1 | This is a review and provides no original quantitative ganciclovir disposition parameters. |
-| popPK | Zhang_2023 | irrelevant | 0 | 0 | This in-vitro antiviral study reports no ganciclovir disposition parameters or numeric PK values. |
+| PGx | Märtson_2022 | not_relevant | 0 | 0 | The paper is a review of therapeutic drug monitoring and pharmacokinetics, and does not report pharmacogenomic effects (gene variants) on ganciclovir PK/PD parameters. |
+| popPK | Sauer_2020 | irrelevant | 1 | 1 | The study measures intracellular triphosphate accumulation in vitro, not population pharmacokinetic parameters (CL, V, ka) in human or animal subjects. |
+| PGx | Sauer_2020 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of MBX-2168 and its metabolites in cells but does not report pharmacogenomic effects on ganciclovir. |
+| popPK | Selby_2023 | relevant | 10 | 0 | The study develops a population pharmacokinetic model for ganciclovir in humans, but the specific numeric parameter values (CL, V, etc.) are not listed in the provided evidence text, likely residing in supplementary materials or figures not included. |
+| PGx | Selby_2023 | not_relevant | 0 | 0 | The study focuses on population pharmacokinetics using non-genetic covariates like creatinine clearance and does not report any gene variants or pharmacogenomic effects. |
+| popPK | Stockmann_2015 | irrelevant | 3 | 0 | This is a review article describing clinical pharmacokinetics and pharmacodynamics, but it does not report original quantitative disposition parameters (such as CL, V, Q, ka) for ganciclovir, nor does it provide a specific population PK model with parameter estimates. |
+| PGx | Stockmann_2015 | not_relevant | 0 | 0 | The paper describes clinical PK/PD and dosing for children with CMV but contains no pharmacogenomic (gene variant/genotype) data. |
+| popPK | Zhang_2023 | irrelevant | 0 | 0 | The study focuses on the antiviral mechanism of new thioxothiazolo[3,4-a]quinazoline derivatives against HCMV, with ganciclovir serving only as a comparator for drug resistance, and no ganciclovir pharmacokinetic data are reported. |
+| PGx | Zhang_2023 | not_relevant | 0 | 0 | The paper investigates a new antiviral compound class targeting HCMV alkaline nuclease and does not report pharmacogenomic effects on ganciclovir PK/PD. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bganciclovir%5D&body=Drug%3A%20ganciclovir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ganciclovir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 17:42 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 13:42 UTC</sub>

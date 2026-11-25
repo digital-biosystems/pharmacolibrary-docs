@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:18 | 0:15 | 0/0/0 | 1/0/0 | 0/0/0 | 28,311/573 | ollama / glm-5.3-flash | 2 | 2/0 | 2/0 | 0 |
+| 2026-11-24 05:55 | 0:03 | 0/0/0 | 1/0/0 | 0/0/0 | 4,896/151 | einfracz / qwen3.8-27b | 2 | 2/0 | 2/0 | 0 |
 
 ## Coverage
 
@@ -50,9 +50,12 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Pratt_1987 | irrelevant | 0 | 0 | Tramazoline is only an alpha-2 agonist used in receptor pharmacology (EC50 potency), with no pharmacokinetic disposition parameters reported. |
-| popPK | Ruffolo_1982 | irrelevant | 0 | 0 | In-vitro receptor pharmacology study (rat/rabbit aorta) with tramazoline as an agonist; no PK disposition parameters reported. |
-| popPK | Sakurai_1983 | irrelevant | 0 | 0 | In-vitro pharmacology study of tramazoline as an alpha-2 agonist in isolated adrenal medullary cells; no PK parameters. |
-| popPK | Starke_1975 | irrelevant | 0 | 0 | In-vitro pharmacology study of receptor potencies in rabbit pulmonary artery; no PK parameters for tramazoline. |
+| popPK | Ruffolo_1982 | irrelevant | 0 | 0 | The study characterizes alpha-adrenoceptor agonist activity and binding affinity (pharmacodynamics) in isolated aortae, not pharmacokinetic disposition parameters. |
+| PGx | Ruffolo_1982 | not_relevant | 0 | 0 | The paper compares receptor binding profiles of drugs in rat vs rabbit tissues and does not investigate the effect of human genetic variants on tramazoline pharmacokinetics or pharmacodynamics. |
+| popPK | Sakurai_1983 | irrelevant | 0 | 0 | The paper reports in vitro pharmacological data regarding catecholamine secretion inhibition in adrenal medullary cells, containing no pharmacokinetic parameters for tramazoline. |
+| PGx | Sakurai_1983 | not_relevant | 0 | 0 | The paper reports general pharmacological effects of tramazoline on catecholamine secretion, not pharmacogenomic effects on its PK or PD parameters. |
+| popPK | Starke_1975 | irrelevant | 0 | 0 | This is an in-vitro pharmacological study of alpha-adrenoceptor potencies, not a pharmacokinetic study, and no PK parameters are reported. |
+| PGx | Starke_1975 | not_relevant | 0 | 0 | The paper reports in vitro pharmacodynamics of alpha-agonists on rabbit pulmonary artery and contains no genetic or pharmacogenomic data. |
 
 
 </details>

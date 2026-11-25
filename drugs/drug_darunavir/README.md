@@ -29,21 +29,20 @@ Darunavir is a protease inhibitor used to treat and prevent HIV and AIDS. It is 
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">Stillemans_2021 · CL/F</text><circle cx="228.7" cy="30.0" r="4" fill="#ef6c00"><title>Stillemans_2021 · CL/F: 12.9 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Abdalla_2024 · CL/F</text><circle cx="307.1" cy="46.0" r="4" fill="#ef6c00"><title>Abdalla_2024 · CL/F: 21.6 L/h</title></circle></svg><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Stillemans_2021 · V/F</text><circle cx="221.8" cy="30.0" r="4" fill="#ef6c00"><title>Stillemans_2021 · V/F: 152 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Abdalla_2024 · V/F</text><circle cx="437.6" cy="46.0" r="4" fill="#ef6c00"><title>Abdalla_2024 · V/F: 2601 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q331 — no SI value to build from</sub> | [Abdalla_2024_reference](drugs/drug_darunavir/Darunavir_Abdalla2024_reference.md) | — | 1-compartment (no model) | 5 (+1 cov.) | Abdalla S et al., Simultaneous pharmacokinetic modeling o…, Antimicrobial agents and ch… (2024) | [10.1128/aac.01004-23](https://doi.org/10.1128/aac.01004-23) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: cross_check_disputed</sub> | [Stillemans_2021_reference](drugs/drug_darunavir/Darunavir_Stillemans2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+1 cov.) | Stillemans G et al., Exploration of Reduced Doses and Short-…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00920-z](https://doi.org/10.1007/s40262-020-00920-z) |
-| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Abdalla_2024_reference](drugs/drug_darunavir/Darunavir_Abdalla2024_reference.md) | — | parent + metabolite (no model) | 6 (+1 cov.) | Abdalla S et al., Simultaneous pharmacokinetic modeling o…, Antimicrobial agents and ch… (2024) | [10.1128/aac.01004-23](https://doi.org/10.1128/aac.01004-23) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Courlet_2021_reference](drugs/drug_darunavir/Darunavir_Courlet2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Courlet P et al., Population pharmacokinetic modelling to…, European journal of clinica… (2021) | [10.1007/s00228-020-03060-2](https://doi.org/10.1007/s00228-020-03060-2) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Tsirizani_2024_reference](drugs/drug_darunavir/Darunavir_Tsirizani2024_reference.md) | — | 1-compartment (no model) | 0 | Tsirizani L et al., Pharmacokinetics of once-daily darunavi…, The Journal of antimicrobia… (2024) | [10.1093/jac/dkae319](https://doi.org/10.1093/jac/dkae319) |
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [De_2020_CPE](drugs/drug_darunavir/pd_De_2020_CPE.md) | inhibition of SARS-CoV-2-induced cytopathogenic effect (visual CPE read-out) ← darunavir · direct sigmoid Emax (Hill) effect | — | De Meyer S et al., Lack of antiviral activity of darunavir…, International journal of in… (2020) | [10.1016/j.ijid.2020.05.085](https://doi.org/10.1016/j.ijid.2020.05.085) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [De_2020_MTT](drugs/drug_darunavir/pd_De_2020_MTT.md) | inhibition of SARS-CoV-2-induced cytopathogenic effect (MTT assay) ← darunavir · direct sigmoid Emax (Hill) effect | — | De Meyer S et al., Lack of antiviral activity of darunavir…, International journal of in… (2020) | [10.1016/j.ijid.2020.05.085](https://doi.org/10.1016/j.ijid.2020.05.085) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,48 +56,50 @@ Darunavir is a protease inhibitor used to treat and prevent HIV and AIDS. It is 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:47 | 5:07 | 1/3/0 | 2/0/0 | 0/0/0 | 322,499/18,253 | ollama / glm-5.3-flash | 8 | 1/7 | 8/0 | 0 |
+| 2026-11-23 20:30 | 0:05 | 2/2/0 | 0/0/0 | 0/0/0 | 5,285/187 | einfracz / qwen3.8-27b | 8 | 1/7 | 8/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 92 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 0  ·  needs review 1  ·  rejected 3  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs review 2  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Moltó_2018.pdf` | Moltó J et al., Pharmacokinetics of darunavir/cobicista…, The Journal of antimicrobia… (2018) | popPK | 6 | [10.1093/jac/dkx459](https://doi.org/10.1093/jac/dkx459) | [29237008](https://pubmed.ncbi.nlm.nih.gov/29237008) | Human PK study of darunavir with NCA parameters (AUC, Cmax, C24) reported as percent changes in the abstract, but full numeric values likely in tables not provided. |
-| `Brooks_2023.pdf` | Brooks KM et al., Pharmacokinetics, Safety, and Tolerabil…, Journal of acquired immune… (2023) | popPK | 5 | [10.1097/QAI.0000000000003301](https://doi.org/10.1097/QAI.0000000000003301) | [37955446](https://pubmed.ncbi.nlm.nih.gov/37955446) | Human intensive PK study of darunavir with NCA parameters, but only percentage changes (AUC, Cmax, C24h) are given; no CL/V/t½ values appear in the evidence. |
-
-<sub>queue written 2026-10-07 15:42 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abdalla_2023 | irrelevant | 1 | 0 | The population PK model and parameters are for dolutegravir; darunavir is only a co-administered comparator drug with no darunavir PK parameters reported. |
-| popPK | Barceló_2016 | irrelevant | 0 | 0 | This is a population PK study of elvitegravir and cobicistat; darunavir appears only as a co-administered drug affecting cobicistat clearance, with no darunavir PK parameters reported. |
-| popPK | Boffito_2008 | irrelevant | 3 | 2 | Only a half-life (15 h) and Cmin vs EC50 are mentioned; no CL, V, or population-PK parameter values are reported. |
-| popPK | Brooks_2023 | relevant | 5 | 3 | Human intensive PK study of darunavir with NCA parameters, but only percentage changes (AUC, Cmax, C24h) are given; no CL/V/t½ values appear in the evidence. |
+| popPK | Abdalla_2023 | irrelevant | 1 | 0 | The paper describes the population pharmacokinetics of dolutegravir, not darunavir, which is only present as a co-administered agent. |
+| PGx | Abdalla_2023 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of dolutegravir, not darunavir, and focuses on covariates like ethnicity and bilirubin rather than pharmacogenomic variants for the target drug. |
+| PGx | Abdalla_2024 | not_relevant | 0 | 0 | The paper focuses on population PK modeling of darunavir/ritonavir in adolescents, analyzing covariates like age, weight, and protein binding, but does not report any pharmacogenomic effects or genetic variants. |
+| popPK | Barceló_2016 | irrelevant | 0 | 0 | The study focuses on the population PK of elvitegravir and cobicistat; darunavir is only mentioned as a co-administered drug in the context of drug-drug interactions affecting cobicistat clearance. |
+| PGx | Barceló_2016 | not_relevant | 0 | 0 | The paper analyzes the pharmacokinetics of elvitegravir and cobicistat; while it mentions a drug-drug interaction with darunavir, it does not report any pharmacogenomic effects on darunavir's PK or PD parameters. |
+| popPK | Boffito_2008 | irrelevant | 2 | 0 | The text mentions a population pharmacokinetic substudy and a half-life value, but provides no actual numeric parameter estimates (CL, V, ka, etc.) for darunavir. |
+| PGx | Boffito_2008 | not_relevant | 0 | 0 | The paper reports standard clinical pharmacokinetics and efficacy for darunavir but does not analyze the impact of specific gene variants (pharmacogenomics) on PK or PD parameters. |
+| popPK | Brooks_2023 | relevant | 7 | 3 | The study is a clinical PK study of darunavir using noncompartmental methods, but the evidence only provides percentage changes in AUC/Cmax/C24h rather than absolute quantitative values for clearance or volume. |
+| PGx | Brooks_2023 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (rifapentine/isoniazid) affecting darunavir PK, but contains no data on gene variants or genotypes. |
 | popPK | Courlet_2021 | irrelevant | 0 | 0 | This is a population PK study of amlodipine; darunavir appears only as a co-administered CYP3A4 inhibitor, with no PK parameters for darunavir itself. |
-| popPK | Daskapan_2019 | relevant | 9 | 3 | A population PK model (CL, V, Ka, 1-compartment) for darunavir in HIV outpatients was developed, but the numeric parameter values are in table 2 and supplements not included in the evidence. |
-| popPK | De_2020 | irrelevant | 0 | 0 | In vitro antiviral activity study of darunavir against SARS-CoV-2; no PK disposition parameters (CL, V, half-life, or PK model) reported. |
-| popPK | García_2008 | irrelevant | 0 | 0 | This is a review of darunavir resistance mutations and virological response, with no pharmacokinetic parameters reported. |
-| popPK | Hijazi_2020 | irrelevant | 2 | 1 | This is a transporter-expression/drug-exposure study in macaques; no PK disposition parameters (CL, V, half-life, or PK model) for darunavir are reported, only measured concentrations. |
-| popPK | Li_2022 | irrelevant | 0 | 0 | This is a review of HIV reverse transcriptase inhibitors (TAF, RPV, DOR, etc.); darunavir is only mentioned as a protease inhibitor comparator, with no PK parameters for darunavir reported. |
+| popPK | Daskapan_2019 | relevant | 10 | 0 | The study develops a population pharmacokinetic model for darunavir, but the specific numeric parameter values (Table 2) and submodel details are cited as being in the text/tables/supplements which are not included in the provided evidence. |
+| PGx | Daskapan_2019 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic model for darunavir based on demographic and physiological covariates, but does not investigate or report the effect of gene variants or genotypes. |
+| popPK | De_2020 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral activity study of darunavir against SARS-CoV-2, reporting EC50 and CC50 values, not pharmacokinetic disposition parameters like clearance or volume. |
+| PGx | De_2020 | not_relevant | 0 | 0 | The paper evaluates the antiviral efficacy of darunavir against SARS-CoV-2 and does not investigate pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | García_2008 | irrelevant | 0 | 0 | The paper focuses on resistance mutations and virological response, not pharmacokinetic parameters. |
+| PGx | García_2008 | not_relevant | 1 | 5 | The paper discusses antiviral resistance (changes in viral susceptibility/EC50) and virological response, not pharmacokinetic parameters or standard pharmacodynamic parameters governed by patient host pharmacogenomics. |
+| popPK | Hijazi_2020 | irrelevant | 2 | 0 | The study investigates drug transporter modulation and tissue concentrations in a non-human primate model rather than reporting population pharmacokinetic parameters (CL, V, ka) for darunavir. |
+| PGx | Hijazi_2020 | not_relevant | 0 | 0 | The study investigates transporter modulation by the drug itself (autoinduction/inhibition) rather than the effect of a specific genetic variant on pharmacokinetics or pharmacodynamics. |
+| popPK | Li_2022 | irrelevant | 0 | 0 | This is a review of HIV reverse transcriptase inhibitors (NRTIs/NNRTIs) and does not report quantitative pharmacokinetic parameters for darunavir (a protease inhibitor). |
+| PGx | Li_2022 | not_relevant | 0 | 0 | The paper is a review of HIV reverse transcriptase inhibitors and does not contain any pharmacogenomic data or analysis regarding darunavir. |
 | popPK | Ma_2022 | irrelevant | 0 | 0 | In-vitro antiviral screening study of darunavir derivatives against SARS-CoV-2 3CLpro; no PK parameters (CL, V, ka, half-life, population-PK model) for darunavir are reported. |
-| popPK | Midde_2017 | irrelevant | 4 | 3 | In vitro microsomal/monocyte study with intrinsic clearance mentioned but no numeric PK parameter values present in the evidence. |
-| popPK | Moltó_2018 | relevant | 6 | 3 | Human PK study of darunavir with NCA parameters (AUC, Cmax, C24) reported as percent changes in the abstract, but full numeric values likely in tables not provided. |
-| popPK | Zhang_2024 | irrelevant | 3 | 2 | Darunavir is only a co-administered perpetrator; the PK model and reported parameters concern GSK3640254, with no darunavir disposition values given. |
+| popPK | Midde_2017 | irrelevant | 4 | 2 | The study focuses on in vitro/in silico mechanisms and reports relative changes (decreased/increased) rather than absolute quantitative PK parameter values for darunavir. |
+| PGx | Midde_2017 | not_relevant | 1 | 5 | The paper investigates the effect of ethanol (a drug/drug interaction) rather than genetic variants on darunavir PK/PD parameters. |
+| popPK | Moltó_2018 | relevant | 5 | 2 | The study reports NCA parameters (AUC, Cmax, Ctrough) for darunavir in humans, but lacks the specific disposition parameters (CL, V, ka, t1/2) required for high-scoring population PK extraction, and the evidence text only provides percentage changes rather than raw numeric values. |
+| PGx | Moltó_2018 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions with etravirine, not pharmacogenomic effects of genetic variants on darunavir pharmacokinetics. |
+| popPK | Zhang_2024 | irrelevant | 1 | 0 | Darunavir is a co-administered comparator in a drug-drug interaction study for GSK3640254, and the text states GSK3640254 had no meaningful effect on DRV/RTV concentrations without providing specific quantitative PK parameters for darunavir. |
+| PGx | Zhang_2024 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (GSK3640254 vs DRV/RTV/ETR) in healthy adults and contains no data on pharmacogenomic variants, genotypes, or phenotypes. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdarunavir%5D&body=Drug%3A%20darunavir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_darunavir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 15:42 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 11:13 UTC</sub>

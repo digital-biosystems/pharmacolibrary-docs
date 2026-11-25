@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:25 | 0:36 | 0/0/0 | 0/0/0 | 0/0/0 | 8,539/252 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 20:50 | 0:11 | 0/0/0 | 0/0/0 | 0/0/0 | 4,576/170 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -47,16 +47,20 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Jamil_1990.pdf` | Jamil H et al., Head-group specificity for feedback reg…, The Biochemical journal (1990) | pd | 4 | [10.1042/bj2700749](https://doi.org/10.1042/bj2700749) | [2173550](https://www.ncbi.nlm.nih.gov/pubmed/2173550) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 00:25 UTC</sub>
+<sub>queue written 2026-11-23 20:50 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Blusztajn_1985 | irrelevant | 0 | 0 | Enzyme kinetics of phosphatidylethanolamine N-methyltransferase in rat brain; no deanol pharmacokinetic disposition parameters. |
-| popPK | Flood_1983 | irrelevant | 0 | 0 | Behavioral pharmacology study in mice with no PK parameters for deanol reported. |
+| popPK | Blusztajn_1985 | irrelevant | 0 | 0 | The paper investigates enzymatic activity (PeMT) in rat brain and does not contain pharmacokinetic data for deanol. |
+| PGx | Blusztajn_1985 | not_relevant | 0 | 0 | The paper discusses the developmental changes of a metabolic enzyme (PeMT) in rat brain and does not mention the drug deanol or any pharmacogenomic effects on its pharmacokinetics or pharmacodynamics. |
+| popPK | Flood_1983 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in mice measuring memory retention, not a pharmacokinetic study, and contains no disposition parameters. |
+| PGx | Flood_1983 | not_relevant | 0 | 0 | The paper reports a pharmacodynamic interaction between drugs in a mouse model, but does not investigate any gene variant or genotype (pharmacogenomics). |
 | popPK | Jamil_1990 | irrelevant | 0 | 0 | no_text gate: only 89 chars of text extracted (&lt; 400) |
-| popPK | Yang_1988 | irrelevant | 0 | 0 | This is an in-vitro enzymology study of phosphatidylethanolamine methyltransferase in mammary tissue; deanol is not the subject drug and no PK parameters are reported. |
+| PGx | Jamil_1990 | not_relevant | 0 | 0 | The paper concerns the feedback regulation of a lipid biosynthesis enzyme and contains no data on the drug deanol, pharmacogenomics, or clinical PK/PD parameters. |
+| popPK | Yang_1988 | irrelevant | 0 | 0 | The paper discusses the synthesis of choline in mammary tissue via phosphatidylethanolamine methylation and does not report any pharmacokinetic parameters for the drug deanol. |
+| PGx | Yang_1988 | not_relevant | 0 | 0 | The paper describes choline synthesis in mammary tissue via PeMT and contains no information regarding deanol or its pharmacogenomic effects on PK/PD parameters. |
 
 
 </details>

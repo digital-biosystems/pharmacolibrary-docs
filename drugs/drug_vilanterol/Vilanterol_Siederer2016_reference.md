@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Vilanterol’s recorded distribution volume, 144.0 mL, was rejected because the clearance/volume magnitude was flagged as implausible from a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="Vilanterol" model-id="Vilanterol_Siederer2016_reference" status="rejected" stale="false" population="COPD patients and healthy subjects" measured-compound="vilanterol" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Siederer S, Allen A, Yang S. Population Pharmacokinetics of Inhaled Fluticasone 
 
 ### Reviewer guidance
 
-**Vilanterol’s recorded distribution volume, 144.0 mL, was rejected because the clearance/volume magnitude was flagged as implausible from a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record gives a distribution volume of 144.0 mL and an elimination rate constant of 1 h−1; the finding flags the clearance/volume magnitude as outside the physiological window. The dose-normalised AUC has no recorded value. Extracted — vilanterol: kabs 1 h−1, kel 1 h−1, k21 1 h−1, V 144 mL.
+Extracted — vilanterol: kabs 1 h−1, kel 1 h−1, k21 1 h−1, V 144 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vilanterol, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

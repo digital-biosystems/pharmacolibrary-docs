@@ -7,35 +7,32 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the metabolite compartments are orphaned, lacking metabolic clearance rates, and the record relies on abstract-only summary statistics.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Schleyer1994_reference" status="rejected" stale="false" population="patients with acute myeloid leukemia or chronic lymphocytic leukemia" measured-compound="mitoxantrone" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Schleyer1994_reference" status="rejected" stale="false" population="adults with acute myeloid leukemia and chronic lymphocytic leukemia" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Schleyer E, Kamischke A, Kaufmann CC, Unterhalt M, Hiddemann W. New aspects on the pharmacokinetics of mitoxantrone and its two major metabolites. Leukemia 8(3):435–440 (1994).
 
 ## Population and dosing
 
-**Population:** patients with acute myeloid leukemia or chronic lymphocytic leukemia · condition acute myeloid leukemia and chronic lymphocytic leukemia · n = 23.
+**Population:** adults with acute myeloid leukemia and chronic lymphocytic leukemia · age group adult.
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| Renal clearance of mitoxantrone | CLR | 69 | ml/min |
-| total plasma clearance | CL | 1136 | ml/min |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.333), qwen3.8-27b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,60 +42,43 @@ Schleyer E, Kamischke A, Kaufmann CC, Unterhalt M, Hiddemann W. New aspects on t
 
 ### Reviewer guidance
 
-**The model was rejected because the metabolite compartments are orphaned, lacking metabolic clearance rates, and the record relies on abstract-only summary statistics.**
+**The paper reports none of the model's key parameters.**
 
-The pharmacokinetic structure includes monocarboxylic acid and dicarboxylic acid compartments, but the metabolic links from mitoxantrone to these metabolites have no specified clearance values, rendering the metabolites unreachable from the dose. Additionally, the record was built solely from the paper's abstract, meaning reported summary statistics stand in for a fitted model, which compromises the validity of the parameters. The second reader also identified inconsistencies in the extracted parameters, such as the total plasma clearance and renal clearance, which were not fully captured in this record. Extracted — mitoxantrone: CLR 69 ml/min, CL 1.14e+03 ml/min.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of renal clearance of mitoxantrone: this record has 69, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading mitoxantrone → monocarboxylic acid (metabolism); mitoxantrone → dicarboxylic acid (metabolism); it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
-
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| Renal clearance of mitoxantrone | `Q26` · CLR | 69 | ml/min | 1.15e-06 | m3/s | ml/min | llm_confirmed (0.6) | Schleyer_1994:abstract |
-| total plasma clearance | `Q22` · CL | 1136 | ml/min | 1.893e-05 | m3/s | ml/min | llm_confirmed (0.6) | Schleyer_1994:abstract |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'Plasma AUC infinity for mitoxantrone'
-- covariate category for t1/2z from footnote/prose kept as documentation only (['Schleyer_1994:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=mitoxantrone
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- status held at "Needs review" — not promoted
-- row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 0 linked by role; re-tagged mitoxantrone→parent ×4
-- molar mass: no plausible PubChem entry for 'monocarboxylic acid' ('monocarboxylic acid') — left in mass units
-- molar mass: none of 1 PubChem candidate(s) is 'dicarboxylic acid' (LLM) — left in mass units
-- molar mass: none found for 'monocarboxylic acid' — its concentrations stay mass-only
-- molar mass: none found for 'dicarboxylic acid' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Schleyer_1994_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Schleyer_1994_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | primary re-run | 0.333 (3/9 fields) | 6 |
 | `qwen3.8-27b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>12 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['mitoxantrone', 'monocarboxylic acid', 'metabolism'], ['mitoxantrone', 'dicarboxylic acid', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[dose]` |  | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[infusion duration]` |  | 30 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma concentration measured by hplc during]` |  | 120 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[renal clearance of mitoxantrone median level]` |  | 69 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[total plasma clearance]` |  | 1136 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[median terminal half-life]` |  | 75 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[plasma auc infinity]` |  |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[renal clearance of mitoxantrone]` | 69 |  | only_one_extracted |
@@ -116,16 +96,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Schleyer_1994:abstract'] |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Schleyer_1994:abstract'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1136 | ['Schleyer_1994:abstract'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 68.2 L/h | ['Schleyer_1994:abstract'] |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | fail | 0 |
+| C0b_disposition_core | fail |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -149,4 +124,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitoxantrone%5D%20Mitoxantrone_Schleyer1994_reference&body=Drug%3A%20mitoxantrone%0ARecord%3A%20Mitoxantrone_Schleyer1994_reference%0APaper%3A%20Schleyer_1994%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitoxantrone/Mitoxantrone_Schleyer1994_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:31 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:00 UTC</sub>

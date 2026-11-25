@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Sisomicin total clearance was recorded as 0.24 kg.hour, which dimensionally contradicts the required volume per time unit, leading to rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit kg.hour ([mass] * [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="sisomicin" model-id="Sisomicin_Firsov1980_reference" status="rejected" stale="false" population="Wistar rats" measured-compound="sisomicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Firsov AA, Koroleva VG, Goncharskaia TIa, Umnova LV, Fomina IP. [Pharmacokinetic
 
 ### Reviewer guidance
 
-**Sisomicin total clearance was recorded as 0.24 kg.hour, which dimensionally contradicts the required volume per time unit, leading to rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit kg.hour ([mass] * [time]) vs [length] ** 3 / [time].**
 
-The record lists the total clearance for sisomicin with a value of 0.24 and a unit of kg.hour. The unit dimension [mass] * [time] conflicts with the structural requirement for clearance of [length] ** 3 / [time]. Additionally, the record was built from the abstract alone, so the reported summary statistics stand in for a fitted model. Extracted — sisomicin: CL 0.24 kg.hour.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sisomicin: CL 0.24 kg.hour.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sisomicin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

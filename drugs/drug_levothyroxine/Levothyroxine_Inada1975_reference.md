@@ -43,7 +43,7 @@ Inada M, Kasagi K, Kurata S, Kazama Y, Takayama H, Torizuka K et al. Estimation 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.083). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,6 +56,8 @@ Inada M, Kasagi K, Kurata S, Kazama Y, Takayama H, Torizuka K et al. Estimation 
 **This paper's disposition core is incomplete; v3 and Q have no unit.**
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Latif_2015) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Extracted — levothyroxine: V3 21, Q 60; thyroxine and triiodothyronine: CL 24.1 mL/min/kg, V 47 liter.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has thyroxine, the second reading levothyroxine; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -109,6 +111,37 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 - transposed table Inada_1975_table_3: logical view retains original source coordinates
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.083 (1/12 fields) | 11 |
+
+<details><summary>11 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['thyroxine', 'triiodothyronine', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[d. k.]` |  | 16 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[i. n.]` | 25 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k. t.]` |  | 3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[m. e.]` |  | 28 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[m. k.]` | 60 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[plasma clearance]` | 24.13 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v*]` | 47.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[y. o.]` | 21 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | thyroxine | levothyroxine | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | thyroxine and triiodothyronine | levothyroxine | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

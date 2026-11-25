@@ -22,16 +22,10 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chudasama_2015_BclxL](drugs/drug_bortezomib/pd_Chudasama_2015_BclxL.md) | BclxL ← bortezomib · model not identified | — | Chudasama VL et al., Logic-Based and Cellular Pharmacodynami…, The Journal of pharmacology… (2015) | [10.1124/jpet.115.224766](https://doi.org/10.1124/jpet.115.224766) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chudasama_2015_cell_proliferation](drugs/drug_bortezomib/pd_Chudasama_2015_cell_proliferation.md) | cell proliferation ← bortezomib · inhibition effect | — | Chudasama VL et al., Logic-Based and Cellular Pharmacodynami…, The Journal of pharmacology… (2015) | [10.1124/jpet.115.224766](https://doi.org/10.1124/jpet.115.224766) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chudasama_2015_cleaved_PARP](drugs/drug_bortezomib/pd_Chudasama_2015_cleaved_PARP.md) | cleaved poly (ADP ribose) polymerase ← bortezomib · model not identified | — | Chudasama VL et al., Logic-Based and Cellular Pharmacodynami…, The Journal of pharmacology… (2015) | [10.1124/jpet.115.224766](https://doi.org/10.1124/jpet.115.224766) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Chudasama_2015_phospho_NF_B](drugs/drug_bortezomib/pd_Chudasama_2015_phospho_NF_B.md) | phospho-NFκB ← bortezomib · model not identified | — | Chudasama VL et al., Logic-Based and Cellular Pharmacodynami…, The Journal of pharmacology… (2015) | [10.1124/jpet.115.224766](https://doi.org/10.1124/jpet.115.224766) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Parasrampuria_2020_clinical_response](drugs/drug_bortezomib/pd_Parasrampuria_2020_clinical_response.md) | clinical response ← bortezomib · categorical (graded) response model | — | Parasrampuria DA et al., Comparison of efficacy from two differe…, British journal of haematol… (2020) | [10.1111/bjh.16446](https://doi.org/10.1111/bjh.16446) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">in vitro</span> | [Chudasama_2015_cell_proliferation_profiles](drugs/drug_bortezomib/pd_Chudasama_2015_cell_proliferation_profiles.md) | cell proliferation profiles ← bortezomib · inhibition effect | — | Chudasama VL et al., Logic-Based and Cellular Pharmacodynami…, The Journal of pharmacology… (2015) | [10.1124/jpet.115.224766](https://doi.org/10.1124/jpet.115.224766) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Janssen_2020_20S_proteasome_activity](drugs/drug_bortezomib/pd_Janssen_2020_20S_proteasome_activity.md) | 20S proteasome activity ← bortezomib · direct sigmoid Emax (Hill) effect | — | Janssen JM et al., A Semi-Mechanistic Population Pharmacok…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00803-y](https://doi.org/10.1007/s40262-019-00803-y) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Ngara_2025_CFU](drugs/drug_bortezomib/pd_Ngara_2025_CFU.md) | colony-forming units ← BTZ-043 · direct Emax (saturable) effect | — | Ngara B et al., Translational Modeling of BTZ-043 to Pr…, The Journal of infectious d… (2025) | [10.1093/infdis/jiaf088](https://doi.org/10.1093/infdis/jiaf088) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Yago_2023_P](drugs/drug_bortezomib/pd_Yago_2023_P.md) | proteasome activity in whole blood ← bortezomib · target-mediated drug disposition | — | Yago MR et al., Mechanistic Pharmacokinetic/Pharmacodyn…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01242-6](https://doi.org/10.1007/s40262-023-01242-6) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Zhang_2020_M_protein](drugs/drug_bortezomib/pd_Zhang_2020_M_protein.md) | M-protein concentrations ← bortezomib · model not identified | — | Zhang L et al., Population-based meta-analysis of borte…, Journal of pharmacokinetics… (2020) | [10.1007/s10928-019-09670-3](https://doi.org/10.1007/s10928-019-09670-3) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Zhang_2020_platelet_counts](drugs/drug_bortezomib/pd_Zhang_2020_platelet_counts.md) | platelet counts ← bortezomib · model not identified | — | Zhang L et al., Population-based meta-analysis of borte…, Journal of pharmacokinetics… (2020) | [10.1007/s10928-019-09670-3](https://doi.org/10.1007/s10928-019-09670-3) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Zhang_2020_proteasome_activity](drugs/drug_bortezomib/pd_Zhang_2020_proteasome_activity.md) | proteasome activity ← bortezomib · model not identified | — | Zhang L et al., Population-based meta-analysis of borte…, Journal of pharmacokinetics… (2020) | [10.1007/s10928-019-09670-3](https://doi.org/10.1007/s10928-019-09670-3) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,7 +39,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:10 | 2:41 | 0/0/0 | 5/5/0 | 0/0/0 | 143,590/11,715 | openai / gpt-6-luna | 8 | 1/7 | 8/0 | 0 |
+| 2026-11-23 19:15 | 0:04 | 0/0/0 | 0/4/0 | 0/0/0 | 4,047/161 | einfracz / qwen3.8-27b | 8 | 1/7 | 8/0 | 0 |
 
 ## Coverage
 
@@ -60,29 +54,37 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Janssen_2020.pdf` | Janssen JM et al., A Semi-Mechanistic Population Pharmacok…, Clinical pharmacokinetics (2020) | popPK | 10 | [10.1007/s40262-019-00803-y](https://doi.org/10.1007/s40262-019-00803-y) | [31313068](https://pubmed.ncbi.nlm.nih.gov/31313068) | A pediatric bortezomib population PK model is reported, but numeric disposition parameter values are absent. |
+| `Zhang_2020.pdf` | Zhang L et al., Population-based meta-analysis of borte…, Journal of pharmacokinetics… (2020) | popPK | 5 | [10.1007/s10928-019-09670-3](https://doi.org/10.1007/s10928-019-09670-3) | [31939004](https://pubmed.ncbi.nlm.nih.gov/31939004) | The paper focuses on pharmacodynamic modeling and mentions PK profiles, but no quantitative pharmacokinetic parameter values (CL, V, etc.) are provided in the evidence text. |
 
-<sub>queue written 2026-10-07 21:08 UTC</sub>
+<sub>queue written 2026-11-23 19:15 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chudasama_2015 | irrelevant | 0 | 0 | This is an in-vitro pharmacodynamic model and reports no quantitative bortezomib disposition parameters. |
+| popPK | Chudasama_2015 | irrelevant | 0 | 0 | The paper focuses on in vitro pharmacodynamic modeling (IC50, signal transduction) and does not report pharmacokinetic disposition parameters. |
+| PGx | Chudasama_2015 | not_relevant | 0 | 0 | The paper describes a cellular pharmacodynamic model in a single cell line (U266) and does not investigate the impact of specific gene variants or genotypes on bortezomib parameters. |
 | popPK | Fu_2025 | irrelevant | 0 | 0 | This is a human quality-of-life analysis and reports no bortezomib pharmacokinetic parameters. |
 | popPK | Janssen_2020 | relevant | 10 | 1 | A pediatric bortezomib population PK model is reported, but numeric disposition parameter values are absent. |
 | popPK | Koele_2025 | irrelevant | 0 | 0 | The study reports quantitative population pharmacokinetics for BTZ-043, not bortezomib. |
-| popPK | Luo_2022 | irrelevant | 0 | 0 | The population-PK model and reported numeric parameters are for daratumumab, not bortezomib. |
-| popPK | Ngara_2025 | irrelevant | 0 | 0 | The study models BTZ-043, not bortezomib; its parameter table is not fully provided here. |
+| popPK | Luo_2022 | irrelevant | 0 | 0 | The study models the pharmacokinetics of daratumumab, with bortezomib serving only as a concomitant therapy in the regimen. |
+| PGx | Luo_2022 | not_relevant | 0 | 0 | The study focuses on the pharmacokinetics of daratumumab in a combination regimen with bortezomib, but does not report pharmacogenomic effects on bortezomib's pharmacokinetics or pharmacodynamics. |
+| popPK | Ngara_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of BTZ-043 and its interactions with other tuberculosis drugs in mice, not the drug bortezomib. |
+| PGx | Ngara_2025 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetic and pharmacodynamic effects of the drug BTZ-043 on companion drugs in murine models and does not report any gene variants, genotypes, or phenotypes affecting PK/PD. |
 | popPK | Papathanasiou_2025 | irrelevant | 0 | 0 | The population-PK model and reported values are for belantamab mafodotin and its payload, with bortezomib only co-administered. |
 | popPK | Papathanasiou_2026 | irrelevant | 0 | 0 | The analysis reports belantamab mafodotin exposure-response, not bortezomib disposition parameters. |
-| popPK | Parasrampuria_2020 | irrelevant | 1 | 0 | This is a clinical exposure-response analysis, with no quantitative bortezomib disposition parameters reported. |
-| popPK | Passey_2017 | irrelevant | 0 | 0 | The population-PK model concerns elotuzumab; bortezomib is only co-administered, with no bortezomib parameters reported. |
-| popPK | Passey_2018 | irrelevant | 0 | 0 | This review concerns elotuzumab; bortezomib is only mentioned as a combination-treatment agent, with no bortezomib disposition values. |
-| popPK | Tan_2019 | irrelevant | 2 | 0 | This is a clinical review and the provided evidence contains no numeric disposition parameter values. |
+| popPK | Parasrampuria_2020 | irrelevant | 1 | 0 | This is an exposure-response (efficacy) analysis that reports cumulative doses and hazard ratios, but does not report quantitative pharmacokinetic disposition parameters (CL, V, ka, etc.) or a compartmental PK model for bortezomib. |
+| PGx | Parasrampuria_2020 | not_relevant | 0 | 0 | The paper describes an exposure-response analysis comparing dosing regimens but does not investigate the impact of any specific genetic variant or genotype on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Passey_2017 | irrelevant | 0 | 0 | The study focuses on the immunogenicity and pharmacokinetics of elotuzumab, with bortezomib only used as a co-administered comparator drug in the treatment regimens. |
+| PGx | Passey_2017 | not_relevant | 0 | 0 | The paper focuses on the immunogenicity of elotuzumab (an anti-SLAMF7 antibody) and its effects on elotuzumab PK, not on the pharmacogenomics of bortezomib. |
+| popPK | Passey_2018 | irrelevant | 0 | 0 | The paper is a review of the pharmacology of elotuzumab, not bortezomib, and contains no quantitative pharmacokinetic parameters for bortezomib. |
+| PGx | Passey_2018 | not_relevant | 0 | 0 | The paper discusses the pharmacology of elotuzumab and reports no pharmacogenomic effects on the PK/PD parameters of bortezomib. |
+| popPK | Tan_2019 | irrelevant | 0 | 0 | The paper is a review of clinical pharmacokinetics that lacks specific numeric quantitative disposition parameters (CL, V, ka, etc.) in the provided evidence. |
+| PGx | Tan_2019 | not_relevant | 0 | 0 | The text discusses clinical pharmacokinetics and hepatic function but does not report any pharmacogenomic effects (gene variants or genotypes) on bortezomib's PK or PD parameters. |
 | popPK | Xu_2018 | irrelevant | 0 | 0 | The PK model and numeric disposition values are for daratumumab; bortezomib is only a combination partner. |
 | popPK | Yago_2023 | irrelevant | 2 | 1 | Bortezomib is a comparator, and its PK parameters are referenced from published sources but not provided as readable numeric values here. |
-| popPK | Zhang_2020 | irrelevant | 2 | 0 | This is a pharmacodynamic meta-analysis using published PK profiles, with no numeric bortezomib disposition parameters provided. |
+| popPK | Zhang_2020 | irrelevant | 5 | 0 | The paper focuses on pharmacodynamic modeling and mentions PK profiles, but no quantitative pharmacokinetic parameter values (CL, V, etc.) are provided in the evidence text. |
+| PGx | Zhang_2020 | not_relevant | 0 | 0 | The study focuses on population-based pharmacodynamic modeling of bortezomib exposure and toxicity but does not report any association with gene variants, genotypes, or pharmacogenomic phenotypes. |
 
 
 </details>

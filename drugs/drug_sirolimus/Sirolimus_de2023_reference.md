@@ -1,13 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;sirolimus&quot;,&quot;href&quot;:&quot;drugs/drug_sirolimus/&quot;},{&quot;label&quot;:&quot;de_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sirolimus_de2023_reference&quot;,&quot;label&quot;:&quot;de_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirolimus/Sirolimus_de2023_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sirolimus_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirolimus/Sirolimus_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sirolimus_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sirolimus/Sirolimus_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sirolimus — `Sirolimus_de2023_reference`
 
-> ## <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-<div class="pk-model-meta" hidden drug="sirolimus" model-id="Sirolimus_de2023_reference" status="curated_candidate" stale="false" population="healthy adult horses" measured-compound="sirolimus" parameterization="mechanistic" topology="1C"></div>
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit L/min ([length] ** 3 / [time]) vs 1 / [time]; Q301 unit L/min ([length] ** 3 / [time]) vs 1 / [time]; Q302 unit L/min ([length] ** 3 / [time]) vs 1 / [time].
+
+<div class="pk-model-meta" hidden drug="sirolimus" model-id="Sirolimus_de2023_reference" status="rejected" stale="false" population="healthy adult horses" measured-compound="sirolimus" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 de Tonnerre DJ, Medina Torres CE, Stefanovski D, Robinson MA, Kemp KL, Bertin FR et al. Effect of sirolimus on insulin dynamics in horses. Journal of veterinary internal medicine 37(2):703–712 (2023).
@@ -15,30 +17,37 @@ de Tonnerre DJ, Medina Torres CE, Stefanovski D, Robinson MA, Kemp KL, Bertin FR
 
 ## Population and dosing
 
-**Population:** healthy adult horses · condition healthy · age group adult · n = 8.
+**Population:** healthy adult horses · condition healthy · age group adult.
 
-**Dosing:** 4.2 mg, iv and enteral (nasogastric tube), single.
+**Dosing:** 4.2 mg, iv, single.
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 ## Model
 
-**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_sirolimus/Sirolimus_de2023_reference/Sirolimus_de2023_reference.svg" alt="Sirolimus_de2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Parameters:** 9 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+
 | label | parameter | value | unit |
 |---|---|---|---|
-| Volume of distribution | V | 371.2 | mL/kg |
-| clearance | CL | 0.36 | mL/kg/min |
+| Cmax (ng/mL) | Cmax | 277.0 | ng/mL |
+| TCmax (min) | tmax | 5 | min |
+| Vd (mL/kg) | V | 371.2 | mL/kg |
+| CL (mL/kg/min) | CL | 0.36 | mL/kg/min |
+| k10 (L/min) | kel | 0.0010 | L/min |
+| k12 (L/min) | k12 | 0.0036 | L/min |
+| k21 (L/min) | k21 | 0.0011 | L/min |
+| T1/2 (min) | t1/2z | 677.1 | min |
+| F | Fab | 0.0954 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--green">Reproduces paper</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,18 +57,27 @@ de Tonnerre DJ, Medina Torres CE, Stefanovski D, Robinson MA, Kemp KL, Bertin FR
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit L/min ([length] ** 3 / [time]) vs 1 / [time]; Q301 unit L/min ([length] ** 3 / [time]) vs 1 / [time]; Q302 unit L/min ([length] ** 3 / [time]) vs 1 / [time].**
+
+A reported unit could not be converted (kel, k12 and k21), so that value has no SI equivalent. Extracted — sirolimus: Cmax 277 ng/mL, tmax 5 min, V 371 mL/kg, CL 0.36 mL/kg/min, kel 0.001 L/min, k12 0.0036 L/min, k21 0.0011 L/min, t1/2z 677 min, … (+1).
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of parameters: this record has none, the second reading none. That field does not shape the model.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Volume of distribution | `Q61` · V | 371.2 | mL/kg | 0.02598 | m3 | L | exact (1) | de_2023:other_prose |
-| clearance | `Q22` · CL | 0.36 | mL/kg/min | 4.2e-07 | m3/s | L/h | exact (1) | de_2023:other_prose |
+| Cmax (ng/mL) | `Q32` · Cmax | 277.0 | ng/mL | 0.000277 | kg/m3 | ng/ml | exact (1) | de_2023_table_1:row0:col1 |
+| TCmax (min) | `Q56` · tmax | 5 | min | 300 | s | min | llm_corrected (0.6) | de_2023_table_1:row1:col1 |
+| Vd (mL/kg) | `Q61` · V | 371.2 | mL/kg | 0.02598 | m3 | ml/kg | exact (1) | de_2023_table_1:row2:col1 |
+| CL (mL/kg/min) | `Q22` · CL | 0.36 | mL/kg/min | 4.2e-07 | m3/s | ml/(min·kg) | exact (1) | de_2023_table_1:row3:col1 |
+| k10 (L/min) | `Q47` · kel | 0.0010 | L/min |  |  | l/min | exact (1) | de_2023_table_1:row4:col1 |
+| k12 (L/min) | `Q301` · k12 | 0.0036 | L/min |  |  | l/min | exact (1) | de_2023_table_1:row5:col1 |
+| k21 (L/min) | `Q302` · k21 | 0.0011 | L/min |  |  | l/min | exact (1) | de_2023_table_1:row6:col1 |
+| T1/2 (min) | `Q57` · t1/2z | 677.1 | min | 4.063e+04 | s | min | half_life_rule (0.95) | de_2023_table_1:row7:col1 |
+| F | `Q40` · Fab | 0.0954 |  |  |  |  | exact (1) | de_2023_table_1:row9:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -69,25 +87,26 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Parameters' — extend the ontology if this is a real PK parameter (source ['jvim16650-tbl-0001:row0:col1'])
-- salvaged Q61 ('Volume of distribution'=371.2) from results prose — parameter table was unreadable
-- salvaged Q22 ('clearance'=0.36) from results prose — parameter table was unreadable
+- unit_dimension_mismatch: 'k10 (L/min)' → Q47 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
+- unit_dimension_mismatch: 'k12 (L/min)' → Q301 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
+- unit_dimension_mismatch: 'k21 (L/min)' → Q302 (unit '[length] ** 3 / [time]' vs ontology '1 / [time]') — route to review
+- dropped duplicate Q57 ('Terminal half-life (min)', value '3552') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sirolimus
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (14/14 fields) | none |
 | `qwen3.8-27b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
@@ -106,29 +125,23 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | ratio | tol | source |
-|---|---|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |  |  |
-| C0b_disposition_core | pass |  |  |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |  |  |
-| C1_half_life_beta | pass | 768.6 | 714.7 | 0.9299 | 0.25 | reported t½β |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.36 |  |  | ['de_2023:other_prose'] |
-| C8_topology | pass |  |  |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.51 L/h |  |  | ['de_2023:other_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 26 L |  |  | ['de_2023:other_prose'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable |  | pass | C_central (measured=sirolimus) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
-| T1_t_half_beta | reference | pass | 12.81 | 11.91 | 0.9297 | min→SI vs simulated h |
+| check | status | expected | obtained | source |
+|---|---|---|---|---|
+| C0_has_structural_params | pass |  | 9 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['de_2023_table_1:row3:col1'] |
+| C5_dimension_Q301 | fail | 1 / [time] | L/min ([length] ** 3 / [time]) | ['de_2023_table_1:row5:col1'] |
+| C5_dimension_Q302 | fail | 1 / [time] | L/min ([length] ** 3 / [time]) | ['de_2023_table_1:row6:col1'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['de_2023_table_1:row0:col1'] |
+| C5_dimension_Q47 | fail | 1 / [time] | L/min ([length] ** 3 / [time]) | ['de_2023_table_1:row4:col1'] |
+| C5_dimension_Q56 | pass | [time] |  | ['de_2023_table_1:row1:col1'] |
+| C5_dimension_Q57 | pass | [time] |  | ['de_2023_table_1:row7:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['de_2023_table_1:row2:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.36 | ['de_2023_table_1:row3:col1'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.51 L/h | ['de_2023_table_1:row3:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 26 L | ['de_2023_table_1:row2:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -140,70 +153,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sirolimus/Sirolimus_de2023_reference/Sirolimus_de2023_reference_modelica.zip" download>Sirolimus_de2023_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sirolimus/Sirolimus_de2023_reference/Sirolimus_de2023_reference_fmi.zip" download>Sirolimus_de2023_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sirolimus/Sirolimus_de2023_reference/Sirolimus_de2023_reference_matlab.zip" download>Sirolimus_de2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sirolimus/Sirolimus_de2023_reference/Sirolimus_de2023_reference_matlab_simbio.zip" download>Sirolimus_de2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sirolimus/Sirolimus_de2023_reference/Sirolimus_de2023_reference_sbml.zip" download>Sirolimus_de2023_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sirolimus/Sirolimus_de2023_reference/Sirolimus_de2023_reference_cellml.zip" download>Sirolimus_de2023_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.9142 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 4.2e-06 | kg |
-| input | model | `Cl` | 4.2e-07 | m3/s |
-| input | model | `VdPerKg` | 0.0003712 | m3/kg |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): de Tonnerre DJ, Medina Torres CE, Stefanovski D, Robinson MA, Kemp KL, Bertin FR et al. Effect of sirolimus on insulin dynamics in horses. Journal of veterinary internal medicine 37(2):703–712 (2023). [doi:10.1111/jvim.16650](https://doi.org/10.1111/jvim.16650)
-
-**This record:** Pharmacolibrary, model `Sirolimus_de2023_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_sirolimus/Sirolimus_de2023_reference>
-
-```bibtex
-@misc{pharmacolibrary_Sirolimusde2023reference,
-  title  = {{Pharmacolibrary model Sirolimus_de2023_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_sirolimus/Sirolimus_de2023_reference},
-  note   = {Parameters from doi:10.1111/jvim.16650},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 4.2 mg infusion over 10 min, single dose. Dose in the paper: 4.2 mg.
-
-<dbs-fmusim paramsurl="drugs/drug_sirolimus/Sirolimus_de2023_reference/Sirolimus_de2023_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_sirolimus/Sirolimus_de2023_reference/Sirolimus_de2023_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Sirolimus_de2023_reference_params.json` · controls `Sirolimus_de2023_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsirolimus%5D%20Sirolimus_de2023_reference&body=Drug%3A%20sirolimus%0ARecord%3A%20Sirolimus_de2023_reference%0APaper%3A%20de_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sirolimus/Sirolimus_de2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 06:57 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:01 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper does not study telithromycin, leaving bioavailability and lag time without extracted values.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="telithromycin" model-id="Telithromycin_Barsam2017_reference" status="rejected" stale="false" population="" measured-compound="telithromycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Barsam SJ, Patel JP, Roberts LN, Kavarthapu V, Patel RK, Green B et al. The impa
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper does not study telithromycin, leaving bioavailability and lag time without extracted values.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The paper subject is identified as another drug, failing the analyte identity check for telithromycin. Consequently, no explicit estimates for bioavailability or absorption lag time were extracted from the source. As a result, these parameters were assigned standard library placeholder values instead of paper-specific data. Extracted — telithromycin: CL 8.59 L/h, V 104 L, kabs 1.32 /h.
+Extracted — telithromycin: CL 8.59 L/h, V 104 L, kabs 1.32 /h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -121,7 +121,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

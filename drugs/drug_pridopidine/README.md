@@ -23,7 +23,6 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Grachev_2021_S1R_RO](drugs/drug_pridopidine/pd_Grachev_2021_S1R_RO.md) | Sigma-1 receptor occupancy ← pridopidine · direct sigmoid Emax (Hill) effect | — | Grachev ID et al., Sigma-1 and dopamine D2/D3 receptor occ…, European journal of nuclear… (2021) | [10.1007/s00259-020-05030-3](https://doi.org/10.1007/s00259-020-05030-3) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 0.50).">in vitro</span> | [Eddings_2019_neuronal_protection_against_mutant_Huntingtin_toxicity](drugs/drug_pridopidine/pd_Eddings_2019_neuronal_protection_against_mutant_Huntingtin_t.md) | neuronal protection against mutant Huntingtin toxicity ← pridopidine · stimulation effect | — | Eddings CR et al., Pridopidine protects neurons from mutan…, Neurobiology of disease (2019) | [10.1016/j.nbd.2019.05.009](https://doi.org/10.1016/j.nbd.2019.05.009) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:19 | 0:23 | 0/0/0 | 1/1/0 | 0/0/0 | 36,435/1,810 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-24 03:48 | 0:03 | 0/0/0 | 1/0/0 | 0/0/0 | 4,293/147 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -50,12 +49,16 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Audouard_2025 | irrelevant | 0 | 0 | This is an enzyme replacement/gene therapy study for metachromatic leukodystrophy with no pridopidine PK data or parameters. |
-| popPK | Eddings_2019 | irrelevant | 0 | 0 | In-vitro mechanistic neuroprotection study with no PK parameters for pridopidine. |
+| popPK | Audouard_2025 | irrelevant | 0 | 0 | The paper focuses on cell-based enzyme replacement therapy for metachromatic leukodystrophy in mice and does not mention pridopidine or its pharmacokinetics. |
+| PGx | Audouard_2025 | not_relevant | 0 | 0 | The paper discusses encapsulated cell therapy for metachromatic leukodystrophy and does not mention pridopidine or any pharmacogenomic effects on its pharmacokinetics or pharmacodynamics. |
+| popPK | Eddings_2019 | irrelevant | 0 | 0 | This is a mechanistic in-vitro study focusing on neuroprotection and receptor binding, reporting no pharmacokinetic parameters. |
+| PGx | Eddings_2019 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of pridopidine (sigma-1 receptor) for neuroprotection in Huntington's disease models, but does not report pharmacogenomic effects on PK or PD parameters. |
 | popPK | Gershoni_2025 | irrelevant | 0 | 0 | This is a review of pridopidine's S1R-mediated mechanism of action with no PK parameters (CL, V, ka, half-life, or PK model) reported. |
 | popPK | Grachev_2021 | irrelevant | 3 | 3 | PET receptor-occupancy study with only NCA PK descriptors (Cmax, AUC, tmax) mentioned; detailed PK values live in Supplementary Table S1 not provided, and no CL/V/compartmental model for pridopidine is reported. |
-| popPK | Maurice_2021 | irrelevant | 0 | 0 | This is a review of sigma-1 receptor ligands with no quantitative PK parameters for pridopidine reported. |
-| popPK | Waters_2014 | irrelevant | 0 | 0 | Pharmacodynamic drug-interaction study in rats with no PK disposition parameters for pridopidine reported. |
+| popPK | Maurice_2021 | irrelevant | 0 | 0 | The paper is a review of sigma-1 receptor ligands and pridopidine's mechanism of action, containing no original quantitative pharmacokinetic parameter values. |
+| PGx | Maurice_2021 | not_relevant | 0 | 0 | The paper is a review discussing the bi-phasic dose-response of sigma-1 receptor ligands like pridopidine and does not report any pharmacogenomic effects or genetic variants. |
+| popPK | Waters_2014 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of behavioral and neurochemical effects (locomotor activity, dopamine levels, gene expression) and contains no quantitative pharmacokinetic parameters. |
+| PGx | Waters_2014 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions in rats and does not report any pharmacogenomic effects on PK or PD parameters. |
 
 
 </details>

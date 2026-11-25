@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the CYP2D6 poor metabolizer covariate effect value of -6.3 renders the paliperidone clearance implausibly negative.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="paliperidone" model-id="Paliperidone_Vandenberghe2015_reference" status="rejected" stale="false" population="psychiatric patients treated with risperidone" measured-compound="9-hydroxyrisperidone (paliperidone)" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -56,13 +56,13 @@ Vandenberghe F, Guidi M, Choong E, von Gunten A, Conus P, Csajka C et al. Geneti
 
 ### Reviewer guidance
 
-**The record was rejected because the CYP2D6 poor metabolizer covariate effect value of -6.3 renders the paliperidone clearance implausibly negative.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The CYP2D6 poor metabolizer covariate effect for the metabolite is recorded as -6.3, which is an implausibly large negative shift for a log-scaled parameter. This deviation triggers a failure for negative clearance in a covariate scenario, indicating the base value or shift is wrong. A second reader disagreed that the primary analyte was paliperidone rather than risperidone, but the negative covariate effect remains the cause for rejection. Extracted — 9-hydroxyrisperidone (paliperidone): CLm/F -0.54 l/h, kfm 64 h -1; paliperidone: CLm/F 4.8 l/h, Vm/F 270 l, kabs 3.11 h -1.
+Extracted — 9-hydroxyrisperidone (paliperidone): CLm/F -0.54 l/h, kfm 64 h -1; paliperidone: CLm/F 4.8 l/h, Vm/F 270 l, kabs 3.11 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 9-hydroxyrisperidone (paliperidone), the second reading risperidone; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

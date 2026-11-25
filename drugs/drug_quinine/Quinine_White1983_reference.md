@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;quinine&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/&quot;},{&quot;label&quot;:&quot;White_1983 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Alvan_2017_hearing_threshold_shift_2&quot;,&quot;label&quot;:&quot;Alvan_2017 \u00b7 hearing threshold shift&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Alvan_2017_hearing_threshold_shift_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Garrido_2003_CL_M10&quot;,&quot;label&quot;:&quot;Garrido_2003 \u00b7 CL(M10)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Garrido_2003_CL_M10.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_parasitemia&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 parasitemia&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_parasitemia.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pukrittayakamee_2003_E&quot;,&quot;label&quot;:&quot;Pukrittayakamee_2003 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Pukrittayakamee_2003_E.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Quinine_Hendriksen2013_reference&quot;,&quot;label&quot;:&quot;Hendriksen_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Hendriksen2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Kloprogge2014_reference&quot;,&quot;label&quot;:&quot;Kloprogge_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Kloprogge2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Dyer1994v2_diabetics&quot;,&quot;label&quot;:&quot;Dyer_1994_2_diabetics&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Dyer1994v2_diabetics.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Dyer1994v2_non_diabetics&quot;,&quot;label&quot;:&quot;Dyer_1994_2_non_diabetics&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Dyer1994v2_non_diabetics.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_Phillips1986_reference&quot;,&quot;label&quot;:&quot;Phillips_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_Phillips1986_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Quinine_White1983_reference&quot;,&quot;label&quot;:&quot;White_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/Quinine_White1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Garrido_2003_CL_M10&quot;,&quot;label&quot;:&quot;Garrido_2003 \u00b7 CL(M10)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Garrido_2003_CL_M10.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Maciel_2024_parasitemia&quot;,&quot;label&quot;:&quot;Maciel_2024 \u00b7 parasitemia&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_quinine/pd_Maciel_2024_parasitemia.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # quinine — `Quinine_White1983_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The apparent volume of the central compartment and total apparent volume of distribution are dimensionally invalid because their units are expressed per kilogram.
+> Ka, k12, k21 use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
-<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_White1983_reference" status="rejected" stale="false" population="healthy male volunteers" measured-compound="quinine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="quinine" model-id="Quinine_White1983_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="quinine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 White NJ, Chanthavanich P, Krishna S, Bunch C, Silamut K. Quinine disposition kinetics. British journal of clinical pharmacology 16(4):399–403 (1983).
@@ -17,31 +17,32 @@ White NJ, Chanthavanich P, Krishna S, Bunch C, Silamut K. Quinine disposition ki
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · condition healthy · age group adult · n = 7.
+**Population:** healthy male volunteers · condition healthy · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed quinine dihydrochloride, measured quinine.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** V/F, Vnorm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 5 extracted.  
-**Availability:** No model was generated from this record.
+**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Parameterization:** V/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 4 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_quinine/Quinine_White1983_reference/Quinine_White1983_reference.svg" alt="Quinine_White1983_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| distribution half-time (t 1/2, lambda 1) | t1/2α | 1.89 | min |
-| elimination half-time (t 1/2, z) | t1/2z | 11.1 | h |
-| apparent volume of the central compartment (V1) | V/F | 0.57 | 1 kg-1 |
-| total apparent volume of distribution | Vnorm/F | 1.8 | 1 kg-1 |
-| total clearance | CL | 1.92 | L/h |
+| distribution half-time (t 1/2, lambda 1) | t1/2z | 1.89 | min |
+| apparent volume of the central compartment (V1) | V1/F | 0.57 | l kg-1 |
+| total apparent volume of distribution | V/F | 1.8 | l kg-1 |
+| total clearance | CL | 1.92 | ml min-1 kg-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.7). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,23 +52,22 @@ White NJ, Chanthavanich P, Krishna S, Bunch C, Silamut K. Quinine disposition ki
 
 ### Reviewer guidance
 
-**The apparent volume of the central compartment and total apparent volume of distribution are dimensionally invalid because their units are expressed per kilogram.**
+**Ka, k12, k21 use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The values 0.57 kg⁻¹ and 1.8 kg⁻¹ were extracted for the central and total volumes of distribution. These units represent mass normalization rather than the required three-dimensional volume, causing a dimensional conflict. Additionally, the record relies on abstract-only summary statistics, meaning these summary values substitute for fitted model parameters. A second reader also disputed the identity of the dosed compound, identifying it as quinine instead of quinine dihydrochloride. Extracted — quinine: t1/2α 1.89 min, t1/2z 11.1 h, V/F 0.57 1 kg-1, Vnorm/F 1.8 1 kg-1, CL 1.92 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — quinine: t1/2z 1.89 min, V1/F 0.57 l kg-1, V/F 1.8 l kg-1, CL 1.92 ml min-1 kg-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has quinine dihydrochloride, the second reading quinine; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| distribution half-time (t 1/2, lambda 1) | `Q59` · t1/2α | 1.89 | min | 113.4 | s | min | llm (0.6) | White_1983:abstract |
-| elimination half-time (t 1/2, z) | `Q57` · t1/2z | 11.1 | h | 3.996e+04 | s | h | llm (0.6) | White_1983:abstract |
-| apparent volume of the central compartment (V1) | `Q76` · V/F | 0.57 | 1 kg-1 |  |  | 1/kg | exact (1) | White_1983:abstract |
-| total apparent volume of distribution | `Q353` · Vnorm/F | 1.8 | 1 kg-1 |  |  | 1/kg | llm_corrected (0.6) | White_1983:abstract |
-| total clearance | `Q22` · CL | 1.92 | L/h | 5.333e-07 | m3/s | L/h | exact (1) | White_1983:abstract |
+| distribution half-time (t 1/2, lambda 1) | `Q57` · t1/2z | 1.89 | min | 113.4 | s | min | llm (0.6) | White_1983:abstract |
+| apparent volume of the central compartment (V1) | `Q290` · V1/F | 0.57 | l kg-1 | 0.0399 | m3 | l/kg | exact (1) | White_1983:abstract |
+| total apparent volume of distribution | `Q76` · V/F | 1.8 | l kg-1 | 0.126 | m3 | l/kg | llm_confirmed (0.6) | White_1983:abstract |
+| total clearance | `Q22` · CL | 1.92 | ml min-1 kg-1 | 2.24e-06 | m3/s | ml/(min·kg) | exact (1) | White_1983:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -76,19 +76,17 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag', 'k12', 'k21']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
-- unit_dimension_mismatch: 'apparent volume of the central compartment (V1)' → Q290 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- unit_dimension_mismatch: 'total apparent volume of distribution' → Q353 (unit 'dimensionless' vs ontology '[length] ** 3') — route to review
-- unit_dimension_unknown: 'ml min-1 kg-1' (CL)
-- implicit units: 'total clearance' → L/h (from the popPK convention: 'No unit stated in text or table footnotes; total clearance in population PK is conventionally expressed in L/h, and 1.92')
+- dropped duplicate Q57 ('elimination half-time (t 1/2, z)', value 11.1) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=quinine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'apparent volume of the central compartment (V1)' is the general volume)
-- status held at "Needs review" — not promoted
+- structure disagreement: deterministic 2C vs LLM 1C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in White_1983_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
@@ -96,18 +94,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.727 (8/11 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.7 (7/10 fields) | 3 |
 
 <details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[apparent volume of the central compartment].parameter_id` | Q76 | Q290 | mismatch |
-| `gpt-oss-120b` | `parameters[total apparent volume of distribution].parameter_id` | Q353 | Q76 | mismatch |
+| `gpt-oss-120b` | `parameters[distribution half-time].parameter_id` | Q57 | Q59 | mismatch |
+| `gpt-oss-120b` | `parameters[elimination half-time]` |  | 11.1 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | quinine dihydrochloride | quinine | mismatch |
 
 </details>
@@ -122,17 +120,31 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['White_1983:abstract'] |
-| C5_dimension_Q353 | fail | [length] ** 3 | 1 kg-1 (dimensionless) | ['White_1983:abstract'] |
+| C5_dimension_Q290 | pass | [length] ** 3 |  | ['White_1983:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['White_1983:abstract'] |
-| C5_dimension_Q59 | pass | [time] |  | ['White_1983:abstract'] |
-| C5_dimension_Q76 | fail | [length] ** 3 | 1 kg-1 (dimensionless) | ['White_1983:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['White_1983:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.92 L/h | ['White_1983:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 8.06 L/h | ['White_1983:abstract'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 39.9 L | ['White_1983:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 126 L | ['White_1983:abstract'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=quinine) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.7 (7 of 10 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.7 | cross-check contradicted by a second reader: verdict disputed; agreement 0.7 (7 of 10 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -144,16 +156,72 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_quinine/Quinine_White1983_reference/Quinine_White1983_reference_modelica.zip" download>Quinine_White1983_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_quinine/Quinine_White1983_reference/Quinine_White1983_reference_fmi.zip" download>Quinine_White1983_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_quinine/Quinine_White1983_reference/Quinine_White1983_reference_matlab.zip" download>Quinine_White1983_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_quinine/Quinine_White1983_reference/Quinine_White1983_reference_matlab_simbio.zip" download>Quinine_White1983_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_quinine/Quinine_White1983_reference/Quinine_White1983_reference_sbml.zip" download>Quinine_White1983_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_quinine/Quinine_White1983_reference/Quinine_White1983_reference_cellml.zip" download>Quinine_White1983_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.3244 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 0.0015 | kg |
+| input | model | `Cl` | 2.24e-06 | m3/s |
+| input | model | `VdPerKg` | 0.00057 | m3/kg |
+| input | model | `ka` | 0.0001389 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): White NJ, Chanthavanich P, Krishna S, Bunch C, Silamut K. Quinine disposition kinetics. British journal of clinical pharmacology 16(4):399–403 (1983). [doi:10.1111/j.1365-2125.1983.tb02184.x](https://doi.org/10.1111/j.1365-2125.1983.tb02184.x)
+
+**This record:** Pharmacolibrary, model `Quinine_White1983_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_quinine/Quinine_White1983_reference>
+
+```bibtex
+@misc{pharmacolibrary_QuinineWhite1983reference,
+  title  = {{Pharmacolibrary model Quinine_White1983_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_quinine/Quinine_White1983_reference},
+  note   = {Parameters from doi:10.1111/j.1365-2125.1983.tb02184.x},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 1500 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1500 mg oral (P01BC01) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_quinine/Quinine_White1983_reference/Quinine_White1983_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_quinine/Quinine_White1983_reference/Quinine_White1983_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Quinine_White1983_reference_params.json` · controls `Quinine_White1983_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bquinine%5D%20Quinine_White1983_reference&body=Drug%3A%20quinine%0ARecord%3A%20Quinine_White1983_reference%0APaper%3A%20White_1983%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_quinine/Quinine_White1983_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 08:37 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:17 UTC</sub>

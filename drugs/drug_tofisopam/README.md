@@ -18,6 +18,12 @@ Tofisopam is a benzodiazepine derivative indicated for the treatment of anxiety.
 
 _not available_
 
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Tóth_2005_CYP3A4_enzyme_activity](drugs/drug_tofisopam/pd_T_th_2005_CYP3A4_enzyme_activity.md) | CYP3A4 enzyme activity ← tofisopam · inhibition effect | — | Tóth M et al., [Effect of tofisopam on CYP3A4 enzyme a…, Acta pharmaceutica Hungarica (2005) | — |
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -30,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 20:13 | 0:46 | 0/0/0 | 0/0/0 | 0/0/0 | 10,111/458 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-24 05:56 | 0:01 | 0/0/0 | 0/1/0 | 0/0/0 | 210/63 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
@@ -48,18 +54,24 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Drabant_2006.pdf` | Drabant S et al., Effect of tofisopam on the single-oral-…, European journal of clinica… (2006) | pgx | 7 | [10.1007/s00228-006-0160-9](https://doi.org/10.1007/s00228-006-0160-9) | [16791582](https://www.ncbi.nlm.nih.gov/pubmed/16791582) | metadata signals extractable PGX data (cyp3a4, PK/PD-context) |
 | `Tóth_2008.pdf` | Tóth M et al., Tofisopam inhibits the pharmacokinetics…, European journal of clinica… (2008) | pgx | 7 | [10.1007/s00228-007-0397-y](https://doi.org/10.1007/s00228-007-0397-y) | [17989974](https://www.ncbi.nlm.nih.gov/pubmed/17989974) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-06 20:13 UTC</sub>
+<sub>queue written 2026-11-24 05:56 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Cameron_2007 | not_relevant | 2 | 5 | Identifies CYP enzymes metabolizing tofisopam enantiomers but reports no gene variant/genotype effect on PK/PD parameters. |
-| PGx | Drabant_2006 | not_relevant | 0 | 0 | Study examines tofisopam's drug-drug interaction with alprazolam via CYP3A4 inhibition, not a gene variant/genotype effect on PK/PD parameters. |
-| PGx | Niwa_2005 | not_relevant | 2 | 5 | In vitro CYP phenotyping of tofisopam metabolism; no gene variant/genotype effect on PK/PD parameters in humans. |
-| popPK | Turan_2022 | irrelevant | 0 | 0 | Behavioral/pharmacology study in mice with no PK parameters for tofisopam. |
-| PGx | Tóth_2005 | not_relevant | 0 | 5 | Reports tofisopam's inhibition of CYP3A4 enzyme activity (drug effect on enzyme), not a gene variant/genotype effect on tofisopam PK/PD. |
-| PGx | Tóth_2008 | not_relevant | 2 | 5 | Reports tofisopam's inhibition of CYP3A4-mediated midazolam PK, a drug-drug interaction, not a gene variant/genotype effect on tofisopam's PK/PD. |
+| popPK | Cameron_2007 | irrelevant | 1 | 0 | The study focuses on metabolic identification and enzyme characterization (CYP2C9/CYP3A4) rather than quantitative pharmacokinetic parameters like clearance or volume. |
+| PGx | Cameron_2007 | not_relevant | 0 | 0 | The paper investigates enantioselective metabolism and enzyme involvement (CYP2C9/CYP3A4) but does not report pharmacogenomic effects of specific gene variants on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Drabant_2006 | irrelevant | 0 | 0 | no_text gate: only 117 chars of text extracted (&lt; 400) |
+| PGx | Drabant_2006 | not_relevant | 0 | 0 | The paper investigates the effect of tofisopam on the pharmacokinetics of alprazolam, not the effect of gene variants on tofisopam. |
+| popPK | Niwa_2005 | irrelevant | 0 | 0 | The study is an in-vitro metabolic mechanism study (CYP identification) and does not report in vivo pharmacokinetic disposition parameters like clearance, volume, or half-life for tofisopam. |
+| PGx | Niwa_2005 | not_relevant | 0 | 0 | The paper describes in vitro metabolism of tofisopam by recombinant CYPs but does not report the effect of specific genetic variants or genotypes on PK/PD parameters. |
+| popPK | Turan_2022 | irrelevant | 0 | 0 | The study investigates behavioral antidepressant-like effects and molecular docking mechanisms in mice, containing no pharmacokinetic parameter values for tofisopam. |
+| PGx | Turan_2022 | not_relevant | 0 | 0 | The study investigates the pharmacological mechanism of tofisopam's antidepressant effect but contains no data on gene variants/genotypes or pharmacogenomic parameters. |
+| popPK | Tóth_2005 | irrelevant | 1 | 0 | The study reports in vitro CYP3A4 inhibition (IC50) rather than pharmacokinetic disposition parameters like clearance, volume, or half-life. |
+| PGx | Tóth_2005 | not_relevant | 0 | 0 | The paper investigates the effect of tofisopam on CYP3A4 enzyme activity (drug-drug interaction potential) and does not report how genetic variants affect the PK/PD of tofisopam. |
+| popPK | Tóth_2008 | irrelevant | 0 | 0 | no_text gate: only 69 chars of text extracted (&lt; 400) |
+| PGx | Tóth_2008 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (tofisopam affecting midazolam), not pharmacogenomic effects (gene variants) on tofisopam's PK/PD. |
 
 
 </details>

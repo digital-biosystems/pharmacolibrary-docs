@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;flumazenil&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/&quot;},{&quot;label&quot;:&quot;Jones_1993 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flumazenil_Jones1993_reference&quot;,&quot;label&quot;:&quot;Jones_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Jones1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Flumazenil_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flumazenil_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Flumazenil_Jones1993_reference&quot;,&quot;label&quot;:&quot;Jones_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Jones1993_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Flumazenil_RousseauBlass2021_reference&quot;,&quot;label&quot;:&quot;Rousseau-Blass_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_RousseauBlass2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flumazenil_Cha2024_reference&quot;,&quot;label&quot;:&quot;Cha_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Cha2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Flumazenil_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_flumazenil/Flumazenil_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Flumazenil bioavailability was not extracted from the abstract, so a library placeholder value was used in the model instead of a paper-derived estimate.
+> cross_check_disputed; x1_cross_check.
 
-<div class="pk-model-meta" hidden drug="flumazenil" model-id="Flumazenil_Jones1993_reference" status="needs_review" stale="false" population="healthy Chinese children undergoing circumcision" measured-compound="flumazenil" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="flumazenil" model-id="Flumazenil_Jones1993_reference" status="needs_review" stale="false" population="healthy children" measured-compound="flumazenil" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Jones RD, Chan K, Roulson CJ, Brown AG, Smith ID, Mya GH. Pharmacokinetics of flumazenil and midazolam. British journal of anaesthesia 70(3):286–292 (1993).
@@ -17,13 +17,15 @@ Jones RD, Chan K, Roulson CJ, Brown AG, Smith ID, Mya GH. Pharmacokinetics of fl
 
 ## Population and dosing
 
-**Population:** healthy Chinese children undergoing circumcision · condition healthy · age group child · n = 12.
+**Population:** healthy children · condition healthy · age group child.
+
+**Dosed compound ≠ measured compound:** dosed flumazenil, midazolam, measured flumazenil.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_flumazenil/Flumazenil_Jones1993_reference/Flumazenil_Jones1993_reference.svg" alt="Flumazenil_Jones1993_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -33,16 +35,13 @@ Jones RD, Chan K, Roulson CJ, Brown AG, Smith ID, Mya GH. Pharmacokinetics of fl
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| elimination half-life | t1/2z | 107 | min |
-| total body clearance | CLnorm | 15.4 | L/h/70kg |
-| apparent volume of distribution at steady state | Vss | 1.9 | litre kg-1 |
-| clearance (CL) | CL | 70.3 | L/h |
-| Ka (1/h) | kabs | 5.41 | 1/h |
-| ALAG (h) | tlag | 0.394 | h |
+| midazolam elimination half-life | t1/2z | 107 | min |
+| midazolam total body clearance | CL | 15.4 | ml min-1 kg-1 |
+| midazolam apparent volume of distribution at steady state | Vss | 1.9 | litre kg-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,24 +51,21 @@ Jones RD, Chan K, Roulson CJ, Brown AG, Smith ID, Mya GH. Pharmacokinetics of fl
 
 ### Reviewer guidance
 
-**Flumazenil bioavailability was not extracted from the abstract, so a library placeholder value was used in the model instead of a paper-derived estimate.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lacks an explicit bioavailability value, forcing the use of a generic default that is not supported by the Jones_1993 data. Since the model is abstract-only, these placeholder values affect the simulated profile without study-specific justification. A second reader disputed the verdict, failing to identify flumazenil as the measured compound or extract any reported parameters, resulting in an agreement score of 0.133. Extracted — flumazenil: t1/2z 107 min, CLnorm 15.4 L/h/70kg, Vss 1.9 litre kg-1, CL 70.3 L/h, kabs 5.41 1/h, tlag 0.394 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flumazenil: t1/2z 107 min, CL 15.4 ml min-1 kg-1, Vss 1.9 litre kg-1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flumazenil, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flumazenil, midazolam, the second reading flumazenil; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| elimination half-life | `Q57` · t1/2z | 107 | min | 6420 | s | min | llm (0.6) | Jones_1993:abstract |
-| total body clearance | `Q354` · CLnorm | 15.4 | L/h/70kg | 4.278e-06 | m3/s | L/h | llm_corrected (0.6) | Jones_1993:abstract |
-| apparent volume of distribution at steady state | `Q65` · Vss | 1.9 | litre kg-1 | 0.133 | m3 | l/kg | llm_corrected (0.6) | Jones_1993:abstract, Jones_1993:abstract |
-| clearance (CL) | `Q22` · CL | 70.3 | L/h | 1.953e-05 | m3/s | L/h | review_gapfill (0.7) | Chen_2025:review |
-| Ka (1/h) | `Q49` · kabs | 5.41 | 1/h | 0.001503 | 1/s | 1/h | review_gapfill (0.7) | Cha_2024:review |
-| ALAG (h) | `Q83` · tlag | 0.394 | h | 1418 | s | h | review_gapfill (0.7) | Cha_2024:review |
+| midazolam elimination half-life | `Q57` · t1/2z | 107 | min | 6420 | s | min | llm (0.6) | Jones_1993:abstract |
+| midazolam total body clearance | `Q22` · CL | 15.4 | ml min-1 kg-1 | 1.797e-05 | m3/s | ml/(min·kg) | llm_confirmed (0.6) | Jones_1993:abstract |
+| midazolam apparent volume of distribution at steady state | `Q65` · Vss | 1.9 | litre kg-1 | 0.133 | m3 | l/kg | llm_corrected (0.6) | Jones_1993:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -79,22 +75,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['F']
 - `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'ml min-1 kg-1' (CLnorm)
-- dropped duplicate Q57 ('terminal elimination half-life', value 35.3) — already have one for this compound
-- dropped duplicate Q354 ('total plasma clearance', value 20.6) — already have one for this compound
-- implicit units: 'total body clearance' → L/h/70kg (from the popPK convention: 'No unit stated in text or table captions/footnotes. CLnorm is total clearance normalized to a 70 kg standard body size; ')
+- dropped duplicate Q57 ('flumazenil terminal elimination half-life', value 35.3) — already have one for this compound
+- dropped duplicate Q22 ('flumazenil total plasma clearance', value 20.6) — already have one for this compound
+- dropped duplicate Q65 ('flumazenil apparent volume of distribution at steady state', value 1.0) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=flumazenil
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Chen_2025's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Cha_2024's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Cha_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Jones_1993_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -102,29 +90,24 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
+| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[alag]` | 0.394 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volume of distribution at steady state]` | 1.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss-120b` | `parameters[apparent volume of distribution at steady state]` |  | 1.9 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | 70.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life]` | 107 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination half-life]` |  | 107 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[flumazenil]` |  | 10 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[infusion of flumazenil]` |  | 5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 5.41 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total body clearance]` | 15.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean (sd) elimination half-life]` |  | 107 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[midazolam apparent volume of distribution at steady state]` | 1.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[midazolam elimination half-life]` | 107 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[midazolam total body clearance]` | 15.4 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[total body clearance]` |  | 15.4 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | flumazenil | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | flumazenil | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | flumazenil, midazolam | flumazenil | mismatch |
 
 </details>
 
@@ -141,16 +124,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Chen_2025:review'] |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Jones_1993:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Cha_2024:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Jones_1993:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Jones_1993:abstract'] |
-| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Jones_1993:abstract', 'Jones_1993:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Cha_2024:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 70.3 | ['Chen_2025:review'] |
+| C5_dimension_Q65 | pass | [length] ** 3 |  | ['Jones_1993:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 15.4 | ['Jones_1993:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 70.3 L/h | ['Chen_2025:review'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 133 L | ['Jones_1993:abstract', 'Jones_1993:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 64.7 L/h | ['Jones_1993:abstract'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 133 L | ['Jones_1993:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -159,10 +139,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=flumazenil) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -178,26 +158,66 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_flumazenil/Flumazenil_Jones1993_reference/Flumazenil_Jones1993_reference_modelica.zip" download>Flumazenil_Jones1993_reference_modelica.zip</a> <span class="pk-size">(4.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_flumazenil/Flumazenil_Jones1993_reference/Flumazenil_Jones1993_reference_fmi.zip" download>Flumazenil_Jones1993_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_flumazenil/Flumazenil_Jones1993_reference/Flumazenil_Jones1993_reference_matlab.zip" download>Flumazenil_Jones1993_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_flumazenil/Flumazenil_Jones1993_reference/Flumazenil_Jones1993_reference_matlab_simbio.zip" download>Flumazenil_Jones1993_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_flumazenil/Flumazenil_Jones1993_reference/Flumazenil_Jones1993_reference_sbml.zip" download>Flumazenil_Jones1993_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_flumazenil/Flumazenil_Jones1993_reference/Flumazenil_Jones1993_reference_cellml.zip" download>Flumazenil_Jones1993_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.3033 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 1e-05 | kg |
+| input | model | `Cl` | 1.797e-05 | m3/s |
+| input | model | `VdPerKg` | 0.0019 | m3/kg |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Jones RD, Chan K, Roulson CJ, Brown AG, Smith ID, Mya GH. Pharmacokinetics of flumazenil and midazolam. British journal of anaesthesia 70(3):286–292 (1993). [doi:10.1093/bja/70.3.286](https://doi.org/10.1093/bja/70.3.286)
+
+**This record:** Pharmacolibrary, model `Flumazenil_Jones1993_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_flumazenil/Flumazenil_Jones1993_reference>
+
+```bibtex
+@misc{pharmacolibrary_FlumazenilJones1993reference,
+  title  = {{Pharmacolibrary model Flumazenil_Jones1993_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_flumazenil/Flumazenil_Jones1993_reference},
+  note   = {Parameters from doi:10.1093/bja/70.3.286},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 100 mg, single dose, first-order absorption (ka 5.41 /h, lag 23.6 min, F 0.9). _The paper's dose was not captured; the simulator's default is used._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
 
-<dbs-fmusim paramsurl="drugs/drug_flumazenil/Flumazenil_Jones1993_reference/Flumazenil_Jones1993_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_flumazenil/Flumazenil_Jones1993_reference/Flumazenil_Jones1993_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_flumazenil/Flumazenil_Jones1993_reference/Flumazenil_Jones1993_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_flumazenil/Flumazenil_Jones1993_reference/Flumazenil_Jones1993_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Flumazenil_Jones1993_reference_params.json` · controls `Flumazenil_Jones1993_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Flumazenil_Jones1993_reference_params.json` · controls `Flumazenil_Jones1993_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflumazenil%5D%20Flumazenil_Jones1993_reference&body=Drug%3A%20flumazenil%0ARecord%3A%20Flumazenil_Jones1993_reference%0APaper%3A%20Jones_1993%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flumazenil/Flumazenil_Jones1993_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 19:22 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:19 UTC</sub>

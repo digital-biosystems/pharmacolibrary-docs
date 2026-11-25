@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment dulaglutide model was rejected because the peripheral compartment lacks a linking parameter to the central compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="dulaglutide" model-id="Dulaglutide_Choi2025_reference" status="rejected" stale="false" population="" measured-compound="dulaglutide" parameterization="apparent" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Choi S, Seo J, Park S, Kim NY, Kim H, Lim HS. Population pharmacokinetics of efp
 
 ### Reviewer guidance
 
-**The two-compartment dulaglutide model was rejected because the peripheral compartment lacks a linking parameter to the central compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines volumes for both central and peripheral compartments but omits any intercompartmental clearance or rate constants. This structural gap renders the peripheral volume pharmacokinetically unreachable from the dose. Consequently, the model's topology is incomplete for simulation or fitting. Extracted — dulaglutide: CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
+Extracted — dulaglutide: CL/F 0.032 L/h, V1 2.8 L, V2 3.96 L, kabs 0.006 h-1.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q18: this record has none, the second reading 21; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

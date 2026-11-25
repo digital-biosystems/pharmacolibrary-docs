@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;fluoxetine&quot;,&quot;href&quot;:&quot;drugs/drug_fluoxetine/&quot;},{&quot;label&quot;:&quot;Burlot_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluoxetine_Burlot2026_reference&quot;,&quot;label&quot;:&quot;Burlot_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluoxetine/Fluoxetine_Burlot2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluoxetine_Burlot2026_reference&quot;,&quot;label&quot;:&quot;Burlot_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluoxetine/Fluoxetine_Burlot2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluoxetine — `Fluoxetine_Burlot2026_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> Fluoxetine’s unnamed parameter is disputed: this record has no value, while the second reader reports 70, leaving the record in need of review.
-
-<div class="pk-model-meta" hidden drug="fluoxetine" model-id="Fluoxetine_Burlot2026_reference" status="needs_review" stale="false" population="" measured-compound="fluoxetine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="fluoxetine" model-id="Fluoxetine_Burlot2026_reference" status="simulated" stale="false" population="" measured-compound="fluoxetine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Burlot C, Riglet F, Romagnoli M, Leconte A, Delmas A, Schmitt A et al. PK and PK/PD Modeling of Bcl2 Inhibitor S65487 in Patients With AML and Investigation of Nonlinearity With Microdosing. CPT: pharmacometrics & systems pharmacology 15(7):e70288 (2026).
@@ -29,8 +27,6 @@ Burlot C, Riglet F, Romagnoli M, Leconte A, Delmas A, Schmitt A et al. PK and PK
 <figure class="pk-models-diagram"><img src="drugs/drug_fluoxetine/Fluoxetine_Burlot2026_reference/Fluoxetine_Burlot2026_reference.svg" alt="Fluoxetine_Burlot2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | Cl (microdose) | CL | 63.2 | L/h |
@@ -38,7 +34,7 @@ Burlot C, Riglet F, Romagnoli M, Leconte A, Delmas A, Schmitt A et al. PK and PK
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +44,11 @@ Burlot C, Riglet F, Romagnoli M, Leconte A, Delmas A, Schmitt A et al. PK and PK
 
 ### Reviewer guidance
 
-**Fluoxetine’s unnamed parameter is disputed: this record has no value, while the second reader reports 70, leaving the record in need of review.**
-
-The second reader reports 70 where this record has no value; the facts do not identify the parameter’s pharmacokinetic meaning. The cross-reader agreement was 0.667, with 0 of 1 reader agreeing. Both readers report 4.8 for another field, so that value is not the stated disagreement. Extracted — fluoxetine: CL 63.2 L/h, V1 855 L.
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has 4.8, the second reading 4.8; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
@@ -122,7 +116,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.833 (5 of 6 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -200,4 +194,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfluoxetine%5D%20Fluoxetine_Burlot2026_reference&body=Drug%3A%20fluoxetine%0ARecord%3A%20Fluoxetine_Burlot2026_reference%0APaper%3A%20Burlot_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fluoxetine/Fluoxetine_Burlot2026_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:00 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 12:21 UTC</sub>

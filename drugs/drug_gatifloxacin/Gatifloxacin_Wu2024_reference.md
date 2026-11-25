@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> A second reader disputed the extracted gatifloxacin clearance and volume of distribution values, preventing agreement on the record.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="gatifloxacin" model-id="Gatifloxacin_Wu2024_reference" status="needs_review" stale="false" population="Sprague-Dawley rats" measured-compound="gatifloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Wu RL, Wang WC, Cheng CL, Tsai CY, Chou CH. Determination of Nemonoxacin in Smal
 
 ### Reviewer guidance
 
-**A second reader disputed the extracted gatifloxacin clearance and volume of distribution values, preventing agreement on the record.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagreed with the recorded clearance of 24.6 mL/min/kg, providing a value of 0.18 instead. For the volume of distribution, the second reader recorded 2.8 while the primary record listed 7101.8 mL/kg. The second reader also disagreed on other parameters, including a value of 1.1 versus 50.7 and 9.7 versus 12.8. Extracted — gatifloxacin: CL 24.6 mL/min/kg, V 7.1e+03 mL/kg.
+Extracted — gatifloxacin: CL 24.6 mL/min/kg, V 7.1e+03 mL/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 29.9, the second reading 29.9; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.412, 0 of 1 reader(s) agree | 0.412 | cross-check disputed by a second reader: verdict disputed, agreement 0.412, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.471 (8 of 17 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.471 | cross-check contradicted by a second reader: verdict disputed; agreement 0.471 (8 of 17 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

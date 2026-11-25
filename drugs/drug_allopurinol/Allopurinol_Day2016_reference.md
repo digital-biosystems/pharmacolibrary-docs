@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Allopurinol record lacks explicit values for absorption rate constant and lag time, relying on unreported library defaults instead of paper estimates.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Day2016_reference" status="needs_review" stale="false" population="adults with gout" measured-compound="allopurinol" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Day RO, Kamel B, Kannangara DR, Williams KM, Graham GG. Xanthine oxidoreductase 
 
 ### Reviewer guidance
 
-**Allopurinol record lacks explicit values for absorption rate constant and lag time, relying on unreported library defaults instead of paper estimates.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The model builder defaulted the absorption rate constant (ka) and lag time (Tlag) rather than using values reported in the source text. These placeholders were flagged as deviations because they invent absorption parameters not supported by the extracted allopurinol data. The verdict holds the record pending justification or extraction of these specific kinetic constants. Extracted — allopurinol: CL/F 11 l/h, V/F 50 litres.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — allopurinol: CL/F 11 l/h, V/F 50 litres.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (6 of 6 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

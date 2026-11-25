@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Amoxicillin clearance and volume parameters are rejected for physiologically implausible magnitudes, indicating a likely unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Franck2021_reference" status="rejected" stale="false" population="mice with S. pneumoniae infection" measured-compound="amoxicillin" parameterization="apparent" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Franck S, Michelet R, Casilag F, Sirard JC, Wicha SG, Kloft C. A Model-Based Pha
 
 ### Reviewer guidance
 
-**Amoxicillin clearance and volume parameters are rejected for physiologically implausible magnitudes, indicating a likely unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-Parameters such as CL/F (124 mL/h) and V1/F (15.4 mL) are outside expected physiological ranges for mice. A reported unit could not be converted to standard SI units, so the model builder received values without proper dimensional context. This suggests the extracted magnitudes are incorrect due to the unresolved unit discrepancy. Extracted — amoxicillin: kabs 5.04 h−1, tlag 0.125 h, V1/F 15.4 mL, V2/F 50.7 mL, Q/F 71.9 mL/h, CL/F 124 mL/h, CL_ratio 0.477 h−1, kel 0.0595 h−1, … (+1).
+A reported unit could not be converted (CL_ratio), so that value has no SI equivalent. Extracted — amoxicillin: kabs 5.04 h−1, tlag 0.125 h, V1/F 15.4 mL, V2/F 50.7 mL, Q/F 71.9 mL/h, CL/F 124 mL/h, CL_ratio 0.477 h−1, kel 0.0595 h−1, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of hlung: this record has none, the second reading 20; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

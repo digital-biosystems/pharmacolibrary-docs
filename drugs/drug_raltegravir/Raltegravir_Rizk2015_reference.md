@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Raltegravir record lacks distribution volume and clearance, failing to form a compartmental population PK model.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit nM ([length]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="raltegravir" model-id="Raltegravir_Rizk2015_reference" status="rejected" stale="false" population="HIV-infected children 4 weeks to 18 years of age" measured-compound="raltegravir" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Rizk ML, Du L, Bennetto-Hood C, Wenning L, Teppler H, Homony B et al. Population
 
 ### Reviewer guidance
 
-**Raltegravir record lacks distribution volume and clearance, failing to form a compartmental population PK model.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit nM ([length]) vs [mass] / [length] ** 3.**
 
-The extracted parameters consist only of summary exposure metrics: area under the curve (18.0 mg·h/L) and concentration at 12 hours (71 nM). No distribution volume or elimination clearance values are present in the record. Consequently, the model structure cannot be defined as a compartmental population pharmacokinetic model. Extracted — raltegravir: AUCt 18 mg·h/L, Ct 71 nM.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — raltegravir: AUCt 18 mg·h/L, Ct 71 nM.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has raltegravir, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,4 +142,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Braltegravir%5D%20Raltegravir_Rizk2015_reference&body=Drug%3A%20raltegravir%0ARecord%3A%20Raltegravir_Rizk2015_reference%0APaper%3A%20Rizk_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_raltegravir/Raltegravir_Rizk2015_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:27 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:19 UTC</sub>

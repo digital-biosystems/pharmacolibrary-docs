@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Natalizumab central and peripheral compartment volumes were rejected as the model structure contained an unreachable compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="natalizumab" model-id="Natalizumab_Moein2025_reference" status="rejected" stale="false" population="" measured-compound="natalizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Moein A, Ribbing J, Ibrahim MMA, Zhang W, Kassir N. Population Pharmacokinetics 
 
 ### Reviewer guidance
 
-**Natalizumab central and peripheral compartment volumes were rejected as the model structure contained an unreachable compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record specifies central and peripheral volumes of 2.78 L and 1.73 L for a two-compartment structure. The review found an orphan compartment that lacked a path from the dose administration site. A second reader disagreed on two parameter values, citing 23.2 and 3.45 where the record contained nulls. Extracted — natalizumab: CL 0.282 L/day, V1 2.78 L, V2 1.73 L, kabs 0.213 /day.
+Extracted — natalizumab: CL 0.282 L/day, V1 2.78 L, V2 1.73 L, kabs 0.213 /day.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q312: this record has 23.2, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

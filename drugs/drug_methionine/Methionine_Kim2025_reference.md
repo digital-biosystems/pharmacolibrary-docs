@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The methionine record was held back because the second reader disagreed with the reported clearance of 6.13 mL/min/kg.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="methionine" model-id="Methionine_Kim2025_reference" status="needs_review" stale="false" population="" measured-compound="methionine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Kim MJ, Han DG, Park HS, Ha S, Noh SG, Kim J et al. Benzoxazole Derivatives as P
 
 ### Reviewer guidance
 
-**The methionine record was held back because the second reader disagreed with the reported clearance of 6.13 mL/min/kg.**
+**cross_check_disputed; x1_cross_check.**
 
-The primary record lists a total clearance of 6.13 mL/min/kg and a derived volume of distribution of 136.8124 L. A cross-check failed with an agreement ratio of 0.333, which is below the 0.5 threshold. The second reader provided no values for the disputed parameters, including the clearance, preventing consensus on the data. Extracted — methionine: CL 6.13 mL/min/kg, V 137 L.
+Extracted — methionine: CL 6.13 mL/min/kg, V 137 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 6.13, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -126,7 +126,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.333 (2 of 6 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial; agreement 0.333 (2 of 6 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Sufentanil’s clearance (37.8 L/h), intercompartmental clearance (41 L/h), and central volume (229 L) are disputed, leaving the record held for review.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="sufentanil" model-id="Sufentanil_Hahn2019_final" status="needs_review" stale="false" population="critically ill patients supported with extracorporeal membrane oxygenation therapy" measured-compound="sufentanil" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Hahn J, Yang S, Min KL, Kim D, Jin BH, Park C et al. Population pharmacokinetics
 
 ### Reviewer guidance
 
-**Sufentanil’s clearance (37.8 L/h), intercompartmental clearance (41 L/h), and central volume (229 L) are disputed, leaving the record held for review.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-A second reader reported clearance of 37.4 L/h, intercompartmental clearance of 42.1 L/h, and central volume of 223 L; agreement was 0.667, with 0 of 1 reader agreeing, so the verdict was disputed. The covariate scenarios were not simulated: only the base model was simulated, not the covariate effects defined in the record. Extracted — sufentanil: CL 37.8 L/h, V1 229 L, V2 1.64e+03 L, Q 41 L/h.
+The base model was simulated, not the covariate effects the record defines. Extracted — sufentanil: CL 37.8 L/h, V1 229 L, V2 1.64e+03 L, Q 41 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[θcl].value`: this record has 37.8, the second reading 37.4; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -165,7 +165,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.667 (6 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (6 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

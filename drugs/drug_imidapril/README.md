@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Harder_1997_ACE](drugs/drug_imidapril/pd_Harder_1997_ACE.md) | ACE-activity ← imidaprilat · direct Emax (saturable) effect | — | Harder S et al., Pharmacokinetic and pharmacodynamic int…, British journal of clinical… (1997) | [10.1046/j.1365-2125.1997.00588.x](https://doi.org/10.1046/j.1365-2125.1997.00588.x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Harder_1997_ACE](drugs/drug_imidapril/pd_Harder_1997_ACE.md) | ACE-activity ← imidaprilat · direct Emax (saturable) effect | — | Harder S et al., Pharmacokinetic and pharmacodynamic int…, British journal of clinical… (1997) | [10.1046/j.1365-2125.1997.00588.x](https://doi.org/10.1046/j.1365-2125.1997.00588.x) |
 
 ## Pharmacogenomics (PGx)
 
@@ -50,7 +50,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:34 | 3:33 | 0/0/0 | 1/0/0 | 0/0/2 | 105,082/5,611 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 11/4 | 2/9 | 0 |
+| 2026-10-07 06:34 | 3:33 | 0/0/0 | 0/1/0 | 0/0/2 | 105,082/5,611 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 11/4 | 2/9 | 0 |
 
 ## Coverage
 

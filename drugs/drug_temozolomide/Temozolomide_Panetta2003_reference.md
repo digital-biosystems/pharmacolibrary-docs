@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Oral absorption rate constant ka and lag time Tlag lacked reported values, forcing reliance on library defaults.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="temozolomide" model-id="Temozolomide_Panetta2003_reference" status="needs_review" stale="false" population="infants and children with primary central nervous system tumors" measured-compound="temozolomide" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Panetta JC, Kirstein MN, Gajjar A, Nair G, Fouladi M, Heideman RL et al. Populat
 
 ### Reviewer guidance
 
-**Oral absorption rate constant ka and lag time Tlag lacked reported values, forcing reliance on library defaults.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record was constructed from the abstract only, so reported summary statistics stood in for a fitted model. Consequently, the absorption rate constant (ka) and lag time were set to library defaults rather than values derived from this study. This means the simulated absorption profile is not supported by the specific data reported in the source. Extracted — temozolomide: CL/F 5.4 l/h, V/F 14 l, Cmax 9.1 mg/l, AUC 1 microg/ml.h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — temozolomide: CL/F 5.4 l/h, V/F 14 l, Cmax 9.1 mg/l, AUC 1 microg/ml.h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

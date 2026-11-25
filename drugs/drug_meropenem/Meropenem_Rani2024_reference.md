@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Meropenem's total clearance lacked an explicit estimate, forcing a library placeholder that prevented the model from being published.
+> No value for meropenem's clearance; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="meropenem" model-id="Meropenem_Rani2024_reference" status="model_quarantined" stale="false" population="critically ill patients" measured-compound="meropenem" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Rančić A, Milosavljević MN, Rosić N, Milovanović D, Folić M, Zečević DR 
 
 ### Reviewer guidance
 
-**Meropenem's total clearance lacked an explicit estimate, forcing a library placeholder that prevented the model from being published.**
+**No value for meropenem's clearance; t6_deviations (+1 more).**
 
-The record lists a typical clearance of 5.29 L/h, yet the clearance parameter was not assigned a fitted value, leaving it undefined in the model structure. This omission caused the model to be held back because the deviation check identified the use of a default instead of an estimate. A second reader also disagreed on the relative standard error for clearance, noting 0.019 where the record showed 0.038. Extracted — meropenem: V 2.05 L.
+The model was built, but meropenem's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — meropenem: V 2.05 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clearance].rse_percent`: this record has 0.038, the second reading 0.019; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.636, 0 of 1 reader(s) agree | 0.636 | a second reader did not contradict the extraction |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.636 (7 of 11 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.636 | cross-check contradicted by a second reader: verdict disputed; agreement 0.636 (7 of 11 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

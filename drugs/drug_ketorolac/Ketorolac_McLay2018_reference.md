@@ -7,7 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ketorolac intercompartmental clearance Q is reported as 4.43 L per 70 kg, a volume unit incompatible with clearance, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit L.
+70 kg-1 ([length] ** 3) vs [length] ** 3 / [time]; Q30 unit L.
+70 kg-1 ([length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_McLay2018_reference" status="rejected" stale="false" population="children aged 2 months to 16 years" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,15 +49,17 @@ McLay JS, Engelhardt T, Mohammed BS, Cameron G, Cohen MN, Galinkin JL et al. The
 
 ### Reviewer guidance
 
-**Ketorolac intercompartmental clearance Q is reported as 4.43 L per 70 kg, a volume unit incompatible with clearance, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit L.
+70 kg-1 ([length] ** 3) vs [length] ** 3 / [time]; Q30 unit L.
+70 kg-1 ([length] ** 3) vs [length] ** 3 / [time].**
 
-Q is defined as apparent clearance between the central and peripheral compartments, but its reported unit, L per 70 kg, has no time denominator. The record was built from the abstract alone, so summary statistics stood in for a fitted model. A second reader disputed the ketorolac volume estimate of 4.7, considering it absent. Extracted — ketorolac: CL 2.53 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ketorolac: CL 2.53 L.
 70 kg-1, Q 4.43 L.
 70 kg-1, V 4.7 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fentanyl volume of distribution: this record has 4.7, the second reading none. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

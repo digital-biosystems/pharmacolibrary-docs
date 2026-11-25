@@ -25,7 +25,7 @@ Methyprylon is a piperidinedione derivative and central nervous system depressan
 
 ## Start here
 
-> **Gwilt_1985_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy volunteers, n = 10. [Run it in the simulator](drugs/drug_methyprylon/Methyprylon_Gwilt1985_reference.md?tab=Simulation) · [record](drugs/drug_methyprylon/Methyprylon_Gwilt1985_reference.md)
+> **Gwilt_1985_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy volunteers. [Run it in the simulator](drugs/drug_methyprylon/Methyprylon_Gwilt1985_reference.md?tab=Simulation) · [record](drugs/drug_methyprylon/Methyprylon_Gwilt1985_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -34,8 +34,8 @@ Methyprylon is a piperidinedione derivative and central nervous system depressan
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Gwilt_1985_reference](drugs/drug_methyprylon/Methyprylon_Gwilt1985_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Gwilt PR et al., Pharmacokinetics of methyprylon followi…, Journal of pharmaceutical s… (1985) | [10.1002/jps.2600740920](https://doi.org/10.1002/jps.2600740920) |
-| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Gwilt_1982_caster_oil](drugs/drug_methyprylon/Methyprylon_Gwilt1982_caster_oil.md) | — | 2-compartment (no model) | 9 | Gwilt PR et al., The effect of oral castor oil on the di…, Canadian Anaesthetists' Soc… (1982) | [10.1007/BF03007530](https://doi.org/10.1007/BF03007530) |
-| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ control](drugs/drug_methyprylon/Methyprylon_Gwilt1982_control.md) | — | 2-compartment (no model) | 9 |  |  |
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Gwilt_1982_caster_oil](drugs/drug_methyprylon/Methyprylon_Gwilt1982_caster_oil.md) | — | 2-compartment (no model) | 9 | Gwilt PR et al., The effect of oral castor oil on the di…, Canadian Anaesthetists' Soc… (1982) | [10.1007/BF03007530](https://doi.org/10.1007/BF03007530) |
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ control](drugs/drug_methyprylon/Methyprylon_Gwilt1982_control.md) | — | 2-compartment (no model) | 9 |  |  |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +49,7 @@ Methyprylon is a piperidinedione derivative and central nervous system depressan
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:42 | 1:33 | 1/2/0 | 0/0/0 | 0/0/0 | 40,837/3,381 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-24 01:03 | 0:04 | 1/2/0 | 0/0/0 | 0/0/0 | 3,230/170 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
@@ -58,28 +58,23 @@ Methyprylon is a piperidinedione derivative and central nervous system depressan
 - **records:** 3  ·  extracted 0  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** True
 
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Gwilt_1985.pdf` | Gwilt PR et al., Pharmacokinetics of methyprylon followi…, Journal of pharmaceutical s… (1985) | popPK | 10 | [10.1002/jps.2600740920](https://doi.org/10.1002/jps.2600740920) | [2866242](https://pubmed.ncbi.nlm.nih.gov/2866242) | Original PK study of methyprylon in humans with numeric CL, Vd, and half-life values present in the abstract. |
-| `Contos_1991.pdf` | Contos DA et al., Nonlinear elimination of methyprylon (n…, Journal of pharmaceutical s… (1991) | popPK | 6 | [10.1002/jps.2600800813](https://doi.org/10.1002/jps.2600800813) | [1686463](https://pubmed.ncbi.nlm.nih.gov/1686463) | Single overdosed patient case report with half-lives (4.4 h parent, 8 h metabolite) reported in text, but no CL/V or compartmental model parameters. |
-
-<sub>queue written 2026-10-06 21:41 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chang_1973 | irrelevant | 3 | 2 | This is a hemoperfusion/dialysis clearance study in intoxicated patients, not a disposition PK study; no numeric clearance values for methyprylon appear in the evidence. |
+| popPK | Chang_1973 | irrelevant | 1 | 0 | The paper reports clearance values for drug removal via hemoperfusion in acute intoxication cases, but provides no specific numeric quantitative values in the evidence and focuses on a clinical intervention device rather than systemic PK parameter estimation. |
+| PGx | Chang_1973 | not_relevant | 0 | 0 | The paper describes a drug removal technique (microcapsule artificial kidney) for intoxication and does not report any genetic variants or pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
 | popPK | Chang_1973_2 | irrelevant | 0 | 0 | no_text gate: only 146 chars of text extracted (&lt; 400) |
-| popPK | Koffler_1978 | irrelevant | 2 | 1 | Methyprylon is only one of several overdose drugs treated with hemoperfusion; no quantitative PK parameters for methyprylon are reported. |
+| PGx | Chang_1973_2 | not_relevant | 0 | 0 | The paper evaluates the clearance of methyprylon via an artificial kidney (ACAC) in acute intoxication, not the effect of a gene variant or genotype on pharmacokinetic parameters. |
+| PGx | Contos_1991 | not_relevant | 0 | 0 | The paper describes pharmacokinetics in a single overdosed patient but does not report any gene variant, genotype, or phenotype. |
+| PGx | Gwilt_1982 | not_relevant | 0 | 0 | The study investigates the effect of castor oil (a substance) on methyprylon PK/PD in dogs, not the effect of a gene variant or genotype. |
+| PGx | Gwilt_1985 | not_relevant | 0 | 0 | The paper reports standard pharmacokinetic parameters in a small cohort of healthy volunteers but does not investigate or report any genetic variants or genotypes. |
+| popPK | Koffler_1978 | irrelevant | 0 | 0 | Methyprylon is only listed as one of several drugs involved in overdose cases treated with hemoperfusion, and the paper focuses on treatment efficacy rather than reporting specific pharmacokinetic parameters (CL, V, etc.) for the drug itself. |
+| PGx | Koffler_1978 | not_relevant | 0 | 0 | The paper describes a hemoperfusion technique for drug overdose and contains no data on gene variants or their effects on pharmacokinetics or pharmacodynamics. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethyprylon%5D&body=Drug%3A%20methyprylon%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methyprylon/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 21:41 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 01:02 UTC</sub>

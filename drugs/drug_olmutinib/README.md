@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:23 | 0:21 | 0/0/0 | 1/0/0 | 0/0/0 | 17,461/1,849 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 01:54 | 0:03 | 0/0/0 | 1/0/0 | 0/0/0 | 3,901/198 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -51,15 +51,15 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Noh_2019.pdf` | Noh YS et al., A safety, pharmacokinetic, pharmacogeno…, Basic & clinical pharmacolo… (2019) | popPK | 9 | [10.1111/bcpt.13262](https://doi.org/10.1111/bcpt.13262) | [31125491](https://pubmed.ncbi.nlm.nih.gov/31125491) | Human olmutinib PK and a population model are reported, but numeric model parameter values are not present. |
+| `Noh_2019.pdf` | Noh YS et al., A safety, pharmacokinetic, pharmacogeno…, Basic & clinical pharmacolo… (2019) | popPK | 10 | [10.1111/bcpt.13262](https://doi.org/10.1111/bcpt.13262) | [31125491](https://pubmed.ncbi.nlm.nih.gov/31125491) | The study is a PK analysis of olmutinib, but the evidence text only provides qualitative summaries (e.g., "Tmax was 2-3 hour", "half-life ranged from 4.8 to 7.4 hour") without listing the specific numeric values for CL, V, Q, or ka required for extraction. |
 
-<sub>queue written 2026-10-07 03:23 UTC</sub>
+<sub>queue written 2026-11-24 01:54 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Noh_2019 | relevant | 9 | 2 | Human olmutinib PK and a population model are reported, but numeric model parameter values are not present. |
+| popPK | Noh_2019 | relevant | 10 | 0 | The study is a PK analysis of olmutinib, but the evidence text only provides qualitative summaries (e.g., "Tmax was 2-3 hour", "half-life ranged from 4.8 to 7.4 hour") without listing the specific numeric values for CL, V, Q, or ka required for extraction. |
 | popPK | Sauvey_2021 | irrelevant | 0 | 0 | Olmutinib is tested only for in-vitro anti-amoebic activity, with no pharmacokinetic parameters reported. |
 
 

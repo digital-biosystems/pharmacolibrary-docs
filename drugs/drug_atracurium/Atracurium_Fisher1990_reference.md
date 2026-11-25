@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Atracurium pharmacokinetic parameters from Fisher_1990 were disputed by a second reader, who failed to confirm the dose compound or primary analyte.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="atracurium" model-id="Atracurium_Fisher1990_reference" status="needs_review" stale="false" population="infants, children, and adults" measured-compound="atracurium" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Fisher DM, Canfell PC, Spellman MJ, Miller RD. Pharmacokinetics and pharmacodyna
 
 ### Reviewer guidance
 
-**Atracurium pharmacokinetic parameters from Fisher_1990 were disputed by a second reader, who failed to confirm the dose compound or primary analyte.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so summary statistics stood in for a fitted model. A second reader disputed the verdict, noting the dose compound and primary analyte were unknown rather than atracurium. The reader also failed to confirm the elimination half-life, clearance, and both volume of distribution estimates. Extracted — atracurium: Vss 210 ml/kg, CL 7.9 ml.kg-1.min-1, t1/2z 20 min, V 4.7 L/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — atracurium: Vss 210 ml/kg, CL 7.9 ml.kg-1.min-1, t1/2z 20 min, V 4.7 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atracurium, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.182, 0 of 1 reader(s) agree | 0.182 | cross-check disputed by a second reader: verdict disputed, agreement 0.182, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.182 (2 of 11 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.182 | cross-check contradicted by a second reader: verdict disputed; agreement 0.182 (2 of 11 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

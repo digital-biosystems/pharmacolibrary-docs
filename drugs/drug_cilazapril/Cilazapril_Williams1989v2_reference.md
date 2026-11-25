@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The review was refused due to disputed cross-checks; the second reader found no consensus on cilazapril clearance and derived volume values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Williams1989v2_reference" status="needs_review" stale="false" population="elderly and young healthy volunteers" measured-compound="cilazapril" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Williams PE, Brown AN, Rajaguru S, Walters GE, McEwen J, Durnin C. A pharmacokin
 
 ### Reviewer guidance
 
-**The review was refused due to disputed cross-checks; the second reader found no consensus on cilazapril clearance and derived volume values.**
+**cross_check_disputed; x1_cross_check.**
 
-The model lists total clearance for cilazapril as 89.0 ml min-1 and volume of distribution as 322.0268 L. A second reader disputed these entries, failing to agree on the clearance and volume values. The disagreement resulted in an agreement ratio of 0.231, with zero readers confirming the extracted parameters. Extracted — cilazapril: CL 89 ml min-1, V 322 L.
+Extracted — cilazapril: CL 89 ml min-1, V 322 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 46.4, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.231, 0 of 1 reader(s) agree | 0.231 | cross-check disputed by a second reader: verdict disputed, agreement 0.231, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.231 (3 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.231 | cross-check contradicted by a second reader: verdict disputed; agreement 0.231 (3 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

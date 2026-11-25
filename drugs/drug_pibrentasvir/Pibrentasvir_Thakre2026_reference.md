@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Pibrentasvir's volume of distribution value is missing from the record, forcing the use of library placeholders and preventing publication.
+> No value for pibrentasvir's volume of distribution; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="Pibrentasvir" model-id="Pibrentasvir_Thakre2026_reference" status="model_quarantined" stale="false" population="pediatric patients ≥3 to &lt;18 years with chronic HCV infection" measured-compound="pibrentasvir" parameterization="apparent" topology="1C"></div>
 
@@ -60,13 +60,13 @@ Thakre N, Beck D, Saeed AM, Eckert D, Chen MJ, Liu W et al. Population Pharmacok
 
 ### Reviewer guidance
 
-**Pibrentasvir's volume of distribution value is missing from the record, forcing the use of library placeholders and preventing publication.**
+**No value for pibrentasvir's volume of distribution; the covariate scenarios were not simulated (+2 more).**
 
-The explicit volume of distribution (Vd) for pibrentasvir was not extracted, resulting in a placeholder value rather than a fitted estimate. Additionally, the absorption factor value of 2.47 conflicts with a second reader's determination of 2.79, highlighting extraction inconsistencies. The model also contains undefined parameters, such as the theta value for the formulation covariate, which the record lists as null despite the second reader identifying a value of 0.800. These unresolved discrepancies and missing values led to the model being quarantined. Extracted — pibrentasvir: CL/F 2.17e+03 L/day, V2/F 528 L, Q/F 765 L/day, V3/F 3.75e+03 L, tlag 0.0556 days, Fab 2.47 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\theta$$\end{document}θ, kabs 7.34 1/day.
+The model was built, but pibrentasvir's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — pibrentasvir: CL/F 2.17e+03 L/day, V2/F 528 L, Q/F 765 L/day, V3/F 3.75e+03 L, tlag 0.0556 days, Fab 2.47 \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\theta$$\end{document}θ, kabs 7.34 1/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[absorption factorb].value`: this record has 2.47, the second reading 2.79; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -176,7 +176,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.375 (6 of 16 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.375 | cross-check contradicted by a second reader: verdict disputed; agreement 0.375 (6 of 16 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

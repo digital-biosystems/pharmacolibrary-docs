@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because pentazocine is linked to acetaminophen but lacks a defined pharmacokinetic relationship, making its compartment unreachable.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Fritz1984_reference" status="rejected" stale="false" population="healthy human males" measured-compound="acetaminophen" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -54,13 +54,13 @@ Fritz AK, Benziger DP, Peterson JE, Park GB, Edelson J. Relative bioavailability
 
 ### Reviewer guidance
 
-**The record was rejected because pentazocine is linked to acetaminophen but lacks a defined pharmacokinetic relationship, making its compartment unreachable.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure links pentazocine to acetaminophen, yet the link parameter is recorded as none with an unknown kind, preventing a valid path from the dose to that molecule. Although the paper is titled Fritz_1984 and describes healthy human males, the parameters include an observation of 4'-hydroxyacetanilide, which may explain the structural inconsistency. The second reader disagreed on the dose compound and parameterization, identifying acetaminophen and pentazocine as the compounds rather than a single entity. Extracted — paracetamol: tmax 1.74 h, Cmax 50 ng/mL, CL 0.035 l.min−1, V 6.35 liters, kabs 9.76 h -1, tlag 4.2 min.
+A reported unit could not be converted (Cmax), so that value has no SI equivalent. Extracted — paracetamol: tmax 1.74 h, Cmax 50 ng/mL, CL 0.035 l.min−1, V 6.35 liters, kabs 9.76 h -1, tlag 4.2 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pentazocine and acetaminophen, the second reading acetaminophen and pentazocine; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

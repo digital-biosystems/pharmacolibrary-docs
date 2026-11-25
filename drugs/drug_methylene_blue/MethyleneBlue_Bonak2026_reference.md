@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the cited paper concerns a different drug, not methylene blue.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="methylene blue" model-id="MethyleneBlue_Bonak2026_reference" status="rejected" stale="false" population="" measured-compound="methylene_blue" parameterization="apparent" topology="1C"></div>
 
@@ -38,7 +38,7 @@ Boşnak C, Metan G, Zarakolu P, Karakulak EA, Pınar A, Göker H et al. Determin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.364). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +48,13 @@ Boşnak C, Metan G, Zarakolu P, Karakulak EA, Pınar A, Göker H et al. Determin
 
 ### Reviewer guidance
 
-**The record was rejected because the cited paper concerns a different drug, not methylene blue.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The relevance screen identified that the paper's subject is not methylene blue, and neither the title nor the abstract names the compound. Consequently, the extracted clearance of 4.77 L/h and volume of distribution of 97.57 L are invalid for methylene blue. The model also relied on defaulted absorption parameters and assumed complete bioavailability without source support. Extracted — methylene blue: CL/F 4.77 L/h, V/F 97.6 L.
+Extracted — methylene blue: CL/F 4.77 L/h, V/F 97.6 L.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has none, the second reading 108.3; it also differs on 6 more fields. That field does not shape the model.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -80,6 +82,33 @@ The relevance screen identified that the paper's subject is not methylene blue, 
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
+
+<details><summary>7 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `values[Q19]` |  | 108.3 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q21]` |  | 43.428 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q32]` |  | 10.54 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q33]` |  | 0.52 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q36]` |  | 0.08 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q37]` |  | 3.54 | only_one_extracted |
+| `gpt-oss-120b` | `values[Q49]` |  | 1.12 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -96,16 +125,16 @@ The relevance screen identified that the paper's subject is not methylene blue, 
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | fail | methylene_blue (or metabolite) | paper about another drug | paper subject is not methylene_blue: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=methylene_blue) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
-| X1_cross_check | skipped |  |  | no second reading of this record |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | fail | methylene_blue (or metabolite) | paper about another drug |  | paper subject is not methylene_blue: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=methylene_blue) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.364 (4 of 11 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.364 | cross-check agreement 0.364 is below 0.5: verdict partial; agreement 0.364 (4 of 11 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

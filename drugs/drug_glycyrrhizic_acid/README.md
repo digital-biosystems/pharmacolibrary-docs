@@ -22,8 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Li_2020_ICa_L](drugs/drug_glycyrrhizic_acid/pd_Li_2020_ICa_L.md) | ICa-L ← glycyrrhizic acid · direct Emax (saturable) effect | — | Li M et al., Cardioprotective effects of glycyrrhizi…, Naunyn-Schmiedeberg's archi… (2020) | [10.1007/s00210-019-01767-3](https://doi.org/10.1007/s00210-019-01767-3) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Orlando_2015_Hyal_1_activity](drugs/drug_glycyrrhizic_acid/pd_Orlando_2015_Hyal_1_activity.md) | Hyal-1 activity ← glycyrrhizic acid · direct sigmoid Emax (Hill) effect | — | Orlando Z et al., Autodisplay of Human Hyaluronidase Hyal…, Molecules (Basel, Switzerla… (2015) | [10.3390/molecules200915449](https://doi.org/10.3390/molecules200915449) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Li_2020_ICa_L](drugs/drug_glycyrrhizic_acid/pd_Li_2020_ICa_L.md) | ICa-L ← glycyrrhizic acid · direct Emax (saturable) effect | — | Li M et al., Cardioprotective effects of glycyrrhizi…, Naunyn-Schmiedeberg's archi… (2020) | [10.1007/s00210-019-01767-3](https://doi.org/10.1007/s00210-019-01767-3) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

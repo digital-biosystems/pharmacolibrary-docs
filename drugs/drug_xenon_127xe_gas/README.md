@@ -19,13 +19,14 @@ Xenon-127 is a diagnostic radiopharmaceutical used for examining the respiratory
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| xenon_127xe_gas | metabolite | 131.29 | Xe | PubChem | [166973](https://pubchem.ncbi.nlm.nih.gov/compound/166973) | Susskind_1978 |
+| xenon_127xe_gas | metabolite | 131.29 | Xe | PubChem | [166973](https://pubchem.ncbi.nlm.nih.gov/compound/166973) | Susskind_1977, Susskind_1978 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Susskind_1978_reference](drugs/drug_xenon_127xe_gas/Xenon127xeGas_Susskind1978_reference.md) | — | 1-compartment (no model) | 1 | Susskind H et al., Studies of whole-body retention and cle…, Progress in nuclear medicine (1978) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Susskind_1977_reference](drugs/drug_xenon_127xe_gas/Xenon127xeGas_Susskind1977_reference.md) | — | 1-compartment (no model) | 1 | Susskind H et al., Whole-body retention of radioxenon, Journal of nuclear medicine… (1977) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Susskind_1978_reference](drugs/drug_xenon_127xe_gas/Xenon127xeGas_Susskind1978_reference.md) | — | 1-compartment (no model) | 0 | Susskind H et al., Studies of whole-body retention and cle…, Progress in nuclear medicine (1978) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,29 +40,35 @@ Xenon-127 is a diagnostic radiopharmaceutical used for examining the respiratory
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:32 | 1:08 | 1/0/0 | 0/0/0 | 0/0/0 | 12,814/5,059 | openai / gpt-6-luna | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 05:39 | 0:33 | 1/1/0 | 0/0/0 | 0/0/0 | 12,477/3,620 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Susskind_1977.pdf` | Susskind H et al., Whole-body retention of radioxenon, Journal of nuclear medicine… (1977) | popPK | 9 |  | [404402](https://pubmed.ncbi.nlm.nih.gov/404402) | Reports quantitative whole-body xenon-127 clearance half-times, with values present in the evidence. |
-| `Susskind_1978.pdf` | Susskind H et al., Studies of whole-body retention and cle…, Progress in nuclear medicine (1978) | popPK | 8 |  | [219437](https://pubmed.ncbi.nlm.nih.gov/219437) | Reports numeric whole-body xenon-127 retention half-times and component fractions in the provided evidence. |
+| `Susskind_1978.pdf` | Susskind H et al., Studies of whole-body retention and cle…, Progress in nuclear medicine (1978) | popPK | 8 |  | [219437](https://pubmed.ncbi.nlm.nih.gov/219437) | Reports quantitative disposition parameters (clearance components and half-times) for xenon-127 in humans, with specific numeric values provided in the evidence text. |
 
-<sub>queue written 2026-10-07 19:31 UTC</sub>
+<sub>queue written 2026-11-24 05:39 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Susskind_1977 | not_relevant | 0 | 0 | The paper reports physiological correlation (fat percentage) with xenon clearance but does not investigate genetic variants or pharmacogenomic effects. |
+| PGx | Susskind_1978 | not_relevant | 0 | 0 | The paper reports PK parameters (clearance/retention) of xenon-127 based on body fat percentage, which is a phenotypic/anatomical variable, not a genetic variant or genotype. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bxenon_127xe_gas%5D&body=Drug%3A%20xenon_127xe_gas%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_xenon_127xe_gas/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 19:32 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 05:39 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because the source paper analyzes vinorelbine pharmacokinetics, not vinblastine, despite the record listing vinblastine clearance of 1.26 L/hr/kg.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Toso1995_reference" status="rejected" stale="false" population="" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Toso C, Lindley C. Vinorelbine: a novel vinca alkaloid. American journal of heal
 
 ### Reviewer guidance
 
-**Rejected because the source paper analyzes vinorelbine pharmacokinetics, not vinblastine, despite the record listing vinblastine clearance of 1.26 L/hr/kg.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The record contains clearance and volume values attributed to vinblastine, but the source document is a review of vinorelbine pharmacokinetics. In this paper, vinblastine serves only as a comparator or parent compound, not the primary subject of quantitative analysis. A second reader disagreed with the assigned values, noting discrepancies in the extracted numerical parameters and missing data fields. Extracted — vinblastine: CL 1.26 L/hr/kg, V 75.6 L/kg.
+Extracted — vinblastine: CL 1.26 L/hr/kg, V 75.6 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 1.26, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.0 (0 of 5 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0 | cross-check contradicted by a second reader: verdict disputed; agreement 0.0 (0 of 5 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

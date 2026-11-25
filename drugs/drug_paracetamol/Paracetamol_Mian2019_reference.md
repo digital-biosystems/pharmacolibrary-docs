@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The bioavailability parameter F for paracetamol was missing, so a generic placeholder value was used instead of an estimate.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Mian2019_reference" status="needs_review" stale="false" population="fit older people" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Mian P, van Esdonk MJ, Olkkola KT, de Winter BCM, Liukas A, Spriet I et al. Popu
 
 ### Reviewer guidance
 
-**The bioavailability parameter F for paracetamol was missing, so a generic placeholder value was used instead of an estimate.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record provides specific values for clearance, volume of distribution, absorption rate, and lag time, but contains no explicit value for bioavailability. Consequently, the model builder substituted a generic library placeholder for F rather than reporting a paper-specific estimate. This meant the simulated profile relied on an unsupported assumption regarding the fraction of drug reaching systemic circulation. Extracted — paracetamol: CL 17 L/h, V 85.2 L/79 kg, kabs 9.76 h -1, tlag 4.2 min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — paracetamol: CL 17 L/h, V 85.2 L/79 kg, kabs 9.76 h -1, tlag 4.2 min.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

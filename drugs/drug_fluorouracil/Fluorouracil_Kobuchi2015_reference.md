@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The transit rate constant's unit of mL·µg−1 conflicts with its required reciprocal time dimension, causing a dimension mismatch rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q306 unit mL·µg−1 ([length] ** 3 / [mass]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2015_reference" status="rejected" stale="false" population="male rats" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Kobuchi S, Ito Y, Hayakawa T, Nishimura A, Shibata N, Takada K et al. Semi-physi
 
 ### Reviewer guidance
 
-**The transit rate constant's unit of mL·µg−1 conflicts with its required reciprocal time dimension, causing a dimension mismatch rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q306 unit mL·µg−1 ([length] ** 3 / [mass]) vs 1 / [time].**
 
-The parameter labeled ktr (value 3.52) has a unit of mL·µg−1, which represents volume per mass rather than the inverse time dimension required for a rate constant. This unit conflict triggered a dimension mismatch finding on the structural parameter. The review also noted a limitation where a reported unit could not be converted to SI, preventing an SI value from being established for the parameter. Extracted — fluorouracil: kint 0.29 day−1, ktr 3.52 mL·µg−1, MTT 4.24 day, t1/2γ 0.78 h, CL 256 L/h, V 161 L, kabs 0.13 1/h.
+A reported unit could not be converted (ktr), so that value has no SI equivalent. Extracted — fluorouracil: kint 0.29 day−1, ktr 3.52 mL·µg−1, MTT 4.24 day, t1/2γ 0.78 h, CL 256 L/h, V 161 L, kabs 0.13 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading 5-fluorouracil; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

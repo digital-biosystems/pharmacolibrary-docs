@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The dexamethasone clearance parameter in the aprepitant model is assigned a value of 24.7 with unit %.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit % (dimensionless) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="aprepitant" model-id="Aprepitant_Nakade2008_reference" status="rejected" stale="false" population="Japanese cancer patients and healthy volunteers" measured-compound="aprepitant" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Nakade S, Ohno T, Kitagawa J, Hashimoto Y, Katayama M, Awata H et al. Population
 
 ### Reviewer guidance
 
-**The dexamethasone clearance parameter in the aprepitant model is assigned a value of 24.7 with unit %.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit % (dimensionless) vs [length] ** 3 / [time].**
 
-This unit is dimensionless, which conflicts with the expected dimensions of volume per time required for a clearance parameter. The record was built from the abstract only, so these summary statistics stand in for a fitted model. The second reader also disagreed on the presence of a drug interaction link between aprepitant and dexamethasone. Extracted — aprepitant: CL/F 1.54 L/h, V/F 72.1 L, kabs 0.893 /h, tlag 0.295 h, CL 24.7 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — aprepitant: CL/F 1.54 L/h, V/F 72.1 L, kabs 0.893 /h, tlag 0.295 h, CL 24.7 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading aprepitant → dexamethasone (interaction); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

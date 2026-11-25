@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The flurbiprofen elimination rate constant has a dimension mismatch: its unit L/h conflicts with the required 1/time dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit L/h ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Zhang2018_reference" status="rejected" stale="false" population="Chinese patients with postoperative pain" measured-compound="flurbiprofen" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Zhang J, Zhang H, Zhao L, Gu J, Feng Y, An H. Population pharmacokinetic modelin
 
 ### Reviewer guidance
 
-**The flurbiprofen elimination rate constant has a dimension mismatch: its unit L/h conflicts with the required 1/time dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit L/h ([length] ** 3 / [time]) vs 1 / [time].**
 
-The elimination rate constant for flurbiprofen is listed with a value of 0.0015 and a unit of L/h, which represents volume per time rather than a pure rate constant. This unit conflict triggers a dimension mismatch error for the structural parameter. Consequently, the parameter reached the model builder without a valid SI value due to a missing unit conversion. Extracted — flurbiprofen: kel 0.0015 L/h, V 7.91 L, CLm/F 1.55 L/h.
+A reported unit could not be converted (kel), so that value has no SI equivalent. Extracted — flurbiprofen: kel 0.0015 L/h, V 7.91 L, CLm/F 1.55 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flurbiprofen axetil, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

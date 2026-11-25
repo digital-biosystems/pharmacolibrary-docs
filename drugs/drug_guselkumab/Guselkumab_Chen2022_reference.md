@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was held back because the absorption rate constant was not reported in the paper and library defaults were used instead of explicit estimates.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="guselkumab" model-id="Guselkumab_Chen2022_reference" status="needs_review" stale="false" population="patients with psoriatic arthritis" measured-compound="guselkumab" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Chen Y, Miao X, Hsu CH, Zhuang Y, Kollmeier A, Xu Z et al. Population pharmacoki
 
 ### Reviewer guidance
 
-**The model was held back because the absorption rate constant was not reported in the paper and library defaults were used instead of explicit estimates.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The source text is a review reference that does not provide the absorption rate constant, leading the model builder to apply defaults for the absorption lag time. Consequently, the model assumes extravascular dosing with a first-order depot input and apparent bioavailability. A second reader disagreed with the extracted volume value, recording it as null instead of the 5.1 L found in this record. Extracted — guselkumab: CL/F 0.596 L/day, V/F 15.5 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — guselkumab: CL/F 0.596 L/day, V/F 15.5 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q324: this record has 5.1, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.857 (6 of 7 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

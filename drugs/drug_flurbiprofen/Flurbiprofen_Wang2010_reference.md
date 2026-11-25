@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Two duplicate flurbiprofen parameter sets with mismatched values, and the central volume of distribution is incorrectly assigned a clearance unit.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q351 unit L x h(-1) ([luminosity] / [length] ** 2 / [time]) vs [length] ** 3 / [time]; Q30 unit L x h(-1) ([luminosity] / [length] ** 2 / [time]) vs [length] ** 3 / [time]; Q351 unit L x h(-1) ([luminosity] / [length] ** 2 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Wang2010_reference" status="rejected" stale="false" population="general anaesthesia patients undergoing surgery" measured-compound="flurbiprofen" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Wang CL, Lin WW, Gong SJ, Huang PF. [Population pharmacokinetic modeling of flur
 
 ### Reviewer guidance
 
-**Two duplicate flurbiprofen parameter sets with mismatched values, and the central volume of distribution is incorrectly assigned a clearance unit.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q351 unit L x h(-1) ([luminosity] / [length] ** 2 / [time]) vs [length] ** 3 / [time]; Q30 unit L x h(-1) ([luminosity] / [length] ** 2 / [time]) vs [length] ** 3 / [time]; Q351 unit L x h(-1) ([luminosity] / [length] ** 2 / [time]) vs [length] ** 3 / [time].**
 
-The abstract-only source produced two distinct sets of estimates: apparent clearance 1.28 and 1.32 L/h, central volume 5.03 and 5.23 L. The intercompartmental clearance (8.5 and 8.45 L/h) is valid, but the central volume (5.03 and 5.23 L) is mislabeled with the clearance dimension. Because the record was derived from summary statistics rather than a fitted model, the duplicate entries could not be resolved or removed. Extracted — flurbiprofen: CLm/F 1.28 L x h(-1), V1 5.03 L, Q 8.5 L x h(-1), V2 4.39 L, CLm/F 1.32 L x h(-1), V1 5.23 L, Q 8.45 L x h(-1), V2 4.37 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flurbiprofen: CLm/F 1.28 L x h(-1), V1 5.03 L, Q 8.5 L x h(-1), V2 4.39 L, CLm/F 1.32 L x h(-1), V1 5.23 L, Q 8.45 L x h(-1), V2 4.37 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading 1.32; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

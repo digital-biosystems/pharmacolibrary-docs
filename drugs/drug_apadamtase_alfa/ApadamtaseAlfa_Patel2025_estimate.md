@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The second peripheral compartment for apadamtase alfa is unreachable from the dose, rendering the model structurally invalid.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Apadamtase alfa" model-id="ApadamtaseAlfa_Patel2025_estimate" status="rejected" stale="false" population="patients with congenital thrombotic thrombocytopenic purpura (cTTP)" measured-compound="ADAMTS13" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Patel M, Xu H, Barriere O, Diderichsen P, Patwari P, Zhu AZX et al. Use of PopPK
 
 ### Reviewer guidance
 
-**The second peripheral compartment for apadamtase alfa is unreachable from the dose, rendering the model structurally invalid.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defines two compartments, but the record contains no inter-compartmental clearance linking them. Consequently, the peripheral volume of 3.71 L is disconnected from the central compartment and the administered dose. This structural flaw prevents any physiological interpretation of the peripheral volume parameter. Extracted — apadamtase alfa: CL 0.0398, V1 2.69, V2 3.71, fu 14.7.
+Extracted — apadamtase alfa: CL 0.0398, V1 2.69, V2 3.71, fu 14.7.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has ADAMTS13, the second reading ADAMTS13 activity; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

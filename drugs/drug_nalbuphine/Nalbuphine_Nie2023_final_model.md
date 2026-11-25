@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Nalbuphine bioavailability and lag time lack specific estimates, so general library placeholders stand in for study values in the simulated profile.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="nalbuphine" model-id="Nalbuphine_Nie2023_final_model" status="needs_review" stale="false" population="adults undergoing general anesthesia surgery" measured-compound="nalbuphine" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Nie X, Gao X, Gao J, Heng T, Zhang Y, Sun Y et al. Population pharmacokinetics o
 
 ### Reviewer guidance
 
-**Nalbuphine bioavailability and lag time lack specific estimates, so general library placeholders stand in for study values in the simulated profile.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record explicitly lists clearance, volumes, intercompartmental clearance, and the absorption rate constant as derived from the source. Bioavailability and lag time, however, were not extracted and therefore rely on standard generic values rather than those fitted to this population. This leaves key inputs to the concentration-time prediction unsupported by the specific experimental data provided. Extracted — nalbuphine: CL 32.9 L/h, V1 32.5 L, Q 245 L/h, V2 83.5 L, kabs 0.826 1/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — nalbuphine: CL 32.9 L/h, V1 32.5 L, Q 245 L/h, V2 83.5 L, kabs 0.826 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of -ka (1/h) θ 5 first order absorption rate constant: this record has 0.826, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -151,7 +151,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.889 (8 of 9 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.889 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

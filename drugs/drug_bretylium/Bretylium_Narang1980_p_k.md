@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Bretylium model rejected due to a blood flow unit error and an orphan peripheral compartment.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Bretylium" model-id="Bretylium_Narang1980_p_k" status="rejected" stale="false" population="normal male volunteers" measured-compound="bretylium" parameterization="mechanistic" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Narang PK, Adir J, Josselson J, Yacobi A, Sadler J. Pharmacokinetics of bretyliu
 
 ### Reviewer guidance
 
-**Bretylium model rejected due to a blood flow unit error and an orphan peripheral compartment.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The renal clearance parameter Qb (0.685 L/h/kg) was assigned a dimension mismatch because its unit could not be converted to SI. Additionally, the model structure was flagged as containing an unreachable peripheral compartment, meaning there is no valid path from the dose site to that compartment. Extracted — bretylium: λ1 1.12 hr-1, t1/2α 37.2 min, kel 0.085 hr-1, t1/2β 8.15 hr, k12 0.5 hr-1, k21 0.182 hr-1, kabs 0.081 hr-1, V1 1.31 liters/kg, … (+5).
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — bretylium: λ1 1.12 hr-1, t1/2α 37.2 min, kel 0.085 hr-1, t1/2β 8.15 hr, k12 0.5 hr-1, k21 0.182 hr-1, kabs 0.081 hr-1, V1 1.31 liters/kg, … (+5).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bretylium, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

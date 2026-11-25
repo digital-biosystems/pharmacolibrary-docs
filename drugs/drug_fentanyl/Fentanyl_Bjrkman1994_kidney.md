@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 0.80).">rat</span>
 
-> Fentanyl peripheral volume parameter uses mass-normalized units, conflicting with its structural dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q64 unit ml/g ([length] ** 3 / [mass]) vs [length] ** 3; Q61 unit ml/g ([length] ** 3 / [mass]) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Bjrkman1994_kidney" status="rejected" stale="false" population="rats" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Björkman S, Wada DR, Stanski DR, Ebling WF. Comparative physiological pharmacok
 
 ### Reviewer guidance
 
-**Fentanyl peripheral volume parameter uses mass-normalized units, conflicting with its structural dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q64 unit ml/g ([length] ** 3 / [mass]) vs [length] ** 3; Q61 unit ml/g ([length] ** 3 / [mass]) vs [length] ** 3.**
 
-The record lists the fentanyl peripheral compartment volume as 13.4 ml/g, a unit that conflicts with the expected volume dimension for that structural parameter. A similar dimensional conflict exists for the central volume parameter, which is also assigned in ml/g. The review rejected the record due to these unit mismatches on the model's structural parameters. Extracted — fentanyl: V2 13.4 ml/g, CLnorm 1.63, V 0.91 ml/g, CL 83.7 ml/min/kg, Q 6.79 L/min, kabs 0.27 minute -1, tlag 15 min.
+Extracted — fentanyl: V2 13.4 ml/g, CLnorm 1.63, V 0.91 ml/g, CL 83.7 ml/min/kg, Q 6.79 L/min, kabs 0.27 minute -1, tlag 15 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Lumiracoxib COX-2 dissociation constant (0.89 h-1) and transit time (14.3 s) have conflicting units and meanings.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit h -1 (1 / [time]) vs [mass] / [length] ** 3; Q306 unit s ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="lumiracoxib" model-id="Lumiracoxib_VsquezBahena20102_estimate" status="rejected" stale="false" population="female Wistar rats with carrageenan-induced hyperalgesia" measured-compound="lumiracoxib" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Vásquez-Bahena DA, Salazar-Morales UE, Ortiz MI, Castañeda-Hernández G, Troc�
 
 ### Reviewer guidance
 
-**Lumiracoxib COX-2 dissociation constant (0.89 h-1) and transit time (14.3 s) have conflicting units and meanings.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit h -1 (1 / [time]) vs [mass] / [length] ** 3; Q306 unit s ([time]) vs 1 / [time].**
 
-The COX-2 parameter is labeled as a dissociation constant but assigned a first-order rate unit of h-1, creating a dimension mismatch. The transit parameter is labeled LT0 but assigned a time unit of s instead of a rate constant. These conflicts render the structural parameter values inconsistent with their pharmacokinetic definitions. Extracted — lumiracoxib: KD 0.89 h -1, ktr 14.3 s, CL 0.16 L/h, V 39 L, Q 0.42 L/h, kabs 92 h -1, Frel 50.
+A reported unit could not be converted (equation variable, KD and ktr), so that value has no SI equivalent. Extracted — lumiracoxib: KD 0.89 h -1, ktr 14.3 s, CL 0.16 L/h, V 39 L, Q 0.42 L/h, kabs 92 h -1, Frel 50.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lumiracoxib, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

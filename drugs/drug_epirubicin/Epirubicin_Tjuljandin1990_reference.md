@@ -9,14 +9,14 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="epirubicin" model-id="Epirubicin_Tjuljandin1990_reference" status="needs_review" stale="false" population="patients with a variety of malignancies" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="epirubicin" model-id="Epirubicin_Tjuljandin1990_reference" status="needs_review" stale="false" population="patients with malignancies" measured-compound="epirubicin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Tjuljandin SA, Doig RG, Sobol MM, Watson DM, Sheridan WP, Morstyn G et al. Pharmacokinetics and toxicity of two schedules of high dose epirubicin. Cancer research 50(16):5095–5101 (1990).
 
 ## Population and dosing
 
-**Population:** patients with a variety of malignancies · condition various malignancies · n = 19.
+**Population:** patients with malignancies · condition malignancy · age group adult.
 
 ## Model
 
@@ -30,14 +30,14 @@ Tjuljandin SA, Doig RG, Sobol MM, Watson DM, Sheridan WP, Morstyn G et al. Pharm
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Peak plasma concentrations | tmax | 12 | min |
-| concentrations approached the steady state | tss | 55 | min |
+| median time to peak plasma concentrations (bolus) | tmax | 12 | min |
+| time to approach steady state (6-h infusion) | tss | 55 | min |
 | distribution half-life | t1/2α | 10 | min |
 | elimination half-life | t1/2z | 42.0 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.333), qwen3.8-27b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ Tjuljandin SA, Doig RG, Sobol MM, Watson DM, Sheridan WP, Morstyn G et al. Pharm
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — epirubicin: tmax 12 min, tss 55 min, t1/2α 10 min, t1/2z 42 h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of concentrations approached the steady state: this record has 55, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of concentrations approached the steady state within a median of: this record has none, the second reading 55; it also differs on 7 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,10 +59,10 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Peak plasma concentrations | `Q56` · tmax | 12 | min | 720 | s | min | llm_corrected (0.6) | Tjuljandin_1990:abstract |
-| concentrations approached the steady state | `Q72` · tss | 55 | min | 3300 | s | min | llm (0.6) | Tjuljandin_1990:abstract |
-| distribution half-life | `Q59` · t1/2α | 10 | min | 600 | s | min | llm (0.6) | Tjuljandin_1990:abstract |
-| elimination half-life | `Q57` · t1/2z | 42.0 | h | 1.512e+05 | s | h | llm (0.6) | Tjuljandin_1990:abstract |
+| median time to peak plasma concentrations (bolus) | `Q56` · tmax | 12 | min | 720 | s | min | llm_corrected (0.6) | Tjuljandin_1990:abstract |
+| time to approach steady state (6-h infusion) | `Q72` · tss | 55 | min | 3300 | s | min | llm (0.6) | Tjuljandin_1990:abstract |
+| distribution half-life | `Q59` · t1/2α | 10 | min | 600 | s | min | half_life_rule (0.95) | Tjuljandin_1990:abstract |
+| elimination half-life | `Q57` · t1/2z | 42.0 | h | 1.512e+05 | s | h | half_life_rule (0.95) | Tjuljandin_1990:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,27 +73,33 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=epirubicin
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Tjuljandin_1990_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.333 (4/12 fields) | 8 |
 | `qwen3.8-27b` | partly confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[concentrations approached the steady state within a median of]` |  | 55 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[distribution half-life]` | 10 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination half-life]` | 42.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median distribution half-life was]` |  | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median elimination half-life was]` |  | 42.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median time to peak plasma concentrations]` | 12 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peak plasma concentrations were attained at a median of]` |  | 12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[time to approach steady state]` | 55 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[concentrations approached the steady state]` | 55 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[peak plasma concentrations]` | 12 |  | only_one_extracted |
 
@@ -150,4 +156,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bepirubicin%5D%20Epirubicin_Tjuljandin1990_reference&body=Drug%3A%20epirubicin%0ARecord%3A%20Epirubicin_Tjuljandin1990_reference%0APaper%3A%20Tjuljandin_1990%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_epirubicin/Epirubicin_Tjuljandin1990_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 17:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:53 UTC</sub>

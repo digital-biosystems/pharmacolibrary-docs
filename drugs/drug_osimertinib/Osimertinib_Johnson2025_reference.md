@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;osimertinib&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/&quot;},{&quot;label&quot;:&quot;Johnson_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Osimertinib_Rodier2022_reference&quot;,&quot;label&quot;:&quot;Rodier_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Rodier2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Osimertinib_Westra2025_reference&quot;,&quot;label&quot;:&quot;Westra_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Westra2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Osimertinib_Jones2023_reference&quot;,&quot;label&quot;:&quot;Jones_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Jones2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jones_2023_TGI&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 TGI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/pd_Jones_2023_TGI.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jones_2023_pEGFR&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 pEGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/pd_Jones_2023_pEGFR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Osimertinib_Rodier2022_reference&quot;,&quot;label&quot;:&quot;Rodier_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Rodier2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Osimertinib_Westra2025_reference&quot;,&quot;label&quot;:&quot;Westra_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Westra2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Osimertinib_Jones2023_reference&quot;,&quot;label&quot;:&quot;Jones_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/Osimertinib_Jones2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jones_2023_pEGFR&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 pEGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_osimertinib/pd_Jones_2023_pEGFR.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > CLm/F has no unit.
 
-<div class="pk-model-meta" hidden drug="osimertinib" model-id="Osimertinib_Johnson2025_reference" status="needs_review" stale="false" population="patients with advanced non-small cell lung cancer" measured-compound="osimertinib" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="osimertinib" model-id="Osimertinib_Johnson2025_reference" status="needs_review" stale="false" population="patients with non-small cell lung cancer" measured-compound="osimertinib" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Johnson M, Lin YW, Schmidt H, Sunnaker M, Van Maanen E, Huang X et al. Population Pharmacokinetics of Osimertinib in Patients With Non-Small Cell Lung Cancer. Pharmacology research & perspectives 13(3):e70098 (2025).
@@ -17,7 +17,7 @@ Johnson M, Lin YW, Schmidt H, Sunnaker M, Van Maanen E, Huang X et al. Populatio
 
 ## Population and dosing
 
-**Population:** patients with advanced non-small cell lung cancer · condition advanced non-small cell lung cancer · age group adult · n = 1364.
+**Population:** patients with non-small cell lung cancer · condition non-small cell lung cancer · age group adult.
 
 **Dosing:** 20, 240 mg, oral, multiple, every 24 h.
 
@@ -31,25 +31,25 @@ Johnson M, Lin YW, Schmidt H, Sunnaker M, Van Maanen E, Huang X et al. Populatio
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit | RSE% |
-|---|---|---|---|---|
-| CLparent/F (L/h) | CL/F | 14.3 | L/h | 1.39 |
-| CLmetabolite/F (L/h) | CL/F | 31.3 | L/h | 2.00 |
-| Vparent/F (L) | V/F | 918 | L | 3.30 |
-| Vmetabolite/F (L) | V1/F | 143 | L | 4.22 |
-| ka (1/h) | kabs | 0.196 | 1/h | 5.09 |
-| effect_of_baseline_albumin_on_clparent_f | effect_of_baseline_albumin_on_clparent_f | 0.825 |  | 11.7 |
-| Asian (non‐Chinese, non‐Japanese) population effect on CLmetabolite/F | CLm/F | 0.182 |  | 11.2 |
-| theta_cl_f_body_weight | theta_cl_f_body_weight | 0.421 |  | 13.9 |
-| theta_clm_f_albumin | theta_clm_f_albumin | 0.928 |  | 11.4 |
-| theta_clm_f_body_weight | theta_clm_f_body_weight | 0.822 |  | 8.01 |
-| theta_q900_albumin | theta_q900_albumin | 2.27 |  | 9.82 |
-| theta_v_f_body_weight | theta_v_f_body_weight | 0.814 |  | 16.9 |
-| theta_q367_albumin | theta_q367_albumin | -0.831 |  | 28.6 |
+| label | parameter | value | unit |
+|---|---|---|---|
+| CLparent/F (L/h) | CL/F | 14.3 | L/h |
+| CLmetabolite/F (L/h) | CL/F | 31.3 | L/h |
+| Vparent/F (L) | V/F | 918 | L |
+| Vmetabolite/F (L) | V1/F | 143 | L |
+| ka (1/h) | kabs | 0.196 | 1/h |
+| effect_of_baseline_albumin_on_clparent_f | effect_of_baseline_albumin_on_clparent_f | 0.825 |  |
+| effect_of_baseline_body_weight_on_clparent_f | effect_of_baseline_body_weight_on_clparent_f | 0.421 |  |
+| effect_of_baseline_albumin_on_clmetabolite_f | effect_of_baseline_albumin_on_clmetabolite_f | 0.928 |  |
+| Japanese population effect on CLmetabolite/F | CLm/F | 0.184 |  |
+| effect_of_baseline_albumin_on_vparent_f | effect_of_baseline_albumin_on_vparent_f | 2.27 |  |
+| effect_of_baseline_albumin_on_vmetabolite_f | effect_of_baseline_albumin_on_vmetabolite_f | -0.831 |  |
+| theta_clm_f_body_weight | theta_clm_f_body_weight | 0.822 |  |
+| theta_q63_body_weight | theta_q63_body_weight | 0.814 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.37), qwen3.8-27b (not confirmed, agreement 0.471). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,33 +61,33 @@ Johnson M, Lin YW, Schmidt H, Sunnaker M, Van Maanen E, Huang X et al. Populatio
 
 **CLm/F has no unit.**
 
-Without a unit the value cannot be converted, so the model cannot use it. Extracted — osimertinib: CL/F 14.3 L/h, V/F 918 L, kabs 0.196 1/h; AZ5104: CL/F 31.3 L/h, V1/F 143 L, CLm/F 0.182.
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — osimertinib: CL/F 14.3 L/h, V/F 918 L, kabs 0.196 1/h; AZ5104: CL/F 31.3 L/h, V1/F 143 L, CLm/F 0.184.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[clparent/f].covariate_forms`: this record has ['linear_fractional', 'linear_fractional'], the second reading ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional']; it also differs on 17 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clparent/f].covariate_forms`: this record has ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'], the second reading ['linear_fractional', 'linear_fractional', 'linear_fractional']; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
-|---|---|---|---|---|---|---|---|---|---|
-| CLparent/F (L/h) | `Q27` · CL/F | 14.3 | L/h | 3.972e-06 | m3/s | l/h | 1.39 | llm (0.6) | prp270098-tbl-0002:row2:col1, prp270098-tbl-0002:row2:col2 |
-| CLmetabolite/F (L/h) | `Q27` · CL/F | 31.3 | L/h | 8.694e-06 | m3/s | l/h | 2.00 | exact (1) | prp270098-tbl-0002:row3:col1, prp270098-tbl-0002:row3:col2 |
-| Vparent/F (L) | `Q76` · V/F | 918 | L | 0.918 | m3 | l | 3.30 | llm (0.6) | prp270098-tbl-0002:row4:col1, prp270098-tbl-0002:row4:col2 |
-| Vmetabolite/F (L) | `Q290` · V1/F | 143 | L | 0.143 | m3 | l | 4.22 | exact (1) | prp270098-tbl-0002:row5:col1, prp270098-tbl-0002:row5:col2 |
-| ka (1/h) | `Q49` · kabs | 0.196 | 1/h | 5.444e-05 | 1/s | 1/h | 5.09 | exact (1) | prp270098-tbl-0002:row6:col1, prp270098-tbl-0002:row6:col2 |
-| effect_of_baseline_albumin_on_clparent_f | `Q900` · effect_of_baseline_albumin_on_clparent_f | 0.825 |  |  |  |  | 11.7 |  | prp270098-tbl-0002:row16:col1, prp270098-tbl-0002:row16:col2 |
-| Asian (non‐Chinese, non‐Japanese) population effect on CLmetabolite/F | `Q351` · CLm/F | 0.182 |  |  |  |  | 11.2 | llm (0.6) | prp270098-tbl-0002:row19:col1, prp270098-tbl-0002:row19:col2 |
-| theta_cl_f_body_weight | `Q900` · theta_cl_f_body_weight | 0.421 |  |  |  |  | 13.9 |  | prp270098-tbl-0002:row17:col1, prp270098-tbl-0002:row17:col2 |
-| theta_clm_f_albumin | `Q900` · theta_clm_f_albumin | 0.928 |  |  |  |  | 11.4 |  | prp270098-tbl-0002:row18:col1, prp270098-tbl-0002:row18:col2 |
-| theta_clm_f_body_weight | `Q900` · theta_clm_f_body_weight | 0.822 |  |  |  |  | 8.01 |  | prp270098-tbl-0002:row23:col1, prp270098-tbl-0002:row23:col2 |
-| theta_q900_albumin | `Q900` · theta_q900_albumin | 2.27 |  |  |  |  | 9.82 |  | prp270098-tbl-0002:row24:col1, prp270098-tbl-0002:row24:col2 |
-| theta_v_f_body_weight | `Q900` · theta_v_f_body_weight | 0.814 |  |  |  |  | 16.9 |  | prp270098-tbl-0002:row25:col1, prp270098-tbl-0002:row25:col2 |
-| theta_q367_albumin | `Q900` · theta_q367_albumin | -0.831 |  |  |  |  | 28.6 |  | prp270098-tbl-0002:row26:col1, prp270098-tbl-0002:row26:col2 |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| CLparent/F (L/h) | `Q27` · CL/F | 14.3 | L/h | 3.972e-06 | m3/s | l/h | llm_corrected (0.6) | prp270098-tbl-0002:row2:col1, prp270098-tbl-0002:row2:col2 |
+| CLmetabolite/F (L/h) | `Q27` · CL/F | 31.3 | L/h | 8.694e-06 | m3/s | l/h | exact (1) | prp270098-tbl-0002:row3:col1, prp270098-tbl-0002:row3:col2 |
+| Vparent/F (L) | `Q76` · V/F | 918 | L | 0.918 | m3 | l | llm (0.6) | prp270098-tbl-0002:row4:col1, prp270098-tbl-0002:row4:col2 |
+| Vmetabolite/F (L) | `Q290` · V1/F | 143 | L | 0.143 | m3 | l | exact (1) | prp270098-tbl-0002:row5:col1, prp270098-tbl-0002:row5:col2 |
+| ka (1/h) | `Q49` · kabs | 0.196 | 1/h | 5.444e-05 | 1/s | 1/h | exact (1) | prp270098-tbl-0002:row6:col1, prp270098-tbl-0002:row6:col2 |
+| effect_of_baseline_albumin_on_clparent_f | `Q900` · effect_of_baseline_albumin_on_clparent_f | 0.825 |  |  |  |  |  | prp270098-tbl-0002:row16:col1, prp270098-tbl-0002:row16:col2 |
+| effect_of_baseline_body_weight_on_clparent_f | `Q900` · effect_of_baseline_body_weight_on_clparent_f | 0.421 |  |  |  |  |  | prp270098-tbl-0002:row17:col1, prp270098-tbl-0002:row17:col2 |
+| effect_of_baseline_albumin_on_clmetabolite_f | `Q900` · effect_of_baseline_albumin_on_clmetabolite_f | 0.928 |  |  |  |  |  | prp270098-tbl-0002:row18:col1, prp270098-tbl-0002:row18:col2 |
+| Japanese population effect on CLmetabolite/F | `Q351` · CLm/F | 0.184 |  |  |  |  | llm (0.6) | prp270098-tbl-0002:row21:col1, prp270098-tbl-0002:row21:col2 |
+| effect_of_baseline_albumin_on_vparent_f | `Q900` · effect_of_baseline_albumin_on_vparent_f | 2.27 |  |  |  |  |  | prp270098-tbl-0002:row24:col1, prp270098-tbl-0002:row24:col2 |
+| effect_of_baseline_albumin_on_vmetabolite_f | `Q900` · effect_of_baseline_albumin_on_vmetabolite_f | -0.831 |  |  |  |  |  | prp270098-tbl-0002:row26:col1, prp270098-tbl-0002:row26:col2 |
+| theta_clm_f_body_weight | `Q900` · theta_clm_f_body_weight | 0.822 |  |  |  |  |  | prp270098-tbl-0002:row23:col1, prp270098-tbl-0002:row23:col2 |
+| theta_q63_body_weight | `Q900` · theta_q63_body_weight | 0.814 |  |  |  |  |  | prp270098-tbl-0002:row25:col1, prp270098-tbl-0002:row25:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -99,36 +99,53 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 - table section residual_error: 'Proportional error osimertinib (fraction)' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Proportional error AZ5104 (fraction)' routed out of structural estimates ('Residual variability')
 - covariate level 'Effect of baseline albumin on CLparent/F' → Q900:effect_of_baseline_albumin_on_clparent_f = 0.825 (linear_fractional on Q27)
-- dropped duplicate Q351 ('Chinese population effect on CLmetabolite/F', value '0.076') — already have one for this compound
-- dropped duplicate Q351 ('Japanese population effect on CLmetabolite/F', value '0.184') — already have one for this compound
+- covariate level 'Effect of baseline body weight on CLparent/F' → Q900:effect_of_baseline_body_weight_on_clparent_f = 0.421 (linear_fractional on Q27)
+- covariate level 'Effect of baseline albumin on CLmetabolite/F' → Q900:effect_of_baseline_albumin_on_clmetabolite_f = 0.928 (linear_fractional on Q27)
+- dropped unlinked row (NIL): 'Asian (non‐Chinese, non‐Japanese) population effect on CLmetabolite/F' — extend the ontology if this is a real PK parameter (source ['prp270098-tbl-0002:row19:col1', 'prp270098-tbl-0002:row19:col2'])
+- dropped duplicate Q27 ('Chinese population effect on CLmetabolite/F', value '0.076') — already have one for this compound
 - dropped duplicate Q351 ('Non‐Asian, non‐White population effect on CLmetabolite/F', value '0.090') — already have one for this compound
-- covariate effect for Q900 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q367 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'ka (1/h)' → 1/h (from the paper text: 'The parameter is identified as “ka (1/h)” in the provided parameter description.')
-- implicit units: 'Asian (non‐Chinese, non‐Japanese) population effect on CLmetabolite/F' — the LLM proposed 'unitless', whose dimension does not fit Q351; left unset
+- covariate level 'Effect of baseline albumin on Vparent/F' → Q900:effect_of_baseline_albumin_on_vparent_f = 2.27 (linear_fractional on Q27)
+- covariate level 'Effect of baseline albumin on Vmetabolite/F' → Q900:effect_of_baseline_albumin_on_vmetabolite_f = -0.831 (linear_fractional on Q27)
+- covariate effect for Q63 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=osimertinib
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [1]
-- row roles (LLM): model_class=compartmental; 26/26 row label(s) assigned, 10 linked by role; re-tagged parent→AZ5104 ×28
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- row roles: 4 per-group rows of AZ5104 covariate_effect but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 26/26 row label(s) assigned, 10 linked by role; re-tagged parent→AZ5104 ×26
 
 **Extraction notes:**
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.37 (10/27 fields) | 17 |
 | `qwen3.8-27b` | not confirmed | 0.471 (16/34 fields) | 18 |
 
-<details><summary>18 field discrepancies</summary>
+<details><summary>35 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[asian (non‐chinese, non‐japanese) population effect on clmetabolite/f]` |  | 0.182 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clmetabolite/f].covariate_forms` | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[clparent/f].covariate_forms` | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[effect_of_baseline_albumin_on_clmetabolite_f]` | 0.928 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect_of_baseline_albumin_on_clparent_f]` | 0.825 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect_of_baseline_albumin_on_vmetabolite_f]` | -0.831 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect_of_baseline_albumin_on_vparent_f]` | 2.27 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[effect_of_baseline_body_weight_on_clparent_f]` | 0.421 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[japanese population effect on clmetabolite/f]` | 0.184 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_albumin]` |  | 0.825 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_albumin]` |  | 0.928 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_f_body_weight]` |  | 0.421 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q63_body_weight]` | 0.814 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q76_albumin]` |  | -0.831 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v_f_albumin]` |  | 2.27 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v_f_body_weight]` |  | 0.814 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vparent/f].covariate_forms` | [] | ['linear_fractional', 'linear_fractional'] | mismatch |
 | `qwen3.8-27b` | `parameters[asian (non‐chinese, non‐japanese) population effect on clmetabolite/f]` | 0.182 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[chinese population effect on clmetabolite/f]` |  | 0.076 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[clmetabolite/f].covariate_forms` | ['linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
@@ -169,7 +186,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C5_dimension_Q290 | pass | [length] ** 3 |  | ['prp270098-tbl-0002:row5:col1', 'prp270098-tbl-0002:row5:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['prp270098-tbl-0002:row6:col1', 'prp270098-tbl-0002:row6:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['prp270098-tbl-0002:row4:col1', 'prp270098-tbl-0002:row4:col2'] |
-| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] |  | ['prp270098-tbl-0002:row19:col1', 'prp270098-tbl-0002:row19:col2'] |
+| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] |  | ['prp270098-tbl-0002:row21:col1', 'prp270098-tbl-0002:row21:col2'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 14.3 L/h | ['prp270098-tbl-0002:row2:col1', 'prp270098-tbl-0002:row2:col2'] |
@@ -209,4 +226,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bosimertinib%5D%20Osimertinib_Johnson2025_reference&body=Drug%3A%20osimertinib%0ARecord%3A%20Osimertinib_Johnson2025_reference%0APaper%3A%20Johnson_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_osimertinib/Osimertinib_Johnson2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:48 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:24 UTC</sub>

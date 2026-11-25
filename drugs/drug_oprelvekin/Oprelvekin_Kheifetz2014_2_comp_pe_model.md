@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance, volumes, and intercompartmental clearance for oprelvekin are orders of magnitude too small, indicating a scale error that made the record rejectable.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="oprelvekin" model-id="Oprelvekin_Kheifetz2014_2_comp_pe_model" status="rejected" stale="false" population="healthy males" measured-compound="oprelvekin" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Kheifetz Y, Elishmereni M, Agur Z. Complex pattern of interleukin-11-induced inf
 
 ### Reviewer guidance
 
-**Clearance, volumes, and intercompartmental clearance for oprelvekin are orders of magnitude too small, indicating a scale error that made the record rejectable.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The recorded total clearance is 0.21 l·h⁻¹ and central volume is 0.11 l, whereas the second reader identified values of 14.8 l·h⁻¹ and 4.8 l, respectively. The intercompartmental clearance is 0.003 l·h⁻¹ here versus 0.472 l·h⁻¹ by the second reader, confirming that all primary parameters were extracted at an implausible scale. The absorption rate constant of 0.152 1/h was also disputed, though the magnitude errors in clearance and volume were the primary basis for the rejection. Extracted — oprelvekin: CL 0.21 l·h⁻¹, V1 0.11 l, Q 0.003 l·h⁻¹, V2 0.34 l, kabs 0.152 1/h.
+Extracted — oprelvekin: CL 0.21 l·h⁻¹, V1 0.11 l, Q 0.003 l·h⁻¹, V2 0.34 l, kabs 0.152 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of b: this record has 0.012, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

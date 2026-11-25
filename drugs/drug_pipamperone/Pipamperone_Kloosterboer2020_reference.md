@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Pipamperone’s reported absorption rate constant of 2 L/h has the wrong dimension, and the record lacks clearance or elimination, so it was refused.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; Q86 unit μg/L ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="pipamperone" model-id="Pipamperone_Kloosterboer2020_reference" status="rejected" stale="false" population="children and adolescents with psychiatric disorders (autism/behavioral problems)" measured-compound="pipamperone" parameterization="apparent" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Kloosterboer SM, Egberts KM, de Winter BCM, van Gelder T, Gerlach M, Hillegers M
 
 ### Reviewer guidance
 
-**Pipamperone’s reported absorption rate constant of 2 L/h has the wrong dimension, and the record lacks clearance or elimination, so it was refused.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; Q86 unit μg/L ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. The absorption rate constant is reported as 2 L/h, a volume-per-time unit rather than an inverse-time unit; the time-zero concentration of 0.33 μg/L also has a dimensional mismatch. A reported unit could not be converted to SI, and the second reader did not confirm the recorded compound and analyte identities or the parameter values 0.33, 2, and 416. Extracted — pipamperone: kabs 2 L/h, Vnorm/F 416 L/70 kg, C0 0.33 μg/L.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (kabs and C0), so that value has no SI equivalent. Extracted — pipamperone: kabs 2 L/h, Vnorm/F 416 L/70 kg, C0 0.33 μg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pipamperone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

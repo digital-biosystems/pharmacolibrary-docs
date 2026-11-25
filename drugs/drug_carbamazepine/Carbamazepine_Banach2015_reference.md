@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the paper reviews eslicarbazepine acetate, not carbamazepine, making the carbamazepine clearance value of 60.0 ml/min an incorrect drug attribution.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Banach2015_reference" status="rejected" stale="false" population="adults with epilepsy" measured-compound="carbamazepine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Banach M, Borowicz KK, Czuczwar SJ. Pharmacokinetic/pharmacodynamic evaluation o
 
 ### Reviewer guidance
 
-**The record is rejected because the paper reviews eslicarbazepine acetate, not carbamazepine, making the carbamazepine clearance value of 60.0 ml/min an incorrect drug attribution.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The analytical identity check failed because the source text describes eslicarbazepine acetate as the primary subject, while carbamazepine appears only as a co-medication or covariate. Consequently, the reported clearance of 60.0 ml/min and derived volume of distribution of 67.5181 L do not represent original pharmacokinetic parameters for carbamazepine. A second reader also disagreed on several extracted parameter values, including discrepancies on clearance and volume of distribution fields. Extracted — carbamazepine: CL 60 ml/min, V 67.5 L.
+Extracted — carbamazepine: CL 60 ml/min, V 67.5 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 61, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

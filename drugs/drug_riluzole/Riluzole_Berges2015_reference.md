@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The Berges_2015 record was rejected because the paper studies ozanezumab, not riluzole, which is only a comparator.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="riluzole" model-id="Riluzole_Berges2015_reference" status="rejected" stale="false" population="" measured-compound="riluzole" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Berges A, Bullman J, Bates S, Krull D, Williams N, Chen C. Ozanezumab dose selec
 
 ### Reviewer guidance
 
-**The Berges_2015 record was rejected because the paper studies ozanezumab, not riluzole, which is only a comparator.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The analytical check confirmed the paper's primary subject is a different drug, making the extracted clearance of 0.0126 L/h and volume of 8.7254 L unrelated to riluzole pharmacokinetics. Extracted — riluzole: CL 0.0126 L/h, V 8.73 L.
+Extracted — riluzole: CL 0.0126 L/h, V 8.73 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -115,7 +115,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (4 of 4 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

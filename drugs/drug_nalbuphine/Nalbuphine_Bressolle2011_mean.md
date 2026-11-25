@@ -44,7 +44,7 @@ Bressolle F, Khier S, Rochette A, Kinowski JM, Dadure C, Capdevila X. Population
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,6 +57,8 @@ Bressolle F, Khier S, Rochette A, Kinowski JM, Dadure C, Capdevila X. Population
 **Q2 has no unit; the clearance plausibility check could not be computed.**
 
 Without a unit the value cannot be converted, so the model cannot use it. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — nalbuphine: CL 131 L/h, V1 47.3 litre, V2 34 litre, Q 75.8 L/h, Q2 0.123, Vss 81.3 litre, t1/2z 2.7 h, kabs 0.826 1/h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of -ka (1/h) θ 5 first order absorption rate constant: this record has 0.826, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -124,6 +126,37 @@ Without a unit the value cannot be converted, so the model cannot use it. The ch
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.267 (4/15 fields) | 11 |
+
+<details><summary>11 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[-ka (1/h) θ 5 first order absorption rate constant]` | 0.826 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl (litre h 21 ) 130]` | 131 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 0.65 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q (litre h 21 ) 75.6]` | 75.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q]` |  | 21.42 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2]` | 2.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 1].parameter_id` | Q63 | Q61 | mismatch |
+| `gpt-oss-120b` | `parameters[v 1].value` | 47.3 | 0.39 | mismatch |
+| `gpt-oss-120b` | `parameters[v 2 q]` | 0.123 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 2]` | 34.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v ss]` | 81.3 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

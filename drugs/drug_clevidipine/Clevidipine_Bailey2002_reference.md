@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The clevidipine record is held back because the second reader could not confirm the extracted clearance, half-life, and volume of distribution values from the abstract-only source.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="clevidipine" model-id="Clevidipine_Bailey2002_reference" status="needs_review" stale="false" population="adult cardiac surgical patients" measured-compound="clevidipine" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Bailey JM, Lu W, Levy JH, Ramsay JG, Shore-Lesserson L, Prielipp RC et al. Clevi
 
 ### Reviewer guidance
 
-**The clevidipine record is held back because the second reader could not confirm the extracted clearance, half-life, and volume of distribution values from the abstract-only source.**
+**cross_check_disputed; x1_cross_check.**
 
-The model was constructed solely from the paper's abstract, causing reported summary statistics to stand in for a fitted model. The second reader disagreed with the identification of the dose compound and primary analyte as clevidipine, marking both as unknown. Additionally, the second reader returned null values for the clearance (4.3 l/min), half-life (0.6 min), and volume of distribution (32.4 l), failing to agree with the record's extracted parameters. Extracted — clevidipine: V 32.4 l, CL 4.3 l/min, t1/2z 0.6 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clevidipine: V 32.4 l, CL 4.3 l/min, t1/2z 0.6 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clevidipine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.286, 0 of 1 reader(s) agree | 0.286 | cross-check disputed by a second reader: verdict disputed, agreement 0.286, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.286 (2 of 7 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.286 | cross-check contradicted by a second reader: verdict disputed; agreement 0.286 (2 of 7 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

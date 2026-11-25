@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The umeclidinium record was held back because the absorption rate constant and Tlag were assigned library placeholder values instead of estimates from the paper.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Yang2017_reference" status="needs_review" stale="false" population="adults with asthma" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
 
@@ -17,13 +17,13 @@ Yang S, Lee L, Pascoe S. Population Pharmacokinetics Modeling of Inhaled Umeclid
 
 ## Population and dosing
 
-**Population:** adults with asthma · condition asthma · age group adult · n = 128.
+**Population:** adults with asthma · condition asthma · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_umeclidinium/Umeclidinium_Yang2017_reference/Umeclidinium_Yang2017_reference.svg" alt="Umeclidinium_Yang2017_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -35,12 +35,10 @@ Yang S, Lee L, Pascoe S. Population Pharmacokinetics Modeling of Inhaled Umeclid
 |---|---|---|---|
 | CL/F | CL/F | 257 | L/h |
 | V c/F | V/F | 804 | L |
-| AUC0-24 median | AUCt | 64.7 | mg·h/L |
-| C max median | Cmax | 10.6 | pg/mL |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +48,13 @@ Yang S, Lee L, Pascoe S. Population Pharmacokinetics Modeling of Inhaled Umeclid
 
 ### Reviewer guidance
 
-**The umeclidinium record was held back because the absorption rate constant and Tlag were assigned library placeholder values instead of estimates from the paper.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The model builder explicitly noted that ka and Tlag were invented defaults, not reported in the source. Since the record was built from the abstract alone, summary statistics like AUCt (64.7 mg·h/L) and Cmax (10.6 pg/mL) stood in for a fitted model. The second reader disagreed on all extracted parameter values, finding them null, which contributed to the dispute. Extracted — umeclidinium: CL/F 257 L/h, V/F 804 L, AUCt 64.7 mg·h/L, Cmax 10.6 pg/mL.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — umeclidinium: CL/F 257 L/h, V/F 804 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has umeclidinium, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0-24: this record has none, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -64,8 +62,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 |---|---|---|---|---|---|---|---|---|
 | CL/F | `Q27` · CL/F | 257 | L/h | 7.139e-05 | m3/s | l/h | exact (1) | Yang_2017:abstract |
 | V c/F | `Q76` · V/F | 804 | L | 0.804 | m3 | l | space_fold (0.95) | Yang_2017:abstract |
-| AUC0-24 median | `Q19` · AUCt | 64.7 | mg·h/L |  |  | mg·h/L | llm (0.6) | Yang_2017:abstract |
-| C max median | `Q32` · Cmax | 10.6 | pg/mL |  |  | pg/ml | space_fold (0.95) | Yang_2017:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,40 +77,30 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'pg h/mL' (AUCt)
-- implicit units: 'AUC0-24 median' → mg·h/L (from the popPK convention: 'No unit stated in text, caption, or footnotes. AUC0-24 for an antibacterial is conventionally expressed in mg·h/L; a val')
+- dropped value-less row: 'AUC0-24 median'
+- dropped value-less row: 'C max median'
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=umeclidinium
 - 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'V c/F' is the general volume)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Yang_2017_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[auc0-24]` | 64.7 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[auc0-24]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[c max]` | 10.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[c max]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` | 257 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` |  | 257 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v c/f]` | 804 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v c/f]` |  | 804 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | umeclidinium | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | umeclidinium | unknown | mismatch |
 
 </details>
 
@@ -128,12 +114,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Yang_2017:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Yang_2017:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Yang_2017:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Yang_2017:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -151,7 +135,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.75 (6 of 8 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -167,7 +151,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_umeclidinium/Umeclidinium_Yang2017_reference/Umeclidinium_Yang2017_reference_modelica.zip" download>Umeclidinium_Yang2017_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_umeclidinium/Umeclidinium_Yang2017_reference/Umeclidinium_Yang2017_reference_modelica.zip" download>Umeclidinium_Yang2017_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_umeclidinium/Umeclidinium_Yang2017_reference/Umeclidinium_Yang2017_reference_fmi.zip" download>Umeclidinium_Yang2017_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_umeclidinium/Umeclidinium_Yang2017_reference/Umeclidinium_Yang2017_reference_matlab.zip" download>Umeclidinium_Yang2017_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_umeclidinium/Umeclidinium_Yang2017_reference/Umeclidinium_Yang2017_reference_matlab_simbio.zip" download>Umeclidinium_Yang2017_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
@@ -231,4 +215,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bumeclidinium%5D%20Umeclidinium_Yang2017_reference&body=Drug%3A%20umeclidinium%0ARecord%3A%20Umeclidinium_Yang2017_reference%0APaper%3A%20Yang_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_umeclidinium/Umeclidinium_Yang2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:14 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:52 UTC</sub>

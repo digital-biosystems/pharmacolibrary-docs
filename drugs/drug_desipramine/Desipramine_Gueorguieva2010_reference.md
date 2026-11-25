@@ -24,22 +24,23 @@ Gueorguieva I, Jackson K, Wrighton SA, Sinha VP, Chien JY. Desipramine, substrat
 
 **Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 5 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit | IIV |
-|---|---|---|---|---|
-| CL (l h -1 ) | CL | 111 | l h -1 | 73 (None% RSE) |
-| V1 (l) | V1 | 1900 | l | 58 (None% RSE) |
-| Q (l h -1 ) | Q | 58 | l h -1 |  |
-| V2 (l) | V2 | 1050 | l |  |
+| label | parameter | value | unit |
+|---|---|---|---|
+| kₐ (h⁻¹) | kabs | 0.15 | h⁻¹ |
+| CL (l h⁻¹) | CL | 111 | l h⁻¹ |
+| V₁ (l) | V1 | 1900 | l |
+| Q (l h⁻¹) | Q | 58 | l h⁻¹ |
+| V₂ (l) | V2 | 1050 | l |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,61 +52,47 @@ Gueorguieva I, Jackson K, Wrighton SA, Sinha VP, Chien JY. Desipramine, substrat
 
 **The clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — desipramine: CL 111 l h -1, V1 1.9e+03 l, Q 58 l h -1, V2 1.05e+03 l.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — desipramine: kabs 0.15 h⁻¹, CL 111 l h⁻¹, V1 1.9e+03 l, Q 58 l h⁻¹, V2 1.05e+03 l.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has desipramine, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
-|---|---|---|---|---|---|---|---|---|---|
-| CL (l h -1 ) | `Q22` · CL | 111 | l h -1 | 3.083e-05 | m3/s | l/h | exact (1) | tab_0:row4:col1, tab_0:row4:col2, tab_0:row4:col4 | 73 (None% RSE) |
-| V1 (l) | `Q63` · V1 | 1900 | l | 1.9 | m3 | l | exact (1) | tab_0:row5:col1, tab_0:row5:col2, tab_0:row5:col4 | 58 (None% RSE) |
-| Q (l h -1 ) | `Q30` · Q | 58 | l h -1 | 1.611e-05 | m3/s | l/h | exact (1) | tab_0:row6:col1, tab_0:row6:col2 |  |
-| V2 (l) | `Q64` · V2 | 1050 | l | 1.05 | m3 | l | exact (1) | tab_0:row7:col1, tab_0:row7:col2 |  |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| kₐ (h⁻¹) | `Q49` · kabs | 0.15 | h⁻¹ | 4.167e-05 | 1/s | 1/h | exact (1) | Gueorguieva_2010_table_p6_1:row0:col1 |
+| CL (l h⁻¹) | `Q22` · CL | 111 | l h⁻¹ | 3.083e-05 | m3/s | l/h | exact (1) | Gueorguieva_2010_table_p6_1:row1:col1 |
+| V₁ (l) | `Q63` · V1 | 1900 | l | 1.9 | m3 | l | exact (1) | Gueorguieva_2010_table_p6_1:row2:col1 |
+| Q (l h⁻¹) | `Q30` · Q | 58 | l h⁻¹ | 1.611e-05 | m3/s | l/h | exact (1) | Gueorguieva_2010_table_p6_1:row3:col1 |
+| V₂ (l) | `Q64` · V2 | 1050 | l | 1.05 | m3 | l | exact (1) | Gueorguieva_2010_table_p6_1:row4:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- table section iiv: 'CL (l h -1 )' routed out of structural estimates ('Between-subject')
-- table section iiv: 'V1 (l)' routed out of structural estimates ('Between-subject')
-- column 'optimal sampling times (h)' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- routed 'Plasma within-subject variability' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
-- dropped unlinked row (NIL): 'Intermediate metabolizers' — extend the ontology if this is a real PK parameter (source ['Gueorguieva_2010_table_2:row0:col1', 'Gueorguieva_2010_table_2:row0:col2', 'Gueorguieva_2010_table_2:row0:col3', 'Gueorguieva_2010_table_2:row0:col4', 'Gueorguieva_2010_table_2:row0:col5', 'Gueorguieva_2010_table_2:row0:col6', 'Gueorguieva_2010_table_2:row0:col7', 'Gueorguieva_2010_table_2:row0:col8', 'Gueorguieva_2010_table_2:row5:col1', 'Gueorguieva_2010_table_2:row5:col2', 'Gueorguieva_2010_table_2:row5:col3', 'Gueorguieva_2010_table_2:row5:col4', 'Gueorguieva_2010_table_2:row5:col5', 'Gueorguieva_2010_table_2:row5:col6', 'Gueorguieva_2010_table_2:row5:col7', 'Gueorguieva_2010_table_2:row5:col8'])
-- dropped unlinked row (NIL): 'Extensive metabolizers' — extend the ontology if this is a real PK parameter (source ['Gueorguieva_2010_table_2:row1:col1', 'Gueorguieva_2010_table_2:row1:col2', 'Gueorguieva_2010_table_2:row1:col3', 'Gueorguieva_2010_table_2:row1:col4', 'Gueorguieva_2010_table_2:row1:col5', 'Gueorguieva_2010_table_2:row1:col6', 'Gueorguieva_2010_table_2:row1:col7', 'Gueorguieva_2010_table_2:row1:col8', 'Gueorguieva_2010_table_2:row6:col1', 'Gueorguieva_2010_table_2:row6:col2', 'Gueorguieva_2010_table_2:row6:col3', 'Gueorguieva_2010_table_2:row6:col4', 'Gueorguieva_2010_table_2:row6:col5', 'Gueorguieva_2010_table_2:row6:col6', 'Gueorguieva_2010_table_2:row6:col7', 'Gueorguieva_2010_table_2:row6:col8'])
-- dropped unlinked row (NIL): 'Ultrarapid metabolizers' — extend the ontology if this is a real PK parameter (source ['Gueorguieva_2010_table_2:row2:col1', 'Gueorguieva_2010_table_2:row2:col2', 'Gueorguieva_2010_table_2:row2:col3', 'Gueorguieva_2010_table_2:row2:col4', 'Gueorguieva_2010_table_2:row2:col5', 'Gueorguieva_2010_table_2:row2:col6', 'Gueorguieva_2010_table_2:row2:col7', 'Gueorguieva_2010_table_2:row2:col8', 'Gueorguieva_2010_table_2:row7:col1', 'Gueorguieva_2010_table_2:row7:col2', 'Gueorguieva_2010_table_2:row7:col3', 'Gueorguieva_2010_table_2:row7:col4', 'Gueorguieva_2010_table_2:row7:col5', 'Gueorguieva_2010_table_2:row7:col6', 'Gueorguieva_2010_table_2:row7:col7', 'Gueorguieva_2010_table_2:row7:col8'])
-- dropped value-less row: 'Standard error expressed as percent coefficient of variation.'
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (l h⁻¹)); Q63 (V₁ (l)); Q30 (Q (l h⁻¹)); Q64 (V₂ (l))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=desipramine
 
 **Extraction notes:**
-- companion parameter table 2 transcribed (48 record(s))
-- LLM selected parameter table(s) 2
+- table Gueorguieva_2010_table_p6_1: unbound_uncertainty
+- LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.667 (6/9 fields) | 3 |
+| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
 
-<details><summary>3 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[theta_q57_intermediate_metabolizer]` |  | 0.25 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | desipramine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | desipramine | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -117,18 +104,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col4'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_0:row6:col1', 'tab_0:row6:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_0:row5:col1', 'tab_0:row5:col2', 'tab_0:row5:col4'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_0:row7:col1', 'tab_0:row7:col2'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 111 | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Gueorguieva_2010_table_p6_1:row1:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Gueorguieva_2010_table_p6_1:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Gueorguieva_2010_table_p6_1:row0:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Gueorguieva_2010_table_p6_1:row2:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Gueorguieva_2010_table_p6_1:row4:col1'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 111 | ['Gueorguieva_2010_table_p6_1:row1:col1'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 111 L/h | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col4'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 1.9e+03 L | ['tab_0:row5:col1', 'tab_0:row5:col2', 'tab_0:row5:col4'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 1.05e+03 L | ['tab_0:row7:col1', 'tab_0:row7:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 111 L/h | ['Gueorguieva_2010_table_p6_1:row1:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.9e+03 L | ['Gueorguieva_2010_table_p6_1:row2:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 1.05e+03 L | ['Gueorguieva_2010_table_p6_1:row4:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -179,4 +167,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdesipramine%5D%20Desipramine_Gueorguieva2010_reference&body=Drug%3A%20desipramine%0ARecord%3A%20Desipramine_Gueorguieva2010_reference%0APaper%3A%20Gueorguieva_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:18 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:38 UTC</sub>

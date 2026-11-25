@@ -49,7 +49,7 @@ Karvaly GB, Karádi I, Vincze I, Neely MN, Trojnár E, Prohászka Z et al. A pha
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Reproduces paper: every check that could be run on this record passed.**
 
 None of the extracted parameters is atorvastatin's own; they describe atorvastatin+atorvastatin lactone.
 
@@ -162,8 +162,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_terminal | reference | pass | 5.1 | 5.135 | 1.007 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 6.3 | 5.135 | 0.8151 | h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 5.1 | 5.135 | 1.007 | reported 5.1 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 6.3 | 5.135 | 0.8151 | reported 6.3 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

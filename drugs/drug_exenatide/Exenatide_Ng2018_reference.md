@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> The exenatide model was rejected because the peripheral compartment has no path from the dose, and its volume is 8.89 liters.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Ng2018_reference" status="rejected" stale="false" population="" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Ng CM, Tang F, Seeholzer SH, Zou Y, De León DD. Population pharmacokinetics of 
 
 ### Reviewer guidance
 
-**The exenatide model was rejected because the peripheral compartment has no path from the dose, and its volume is 8.89 liters.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record describes a two-compartment structure, yet the peripheral compartment is unreachable from the dose site. The model builder specified an apparent peripheral volume of 8.89 liters and a central volume of 111.0 ml/kg. A second reader disagreed on several parameter values, citing 343 versus 75 and 15.2 versus 63. Extracted — exenatide: CL 2.3 ml kg À1 min À1, V/F 111 ml kg À1, V2/F 8.89 l.
+Extracted — exenatide: CL 2.3 ml kg À1 min À1, V/F 111 ml kg À1, V2/F 8.89 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 75, the second reading 343; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

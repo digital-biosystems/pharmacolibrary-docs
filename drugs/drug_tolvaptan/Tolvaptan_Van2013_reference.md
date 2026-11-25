@@ -226,16 +226,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T1_t_half_alpha | reference | skipped | 3.2 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 4.5 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 5.7 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | fail | 10 | 5.645 | 0.5645 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 11.5 | 5.645 | 0.4908 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 12.6 | 5.645 | 0.448 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 13.5 | 5.645 | 0.4181 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 17.7 | 5.645 | 0.3189 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 10 | 5.645 | 0.5645 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 11.5 | 5.645 | 0.4908 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 12.6 | 5.645 | 0.448 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 10 | 5.645 | 0.5645 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 17.7 | 5.645 | 0.3189 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 10 | 5.645 | 0.5645 | reported 10.0 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 11.5 | 5.645 | 0.4908 | reported 11.5 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 12.6 | 5.645 | 0.448 | reported 12.6 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 13.5 | 5.645 | 0.4181 | reported 13.5 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 17.7 | 5.645 | 0.3189 | reported 17.7 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 10 | 5.645 | 0.5645 | reported 10.0 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 11.5 | 5.645 | 0.4908 | reported 11.5 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 12.6 | 5.645 | 0.448 | reported 12.6 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 10 | 5.645 | 0.5645 | reported 10.0 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 17.7 | 5.645 | 0.3189 | reported 17.7 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

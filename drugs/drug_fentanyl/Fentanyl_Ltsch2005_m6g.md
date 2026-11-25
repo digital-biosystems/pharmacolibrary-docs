@@ -40,7 +40,7 @@ Lötsch J. Pharmacokinetic-pharmacodynamic modeling of opioids. Journal of pain 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,6 +53,8 @@ Lötsch J. Pharmacokinetic-pharmacodynamic modeling of opioids. Journal of pain 
 **This paper's disposition core is incomplete; t1/2z and t1/2γ have no unit.**
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Andersen_1986, Bower_1982, Torda_1997) cannot stand in for this paper's evidence. Without a unit the value cannot be converted, so the model cannot use it. Extracted — morphine: t1/2z 2.8, t1/2γ 2.6; fentanyl: CL 83.7 ml/min/kg, V 270 litre, kabs 0.27 minute -1, tlag 15 min.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -98,6 +100,35 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 - transposed table Lötsch_2005_table_1: logical view retains original source coordinates
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.1 (1/10 fields) | 9 |
+
+<details><summary>9 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['morphine', 'morphine-6-glucuronide', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[pt number 1 keo three doses]` | 0.27 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2,ke0]` | 2.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1pp ranged from]` | 15.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the total body clearance was]` | 83.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v"]` | 269.7 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[γ]` | 2.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | fentanyl | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | fentanyl | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

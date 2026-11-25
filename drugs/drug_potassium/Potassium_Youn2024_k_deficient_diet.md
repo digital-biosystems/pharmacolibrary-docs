@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Potassium’s volume of distribution, reported as 1.3 mL/kg, was rejected for an implausible clearance/volume magnitude attributed to unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Youn2024_k_deficient_diet" status="rejected" stale="false" population="rats" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Youn JH, Gili S, Oh Y, McDonough AA, Higgins J. Kinetic Modeling of In Vivo K+ D
 
 ### Reviewer guidance
 
-**Potassium’s volume of distribution, reported as 1.3 mL/kg, was rejected for an implausible clearance/volume magnitude attributed to unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports a volume of distribution of 1.3 mL/kg, and a reported unit could not be converted to SI, leaving the parameter without an SI value. A second reader disputed extraction of the volume, the absorption rate constant of 1.4 h−1, and the absorption lag time of 2.17 days; that reader also identified the dose and measured analyte as 41K and Δ41K/39K rather than potassium. Extracted — potassium: k21 0.298 1/min, k31 0.199 1/min, kic 3.33 fast, V 1.3 mL/kg, kabs 1.4 h−1, tlag 2.17 days.
+A reported unit could not be converted (kic), so that value has no SI equivalent. Extracted — potassium: k21 0.298 1/min, k31 0.199 1/min, kic 3.33 fast, V 1.3 mL/kg, kabs 1.4 h−1, tlag 2.17 days.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has potassium, the second reading 41K (stable isotope potassium); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -17,9 +17,7 @@ Ciltacabtagene autoleucel is an antineoplastic cell therapy used to treat multip
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Wu_2022_estimate_a_rse](drugs/drug_ciltacabtagene_autoleucel/CiltacabtageneAutoleucel_Wu2022_estimate_a_rse.md) | — | 1-compartment (no model) | 3 | Wu LS et al., Population-based cellular kinetic chara…, Clinical and translational… (2022) | [10.1111/cts.13421](https://doi.org/10.1111/cts.13421) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ mean](drugs/drug_ciltacabtagene_autoleucel/CiltacabtageneAutoleucel_Wu2022_mean.md) | — | 1-compartment (no model) | 6 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ median](drugs/drug_ciltacabtagene_autoleucel/CiltacabtageneAutoleucel_Wu2022_median.md) | — | 1-compartment (no model) | 6 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Wu_2022_reference](drugs/drug_ciltacabtagene_autoleucel/CiltacabtageneAutoleucel_Wu2022_reference.md) | — | general linear (no model) | 7 | Wu LS et al., Population-based cellular kinetic chara…, Clinical and translational… (2022) | [10.1111/cts.13421](https://doi.org/10.1111/cts.13421) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -33,18 +31,24 @@ Ciltacabtagene autoleucel is an antineoplastic cell therapy used to treat multip
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:28 | 2:53 | 0/3/0 | 0/0/0 | 0/0/0 | 39,203/15,487 | openai / gpt-6-luna | 2 | 0/1 | 2/0 | 0 |
+| 2026-11-23 11:08 | 4:39 | 0/1/0 | 0/0/0 | 0/0/0 | 65,393/16,908 | einfracz / qwen3.8-27b | 2 | 0/1 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 2 matched, 2 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Wu_2022 | not_relevant | 0 | 0 | The paper describes a population PK model for CAR-T kinetics but explicitly states that no demographic or baseline characteristics had significant effects, and it does not investigate the impact of specific gene variants or genotypes. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciltacabtagene_autoleucel%5D&body=Drug%3A%20ciltacabtagene_autoleucel%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciltacabtagene_autoleucel/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 22:26 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 11:03 UTC</sub>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The 100.0 microliter volume of distribution for cilnidipine in rats is outside physiological limits, causing rejection.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="cilnidipine" model-id="Cilnidipine_Suryawanshi2026_reference" status="rejected" stale="false" population="male wistar rats" measured-compound="cilnidipine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Suryawanshi A, Ratnaparkhi M, Shinde R. Preclinical evaluation of cilnidipine na
 
 ### Reviewer guidance
 
-**The 100.0 microliter volume of distribution for cilnidipine in rats is outside physiological limits, causing rejection.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record relies on abstract-only summary statistics, so the volume value is an assumption rather than a fitted parameter. A 100.0 microliter distribution is implausibly small for a small molecule in a rat, indicating a scale error. A second reader disagreed that this volume value should be recorded, noting it was not explicitly stated in the source text. Extracted — cilnidipine: Cmax 892 ng/mL, tmax 1 h, AUC∞ 6.12e+03 ng·h/mL, MRT 11.2 h, V 100 µl.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cilnidipine: Cmax 892 ng/mL, tmax 1 h, AUC∞ 6.12e+03 ng·h/mL, MRT 11.2 h, V 100 µl.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 2.65-fold: this record has none, the second reading 2.65; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

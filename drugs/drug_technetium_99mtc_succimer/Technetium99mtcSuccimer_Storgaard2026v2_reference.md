@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper studies a different drug, and clearance values conflict with a second reader's extraction.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="technetium (99mTc) succimer" model-id="Technetium99mtcSuccimer_Storgaard2026v2_reference" status="rejected" stale="false" population="" measured-compound="technetium_99mtc_succimer" parameterization="apparent" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Storgaard IK, Nielsen RL, Houlind MB, Bornæs O, Christensen LWS, Andersen AL et
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper studies a different drug, and clearance values conflict with a second reader's extraction.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The relevance screen confirmed the source paper does not mention technetium 99mTc succimer in its title or abstract. Additionally, the apparent clearance value of 162.0 L h−1 in this record was disputed by a second reader who recorded a value of 765. The second reader also failed to locate a value corresponding to the 539.0 L peripheral volume in this record, identifying it as null instead. Extracted — technetium 99mtc succimer: CL/F 162 L h−1, V/F 1.67e+03 L, V2 539 L, Q/F 183 L h−1.
+Extracted — technetium 99mtc succimer: CL/F 162 L h−1, V/F 1.67e+03 L, V2 539 L, Q/F 183 L h−1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q22: this record has 696, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,7 +142,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.429, 0 of 1 reader(s) agree | 0.429 | cross-check disputed by a second reader: verdict disputed, agreement 0.429, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.429 (6 of 14 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.429 | cross-check contradicted by a second reader: verdict disputed; agreement 0.429 (6 of 14 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -170,4 +170,4 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btechnetium_99mtc_succimer%5D%20Technetium99mtcSuccimer_Storgaard2026v2_reference&body=Drug%3A%20technetium_99mtc_succimer%0ARecord%3A%20Technetium99mtcSuccimer_Storgaard2026v2_reference%0APaper%3A%20Storgaard_2026_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_technetium_99mtc_succimer/Technetium99mtcSuccimer_Storgaard2026v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 19:13 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 15:44 UTC</sub>

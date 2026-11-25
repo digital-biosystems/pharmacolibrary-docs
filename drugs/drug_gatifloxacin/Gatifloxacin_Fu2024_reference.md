@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Paper Fu_2024 does not study gatifloxacin, so the extracted clearance and volume parameters for gatifloxacin are invalid.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="gatifloxacin" model-id="Gatifloxacin_Fu2024_reference" status="rejected" stale="false" population="elderly" measured-compound="gatifloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Fu G, Sun W, Tan Z, Liang B, Cai Y. An insight into pharmacokinetics and dose op
 
 ### Reviewer guidance
 
-**Paper Fu_2024 does not study gatifloxacin, so the extracted clearance and volume parameters for gatifloxacin are invalid.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The record lists a total clearance of 5.28 L/h and a derived volume of 10.8929 L for gatifloxacin, but the source paper does not mention this drug. The relevance screen rejected the paper because the subject is another molecule, not gatifloxacin or its metabolite. A second reader also disagreed with the extraction, noting that specific parameter values were missing or mismatched in the record. Extracted — gatifloxacin: CL 5.28 L h−1, V 10.9 L.
+Extracted — gatifloxacin: CL 5.28 L h−1, V 10.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q369: this record has none, the second reading 40; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -125,7 +125,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.667 (6 of 9 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (6 of 9 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

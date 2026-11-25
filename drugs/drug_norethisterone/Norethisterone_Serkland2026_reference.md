@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Norethisterone’s reported total clearance of 0.153 L/day is unsupported because the paper concerns another drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="norethisterone" model-id="Norethisterone_Serkland2026_reference" status="rejected" stale="false" population="" measured-compound="norethisterone" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Serkland TT, Oma AF, Hallin EI, Øverås MH, Nygaard GO, Myhr KM et al. Pharmaco
 
 ### Reviewer guidance
 
-**Norethisterone’s reported total clearance of 0.153 L/day is unsupported because the paper concerns another drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-Neither the paper’s title nor abstract names norethisterone, and the relevance assessment rejected it as a paper about another drug. The record reports norethisterone’s intercompartmental clearance as 0.22 L/day, while the second reader disputes which of two clearance fields should receive 0.234. Extracted — norethisterone: CL 0.153 L/day, V1 2.58 L, V2 1.95 L, Q 0.22 L/day.
+Extracted — norethisterone: CL 0.153 L/day, V1 2.58 L, V2 1.95 L, Q 0.22 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 0.234; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.818 (9 of 11 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

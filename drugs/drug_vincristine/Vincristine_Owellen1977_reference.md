@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vincristine&quot;,&quot;href&quot;:&quot;drugs/drug_vincristine/&quot;},{&quot;label&quot;:&quot;Owellen_1977 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vincristine_Centanni2024_reference&quot;,&quot;label&quot;:&quot;Centanni_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vincristine/Vincristine_Centanni2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vincristine_Owellen1977_reference&quot;,&quot;label&quot;:&quot;Owellen_1977_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vincristine/Vincristine_Owellen1977_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vincristine_Centanni2024_reference&quot;,&quot;label&quot;:&quot;Centanni_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vincristine/Vincristine_Centanni2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vincristine — `Vincristine_Owellen1977_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was held because the inter-compartment rate constants for vincristine were left as library defaults rather than estimated from the paper.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="vincristine" model-id="Vincristine_Owellen1977_reference" status="needs_review" stale="false" population="humans" measured-compound="vindesine and vincristine" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="vincristine" model-id="Vincristine_Owellen1977_reference" status="rejected" stale="false" population="humans" measured-compound="vindesine and vincristine" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Owellen RJ, Root MA, Hains FO. Pharmacokinetics of vindesine and vincristine in humans. Cancer research 37(8 Pt 1):2603–2607 (1977).
@@ -20,15 +20,13 @@ Owellen RJ, Root MA, Hains FO. Pharmacokinetics of vindesine and vincristine in 
 
 ## Model
 
-**Structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
+**Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_vincristine/Vincristine_Owellen1977_reference/Vincristine_Owellen1977_reference.svg" alt="Vincristine_Owellen1977_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Parameters:** 5 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -36,12 +34,11 @@ Owellen RJ, Root MA, Hains FO. Pharmacokinetics of vindesine and vincristine in 
 | t1/2beta | t1/2β | 99.0 | min |
 | t1/2gamma | t1/2γ | 1213 | min |
 | Vc (Valpha) | V1 | 4.81 | liters |
-| Vbeta | V | 58.2 | liters |
-| difference in CL | CL | 1.87 | L/h |
+| Vbeta | V2 | 58.2 | liters |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133), qwen3.8-27b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,24 +48,23 @@ Owellen RJ, Root MA, Hains FO. Pharmacokinetics of vindesine and vincristine in 
 
 ### Reviewer guidance
 
-**The model was held because the inter-compartment rate constants for vincristine were left as library defaults rather than estimated from the paper.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record combines summary statistics for both vindesine and vincristine, which a second reader disputed, insisting the analyte was only vincristine. Consequently, the inter-compartmental transfer rates required for the two-compartment structure were missing from the text and no explicit values were provided. The clearance value of 1.87 L/h was also rejected by the second reader, who identified it as a difference rather than total clearance. Extracted — vindesine and vincristine: t1/2α 3.24 min, t1/2β 99 min, t1/2γ 1.21e+03 min, V1 4.81 liters, V 58.2 liters, CL 1.87 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is vincristine's own; they describe vindesine and vincristine. Extracted — vindesine and vincristine: t1/2α 3.24 min, t1/2β 99 min, t1/2γ 1.21e+03 min, V1 4.81 liters, V2 58.2 liters.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has vindesine and vincristine, the second reading vincristine; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vindesine and vincristine, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| t1/2 alpha | `Q59` · t1/2α | 3.24 | min | 194.4 | s | min | exact (1) | Owellen_1977:abstract, Owellen_1977:abstract |
-| t1/2beta | `Q60` · t1/2β | 99.0 | min | 5940 | s | min | llm_confirmed (0.6) | Owellen_1977:abstract, Owellen_1977:abstract |
-| t1/2gamma | `Q89` · t1/2γ | 1213 | min | 7.278e+04 | s | min | llm_confirmed (0.6) | Owellen_1977:abstract |
+| t1/2 alpha | `Q59` · t1/2α | 3.24 | min | 194.4 | s | min | half_life_rule (0.95) | Owellen_1977:abstract, Owellen_1977:abstract |
+| t1/2beta | `Q60` · t1/2β | 99.0 | min | 5940 | s | min | half_life_rule (0.95) | Owellen_1977:abstract, Owellen_1977:abstract |
+| t1/2gamma | `Q89` · t1/2γ | 1213 | min | 7.278e+04 | s | min | half_life_rule (0.95) | Owellen_1977:abstract |
 | Vc (Valpha) | `Q63` · V1 | 4.81 | liters | 0.00481 | m3 | l | exact (1) | Owellen_1977:abstract |
-| Vbeta | `Q61` · V | 58.2 | liters | 0.0582 | m3 | l | llm_confirmed (0.6) | Owellen_1977:abstract, Owellen_1977:abstract |
-| difference in CL | `Q22` · CL | 1.87 | L/h | 5.194e-07 | m3/s | L/h | review_gapfill (0.7) | Centanni_2024:review |
+| Vbeta | `Q64` · V2 | 58.2 | liters | 0.0582 | m3 | l | llm_corrected (0.6) | Owellen_1977:abstract, Owellen_1977:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,35 +73,44 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['k12', 'k21']
-
 **Interpretation flags:**
-- dropped duplicate Q61 ('Vgamma', value '598') — already have one for this compound
-- dropped duplicate Q61 ('Valpha', value '4.53') — already have one for this compound
+- dropped unlinked row (NIL): 'Vgamma' — extend the ontology if this is a real PK parameter (source ['Owellen_1977:abstract'])
+- dropped duplicate Q63 ('Valpha', value '4.53') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vindesine and vincristine
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
-- molar mass: no plausible PubChem entry for 'vindesine and vincristine' ('vindesine and vincristine') — left in mass units
-- molar mass: none found for 'vindesine and vincristine' — its concentrations stay mass-only
+- molar mass: none of 2 PubChem candidate(s) is 'vindesine and vincristine' (LLM) — left in mass units
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Centanni_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Owellen_1977_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
 | `qwen3.8-27b` | not confirmed | 0.133 (2/15 fields) | 13 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>26 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[t1/2 alpha]` |  | 3.24 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 alpha]` | 3.24 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2beta]` |  | 99.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2beta]` | 99.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2gamma]` |  | 1213 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2gamma]` | 1213 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vbeta]` |  | 58.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vbeta]` | 58.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` |  | 4.81 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc]` | 4.81 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vgamma]` |  | 598 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | vindesine and vincristine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | vindesine and vincristine | unknown | mismatch |
 | `qwen3.8-27b` | `parameters[difference in cl]` | 1.87 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[t1/2 alpha]` |  | 3.24 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[t1/2 alpha]` | 3.24 |  | only_one_extracted |
@@ -135,29 +140,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Centanni_2024:review'] |
 | C5_dimension_Q59 | pass | [time] |  | ['Owellen_1977:abstract', 'Owellen_1977:abstract'] |
 | C5_dimension_Q60 | pass | [time] |  | ['Owellen_1977:abstract', 'Owellen_1977:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Owellen_1977:abstract', 'Owellen_1977:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Owellen_1977:abstract'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Owellen_1977:abstract', 'Owellen_1977:abstract'] |
 | C5_dimension_Q89 | pass | [time] |  | ['Owellen_1977:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.87 | ['Centanni_2024:review'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 1.87 L/h | ['Centanni_2024:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 58.2 L | ['Owellen_1977:abstract', 'Owellen_1977:abstract'] |
+| C8_topology | fail |  |  |  |
 | C9_phys_window_Q63 | pass | volume within physiological range | 4.81 L | ['Owellen_1977:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=vindesine and vincristine) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
+| C9_phys_window_Q64 | pass | volume within physiological range | 58.2 L | ['Owellen_1977:abstract', 'Owellen_1977:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -169,30 +159,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
-
-<dbs-fmusim paramsurl="drugs/drug_vincristine/Vincristine_Owellen1977_reference/Vincristine_Owellen1977_reference_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_vincristine/Vincristine_Owellen1977_reference/Vincristine_Owellen1977_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C` · parameters `Vincristine_Owellen1977_reference_params.json` · controls `Vincristine_Owellen1977_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvincristine%5D%20Vincristine_Owellen1977_reference&body=Drug%3A%20vincristine%0ARecord%3A%20Vincristine_Owellen1977_reference%0APaper%3A%20Owellen_1977%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vincristine/Vincristine_Owellen1977_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 14:56 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:07 UTC</sub>

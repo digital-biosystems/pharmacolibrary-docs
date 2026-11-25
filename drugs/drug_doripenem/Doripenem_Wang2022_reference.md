@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Doripenem’s absorption rate constant ka has no reported value and was defaulted rather than estimated, leaving the record unsupported for publication.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="doripenem" model-id="Doripenem_Wang2022_reference" status="needs_review" stale="false" population="" measured-compound="doripenem" parameterization="apparent" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Wang Y, Liu X, Li K, Fan Y, Yu J, Wu H et al. Pharmacokinetics and Safety of Dor
 
 ### Reviewer guidance
 
-**Doripenem’s absorption rate constant ka has no reported value and was defaulted rather than estimated, leaving the record unsupported for publication.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-Ka use library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper. The record reports doripenem unbound clearance of 120.0 mL/min, central and peripheral volumes of 8.17 L and 6.95 L, and intercompartmental clearance of 8.54 L/h, but no ka estimate; Tlag was also defaulted, and first-order depot input with apparent parameterization corresponds to extravascular dosing. A second reader disputed the apparent rather than mechanistic parameterization and disagreed on extracted values; agreement was 0.789. Extracted — doripenem: CLu 120 mL/min, V1 8.17 L, V2 6.95 L, Q 8.54 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — doripenem: CLu 120 mL/min, V1 8.17 L, V2 6.95 L, Q 8.54 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 84.4, the second reading 17.6; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -138,7 +138,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.789, 0 of 1 reader(s) agree | 0.789 | cross-check disputed by a second reader: verdict disputed, agreement 0.789, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.789 (15 of 19 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.789 | cross-check contradicted by a second reader: verdict disputed; agreement 0.789 (15 of 19 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Pyrazinamide terminal elimination half-life is 1.2 h, a pharmacokinetically implausible value that contradicts standard literature ranges.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="pyrazinamide" model-id="Pyrazinamide_Peloquin1997_reference" status="rejected" stale="false" population="healthy males" measured-compound="pyrazinamide" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -46,13 +46,13 @@ Peloquin CA, Jaresko GS, Yong CL, Keung AC, Bulpitt AE, Jelliffe RW. Population 
 
 ### Reviewer guidance
 
-**Pyrazinamide terminal elimination half-life is 1.2 h, a pharmacokinetically implausible value that contradicts standard literature ranges.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record was built from the paper abstract alone, so summary statistics replaced fitted model parameters. The reported terminal half-life of 1.2 hours for pyrazinamide is physiologically unrealistic for this compound. A second reader noted that dose information was unclear, and the model contained an unlinked metabolite with no path from the dose. Extracted — pyrazinamide: Cmax 2.44 microg/ml, tmax 1 h, t1/2z 1.2 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pyrazinamide: Cmax 2.44 microg/ml, tmax 1 h, t1/2z 1.2 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pyrazinamide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper reports pharmacokinetic parameters for meropenem, not amoxicillin, which is only a co-medication.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Abulfathi2021_reference" status="rejected" stale="false" population="" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Abulfathi AA, de Jager V, van Brakel E, Reuter H, Gupte N, Vanker N et al. The P
 
 ### Reviewer guidance
 
-**The paper reports pharmacokinetic parameters for meropenem, not amoxicillin, which is only a co-medication.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The study identified the primary analyte as meropenem, while amoxicillin is merely mentioned as a drug co-administered for tuberculosis treatment. Consequently, the extracted clearance, volumes, and intercompartmental clearance values do not belong to the amoxicillin model. The second reader could not locate corresponding parameter values for several fields, finding nulls where the record lists 115, 1, and 70. Extracted — amoxicillin: CL 11.8 L/h, V1 14.2 L/70 kg, V2 3.12 L/70 kg, Q 3.26 L/h/70 kg.
+Extracted — amoxicillin: CL 11.8 L/h, V1 14.2 L/70 kg, V2 3.12 L/70 kg, Q 3.26 L/h/70 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q26: this record has 115, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.7 (7 of 10 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.7 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

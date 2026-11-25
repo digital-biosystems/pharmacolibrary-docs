@@ -17,14 +17,14 @@
   "adminCount": 1.0,
   "adminDuration": 600.0,
   "adminMass": 0.0001,
-  "ka": 5.555555555555556e-05,
+  "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 29370.83611301214
+  "central.C": 16780.79114053123
  },
  "reference_peaks": {
-  "central.C": 0.001161921557610924
+  "central.C": 0.001486923159238961
  },
  "stop_time": 259200.0,
  "template": "PK_1C_enteral",

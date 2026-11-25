@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record was held because the age covariate and lag time were not exercised, and a second reader failed to extract any parameter values.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="roxadustat" model-id="Roxadustat_Takada2022v2_reference" status="needs_review" stale="false" population="Japanese dialysis-dependent chronic kidney disease patients with anaemia" measured-compound="roxadustat" parameterization="apparent" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Takada A, Shibata T, Shiga T, Groenendaal-van de Meent D, Komatsu K. Population 
 
 ### Reviewer guidance
 
-**The record was held because the age covariate and lag time were not exercised, and a second reader failed to extract any parameter values.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The age covariate (0.791) and lag time (0.287 h) were not simulated, and the lag time used a library placeholder instead of an explicit estimate. A second reader disagreed with the primary analyte and failed to extract values for all seven pharmacokinetic parameters. Extracted — roxadustat: CL/F 0.914 L/h, V1/F 14.4 L, kabs 0.639 h−1, Q/F 0.131 L/h, V2/F 2.89 L, t1/2γ 0.287 h.
+The base model was simulated, not the covariate effects the record defines. Extracted — roxadustat: CL/F 0.914 L/h, V1/F 14.4 L, kabs 0.639 h−1, Q/F 0.131 L/h, V2/F 2.89 L, t1/2γ 0.287 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has roxadustat, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -189,7 +189,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.15, 0 of 1 reader(s) agree | 0.15 | cross-check disputed by a second reader: verdict disputed, agreement 0.15, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.15 (3 of 20 compared fields agree, 16 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.15 | cross-check contradicted by a second reader: verdict disputed; agreement 0.15 (3 of 20 compared fields agree, 16 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

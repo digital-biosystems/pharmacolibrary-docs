@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the paper models atogepant, while naproxen is merely a concomitant medication without fitted PK parameters.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Schlachter2026_reference" status="rejected" stale="false" population="" measured-compound="naproxen" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Schlachter L, Stodtmann S, Voelkner A, Jonsson F, Lagraauw HM, Boinpally RR. Pop
 
 ### Reviewer guidance
 
-**The record is rejected because the paper models atogepant, while naproxen is merely a concomitant medication without fitted PK parameters.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The paper subject check identifies the study as reporting parameters for atogepant, not naproxen, which is mentioned only as a co-medication not requiring dose adjustment. This mismatch means the extracted clearance, volume, and absorption values do not represent the primary analyte's pharmacokinetics in the source context. A cross-check failed with an agreement ratio of 0.643, as 0 of 1 second reader agreed with the initial verdict. Extracted — naproxen: CL/F 22.9 L/h, V1/F 86.1 L, kabs 2.48 /h.
+Extracted — naproxen: CL/F 22.9 L/h, V1/F 86.1 L, kabs 2.48 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 15.6, the second reading 15.6; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.643, 0 of 1 reader(s) agree | 0.643 | cross-check disputed by a second reader: verdict disputed, agreement 0.643, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.714 (10 of 14 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | cross-check contradicted by a second reader: verdict disputed; agreement 0.714 (10 of 14 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

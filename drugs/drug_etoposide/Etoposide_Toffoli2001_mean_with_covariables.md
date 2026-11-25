@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Etoposide clearance is recorded as 1.14 L/h, but the record was held for review because a second reader marked etoposide’s dose-compound and primary-analyte identities unknown.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="etoposide" model-id="Etoposide_Toffoli2001_mean_with_covariables" status="needs_review" stale="false" population="adult patients with solid tumours" measured-compound="etoposide" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Toffoli G, Corona G, Sorio R, Robieux I, Basso B, Colussi AM et al. Population p
 
 ### Reviewer guidance
 
-**Etoposide clearance is recorded as 1.14 L/h, but the record was held for review because a second reader marked etoposide’s dose-compound and primary-analyte identities unknown.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagreed with identifying etoposide as both the dose compound and the primary analyte. Overall agreement was 0.8, with 0 of 1 reader agreeing. Extracted — etoposide: CL 1.14 L/h, V 6.1 l, k12 0.14 1/h, k21 0.07 1/h, Fab 0.44.
+Extracted — etoposide: CL 1.14 L/h, V 6.1 l, k12 0.14 1/h, k21 0.07 1/h, Fab 0.44.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etoposide, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.8 (8 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | cross-check contradicted by a second reader: verdict disputed; agreement 0.8 (8 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

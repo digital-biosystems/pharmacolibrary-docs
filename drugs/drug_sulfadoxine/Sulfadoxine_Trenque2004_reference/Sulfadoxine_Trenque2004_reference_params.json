@@ -1,9 +1,6 @@
 {
  "dose_source": "library default",
  "model_id": "Sulfadoxine_Trenque2004_reference",
- "molar_masses": {
-  "central.C": 0.310329
- },
  "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
@@ -11,7 +8,6 @@
  "parameters": {
   "Cl": 6.365740740740741e-08,
   "F": 1.0,
-  "MM": 0.310329,
   "VdPerKg": 0.0005142857142857143,
   "adminCount": 1.0,
   "adminDuration": 600.0,

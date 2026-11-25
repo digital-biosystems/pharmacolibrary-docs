@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> All five procaine pharmacokinetic parameters extracted from the abstract were disputed by the second reader, who recorded no values for them.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="procaine" model-id="Procaine_Seifen1979_reference" status="needs_review" stale="false" population="women undergoing hysterectomy" measured-compound="procaine" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Seifen AB, Ferrari AA, Seifen EE, Thompson DS, Chapman J. Pharmacokinetics of in
 
 ### Reviewer guidance
 
-**All five procaine pharmacokinetic parameters extracted from the abstract were disputed by the second reader, who recorded no values for them.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so summary statistics stood in for a fitted model. The second reader disagreed on the dose compound and primary analyte, recording 'unknown' instead of procaine. The second reader recorded null values for distribution half-life (2.49 min), elimination half-life (7.69 min), clearance (0.08 L/kg/min), and both volumes (0.79 L/kg and 0.51 L/kg). Consequently, the cross-check resulted in a verdict dispute with an agreement of 0.154. Extracted — procaine: t1/2α 2.49 minutes, t1/2β 7.69 minutes, Vss 0.79 L/kg, CL 0.08 L/kg/min, V 0.51 L/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — procaine: t1/2α 2.49 minutes, t1/2β 7.69 minutes, Vss 0.79 L/kg, CL 0.08 L/kg/min, V 0.51 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has procaine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -149,7 +149,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.154, 0 of 1 reader(s) agree | 0.154 | cross-check disputed by a second reader: verdict disputed, agreement 0.154, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.154 (2 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.154 | cross-check contradicted by a second reader: verdict disputed; agreement 0.154 (2 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

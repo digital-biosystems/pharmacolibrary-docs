@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because the second reader disagreed with the extracted terminal half-life, volume, and clearance values for mezlocillin.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="mezlocillin" model-id="Mezlocillin_Modr1982_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="mezlocillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Modr Z, Dvorácek K, Janků I, Krebs V. [Pharmacokinetics and dosage of mezlocil
 
 ### Reviewer guidance
 
-**The record was held back because the second reader disagreed with the extracted terminal half-life, volume, and clearance values for mezlocillin.**
+**cross_check_disputed; x1_cross_check.**
 
-The source is abstract-only, so reported summary statistics stand in for a fitted model. The second reader could not locate the half-life (72.7 minutes), volume of distribution (15.3 l), or clearance (2.447 ml/s) in the text. Consequently, the cross-check resulted in 0 of 1 reader agreement. Extracted — mezlocillin: t1/2β 72.7 minutes, CL 2.45 ml/s, V 15.3 l.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mezlocillin: t1/2β 72.7 minutes, CL 2.45 ml/s, V 15.3 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mezlocillin, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.182, 0 of 1 reader(s) agree | 0.182 | cross-check disputed by a second reader: verdict disputed, agreement 0.182, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.182 (2 of 11 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.182 | cross-check contradicted by a second reader: verdict disputed; agreement 0.182 (2 of 11 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

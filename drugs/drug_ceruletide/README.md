@@ -18,12 +18,6 @@ Ceruletide is an oligopeptide that stimulates digestive secretions and is used t
 
 _not available_
 
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zetler_1984_smooth_muscle_contraction_isolated_intestinal_preparations_and_gallbladders](drugs/drug_ceruletide/pd_Zetler_1984_smooth_muscle_contraction_isolated_intestinal_pr.md) | smooth muscle contraction (isolated intestinal preparations and gallbladders) ← ceruletide · direct Emax (saturable) effect | — | Zetler G, Ceruletide, ceruletide analogues and ch…, Peptides (1984) | [10.1016/0196-9781(84)90014-7](https://doi.org/10.1016/0196-9781(84)90014-7) |
-
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -36,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:26 | 0:13 | 0/0/0 | 0/1/0 | 0/0/0 | 13,215/774 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 19:37 | 0:11 | 0/0/0 | 0/0/0 | 0/0/0 | 3,359/176 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -53,18 +47,23 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Verme_1990.pdf` | Verme TB et al., Regulation of pancreatic duct epithelia…, The American journal of phy… (1990) | pd | 4 | [10.1152/ajpgi.1990.258.6.G833](https://doi.org/10.1152/ajpgi.1990.258.6.G833) | [2193537](https://www.ncbi.nlm.nih.gov/pubmed/2193537) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 21:26 UTC</sub>
+<sub>queue written 2026-11-23 19:37 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Flandez_2014 | not_relevant | 0 | 0 | Paper studies Nr5a2 in pancreatitis/tumorigenesis; caerulein is an experimental inducer, no gene variant effect on drug PK/PD parameters reported. |
-| popPK | Harro_1993 | irrelevant | 0 | 0 | In-vitro rat cortical slice electrophysiology study using caerulein as a receptor agonist, with no PK parameters reported. |
-| popPK | Morisset_1989 | irrelevant | 0 | 0 | This is a pharmacodynamic study of EGF and caerulein effects on pancreatic secretion in rats; no PK disposition parameters for caerulein are reported. |
+| popPK | Flandez_2014 | irrelevant | 0 | 0 | The study focuses on the genetic role of Nr5a2 in pancreatic tumorigenesis in mice using caerulein to induce pancreatitis, not the pharmacokinetics of ceruletide. |
+| PGx | Flandez_2014 | not_relevant | 0 | 0 | The paper investigates the role of Nr5a2 in pancreatitis and tumorigenesis; the mention of 'caerulein' refers to the toxic agent used to induce pancreatitis in the animal model, not the therapeutic drug 'ceruletide' being studied for pharmacogenomic effects on its PK/PD. |
+| popPK | Harro_1993 | irrelevant | 0 | 0 | The study is a mechanistic electrophysiology experiment investigating receptor effects in rat brain slices, containing no pharmacokinetic parameters for caerulein (ceruletide). |
+| PGx | Harro_1993 | not_relevant | 0 | 0 | The study investigates the neurobiological interaction between CCKB receptor activation and glutamate in rat brain slices, not the pharmacogenomics of ceruletide. |
+| popPK | Morisset_1989 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic effects of epidermal growth factor and caerulein on pancreatic cell proliferation and enzyme secretion, not on the pharmacokinetic disposition parameters (CL, V, t1/2) of ceruletide. |
+| PGx | Morisset_1989 | not_relevant | 0 | 0 | The study investigates the interaction between EGF and caerulein (not ceruletide) in a rat model without examining any genetic variants or pharmacogenomic effects. |
 | PGx | Tanoğlu_2021 | not_relevant | 1 | 3 | Study measures gene expression (Abcc2/5, Abcg2) as disease/treatment markers, not a genotype effect on ceruletide PK/PD parameters. |
-| popPK | Verme_1990 | irrelevant | 0 | 0 | In-vitro cell growth study where caerulein is only a tested trophic factor; no PK parameters reported. |
-| popPK | Zetler_1984 | irrelevant | 0 | 0 | In-vitro pharmacodynamic potency study (EC50/Emax) of ceruletide on isolated tissues, no PK disposition parameters. |
+| popPK | Verme_1990 | irrelevant | 0 | 0 | The paper is an in vitro mechanistic study on pancreatic duct cell growth, not a pharmacokinetic study, and ceruletide is used as a trophic factor rather than the subject of PK analysis. |
+| PGx | Verme_1990 | not_relevant | 0 | 0 | The paper investigates the trophic effects of various growth factors on pancreatic duct epithelial growth and does not involve pharmacogenomics, ceruletide pharmacokinetics, or pharmacodynamics. |
+| popPK | Zetler_1984 | irrelevant | 0 | 0 | This is an in-vitro pharmacodynamic study measuring smooth muscle stimulation, not a pharmacokinetic study with disposition parameters. |
+| PGx | Zetler_1984 | not_relevant | 0 | 0 | This study is a pharmacological investigation of smooth muscle stimulation and potency/efficacy in animal models, not a pharmacogenomic study linking gene variants to PK/PD parameters in humans. |
 
 
 </details>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.50).">human + animal</span>
 
-> Record rejected because Q has dimensionally incorrect units, and V3 is labeled a volume but carries rate units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit µmol/hr/kg ([substance] / [time]) vs [mass] / [time]; Q30 unit Qm ([length]) vs [length] ** 3 / [time]; Q77 unit L/hr ([length] ** 3 / [time]) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Daryani2016_reference" status="rejected" stale="false" population="children with pediatric ependymoma" measured-compound="fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Daryani VM, Patel YT, Tagen M, Turner DC, Carcaboso AM, Atkinson JM et al. Trans
 
 ### Reviewer guidance
 
-**Record rejected because Q has dimensionally incorrect units, and V3 is labeled a volume but carries rate units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit µmol/hr/kg ([substance] / [time]) vs [mass] / [time]; Q30 unit Qm ([length]) vs [length] ** 3 / [time]; Q77 unit L/hr ([length] ** 3 / [time]) vs [length] ** 3.**
 
-The intercompartmental clearance Q is given 1.67 with the unit 'Qm', which is not a recognized pharmacokinetic unit for a clearance. The third compartment volume V3 is listed as 0.001 with the unit L/hr, which is a rate unit rather than a volume unit. The second reader noted missing values for systemic clearance and an additional covariate parameter not present in the record. Extracted — fluorouracil: Vmax 2.04e+03 µmol/hr/kg, V1 0.962 L/kg, Q 1.67 Qm, V2 0.332 L/kg, fu 0.37 fu,m, V3 0.001 L/hr, CL 256 L/h, kabs 0.13 1/h.
+A reported unit could not be converted (Vmax, Q and fu), so that value has no SI equivalent. Extracted — fluorouracil: Vmax 2.04e+03 µmol/hr/kg, V1 0.962 L/kg, Q 1.67 Qm, V2 0.332 L/kg, fu 0.37 fu,m, V3 0.001 L/hr, CL 256 L/h, kabs 0.13 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading 5-fluorouracil; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

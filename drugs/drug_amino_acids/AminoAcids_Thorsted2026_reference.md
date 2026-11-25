@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper concerns a different drug, and absorption parameters were not reported but defaulted.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="amino acids" model-id="AminoAcids_Thorsted2026_reference" status="rejected" stale="false" population="" measured-compound="amino_acids" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Thorsted A, Tanneau L, Lavalley-Morelle A, Follows R, Jacques L, Bird N et al. P
 
 ### Reviewer guidance
 
-**The paper concerns a different drug, and absorption parameters were not reported but defaulted.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The source text is identified as a review reference where the paper subject is not amino acids. The model builder defaulted absorption and delay parameters, inventing an absorption profile not present in the source. The second reader disagreed with the clearance value, reporting 0.093 instead of 0.113. Extracted — amino acids: CL/F 0.113 L/day, V/F 6.44 L.
+Extracted — amino acids: CL/F 0.113 L/day, V/F 6.44 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has 778.8, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Oxcarbazepine was rejected because its 10-monohydroxy derivative was flagged unreachable, despite oxcarbazepine clearance being recorded as 220 L/h.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="oxcarbazepine" model-id="Oxcarbazepine_Sinha2026_population_estimates" status="rejected" stale="false" population="children and adolescents" measured-compound="oxcarbazepine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -53,13 +53,13 @@ Sinha J, Zimmerman K, Balevic SJ, Hornik C, Muller WJ, Rathore M et al. Populati
 
 ### Reviewer guidance
 
-**Oxcarbazepine was rejected because its 10-monohydroxy derivative was flagged unreachable, despite oxcarbazepine clearance being recorded as 220 L/h.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The finding means the derivative has no path from the dose in the reported model, although the record lists metabolism from oxcarbazepine to the derivative and interconversion back. The second reader’s link descriptions differ only in naming the derivative. The record has no value for the interconversion rate Kbt, while the second reader reports 0.0433; this discrepancy does not establish the cause of the unreachable finding. Extracted — 10-monohydroxy derivative: CL 3.05 L/h, Km 0.671, V 50 L; oxcarbazepine: CL 220 L/h, V1 33.1 L, kabs 0.269 1/h.
+Extracted — 10-monohydroxy derivative: CL 3.05 L/h, Km 0.671, V 50 L; oxcarbazepine: CL 220 L/h, V1 33.1 L, kabs 0.269 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has oxcarbazepine → 10-monohydroxy derivative (metabolism); 10-monohydroxy derivative → oxcarbazepine (interconversion), the second reading oxcarbazepine → 10‐monohydroxy derivative (mhd) (metabolism); 10‐monohydroxy derivative (mhd) → oxcarbazepine (interconversion); it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

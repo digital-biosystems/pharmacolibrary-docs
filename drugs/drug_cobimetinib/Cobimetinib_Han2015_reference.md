@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="cobimetinib" model-id="Cobimetinib_Han2015_reference" status="rejected" stale="false" population="patients with various solid tumors, mainly melanoma" measured-compound="cobimetinib" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cobimetinib" model-id="Cobimetinib_Han2015_reference" status="rejected" stale="false" population="patients with solid tumors" measured-compound="cobimetinib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Han K, Jin JY, Marchand M, Eppler S, Choong N, Hack SP et al. Population pharmacokinetics and dosing implications for cobimetinib in patients with solid tumors. Cancer chemotherapy and pharmacology 76(5):917–924 (2015).
@@ -17,7 +17,7 @@ Han K, Jin JY, Marchand M, Eppler S, Choong N, Hack SP et al. Population pharmac
 
 ## Population and dosing
 
-**Population:** patients with various solid tumors, mainly melanoma · condition solid tumors · age group adult · n = 487.
+**Population:** patients with solid tumors · condition solid tumors · age group adult · n = 487.
 
 ## Model
 
@@ -33,7 +33,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +47,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-Independently confirmed by `qwen3.8-27b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -57,23 +57,21 @@ Independently confirmed by `qwen3.8-27b`.
 - table section iov: 'apparent clearance (CL/F)' routed out of structural estimates ('Inter-occasion variability on relative bioavailability was estimated at 46 %.')
 - table section iov: 'central volume of distribution (V2/F)' routed out of structural estimates ('Inter-occasion variability on relative bioavailability was estimated at 46 %.')
 - table section iov: 'terminal half-life' routed out of structural estimates ('Inter-occasion variability on relative bioavailability was estimated at 46 %.')
-- table section iov: 'relative bioavailability' routed out of structural estimates ('Inter-occasion variability on relative bioavailability was estimated at 46 %.')
-- table section iov: 'CL/F decreased with age' routed out of structural estimates ('Inter-occasion variability on relative bioavailability was estimated at 46 %.')
-- table section iov: 'V2/F increased with body weight (BWT)' routed out of structural estimates ('Inter-occasion variability on relative bioavailability was estimated at 46 %.')
+- table section iov: 'Inter-occasion variability on relative bioavailability' routed out of structural estimates ('Inter-occasion variability on relative bioavailability was estimated at 46 %.')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cobimetinib
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Han_2015_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Han_2015_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (4/4 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -114,4 +112,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcobimetinib%5D%20Cobimetinib_Han2015_reference&body=Drug%3A%20cobimetinib%0ARecord%3A%20Cobimetinib_Han2015_reference%0APaper%3A%20Han_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cobimetinib/Cobimetinib_Han2015_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:54 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:31 UTC</sub>

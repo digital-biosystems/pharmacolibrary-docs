@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
 
-> The doxorubicin model was rejected because the intercompartmental clearance and normalized volume parameters had units inconsistent with their pharmacokinetic definitions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q410 unit h-1 (1 / [time]) vs dimensionless; Q352 unit ml/g ([length] ** 3 / [mass]) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Harashima1999_value" status="rejected" stale="false" population="rats with tumors" measured-compound="free doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -62,13 +62,13 @@ Harashima H, Tsuchihashi M, Iida S, Doi H, Kiwada H. Pharmacokinetic/pharmacodyn
 
 ### Reviewer guidance
 
-**The doxorubicin model was rejected because the intercompartmental clearance and normalized volume parameters had units inconsistent with their pharmacokinetic definitions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q410 unit h-1 (1 / [time]) vs dimensionless; Q352 unit ml/g ([length] ** 3 / [mass]) vs [length] ** 3.**
 
-The intercompartmental clearance of 0.269 ml/h was flagged for a unit conflict involving a rate constant dimension, and the normalized volume of 5.9 ml/g was recorded as mass-normalized rather than as a pure volume. The elimination clearance unit could not be converted to standard SI units, leaving the parameter without a valid physical value. Extracted — doxorubicin: V 0.685 ml/25 g, k12 0.284 1/h, k21 0.0467 h-1, kel 22 h-1, Q 0.269 ml/h, CL 20.7 L/h, CLu 0.0125 ml/h, Kp 0.0323 h-1, … (+4).
+A reported unit could not be converted (Kp), so that value has no SI equivalent. Extracted — doxorubicin: V 0.685 ml/25 g, k12 0.284 1/h, k21 0.0467 h-1, kel 22 h-1, Q 0.269 ml/h, CL 20.7 L/h, CLu 0.0125 ml/h, Kp 0.0323 h-1, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has liposomal doxorubicin, the second reading doxorubicin; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

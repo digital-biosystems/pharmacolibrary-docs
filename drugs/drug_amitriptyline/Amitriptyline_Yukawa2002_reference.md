@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;amitriptyline&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/&quot;},{&quot;label&quot;:&quot;Yukawa_2002 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Brsen2001_reference&quot;,&quot;label&quot;:&quot;Br\u00f8sen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Brsen2001_reference&quot;,&quot;label&quot;:&quot;Br\u00f8sen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was refused because it attributes amitriptyline CL/F of 141.65 L/h to a paper about haloperidol, where amitriptyline was only a covariate.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="amitriptyline" model-id="Amitriptyline_Yukawa2002_reference" status="rejected" stale="false" population="" measured-compound="amitriptyline" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Yukawa E, Hokazono T, Yukawa M, Ichimaru R, Maki T, Matsunaga K et al. Populatio
 
 ### Reviewer guidance
 
-**The record was refused because it attributes amitriptyline CL/F of 141.65 L/h to a paper about haloperidol, where amitriptyline was only a covariate.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The record lists amitriptyline apparent clearance of 141.65 L/h and volume of distribution of 9.5 L/kg, but the paper studied haloperidol and reported no amitriptyline pharmacokinetic parameters. The model builder defaulted the absorption rate and lag time, assumed F=1 and Fm=1, and used first-order depot input although the absorption rate was not reported. The second reader did not agree with the recorded estimates; the reported agreement was 0.0. Extracted — amitriptyline: CL/F 142 L/h, V 9.5 L/kg.
+Extracted — amitriptyline: CL/F 142 L/h, V 9.5 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 0.39, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -127,14 +127,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|
-| T0_analyte_identity | fail | amitriptyline (or metabolite) | paper about another drug |  | paper subject is not amitriptyline: the paper is about another drug; this one is a co-medication or covariate: This is a population-PK study of haloperidol; amitriptyline appears only as a co-administered CYP2D6 substrate covariate, with no amitriptyline PK parameters re |
+| T0_analyte_identity | fail | amitriptyline (or metabolite) | paper about another drug |  | paper subject is not amitriptyline: the paper is about another drug; this one is a co-medication or covariate: The study reports population pharmacokinetic parameters for haloperidol, with amitriptyline only mentioned as a CYP2D6 substrate for a non-significant drug inte |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=amitriptyline) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check agreement 0.0 is below 0.5: verdict partial, agreement 0.0, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.0 (0 of 7 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0 | cross-check agreement 0.0 is below 0.5: verdict partial; agreement 0.0 (0 of 7 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -162,4 +162,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamitriptyline%5D%20Amitriptyline_Yukawa2002_reference&body=Drug%3A%20amitriptyline%0ARecord%3A%20Amitriptyline_Yukawa2002_reference%0APaper%3A%20Yukawa_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 21:38 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:45 UTC</sub>

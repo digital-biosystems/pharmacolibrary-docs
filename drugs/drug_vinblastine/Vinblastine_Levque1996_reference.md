@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Vinblastine record rejected because the paper studies vinorelbine, not vinblastine.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="vinblastine" model-id="Vinblastine_Levque1996_reference" status="rejected" stale="false" population="" measured-compound="vinblastine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Levêque D, Jehl F. Clinical pharmacokinetics of vinorelbine. Clinical pharmacok
 
 ### Reviewer guidance
 
-**Vinblastine record rejected because the paper studies vinorelbine, not vinblastine.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source identifies the paper as a review of vinorelbine pharmacokinetics, where vinblastine is only a comparator. No actual pharmacokinetic parameters for vinblastine were fitted in that study. A cross-check showed disagreement between readers on reported values, with zero agreement. Extracted — vinblastine: CL 46.2 L/h, V/F 75 L/kg.
+Extracted — vinblastine: CL 46.2 L/h, V/F 75 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has 70.9, the second reading 114.3; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | cross-check disputed by a second reader: verdict disputed, agreement 0.7, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.7 (7 of 10 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.7 | cross-check contradicted by a second reader: verdict disputed; agreement 0.7 (7 of 10 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

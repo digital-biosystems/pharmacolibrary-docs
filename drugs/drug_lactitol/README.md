@@ -22,9 +22,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Oku_2005_transitory_diarrhea](drugs/drug_lactitol/pd_Oku_2005_transitory_diarrhea.md) | transitory diarrhea ← lactitol · direct linear effect | — | Oku T et al., Maximum permissive dosage of lactose an…, Journal of nutritional scie… (2005) | [10.3177/jnsv.51.51](https://doi.org/10.3177/jnsv.51.51) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Oku_2007_cumulative_incidence_of_diarrhea](drugs/drug_lactitol/pd_Oku_2007_cumulative_incidence_of_diarrhea.md) | cumulative incidence of diarrhea ← lactitol · direct linear effect | — | Oku T et al., Threshold for transitory diarrhea induc…, Journal of nutritional scie… (2007) | [10.3177/jnsv.53.13](https://doi.org/10.3177/jnsv.53.13) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Oku_2007_cumulative_incidence_of_diarrhea_2](drugs/drug_lactitol/pd_Oku_2007_cumulative_incidence_of_diarrhea_2.md) | cumulative incidence of diarrhea ← lactitol · direct linear effect | — | Oku T et al., Threshold for transitory diarrhea induc…, Journal of nutritional scie… (2007) | [10.3177/jnsv.53.13](https://doi.org/10.3177/jnsv.53.13) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Oku_2005_transitory_diarrhea](drugs/drug_lactitol/pd_Oku_2005_transitory_diarrhea.md) | transitory diarrhea ← lactitol · direct linear effect | — | Oku T et al., Maximum permissive dosage of lactose an…, Journal of nutritional scie… (2005) | [10.3177/jnsv.51.51](https://doi.org/10.3177/jnsv.51.51) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Oku_2007_cumulative_incidence_of_diarrhea](drugs/drug_lactitol/pd_Oku_2007_cumulative_incidence_of_diarrhea.md) | cumulative incidence of diarrhea ← lactitol · direct linear effect | — | Oku T et al., Threshold for transitory diarrhea induc…, Journal of nutritional scie… (2007) | [10.3177/jnsv.53.13](https://doi.org/10.3177/jnsv.53.13) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Oku_2007_cumulative_incidence_of_diarrhea_2](drugs/drug_lactitol/pd_Oku_2007_cumulative_incidence_of_diarrhea_2.md) | cumulative incidence of diarrhea ← lactitol · direct linear effect | — | Oku T et al., Threshold for transitory diarrhea induc…, Journal of nutritional scie… (2007) | [10.3177/jnsv.53.13](https://doi.org/10.3177/jnsv.53.13) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

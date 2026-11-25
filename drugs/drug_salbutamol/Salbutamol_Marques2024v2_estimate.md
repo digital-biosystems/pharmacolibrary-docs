@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Salbutamol bioavailability F and lag time Tlag were set to library defaults instead of using values from the paper.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Marques2024v2_estimate" status="needs_review" stale="false" population="virtual patients and asthma patients" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Marques L, Vale N. Toward Personalized Salbutamol Therapy: Validating Virtual Pa
 
 ### Reviewer guidance
 
-**Salbutamol bioavailability F and lag time Tlag were set to library defaults instead of using values from the paper.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The model record for salbutamol lists absorption rate constant kabs as 13.55 h−1 and clearance CL as 34.93 L/h. However, the bioavailability F and lag time Tlag were not extracted from the study and were instead replaced with standard library placeholders. Consequently, the simulated concentration profile relies on unsupported assumptions rather than the specific estimates reported in the source data. Extracted — salbutamol: kabs 13.6 h−1, CL 34.9 L/h, Q 10.6 L/h, V 163 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — salbutamol: kabs 13.6 h−1, CL 34.9 L/h, Q 10.6 L/h, V 163 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,7 +144,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (12 of 12 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because the record lacks distribution volume and clearance parameters, failing to constitute a compartmental population pharmacokinetic model for flurbiprofen.
+> No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="flurbiprofen" model-id="Flurbiprofen_Oelkers1997v2_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="flurbiprofen enantiomers" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -48,13 +48,13 @@ Oelkers R, Neupert W, Williams KM, Brune K, Geisslinger G. Disposition and effec
 
 ### Reviewer guidance
 
-**Rejected because the record lacks distribution volume and clearance parameters, failing to constitute a compartmental population pharmacokinetic model for flurbiprofen.**
+**No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The facts confirm the absence of any distribution volume or clearance values in the extracted parameter list. The record only contains summary exposure statistics Cmax (9.55 µg/ml) and tmax (1.5 h) for the S-enantiomer. Consequently, the structure is not a valid compartmental population pharmacokinetic model but rather an exposure outcome report. Extracted — flurbiprofen: Cmax 9.55 µg/ml, tmax 1.5 h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (Cmax), so that value has no SI equivalent. Extracted — flurbiprofen: Cmax 9.55 µg/ml, tmax 1.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has flurbiprofen enantiomers, the second reading R‑flurbiprofen and S‑flurbiprofen; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

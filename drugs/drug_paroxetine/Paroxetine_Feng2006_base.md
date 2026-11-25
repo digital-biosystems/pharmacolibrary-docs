@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Paroxetine’s intercompartmental clearance Q (1.33 L h⁻¹) was rejected for a unit-dimension conflict, though its recorded unit is volume per time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit µg h⁻¹ ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="paroxetine" model-id="Paroxetine_Feng2006_base" status="rejected" stale="false" population="elderly subjects with major depressive disorder" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Feng Y, Pollock BG, Ferrell RE, Kimak MA, Reynolds CF, Bies RR. Paroxetine: popu
 
 ### Reviewer guidance
 
-**Paroxetine’s intercompartmental clearance Q (1.33 L h⁻¹) was rejected for a unit-dimension conflict, though its recorded unit is volume per time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit µg h⁻¹ ([mass] / [time]) vs [mass] / [time].**
 
-The finding cites Q as µg h⁻¹ and compares mass per time with mass per time, which is not a dimensional conflict and does not match Q’s recorded unit or meaning. The reported unit could not be converted to SI, so Q reached the model builder without an SI value. Extracted — paroxetine: Vmax 208 µg h⁻¹, Km 157 µg l⁻¹, V2 254 l, V3 2.35e+03 l, Q 1.33 l h⁻¹, kabs 9.24 h⁻¹.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — paroxetine: Vmax 208 µg h⁻¹, Km 157 µg l⁻¹, V2 254 l, V3 2.35e+03 l, Q 1.33 l h⁻¹, kabs 9.24 h⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paroxetine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

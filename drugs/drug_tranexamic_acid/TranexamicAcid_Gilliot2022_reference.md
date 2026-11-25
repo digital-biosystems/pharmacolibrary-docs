@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The two-compartment model for tranexamic acid yields a terminal half-life of 11.104047416780787, conflicting with the paper's reported 1.8499999999999999, and covariate effects were not simulated.
+> The model does not reproduce the paper's terminal half-life (paper 1.85, model 11.1); the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="tranexamic acid" model-id="TranexamicAcid_Gilliot2022_reference" status="needs_review" stale="false" population="parturients undergoing hemorrhagic cesarean delivery" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Gilliot S, Ducloy-Bouthors AS, Loingeville F, Hennart B, Allorge D, Lebuffe G et
 
 ### Reviewer guidance
 
-**The two-compartment model for tranexamic acid yields a terminal half-life of 11.104047416780787, conflicting with the paper's reported 1.8499999999999999, and covariate effects were not simulated.**
+**The model does not reproduce the paper's terminal half-life (paper 1.85, model 11.1); the covariate scenarios were not simulated (+1 more).**
 
-The simulated terminal half-life is 11.104047416780787, which is a ratio of 6.0022 compared to the paper's reported value of 1.8499999999999999, indicating a significant mismatch in elimination kinetics. The model defines covariate effects that were not exercised during simulation, leaving their impact unverified. A second reader disagreed with the initial review, specifically challenging the extraction of several parameters including total clearance and volume of distribution. Extracted — tranexamic acid: CL 0.077 L/min, V1 9.25 L, Q 0.32 L/min, V2 9.49 L.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — tranexamic acid: CL 0.077 L/min, V1 9.25 L, Q 0.32 L/min, V2 9.49 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading tranexamic_acid; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -183,8 +183,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 1.85 | 11.1 | 6.002 | min→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.133 (2 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.133 | cross-check contradicted by a second reader: verdict disputed; agreement 0.133 (2 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 1.85 | 11.1 | 6.002 | reported 111.0 min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

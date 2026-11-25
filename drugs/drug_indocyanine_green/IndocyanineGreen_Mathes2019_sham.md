@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Indocyanine green clearance lacks a valid SI unit, and the three-compartment model contains a structurally disconnected compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Mathes2019_sham" status="rejected" stale="false" population="anesthetized Sprague-Dawley rats with hemorrhagic shock or endotoxemia" measured-compound="indocyanine green" parameterization="mechanistic" topology="3C"></div>
 
@@ -55,13 +55,13 @@ Mathes A, Plata C, Rensing H, Kreuer S, Fink T, Raddatz A. Plasma Disappearance 
 
 ### Reviewer guidance
 
-**Indocyanine green clearance lacks a valid SI unit, and the three-compartment model contains a structurally disconnected compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The clearance of 564.0 mL/min/m2 could not be converted to standard international units, leaving the parameter without a valid magnitude for analysis. The model topology includes a peripheral compartment that has no valid connection from the dosing site, creating an unreachable volume. Extracted — indocyanine green: V 60.3 mL, CLnorm 564 mL/min/m2, V1 16.2 mL, V2 290 mL, kel 0.15 1/h, k12 0.13 1/h, k21 0.007 1/h.
+A reported unit could not be converted (CLnorm), so that value has no SI equivalent. Extracted — indocyanine green: V 60.3 mL, CLnorm 564 mL/min/m2, V1 16.2 mL, V2 290 mL, kel 0.15 1/h, k12 0.13 1/h, k21 0.007 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[calculated icg clearance].parameter_id`: this record has Q354, the second reading Q22. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

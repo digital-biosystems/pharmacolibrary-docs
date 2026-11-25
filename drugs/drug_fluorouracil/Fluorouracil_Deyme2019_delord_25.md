@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The extracted total clearance of 136 L/h for fluorouracil is physiologically implausible, triggering a magnitude error check failure.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Deyme2019_delord_25" status="rejected" stale="false" population="patients with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Deyme L, Barbolosi D, Gattacceca F. Population pharmacokinetics of FOLFIRINOX: a
 
 ### Reviewer guidance
 
-**The extracted total clearance of 136 L/h for fluorouracil is physiologically implausible, triggering a magnitude error check failure.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The 136 L/h clearance exceeds the expected physiological range, indicating a likely extraction error in unit or scale. A second reader disagreed on the presence of metabolic links to 5fuh2 and 5fdhu, which are absent in the current record. The second reader also noted missing central volume values, though the current record lists V1 as 34.8 L. Extracted — fluorouracil: CL 136 L/h, V1 34.8 L, V3 1.4 L, Vss 0.26 L, kabs 0.13 1/h.
+Extracted — fluorouracil: CL 136 L/h, V1 34.8 L, V3 1.4 L, Vss 0.26 L, kabs 0.13 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading fluorouracil → 5fuh2 (metabolism); fluorouracil → 5fdhu (metabolism); irinotecan → sn38 (metabolism) …; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -23,8 +23,8 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mani_2007_MBF](drugs/drug_ixabepilone/pd_Mani_2007_MBF.md) | percentage of PBMCs with MBF ← ixabepilone · direct sigmoid Emax (Hill) effect | — | Mani S et al., Peripheral blood mononuclear and tumor…, Annals of oncology : offici… (2007) | [10.1093/annonc/mdl315](https://doi.org/10.1093/annonc/mdl315) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mehrotra_2017_CIPN](drugs/drug_ixabepilone/pd_Mehrotra_2017_CIPN.md) | CIPN ← ixabepilone · model not identified | — | Mehrotra S et al., Kinetic-Pharmacodynamic Model of Chemot…, The AAPS journal (2017) | [10.1208/s12248-017-0101-9](https://doi.org/10.1208/s12248-017-0101-9) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Goel_2008_microtubule_bundle_formation_in_peripheral_blood_mononuclear_cells](drugs/drug_ixabepilone/pd_Goel_2008_microtubule_bundle_formation_in_peripheral_blood_m.md) | microtubule bundle formation in peripheral blood mononuclear cells ← ixabepilone · direct sigmoid Emax (Hill) effect | — | Goel S et al., The effect of ketoconazole on the pharm…, Clinical cancer research :… (2008) | [10.1158/1078-0432.CCR-07-4151](https://doi.org/10.1158/1078-0432.CCR-07-4151) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mehrotra_2017_CIPN](drugs/drug_ixabepilone/pd_Mehrotra_2017_CIPN.md) | CIPN ← ixabepilone · indirect response — drug inhibits the production of CIPN | — | Mehrotra S et al., Kinetic-Pharmacodynamic Model of Chemot…, The AAPS journal (2017) | [10.1208/s12248-017-0101-9](https://doi.org/10.1208/s12248-017-0101-9) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Goel_2008_microtubule_bundle_formation](drugs/drug_ixabepilone/pd_Goel_2008_microtubule_bundle_formation.md) | microtubule bundle formation ← ixabepilone · direct sigmoid Emax (Hill) effect | — | Goel S et al., The effect of ketoconazole on the pharm…, Clinical cancer research :… (2008) | [10.1158/1078-0432.CCR-07-4151](https://doi.org/10.1158/1078-0432.CCR-07-4151) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +38,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 18:15 | 5:02 | 0/0/0 | 2/1/0 | 0/0/0 | 24,492/7,746 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-23 23:16 | 0:02 | 0/0/0 | 2/1/0 | 0/0/0 | 206/55 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -55,26 +55,40 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Yardley_2009.pdf` | Yardley DA, Proactive management of adverse events…, The oncologist (2009) | pgx | 7 | [10.1634/theoncologist.2008-0284](https://doi.org/10.1634/theoncologist.2008-0284) | [19411315](https://www.ncbi.nlm.nih.gov/pubmed/19411315) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-06 18:14 UTC</sub>
+<sub>queue written 2026-11-23 23:16 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Das_2012 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study on microtubule stabilization and tau interaction, not a pharmacokinetic study reporting quantitative disposition parameters. |
+| PGx | Das_2012 | not_relevant | 0 | 0 | The paper investigates the effect of tau protein expression on drug mechanism (microtubule stabilization) in cell lines, which is not a pharmacogenomic effect on PK or PD parameters in humans. |
 | PGx | Fountzilas_2013 | not_relevant | 0 | 0 | Genetic markers were assessed for association with response and toxicity, but none was associated with these outcomes; no ixabepilone pharmacokinetic or pharmacodynamic parameter was reported. |
 | PGx | Genovesi_2021 | not_relevant | 0 | 0 | The paper evaluates ixabepilone’s antitumour activity in medulloblastoma models but does not report a gene-related change in an ixabepilone pharmacokinetic or pharmacodynamic parameter. |
-| popPK | Goel_2008 | irrelevant | 3 | 2 | The human interaction study reports a 79% AUC increase but no quantitative clearance, volume, or compartmental/population-PK parameters. |
-| PGx | Goel_2008 | not_relevant | 0 | 0 | Ketoconazole drug interaction effects are reported, but no gene variant, genotype, or phenotype effect on ixabepilone PK or PD is assessed. |
-| popPK | Jain_2026 | irrelevant | 0 | 0 | This study predicts drug-combination synergy and reports no ixabepilone pharmacokinetic parameters. |
-| PGx | Lee_2008 | not_relevant | 0 | 0 | The text mentions MDR1 expression and tubulin mutations in relation to antitumor activity, but reports no pharmacogenomic effect on an ixabepilone PK or PD parameter. |
-| PGx | Lee_2016 | not_relevant | 1 | 1 | Reports associations between pathway mutations and ixabepilone activity in cell lines, not effects on a pharmacokinetic or pharmacodynamic parameter. |
-| popPK | Mani_2007 | irrelevant | 1 | 0 | The study reports a pharmacodynamic EC50 but no quantitative ixabepilone disposition parameters. |
-| popPK | Mehrotra_2017 | irrelevant | 1 | 0 | The study models dose-related neuropathy, not ixabepilone disposition, and reports no quantitative PK parameters. |
-| PGx | Nobili_2012 | not_relevant | 0 | 0 | The review discusses P-glycoprotein-mediated tumor drug resistance but does not report a gene variant, genotype, or phenotype effect on an ixabepilone PK or PD parameter. |
-| popPK | Peterson_2005 | irrelevant | 3 | 4 | Numeric Cmax, half-life, and AUC are reported, but no qualifying disposition parameters or quantitative compartmental model are provided. |
-| PGx | Rashkin_2019 | not_relevant | 0 | 0 | The study predicts progression-free survival from genetic data but does not report a genotype effect on an ixabepilone pharmacokinetic or pharmacodynamic parameter. |
-| popPK | Vishnu_2012 | irrelevant | 0 | 0 | This is an in-vitro antitumor mechanism study and reports no ixabepilone disposition parameters. |
-| PGx | Yardley_2009 | not_relevant | 0 | 0 | The paper addresses adverse-event management and reports no genotype- or phenotype-associated ixabepilone PK/PD parameters. |
+| popPK | Goel_2008 | irrelevant | 2 | 1 | The paper describes a drug interaction study (ketoconazole) and provides a relative increase in AUC (79%), but it does not report absolute quantitative disposition parameters (e.g., mean CL, V, t1/2) for ixabepilone. |
+| PGx | Goel_2008 | not_relevant | 0 | 0 | The paper describes a drug-drug interaction with ketoconazole rather than a pharmacogenomic effect mediated by a specific gene variant or genotype. |
+| popPK | Jain_2026 | irrelevant | 0 | 0 | The study focuses on machine learning prediction of drug synergy in vitro and does not report any pharmacokinetic parameters for ixabepilone. |
+| PGx | Jain_2026 | not_relevant | 0 | 0 | The study is about using machine learning to predict drug synergies in breast cancer combinations, not about pharmacogenomics or the effects of genetic variants on the PK/PD of ixabepilone. |
+| popPK | Lee_2008 | irrelevant | 0 | 0 | The paper is a narrative review discussing mechanism of action and clinical use without reporting original quantitative pharmacokinetic parameters for ixabepilone. |
+| PGx | Lee_2008 | not_relevant | 1 | 1 | The text is a general review of epothilones and mentions the need for predictive markers but does not report any specific pharmacogenomic association between a genetic variant and a PK/PD parameter of ixabepilone. |
+| popPK | Lee_2016 | irrelevant | 0 | 0 | The study focuses on in vitro network-based drug response associations and genomic alterations, not quantitative pharmacokinetic parameters. |
+| PGx | Lee_2016 | not_relevant | 2 | 0 | The paper discusses drug response (likely PD/susceptibility) in cancer cell lines, but not clinical pharmacokinetics, and does not report a specific pharmacogenomic effect of a variant on a PK/PD parameter for ixabepilone. |
+| popPK | Mani_2007 | irrelevant | 2 | 0 | The study focuses on pharmacodynamics (microtubule bundle formation) and does not report quantitative pharmacokinetic disposition parameters (CL, V, etc.) for ixabepilone in the provided text. |
+| PGx | Mani_2007 | not_relevant | 0 | 0 | The paper describes general pharmacodynamics of ixabepilone but does not investigate gene variants or pharmacogenomic effects. |
+| popPK | Mehrotra_2017 | irrelevant | 0 | 0 | The paper describes a kinetic-pharmacodynamic (K-PD) model for toxicity (CIPN) and does not report population pharmacokinetic parameters (CL, V, etc.) for ixabepilone. |
+| PGx | Mehrotra_2017 | not_relevant | 0 | 0 | The paper describes a kinetic-pharmacodynamic model for chemotherapy-induced peripheral neuropathy but does not investigate gene variants or pharmacogenomic factors. |
+| popPK | Nobili_2012 | irrelevant | 0 | 0 | This is a mechanistic review focusing on multidrug resistance mechanisms and P-glycoprotein, with no original quantitative pharmacokinetic data for ixabepilone. |
+| PGx | Nobili_2012 | not_relevant | 0 | 0 | The paper is a review of multidrug resistance mechanisms and does not report specific pharmacogenomic effects on PK/PD parameters for ixabepilone. |
+| popPK | Peterson_2005 | relevant | 7 | 4 | Reports pharmacokinetic parameters (Cmax, t1/2, AUC) for ixabepilone in mice, but lacks explicit clearance (CL) or volume of distribution (V) values and full biexponential rate constants. |
+| PGx | Peterson_2005 | not_relevant | 0 | 0 | The paper reports preclinical antitumor activity and pharmacokinetics in mice, containing no pharmacogenomic data or gene variant analysis. |
+| popPK | Rashkin_2019 | irrelevant | 0 | 0 | The paper describes a pharmacogenetic prediction model for progression-free survival, not a pharmacokinetic study reporting quantitative disposition parameters for ixabepilone. |
+| PGx | Rashkin_2019 | not_relevant | 1 | 0 | The paper reports a prediction model for progression-free survival (clinical outcome) using SNP data, but does not report specific changes in pharmacokinetic or pharmacodynamic parameters of ixabepilone. |
+| popPK | Shen_2011 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of transporters and cytotoxicity, not a pharmacokinetic study reporting quantitative disposition parameters. |
+| PGx | Shen_2011 | not_relevant | 1 | 10 | The paper reports *in vitro* functional expression studies (MDR1/BCRP transfection) showing transporter-mediated resistance, but does not report a clinical pharmacogenomic association (genotype-to-PK/PD) for patients. |
+| popPK | Vishnu_2012 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study investigating antitumor synergy and molecular pathways (RhoB), not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Vishnu_2012 | not_relevant | 0 | 0 | The paper investigates the molecular mechanism (RhoB) of drug synergy in cell lines and does not report pharmacogenomic effects of gene variants on PK or PD parameters in patients. |
+| popPK | Yardley_2009 | irrelevant | 0 | 0 | no_text gate: only 84 chars of text extracted (&lt; 400) |
+| PGx | Yardley_2009 | not_relevant | 1 | 2 | The paper focuses on the clinical management of adverse events to maintain efficacy, without reporting genetic variants or their specific effects on PK/PD parameters. |
 
 
 </details>

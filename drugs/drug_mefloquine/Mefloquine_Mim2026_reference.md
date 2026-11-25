@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The model was rejected because the inter-compartmental clearance unit was misclassified as volume, and a linked artesunate metabolite path remained unlinked to the mefloquine structure.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit CL ([length] ** 3) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Mim2026_reference" status="rejected" stale="false" population="P. berghei-infected mice" measured-compound="mefloquine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -54,13 +54,13 @@ Mim SR, Vieira Santos V, Pereira LC, Pica K, Miranda ALLdS, Quadros HC et al. Ph
 
 ### Reviewer guidance
 
-**The model was rejected because the inter-compartmental clearance unit was misclassified as volume, and a linked artesunate metabolite path remained unlinked to the mefloquine structure.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit CL ([length] ** 3) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The inter-compartmental clearance (16954.46 mL/h/kg) was recorded with a unit dimension of volume ([length] ** 3) instead of flow ([length] ** 3 / [time]), creating a fundamental structural inconsistency. Additionally, the record defines a hydrolysis link from artesunate to dihydroartemisinin, yet the second reader identified no such links, indicating a structural mismatch where the metabolite pathway is not properly connected to the mefloquine model. The volume of distribution (1921.4 mL/kg) and clearance (258.25) parameters were also flagged as unsupported by the second reader, suggesting these specific parameter values may not be valid for the defined structure. Extracted — mefloquine: kabs 24.4 1/h, CL 258 CL, V1 1.92e+03 mL/kg, Q 1.7e+04 mL/h/kg.
+A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — mefloquine: kabs 24.4 1/h, CL 258 CL, V1 1.92e+03 mL/kg, Q 1.7e+04 mL/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mefloquine + artesunate (ASMQ, oral), the second reading mefloquine; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

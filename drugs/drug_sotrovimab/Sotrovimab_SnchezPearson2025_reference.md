@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sotrovimab clearance and volume values were not confirmed by a second reader, leaving the record's accuracy unverified.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="sotrovimab" model-id="Sotrovimab_SnchezPearson2025_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="sotrovimab" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Sánchez-Pearson Y, Moore J, Daniluk J, Bhangu S, Parra S, El Zailik A et al. Sa
 
 ### Reviewer guidance
 
-**Sotrovimab clearance and volume values were not confirmed by a second reader, leaving the record's accuracy unverified.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists sotrovimab clearance as 81.0 mL/day and volume of distribution as 6.06 L. A second reader could not compute these values, recording null instead of the original numbers. This disagreement resulted in an agreement score of 0.714, keeping the model in a needs review state. Extracted — sotrovimab: CL 81 mL/day, V 6.06 L.
+Extracted — sotrovimab: CL 81 mL/day, V 6.06 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 37017, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -124,7 +124,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.714 (10 of 14 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | cross-check contradicted by a second reader: verdict disputed; agreement 0.714 (10 of 14 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

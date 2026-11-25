@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Aciclovir area under the curve units are dimensionally inconsistent with mass, and infusion duration is missing.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit nmol.h/ml ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="aciclovir" model-id="Aciclovir_Laskin1982_reference" status="rejected" stale="false" population="adults with normal renal function" measured-compound="acyclovir" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Laskin OL, de Miranda P, King DH, Page DA, Longstreth JA, Rocco L et al. Effects
 
 ### Reviewer guidance
 
-**Aciclovir area under the curve units are dimensionally inconsistent with mass, and infusion duration is missing.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit nmol.h/ml ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The area under the curve is reported in nmol.h/ml, a dimension that conflicts with the required mass-based dimension. This inconsistency, combined with the absence of an infusion duration, prevents the construction of a valid structural model. Additionally, the second reader recorded a conflicting area under the curve value of 91.3 and an infusion duration of 1. Extracted — aciclovir: CLR 248 L/h, CL 300 L/h, AUC 128 nmol.h/ml, t1/2z 2.7 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — aciclovir: CLR 248 L/h, CL 300 L/h, AUC 128 nmol.h/ml, t1/2z 2.7 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[area under the curve].value`: this record has 127.6, the second reading 91.3; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

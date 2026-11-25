@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the peripheral volume of distribution parameter, valued at 45.0 l·kg⁻¹, belongs to an unreachable compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Allegaert2014_reference" status="rejected" stale="false" population="neonates" measured-compound="paracetamol" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Allegaert K, van de Velde M, van den Anker J. Neonatal clinical pharmacology. Pa
 
 ### Reviewer guidance
 
-**The record is rejected because the peripheral volume of distribution parameter, valued at 45.0 l·kg⁻¹, belongs to an unreachable compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure contains a compartment with no path from the dose, rendering the peripheral volume parameter unreachable. Additionally, the second reader disagreed on the clearance value, reporting 0.029 instead of 0.035 l·min⁻¹. A second parameter value was also disputed, with the second reader citing 22 where the record shows null. Extracted — paracetamol: CL 0.035 l.min−1, V 0.6 l.kg-1, V2 45 l .70 kg−1.
+Extracted — paracetamol: CL 0.035 l.min−1, V 0.6 l.kg-1, V2 45 l .70 kg−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.035, the second reading 0.029; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

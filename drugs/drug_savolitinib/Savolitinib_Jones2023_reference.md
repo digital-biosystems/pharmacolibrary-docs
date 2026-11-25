@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;savolitinib&quot;,&quot;href&quot;:&quot;drugs/drug_savolitinib/&quot;},{&quot;label&quot;:&quot;Jones_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Savolitinib_Jones2023_reference&quot;,&quot;label&quot;:&quot;Jones_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_savolitinib/Savolitinib_Jones2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Jones_2023_TGI&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 TGI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_savolitinib/pd_Jones_2023_TGI.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jones_2023_pEGFR&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 pEGFR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_savolitinib/pd_Jones_2023_pEGFR.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jones_2023_pMET&quot;,&quot;label&quot;:&quot;Jones_2023 \u00b7 pMET&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_savolitinib/pd_Jones_2023_pMET.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Schalkwijk_2021_QTcF_2&quot;,&quot;label&quot;:&quot;Schalkwijk_2021 \u00b7 \u0394\u0394QTcF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_savolitinib/pd_Schalkwijk_2021_QTcF_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Savolitinib_Jones2023_reference&quot;,&quot;label&quot;:&quot;Jones_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_savolitinib/Savolitinib_Jones2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Savolitinib clearance units prevent standardization, the model topology contradicts the parent-metabolite structure, and bioavailability was left at placeholder defaults.
+> The model does not reproduce the paper's terminal half-life (paper 2.5, model 2.32); the covariate scenarios were not simulated (+3 more).
 
-<div class="pk-model-meta" hidden drug="savolitinib" model-id="Savolitinib_Jones2023_reference" status="rejected" stale="false" population="NSG mice bearing EGFRm, MET-amplified LG1208 NSCLC PDX tumors" measured-compound="savolitinib" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="savolitinib" model-id="Savolitinib_Jones2023_reference" status="rejected" stale="false" population="NSG mice with LG1208 NSCLC PDX" measured-compound="savolitinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Jones RDO, Petersson K, Tabatabai A, Bao L, Tomkinson H, Schuller AG. Pharmacokinetic/Pharmacodynamic Analysis of Savolitinib plus Osimertinib in an EGFR Mutation-Positive, MET-Amplified Non-Small Cell Lung Cancer Model. Molecular cancer therapeutics 22(5):679–690 (2023).
@@ -17,19 +17,19 @@ Jones RDO, Petersson K, Tabatabai A, Bao L, Tomkinson H, Schuller AG. Pharmacoki
 
 ## Population and dosing
 
-**Population:** NSG mice bearing EGFRm, MET-amplified LG1208 NSCLC PDX tumors · condition EGFR mutation-positive, MET-amplified NSCLC xenograft.
+**Population:** NSG mice with LG1208 NSCLC PDX · condition non-small cell lung cancer.
 
-**Dosing:** 1.4, 21, 70, 175, 700, 1050 mg, oral, multiple, every 24 h.
+**Dosing:** 700 mg, oral, multiple, every 24 h.
 
-**Dosed compound ≠ measured compound:** dosed savolitinib and osimertinib, measured savolitinib.
+**Dosed compound ≠ measured compound:** dosed savolitinib, osimertinib, measured savolitinib.
 
 > **Species: mouse.** This record comes from an animal study (mouse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted, plus 2 covariate effects.  
+**Parameters:** 2 extracted, plus 1 covariate effect.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_savolitinib/Savolitinib_Jones2023_reference/Savolitinib_Jones2023_reference.svg" alt="Savolitinib_Jones2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -39,11 +39,9 @@ Jones RDO, Petersson K, Tabatabai A, Bao L, Tomkinson H, Schuller AG. Pharmacoki
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| theta_q340_weight_power | theta_q340_weight_power | 0.0254 |  |
 | theta_q312_weight_power | theta_q312_weight_power | 0.201 |  |
 | clearance | CL | 0.43 | L/h/kg |
 | distribution volume | V | 1.44 | L/kg |
-| absorption rate | kabs | 0.44 | /h |
 
 ## Caveats
 
@@ -51,7 +49,7 @@ Jones RDO, Petersson K, Tabatabai A, Bao L, Tomkinson H, Schuller AG. Pharmacoki
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
+**Status and checks:** <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), qwen3.8-27b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,23 +59,21 @@ Jones RDO, Petersson K, Tabatabai A, Bao L, Tomkinson H, Schuller AG. Pharmacoki
 
 ### Reviewer guidance
 
-**Savolitinib clearance units prevent standardization, the model topology contradicts the parent-metabolite structure, and bioavailability was left at placeholder defaults.**
+**The model does not reproduce the paper's terminal half-life (paper 2.5, model 2.32); the covariate scenarios were not simulated (+3 more).**
 
-The savolitinib clearance value of 0.43 is recorded in liters per hour per kilogram, a unit that could not be converted to SI standards. The record describes a parent-metabolite relationship, yet the simulated structure uses a single central compartment without a metabolite formation path. Consequently, the bioavailability parameter remains at a library placeholder rather than an explicit estimate from the paper. Extracted — savolitinib: CL 0.43 L/h/kg, V 1.44 L/kg, kabs 0.44 /h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — savolitinib: CL 0.43 L/h/kg, V 1.44 L/kg.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has savolitinib and osimertinib, the second reading savolitinib; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has savolitinib, osimertinib, the second reading savolitinib; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| theta_q340_weight_power | `Q900` · theta_q340_weight_power | 0.0254 |  |  |  |  |  | tbl1:row12:col2, tbl1:row12:col3 |
-| theta_q312_weight_power | `Q900` · theta_q312_weight_power | 0.201 |  |  |  |  |  | tbl1:row17:col2, tbl1:row17:col3 |
+| theta_q312_weight_power | `Q900` · theta_q312_weight_power | 0.201 |  |  |  |  |  | tbl1:row17:col2 |
 | clearance | `Q22` · CL | 0.43 | L/h/kg | 8.361e-06 | m3/s | L/h | exact (1) | Jones_2023:other_prose |
 | distribution volume | `Q61` · V | 1.44 | L/kg | 0.1008 | m3 | L | exact (1) | Jones_2023:other_prose |
-| absorption rate | `Q49` · kabs | 0.44 | /h | 0.0001222 | 1/s | 1/h | exact (1) | Jones_2023:discussion_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -86,58 +82,70 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
-- column 'unit' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped PD-category row 'pEGFR baseline' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row2:col2', 'tbl1:row2:col3'])
-- dropped PD-category row 'pEGFR EC50base' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row3:col2', 'tbl1:row3:col3'])
-- dropped PD-category row 'pEGFR turnover rate constant (Kout)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row4:col2', 'tbl1:row4:col3'])
-- dropped PD-category row 'pEGFR Emax (proportional increase Kout)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row5:col2', 'tbl1:row5:col3'])
+- table representations disagree for 'pEGFR EC50base'; source reconciliation required
+- table representations disagree for 'pEGFR turnover rate constant (Kout)'; source reconciliation required
+- table representations disagree for 'pEGFR Emax (proportional increase Kout)'; source reconciliation required
+- table representations disagree for 'pEGFR combination pMET effect slope on EC50'; source reconciliation required
+- table representations disagree for 'pMET EC50'; source reconciliation required
+- table representations disagree for 'pMET Emax'; source reconciliation required
+- table representations disagree for 'Baseline tumor size'; source reconciliation required
+- table representations disagree for 'Exponential tumor growth rate constant'; source reconciliation required
+- table representations disagree for 'Linear tumor growth rate'; source reconciliation required
+- table representations disagree for 'pEGFR effect on tumor growth (slope)'; source reconciliation required
+- table representations disagree for 'pMET effect on tumor growth (slope)'; source reconciliation required
+- table representations disagree for 'Variability baseline (log-normal)'; source reconciliation required
+- table representations disagree for 'Variability exponential growth (log-normal)'; source reconciliation required
+- dropped PD-category row 'pEGFR EC50base' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row3:col2'])
+- dropped PD-category row 'pEGFR turnover rate constant (Kout)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row4:col2'])
+- dropped PD-category row 'pEGFR Emax (proportional increase Kout)' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row5:col2'])
 - dropped PD-category row 'pEGFR combination pMET effect slope on EC50' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row6:col2'])
-- dropped PD-category row 'pMET baseline' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row7:col2', 'tbl1:row7:col3'])
-- dropped PD-category row 'pMET EC50' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row8:col2', 'tbl1:row8:col3'])
+- dropped PD-category row 'pMET EC50' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row8:col2'])
 - dropped PD-category row 'pMET Emax' → Q320 (Emax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row9:col2'])
-- dropped PD-category row 'Baseline tumor size' → Q324 (E0, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row11:col2', 'tbl1:row11:col3'])
-- dropped PD-category row 'Linear tumor growth rate' → Q340 (alpha_progression, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row13:col1', 'tbl1:row13:col2', 'tbl1:row13:col3'])
-- dropped PD-category row 'pEGFR effect on tumor growth (slope)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row14:col2', 'tbl1:row14:col3'])
-- dropped PD-category row 'pMET effect on tumor growth (slope)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row15:col2', 'tbl1:row15:col3'])
-- routed 'Variability baseline (log-normal)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- covariate effect for Q340 has no base parameter row (kept as unattached equation-variable)
+- dropped unlinked row (NIL): 'Baseline tumor size' — extend the ontology if this is a real PK parameter (source ['tbl1:row11:col2'])
+- dropped unlinked row (NIL): 'Exponential tumor growth rate constant' — extend the ontology if this is a real PK parameter (source ['tbl1:row12:col2'])
+- dropped unlinked row (NIL): 'Linear tumor growth rate' — extend the ontology if this is a real PK parameter (source ['tbl1:row13:col2'])
+- dropped PD-category row 'pEGFR effect on tumor growth (slope)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row14:col2'])
+- dropped PD-category row 'pMET effect on tumor growth (slope)' → Q335 (slope, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['tbl1:row15:col2'])
+- dropped unlinked row (NIL): 'Variability baseline (log-normal)' — extend the ontology if this is a real PK parameter (source ['tbl1:row16:col2'])
 - covariate effect for Q312 has no base parameter row (kept as unattached equation-variable)
 - salvaged Q22 ('clearance'=0.43) from results prose — parameter table was unreadable
 - salvaged Q61 ('distribution volume'=1.44) from results prose — parameter table was unreadable
-- salvaged Q49 ('absorption rate'=0.44) from results prose — parameter table was unreadable
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (clearance); Q61 (distribution volume)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=savolitinib
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — turnover model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=turnover; 15/15 row label(s) assigned, 2 linked by role; re-tagged parent→osimertinib ×10, parent→savolitinib ×7
+- row roles (LLM): model_class=turnover; 13/13 row label(s) assigned, 0 linked by role; re-tagged parent→osimertinib ×3, parent→savolitinib ×3
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 - engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
 
 **Extraction notes:**
-- unparsed cell tbl1:row6:col3 = '−0.0391 to −0.0243'
-- unparsed cell tbl1:row9:col3 = '−0.984 to −0.983'
-- unparsed cell tbl1:row11:col1 = 'mm3'
+- table tbl1: ambiguous_numeric_format
+- table tbl1: unbound_uncertainty
+- table tbl1: representations disagree; selected evidence retained, not merged
+- LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (5/10 fields) | 5 |
 | `qwen3.8-27b` | not confirmed | 0.6 (6/10 fields) | 4 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption rate]` |  | 0.44 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q312_weight_power]` | 0.201 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q314_weight_power]` |  | 0.201 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q67_weight_power]` |  | 0.0254 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | savolitinib, osimertinib | savolitinib | mismatch |
 | `qwen3.8-27b` | `parameters[absorption rate]` | 0.44 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[theta_q335_weight_power]` |  | 0.0254 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[theta_q340_weight_power]` | 0.0254 |  | only_one_extracted |
@@ -155,7 +163,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |  |  |
+| C0_has_structural_params | pass |  | 2 |  |  |  |
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |  |  |
 | C1_half_life_beta | pass | 2.5 | 2.321 | 0.9284 | 0.25 | reported t½β |
@@ -171,12 +179,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
 | T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_output_variable |  | fail | Metabolite_C (measured=savolitinib) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.6, 0 of 1 reader(s) agree | 0.6 | cross-check disputed by a second reader: verdict disputed, agreement 0.6, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | pass | 2.5 | 2.395 | 0.9578 | hours→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.5 | 2.395 | 0.6842 | hours→SI vs simulated h |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.5 (5 of 10 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (5 of 10 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | pass | 2.5 | 2.32 | 0.928 | reported 2.5 hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.5 | 2.32 | 0.6628 | reported 3.5 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -194,14 +202,14 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 1.4 mg, single dose, first-order absorption (ka 0.44 /h, F 0.9). Doses in the paper: 1.4, 21, 70, 175, 700, 1050 mg.
+**Administration: intravenous** — 700 mg infusion over 10 min, single dose. Dose in the paper: 700 mg.
 
-<dbs-fmusim paramsurl="drugs/drug_savolitinib/Savolitinib_Jones2023_reference/Savolitinib_Jones2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_savolitinib/Savolitinib_Jones2023_reference/Savolitinib_Jones2023_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_savolitinib/Savolitinib_Jones2023_reference/Savolitinib_Jones2023_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_savolitinib/Savolitinib_Jones2023_reference/Savolitinib_Jones2023_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Savolitinib_Jones2023_reference_params.json` · controls `Savolitinib_Jones2023_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Savolitinib_Jones2023_reference_params.json` · controls `Savolitinib_Jones2023_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsavolitinib%5D%20Savolitinib_Jones2023_reference&body=Drug%3A%20savolitinib%0ARecord%3A%20Savolitinib_Jones2023_reference%0APaper%3A%20Jones_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_savolitinib/Savolitinib_Jones2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 06:43 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:45 UTC</sub>

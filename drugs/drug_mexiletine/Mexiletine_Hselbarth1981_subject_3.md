@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Mexiletine volume of distribution was rejected because AUC parameters had unit dimensions conflicting with their mass-time-volume requirements.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3; Q88 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="mexiletine" model-id="Mexiletine_Hselbarth1981_subject_3" status="rejected" stale="false" population="healthy adults" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Häselbarth V, Doevendans JE, Wolf M. Kinetics and bioavailability of mexiletine
 
 ### Reviewer guidance
 
-**Mexiletine volume of distribution was rejected because AUC parameters had unit dimensions conflicting with their mass-time-volume requirements.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3; Q88 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.**
 
-The record lists the volume of distribution as 74.0 L, but the AUC values of 5.556 µg/ml/hr and 5.070 µg/ml/hr have dimensions that conflict with the parameter's mass-time-volume structure. The unit µg/ml/hr could not be converted to SI, leaving the model without a valid volume value. A second reader also disagreed on the presence of lag time, finding 0.904 instead of the recorded 0.577. Extracted — mexiletine: kel 1.17 1/h, tlag 0.577 hr, tmax 1.35 hr, Cmax 0.75 µg/ml, AUC∞ 5.56 µg/ml/hr, AUC 5.07 µg/ml/hr, V 74 L.
+A reported unit could not be converted (Cmax, AUC∞ and AUC), so that value has no SI equivalent. Extracted — mexiletine: kel 1.17 1/h, tlag 0.577 hr, tmax 1.35 hr, Cmax 0.75 µg/ml, AUC∞ 5.56 µg/ml/hr, AUC 5.07 µg/ml/hr, V 74 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0^inf: this record has 5.556, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

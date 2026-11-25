@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the substrate affinity constant was assigned volume units, causing a dimensional conflict.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit L ([length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="ruxolitinib" model-id="Ruxolitinib_Tachet2026_reference" status="rejected" stale="false" population="adults with hematologic malignancies and immune-mediated diseases" measured-compound="ruxolitinib" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Tachet J, Meyer SC, Grandoni F, Haefliger E, Nagy-Hulliger M, Halter JP et al. R
 
 ### Reviewer guidance
 
-**The record was rejected because the substrate affinity constant was assigned volume units, causing a dimensional conflict.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit L ([length] ** 3) vs [mass] / [length] ** 3.**
 
-The parameter representing enzyme-substrate affinity has a value of 14 L. This conflicts with its required mass/volume dimensions, making the model dimensionally inconsistent. Consequently, the model builder could not convert the parameter to standard SI units for the review. Extracted — ruxolitinib: kabs 3.24 h−1, V 69 L, Vss 1, Km 14 L.
+A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — ruxolitinib: kabs 3.24 h−1, V 69 L, Vss 1, Km 14 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ruxolitinib, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

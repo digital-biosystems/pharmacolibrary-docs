@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> V/F was misclassified as a time parameter, causing a dimension mismatch, and the abstract-only source prevented verification of the reported concentration value of 3.14.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit h ([time]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="vamorolone" model-id="Vamorolone_Li2024_reference" status="rejected" stale="false" population="boys with Duchenne Muscular Dystrophy" measured-compound="vamorolone" parameterization="apparent" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Li X, Sabbatini D, Pegoraro E, Bello L, Clemens P, Guglieri M et al. Assessing P
 
 ### Reviewer guidance
 
-**V/F was misclassified as a time parameter, causing a dimension mismatch, and the abstract-only source prevented verification of the reported concentration value of 3.14.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q75 unit h ([time]) vs [mass] / [length] ** 3.**
 
-The record assigns V/F a unit of h, which conflicts with its definition as volume of distribution. Additionally, the concentration parameter (labeled Ct) has a value of 3.14 in the record, while a second reader identified this value as null. Because the record relies solely on the paper's abstract, these summary statistics stand in for a fitted model. Extracted — vamorolone: V/F 119 L, Ct 3.14 h, R1 1.16 mg/kg/h, CL/F 35.8 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — vamorolone: V/F 119 L, Ct 3.14 h, R1 1.16 mg/kg/h, CL/F 35.8 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of tk0: this record has 3.14, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

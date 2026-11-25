@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vincristine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vincristine_Centanni2024_reference&quot;,&quot;label&quot;:&quot;Centanni_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vincristine/Vincristine_Centanni2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vincristine_Owellen1977_reference&quot;,&quot;label&quot;:&quot;Owellen_1977_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vincristine/Vincristine_Owellen1977_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vincristine_Centanni2024_reference&quot;,&quot;label&quot;:&quot;Centanni_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vincristine/Vincristine_Centanni2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # vincristine
 
@@ -21,7 +21,8 @@ Vincristine is a plant-derived chemotherapy agent used to treat various cancers,
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| vincristine | parent | 824.972 | C46H56N4O10 | DrugBank | [5978](https://pubchem.ncbi.nlm.nih.gov/compound/5978) | Centanni_2024, Owellen_1977, van_2022 |
+| vincristine | parent | 824.972 | C46H56N4O10 | DrugBank | [5978](https://pubchem.ncbi.nlm.nih.gov/compound/5978) | Centanni_2024, Moore_2011, Owellen_1977, van_2022 |
+| vindesine and vincristine | metabolite | 753.941 | C43H55N5O7 | PubChem | [40839](https://pubchem.ncbi.nlm.nih.gov/compound/40839) | Owellen_1977 |
 
 ## Start here
 
@@ -31,7 +32,7 @@ Vincristine is a plant-derived chemotherapy agent used to treat various cancers,
 
 ## Parameters across studies
 
-<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">van_2022 · CL</text><circle cx="237.6" cy="30.0" r="4" fill="#ef6c00"><title>van_2022 · CL: 1.87 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Centanni_2024 · CL</text><circle cx="479.6" cy="46.0" r="4" fill="#ef6c00"><title>Centanni_2024 · CL: 45.2 L/h</title></circle></svg></div>
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="96" viewBox="0 0 560 96" role="img" aria-label="CL across studies"><text x="190" y="14" font-size="12" font-weight="600">CL (L/h, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="74" stroke="#ddd"/><text x="190.0" y="88" font-size="10" text-anchor="middle">1</text><line x1="365.0" y1="18" x2="365.0" y2="74" stroke="#ddd"/><text x="365.0" y="88" font-size="10" text-anchor="middle">10</text><line x1="540.0" y1="18" x2="540.0" y2="74" stroke="#ddd"/><text x="540.0" y="88" font-size="10" text-anchor="middle">100</text><text x="184" y="34.0" font-size="11" text-anchor="end">van_2022 · CL</text><circle cx="237.6" cy="30.0" r="4" fill="#ef6c00"><title>van_2022 · CL: 1.87 L/h</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Centanni_2024 · CL</text><circle cx="479.6" cy="46.0" r="4" fill="#ef6c00"><title>Centanni_2024 · CL: 45.2 L/h</title></circle><text x="184" y="66.0" font-size="11" text-anchor="end">Moore_2011 · CL</text><circle cx="487.4" cy="62.0" r="4" fill="#ef6c00"><title>Moore_2011 · CL: 50.03 L/h</title></circle></svg></div>
 
 <sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
@@ -40,19 +41,18 @@ Vincristine is a plant-derived chemotherapy agent used to treat various cancers,
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T3_param_coverage</sub> | [Centanni_2024_reference](drugs/drug_vincristine/Vincristine_Centanni2024_reference.md) | ▶ model + simulator | 2-compartment, IV | 5 | Centanni M et al., Model-Informed Precision Dosing to Redu…, Clinical pharmacokinetics (2024) | [10.1007/s40262-023-01336-1](https://doi.org/10.1007/s40262-023-01336-1) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): k12, k21</sub> | [Owellen_1977_reference](drugs/drug_vincristine/Vincristine_Owellen1977_reference.md) | ▶ model + simulator | 2-compartment, IV | 6 | Owellen RJ et al., Pharmacokinetics of vindesine and vincr…, Cancer research (1977) | — |
+| <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Moore_2011_reference](drugs/drug_vincristine/Vincristine_Moore2011_reference.md) | — | 1-compartment (no model) | 3 | Moore AS et al., Vincristine pharmacodynamics and pharma…, Journal of paediatrics and… (2011) | [10.1111/j.1440-1754.2011.02103.x](https://doi.org/10.1111/j.1440-1754.2011.02103.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — no disposition parameter from this paper; review-gap-f…</sub> | [van_2022_reference](drugs/drug_vincristine/Vincristine_van2022_reference.md) | — | 1-compartment (no model) | 3 | van de Velde ME et al., Genetic Polymorphisms Associated with V…, Cancers (2022) | [10.3390/cancers14143510](https://doi.org/10.3390/cancers14143510) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [Igarashi_2021_mean](drugs/drug_vincristine/Vincristine_Igarashi2021_mean.md) | — | 1-compartment (no model) | 1 | Igarashi T et al., Population pharmacokinetic model develo…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04220-y](https://doi.org/10.1007/s00280-020-04220-y) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [↳ standard_error_of_the_mean](drugs/drug_vincristine/Vincristine_Igarashi2021_standard_error_of_the_mean.md) | — | 1-compartment (no model) | 0 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Igarashi_2021_reference](drugs/drug_vincristine/Vincristine_Igarashi2021_reference.md) | — | 1-compartment (no model) | 0 | Igarashi T et al., Population pharmacokinetic model develo…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04220-y](https://doi.org/10.1007/s00280-020-04220-y) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Owellen_1977_reference](drugs/drug_vincristine/Vincristine_Owellen1977_reference.md) | — | 2-compartment (no model) | 5 | Owellen RJ et al., Pharmacokinetics of vindesine and vincr…, Cancer research (1977) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Rosson_2002_DNA_synthesis](drugs/drug_vincristine/pd_Rosson_2002_DNA_synthesis.md) | DNA synthesis ← vincristine · inhibition effect | — | Rosson GB et al., Drug resistance in malignant rhabdoid t…, Cancer chemotherapy and pha… (2002) | [10.1007/s00280-001-0398-y](https://doi.org/10.1007/s00280-001-0398-y) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Yuan_2025_VIPN](drugs/drug_vincristine/pd_Yuan_2025_VIPN.md) | vincristine-induced peripheral neuropathy ← vincristine · stimulation effect | — | Yuan Y et al., Pharmacokinetic, Pharmacodynamic and Ph…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3462](https://doi.org/10.1002/cpt.3462) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Olszewska-Słonina_2004_cell_viability](drugs/drug_vincristine/pd_Olszewska_S_onina_2004_cell_viability.md) | cell viability ← vincristine · direct linear effect | — | Olszewska-Słonina D et al., B16 and CLS91 mouse melanoma cells susc…, Acta poloniae pharmaceutica (2004) | — |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Centanni_2024_VIPN](drugs/drug_vincristine/pd_Centanni_2024_VIPN.md) | vincristine-induced peripheral neuropathy ← vincristine · categorical (graded) response model | — | Centanni M et al., Model-Informed Precision Dosing to Redu…, Clinical pharmacokinetics (2024) | [10.1007/s40262-023-01336-1](https://doi.org/10.1007/s40262-023-01336-1) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Olszewska-Słonina_2004_apoptosis](drugs/drug_vincristine/pd_Olszewska_S_onina_2004_apoptosis.md) | apoptosis ← vincristin · stimulation effect | — | Olszewska-Słonina D et al., B16 and CLS91 mouse melanoma cells susc…, Acta poloniae pharmaceutica (2004) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Centanni_2026_VIPN](drugs/drug_vincristine/pd_Centanni_2026_VIPN.md) | vincristine-induced peripheral neuropathy ← vincristine · categorical (graded) response model | — | Centanni M et al., Extrapolating Vincristine-Induced Perip…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70303](https://doi.org/10.1002/psp4.70303) |
 
 ## Pharmacogenomics (PGx)
 
@@ -90,91 +90,129 @@ Vincristine is a plant-derived chemotherapy agent used to treat various cancers,
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 15:09 | 13:59 | 3/2/0 | 3/1/0 | 1/0/11 | 218,530/49,922 | openai / gpt-6-luna | 12 | 3/10 | 9/3 | 0 |
+| 2026-11-24 06:11 | 0:06 | 3/2/0 | 3/0/0 | 1/0/11 | 3,795/192 | einfracz / qwen3.8-27b | 12 | 3/10 | 9/3 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 584 matched, 73 returned
-- **screened:** 4  ·  **relevant:** 3
+- **screened:** 5  ·  **relevant:** 5
 - **records:** 5  ·  extracted 0  ·  needs review 3  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Barnett_2022.pdf` | Barnett S et al., Vincristine dosing, drug exposure and t…, European journal of cancer… (2022) | popPK | 10 | [10.1016/j.ejca.2021.09.014](https://doi.org/10.1016/j.ejca.2021.09.014) | [34657763](https://pubmed.ncbi.nlm.nih.gov/34657763) | A two-compartment population model is reported, but numeric disposition parameter estimates are absent from the provided evidence. |
-| `Owellen_1977.pdf` | Owellen RJ et al., Pharmacokinetics of vindesine and vincr…, Cancer research (1977) | popPK | 10 |  | [872088](https://pubmed.ncbi.nlm.nih.gov/872088) | Human vincristine half-lives and distribution volumes are reported numerically in the evidence. |
-| `Yuan_2025.pdf` | Yuan Y et al., Pharmacokinetic, Pharmacodynamic and Ph…, Clinical pharmacology and t… (2025) | popPK | 10 | [10.1002/cpt.3462](https://doi.org/10.1002/cpt.3462) | [39367622](https://pubmed.ncbi.nlm.nih.gov/39367622) | Human VCR PopPK is reported, but numeric disposition parameter estimates are not present in the provided evidence. |
-
-<sub>queue written 2026-10-06 14:56 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Barnett_2022 | relevant | 10 | 2 | A two-compartment population model is reported, but numeric disposition parameter estimates are absent from the provided evidence. |
-| PGx | Beraldo-Neto_2024 | not_relevant | 0 | 0 | The study describes proteomic differences associated with cellular multidrug resistance but does not report a gene variant, genotype, or phenotype effect on a vincristine PK or PD parameter. |
-| PGx | Błauż_2017 | not_relevant | 0 | 0 | The paper describes drug-selected cell lines and transporter expression, but does not report a gene-related effect on a vincristine PK or PD parameter. |
-| popPK | Casanova_2023 | irrelevant | 0 | 0 | Vincristine is co-administered, but PK is evaluated only for regorafenib and irinotecan. |
+| popPK | Barnett_2022 | irrelevant | 5 | 0 | The paper reports on a population pharmacokinetic model for vincristine, but the specific quantitative parameter values (clearance, volume, etc.) are not present in the provided evidence. |
+| PGx | Barnett_2022 | not_relevant | 0 | 0 | The study investigates population pharmacokinetics and dosing in neonates/infants but does not report any association with gene variants or genotypes. |
+| popPK | Beraldo-Neto_2024 | irrelevant | 0 | 0 | The paper is a proteomic study on multidrug resistance mechanisms in an in-vitro cell line, containing no pharmacokinetic parameters or quantitative disposition data for vincristine. |
+| PGx | Beraldo-Neto_2024 | not_relevant | 0 | 0 | The paper investigates the cellular mechanisms of multidrug resistance in a leukemia cell line using proteomics and does not report any pharmacogenomic data (gene variants) affecting pharmacokinetic or pharmacodynamic parameters in patients. |
+| popPK | Błauż_2017 | irrelevant | 0 | 0 | This is an in-vitro study on drug-resistant cell lines, not a pharmacokinetic study reporting quantitative disposition parameters (CL, V, etc.) for vincristine in a living organism. |
+| PGx | Błauż_2017 | not_relevant | 1 | 0 | The paper describes cell line selection experiments to model MDR transporters, not a clinical or preclinical study linking specific human gene variants to pharmacokinetic or pharmacodynamic parameters of vincristine in vivo. |
+| popPK | Casanova_2023 | irrelevant | 2 | 0 | The study evaluates the pharmacokinetics of the combination partners (regorafenib and irinotecan), while vincristine is used only as a standard-dose co-administered agent, and no specific PK parameters for vincristine are reported. |
+| PGx | Casanova_2023 | not_relevant | 0 | 0 | The study reports population pharmacokinetics of regorafenib and irinotecan but does not investigate the effect of any gene variant or genotype on these PK parameters. |
 | PGx | Centanni_2024 | not_relevant | 0 | 0 | CYP3A5 genotype was mentioned only in simulation population assumptions; no genotype effect on vincristine PK or PD parameters was estimated or reported. |
 | PGx | Centanni_2024_2 | not_relevant | 2 | 0 | The text compares exposure-prediction approaches but gives no vincristine-specific genotype effect on a PK/PD parameter or fitted effect size. |
-| PGx | Centanni_2026 | not_relevant | 2 | 1 | Genotype distributions are mentioned as part of model extrapolation, but no variant-specific effect on a vincristine PK or PD parameter is reported. |
-| PGx | Cheon_2017 | not_relevant | 0 | 0 | The study examines P-gp inhibition and vincristine sensitivity in resistant cells, not effects of a gene variant, genotype, or phenotype on a vincristine PK/PD parameter. |
-| PGx | Chieli_2009 | not_relevant | 0 | 0 | The study examines plant compounds inhibiting P-glycoprotein in vincristine-resistant cells, not how a gene variant, genotype, or phenotype changes a vincristine PK/PD parameter. |
+| popPK | Centanni_2026 | relevant | 9 | 0 | The study describes a quantitative three-compartment population PK model for vincristine, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided abstract or evidence text. |
+| popPK | Cheon_2017 | irrelevant | 0 | 0 | The study focuses on the mechanism of P-gp inhibition by JAK2 inhibitors to sensitize cancer cells to vincristine (in-vitro), and does not report pharmacokinetic parameters (CL, V, t1/2) for vincristine. |
+| PGx | Cheon_2017 | not_relevant | 0 | 0 | The paper describes the interaction of JAK2 inhibitors with P-gp in cancer cells and their effect on vincristine sensitivity, but it does not report a pharmacogenomic effect (gene variant/genotype) on vincristine PK or PD parameters. |
+| popPK | Chieli_2009 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of P-gp inhibition using cell lines, with no pharmacokinetic parameters (CL, V, etc.) reported for vincristine. |
+| PGx | Chieli_2009 | not_relevant | 0 | 0 | The study investigates the effect of plant extracts on P-gp activity in vitro, which is a mechanistic/herb-drug interaction study, not a report of a genetic variant affecting vincristine PK/PD. |
 | popPK | Chopra_2016 | irrelevant | 0 | 0 | Vincristine is only an in-vitro comparator, and no vincristine pharmacokinetic parameters are reported. |
 | PD | Chopra_2016 | not_relevant | 0 | 0 | The paper focuses on the mechanism of action of AK301 and compares it to vincristine using fixed concentrations (e.g., 500 nM) without reporting a dose-response curve or numeric PD parameters for vincristine. |
-| popPK | Clarion_2012 | irrelevant | 0 | 0 | Vincristine is only a comparator in cell-line assays, with no pharmacokinetic parameters reported. |
+| popPK | Clarion_2012 | irrelevant | 0 | 0 | The paper focuses on the synthesis and in vitro antiproliferative activity of new oxaphosphinane compounds, with vincristine serving only as a comparator for toxicity, and contains no pharmacokinetic data. |
 | PD | Clarion_2012 | not_relevant | 0 | 0 | The paper focuses on the synthesis and in vitro screening of new oxaphosphinane compounds, mentioning vincristine only as a qualitative comparator for toxicity and potency without providing any exposure-response or dose-response data for vincristine. |
-| PGx | Dennison_2006 | not_relevant | 1 | 0 | The study compares vincristine metabolism by CYP3A4 and CYP3A5 in vitro but does not measure a variant, genotype, or phenotype effect on vincristine PK or PD. |
-| PGx | Deshpande_2016 | not_relevant | 0 | 0 | The study evaluates ABCB1 genotype effects on acepromazine sedation, not vincristine pharmacokinetics or pharmacodynamics. |
-| PGx | Fleming_2026 | not_relevant | 2 | 10 | Tumor ABCB1 upregulation is linked to vincristine resistance, but the paper does not report a gene variant/genotype/phenotype effect on a vincristine PK or PD parameter. |
-| PGx | Gutierrez-Camino_2018 | not_relevant | 2 | 8 | Reports associations between miRNA SNPs and vincristine-induced neurotoxicity, but does not measure or quantify a vincristine pharmacokinetic or pharmacodynamic parameter. |
-| PGx | Harker_1985 | not_relevant | 0 | 0 | Reports acquired multidrug resistance and vincristine cross-resistance in selected cell lines, not a gene variant/genotype/phenotype effect on a vincristine PK or PD parameter. |
-| PGx | Hofman_2021 | not_relevant | 0 | 0 | CYP3A4 or CYP3A5 overexpression did not affect vincristine activity, and the study reports no genotype-associated PK or PD parameter. |
-| popPK | Igarashi_2021 | relevant | 9 | 2 | Population-PK variability estimates are present, but numeric typical CL, V, or Q values are not shown. |
+| PGx | Clarion_2012 | not_relevant | 0 | 0 | The paper reports on the synthesis and in vitro antiproliferative activity of a new drug candidate (oxaphosphinane), mentioning vincristine only as a negative control for toxicity, without investigating any pharmacogenomic effects on vincristine's PK/PD. |
+| popPK | Dennison_2006 | irrelevant | 3 | 1 | The study is in-vitro mechanistic research identifying metabolites and comparing intrinsic clearances of specific enzymes, not a population-pharmacokinetic study reporting systemic disposition parameters (CL, V, T1/2) for the subject. |
+| PGx | Dennison_2006 | not_relevant | 4 | 0 | The paper presents in vitro enzyme kinetics (CYP3A4 vs CYP3A5) but does not report in vivo pharmacokinetic or pharmacodynamic changes driven by human genotypes. |
+| popPK | Deshpande_2016 | irrelevant | 0 | 0 | The study investigates the pharmacodynamics (sedation score) of acepromazine in dogs, and vincristine is only mentioned in the background as a drug to which the mutant dogs are susceptible, with no pharmacokinetic data for vincristine reported. |
+| PGx | Deshpande_2016 | not_relevant | 0 | 0 | The study investigates the pharmacogenomic effect of the ABCB1 mutation on Acepromazine sedation, not Vincristine. |
+| popPK | Fleming_2026 | irrelevant | 0 | 0 | The study focuses on the molecular mechanisms of chemotherapy resistance (chromatin changes, gene expression) in a xenograft model, not on pharmacokinetic parameter estimation. |
+| PGx | Fleming_2026 | not_relevant | 0 | 0 | The paper describes epigenetic mechanisms of chemotherapy resistance (ABCB1 upregulation) rather than the effect of a specific germline gene variant on a PK or PD parameter. |
+| popPK | Guilhaumou_2011 | relevant | 10 | 2 | The study is a population pharmacokinetic model of vincristine in humans, but the specific numeric parameter values (CL, V, etc.) are not provided in the extracted text. |
+| PGx | Guilhaumou_2011 | not_relevant | 0 | 0 | The study explicitly concludes that the investigated CYP3A4, CYP3A5, and ABCB1 polymorphisms did not significantly affect vincristine pharmacokinetics. |
+| popPK | Gutierrez-Camino_2018 | irrelevant | 0 | 0 | The study is a pharmacogenetic analysis of miRNA SNPs associated with vincristine neurotoxicity, reporting odds ratios rather than quantitative pharmacokinetic parameters like clearance or volume. |
+| PGx | Gutierrez-Camino_2018 | not_relevant | 4 | 3 | The study reports associations between miRNA SNPs and VCR-induced neurotoxicity (an adverse event/PD outcome), but it does not report quantified changes in specific PK parameters (e.g., clearance, AUC) or defined PD parameters (e.g., EC50). |
+| popPK | Harker_1985 | irrelevant | 0 | 0 | The paper is an in-vitro study on multidrug resistance mechanisms in cancer cell lines, not a pharmacokinetic study reporting disposition parameters for vincristine. |
+| PGx | Harker_1985 | not_relevant | 2 | 0 | The study focuses on doxorubicin resistance mechanisms in cell lines and mentions cross-resistance to vincristine, but does not report any gene variant/genotype/phenotype effects on specific PK or PD parameters for vincristine. |
+| popPK | Hofman_2021 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of drug resistance using HepG2 cells and does not report any quantitative pharmacokinetic parameters (e.g., CL, V, t1/2) for vincristine. |
+| PGx | Hofman_2021 | not_relevant | 0 | 0 | The study explicitly states that the pharmacological activity of vincristine was not influenced by CYP3A4 or CYP3A5 overexpression, reporting a null result rather than a pharmacogenomic effect. |
 | PD | Igarashi_2021 | not_relevant | 0 | 0 | The text only reports pharmacokinetic (PK) variability parameters (IIV, residual error) for a population PK model and contains no pharmacodynamic (PD) or exposure-response data. |
-| PGx | Kellie_1988 | not_relevant | 0 | 0 | The paper reports treatment outcomes and toxicity but no gene variant/genotype/phenotype effect on vincristine PK or PD. |
-| popPK | Knoerl_2025 | irrelevant | 0 | 0 | This human CIPN and genotype study reports no vincristine pharmacokinetic disposition parameters. |
-| PGx | Kurian_2020 | not_relevant | 0 | 0 | The study examines hCAR activation and cyclophosphamide metabolism, not a genetic effect on vincristine PK or PD. |
-| PGx | Kwan_2024 | not_relevant | 0 | 0 | No gene-related effect on a vincristine pharmacokinetic or pharmacodynamic parameter is reported; the metabolism findings concern 6MP. |
-| PGx | Lee_1989 | not_relevant | 0 | 0 | The study reports no gene variant, genotype, or phenotype effect on a vincristine PK or PD parameter; it only notes no cross-resistance to vincristine. |
-| popPK | Levêque_1996 | irrelevant | 0 | 0 | The paper reports vinorelbine pharmacokinetics, not quantitative disposition parameters for vincristine. |
-| popPK | Liu_2022 | irrelevant | 0 | 0 | Vincristine is only co-administered in R-CHOP; no vincristine pharmacokinetic parameters are reported. |
+| PGx | Igarashi_2021 | not_relevant | 1 | 10 | The text reports population pharmacokinetic variability estimates for a model using body surface area and age as covariates, with no mention of gene variants, genotypes, or pharmacogenomic effects. |
+| popPK | Kellie_1988 | irrelevant | 0 | 0 | The study focuses on the efficacy of ifosfamide in neuroblastoma; vincristine is only mentioned as part of a combination chemotherapy regimen and no PK parameters are reported. |
+| PGx | Kellie_1988 | not_relevant | 0 | 0 | The paper evaluates the clinical efficacy of ifosfamide in neuroblastoma and contains no pharmacogenomic analysis of vincristine. |
+| popPK | Knoerl_2025 | irrelevant | 0 | 0 | The study focuses on the association between CEP72 genotype and chemotherapy-induced peripheral neuropathy (CIPN) severity, reporting no pharmacokinetic parameters (e.g., clearance, volume) for vincristine. |
+| PGx | Knoerl_2025 | not_relevant | 6 | 0 | While it explores a pharmacogenomic association with a PD-like toxicity (CIPN), the text reports non-significant results and does not contain the quantitative effect sizes or specific PK/PD parameter values required for extractability. |
+| popPK | Kurian_2020 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of CITCO and the prodrug cyclophosphamide (CPA) in mice, with vincristine serving only as a component of the CHOP combination therapy without specific PK parameter reporting. |
+| PGx | Kurian_2020 | not_relevant | 2 | 3 | The study investigates the effect of a CAR agonist (CITCO) on the PK of cyclophosphamide in mice, not the effect of a gene variant on vincristine. |
+| popPK | Kwan_2024 | irrelevant | 0 | 0 | The paper is a clinical case report focusing on the adverse effects of 6-mercaptopurine and methotrexate, and while vincristine is mentioned as part of the chemotherapy regimen, no pharmacokinetic parameters for vincristine are reported. |
+| PGx | Kwan_2024 | not_relevant | 0 | 0 | The paper describes altered metabolism of mercaptopurine (6MP), not vincristine. |
+| popPK | Lee_1989 | irrelevant | 0 | 0 | The paper is a mechanistic study on Adriamycin resistance where vincristine is mentioned only as a comparator drug showing no cross-resistance, with no PK parameters reported. |
+| PGx | Lee_1989 | not_relevant | 0 | 0 | The paper studies resistance mechanisms to Adriamycin (Doxorubicin) in murine models and does not report pharmacogenomic effects on the PK or PD of vincristine. |
+| popPK | Levêque_1996 | irrelevant | 0 | 0 | The paper is a clinical pharmacokinetic review of vinorelbine, not vincristine, which is only mentioned as a structural relative. |
+| PGx | Levêque_1996 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics of vinorelbine and does not report any pharmacogenomic effects on vincristine. |
+| popPK | Lewis_2017 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of drug resistance (cell survival) and does not report any quantitative pharmacokinetic parameters (CL, V, half-life) for vincristine. |
+| PGx | Lewis_2017 | not_relevant | 1 | 2 | The paper reports that ABCG2 does not confer resistance to vincristine (no effect), and it does not report specific pharmacokinetic or pharmacodynamic parameter changes (e.g., AUC, IC50 values) quantified as a function of the genotype. |
+| popPK | Li_2024 | relevant | 5 | 3 | The study investigates vincristine disposition in mouse models and reports relative exposure changes (e.g., 1.15-fold increase in Cyp3a(-/-) mice), but absolute quantitative PK parameters (CL, V) are not explicitly listed in the provided text. |
+| popPK | Liu_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and exposure-response of rituximab, not vincristine, which is only mentioned as a component of the R-CHOP regimen. |
 | PD | Liu_2022 | not_relevant | 0 | 0 | The paper analyzes the exposure-response relationship for rituximab, not vincristine. |
-| PGx | Mao_2024 | not_relevant | 1 | 0 | Tumor DME expression is associated with predicted vincristine sensitivity, but no gene variant/genotype/phenotype effect on a vincristine PK or PD parameter is reported. |
-| PGx | Marques_2021 | not_relevant | 0 | 0 | The study examines quercetin’s effects on ABCB1 expression and efflux, not how a gene variant, genotype, or phenotype changes a vincristine PK/PD parameter. |
-| PGx | Mealey_2015 | not_relevant | 0 | 0 | This review discusses P-glycoprotein-mediated drug interactions, not effects of a gene variant, genotype, or phenotype on vincristine PK or PD. |
-| PGx | Mealey_2017 | not_relevant | 0 | 0 | The paper mentions vincristine as a canine P-glycoprotein substrate but reports no genotype-dependent effect on a vincristine PK or PD parameter. |
-| popPK | Mehrdadi_2024 | irrelevant | 0 | 0 | Vincristine is only evaluated as a risk factor for taste changes; no pharmacokinetic parameters are reported. |
-| PGx | Michaelis_2016 | not_relevant | 0 | 0 | The paper studies chemical modulation of ABCB1-mediated vincristine transport, not an effect of a gene variant, genotype, or phenotype on a vincristine PK or PD parameter. |
-| PGx | Moore_2011 | not_relevant | 0 | 0 | The paper reports CYP3A5 genotypes but no genotype-associated change in vincristine PK or PD parameters. |
-| PGx | Mortensen_2024 | not_relevant | 0 | 0 | The study examines transporter expression and pharmacological modulation, not gene variants/genotypes/phenotypes affecting a vincristine PK or PD parameter. |
-| PGx | Mufti_2024 | not_relevant | 1 | 8 | Reports genetic associations with vincristine-induced neuropathy risk, not effects on a vincristine pharmacokinetic or pharmacodynamic parameter. |
-| PGx | Nakayama_2024 | not_relevant | 0 | 0 | The study reports vincristine sensitivity in resistant cell lines but does not link it to a gene variant, genotype, or phenotype. |
-| popPK | Olszewska-Słonina_2004 | irrelevant | 0 | 0 | In-vitro melanoma-cell apoptosis and EC50 are reported, but no vincristine disposition parameters. |
-| PGx | Raynaud_1993 | not_relevant | 0 | 0 | Reports an assay and pharmacokinetics for 1069C85, with no gene-variant effect on vincristine PK or PD. |
-| PGx | Rossi_2017 | not_relevant | 0 | 0 | Reports tumor cfDNA mutations and treatment response, not a pharmacogenomic effect on a vincristine PK or PD parameter. |
-| popPK | Rosson_2002 | irrelevant | 0 | 0 | This is an in-vitro drug-sensitivity study and reports no vincristine pharmacokinetic parameters. |
-| popPK | Roundhill_2019 | irrelevant | 0 | 0 | This is an in-vitro drug-resistance study and reports no vincristine pharmacokinetic parameters. |
+| PGx | Liu_2022 | not_relevant | 0 | 0 | The paper focuses on the exposure-response relationship of rituximab in DLBCL patients and does not report pharmacogenomic effects on the PK or PD of vincristine. |
+| popPK | Mao_2024 | irrelevant | 0 | 0 | The paper investigates gene expression patterns and drug sensitivity predictions, not pharmacokinetic parameters or disposition models for vincristine. |
+| PGx | Mao_2024 | not_relevant | 2 | 2 | The paper reports associations between gene expression levels and drug sensitivity (PD) but does not specify a gene variant/genotype, nor does it report specific changes in PK parameters (like AUC or CL) for vincristine. |
+| popPK | Marques_2021 | irrelevant | 0 | 0 | The study focuses on the anti-MDR mechanism of quercetin, using vincristine only as a comparator agent in cytotoxicity assays without reporting any pharmacokinetic parameters for vincristine. |
+| PGx | Marques_2021 | not_relevant | 0 | 0 | The paper investigates the effect of quercetin on drug resistance in cell lines, not the effect of a specific gene variant on vincristine PK/PD. |
+| popPK | Martin-Guerrero_2019 | irrelevant | 0 | 0 | The study investigates pharmacodynamic genetic variants associated with neurotoxicity, not pharmacokinetic parameters such as clearance or volume of distribution. |
+| PGx | Martin-Guerrero_2019 | not_relevant | 0 | 0 | The study reports no significant association between genetic variants and vincristine neurotoxicity, failing to demonstrate a pharmacogenomic effect. |
+| popPK | Mealey_2015 | irrelevant | 0 | 0 | The paper is a review of P-glycoprotein-mediated drug interactions and does not report quantitative pharmacokinetic parameters for vincristine. |
+| PGx | Mealey_2015 | not_relevant | 0 | 0 | The paper is a review of P-glycoprotein-mediated drug-drug interactions, not pharmacogenomic effects of gene variants on vincristine. |
+| popPK | Mealey_2017 | irrelevant | 0 | 0 | The paper describes the development of a cell line for P-glycoprotein assays and does not report pharmacokinetic parameters for vincristine. |
+| PGx | Mealey_2017 | not_relevant | 0 | 0 | The paper describes the establishment of a cell line for testing P-gp substrates and does not report in vivo pharmacokinetic or pharmacodynamic data linked to specific gene variants. |
+| popPK | Mehrdadi_2024 | irrelevant | 0 | 0 | The study is a clinical evaluation of taste changes in pediatric oncology patients and identifies vincristine only as a risk factor, reporting no pharmacokinetic parameters. |
+| PGx | Mehrdadi_2024 | not_relevant | 0 | 0 | The paper describes the prevalence of taste changes in pediatric cancer patients and identifies recent vincristine exposure as a risk factor, but it does not report any pharmacogenomic effects or genetic variants influencing PK/PD parameters. |
+| popPK | Michaelis_2016 | irrelevant | 0 | 0 | The study investigates the effect of pirinixic acid derivatives on ABCB1-mediated transport of vincristine in vitro, rather than modeling the pharmacokinetic parameters (CL, V, etc.) of vincristine itself. |
+| PGx | Michaelis_2016 | not_relevant | 0 | 0 | The paper investigates the effect of pirinixic acid derivatives on ABCB1-mediated vincristine transport, but does not report any gene variants or genotypes affecting vincristine PK or PD parameters. |
+| PGx | Moore_2011 | not_relevant | 5 | 5 | The study aimed to assess the effect of CYP3A5 genotype on vincristine pharmacodynamics, but the results showed no significant correlation or pharmacogenomic effect due to lack of genetic variability in the sample. |
+| popPK | Mortensen_2024 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of neurotoxicity and transport in iPSC-derived neurons, not a pharmacokinetic study reporting disposition parameters for vincristine. |
+| PGx | Mortensen_2024 | not_relevant | 2 | 0 | The paper studies the effect of transporter inhibitors on drug uptake and toxicity in a cell model, but it does not report pharmacogenomic effects (based on gene variants/genotypes) on PK or PD parameters. |
+| popPK | Mufti_2024 | irrelevant | 0 | 0 | The study is a genome-wide association study (GWAS) investigating genetic risk factors for vincristine-induced peripheral neuropathy, not a pharmacokinetic study reporting quantitative disposition parameters. |
+| PGx | Mufti_2024 | not_relevant | 0 | 0 | The paper reports a GWAS identifying genetic risk factors for the adverse effect of neuropathy, but does not analyze or report changes in pharmacokinetic (e.g., AUC, Cmax) or pharmacodynamic (e.g., drug concentration response) parameters. |
+| popPK | Nakayama_2024 | irrelevant | 0 | 0 | The study is an in vitro mechanistic/cytotoxicity assay examining drug sensitivity and ABCB1 expression, reporting no pharmacokinetic parameters for vincristine. |
+| PGx | Nakayama_2024 | not_relevant | 1 | 2 | The study assesses cell sensitivity to vincristine in everolimus-resistant lines and correlates it with ABCB1 expression, but it does not report a specific gene variant/genotype effect on a PK or PD parameter of vincristine. |
+| popPK | Olszewska-Słonina_2004 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of cytotoxicity and apoptosis in mouse melanoma cells, not a pharmacokinetic study reporting disposition parameters for vincristine. |
+| PGx | Olszewska-Słonina_2004 | not_relevant | 0 | 0 | The study investigates differential susceptibility of two distinct mouse melanoma cell lines (B16 vs CLS91) to vincristine, which is a phenotypic comparison rather than a pharmacogenomic effect linked to a specific gene variant or genotype. |
+| PGx | Owellen_1977 | not_relevant | 0 | 0 | The paper describes general pharmacokinetics of vincristine and vindesine without reporting any gene variants, genotypes, or pharmacogenomic effects. |
+| popPK | Raynaud_1993 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of 1069C85, not vincristine, which is only mentioned as a reference for resistance. |
+| PGx | Raynaud_1993 | not_relevant | 0 | 0 | The paper describes an HPLC assay for a novel drug (1069C85) and its PK in mice; it does not report any pharmacogenomic effect on vincristine. |
+| popPK | Rossi_2017 | irrelevant | 0 | 0 | The study focuses on liquid biopsy genotyping for lymphoma diagnosis and monitoring, not the pharmacokinetic parameters of vincristine, which is only mentioned as part of the chemotherapy regimen (R-CHOP). |
+| PGx | Rossi_2017 | not_relevant | 0 | 0 | The paper focuses on tumor liquid biopsy for tracking clonal evolution and resistance to R-CHOP, not on host pharmacogenomics affecting vincristine PK or PD. |
+| popPK | Rosson_2002 | irrelevant | 1 | 0 | This is an in-vitro pharmacodynamic study measuring drug sensitivity (IC50/EC50) rather than a pharmacokinetic study reporting quantitative disposition parameters (CL, V, t1/2) for vincristine. |
+| PGx | Rosson_2002 | not_relevant | 0 | 0 | The paper evaluates p53 pathway function in response to DNA-damaging drugs but does not report any pharmacogenomic effects of gene variants on the pharmacokinetics or pharmacodynamics of vincristine. |
+| popPK | Roundhill_2019 | irrelevant | 0 | 0 | The study focuses on cancer stem-like cells and drug resistance mechanisms (transporters ABCG1/Pgp), not on pharmacokinetic parameters for vincristine. |
 | PD | Roundhill_2019 | not_relevant | 1 | 0 | The paper discusses drug resistance mechanisms in osteosarcoma cells and mentions vincristine resistance qualitatively, but it does not report any exposure-response or dose-response analysis with numeric PD parameters for vincristine. |
+| PGx | Roundhill_2019 | not_relevant | 2 | 5 | The study reports drug resistance (PD) to vincristine mediated by Pgp expression in cancer stem-like cells, which is a mechanistic/cellular phenotype, not a clinical pharmacogenomic effect of a specific gene variant on a PK/PD parameter in patients. |
 | PGx | Sabnis_2019 | not_relevant | 2 | 8 | The paper reports that pharmacologic ABCB1 inhibition lowers vincristine IC50 in cell lines, but does not report a gene variant/genotype/phenotype effect on a vincristine PK or PD parameter. |
 | popPK | Samineni_2022 | irrelevant | 0 | 0 | The PopPK analysis is for venetoclax; vincristine is only a co-administered R-CHOP component, with no vincristine PK values reported. |
 | PD | Samineni_2022 | not_relevant | 0 | 0 | The paper reports exposure-response analyses for venetoclax, not vincristine; no PD parameters for vincristine are provided. |
-| PGx | Syed_2021 | not_relevant | 0 | 0 | The study evaluates pharmacological P-glycoprotein inhibition in resistant cancer cell lines, not a gene variant, genotype, or phenotype effect on vincristine PK or PD. |
+| popPK | Shalaby_2024 | irrelevant | 0 | 0 | The study investigates CYP3A5 genetic polymorphism and toxicity/efficacy outcomes, reporting no quantitative pharmacokinetic parameters (CL, V, ka) for vincristine. |
+| popPK | Syed_2021 | irrelevant | 0 | 0 | The study focuses on the computational design and in vitro testing of P-glycoprotein inhibitors to reverse drug resistance, containing no pharmacokinetic disposition parameters for vincristine. |
+| PGx | Syed_2021 | not_relevant | 0 | 0 | The study reports the efficacy of a P-gp inhibitor on vincristine resistance in cell lines, not the effect of a human gene variant on vincristine PK/PD. |
 | PGx | Toksvang_2022 | not_relevant | 0 | 0 | The paper discusses vincristine pulse therapy but reports no gene-variant effect on a vincristine pharmacokinetic or pharmacodynamic parameter. |
-| popPK | Toso_1995 | irrelevant | 0 | 0 | This review concerns vinorelbine, not vincristine, and gives no numeric vincristine disposition parameters. |
-| PGx | Tsuruo_1981 | not_relevant | 0 | 0 | Reports differences in vincristine sensitivity among tumor cell populations, not effects of a gene variant, genotype, or phenotype on a PK/PD parameter. |
-| PGx | Wilde_2007 | not_relevant | 0 | 0 | No gene variant, genotype, or phenotype effect on a vincristine PK or PD parameter is reported; CYP3A4 phenotyping is only suggested for future study. |
-| popPK | Yuan_2025 | relevant | 10 | 2 | Human VCR PopPK is reported, but numeric disposition parameter estimates are not present in the provided evidence. |
-| PGx | Zhou-Pan_1993 | not_relevant | 0 | 0 | Reports CYP3A-related vinblastine metabolism, not a pharmacogenomic effect on a vincristine PK or PD parameter. |
-| PGx | Zhou_2018 | not_relevant | 0 | 0 | The case concerns vindesine, not vincristine; CYP3A5*3/*3 is proposed to explain vindesine accumulation, with no vincristine PK/PD effect reported. |
+| popPK | Toso_1995 | irrelevant | 0 | 0 | The paper is a review of vinorelbine, a different drug, and does not provide quantitative PK parameters for vincristine. |
+| PGx | Toso_1995 | not_relevant | 0 | 0 | The paper reviews the properties of vinorelbine and does not report any pharmacogenomic effects on vincristine. |
+| popPK | Tsuruo_1981 | irrelevant | 0 | 0 | This is an in vitro study measuring cytotoxic drug sensitivity (growth inhibition), not a pharmacokinetic study reporting disposition parameters for vincristine. |
+| PGx | Tsuruo_1981 | not_relevant | 0 | 0 | The study compares drug sensitivity in murine tumor subpopulations and metastases but does not investigate specific human gene variants or genotypes affecting vincristine PK/PD. |
+| popPK | Wilde_2007 | irrelevant | 3 | 0 | While the study uses population PK methods on a regimen containing vincristine, it focuses on toxicity drivers for etoposide and cyclophosphamide, and no specific quantitative PK parameters for vincristine are present in the provided evidence. |
+| PGx | Wilde_2007 | not_relevant | 2 | 1 | The study reports population pharmacokinetics and general CYP3A4 involvement but does not report specific gene variant/genotype effects on vincristine PK/PD parameters. |
+| popPK | Yuan_2025 | relevant | 10 | 0 | The study describes a population PK/PD model for vincristine, but the specific numeric parameter values are not present in the provided text evidence. |
+| PGx | Yuan_2025 | not_relevant | 5 | 0 | The study reports that ABCB1-rs1128503 genotype significantly improved the PopPK model fit (indicating a pharmacokinetic effect), but no specific quantitative effect sizes or parameter estimates for the genotype are provided in the text. |
+| popPK | Zhou-Pan_1993 | irrelevant | 0 | 0 | The study focuses on in vitro vinblastine metabolism; vincristine is only mentioned as an inhibitor/comparator without any PK parameters reported. |
+| PGx | Zhou-Pan_1993 | not_relevant | 0 | 0 | The paper focuses on vinblastine metabolism and CYP3A4 activity, and only speculates that vincristine metabolism might also be influenced, without reporting actual pharmacogenomic data for vincristine. |
+| popPK | Zhou_2018 | irrelevant | 0 | 0 | This is a clinical case report regarding an adverse drug reaction involving vindesine (a different drug) and itraconazole, with no quantitative pharmacokinetic parameters reported for vincristine or vindesine. |
+| PGx | Zhou_2018 | not_relevant | 2 | 1 | The paper reports a case of adverse drug interaction driven by a CYP3A5 genotype, but it focuses on a clinical event (SIADH/neurotoxicity) without reporting quantitative changes in pharmacokinetic (e.g., AUC, Cmax) or pharmacodynamic parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvincristine%5D&body=Drug%3A%20vincristine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_vincristine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 14:56 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 06:07 UTC</sub>

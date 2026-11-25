@@ -14,9 +14,19 @@ Ravidasvir is a direct-acting antiviral drug used to treat chronic hepatitis C. 
 
 <small>Summary written by `qwen3.8-27b` from [Wikidata Q25101668](https://www.wikidata.org/wiki/Q25101668), [Wikipedia](https://en.wikipedia.org/wiki/Ravidasvir?oldid=1361086997) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
 
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| ravidasvir | parent | 762.912 | C42H50N8O6 | DrugBank | — | Panjasawatwong_2024 |
+
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Panjasawatwong_2024_reference](drugs/drug_ravidasvir/Ravidasvir_Panjasawatwong2024_reference.md) | — | 1-compartment (no model) | 1 | Panjasawatwong N et al., Population pharmacokinetics of ravidasv…, Antimicrobial agents and ch… (2024) | [10.1128/aac.00008-24](https://doi.org/10.1128/aac.00008-24) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -30,39 +40,36 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:31 | 0:15 | 0/0/0 | 0/0/0 | 0/0/0 | 12,638/660 | ollama / glm-5.3-flash | 4 | 0/4 | 4/0 | 0 |
+| 2026-11-24 03:54 | 0:03 | 1/0/0 | 0/0/0 | 0/0/0 | 4,056/152 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned
-- **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Panjasawatwong_2024.pdf` | Panjasawatwong N et al., Population pharmacokinetics of ravidasv…, Antimicrobial agents and ch… (2024) | popPK | 10 | [10.1128/aac.00008-24](https://doi.org/10.1128/aac.00008-24) | [38767383](https://pubmed.ncbi.nlm.nih.gov/38767383) | Population PK of ravidasvir in humans with a two-compartment model, but numeric parameter values (CL/F, Vd/F, Q) are not present in the evidence, likely in tables/supplement not provided. |
-
-<sub>queue written 2026-10-07 16:31 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Abu_2026 | not_relevant | 0 | 0 | Trial of treatment duration vs SVR12; no gene variant or PK/PD parameter reported. |
+| popPK | Abu_2026 | irrelevant | 0 | 0 | The study is a clinical efficacy trial (SVR12) with no pharmacokinetic data or quantitative disposition parameters reported. |
+| PGx | Abu_2026 | not_relevant | 0 | 0 | The study is a clinical trial evaluating regimen duration (8 vs. 12 weeks) for non-inferiority of efficacy (SVR12) and safety, with no reported pharmacokinetic (PK) or pharmacodynamic (PD) data or analysis of gene variant/genotype effects on drug levels or response. |
 | PGx | Andrieux-Meyer_2021 | not_relevant | 0 | 0 | Trial reports efficacy/safety and lists PK objectives, but no gene variant/genotype effect on ravidasvir PK or PD parameters is reported. |
-| PGx | Esmat_2017 | not_relevant | 0 | 0 | Clinical efficacy/safety trial of ravidasvir+sofosbuvir with no genetic variant or PK/PD parameter data reported. |
-| PGx | Gomaa_2021 | not_relevant | 0 | 0 | Abstract only mentions HCV genotype (viral) and efficacy/safety, no host gene variant effect on ravidasvir PK/PD parameters. |
-| PGx | Hafez_2018 | not_relevant | 0 | 0 | Narrative review with no gene variant/genotype effects on ravidasvir PK or PD parameters reported. |
+| popPK | Esmat_2017 | irrelevant | 0 | 0 | The paper is a clinical efficacy study reporting virologic response rates (SVR12) and safety, containing no pharmacokinetic data or quantitative disposition parameters. |
+| PGx | Esmat_2017 | not_relevant | 0 | 0 | The paper evaluates clinical efficacy (SVR12) of ravidasvir in HCV patients but does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Gomaa_2021 | irrelevant | 0 | 0 | The provided evidence is a clinical efficacy overview discussing treatment outcomes and safety, with no mention of pharmacokinetic parameters or models. |
+| PGx | Gomaa_2021 | not_relevant | 0 | 0 | The text describes the clinical efficacy and approval status of ravidasvir but contains no information regarding pharmacogenomic effects on PK or PD parameters. |
+| popPK | Hafez_2018 | irrelevant | 0 | 0 | The paper is a narrative review summarizing clinical trial outcomes and general properties of ravidasvir but does not provide quantitative pharmacokinetic parameter values (e.g., CL, V, t1/2). |
+| PGx | Hafez_2018 | not_relevant | 0 | 0 | The paper is a general review of ravidasvir's pharmacology and clinical efficacy, providing no data on pharmacogenomic variants or their impact on PK/PD parameters. |
 | PGx | Hefnawy_2020 | not_relevant | 0 | 0 | Paper reports an analytical method and rat PK of ravidasvir with no gene variant/genotype/phenotype effects on PK or PD parameters. |
-| PGx | Kao_2018 | not_relevant | 2 | 3 | Reports viral NS5A resistance variants and SVR12 outcomes only, with no host pharmacogenomic effect on ravidasvir PK or PD parameters. |
-| PGx | Muhamad_2026 | not_relevant | 0 | 0 | The paper examines treatment duration and viral load as predictors of time to HCV RNA suppression; no gene variant/genotype/phenotype effect on ravidasvir PK/PD is reported (HCV genotype is viral, not host pharmacogenomics). |
-| popPK | Panjasawatwong_2024 | relevant | 10 | 3 | Population PK of ravidasvir in humans with a two-compartment model, but numeric parameter values (CL/F, Vd/F, Q) are not present in the evidence, likely in tables/supplement not provided. |
-| PGx | Xiao_2020 | not_relevant | 0 | 0 | Study reports efficacy/safety and cytokine changes for ravidasvir therapy, with no gene variant/genotype effects on PK or PD parameters. |
+| popPK | Kao_2018 | irrelevant | 0 | 0 | The study reports efficacy (SVR12) and safety endpoints but does not provide pharmacokinetic parameter estimates for ravidasvir. |
+| PGx | Kao_2018 | not_relevant | 0 | 0 | The paper reports clinical efficacy (SVR12) and safety but does not analyze the impact of genetic variants on the pharmacokinetics or pharmacodynamics of ravidasvir. |
+| popPK | Muhamad_2026 | irrelevant | 0 | 0 | The paper is a clinical trial analyzing the time to viral load suppression (efficacy/virologic response) and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for ravidasvir. |
+| PGx | Muhamad_2026 | not_relevant | 0 | 0 | The study investigates clinical treatment duration and HCV genotype effects on viral suppression time, but does not report pharmacogenomic variations (e.g., human genetic polymorphisms affecting drug metabolism) influencing the PK or PD of ravidasvir. |
+| PGx | Panjasawatwong_2024 | not_relevant | 0 | 0 | The paper reports the impact of demographic and disease covariates (e.g., sex, ART, albumin) on PK, but does not report any pharmacogenomic effects (gene variants/genotypes). |
+| popPK | Xiao_2020 | irrelevant | 0 | 0 | The study focuses on safety, efficacy, and cytokine profiling rather than pharmacokinetic parameters for ravidasvir. |
+| PGx | Xiao_2020 | not_relevant | 0 | 0 | The study reports safety, efficacy, and cytokine changes in a small cohort but does not analyze specific gene variants or genotypes affecting PK/PD parameters of ravidasvir. |
 | PGx | Xu_2019 | not_relevant | 3 | 3 | IL28B genotype and NS5A polymorphisms are analyzed only as subgroups for SVR12 efficacy, not as modifiers of ravidasvir PK/PD parameters. |
 
 
@@ -70,4 +77,4 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bravidasvir%5D&body=Drug%3A%20ravidasvir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ravidasvir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 03:53 UTC</sub>

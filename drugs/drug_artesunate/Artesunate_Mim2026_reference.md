@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Clearance for artesunate used the invalid unit 'CL' instead of a volumetric flow unit, causing dimensional rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit CL ([length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Mim2026_reference" status="rejected" stale="false" population="P. berghei-infected Swiss mice" measured-compound="artesunate" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Mim SR, Vieira Santos V, Pereira LC, Pica K, Miranda ALLdS, Quadros HC et al. Ph
 
 ### Reviewer guidance
 
-**Clearance for artesunate used the invalid unit 'CL' instead of a volumetric flow unit, causing dimensional rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit CL ([length] ** 3) vs [length] ** 3 / [time].**
 
-The record lists clearance as 286.01 with the verbatim unit 'CL', which does not represent a measurable physical quantity in pharmacokinetics. This unit could not be interpreted or converted to standard SI units, leaving the parameter without a valid value. The second reader also disagrees on the dose compound, primary analyte, and the absence of a metabolic link to dihydroartemisinin. Extracted — artesunate: kabs 0.28 1/h, CL 286 CL, V 4.04e+03 mL/kg, Q 2.06e+04 mL/h/kg.
+A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — artesunate: kabs 0.28 1/h, CL 286 CL, V 4.04e+03 mL/kg, Q 2.06e+04 mL/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artesunate, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

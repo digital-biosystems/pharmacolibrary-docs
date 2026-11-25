@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;proguanil&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/&quot;},{&quot;label&quot;:&quot;Khwarg_2024 \u00b7 ct&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Proguanil_McGready2003_reference&quot;,&quot;label&quot;:&quot;McGready_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_McGready2003_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This paper's disposition core is incomplete.
+> Only clearance was extracted — no volume.
 
 <div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_Khwarg2024_ct" status="needs_review" stale="false" population="healthy Korean adults" measured-compound="proguanil" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -19,13 +19,13 @@ Khwarg J, Yang E, Park CS, Ji SC, Yu KS, Lee S. Effect of SLC22A1 polymorphism o
 
 **Population:** healthy Korean adults · condition healthy · age group adult · n = 16.
 
-**Dosing:** 100 mg, oral, single.
+**Dosing:** 100, 250 mg, oral, single.
 
 ## Model
 
 **Structure:** parent + metabolite; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameters:** 8 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -35,14 +35,16 @@ Khwarg J, Yang E, Park CS, Ji SC, Yu KS, Lee S. Effect of SLC22A1 polymorphism o
 |---|---|---|---|
 | AUClast (h*μg/L) | AUClast | 1420.90 | h*μg/L |
 | C max (μg/L) | Cmax | 89.08 | μg/L |
+| T max (h) | tmax | 3.50 | h |
 | t 1/2 (h) | t1/2z | 18.04 | h |
-| Metabolic ratio a | AUC ratio | 0.21 |  |
-| CL | CL | 0.476 | L/h |
-| Tlag,1 | tlag | 0.147 | h |
+| AUClast (h*μg/L) | AUClast | 276.08 | h*μg/L |
+| C max (μg/L) | Cmax | 17.49 | μg/L |
+| T max (h) | tmax | 6.00 | h |
+| t 1/2 (h) | t1/2z | 12.4 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.231). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,11 +54,11 @@ Khwarg J, Yang E, Park CS, Ji SC, Yu KS, Lee S. Effect of SLC22A1 polymorphism o
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Only clearance was extracted — no volume.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Cherkaoui-Rbati_2023) cannot stand in for this paper's evidence. A reported unit could not be converted (AUClast and Cmax), so that value has no SI equivalent. Extracted — proguanil: AUClast 1.42e+03 h*μg/L, Cmax 89.1 μg/L, t1/2z 18 h, AUC ratio 0.21, CL 0.476 L/h, tlag 0.147 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Extracted — proguanil: AUClast 1.42e+03 h*μg/L, Cmax 89.1 μg/L, tmax 3.5 h, t1/2z 18 h; cycloguanil: AUClast 276 h*μg/L, Cmax 17.5 μg/L, tmax 6 h, t1/2z 12.4 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has proguanil, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has proguanil → cycloguanil (metabolism), the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,12 +66,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| AUClast (h*μg/L) | `Q74` · AUClast | 1420.90 | h*μg/L |  |  | (h·µg)/l | exact (1) | Khwarg_2024_table_2:row2:col4, Khwarg_2024_table_2:row2:col5, Khwarg_2024_table_2:row2:col6, Khwarg_2024_table_2:row7:col4, Khwarg_2024_table_2:row7:col5, Khwarg_2024_table_2:row7:col6 |
-| C max (μg/L) | `Q32` · Cmax | 89.08 | μg/L |  |  | µg/l | space_fold (0.95) | Khwarg_2024_table_2:row3:col4, Khwarg_2024_table_2:row3:col5, Khwarg_2024_table_2:row3:col6, Khwarg_2024_table_2:row8:col4, Khwarg_2024_table_2:row8:col5, Khwarg_2024_table_2:row8:col6 |
-| t 1/2 (h) | `Q57` · t1/2z | 18.04 | h | 6.494e+04 | s | h | space_fold (0.95) | Khwarg_2024_table_2:row5:col4, Khwarg_2024_table_2:row5:col5, Khwarg_2024_table_2:row5:col6, Khwarg_2024_table_2:row11:col4, Khwarg_2024_table_2:row11:col5, Khwarg_2024_table_2:row11:col6 |
-| Metabolic ratio a | `Q21` · AUC ratio | 0.21 |  |  |  |  | llm (0.6) | Khwarg_2024_table_2:row9:col4, Khwarg_2024_table_2:row9:col5, Khwarg_2024_table_2:row9:col6 |
-| CL | `Q22` · CL | 0.476 | L/h | 1.322e-07 | m3/s | L/h | review_gapfill (0.7) | Cherkaoui-Rbati_2023:review |
-| Tlag,1 | `Q83` · tlag | 0.147 | h | 529.2 | s | h | review_gapfill (0.7) | Cherkaoui-Rbati_2023:review |
+| AUClast (h*μg/L) | `Q74` · AUClast | 1420.90 | h*μg/L | 5.115 | kg*s/m3 | (h·µg)/l | exact (1) | Khwarg_2024_table_2:row2:col4, Khwarg_2024_table_2:row2:col5, Khwarg_2024_table_2:row2:col6 |
+| C max (μg/L) | `Q32` · Cmax | 89.08 | μg/L | 8.908e-05 | kg/m3 | µg/l | space_fold (0.95) | Khwarg_2024_table_2:row3:col4, Khwarg_2024_table_2:row3:col5, Khwarg_2024_table_2:row3:col6 |
+| T max (h) | `Q56` · tmax | 3.50 | h | 1.26e+04 | s | h | space_fold (0.95) | Khwarg_2024_table_2:row4:col4, Khwarg_2024_table_2:row4:col5, Khwarg_2024_table_2:row4:col6 |
+| t 1/2 (h) | `Q57` · t1/2z | 18.04 | h | 6.494e+04 | s | h | half_life_rule (0.95) | Khwarg_2024_table_2:row5:col4, Khwarg_2024_table_2:row5:col5, Khwarg_2024_table_2:row5:col6 |
+| AUClast (h*μg/L) | `Q74` · AUClast | 276.08 | h*μg/L | 0.9939 | kg*s/m3 | (h·µg)/l | exact (1) | Khwarg_2024_table_2:row7:col4, Khwarg_2024_table_2:row7:col5, Khwarg_2024_table_2:row7:col6 |
+| C max (μg/L) | `Q32` · Cmax | 17.49 | μg/L | 1.749e-05 | kg/m3 | µg/l | space_fold (0.95) | Khwarg_2024_table_2:row8:col4, Khwarg_2024_table_2:row8:col5, Khwarg_2024_table_2:row8:col6 |
+| T max (h) | `Q56` · tmax | 6.00 | h | 2.16e+04 | s | h | space_fold (0.95) | Khwarg_2024_table_2:row10:col4, Khwarg_2024_table_2:row10:col5, Khwarg_2024_table_2:row10:col6 |
+| t 1/2 (h) | `Q57` · t1/2z | 12.4 | h | 4.464e+04 | s | h | half_life_rule (0.95) | Khwarg_2024_table_2:row11:col4, Khwarg_2024_table_2:row11:col5, Khwarg_2024_table_2:row11:col6 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -80,43 +84,37 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Genotype Parameter' — extend the ontology if this is a real PK parameter (source ['Khwarg_2024_table_2:row0:col4', 'Khwarg_2024_table_2:row0:col5', 'Khwarg_2024_table_2:row0:col6'])
-- dropped value-less row: 'FUP'
+- dropped unlinked row (NIL): 'Metabolic ratio a' — extend the ontology if this is a real PK parameter (source ['Khwarg_2024_table_2:row9:col4', 'Khwarg_2024_table_2:row9:col5', 'Khwarg_2024_table_2:row9:col6'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=proguanil
 - template fit: none — only the metabolite is modelled — no parent compartment (site hepatic: 'Based on the PK and genotype data, a parent‐metabolite joint population PK model including a well‐stirred liver compartm')
-- population split: 'ct' subgroup of Khwarg_2024 (paper reports 3 populations: cc, ct, final model)
-- row roles (LLM): model_class=compartmental; 20/20 row label(s) assigned, 14 linked by role; re-tagged parent→cycloguanil ×9, proguanil→parent ×1
-- gap-filled Q22 (CL) from Cherkaoui-Rbati_2023's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- gap-filled Q83 (tlag) from Cherkaoui-Rbati_2023's review values (primary lacked it)
+- population split: 'ct' subgroup of Khwarg_2024 (paper reports 3 populations: cc, ct, final model / estimate)
+- row roles: 4 per-group rows of proguanil summary_statistic but 4 reference group(s) — kept as printed
+- row roles: 26 row(s) kept on the molecule their table section names, against the LLM's assignment
+- row roles (LLM): model_class=compartmental; 21/21 row label(s) assigned, 7 linked by role; re-tagged parent→cycloguanil ×29
 
 **Extraction notes:**
-- companion parameter table 2 transcribed (48 record(s))
+- table cts70103-tbl-0003: representations disagree; selected evidence retained, not merged
+- companion parameter table 2 transcribed (60 record(s))
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.231 (3/13 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.583 (7/12 fields) | 5 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[auclast]` | 1420.90 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auclast]` |  | 1420.90 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[c max]` | 89.08 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[c max]` |  | 89.08 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl]` | 0.476 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t 1/2]` | 18.04 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t 1/2]` |  | 18.04 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag,1]` | 0.147 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | proguanil | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | proguanil | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [['proguanil', 'cycloguanil', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[auclast]` | 276.08 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` | 17.49 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2]` | 12.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t max]` | 6.00 |  | only_one_extracted |
 
 </details>
 
@@ -130,17 +128,18 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Cherkaoui-Rbati_2023:review'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Khwarg_2024_table_2:row3:col4', 'Khwarg_2024_table_2:row3:col5', 'Khwarg_2024_table_2:row3:col6', 'Khwarg_2024_table_2:row8:col4', 'Khwarg_2024_table_2:row8:col5', 'Khwarg_2024_table_2:row8:col6'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Khwarg_2024_table_2:row5:col4', 'Khwarg_2024_table_2:row5:col5', 'Khwarg_2024_table_2:row5:col6', 'Khwarg_2024_table_2:row11:col4', 'Khwarg_2024_table_2:row11:col5', 'Khwarg_2024_table_2:row11:col6'] |
-| C5_dimension_Q74 | pass | [time] * [mass] / [length] ** 3 |  | ['Khwarg_2024_table_2:row2:col4', 'Khwarg_2024_table_2:row2:col5', 'Khwarg_2024_table_2:row2:col6', 'Khwarg_2024_table_2:row7:col4', 'Khwarg_2024_table_2:row7:col5', 'Khwarg_2024_table_2:row7:col6'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Cherkaoui-Rbati_2023:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.476 | ['Cherkaoui-Rbati_2023:review'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Khwarg_2024_table_2:row3:col4', 'Khwarg_2024_table_2:row3:col5', 'Khwarg_2024_table_2:row3:col6'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Khwarg_2024_table_2:row8:col4', 'Khwarg_2024_table_2:row8:col5', 'Khwarg_2024_table_2:row8:col6'] |
+| C5_dimension_Q56 | pass | [time] |  | ['Khwarg_2024_table_2:row4:col4', 'Khwarg_2024_table_2:row4:col5', 'Khwarg_2024_table_2:row4:col6'] |
+| C5_dimension_Q56 | pass | [time] |  | ['Khwarg_2024_table_2:row10:col4', 'Khwarg_2024_table_2:row10:col5', 'Khwarg_2024_table_2:row10:col6'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Khwarg_2024_table_2:row5:col4', 'Khwarg_2024_table_2:row5:col5', 'Khwarg_2024_table_2:row5:col6'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Khwarg_2024_table_2:row11:col4', 'Khwarg_2024_table_2:row11:col5', 'Khwarg_2024_table_2:row11:col6'] |
+| C5_dimension_Q74 | pass | [time] * [mass] / [length] ** 3 |  | ['Khwarg_2024_table_2:row2:col4', 'Khwarg_2024_table_2:row2:col5', 'Khwarg_2024_table_2:row2:col6'] |
+| C5_dimension_Q74 | pass | [time] * [mass] / [length] ** 3 |  | ['Khwarg_2024_table_2:row7:col4', 'Khwarg_2024_table_2:row7:col5', 'Khwarg_2024_table_2:row7:col6'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.476 L/h | ['Cherkaoui-Rbati_2023:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -174,4 +173,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bproguanil%5D%20Proguanil_Khwarg2024_ct&body=Drug%3A%20proguanil%0ARecord%3A%20Proguanil_Khwarg2024_ct%0APaper%3A%20Khwarg_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_proguanil/Proguanil_Khwarg2024_ct%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 07:59 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:32 UTC</sub>

@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wang_2016_bioluminescence_inhibition_of_Photobacterium_phosphoreum_T3](drugs/drug_dimethylphthalate/pd_Wang_2016_bioluminescence_inhibition_of_Photobacterium_phosp.md) | bioluminescence inhibition of Photobacterium phosphoreum T3 ← dimethyl phthalate (DMP) · inhibition effect | — | Wang W et al., Eco-toxicological bioassay of atmospher…, Ecotoxicology and environme… (2016) | [10.1016/j.ecoenv.2016.07.024](https://doi.org/10.1016/j.ecoenv.2016.07.024) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hou_2009_DMP](drugs/drug_dimethylphthalate/pd_Hou_2009_DMP.md) | dimethyl phthalate (DMP) · direct linear effect | — | Hou Y et al., Electrochemical incineration of dimethy…, Journal of environmental sc… (2009) | [10.1016/s1001-0742(08)62421-3](https://doi.org/10.1016/s1001-0742(08)62421-3) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:09 | 2:07 | 0/0/0 | 0/1/0 | 0/0/0 | 29,202/1,061 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 22:19 | 0:03 | 0/0/0 | 0/1/0 | 0/0/0 | 3,512/176 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -56,21 +56,30 @@ _4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Mack_2014.pdf` | Mack CM et al., Burst and principal components analyses…, Neurotoxicology (2014) | pd | 4 | [10.1016/j.neuro.2013.11.008](https://doi.org/10.1016/j.neuro.2013.11.008) | [24325902](https://www.ncbi.nlm.nih.gov/pubmed/24325902) | metadata signals extractable PD data (EC50) |
 | `de_2015.pdf` | de Araujo MM et al., Lightsticks content toxicity: effects o…, Chemosphere (2015) | pd | 4 | [10.1016/j.chemosphere.2015.05.058](https://doi.org/10.1016/j.chemosphere.2015.05.058) | [26070145](https://www.ncbi.nlm.nih.gov/pubmed/26070145) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 13:09 UTC</sub>
+<sub>queue written 2026-11-23 22:19 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ding_2017 | irrelevant | 0 | 0 | This is an in vitro ecotoxicity study of phthalate mixtures in bacteria, with no pharmacokinetic disposition parameters for dimethylphthalate. |
-| popPK | Gao_2021 | irrelevant | 0 | 0 | Toxicity/removal-rate study in a diatom, not a pharmacokinetic study with disposition parameters for DMP. |
-| popPK | Hou_2009 | irrelevant | 0 | 0 | This is an electrochemical degradation study, not a pharmacokinetic study; no CL, V, or population-PK parameters for dimethyl phthalate in any organism. |
-| popPK | Liu_2009 | irrelevant | 0 | 0 | This is an embryonic toxicity (EC50) study in abalone, not a pharmacokinetic study with disposition parameters for dimethylphthalate. |
-| popPK | Mack_2014 | irrelevant | 0 | 0 | In-vitro neurotoxicity screening study; DMP only tested for firing-rate effects, no PK parameters. |
-| popPK | Pérez-Albaladejo_2017 | irrelevant | 0 | 0 | In-vitro cytotoxicity/endocrine study in placental cells with no PK disposition parameters for dimethyl phthalate. |
-| PGx | Sun_2026 | not_relevant | 0 | 0 | No gene variant/genotype effect on DMP pharmacokinetic or pharmacodynamic parameters is reported; study covers network toxicology, MR of gene expression on ASD risk, and mouse behavior. |
-| popPK | Wang_2016 | irrelevant | 0 | 0 | This is an eco-toxicity bioassay of PM2.5 with only EC50 toxicity ranking; no pharmacokinetic parameters for dimethyl phthalate are reported. |
-| popPK | de_2015 | irrelevant | 0 | 0 | Toxicity/chemical composition study of lightstick leachates; no pharmacokinetic parameters for dimethyl phthalate. |
+| popPK | Ding_2017 | irrelevant | 0 | 0 | The study is an ecotoxicology investigation measuring toxicity (EC50) in bacteria, not a pharmacokinetic study with disposition parameters. |
+| PGx | Ding_2017 | not_relevant | 0 | 0 | The study investigates the ecotoxicity of phthalate mixtures in bacteria, containing no pharmacogenomic or PK/PD data for humans. |
+| popPK | Gao_2021 | irrelevant | 0 | 0 | The study focuses on environmental toxicology and removal rates in a marine diatom, not pharmacokinetic parameters (CL, V, half-life) for a biological host. |
+| PGx | Gao_2021 | not_relevant | 0 | 0 | The study investigates the ecotoxicology of dimethyl phthalate in marine diatoms and does not involve human pharmacogenomics or PK/PD parameters. |
+| popPK | Hou_2009 | irrelevant | 0 | 0 | This is an in vitro electrochemical degradation study, not a pharmacokinetic study in a biological system. |
+| PGx | Hou_2009 | not_relevant | 0 | 0 | The paper studies the electrochemical degradation of dimethyl phthalate in a laboratory setting, not pharmacogenomics or human pharmacokinetics. |
+| popPK | Liu_2009 | irrelevant | 0 | 0 | The study reports acute toxicity (EC50) values for embryonic development, not pharmacokinetic parameters (clearance, volume, etc.) for dimethylphthalate. |
+| PGx | Liu_2009 | not_relevant | 0 | 0 | The paper reports ecological/toxicology data on abalone embryos and does not investigate pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of dimethylphthalate. |
+| popPK | Mack_2014 | irrelevant | 0 | 0 | The study is an in-vitro neurotoxicity screening using microelectrode arrays and does not report pharmacokinetic parameters for dimethylphthalate. |
+| PGx | Mack_2014 | not_relevant | 0 | 0 | The paper describes neurotoxicity screening and effect classification of dimethyl phthalate using microelectrode arrays, with no mention of genetic variants, genotypes, or pharmacokinetic parameters. |
+| popPK | Pérez-Albaladejo_2017 | irrelevant | 0 | 0 | This is an in vitro toxicity study focusing on oxidative stress and endocrine disruption, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Pérez-Albaladejo_2017 | not_relevant | 0 | 0 | The study compares toxicity and endocrine effects of plasticizers in cells but does not report any gene-variant-specific pharmacokinetic or pharmacodynamic changes for dimethylphthalate. |
+| popPK | Sun_2026 | irrelevant | 0 | 0 | The paper is a mechanistic network toxicology and behavioral study linking phthalates to autism spectrum disorder, containing no pharmacokinetic modeling or quantitative disposition parameters (CL, V, ka) for dimethylphthalate. |
+| PGx | Sun_2026 | not_relevant | 1 | 1 | The paper investigates the association between phthalate exposure and autism risk, not how genetic variants alter the pharmacokinetics or pharmacodynamics of dimethylphthalate. |
+| popPK | Wang_2016 | irrelevant | 0 | 0 | The paper is an eco-toxicological bioassay using bacteria to assess PM2.5 toxicity, not a pharmacokinetic study reporting disposition parameters for dimethylphthalate. |
+| PGx | Wang_2016 | not_relevant | 0 | 0 | The paper describes eco-toxicological effects of atmospheric particulate matter on bacteria and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of dimethylphthalate. |
+| popPK | de_2015 | irrelevant | 0 | 0 | The paper is an environmental toxicology study on oyster embryonic development using lightstick leachates, not a pharmacokinetic study, and contains no PK parameters for dimethylphthalate. |
+| PGx | de_2015 | not_relevant | 0 | 0 | The paper reports ecotoxicology of lightstick chemicals on oyster embryos and does not involve human pharmacogenomics or PK/PD parameters. |
 
 
 </details>

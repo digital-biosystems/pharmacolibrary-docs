@@ -4,11 +4,11 @@
 
 # Hyperici herba — `HypericiHerba_Biber1998_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> Only clearance was extracted — no volume.
+> This record was reviewed on 2026-11-20 12:22 UTC (Needs review), but the paper was screened again on 2026-11-23 22:41 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks.
 
-<div class="pk-model-meta" hidden drug="Hyperici herba" model-id="HypericiHerba_Biber1998_reference" status="needs_review" stale="false" population="healthy volunteers (and rats)" measured-compound="hyperforin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Hyperici herba" model-id="HypericiHerba_Biber1998_reference" status="" stale="true" population="rats and human volunteers" measured-compound="" parameterization="" topology=""></div>
 
 ## Citation
 Biber A, Fischer H, Römer A, Chatterjee SS. Oral bioavailability of hyperforin from hypericum extracts in rats and human volunteers. Pharmacopsychiatry 31 Suppl 1:36–43 (1998).
@@ -16,33 +16,24 @@ Biber A, Fischer H, Römer A, Chatterjee SS. Oral bioavailability of hyperforin 
 
 ## Population and dosing
 
-**Population:** healthy volunteers (and rats) · condition healthy · age group adult.
-
-**Dosed compound ≠ measured compound:** dosed Hypericum perforatum extract (WS 5572), measured hyperforin.
+**Population:** rats and human volunteers.
 
 > **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Structure:** —; no model was built for this record.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "not captured": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| maximum plasma levels | Cmax | 370 | ng/ml |
-| Estimated half-life | t1/2z | 6 | h |
-| clearance | CL | 70 | ml/min/kg |
-| mean residence time | MRT | 12 | h |
-| estimated steady state plasma concentrations | Css | 100 | ng/ml |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.357). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,32 +51,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| maximum plasma levels | `Q32` · Cmax | 370 | ng/ml |  |  | ng/ml | llm (0.6) | Biber_1998:abstract |
-| Estimated half-life | `Q57` · t1/2z | 6 | h | 2.16e+04 | s | h | llm (0.6) | Biber_1998:abstract |
-| clearance | `Q22` · CL | 70 | ml/min/kg | 8.167e-05 | m3/s | ml/(min·kg) | exact (1) | Biber_1998:abstract |
-| mean residence time | `Q53` · MRT | 12 | h | 4.32e+04 | s | h | exact (1) | Biber_1998:abstract |
-| estimated steady state plasma concentrations | `Q34` · Css | 100 | ng/ml |  |  | ng/ml | llm (0.6) | Biber_1998:abstract |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
-
 ## Departures & gaps
 
-**Interpretation flags:**
-- dropped duplicate Q57 ('Half-life', value 9) — already have one for this compound
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=hyperforin
-- molar mass: none found for 'hyperici_herba' — its concentrations stay mass-only
-- abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record measures 'hyperforin', not hyperici_herba — the review values are the parent's
-
-**Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Biber_1998_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+_None recorded._
 
 ## Validation
 
@@ -117,22 +85,6 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
 </details>
 
-
-**Scholar closed-form checks:**
-
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Biber_1998:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Biber_1998:abstract'] |
-| C5_dimension_Q34 | pass | [mass] / [length] ** 3 |  | ['Biber_1998:abstract'] |
-| C5_dimension_Q53 | pass | [time] |  | ['Biber_1998:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Biber_1998:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 70 | ['Biber_1998:abstract'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 294 L/h | ['Biber_1998:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -166,4 +118,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhyperici_herba%5D%20HypericiHerba_Biber1998_reference&body=Drug%3A%20hyperici_herba%0ARecord%3A%20HypericiHerba_Biber1998_reference%0APaper%3A%20Biber_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_hyperici_herba/HypericiHerba_Biber1998_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:11 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:41 UTC</sub>

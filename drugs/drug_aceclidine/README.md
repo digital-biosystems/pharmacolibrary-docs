@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ishikawa_1998_tension](drugs/drug_aceclidine/pd_Ishikawa_1998_tension.md) | tension biomarker turnover ← aceclidine | — | Ishikawa H et al., Selectivity of muscarinic agonists incl…, Journal of ocular pharmacol… (1998) | [10.1089/jop.1998.14.363](https://doi.org/10.1089/jop.1998.14.363) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Ishikawa_1998_tension](drugs/drug_aceclidine/pd_Ishikawa_1998_tension.md) | tension biomarker turnover ← aceclidine | — | Ishikawa H et al., Selectivity of muscarinic agonists incl…, Journal of ocular pharmacol… (1998) | [10.1089/jop.1998.14.363](https://doi.org/10.1089/jop.1998.14.363) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Patil_2002_vascular_tone_induced_by_phenylephrine](drugs/drug_aceclidine/pd_Patil_2002_vascular_tone_induced_by_phenylephrine.md) | vascular tone induced by phenylephrine ← aceclidine · direct Emax (saturable) effect | — | Patil PN et al., Mechanism of vascular relaxation by cho…, Journal of ocular pharmacol… (2002) | [10.1089/108076802317233180](https://doi.org/10.1089/108076802317233180) |
 
 <details class="legend">

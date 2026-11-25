@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Fosravuconazole absorption rate and Vmax units are non-standard, preventing conversion to SI units, causing dimension mismatches for intercompartmental clearance and Michaelis-Menten constant.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ka ([time]) vs 1 / [time]; Q1 unit Km ([length]) vs [mass] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fosravuconazole" model-id="Fosravuconazole_Chu2025_reference" status="rejected" stale="false" population="Sudanese patients with eumycetoma" measured-compound="ravuconazole" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -57,13 +57,13 @@ Chu WY, Fahal AH, Ahmed ES, Bakhiet SM, Bakhiet OE, Fahal LA et al. Pharmacokine
 
 ### Reviewer guidance
 
-**Fosravuconazole absorption rate and Vmax units are non-standard, preventing conversion to SI units, causing dimension mismatches for intercompartmental clearance and Michaelis-Menten constant.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit ka ([time]) vs 1 / [time]; Q1 unit Km ([length]) vs [mass] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The absorption rate constant for ravuconazole is listed with unit 'ka' and Vmax with 'Km', neither of which converts to SI, leaving these parameters without standard values. Additionally, the intercompartmental clearance and Michaelis-Menten constant exhibit unit dimension conflicts, such as time versus inverse time and length versus mass per volume, indicating structural parameter errors. Extracted — ravuconazole: kabs 0.00376 ka, Vmax 4.55, Km 4 Km, V1 20.8 L, Q 9.03 L/h, V2 262 L; itraconazole: CLb 10.7 L/h; hydroxyitraconazole: CL 5.16 L/h.
+A reported unit could not be converted (kabs and Km), so that value has no SI equivalent. None of the extracted parameters is fosravuconazole's own; they describe ravuconazole, itraconazole and hydroxyitraconazole. Extracted — ravuconazole: kabs 0.00376 ka, Vmax 4.55, Km 4 Km, V1 20.8 L, Q 9.03 L/h, V2 262 L; itraconazole: CLb 10.7 L/h; hydroxyitraconazole: CL 5.16 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fosravuconazole, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

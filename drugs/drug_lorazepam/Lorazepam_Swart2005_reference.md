@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;lorazepam&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/&quot;},{&quot;label&quot;:&quot;Swart_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lorazepam_Healy2025_mean&quot;,&quot;label&quot;:&quot;Healy_2025_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Healy2025_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Healy2025_median&quot;,&quot;label&quot;:&quot;Healy_2025_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Healy2025_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_NielsenKudsk1983_reference&quot;,&quot;label&quot;:&quot;Nielsen-Kudsk_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_NielsenKudsk1983_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Papini2006_reference&quot;,&quot;label&quot;:&quot;Papini_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Papini2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Khakshoor2025_reference&quot;,&quot;label&quot;:&quot;Khakshoor_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Khakshoor2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Panetta2024_reference&quot;,&quot;label&quot;:&quot;Panetta_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Panetta2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2024v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2024v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2025v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_le2024_reference&quot;,&quot;label&quot;:&quot;le_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_le2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Greenblatt_2000_EEG_effect&quot;,&quot;label&quot;:&quot;Greenblatt_2000 \u00b7 EEG effect&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/pd_Greenblatt_2000_EEG_effect.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gupta_1990_TRKN&quot;,&quot;label&quot;:&quot;Gupta_1990 \u00b7 TRKN&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/pd_Gupta_1990_TRKN.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lorazepam_Chamberlain2012_reference&quot;,&quot;label&quot;:&quot;Chamberlain_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chamberlain2012_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Healy2025_mean&quot;,&quot;label&quot;:&quot;Healy_2025_mean&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Healy2025_mean.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Healy2025_median&quot;,&quot;label&quot;:&quot;Healy_2025_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Healy2025_median.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Khakshoor2025_reference&quot;,&quot;label&quot;:&quot;Khakshoor_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Khakshoor2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Min2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Panetta2024_reference&quot;,&quot;label&quot;:&quot;Panetta_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Panetta2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2024v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2024v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zhang2025v2_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zhang2025v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lorazepam_le2024_reference&quot;,&quot;label&quot;:&quot;le_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/Lorazepam_le2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gupta_1990_TRKN&quot;,&quot;label&quot;:&quot;Gupta_1990 \u00b7 TRKN&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lorazepam/pd_Gupta_1990_TRKN.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Midazolam is present in the link topology but lacks any associated parameter values, making its compartment unreachable in the lorazepam model.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Swart2005_reference" status="rejected" stale="false" population="critically ill adults with acute renal failure on CVVH" measured-compound="lorazepam" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="lorazepam" model-id="Lorazepam_Swart2005_reference" status="rejected" stale="false" population="critically ill patients on continuous venovenous hemofiltration" measured-compound="lorazepam" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Swart EL, de Jongh J, Zuideveld KP, Danhof M, Thijs LG, Strack van Schijndel RJ. Population pharmacokinetics of lorazepam and midazolam and their metabolites in intensive care patients on continuous venovenous hemofiltration. American journal of kidney diseases : the official journal of the National Kidney Foundation 45(2):360–371 (2005).
@@ -17,13 +17,13 @@ Swart EL, de Jongh J, Zuideveld KP, Danhof M, Thijs LG, Strack van Schijndel RJ.
 
 ## Population and dosing
 
-**Population:** critically ill adults with acute renal failure on CVVH · condition acute renal failure (critically ill, CVVH) · age group adult · n = 20.
+**Population:** critically ill patients on continuous venovenous hemofiltration · condition acute renal failure · age group adult.
 
 ## Model
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 8 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,16 +33,12 @@ Swart EL, de Jongh J, Zuideveld KP, Danhof M, Thijs LG, Strack van Schijndel RJ.
 |---|---|---|---|
 | Total-body clearance | CL | 6.4 | L/h |
 | volume of distribution | V | 376 | L |
-| Ultrafiltration clearance | CL_CRRT | 0.31 | L/h |
-| equivalent to approximately | fe | 5 | % of total clearance |
-| Clearance by ultrafiltration | CL_PD | 0.055 | L/h |
-| average degree of plasma protein binding | fu | 43.4 | % |
-| Ka | kabs | 0.5 | h-1 |
-| Tlag | tlag | 0.8 | h |
+| Average degree of plasma protein binding | fu | 82.9 |  |
+| Clearance by ultrafiltration | CLu | 0.055 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +48,13 @@ Swart EL, de Jongh J, Zuideveld KP, Danhof M, Thijs LG, Strack van Schijndel RJ.
 
 ### Reviewer guidance
 
-**Midazolam is present in the link topology but lacks any associated parameter values, making its compartment unreachable in the lorazepam model.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defines a metabolic link from midazolam to 1-hydroxymidazolamglucuronide, yet no pharmacokinetic parameters (such as clearance or volume) are recorded for midazolam itself. This disconnect renders the midazolam compartment an orphan with no path from the dose, causing the structural validation to fail. Additionally, the record relies solely on abstract statistics, standing in for fitted model results, which compromises the integrity of the provided parameter values. Extracted — lorazepam: CL 6.4 L/h, V 376 L, CL_CRRT 0.31 L/h, fe 5 % of total clearance, CL_PD 0.055 L/h, fu 43.4 %, kabs 0.5 h-1, tlag 0.8 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lorazepam: CL 6.4 L/h, V 376 L, fu 82.9, CLu 0.055 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[average degree of plasma protein binding].value`: this record has 43.4, the second reading 82.9; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has lorazepam → lorazepamglucuronide (metabolism); midazolam → 1-hydroxymidazolamglucuronide (metabolism), the second reading lorazepam → lorazepam glucuronide (metabolism); midazolam → 1-hydroxymidazolam glucuronide (metabolism); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -66,12 +62,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 |---|---|---|---|---|---|---|---|---|
 | Total-body clearance | `Q22` · CL | 6.4 | L/h | 1.778e-06 | m3/s | l/h | llm_confirmed (0.6) | Swart_2005:abstract, Swart_2005:abstract |
 | volume of distribution | `Q61` · V | 376 | L | 0.376 | m3 | l | exact (1) | Swart_2005:abstract, Swart_2005:abstract |
-| Ultrafiltration clearance | `Q357` · CL_CRRT | 0.31 | L/h | 8.611e-08 | m3/s | l/h | llm_corrected (0.6) | Swart_2005:abstract |
-| equivalent to approximately | `Q44` · fe | 5 | % of total clearance |  |  | %·oftotalclearance | llm (0.6) | Swart_2005:abstract, Swart_2005:abstract |
-| Clearance by ultrafiltration | `Q358` · CL_PD | 0.055 | L/h | 1.528e-08 | m3/s | l/h | llm_corrected (0.6) | Swart_2005:abstract |
-| average degree of plasma protein binding | `Q46` · fu | 43.4 | % |  |  | % | llm_confirmed (0.6) | Swart_2005:abstract |
-| Ka | `Q49` · kabs | 0.5 | h-1 | 0.0001389 | 1/s | 1/h | review_gapfill (0.7) | Chen_2024:review |
-| Tlag | `Q83` · tlag | 0.8 | h | 2880 | s | h | review_gapfill (0.7) | Panetta_2024:review |
+| Average degree of plasma protein binding | `Q46` · fu | 82.9 |  | 0.829 |  |  | llm_confirmed (0.6) | Swart_2005:abstract, Swart_2005:abstract |
+| Clearance by ultrafiltration | `Q24` · CLu | 0.055 | L/h | 1.528e-08 | m3/s | l/h | llm_corrected (0.6) | Swart_2005:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,42 +73,36 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: '% of total clearance' (fe)
-- dropped unlinked row (NIL): 'Average degree of plasma protein binding' — extend the ontology if this is a real PK parameter (source ['Swart_2005:abstract', 'Swart_2005:abstract'])
+- dropped unlinked row (NIL): 'Ultrafiltration clearance' — extend the ontology if this is a real PK parameter (source ['Swart_2005:abstract'])
+- dropped unlinked row (NIL): 'equivalent to' — extend the ontology if this is a real PK parameter (source ['Swart_2005:abstract', 'Swart_2005:abstract'])
+- 'Average degree of plasma protein binding' → Q46: printed without a unit and above 1 — read as a percentage
 - dropped unlinked row (NIL): 'sieving coefficient' — extend the ontology if this is a real PK parameter (source ['Swart_2005:abstract', 'Swart_2005:abstract', 'Swart_2005:abstract', 'Swart_2005:abstract'])
 - dropped unlinked row (NIL): 'degree of plasma protein binding' — extend the ontology if this is a real PK parameter (source ['Swart_2005:abstract'])
+- 'average degree of plasma protein binding' → Q46: printed without a unit and above 1 — read as a percentage
+- dropped duplicate Q46 ('average degree of plasma protein binding', value 43.4) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lorazepam
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Chen_2024's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Panetta_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Swart_2005_metadata.yaml (16 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.5 (6/12 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[average degree of plasma protein binding].value` | 43.4 | 82.9 | mismatch |
-| `gpt-oss-120b` | `parameters[clearance by ultrafiltration]` | 0.055 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[equivalent to approximately]` | 5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 0.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag]` | 0.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ultrafiltration clearance]` | 0.31 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['lorazepam', 'lorazepamglucuronide', 'metabolism'], ['midazolam', '1-hydroxymidazolamglucuronide', 'metabolism']] | [['lorazepam', 'lorazepam glucuronide', 'metabolism'], ['midazolam', '1-hydroxymidazolam glucuronide', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[sieving coefficient]` |  | 0.16 | only_one_extracted |
 
 </details>
 
@@ -130,18 +116,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Swart_2005:abstract', 'Swart_2005:abstract'] |
-| C5_dimension_Q357 | pass | [length] ** 3 / [time] |  | ['Swart_2005:abstract'] |
-| C5_dimension_Q358 | pass | [length] ** 3 / [time] |  | ['Swart_2005:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Chen_2024:review'] |
+| C5_dimension_Q24 | pass | [length] ** 3 / [time] |  | ['Swart_2005:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Swart_2005:abstract', 'Swart_2005:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Panetta_2024:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 6.4 | ['Swart_2005:abstract', 'Swart_2005:abstract'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['unknown', 'unknown'] |  |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 6.4 L/h | ['Swart_2005:abstract', 'Swart_2005:abstract'] |
+| C9_phys_window_Q24 | pass | clearance within physiological range | 0.055 L/h | ['Swart_2005:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 376 L | ['Swart_2005:abstract', 'Swart_2005:abstract'] |
 
 <details class="legend">
@@ -166,4 +150,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blorazepam%5D%20Lorazepam_Swart2005_reference&body=Drug%3A%20lorazepam%0ARecord%3A%20Lorazepam_Swart2005_reference%0APaper%3A%20Swart_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lorazepam/Lorazepam_Swart2005_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:13 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:36 UTC</sub>

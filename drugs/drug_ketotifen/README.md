@@ -36,9 +36,7 @@ It is given orally as tablets or syrup for systemic allergies, or ophthalmically
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kiani_2021_Percent_cell_protection](drugs/drug_ketotifen/pd_Kiani_2021_Percent_cell_protection.md) | Percent cell protection ← ketotifen · direct sigmoid Emax (Hill) effect | — | Kiani P et al., In Vitro Assessment of the Antiviral Ac…, Viruses (2021) | [10.3390/v13040558](https://doi.org/10.3390/v13040558) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kiani_2021_virus_yield](drugs/drug_ketotifen/pd_Kiani_2021_virus_yield.md) | virus yield ← ketotifen · inhibition effect | — | Kiani P et al., In Vitro Assessment of the Antiviral Ac…, Viruses (2021) | [10.3390/v13040558](https://doi.org/10.3390/v13040558) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Schneider_2021_flexion_contracture](drugs/drug_ketotifen/pd_Schneider_2021_flexion_contracture.md) | flexion contracture ← ketotifen fumarate (KF) · direct sigmoid Emax (Hill) effect | — | Schneider PS et al., The Dose-Response Effect of the Mast Ce…, JB & JS open access (2021) | [10.2106/JBJS.OA.20.00057](https://doi.org/10.2106/JBJS.OA.20.00057) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 1.00).">human + animal</span> | [Wang_1990_platelet_aggregations_induced_by_AA_50_mumol_L](drugs/drug_ketotifen/pd_Wang_1990_platelet_aggregations_induced_by_AA_50_mumol_L.md) | platelet aggregations induced by AA 50 mumol/L ← ketotifen · inhibition effect | — | Wang XD et al., [Effects of ketotifen on rabbit platele…, Zhongguo yao li xue bao = A… (1990) | — |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 1.00).">human + animal</span> | [Wang_1990_platelet_aggregations_induced_by_ADP_10_mumol_L](drugs/drug_ketotifen/pd_Wang_1990_platelet_aggregations_induced_by_ADP_10_mumol_L.md) | platelet aggregations induced by ADP 10 mumol/L ← ketotifen · inhibition effect | — | Wang XD et al., [Effects of ketotifen on rabbit platele…, Zhongguo yao li xue bao = A… (1990) | — |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Schneider_2021_KF](drugs/drug_ketotifen/pd_Schneider_2021_KF.md) | posttraumatic joint contracture ← KF · direct sigmoid Emax (Hill) effect | — | Schneider PS et al., The Dose-Response Effect of the Mast Ce…, JB & JS open access (2021) | [10.2106/JBJS.OA.20.00057](https://doi.org/10.2106/JBJS.OA.20.00057) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +50,7 @@ It is given orally as tablets or syrup for systemic allergies, or ophthalmically
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 23:50 | 9:14 | 1/1/0 | 5/0/0 | 0/0/0 | 147,916/53,824 | openai / gpt-6-luna | 3 | 1/2 | 3/0 | 0 |
+| 2026-11-24 00:41 | 0:05 | 1/1/0 | 3/0/0 | 0/0/0 | 4,207/182 | einfracz / qwen3.8-27b | 3 | 1/2 | 3/0 | 0 |
 
 ## Coverage
 
@@ -61,31 +59,29 @@ It is given orally as tablets or syrup for systemic allergies, or ophthalmically
 - **records:** 2  ·  extracted 0  ·  needs review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `McFadyen_1997.pdf` | McFadyen ML et al., Ketotifen pharmacokinetics in children…, European journal of clinica… (1997) | popPK | 10 | [10.1007/s002280050305](https://doi.org/10.1007/s002280050305) | [9272408](https://pubmed.ncbi.nlm.nih.gov/9272408) | Population pharmacokinetic model reports numeric ketotifen volume and clearance estimates. |
-
-<sub>queue written 2026-10-07 23:41 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ahuja_2011 | irrelevant | 0 | 0 | Ketotifen is only a comparator in a bronchospasm experiment, with no pharmacokinetic parameters reported. |
+| popPK | Ahuja_2011 | irrelevant | 0 | 0 | Ketotifen is used only as a positive control drug in a pharmacodynamic bronchospasm study in guinea pigs, with no pharmacokinetic parameters reported. |
+| PGx | Ahuja_2011 | not_relevant | 0 | 0 | The study investigates the pharmacological effects of a plant extract on bronchospasm and does not involve genetic variants or pharmacogenomics. |
 | popPK | Kiani_2021 | irrelevant | 0 | 0 | This is an in-vitro antiviral efficacy study and reports no ketotifen disposition or population-PK parameters. |
-| popPK | Peters_1990 | irrelevant | 0 | 0 | The study reports antimalarial activity and chloroquine-resistance reversal, not ketotifen pharmacokinetic parameters. |
-| popPK | Rychter_2015 | irrelevant | 0 | 0 | Ketotifen is used only as an in-vitro intervention, with no pharmacokinetic disposition parameters reported. |
-| popPK | Schneider_2021 | irrelevant | 0 | 0 | This rabbit dose-response study reports a pharmacodynamic EC50, not ketotifen disposition parameters. |
-| popPK | Wang_1990 | irrelevant | 0 | 0 | This is an in-vitro pharmacology study and reports no ketotifen disposition parameters. |
-| popPK | Xu_2012 | irrelevant | 0 | 0 | Ketotifen is only used as a mast cell stabilizer, and no ketotifen pharmacokinetic parameters are reported. |
+| PGx | McFadyen_1997 | not_relevant | 0 | 0 | The study analyzes pediatric ketotifen pharmacokinetics with physiological covariates (weight, body surface area) but reports no genetic variants or pharmacogenomic effects. |
+| popPK | Peters_1990 | irrelevant | 0 | 0 | The study examines the antimalarial efficacy and reversal of chloroquine resistance of ketotifen, not its pharmacokinetic parameters. |
+| PGx | Peters_1990 | not_relevant | 0 | 0 | The paper investigates the antimalarial activity and reversal of chloroquine resistance by antihistaminics, not the impact of genetic variants on the PK or PD of ketotifen. |
+| popPK | Rychter_2015 | irrelevant | 0 | 0 | This is an in vitro pharmacological study of gastrointestinal motility where ketotifen is used as a functional probe for mast cell inhibition, not a pharmacokinetic study. |
+| PGx | Rychter_2015 | not_relevant | 0 | 0 | The study investigates the pharmacological role of mast cell degranulation in gut motility, not the impact of genetic variants on the pharmacokinetics or pharmacodynamics of ketotifen. |
+| popPK | Schneider_2021 | irrelevant | 0 | 0 | The study is a preclinical dose-response and efficacy investigation for joint contracture in rabbits, reporting biomechanical and histological outcomes rather than pharmacokinetic disposition parameters (CL, V, t1/2). |
+| PGx | Schneider_2021 | not_relevant | 0 | 0 | The study investigates the dose-response relationship of ketotifen in an animal model but does not examine any gene variants, genotypes, or pharmacogenomic factors. |
+| popPK | Wang_1990 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of platelet aggregation and does not report any pharmacokinetic parameters for ketotifen. |
+| PGx | Wang_1990 | not_relevant | 0 | 0 | The paper evaluates the pharmacodynamic effects of ketotifen on platelet aggregation in vitro and does not report pharmacogenomic variations affecting ketotifen's PK/PD parameters. |
+| popPK | Xu_2012 | irrelevant | 0 | 0 | The study investigates emodin's mechanism of action in rat colon, and ketotifen is used only as a mast cell stabilizer (comparator/control), not as the subject drug for PK analysis. |
+| PGx | Xu_2012 | not_relevant | 0 | 0 | The study examines emodin-induced chloride secretion and merely uses ketotifen as a pharmacological tool (mast cell stabilizer); it does not report pharmacokinetic/pharmacodynamic parameters of ketotifen or any pharmacogenomic effects. |
+| PGx | Yagi_2002 | not_relevant | 0 | 0 | The paper reports pharmacokinetics of ketotifen in rabbits for various routes of administration but does not investigate any gene variants or pharmacogenomic effects. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bketotifen%5D&body=Drug%3A%20ketotifen%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ketotifen/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 23:41 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 00:40 UTC</sub>

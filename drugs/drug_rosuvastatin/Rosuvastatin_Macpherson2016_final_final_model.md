@@ -53,7 +53,7 @@ Macpherson M, Hamrén B, Braamskamp MJ, Kastelein JJ, Lundström T, Martin PD. P
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**Simulated; the covariate scenarios were not simulated (advisory).**
 
 The base model was simulated, not the covariate effects the record defines.
 

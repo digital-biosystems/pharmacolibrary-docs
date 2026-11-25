@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Dextromethorphan and its metabolites are disconnected from the tamoxifen dose, making them unreachable compartments.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="tamoxifen" model-id="Tamoxifen_ter2014_reference" status="rejected" stale="false" population="breast cancer patients" measured-compound="tamoxifen, endoxifen" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -59,13 +59,13 @@ ter Heine R, Binkhorst L, de Graan AJ, de Bruijn P, Beijnen JH, Mathijssen RH et
 
 ### Reviewer guidance
 
-**Dextromethorphan and its metabolites are disconnected from the tamoxifen dose, making them unreachable compartments.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure lists dextromethorphan as a parent compound, but no links connect it to the administered tamoxifen. Consequently, the metabolites dextrorphan, 3-methoxymorphinan, and 3-hydroxymorphinan also lack a path from the dose, rendering them orphaned. This topological flaw prevents the simulation of these compounds from the tamoxifen input. Extracted — dextromethorphan: V1 188 l, V2 1.66e+03 l, kabs 0.213 h -1, tlag 0.369 h, Q 415 l h -1, Q2 200 l h -1; dextrorphan: CL 1.56e+03 l h -1; 3-hydroxymorphinan: CL 362 l h -1, kel 1.11 h -1; 3-methoxymorphinan: CL 44.7 l h -1, kel 13.4 h -1.
+None of the extracted parameters is tamoxifen's own; they describe dextromethorphan, dextrorphan, 3-hydroxymorphinan and 3-methoxymorphinan. Extracted — dextromethorphan: V1 188 l, V2 1.66e+03 l, kabs 0.213 h -1, tlag 0.369 h, Q 415 l h -1, Q2 200 l h -1; dextrorphan: CL 1.56e+03 l h -1; 3-hydroxymorphinan: CL 362 l h -1, kel 1.11 h -1; 3-methoxymorphinan: CL 44.7 l h -1, kel 13.4 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tamoxifen, dextromethorphan, the second reading tamoxifen; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Gadodiamide's clearance value of 2.51 L/h is unphysiologically low, causing rejection for implausible magnitude.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="gadodiamide" model-id="Gadodiamide_Scala2018_reference" status="rejected" stale="false" population="" measured-compound="gadodiamide" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,13 +46,13 @@ Scala M, Koob M, de Buttet S, Bourrinet P, Felices M, Jurkiewicz E. A Pharmacoki
 
 ### Reviewer guidance
 
-**Gadodiamide's clearance value of 2.51 L/h is unphysiologically low, causing rejection for implausible magnitude.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The central volume of 0.161 L and intercompartmental clearance of 0.335 L/h are consistent with gadodiamide pharmacokinetics, but the total clearance is too small for a large-volume extracellular contrast agent. A second reader identified a discrepancy in the intercompartmental clearance value, recording 16 rather than the listed 0.335 L/h. The source is a secondary review, so the parameters may represent derived values rather than direct population estimates. Extracted — gadodiamide: CL 2.51 L/h, V1 0.161 L, Q 0.335 L/h.
+Extracted — gadodiamide: CL 2.51 L/h, V1 0.161 L, Q 0.335 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on parameter Q315: this record has none, the second reading 16. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,4 +133,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgadodiamide%5D%20Gadodiamide_Scala2018_reference&body=Drug%3A%20gadodiamide%0ARecord%3A%20Gadodiamide_Scala2018_reference%0APaper%3A%20Scala_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gadodiamide/Gadodiamide_Scala2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:46 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:03 UTC</sub>

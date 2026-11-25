@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Methyprylon model rejected because the central volume unit was not standard, causing a dimensional mismatch in the elimination rate constant check.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="methyprylon" model-id="Methyprylon_Gwilt1982_control" status="rejected" stale="false" population="intoxicated beagle dogs" measured-compound="methyprylon" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="methyprylon" model-id="Methyprylon_Gwilt1982_control" status="rejected" stale="false" population="intoxicated dogs" measured-compound="methyprylon" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Gwilt PR, Pankaskie MC, Mitala JJ. The effect of oral castor oil on the disposition of methyprylon in intoxicated dogs. Canadian Anaesthetists' Society journal 29(4):381–383 (1982).
@@ -17,9 +17,9 @@ Gwilt PR, Pankaskie MC, Mitala JJ. The effect of oral castor oil on the disposit
 
 ## Population and dosing
 
-**Population:** intoxicated beagle dogs · condition acute methyprylon intoxication · age group adult · n = 5.
+**Population:** intoxicated dogs · condition acute intoxication · age group adult · n = 5.
 
-**Dosing:** 10500 mg, iv, single.
+**Dosing:** 10500 mg, iv, multiple.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -40,14 +40,14 @@ Gwilt PR, Pankaskie MC, Mitala JJ. The effect of oral castor oil on the disposit
 | K12 (hr-1) | k12 | 4.81 | hr-1 |
 | K21 (hr-1) | k21 | 1.83 | hr-1 |
 | V1 (liter) | V1 | 3.50 | liter |
-| Vdβ (liter) | V | 9.37 | liter |
+| Vdβ (liter) | V2 | 9.37 | liter |
 | Vdss (liter) | Vss | 8.37 | liter |
 | Total clearance (liter/hr) | CL | 2.09 | liter/hr |
-| Total area under plasma-time curve, (mg hr/liter) | AUC | 1105.61 | mg·h/L |
+| Total area under plasma-time curve, (mg hr/liter) | AUC | 1105.61 | mg hr/liter |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.929). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,27 +57,27 @@ Gwilt PR, Pankaskie MC, Mitala JJ. The effect of oral castor oil on the disposit
 
 ### Reviewer guidance
 
-**Methyprylon model rejected because the central volume unit was not standard, causing a dimensional mismatch in the elimination rate constant check.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The central volume of distribution is listed as 3.50 liter, a unit that could not be converted to the standard SI form. This prevented the validation of the elimination rate constant, which is reported as 0.23 hr-1. The dimensional conflict between the structural parameters led to the record's rejection. Extracted — methyprylon: λ1 7.43 hr-1, kel 0.23 hr-1, k12 4.81 hr-1, k21 1.83 hr-1, V1 3.5 liter, V 9.37 liter, Vss 8.37 liter, CL 2.09 liter/hr, … (+1).
+Extracted — methyprylon: λ1 7.43 hr-1, kel 0.23 hr-1, k12 4.81 hr-1, k21 1.83 hr-1, V1 3.5 liter, V2 9.37 liter, Vss 8.37 liter, CL 2.09 liter/hr, … (+1).
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[vdβ].parameter_id`: this record has Q64, the second reading Q61. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| α (hr-1) | `Q67` · λ1 | 7.43 | hr-1 |  |  | 1/h | exact (1) | Gwilt_1982_table_2:row0:col1 |
+| α (hr-1) | `Q67` · λ1 | 7.43 | hr-1 | 0.002064 | 1/s | 1/h | exact (1) | Gwilt_1982_table_2:row0:col1 |
 | β (hr-1) | `Q47` · kel | 0.23 | hr-1 | 6.389e-05 | 1/s | 1/h | exact (1) | Gwilt_1982_table_2:row1:col1 |
 | K12 (hr-1) | `Q301` · k12 | 4.81 | hr-1 | 0.001336 | 1/s | 1/h | exact (1) | Gwilt_1982_table_2:row3:col1 |
 | K21 (hr-1) | `Q302` · k21 | 1.83 | hr-1 | 0.0005083 | 1/s | 1/h | exact (1) | Gwilt_1982_table_2:row4:col1 |
 | V1 (liter) | `Q63` · V1 | 3.50 | liter | 0.0035 | m3 | l | exact (1) | Gwilt_1982_table_2:row5:col1 |
-| Vdβ (liter) | `Q61` · V | 9.37 | liter | 0.00937 | m3 | l | llm_confirmed (0.6) | Gwilt_1982_table_2:row6:col1 |
+| Vdβ (liter) | `Q64` · V2 | 9.37 | liter | 0.00937 | m3 | l | llm_corrected (0.6) | Gwilt_1982_table_2:row6:col1 |
 | Vdss (liter) | `Q65` · Vss | 8.37 | liter | 0.00837 | m3 | l | llm (0.6) | Gwilt_1982_table_2:row7:col1 |
 | Total clearance (liter/hr) | `Q22` · CL | 2.09 | liter/hr | 5.806e-07 | m3/s | l/h | exact (1) | Gwilt_1982_table_2:row8:col1 |
-| Total area under plasma-time curve, (mg hr/liter) | `Q88` · AUC | 1105.61 | mg·h/L |  |  | mg·h/L | llm (0.6) | Gwilt_1982_table_2:row9:col1 |
+| Total area under plasma-time curve, (mg hr/liter) | `Q88` · AUC | 1105.61 | mg hr/liter | 3980 | kg*s/m3 | (h·mg)/l | llm (0.6) | Gwilt_1982_table_2:row9:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -87,29 +87,29 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'α (hr-1)' → Q67 (unit '1 / [time]' vs ontology '[mass] / [time]') — route to review
 - dropped duplicate Q47 ('K10 (hr-1)', value '1.30') — already have one for this compound
-- unit_dimension_unknown: 'mg hr/liter' (AUC)
-- implicit units: 'Total area under plasma-time curve, (mg hr/liter)' → mg·h/L (from the paper text: "Table II lists 'Total area under plasma-time curve, (mg hr/liter)'.")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=methyprylon
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - population split: 'control* (n = 5)' subgroup of Gwilt_1982 (paper reports 2 populations: caster oil (n = 5), control* (n = 5))
 
 **Extraction notes:**
-- no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (13/13 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.929 (13/14 fields) | 1 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[vdβ].parameter_id` | Q64 | Q61 | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -128,16 +128,16 @@ _All readers agree on the compared fields of this record._
 | C5_dimension_Q301 | pass | 1 / [time] |  | ['Gwilt_1982_table_2:row3:col1'] |
 | C5_dimension_Q302 | pass | 1 / [time] |  | ['Gwilt_1982_table_2:row4:col1'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Gwilt_1982_table_2:row1:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Gwilt_1982_table_2:row6:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Gwilt_1982_table_2:row5:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Gwilt_1982_table_2:row6:col1'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Gwilt_1982_table_2:row7:col1'] |
-| C5_dimension_Q67 | fail | 1 / [time] | hr-1 (1 / [time]) | ['Gwilt_1982_table_2:row0:col1'] |
+| C5_dimension_Q67 | pass | 1 / [time] |  | ['Gwilt_1982_table_2:row0:col1'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Gwilt_1982_table_2:row9:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.09 | ['Gwilt_1982_table_2:row8:col1'] |
-| C8_topology | pass |  |  |  |
+| C8_topology | fail |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 2.09 L/h | ['Gwilt_1982_table_2:row8:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 9.37 L | ['Gwilt_1982_table_2:row6:col1'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 3.5 L | ['Gwilt_1982_table_2:row5:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 9.37 L | ['Gwilt_1982_table_2:row6:col1'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 8.37 L | ['Gwilt_1982_table_2:row7:col1'] |
 
 <details class="legend">
@@ -162,4 +162,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethyprylon%5D%20Methyprylon_Gwilt1982_control&body=Drug%3A%20methyprylon%0ARecord%3A%20Methyprylon_Gwilt1982_control%0APaper%3A%20Gwilt_1982%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methyprylon/Methyprylon_Gwilt1982_control%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 21:41 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:45 UTC</sub>

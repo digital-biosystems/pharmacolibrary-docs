@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Oxycodone lag time 8.7 minutes was omitted from the model structure.
+> T3_param_coverage; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Morse2021_reference" status="needs_review" stale="false" population="preterm neonates to adults" measured-compound="oxycodone" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Morse JD, Sundermann M, Hannam JA, Kokki H, Kokki M, Anderson BJ. Population pha
 
 ### Reviewer guidance
 
-**Oxycodone lag time 8.7 minutes was omitted from the model structure.**
+**T3_param_coverage; x1_cross_check.**
 
-The two-compartment model lacks a first-order absorption phase, leaving the extracted 8.7-minute lag time parameter unused. Since the record relied on abstract-only data, the second reader disagreed with several parameter mappings, noting differences in clearance and distribution values. Extracted — oxycodone: CL 48.6 L.h-1 .70 kg-1, Q 220 L.h-1 .70 kg-1, Q3 1.45 L.h-1 .70 kg-1, V1 98.2 L.70 kg-1, V2 90.1 L.70 kg-1, V3 28.9 L.70 kg-1, Frel 0.673 nasogastric, tlag 8.7 minutes.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — oxycodone: CL 48.6 L.h-1 .70 kg-1, Q 220 L.h-1 .70 kg-1, Q3 1.45 L.h-1 .70 kg-1, V1 98.2 L.70 kg-1, V2 90.1 L.70 kg-1, V3 28.9 L.70 kg-1, Frel 0.673 nasogastric, tlag 8.7 minutes.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of .70 kg-1: this record has none, the second reading none; it also differs on 14 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -160,7 +160,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.318, 0 of 1 reader(s) agree | 0.318 | cross-check agreement 0.318 is below 0.5: verdict partial, agreement 0.318, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.318 (7 of 22 compared fields agree, 15 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.318 | cross-check agreement 0.318 is below 0.5: verdict partial; agreement 0.318 (7 of 22 compared fields agree, 15 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

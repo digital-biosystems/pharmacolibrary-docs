@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper concerns rifampicin, isoniazid, and pyrazinamide, not ethionamide.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Abdelgawad2024_reference" status="rejected" stale="false" population="" measured-compound="ethionamide" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Abdelgawad N, Chirehwa M, Schutz C, Barr D, Ward A, Janssen S et al. Pharmacokin
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper concerns rifampicin, isoniazid, and pyrazinamide, not ethionamide.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The review note specifies that the study focuses on the pharmacokinetics of rifampicin, isoniazid, and pyrazinamide. Ethionamide is not the subject drug in the paper, and no pharmacokinetic parameters for it are reported. Consequently, the extracted values for clearance and volume of distribution are not derived from ethionamide-specific data. Extracted — ethionamide: CL 8.82 L/h, V 56.8 L.
+Extracted — ethionamide: CL 8.82 L/h, V 56.8 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q319: this record has none, the second reading 0.75; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.714 (5 of 7 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

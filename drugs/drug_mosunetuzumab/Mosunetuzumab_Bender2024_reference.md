@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The first-order transit rate constant (16.3 days) has incorrect units, and the intercompartmental clearance parameter has a dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q306 unit day ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="mosunetuzumab" model-id="Mosunetuzumab_Bender2024_reference" status="rejected" stale="false" population="adults with relapsed/refractory B-cell non-Hodgkin lymphoma" measured-compound="mosunetuzumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Bender B, Li CC, Marchand M, Turner DC, Li F, Vadhavkar S et al. Population phar
 
 ### Reviewer guidance
 
-**The first-order transit rate constant (16.3 days) has incorrect units, and the intercompartmental clearance parameter has a dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q306 unit day ([time]) vs 1 / [time].**
 
-The record lists the transit rate constant with a unit of 'day' instead of a reciprocal time unit, causing a dimensional conflict. Additionally, the intercompartmental clearance parameter exhibits a dimension mismatch between its label and value. A second reader disputed the identification of the dose compound, flagging it as unknown instead of mosunetuzumab. Extracted — mosunetuzumab: CLb 1.08 L/day, V1 5.49 L, CL 0.584 L/day, ktr 16.3 day, V2 6.17 L, Q 1.46 L/day.
+A reported unit could not be converted (ktr), so that value has no SI equivalent. Extracted — mosunetuzumab: CLb 1.08 L/day, V1 5.49 L, CL 0.584 L/day, ktr 16.3 day, V2 6.17 L, Q 1.46 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mosunetuzumab, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

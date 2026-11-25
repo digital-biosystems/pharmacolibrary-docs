@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record conflates apparent and mechanistic parameters for alfentanil, with the second reader disputing the classification and specific values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Helmers1984_reference" status="needs_review" stale="false" population="elderly surgical patients" measured-compound="alfentanil" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Helmers H, Van Peer A, Woestenborghs R, Noorduin H, Heykants J. Alfentanil kinet
 
 ### Reviewer guidance
 
-**The record conflates apparent and mechanistic parameters for alfentanil, with the second reader disputing the classification and specific values.**
+**cross_check_disputed; x1_cross_check.**
 
-The model builder labeled the 460 ml/kg and 746 ml/kg values as mechanistic, while the second reader classified them as apparent. The second reader also assigned the 201 ml/kg value to the central compartment rather than the record's central volume, creating a direct disagreement on parameterization. Extracted — alfentanil: V1 201 ml/kg, Vss 460 ml/kg, V 746 ml/kg, CL 4.4 ml/min/kg, t1/2z 137 min, V2 276 litre, Q 41.2 ml/min/kg, tlag 0.96 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — alfentanil: V1 201 ml/kg, Vss 460 ml/kg, V 746 ml/kg, CL 4.4 ml/min/kg, t1/2z 137 min, V2 276 litre, Q 41.2 ml/min/kg, tlag 0.96 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -163,7 +163,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.176, 0 of 1 reader(s) agree | 0.176 | cross-check disputed by a second reader: verdict disputed, agreement 0.176, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.176 (3 of 17 compared fields agree, 13 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.176 | cross-check contradicted by a second reader: verdict disputed; agreement 0.176 (3 of 17 compared fields agree, 13 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

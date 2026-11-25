@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;sunitinib&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/&quot;},{&quot;label&quot;:&quot;Valderrama_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sunitinib_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sunitinib_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sunitinib_Naeem2024_reference&quot;,&quot;label&quot;:&quot;Naeem_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Naeem2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sunitinib_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sunitinib_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sunitinib bioavailability, clearance, volume of distribution, and lag time lacked values, while 5-fluorouracil parameters caused cross-check failure.
+> No value for sunitinib's bioavailability, clearance, volume of distribution and absorption lag time; t3_topology_template (+2 more).
 
 <div class="pk-model-meta" hidden drug="sunitinib" model-id="Sunitinib_Valderrama2025_reference" status="model_quarantined" stale="false" population="patients receiving sunitinib" measured-compound="sunitinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -49,13 +49,13 @@ Valderrama D, Teplytska O, Koltermann LM, Trunz E, Schmulenson E, Fritsch A et a
 
 ### Reviewer guidance
 
-**Sunitinib bioavailability, clearance, volume of distribution, and lag time lacked values, while 5-fluorouracil parameters caused cross-check failure.**
+**No value for sunitinib's bioavailability, clearance, volume of distribution and absorption lag time; t3_topology_template (+2 more).**
 
-The record assigned clearance of 223 L/h and volume of 46.1 L to 5-fluorouracil instead of sunitinib, creating a mismatch with the intended population. Sunitinib’s bioavailability, clearance, volume, and lag time were not estimated, forcing the use of placeholder values. A second reader disagreed on parameter assignments, resulting in 0 of 1 readers agreeing and preventing model publication. Extracted — 5-fluorouracil: CL 223 L/h, V 46.1 L; sunitinib: kabs 13.9 h−1.
+The model was built, but sunitinib's bioavailability, clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — 5-fluorouracil: CL 223 L/h, V 46.1 L; sunitinib: kabs 13.9 h−1.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl: this record has none, the second reading 223; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check agreement 0.444 is below 0.5: verdict partial, agreement 0.444, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.444 (4 of 9 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.444 | cross-check agreement 0.444 is below 0.5: verdict partial; agreement 0.444 (4 of 9 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

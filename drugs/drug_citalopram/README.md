@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;citalopram&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friberg_2006_QTci&quot;,&quot;label&quot;:&quot;Friberg_2006 \u00b7 QTci&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/pd_Friberg_2006_QTci.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_estimate&quot;,&quot;label&quot;:&quot;Weisskopf_2020_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_estimate.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma&quot;,&quot;label&quot;:&quot;Weisskopf_2020_model_for_scit_sdcit_in_plasma&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea&quot;,&quot;label&quot;:&quot;Weisskopf_2020_model_for_scit_sdcit_in_plasma_breast_milk&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friberg_2006_QTci&quot;,&quot;label&quot;:&quot;Friberg_2006 \u00b7 QTci&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/pd_Friberg_2006_QTci.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # citalopram
 
@@ -22,34 +22,52 @@ Citalopram is a selective serotonin reuptake inhibitor prescribed for conditions
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
 | citalopram | parent | 324.392 | C20H21FN2O | DrugBank | [2771](https://pubchem.ncbi.nlm.nih.gov/compound/2771) | Friberg_2006 |
-| R,S-citalopram and R,S-desmethylcitalopram (S-desmethylcitalopram (SDCIT)) | metabolite | 310.372 | C19H19FN2O | PubChem | [11255350](https://pubchem.ncbi.nlm.nih.gov/compound/11255350) | Akil_2016, Weisskopf_2020 |
-| R-desmethylcitalopram (escitalopram (SCIT)) | metabolite | 324.399 | C20H21FN2O | PubChem | [146570](https://pubchem.ncbi.nlm.nih.gov/compound/146570) | Akil_2016, Weisskopf_2020 |
+| R,S-citalopram and R,S-desmethylcitalopram (demethylescitalopram) | metabolite | 310.372 | C19H19FN2O | PubChem | [11255350](https://pubchem.ncbi.nlm.nih.gov/compound/11255350) | Akil_2016, Weisskopf_2020 |
+| R-desmethylcitalopram (escitalopram) | metabolite | 324.399 | C20H21FN2O | PubChem | [146570](https://pubchem.ncbi.nlm.nih.gov/compound/146570) | Akil_2016, Weisskopf_2020 |
 | S-desmethylcitalopram | metabolite | — (mass units only) | — | — | — | — |
 
 ## Start here
 
-> **Friberg_2006_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> adults after citalopram overdose, n = 52. [Run it in the simulator](drugs/drug_citalopram/Citalopram_Friberg2006_reference.md?tab=Simulation) · [record](drugs/drug_citalopram/Citalopram_Friberg2006_reference.md)
+> **Friberg_2006_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> citalopram overdose patients. [Run it in the simulator](drugs/drug_citalopram/Citalopram_Friberg2006_reference.md?tab=Simulation) · [record](drugs/drug_citalopram/Citalopram_Friberg2006_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="306.7" y1="18" x2="306.7" y2="58" stroke="#ddd"/><text x="306.7" y="72" font-size="10" text-anchor="middle">100</text><line x1="423.3" y1="18" x2="423.3" y2="58" stroke="#ddd"/><text x="423.3" y="72" font-size="10" text-anchor="middle">1000</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">10000</text><text x="184" y="34.0" font-size="11" text-anchor="end">Friberg_2006 · V</text><circle cx="273.5" cy="30.0" r="4" fill="#ef6c00"><title>Friberg_2006 · V: 52 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Friberg_2006 · V/F</text><circle cx="435.8" cy="46.0" r="4" fill="#ef6c00"><title>Friberg_2006 · V/F: 1280 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. Rejected records are left out.</sub>
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Friberg_2006_reference](drugs/drug_citalopram/Citalopram_Friberg2006_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67 — no SI value to build from</sub> | [Weisskopf_2020_estimate](drugs/drug_citalopram/Citalopram_Weisskopf2020_estimate.md) | — | parent + metabolite (no model) | 6 | Weisskopf E et al., A population pharmacokinetic model for…, British journal of clinical… (2020) | [10.1111/bcp.14278](https://doi.org/10.1111/bcp.14278) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67 — no SI value to build from</sub> | [↳ model_for_scit_sdcit_in_plasma](drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma.md) | — | parent + metabolite (no model) | 5 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q67 — no SI value to build from</sub> | [↳ model_for_scit_sdcit_in_plasma_breast_milk](drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea.md) | — | parent + metabolite (no model) | 5 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): k12, k21</sub> | [Friberg_2006_reference](drugs/drug_citalopram/Citalopram_Friberg2006_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Akil_2016_reference](drugs/drug_citalopram/Citalopram_Akil2016_reference.md) | — | general linear (no model) | 4 (+2 cov.) | Akil A et al., A population pharmacokinetic model for…, Journal of pharmacokinetics… (2016) | [10.1007/s10928-015-9457-6](https://doi.org/10.1007/s10928-015-9457-6) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [Weisskopf_2020_estimate](drugs/drug_citalopram/Citalopram_Weisskopf2020_estimate.md) | ▶ model + simulator | 1-compartment, oral | 4 | Weisskopf E et al., A population pharmacokinetic model for…, British journal of clinical… (2020) | [10.1111/bcp.14278](https://doi.org/10.1111/bcp.14278) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [↳ model_for_scit_sdcit_in_plasma](drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma.md) | ▶ model + simulator | 1-compartment, oral | 3 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub> | [↳ model_for_scit_sdcit_in_plasma_breast_milk](drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea.md) | ▶ model + simulator | 1-compartment, oral | 3 |  |  |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Bareggi_2004_Y_BOCS](drugs/drug_citalopram/pd_Bareggi_2004_Y_BOCS.md) | Y-BOCS score (maximum change in Y-BOCS score) ← citalopram · direct sigmoid Emax (Hill) effect | — | Bareggi SR et al., Citalopram concentrations and response…, CNS drugs (2004) | [10.2165/00023210-200418050-00004](https://doi.org/10.2165/00023210-200418050-00004) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Friberg_2006_QTci](drugs/drug_citalopram/pd_Friberg_2006_QTci.md) | Heart-rate corrected QT interval ← citalopram · direct linear effect | ▶ model + simulator | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Isbister_2006_QT](drugs/drug_citalopram/pd_Isbister_2006_QT.md) | QT prolongation (QT,RR combinations above abnormal threshold) ← citalopram · stimulation effect | — | Isbister GK et al., Application of pharmacokinetic-pharmaco…, Intensive care medicine (2006) | [10.1007/s00134-006-0183-9](https://doi.org/10.1007/s00134-006-0183-9) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mégarbane_2008_QT](drugs/drug_citalopram/pd_M_garbane_2008_QT.md) | QT interval prolongation ← citalopram · direct sigmoid Emax (Hill) effect | — | Mégarbane B et al., Pharmacokinetic/pharmacodynamic modelin…, Expert opinion on drug meta… (2008) | [10.1517/17425255.4.5.569](https://doi.org/10.1517/17425255.4.5.569) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Bareggi_2004_Y_BOCS](drugs/drug_citalopram/pd_Bareggi_2004_Y_BOCS.md) | Y-BOCS ← citalopram · direct sigmoid Emax (Hill) effect | — | Bareggi SR et al., Citalopram concentrations and response…, CNS drugs (2004) | [10.2165/00023210-200418050-00004](https://doi.org/10.2165/00023210-200418050-00004) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Friberg_2006_QTci](drugs/drug_citalopram/pd_Friberg_2006_QTci.md) | heart-rate corrected QT interval ← citalopram · delayed effect through an effect compartment | ▶ model + simulator | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2C19** | `Q22` · CL | metabolism | [Weisskopf_2020](drugs/drug_citalopram/pgx_Weisskopf_2020_CYP2C19_Q22.md) | Weisskopf E et al., A population pharmacokinetic model for…, British journal of clinical… (2020) | [10.1111/bcp.14278](https://doi.org/10.1111/bcp.14278) |
+| <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | metabolism | [Weisskopf_2020](drugs/drug_citalopram/pgx_Weisskopf_2020_CYP2D6_Q100.md) | Weisskopf E et al., A population pharmacokinetic model for…, British journal of clinical… (2020) | [10.1111/bcp.14278](https://doi.org/10.1111/bcp.14278) |
+
+<details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
+
+<details class="legend">
+<summary>PGx field definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>gene</code></td><td>Associated gene; papers with multiple genes contribute multiple records.</td></tr><tr><td><code>affects</code></td><td>Target PK/PD parameter (Q-code and name); θ scales its baseline value. Q100 denotes a non-parameter association; safety denotes adverse-reaction risk. PA identifiers indicate ClinPGx/PharmGKB guideline-derived records.</td></tr><tr><td><code>mechanism</code></td><td>Metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>Source-paper identifier and full-record link.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -63,53 +81,63 @@ Citalopram is a selective serotonin reuptake inhibitor prescribed for conditions
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 22:16 | 4:35 | 4/1/0 | 4/0/0 | 0/0/0 | 261,296/21,932 | ollama / glm-5.3-flash | 7 | 4/3 | 6/1 | 0 |
+| 2026-11-23 20:41 | 0:06 | 1/4/0 | 1/1/0 | 0/0/2 | 4,703/219 | einfracz / qwen3.8-27b | 7 | 4/3 | 6/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 75 matched, 20 returned
 - **screened:** 5  ·  **relevant:** 3
-- **records:** 5  ·  extracted 0  ·  needs review 4  ·  rejected 1  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 1  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Wu_2020.pdf` | Wu X et al., Physiologically Based Pharmacokinetic A…, Journal of clinical pharmac… (2020) | popPK | 10 | [10.1002/jcph.1541](https://doi.org/10.1002/jcph.1541) | [31750550](https://pubmed.ncbi.nlm.nih.gov/31750550) | A PBPK/population-PK model of citalopram in humans is described, but the actual numeric parameter values (CL, V, etc.) are not present in the evidence, only prediction error ranges. |
-| `Friberg_2005.pdf` | Friberg LE et al., The population pharmacokinetics of cita…, Journal of pharmacokinetics… (2005) | popPK | 8 | [10.1007/s10928-005-0022-6](https://doi.org/10.1007/s10928-005-0022-6) | [16307209](https://pubmed.ncbi.nlm.nih.gov/16307209) | Population PK model of citalopram in overdose patients, but abstract gives only effect sizes (72% CL increase, 22% F decrease), not the actual CL/V parameter values, which likely reside in tables/figures not provided. |
-| `Yin_2006.pdf` | Yin OQ et al., Phenotype-genotype relationship and cli…, Journal of clinical psychop… (2006) | popPK | 7 | [10.1097/01.jcp.0000227355.54074.14](https://doi.org/10.1097/01.jcp.0000227355.54074.14) | [16855453](https://pubmed.ncbi.nlm.nih.gov/16855453) | Population PK model of citalopram with oral clearance reported as relative percentages (42.9%/33.3% lower in PMs), but absolute CL values and model parameters are not given in the evidence. |
-| `Isbister_2006.pdf` | Isbister GK et al., Application of pharmacokinetic-pharmaco…, Intensive care medicine (2006) | popPK | 6 | [10.1007/s00134-006-0183-9](https://doi.org/10.1007/s00134-006-0183-9) | [16791669](https://pubmed.ncbi.nlm.nih.gov/16791669) | PKPD modelling of citalopram overdose, but no numeric PK parameter values appear in the evidence (they reside in the previously developed model not shown here). |
+| `Yin_2006.pdf` | Yin OQ et al., Phenotype-genotype relationship and cli…, Journal of clinical psychop… (2006) | popPK | 9 | [10.1097/01.jcp.0000227355.54074.14](https://doi.org/10.1097/01.jcp.0000227355.54074.14) | [16855453](https://pubmed.ncbi.nlm.nih.gov/16855453) | Study reports population PK analysis and clearance differences for citalopram in humans, but specific numeric parameter values (mean CL, V, etc.) are not present in the provided abstract, only relative percentage changes. |
 
-<sub>queue written 2026-10-06 22:12 UTC</sub>
+<sub>queue written 2026-11-23 20:41 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Ahmed_2019 | irrelevant | 1 | 0 | Citalopram is only the prior failed treatment; the PK/PD modeling concerns venlafaxine, with no citalopram disposition parameters or numeric values reported. |
-| popPK | Ahmed_2020 | irrelevant | 0 | 0 | Metabolomics study of acylcarnitines in depression; citalopram is only the treatment, no PK parameters reported. |
-| popPK | Anderson_1996 | irrelevant | 0 | 0 | Citalopram is only used as a radioligand in a platelet uptake study; no PK parameters for citalopram are reported. |
-| popPK | Balant_1996 | irrelevant | 1 | 0 | A review/discussion of metabolite monitoring in population PK/PD with no numeric citalopram disposition parameters reported. |
-| popPK | Bareggi_2004 | irrelevant | 2 | 2 | This is a concentration-effect (PD) study reporting only an EC50, not PK disposition parameters like CL, V, or a population-PK model; no numeric PK parameters are present. |
-| popPK | Baumann_1996 | irrelevant | 2 | 0 | This is a review of SSRI pharmacokinetics/pharmacodynamics with no original quantitative disposition parameters for citalopram reported in the evidence. |
-| popPK | Blumenthal_2014 | irrelevant | 0 | 0 | This is an EHR weight-gain outcomes study with no PK parameters for citalopram; citalopram is only the reference comparator. |
+| popPK | Ahmed_2019 | irrelevant | 1 | 0 | The study focuses on the PK/PD of venlafaxine and duloxetine, with citalopram serving only as a history of treatment failure; no quantitative PK parameters for citalopram are reported. |
+| PGx | Ahmed_2019 | not_relevant | 0 | 0 | The paper analyzes the pharmacogenomics of venlafaxine-XR treatment in patients with prior citalopram/escitalopram failure, not the pharmacokinetics or pharmacodynamics of citalopram itself. |
+| popPK | Ahmed_2020 | irrelevant | 0 | 0 | The study is a metabolomic analysis of acylcarnitine profiles in depressed patients and does not report any pharmacokinetic parameters for citalopram. |
+| PGx | Ahmed_2020 | not_relevant | 0 | 0 | The study investigates acylcarnitine metabolomic profiles in MDD subtypes treated with citalopram, but does not report a pharmacogenomic effect of a gene variant on citalopram's PK or PD parameters. |
+| popPK | Anderson_1996 | irrelevant | 0 | 0 | This is a mechanistic in-vitro study on serotonin transporter inhibition where citalopram is used only as a ligand for binding site identification, not as a subject of pharmacokinetic analysis. |
+| PGx | Anderson_1996 | not_relevant | 0 | 0 | The paper investigates the effect of ADP on serotonin transporter activity and citalopram binding, but does not report any gene variants or pharmacogenomic effects on citalopram PK/PD parameters. |
+| popPK | Balant_1996 | irrelevant | 0 | 0 | The paper is a conceptual review discussing the general challenges of PK/PD population modeling for psychotropic drugs and does not report quantitative PK parameters for citalopram. |
+| PGx | Balant_1996 | not_relevant | 0 | 0 | The paper discusses the confounding nature of drug metabolism on PK/PD modeling, not specific pharmacogenomic effects of genetic variants on citalopram parameters. |
+| popPK | Bareggi_2004 | irrelevant | 1 | 2 | The study reports steady-state concentrations and concentration-response (Emax) parameters, but does not report quantitative disposition parameters (CL, V, Q, ka, t1/2) or a population PK model for citalopram. |
+| PGx | Bareggi_2004 | not_relevant | 0 | 0 | The study investigates general pharmacokinetics and pharmacodynamics of citalopram in OCD patients without examining the influence of specific gene variants or genotypes. |
+| popPK | Baumann_1996 | irrelevant | 1 | 0 | The paper is a review discussing the pharmacology and metabolism of SSRIs including citalopram, but it does not report original quantitative pharmacokinetic parameters (CL, V, etc.) for citalopram. |
+| PGx | Baumann_1996 | not_relevant | 1 | 1 | The text discusses PK of SSRIs and CYP2D6 generally, but does not report specific data on citalopram pharmacokinetics in PM vs EM populations. |
+| popPK | Blumenthal_2014 | irrelevant | 0 | 0 | This is a clinical outcomes study on weight gain associated with antidepressant use, not a pharmacokinetic study. |
+| PGx | Blumenthal_2014 | not_relevant | 0 | 0 | The paper is an observational study of weight gain (side effect) following antidepressant use and does not report pharmacokinetic or pharmacodynamic parameters influenced by genetic variants. |
 | popPK | Bosch_2026 | irrelevant | 2 | 1 | TDM serum-concentration and metabolite-ratio comparison by sex/menopause; no clearance, volume, half-life, or population-PK model parameters are reported, only concentration estimates. |
-| popPK | Friberg_2005 | relevant | 8 | 3 | Population PK model of citalopram in overdose patients, but abstract gives only effect sizes (72% CL increase, 22% F decrease), not the actual CL/V parameter values, which likely reside in tables/figures not provided. |
+| popPK | Friberg_2005 | relevant | 10 | 1 | The study is a population PK analysis of citalopram, but the specific numeric parameter values are not explicitly listed in the provided abstract text, only qualitative effects (e.g., 72% increase in clearance) are described. |
+| PGx | Friberg_2005 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics and the effect of activated charcoal on citalopram overdose, but it does not investigate any gene variants, genotypes, or pharmacogenomic effects. |
+| PGx | Friberg_2006 | not_relevant | 0 | 0 | The paper focuses on PK-PD modeling of citalopram overdose and covariates (age, sex), but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | Gatti_2021 | irrelevant | 2 | 1 | Pharmacovigilance PK/PD correlation study; citalopram's PK values (Cmax, AUC, VD) are only in Supplementary Table 3, not provided in the evidence. |
-| popPK | Ho_2016 | irrelevant | 4 | 2 | This is a pharmacodynamic exposure–response study using AUCs from a prior population PK analysis; no PK parameters (CL, V, ka) are reported, and the PK values live in another publication. |
-| popPK | Isbister_2006 | relevant | 6 | 2 | PKPD modelling of citalopram overdose, but no numeric PK parameter values appear in the evidence (they reside in the previously developed model not shown here). |
+| popPK | Ho_2016 | irrelevant | 2 | 0 | This is a pharmacodynamic/pharmacoeconomic study that utilizes exposure values from a prior PK analysis to assess clinical outcomes, rather than reporting original quantitative PK parameters (CL, V, etc.) for citalopram. |
+| PGx | Ho_2016 | not_relevant | 0 | 0 | The study examines the relationship between drug enantiomer exposure and clinical outcomes but does not report any genetic variants or genotypes affecting PK or PD. |
+| popPK | Isbister_2006 | irrelevant | 2 | 0 | The paper is a simulation study using a previously developed model for clinical management guidelines and does not report original quantitative PK parameter estimates (CL, V, ka) for citalopram. |
+| PGx | Isbister_2006 | not_relevant | 0 | 0 | The study is a simulation of citalopram overdose and does not investigate any gene variants or pharmacogenomic effects on PK or PD parameters. |
 | popPK | Kilpinen_2023 | irrelevant | 0 | 0 | Environmental wastewater monitoring study; citalopram is only a measured micropollutant, no PK parameters reported. |
-| popPK | Mégarbane_2008 | irrelevant | 3 | 1 | This is a review of PK/PD modeling in poisonings mentioning citalopram, but no numeric PK parameter values for citalopram are present in the evidence. |
-| popPK | Velez_2015 | relevant | 9 | 4 | Population PK model code for citalopram and its metabolite in rats is present, but the actual THETA parameter estimates are not shown (only model structure; values likely in tables/figures not provided). |
-| popPK | Wu_2020 | relevant | 10 | 3 | A PBPK/population-PK model of citalopram in humans is described, but the actual numeric parameter values (CL, V, etc.) are not present in the evidence, only prediction error ranges. |
-| popPK | Yin_2006 | relevant | 7 | 4 | Population PK model of citalopram with oral clearance reported as relative percentages (42.9%/33.3% lower in PMs), but absolute CL values and model parameters are not given in the evidence. |
+| popPK | Mégarbane_2008 | irrelevant | 1 | 0 | The paper is a review article discussing the utility of PK/PD models without providing original quantitative PK parameter values for citalopram. |
+| PGx | Mégarbane_2008 | not_relevant | 1 | 0 | The paper is a general review of PK/PD modeling for cardiac toxicity and does not investigate genetic variants affecting PK or PD parameters. |
+| popPK | Velez_2015 | relevant | 10 | 0 | The paper provides a detailed population pharmacokinetic model structure and ODEs for citalopram, but the actual numeric parameter estimates (Theta values) are not present in the provided evidence. |
+| PGx | Velez_2015 | not_relevant | 1 | 2 | The text describes a pharmacokinetic model in rats with strain-dependent parameters (Sprague-Dawley vs. Wistar) but does not report human pharmacogenomic effects. |
+| popPK | Wu_2020 | relevant | 10 | 2 | The paper describes a PBPK model for citalopram and reports the *accuracy* of predictions (percentage errors) against observed data, but does not provide the specific quantitative disposition parameters (CL, V, etc.) in the provided abstract text. |
+| popPK | Yin_2006 | relevant | 9 | 2 | Study reports population PK analysis and clearance differences for citalopram in humans, but specific numeric parameter values (mean CL, V, etc.) are not present in the provided abstract, only relative percentage changes. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcitalopram%5D&body=Drug%3A%20citalopram%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_citalopram/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 22:12 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 12:21 UTC</sub>

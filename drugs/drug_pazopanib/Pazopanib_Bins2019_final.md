@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The cross-check was disputed due to missing slow absorption rate and dose level parameters, while covariate scenarios were not simulated.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="pazopanib" model-id="Pazopanib_Bins2019_final" status="needs_review" stale="false" population="cancer patients" measured-compound="pazopanib" parameterization="mechanistic" topology="2C"></div>
 
@@ -62,13 +62,13 @@ Bins S, Huitema ADR, Laven P, Bouazzaoui SE, Yu H, van Erp N et al. Impact of CY
 
 ### Reviewer guidance
 
-**The cross-check was disputed due to missing slow absorption rate and dose level parameters, while covariate scenarios were not simulated.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The second reader identified missing values for the slow absorption rate constant and a dose level, disagreeing with the record's null entries. Additionally, the record's Frel value of 51 was contested by the second reader who found it null. The review flagged that only the base model was simulated, failing to exercise the defined covariate effects. Extracted — pazopanib: kabs 0.39 1/h, Fab 36, tlag 0.97 h, CL 0.28 L/h, V1 2.4 L, Q 0.97 L/h, V2 24.3 L, Frel 51, … (+1).
+The base model was simulated, not the covariate effects the record defines. Extracted — pazopanib: kabs 0.39 1/h, Fab 36, tlag 0.97 h, CL 0.28 L/h, V1 2.4 L, Q 0.97 L/h, V2 24.3 L, Frel 51, … (+1).
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of dose level with half of bioavailability at dose 200 mg: this record has none, the second reading 466; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -176,7 +176,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 7 scholar param(s) emitted or defaulted | 7 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.828, 0 of 1 reader(s) agree | 0.828 | cross-check disputed by a second reader: verdict disputed, agreement 0.828, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.828 (24 of 29 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.828 | cross-check contradicted by a second reader: verdict disputed; agreement 0.828 (24 of 29 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

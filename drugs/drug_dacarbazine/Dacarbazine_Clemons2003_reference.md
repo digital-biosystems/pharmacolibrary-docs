@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Intercompartmental clearances K12 and K21 are recorded with rate units hr-1, conflicting with required volume per time dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit hr-1 (1 / [time]) vs [length] ** 3 / [time]; Q99 unit hr-1 (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="dacarbazine" model-id="Dacarbazine_Clemons2003_reference" status="rejected" stale="false" population="patients with advanced breast cancer" measured-compound="5-azacytidine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -55,13 +55,13 @@ Clemons M, Ranson M, Margison JM, El Teraifi H, Griffiths A, Kelly J et al. Phar
 
 ### Reviewer guidance
 
-**Intercompartmental clearances K12 and K21 are recorded with rate units hr-1, conflicting with required volume per time dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit hr-1 (1 / [time]) vs [length] ** 3 / [time]; Q99 unit hr-1 (1 / [time]) vs [length] ** 3 / [time].**
 
-The apparent intercompartmental clearances Q (K12) and Q2 (K21) have values of 0.33 and 0.53 in units of hr-1, which are reciprocal time units rather than volume per time. This dimensional mismatch prevents the parameters from being converted to SI values. The record was rejected because these structural parameters could not be validated due to the unit conflict. Extracted — dacarbazine: AUC 32.3 hr · μg/ml, V1 34.6 l, CLm/F 36.6 l/hr, Q 0.33 hr-1, Q2 0.53 hr-1, t1/2α 0.44 hr, t1/2β 1.9 hr.
+A reported unit could not be converted (Q and Q2), so that value has no SI equivalent. Extracted — dacarbazine: AUC 32.3 hr · μg/ml, V1 34.6 l, CLm/F 36.6 l/hr, Q 0.33 hr-1, Q2 0.53 hr-1, t1/2α 0.44 hr, t1/2β 1.9 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has 5-azacytidine, the second reading dacarbazine; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

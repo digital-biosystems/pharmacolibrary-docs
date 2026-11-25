@@ -61,7 +61,7 @@ The medication is administered orally. Ensitrelvir is currently an investigation
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:32 | 9:49 | 2/0/0 | 2/0/0 | 0/0/0 | 205,123/52,347 | openai / gpt-6-luna | 7 | 0/7 | 7/0 | 0 |
+| 2026-11-23 21:48 | 0:04 | 2/0/0 | 2/0/0 | 0/0/0 | 3,681/168 | einfracz / qwen3.8-27b | 7 | 0/7 | 7/0 | 0 |
 
 ## Coverage
 
@@ -74,10 +74,13 @@ The medication is administered orally. Ensitrelvir is currently an investigation
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chaibi_2024 | irrelevant | 0 | 0 | This is an in-vitro inhibitor study and reports no ensitrelvir pharmacokinetic parameters. |
-| popPK | Eltayb_2023 | irrelevant | 1 | 0 | This is an in vitro and computational antiviral study, with no quantitative ensitrelvir disposition parameters reported. |
+| popPK | Chaibi_2024 | irrelevant | 0 | 0 | The paper focuses on the design and synthesis of new 3CLpro inhibitors and does not report pharmacokinetic parameters for ensitrelvir, which is only mentioned as a reference drug. |
+| PGx | Chaibi_2024 | not_relevant | 0 | 0 | The paper describes the design and synthesis of new 3CLpro inhibitors (N-acylbenzimidazoles) and does not report any pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of ensitrelvir. |
+| popPK | Eltayb_2023 | irrelevant | 0 | 0 | The paper is a computational and in-vitro mechanistic study (docking, MD simulation, EC50 bioassays) and does not report quantitative pharmacokinetic disposition parameters (CL, V, Q, ka) for ensitrelvir. |
+| PGx | Eltayb_2023 | not_relevant | 0 | 0 | The paper focuses on the antiviral mechanism and in silico/in vitro potency of ensitrelvir against SARS-CoV-2 enzymes, with no data on gene variants affecting its pharmacokinetics or pharmacodynamics. |
 | popPK | Jochmans_2023 | irrelevant | 0 | 0 | This is an in-vitro resistance study, reporting inhibitor potency rather than ensitrelvir disposition parameters. |
-| popPK | McGovern-Gooch_2024 | irrelevant | 0 | 0 | The study characterizes AB-343 in vitro; ensitrelvir is only mentioned as a comparator and no ensitrelvir PK values are reported. |
+| popPK | McGovern-Gooch_2024 | irrelevant | 0 | 0 | The paper characterizes the biological activity of AB-343 against SARS-CoV-2 Mpro, mentioning ensitrelvir only as a comparator drug. |
+| PGx | McGovern-Gooch_2024 | not_relevant | 0 | 0 | The paper characterizes AB-343, a novel Mpro inhibitor, and does not report any pharmacogenomic effects on the PK or PD parameters of ensitrelvir. |
 | popPK | Shimizu_2023 | relevant | 7 | 2 | The study evaluates ensitrelvir pharmacokinetics and shows AUC values, but eligible disposition parameter values are not readable here. |
 | popPK | Unoh_2025 | irrelevant | 0 | 0 | Ensitrelvir is only a comparator; the reported PK is for S-892216, with detailed values in tables not provided. |
 | popPK | Yamaguchi_2024 | relevant | 8 | 0 | The human analysis uses an ensitrelvir population-PK model, but its parameter values are only referenced in supplementary Table S2, which is not provided. |

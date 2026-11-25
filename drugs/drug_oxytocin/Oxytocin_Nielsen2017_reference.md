@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The oxytocin record remains under review because its reported 2.5% vaginal bioavailability is disputed by the second reader.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="oxytocin" model-id="Oxytocin_Nielsen2017_reference" status="needs_review" stale="false" population="postmenopausal women" measured-compound="oxytocin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Nielsen EI, Al-Saqi SH, Jonasson AF, Uvnäs-Moberg K. Population Pharmacokinetic
 
 ### Reviewer guidance
 
-**The oxytocin record remains under review because its reported 2.5% vaginal bioavailability is disputed by the second reader.**
+**cross_check_disputed; x1_cross_check.**
 
-The source was abstract-only, so reported summary statistics stood in for a fitted model. The model used oxytocin Vss of 15 L as the distribution volume because no central volume was reported; this reproduces AUC and terminal half-life, but not the early distribution phase. The second reader marked the dose compound unknown and did not assign 2.5% to bioavailability, leaving the cross-reader verdict disputed with agreement 0.727. Extracted — oxytocin: CL 27 L/h, Vss 15 L, t1/2α 5.5 minutes, t1/2z 1.2 hours, Fab 2.5 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — oxytocin: CL 27 L/h, Vss 15 L, t1/2α 5.5 minutes, t1/2z 1.2 hours, Fab 2.5 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has oxytocin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,7 +142,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | cross-check disputed by a second reader: verdict disputed, agreement 0.727, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.727 | cross-check contradicted by a second reader: verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

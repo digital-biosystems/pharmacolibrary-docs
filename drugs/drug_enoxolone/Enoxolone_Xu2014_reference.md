@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
 
-> The record was rejected because it assigns 3MGA a formation clearance (CLfm) of 737 L/h, although 3MGA is disconnected from measured enoxolone.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="enoxolone" model-id="Enoxolone_Xu2014_reference" status="rejected" stale="false" population="virtual elderly population" measured-compound="glycyrrhetic acid (GA; enoxolone)" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -51,7 +51,7 @@ Xu R, Liu X, Yang J. A semi-physiologically based pharmacokinetic pharmacodynami
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.12). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.70).">human + animal</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,11 +61,13 @@ Xu R, Liu X, Yang J. A semi-physiologically based pharmacokinetic pharmacodynami
 
 ### Reviewer guidance
 
-**The record was rejected because it assigns 3MGA a formation clearance (CLfm) of 737 L/h, although 3MGA is disconnected from measured enoxolone.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The recorded link from glycyrrhizin to 3MGA does not connect that metabolite to measured glycyrrhetic acid; the glycyrrhetic-acid branch instead links to GAM. All listed metabolites have zero compartments, and the findings identify an unreachable or orphan metabolite. Extracted — glycyrrhizin (GL): k12 20 1/h, k21 0.46 1/h, Vmax 9, Km 0.0014; enoxolone: fu 0.006, fu_tissue 0.012; 3MGA: CLfm 737 L/h; glycyrrhetic acid (GA; enoxolone): Kp 0.14, kfm 0.29 1/h, CL 431 L/h, kabs 0.13 1/h.
+Extracted — glycyrrhizin (GL): k12 20 1/h, k21 0.46 1/h, Vmax 9, Km 0.0014; enoxolone: fu 0.006, fu_tissue 0.012; 3MGA: CLfm 737 L/h; glycyrrhetic acid (GA; enoxolone): Kp 0.14, kfm 0.29 1/h, CL 431 L/h, kabs 0.13 1/h.
 
-<sub>reviewed by gpt-6-luna</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has glycyrrhizin (GL) and glycyrrhetic acid (GA; enoxolone), the second reading glycyrrhizin; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,6 +139,48 @@ The recorded link from glycyrrhizin to 3MGA does not connect that metabolite to 
 - unparsed cell Xu_2014_table_4:row13:col4 = '[32]'
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.12 (3/25 fields) | 22 |
+
+<details><summary>22 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['glycyrrhizin (gl)', '3mga', 'hydrolysis'], ['glycyrrhetic acid (ga; enoxolone)', 'gam (phase ii metabolites of ga)', 'metabolism'], ['gam (phase ii metabolites of ga)', 'glycyrrhetic acid (ga; enoxolone)', 'hydrolysis']] | [['glycyrrhizin', 'glycyrrhetic acid', 'hydrolysis']] | mismatch |
+| `gpt-oss-120b` | `parameters[clb]` |  | 454.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clmet]` | 737 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clmet]` |  | 737 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clup]` |  | 431 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clup]` | 431 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12_r]` |  | 20 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k12_r]` | 20 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k21_r]` | 0.46 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kabs,si]` | 0.13 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[khce]` |  | 0.29 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[khce]` | 0.29 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` |  | 0.0014 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` | 0.0014 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pg]` | 0.015 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pk]` |  | 0.14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pk]` | 0.14 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pseff]` |  | 26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax]` |  | 9.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vmax]` | 9.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | glycyrrhizin (GL) and glycyrrhetic acid (GA; enoxolone) | glycyrrhizin | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | glycyrrhetic acid (GA; enoxolone) | glycyrrhetic acid | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

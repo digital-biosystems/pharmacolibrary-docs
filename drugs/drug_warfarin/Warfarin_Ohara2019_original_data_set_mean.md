@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the S-warfarin clearance parameter value 261 was assigned an incompatible unit dimension that prevented standard unit conversion.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit S ([time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Ohara2019_original_data_set_mean" status="rejected" stale="false" population="adult outpatients (Asian, White, African American)" measured-compound="S-warfarin" parameterization="mechanistic" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Ohara M, Suzuki Y, Shinohara S, Gong IY, Schmerk CL, Tirona RG et al. Difference
 
 ### Reviewer guidance
 
-**The record was rejected because the S-warfarin clearance parameter value 261 was assigned an incompatible unit dimension that prevented standard unit conversion.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit S ([time]) vs [length] ** 3 / [time].**
 
-The extracted clearance parameter for S-warfarin has a value of 261, but the associated unit could not be converted to standard SI units, causing a dimension mismatch. This failure meant the parameter reached the model builder without a valid numeric value. Additionally, a second reader failed to independently verify the primary analyte and several covariate effect parameters, marking them as null. Extracted — S-warfarin: CL 261 S, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
+A reported unit could not be converted (CL), so that value has no SI equivalent. None of the extracted parameters is warfarin's own; they describe S-warfarin. Extracted — S-warfarin: CL 261 S, V 14.3 L, kabs 0.214 1/h, tlag 1.29 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has S-warfarin, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

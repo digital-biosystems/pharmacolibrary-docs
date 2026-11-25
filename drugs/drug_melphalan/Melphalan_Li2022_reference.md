@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Melphalan clearance of 19.1 L/h/25 kg is disputed, and abstract-only summary statistics rather than a fitted model leave the record unconfirmed.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="melphalan" model-id="Melphalan_Li2022_reference" status="needs_review" stale="false" population="pediatric patients undergoing hematopoietic cell transplantation" measured-compound="melphalan" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Li S, Dvorak CC, Lu Y, Chan D, Gobburu JVS, Long-Boyle J et al. Population Pharm
 
 ### Reviewer guidance
 
-**Melphalan clearance of 19.1 L/h/25 kg is disputed, and abstract-only summary statistics rather than a fitted model leave the record unconfirmed.**
+**cross_check_disputed; x1_cross_check.**
 
-The record reports melphalan clearance of 19.1 L/h/25 kg, intercompartmental clearance of 12.4 L/h/25 kg, and central and peripheral compartment volumes of 8.5 and 5.8 L/25 kg. A second reader disputed the identification of melphalan as the dose compound and primary analyte and supplied no values for these parameters; agreement was 0.167, with 0 of 1 reader agreeing. Because only the abstract was read, reported summary statistics stood in for a fitted model. Extracted — melphalan: CL 19.1 L/h/25 kg, V1 8.5 L/25 kg, V2 5.8 L/25 kg, Q 12.4 L/h/25 kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — melphalan: CL 19.1 L/h/25 kg, V1 8.5 L/25 kg, V2 5.8 L/25 kg, Q 12.4 L/h/25 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has melphalan, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

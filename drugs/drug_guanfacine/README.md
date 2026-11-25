@@ -44,7 +44,7 @@ Guanfacine is a centrally acting antihypertensive and alpha-2 agonist used to tr
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Knebel_2015_2_ADHD_RS_IV](drugs/drug_guanfacine/pd_Knebel_2015_2_ADHD_RS_IV.md) | ADHD Rating Scale-IV ← guanfacine · model not identified | — | Knebel W et al., Modeling and simulation of the exposure…, Journal of pharmacokinetics… (2015) | [10.1007/s10928-014-9397-6](https://doi.org/10.1007/s10928-014-9397-6) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Knebel_2015_2_ADHD_RS_IV](drugs/drug_guanfacine/pd_Knebel_2015_2_ADHD_RS_IV.md) | ADHD Rating Scale-IV ← guanfacine · model not identified | — | Knebel W et al., Modeling and simulation of the exposure…, Journal of pharmacokinetics… (2015) | [10.1007/s10928-014-9397-6](https://doi.org/10.1007/s10928-014-9397-6) |
 
 ## Pharmacogenomics (PGx)
 

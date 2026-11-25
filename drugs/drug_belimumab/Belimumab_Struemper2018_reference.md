@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The peripheral compartment for belimumab is orphaned, lacking a defined transfer pathway from the central compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="belimumab" model-id="Belimumab_Struemper2018_reference" status="rejected" stale="false" population="healthy volunteers and patients with systemic lupus erythematosus" measured-compound="belimumab" parameterization="mechanistic" topology="3C"></div>
 
@@ -50,13 +50,13 @@ Struemper H, Thapar M, Roth D. Population Pharmacokinetic and Pharmacodynamic An
 
 ### Reviewer guidance
 
-**The peripheral compartment for belimumab is orphaned, lacking a defined transfer pathway from the central compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure specifies a three-compartment design with a peripheral volume of distribution of 2650 mL, but this compartment is unreachable from the dose. Consequently, the system lacks a valid physiological path for drug distribution into the peripheral tissue. The second reader also could not extract values for the allometric exponent, body weight effect, lag time, clearance, central volume, and steady-state volume of distribution. Extracted — belimumab: tlag 0.18 days, CL 204 mL/day, V1 2.3e+03 mL, V2 2.65e+03 mL, V 4.95e+03 mL.
+Extracted — belimumab: tlag 0.18 days, CL 204 mL/day, V1 2.3e+03 mL, V2 2.65e+03 mL, V 4.95e+03 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of effect of bbmi [kg/m2]: this record has none, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

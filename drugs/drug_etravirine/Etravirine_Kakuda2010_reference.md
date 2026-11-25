@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;etravirine&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/&quot;},{&quot;label&quot;:&quot;Kakuda_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etravirine_Kang2020v3_reference&quot;,&quot;label&quot;:&quot;Kang_2020_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Kang2020v3_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Green2017_reference&quot;,&quot;label&quot;:&quot;Green_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Green2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Lubomirov2013_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Lubomirov2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Courlet2021v2_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Courlet2021v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Duwal2019_reference&quot;,&quot;label&quot;:&quot;Duwal_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Duwal2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Han2024_reference&quot;,&quot;label&quot;:&quot;Han_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Han2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Jin2020_reference&quot;,&quot;label&quot;:&quot;Jin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Jin2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Etravirine_Lubomirov2013_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Lubomirov2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Courlet2021v2_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Courlet2021v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Duwal2019_reference&quot;,&quot;label&quot;:&quot;Duwal_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Duwal2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Han2024_reference&quot;,&quot;label&quot;:&quot;Han_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Han2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Jin2020_reference&quot;,&quot;label&quot;:&quot;Jin_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Jin2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Kang2020v3_reference&quot;,&quot;label&quot;:&quot;Kang_2020_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Kang2020v3_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Etravirine_Thoueille2024_reference&quot;,&quot;label&quot;:&quot;Thoueille_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_etravirine/Etravirine_Thoueille2024_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Etravirine clearance was recorded as 5.76 L/h, conflicting with the dimensional check that requires a mass/time relationship.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng/ml ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="etravirine" model-id="Etravirine_Kakuda2010_reference" status="rejected" stale="false" population="treatment-experienced HIV-1-infected patients" measured-compound="etravirine" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,13 +17,13 @@ Kakuda TN, Wade JR, Snoeck E, Vis P, Schöller-Gyüre M, Peeters MP et al. Pharm
 
 ## Population and dosing
 
-**Population:** treatment-experienced HIV-1-infected patients · condition HIV-1 infection · n = 577.
+**Population:** treatment-experienced HIV-1-infected patients · condition HIV-1 infection · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -31,15 +31,12 @@ Kakuda TN, Wade JR, Snoeck E, Vis P, Schöller-Gyüre M, Peeters MP et al. Pharm
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| C(0 h) | C0 | 393 | ng/ml |
-| 𝔼i(CLi,t0) | CL | 5.76 | L/h |
-| V | V | 75.2 | L |
-| KA | kabs | 0.455 | h−1 |
-| ALAG | tlag | 0.87 | h |
+| area under the concentration-time curve at 12 h (AUC(12 h)) | AUCt | 5501 | ng·h/ml |
+| concentration at 0 h (C(0 h)) | C0 | 393 | ng/ml |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571), qwen3.8-27b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,23 +46,20 @@ Kakuda TN, Wade JR, Snoeck E, Vis P, Schöller-Gyüre M, Peeters MP et al. Pharm
 
 ### Reviewer guidance
 
-**Etravirine clearance was recorded as 5.76 L/h, conflicting with the dimensional check that requires a mass/time relationship.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng/ml ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The record identifies 5.76 L/h as the total clearance for etravirine, but the dimensional verification flagged a unit conflict between the recorded value and the expected structural parameter dimension. Because the data source was the abstract only, these summary statistics replaced a fitted model, and the second reader marked every parameter field, including the clearance value, as null. Extracted — etravirine: C0 393 ng/ml, CL 5.76 L/h, V 75.2 L, kabs 0.455 h−1, tlag 0.87 h.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — etravirine: AUCt 5.5e+03 ng·h/ml, C0 393 ng/ml.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of alag: this record has 0.87, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of area under the concentration-time curve at 12 h (auc(12 h)): this record has 5501, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| C(0 h) | `Q86` · C0 | 393 | ng/ml |  |  | ng/ml | llm (0.6) | Kakuda_2010:abstract |
-| 𝔼i(CLi,t0) | `Q22` · CL | 5.76 | L/h | 1.6e-06 | m3/s | L/h | review_gapfill (0.7) | Duwal_2019:review |
-| V | `Q61` · V | 75.2 | L | 0.0752 | m3 | L | review_gapfill (0.7) | Thoueille_2024:review |
-| KA | `Q49` · kabs | 0.455 | h−1 | 0.0001264 | 1/s | 1/h | review_gapfill (0.7) | Brochot_2015:review |
-| ALAG | `Q83` · tlag | 0.87 | h | 3132 | s | h | review_gapfill (0.7) | Courlet_2021_2:review |
+| area under the concentration-time curve at 12 h (AUC(12 h)) | `Q19` · AUCt | 5501 | ng·h/ml | 19.8 | kg*s/m3 | (h·ng)/ml | llm_corrected (0.6) | Kakuda_2010:abstract |
+| concentration at 0 h (C(0 h)) | `Q86` · C0 | 393 | ng/ml |  |  | ng/ml | llm (0.6) | Kakuda_2010:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,35 +69,33 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'AUC(12 h)' (captured trailing unit '12 h' for child rows)
-- unit_dimension_mismatch: 'C(0 h)' → Q86 (unit '[mass] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- unit_dimension_mismatch: 'concentration at 0 h (C(0 h))' → Q86 (unit '[mass] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped unlinked row (NIL): 'Virologic response (&lt;50 copies/ml) at week 24' — extend the ontology if this is a real PK parameter (source ['Kakuda_2010:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=etravirine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Duwal_2019's review values (primary lacked it)
-- gap-filled Q61 (V) from Thoueille_2024's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Brochot_2015's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Courlet_2021_2's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Kakuda_2010_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Kakuda_2010_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 | `qwen3.8-27b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[area under the concentration-time curve at 12 h (auc(12 h))]` | 5501 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c]` |  | 393 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[concentration at 0 h (c(0 h))]` | 393 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[alag]` | 0.87 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[c]` | 393 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[concentration at 0 h (c(0 h))]` |  | 393 | only_one_extracted |
@@ -123,17 +115,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 1 |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Duwal_2019:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Brochot_2015:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Thoueille_2024:review'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Courlet_2021_2:review'] |
+| C0_has_structural_params | pass |  | 2 |  |
+| C0b_disposition_core | fail |  |  |  |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Kakuda_2010:abstract'] |
 | C5_dimension_Q86 | fail | [mass] * [time] / [length] ** 3 | ng/ml ([mass] / [length] ** 3) | ['Kakuda_2010:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.76 | ['Duwal_2019:review'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 5.76 L/h | ['Duwal_2019:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 75.2 L | ['Thoueille_2024:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -157,4 +143,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Betravirine%5D%20Etravirine_Kakuda2010_reference&body=Drug%3A%20etravirine%0ARecord%3A%20Etravirine_Kakuda2010_reference%0APaper%3A%20Kakuda_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_etravirine/Etravirine_Kakuda2010_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 15:49 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:55 UTC</sub>

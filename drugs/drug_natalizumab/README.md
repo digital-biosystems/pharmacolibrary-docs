@@ -32,8 +32,8 @@ Natalizumab is a humanized monoclonal antibody used to manage multiple sclerosis
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Muralidharan_2017_alpha_4_integrin_saturation](drugs/drug_natalizumab/pd_Muralidharan_2017_alpha_4_integrin_saturation.md) | alpha-4 integrin saturation ← natalizumab · direct sigmoid Emax (Hill) effect | — | Muralidharan KK et al., Population Pharmacokinetics and Target…, Journal of clinical pharmac… (2017) | [10.1002/jcph.894](https://doi.org/10.1002/jcph.894) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Serra_2021_RO](drugs/drug_natalizumab/pd_Serra_2021_RO.md) | occupancy of α4-integrin receptor ← natalizumab · direct linear effect | — | Serra López-Matencio JM et al., Evaluation of Natalizumab Pharmacokinet…, Frontiers in neurology (2021) | [10.3389/fneur.2021.716548](https://doi.org/10.3389/fneur.2021.716548) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhovtis_2020_4_integrin](drugs/drug_natalizumab/pd_Zhovtis_2020_4_integrin.md) | α4-integrin receptor saturation biomarker turnover ← natalizumab | — | Zhovtis Ryerson L et al., Pharmacodynamics of natalizumab extende…, Neurology(R) neuroimmunolog… (2020) | [10.1212/NXI.0000000000000672](https://doi.org/10.1212/NXI.0000000000000672) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [Hanf_2014_Cytotoxicity](drugs/drug_natalizumab/pd_Hanf_2014_Cytotoxicity.md) | Cytotoxicity biomarker turnover ← endogenous kinetics | — | Hanf KJ et al., Antibody humanization by redesign of co…, Methods (San Diego, Calif.) (2014) | [10.1016/j.ymeth.2013.06.024](https://doi.org/10.1016/j.ymeth.2013.06.024) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Data from bacteria, fungi or plants, not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">other organism</span> | [Hanf_2014_Cytotoxicity](drugs/drug_natalizumab/pd_Hanf_2014_Cytotoxicity.md) | Cytotoxicity biomarker turnover ← endogenous kinetics | — | Hanf KJ et al., Antibody humanization by redesign of co…, Methods (San Diego, Calif.) (2014) | [10.1016/j.ymeth.2013.06.024](https://doi.org/10.1016/j.ymeth.2013.06.024) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zhovtis_2020_4_integrin](drugs/drug_natalizumab/pd_Zhovtis_2020_4_integrin.md) | α4-integrin receptor saturation biomarker turnover ← natalizumab | — | Zhovtis Ryerson L et al., Pharmacodynamics of natalizumab extende…, Neurology(R) neuroimmunolog… (2020) | [10.1212/NXI.0000000000000672](https://doi.org/10.1212/NXI.0000000000000672) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +47,7 @@ Natalizumab is a humanized monoclonal antibody used to manage multiple sclerosis
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:02 | 16:24 | 0/7/0 | 3/1/0 | 0/0/0 | 808,886/31,905 | einfracz / qwen3.8-27b | 47 | 9/25 | 46/1 | 0 |
+| 2026-10-06 23:02 | 16:24 | 0/7/0 | 4/0/0 | 0/0/0 | 808,886/31,905 | einfracz / qwen3.8-27b | 47 | 9/25 | 46/1 | 0 |
 
 ## Coverage
 

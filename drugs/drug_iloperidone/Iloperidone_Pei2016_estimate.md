@@ -4,11 +4,11 @@
 
 # iloperidone — `Iloperidone_Pei2016_estimate`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Iloperidone’s elimination clearance has no reported value, so a library placeholder was used and the record was held back rather than published.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="iloperidone" model-id="Iloperidone_Pei2016_estimate" status="model_quarantined" stale="false" population="Chinese schizophrenia patients" measured-compound="iloperidone" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="iloperidone" model-id="Iloperidone_Pei2016_estimate" status="rejected" stale="false" population="Chinese schizophrenia patients" measured-compound="iloperidone" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Pei Q, Huang L, Huang J, Gu JK, Kuang Y, Zuo XC et al. Influences of CYP2D6. Acta pharmacologica Sinica 37(11):1499–1508 (2016).
@@ -16,42 +16,35 @@ Pei Q, Huang L, Huang J, Gu JK, Kuang Y, Zuo XC et al. Influences of CYP2D6. Act
 
 ## Population and dosing
 
-**Population:** Chinese schizophrenia patients · condition schizophrenia · age group adult · n = 70.
+**Population:** Chinese schizophrenia patients · age group adult.
 
-**Dosing:** 12, 16, 20, 24 mg/d, oral, multiple, every 24 h.
+**Dosing:** 2, 12, 16, 20, 24 mg/d, oral, multiple, every 24 h.
 
 ## Model
 
-**Structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 9 extracted, plus 3 covariate effects.  
-**Availability:** Model withheld: a core parameter is unspecified.
+**Parameters:** 6 extracted, plus 3 covariate effects.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| K a (h -1 ) | kabs | 2.26 | h -1 |
-| K 20 (h -1 ) | kel | 0.067 | h -1 |
-| K 30 (h -1 ) | kel | 0.160 | h -1 |
-| K 40 (h -1 ) | kel | 0.106 | h -1 |
-| V 2 (L) | V1 | 679 | L |
-| V 3 (L) | V | 10 | L |
-| V 4 (L) | V | 10 | L |
-| K 23 (h -1 ) | kfm | 0.00451 | h -1 |
-| K 24 (h -1 ) | kfm | 0.00649 | h -1 |
-| cyp2d6_10_c_t_on_k_24 | cyp2d6_10_c_t_on_k_24 | 0.693 |  |
-| cyp2d6_10_t_t_on_k_24 | cyp2d6_10_t_t_on_k_24 | 0.492 |  |
-| cyp2d6_10_t_t_on_k_23 | cyp2d6_10_t_t_on_k_23 | 1.34 |  |
-
-## Caveats
-
-- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+| label | parameter | value | unit | IIV |
+|---|---|---|---|---|
+| K a (h -1 ) | kabs | 2.26 | h -1 |  |
+| K 20 (h -1 ) | ki0 | 0.067 | h -1 | 19.5 (None% RSE) |
+| V 2 (L) | V2 | 679 | L | 35.8 (None% RSE) |
+| V 3 (L) | V3 | 10 | L |  |
+| V 4 (L) | V | 10 | L |  |
+| K 23 (h -1 ) | kcomp | 0.00451 | h -1 | 19.6 (None% RSE) |
+| cyp2d6_10_c_t_on_k_24 | cyp2d6_10_c_t_on_k_24 | 0.693 |  |  |
+| theta_q361_cyp2d6 | theta_q361_cyp2d6 | 0.492 |  |  |
+| theta_q31_cyp2d6 | theta_q31_cyp2d6 | 1.34 |  |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.12). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,34 +54,31 @@ Pei Q, Huang L, Huang J, Gu JK, Kuang Y, Zuo XC et al. Influences of CYP2D6. Act
 
 ### Reviewer guidance
 
-**Iloperidone’s elimination clearance has no reported value, so a library placeholder was used and the record was held back rather than published.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-No value for iloperidone's elimination clearance. The model was built, but iloperidone's elimination clearance had no value, so a library placeholder stood in and the model was held back rather than published. The covariate scenarios were not simulated: the base model was simulated, not the covariate effects the record defines. The absorption rate constant was also not represented or defaulted (6 of 7 parameters were covered), and the recorded parent–metabolite central-compartment structure did not match the model structure used. Extracted — iloperidone: kabs 2.26 h -1, kel 0.067 h -1, V1 679 L; M1 (P-88): kel 0.16 h -1, V 10 L, kfm 0.00451 h -1; M2 (P-95): kel 0.106 h -1, V 10 L, kfm 0.00649 h -1.
+Extracted — iloperidone: kabs 2.26 h -1, ki0 0.067 h -1, V2 679 L, V3 10 L, V 10 L, kcomp 0.00451 h -1.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading iloperidone → m1 (p-88) (metabolism); iloperidone → m2 (p-95) (metabolism); it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| K a (h -1 ) | `Q49` · kabs | 2.26 | h -1 | 0.0006278 | 1/s | 1/h | exact (1) | tab_2:row1:col1 |
-| K 20 (h -1 ) | `Q47` · kel | 0.067 | h -1 | 1.861e-05 | 1/s | 1/h | exact (1) | tab_2:row2:col1 |
-| K 30 (h -1 ) | `Q47` · kel | 0.160 | h -1 | 4.444e-05 | 1/s | 1/h | exact (1) | tab_2:row3:col1 |
-| K 40 (h -1 ) | `Q47` · kel | 0.106 | h -1 | 2.944e-05 | 1/s | 1/h | exact (1) | tab_2:row4:col1 |
-| V 2 (L) | `Q63` · V1 | 679 | L | 0.679 | m3 | l | exact (1) | tab_2:row5:col1 |
-| V 3 (L) | `Q61` · V | 10 | L | 0.01 | m3 | l | exact (1) | tab_2:row6:col1 |
-| V 4 (L) | `Q61` · V | 10 | L | 0.01 | m3 | l | exact (1) | tab_2:row7:col1 |
-| K 23 (h -1 ) | `Q305` · kfm | 0.00451 | h -1 | 1.253e-06 | 1/s | 1/h | exact (1) | tab_2:row8:col1 |
-| K 24 (h -1 ) | `Q305` · kfm | 0.00649 | h -1 | 1.803e-06 | 1/s | 1/h | exact (1) | tab_2:row9:col1 |
-| cyp2d6_10_c_t_on_k_24 | `Q900` · cyp2d6_10_c_t_on_k_24 | 0.693 |  |  |  |  |  | tab_2:row10:col1 |
-| cyp2d6_10_t_t_on_k_24 | `Q900` · cyp2d6_10_t_t_on_k_24 | 0.492 |  |  |  |  |  | tab_2:row11:col1 |
-| cyp2d6_10_t_t_on_k_23 | `Q900` · cyp2d6_10_t_t_on_k_23 | 1.34 |  |  |  |  |  | tab_2:row12:col1 |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
+|---|---|---|---|---|---|---|---|---|---|
+| K a (h -1 ) | `Q49` · kabs | 2.26 | h -1 | 0.0006278 | 1/s | 1/h | space_fold (0.95) | Pei_2016_table_3:row0:col1 |  |
+| K 20 (h -1 ) | `Q373` · ki0 | 0.067 | h -1 | 1.861e-05 | 1/s | 1/h | space_fold (0.95) | Pei_2016_table_3:row1:col1 | 19.5 (None% RSE) |
+| V 2 (L) | `Q64` · V2 | 679 | L | 0.679 | m3 | l | space_fold (0.95) | Pei_2016_table_3:row4:col1 | 35.8 (None% RSE) |
+| V 3 (L) | `Q77` · V3 | 10 | L | 0.01 | m3 | l | space_fold (0.95) | Pei_2016_table_3:row5:col1 |  |
+| V 4 (L) | `Q61` · V | 10 | L | 0.01 | m3 | l | llm (0.6) | Pei_2016_table_3:row6:col1 |  |
+| K 23 (h -1 ) | `Q48` · kcomp | 0.00451 | h -1 | 1.253e-06 | 1/s | 1/h | space_fold (0.95) | Pei_2016_table_3:row7:col1 | 19.6 (None% RSE) |
+| cyp2d6_10_c_t_on_k_24 | `Q900` · cyp2d6_10_c_t_on_k_24 | 0.693 |  |  |  |  |  | Pei_2016_table_3:row9:col1 |  |
+| theta_q361_cyp2d6 | `Q900` · theta_q361_cyp2d6 | 0.492 |  |  |  |  |  | Pei_2016_table_3:row10:col1 |  |
+| theta_q31_cyp2d6 | `Q900` · theta_q31_cyp2d6 | 1.34 |  |  |  |  |  | Pei_2016_table_3:row11:col1 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -102,34 +92,60 @@ Independently confirmed by `gpt-oss-120b`.
 - table section residual_error: 'CV 1 (%)' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'CV 2 (%)' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'CV 3 (%)' routed out of structural estimates ('Residual variability')
+- dropped duplicate Q373 ('K 30 (h -1 )', value '0.160') — already have one for this compound
+- dropped duplicate Q373 ('K 40 (h -1 )', value '0.106') — already have one for this compound
+- dropped duplicate Q48 ('K 24 (h -1 )', value '0.00649') — already have one for this compound
 - covariate level 'CYP2D6*10 C/T on K 24' → Q900:cyp2d6_10_c_t_on_k_24 = 0.693 (linear_fractional on the model)
-- covariate level 'CYP2D6*10 T/T on K 24' → Q900:cyp2d6_10_t_t_on_k_24 = 0.492 (linear_fractional on the model)
-- covariate level 'CYP2D6*10 T/T on K 23' → Q900:cyp2d6_10_t_t_on_k_23 = 1.34 (linear_fractional on the model)
-- metabolite volume: 'V 3 (L)' Q63→Q61 for M1 (P-88) — it is 1-compartment, so its central volume is its only volume
-- metabolite volume: 'V 4 (L)' Q63→Q61 for M2 (P-95) — it is 1-compartment, so its central volume is its only volume
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (V 2 (L)); Q61 (V 3 (L)); Q61 (V 4 (L))
+- covariate effect for Q361 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q31 has no base parameter row (kept as unattached equation-variable)
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q64 (V 2 (L)); Q61 (V 4 (L))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=iloperidone
-- topology: 2 first-order transfer(s) across 3 compounds → general_linear
-- template fit: PK_3M_9C — formed from central; parent 1, metabolites [1, 1]
-- population split: 'estimate' subgroup of Pei_2016 (paper reports 2 populations: estimate, median)
-- row roles: 2 per-group rows of M2 (P-95) covariate_effect but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 20/20 row label(s) assigned, 27 linked by role; re-tagged parent→M1 (P-88) ×21, parent→M2 (P-95) ×25
-- molar mass: no plausible PubChem entry for 'M2 (P-95)' ('P-95') — left in mass units
-- molar mass: none found for 'M2 (P-95)' — its concentrations stay mass-only
+- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
+- pharmacogenetic covariate 'cyp2d6_10_c_t_on_k_24' (cyp2d6) — PGx domain
+- pharmacogenetic covariate 'theta_q361_cyp2d6' (cyp2d6) — PGx domain
+- pharmacogenetic covariate 'theta_q31_cyp2d6' (cyp2d6) — PGx domain
+- population split: 'estimate' subgroup of Pei_2016 (paper reports 2 populations: estimate, final model / median)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (16/16 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.12 (3/25 fields) | 22 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>22 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [] | [['iloperidone', 'm1 (p-88)', 'metabolism'], ['iloperidone', 'm2 (p-95)', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[cyp2d6_10_c_t_on_k_24]` |  | 0.693 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cyp2d6_10_c_t_on_k_24]` | 0.693 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cyp2d6_10_t_t_on_k_23]` |  | 1.34 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cyp2d6_10_t_t_on_k_24]` |  | 0.492 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 20]` |  | 0.067 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 20]` | 0.067 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 23]` |  | 0.00451 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 23]` | 0.00451 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 24]` |  | 0.00649 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 30]` |  | 0.160 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 40]` |  | 0.106 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` |  | 2.26 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 2.26 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q31_cyp2d6]` | 1.34 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q361_cyp2d6]` | 0.492 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 2]` |  | 679 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 2]` | 679 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 3]` |  | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 3]` | 10 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 4]` |  | 10 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 4]` | 10 |  | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -141,34 +157,18 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 9 |  |
+| C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q305 | pass | 1 / [time] |  | ['tab_2:row8:col1'] |
-| C5_dimension_Q305 | pass | 1 / [time] |  | ['tab_2:row9:col1'] |
-| C5_dimension_Q47 | pass | 1 / [time] |  | ['tab_2:row2:col1'] |
-| C5_dimension_Q47 | pass | 1 / [time] |  | ['tab_2:row3:col1'] |
-| C5_dimension_Q47 | pass | 1 / [time] |  | ['tab_2:row4:col1'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_2:row1:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_2:row6:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_2:row7:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_2:row5:col1'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 10 L | ['tab_2:row6:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 10 L | ['tab_2:row7:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 679 L | ['tab_2:row5:col1'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_param_coverage |  | fail | 7 scholar param(s) emitted or defaulted | 6 covered |  | neither emitted nor in defaulted[]: ['kabs'] |
-| T3_rate_constant_conversion |  | pass | K23 (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
-| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_General_Linear |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q373 | pass | 1 / [time] |  | ['Pei_2016_table_3:row1:col1'] |
+| C5_dimension_Q48 | pass | 1 / [time] |  | ['Pei_2016_table_3:row7:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Pei_2016_table_3:row0:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Pei_2016_table_3:row6:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Pei_2016_table_3:row4:col1'] |
+| C5_dimension_Q77 | pass | [length] ** 3 |  | ['Pei_2016_table_3:row5:col1'] |
+| C8_topology | fail |  |  |  |
+| C9_phys_window_Q61 | pass | volume within physiological range | 10 L | ['Pei_2016_table_3:row6:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 679 L | ['Pei_2016_table_3:row4:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -180,19 +180,9 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -202,4 +192,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biloperidone%5D%20Iloperidone_Pei2016_estimate&body=Drug%3A%20iloperidone%0ARecord%3A%20Iloperidone_Pei2016_estimate%0APaper%3A%20Pei_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iloperidone/Iloperidone_Pei2016_estimate%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 15:48 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:18 UTC</sub>

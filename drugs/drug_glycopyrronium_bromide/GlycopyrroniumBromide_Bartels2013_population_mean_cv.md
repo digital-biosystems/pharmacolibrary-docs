@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The two-compartment model for glycopyrronium bromide yields a simulated terminal half-life of 77 hours, conflicting with the 52.5 hours reported in the literature.
+> The model does not reproduce the paper's terminal half-life (paper 52.5, model 77); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="glycopyrronium bromide" model-id="GlycopyrroniumBromide_Bartels2013_population_mean_cv" status="needs_review" stale="false" population="healthy volunteers" measured-compound="glycopyrronium" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Bartels C, Looby M, Sechaud R, Kaiser G. Determination of the pharmacokinetics o
 
 ### Reviewer guidance
 
-**The two-compartment model for glycopyrronium bromide yields a simulated terminal half-life of 77 hours, conflicting with the 52.5 hours reported in the literature.**
+**The model does not reproduce the paper's terminal half-life (paper 52.5, model 77); x1_cross_check.**
 
-Simulating the model using the extracted parameters (e.g., clearance of 44.9 L/h and peripheral volume of 71.5 L) results in a terminal half-life that deviates significantly from the paper's values of 52.5 hours and 57.2 hours. Additionally, a second reader disputed the record, failing to confirm the identified dose compound and leaving key absorption parameters unverified. The lag time parameter was also defaulted rather than extracted from the source data. Extracted — glycopyrronium bromide: CL 44.9 L/h, V1 11.3 L, Q 8.23 L/h, V2 71.5 L, Fab 1.11, kabs 0.009 1/h, Vss 102 L, t1/2z 0.45 h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — glycopyrronium bromide: CL 44.9 L/h, V1 11.3 L, Q 8.23 L/h, V2 71.5 L, Fab 1.11, kabs 0.009 1/h, Vss 102 L, t1/2z 0.45 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has glycopyrronium, the second reading unknown; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -193,10 +193,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 52.5 | 77.01 | 1.467 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 57.2 | 77.01 | 1.346 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 84 | 77.01 | 0.9168 | days→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.125 (3 of 24 compared fields agree, 19 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.125 | cross-check contradicted by a second reader: verdict disputed; agreement 0.125 (3 of 24 compared fields agree, 19 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 52.5 | 77.01 | 1.467 | reported 52.5 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 57.2 | 77.01 | 1.346 | reported 57.2 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 84 | 77.01 | 0.9168 | reported 3.5 days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

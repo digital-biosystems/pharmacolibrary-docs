@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;sulpiride&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/&quot;},{&quot;label&quot;:&quot;Bressolle_1984 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulpiride_Bressolle1984_reference&quot;,&quot;label&quot;:&quot;Bressolle_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Peris_1988_3H_ASP_release&quot;,&quot;label&quot;:&quot;Peris_1988 \u00b7 [3H]ASP release&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/pd_Peris_1988_3H_ASP_release.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulpiride_Bressolle1984_reference&quot;,&quot;label&quot;:&quot;Bressolle_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The sulpiride record, derived solely from the abstract, failed the cross-check because the second reader could not confirm the extracted parameters or identified compounds.
+> cross_check_disputed; x1_cross_check.
 
-<div class="pk-model-meta" hidden drug="sulpiride" model-id="Sulpiride_Bressolle1984_reference" status="needs_review" stale="false" population="healthy male subjects" measured-compound="sulpiride" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sulpiride" model-id="Sulpiride_Bressolle1984_reference" status="needs_review" stale="false" population="healthy adult males" measured-compound="sulpiride" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Bressolle F, Bres J, Blanchin MD, Gomeni R. Sulpiride pharmacokinetics in humans after intramuscular administration at three dose levels. Journal of pharmaceutical sciences 73(8):1128–1136 (1984).
@@ -17,13 +17,13 @@ Bressolle F, Bres J, Blanchin MD, Gomeni R. Sulpiride pharmacokinetics in humans
 
 ## Population and dosing
 
-**Population:** healthy male subjects · condition healthy · age group adult · n = 9.
+**Population:** healthy adult males · condition healthy · age group adult.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 8 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference.svg" alt="Sulpiride_Bressolle1984_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -33,18 +33,14 @@ Bressolle F, Bres J, Blanchin MD, Gomeni R. Sulpiride pharmacokinetics in humans
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| initial volume of distribution | V | 0.145 | L/kg |
-| steady-state volume of distribution | Vss | 0.639 | L/kg |
+| initial volume of distribution | Vss | 0.145 | L/kg |
 | total clearance | CL | 89.8 | mL/min |
 | renal clearance | CLR | 83.0 | mL/min |
 | f | Fab | 0.15 |  |
-| administered dose recovered unchanged in urine | fe | 93.1 | % |
-| Ka1,sul | kabs | 1.66 | h−1 |
-| Tlag | tlag | 1.5 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.158). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.818). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,26 +50,22 @@ Bressolle F, Bres J, Blanchin MD, Gomeni R. Sulpiride pharmacokinetics in humans
 
 ### Reviewer guidance
 
-**The sulpiride record, derived solely from the abstract, failed the cross-check because the second reader could not confirm the extracted parameters or identified compounds.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was constructed using only the paper's abstract, meaning summary statistics stood in for a fitted model. The second reader disagreed with the identification of sulpiride as the dose compound and primary analyte, marking both as unknown. Furthermore, the second reader reported null values for all extracted parameters, including renal clearance (83.0 mL/min) and initial volume of distribution (0.145 L/kg), resulting in zero agreement. Extracted — sulpiride: V 0.145 L/kg, Vss 0.639 L/kg, CL 89.8 mL/min, CLR 83 mL/min, Fab 0.15, fe 93.1 %, kabs 1.66 h−1, tlag 1.5 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sulpiride: Vss 0.145 L/kg, CL 89.8 mL/min, CLR 83 mL/min, Fab 0.15.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulpiride, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[initial volume of distribution].parameter_id`: this record has Q65, the second reading Q61; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| initial volume of distribution | `Q61` · V | 0.145 | L/kg | 0.01015 | m3 | l/kg | llm_corrected (0.6) | Bressolle_1984:abstract |
-| steady-state volume of distribution | `Q65` · Vss | 0.639 | L/kg | 0.04473 | m3 | l/kg | llm_corrected (0.6) | Bressolle_1984:abstract |
+| initial volume of distribution | `Q65` · Vss | 0.145 | L/kg | 0.01015 | m3 | l/kg | llm_corrected (0.6) | Bressolle_1984:abstract |
 | total clearance | `Q22` · CL | 89.8 | mL/min | 1.497e-06 | m3/s | ml/min | exact (1) | Bressolle_1984:abstract, Bressolle_1984:abstract |
 | renal clearance | `Q26` · CLR | 83.0 | mL/min | 1.383e-06 | m3/s | ml/min | exact (1) | Bressolle_1984:abstract |
 | f | `Q40` · Fab | 0.15 |  |  |  |  | exact (1) | Bressolle_1984:abstract |
-| administered dose recovered unchanged in urine | `Q44` · fe | 93.1 | % |  |  | % | llm (0.6) | Bressolle_1984:abstract |
-| Ka1,sul | `Q49` · kabs | 1.66 | h−1 | 0.0004611 | 1/s | 1/h | review_gapfill (0.7) | Yao_2019:review |
-| Tlag | `Q83` · tlag | 1.5 | h | 5400 | s | h | review_gapfill (0.7) | Yao_2019:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -82,15 +74,15 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
+**Deviations:**
+- `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
+
 **Interpretation flags:**
+- dropped duplicate Q65 ('steady-state volume of distribution', value 0.639) — already have one for this compound
 - dropped duplicate Q26 ('renal clearance of unbound drug', value 97.6) — already have one for this compound
+- dropped unlinked row (NIL): 'recovered unchanged in urine' — extend the ontology if this is a real PK parameter (source ['Bressolle_1984:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sulpiride
-- 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'initial volume of distribution' is the general volume)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Yao_2019's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Yao_2019's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Bressolle_1984_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
@@ -98,32 +90,18 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.158 (3/19 fields) | 16 |
+| `gpt-oss-120b` | not confirmed | 0.818 (9/11 fields) | 2 |
 
-<details><summary>16 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[administered dose recovered unchanged in urine]` | 93.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f]` | 0.15 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[f]` |  | 0.15 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[initial volume of distribution]` | 0.145 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[initial volume of distribution]` |  | 0.145 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka1,sul]` | 1.66 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[of the administered dose being recovered unchanged in urine]` |  | 93.1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[renal clearance]` | 83.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[renal clearance]` |  | 83.0 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[steady-state volume of distribution]` | 0.639 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[initial volume of distribution].parameter_id` | Q65 | Q61 | mismatch |
 | `gpt-oss-120b` | `parameters[steady-state volume of distribution]` |  | 0.639 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag]` | 1.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total clearance]` | 89.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total clearance]` |  | 89.8 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | sulpiride | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | sulpiride | unknown | mismatch |
 
 </details>
 
@@ -137,21 +115,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 6 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Bressolle_1984:abstract', 'Bressolle_1984:abstract'] |
 | C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Bressolle_1984:abstract'] |
-| C5_dimension_Q44 | pass | dimensionless |  | ['Bressolle_1984:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Yao_2019:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Bressolle_1984:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 |  | ['Bressolle_1984:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Yao_2019:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 89.8 | ['Bressolle_1984:abstract', 'Bressolle_1984:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 5.39 L/h | ['Bressolle_1984:abstract', 'Bressolle_1984:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 10.1 L | ['Bressolle_1984:abstract'] |
-| C9_phys_window_Q65 | pass | volume within physiological range | 44.7 L | ['Bressolle_1984:abstract'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 10.1 L | ['Bressolle_1984:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -160,10 +133,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=sulpiride) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.158, 0 of 1 reader(s) agree | 0.158 | cross-check disputed by a second reader: verdict disputed, agreement 0.158, 0 of 1 reader(s) agree |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.818 (9 of 11 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | cross-check contradicted by a second reader: verdict disputed; agreement 0.818 (9 of 11 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -180,14 +153,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference_modelica.zip" download>Sulpiride_Bressolle1984_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference_fmi.zip" download>Sulpiride_Bressolle1984_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference_matlab.zip" download>Sulpiride_Bressolle1984_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference_matlab_simbio.zip" download>Sulpiride_Bressolle1984_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference_sbml.zip" download>Sulpiride_Bressolle1984_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference_fmi.zip" download>Sulpiride_Bressolle1984_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference_matlab.zip" download>Sulpiride_Bressolle1984_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference_matlab_simbio.zip" download>Sulpiride_Bressolle1984_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference_sbml.zip" download>Sulpiride_Bressolle1984_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference_cellml.zip" download>Sulpiride_Bressolle1984_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 ## Model interface
@@ -197,20 +170,18 @@ The parameters this record sets on the template, in the template's SI units, and
 | direction | role | name | value | unit (SI) |
 |---|---|---|---|---|
 | input | compound | `MM` | 0.3414 | kg/mol |
-| input | dosing | `F` | 0.15 | 1 |
-| input | dosing | `Tlag` | 5400 | s |
+| input | dosing | `F` | 1 | 1 |
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 0.0008 | kg |
 | input | model | `Cl` | 1.497e-06 | m3/s |
 | input | model | `VdPerKg` | 0.000145 | m3/kg |
-| input | model | `ka` | 0.0004611 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
 ## Tested with
 
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
 - Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
 - No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
@@ -233,14 +204,14 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 800 mg, single dose, first-order absorption (ka 1.66 /h, lag 90 min, F 0.15). _The paper's dose was not captured; the default is the WHO ATC DDD 800 mg oral (N05AL01) (defined daily dose)._
+**Administration: intravenous** — 800 mg infusion over 10 min, single dose. _The paper's dose was not captured; the default is the WHO ATC DDD 800 mg parenteral (N05AL01) (defined daily dose)._
 
-<dbs-fmusim paramsurl="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference/Sulpiride_Bressolle1984_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Sulpiride_Bressolle1984_reference_params.json` · controls `Sulpiride_Bressolle1984_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Sulpiride_Bressolle1984_reference_params.json` · controls `Sulpiride_Bressolle1984_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulpiride%5D%20Sulpiride_Bressolle1984_reference&body=Drug%3A%20sulpiride%0ARecord%3A%20Sulpiride_Bressolle1984_reference%0APaper%3A%20Bressolle_1984%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 17:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:25 UTC</sub>

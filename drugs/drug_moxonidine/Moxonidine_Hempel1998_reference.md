@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Moxonidine clearance and volume values from the abstract were disputed by a second reader who could not verify the dose compound or primary analyte.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="moxonidine" model-id="Moxonidine_Hempel1998_reference" status="needs_review" stale="false" population="patients with hypertension" measured-compound="moxonidine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Hempel G, Karlsson MO, de Alwis DP, Toublanc N, McNay J, Schaefer HG. Population
 
 ### Reviewer guidance
 
-**Moxonidine clearance and volume values from the abstract were disputed by a second reader who could not verify the dose compound or primary analyte.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was derived solely from the paper's abstract, so its summary statistics replaced fitted model estimates. A second reader disagreed on the identified dose compound and primary analyte, finding them unknown rather than moxonidine. Consequently, the extracted clearance (35 L/h) and volume of distribution (132 L) were not corroborated, leading to a cross-check dispute with an agreement ratio of 0.222. Extracted — moxonidine: CL 35 L/h, V 132 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — moxonidine: CL 35 L/h, V 132 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has moxonidine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check contradicted by a second reader: verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

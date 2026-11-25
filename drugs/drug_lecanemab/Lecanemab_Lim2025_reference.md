@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The lecanemab record was rejected because the peripheral compartment is unreachable from the dose, and the reviewer disputed a value of 21.6.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="lecanemab" model-id="Lecanemab_Lim2025_reference" status="rejected" stale="false" population="" measured-compound="lecanemab" parameterization="mechanistic" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Lim S, Lee HW, Yoon S, Han JW, Chung JY, Yoon S. Sex differences in efficacy/saf
 
 ### Reviewer guidance
 
-**The lecanemab record was rejected because the peripheral compartment is unreachable from the dose, and the reviewer disputed a value of 21.6.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defines a two-compartment system for lecanemab, yet the findings indicate the peripheral compartment lacks a path from the dose, rendering it an orphan compartment. The record lists clearance at 0.0159 L/h, central volume at 3.59 L, and peripheral volume at 6.04 L. A second reader disagreed with a value of 21.6 found in this record, asserting the correct value is null. Extracted — lecanemab: CL 0.0159 L/h, V1 3.59 L, V2 6.04 L.
+Extracted — lecanemab: CL 0.0159 L/h, V1 3.59 L, V2 6.04 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 21.6, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

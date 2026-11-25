@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The metabolic clearance parameter for ipratropium bromide was incorrectly classified as an apparent metabolite clearance rather than a total clearance.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit min/L ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="ipratropium bromide" model-id="IpratropiumBromide_Lee2016_reference" status="rejected" stale="false" population="surgical patients under mechanical ventilation" measured-compound="ipratropium bromide" parameterization="apparent" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Lee YH, Kwon GY, Park DY, Bang JY, Jang DM, Lee SH et al. Efficiency of a New Me
 
 ### Reviewer guidance
 
-**The metabolic clearance parameter for ipratropium bromide was incorrectly classified as an apparent metabolite clearance rather than a total clearance.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit min/L ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The parameter labeled metabolic clearance has a unit of L/min, which conflicts with the dimension of the structural parameter assigned to it. The second reader disagreed on the parameter identification, suggesting a different ontology code for the clearance value. Additionally, the record was built from the abstract alone, so summary statistics stood in for a fitted model. Extracted — ipratropium bromide: AUC/dose 0.1 min/L, V/F 1.34e+03 L, CLm/F 6.78 L/min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ipratropium bromide: AUC/dose 0.1 min/L, V/F 1.34e+03 L, CLm/F 6.78 L/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[metabolic clearance].parameter_id`: this record has Q351, the second reading Q22. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

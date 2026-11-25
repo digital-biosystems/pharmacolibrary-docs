@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Permethrin metabolites m-phenoxybenzyl alcohol and m-phenoxybenzoic acid are orphan compartments lacking metabolic rate constants.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="permethrin" model-id="Permethrin_Anadn1991_reference" status="rejected" stale="false" population="male Sprague-Dawley rats" measured-compound="permethrin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -52,13 +52,13 @@ Anadón A, Martinez-Larrañaga MR, Diaz MJ, Bringas P. Toxicokinetics of permeth
 
 ### Reviewer guidance
 
-**Permethrin metabolites m-phenoxybenzyl alcohol and m-phenoxybenzoic acid are orphan compartments lacking metabolic rate constants.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines metabolism links from permethrin to both metabolites but assigns an unknown value to the link parameter. Because these metabolites have zero compartments and no defined formation rate, they are structurally unreachable from the dose. Additionally, the record was derived from the abstract alone, so summary statistics like the 8.67 hour terminal half-life stand in for a fitted model. Extracted — permethrin: t1/2β 8.67 hr, MRT 11.2 hr, CL 0.058 liter/hr, tmax 3.52 hr, Fab 60.7 %, t1/2z 23.1 hr, tlag 18.5 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — permethrin: t1/2β 8.67 hr, MRT 11.2 hr, CL 0.058 liter/hr, tmax 3.52 hr, Fab 60.7 %, t1/2z 23.1 hr, tlag 18.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has permethrin, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -175,4 +175,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpermethrin%5D%20Permethrin_Anadn1991_reference&body=Drug%3A%20permethrin%0ARecord%3A%20Permethrin_Anadn1991_reference%0APaper%3A%20Anad%C3%B3n_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_permethrin/Permethrin_Anadn1991_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 11:29 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:02 UTC</sub>

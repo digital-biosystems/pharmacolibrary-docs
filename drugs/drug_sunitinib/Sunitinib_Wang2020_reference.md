@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;sunitinib&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/&quot;},{&quot;label&quot;:&quot;Wang_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sunitinib_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sunitinib_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sunitinib_Naeem2024_reference&quot;,&quot;label&quot;:&quot;Naeem_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Naeem2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sunitinib_Wang2020_reference&quot;,&quot;label&quot;:&quot;Wang_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Wang2020_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sunitinib_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sunitinib/Sunitinib_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The sunitinib model was rejected because it lacked a metabolic pathway, omitted the peripheral compartment parameter, and incorrectly defined the output variable.
+> T3_output_variable; t3_param_coverage (+2 more).
 
 <div class="pk-model-meta" hidden drug="sunitinib" model-id="Sunitinib_Wang2020_reference" status="rejected" stale="false" population="pediatric patients with solid tumors" measured-compound="sunitinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -45,7 +45,7 @@ Wang E, DuBois SG, Wetmore C, Khosravan R. Population pharmacokinetics-pharmacod
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.176). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,11 +55,13 @@ Wang E, DuBois SG, Wetmore C, Khosravan R. Population pharmacokinetics-pharmacod
 
 ### Reviewer guidance
 
-**The sunitinib model was rejected because it lacked a metabolic pathway, omitted the peripheral compartment parameter, and incorrectly defined the output variable.**
+**T3_output_variable; t3_param_coverage (+2 more).**
 
-The structure defines metabolite SU012662, yet the model builder set Fm=1, effectively ignoring the metabolic link. The parameter coverage check found that V2/F was neither emitted nor defaulted, missing one of the six expected parameters. The output variable was specified as the parent compound instead of the required metabolite compartment, and the model structure did not match the parent-metabolite topology. Extracted — sunitinib: CL/F 24.1 L/h, V1/F 1.07e+03 L, kabs 0.38 1/h, tlag 0.64 h, V2/F 63.8 L, Q/F 0.28 L/h, allometric_exponent 0.56.
+Extracted — sunitinib: CL/F 24.1 L/h, V1/F 1.07e+03 L, kabs 0.38 1/h, tlag 0.64 h, V2/F 63.8 L, Q/F 0.28 L/h, allometric_exponent 0.56.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has sunitinib → su012662 (metabolism), the second reading none; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,6 +124,40 @@ The structure defines metabolite SU012662, yet the model builder set Fm=1, effec
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.176 (3/17 fields) | 14 |
+
+<details><summary>14 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['sunitinib', 'su012662', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[bsa on cl/f]` | 0.56 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f, l/hc]` | 24.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f, l/hc]` |  | 10.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.38 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` |  | 0.28 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` | 0.28 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f]` |  | 17.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.64 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` |  | 0.46 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f, lc]` | 1070 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vc/f, lc]` |  | 1030 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp/f]` | 63.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vp/f]` |  | 122 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -143,16 +179,16 @@ The structure defines metabolite SU012662, yet the model builder set Fm=1, effec
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | fail | Metabolite_C (measured=sunitinib) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered | neither emitted nor in defaulted[]: ['V2/F'] |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
-| X1_cross_check | skipped |  |  | no second reading of this record |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | fail | Metabolite_C (measured=sunitinib) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.176 (3 of 17 compared fields agree, 13 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.176 | cross-check contradicted by a second reader: verdict disputed; agreement 0.176 (3 of 17 compared fields agree, 13 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

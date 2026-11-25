@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zefirov_2019_MTT](drugs/drug_podophyllotoxin/pd_Zefirov_2019_MTT.md) | cytotoxicity (MTT test) biomarker turnover ← podophyllotoxin analogue 2 | — | Zefirov NA et al., [Podophyllotoxin analogue with bicyclo[…, Biomeditsinskaia khimiia (2019) | [10.18097/PBMC20196502086](https://doi.org/10.18097/PBMC20196502086) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zefirov_2019_MTT](drugs/drug_podophyllotoxin/pd_Zefirov_2019_MTT.md) | cytotoxicity (MTT test) biomarker turnover ← podophyllotoxin analogue 2 | — | Zefirov NA et al., [Podophyllotoxin analogue with bicyclo[…, Biomeditsinskaia khimiia (2019) | [10.18097/PBMC20196502086](https://doi.org/10.18097/PBMC20196502086) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Hour_2000_EC50](drugs/drug_podophyllotoxin/pd_Hour_2000_EC50.md) | cytotoxicity ← podophyllotoxin · inhibition effect | — | Hour MJ et al., 6-Alkylamino- and 2,3-dihydro-3'-methox…, Journal of medicinal chemis… (2000) | [10.1021/jm000151c](https://doi.org/10.1021/jm000151c) |
 
 <details class="legend">

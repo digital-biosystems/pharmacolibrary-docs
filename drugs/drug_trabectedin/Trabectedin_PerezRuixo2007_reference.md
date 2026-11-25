@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;trabectedin&quot;,&quot;href&quot;:&quot;drugs/drug_trabectedin/&quot;},{&quot;label&quot;:&quot;Perez-Ruixo_2007 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Trabectedin_Poggesi2019_reference&quot;,&quot;label&quot;:&quot;Poggesi_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_trabectedin/Trabectedin_Poggesi2019_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -30,12 +31,12 @@ Perez-Ruixo JJ, Zannikos P, Hirankarn S, Stuyckens K, Ludwig EA, Soto-Matos A et
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| trabectedin elimination half-life | t1/2z | 180 | hours |
+| mean (SD) trabectedin elimination half-life | t1/2z | 180 | hours |
 | Systemic clearance | CL | 31.5 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625), qwen3.8-27b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,7 +58,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| trabectedin elimination half-life | `Q57` · t1/2z | 180 | hours | 6.48e+05 | s | h | llm (0.6) | Perez-Ruixo_2007:abstract |
+| mean (SD) trabectedin elimination half-life | `Q57` · t1/2z | 180 | hours | 6.48e+05 | s | h | llm (0.6) | Perez-Ruixo_2007:abstract |
 | Systemic clearance | `Q22` · CL | 31.5 | L/h | 8.75e-06 | m3/s | l/h | llm_confirmed (0.6) | Perez-Ruixo_2007:abstract |
 
 <details class="legend">
@@ -68,29 +69,30 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'concomitant dexamethasone' — extend the ontology if this is a real PK parameter (source ['Perez-Ruixo_2007:abstract'])
 - covariate category for Vss from footnote/prose kept as documentation only (['Perez-Ruixo_2007:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=trabectedin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Perez-Ruixo_2007_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Perez-Ruixo_2007_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.625 (5/8 fields) | 3 |
 | `qwen3.8-27b` | not confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[mean (sd) trabectedin elimination half-life]` | 180 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[trabectedin elimination half-life]` |  | 180 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution at steady state]` |  | 6070 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[trabectedin elimination half-life].parameter_id` | Q57 | Q60 | mismatch |
 
 </details>
@@ -146,4 +148,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrabectedin%5D%20Trabectedin_PerezRuixo2007_reference&body=Drug%3A%20trabectedin%0ARecord%3A%20Trabectedin_PerezRuixo2007_reference%0APaper%3A%20Perez-Ruixo_2007%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trabectedin/Trabectedin_PerezRuixo2007_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 14:02 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 08:03 UTC</sub>

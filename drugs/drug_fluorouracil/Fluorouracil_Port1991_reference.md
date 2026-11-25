@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected due to unit dimension mismatches in parameters Vmax, kel, and V, and an unsupported metabolic topology.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit µmol/min ([substance] / [time]) vs [mass] / [time]; Q22 unit min⁻¹ (1 / [time]) vs [length] ** 3 / [time]; Q1 unit µmol ([substance]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Port1991_reference" status="rejected" stale="false" population="patients with liver tumors" measured-compound="fluorouracil" parameterization="mechanistic" topology="manual_model_class"></div>
 
@@ -54,13 +54,13 @@ Port RE, Bachert P, Semmler W. Kinetic modeling of in vivo--nuclear magnetic res
 
 ### Reviewer guidance
 
-**The record was rejected due to unit dimension mismatches in parameters Vmax, kel, and V, and an unsupported metabolic topology.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit µmol/min ([substance] / [time]) vs [mass] / [time]; Q22 unit min⁻¹ (1 / [time]) vs [length] ** 3 / [time]; Q1 unit µmol ([substance]) vs [mass] / [length] ** 3.**
 
-The maximum metabolic rate is recorded in micromoles per minute, which conflicts with the expected mass per time unit. The elimination rate constant is in inverse minutes, conflicting with the expected volume per time dimension. The volume of distribution for the metabolites is in micromoles, conflicting with the expected volume dimension. The model structure includes a metabolite compartment not supported by the available model templates. Extracted — fluorouracil: Vss 0.22, kel 0.082 min⁻¹, Vmax 445 µmol/min, t1/2z 15 min, Km 520 µmol, kabs 0.13 1/h; FUPA and FBAL: V 0.085, CL 0.0068 min⁻¹.
+No model template covers this structure. Extracted — fluorouracil: Vss 0.22, kel 0.082 min⁻¹, Vmax 445 µmol/min, t1/2z 15 min, Km 520 µmol, kabs 0.13 1/h; FUPA and FBAL: V 0.085, CL 0.0068 min⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading 5-fluorouracil; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

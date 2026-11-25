@@ -21,7 +21,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Du_2026_DD](drugs/drug_cendakimab/pd_Du_2026_DD.md) | Dysphagia Days ← CEN · indirect response — drug inhibits the production of Dysphagia Days | — | Du S et al., Latent Variable Indirect Response Model…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70199](https://doi.org/10.1002/psp4.70199) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Du_2026_DD](drugs/drug_cendakimab/pd_Du_2026_DD.md) | Dysphagia Days ← CEN · indirect response — drug inhibits the production of Dysphagia Days | — | Du S et al., Latent Variable Indirect Response Model…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70199](https://doi.org/10.1002/psp4.70199) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

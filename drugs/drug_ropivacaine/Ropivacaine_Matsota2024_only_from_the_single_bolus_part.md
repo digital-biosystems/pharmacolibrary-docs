@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ropivacaine clearance of 0.87 L/kg/h was rejected because it is physiologically implausible for this compound.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Matsota2024_only_from_the_single_bolus_part" status="rejected" stale="false" population="adult patients undergoing open thoracotomy" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Matsota P, Karalis V, Saranteas T, Kiospe F, Markantonis SL. Ropivacaine pharmac
 
 ### Reviewer guidance
 
-**Ropivacaine clearance of 0.87 L/kg/h was rejected because it is physiologically implausible for this compound.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The review found the reported total clearance magnitude outside the acceptable physiological window, suggesting a potential unit or scale error during data extraction. A second reader also identified a structural inconsistency, noting that the provided parameters refer to bioavailability-adjusted values rather than absolute clearance and volume. This discrepancy means the extracted values do not match the standard pharmacokinetic definitions expected for an extravascular administration model. Extracted — ropivacaine: V 160 ml, CL 0.87 L/kg/h, kabs 32 h-1.
+Extracted — ropivacaine: V 160 ml, CL 0.87 L/kg/h, kabs 32 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of asince ropivacaine administration is extravascular, the vap and cl estimates actually refer to vap/f and cl/f, respectively, where f is the bioavailable fraction: this record has none, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

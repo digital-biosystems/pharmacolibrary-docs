@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Dihydroartemisinin absorption rate constant uses an unconvertible substance unit and its clearance is implausibly high.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="Pyronaridine" model-id="Pyronaridine_Kang2024_reference" status="rejected" stale="false" population="hamsters, rats, and dogs (preclinical PK for allometric scaling to humans)" measured-compound="pyronaridine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -60,13 +60,13 @@ Kang DW, Kim JH, Kim KM, Cho SJ, Choi GW, Cho HY. Inter-Species Pharmacokinetic 
 
 ### Reviewer guidance
 
-**Dihydroartemisinin absorption rate constant uses an unconvertible substance unit and its clearance is implausibly high.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The absorption rate constant for dihydroartemisinin is assigned the unit 'dihydroartemisinin', which is not a valid rate unit and cannot be converted to standard physical units. Furthermore, the total clearance of 237.25 L/h/kg for dihydroartemisinin exceeds physiological limits, indicating a scale error in the reported parameter. Extracted — pyronaridine: kabs 1.54 1/h, V/F 33 L/kg, CL/F 13.3 L/h/kg, ktr 0.2, kel 1.04 1/h; artesunate: V2/F 481 L/kg, Q/F 82.7 L/h/kg; dihydroartemisinin: V 0.16 L/kg, CL 237 L/h/kg, kabs 195 dihydroartemisinin.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — pyronaridine: kabs 1.54 1/h, V/F 33 L/kg, CL/F 13.3 L/h/kg, ktr 0.2, kel 1.04 1/h; artesunate: V2/F 481 L/kg, Q/F 82.7 L/h/kg; dihydroartemisinin: V 0.16 L/kg, CL 237 L/h/kg, kabs 195 dihydroartemisinin.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pyronaridine tetraphosphate/artesunate, the second reading pyronaridine; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The bioavailability parameter for paracetamol was not reported in the paper, so it was left without a value in this record.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Hakim2019_reference" status="needs_review" stale="false" population="severely obese adolescents and young adults" measured-compound="paracetamol" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Hakim M, Anderson BJ, Walia H, Tumin D, Michalsky MP, Syed A et al. Acetaminophe
 
 ### Reviewer guidance
 
-**The bioavailability parameter for paracetamol was not reported in the paper, so it was left without a value in this record.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The model structure includes a central and a peripheral compartment, but no bioavailability estimate is provided in the parameter list. Consequently, the model would use a placeholder value rather than a study-specific estimate for this parameter. The second reader’s note on the dose compound nomenclature is a minor discrepancy compared to this missing PK parameter. Extracted — paracetamol: V1 20.4 L.70 kg⁻¹, V2 16.8 L.70 kg⁻¹, CL 10.6 L·h⁻¹.70 kg⁻¹, Q 37.3 L·h⁻¹.70 kg⁻¹, kabs 9.76 h -1, tlag 4.2 min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — paracetamol: V1 20.4 L.70 kg⁻¹, V2 16.8 L.70 kg⁻¹, CL 10.6 L·h⁻¹.70 kg⁻¹, Q 37.3 L·h⁻¹.70 kg⁻¹, kabs 9.76 h -1, tlag 4.2 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paracetamol, the second reading acetaminophen; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

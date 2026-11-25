@@ -148,11 +148,11 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_terminal | reference | fail | 3.2 | 1.07 | 0.3343 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.5 | 1.07 | 0.3056 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.1 | 1.07 | 0.345 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 6 | 1.07 | 0.1783 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.1 | 1.07 | 0.5093 | hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.2 | 1.07 | 0.3343 | reported 3.2 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.5 | 1.07 | 0.3056 | reported 3.5 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.1 | 1.07 | 0.345 | reported 3.1 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 6 | 1.07 | 0.1783 | reported 6.0 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.1 | 1.07 | 0.5093 | reported 2.1 hr→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,7 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;lenvatinib&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/&quot;},{&quot;label&quot;:&quot;Majid_2024 \u00b7 PD VEGF&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lenvatinib_Tamai2017_base_base_model_population_mean_rse&quot;,&quot;label&quot;:&quot;Tamai_2017_base_base_model_population_mean_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/Lenvatinib_Tamai2017_base_base_model_population_mean_rse.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenvatinib_Tamai2017_final_final_model_population_mean_rse&quot;,&quot;label&quot;:&quot;Tamai_2017_final_final_model_population_mean_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/Lenvatinib_Tamai2017_final_final_model_population_mean_rse.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# VEGF — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.889). Primary extraction retained.">cross-check: disputed</span>
+# VEGF — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,7 +16,7 @@
 
 **As extracted:** Lenvatinib (concentrations from this paper's PK model) drives VEGF (in ng/L): indirect response — drug inhibits the loss of VEGF.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Lenvatinib exposure (ng*h/mL) indirectly increases serum VEGF (ng/L) by inhibiting its elimination (Kout); the VEGF Hill coefficient was fixed to 1. The shared maximum inhibitory effect (Emax) was 0.344, EC50 was 930 ng*h/mL, and the disease-progression slope was 2.93 × 10−6 1/h.
 >
@@ -34,10 +35,10 @@ Majid O et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | Baseline | `Q324` ·  | 0.370 | ng/L | llm | Majid_2024:pdv3 |
+| PD (effect) | Baseline (ng/L) | `Q324` ·  | 0.370 | ng/L | llm | Majid_2024:pdv3 |
 | PD (effect) | E max | `Q323` ·  | 0.344 |  | llm | Majid_2024:pdv3 |
-| PD (effect) | EC50 | `Q321` ·  | 930 | ng*h/mL | llm | Majid_2024:pdv3 |
-| PD (effect) | Disease progression slope | `Q340` ·  | 2.93 × 10−6 | 1/h | llm | Majid_2024:pdv3 |
+| PD (effect) | EC50 (ng*h/mL) | `Q321` ·  | 930 | ng*h/mL | llm | Majid_2024:pdv3 |
+| PD (effect) | Disease progression slope (1/h) | `Q340` ·  | 2.93 × 10−6 | 1/h | llm | Majid_2024:pdv3 |
 | variability | Baseline | `Q312` ·  | 63.2 | CV % | llm | Majid_2024:pdv3 |
 | variability | EC50 | `Q312` ·  | 91.9 | CV % | llm | Majid_2024:pdv3 |
 | variability | Disease progression slope | `Q312` ·  | 235 | CV % | llm | Majid_2024:pdv3 |
@@ -49,18 +50,57 @@ Majid O et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics
 </details>
 
 
+## Exposure-response model
+
+`Lenvatinib_Majid2024_PD_vegf` — turnover (indirect response type II), `response = E0/(1 - Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0.37 ng/L | 3.7e-10 kg/m3 |
+| Emax | 0.344 | — |
+| EC50 | 930 ng*h/mL | — |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 3.7e-10, `at_EC50` = 4.469e-10, `at_inf` = 5.64e-10
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+- `pd_binding_exposure_unit_unresolved` — 'ng*h/mL' — the x axis is in the paper's unit, not SI
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">Needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response rises, as IDR-II predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+- exposure unit not resolved to SI — the x axis is in the paper's unit
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.889 (8/9 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.625 (5/8 fields) | 3 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[Q325]` |  | 1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q321].value` | 930 | value | mismatch |
+| `gpt-oss-120b` | `parameters[Q323].value` | 0.344 | value | mismatch |
+| `gpt-oss-120b` | `parameters[Q324].value` | 0.370 | value | mismatch |
 
 </details>
 
@@ -76,19 +116,33 @@ Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verd
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lenvatinib/Lenvatinib_Majid2024_PD_vegf/Lenvatinib_Majid2024_PD_vegf_modelica.zip" download>Lenvatinib_Majid2024_PD_vegf_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lenvatinib/Lenvatinib_Majid2024_PD_vegf/Lenvatinib_Majid2024_PD_vegf_matlab.zip" download>Lenvatinib_Majid2024_PD_vegf_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lenvatinib/Lenvatinib_Majid2024_PD_vegf/Lenvatinib_Majid2024_PD_vegf_sbml.zip" download>Lenvatinib_Majid2024_PD_vegf_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lenvatinib/Lenvatinib_Majid2024_PD_vegf/Lenvatinib_Majid2024_PD_vegf_cellml.zip" download>Lenvatinib_Majid2024_PD_vegf_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Lenvatinib_Majid2024_PD_vegf`. <https://pharmacolibrary.github.io/#/drugs/drug_lenvatinib/pd_Majid_2024_VEGF>
+
+```bibtex
+@misc{pharmacolibrary_LenvatinibMajid2024PDvegf,
+  title  = {{Pharmacolibrary model Lenvatinib_Majid2024_PD_vegf}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_lenvatinib/pd_Majid_2024_VEGF},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
 
 <div class="pk-tab-end"></div>
 

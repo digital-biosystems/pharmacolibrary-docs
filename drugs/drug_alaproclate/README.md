@@ -22,10 +22,10 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">pig</span> | [Alberts_1989_electrically_evoked_3H_acetylcholine_secretion](drugs/drug_alaproclate/pd_Alberts_1989_electrically_evoked_3H_acetylcholine_secretion.md) | electrically evoked 3H-acetylcholine secretion ← alaproclate · inhibition effect | — | Alberts P et al., Effects of alaproclate, potassium chann…, Pharmacology & toxicology (1989) | [10.1111/j.1600-0773.1989.tb01121.x](https://doi.org/10.1111/j.1600-0773.1989.tb01121.x) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Svensson_1994_K_current](drugs/drug_alaproclate/pd_Svensson_1994_K_current.md) | sustained voltage-dependent K+ current (hippocampal neurons) ← alaproclate · inhibition effect | — | Svensson BE et al., Alaproclate effects on voltage-dependen…, Neuropharmacology (1994) | [10.1016/0028-3908(94)90119-8](https://doi.org/10.1016/0028-3908(94)90119-8) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Svensson_1994_K_current_2](drugs/drug_alaproclate/pd_Svensson_1994_K_current_2.md) | sustained voltage-dependent K+ current (Kv1.2-expressing fibroblast cells) ← alaproclate · inhibition effect | — | Svensson BE et al., Alaproclate effects on voltage-dependen…, Neuropharmacology (1994) | [10.1016/0028-3908(94)90119-8](https://doi.org/10.1016/0028-3908(94)90119-8) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Svensson_1994_NMDA_current](drugs/drug_alaproclate/pd_Svensson_1994_NMDA_current.md) | NMDA receptor current (hippocampal neurons) ← alaproclate · inhibition effect | — | Svensson BE et al., Alaproclate effects on voltage-dependen…, Neuropharmacology (1994) | [10.1016/0028-3908(94)90119-8](https://doi.org/10.1016/0028-3908(94)90119-8) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">pig</span> | [Alberts_1989_3H_ACh](drugs/drug_alaproclate/pd_Alberts_1989_3H_ACh.md) | 3H-acetylcholine secretion (electrically evoked) ← alaproclate · direct Emax (saturable) effect | — | Alberts P et al., Effects of alaproclate, potassium chann…, Pharmacology & toxicology (1989) | [10.1111/j.1600-0773.1989.tb01121.x](https://doi.org/10.1111/j.1600-0773.1989.tb01121.x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Svensson_1994_Kv1_2_current](drugs/drug_alaproclate/pd_Svensson_1994_Kv1_2_current.md) | sustained voltage-dependent K+ current ← alaproclate · direct sigmoid Emax (Hill) effect | — | Svensson BE et al., Alaproclate effects on voltage-dependen…, Neuropharmacology (1994) | [10.1016/0028-3908(94)90119-8](https://doi.org/10.1016/0028-3908(94)90119-8) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Svensson_1994_NMDA_current](drugs/drug_alaproclate/pd_Svensson_1994_NMDA_current.md) | NMDA receptor currents ← alaproclate · direct sigmoid Emax (Hill) effect | — | Svensson BE et al., Alaproclate effects on voltage-dependen…, Neuropharmacology (1994) | [10.1016/0028-3908(94)90119-8](https://doi.org/10.1016/0028-3908(94)90119-8) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wilkinson_1994_NMDA_induced_changes_in_membrane_potential_and_intracellular_free_Ca](drugs/drug_alaproclate/pd_Wilkinson_1994_NMDA_induced_changes_in_membrane_potential_an.md) | NMDA-induced changes in membrane potential and intracellular free Ca++ ← alaproclate · direct Emax (saturable) effect | — | Wilkinson A et al., Alaproclate acts as a potent, reversibl…, The Journal of pharmacology… (1994) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,38 +39,36 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:37 | 0:13 | 0/0/0 | 1/3/0 | 0/0/0 | 12,202/1,727 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 17:25 | 0:15 | 0/0/0 | 1/3/0 | 0/0/0 | 8,191/1,927 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Teunissen_1984.pdf` | Teunissen MW et al., Influence of alaproclate on antipyrine…, European journal of clinica… (1984) | popPK | 5 | [10.1007/BF00549593](https://doi.org/10.1007/BF00549593) | [6519152](https://pubmed.ncbi.nlm.nih.gov/6519152) | Alaproclate is the subject drug and its elimination half-life (3.0–3.5 h) is reported, but no CL/V or compartmental model values are given; the quantitative clearances reported are for antipyrine, not alaproclate. |
-
-<sub>queue written 2026-10-06 21:37 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Aberg-Wistedt_1985 | irrelevant | 0 | 0 | The study is a clinical/biochemical comparison of antidepressant effects and CSF metabolites, not a pharmacokinetic study reporting disposition parameters for alaproclate. |
+| popPK | Aberg-Wistedt_1985 | irrelevant | 0 | 0 | The study is a clinical trial assessing biochemical and therapeutic effects (CSF metabolites, platelet uptake) rather than reporting pharmacokinetic disposition parameters like clearance or volume. |
 | PD | Aberg-Wistedt_1985 | not_relevant | 1 | 0 | The study reports qualitative clinical and biochemical outcomes (MADRS scores, CSF metabolites) at a fixed dose without providing concentration-effect data, PK parameters, or numeric PD model parameters. |
-| popPK | Alberts_1989 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of alaproclate's effect on neurotransmitter release, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Graffner_1984 | irrelevant | 2 | 0 | The paper focuses on in vitro-in vivo correlations (dissolution vs. bioavailability) and does not report specific quantitative PK parameters like clearance, volume, or half-life for alaproclate. |
+| PGx | Aberg-Wistedt_1985 | not_relevant | 0 | 0 | The paper compares two drugs in a clinical trial and does not report any pharmacogenomic associations between gene variants and PK/PD parameters. |
+| popPK | Alberts_1989 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of alaproclate's effect on neurotransmitter release, not a pharmacokinetic study. |
+| PGx | Alberts_1989 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of alaproclate in an isolated guinea-pig tissue preparation and does not report any gene variants or pharmacogenomic effects. |
+| popPK | Graffner_1984 | relevant | 5 | 2 | Study analyzes alaproclate pharmacokinetics in humans but primarily reports qualitative correlations between dissolution and bioavailability without providing specific numeric PK parameters like clearance or volume in the text. |
 | PD | Graffner_1984 | not_relevant | 0 | 0 | The paper describes an in vitro-in vivo correlation (IVIVC) for dissolution and bioavailability (PK), not a pharmacodynamic (exposure-response or dose-effect) relationship. |
-| popPK | Ross_1995 | irrelevant | 0 | 0 | In vitro receptor binding study in rat tissue; alaproclate is only used as a binding-site ligand, with no PK disposition parameters. |
+| PGx | Graffner_1984 | not_relevant | 0 | 0 | The paper reports on the correlation between in vitro dissolution and bioavailability of alaproclate, but does not report on the effects of any gene variants, genotypes, or phenotypes (i.e., pharmacogenomics). |
+| popPK | Ross_1995 | irrelevant | 0 | 0 | The paper is a receptor binding study (Bmax/KD) for remoxipride, not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for alaproclate. |
 | PD | Ross_1995 | not_relevant | 0 | 0 | The paper describes in vitro receptor binding assays (KD, Bmax) and ligand inhibition profiles, not pharmacodynamic exposure-response or dose-response relationships in a biological system. |
-| popPK | Svensson_1994 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on ion channels and receptors, not a pharmacokinetic study reporting disposition parameters. |
-| popPK | Wilkinson_1994 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of alaproclate's pharmacological action on NMDA receptors, reporting no pharmacokinetic parameters. |
+| PGx | Ross_1995 | not_relevant | 0 | 0 | The paper studies receptor binding properties and does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Svensson_1994 | irrelevant | 0 | 0 | The paper describes in-vitro electrophysiological effects (IC50, rate constants) on ion channels, not pharmacokinetic disposition parameters. |
+| PGx | Svensson_1994 | not_relevant | 0 | 0 | The paper investigates the mechanism of action (binding to K+ channels and NMDA receptors) of alaproclate in vitro and does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Teunissen_1984 | relevant | 7 | 3 | Reports PK parameters for alaproclate (half-life, Tmax) but lacks volume of distribution or clearance, and does not provide the specific concentration-time data required to fit a population model. |
+| PGx | Teunissen_1984 | not_relevant | 0 | 10 | The study investigates the effect of alaproclate on antipyrine metabolism (drug-drug interaction) in healthy volunteers, not the effect of a gene variant on alaproclate's PK/PD. |
+| popPK | Wilkinson_1994 | irrelevant | 0 | 0 | The study is mechanistic (in vitro electrophysiology) and reports no pharmacokinetic disposition parameters such as clearance or volume. |
+| PGx | Wilkinson_1994 | not_relevant | 0 | 0 | The paper describes the pharmacological mechanism of alaproclate in vitro and does not report any genetic variants or genotypes affecting its pharmacokinetics or pharmacodynamics. |
 
 
 </details>

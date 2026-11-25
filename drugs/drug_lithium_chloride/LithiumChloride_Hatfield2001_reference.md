@@ -5,11 +5,11 @@
 
 # lithium chloride — `LithiumChloride_Hatfield2001_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The record was rejected because the reported mean serum concentration unit conflicted with the structural parameter's dimensional requirements.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="lithium chloride" model-id="LithiumChloride_Hatfield2001_reference" status="rejected" stale="false" population="healthy Standardbred horses" measured-compound="lithium" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lithium chloride" model-id="LithiumChloride_Hatfield2001_reference" status="needs_review" stale="false" population="healthy horses" measured-compound="lithium_chloride" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Hatfield CL, McDonell WN, Lemke KA, Black WD. Pharmacokinetics and toxic effects of lithium chloride after intravenous adminstration in conscious horses. American journal of veterinary research 62(9):1387–1392 (2001).
@@ -17,9 +17,7 @@ Hatfield CL, McDonell WN, Lemke KA, Black WD. Pharmacokinetics and toxic effects
 
 ## Population and dosing
 
-**Population:** healthy Standardbred horses · condition healthy · age group adult · n = 6.
-
-**Dosed compound ≠ measured compound:** dosed lithium chloride, measured lithium.
+**Population:** healthy horses · condition healthy · age group adult.
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -27,20 +25,19 @@ Hatfield CL, McDonell WN, Lemke KA, Black WD. Pharmacokinetics and toxic effects
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | Half-life | t1/2z | 43.5 | hours |
-| mean serum lithium concentration after 24 hours | Ct | 0.13 | mmol/L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,20 +47,19 @@ Hatfield CL, McDonell WN, Lemke KA, Black WD. Pharmacokinetics and toxic effects
 
 ### Reviewer guidance
 
-**The record was rejected because the reported mean serum concentration unit conflicted with the structural parameter's dimensional requirements.**
+**Only clearance was extracted — no volume.**
 
-The dimension mismatch check failed on the mean serum concentration parameter, which used a molar unit while the model expected a mass-concentration dimension. The record was built from the abstract only, so summary statistics stood in for fitted model parameters. A second reader disagreed with the extracted dose compound and analyte, marking them as unknown, though this did not alter the dimensional failure. Extracted — lithium chloride: t1/2z 43.5 hours, Ct 0.13 mmol/L.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — lithium chloride: t1/2z 43.5 hours.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lithium chloride, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lithium_chloride, the second reading lithium chloride; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Half-life | `Q57` · t1/2z | 43.5 | hours | 1.566e+05 | s | h | llm (0.6) | Hatfield_2001:abstract |
-| mean serum lithium concentration after 24 hours | `Q75` · Ct | 0.13 | mmol/L |  |  | mM/l | llm (0.6) | Hatfield_2001:abstract |
+| Half-life | `Q57` · t1/2z | 43.5 | hours | 1.566e+05 | s | h | half_life_rule (0.95) | Hatfield_2001:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,38 +69,31 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Half-life (range)' — extend the ontology if this is a real PK parameter (source ['Hatfield_2001:abstract'])
-- unit_dimension_mismatch: 'mean serum lithium concentration after 24 hours' → Q75 (unit '[substance] / [length] ** 3' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped unlinked row (NIL): 'mean serum lithium concentration (range)' — extend the ontology if this is a real PK parameter (source ['Hatfield_2001:abstract'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lithium
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
-- molar mass: no plausible PubChem entry for 'lithium' ('lithium') — left in mass units
-- molar mass: none found for 'lithium' — its concentrations stay mass-only
+- dropped unlinked row (NIL): 'mean serum lithium concentration' — extend the ontology if this is a real PK parameter (source ['Hatfield_2001:abstract'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lithium_chloride
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Hatfield_2001_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Hatfield_2001_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[half-life]` | 43.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[half-life]` |  | 43.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean serum lithium concentration after 24 hours]` | 0.13 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-life]` | 43.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[mean serum lithium concentration]` |  | 0.13 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | lithium chloride | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | lithium | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | lithium_chloride | lithium chloride | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | lithium_chloride | lithium chloride | mismatch |
 
 </details>
 
@@ -118,11 +107,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Hatfield_2001:abstract'] |
-| C5_dimension_Q75 | fail | [mass] / [length] ** 3 | mmol/L ([substance] / [length] ** 3) | ['Hatfield_2001:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -135,9 +123,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -147,4 +145,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blithium_chloride%5D%20LithiumChloride_Hatfield2001_reference&body=Drug%3A%20lithium_chloride%0ARecord%3A%20LithiumChloride_Hatfield2001_reference%0APaper%3A%20Hatfield_2001%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lithium_chloride/LithiumChloride_Hatfield2001_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 22:46 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:05 UTC</sub>

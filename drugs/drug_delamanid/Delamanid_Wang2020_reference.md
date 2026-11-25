@@ -48,7 +48,7 @@ Wang X, Mallikaarjun S, Gibiansky E. Population Pharmacokinetic Analysis of Dela
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.211). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -61,6 +61,8 @@ Wang X, Mallikaarjun S, Gibiansky E. Population Pharmacokinetic Analysis of Dela
 **T1/2ka  has no unit.**
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — delamanid: CL/F 1 liters/h, V2/F 2 liters, Q/F 3 liters/h, V3/F 4 liters, t1/2ka 5, tlag 6 h, V 13 L, V3 14 L, … (+2).
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of c max: this record has none, the second reading 333; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -157,6 +159,41 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 - LLM selected parameter table(s) 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.211 (4/19 fields) | 15 |
+
+<details><summary>15 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[c max]` |  | 333 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl albͻ3.4]` | 17 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | ['linear_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl/f].value` | 1 | 23.7 | mismatch |
+| `gpt-oss-120b` | `parameters[f 1,neasian]` | 15 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f_1_pm]` | 11 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a,am]` | 5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag am]` | 6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q/f].value` | 3 | 71.9 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q49_pm]` | 9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_tlag_pm]` | 10 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 2 , v 3,wt]` | 13 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 2 /f]` | 2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 3 /f]` | 4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v 3,sex]` | 14 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

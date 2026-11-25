@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for pediatric perampanel was held back because the second reader disagreed on the clearance and volume of distribution values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="perampanel" model-id="Perampanel_Yu2025_reference" status="needs_review" stale="false" population="pediatric patients with epilepsy" measured-compound="perampanel" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Yu L, Mao F, Chen S, Liu J, Xiao J, Chen M et al. Development and Validation of 
 
 ### Reviewer guidance
 
-**The record for pediatric perampanel was held back because the second reader disagreed on the clearance and volume of distribution values.**
+**cross_check_disputed; x1_cross_check.**
 
-The initial record listed an apparent oral clearance (CL/F) of 0.177 L/h and a volume of distribution (V) of 227 L. A second reader identified these values as incorrect, citing 0.234 L/h for CL/F and 362 L for V. Consequently, the agreement for the cross-check was calculated as 0.714, with zero out of one readers agreeing on the record's validity. Extracted — perampanel: CL/F 0.177 L/h, V 227 L, kabs 3.37 1/h.
+Extracted — perampanel: CL/F 0.177 L/h, V 227 L, kabs 3.37 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].value`: this record has 0.177, the second reading 0.234; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.714 (5 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | cross-check contradicted by a second reader: verdict disputed; agreement 0.714 (5 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -39,8 +39,8 @@ Peficitinib is a JAK inhibitor used to treat rheumatoid arthritis. No specific a
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Toyoshima_2021_2_DAS28_CRP](drugs/drug_peficitinib/pd_Toyoshima_2021_2_DAS28_CRP.md) | DAS28-CRP ← peficitinib · indirect response — drug inhibits the production of DAS28-CRP | — | Toyoshima J et al., Exposure-response modeling of peficitin…, Pharmacology research & per… (2021) | [10.1002/prp2.744](https://doi.org/10.1002/prp2.744) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Toyoshima_2021_2_ACR20](drugs/drug_peficitinib/pd_Toyoshima_2021_2_ACR20.md) | ACR20 response rate ← peficitinib · categorical (graded) response model | — | Toyoshima J et al., Exposure-response modeling of peficitin…, Pharmacology research & per… (2021) | [10.1002/prp2.744](https://doi.org/10.1002/prp2.744) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Toyoshima_2021_2_DAS28_CRP](drugs/drug_peficitinib/pd_Toyoshima_2021_2_DAS28_CRP.md) | DAS28-CRP ← peficitinib · indirect response — drug inhibits the production of DAS28-CRP | — | Toyoshima J et al., Exposure-response modeling of peficitin…, Pharmacology research & per… (2021) | [10.1002/prp2.744](https://doi.org/10.1002/prp2.744) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

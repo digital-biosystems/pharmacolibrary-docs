@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Alogliptin AUCt lacks a unit, making the value 1699 unusable, while V/F of 543.422 L exceeds CL/F of 20.6512 L/hr by a factor of 1.1822.
+> AUCt has no unit; c2_base_Q44 failed (ratio 1.1822).
 
 <div class="pk-model-meta" hidden drug="alogliptin" model-id="Alogliptin_Dudkowski2017_alo_25_mg" status="needs_review" stale="false" population="children, adolescents, and adults with type 2 diabetes mellitus" measured-compound="alogliptin" parameterization="apparent" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Dudkowski C, Tsai M, Liu J, Zhao Z, Schmidt E, Xie J. The pharmacokinetics and p
 
 ### Reviewer guidance
 
-**Alogliptin AUCt lacks a unit, making the value 1699 unusable, while V/F of 543.422 L exceeds CL/F of 20.6512 L/hr by a factor of 1.1822.**
+**AUCt has no unit; c2_base_Q44 failed (ratio 1.1822).**
 
-The record lists AUCt as 1699 but omits the unit, preventing conversion to standard quantities. The apparent volume of distribution (543.422 L) is disproportionately large relative to the oral clearance (20.6512 L/hr). A second reader disagreed on whether alogliptin was the correct primary analyte and dose compound, though the pharmacokinetic values for alogliptin were consistently extracted. Extracted — alogliptin: AUCt 1.7e+03 %·hr, Cmax 101 ng/mL, AUC∞ 1.22e+03 ng·hr./mL, CL/F 20.7 L/hr, V/F 543 L, t1/2z 18.1 hr, CLR 14.5 L/hr, fe 59.2, … (+1).
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUCt, Cmax and AUC∞), so that value has no SI equivalent. Extracted — alogliptin: AUCt 1.7e+03 %·hr, Cmax 101 ng/mL, AUC∞ 1.22e+03 ng·hr./mL, CL/F 20.7 L/hr, V/F 543 L, t1/2z 18.1 hr, CLR 14.5 L/hr, fe 59.2, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alogliptin, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

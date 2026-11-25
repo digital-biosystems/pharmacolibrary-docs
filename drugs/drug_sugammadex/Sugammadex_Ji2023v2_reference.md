@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;sugammadex&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/&quot;},{&quot;label&quot;:&quot;Ji_2023_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sugammadex_Hodge2026_reference&quot;,&quot;label&quot;:&quot;Hodge_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Hodge2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sugammadex_Ji2023_reference&quot;,&quot;label&quot;:&quot;Ji_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Ji2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sugammadex_Ji2023v2_reference&quot;,&quot;label&quot;:&quot;Ji_2023_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Ji2023v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sugammadex_Ji2023_sugammadex_2_mg_kg_moderate_blockade&quot;,&quot;label&quot;:&quot;Ji_2023_sugammadex_2_mg_kg_moderate_blockade&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Ji2023_sugammadex_2_mg_kg_moderate_blockade.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sugammadex_Ji2023v2_reference&quot;,&quot;label&quot;:&quot;Ji_2023_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sugammadex/Sugammadex_Ji2023v2_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sugammadex clearance and volume values were not independently confirmed by a second reader due to zero agreement on extracted fields.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="sugammadex" model-id="Sugammadex_Ji2023v2_reference" status="needs_review" stale="false" population="Korean children aged 2-17 years undergoing brain or spine surgery" measured-compound="sugammadex" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Ji SH, Huh KY, Oh J, Jeong HJ, Jang YE, Kim EH et al. Conventional reversal of r
 
 ### Reviewer guidance
 
-**Sugammadex clearance and volume values were not independently confirmed by a second reader due to zero agreement on extracted fields.**
+**cross_check_disputed; x1_cross_check.**
 
-The cross-check failed with an agreement ratio of 0.167, which is below the required threshold of 0.5. One reader could not confirm any of the values present in this record. Additionally, the readers disagreed on several other parameters, with the second reader providing values for fields that were null in this record, and vice versa. Extracted — sugammadex: CL 0.07 L/min, V 8.8 L.
+Extracted — sugammadex: CL 0.07 L/min, V 8.8 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q189: this record has none, the second reading 16; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -125,7 +125,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check agreement 0.167 is below 0.5: verdict partial, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.167 (1 of 6 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check agreement 0.167 is below 0.5: verdict partial; agreement 0.167 (1 of 6 compared fields agree, 5 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

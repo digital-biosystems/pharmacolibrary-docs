@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The record was rejected because the source paper concerns a different drug and does not mention furosemide in its title or abstract.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="furosemide" model-id="Furosemide_Yata2026_reference" status="rejected" stale="false" population="" measured-compound="furosemide" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Yata M, DeFrancesco TC, Bonagura JD, Papich MG. Population Pharmacokinetics of S
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper concerns a different drug and does not mention furosemide in its title or abstract.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The identity check failed as the paper subject is identified as another drug, not furosemide. Although parameters like CL/F (0.97 L/kg/h) were extracted, the model builder assumed F=1 and Fm=1. The lag time Tlag was not estimated and defaulted to a placeholder value. Extracted — furosemide: CL/F 0.97 L/kg/h, V/F 4.03 L/kg, kabs 0.62 /h.
+Extracted — furosemide: CL/F 0.97 L/kg/h, V/F 4.03 L/kg, kabs 0.62 /h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -125,7 +125,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (11 of 11 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

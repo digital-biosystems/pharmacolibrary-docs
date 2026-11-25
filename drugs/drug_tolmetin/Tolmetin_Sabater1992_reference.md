@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Tolmetin record lacks distribution volume and clearance parameters, identifying it as an exposure/outcome paper rather than a compartmental model.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q91 unit % (dimensionless) vs [mass].
 
 <div class="pk-model-meta" hidden drug="tolmetin" model-id="Tolmetin_Sabater1992_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="tolmetin" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Sabater J, Domenéch J, Obach R. Pharmacokinetic study of tolmetin in the rat. A
 
 ### Reviewer guidance
 
-**Tolmetin record lacks distribution volume and clearance parameters, identifying it as an exposure/outcome paper rather than a compartmental model.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q91 unit % (dimensionless) vs [mass].**
 
-The abstract reports only bioavailability (96.94%) and urine excretion (6.12%), omitting essential volume and clearance terms for compartmental analysis. The second reader also disagreed on the specific identifier for the excretion parameter. Extracted — tolmetin: Fab 96.9 %, Ae 6.12 %.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tolmetin: Fab 96.9 %, Ae 6.12 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[excretion of the unchanged drug].parameter_id`: this record has Q91, the second reading Q44. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

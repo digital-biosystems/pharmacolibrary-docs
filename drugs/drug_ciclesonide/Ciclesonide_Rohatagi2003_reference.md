@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R01A&quot;,&quot;href&quot;:&quot;atc/R01A.md&quot;},{&quot;label&quot;:&quot;ciclesonide&quot;,&quot;href&quot;:&quot;drugs/drug_ciclesonide/&quot;},{&quot;label&quot;:&quot;Rohatagi_2003 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclesonide_Xu2010_reference&quot;,&quot;label&quot;:&quot;Xu_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclesonide/Ciclesonide_Xu2010_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ciclesonide_Rohatagi2003_reference&quot;,&quot;label&quot;:&quot;Rohatagi_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ciclesonide/Ciclesonide_Rohatagi2003_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # ciclesonide — `Ciclesonide_Rohatagi2003_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was quarantined because ciclesonide's clearance, volume of distribution, absorption rate constant, and lag time were missing from the abstract-only record.
+> Ka use library defaults, not estimates from this paper; t3_output_variable (+3 more).
 
-<div class="pk-model-meta" hidden drug="ciclesonide" model-id="Ciclesonide_Rohatagi2003_reference" status="model_quarantined" stale="false" population="healthy subjects and asthmatic patients" measured-compound="ciclesonide-active principle (CIC-AP)" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="ciclesonide" model-id="Ciclesonide_Rohatagi2003_reference" status="rejected" stale="false" population="healthy and asthmatic patients" measured-compound="ciclesonide-active principle (CIC-AP)" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Rohatagi S, Arya V, Zech K, Nave R, Hochhaus G, Jensen BK et al. Population pharmacokinetics and pharmacodynamics of ciclesonide. Journal of clinical pharmacology 43(4):365–378 (2003).
@@ -17,7 +17,7 @@ Rohatagi S, Arya V, Zech K, Nave R, Hochhaus G, Jensen BK et al. Population phar
 
 ## Population and dosing
 
-**Population:** healthy subjects and asthmatic patients · condition healthy and asthma · age group adult · n = 151.
+**Population:** healthy and asthmatic patients · condition healthy/asthma · age group adult · n = 151.
 
 **Dosed compound ≠ measured compound:** dosed ciclesonide, measured ciclesonide-active principle (CIC-AP).
 
@@ -26,19 +26,21 @@ Rohatagi S, Arya V, Zech K, Nave R, Hochhaus G, Jensen BK et al. Population phar
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CLm/F, Vm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 2 extracted.  
-**Availability:** Model withheld: a core parameter is unspecified.
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_ciclesonide/Ciclesonide_Rohatagi2003_reference/Ciclesonide_Rohatagi2003_reference.svg" alt="Ciclesonide_Rohatagi2003_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| clearance | CLm/F | 396 | L/h |
-| volume of distribution | Vm/F | 1190 | L |
+| Population estimates of the PK parameters of clearance | CLm/F | 396 | L/h |
+| Population estimates of the PK parameters of volume of distribution | Vm/F | 1190 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,20 +50,20 @@ Rohatagi S, Arya V, Zech K, Nave R, Hochhaus G, Jensen BK et al. Population phar
 
 ### Reviewer guidance
 
-**The model was quarantined because ciclesonide's clearance, volume of distribution, absorption rate constant, and lag time were missing from the abstract-only record.**
+**Ka use library defaults, not estimates from this paper; t3_output_variable (+3 more).**
 
-The record relied on abstract-only statistics, leaving key kinetic parameters as library placeholders rather than fitted values. A second reader disputed the extraction, disagreeing on the metabolite link and reporting no values for the apparent parameters. Additionally, the model structure was incorrect for a parent-metabolite system, and the builder assumed first-order absorption without source support. Extracted — ciclesonide: CLm/F 396 L/h, Vm/F 1.19e+03 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is ciclesonide's own; they describe ciclesonide-active principle (CIC-AP). Extracted — ciclesonide-active principle (CIC-AP): CLm/F 396 L/h, Vm/F 1.19e+03 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has ciclesonide-active principle (CIC-AP), the second reading ciclesonide active principle (CIC-AP); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has ciclesonide-active principle (CIC-AP), the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| clearance | `Q351` · CLm/F | 396 | L/h | 0.00011 | m3/s | l/h | exact (1) | Rohatagi_2003:abstract |
-| volume of distribution | `Q367` · Vm/F | 1190 | L | 1.19 | m3 | l | exact (1) | Rohatagi_2003:abstract |
+| Population estimates of the PK parameters of clearance | `Q351` · CLm/F | 396 | L/h | 0.00011 | m3/s | l/h | llm_confirmed (0.6) | Rohatagi_2003:abstract |
+| Population estimates of the PK parameters of volume of distribution | `Q367` · Vm/F | 1190 | L | 1.19 | m3 | l | llm_confirmed (0.6) | Rohatagi_2003:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -70,18 +72,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['ka', 'Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
+
 **Interpretation flags:**
 - dropped PD-category row 'EC50 of CIC-AP' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Rohatagi_2003:abstract'])
 - metabolite ciclesonide-active principle (cic-ap): Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - metabolite ciclesonide-active principle (cic-ap): Q61→Q367 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ciclesonide-active principle (CIC-AP)
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — turnover model — not a compartmental parent–metabolite model
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=turnover; 3/3 row label(s) assigned, 2 linked by role; re-tagged ciclesonide-active principle (CIC-AP)→parent ×2
+- row roles (LLM): model_class=compartmental; 3/3 row label(s) assigned, 2 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Rohatagi_2003_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -89,7 +96,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -101,11 +108,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.links` | [['ciclesonide', 'ciclesonide-active principle (cic-ap)', 'metabolism']] | [] | mismatch |
 | `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss-120b` | `parameters[clearance]` | 396 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clearance]` |  | 396 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 1190 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[population estimates of the pk parameters of clearance]` | 396 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[population estimates of the pk parameters of volume of distribution]` | 1190 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of distribution]` |  | 1190 | only_one_extracted |
-| `gpt-oss-120b` | `screen.primary_analyte` | ciclesonide-active principle (CIC-AP) | ciclesonide active principle (CIC-AP) | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | ciclesonide-active principle (CIC-AP) | unknown | mismatch |
 
 </details>
 
@@ -134,10 +141,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | fail | Metabolite_C (measured=ciclesonide-active principle (CIC-AP)) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.125 (1 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.125 | cross-check contradicted by a second reader: verdict disputed; agreement 0.125 (1 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -149,26 +157,20 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 100 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_ciclesonide/Ciclesonide_Rohatagi2003_reference/Ciclesonide_Rohatagi2003_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_ciclesonide/Ciclesonide_Rohatagi2003_reference/Ciclesonide_Rohatagi2003_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Ciclesonide_Rohatagi2003_reference_params.json` · controls `Ciclesonide_Rohatagi2003_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bciclesonide%5D%20Ciclesonide_Rohatagi2003_reference&body=Drug%3A%20ciclesonide%0ARecord%3A%20Ciclesonide_Rohatagi2003_reference%0APaper%3A%20Rohatagi_2003%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ciclesonide/Ciclesonide_Rohatagi2003_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 12:41 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:46 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Canrenone elimination clearance was missing, forcing a placeholder value, while spironolactone parameters like Ka were also uncovered.
+> No value for canrenone's elimination clearance; t3_param_coverage (+2 more).
 
 <div class="pk-model-meta" hidden drug="canrenone" model-id="Canrenone_Lass2024_reference" status="model_quarantined" stale="false" population="infants with chronic heart failure, ascites and/or oedema" measured-compound="spironolactone" parameterization="apparent" topology="general_linear"></div>
 
@@ -53,13 +53,13 @@ Lass J, Leroux S, Kõrgvee LT, Varendi H, Kipper K, Takkis K et al. Pharmacokine
 
 ### Reviewer guidance
 
-**Canrenone elimination clearance was missing, forcing a placeholder value, while spironolactone parameters like Ka were also uncovered.**
+**No value for canrenone's elimination clearance; t3_param_coverage (+2 more).**
 
-The record lists canrenone as a metabolite of spironolactone, but no explicit value is provided for its elimination clearance. Consequently, the model builder substituted a library default for canrenone's clearance, which is unacceptable for a published model. Additionally, the absorption rate constant (Ka) of 17.5 1/h for spironolactone was not accounted for in the parameter coverage, leaving three expected parameters with only two covered. Extracted — canrenone: kabs 17.5 1/h, V/F 173 L, fm 0.14, fm 13.4; 7 alpha-thiomethylspironolactone: CL 0.98 L/h.
+The model was built, but canrenone's elimination clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — canrenone: kabs 17.5 1/h, V/F 173 L, fm 0.14, fm 13.4; 7 alpha-thiomethylspironolactone: CL 0.98 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has spironolactone, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -190,7 +190,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_shared_parameters |  | pass | 1 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.2 (4 of 20 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (4 of 20 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_t_half_beta | reference | skipped | 1.4 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 1.4 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 2.1 |  |  | no simulated metric for this quantity (single reference sim) |

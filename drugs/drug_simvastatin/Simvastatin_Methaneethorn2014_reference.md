@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Nelfinavir M8 is an unlinked metabolite with no defined source pathway from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Methaneethorn2014_reference" status="rejected" stale="false" population="healthy adults" measured-compound="simvastatin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Methaneethorn J, Kunyamee P, Jindasri W, Wattanasaovaluk W, Kraiboot A, Lohitnav
 
 ### Reviewer guidance
 
-**Nelfinavir M8 is an unlinked metabolite with no defined source pathway from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists nelfinavir M8 as a metabolite but does not identify nelfinavir as a measured compound. This creates an orphan compartment, as nelfinavir M8 has no path from the dose of simvastatin. Extracted — simvastatin: kabs 0.7 h -1, V 161 L, CL 0.25 L/hr/kg.
+Extracted — simvastatin: kabs 0.7 h -1, V 161 L, CL 0.25 L/hr/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has simvastatin → simvastatin hydroxy acid (metabolism); nelfinavir → nelfinavir m8 (metabolism), the second reading simvastatin → simvastatin hydroxy acid (metabolism); nelfinavir → m8 (metabolism). That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

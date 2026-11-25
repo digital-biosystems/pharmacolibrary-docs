@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The record was rejected because it assigns ketoprofen apparent clearance of 36.5 L/h/kg and apparent volume of distribution of 187.73 L/kg from a paper about another drug.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="ketoprofen" model-id="Ketoprofen_Dziubina2026_reference" status="rejected" stale="false" population="" measured-compound="ketoprofen" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Dziubina A, Szkatuła D, Szafarz M, Siwek A, Kowalski M, Gdula-Argasińska J. Se
 
 ### Reviewer guidance
 
-**The record was rejected because it assigns ketoprofen apparent clearance of 36.5 L/h/kg and apparent volume of distribution of 187.73 L/kg from a paper about another drug.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-Neither the paper’s title nor abstract names ketoprofen, and the relevance screen identified the paper as being about another drug. The model used defaulted absorption-rate and lag-time parameters, assumed F=1, and applied first-order depot input even though the absorption rate was not reported in the source. The second reader disputed the verdict; 0 of 1 readers agreed. Extracted — ketoprofen: CL/F 36.5 L/h/kg, V/F 188 L/kg.
+Extracted — ketoprofen: CL/F 36.5 L/h/kg, V/F 188 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 137.17, the second reading 137.17; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.625 (5 of 8 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.625 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

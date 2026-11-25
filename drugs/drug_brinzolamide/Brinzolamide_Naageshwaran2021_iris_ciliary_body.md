@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Brinzolamide’s reported clearance of 4.12 µL/min and apparent distribution volume of 673 µL were rejected as physiologically implausible, with a unit-scale extraction error implicated.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit ng/g (dimensionless) vs [mass] / [length] ** 3; Q19 unit h*ng/g ([time]) vs [mass] * [time] / [length] ** 3; Q17 unit h*ng/g ([time]) vs [mass] * [time] / [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="brinzolamide" model-id="Brinzolamide_Naageshwaran2021_iris_ciliary_body" status="rejected" stale="false" population="New Zealand White rabbits" measured-compound="brinzolamide" parameterization="apparent" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Naageshwaran V, Ranta VP, Gum G, Bhoopathy S, Urtti A, Del Amo EM. Comprehensive
 
 ### Reviewer guidance
 
-**Brinzolamide’s reported clearance of 4.12 µL/min and apparent distribution volume of 673 µL were rejected as physiologically implausible, with a unit-scale extraction error implicated.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit ng/g (dimensionless) vs [mass] / [length] ** 3; Q19 unit h*ng/g ([time]) vs [mass] * [time] / [length] ** 3; Q17 unit h*ng/g ([time]) vs [mass] * [time] / [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The reported Cmax of 1964 ng/g was flagged for a dimension mismatch, as were AUC values of 7225 and 8839 h*ng/g; their recorded units did not match the expected concentration and concentration-time dimensions. A reported unit could not be converted to SI, leaving the clearance and volume comparison vulnerable to a unit-scale error. A second reader disagreed with several reported estimates, including Cmax (11050), AUC values (17780 and 17836), and terminal half-life (3.4 h). Extracted — brinzolamide: Cmax 1.96e+03 ng/g, tmax 0.5 h, t1/2z 13 h, AUCt 7.22e+03 h*ng/g, AUC∞ 8.84e+03 h*ng/g, AUC/dose 2 h* /g, CL 4.12 µL/min, V/F 673 µL, … (+1).
+A reported unit could not be converted (Cmax, AUCt, AUC∞ and AUC/dose), so that value has no SI equivalent. Extracted — brinzolamide: Cmax 1.96e+03 ng/g, tmax 0.5 h, t1/2z 13 h, AUCt 7.22e+03 h*ng/g, AUC∞ 8.84e+03 h*ng/g, AUC/dose 2 h* /g, CL 4.12 µL/min, V/F 673 µL, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has brinzolamide, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The caffeine absorption rate constant was recorded with incorrect volume-based units, causing a dimension mismatch that rejected the record.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l min(-1) ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="caffeine" model-id="Caffeine_Csajka2005_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="caffeine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -51,13 +51,13 @@ Csajka C, Haller CA, Benowitz NL, Verotta D. Mechanistic pharmacokinetic modelli
 
 ### Reviewer guidance
 
-**The caffeine absorption rate constant was recorded with incorrect volume-based units, causing a dimension mismatch that rejected the record.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l min(-1) ([length] ** 3 / [time]) vs 1 / [time].**
 
-The record lists caffeine's absorption rate constant as 0.064 l min(-1), a unit representing volume flow rather than inverse time. This dimensional conflict prevented the model structure from validating, leading to the rejection of the parameter. Additionally, the record was built from abstract-only data, so reported summary statistics stood in for a fitted model. Extracted — caffeine: CL 0.083 l min(-1), V 38.6 l, kabs 0.064 l min(-1); ephedrine: CL 0.34 l min(-1), Frel 32 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — caffeine: CL 0.083 l min(-1), V 38.6 l, kabs 0.064 l min(-1); ephedrine: CL 0.34 l min(-1), Frel 32 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has caffeine and ephedrine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

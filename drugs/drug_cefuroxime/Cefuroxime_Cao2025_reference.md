@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record refused because the paper studies KJ103, so cefuroxime clearance is a covariate, not the fitted model parameter.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="cefuroxime" model-id="Cefuroxime_Cao2025_reference" status="rejected" stale="false" population="" measured-compound="cefuroxime" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Cao M, Katial R, Liu Y, Lu X, Gu Q, Chen C et al. Safety, efficacy, and immunoge
 
 ### Reviewer guidance
 
-**Record refused because the paper studies KJ103, so cefuroxime clearance is a covariate, not the fitted model parameter.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source paper evaluates the pharmacokinetics of KJ103, an IgG degrading enzyme, while cefuroxime is only mentioned as a prophylactic antibiotic. Consequently, the extracted clearance and volume values do not represent a fitted model for the drug. A second reader disputed the verdict, noting discrepancies in several parameter values where the record and the reader extracted different numbers or nulls. Extracted — cefuroxime: CL 0.011 L/h/kg, V 0.065 L/kg.
+Extracted — cefuroxime: CL 0.011 L/h/kg, V 0.065 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 14.426, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.286, 0 of 1 reader(s) agree | 0.286 | cross-check disputed by a second reader: verdict disputed, agreement 0.286, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.286 (4 of 14 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.286 | cross-check contradicted by a second reader: verdict disputed; agreement 0.286 (4 of 14 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

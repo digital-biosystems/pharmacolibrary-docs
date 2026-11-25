@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Triclosan’s absorption-rate constant (ka) had no reported value and was defaulted, so the record was held back.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="triclosan" model-id="Triclosan_Siddiqui1979_reference" status="needs_review" stale="false" population="sexually mature virgin Wistar rats" measured-compound="triclosan" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Siddiqui WH, Buttar HS. Pharmacokinetics of triclosan in rat after intravenous a
 
 ### Reviewer guidance
 
-**Triclosan’s absorption-rate constant (ka) had no reported value and was defaulted, so the record was held back.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Ka and Tlag were defaulted rather than estimated from the paper; ka was not reported, and first-order depot input was imposed, implying extravascular dosing. Ka uses library defaults, not estimates from this paper; these values affect the simulated profile but are unsupported by the paper. The parameterization also assumed F=1 and Fm=1, with no molar correction. Extracted — triclosan: V/F 42 L, t1/2β 8.8 hr, CLb 77.5 ml/kg/hr.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — triclosan: V/F 42 L, t1/2β 8.8 hr, CLb 77.5 ml/kg/hr.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

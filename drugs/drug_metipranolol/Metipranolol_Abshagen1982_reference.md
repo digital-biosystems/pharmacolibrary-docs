@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was quarantined because clearance and absorption rate constant for metipranolol were missing, forcing the use of library placeholder values.
+> No value for metipranolol's clearance, absorption rate constant and absorption lag time; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="metipranolol" model-id="Metipranolol_Abshagen1982_reference" status="model_quarantined" stale="false" population="normal volunteers" measured-compound="deacetyl metipranolol" parameterization="apparent" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Abshagen U, Betzien G, Kaufmann B, Endele G. Pharmacokinetics of metipranolol in
 
 ### Reviewer guidance
 
-**The model was quarantined because clearance and absorption rate constant for metipranolol were missing, forcing the use of library placeholder values.**
+**No value for metipranolol's clearance, absorption rate constant and absorption lag time; t6_deviations (+1 more).**
 
-The record was built from the abstract alone, so summary statistics stand in for a fitted model, and the second reader disputed the verdict with 0.12 agreement. The builder substituted placeholder values for the missing clearance and absorption parameters, which were not reported in the source. The apparent parameterization assumed a bioavailability of 50% and a distribution volume of 3.5 L/kg. Extracted — metipranolol: tlag 7.3 min, tmax 50 min, t1/2z 6.3 min, fe 4 % of the dose, CLm/F 1.24e+03 ml/min, CLR 149 ml/min, CLNR 1.07e+03 ml/min, V 3.5 l/kg, … (+2).
+The model was built, but metipranolol's clearance, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — metipranolol: tlag 7.3 min, tmax 50 min, t1/2z 6.3 min, fe 4 % of the dose, CLm/F 1.24e+03 ml/min, CLR 149 ml/min, CLNR 1.07e+03 ml/min, V 3.5 l/kg, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has metipranolol, the second reading metipranolol; deacetyl metipranolol; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -174,7 +174,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.12, 0 of 1 reader(s) agree | 0.12 | cross-check disputed by a second reader: verdict disputed, agreement 0.12, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.12 (3 of 25 compared fields agree, 20 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.12 | cross-check contradicted by a second reader: verdict disputed; agreement 0.12 (3 of 25 compared fields agree, 20 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

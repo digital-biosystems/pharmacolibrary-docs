@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The apparent clearance and volume of distribution are abstract-only values, with absorption rate defaulted and the steady-state volume misidentified.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="ponesimod" model-id="Ponesimod_Valenzuela2021_reference" status="needs_review" stale="false" population="patients with multiple sclerosis" measured-compound="ponesimod" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Valenzuela B, Pérez-Ruixo JJ, Leirens Q, Ouwerkerk-Mahadevan S, Poggesi I. Effe
 
 ### Reviewer guidance
 
-**The apparent clearance and volume of distribution are abstract-only values, with absorption rate defaulted and the steady-state volume misidentified.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record derives apparent clearance of 5.52 L/h and steady-state volume of 239 L solely from the paper's abstract, lacking a fitted model structure. Absorption parameters were left at library defaults because the source did not report them, and the steady-state volume was substituted for central volume. A second reader disputed the identification of the volume parameter, agreeing with the primary review in only 0.857 instances. Extracted — ponesimod: CL/F 5.52 L/h, Vss 239 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ponesimod: CL/F 5.52 L/h, Vss 239 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[moderate mean apparent volume of distribution at steady state].parameter_id`: this record has Q65, the second reading Q76. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | cross-check disputed by a second reader: verdict disputed, agreement 0.857, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.857 (6 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | cross-check contradicted by a second reader: verdict disputed; agreement 0.857 (6 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

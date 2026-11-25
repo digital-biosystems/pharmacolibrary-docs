@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Exenatide's receptor binding rate constants were rejected because their reported units were not recognized for dimensional analysis.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q329 unit 38 (dimensionless) vs [length] ** 3 / [mass] / [time]; Q330 unit 38 (dimensionless) vs 1 / [time]; Q334 unit 38 (dimensionless) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="exenatide" model-id="Exenatide_Gao2011_reference" status="rejected" stale="false" population="type 2 diabetic Goto-Kakizaki rats" measured-compound="exendin-4" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Gao W, Jusko WJ. Pharmacokinetic and pharmacodynamic modeling of exendin-4 in ty
 
 ### Reviewer guidance
 
-**Exenatide's receptor binding rate constants were rejected because their reported units were not recognized for dimensional analysis.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q329 unit 38 (dimensionless) vs [length] ** 3 / [mass] / [time]; Q330 unit 38 (dimensionless) vs 1 / [time]; Q334 unit 38 (dimensionless) vs 1 / [time].**
 
-The association, dissociation, and internalisation rate constants list a unit code that the system does not recognize, preventing conversion to standard SI units. This caused a dimension mismatch error, meaning the values could not be validated against their physical definitions. The record also notes discrepancies in clearance and absorption parameters compared to a second reader's assessment. Extracted — exenatide: V 90.5 ml/kg, kon 0.0794 38, koff 0.015 38, kint 0.00358 38, Rtot 5.17 nM, Fab 0.507, CL 0.059 L/h, kabs 0.006 h-1.
+A reported unit could not be converted (kon, koff, kint and Rtot), so that value has no SI equivalent. Extracted — exenatide: V 90.5 ml/kg, kon 0.0794 38, koff 0.015 38, kint 0.00358 38, Rtot 5.17 nM, Fab 0.507, CL 0.059 L/h, kabs 0.006 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → not captured (not captured); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

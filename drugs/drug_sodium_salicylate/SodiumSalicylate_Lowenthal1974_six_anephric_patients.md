@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was quarantined because sodium salicylate clearance was left as a placeholder and the simulated terminal half-life (0.958 h) failed to match the paper's reported value (5 h).
+> No value for sodium salicylate's clearance; the model does not reproduce the paper's terminal half-life (paper 5, model 0.958) (+2 more).
 
 <div class="pk-model-meta" hidden drug="sodium salicylate" model-id="SodiumSalicylate_Lowenthal1974_six_anephric_patients" status="model_quarantined" stale="false" population="anephric patients" measured-compound="salicylic acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Lowenthal DT, Briggs WA, Levy G. Kinetics of salicylate elimination by anephric 
 
 ### Reviewer guidance
 
-**The model was quarantined because sodium salicylate clearance was left as a placeholder and the simulated terminal half-life (0.958 h) failed to match the paper's reported value (5 h).**
+**No value for sodium salicylate's clearance; the model does not reproduce the paper's terminal half-life (paper 5, model 0.958) (+2 more).**
 
-No explicit value was extracted for sodium salicylate clearance, so a library placeholder was used, triggering the quarantine. Additionally, the model's simulated terminal half-life of 0.958 hours differed significantly from the paper's reported value of 5 hours. A second reader also disagreed on the identification of the dose compound and primary analyte, noting the record listed sodium salicylate while the reader recorded unknown. Extracted — sodium salicylate: V 5.01 liter, t1/2β 316 min, tlag 0.42 h.
+The model was built, but sodium salicylate's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — sodium salicylate: V 5.01 liter, t1/2β 316 min, tlag 0.42 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium salicylate, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,9 +137,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 5 | 0.9581 | 0.1916 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 5.267 | 0.9581 | 0.1819 | min→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.571 (4 of 7 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.571 | cross-check contradicted by a second reader: verdict disputed; agreement 0.571 (4 of 7 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 5 | 0.9581 | 0.1916 | reported 300.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 5.267 | 0.9581 | 0.1819 | reported 316.0 min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

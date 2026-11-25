@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Vernakalant clearance and volume parameters are recorded as negative values, making the pharmacokinetic model physically implausible.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="vernakalant" model-id="Vernakalant_Mao2012_parameter_estimate_se" status="rejected" stale="false" population="patients with atrial fibrillation or atrial flutter and healthy volunteers" measured-compound="vernakalant" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Mao ZL, Townsend RW, Gao Y, Wheeler JJ, Kastrissios H, Keirns J. Population phar
 
 ### Reviewer guidance
 
-**Vernakalant clearance and volume parameters are recorded as negative values, making the pharmacokinetic model physically implausible.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record lists the clearance intercept as -1.050 and the volume of distribution as -0.670 L. Since volume units could not be converted to standard SI units, the specific numerical magnitude remains unverified against the source. A second reader identified the systemic clearance as 0.35 and steady-state volume as 1.55, but the primary record retains the negative placeholders. Extracted — vernakalant: V -0.67 L.
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — vernakalant: V -0.67 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of steady‐state volume of distribution: this record has none, the second reading 1.55; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

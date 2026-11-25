@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Codeine's AUC (966 nmol·hr/L) and Cmax (263 nmol/L) used molar units that conflict with the model's mass-based dimensionality, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit nmol · hr/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q32 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Tseng1996_c_t188" status="rejected" stale="false" population="Chinese (Han) healthy adults" measured-compound="codeine" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Tseng CY, Wang SL, Lai MD, Lai ML, Huang JD. Formation of morphine from codeine 
 
 ### Reviewer guidance
 
-**Codeine's AUC (966 nmol·hr/L) and Cmax (263 nmol/L) used molar units that conflict with the model's mass-based dimensionality, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit nmol · hr/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q32 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The recorded units for AUC and Cmax are expressed in amount-of-substance (nmol), while the model structure requires mass-based dimensions (kg). This dimensional mismatch prevents the parameters from being reconciled with the model's structural requirements. Consequently, the record fails validation because the concentration metrics cannot be dimensionally consistent with the mass-based framework. Extracted — codeine: AUC 966 nmol · hr/L, t1/2z 2.5 hr, Cmax 263 nmol/L, tmax 1.09 hr, CL 132 ml/min, V 6 L/kg, tlag 2.35 (h).
+A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent. Extracted — codeine: AUC 966 nmol · hr/L, t1/2z 2.5 hr, Cmax 263 nmol/L, tmax 1.09 hr, CL 132 ml/min, V 6 L/kg, tlag 2.35 (h).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record lacks distribution volume and clearance, and links an unmeasured metabolite to an incorrect parent drug.
+> No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="cypermethrin" model-id="Cypermethrin_Ct2014_reference" status="rejected" stale="false" population="healthy adult volunteers" measured-compound="trans-DCCA" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -48,13 +48,13 @@ Côté J, Bonvalot Y, Carrier G, Lapointe C, Fuhr U, Tomalik-Scharte D et al. A 
 
 ### Reviewer guidance
 
-**The record lacks distribution volume and clearance, and links an unmeasured metabolite to an incorrect parent drug.**
+**No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defines metabolism pathways from permethrin to trans-DCCA, yet the recorded drug is cypermethrin. The only extracted parameter is an absorption rate constant of 0.033 h−1 for trans-DCCA, without any elimination or volume terms. Consequently, the structure fails to form a valid compartmental population pharmacokinetic model. Extracted — trans-DCCA: kabs 0.033 h−1.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. None of the extracted parameters is cypermethrin's own; they describe trans-DCCA. Extracted — trans-DCCA: kabs 0.033 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has trans-DCCA, the second reading cypermethrin; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

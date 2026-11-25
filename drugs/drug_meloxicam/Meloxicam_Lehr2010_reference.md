@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-> Second-reader review of meloxicam parameters disagreed on three of four values, yielding only 0.333 agreement against the 0.5 threshold.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Lehr2010_reference" status="needs_review" stale="false" population="healthy cats" measured-compound="meloxicam" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Lehr T, Narbe R, Jöns O, Kloft C, Staab A. Population pharmacokinetic modelling
 
 ### Reviewer guidance
 
-**Second-reader review of meloxicam parameters disagreed on three of four values, yielding only 0.333 agreement against the 0.5 threshold.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was constructed solely from the paper’s abstract, leaving lag time at library defaults. The second reader could not independently extract values for clearance (0.00656 L/h/kg), volume of distribution (0.245 L/kg), or absorption rate (1.26 1/h). These extraction mismatches reduced cross-check agreement to 0.333, failing the 0.5 minimum required for validation. Extracted — meloxicam: CL/F 0.00656 L/h/kg, V/F 0.245 L/kg, kabs 1.26 1/h, t1/2z 25.7 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — meloxicam: CL/F 0.00656 L/h/kg, V/F 0.245 L/kg, kabs 1.26 1/h, t1/2z 25.7 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption constant (k(a)): this record has none, the second reading 1.26; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,7 +147,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.333 (4 of 12 compared fields agree, 8 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial; agreement 0.333 (4 of 12 compared fields agree, 8 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

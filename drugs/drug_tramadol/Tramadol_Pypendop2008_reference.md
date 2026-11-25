@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
-> The tramadol record was refused for analyte-output and model-structure mismatches; it reports an abstract-derived O-desmethyl-tramadol formation rate, kfm 0.014 /min.
+> T3_output_variable; t3_topology_template (+1 more).
 
 <div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_Pypendop2008_reference" status="rejected" stale="false" population="cats" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -56,13 +56,13 @@ Pypendop BH, Ilkiw JE. Pharmacokinetics of tramadol, and its metabolite O-desmet
 
 ### Reviewer guidance
 
-**The tramadol record was refused for analyte-output and model-structure mismatches; it reports an abstract-derived O-desmethyl-tramadol formation rate, kfm 0.014 /min.**
+**T3_output_variable; t3_topology_template (+1 more).**
 
-The measured analyte is tramadol, but the reported output was the central compartment rather than the compartment designated for the measured analyte; the stated parent–metabolite structure was represented as a one-compartment enteral structure. The record came from the abstract alone, so summary statistics stood in for a fitted model; Tlag was defaulted, and the parameterization assumed F=1, Fm=1, and no molar correction. The second reader’s agreement was 0.333, below 0.5, and the readers disagreed over whether values including Vss 3103 mL/kg, V1/F 1553 mL/kg, CL 20.8 mL/min/kg, and terminal half-life 134 min belonged in the record. Extracted — tramadol: V1/F 1.55e+03 mL/kg, Vss 3.1e+03 mL/kg, CL 20.8 mL/min/kg, t1/2z 134 min, Fab 93 %, kabs 0.65 1/h; O-desmethyl-tramadol: t1/2z 261 min, kfm 0.014 /min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tramadol: V1/F 1.55e+03 mL/kg, Vss 3.1e+03 mL/kg, CL 20.8 mL/min/kg, t1/2z 134 min, Fab 93 %, kabs 0.65 1/h; O-desmethyl-tramadol: t1/2z 261 min, kfm 0.014 /min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent volume of distribution at steady-state: this record has none, the second reading 3103; it also differs on 11 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -174,7 +174,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_shared_parameters | pass | 2 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.333 (6 of 18 compared fields agree, 12 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check agreement 0.333 is below 0.5: verdict partial; agreement 0.333 (6 of 18 compared fields agree, 12 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

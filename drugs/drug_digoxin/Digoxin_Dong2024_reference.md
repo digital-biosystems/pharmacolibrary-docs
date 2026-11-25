@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Digoxin parameters in the record belong to a study primarily focused on adefovir, where digoxin served only as a co-administered probe.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Dong2024_reference" status="rejected" stale="false" population="" measured-compound="digoxin" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Dong Q, Chen C, Taubert M, Bilal M, Kinzig M, Sörgel F et al. Understanding ade
 
 ### Reviewer guidance
 
-**Digoxin parameters in the record belong to a study primarily focused on adefovir, where digoxin served only as a co-administered probe.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper's main subject is the pharmacokinetics of adefovir, not digoxin. In that cocktail study, digoxin functioned merely as a co-medication or covariate. Consequently, the extracted digoxin values do not represent a primary population model for the drug itself. Extracted — digoxin: CL/F 0.493 L/h/kg, V/F 369 L, kabs 2.29 h−1.
+Extracted — digoxin: CL/F 0.493 L/h/kg, V/F 369 L, kabs 2.29 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q364: this record has none, the second reading 2; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.75 (9 of 12 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

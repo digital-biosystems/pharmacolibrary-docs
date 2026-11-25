@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The clofibrate record was rejected because its source paper concerns another drug, despite listing CL/F as 0.44 L·min−1·kg−1.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="clofibrate" model-id="Clofibrate_wierczek2022_reference" status="rejected" stale="false" population="" measured-compound="clofibrate" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@
 
 ### Reviewer guidance
 
-**The clofibrate record was rejected because its source paper concerns another drug, despite listing CL/F as 0.44 L·min−1·kg−1.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-Neither the paper title nor abstract names clofibrate, and the paper was judged to concern another drug. Tlag had no explicit estimate and was defaulted; the apparent parameterization assumed F=1, Fm=1, and no molar correction. Extracted — clofibrate: CL/F 0.44 L·min−1·kg−1, V/F 8.7 L·kg−1, kabs 0.58 min−1.
+Extracted — clofibrate: CL/F 0.44 L·min−1·kg−1, V/F 8.7 L·kg−1, kabs 0.58 min−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -125,7 +125,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

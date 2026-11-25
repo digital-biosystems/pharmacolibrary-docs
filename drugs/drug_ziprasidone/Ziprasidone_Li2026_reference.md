@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability (F) and lag time (Tlag) lack explicit estimates, relying on default values rather than data from the ziprasidone study.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ziprasidone" model-id="Ziprasidone_Li2026_reference" status="needs_review" stale="false" population="" measured-compound="ziprasidone" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Li X, Sale M, Craig J, Nieforth K, Mazur A, Bies RR. Multi-objective optimizatio
 
 ### Reviewer guidance
 
-**Bioavailability (F) and lag time (Tlag) lack explicit estimates, relying on default values rather than data from the ziprasidone study.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record uses library defaults for bioavailability (F) and lag time (Tlag) instead of values extracted from the paper. These parameters are critical for accurately simulating the drug profile but are not supported by the specific findings in Li_2026. The clearance value of 8.41 L/hr and volume of 950.0 L are retained, but the missing explicit F values compromise the model's validity. Extracted — ziprasidone: CL 8.41 L/hr, V 950 L, kabs 0.5 h⁻¹.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ziprasidone: CL 8.41 L/hr, V 950 L, kabs 0.5 h⁻¹.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -121,7 +121,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (5 of 5 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

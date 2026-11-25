@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Simulated Cmax of 4.23e-06 differs from the paper's 3.6e-06, failing validation tolerance.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 3.6e-06, model 4.23e-06); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="tofacitinib" model-id="Tofacitinib_Vong2021_reference" status="needs_review" stale="false" population="patients with moderate to severe ulcerative colitis" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Vong C, Martin SW, Deng C, Xie R, Ito K, Su C et al. Population Pharmacokinetics
 
 ### Reviewer guidance
 
-**Simulated Cmax of 4.23e-06 differs from the paper's 3.6e-06, failing validation tolerance.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 3.6e-06, model 4.23e-06); x1_cross_check.**
 
-The model predicted a peak concentration of 4.23e-06, while the source paper reports 3.6e-06 for tofacitinib. This discrepancy caused the validation check to fail. A second reader also disputed the record, finding 0 of 1 agreements on the extracted parameters. Extracted — tofacitinib: CL/F 26.3 L/h, V/F 116 L, kabs 192 h−1, tlag 0.236 h, allometric_exponent 0.392.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Extracted — tofacitinib: CL/F 26.3 L/h, V/F 116 L, kabs 192 h−1, tlag 0.236 h, allometric_exponent 0.392.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tofacitinib, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -174,13 +174,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
-| T1_cmax | reference | pass | 3.6e-06 | 4.227e-06 | 1.174 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 6.7e-06 | 4.227e-06 | 0.631 | ng/mL→SI vs simulated kg/m3 |
-| T1_t_half_beta | reference | pass | 3.05 | 3.055 | 1.002 | h→SI vs simulated h |
-| T1_t_half_beta | reference | pass | 3.05 | 3.055 | 1.002 | h→SI vs simulated h |
-| T1_t_half_beta | reference | pass | 3.05 | 3.055 | 1.002 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 3 | 3.055 | 1.018 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.143 | cross-check contradicted by a second reader: verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | pass | 3.6e-06 | 4.227e-06 | 1.174 | reported 3.6 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 6.7e-06 | 4.227e-06 | 0.631 | reported 6.7 ng/mL→SI vs simulated kg/m3 |
+| T1_t_half_beta | reference | pass | 3.05 | 3.055 | 1.002 | reported 3.05 h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 3.05 | 3.055 | 1.002 | reported 3.05 h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 3.05 | 3.055 | 1.002 | reported 3.05 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 3 | 3.055 | 1.018 | reported 3.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

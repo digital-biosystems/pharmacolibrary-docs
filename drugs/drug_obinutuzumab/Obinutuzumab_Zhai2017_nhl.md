@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The Cmax/dose parameter for obinutuzumab was rejected due to a dimension mismatch between its assigned unit and the parameter's physical meaning.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q174 unit μg ml−1 mg−1 (1 / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Zhai2017_nhl" status="rejected" stale="false" population="Chinese patients with B-cell lymphomas" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -40,7 +40,7 @@ Zhai J, Qin Y, Zhu J, Song Y, Shen Z, Du X et al. Pharmacokinetics of obinutuzum
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,11 +50,13 @@ Zhai J, Qin Y, Zhu J, Song Y, Shen Z, Du X et al. Pharmacokinetics of obinutuzum
 
 ### Reviewer guidance
 
-**The Cmax/dose parameter for obinutuzumab was rejected due to a dimension mismatch between its assigned unit and the parameter's physical meaning.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q174 unit μg ml−1 mg−1 (1 / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The record lists Cmax/dose with a unit of μg ml−1 mg−1, which represents inverse volume, but the parameter meaning requires mass per volume. This dimensional conflict caused the check to fail, preventing the unit from being converted to SI values. Consequently, the model was refused because the structural parameter could not be validated. Extracted — obinutuzumab: Cmax 0.935 μg ml−1, Cmax/dose 195 μg ml−1 mg−1, Ctrough 0.488 μg ml−1, AUCt 14.7 day·μg ml−1, CL 0.584 L/day.
+A reported unit could not be converted (Cmax, Cmax/dose, Ctrough and AUCt), so that value has no SI equivalent. Extracted — obinutuzumab: Cmax 0.935 μg ml−1, Cmax/dose 195 μg ml−1 mg−1, Ctrough 0.488 μg ml−1, AUCt 14.7 day·μg ml−1, CL 0.584 L/day.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc 21d].value`: this record has 14.7, the second reading 11.4; it also differs on 4 more fields. That field does not shape the model.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -105,6 +107,31 @@ The record lists Cmax/dose with a unit of μg ml−1 mg−1, which represents in
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
+
+<details><summary>5 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc 21d].value` | 14.7 | 11.4 | mismatch |
+| `gpt-oss-120b` | `parameters[c max/dose].value` | 195 | 416 | mismatch |
+| `gpt-oss-120b` | `parameters[c max].value` | 0.935 | 0.751 | mismatch |
+| `gpt-oss-120b` | `parameters[c trough].value` | 0.488 | 0.520 | mismatch |
+| `gpt-oss-120b` | `parameters[clss]` | 0.584 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

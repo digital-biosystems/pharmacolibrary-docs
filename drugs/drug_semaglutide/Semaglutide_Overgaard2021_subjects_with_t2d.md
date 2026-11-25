@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Intercompartmental rate constants were left at defaults because the record lacks explicit estimates for these transfer rates.
+> K13, k31 use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="semaglutide" model-id="Semaglutide_Overgaard2021_subjects_with_t2d" status="needs_review" stale="false" population="healthy volunteers and subjects with renal or hepatic impairment and type 2 diabetes" measured-compound="semaglutide" parameterization="mechanistic" topology="3C"></div>
 
@@ -56,13 +56,13 @@ Overgaard RV, Navarria A, Ingwersen SH, Bækdal TA, Kildemoes RJ. Clinical Pharm
 
 ### Reviewer guidance
 
-**Intercompartmental rate constants were left at defaults because the record lacks explicit estimates for these transfer rates.**
+**K13, k31 use library defaults, not estimates from this paper; t6_deviations.**
 
-The record describes a three-compartment structure but does not provide specific values for the rate constants governing drug movement between compartments. Consequently, placeholder values are used in place of estimates, meaning the simulated profile relies on unvalidated assumptions. Extracted — semaglutide: CL 0.039 L/h, V1 3.7 L, V2 4.2 L, V 7.9 L, Q 0.31 L/h, kabs 2.09 h−1, Fab 0.69 %, t1/2z 145 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — semaglutide: CL 0.039 L/h, V1 3.7 L, V2 4.2 L, V 7.9 L, Q 0.31 L/h, kabs 2.09 h−1, Fab 0.69 %, t1/2z 145 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

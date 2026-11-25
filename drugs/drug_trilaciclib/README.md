@@ -33,12 +33,15 @@ Trilaciclib is a protein kinase inhibitor used to treat lung small cell carcinom
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2023_antitumour_efficacy](drugs/drug_trilaciclib/pd_Li_2023_antitumour_efficacy.md) | antitumour efficacy ← trilaciclib · model not identified | — | Li C et al., Population pharmacokinetics and exposur…, British journal of clinical… (2023) | [10.1111/bcp.15549](https://doi.org/10.1111/bcp.15549) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2023_headache](drugs/drug_trilaciclib/pd_Li_2023_headache.md) | headache ← trilaciclib · model not identified | — | Li C et al., Population pharmacokinetics and exposur…, British journal of clinical… (2023) | [10.1111/bcp.15549](https://doi.org/10.1111/bcp.15549) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2023_injection_site_reactions](drugs/drug_trilaciclib/pd_Li_2023_injection_site_reactions.md) | injection site reactions ← trilaciclib · model not identified | — | Li C et al., Population pharmacokinetics and exposur…, British journal of clinical… (2023) | [10.1111/bcp.15549](https://doi.org/10.1111/bcp.15549) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2023_myeloprotective_efficacy_myelosuppression_endpoints](drugs/drug_trilaciclib/pd_Li_2023_myeloprotective_efficacy_myelosuppression_endpoints.md) | myeloprotective efficacy (myelosuppression endpoints) ← trilaciclib · model not identified | — | Li C et al., Population pharmacokinetics and exposur…, British journal of clinical… (2023) | [10.1111/bcp.15549](https://doi.org/10.1111/bcp.15549) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Li_2023_phlebitis_thrombophlebitis](drugs/drug_trilaciclib/pd_Li_2023_phlebitis_thrombophlebitis.md) | phlebitis/thrombophlebitis ← trilaciclib · model not identified | — | Li C et al., Population pharmacokinetics and exposur…, British journal of clinical… (2023) | [10.1111/bcp.15549](https://doi.org/10.1111/bcp.15549) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Li_2023_time_to_event_safety_efficacy_endpoints](drugs/drug_trilaciclib/pd_Li_2023_time_to_event_safety_efficacy_endpoints.md) | time-to-event safety/efficacy endpoints ← trilaciclib · time-to-event model | — | Li C et al., Population pharmacokinetics and exposur…, British journal of clinical… (2023) | [10.1111/bcp.15549](https://doi.org/10.1111/bcp.15549) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Dai_2024_ANC_nadir](drugs/drug_trilaciclib/pd_Dai_2024_ANC_nadir.md) | Absolute neutrophil count (ANC) nadir ← trilaciclib AUC · direct linear effect | — | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Dai_2024_ORR](drugs/drug_trilaciclib/pd_Dai_2024_ORR.md) | Objective response rate ← trilaciclib AUC · categorical (graded) response model | — | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Dai_2024_OS](drugs/drug_trilaciclib/pd_Dai_2024_OS.md) | Overall survival ← trilaciclib AUC · time-to-event model | — | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Dai_2024_PFS](drugs/drug_trilaciclib/pd_Dai_2024_PFS.md) | Progression-free survival ← trilaciclib AUC · time-to-event model | — | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Dai_2024_grade_3_4_anemia](drugs/drug_trilaciclib/pd_Dai_2024_grade_3_4_anemia.md) | Grade 3/4 anemia ← trilaciclib AUC · categorical (graded) response model | — | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Dai_2024_headache](drugs/drug_trilaciclib/pd_Dai_2024_headache.md) | Headache ← trilaciclib AUC · categorical (graded) response model | — | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Dai_2024_infusion_site_reactions](drugs/drug_trilaciclib/pd_Dai_2024_infusion_site_reactions.md) | Infusion site reactions ← trilaciclib AUC · categorical (graded) response model | — | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Dai_2024_phlebitis_thrombophlebitis](drugs/drug_trilaciclib/pd_Dai_2024_phlebitis_thrombophlebitis.md) | Phlebitis/thrombophlebitis ← trilaciclib AUC · categorical (graded) response model | — | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Dai_2024_severe_neutropenia](drugs/drug_trilaciclib/pd_Dai_2024_severe_neutropenia.md) | Severe neutropenia (grade 4) ← trilaciclib AUC · categorical (graded) response model | — | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +55,7 @@ Trilaciclib is a protein kinase inhibitor used to treat lung small cell carcinom
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 20:03 | 2:22 | 2/0/0 | 6/0/0 | 0/0/0 | 66,266/11,203 | ollama / glm-5.3-flash | 2 | 1/1 | 1/1 | 0 |
+| 2026-11-24 05:14 | 0:04 | 2/0/0 | 9/0/0 | 0/0/0 | 3,596/163 | einfracz / qwen3.8-27b | 2 | 1/1 | 1/1 | 0 |
 
 ## Coverage
 
@@ -63,27 +66,29 @@ Trilaciclib is a protein kinase inhibitor used to treat lung small cell carcinom
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Li_2023.pdf` | Li C et al., Population pharmacokinetics and exposur…, British journal of clinical… (2023) | popPK | 10 | [10.1111/bcp.15549](https://doi.org/10.1111/bcp.15549) | [36180417](https://pubmed.ncbi.nlm.nih.gov/36180417) | Population PK (three-compartment) of trilaciclib in humans, but no numeric parameter values (CL, V, Q) appear in the evidence — likely in tables/supplement not provided. |
-| `Cheng_2024.pdf` | Cheng Y et al., Myeloprotection with trilaciclib in Chi…, Lung cancer (Amsterdam, Net… (2024) | popPK | 7 | [10.1016/j.lungcan.2023.107455](https://doi.org/10.1016/j.lungcan.2023.107455) | [38224653](https://pubmed.ncbi.nlm.nih.gov/38224653) | PK of trilaciclib was a primary endpoint with NCA analysis, but no numeric parameter values (CL, V, t½) appear in the evidence provided. |
-| `Li_2024.pdf` | Li C et al., Effect of Hepatic Impairment on Trilaci…, Journal of clinical pharmac… (2024) | popPK | 7 | [10.1002/jcph.2435](https://doi.org/10.1002/jcph.2435) | [38639103](https://pubmed.ncbi.nlm.nih.gov/38639103) | A dedicated trilaciclib PK study in hepatic impairment, but the evidence gives only relative exposure changes (% higher AUC) without numeric CL/V or compartmental parameter values, which may be in tables/figures not provided. |
+| `Li_2024.pdf` | Li C et al., Effect of Hepatic Impairment on Trilaci…, Journal of clinical pharmac… (2024) | popPK | 10 | [10.1002/jcph.2435](https://doi.org/10.1002/jcph.2435) | [38639103](https://pubmed.ncbi.nlm.nih.gov/38639103) | The study reports qualitative PK changes and a specific dosing recommendation but lacks detailed quantitative compartmental parameters (CL, V, Q, ka) which are likely in supplementary material or full text not provided. |
 
-<sub>queue written 2026-10-07 20:00 UTC</sub>
+<sub>queue written 2026-11-24 05:14 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Cheng_2024 | relevant | 7 | 2 | PK of trilaciclib was a primary endpoint with NCA analysis, but no numeric parameter values (CL, V, t½) appear in the evidence provided. |
-| popPK | Li_2023 | relevant | 10 | 2 | Population PK (three-compartment) of trilaciclib in humans, but no numeric parameter values (CL, V, Q) appear in the evidence — likely in tables/supplement not provided. |
-| popPK | Li_2024 | relevant | 7 | 3 | A dedicated trilaciclib PK study in hepatic impairment, but the evidence gives only relative exposure changes (% higher AUC) without numeric CL/V or compartmental parameter values, which may be in tables/figures not provided. |
+| popPK | Cheng_2024 | irrelevant | 2 | 0 | The study reports qualitative non-compartmental analysis (NCA) findings stating "no substantial differences" but provides no specific numeric disposition parameters (CL, V, ka, half-life) for trilaciclib. |
+| PGx | Cheng_2024 | not_relevant | 0 | 0 | The study focuses on the PK and PD (myeloprotection) profile in a specific ethnic population (Chinese) but does not report a genetic variant, genotype, or phenotype analysis. |
+| PGx | Dai_2024 | not_relevant | 1 | 0 | The study analyzes ethnic disparities (Chinese vs. non-Chinese) and standard covariates (sex, BSA) but does not report specific genetic variants or genotypes influencing pharmacokinetics or pharmacodynamics. |
+| popPK | Li_2023 | relevant | 10 | 2 | The paper describes a population PK model for trilaciclib in humans, but the evidence provided only contains the abstract/summary and lacks the specific numeric parameter values (CL, V, Q, etc.) found in the full text or tables. |
+| PGx | Li_2023 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics and covariate analysis (age, sex, albumin) but does not investigate or report the impact of gene variants or genotypes. |
+| popPK | Li_2024 | relevant | 10 | 3 | The study reports qualitative PK changes and a specific dosing recommendation but lacks detailed quantitative compartmental parameters (CL, V, Q, ka) which are likely in supplementary material or full text not provided. |
+| PGx | Li_2024 | not_relevant | 0 | 0 | The paper reports the effect of hepatic impairment (a physiological state) on pharmacokinetics, not the effect of a specific gene variant or genotype. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrilaciclib%5D&body=Drug%3A%20trilaciclib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trilaciclib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 20:01 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 16:21 UTC</sub>

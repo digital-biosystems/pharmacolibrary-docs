@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Allopurinol absorption parameters were defaulted instead of estimated, and the reviewer disputed the reported clearance value.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="allopurinol" model-id="Allopurinol_Day2007_reference" status="needs_review" stale="false" population="adults with gout" measured-compound="allopurinol" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Day RO, Graham GG, Hicks M, McLachlan AJ, Stocker SL, Williams KM. Clinical phar
 
 ### Reviewer guidance
 
-**Allopurinol absorption parameters were defaulted instead of estimated, and the reviewer disputed the reported clearance value.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The model relies on library placeholders for absorption rate and lag time, which are not supported by the source paper's data. A second reader disagreed with the extraction of multiple parameters, including clearance, where this record lists 11.4 mL/min/kg while the reader identified 15.8. Because the primary absorption mechanism was invented rather than reported, the model structure does not reflect the actual drug handling described in the study. Extracted — allopurinol: CL/F 11.4 mL/min/kg, V/F 0.58 L/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — allopurinol: CL/F 11.4 mL/min/kg, V/F 0.58 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 11.4, the second reading 15.8; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.375, 0 of 1 reader(s) agree | 0.375 | cross-check disputed by a second reader: verdict disputed, agreement 0.375, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.375 | cross-check contradicted by a second reader: verdict disputed; agreement 0.375 (3 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

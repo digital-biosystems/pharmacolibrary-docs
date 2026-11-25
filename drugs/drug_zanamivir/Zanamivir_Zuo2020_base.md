@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;zanamivir&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/&quot;},{&quot;label&quot;:&quot;Zuo_2020 \u00b7 base&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zanamivir_Zuo2020_base&quot;,&quot;label&quot;:&quot;Zuo_2020_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/Zanamivir_Zuo2020_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zanamivir_Zuo2020_final&quot;,&quot;label&quot;:&quot;Zuo_2020_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/Zanamivir_Zuo2020_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zanamivir_Zuo2020_full&quot;,&quot;label&quot;:&quot;Zuo_2020_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/Zanamivir_Zuo2020_full.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zanamivir_Wollacott2016_reference&quot;,&quot;label&quot;:&quot;Wollacott_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/Zanamivir_Wollacott2016_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Zanamivir_Zuo2020_base&quot;,&quot;label&quot;:&quot;Zuo_2020_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/Zanamivir_Zuo2020_base.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Zanamivir_Zuo2020_final&quot;,&quot;label&quot;:&quot;Zuo_2020_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/Zanamivir_Zuo2020_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Zanamivir_Wollacott2016_reference&quot;,&quot;label&quot;:&quot;Wollacott_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_zanamivir/Zanamivir_Wollacott2016_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,9 +17,9 @@ Zuo P, Collins J, Okour M, Barth A, Shortino D, Yates P et al. Population Pharma
 
 ## Population and dosing
 
-**Population:** healthy adults and hospitalized adult and pediatric subjects with influenza · condition healthy or suspected/confirmed influenza; includes renal impairment · age group mixed · n = 658.
+**Population:** healthy adults and hospitalized adult and pediatric subjects with influenza · condition influenza · age group mixed.
 
-**Dosing:** 100, 300, 600, 1200 mg, iv.
+**Dosing:** 100, 300, 600, 1200 mg, iv, multiple, every 12 h.
 
 ## Model
 
@@ -33,16 +33,16 @@ Zuo P, Collins J, Okour M, Barth A, Shortino D, Yates P et al. Population Pharma
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| CL, L/hour | CL | 4.12 | L/hour |
-| V1, L | V1 | 12.9 | L |
-| Q, L/hour | Q | 2.59 | L/hour |
-| V2, L | V2 | 4.32 | L |
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| CL, L/hour | CL | 4.12 | L/hour | 3 |
+| V1, L | V1 | 12.9 | L | 2 |
+| Q, L/hour | Q | 2.59 | L/hour | 12 |
+| V2, L | V2 | 4.32 | L | 7 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,22 +56,22 @@ Zuo P, Collins J, Okour M, Barth A, Shortino D, Yates P et al. Population Pharma
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — zanamivir: CL 4.12 L/hour, V1 12.9 L, Q 2.59 L/hour, V2 4.32 L.
 
-Independently confirmed by `qwen3.8-27b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| CL, L/hour | `Q22` · CL | 4.12 | L/hour | 1.144e-06 | m3/s | l/h | exact (1) | cts12697-tbl-0002:row2:col1 |
-| V1, L | `Q63` · V1 | 12.9 | L | 0.0129 | m3 | l | exact (1) | cts12697-tbl-0002:row3:col1 |
-| Q, L/hour | `Q30` · Q | 2.59 | L/hour | 7.194e-07 | m3/s | l/h | exact (1) | cts12697-tbl-0002:row4:col1 |
-| V2, L | `Q64` · V2 | 4.32 | L | 0.00432 | m3 | l | exact (1) | cts12697-tbl-0002:row5:col1 |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| CL, L/hour | `Q22` · CL | 4.12 | L/hour | 1.144e-06 | m3/s | l/h | 3 | exact (1) | cts12697-tbl-0002:row2:col1 |
+| V1, L | `Q63` · V1 | 12.9 | L | 0.0129 | m3 | l | 2 | exact (1) | cts12697-tbl-0002:row3:col1 |
+| Q, L/hour | `Q30` · Q | 2.59 | L/hour | 7.194e-07 | m3/s | l/h | 12 | exact (1) | cts12697-tbl-0002:row4:col1 |
+| V2, L | `Q64` · V2 | 4.32 | L | 0.00432 | m3 | l | 7 | exact (1) | cts12697-tbl-0002:row5:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -82,46 +82,20 @@ Independently confirmed by `qwen3.8-27b`.
 - table section residual_error: 'Proportional error, CV% (% RSE)' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive error (μg/mL), SD (% RSE)' routed out of structural estimates ('Residual variability')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=zanamivir
-- model-stage split: 'base model' is the base model of Zuo_2020 (paper reports 3 stages: base model, final model, full model); same population, different model-building step
+- model-stage split: 'base model / parameter estimate (% rse)' is the base model of Zuo_2020 (paper reports 3 stages: base model / parameter estimate (% rse), final model / parameter estimate (% rse), full model / parameter estimate (% rse)); same population, different model-building step
 
 **Extraction notes:**
-- unparsed cell cts12697-tbl-0002:row2:col3 = '6.56, 7.05'
-- unparsed cell cts12697-tbl-0002:row2:col5 = '6.83 (6.60, 7.0909)'
-- unparsed cell cts12697-tbl-0002:row3:col3 = '11.8, 12.8'
-- unparsed cell cts12697-tbl-0002:row3:col5 = '12.3 (11.88, 12.8)'
-- unparsed cell cts12697-tbl-0002:row4:col3 = '4.06, 5.58'
-- unparsed cell cts12697-tbl-0002:row4:col5 = '4.83 (4.20, 5.5858)'
-- unparsed cell cts12697-tbl-0002:row5:col3 = '5.99, 7.05'
-- unparsed cell cts12697-tbl-0002:row5:col5 = '6.54 (6.0606, 7.0404)'
-- unparsed cell cts12697-tbl-0002:row7:col3 = '93.1, 101'
-- unparsed cell cts12697-tbl-0002:row7:col5 = '97.1 (87.55, 111)'
-- unparsed cell cts12697-tbl-0002:row8:col3 = '0.00786, 0.0106'
-- unparsed cell cts12697-tbl-0002:row8:col5 = '0.00923 (0.00754, 0.0110)'
-- unparsed cell cts12697-tbl-0002:row9:col3 = '0.701, 0.825'
-- unparsed cell cts12697-tbl-0002:row9:col5 = '0.760 (0.707, 0.814)'
-- unparsed cell cts12697-tbl-0002:row10:col3 = '0.645, 1.155'
-- unparsed cell cts12697-tbl-0002:row11:col3 = '0.416, 0.992'
-- unparsed cell cts12697-tbl-0002:row12:col3 = '0.652, 0.770'
-- unparsed cell cts12697-tbl-0002:row12:col5 = '0.712 (0.649, 0.769)'
-- unparsed cell cts12697-tbl-0002:row13:col3 = '0.699, 0.759'
-- unparsed cell cts12697-tbl-0002:row13:col5 = '0.728 (0.700, 0.760)'
-- unparsed cell cts12697-tbl-0002:row14:col3 = '0.538, 0.778'
-- unparsed cell cts12697-tbl-0002:row14:col5 = '0.659 (0.514, 0.768)'
-- unparsed cell cts12697-tbl-0002:row15:col3 = '2.41, 3.73'
-- unparsed cell cts12697-tbl-0002:row15:col5 = '3.12 (2.5454, 3.8181)'
-- unparsed cell cts12697-tbl-0002:row17:col5 = '18.5 (15.4, 22.7)'
-- unparsed cell cts12697-tbl-0002:row18:col5 = '34.8 (30.5, 40.7)'
-- unparsed cell cts12697-tbl-0002:row20:col5 = '26.2 (24.9, 27.5)'
-- unparsed cell cts12697-tbl-0002:row21:col5 = '0.0269 (0.0243, 0.0294)'
+- table cts12697-tbl-0002: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (12/12 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (8/8 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -160,8 +134,8 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_t_half_terminal | reference | fail | 3.2 | 5.765 | 1.802 | hours→SI vs simulated h |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (12 of 12 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | fail | 3.2 | 5.765 | 1.802 | reported 3.2 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -241,4 +215,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bzanamivir%5D%20Zanamivir_Zuo2020_base&body=Drug%3A%20zanamivir%0ARecord%3A%20Zanamivir_Zuo2020_base%0APaper%3A%20Zuo_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_zanamivir/Zanamivir_Zuo2020_base%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:12 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:47 UTC</sub>

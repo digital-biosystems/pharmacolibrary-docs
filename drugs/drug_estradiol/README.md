@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Albin_2012_pubertal_growth_up_to_PHV](drugs/drug_estradiol/pd_Albin_2012_pubertal_growth_up_to_PHV.md) | pubertal growth up to PHV biomarker turnover ← estradiol | — | Albin AK et al., Estradiol and pubertal growth in girls, Hormone research in paediat… (2012) | [10.1159/000343076](https://doi.org/10.1159/000343076) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Albin_2012_pubertal_growth_up_to_PHV](drugs/drug_estradiol/pd_Albin_2012_pubertal_growth_up_to_PHV.md) | pubertal growth up to PHV biomarker turnover ← estradiol | — | Albin AK et al., Estradiol and pubertal growth in girls, Hormone research in paediat… (2012) | [10.1159/000343076](https://doi.org/10.1159/000343076) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

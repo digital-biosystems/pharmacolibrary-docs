@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Ropeginterferon alfa 2b’s body-weight effect (0.927) was not exercised, and disagreement over the assigned dose compound and primary analyte left the record needing review.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="ropeginterferon alfa-2b" model-id="RopeginterferonAlfa2b_Zhu2021_reference" status="needs_review" stale="false" population="healthy Caucasian and Chinese adults" measured-compound="ropeginterferon_alfa_2b" parameterization="apparent" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Zhu M, Wang MX, Li ZR, Wang W, Su X, Jiao Z. Population Pharmacokinetics of Rope
 
 ### Reviewer guidance
 
-**Ropeginterferon alfa 2b’s body-weight effect (0.927) was not exercised, and disagreement over the assigned dose compound and primary analyte left the record needing review.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. The second reader marked the dose compound and primary analyte as unknown, disputing the record’s assignment of ropeginterferon alfa 2b for both; agreement was 0.882, with 0 of 1 reader agreeing. The model builder assumed F=1 and Fm=1 with no molar correction, and one reported unit could not be converted to SI. Extracted — ropeginterferon alfa 2b: CL/F 0.778 L/day, V/F 2.32 L, kabs 0.14 1/day, tlag 0.426 h, kint 0.0788 h−1, KD 0.142 ng/ml.
+The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (KD), so that value has no SI equivalent. Extracted — ropeginterferon alfa 2b: CL/F 0.778 L/day, V/F 2.32 L, kabs 0.14 1/day, tlag 0.426 h, kint 0.0788 h−1, KD 0.142 ng/ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ropeginterferon_alfa_2b, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -172,7 +172,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.882, 0 of 1 reader(s) agree | 0.882 | cross-check disputed by a second reader: verdict disputed, agreement 0.882, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.882 (15 of 17 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.882 | cross-check contradicted by a second reader: verdict disputed; agreement 0.882 (15 of 17 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because tramadol’s total oral clearance, CL/F, was reported as 0.0107 l/h, producing an implausible clearance-to-volume magnitude.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="tramadol" model-id="Tramadol_AlQurain2022_base" status="rejected" stale="false" population="older patients with chronic pain" measured-compound="tramadol" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Al-Qurain AA, Upton RN, Tadros R, Roberts MS, Wiese MD. Population Pharmacokinet
 
 ### Reviewer guidance
 
-**The record was rejected because tramadol’s total oral clearance, CL/F, was reported as 0.0107 l/h, producing an implausible clearance-to-volume magnitude.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The reported unit could not be converted to SI, leaving the clearance scale unresolved. A second reader disputed the recorded CL/F value of 0.0107, reading it as 37.1. Extracted — tramadol: kabs 4.56 /h, V1/F 0.432 l, Q 0.0567 l/h, V2/F 0.471 l, CL/F 0.0107 l/h; O-desmethyltramadol: CLfm 0.0433 l/h, CL/F 0.117 l/h, fm 5.37 %.
+A reported unit could not be converted (fm), so that value has no SI equivalent. Extracted — tramadol: kabs 4.56 /h, V1/F 0.432 l, Q 0.0567 l/h, V2/F 0.471 l, CL/F 0.0107 l/h; O-desmethyltramadol: CLfm 0.0433 l/h, CL/F 0.117 l/h, fm 5.37 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has tramadol → o-desmethyltramadol (metabolism), the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

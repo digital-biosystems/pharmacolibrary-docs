@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Cobimetinib model simulated peak time of 1.43 hours missed the reported 2.4 hours by ratio 0.5963.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 2.4, model 1.43); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="cobimetinib" model-id="Cobimetinib_Duong2026_model_pk_h" status="needs_review" stale="false" population="in silico tumor-cell populations" measured-compound="cobimetinib" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Duong NH, Do TN, Nguyen TT, Phan KQ, Nguyen LT. Cellular Heterogeneity in Drug U
 
 ### Reviewer guidance
 
-**Cobimetinib model simulated peak time of 1.43 hours missed the reported 2.4 hours by ratio 0.5963.**
+**The model does not reproduce the paper's time of the peak (tmax) (paper 2.4, model 1.43); x1_cross_check.**
 
-The model predicted the time of the peak 1.43 hours, differing from the reported 2.4 hours. This mismatch indicates the absorption kinetics defined by the 2.0 h⁻¹ rate constant do not match the observed profile. A second reader also disputed the apparent parameterization and the absence of inter-compartmental clearances, with agreement at 0.273. Extracted — cobimetinib: V/F 806 L, kabs 2 h⁻1, CL 35.5 mL/min/kg.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Extracted — cobimetinib: V/F 806 L, kabs 2 h⁻1, CL 35.5 mL/min/kg.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -153,8 +153,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.273, 0 of 1 reader(s) agree | 0.273 | cross-check disputed by a second reader: verdict disputed, agreement 0.273, 0 of 1 reader(s) agree |
-| T1_tmax | reference | fail | 2.4 | 1.431 | 0.5963 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.273 (3 of 11 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.273 | cross-check contradicted by a second reader: verdict disputed; agreement 0.273 (3 of 11 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
+| T1_tmax | reference | fail | 2.4 | 1.431 | 0.5963 | reported 2.4 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -170,7 +170,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pk_h/Cobimetinib_Duong2026_model_pk_h_modelica.zip" download>Cobimetinib_Duong2026_model_pk_h_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pk_h/Cobimetinib_Duong2026_model_pk_h_modelica.zip" download>Cobimetinib_Duong2026_model_pk_h_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pk_h/Cobimetinib_Duong2026_model_pk_h_fmi.zip" download>Cobimetinib_Duong2026_model_pk_h_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pk_h/Cobimetinib_Duong2026_model_pk_h_matlab.zip" download>Cobimetinib_Duong2026_model_pk_h_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_cobimetinib/Cobimetinib_Duong2026_model_pk_h/Cobimetinib_Duong2026_model_pk_h_matlab_simbio.zip" download>Cobimetinib_Duong2026_model_pk_h_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

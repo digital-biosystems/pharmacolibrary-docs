@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span>
 
-> Rejected due to topology mismatch, missing V2 coverage, wrong output variable, and unexercised covariates for meloxicam.
+> The covariate scenarios were not simulated; t3_output_variable (+3 more).
 
 <div class="pk-model-meta" hidden drug="meloxicam" model-id="Meloxicam_Aoyama2017_reference" status="rejected" stale="false" population="healthy males" measured-compound="meloxicam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -50,7 +50,7 @@ Aoyama T, Ishida Y, Kaneko M, Miyamoto A, Saito Y, Tohkin M et al. Pharmacokinet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -60,11 +60,13 @@ Aoyama T, Ishida Y, Kaneko M, Miyamoto A, Saito Y, Tohkin M et al. Pharmacokinet
 
 ### Reviewer guidance
 
-**Rejected due to topology mismatch, missing V2 coverage, wrong output variable, and unexercised covariates for meloxicam.**
+**The covariate scenarios were not simulated; t3_output_variable (+3 more).**
 
-The model structure used a one-compartment oral model instead of the required parent-metabolite topology. The peripheral volume V2 was not covered by the simulation, and the output variable did not match the measured analyte. Covariate scenarios for CYP2C9 effects were not exercised during the simulation. Extracted — meloxicam: CL 0.391 L/h, V1 7.79 L, Q 1.24 L/h, V2 2.73 L, kabs 2 /h, Fab 0.425.
+The base model was simulated, not the covariate effects the record defines. Extracted — meloxicam: CL 0.391 L/h, V1 7.79 L, Q 1.24 L/h, V2 2.73 L, kabs 2 /h, Fab 0.425.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has meloxicam → txb2 (metabolism), the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,6 +136,31 @@ The model structure used a one-compartment oral model instead of the required pa
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.688 (11/16 fields) | 5 |
+
+<details><summary>5 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['meloxicam', 'txb2', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cyp2c9_2_on_cl]` | -0.147 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dt]` |  | 1.91 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lbm on vd]` |  | 1.05 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_cyp2c9].value` | -0.400 | -0.147 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -155,15 +182,15 @@ The model structure used a one-compartment oral model instead of the required pa
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_output_variable |  | fail | Metabolite_C (measured=meloxicam) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered | neither emitted nor in defaulted[]: ['V2'] |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  | no second reading of this record |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_output_variable |  | fail | Metabolite_C (measured=meloxicam) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2'] |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.688 (11 of 16 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.688 | cross-check contradicted by a second reader: verdict disputed; agreement 0.688 (11 of 16 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

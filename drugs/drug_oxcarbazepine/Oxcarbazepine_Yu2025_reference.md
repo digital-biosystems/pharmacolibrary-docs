@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Oxcarbazepine CL/F (0.177 L/h) and V (227.0 L) come from a perampanel study in which oxcarbazepine was only a covariate, so the record was rejected.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="oxcarbazepine" model-id="Oxcarbazepine_Yu2025_reference" status="rejected" stale="false" population="" measured-compound="oxcarbazepine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Yu L, Mao F, Chen S, Liu J, Xiao J, Chen M et al. Development and Validation of 
 
 ### Reviewer guidance
 
-**Oxcarbazepine CL/F (0.177 L/h) and V (227.0 L) come from a perampanel study in which oxcarbazepine was only a covariate, so the record was rejected.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The paper models perampanel pharmacokinetics; oxcarbazepine is used only as a co-medication or covariate for a drug–drug interaction. The model also defaults the absorption rate and lag time, with the absorption rate unreported, and assumes F=1, Fm=1, no molar correction, and first-order depot input. Extracted — oxcarbazepine: CL/F 0.177 L/h, V 227 L.
+Extracted — oxcarbazepine: CL/F 0.177 L/h, V 227 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (5 of 5 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

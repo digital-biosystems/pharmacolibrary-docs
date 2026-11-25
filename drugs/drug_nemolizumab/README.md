@@ -38,10 +38,10 @@ Nemolizumab is a monoclonal antibody that treats specific skin conditions involv
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fauchet_2026_EASI](drugs/drug_nemolizumab/pd_Fauchet_2026_EASI.md) | Eczema Area and Severity Index biomarker turnover ← nemolizumab | — | Fauchet F et al., Model-informed drug development to supp…, British journal of clinical… (2026) | [10.1002/bcp.70435](https://doi.org/10.1002/bcp.70435) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fauchet_2026_wNRS](drugs/drug_nemolizumab/pd_Fauchet_2026_wNRS.md) | weekly average PP NRS biomarker turnover ← nemolizumab | — | Fauchet F et al., Model-informed drug development to supp…, British journal of clinical… (2026) | [10.1002/bcp.70435](https://doi.org/10.1002/bcp.70435) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Saito_2017_VAS](drugs/drug_nemolizumab/pd_Saito_2017_VAS.md) | pruritus visual analog scale ← nemolizumab · indirect response — drug inhibits the production of pruritus visual analog scale | — | Saito T et al., Dosage Optimization of Nemolizumab Usin…, Journal of clinical pharmac… (2017) | [10.1002/jcph.969](https://doi.org/10.1002/jcph.969) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fauchet_2026_EASI](drugs/drug_nemolizumab/pd_Fauchet_2026_EASI.md) | Eczema Area and Severity Index biomarker turnover ← nemolizumab | — | Fauchet F et al., Model-informed drug development to supp…, British journal of clinical… (2026) | [10.1002/bcp.70435](https://doi.org/10.1002/bcp.70435) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Fauchet_2026_IGA](drugs/drug_nemolizumab/pd_Fauchet_2026_IGA.md) | Investigator's Global Assessment of dermatitis severity biomarker turnover ← nemolizumab | — | Fauchet F et al., Model-informed drug development to supp…, British journal of clinical… (2026) | [10.1002/bcp.70435](https://doi.org/10.1002/bcp.70435) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fauchet_2026_wNRS](drugs/drug_nemolizumab/pd_Fauchet_2026_wNRS.md) | weekly average PP NRS biomarker turnover ← nemolizumab | — | Fauchet F et al., Model-informed drug development to supp…, British journal of clinical… (2026) | [10.1002/bcp.70435](https://doi.org/10.1002/bcp.70435) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

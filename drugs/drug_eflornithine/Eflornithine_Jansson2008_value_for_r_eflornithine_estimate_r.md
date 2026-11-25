@@ -52,7 +52,7 @@ Jansson R, Malm M, Roth C, Ashton M. Enantioselective and nonlinear intestinal a
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k a: this record has 1.16, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
@@ -150,8 +150,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | a second reader did not contradict the extraction |
-| T1_t_half_terminal | reference | skipped |  | 0.4323 |  | non-numeric value |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.818 (9 of 11 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | skipped |  | 0.4323 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

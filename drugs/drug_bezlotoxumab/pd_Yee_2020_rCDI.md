@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;bezlotoxumab&quot;,&quot;href&quot;:&quot;drugs/drug_bezlotoxumab/&quot;},{&quot;label&quot;:&quot;Yee_2020 \u00b7 PD recurrence of Clostridium difficile infection (time to event)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;bezlotoxumab&quot;,&quot;href&quot;:&quot;drugs/drug_bezlotoxumab/&quot;},{&quot;label&quot;:&quot;Yee_2020 \u00b7 PD recurrent Clostridium difficile infection (rCDI)&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bezlotoxumab_Yee2020_reference&quot;,&quot;label&quot;:&quot;Yee_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bezlotoxumab/Bezlotoxumab_Yee2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# recurrence of Clostridium difficile infection (time to event) — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+# recurrent Clostridium difficile infection (rCDI) — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Bezlotoxumab (concentrations from this paper's PK model) drives recurrence of Clostridium difficile infection (time to event): time-to-event model.
+**As extracted:** Bezlotoxumab (concentrations from this paper's PK model) drives recurrent Clostridium difficile infection (rCDI): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
@@ -23,10 +23,10 @@
 > <sub>Source-based summary by glm-5.3-flash from the paper's text; not human-verified</sub>
 
 - **paper:** `Yee_2020`
-- **model family:** `tte`
+- **model family:** `emax`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/additive
 
 ## Citation
 Yee KL et al., A time-to-event analysis of the exposur…, Journal of pharmacokinetics… (2020)
@@ -35,18 +35,9 @@ Yee KL et al., A time-to-event analysis of the exposur…, Journal of pharmacoki
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
+| PD (effect) | E max | `Q323` ·  | -0.300 |  | llm | Yee_2020:pdv3 |
+| PD (effect) | EAUC 50 | `Q321` ·  | 100 | lg.h/mL | llm | Yee_2020:pdv3 |
 | PD (effect) | k | `Q342` ·  | 0.0175 |  | llm | Yee_2020:pdv3 |
-| model term | Age-continuous | `Q900` ·  | 0.0084 |  | llm | Yee_2020:pdv3 |
-| model term | Endogenous IgG-B-low titer | `Q900` ·  | 0.414 |  | llm | Yee_2020:pdv3 |
-| model term | History of CDI in past 6 months-yes | `Q900` ·  | 0.907 |  | llm | Yee_2020:pdv3 |
-| model term | Hospitalization-outpatients | `Q900` ·  | 0.374 |  | llm | Yee_2020:pdv3 |
-| model term | Sex-male | `Q900` ·  | -0.156 |  | llm | Yee_2020:pdv3 |
-| model term | Charlson Comorbidity Index-score ≥3 | `Q900` ·  | -0.209 |  | llm | Yee_2020:pdv3 |
-| PD (effect) | Emax | `Q323` ·  | -0.300 |  | direction | Yee_2020:pdv3 |
-| model term | Endogenous IgG-B-low titer (on Emax) | `Q900` ·  | 1.18 |  | llm | Yee_2020:pdv3 |
-| PD (effect) | EAUC50 | `Q321` ·  | 100 | µg.h/mL | llm | Yee_2020:pdv3 |
-| PD (effect) | a | `Q343` ·  | -0.0567 |  | llm | Yee_2020:pdv3 |
-| model term | Concomitant use of systemic antibiotics-yes | `Q900` ·  | -0.220 |  | llm | Yee_2020:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -55,21 +46,20 @@ Yee KL et al., A time-to-event analysis of the exposur…, Journal of pharmacoki
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (5/10 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[Q100]` |  | -0.0567 | only_one_extracted |
+| `gpt-oss-120b` | `effect_form` | additive | proportional | mismatch |
+| `gpt-oss-120b` | `model_family` | emax | tte | mismatch |
 | `gpt-oss-120b` | `parameters[Q321]` | 100 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[Q342]` | 0.0175 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[Q343]` | -0.0567 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[Q900]` | -0.220 |  | only_one_extracted |
 
 </details>
 

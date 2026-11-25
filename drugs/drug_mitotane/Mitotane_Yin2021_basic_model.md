@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Mitotane’s Q/F was reported as 1100 /day, a unit inconsistent with intercompartmental clearance, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q69 unit /day (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="mitotane" model-id="Mitotane_Yin2021_basic_model" status="rejected" stale="false" population="adults with adrenocortical carcinoma" measured-compound="mitotane" parameterization="apparent" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Yin A, Ettaieb MHT, Swen JJ, van Deun L, Kerkhofs TMA, van der Straaten RJHM et 
 
 ### Reviewer guidance
 
-**Mitotane’s Q/F was reported as 1100 /day, a unit inconsistent with intercompartmental clearance, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q69 unit /day (1 / [time]) vs [length] ** 3 / [time].**
 
-Q/F represents apparent intercompartmental clearance, but /day has dimensions of inverse time rather than volume per time. The reported unit could not be converted to SI. Extracted — mitotane: kabs 15 /day, CL/F 217 L/day, V1/F 4.79e+03 L, V2/F 1.93e+04 L, Q/F 1.1e+03 /day.
+A reported unit could not be converted (Q/F), so that value has no SI equivalent. Extracted — mitotane: kabs 15 /day, CL/F 217 L/day, V1/F 4.79e+03 L, V2/F 1.93e+04 L, Q/F 1.1e+03 /day.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

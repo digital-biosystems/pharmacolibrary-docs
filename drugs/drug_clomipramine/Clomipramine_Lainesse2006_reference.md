@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
-> AUC∞, CL and AUC have no unit.
+> AUC has no unit.
 
 <div class="pk-model-meta" hidden drug="clomipramine" model-id="Clomipramine_Lainesse2006_reference" status="needs_review" stale="false" population="adult spayed cats" measured-compound="clomipramine" parameterization="mechanistic" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Lainesse C, Frank D, Meucci V, Intorre L, Soldani G, Doucet M. Pharmacokinetics 
 
 ## Population and dosing
 
-**Population:** adult cats · condition healthy · age group adult · n = 6.
+**Population:** adult spayed cats · condition healthy · age group adult.
 
 > **Species: cat.** This record comes from an animal study (cat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
@@ -24,7 +24,7 @@ Lainesse C, Frank D, Meucci V, Intorre L, Soldani G, Doucet M. Pharmacokinetics 
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 9 extracted.  
+**Parameters:** 8 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,18 +33,17 @@ Lainesse C, Frank D, Meucci V, Intorre L, Soldani G, Doucet M. Pharmacokinetics 
 | label | parameter | value | unit |
 |---|---|---|---|
 | half-life | t1/2z | 12.3 | h |
-| clomipramine AUC(0--infinity) | AUC∞ | 652.5 | ngxh/mL |
-| clearance | CL | 0.393 | L/hxkg |
+| AUC(0--infinity) | AUC | 652.5 | ngxh/mL |
+| clearance | CL | 0.393 | L/h |
 | V(ss) | V | 5.0 | L/kg |
 | MRT | MRT | 13.5 | h |
-| AUC(0--30 h) | AUC | 948.3 | ngxh/mL |
 | C(max) | Cmax | 87.5 | ng/mL |
 | T(max) | tmax | 6.2 | h |
-| Clomipramine bioavailability | Fab | 90 | % |
+| bioavailability | Fab | 90 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.611). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.867). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +53,11 @@ Lainesse C, Frank D, Meucci V, Intorre L, Soldani G, Doucet M. Pharmacokinetics 
 
 ### Reviewer guidance
 
-**AUC∞, CL and AUC have no unit.**
+**AUC has no unit.**
 
-Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clomipramine: t1/2z 12.3 h, AUC∞ 652 ngxh/mL, CL 0.393 L/hxkg, V 5 L/kg, MRT 13.5 h, AUC 948 ngxh/mL, Cmax 87.5 ng/mL, tmax 6.2 h, … (+1).
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clomipramine: t1/2z 12.3 h, AUC 652 ngxh/mL, CL 0.393 L/h, V 5 L/kg, MRT 13.5 h, Cmax 87.5 ng/mL, tmax 6.2 h, Fab 90.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clomipramine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc].value`: this record has 652.5, the second reading 948.3; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -66,15 +65,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| half-life | `Q57` · t1/2z | 12.3 | h | 4.428e+04 | s | h | llm (0.6) | Lainesse_2006:abstract |
-| clomipramine AUC(0--infinity) | `Q17` · AUC∞ | 652.5 | ngxh/mL |  |  | (h·ng)/ml | llm_corrected (0.6) | Lainesse_2006:abstract |
-| clearance | `Q22` · CL | 0.393 | L/hxkg |  |  | l/(h·kg) | exact (1) | Lainesse_2006:abstract |
+| half-life | `Q57` · t1/2z | 12.3 | h | 4.428e+04 | s | h | half_life_rule (0.95) | Lainesse_2006:abstract |
+| AUC(0--infinity) | `Q88` · AUC | 652.5 | ngxh/mL |  |  | (h·ng)/ml | exact (1) | Lainesse_2006:abstract |
+| clearance | `Q22` · CL | 0.393 | L/h | 1.092e-07 | m3/s | L/h | exact (1) | Lainesse_2006:abstract |
 | V(ss) | `Q61` · V | 5.0 | L/kg | 0.35 | m3 | l/kg | exact (1) | Lainesse_2006:abstract |
 | MRT | `Q53` · MRT | 13.5 | h | 4.86e+04 | s | h | exact (1) | Lainesse_2006:abstract |
-| AUC(0--30 h) | `Q88` · AUC | 948.3 | ngxh/mL |  |  | (h·ng)/ml | exact (1) | Lainesse_2006:abstract, Lainesse_2006:abstract |
-| C(max) | `Q32` · Cmax | 87.5 | ng/mL |  |  | ng/ml | llm (0.6) | Lainesse_2006:abstract, Lainesse_2006:abstract |
+| C(max) | `Q32` · Cmax | 87.5 | ng/mL | 8.75e-05 | kg/m3 | ng/ml | llm (0.6) | Lainesse_2006:abstract, Lainesse_2006:abstract |
 | T(max) | `Q56` · tmax | 6.2 | h | 2.232e+04 | s | h | llm (0.6) | Lainesse_2006:abstract, Lainesse_2006:abstract |
-| Clomipramine bioavailability | `Q40` · Fab | 90 | % |  |  |  | llm_confirmed (0.6) | Lainesse_2006:abstract |
+| bioavailability | `Q40` · Fab | 90 |  |  |  |  | exact (1) | Lainesse_2006:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -90,9 +88,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'ngxh/mL' (AUC∞)
-- unit_dimension_unknown: 'L/hxkg' (CL)
 - unit_dimension_unknown: 'ngxh/mL' (AUC)
+- unit_dimension_unknown: 'L/hxkg' (CL)
+- dropped duplicate Q88 ('AUC(0--30 h)', value 948.3) — already have one for this compound
+- implicit units: 'clearance' → L/h (from the popPK convention: 'No unit is provided in the paper text or table captions. In population pharmacokinetics, total clearance (CL) is most co')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clomipramine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
@@ -103,24 +102,19 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.611 (11/18 fields) | 7 |
+| `gpt-oss-120b` | partly confirmed | 0.867 (13/15 fields) | 2 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[auc]` | 948.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clomipramine auc]` | 652.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half-life]` | 12.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean auc]` |  | 948.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean clomipramine auc]` |  | 652.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean half-life]` |  | 12.3 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | clomipramine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[auc].value` | 652.5 | 948.3 | mismatch |
+| `gpt-oss-120b` | `parameters[clomipramine auc]` |  | 652.5 | only_one_extracted |
 
 </details>
 
@@ -134,20 +128,20 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 9 |  |
+| C0_has_structural_params | pass |  | 8 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Lainesse_2006:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Lainesse_2006:abstract', 'Lainesse_2006:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] |  | ['Lainesse_2006:abstract'] |
 | C5_dimension_Q53 | pass | [time] |  | ['Lainesse_2006:abstract'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Lainesse_2006:abstract', 'Lainesse_2006:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Lainesse_2006:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Lainesse_2006:abstract'] |
-| C5_unit_missing_Q17 | fail | [mass] * [time] / [length] ** 3 | ngxh/mL | ['Lainesse_2006:abstract'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | L/hxkg | ['Lainesse_2006:abstract'] |
-| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | ngxh/mL | ['Lainesse_2006:abstract', 'Lainesse_2006:abstract'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 | ngxh/mL | ['Lainesse_2006:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.393 | ['Lainesse_2006:abstract'] |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.393 L/h | ['Lainesse_2006:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 350 L | ['Lainesse_2006:abstract'] |
 
 <details class="legend">
@@ -182,4 +176,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclomipramine%5D%20Clomipramine_Lainesse2006_reference&body=Drug%3A%20clomipramine%0ARecord%3A%20Clomipramine_Lainesse2006_reference%0APaper%3A%20Lainesse_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clomipramine/Clomipramine_Lainesse2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:16 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 20:46 UTC</sub>

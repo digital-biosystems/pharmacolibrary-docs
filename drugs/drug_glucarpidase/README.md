@@ -48,7 +48,7 @@ Glucarpidase is a carboxypeptidase enzyme used to treat elevated methotrexate le
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:41 | 3:34 | 2/1/0 | 0/0/0 | 0/0/0 | 122,662/7,379 | ollama / glm-5.3-flash | 4 | 0/4 | 4/0 | 0 |
+| 2026-11-23 23:55 | 0:03 | 2/1/0 | 0/0/0 | 0/0/0 | 3,876/155 | einfracz / qwen3.8-27b | 4 | 0/4 | 4/0 | 0 |
 
 ## Coverage
 
@@ -62,10 +62,12 @@ Glucarpidase is a carboxypeptidase enzyme used to treat elevated methotrexate le
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Antoniw_1990 | irrelevant | 2 | 2 | CPG2 (glucarpidase) is only used as a prodrug-activating antibody-enzyme conjugate; the PK parameters reported (half-lives, AUC, Vd, Cl) are for the prodrug and active drug, not for glucarpidase itself. |
-| popPK | Mouawad_2026 | irrelevant | 1 | 0 | A narrative review of methotrexate toxicity management mentioning glucarpidase only as a mitigation agent, with no PK parameters for glucarpidase. |
+| popPK | Mouawad_2026 | irrelevant | 0 | 0 | The paper is a review discussing methotrexate management and toxicity; glucarpidase is mentioned only as a mitigation agent without any population pharmacokinetic parameters for the drug itself being reported. |
+| PGx | Mouawad_2026 | not_relevant | 0 | 0 | The text discusses methotrexate nephrotoxicity and management, mentioning glucarpidase only as a mitigation agent without reporting pharmacogenomic effects on its PK/PD. |
 | popPK | Taylor_2020 | irrelevant | 0 | 0 | This is a population PK study of methotrexate, not glucarpidase; glucarpidase is only mentioned as a rescue agent and patients receiving it were excluded, with no glucarpidase disposition parameters reported. |
 | popPK | Taylor_2023 | irrelevant | 0 | 0 | This is a population PK study of high-dose methotrexate (MTXPK.org model); glucarpidase is only mentioned as a supportive-care tool and its post-glucarpidase samples were excluded, with no glucarpidase disposition parameters reported. |
-| popPK | Weller_1994 | irrelevant | 0 | 0 | In vitro neurotoxicity study of folates in rat neuronal cultures with no glucarpidase PK parameters. |
+| popPK | Weller_1994 | irrelevant | 0 | 0 | The paper studies the neurotoxicity of folates in rat neurons and does not involve glucarpidase or its pharmacokinetics. |
+| PGx | Weller_1994 | not_relevant | 0 | 0 | The paper discusses folate toxicity in cultured neurons and does not mention glucarpidase, genetic variants, or pharmacokinetic/pharmacodynamic effects of glucarpidase. |
 
 
 </details>

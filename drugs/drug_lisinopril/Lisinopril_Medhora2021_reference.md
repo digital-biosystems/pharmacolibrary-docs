@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span>
 
-> Lisinopril’s renal clearance (CLR, 0.009 L/h) is implausible relative to its central volume (V1, 0.008 L), prompting rejection.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="lisinopril" model-id="Lisinopril_Medhora2021_reference" status="rejected" stale="false" population="irradiated and nonirradiated rats" measured-compound="lisinopril" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Medhora M, Phadnis P, Narayanan J, Gasperetti T, Zielonka J, Moulder JE et al. R
 
 ### Reviewer guidance
 
-**Lisinopril’s renal clearance (CLR, 0.009 L/h) is implausible relative to its central volume (V1, 0.008 L), prompting rejection.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports a renal clearance of 0.009 L/h and a central-compartment volume of 0.008 L; the review flags the clearance-to-volume magnitude as outside the physiological window, attributed to a unit or scale extraction error. A second reader marked both the dose compound and primary analyte as unknown, disagreeing with their identification as lisinopril in this record. Extracted — lisinopril: kabs 0.279 1/h, CLR 0.009 L/h, V1 0.008 L, Q 0.014 L/h, V2 0.513 L, Fab 0.192.
+Extracted — lisinopril: kabs 0.279 1/h, CLR 0.009 L/h, V1 0.008 L, Q 0.014 L/h, V2 0.513 L, Fab 0.192.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lisinopril, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

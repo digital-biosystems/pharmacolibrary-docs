@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Guanfacine's central volume of distribution is set to 128 L, creating a pharmacokinetically impossible structure with no dose path.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="guanfacine" model-id="Guanfacine_Tsuda2019_all" status="rejected" stale="false" population="pediatric ADHD patients" measured-compound="guanfacine" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Tsuda Y, Matsuo Y, Matsumoto S, Wajima T. Population pharmacokinetic and exposur
 
 ### Reviewer guidance
 
-**Guanfacine's central volume of distribution is set to 128 L, creating a pharmacokinetically impossible structure with no dose path.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The central compartment volume is extracted as 128 L, a value inconsistent with typical guanfacine pharmacokinetics. A validation check identified an unreachable compartment, confirming the model structure is broken. The second reader disagreed on the parameterization and noted that several extracted parameters are missing, including values for 66, 75, 67, 87, 91, 95, and 97. Extracted — guanfacine: V1 128 L, V2 129 L, AUCSS 11 ng$hr/mL, Cmax 11 ng/mL.
+A reported unit could not be converted (AUCSS and Cmax), so that value has no SI equivalent. Extracted — guanfacine: V1 128 L, V2 129 L, AUCSS 11 ng$hr/mL, Cmax 11 ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 29 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

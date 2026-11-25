@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Midomafetamine’s absorption rate constant is 60.2 1/h, but the model peaks at 0.209 h rather than 4 h and represents neither the measured parent output nor the parent–metabolite structure.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 4, model 0.209); t3_output_variable (+2 more).
 
 <div class="pk-model-meta" hidden drug="Midomafetamine" model-id="Midomafetamine_Huestis2025_mdma_pharmacokinetic_parameters_a" status="rejected" stale="false" population="healthy adults" measured-compound="midomafetamine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -41,7 +41,7 @@ Huestis MA, Smith WB, Leonowens C, Blanchard R, Viaccoz A, Spargo E et al. MDMA 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.438). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +51,13 @@ Huestis MA, Smith WB, Leonowens C, Blanchard R, Viaccoz A, Spargo E et al. MDMA 
 
 ### Reviewer guidance
 
-**Midomafetamine’s absorption rate constant is 60.2 1/h, but the model peaks at 0.209 h rather than 4 h and represents neither the measured parent output nor the parent–metabolite structure.**
+**The model does not reproduce the paper's time of the peak (tmax) (paper 4, model 0.209); t3_output_variable (+2 more).**
 
-The model does not reproduce the paper’s time of the peak (tmax) (paper 4, model 0.209); simulated as the paper dosed it, the model’s peak time differs from the reported value by more than the tolerance. The output was central-compartment concentration rather than concentration in the measured midomafetamine compartment, and the one-compartment enteral structure did not represent the parent–MDA metabolite structure. The lag time was defaulted, and apparent parameterization assumed F=1 and Fm=1 with no molar correction. Extracted — midomafetamine: CL/F 30.5 L/h, V1/F 19.9 L, kabs 60.2 1/h.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Extracted — midomafetamine: CL/F 30.5 L/h, V1/F 19.9 L, kabs 60.2 1/h.
 
-<sub>reviewed by gpt-6-luna</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of alag1: this record has none, the second reading 0.322; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -96,6 +98,35 @@ The model does not reproduce the paper’s time of the peak (tmax) (paper 4, mod
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.438 (7/16 fields) | 9 |
+
+<details><summary>9 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[alag1]` |  | 0.322 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[d1]` |  | 153 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fmet]` |  | 0.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka].covariate_forms` | [] | ['linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_f_body_weight]` |  | 1.03 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_kabs_fasted]` |  | 1.93 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_kabs_fed]` |  | -0.484 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q82_body_weight]` |  | 0.885 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -123,11 +154,11 @@ The model does not reproduce the paper’s time of the peak (tmax) (paper 4, mod
 | T3_rate_constant_conversion |  | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_tmax | reference | fail | 4 | 0.2087 | 0.0522 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 2 | 0.2087 | 0.1044 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 2 | 0.2087 | 0.1044 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.2087 | 0.2087 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.438 (7 of 16 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.438 | cross-check contradicted by a second reader: verdict disputed; agreement 0.438 (7 of 16 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_tmax | reference | fail | 4 | 0.2087 | 0.0522 | reported 4.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 2 | 0.2087 | 0.1044 | reported 2.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 2 | 0.2087 | 0.1044 | reported 2.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.2087 | 0.2087 | reported 1.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

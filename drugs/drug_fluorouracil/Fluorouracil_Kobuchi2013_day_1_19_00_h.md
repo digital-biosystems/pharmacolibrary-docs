@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The model was rejected because the peripheral compartment is unreachable from the dose, with no path from the central compartment to the first peripheral compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Kobuchi2013_day_1_19_00_h" status="rejected" stale="false" population="rats with colorectal cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Kobuchi S, Ito Y, Okada K, Imoto K, Kuwano S, Takada K. Pharmacokinetic/pharmaco
 
 ### Reviewer guidance
 
-**The model was rejected because the peripheral compartment is unreachable from the dose, with no path from the central compartment to the first peripheral compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defines a first-order transfer rate constant from the central to the first peripheral compartment (k12) with a value of 2.80 h−1. However, the review identified an unreachable compartment, indicating a structural error where the peripheral compartment lacks a valid connection from the dose. The elimination rate constant (kel) is 4.49 h−1 and the absorption rate (kabs) is 0.13 1/h, but the invalid topology prevents proper model simulation. The clearance (CL) is reported as 1.45 L·h−1·kg−1, yet the structural flaw renders the model unusable for pharmacokinetic analysis. Extracted — fluorouracil: kel 4.49 h−1, k12 2.8 h−1, k21 1.99 h−1, AUC∞ 13.5 µg·h·mL−1, CL 1.45 L·h−1·kg−1, V1 0.33 L·kg−1, V2 0.46 L·kg−1, kabs 0.13 1/h.
+Extracted — fluorouracil: kel 4.49 h−1, k12 2.8 h−1, k21 1.99 h−1, AUC∞ 13.5 µg·h·mL−1, CL 1.45 L·h−1·kg−1, V1 0.33 L·kg−1, V2 0.46 L·kg−1, kabs 0.13 1/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

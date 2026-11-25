@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The etanercept biosimilar record uses library defaults for bioavailability and lag time, which are not supported by the paper.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="etanercept" model-id="Etanercept_Ling2024_reference" status="needs_review" stale="false" population="patients with rheumatoid arthritis" measured-compound="etanercept biosimilar" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Ling SF, Ogungbenro K, Darwich AS, Ariff ABM, Nair N, Bluett J et al. Population
 
 ### Reviewer guidance
 
-**The etanercept biosimilar record uses library defaults for bioavailability and lag time, which are not supported by the paper.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record lists absorption, clearance, and volume parameters but leaves bioavailability and lag time at library placeholders. The paper does not provide explicit estimates for these parameters, so the simulated profile relies on unsupported conventions. A second reader could not confirm the specific compound identity, adding uncertainty to the record's attribution. Extracted — etanercept biosimilar: V 9.19 L, CL 0.00283 L/h, kabs 0.117 /h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. None of the extracted parameters is etanercept's own; they describe etanercept biosimilar. Extracted — etanercept biosimilar: V 9.19 L, CL 0.00283 L/h, kabs 0.117 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etanercept biosimilar, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.778 (7 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | cross-check contradicted by a second reader: verdict disputed; agreement 0.778 (7 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

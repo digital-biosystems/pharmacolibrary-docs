@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record for ciprofloxacin contains parameters for ofloxacin metabolites and conflicting dose assignment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Lode1988_ciprofloxacin" status="rejected" stale="false" population="healthy adults" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -56,13 +56,13 @@ Lode H, Höffken G, Olschewski P, Sievers B, Kirch A, Borner K et al. Comparativ
 
 ### Reviewer guidance
 
-**Record for ciprofloxacin contains parameters for ofloxacin metabolites and conflicting dose assignment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure includes metabolic links for ofloxacin to its metabolites, yet the measured compound is ciprofloxacin. Parameters for hepatic clearance (670 ml/min) and peripheral volume (178 l) are present despite no corresponding ofloxacin data being measured. The second reader identified the dose compound as both ofloxacin and ciprofloxacin, contradicting the record's single compound assignment. Extracted — ciprofloxacin: t1/2z 286 min, Vss 261 l, AUC∞ 2.6 h. mg/l, CL 701 ml/min, fe 58.5 % dose, V2 178 l, CLH 670 ml/min, V 117 L, … (+2).
+Extracted — ciprofloxacin: t1/2z 286 min, Vss 261 l, AUC∞ 2.6 h. mg/l, CL 701 ml/min, fe 58.5 % dose, V2 178 l, CLH 670 ml/min, V 117 L, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ciprofloxacin, the second reading ofloxacin and ciprofloxacin; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

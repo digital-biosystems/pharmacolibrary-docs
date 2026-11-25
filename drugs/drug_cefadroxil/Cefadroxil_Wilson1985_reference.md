@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Cefadroxil model rejected because abstract-only derivation failed dimension checks for initial concentration and clearance units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit micrograms/ml ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q22 unit ml/min.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Wilson1985_reference" status="rejected" stale="false" population="healthy adult mares" measured-compound="cefadroxil" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Wilson WD, Baggot JD, Adamson PJ, Hirsh DC, Hietala SK. Cefadroxil in the horse:
 
 ### Reviewer guidance
 
-**Cefadroxil model rejected because abstract-only derivation failed dimension checks for initial concentration and clearance units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit micrograms/ml ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q22 unit ml/min.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].**
 
-The record was built from the abstract alone, so reported summary statistics stand in for a fitted model. A dimensional analysis flagged a mismatch for the extrapolated initial plasma concentration (59.2 micrograms/ml) and the body clearance (7.0 ml/min.kg). A second reader could not confirm any of the extracted parameter values, finding them all missing. Extracted — cefadroxil: C0 59.2 micrograms/ml, t1/2z 46 min, V/F 462 ml/kg, CL 7 ml/min.kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefadroxil: C0 59.2 micrograms/ml, t1/2z 46 min, V/F 462 ml/kg, CL 7 ml/min.kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefadroxil, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

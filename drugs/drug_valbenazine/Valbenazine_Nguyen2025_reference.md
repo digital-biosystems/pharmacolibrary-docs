@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07X&quot;,&quot;href&quot;:&quot;atc/N07X.md&quot;},{&quot;label&quot;:&quot;valbenazine&quot;,&quot;href&quot;:&quot;drugs/drug_valbenazine/&quot;},{&quot;label&quot;:&quot;Nguyen_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Valbenazine_Nguyen2025_reference&quot;,&quot;label&quot;:&quot;Nguyen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_valbenazine/Valbenazine_Nguyen2025_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Valbenazine_Nguyen2025_reference&quot;,&quot;label&quot;:&quot;Nguyen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_valbenazine/Valbenazine_Nguyen2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # valbenazine — `Valbenazine_Nguyen2025_reference`
 
-> ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The metabolite output was incorrectly assigned to the parent compartment, and the model structure did not match the parent-metabolite topology.
+> The covariate scenarios were not simulated; t3_param_coverage (+2 more).
 
-<div class="pk-model-meta" hidden drug="valbenazine" model-id="Valbenazine_Nguyen2025_reference" status="rejected" stale="false" population="healthy subjects and patients with tardive dyskinesia and Huntington&#39;s disease chorea" measured-compound="[+]-α-HTBZ" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="valbenazine" model-id="Valbenazine_Nguyen2025_reference" status="needs_review" stale="false" population="patients with Huntington&#39;s disease" measured-compound="valbenazine" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Nguyen HQ, Crass RL, Chapel S, Kuan HS, Loewen G, Brar S. Population Pharmacokinetic and Exposure-Efficacy Analyses of Valbenazine in Patients with Huntington's Disease: Supporting Dose Selection for Chorea Management. Journal of clinical pharmacology 65(12):1777–1788 (2025).
@@ -17,23 +17,21 @@ Nguyen HQ, Crass RL, Chapel S, Kuan HS, Loewen G, Brar S. Population Pharmacokin
 
 ## Population and dosing
 
-**Population:** healthy subjects and patients with tardive dyskinesia and Huntington's disease chorea · condition Huntington's disease chorea and tardive dyskinesia · age group adult · n = 425.
+**Population:** patients with Huntington's disease · condition Huntington's disease · age group adult · n = 425.
 
-**Dosing:** 20, 40, 60, 80 mg, oral, multiple, every 24 h.
-
-**Dosed compound ≠ measured compound:** dosed valbenazine, measured [+]-α-HTBZ.
+**Dosing:** 40, 80 mg, oral, multiple, every 24 h.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 10 extracted, plus 2 covariate effects.  
+**Parameters:** 10 extracted, plus 6 covariate effects.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_valbenazine/Valbenazine_Nguyen2025_reference/Valbenazine_Nguyen2025_reference.svg" alt="Valbenazine_Nguyen2025_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit | RSE% |
 |---|---|---|---|---|
@@ -43,12 +41,16 @@ Nguyen HQ, Crass RL, Chapel S, Kuan HS, Loewen G, Brar S. Population Pharmacokin
 | 4 QP/F (L/h) | Q/F | 22.0 | L/h | 4.35 |
 | 5 VPP/F (L) | V2/F | 198 | L | 3.44 |
 | 6 Fmax (relative to 1 mg) | Frel | 1.36 | relative to 1 mg | 10.9 |
+| 10_fed_status_on_f1 | 10_fed_status_on_f1 | -0.0646 |  | 20.2 |
 | 13 CLM (L/h) | CL | 31.0 | L/h | 4.99 |
-| 14 FM | fm | 0.207 | Units | 1.91 |
+| 14 FM | fm | 0.207 |  | 1.91 |
 | 15 QM (L/h) | Q | 1.27 | L/h | 7.60 |
 | 16 VPM (L) | V2 | 97.8 | L | 7.12 |
-| theta_cl_poor_metabolizer | theta_cl_poor_metabolizer | -0.516 |  | 12.3 |
-| theta_q314_intermediate_metabolizer | theta_q314_intermediate_metabolizer | -0.281 |  | 15.3 |
+| 17_poor_metabolizer_a_on_clm | 17_poor_metabolizer_a_on_clm | -0.516 |  | 12.3 |
+| 21_wt_on_clp | 21_wt_on_clp | 0.602 |  | 21.2 |
+| 22_wt_on_vcp | 22_wt_on_vcp | 1.04 |  | 17.0 |
+| theta_kabs_fed | theta_kabs_fed | -0.685 |  | 0.816 |
+| theta_q351_intermediate_metabolizer | theta_q351_intermediate_metabolizer | -0.281 |  | 15.3 |
 
 ## Caveats
 
@@ -56,7 +58,7 @@ Nguyen HQ, Crass RL, Chapel S, Kuan HS, Loewen G, Brar S. Population Pharmacokin
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.657). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.462). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -66,30 +68,34 @@ Nguyen HQ, Crass RL, Chapel S, Kuan HS, Loewen G, Brar S. Population Pharmacokin
 
 ### Reviewer guidance
 
-**The metabolite output was incorrectly assigned to the parent compartment, and the model structure did not match the parent-metabolite topology.**
+**The covariate scenarios were not simulated; t3_param_coverage (+2 more).**
 
-The record specified the metabolite concentration as the output variable but the model simulated the parent drug concentration. The model builder used a one-compartment absorption structure instead of the required three-compartment parent-metabolite structure. Consequently, the metabolite-specific volume and intercompartmental clearance parameters were not applied. Extracted — valbenazine: CL/F 23.2 L/h, V1/F 226 L, kabs 8.43 per hour, Q/F 22 L/h, V2/F 198 L, Frel 1.36 relative to 1 mg, fm 0.207 Units; [+]-α-HTBZ: CL 31 L/h, Q 1.27 L/h, V2 97.8 L.
+The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (Frel), so that value has no SI equivalent. Extracted — valbenazine: CL/F 23.2 L/h, V1/F 226 L, kabs 8.43 per hour, Q/F 22 L/h, V2/F 198 L, Frel 1.36 relative to 1 mg; [+]‐α‐dihydrotetrabenazine: CL 31 L/h, fm 0.207, Q 1.27 L/h, V2 97.8 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has [+]-α-HTBZ, the second reading valbenazine; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has valbenazine → [+]‐α‐dihydrotetrabenazine (metabolism), the second reading valbenazine → [+]‐α‐htbz (metabolism); it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 CLP/F (L/h) | `Q27` · CL/F | 23.2 | L/h | 6.444e-06 | m3/s | l/h | 3.95 | exact (1) | jcph70092-tbl-0001:row1:col1, jcph70092-tbl-0001:row1:col2 |
-| 2 VC/F (L) | `Q290` · V1/F | 226 | L | 0.226 | m3 | l | 4.49 | exact (1) | jcph70092-tbl-0001:row2:col1, jcph70092-tbl-0001:row2:col2 |
-| 3 KA (per hour) | `Q49` · kabs | 8.43 | per hour | 0.002342 | 1/s | 1/h | 3.84 | exact (1) | jcph70092-tbl-0001:row3:col1, jcph70092-tbl-0001:row3:col2 |
-| 4 QP/F (L/h) | `Q69` · Q/F | 22.0 | L/h | 6.111e-06 | m3/s | l/h | 4.35 | exact (1) | jcph70092-tbl-0001:row4:col1, jcph70092-tbl-0001:row4:col2 |
-| 5 VPP/F (L) | `Q82` · V2/F | 198 | L | 0.198 | m3 | l | 3.44 | exact (1) | jcph70092-tbl-0001:row5:col1, jcph70092-tbl-0001:row5:col2 |
-| 6 Fmax (relative to 1 mg) | `Q87` · Frel | 1.36 | relative to 1 mg |  |  | mg·relativeto1 | 10.9 | llm (0.6) | jcph70092-tbl-0001:row6:col1, jcph70092-tbl-0001:row6:col2 |
-| 13 CLM (L/h) | `Q22` · CL | 31.0 | L/h | 8.611e-06 | m3/s | l/h | 4.99 | exact (1) | jcph70092-tbl-0001:row11:col1, jcph70092-tbl-0001:row11:col2 |
-| 14 FM | `Q45` · fm | 0.207 | Units |  |  | units | 1.91 | llm_confirmed (0.6) | jcph70092-tbl-0001:row12:col1, jcph70092-tbl-0001:row12:col2 |
-| 15 QM (L/h) | `Q30` · Q | 1.27 | L/h | 3.528e-07 | m3/s | l/h | 7.60 | exact (1) | jcph70092-tbl-0001:row13:col1, jcph70092-tbl-0001:row13:col2 |
-| 16 VPM (L) | `Q64` · V2 | 97.8 | L | 0.0978 | m3 | l | 7.12 | exact (1) | jcph70092-tbl-0001:row14:col1, jcph70092-tbl-0001:row14:col2 |
-| theta_cl_poor_metabolizer | `Q900` · theta_cl_poor_metabolizer | -0.516 |  |  |  |  | 12.3 |  | jcph70092-tbl-0001:row15:col1, jcph70092-tbl-0001:row15:col2 |
-| theta_q314_intermediate_metabolizer | `Q900` · theta_q314_intermediate_metabolizer | -0.281 |  |  |  |  | 15.3 |  | jcph70092-tbl-0001:row16:col1, jcph70092-tbl-0001:row16:col2 |
+| 1 CLP/F (L/h) | `Q27` · CL/F | 23.2 | L/h | 6.444e-06 | m3/s | l/h | 3.95 | exact (1) | jcph70092-tbl-0001:row1:col1 |
+| 2 VC/F (L) | `Q290` · V1/F | 226 | L | 0.226 | m3 | l | 4.49 | exact (1) | jcph70092-tbl-0001:row2:col1 |
+| 3 KA (per hour) | `Q49` · kabs | 8.43 | per hour | 0.002342 | 1/s | 1/h | 3.84 | exact (1) | jcph70092-tbl-0001:row3:col1 |
+| 4 QP/F (L/h) | `Q69` · Q/F | 22.0 | L/h | 6.111e-06 | m3/s | l/h | 4.35 | exact (1) | jcph70092-tbl-0001:row4:col1 |
+| 5 VPP/F (L) | `Q82` · V2/F | 198 | L | 0.198 | m3 | l | 3.44 | exact (1) | jcph70092-tbl-0001:row5:col1 |
+| 6 Fmax (relative to 1 mg) | `Q87` · Frel | 1.36 | relative to 1 mg |  |  | mg·relative·to1 | 10.9 | llm (0.6) | jcph70092-tbl-0001:row6:col1 |
+| 10_fed_status_on_f1 | `Q900` · 10_fed_status_on_f1 | -0.0646 |  |  |  |  | 20.2 |  | jcph70092-tbl-0001:row10:col1 |
+| 13 CLM (L/h) | `Q22` · CL | 31.0 | L/h | 8.611e-06 | m3/s | l/h | 4.99 | exact (1) | jcph70092-tbl-0001:row11:col1 |
+| 14 FM | `Q45` · fm | 0.207 |  | 0.207 |  |  | 1.91 | exact (1) | jcph70092-tbl-0001:row12:col1 |
+| 15 QM (L/h) | `Q30` · Q | 1.27 | L/h | 3.528e-07 | m3/s | l/h | 7.60 | exact (1) | jcph70092-tbl-0001:row13:col1 |
+| 16 VPM (L) | `Q64` · V2 | 97.8 | L | 0.0978 | m3 | l | 7.12 | exact (1) | jcph70092-tbl-0001:row14:col1 |
+| 17_poor_metabolizer_a_on_clm | `Q900` · 17_poor_metabolizer_a_on_clm | -0.516 |  |  |  |  | 12.3 |  | jcph70092-tbl-0001:row15:col1 |
+| 21_wt_on_clp | `Q900` · 21_wt_on_clp | 0.602 |  |  |  |  | 21.2 |  | jcph70092-tbl-0001:row17:col1 |
+| 22_wt_on_vcp | `Q900` · 22_wt_on_vcp | 1.04 |  |  |  |  | 17.0 |  | jcph70092-tbl-0001:row18:col1 |
+| theta_kabs_fed | `Q900` · theta_kabs_fed | -0.685 |  |  |  |  | 0.816 |  | jcph70092-tbl-0001:row9:col1 |
+| theta_q351_intermediate_metabolizer | `Q900` · theta_q351_intermediate_metabolizer | -0.281 |  |  |  |  | 15.3 |  | jcph70092-tbl-0001:row16:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -108,82 +114,62 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which m
 - table section residual_error: '19 Log additive (metabolite, rich)' routed out of structural estimates ('Residual variability (%)')
 - table section residual_error: '20 Log additive (metabolite, sparse)' routed out of structural estimates ('Residual variability (%)')
 - unit_dimension_unknown: 'relative to 1 mg' (Frel)
-- dropped PD-category row '7 ED50 (mg)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['jcph70092-tbl-0001:row7:col1', 'jcph70092-tbl-0001:row7:col2'])
-- routed '8 Solution on KA' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- dropped unlinked row (NIL): '9 Fed status on KA' — extend the ontology if this is a real PK parameter (source ['jcph70092-tbl-0001:row9:col1', 'jcph70092-tbl-0001:row9:col2'])
-- dropped unlinked row (NIL): '10 Fed status on F1' — extend the ontology if this is a real PK parameter (source ['jcph70092-tbl-0001:row10:col1', 'jcph70092-tbl-0001:row10:col2'])
-- dropped unlinked row (NIL): '21 WT on CLP' — extend the ontology if this is a real PK parameter (source ['jcph70092-tbl-0001:row17:col1', 'jcph70092-tbl-0001:row17:col2'])
-- dropped unlinked row (NIL): '22 WT on VCP' — extend the ontology if this is a real PK parameter (source ['jcph70092-tbl-0001:row18:col1', 'jcph70092-tbl-0001:row18:col2'])
-- covariate effect for Q314 has no base parameter row (kept as unattached equation-variable)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=[+]-α-HTBZ
+- dropped PD-category row '7 ED50 (mg)' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['jcph70092-tbl-0001:row7:col1'])
+- dropped unlinked row (NIL): '8 Solution on KA' — extend the ontology if this is a real PK parameter (source ['jcph70092-tbl-0001:row8:col1'])
+- covariate level '10 Fed status on F1' → Q900:10_fed_status_on_f1 = -0.0646 (linear_fractional on Q27)
+- covariate level '17 Poor metabolizer a on CLM' → Q900:17_poor_metabolizer_a_on_clm = -0.516 (linear_fractional on Q27)
+- covariate level '21 WT on CLP' → Q900:21_wt_on_clp = 0.602 (linear_fractional on Q27)
+- covariate level '22 WT on VCP' → Q900:22_wt_on_vcp = 1.04 (linear_fractional on Q27)
+- covariate effect for Q351 has no base parameter row (kept as unattached equation-variable)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=valbenazine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
+- template fit: PK_3M_9C — formed from central; parent 2, metabolites [1]
+- pharmacogenetic covariate '17_poor_metabolizer_a_on_clm' (poor metabolizer) — PGx domain
+- pharmacogenetic covariate 'theta_q351_intermediate_metabolizer' (intermediate metabolizer) — PGx domain
 - status held at "Needs review" — not promoted
-- row roles: 2 per-group rows of [+]-α-HTBZ covariate_effect but 0 reference group(s) — kept as printed
-- row roles: 2 per-group rows of valbenazine residual_error but 0 reference group(s) — kept as printed
-- row roles: 2 per-group rows of [+]-α-HTBZ residual_error but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 22/22 row label(s) assigned, 16 linked by role; re-tagged parent→[+]-α-HTBZ ×14
-- molar mass: no plausible PubChem entry for '[+]-α-dihydrotetrabenazine ([+]-α-HTBZ)' ('[+]-α-HTBZ') — left in mass units
-- molar mass: no plausible PubChem entry for '[+]-α-HTBZ' ('[+]-α-HTBZ') — left in mass units
-- molar mass: none found for '[+]-α-dihydrotetrabenazine ([+]-α-HTBZ)' — its concentrations stay mass-only
-- molar mass: none found for '[+]-α-HTBZ' — its concentrations stay mass-only
-- review gap-fill skipped: this record measures '[+]-α-HTBZ', not valbenazine — the review values are the parent's
-- engineer: parent_metabolite composite downgraded to a 1C model of the measured compound — the paper reports the metabolite's own CL and V but neither the parent's disposition nor a formation rate, so the parent sub-component could not be populated; the parent's concentration-time course is NOT produced by this model
+- row roles: 2 per-group rows of [+]‐α‐dihydrotetrabenazine covariate_effect but 0 reference group(s) — kept as printed
+- row roles: 2 per-group rows of valbenazine covariate_effect but 2 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 22/22 row label(s) assigned, 9 linked by role; re-tagged parent→[+]‐α‐dihydrotetrabenazine ×6
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell jcph70092-tbl-0001:row1:col3 = '(21.4, 25.0)'
-- unparsed cell jcph70092-tbl-0001:row2:col3 = '(206, 246)'
-- unparsed cell jcph70092-tbl-0001:row3:col3 = '(7.79, 9.06)'
-- unparsed cell jcph70092-tbl-0001:row4:col3 = '(20.1, 23.9)'
-- unparsed cell jcph70092-tbl-0001:row5:col3 = '(185, 211)'
-- unparsed cell jcph70092-tbl-0001:row6:col3 = '(1.07, 1.65)'
-- unparsed cell jcph70092-tbl-0001:row7:col3 = '(49.6, 131)'
-- unparsed cell jcph70092-tbl-0001:row8:col3 = '(1.35, 1.68)'
-- unparsed cell jcph70092-tbl-0001:row9:col3 = '(−0.696, −0.674)'
-- unparsed cell jcph70092-tbl-0001:row10:col3 = '(−0.0901, −0.0391)'
-- unparsed cell jcph70092-tbl-0001:row11:col3 = '(28.0, 34.1)'
-- unparsed cell jcph70092-tbl-0001:row12:col3 = '(0.199, 0.214)'
-- unparsed cell jcph70092-tbl-0001:row13:col3 = '(1.08, 1.45)'
-- unparsed cell jcph70092-tbl-0001:row14:col3 = '(84.2, 111)'
-- unparsed cell jcph70092-tbl-0001:row15:col3 = '(−0.641, −0.391)'
-- unparsed cell jcph70092-tbl-0001:row16:col3 = '(−0.366, −0.197)'
-- unparsed cell jcph70092-tbl-0001:row17:col3 = '(0.352, 0.852)'
-- unparsed cell jcph70092-tbl-0001:row18:col3 = '(0.695, 1.39)'
-- unparsed cell jcph70092-tbl-0001:row20:col3 = '(0.395, 0.410)'
-- unparsed cell jcph70092-tbl-0001:row20:col4 = '40.2% (39.5%, 41.0%)'
-- unparsed cell jcph70092-tbl-0001:row21:col3 = '(0.649, 0.708)'
-- unparsed cell jcph70092-tbl-0001:row21:col4 = '67.8% (64.9%, 70.8%)'
-- unparsed cell jcph70092-tbl-0001:row22:col3 = '(0.259, 0.270)'
-- unparsed cell jcph70092-tbl-0001:row22:col4 = '26.4% (25.9%, 27.0%)'
-- unparsed cell jcph70092-tbl-0001:row23:col3 = '(0.688, 0.752)'
-- unparsed cell jcph70092-tbl-0001:row23:col4 = '72.0% (68.8%, 75.2%)'
+- table jcph70092-tbl-0001: unparsed_numeric_cell
 - LLM selected parameter table(s) 1
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.657 (23/35 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.462 (18/39 fields) | 21 |
 
-<details><summary>12 field discrepancies</summary>
+<details><summary>21 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[13 clm].covariate_forms` | ['linear_fractional'] | ['linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `model.links` | [['valbenazine', '[+]‐α‐dihydrotetrabenazine', 'metabolism']] | [['valbenazine', '[+]‐α‐htbz', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[1 clp/f].covariate_forms` | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[10_fed_status_on_f1]` | -0.0646 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[13 clm]` | 31.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[13 clm]` |  | 31.0 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[14 fm]` | 0.207 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[14 fm]` |  | 0.207 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[3 ka].covariate_forms` | [] | ['linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[15 qm]` | 1.27 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[15 qm]` |  | 1.27 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[16 vpm]` | 97.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[16 vpm]` |  | 97.8 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[17_poor_metabolizer_a_on_clm]` | -0.516 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[21_wt_on_clp]` | 0.602 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[22_wt_on_vcp]` | 1.04 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[6 fmax].covariate_forms` | [] | ['linear_fractional'] | mismatch |
 | `gpt-oss-120b` | `parameters[theta_cl_intermediate_metabolizer]` |  | -0.281 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_poor_metabolizer]` |  | -0.516 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_frel_fed]` |  | -0.0646 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_kabs_fed]` |  | -0.685 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[theta_q22_wt]` |  | 0.602 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q314_intermediate_metabolizer]` | -0.281 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_q63_wt]` |  | 1.04 | only_one_extracted |
-| `gpt-oss-120b` | `screen.primary_analyte` | [+]-α-HTBZ | valbenazine | mismatch |
+| `gpt-oss-120b` | `parameters[theta_q351_intermediate_metabolizer]` | -0.281 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q61_wt]` |  | 1.04 | only_one_extracted |
 
 </details>
 
@@ -201,35 +187,36 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['jcph70092-tbl-0001:row11:col1', 'jcph70092-tbl-0001:row11:col2'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['jcph70092-tbl-0001:row1:col1', 'jcph70092-tbl-0001:row1:col2'] |
-| C5_dimension_Q290 | pass | [length] ** 3 |  | ['jcph70092-tbl-0001:row2:col1', 'jcph70092-tbl-0001:row2:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['jcph70092-tbl-0001:row13:col1', 'jcph70092-tbl-0001:row13:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['jcph70092-tbl-0001:row3:col1', 'jcph70092-tbl-0001:row3:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['jcph70092-tbl-0001:row14:col1', 'jcph70092-tbl-0001:row14:col2'] |
-| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['jcph70092-tbl-0001:row4:col1', 'jcph70092-tbl-0001:row4:col2'] |
-| C5_dimension_Q82 | pass | [length] ** 3 |  | ['jcph70092-tbl-0001:row5:col1', 'jcph70092-tbl-0001:row5:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['jcph70092-tbl-0001:row11:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['jcph70092-tbl-0001:row1:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 |  | ['jcph70092-tbl-0001:row2:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['jcph70092-tbl-0001:row13:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['jcph70092-tbl-0001:row3:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['jcph70092-tbl-0001:row14:col1'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] |  | ['jcph70092-tbl-0001:row4:col1'] |
+| C5_dimension_Q82 | pass | [length] ** 3 |  | ['jcph70092-tbl-0001:row5:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 31 L/h | ['jcph70092-tbl-0001:row11:col1', 'jcph70092-tbl-0001:row11:col2'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 23.2 L/h | ['jcph70092-tbl-0001:row1:col1', 'jcph70092-tbl-0001:row1:col2'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 226 L | ['jcph70092-tbl-0001:row2:col1', 'jcph70092-tbl-0001:row2:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 97.8 L | ['jcph70092-tbl-0001:row14:col1', 'jcph70092-tbl-0001:row14:col2'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 198 L | ['jcph70092-tbl-0001:row5:col1', 'jcph70092-tbl-0001:row5:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 31 L/h | ['jcph70092-tbl-0001:row11:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 23.2 L/h | ['jcph70092-tbl-0001:row1:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 226 L | ['jcph70092-tbl-0001:row2:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 97.8 L | ['jcph70092-tbl-0001:row14:col1'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 198 L | ['jcph70092-tbl-0001:row5:col1'] |
 
 **Reviewer per-scenario checks:**
 
 | check | scenario | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T2_covariates_not_exercised | (all) | fail |  |  |  | the phenotype scenarios were simulated, but not the covariates fed, intermediate metabolizer, wt |
 | T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable |  | fail | Metabolite_C (measured=[+]-α-HTBZ) | central.C |  | output must be the measured/analyte compartment |
+| T3_output_variable |  | pass | C_central (measured=valbenazine) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage |  | fail | 8 scholar param(s) emitted or defaulted | 6 covered |  | neither emitted nor in defaulted[]: ['V2/F', 'V2'] |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T3_topology_template |  | fail | parent_metabolite_central → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.657, 0 of 1 reader(s) agree | 0.657 | cross-check disputed by a second reader: verdict disputed, agreement 0.657, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped | 1.83 | 8.256e-05 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.462 (18 of 39 compared fields agree, 18 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.462 | cross-check contradicted by a second reader: verdict disputed; agreement 0.462 (18 of 39 compared fields agree, 18 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T2_pgx_Poor | pgx:Poor | pass |  |  |  | Poor vs Normal: central.C auc +52 %, central.C cmax +2 % (PK_1C_enteral.fmu, 2 phenotypes) |
+| T1_cmax | reference | skipped | 1.83 | 8.256e-05 |  | unresolved concentration unit (exp '[90% CI, 1.55‐2.25]', sim 'kg/m3') |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -241,9 +228,60 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_valbenazine/Valbenazine_Nguyen2025_reference/Valbenazine_Nguyen2025_reference_modelica.zip" download>Valbenazine_Nguyen2025_reference_modelica.zip</a> <span class="pk-size">(5.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_valbenazine/Valbenazine_Nguyen2025_reference/Valbenazine_Nguyen2025_reference_fmi.zip" download>Valbenazine_Nguyen2025_reference_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_valbenazine/Valbenazine_Nguyen2025_reference/Valbenazine_Nguyen2025_reference_matlab.zip" download>Valbenazine_Nguyen2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_valbenazine/Valbenazine_Nguyen2025_reference/Valbenazine_Nguyen2025_reference_matlab_simbio.zip" download>Valbenazine_Nguyen2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_valbenazine/Valbenazine_Nguyen2025_reference/Valbenazine_Nguyen2025_reference_sbml.zip" download>Valbenazine_Nguyen2025_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_valbenazine/Valbenazine_Nguyen2025_reference/Valbenazine_Nguyen2025_reference_cellml.zip" download>Valbenazine_Nguyen2025_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 2e-05 | kg |
+| input | model | `Cl` | 8.611e-06 | m3/s |
+| input | model | `VdPerKg` | 0.003229 | m3/kg |
+| input | model | `ka` | 0.002342 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Nguyen HQ, Crass RL, Chapel S, Kuan HS, Loewen G, Brar S. Population Pharmacokinetic and Exposure-Efficacy Analyses of Valbenazine in Patients with Huntington's Disease: Supporting Dose Selection for Chorea Management. Journal of clinical pharmacology 65(12):1777–1788 (2025). [doi:10.1002/jcph.70092](https://doi.org/10.1002/jcph.70092)
+
+**This record:** Pharmacolibrary, model `Valbenazine_Nguyen2025_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_valbenazine/Valbenazine_Nguyen2025_reference>
+
+```bibtex
+@misc{pharmacolibrary_ValbenazineNguyen2025reference,
+  title  = {{Pharmacolibrary model Valbenazine_Nguyen2025_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_valbenazine/Valbenazine_Nguyen2025_reference},
+  note   = {Parameters from doi:10.1002/jcph.70092},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -257,4 +295,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvalbenazine%5D%20Valbenazine_Nguyen2025_reference&body=Drug%3A%20valbenazine%0ARecord%3A%20Valbenazine_Nguyen2025_reference%0APaper%3A%20Nguyen_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_valbenazine/Valbenazine_Nguyen2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 05:03 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:06 UTC</sub>

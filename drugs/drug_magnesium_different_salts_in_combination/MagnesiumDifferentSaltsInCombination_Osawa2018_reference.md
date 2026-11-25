@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper Osawa_2018 does not study magnesium salts in combination.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="magnesium (different salts in combination)" model-id="MagnesiumDifferentSaltsInCombination_Osawa2018_reference" status="rejected" stale="false" population="adults after cardiac surgery" measured-compound="magnesium_different_salts_in_combination" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Osawa EA, Biesenbach P, Cutuli SL, Eastwood GM, Mårtensson J, Matalanis G et al
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper Osawa_2018 does not study magnesium salts in combination.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The identity check failed because neither the title nor the abstract of Osawa_2018 names the drug magnesium different salts in combination. Consequently, the extracted parameters for clearance (17.78 mL/min) and volume of distribution (26.31 L) are not attributed to this specific compound. The second reader provided alternative values of 1.38 and 1.29, but the primary rejection cause remains the mismatch between the paper subject and the record's analyte. Extracted — magnesium different salts in combination: CL 17.8 mL/min, V 26.3 L.
+Extracted — magnesium different salts in combination: CL 17.8 mL/min, V 26.3 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q71: this record has none, the second reading 1.38; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.714 (5 of 7 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

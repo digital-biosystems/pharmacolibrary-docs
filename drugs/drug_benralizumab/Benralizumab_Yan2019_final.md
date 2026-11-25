@@ -182,9 +182,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | fail | 372 | 3252 | 8.743 | days→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 84 | 3252 | 38.72 | days→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.571 (12 of 21 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.571 | cross-check contradicted by a second reader: verdict disputed; agreement 0.571 (12 of 21 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | fail | 372 | 3252 | 8.743 | reported 15.5 days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 84 | 3252 | 38.72 | reported 3.5 days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

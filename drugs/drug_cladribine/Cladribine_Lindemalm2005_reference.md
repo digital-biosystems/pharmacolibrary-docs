@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (paper 16, model 8.97).
+> The model does not reproduce the paper's terminal half-life (paper 16, model 8.97); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Lindemalm2005_reference" status="needs_review" stale="false" population="patients with B- and T-cell lymphoid malignancies" measured-compound="cladribine" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,7 +46,7 @@ Lindemalm S, Savic RM, Karlsson MO, Juliusson G, Liliemark J, Albertioni F. Appl
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.929). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,11 +56,13 @@ Lindemalm S, Savic RM, Karlsson MO, Juliusson G, Liliemark J, Albertioni F. Appl
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (paper 16, model 8.97).**
+**The model does not reproduce the paper's terminal half-life (paper 16, model 8.97); x1_cross_check.**
 
 Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — cladribine: CL 39.3 L/h, V1 71.7 L, Q 51.1 L/h, V2 475 L, Q3 105 L/h, V3 73.6 L, kabs 1.31 h-1, fe 0.353.
 
-<sub>reviewed by rule template (no LLM)</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[oral f].parameter_id`: this record has Q44, the second reading Q40. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,6 +124,27 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.929 (13/14 fields) | 1 |
+
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[oral f].parameter_id` | Q44 | Q40 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -154,12 +177,12 @@ Simulated as the paper dosed it, the model's terminal half-life differs from the
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  |  | no second reading of this record |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.929 (13 of 14 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.929 | cross-check contradicted by a second reader: verdict disputed; agreement 0.929 (13 of 14 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_t_half_alpha | reference | skipped | 0.2 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 1.3 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | fail | 16 | 8.967 | 0.5604 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 58 | 8.967 | 0.1546 | hours→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 5 | 8.967 | 1.793 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 16 | 8.967 | 0.5604 | reported 16.0 hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 58 | 8.967 | 0.1546 | reported 58.0 hours→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 5 | 8.967 | 1.793 | reported 5.0 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

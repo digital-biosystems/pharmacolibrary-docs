@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The second reader disagreed with the record, assigning zero values to the rivaroxaban clearance, volume, and absorption parameters.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="rivaroxaban" model-id="Rivaroxaban_Ren2026_caucasian_nvaf" status="needs_review" stale="false" population="patients with pulmonary embolism" measured-compound="rivaroxaban" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Ren J, Li Y, Zheng X, Wu Z, Shi J, Han X. Population pharmacokinetic and pharmac
 
 ### Reviewer guidance
 
-**The second reader disagreed with the record, assigning zero values to the rivaroxaban clearance, volume, and absorption parameters.**
+**cross_check_disputed; x1_cross_check.**
 
-The cross-check verdict was disputed with an agreement of 0.2 and zero readers in agreement. The second reader marked the dose compound and primary analyte as unknown. Additionally, the second reader extracted null values for the clearance, volume, and absorption parameters while the record contained explicit numbers for all three. Extracted — rivaroxaban: kabs 1.16 /h, CL/F 6.1 L/h, V/F 79.7 L.
+Extracted — rivaroxaban: kabs 1.16 /h, CL/F 6.1 L/h, V/F 79.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rivaroxaban, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -157,7 +157,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

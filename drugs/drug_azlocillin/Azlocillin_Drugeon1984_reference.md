@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Azlocillin’s terminal elimination rate constant is recorded as 1.17 h, a time unit rather than the inverse-time unit required for a rate constant.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="azlocillin" model-id="Azlocillin_Drugeon1984_reference" status="rejected" stale="false" population="burned patients" measured-compound="azlocillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Drugeon HB, Pannier M, Courtieu AL. [Pharmacokinetics of azlocillin in the burn 
 
 ### Reviewer guidance
 
-**Azlocillin’s terminal elimination rate constant is recorded as 1.17 h, a time unit rather than the inverse-time unit required for a rate constant.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].**
 
-This dimensional mismatch was a stated reason for rejecting the record. The record was based on the abstract alone, so reported summary statistics stood in for a fitted model; a second reader also disagreed about whether the 1.17 h half-life and 30.9 L/h renal clearance belonged in the record. Extracted — azlocillin: kel 1.17 h, CLR 30.9 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — azlocillin: kel 1.17 h, CLR 30.9 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of creatinine clearances: this record has none, the second reading 14; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

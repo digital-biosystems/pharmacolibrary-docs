@@ -8,7 +8,7 @@
 
 > Only clearance was extracted — no volume; the clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="remoxipride" model-id="Remoxipride_Widerlv1989_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="remoxipride" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="remoxipride" model-id="Remoxipride_Widerlv1989_reference" status="needs_review" stale="false" population="healthy adult males" measured-compound="remoxipride" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Widerlöv E, Termander B, Nilsson MI. Effect of urinary pH on the plasma and urinary kinetics of remoxipride in man. European journal of clinical pharmacology 37(4):359–363 (1989).
@@ -16,7 +16,7 @@ Widerlöv E, Termander B, Nilsson MI. Effect of urinary pH on the plasma and uri
 
 ## Population and dosing
 
-**Population:** healthy male volunteers · condition healthy · age group adult · n = 10.
+**Population:** healthy adult males · condition healthy · age group adult.
 
 ## Model
 
@@ -30,13 +30,13 @@ Widerlöv E, Termander B, Nilsson MI. Effect of urinary pH on the plasma and uri
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| t1/2 | t1/2z | 3.6 | h |
-| mean plasma clearance of remoxipride | CL | 141 | ml.min-1 |
-| mean renal clearance | CLR | 58.5 | ml.min-1 |
+| mean plasma elimination half-life (t1/2) ... ammonium chloride experiment | t1/2z | 3.6 | h |
+| mean plasma clearance of remoxipride ... acidic ... conditions | CL | 141 | ml.min-1 |
+| mean renal clearances ... acidic ... conditions | CLR | 58.5 | ml.min-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,7 +50,7 @@ Widerlöv E, Termander B, Nilsson MI. Effect of urinary pH on the plasma and uri
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — remoxipride: t1/2z 3.6 h, CL 141 ml.min-1, CLR 58.5 ml.min-1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has remoxipride, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of mean plasma clearance of remoxipride: this record has none, the second reading 141; it also differs on 5 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,9 +58,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| t1/2 | `Q57` · t1/2z | 3.6 | h | 1.296e+04 | s | h | exact (1) | Widerlöv_1989:abstract, Widerlöv_1989:abstract |
-| mean plasma clearance of remoxipride | `Q22` · CL | 141 | ml.min-1 | 2.35e-06 | m3/s | ml/min | llm_confirmed (0.6) | Widerlöv_1989:abstract, Widerlöv_1989:abstract |
-| mean renal clearance | `Q26` · CLR | 58.5 | ml.min-1 | 9.75e-07 | m3/s | ml/min | llm_confirmed (0.6) | Widerlöv_1989:abstract, Widerlöv_1989:abstract |
+| mean plasma elimination half-life (t1/2) ... ammonium chloride experiment | `Q57` · t1/2z | 3.6 | h | 1.296e+04 | s | h | llm_confirmed (0.6) | Widerlöv_1989:abstract |
+| mean plasma clearance of remoxipride ... acidic ... conditions | `Q22` · CL | 141 | ml.min-1 | 2.35e-06 | m3/s | ml/min | llm_confirmed (0.6) | Widerlöv_1989:abstract |
+| mean renal clearances ... acidic ... conditions | `Q26` · CLR | 58.5 | ml.min-1 | 9.75e-07 | m3/s | ml/min | llm (0.6) | Widerlöv_1989:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -70,35 +70,34 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
+- covariate sodium for t1/2z from footnote/prose kept as documentation only (['Widerlöv_1989:abstract'])
+- dropped duplicate Q22 ('mean plasma clearance of remoxipride ... alkaline ... conditions', value 89.9) — already have one for this compound
+- dropped duplicate Q26 ('mean renal clearances ... alkaline ... conditions', value 11.7) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=remoxipride
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Widerlöv_1989_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[corresponding mean renal clearances]` |  | 58.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean plasma clearance of remoxipride]` | 141 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean plasma clearance of remoxipride ... acidic ... conditions]` | 141 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[mean plasma clearance of remoxipride]` |  | 141 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean plasma elimination half-life (t1/2) ... ammonium chloride experiment]` | 3.6 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[mean plasma elimination half-life]` |  | 3.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean renal clearance]` | 58.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2]` | 3.6 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | remoxipride | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | remoxipride | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[mean renal clearances ... acidic ... conditions]` | 58.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean renal clearances]` |  | 58.5 | only_one_extracted |
 
 </details>
 
@@ -115,12 +114,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Widerlöv_1989:abstract', 'Widerlöv_1989:abstract'] |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Widerlöv_1989:abstract', 'Widerlöv_1989:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Widerlöv_1989:abstract', 'Widerlöv_1989:abstract'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 141 | ['Widerlöv_1989:abstract', 'Widerlöv_1989:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Widerlöv_1989:abstract'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Widerlöv_1989:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Widerlöv_1989:abstract'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 141 | ['Widerlöv_1989:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 8.46 L/h | ['Widerlöv_1989:abstract', 'Widerlöv_1989:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 8.46 L/h | ['Widerlöv_1989:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -154,4 +153,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bremoxipride%5D%20Remoxipride_Widerlv1989_reference&body=Drug%3A%20remoxipride%0ARecord%3A%20Remoxipride_Widerlv1989_reference%0APaper%3A%20Widerl%C3%B6v_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_remoxipride/Remoxipride_Widerlv1989_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 17:07 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:54 UTC</sub>

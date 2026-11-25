@@ -32,10 +32,10 @@ It is administered via oral, nasal, intravenous, subcutaneous, sublingual, or in
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Callréus_1999_Uosm](drugs/drug_desmopressin/pd_Callr_us_1999_Uosm.md) | urine osmolarity ← desmopressin · indirect response — drug inhibits the loss of urine osmolarity | — | Callréus T et al., Indirect-response modeling of desmopres…, Journal of pharmacokinetics… (1999) | [10.1023/a:1023238514015](https://doi.org/10.1023/a:1023238514015) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Callréus_2002_Uosm](drugs/drug_desmopressin/pd_Callr_us_2002_Uosm.md) | urine osmolarity ← desmopressin · indirect response — drug inhibits the loss of urine osmolarity | — | Callréus T et al., The influence of lithium on the antidiu…, The Journal of pharmacy and… (2002) | [10.1211/002235702320402134](https://doi.org/10.1211/002235702320402134) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Heijdra_2022_2_VWF_Act](drugs/drug_desmopressin/pd_Heijdra_2022_2_VWF_Act.md) | Von Willebrand factor activity ← desmopressin · indirect response — drug inhibits the loss of Von Willebrand factor activity | — | Heijdra JM et al., Quantification of the relationship betw…, Haemophilia : the official… (2022) | [10.1111/hae.14582](https://doi.org/10.1111/hae.14582) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Odeberg_2004_urine_osmolality](drugs/drug_desmopressin/pd_Odeberg_2004_urine_osmolality.md) | urine osmolality ← desmopressin · indirect response — drug inhibits the production of urine osmolality | — | Odeberg JM et al., A pharmacokinetic and pharmacodynamic s…, The Journal of pharmacy and… (2004) | [10.1211/0022357044535](https://doi.org/10.1211/0022357044535) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Heijdra_2022_2_VWF_Act](drugs/drug_desmopressin/pd_Heijdra_2022_2_VWF_Act.md) | Von Willebrand factor activity ← desmopressin · indirect response — drug inhibits the loss of Von Willebrand factor activity | — | Heijdra JM et al., Quantification of the relationship betw…, Haemophilia : the official… (2022) | [10.1111/hae.14582](https://doi.org/10.1111/hae.14582) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Callréus_1999_Uosm](drugs/drug_desmopressin/pd_Callr_us_1999_Uosm.md) | urine osmolarity ← desmopressin · indirect response — drug inhibits the loss of urine osmolarity | — | Callréus T et al., Indirect-response modeling of desmopres…, Journal of pharmacokinetics… (1999) | [10.1023/a:1023238514015](https://doi.org/10.1023/a:1023238514015) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Michelet_2020_osmolality](drugs/drug_desmopressin/pd_Michelet_2020_osmolality.md) | osmolality ← dDAVP · indirect response — drug inhibits the loss of osmolality | — | Michelet R et al., An Integrated Paediatric Population PK/…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00798-6](https://doi.org/10.1007/s40262-019-00798-6) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Michelet_2020_produced_urine_volume](drugs/drug_desmopressin/pd_Michelet_2020_produced_urine_volume.md) | produced urine volume ← dDAVP · indirect response — drug inhibits the loss of produced urine volume | — | Michelet R et al., An Integrated Paediatric Population PK/…, Clinical pharmacokinetics (2020) | [10.1007/s40262-019-00798-6](https://doi.org/10.1007/s40262-019-00798-6) |
 
@@ -51,7 +51,7 @@ It is administered via oral, nasal, intravenous, subcutaneous, sublingual, or in
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 09:11 | 2:52 | 1/0/0 | 3/3/0 | 0/0/0 | 260,214/20,099 | einfracz / qwen3.8-27b | 6 | 1/5 | 5/1 | 0 |
+| 2026-10-07 09:11 | 2:52 | 1/0/0 | 4/2/0 | 0/0/0 | 260,214/20,099 | einfracz / qwen3.8-27b | 6 | 1/5 | 5/1 | 0 |
 
 ## Coverage
 

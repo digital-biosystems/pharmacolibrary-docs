@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because R-ibuprofen clearance is unlinked to S-ibuprofen and total clearance 3.96 mL/h is physiologically implausible.
+> C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Engbers2020_final_s_ibuprofen_final_model_estimate" status="rejected" stale="false" population="preterm neonates" measured-compound="S-ibuprofen, R-ibuprofen" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -54,13 +54,13 @@ Engbers AGJ, Flint RB, Völler S, de Klerk JCA, Reiss IKM, Andriessen P et al. E
 
 ### Reviewer guidance
 
-**Record rejected because R-ibuprofen clearance is unlinked to S-ibuprofen and total clearance 3.96 mL/h is physiologically implausible.**
+**C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The model defines a renal clearance equation for R-ibuprofen that lacks a link to the S-ibuprofen compartment, creating an orphan entity. The total clearance parameter is extracted as 3.96 mL/h, a value far outside the physiological window for neonates. A second reader disagreed on the primary analyte and the value of the gestational age coefficient, noting that some parameters were null in the record. Extracted — ibuprofen: CL 3.96 mL/h, R1 5.98, V 248 mL; S-ibuprofen, R-ibuprofen: kabs 0.656 hour−1, tlag 0.1 hours.
+Extracted — ibuprofen: CL 3.96 mL/h, R1 5.98, V 248 mL; S-ibuprofen, R-ibuprofen: kabs 0.656 hour−1, tlag 0.1 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has S-ibuprofen, R-ibuprofen, the second reading S-ibuprofen; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

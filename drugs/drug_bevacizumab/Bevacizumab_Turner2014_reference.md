@@ -1,13 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;bevacizumab&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/&quot;},{&quot;label&quot;:&quot;Turner_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bevacizumab_Caulet2016_estimate&quot;,&quot;label&quot;:&quot;Caulet_2016_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bevacizumab_Turner2014_reference&quot;,&quot;label&quot;:&quot;Turner_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Turner2014_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bevacizumab_Caulet2016_estimate&quot;,&quot;label&quot;:&quot;Caulet_2016_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bevacizumab/Bevacizumab_Caulet2016_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bevacizumab — `Bevacizumab_Turner2014_reference`
 
-> ## <span class="pk-badge pk-badge--neutral">Not simulated</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Turner2014_reference" status="not_modelled" stale="false" population="children with osteosarcoma" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="bevacizumab" model-id="Bevacizumab_Turner2014_reference" status="simulated" stale="false" population="children with osteosarcoma" measured-compound="bevacizumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Turner DC, Navid F, Daw NC, Mao S, Wu J, Santana VM et al. Population pharmacokinetics of bevacizumab in children with osteosarcoma: implications for dosing. Clinical cancer research : an official journal of the American Association for Cancer Research 20(10):2783–2792 (2014).
@@ -15,26 +15,26 @@ Turner DC, Navid F, Daw NC, Mao S, Wu J, Santana VM et al. Population pharmacoki
 
 ## Population and dosing
 
-**Population:** children with osteosarcoma · condition osteosarcoma · age group child · n = 27.
+**Population:** children with osteosarcoma · condition osteosarcoma · age group child.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
 **Parameters:** 2 extracted.  
-**Availability:** No model was generated from this record.
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_bevacizumab/Bevacizumab_Turner2014_reference/Bevacizumab_Turner2014_reference.svg" alt="Bevacizumab_Turner2014_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Not simulated": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| terminal half-life | t1/2z | 12.2 | days |
+| median (range) terminal half-life | t1/2z | 12.2 | days |
 | volume of distribution | V | 49.1 | mL/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓ 2/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -44,11 +44,11 @@ Turner DC, Navid F, Daw NC, Mao S, Wu J, Santana VM et al. Population pharmacoki
 
 ### Reviewer guidance
 
-**No model has been built from this record yet.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-Independently confirmed by `qwen3.8-27b`.
+Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -56,8 +56,8 @@ Independently confirmed by `qwen3.8-27b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| terminal half-life | `Q57` · t1/2z | 12.2 | days | 1.054e+06 | s | d | llm (0.6) | Turner_2014:abstract |
-| volume of distribution | `Q61` · V | 49.1 | mL/kg | 0.003437 | m3 | ml/kg | exact (1) | Turner_2014:abstract |
+| median (range) terminal half-life | `Q57` · t1/2z | 12.2 | days | 1.054e+06 | s | d | llm (0.6) | Turner_2014:abstract |
+| volume of distribution | `Q61` · V | 49.1 | mL/kg | 0.003437 | m3 | ml/kg | exact (1) | Turner_2014:abstract, Turner_2014:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -67,23 +67,23 @@ Independently confirmed by `qwen3.8-27b`.
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped value-less row: 'terminal half-life'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=bevacizumab
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - molar mass: none found for 'bevacizumab' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- derived CL=0.00813643 L/h from ln2/t½z × V = CL (Q57 × Q61); not separately reported
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Turner_2014_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Turner_2014_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  ·  2 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 | `qwen3.8-27b` | confirmed | 1.0 (6/6 fields) | none |
 
 _All readers agree on the compared fields of this record._
@@ -102,19 +102,22 @@ _All readers agree on the compared fields of this record._
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q57 | pass | [time] |  | ['Turner_2014:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Turner_2014:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Turner_2014:abstract', 'Turner_2014:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 3.44 L | ['Turner_2014:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 3.44 L | ['Turner_2014:abstract', 'Turner_2014:abstract'] |
 
 **Reviewer per-scenario checks:**
 
-| check | status | obtained | ratio | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_param_coverage | skipped |  |  | no emitted model to inspect (engineer build absent) |
-| T6_deviations | pass |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=bevacizumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (6 of 6 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -130,22 +133,65 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bevacizumab/Bevacizumab_Turner2014_reference/Bevacizumab_Turner2014_reference_modelica.zip" download>Bevacizumab_Turner2014_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bevacizumab/Bevacizumab_Turner2014_reference/Bevacizumab_Turner2014_reference_fmi.zip" download>Bevacizumab_Turner2014_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 1e-05 | kg |
+| input | model | `Cl` | 2.26e-09 | m3/s |
+| input | model | `VdPerKg` | 4.91e-05 | m3/kg |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Turner DC, Navid F, Daw NC, Mao S, Wu J, Santana VM et al. Population pharmacokinetics of bevacizumab in children with osteosarcoma: implications for dosing. Clinical cancer research : an official journal of the American Association for Cancer Research 20(10):2783–2792 (2014). [doi:10.1158/1078-0432.CCR-13-2364](https://doi.org/10.1158/1078-0432.CCR-13-2364)
+
+**This record:** Pharmacolibrary, model `Bevacizumab_Turner2014_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_bevacizumab/Bevacizumab_Turner2014_reference>
+
+```bibtex
+@misc{pharmacolibrary_BevacizumabTurner2014reference,
+  title  = {{Pharmacolibrary model Bevacizumab_Turner2014_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_bevacizumab/Bevacizumab_Turner2014_reference},
+  note   = {Parameters from doi:10.1158/1078-0432.CCR-13-2364},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: intravenous** — 10 mg infusion over 10 min, single dose. _The paper's dose was not captured; the simulator's default is used._
+
+<dbs-fmusim paramsurl="drugs/drug_bevacizumab/Bevacizumab_Turner2014_reference/Bevacizumab_Turner2014_reference_params.json" metaurl="assets/fmu/PK_1C.vr.json" wasmurl="assets/fmu/PK_1C.js" controlsurl="drugs/drug_bevacizumab/Bevacizumab_Turner2014_reference/Bevacizumab_Turner2014_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C` · parameters `Bevacizumab_Turner2014_reference_params.json` · controls `Bevacizumab_Turner2014_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbevacizumab%5D%20Bevacizumab_Turner2014_reference&body=Drug%3A%20bevacizumab%0ARecord%3A%20Bevacizumab_Turner2014_reference%0APaper%3A%20Turner_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bevacizumab/Bevacizumab_Turner2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 10:15 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:41 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model for pretomanid was rejected because a structural compartment has no connection to the dose, and one clearance unit lacked a defined conversion.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="pretomanid" model-id="Pretomanid_Salinger2019_reference" status="rejected" stale="false" population="healthy subjects and subjects with drug-sensitive, multidrug-resistant, or extensively drug-resistant pulmonary tuberculosis" measured-compound="pretomanid" parameterization="mechanistic" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Salinger DH, Subramoney V, Everitt D, Nedelman JR. Population Pharmacokinetics o
 
 ### Reviewer guidance
 
-**The model for pretomanid was rejected because a structural compartment has no connection to the dose, and one clearance unit lacked a defined conversion.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The review identified an unreachable compartment in the model structure, meaning part of the drug's disposition lacks a path from administration. Additionally, a reported unit for a parameter could not be converted to standard units, preventing accurate simulation. Multiple parameter values for covariate effects on bioavailability and clearance were also disputed or missing, though the structural defect and unit issue were primary reasons for the refusal. Extracted — pretomanid: Fab 1 fixed, FG 0.513, Km -0.264, Css 0.789, kabs 1.38 h−1, t1/2ka 0.482, MTT 1.25 h, CL 3.3 liters/h, … (+3).
+A reported unit could not be converted (Fab and MTT), so that value has no SI equivalent. Extracted — pretomanid: Fab 1 fixed, FG 0.513, Km -0.264, Css 0.789, kabs 1.38 h−1, t1/2ka 0.482, MTT 1.25 h, CL 3.3 liters/h, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl∼induc: this record has 1.35, the second reading none; it also differs on 9 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

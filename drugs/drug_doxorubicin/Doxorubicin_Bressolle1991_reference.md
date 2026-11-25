@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the extracted total clearance for doxorubicin is 0.148 cm3/day, a physiologically implausible value indicating a unit or scale error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Bressolle1991_reference" status="rejected" stale="false" population="patients undergoing chemotherapy" measured-compound="doxorubicin" parameterization="mechanistic" topology="retention"></div>
 
@@ -52,13 +52,13 @@ Bressolle F, Ray P, Jacquet JM, Brès J, Galtier M, Donadio D et al. Bayesian es
 
 ### Reviewer guidance
 
-**The record was rejected because the extracted total clearance for doxorubicin is 0.148 cm3/day, a physiologically implausible value indicating a unit or scale error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The clearance is listed as 0.148 cm3/day, which is orders of magnitude lower than the typical total clearance for this drug. Second readers noted a significant discrepancy, with one identifying the clearance as 350.0, confirming the extraction error. Additionally, several other parameters, including the third phase coefficient and elimination half-lives, were flagged as null or inconsistent by the second readers. Extracted — doxorubicin: A3 9, t1/2β 12 h, t1/2z 29 h, λ1 7.6 h⁻¹, CL 0.148 cm 3 /day, V 0.0764 l.
+Extracted — doxorubicin: A3 9, t1/2β 12 h, t1/2z 29 h, λ1 7.6 h⁻¹, CL 0.148 cm 3 /day, V 0.0764 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a3/v1 3 points: this record has 9, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

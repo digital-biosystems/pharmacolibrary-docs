@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J02A&quot;,&quot;href&quot;:&quot;atc/J02A.md&quot;},{&quot;label&quot;:&quot;rezafungin acetate&quot;,&quot;href&quot;:&quot;drugs/drug_rezafungin_acetate/&quot;},{&quot;label&quot;:&quot;Rubino_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;RezafunginAcetate_Lakota2018_reference&quot;,&quot;label&quot;:&quot;Lakota_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rezafungin_acetate/RezafunginAcetate_Lakota2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;RezafunginAcetate_Roepcke2023_reference&quot;,&quot;label&quot;:&quot;Roepcke_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rezafungin_acetate/RezafunginAcetate_Roepcke2023_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;RezafunginAcetate_Rubino2021_reference&quot;,&quot;label&quot;:&quot;Rubino_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rezafungin_acetate/RezafunginAcetate_Rubino2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;RezafunginAcetate_Zhao2020_reference&quot;,&quot;label&quot;:&quot;Zhao_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rezafungin_acetate/RezafunginAcetate_Zhao2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;RezafunginAcetate_Lakota2018_reference&quot;,&quot;label&quot;:&quot;Lakota_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rezafungin_acetate/RezafunginAcetate_Lakota2018_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;RezafunginAcetate_Roepcke2023_reference&quot;,&quot;label&quot;:&quot;Roepcke_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rezafungin_acetate/RezafunginAcetate_Roepcke2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;RezafunginAcetate_Rubino2021_reference&quot;,&quot;label&quot;:&quot;Rubino_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rezafungin_acetate/RezafunginAcetate_Rubino2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;RezafunginAcetate_Zhao2020_reference&quot;,&quot;label&quot;:&quot;Zhao_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_rezafungin_acetate/RezafunginAcetate_Zhao2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Record was held for review because a second reader disputed key fields and found missing exposure parameters (AUC, Cmax, Cmin) and covariate effects.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="rezafungin acetate" model-id="RezafunginAcetate_Rubino2021_reference" status="needs_review" stale="false" population="healthy volunteers and patients with fungal infections" measured-compound="rezafungin" parameterization="mechanistic" topology="2C"></div>
 
@@ -63,13 +63,13 @@ Rubino CM, Flanagan S. Population Pharmacokinetics of Rezafungin in Patients wit
 
 ### Reviewer guidance
 
-**Record was held for review because a second reader disputed key fields and found missing exposure parameters (AUC, Cmax, Cmin) and covariate effects.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The second reader marked the dose compound and primary analyte as unknown while this record specified rezafungin acetate and rezafungin. Additionally, the second reader identified AUC, Cmax, and Cmin values (709, 16.4, and 2.07) absent from this record. Disagreements also arose regarding the weight power covariate for V3 and the number of power forms for the peripheral volume. Extracted — rezafungin acetate: CL 0.254 liter/h, V1 11.1 liter, V2 14.6 liter, Q 0.541 liter/h, V3 6.69 liter.
+The base model was simulated, not the covariate effects the record defines. Extracted — rezafungin acetate: CL 0.254 liter/h, V1 11.1 liter, V2 14.6 liter, Q 0.541 liter/h, V3 6.69 liter.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rezafungin_acetate, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -172,8 +172,8 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.55, 0 of 1 reader(s) agree | 0.55 | cross-check disputed by a second reader: verdict disputed, agreement 0.55, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | skipped |  | 257.5 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.55 (11 of 20 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.55 | cross-check contradicted by a second reader: verdict disputed; agreement 0.55 (11 of 20 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | skipped |  | 257.5 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Envafolimab clearance value 0.0478 L/h was extracted as 0.0484 L/h, and residual standard deviation 0.0501 was not found.
+> C2_reference failed (ratio None).
 
 <div class="pk-model-meta" hidden drug="envafolimab" model-id="Envafolimab_Cui2024_reference" status="needs_review" stale="false" population="patients with advanced solid tumors" measured-compound="envafolimab" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Cui C, Wang J, Wang C, Xu T, Qin L, Xiao S et al. Model-informed drug developmen
 
 ### Reviewer guidance
 
-**Envafolimab clearance value 0.0478 L/h was extracted as 0.0484 L/h, and residual standard deviation 0.0501 was not found.**
+**C2_reference failed (ratio None).**
 
-The second reader disagreed on the clearance parameter value and the presence of a residual standard deviation. Additionally, the volume of distribution value differed slightly between the extracted record and the second reader. The reference check failed without computing a comparison, leaving the reference comparison inconclusive. Extracted — envafolimab: t1/2z 34 days, CL 0.0478 L/h, V 15.5 L, kabs 0.0147 1/h.
+Extracted — envafolimab: t1/2z 34 days, CL 0.0478 L/h, V 15.5 L, kabs 0.0147 1/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[cl].value`: this record has 0.0478, the second reading 0.0484; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

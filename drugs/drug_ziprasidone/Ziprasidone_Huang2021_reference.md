@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is for ziprasidone, but the source paper is about another drug, so the parameters are invalid.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="ziprasidone" model-id="Ziprasidone_Huang2021_reference" status="rejected" stale="false" population="" measured-compound="ziprasidone" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Huang S, Li L, Wang Z, Xiao T, Li X, Liu S et al. Modeling and Simulation for In
 
 ### Reviewer guidance
 
-**The record is for ziprasidone, but the source paper is about another drug, so the parameters are invalid.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The identity check failed because the paper’s title and abstract do not name ziprasidone, and the relevance screen rejected the paper as being about another drug. Consequently, the extracted values for CL/F (61.1 L/h), V/F (1720.0 L), and kabs (0.18 h−1) do not apply to ziprasidone. The model builder also defaulted the lag time and assumed absolute bioavailability was 1. Extracted — ziprasidone: CL/F 61.1 L/h, V/F 1.72e+03 L, kabs 0.18 h−1.
+Extracted — ziprasidone: CL/F 61.1 L/h, V/F 1.72e+03 L, kabs 0.18 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 6.4. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.833 (5 of 6 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

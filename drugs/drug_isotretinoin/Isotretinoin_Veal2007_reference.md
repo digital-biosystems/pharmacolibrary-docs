@@ -39,7 +39,7 @@ Veal GJ, Cole M, Errington J, Pearson AD, Foot AB, Whyman G et al. Pharmacokinet
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,6 +52,8 @@ Veal GJ, Cole M, Errington J, Pearson AD, Foot AB, Whyman G et al. Pharmacokinet
 **AUC has no unit.**
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUC), so that value has no SI equivalent. Extracted — isotretinoin: CL/F 2 l h À1, V/F 2 l, AUC 2 mmol h l À1, tlag 2 min.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has isotretinoin, the second reading 13-cis-retinoic acid; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -89,6 +91,30 @@ Without a unit the value cannot be converted, so the model cannot use it. A repo
 - LLM selected parameter table(s) 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.6 (6/10 fields) | 4 |
+
+<details><summary>4 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f].covariate_forms` | [] | ['additive_shift'] | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_f_category]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | isotretinoin | 13-cis-retinoic acid | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | isotretinoin | 13-cis-retinoic acid | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

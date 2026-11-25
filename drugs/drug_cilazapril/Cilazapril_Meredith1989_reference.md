@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record lacks a link between parent cilazapril and metabolite cilazaprilat, and the apparent clearance calculation failed.
+> T3_derived_parameters.
 
 <div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Meredith1989_reference" status="needs_review" stale="false" population="essential hypertension" measured-compound="cilazaprilat" parameterization="apparent" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Meredith PA, Elliott HL, Reid JL, Francis RJ. The pharmacokinetics and angiotens
 
 ### Reviewer guidance
 
-**The record lacks a link between parent cilazapril and metabolite cilazaprilat, and the apparent clearance calculation failed.**
+**T3_derived_parameters.**
 
-The structure defines a metabolite but lists no links, preventing a path from the dose to cilazaprilat. Additionally, the derived parameter check failed to correctly bind the apparent clearance value. The model builder also defaulted the lag time and assumed full bioavailability, while a second reader disagreed on the presence of specific fitted coefficients and the parent-metabolite connection. Extracted — cilazaprilat: kel 0.6 h-1, kabs 3.32 h-1, V/F 30.5 l, t1/2z 1.4 h, CLm/F 16 l h-1, Ct 3 ng ml-1.
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. None of the extracted parameters is cilazapril's own; they describe cilazaprilat. Extracted — cilazaprilat: kel 0.6 h-1, kabs 3.32 h-1, V/F 30.5 l, t1/2z 1.4 h, CLm/F 16 l h-1, Ct 3 ng ml-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading cilazapril → cilazaprilat (metabolism); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

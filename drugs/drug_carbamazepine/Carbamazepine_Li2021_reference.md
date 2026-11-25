@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper studies levetiracetam, not carbamazepine, so the listed parameters do not describe carbamazepine.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="carbamazepine" model-id="Carbamazepine_Li2021_reference" status="rejected" stale="false" population="" measured-compound="carbamazepine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Li ZR, Wang CY, Zhu X, Jiao Z. Population Pharmacokinetics of Levetiracetam: A S
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper studies levetiracetam, not carbamazepine, so the listed parameters do not describe carbamazepine.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper is a review of pharmacokinetic studies for levetiracetam, with carbamazepine mentioned only as a co-administered enzyme inducer. The extracted clearance of 0.046 L/h/kg and volume of distribution of 0.86 L/kg therefore cannot be attributed to carbamazepine. A second reader also disagreed on the extracted values, reporting a null for the 19.9 entry and 0.5 instead of 0.86 for the volume. Extracted — carbamazepine: CL 0.046 L/h/kg, V 0.86 L/kg.
+Extracted — carbamazepine: CL 0.046 L/h/kg, V 0.86 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 19.9, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

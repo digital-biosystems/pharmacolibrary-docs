@@ -36,8 +36,8 @@ Testosterone is a steroid hormone used to treat hypogonadism and breast cancer. 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Bi_2018_LH30](drugs/drug_testosterone/pd_Bi_2018_LH30.md) | LH concentration at 30 minutes after the stimulation test ← total testosterone · indirect response — drug inhibits the production of LH concentration at 30 minutes after the stimulation test | — | Bi Y et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12287](https://doi.org/10.1002/psp4.12287) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Bi_2018_sperm_count](drugs/drug_testosterone/pd_Bi_2018_sperm_count.md) | sperm count ← total testosterone average concentration in past 18 weeks · indirect response — drug inhibits the production of sperm count | — | Bi Y et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12287](https://doi.org/10.1002/psp4.12287) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Bi_2018_LH30](drugs/drug_testosterone/pd_Bi_2018_LH30.md) | LH concentration at 30 minutes after the stimulation test ← total testosterone · indirect response — drug inhibits the production of LH concentration at 30 minutes after the stimulation test | — | Bi Y et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12287](https://doi.org/10.1002/psp4.12287) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Bi_2018_sperm_count](drugs/drug_testosterone/pd_Bi_2018_sperm_count.md) | sperm count ← total testosterone average concentration in past 18 weeks · indirect response — drug inhibits the production of sperm count | — | Bi Y et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12287](https://doi.org/10.1002/psp4.12287) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ Testosterone is a steroid hormone used to treat hypogonadism and breast cancer. 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:32 | 3:58 | 1/3/0 | 0/2/0 | 0/0/0 | 219,027/20,627 | einfracz / qwen3.8-27b | 8 | 0/8 | 8/0 | 0 |
+| 2026-10-07 08:32 | 3:58 | 1/3/0 | 2/0/0 | 0/0/0 | 219,027/20,627 | einfracz / qwen3.8-27b | 8 | 0/8 | 8/0 | 0 |
 
 ## Coverage
 

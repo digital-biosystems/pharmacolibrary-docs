@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The bioavailability factor for brexpiprazole was left at a library default rather than extracted from the paper, unsupported by the reported model.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Wang2023_reference" status="needs_review" stale="false" population="adults, adolescents, and children with central nervous system disorders" measured-compound="brexpiprazole" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Wang Y, Wang X, Larsen F, Cahill D, Zoubroulis A, Ward C et al. Population Pharm
 
 ### Reviewer guidance
 
-**The bioavailability factor for brexpiprazole was left at a library default rather than extracted from the paper, unsupported by the reported model.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists a two-compartment model with absorption parameters but omits a value for the bioavailability factor (F). This missing parameter means the model relied on generic defaults rather than estimates specific to brexpiprazole. Consequently, the simulated profile is not fully supported by the data in the Wang_2023 paper. Extracted — brexpiprazole: D1 0.931 hour, kabs 1.49 1/h, CL 1.34 L/h, V1 78 L, Q 0.844 L/h, V2 27.5 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — brexpiprazole: D1 0.931 hour, kabs 1.49 1/h, CL 1.34 L/h, V1 78 L, Q 0.844 L/h, V2 27.5 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of v_weight: this record has none, the second reading 1. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

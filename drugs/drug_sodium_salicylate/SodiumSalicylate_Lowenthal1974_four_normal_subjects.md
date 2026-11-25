@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> No value was extracted for sodium salicylate's clearance, so the model was held back using a library placeholder.
+> No value for sodium salicylate's clearance; the model does not reproduce the paper's terminal half-life (paper 5, model 1.37) (+2 more).
 
 <div class="pk-model-meta" hidden drug="sodium salicylate" model-id="SodiumSalicylate_Lowenthal1974_four_normal_subjects" status="model_quarantined" stale="false" population="anephric patients" measured-compound="salicylic acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Lowenthal DT, Briggs WA, Levy G. Kinetics of salicylate elimination by anephric 
 
 ### Reviewer guidance
 
-**No value was extracted for sodium salicylate's clearance, so the model was held back using a library placeholder.**
+**No value for sodium salicylate's clearance; the model does not reproduce the paper's terminal half-life (paper 5, model 1.37) (+2 more).**
 
-The record lacks an explicit clearance estimate, leaving the parameter at its default setting instead of a fitted value. Although the paper reports a terminal half-life of 5 minutes, the model simulates a value of 1.37, causing a significant mismatch. The second reader also failed to confirm the dose compound or lag time, disputing the initial extraction. Extracted — sodium salicylate: V 5.43 liter, t1/2β 247 min, tlag 0.42 h.
+The model was built, but sodium salicylate's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — sodium salicylate: V 5.43 liter, t1/2β 247 min, tlag 0.42 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium salicylate, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,9 +137,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 5 | 1.37 | 0.274 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 5.267 | 1.37 | 0.2601 | min→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.571 (4 of 7 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.571 | cross-check contradicted by a second reader: verdict disputed; agreement 0.571 (4 of 7 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 5 | 1.37 | 0.274 | reported 300.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 5.267 | 1.37 | 0.2601 | reported 316.0 min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

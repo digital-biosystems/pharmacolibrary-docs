@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record lacks volume of distribution and clearance, so it is not a compartmental population PK model for potassium.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit mmol/L ([substance] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q32 unit mmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="potassium chloride" model-id="PotassiumChloride_Li2025_literature_1_granules_64_meq" status="rejected" stale="false" population="patients with cardiovascular emergencies" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Li X, Qu M, Li H, Li T. Plasma pharmacokinetics of the combination of potassium 
 
 ### Reviewer guidance
 
-**The record lacks volume of distribution and clearance, so it is not a compartmental population PK model for potassium.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit mmol/L ([substance] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q32 unit mmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The parameter list includes C0, tmax, Cmax, and kabs, but omits the essential distribution volume and elimination clearance required for a one-compartment structural model. Although the paper reports a 5.8 mmol/L Cmax, these exposure metrics alone do not define the PK structure. The absence of elimination parameters means the record cannot describe the disposition of potassium chloride in patients with cardiovascular emergencies. Extracted — potassium chloride: C0 4.6 mmol/L, tmax 1 h, Cmax 5.8 mmol/L, kabs 0.1 h-1.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (C0 and Cmax), so that value has no SI equivalent. Extracted — potassium chloride: C0 4.6 mmol/L, tmax 1 h, Cmax 5.8 mmol/L, kabs 0.1 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has potassium chloride, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

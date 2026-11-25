@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The oxycodone absorption parameter labeled kaSOL has a value of 0.94 hour-1, which contradicts its identity as a half-life.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit hour-1 (1 / [time]) vs [time].
 
 <div class="pk-model-meta" hidden drug="oxycodone" model-id="Oxycodone_Ladebo2020_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="oxycodone" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Ladebo L, Foster DJR, Abuhelwa AY, Upton RN, Kongstad KT, Drewes AM et al. Popul
 
 ### Reviewer guidance
 
-**The oxycodone absorption parameter labeled kaSOL has a value of 0.94 hour-1, which contradicts its identity as a half-life.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit hour-1 (1 / [time]) vs [time].**
 
-The parameter defined as the half-life of the absorption phase is assigned the value 0.94 with the unit hour-1, a rate dimension inconsistent with a time metric. This dimensional mismatch renders the structural parameter invalid. Additionally, the record was constructed from the abstract alone, so the reported statistics serve as placeholders rather than fitted model estimates. Extracted — oxycodone: tlag 0.23 hour, kabs 0.19 hour-1, t1/2ka 0.94 hour-1, t1/2z 14 minutes, CL 38 L/h, V 251 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — oxycodone: tlag 0.23 hour, kabs 0.19 hour-1, t1/2ka 0.94 hour-1, t1/2z 14 minutes, CL 38 L/h, V 251 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 38.03, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

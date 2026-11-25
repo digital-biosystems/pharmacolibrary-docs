@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the metabolite trandolaprilat is an orphan compartment with no elimination path.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="trandolapril" model-id="Trandolapril_Li2016_trandolaprilat" status="rejected" stale="false" population="healthy Chinese subjects" measured-compound="trandolapril" parameterization="apparent" topology="general_linear"></div>
 
@@ -58,13 +58,13 @@ Li X, Liu C, Wu M, Zhang H, Sun Y, Cheng L et al. Pharmacokinetics, Pharmacodyna
 
 ### Reviewer guidance
 
-**Record rejected because the metabolite trandolaprilat is an orphan compartment with no elimination path.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defines trandolaprilat as a metabolite formed in the central compartment but lacks any elimination route, making it unreachable. Although the second reader disputes several extracted parameters, the fundamental structural flaw regarding the orphan compartment remains unaddressed. Extracted — trandolapril: Cmax 2.53 ng/mL, Cmin 0 ng/mL, Cavg 0 ng/mL, tmax 0.567 h, AUCt 3.11 ng·h/mL, AUC 3.36 ng·h/mL, t1/2z 7.31 h, V/F 6.4e+03 L, … (+5).
+A reported unit could not be converted (Cmax, Cmin, Cavg and AUCt), so that value has no SI equivalent. Extracted — trandolapril: Cmax 2.53 ng/mL, Cmin 0 ng/mL, Cavg 0 ng/mL, tmax 0.567 h, AUCt 3.11 ng·h/mL, AUC 3.36 ng·h/mL, t1/2z 7.31 h, V/F 6.4e+03 L, … (+5).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trandolapril, the second reading unknown; it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Pegcetacoplan central volume of distribution (4.04) was recorded in days, a time unit incompatible with volume dimensions, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit days ([time]) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="pegcetacoplan" model-id="Pegcetacoplan_Crass2024_reference" status="rejected" stale="false" population="patients with paroxysmal nocturnal hemoglobinuria and healthy subjects" measured-compound="pegcetacoplan" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Crass RL, Smith B, Adriaens S, Chapel S, Langdon G. Population Pharmacokinetic a
 
 ### Reviewer guidance
 
-**Pegcetacoplan central volume of distribution (4.04) was recorded in days, a time unit incompatible with volume dimensions, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit days ([time]) vs [length] ** 3.**
 
-The parameter 'Central volume of distribution' has a value of 4.04 but is labeled with the unit 'days'. In pharmacokinetic modeling, volume of distribution must be expressed in units of volume (e.g., liters), not time. The record contains a dimension mismatch where a time unit was applied to a structural volume parameter. Extracted — pegcetacoplan: CL 0.286 L/day, V 4.04 days.
+A reported unit could not be converted (V), so that value has no SI equivalent. Extracted — pegcetacoplan: CL 0.286 L/day, V 4.04 days.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

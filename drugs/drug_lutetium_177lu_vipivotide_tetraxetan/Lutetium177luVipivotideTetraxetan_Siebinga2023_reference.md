@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V10X&quot;,&quot;href&quot;:&quot;atc/V10X.md&quot;},{&quot;label&quot;:&quot;lutetium (177Lu) vipivotide tetraxetan&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/&quot;},{&quot;label&quot;:&quot;Siebinga_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Siebinga2023_reference&quot;,&quot;label&quot;:&quot;Siebinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Siebinga_2024_PSA&quot;,&quot;label&quot;:&quot;Siebinga_2024 \u00b7 PSA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/pd_Siebinga_2024_PSA.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Shi2026_reference&quot;,&quot;label&quot;:&quot;Shi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Shi2026_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lutetium177luVipivotideTetraxetan_Siebinga2023_reference&quot;,&quot;label&quot;:&quot;Siebinga_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/Lutetium177luVipivotideTetraxetan_Siebinga2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Siebinga_2024_PSA&quot;,&quot;label&quot;:&quot;Siebinga_2024 \u00b7 PSA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_lutetium_177lu_vipivotide_tetraxetan/pd_Siebinga_2024_PSA.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> k12, k21, and kcomp were not extracted, and a second reader identified missing parameter values for a four-compartment model.
+> T3_param_coverage; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="lutetium (177Lu) vipivotide tetraxetan" model-id="Lutetium177luVipivotideTetraxetan_Siebinga2023_reference" status="needs_review" stale="false" population="patients with low volume metastatic prostate cancer" measured-compound="lutetium_177lu_vipivotide_tetraxetan" parameterization="mechanistic" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Siebinga H, Privé BM, Peters SMB, Nagarajah J, Dorlo TPC, Huitema ADR et al. Po
 
 ### Reviewer guidance
 
-**k12, k21, and kcomp were not extracted, and a second reader identified missing parameter values for a four-compartment model.**
+**T3_param_coverage; x1_cross_check.**
 
-The model record defines four peripheral transfer constants, implying a four-compartment structure, yet coverage checks show only two parameters were successfully emitted or defaulted, leaving k12, k21, and kcomp absent. A second reader disputed the review by identifying specific numerical values (40.4 and 0.705) for parameters that were null in the current record. Additionally, the second reader assigned a different identifier to the volume of distribution parameter than the one used in the record. Extracted — lutetium 177lu vipivotide tetraxetan: kel 0.288 h−1, k12 0.0238 h−1, k21 0.0307 h−1, k13 0.00867 h−1, k31 0.0141 h−1, k14 0.0238 h−1, k41 0.0283 h−1, kcomp 0.000248 h−1, … (+1).
+Extracted — lutetium 177lu vipivotide tetraxetan: kel 0.288 h−1, k12 0.0238 h−1, k21 0.0307 h−1, k13 0.00867 h−1, k31 0.0141 h−1, k14 0.0238 h−1, k41 0.0283 h−1, kcomp 0.000248 h−1, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bmax compartment 2: this record has none, the second reading 40.4; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -170,7 +170,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 2 covered |  | neither emitted nor in defaulted[]: ['k12', 'k21', 'kcomp'] |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.88, 0 of 1 reader(s) agree | 0.88 | cross-check disputed by a second reader: verdict disputed, agreement 0.88, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.88 (22 of 25 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.88 | cross-check contradicted by a second reader: verdict disputed; agreement 0.88 (22 of 25 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

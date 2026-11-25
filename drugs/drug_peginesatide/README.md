@@ -23,7 +23,7 @@ Peginesatide is an erythropoietic agent used to treat anemia associated with chr
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Naik_2013_Hgb](drugs/drug_peginesatide/pd_Naik_2013_Hgb.md) | hemoglobin ← peginesatide · indirect response — drug stimulates the production of hemoglobin | — | Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013) | [10.1371/journal.pone.0066422](https://doi.org/10.1371/journal.pone.0066422) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Naik_2013_Hgb](drugs/drug_peginesatide/pd_Naik_2013_Hgb.md) | hemoglobin ← peginesatide · indirect response — drug stimulates the production of hemoglobin | — | Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013) | [10.1371/journal.pone.0066422](https://doi.org/10.1371/journal.pone.0066422) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

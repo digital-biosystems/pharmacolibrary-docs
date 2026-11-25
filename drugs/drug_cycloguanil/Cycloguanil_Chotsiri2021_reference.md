@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for cycloguanil was rejected because the source paper is a population study of piperaquine, providing no actual PK data for cycloguanil.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="Cycloguanil" model-id="Cycloguanil_Chotsiri2021_reference" status="rejected" stale="false" population="" measured-compound="cycloguanil" parameterization="apparent" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Chotsiri P, Gutman JR, Ahmed R, Poespoprodjo JR, Syafruddin D, Khairallah C et a
 
 ### Reviewer guidance
 
-**The record for cycloguanil was rejected because the source paper is a population study of piperaquine, providing no actual PK data for cycloguanil.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The paper subject is identified as a population PK study of piperaquine in pregnant women, where cycloguanil is mentioned only as a comparator. Consequently, the parameters for clearance, volume of distribution, and intercompartmental clearance are not estimates from the source text. The model builder also substituted default values for absorption parameters not reported in the source. Extracted — cycloguanil: CL/F 49 liters/h, V1/F 2.19e+03 liters, Q/F 244 liters/h.
+Extracted — cycloguanil: CL/F 49 liters/h, V1/F 2.19e+03 liters, Q/F 244 liters/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has 2.62, the second reading 212; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.615, 0 of 1 reader(s) agree | 0.615 | cross-check disputed by a second reader: verdict disputed, agreement 0.615, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.846 (11 of 13 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.846 | cross-check contradicted by a second reader: verdict disputed; agreement 0.846 (11 of 13 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -28,6 +28,12 @@ Safinamide is a monoamine oxidase B inhibitor used to treat Parkinson's disease,
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub> | [Loprete_2016_reference](drugs/drug_safinamide/Safinamide_Loprete2016_reference.md) | — | 1-compartment (no model) | 4 | Loprete L et al., Population pharmacokinetic and pharmaco…, Pharmacology research & per… (2016) | [10.1002/prp2.251](https://doi.org/10.1002/prp2.251) |
 
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Loprete_2016_ON_time](drugs/drug_safinamide/pd_Loprete_2016_ON_time.md) | ON‐time ← none · disease-progression model | — | Loprete L et al., Population pharmacokinetic and pharmaco…, Pharmacology research & per… (2016) | [10.1002/prp2.251](https://doi.org/10.1002/prp2.251) |
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -40,7 +46,7 @@ Safinamide is a monoamine oxidase B inhibitor used to treat Parkinson's disease,
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 14:23 | 1:43 | 0/1/0 | 0/0/0 | 0/0/0 | 110,891/7,627 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-23 15:58 | 3:08 | 0/1/0 | 0/1/0 | 0/0/0 | 65,666/18,205 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -53,11 +59,13 @@ Safinamide is a monoamine oxidase B inhibitor used to treat Parkinson's disease,
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Fan_2024 | irrelevant | 0 | 0 | This is an in-vitro hMAO-B inhibitor screening study; safinamide is only a positive-control comparator with IC50/EC50 values, no PK disposition parameters. |
+| popPK | Fan_2024 | irrelevant | 0 | 0 | The paper is an in-vitro high-throughput screening study for hMAO-B inhibitors where safinamide is used only as a positive control/reference compound, and no pharmacokinetic parameters for safinamide are reported. |
+| PGx | Fan_2024 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition and cell-based neuroprotection assays for novel MAO-B inhibitors, with no investigation of pharmacogenomic variants or effects on safinamide pharmacokinetics or pharmacodynamics. |
+| PGx | Loprete_2016 | not_relevant | 0 | 0 | The paper reports a population PK/PD analysis for safinamide but does not investigate or report any effect of gene variants or genotypes on pharmacokinetic or pharmacodynamic parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsafinamide%5D&body=Drug%3A%20safinamide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_safinamide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 14:22 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 15:55 UTC</sub>

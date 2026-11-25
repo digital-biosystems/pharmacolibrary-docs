@@ -59,7 +59,7 @@ Cemiplimab is a PD-1 inhibitor used for the treatment of squamous cell carcinoma
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:02 | 11:42 | 6/1/0 | 4/0/0 | 0/0/0 | 245,884/52,586 | openai / gpt-6-luna | 6 | 0/6 | 6/0 | 0 |
+| 2026-11-23 10:41 | 0:07 | 6/1/0 | 4/0/0 | 0/0/0 | 27,262/184 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
 
 ## Coverage
 
@@ -72,7 +72,8 @@ Cemiplimab is a PD-1 inhibitor used for the treatment of squamous cell carcinoma
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Baranda_2024 | irrelevant | 1 | 0 | The population-PK model is for SAR'459, not cemiplimab; its parameter values are only referenced in supplementary tables not provided. |
+| popPK | Baranda_2024 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of SAR439459, with cemiplimab serving only as a co-administered comparator agent for which no PK parameters are reported. |
+| PGx | Baranda_2024 | not_relevant | 0 | 0 | The study evaluates the safety, PK, and efficacy of a TGFβ inhibitor (SAR439459) in combination with cemiplimab but contains no analysis of genetic variants or genotypes affecting cemiplimab pharmacokinetics or pharmacodynamics. |
 | popPK | Yilmaz_2024 | irrelevant | 0 | 0 | Cemiplimab is only mentioned as a clinical combination therapy; no cemiplimab disposition parameters are reported. |
 
 

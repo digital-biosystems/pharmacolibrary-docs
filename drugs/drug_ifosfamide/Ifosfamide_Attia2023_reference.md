@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper does not study ifosfamide, making the listed parameters invalid.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="ifosfamide" model-id="Ifosfamide_Attia2023_reference" status="rejected" stale="false" population="" measured-compound="ifosfamide" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Attia S, Villalobos V, Hindi N, Wagner AJ, Chmielowski B, Oakley GJ et al. Rando
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper does not study ifosfamide, making the listed parameters invalid.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source text identifies the paper subject as a different drug, explicitly noting that neither the title nor the abstract names ifosfamide. Consequently, the relevance screen rejected the paper, meaning the extracted systemic clearance of 0.0186 L/h and volume of distribution of 5.05 L do not correspond to ifosfamide pharmacokinetics. Extracted — ifosfamide: CL 0.0186 L/h, V 5.05 L.
+Extracted — ifosfamide: CL 0.0186 L/h, V 5.05 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -115,7 +115,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (6 of 6 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

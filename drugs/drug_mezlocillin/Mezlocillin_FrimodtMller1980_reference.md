@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record incorrectly assigns creatinine clearances as the unbound clearance for mezlocillin, failing analyte identity and cross-verification.
+> biomarker_kinetics_as_drug_pk; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="mezlocillin" model-id="Mezlocillin_FrimodtMller1980_reference" status="rejected" stale="false" population="patients with varying degrees of renal function" measured-compound="mezlocillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Frimodt-Möller N, Maigaard S, Toothaker RD, Bundtzen RW, Brodey MV, Craig WA et
 
 ### Reviewer guidance
 
-**The record incorrectly assigns creatinine clearances as the unbound clearance for mezlocillin, failing analyte identity and cross-verification.**
+**biomarker_kinetics_as_drug_pk; t0_analyte_identity (+1 more).**
 
-The parameter labeled 'creatinine clearances' with a value of 60 L/h is a renal function biomarker, not a drug clearance metric. This mismatch caused the analyte identity check to fail and resulted in a second reader disputing the record's primary findings. Extracted — mezlocillin: CLu 60 L/h, t1/2z 1.3 h, V 0.32 liter kg(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mezlocillin: CLu 60 L/h, t1/2z 1.3 h, V 0.32 liter kg(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mezlocillin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check contradicted by a second reader: verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model does not reproduce the paper's terminal half-life (model/paper ratio 24.5).
+> CLb has no unit; the model does not reproduce the paper's terminal half-life (model/paper ratio 0.305).
 
-<div class="pk-model-meta" hidden drug="ipilimumab" model-id="Ipilimumab_Feng2014_reference" status="needs_review" stale="false" population="patients with unresectable stage III or IV melanoma" measured-compound="ipilimumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ipilimumab" model-id="Ipilimumab_Feng2014_reference" status="needs_review" stale="false" population="patients with advanced melanoma" measured-compound="ipilimumab" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Feng Y, Masson E, Dai D, Parker SM, Berman D, Roy A. Model-based clinical pharmacology profiling of ipilimumab in patients with advanced melanoma. British journal of clinical pharmacology 78(1):106–117 (2014).
@@ -17,13 +17,13 @@ Feng Y, Masson E, Dai D, Parker SM, Berman D, Roy A. Model-based clinical pharma
 
 ## Population and dosing
 
-**Population:** patients with unresectable stage III or IV melanoma · condition advanced melanoma · age group adult.
+**Population:** patients with advanced melanoma · condition advanced melanoma · age group adult.
 
-**Dosing:** 0.3, 3, 10 mg kg−1, multiple, every 504 h.
+**Dosing:** 0.3, 3, 10 mg kg−1, iv, multiple, every 216 h.
 
 ## Model
 
-**Structure:** 2-compartment; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 5 extracted.  
 **Availability:** No model was generated from this record.
@@ -33,15 +33,15 @@ Feng Y, Masson E, Dai D, Parker SM, Berman D, Roy A. Model-based clinical pharma
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CLREF (l h−1) | CL | 0.0150 | l h−1 |
-| VcREF (l) | V1 | 4.15 | l |
+| CLREF (l h−1) | CLnorm | 0.0150 | l h−1 |
+| VcREF (l) | V | 4.15 | l |
 | QREF (l h−1) | Q | 0.0411 | l h−1 |
-| VpREF (l) | V2 | 3.11 | l |
-| VcBW | Vnorm | 0.708 | L/kg |
+| VpREF (l) | V3 | 3.11 | l |
+| CLBW | CLb | 0.642 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667), qwen3.8-27b (not confirmed, agreement 0.615). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +51,11 @@ Feng Y, Masson E, Dai D, Parker SM, Berman D, Roy A. Model-based clinical pharma
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's terminal half-life (model/paper ratio 24.5).**
+**CLb has no unit; the model does not reproduce the paper's terminal half-life (model/paper ratio 0.305).**
 
-Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — ipilimumab: CL 0.015 l h−1, V1 4.15 l, Q 0.0411 l h−1, V2 3.11 l, Vnorm 0.708 L/kg.
+Without a unit the value cannot be converted, so the model cannot use it. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — ipilimumab: CLnorm 0.015 l h−1, V 4.15 l, Q 0.0411 l h−1, V3 3.11 l, CLb 0.642.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of clbw: this record has none, the second reading 0.642; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clbw: this record has 0.642, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,11 +63,11 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CLREF (l h−1) | `Q22` · CL | 0.0150 | l h−1 | 4.167e-09 | m3/s | l/h | llm (0.6) | tbl2:row2:col1 |
-| VcREF (l) | `Q63` · V1 | 4.15 | l | 0.00415 | m3 | l | llm (0.6) | tbl2:row3:col1 |
+| CLREF (l h−1) | `Q354` · CLnorm | 0.0150 | l h−1 | 4.167e-09 | m3/s | l/h | llm (0.6) | tbl2:row2:col1 |
+| VcREF (l) | `Q61` · V | 4.15 | l | 0.00415 | m3 | l | llm (0.6) | tbl2:row3:col1 |
 | QREF (l h−1) | `Q30` · Q | 0.0411 | l h−1 | 1.142e-08 | m3/s | l/h | llm (0.6) | tbl2:row4:col1 |
-| VpREF (l) | `Q64` · V2 | 3.11 | l | 0.00311 | m3 | l | llm (0.6) | tbl2:row5:col1 |
-| VcBW | `Q352` · Vnorm | 0.708 | L/kg | 0.04956 | m3 | L | llm (0.6) | tbl2:row7:col1 |
+| VpREF (l) | `Q77` · V3 | 3.11 | l | 0.00311 | m3 | l | llm (0.6) | tbl2:row5:col1 |
+| CLBW | `Q23` · CLb | 0.642 |  |  |  |  | llm (0.6) | tbl2:row6:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -80,38 +80,44 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 - table section iiv: 'ω2CL' routed out of structural estimates ('Inter-individual variability model parameters')
 - table section residual_error: 'Proportional error (%)' routed out of structural estimates ('Residual error model parameters')
 - table section residual_error: 'Additive error (μg ml−1)' routed out of structural estimates ('Residual error model parameters')
-- dropped duplicate Q22 ('CLBW', value '0.642') — already have one for this compound
+- table representations disagree for 'CLREF (l h−1)'; source reconciliation required
+- table representations disagree for 'VcREF (l)'; source reconciliation required
+- table representations disagree for 'QREF (l h−1)'; source reconciliation required
+- table representations disagree for 'VpREF (l)'; source reconciliation required
+- table representations disagree for 'CLBW'; source reconciliation required
+- table representations disagree for 'VcBW'; source reconciliation required
+- table representations disagree for 'CLLDH'; source reconciliation required
+- dropped duplicate Q61 ('VcBW', value '0.708') — already have one for this compound
 - dropped unlinked row (NIL): 'CLLDH' — extend the ontology if this is a real PK parameter (source ['tbl2:row8:col1'])
-- implicit units: 'VcBW' → L/kg (from the popPK convention: 'The paper excerpt gives no unit. VcBW denotes central volume normalized by body weight, so a volume-per-body-weight unit')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ipilimumab
+- structure disagreement: deterministic 1C vs LLM 3C — review compartment count
+- status held at "Needs review" — not promoted
 - molar mass: none found for 'ipilimumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell tbl2:row2:col2 = '0.0143, 0.0156'
-- unparsed cell tbl2:row3:col2 = '4.08, 4.26'
-- unparsed cell tbl2:row4:col2 = '0.0378, 0.0517'
-- unparsed cell tbl2:row5:col2 = '2.95, 3.46'
-- unparsed cell tbl2:row6:col2 = '0.423, 0.819'
-- unparsed cell tbl2:row7:col2 = '0.616, 0.832'
-- unparsed cell tbl2:row8:col2 = '0.653, 1.49'
-- unparsed cell tbl2:row10:col2 = '0.0965, 0.161'
-- unparsed cell tbl2:row14:col2 = '13.7, 16.6'
-- unparsed cell tbl2:row15:col2 = '0.005, 0.510'
+- table tbl2: missing_label
+- table tbl2: unparsed_numeric_cell
+- table tbl2: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.667 (8/12 fields) | 4 |
 | `qwen3.8-27b` | not confirmed | 0.615 (8/13 fields) | 5 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clbw]` | 0.642 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clref].parameter_id` | Q354 | Q22 | mismatch |
+| `gpt-oss-120b` | `parameters[vcref].parameter_id` | Q61 | Q63 | mismatch |
+| `gpt-oss-120b` | `parameters[vpref].parameter_id` | Q77 | Q64 | mismatch |
 | `qwen3.8-27b` | `parameters[clbw]` |  | 0.642 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[clref].parameter_id` | Q22 | Q26 | mismatch |
 | `qwen3.8-27b` | `parameters[vcbw]` | 0.708 |  | only_one_extracted |
@@ -133,18 +139,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 5 |  |  |  |
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |  |  |
-| C1_half_life_alpha | pass | 27.4 | 27.94 | 1.02 | 0.25 | reported t½α |
-| C1_half_life_beta | fail | 14.7 | 360 | 24.49 | 0.25 | reported t½β |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  |  |  | ['tbl2:row2:col1'] |
+| C1_half_life_beta | fail | 14.7 | 4.481 | 0.3048 | 0.25 | reported t½β |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  |  |  | ['tbl2:row4:col1'] |
-| C5_dimension_Q352 | pass | [length] ** 3 |  |  |  | ['tbl2:row7:col1'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  |  |  | ['tbl2:row3:col1'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  |  |  | ['tbl2:row5:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.015 |  |  | ['tbl2:row2:col1'] |
+| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  |  |  | ['tbl2:row2:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  |  |  | ['tbl2:row3:col1'] |
+| C5_dimension_Q77 | pass | [length] ** 3 |  |  |  | ['tbl2:row5:col1'] |
+| C5_unit_missing_Q23 | fail | [length] ** 3 / [time] |  |  |  | ['tbl2:row6:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.642 |  |  | ['tbl2:row6:col1'] |
 | C8_topology | pass |  |  |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.015 L/h |  |  | ['tbl2:row2:col1'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 4.15 L |  |  | ['tbl2:row3:col1'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 3.11 L |  |  | ['tbl2:row5:col1'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 4.15 L |  |  | ['tbl2:row3:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -178,4 +181,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bipilimumab%5D%20Ipilimumab_Feng2014_reference&body=Drug%3A%20ipilimumab%0ARecord%3A%20Ipilimumab_Feng2014_reference%0APaper%3A%20Feng_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ipilimumab/Ipilimumab_Feng2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 12:50 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 14:13 UTC</sub>

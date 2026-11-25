@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
-> Rejected due to an unconvertible unit for Km and reader disagreement on the distribution volume and absorption lag time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit M ([length]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Belle2000_base" status="rejected" stale="false" population="human liver microsomes" measured-compound="acetaminophen" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Belle DJ, Ring BJ, Allerheiligen SR, Heathman MA, O'Brien LM, Sinha V et al. A p
 
 ### Reviewer guidance
 
-**Rejected due to an unconvertible unit for Km and reader disagreement on the distribution volume and absorption lag time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit M ([length]) vs [mass] / [length] ** 3.**
 
-The Km value of 6.9 M could not be converted to standard units, preventing the model from running. The second reader recorded no value for the distribution volume and lag time, where this record lists 6.35 liters and 4.2 min, respectively. Extracted — paracetamol: Km 6.9 M, CL 0.035 l.min−1, V 6.35 liters, kabs 9.76 h -1, tlag 4.2 min.
+A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — paracetamol: Km 6.9 M, CL 0.035 l.min−1, V 6.35 liters, kabs 9.76 h -1, tlag 4.2 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 1 a: this record has none, the second reading 19.8; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
-> The AUC unit µg h⁻¹ ml⁻¹ conflicts with the required dimension [mass] [time] [length]⁻³, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit µg h⁻¹ ml⁻¹ ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q20 unit µg h⁻¹ ml⁻¹ ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Wasfi2003_a_male" status="rejected" stale="false" population="camels" measured-compound="diclofenac" parameterization="mechanistic" topology="2C"></div>
 
@@ -60,13 +60,13 @@ Wasfi IA, Hussain MM, Elghazali M, Alkatheeri NA, Abdel Hadi AA. The disposition
 
 ### Reviewer guidance
 
-**The AUC unit µg h⁻¹ ml⁻¹ conflicts with the required dimension [mass] [time] [length]⁻³, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit µg h⁻¹ ml⁻¹ ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q20 unit µg h⁻¹ ml⁻¹ ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The record reports an AUC value of 15.2 µg h⁻¹ ml⁻¹, which has dimensions of mass per time per volume, conflicting with the expected mass time per volume dimension. This dimensional inconsistency on a structural parameter caused the model to be rejected, despite other parameters like t1/2α being 0.30 h. Extracted — diclofenac: A1 16.8 µg, t1/2α 0.3 h, t1/2β 2.05 h, AUC 15.2 µg h⁻¹ ml⁻¹, CL 0.16 l h⁻¹ kg⁻¹, Vss 0.29 l.kg⁻¹, V1 0.13 l.kg⁻¹, AUMC 26.6 µg h⁻¹ ml⁻¹, … (+4).
+A reported unit could not be converted (A1, AUC and AUMC), so that value has no SI equivalent. Extracted — diclofenac: A1 16.8 µg, t1/2α 0.3 h, t1/2β 2.05 h, AUC 15.2 µg h⁻¹ ml⁻¹, CL 0.16 l h⁻¹ kg⁻¹, Vss 0.29 l.kg⁻¹, V1 0.13 l.kg⁻¹, AUMC 26.6 µg h⁻¹ ml⁻¹, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 16.8, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

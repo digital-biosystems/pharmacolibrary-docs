@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The doxorubicin model was rejected because the peripheral compartment, defined by a 519 L volume, is structurally disconnected from the central compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Kang2025_reference" status="rejected" stale="false" population="" measured-compound="doxorubicin" parameterization="apparent" topology="2C"></div>
 
@@ -47,13 +47,13 @@ Kang M, Kim J, Lee Y, Shin JS, Park MS, Jiang Q et al. Population Pharmacokineti
 
 ### Reviewer guidance
 
-**The doxorubicin model was rejected because the peripheral compartment, defined by a 519 L volume, is structurally disconnected from the central compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record specifies a two-compartment topology, but the parameter check identified the peripheral compartment as an orphan with no path from the dose. Consequently, the 519.0 L volume of distribution for the peripheral compartment could not be integrated into the systemic clearance calculations. The second reader noted disagreements on multiple unspecified fields, but the primary structural defect remained unresolved. Extracted — doxorubicin: CL/F 37.9 L/h, V/F 902 L, V2/F 519 L.
+Extracted — doxorubicin: CL/F 37.9 L/h, V/F 902 L, V2/F 519 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has none, the second reading 29669; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
 
-> Naltrexone was rejected because its apparent oral clearance (CL/F) is −1618.0 mL/min/kg, an implausible negative clearance.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="naltrexone" model-id="Naltrexone_Christie2025_reference" status="rejected" stale="false" population="" measured-compound="naltrexone" parameterization="apparent" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Christie JT, Bruce M, Pfitzer S, Laubscher L, Raath JP, Laurence M et al. Pharma
 
 ### Reviewer guidance
 
-**Naltrexone was rejected because its apparent oral clearance (CL/F) is −1618.0 mL/min/kg, an implausible negative clearance.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record gives naltrexone CL/F as −1618.0 mL/min/kg; the finding identifies this negative clearance as implausible in either a covariate scenario or the base, without specifying which. A second reader disagreed about whether the peripheral volume of distribution, V2, was 588.0 mL/kg or absent. Extracted — naltrexone: CL/F -1.62e+03 mL/ min/kg, V1 89.9 mL/kg, V2 588 mL/ kg, Q 44.6 mL/ min/kg, kabs 0.484 1/ min.
+Extracted — naltrexone: CL/F -1.62e+03 mL/ min/kg, V1 89.9 mL/kg, V2 588 mL/ kg, Q 44.6 mL/ min/kg, kabs 0.484 1/ min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of V2: this record has 588, the second reading none. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

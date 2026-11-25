@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> The record is held after disagreement over aldesleukin (interleukin-2) clearance: it lists 5.9 ml/h/kg for PEG-IL-2, while the second reader reports 300.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="aldesleukin" model-id="Aldesleukin_Chen2000_reference" status="needs_review" stale="false" population="Yorkshire pigs" measured-compound="interleukin-2" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Chen SA, Sawchuk RJ, Brundage RC, Horvath C, Mendenhall HV, Gunther RA et al. Pl
 
 ### Reviewer guidance
 
-**The record is held after disagreement over aldesleukin (interleukin-2) clearance: it lists 5.9 ml/h/kg for PEG-IL-2, while the second reader reports 300.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The cross-reader comparison was disputed (agreement 0.133; 0 of 1 reader agreed); the second reader reported clearance 300, whereas the parameter list gives CL 5.9 ml/h/kg for PEG-IL-2. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Vss 370 ml/kg was used as the distribution volume because no Vc/V was reported; AUC and terminal half-life were reproduced, but the early distribution phase was not. The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. Extracted — interleukin-2: AUC ratio 0.67, FG 100 %, CL 5.9 ml/h/kg, Vss 370 ml/kg.
+The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is aldesleukin's own; they describe interleukin-2. Extracted — interleukin-2: AUC ratio 0.67, FG 100 %, CL 5.9 ml/h/kg, Vss 370 ml/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has interleukin-2, the second reading IL-2; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -167,7 +167,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.133 (2 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.133 | cross-check contradicted by a second reader: verdict disputed; agreement 0.133 (2 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

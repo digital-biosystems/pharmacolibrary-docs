@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Morniflumate record rejected due to absorption rate constant unit error and unlinked ninic acid metabolite compartment.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="morniflumate" model-id="Morniflumate_Jeong2024_reference" status="rejected" stale="false" population="healthy Korean men" measured-compound="morniflumate" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -49,13 +49,13 @@ Jeong SH, Jang JH, Lee YB. Modeling population pharmacokinetics of morniflumate 
 
 ### Reviewer guidance
 
-**Morniflumate record rejected due to absorption rate constant unit error and unlinked ninic acid metabolite compartment.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The absorption rate constant is labeled with volume/time units (L/h) instead of inverse time, creating a dimension mismatch. The ninic acid metabolite lacks a defined input pathway from the parent compound, leaving it orphaned. A second reader also identified additional missing clearance and transfer parameters not captured in the current record. Extracted — morniflumate: V1/F 111 L, CL/F 10.4 L/h, V2/F 1e+04 L, kabs 9.89 L/h.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — morniflumate: V1/F 111 L, CL/F 10.4 L/h, V2/F 1e+04 L, kabs 9.89 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has morniflumate, the second reading morni umate; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

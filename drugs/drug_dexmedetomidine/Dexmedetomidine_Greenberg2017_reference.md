@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05C&quot;,&quot;href&quot;:&quot;atc/N05C.md&quot;},{&quot;label&quot;:&quot;dexmedetomidine&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/&quot;},{&quot;label&quot;:&quot;Greenberg_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexmedetomidine_Ber2020_reference&quot;,&quot;label&quot;:&quot;Ber_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Ber2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_Huang2025_reference&quot;,&quot;label&quot;:&quot;Huang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Huang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_James2022_reference&quot;,&quot;label&quot;:&quot;James_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_James2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_Levionnois2022_reference&quot;,&quot;label&quot;:&quot;Levionnois_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Levionnois2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2A&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12A&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2A.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2B&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2C&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2A&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12A&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2A.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2B&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2C&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexmedetomidine_Ber2020_reference&quot;,&quot;label&quot;:&quot;Ber_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Ber2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_James2022_reference&quot;,&quot;label&quot;:&quot;James_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_James2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_Levionnois2022_reference&quot;,&quot;label&quot;:&quot;Levionnois_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Levionnois2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_Li2022_reference&quot;,&quot;label&quot;:&quot;Li_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Li2022_reference.md&quot;,&quot;status&quot;:&quot;Reproduces paper&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexmedetomidine_Huang2025_reference&quot;,&quot;label&quot;:&quot;Huang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/Dexmedetomidine_Huang2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2A&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12A&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2A.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2B&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_GTP_S_2C&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 GTP\u03b3S \u03b12C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_GTP_S_2C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2A&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12A&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2A.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2B&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12B&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2B.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yocca_2025_arrestin_2C&quot;,&quot;label&quot;:&quot;Yocca_2025 \u00b7 \u03b2-arrestin \u03b12C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dexmedetomidine/pd_Yocca_2025_arrestin_2C.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dexmedetomidine — `Dexmedetomidine_Greenberg2017_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record's clearance parameter was mistakenly assigned a value of -40 with units of % instead of a volume or rate constant, causing dimensional and plausibility failures.
+> Only volume was extracted — no clearance.
 
-<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Greenberg2017_reference" status="rejected" stale="false" population="infants receiving dexmedetomidine for sedation" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dexmedetomidine" model-id="Dexmedetomidine_Greenberg2017_reference" status="needs_review" stale="false" population="infants" measured-compound="dexmedetomidine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Greenberg RG, Wu H, Laughon M, Capparelli E, Rowe S, Zimmerman KO et al. Population Pharmacokinetics of Dexmedetomidine in Infants. Journal of clinical pharmacology 57(9):1174–1182 (2017).
@@ -17,26 +17,25 @@ Greenberg RG, Wu H, Laughon M, Capparelli E, Rowe S, Zimmerman KO et al. Populat
 
 ## Population and dosing
 
-**Population:** infants receiving dexmedetomidine for sedation · condition sedation (clinical care, some post cardiac surgery) · age group infant · n = 20.
+**Population:** infants · condition sedation · age group infant · n = 20.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Infants with a history of cardiac surgery had ∼40% lower clearance compared to those without a history of cardiac surgery. | CL | -40 | % |
 | volume of distribution | V | 1.5 | L/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,19 +45,18 @@ Greenberg RG, Wu H, Laughon M, Capparelli E, Rowe S, Zimmerman KO et al. Populat
 
 ### Reviewer guidance
 
-**The record's clearance parameter was mistakenly assigned a value of -40 with units of % instead of a volume or rate constant, causing dimensional and plausibility failures.**
+**Only volume was extracted — no clearance.**
 
-The clearance entry contains a value of -40 with units of %, which is dimensionless rather than having dimensions of volume over time. This structural mismatch and the negative value render the parameter implausible for a population pharmacokinetic model. Additionally, the record relies solely on the paper's abstract, meaning summary statistics stand in for the fitted model parameters. Extracted — dexmedetomidine: CL -40 %, V 1.5 L/kg.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dexmedetomidine: V 1.5 L/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has none, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Infants with a history of cardiac surgery had ∼40% lower clearance compared to those without a history of cardiac surgery. | `Q22` · CL | -40 | % |  |  | % | llm_confirmed (0.6) | Greenberg_2017:abstract, Greenberg_2017:abstract |
 | volume of distribution | `Q61` · V | 1.5 | L/kg | 0.105 | m3 | l/kg | exact (1) | Greenberg_2017:abstract |
 
 <details class="legend">
@@ -66,42 +64,36 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| clearance | Q22 | exact |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'Younger PMA was a significant predictor of lower clearance.'
-- dropped value-less row: 'A 1-compartment model best described the data.'
-- unit_dimension_mismatch: 'Infants with a history of cardiac surgery had ∼40% lower clearance compared to those without a history of cardiac surgery.' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_unknown: 'null' (CL)
 - unit_dimension_mismatch: 'estimated clearance' → Q22 (unit '[mass] * [time]' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q22 ('estimated clearance', value 0.87) — already have one for this compound
+- dropped duplicate Q22 ('estimated clearance', value None) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dexmedetomidine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Greenberg_2017_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Greenberg_2017_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.625 (5/8 fields) | 3 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>3 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[clearance]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[infants with a history of cardiac surgery had ∼40% lower clearance compared to those without a history of cardiac surgery.]` | -40 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[infants with a history of cardiac surgery had ∼40% lower clearance compared to those without a history of cardiac surgery]` |  |  | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -113,13 +105,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C2_base_sign_Q22 | fail |  | -40 |  |
-| C5_dimension_Q22 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Greenberg_2017:abstract', 'Greenberg_2017:abstract'] |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Greenberg_2017:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | -40 | ['Greenberg_2017:abstract', 'Greenberg_2017:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q61 | pass | volume within physiological range | 105 L | ['Greenberg_2017:abstract'] |
 
@@ -133,9 +122,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -145,4 +144,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdexmedetomidine%5D%20Dexmedetomidine_Greenberg2017_reference&body=Drug%3A%20dexmedetomidine%0ARecord%3A%20Dexmedetomidine_Greenberg2017_reference%0APaper%3A%20Greenberg_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dexmedetomidine/Dexmedetomidine_Greenberg2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:17 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 20:55 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Q2 was assigned units of kilogram minutes instead of volume per time, causing a dimension mismatch that rejected the record.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q99 unit kg X min ([mass] * [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="fluorouracil" model-id="Fluorouracil_Wagner1986_reference" status="rejected" stale="false" population="cancer patients with primary or metastatic liver cancer" measured-compound="5-fluorouracil" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Wagner JG, Gyves JW, Stetson PL, Walker-Andrews SC, Wollner IS, Cochran MK et al
 
 ### Reviewer guidance
 
-**Q2 was assigned units of kilogram minutes instead of volume per time, causing a dimension mismatch that rejected the record.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q99 unit kg X min ([mass] * [time]) vs [length] ** 3 / [time].**
 
-The parameter named Q2 represents apparent intercompartmental clearance between the central and second peripheral compartments. The record stores this value as 0.189 with units kg X min, which is dimensionally incompatible with a clearance term. Additionally, the record was constructed from the abstract alone, meaning reported summary statistics stood in for fitted model parameters. Extracted — fluorouracil: Q2 0.189 kg X min, CL 256 L/h, V 161 L, kabs 0.13 1/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fluorouracil: Q2 0.189 kg X min, CL 256 L/h, V 161 L, kabs 0.13 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has 5-fluorouracil, the second reading fluorouracil; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:42 | 2:29 | 0/0/0 | 0/0/0 | 0/0/0 | 56,473/655 | ollama / glm-5.3-flash | 3 | 3/0 | 3/0 | 0 |
+| 2026-11-24 03:29 | 0:02 | 0/0/0 | 0/0/0 | 0/0/0 | 224/67 | einfracz / qwen3.8-27b | 3 | 3/0 | 3/0 | 0 |
 
 ## Coverage
 
@@ -47,15 +47,18 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Shram_2022.pdf` | Shram MJ et al., Oral, intranasal, and intravenous abuse…, Current medical research an… (2022) | pd | 5 | [10.1080/03007995.2022.2076474](https://doi.org/10.1080/03007995.2022.2076474) | [35570699](https://www.ncbi.nlm.nih.gov/pubmed/35570699) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-10-07 00:42 UTC</sub>
+<sub>queue written 2026-11-24 03:29 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Heal_2024 | irrelevant | 2 | 0 | The paper is a review that qualitatively discusses the pharmacological and PK properties of serdexmethylphenidate but does not provide original quantitative PK parameter values in the text. |
+| PGx | Heal_2024 | not_relevant | 0 | 0 | The paper is a review of pharmacological and PK/PD properties of stimulant prodrugs and does not report any genetic variants or genotypes affecting these parameters. |
 | popPK | Kay_2025 | irrelevant | 0 | 0 | This is an fMRI neuroimaging study of methylphenidate's effects on brain connectivity; no PK parameters for serdexmethylphenidate are reported. |
 | popPK | Qin_2026 | irrelevant | 0 | 0 | This is a FAERS pharmacovigilance disproportionality study of ADHD drugs; serdexmethylphenidate is only one monitored ingredient and no PK parameters are reported. |
 | popPK | Shram_2022 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
+| PGx | Shram_2022 | not_relevant | 0 | 0 | The paper focuses on the abuse potential and pharmacokinetics of serdexmethylphenidate in general, but does not report pharmacogenomic effects (gene variants) on PK or PD parameters. |
 
 
 </details>

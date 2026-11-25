@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The tolvaptan absorption rate constant was left at a library default because the source paper did not report an estimated value.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Lanke2019_base" status="needs_review" stale="false" population="adults with autosomal dominant polycystic kidney disease" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Lanke S, Shoaf SE. Population Pharmacokinetic Analyses and Model Validation of T
 
 ### Reviewer guidance
 
-**The tolvaptan absorption rate constant was left at a library default because the source paper did not report an estimated value.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists the absorption phase as a zero-order input with a 0.55 hour duration, yet the absorption rate constant required for standard modeling was not extracted. This parameter was replaced with a placeholder value, meaning the simulated profile is not supported by the specific study data. Additionally, the first-order depot input assumption conflicts with the zero-order duration reported in the facts. Extracted — tolvaptan: CL/F 11.4 L/h, V/F 109 L, D1 0.55 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — tolvaptan: CL/F 11.4 L/h, V/F 109 L, D1 0.55 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose50: this record has none, the second reading 152. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

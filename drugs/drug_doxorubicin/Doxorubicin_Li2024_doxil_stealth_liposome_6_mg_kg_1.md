@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The doxorubicin record was rejected because the volume of distribution value of 0.0764 L is physiologically implausible, indicating a unit extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Li2024_doxil_stealth_liposome_6_mg_kg_1" status="rejected" stale="false" population="rats and mice" measured-compound="doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Li Z, Kovshova T, Malinovskaya J, Knoll J, Shanehsazzadeh S, Osipova N et al. Bl
 
 ### Reviewer guidance
 
-**The doxorubicin record was rejected because the volume of distribution value of 0.0764 L is physiologically implausible, indicating a unit extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The reported volume of distribution of 0.0764 L for doxorubicin is far too small for the molecule, triggering a physiological magnitude flag. This inconsistency suggests a unit conversion error rather than a valid pharmacokinetic parameter. The rejection is based on this implausible volume value despite the presence of other extracted parameters like half-life. Extracted — doxorubicin: t1/2z 40.1 h, kel 0.32 h−1, V 0.0764 l.
+Extracted — doxorubicin: t1/2z 40.1 h, kel 0.32 h−1, V 0.0764 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading doxil® → doxorubicin (interconversion); pbca nanoparticles → doxorubicin (interconversion). That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

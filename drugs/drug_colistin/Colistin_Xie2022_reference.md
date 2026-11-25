@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The colistin model was rejected because the peripheral compartment was unreachable from the dose, and its clearance and volume parameters differ significantly from a second reader's estimates.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="colistin" model-id="Colistin_Xie2022_reference" status="rejected" stale="false" population="critically ill adult patients" measured-compound="colistin sulfate" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Xie YL, Jin X, Yan SS, Wu CF, Xiang BX, Wang H et al. Population pharmacokinetic
 
 ### Reviewer guidance
 
-**The colistin model was rejected because the peripheral compartment was unreachable from the dose, and its clearance and volume parameters differ significantly from a second reader's estimates.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record describes a two-compartment structure where the peripheral compartment (V2 = 50.5 L) has no path from the dose, rendering it an orphan compartment. Additionally, the recorded total clearance (1.50 L/h) and central volume (16.1 L) do not match the second reader's values of 0.69 L/h and 12.9 L, respectively. The peripheral volume also conflicts, with the second reader noting 24.8 L against the recorded 50.5 L. Extracted — colistin: V 16.1 L, V2 50.5 L, CL 1.5 L/h.
+Extracted — colistin: V 16.1 L, V2 50.5 L, CL 1.5 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[tvcl].value`: this record has 1.50, the second reading 0.69; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Sumatriptan absorption parameters were misinterpreted as half-lives and macro-rate constants, causing double correction and dimension mismatches.
+> C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit h−1 (1 / [time]) vs [time]; Q68 unit h−1 (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="sumatriptan" model-id="Sumatriptan_Ohk2022_estimate_rse" status="rejected" stale="false" population="healthy Korean adults" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Ohk B, Seong S, Lee J, Gwon M, Kang W, Lee H et al. Evaluation of sex difference
 
 ### Reviewer guidance
 
-**Sumatriptan absorption parameters were misinterpreted as half-lives and macro-rate constants, causing double correction and dimension mismatches.**
+**C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit h−1 (1 / [time]) vs [time]; Q68 unit h−1 (1 / [time]) vs 1 / [time].**
 
-The record lists an absorption half-life of 0.568 h but the underlying parameter is a first-order rate constant with units of h−1. Similarly, a macro-rate constant of 0.295 h−1 was mislabeled, creating a conflict between the time dimension of the value and the inverse time dimension of the unit. These inconsistencies in the absorption compartment parameters prevented the model from passing coherence and dimension checks. Extracted — sumatriptan: CLm/F 444 L/h, CL/F 281 L/h, V3/F 68.7 L, t1/2ka 0.568 h−1, λ2 0.295 h−1, MTT 1.52 h, n_transit 6.7, Fab 0.558.
+A reported unit could not be converted (t1/2ka , λ2 and MTT), so that value has no SI equivalent. Extracted — sumatriptan: CLm/F 444 L/h, CL/F 281 L/h, V3/F 68.7 L, t1/2ka 0.568 h−1, λ2 0.295 h−1, MTT 1.52 h, n_transit 6.7, Fab 0.558.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sumatriptan, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

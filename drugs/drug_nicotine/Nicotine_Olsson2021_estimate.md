@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Nicotine’s zero-order input duration is recorded as 3.82 mg, conflicting with its time dimension and causing the record to be rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg ([mass]) vs [time].
 
 <div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Olsson2021_estimate" status="rejected" stale="false" population="healthy smokers" measured-compound="nicotine" parameterization="mechanistic" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Olsson Gisleskog PO, Perez Ruixo JJ, Westin Å, Hansson AC, Soons PA. Nicotine P
 
 ### Reviewer guidance
 
-**Nicotine’s zero-order input duration is recorded as 3.82 mg, conflicting with its time dimension and causing the record to be rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg ([mass]) vs [time].**
 
-D1 is defined as the duration of a zero-order input, but its reported unit is mg, a mass unit rather than a time unit. The reported unit could not be converted to SI, so no SI value was available for this parameter. Extracted — nicotine: CL 67.4 L/h, V1 117 L, Q 38.6 L/h, V2 130 L, Q3 216 L/h, V3 53.4 L, D1 3.82 mg, kabs 1.55 h−1, … (+5).
+A reported unit could not be converted (D1), so that value has no SI equivalent. Extracted — nicotine: CL 67.4 L/h, V1 117 L, Q 38.6 L/h, V2 130 L, Q3 216 L/h, V3 53.4 L, D1 3.82 mg, kabs 1.55 h−1, … (+5).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clch24: this record has none, the second reading 11.6; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

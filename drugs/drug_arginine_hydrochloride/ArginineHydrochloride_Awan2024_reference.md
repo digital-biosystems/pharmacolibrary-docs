@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Arginine clearance of 1.0 mL/day and volume of 0.0117 L are physiologically implausible for a standard amino acid infusion.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="arginine hydrochloride" model-id="ArginineHydrochloride_Awan2024_reference" status="rejected" stale="false" population="" measured-compound="arginine_hydrochloride" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Awan SF, Pegu A, Strom L, Carter CA, Hendel CS, Holman LA et al. Phase 1 trial e
 
 ### Reviewer guidance
 
-**Arginine clearance of 1.0 mL/day and volume of 0.0117 L are physiologically implausible for a standard amino acid infusion.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted clearance of 1.0 mL/day is orders of magnitude too low for an eliminated solute. The corresponding volume of distribution of 0.0117 L is equally unrealistic. A second reader proposed substantially different values for the parameters, indicating significant uncertainty in the extraction. Extracted — arginine hydrochloride: CL 1 mL/day, V 0.0117 L.
+Extracted — arginine hydrochloride: CL 1 mL/day, V 0.0117 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 1, the second reading 1309; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

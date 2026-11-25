@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;amitriptyline&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/&quot;},{&quot;label&quot;:&quot;Br\u00f8sen_2001 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Brsen2001_reference&quot;,&quot;label&quot;:&quot;Br\u00f8sen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Brsen2001_reference&quot;,&quot;label&quot;:&quot;Br\u00f8sen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amitriptyline — `Amitriptyline_Brsen2001_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Amitriptyline’s absorption rate constant (ka) has no reported value, so the model record was held back.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
-<div class="pk-model-meta" hidden drug="amitriptyline" model-id="Amitriptyline_Brsen2001_reference" status="needs_review" stale="false" population="" measured-compound="amitriptyline" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="amitriptyline" model-id="Amitriptyline_Brsen2001_reference" status="rejected" stale="false" population="" measured-compound="amitriptyline" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Brøsen K, Naranjo CA. Review of pharmacokinetic and pharmacodynamic interaction studies with citalopram. European neuropsychopharmacology : the journal of the European College of Neuropsychopharmacology 11(4):275–283 (2001).
@@ -29,7 +29,7 @@ Brøsen K, Naranjo CA. Review of pharmacokinetic and pharmacodynamic interaction
 <figure class="pk-models-diagram"><img src="drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference/Amitriptyline_Brsen2001_reference.svg" alt="Amitriptyline_Brsen2001_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -38,7 +38,7 @@ Brøsen K, Naranjo CA. Review of pharmacokinetic and pharmacodynamic interaction
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.429). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.429). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Brøsen K, Naranjo CA. Review of pharmacokinetic and pharmacodynamic interaction
 
 ### Reviewer guidance
 
-**Amitriptyline’s absorption rate constant (ka) has no reported value, so the model record was held back.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-Ka use library defaults, not estimates from this paper. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The model builder also defaulted Tlag and represented extravascular dosing with first-order depot absorption and apparent parameters (F=1, Fm=1, no molar correction); the second reader disagreed on parameter values, with agreement of 0.429. Extracted — amitriptyline: CL/F 26 l / h, V/F 1.24e+03 L.
+Extracted — amitriptyline: CL/F 26 l / h, V/F 1.24e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q352: this record has 14, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -124,14 +124,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T0_analyte_identity | fail | amitriptyline (or metabolite) | paper about another drug |  | paper subject is not amitriptyline: the paper is about another drug; this one is a co-medication or covariate: The paper is a review on citalopram drug interactions, and amitriptyline is mentioned only as a co-administered probe substrate for CYP2D6 without providing its |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=amitriptyline) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.429, 0 of 1 reader(s) agree | 0.429 | cross-check agreement 0.429 is below 0.5: verdict partial, agreement 0.429, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.429 (3 of 7 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.429 | cross-check agreement 0.429 is below 0.5: verdict partial; agreement 0.429 (3 of 7 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -143,61 +143,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference/Amitriptyline_Brsen2001_reference_modelica.zip" download>Amitriptyline_Brsen2001_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference/Amitriptyline_Brsen2001_reference_fmi.zip" download>Amitriptyline_Brsen2001_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference/Amitriptyline_Brsen2001_reference_matlab.zip" download>Amitriptyline_Brsen2001_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference/Amitriptyline_Brsen2001_reference_matlab_simbio.zip" download>Amitriptyline_Brsen2001_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference/Amitriptyline_Brsen2001_reference_sbml.zip" download>Amitriptyline_Brsen2001_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference/Amitriptyline_Brsen2001_reference_cellml.zip" download>Amitriptyline_Brsen2001_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.2774 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 7.5e-05 | kg |
-| input | model | `Cl` | 7.222e-06 | m3/s |
-| input | model | `VdPerKg` | 0.01768 | m3/kg |
-| input | model | `ka` | 0.0001389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Brøsen K, Naranjo CA. Review of pharmacokinetic and pharmacodynamic interaction studies with citalopram. European neuropsychopharmacology : the journal of the European College of Neuropsychopharmacology 11(4):275–283 (2001). [doi:10.1016/s0924-977x(01)00101-8](https://doi.org/10.1016/s0924-977x(01)00101-8)
-
-**This record:** Pharmacolibrary, model `Amitriptyline_Brsen2001_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference>
-
-```bibtex
-@misc{pharmacolibrary_AmitriptylineBrsen2001reference,
-  title  = {{Pharmacolibrary model Amitriptyline_Brsen2001_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference},
-  note   = {Parameters from doi:10.1016/s0924-977x(01)00101-8},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -211,4 +159,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamitriptyline%5D%20Amitriptyline_Brsen2001_reference&body=Drug%3A%20amitriptyline%0ARecord%3A%20Amitriptyline_Brsen2001_reference%0APaper%3A%20Br%C3%B8sen_2001%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:30 UTC</sub>

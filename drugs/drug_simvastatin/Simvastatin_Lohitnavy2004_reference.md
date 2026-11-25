@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record for simvastatin was held back because a second reader disputed the assigned parameter values, disagreeing on multiple extracted entries including the total clearance.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Lohitnavy2004_reference" status="needs_review" stale="false" population="healthy Thai male volunteers" measured-compound="simvastatin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Lohitnavy M, Lohitnavy O, Chaijittiprasert K, Taytiwat P, Polnok S. Bioequivalen
 
 ### Reviewer guidance
 
-**The record for simvastatin was held back because a second reader disputed the assigned parameter values, disagreeing on multiple extracted entries including the total clearance.**
+**cross_check_disputed; x1_cross_check.**
 
-The primary extraction assigned a total clearance of 31.8 l/h and a derived volume of distribution of 87.1676 L to simvastatin. A second reader disagreed with these assignments, specifically noting conflicts where the primary record listed values such as 37.94 and 1.01 while the second reader marked them as null or provided different values like 37.45. This lack of consensus resulted in an agreement ratio of 0.2, triggering the cross-check failure. Extracted — simvastatin: CL 31.8 l/h, V 87.2 L.
+Extracted — simvastatin: CL 31.8 l/h, V 87.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has none, the second reading 37.45; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

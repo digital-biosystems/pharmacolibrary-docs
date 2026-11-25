@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected due to inconsistent apparent clearance units and missing bioavailability value for 2-chloroadenine.
+> C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit μg/h ([mass] / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="cladribine" model-id="Cladribine_Savic2017_reference" status="rejected" stale="false" population="adults with multiple sclerosis" measured-compound="cladribine" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -61,13 +61,13 @@ Savic RM, Novakovic AM, Ekblom M, Munafo A, Karlsson MO. Population Pharmacokine
 
 ### Reviewer guidance
 
-**Record rejected due to inconsistent apparent clearance units and missing bioavailability value for 2-chloroadenine.**
+**C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit μg/h ([mass] / [time]) vs [length] ** 3 / [time].**
 
-The record assigns a mass-flow unit to an apparent volume parameter, creating a dimensional conflict. Bioavailability is listed but null, yet apparent clearance values are provided. A second reader identified a missing metabolic rate constant and covariate effect. Extracted — cladribine: CL 3.52 μg/h, CLNR 23.4 L/h, V1 44 L, Q 14.3 L/h, Q2 53.7 L/h, V2 347 L, V3 89.5 L, kabs 1.08 h−1, … (+3); 2-chloroadenine: CL 0.0028 μg/h, CL/F 653 L/h, V1/F 365 L.
+A reported unit could not be converted (CL, MTT and CL), so that value has no SI equivalent. Extracted — cladribine: CL 3.52 μg/h, CLNR 23.4 L/h, V1 44 L, Q 14.3 L/h, Q2 53.7 L/h, V2 347 L, V3 89.5 L, kabs 1.08 h−1, … (+3); 2-chloroadenine: CL 0.0028 μg/h, CL/F 653 L/h, V1/F 365 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clr e (km): this record has none, the second reading 0.0114; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

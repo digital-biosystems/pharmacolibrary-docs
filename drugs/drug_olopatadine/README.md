@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fidler_2018_itching_score](drugs/drug_olopatadine/pd_Fidler_2018_itching_score.md) | ocular itching score ← olopatadine (KPD theoretical concentration) · direct Emax (saturable) effect | — | Fidler ML et al., Projected 24-hour post-dose ocular itch…, Journal of pharmacokinetics… (2018) | [10.1007/s10928-018-9588-7](https://doi.org/10.1007/s10928-018-9588-7) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Fidler_2018_itching_score](drugs/drug_olopatadine/pd_Fidler_2018_itching_score.md) | ocular itching score ← olopatadine (KPD theoretical concentration) · direct Emax (saturable) effect | — | Fidler ML et al., Projected 24-hour post-dose ocular itch…, Journal of pharmacokinetics… (2018) | [10.1007/s10928-018-9588-7](https://doi.org/10.1007/s10928-018-9588-7) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:15 | 0:14 | 0/0/0 | 1/0/0 | 0/0/0 | 30,477/1,503 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 02:41 | 0:03 | 0/0/0 | 0/1/0 | 0/0/0 | 3,855/164 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -50,7 +50,8 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Fidler_2018 | irrelevant | 3 | 2 | This is a kinetic-pharmacodynamic (KPD) efficacy model of ocular itching, not a PK disposition model; only a theoretical KPD half-life (18.46 h) is reported, with no CL, V, or real concentration-based parameters, and other parameter values appear to live in tables/supplementary material not provided. |
-| popPK | Matsumoto_2008 | irrelevant | 0 | 0 | In-vitro receptor pharmacology study of olopatadine's antagonism mechanism; no PK parameters reported. |
+| popPK | Matsumoto_2008 | irrelevant | 0 | 0 | The study reports in vitro mechanistic data on receptor antagonism (pD2) rather than pharmacokinetic disposition parameters. |
+| PGx | Matsumoto_2008 | not_relevant | 0 | 0 | The study investigates the pharmacodynamic mechanism of action (H1 receptor antagonism) and molecular structure but does not report any effect of a gene variant or genotype on olopatadine's PK or PD parameters. |
 
 
 </details>

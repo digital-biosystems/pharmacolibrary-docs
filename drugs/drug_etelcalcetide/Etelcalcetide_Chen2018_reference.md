@@ -45,7 +45,7 @@ Chen P, Narayanan A, Wu B, Gisleskog PO, Gibbs JP, Chow AT et al. Population Pha
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ciprofloxacin's bioavailability and volume of distribution had no extracted values, so the model was held back rather than published with placeholders.
+> No value for ciprofloxacin's bioavailability and volume of distribution; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Garg2024_reference" status="model_quarantined" stale="false" population="newborns with early onset neonatal sepsis and suspected meningitis" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Garg K, Bhandari RK, Shafiq N, Jain S, Jaswal S, Chawla D et al. Population phar
 
 ### Reviewer guidance
 
-**Ciprofloxacin's bioavailability and volume of distribution had no extracted values, so the model was held back rather than published with placeholders.**
+**No value for ciprofloxacin's bioavailability and volume of distribution; t6_deviations.**
 
-The record lists no values for bioavailability or volume of distribution, meaning a library placeholder would have been used instead of an explicit estimate. The clearance was recorded as 0.44 L/h, though a second reader identified 18.68 L/h as the value from the paper. Similarly, a second reader found a volume of distribution of 11.13 L, whereas this record had no value. Extracted — ciprofloxacin: CL 0.44 L/h, kabs 1 h−1, tlag 0.33 h.
+The model was built, but ciprofloxacin's bioavailability and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — ciprofloxacin: CL 0.44 L/h, kabs 1 h−1, tlag 0.33 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl = tvcl].value`: this record has 0.44, the second reading 18.68; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

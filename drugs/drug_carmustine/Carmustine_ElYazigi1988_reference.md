@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> BCNU total-body clearance of 7.211 liters/hr.kg has a unit dimension that conflicts with clearance, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time]; Q22 unit liters/hr.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="carmustine" model-id="Carmustine_ElYazigi1988_reference" status="rejected" stale="false" population="rabbits" measured-compound="BCNU" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ El-Yazigi A, Martin CR. Capillary gas chromatography and thermionic N-P-specific
 
 ### Reviewer guidance
 
-**BCNU total-body clearance of 7.211 liters/hr.kg has a unit dimension that conflicts with clearance, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time]; Q22 unit liters/hr.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].**
 
-The reported clearance unit corresponds to volume × mass per time, whereas clearance is volume per time. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Extracted — carmustine: λ1 2.9 hr-1, kel 0.123 hr-1, CL 7.21 liters/hr.kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — carmustine: λ1 2.9 hr-1, kel 0.123 hr-1, CL 7.21 liters/hr.kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

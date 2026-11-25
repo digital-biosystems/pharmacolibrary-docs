@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Serelaxin clearance is dimensionally inconsistent, labeled as a percentage rather than volume per time, causing the record to be rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit % (dimensionless) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="serelaxin" model-id="Serelaxin_Soubret2018_reference" status="rejected" stale="false" population="patients with acute or chronic heart failure, hepatic or renal impairment, or portal hypertension and healthy subjects" measured-compound="serelaxin" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Soubret A, Pang Y, Yu J, Dahlke M. Population pharmacokinetics of serelaxin in p
 
 ### Reviewer guidance
 
-**Serelaxin clearance is dimensionally inconsistent, labeled as a percentage rather than volume per time, causing the record to be rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit % (dimensionless) vs [length] ** 3 / [time].**
 
-The clearance parameter carries units of percent, a dimensionless measure, which conflicts with the required volume per time dimensions. Additionally, the record relied solely on abstract data, using summary statistics in place of fitted model parameters. A second reader could not independently verify the extracted values of 9.2 and 544. Extracted — serelaxin: Vss 544 ml kg-1, CL 9.2 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — serelaxin: Vss 544 ml kg-1, CL 9.2 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of serelaxin clearance: this record has 9.2, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

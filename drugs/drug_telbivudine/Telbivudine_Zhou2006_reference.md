@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This paper's disposition core is incomplete.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="telbivudine" model-id="Telbivudine_Zhou2006_reference" status="needs_review" stale="false" population="adults with chronic hepatitis B virus infection" measured-compound="telbivudine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="telbivudine" model-id="Telbivudine_Zhou2006_reference" status="needs_review" stale="false" population="adult patients with chronic hepatitis B virus infection" measured-compound="telbivudine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Zhou XJ, Lim SG, Lloyd DM, Chao GC, Brown NA, Lai CL. Pharmacokinetics of telbivudine following oral administration of escalating single and multiple doses in patients with chronic hepatitis B virus infection: pharmacodynamic implications. Antimicrobial agents and chemotherapy 50(3):874–879 (2006).
@@ -16,7 +16,7 @@ Zhou XJ, Lim SG, Lloyd DM, Chao GC, Brown NA, Lai CL. Pharmacokinetics of telbiv
 
 ## Population and dosing
 
-**Population:** adults with chronic hepatitis B virus infection · condition chronic hepatitis B · age group adult.
+**Population:** adult patients with chronic hepatitis B virus infection · condition chronic hepatitis B virus infection · age group adult.
 
 **Dosing:** 25, 50, 100, 200, 400, 800 mg, oral, multiple, every 24 h.
 
@@ -24,7 +24,7 @@ Zhou XJ, Lim SG, Lloyd DM, Chao GC, Brown NA, Lai CL. Pharmacokinetics of telbiv
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 8 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,13 +32,18 @@ Zhou XJ, Lim SG, Lloyd DM, Chao GC, Brown NA, Lai CL. Pharmacokinetics of telbiv
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| C max (g/ml) SS h | Cmax | 2.91 | µg/ml |
-| C trough (g/ml), d SS | Ctrough | 0.75 | µg/ml |
-| cut-off value | CL | 50.0 | mL/min |
+| Cmax (µg/ml) Day 1 | Cmax | 0.20 | µg/ml |
+| AUC0-t (µg · h/ml) Day 1 | AUCt | 0.56 | µg · h/ml |
+| Tmax e (h) Day 1 | tmax | 0.8 | h |
+| t1/2f (h) Day 1 | t1/2z | 3.5 | h |
+| Cmax (µg/ml) Ratios | Cmax_ratio | 1.31 | µg/ml |
+| AUC0-t (µg · h/ml) Ratios | AUC ratio | 1.5 | µg · h/ml |
+| Ctrough d (µg/ml) SS | Ctrough | 0.15 | µg/ml |
+| t1/2βg (h) | t1/2β | 41.3 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.267). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,11 +53,11 @@ Zhou XJ, Lim SG, Lloyd DM, Chao GC, Brown NA, Lai CL. Pharmacokinetics of telbiv
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Only clearance was extracted — no volume.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Jiang_2016) cannot stand in for this paper's evidence. A reported unit could not be converted (Cmax and Ctrough), so that value has no SI equivalent. Extracted — telbivudine: Cmax 2.91 µg/ml, Ctrough 0.75 µg/ml, CL 50 mL/min.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (Cmax_ratio and AUC ratio), so that value has no SI equivalent. Extracted — telbivudine: Cmax 0.2 µg/ml, AUCt 0.56 µg · h/ml, tmax 0.8 h, t1/2z 3.5 h, Cmax_ratio 1.31 µg/ml, AUC ratio 1.5 µg · h/ml, Ctrough 0.15 µg/ml, t1/2β 41.3 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has telbivudine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc0-t (ug h/ml) day 1].value`: this record has 0.56, the second reading 9.05; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,9 +65,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| C max (g/ml) SS h | `Q32` · Cmax | 2.91 | µg/ml |  |  | µg/ml | llm (0.6) | Zhou_2006_table_2:row1:col3, Zhou_2006_table_2:row1:col4 |
-| C trough (g/ml), d SS | `Q37` · Ctrough | 0.75 | µg/ml |  |  | µg/ml | llm_confirmed (0.6) | Zhou_2006_table_2:row3:col1, Zhou_2006_table_2:row3:col2 |
-| cut-off value | `Q22` · CL | 50.0 | mL/min | 8.333e-07 | m3/s | L/h | review_gapfill (0.7) | Jiang_2016:review |
+| Cmax (µg/ml) Day 1 | `Q32` · Cmax | 0.20 | µg/ml | 0.0002 | kg/m3 | µg/ml | llm_confirmed (0.6) | Zhou_2006_table_2:row0:col1, Zhou_2006_table_2:row1:col1, Zhou_2006_table_2:row2:col1, Zhou_2006_table_2:row3:col1, Zhou_2006_table_2:row4:col1, Zhou_2006_table_2:row5:col1 |
+| AUC0-t (µg · h/ml) Day 1 | `Q19` · AUCt | 0.56 | µg · h/ml | 2.016 | kg*s/m3 | (h·µg)/ml | llm_confirmed (0.6) | Zhou_2006_table_2:row0:col5, Zhou_2006_table_2:row1:col5, Zhou_2006_table_2:row2:col5, Zhou_2006_table_2:row3:col5, Zhou_2006_table_2:row4:col5, Zhou_2006_table_2:row5:col5 |
+| Tmax e (h) Day 1 | `Q56` · tmax | 0.8 | h | 2880 | s | h | llm_confirmed (0.6) | Zhou_2006_table_2:row0:col8, Zhou_2006_table_2:row1:col8, Zhou_2006_table_2:row2:col8, Zhou_2006_table_2:row3:col8, Zhou_2006_table_2:row4:col8, Zhou_2006_table_2:row5:col8 |
+| t1/2f (h) Day 1 | `Q57` · t1/2z | 3.5 | h | 1.26e+04 | s | h | llm (0.6) | Zhou_2006_table_2:row0:col10, Zhou_2006_table_2:row1:col10, Zhou_2006_table_2:row2:col10, Zhou_2006_table_2:row3:col10, Zhou_2006_table_2:row4:col10, Zhou_2006_table_2:row5:col10 |
+| Cmax (µg/ml) Ratios | `Q33` · Cmax_ratio | 1.31 | µg/ml |  |  | µg/ml | llm_corrected (0.6) | Zhou_2006_table_2:row1:col3, Zhou_2006_table_2:row2:col3, Zhou_2006_table_2:row3:col3, Zhou_2006_table_2:row4:col3, Zhou_2006_table_2:row5:col3 |
+| AUC0-t (µg · h/ml) Ratios | `Q21` · AUC ratio | 1.5 | µg · h/ml |  |  | (h·µg)/ml | llm_corrected (0.6) | Zhou_2006_table_2:row1:col7, Zhou_2006_table_2:row2:col7, Zhou_2006_table_2:row3:col7, Zhou_2006_table_2:row4:col7, Zhou_2006_table_2:row5:col7 |
+| Ctrough d (µg/ml) SS | `Q37` · Ctrough | 0.15 | µg/ml | 0.00015 | kg/m3 | µg/ml | llm_confirmed (0.6) | Zhou_2006_table_2:row2:col4, Zhou_2006_table_2:row3:col4, Zhou_2006_table_2:row4:col4, Zhou_2006_table_2:row5:col4 |
+| t1/2βg (h) | `Q60` · t1/2β | 41.3 | h | 1.487e+05 | s | h | half_life_rule (0.95) | Zhou_2006_table_2:row2:col12, Zhou_2006_table_2:row3:col12, Zhou_2006_table_2:row4:col12, Zhou_2006_table_2:row5:col12 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,42 +82,44 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Ratio c' — extend the ontology if this is a real PK parameter (source ['Zhou_2006_table_2:row2:col1', 'Zhou_2006_table_2:row2:col2', 'Zhou_2006_table_2:row2:col3', 'Zhou_2006_table_2:row2:col4'])
-- implicit units: 'C max (g/ml) SS h' → µg/ml (from the paper text: "Table 2 footnotes state Cmax values as 'g/ml' (µg/ml), e.g., '3.00 and 2.25 g/ml, respectively, for Cmax'.")
-- implicit units: 'C trough (g/ml), d SS' → µg/ml (from the paper text: "Table 2 footnote d reports Ctrough as '0.88 ± 0.59 g/ml' (µg/ml), same concentration unit as Cmax.")
+- dropped duplicate Q32 ('Cmax (µg/ml) SS', value '0.22') — already have one for this compound
+- dropped duplicate Q19 ('AUC0-t (µg · h/ml) SS', value '0.75') — already have one for this compound
+- dropped duplicate Q56 ('Tmax e (h) SS', value '1.0') — already have one for this compound
+- dropped duplicate Q57 ('t1/2f (h) SS', value '5.0') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=telbivudine
-- gap-filled Q22 (CL) from Jiang_2016's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- base model from table(s) without population columns (Zhou_2006:discussion_prose, Zhou_2006_table_2); populations emax estimate, epk50 estimate kept as separate records
 
 **Extraction notes:**
-- transposed table Zhou_2006_table_2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell Zhou_2006_table_2:row1:col5 = '1.44 (0.33) 3.0 (0.4-3.0) 1.9 (1.9-3.0) 2.5 (0.5) 3.9 (1.0) 31.5 (14.8)'
-- unparsed cell Zhou_2006_table_2:row3:col3 = '1.45 (0.17) 3.0 (0.4-4.0) 2.1 (1.2-4.0) 3.0 (0.8) 3.6 (0.6) 41.3 (8.4)'
-- unparsed cell Zhou_2006_table_2:row3:col4 = '1.40 (0.40) 2.9 (1.9-3.0) 1.9 (1.9-2.9) 3.1 (1.4) 3.5 (0.9) 29.5 (9.1)'
-- companion parameter table 2 transcribed (8 record(s))
+- table Zhou_2006_table_3: units_need_context
+- table Zhou_2006_table_2: unparsed_numeric_cell
+- transposed table Zhou_2006_table_2: logical view retains original source coordinates
+- companion parameter table 2 transcribed (66 record(s))
 - LLM selected parameter table(s) 2
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.267 (4/15 fields) | 11 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[c max (g/ml) ss h]` | 2.91 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[c max (g/ml) ss h]` |  | 2.91 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[c trough (g/ml), d ss]` | 0.75 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[c trough (g/ml), d ss]` |  | 0.75 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cut-off value]` | 50.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | telbivudine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | telbivudine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[auc0-t (ug h/ml) day 1].value` | 0.56 | 9.05 | mismatch |
+| `gpt-oss-120b` | `parameters[auc0-t (ug h/ml) ratios]` | 1.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc0-t (ug h/ml) ss]` |  | 13.42 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax (ug/ml) day 1].value` | 0.20 | 1.80 | mismatch |
+| `gpt-oss-120b` | `parameters[cmax (ug/ml) ratios]` | 1.31 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ctrough d (ug/ml) ss].value` | 0.15 | 0.35 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2f (h) day 1].parameter_id` | Q57 | Q60 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2f (h) day 1].value` | 3.5 | 2.5 | mismatch |
+| `gpt-oss-120b` | `parameters[t1/2f (h) ss]` |  | 3.9 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2βg]` | 41.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tmax e (h) day 1].value` | 0.8 | 3.0 | mismatch |
 
 </details>
 
@@ -121,14 +133,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 8 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Jiang_2016:review'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Zhou_2006_table_2:row1:col3', 'Zhou_2006_table_2:row1:col4'] |
-| C5_dimension_Q37 | pass | [mass] / [length] ** 3 |  | ['Zhou_2006_table_2:row3:col1', 'Zhou_2006_table_2:row3:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 50 | ['Jiang_2016:review'] |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Zhou_2006_table_2:row0:col5', 'Zhou_2006_table_2:row1:col5', 'Zhou_2006_table_2:row2:col5', 'Zhou_2006_table_2:row3:col5', 'Zhou_2006_table_2:row4:col5', 'Zhou_2006_table_2:row5:col5'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Zhou_2006_table_2:row0:col1', 'Zhou_2006_table_2:row1:col1', 'Zhou_2006_table_2:row2:col1', 'Zhou_2006_table_2:row3:col1', 'Zhou_2006_table_2:row4:col1', 'Zhou_2006_table_2:row5:col1'] |
+| C5_dimension_Q37 | pass | [mass] / [length] ** 3 |  | ['Zhou_2006_table_2:row2:col4', 'Zhou_2006_table_2:row3:col4', 'Zhou_2006_table_2:row4:col4', 'Zhou_2006_table_2:row5:col4'] |
+| C5_dimension_Q56 | pass | [time] |  | ['Zhou_2006_table_2:row0:col8', 'Zhou_2006_table_2:row1:col8', 'Zhou_2006_table_2:row2:col8', 'Zhou_2006_table_2:row3:col8', 'Zhou_2006_table_2:row4:col8', 'Zhou_2006_table_2:row5:col8'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Zhou_2006_table_2:row0:col10', 'Zhou_2006_table_2:row1:col10', 'Zhou_2006_table_2:row2:col10', 'Zhou_2006_table_2:row3:col10', 'Zhou_2006_table_2:row4:col10', 'Zhou_2006_table_2:row5:col10'] |
+| C5_dimension_Q60 | pass | [time] |  | ['Zhou_2006_table_2:row2:col12', 'Zhou_2006_table_2:row3:col12', 'Zhou_2006_table_2:row4:col12', 'Zhou_2006_table_2:row5:col12'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 3 L/h | ['Jiang_2016:review'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -162,4 +176,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btelbivudine%5D%20Telbivudine_Zhou2006_reference&body=Drug%3A%20telbivudine%0ARecord%3A%20Telbivudine_Zhou2006_reference%0APaper%3A%20Zhou_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_telbivudine/Telbivudine_Zhou2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:04 UTC</sub>

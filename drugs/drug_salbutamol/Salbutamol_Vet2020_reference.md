@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model structure contains unlinked metabolites R-salbutamol and S-salbutamol, making them unreachable from the parent salbutamol dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Vet2020_reference" status="rejected" stale="false" population="children with refractory status asthmaticus" measured-compound="R-salbutamol and S-salbutamol" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -55,13 +55,13 @@ Vet NJ, de Winter BCM, Koninckx M, Boeschoten SA, Boehmer ALM, Verhallen JT et a
 
 ### Reviewer guidance
 
-**The model structure contains unlinked metabolites R-salbutamol and S-salbutamol, making them unreachable from the parent salbutamol dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines interconversion links from salbutamol to both R- and S-salbutamol but lacks the corresponding rate parameters, rendering the metabolites as orphan compartments with no path from the dose. A second reader also disagreed on several parameter values, including the total clearance, which was recorded as 8.82 but identified as 37 by the reviewer. Additionally, the second reader disputed the presence of the metabolite links themselves, suggesting the model structure was misinterpreted. Extracted — salbutamol: CLR 16.3 L/h/70 kg, CLnorm 8.82 L/h/70 kg, V1 12.9 L/70 kg, Q 20.4 L/h/70 kg, V2 45.5 L/70 kg; R-salbutamol and S-salbutamol: kabs 0.5 h −1, tlag 1.5 h.
+Extracted — salbutamol: CLR 16.3 L/h/70 kg, CLnorm 8.82 L/h/70 kg, V1 12.9 L/70 kg, Q 20.4 L/h/70 kg, V2 45.5 L/70 kg; R-salbutamol and S-salbutamol: kabs 0.5 h −1, tlag 1.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has R-salbutamol and S-salbutamol, the second reading salbutamol; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

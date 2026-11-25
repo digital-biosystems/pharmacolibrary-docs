@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;ribavirin&quot;,&quot;href&quot;:&quot;drugs/drug_ribavirin/&quot;},{&quot;label&quot;:&quot;Erameh_2026 \u00b7 ribavirinparticipants&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Ribavirin_Jin2012_mean_of_25_leverage_runs_cv&quot;,&quot;label&quot;:&quot;Jin_2012_mean_of_25_leverage_runs_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ribavirin/Ribavirin_Jin2012_mean_of_25_leverage_runs_cv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ribavirin_Jin2012_population_mean_in_final_pk_model&quot;,&quot;label&quot;:&quot;Jin_2012_population_mean_in_final_pk_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ribavirin/Ribavirin_Jin2012_population_mean_in_final_pk_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Ribavirin_Wade2006_reference&quot;,&quot;label&quot;:&quot;Wade_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_ribavirin/Ribavirin_Wade2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ribavirin’s peripheral-compartment volume (V2, 934.2 L) was rejected because the two-compartment model has no recorded path from the dose to that compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="ribavirin" model-id="Ribavirin_Erameh2026_ribavirinparticipants" status="rejected" stale="false" population="hospitalized adults with mild-to-moderate Lassa fever" measured-compound="ribavirin" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="ribavirin" model-id="Ribavirin_Erameh2026_ribavirinparticipants" status="rejected" stale="false" population="adults with Lassa fever" measured-compound="ribavirin" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Erameh C, Okwaraeke K, Kleist C, Edeawe O, Adedosu N, Ekata E et al. Favipiravir for Lassa fever: an open-label, randomized controlled phase 2 trial. Nature medicine (2026).
@@ -17,9 +16,9 @@ Erameh C, Okwaraeke K, Kleist C, Edeawe O, Adedosu N, Ekata E et al. Favipiravir
 
 ## Population and dosing
 
-**Population:** hospitalized adults with mild-to-moderate Lassa fever · condition Lassa fever · age group adult · n = 41.
+**Population:** adults with Lassa fever · condition Lassa fever · age group adult · n = 21.
 
-**Dosing:** 1200, 2400 mg, oral, multiple, every 12 h.
+**Dosing:** 1200, 6000 mg, oral, multiple, every 12 h.
 
 ## Model
 
@@ -33,13 +32,13 @@ Erameh C, Okwaraeke K, Kleist C, Edeawe O, Adedosu N, Ekata E et al. Favipiravir
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Favipiravir Clearance | CL | 2.7 | l h−1 |
-| Favipiravir Volume of distribution | V | 41.5 | l |
-| Ribavirin Vp1 | V2 | 934.2 | l |
+| Clearance | CL | 2.7 | l h−1 |
+| Volume of distribution | V | 41.5 | l |
+| Vp1 | V2 | 934.2 | l |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,21 +48,21 @@ Erameh C, Okwaraeke K, Kleist C, Edeawe O, Adedosu N, Ekata E et al. Favipiravir
 
 ### Reviewer guidance
 
-**Ribavirin’s peripheral-compartment volume (V2, 934.2 L) was rejected because the two-compartment model has no recorded path from the dose to that compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record identifies V2 as the ribavirin peripheral-compartment volume and records a two-compartment structure with no links, leaving that compartment unreachable from the dose. A second reader disputed the recorded link representation and did not confirm the parameter values. Extracted — ribavirin: CL 2.7 l h−1, V 41.5 l, V2 934 l.
+Extracted — ribavirin: CL 2.7 l h−1, V 41.5 l, V2 934 l.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ribavirin, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Favipiravir Clearance | `Q22` · CL | 2.7 | l h−1 | 7.5e-07 | m3/s | L/h | boundary (0.8) | Erameh_2026:other_prose |
-| Favipiravir Volume of distribution | `Q61` · V | 41.5 | l | 0.0415 | m3 | L | boundary (0.8) | Erameh_2026:other_prose |
-| Ribavirin Vp1 | `Q64` · V2 | 934.2 | l | 0.9342 | m3 | L | boundary (0.8) | Erameh_2026:other_prose |
+| Clearance | `Q22` · CL | 2.7 | l h−1 | 7.5e-07 | m3/s | L/h | exact (1) | Erameh_2026:other_prose |
+| Volume of distribution | `Q61` · V | 41.5 | l | 0.0415 | m3 | L | exact (1) | Erameh_2026:other_prose |
+| Vp1 | `Q64` · V2 | 934.2 | l | 0.9342 | m3 | L | exact (1) | Erameh_2026:other_prose |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,64 +72,42 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'Age in years (IQR)' — extend the ontology if this is a real PK parameter (source ['Erameh_2026_table_1:row0:col2'])
 - dropped unlinked row (NIL): 'Female (n (%))' — extend the ontology if this is a real PK parameter (source ['Erameh_2026_table_1:row2:col2'])
 - dropped unlinked row (NIL): 'Male (n (%))' — extend the ontology if this is a real PK parameter (source ['Erameh_2026_table_1:row3:col2'])
 - dropped unlinked row (NIL): 'Black/African' — extend the ontology if this is a real PK parameter (source ['Erameh_2026_table_1:row4:col2'])
-- NIL: refused to back-fill base 'omega_cov' from footnote/prose loose number None (source ['Tab5:footnote']); the table cell was unparseable — needs review
-- salvaged Q22 ('Favipiravir Clearance'=2.7) from results prose — parameter table was unreadable
-- salvaged Q61 ('Favipiravir Volume of distribution'=41.5) from results prose — parameter table was unreadable
-- salvaged Q64 ('Ribavirin Vp1'=934.2) from results prose — parameter table was unreadable
+- dropped unlinked row (NIL): 'Weight in kg (IQR)' — extend the ontology if this is a real PK parameter (source ['Erameh_2026_table_1:row5:col2'])
+- dropped unlinked row (NIL): 'Height in m (IQR)' — extend the ontology if this is a real PK parameter (source ['Erameh_2026_table_1:row6:col2'])
+- dropped unlinked row (NIL): 'Axillary temperature in °C (IQR)' — extend the ontology if this is a real PK parameter (source ['Erameh_2026_table_1:row7:col2'])
+- dropped unlinked row (NIL): 'Blood pressure, systolic (mm Hg) (IQR)' — extend the ontology if this is a real PK parameter (source ['Erameh_2026_table_1:row8:col2'])
+- dropped unlinked row (NIL): 'Blood pressure, diastolic (mm Hg) (IQR)' — extend the ontology if this is a real PK parameter (source ['Erameh_2026_table_1:row9:col2'])
+- dropped unlinked row (NIL): 'Heart rate (bpm) (IQR)' — extend the ontology if this is a real PK parameter (source ['Erameh_2026_table_1:row10:col2'])
+- dropped unlinked row (NIL): 'O2 saturation (%) (IQR)' — extend the ontology if this is a real PK parameter (source ['Erameh_2026_table_1:row11:col2'])
+- table mostly unlinked (11/11 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); "Needs review" instead of building a model from the residual linked cell(s)
+- salvaged Q22 ('Clearance'=2.7) from results prose — parameter table was unreadable
+- salvaged Q61 ('Volume of distribution'=41.5) from results prose — parameter table was unreadable
+- salvaged Q64 ('Vp1'=934.2) from results prose — parameter table was unreadable
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ribavirin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
-- population split: 'ribavirin (n = 21 participants)' subgroup of Erameh_2026 (paper reports 2 populations: median, ribavirin (n = 21 participants))
+- population split: 'ribavirin (n = 21 participants)' subgroup of Erameh_2026 (paper reports 2 populations: favipiravir (n = 20 participants), ribavirin (n = 21 participants))
 
 **Extraction notes:**
-- unparsed cell Erameh_2026_table_2:row0:col1 = 'AUC240 h (mg l−1 h−1)'
-- unparsed cell Erameh_2026_table_2:row0:col3 = '7,139.4 to 15,794.8'
-- unparsed cell Erameh_2026_table_2:row1:col2 = '1,131.3 to 1,983.6'
-- unparsed cell Erameh_2026_table_2:row2:col2 = '69.3 to 110.9'
-- unparsed cell Erameh_2026_table_2:row3:col2 = '42.1 to 75.1'
-- unparsed cell Erameh_2026_table_2:row4:col2 = '10.3 to 14.8'
-- unparsed cell Erameh_2026_table_2:row5:col2 = '74.1 to 149.2'
-- unparsed cell Erameh_2026_table_2:row6:col2 = '8.2 to 17.1'
-- unparsed cell Erameh_2026_table_2:row7:col2 = '1.7 to 3.5'
-- unparsed cell Erameh_2026_table_2:row9:col1 = 'AUC240 h (mg l−1 h−1)'
-- unparsed cell Erameh_2026_table_2:row9:col3 = '1,229.3 to 1,593.8'
-- unparsed cell Erameh_2026_table_2:row10:col2 = '241.6 to 307.0'
-- unparsed cell Erameh_2026_table_2:row11:col2 = '103.8 to 130.2'
-- unparsed cell Erameh_2026_table_2:row12:col2 = '0.4 to 0.6'
-- unparsed cell Erameh_2026_table_2:row13:col2 = '5.3 to 6.9'
-- unparsed cell Erameh_2026_table_2:row14:col2 = '99.3 to 147.6'
-- unparsed cell Erameh_2026_table_2:row15:col2 = '7.6 to 11.3'
-- unparsed cell Erameh_2026_table_2:row16:col2 = '32.0 to 40.0'
-- companion parameter table 2 transcribed (19 record(s))
+- table Erameh_2026_table_2: unbound_uncertainty
+- table Erameh_2026_table_2: ragged_grid
+- companion parameter table 2 transcribed (18 record(s))
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.1 (1/10 fields) | 9 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>9 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
-| `gpt-oss-120b` | `parameters[clearance]` |  | 2.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[favipiravir clearance]` | 2.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[favipiravir volume of distribution]` | 41.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ribavirin vp1]` | 934.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 41.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vp1]` |  | 934.2 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | ribavirin | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | ribavirin | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -173,4 +150,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bribavirin%5D%20Ribavirin_Erameh2026_ribavirinparticipants&body=Drug%3A%20ribavirin%0ARecord%3A%20Ribavirin_Erameh2026_ribavirinparticipants%0APaper%3A%20Erameh_2026%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ribavirin/Ribavirin_Erameh2026_ribavirinparticipants%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:48 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 15:33 UTC</sub>

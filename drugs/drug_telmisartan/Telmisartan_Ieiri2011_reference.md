@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Telmisartan parameters k12 (99.8 h⁻¹) and kcomp (0.339 h⁻¹) were not emitted, causing simulation mismatches.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000836, model 0.00171); the model does not reproduce the paper's time of the peak (tmax) (paper 0.773, model 0.796) (+2 more).
 
 <div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Ieiri2011_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="telmisartan" parameterization="apparent" topology="1C"></div>
 
@@ -61,13 +61,13 @@ Ieiri I, Nishimura C, Maeda K, Sasaki T, Kimura M, Chiyoda T et al. Pharmacokine
 
 ### Reviewer guidance
 
-**Telmisartan parameters k12 (99.8 h⁻¹) and kcomp (0.339 h⁻¹) were not emitted, causing simulation mismatches.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.000836, model 0.00171); the model does not reproduce the paper's time of the peak (tmax) (paper 0.773, model 0.796) (+2 more).**
 
-The record lists transfer rate constants k12 and kcomp, but the model only covered four parameters, omitting these two values entirely. Consequently, the simulated peak concentration (0.00171 kg/m³) and time to peak (0.796 h) failed to match the paper's reported values. Additionally, the defined covariate effects for clearance were not exercised in the simulation, leaving those scenarios unverified. Extracted — telmisartan: k12 99.8 h−1, CL/F 27.7 l/h, V/F 31.3 l, kcomp 0.339 h−1, t1/2z 3.83 h, tlag 0.242 h, kabs 4.53 /h.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — telmisartan: k12 99.8 h−1, CL/F 27.7 l/h, V/F 31.3 l, kcomp 0.339 h−1, t1/2z 3.83 h, tlag 0.242 h, kabs 4.53 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].value`: this record has 27.7, the second reading 15.9; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -168,10 +168,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_cmax | reference | fail | 0.000836 | 0.001711 | 2.047 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.06e-07 | 0.001711 | 1.615e+04 | pg/ml→SI vs simulated kg/m3 |
-| T1_tmax | reference | pass | 0.773 | 0.7963 | 1.03 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 9.06 | 0.7963 | 0.0879 | h→SI vs simulated h |
+| T1_cmax | reference | fail | 0.000836 | 0.001711 | 2.047 | reported 836.0 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.06e-07 | 0.001711 | 1.615e+04 | reported 106.0 pg/ml→SI vs simulated kg/m3 |
+| T1_tmax | reference | pass | 0.773 | 0.7963 | 1.03 | reported 0.773 h→SI vs simulated h |
+| T1_tmax | reference | fail | 9.06 | 0.7963 | 0.0879 | reported 9.06 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

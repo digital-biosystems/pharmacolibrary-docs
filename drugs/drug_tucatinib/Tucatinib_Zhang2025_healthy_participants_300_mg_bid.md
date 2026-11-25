@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model's terminal half-life deviates from the paper's 9.16 hours, and one parameter unit could not be converted to SI.
+> The model does not reproduce the paper's terminal half-life (model/paper ratio 0.29); c2_base_Q18 failed (ratio 1.0664) (+4 more).
 
 <div class="pk-model-meta" hidden drug="tucatinib" model-id="Tucatinib_Zhang2025_healthy_participants_300_mg_bid" status="needs_review" stale="false" population="healthy participants and patients with HER2-positive metastatic breast or colorectal cancer" measured-compound="tucatinib" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Zhang D, Taylor A, Zhao JJ, Endres CJ, Topletz-Erickson A. Correction: Populatio
 
 ### Reviewer guidance
 
-**The model's terminal half-life deviates from the paper's 9.16 hours, and one parameter unit could not be converted to SI.**
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 0.29); c2_base_Q18 failed (ratio 1.0664) (+4 more).**
 
-Simulating the paper's dosing, the model's terminal half-life is only 0.29 times the reported 9.16 hours, exceeding acceptable tolerance. One parameter was recorded with a unit that the system could not convert to standard SI units, leaving its value unstandardized. The second reader also disputed the extraction of certain interaction ratios and the Ctrough ratio. Extracted — tucatinib: AUCSS 2.56e+03 ng·h/mL, Cmax 447 ng/mL, Ctrough 84 ng/mL, AUC ratio 1.35, Cmax_ratio 1.21, CL/F 117 L/h, V/F 793 L, t1/2β 9.16 h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (AUCSS, Cmax and Ctrough), so that value has no SI equivalent. Extracted — tucatinib: AUCSS 2.56e+03 ng·h/mL, Cmax 447 ng/mL, Ctrough 84 ng/mL, AUC ratio 1.35, Cmax_ratio 1.21, CL/F 117 L/h, V/F 793 L, t1/2β 9.16 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of rac, auc: this record has 1.35, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

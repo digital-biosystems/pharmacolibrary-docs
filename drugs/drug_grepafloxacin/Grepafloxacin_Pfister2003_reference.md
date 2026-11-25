@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> The extracted clearance value of 0.01 ml/min for grepafloxacin is physiologically implausible for rabbits, triggering a magnitude error rejection.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="grepafloxacin" model-id="Grepafloxacin_Pfister2003_reference" status="rejected" stale="false" population="rabbits with experimental pneumococcal meningitis" measured-compound="grepafloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Pfister M, Zhang L, Hammarlund-Udenaes M, Sheiner LB, Gerber CM, Täuber MG et a
 
 ### Reviewer guidance
 
-**The extracted clearance value of 0.01 ml/min for grepafloxacin is physiologically implausible for rabbits, triggering a magnitude error rejection.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a total clearance of 0.01 ml/min, which falls outside the physiological window for the rabbit population, indicating a likely unit or scale extraction error. A second reader disputed the extraction, citing a value of 0.0088 for average influx clearance while marking the bulk clearance as null. This disagreement highlights uncertainty in the parameter assignment, though the primary rejection stems from the implausible magnitude of the extracted clearance. Extracted — grepafloxacin: CL 0.01 ml/min.
+Extracted — grepafloxacin: CL 0.01 ml/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of average influx clearance: this record has none, the second reading 0.0088; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

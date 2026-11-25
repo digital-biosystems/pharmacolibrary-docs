@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record for arsenic trioxide rejected because its 1128.5 μg/h/L area under the curve unit conflicts with the required pharmacokinetic dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q19 unit μg/h/L ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="arsenic trioxide" model-id="ArsenicTrioxide_Hua2011_reference" status="rejected" stale="false" population="Chinese primary hepatocarcinoma patients" measured-compound="arsenic trioxide" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Hua H, Qin S, Rui J, Li J. Pharmacokinetics of arsenic trioxide (As₂O₃) in C
 
 ### Reviewer guidance
 
-**Record for arsenic trioxide rejected because its 1128.5 μg/h/L area under the curve unit conflicts with the required pharmacokinetic dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q19 unit μg/h/L ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The area under the curve of 1128.5 μg/h/L has a mass-per-time-per-volume dimension, which is incompatible with the expected concentration-time unit. The review found that only the paper's abstract was read, so these summary statistics were used as a substitute for a fitted model. A second reader also flagged inconsistencies in the extracted values for volume of distribution, clearance, and various concentration metrics. Extracted — arsenic trioxide: Cmax 136 μg/L, t1/2α 0.071 hours, t1/2β 23.9 hours, V 335 L, CL 8.65 L/h, AUCt 1.13e+03 μg/h/L, Cmin 31.7 μg/L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — arsenic trioxide: Cmax 136 μg/L, t1/2α 0.071 hours, t1/2β 23.9 hours, V 335 L, CL 8.65 L/h, AUCt 1.13e+03 μg/h/L, Cmin 31.7 μg/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of apparent distribution volume: this record has 335.1, the second reading none; it also differs on 14 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

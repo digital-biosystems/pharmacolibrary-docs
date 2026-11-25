@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Steady-state concentration for bleomycin is incorrectly recorded with time units instead of mass per volume, causing a dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q34 unit hr ([time]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Broughton1977_r_w" status="rejected" stale="false" population="adult patients" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Broughton A, Strong JE, Holoye PY, Bedrossian CW. Clinical pharmacology of bleom
 
 ### Reviewer guidance
 
-**Steady-state concentration for bleomycin is incorrectly recorded with time units instead of mass per volume, causing a dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q34 unit hr ([time]) vs [mass] / [length] ** 3.**
 
-The parameter 'R (ng/mU)' is defined by its meaning as the drug concentration at steady state (Css) but is assigned a value of 72.0 with the unit 'hr', a time dimension. This conflicts with the required mass-per-volume dimensions for a concentration parameter. A second reader identified a value of 1046.3 for the steady-state concentration, confirming that the extracted unit was erroneous. Extracted — bleomycin: Css 72 hr, CL 70 ml/min, V 32.2 L.
+A reported unit could not be converted (Css), so that value has no SI equivalent. Extracted — bleomycin: Css 72 hr, CL 70 ml/min, V 32.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of css: this record has none, the second reading 1046.3; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

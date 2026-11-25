@@ -16,7 +16,9 @@ Peramivir is a neuraminidase inhibitor used to treat influenza. The drug is give
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Matsuo_2015_reference](drugs/drug_peramivir/Peramivir_Matsuo2015_reference.md) | — | 1-compartment (no model) | 0 | Matsuo Y et al., Population pharmacokinetics of peramivi…, Antimicrobial agents and ch… (2015) | [10.1128/AAC.00799-15](https://doi.org/10.1128/AAC.00799-15) |
 
 ## Pharmacodynamics (PD)
 
@@ -37,41 +39,35 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:22 | 0:14 | 0/0/0 | 2/0/0 | 0/0/0 | 18,746/886 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 02:54 | 0:03 | 0/1/0 | 2/0/0 | 0/0/0 | 3,856/171 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
-- **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Matsuo_2015.pdf` | Matsuo Y et al., Population pharmacokinetics of peramivi…, Antimicrobial agents and ch… (2015) | popPK | 10 | [10.1128/AAC.00799-15](https://doi.org/10.1128/AAC.00799-15) | [26282420](https://pubmed.ncbi.nlm.nih.gov/26282420) | Population PK (three-compartment) model of peramivir in humans, but numeric parameter values (CL, V, Q) are not present in the abstract text. |
-| `Sugaya_2012.pdf` | Sugaya N et al., Efficacy, safety, and pharmacokinetics…, Antimicrobial agents and ch… (2012) | popPK | 8 | [10.1128/AAC.00132-11](https://doi.org/10.1128/AAC.00132-11) | [22024821](https://pubmed.ncbi.nlm.nih.gov/22024821) | Population PK analysis of peramivir in children is described, but no numeric parameter values (CL, V, etc.) appear in the evidence, likely in tables/supplement not provided. |
-
-<sub>queue written 2026-10-07 16:22 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Bang_2022 | irrelevant | 0 | 0 | In vitro antiviral EC50 study against SFTSV; no PK disposition parameters (CL, V, half-life, PK model) for peramivir are reported. |
-| popPK | Baum_2003 | irrelevant | 0 | 0 | In-vitro enzymology/resistance study with binding constants (Ki, IC50), no pharmacokinetic disposition parameters for peramivir. |
-| popPK | Matsuo_2015 | relevant | 10 | 3 | Population PK (three-compartment) model of peramivir in humans, but numeric parameter values (CL, V, Q) are not present in the abstract text. |
-| popPK | Sidwell_2002 | irrelevant | 2 | 0 | Review of efficacy/tolerability with no numeric PK parameters; the PK study is only mentioned without values. |
-| popPK | Sugaya_2012 | relevant | 8 | 3 | Population PK analysis of peramivir in children is described, but no numeric parameter values (CL, V, etc.) appear in the evidence, likely in tables/supplement not provided. |
-| popPK | Wang_2016 | irrelevant | 0 | 0 | Medicinal chemistry study of peramivir phosphonate derivatives with no PK disposition parameters for peramivir. |
-| popPK | Wang_2018 | irrelevant | 1 | 0 | Medicinal chemistry study of peramivir conjugates with no PK disposition parameters reported. |
+| popPK | Baum_2003 | irrelevant | 0 | 0 | The study is an in-vitro enzymatic analysis of resistance mutations and inhibition kinetics (Ki, IC50), not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Baum_2003 | not_relevant | 0 | 0 | The paper reports a viral mutation (His273Tyr) in influenza neuraminidase causing drug resistance, which is not a human pharmacogenomic effect on peramivir PK/PD. |
+| PGx | Matsuo_2015 | not_relevant | 0 | 0 | The paper reports population pharmacokinetics of peramivir with covariates such as renal function, age, and body weight, but does not investigate gene variants, genotypes, or pharmacogenomic markers. |
+| popPK | Sidwell_2002 | irrelevant | 3 | 0 | The text describes efficacy and tolerability in animals and humans but does not report specific quantitative pharmacokinetic parameters (CL, V, ka, etc.) for peramivir. |
+| PGx | Sidwell_2002 | not_relevant | 0 | 0 | The paper describes preclinical and clinical efficacy and PK of peramivir but contains no information regarding gene variants, genotypes, or phenotypes affecting PK/PD parameters. |
+| popPK | Sugaya_2012 | relevant | 9 | 0 | The paper describes a population PK study of peramivir in children, but the specific numeric parameter values are not provided in the extracted evidence, likely residing in the full text or supplementary material. |
+| PGx | Sugaya_2012 | not_relevant | 0 | 0 | The paper reports pediatric pharmacokinetics and clinical efficacy of peramivir but does not investigate gene variants or genotype-phenotype interactions. |
+| popPK | Wang_2016 | irrelevant | 0 | 0 | The study focuses on the synthesis and in-vitro antiviral activity (IC50/EC50) of peramivir analogs, not on pharmacokinetic parameters like clearance or volume of distribution. |
+| PGx | Wang_2016 | not_relevant | 0 | 0 | The paper focuses on chemical synthesis and antiviral efficacy of peramivir derivatives, without analyzing pharmacogenomic effects on PK/PD. |
+| popPK | Wang_2018 | irrelevant | 0 | 0 | The study focuses on the synthesis and in-vitro/efficacy evaluation of peramivir conjugates against influenza, not on the pharmacokinetic disposition parameters of peramivir itself. |
+| PGx | Wang_2018 | not_relevant | 0 | 0 | The paper describes chemical modifications to improve drug efficacy against a viral mutant, not the impact of host genetic variants on pharmacokinetics or pharmacodynamics. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bperamivir%5D&body=Drug%3A%20peramivir%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_peramivir/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 02:53 UTC</sub>

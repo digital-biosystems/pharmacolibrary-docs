@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the elimination rate constant was misidentified as a metabolite formation rate, rendering the metabolite compartment unreachable.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="cefazolin" model-id="Cefazolin_Alli2023_median" status="rejected" stale="false" population="adults undergoing cardiac valve replacement surgery with cardiopulmonary bypass" measured-compound="cefazolin" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Alli A, Paruk F, Roger C, Lipman J, Calleemalay D, Wallis SC et al. Peri-operati
 
 ### Reviewer guidance
 
-**The model was rejected because the elimination rate constant was misidentified as a metabolite formation rate, rendering the metabolite compartment unreachable.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record assigns the label 'ktc' to the metabolite formation rate constant with a value of 188.90 h-1. The second reader correctly identified this parameter as the elimination rate constant (kel) rather than metabolite formation (kfm). This classification error implies a structural disconnect where the metabolite lacks a valid formation pathway from the parent compound. Extracted — cefazolin: V1 3.41 L, V2 6.28 L, k12 4.59 h-1, k21 2.35 h-1, kel 144 h-1, kfm 189 h-1, Bmax 0.87 g/L.
+A reported unit could not be converted (Bmax), so that value has no SI equivalent. Extracted — cefazolin: V1 3.41 L, V2 6.28 L, k12 4.59 h-1, k21 2.35 h-1, kel 144 h-1, kfm 189 h-1, Bmax 0.87 g/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[kct].parameter_id`: this record has Q47, the second reading Q48; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

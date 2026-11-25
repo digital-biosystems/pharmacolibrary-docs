@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper does not describe bromhexine pharmacokinetics, despite containing values for clearance, volumes, and inter-compartmental clearance.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="bromhexine" model-id="Bromhexine_Gao2026_reference" status="rejected" stale="false" population="" measured-compound="bromhexine" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Gao X, Zhao K, Zhao Y, Zhang Y, Zhao J, Zhao C et al. Population Pharmacokinetic
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper does not describe bromhexine pharmacokinetics, despite containing values for clearance, volumes, and inter-compartmental clearance.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The identity check failed, confirming the paper's subject is another drug and neither title nor abstract mentions bromhexine. Although specific clearance, volume, and clearance values are listed, they belong to an unrelated compound. A second reader also disagreed on several missing or inconsistent parameter values. Extracted — bromhexine: CL 0.36 L/day, V1 2.86 L, V2 2.88 L, Q 0.162 L/day.
+Extracted — bromhexine: CL 0.36 L/day, V1 2.86 L, V2 2.88 L, Q 0.162 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 8.7; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.636, 0 of 1 reader(s) agree | 0.636 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.636 (7 of 11 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.636 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

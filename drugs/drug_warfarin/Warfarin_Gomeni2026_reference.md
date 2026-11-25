@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability (F) and lag time (Tlag) for warfarin were left at library defaults, lacking explicit values from the paper.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Gomeni2026_reference" status="needs_review" stale="false" population="adults" measured-compound="warfarin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Gomeni R, Bressolle-Gomeni F. Deep-Learning- versus Hypothesis-Driven Modeling i
 
 ### Reviewer guidance
 
-**Bioavailability (F) and lag time (Tlag) for warfarin were left at library defaults, lacking explicit values from the paper.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The model uses library placeholders for bioavailability and absorption lag time rather than estimates reported in Gomeni_2026. Consequently, these parameters are not supported by the source data, affecting the simulated pharmacokinetic profile. Extracted — warfarin: CL 0.136 L/h/70 kg, V 8.09 L/70 kg, kabs 0.214 1/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — warfarin: CL 0.136 L/h/70 kg, V 8.09 L/70 kg, kabs 0.214 1/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,7 +148,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_warfarin/Warfarin_Gomeni2026_reference/Warfarin_Gomeni2026_reference_modelica.zip" download>Warfarin_Gomeni2026_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_warfarin/Warfarin_Gomeni2026_reference/Warfarin_Gomeni2026_reference_modelica.zip" download>Warfarin_Gomeni2026_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_warfarin/Warfarin_Gomeni2026_reference/Warfarin_Gomeni2026_reference_fmi.zip" download>Warfarin_Gomeni2026_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_warfarin/Warfarin_Gomeni2026_reference/Warfarin_Gomeni2026_reference_matlab.zip" download>Warfarin_Gomeni2026_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_warfarin/Warfarin_Gomeni2026_reference/Warfarin_Gomeni2026_reference_matlab_simbio.zip" download>Warfarin_Gomeni2026_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

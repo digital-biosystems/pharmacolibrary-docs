@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;varenicline&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/&quot;},{&quot;label&quot;:&quot;Fediuk_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Varenicline_Fediuk2021_reference&quot;,&quot;label&quot;:&quot;Fediuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Fediuk2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Varenicline_Glatard2019_reference&quot;,&quot;label&quot;:&quot;Glatard_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Glatard2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lummis_2011_Rmax&quot;,&quot;label&quot;:&quot;Lummis_2011 \u00b7 Rmax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/pd_Lummis_2011_Rmax.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lummis_2011_Rmax_2&quot;,&quot;label&quot;:&quot;Lummis_2011 \u00b7 Rmax&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/pd_Lummis_2011_Rmax_2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Varenicline_Fediuk2021_reference&quot;,&quot;label&quot;:&quot;Fediuk_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Fediuk2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Varenicline_Glatard2019_reference&quot;,&quot;label&quot;:&quot;Glatard_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_varenicline/Varenicline_Glatard2019_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # varenicline — `Varenicline_Fediuk2021_reference`
 
-> ## <span class="pk-badge pk-badge--blue">Simulated</span>
+> ## <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span>
 
 <div class="pk-model-meta" hidden drug="varenicline" model-id="Varenicline_Fediuk2021_reference" status="simulated" stale="false" population="adolescent smokers" measured-compound="varenicline" parameterization="apparent" topology="1C"></div>
 
@@ -15,7 +15,7 @@ Fediuk DJ, Sweeney K, Sahasrabudhe V, McRae T, Byon W. Population pharmacokineti
 
 ## Population and dosing
 
-**Population:** adolescent smokers · condition nicotine dependence (smoking) · age group adolescent · n = 49.
+**Population:** adolescent smokers · condition smoking · age group adolescent · n = 49.
 
 **Dosing:** 0.5, 1 mg, oral, multiple, every 12 h.
 
@@ -23,22 +23,31 @@ Fediuk DJ, Sweeney K, Sahasrabudhe V, McRae T, Byon W. Population pharmacokineti
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted.  
+**Parameters:** 4 extracted, plus 4 covariate effects.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_varenicline/Varenicline_Fediuk2021_reference/Varenicline_Fediuk2021_reference.svg" alt="Varenicline_Fediuk2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-| label | parameter | value | unit | RSE% | IIV |
-|---|---|---|---|---|---|
-| CL/F (L/h) | CL/F | 12.5 | L/h | 5.06 | 0.102 (26.3% RSE) |
-| V/F (L) | V/F | 231 | L | 5.02 | 0.0182 (42.6% RSE) |
-| ka (h−1) | kabs | 0.860 | h−1 | 12.3 | 0.174 (48.5% RSE) |
-| COVCL/F,ka | equation variable | -0.0582 | unit | 71.0 |  |
+| label | parameter | value | unit | IIV |
+|---|---|---|---|---|
+| CL/F (L/h) | CL/F | 12.5 | L/h | 0.102 (None% RSE) |
+| body_weight | body_weight | 0.872 |  |  |
+| black_race | black_race | 0.757 |  |  |
+| other_race | other_race | 0.854 |  |  |
+| female_sex | female_sex | 0.861 |  |  |
+| V/F (L) | V/F | 231 | L | 0.0182 (None% RSE) |
+| ka (h−1) | kabs | 0.860 | h−1 | 0.174 (None% RSE) |
+| COVV/F,ka | t1/2ka | 0.0307 | ka |  |
+| Phase 4 proportional | equation variable | 0.187 |  |  |
+
+## Caveats
+
+- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.909). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,26 +57,31 @@ Fediuk DJ, Sweeney K, Sahasrabudhe V, McRae T, Byon W. Population pharmacokineti
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated; the covariate scenarios were not simulated (advisory).**
 
-A reported unit could not be converted (equation variable), so that value has no SI equivalent.
+The base model was simulated, not the covariate effects the record defines.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of covcl/f,ka: this record has -0.0582, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of covv/f,ka: this record has 0.0307, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 12.5 | L/h | 3.472e-06 | m3/s | l/h | 5.06 | exact (1) | psp412645-tbl-0003:row1:col1, psp412645-tbl-0003:row1:col2 | 0.102 (26.3% RSE) |
-| V/F (L) | `Q76` · V/F | 231 | L | 0.231 | m3 | l | 5.02 | exact (1) | psp412645-tbl-0003:row6:col1, psp412645-tbl-0003:row6:col2 | 0.0182 (42.6% RSE) |
-| ka (h−1) | `Q49` · kabs | 0.860 | h−1 | 0.0002389 | 1/s | 1/h | 12.3 | exact (1) | psp412645-tbl-0003:row11:col1, psp412645-tbl-0003:row11:col2 | 0.174 (48.5% RSE) |
-| COVCL/F,ka | `Q900` · equation variable | -0.0582 | unit |  |  | unit | 71.0 | llm_corrected (0.6) | psp412645-tbl-0003:row16:col1, psp412645-tbl-0003:row16:col2 |  |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
+|---|---|---|---|---|---|---|---|---|---|
+| CL/F (L/h) | `Q27` · CL/F | 12.5 | L/h | 3.472e-06 | m3/s | l/h | exact (1) | psp412645-tbl-0003:row1:col1, psp412645-tbl-0003:row1:col3 | 0.102 (None% RSE) |
+| body_weight | `Q900` · body_weight | 0.872 |  |  |  |  |  | psp412645-tbl-0003:row2:col1, psp412645-tbl-0003:row2:col3, psp412645-tbl-0003:row7:col1, psp412645-tbl-0003:row7:col3 |  |
+| black_race | `Q900` · black_race | 0.757 |  |  |  |  |  | psp412645-tbl-0003:row3:col1, psp412645-tbl-0003:row3:col3, psp412645-tbl-0003:row8:col1, psp412645-tbl-0003:row8:col3 |  |
+| other_race | `Q900` · other_race | 0.854 |  |  |  |  |  | psp412645-tbl-0003:row4:col1, psp412645-tbl-0003:row4:col3, psp412645-tbl-0003:row9:col1, psp412645-tbl-0003:row9:col3 |  |
+| female_sex | `Q900` · female_sex | 0.861 |  |  |  |  |  | psp412645-tbl-0003:row5:col1, psp412645-tbl-0003:row5:col3, psp412645-tbl-0003:row10:col1, psp412645-tbl-0003:row10:col3 |  |
+| V/F (L) | `Q76` · V/F | 231 | L | 0.231 | m3 | l | exact (1) | psp412645-tbl-0003:row6:col1, psp412645-tbl-0003:row6:col3 | 0.0182 (None% RSE) |
+| ka (h−1) | `Q49` · kabs | 0.860 | h−1 | 0.0002389 | 1/s | 1/h | exact (1) | psp412645-tbl-0003:row11:col1, psp412645-tbl-0003:row11:col3 | 0.174 (None% RSE) |
+| COVV/F,ka | `Q95` · t1/2ka | 0.0307 | ka | 9.688e+08 | s | ka | llm_corrected (0.6) | psp412645-tbl-0003:row17:col1, psp412645-tbl-0003:row17:col3 |  |
+| Phase 4 proportional | `Q900` · equation variable | 0.187 |  | 0.187 |  |  | llm (0.6) | psp412645-tbl-0003:row22:col1, psp412645-tbl-0003:row22:col3 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -77,59 +91,59 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Body weight' — extend the ontology if this is a real PK parameter (source ['psp412645-tbl-0003:row2:col1', 'psp412645-tbl-0003:row2:col2', 'psp412645-tbl-0003:row7:col1', 'psp412645-tbl-0003:row7:col2'])
-- dropped unlinked row (NIL): 'Black race' — extend the ontology if this is a real PK parameter (source ['psp412645-tbl-0003:row3:col1', 'psp412645-tbl-0003:row3:col2', 'psp412645-tbl-0003:row8:col1', 'psp412645-tbl-0003:row8:col2'])
-- dropped unlinked row (NIL): 'Other race' — extend the ontology if this is a real PK parameter (source ['psp412645-tbl-0003:row4:col1', 'psp412645-tbl-0003:row4:col2', 'psp412645-tbl-0003:row9:col1', 'psp412645-tbl-0003:row9:col2'])
-- dropped unlinked row (NIL): 'Female sex' — extend the ontology if this is a real PK parameter (source ['psp412645-tbl-0003:row5:col1', 'psp412645-tbl-0003:row5:col2', 'psp412645-tbl-0003:row10:col1', 'psp412645-tbl-0003:row10:col2'])
-- dropped unlinked row (NIL): 'COVCL/F,V/F' — extend the ontology if this is a real PK parameter (source ['psp412645-tbl-0003:row15:col1', 'psp412645-tbl-0003:row15:col2'])
-- routed 'COVV/F,ka' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- routed 'Phase 1 additive' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
+- table representations disagree for 'CL/F (L/h)'; source reconciliation required
+- table representations disagree for 'Body weight'; source reconciliation required
+- table representations disagree for 'Black race'; source reconciliation required
+- table representations disagree for 'Other race'; source reconciliation required
+- table representations disagree for 'Female sex'; source reconciliation required
+- table representations disagree for 'V/F (L)'; source reconciliation required
+- table representations disagree for 'ka (h−1)'; source reconciliation required
+- table representations disagree for 'ω2 CL/F'; source reconciliation required
+- table representations disagree for 'ω2 V/F'; source reconciliation required
+- table representations disagree for 'ω2 ka'; source reconciliation required
+- table representations disagree for 'COVCL/F,V/F'; source reconciliation required
+- table representations disagree for 'COVCL/F,ka'; source reconciliation required
+- table representations disagree for 'COVV/F,ka'; source reconciliation required
+- table representations disagree for 'Phase 1 additive'; source reconciliation required
+- table representations disagree for 'Phase 1 proportional'; source reconciliation required
+- table representations disagree for 'Phase 4 additive'; source reconciliation required
+- table representations disagree for 'Phase 4 proportional'; source reconciliation required
+- covariate level 'Body weight' → Q900:body_weight = 0.872 (power on Q27)
+- covariate level 'Black race' → Q900:black_race = 0.757 (linear_fractional on Q27)
+- covariate level 'Other race' → Q900:other_race = 0.854 (linear_fractional on Q27)
+- covariate level 'Female sex' → Q900:female_sex = 0.861 (linear_fractional on Q27)
+- 'COVCL/F,V/F': unit 'V/F' is a parameter symbol — dropped
+- dropped unlinked row (NIL): 'COVCL/F,V/F' — extend the ontology if this is a real PK parameter (source ['psp412645-tbl-0003:row15:col1', 'psp412645-tbl-0003:row15:col3'])
+- dropped 'COVCL/F,ka' → Q49 = -0.0582: a rate of -0.0582 is not a parameter value (source ['psp412645-tbl-0003:row16:col1', 'psp412645-tbl-0003:row16:col3'])
+- dropped unlinked row (NIL): 'Phase 1 additive' — extend the ontology if this is a real PK parameter (source ['psp412645-tbl-0003:row19:col1', 'psp412645-tbl-0003:row19:col3'])
 - routed 'Phase 1 proportional' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- dropped unlinked row (NIL): 'Phase 4 additive' — extend the ontology if this is a real PK parameter (source ['psp412645-tbl-0003:row21:col1', 'psp412645-tbl-0003:row21:col2'])
-- routed 'Phase 4 proportional' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- routed 'Phase 4 additive' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=varenicline
+- status held at "Needs review" — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- unparsed cell psp412645-tbl-0003:row1:col3 = '12.4 (11.3–13.9)'
-- unparsed cell psp412645-tbl-0003:row2:col3 = '0.583 (0.317–0.904)'
-- unparsed cell psp412645-tbl-0003:row3:col3 = '1.01 (0.840–1.22)'
-- unparsed cell psp412645-tbl-0003:row4:col3 = '1.12 (0.982–1.31)'
-- unparsed cell psp412645-tbl-0003:row5:col3 = '0.849 (0.756–0.953)'
-- unparsed cell psp412645-tbl-0003:row6:col3 = '230 (199–256)'
-- unparsed cell psp412645-tbl-0003:row7:col3 = '0.864 (0.638–1.05)'
-- unparsed cell psp412645-tbl-0003:row8:col3 = '0.754 (0.677–0.844)'
-- unparsed cell psp412645-tbl-0003:row9:col3 = '0.858 (0.775–0.946)'
-- unparsed cell psp412645-tbl-0003:row10:col3 = '0.858 (0.793–0.934)'
-- unparsed cell psp412645-tbl-0003:row11:col3 = '0.844 (0.668–1.12)'
-- unparsed cell psp412645-tbl-0003:row12:col3 = '0.0988 (0.0553–0.170)'
-- unparsed cell psp412645-tbl-0003:row13:col3 = '0.0169 (0.00371–0.0375)'
-- unparsed cell psp412645-tbl-0003:row14:col3 = '0.182 (0.0483–0.389)'
-- unparsed cell psp412645-tbl-0003:row15:col3 = '–0.000885 (–0.0369 to 0.0317)'
-- unparsed cell psp412645-tbl-0003:row16:col3 = '–0.0541 (–0.151 to 0.0306)'
-- unparsed cell psp412645-tbl-0003:row17:col3 = '0.0319 (–0.00836 to 0.0802)'
-- unparsed cell psp412645-tbl-0003:row19:col3 = '0.0579 (0.00245–0.205)'
-- unparsed cell psp412645-tbl-0003:row20:col3 = '0.0810 (0.0455–0.114)'
-- unparsed cell psp412645-tbl-0003:row21:col3 = '0.338 (0.0912–0.857)'
-- unparsed cell psp412645-tbl-0003:row22:col3 = '0.183 (0.126–0.230)'
+- table psp412645-tbl-0003: unbound_uncertainty
+- table psp412645-tbl-0003: representations disagree; selected evidence retained, not merged
 - LLM selected parameter table(s) 3
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
+| `gpt-oss-120b` | partly confirmed | 0.857 (12/14 fields) | 2 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[covcl/f,ka]` | -0.0582 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[covv/f,ka]` | 0.0307 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[phase 4 proportional]` | 0.187 |  | only_one_extracted |
 
 </details>
 
@@ -143,29 +157,31 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['psp412645-tbl-0003:row1:col1', 'psp412645-tbl-0003:row1:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['psp412645-tbl-0003:row11:col1', 'psp412645-tbl-0003:row11:col2'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['psp412645-tbl-0003:row6:col1', 'psp412645-tbl-0003:row6:col2'] |
+| C2_reference | pass |  |  |  |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['psp412645-tbl-0003:row1:col1', 'psp412645-tbl-0003:row1:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['psp412645-tbl-0003:row11:col1', 'psp412645-tbl-0003:row11:col3'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['psp412645-tbl-0003:row6:col1', 'psp412645-tbl-0003:row6:col3'] |
+| C5_dimension_Q95 | pass | [time] |  | ['psp412645-tbl-0003:row17:col1', 'psp412645-tbl-0003:row17:col3'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 12.5 L/h | ['psp412645-tbl-0003:row1:col1', 'psp412645-tbl-0003:row1:col2'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 231 L | ['psp412645-tbl-0003:row6:col1', 'psp412645-tbl-0003:row6:col2'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 12.5 L/h | ['psp412645-tbl-0003:row1:col1', 'psp412645-tbl-0003:row1:col3'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 231 L | ['psp412645-tbl-0003:row6:col1', 'psp412645-tbl-0003:row6:col3'] |
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=varenicline) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.909, 0 of 1 reader(s) agree | 0.909 | a second reader did not contradict the extraction |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable |  | pass | C_central (measured=varenicline) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.857 (12 of 14 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -181,8 +197,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_varenicline/Varenicline_Fediuk2021_reference/Varenicline_Fediuk2021_reference_modelica.zip" download>Varenicline_Fediuk2021_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_varenicline/Varenicline_Fediuk2021_reference/Varenicline_Fediuk2021_reference_fmi.zip" download>Varenicline_Fediuk2021_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_varenicline/Varenicline_Fediuk2021_reference/Varenicline_Fediuk2021_reference_modelica.zip" download>Varenicline_Fediuk2021_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_varenicline/Varenicline_Fediuk2021_reference/Varenicline_Fediuk2021_reference_fmi.zip" download>Varenicline_Fediuk2021_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_varenicline/Varenicline_Fediuk2021_reference/Varenicline_Fediuk2021_reference_matlab.zip" download>Varenicline_Fediuk2021_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_varenicline/Varenicline_Fediuk2021_reference/Varenicline_Fediuk2021_reference_matlab_simbio.zip" download>Varenicline_Fediuk2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_varenicline/Varenicline_Fediuk2021_reference/Varenicline_Fediuk2021_reference_sbml.zip" download>Varenicline_Fediuk2021_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
@@ -245,4 +261,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvarenicline%5D%20Varenicline_Fediuk2021_reference&body=Drug%3A%20varenicline%0ARecord%3A%20Varenicline_Fediuk2021_reference%0APaper%3A%20Fediuk_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_varenicline/Varenicline_Fediuk2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:49 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:46 UTC</sub>

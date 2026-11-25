@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The total clearance parameter for rituximab carries units of per-day, conflicting with its required volume-over-time dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit 1/day (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="rituximab" model-id="Rituximab_Serkland2025_reference" status="rejected" stale="false" population="treatment-naïve patients with relapsing-remitting multiple sclerosis" measured-compound="rituximab" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Serkland TT, Skrede S, Hallin EI, Myhr KM, Torkildsen Ø, Röblitz S. Pharmacoki
 
 ### Reviewer guidance
 
-**The total clearance parameter for rituximab carries units of per-day, conflicting with its required volume-over-time dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit 1/day (1 / [time]) vs [length] ** 3 / [time].**
 
-The record lists total clearance as 0.075 per-day, which fails the structural dimension check requiring volume over time. Because the data source was abstract-only, these summary statistics stand in for a fitted model. A second reader disagreed on the dose compound, primary analyte, and the specific clearance and degradation rate values. Extracted — rituximab: CL 0.075 1/day.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — rituximab: CL 0.075 1/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rituximab, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

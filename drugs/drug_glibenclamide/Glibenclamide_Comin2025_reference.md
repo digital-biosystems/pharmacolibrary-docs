@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Glibenclamide’s apparent intercompartmental clearance, Q, was recorded as 179 h⁻¹, an incompatible rate unit contributing to rejection for implausible clearance/volume.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q301 unit h ([time]) vs 1 / [time]; Q30 unit h⁻¹ (1 / [time]) vs [length] ** 3 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="glibenclamide" model-id="Glibenclamide_Comin2025_reference" status="rejected" stale="false" population="healthy adults" measured-compound="glibenclamide" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Comin L, Marie S, Ursino M, Zohar S, Tournier N, Comets E. Modeling Whole-Body D
 
 ### Reviewer guidance
 
-**Glibenclamide’s apparent intercompartmental clearance, Q, was recorded as 179 h⁻¹, an incompatible rate unit contributing to rejection for implausible clearance/volume.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q301 unit h ([time]) vs 1 / [time]; Q30 unit h⁻¹ (1 / [time]) vs [length] ** 3 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record defines Q as apparent intercompartmental clearance, which should have dimensions of volume per time, but gives it as 179 h⁻¹. The dimensional findings also identify a structural parameter recorded in h where inverse time was expected, and another recorded in h⁻¹ where volume per time was expected; the second reader disputed several parameter assignments. A reported unit could not be converted to SI, and the clearance/volume result was judged outside the physiological window. Extracted — glibenclamide: V 0.062 L, kel 0.26 h⁻¹, k12 0.46 h, k21 8.2 h⁻¹, Q 179 h⁻¹, kuptake 0.24 h⁻¹, kout_peripheral 0.19 h⁻¹.
+A reported unit could not be converted (k12 and Q), so that value has no SI equivalent. Extracted — glibenclamide: V 0.062 L, kel 0.26 h⁻¹, k12 0.46 h, k21 8.2 h⁻¹, Q 179 h⁻¹, kuptake 0.24 h⁻¹, kout_peripheral 0.19 h⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k_k1b_pop: this record has none, the second reading 0.23; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

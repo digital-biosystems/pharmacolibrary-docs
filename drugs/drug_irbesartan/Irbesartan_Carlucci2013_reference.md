@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> Irbesartan clearance is recorded as 0.35 L/h/kg, but the disputed reader comparison left the record needing review.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="irbesartan" model-id="Irbesartan_Carlucci2013_reference" status="needs_review" stale="false" population="healthy Beagle dogs" measured-compound="irbesartan" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Carlucci L, Song KH, Yun HI, Park HJ, Seo KW, Giorgi M. Pharmacokinetics and pha
 
 ### Reviewer guidance
 
-**Irbesartan clearance is recorded as 0.35 L/h/kg, but the disputed reader comparison left the record needing review.**
+**cross_check_disputed; x1_cross_check.**
 
-The record reports irbesartan clearance of 0.35 L/h/kg and volume of distribution of 2.54 L/kg. A second reader disagreed on extracted parameter values; the recorded disagreements include 0.35 versus 2.3, 2.54 versus 0.35, and 1.89 versus no value. Agreement was 0.2, with 0 of 1 reader agreeing. Extracted — irbesartan: CL 0.35 L/h/kg, V 2.54 L/kg.
+Extracted — irbesartan: CL 0.35 L/h/kg, V 2.54 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 2.30, the second reading 0.96; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

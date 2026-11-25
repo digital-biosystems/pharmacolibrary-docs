@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Apparent volume of distribution for cisatracurium has a dimensionless unit instead of volume, causing a structural mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q76 unit 1 (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="cisatracurium" model-id="Cisatracurium_Sorooshian1996_reference" status="rejected" stale="false" population="young and elderly adult patients" measured-compound="cisatracurium" parameterization="apparent" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Sorooshian SS, Stafford MA, Eastwood NB, Boyd AH, Hull CJ, Wright PM. Pharmacoki
 
 ### Reviewer guidance
 
-**Apparent volume of distribution for cisatracurium has a dimensionless unit instead of volume, causing a structural mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q76 unit 1 (dimensionless) vs [length] ** 3.**
 
-The record lists the apparent volume of distribution as 13.28 with a dimensionless unit rather than a volume unit. This creates a conflict because a volume parameter must have cubic length dimensions. The record was also built from the abstract alone, so these summary statistics stand in for a fitted model. Extracted — cisatracurium: CL 319 ml/min, V/F 13.3 1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cisatracurium: CL 319 ml/min, V/F 13.3 1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

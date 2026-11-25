@@ -50,7 +50,7 @@ Mohmaed Ali MI, Nijstad AL, Boosman RJ, Crombag MBS, Barnett S, Veal GJ et al. A
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Independently confirmed by `gpt-oss-120b`, `qwen3.8-27b`.
 

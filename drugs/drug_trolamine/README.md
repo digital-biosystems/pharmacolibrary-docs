@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:58 | 1:25 | 0/0/0 | 0/0/0 | 0/0/0 | 22,707/2,821 | openai / gpt-6-luna | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 08:07 | 0:03 | 0/0/0 | 0/0/0 | 0/0/0 | 3,995/168 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -48,24 +48,36 @@ _2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 | `Ochs_1984.pdf` | Ochs DL et al., Ca2+-stimulated, Mg2+-dependent ATPase…, The Journal of biological c… (1984) | pd | 4 |  | [6142882](https://www.ncbi.nlm.nih.gov/pubmed/6142882) | metadata signals extractable PD data (EC50) |
 | `Główka_2007.pdf` | Główka F et al., Enantioselective CE method for pharmaco…, Electrophoresis (2007) | pgx | 8 | [10.1002/elps.200600736](https://doi.org/10.1002/elps.200600736) | [17657761](https://www.ncbi.nlm.nih.gov/pubmed/17657761) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
 
-<sub>queue written 2026-10-07 13:57 UTC</sub>
+<sub>queue written 2026-11-24 08:07 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chien_1980 | irrelevant | 0 | 0 | This is an oxygen-equilibrium study of carp hemoglobin, not a pharmacokinetic study of trolamine. |
-| popPK | Findlay_1987 | irrelevant | 0 | 0 | This is an in-vitro enzyme study with no trolamine pharmacokinetic parameters. |
-| popPK | Guse_1994 | irrelevant | 0 | 0 | This is an in-vitro cellular mechanism study and reports no quantitative pharmacokinetic disposition parameters for trolamine. |
-| PGx | Główka_2007 | not_relevant | 0 | 0 | The paper studies ibuprofen and its metabolites in relation to CYP2C polymorphism; it reports no pharmacogenomic effect on trolamine. |
-| PGx | Lee_2013 | not_relevant | 0 | 0 | Triethanolamine is used as a reaction reagent, and the paper reports no pharmacogenomic effect on a trolamine PK or PD parameter. |
-| popPK | Libralato_2010 | irrelevant | 0 | 0 | This is an ecotoxicity study reporting toxicity endpoints, not trolamine pharmacokinetic parameters. |
-| PGx | Lu_2007 | not_relevant | 0 | 0 | The paper describes an analytical method for fluoxetine and norfluoxetine, not a pharmacogenomic effect on trolamine PK or PD. |
-| popPK | Macri_2009 | irrelevant | 0 | 0 | This is an in-vitro antimicrobial study of dendritic amphiphiles, not a trolamine pharmacokinetic study. |
-| popPK | Müller-Decker_1994 | irrelevant | 0 | 0 | This in vitro irritation study reports no pharmacokinetic disposition parameters for triethanolamine. |
-| popPK | Ochs_1984 | irrelevant | 0 | 0 | This is an in-vitro neutrophil ATPase study, not a pharmacokinetic study of trolamine. |
-| PGx | Qusa_2024 | not_relevant | 0 | 0 | The study reports in vitro CYP and transporter inhibition by trolamine, not an effect of a gene variant, genotype, or phenotype on its PK or PD. |
-| PGx | Spalding_1999 | not_relevant | 0 | 0 | The paper evaluates tumor formation after triethanolamine exposure, not a genotype effect on its pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Chien_1980 | irrelevant | 0 | 0 | The paper reports on the oxygen equilibrium of carp hemoglobin and is unrelated to the pharmacokinetics of trolamine. |
+| PGx | Chien_1980 | not_relevant | 0 | 0 | The paper investigates the oxygen equilibrium of carp hemoglobin and is unrelated to the pharmacokinetics or pharmacodynamics of trolamine. |
+| popPK | Findlay_1987 | irrelevant | 0 | 0 | The paper is an in-vitro biochemistry study on enzyme dissociation in triethanolamine buffer, not a pharmacokinetic study of trolamine. |
+| PGx | Findlay_1987 | not_relevant | 0 | 0 | The paper concerns the structural dissociation of the enzyme formiminotransferase-cyclodeaminase and has no relation to trolamine or pharmacogenomics. |
+| popPK | Guse_1994 | irrelevant | 0 | 0 | The study is an in vitro mechanistic study on Calcium signaling in T-lymphocytes and does not report pharmacokinetic parameters for trolamine. |
+| PGx | Guse_1994 | not_relevant | 0 | 0 | The paper does not mention trolamine and focuses on the cellular mechanisms of 4-AP induced calcium signaling in Jurkat T-cells. |
+| popPK | Główka_2007 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ibuprofen, not trolamine. |
+| PGx | Główka_2007 | not_relevant | 0 | 0 | The paper concerns the pharmacokinetics of ibuprofen, not trolamine. |
+| popPK | Lee_2013 | irrelevant | 0 | 0 | The paper describes an in vitro enzymatic reaction (P450-catalyzed O-dealkylation) and does not involve trolamine or any pharmacokinetic studies. |
+| PGx | Lee_2013 | not_relevant | 0 | 0 | The paper discusses P450 catalysis and NADPH regeneration in a synthetic biology context and does not mention trolamine or any human pharmacogenomic analysis. |
+| popPK | Libralato_2010 | irrelevant | 0 | 0 | The paper is an ecotoxicity study of amine compounds (MEA, DEA, TEA) in aquatic species, not a pharmacokinetic study of trolamine. |
+| PGx | Libralato_2010 | not_relevant | 0 | 0 | The paper focuses on the ecotoxicology of alkanolamines in seawater and contains no information regarding trolamine or pharmacogenomic effects on PK/PD parameters. |
+| popPK | Lu_2007 | irrelevant | 0 | 0 | The paper focuses on the analysis of fluoxetine and its metabolite, not trolamine. |
+| PGx | Lu_2007 | not_relevant | 0 | 0 | The paper describes an analytical method for fluoxetine and does not report any pharmacogenomic effects for trolamine or any other drug. |
+| popPK | Macri_2009 | irrelevant | 0 | 0 | The paper studies dendritic amphiphiles for antimicrobial properties and does not involve the drug trolamine or any pharmacokinetic modeling. |
+| PGx | Macri_2009 | not_relevant | 0 | 0 | The paper focuses on the antimicrobial and cytotoxic properties of dendritic amphiphiles and does not involve pharmacogenomics or pharmacokinetics/pharmacodynamics of trolamine. |
+| popPK | Müller-Decker_1994 | irrelevant | 0 | 0 | The study is an in vitro irritancy assay using surfactants and unrelated compounds; trolamine is not the subject drug and no PK parameters are reported. |
+| PGx | Müller-Decker_1994 | not_relevant | 0 | 0 | The paper focuses on in vitro skin irritation assays and does not report pharmacogenomic effects on the pharmacokinetics or pharmacodynamics of trolamine. |
+| popPK | Ochs_1984 | irrelevant | 0 | 0 | The study investigates the mechanism of Ca2+-stimulated ATPase activity in neutrophils and does not report pharmacokinetic parameters for trolamine. |
+| PGx | Ochs_1984 | not_relevant | 0 | 0 | The paper studies Ca2+-stimulated ATPase activity in neutrophils and does not mention the drug trolamine or any pharmacogenomic analysis. |
+| popPK | Qusa_2024 | irrelevant | 0 | 0 | The study is an in-vitro metabolism and transporter inhibition assay where trolamine is a probe compound, not a study of its pharmacokinetic disposition parameters. |
+| PGx | Qusa_2024 | not_relevant | 0 | 0 | The paper investigates in vitro drug-drug interactions (inhibition of CYP2C9 and transporters) caused by trolamine, but does not report any pharmacogenomic effects (gene variants) on trolamine's PK or PD. |
+| popPK | Spalding_1999 | irrelevant | 0 | 0 | The paper describes a carcinogenesis bioassay in transgenic mice using six chemicals (including triethanolamine, not trolamine) and does not report any pharmacokinetic parameters for trolamine. |
+| PGx | Spalding_1999 | not_relevant | 0 | 0 | The paper discusses a transgenic mouse model for carcinogenesis using various chemicals, but does not mention trolamine or any pharmacogenomic effects on PK/PD parameters. |
 
 
 </details>

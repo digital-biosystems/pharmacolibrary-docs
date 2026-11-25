@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ampicillin’s F, k13, and k31 have no reported values and were defaulted, so the record was held back.
+> F, k13, k31 use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Padari2021_reference" status="needs_review" stale="false" population="preterm and term neonates" measured-compound="ampicillin" parameterization="mechanistic" topology="3C"></div>
 
@@ -54,13 +54,13 @@ Padari H, Soeorg H, Tasa T, Metsvaht T, Kipper K, Herodes K et al. Ampicillin Ph
 
 ### Reviewer guidance
 
-**Ampicillin’s F, k13, and k31 have no reported values and were defaulted, so the record was held back.**
+**F, k13, k31 use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model; F, k13, and k31 were defaults rather than estimates from the paper, and Tlag was also defaulted. A second reader disputed the record, with agreement 0.105 and 0 of 1 reader agreeing; that reader marked the dose compound and primary analyte unknown and provided no values for several listed parameters. Extracted — ampicillin: t1/2z 7.21 hours, V 1.07 L, CL 0.2 L/h, AUCt 349 mg*h/L, V1 24.9 L/70kg, V2 1.04 L, Q 7.07 L/h, kabs 6.45 h-1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ampicillin: t1/2z 7.21 hours, V 1.07 L, CL 0.2 L/h, AUCt 349 mg*h/L, V1 24.9 L/70kg, V2 1.04 L, Q 7.07 L/h, kabs 6.45 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ampicillin, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -168,7 +168,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 3C → PK_3C* | PK_3C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.105, 0 of 1 reader(s) agree | 0.105 | cross-check disputed by a second reader: verdict disputed, agreement 0.105, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.105 (2 of 19 compared fields agree, 15 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.105 | cross-check contradicted by a second reader: verdict disputed; agreement 0.105 (2 of 19 compared fields agree, 15 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the cited paper studies methylprednisolone, not the claimed subject, pancuronium.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="pancuronium" model-id="Pancuronium_Rantanen2026_reference" status="rejected" stale="false" population="" measured-compound="pancuronium" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Rantanen M, Keski-Nisula J, Olkkola KT, Neuvonen PJ, Pesonen E, Suominen P et al
 
 ### Reviewer guidance
 
-**The record was rejected because the cited paper studies methylprednisolone, not the claimed subject, pancuronium.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The identity check identified the source as a methylprednisolone pharmacokinetic study where pancuronium is only a concomitant agent. Consequently, the extracted clearance of 0.0761 L/min and volume of distribution of 27.1 L do not represent pancuronium parameters. A secondary reader disagreement regarding a null value versus 0.503 does not resolve this fundamental subject mismatch. Extracted — pancuronium: CL 0.0761 L/min, V 27.1 L.
+Extracted — pancuronium: CL 0.0761 L/min, V 27.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q319: this record has none, the second reading 0.503. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -121,7 +121,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.8 (4 of 5 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The vamorolone record was rejected because the Cmax parameter’s unit of hours conflicts with its required concentration dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit hours ([time]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="vamorolone" model-id="Vamorolone_Mavroudis2019_reference" status="rejected" stale="false" population="healthy men and boys with Duchenne muscular dystrophy" measured-compound="vamorolone" parameterization="apparent" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Mavroudis PD, van den Anker J, Conklin LS, Damsker JM, Hoffman EP, Nagaraju K et
 
 ### Reviewer guidance
 
-**The vamorolone record was rejected because the Cmax parameter’s unit of hours conflicts with its required concentration dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit hours ([time]) vs [mass] / [length] ** 3.**
 
-The record lists maximum plasma concentration in hours, a unit of time rather than concentration. Since the source was abstract-only, these summary statistics stand in for a fitted model. The second reader disagreed on the dose compound and primary analyte, marking both as unknown. Extracted — vamorolone: t1/2z 2 hours, CL/F 2 L/h/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — vamorolone: t1/2z 2 hours, CL/F 2 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vamorolone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

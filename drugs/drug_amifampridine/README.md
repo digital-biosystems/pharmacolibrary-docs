@@ -21,12 +21,12 @@ Amifampridine is a potassium channel blocker used primarily to treat Lambert-Eat
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| 3,4-diaminopyridine (amifampridine) | metabolite | 109.132 | C5H7N3 | PubChem | [5918](https://pubchem.ncbi.nlm.nih.gov/compound/5918) | Thakkar_2017 |
-| 3-N-acetyl-3,4-diaminopyridine (3-Ac DAP) | metabolite | 151.169 | C7H9N3O | PubChem | [11593462](https://pubchem.ncbi.nlm.nih.gov/compound/11593462) | Thakkar_2017 |
+| 3,4-diaminopyridine | parent | 109.132 | C5H7N3 | DrugBank | — | Thakkar_2017 |
+| 3-N-acetyl-3,4-diaminopyridine | metabolite | — (mass units only) | — | — | — | — |
 
 ## Start here
 
-> **Thakkar_2017_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> patients with Lambert-Eaton myasthenia, n = 49. [Run it in the simulator](drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference.md?tab=Simulation) · [record](drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference.md)
+> **Thakkar_2017_reference** — <span class="pk-badge pk-badge--neutral">Not simulated</span> adults with Lambert-Eaton myasthenia. [Run it in the simulator](drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference.md?tab=Simulation) · [record](drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -40,7 +40,7 @@ Amifampridine is a potassium channel blocker used primarily to treat Lambert-Eat
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Thakkar_2017_3TUG](drugs/drug_amifampridine/pd_Thakkar_2017_3TUG.md) | Triple Timed Up & Go ← 3,4-DAP · direct Emax (saturable) effect | ▶ model + simulator | Thakkar N et al., Population Pharmacokinetics/Pharmacodyn…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12218](https://doi.org/10.1002/psp4.12218) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> | [Thakkar_2017_3TUG](drugs/drug_amifampridine/pd_Thakkar_2017_3TUG.md) | Triple Timed Up & Go (3TUG) ← 3,4-DAP · direct Emax (saturable) effect | ▶ model + simulator | Thakkar N et al., Population Pharmacokinetics/Pharmacodyn…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12218](https://doi.org/10.1002/psp4.12218) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Amifampridine is a potassium channel blocker used primarily to treat Lambert-Eat
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:19 | 3:10 | 1/0/0 | 1/0/0 | 0/0/0 | 194,347/10,933 | ollama / glm-5.3-flash | 6 | 0/6 | 6/0 | 0 |
+| 2026-11-23 17:38 | 0:04 | 1/0/0 | 1/0/0 | 0/0/0 | 4,340/140 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
 
 ## Coverage
 
@@ -68,25 +68,36 @@ Amifampridine is a potassium channel blocker used primarily to treat Lambert-Eat
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Abdul-Mutakabbir_2020 | irrelevant | 0 | 0 | This is an in vitro PK/PD study of dalbavancin, vancomycin, daptomycin, and cefazolin against S. aureus; amifampridine is not mentioned at all. |
-| popPK | Barber_2015 | irrelevant | 0 | 0 | Study concerns ceftaroline/daptomycin/rifampin against MRSA in an in vitro model; amifampridine is not involved. |
-| popPK | Bellissant_1994 | irrelevant | 0 | 0 | This is a PK/PD study of pinacidil, not amifampridine; no amifampridine disposition parameters are reported. |
+| popPK | Barber_2015 | irrelevant | 0 | 0 | The study evaluates the antibacterial efficacy of ceftaroline, daptomycin, and rifampin, not the pharmacokinetics of amifampridine. |
+| PGx | Barber_2015 | not_relevant | 0 | 0 | The paper evaluates the antimicrobial activity of ceftaroline, daptomycin, and rifampin against MRSA, and does not involve amifampridine or pharmacogenomics. |
+| popPK | Bellissant_1994 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetic-pharmacodynamic modeling of pinacidil and its metabolite pinacidil-N-oxide, not amifampridine. |
+| PGx | Bellissant_1994 | not_relevant | 0 | 0 | The study investigates pharmacokinetic-pharmacodynamic modeling of pinacidil in healthy volunteers and contains no information regarding amifampridine or pharmacogenomic effects. |
 | popPK | Bulkeley_2021 | irrelevant | 0 | 0 | This is a bull sperm mitochondrial function study; amifampridine is not involved and no PK parameters are reported. |
 | popPK | Dehdab_2024 | irrelevant | 0 | 0 | This is an imaging study on AI denoising in TIPSS CBCT; no amifampridine PK parameters are reported anywhere. |
 | popPK | Ferguson_2019 | irrelevant | 0 | 0 | This is an epidemiological study of organophosphate pesticide metabolites (DAPs) and fetal growth; amifampridine is not mentioned and no PK parameters for it exist. |
-| popPK | Hall_2016 | irrelevant | 0 | 0 | Study of daptomycin/fosfomycin against VRE; amifampridine is not mentioned and no PK parameters for it appear. |
+| popPK | Hall_2016 | irrelevant | 0 | 0 | The study focuses on the in vitro PK/PD of daptomycin and fosfomycin against VRE and does not involve amifampridine. |
+| PGx | Hall_2016 | not_relevant | 0 | 0 | The paper does not study amifampridine or report pharmacogenomic effects on a PK or PD parameter; it focuses on the in vitro PK/PD interaction of fosfomycin and daptomycin against vancomycin-resistant Enterococci. |
 | popPK | Kebriaei_2023 | irrelevant | 0 | 0 | This is an in vitro PK/PD study of dalbavancin and daptomycin against S. aureus; amifampridine is not mentioned at all. |
-| popPK | Kunz_2024 | irrelevant | 0 | 0 | In vitro/ex vivo phage-antibiotic synergy study of daptomycin against MRSA with no amifampridine or PK parameters. |
-| popPK | Liu_2016 | irrelevant | 0 | 0 | Study on phthalate ester toxicity in algae; no amifampridine PK data at all. |
+| popPK | Kunz_2024 | irrelevant | 0 | 0 | The study investigates phage-antibiotic synergy against MRSA and does not involve the drug amifampridine or its pharmacokinetics. |
+| PGx | Kunz_2024 | not_relevant | 0 | 0 | The paper studies phage-antibiotic synergy in MRSA, not the pharmacogenomics of amifampridine. |
+| popPK | Liu_2016 | irrelevant | 0 | 0 | The paper investigates the toxicological effects of phthalate esters on the alga Karenia brevis and contains no data on amifampridine pharmacokinetics. |
+| PGx | Liu_2016 | not_relevant | 0 | 0 | The paper discusses phthalate esters and algal biology, unrelated to amifampridine pharmacogenomics. |
 | popPK | Mancheño-Losa_2025 | irrelevant | 0 | 0 | This is an in vitro PK/PD study of ceftobiprole and daptomycin against MRSA biofilm; amifampridine is not mentioned and no amifampridine PK parameters exist. |
-| popPK | Sanders_2017 | irrelevant | 0 | 0 | This is a radiation exposure study for hip injections with no amifampridine PK data whatsoever. |
-| popPK | Smith_2015 | irrelevant | 0 | 0 | In vitro PK/PD study of daptomycin and β-lactams against enterococci; amifampridine is not involved and no disposition parameters are reported. |
-| popPK | Warman_1994 | irrelevant | 0 | 0 | This is a computational electrophysiology model of hippocampal neurons with no amifampridine PK data. |
-| popPK | Yamada_2020 | irrelevant | 0 | 0 | This is a population PK study of daptomycin, not amifampridine; no amifampridine parameters are reported. |
-| popPK | du_2019 | irrelevant | 0 | 0 | Study of prostatic artery embolization outcomes; no amifampridine PK parameters reported. |
+| popPK | Sanders_2017 | irrelevant | 0 | 0 | The study is about radiation exposure during hip injections and contains no pharmacokinetic data for amifampridine. |
+| PGx | Sanders_2017 | not_relevant | 0 | 0 | The paper discusses radiologist training and radiation exposure in hip injections; it is unrelated to pharmacogenomics or amifampridine. |
+| popPK | Smith_2015 | irrelevant | 0 | 0 | The study focuses on in vitro PK/PD models of daptomycin and beta-lactams against bacteria, with no mention of amifampridine or its pharmacokinetics. |
+| PGx | Smith_2015 | not_relevant | 0 | 0 | The paper studies antibiotic combinations (daptomycin and beta-lactams) against bacteria and does not involve amifampridine or pharmacogenomics. |
+| PGx | Thakkar_2017 | not_relevant | 3 | 0 | The paper identifies 3,4-diaminopyridine (amifampridine) and notes that genotype was tested as a covariate in the population PK model, but the effect was not retained in the final model; thus, no significant pharmacogenomic effect is reported. |
+| popPK | Warman_1994 | irrelevant | 0 | 0 | The paper is a computational electrophysiology model of hippocampal neurons and does not report pharmacokinetic parameters for amifampridine. |
+| PGx | Warman_1994 | not_relevant | 0 | 0 | The paper describes a computational model of hippocampal CA1 cell electrophysiology and does not mention amifampridine, genetic variants, or pharmacokinetic/pharmacodynamic parameters. |
+| popPK | Yamada_2020 | irrelevant | 0 | 0 | The study concerns the pharmacokinetics of daptomycin, not amifampridine. |
+| PGx | Yamada_2020 | not_relevant | 0 | 0 | The paper investigates pharmacokinetics and dosing of daptomycin, not amifampridine, and does not involve pharmacogenomic analysis. |
+| popPK | du_2019 | irrelevant | 0 | 0 | The paper discusses prostatic artery embolization technical outcomes and has no relation to amifampridine pharmacokinetics. |
+| PGx | du_2019 | not_relevant | 0 | 0 | The paper focuses on technical factors in prostatic artery embolization and does not mention amifampridine or any pharmacogenomic analysis. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamifampridine%5D&body=Drug%3A%20amifampridine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amifampridine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 04:17 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 10:15 UTC</sub>

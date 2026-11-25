@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Record rejected because the volume of distribution parameter V was assigned the dimensionally incompatible unit nmoL/min.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit nmoL/min ([substance] / [time]) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="cefadroxil" model-id="Cefadroxil_Xie2016_reference" status="rejected" stale="false" population="wild-type and Pept2 knockout mice" measured-compound="cefadroxil" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Xie Y, Shen H, Hu Y, Feng MR, Smith DE. Population pharmacokinetic modeling of c
 
 ### Reviewer guidance
 
-**Record rejected because the volume of distribution parameter V was assigned the dimensionally incompatible unit nmoL/min.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit nmoL/min ([substance] / [time]) vs [length] ** 3.**
 
-The parameter V, defined as the volume of distribution, is recorded with a value of 17.6 and units of nmoL/min, which represents a molar rate rather than a physical volume. This unit conflicts with the required dimension of length cubed for a volume of distribution. Additionally, the record was built from the abstract only, so the reported statistics did not represent a fitted model. Extracted — cefadroxil: V 17.6 nmoL/min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefadroxil: V 17.6 nmoL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefadroxil, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

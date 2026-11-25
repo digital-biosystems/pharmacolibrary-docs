@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held back because the oral bioavailability parameter F was missing from the extracted data.
+> C2_reference failed (ratio None).
 
 <div class="pk-model-meta" hidden drug="raltegravir" model-id="Raltegravir_Bukkems2021_reference" status="needs_review" stale="false" population="pregnant and nonpregnant women living with HIV and healthy subjects" measured-compound="raltegravir" parameterization="apparent" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Bukkems VE, Post TM, Colbers AP, Burger DM, Svensson EM. A population pharmacoki
 
 ### Reviewer guidance
 
-**The record was held back because the oral bioavailability parameter F was missing from the extracted data.**
+**C2_reference failed (ratio None).**
 
-The extracted parameter list omits the oral bioavailability term, which the second reader identified as missing. Additionally, the clearance ratio for atazanavir could not be computed, resulting in an inconclusive check. The second reader also disagreed with the recorded value of -0.459 for the low-fat meal effect on bioavailability, leaving the record in a state needing further review. Extracted — raltegravir: kabs 0.741 h−1, V1/F 44.3 L, CL/F 55.8 L/h, CL_ratio -0.17, Q/F 5.68 L/h, V2/F 92.8 L, Frel -0.459.
+Extracted — raltegravir: kabs 0.741 h−1, V1/F 44.3 L, CL/F 55.8 L/h, CL_ratio -0.17, Q/F 5.68 L/h, V2/F 92.8 L, Frel -0.459.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f c: this record has none, the second reading 1; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

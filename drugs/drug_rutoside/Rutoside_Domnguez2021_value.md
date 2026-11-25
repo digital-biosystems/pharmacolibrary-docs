@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The model was rejected because a covariate parameter for volume of distribution, identified as 'k V' with a value of -0.701, resulted in a negative volume.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2021_value" status="rejected" stale="false" population="Wistar rats" measured-compound="rutin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -56,13 +56,13 @@ Domínguez Moré GP, Cardona MI, Sepúlveda PM, Echeverry SM, Oliveira Simões C
 
 ### Reviewer guidance
 
-**The model was rejected because a covariate parameter for volume of distribution, identified as 'k V' with a value of -0.701, resulted in a negative volume.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record lists a parameter with the label 'k V' and value -0.701, which corresponds to a covariate coefficient for volume of distribution. A negative value in this context implies a negative volume of distribution, which is physically implausible. Additionally, the extraction of the metabolite link from rutin to quercetin was disputed, and absorption parameters were initially omitted before being corrected. Extracted — quercetin: kabs 0.104 h−1, tlag 3.91 h; rutoside: Vnorm 0.0646 L/kg, kel 1.47 h−1, k12 2.6 h−1, k21 13.6 h−1, V -0.701.
+Extracted — quercetin: kabs 0.104 h−1, tlag 3.91 h; rutoside: Vnorm 0.0646 L/kg, kel 1.47 h−1, k12 2.6 h−1, k21 13.6 h−1, V -0.701.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has rutin → quercetin (metabolism), the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

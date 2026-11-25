@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Cross-check disagreement: the second reader could not confirm any of the eight parameter values or the dose and analyte assignments for ixazomib.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ixazomib" model-id="Ixazomib_Gupta2017_reference" status="needs_review" stale="false" population="adults with multiple myeloma" measured-compound="ixazomib" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Gupta N, Diderichsen PM, Hanley MJ, Berg D, van de Velde H, Harvey RD et al. Pop
 
 ### Reviewer guidance
 
-**Cross-check disagreement: the second reader could not confirm any of the eight parameter values or the dose and analyte assignments for ixazomib.**
+**cross_check_disputed; x1_cross_check.**
 
-The first reader assigned values (e.g., kabs -1.09, CL 0.62, V1 2.62) to an ixazomib citrate model in multiple myeloma patients, but the second reader returned no values for any parameter. In addition, the second reader identified the dose compound and primary analyte as unknown rather than ixazomib. Because the second reader did not corroborate a single parameter or the identity of the measured molecule, the verdict was held back for review. Extracted — ixazomib: kabs -1.09 1/h, CL 0.62 L/h, V1 2.62 L, Fab -0.55 log F, Q3 1.65 L/h, V2 5.73 L, Q 3.26 L/h, V3 5.32 L, … (+1).
+A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — ixazomib: kabs -1.09 1/h, CL 0.62 L/h, V1 2.62 L, Fab -0.55 log F, Q3 1.65 L/h, V2 5.73 L, Q 3.26 L/h, V3 5.32 L, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ixazomib, the second reading unknown; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -192,7 +192,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.125 (3 of 24 compared fields agree, 19 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.125 | cross-check contradicted by a second reader: verdict disputed; agreement 0.125 (3 of 24 compared fields agree, 19 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_t_half_beta | reference | skipped | 9.5 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_beta | reference | skipped | 9.53 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_terminal | reference | skipped | 9.35 |  |  | no simulated metric for this quantity (single reference sim) |

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The bioavailability parameter F for amoxicillin was not extracted from the study and defaulted to a library placeholder.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Pullen2006_reference" status="needs_review" stale="false" population="(pre)term neonates" measured-compound="amoxicillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Pullen J, Stolk LM, Nieman FH, Degraeuwe PL, van Tiel FH, Zimmermann LJ. Populat
 
 ### Reviewer guidance
 
-**The bioavailability parameter F for amoxicillin was not extracted from the study and defaulted to a library placeholder.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record includes explicit values for clearance, volume of distribution, absorption rate, and lag time, but lacks an estimate for F. Because no value for F appears in the extracted parameters, the model relies on an unsupported default. This omission means the simulated profile does not reflect the actual bioavailability reported in the Pullen_2006 study. Extracted — amoxicillin: CL 0.096 L/kg/h, V 0.65 L/kg, kabs 0.17 h−1, tlag 0.125 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — amoxicillin: CL 0.096 L/kg/h, V 0.65 L/kg, kabs 0.17 h−1, tlag 0.125 h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,7 +144,7 @@ _All readers agree on the compared fields of this record._
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_beta | reference | pass | 5.2 | 5.396 | 1.038 | hours→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 5.2 | 5.396 | 1.038 | reported 5.2 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the terminal elimination rate constant was provided with a unit dimension that conflicted with its required rate constant dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min⁻¹ (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="sodium salicylate" model-id="SodiumSalicylate_Lowenthal1974_patients" status="rejected" stale="false" population="anephric patients" measured-compound="salicylic acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,7 +47,7 @@ Lowenthal DT, Briggs WA, Levy G. Kinetics of salicylate elimination by anephric 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,11 +57,13 @@ Lowenthal DT, Briggs WA, Levy G. Kinetics of salicylate elimination by anephric 
 
 ### Reviewer guidance
 
-**The model was rejected because the terminal elimination rate constant was provided with a unit dimension that conflicted with its required rate constant dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min⁻¹ (1 / [time]) vs 1 / [time].**
 
-The elimination rate constant for salicylic acid is reported as 0.00260 min⁻¹. The verification process flagged a conflict between the reported unit and the expected dimension for this structural parameter. Additionally, the specific unit notation was not recognized by the conversion system, preventing the derivation of a valid SI value for the parameter. Extracted — sodium salicylate: λ1 0.408 min⁻¹, kel 0.0026 1/min, k13 0.281 min⁻¹, k31 0.121 min⁻¹, kcomp 0.00879 min⁻¹, V 0.05 liter/kg, Vnorm 0.168 liter/kg, t1/2z 266 min, … (+1).
+A reported unit could not be converted (equation variable and λ1), so that value has no SI equivalent. Extracted — sodium salicylate: λ1 0.408 min⁻¹, kel 0.0026 1/min, k13 0.281 min⁻¹, k31 0.121 min⁻¹, kcomp 0.00879 min⁻¹, V 0.05 liter/kg, Vnorm 0.168 liter/kg, t1/2z 266 min, … (+1).
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium salicylate, the second reading sodium_salicylate; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -109,6 +111,39 @@ The elimination rate constant for salicylic acid is reported as 0.00260 min⁻¹
 - unparsed cell Lowenthal_1974_table_3:row7:col3 = '&gt; 0.1'
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
+
+<details><summary>13 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 123 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k13]` | 0.281 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k31]` | 0.121 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k61]` | 0.00879 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag time]` | 0.42 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2 (β)]` | 266 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tə (β)]` |  | 316 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[va (area)]` | 0.168 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[va].value` | 0.050 | 5.01 | mismatch |
+| `gpt-oss-120b` | `parameters[α]` | 0.408 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[β]` | 0.00260 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | sodium salicylate | sodium_salicylate | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | salicylic acid | sodium_salicylate | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

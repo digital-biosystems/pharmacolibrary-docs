@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Palbociclib absorption lag time value 0.658 was recorded with unit L, conflicting with required time dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q83 unit L ([length] ** 3) vs [time].
 
 <div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Royer2021_reference" status="rejected" stale="false" population="postmenopausal women with metastatic breast cancer routinely followed in a cancer center" measured-compound="palbociclib" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Royer B, Kaderbhaï C, Fumet JD, Hennequin A, Desmoulins I, Ladoire S et al. Pop
 
 ### Reviewer guidance
 
-**Palbociclib absorption lag time value 0.658 was recorded with unit L, conflicting with required time dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q83 unit L ([length] ** 3) vs [time].**
 
-The record lists the absorption lag time as 0.658 with unit L, whereas the parameter definition requires a time unit. This unit mismatch created a dimension conflict that prevented the parameter from being converted to standard SI units. Consequently, the model record was rejected due to this structural inconsistency in the palbociclib pharmacokinetic parameters. Extracted — palbociclib: CL/F 58.3 L/h, V/F 1.58e+03 L, kabs 0.187 h−1, tlag 0.658 L.
+A reported unit could not be converted (tlag), so that value has no SI equivalent. Extracted — palbociclib: CL/F 58.3 L/h, V/F 1.58e+03 L, kabs 0.187 h−1, tlag 0.658 L.
 
 Independently confirmed by `qwen3.8-27b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

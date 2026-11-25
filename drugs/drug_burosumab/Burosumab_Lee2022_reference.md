@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Burosumab absorption parameters were not reported, so placeholder values were used, and weight covariate effects on clearance and volume were not simulated.
+> Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="burosumab" model-id="Burosumab_Lee2022_reference" status="needs_review" stale="false" population="adult and pediatric patients with X-linked hypophosphatemia" measured-compound="burosumab" parameterization="apparent" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Lee SK, Gosselin NH, Taylor J, Roberts MS, McKeever K, Shi J. Population Pharmac
 
 ### Reviewer guidance
 
-**Burosumab absorption parameters were not reported, so placeholder values were used, and weight covariate effects on clearance and volume were not simulated.**
+**Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).**
 
-The absorption rate constant and lag time were missing from the paper, requiring the model to use standard defaults rather than estimates specific to this study. Although weight covariates for clearance (0.912) and volume (1.05) were recorded, the review confirmed these scenarios were not exercised during simulation. A second reader also failed to identify the weight effect on clearance as a distinct parameter, disagreeing with the recorded value of 0.912. Extracted — burosumab: V/F 9.02 L, CL/F 0.297 L/day.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — burosumab: V/F 9.02 L, CL/F 0.297 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of covariate_effect_of_wt_on_cl_f: this record has 0.912, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -153,7 +153,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.769, 0 of 1 reader(s) agree | 0.769 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.769 (10 of 13 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.769 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

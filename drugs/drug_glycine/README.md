@@ -22,9 +22,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span> | [Pereira_2024_ARGS](drugs/drug_glycine/pd_Pereira_2024_ARGS.md) | ARGS ← M6495 · indirect response — drug inhibits the production of ARGS | — | Pereira JNS et al., Translational pharmacokinetic and pharm…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09958-z](https://doi.org/10.1007/s10928-024-09958-z) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Xu_2025_hTRPC5_current](drugs/drug_glycine/pd_Xu_2025_hTRPC5_current.md) | TRPC5 current ← N-palmitoyl glycine · direct Emax (saturable) effect | — | Xu H et al., N-palmitoyl glycine differentially modu…, Communications biology (2025) | [10.1038/s42003-025-09296-x](https://doi.org/10.1038/s42003-025-09296-x) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span> | [Xu_2025_hTRPM4_current](drugs/drug_glycine/pd_Xu_2025_hTRPM4_current.md) | TRPM4 current ← N-palmitoyl glycine · direct sigmoid Emax (Hill) effect | — | Xu H et al., N-palmitoyl glycine differentially modu…, Communications biology (2025) | [10.1038/s42003-025-09296-x](https://doi.org/10.1038/s42003-025-09296-x) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span> | [Pereira_2024_ARGS](drugs/drug_glycine/pd_Pereira_2024_ARGS.md) | ARGS ← M6495 · indirect response — drug inhibits the production of ARGS | — | Pereira JNS et al., Translational pharmacokinetic and pharm…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09958-z](https://doi.org/10.1007/s10928-024-09958-z) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -38,7 +38,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:14 | 9:55 | 0/0/0 | 2/1/0 | 0/0/0 | 713,221/17,469 | einfracz / qwen3.8-27b | 60 | 14/69 | 57/3 | 0 |
+| 2026-10-07 15:14 | 9:55 | 0/0/0 | 3/0/0 | 0/0/0 | 713,221/17,469 | einfracz / qwen3.8-27b | 60 | 14/69 | 57/3 | 0 |
 
 ## Coverage
 

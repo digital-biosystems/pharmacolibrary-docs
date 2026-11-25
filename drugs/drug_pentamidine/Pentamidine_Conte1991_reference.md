@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Pentamidine’s renal-clearance-to-plasma-clearance ratio of 2.1% was associated with a structural-parameter unit mismatch, and abstract-only statistics stood in for a fitted model.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="Pentamidine" model-id="Pentamidine_Conte1991_reference" status="rejected" stale="false" population="patients with normal renal function or receiving hemodialysis" measured-compound="pentamidine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Pentamidine" model-id="Pentamidine_Conte1991_reference" status="rejected" stale="false" population="adults with normal renal function or hemodialysis" measured-compound="pentamidine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Conte JE. Pharmacokinetics of intravenous pentamidine in patients with normal renal function or receiving hemodialysis. The Journal of infectious diseases 163(1):169–175 (1991).
@@ -16,29 +16,23 @@ Conte JE. Pharmacokinetics of intravenous pentamidine in patients with normal re
 
 ## Population and dosing
 
-**Population:** patients with normal renal function or receiving hemodialysis · condition Pneumocystis carinii pneumonia / renal impairment · age group adult · n = 24.
+**Population:** adults with normal renal function or hemodialysis · condition Pneumocystis carinii pneumonia or renal impairment · age group adult · n = 24.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| peak plasma concentration | Cmax | 249 | ng/ml |
-| plasma clearance | CL | 268 | l/h |
-| elimination half-life | t1/2z | 29 | h |
-| P | Q | 0.001 | L/h |
-| renal clearance-to-plasma clearance ratio | CL_ratio | 2.1 | % |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,71 +42,55 @@ Conte JE. Pharmacokinetics of intravenous pentamidine in patients with normal re
 
 ### Reviewer guidance
 
-**Pentamidine’s renal-clearance-to-plasma-clearance ratio of 2.1% was associated with a structural-parameter unit mismatch, and abstract-only statistics stood in for a fitted model.**
+**The paper reports none of the model's key parameters.**
 
-The recorded mismatch is a percent unit, which is dimensionless, against no unit for a structural parameter; the record gives the clearance ratio as 2.1%. Because only the abstract was read, reported summary statistics—not a fitted model—stand in for the model. A second reader did not retain the reported terminal half-life (29 h), peak concentration (249 ng/ml), plasma clearance (268 l/h), or intercompartmental clearance (0.001 l/h); both readers left the linear-regression entry without a value. Extracted — pentamidine: Cmax 249 ng/ml, CL 268 l/h, t1/2z 29 h, Q 0.001 L/h, CL_ratio 2.1 %.
+No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[elimination half-life].value`: this record has 29, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[elimination half-life].value`: this record has none, the second reading 29; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
-
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| peak plasma concentration | `Q32` · Cmax | 249 | ng/ml |  |  | ng/ml | llm_confirmed (0.6) | Conte_1991:abstract, Conte_1991:abstract |
-| plasma clearance | `Q22` · CL | 268 | l/h | 7.444e-05 | m3/s | l/h | llm_confirmed (0.6) | Conte_1991:abstract, Conte_1991:abstract |
-| elimination half-life | `Q57` · t1/2z | 29 | h | 1.044e+05 | s | h | llm (0.6) | Conte_1991:abstract, Conte_1991:abstract |
-| P | `Q30` · Q | 0.001 | L/h | 2.778e-10 | m3/s | L/h | llm (0.6) | Conte_1991:abstract |
-| renal clearance-to-plasma clearance ratio | `Q31` · CL_ratio | 2.1 | % |  |  | % | llm_confirmed (0.6) | Conte_1991:abstract |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 
 | label (paper) | Q-code | link |
 |---|---|---|
-| linear regression | Q900 | llm |
+| peak plasma concentration | Q32 | llm_confirmed |
+| plasma clearance | Q22 | llm_confirmed |
+| elimination half-life | Q57 | half_life_rule |
+| trough concentration linear regression | Q37 | llm_confirmed |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q900 ('r', value 0.91) — already have one for this compound
-- unit_dimension_mismatch: 'renal clearance-to-plasma clearance ratio' → Q31 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q57 ('elimination half-life after the last dose', value 12.0) — already have one for this compound
-- covariate renal for fe from footnote/prose kept as documentation only (['Conte_1991:abstract', 'Conte_1991:abstract'])
-- implicit units: 'P' → L/h (from the popPK convention: 'No unit stated in text, caption, or footnotes. Intercompartmental clearance (Q) in population PK is conventionally expre')
+- unit_dimension_unknown: 'null' (Ctrough)
+- dropped value-less row: 'renal clearance-to-plasma clearance ratio'
+- dropped duplicate Q57 ('elimination half-life after the last dose', value '12.0') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=pentamidine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Conte_1991_metadata.yaml (13 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Conte_1991_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (5/10 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
 
 <details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[elimination half-life].value` | 29 |  | mismatch |
-| `gpt-oss-120b` | `parameters[linear regression]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[p]` | 0.001 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[peak plasma concentration].value` | 249 |  | mismatch |
-| `gpt-oss-120b` | `parameters[plasma clearance].value` | 268 |  | mismatch |
+| `gpt-oss-120b` | `parameters[elimination half-life].value` |  | 29 | mismatch |
+| `gpt-oss-120b` | `parameters[peak plasma concentration].value` |  | 249 | mismatch |
+| `gpt-oss-120b` | `parameters[plasma clearance].value` |  | 268 | mismatch |
+| `gpt-oss-120b` | `parameters[renal clearance-to-plasma clearance ratio]` |  | 2.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[trough concentration linear regression]` |  |  | only_one_extracted |
 
 </details>
 
@@ -126,17 +104,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Conte_1991:abstract', 'Conte_1991:abstract'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Conte_1991:abstract'] |
-| C5_dimension_Q31 | fail |  | % (dimensionless) | ['Conte_1991:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Conte_1991:abstract', 'Conte_1991:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Conte_1991:abstract', 'Conte_1991:abstract'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 268 | ['Conte_1991:abstract', 'Conte_1991:abstract'] |
+| C0_has_structural_params | fail |  | 0 |  |
+| C0b_disposition_core | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Conte_1991:abstract'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Conte_1991:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Conte_1991:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 268 L/h | ['Conte_1991:abstract', 'Conte_1991:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,4 +133,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpentamidine%5D%20Pentamidine_Conte1991_reference&body=Drug%3A%20pentamidine%0ARecord%3A%20Pentamidine_Conte1991_reference%0APaper%3A%20Conte_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pentamidine/Pentamidine_Conte1991_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 08:20 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:06 UTC</sub>

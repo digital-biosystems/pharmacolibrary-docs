@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the source paper reports pharmacokinetic parameters for tacrolimus, not methylprednisolone, which is only a co-medication.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Bai2024_reference" status="rejected" stale="false" population="" measured-compound="methylprednisolone" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Bai H, Yun J, Wang Z, Ma Y, Liu W. Population pharmacokinetics study of tacrolim
 
 ### Reviewer guidance
 
-**The record is rejected because the source paper reports pharmacokinetic parameters for tacrolimus, not methylprednisolone, which is only a co-medication.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The study subject is tacrolimus, while methylprednisolone appears solely as a co-administered drug or covariate. The extracted clearance value of 38.9 L/h and volume of 1603.6 L therefore do not describe methylprednisolone kinetics. A second reader disputed the verdict, citing a discrepancy between the record’s 0.314 and their value of 3.95. Extracted — methylprednisolone: CL/F 38.9 L.h-1, V1/F 1.6e+03 L, kabs 0.35 1/h.
+Extracted — methylprednisolone: CL/F 38.9 L.h-1, V1/F 1.6e+03 L, kabs 0.35 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 0.314, the second reading 3.95. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.833 (5 of 6 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | cross-check contradicted by a second reader: verdict disputed; agreement 0.833 (5 of 6 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

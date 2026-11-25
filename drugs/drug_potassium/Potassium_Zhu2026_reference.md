@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because Zhu_2026 concerns another drug, making the reported potassium clearance (CL 1.01 L min-1) irrelevant to this record.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Zhu2026_reference" status="rejected" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Zhu J, He J, Zhong B, Cao Y, Zhang X, Xu B. From pharmacokinetics to precision d
 
 ### Reviewer guidance
 
-**Rejected because Zhu_2026 concerns another drug, making the reported potassium clearance (CL 1.01 L min-1) irrelevant to this record.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The record lists potassium clearance as 1.01 L min-1, but the paper’s title and abstract do not name potassium. The relevance screen therefore identified the paper as being about another drug, so the potassium parameters do not establish that this paper is relevant to potassium. Extracted — potassium: CL 1.01 L min-1, V1 2.95 L, V2 45.1 L, Q 0.76 L min-1.
+Extracted — potassium: CL 1.01 L min-1, V1 2.95 L, V2 45.1 L, Q 0.76 L min-1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (12 of 12 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

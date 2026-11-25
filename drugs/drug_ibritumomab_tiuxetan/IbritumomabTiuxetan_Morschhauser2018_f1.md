@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the clearance unit, ml.min, is dimensionally inconsistent with volume over time, and the volume of distribution parameters are missing.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml.min ([length] ** 3 * [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="ibritumomab tiuxetan" model-id="IbritumomabTiuxetan_Morschhauser2018_f1" status="rejected" stale="false" population="patients with follicular lymphoma" measured-compound="ibritumomab tiuxetan" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Morschhauser F, Dekyndt B, Baillet C, Barthélémy C, Malek E, Fulcrand J et al.
 
 ### Reviewer guidance
 
-**The record was rejected because the clearance unit, ml.min, is dimensionally inconsistent with volume over time, and the volume of distribution parameters are missing.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml.min ([length] ** 3 * [time]) vs [length] ** 3 / [time].**
 
-The reported unit for clearance, ml.min, implies volume multiplied by time rather than the required volume divided by time, causing a dimension mismatch. Additionally, the volume of distribution for blood and liver compartments was not extracted from the record. A second reader identified values of 4131.0 and 489.61 for these missing volume parameters, confirming the extraction failure. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
+A reported unit could not be converted (Cmax, AUC and AUCt), so that value has no SI equivalent. Extracted — ibritumomab tiuxetan: Cmax 0.308 µg.mL−1, t1/2z 83.6 h, MRT 114 h, CL 1.03 ml.min, AUC 1.71e+03 µg.min.mL−1, AUCt 262 µg.min.mL−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of blood: this record has none, the second reading 4131.0; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

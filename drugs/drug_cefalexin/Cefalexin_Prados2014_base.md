@@ -50,7 +50,7 @@ Prados AP, Schaiquevich P, Kreil V, Monfrinotti A, Quaine P, Tarragona L et al. 
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Reproduces paper: every check that could be run on this record passed.**
 
 Independently confirmed by `gpt-oss-120b`.
 
@@ -133,9 +133,9 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_t_half_terminal | reference | pass | 1.8 | 2.03 | 1.128 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 2.38 | 2.03 | 0.8529 | h→SI vs simulated h |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | pass | 1.8 | 2.03 | 1.128 | reported 1.8 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 2.38 | 2.03 | 0.8529 | reported 2.38 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

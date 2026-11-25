@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> The record was rejected because the unit for the elimination rate constant kel could not be converted to standard SI units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit 1/h (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="Islatravir" model-id="Islatravir_Oliveira2026_reference" status="rejected" stale="false" population="NZW rabbits" measured-compound="islatravir" parameterization="mechanistic" topology="1C"></div>
 
@@ -41,7 +41,7 @@ Oliveira D, Cruz D, Levin LPK, Li L, Norton CA, Dobek G et al. Harnessing Pharma
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,11 +51,13 @@ Oliveira D, Cruz D, Levin LPK, Li L, Norton CA, Dobek G et al. Harnessing Pharma
 
 ### Reviewer guidance
 
-**The record was rejected because the unit for the elimination rate constant kel could not be converted to standard SI units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit 1/h (1 / [time]) vs 1 / [time].**
 
-The elimination rate constant kel is listed with a value of 0.1 1/h for islatravir. A dimension check flagged a conflict in the unit's time dimension. Since the specific unit variant was not recognized by the standard conversion mechanism, no valid SI value was assigned to the parameter. Extracted — islatravir: λ1 0.6 1/h, kel 0.1 1/h, kabs 12 h−1.
+A reported unit could not be converted (equation variable and λ1), so that value has no SI equivalent. Extracted — islatravir: λ1 0.6 1/h, kel 0.1 1/h, kabs 12 h−1.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 25323.5, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -94,6 +96,31 @@ The elimination rate constant kel is listed with a value of 0.1 1/h for islatrav
 - LLM selected parameter table(s) 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.444 (4/9 fields) | 5 |
+
+<details><summary>5 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[a]` | 25323.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[alpha].value` | 0.6 | 0.438 | mismatch |
+| `gpt-oss-120b` | `parameters[b]` |  | 102.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[beta].value` | 0.1 | 0.170 | mismatch |
+| `gpt-oss-120b` | `parameters[ka]` | 12.0 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

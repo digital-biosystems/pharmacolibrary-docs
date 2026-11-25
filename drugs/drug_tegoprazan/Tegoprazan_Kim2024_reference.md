@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The absorption rate constant for tegoprazan was left at a library placeholder rather than extracted, invalidating the simulated profile.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="tegoprazan" model-id="Tegoprazan_Kim2024_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="tegoprazan" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Kim HS, Choi YK, Oh M, Cho YS, Ghim JL. Enhancing drug administration flexibilit
 
 ### Reviewer guidance
 
-**The absorption rate constant for tegoprazan was left at a library placeholder rather than extracted, invalidating the simulated profile.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record defines tegoprazan apparent clearance (21.02 L/h) and volume (122.72 L) but lacks an explicit absorption rate estimate. The model builder consequently used library defaults for the absorption rate and lag time, which are not supported by the source paper. Additionally, the apparent parameterization assumes full bioavailability without molar correction, further distancing the model from explicit paper data. Extracted — tegoprazan: CL/F 21 L/h, V/F 123 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — tegoprazan: CL/F 21 L/h, V/F 123 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 2746.31, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.769, 0 of 1 reader(s) agree | 0.769 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.769 (10 of 13 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.769 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

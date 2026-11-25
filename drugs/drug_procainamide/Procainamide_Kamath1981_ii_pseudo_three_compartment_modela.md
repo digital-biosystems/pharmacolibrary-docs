@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record for procainamide was rejected due to a unit dimension mismatch on the elimination rate constant and unconfirmed values for the metabolite formation rate and terminal half-life.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="procainamide" model-id="Procainamide_Kamath1981_ii_pseudo_three_compartment_modela" status="rejected" stale="false" population="rats" measured-compound="procainamide" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -55,13 +55,13 @@ Kamath BL, Lai CM, Gupta SD, Durrani MJ, Yacobi A. Pharmacokinetics of procainam
 
 ### Reviewer guidance
 
-**The record for procainamide was rejected due to a unit dimension mismatch on the elimination rate constant and unconfirmed values for the metabolite formation rate and terminal half-life.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time].**
 
-The elimination rate constant beta (0.327 hr-1) was flagged because its reported unit dimension conflicted with the expected dimension for a rate constant. A second reader could not confirm the values for the metabolite formation rate (0.254 hr-1) or the terminal half-life (2.22 hr), noting them as null. Additionally, the second reader failed to identify the dose compound and primary analyte, marking them as unknown in disagreement with the extracted procainamide. Extracted — procainamide: λ1 2.7 hr-1, kel 0.327 hr-1, t1/2z 2.22 hr, CLR 0.919 liters/hr/kg, V 0.831 L/kg, CL 2.1 L/h/kg; N-acetylprocainamide: kfm 0.254 hr-1.
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — procainamide: λ1 2.7 hr-1, kel 0.327 hr-1, t1/2z 2.22 hr, CLR 0.919 liters/hr/kg, V 0.831 L/kg, CL 2.1 L/h/kg; N-acetylprocainamide: kfm 0.254 hr-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has procainamide, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

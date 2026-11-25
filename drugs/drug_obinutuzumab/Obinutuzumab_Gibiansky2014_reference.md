@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because the intercompartmental clearance unit L/day is dimensionally inconsistent with the required mass-based clearance.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit L/day ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Gibiansky2014_reference" status="rejected" stale="false" population="patients with CLL and NHL" measured-compound="obinutuzumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Gibiansky E, Gibiansky L, Carlile DJ, Jamois C, Buchheit V, Frey N. Population P
 
 ### Reviewer guidance
 
-**Rejected because the intercompartmental clearance unit L/day is dimensionally inconsistent with the required mass-based clearance.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit L/day ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time].**
 
-The parameter Q (intercompartmental clearance) is recorded with a unit of L/day, which represents volume per time. The expected dimension for a clearance parameter is volume per time per mass. Additionally, the second reader identified a dissociation rate constant (kdes) value of 0.0291 that is missing from this record. Extracted — obinutuzumab: CL 0.196 L/day, CLint 0.0775 L/day, V1 2.68 L, V2 0.922 L, Q 1.03 L/day.
+A reported unit could not be converted (CLint), so that value has no SI equivalent. Extracted — obinutuzumab: CL 0.196 L/day, CLint 0.0775 L/day, V1 2.68 L, V2 0.922 L, Q 1.03 L/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of kdes: this record has none, the second reading 0.0291. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Digoxin bioavailability and lag time were assumed, not estimated, because the record used library placeholders instead of paper values.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Nagaraja2000_reference" status="needs_review" stale="false" population="Korean patients" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Nagaraja NV, Park YJ, Jeon S, Sands CD, Derendorf H. Population pharmacokinetics
 
 ### Reviewer guidance
 
-**Digoxin bioavailability and lag time were assumed, not estimated, because the record used library placeholders instead of paper values.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record contains no extracted values for bioavailability F or Tlag, so standard library defaults were applied. Consequently, the simulated digoxin profile relies on assumptions not supported by the source data. Additionally, the record was built from the abstract alone, so reported summary statistics stand in for a fitted model. Extracted — digoxin: CL 4.4 l/h, V 535 l, kabs 2.29 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — digoxin: CL 4.4 l/h, V 535 l, kabs 2.29 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has digoxin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

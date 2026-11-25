@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Warfarin metabolism to R-warfarin and S-warfarin lacks defined interconversion parameters, rendering these metabolites unreachable in the model structure.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="warfarin" model-id="Warfarin_Lane2012_s_warfarin_8975_estimate" status="rejected" stale="false" population="patients on long-term warfarin therapy" measured-compound="R-warfarin and S-warfarin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Lane S, Al-Zubiedi S, Hatch E, Matthews I, Jorgensen AL, Deloukas P et al. The p
 
 ### Reviewer guidance
 
-**Warfarin metabolism to R-warfarin and S-warfarin lacks defined interconversion parameters, rendering these metabolites unreachable in the model structure.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model defines warfarin as a parent compound that interconverts into R-warfarin and S-warfarin, but the specific rate parameters for these links are missing. Without these metabolic rate constants, the system treats R-warfarin and S-warfarin as isolated compartments that cannot be reached from the dose input. Consequently, the structural check fails because these metabolites are orphaned from the primary drug elimination pathway. Extracted — warfarin: CL 0.149 l h-1, V 15.2 l; R-warfarin and S-warfarin: kabs 0.214 1/h, tlag 1.29 h.
+Extracted — warfarin: CL 0.149 l h-1, V 15.2 l; R-warfarin and S-warfarin: kabs 0.214 1/h, tlag 1.29 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has R-warfarin and S-warfarin, the second reading warfarin; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

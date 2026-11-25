@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Bleomycin intercompartmental clearance was rejected because its unit min/ml contradicts required volume/time dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit min/ml ([time] / [length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Alberts1978_m_m_30_u" status="rejected" stale="false" population="adults" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Alberts DS, Chen HS, Liu R, Himmelstein KJ, Mayersohn M, Perrier D et al. Bleomy
 
 ### Reviewer guidance
 
-**Bleomycin intercompartmental clearance was rejected because its unit min/ml contradicts required volume/time dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit min/ml ([time] / [length] ** 3) vs [length] ** 3 / [time].**
 
-The record lists an apparent intercompartmental clearance of 226.0 min/ml, which presents an incompatible dimensional conflict. A separate volume of distribution for younger patients (32.17 L) was recorded but not flagged in the primary rejection. A second reader suggested alternative values for the clearance and additional half-lives not present in the current record. Extracted — bleomycin: t1/2z 21.2 min, Q 226 min/ml, Vnorm 23.3 L/M2, CL 70 ml/min, V 32.2 L.
+A reported unit could not be converted (Q), so that value has no SI equivalent. Extracted — bleomycin: t1/2z 21.2 min, Q 226 min/ml, Vnorm 23.3 L/M2, CL 70 ml/min, V 32.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cxt mu].parameter_id`: this record has Q30, the second reading Q88; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

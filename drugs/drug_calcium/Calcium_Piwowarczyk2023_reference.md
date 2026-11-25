@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record is disputed because calcium’s absorption rate constant is 0.319 1/h, versus 0.284 1/h from the second reader.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="Calcium" model-id="Calcium_Piwowarczyk2023_reference" status="needs_review" stale="false" population="" measured-compound="calcium" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Piwowarczyk P, Szczukocka M, Cios W, Okuńska P, Raszewski G, Borys M et al. Pop
 
 ### Reviewer guidance
 
-**The record is disputed because calcium’s absorption rate constant is 0.319 1/h, versus 0.284 1/h from the second reader.**
+**cross_check_disputed; x1_cross_check.**
 
-The model-builder deviations include defaulting the absorption lag time rather than using an explicit estimate, and assuming F=1 and Fm=1 with no molar correction for the apparent parameterization. Other disputed values have no pharmacokinetic meanings stated in the record, so their implications cannot be established. Extracted — calcium: CL/F 1.15 L/h, V/F 6.62 L, kabs 0.319 1/h.
+Extracted — calcium: CL/F 1.15 L/h, V/F 6.62 L, kabs 0.319 1/h.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q22: this record has none, the second reading 2.55; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (3 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (3 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (glm-5.3-flash) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

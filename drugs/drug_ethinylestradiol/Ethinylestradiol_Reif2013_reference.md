@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the total clearance parameter for ethinylestradiol was assigned an implausible value of 20.8.
+> C8 unreachable/orphan compartment or unlinked metabolite; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="ethinylestradiol" model-id="Ethinylestradiol_Reif2013_reference" status="rejected" stale="false" population="healthy young women" measured-compound="ethinylestradiol" parameterization="apparent" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Reif S, Snelder N, Blode H. Characterisation of the pharmacokinetics of ethinyle
 
 ### Reviewer guidance
 
-**The model was rejected because the total clearance parameter for ethinylestradiol was assigned an implausible value of 20.8.**
+**C8 unreachable/orphan compartment or unlinked metabolite; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record lists a total clearance value of 20.8 without a specified unit, which contradicts the apparent clearance estimate of 3.52 l/h. A second reader found this total clearance field to be null, confirming the discrepancy. Additionally, a covariate shift for apparent clearance resulted in a negative value of -6.55 l/h, which is physically impossible. Extracted — ethinylestradiol: CL/F -6.55 l/h, V2/F 51.6 L, V3/F 204 L, Q3/F 17.5 l/h, kabs 2.18 1/h, tlag 0.372 h, Fab 1, CLnorm 0.672 l/h, … (+1).
+Extracted — ethinylestradiol: CL/F -6.55 l/h, V2/F 51.6 L, V3/F 204 L, Q3/F 17.5 l/h, kabs 2.18 1/h, tlag 0.372 h, Fab 1, CLnorm 0.672 l/h, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl_age: this record has 20.8, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

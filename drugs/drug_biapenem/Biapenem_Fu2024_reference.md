@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the paper does not name biapenem in its title or abstract, and the second reader disputed the verdict with a 0.75 agreement ratio.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Fu2024_reference" status="rejected" stale="false" population="" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Fu G, Sun W, Tan Z, Liang B, Cai Y. An insight into pharmacokinetics and dose op
 
 ### Reviewer guidance
 
-**The record was rejected because the paper does not name biapenem in its title or abstract, and the second reader disputed the verdict with a 0.75 agreement ratio.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The relevance screen confirmed the paper subject is another drug, as neither the title nor the abstract mentions biapenem. A second reader disagreed with the verdict, showing an agreement ratio of 0.75 with zero readers concurring. The reviewer also identified discrepancies in extracted values, where this record lists 58.3 while the second reader recorded null for one parameter and 18.751 versus 18 for another. Extracted — biapenem: CL 5.28 L h−1, V 10.9 L.
+Extracted — biapenem: CL 5.28 L h−1, V 10.9 L.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q17: this record has 58.3, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.75 (6 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (6 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (glm-5.3-flash) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

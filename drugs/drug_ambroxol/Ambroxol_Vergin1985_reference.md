@@ -7,16 +7,16 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption rate constant was not reported in the abstract-only source, forcing reliance on library defaults.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="ambroxol" model-id="Ambroxol_Vergin1985_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="ambroxol" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="ambroxol" model-id="Ambroxol_Vergin1985_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="ambroxol" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Vergin H, Bishop-Freudling GB, Miczka M, Nitsche V, Strobel K, Matzkies F. [The pharmacokinetics and bioequivalence of various dosage forms of ambroxol]. Arzneimittel-Forschung 35(10):1591–1595 (1985).
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = 12.
+**Population:** healthy volunteers · condition healthy · age group adult · n = 12.
 
 ## Model
 
@@ -38,7 +38,7 @@ Vergin H, Bishop-Freudling GB, Miczka M, Nitsche V, Strobel K, Matzkies F. [The 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,19 +48,19 @@ Vergin H, Bishop-Freudling GB, Miczka M, Nitsche V, Strobel K, Matzkies F. [The 
 
 ### Reviewer guidance
 
-**Absorption rate constant was not reported in the abstract-only source, forcing reliance on library defaults.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record uses placeholder values for absorption parameters that are not supported by the extracted paper data. A second reader failed to identify the measured compound or any of the reported pharmacokinetic parameters. Consequently, the extracted clearance, half-life, and volume values lack independent validation. Extracted — ambroxol: t1/2z 3.72 h, V/F 1.52 l/kg, CL 565 ml/min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ambroxol: t1/2z 3.72 h, V/F 1.52 l/kg, CL 565 ml/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ambroxol, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| terminal elimination half-life | `Q57` · t1/2z | 3.72 | h | 1.339e+04 | s | h | llm (0.6) | Vergin_1985:abstract |
+| terminal elimination half-life | `Q57` · t1/2z | 3.72 | h | 1.339e+04 | s | h | half_life_rule (0.95) | Vergin_1985:abstract |
 | apparent volume of distribution | `Q76` · V/F | 1.52 | l/kg | 0.1064 | m3 | l/kg | exact (1) | Vergin_1985:abstract |
 | total plasma clearance | `Q22` · CL | 565 | ml/min | 9.417e-06 | m3/s | ml/min | llm_confirmed (0.6) | Vergin_1985:abstract |
 
@@ -80,8 +80,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=ambroxol
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - derived CL/F=19.8255 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
@@ -89,27 +87,14 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>8 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 1.52 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` |  | 1.52 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[terminal elimination half-life]` | 3.72 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[terminal elimination half-life]` |  | 3.72 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total plasma clearance]` | 565 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total plasma clearance]` |  | 565 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | ambroxol | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | ambroxol | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -144,7 +129,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,7 +145,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ambroxol/Ambroxol_Vergin1985_reference/Ambroxol_Vergin1985_reference_modelica.zip" download>Ambroxol_Vergin1985_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ambroxol/Ambroxol_Vergin1985_reference/Ambroxol_Vergin1985_reference_modelica.zip" download>Ambroxol_Vergin1985_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ambroxol/Ambroxol_Vergin1985_reference/Ambroxol_Vergin1985_reference_fmi.zip" download>Ambroxol_Vergin1985_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ambroxol/Ambroxol_Vergin1985_reference/Ambroxol_Vergin1985_reference_matlab.zip" download>Ambroxol_Vergin1985_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ambroxol/Ambroxol_Vergin1985_reference/Ambroxol_Vergin1985_reference_matlab_simbio.zip" download>Ambroxol_Vergin1985_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
@@ -223,4 +208,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bambroxol%5D%20Ambroxol_Vergin1985_reference&body=Drug%3A%20ambroxol%0ARecord%3A%20Ambroxol_Vergin1985_reference%0APaper%3A%20Vergin_1985%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ambroxol/Ambroxol_Vergin1985_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 13:32 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 17:36 UTC</sub>

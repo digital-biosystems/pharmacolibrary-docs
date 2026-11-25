@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The source paper does not study captopril, so the extracted clearance of 3.31 L/h is not a valid parameter estimate for this drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="captopril" model-id="Captopril_Hu2025_reference" status="rejected" stale="false" population="" measured-compound="captopril" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Hu L, Wang C, Huang S, Tang X, Li Y. A Systematic Review of Population Pharmacok
 
 ### Reviewer guidance
 
-**The source paper does not study captopril, so the extracted clearance of 3.31 L/h is not a valid parameter estimate for this drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The record cites Hu_2025 as a review reference, but the identity check determined the paper's subject is a different drug. Neither the title nor the abstract mentions captopril, causing the relevance screen to reject the paper. Consequently, the recorded clearance value of 3.31 L/h and volume of 116.5178 L lack valid source attribution. Extracted — captopril: CL 3.31 L/h, V 117 L.
+Extracted — captopril: CL 3.31 L/h, V 117 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q40: this record has none, the second reading 80.8. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -121,7 +121,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.8 (4 of 5 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

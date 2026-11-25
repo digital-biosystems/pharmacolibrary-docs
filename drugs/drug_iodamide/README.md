@@ -40,7 +40,7 @@ Iodamide is an iodinated X-ray contrast medium used for imaging the uterus and f
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:10 | 2:49 | 1/0/0 | 0/0/0 | 0/0/0 | 14,994/924 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 23:16 | 0:04 | 1/0/0 | 0/0/0 | 0/0/0 | 3,502/152 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -55,22 +55,29 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Difazio_1978.pdf` | Difazio LT et al., Pharmacokinetics of iodamide in normal…, Journal of clinical pharmac… (1978) | popPK | 8 | [10.1002/j.1552-4604.1978.tb01558.x](https://doi.org/10.1002/j.1552-4604.1978.tb01558.x) | [338644](https://pubmed.ncbi.nlm.nih.gov/338644) | Human PK study of iodamide with two-compartment model and half-lives reported in abstract, but full parameter values (CL, V) likely in tables not provided. |
+| `Zurth_1984.pdf` | Zurth C, Mechanism of renal excretion of various…, Investigative radiology (1984) | popPK | 8 | [10.1097/00004424-198403000-00006](https://doi.org/10.1097/00004424-198403000-00006) | [6533099](https://pubmed.ncbi.nlm.nih.gov/6533099) | The study reports renal clearance of iodamide in rabbits, providing quantitative PK parameters for the subject drug, though the specific numeric values are in figures/tables not fully detailed in the text. |
 
-<sub>queue written 2026-10-07 22:08 UTC</sub>
+<sub>queue written 2026-11-23 23:16 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bourin_1986 | irrelevant | 1 | 0 | The subject drug is ioxaglate; iodamide is only mentioned as a comparator, and no numeric PK values appear in the evidence. |
-| popPK | Owen_1981 | irrelevant | 0 | 0 | Clinical urography comparison with no PK disposition parameters or numeric values reported. |
-| popPK | Owen_1983 | irrelevant | 0 | 0 | Clinical urography imaging comparison with no PK disposition parameters or numeric CL/V values reported. |
-| popPK | Zurth_1984 | relevant | 4 | 3 | Renal clearance of iodamide measured in rabbits with comparative values, but no full PK parameters (CL/V, half-life) and numeric values not shown in the evidence. |
+| popPK | Bourin_1986 | irrelevant | 0 | 0 | The study is about ioxaglate, and iodamide is only mentioned as a comparator without providing its PK parameters. |
+| PGx | Bourin_1986 | not_relevant | 0 | 0 | The paper studies ioxaglate (not iodamide) and renal failure status, containing no information on genetic variants or pharmacogenomics. |
+| popPK | Caprino_1997 | irrelevant | 0 | 0 | The study investigates in vitro endothelial compatibility (ADPase/t-PA release) and does not report pharmacokinetic parameters for iodamide. |
+| PGx | Caprino_1997 | not_relevant | 0 | 0 | The paper describes the pharmacodynamic effects of iodamide on bovine endothelium in vitro but does not report any pharmacogenomic effects or gene variant interactions. |
+| PGx | Difazio_1978 | not_relevant | 0 | 0 | The study investigates the effect of renal impairment (disease state) on pharmacokinetics, not genetic variants or genotypes. |
+| popPK | Owen_1981 | irrelevant | 0 | 0 | The study is a comparative clinical trial focused on urographic performance scores and safety (side effects, blood pressure, ECG) rather than pharmacokinetic modeling or quantitative disposition parameters like clearance or volume for iodamide. |
+| PGx | Owen_1981 | not_relevant | 0 | 0 | The paper reports a comparative study of contrast media pharmacodynamics and safety in a general clinical population, with no mention of genetic variants or genotypes. |
+| popPK | Owen_1983 | irrelevant | 0 | 0 | The study focuses on the comparative urographic imaging performance and side effects of iodamide, not its pharmacokinetic parameters. |
+| PGx | Owen_1983 | not_relevant | 0 | 0 | The paper compares two drugs and their effects based on renal function (creatinine clearance) but does not investigate gene variants or genotypes. |
+| popPK | Zurth_1984 | relevant | 8 | 2 | The study reports renal clearance of iodamide in rabbits, providing quantitative PK parameters for the subject drug, though the specific numeric values are in figures/tables not fully detailed in the text. |
+| PGx | Zurth_1984 | not_relevant | 0 | 0 | The study investigates renal excretion mechanisms of contrast agents in rabbits and does not involve any genetic variants or pharmacogenomic analysis. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biodamide%5D&body=Drug%3A%20iodamide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iodamide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 22:08 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 23:14 UTC</sub>

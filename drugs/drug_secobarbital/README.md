@@ -18,6 +18,12 @@ Secobarbital is a short-acting barbiturate used to treat insomnia. It is adminis
 
 _not available_
 
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Wong_1984_36Cl_efflux](drugs/drug_secobarbital/pd_Wong_1984_36Cl_efflux.md) | 36Cl- efflux ← secobarbital · direct Emax (saturable) effect | — | Wong EH et al., gamma-Aminobutyric acid activation of 3…, Brain research (1984) | [10.1016/0006-8993(84)91213-7](https://doi.org/10.1016/0006-8993(84)91213-7) |
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -30,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:18 | 0:41 | 0/0/0 | 0/0/0 | 0/0/0 | 19,878/678 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 05:39 | 0:03 | 0/0/0 | 1/0/0 | 0/0/0 | 3,823/189 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -41,27 +47,33 @@ _not available_
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Verpooten_1982.pdf` | Verpooten GA et al., Prediction of the efficacy of hemoperfu…, Archives of toxicology. Sup… (1982) | popPK | 7 | [10.1007/978-3-642-68511-8_54](https://doi.org/10.1007/978-3-642-68511-8_54) | [6954915](https://pubmed.ncbi.nlm.nih.gov/6954915) | Secobarbital PK (two-compartment model) studied in intoxicated patients, but no numeric parameter values appear in the evidence. |
 | `Hartley_1989.pdf` | Hartley DM et al., Delayed rescue of N-methyl-D-aspartate…, The Journal of pharmacology… (1989) | pd | 5 |  | [2569534](https://www.ncbi.nlm.nih.gov/pubmed/2569534) | metadata signals extractable PD data (EC50) |
 | `Wong_1984.pdf` | Wong EH et al., gamma-Aminobutyric acid activation of 3…, Brain research (1984) | pd | 4 | [10.1016/0006-8993(84)91213-7](https://doi.org/10.1016/0006-8993(84)91213-7) | [6331574](https://www.ncbi.nlm.nih.gov/pubmed/6331574) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-06 21:18 UTC</sub>
+<sub>queue written 2026-11-24 05:39 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chan_1994 | irrelevant | 0 | 0 | Secobarbital is only a co-administered enzyme inducer altering warfarin PK; no secobarbital disposition parameters are reported. |
-| popPK | Hartley_1989 | irrelevant | 0 | 0 | Secobarbital is only a co-applied test agent in an in-vitro neuroprotection assay; no PK parameters reported. |
-| popPK | Login_1998 | irrelevant | 0 | 0 | Secobarbital is only used as a co-administered GabaA modulator in a rat neurochemistry assay; no PK parameters reported. |
-| PGx | Sakuma_1999 | not_relevant | 2 | 3 | Secobarbital is only used as a CYP1A2 inducer in vitro; no gene variant effect on secobarbital PK/PD is reported. |
-| popPK | Verpooten_1982 | relevant | 7 | 2 | Secobarbital PK (two-compartment model) studied in intoxicated patients, but no numeric parameter values appear in the evidence. |
-| popPK | Wong_1984 | irrelevant | 0 | 0 | In-vitro mechanistic study of GABA/36Cl- flux in rat hippocampal slices; secobarbital is only a co-applied agent with no PK parameters. |
-| popPK | Yost_1993 | irrelevant | 0 | 0 | In-vitro electrophysiology study of receptor inhibition; no PK disposition parameters for secobarbital. |
+| popPK | Chan_1994 | irrelevant | 1 | 0 | The study focuses on warfarin pharmacokinetics and pharmacodynamics, where secobarbital is used only as a metabolic enzyme inducer/co-administered drug rather than the subject drug. |
+| PGx | Chan_1994 | not_relevant | 0 | 0 | The paper investigates warfarin pharmacokinetics/pharmacodynamics, and does not report a pharmacogenomic effect on a PK/PD parameter for secobarbital. |
+| popPK | Hartley_1989 | irrelevant | 0 | 0 | The paper is an in-vitro neuroprotection study where secobarbital is used only as a negative control agent, not as a subject for pharmacokinetic parameter estimation. |
+| PGx | Hartley_1989 | not_relevant | 0 | 0 | The paper does not report any pharmacogenomic effect on secobarbital's pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Login_1998 | irrelevant | 0 | 0 | The study is a mechanistic in vitro investigation of GABA receptor action on acetylcholine release in rat striatal slices, where secobarbital is used only as a modulator, not as the subject drug for PK parameter measurement. |
+| PGx | Login_1998 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of muscimol and secobarbital in rat striatal slices regarding acetylcholine release and does not involve human pharmacogenomics or genetic variants. |
+| popPK | Sakuma_1999 | irrelevant | 0 | 0 | The study focuses on the induction of CYP1A2 expression by barbiturates in mice and does not report pharmacokinetic parameters for secobarbital. |
+| PGx | Sakuma_1999 | not_relevant | 1 | 2 | The paper studies the induction of CYP1A2 by secobarbital as an inducer, not the effect of a genetic variant on the PK/PD of secobarbital. |
+| popPK | Verpooten_1982 | relevant | 8 | 0 | The paper reports that a two-compartment model was accepted for secobarbital in a clinical study, but no specific numeric PK parameters (CL, V, etc.) are present in the provided evidence. |
+| PGx | Verpooten_1982 | not_relevant | 0 | 0 | The paper discusses the pharmacokinetics of secobarbital in the context of hemoperfusion and hemodialysis in severe poisoning, but does not report any pharmacogenomic effects (gene variants/genotypes) on its PK or PD parameters. |
+| popPK | Wong_1984 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic pharmacology investigation of chloride ion flux and GABA receptor interactions, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Wong_1984 | not_relevant | 0 | 0 | The study describes the pharmacodynamic effect of secobarbital on GABA receptors in a rat model but does not investigate any genetic variants or genotypes. |
+| popPK | Yost_1993 | irrelevant | 0 | 0 | This is an in-vitro electrophysiology study examining the mechanism of action (inhibition of nAChR) of secobarbital, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PGx | Yost_1993 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of secobarbital on nicotinic acetylcholine receptors in an *in vitro* oocyte model using site-directed mutagenesis, rather than reporting human pharmacogenomic effects on PK or PD parameters. |
 
 
 </details>

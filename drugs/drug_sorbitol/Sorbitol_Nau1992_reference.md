@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because sorbitol’s Cmax of 3116 mg/1, clearance of 31.7 1/hr, and terminal half-life of 15.4 1 have units inconsistent with concentration, clearance, and time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit mg/1 ([mass]) vs [mass] / [length] ** 3; Q22 unit 1/hr (1 / [time]) vs [length] ** 3 / [time]; Q57 unit 1 (dimensionless) vs [time].
 
 <div class="pk-model-meta" hidden drug="sorbitol" model-id="Sorbitol_Nau1992_reference" status="rejected" stale="false" population="adults with brain edema due to cerebrovascular disease" measured-compound="sorbitol" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Nau R, Dreyhaupt T, Kolenda H, Prange HW. Low blood-to-cerebrospinal fluid passa
 
 ### Reviewer guidance
 
-**The record was rejected because sorbitol’s Cmax of 3116 mg/1, clearance of 31.7 1/hr, and terminal half-life of 15.4 1 have units inconsistent with concentration, clearance, and time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit mg/1 ([mass]) vs [mass] / [length] ** 3; Q22 unit 1/hr (1 / [time]) vs [length] ** 3 / [time]; Q57 unit 1 (dimensionless) vs [time].**
 
-The reported Cmax unit has mass but lacks the volume dimension required for concentration; the clearance unit is inverse time rather than volume per time, and the terminal half-life unit is dimensionless rather than time. The record was built from the abstract alone, so its summary statistics stand in for a fitted model. The second reader supplied no corresponding values for the reported parameters, leaving those values uncorroborated. Extracted — sorbitol: Cmax 3.12e+03 mg/1, AUC 33.8 mg*h/L, CL 31.7 1/hr, t1/2z 15.4 1, t1/2α 0.1 hour.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sorbitol: Cmax 3.12e+03 mg/1, AUC 33.8 mg*h/L, CL 31.7 1/hr, t1/2z 15.4 1, t1/2α 0.1 hour.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has 33.8, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

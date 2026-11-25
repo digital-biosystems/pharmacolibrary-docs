@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 18:02 | 0:34 | 0/0/0 | 0/0/0 | 0/0/0 | 12,372/371 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-24 08:25 | 0:04 | 0/0/0 | 0/0/0 | 0/0/0 | 3,819/144 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -41,23 +41,32 @@ _not available_
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Csajka_2005.pdf` | Csajka C et al., The use of a sum of inverse Gaussian fu…, Pharmaceutical research (2005) | popPK | 8 | [10.1007/s11095-005-5266-8](https://doi.org/10.1007/s11095-005-5266-8) | [16078132](https://pubmed.ncbi.nlm.nih.gov/16078132) | Veralipride is a subject drug in a population PK absorption-modeling analysis, but no numeric parameter values appear in the evidence (they reside in the referenced published studies/figures). |
-| `Godfrey_2011.pdf` | Godfrey KR et al., Modelling the Double Peak Phenomenon in…, Computer methods and progra… (2011) | popPK | 8 | [10.1016/j.cmpb.2010.03.007](https://doi.org/10.1016/j.cmpb.2010.03.007) | [20381191](https://pubmed.ncbi.nlm.nih.gov/20381191) | Compartmental PK models of veralipride (double-peak absorption) are the subject, but no numeric parameter values appear in the evidence; the data likely live in figures/supplementary material not provided. |
-| `Plusquellec_1994.pdf` | Plusquellec Y et al., Pharmacokinetic compartmental model wit…, Arzneimittel-Forschung (1994) | popPK | 5 |  | [8024648](https://pubmed.ncbi.nlm.nih.gov/8024648) | A compartmental absorption model for veralipride is presented, but only simulated curves are given; no numeric PK parameter values appear in the evidence. |
+| `Yu_1997.pdf` | Yu Z et al., DeMonS--a new deconvolution method for…, Biopharmaceutics & drug dis… (1997) | popPK | 7 | [10.1002/(sici)1099-081x(199708)18:6&lt;475::aid-bdd33&gt;3.0.co;2-4](https://doi.org/10.1002/(sici)1099-081x(199708)18:6<475::aid-bdd33>3.0.co;2-4) | [9267681](https://pubmed.ncbi.nlm.nih.gov/9267681) | The paper describes a PK study on veralipride but the specific numeric parameter values are not present in the provided text. |
 
-<sub>queue written 2026-10-06 18:02 UTC</sub>
+<sub>queue written 2026-11-24 08:25 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Csajka_2005 | relevant | 8 | 2 | Veralipride is a subject drug in a population PK absorption-modeling analysis, but no numeric parameter values appear in the evidence (they reside in the referenced published studies/figures). |
-| popPK | Godfrey_2011 | relevant | 8 | 1 | Compartmental PK models of veralipride (double-peak absorption) are the subject, but no numeric parameter values appear in the evidence; the data likely live in figures/supplementary material not provided. |
-| popPK | Plusquellec_1994 | relevant | 5 | 2 | A compartmental absorption model for veralipride is presented, but only simulated curves are given; no numeric PK parameter values appear in the evidence. |
+| popPK | Basavilvazo-Rodríguez_2012 | irrelevant | 1 | 0 | The paper is a clinical consensus statement regarding prescribing guidelines and does not report original quantitative pharmacokinetic parameter values. |
+| PGx | Basavilvazo-Rodríguez_2012 | not_relevant | 0 | 0 | The paper is a clinical consensus guideline regarding the prescription of veralipride for climacteric symptoms and does not report any pharmacogenomic studies or gene-drug interactions. |
+| popPK | Csajka_2005 | irrelevant | 2 | 0 | The paper is a methodological study demonstrating deconvolution techniques on previously published data, and no quantitative PK parameter values for veralipride are reported in the provided evidence. |
+| PGx | Csajka_2005 | not_relevant | 0 | 0 | The paper focuses on a mathematical method for deconvolution of absorption profiles and does not investigate any genetic variants or their impact on pharmacokinetics/pharmacodynamics. |
+| popPK | Godfrey_2011 | relevant | 8 | 0 | The study describes compartmental PK modeling of veralipride to address the double peak phenomenon, but no specific numeric parameter values (CL, V, etc.) are present in the provided evidence. |
+| PGx | Godfrey_2011 | not_relevant | 0 | 0 | The paper models the double peak phenomenon in the pharmacokinetics of veralipride but does not involve any genetic variants, genotypes, or pharmacogenomic effects. |
+| popPK | Grall_1982 | irrelevant | 0 | 0 | The paper reports on the clinical efficacy of veralipride in treating menopausal disorders but does not provide any pharmacokinetic parameter values. |
+| PGx | Grall_1982 | not_relevant | 0 | 0 | The paper reports a clinical efficacy trial for veralipride in menopausal patients but contains no information regarding genetic variants, genotypes, or pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Plusquellec_1994 | irrelevant | 5 | 0 | The paper presents a generalized theoretical model and simulated curves for veralipride, but does not report specific numeric pharmacokinetic parameters (CL, V, ka) from experimental data. |
+| PGx | Plusquellec_1994 | not_relevant | 0 | 0 | The paper describes a generalized pharmacokinetic compartmental model for absorption sites and does not report any pharmacogenomic effects or gene variant interactions. |
+| popPK | Vasse_1985 | irrelevant | 0 | 0 | The paper is a behavioral pharmacology study in mice investigating stereotyped behaviors elicited by dopamine agonists, with no pharmacokinetic parameters reported for veralipride or any other drug. |
+| PGx | Vasse_1985 | not_relevant | 0 | 0 | The paper describes pharmacological interactions and behavioral effects in animal models, not pharmacogenomic effects of genetic variants on PK or PD parameters. |
+| popPK | Yu_1997 | relevant | 7 | 0 | The paper describes a PK study on veralipride but the specific numeric parameter values are not present in the provided text. |
+| PGx | Yu_1997 | not_relevant | 0 | 0 | The paper describes a numerical deconvolution method applied to veralipride data but contains no information on gene variants or pharmacogenomic effects. |
 
 
 </details>

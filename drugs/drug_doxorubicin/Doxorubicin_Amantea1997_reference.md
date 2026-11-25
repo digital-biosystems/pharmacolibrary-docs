@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The elimination rate constant for doxorubicin is reported as 53.3 hr, conflicting with the required inverse time unit for that structural parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit hr ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Amantea1997_reference" status="rejected" stale="false" population="adults with AIDS-related Kaposi&#39;s sarcoma" measured-compound="doxorubicin" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -56,13 +56,13 @@ Amantea MA, Forrest A, Northfelt DW, Mamelok R. Population pharmacokinetics and 
 
 ### Reviewer guidance
 
-**The elimination rate constant for doxorubicin is reported as 53.3 hr, conflicting with the required inverse time unit for that structural parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit hr ([time]) vs 1 / [time].**
 
-The record lists a terminal half-life of 53.3 hr, but the dimension check failed because hours represent time while the parameter requires a rate. Consequently, the unit could not be converted to the standard SI format, leaving the parameter without a valid numerical value. Extracted — doxorubicin: V1 2.29 L/m², Vss 2.94 L/m², Q 0.616 L/hr/m², CLm/F 0.0581 L/hr/m², t1/2α 4.45 hr, kel 53.3 hr, Cmax 8.57 µg/ml, AUC 28.2 µg/ml · hr.
+A reported unit could not be converted (kel), so that value has no SI equivalent. Extracted — doxorubicin: V1 2.29 L/m², Vss 2.94 L/m², Q 0.616 L/hr/m², CLm/F 0.0581 L/hr/m², t1/2α 4.45 hr, kel 53.3 hr, Cmax 8.57 µg/ml, AUC 28.2 µg/ml · hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has doxorubicin, the second reading pegylated-liposomal doxorubicin; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

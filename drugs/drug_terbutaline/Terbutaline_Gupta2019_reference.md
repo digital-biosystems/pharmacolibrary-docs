@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Terbutaline’s apparent oral clearance (CL/F) of 0.09 L/day was rejected because the paper is about another drug, not terbutaline.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="terbutaline" model-id="Terbutaline_Gupta2019_reference" status="rejected" stale="false" population="" measured-compound="terbutaline" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Gupta A, Pouliquen I, Austin D, Price RG, Kempsford R, Steinfeld J et al. Subcut
 
 ### Reviewer guidance
 
-**Terbutaline’s apparent oral clearance (CL/F) of 0.09 L/day was rejected because the paper is about another drug, not terbutaline.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The record says neither the paper’s title nor abstract names terbutaline, and the paper was rejected as irrelevant to this drug. The model builder defaulted the absorption lag time (Tlag) rather than using an explicit estimate, and assumed F=1 and Fm=1 with no molar correction. A second reader also disagreed about extracted parameter values, but their pharmacokinetic meanings are not provided. Extracted — terbutaline: CL/F 0.09 L/day, V/F 3.06 L, kabs 0.17 per day.
+Extracted — terbutaline: CL/F 0.09 L/day, V/F 3.06 L, kabs 0.17 per day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has none, the second reading 454.4; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.75 (9 of 12 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

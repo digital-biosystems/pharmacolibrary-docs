@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V03A&quot;,&quot;href&quot;:&quot;atc/V03A.md&quot;},{&quot;label&quot;:&quot;pralidoxime&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pralidoxime_Abbara2010_reference&quot;,&quot;label&quot;:&quot;Abbara_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pralidoxime/Pralidoxime_Abbara2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # pralidoxime
 
@@ -14,16 +15,25 @@ Pralidoxime is a cholinesterase reactivator and antidote used to treat organopho
 
 <small>Summary written by `qwen3.8-27b` from [Wikidata Q2735334](https://www.wikidata.org/wiki/Q2735334), [Wikipedia](https://en.wikipedia.org/wiki/Pralidoxime?oldid=1377012930) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
 
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| pralidoxime | parent | 137.159 | C7H9N2O | DrugBank | [5353894](https://pubchem.ncbi.nlm.nih.gov/compound/5353894) | Abbara_2010 |
+
+## Start here
+
+> **Abbara_2010_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy volunteers. [Run it in the simulator](drugs/drug_pralidoxime/Pralidoxime_Abbara2010_reference.md?tab=Simulation) · [record](drugs/drug_pralidoxime/Pralidoxime_Abbara2010_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
-_not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Houzé_2010_ChE_activity_2](drugs/drug_pralidoxime/pd_Houz_2010_ChE_activity_2.md) | blood cholinesterase activity (in vivo) ← pralidoxime · indirect response — drug stimulates the production of blood cholinesterase activity (in vivo) | — | Houzé P et al., Pharmacokinetics and toxicodynamics of…, Toxicological sciences : an… (2010) | [10.1093/toxsci/kfq152](https://doi.org/10.1093/toxsci/kfq152) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Houzé_2010_ChE_activity](drugs/drug_pralidoxime/pd_Houz_2010_ChE_activity.md) | whole-blood cholinesterase activity (diethylparaoxon-inactivated, in vitro reactivation) ← pralidoxime · indirect response — drug stimulates the production of whole-blood cholinesterase activity (diethylparaoxon-inactivated, in vitro reactivation) | — | Houzé P et al., Pharmacokinetics and toxicodynamics of…, Toxicological sciences : an… (2010) | [10.1093/toxsci/kfq152](https://doi.org/10.1093/toxsci/kfq152) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub> | [Abbara_2010_reference](drugs/drug_pralidoxime/Pralidoxime_Abbara2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Abbara C et al., Pharmacokinetic analysis of pralidoxime…, British journal of pharmaco… (2010) | [10.1111/j.1476-5381.2010.01007.x](https://doi.org/10.1111/j.1476-5381.2010.01007.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,46 +47,44 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:23 | 0:32 | 0/0/0 | 2/0/0 | 0/0/0 | 23,176/1,701 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-24 04:45 | 0:03 | 1/0/0 | 0/0/0 | 0/0/0 | 4,120/210 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 11 matched, 11 returned
-- **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **screened:** 1  ·  **relevant:** 1
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Green_1986.pdf` | Green MD et al., Pharmacokinetics of pralidoxime chlorid…, Life sciences (1986) | popPK | 8 | [10.1016/0024-3205(86)90405-4](https://doi.org/10.1016/0024-3205(86)90405-4) | [3784779](https://pubmed.ncbi.nlm.nih.gov/3784779) | Rat PK study with compartmental model parameters (Vd, CL, ka, k10) but numeric values are not shown in the abstract text. |
-| `Houzé_2010.pdf` | Houzé P et al., Pharmacokinetics and toxicodynamics of…, Toxicological sciences : an… (2010) | popPK | 6 | [10.1093/toxsci/kfq152](https://doi.org/10.1093/toxsci/kfq152) | [20498006](https://pubmed.ncbi.nlm.nih.gov/20498006) | PK-TD modeling of pralidoxime in rats, but the evidence only gives an in vitro EC50 (4.67 mg/l); actual PK parameters (CL, V) are not shown and likely reside in the model description/figures not provided. |
-| `Jeevarathinam_1988.pdf` | Jeevarathinam K et al., Pharmacokinetics of pralidoxime chlorid…, Die Pharmazie (1988) | popPK | 6 |  | [3393576](https://pubmed.ncbi.nlm.nih.gov/3393576) | Rat PK study of pralidoxime with two-compartment model, but no numeric parameter values (half-life, CL, V) appear in the evidence text. |
-
-<sub>queue written 2026-10-07 19:23 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abbara_2009 | irrelevant | 2 | 0 | Pralidoxime is only a co-administered agent; the PK parameters reported (Cmax, AUC, compartmental models) are for diazepam/avizafone, not pralidoxime. |
-| popPK | Abbara_2010 | relevant | 9 | 4 | Human population PK (two-compartment, first/zero-order absorption) of pralidoxime is reported, but the key parameter values (Vc, Ke, K12, K21, Ka) are in Table 4/5 which are not included; only AUC values appear in the evidence. |
-| popPK | Capacio_2001 | irrelevant | 0 | 0 | The PK model and parameters are for diazepam, not pralidoxime, which is only a co-administered treatment agent. |
-| popPK | Eterović_2011 | irrelevant | 0 | 0 | In-vitro hippocampal slice efficacy study; pralidoxime is only a comparator with no PK parameters reported. |
-| popPK | Green_1986 | relevant | 8 | 4 | Rat PK study with compartmental model parameters (Vd, CL, ka, k10) but numeric values are not shown in the abstract text. |
-| popPK | Hong_2013 | irrelevant | 0 | 0 | The study reports PK parameters for MMB4 DMS, a different drug; pralidoxime is only mentioned as the current fielded comparator, with no pralidoxime PK data. |
-| popPK | Horn_2023 | irrelevant | 0 | 0 | In-vitro hepatotoxicity study with no PK disposition parameters for pralidoxime. |
-| popPK | Houzé_2010 | relevant | 6 | 3 | PK-TD modeling of pralidoxime in rats, but the evidence only gives an in vitro EC50 (4.67 mg/l); actual PK parameters (CL, V) are not shown and likely reside in the model description/figures not provided. |
-| popPK | Jeevarathinam_1988 | relevant | 6 | 3 | Rat PK study of pralidoxime with two-compartment model, but no numeric parameter values (half-life, CL, V) appear in the evidence text. |
-| popPK | Moeller_2019 | irrelevant | 0 | 0 | The study reports PK of ketamine/norketamine in rats; pralidoxime is only mentioned as part of the co-administered SOC, with no pralidoxime parameters. |
-| popPK | Reymond_2018 | irrelevant | 2 | 0 | PK modeling is of HI-6, not pralidoxime, which is only a comparator; no pralidoxime disposition parameters are reported. |
+| popPK | Abbara_2009 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for diazepam (and its prodrug), with pralidoxime only used as a co-administered agent in a formulation device; no PK data for pralidoxime itself are reported. |
+| PGx | Abbara_2009 | not_relevant | 0 | 0 | The study examines the PK of a different drug (diazepam/avizafone) in the presence of pralidoxime and does not report any pharmacogenomic effects on pralidoxime itself. |
+| PGx | Abbara_2010 | not_relevant | 0 | 0 | The paper reports the effect of co-administered drugs on pralidoxime PK, not a pharmacogenomic effect based on gene variants. |
+| popPK | Capacio_2001 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of diazepam in guinea pigs, with pralidoxime administered only as part of the standard treatment regimen without PK analysis. |
+| PGx | Capacio_2001 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of diazepam and seizure outcomes in guinea pigs, with no data on pralidoxime PK/PD or genetic effects. |
+| popPK | Eterović_2011 | irrelevant | 0 | 0 | The study focuses on the neuroprotective mechanism of a cembranoid against paraoxon in hippocampal slices, using pralidoxime only as a functional comparator without reporting any pharmacokinetic parameters. |
+| PGx | Eterović_2011 | not_relevant | 0 | 0 | Paper reports neuroprotection by a cembranoid against paraoxon; no pharmacogenomic effect on pralidoxime PK/PD parameters. |
+| popPK | Green_1986 | relevant | 10 | 0 | The study reports the pharmacokinetic model and parameters for pralidoxime in rats, but no specific numeric values are provided in the text evidence. |
+| PGx | Green_1986 | not_relevant | 0 | 0 | The study focuses solely on dose-dependent pharmacokinetics in rats and does not involve gene variants or pharmacogenomics. |
+| popPK | Hong_2013 | irrelevant | 0 | 0 | The study characterizes the pharmacokinetics of the drug MMB4 (an oxime analogue) and does not report quantitative PK parameters for pralidoxime itself, which is only mentioned as the reference drug being replaced. |
+| PGx | Hong_2013 | not_relevant | 0 | 0 | The study examines the pharmacokinetics of MMB4, not pralidoxime, and does not report any pharmacogenomic effects. |
+| popPK | Horn_2023 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of hepatotoxicity and cytotoxicity (EC50) in HepaRG spheroids, not a pharmacokinetic study reporting disposition parameters like clearance or volume for pralidoxime. |
+| PGx | Horn_2023 | not_relevant | 0 | 0 | The paper investigates the general cytotoxicity of oximes in an in vitro liver model and does not report any genetic variants or their effect on pralidoxime pharmacokinetics or pharmacodynamics. |
+| popPK | Houzé_2010 | irrelevant | 3 | 2 | The study focuses on toxicodynamics (cholinesterase reactivation) and respiratory effects in rats, reporting an in-vitro EC50 but not providing explicit quantitative PK parameters (CL, V, half-life) for pralidoxime in the provided text. |
+| PGx | Houzé_2010 | not_relevant | 0 | 0 | The study investigates the pharmacokinetics and toxicodynamics of pralidoxime in rats but does not examine gene variants or pharmacogenomic effects on PK/PD parameters. |
+| popPK | Jeevarathinam_1988 | relevant | 9 | 0 | The study describes a two-compartment pharmacokinetic model for pralidoxime in rats, but no specific numeric parameter values (clearance, volume, etc.) are present in the provided evidence. |
+| PGx | Jeevarathinam_1988 | not_relevant | 0 | 0 | The paper reports pharmacokinetic and pharmacodynamic effects of pralidoxime chloride in rats, but it does not investigate how a gene variant, genotype, or phenotype modifies these effects; therefore, it is not pharmacogenomic. |
+| popPK | Moeller_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of ketamine, with pralidoxime mentioned only as a co-administered standard of care agent. |
+| PGx | Moeller_2019 | not_relevant | 0 | 0 | The study focuses on the pharmacokinetics of ketamine in rats and does not involve pralidoxime or any pharmacogenomic analysis. |
+| popPK | Reymond_2018 | irrelevant | 2 | 0 | The paper focuses on the efficacy of HI-6 vs. 2-PAM (pralidoxime) in poisoning models; PK analysis is explicitly performed for HI-6, not pralidoxime, and no PK parameters for pralidoxime are reported. |
+| PGx | Reymond_2018 | not_relevant | 0 | 0 | The study compares the efficacy and pharmacokinetics of two different oxime drugs (HI-6 vs. pralidoxime) in monkeys but does not report any pharmacogenomic effects or gene variants influencing pralidoxime. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpralidoxime%5D&body=Drug%3A%20pralidoxime%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pralidoxime/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 14:59 UTC</sub>

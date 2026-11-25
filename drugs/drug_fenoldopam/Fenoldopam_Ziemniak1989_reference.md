@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
 
-> The record contains only summary statistics and an unlinked metabolite, lacking the distribution volume and elimination parameters required for a compartmental model.
+> No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fenoldopam" model-id="Fenoldopam_Ziemniak1989_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="fenoldopam" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -47,13 +47,13 @@ Ziemniak JA, Boppana VK, Cyronak MJ, Stote RM. A retrospective analysis of fenol
 
 ### Reviewer guidance
 
-**The record contains only summary statistics and an unlinked metabolite, lacking the distribution volume and elimination parameters required for a compartmental model.**
+**No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The source text is abstract-only, so reported summary statistics stand in for a fitted model. The model structure lists fenoldopam-8-sulfate with no distribution volume or clearance to anchor its elimination. Consequently, the metabolite compartment is identified as an orphan with no valid path from the dose. Extracted — fenoldopam: CLR 129 ml/min, AUC 5.2 ng x hr/ml.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fenoldopam: CLR 129 ml/min, AUC 5.2 ng x hr/ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fenoldopam, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

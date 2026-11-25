@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;clopidogrel&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/&quot;},{&quot;label&quot;:&quot;Grafeneder_2024 \u00b7 hv&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;Curated (human-checked)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yousef2013_reference&quot;,&quot;label&quot;:&quot;Yousef_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yousef2013_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jung_2024_PRU&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Jung_2024_PRU.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Simon_2015_IPA&quot;,&quot;label&quot;:&quot;Simon_2015 \u00b7 IPA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Simon_2015_IPA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Jung_2024_CYP2C19_Q45&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45.md&quot;,&quot;status&quot;:&quot;Not simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clopidogrel_Jung2024_reference&quot;,&quot;label&quot;:&quot;Jung_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Jung2024_reference.md&quot;,&quot;status&quot;:&quot;Curated (human-checked)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Ma2014_reference&quot;,&quot;label&quot;:&quot;Ma_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Ma2014_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Yousef2013_reference&quot;,&quot;label&quot;:&quot;Yousef_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Yousef2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clopidogrel_Henrich2021_reference&quot;,&quot;label&quot;:&quot;Henrich_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/Clopidogrel_Henrich2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Jung_2024_PRU&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 PRU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Jung_2024_PRU.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Simon_2015_IPA&quot;,&quot;label&quot;:&quot;Simon_2015 \u00b7 IPA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pd_Simon_2015_IPA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pgx_Jung_2024_CYP2C19_Q45&quot;,&quot;label&quot;:&quot;Jung_2024 \u00b7 CYP2C19&quot;,&quot;group&quot;:&quot;PGx&quot;,&quot;href&quot;:&quot;drugs/drug_clopidogrel/pgx_Jung_2024_CYP2C19_Q45.md&quot;,&quot;status&quot;:&quot;Simulated \u00b7 quantitative&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Clopidogrel clearance and volume of distribution lack values, and the model's simulated peak concentration and terminal half-life do not match the paper's reported values.
+> No value for clopidogrel's clearance and volume of distribution; the model does not reproduce the paper's peak concentration (Cmax) (paper 3.3, model 0.00674) (+4 more).
 
 <div class="pk-model-meta" hidden drug="clopidogrel" model-id="Clopidogrel_Grafeneder2024_hv" status="model_quarantined" stale="false" population="hemodialysis patients and healthy volunteers" measured-compound="clopidogrel active metabolite" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -57,13 +57,13 @@ Grafeneder J, van Os W, Minichmayr IK, Kovacevic Miljevic KD, Reiter B, Säemann
 
 ### Reviewer guidance
 
-**Clopidogrel clearance and volume of distribution lack values, and the model's simulated peak concentration and terminal half-life do not match the paper's reported values.**
+**No value for clopidogrel's clearance and volume of distribution; the model does not reproduce the paper's peak concentration (Cmax) (paper 3.3, model 0.00674) (+4 more).**
 
-The record was held back because no specific estimates were provided for clopidogrel's clearance or volume of distribution, leaving the model without these essential parameters. Simulations produced a peak concentration of 0.006740436138330834 kg/m3, which does not align with the paper's reported Cmax values. Additionally, the simulated terminal half-life of 1.0525271548382622 hours differs significantly from the paper's reported half-life of 1.4583333333333333 hours. Extracted — clopidogrel: Cmax 1.9 ng/ml, Cmax_ratio 13.5, AUClast 160 ng/ml·min, t1/2z 87.5 min; pantoprazole: Cmax 12 µg/ml, AUClast 423 µg/ml·min, t1/2z 83.9 min, CL 81.9 ml/min, V 8.48e+03 ml.
+The model was built, but clopidogrel's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — clopidogrel: Cmax 1.9 ng/ml, Cmax_ratio 13.5, AUClast 160 ng/ml·min, t1/2z 87.5 min; pantoprazole: Cmax 12 µg/ml, AUClast 423 µg/ml·min, t1/2z 83.9 min, CL 81.9 ml/min, V 8.48e+03 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aucinf_clo [ng/ml min]: this record has none, the second reading 227; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -198,62 +198,62 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
 | T1_cmax | reference | skipped | 3.3 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
-| T1_cmax | reference | fail | 7.7e-06 | 0.00674 | 875.4 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | skipped | 51% | 0.00674 |  | unresolved concentration unit (exp 'lower', sim 'kg/m3') |
-| T1_cmax | reference | fail | 1.22e-05 | 0.00674 | 552.5 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 7.7e-06 | 0.00674 | 875.4 | reported 7.7 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | skipped |  | 0.00674 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | fail | 1.22e-05 | 0.00674 | 552.5 | reported 12.2 ng/ml→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 1.5 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 1.5 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 12.8 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
-| T1_cmax | reference | fail | 2.3e-06 | 0.00674 | 2931 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 7.7e-06 | 0.00674 | 875.4 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 2.47e-05 | 0.00674 | 272.9 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.22e-05 | 0.00674 | 552.5 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 2.3e-06 | 0.00674 | 2931 | reported 2.3 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 7.7e-06 | 0.00674 | 875.4 | reported 7.7 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 2.47e-05 | 0.00674 | 272.9 | reported 24.7 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.22e-05 | 0.00674 | 552.5 | reported 12.2 ng/ml→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 12.8 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 1.5 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
-| T1_cmax | reference | fail | 0.0096 | 0.00674 | 0.7021 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0029 | 0.00674 | 2.324 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.9e-06 | 0.00674 | 3548 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 3.1e-06 | 0.00674 | 2174 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.54e-06 | 0.00674 | 4377 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 7.6e-06 | 0.00674 | 886.9 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.02e-05 | 0.00674 | 660.8 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 2.21e-05 | 0.00674 | 305 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 2.48e-05 | 0.00674 | 271.8 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 3.545e-05 | 0.00674 | 190.1 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.22e-05 | 0.00674 | 552.5 | ng/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.22e-05 | 0.00674 | 552.5 | ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0096 | 0.00674 | 0.7021 | reported 9.6 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0029 | 0.00674 | 2.324 | reported 2.9 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.9e-06 | 0.00674 | 3548 | reported 1.9 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.1e-06 | 0.00674 | 2174 | reported 3.1 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.54e-06 | 0.00674 | 4377 | reported 1.54 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 7.6e-06 | 0.00674 | 886.9 | reported 7.6 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.02e-05 | 0.00674 | 660.8 | reported 10.2 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 2.21e-05 | 0.00674 | 305 | reported 22.1 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 2.48e-05 | 0.00674 | 271.8 | reported 24.8 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 3.545e-05 | 0.00674 | 190.1 | reported 35.45 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.22e-05 | 0.00674 | 552.5 | reported 12.2 ng/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.22e-05 | 0.00674 | 552.5 | reported 12.2 ng/ml→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 13.5 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 8.1 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 24.2 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 1.6 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 1.4 | 0.00674 |  | unresolved concentration unit (exp 'fold', sim 'kg/m3') |
-| T1_cmax | reference | fail | 0.012 | 0.00674 | 0.5617 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 0.0068 | 0.00674 | 0.9912 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0187 | 0.00674 | 0.3605 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0032 | 0.00674 | 2.106 | μg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0027 | 0.00674 | 2.497 | μg/ml→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | fail | 1.458 | 1.053 | 0.7217 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.117 | 1.053 | 0.4973 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.5867 | 1.053 | 1.794 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.235 | 1.053 | 0.8522 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.28 | 1.053 | 0.8223 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.167 | 1.053 | 0.4858 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.458 | 1.053 | 0.7217 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.367 | 1.053 | 0.7701 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.183 | 1.053 | 0.4821 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.363 | 1.053 | 0.772 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.3 | 1.053 | 0.4576 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.55 | 1.053 | 1.914 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.72 | 1.053 | 1.462 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.4 | 1.053 | 2.631 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.82 | 1.053 | 1.284 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.283 | 1.053 | 0.3206 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.398 | 1.053 | 0.7527 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 1.155 | 1.053 | 0.9113 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 0.955 | 1.053 | 1.102 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 3.25 | 1.053 | 0.3239 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.867 | 1.053 | 0.5639 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.167 | 1.053 | 0.4858 | min→SI vs simulated h |
+| T1_cmax | reference | fail | 0.012 | 0.00674 | 0.5617 | reported 12.0 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 0.0068 | 0.00674 | 0.9912 | reported 6.8 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0187 | 0.00674 | 0.3605 | reported 18.7 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0032 | 0.00674 | 2.106 | reported 3.2 μg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0027 | 0.00674 | 2.497 | reported 2.7 μg/ml→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | fail | 1.458 | 1.053 | 0.7217 | reported 87.5 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.117 | 1.053 | 0.4973 | reported 127.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.5867 | 1.053 | 1.794 | reported 35.2 min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.235 | 1.053 | 0.8522 | reported 74.1 min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.28 | 1.053 | 0.8223 | reported 76.8 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.167 | 1.053 | 0.4858 | reported 130.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.458 | 1.053 | 0.7217 | reported 87.5 min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.367 | 1.053 | 0.7701 | reported 82.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.183 | 1.053 | 0.4821 | reported 131.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.363 | 1.053 | 0.772 | reported 81.8 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.3 | 1.053 | 0.4576 | reported 138.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.55 | 1.053 | 1.914 | reported 33.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.72 | 1.053 | 1.462 | reported 43.2 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.4 | 1.053 | 2.631 | reported 24.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.82 | 1.053 | 1.284 | reported 49.2 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.283 | 1.053 | 0.3206 | reported 197.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.398 | 1.053 | 0.7527 | reported 83.9 min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 1.155 | 1.053 | 0.9113 | reported 69.3 min→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 0.955 | 1.053 | 1.102 | reported 57.3 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 3.25 | 1.053 | 0.3239 | reported 195.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.867 | 1.053 | 0.5639 | reported 112.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.167 | 1.053 | 0.4858 | reported 130.0 min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Peginterferon beta-1a record rejected for absorption and dialysis parameters having inverse time units instead of time or clearance, and an unreachable peripheral compartment.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit h À1 (1 / [time]) vs [time]; Q356 unit h À1 (1 / [time]) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="sampeginterferon beta-1a" model-id="SampeginterferonBeta1a_Hu2015v2_reference" status="rejected" stale="false" population="subjects with normal or impaired renal function" measured-compound="peginterferon beta-1a" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Hu X, Seddighzadeh A, Stecher S, Zhu Y, Goyal J, Matson M et al. Pharmacokinetic
 
 ### Reviewer guidance
 
-**Peginterferon beta-1a record rejected for absorption and dialysis parameters having inverse time units instead of time or clearance, and an unreachable peripheral compartment.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit h À1 (1 / [time]) vs [time]; Q356 unit h À1 (1 / [time]) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The absorption half-life and dialysis clearance parameters are both labeled with units of h⁻¹, conflicting with their physical definitions as a duration and a clearance rate. Additionally, the model includes a second compartment that is not linked to the central compartment, making it unreachable from the dose. Extracted — peginterferon beta-1a: CL 2.12 L/h, V 229 L, t1/2ka 0.0448 h À1, CL_HD 0.0454 h À1, V2 46.
+A reported unit could not be converted (t1/2ka  and CL_HD), so that value has no SI equivalent. None of the extracted parameters is sampeginterferon beta 1a's own; they describe peginterferon beta-1a. Extracted — peginterferon beta-1a: CL 2.12 L/h, V 229 L, t1/2ka 0.0448 h À1, CL_HD 0.0454 h À1, V2 46.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[dka].parameter_id`: this record has Q95, the second reading Q49; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

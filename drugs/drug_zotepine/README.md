@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span> | [Zhuang_2025_Kv](drugs/drug_zotepine/pd_Zhuang_2025_Kv.md) | Kv current inhibition ← zotepine · direct sigmoid Emax (Hill) effect | — | Zhuang W et al., Blockade of Voltage-Gated K, Journal of applied toxicolo… (2025) | [10.1002/jat.4740](https://doi.org/10.1002/jat.4740) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Zhuang_2025_Kv_currents](drugs/drug_zotepine/pd_Zhuang_2025_Kv_currents.md) | Kv currents ← Zotepine · direct sigmoid Emax (Hill) effect | — | Zhuang W et al., Blockade of Voltage-Gated K, Journal of applied toxicolo… (2025) | [10.1002/jat.4740](https://doi.org/10.1002/jat.4740) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 18:33 | 0:22 | 0/0/0 | 1/0/0 | 0/0/0 | 19,857/649 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-24 08:30 | 0:11 | 0/0/0 | 1/0/0 | 0/0/0 | 5,856/1,586 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -49,12 +49,16 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Davis_2003 | irrelevant | 0 | 0 | This is an efficacy meta-analysis of antipsychotics with no pharmacokinetic parameters for zotepine. |
+| popPK | Davis_2003 | irrelevant | 0 | 0 | The paper is a meta-analysis of clinical efficacy trials for schizophrenia and does not report any pharmacokinetic parameters for zotepine. |
+| PGx | Davis_2003 | not_relevant | 0 | 0 | The paper is a meta-analysis of clinical efficacy trials comparing antipsychotics and does not report pharmacogenomic effects or PK/PD parameters influenced by gene variants. |
 | popPK | Furukawa_2026 | irrelevant | 0 | 0 | This is a dose-response efficacy meta-analysis of antipsychotics; zotepine had no usable data and no PK parameters (CL, V, ka, half-life) are reported anywhere. |
-| popPK | Leucht_2015 | irrelevant | 0 | 0 | Dose-equivalence study reporting only equivalent doses, no PK disposition parameters for zotepine. |
+| popPK | Leucht_2015 | irrelevant | 0 | 0 | The paper is a review of dose equivalents for antipsychotics and does not report pharmacokinetic parameters (CL, V, t1/2) for zotepine. |
+| PGx | Leucht_2015 | not_relevant | 0 | 0 | The paper discusses dose equivalency calculations for antipsychotics using clinical trial data and does not report any pharmacogenomic effects or genetic variants. |
 | popPK | Siafis_2023 | irrelevant | 0 | 0 | This is a dose-response meta-analysis of EPS risk, not a PK study; zotepine is only one of many antipsychotics and no PK parameters (CL, V, ka, half-life) are reported. |
-| popPK | Wu_2023 | irrelevant | 0 | 0 | A dose-response meta-analysis of akathisia risk, not a PK study; no zotepine disposition parameters (zotepine data even absent). |
-| popPK | Zhuang_2025 | irrelevant | 0 | 0 | In-vitro electrophysiology study of Kv channel blockade by zotepine in rabbit coronary artery cells; no PK disposition parameters reported. |
+| popPK | Wu_2023 | irrelevant | 0 | 0 | The paper is a systematic review on antipsychotic-induced akathisia risk, not a pharmacokinetic study, and explicitly states that no data was obtained for zotepine. |
+| PGx | Wu_2023 | not_relevant | 0 | 0 | The paper is a dose-response meta-analysis of akathisia risk for various antipsychotics and explicitly states that no data was obtained for zotepine; it does not report pharmacogenomic effects. |
+| popPK | Zhuang_2025 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on voltage-gated potassium channels in rabbit cells, not a pharmacokinetic study. |
+| PGx | Zhuang_2025 | not_relevant | 0 | 0 | The paper investigates the direct electrophysiological effect of zotepine on potassium channels in animal tissue, not the influence of a gene variant on its pharmacokinetics or pharmacodynamics. |
 
 
 </details>

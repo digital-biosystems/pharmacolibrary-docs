@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Vortioxetine bioavailability, clearance, and lag time were missing, and the model structure omitted the required peripheral compartment.
+> No value for vortioxetine's bioavailability, clearance and absorption lag time; the covariate scenarios were not simulated (+3 more).
 
 <div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Frederiksen2021v2_reference" status="model_quarantined" stale="false" population="adults" measured-compound="vortioxetine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -65,13 +65,13 @@ Frederiksen T, Areberg J, Schmidt E, Bjerregaard Stage T, Brøsen K. Quantificat
 
 ### Reviewer guidance
 
-**Vortioxetine bioavailability, clearance, and lag time were missing, and the model structure omitted the required peripheral compartment.**
+**No value for vortioxetine's bioavailability, clearance and absorption lag time; the covariate scenarios were not simulated (+3 more).**
 
-The record lacks explicit values for vortioxetine bioavailability, total clearance, and absorption lag time, resulting in placeholder values. The defined parent-metabolite topology with a peripheral compartment does not match the single-central-compartment structure actually simulated. Additionally, covariate effects for weight and CYP2D6 were defined but not exercised in the simulations. Extracted — vortioxetine: kabs 0.16 1/h, V1 1.51e+03 L, Q 21.1 L/h, V2 571 L, tlag 0.966 h; Lu AA34443: kabs 0.281 1/h, fm 0.19, Q 7.69 L/h, V1 155 L, CL 22.5 L/h, V2 211 L.
+The model was built, but vortioxetine's bioavailability, clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — vortioxetine: kabs 0.16 1/h, V1 1.51e+03 L, Q 21.1 L/h, V2 571 L, tlag 0.966 h; Lu AA34443: kabs 0.281 1/h, fm 0.19, Q 7.69 L/h, V1 155 L, CL 22.5 L/h, V2 211 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of lbm on clother: this record has none, the second reading 1.36; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -215,7 +215,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 10 scholar param(s) emitted or defaulted | 10 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite_hepatic → PK_3M_3C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.789, 0 of 1 reader(s) agree | 0.789 | cross-check disputed by a second reader: verdict disputed, agreement 0.789, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.789 (30 of 38 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.789 | cross-check contradicted by a second reader: verdict disputed; agreement 0.789 (30 of 38 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_t_half_beta | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Rejection stems from unit dimension mismatches in parameters for salicylate, including AUC and elimination rate constant.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit % (dimensionless) vs [mass] * [time] / [length] ** 3; Q47 unit % (dimensionless) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Wjcicki1981_reference" status="rejected" stale="false" population="rabbits 6 months after unilateral nephrectomy" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Wójcicki J, Gawrońska-Szklarz B, Kardel-Mizerska T, Kustróm B. Effect of unil
 
 ### Reviewer guidance
 
-**Rejection stems from unit dimension mismatches in parameters for salicylate, including AUC and elimination rate constant.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit % (dimensionless) vs [mass] * [time] / [length] ** 3; Q47 unit % (dimensionless) vs 1 / [time].**
 
-The elimination rate constant (kel) is listed with a unit of % (dimensionless), which conflicts with the required unit of 1/time. Similarly, the area under the curve (AUC) has a unit of %, conflicting with the dimension of volume divided by time. These inconsistencies were identified in a record constructed solely from the abstract. A second reader disagreed on the presence of the AUC, absorption rate, lag time, half-life, and volume of distribution values. Extracted — potassium salicylate: AUC 131 %, t1/2z 4.46 h, kel 40 %, V 0.168 liter/kg, kabs 0.22 h−1, tlag 2.81 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — potassium salicylate: AUC 131 %, t1/2z 4.46 h, kel 40 %, V 0.168 liter/kg, kabs 0.22 h−1, tlag 2.81 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of area under the curve: this record has none, the second reading 131; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

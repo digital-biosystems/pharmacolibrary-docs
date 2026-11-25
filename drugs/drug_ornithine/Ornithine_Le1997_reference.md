@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because ornithine's elimination half-life of 89 min has mismatched units against its structural parameters, and the record is abstract-only.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q19 unit mmol.min/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q19 unit mmol.min/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q88 unit mmol.min/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="Ornithine" model-id="Ornithine_Le1997_reference" status="rejected" stale="false" population="burn patients" measured-compound="ornithine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -53,13 +53,13 @@ Le Bricon T, Coudray-Lucas C, Lioret N, Lim SK, Plassart F, Schlegel L et al. Or
 
 ### Reviewer guidance
 
-**Rejected because ornithine's elimination half-life of 89 min has mismatched units against its structural parameters, and the record is abstract-only.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q19 unit mmol.min/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q19 unit mmol.min/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q88 unit mmol.min/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The elimination half-life parameter for ornithine is assigned a value of 89 min, which conflicts dimensionally with the structural parameters' units. Additionally, the record was built from the abstract alone, so reported summary statistics stood in for a fitted model, limiting the model's validity. Extracted — ornithine: kabs 0.028 min-1, t1/2z 89 min, CL 0.133 L/h, V 7.22 L; proline: AUCt 41.4 mmol.min/L; glutamine: AUCt 20.4 mmol.min/L; arginine: AUC 7.3 mmol.min/L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ornithine: kabs 0.028 min-1, t1/2z 89 min, CL 0.133 L/h, V 7.22 L; proline: AUCt 41.4 mmol.min/L; glutamine: AUCt 20.4 mmol.min/L; arginine: AUC 7.3 mmol.min/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ornithine alpha-ketoglutarate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

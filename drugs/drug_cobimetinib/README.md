@@ -62,7 +62,7 @@ Cobimetinib is a MEK inhibitor used to treat melanoma and histiocytic neoplasms.
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 22:58 | 3:53 | 3/1/0 | 1/0/0 | 0/0/0 | 75,653/23,532 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 18:32 | 0:04 | 3/1/0 | 1/0/0 | 0/0/0 | 3,694/166 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -71,25 +71,17 @@ Cobimetinib is a MEK inhibitor used to treat melanoma and histiocytic neoplasms.
 - **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Han_2015.pdf` | Han K et al., Population pharmacokinetics and dosing…, Cancer chemotherapy and pha… (2015) | popPK | 10 | [10.1007/s00280-015-2862-0](https://doi.org/10.1007/s00280-015-2862-0) | [26365290](https://pubmed.ncbi.nlm.nih.gov/26365290) | The human population-PK model reports numeric cobimetinib clearance, volume, and half-life estimates in the provided evidence. |
-
-<sub>queue written 2026-10-06 22:54 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Kim_2019 | irrelevant | 1 | 0 | This is a review and provides no cobimetinib disposition parameter values. |
+| PGx | Han_2015 | not_relevant | 0 | 0 | The paper reports that patient subgroups based on race had no significant difference in pharmacokinetics, but it does not report the impact of specific gene variants, genotypes, or pharmacogenomic phenotypes on the pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Kim_2019 | irrelevant | 3 | 0 | This is a narrative review of melanoma therapies; while it mentions population PK modeling for cobimetinib, it does not present original quantitative parameter values (CL, V, etc.) in the provided evidence. |
+| PGx | Kim_2019 | not_relevant | 0 | 0 | The paper is a general review of melanoma treatments and does not report specific pharmacogenomic effects on cobimetinib PK/PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcobimetinib%5D&body=Drug%3A%20cobimetinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cobimetinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 22:54 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 18:31 UTC</sub>

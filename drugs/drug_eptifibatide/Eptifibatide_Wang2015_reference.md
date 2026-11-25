@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The eptifibatide model was rejected because the intercompartmental clearance was missing, rendering the second compartment unreachable in the two-compartment structure.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit L x kg⁻¹ ([luminosity] / [length] ** 2) vs [length] ** 3; Q64 unit L x kg⁻¹ ([luminosity] / [length] ** 2) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="eptifibatide" model-id="Eptifibatide_Wang2015_reference" status="rejected" stale="false" population="healthy Chinese volunteers" measured-compound="eptifibatide" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,13 +46,13 @@ Wang XP, Zhou ZL, Yang M, Mai LP, Zheng ZJ, He GD et al. Population pharmacokine
 
 ### Reviewer guidance
 
-**The eptifibatide model was rejected because the intercompartmental clearance was missing, rendering the second compartment unreachable in the two-compartment structure.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit L x kg⁻¹ ([luminosity] / [length] ** 2) vs [length] ** 3; Q64 unit L x kg⁻¹ ([luminosity] / [length] ** 2) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a two-compartment structure but provides no value for the intercompartmental clearance, leaving the peripheral compartment orphaned without a path from the dose. Additionally, the volume of distribution units in kilograms were flagged as dimensionally inconsistent with required volume units. Since the record relies on abstract-only data, these structural and dimensional gaps prevented a valid fitted model from being established. Extracted — eptifibatide: CL 0.128 L/h, V 0.175 L x kg⁻¹, V2 0.147 L x kg⁻¹.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — eptifibatide: CL 0.128 L/h, V 0.175 L x kg⁻¹, V2 0.147 L x kg⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading 0.128; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

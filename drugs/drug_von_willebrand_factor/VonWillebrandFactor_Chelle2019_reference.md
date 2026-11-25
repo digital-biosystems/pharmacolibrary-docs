@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The von willebrand factor model was rejected because its total clearance, 0.195 L/h, was judged outside the physiological window, consistent with a unit/scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Chelle2019_reference" status="rejected" stale="false" population="" measured-compound="von_willebrand_factor" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Chelle P, Yeung CHT, Bonanad S, Morales Muñoz JC, Ozelo MC, Megías Vericat JE 
 
 ### Reviewer guidance
 
-**The von willebrand factor model was rejected because its total clearance, 0.195 L/h, was judged outside the physiological window, consistent with a unit/scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports total clearance of von willebrand factor as 0.195 L/h. The stated reason for rejection is that this clearance has an implausible magnitude due to a unit/scale extraction error. Extracted — von willebrand factor: CL 0.195 L/h, V1 2.3 L, V2 0.449 L, Q 0.078 L/h.
+Extracted — von willebrand factor: CL 0.195 L/h, V1 2.3 L, V2 0.449 L, Q 0.078 L/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

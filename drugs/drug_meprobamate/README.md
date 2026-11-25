@@ -40,7 +40,7 @@ Meprobamate is a carbamate anxiolytic used for anxiety disorders, headaches, and
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 19:35 | 0:57 | 0/1/0 | 0/0/0 | 0/0/0 | 64,752/2,951 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-24 01:00 | 0:04 | 0/1/0 | 0/0/0 | 0/0/0 | 3,095/178 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -51,25 +51,26 @@ Meprobamate is a carbamate anxiolytic used for anxiety disorders, headaches, and
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Lewandowski_2017.pdf` | Lewandowski TA, Pharmacokinetic modeling of carisoprodo…, Human & experimental toxico… (2017) | popPK | 8 | [10.1177/0960327116672912](https://doi.org/10.1177/0960327116672912) | [27758843](https://pubmed.ncbi.nlm.nih.gov/27758843) | Meprobamate is modeled as the metabolite of carisoprodol with Vd values (1.4–1.6 L/kg) given in the abstract, though full parameter values may reside in the paper's tables/figures not provided. |
-| `Verpooten_1982.pdf` | Verpooten GA et al., Prediction of the efficacy of hemoperfu…, Archives of toxicology. Sup… (1982) | popPK | 5 | [10.1007/978-3-642-68511-8_54](https://doi.org/10.1007/978-3-642-68511-8_54) | [6954915](https://pubmed.ncbi.nlm.nih.gov/6954915) | Meprobamate PK modeled in poisoned patients, but no numeric parameter values are present in the evidence. |
+| `Verpooten_1982.pdf` | Verpooten GA et al., Prediction of the efficacy of hemoperfu…, Archives of toxicology. Sup… (1982) | popPK | 8 | [10.1007/978-3-642-68511-8_54](https://doi.org/10.1007/978-3-642-68511-8_54) | [6954915](https://pubmed.ncbi.nlm.nih.gov/6954915) | The paper reports that meprobamate follows one-compartment kinetics in human patients, but specific quantitative parameter values (CL, V, t1/2) are not present in the provided evidence. |
 
-<sub>queue written 2026-10-06 19:34 UTC</sub>
+<sub>queue written 2026-11-24 01:00 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Calvo_2022_2 | relevant | 5 | 2 | This is the PD companion paper; meprobamate (as active metabolite of carisoprodol) PK was characterized but the numeric parameters (AUC, Cmax, etc.) are deferred to Part I [11], with only Tmax (3.77 h) given here. |
-| popPK | Verpooten_1982 | relevant | 5 | 2 | Meprobamate PK modeled in poisoned patients, but no numeric parameter values are present in the evidence. |
+| PGx | Lewandowski_2017 | not_relevant | 0 | 0 | The paper describes pharmacokinetic modeling of meprobamate but does not investigate or report any pharmacogenomic effects (gene variants) on PK parameters. |
+| popPK | Verpooten_1982 | relevant | 8 | 0 | The paper reports that meprobamate follows one-compartment kinetics in human patients, but specific quantitative parameter values (CL, V, t1/2) are not present in the provided evidence. |
+| PGx | Verpooten_1982 | not_relevant | 0 | 0 | The study describes the pharmacokinetics of meprobamate in severe poisoning for the purpose of predicting extracorporeal removal efficacy, but it does not investigate or report any genetic variants or pharmacogenomic effects on PK parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmeprobamate%5D&body=Drug%3A%20meprobamate%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_meprobamate/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 19:34 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 00:59 UTC</sub>

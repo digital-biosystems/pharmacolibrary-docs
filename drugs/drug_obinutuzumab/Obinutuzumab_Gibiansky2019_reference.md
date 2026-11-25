@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the peripheral compartment is structurally unreachable from the dose, and the decay coefficient lacks a valid value.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="obinutuzumab" model-id="Obinutuzumab_Gibiansky2019_reference" status="rejected" stale="false" population="patients with CD20+ B-cell malignancies (CLL, NHL, FL, DLBCL, MCL)" measured-compound="obinutuzumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Gibiansky E, Gibiansky L, Buchheit V, Frey N, Brewster M, Fingerle-Rowson G et a
 
 ### Reviewer guidance
 
-**The model was rejected because the peripheral compartment is structurally unreachable from the dose, and the decay coefficient lacks a valid value.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-A structural check confirmed the peripheral compartment has no path from the dose, rendering it an orphan. The parameter labeled total clearance (CL) holds the value 0.11 day−1, which is actually the decay coefficient for time-dependent clearance, not total clearance. A second reader disagreed on the total clearance value, recording 0.154 where the record has null, and also disagreed on the assignment of the peripheral volume and decay coefficient parameters. The peripheral volume of distribution is 1.23 L. Extracted — obinutuzumab: Cavg -0.0027 mg/L, CL 0.11 day−1, V2 1.23 L.
+A reported unit could not be converted (Cavg and CL), so that value has no SI equivalent. Extracted — obinutuzumab: Cavg -0.0027 mg/L, CL 0.11 day−1, V2 1.23 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clt: this record has none, the second reading 0.154; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

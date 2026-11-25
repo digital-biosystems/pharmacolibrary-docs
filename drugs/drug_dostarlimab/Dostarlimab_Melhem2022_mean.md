@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was refused because the second reader could not extract the pharmacokinetic parameters, causing a failed cross-check.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="dostarlimab" model-id="Dostarlimab_Melhem2022_mean" status="needs_review" stale="false" population="patients with advanced solid tumours" measured-compound="dostarlimab" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Melhem M, Hanze E, Lu S, Alskär O, Visser S, Gandhi Y. Population pharmacokinet
 
 ### Reviewer guidance
 
-**The record was refused because the second reader could not extract the pharmacokinetic parameters, causing a failed cross-check.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader returned null values for clearance, volume of distribution, AUC, Cmax, and Cmin, disagreeing with the primary extraction. Additionally, the second reader identified parameters such as albumin effects and intercompartmental clearance that are absent from this record. This resulted in a cross-check agreement of 0.211, which is below the required threshold of 0.5. Extracted — dostarlimab: Cmin 61.6 mg L −1, Cmax 216 mg L −1, AUC 8.38e+04 mg*h L −1, CL 0.179 L day−1, V 5.3 L.
+A reported unit could not be converted (Cmin, Cmax and AUC), so that value has no SI equivalent. Extracted — dostarlimab: Cmin 61.6 mg L −1, Cmax 216 mg L −1, AUC 8.38e+04 mg*h L −1, CL 0.179 L day−1, V 5.3 L.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of auc: this record has 83800.0, the second reading none; it also differs on 14 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -176,17 +176,17 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.211, 0 of 1 reader(s) agree | 0.211 | cross-check agreement 0.211 is below 0.5: verdict partial, agreement 0.211, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict partial; agreement 0.211 (4 of 19 compared fields agree, 15 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.211 | cross-check agreement 0.211 is below 0.5: verdict partial; agreement 0.211 (4 of 19 compared fields agree, 15 extracted by one reader only); 1 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 | T1_cmax | reference | skipped | 10 | 0.001887 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 434 | 0.001887 |  | unresolved concentration unit (exp 'mg L−1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 0.319 | 0.001887 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | skipped |  | 0.001887 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.001887 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.001887 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.001887 |  | the transcribed record carries no number for this value |
 | T1_cmax | reference | skipped | 0.717 | 0.001887 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | skipped |  | 0.001887 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.001887 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.001887 |  | non-numeric value |
-| T1_cmax | reference | skipped |  | 0.001887 |  | non-numeric value |
+| T1_cmax | reference | skipped |  | 0.001887 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.001887 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.001887 |  | the transcribed record carries no number for this value |
+| T1_cmax | reference | skipped |  | 0.001887 |  | the transcribed record carries no number for this value |
 | T1_cmax | reference | skipped | 350 | 0.001887 |  | unresolved concentration unit (exp 'mg L−1', sim 'kg/m3') |
 | T1_cmin_ss | reference | skipped | 0.187 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
@@ -198,8 +198,8 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_t_half_alpha | reference | skipped | 1.51 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | pass | 564 | 492.6 | 0.8733 | days→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 564 | 492.6 | 0.8733 | days→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 564 | 492.6 | 0.8733 | reported 23.5 days→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 564 | 492.6 | 0.8733 | reported 23.5 days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07B&quot;,&quot;href&quot;:&quot;atc/N07B.md&quot;},{&quot;label&quot;:&quot;methadone&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/&quot;},{&quot;label&quot;:&quot;Gittel_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methadone_Gittel2021_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Gittel2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Methadone_Shin2024_reference&quot;,&quot;label&quot;:&quot;Shin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Shin2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methadone_Gittel2021_reference&quot;,&quot;label&quot;:&quot;Gittel_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Gittel2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Methadone_Shin2024_reference&quot;,&quot;label&quot;:&quot;Shin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Shin2024_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methadone_Tang2021_reference&quot;,&quot;label&quot;:&quot;Tang_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methadone/Methadone_Tang2021_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # methadone — `Methadone_Gittel2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The l-methadone record was held back because its reported total clearance of 75.0 L/h was disputed, with only abstract-level evidence available.
-
-<div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Gittel2021_reference" status="needs_review" stale="false" population="isoflurane-anaesthetized healthy adult ponies" measured-compound="l-methadone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="methadone" model-id="Methadone_Gittel2021_reference" status="simulated" stale="false" population="isoflurane-anaesthetized ponies" measured-compound="l-methadone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gittel C, Schulz-Kornas E, Sandbaumhüter FA, Theurillat R, Vervuert I, Larenza Menzies MP et al. Pharmacokinetics and pharmacodynamics of l-methadone in isoflurane-anaesthetized and mechanically ventilated ponies. Veterinary anaesthesia and analgesia 48(2):213–222 (2021).
@@ -17,7 +15,7 @@ Gittel C, Schulz-Kornas E, Sandbaumhüter FA, Theurillat R, Vervuert I, Larenza 
 
 ## Population and dosing
 
-**Population:** isoflurane-anaesthetized healthy adult ponies · condition healthy (anaesthetized) · age group adult · n = 6.
+**Population:** isoflurane-anaesthetized ponies · condition healthy · age group adult · n = 6.
 
 > **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -25,24 +23,21 @@ Gittel C, Schulz-Kornas E, Sandbaumhüter FA, Theurillat R, Vervuert I, Larenza 
 
 **Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_methadone/Methadone_Gittel2021_reference/Methadone_Gittel2021_reference.svg" alt="Methadone_Gittel2021_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
 | terminal half-life | t1/2z | 44.3 | minutes |
 | volume of distribution | V | 0.43 | L kg-1 |
-| plasma clearance | CLnorm | 7.77 | L/h/kg |
-| Estimated total clearance | CL | 75.0 | L/h |
+| plasma clearance | CL | 7.77 | mL minute-1 kg-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,22 +47,21 @@ Gittel C, Schulz-Kornas E, Sandbaumhüter FA, Theurillat R, Vervuert I, Larenza 
 
 ### Reviewer guidance
 
-**The l-methadone record was held back because its reported total clearance of 75.0 L/h was disputed, with only abstract-level evidence available.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-The record reports l-methadone total clearance of 75.0 L/h, which the second reader did not accept; agreement was 0.778, with 0 of 1 reader agreeing. The second reader also disagreed with the identification of the reported body-size-normalized plasma clearance of 7.77 L/h/kg. Only the abstract was read, so summary statistics stood in for a fitted model. Extracted — l-methadone: t1/2z 44.3 minutes, V 0.43 L kg-1, CLnorm 7.77 L/h/kg, CL 75 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is methadone's own; they describe l-methadone.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of estimated total clearance: this record has 75.0, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| terminal half-life | `Q57` · t1/2z | 44.3 | minutes | 2658 | s | min | llm (0.6) | Gittel_2021:abstract |
+| terminal half-life | `Q57` · t1/2z | 44.3 | minutes | 2658 | s | min | half_life_rule (0.95) | Gittel_2021:abstract |
 | volume of distribution | `Q61` · V | 0.43 | L kg-1 | 0.0301 | m3 | l/kg | exact (1) | Gittel_2021:abstract |
-| plasma clearance | `Q354` · CLnorm | 7.77 | L/h/kg | 0.0001511 | m3/s | L/h | llm_corrected (0.6) | Gittel_2021:abstract |
-| Estimated total clearance | `Q22` · CL | 75.0 | L/h | 2.083e-05 | m3/s | L/h | review_gapfill (0.7) | Tang_2021:review |
+| plasma clearance | `Q22` · CL | 7.77 | mL minute-1 kg-1 | 9.065e-06 | m3/s | ml/(min·kg) | llm_confirmed (0.6) | Gittel_2021:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,35 +71,23 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'mL minute-1 kg-1' (CLnorm)
-- implicit units: 'plasma clearance' → L/h/kg (from the popPK convention: 'No unit stated in text or table footnotes. Normalized total clearance for a 70-kg reference is conventionally reported i')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=l-methadone
+- molar mass: none found for 'l-methadone' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Tang_2021's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- derived CL=28.2579 L/h from ln2/t½z × V = CL (Q57 × Q61); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Gittel_2021_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>2 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[estimated total clearance]` | 75.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[plasma clearance].parameter_id` | Q354 | Q22 | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -120,13 +102,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Tang_2021:review'] |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Gittel_2021:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Gittel_2021:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Gittel_2021:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Gittel_2021:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 75 | ['Tang_2021:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 7.77 | ['Gittel_2021:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 75 L/h | ['Tang_2021:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 32.6 L/h | ['Gittel_2021:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 30.1 L | ['Gittel_2021:abstract'] |
 
 **Reviewer per-scenario checks:**
@@ -135,12 +116,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|---|
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
 | T3_output_variable | pass | C_central (measured=l-methadone) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -156,15 +136,54 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_methadone/Methadone_Gittel2021_reference/Methadone_Gittel2021_reference_modelica.zip" download>Methadone_Gittel2021_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_methadone/Methadone_Gittel2021_reference/Methadone_Gittel2021_reference_fmi.zip" download>Methadone_Gittel2021_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_methadone/Methadone_Gittel2021_reference/Methadone_Gittel2021_reference_matlab.zip" download>Methadone_Gittel2021_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_methadone/Methadone_Gittel2021_reference/Methadone_Gittel2021_reference_matlab_simbio.zip" download>Methadone_Gittel2021_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_methadone/Methadone_Gittel2021_reference/Methadone_Gittel2021_reference_sbml.zip" download>Methadone_Gittel2021_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_methadone/Methadone_Gittel2021_reference/Methadone_Gittel2021_reference_cellml.zip" download>Methadone_Gittel2021_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 2.5e-05 | kg |
+| input | model | `Cl` | 9.065e-06 | m3/s |
+| input | model | `VdPerKg` | 0.00043 | m3/kg |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Gittel C, Schulz-Kornas E, Sandbaumhüter FA, Theurillat R, Vervuert I, Larenza Menzies MP et al. Pharmacokinetics and pharmacodynamics of l-methadone in isoflurane-anaesthetized and mechanically ventilated ponies. Veterinary anaesthesia and analgesia 48(2):213–222 (2021). [doi:10.1016/j.vaa.2020.04.018](https://doi.org/10.1016/j.vaa.2020.04.018)
+
+**This record:** Pharmacolibrary, model `Methadone_Gittel2021_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_methadone/Methadone_Gittel2021_reference>
+
+```bibtex
+@misc{pharmacolibrary_MethadoneGittel2021reference,
+  title  = {{Pharmacolibrary model Methadone_Gittel2021_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_methadone/Methadone_Gittel2021_reference},
+  note   = {Parameters from doi:10.1016/j.vaa.2020.04.018},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -178,4 +197,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethadone%5D%20Methadone_Gittel2021_reference&body=Drug%3A%20methadone%0ARecord%3A%20Methadone_Gittel2021_reference%0APaper%3A%20Gittel_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methadone/Methadone_Gittel2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:46 UTC</sub>

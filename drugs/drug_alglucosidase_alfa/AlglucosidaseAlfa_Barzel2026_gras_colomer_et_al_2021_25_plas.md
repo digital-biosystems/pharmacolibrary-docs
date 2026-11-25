@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the maximum metabolic rate for alglucosidase alfa was assigned incompatible units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/h ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="alglucosidase alfa" model-id="AlglucosidaseAlfa_Barzel2026_gras_colomer_et_al_2021_25_plas" status="rejected" stale="false" population="patients with lysosomal storage diseases" measured-compound="alglucosidase_alfa" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Barzel I, van der Ploeg AT, Pijnappel WWMP, van der Kuy PHM, van den Hout JMP, P
 
 ### Reviewer guidance
 
-**The model was rejected because the maximum metabolic rate for alglucosidase alfa was assigned incompatible units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/h ([mass] / [time]) vs [mass] / [time].**
 
-The parameter Vmax is defined as the maximum rate of metabolism, requiring units of concentration over time, but was assigned a value of 9.82 mg/h. This unit, which represents a mass flow rate, is dimensionally inconsistent with the parameter's intended meaning in a three-compartment model. Additionally, the total clearance parameter for the drug was not extracted, leaving it without a specified value. Extracted — alglucosidase alfa: V1 3.35 L, Q2 0.254 L/h, V2 296 L, k21 0.0206 d−1, Vmax 9.82 mg/h, Km 0.451 µg/mL, Q3 1.87 L/h, V3 1.31 L, … (+1).
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — alglucosidase alfa: V1 3.35 L, Q2 0.254 L/h, V2 296 L, k21 0.0206 d−1, Vmax 9.82 mg/h, Km 0.451 µg/mL, Q3 1.87 L/h, V3 1.31 L, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alglucosidase_alfa, the second reading alglucosidase alfa; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

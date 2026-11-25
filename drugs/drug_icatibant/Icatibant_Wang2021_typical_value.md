@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because icatibant’s peripheral-compartment volume (V2/F, 1.75 L) is associated with an unreachable compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="icatibant" model-id="Icatibant_Wang2021_typical_value" status="rejected" stale="false" population="pediatric and adult patients with hereditary angioedema and healthy adults" measured-compound="icatibant" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Wang Y, Jomphe C, Marier JF, Martin P. Population Pharmacokinetics and Exposure-
 
 ### Reviewer guidance
 
-**The record was rejected because icatibant’s peripheral-compartment volume (V2/F, 1.75 L) is associated with an unreachable compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The rejection finding identifies an unreachable or orphan compartment; V2/F is the listed peripheral-compartment volume for icatibant, valued at 1.75 L. A second reader marked both the dose compound and primary analyte as unknown, rather than icatibant. Extracted — icatibant: kabs 3.27 h–1, tlag 0.0426 h, V2/F 1.75 L.
+Extracted — icatibant: kabs 3.27 h–1, tlag 0.0426 h, V2/F 1.75 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has icatibant, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

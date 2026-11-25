@@ -23,7 +23,6 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Marjanović_2021_Rmax](drugs/drug_bephenium/pd_Marjanovi_2021_Rmax.md) | contraction of A. suum muscle flap ← bephenium · direct sigmoid Emax (Hill) effect | — | Marjanović DS et al., Interaction of agonists of a different…, Journal of nematology 53 (2021) | [10.21307/jofnem-2021-022](https://doi.org/10.21307/jofnem-2021-022) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Marjanović_2020_contraction](drugs/drug_bephenium/pd_Marjanovi_2020_contraction.md) | contraction of A. suum neuromuscular preparation (bephenium concentration-response) ← bephenium · direct Emax (saturable) effect | — | Marjanović DS et al., Carvacrol acts as a potent selective an…, Veterinary parasitology (2020) | [10.1016/j.vetpar.2020.109031](https://doi.org/10.1016/j.vetpar.2020.109031) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 10:17 | 0:18 | 0/0/0 | 2/0/0 | 0/0/0 | 16,195/1,211 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 19:13 | 0:05 | 0/0/0 | 1/0/0 | 0/0/0 | 4,546/206 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -50,7 +49,8 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Marjanović_2020 | irrelevant | 0 | 0 | This is an in-vitro pharmacodynamic interaction study of carvacrol on nematode nAChRs; bephenium is only an agonist probe with EC50/Emax ratios, no PK disposition parameters. |
+| popPK | Marjanović_2020 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study of carvacrol on nematode and mammalian muscle contractions, using bephenium only as a co-administered agonist to test receptor interaction, with no PK parameters reported. |
+| PGx | Marjanović_2020 | not_relevant | 0 | 0 | The paper investigates the interaction of carvacrol with nicotinic acetylcholine receptors in parasites and mammals, reporting pharmacodynamic changes (Emax, EC50) in a nematode model, but it does not report any pharmacogenomic effects (gene variants/genotypes) on the PK or PD of bephenium. |
 | popPK | Marjanović_2021 | irrelevant | 0 | 0 | In-vitro pharmacodynamic study of bephenium's contractile EC50 on Ascaris muscle flaps, not a PK study with disposition parameters. |
 
 

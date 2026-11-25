@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Darunavir’s SLCO3A1 effect of 0.81 was held for review because covariate scenarios were not simulated and a second reader disputed its attribution.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="darunavir" model-id="Darunavir_Stillemans2021_reference" status="needs_review" stale="false" population="adults with HIV-1 infection" measured-compound="darunavir" parameterization="apparent" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Stillemans G, Belkhir L, Vandercam B, Vincent A, Haufroid V, Elens L. Exploratio
 
 ### Reviewer guidance
 
-**Darunavir’s SLCO3A1 effect of 0.81 was held for review because covariate scenarios were not simulated and a second reader disputed its attribution.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The base model was simulated, not the covariate effects the record defines; covariate scenarios were not simulated. A second reader disputed the recorded SLCO3A1 effect of 0.81, with agreement 0.769 and 0 of 1 reader agreeing, and instead associated 0.81 with a different parameter. Extracted — darunavir: CL/F 12.9 L·h−1, V/F 152 L, kabs 0.68 h−1.
+The base model was simulated, not the covariate effects the record defines. Extracted — darunavir: CL/F 12.9 L·h−1, V/F 152 L, kabs 0.68 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].covariate_forms`: this record has ['linear_fractional'], the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -189,7 +189,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.769, 0 of 1 reader(s) agree | 0.769 | cross-check disputed by a second reader: verdict disputed, agreement 0.769, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.769 (10 of 13 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.769 | cross-check contradicted by a second reader: verdict disputed; agreement 0.769 (10 of 13 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

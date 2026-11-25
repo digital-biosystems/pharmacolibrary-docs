@@ -59,7 +59,7 @@ Tucatinib is a small molecule inhibitor of the HER2 protein kinase, used for tre
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:38 | 5:57 | 7/0/0 | 0/0/0 | 0/0/0 | 100,534/31,909 | openai / gpt-6-luna | 3 | 0/2 | 3/0 | 0 |
+| 2026-11-24 06:49 | 0:03 | 7/0/0 | 0/0/0 | 0/0/0 | 3,506/156 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## Coverage
 
@@ -72,7 +72,16 @@ Tucatinib is a small molecule inhibitor of the HER2 protein kinase, used for tre
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Meyer_2022 | irrelevant | 1 | 0 | This is a bioanalytical cross-validation paper, with no tucatinib disposition parameter values reported in the provided evidence. |
+| popPK | Borges_2018 | irrelevant | 2 | 0 | The study reports safety and efficacy outcomes with a qualitative statement on drug-drug interactions but does not provide any quantitative pharmacokinetic parameter values (e.g., CL, V, half-life). |
+| PGx | Borges_2018 | not_relevant | 0 | 0 | The paper reports a Phase 1b dose-finding study and safety profile of tucatinib combined with T-DM1, with no assessment of gene variants or pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Meyer_2022 | irrelevant | 0 | 0 | The paper describes the bioanalytical validation and cross-validation of MS/MS methods for tucatinib, but does not report quantitative population-pharmacokinetic parameters (CL, V, etc.) in the provided evidence. |
+| PGx | Meyer_2022 | not_relevant | 0 | 0 | The paper describes bioanalysis cross-validation methods for tucatinib and does not report any pharmacogenomic effects on PK or PD parameters. |
+| popPK | Roskoski_2024 | irrelevant | 0 | 0 | The paper discusses the cost of protein kinase inhibitors and does not contain any pharmacokinetic data or parameters for tucatinib. |
+| PGx | Roskoski_2024 | not_relevant | 0 | 0 | The paper discusses the cost of protein kinase inhibitors and does not report pharmacogenomic effects on PK/PD parameters for tucatinib. |
+| popPK | Shah_2018 | irrelevant | 0 | 0 | The paper is a historical overview and review of breast cancer brain metastasis treatments and does not report quantitative pharmacokinetic parameters for tucatinib. |
+| PGx | Shah_2018 | not_relevant | 0 | 0 | The paper is a general review of breast cancer brain metastases treatments and mechanisms, with no mention of tucatinib or specific pharmacogenomic effects on its PK/PD. |
+| popPK | Sun_2024 | irrelevant | 0 | 0 | The paper is a review on the mechanisms and management of TKI-induced diarrhea and does not report any population pharmacokinetic parameters for tucatinib. |
+| PGx | Sun_2024 | not_relevant | 0 | 0 | The paper is a review on the management and mechanisms of TKI-induced diarrhea and does not report pharmacogenomic effects on PK or PD parameters of tucatinib. |
 
 
 </details>

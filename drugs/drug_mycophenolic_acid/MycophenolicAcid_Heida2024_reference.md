@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Mycophenolic acid's clearance, absorption rate constant, and absorption lag time had no values, forcing placeholder use that quarantined the model.
+> No value for mycophenolic acid's clearance, absorption rate constant and absorption lag time; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="mycophenolic acid" model-id="MycophenolicAcid_Heida2024_reference" status="model_quarantined" stale="false" population="pediatric kidney transplant patients" measured-compound="mycophenolic acid" parameterization="apparent" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Heida A, Jager NGL, Aarnoutse RE, de Winter BCM, de Jong H, Keizer RJ et al. Mod
 
 ### Reviewer guidance
 
-**Mycophenolic acid's clearance, absorption rate constant, and absorption lag time had no values, forcing placeholder use that quarantined the model.**
+**No value for mycophenolic acid's clearance, absorption rate constant and absorption lag time; the covariate scenarios were not simulated (+2 more).**
 
-The record lists clearance, absorption rate constant, and absorption lag time but provides no numeric estimates for these parameters. Consequently, the model was built using library placeholders instead of explicit data, leading to quarantine. Additionally, the defined covariate effects on clearance were never simulated, leaving those structural components unexercised. Extracted — mycophenolic acid: V1/F 24.9 L, V2/F 1.59e+03 L, Q/F 36.2 L h−1.
+The model was built, but mycophenolic acid's clearance, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — mycophenolic acid: V1/F 24.9 L, V2/F 1.59e+03 L, Q/F 36.2 L h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mycophenolate mofetil, the second reading mycophenolate mofetil (MMF) / Cellcept; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -169,7 +169,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.143 | cross-check contradicted by a second reader: verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

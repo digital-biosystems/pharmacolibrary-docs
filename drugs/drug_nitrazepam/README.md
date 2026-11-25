@@ -26,7 +26,7 @@ Nitrazepam is a benzodiazepine sedative used for the short-term treatment of sev
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Kangas_1979_reference](drugs/drug_nitrazepam/Nitrazepam_Kangas1979_reference.md) | — | 1-compartment (no model) | 4 | Kangas L et al., Human pharmacokinetics of nitrazepam: e…, European journal of clinica… (1979) | [10.1007/BF00563100](https://doi.org/10.1007/BF00563100) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Kangas_1979_reference](drugs/drug_nitrazepam/Nitrazepam_Kangas1979_reference.md) | — | 1-compartment (no model) | 2 | Kangas L et al., Human pharmacokinetics of nitrazepam: e…, European journal of clinica… (1979) | [10.1007/BF00563100](https://doi.org/10.1007/BF00563100) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,7 +40,7 @@ Nitrazepam is a benzodiazepine sedative used for the short-term treatment of sev
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 20:41 | 1:14 | 0/1/0 | 0/0/0 | 0/0/0 | 20,251/1,622 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 01:51 | 0:03 | 0/1/0 | 0/0/0 | 0/0/0 | 4,362/174 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -49,32 +49,30 @@ Nitrazepam is a benzodiazepine sedative used for the short-term treatment of sev
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Kangas_1979.pdf` | Kangas L et al., Human pharmacokinetics of nitrazepam: e…, European journal of clinica… (1979) | popPK | 9 | [10.1007/BF00563100](https://doi.org/10.1007/BF00563100) | [456400](https://pubmed.ncbi.nlm.nih.gov/456400) | Human PK study of nitrazepam with two-compartment model parameters (half-life, Vd, clearance) reported directly in the abstract. |
-| `Luurila_1995.pdf` | Luurila H et al., Interaction between erythromycin and ni…, Pharmacology & toxicology (1995) | pgx | 7 | [10.1111/j.1600-0773.1995.tb00139.x](https://doi.org/10.1111/j.1600-0773.1995.tb00139.x) | [7617555](https://www.ncbi.nlm.nih.gov/pubmed/7617555) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
-
-<sub>queue written 2026-10-06 20:41 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Jones_2007 | not_relevant | 2 | 1 | Forensic DUID prevalence study; mentions polymorphism only as a general consideration, no genotype-specific PK/PD data for nitrazepam. |
-| PGx | Konishi_2017 | not_relevant | 3 | 3 | Identifies enzymes (AOX1, NAT2, AADAC, CYP3A4) in nitrazepam metabolism but reports no gene variant/genotype effect on a PK/PD parameter. |
+| popPK | Jones_2007 | irrelevant | 0 | 0 | The paper is a forensic toxicology study reporting blood concentrations in drivers, not a pharmacokinetic study with quantitative disposition parameters (CL, V, ka) for nitrazepam. |
+| PGx | Jones_2007 | not_relevant | 0 | 0 | The paper reports forensic blood concentrations of nitrazepam in drivers but does not analyze the impact of specific gene variants or genotypes on its pharmacokinetics or pharmacodynamics. |
+| PGx | Kangas_1979 | not_relevant | 0 | 0 | The study investigates the effect of age and disease status on nitrazepam pharmacokinetics, not gene variants or genotypes. |
+| popPK | Konishi_2017 | irrelevant | 2 | 0 | The paper is an in-vitro enzyme identification study that reports qualitative metabolic pathways and enzyme roles, but provides no quantitative PK parameters (CL, V, t1/2, ka) for nitrazepam. |
+| PGx | Konishi_2017 | not_relevant | 2 | 1 | The paper identifies the enzymes (AOX1, NAT2, AADAC, CYP3A4) responsible for nitrazepam metabolism and mentions they confer interindividual variability, but it does not report specific pharmacogenomic studies linking particular gene variants/genotypes to quantitative changes in PK/PD parameters. |
 | PGx | Kravetz_2021 | not_relevant | 1 | 2 | Nitrazepam is only mentioned as a co-medication with fixed doses; the pharmacogenomic (KCNT1 variant) effects and TDM data pertain to quinidine, not nitrazepam PK/PD. |
-| PGx | Luurila_1995 | not_relevant | 0 | 0 | This is a drug-drug interaction study (erythromycin-nitrazepam), not a pharmacogenomic effect of a gene variant/genotype/phenotype on nitrazepam PK/PD. |
-| PGx | Mizuno_2009 | not_relevant | 2 | 5 | In vitro CYP3A4 metabolic activation/cytotoxicity study; no gene variant/genotype effect on nitrazepam PK/PD parameters in humans. |
-| popPK | Tang_2011 | irrelevant | 0 | 0 | Nitrazepam is only a synthetic precursor for benzodiazepine analogs; no PK parameters reported. |
-| PGx | Vrzal_2010 | not_relevant | 0 | 0 | In vitro study of benzodiazepine effects on CYP induction; no gene variant/genotype effect on nitrazepam PK/PD reported. |
+| popPK | Luurila_1995 | relevant | 9 | 2 | The study reports quantitative changes in nitrazepam pharmacokinetic parameters (AUC, Cmax, tmax) in healthy humans, although absolute values are not explicitly listed in the provided abstract. |
+| PGx | Luurila_1995 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (erythromycin and nitrazepam), not a pharmacogenomic effect involving gene variants. |
+| popPK | Meyer_1982 | irrelevant | 0 | 0 | The text is a review discussing genetic polymorphisms in drug metabolism and mentions nitrazepam only as an example of a drug affected by acetylator status, without reporting any quantitative pharmacokinetic parameters. |
+| PGx | Meyer_1982 | not_relevant | 2 | 0 | The paper mentions nitrazepam in a list of drugs metabolized by N-acetyltransferase, but it is a general review of pharmacogenetics and does not report specific PK/PD data, fitted effect sizes, or detailed findings for nitrazepam. |
+| popPK | Mizuno_2009 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of metabolic activation and cytotoxicity, not a pharmacokinetic study reporting disposition parameters. |
+| PGx | Mizuno_2009 | not_relevant | 2 | 5 | The paper reports CYP3A4-mediated metabolic activation and cytotoxicity of nitrazepam but does not assess genetic variants (pharmacogenomics) or their effect on specific PK/PD parameters. |
+| popPK | Tang_2011 | irrelevant | 0 | 0 | The paper uses nitrazepam as a synthetic starting material for HIV-1 inhibitors and reports no pharmacokinetic parameters. |
+| PGx | Tang_2011 | not_relevant | 0 | 0 | The paper reports the synthesis of new benzodiazepine analogs using nitrazepam as a starting material, not the pharmacokinetics or pharmacodynamics of nitrazepam itself, and does not involve pharmacogenomics. |
+| popPK | Vrzal_2010 | irrelevant | 0 | 0 | The study is an in-vitro investigation of CYP3A4 and CYP1A2 induction by benzodiazepines (including nitrazepam) in cell lines and does not report pharmacokinetic disposition parameters. |
+| PGx | Vrzal_2010 | not_relevant | 0 | 0 | The paper investigates the in vitro potential of nitrazepam to induce CYP enzymes and does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnitrazepam%5D&body=Drug%3A%20nitrazepam%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nitrazepam/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 20:41 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 01:50 UTC</sub>

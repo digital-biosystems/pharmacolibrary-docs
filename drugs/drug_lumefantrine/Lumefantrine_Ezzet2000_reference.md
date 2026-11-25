@@ -9,7 +9,7 @@
 
 > No volume or clearance — not a compartmental population PK model.
 
-<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Ezzet2000_reference" status="rejected" stale="false" population="Thai patients with acute uncomplicated falciparum malaria" measured-compound="lumefantrine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Ezzet2000_reference" status="rejected" stale="false" population="adults with acute falciparum malaria" measured-compound="lumefantrine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ezzet F, van Vugt M, Nosten F, Looareesuwan S, White NJ. Pharmacokinetics and pharmacodynamics of lumefantrine (benflumetol) in acute falciparum malaria. Antimicrobial agents and chemotherapy 44(3):697–704 (2000).
@@ -17,7 +17,7 @@ Ezzet F, van Vugt M, Nosten F, Looareesuwan S, White NJ. Pharmacokinetics and ph
 
 ## Population and dosing
 
-**Population:** Thai patients with acute uncomplicated falciparum malaria · condition acute falciparum malaria · age group mixed · n = 266.
+**Population:** adults with acute falciparum malaria · condition acute falciparum malaria · age group mixed.
 
 ## Model
 
@@ -31,13 +31,13 @@ Ezzet F, van Vugt M, Nosten F, Looareesuwan S, White NJ. Pharmacokinetics and ph
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| population absorption half-life of lumefantrine | t1/2ka | 4.5 | h |
-| increased oral bioavailability | Fab | 108 | % |
-| P | Q | 0.0001 | L/h |
+| population absorption half-life | t1/2ka | 4.5 | h |
+| oral bioavailability | Fab | 108 |  |
+| areas under the concentration-time curves (AUC) | AUC | 60 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,7 +51,7 @@ Ezzet F, van Vugt M, Nosten F, Looareesuwan S, White NJ. Pharmacokinetics and ph
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of higher-dose regimen b auc increase: this record has none, the second reading 60; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of areas under the concentration-time curves: this record has 60, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,9 +59,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| population absorption half-life of lumefantrine | `Q95` · t1/2ka | 4.5 | h | 1.62e+04 | s | h | llm_corrected (0.6) | Ezzet_2000:abstract |
-| increased oral bioavailability | `Q40` · Fab | 108 | % |  |  |  | llm_confirmed (0.6) | Ezzet_2000:abstract |
-| P | `Q30` · Q | 0.0001 | L/h | 2.778e-11 | m3/s | L/h | llm (0.6) | Ezzet_2000:abstract, Ezzet_2000:abstract |
+| population absorption half-life | `Q95` · t1/2ka | 4.5 | h | 1.62e+04 | s | h | half_life_rule (0.95) | Ezzet_2000:abstract |
+| oral bioavailability | `Q40` · Fab | 108 |  |  |  |  | exact (1) | Ezzet_2000:abstract |
+| areas under the concentration-time curves (AUC) | `Q88` · AUC | 60 |  |  |  |  | llm (0.6) | Ezzet_2000:abstract, Ezzet_2000:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,16 +71,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped PD-category row 'putative in vivo MIC' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Ezzet_2000:abstract'])
-- covariate category for t1/2z from footnote/prose kept as documentation only (['Ezzet_2000:abstract'])
-- covariate category for AUC from footnote/prose kept as documentation only (['Ezzet_2000:abstract'])
-- implicit units: 'P' → L/h (from the popPK convention: 'No unit stated in text or table caption; intercompartmental clearance Q is conventionally expressed in L/h in population')
+- dropped unlinked row (NIL): 'in vivo MIC' — extend the ontology if this is a real PK parameter (source ['Ezzet_2000:abstract'])
+- dropped unlinked row (NIL): 'durations for which plasma lumefantrine concentrations exceeded the putative in vivo MIC' — extend the ontology if this is a real PK parameter (source ['Ezzet_2000:abstract', 'Ezzet_2000:abstract', 'Ezzet_2000:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lumefantrine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Ezzet_2000_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
@@ -88,21 +82,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.5 (6/12 fields) | 6 |
+| `gpt-oss-120b` | partly confirmed | 0.417 (5/12 fields) | 7 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[higher-dose regimen b auc increase]` |  | 60 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[higher-dose regimen c auc increase]` |  | 100 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[increase in oral bioavailability]` |  | 108 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[increased oral bioavailability]` | 108 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[p]` | 0.0001 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[areas under the concentration-time curves]` | 60 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[higher-dose regimen b higher area under the concentration-time curves]` |  | 60 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[increase in oral bioavailability by normal meal]` |  | 108 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral bioavailability]` | 108 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[population absorption half-life of lumefantrine]` |  | 4.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[population absorption half-life]` | 4.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[putative in vivo mic]` |  | 280 | only_one_extracted |
 
 </details>
@@ -119,8 +114,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Ezzet_2000:abstract', 'Ezzet_2000:abstract'] |
 | C5_dimension_Q95 | pass | [time] |  | ['Ezzet_2000:abstract'] |
+| C5_unit_missing_Q88 | fail | [mass] * [time] / [length] ** 3 |  | ['Ezzet_2000:abstract', 'Ezzet_2000:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -145,4 +140,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blumefantrine%5D%20Lumefantrine_Ezzet2000_reference&body=Drug%3A%20lumefantrine%0ARecord%3A%20Lumefantrine_Ezzet2000_reference%0APaper%3A%20Ezzet_2000%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lumefantrine/Lumefantrine_Ezzet2000_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 07:11 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:46 UTC</sub>

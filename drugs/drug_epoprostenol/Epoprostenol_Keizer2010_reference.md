@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Epoprostenol clearance of 6.07 l h−1 was rejected because the cited paper is about another drug, not epoprostenol.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="epoprostenol" model-id="Epoprostenol_Keizer2010_reference" status="rejected" stale="false" population="" measured-compound="epoprostenol" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Keizer RJ, Gupta A, Mac Gillavry MR, Jansen M, Wanders J, Beijnen JH et al. A mo
 
 ### Reviewer guidance
 
-**Epoprostenol clearance of 6.07 l h−1 was rejected because the cited paper is about another drug, not epoprostenol.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The record lists epoprostenol clearance as 6.07 l h−1, but the paper’s title and abstract do not name epoprostenol, and the relevance assessment identified it as a paper about another drug. The second reader did not provide an agreeing value for the recorded clearance; overall agreement was 0.083, with 0 of 1 reader agreeing. Extracted — epoprostenol: CL 6.07 l h−1, V1 11.3 l.
+Extracted — epoprostenol: CL 6.07 l h−1, V1 11.3 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 6.07, the second reading none; it also differs on 10 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.083, 0 of 1 reader(s) agree | 0.083 | cross-check agreement 0.083 is below 0.5: verdict partial, agreement 0.083, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.083 (1 of 12 compared fields agree, 11 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.083 | cross-check agreement 0.083 is below 0.5: verdict partial; agreement 0.083 (1 of 12 compared fields agree, 11 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

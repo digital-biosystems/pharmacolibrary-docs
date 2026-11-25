@@ -43,8 +43,8 @@ Bendamustine is an alkylating agent that treats conditions such as chronic lymph
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Chow_2002_IC30_IC50](drugs/drug_bendamustine/pd_Chow_2002_IC30_IC50.md) | apoptosis ← rituximab + bendamustine · inhibition effect | — | Chow KU et al., Anti-CD20 antibody (IDEC-C2B8, rituxima…, Haematologica (2002) | — |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Darwish_2014_infection](drugs/drug_bendamustine/pd_Darwish_2014_infection.md) | infection biomarker turnover ← bendamustine | — | Darwish M et al., Population pharmacokinetics and pharmac…, Current medical research an… (2014) | [10.1185/03007995.2014.941976](https://doi.org/10.1185/03007995.2014.941976) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Dreyling_2021_MCL](drugs/drug_bendamustine/pd_Dreyling_2021_MCL.md) | B-cell malignancy treatment response ← bendamustine · inhibition effect | — | Dreyling M et al., A Phase III study of zanubrutinib plus…, Future oncology (London, En… (2021) | [10.2217/fon-2020-0794](https://doi.org/10.2217/fon-2020-0794) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Darwish_2014_infection](drugs/drug_bendamustine/pd_Darwish_2014_infection.md) | infection biomarker turnover ← bendamustine | — | Darwish M et al., Population pharmacokinetics and pharmac…, Current medical research an… (2014) | [10.1185/03007995.2014.941976](https://doi.org/10.1185/03007995.2014.941976) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

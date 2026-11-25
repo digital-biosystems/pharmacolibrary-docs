@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> The record was rejected because the source paper studies caspofungin pharmacokinetics, and pancuronium appears only as an anesthetic covariate.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="pancuronium" model-id="Pancuronium_Roch2011_reference" status="rejected" stale="false" population="" measured-compound="pancuronium" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Roch A, Woloch C, Blayac D, Solas C, Quaranta S, Mardelle V et al. Effect of flu
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper studies caspofungin pharmacokinetics, and pancuronium appears only as an anesthetic covariate.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The review identified the paper as investigating caspofungin in pigs, where pancuronium was used solely to maintain sedation rather than as the subject drug. Consequently, the extracted clearance and volume parameters do not represent the intended analyte. A second reader also disputed the rejection verdict, disagreeing on several parameter values including a specific intercompartmental clearance figure. Extracted — pancuronium: CL 0.21 L/hour, V1 0.96 L, V2 2.8 L, Q 8.16 L/hour.
+Extracted — pancuronium: CL 0.21 L/hour, V1 0.96 L, V2 2.8 L, Q 8.16 L/hour.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 60.3, the second reading 80.8; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,7 +140,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.389, 0 of 1 reader(s) agree | 0.389 | cross-check disputed by a second reader: verdict disputed, agreement 0.389, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.389 (7 of 18 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.389 | cross-check contradicted by a second reader: verdict disputed; agreement 0.389 (7 of 18 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

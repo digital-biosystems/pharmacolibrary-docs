@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the source paper is not about olmesartan, so its parameters do not describe the drug's kinetics.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="Olmesartan" model-id="Olmesartan_Thoueille2023_reference" status="rejected" stale="false" population="" measured-compound="olmesartan" parameterization="apparent" topology="1C"></div>
 
@@ -49,11 +49,11 @@ Thoueille P, Alves Saldanha S, Desfontaine V, Kusejko K, Courlet P, Andre P et a
 
 ### Reviewer guidance
 
-**The record is rejected because the source paper is not about olmesartan, so its parameters do not describe the drug's kinetics.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The relevance screen rejected the paper because neither the title nor the abstract names olmesartan. The record was extracted from a study subject to another drug, rendering the assigned values inapplicable. Additionally, the absorption rate constant parameter carries a label referencing tenofovir rather than the target compound. Extracted — olmesartan: CL/F 39.9 L/h, V 2.66e+03 L, kabs 2 h−1.
+Extracted — olmesartan: CL/F 39.9 L/h, V 2.66e+03 L, kabs 2 h−1.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

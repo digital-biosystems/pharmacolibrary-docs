@@ -30,39 +30,49 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:45 | 1:42 | 0/0/0 | 0/0/0 | 0/0/0 | 36,635/3,840 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-23 22:26 | 0:03 | 0/0/0 | 0/0/0 | 0/0/0 | 3,578/155 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 12 matched, 11 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Baker_2004.pdf` | Baker JF et al., Pharmacokinetics and safety of the MRI…, Investigative radiology (2004) | popPK | 10 | [10.1097/01.rli.0000124455.11402.52](https://doi.org/10.1097/01.rli.0000124455.11402.52) | [15167099](https://pubmed.ncbi.nlm.nih.gov/15167099) | The pediatric study reports numeric elimination half-lives, although clearance and volume values are not provided. |
-| `Wible_2009.pdf` | Wible JH et al., Pharmacokinetics of gadoversetamide inj…, Magnetic resonance imaging (2009) | popPK | 10 | [10.1016/j.mri.2008.08.002](https://doi.org/10.1016/j.mri.2008.08.002) | [18814985](https://pubmed.ncbi.nlm.nih.gov/18814985) | Human gadoversetamide pharmacokinetics are studied, but numeric disposition parameter values are not provided in the evidence. |
-| `Swan_1999.pdf` | Swan SK et al., Pharmacokinetics, safety, and tolerabil…, Journal of magnetic resonan… (1999) | popPK | 9 | [10.1002/(sici)1522-2586(199902)9:2&lt;317::aid-jmri25&gt;3.0.co;2-b](https://doi.org/10.1002/(sici)1522-2586(199902)9:2<317::aid-jmri25>3.0.co;2-b) | [10077031](https://pubmed.ncbi.nlm.nih.gov/10077031) | Human gadoversetamide pharmacokinetics are studied, but numeric disposition parameter values are not provided in the evidence. |
+| `Wible_2009.pdf` | Wible JH et al., Pharmacokinetics of gadoversetamide inj…, Magnetic resonance imaging (2009) | popPK | 10 | [10.1016/j.mri.2008.08.002](https://doi.org/10.1016/j.mri.2008.08.002) | [18814985](https://pubmed.ncbi.nlm.nih.gov/18814985) | The paper is a PK study of gadoversetamide, but the abstract only contains qualitative statements about differences in clearance and volume of distribution without specific numeric values. |
 
-<sub>queue written 2026-10-07 18:45 UTC</sub>
+<sub>queue written 2026-11-23 22:26 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Edward_2010 | irrelevant | 0 | 0 | This is an in-vitro fibroblast proliferation study, not a pharmacokinetic study, and reports no disposition parameters. |
-| popPK | Endrikat_2018 | irrelevant | 0 | 0 | This pharmacovigilance analysis reports no quantitative gadoversetamide disposition parameters. |
-| popPK | Magnotti_2009 | irrelevant | 0 | 0 | This is an assay-validation study and reports no gadoversetamide disposition parameters. |
-| popPK | Pietsch_2009 | irrelevant | 2 | 0 | The rat study measures skin gadolinium retention, not quantitative pharmacokinetic parameters for gadoversetamide. |
-| popPK | Prybylski_2017 | irrelevant | 2 | 0 | This review and simulation does not provide readable numeric disposition parameters for gadoversetamide in the evidence. |
-| popPK | Scala_2018 | irrelevant | 0 | 0 | The paper reports quantitative population-PK parameters for gadoterate meglumine, not gadoversetamide. |
-| popPK | Swan_1999 | relevant | 9 | 1 | Human gadoversetamide pharmacokinetics are studied, but numeric disposition parameter values are not provided in the evidence. |
-| popPK | Wible_2009 | relevant | 10 | 1 | Human gadoversetamide pharmacokinetics are studied, but numeric disposition parameter values are not provided in the evidence. |
+| popPK | Baker_2004 | relevant | 9 | 2 | The study reports quantitative PK parameters for gadoversetamide in pediatric humans, but specific numeric values for clearance and volume of distribution are described as having no age-related changes without providing the exact baseline numbers in the evidence text. |
+| PGx | Baker_2004 | not_relevant | 0 | 0 | The paper reports standard pediatric pharmacokinetics based on age stratification, but contains no pharmacogenomic data, gene variants, or genotype-based analysis affecting the drug's PK/PD. |
+| popPK | Edward_2010 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study examining the effect of gadolinium-based contrast agents on fibroblast proliferation, not a pharmacokinetic study. |
+| PGx | Edward_2010 | not_relevant | 0 | 0 | The paper studies the effect of gadolinium contrast agents on fibroblast proliferation in vitro, not the effect of genetic variants on the pharmacokinetics or pharmacodynamics of gadoversetamide. |
+| popPK | Endrikat_2018 | irrelevant | 0 | 0 | This is a pharmacovigilance analysis of Nephrogenic Systemic Fibrosis (NSF) reports, not a pharmacokinetic study, and it contains no quantitative disposition parameters for gadoversetamide. |
+| PGx | Endrikat_2018 | not_relevant | 0 | 0 | The paper analyzes nephrogenic systemic fibrosis (NSF) reports and market share data for gadolinium-based contrast agents but does not discuss pharmacogenomics or genetic variants affecting PK/PD. |
+| popPK | Grothues_2007 | irrelevant | 0 | 0 | The study focuses on MRI imaging techniques for myocardial mass assessment using gadoversetamide as a contrast agent, not on its pharmacokinetic parameters. |
+| PGx | Grothues_2007 | not_relevant | 0 | 0 | The study compares MRI techniques and contrast dosage effects on imaging quality, with no data on genetic variants or pharmacogenomics. |
+| popPK | Magnotti_2009 | irrelevant | 2 | 1 | The study is an analytical validation of a gadolinium assay in dogs and cats, where gadoversetamide serves as a test substrate to verify method accuracy rather than as the subject of a population-pharmacokinetic analysis, and no specific PK parameters (CL, V, etc.) for gadoversetamide are reported. |
+| PGx | Magnotti_2009 | not_relevant | 0 | 0 | The paper describes an analytical assay for gadolinium clearance and does not report any pharmacogenomic effects. |
+| popPK | Pietsch_2009 | irrelevant | 0 | 0 | The study does not investigate gadoversetamide (it compares Omniscan, OptiMARK, Magnevist, and Gadovist) and reports tissue retention data rather than standard PK parameters. |
+| PGx | Pietsch_2009 | not_relevant | 0 | 0 | The study investigates renal impairment (physiological state) in rodents, not genetic variants or pharmacogenomics, and does not report specific PK parameters for gadoversetamide (Gadovist) relative to a genotype. |
+| popPK | Prybylski_2017 | irrelevant | 1 | 0 | The paper focuses on a review and simulation analysis of gadolinium retention for OptiMARK and Omniscan in the context of NSF, not a primary PK study of gadoversetamide. |
+| PGx | Prybylski_2017 | not_relevant | 0 | 0 | The paper discusses renal function and contrast agent stability, but does not report pharmacogenomic effects of gadoversetamide. |
+| popPK | Scala_2018 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for gadoterate meglumine, which is a different drug than the target agent gadoversetamide. |
+| PGx | Scala_2018 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of gadoterate meglumine (not gadoversetamide) in pediatric patients and does not report any pharmacogenomic effects or genotype-based variations. |
+| popPK | Swan_1999 | irrelevant | 8 | 0 | The abstract describes qualitative trends (increases/decreases) in PK parameters but provides no specific numeric values for clearance, volume, or half-life. |
+| PGx | Swan_1999 | not_relevant | 0 | 0 | The paper reports pharmacokinetic effects of renal impairment, age, and gender, but does not report pharmacogenomic effects (gene variants/genotypes). |
+| popPK | Wible_2009 | relevant | 10 | 3 | The paper is a PK study of gadoversetamide, but the abstract only contains qualitative statements about differences in clearance and volume of distribution without specific numeric values. |
+| PGx | Wible_2009 | not_relevant | 0 | 0 | The paper describes population PK in pediatric patients based on age and sex, with no mention of genetic variants, genotypes, or pharmacogenomic effects. |
 
 
 </details>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
-> The digitoxin volume of distribution of 0.241 L is physiologically implausible, causing the model's rejection.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="digitoxin" model-id="Digitoxin_Flasch1979_reference" status="rejected" stale="false" population="cats" measured-compound="digitoxin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -46,13 +46,13 @@ Flasch H, Heniz N. Pharmacokinetics of dihydrodigitoxin in the cat. A comparison
 
 ### Reviewer guidance
 
-**The digitoxin volume of distribution of 0.241 L is physiologically implausible, causing the model's rejection.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record links dihydrodigitoxin to dihydrodigitoxinic acid but assigns the volume of distribution value of 0.241 L to digitoxin. The clearance and volume check flagged this value as outside the physiological window, indicating a unit or scale extraction error. Additionally, the second reader identified the primary analyte as dihydrodigitoxin rather than digitoxin, highlighting a compound attribution discrepancy. Extracted — digitoxin: V 0.241 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — digitoxin: V 0.241 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has digitoxin, the second reading dihydrodigitoxin; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

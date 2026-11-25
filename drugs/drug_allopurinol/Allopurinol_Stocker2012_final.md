@@ -50,7 +50,7 @@ Stocker SL, McLachlan AJ, Savic RM, Kirkpatrick CM, Graham GG, Williams KM et al
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A reported unit could not be converted (AUC ratio), so that value has no SI equivalent. None of the extracted parameters is allopurinol's own; they describe oxypurinol.
 

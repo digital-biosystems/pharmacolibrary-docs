@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Ott1996_reference" status="rejected" stale="false" population="pigs" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Ott1996_reference" status="rejected" stale="false" population="pigs weighing 30-40 kg" measured-compound="indocyanine_green" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ott P, Bass L, Keiding S. The kinetics of continuously infused indocyanine green in the pig. Journal of pharmacokinetics and biopharmaceutics 24(1):19–44 (1996).
@@ -17,7 +17,7 @@ Ott P, Bass L, Keiding S. The kinetics of continuously infused indocyanine green
 
 ## Population and dosing
 
-**Population:** pigs · condition healthy · age group adult · n = 20.
+**Population:** pigs weighing 30-40 kg · condition healthy · n = 20.
 
 > **Species: pig.** This record comes from an animal study (pig), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -49,15 +49,14 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indocyanine green, the second reading indocyanine_green; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indocyanine_green, the second reading indocyanine green; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=indocyanine green
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=indocyanine_green
 
 **Extraction notes:**
 - no GROBID TEI available; abstract in Ott_1996_metadata.yaml carries no parameter-bearing sentence
@@ -65,7 +64,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -75,8 +74,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | indocyanine green | indocyanine_green | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | indocyanine green | indocyanine_green | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | indocyanine_green | indocyanine green | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | indocyanine_green | indocyanine green | mismatch |
 
 </details>
 
@@ -116,4 +115,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindocyanine_green%5D%20IndocyanineGreen_Ott1996_reference&body=Drug%3A%20indocyanine_green%0ARecord%3A%20IndocyanineGreen_Ott1996_reference%0APaper%3A%20Ott_1996%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indocyanine_green/IndocyanineGreen_Ott1996_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 21:11 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:07 UTC</sub>

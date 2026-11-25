@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Pazufloxacin clearance and volume values were disputed and units could not be standardized to SI.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="pazufloxacin" model-id="Pazufloxacin_Umezaki2022_reference" status="needs_review" stale="false" population="infected neutropenic mice" measured-compound="pazufloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Umezaki Y, Matsumoto K, Ikawa K, Yokoyama Y, Enoki Y, Shigemi A et al. Concentra
 
 ### Reviewer guidance
 
-**Pazufloxacin clearance and volume values were disputed and units could not be standardized to SI.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagreed with the extracted clearance of 2.0 L/h and volume of 0.84 L/kg, marking them as null. One reported unit could not be converted to SI, leaving that parameter without a standardized value. The reader also identified the dose compound and primary analyte as unknown. Extracted — pazufloxacin: Cmax 0.63 µg/mL, AUC∞ 1.35 µg∙h/mL, CL 2 L/h, V 0.84 L/kg.
+A reported unit could not be converted (Cmax and AUC∞), so that value has no SI equivalent. Extracted — pazufloxacin: Cmax 0.63 µg/mL, AUC∞ 1.35 µg∙h/mL, CL 2 L/h, V 0.84 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pazufloxacin, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 0.65 | 0.002968 |  | unresolved concentration unit (exp 'R2', sim 'kg/m3') |
 
 <details class="legend">

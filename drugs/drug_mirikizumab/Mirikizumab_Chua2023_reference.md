@@ -133,10 +133,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 0.0997 | 0.001237 | 0.0124 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0101 | 0.001237 | 0.1224 | μg/mL→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | pass | 228 | 173 | 0.7587 | days→SI vs simulated h |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.5 (4 of 8 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 0.0997 | 0.001237 | 0.0124 | reported 99.7 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0101 | 0.001237 | 0.1224 | reported 10.1 μg/mL→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | pass | 228 | 173 | 0.7587 | reported 9.5 days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

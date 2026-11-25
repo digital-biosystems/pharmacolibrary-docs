@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;risperidone&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/&quot;},{&quot;label&quot;:&quot;Wang_2024 \u00b7 consta&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risperidone_Kozielska2012_reference&quot;,&quot;label&quot;:&quot;Kozielska_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Kozielska2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ivaturi_2017_PANSS&quot;,&quot;label&quot;:&quot;Ivaturi_2017 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/pd_Ivaturi_2017_PANSS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risperidone_Kozielska2012_reference&quot;,&quot;label&quot;:&quot;Kozielska_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Kozielska2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risperidone_Ivaturi2017_phase_3_estimate&quot;,&quot;label&quot;:&quot;Ivaturi_2017_phase_3_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Ivaturi2017_phase_3_estimate.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risperidone_Ivaturi2017_pooled_sad_mad_estimate&quot;,&quot;label&quot;:&quot;Ivaturi_2017_pooled_sad_mad_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Ivaturi2017_pooled_sad_mad_estimate.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risperidone_Ivaturi2017_reference&quot;,&quot;label&quot;:&quot;Ivaturi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Ivaturi2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ivaturi_2017_PANSS&quot;,&quot;label&quot;:&quot;Ivaturi_2017 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/pd_Ivaturi_2017_PANSS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Q2 intercompartmental clearance was refused due to a unit dimension conflict: recorded time (days) versus required volume per time (l/d).
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q99 unit d ([time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="risperidone" model-id="Risperidone_Wang2024_consta" status="rejected" stale="false" population="adults with schizophrenia or schizoaffective disorder" measured-compound="active moiety (risperidone + 9-OH-risperidone)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -55,13 +55,13 @@ Wang W, Wang X, Dong Y, Walling DP, Liu P, Liu W et al. Population Pharmacokinet
 
 ### Reviewer guidance
 
-**Q2 intercompartmental clearance was refused due to a unit dimension conflict: recorded time (days) versus required volume per time (l/d).**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q99 unit d ([time]) vs [length] ** 3 / [time].**
 
-The parameter for apparent clearance between the central and peripheral compartments is listed with a value of 0.0467 and a unit of days. This unit dimension is incompatible with a clearance term, which requires a dimension of volume divided by time. The second reader also disagreed with the recorded values for several other parameters, including lag time and total clearance, but the specific dimensional error in Q2 was the concrete reason for rejection. Extracted — active moiety (risperidone + 9-OH-risperidone): kabs 0.179 1/d, CL 108 l/d, Q2 0.0467 d, tlag 0.0417 d, D1 23.9 d, Fab 0.755.
+A reported unit could not be converted (Q2), so that value has no SI equivalent. None of the extracted parameters is risperidone's own; they describe active moiety (risperidone + 9-OH-risperidone). Extracted — active moiety (risperidone + 9-OH-risperidone): kabs 0.179 1/d, CL 108 l/d, Q2 0.0467 d, tlag 0.0417 d, D1 23.9 d, Fab 0.755.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has risperidone (Rykindo/Consta LAI), the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

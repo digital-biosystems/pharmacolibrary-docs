@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Cephalexin Cmax of 1.1 hours is dimensionally incompatible with concentration, while absent distribution volume and clearance leave no compartmental population PK model.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit hour ([time]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="cefalexin" model-id="Cefalexin_Koroleva1981_reference" status="rejected" stale="false" population="rats and dogs" measured-compound="cephalexin" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Koroleva VG, Vasil'ev VK, Danilova VI, Firsov AA. [Cephalexin pharmacokinetics].
 
 ### Reviewer guidance
 
-**Cephalexin Cmax of 1.1 hours is dimensionally incompatible with concentration, while absent distribution volume and clearance leave no compartmental population PK model.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit hour ([time]) vs [mass] / [length] ** 3.**
 
-No volume or clearance — not a compartmental population PK model. The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Abstract-only reporting supplies summary statistics rather than a fitted model: cephalexin absorption half-life of 0.2 hour and Cmax of 1.1 hour; the Cmax unit is time, not concentration, and conflicts with mass per volume dimensions. The second reader marked the dose compound and primary analyte unknown and did not retain either reported parameter. Extracted — cefalexin: t1/2ka 0.2 hour, Cmax 1.1 hour.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefalexin: t1/2ka 0.2 hour, Cmax 1.1 hour.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cephalexin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

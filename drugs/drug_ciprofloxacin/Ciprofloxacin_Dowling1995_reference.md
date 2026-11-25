@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> Ciprofloxacin AUC was assigned the unit µg/mL/min, which is dimensionally incorrect for an area under the curve.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit µg/mL/min ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3; Q19 unit µg/mL/min ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Dowling1995_reference" status="rejected" stale="false" population="healthy mature ponies" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -62,13 +62,13 @@ Dowling PM, Wilson RC, Tyler JW, Duran SH. Pharmacokinetics of ciprofloxacin in 
 
 ### Reviewer guidance
 
-**Ciprofloxacin AUC was assigned the unit µg/mL/min, which is dimensionally incorrect for an area under the curve.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit µg/mL/min ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3; Q19 unit µg/mL/min ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.**
 
-The record lists an AUC value of 289.91 and a partial AUC value of 16.88, both with the unit µg/mL/min. This unit represents a rate rather than a concentration-time area, creating a dimension mismatch with the parameter definition. Additionally, the reported bioavailability value of 6.80% conflicts with the second reader’s value of 3.10%. Extracted — ciprofloxacin: A1 4.31 µg/mL, λ1 0.105 min⁻¹, t1/2α 6.52 min, kel 0.0044 min⁻¹, t1/2β 158 min, AUC 290 µg/mL/min, MRT 195 min, CL 18.1 mL/min/kg, … (+5).
+A reported unit could not be converted (A1, equation variable, AUC and AUCt), so that value has no SI equivalent. Extracted — ciprofloxacin: A1 4.31 µg/mL, λ1 0.105 min⁻¹, t1/2α 6.52 min, kel 0.0044 min⁻¹, t1/2β 158 min, AUC 290 µg/mL/min, MRT 195 min, CL 18.1 mL/min/kg, … (+5).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 6.80, the second reading 3.10; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the paper reports parameters for avalglucosidase alfa, not alglucosidase alfa, despite the latter being the intended analyte.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="alglucosidase alfa" model-id="AlglucosidaseAlfa_Tiraboschi2023_reference" status="rejected" stale="false" population="" measured-compound="alglucosidase_alfa" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Tiraboschi G, Marchionni D, Tuffal G, Fabre D, Martinez JM, Haack KA et al. Popu
 
 ### Reviewer guidance
 
-**The record was rejected because the paper reports parameters for avalglucosidase alfa, not alglucosidase alfa, despite the latter being the intended analyte.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source text identifies the study subject as avalglucosidase alfa, with alglucosidase alfa listed only as a comparator or co-medication. This mismatch in the measured compound invalidates the extracted clearance and volume values for the intended drug. Additionally, a second reader disagreed with the primary verdict, citing discrepancies in several underlying parameter values. Extracted — alglucosidase alfa: CL 0.783 L/h, V1 3.29 L.
+Extracted — alglucosidase alfa: CL 0.783 L/h, V1 3.29 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 23.0, the second reading 23.0; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -126,7 +126,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check disputed by a second reader: verdict disputed, agreement 0.455, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.545 | cross-check contradicted by a second reader: verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

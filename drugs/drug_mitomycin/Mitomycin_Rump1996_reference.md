@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;mitomycin&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/&quot;},{&quot;label&quot;:&quot;Rump_1996 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mitomycin_den1983_reference&quot;,&quot;label&quot;:&quot;den_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/Mitomycin_den1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Mitomycin C clearance was mislabeled with volume distribution dimensions, causing a dimension mismatch and record rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q65 unit 1/kg (dimensionless) vs [length] ** 3; Q22 unit ml/min.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].
 
-<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Rump1996_reference" status="rejected" stale="false" population="colorectal cancer patients with liver metastases undergoing chemoembolisation" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Rump1996_reference" status="rejected" stale="false" population="colorectal cancer patients with liver metastases" measured-compound="mitomycin C" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rump AF, Botvinik-Helling S, Theisohn M, Biederbick W, Schierholz JM, Stemmler M et al. Pharmacokinetics of intraarterial mitomycin C in the chemoembolisation treatment of liver metastases. General pharmacology 27(4):669–671 (1996).
@@ -16,7 +17,7 @@ Rump AF, Botvinik-Helling S, Theisohn M, Biederbick W, Schierholz JM, Stemmler M
 
 ## Population and dosing
 
-**Population:** colorectal cancer patients with liver metastases undergoing chemoembolisation · condition colorectal cancer with liver metastases · n = 12.
+**Population:** colorectal cancer patients with liver metastases · age group adult.
 
 ## Model
 
@@ -38,7 +39,7 @@ Rump AF, Botvinik-Helling S, Theisohn M, Biederbick W, Schierholz JM, Stemmler M
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +49,13 @@ Rump AF, Botvinik-Helling S, Theisohn M, Biederbick W, Schierholz JM, Stemmler M
 
 ### Reviewer guidance
 
-**Mitomycin C clearance was mislabeled with volume distribution dimensions, causing a dimension mismatch and record rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q65 unit 1/kg (dimensionless) vs [length] ** 3; Q22 unit ml/min.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].**
 
-The record defines the parameter labeled C1 (8.9 ml/min.kg) as total clearance, yet its unit dimension conflicts with the required volume distribution dimension. Additionally, the model relies on abstract-only summary statistics rather than fitted population parameters. A second reader failed to identify the clearance value, leaving that field null in their review. Extracted — mitomycin: tmax 7 min, Vss 0.57 1/kg, CL 8.9 ml/min.kg, t1/2α 8.3 min, t1/2β 58.6 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mitomycin: tmax 7 min, Vss 0.57 1/kg, CL 8.9 ml/min.kg, t1/2α 8.3 min, t1/2β 58.6 min.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of c1: this record has 8.9, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -63,8 +64,8 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 | Tmax | `Q56` · tmax | 7.0 | min | 420 | s | min | exact (1) | Rump_1996:abstract |
 | Vss | `Q65` · Vss | 0.57 | 1/kg |  |  | 1/kg | exact (1) | Rump_1996:abstract |
 | C1 | `Q22` · CL | 8.9 | ml/min.kg |  |  | ml/(min·kg) | llm (0.6) | Rump_1996:abstract |
-| T1/2 alpha | `Q59` · t1/2α | 8.3 | min | 498 | s | min | exact (1) | Rump_1996:abstract |
-| T1/2 beta | `Q60` · t1/2β | 58.6 | min | 3516 | s | min | exact (1) | Rump_1996:abstract |
+| T1/2 alpha | `Q59` · t1/2α | 8.3 | min | 498 | s | min | half_life_rule (0.95) | Rump_1996:abstract |
+| T1/2 beta | `Q60` · t1/2β | 58.6 | min | 3516 | s | min | half_life_rule (0.95) | Rump_1996:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,19 +82,18 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Rump_1996_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
 | `qwen3.8-27b` | partly confirmed | 0.889 (8/9 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
@@ -147,4 +147,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitomycin%5D%20Mitomycin_Rump1996_reference&body=Drug%3A%20mitomycin%0ARecord%3A%20Mitomycin_Rump1996_reference%0APaper%3A%20Rump_1996%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitomycin/Mitomycin_Rump1996_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:57 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:57 UTC</sub>

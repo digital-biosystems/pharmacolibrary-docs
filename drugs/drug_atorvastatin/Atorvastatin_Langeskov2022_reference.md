@@ -57,7 +57,7 @@ Langeskov EK, Kristensen K. Population pharmacokinetic of paracetamol and atorva
 
 ### Reviewer guidance
 
-**Accepted with a caveat: the covariate scenarios were not simulated.**
+**Simulated; the covariate scenarios were not simulated (advisory).**
 
 The base model was simulated, not the covariate effects the record defines.
 

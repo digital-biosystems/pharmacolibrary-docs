@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The oral bioavailability (F) parameter was left at a library default rather than using a specific estimate from the telmisartan study.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Hao2007_dose_2_mg_kg" status="needs_review" stale="false" population="spontaneously hypertensive rats" measured-compound="telmisartan" parameterization="mechanistic" topology="1C"></div>
 
@@ -59,13 +59,13 @@ Hao K, Chen YC, Cao YG, Yu D, Liu XQ, Wang GJ. Pharmacokinetic-pharmacodynamic m
 
 ### Reviewer guidance
 
-**The oral bioavailability (F) parameter was left at a library default rather than using a specific estimate from the telmisartan study.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record includes absorption parameters like Ka (4.53 /h) but does not report a fitted bioavailability value. Consequently, the model relies on a generic placeholder for F to define the input function. This means the simulated concentration profile depends on an assumption not supported by the spontaneous hypertensive rat data in this paper. Extracted — telmisartan: t1/2z 16.1 h, CL 0.16 L·kg⁻¹·h⁻¹, V 5.37 L·kg⁻¹, MRT 20 h, tmax 6.8 h, Cmax 212 ng·mL⁻¹, AUC∞ 1.22e+04 ng·h·mL⁻¹, kabs 4.53 /h, … (+1).
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — telmisartan: t1/2z 16.1 h, CL 0.16 L·kg⁻¹·h⁻¹, V 5.37 L·kg⁻¹, MRT 20 h, tmax 6.8 h, Cmax 212 ng·mL⁻¹, AUC∞ 1.22e+04 ng·h·mL⁻¹, kabs 4.53 /h, … (+1).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

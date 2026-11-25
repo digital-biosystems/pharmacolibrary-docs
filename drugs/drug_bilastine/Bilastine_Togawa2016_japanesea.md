@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bilastine bioavailability and lag time use library defaults rather than explicit estimates from Togawa_2016.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="bilastine" model-id="Bilastine_Togawa2016_japanesea" status="needs_review" stale="false" population="healthy Japanese adults" measured-compound="bilastine" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Togawa M, Yamaya H, Rodríguez M, Nagashima H. Pharmacokinetics, Pharmacodynamic
 
 ### Reviewer guidance
 
-**Bilastine bioavailability and lag time use library defaults rather than explicit estimates from Togawa_2016.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists clearance, volumes, and absorption rate, but bioavailability and lag time were left at placeholder values. These unreported parameters were not explicitly estimated in the paper. Consequently, the simulated profile relies on generic library placeholders not supported by the source data. Extracted — bilastine: CL 14.4 L/h, V1 51.2 L, Q 1.55 L/h, V2 20.2 L, kabs 1.7 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — bilastine: CL 14.4 L/h, V1 51.2 L, Q 1.55 L/h, V2 20.2 L, kabs 1.7 h−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -141,9 +141,9 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_t_half_terminal | reference | skipped |  | 3.867 |  | non-numeric value |
-| T1_tmax | reference | skipped |  | 1.154 |  | non-numeric value |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (9 of 9 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | skipped |  | 3.867 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | skipped |  | 1.154 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model's terminal half-life of 5.26 hours is over 700 times the paper's reported 0.00667 hours.
+> The model does not reproduce the paper's terminal half-life (paper 0.00667, model 5.26); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="luseogliflozin" model-id="Luseogliflozin_Samukawa2017_reference" status="needs_review" stale="false" population="Japanese patients with type 2 diabetes mellitus" measured-compound="luseogliflozin" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Samukawa Y, Mutoh M, Chen S, Mizui N. Mechanism-Based Pharmacokinetic-Pharmacody
 
 ### Reviewer guidance
 
-**The model's terminal half-life of 5.26 hours is over 700 times the paper's reported 0.00667 hours.**
+**The model does not reproduce the paper's terminal half-life (paper 0.00667, model 5.26); x1_cross_check.**
 
-The record lists an inter-compartmental clearance of 3.69 L/h, which is pharmacokinetically inconsistent with the reported terminal half-life. The second reader identified a missing peripheral volume of 18.9 L and disputed the parameter identification for the inter-compartmental clearance and central volume. These structural discrepancies prevent the model from reproducing the elimination kinetics described in the source paper. Extracted — luseogliflozin: CL/F 2.78 L/h, V 21.1 L, CL 3.69 L/h, kabs 20.3 1/h.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — luseogliflozin: CL/F 2.78 L/h, V 21.1 L, CL 3.69 L/h, kabs 20.3 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[inter-compartmental clearance].parameter_id`: this record has Q22, the second reading Q30; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -141,10 +141,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | cross-check disputed by a second reader: verdict disputed, agreement 0.727, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 0.006667 | 5.261 | 789.2 | s→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 7 | 5.261 | 0.7516 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 6.81 | 5.261 | 0.7726 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.727 | cross-check contradicted by a second reader: verdict disputed; agreement 0.727 (8 of 11 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 0.006667 | 5.261 | 789.2 | reported 24.0 s→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 7 | 5.261 | 0.7516 | reported 7.0 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 6.81 | 5.261 | 0.7726 | reported 6.81 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

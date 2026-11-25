@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The doxorubicin maximum concentration record is invalid because its value, 0.3-17, is a numerical range rather than a single scalar.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit 0.3-17 (dimensionless) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Kontny2013_reference" status="rejected" stale="false" population="adults and children older than 3 years" measured-compound="doxorubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -46,13 +46,13 @@ Kontny NE, Würthwein G, Joachim B, Boddy AV, Krischke M, Fuhr U et al. Populati
 
 ### Reviewer guidance
 
-**The doxorubicin maximum concentration record is invalid because its value, 0.3-17, is a numerical range rather than a single scalar.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit 0.3-17 (dimensionless) vs [mass] / [length] ** 3.**
 
-The parameter labelled Cmax has a value of "0.3-17" with units "0.3-17", which is a dimensionless interval instead of a concentration. This causes a dimension mismatch because the system expects a mass-per-volume quantity for maximum concentration. The clearance and central volume parameters are valid, but the invalid maximum concentration entry resulted in the record's rejection. Extracted — doxorubicin: CL 53.3 L/h, V1 17.7 L.
+Extracted — doxorubicin: CL 53.3 L/h, V1 17.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has doxorubicin → doxorubicinol (metabolism), the second reading doxorubicin → doxol (metabolism); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gammeltoft_2021_residual_infectivity](drugs/drug_narlaprevir/pd_Gammeltoft_2021_residual_infectivity.md) | SARS-CoV-2 spike protein-positive cells (percent residual infectivity) ← narlaprevir · direct sigmoid Emax (Hill) effect | — | Gammeltoft KA et al., Hepatitis C Virus Protease Inhibitors S…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02680-20](https://doi.org/10.1128/AAC.02680-20) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gammeltoft_2021_spike_protein](drugs/drug_narlaprevir/pd_Gammeltoft_2021_spike_protein.md) | SARS-CoV-2 spike protein biomarker turnover ← narlaprevir | — | Gammeltoft KA et al., Hepatitis C Virus Protease Inhibitors S…, Antimicrobial agents and ch… (2021) | [10.1128/AAC.02680-20](https://doi.org/10.1128/AAC.02680-20) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:19 | 0:07 | 0/0/0 | 1/0/0 | 0/0/0 | 27,402/369 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 13:47 | 0:28 | 0/0/0 | 1/0/0 | 0/0/0 | 51,769/2,108 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -49,7 +49,8 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Gammeltoft_2021 | irrelevant | 0 | 0 | In vitro antiviral efficacy study of HCV protease inhibitors against SARS-CoV-2; narlaprevir is one tested compound with EC50/CC50 but no PK disposition parameters (CL, V, half-life, PK model). |
+| popPK | Gammeltoft_2021 | irrelevant | 0 | 0 | The paper is an in-vitro antiviral efficacy study against SARS-CoV-2 and does not report pharmacokinetic disposition parameters (CL, V, ka) for narlaprevir. |
+| PGx | Gammeltoft_2021 | not_relevant | 0 | 0 | The paper evaluates in vitro antiviral efficacy of HCV protease inhibitors against SARS-CoV-2 and does not report pharmacogenomic effects on PK/PD parameters. |
 
 
 </details>

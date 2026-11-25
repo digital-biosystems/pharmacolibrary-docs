@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The bioavailability parameter F was left at library defaults rather than extracted from the ciprofloxacin model, invalidating the simulated profile for this paper.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Guo2022_reference" status="needs_review" stale="false" population="ICU patients" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Guo T, Abdulla A, Koch BCP, van Hasselt JGC, Endeman H, Schouten JA et al. Poole
 
 ### Reviewer guidance
 
-**The bioavailability parameter F was left at library defaults rather than extracted from the ciprofloxacin model, invalidating the simulated profile for this paper.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record notes that the model builder substituted library defaults for the bioavailability parameter (F) instead of using an explicit estimate. Consequently, the values used to simulate the pharmacokinetic profile are not supported by the data in Guo_2022. This deviation means the resulting concentration-time predictions rely on external conventions rather than the study's specific findings. Extracted — ciprofloxacin: CL 14.7 L/h, V1 61.2 L, Q 44.9 L/h, V2 71.6 L, kabs 1 h−1, tlag 0.33 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ciprofloxacin: CL 14.7 L/h, V1 61.2 L, Q 44.9 L/h, V2 71.6 L, kabs 1 h−1, tlag 0.33 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of posterior mean / study 2: this record has none, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -1,0 +1,44 @@
+{
+ "dose_source": "paper",
+ "model_id": "Atazanavir_Savic2012_reference",
+ "molar_masses": {
+  "central.C": 0.7048555
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  300.0
+ ],
+ "paper_reference": {
+  "cmax": [
+   {
+    "source": "Savic_2012:other_prose",
+    "value_si": 4.021e-06
+   }
+  ]
+ },
+ "parameters": {
+  "Cl": 4.444444444444444e-06,
+  "F": 1.0,
+  "MM": 0.7048555,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0011314285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0003,
+  "ka": 0.00075,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 4109.300166049207
+ },
+ "reference_peaks": {
+  "central.C": 0.003069450047299048
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

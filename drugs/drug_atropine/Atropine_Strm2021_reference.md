@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> Atropine's absolute bioavailability was left as a null placeholder, conflicting with the second reader's value of 0.685, causing a review dispute.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="atropine" model-id="Atropine_Strm2021_reference" status="needs_review" stale="false" population="horses" measured-compound="atropine" parameterization="mechanistic" topology="2C"></div>
 
@@ -63,13 +63,13 @@ Ström L, Dalin F, Domberg M, Stenlund C, Bondesson U, Hedeland M et al. Topical
 
 ### Reviewer guidance
 
-**Atropine's absolute bioavailability was left as a null placeholder, conflicting with the second reader's value of 0.685, causing a review dispute.**
+**cross_check_disputed; x1_cross_check.**
 
-The absolute bioavailability parameter for atropine eye drops is recorded as null, while a second reader extracted a specific value of 0.685. This discrepancy led to a disagreement where the second reader did not agree with the primary assessment. Additionally, the absorption lag time was not explicitly estimated, so a standard default value was applied instead. Extracted — atropine: V1 0.646 L/kg, V2 1.15 L/kg, CL 1.91 L/h, Q 2.48 L/h, Fab 0.781 ilogit, eye drop, kabs 5.95 1/h, t1/2ka 0.117 h, t1/2β 0.798 h, … (+3).
+A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — atropine: V1 0.646 L/kg, V2 1.15 L/kg, CL 1.91 L/h, Q 2.48 L/h, Fab 0.781 ilogit, eye drop, kabs 5.95 1/h, t1/2ka 0.117 h, t1/2β 0.798 h, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bioavailability drop: this record has none, the second reading 0.685; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -183,7 +183,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.931, 0 of 1 reader(s) agree | 0.931 | cross-check disputed by a second reader: verdict disputed, agreement 0.931, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.931 (27 of 29 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.931 | cross-check contradicted by a second reader: verdict disputed; agreement 0.931 (27 of 29 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

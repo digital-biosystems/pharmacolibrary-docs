@@ -1,7 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;lenvatinib&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/&quot;},{&quot;label&quot;:&quot;Majid_2024 \u00b7 PD Tie\u20102&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;lenvatinib&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/&quot;},{&quot;label&quot;:&quot;Majid_2024 \u00b7 PD Tie-2&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Lenvatinib_Tamai2017_base_base_model_population_mean_rse&quot;,&quot;label&quot;:&quot;Tamai_2017_base_base_model_population_mean_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/Lenvatinib_Tamai2017_base_base_model_population_mean_rse.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Lenvatinib_Tamai2017_final_final_model_population_mean_rse&quot;,&quot;label&quot;:&quot;Tamai_2017_final_final_model_population_mean_rse&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_lenvatinib/Lenvatinib_Tamai2017_final_final_model_population_mean_rse.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Tie‐2 — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+# Tie-2 — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,9 +14,9 @@
 
 ## Record summary
 
-**As extracted:** Lenvatinib (concentrations from this paper's PK model) drives Tie‐2 (in ng/L): indirect response — drug inhibits the production of Tie‐2.
+**As extracted:** Lenvatinib (concentrations from this paper's PK model) drives Tie-2 (in ng/L): indirect response — drug inhibits the production of Tie-2.
 
-**Model:** No model was generated from this record.
+**Model:** Model available in **Models**; browser simulation unavailable.
 
 > Lenvatinib exposure indirectly inhibits Tie-2 production (Kin) in an indirect-response model; Tie-2 was measured in ng/L. The shared sigmoidal Emax model reports EC50 930 ng·h/mL, maximum inhibitory effect (Emax) 0.344, and a Tie-2 Hill coefficient of 0.313; the disease progression slope is 2.93 × 10−6 1/h.
 >
@@ -34,11 +35,11 @@ Majid O et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | Baseline | `Q324` ·  | 14.6 | ng/L | llm | Majid_2024:pdv3 |
+| PD (effect) | Baseline (ng/L) | `Q324` ·  | 14.6 | ng/L | llm | Majid_2024:pdv3 |
 | PD (effect) | Hill coefficient | `Q325` ·  | 0.313 |  | llm | Majid_2024:pdv3 |
 | PD (effect) | E max | `Q323` ·  | 0.344 |  | llm | Majid_2024:pdv3 |
-| PD (effect) | EC50 | `Q321` ·  | 930 | ng*h/mL | llm | Majid_2024:pdv3 |
-| PD (effect) | Disease progression slope | `Q340` ·  | 2.93 × 10−6 | 1/h | llm | Majid_2024:pdv3 |
+| PD (effect) | EC50 (ng*h/mL) | `Q321` ·  | 930 | ng*h/mL | llm | Majid_2024:pdv3 |
+| PD (effect) | Disease progression slope (1/h) | `Q340` ·  | 2.93 × 10−6 | 1/h | llm | Majid_2024:pdv3 |
 | variability | Baseline | `Q312` ·  | 25.7 | CV % | llm | Majid_2024:pdv3 |
 | variability | EC50 | `Q312` ·  | 61.0 | CV % | llm | Majid_2024:pdv3 |
 | variability | Disease progression slope | `Q312` ·  | 193 | CV % | llm | Majid_2024:pdv3 |
@@ -50,14 +51,58 @@ Majid O et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+## Exposure-response model
+
+`Lenvatinib_Majid2024_PD_tie_2` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 14.6 ng/L | 1.46e-08 kg/m3 |
+| Emax | 0.344 | — |
+| EC50 | 930 ng*h/mL | — |
+| gamma | 0.313 | — |
+
+Closed-form check points (response, SI): `at_0` = 1.46e-08, `at_EC50` = 1.209e-08, `at_inf` = 9.578e-09
+
+Deviations:
+
+- `pd_binding_exposure_unit_unresolved` — 'ng*h/mL' — the x axis is in the paper's unit, not SI
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">Needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | pass | the response falls, as IDR-I predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | pass | nothing defaulted |
+
+Advisory:
+
+- exposure unit not resolved to SI — the x axis is in the paper's unit
+
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | confirmed | 1.0 (9/9 fields) | none |
+| `gpt-oss-120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 
-_All readers agree on the compared fields of this PD record._
+<details><summary>4 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[Q321].value` | 930 | value | mismatch |
+| `gpt-oss-120b` | `parameters[Q323].value` | 0.344 | value | mismatch |
+| `gpt-oss-120b` | `parameters[Q324].value` | 14.6 | value | mismatch |
+| `gpt-oss-120b` | `parameters[Q325].value` | 0.313 | value | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -71,19 +116,33 @@ _All readers agree on the compared fields of this PD record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_lenvatinib/Lenvatinib_Majid2024_PD_tie_2/Lenvatinib_Majid2024_PD_tie_2_modelica.zip" download>Lenvatinib_Majid2024_PD_tie_2_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_lenvatinib/Lenvatinib_Majid2024_PD_tie_2/Lenvatinib_Majid2024_PD_tie_2_matlab.zip" download>Lenvatinib_Majid2024_PD_tie_2_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_lenvatinib/Lenvatinib_Majid2024_PD_tie_2/Lenvatinib_Majid2024_PD_tie_2_sbml.zip" download>Lenvatinib_Majid2024_PD_tie_2_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_lenvatinib/Lenvatinib_Majid2024_PD_tie_2/Lenvatinib_Majid2024_PD_tie_2_cellml.zip" download>Lenvatinib_Majid2024_PD_tie_2_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
 </div></div>
+
+## How to cite
+
+**This record:** Pharmacolibrary, model `Lenvatinib_Majid2024_PD_tie_2`. <https://pharmacolibrary.github.io/#/drugs/drug_lenvatinib/pd_Majid_2024_Tie_2>
+
+```bibtex
+@misc{pharmacolibrary_LenvatinibMajid2024PDtie2,
+  title  = {{Pharmacolibrary model Lenvatinib_Majid2024_PD_tie_2}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_lenvatinib/pd_Majid_2024_Tie_2},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+_Browser simulation unavailable: this PD model family has no browser template yet. The **Models** tab provides the model in Modelica, SBML, CellML and MATLAB._
 
 <div class="pk-tab-end"></div>
 

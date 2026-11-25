@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The inter-compartmental clearance parameter for risankizumab has a unit dimension mismatch, invalidating the model structure.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit CL; L/day ([length] ** 6 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Suleiman2019v2_reference" status="rejected" stale="false" population="adults with psoriasis and Crohn&#39;s disease" measured-compound="risankizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Suleiman AA, Khatri A, Minocha M, Othman AA. Population Pharmacokinetics of the 
 
 ### Reviewer guidance
 
-**The inter-compartmental clearance parameter for risankizumab has a unit dimension mismatch, invalidating the model structure.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit CL; L/day ([length] ** 6 / [time]) vs [length] ** 3 / [time].**
 
-The record lists the inter-compartmental clearance value as 0.33 with the unit L/day, which creates a dimensional conflict with the expected parameters. This inconsistency caused the record to be rejected due to a structural error in the parameter definition. Additionally, the absolute subcutaneous bioavailability parameter is mislabeled as urinary excretion in its meaning description. Extracted — risankizumab: CL 0.3 CL; L/day, V1 5.66 L, Q 0.33 L/day, V2 3.43 L, kabs 0.18 day-1, fe 0.72 F.
+A reported unit could not be converted (CL and fe), so that value has no SI equivalent. Extracted — risankizumab: CL 0.3 CL; L/day, V1 5.66 L, Q 0.33 L/day, V2 3.43 L, kabs 0.18 day-1, fe 0.72 F.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has risankizumab, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

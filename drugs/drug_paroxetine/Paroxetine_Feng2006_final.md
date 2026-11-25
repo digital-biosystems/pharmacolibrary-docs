@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Paroxetine’s Vmax of 474 µg h⁻¹ was refused for a reported dimensional conflict, although the recorded dimensions match.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit µg h⁻¹ ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="paroxetine" model-id="Paroxetine_Feng2006_final" status="rejected" stale="false" population="elderly subjects with major depressive disorder" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Feng Y, Pollock BG, Ferrell RE, Kimak MA, Reynolds CF, Bies RR. Paroxetine: popu
 
 ### Reviewer guidance
 
-**Paroxetine’s Vmax of 474 µg h⁻¹ was refused for a reported dimensional conflict, although the recorded dimensions match.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit µg h⁻¹ ([mass] / [time]) vs [mass] / [time].**
 
-The record gives Vmax as the maximum rate of metabolism, with units of µg h⁻¹, and reports the conflicting dimensions as [mass]/[time] versus [mass]/[time]. The unit could not be converted to SI, so the stated dimensional conflict is inconclusive from the recorded facts. Extracted — paroxetine: Vmax 474 µg h⁻¹, Km 205 µg l⁻¹, V2 230 l, V3 900 l, Q 1.05 l h⁻¹, kabs 9.81 h⁻¹.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — paroxetine: Vmax 474 µg h⁻¹, Km 205 µg l⁻¹, V2 230 l, V3 900 l, Q 1.05 l h⁻¹, kabs 9.81 h⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has paroxetine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

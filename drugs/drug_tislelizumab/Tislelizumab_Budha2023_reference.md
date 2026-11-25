@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Tislelizumab model rejected because the extracted parameters define a three-compartment system, leaving the third compartment unreachable in the two-compartment structure.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="tislelizumab" model-id="Tislelizumab_Budha2023_reference" status="rejected" stale="false" population="patients with advanced tumors" measured-compound="tislelizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Budha N, Wu CY, Tang Z, Yu T, Liu L, Xu F et al. Model-based population pharmaco
 
 ### Reviewer guidance
 
-**Tislelizumab model rejected because the extracted parameters define a three-compartment system, leaving the third compartment unreachable in the two-compartment structure.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists a volume of distribution for a second peripheral compartment (99.9) alongside a central volume, but the model structure is defined as two compartments. Consequently, the third compartment has no path from the dose, rendering it an orphan compartment. Additionally, the second reader disagreed on the presence and value of the transfer rate constant and a missing parameter. Extracted — tislelizumab: k12 0.0966 1/h, V1 16.7, V2 74.7, V3 99.9.
+Extracted — tislelizumab: k12 0.0966 1/h, V1 16.7, V2 74.7, V3 99.9.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[exp(θ 1 )*24].parameter_id`: this record has Q900, the second reading Q22; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

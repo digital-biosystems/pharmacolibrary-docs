@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Lefamulin record rejected because the tissue partition coefficient Kp is recorded with concentration units (mg/L) instead of being dimensionless.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q410 unit mg/L ([mass] / [length] ** 3) vs dimensionless.
 
 <div class="pk-model-meta" hidden drug="lefamulin" model-id="Lefamulin_van2024_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="lefamulin" parameterization="mechanistic" topology="3C"></div>
 
@@ -55,13 +55,13 @@ van Os W, Pham AD, Eberl S, Minichmayr IK, van Hasselt JGC, Zeitlinger M. Integr
 
 ### Reviewer guidance
 
-**Lefamulin record rejected because the tissue partition coefficient Kp is recorded with concentration units (mg/L) instead of being dimensionless.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q410 unit mg/L ([mass] / [length] ** 3) vs dimensionless.**
 
-The partition coefficient Kp, defined as a dimensionless tissue-to-plasma ratio, is listed with the unit mg/L, a dimensional conflict that prevented the model from being validated. Additionally, a unit associated with another structural parameter could not be converted to standard international units, leaving that value undefined for the model. A second reviewer also disagreed on the classification of the PBmax parameter. Extracted — lefamulin: CL 137 L/h, V1 75.7 L, Q 42.9 L/h, V2 391 L, Q3 218 L/h, V3 400 L, Kp 2.07 mg/L, V 2.29 L.
+A reported unit could not be converted (equation variable and Kp), so that value has no SI equivalent. Extracted — lefamulin: CL 137 L/h, V1 75.7 L, Q 42.9 L/h, V2 391 L, Q3 218 L/h, V3 400 L, Kp 2.07 mg/L, V 2.29 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[pbmax].parameter_id`: this record has Q900, the second reading Q332. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

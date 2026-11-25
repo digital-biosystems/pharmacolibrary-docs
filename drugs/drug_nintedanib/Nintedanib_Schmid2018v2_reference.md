@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;nintedanib&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/&quot;},{&quot;label&quot;:&quot;Schmid_2018_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nintedanib_Schmid2018_reference&quot;,&quot;label&quot;:&quot;Schmid_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/Nintedanib_Schmid2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nintedanib_Schmid2018v2_reference&quot;,&quot;label&quot;:&quot;Schmid_2018_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/Nintedanib_Schmid2018v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Hartmann_2026_FVC&quot;,&quot;label&quot;:&quot;Hartmann_2026 \u00b7 FVC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/pd_Hartmann_2026_FVC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hartmann_2026_FVC_2&quot;,&quot;label&quot;:&quot;Hartmann_2026 \u00b7 FVC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/pd_Hartmann_2026_FVC_2.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nintedanib_Schmid2018v2_reference&quot;,&quot;label&quot;:&quot;Schmid_2018_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/Nintedanib_Schmid2018v2_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Hartmann_2026_FVC&quot;,&quot;label&quot;:&quot;Hartmann_2026 \u00b7 FVC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/pd_Hartmann_2026_FVC.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hartmann_2026_FVC_2&quot;,&quot;label&quot;:&quot;Hartmann_2026 \u00b7 FVC&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_nintedanib/pd_Hartmann_2026_FVC_2.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Nintedanib was refused because its measured-drug concentration was assigned to the central compartment rather than the metabolite compartment, and its parent–metabolite structure was represented as one-compartment oral PK.
+> T3_output_variable; t3_topology_template (+1 more).
 
 <div class="pk-model-meta" hidden drug="nintedanib" model-id="Nintedanib_Schmid2018v2_reference" status="rejected" stale="false" population="patients with NSCLC or IPF" measured-compound="nintedanib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Schmid U, Liesenfeld KH, Fleury A, Dallinger C, Freiwald M. Population pharmacok
 
 ### Reviewer guidance
 
-**Nintedanib was refused because its measured-drug concentration was assigned to the central compartment rather than the metabolite compartment, and its parent–metabolite structure was represented as one-compartment oral PK.**
+**T3_output_variable; t3_topology_template (+1 more).**
 
-The record measures nintedanib and identifies BIBF 1202 as its presystemically formed metabolite, but assigns the reported concentration to the central compartment; its one-compartment oral structure also does not match the parent–metabolite structure. The model builder defaulted the absorption lag time and assumed F=1, Fm=1, with no molar correction. A second reader disputed the verdict, with agreement 0.824 and 0 of 1 reader agreeing. Extracted — nintedanib: CL/F 897 L/h, V1/F 465 L, kabs 0.0376 1/h, tlag 0.417 h, allometric_exponent 0.619.
+Extracted — nintedanib: CL/F 897 L/h, V1/F 465 L, kabs 0.0376 1/h, tlag 0.417 h, allometric_exponent 0.619.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of percentage change in aucτ,ss: this record has none, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -196,7 +196,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.824, 0 of 1 reader(s) agree | 0.824 | cross-check disputed by a second reader: verdict disputed, agreement 0.824, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.824 (14 of 17 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.824 | cross-check contradicted by a second reader: verdict disputed; agreement 0.824 (14 of 17 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

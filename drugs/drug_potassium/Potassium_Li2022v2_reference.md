@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Potassium clearance of 0.182 L/day was rejected because the paper concerns another drug, while bioavailability and absorption lag time were defaulted.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Potassium" model-id="Potassium_Li2022v2_reference" status="rejected" stale="false" population="" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Li Q, Qiao J, Jin H, Chen B, He Z, Wang G et al. Population pharmacokinetic/phar
 
 ### Reviewer guidance
 
-**Potassium clearance of 0.182 L/day was rejected because the paper concerns another drug, while bioavailability and absorption lag time were defaulted.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The paper’s title and abstract do not name potassium, and it was judged to concern another drug. Bioavailability and absorption lag time were defaulted rather than explicitly estimated. The record also reports potassium volume of distribution of 6.65 L and an absorption rate constant of 0.463 1/day. Extracted — potassium: CL 0.182 L/day, V 6.65 L, kabs 0.463 1/day.
+Extracted — potassium: CL 0.182 L/day, V 6.65 L, kabs 0.463 1/day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q322: this record has none, the second reading 0.52; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.75 (6 of 8 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -5,11 +5,11 @@
 
 # mefloquine — `Mefloquine_Svensson2002_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Only clearance was extracted — no volume.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Svensson2002_reference" status="needs_review" stale="false" population="patients with falciparum malaria" measured-compound="mefloquine enantiomers" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Svensson2002_reference" status="rejected" stale="false" population="patients with falciparum malaria" measured-compound="mefloquine, artemisinin" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Svensson US, Alin H, Karlsson MO, Bergqvist Y, Ashton M. Population pharmacokinetic and pharmacodynamic modelling of artemisinin and mefloquine enantiomers in patients with falciparum malaria. European journal of clinical pharmacology 58(5):339–351 (2002).
@@ -17,30 +17,27 @@ Svensson US, Alin H, Karlsson MO, Bergqvist Y, Ashton M. Population pharmacokine
 
 ## Population and dosing
 
-**Population:** patients with falciparum malaria · condition falciparum malaria · age group adult · n = 42.
+**Population:** patients with falciparum malaria · condition falciparum malaria · age group adult.
 
-**Dosed compound ≠ measured compound:** dosed mefloquine, measured mefloquine enantiomers.
+**Dosed compound ≠ measured compound:** dosed artemisinin, mefloquine, measured mefloquine, artemisinin.
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| oral clearance of RS-mefloquine | CL/F | 3.51 | l/h |
-| artemisinin oral clearance fold difference (last day vs first day) | CL_ratio | 6.9 | -fold |
-| absorption rate constant | kabs | 0.28 | h⁻¹ |
-| T lag,1 | tlag | 0.147 | h |
+| oral clearance | CL/F | 3.51 | l/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,22 +47,19 @@ Svensson US, Alin H, Karlsson MO, Bergqvist Y, Ashton M. Population pharmacokine
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is mefloquine's own; they describe mefloquine enantiomers. Extracted — mefloquine enantiomers: CL/F 3.51 l/h, CL_ratio 6.9 -fold, kabs 0.28 h⁻¹, tlag 0.147 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is mefloquine's own; they describe mefloquine, artemisinin. Extracted — mefloquine, artemisinin: CL/F 3.51 l/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mefloquine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has artemisinin, mefloquine, the second reading mefloquine; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| oral clearance of RS-mefloquine | `Q27` · CL/F | 3.51 | l/h | 9.75e-07 | m3/s | l/h | llm_confirmed (0.6) | Svensson_2002:abstract |
-| artemisinin oral clearance fold difference (last day vs first day) | `Q31` · CL_ratio | 6.9 | -fold |  |  | -·fold | llm_corrected (0.6) | Svensson_2002:abstract |
-| absorption rate constant | `Q49` · kabs | 0.28 | h⁻¹ | 7.778e-05 | 1/s | 1/h | review_gapfill (0.7) | Mim_2026:review |
-| T lag,1 | `Q83` · tlag | 0.147 | h | 529.2 | s | h | review_gapfill (0.7) | Cherkaoui-Rbati_2023:review |
+| oral clearance | `Q27` · CL/F | 3.51 | l/h | 9.75e-07 | m3/s | l/h | exact (1) | Svensson_2002:abstract, Svensson_2002:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,16 +69,12 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q27 ('oral clearance of SR-mefloquine', value 0.602) — already have one for this compound
-- unit_dimension_unknown: '-fold' (CL_ratio)
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=mefloquine enantiomers
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- dropped 'artemisinin oral clearance' → Q27: unit 'fold' is a statistic (%, CV, RSE, shrinkage or fold), not a clearance — the row is a variability or a ratio, not the estimate
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=mefloquine, artemisinin
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
+- molar mass: none found for 'mefloquine, artemisinin' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Mim_2026's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Cherkaoui-Rbati_2023's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Svensson_2002_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -92,23 +82,21 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.167 (1/6 fields) | 5 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption rate constant]` | 0.28 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[artemisinin oral clearance fold difference]` | 6.9 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral clearance of rs-mefloquine]` | 3.51 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['mefloquine', 'artemisinin', 'none']] | [] | mismatch |
 | `gpt-oss-120b` | `parameters[oral clearance]` |  | 3.51 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t lag,1]` | 0.147 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | mefloquine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | mefloquine enantiomers | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[oral clearance]` | 3.51 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | artemisinin, mefloquine | mefloquine | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | mefloquine, artemisinin | mefloquine | mismatch |
 
 </details>
 
@@ -122,15 +110,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Svensson_2002:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Mim_2026:review'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Cherkaoui-Rbati_2023:review'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Svensson_2002:abstract', 'Svensson_2002:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 3.51 L/h | ['Svensson_2002:abstract'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 3.51 L/h | ['Svensson_2002:abstract', 'Svensson_2002:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -142,19 +128,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -164,4 +140,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmefloquine%5D%20Mefloquine_Svensson2002_reference&body=Drug%3A%20mefloquine%0ARecord%3A%20Mefloquine_Svensson2002_reference%0APaper%3A%20Svensson_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mefloquine/Mefloquine_Svensson2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 07:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:56 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01X&quot;,&quot;href&quot;:&quot;atc/L01X.md&quot;},{&quot;label&quot;:&quot;cisplatin&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/&quot;},{&quot;label&quot;:&quot;Nagai_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Imbs2016_reference&quot;,&quot;label&quot;:&quot;Imbs_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Imbs2016_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mody_2022_R&quot;,&quot;label&quot;:&quot;Mody_2022 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/pd_Mody_2022_R.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Cisplatin_MoritaOgawa2020_reference&quot;,&quot;label&quot;:&quot;Morita-Ogawa_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_MoritaOgawa2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Cisplatin_Terranova2021_reference&quot;,&quot;label&quot;:&quot;Terranova_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/Cisplatin_Terranova2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mody_2022_R&quot;,&quot;label&quot;:&quot;Mody_2022 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_cisplatin/pd_Mody_2022_R.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # cisplatin — `Cisplatin_Nagai1998_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was rejected because cisplatin clearance is recorded as 27.3%, a dimensionless percentage incompatible with clearance’s volume-per-time dimension.
+> CL has no unit.
 
-<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Nagai1998_reference" status="rejected" stale="false" population="patients with cancer" measured-compound="cisplatin (unchanged CDDP)" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="cisplatin" model-id="Cisplatin_Nagai1998_reference" status="needs_review" stale="false" population="patients with cancer" measured-compound="cisplatin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Nagai N, Ogata H, Wada Y, Tsujino D, Someya K, Ohno T et al. Population pharmacokinetics and pharmacodynamics of cisplatin in patients with cancer: analysis with the NONMEM program. Journal of clinical pharmacology 38(11):1025–1034 (1998).
@@ -17,9 +17,7 @@ Nagai N, Ogata H, Wada Y, Tsujino D, Someya K, Ohno T et al. Population pharmaco
 
 ## Population and dosing
 
-**Population:** patients with cancer · condition cancer · n = 26.
-
-**Dosed compound ≠ measured compound:** dosed cisplatin, measured cisplatin (unchanged CDDP).
+**Population:** patients with cancer · condition cancer · age group adult.
 
 ## Model
 
@@ -29,16 +27,16 @@ Nagai N, Ogata H, Wada Y, Tsujino D, Someya K, Ohno T et al. Population pharmaco
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Cl of CDDP was increased by 27.3% after the 2-hour infusion schedule compared with Cl after the longer infusions | CL | 27.3 | % |
-| The Vd | Vnorm | 13.4 | L |
+| Cl of unchanged CDDP | CL | 27.3 |  |
+| Vd | V | 13.4 | L/m2 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714), qwen3.8-27b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,20 +46,20 @@ Nagai N, Ogata H, Wada Y, Tsujino D, Someya K, Ohno T et al. Population pharmaco
 
 ### Reviewer guidance
 
-**The record was rejected because cisplatin clearance is recorded as 27.3%, a dimensionless percentage incompatible with clearance’s volume-per-time dimension.**
+**CL has no unit.**
 
-The reported 27.3% describes an increase in unchanged CDDP clearance after the 2-hour infusion versus longer infusions, not an absolute clearance value. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader also disagreed with extracting the 27.3% clearance change and the 13.4 L normalized volume of distribution, listing both as absent. Extracted — cisplatin (unchanged CDDP): CL 27.3 %, Vnorm 13.4 L.
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cisplatin: CL 27.3, V 13.4 L/m2.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which molecule was measured: this record has cisplatin (unchanged CDDP), the second reading cisplatin; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Cl of CDDP was increased by 27.3% after the 2-hour infusion schedule compared with Cl after the longer infusions | `Q22` · CL | 27.3 | % |  |  | % | llm_confirmed (0.6) | Nagai_1998:abstract |
-| The Vd | `Q352` · Vnorm | 13.4 | L | 0.0134 | m3 | L | llm_corrected (0.6) | Nagai_1998:abstract |
+| Cl of unchanged CDDP | `Q22` · CL | 27.3 |  |  |  |  | llm_confirmed (0.6) | Nagai_1998:abstract |
+| Vd | `Q61` · V | 13.4 | L/m2 | 0.02318 | m3 | l/m2 | exact (1) | Nagai_1998:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -71,35 +69,29 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which mo
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'Cl of CDDP was increased by 27.3% after the 2-hour infusion schedule compared with Cl after the longer infusions' → Q22 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_unknown: 'L/m2' (Vnorm)
-- covariate category for IIV from footnote/prose kept as documentation only (['Nagai_1998:abstract'])
-- dropped value-less row: 'interindividual variability for both slope'
-- dropped value-less row: 'interindividual variability for both EC50'
-- implicit units: 'The Vd' → L (from the popPK convention: 'The excerpt identifies this as a volume of distribution normalized to a standard body size but states no unit. Volume pa')
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cisplatin (unchanged CDDP)
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
+- dropped unlinked row (NIL): 'dose' — extend the ontology if this is a real PK parameter (source ['Nagai_1998:abstract'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cisplatin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Nagai_1998_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 | `qwen3.8-27b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[2‐hour infusion schedule effect on cl]` |  | 27.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl of unchanged cddp]` | 27.3 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[cl of cddp was increased by 27.3% after the 2-hour infusion schedule compared with cl after the longer infusions]` | 27.3 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[plasma concentration measurements]` |  | 157 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[the vd]` | 13.4 |  | only_one_extracted |
@@ -120,11 +112,12 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Nagai_1998:abstract'] |
-| C5_dimension_Q352 | pass | [length] ** 3 |  | ['Nagai_1998:abstract'] |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Nagai_1998:abstract'] |
+| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] |  | ['Nagai_1998:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 27.3 | ['Nagai_1998:abstract'] |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q61 | pass | volume within physiological range | 23.2 L | ['Nagai_1998:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -136,9 +129,19 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -148,4 +151,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcisplatin%5D%20Cisplatin_Nagai1998_reference&body=Drug%3A%20cisplatin%0ARecord%3A%20Cisplatin_Nagai1998_reference%0APaper%3A%20Nagai_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cisplatin/Cisplatin_Nagai1998_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 22:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 17:48 UTC</sub>

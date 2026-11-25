@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Ranibizumab CL/F of 0.087 mL/h was rejected because its clearance-to-volume magnitude was flagged as implausible, attributed to unit or scale extraction.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ranibizumab" model-id="Ranibizumab_Kim2020_rbz_0_3_mg_0_03_ml" status="rejected" stale="false" population="rabbits" measured-compound="ranibizumab" parameterization="apparent" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Kim HM, Park YJ, Lee S, Son JY, Hong HK, Ham MH et al. Intraocular Pharmacokinet
 
 ### Reviewer guidance
 
-**Ranibizumab CL/F of 0.087 mL/h was rejected because its clearance-to-volume magnitude was flagged as implausible, attributed to unit or scale extraction.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-A reported unit could not be converted to SI, leaving a parameter without an SI value. A second reader disagreed with the reported ranibizumab absorption rate constant of 0.0528 days−1 and recorded no value for it. Extracted — ranibizumab: t1/2z 55.6 h, MRT 171 h, Cmax 23.1 µg/mL, tmax 1 h, AUC 3.43e+03 h × µg/mL, V/F 7.01 mL, CL/F 0.087 mL/h, kabs 0.0528 days−1.
+A reported unit could not be converted (Cmax and AUC), so that value has no SI equivalent. Extracted — ranibizumab: t1/2z 55.6 h, MRT 171 h, Cmax 23.1 µg/mL, tmax 1 h, AUC 3.43e+03 h × µg/mL, V/F 7.01 mL, CL/F 0.087 mL/h, kabs 0.0528 days−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 0.0528, the second reading none. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

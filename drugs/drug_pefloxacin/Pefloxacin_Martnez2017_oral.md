@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-> Pefloxacin model was rejected because intercompartmental clearances were extracted with reciprocal hours units instead of volume per time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h−1 (1 / [time]) vs 1 / [time]; Q30 unit h−1 (1 / [time]) vs [length] ** 3 / [time]; Q99 unit h−1 (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="pefloxacin" model-id="Pefloxacin_Martnez2017_oral" status="rejected" stale="false" population="healthy broiler chickens" measured-compound="pefloxacin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -64,13 +64,13 @@ Martínez MA, Ares I, Rodríguez JL, Martínez M, Martínez-Larrañaga MR, Isea 
 
 ### Reviewer guidance
 
-**Pefloxacin model was rejected because intercompartmental clearances were extracted with reciprocal hours units instead of volume per time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h−1 (1 / [time]) vs 1 / [time]; Q30 unit h−1 (1 / [time]) vs [length] ** 3 / [time]; Q99 unit h−1 (1 / [time]) vs [length] ** 3 / [time].**
 
-Parameters labeled as intercompartmental clearances (K12 and K21) carry units of h−1, conflicting with the required volume per time dimension for Q. This dimensional mismatch caused the structural check to fail for these specific transfer parameters. Additionally, the metabolite N-demethyl pefloxacin is defined with zero compartments, yet half-life parameters are reported for it, creating a structural inconsistency. Extracted — pefloxacin: λ1 0.43 h−1, kel 0.054 h−1, kabs 0.8 h−1, t1/2α 1.68 h, t1/2ka 0.87 h, V 3.55 L/kg, Q 0.16 h−1, Q2 0.1 h−1, … (+7); N-demethyl pefloxacin: t1/2α 1.25 h.
+A reported unit could not be converted (equation variable, λ1, Q and Q2), so that value has no SI equivalent. Extracted — pefloxacin: λ1 0.43 h−1, kel 0.054 h−1, kabs 0.8 h−1, t1/2α 1.68 h, t1/2ka 0.87 h, V 3.55 L/kg, Q 0.16 h−1, Q2 0.1 h−1, … (+7); N-demethyl pefloxacin: t1/2α 1.25 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pefloxacin, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

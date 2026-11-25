@@ -32,10 +32,8 @@ Tirabrutinib is an irreversible Bruton's tyrosine kinase inhibitor investigated 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Meng_2022_TJC68](drugs/drug_tirabrutinib/pd_Meng_2022_TJC68.md) | TJC68 ← tirabrutinib · direct linear effect | — | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Meng_2022_fBTK](drugs/drug_tirabrutinib/pd_Meng_2022_fBTK.md) | free BTK ← tirabrutinib · indirect response — drug stimulates the loss of free BTK | — | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Meng_2022_hsCRP](drugs/drug_tirabrutinib/pd_Meng_2022_hsCRP.md) | hsCRP ← tirabrutinib · direct linear effect | — | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Meng_2022_tBTK](drugs/drug_tirabrutinib/pd_Meng_2022_tBTK.md) | total BTK ← tirabrutinib · indirect response — drug stimulates the production of total BTK | — | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Meng_2022_fBTK](drugs/drug_tirabrutinib/pd_Meng_2022_fBTK.md) | free BTK ← tirabrutinib · target-mediated drug disposition | — | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Meng_2022_tBTK](drugs/drug_tirabrutinib/pd_Meng_2022_tBTK.md) | total BTK ← tirabrutinib · target-mediated drug disposition | — | Meng A et al., Semi-Mechanistic PK/PD Modeling and Sim…, Clinical pharmacology and t… (2022) | [10.1002/cpt.2439](https://doi.org/10.1002/cpt.2439) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +47,7 @@ Tirabrutinib is an irreversible Bruton's tyrosine kinase inhibitor investigated 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:23 | 2:32 | 0/1/0 | 4/0/0 | 0/0/0 | 47,264/13,517 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 16:14 | 2:35 | 0/1/0 | 2/0/0 | 0/0/0 | 91,264/13,699 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -58,9 +56,15 @@ Tirabrutinib is an irreversible Bruton's tyrosine kinase inhibitor investigated 
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Meng_2022 | not_relevant | 0 | 0 | The paper focuses on PK/PD modeling and dose selection for tirabrutinib but does not report any genetic variants, genotypes, or pharmacogenomic effects on PK/PD parameters. |
+
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btirabrutinib%5D&body=Drug%3A%20tirabrutinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tirabrutinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 08:21 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 16:12 UTC</sub>

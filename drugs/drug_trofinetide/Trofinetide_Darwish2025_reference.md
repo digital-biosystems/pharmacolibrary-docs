@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Trofinetide absolute bioavailability was left at a library default rather than using the reported value of 3.65.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="trofinetide" model-id="Trofinetide_Darwish2025_reference" status="needs_review" stale="false" population="healthy volunteers and patients with Rett syndrome, fragile X syndrome, or traumatic brain injury (age 5-64 years)" measured-compound="trofinetide" parameterization="mechanistic" topology="2C"></div>
 
@@ -67,13 +67,13 @@ Darwish M, Passarell J, Maxwell K, Youakim JM, Bradley H, Bishop KM. Population 
 
 ### Reviewer guidance
 
-**Trofinetide absolute bioavailability was left at a library default rather than using the reported value of 3.65.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).**
 
-The record lists an absolute bioavailability of 3.65, yet the model builder defaulted this parameter to a generic placeholder. Additionally, covariate effects such as weight and GFR powers were defined but not exercised in simulations. A second reader disagreed with the record, disputing the dose compound and omitting several covariate parameters found in this record. Extracted — trofinetide: CL 2.02 L/h, V1 3.89 L, Q 6.17 L/h, V2 5.46 L, kabs 4.09 1/h, Fab 3.65.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — trofinetide: CL 2.02 L/h, V1 3.89 L, Q 6.17 L/h, V2 5.46 L, kabs 4.09 1/h, Fab 3.65.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trofinetide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -206,7 +206,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.667 (18 of 27 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (18 of 27 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

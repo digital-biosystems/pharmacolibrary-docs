@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Risankizumab clearance of 0.24 L/day and bioavailability defaults produce a simulated Cmax of 0.0016, failing to match the paper's 0.0145.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0145, model 0.0016); f use library defaults, not estimates from this paper (+1 more).
 
 <div class="pk-model-meta" hidden drug="risankizumab" model-id="Risankizumab_Khatri2019_white" status="needs_review" stale="false" population="healthy subjects and patients with psoriasis, GPP, or EP" measured-compound="risankizumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Khatri A, Eckert D, Oberoi R, Suleiman A, Pang Y, Cheng L et al. Pharmacokinetic
 
 ### Reviewer guidance
 
-**Risankizumab clearance of 0.24 L/day and bioavailability defaults produce a simulated Cmax of 0.0016, failing to match the paper's 0.0145.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0145, model 0.0016); f use library defaults, not estimates from this paper (+1 more).**
 
-The one-compartment model uses a clearance of 0.24 L/day and steady-state volume of 9.12 L, but leaves bioavailability and lag time at library defaults rather than using paper-specific estimates. Consequently, the simulated peak concentration is 0.0016, which is an order of magnitude lower than the paper's reported 0.0145. Additionally, the second reader identified missing covariates for body weight and absorption, further highlighting gaps in the parameter extraction relative to the source data. Extracted — risankizumab: CL 0.24 L/day, V 9.12 L, kabs 0.908 day−1.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — risankizumab: CL 0.24 L/day, V 9.12 L, kabs 0.908 day−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 18 mg sc: this record has none, the second reading 1.04; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -164,12 +164,12 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 0.0145 | 0.001598 | 0.1102 | µg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0124 | 0.001598 | 0.1289 | µg/mL→SI vs simulated kg/m3 |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.667 (6 of 9 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 0.0145 | 0.001598 | 0.1102 | reported 14.5 µg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0124 | 0.001598 | 0.1289 | reported 12.4 µg/mL→SI vs simulated kg/m3 |
 | T1_cmin_ss | reference | skipped | 2.2 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 2 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | pass | 672 | 632.1 | 0.9407 | days→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 672 | 632.1 | 0.9407 | reported 28.0 days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

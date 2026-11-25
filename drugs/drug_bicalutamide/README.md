@@ -39,7 +39,7 @@ Bicalutamide is a nonsteroidal antiandrogen medication primarily used to treat p
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Tsoi_2025_EC50](drugs/drug_bicalutamide/pd_Tsoi_2025_EC50.md) | DOX resistance biomarker turnover ← bicalutamide | — | Tsoi H et al., BQ323636.1 Employs the AR-CCRK Axis to…, Cells (2025) | [10.3390/cells14171341](https://doi.org/10.3390/cells14171341) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span> | [Tsoi_2025_EC50](drugs/drug_bicalutamide/pd_Tsoi_2025_EC50.md) | DOX resistance biomarker turnover ← bicalutamide | — | Tsoi H et al., BQ323636.1 Employs the AR-CCRK Axis to…, Cells (2025) | [10.3390/cells14171341](https://doi.org/10.3390/cells14171341) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:30 | 0:16 | 0/0/0 | 0/0/0 | 0/0/0 | 617/65 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 17:15 | 0:01 | 0/0/0 | 0/0/0 | 0/0/0 | 215/69 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -47,7 +47,7 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Cazzola_2014.pdf` | Cazzola M et al., Pharmacological characterization of the…, European journal of pharmac… (2014) | pd | 4 | [10.1016/j.ejphar.2014.10.025](https://doi.org/10.1016/j.ejphar.2014.10.025) | [25446566](https://www.ncbi.nlm.nih.gov/pubmed/25446566) | metadata signals extractable PD data (Emax) |
 
-<sub>queue written 2026-10-07 13:30 UTC</sub>
+<sub>queue written 2026-11-23 17:15 UTC</sub>
 
 ## Screened and excluded
 
@@ -55,6 +55,7 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|
 | PGx | Albertí_2011 | not_relevant | 3 | 5 | Identifies CYP3A4/2D6 as enzymes for aclidinium oxidative metabolism in vitro, but no gene variant/genotype effect on PK/PD parameters is reported. |
 | popPK | Cazzola_2014 | irrelevant | 0 | 0 | no_text gate: only 128 chars of text extracted (&lt; 400) |
+| PGx | Cazzola_2014 | not_relevant | 0 | 0 | The paper characterizes the pharmacological interaction between aclidinium bromide and formoterol fumarate in isolated bronchi and does not investigate the impact of gene variants or genotypes on PK or PD parameters. |
 
 
 </details>

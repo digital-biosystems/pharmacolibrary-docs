@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Granisetron clearance (0.25423392 mL/h) and volume of distribution (1.5462161 mL) are implausibly small for healthy adults.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="granisetron" model-id="Granisetron_Li2023_reference" status="rejected" stale="false" population="healthy adults" measured-compound="granisetron" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Li J, Hu P, Zhou L, Nagahama F, Chen R. Population pharmacokinetic analysis of t
 
 ### Reviewer guidance
 
-**Granisetron clearance (0.25423392 mL/h) and volume of distribution (1.5462161 mL) are implausibly small for healthy adults.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The total clearance parameter is recorded as 0.25423392 mL/h, which is far below physiological expectations for an adult. The volume of distribution is listed as 1.5462161 mL, suggesting a severe scale or unit extraction error rather than a true biological property. Extracted — granisetron: kabs 0.018 1/h, V 1.55 mL, CL 0.254 mL/h.
+Extracted — granisetron: kabs 0.018 1/h, V 1.55 mL, CL 0.254 mL/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

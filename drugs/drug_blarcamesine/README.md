@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Ette_2025_latent_RTT_severity](drugs/drug_blarcamesine/pd_Ette_2025_latent_RTT_severity.md) | latent RTT severity ← blarcamesine · disease-progression model | — | Ette EI et al., The new big is small: Leveraging knowle…, British journal of clinical… (2025) | [10.1111/bcp.15843](https://doi.org/10.1111/bcp.15843) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Ette_2025_latent_RTT_severity](drugs/drug_blarcamesine/pd_Ette_2025_latent_RTT_severity.md) | latent RTT severity ← blarcamesine · disease-progression model | — | Ette EI et al., The new big is small: Leveraging knowle…, British journal of clinical… (2025) | [10.1111/bcp.15843](https://doi.org/10.1111/bcp.15843) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-13 13:20 | 0:37 | 0/0/0 | 1/0/0 | 0/0/0 | 25,907/1,284 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
+| 2026-10-13 13:20 | 0:37 | 0/0/0 | 0/1/0 | 0/0/0 | 25,907/1,284 | einfracz / qwen3.8-27b | 5 | 1/4 | 5/0 | 0 |
 
 ## Coverage
 

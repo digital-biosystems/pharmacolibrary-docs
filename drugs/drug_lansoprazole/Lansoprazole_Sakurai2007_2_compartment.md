@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the unit l/kg for the peripheral distribution clearance parameter Q3 is dimensionally inconsistent with a clearance quantity.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit l/kg ([length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="lansoprazole" model-id="Lansoprazole_Sakurai2007_2_compartment" status="rejected" stale="false" population="healthy Japanese males" measured-compound="lansoprazole" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Sakurai Y, Hirayama M, Hashimoto M, Tanaka T, Hasegawa S, Irie S et al. Populati
 
 ### Reviewer guidance
 
-**The record was rejected because the unit l/kg for the peripheral distribution clearance parameter Q3 is dimensionally inconsistent with a clearance quantity.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit l/kg ([length] ** 3) vs [length] ** 3 / [time].**
 
-The parameter Q3, representing the intercompartmental distribution clearance between the central and third compartments, is listed with the value 0.612 in units of l/kg. This unit dimension conflicts with the required clearance dimensions of volume per time. Consequently, the model structure could not be validated for this specific parameter. Extracted — lansoprazole: Q 0.11 l/kg, Q3 0.612 L/h/kg, CL 4.9 L/h, V 11 L.
+A reported unit could not be converted (Q), so that value has no SI equivalent. Extracted — lansoprazole: Q 0.11 l/kg, Q3 0.612 L/h/kg, CL 4.9 L/h, V 11 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lansoprazole, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

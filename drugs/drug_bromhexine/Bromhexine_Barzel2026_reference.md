@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper does not describe bromhexine pharmacokinetics, leaving the peripheral-to-central clearance parameter as a placeholder.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="bromhexine" model-id="Bromhexine_Barzel2026_reference" status="rejected" stale="false" population="" measured-compound="bromhexine" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,11 +49,11 @@ Barzel I, van der Ploeg AT, Pijnappel WWMP, van der Kuy PHM, van den Hout JMP, P
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper does not describe bromhexine pharmacokinetics, leaving the peripheral-to-central clearance parameter as a placeholder.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The relevance screen determined the paper's title and abstract do not name bromhexine, indicating the study subject is a different drug. Consequently, the intercompartmental clearance between the central and peripheral compartments was not explicitly estimated but left at a library placeholder. This failure to identify the correct analyte in the source text invalidated the extraction of the volume and central clearance values. Extracted — bromhexine: CL 1.97 L/h, V 1.69 L, Q 0.0206 L/h.
+Extracted — bromhexine: CL 1.97 L/h, V 1.69 L, Q 0.0206 L/h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

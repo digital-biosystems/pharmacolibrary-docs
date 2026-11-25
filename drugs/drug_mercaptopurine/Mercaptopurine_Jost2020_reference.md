@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model is rejected because the methotrexate polyglutamates compartment is unlinked from the dose path, creating an orphan structure for this compound.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="mercaptopurine" model-id="Mercaptopurine_Jost2020_reference" status="rejected" stale="false" population="children with acute lymphoblastic leukemia" measured-compound="absolute neutrophil count" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -51,13 +51,13 @@ Jost F, Zierk J, Le TTT, Raupach T, Rauh M, Suttorp M et al. Model-Based Simulat
 
 ### Reviewer guidance
 
-**The model is rejected because the methotrexate polyglutamates compartment is unlinked from the dose path, creating an orphan structure for this compound.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a metabolic link from 6-mercaptopurine to 6-thioguanine nucleotides, but no corresponding path connects the dose to the methotrexate polyglutamates compartment. A second reader disagreed on the presence of this second metabolic link, noting only the 6-mercaptopurine connection in the source. Additionally, the reader disagreed on whether methotrexate was correctly identified as a dose compound alongside 6-mercaptopurine. Extracted — mercaptopurine: ktr 7.19, slope 67.8, t1/2γ 16.5, add_error 0.226.
+Extracted — mercaptopurine: ktr 7.19, slope 67.8, t1/2γ 16.5, add_error 0.226.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has 6-mercaptopurine and methotrexate, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

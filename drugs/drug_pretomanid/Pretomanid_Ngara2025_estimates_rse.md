@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The model is rejected because the KD parameter's unit, d−1, is dimensionally incompatible with its definition as an equilibrium dissociation constant.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit d−1 (1 / [time]) vs [mass] / [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="pretomanid" model-id="Pretomanid_Ngara2025_estimates_rse" status="rejected" stale="false" population="mice with tuberculosis" measured-compound="pretomanid" parameterization="apparent" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Ngara B, Flori L, van Wijk RC, Ernest JP, Tyagi S, Soni H et al. Translational M
 
 ### Reviewer guidance
 
-**The model is rejected because the KD parameter's unit, d−1, is dimensionally incompatible with its definition as an equilibrium dissociation constant.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit d−1 (1 / [time]) vs [mass] / [length] ** 3; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists KD, the equilibrium dissociation constant for drug-target binding, with a value of 0.41 and a unit of d−1. This time-based unit conflicts with the expected concentration dimensions for a dissociation constant, creating a structural error in the parameter definition. Furthermore, the absence of a conversion path for a reported unit meant the model was built with placeholder values rather than extracted data. Extracted — pretomanid: CL/F 404 L/h, Km 0.948 mg/L, V1/F 764 L, Vmax 1.9, V2/F 0.203 L, Q/F 0.042 L/h, KD 0.41 d−1, t1/2z 17.4 d, … (+3).
+A reported unit could not be converted (Km and KD), so that value has no SI equivalent. Extracted — pretomanid: CL/F 404 L/h, Km 0.948 mg/L, V1/F 764 L, Vmax 1.9, V2/F 0.203 L, Q/F 0.042 L/h, KD 0.41 d−1, t1/2z 17.4 d, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has BTZ-043, bedaquiline, pretomanid, linezolid, the second reading pretomanid; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

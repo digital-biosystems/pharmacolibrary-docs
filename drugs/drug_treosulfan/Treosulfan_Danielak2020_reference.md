@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Treosulfan’s apparent intercompartmental clearance is reported as 5.12 1/h, a reciprocal-time unit that conflicts with clearance dimensions, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit 1/h (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="treosulfan" model-id="Treosulfan_Danielak2020_reference" status="rejected" stale="false" population="Wistar rats" measured-compound="treosulfan" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -59,13 +59,13 @@ Danielak D, Romański M, Kasprzyk A, Teżyk A, Główka F. Population pharmacoki
 
 ### Reviewer guidance
 
-**Treosulfan’s apparent intercompartmental clearance is reported as 5.12 1/h, a reciprocal-time unit that conflicts with clearance dimensions, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit 1/h (1 / [time]) vs [length] ** 3 / [time].**
 
-The parameter is defined as clearance between the central and peripheral compartments, but its reported unit is 1/h rather than volume per time. A reported unit also could not be converted to SI, leaving a parameter without an SI value. Extracted — treosulfan: Q 5.12 1/h, V1/F 1.03 L/kg, CL/F 0.419 L/h/kg, V2/F 0.914, Q/F 0.0233 L/h/kg, k41 0.271 1/h, Q2/F 0.0122 L/h/kg, CLint 0.12; EBDM: CL/F 6.24 L/h/kg, V1/F 6.56 L/kg.
+A reported unit could not be converted (Q), so that value has no SI equivalent. Extracted — treosulfan: Q 5.12 1/h, V1/F 1.03 L/kg, CL/F 0.419 L/h/kg, V2/F 0.914, Q/F 0.0233 L/h/kg, k41 0.271 1/h, Q2/F 0.0122 L/h/kg, CLint 0.12; EBDM: CL/F 6.24 L/h/kg, V1/F 6.56 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has treosulfan → ebdm (metabolism), the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

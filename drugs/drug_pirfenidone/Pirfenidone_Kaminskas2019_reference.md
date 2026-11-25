@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> Pirfenidone's central volume of 0.302 L and clearance of 2.61 L/h fall outside physiological windows, triggering a rejected verdict for the sheep model.
+> C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="pirfenidone" model-id="Pirfenidone_Kaminskas2019_reference" status="rejected" stale="false" population="healthy adult sheep" measured-compound="pirfenidone" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Kaminskas LM, Landersdorfer CB, Bischof RJ, Leong N, Ibrahim J, Davies AN et al.
 
 ### Reviewer guidance
 
-**Pirfenidone's central volume of 0.302 L and clearance of 2.61 L/h fall outside physiological windows, triggering a rejected verdict for the sheep model.**
+**C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The model parameters for pirfenidone were flagged as having implausible magnitudes, specifically the central volume of 0.302 L and total clearance of 2.61 L/h. Additionally, the record contained a structural defect where a compartment or metabolite was unreachable from the dose. The second reader noted the dose compound and primary analyte were identified as unknown, creating a mismatch with this record's specification of pirfenidone. Extracted — pirfenidone: CL 2.61 L/h, V1 0.302 L, V2 7.85 L.
+Extracted — pirfenidone: CL 2.61 L/h, V1 0.302 L, V2 7.85 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pirfenidone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

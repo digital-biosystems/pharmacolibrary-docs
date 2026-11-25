@@ -50,7 +50,7 @@ Truong NH, Benaboud S, Bouazza N, Barboura M, Bardin E, Miralles M et al. Elexac
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has elexacaftor/tezacaftor/ivacaftor, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The renal clearance parameter for cibenzoline has units of ng/mL, a concentration, which is dimensionally invalid for a rate constant or flow rate.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time]; Q26 unit ng/mL ([mass] / [length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="cibenzoline" model-id="Cibenzoline_Brazzell1985_reference" status="rejected" stale="false" population="healthy elderly males" measured-compound="cibenzoline" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Brazzell RK, Khoo KC, Szuna AJ, Sandor D, Aogaichi K, Wills RJ. Pharmacokinetics
 
 ### Reviewer guidance
 
-**The renal clearance parameter for cibenzoline has units of ng/mL, a concentration, which is dimensionally invalid for a rate constant or flow rate.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time]; Q26 unit ng/mL ([mass] / [length] ** 3) vs [length] ** 3 / [time].**
 
-The renal clearance value of 265 is assigned the unit ng/mL, which represents drug concentration rather than a volume flow rate required for clearance. This dimensional conflict means the parameter lacks a valid physical interpretation in standard pharmacokinetic units. Consequently, the value could not be processed into a usable standard form for model evaluation. Extracted — cibenzoline: λ1 0.406 hr-1, kel 0.0717 hr-1, V 23.8 L, kexcr 0.749 hr-1, Ae 50.4 mg, CLR 265 ng/mL, t1/2z 9.4 hr.
+A reported unit could not be converted (λ1, equation variable, Ae  and CLR), so that value has no SI equivalent. Extracted — cibenzoline: λ1 0.406 hr-1, kel 0.0717 hr-1, V 23.8 L, kexcr 0.749 hr-1, Ae 50.4 mg, CLR 265 ng/mL, t1/2z 9.4 hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a: this record has 2021, the second reading none; it also differs on 10 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cyclophosphamide’s reported clearance of 27.8 L/h and distribution volume of 88.2352 L were rejected because the paper concerns another drug.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="cyclophosphamide" model-id="Cyclophosphamide_Xie2025_reference" status="rejected" stale="false" population="" measured-compound="cyclophosphamide" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Xie H, Zheng Y, Zhang H, Guo Y, Liu M, Weng Q et al. Association of NR1I2 Polymo
 
 ### Reviewer guidance
 
-**Cyclophosphamide’s reported clearance of 27.8 L/h and distribution volume of 88.2352 L were rejected because the paper concerns another drug.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The record attributes a total clearance of 27.8 L/h and a distribution volume of 88.2352 L to cyclophosphamide. Neither the paper’s title nor abstract names cyclophosphamide, and the paper was judged to concern another drug. Extracted — cyclophosphamide: CL 27.8 L/h, V 88.2 L.
+Extracted — cyclophosphamide: CL 27.8 L/h, V 88.2 L.
 
 Independently confirmed by `glm-5.3-flash`, `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -116,7 +116,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (5 of 5 compared fields agree); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

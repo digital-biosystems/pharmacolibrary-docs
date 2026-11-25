@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Brexpiprazole's transit rate constant and volume of distribution carry impossible units, breaking dimensional consistency and physiological checks.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q76 unit L/h ([length] ** 3 / [time]) vs [length] ** 3; Q306 unit L ([length] ** 3) vs 1 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Higashi2025_reference" status="rejected" stale="false" population="healthy adults and patients with schizophrenia" measured-compound="brexpiprazole" parameterization="apparent" topology="1C"></div>
 
@@ -44,7 +44,7 @@ Higashi K, Sasaki T, Aoki K, Sekine D, Maeda K, Shiomi Y et al. Population pharm
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +54,13 @@ Higashi K, Sasaki T, Aoki K, Sekine D, Maeda K, Shiomi Y et al. Population pharm
 
 ### Reviewer guidance
 
-**Brexpiprazole's transit rate constant and volume of distribution carry impossible units, breaking dimensional consistency and physiological checks.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q76 unit L/h ([length] ** 3 / [time]) vs [length] ** 3; Q306 unit L ([length] ** 3) vs 1 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The transit rate constant is assigned units of L instead of 1/h, and the volume of distribution is labeled with L/h rather than L. These unit errors prevent the model from converting parameters to standard SI units, resulting in an apparent clearance of 1.15 L/h that fails physiological plausibility checks. Extracted — brexpiprazole: CLint 0.74, CL/F 1.15 L/h, V/F 63 L/h, ktr 1.9 L, allometric_exponent 0.62 L.
+A reported unit could not be converted (ktr and allometric_exponent), so that value has no SI equivalent. Extracted — brexpiprazole: CLint 0.74, CL/F 1.15 L/h, V/F 63 L/h, ktr 1.9 L, allometric_exponent 0.62 L.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[absorption rate constant, ktr (h-].covariate_forms`: this record has none, the second reading ['power']; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,6 +133,34 @@ The transit rate constant is assigned units of L instead of 1/h, and the volume 
 - LLM selected parameter table(s) 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.6 (12/20 fields) | 8 |
+
+<details><summary>8 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[absorption rate constant, ktr (h-].covariate_forms` | [] | ['power'] | mismatch |
+| `gpt-oss-120b` | `parameters[apparent clearance extensive metaboliser, cl/f]` | 1.15 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent clearance intermediate].covariate_forms` | ['linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[apparent clearance intermediate].parameter_id` | Q3 | Q27 | mismatch |
+| `gpt-oss-120b` | `parameters[apparent inter-compartmental]` |  | 1.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[phase 1 scaling factor (versus].parameter_id` | Q319 | Q63 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_cl_f_egfr_alt_alanine_aminotransferase_cl_f_apparent_clearance_cyp_cytochrome_p450_estimated]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_ktr_weight_power]` |  | -0.228 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

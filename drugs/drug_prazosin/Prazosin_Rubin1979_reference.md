@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
-> Prazosin clearance has no reported value and was left to a placeholder, so this abstract-only record was held back rather than published.
+> No value for prazosin's clearance; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="prazosin" model-id="Prazosin_Rubin1979_reference" status="model_quarantined" stale="false" population="dogs" measured-compound="prazosin" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Rubin P, Yee YG, Anderson M, Blaschke T. Prazosin first-pass metabolism and hepa
 
 ### Reviewer guidance
 
-**Prazosin clearance has no reported value and was left to a placeholder, so this abstract-only record was held back rather than published.**
+**No value for prazosin's clearance; t6_deviations (+1 more).**
 
-No value for prazosin's clearance. The model was built, but prazosin's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The abstract alone supplied summary statistics in place of a fitted model; in the one-compartment model, steady-state distribution volume (48.6 liters) was used as the distribution volume, reproducing AUC and terminal half-life but not the early distribution phase. A second reader disputed the record, with agreement 0.231 and 0 of 1 readers agreeing, including disagreements about prazosin attribution and reported bioavailability (0.38) and fast half-life (3.9 min). Extracted — prazosin: Fab 0.38, t1/2α 3.9 min, t1/2z 153 min, Vss 48.6 liters.
+The model was built, but prazosin's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — prazosin: Fab 0.38, t1/2α 3.9 min, t1/2z 153 min, Vss 48.6 liters.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has prazosin, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.231, 0 of 1 reader(s) agree | 0.231 | cross-check disputed by a second reader: verdict disputed, agreement 0.231, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.231 (3 of 13 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.231 | cross-check contradicted by a second reader: verdict disputed; agreement 0.231 (3 of 13 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

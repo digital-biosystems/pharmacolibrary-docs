@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
-> Clearance for gabapentin has unit kg*min, conflicting with the required volume/time dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit kg*min ([mass] * [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Hampton2021_reference" status="rejected" stale="false" population="healthy adult Duroc pigs" measured-compound="gabapentin" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Hampton CE, Queiroz-Williams P, Oubre MJ, Martin A, Gisclair AT, Pypendop BH. Ph
 
 ### Reviewer guidance
 
-**Clearance for gabapentin has unit kg*min, conflicting with the required volume/time dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit kg*min ([mass] * [time]) vs [length] ** 3 / [time].**
 
-The clearance parameter is assigned a value of 1.2 kg*min, which presents a dimension of mass times time. This conflicts with the physical requirement for clearance, which must be expressed as volume divided by time. Additionally, the record was constructed from the abstract alone, meaning the reported summary statistics stand in for a fitted model. Extracted — gabapentin: V 170 ml/kg, CL 1.2 kg*min, Vss 594 ml/kg, t1/2z 360 min, t1/2ka 58 min, Cmax 9.16e+03 ng/ml, tmax 194 min, Fab 47 %, … (+2).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — gabapentin: V 170 ml/kg, CL 1.2 kg*min, Vss 594 ml/kg, t1/2z 360 min, t1/2ka 58 min, Cmax 9.16e+03 ng/ml, tmax 194 min, Fab 47 %, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has gabapentin, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

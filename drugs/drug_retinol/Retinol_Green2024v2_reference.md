@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Volume parameters for retinol use molar amount units, and the second peripheral compartment is unreachable from the dose.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q63 unit μmol ([substance]) vs [length] ** 3; Q64 unit μmol ([substance]) vs [length] ** 3; Q77 unit μmol ([substance]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="retinol" model-id="Retinol_Green2024v2_reference" status="rejected" stale="false" population="Ghanaian women of reproductive age" measured-compound="retinol" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Green MH, Lopez-Teros V, Green JB, Lietz G, Kumordzie SM, Oxley A et al. Use of 
 
 ### Reviewer guidance
 
-**Volume parameters for retinol use molar amount units, and the second peripheral compartment is unreachable from the dose.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q63 unit μmol ([substance]) vs [length] ** 3; Q64 unit μmol ([substance]) vs [length] ** 3; Q77 unit μmol ([substance]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-V1, V2, and V3 are assigned values of 3.362, 920.458, and 52.6608 μmol respectively, which represent substance amount rather than physical volume, causing a dimension mismatch for a one-compartment model. The record specifies a three-compartment structure with V3, yet the model topology lacks a pathway connecting this second peripheral compartment to the dose administration site. Consequently, the structural definition of the model is inconsistent with its parameter list and compartment connectivity. Extracted — retinol: V1 3.36 μmol, V2 920 μmol, V3 52.7 μmol, CLm/F 0.651 μmol/d.
+A reported unit could not be converted (V1, V2, V3 and CLm/F), so that value has no SI equivalent. Extracted — retinol: V1 3.36 μmol, V2 920 μmol, V3 52.7 μmol, CLm/F 0.651 μmol/d.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has retinyl acetate, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

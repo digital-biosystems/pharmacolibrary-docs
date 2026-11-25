@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record refused due to disputed cross-check agreement on ganciclovir clearance and volume parameters.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ganciclovir" model-id="Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent" status="needs_review" stale="false" population="critically ill children with cytomegalovirus infection" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Li S, Shu C, Wu S, Xu H, Wang Y. Population Pharmacokinetics and Dose Optimizati
 
 ### Reviewer guidance
 
-**Record refused due to disputed cross-check agreement on ganciclovir clearance and volume parameters.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagreed with the extracted clearance value of 4.57 L/h, citing -1.15 instead. Similarly, the volume of distribution value of 10.97 L was disputed in favor of -0.79. These conflicts prevented consensus on the model's central pharmacokinetic parameters. Extracted — ganciclovir: CL 4.57 L/h, V 11 L, allometric_exponent 0.79.
+Extracted — ganciclovir: CL 4.57 L/h, V 11 L, allometric_exponent 0.79.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of k1: this record has 0.79, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -156,7 +156,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check disputed by a second reader: verdict disputed, agreement 0.4, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.4 (4 of 10 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.4 | cross-check contradicted by a second reader: verdict disputed; agreement 0.4 (4 of 10 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -172,7 +172,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ganciclovir/Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent/Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent_modelica.zip" download>Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ganciclovir/Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent/Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent_modelica.zip" download>Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ganciclovir/Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent/Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent_fmi.zip" download>Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ganciclovir/Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent/Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent_matlab.zip" download>Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ganciclovir/Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent/Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent_matlab_simbio.zip" download>Ganciclovir_Li2020v2_model_ii_the_simplest_wt_based_exponent_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>

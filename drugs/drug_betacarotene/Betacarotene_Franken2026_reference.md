@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A11C&quot;,&quot;href&quot;:&quot;atc/A11C.md&quot;},{&quot;label&quot;:&quot;betacarotene&quot;,&quot;href&quot;:&quot;drugs/drug_betacarotene/&quot;},{&quot;label&quot;:&quot;Franken_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betacarotene_Franken2026_reference&quot;,&quot;label&quot;:&quot;Franken_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Betacarotene_Franken2026_reference&quot;,&quot;label&quot;:&quot;Franken_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_betacarotene/Betacarotene_Franken2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # betacarotene — `Betacarotene_Franken2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The betacarotene record was rejected because its paper concerns another drug and its bioavailability (F) was defaulted, with no explicit estimate.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
-<div class="pk-model-meta" hidden drug="betacarotene" model-id="Betacarotene_Franken2026_reference" status="rejected" stale="false" population="" measured-compound="betacarotene" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="betacarotene" model-id="Betacarotene_Franken2026_reference" status="needs_review" stale="false" population="" measured-compound="betacarotene" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Franken LG, van Lieshout B, Eugenio J, Verbeek R, Voermans M, van den Berg E et al. Pediatric pharmacokinetics and pharmacodynamics of guanabenz for the treatment of vanishing white matter. Scientific reports 16(1):19086 (2026).
@@ -29,7 +29,7 @@ Franken LG, van Lieshout B, Eugenio J, Verbeek R, Voermans M, van den Berg E et 
 <figure class="pk-models-diagram"><img src="drugs/drug_betacarotene/Betacarotene_Franken2026_reference/Betacarotene_Franken2026_reference.svg" alt="Betacarotene_Franken2026_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -42,7 +42,7 @@ Franken LG, van Lieshout B, Eugenio J, Verbeek R, Voermans M, van den Berg E et 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.444). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,13 +52,13 @@ Franken LG, van Lieshout B, Eugenio J, Verbeek R, Voermans M, van den Berg E et 
 
 ### Reviewer guidance
 
-**The betacarotene record was rejected because its paper concerns another drug and its bioavailability (F) was defaulted, with no explicit estimate.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The paper is about another drug, not betacarotene. Bioavailability (F) was defaulted rather than explicitly estimated. A second reader disputed the reported estimates: clearance was 7.67 versus 7, intercompartmental clearance 10.53 versus 1.20, absorption rate constant 1.3 versus 1.16, volume of distribution 8.83 versus 54.9, and peripheral-compartment volume 8.8 versus 3.36. Extracted — betacarotene: CL 7.67 L/h/kg, V 8.83 L/kg, V2 8.8 L/kg, Q 10.5 L/h/kg, tlag 0.39 h, kabs 1.3 h-1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — betacarotene: CL 7.67 L/h/kg, V 8.83 L/kg, V2 8.8 L/kg, Q 10.5 L/h/kg, tlag 0.39 h, kabs 1.3 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 7.67, the second reading 7; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,13 +135,13 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|
-| T0_analyte_identity | fail | betacarotene (or metabolite) | paper about another drug |  | paper subject is not betacarotene: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_output_variable | pass | C_central (measured=betacarotene) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check disputed by a second reader: verdict disputed, agreement 0.444, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.444 (4 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.444 | cross-check contradicted by a second reader: verdict disputed; agreement 0.444 (4 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -153,9 +153,19 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

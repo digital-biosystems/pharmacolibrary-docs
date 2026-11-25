@@ -22,7 +22,6 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Barnett_2020_BRET](drugs/drug_nalfurafine/pd_Barnett_2020_BRET.md) | BRET signal (Gβγ recruitment, normalized to maximum U50,488 response) ← nalfurafine · direct sigmoid Emax (Hill) effect | — | Barnett ME et al., Unique Pharmacological Properties of th…, Molecular pharmacology (2020) | [10.1124/mol.120.119404](https://doi.org/10.1124/mol.120.119404) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yamaguchi_2022_Ziec](drugs/drug_nalfurafine/pd_Yamaguchi_2022_Ziec.md) | κOR activation measured as change in impedance (ΔZiec) via CellKeyTM system ← nalfurafine · direct Emax (saturable) effect | — | Yamaguchi M et al., Evaluation of the Intracellular Signali…, Molecules (Basel, Switzerla… (2022) | [10.3390/molecules27207065](https://doi.org/10.3390/molecules27207065) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yamaguchi_2022_arrestin_recruitment](drugs/drug_nalfurafine/pd_Yamaguchi_2022_arrestin_recruitment.md) | β-arrestin recruitment to κORs via PathHunter® assay ← nalfurafine · direct Emax (saturable) effect | — | Yamaguchi M et al., Evaluation of the Intracellular Signali…, Molecules (Basel, Switzerla… (2022) | [10.3390/molecules27207065](https://doi.org/10.3390/molecules27207065) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Yamaguchi_2022_cAMP](drugs/drug_nalfurafine/pd_Yamaguchi_2022_cAMP.md) | intracellular cAMP levels (G-protein-mediated signaling) via GloSensor® cAMP assay ← nalfurafine · direct Emax (saturable) effect | — | Yamaguchi M et al., Evaluation of the Intracellular Signali…, Molecules (Basel, Switzerla… (2022) | [10.3390/molecules27207065](https://doi.org/10.3390/molecules27207065) |
@@ -39,7 +38,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:07 | 0:15 | 0/0/0 | 1/3/0 | 0/0/0 | 22,852/1,198 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 01:19 | 0:03 | 0/0/0 | 0/3/0 | 0/0/0 | 4,394/161 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -52,7 +51,8 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Barnett_2020 | irrelevant | 0 | 0 | In vitro BRET signaling study of KOR pharmacology; nalfurafine is only a test ligand with potency values, no PK/disposition parameters. |
+| popPK | Barnett_2020 | irrelevant | 0 | 0 | The study is an in vitro mechanistic pharmacology paper examining G-protein coupling, not a pharmacokinetic study, and contains no disposition parameters for nalfurafine. |
+| PGx | Barnett_2020 | not_relevant | 0 | 0 | The paper investigates G-protein signaling mechanisms of kappa opioid receptors in vitro, not the effect of human gene variants on nalfurafine pharmacokinetics or pharmacodynamics. |
 | popPK | Kumada_2017 | irrelevant | 0 | 0 | This is an efficacy/safety clinical trial with no pharmacokinetic parameters reported for nalfurafine. |
 | popPK | Yamaguchi_2022 | irrelevant | 0 | 0 | In vitro cell-signaling study of κOR agonist potency (EC50/bias factors), with no pharmacokinetic disposition parameters for nalfurafine. |
 

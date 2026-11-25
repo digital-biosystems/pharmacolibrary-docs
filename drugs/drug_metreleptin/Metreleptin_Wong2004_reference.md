@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The clearance unit 'ml/kg.h' was incorrectly parsed as a structural volume parameter, causing a dimension mismatch that rejected the record.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml/kg.h ([length] ** 3 * [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="metreleptin" model-id="Metreleptin_Wong2004_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="r-metHuLeptin" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Wong SL, DePaoli AM, Lee JH, Mantzoros CS. Leptin hormonal kinetics in the fed s
 
 ### Reviewer guidance
 
-**The clearance unit 'ml/kg.h' was incorrectly parsed as a structural volume parameter, causing a dimension mismatch that rejected the record.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml/kg.h ([length] ** 3 * [time]) vs [length] ** 3 / [time].**
 
-The record lists a clearance value of 79 with the unit 'ml/kg.h', which physically represents flow rate rather than volume. The reviewer identified a conflict where this flow unit was applied to a volume compartment definition. Additionally, the second reader disagreed on the primary analyte and failed to extract the clearance, half-life, and volume parameters, indicating inconsistency in the data extraction from the abstract. Extracted — metreleptin: t1/2z 3.4 h, CL 79 ml/kg.h, Vss 150 ml/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — metreleptin: t1/2z 3.4 h, CL 79 ml/kg.h, Vss 150 ml/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has r-metHuLeptin, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

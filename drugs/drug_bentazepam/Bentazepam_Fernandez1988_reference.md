@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bentazepam's bioavailability, clearance, lag time, and inter-compartmental rate constants were left at defaults, so the model was quarantined.
+> No value for bentazepam's bioavailability, clearance, absorption lag time, central→peripheral rate constant and peripheral→central rate constant; t6_deviations (+1 more).
 
-<div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Fernandez1988_reference" status="model_quarantined" stale="false" population="patients receiving multiple oral doses of bentazepam" measured-compound="bentazepam" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="bentazepam" model-id="Bentazepam_Fernandez1988_reference" status="model_quarantined" stale="false" population="patients" measured-compound="bentazepam" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Fernandez Lastra C, Gonzalez Lopez F, Dominguez-Gil A, Mariño EL. Discrimination of kinetic models in heteroscedastic parametric estimation of bentazepam following multiple dosing. International journal of clinical pharmacology, therapy, and toxicology 26(7):335–338 (1988).
@@ -48,13 +48,13 @@ Fernandez Lastra C, Gonzalez Lopez F, Dominguez-Gil A, Mariño EL. Discriminatio
 
 ### Reviewer guidance
 
-**Bentazepam's bioavailability, clearance, lag time, and inter-compartmental rate constants were left at defaults, so the model was quarantined.**
+**No value for bentazepam's bioavailability, clearance, absorption lag time, central→peripheral rate constant and peripheral→central rate constant; t6_deviations (+1 more).**
 
-The record lacks extracted values for the bioavailability, clearance, absorption lag time, and both inter-compartmental rate constants. Consequently, library placeholders substituted for these specific pharmacokinetic parameters. This omission prevented the model from being published as a valid quantitative estimate. Extracted — bentazepam: kabs 2.02 h-1, V 2.2 l/kg, kel 0.13 h-1, V1 2.05 l/kg, k12 0.042 h-1, k21 0.103 h-1.
+The model was built, but bentazepam's bioavailability, clearance, absorption lag time, central→peripheral rate constant and peripheral→central rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bentazepam: kabs 2.02 h-1, V 2.2 l/kg, kel 0.13 h-1, V1 2.05 l/kg, k12 0.042 h-1, k21 0.103 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bentazepam, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -145,7 +145,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.125 (2 of 16 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.125 | cross-check contradicted by a second reader: verdict disputed; agreement 0.125 (2 of 16 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -179,4 +179,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bbentazepam%5D%20Bentazepam_Fernandez1988_reference&body=Drug%3A%20bentazepam%0ARecord%3A%20Bentazepam_Fernandez1988_reference%0APaper%3A%20Fernandez_1988%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_bentazepam/Bentazepam_Fernandez1988_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:18 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:22 UTC</sub>

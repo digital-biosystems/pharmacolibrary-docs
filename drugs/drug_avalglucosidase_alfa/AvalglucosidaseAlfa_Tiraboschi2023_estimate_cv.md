@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the dimension of the intercompartmental clearance parameter conflicted with its assigned unit of mass per time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/h ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="avalglucosidase alfa" model-id="AvalglucosidaseAlfa_Tiraboschi2023_estimate_cv" status="rejected" stale="false" population="pediatric and adult patients with Pompe disease" measured-compound="avalglucosidase_alfa" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ Tiraboschi G, Marchionni D, Tuffal G, Fabre D, Martinez JM, Haack KA et al. Popu
 
 ### Reviewer guidance
 
-**The record was rejected because the dimension of the intercompartmental clearance parameter conflicted with its assigned unit of mass per time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/h ([mass] / [time]) vs [mass] / [time].**
 
-The structural parameter representing intercompartmental clearance between the central and second peripheral compartments was labeled with a unit of mass per time, specifically 12 mg/h. This dimension is incompatible with clearance, which requires a volume per time dimension such as liters per hour. Although the peripheral volume is correctly listed as 296 L, the unit assignment for the clearance term creates a fundamental dimensional error in the model structure. Extracted — avalglucosidase alfa: CL 0.808 L/h, V1 3.37 L, Vmax 12 mg/h, Km 0.541 µg/mL, Q 0.254 L/h, V2 296 L, Q3 1.87 L/h, V3 1.31 L.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — avalglucosidase alfa: CL 0.808 L/h, V1 3.37 L, Vmax 12 mg/h, Km 0.541 µg/mL, Q 0.254 L/h, V2 296 L, Q3 1.87 L/h, V3 1.31 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has avalglucosidase_alfa, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

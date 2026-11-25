@@ -46,7 +46,7 @@ Haustein KO. Pharmacokinetic and pharmacodynamic properties of oral anticoagulan
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 121, the second reading -127; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 

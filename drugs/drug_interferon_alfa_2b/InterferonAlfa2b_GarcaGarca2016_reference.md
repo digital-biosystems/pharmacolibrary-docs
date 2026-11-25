@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Readers disputed the identity of interferon alfa 2b’s S0 parameter, reported as 33.9 ng/mL, so the record was held back.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="interferon alfa-2b" model-id="InterferonAlfa2b_GarcaGarca2016_reference" status="needs_review" stale="false" population="healthy male volunteers" measured-compound="interferon_alfa_2b" parameterization="mechanistic" topology="1C"></div>
 
@@ -56,13 +56,13 @@ García-García I, Hernández-González I, Díaz-Machado A, González-Delgado CA
 
 ### Reviewer guidance
 
-**Readers disputed the identity of interferon alfa 2b’s S0 parameter, reported as 33.9 ng/mL, so the record was held back.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader also differed on the dose and primary-analyte descriptions, and supplied a value of 5.71 for a parameter absent from the record. Tlag was defaulted rather than explicitly estimated. A reported unit could not be converted to SI, but the record does not identify which parameter had that unit, so its effect is inconclusive. Extracted — interferon alfa 2b: kabs 0.15 h–1, Fab 0.22, V 38.4 L, kel 0.21 h−1, CL 1.8 L/h.
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — interferon alfa 2b: kabs 0.15 h–1, Fab 0.22, V 38.4 L, kel 0.21 h−1, CL 1.8 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has interferon_alfa_2b and interferon_gamma, the second reading interferon alpha-2b and interferon gamma (co-formulated); it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -154,7 +154,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.692, 0 of 1 reader(s) agree | 0.692 | cross-check disputed by a second reader: verdict disputed, agreement 0.692, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.692 (9 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.692 | cross-check contradicted by a second reader: verdict disputed; agreement 0.692 (9 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

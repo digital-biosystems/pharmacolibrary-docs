@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;citalopram&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/&quot;},{&quot;label&quot;:&quot;Weisskopf_2020 \u00b7 model_for_scit_sdcit_in_plasma_breast_milk&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friberg_2006_QTci&quot;,&quot;label&quot;:&quot;Friberg_2006 \u00b7 QTci&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/pd_Friberg_2006_QTci.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Citalopram_Friberg2006_reference&quot;,&quot;label&quot;:&quot;Friberg_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Friberg2006_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_estimate&quot;,&quot;label&quot;:&quot;Weisskopf_2020_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_estimate.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma&quot;,&quot;label&quot;:&quot;Weisskopf_2020_model_for_scit_sdcit_in_plasma&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea&quot;,&quot;label&quot;:&quot;Weisskopf_2020_model_for_scit_sdcit_in_plasma_breast_milk&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Friberg_2006_QTci&quot;,&quot;label&quot;:&quot;Friberg_2006 \u00b7 QTci&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_citalopram/pd_Friberg_2006_QTci.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # citalopram — `Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Λ1 has no unit.
+> F use library defaults, not estimates from this paper; t3_output_variable (+3 more).
 
-<div class="pk-model-meta" hidden drug="citalopram" model-id="Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea" status="needs_review" stale="false" population="lactating women treated with escitalopram or racemic citalopram (perinatal period)" measured-compound="escitalopram (SCIT)" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="citalopram" model-id="Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea" status="rejected" stale="false" population="breastfeeding women" measured-compound="escitalopram" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Weisskopf E, Guidi M, Fischer CJ, Bickle Graz M, Beaufils E, Nguyen KA et al. A population pharmacokinetic model for escitalopram and its major metabolite in depressive patients during the perinatal period: Prediction of infant drug exposure through breast milk. British journal of clinical pharmacology 86(8):1642–1653 (2020).
@@ -17,33 +17,31 @@ Weisskopf E, Guidi M, Fischer CJ, Bickle Graz M, Beaufils E, Nguyen KA et al. A 
 
 ## Population and dosing
 
-**Population:** lactating women treated with escitalopram or racemic citalopram (perinatal period) · condition depression / perinatal period, breastfeeding · age group adult · n = 33.
+**Population:** breastfeeding women · condition perinatal · age group adult · n = 33.
 
-**Dosing:** 5, 20 mg, oral, multiple, every 24 h.
-
-**Dosed compound ≠ measured compound:** dosed escitalopram (or racemic citalopram), measured escitalopram (SCIT).
+**Dosing:** 10 mg/d, oral, multiple, every 24 h.
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
-**Availability:** No model was generated from this record.
+**Parameters:** 3 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea.svg" alt="Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | CL(SCIT) (L/h) | CL | 8 | L/h |
 | V(SCIT) (L) | V | 19 | L |
 | k12 (h⁻¹) | kabs | 34 | h⁻¹ |
-| VMR | V | 8 | L |
-| α(CL) (%) | λ1 | 16 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.077). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,13 +51,13 @@ Weisskopf E, Guidi M, Fischer CJ, Bickle Graz M, Beaufils E, Nguyen KA et al. A 
 
 ### Reviewer guidance
 
-**Λ1 has no unit.**
+**F use library defaults, not estimates from this paper; t3_output_variable (+3 more).**
 
-Without a unit the value cannot be converted, so the model cannot use it. None of the extracted parameters is citalopram's own; they describe escitalopram (SCIT) and S-desmethylcitalopram (SDCIT). Extracted — escitalopram (SCIT): CL 8 L/h, V 19 L, kabs 34 h⁻¹, λ1 16; S-desmethylcitalopram (SDCIT): V 8 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — citalopram: CL 8 L/h, V 19 L, kabs 34 h⁻¹.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has escitalopram (or racemic citalopram), the second reading escitalopram; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has escitalopram → demethylescitalopram (metabolism), the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -68,8 +66,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | CL(SCIT) (L/h) | `Q22` · CL | 8 | L/h | 2.222e-06 | m3/s | l/h | space_fold (0.95) | Weisskopf_2020_table_p7_1:row0:col2 |
 | V(SCIT) (L) | `Q61` · V | 19 | L | 0.019 | m3 | l | space_fold (0.95) | Weisskopf_2020_table_p7_1:row1:col2 |
 | k12 (h⁻¹) | `Q49` · kabs | 34 | h⁻¹ | 0.009444 | 1/s | 1/h | exact (1) | Weisskopf_2020_table_p7_1:row2:col2 |
-| VMR | `Q61` · V | 8 | L | 0.008 | m3 | l | llm (0.6) | Weisskopf_2020_table_p7_1:row4:col2 |
-| α(CL) (%) | `Q67` · λ1 | 16 |  |  |  |  | space_fold (0.95) | Weisskopf_2020_table_p7_1:row7:col2 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,43 +74,38 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['F', 'Tlag']
+
 **Interpretation flags:**
-- unit inherited for V (Q61): 'L' from a same-Q-code sibling (this row's label had no unit)
-- implicit units: 'α(CL) (%)' — the LLM proposed '%', whose dimension does not fit Q67; left unset
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL(SCIT) (L/h)); Q61 (V(SCIT) (L)); Q61 (VMR)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=escitalopram (SCIT)
-- template fit: PK_3M_9C — formed from central; parent 1, metabolites [1]
+- dropped unlinked row (NIL): 'VMR' — extend the ontology if this is a real PK parameter (source ['Weisskopf_2020_table_p7_1:row4:col2'])
+- dropped 'α(CL) (%)' → Q67: unit '%' is a statistic (%, CV, RSE, shrinkage or fold), not a rate — the row is a variability or a ratio, not the estimate
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL(SCIT) (L/h)); Q61 (V(SCIT) (L))
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=escitalopram
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
 - population split: 'model for scit + sdcit in plasma + breast milk' subgroup of Weisskopf_2020 (paper reports 3 populations: estimate, model for scit + sdcit in plasma, model for scit + sdcit in plasma + breast milk)
-- row roles (LLM): model_class=compartmental; 13/13 row label(s) assigned, 22 linked by role; re-tagged parent→escitalopram (SCIT) ×34, parent→S-desmethylcitalopram (SDCIT) ×20
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- row roles (LLM): model_class=compartmental; 13/13 row label(s) assigned, 14 linked by role; re-tagged parent→demethylescitalopram ×11
+- engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
+
+**Extraction notes:**
+- table Weisskopf_2020_table_p7_1: ambiguous_uncertainty_binding
+- table Weisskopf_2020_table_p7_1: ragged_grid
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.077 (1/13 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>12 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['escitalopram (scit)', 's-desmethylcitalopram (sdcit)', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[cl(scit)]` |  | 8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl(scit)]` | 8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k12]` |  | 34 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k12]` | 34 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v(scit)]` |  | 19 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v(scit)]` | 19 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vmr]` | 8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[α(cl)]` |  | 16 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[α(cl)]` | 16 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | escitalopram (or racemic citalopram) | escitalopram | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | escitalopram (SCIT) | escitalopram | mismatch |
+| `gpt-oss-120b` | `model.links` | [['escitalopram', 'demethylescitalopram', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[k12].parameter_id` | Q49 | Q301 | mismatch |
 
 </details>
 
@@ -128,18 +119,29 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Weisskopf_2020_table_p7_1:row0:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['Weisskopf_2020_table_p7_1:row2:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Weisskopf_2020_table_p7_1:row1:col2'] |
-| C5_unit_missing_Q67 | fail | 1 / [time] |  | ['Weisskopf_2020_table_p7_1:row7:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 8 | ['Weisskopf_2020_table_p7_1:row0:col2'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 8 L/h | ['Weisskopf_2020_table_p7_1:row0:col2'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 19 L | ['Weisskopf_2020_table_p7_1:row1:col2'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 8 L | ['Weisskopf_2020_table_p7_1:row4:col2'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | fail | Metabolite_C (measured=escitalopram) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
+| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -151,26 +153,20 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 20 mg, single dose, first-order absorption (ka 34 /h, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 20 mg oral (N06AB04) (defined daily dose)._
+
+<dbs-fmusim paramsurl="drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea_params.json` · controls `Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcitalopram%5D%20Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea&body=Drug%3A%20citalopram%0ARecord%3A%20Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea%0APaper%3A%20Weisskopf_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_citalopram/Citalopram_Weisskopf2020_model_for_scit_sdcit_in_plasma_brea%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:12 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 12:21 UTC</sub>

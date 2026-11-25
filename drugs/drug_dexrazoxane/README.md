@@ -26,7 +26,7 @@ Dexrazoxane is a cardioprotective agent used to manage breast cancer. It is give
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Baldwin_1996_reference](drugs/drug_dexrazoxane/Dexrazoxane_Baldwin1996_reference.md) | — | 1-compartment (no model) | 8 | Baldwin JR et al., Dose-independent pharmacokinetics of th…, Biopharmaceutics & drug dis… (1996) | [10.1002/(SICI)1099-081X(199608)17:6&lt;541::AID-BDD975&gt;3.0.CO;2-5](https://doi.org/10.1002/(SICI)1099-081X(199608)17:6&lt;541::AID-BDD975&gt;3.0.CO;2-5) |
+| <span class="pk-rf" hidden data-species="dog" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs clearance/e…</sub> | [Baldwin_1996_reference](drugs/drug_dexrazoxane/Dexrazoxane_Baldwin1996_reference.md) | — | 1-compartment (no model) | 4 | Baldwin JR et al., Dose-independent pharmacokinetics of th…, Biopharmaceutics & drug dis… (1996) | [10.1002/(SICI)1099-081X(199608)17:6&lt;541::AID-BDD975&gt;3.0.CO;2-5](https://doi.org/10.1002/(SICI)1099-081X(199608)17:6&lt;541::AID-BDD975&gt;3.0.CO;2-5) |
 
 ## Pharmacodynamics (PD)
 
@@ -38,8 +38,8 @@ Dexrazoxane is a cardioprotective agent used to manage breast cancer. It is give
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Mody_2023_R_4](drugs/drug_dexrazoxane/pd_Mody_2023_R_4.md) | Cell viability (MDA-MB-468, static combination with DOX, competitive interaction model) ← dexrazoxane · direct sigmoid Emax (Hill) effect | — | Mody H et al., Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1239141](https://doi.org/10.3389/fphar.2023.1239141) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Mody_2023_R_5](drugs/drug_dexrazoxane/pd_Mody_2023_R_5.md) | Cell viability over time (JIMT-1, single-agent and combination cellular PD model) ← dexrazoxane · delayed effect through transit (transduction) compartments | — | Mody H et al., Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1239141](https://doi.org/10.3389/fphar.2023.1239141) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Mody_2023_R_6](drugs/drug_dexrazoxane/pd_Mody_2023_R_6.md) | Cell viability over time (MDA-MB-468, single-agent and combination cellular PD model) ← dexrazoxane · delayed effect through transit (transduction) compartments | — | Mody H et al., Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1239141](https://doi.org/10.3389/fphar.2023.1239141) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Mody_2023_2_R](drugs/drug_dexrazoxane/pd_Mody_2023_2_R.md) | AC16 cell viability ← dexrazoxane · direct linear effect | — | Mody H et al., In vitro to clinical translational phar…, Scientific reports (2023) | [10.1038/s41598-023-29964-4](https://doi.org/10.1038/s41598-023-29964-4) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Mody_2023_2_R_2](drugs/drug_dexrazoxane/pd_Mody_2023_2_R_2.md) | AC16 cell viability (DEX cardioprotection against DOX-induced cell death) ← dexrazoxane · direct Emax (saturable) effect | — | Mody H et al., In vitro to clinical translational phar…, Scientific reports (2023) | [10.1038/s41598-023-29964-4](https://doi.org/10.1038/s41598-023-29964-4) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mody_2023_2_R](drugs/drug_dexrazoxane/pd_Mody_2023_2_R.md) | AC16 cell viability ← dexrazoxane · direct linear effect | — | Mody H et al., In vitro to clinical translational phar…, Scientific reports (2023) | [10.1038/s41598-023-29964-4](https://doi.org/10.1038/s41598-023-29964-4) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mody_2023_2_R_2](drugs/drug_dexrazoxane/pd_Mody_2023_2_R_2.md) | AC16 cell viability (DEX cardioprotection against DOX-induced cell death) ← dexrazoxane · direct Emax (saturable) effect | — | Mody H et al., In vitro to clinical translational phar…, Scientific reports (2023) | [10.1038/s41598-023-29964-4](https://doi.org/10.1038/s41598-023-29964-4) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,39 +53,33 @@ Dexrazoxane is a cardioprotective agent used to manage breast cancer. It is give
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 19:01 | 1:50 | 0/1/0 | 8/0/0 | 0/0/0 | 90,542/6,906 | ollama / glm-5.3-flash | 3 | 0/3 | 3/0 | 0 |
+| 2026-11-23 19:38 | 0:04 | 1/0/0 | 8/0/0 | 0/0/0 | 4,083/182 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Baldwin_1996.pdf` | Baldwin JR et al., Dose-independent pharmacokinetics of th…, Biopharmaceutics & drug dis… (1996) | popPK | 10 | [10.1002/(SICI)1099-081X(199608)17:6&lt;541::AID-BDD975&gt;3.0.CO;2-5](https://doi.org/10.1002/(SICI)1099-081X(199608)17:6<541::AID-BDD975>3.0.CO;2-5) | [8866044](https://pubmed.ncbi.nlm.nih.gov/8866044) | Full PK parameters (CL, Vss, t½, renal clearance) for dexrazoxane are reported directly in the abstract. |
-| `Jirkovský_2018.pdf` | Jirkovský E et al., Pharmacokinetics of the Cardioprotectiv…, The Journal of pharmacology… (2018) | popPK | 8 | [10.1124/jpet.117.244848](https://doi.org/10.1124/jpet.117.244848) | [29273587](https://pubmed.ncbi.nlm.nih.gov/29273587) | PK of dexrazoxane and metabolite ADR-925 via NCA and population PK in rabbits, but numeric parameter values are not present in the provided evidence (likely in tables/figures not included). |
-
-<sub>queue written 2026-10-07 19:00 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Baldwin_1992 | irrelevant | 2 | 2 | Dexrazoxane is only the co-administered agent; the PK parameters (CL, half-lives, AUC) reported are for doxorubicin, not dexrazoxane itself. |
-| popPK | Chang_2025 | irrelevant | 1 | 1 | This is a pharmacodynamic (Top2b degradation) study in humans; the only PK mention is a literature half-life of two hours with no clearance, volume, or model parameters reported. |
-| popPK | Jirkovský_2018 | relevant | 8 | 2 | PK of dexrazoxane and metabolite ADR-925 via NCA and population PK in rabbits, but numeric parameter values are not present in the provided evidence (likely in tables/figures not included). |
+| popPK | Baldwin_1992 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of doxorubicin in dogs where dexrazoxane is a co-administered agent, and no quantitative PK parameters for dexrazoxane itself are reported. |
+| PGx | Baldwin_1992 | not_relevant | 0 | 0 | The study investigates the pharmacokinetic interaction of dexrazoxane with doxorubicin in dogs; it does not evaluate pharmacogenomic variants affecting dexrazoxane. |
+| PGx | Baldwin_1996 | not_relevant | 0 | 0 | The paper reports standard pharmacokinetics in dogs and discusses dose independence, but does not investigate or report any gene variant, genotype, or pharmacogenomic effect on dexrazoxane PK parameters. |
+| popPK | Chang_2025 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effect of dexrazoxane on Topoisomerase 2b degradation, not its pharmacokinetic disposition parameters. |
+| PGx | Chang_2025 | not_relevant | 0 | 0 | The study examines the dose-response and time course of dexrazoxane-induced Top2b degradation in healthy volunteers without analyzing any genetic variants, genotypes, or pharmacogenomic interactions. |
+| popPK | Jirkovský_2018 | relevant | 10 | 0 | The paper reports quantitative PK parameters (NCA and population PK) for dexrazoxane in rabbits, but the specific numeric values are not present in the provided evidence. |
+| PGx | Jirkovský_2018 | not_relevant | 0 | 0 | The paper characterizes the pharmacokinetics of dexrazoxane in vitro and in rabbits but does not report any association between genetic variants and PK/PD parameters. |
 | popPK | Mody_2023 | irrelevant | 2 | 2 | This is an in vitro PD drug-interaction study in cancer cell lines; DEX PK is only simulated from prior literature, with no dexrazoxane disposition parameters (CL, V, half-life) reported here. |
-| popPK | Rodriguez_2006 | irrelevant | 0 | 0 | In vitro/ischemia contractility study; dexrazoxane only used as an antioxidant agent, no PK parameters reported. |
+| popPK | Rodriguez_2006 | irrelevant | 0 | 0 | The study is an in-vitro/isolated tissue functional experiment on guinea-pig ileum examining smooth muscle contractility and neuroprotection, not a pharmacokinetic study of dexrazoxane. |
+| PGx | Rodriguez_2006 | not_relevant | 0 | 0 | The study investigates the effect of dexrazoxane on ischemia-induced changes in guinea-pig ileum contractility and does not involve human gene variants or pharmacogenomic analysis. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdexrazoxane%5D&body=Drug%3A%20dexrazoxane%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dexrazoxane/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 19:00 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 19:37 UTC</sub>

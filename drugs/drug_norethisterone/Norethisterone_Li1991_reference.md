@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> The record was rejected because norethisterone-3-oxime acetate’s absorption rate constant kabs (0.21 h) and elimination rate constant kel (10.01 h) are reported in time units, not rate units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time]; Q47 unit h ([time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="norethisterone" model-id="Norethisterone_Li1991_reference" status="rejected" stale="false" population="rhesus monkeys" measured-compound="norethisterone, norethisterone-3-oxime" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -52,13 +52,13 @@ Li DZ, Fu GM, Zuo MD, Zhou MY, Zhao XL, Wang GP et al. Pharmacokinetic studies o
 
 ### Reviewer guidance
 
-**The record was rejected because norethisterone-3-oxime acetate’s absorption rate constant kabs (0.21 h) and elimination rate constant kel (10.01 h) are reported in time units, not rate units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time]; Q47 unit h ([time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-Both parameters are defined as rate constants, so their reported unit h conflicts with the inverse-time dimension. The record also flags an unreachable or orphan model component, meaning a compartment or metabolite has no path from the dose; because only the abstract was read, summary statistics stand in for a fitted model. The second reader disagreed about the dose compounds, primary analytes, and interpretation of the metabolism links. Extracted — norethisterone-3-oxime acetate: kabs 0.21 h, t1/2α 1.28 h, kel 10 h; norethisterone, norethisterone-3-oxime: V 0.0636 L/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is norethisterone's own; they describe norethisterone-3-oxime acetate and norethisterone, norethisterone-3-oxime. Extracted — norethisterone-3-oxime acetate: kabs 0.21 h, t1/2α 1.28 h, kel 10 h; norethisterone, norethisterone-3-oxime: V 0.0636 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has norethisterone-3-oxime, norethisterone-3-oxime acetate, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

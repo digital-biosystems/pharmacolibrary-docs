@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model's terminal half-life of 13.3 hours conflicts with the paper's 285.1 minutes, and bioavailability uses defaults.
+> The model does not reproduce the paper's terminal half-life (paper 3, model 13.3); f use library defaults, not estimates from this paper (+1 more).
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Hffken1985_750_mg_oral_ly" status="needs_review" stale="false" population="healthy volunteers" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Höffken G, Lode H, Prinzing C, Borner K, Koeppe P. Pharmacokinetics of ciproflo
 
 ### Reviewer guidance
 
-**The model's terminal half-life of 13.3 hours conflicts with the paper's 285.1 minutes, and bioavailability uses defaults.**
+**The model does not reproduce the paper's terminal half-life (paper 3, model 13.3); f use library defaults, not estimates from this paper (+1 more).**
 
-The simulated terminal half-life is 13.3 hours, which differs from the reported 285.1 minutes by a ratio of 4.4258. This exceeds the tolerance for a one-compartment model. Bioavailability was not reported, so library defaults were used instead of paper-specific estimates. Extracted — ciprofloxacin: Cmax 2.65 mg/liter, tmax 69.4 min, V 353 liters/ 100 kg, t1/2α 58.8 min, t1/2β 285 min, AUC∞ 12.2 mg · h/liter, CL 12.9 L/h, kabs 1 h−1, … (+1).
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ciprofloxacin: Cmax 2.65 mg/liter, tmax 69.4 min, V 353 liters/ 100 kg, t1/2α 58.8 min, t1/2β 285 min, AUC∞ 12.2 mg · h/liter, CL 12.9 L/h, kabs 1 h−1, … (+1).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -155,11 +155,11 @@ _All readers agree on the compared fields of this record._
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_beta | reference | fail | 3 | 13.28 | 4.426 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 3.067 | 13.28 | 4.33 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 3.433 | 13.28 | 3.867 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 4.1 | 13.28 | 3.238 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 4.75 | 13.28 | 2.795 | min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 3 | 13.28 | 4.426 | reported 180.0 min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 3.067 | 13.28 | 4.33 | reported 184.0 min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 3.433 | 13.28 | 3.867 | reported 206.0 min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 4.1 | 13.28 | 3.238 | reported 246.0 min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 4.75 | 13.28 | 2.795 | reported 285.0 min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because Vmax has incompatible dimensions for a structural parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit μg/mL/h ([mass] / [length] ** 3 / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="paclitaxel" model-id="Paclitaxel_Tsushima2020_reference" status="rejected" stale="false" population="adults with metastatic solid cancer" measured-compound="paclitaxel" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ not matched (stem Tsushima_2020)
 
 ### Reviewer guidance
 
-**The record was rejected because Vmax has incompatible dimensions for a structural parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit μg/mL/h ([mass] / [length] ** 3 / [time]) vs [mass] / [time].**
 
-The review identified a dimension mismatch where the Vmax unit of μg/mL/h conflicts with the expected mass/time dimension. Additionally, the model was built from abstract-only data, meaning reported summary statistics stood in for a fitted model. The second reader also disagreed on the presence and values of the BSA coefficients for clearance and volume. Extracted — paclitaxel: CL 29.7 L/h, V1 11.4 L, Km 0.108 μg/mL, Vmax 2.25 μg/mL/h, k21 0.207 h−1, Q3 33.5 L/h, V3 61.2 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — paclitaxel: CL 29.7 L/h, V1 11.4 L, Km 0.108 μg/mL, Vmax 2.25 μg/mL/h, k21 0.207 h−1, Q3 33.5 L/h, V3 61.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θbsaoncl: this record has none, the second reading 1.15; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> A second reader disagreed with the recorded alfentanil clearance (0.35 L/min) and volume (5.35 L), causing the model review to be held for further assessment.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="alfentanil" model-id="Alfentanil_Bouillon1999_reference" status="needs_review" stale="false" population="adult men undergoing urologic surgery" measured-compound="alfentanil" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Bouillon T, Schmidt C, Garstka G, Heimbach D, Stafforst D, Schwilden H et al. Ph
 
 ### Reviewer guidance
 
-**A second reader disagreed with the recorded alfentanil clearance (0.35 L/min) and volume (5.35 L), causing the model review to be held for further assessment.**
+**cross_check_disputed; x1_cross_check.**
 
-The initial extraction reported a total clearance of 0.35 L/min and a central volume of distribution of 5.35 L for alfentanil. A subsequent review by a second reader could not confirm these specific parameter values or the intercompartment clearance of 0.54 L/min, instead marking them as unknown. This discrepancy resulted in a low agreement ratio of 0.125, leading to the record being held back rather than accepted. Extracted — alfentanil: V 5.35 L, CL 0.35 L/min, Q2 0.54 L/min, tlag 0.96 min.
+Extracted — alfentanil: V 5.35 L, CL 0.35 L/min, Q2 0.54 L/min, tlag 0.96 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alfentanil, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,7 +148,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.125 (1 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.125 | cross-check contradicted by a second reader: verdict disputed; agreement 0.125 (1 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

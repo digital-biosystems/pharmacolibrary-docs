@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Medroxyprogesterone acetate elimination rate constant β=6.3 h⁻¹ failed dimensional checks.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h−1 (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="medroxyprogesterone" model-id="Medroxyprogesterone_Engel2026_mpa_estimates" status="rejected" stale="false" population="female BALB/c mice" measured-compound="medroxyprogesterone acetate, cabotegravir" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Engel N, Oliveira D, Sykes C, Schauer AP, King JL, Le T et al. Intravenous and S
 
 ### Reviewer guidance
 
-**Medroxyprogesterone acetate elimination rate constant β=6.3 h⁻¹ failed dimensional checks.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h−1 (1 / [time]) vs 1 / [time].**
 
-The elimination rate constant, meaning the terminal phase disposition, was recorded as 6.3 h⁻¹, a unit that the system could not convert to SI. This lack of a valid SI value caused a dimensional mismatch during the structural parameter validation. Additionally, a second reader could not identify the value 21 ng/mL in the source, and disagreed on the primary analyte designation. Extracted — medroxyprogesterone: λ1 23 h−1, kel 6.3 h−1.
+A reported unit could not be converted (equation variable and λ1), so that value has no SI equivalent. Extracted — medroxyprogesterone: λ1 23 h−1, kel 6.3 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cabotegravir, medroxyprogesterone acetate, the second reading medroxyprogesterone acetate (MPA), cabotegravir (CAB); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

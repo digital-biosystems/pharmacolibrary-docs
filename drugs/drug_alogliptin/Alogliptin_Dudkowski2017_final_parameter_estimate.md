@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The alogliptin model was held because the second reader disputed the identification of alogliptin as the measured compound.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="alogliptin" model-id="Alogliptin_Dudkowski2017_final_parameter_estimate" status="needs_review" stale="false" population="children, adolescents, and adults with type 2 diabetes mellitus" measured-compound="alogliptin" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Dudkowski C, Tsai M, Liu J, Zhao Z, Schmidt E, Xie J. The pharmacokinetics and p
 
 ### Reviewer guidance
 
-**The alogliptin model was held because the second reader disputed the identification of alogliptin as the measured compound.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader marked both the dose compound and the primary analyte as unknown, disagreeing with the record's explicit identification of alogliptin. This disagreement resulted in a cross-check agreement score of 0.778, triggering the refusal. The record itself lists alogliptin as the measured compound and provides parameters for a two-compartment model, such as oral clearance of 14.4 L/hr. Extracted — alogliptin: kabs 0.59 1/h, CL/F 14.4 L/hr, V1 125 L, V2 117 L, Q/F 11.7 L/hr.
+Extracted — alogliptin: kabs 0.59 1/h, CL/F 14.4 L/hr, V1 125 L, V2 117 L, Q/F 11.7 L/hr.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alogliptin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -187,7 +187,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.778 (7 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | cross-check contradicted by a second reader: verdict disputed; agreement 0.778 (7 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

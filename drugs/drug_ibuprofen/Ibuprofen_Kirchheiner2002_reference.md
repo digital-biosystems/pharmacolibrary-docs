@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the R-ibuprofen compartment has no path from the racemic ibuprofen dose, leaving the model structurally disconnected.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Kirchheiner2002_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="racemic ibuprofen" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -48,13 +48,13 @@ Kirchheiner J, Meineke I, Freytag G, Meisel C, Roots I, Brockmöller J. Enantios
 
 ### Reviewer guidance
 
-**The record was rejected because the R-ibuprofen compartment has no path from the racemic ibuprofen dose, leaving the model structurally disconnected.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model defines an interconversion between R- and S-ibuprofen but omits a link from the administered racemic ibuprofen, orphaning the R-ibuprofen compartment. Additionally, the unit for the clearance parameter could not be converted to standard units, leaving the value undefined in pharmacokinetic terms. Extracted — racemic ibuprofen: CL 0.062 3, V 10.9 L, kabs 0.656 hour−1, tlag 0.1 hours.
+A reported unit could not be converted (CL), so that value has no SI equivalent. None of the extracted parameters is ibuprofen's own; they describe racemic ibuprofen. Extracted — racemic ibuprofen: CL 0.062 3, V 10.9 L, kabs 0.656 hour−1, tlag 0.1 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has racemic ibuprofen, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -49,7 +49,7 @@ Hao K, Chen Y, Zhao X, Liu X. Pharmacokinetic-pharmacodynamic model of the antih
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[ka].value`: this record has 1.02, the second reading 1.11; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 

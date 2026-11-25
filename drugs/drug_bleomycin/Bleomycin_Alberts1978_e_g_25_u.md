@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The intercompartmental clearance Q was rejected because its unit min/ml dimensionally conflicts with the required volume/time dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit min/ml ([time] / [length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Alberts1978_e_g_25_u" status="rejected" stale="false" population="adults" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Alberts DS, Chen HS, Liu R, Himmelstein KJ, Mayersohn M, Perrier D et al. Bleomy
 
 ### Reviewer guidance
 
-**The intercompartmental clearance Q was rejected because its unit min/ml dimensionally conflicts with the required volume/time dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit min/ml ([time] / [length] ** 3) vs [length] ** 3 / [time].**
 
-The record lists the intercompartmental clearance Q with a value of 262.3 and a unit of min/ml, which is dimensionally incompatible with a clearance parameter that must represent volume per time. This dimensional mismatch on a structural parameter prevented the system from converting the value to standard SI units, resulting in rejection. Extracted — bleomycin: t1/2α 29, t1/2z 192, Q 262 min/ml, Vnorm 14.4 L/M2, CLnorm 52 ml/min/m2, fe 27.4, CL 70 ml/min, V 32.2 L.
+A reported unit could not be converted (Q), so that value has no SI equivalent. Extracted — bleomycin: t1/2α 29, t1/2z 192, Q 262 min/ml, Vnorm 14.4 L/M2, CLnorm 52 ml/min/m2, fe 27.4, CL 70 ml/min, V 32.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cxt mu].parameter_id`: this record has Q30, the second reading Q88; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

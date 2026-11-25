@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because Zhu_2018 studies a different drug, not macrogol, despite listed macrogol parameters.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="macrogol" model-id="Macrogol_Zhu2018_reference" status="rejected" stale="false" population="" measured-compound="macrogol" parameterization="apparent" topology="2C"></div>
 
@@ -53,11 +53,11 @@ Zhu L, Li H, Chan P, Eley T, Gandhi Y, Bifano M et al. Population Pharmacokineti
 
 ### Reviewer guidance
 
-**Record rejected because Zhu_2018 studies a different drug, not macrogol, despite listed macrogol parameters.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The relevance screen confirmed the paper's title and abstract do not name macrogol. Although the record lists apparent clearance, volumes, and absorption rates for macrogol, the source is unrelated to this compound. Consequently, the extracted pharmacokinetic values do not represent macrogol exposure in the referenced population. Extracted — macrogol: CL/F 50.8 L/h, V1/F 47.6 L, V2/F 561 L, Q/F 21.6 L/h, kabs 0.484 1/h.
+Extracted — macrogol: CL/F 50.8 L/h, V1/F 47.6 L, V2/F 561 L, Q/F 21.6 L/h, kabs 0.484 1/h.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

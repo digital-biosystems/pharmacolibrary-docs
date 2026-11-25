@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because factor VIII clearance is reported as 0.000242 L/h, an implausible clearance/volume magnitude consistent with unit/scale extraction error.
+> '1' is a column of the estimates table, not a study population; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Kim2024_1" status="rejected" stale="false" population="humans" measured-compound="factor VIII" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Kim MS, Hajducek DM, Gilbert JC, Iorio A, Jilma B, Edginton AN. Kinetic Modeling
 
 ### Reviewer guidance
 
-**The record was rejected because factor VIII clearance is reported as 0.000242 L/h, an implausible clearance/volume magnitude consistent with unit/scale extraction error.**
+**'1' is a column of the estimates table, not a study population; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-‘1’ is a column of the estimates table, not a study population. The table was split into one record per column, and ‘1’ holds a statistic rather than a second set of estimates. The record gives factor VIII clearance as 0.000242 L/h and volume as 8.35 L; the review flagged the clearance/volume magnitude as outside the physiological window, consistent with a unit/scale extraction error. A second reader identified von Willebrand factor, rather than factor VIII, as the primary analyte and did not report these estimates. Extracted — factor VIII: CL 0.000242 L/h, V 8.35 L, kabs 1.53e+09.
+The table was split into one record per column, and '1' holds a statistic rather than a second set of estimates. None of the extracted parameters is von willebrand factor's own; they describe factor VIII. Extracted — factor VIII: CL 0.000242 L/h, V 8.35 L, kabs 1.53e+09.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has BT200, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

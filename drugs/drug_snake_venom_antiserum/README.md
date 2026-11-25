@@ -29,36 +29,42 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:59 | 2:35 | 0/0/0 | 0/0/0 | 0/0/0 | 29,235/5,201 | openai / gpt-6-luna | 3 | 1/2 | 3/0 | 0 |
+| 2026-11-24 03:29 | 0:03 | 0/0/0 | 0/0/0 | 0/0/0 | 3,819/158 | einfracz / qwen3.8-27b | 3 | 1/2 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 3  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Herrera_2017.pdf` | Herrera M et al., Effect of premedication with subcutaneo…, Biomedicine & pharmacothera… (2017) | popPK | 8 | [10.1016/j.biopha.2017.04.039](https://doi.org/10.1016/j.biopha.2017.04.039) | [28419970](https://pubmed.ncbi.nlm.nih.gov/28419970) | Antivenom pharmacokinetics are studied in rabbits, but no numeric disposition parameters are provided in the evidence. |
-| `Yap_2015.pdf` | Yap MK et al., The Effect of a Polyvalent Antivenom on…, Basic & clinical pharmacolo… (2015) | popPK | 8 | [10.1111/bcpt.12398](https://doi.org/10.1111/bcpt.12398) | [25819552](https://pubmed.ncbi.nlm.nih.gov/25819552) | Rabbit antivenom disposition is studied, but numeric half-life and volume values are not present in the provided evidence. |
+| `Yap_2015.pdf` | Yap MK et al., The Effect of a Polyvalent Antivenom on…, Basic & clinical pharmacolo… (2015) | popPK | 9 | [10.1111/bcpt.12398](https://doi.org/10.1111/bcpt.12398) | [25819552](https://pubmed.ncbi.nlm.nih.gov/25819552) | Study reports PK parameters (half-life, Vd) of antivenom in rabbits, but specific numeric values are implied rather than explicitly listed in the provided text. |
 
-<sub>queue written 2026-10-07 16:58 UTC</sub>
+<sub>queue written 2026-11-24 03:29 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Herrera_2017 | relevant | 8 | 0 | Antivenom pharmacokinetics are studied in rabbits, but no numeric disposition parameters are provided in the evidence. |
-| popPK | Isbister_2010 | irrelevant | 0 | 0 | This review discusses antivenom effectiveness but reports no quantitative pharmacokinetic parameters. |
+| popPK | Chatterjee_2006 | irrelevant | 0 | 0 | The study focuses on the venom-neutralizing properties of lupeol acetate and mentions snake venom antiserum only as a comparative protective agent, with no pharmacokinetic parameters reported for the antiserum. |
+| PGx | Chatterjee_2006 | not_relevant | 0 | 0 | The study investigates the pharmacological effects of a plant extract (lupeol acetate) on snake venom toxicity and its interaction with antiserum, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Herrera_2017 | irrelevant | 5 | 2 | The abstract describes a pharmacokinetic study of antivenom in rabbits but does not report specific quantitative parameter values (CL, V, t1/2) in the provided text, stating only that studies suggest no effect of adrenaline. |
+| PGx | Herrera_2017 | not_relevant | 0 | 0 | The study investigates the effect of adrenaline premedication on antivenom pharmacokinetics, not the effect of genetic variants. |
+| popPK | Isbister_2010 | irrelevant | 0 | 0 | The paper is a review discussing the efficacy and effectiveness of antivenoms in a clinical context, without reporting any quantitative pharmacokinetic parameters for the drug. |
+| PGx | Isbister_2010 | not_relevant | 0 | 0 | The paper discusses general antivenom efficacy and PK issues but does not report a pharmacogenomic effect (gene variant influencing drug response). |
 | popPK | Knudsen_2020 | irrelevant | 0 | 0 | This is a discussion paper, not a quantitative pharmacokinetic study, and reports no disposition parameter values. |
-| popPK | Padula_2016 | irrelevant | 2 | 1 | Antivenom concentrations are reported at limited time points, but no quantitative disposition parameters or PK model are provided. |
-| popPK | Tibballs_2020 | irrelevant | 1 | 1 | This human case reports antivenom detection over time but no quantitative pharmacokinetic parameters. |
-| popPK | Yap_2015 | relevant | 8 | 1 | Rabbit antivenom disposition is studied, but numeric half-life and volume values are not present in the provided evidence. |
+| popPK | Padula_2016 | irrelevant | 1 | 0 | The paper is a single animal case report describing a fatal envenomation event; while it mentions antivenom concentrations, it does not report quantitative population pharmacokinetic parameters (CL, V, t1/2, etc.) for the antiserum. |
+| PGx | Padula_2016 | not_relevant | 0 | 0 | The paper describes a fatal case study of snake envenomation in a cat and does not report pharmacogenomic effects on antivenom PK/PD. |
+| popPK | Tibballs_2020 | irrelevant | 0 | 0 | This is a clinical case report describing the use of tiger snake antivenom in a human patient, but it does not provide any quantitative pharmacokinetic parameter values (e.g., clearance, volume of distribution, half-life) for the drug. |
+| PGx | Tibballs_2020 | not_relevant | 0 | 0 | The paper is a clinical case report describing the treatment of a single patient and does not investigate the effect of genetic variants on snake venom antiserum pharmacokinetics or pharmacodynamics. |
+| popPK | Yap_2015 | relevant | 9 | 4 | Study reports PK parameters (half-life, Vd) of antivenom in rabbits, but specific numeric values are implied rather than explicitly listed in the provided text. |
+| PGx | Yap_2015 | not_relevant | 0 | 0 | The study investigates the PK of snake venom and antivenom in rabbits but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 
 
 </details>

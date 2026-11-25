@@ -38,7 +38,7 @@ Mercaptopurine is an antimetabolite used to treat cancers such as leukemia and l
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Tsukamoto_2017_Cell_viability](drugs/drug_mercaptopurine/pd_Tsukamoto_2017_Cell_viability.md) | Cell viability biomarker turnover ← 6-mercaptopurine | — | Tsukamoto M et al., Quantitative Evaluation of Drug Resista…, International journal of mo… (2017) | [10.3390/ijms18071435](https://doi.org/10.3390/ijms18071435) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Tsukamoto_2017_Cell_viability](drugs/drug_mercaptopurine/pd_Tsukamoto_2017_Cell_viability.md) | Cell viability biomarker turnover ← 6-mercaptopurine | — | Tsukamoto M et al., Quantitative Evaluation of Drug Resista…, International journal of mo… (2017) | [10.3390/ijms18071435](https://doi.org/10.3390/ijms18071435) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,7 +52,7 @@ Mercaptopurine is an antimetabolite used to treat cancers such as leukemia and l
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 16:55 | 3:43 | 0/4/0 | 0/1/0 | 0/0/0 | 244,094/15,353 | einfracz / qwen3.8-27b | 19 | 2/5 | 7/0 | 0 |
+| 2026-10-07 16:55 | 3:43 | 0/4/0 | 1/0/0 | 0/0/0 | 244,094/15,353 | einfracz / qwen3.8-27b | 19 | 2/5 | 7/0 | 0 |
 
 ## Coverage
 

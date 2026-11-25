@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Zhao_2025_PPM1A](drugs/drug_otilonium_bromide/pd_Zhao_2025_PPM1A.md) | PPM1A enzymatic activity biomarker turnover ← otilonium_bromide | — | Zhao T et al., Otilonium bromide ameliorates pulmonary…, Acta pharmacologica Sinica (2025) | [10.1038/s41401-024-01368-8](https://doi.org/10.1038/s41401-024-01368-8) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Zhao_2025_PPM1A](drugs/drug_otilonium_bromide/pd_Zhao_2025_PPM1A.md) | PPM1A enzymatic activity biomarker turnover ← otilonium_bromide | — | Zhao T et al., Otilonium bromide ameliorates pulmonary…, Acta pharmacologica Sinica (2025) | [10.1038/s41401-024-01368-8](https://doi.org/10.1038/s41401-024-01368-8) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

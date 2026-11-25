@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;clozapine&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/&quot;},{&quot;label&quot;:&quot;Funguetto-Ribeiro_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clozapine_Geers2022_reference&quot;,&quot;label&quot;:&quot;Geers_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/Clozapine_Geers2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Parker_2001_beta_amplitude&quot;,&quot;label&quot;:&quot;Parker_2001 \u00b7 beta amplitude&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Parker_2001_beta_amplitude.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Parker_2001_theta_amplitude&quot;,&quot;label&quot;:&quot;Parker_2001 \u00b7 theta amplitude&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Parker_2001_theta_amplitude.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Shang_2014_PANSS&quot;,&quot;label&quot;:&quot;Shang_2014 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Shang_2014_PANSS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zeng_1997_cAMP&quot;,&quot;label&quot;:&quot;Zeng_1997 \u00b7 cAMP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Zeng_1997_cAMP.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Clozapine_Geers2022_reference&quot;,&quot;label&quot;:&quot;Geers_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/Clozapine_Geers2022_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Clozapine_Parker2001_reference&quot;,&quot;label&quot;:&quot;Parker_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/Clozapine_Parker2001_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Shang_2014_PANSS&quot;,&quot;label&quot;:&quot;Shang_2014 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_clozapine/pd_Shang_2014_PANSS.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Clozapine’s reported distribution volume of 0.21 mL produced an implausible clearance-to-volume magnitude, so the record was rejected.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="clozapine" model-id="Clozapine_FunguettoRibeiro2023_reference" status="rejected" stale="false" population="male Wistar rats" measured-compound="clozapine" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Funguetto-Ribeiro AC, Maciel TR, Lunardi AG, Gomes DB, Ibarra M, Haas SE. Clozap
 
 ## Population and dosing
 
-**Population:** male Wistar rats · condition healthy (preclinical, stereotyped behavior model) · age group adult · n = 21.
+**Population:** male Wistar rats · condition healthy.
 
 > **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -33,11 +33,12 @@ Funguetto-Ribeiro AC, Maciel TR, Lunardi AG, Gomes DB, Ibarra M, Haas SE. Clozap
 
 | label | parameter | value | unit |
 |---|---|---|---|
+| n | equation variable | 7 | group |
 | V1NCpop | V | 0.21 | mL |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,18 +48,19 @@ Funguetto-Ribeiro AC, Maciel TR, Lunardi AG, Gomes DB, Ibarra M, Haas SE. Clozap
 
 ### Reviewer guidance
 
-**Clozapine’s reported distribution volume of 0.21 mL produced an implausible clearance-to-volume magnitude, so the record was rejected.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The parameter is V, a volume of distribution based on drug concentration, recorded as 0.21 mL; the rejection attributes the out-of-range clearance-to-volume magnitude to a unit/scale extraction error. The record came from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader disagreed about whether the volume value was present, treated the dose compound and primary analyte as unknown, and supplied a dose of 5. Extracted — clozapine: V 0.21 mL.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — clozapine: V 0.21 mL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clozapine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of n: this record has 7, the second reading none. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
+| n | `Q900` · equation variable | 7 | group |  |  | g·roup | llm (0.6) | Funguetto-Ribeiro_2023:abstract, Funguetto-Ribeiro_2023:abstract |
 | V1NCpop | `Q61` · V | 0.21 | mL | 2.1e-07 | m3 | ml | llm (0.6) | Funguetto-Ribeiro_2023:abstract |
 
 <details class="legend">
@@ -69,34 +71,32 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- covariate category for V1 from footnote/prose kept as documentation only (['Funguetto-Ribeiro_2023:abstract'])
+- unit_dimension_unknown: 'group' (equation variable)
+- dropped unlinked row (NIL): 'dose' — extend the ontology if this is a real PK parameter (source ['Funguetto-Ribeiro_2023:abstract', 'Funguetto-Ribeiro_2023:abstract'])
+- dropped duplicate Q63 ('central volume of distribution', value 1) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=clozapine
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V1NCpop' is the general volume)
+- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Funguetto-Ribeiro_2023_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Funguetto-Ribeiro_2023_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.833 (5/6 fields) | 1 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[dose]` |  | 5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1ncpop]` | 0.21 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v1ncpop]` |  | 0.21 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | clozapine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | clozapine | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[n]` | 7 |  | only_one_extracted |
 
 </details>
 
@@ -139,4 +139,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bclozapine%5D%20Clozapine_FunguettoRibeiro2023_reference&body=Drug%3A%20clozapine%0ARecord%3A%20Clozapine_FunguettoRibeiro2023_reference%0APaper%3A%20Funguetto-Ribeiro_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_clozapine/Clozapine_FunguettoRibeiro2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 15:14 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 20:53 UTC</sub>

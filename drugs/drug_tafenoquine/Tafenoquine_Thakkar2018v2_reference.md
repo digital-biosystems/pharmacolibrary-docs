@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Relative bioavailability parameter uses 'capsule' instead of a dimensionless unit, causing an unconverted value and apparent-parameter coherence failure.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="tafenoquine" model-id="Tafenoquine_Thakkar2018v2_reference" status="rejected" stale="false" population="healthy volunteers and patients with P. vivax malaria" measured-compound="tafenoquine" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Thakkar N, Green JA, Koh GCKW, Duparc S, Tenero D, Goyal N. Population Pharmacok
 
 ### Reviewer guidance
 
-**Relative bioavailability parameter uses 'capsule' instead of a dimensionless unit, causing an unconverted value and apparent-parameter coherence failure.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The relative bioavailability parameter is recorded with a value of 0.833 but the unit is listed as 'capsule' rather than a dimensionless fraction. Because the unit could not be converted to SI, the model was rejected for violating apparent-parameter coherence. A second reader could not confirm the extracted value or the primary analyte. Extracted — tafenoquine: CL/F 2.87 liters/h, V2/F 879 liters, Q/F 4.76 liters/h, V3/F 634 liters, tlag 0.904 h, kabs 0.226 h−1, Frel 0.833 capsule.
+A reported unit could not be converted (Frel), so that value has no SI equivalent. Extracted — tafenoquine: CL/F 2.87 liters/h, V2/F 879 liters, Q/F 4.76 liters/h, V3/F 634 liters, tlag 0.904 h, kabs 0.226 h−1, Frel 0.833 capsule.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tafenoquine, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

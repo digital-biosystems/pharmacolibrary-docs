@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;alprazolam&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/&quot;},{&quot;label&quot;:&quot;Klein_2026 \u00b7 body_weight_50_kg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alprazolam_Klein2026_body_weight_50_kg&quot;,&quot;label&quot;:&quot;Klein_2026_body_weight_50_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Sanna_1999_GABA_induced_Cl_current_potentiation_alpha1_beta2&quot;,&quot;label&quot;:&quot;Sanna_1999 \u00b7 GABA-induced Cl- current potentiation (alpha1 beta2 gamma2S GABAA receptors)&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/pd_Sanna_1999_GABA_induced_Cl_current_potentiation_alpha1_beta2.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Witt_2026_RGR&quot;,&quot;label&quot;:&quot;Witt_2026 \u00b7 RGR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/pd_Witt_2026_RGR.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alprazolam_Klein2026_body_weight_50_kg&quot;,&quot;label&quot;:&quot;Klein_2026_body_weight_50_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Witt_2026_RGR&quot;,&quot;label&quot;:&quot;Witt_2026 \u00b7 RGR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_alprazolam/pd_Witt_2026_RGR.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -155,14 +155,14 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_cmax | reference | skipped |  | 1.954e-05 |  | non-numeric value |
-| T1_t_half_terminal | reference | skipped |  | 6.581 |  | non-numeric value |
-| T1_t_half_terminal | reference | pass | 6.816 | 6.581 | 0.9655 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 8.477 | 6.581 | 0.7763 | h→SI vs simulated h |
-| T1_tmax | reference | skipped |  | 4.068 |  | non-numeric value |
-| T1_tmax | reference | fail | 0.175 | 4.068 | 23.25 | min→SI vs simulated h |
-| T1_tmax | reference | fail | 0.175 | 4.068 | 23.25 | min→SI vs simulated h |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (10 of 10 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | skipped |  | 1.954e-05 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | skipped |  | 6.581 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | pass | 6.816 | 6.581 | 0.9655 | reported 6.816 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 8.477 | 6.581 | 0.7763 | reported 8.477 h→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 4.068 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | fail | 0.175 | 4.068 | 23.25 | reported 10.5 min→SI vs simulated h |
+| T1_tmax | reference | fail | 0.175 | 4.068 | 23.25 | reported 10.5 min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -178,7 +178,7 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg/Alprazolam_Klein2026_body_weight_50_kg_modelica.zip" download>Alprazolam_Klein2026_body_weight_50_kg_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg/Alprazolam_Klein2026_body_weight_50_kg_modelica.zip" download>Alprazolam_Klein2026_body_weight_50_kg_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg/Alprazolam_Klein2026_body_weight_50_kg_fmi.zip" download>Alprazolam_Klein2026_body_weight_50_kg_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg/Alprazolam_Klein2026_body_weight_50_kg_matlab.zip" download>Alprazolam_Klein2026_body_weight_50_kg_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_alprazolam/Alprazolam_Klein2026_body_weight_50_kg/Alprazolam_Klein2026_body_weight_50_kg_matlab_simbio.zip" download>Alprazolam_Klein2026_body_weight_50_kg_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>

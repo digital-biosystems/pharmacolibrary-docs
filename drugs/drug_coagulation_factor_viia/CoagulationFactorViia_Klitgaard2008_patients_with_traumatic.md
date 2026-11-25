@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The second reader disputed the record due to disagreements on the analyte name, despite the pharmacokinetic parameters appearing internally consistent.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="coagulation factor VIIa" model-id="CoagulationFactorViia_Klitgaard2008_patients_with_traumatic" status="needs_review" stale="false" population="healthy volunteers, haemophilia patients, liver surgery, cirrhosis, FVII deficiency, bleeding, trauma" measured-compound="recombinant activated factor VII" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Klitgaard T, Nielsen TG. Overview of the human pharmacokinetics of recombinant a
 
 ### Reviewer guidance
 
-**The second reader disputed the record due to disagreements on the analyte name, despite the pharmacokinetic parameters appearing internally consistent.**
+**cross_check_disputed; x1_cross_check.**
 
-A cross-check found an agreement ratio of 0.714 with 0 of 1 readers agreeing to the initial verdict. The disagreement concerned the dose compound and primary analyte fields, where the second reader identified rFVIIa instead of recombinant activated factor VII. No specific numerical errors in the clearance or volume parameters were reported, only naming inconsistencies. Extracted — coagulation factor viia: CL 70 ml kg−1 h−1, Vss 174 ml kg−1, t1/2z 2.37 h, V 40 mL kg−1.
+Extracted — coagulation factor viia: CL 70 ml kg−1 h−1, Vss 174 ml kg−1, t1/2z 2.37 h, V 40 mL kg−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has recombinant activated factor VII, the second reading rFVIIa; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -224,8 +224,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | pass | 3.08 | 2.637 | 0.8562 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.714 (5 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | cross-check contradicted by a second reader: verdict disputed; agreement 0.714 (5 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | pass | 3.08 | 2.637 | 0.8562 | reported 3.08 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

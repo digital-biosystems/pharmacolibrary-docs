@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability for ethionamide was left at unextracted placeholder values, unsupported by the abstract-only source.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="ethionamide" model-id="Ethionamide_Zhu2002_reference" status="needs_review" stale="false" population="patients with tuberculosis" measured-compound="ethionamide" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Zhu M, Namdar R, Stambaugh JJ, Starke JR, Bulpitt AE, Berning SE et al. Populati
 
 ### Reviewer guidance
 
-**Bioavailability for ethionamide was left at unextracted placeholder values, unsupported by the abstract-only source.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The bioavailability parameter (F) was not extracted from the paper, so a library placeholder would have been used, holding the model back. A second reader disputed all parameter values, finding them unreadable from the abstract. The cross-check failed with an agreement ratio of 0.125, indicating complete disagreement with the second reader. Extracted — ethionamide: V 3.22 l/kg, CL 1.88 l/h/kg, AUC 3.95 mg*h/L, t1/2z 1.94 h, kabs 1.02 h Ϫ1, tlag 0.43 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ethionamide: V 3.22 l/kg, CL 1.88 l/h/kg, AUC 3.95 mg*h/L, t1/2z 1.94 h, kabs 1.02 h Ϫ1, tlag 0.43 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ethionamide, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -161,7 +161,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.125 (2 of 16 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.125 | cross-check contradicted by a second reader: verdict disputed; agreement 0.125 (2 of 16 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

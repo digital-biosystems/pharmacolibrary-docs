@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the gender difference in apparent volume of distribution (20%) has units incompatible with a volume parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q76 unit % (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="deferiprone" model-id="Deferiprone_Bellanti2014_reference" status="rejected" stale="false" population="healthy adults" measured-compound="deferiprone" parameterization="apparent" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Bellanti F, Danhof M, Della Pasqua O. Population pharmacokinetics of deferiprone
 
 ### Reviewer guidance
 
-**The record was rejected because the gender difference in apparent volume of distribution (20%) has units incompatible with a volume parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q76 unit % (dimensionless) vs [length] ** 3.**
 
-Only the paper's abstract was read, so summary statistics like AUC (45.8 mg·h/L) stood in for a fitted model. The parameter labeled as a volume of distribution percentage (20%) failed a dimensional check requiring cubic length units. Additionally, a second reader disagreed with the extracted values for Cmax, AUC, and the volume of distribution, citing them as null or misidentified in this record. Extracted — deferiprone: AUC 45.8 mg·h/L, Cmax 17.6 mg l(-1), V/F 20 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — deferiprone: AUC 45.8 mg·h/L, Cmax 17.6 mg l(-1), V/F 20 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has deferiprone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,4 +148,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdeferiprone%5D%20Deferiprone_Bellanti2014_reference&body=Drug%3A%20deferiprone%0ARecord%3A%20Deferiprone_Bellanti2014_reference%0APaper%3A%20Bellanti_2014%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_deferiprone/Deferiprone_Bellanti2014_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 18:47 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 19:04 UTC</sub>

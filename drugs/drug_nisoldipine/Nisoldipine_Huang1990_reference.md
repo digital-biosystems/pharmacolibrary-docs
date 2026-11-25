@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The record was rejected because the clearance parameter for m-nisoldipine had incompatible units of min.kg instead of volume per time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit min.kg ([time] * [mass]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="nisoldipine" model-id="Nisoldipine_Huang1990_reference" status="rejected" stale="false" population="rabbits and rats" measured-compound="m-nisoldipine" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Huang Y, Fu SX, Li YS. Pharmacokinetics of m-nisoldipine in rabbits and rats. Zh
 
 ### Reviewer guidance
 
-**The record was rejected because the clearance parameter for m-nisoldipine had incompatible units of min.kg instead of volume per time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit min.kg ([time] * [mass]) vs [length] ** 3 / [time].**
 
-The clearance value of 9 was extracted with the unit min.kg, which conflicts with the physical dimension of total clearance. Consequently, a dimension check failed on this structural parameter. Additionally, the record relied solely on the paper's abstract, meaning summary statistics were used instead of a fitted model. Extracted — m-nisoldipine: t1/2α 4.3 min, t1/2β 63.6 min, V 0.805 L/kg, CL 9 min.kg, t1/2z 84.8 min, tmax 31.2 min, Cmax 50 micrograms/L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is nisoldipine's own; they describe m-nisoldipine. Extracted — m-nisoldipine: t1/2α 4.3 min, t1/2β 63.6 min, V 0.805 L/kg, CL 9 min.kg, t1/2z 84.8 min, tmax 31.2 min, Cmax 50 micrograms/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

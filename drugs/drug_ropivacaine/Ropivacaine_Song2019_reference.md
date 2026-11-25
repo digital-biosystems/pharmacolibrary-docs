@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ropivacaine clearance parameters are invalid because the source paper studies dexmedetomidine, not ropivacaine.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Song2019_reference" status="rejected" stale="false" population="" measured-compound="ropivacaine" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Song IK, Yi S, Lim HS, Lee JH, Kim EH, Cho JY et al. A Population Pharmacokineti
 
 ### Reviewer guidance
 
-**Ropivacaine clearance parameters are invalid because the source paper studies dexmedetomidine, not ropivacaine.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source text explicitly states the study investigates dexmedetomidine pharmacokinetics, with ropivacaine serving only as a scalp nerve block agent. Consequently, the extracted clearance value of 81.0 L/h does not represent ropivacaine elimination. A second reader disagreement exists for the intercompartmental clearance, where this record lists 116.4 L/h while the alternative is null. Extracted — ropivacaine: CL 81 L/h, V1 64.2 L, V2 167 L, Q 116 L/h.
+Extracted — ropivacaine: CL 81 L/h, V1 64.2 L, V2 167 L, Q 116 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of Q: this record has 116.4, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.875 (7 of 8 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.875 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

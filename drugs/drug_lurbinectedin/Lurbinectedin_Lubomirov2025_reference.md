@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Intercompartmental rate constants k12 and k21 were left at library defaults, so the two-compartment model lacks paper-supported estimates for its transfer rates.
+> K12, k21 use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="lurbinectedin" model-id="Lurbinectedin_Lubomirov2025_reference" status="needs_review" stale="false" population="cancer patients" measured-compound="lurbinectedin" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Lubomirov R, Pérez-Ramos L, Fudio S, Asín-Prieto E, Ibarra-Gómez L, Zubiaur P
 
 ### Reviewer guidance
 
-**Intercompartmental rate constants k12 and k21 were left at library defaults, so the two-compartment model lacks paper-supported estimates for its transfer rates.**
+**K12, k21 use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record provides values for clearance, central volume, and steady-state volume, but the intercompartmental constants were defaulted rather than extracted. One parameter with units of ng × h/L could not be converted to standard SI units, preventing validation. A second reader disputed the identification of the dose compound and primary analyte, and could not locate several extracted parameter values. Extracted — lurbinectedin: V 438 L, V1 11.6 L, CL 11.2 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — lurbinectedin: V 438 L, V1 11.6 L, CL 11.2 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lurbinectedin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -159,7 +159,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check contradicted by a second reader: verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

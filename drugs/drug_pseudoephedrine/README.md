@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R01B&quot;,&quot;href&quot;:&quot;atc/R01B.md&quot;},{&quot;label&quot;:&quot;pseudoephedrine&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pseudoephedrine_Palamanda2010_reference&quot;,&quot;label&quot;:&quot;Palamanda_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_pseudoephedrine/Pseudoephedrine_Palamanda2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # pseudoephedrine
 
@@ -14,18 +15,32 @@ Pseudoephedrine is a sympathomimetic decongestant used to treat nasal congestion
 
 <small>Summary written by `qwen3.8-27b` from [Wikidata Q263958](https://www.wikidata.org/wiki/Q263958), [Wikipedia](https://en.wikipedia.org/wiki/Pseudoephedrine?oldid=1378286228) (CC BY-SA 4.0), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
 
+## Molecular properties
+
+> Molar masses support mass–molar conversion and metabolite stoichiometry. Sources: DrugBank (parent), reported values or identity-matched PubChem entries (metabolites).
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| pseudoephedrine | parent | 165.232 | C10H15NO | DrugBank | [7028](https://pubchem.ncbi.nlm.nih.gov/compound/7028) | Palamanda_2010 |
+
+## Start here
+
+> **Palamanda_2010_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> rats, dogs, monkeys, and cats. [Run it in the simulator](drugs/drug_pseudoephedrine/Pseudoephedrine_Palamanda2010_reference.md?tab=Simulation) · [record](drugs/drug_pseudoephedrine/Pseudoephedrine_Palamanda2010_reference.md)
+
+<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
+
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="rat" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span><br><sub>blocking: cross_check_disputed</sub> | [Palamanda_2010_reference](drugs/drug_pseudoephedrine/Pseudoephedrine_Palamanda2010_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Palamanda JR et al., Pharmacokinetics of pseudoephedrine in…, Drug metabolism letters (2010) | [10.2174/187231210791292762](https://doi.org/10.2174/187231210791292762) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.90).">human + animal</span> | [Palamanda_2010_nasal_congestion_feline_model_of_nasal_congestion](drugs/drug_pseudoephedrine/pd_Palamanda_2010_nasal_congestion_feline_model_of_nasal_conges.md) | nasal congestion (feline model of nasal congestion) ← pseudoephedrine · direct sigmoid Emax (Hill) effect | — | Palamanda JR et al., Pharmacokinetics of pseudoephedrine in…, Drug metabolism letters (2010) | [10.2174/187231210791292762](https://doi.org/10.2174/187231210791292762) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Vansal_1999_cAMP_beta1_AR](drugs/drug_pseudoephedrine/pd_Vansal_1999_cAMP_beta1_AR.md) | cyclic AMP accumulation (adenylyl cyclase stimulation) via human beta1-AR ← pseudoephedrine (1S,2S and 1R,2R isomers) · direct Emax (saturable) effect | — | Vansal SS et al., Direct effects of ephedrine isomers on…, Biochemical pharmacology (1999) | [10.1016/s0006-2952(99)00152-5](https://doi.org/10.1016/s0006-2952(99)00152-5) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Vansal_1999_cAMP_beta2_AR](drugs/drug_pseudoephedrine/pd_Vansal_1999_cAMP_beta2_AR.md) | cyclic AMP accumulation (adenylyl cyclase stimulation) via human beta2-AR ← pseudoephedrine (1S,2S and 1R,2R isomers) · direct Emax (saturable) effect | — | Vansal SS et al., Direct effects of ephedrine isomers on…, Biochemical pharmacology (1999) | [10.1016/s0006-2952(99)00152-5](https://doi.org/10.1016/s0006-2952(99)00152-5) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Vansal_1999_cAMP_beta3_AR](drugs/drug_pseudoephedrine/pd_Vansal_1999_cAMP_beta3_AR.md) | cyclic AMP accumulation (adenylyl cyclase stimulation) via human beta3-AR ← pseudoephedrine · direct Emax (saturable) effect | — | Vansal SS et al., Direct effects of ephedrine isomers on…, Biochemical pharmacology (1999) | [10.1016/s0006-2952(99)00152-5](https://doi.org/10.1016/s0006-2952(99)00152-5) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Palamanda_2010_nasal_congestion](drugs/drug_pseudoephedrine/pd_Palamanda_2010_nasal_congestion.md) | nasal congestion ← pseudoephedrine · direct sigmoid Emax (Hill) effect | — | Palamanda JR et al., Pharmacokinetics of pseudoephedrine in…, Drug metabolism letters (2010) | [10.2174/187231210791292762](https://doi.org/10.2174/187231210791292762) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Vansal_1999_adenylyl_cyclase_stimulation_associated_with_cyclic_AMP_accumulations](drugs/drug_pseudoephedrine/pd_Vansal_1999_adenylyl_cyclase_stimulation_associated_with_cyc.md) | adenylyl cyclase stimulation associated with cyclic AMP accumulations ← 1S,2S-pseudoephedrine · direct sigmoid Emax (Hill) effect | model (no simulator) | Vansal SS et al., Direct effects of ephedrine isomers on…, Biochemical pharmacology (1999) | [10.1016/s0006-2952(99)00152-5](https://doi.org/10.1016/s0006-2952(99)00152-5) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,49 +54,46 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:25 | 0:38 | 0/0/0 | 3/1/0 | 0/0/0 | 32,394/2,564 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-24 03:53 | 0:03 | 1/0/0 | 2/0/0 | 0/0/0 | 3,960/176 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_6 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Palamanda_2010.pdf` | Palamanda JR et al., Pharmacokinetics of pseudoephedrine in…, Drug metabolism letters (2010) | popPK | 10 | [10.2174/187231210791292762](https://doi.org/10.2174/187231210791292762) | [20446910](https://pubmed.ncbi.nlm.nih.gov/20446910) | Original PK study reporting CL, Vdss, t1/2, and bioavailability values for pseudoephedrine directly in the abstract. |
-| `Atsumi_2026.pdf` | Atsumi T et al., Effect of pre- and postprandial adminis…, Journal of natural medicines (2026) | popPK | 8 | [10.1007/s11418-025-01980-w](https://doi.org/10.1007/s11418-025-01980-w) | [41276775](https://pubmed.ncbi.nlm.nih.gov/41276775) | Human crossover PK study with a one-compartment absorption model for pseudoephedrine, but the abstract reports only qualitative directions (higher ka, Cmax) with no numeric parameter values shown. |
-| `Graves_1990.pdf` | Graves DA et al., Application of NONMEM to routine bioava…, Journal of pharmacokinetics… (1990) | popPK | 8 | [10.1007/BF01063557](https://doi.org/10.1007/BF01063557) | [2348381](https://pubmed.ncbi.nlm.nih.gov/2348381) | Population-PK (NONMEM) analysis of pseudoephedrine absorption/disposition, but no numeric parameter values appear in the evidence. |
-| `He_2005.pdf` | He F et al., [Effect on pharmacokinetics of pseudo-e…, Zhongguo Zhong yao za zhi =… (2005) | popPK | 8 |  | [16381471](https://pubmed.ncbi.nlm.nih.gov/16381471) | Human PK study of pseudoephedrine with compartmental modeling, but no numeric parameter values appear in the evidence (likely in tables/figures not provided). |
-| `Pade_1995.pdf` | Pade V et al., Bioavailability of pseudoephedrine from…, Biopharmaceutics & drug dis… (1995) | popPK | 6 | [10.1002/bdd.2510160503](https://doi.org/10.1002/bdd.2510160503) | [8527687](https://pubmed.ncbi.nlm.nih.gov/8527687) | Human bioavailability/PK study with a one-compartment model, but the evidence gives no numeric CL/V/ka values — parameters likely in tables/figures not provided. |
-| `Wan_2019.pdf` | Wan JY et al., [Pharmacokinetics of compatible effecti…, Zhongguo Zhong yao za zhi =… (2019) | popPK | 5 | [10.19540/j.cnki.cjcmm.20190125.002](https://doi.org/10.19540/j.cnki.cjcmm.20190125.002) | [31355574](https://pubmed.ncbi.nlm.nih.gov/31355574) | PK of pseudoephedrine measured in febrile rats, but only AUC/MRT statistical moment totals are described; no numeric CL/V/ka values appear in the evidence. |
-
-<sub>queue written 2026-10-07 13:25 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Atsumi_2026 | relevant | 8 | 3 | Human crossover PK study with a one-compartment absorption model for pseudoephedrine, but the abstract reports only qualitative directions (higher ka, Cmax) with no numeric parameter values shown. |
-| popPK | Bantle_1990 | irrelevant | 0 | 0 | This is a developmental toxicity assay in Xenopus embryos with no pharmacokinetic parameters for pseudoephedrine. |
-| popPK | Graves_1990 | relevant | 8 | 2 | Population-PK (NONMEM) analysis of pseudoephedrine absorption/disposition, but no numeric parameter values appear in the evidence. |
-| popPK | He_2005 | relevant | 8 | 2 | Human PK study of pseudoephedrine with compartmental modeling, but no numeric parameter values appear in the evidence (likely in tables/figures not provided). |
-| popPK | Jing_2010 | irrelevant | 0 | 0 | This is an electrophysiology/mechanism study of ephedrine; pseudoephedrine is only a negative comparator with no PK parameters. |
-| popPK | Pade_1995 | relevant | 6 | 4 | Human bioavailability/PK study with a one-compartment model, but the evidence gives no numeric CL/V/ka values — parameters likely in tables/figures not provided. |
-| popPK | Rothman_2003 | irrelevant | 0 | 0 | In vitro receptor/transporter pharmacology study with no pharmacokinetic parameters for pseudoephedrine. |
-| popPK | Van_2004 | irrelevant | 0 | 0 | This is a population-PK study of garenoxacin; pseudoephedrine appears only as a concomitant-medication covariate affecting garenoxacin clearance, not as the subject drug. |
-| popPK | Vansal_1999 | irrelevant | 0 | 0 | In vitro receptor pharmacology study of ephedrine isomers with EC50 values, no PK disposition parameters for pseudoephedrine. |
-| popPK | Wan_2019 | relevant | 5 | 2 | PK of pseudoephedrine measured in febrile rats, but only AUC/MRT statistical moment totals are described; no numeric CL/V/ka values appear in the evidence. |
-| popPK | Zhang_2008 | irrelevant | 0 | 0 | Pseudoephedrine is only used as an internal standard; the PK parameters are for matrine alkaloids, not pseudoephedrine. |
+| popPK | Atsumi_2026 | relevant | 5 | 0 | The study reports pharmacokinetic parameters (ka) for pseudoephedrine in humans, but the specific numeric values are not present in the provided evidence, which only contains descriptive qualitative findings. |
+| PGx | Atsumi_2026 | not_relevant | 0 | 0 | The paper studies the effect of food (pre- vs postprandial) on PK, not a pharmacogenomic effect. |
+| popPK | Bantle_1990 | irrelevant | 0 | 0 | The study is a developmental toxicity/teratogenicity assay using frog embryos and does not report pharmacokinetic parameters. |
+| PGx | Bantle_1990 | not_relevant | 0 | 0 | The paper reports developmental toxicity of pseudoephedrine in a frog model, not pharmacogenomic effects on PK or PD parameters. |
+| popPK | Graves_1990 | relevant | 8 | 0 | The study reports a population PK model for pseudoephedrine, but no specific numeric parameter values (CL, V, ka, etc.) are present in the provided evidence, appearing only as a summary of the analysis. |
+| PGx | Graves_1990 | not_relevant | 0 | 0 | The paper describes the application of NONMEM software to pseudoephedrine bioavailability data for formulation comparison and contains no genetic or pharmacogenomic information. |
+| popPK | He_2005 | relevant | 9 | 1 | The study describes a human PK study of pseudoephedrine but the abstract provides only qualitative statements about statistical significance and model type without reporting specific numeric parameter values. |
+| PGx | He_2005 | not_relevant | 0 | 0 | The study investigates herb-herb drug interactions in Mahuang decoction, not pharmacogenomic effects (gene variants). |
+| popPK | Jing_2010 | irrelevant | 0 | 0 | The paper focuses on the electrophysiological mechanism of ephedrine on cardiac potassium channels, noting that pseudoephedrine had no effect, and does not report pharmacokinetic parameters for pseudoephedrine. |
+| PGx | Jing_2010 | not_relevant | 0 | 0 | The paper investigates the direct pharmacodynamic effects of ephedrine and pseudoephedrine on cardiac ion channels without any analysis of gene variants or genotypes. |
+| popPK | Pade_1995 | relevant | 7 | 2 | The study describes a one-compartment model for pseudoephedrine in humans but does not provide the specific numeric values for clearance, volume, or half-life in the provided text. |
+| PGx | Pade_1995 | not_relevant | 0 | 0 | The study compares the bioavailability of two formulations of pseudoephedrine and does not involve any gene variants, genotypes, or pharmacogenomic analysis. |
+| PGx | Palamanda_2010 | not_relevant | 0 | 0 | The study characterizes pseudoephedrine pharmacokinetics in animal models but does not investigate gene variants or pharmacogenomic effects on PK/PD parameters. |
+| popPK | Rothman_2003 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of transporter substrate affinity and receptor binding, not a pharmacokinetic study reporting disposition parameters like clearance or volume of distribution. |
+| PGx | Rothman_2003 | not_relevant | 0 | 0 | The paper characterizes in vitro interactions with transporters and receptors but does not report pharmacogenomic effects on PK/PD parameters. |
+| popPK | Van_2004 | irrelevant | 0 | 0 | The study analyzes the pharmacokinetics of garenoxacin; pseudoephedrine is only mentioned as a concomitant medication covariate affecting garenoxacin clearance. |
+| PGx | Van_2004 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction (pseudoephedrine) affecting garenoxacin pharmacokinetics, not a pharmacogenomic effect (gene variant/genotype) on pseudoephedrine pharmacokinetics or pharmacodynamics. |
+| popPK | Vansal_1999 | irrelevant | 0 | 0 | This is an in vitro pharmacodynamic study measuring receptor potency (EC50) and does not report pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Vansal_1999 | not_relevant | 0 | 0 | The paper studies the direct pharmacodynamic effects of ephedrine isomers on beta-adrenergic receptors in cell lines, but it does not report a pharmacogenomic effect (gene variant/genotype) on a PK or PD parameter of pseudoephedrine. |
+| popPK | Wan_2019 | irrelevant | 4 | 0 | Pseudoephedrine is a co-administered component of a herbal mixture, and no specific numeric PK parameter values are provided in the text. |
+| PGx | Wan_2019 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of pseudoephedrine in febrile rats to study the compatibility effects of Mahuang Decoction components, but it does not report any pharmacogenomic effects or analysis based on gene variants/genotypes. |
+| popPK | Zhang_2008 | irrelevant | 0 | 0 | Pseudoephedrine is used strictly as an internal standard for the quantification of matrine, oxymatrine, and oxysophocarpine; no pharmacokinetic parameters are reported for pseudoephedrine itself. |
+| PGx | Zhang_2008 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of matrine and related compounds, using pseudoephedrine only as an internal standard for analysis, and contains no genetic or pharmacogenomic data. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpseudoephedrine%5D&body=Drug%3A%20pseudoephedrine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pseudoephedrine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 03:49 UTC</sub>

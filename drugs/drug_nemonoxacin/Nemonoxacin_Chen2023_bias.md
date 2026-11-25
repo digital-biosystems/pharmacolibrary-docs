@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Nemonoxacin's bioavailability and volume of distribution lacked extracted values, forcing the use of unvalidated placeholders that led to the model's quarantine.
+> No value for nemonoxacin's bioavailability and volume of distribution; t3_param_coverage (+2 more).
 
 <div class="pk-model-meta" hidden drug="nemonoxacin" model-id="Nemonoxacin_Chen2023_bias" status="model_quarantined" stale="false" population="Chinese patients with community-acquired pneumonia and healthy subjects" measured-compound="nemonoxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Chen Y, Wu X, Tsai C, Chang L, Yu J, Cao G et al. Integrative population pharmac
 
 ### Reviewer guidance
 
-**Nemonoxacin's bioavailability and volume of distribution lacked extracted values, forcing the use of unvalidated placeholders that led to the model's quarantine.**
+**No value for nemonoxacin's bioavailability and volume of distribution; t3_param_coverage (+2 more).**
 
-The record contains no estimated figures for nemonoxacin's bioavailability or total volume of distribution, meaning standard library values replaced specific pharmacokinetic data. A secondary review also challenged other parameter values, including a clearance of 0 L/h and a lag time of -2 h, which differ from the reviewer's estimates. Extracted — nemonoxacin: CL 0 L/h, V2 0 L, Q 1 L/h, V3 0 L, kabs 6 1/h, tlag -2 h.
+The model was built, but nemonoxacin's bioavailability and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — nemonoxacin: CL 0 L/h, V2 0 L, Q 1 L/h, V3 0 L, kabs 6 1/h, tlag -2 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 0, the second reading 1; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -169,7 +169,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2'] |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.235, 0 of 1 reader(s) agree | 0.235 | cross-check disputed by a second reader: verdict disputed, agreement 0.235, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.235 (4 of 17 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.235 | cross-check contradicted by a second reader: verdict disputed; agreement 0.235 (4 of 17 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 0.151 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 7.32 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 4.9 |  |  | no simulated metric for this quantity (single reference sim) |

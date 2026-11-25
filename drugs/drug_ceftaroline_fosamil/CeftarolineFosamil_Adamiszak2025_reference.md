@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The second reader disagreed on the dose compound, clearance, intercompartmental clearance, and central volume values for ceftaroline.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ceftaroline fosamil" model-id="CeftarolineFosamil_Adamiszak2025_reference" status="needs_review" stale="false" population="critically ill adult patients" measured-compound="ceftaroline" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Adamiszak A, Pietrzkiewicz K, Bartkowska-Śniatkowska A, Smuszkiewicz P, Kusza K
 
 ### Reviewer guidance
 
-**The second reader disagreed on the dose compound, clearance, intercompartmental clearance, and central volume values for ceftaroline.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader identified ceftaroline fosamil as the dose compound, not ceftaroline. They extracted a clearance of 11.23 L/h and intercompartmental clearance of 8.80 L/h, differing from the record's 10.27 L/h and 8.51 L/h. Additionally, the central volume was recorded as 20.04 L instead of 21.26 L, and the second reader included covariate parameters for renal replacement therapy that were missing from this record. Extracted — ceftaroline fosamil: CL 10.3 L/h, V1 21.3 L, Q 8.51 L/h, Vmax 16.7 L, V 1.29 L, V2 7.82 L.
+Extracted — ceftaroline fosamil: CL 10.3 L/h, V1 21.3 L, Q 8.51 L/h, Vmax 16.7 L, V 1.29 L, V2 7.82 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ceftaroline, the second reading ceftaroline_fosamil; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -160,7 +160,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check disputed by a second reader: verdict disputed, agreement 0.444, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.444 (8 of 18 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.444 | cross-check contradicted by a second reader: verdict disputed; agreement 0.444 (8 of 18 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

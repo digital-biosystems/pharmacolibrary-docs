@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;daunorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/&quot;},{&quot;label&quot;:&quot;Thompson_2014_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_daunorubicin&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_daunorubicin&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_daunorubicin.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Daunorubicin_KroghMadsen2012_only_present_study&quot;,&quot;label&quot;:&quot;Krogh-Madsen_2012_only_present_study&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/Daunorubicin_KroghMadsen2012_only_present_study.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gumbo_2020_2_bacterial_burden&quot;,&quot;label&quot;:&quot;Gumbo_2020_2 \u00b7 bacterial burden&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/pd_Gumbo_2020_2_bacterial_burden.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Quartino_2007_SI&quot;,&quot;label&quot;:&quot;Quartino_2007 \u00b7 SI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/pd_Quartino_2007_SI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Quartino_2007_SI&quot;,&quot;label&quot;:&quot;Quartino_2007 \u00b7 SI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_daunorubicin/pd_Quartino_2007_SI.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # daunorubicin — `Daunorubicin_Thompson2014v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> CL, V and CL/F have no unit.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_Thompson2014v2_reference" status="needs_review" stale="false" population="children with cancer" measured-compound="daunorubicin" parameterization="apparent" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="daunorubicin" model-id="Daunorubicin_Thompson2014v2_reference" status="rejected" stale="false" population="children with cancer" measured-compound="daunorubicin" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Thompson P, Wheeler HE, Delaney SM, Lorier R, Broeckel U, Devidas M et al. Pharmacokinetics and pharmacogenomics of daunorubicin in children: a report from the Children's Oncology Group. Cancer chemotherapy and pharmacology 74(4):831–838 (2014).
@@ -17,27 +17,23 @@ Thompson P, Wheeler HE, Delaney SM, Lorier R, Broeckel U, Devidas M et al. Pharm
 
 ## Population and dosing
 
-**Population:** children with cancer · condition cancer · age group mixed · n = 98.
+**Population:** children with cancer · condition cancer · age group mixed.
 
 ## Model
 
 **Structure:** parent + metabolite; no model was built for this record.  
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted.  
+**Parameterization:** V1/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 0 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| Daunorubicin clearance | CL | 116 | l/m 2 /h |
-| volume of distribution | V | 68.1 | l/m 2 |
-| apparent clearance of daunorubicinol | CL/F | 19.1 | l/m 2 /h |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333), qwen3.8-27b (confirmed, agreement 1.0). Primary extraction retained.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,57 +43,55 @@ Thompson P, Wheeler HE, Delaney SM, Lorier R, Broeckel U, Devidas M et al. Pharm
 
 ### Reviewer guidance
 
-**CL, V and CL/F have no unit.**
+**The paper reports none of the model's key parameters.**
 
-Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL, V and CL/F), so that value has no SI equivalent. Extracted — daunorubicin: CL 116 l/m 2 /h, V 68.1 l/m 2, CL/F 19.1 l/m 2 /h.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-Independently confirmed by `qwen3.8-27b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has daunorubicin → daunorubicinol (metabolism), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-### All parameter columns
+### Unresolved rows _(no Q-code or no value — not parameters)_
 
-| label (paper) | Q-code · name | value | unit | unit_canonical | link | source |
-|---|---|---|---|---|---|---|
-| Daunorubicin clearance | `Q22` · CL | 116 | l/m 2 /h | l/m 2 /h | boundary (0.8) | Thompson_2014_2:results_prose |
-| volume of distribution | `Q61` · V | 68.1 | l/m 2 | l/m 2 | exact (1) | Thompson_2014_2:results_prose |
-| apparent clearance of daunorubicinol | `Q27` · CL/F | 19.1 | l/m 2 /h | l/m 2 /h | boundary (0.8) | Thompson_2014_2:discussion_prose |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+| label (paper) | Q-code | link |
+|---|---|---|
+| V m /F-Daunorubicinol (l/m 2 ) 232 (±10 %) | Q290 | exact |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- salvaged Q22 ('Daunorubicin clearance'=116) from results prose — parameter table was unreadable
-- salvaged Q61 ('volume of distribution'=68.1) from results prose — parameter table was unreadable
-- salvaged Q27 ('apparent clearance of daunorubicinol'=19.1) from results prose — parameter table was unreadable
-- implicit units: 'Daunorubicin clearance' — the LLM proposed 'L/m2/h', whose dimension does not fit Q22; left unset
-- implicit units: 'volume of distribution' — the LLM proposed 'L/m2', whose dimension does not fit Q61; left unset
-- implicit units: 'apparent clearance of daunorubicinol' — the LLM proposed 'L/m2/h', whose dimension does not fit Q27; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=daunorubicin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- row roles (LLM): model_class=compartmental; 1/1 row label(s) assigned, 1 linked by role; re-tagged parent→daunorubicinol ×1
 
 **Extraction notes:**
+- table tab_1: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 | `qwen3.8-27b` | confirmed | 1.0 (7/7 fields) | none |
 
-_All readers agree on the compared fields of this record._
+<details><summary>6 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['daunorubicin', 'daunorubicinol', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[apparent clearance of daunorubicinol]` |  | 19.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[daunorubicin clearance]` |  | 116 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[daunorubicin volume of distribution]` |  | 68.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v m /f-daunorubicinol (l/m 2 ) 232]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v m /f-daunorubicinol (l/m 2 ) 232]` |  |  | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -109,12 +103,9 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | l/m 2 /h | ['Thompson_2014_2:results_prose'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | l/m 2 /h | ['Thompson_2014_2:discussion_prose'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | l/m 2 | ['Thompson_2014_2:results_prose'] |
+| C0_has_structural_params | fail |  | 0 |  |
+| C0b_disposition_core | fail |  |  |  |
+| C5_dimension_Q290 | pass | [length] ** 3 |  | ['tab_1:row3:col0'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 
@@ -128,19 +119,9 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -150,4 +131,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdaunorubicin%5D%20Daunorubicin_Thompson2014v2_reference&body=Drug%3A%20daunorubicin%0ARecord%3A%20Daunorubicin_Thompson2014v2_reference%0APaper%3A%20Thompson_2014_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_daunorubicin/Daunorubicin_Thompson2014v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 16:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 12:57 UTC</sub>

@@ -25,7 +25,7 @@ Entacapone is a COMT inhibitor used to treat Parkinson's disease. It is administ
 
 ## Start here
 
-> **Heikkinen_2001_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy male volunteers, n = 8. [Run it in the simulator](drugs/drug_entacapone/Entacapone_Heikkinen2001_reference.md?tab=Simulation) · [record](drugs/drug_entacapone/Entacapone_Heikkinen2001_reference.md)
+> **Heikkinen_2001_reference** — <span class="pk-badge pk-badge--orange">Needs review</span> healthy male volunteers. [Run it in the simulator](drugs/drug_entacapone/Entacapone_Heikkinen2001_reference.md?tab=Simulation) · [record](drugs/drug_entacapone/Entacapone_Heikkinen2001_reference.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -33,14 +33,14 @@ Entacapone is a COMT inhibitor used to treat Parkinson's disease. It is administ
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Heikkinen_2001_reference](drugs/drug_entacapone/Entacapone_Heikkinen2001_reference.md) | ▶ model + simulator | 1-compartment, oral | 9 | Heikkinen H et al., Pharmacokinetics of entacapone, a perip…, European journal of clinica… (2001) | [10.1007/s002280000244](https://doi.org/10.1007/s002280000244) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Heikkinen_2001_reference](drugs/drug_entacapone/Entacapone_Heikkinen2001_reference.md) | ▶ model + simulator | 1-compartment, IV | 8 | Heikkinen H et al., Pharmacokinetics of entacapone, a perip…, European journal of clinica… (2001) | [10.1007/s002280000244](https://doi.org/10.1007/s002280000244) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Alqahtani_2015_PD](drugs/drug_entacapone/pd_Alqahtani_2015_PD.md) | PD parameters (COMT inhibition pharmacodynamic response) ← entacapone · inhibition effect | — | Alqahtani S et al., Development of a physiologically based…, Biopharmaceutics & drug dis… (2015) | [10.1002/bdd.1986](https://doi.org/10.1002/bdd.1986) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Forsberg_2002_COMT_inhibition_in_erythrocytes](drugs/drug_entacapone/pd_Forsberg_2002_COMT_inhibition_in_erythrocytes.md) | COMT inhibition in erythrocytes ← entacapone · direct Emax (saturable) effect | — | Forsberg M et al., Pharmacodynamic response of entacapone…, Pharmacology & toxicology (2002) | [10.1034/j.1600-0773.2002.900606.x](https://doi.org/10.1034/j.1600-0773.2002.900606.x) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Trocóniz_1998_motor_UPDRS](drugs/drug_entacapone/pd_Troc_niz_1998_motor_UPDRS.md) | motor part of the Unified Parkinson's Disease Rating Scale ← levodopa · direct sigmoid Emax (Hill) effect | — | Trocóniz IF et al., Population pharmacodynamic modeling of…, Clinical pharmacology and t… (1998) | [10.1016/S0009-9236(98)90028-5](https://doi.org/10.1016/S0009-9236(98)90028-5) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,7 +54,7 @@ Entacapone is a COMT inhibitor used to treat Parkinson's disease. It is administ
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 13:01 | 1:36 | 1/0/0 | 2/0/0 | 0/0/0 | 72,102/10,773 | ollama / glm-5.3-flash | 2 | 1/1 | 1/1 | 0 |
+| 2026-11-23 21:43 | 0:12 | 1/0/0 | 2/0/0 | 0/0/0 | 6,479/749 | einfracz / qwen3.8-27b | 2 | 1/1 | 1/1 | 0 |
 
 ## Coverage
 
@@ -63,34 +63,32 @@ Entacapone is a COMT inhibitor used to treat Parkinson's disease. It is administ
 - **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Heikkinen_2001.pdf` | Heikkinen H et al., Pharmacokinetics of entacapone, a perip…, European journal of clinica… (2001) | popPK | 10 | [10.1007/s002280000244](https://doi.org/10.1007/s002280000244) | [11294372](https://pubmed.ncbi.nlm.nih.gov/11294372) | Full PK parameters (Vc, Vss, CL, half-lives, AUC, bioavailability) for entacapone are reported directly in the abstract. |
-| `Alqahtani_2015.pdf` | Alqahtani S et al., Development of a physiologically based…, Biopharmaceutics & drug dis… (2015) | popPK | 8 | [10.1002/bdd.1986](https://doi.org/10.1002/bdd.1986) | [26295926](https://pubmed.ncbi.nlm.nih.gov/26295926) | PBPK/PK modeling study of entacapone itself in humans, but no numeric parameter values appear in the provided evidence. |
-
-<sub>queue written 2026-10-06 13:00 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Alqahtani_2015 | relevant | 8 | 2 | PBPK/PK modeling study of entacapone itself in humans, but no numeric parameter values appear in the provided evidence. |
-| popPK | Forsberg_2002 | irrelevant | 4 | 3 | Rat PK/PD study of entacapone, but evidence reports only bioavailability (F) and Emax/EC50 qualitative findings, not disposition parameters (CL, V, ka); numeric values like EC50 appear not fully provided. |
-| popPK | LeWitt_2009 | irrelevant | 3 | 2 | Entacapone is a co-formulated comparator; only levodopa PK values (AUC, Cmax) are reported, no entacapone disposition parameters. |
-| popPK | Léger_1998 | irrelevant | 2 | 2 | Entacapone (OR-611) is only a co-administered COMT inhibitor probe; the PK model concerns [18F]FDOPA, not entacapone itself, and no entacapone disposition parameters are given. |
-| popPK | Müller_2014 | irrelevant | 0 | 0 | This is a review of rasagiline; entacapone is only mentioned as a comparator with no PK parameters reported. |
-| popPK | Rocha_2014 | irrelevant | 2 | 0 | Entacapone is only a comparator arm in a BIA 9-1067 clinical trial; the evidence contains only adverse-event tables with no PK parameters. |
+| popPK | Alqahtani_2015 | relevant | 10 | 1 | The study describes a PBPK/PD model for entacapone, but the specific quantitative parameter values (CL, V, etc.) are not provided in the text or tables, only qualitative descriptions of model performance. |
+| PGx | Alqahtani_2015 | not_relevant | 0 | 0 | The paper develops a PBPK model to explain entacapone's low bioavailability via first-pass metabolism but does not investigate gene variants or pharmacogenomic effects. |
+| popPK | Forsberg_2002 | relevant | 6 | 1 | The study investigates entacapone PK in rats and mentions PK-PD relationships, but the abstract only provides bioavailability (F) and EC50/Emax values, lacking specific CL, V, or half-life parameters. |
+| PGx | Forsberg_2002 | not_relevant | 0 | 0 | The study investigates the impact of different formulations and bioavailability on pharmacodynamics in rats, but it does not report any pharmacogenomic effects or genetic variants influencing PK/PD parameters. |
+| PGx | Heikkinen_2001 | not_relevant | 0 | 0 | The paper describes population pharmacokinetics of entacapone in healthy volunteers using stable isotope labeling but does not report any gene variant or genotype associations. |
+| popPK | LeWitt_2009 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of levodopa (L-dopa) and entacapone is only a co-administered adjunct to extend L-dopa effects; no quantitative PK parameters for entacapone itself are reported. |
+| PGx | LeWitt_2009 | not_relevant | 0 | 0 | The study compares two levodopa formulations (CL-CR vs CLE) without analyzing genetic variants or pharmacogenomic factors. |
+| popPK | Léger_1998 | irrelevant | 1 | 0 | The study measures PK parameters for the tracer [18F]fluorodopa (FDOPA) in the presence of entacapone, not the pharmacokinetic parameters of entacapone itself. |
+| PGx | Léger_1998 | not_relevant | 0 | 0 | The study investigates the pharmacodynamic interaction of COMT inhibitors with [18F]fluorodopa in a PET model, rather than how a gene variant affects the PK/PD of entacapone. |
+| popPK | Müller_2014 | irrelevant | 0 | 0 | This is a review of rasagiline where entacapone is only mentioned as a comparator drug; no PK parameters for entacapone are reported. |
+| PGx | Müller_2014 | not_relevant | 0 | 0 | The paper is a review of rasagiline and does not report pharmacogenomic effects on entacapone PK/PD. |
+| popPK | Rocha_2014 | irrelevant | 0 | 0 | The evidence consists solely of adverse event tables (safety data) and contains no pharmacokinetic parameters such as clearance, volume, or half-life. |
+| PGx | Rocha_2014 | not_relevant | 0 | 0 | The text details adverse event incidence by drug dose (Entacapone/OPC), not by genotype or phenotype, and contains no pharmacokinetic or pharmacodynamic parameter data. |
 | popPK | Senek_2020 | irrelevant | 2 | 3 | This is a population-PK model of levodopa; entacapone is only a co-infused COMT inhibitor whose effect is a covariate (shift in levodopa CL/F), with no entacapone disposition parameters reported. |
-| popPK | Sethi_2021 | irrelevant | 1 | 0 | Clinical outcomes study of levodopa formulations with no PK parameters for entacapone reported. |
-| popPK | Trocóniz_1998 | irrelevant | 2 | 2 | The study models levodopa pharmacodynamics with entacapone only as a co-administered modifier; no entacapone disposition parameters (CL, V, ka) are reported. |
+| popPK | Sethi_2021 | irrelevant | 0 | 0 | The study is a clinical trial assessing symptom progression in Parkinson's disease and does not report any quantitative pharmacokinetic parameters for entacapone. |
+| PGx | Sethi_2021 | not_relevant | 0 | 0 | The study examines the relationship between levodopa formulations and disease progression rates, without investigating the influence of genetic variants on the pharmacokinetics or pharmacodynamics of entacapone. |
+| popPK | Trocóniz_1998 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamics of levodopa and its response, not the pharmacokinetic parameters of entacapone itself. |
+| PGx | Trocóniz_1998 | not_relevant | 0 | 0 | The study focuses on population pharmacodynamic modeling of levodopa and does not report any genetic variants or pharmacogenomic effects on the PK/PD parameters of entacapone. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bentacapone%5D&body=Drug%3A%20entacapone%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_entacapone/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 13:00 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 21:41 UTC</sub>

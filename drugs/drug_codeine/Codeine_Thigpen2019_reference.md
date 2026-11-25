@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The review was held back because a second reader disagreed on specific extracted values for the codeine record in Thigpen_2019, preventing consensus on the parameter data.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="codeine" model-id="Codeine_Thigpen2019_reference" status="needs_review" stale="false" population="neonates, infants, and children" measured-compound="codeine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ James C Thigpen, Brian L Odle, Sam Harirforoosh. Opioids: A Review of Pharmacoki
 
 ### Reviewer guidance
 
-**The review was held back because a second reader disagreed on specific extracted values for the codeine record in Thigpen_2019, preventing consensus on the parameter data.**
+**cross_check_disputed; x1_cross_check.**
 
-Although the primary extraction identified median clearance as 8.0 mL/kg/min and apparent volume as 5.2 L/kg, a second reader provided conflicting or missing entries for several fields. For instance, while one reader recorded a value of 68 for one field, the second left it null, and another field showed 11 versus 2.5. These specific numerical discrepancies resulted in a disputed verdict with an agreement score of 0.667. Extracted — codeine: CL 8 mL/kg/min, V/F 5.2 L/kg.
+Extracted — codeine: CL 8 mL/kg/min, V/F 5.2 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has 68, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -127,7 +127,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.667 (10 of 15 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (10 of 15 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

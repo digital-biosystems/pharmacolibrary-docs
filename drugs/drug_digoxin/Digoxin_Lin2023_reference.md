@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time were set to standard placeholders because the abstract-only source lacked these specific digoxin estimates.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Lin2023_reference" status="needs_review" stale="false" population="older patients with heart failure and chronic kidney disease" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Lin ZQ, Guo L, Zhang LM, Lu JJ, Jiang X. Dosage Optimization of Digoxin in Older
 
 ### Reviewer guidance
 
-**Bioavailability and lag time were set to standard placeholders because the abstract-only source lacked these specific digoxin estimates.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The source text was abstract-only, so summary statistics stood in for a fitted model. Consequently, bioavailability (F) and lag time (Tlag) were not extracted and were assigned library defaults instead of paper-specific values. These placeholder values affect the simulated profile but are not supported by the paper's data. Extracted — digoxin: CL 2.67 L/h, V 36.9 L, kabs 2.29 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — digoxin: CL 2.67 L/h, V 36.9 L, kabs 2.29 h−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

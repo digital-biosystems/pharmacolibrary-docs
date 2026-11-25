@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The second reader disagreed with six of the seven moxifloxacin parameter values, including clearance and absorption rate, causing a review dispute.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="moxifloxacin" model-id="Moxifloxacin_Yun2022_reference" status="needs_review" stale="false" population="adults with multidrug-resistant tuberculosis" measured-compound="moxifloxacin" parameterization="mechanistic" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Yun HY, Chang V, Radtke KK, Wang Q, Strydom N, Chang MJ et al. Model-Based Effic
 
 ### Reviewer guidance
 
-**The second reader disagreed with six of the seven moxifloxacin parameter values, including clearance and absorption rate, causing a review dispute.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The second reader recorded clearance as 8.25 L/h rather than 7.3 L/h and absorption rate as 0.775 hr–1 rather than 20.2 hr–1. Disagreements also extended to intercompartmental clearance (0.927 vs 20.9 L/h), volume of distribution (116 vs 10.1 L), peripheral volume (523 vs 24.4 L), and the covariate coefficient (0.131 vs 33.3). These discrepancies resulted in a cross-check agreement score of 0.538. The model was additionally held back because covariate effects were not simulated. Extracted — moxifloxacin: kabs 20.2 hr–1, V 10.1 L, CL 7.3 L/h, Q 20.9 L/h, V2 24.4 L, Fab 100.
+The base model was simulated, not the covariate effects the record defines. Extracted — moxifloxacin: kabs 20.2 hr–1, V 10.1 L, CL 7.3 L/h, Q 20.9 L/h, V2 24.4 L, Fab 100.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 7.3, the second reading 8.25; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -171,7 +171,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.538, 0 of 1 reader(s) agree | 0.538 | cross-check disputed by a second reader: verdict disputed, agreement 0.538, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.538 (7 of 13 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.538 | cross-check contradicted by a second reader: verdict disputed; agreement 0.538 (7 of 13 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

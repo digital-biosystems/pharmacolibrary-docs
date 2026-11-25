@@ -26,17 +26,13 @@ Orciprenaline is a moderately selective beta-2 adrenergic receptor agonist used 
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Dengler_1976_reference](drugs/drug_orciprenaline/Orciprenaline_Dengler1976_reference.md) | — | 1-compartment (no model) | 4 | Dengler HG et al., Metabolism and pharmacokinetics of orci…, Archives internationales de… (1976) | — |
+| <span class="pk-rf" hidden data-species="human + animal" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [Dengler_1976_reference](drugs/drug_orciprenaline/Orciprenaline_Dengler1976_reference.md) | — | 1-compartment (no model) | 3 | Dengler HG et al., Metabolism and pharmacokinetics of orci…, Archives internationales de… (1976) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Broadley_1979_rate](drugs/drug_orciprenaline/pd_Broadley_1979_rate.md) | positive chronotropic response (rate) ← orciprenaline · stimulation effect | — | Broadley KJ et al., Functional antagonism as a means of det…, British journal of pharmaco… (1979) | [10.1111/j.1476-5381.1979.tb10844.x](https://doi.org/10.1111/j.1476-5381.1979.tb10844.x) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Broadley_1979_tension](drugs/drug_orciprenaline/pd_Broadley_1979_tension.md) | positive inotropic response (tension) ← orciprenaline · stimulation effect | — | Broadley KJ et al., Functional antagonism as a means of det…, British journal of pharmaco… (1979) | [10.1111/j.1476-5381.1979.tb10844.x](https://doi.org/10.1111/j.1476-5381.1979.tb10844.x) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [ODonnell_1978_inhibition_of_K_depolarized_guinea_pig_uterus_contractions](drugs/drug_orciprenaline/pd_ODonnell_1978_inhibition_of_K_depolarized_guinea_pig_uterus_.md) | inhibition of K(+)-depolarized guinea-pig uterus contractions ← orciprenaline · direct Emax (saturable) effect | — | O'Donnell SR et al., An in vitro comparison of beta-adrenoce…, British journal of pharmaco… (1978) | [10.1111/j.1476-5381.1978.tb08450.x](https://doi.org/10.1111/j.1476-5381.1978.tb08450.x) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Semenov_2019_EI](drugs/drug_orciprenaline/pd_Semenov_2019_EI.md) | red blood cell deformability (elongation index) ← metaproterenol · direct sigmoid Emax (Hill) effect | — | Semenov AN et al., The Effects of Different Signaling Path…, Frontiers in physiology (2019) | [10.3389/fphys.2019.00923](https://doi.org/10.3389/fphys.2019.00923) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span> | [Williams_1983_positive_inotropic_response_of_paced_left_atria_papillary_muscles_and_positive_chronotropic_response_of_spontaneously_beating_right_atria_to_orciprenaline](drugs/drug_orciprenaline/pd_Williams_1983_positive_inotropic_response_of_paced_left_atri.md) | positive inotropic response of paced left atria / papillary muscles and positive chronotropic response of spontaneously beating right atria to orciprenaline ← orciprenaline · direct Emax (saturable) effect | — | Williams RG et al., Determination of agonist affinity for c…, European journal of pharmac… (1983) | [10.1016/0014-2999(83)90054-7](https://doi.org/10.1016/0014-2999(83)90054-7) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,41 +46,39 @@ Orciprenaline is a moderately selective beta-2 adrenergic receptor agonist used 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:13 | 0:47 | 0/1/0 | 5/0/0 | 0/0/0 | 46,799/2,876 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 02:42 | 0:03 | 1/0/0 | 1/0/0 | 0/0/0 | 3,490/151 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Dengler_1976.pdf` | Dengler HG et al., Metabolism and pharmacokinetics of orci…, Archives internationales de… (1976) | popPK | 8 |  | [999404](https://pubmed.ncbi.nlm.nih.gov/999404) | Original PK study of orciprenaline with numeric values (t½, Vd ~700 L, CL 1400 ml/min, bioavailability) present in the abstract. |
-
-<sub>queue written 2026-10-07 14:12 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Broadley_1979 | irrelevant | 0 | 0 | In-vitro pharmacodynamics (affinity/efficacy) of sympathomimetic amines in guinea-pig atria, with no PK disposition parameters for orciprenaline. |
-| popPK | Broadley_1983 | irrelevant | 0 | 0 | This is an in-vitro receptor pharmacology study (KA at beta-adrenoceptors), not a pharmacokinetic study with disposition parameters for orciprenaline. |
-| popPK | Gay_1987 | irrelevant | 0 | 0 | This is a respiratory mechanics study of aerosolized metaproterenol's bronchodilator effect, with no pharmacokinetic parameters for orciprenaline. |
-| popPK | Kimura_1998 | irrelevant | 0 | 0 | In-vitro rat hepatocyte study of IGF mitogenesis; metaproterenol is only a co-administered agent with no PK parameters for orciprenaline. |
-| popPK | Kimura_1999 | irrelevant | 0 | 0 | In-vitro rat hepatocyte study of metaproterenol (orciprenaline) effects on TGF-alpha-induced proliferation; no pharmacokinetic parameters reported. |
-| popPK | ODonnell_1978 | irrelevant | 0 | 0 | In vitro pharmacodynamic potency study on guinea-pig uterus, not a PK study; orciprenaline only a test drug with EC50 potency values, no disposition parameters. |
+| popPK | Broadley_1979 | irrelevant | 0 | 0 | The study is an in vitro pharmacodynamic analysis measuring potency and affinity, not a pharmacokinetic study. |
+| PGx | Broadley_1979 | not_relevant | 0 | 0 | The paper reports in vitro pharmacodynamics of sympathomimetic amines but does not investigate the effect of any gene variant or genotype on PK/PD parameters. |
+| popPK | Broadley_1983 | irrelevant | 0 | 0 | The study focuses on in-vitro pharmacodynamics and receptor binding affinity (KA) in guinea-pig heart tissue, not population pharmacokinetics. |
+| PGx | Broadley_1983 | not_relevant | 0 | 0 | The paper investigates temperature-induced changes in pharmacodynamics, not gene variant/pharmacogenomic effects. |
+| PGx | Dengler_1976 | not_relevant | 0 | 0 | The paper investigates the metabolism and pharmacokinetics of orciprenaline across different animal species and humans, but it does not report any pharmacogenomic effects or variations based on genetic differences. |
+| popPK | Gay_1987 | irrelevant | 0 | 0 | The study focuses on the respiratory mechanics and bronchodilator effects of metaproterenol, not the pharmacokinetics of orciprenaline. |
+| PGx | Gay_1987 | not_relevant | 0 | 0 | The paper evaluates the bronchodilator response to metaproterenol in mechanically ventilated patients and does not involve orciprenaline or any genetic variants. |
+| popPK | Kimura_1998 | irrelevant | 0 | 0 | The paper investigates the effects of IGF-I and IGF-II on rat hepatocyte proliferation and does not report pharmacokinetic parameters for orciprenaline. |
+| PGx | Kimura_1998 | not_relevant | 0 | 0 | The paper studies IGF-I and IGF-II effects on rat hepatocytes and mentions metaproterenol (a related beta-agonist) as a modulator, but does not report pharmacogenomic data or specific PK/PD parameters for orciprenaline. |
+| popPK | Kimura_1999 | irrelevant | 0 | 0 | This is a mechanistic in-vitro study on rat hepatocyte proliferation, not a pharmacokinetic study of orciprenaline (which is not even mentioned in the provided text). |
+| PGx | Kimura_1999 | not_relevant | 0 | 0 | The paper investigates cell proliferation mechanisms in rat hepatocytes and does not mention orciprenaline or any human gene variants affecting its pharmacokinetics or pharmacodynamics. |
+| popPK | ODonnell_1978 | irrelevant | 0 | 0 | This is an in vitro pharmacodynamic study comparing receptor potency, not a pharmacokinetic study with disposition parameters. |
+| PGx | ODonnell_1978 | not_relevant | 0 | 0 | The paper reports in vitro pharmacological data on guinea-pigs and does not investigate the impact of human gene variants on the pharmacokinetics or pharmacodynamics of orciprenaline. |
 | popPK | Semenov_2019 | irrelevant | 0 | 0 | Orciprenaline (metaproterenol) appears only as an in vitro β2-agonist in RBC deformability experiments with EC50 pharmacodynamic values, not any PK disposition parameters. |
-| popPK | Williams_1983 | irrelevant | 0 | 0 | In-vitro receptor pharmacodynamics (affinity/EC50) in guinea-pig cardiac tissue, no PK disposition parameters for orciprenaline. |
+| popPK | Williams_1983 | irrelevant | 0 | 0 | The paper reports in-vitro functional receptor binding/affinity parameters (EC50, KA) rather than pharmacokinetic disposition parameters. |
+| PGx | Williams_1983 | not_relevant | 0 | 0 | The study investigates reserpine-induced supersensitivity in guinea-pigs, not a genetic variant or genotype. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Borciprenaline%5D&body=Drug%3A%20orciprenaline%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_orciprenaline/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 14:12 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 02:41 UTC</sub>

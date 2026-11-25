@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sodium selenite's clearance, volume of distribution, and absorption lag time were left at library placeholders, causing the model to be quarantined.
+> No value for sodium selenite's clearance, volume of distribution and absorption lag time; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="sodium selenite" model-id="SodiumSelenite_Jayachandran2021_reference" status="model_quarantined" stale="false" population="patients with metastatic cancer" measured-compound="selenite" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Jayachandran P, Knox SJ, Garcia-Cremades M, Savić RM. Clinical Pharmacokinetics
 
 ### Reviewer guidance
 
-**Sodium selenite's clearance, volume of distribution, and absorption lag time were left at library placeholders, causing the model to be quarantined.**
+**No value for sodium selenite's clearance, volume of distribution and absorption lag time; t6_deviations (+1 more).**
 
-The record provides values for absorption rate constant, apparent clearance, and apparent volume, but lacks estimates for the base clearance, volume, and lag time parameters. Consequently, a library placeholder stood in for these missing pharmacokinetic values. A second reader also disputed the record's identification of the dose compound and analyte, noting they were unclear, and suggested a link to endogenous selenium that was missing. Extracted — sodium selenite: kabs 0.642 h−1, CL/F 1.59 L/h, V/F 42.5 L.
+The model was built, but sodium selenite's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — sodium selenite: kabs 0.642 h−1, CL/F 1.59 L/h, V/F 42.5 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sodium selenite, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | cross-check disputed by a second reader: verdict disputed, agreement 0.7, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.7 (7 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.7 | cross-check contradicted by a second reader: verdict disputed; agreement 0.7 (7 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -37,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:10 | 0:54 | 0/0/0 | 2/0/0 | 0/0/0 | 50,030/3,668 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-23 21:50 | 0:03 | 0/0/0 | 2/0/0 | 0/0/0 | 4,501/182 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -50,13 +50,19 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Kim_2016 | irrelevant | 0 | 0 | Fumaric acid is only quantified as a fungal culture component, with no pharmacokinetic disposition parameters reported. |
-| popPK | Kozan_2026 | irrelevant | 0 | 0 | Fumaric acid is only identified as a compound in a plant extract; no pharmacokinetic parameters are reported. |
+| popPK | Kim_2016 | irrelevant | 0 | 0 | The paper is a study on the nematicidal activity of fungal metabolites (specifically kojic acid) and only mentions fumaric acid as a minor organic acid component, containing no pharmacokinetic data. |
+| PGx | Kim_2016 | not_relevant | 0 | 0 | The paper studies the nematicidal activity of organic acids (including fumaric acid) produced by a fungus, containing no information on human pharmacogenomics, PK, or PD parameters. |
+| popPK | Kozan_2026 | irrelevant | 0 | 0 | The paper is an in vitro anthelmintic study where fumaric acid is only identified as a compound in an extract, with no pharmacokinetic parameters reported. |
+| PGx | Kozan_2026 | not_relevant | 0 | 0 | The study evaluates the in vitro anthelmintic activity of Avena sativa extracts against parasites and does not involve pharmacogenomics or human PK/PD parameters for fumaric acid. |
 | popPK | Liu_2026 | irrelevant | 0 | 0 | This is a mouse pharmacology study reporting efficacy EC50 values, not fumaric-acid pharmacokinetic parameters. |
-| popPK | Nazir_2022 | irrelevant | 0 | 0 | Fumaric acid is identified in a fungal extract, but no pharmacokinetic disposition parameters are reported. |
-| popPK | Ordronneau_1992 | irrelevant | 0 | 0 | Fumaric acid is only tested for antibody cross-reactivity, with no pharmacokinetic parameters reported. |
-| popPK | Petrović_2025 | irrelevant | 0 | 0 | Fumaric acid is only measured as a trace organic acid in plant seeds, with no pharmacokinetic disposition parameters reported. |
-| popPK | Salehi_2021 | irrelevant | 0 | 0 | Fumaric acid is only a pH modifier in an in vitro dissolution study, with no pharmacokinetic disposition parameters reported. |
+| popPK | Nazir_2022 | irrelevant | 0 | 0 | The paper reports fumaric acid as a constituent of a fungal extract but contains no pharmacokinetic parameters or disposition data. |
+| PGx | Nazir_2022 | not_relevant | 0 | 0 | The paper studies the bioactive potential of a fungal endophyte producing fumaric acid, not the pharmacogenomics of fumaric acid as a drug. |
+| popPK | Ordronneau_1992 | irrelevant | 0 | 0 | The paper is an immunology study characterizing an antiserum, and fumaric acid is only mentioned as a compound with minor cross-reactivity in an immunoassay, with no pharmacokinetic data reported. |
+| PGx | Ordronneau_1992 | not_relevant | 0 | 0 | The paper characterizes an antiserum for NMDA-like compounds and mentions fumaric acid only as a control showing minor cross-reactivity in an immunoassay, not as a drug subject to pharmacogenomic analysis. |
+| popPK | Petrović_2025 | irrelevant | 0 | 0 | The paper is a phytochemical and nutritional analysis of Lunaria annua seeds where fumaric acid is only detected as a trace organic acid component, with no pharmacokinetic studies performed. |
+| PGx | Petrović_2025 | not_relevant | 0 | 0 | The paper describes the nutritional and bioactive properties of a plant extract and is unrelated to fumaric acid pharmacogenomics. |
+| popPK | Salehi_2021 | irrelevant | 0 | 0 | The paper focuses on a mass transport model for drug dissolution using fumaric acid as a formulation excipient (pH modifier), not as a subject drug for pharmacokinetic analysis, and contains no PK parameter values for fumaric acid itself. |
+| PGx | Salehi_2021 | not_relevant | 0 | 0 | The study focuses on formulating fumaric acid as a pH modifier to improve the dissolution of other drugs, not on the pharmacogenomics of fumaric acid itself. |
 | popPK | Shimizu_2023 | irrelevant | 1 | 0 | The study reports ensitrelvir pharmacokinetics, not quantitative disposition parameters for fumaric acid itself. |
 
 

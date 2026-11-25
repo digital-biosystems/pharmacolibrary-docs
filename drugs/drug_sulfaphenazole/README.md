@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Schmider_1997_mestranol_demethylation_activity](drugs/drug_sulfaphenazole/pd_Schmider_1997_mestranol_demethylation_activity.md) | mestranol demethylation activity ← sulfaphenazole · direct Emax (saturable) effect | — | Schmider J et al., Biotransformation of mestranol to ethin…, Journal of clinical pharmac… (1997) | [10.1002/j.1552-4604.1997.tb04781.x](https://doi.org/10.1002/j.1552-4604.1997.tb04781.x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Schmider_1997_mestranol_demethylation_activity](drugs/drug_sulfaphenazole/pd_Schmider_1997_mestranol_demethylation_activity.md) | mestranol demethylation activity ← sulfaphenazole · direct Emax (saturable) effect | — | Schmider J et al., Biotransformation of mestranol to ethin…, Journal of clinical pharmac… (1997) | [10.1002/j.1552-4604.1997.tb04781.x](https://doi.org/10.1002/j.1552-4604.1997.tb04781.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:14 | 0:17 | 0/0/0 | 1/0/0 | 0/0/0 | 19,096/1,132 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-07 11:14 | 0:17 | 0/0/0 | 0/1/0 | 0/0/0 | 19,096/1,132 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 

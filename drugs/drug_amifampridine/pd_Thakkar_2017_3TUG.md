@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07X&quot;,&quot;href&quot;:&quot;atc/N07X.md&quot;},{&quot;label&quot;:&quot;amifampridine&quot;,&quot;href&quot;:&quot;drugs/drug_amifampridine/&quot;},{&quot;label&quot;:&quot;Thakkar_2017 \u00b7 PD Triple Timed Up &amp; Go&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N07X&quot;,&quot;href&quot;:&quot;atc/N07X.md&quot;},{&quot;label&quot;:&quot;amifampridine&quot;,&quot;href&quot;:&quot;drugs/drug_amifampridine/&quot;},{&quot;label&quot;:&quot;Thakkar_2017 \u00b7 PD Triple Timed Up &amp; Go (3TUG)&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amifampridine_Thakkar2017_reference&quot;,&quot;label&quot;:&quot;Thakkar_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amifampridine/Amifampridine_Thakkar2017_reference.md&quot;,&quot;status&quot;:&quot;Not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Thakkar_2017_3TUG&quot;,&quot;label&quot;:&quot;Thakkar_2017 \u00b7 3TUG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amifampridine/pd_Thakkar_2017_3TUG.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Triple Timed Up & Go — PD  <span class="pk-badge pk-badge--blue">Simulated</span>
+# Triple Timed Up & Go (3TUG) — PD  <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--neutral" title="gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** 3,4-DAP (measured concentrations) drive Triple Timed Up & Go (in sec): direct Emax (saturable) effect.
+**As extracted:** 3,4-DAP (measured concentrations) drive Triple Timed Up & Go (3TUG) (in sec): direct Emax (saturable) effect.
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
@@ -35,12 +35,9 @@ Thakkar N et al., Population Pharmacokinetics/Pharmacodyn…, CPT: pharmacometri
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | Fractional Emax | `Q323` ·  | 0.816 |  | llm | Thakkar_2017:pdv3 |
-| PD (effect) | EC50 | `Q321` ·  | 29.8 | ng/mL | llm | Thakkar_2017:pdv3 |
 | PD (effect) | E0 | `Q324` ·  | 18.2 | sec | llm | Thakkar_2017:pdv3 |
-| variability | Fractional Emax between subject variability | `Q312` ·  | 41 | %CV | llm | Thakkar_2017:pdv3 |
-| variability | EC50 between subject variability | `Q312` ·  | 88.3 | %CV | llm | Thakkar_2017:pdv3 |
-| variability | E0 between subject variability | `Q312` ·  | 71.3 | %CV | llm | Thakkar_2017:pdv3 |
+| PD (effect) | Fractional Emax | `Q323` ·  | 0.816 |  | direction | Thakkar_2017:pdv3 |
+| PD (effect) | EC50 | `Q321` ·  | 29.8 | ng/mL | llm | Thakkar_2017:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -84,15 +81,30 @@ Advisory:
 - defaulted: gamma (convention)
 
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--neutral">unchecked</span>  
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | no answer | – | – (extracted nothing for this PD record) |
+
+_No second reader extracted anything for this PD record; it is not cross-checked._
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Model downloads
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amifampridine/Amifampridine_Thakkar2017_PD_3tug/Amifampridine_Thakkar2017_PD_3tug_modelica.zip" download>Amifampridine_Thakkar2017_PD_3tug_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amifampridine/Amifampridine_Thakkar2017_PD_3tug/Amifampridine_Thakkar2017_PD_3tug_matlab.zip" download>Amifampridine_Thakkar2017_PD_3tug_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amifampridine/Amifampridine_Thakkar2017_PD_3tug/Amifampridine_Thakkar2017_PD_3tug_modelica.zip" download>Amifampridine_Thakkar2017_PD_3tug_modelica.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amifampridine/Amifampridine_Thakkar2017_PD_3tug/Amifampridine_Thakkar2017_PD_3tug_fmi.zip" download>Amifampridine_Thakkar2017_PD_3tug_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amifampridine/Amifampridine_Thakkar2017_PD_3tug/Amifampridine_Thakkar2017_PD_3tug_matlab.zip" download>Amifampridine_Thakkar2017_PD_3tug_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amifampridine/Amifampridine_Thakkar2017_PD_3tug/Amifampridine_Thakkar2017_PD_3tug_sbml.zip" download>Amifampridine_Thakkar2017_PD_3tug_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amifampridine/Amifampridine_Thakkar2017_PD_3tug/Amifampridine_Thakkar2017_PD_3tug_cellml.zip" download>Amifampridine_Thakkar2017_PD_3tug_cellml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>

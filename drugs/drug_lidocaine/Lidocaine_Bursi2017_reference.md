@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the central compartment volume for lidocaine was 0.312 L, an implausibly small value indicating an extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="lidocaine" model-id="Lidocaine_Bursi2017_reference" status="rejected" stale="false" population="post-herpetic neuralgia patients" measured-compound="lidocaine" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -54,13 +54,13 @@ Bursi R, Piana C, Grevel J, Huntjens D, Boesl I. Evaluation of the Population Ph
 
 ### Reviewer guidance
 
-**The record was rejected because the central compartment volume for lidocaine was 0.312 L, an implausibly small value indicating an extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The parameter labeled V1 is identified as the volume of distribution of the central compartment, yet it has a value of only 0.312 L. This magnitude is physiologically impossible for a systemic lidocaine model, triggering a rejection for being outside the physiological window. Additionally, there is disagreement on the metabolic pathway, with one record stating monoethylglycinexylidide forms from glycinexylidide while another reader asserts it forms directly from lidocaine. Extracted — glycinexylidide: kfm 1.93 h−1, k31 -0.526 h−1, ki0 0.39 1/h; 2,6-xylidine: ki0 0.2 1/h; lidocaine: V1 0.312 L.
+Extracted — glycinexylidide: kfm 1.93 h−1, k31 -0.526 h−1, ki0 0.39 1/h; 2,6-xylidine: ki0 0.2 1/h; lidocaine: V1 0.312 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has lidocaine → 2,6-xylidine (metabolism); lidocaine → glycinexylidide (metabolism); glycinexylidide → monoethylglycinexylidide (metabolism), the second reading lidocaine → 2,6-xylidine (metabolism); lidocaine → glycinexylidide (metabolism); lidocaine → monoethylglycinexylidide (metabolism); it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant was recorded with a clearance unit of L/h instead of the required rate unit of 1/h.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="darbepoetin alfa" model-id="DarbepoetinAlfa_An2017_reference" status="rejected" stale="false" population="infants" measured-compound="darbepoetin_alfa" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ An G, Ohls RK, Christensen RD, Widness JA, Mock DM, Veng-Pedersen P. Population 
 
 ### Reviewer guidance
 
-**The absorption rate constant was recorded with a clearance unit of L/h instead of the required rate unit of 1/h.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time].**
 
-The record lists the absorption rate constant with a unit of L/h, which conflicts with the dimensional requirement for a first-order rate constant. This unit mismatch invalidates the structural parameter. The record was constructed solely from the abstract, so the summary statistics stand in for fitted model values. Extracted — darbepoetin alfa: CL 0.05 L/h/kg, kabs 0.062 L/h, V 16.2 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — darbepoetin alfa: CL 0.05 L/h/kg, kabs 0.062 L/h, V 16.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has darbepoetin_alfa, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

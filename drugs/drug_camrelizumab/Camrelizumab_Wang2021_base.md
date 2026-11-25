@@ -1,14 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;camrelizumab&quot;,&quot;href&quot;:&quot;drugs/drug_camrelizumab/&quot;},{&quot;label&quot;:&quot;Wang_2021 \u00b7 base&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Camrelizumab_Wang2021_base&quot;,&quot;label&quot;:&quot;Wang_2021_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_camrelizumab/Camrelizumab_Wang2021_base.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Camrelizumab_Wang2021_final&quot;,&quot;label&quot;:&quot;Wang_2021_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_camrelizumab/Camrelizumab_Wang2021_final.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # camrelizumab — `Camrelizumab_Wang2021_base`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> The record was rejected because the intercompartmental clearance unit, L/day, could not be converted to standard SI units.
-
-<div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Wang2021_base" status="rejected" stale="false" population="patients with melanoma, advanced solid tumors, or relapsed/refractory classical Hodgkin lymphoma" measured-compound="camrelizumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="camrelizumab" model-id="Camrelizumab_Wang2021_base" status="simulated" stale="false" population="patients with advanced melanoma, relapsed or refractory classical Hodgkin lymphoma, and other solid tumor types" measured-compound="camrelizumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Wang CY, Sheng CC, Ma GL, Xu D, Liu XQ, Wang YY et al. Population pharmacokinetics of the anti-PD-1 antibody camrelizumab in patients with multiple tumor types and model-informed dosing strategy. Acta pharmacologica Sinica 42(8):1368–1375 (2021).
@@ -16,32 +15,32 @@ Wang CY, Sheng CC, Ma GL, Xu D, Liu XQ, Wang YY et al. Population pharmacokineti
 
 ## Population and dosing
 
-**Population:** patients with melanoma, advanced solid tumors, or relapsed/refractory classical Hodgkin lymphoma · condition melanoma, advanced solid tumors, or relapsed/refractory classical Hodgkin lymphoma · age group adult · n = 133.
+**Population:** patients with advanced melanoma, relapsed or refractory classical Hodgkin lymphoma, and other solid tumor types · condition melanoma, classical Hodgkin lymphoma, solid tumors · age group adult · n = 133.
+
+**Dosing:** 70, 700 mg, iv, single.
 
 ## Model
 
-**Structure:** 2-compartment; no model was built for this record.  
+**Structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameterization:** mechanistic.  
-**Parameters:** 8 extracted.  
-**Availability:** No model was generated from this record.
+**Parameters:** 6 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_camrelizumab/Camrelizumab_Wang2021_base/Camrelizumab_Wang2021_base.svg" alt="Camrelizumab_Wang2021_base diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit | IIV |
 |---|---|---|---|---|
-| CL linear (L/day) | CL | 0.242 | L/day | 57.0 (17.3% RSE) |
-| V m (mg/day) | Vmax | 2.86 | mg/day | 48.3 (17.5% RSE) |
+| CL linear (L/day) | CL | 0.242 | L/day | 57.0 (None% RSE) |
+| V m (mg/day) | Vmax | 2.86 | mg/day | 48.3 (None% RSE) |
 | K m (mg/L) | Km | 1.28 | mg/L |  |
-| V 1 (L) | V1 | 3.08 | L | 40.2 (13.3% RSE) |
+| V 1 (L) | V1 | 3.08 | L | 40.2 (None% RSE) |
 | Q (L/day) | Q | 0.385 | L/day |  |
 | V 2 (L) | V2 | 2.88 | L |  |
-| C max,ss (mg/L) | Cmax | 47.26 | mg/L |  |
-| C min,ss (mg/L) | Cmin | 26.13 | mg/L |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (partly confirmed, agreement 0.833). Primary extraction retained.">cross-check: partial 1/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,26 +50,22 @@ Wang CY, Sheng CC, Ma GL, Xu D, Liu XQ, Wang YY et al. Population pharmacokineti
 
 ### Reviewer guidance
 
-**The record was rejected because the intercompartmental clearance unit, L/day, could not be converted to standard SI units.**
-
-The record lists the intercompartmental clearance between the central and peripheral compartments as 0.385 L/day. This unit was not recognized for conversion to SI, so the parameter remained without a valid standardized value. Additionally, the second reader failed to confirm the extracted maximum and minimum steady-state concentrations of 47.26 mg/L and 26.13 mg/L, respectively. Extracted — camrelizumab: CL 0.242 L/day, Vmax 2.86 mg/day, Km 1.28 mg/L, V1 3.08 L, Q 0.385 L/day, V2 2.88 L, Cmax 47.3 mg/L, Cmin 26.1 mg/L.
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of c max,ss: this record has 47.26, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|
-| CL linear (L/day) | `Q22` · CL | 0.242 | L/day | 2.801e-09 | m3/s | l/d | llm_confirmed (0.6) | tab_2:row3:col1 | 57.0 (17.3% RSE) |
-| V m (mg/day) | `Q66` · Vmax | 2.86 | mg/day |  |  | mg/d | special_case (0.95) | tab_2:row5:col1 | 48.3 (17.5% RSE) |
-| K m (mg/L) | `Q1` · Km | 1.28 | mg/L |  |  | mg/l | space_fold (0.95) | tab_2:row6:col1 |  |
-| V 1 (L) | `Q63` · V1 | 3.08 | L | 0.00308 | m3 | l | space_fold (0.95) | tab_2:row7:col1 | 40.2 (13.3% RSE) |
+| CL linear (L/day) | `Q22` · CL | 0.242 | L/day | 2.801e-09 | m3/s | l/d | llm_confirmed (0.6) | tab_2:row3:col1 | 57.0 (None% RSE) |
+| V m (mg/day) | `Q66` · Vmax | 2.86 | mg/day | 3.31e-11 | kg/s | mg/d | special_case (0.95) | tab_2:row5:col1 | 48.3 (None% RSE) |
+| K m (mg/L) | `Q1` · Km | 1.28 | mg/L | 0.00128 | kg/m3 | mg/l | space_fold (0.95) | tab_2:row6:col1 |  |
+| V 1 (L) | `Q63` · V1 | 3.08 | L | 0.00308 | m3 | l | space_fold (0.95) | tab_2:row7:col1 | 40.2 (None% RSE) |
 | Q (L/day) | `Q30` · Q | 0.385 | L/day | 4.456e-09 | m3/s | l/d | exact (1) | tab_2:row8:col1 |  |
 | V 2 (L) | `Q64` · V2 | 2.88 | L | 0.00288 | m3 | l | space_fold (0.95) | tab_2:row10:col1 |  |
-| C max,ss (mg/L) | `Q32` · Cmax | 47.26 | mg/L |  |  | mg/l | llm (0.6) | Wang_2021_table_4:row0:col3 |  |
-| C min,ss (mg/L) | `Q36` · Cmin | 26.13 | mg/L |  |  | mg/l | llm (0.6) | Wang_2021_table_4:row1:col3, Wang_2021_table_4:row1:col4 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -85,39 +80,21 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 - table section iiv: 'V 1 (%)' routed out of structural estimates ('Between-subject variability')
 - table section residual_error: 'Proportional error (%)' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive error (mg/L)' routed out of structural estimates ('Residual variability')
-- unit_dimension_mismatch: 'V m (mg/day)' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=camrelizumab
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
-- model-stage split: 'base model' is the base model of Wang_2021 (paper reports 3 stages: base model, final model, median 2.5%-97.5%); same population, different model-building step
+- model-stage split: 'base model / parameter estimates' is the base model of Wang_2021 (paper reports 2 stages: base model / parameter estimates, final model / parameter estimates); same population, different model-building step
 - molar mass: none found for 'camrelizumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell tab_2:row3:col5 = '0.23 (0.20-0.26)'
-- unparsed cell tab_2:row4:col5 = '-1.93 (-2.94 to -0.89)'
-- unparsed cell tab_2:row5:col5 = '3.00 (2.26-3.71)'
-- unparsed cell tab_2:row6:col5 = '1.40 (0.91-2.76)'
-- unparsed cell tab_2:row7:col5 = '3.08 (2.77-3.33)'
-- unparsed cell tab_2:row8:col5 = '0.41 (0.34-0.51)'
-- unparsed cell tab_2:row9:col5 = '1.18 (0.31-2.28)'
-- unparsed cell tab_2:row10:col5 = '2.91 (2.35-3.35)'
-- unparsed cell tab_2:row12:col5 = '50.2 (32.7-68.9)'
-- unparsed cell tab_2:row13:col5 = '47.8 (29.4-70.9)'
-- unparsed cell tab_2:row14:col5 = '39.0 (17.0-70.68)'
-- unparsed cell tab_2:row16:col5 = '28.9 (23.8-33.9)'
-- unparsed cell tab_2:row17:col5 = '0.0823 (0.0293-0.112)'
-- unparsed cell Wang_2021_table_4:row0:col2 = '39.27-195.41 96.40'
-- unparsed cell Wang_2021_table_4:row2:col1 = '12.81-113.87 45.48'
-- companion parameter table 4 transcribed (7 record(s))
-- LLM selected parameter table(s) 3, 4
+- LLM selected parameter table(s) 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (10/10 fields) | none |
 | `qwen3.8-27b` | partly confirmed | 0.833 (10/12 fields) | 2 |
 
 <details><summary>2 field discrepancies</summary>
@@ -139,22 +116,32 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 8 |  |
+| C0_has_structural_params | pass |  | 6 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 |  | ['tab_2:row6:col1'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_2:row3:col1'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_2:row8:col1'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Wang_2021_table_4:row0:col3'] |
-| C5_dimension_Q36 | pass | [mass] / [length] ** 3 |  | ['Wang_2021_table_4:row1:col3', 'Wang_2021_table_4:row1:col4'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_2:row7:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_2:row10:col1'] |
-| C5_dimension_Q66 | fail | [mass] / [time] | mg/day ([mass] / [time]) | ['tab_2:row5:col1'] |
+| C5_dimension_Q66 | pass | [mass] / [time] |  | ['tab_2:row5:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.242 | ['tab_2:row3:col1'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.0101 L/h | ['tab_2:row3:col1'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 3.08 L | ['tab_2:row7:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 2.88 L | ['tab_2:row10:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=camrelizumab) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (10 of 10 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -166,16 +153,71 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_camrelizumab/Camrelizumab_Wang2021_base/Camrelizumab_Wang2021_base_modelica.zip" download>Camrelizumab_Wang2021_base_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_camrelizumab/Camrelizumab_Wang2021_base/Camrelizumab_Wang2021_base_fmi.zip" download>Camrelizumab_Wang2021_base_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_camrelizumab/Camrelizumab_Wang2021_base/Camrelizumab_Wang2021_base_matlab.zip" download>Camrelizumab_Wang2021_base_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_camrelizumab/Camrelizumab_Wang2021_base/Camrelizumab_Wang2021_base_matlab_simbio.zip" download>Camrelizumab_Wang2021_base_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_camrelizumab/Camrelizumab_Wang2021_base/Camrelizumab_Wang2021_base_sbml.zip" download>Camrelizumab_Wang2021_base_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_camrelizumab/Camrelizumab_Wang2021_base/Camrelizumab_Wang2021_base_cellml.zip" download>Camrelizumab_Wang2021_base_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 7e-05 | kg |
+| input | model | `Cl` | 2.801e-09 | m3/s |
+| input | model | `VdPerKg` | 4.4e-05 | m3/kg |
+| input | model | `k12` | 1.447e-06 | 1/s |
+| input | model | `k21` | 1.547e-06 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Wang CY, Sheng CC, Ma GL, Xu D, Liu XQ, Wang YY et al. Population pharmacokinetics of the anti-PD-1 antibody camrelizumab in patients with multiple tumor types and model-informed dosing strategy. Acta pharmacologica Sinica 42(8):1368–1375 (2021). [doi:10.1038/s41401-020-00550-y](https://doi.org/10.1038/s41401-020-00550-y)
+
+**This record:** Pharmacolibrary, model `Camrelizumab_Wang2021_base`. <https://pharmacolibrary.github.io/#/drugs/drug_camrelizumab/Camrelizumab_Wang2021_base>
+
+```bibtex
+@misc{pharmacolibrary_CamrelizumabWang2021base,
+  title  = {{Pharmacolibrary model Camrelizumab_Wang2021_base}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_camrelizumab/Camrelizumab_Wang2021_base},
+  note   = {Parameters from doi:10.1038/s41401-020-00550-y},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: intravenous** — 70 mg infusion over 10 min, single dose. Doses in the paper: 70–700 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_camrelizumab/Camrelizumab_Wang2021_base/Camrelizumab_Wang2021_base_params.json" metaurl="assets/fmu/PK_2C.vr.json" wasmurl="assets/fmu/PK_2C.js" controlsurl="drugs/drug_camrelizumab/Camrelizumab_Wang2021_base/Camrelizumab_Wang2021_base_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C` · parameters `Camrelizumab_Wang2021_base_params.json` · controls `Camrelizumab_Wang2021_base_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcamrelizumab%5D%20Camrelizumab_Wang2021_base&body=Drug%3A%20camrelizumab%0ARecord%3A%20Camrelizumab_Wang2021_base%0APaper%3A%20Wang_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_camrelizumab/Camrelizumab_Wang2021_base%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 10:48 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:46 UTC</sub>

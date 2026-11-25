@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the paper concerns another drug, although it assigns fibrinogen human a clearance of 1.66 L/h.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="fibrinogen, human" model-id="FibrinogenHuman_Ma2026_reference" status="rejected" stale="false" population="" measured-compound="fibrinogen_human" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Ma Y, Wang Y, Wu X, Wang J, Pang Y, Jia Y et al. Optimizing Colistin Sulfate Dos
 
 ### Reviewer guidance
 
-**The record was rejected because the paper concerns another drug, although it assigns fibrinogen human a clearance of 1.66 L/h.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The record identifies fibrinogen human as the measured compound, but the clearance label says it is for colistin. Neither the paper’s title nor abstract names fibrinogen human, and the relevance screen rejected the paper as being about another drug. Extracted — fibrinogen human: CL 1.66 L/h, V 10.1 L.
+Extracted — fibrinogen human: CL 1.66 L/h, V 10.1 L.
 
 Independently confirmed by `glm-5.3-flash`, `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -116,7 +116,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (4 of 4 compared fields agree); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

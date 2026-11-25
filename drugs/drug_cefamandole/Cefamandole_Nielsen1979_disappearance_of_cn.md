@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected for an unreachable or orphaned metabolite in the cefamandole nafate–cefamandole model, despite cefamandole’s reported distribution volume of 17.9 liters.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="cefamandole" model-id="Cefamandole_Nielsen1979_disappearance_of_cn" status="rejected" stale="false" population="dialysis patients and subjects with normal renal function" measured-compound="cefamandole" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -48,13 +48,13 @@ Nielsen RL, Wolen R, Luft FC, Ozawa T. Hydrolysis of cefamandole nafate in dialy
 
 ### Reviewer guidance
 
-**The record was rejected for an unreachable or orphaned metabolite in the cefamandole nafate–cefamandole model, despite cefamandole’s reported distribution volume of 17.9 liters.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record reports cefamandole’s volume of distribution as 17.9 liters and represents cefamandole as formed from cefamandole nafate in the central compartment. It also lists hydrolysis links from cefamandole nafate to cefamandole and formate, while the rejection finding reports an unreachable or orphaned compartment or unlinked metabolite; it does not specify which entity was unreachable. Extracted — cefamandole: Q2 9.58, V 17.9 liters.
+Extracted — cefamandole: Q2 9.58, V 17.9 liters.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cefamandole nafate, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

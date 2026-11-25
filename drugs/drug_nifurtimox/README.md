@@ -40,26 +40,14 @@ It is given by mouth.
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:12 | 8:15 | 0/2/0 | 1/0/0 | 0/0/0 | 432,071/25,347 | ollama / glm-5.3-flash | 9 | 3/6 | 9/0 | 0 |
+| 2026-11-24 02:24 | 0:04 | 0/2/0 | 1/0/0 | 0/0/0 | 3,679/177 | einfracz / qwen3.8-27b | 9 | 3/6 | 9/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 28 matched, 17 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Ince_2022.pdf` | Ince I et al., Population Pharmacokinetics of Nifurtim…, Journal of clinical pharmac… (2022) | popPK | 10 | [10.1002/jcph.2064](https://doi.org/10.1002/jcph.2064) | [35460577](https://pubmed.ncbi.nlm.nih.gov/35460577) | Population PK of nifurtimox in humans, but numeric parameter values (CL, V, etc.) are not present in the abstract; they likely reside in tables/supplementary material not provided. |
-| `Garcia-Bournissen_2010.pdf` | Garcia-Bournissen F et al., Is use of nifurtimox for the treatment…, Archives of disease in chil… (2010) | popPK | 9 | [10.1136/adc.2008.157297](https://doi.org/10.1136/adc.2008.157297) | [19948512](https://pubmed.ncbi.nlm.nih.gov/19948512) | Population PK (NONMEM) of nifurtimox in humans, but only peak plasma level (1361 ng/ml) appears in the abstract; CL/V and model parameters likely in tables or supplementary material not provided. |
-| `Paulos_1989.pdf` | Paulos C et al., Pharmacokinetics of a nitrofuran compou…, International journal of cl… (1989) | popPK | 8 |  | [2807618](https://pubmed.ncbi.nlm.nih.gov/2807618) | Human PK study of nifurtimox with one-compartment model reporting CL, V, and half-life, but the numeric values are not present in the evidence provided. |
-
-<sub>queue written 2026-10-07 08:05 UTC</sub>
 
 ## Screened and excluded
 
@@ -67,22 +55,29 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|
 | popPK | Alonso-Vega_2021 | irrelevant | 3 | 0 | This is a trial design/rationale paper for the TESEO study; popPK parameters (CL, Vd) for nifurtimox are only planned, with no numeric values reported. |
 | popPK | Amilon_2022 | irrelevant | 0 | 0 | This is a pharmacodynamic time-to-event model of eflornithine efficacy; nifurtimox is only a co-administered drug in the NECT arm, with no nifurtimox PK parameters reported. |
-| popPK | Ballesteros-Casallas_2023 | irrelevant | 0 | 0 | In vitro antiparasitic potency study of quinone derivatives; nifurtimox only a comparator EC50, no PK parameters. |
+| popPK | Ballesteros-Casallas_2023 | irrelevant | 0 | 0 | This is an in vitro mechanistic and structure-activity relationship (QSAR) study evaluating trypanocidal potency (EC50), not a pharmacokinetic study reporting disposition parameters (CL, V, etc.) for nifurtimox. |
+| PGx | Ballesteros-Casallas_2023 | not_relevant | 0 | 0 | The paper describes the mode of action and structure-activity relationships of p-quinone derivatives against trypanosomes, with no mention of pharmacogenomics, gene variants, or pharmacokinetic parameters. |
 | popPK | Boberg_2025 | irrelevant | 0 | 0 | This is a PK model of eflornithine (L/D enantiomers); nifurtimox is only a co-administered combination partner with no nifurtimox disposition parameters reported. |
 | popPK | Cortes_2015 | irrelevant | 0 | 0 | In vitro trypanocidal efficacy study of gallate TPP+ derivatives; nifurtimox is only a comparator (EC50), no PK parameters. |
-| popPK | Ince_2022 | relevant | 10 | 3 | Population PK of nifurtimox in humans, but numeric parameter values (CL, V, etc.) are not present in the abstract; they likely reside in tables/supplementary material not provided. |
+| popPK | Garcia-Bournissen_2010 | relevant | 8 | 2 | The paper is a population pharmacokinetic study using NONMEM to model nifurtimox disposition, but the evidence only provides a single peak plasma concentration (1361 ng/ml) and does not explicitly list the estimated CL, V, or other specific PK parameter values derived from the model. |
+| PGx | Garcia-Bournissen_2010 | not_relevant | 0 | 0 | The study focuses on population pharmacokinetics for breastfeeding exposure and does not investigate gene variants or pharmacogenomic effects. |
+| popPK | Ince_2022 | relevant | 10 | 3 | The paper is a population PK study of nifurtimox in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the text, only a relative clearance estimate and covariates. |
+| PGx | Ince_2022 | not_relevant | 0 | 0 | The study analyzes standard population pharmacokinetics (weight, age, food) and reports no gene variants or pharmacogenomic effects. |
 | popPK | Matutino_2019 | irrelevant | 0 | 0 | This is an in-vitro natural-product enzyme-inhibition study of T. cruzi sirtuins; nifurtimox is only mentioned as background, with no PK parameters. |
 | popPK | Nesic_2023 | irrelevant | 0 | 0 | In vitro/in silico study of imatinib analogues against T. cruzi; nifurtimox only mentioned as existing treatment, no PK parameters. |
-| popPK | Paulos_1989 | relevant | 8 | 3 | Human PK study of nifurtimox with one-compartment model reporting CL, V, and half-life, but the numeric values are not present in the evidence provided. |
+| popPK | Paulos_1989 | relevant | 5 | 0 | The study describes a PK evaluation of nifurtimox in humans and lists the parameters calculated, but the specific numeric values are not provided in the extracted text. |
+| PGx | Paulos_1989 | not_relevant | 0 | 0 | The study reports general pharmacokinetics in healthy volunteers without investigating any genetic variants or pharmacogenomic effects. |
 | popPK | Peres_2023 | irrelevant | 0 | 0 | This is an in vitro/in silico antiparasitic study of plumbagin; nifurtimox is only mentioned as a reference treatment, with no PK parameters for it (the stray clearance line is not nifurtimox-related). |
 | popPK | Silva_2023 | irrelevant | 0 | 0 | This is a natural-products isolation/antiparasitic activity study; nifurtimox is only mentioned as an existing drug, with no PK parameters reported. |
 | popPK | Stass_2022 | relevant | 7 | 4 | Pediatric popPK exposure-response analysis of nifurtimox; some AUC/Cmax values (e.g., 1688–3573 µg·h/L reference range) appear, but model parameters (CL, V) live in the cited prior popPK paper/supplementary material. |
-| popPK | Toro_2021 | irrelevant | 0 | 0 | In vitro antiparasitic efficacy study; nifurtimox is only a comparator, with no PK parameters reported. |
-| popPK | de_2021 | irrelevant | 0 | 0 | In-vitro study of benznidazole in cardiac spheroids; nifurtimox only mentioned as an available drug, no PK parameters. |
+| popPK | Toro_2021 | irrelevant | 0 | 0 | The paper is a chemical synthesis and in vitro antiparasitic activity study where nifurtimox serves only as a comparator standard; no pharmacokinetic parameters are reported. |
+| PGx | Toro_2021 | not_relevant | 0 | 0 | The paper reports in vitro antiparasitic activity and stability of new compounds compared to nifurtimox, but does not report pharmacogenomic effects on PK or PD parameters. |
+| popPK | de_2021 | irrelevant | 0 | 0 | The study is an in-vitro evaluation of benznidazole's mechanism of action, with nifurtimox only mentioned as a standard comparator in the background. |
+| PGx | de_2021 | not_relevant | 0 | 0 | The paper evaluates the pharmacological efficacy and inflammatory modulation of benznidazole in an in vitro model, but it does not report any pharmacogenomic effects (gene variants) on the PK or PD of nifurtimox. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnifurtimox%5D&body=Drug%3A%20nifurtimox%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nifurtimox/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 08:05 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 02:24 UTC</sub>

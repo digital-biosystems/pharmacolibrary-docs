@@ -23,7 +23,7 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Tongluan_2017_virus_titer](drugs/drug_orlistat/pd_Tongluan_2017_virus_titer.md) | virus titer ← orlistat · inhibition effect | — | Tongluan N et al., Involvement of fatty acid synthase in d…, Virology journal (2017) | [10.1186/s12985-017-0685-9](https://doi.org/10.1186/s12985-017-0685-9) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zhi_1994_fecal_fat_excretion_percentage_relative_to_ingested_fat](drugs/drug_orlistat/pd_Zhi_1994_fecal_fat_excretion_percentage_relative_to_ingested.md) | fecal fat excretion percentage (relative to ingested fat) ← orlistat · direct Emax (saturable) effect | — | Zhi J et al., Retrospective population-based analysis…, Clinical pharmacology and t… (1994) | [10.1038/clpt.1994.104](https://doi.org/10.1038/clpt.1994.104) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhi_1994_fecal_fat_excretion_percentage_relative_to_ingested_fat](drugs/drug_orlistat/pd_Zhi_1994_fecal_fat_excretion_percentage_relative_to_ingested.md) | fecal fat excretion percentage (relative to ingested fat) ← orlistat · direct Emax (saturable) effect | — | Zhi J et al., Retrospective population-based analysis…, Clinical pharmacology and t… (1994) | [10.1038/clpt.1994.104](https://doi.org/10.1038/clpt.1994.104) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

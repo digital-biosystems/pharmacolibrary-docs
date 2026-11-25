@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Nadroparin's clearance, volume of distribution, and absorption lag time lack extracted values, so unverified placeholders were used and the model was quarantined.
+> No value for nadroparin's clearance, volume of distribution and absorption lag time; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="nadroparin" model-id="Nadroparin_Mast2023_final" status="model_quarantined" stale="false" population="patients with renal impairment, obese patients, and controls" measured-compound="anti-Xa activity" parameterization="apparent" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Mast L, Peeters MYM, Söhne M, Hackeng CM, Knibbe CAJ, van den Broek MPH. The ef
 
 ### Reviewer guidance
 
-**Nadroparin's clearance, volume of distribution, and absorption lag time lack extracted values, so unverified placeholders were used and the model was quarantined.**
+**No value for nadroparin's clearance, volume of distribution and absorption lag time; the covariate scenarios were not simulated (+1 more).**
 
-The record provides no numeric estimates for nadroparin's clearance, volume of distribution, or absorption lag time, forcing the use of generic library values instead of study-specific data. Additionally, the defined covariate effects for weight and renal impairment were not simulated, meaning only the reference individual was modeled rather than the specific population scenarios. Extracted — nadroparin: CL/F 21 L/h, V/F 8.24e+03 mL, Q/F 157 mL/min, ktr 0.0157 min−1.
+The model was built, but nadroparin's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — nadroparin: CL/F 21 L/h, V/F 8.24e+03 mL, Q/F 157 mL/min, ktr 0.0157 min−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f: this record has none, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -165,7 +165,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.824, 0 of 1 reader(s) agree | 0.824 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.824 (14 of 17 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.824 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

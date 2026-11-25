@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;abemaciclib&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/&quot;},{&quot;label&quot;:&quot;Chigutsa_2026 \u00b7 PD Progression-free survival&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;abemaciclib&quot;,&quot;href&quot;:&quot;drugs/drug_abemaciclib/&quot;},{&quot;label&quot;:&quot;Chigutsa_2026 \u00b7 PD progression-free survival&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Progression-free survival — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+# progression-free survival — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -13,7 +13,7 @@
 
 ## Record summary
 
-**As extracted:** Abemaciclib (concentrations from the PK model of Chigutsa_2020::estimate_see) drives Progression-free survival: time-to-event model.
+**As extracted:** Abemaciclib (concentrations from the PK model of Tate_2018::base) drives progression-free survival: time-to-event model.
 
 **Model:** No model was generated from this record.
 
@@ -25,7 +25,7 @@
 - **model family:** `tte`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/additive
 
 ## Citation
 Chigutsa E et al., Longitudinal Tumor Size and Survival Mo…, Clinical pharmacology and t… (2026)
@@ -36,13 +36,9 @@ Chigutsa E et al., Longitudinal Tumor Size and Survival Mo…, Clinical pharmaco
 |---|---|---|---|---|---|---|
 | PD (effect) | Baseline hazard (measurable disease) | `Q342` ·  | 0.0157 |  | llm | Chigutsa_2026:pdv3 |
 | PD (effect) | Baseline hazard (no measurable disease) | `Q342` ·  | 0.0103 |  | llm | Chigutsa_2026:pdv3 |
-| model term | Change from baseline tumor size on hazard | `Q900` ·  | 0.0156 |  | llm | Chigutsa_2026:pdv3 |
+| PD (effect) | Change from baseline tumor size on hazard | `Q335` ·  | 0.0156 |  | llm | Chigutsa_2026:pdv3 |
 | PD (effect) | Coefficient of nontumor size drug effect | `Q335` ·  | 1.42 |  | llm | Chigutsa_2026:pdv3 |
-| model term | Fractional increase in impact of tumor size on hazard in subpopulation | `Q900` ·  | 13.6 |  | llm | Chigutsa_2026:pdv3 |
-| model term | Fraction of patient with higher impact of tumor size on hazard | `Q900` ·  | 0.479 |  | llm | Chigutsa_2026:pdv3 |
-| model term | Half-life of decline of drug effect | `Q900` ·  | 12.2 | weeks | llm | Chigutsa_2026:pdv3 |
-| model term | Fractional increase in baseline hazard for patients with hepatic metastases | `Q900` ·  | 1.23 |  | llm | Chigutsa_2026:pdv3 |
-| model term | Fractional increase in baseline hazard for patients with ECOG status of 1 | `Q900` ·  | 0.479 |  | llm | Chigutsa_2026:pdv3 |
+| — | Half‐life of decline of drug effect | `Q100` ·  | 12.2 | weeks | nil | Chigutsa_2026:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -51,20 +47,17 @@ Chigutsa E et al., Longitudinal Tumor Size and Survival Mo…, Clinical pharmaco
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.875 (7/8 fields) | 1 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `effect_form` | proportional | additive | mismatch |
-| `qwen3.8-27b` | `parameters[Q100]` |  | 12.2 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q342].value` | 0.0103 | 0.0157 | mismatch |
-| `qwen3.8-27b` | `parameters[Q900]` | 0.479 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[Q324]` |  | 0.0156 | only_one_extracted |
 
 </details>
 

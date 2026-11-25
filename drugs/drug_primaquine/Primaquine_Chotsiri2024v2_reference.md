@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because carboxy-primaquine and primaquine carbamoyl-glucuronide were defined as metabolites but lacked metabolic linkages from the parent drug.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="primaquine" model-id="Primaquine_Chotsiri2024v2_reference" status="rejected" stale="false" population="healthy African males (G6PD-normal and G6PD-deficient) without malaria" measured-compound="primaquine" parameterization="apparent" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Chotsiri P, Mahamar A, Diawara H, Fasinu PS, Diarra K, Sanogo K et al. Populatio
 
 ### Reviewer guidance
 
-**The model was rejected because carboxy-primaquine and primaquine carbamoyl-glucuronide were defined as metabolites but lacked metabolic linkages from the parent drug.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists two metabolites, carboxy-primaquine and primaquine carbamoyl-glucuronide, both assigned to the central compartment, but the model structure contains no metabolic pathways connecting them to primaquine. This omission renders the metabolite compartments unreachable from the dose. Although the second reader identified the missing metabolic links, the primary rejection reason remains the structural disconnection. Extracted — primaquine: CL/F 15.4 L/h, V1/F 163 L, V2 0.0328, tlag 0 h.
+Extracted — primaquine: CL/F 15.4 L/h, V1/F 163 L, V2 0.0328, tlag 0 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading primaquine → carboxy-primaquine (metabolism); primaquine → primaquine carbamoyl-glucuronide (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

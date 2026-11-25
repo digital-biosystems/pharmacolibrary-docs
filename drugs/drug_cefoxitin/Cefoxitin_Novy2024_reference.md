@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and lag time were defaulted because the abstract lacks these estimates, while clearance and absorption rate values were extracted inconsistently.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="cefoxitin" model-id="Cefoxitin_Novy2024_reference" status="needs_review" stale="false" population="obese patients undergoing elective bariatric surgery" measured-compound="cefoxitin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Novy E, Liu X, Hernández-Mitre MP, Belveyre T, Scala-Bertola J, Roberts JA et a
 
 ### Reviewer guidance
 
-**Bioavailability and lag time were defaulted because the abstract lacks these estimates, while clearance and absorption rate values were extracted inconsistently.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record relies on abstract summary statistics to stand in for a fitted model, leading to the substitution of default values for bioavailability and lag time. A discrepancy exists in the extracted parameters: clearance is listed as 10.9 L/h in one record version but missing in another, and the absorption rate constant is 9.78 h⁻¹ in one version but null in the other. Extracted — cefoxitin: CL 10.9 L/h, V 23.4 L, kabs 9.78 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cefoxitin: CL 10.9 L/h, V 23.4 L, kabs 9.78 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has none, the second reading 10.9; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.625 (5 of 8 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.625 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

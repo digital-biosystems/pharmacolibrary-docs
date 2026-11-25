@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The secukinumab record was held for review amid a disputed reader assessment; it reports CL/F of 1.38 L/d.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="secukinumab" model-id="Secukinumab_RodrguezFernndez2022_reference" status="needs_review" stale="false" population="adults with psoriasis" measured-compound="secukinumab" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Rodríguez-Fernández K, Mangas-Sanjuán V, Merino-Sanjuán M, Martorell-Calatay
 
 ### Reviewer guidance
 
-**The secukinumab record was held for review amid a disputed reader assessment; it reports CL/F of 1.38 L/d.**
+**cross_check_disputed; x1_cross_check.**
 
-The readers disagreed on three extracted values: 0.19 versus 90, and no value versus 37.6 and 11, but the findings do not identify their pharmacokinetic meanings, so they cannot be assigned to named parameters. Tlag was defaulted rather than explicitly estimated; the record also assumes F=1, Fm=1, and no molar correction in its apparent parameterization. The reader assessment had agreement of 0.667, with 0 of 1 reader agreeing. Extracted — secukinumab: CL/F 1.38 L/d, V/F 24.9 L, kabs 0.908 day−1.
+Extracted — secukinumab: CL/F 1.38 L/d, V/F 24.9 L, kabs 0.908 day−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q22: this record has 0.19, the second reading 90; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.667 (6 of 9 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (6 of 9 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

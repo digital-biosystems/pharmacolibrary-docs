@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Rejected</span>
 
-> For bempedoic acid, the distribution rate constant kcomp (0.184 h−1) was omitted, while the parent–metabolite model was represented as a single-compartment oral model.
+> The covariate scenarios were not simulated; t3_output_variable (+2 more).
 
 <div class="pk-model-meta" hidden drug="bempedoic acid" model-id="BempedoicAcid_Jadhav2023_reference" status="rejected" stale="false" population="healthy subjects and patients with dyslipidemia" measured-compound="bempedoic acid" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -58,13 +58,13 @@ Jadhav SB, Amore BM, Bockbrader H, Crass RL, Chapel S, Sasiela WJ et al. Populat
 
 ### Reviewer guidance
 
-**For bempedoic acid, the distribution rate constant kcomp (0.184 h−1) was omitted, while the parent–metabolite model was represented as a single-compartment oral model.**
+**The covariate scenarios were not simulated; t3_output_variable (+2 more).**
 
-The explicit distribution rate constant kcomp for bempedoic acid was 0.184 h−1, but it was not emitted or defaulted; central-compartment concentration was used instead of the measured bempedoic acid compartment. The model also defaulted Tlag and assumed F=1, Fm=1, with no molar correction. The covariate scenarios were not simulated. The base model was simulated, not the covariate effects the record defines. Extracted — bempedoic acid: CL/F 0.755 L/h, V1/F 19.1 L, kabs 1.41 h−1, kcomp 0.184 h−1.
+The base model was simulated, not the covariate effects the record defines. Extracted — bempedoic acid: CL/F 0.755 L/h, V1/F 19.1 L, kabs 1.41 h−1, kcomp 0.184 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of turn: this record has none, the second reading 85.8. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -248,7 +248,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['kcomp'] |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.944, 0 of 1 reader(s) agree | 0.944 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.944 (17 of 18 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.944 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

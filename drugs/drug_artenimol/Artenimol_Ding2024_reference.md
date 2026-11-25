@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper's PK parameters describe amodiaquine and piperaquine, while artenimol is only a co-medication.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="artenimol" model-id="Artenimol_Ding2024_reference" status="rejected" stale="false" population="" measured-compound="artenimol" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Ding J, Hoglund RM, Tagbor H, Tinto H, Valéa I, Mwapasa V et al. Population pha
 
 ### Reviewer guidance
 
-**The paper's PK parameters describe amodiaquine and piperaquine, while artenimol is only a co-medication.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The review found the subject drug is amodiaquine, with artenimol listed only as a co-medication. The extracted clearance value of 55.4 L/h and volume of 2165.9758 L likely belong to the other drug. A secondary reader disagreed on the values of two parameters, identifying them as null or inconsistent. Extracted — artenimol: CL 55.4 L/h, V 2.17e+03 L.
+Extracted — artenimol: CL 55.4 L/h, V 2.17e+03 L.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q21: this record has 10.0, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -124,7 +124,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.667 (6 of 9 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

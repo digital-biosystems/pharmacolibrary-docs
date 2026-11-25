@@ -30,36 +30,43 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 20:11 | 2:08 | 0/0/0 | 0/0/0 | 0/0/0 | 14,452/873 | ollama / glm-5.3-flash | 1 | 0/0 | 1/0 | 0 |
+| 2026-11-23 21:16 | 0:07 | 0/0/0 | 0/0/0 | 0/0/0 | 3,625/174 | einfracz / qwen3.8-27b | 1 | 0/0 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Breimer_1976.pdf` | Breimer DD et al., Pharmacokinetics and relative bioavaila…, European journal of clinica… (1976) | popPK | 7 | [10.1007/BF00606563](https://doi.org/10.1007/BF00606563) | [989475](https://pubmed.ncbi.nlm.nih.gov/989475) | Human PK study of cyclobarbital with half-life (11.6 h) and bioavailability values in the abstract, but no CL/V or full parameter table in the evidence. |
-| `Breyer-Pfaff_1984.pdf` | Breyer-Pfaff U et al., Assessment of drug metabolism in hepati…, European journal of clinica… (1984) | popPK | 7 | [10.1007/BF00546715](https://doi.org/10.1007/BF00546715) | [6143671](https://pubmed.ncbi.nlm.nih.gov/6143671) | Cyclobarbital half-life, clearance and volume of distribution are reported in humans, but only qualitatively in the abstract; numeric values are not present in the evidence. |
-| `Watari_1988.pdf` | Watari N et al., Prediction of hepatic first-pass metabo…, Journal of pharmacokinetics… (1988) | popPK | 6 | [10.1007/BF01062138](https://doi.org/10.1007/BF01062138) | [3221327](https://pubmed.ncbi.nlm.nih.gov/3221327) | Cyclobarbital is one of seven barbiturates with kinetic parameters (hepatic clearance, V, ka) modeled in rabbits, but no numeric values for cyclobarbital appear in the evidence. |
+| `Watari_1988.pdf` | Watari N et al., Prediction of hepatic first-pass metabo…, Journal of pharmacokinetics… (1988) | popPK | 7 | [10.1007/BF01062138](https://doi.org/10.1007/BF01062138) | [3221327](https://pubmed.ncbi.nlm.nih.gov/3221327) | The study models PK parameters for cyclobarbital in rabbits based on QSPR, but specific numeric values for cyclobarbital are not provided in the text evidence, likely residing in figures or tables not included. |
 
-<sub>queue written 2026-10-06 20:11 UTC</sub>
+<sub>queue written 2026-11-23 21:16 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Breyer-Pfaff_1984 | relevant | 7 | 4 | Cyclobarbital half-life, clearance and volume of distribution are reported in humans, but only qualitatively in the abstract; numeric values are not present in the evidence. |
-| popPK | Czyzewska-Szafran_1980 | irrelevant | 3 | 0 | Cyclobarbital is one of several hypnotics studied in rats, but no numeric PK parameters for it appear in the evidence; only hexobarbital and barbital PK are mentioned. |
-| popPK | Kołaciński_1989 | irrelevant | 3 | 1 | Clinical poisoning study of forced diuresis with no quantitative PK parameters (CL, V, half-life) reported; only qualitative elimination comparisons. |
-| PGx | Sakuma_1999 | not_relevant | 2 | 3 | Cyclobarbital is only used as an inducer of CYP1A2 in vitro; no gene variant/genotype effect on cyclobarbital PK/PD parameters is reported. |
-| popPK | Watari_1988 | relevant | 6 | 2 | Cyclobarbital is one of seven barbiturates with kinetic parameters (hepatic clearance, V, ka) modeled in rabbits, but no numeric values for cyclobarbital appear in the evidence. |
+| popPK | Breimer_1976 | relevant | 10 | 3 | The study reports quantitative PK parameters for cyclobarbital in humans, including a specific average half-life of 11.6 h (range 8-17 h), but lacks other key parameters like clearance or volume of distribution. |
+| PGx | Breimer_1976 | not_relevant | 0 | 0 | The paper studies population pharmacokinetics and bioavailability in healthy volunteers without mentioning any genetic variants or pharmacogenomic influences. |
+| popPK | Breyer-Pfaff_1984 | relevant | 9 | 2 | The study reports quantitative pharmacokinetic parameters (clearance, volume of distribution, half-life) for cyclobarbital in humans, but specific numeric values are not present in the provided abstract text. |
+| PGx | Breyer-Pfaff_1984 | not_relevant | 0 | 0 | The study reports pharmacokinetic changes in hepatic disease but involves no gene variants or genotypes. |
+| popPK | Chohan_2020 | irrelevant | 0 | 0 | The paper is a phytochemical and in-silico study of Euphorbia milii where cyclobarbital is merely identified as a plant constituent and subjected to molecular docking, not a pharmacokinetic study. |
+| PGx | Chohan_2020 | not_relevant | 0 | 0 | The paper investigates phytochemical profiling and in-silico docking of cyclobarbital found in a plant, containing no pharmacogenomic data on PK/PD parameters. |
+| popPK | Czyzewska-Szafran_1980 | irrelevant | 2 | 0 | The paper investigates pharmacodynamics and implies PK studies, but reports no changes in specific quantitative PK parameters and provides no numeric values for cyclobarbital. |
+| PGx | Czyzewska-Szafran_1980 | not_relevant | 0 | 0 | The paper investigates the impact of hypertension (a physiological state) on drug response, not the impact of specific gene variants/genotypes on PK/PD parameters. |
+| popPK | Kołaciński_1989 | relevant | 4 | 0 | The study is a clinical PK/clinical evaluation of cyclobarbital poisoning in humans, but no quantitative pharmacokinetic parameter values (CL, V, half-life, etc.) are present in the provided evidence. |
+| PGx | Kołaciński_1989 | not_relevant | 0 | 0 | The paper evaluates forced diuresis as a treatment method for poisoning and contains no information regarding gene variants or genotypes. |
+| popPK | Sakuma_1999 | irrelevant | 0 | 0 | The study focuses on the induction of CYP1A2 gene expression by barbiturates (including cyclobarbital) in mice and does not report any pharmacokinetic parameters (CL, V, t1/2, etc.) for cyclobarbital. |
+| PGx | Sakuma_1999 | not_relevant | 2 | 1 | The paper reports on phenobarbital induction of CYP1A2 and notes cyclobarbital as a secondary inducer in vitro, but it does not report a pharmacogenomic effect on the PK/PD parameters of cyclobarbital itself. |
+| popPK | Watari_1988 | relevant | 7 | 2 | The study models PK parameters for cyclobarbital in rabbits based on QSPR, but specific numeric values for cyclobarbital are not provided in the text evidence, likely residing in figures or tables not included. |
+| PGx | Watari_1988 | not_relevant | 0 | 0 | The paper predicts PK parameters based on lipophility (QSPKR) in rabbits and does not investigate the effects of genetic variants on cyclobarbital pharmacokinetics or pharmacodynamics. |
 
 
 </details>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Doxorubicin's intercompartmental clearances and total clearance have incompatible units, rendering the model dimensionally invalid.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit l h ([length] ** 3 * [time]) vs [length] ** 3 / [time]; Q30 unit l h ([length] ** 3 * [time]) vs [length] ** 3 / [time]; Q99 unit l h ([length] ** 3 * [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Liang2016_reference" status="rejected" stale="false" population="adults with breast cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -52,13 +52,13 @@ Liang S, Brundage RC, Jacobson PA, Blaes A, Kirstein MN. Pharmacokinetic-pharmac
 
 ### Reviewer guidance
 
-**Doxorubicin's intercompartmental clearances and total clearance have incompatible units, rendering the model dimensionally invalid.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit l h ([length] ** 3 * [time]) vs [length] ** 3 / [time]; Q30 unit l h ([length] ** 3 * [time]) vs [length] ** 3 / [time]; Q99 unit l h ([length] ** 3 * [time]) vs [length] ** 3 / [time].**
 
-The intercompartmental clearances (Q and Q2) and total clearance are recorded with units of liters per hour, a dimension that conflicts with the required clearance dimension of volume per time. This dimensional mismatch was identified for all three flow parameters. A secondary issue involved a missing unit conversion for the volume parameter, and a disagreement exists regarding whether a metabolite link should be included. Extracted — doxorubicin: CL 54.2 l h, V 16.9 l, Q 66.1 l h, V2 1.65e+03 l, Q2 23.4 l h, V3 61.8 l.
+A reported unit could not be converted (CL, Q and Q2), so that value has no SI equivalent. Extracted — doxorubicin: CL 54.2 l h, V 16.9 l, Q 66.1 l h, V2 1.65e+03 l, Q2 23.4 l h, V3 61.8 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[v c-dox].parameter_id`: this record has Q61, the second reading Q63. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

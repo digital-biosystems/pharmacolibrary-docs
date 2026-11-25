@@ -4,11 +4,11 @@
 
 # eplontersen — `Eplontersen_Diep2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Eplontersen’s absorption rate constant is reported as 29.6%, a dimensionless value incompatible with a rate constant, so the record was rejected.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="eplontersen" model-id="Eplontersen_Diep2022_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="eplontersen" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="eplontersen" model-id="Eplontersen_Diep2022_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="eplontersen" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Diep JK, Yu RZ, Viney NJ, Schneider E, Guo S, Henry S et al. Population pharmacokinetic/pharmacodynamic modelling of eplontersen, an antisense oligonucleotide in development for transthyretin amyloidosis. British journal of clinical pharmacology 88(12):5389–5398 (2022).
@@ -20,22 +20,22 @@ Diep JK, Yu RZ, Viney NJ, Schneider E, Guo S, Henry S et al. Population pharmaco
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| absorption rate | kabs | 29.6 | % |
-| typical population terminal elimination half-life | t1/2z | 25.5 | days |
+| absorption rate | kabs | 29.6 | 1/h |
+| terminal elimination half-life | t1/2z | 25.5 | days |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,20 +45,20 @@ Diep JK, Yu RZ, Viney NJ, Schneider E, Guo S, Henry S et al. Population pharmaco
 
 ### Reviewer guidance
 
-**Eplontersen’s absorption rate constant is reported as 29.6%, a dimensionless value incompatible with a rate constant, so the record was rejected.**
+**Only clearance was extracted — no volume.**
 
-The paper was read from its abstract alone, so reported summary statistics stood in for a fitted model. The record links eplontersen to transthyretin (TTR) through metabolism, whereas the second reader recorded no such link; the recorded abdomen/arm ratio is absent, while the second reader reported 1.18. Extracted — eplontersen: kabs 29.6 %, t1/2z 25.5 days.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — eplontersen: kabs 29.6 1/h, t1/2z 25.5 days.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has eplontersen → transthyretin (ttr) (metabolism), the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption rate: this record has 29.6, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| absorption rate | `Q49` · kabs | 29.6 | % |  |  | % | exact (1) | Diep_2022:abstract |
-| typical population terminal elimination half-life | `Q57` · t1/2z | 25.5 | days | 2.203e+06 | s | d | llm (0.6) | Diep_2022:abstract |
+| absorption rate | `Q49` · kabs | 29.6 | 1/h | 0.008222 | 1/s | 1/h | exact (1) | Diep_2022:abstract |
+| terminal elimination half-life | `Q57` · t1/2z | 25.5 | days | 2.203e+06 | s | d | half_life_rule (0.95) | Diep_2022:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -68,35 +68,34 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'absorption rate' → Q49 (unit 'dimensionless' vs ontology '1 / [time]') — route to review
+- 'ratio abdomen/arm': unit 'Cmax' is a parameter symbol — dropped
 - dropped unlinked row (NIL): 'ratio abdomen/arm' — extend the ontology if this is a real PK parameter (source ['Diep_2022:abstract'])
+- implicit units: 'absorption rate' → 1/h (from the popPK convention: 'First-order absorption rate constants (ka) are standardly expressed in reciprocal time units (1/h) in population pharmac')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=eplontersen
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - molar mass: none found for 'eplontersen' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Diep_2022_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['eplontersen', 'transthyretin (ttr)', 'metabolism']] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[ratio abdomen/arm]` |  | 1.18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate was 29.6% greater with injection into the abdomen versus the arm]` |  | 29.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[absorption rate]` | 29.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax ratio abdomen/arm]` |  | 1.18 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal elimination half-life]` | 25.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[typical population terminal elimination half-life]` |  | 25.5 | only_one_extracted |
 
 </details>
 
@@ -113,7 +112,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q49 | fail | 1 / [time] | % (dimensionless) | ['Diep_2022:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Diep_2022:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Diep_2022:abstract'] |
 | C8_topology | pass |  |  |  |
 
@@ -127,9 +126,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -139,4 +148,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Beplontersen%5D%20Eplontersen_Diep2022_reference&body=Drug%3A%20eplontersen%0ARecord%3A%20Eplontersen_Diep2022_reference%0APaper%3A%20Diep_2022%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_eplontersen/Eplontersen_Diep2022_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 04:27 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:55 UTC</sub>

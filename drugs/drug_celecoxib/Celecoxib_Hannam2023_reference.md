@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Celecoxib’s V/F, the bioavailability-adjusted volume of distribution, is -0.660, an implausible negative value that led to rejection.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="celecoxib" model-id="Celecoxib_Hannam2023_reference" status="rejected" stale="false" population="adults" measured-compound="celecoxib" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Hannam JA, Murto KT, Anderson BJ, Dembo G, Kharasch ED. Modeling adult COX-2 cer
 
 ### Reviewer guidance
 
-**Celecoxib’s V/F, the bioavailability-adjusted volume of distribution, is -0.660, an implausible negative value that led to rejection.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The record lists celecoxib V/F as -0.660, with no unit reported. This negative apparent volume is the implausible clearance/volume finding cited for rejection. Extracted — celecoxib: Vnorm/F 80.1 l˙70 kg−1, CLnorm/F 5.04 l˙h−1˙70 kg−1, t1/2ka 0.421 h, tlag 0.511 h, CL/F 1, V/F -0.66, t1/2z 0.839 h.
+Extracted — celecoxib: Vnorm/F 80.1 l˙70 kg−1, CLnorm/F 5.04 l˙h−1˙70 kg−1, t1/2ka 0.421 h, tlag 0.511 h, CL/F 1, V/F -0.66, t1/2z 0.839 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f: this record has none, the second reading none. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

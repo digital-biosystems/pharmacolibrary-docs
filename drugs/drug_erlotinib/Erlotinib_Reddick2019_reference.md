@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Only clearance was extracted — no volume; cLm/F has no unit.
+> Only clearance was extracted — no volume.
 
 <div class="pk-model-meta" hidden drug="erlotinib" model-id="Erlotinib_Reddick2019_reference" status="needs_review" stale="false" population="infants and children with primary brain tumors" measured-compound="erlotinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -16,13 +16,13 @@ Reddick SJ, Campagne O, Huang J, Onar-Thomas A, Broniscer A, Gajjar A et al. Pha
 
 ## Population and dosing
 
-**Population:** infants and children with primary brain tumors · condition primary brain tumors · age group mixed · n = 47.
+**Population:** infants and children with primary brain tumors · condition primary brain tumors · age group mixed.
 
 ## Model
 
 **Structure:** parent + metabolite; no model was built for this record.  
-**Parameterization:** CL/F, CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -30,14 +30,12 @@ Reddick SJ, Campagne O, Huang J, Onar-Thomas A, Broniscer A, Gajjar A et al. Pha
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| mean CL/F, patients &lt; 5 years | CL/F | 6.8 | L/h |
-| mean CLm/Fm, patients &lt; 5 years | CL/F | 79 | L/h |
-| CLm/Fm, males compared to females | CLm/F | 1.73 | -fold |
-| Erlotinib K DRUGIN Mean | kabs | 0.987 | h−1 |
+| mean CL/F | CL/F | 6.8 | L/h/m2 |
+| mean CLm/Fm | CL/F | 79 | L/h/m2 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), qwen3.8-27b (partly confirmed, agreement 0.4). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,11 +45,11 @@ Reddick SJ, Campagne O, Huang J, Onar-Thomas A, Broniscer A, Gajjar A et al. Pha
 
 ### Reviewer guidance
 
-**Only clearance was extracted — no volume; cLm/F has no unit.**
+**Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — erlotinib: CL/F 6.8 L/h, kabs 0.987 h−1; OSI-420: CL/F 79 L/h, CLm/F 1.73 -fold.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — erlotinib: CL/F 6.8 L/h/m2; OSI-420: CL/F 79 L/h/m2.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of mean cl/f: this record has none, the second reading 3.6; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl/f male vs female fold difference: this record has none, the second reading 1.62; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -59,10 +57,8 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| mean CL/F, patients &lt; 5 years | `Q27` · CL/F | 6.8 | L/h | 1.889e-06 | m3/s | L/h | exact (1) | Reddick_2019:abstract |
-| mean CLm/Fm, patients &lt; 5 years | `Q27` · CL/F | 79 | L/h | 2.194e-05 | m3/s | L/h | exact (1) | Reddick_2019:abstract |
-| CLm/Fm, males compared to females | `Q351` · CLm/F | 1.73 | -fold |  |  | -·fold | llm_confirmed (0.6) | Reddick_2019:abstract |
-| Erlotinib K DRUGIN Mean | `Q49` · kabs | 0.987 | h−1 | 0.0002742 | 1/s | 1/h | review_gapfill (0.7) | Wanika_2024:review |
+| mean CL/F | `Q27` · CL/F | 6.8 | L/h/m2 | 3.268e-06 | m3/s | l/(h·m2) | llm_confirmed (0.6) | Reddick_2019:abstract, Reddick_2019:abstract |
+| mean CLm/Fm | `Q27` · CL/F | 79 | L/h/m2 | 3.796e-05 | m3/s | l/(h·m2) | exact (1) | Reddick_2019:abstract, Reddick_2019:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,42 +68,37 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'L/h/m2' (CL/F)
-- dropped duplicate Q27 ('mean CL/F, older patients', value 3.6) — already have one for this compound
-- dropped duplicate Q27 ('mean CLm/Fm, older patients', value 38) — already have one for this compound
-- unit_dimension_unknown: '-fold' (CL/F)
-- dropped duplicate Q27 ('CL/F, males compared to females', value 1.62) — already have one for this compound
-- unit_dimension_unknown: '-fold' (CLm/F)
-- covariate abcg2 for CL/F from footnote/prose kept as documentation only (['Reddick_2019:abstract'])
-- implicit units: 'mean CL/F, patients\u2009&lt;\u20095 years' → L/h (from the popPK convention: 'CL/F is apparent clearance; clearance is conventionally reported in L/h, consistent with the estimate’s magnitude.')
-- implicit units: 'mean CLm/Fm, patients\u2009&lt;\u20095 years' → L/h (from the popPK convention: 'CLm/Fm is apparent metabolite clearance; clearance is conventionally reported in L/h, consistent with the estimate’s mag')
+- dropped value-less row: 'Erlotinib and OSI-420 apparent clearances (CL/F and CLm/Fm) were higher in patients &lt; 5 years compared to older patients'
+- dropped 'CLm/Fm' → Q351: unit 'fold' is a statistic (%, CV, RSE, shrinkage or fold), not a clearance — the row is a variability or a ratio, not the estimate
+- dropped value-less row: 'and were 1.62-fold and 1.73-fold higher in males compared to females'
+- dropped value-less row: 'Moreover, CL/F was 1.53-fold higher in wild-type patients than in patients heterozygous or homozygous mutant for ABCG2 rs55930652'
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=erlotinib
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — only the metabolite is modelled — no parent compartment
-- status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 4 linked by role; re-tagged erlotinib→parent ×4, erlotinib→OSI-420 ×3
+- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- row roles: per-genotype parameters — typical value from the reference group: Moreover, CL/F was 1.53-fold higher in wild-type patients than in patients heterozygous or homozygous mutant for ABCG2 rs55930652
+- row roles (LLM): model_class=noncompartmental; 7/7 row label(s) assigned, 4 linked by role; re-tagged erlotinib→parent ×3, erlotinib→OSI-420 ×3
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Wanika_2024's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Reddick_2019_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Reddick_2019_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (4/8 fields) | 4 |
 | `qwen3.8-27b` | partly confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>10 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[cl/f male vs female fold difference]` |  | 1.62 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clm/fm male vs female fold difference]` |  | 1.73 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean cl/f].value` | 6.8 | 3.6 | mismatch |
+| `gpt-oss-120b` | `parameters[mean clm/fm].value` | 79 | 38 | mismatch |
 | `qwen3.8-27b` | `parameters[clm/fm, males compared to females]` | 1.73 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[erlotinib k drugin]` | 0.987 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[mean cl/f, patients &lt; 5 years]` | 6.8 |  | only_one_extracted |
@@ -127,17 +118,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Reddick_2019:abstract'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Reddick_2019:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Wanika_2024:review'] |
-| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] | -fold | ['Reddick_2019:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Reddick_2019:abstract', 'Reddick_2019:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Reddick_2019:abstract', 'Reddick_2019:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 6.8 L/h | ['Reddick_2019:abstract'] |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 79 L/h | ['Reddick_2019:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 11.8 L/h | ['Reddick_2019:abstract', 'Reddick_2019:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 137 L/h | ['Reddick_2019:abstract', 'Reddick_2019:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -171,4 +160,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Berlotinib%5D%20Erlotinib_Reddick2019_reference&body=Drug%3A%20erlotinib%0ARecord%3A%20Erlotinib_Reddick2019_reference%0APaper%3A%20Reddick_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_erlotinib/Erlotinib_Reddick2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:48 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:01 UTC</sub>

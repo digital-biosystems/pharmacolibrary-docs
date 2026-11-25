@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because Krieger_2025 reports PET parameters for the diagnostic radiotracer [18F]FET, not pharmacokinetic data for the listed amino acids.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="amino acids" model-id="AminoAcids_Krieger2025_reference" status="rejected" stale="false" population="" measured-compound="amino_acids" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Krieger K, Pyka T, Mingels C, Sari H, Gjedde A, Rominger A et al. Kinetics of th
 
 ### Reviewer guidance
 
-**Record rejected because Krieger_2025 reports PET parameters for the diagnostic radiotracer [18F]FET, not pharmacokinetic data for the listed amino acids.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source text identifies the study subject as a diagnostic imaging agent, [18F]FET, rather than the systemic drug amino_acids. A second reader disputed the verdict, citing significant disagreements on parameter values including null entries and specific numerical mismatches. Consequently, the identity of the analyte in the record does not match the paper's actual subject matter. Extracted — amino acids: CL 0.083 ml g−1 min−1, V 0.092 ml g−1.
+Extracted — amino acids: CL 0.083 ml g−1 min−1, V 0.092 ml g−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.083, the second reading none; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.0 (0 of 14 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0 | cross-check contradicted by a second reader: verdict disputed; agreement 0.0 (0 of 14 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -4,11 +4,11 @@
 
 # nicotine — `Nicotine_Vlez2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Nicotine’s total clearance (CL) has no reported value, leaving only a placeholder and causing the parent–metabolite model to be held back.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Vlez2015_reference" status="model_quarantined" stale="false" population="heavy smokers (adults)" measured-compound="nicotine" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Vlez2015_reference" status="rejected" stale="false" population="heavy smokers" measured-compound="nicotine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Vélez de Mendizábal N, Jones DR, Jahn A, Bies RR, Brown JW. Nicotine and cotinine exposure from electronic cigarettes: a population approach. Clinical pharmacokinetics 54(6):615–626 (2015).
@@ -16,30 +16,25 @@ Vélez de Mendizábal N, Jones DR, Jahn A, Bies RR, Brown JW. Nicotine and cotin
 
 ## Population and dosing
 
-**Population:** heavy smokers (adults) · condition heavy smoking · age group adult · n = 10.
+**Population:** heavy smokers · condition healthy · age group adult · n = 10.
+
+**Dosing:** 1.3 mg, inhaled, single.
 
 ## Model
 
-**Structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Structure:** parent + metabolite; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
-**Availability:** Model withheld: a core parameter is unspecified.
+**Parameters:** 0 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| F (min/mL · mg) | Fab | 0.123 | min/mL · mg |
-| VC (L) | V1 | 207 | L |
-| VM (L) | V | 73 | L |
-| CL2COT (L/min) | CLfm | 0.872 | L/min |
-| CLCOT (L/min) | CL | 0.065 | L/min |
-| θCOT (ng/mL) | equation variable | 329 | ng/mL |
+_No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,84 +44,54 @@ Vélez de Mendizábal N, Jones DR, Jahn A, Bies RR, Brown JW. Nicotine and cotin
 
 ### Reviewer guidance
 
-**Nicotine’s total clearance (CL) has no reported value, leaving only a placeholder and causing the parent–metabolite model to be held back.**
+**The paper reports none of the model's key parameters.**
 
-Nicotine’s clearance had no value, so a library placeholder stood in and the built model was held back rather than published with an invented number. The recorded structure was one compartment rather than the expected parent–metabolite structure. A reported unit could not be converted to SI, so its parameter reached model building without an SI value. The second reader disputed the verdict and gave nicotine’s equation parameter a value of 7.87 where this record has none, and assigned cotinine’s equation parameter a different identity. Extracted — nicotine: Fab 0.123 min/mL · mg, V1 207 L; cotinine: V 73 L, CLfm 0.872 L/min, CL 0.065 L/min.
+No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of θnic: this record has none, the second reading 7.87; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
-
-### All parameter columns
-
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| F (min/mL · mg) | `Q40` · Fab | 0.123 | min/mL · mg |  |  |  | exact (1) | T1:row2:col1, T1:row2:col2 |
-| VC (L) | `Q63` · V1 | 207 | L | 0.207 | m3 | l | exact (1) | T1:row3:col1 |
-| VM (L) | `Q61` · V | 73 | L | 0.073 | m3 | l | exact (1) | T1:row4:col1, T1:row4:col2 |
-| CL2COT (L/min) | `Q370` · CLfm | 0.872 | L/min | 1.453e-05 | m3/s | l/min | exact (1) | T1:row5:col1 |
-| CLCOT (L/min) | `Q22` · CL | 0.065 | L/min | 1.083e-06 | m3/s | l/min | exact (1) | T1:row8:col1 |
-| θCOT (ng/mL) | `Q900` · equation variable | 329 | ng/mL |  |  | ng/ml | llm (0.6) | T1:row10:col1, T1:row10:col2 |
-
-<details class="legend">
-<summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
-</details>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 
 | label (paper) | Q-code | link |
 |---|---|---|
-| CL = CLEX + CL2METO (L/min) | Q22 | exact |
+| F | Q40 | exact |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'θNIC (ng/mL)' — extend the ontology if this is a real PK parameter (source ['T1:row9:col1', 'T1:row9:col2'])
-- routed 'cov(σNICO,σCOTO)' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- routed 'Res Error nicotine [log(ng/mL)] *' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
-- routed 'Res Error cotinine [log(ng/mL)] *' → Q317 (add_error) to residual_error — variability estimate, not a structural parameter
-- metabolite volume: 'VM (L)' Q63→Q61 for cotinine — it is 1-compartment, so its central volume is its only volume
+- compound tags: 3 row(s) → cotinine (m_suffix 2, name 1)
+- dropped value-less row: 'VC'
+- dropped value-less row: 'VM'
+- dropped value-less row: 'CL2COT'
+- dropped value-less row: 'CL2METO'
+- dropped value-less row: 'CLEX'
+- dropped value-less row: 'CLCOT'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=nicotine
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — pbpk model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=pbpk; 14/14 row label(s) assigned, 6 linked by role; re-tagged parent→cotinine ×8, nicotine→parent ×1
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- row roles (LLM): model_class=pbpk; 7/7 row label(s) assigned, 5 linked by role; re-tagged nicotine→parent ×3, nicotine→cotinine ×3
 
 **Extraction notes:**
-- unparsed cell T1:row2:col3 = '0.128 [0.087 0.196]'
-- unparsed cell T1:row2:col4 = '76.35 [18.34 104.9]'
-- unparsed cell T1:row4:col4 = '29.34 [1.761 38.69]'
-- unparsed cell T1:row9:col3 = '6.475 [0.355 17.813]'
-- unparsed cell T1:row9:col4 = '117.2 [73.74 186.9]'
-- unparsed cell T1:row10:col3 = '297.5 [115.3 524.0]'
-- unparsed cell T1:row10:col4 = '34.03 [12.01 48.53]'
-- unparsed cell T1:row11:col3 = '1.648 [1.105 2.996]'
-- unparsed cell T1:row12:col3 = '1.364 [1.059 1.789]'
-- unparsed cell T1:row13:col3 = '0.394 [0.087 0.771]'
-- unparsed cell T1:row14:col3 = '0.489 [0.378 0.611]'
-- unparsed cell T1:row15:col3 = '0.210 [0.161 0.254]'
+- table T1: unknown_column_role
+- table T1: ragged_grid
+- table T1: unparsed_numeric_cell
+- final table T1: no supported point estimates; targeted recovery unresolved
 - LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.857 (12/14 fields) | 2 |
+| `gpt-oss-120b` | confirmed | 1.0 (5/5 fields) | none |
 
-<details><summary>2 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[θcot].parameter_id` | Q900 | Q86 | mismatch |
-| `gpt-oss-120b` | `parameters[θnic]` |  | 7.87 | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -136,32 +101,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Scholar closed-form checks:**
 
-| check | status | expected | obtained | source |
-|---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
-| C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['T1:row6:col1'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['T1:row8:col1'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['T1:row5:col1'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['T1:row4:col1', 'T1:row4:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['T1:row3:col1'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.065 | ['T1:row8:col1'] |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 3.9 L/h | ['T1:row8:col1'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 73 L | ['T1:row4:col1', 'T1:row4:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 207 L | ['T1:row3:col1'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | cross-check disputed by a second reader: verdict disputed, agreement 0.857, 0 of 1 reader(s) agree |
+| check | status | obtained |
+|---|---|---|
+| C0_has_structural_params | fail | 0 |
+| C0b_disposition_core | fail |  |
+| C8_topology | pass |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -173,19 +117,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -195,4 +129,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnicotine%5D%20Nicotine_Vlez2015_reference&body=Drug%3A%20nicotine%0ARecord%3A%20Nicotine_Vlez2015_reference%0APaper%3A%20V%C3%A9lez_2015%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nicotine/Nicotine_Vlez2015_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 03:40 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:53 UTC</sub>

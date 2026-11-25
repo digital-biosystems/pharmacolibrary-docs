@@ -15,7 +15,15 @@ Patisiran is a gene silencing medication used to treat polyneuropathy in patient
 
 ## popPK records
 
-_not available_
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Goel_2020_reference](drugs/drug_patisiran/Patisiran_Goel2020_reference.md) | — | 1-compartment (no model) | 0 | Goel V et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020) | [10.1089/nat.2019.0841](https://doi.org/10.1089/nat.2019.0841) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Goel_2020_TTR](drugs/drug_patisiran/pd_Goel_2020_TTR.md) | Serum Transthyretin ← ALN-18328 · indirect response — drug inhibits the production of Serum Transthyretin | — | Goel V et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020) | [10.1089/nat.2019.0841](https://doi.org/10.1089/nat.2019.0841) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -29,36 +37,27 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 05:08 | 0:13 | 0/0/0 | 0/0/0 | 0/0/0 | 28,004/563 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-24 02:49 | 0:03 | 0/1/0 | 1/0/0 | 0/0/0 | 3,895/162 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
-- **screened:** 0  ·  **relevant:** 0
-- **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Goel_2020.pdf` | Goel V et al., Population Pharmacokinetic-Pharmacodyna…, Nucleic acid therapeutics (2020) | popPK | 7 | [10.1089/nat.2019.0841](https://doi.org/10.1089/nat.2019.0841) | [32175804](https://pubmed.ncbi.nlm.nih.gov/32175804) | Population PK-PD model of patisiran (ALN-18328) with PD parameters (Hill, IC50) reported, but PK disposition parameters (CL, V) values appear not given in the evidence, likely in supplementary material. |
-
-<sub>queue written 2026-10-07 05:08 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Goel_2020 | relevant | 7 | 4 | Population PK-PD model of patisiran (ALN-18328) with PD parameters (Hill, IC50) reported, but PK disposition parameters (CL, V) values appear not given in the evidence, likely in supplementary material. |
-| popPK | Jeon_2022 | irrelevant | 3 | 0 | A minireview of siRNA PK/PD modeling with no original numeric patisiran parameters in the evidence. |
-| popPK | Zhang_2020 | relevant | 4 | 4 | Reports patisiran (ALN-18328) PK concentration parameters (Cmax, Cp(30min), Cmin, accumulation ratio) in humans, but no CL/V/compartmental disposition parameters; some values (e.g., full Table 2) appear truncated or in supplementary tables. |
+| PGx | Goel_2020 | not_relevant | 0 | 0 | The paper reports a population PK/PD model but explicitly states that covariate analysis showed similar effects across factors without identifying specific pharmacogenomic variants affecting patisiran. |
+| popPK | Jeon_2022 | irrelevant | 1 | 0 | The paper is a minireview discussing modeling efforts for siRNA therapeutics and does not report original quantitative PK parameters or numeric values for patisiran in the provided text. |
+| PGx | Jeon_2022 | not_relevant | 0 | 0 | The paper is a minireview of PK/PD modeling for siRNA therapeutics and does not report specific pharmacogenomic studies or effect sizes for patisiran. |
+| PGx | Zhang_2020 | not_relevant | 1 | 10 | The paper analyzes PK/PD differences across clinical subgroups (including V30M genotype status) but reports "no meaningful differences" and does not derive a specific pharmacogenomic effect size (theta) on the parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpatisiran%5D&body=Drug%3A%20patisiran%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_patisiran/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 02:48 UTC</sub>

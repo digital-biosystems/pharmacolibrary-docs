@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant for paracetamol is dimensionally invalid, with units of hours conflicting with the required reciprocal time dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Anderson2005_5_years_pna" status="rejected" stale="false" population="children" measured-compound="paracetamol" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Anderson BJ, Pons G, Autret-Leca E, Allegaert K, Boccard E. Pediatric intravenou
 
 ### Reviewer guidance
 
-**The absorption rate constant for paracetamol is dimensionally invalid, with units of hours conflicting with the required reciprocal time dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].**
 
-The parameter labelled 'T1/2 hyd' (0.0051 h) is defined as an absorption rate constant but carries the unit dimension of time ([time]) rather than inverse time (1/[time]). This conflict between the parameter's physical meaning and its assigned unit dimension triggered a rejection. Additionally, a second reader identified a missing hydrolysis link from propacetamol to paracetamol and a different parameter identifier for the absorption term. Extracted — paracetamol: CLm/F 16.3 L·h⁻¹ 70 kg⁻¹, V1 0.34 L·kg⁻¹, Q 1.05 L·h⁻¹·kg⁻¹, kabs 0.0051 h, V2 30.4 L·70 kg⁻¹.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — paracetamol: CLm/F 16.3 L·h⁻¹ 70 kg⁻¹, V1 0.34 L·kg⁻¹, Q 1.05 L·h⁻¹·kg⁻¹, kabs 0.0051 h, V2 30.4 L·70 kg⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading propacetamol → paracetamol (hydrolysis); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

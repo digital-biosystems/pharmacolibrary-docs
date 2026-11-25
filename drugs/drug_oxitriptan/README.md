@@ -33,7 +33,7 @@ Oxitriptan is an amino acid and serotonin precursor used as an antidepressant to
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Guan_2020_cortisol](drugs/drug_oxitriptan/pd_Guan_2020_cortisol.md) | serum cortisol ← 5-HTP · direct linear effect | — | Guan Z et al., PK/PD modeling of 5-hydroxytryptophan (…, Pharmacology research & per… (2020) | [10.1002/prp2.574](https://doi.org/10.1002/prp2.574) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Guan_2020_cortisol](drugs/drug_oxitriptan/pd_Guan_2020_cortisol.md) | serum cortisol ← 5-HTP · direct linear effect | — | Guan Z et al., PK/PD modeling of 5-hydroxytryptophan (…, Pharmacology research & per… (2020) | [10.1002/prp2.574](https://doi.org/10.1002/prp2.574) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +47,7 @@ Oxitriptan is an amino acid and serotonin precursor used as an antidepressant to
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:53 | 0:48 | 1/1/0 | 1/0/0 | 0/0/0 | 61,154/3,094 | einfracz / qwen3.8-27b | 5 | 5/7 | 5/0 | 0 |
+| 2026-10-07 18:53 | 0:48 | 1/1/0 | 0/1/0 | 0/0/0 | 61,154/3,094 | einfracz / qwen3.8-27b | 5 | 5/7 | 5/0 | 0 |
 
 ## Coverage
 

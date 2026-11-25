@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absolute bioavailability and absorption lag time were assigned standard library placeholders rather than paper-derived estimates.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="olaparib" model-id="Olaparib_Velev2021_reference" status="needs_review" stale="false" population="BRCA-mutated ovarian cancer patients" measured-compound="olaparib" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Velev M, Puszkiel A, Blanchet B, de Percin S, Delanoy N, Medioni J et al. Associ
 
 ### Reviewer guidance
 
-**Absolute bioavailability and absorption lag time were assigned standard library placeholders rather than paper-derived estimates.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record contains no explicit values for absolute bioavailability (F) or absorption lag time (Tlag), so standard defaults were substituted for these critical absorption inputs. While relative bioavailability is reported as 0.282, the missing absolute values mean the model relies on generic assumptions not supported by the study. A second reader could not verify the primary analyte or any of the core pharmacokinetic parameters, resulting in a complete lack of confirmation for the extracted data. Extracted — olaparib: CL 3.6 L h−1, V1 2.57 L, V2 19.7 L, Q 1.11 L h−1, Frel 0.282 Mean Estimate from Zhou et al., kabs 0.247 1/h, D1 0.901 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. A reported unit could not be converted (Frel), so that value has no SI equivalent. Extracted — olaparib: CL 3.6 L h−1, V1 2.57 L, V2 19.7 L, Q 1.11 L h−1, Frel 0.282 Mean Estimate from Zhou et al., kabs 0.247 1/h, D1 0.901 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has olaparib, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -182,7 +182,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.111, 0 of 1 reader(s) agree | 0.111 | cross-check disputed by a second reader: verdict disputed, agreement 0.111, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.111 (2 of 18 compared fields agree, 14 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.111 | cross-check contradicted by a second reader: verdict disputed; agreement 0.111 (2 of 18 compared fields agree, 14 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

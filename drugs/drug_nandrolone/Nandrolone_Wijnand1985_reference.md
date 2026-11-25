@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the nandrolone decanoate compartment is an orphan with no defined path to the nandrolone metabolite.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="nandrolone" model-id="Nandrolone_Wijnand1985_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="nandrolone" parameterization="apparent" topology="general_linear"></div>
 
@@ -46,13 +46,13 @@ Wijnand HP, Bosch AM, Donker CW. Pharmacokinetic parameters of nandrolone (19-no
 
 ### Reviewer guidance
 
-**The record is rejected because the nandrolone decanoate compartment is an orphan with no defined path to the nandrolone metabolite.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The structure lists nandrolone decanoate as the source for nandrolone but provides no link parameter or value connecting them. Consequently, the nandrolone decanoate compartment is unreachable from the dose site, violating model connectivity rules. The abstract-only source further limits the record to summary statistics like a 1.55 L/h clearance, preventing a full pharmacokinetic fit. Extracted — nandrolone: CLm/F 1.55 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nandrolone: CLm/F 1.55 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of half-life of hydrolysis of nandrolone decanoate in serum: this record has none, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

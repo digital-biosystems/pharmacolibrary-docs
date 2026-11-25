@@ -67,8 +67,8 @@ Capecitabine is an oral fluoropyrimidine antimetabolite used to treat breast, ga
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zandvliet_2008_ANC](drugs/drug_capecitabine/pd_Zandvliet_2008_ANC.md) | Absolute neutrophil count biomarker turnover ← 5'-DFUR | — | Zandvliet AS et al., PK/PD model of indisulam and capecitabi…, Clinical pharmacology and t… (2008) | [10.1038/sj.clpt.6100344](https://doi.org/10.1038/sj.clpt.6100344) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zandvliet_2008_TC](drugs/drug_capecitabine/pd_Zandvliet_2008_TC.md) | Thrombocyte count biomarker turnover ← 5'-DFUR | — | Zandvliet AS et al., PK/PD model of indisulam and capecitabi…, Clinical pharmacology and t… (2008) | [10.1038/sj.clpt.6100344](https://doi.org/10.1038/sj.clpt.6100344) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zandvliet_2008_ANC](drugs/drug_capecitabine/pd_Zandvliet_2008_ANC.md) | Absolute neutrophil count biomarker turnover ← 5'-DFUR | — | Zandvliet AS et al., PK/PD model of indisulam and capecitabi…, Clinical pharmacology and t… (2008) | [10.1038/sj.clpt.6100344](https://doi.org/10.1038/sj.clpt.6100344) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zandvliet_2008_TC](drugs/drug_capecitabine/pd_Zandvliet_2008_TC.md) | Thrombocyte count biomarker turnover ← 5'-DFUR | — | Zandvliet AS et al., PK/PD model of indisulam and capecitabi…, Clinical pharmacology and t… (2008) | [10.1038/sj.clpt.6100344](https://doi.org/10.1038/sj.clpt.6100344) |
 
 ## Pharmacogenomics (PGx)
 

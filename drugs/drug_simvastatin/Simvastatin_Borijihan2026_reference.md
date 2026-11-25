@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The simvastatin model was held back because absorption rate constant and lag time were not reported, forcing the use of library defaults.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Borijihan2026_reference" status="needs_review" stale="false" population="" measured-compound="simvastatin" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Borijihan G, Liu M, Bao M, Sun Z, He M, Li Y. Design and Evaluation of Ethylene 
 
 ### Reviewer guidance
 
-**The simvastatin model was held back because absorption rate constant and lag time were not reported, forcing the use of library defaults.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lacks explicit estimates for ka and Tlag, leading to deviations where invented absorption parameters replace actual data. This issue was identified during deviation checks, which flagged the unreported parameter defaults as unacceptable for a fitted model. Additionally, a disagreement on a specific value (715) between this record and a second reader remains unresolved, further complicating the record's reliability. Extracted — simvastatin: CL/F 4.19e+03 mL/h, V/F 40.2 L/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — simvastatin: CL/F 4.19e+03 mL/h, V/F 40.2 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 715, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.889, 0 of 1 reader(s) agree | 0.889 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.889 (8 of 9 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.889 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

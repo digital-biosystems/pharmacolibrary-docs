@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The iodine elimination rate constant of 55 mL/min is dimensionally invalid for a first-order kinetic parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit mL/min ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="povidone-iodine" model-id="PovidoneIodine_Eloot2010_reference" status="rejected" stale="false" population="burn-injured patients with elevated iodine levels" measured-compound="iodine" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ Eloot S, Dhondt A, Hoste E, Verstraete A, De Waele J, Colpaert K et al. How to r
 
 ### Reviewer guidance
 
-**The iodine elimination rate constant of 55 mL/min is dimensionally invalid for a first-order kinetic parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit mL/min ([length] ** 3 / [time]) vs 1 / [time].**
 
-The record lists the terminal elimination rate constant with units of mL/min, which conflicts with the required 1/time dimension for a first-order rate constant. Additionally, the model was built from abstract-only summary statistics, meaning the values are not fitted model parameters. A second reader also disputed whether the dose compound should be identified as iodine or povidone-iodine. Extracted — iodine: V 19.4 L, kel 55 mL/min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is povidone iodine's own; they describe iodine. Extracted — iodine: V 19.4 L, kel 55 mL/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has iodine, the second reading povidone-iodine. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

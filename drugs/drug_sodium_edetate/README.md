@@ -18,6 +18,12 @@ Sodium edetate is a chelating agent used in ophthalmological treatments. It is a
 
 _not available_
 
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Durand_2002_clearance](drugs/drug_sodium_edetate/pd_Durand_2002_clearance.md) | renal clearance · direct linear effect | — | Durand E et al., The basics of renal imaging and functio…, The quarterly journal of nu… (2002) | — |
+
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
 <table><thead><tr><th>Badge</th><th>Definition</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">Curated (human-checked)</span></td><td>Authored or checked by a person against the paper.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces paper</span></td><td>The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified.</td></tr><tr><td><span class="pk-badge pk-badge--green">Reproduces with caveats</span></td><td>Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated).</td></tr><tr><td><span class="pk-badge pk-badge--blue">Simulated</span></td><td>The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">Not simulated</span></td><td>Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict.</td></tr><tr><td><span class="pk-badge pk-badge--orange">Needs review</span></td><td>Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified.</td></tr><tr><td><span class="pk-badge pk-badge--red">Rejected</span></td><td>Not accepted; the values are shown for inspection only.</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>Reviewed before the paper was last screened; a new review is pending, so the status comes from the automatic checks.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>All responding readers agree on all compared fields; fractions indicate agreeing/total readers.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>At least one non-structural discrepancy or incomplete reader agreement.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>At least one structural-parameter discrepancy; primary extraction retained pending review.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>Non-human or in-vitro evidence; parameters and simulations describe the stated experimental system.</td></tr></tbody></table>
@@ -30,57 +36,84 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 17:29 | 5:27 | 0/0/0 | 0/0/0 | 0/0/0 | 211,421/2,846 | ollama / glm-5.3-flash | 9 | 1/7 | 8/1 | 0 |
+| 2026-11-24 05:00 | 0:03 | 0/0/0 | 0/1/0 | 0/0/0 | 4,442/159 | einfracz / qwen3.8-27b | 9 | 1/8 | 8/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 1458 matched, 31 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Peters_1994.pdf` | Peters AM et al., Measurement of the extravascular concen…, Nuclear medicine communicat… (1994) | popPK | 7 | [10.1097/00006231-199402000-00002](https://doi.org/10.1097/00006231-199402000-00002) | [8170640](https://pubmed.ncbi.nlm.nih.gov/8170640) | 51Cr-EDTA (edetate) plasma curves fitted with two exponentials and clearance values (68 ml/min/1.73m²) are reported directly, though volume parameters are not given. |
 | `De_2004.pdf` | De Rosemond SJ et al., Wastewater treatment polymers identifie…, Environmental toxicology an… (2004) | pd | 4 | [10.1897/03-609](https://doi.org/10.1897/03-609) | [15379002](https://www.ncbi.nlm.nih.gov/pubmed/15379002) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 17:29 UTC</sub>
+<sub>queue written 2026-11-24 05:00 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Alestig_1984 | irrelevant | 0 | 0 | Chromium-EDTA is only used as a GFR tracer; the study drug is ceftazidime, with no PK parameters for sodium edetate itself. |
-| popPK | Batts_1989 | irrelevant | 0 | 0 | This is an in-vitro frog palate study of mucociliary transport with EDTA as a preservative, not a pharmacokinetic study of sodium edetate disposition. |
-| popPK | Becker_1994 | irrelevant | 0 | 0 | 51Cr-EDTA is only used as a diagnostic GFR marker; no PK parameters for sodium edetate are reported. |
-| popPK | Bouvet_2006 | irrelevant | 2 | 3 | 51Cr-EDTA is used only as a diagnostic GFR probe; the population PK model predicts GFR from covariates, not disposition parameters of sodium edetate itself. |
-| popPK | Canevarolo_2026 | irrelevant | 0 | 0 | This is a genomics/epigenomics study of multiple myeloma with no pharmacokinetic data for sodium edetate. |
-| popPK | De_2004 | irrelevant | 0 | 0 | Toxicity study of mine effluent polymers in Ceriodaphnia; no PK parameters for sodium edetate. |
-| popPK | Durand_2002 | irrelevant | 1 | 0 | A review of renal imaging tracers (EDTA/DTPA as GFR markers) with no PK disposition parameters for sodium edetate. |
-| popPK | Francis_1983 | irrelevant | 0 | 0 | 51Cr-EDTA clearance is used only as a diagnostic marker of renal function, not as a PK study of sodium edetate, and no disposition parameters for the drug are reported. |
-| popPK | Hällgren_1978 | irrelevant | 0 | 0 | 51Cr-EDTA is used only as a GFR marker; no pharmacokinetic disposition parameters for sodium edetate are reported. |
-| popPK | Iwata_1998 | irrelevant | 0 | 0 | EDTA is only a permeability probe (blood-to-lumen clearance marker), not sodium_edetate PK; no disposition parameters reported. |
-| popPK | Kanwar_1994 | irrelevant | 0 | 0 | 51Cr-EDTA is only a permeability probe in a rat ischemia-reperfusion study; no PK parameters for sodium edetate are reported. |
-| popPK | Messa_1994 | irrelevant | 1 | 1 | Na2-EDTA is used only as a hypocalcemic provocation agent and Cr51EDTA as GFR probe; no PK disposition parameters for sodium edetate are reported. |
+| popPK | Alestig_1984 | irrelevant | 0 | 0 | The study focuses on ceftazidime; EDTA is used only as a diagnostic agent to measure glomerular filtration rate, not as the subject drug for PK analysis. |
+| PGx | Alestig_1984 | not_relevant | 0 | 0 | The paper discusses ceftazidime and renal function, not sodium edetate, and reports no genetic variants. |
+| popPK | Batts_1989 | irrelevant | 0 | 0 | The study is an in-vitro investigation of mucociliary clearance in frogs using EDTA as a preservative, not a pharmacokinetic study of sodium edetate disposition. |
+| PGx | Batts_1989 | not_relevant | 0 | 0 | The paper investigates the effect of preservatives like EDTA on mucociliary clearance in an animal model and does not involve pharmacogenomics or the drug sodium edetate. |
+| popPK | Becker_1994 | irrelevant | 0 | 0 | The study uses 51Cr-EDTA only as a diagnostic marker to assess renal function (GFR), not as the subject drug for pharmacokinetic parameter estimation. |
+| PGx | Becker_1994 | not_relevant | 0 | 0 | The paper discusses the use of 51Cr-EDTA as a diagnostic marker for renal function and the effects of diet and ACE inhibitors, but does not investigate pharmacogenomic effects on the PK/PD of sodium edetate as a drug. |
+| popPK | Bouvet_2006 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of 51Cr-EDTA (a radiolabeled tracer) for GFR estimation, not the pharmacokinetics of the therapeutic drug sodium edetate (CaNa2EDTA). |
+| PGx | Bouvet_2006 | not_relevant | 0 | 0 | The paper focuses on pharmacokinetics of 51Cr-EDTA for GFR estimation and does not report any genetic variants or pharmacogenomic effects. |
+| popPK | Canevarolo_2026 | irrelevant | 0 | 0 | The paper is a genomic and epigenomic analysis of multiple myeloma and does not involve sodium_edetate or any pharmacokinetic studies. |
+| PGx | Canevarolo_2026 | not_relevant | 0 | 0 | The paper analyzes genomic and epigenomic changes in multiple myeloma disease progression and multidrug resistance, but it does not report pharmacokinetic or pharmacodynamic parameters for sodium edetate. |
+| popPK | De_2004 | irrelevant | 0 | 0 | The paper investigates the toxicity of wastewater treatment polymers in an aquatic environment and does not study the pharmacokinetics of sodium edetate in a biological subject. |
+| PGx | De_2004 | not_relevant | 0 | 0 | The paper investigates environmental toxicity of diamond mine effluent polymers in *Ceriodaphnia dubia* and does not study pharmacogenomics or the pharmacokinetics/pharmacodynamics of sodium_edetate. |
+| popPK | Durand_2002 | irrelevant | 0 | 0 | The paper is a review of renal imaging techniques where EDTA is mentioned only as a diagnostic radiotracer, not as the subject drug for PK modeling. |
+| PGx | Durand_2002 | not_relevant | 0 | 0 | The paper is a review on renal imaging techniques using radiotracers and does not report pharmacogenomic effects on the PK/PD of sodium_edetate. |
+| popPK | Francis_1983 | irrelevant | 0 | 0 | The study focuses on calcium malabsorption and vitamin D; 51Cr EDTA is used solely as a diagnostic agent for measuring glomerular filtration rate (renal function), not for characterizing the pharmacokinetics of sodium edetate. |
+| PGx | Francis_1983 | not_relevant | 0 | 0 | The study examines calcium absorption and vitamin D levels in the elderly, with no data on pharmacogenomics or PK/PD of sodium edetate. |
+| popPK | Gopi_2017 | irrelevant | 0 | 0 | The paper investigates phospholipid levels in rat striatum in a Parkinson's disease model and does not study the pharmacokinetics of sodium edetate. |
+| PGx | Gopi_2017 | not_relevant | 0 | 0 | The paper investigates phospholipid levels in a rat model of Parkinson's disease induced by rotenone and does not involve the drug sodium edetate or any pharmacogenomic effects. |
+| popPK | Hällgren_1978 | irrelevant | 0 | 0 | The study measures serum gastrin levels to assess kidney function, using 51Cr-EDTA only as a diagnostic probe for GFR, not for sodium_edetate pharmacokinetics. |
+| PGx | Hällgren_1978 | not_relevant | 0 | 0 | The paper studies the relationship between kidney function and serum gastrin levels, using 51Cr-EDTA only for GFR estimation, not for pharmacogenomic PK/PD analysis of the drug sodium edetate. |
+| popPK | Iwata_1998 | irrelevant | 0 | 0 | The paper uses [51Cr]-EDTA as a marker for gastric mucosal permeability (blood-to-lumen clearance) in a physiological study of nitric oxide, not as a study of the pharmacokinetics of sodium edetate. |
+| PGx | Iwata_1998 | not_relevant | 0 | 0 | The paper investigates the role of nitric oxide in gastric mucosal injury in rats and does not report pharmacogenomic effects on the PK/PD of sodium_edetate. |
+| popPK | Kanwar_1994 | irrelevant | 0 | 0 | The study uses EDTA only as a tracer to assess intestinal permeability, not as a subject of pharmacokinetic analysis. |
+| PGx | Kanwar_1994 | not_relevant | 0 | 0 | The paper investigates the pathophysiology of ischemia-reperfusion injury in the intestine, not pharmacogenomics or the PK/PD of sodium edetate as a therapeutic agent. |
+| popPK | Kim_2026 | irrelevant | 0 | 0 | This is an in vitro physicochemical stability study of ropivacaine and dexamethasone formulations, where edetate is only an excipient and no PK parameters for sodium edetate are reported. |
+| PGx | Kim_2026 | not_relevant | 0 | 0 | The paper is an in vitro study on the physicochemical stability of ropivacaine and dexamethasone mixtures and does not report any pharmacogenomic effects on the PK/PD of sodium edetate or the studied drugs. |
+| popPK | Messa_1994 | irrelevant | 0 | 0 | The study investigates the relationship between parathyroid hormone and calcium, using sodium EDTA as a tool to induce hypocalcemia for the stimulus, but does not report pharmacokinetic parameters for sodium EDTA itself. |
+| PGx | Messa_1994 | not_relevant | 0 | 0 | The paper uses sodium edetate as a stimulus to test parathyroid hormone secretion, but does not study the pharmacokinetics or pharmacodynamics of sodium edetate itself, nor does it report any pharmacogenomic effects. |
 | popPK | Moura_2025 | irrelevant | 0 | 0 | This is a medicinal chemistry/anticancer study of carnosic acid derivatives with no PK parameters for sodium edetate. |
-| popPK | Nishiyama_2014 | irrelevant | 0 | 0 | EDTA is used only as an in-vitro metal chelator tool in a biochemical study; no PK parameters for sodium_edetate are reported. |
-| popPK | Nyberg_1987 | irrelevant | 0 | 0 | 51Cr-EDTA is used only as a GFR tracer in diabetic nephropathy patients; no PK disposition parameters (CL, V, half-life, model) for sodium edetate are reported. |
-| popPK | Paller_1988 | irrelevant | 0 | 0 | EDTA is only used as an iron complex to probe renal injury; no PK parameters for sodium edetate are reported. |
-| popPK | Phelps_2013 | irrelevant | 0 | 0 | The paper reports population-PK parameters for myo-inositol, not sodium_edetate; sodium_edetate does not appear as the subject drug. |
-| popPK | Pillai_2015 | irrelevant | 0 | 0 | This is a population PK study of oseltamivir, not sodium_edetate; no sodium_edetate parameters are present. |
+| popPK | Nishiyama_2014 | irrelevant | 0 | 0 | The paper describes the metal-dependence of a catalytic antibody's mechanism and uses EDTA as an inhibitor, but does not report pharmacokinetic parameters for sodium edetate. |
+| PGx | Nishiyama_2014 | not_relevant | 0 | 0 | The paper studies the effect of EDTA on the catalytic activity of an antibody construct, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of sodium edetate. |
+| popPK | Nyberg_1987 | irrelevant | 1 | 0 | This study uses EDTA as a diagnostic probe to measure glomerular filtration rate in diabetic patients, rather than characterizing the pharmacokinetic parameters of EDTA itself. |
+| PGx | Nyberg_1987 | not_relevant | 0 | 0 | The paper is a clinical study on diabetic nephropathy and uses 51Cr-EDTA as a renal clearance marker to measure GFR, not to study the pharmacokinetics or pharmacodynamics of the drug sodium edetate in the context of pharmacogenomics. |
+| popPK | Paller_1988 | irrelevant | 0 | 0 | The study focuses on the role of iron chelators (deferoxamine and EDTA-FeCl3) in post-ischemic renal injury in rats, not the pharmacokinetic parameters of sodium edetate. |
+| PGx | Paller_1988 | not_relevant | 0 | 0 | The paper reports a study on rat renal injury and the use of deferoxamine, not a pharmacogenomic study of sodium edetate PK/PD parameters in humans. |
+| popPK | Peters_1994 | irrelevant | 1 | 2 | The study investigates the extravascular-to-plasma concentration ratio (Ce/Ci) and protein binding of radio-labeled EDTA, not standard population pharmacokinetic parameters (CL, V, ka, t1/2) for sodium edetate. |
+| PGx | Peters_1994 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of renal agents (including EDTA) but does not mention gene variants, genotypes, or pharmacogenomic effects. |
+| popPK | Phelps_2013 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for myo-inositol, not sodium edetate. |
+| PGx | Phelps_2013 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of myo-inositol, not sodium_edetate, and contains no genetic data. |
+| popPK | Pillai_2015 | irrelevant | 0 | 0 | The study evaluates the pharmacokinetics of oseltamivir (and its metabolite oseltamivir carboxylate), not sodium edetate. |
+| PGx | Pillai_2015 | not_relevant | 0 | 0 | The paper studies the pharmacokinetics of oseltamivir in pregnancy, not sodium edetate, and does not report pharmacogenomic effects. |
 | popPK | Ravenstijn_2012 | irrelevant | 0 | 0 | This is a population PK study of L-DOPA (levodopa) in rats, not sodium edetate; sodium edetate/EDTA appears only as an HPLC mobile-phase and antioxidant reagent, and no sodium edetate PK parameters are reported. |
 | popPK | Rouaz_2021 | irrelevant | 0 | 0 | Review of paediatric excipients with no PK parameters for sodium edetate; no numeric disposition values present. |
-| popPK | Salahudeen_1989 | irrelevant | 2 | 2 | 51Cr-EDTA is used only as a GFR diagnostic marker (clearance values not reported numerically), not a PK study of sodium edetate disposition parameters. |
-| popPK | Shaw_1991 | irrelevant | 0 | 0 | EDTA is only a paracellular diffusion marker in a rat placental Mg transport study; no PK parameters for sodium edetate. |
+| popPK | Salahudeen_1989 | irrelevant | 0 | 0 | The study uses 51Cr-EDTA as a diagnostic marker to measure Glomerular Filtration Rate (GFR) in humans, not as a subject drug for population pharmacokinetic parameter estimation (CL, V, etc.). |
+| PGx | Salahudeen_1989 | not_relevant | 0 | 0 | The study investigates hypertension in primary hyperparathyroidism using 51Cr-EDTA as a marker for renal function; it does not involve pharmacogenomics or the pharmacokinetics/pharmacodynamics of sodium edetate. |
+| popPK | Shaw_1991 | irrelevant | 0 | 0 | The paper studies magnesium transport in rat placenta using 51Cr-EDTA only as a passive paracellular diffusional marker, not as the subject of pharmacokinetic analysis. |
+| PGx | Shaw_1991 | not_relevant | 0 | 0 | The study reports placental transport mechanisms and does not report a pharmacogenomic effect on the PK/PD of sodium edetate. |
 | popPK | Simeoli_2024 | irrelevant | 0 | 0 | This is a population-PK study of budesonide; sodium edetate is only an excipient in the formulation, with no PK data for it. |
-| popPK | Skinner_1994 | irrelevant | 2 | 1 | 51Cr-EDTA is used only as a diagnostic GFR tracer; no PK disposition parameters (CL, V, half-life) for edetate are reported, and no numeric PK values appear in the evidence. |
+| popPK | Skinner_1994 | irrelevant | 0 | 0 | The study uses EDTA as a diagnostic marker to measure glomerular filtration rate (GFR), not to characterize the pharmacokinetic parameters (CL, V, etc.) of the drug itself. |
+| PGx | Skinner_1994 | not_relevant | 0 | 0 | The paper evaluates the accuracy of GFR estimation formulas using 51Cr-EDTA clearance as a reference standard, and does not investigate pharmacogenomic effects on PK or PD. |
 | popPK | Vasović_2026 | irrelevant | 0 | 0 | A narrative review of oral peptide delivery technologies with no sodium edetate PK data or quantitative disposition parameters. |
-| popPK | Willems_2009 | irrelevant | 0 | 0 | 51Cr-EDTA is only used as a GFR reference marker; no PK parameters for edetate itself are reported. |
-| popPK | Zingmark_2004 | irrelevant | 0 | 0 | This is a PK/PD study of the monoclonal antibody ATM-027, not sodium_edetate; no sodium_edetate parameters are present. |
+| popPK | Willems_2009 | irrelevant | 0 | 0 | Sodium edetate is used only as a marker for measuring renal clearance (GFR), not as the subject drug for PK parameter estimation. |
+| PGx | Willems_2009 | not_relevant | 0 | 0 | The paper evaluates Cystatin C as a renal marker and does not report pharmacogenomic effects on the PK/PD of sodium edetate. |
+| popPK | Zingmark_2004 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for the monoclonal antibody ATM-027, not for sodium_edetate. |
+| PGx | Zingmark_2004 | not_relevant | 0 | 0 | The paper models the PK/PD of the monoclonal antibody ATM-027, not sodium edetate, and does not report any pharmacogenomic effects. |
 
 
 </details>

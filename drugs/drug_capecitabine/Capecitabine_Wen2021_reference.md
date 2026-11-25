@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper studies pyrotinib, not capecitabine, which is only a co-administered agent.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="capecitabine" model-id="Capecitabine_Wen2021_reference" status="rejected" stale="false" population="" measured-compound="capecitabine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Wen HN, Liu YX, Xu D, Zhao KJ, Jiao Z. Population pharmacokinetic modeling of py
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper studies pyrotinib, not capecitabine, which is only a co-administered agent.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The paper subject is identified as pyrotinib, with capecitabine serving merely as a co-medication rather than the primary analyte. This identity mismatch is compounded by the model builder defaulting absorption parameters like ka and assuming a bioavailability of 1, which contradicts the oral dosing context. Furthermore, a second reader failed to agree on the specific values for clearance and volume of distribution, resulting in a low cross-check agreement ratio. Extracted — capecitabine: CL/F 147 L/h, V/F 3.82e+03 L.
+Extracted — capecitabine: CL/F 147 L/h, V/F 3.82e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 147, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check agreement 0.2 is below 0.5: verdict partial, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.2 (1 of 5 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check agreement 0.2 is below 0.5: verdict partial; agreement 0.2 (1 of 5 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

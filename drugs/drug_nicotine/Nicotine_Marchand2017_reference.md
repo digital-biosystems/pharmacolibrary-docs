@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Nicotine’s apparent clearance CL/F of 2.5 L/min was double-corrected for bioavailability, contributing to the record’s rejection.
+> C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng/mL ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="nicotine" model-id="Nicotine_Marchand2017_reference" status="rejected" stale="false" population="healthy adult smokers" measured-compound="nicotine" parameterization="apparent" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Marchand M, Brossard P, Merdjan H, Lama N, Weitkunat R, Lüdicke F. Nicotine Pop
 
 ### Reviewer guidance
 
-**Nicotine’s apparent clearance CL/F of 2.5 L/min was double-corrected for bioavailability, contributing to the record’s rejection.**
+**C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng/mL ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-CL/F of 2.5 L/min and Q/F of 14.3 L/min are defined as already adjusted for bioavailability, which explains the double-correction finding; relative bioavailability is 1. A structural parameter was reported in ng/mL, a concentration unit, although its required dimension was concentration multiplied by time; the unit lacked an SI conversion, so no SI value was available. A second reader also disputed the reported CL/F value, and the record gives no resolution. Extracted — nicotine: V1/F 1.9 L, CL/F 2.5 L/min, V2/F 29.4 L, Q/F 14.3 L/min, D1 12.4 min, Frel 1, C0 22.6 ng/mL, CLfm 1.6, … (+4).
+A reported unit could not be converted (C0), so that value has no SI equivalent. Extracted — nicotine: V1/F 1.9 L, CL/F 2.5 L/min, V2/F 29.4 L, Q/F 14.3 L/min, D1 12.4 min, Frel 1, C0 22.6 ng/mL, CLfm 1.6, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[c0].value`: this record has 22.6, the second reading 0.358; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

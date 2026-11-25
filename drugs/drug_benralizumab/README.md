@@ -40,6 +40,7 @@ Benralizumab is a monoclonal antibody used to treat asthma and chronic spontaneo
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Chupp_2019_PEF](drugs/drug_benralizumab/pd_Chupp_2019_PEF.md) | morning peak expiratory flow ← benralizumab · stimulation effect | — | Chupp G et al., Rapid onset of effect of benralizumab o…, Annals of allergy, asthma &… (2019) | [10.1016/j.anai.2019.02.016](https://doi.org/10.1016/j.anai.2019.02.016) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Jin_2025_AAER](drugs/drug_benralizumab/pd_Jin_2025_AAER.md) | annual asthma exacerbation rate (AAER) ratio ← benralizumab · direct Emax (saturable) effect | — | Jin Y et al., Population Pharmacokinetics and Exposur…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01538-9](https://doi.org/10.1007/s40262-025-01538-9) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Jin_2025_FEV1](drugs/drug_benralizumab/pd_Jin_2025_FEV1.md) | pre-bronchodilator forced expiratory volume in 1 second ← benralizumab · model not identified | — | Jin Y et al., Population Pharmacokinetics and Exposur…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01538-9](https://doi.org/10.1007/s40262-025-01538-9) |
 
@@ -55,7 +56,7 @@ Benralizumab is a monoclonal antibody used to treat asthma and chronic spontaneo
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-08 00:28 | 7:21 | 4/1/0 | 2/0/0 | 0/0/0 | 172,010/9,938 | ollama / glm-5.3-flash | 6 | 0/6 | 6/0 | 1 |
+| 2026-11-23 16:46 | 0:04 | 4/1/0 | 3/0/0 | 0/0/0 | 3,734/172 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 1 |
 
 ## Coverage
 
@@ -64,24 +65,16 @@ Benralizumab is a monoclonal antibody used to treat asthma and chronic spontaneo
 - **records:** 5  ·  extracted 0  ·  needs review 4  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Wedner_2024.pdf` | Wedner HJ et al., Benralizumab in children with severe eo…, Pediatric allergy and immun… (2024) | popPK | 10 | [10.1111/pai.14092](https://doi.org/10.1111/pai.14092) | [38491795](https://pubmed.ncbi.nlm.nih.gov/38491795) | Population PK analysis in children reports numeric CL (0.257 L/day), t1/2 (14.5 days), and Cmax values directly in the abstract. |
-
-<sub>queue written 2026-10-08 00:21 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chupp_2019 | irrelevant | 0 | 0 | Efficacy study of PEF onset with a disease-response model, not a PK study reporting benralizumab disposition parameters. |
+| popPK | Chupp_2019 | irrelevant | 0 | 0 | The study reports pharmacodynamic/clinical efficacy outcomes (peak expiratory flow) rather than pharmacokinetic disposition parameters. |
+| PGx | Chupp_2019 | not_relevant | 0 | 0 | The paper describes the pharmacodynamic onset of action of benralizumab on lung function (PEF) in a general patient population but does not report any gene variant, genotype, or phenotype influencing PK or PD parameters. |
 | popPK | Jin_2025 | relevant | 10 | 4 | A population-PK model of benralizumab in humans is described, but most parameter estimates (CL, V2, ka, covariate effects) are in ESM Resources not provided; only absorption half-life (2.82 days), terminal half-life (15.5 days), and residual error values appear in text. |
 | popPK | Leander_2022 | irrelevant | 0 | 0 | This is a stochastic mixed-effects model of peak expiratory flow (PD/efficacy), not a PK model of benralizumab; no CL, V, ka, or half-life parameters for benralizumab appear. |
-| popPK | Matera_2017 | irrelevant | 3 | 1 | A narrative review of benralizumab's PK/PD with no numeric disposition parameters; any values would be in cited sources not provided. |
+| popPK | Matera_2017 | irrelevant | 3 | 0 | This is a narrative review describing the pharmacodynamic and pharmacokinetic profile of benralizumab, but it does not report specific quantitative PK parameter values (e.g., CL, V, half-life) in the provided text. |
+| PGx | Matera_2017 | not_relevant | 0 | 0 | The paper reviews the general pharmacokinetic and pharmacodynamic profile of benralizumab but does not report any pharmacogenomic effects (gene variants/genotypes) on these parameters. |
 | popPK | Vergles_2026 | irrelevant | 0 | 0 | Clinical remission/dose-interval tapering study with no PK parameters (no CL, V, ka, half-life, or population-PK model) for benralizumab; only clinical/biomarker outcomes. |
 
 

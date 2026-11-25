@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Zonisamide’s reported absorption-phase half-life of 91.27% has a dimensionless unit where a time unit is required, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit % (dimensionless) vs [time].
 
 <div class="pk-model-meta" hidden drug="zonisamide" model-id="Zonisamide_Silva2025_reference" status="rejected" stale="false" population="adults with refractory epilepsy" measured-compound="zonisamide" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Silva R, Colom H, Almeida A, Bicker J, Carona A, Silva A et al. A new population
 
 ### Reviewer guidance
 
-**Zonisamide’s reported absorption-phase half-life of 91.27% has a dimensionless unit where a time unit is required, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q95 unit % (dimensionless) vs [time].**
 
-The 91.27% entry is described as zonisamide’s absorption-phase half-life, a time quantity, but its reported unit is percent, which conflicts with the time dimension. Only the abstract was read, so its reported summary statistics stood in for a fitted model. Extracted — zonisamide: CL/F 0.761 L/h, V/F 48.1 L, kabs 0.671 h⁻¹, t1/2ka 91.3 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — zonisamide: CL/F 0.761 L/h, V/F 48.1 L, kabs 0.671 h⁻¹, t1/2ka 91.3 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has zonisamide, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

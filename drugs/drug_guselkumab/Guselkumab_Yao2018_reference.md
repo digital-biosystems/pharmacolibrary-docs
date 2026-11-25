@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record refused because guselkumab pharmacokinetic parameters derived solely from the abstract were disputed by a second reader, with agreement at 0.167.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="guselkumab" model-id="Guselkumab_Yao2018_reference" status="needs_review" stale="false" population="patients with moderate to severe plaque psoriasis" measured-compound="guselkumab" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Yao Z, Hu C, Zhu Y, Xu Z, Randazzo B, Wasfi Y et al. Population Pharmacokinetic 
 
 ### Reviewer guidance
 
-**Record refused because guselkumab pharmacokinetic parameters derived solely from the abstract were disputed by a second reader, with agreement at 0.167.**
+**cross_check_disputed; x1_cross_check.**
 
-The model was constructed from the abstract only, causing summary statistics like 0.516 L/day clearance and 1.11 day-1 absorption to stand in for fitted estimates. A second reader disagreed on the dose compound and primary analyte, marking both as unknown instead of guselkumab. Furthermore, the second reader could not confirm the extracted values for clearance, volume, and half-life, leading to a dispute. Extracted — guselkumab: CL/F 0.516 L/day, V/F 13.5 L, kabs 1.11 day-1, t1/2z 18.1 days.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — guselkumab: CL/F 0.516 L/day, V/F 13.5 L, kabs 1.11 day-1, t1/2z 18.1 days.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has guselkumab, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,7 +148,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

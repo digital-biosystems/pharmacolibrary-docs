@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance is reported in minutes rather than volume per time, and all parameters come from abstract-only data.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit min ([time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="pipecuronium bromide" model-id="PipecuroniumBromide_Caldwell1989_reference" status="rejected" stale="false" population="patients anesthetized with halothane and nitrous oxide" measured-compound="pipecuronium" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Caldwell JE, Canfell PC, Castagnoli KP, Lynam DP, Fahey MR, Fisher DM et al. The
 
 ### Reviewer guidance
 
-**Clearance is reported in minutes rather than volume per time, and all parameters come from abstract-only data.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit min ([time]) vs [length] ** 3 / [time].**
 
-The plasma clearance of 2.4 is recorded with units of minutes, a time dimension incompatible with the required volume per time for a clearance parameter. The record was built from the abstract alone, meaning the summary statistics for volume of distribution and half-life stand in for a fitted model. A second reader also disagreed on the identity of the dose compound and primary analyte. Extracted — pipecuronium bromide: Vss 309 ml.kg-1, CL 2.4 min, t1/2z 137 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pipecuronium bromide: Vss 309 ml.kg-1, CL 2.4 min, t1/2z 137 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pipecuronium bromide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 15:43 | 2:12 | 0/0/0 | 1/0/0 | 0/0/0 | 35,437/1,917 | ollama / glm-5.3-flash | 4 | 1/3 | 4/0 | 0 |
+| 2026-11-23 18:35 | 0:04 | 0/0/0 | 1/0/0 | 0/0/0 | 4,267/150 | einfracz / qwen3.8-27b | 4 | 1/3 | 4/0 | 0 |
 
 ## Coverage
 
@@ -47,48 +47,67 @@ _not available_
 
 ## Full-text requests
 
-_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Osawa_2019.pdf` | Osawa M et al., Population Pharmacokinetic Analysis of…, Clinical pharmacology in dr… (2019) | popPK | 10 | [10.1002/cpdd.649](https://doi.org/10.1002/cpdd.649) | [30629858](https://pubmed.ncbi.nlm.nih.gov/30629858) | Population PK model for beclabuvir in HCV-infected subjects, but numeric parameter values (CL, V, etc.) are not present in the evidence text. |
 | `Ueno_2019.pdf` | Ueno T et al., Exposure-Response Analysis for Efficacy…, Clinical pharmacology in dr… (2019) | pd | 5 | [10.1002/cpdd.646](https://doi.org/10.1002/cpdd.646) | [30667592](https://www.ncbi.nlm.nih.gov/pubmed/30667592) | metadata signals extractable PD data (Exposure-Response) |
 | `Murray_2024.pdf` | Murray M, The Role of CYPs and Transporters in th…, Current drug metabolism (2024) | pgx | 8 | [10.2174/0113892002288832240213095622](https://doi.org/10.2174/0113892002288832240213095622) | [38441017](https://www.ncbi.nlm.nih.gov/pubmed/38441017) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Eley_2015.pdf` | Eley T et al., Asunaprevir: A Review of Preclinical an…, Clinical pharmacokinetics (2015) | pgx | 7 | [10.1007/s40262-015-0299-6](https://doi.org/10.1007/s40262-015-0299-6) | [26177803](https://www.ncbi.nlm.nih.gov/pubmed/26177803) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-10-07 15:42 UTC</sub>
+<sub>queue written 2026-11-23 18:35 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Ahmed_2018 | not_relevant | 2 | 0 | Mentions IL28B genotype only as an efficacy stratifier (SVR12), not a pharmacogenomic effect on a PK/PD parameter of beclabuvir. |
-| PGx | Akuta_2018 | not_relevant | 2 | 3 | NS5A resistance polymorphisms relate to viral response (PD efficacy outcome), not a fitted pharmacogenomic effect on a PK/PD parameter of beclabuvir. |
-| PGx | Cheng_2016 | not_relevant | 0 | 0 | Paper reports in vitro CYP3A4 induction/inhibition by BCV for DDI prediction, with no gene variant/genotype/phenotype effect on BCV PK/PD. |
-| PGx | Eley_2015 | not_relevant | 0 | 0 | No pharmacogenomic (gene variant/genotype/phenotype) effects on beclabuvir PK/PD are reported; only race and hepatic status are mentioned. |
-| PGx | Esposito_2018 | not_relevant | 0 | 0 | Review of DCV-TRIO efficacy/safety with no pharmacogenomic effects on beclabuvir PK/PD parameters reported. |
-| PGx | Everson_2016 | not_relevant | 2 | 3 | IL28B genotype is reported only as an efficacy subgroup (SVR rates), not as a pharmacogenomic effect on a PK or PD parameter of beclabuvir. |
-| PGx | Fabrizi_2015 | not_relevant | 0 | 0 | Review of DAA efficacy/safety in renal impairment with no pharmacogenomic effects on beclabuvir PK/PD parameters. |
+| popPK | Ahmed_2018 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of clinical efficacy (SVR12) and safety, containing no pharmacokinetic data or disposition parameters. |
+| PGx | Ahmed_2018 | not_relevant | 2 | 5 | The paper reports clinical efficacy (SVR12) rather than PK/PD parameters, and while it mentions IL28B genotype, it states there was no difference in response, failing to report a specific pharmacogenomic effect on a PK/PD parameter. |
+| popPK | Akuta_2018 | irrelevant | 0 | 0 | The paper is a clinical efficacy study focusing on viral suppression and liver fibrosis markers, reporting no pharmacokinetic parameters for beclabuvir. |
+| PGx | Akuta_2018 | not_relevant | 0 | 0 | The paper reports clinical outcomes (fibrosis, AFP, SVR) for an HCV regimen but does not assess any pharmacokinetic or pharmacodynamic parameters modified by genetic variants. |
+| popPK | Cheng_2016 | irrelevant | 0 | 0 | The study focuses on CYP3A4 induction and inhibition mechanisms in vitro to predict drug-drug interactions, not on the disposition pharmacokinetic parameters (CL, V, etc.) of beclabuvir. |
+| PGx | Cheng_2016 | not_relevant | 0 | 0 | The study investigates CYP3A4-mediated drug-drug interactions (DDIs) between HCV drugs and midazolam, not the impact of human gene variants on beclabuvir's PK or PD. |
+| popPK | Eley_2015 | irrelevant | 0 | 0 | The paper is a review of asunaprevir's pharmacokinetics, and beclabuvir is only mentioned as a co-administered drug in a drug-drug interaction context, not as the subject of the PK study. |
+| PGx | Eley_2015 | not_relevant | 0 | 0 | The paper reviews the pharmacokinetics of Asunaprevir, not Beclabuvir, and mentions Beclabuvir only in the context of drug-drug interactions. |
+| popPK | Esposito_2018 | irrelevant | 1 | 0 | This is a narrative review discussing the fixed-dose combination containing beclabuvir, but it does not report original quantitative population-pharmacokinetic parameter estimates (CL, V, etc.) in the provided text. |
+| PGx | Esposito_2018 | not_relevant | 0 | 0 | The paper is a review of PK/PD properties and clinical efficacy of DCV-TRIO, but it does not report pharmacogenomic effects of genetic variants on PK/PD parameters. |
+| popPK | Everson_2016 | irrelevant | 1 | 0 | The paper is a clinical efficacy/safety study for HCV treatment and does not report quantitative pharmacokinetic disposition parameters for beclabuvir. |
+| PGx | Everson_2016 | not_relevant | 0 | 0 | The study reports clinical efficacy (SVR12) outcomes for HCV treatment but does not analyze pharmacokinetic or pharmacodynamic parameters based on pharmacogenomic variants. |
+| popPK | Fabrizi_2015 | irrelevant | 0 | 0 | This is a clinical review of efficacy and safety in renal impairment, not a pharmacokinetic study reporting quantitative disposition parameters for beclabuvir. |
+| PGx | Fabrizi_2015 | not_relevant | 0 | 0 | The paper is a review of DAA efficacy and safety in renal failure patients and does not report pharmacogenomic effects on PK or PD parameters. |
 | popPK | Friborg_2014 | irrelevant | 0 | 0 | In vitro HCV replicon study with no PK parameters for beclabuvir; only EC50 values and clinical Ctrough references appear. |
 | PGx | Friborg_2014 | not_relevant | 0 | 0 | In vitro HCV replicon resistance study; no host gene variant/genotype effect on beclabuvir PK or PD parameters. |
 | PGx | Garimella_2018 | not_relevant | 0 | 0 | This is a drug–drug interaction (DDI) cocktail study; no gene variant/genotype/phenotype effects on beclabuvir PK/PD are reported. |
-| PGx | Gentile_2015 | not_relevant | 0 | 0 | Abstract only reviews beclabuvir PK/efficacy generally; no gene variant effect on PK/PD parameters reported. |
-| PGx | Gentile_2015_2 | not_relevant | 0 | 0 | Review of asunaprevir safety with no pharmacogenomic effects on PK/PD parameters reported. |
-| PGx | Kao_2017 | not_relevant | 2 | 3 | Reports efficacy/safety of beclabuvir combination therapy and baseline viral resistance polymorphisms, but no host gene variant effect on beclabuvir PK/PD parameters. |
-| PGx | Maekawa_2018 | not_relevant | 1 | 5 | Pharmacogenomic findings concern daclatasvir/asunaprevir-induced ALT elevation; beclabuvir is only mentioned as a possible future application, with no PK/PD effect reported for it. |
-| PGx | Matsumoto_2020 | not_relevant | 4 | 4 | For beclabuvir, the study explicitly reports no CYP3A5*3 genotype effect on metabolism; only ASV showed a genotype-dependent PK effect, and no fitted effect sizes for BCV are given. |
-| PGx | Murray_2024 | not_relevant | 6 | 2 | Mentions pharmacogenomic variation may affect beclabuvir disposition only in general terms, with no specific variant or PK parameter reported. |
-| popPK | Osawa_2019 | relevant | 10 | 3 | Population PK model for beclabuvir in HCV-infected subjects, but numeric parameter values (CL, V, etc.) are not present in the evidence text. |
-| popPK | Osawa_2019_2 | irrelevant | 4 | 2 | This is an exposure-response safety analysis; a beclabuvir PopPK model is referenced (1-compartment, covariates on clearance) but no numeric PK parameter values (CL, V, etc.) are given in the evidence. |
-| PGx | Ramirez_2016 | not_relevant | 2 | 3 | Viral genotype sensitivity differences for beclabuvir, not a host gene variant effect on drug PK/PD. |
-| PGx | Takaguchi_2019 | not_relevant | 0 | 0 | No gene variant/genotype effects on beclabuvir PK/PD parameters are reported; only clinical efficacy (SVR) and viral resistance associations. |
+| popPK | Gentile_2015 | irrelevant | 2 | 0 | This is a review article that discusses beclabuvir's pharmacokinetics qualitatively but does not report original quantitative disposition parameters (e.g., CL, V) in the provided text. |
+| PGx | Gentile_2015 | not_relevant | 0 | 0 | The paper is a general review of beclabuvir's mechanism, safety, and efficacy, but does not report any pharmacogenomic effects (gene variants/genotypes) on its PK or PD parameters. |
+| popPK | Gentile_2015_2 | irrelevant | 0 | 0 | The paper is a review of asunaprevir safety, and beclabuvir is not mentioned or studied. |
+| PGx | Gentile_2015_2 | not_relevant | 0 | 0 | The paper discusses asunaprevir, not beclabuvir, and focuses on safety rather than pharmacogenomics. |
+| popPK | Kao_2017 | irrelevant | 0 | 0 | The paper reports efficacy (SVR12) and safety data for a clinical trial, but contains no pharmacokinetic parameters or quantitative disposition data for beclabuvir. |
+| PGx | Kao_2017 | not_relevant | 1 | 0 | The paper does not report pharmacokinetic or pharmacodynamic parameters modified by gene variants. |
+| popPK | Maekawa_2018 | irrelevant | 0 | 0 | The paper focuses on pharmacogenomics of daclatasvir/asunaprevir and mentions beclabuvir only in a future context in the conclusion, reporting no PK parameters for beclabuvir. |
+| PGx | Maekawa_2018 | not_relevant | 0 | 0 | The study investigates the pharmacogenomic effect of UGT1A1*6 on ALT elevation for daclatasvir and asunaprevir, not beclabuvir. |
+| popPK | Matsumoto_2020 | irrelevant | 2 | 0 | This is an in-vitro mechanistic study of CYP3A4/3A5 metabolism, not a pharmacokinetic study reporting disposition parameters like CL, V, or half-life for beclabuvir. |
+| PGx | Matsumoto_2020 | not_relevant | 2 | 0 | The study explicitly states that the CYP3A5*3 genetic variant had no significant effect on beclabuvir metabolism in vitro, reporting a null finding rather than a pharmacogenomic effect. |
+| popPK | Murray_2024 | irrelevant | 2 | 0 | The paper is a review article discussing biotransformation and transport mechanisms without reporting original quantitative pharmacokinetic parameter values for beclabuvir. |
+| popPK | Netzler_2017 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study reporting antiviral IC50 values for beclabuvir, not pharmacokinetic parameters such as clearance or volume. |
+| PGx | Netzler_2017 | not_relevant | 0 | 0 | The paper investigates the antiviral activity of beclabuvir against caliciviruses in vitro and does not contain any data on human pharmacokinetics, pharmacodynamics, or genetic variants affecting drug response. |
+| popPK | Osawa_2019 | relevant | 10 | 0 | The paper reports a population PK model for beclabuvir, but no specific numeric parameter values (e.g., CL, V, Q) are present in the provided evidence text. |
+| PGx | Osawa_2019 | not_relevant | 1 | 0 | The paper analyzes the effect of race (phenotype) on PK, but does not report any effect of specific gene variants or genotypes on PK or PD parameters. |
+| popPK | Osawa_2019_2 | irrelevant | 2 | 0 | This is a safety exposure-response analysis that references a prior PopPK model for beclabuvir but does not report original quantitative disposition parameters (CL, V, etc.) in this paper. |
+| PGx | Osawa_2019_2 | not_relevant | 0 | 0 | The paper reports an exposure-response analysis involving race and weight, but does not investigate specific gene variants or genotypes (pharmacogenomics). |
+| popPK | Ramirez_2016 | irrelevant | 0 | 0 | The paper is an in vitro antiviral resistance study that lists beclabuvir only as a comparator drug in dose-response assays, without reporting any pharmacokinetic parameters. |
+| PGx | Ramirez_2016 | not_relevant | 0 | 0 | The paper studies HCV genotype differences and viral resistance, not human pharmacogenomics of beclabuvir. |
+| popPK | Takaguchi_2019 | irrelevant | 0 | 0 | The paper reports virological efficacy (SVR rates) and safety, not pharmacokinetic parameters (CL, V, etc.) for beclabuvir. |
+| PGx | Takaguchi_2019 | not_relevant | 0 | 0 | The paper evaluates virological efficacy and safety of a DAA regimen, with no mention of gene variants affecting pharmacokinetics or pharmacodynamics. |
 | PGx | Tatum_2015 | not_relevant | 0 | 0 | No pharmacogenomic analyses or gene variant effects on beclabuvir PK/PD are reported; only efficacy and safety outcomes. |
-| PGx | Teraoka_2018 | not_relevant | 0 | 0 | Paper reports viral resistance variants affecting treatment efficacy, not a host gene variant effect on beclabuvir PK/PD parameters. |
-| popPK | Ueno_2019 | irrelevant | 3 | 1 | This is an exposure-response efficacy analysis (logistic SVR12 model), not a PK disposition model, and no numeric beclabuvir PK parameters appear in the evidence. |
-| PGx | Ueno_2019 | not_relevant | 0 | 0 | Covariates are viral resistance substitutions and clinical factors, not host gene variants affecting PK/PD of beclabuvir. |
-| PGx | Yang_2016 | not_relevant | 0 | 0 | Review of daclatasvir regimens; no pharmacogenomic effects on beclabuvir PK/PD reported. |
-| popPK | Zappulo_2020 | irrelevant | 2 | 0 | A narrative review discussing PK of the combination qualitatively, with no numeric disposition parameter values for beclabuvir present in the evidence. |
-| PGx | Zappulo_2020 | not_relevant | 2 | 3 | Review mentions IL28B genotype independence of SVR but reports no pharmacogenomic effect on beclabuvir PK/PD parameters. |
+| popPK | Teraoka_2018 | irrelevant | 0 | 0 | The study is a virological efficacy/efficacy trial assessing antiviral response and resistance, reporting no pharmacokinetic parameters such as clearance, volume, or half-life for beclabuvir. |
+| PGx | Teraoka_2018 | not_relevant | 0 | 0 | The study focuses on HCV resistance-associated variants (RAVs) and virological response (PD) to DAA therapy in mice and patients, but does not report a pharmacogenomic effect (host gene variant/genotype) on a PK or PD parameter of beclabuvir. |
+| popPK | Ueno_2019 | irrelevant | 0 | 0 | The study is an exposure-response efficacy analysis focused on SVR12 outcomes and covariate effects, not a pharmacokinetic study reporting quantitative disposition parameters like clearance or volume for beclabuvir. |
+| PGx | Ueno_2019 | not_relevant | 0 | 0 | The paper analyzes exposure-response relationships and demographic covariates but does not report pharmacogenomic effects on PK/PD parameters. |
+| popPK | Yang_2016 | irrelevant | 0 | 0 | The paper is a clinical review of daclatasvir regimens and does not report quantitative pharmacokinetic parameters for beclabuvir. |
+| PGx | Yang_2016 | not_relevant | 0 | 0 | The paper is a review of the efficacy and safety of daclatasvir regimens and does not report any pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters of beclabuvir. |
+| popPK | Zappulo_2020 | irrelevant | 1 | 0 | The paper is a narrative review discussing the fixed-dose combination and lacks specific quantitative population PK parameters or original numeric disposition values for beclabuvir. |
+| PGx | Zappulo_2020 | not_relevant | 0 | 0 | The paper is a review of efficacy and safety and does not report pharmacogenomic effects of genetic variants on beclabuvir PK/PD parameters. |
 
 
 </details>

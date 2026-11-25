@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because the unbound clearance unit mmol l -1 conflicts with the required volume flow dimension, and the binding capacity unit could not be converted to standard units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit mmol l -1 ([substance] / [length] ** 3) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Bjrnsson2011_reference" status="rejected" stale="false" population="adults with dental pain" measured-compound="naproxen" parameterization="apparent" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Björnsson MA, Simonsson US. Modelling of pain intensity and informative dropout
 
 ### Reviewer guidance
 
-**Rejected because the unbound clearance unit mmol l -1 conflicts with the required volume flow dimension, and the binding capacity unit could not be converted to standard units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit mmol l -1 ([substance] / [length] ** 3) vs [mass] / [length] ** 3.**
 
-The record assigns the unbound clearance a value of 515 with unit mmol l -1, a concentration measure that conflicts with the volume flow dimension required for clearance. The binding capacity parameter value of 643 uses a unit that the system could not translate to standard units, leaving the parameter without a valid numerical representation. A second reader also disagreed on several parameter assignments, including the absorption rate constant and lag time. Extracted — naproxen: CLu 515 l h -1, V/F 4.29e+03 l, MTT 1.77 h, Bmax 643 mmol l -1, Km 0.549 mmol l -1, Frel 59.7, fu 18.6, kabs 0.237 h -1, … (+1).
+A reported unit could not be converted (MTT, Bmax, Km and equation variable), so that value has no SI equivalent. Extracted — naproxen: CLu 515 l h -1, V/F 4.29e+03 l, MTT 1.77 h, Bmax 643 mmol l -1, Km 0.549 mmol l -1, Frel 59.7, fu 18.6, kabs 0.237 h -1, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has naproxen, naproxcinod, the second reading naproxcinod, naproxen; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

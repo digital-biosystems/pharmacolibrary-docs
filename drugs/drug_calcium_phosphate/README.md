@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 0.50).">human + animal</span> | [Perez_2020_CAC_volume](drugs/drug_calcium_phosphate/pd_Perez_2020_CAC_volume.md) | percent change from baseline to week 52 in coronary artery calcium (CAC) volume ← inhibition of calcium phosphate crystallization · direct linear effect | — | Perez MM et al., A novel assay to measure calcification…, Scientific reports (2020) | [10.1038/s41598-020-74592-x](https://doi.org/10.1038/s41598-020-74592-x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 0.50).">human + animal</span> | [Perez_2020_CAC_volume](drugs/drug_calcium_phosphate/pd_Perez_2020_CAC_volume.md) | percent change from baseline to week 52 in coronary artery calcium (CAC) volume ← inhibition of calcium phosphate crystallization · direct linear effect | — | Perez MM et al., A novel assay to measure calcification…, Scientific reports (2020) | [10.1038/s41598-020-74592-x](https://doi.org/10.1038/s41598-020-74592-x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 08:56 | 11:04 | 0/0/0 | 1/0/0 | 0/0/0 | 358,372/10,909 | ollama / qwen3.8:27b-mtp-q8_0 | 24 | 7/29 | 21/3 | 0 |
+| 2026-10-05 08:56 | 11:04 | 0/0/0 | 0/1/0 | 0/0/0 | 358,372/10,909 | ollama / qwen3.8:27b-mtp-q8_0 | 24 | 7/29 | 21/3 | 0 |
 
 ## Coverage
 

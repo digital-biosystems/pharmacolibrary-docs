@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because an interconversion link creates an orphan alfentanil compartment, and the abstract-only source means the 64.8 min half-life is not a fitted model parameter.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Richter1985_reference" status="rejected" stale="false" population="patients undergoing orthopedic surgery" measured-compound="etomidate" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -44,13 +44,13 @@ Richter O, Klatte A, Abel J, Freye E, Haag W, Hartung E. Pharmacokinetic data an
 
 ### Reviewer guidance
 
-**Record rejected because an interconversion link creates an orphan alfentanil compartment, and the abstract-only source means the 64.8 min half-life is not a fitted model parameter.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The structure defines an interconversion from etomidate to alfentanil, but alfentanil has no dose path or elimination route, making it an unreachable orphan compartment. The record was built from the paper’s abstract alone, so the reported 64.8 min terminal half-life stands in for a fitted model rather than representing a fully specified pharmacokinetic structure. A second reader disputed the presence of the alfentanil link, the identification of the dose compound as only etomidate rather than a combination, and the specific parameter classification for the elimination half-life. Extracted — etomidate: t1/2z 64.8 min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — etomidate: t1/2z 64.8 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has etomidate, the second reading alfentanil and etomidate; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

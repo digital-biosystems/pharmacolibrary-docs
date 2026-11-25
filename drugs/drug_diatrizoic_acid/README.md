@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 22:04 | 0:14 | 0/0/0 | 0/0/0 | 0/0/0 | 5,970/300 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 20:01 | 0:02 | 0/0/0 | 0/0/0 | 0/0/0 | 3,770/135 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -41,23 +41,26 @@ _not available_
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Baars_1984.pdf` | Baars HG et al., [Contrast medium elimination by hemodia…, Zeitschrift fur Urologie un… (1984) | popPK | 6 |  | [6495896](https://pubmed.ncbi.nlm.nih.gov/6495896) | Two-compartment PK analysis of diatrizoic acid during hemodialysis is reported, but only the elimination rate (80.7±4.7%) is given; full CL/V parameters are not in the evidence. |
 | `Venaille_1994.pdf` | Venaille TJ et al., Effects of different density gradient s…, Scandinavian journal of cli… (1994) | pd | 4 | [10.3109/00365519409088438](https://doi.org/10.3109/00365519409088438) | [7527931](https://www.ncbi.nlm.nih.gov/pubmed/7527931) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-10-07 22:04 UTC</sub>
+<sub>queue written 2026-11-23 20:01 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Baars_1984 | relevant | 6 | 4 | Two-compartment PK analysis of diatrizoic acid during hemodialysis is reported, but only the elimination rate (80.7±4.7%) is given; full CL/V parameters are not in the evidence. |
-| PGx | Gür_2026 | not_relevant | 0 | 0 | Paper studies immune responses in cystic fibrosis; no diatrizoic acid or pharmacogenomic PK/PD effects reported. |
-| popPK | Sunderman_1990 | irrelevant | 0 | 0 | The study concerns cisplatin/platinum kinetics, not diatrizoic acid; no diatrizoic acid parameters are reported. |
-| popPK | Venaille_1994 | irrelevant | 0 | 0 | Study of neutrophil separation techniques; diatrizoic acid (Hypaque) is only a reagent, no PK parameters reported. |
+| popPK | Baars_1984 | relevant | 8 | 3 | The study describes a two-compartment PK model for diatrizoic acid in humans and reports qualitative kinetic findings and a percentage elimination, but specific numeric parameter values (CL, V, Q) are not explicitly provided in the extracted text. |
+| PGx | Baars_1984 | not_relevant | 0 | 0 | The study examines PK parameters (elimination rate) but does not investigate any gene variant, genotype, or phenotype associated with the drug. |
+| popPK | Gür_2026 | irrelevant | 0 | 0 | The paper investigates immunological markers in pediatric cystic fibrosis and contains no pharmacokinetic data for diatrizoic acid. |
+| PGx | Gür_2026 | not_relevant | 0 | 0 | The paper investigates immune markers in cystic fibrosis patients and does not mention diatrizoic acid or any pharmacokinetic/pharmacodynamic parameters related to it. |
+| popPK | Sunderman_1990 | irrelevant | 0 | 0 | The paper studies cisplatin pharmacokinetics in patients, not diatrizoic acid. |
+| PGx | Sunderman_1990 | not_relevant | 0 | 0 | The paper studies cisplatin pharmacokinetics and does not mention diatrizoic acid or any gene variants. |
+| popPK | Venaille_1994 | irrelevant | 0 | 0 | The paper investigates neutrophil separation techniques and is unrelated to the pharmacokinetics of diatrizoic acid. |
+| PGx | Venaille_1994 | not_relevant | 0 | 0 | The paper investigates the effects of different blood separation techniques on neutrophil function and does not mention diatrizoic acid or pharmacogenomics. |
 
 
 </details>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The lumiracoxib model was rejected because the equilibrium dissociation constant has units of inverse time, conflicting with its required mass-volume dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit h -1 (1 / [time]) vs [mass] / [length] ** 3; Q306 unit s ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="lumiracoxib" model-id="Lumiracoxib_VsquezBahena20102_experiment_i_and_ii" status="rejected" stale="false" population="female Wistar rats with carrageenan-induced hyperalgesia" measured-compound="lumiracoxib" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Vásquez-Bahena DA, Salazar-Morales UE, Ortiz MI, Castañeda-Hernández G, Troc�
 
 ### Reviewer guidance
 
-**The lumiracoxib model was rejected because the equilibrium dissociation constant has units of inverse time, conflicting with its required mass-volume dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit h -1 (1 / [time]) vs [mass] / [length] ** 3; Q306 unit s ([time]) vs 1 / [time].**
 
-The dissociation constant for COX-2 binding is recorded as 0.89 h-1, but this parameter requires a mass-per-volume unit to represent binding affinity. Additionally, the transit time parameter is listed in seconds while defined as a first-order rate constant, creating a further dimensional inconsistency. These unit conflicts prevented the model from satisfying structural checks. Extracted — lumiracoxib: KD 0.89 h -1, ktr 13 s, V 39 L, kabs 92 h -1, Frel 18.
+A reported unit could not be converted (equation variable, KD and ktr), so that value has no SI equivalent. Extracted — lumiracoxib: KD 0.89 h -1, ktr 13 s, V 39 L, kabs 92 h -1, Frel 18.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lumiracoxib, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

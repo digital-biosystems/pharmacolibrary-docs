@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Intercompartmental clearance and absorption lag time were left at library defaults rather than extracted as estimates from the dabigatran etexilate study.
+> K12 use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="dabigatran etexilate" model-id="DabigatranEtexilate_Kong2025_reference" status="needs_review" stale="false" population="healthy volunteers and ESRD patients" measured-compound="dabigatran etexilate" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Kong W, Pan Y, Wu Y, Hu Y, Jiang Z, Tian X et al. Microdose Cocktail Study Revea
 
 ### Reviewer guidance
 
-**Intercompartmental clearance and absorption lag time were left at library defaults rather than extracted as estimates from the dabigatran etexilate study.**
+**K12 use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The model structure implies a central-to-peripheral transfer rate that was not reported in the paper and was instead assigned a placeholder value. Additionally, the absorption lag time was defaulted, meaning the onset of absorption was assumed rather than derived from the data. These missing parameters prevent the model from representing the specific pharmacokinetics of this population without unsupported assumptions. Extracted — dabigatran etexilate: kabs 7.53 1/h, CL/F 363 L/h, V1/F 835 L, V2/F 5.83e+03 L, Q/F 3.92e+03 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — dabigatran etexilate: kabs 7.53 1/h, CL/F 363 L/h, V1/F 835 L, V2/F 5.83e+03 L, Q/F 3.92e+03 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dabigatran etexilate, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -195,15 +195,16 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | note |
-|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=dabigatran etexilate) | central.C | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral | engineer template must match the scholar topology |
-| T6_deviations | fail |  | deviation_id: defaulted_parameters: not acceptable; deviation_id: apparent_assumption: not acceptable; defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=dabigatran etexilate) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (5 of 20 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (5 of 20 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

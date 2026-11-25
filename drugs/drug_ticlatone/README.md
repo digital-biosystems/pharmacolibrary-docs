@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Gruber_2020_VCL](drugs/drug_ticlatone/pd_Gruber_2020_VCL.md) | motility ← ticlatone · direct sigmoid Emax (Hill) effect | — | Gruber FS et al., A phenotypic screening platform utilisi…, eLife (2020) | [10.7554/elife.51739](https://doi.org/10.7554/elife.51739) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Gruber_2020_VCL](drugs/drug_ticlatone/pd_Gruber_2020_VCL.md) | motility ← ticlatone · direct sigmoid Emax (Hill) effect | — | Gruber FS et al., A phenotypic screening platform utilisi…, eLife (2020) | [10.7554/elife.51739](https://doi.org/10.7554/elife.51739) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

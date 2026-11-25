@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected due to unit mismatches for clearance, volume, and intercompartmental clearance, and abstract-only limitations.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q351 unit 1.h-1 (1 / [time]) vs [length] ** 3 / [time]; Q63 unit 1 (dimensionless) vs [length] ** 3; Q64 unit 1 (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="candesartan" model-id="Candesartan_Meineke1997_reference" status="rejected" stale="false" population="patients with mild to moderate essential hypertension" measured-compound="candesartan" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Meineke I, Feltkamp H, Högemann A, Gundert-Remy U. Pharmacokinetics and pharmac
 
 ### Reviewer guidance
 
-**The record was rejected due to unit mismatches for clearance, volume, and intercompartmental clearance, and abstract-only limitations.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q351 unit 1.h-1 (1 / [time]) vs [length] ** 3 / [time]; Q63 unit 1 (dimensionless) vs [length] ** 3; Q64 unit 1 (dimensionless) vs [length] ** 3.**
 
-Clearance (14.1 1.h-1), central volume (118), and intercompartmental clearance (15.4 1.h-1) exhibit dimension conflicts, failing to match their required physical units. The second reader found the extracted values unverified and misclassified the model parameterization as mechanistic rather than apparent. Since the data came only from the abstract, the summary statistics could not represent a fitted model. Extracted — candesartan: CLm/F 14.1 1.h-1, V1 118 1, V2 272 1, Q 15.4 1.h-1, t1/2β 29 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — candesartan: CLm/F 14.1 1.h-1, V1 118 1, V2 272 1, Q 15.4 1.h-1, t1/2β 29 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has candesartan cilexetil, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

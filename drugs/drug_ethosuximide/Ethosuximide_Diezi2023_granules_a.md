@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ethosuximide's simulated time to peak concentration is 1.18 hours, failing to match the paper's reported 0.63 hours.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 0.63, model 1.18); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ethosuximide" model-id="Ethosuximide_Diezi2023_granules_a" status="needs_review" stale="false" population="healthy adults" measured-compound="ethosuximide" parameterization="apparent" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Diezi L, Dao K, Jullien V, Roussel-Maupetit C, Burton I, André P et al. An inno
 
 ### Reviewer guidance
 
-**Ethosuximide's simulated time to peak concentration is 1.18 hours, failing to match the paper's reported 0.63 hours.**
+**The model does not reproduce the paper's time of the peak (tmax) (paper 0.63, model 1.18); x1_cross_check.**
 
-The model's simulated tmax differs from the paper's reported values by ratios up to 2.3664, indicating a mismatch in the absorption profile. A unit for one parameter could not be converted to SI, and the absorption lag time was left at library defaults. A second reader disputed the extracted values for total clearance, absorption rate constant, and intercompartmental clearance. Extracted — ethosuximide: Cmax 18.2 μg/ml, AUClast 1.34e+03 μg·h/ml, AUC∞ 1.35e+03 μg·h/ml, t1/2z 62.3 h, CLnorm/F 7.6 ml/h/kg, Vnorm/F 646 ml/kg, CL 0.57 L/h, Q 10.2 L/h, … (+3).
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. A reported unit could not be converted (Cmax, AUClast and AUC∞), so that value has no SI equivalent. Extracted — ethosuximide: Cmax 18.2 μg/ml, AUClast 1.34e+03 μg·h/ml, AUC∞ 1.35e+03 μg·h/ml, t1/2z 62.3 h, CLnorm/F 7.6 ml/h/kg, Vnorm/F 646 ml/kg, CL 0.57 L/h, Q 10.2 L/h, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has 0.57, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -181,13 +181,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.588, 0 of 1 reader(s) agree | 0.588 | cross-check disputed by a second reader: verdict disputed, agreement 0.588, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.588 (10 of 17 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.588 | cross-check contradicted by a second reader: verdict disputed; agreement 0.588 (10 of 17 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 93.7 | 0.01168 |  | unresolved concentration unit (exp '90% Confidence Interval (CI): 76.3–115.1', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 87.6 | 0.01168 |  | unresolved concentration unit (exp '90% CI: 81.6–94.0', sim 'kg/m3') |
-| T1_tmax | reference | fail | 0.63 | 1.183 | 1.878 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.75 | 1.183 | 1.578 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.5 | 1.183 | 2.366 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 4 | 1.183 | 0.2958 | h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.63 | 1.183 | 1.878 | reported 0.63 h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.75 | 1.183 | 1.578 | reported 0.75 h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.5 | 1.183 | 2.366 | reported 0.5 h→SI vs simulated h |
+| T1_tmax | reference | fail | 4 | 1.183 | 0.2958 | reported 4.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

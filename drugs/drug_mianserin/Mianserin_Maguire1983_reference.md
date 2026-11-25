@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Mianserin’s apparent volume of distribution, V/F 20.2 1/kg, has units inconsistent with a volume, contributing to rejection of the record.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q76 unit 1/kg (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="mianserin" model-id="Mianserin_Maguire1983_reference" status="rejected" stale="false" population="elderly depressed patients" measured-compound="mianserin" parameterization="apparent" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Maguire K, McIntyre I, Norman T, Burrows GD. The pharmacokinetics of mianserin i
 
 ## Population and dosing
 
-**Population:** elderly depressed patients · condition depression · age group elderly · n = 8.
+**Population:** elderly depressed patients · condition depression · age group elderly.
 
 ## Model
 
@@ -41,7 +41,7 @@ Maguire K, McIntyre I, Norman T, Burrows GD. The pharmacokinetics of mianserin i
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.917). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,23 +51,23 @@ Maguire K, McIntyre I, Norman T, Burrows GD. The pharmacokinetics of mianserin i
 
 ### Reviewer guidance
 
-**Mianserin’s apparent volume of distribution, V/F 20.2 1/kg, has units inconsistent with a volume, contributing to rejection of the record.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q76 unit 1/kg (dimensionless) vs [length] ** 3.**
 
-The reported V/F is an apparent volume of distribution, but its 1/kg unit is dimensionally inconsistent with volume. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader also disagreed about the identification of the elimination half-life parameter. Extracted — mianserin: t1/2ka 0.8 h, Cmax 117 micrograms/l, tmax 2.2 h, t1/2α 3.4 h, t1/2z 33 h, V/F 20.2 1/kg, CL/F 0.49 l/kg/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mianserin: t1/2ka 0.8 h, Cmax 117 micrograms/l, tmax 2.2 h, t1/2α 3.4 h, t1/2z 33 h, V/F 20.2 1/kg, CL/F 0.49 l/kg/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[elimination half-life].parameter_id`: this record has Q57, the second reading Q60. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| absorption half-life | `Q95` · t1/2ka | 0.8 | h | 2880 | s | h | llm_corrected (0.6) | Maguire_1983:abstract |
-| peak concentration | `Q32` · Cmax | 117 | micrograms/l |  |  | µg/l | exact (1) | Maguire_1983:abstract |
+| absorption half-life | `Q95` · t1/2ka | 0.8 | h | 2880 | s | h | half_life_rule (0.95) | Maguire_1983:abstract |
+| peak concentration | `Q32` · Cmax | 117 | micrograms/l | 0.000117 | kg/m3 | µg/l | exact (1) | Maguire_1983:abstract |
 | peak time | `Q56` · tmax | 2.2 | h | 7920 | s | h | exact (1) | Maguire_1983:abstract |
-| distribution half-life | `Q59` · t1/2α | 3.4 | h | 1.224e+04 | s | h | llm (0.6) | Maguire_1983:abstract |
-| elimination half-life | `Q57` · t1/2z | 33 | h | 1.188e+05 | s | h | llm (0.6) | Maguire_1983:abstract |
+| distribution half-life | `Q59` · t1/2α | 3.4 | h | 1.224e+04 | s | h | half_life_rule (0.95) | Maguire_1983:abstract |
+| elimination half-life | `Q57` · t1/2z | 33 | h | 1.188e+05 | s | h | half_life_rule (0.95) | Maguire_1983:abstract |
 | apparent volume of distribution | `Q76` · V/F | 20.2 | 1/kg |  |  | 1/kg | exact (1) | Maguire_1983:abstract |
 | oral clearance | `Q27` · CL/F | 0.49 | l/kg/h | 9.528e-06 | m3/s | l/(h·kg) | exact (1) | Maguire_1983:abstract |
 
@@ -85,28 +85,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Maguire_1983_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.917 (11/12 fields) | 1 |
+| `gpt-oss-120b` | confirmed | 1.0 (11/11 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[elimination half-life].parameter_id` | Q57 | Q60 | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -154,4 +146,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmianserin%5D%20Mianserin_Maguire1983_reference&body=Drug%3A%20mianserin%0ARecord%3A%20Mianserin_Maguire1983_reference%0APaper%3A%20Maguire_1983%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mianserin/Mianserin_Maguire1983_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:36 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:08 UTC</sub>

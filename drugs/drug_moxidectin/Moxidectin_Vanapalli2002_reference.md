@@ -17,7 +17,7 @@ Vanapalli SR, Hung YP, Fleckenstein L, Dzimianski MT, McCall JW. Pharmacokinetic
 
 ## Population and dosing
 
-**Population:** beagle dogs infected with Brugia pahangi · condition filarial infection (Brugia pahangi) · age group adult · n = 36.
+**Population:** beagle dogs infected with Brugia pahangi · condition filarial infection.
 
 > **Species: dog.** This record comes from an animal study (dog), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -39,7 +39,7 @@ Vanapalli SR, Hung YP, Fleckenstein L, Dzimianski MT, McCall JW. Pharmacokinetic
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.875). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +53,7 @@ Vanapalli SR, Hung YP, Fleckenstein L, Dzimianski MT, McCall JW. Pharmacokinetic
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — moxidectin: t1/2z 458 h, t1/2ka 0.6 h, tmax 2.75 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc (0-last determination) values for: this record has none, the second reading 250. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,8 +61,8 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| mean terminal half-life | `Q57` · t1/2z | 458 | h | 1.649e+06 | s | h | llm (0.6) | Vanapalli_2002:abstract |
-| mean absorption half-life | `Q95` · t1/2ka | 0.6 | h | 2160 | s | h | llm_corrected (0.6) | Vanapalli_2002:abstract |
+| mean terminal half-life | `Q57` · t1/2z | 458 | h | 1.649e+06 | s | h | half_life_rule (0.95) | Vanapalli_2002:abstract |
+| mean absorption half-life | `Q95` · t1/2ka | 0.6 | h | 2160 | s | h | half_life_rule (0.95) | Vanapalli_2002:abstract |
 | T(max) | `Q56` · tmax | 2.75 | h | 9900 | s | h | llm (0.6) | Vanapalli_2002:abstract |
 
 <details class="legend">
@@ -73,33 +73,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'weight effect on Vc'
-- dropped value-less row: 'AUC (0-last determination) values for 250'
-- dropped value-less row: 'AUC (0-last determination) values for 1000'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=moxidectin
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Vanapalli_2002_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Vanapalli_2002_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[auc (0-last determination) values for]` |  | 250 | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -151,4 +140,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmoxidectin%5D%20Moxidectin_Vanapalli2002_reference&body=Drug%3A%20moxidectin%0ARecord%3A%20Moxidectin_Vanapalli2002_reference%0APaper%3A%20Vanapalli_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_moxidectin/Moxidectin_Vanapalli2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 10:54 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:05 UTC</sub>

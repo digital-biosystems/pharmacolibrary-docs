@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> The record is disputed due to a second reader's disagreement on the dose compound identification and an unextracted urine-to-plasma ratio value.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="pridinol" model-id="Pridinol_Minamijima2026_reference" status="needs_review" stale="false" population="Thoroughbred horses" measured-compound="pridinol" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Minamijima Y, Kuroda T, Okano A, Wakuno A, Yuasa R, Ishikawa Y et al. Plasma and
 
 ### Reviewer guidance
 
-**The record is disputed due to a second reader's disagreement on the dose compound identification and an unextracted urine-to-plasma ratio value.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagreed with the identified dose compound, stating pridinol mesylate instead of pridinol. They also identified a steady-state urine-to-plasma ratio of 0.211, which is recorded as null. Additionally, the model used Vss as the distribution volume, failing to capture the early distribution phase. Extracted — pridinol: CL 1.27 L/h/kg, Vss 2.07 L/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pridinol: CL 1.27 L/h/kg, Vss 2.07 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pridinol, the second reading pridinol mesylate; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | cross-check disputed by a second reader: verdict disputed, agreement 0.714, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.714 (5 of 7 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | cross-check contradicted by a second reader: verdict disputed; agreement 0.714 (5 of 7 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

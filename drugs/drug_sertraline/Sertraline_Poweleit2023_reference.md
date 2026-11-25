@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;sertraline&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/&quot;},{&quot;label&quot;:&quot;Poweleit_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sertraline_Poweleit2023_reference&quot;,&quot;label&quot;:&quot;Poweleit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Poweleit2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sertraline_Xia2025_reference&quot;,&quot;label&quot;:&quot;Xia_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Xia2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kreilgaard_2008_5_HTP_score&quot;,&quot;label&quot;:&quot;Kreilgaard_2008 \u00b7 5-HTP score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/pd_Kreilgaard_2008_5_HTP_score.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kreilgaard_2008_SERT_occ&quot;,&quot;label&quot;:&quot;Kreilgaard_2008 \u00b7 SERT occ&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/pd_Kreilgaard_2008_SERT_occ.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sertraline_Poweleit2023_reference&quot;,&quot;label&quot;:&quot;Poweleit_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Poweleit2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sertraline_Xia2025_reference&quot;,&quot;label&quot;:&quot;Xia_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Xia2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sertraline_Zhang2024_reference&quot;,&quot;label&quot;:&quot;Zhang_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/Sertraline_Zhang2024_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kreilgaard_2008_5_HTP_score&quot;,&quot;label&quot;:&quot;Kreilgaard_2008 \u00b7 5-HTP score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/pd_Kreilgaard_2008_5_HTP_score.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Kreilgaard_2008_SERT_occ&quot;,&quot;label&quot;:&quot;Kreilgaard_2008 \u00b7 SERT occ&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sertraline/pd_Kreilgaard_2008_SERT_occ.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # sertraline — `Sertraline_Poweleit2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The sertraline record is abstract-only, using library defaults for absorption rate and failing to simulate defined covariate effects.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="sertraline" model-id="Sertraline_Poweleit2023_reference" status="needs_review" stale="false" population="psychiatrically hospitalized pediatric patients aged 5-18 years" measured-compound="sertraline" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="sertraline" model-id="Sertraline_Poweleit2023_reference" status="needs_review" stale="false" population="pediatric psychiatric inpatients" measured-compound="sertraline" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Poweleit EA, Taylor ZL, Mizuno T, Vaughn SE, Desta Z, Strawn JR et al. Escitalopram and Sertraline Population Pharmacokinetic Analysis in Pediatric Patients. Clinical pharmacokinetics 62(11):1621–1637 (2023).
@@ -17,13 +17,13 @@ Poweleit EA, Taylor ZL, Mizuno T, Vaughn SE, Desta Z, Strawn JR et al. Escitalop
 
 ## Population and dosing
 
-**Population:** psychiatrically hospitalized pediatric patients aged 5-18 years · condition anxiety and depressive disorders · age group mixed · n = 255.
+**Population:** pediatric psychiatric inpatients · condition psychiatric · age group mixed · n = 255.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 2 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference.svg" alt="Sertraline_Poweleit2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -33,16 +33,13 @@ Poweleit EA, Taylor ZL, Mizuno T, Vaughn SE, Desta Z, Strawn JR et al. Escitalop
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL/F (escitalopram) | CL/F | 14.2 | L/h |
-| V/F (escitalopram) | V/F | 428 | L |
-
-## Caveats
-
-- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+| CL/F | CL/F | 14.2 | L/h/1.73 m2 |
+| V/F | V/F | 428 | L/1.73 m2 |
+| Ctrough | Ctrough | 151.1 | ng/mL |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.125). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.75). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,20 +49,21 @@ Poweleit EA, Taylor ZL, Mizuno T, Vaughn SE, Desta Z, Strawn JR et al. Escitalop
 
 ### Reviewer guidance
 
-**The sertraline record is abstract-only, using library defaults for absorption rate and failing to simulate defined covariate effects.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lacks explicit estimates for the absorption rate and lag time, relying on library placeholders instead of paper-supported values. Covariate scenarios were defined but not exercised in simulations, leaving only the reference individual profile. A second reader disagreed on the identification of the dosed compound and parameter assignment. Extracted — sertraline: CL/F 14.2 L/h, V/F 428 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sertraline: CL/F 14.2 L/h/1.73 m2, V/F 428 L/1.73 m2, Ctrough 151 ng/mL.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sertraline, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ctrough: this record has 151.1, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL/F (escitalopram) | `Q27` · CL/F | 14.2 | L/h | 3.944e-06 | m3/s | L/h | exact (1) | Poweleit_2023:abstract |
-| V/F (escitalopram) | `Q76` · V/F | 428 | L | 0.428 | m3 | L | exact (1) | Poweleit_2023:abstract |
+| CL/F | `Q27` · CL/F | 14.2 | L/h/1.73 m2 | 6.824e-06 | m3/s | l/(h·1.73m2) | exact (1) | Poweleit_2023:abstract, Poweleit_2023:abstract |
+| V/F | `Q76` · V/F | 428 | L/1.73 m2 | 0.7404 | m3 | l/1.73m2 | exact (1) | Poweleit_2023:abstract, Poweleit_2023:abstract |
+| Ctrough | `Q37` · Ctrough | 151.1 | ng/mL | 0.0001511 | kg/m3 | ng/ml | exact (1) | Poweleit_2023:abstract, Poweleit_2023:abstract, Poweleit_2023:abstract, Poweleit_2023:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,54 +79,27 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'L/h/1.73 m2' (CL/F)
-- unit_dimension_unknown: 'L/1.73 m2' (V/F)
-- dropped duplicate Q27 ('CL/F (sertraline)', value 124) — already have one for this compound
-- dropped duplicate Q76 ('V/F (sertraline)', value 4320) — already have one for this compound
-- covariate cyp2c19 for Ctrough from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
-- covariate normal metabolizer for Ctrough from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
-- covariate normal metabolizer for AUC ratio from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
-- dropped value-less row: 'p (escitalopram)' (captured trailing unit 'escitalopram' for child rows)
-- covariate ultrarapid metabolizer for Ctrough from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
-- covariate ultrarapid metabolizer for AUC ratio from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
-- dropped value-less row: 'p (sertraline)' (captured trailing unit 'sertraline' for child rows)
-- dropped value-less row: 'dose reduction (escitalopram, poor metabolizers)'
-- dropped value-less row: 'dose reduction (sertraline, poor metabolizers)'
-- dropped unlinked row (NIL): 'escitalopram cohort samples' — extend the ontology if this is a real PK parameter (source ['Poweleit_2023:abstract'])
-- dropped unlinked row (NIL): 'escitalopram cohort patients' — extend the ontology if this is a real PK parameter (source ['Poweleit_2023:abstract'])
-- dropped unlinked row (NIL): 'sertraline cohort samples' — extend the ontology if this is a real PK parameter (source ['Poweleit_2023:abstract'])
-- dropped unlinked row (NIL): 'sertraline cohort patients' — extend the ontology if this is a real PK parameter (source ['Poweleit_2023:abstract'])
-- dropped value-less row: 'age'
-- implicit units: 'CL/F (escitalopram)' → L/h (from the popPK convention: 'No unit stated in text or footnotes; CL/F for oral population PK conventionally in L/h, consistent with 14.2.')
-- implicit units: 'V/F (escitalopram)' → L (from the popPK convention: 'No unit stated; V/F conventionally in L, consistent with 428.')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=sertraline
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Poweleit_2023_metadata.yaml (19 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Poweleit_2023_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.125 (1/8 fields) | 7 |
+| `gpt-oss-120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['none', '', '']] | mismatch |
-| `gpt-oss-120b` | `parameters[cl/f]` | 14.2 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` |  | 14.2 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f]` | 428 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f]` |  | 428 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | sertraline | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | sertraline | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[ctrough]` | 151.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fold increase escitalopram poor vs normal]` |  | 3.98 | only_one_extracted |
 
 </details>
 
@@ -142,28 +113,29 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Poweleit_2023:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Poweleit_2023:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Poweleit_2023:abstract', 'Poweleit_2023:abstract'] |
+| C5_dimension_Q37 | pass | [mass] / [length] ** 3 |  | ['Poweleit_2023:abstract', 'Poweleit_2023:abstract', 'Poweleit_2023:abstract', 'Poweleit_2023:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Poweleit_2023:abstract', 'Poweleit_2023:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 14.2 L/h | ['Poweleit_2023:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 428 L | ['Poweleit_2023:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 24.6 L/h | ['Poweleit_2023:abstract', 'Poweleit_2023:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 740 L | ['Poweleit_2023:abstract', 'Poweleit_2023:abstract'] |
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable |  | pass | C_central (measured=sertraline) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
-| T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.125, 0 of 1 reader(s) agree | 0.125 | cross-check disputed by a second reader: verdict disputed, agreement 0.125, 0 of 1 reader(s) agree |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=sertraline) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -179,7 +151,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference_modelica.zip" download>Sertraline_Poweleit2023_reference_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference_modelica.zip" download>Sertraline_Poweleit2023_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference_fmi.zip" download>Sertraline_Poweleit2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference_matlab.zip" download>Sertraline_Poweleit2023_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sertraline/Sertraline_Poweleit2023_reference/Sertraline_Poweleit2023_reference_matlab_simbio.zip" download>Sertraline_Poweleit2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
@@ -202,8 +174,8 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 5e-05 | kg |
-| input | model | `Cl` | 3.944e-06 | m3/s |
-| input | model | `VdPerKg` | 0.006114 | m3/kg |
+| input | model | `Cl` | 6.824e-06 | m3/s |
+| input | model | `VdPerKg` | 0.01058 | m3/kg |
 | input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
@@ -243,4 +215,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsertraline%5D%20Sertraline_Poweleit2023_reference&body=Drug%3A%20sertraline%0ARecord%3A%20Sertraline_Poweleit2023_reference%0APaper%3A%20Poweleit_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sertraline/Sertraline_Poweleit2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:44 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:56 UTC</sub>

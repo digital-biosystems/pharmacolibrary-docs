@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The review of the tolvaptan record was held back because a second reader disputed the extraction of the terminal half-life and related parameter values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Plosker2010_reference" status="needs_review" stale="false" population="patients with hypervolemic or euvolemic hyponatremia" measured-compound="tolvaptan" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Plosker GL. Tolvaptan. Drugs 70(4):443–454 (2010).
 
 ### Reviewer guidance
 
-**The review of the tolvaptan record was held back because a second reader disputed the extraction of the terminal half-life and related parameter values.**
+**cross_check_disputed; x1_cross_check.**
 
-The record extracts a terminal half-life and clearance of approximately 12 hours and 4.0 mL/min/kg from the prescribing information. A second reader disagreed with the specific numerical values derived from the text, such as 12.3 hours and 1460, assigning null values instead. This resulted in a low agreement score of 0.211 for the cross-check, leading to the record being flagged for review rather than publication. Extracted — tolvaptan: CL 4 mL/min/kg, V/F 3 L/kg.
+Extracted — tolvaptan: CL 4 mL/min/kg, V/F 3 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q1: this record has 0.78, the second reading none; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.211, 0 of 1 reader(s) agree | 0.211 | cross-check disputed by a second reader: verdict disputed, agreement 0.211, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.368 (7 of 19 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.368 | cross-check contradicted by a second reader: verdict disputed; agreement 0.368 (7 of 19 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The record was quarantined because no value was extracted for ibuprofen's elimination clearance, leaving it at a library placeholder.
+> No value for ibuprofen's elimination clearance; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Knihinicki1990_s_ibuprofen" status="model_quarantined" stale="false" population="rats" measured-compound="ibuprofen" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -52,13 +52,13 @@ Knihinicki RD, Day RO, Graham GG, Williams KM. Stereoselective disposition of ib
 
 ### Reviewer guidance
 
-**The record was quarantined because no value was extracted for ibuprofen's elimination clearance, leaving it at a library placeholder.**
+**No value for ibuprofen's elimination clearance; t6_deviations.**
 
-Although a clearance value of 7.7 ml/min/kg is listed for (S)-ibuprofen, the model builder reported that the central elimination clearance was left at defaults without an explicit estimate. A second reader also disputed the identification of the dose compound and primary analyte, both of which were recorded as ibuprofen in this record. Extracted — (S)-ibuprofen: CL 7.7 ml/min/kg, V 0.94 l/kg; ibuprofen: kabs 0.656 hour−1, tlag 0.1 hours.
+The model was built, but ibuprofen's elimination clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — (S)-ibuprofen: CL 7.7 ml/min/kg, V 0.94 l/kg; ibuprofen: kabs 0.656 hour−1, tlag 0.1 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ibuprofen, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

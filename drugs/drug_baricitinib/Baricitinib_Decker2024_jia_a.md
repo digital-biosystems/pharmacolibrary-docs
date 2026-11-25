@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Baricitinib clearance and volume parameters were rejected due to a unit error listing them in years, and the model contained an unreachable compartment.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit years ([time]) vs [length] ** 3 / [time]; Q76 unit years ([time]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="baricitinib" model-id="Baricitinib_Decker2024_jia_a" status="rejected" stale="false" population="pediatric patients with juvenile idiopathic arthritis" measured-compound="baricitinib" parameterization="apparent" topology="3C"></div>
 
@@ -54,13 +54,13 @@ Decker RL, Steven Ernest C, Radtke DB, Wang R, Araújo J, Keller SY et al. A pop
 
 ### Reviewer guidance
 
-**Baricitinib clearance and volume parameters were rejected due to a unit error listing them in years, and the model contained an unreachable compartment.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit years ([time]) vs [length] ** 3 / [time]; Q76 unit years ([time]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-Total clearance and bioavailability-adjusted volume of distribution are recorded with the unit 'years', which is dimensionally incorrect for these parameters. This unit error prevented conversion to SI values, causing the structural review to fail. Additionally, the model structure contained an unreachable compartment, and no value was extracted for the intercompartmental clearance. Extracted — baricitinib: CL/F 4.87 years, CLR 3.12 L/h, CLNR 1.68 L/h, V/F 27.5 years, V1/F 21.7 L, V2/F 4.85 L, t1/2z 6.39 h, AUCSS 410 ng*h/mL, … (+1).
+A reported unit could not be converted (CL/F, V/F, AUCSS and Cmax), so that value has no SI equivalent. Extracted — baricitinib: CL/F 4.87 years, CLR 3.12 L/h, CLNR 1.68 L/h, V/F 27.5 years, V1/F 21.7 L, V2/F 4.85 L, t1/2z 6.39 h, AUCSS 410 ng*h/mL, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dose: this record has none, the second reading 2; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

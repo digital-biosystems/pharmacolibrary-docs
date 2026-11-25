@@ -43,7 +43,7 @@ Hydrocortisone is a glucocorticoid steroid hormone used to treat inflammatory co
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Hamitouche_2017_urinary_sodium_potassium_ratio](drugs/drug_hydrocortisone/pd_Hamitouche_2017_urinary_sodium_potassium_ratio.md) | urinary sodium/potassium ratio ← hydrocortisone · indirect response — drug inhibits the loss of urinary sodium/potassium ratio | — | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Hamitouche_2017_urinary_sodium_potassium_ratio](drugs/drug_hydrocortisone/pd_Hamitouche_2017_urinary_sodium_potassium_ratio.md) | urinary sodium/potassium ratio ← hydrocortisone · indirect response — drug inhibits the loss of urinary sodium/potassium ratio | — | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

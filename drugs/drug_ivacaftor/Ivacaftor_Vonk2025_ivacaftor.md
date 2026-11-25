@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for ivacaftor in the oral combination product was rejected because clearance and volume parameters were misassigned to elexacaftor.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ivacaftor" model-id="Ivacaftor_Vonk2025_ivacaftor" status="rejected" stale="false" population="children with cystic fibrosis" measured-compound="ivacaftor" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Vonk SEM, Terheggen-Lagro SWJ, Haarman EG, Hashimoto S, Maitland-van der Zee AH,
 
 ### Reviewer guidance
 
-**The record for ivacaftor in the oral combination product was rejected because clearance and volume parameters were misassigned to elexacaftor.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The model contains a parameter labeled 'apparent clearance (CL elx /F)' with a value of 1.76 L/h/70 kg, which is physically implausible for ivacaftor. A second reader disagreed that this value should be assigned to ivacaftor, noting it likely belongs to elexacaftor. Additionally, the model lacks defined metabolic links for the co-administered elexacaftor and tezacaftor, and ivacaftor’s clearance was reported as null despite having a recorded value. Extracted — ivacaftor: AUC 208 mg*h/L, AUC 11.6 mg*h/L, V 1.76 L/h, CL/F 1.76 L/h/70 kg, V/F 59 L/ 70 kg.
+A reported unit could not be converted (AUC and AUC), so that value has no SI equivalent. Extracted — ivacaftor: AUC 208 mg*h/L, AUC 11.6 mg*h/L, V 1.76 L/h, CL/F 1.76 L/h/70 kg, V/F 59 L/ 70 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading elexacaftor → elexacaftor metabolite (metabolism); tezacaftor → tezacaftor metabolite (metabolism); ivacaftor → ivacaftor metabolite (metabolism); it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

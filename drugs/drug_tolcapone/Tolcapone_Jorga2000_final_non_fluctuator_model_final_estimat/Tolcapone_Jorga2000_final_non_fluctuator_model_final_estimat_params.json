@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "Tolcapone_Jorga2000_final_non_fluctuator_model_final_estimat",
+ "molar_masses": {
+  "central.C": 0.2732408
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  50.0,
+  200.0,
+  400.0
+ ],
+ "parameters": {
+  "Cl": 1.25e-06,
+  "F": 0.9,
+  "MM": 0.2732408,
+  "Tlag": 1440.0,
+  "VdPerKg": 5e-05,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 5e-05,
+  "k12": 0.0006111111111111111,
+  "k21": 8.912037037037037e-05,
+  "ka": 0.00019444444444444443,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 23028.45691382766
+ },
+ "reference_peaks": {
+  "central.C": 9.683367842712417e-05
+ },
+ "stop_time": 86400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

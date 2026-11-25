@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Clearance and volume of distribution were extracted as percentages instead of their pharmacokinetic units, rendering the model structurally invalid.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit % (dimensionless) vs [length] ** 3 / [time]; Q61 unit % (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="pretomanid" model-id="Pretomanid_Lyons2018_reference" status="rejected" stale="false" population="adults with pulmonary tuberculosis" measured-compound="pretomanid" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Lyons MA. Modeling and Simulation of Pretomanid Pharmacokinetics in Pulmonary Tu
 
 ### Reviewer guidance
 
-**Clearance and volume of distribution were extracted as percentages instead of their pharmacokinetic units, rendering the model structurally invalid.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit % (dimensionless) vs [length] ** 3 / [time]; Q61 unit % (dimensionless) vs [length] ** 3.**
 
-The record lists clearance as 32% and volume of distribution as 17%, which are dimensionless values rather than rates or volumes. The second reader identifies 4.8 as the clearance value, suggesting the allometric constant was misassigned to the central elimination parameter. Because the data came from the abstract alone, these summary statistics were used as if they were fitted model parameters. Extracted — pretomanid: allometric_exponent 4.8 liters/h, CL 32 %, V 17 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — pretomanid: allometric_exponent 4.8 liters/h, CL 32 %, V 17 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clearance].value`: this record has 32, the second reading 4.8; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

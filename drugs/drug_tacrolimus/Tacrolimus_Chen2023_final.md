@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Cross-check disagreement on multiple parameters, including V/F (1410 vs 16.2 L) and CL/F (15.7 vs 9.3 L/h), plus unexercised covariates.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="tacrolimus" model-id="Tacrolimus_Chen2023_final" status="needs_review" stale="false" population="adults with myasthenia gravis" measured-compound="tacrolimus" parameterization="apparent" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Chen D, Yao Q, Chen W, Yin J, Hou S, Tian X et al. Population PK/PD model of tac
 
 ### Reviewer guidance
 
-**Cross-check disagreement on multiple parameters, including V/F (1410 vs 16.2 L) and CL/F (15.7 vs 9.3 L/h), plus unexercised covariates.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-A second reader disputed the record, disagreeing with values for V/F (1410 L vs 16.2 L), CL/F (15.7 L/h vs 9.3 L/h), and the CYP3A5 covariate effect (2.05 vs 14.1). Several Osierman class covariate values also differed between readers, such as 4.08 versus 27.0. The record defines covariate effects, but only the reference individual was simulated, leaving the covariate scenarios unexercised. Extracted — tacrolimus: CL/F 15.7 L/h, V/F 1.41e+03 L, kabs 0.502 h−1, tlag 0.346 h.
+The base model was simulated, not the covariate effects the record defines. Extracted — tacrolimus: CL/F 15.7 L/h, V/F 1.41e+03 L, kabs 0.502 h−1, tlag 0.346 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].value`: this record has 15.7, the second reading 9.3; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -162,7 +162,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.5 (7 of 14 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (7 of 14 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

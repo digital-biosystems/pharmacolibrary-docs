@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Azithromycin clearance and volume of distribution lacked extracted values, causing the model to be quarantined with placeholder defaults.
+> No value for azithromycin's clearance and volume of distribution; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Methaneethorn2025_reference" status="model_quarantined" stale="false" population="mixed (adults, children, preterm newborns, pregnant women)" measured-compound="azithromycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -45,13 +45,13 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
-**Azithromycin clearance and volume of distribution lacked extracted values, causing the model to be quarantined with placeholder defaults.**
+**No value for azithromycin's clearance and volume of distribution; t6_deviations.**
 
-The record lists clearance and central volume as parameters but provides no numerical estimates. The model builder therefore applied default values for these key pharmacokinetic variables. A second reader also flagged the parameter section from a cited reference as null. Consequently, the model was held back rather than published with unverified placeholder numbers. No parameter values were extracted.
+The model was built, but azithromycin's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. No parameter values were extracted.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of zheng et al 2018 [38]: this record has none, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 
@@ -192,7 +192,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.909, 0 of 1 reader(s) agree | 0.909 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.909 (10 of 11 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.909 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

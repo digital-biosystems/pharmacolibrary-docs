@@ -30,7 +30,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 18:54 | 0:33 | 0/0/0 | 0/0/0 | 0/0/0 | 8,833/257 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 23:23 | 0:03 | 0/0/0 | 0/0/0 | 0/0/0 | 3,811/137 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
@@ -47,13 +47,20 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 |---|---|---|---|---|---|---|
 | `Blaschke_1986.pdf` | Blaschke G et al., [Racemation of the benzodiazepines cama…, Arzneimittel-Forschung (1986) | pd | 4 |  | [2874815](https://www.ncbi.nlm.nih.gov/pubmed/2874815) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-10-06 18:54 UTC</sub>
+<sub>queue written 2026-11-23 23:23 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Dinis-Oliveira_2017 | irrelevant | 1 | 0 | A review of oxazepam metabolism mentioning ketazolam only as a parent drug, with no quantitative PK parameters for ketazolam. |
+| popPK | Blaschke_1986 | irrelevant | 0 | 0 | The study focuses on in-vitro receptor binding and enantiomer resolution, not pharmacokinetic parameters. |
+| PGx | Blaschke_1986 | not_relevant | 0 | 0 | The paper studies stereoselective receptor binding of ketazolam enantiomers, not the effect of a gene variant/genotype on its PK/PD parameters. |
+| popPK | Dinis-Oliveira_2017 | irrelevant | 1 | 0 | The paper is a review focused on oxazepam metabolism, mentioning ketazolam only as a precursor drug without providing original quantitative pharmacokinetic parameters for ketazolam itself. |
+| PGx | Dinis-Oliveira_2017 | not_relevant | 0 | 0 | The paper reviews the metabolic profile of oxazepam and mentions ketazolam only as a precursor, without reporting any pharmacogenomic effects (gene variants) on PK/PD parameters. |
+| popPK | Fabre_1976 | irrelevant | 0 | 0 | The paper is a clinical efficacy study for anxiety that reports therapeutic dosing but contains no quantitative pharmacokinetic parameters such as clearance, volume, or half-life for ketazolam. |
+| PGx | Fabre_1976 | not_relevant | 0 | 0 | The paper reports a standard clinical efficacy study of ketazolam and contains no information regarding genetic variants, genotypes, or pharmacogenomic effects on PK/PD parameters. |
+| popPK | Fabre_1981 | irrelevant | 0 | 0 | The paper is a clinical efficacy and safety study for anxiety, reporting dose and side effects but no pharmacokinetic parameters (CL, V, t1/2). |
+| PGx | Fabre_1981 | not_relevant | 0 | 0 | The study compares therapeutic efficacy and safety of ketazolam and diazepam but contains no pharmacogenomic analysis or gene variant data. |
 
 
 </details>

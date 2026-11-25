@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Milrinone was rejected because its reported peripheral-compartment volume (V2, 0.9 L/kg) belongs to an unreachable compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="milrinone" model-id="Milrinone_Ramamoorthy1998_reference" status="rejected" stale="false" population="infants and children after open heart surgery" measured-compound="milrinone" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Ramamoorthy C, Anderson GD, Williams GD, Lynn AM. Pharmacokinetics and side effe
 
 ### Reviewer guidance
 
-**Milrinone was rejected because its reported peripheral-compartment volume (V2, 0.9 L/kg) belongs to an unreachable compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-V2 is defined as the peripheral-compartment volume, and the recorded structure has no path from the dose to that compartment. Only the abstract was read, so reported summary statistics stood in for a fitted model. A second reader did not identify the clearance value of 3.8 L/h or the peripheral-compartment volume of 0.9 L/kg, and marked the dose compound and primary analyte as unknown. Extracted — milrinone: V2 0.9 L/kg, CL 3.8 L/h, V 314 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — milrinone: V2 0.9 L/kg, CL 3.8 L/h, V 314 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has milrinone, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

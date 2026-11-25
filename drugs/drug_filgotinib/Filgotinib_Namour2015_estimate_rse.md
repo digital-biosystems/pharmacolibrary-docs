@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Filgotinib was rejected for double correction because an absorption unit could not be converted, blocking the apparent-parameter coherence check.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="filgotinib" model-id="Filgotinib_Namour2015_estimate_rse" status="rejected" stale="false" population="healthy adults and patients with rheumatoid arthritis" measured-compound="filgotinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -59,13 +59,13 @@ Namour F, Diderichsen PM, Cox E, Vayssière B, Van der Aa A, Tasset C et al. Pha
 
 ### Reviewer guidance
 
-**Filgotinib was rejected for double correction because an absorption unit could not be converted, blocking the apparent-parameter coherence check.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The absorption rate constant is listed as -0.733 /h, but the unit was not recognized for conversion to standard SI terms. This prevented the calculation of a valid SI value for the parameter. As a result, the coherence check for apparent clearance and bioavailability could not be computed, leading to the rejection. Extracted — filgotinib: kabs -0.733 /h, CL/F 3.97 L/h, V 3.08 L, Q/F 2.02 L/h, V/F 4.72 L, Cmax 83 ng/mL, AUC∞ 348 ng × h/mL, t1/2z 5.72 h, … (+2); active metabolite: CL/F 1.04 L/h, V1/F 4.36 L.
+A reported unit could not be converted (Cmax, AUC∞, AUCt and Ct), so that value has no SI equivalent. Extracted — filgotinib: kabs -0.733 /h, CL/F 3.97 L/h, V 3.08 L, Q/F 2.02 L/h, V/F 4.72 L, Cmax 83 ng/mL, AUC∞ 348 ng × h/mL, t1/2z 5.72 h, … (+2); active metabolite: CL/F 1.04 L/h, V1/F 4.36 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has filgotinib → active metabolite (metabolism), the second reading filgotinib → filgotinib metabolite (metabolism); it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

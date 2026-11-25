@@ -20,14 +20,13 @@ Acriflavine is a topical antiseptic used for throat preparations. It is given to
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
-| acriflavine | parent | 468.99 | C27H25ClN6 | DrugBank | — | Plakas_1998 |
 | acriflavinium_chloride | metabolite | 468.99 | C27H25ClN6 | DrugBank | — | Plakas_1998 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="fish" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [Plakas_1998_reference](drugs/drug_acriflavinium_chloride/AcriflaviniumChloride_Plakas1998_reference.md) | — | general linear (no model) | 1 | Plakas SM et al., Pharmacokinetics, tissue distribution a…, Xenobiotica; the fate of fo… (1998) | [10.1080/004982598239353](https://doi.org/10.1080/004982598239353) |
+| <span class="pk-rf" hidden data-species="fish" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Plakas_1998_reference](drugs/drug_acriflavinium_chloride/AcriflaviniumChloride_Plakas1998_reference.md) | — | 1-compartment (no model) | 0 | Plakas SM et al., Pharmacokinetics, tissue distribution a…, Xenobiotica; the fate of fo… (1998) | [10.1080/004982598239353](https://doi.org/10.1080/004982598239353) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -41,7 +40,7 @@ Acriflavine is a topical antiseptic used for throat preparations. It is given to
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:27 | 0:21 | 0/1/0 | 0/0/0 | 0/0/0 | 26,564/923 | ollama / glm-5.3-flash | 5 | 0/0 | 5/0 | 0 |
+| 2026-11-23 18:13 | 3:54 | 0/1/0 | 0/0/0 | 0/0/0 | 22,049/4,747 | einfracz / qwen3.8-27b | 5 | 0/0 | 5/0 | 0 |
 
 ## Coverage
 
@@ -56,13 +55,23 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Plakas_1998.pdf` | Plakas SM et al., Pharmacokinetics, tissue distribution a…, Xenobiotica; the fate of fo… (1998) | popPK | 7 | [10.1080/004982598239353](https://doi.org/10.1080/004982598239353) | [9667083](https://pubmed.ncbi.nlm.nih.gov/9667083) | PK study of acriflavine in catfish with compartmental models and half-lives, but CL/V values are not given numerically in the evidence. |
+| `Plakas_1998.pdf` | Plakas SM et al., Pharmacokinetics, tissue distribution a…, Xenobiotica; the fate of fo… (1998) | popPK | 9 | [10.1080/004982598239353](https://doi.org/10.1080/004982598239353) | [9667083](https://pubmed.ncbi.nlm.nih.gov/9667083) | The paper describes the pharmacokinetics of acriflavine (the parent compound of acriflavinium chloride) in channel catfish, reporting specific compartmental models and half-lives, though not all specific clearance/volume values are explicitly listed in the evidence snippet. |
 
-<sub>queue written 2026-10-07 13:27 UTC</sub>
+<sub>queue written 2026-11-23 18:09 UTC</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| popPK | Al-Refaey_2026 | irrelevant | 0 | 0 | The paper describes an analytical method for tirzepatide using acriflavin (acriflavine) as a fluorescent probe, not a pharmacokinetic study of acriflavine itself. |
+| PGx | Al-Refaey_2026 | not_relevant | 0 | 0 | The paper describes an analytical method using acriflavine as a fluorescent probe for tirzepatide and does not report any pharmacogenomic effects or clinical data. |
+| popPK | Benner_1965 | irrelevant | 0 | 0 | The paper is a microbiology study on cephalosporin inactivation by bacteria and uses acriflavine (the drug in question) only as a treatment to alter bacterial resistance, not as the subject of pharmacokinetic analysis. |
+| PGx | Benner_1965 | not_relevant | 0 | 0 | The paper focuses on bacterial resistance to cephalosporins and does not report human pharmacogenomic effects on the PK or PD of acriflavinium chloride. |
+| PGx | Plakas_1998 | not_relevant | 0 | 0 | The paper describes pharmacokinetics in channel catfish but contains no information on human genetics, gene variants, or pharmacogenomic effects. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bacriflavinium_chloride%5D&body=Drug%3A%20acriflavinium_chloride%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_acriflavinium_chloride/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 13:27 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 18:09 UTC</sub>

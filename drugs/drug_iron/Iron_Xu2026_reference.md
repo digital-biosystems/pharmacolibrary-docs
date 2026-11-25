@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the paper studies a different drug, and iron parameters for lag time and elimination rate lack explicit estimates.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Iron" model-id="Iron_Xu2026_reference" status="rejected" stale="false" population="" measured-compound="iron" parameterization="apparent" topology="2C"></div>
 
@@ -50,11 +50,11 @@ Xu C, Zhang M, Liu Y, Baret-Cormel L, De Benedetti F, Abdallah H et al. Modeling
 
 ### Reviewer guidance
 
-**The record was rejected because the paper studies a different drug, and iron parameters for lag time and elimination rate lack explicit estimates.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source text describes a study on a different molecule, not iron, as confirmed by the relevance screen. Consequently, the elimination rate constant from the periphery and the absorption lag time were not explicitly estimated in the data. This lack of specific parameter estimates for iron, combined with the incorrect drug subject, invalidates the pharmacokinetic description. Extracted — iron: CL/F 0.218 L/day, V1/F 1.54 L, Q/F 0.148 L/day, kabs 0.117 day−1.
+Extracted — iron: CL/F 0.218 L/day, V1/F 1.54 L, Q/F 0.148 L/day, kabs 0.117 day−1.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

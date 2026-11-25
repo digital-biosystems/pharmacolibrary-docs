@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="Cycloguanil" model-id="Cycloguanil_Watkins1987_reference" status="rejected" stale="false" population="healthy adults" measured-compound="cycloguanil" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="Cycloguanil" model-id="Cycloguanil_Watkins1987_reference" status="rejected" stale="false" population="human subjects" measured-compound="cycloguanil" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Watkins WM, Chulay JD, Sixsmith DG, Spencer HC, Howells RE. A preliminary pharmacokinetic study of the antimalarial drugs, proguanil and chlorproguanil. The Journal of pharmacy and pharmacology 39(4):261–265 (1987).
@@ -17,9 +17,9 @@ Watkins WM, Chulay JD, Sixsmith DG, Spencer HC, Howells RE. A preliminary pharma
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = 21.
+**Population:** human subjects · condition healthy · age group adult.
 
-**Dosed compound ≠ measured compound:** dosed proguanil and chlorproguanil, measured cycloguanil.
+**Dosed compound ≠ measured compound:** dosed proguanil, measured cycloguanil.
 
 ## Model
 
@@ -49,7 +49,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has proguanil and chlorproguanil, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has proguanil, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -60,7 +60,6 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — only the metabolite is modelled — no parent compartment
 - status held at "Needs review" — not promoted
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available; abstract in Watkins_1987_metadata.yaml carries no parameter-bearing sentence
@@ -68,7 +67,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -78,7 +77,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | proguanil and chlorproguanil | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | proguanil | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | cycloguanil | unknown | mismatch |
 
 </details>
@@ -95,7 +94,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|
 | C0_has_structural_params | fail |  | 0 |
 | C0b_disposition_core | fail |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['unknown', 'unknown'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -119,4 +118,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcycloguanil%5D%20Cycloguanil_Watkins1987_reference&body=Drug%3A%20cycloguanil%0ARecord%3A%20Cycloguanil_Watkins1987_reference%0APaper%3A%20Watkins_1987%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cycloguanil/Cycloguanil_Watkins1987_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 06:52 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 20:32 UTC</sub>

@@ -5,11 +5,11 @@
 
 # Artefenomel — `Artefenomel_Gansane2023_ferroquine_400_mg_plus_artefenomel`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> This record was reviewed on 2026-11-07 15:07 UTC (Rejected), but the paper was screened again on 2026-10-22 10:45 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. The paper reports none of the model's key parameters.
+> The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="Artefenomel" model-id="Artefenomel_Gansane2023_ferroquine_400_mg_plus_artefenomel" status="rejected" stale="true" population="African patients with uncomplicated Plasmodium falciparum malaria" measured-compound="artefenomel" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Artefenomel" model-id="Artefenomel_Gansane2023_ferroquine_400_mg_plus_artefenomel" status="rejected" stale="false" population="African patients with uncomplicated Plasmodium falciparum malaria" measured-compound="artefenomel" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Gansane A, Lingani M, Yeka A, Nahum A, Bouyou-Akotet M, Mombo-Ngoma G et al. Randomized, open-label, phase 2a study to evaluate the contribution of artefenomel to the clinical and parasiticidal activity of artefenomel plus ferroquine in African patients with uncomplicated Plasmodium falciparum malaria. Malaria journal 22(1):2 (2023).
@@ -35,7 +35,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--stale">stale</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.5). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,6 +48,8 @@ _No resolved parameters._
 **The paper reports none of the model's key parameters.**
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of median time to parasite clearance (kaplan-meier) - ferroquine alone: this record has none, the second reading 56.1; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -81,6 +83,30 @@ No clearance, volume or rate constant of the model is reported in it. No paramet
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
+
+<details><summary>4 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[median time to parasite clearance (kaplan-meier) - ferroquine alone]` |  | 56.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[parasite clearance rate]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[parasite clearance rate]` |  | 21 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[pc50]` |  | 21 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

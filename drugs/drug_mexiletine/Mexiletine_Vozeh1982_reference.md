@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The normalized volume of distribution for mexiletine was rejected because its unit (1/kg) conflicts with the required cubic dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q352 unit 1/kg (dimensionless) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="mexiletine" model-id="Mexiletine_Vozeh1982_reference" status="rejected" stale="false" population="patients treated for arrhythmias" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Vozeh S, Katz G, Steiner V, Follath F. Population pharmacokinetic parameters in 
 
 ### Reviewer guidance
 
-**The normalized volume of distribution for mexiletine was rejected because its unit (1/kg) conflicts with the required cubic dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q352 unit 1/kg (dimensionless) vs [length] ** 3.**
 
-The record lists Vnorm with a value of 5.3 and a unit of 1/kg, but the model structure requires a volumetric parameter with cubic dimensions. This dimensional mismatch prevented the unit from being converted to SI, causing the parameter to fail validation. The second reader also disagreed on the identity of the dose compound and primary analyte, both of which were identified as mexiletine in the original record. Extracted — mexiletine: Vnorm 5.3 1/kg, kabs 3.1 h-1, V 74 L.
+A reported unit could not be converted (Vnorm), so that value has no SI equivalent. Extracted — mexiletine: Vnorm 5.3 1/kg, kabs 3.1 h-1, V 74 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mexiletine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [White_2018_QTcI](drugs/drug_droxidopa/pd_White_2018_QTcI.md) | QTcI ← droxidopa · direct linear effect | — | White WB et al., Impact of the Norepinephrine Prodrug Dr…, Clinical pharmacology in dr… (2018) | [10.1002/cpdd.393](https://doi.org/10.1002/cpdd.393) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [White_2018_QTcI](drugs/drug_droxidopa/pd_White_2018_QTcI.md) | QTcI ← droxidopa · direct linear effect | — | White WB et al., Impact of the Norepinephrine Prodrug Dr…, Clinical pharmacology in dr… (2018) | [10.1002/cpdd.393](https://doi.org/10.1002/cpdd.393) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

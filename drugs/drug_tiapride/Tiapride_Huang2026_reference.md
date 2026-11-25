@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the extraction for the metabolic back-conversion rate constant was incomplete, omitting its value and unit.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/h ([mass] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="tiapride" model-id="Tiapride_Huang2026_reference" status="rejected" stale="false" population="children and adolescents with tic disorders" measured-compound="tiapride" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Huang W, Shen J, Luo X, Wu Y, Zheng Y, Zhou J et al. Population Pharmacokinetics
 
 ### Reviewer guidance
 
-**The model was rejected because the extraction for the metabolic back-conversion rate constant was incomplete, omitting its value and unit.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/h ([mass] / [time]) vs [mass] / [time].**
 
-The record lists the back-conversion rate constant kmp with a value of 0.38 but lacks a corresponding unit field. This omission prevented the system from converting the value to standard units, leaving the parameter without a valid SI value. Consequently, a dimensionality check failed because the parameter's unit dimension could not be verified against its structural role. Extracted — tiapride: Vmax 34.7 mg/h, Km 762 ng/mL, kmp 0.38, kabs 0.219 h−1, CL/F 15.3 L/h, V/F 5.77 L.
+A reported unit could not be converted (Vmax and Km), so that value has no SI equivalent. Extracted — tiapride: Vmax 34.7 mg/h, Km 762 ng/mL, kmp 0.38, kabs 0.219 h−1, CL/F 15.3 L/h, V/F 5.77 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of parameter: this record has none, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

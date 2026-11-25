@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Rivaroxaban clearance and volume values derived from abstract data are disputed by a second reader due to missing dose details and parameterization ambiguity.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="rivaroxaban" model-id="Rivaroxaban_Esmaeili2022_reference" status="needs_review" stale="false" population="Iranian patients" measured-compound="rivaroxaban" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Esmaeili T, Rezaee M, Abdar Esfahani M, Davoudian A, Omidfar D, Rezaee S. Rivaro
 
 ### Reviewer guidance
 
-**Rivaroxaban clearance and volume values derived from abstract data are disputed by a second reader due to missing dose details and parameterization ambiguity.**
+**cross_check_disputed; x1_cross_check.**
 
-The record relies on abstract-only source text, so the reported clearance of 3.68 L/h and volume of 61.2 L stand in for a fitted model. A second reader disagreed on the dose compound identification and whether the model was mechanistic or apparent. Additionally, the second reader assigned a different identifier to the volume of distribution parameter. Extracted — rivaroxaban: V 61.2 L, CL 3.68 L·h-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — rivaroxaban: V 61.2 L, CL 3.68 L·h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rivaroxaban, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.571, 0 of 1 reader(s) agree | 0.571 | cross-check disputed by a second reader: verdict disputed, agreement 0.571, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.571 (4 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.571 | cross-check contradicted by a second reader: verdict disputed; agreement 0.571 (4 of 7 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

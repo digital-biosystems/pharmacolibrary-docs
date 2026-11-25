@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 0.80).">rat</span>
 
-> The central volume of distribution (47.0 ml) is implausibly small, indicating a unit or scale error for naproxen.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Huntjens2006_reference" status="rejected" stale="false" population="" measured-compound="naproxen" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Huntjens DR, Spalding DJ, Danhof M, Della Pasqua OE. Correlation between in vitr
 
 ### Reviewer guidance
 
-**The central volume of distribution (47.0 ml) is implausibly small, indicating a unit or scale error for naproxen.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted central volume of distribution is 47.0 ml, a magnitude inconsistent with the physiology of a systemic drug like naproxen. This value fails the physiological plausibility check for volume parameters. Additionally, the peripheral volume (28.7 ml) and clearance (0.211 ml/min) exhibit similar scale anomalies. Extracted — naproxen: CL 0.211 ml min À1, V1 47 ml, V2 28.7 ml, Q 1.7 ml min À1.
+Extracted — naproxen: CL 0.211 ml min À1, V1 47 ml, V2 28.7 ml, Q 1.7 ml min À1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 41; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

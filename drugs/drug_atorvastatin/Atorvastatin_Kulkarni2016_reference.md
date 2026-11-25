@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Rejected because atorvastatin volume of distribution was extracted as 0.8 ml, an implausible value for total body clearance.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Kulkarni2016_reference" status="rejected" stale="false" population="isolated rat liver" measured-compound="atorvastatin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Kulkarni P, Korzekwa K, Nagar S. Intracellular Unbound Atorvastatin Concentratio
 
 ### Reviewer guidance
 
-**Rejected because atorvastatin volume of distribution was extracted as 0.8 ml, an implausible value for total body clearance.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record assigns a volume of 0.8 ml to the intrahepatic vasculature, which contradicts the meaning provided for volume of distribution. This value is physiologically impossible for a systemic distribution parameter, triggering a magnitude failure. Additionally, the second reader disagreed on the model structure, preferring a two-compartment topology over the single-compartment model recorded. Extracted — atorvastatin: CL 2.5 ml/min, V 0.8 ml.
+Extracted — atorvastatin: CL 2.5 ml/min, V 0.8 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q30: this record has none, the second reading 20; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

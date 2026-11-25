@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Second reader disagreements on central and peripheral volumes, intercompartmental and systemic clearances for etomidate resulted in partial agreement.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="etomidate" model-id="Etomidate_Kaneda2011_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="etomidate" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Kaneda K, Yamashita S, Woo S, Han TH. Population pharmacokinetics and pharmacody
 
 ### Reviewer guidance
 
-**Second reader disagreements on central and peripheral volumes, intercompartmental and systemic clearances for etomidate resulted in partial agreement.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so summary statistics stood in for a fitted model. The second reader disagreed on the intercompartmental clearance, systemic clearance, and central volume of distribution. This lack of consensus on key parameters caused the record to be held back for review. Extracted — etomidate: V1 4.45 L, V2 74.9 L, CL 0.63 L/min, Q 3.16 L/min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — etomidate: V1 4.45 L, V2 74.9 L, CL 0.63 L/min, Q 3.16 L/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of intercompartmental clearance: this record has none, the second reading 3.16; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.364, 0 of 1 reader(s) agree | 0.364 | cross-check agreement 0.364 is below 0.5: verdict partial, agreement 0.364, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.364 (4 of 11 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.364 | cross-check agreement 0.364 is below 0.5: verdict partial; agreement 0.364 (4 of 11 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

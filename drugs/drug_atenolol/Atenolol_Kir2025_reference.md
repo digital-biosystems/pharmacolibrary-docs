@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Absorption and transfer rate constants for atenolol were rejected because their mass-based units conflict with the required first-order time dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit mg/min/kg ([mass] / [time]) vs 1 / [time]; Q303 unit mg/min/kg ([mass] / [time]) vs 1 / [time]; Q3 unit mL/min/kg ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="atenolol" model-id="Atenolol_Kir2025_reference" status="rejected" stale="false" population="malnourished rats" measured-compound="atenolol" parameterization="mechanistic" topology="1C"></div>
 
@@ -44,7 +44,7 @@ Kir F, Sahin S, Jusko WJ. Minimal Physiologically-Based Pharmacokinetic Modeling
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.467). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,11 +54,13 @@ Kir F, Sahin S, Jusko WJ. Minimal Physiologically-Based Pharmacokinetic Modeling
 
 ### Reviewer guidance
 
-**Absorption and transfer rate constants for atenolol were rejected because their mass-based units conflict with the required first-order time dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit mg/min/kg ([mass] / [time]) vs 1 / [time]; Q303 unit mg/min/kg ([mass] / [time]) vs 1 / [time]; Q3 unit mL/min/kg ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time].**
 
-The absorption rate constant is reported as 1.19 mg/min/kg and the central-to-peripheral transfer constant as 0 mg/min/kg, both of which are dimensionally incompatible with first-order rate constants. Additionally, total clearance (16.04 mL/min/kg) has a unit dimension that does not align with the specified clearance definition. Because these units could not be converted to SI, the model parameters remained invalid. Extracted — atenolol: CL 16 mL/min/kg, kabs 1.19 mg/min/kg, k13 0 mg/min/kg, Vss 1.41 L/kg, Kp 4.03, CLint 148 mL/min/kg, fm 0.839.
+A reported unit could not be converted (kabs, k13 and CLint), so that value has no SI equivalent. Extracted — atenolol: CL 16 mL/min/kg, kabs 1.19 mg/min/kg, k13 0 mg/min/kg, Vss 1.41 L/kg, Kp 4.03, CLint 148 mL/min/kg, fm 0.839.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f ce: this record has none, the second reading 0.426; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -121,6 +123,34 @@ The absorption rate constant is reported as 1.19 mg/min/kg and the central-to-pe
 - LLM selected parameter table(s) 2, 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.467 (7/15 fields) | 8 |
+
+<details><summary>8 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[f ce]` |  | 0.426 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[f m]` | 0.839 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[fr c]` |  | 0.336 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k01 c].value` | 1.19 | 4.5 | mismatch |
+| `gpt-oss-120b` | `parameters[k01 m]` |  | 0.611 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k03 cc]` | 0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kp1]` | 4.033 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[kp1b]` |  | 1.43 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ilaprazole’s peripheral elimination parameter, labeled θwt, was misidentified as a rate constant for irreversible loss instead of the inter-compartmental rate constant.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="ilaprazole" model-id="Ilaprazole_Jia2021_reference" status="rejected" stale="false" population="healthy Chinese adults" measured-compound="ilaprazole" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Jia R, Zhang F, Wu N, Xu W, Gao H, Liu B et al. Accelerating Development of Benz
 
 ### Reviewer guidance
 
-**Ilaprazole’s peripheral elimination parameter, labeled θwt, was misidentified as a rate constant for irreversible loss instead of the inter-compartmental rate constant.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The parameter θwt (1.35 1/h) is defined as the first-order rate constant for irreversible elimination out of the peripheral compartment. In a two-compartment model, the connection between central and peripheral compartments is represented by inter-compartmental rate constants, not direct elimination from the periphery. The second reader disagreed on the identity of this parameter and noted that the residual error term εcp was missing from the record. Extracted — ilaprazole: V1 8.8 L, V2 3.65 L, kout_peripheral 1.35 1/h.
+Extracted — ilaprazole: V1 8.8 L, V2 3.65 L, kout_peripheral 1.35 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of εcp: this record has 0.12, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

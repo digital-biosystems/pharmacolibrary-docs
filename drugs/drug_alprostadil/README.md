@@ -24,7 +24,7 @@ _not available_
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">in vitro</span> | [DiBattista_1994_collagenase](drugs/drug_alprostadil/pd_DiBattista_1994_collagenase.md) | collagenase ← PGE1 · direct Emax (saturable) effect | — | DiBattista JA et al., Prostaglandins E2 and E1 inhibit cytoki…, Laboratory investigation; a… (1994) | — |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.95).">in vitro</span> | [DiBattista_1994_stromelysin](drugs/drug_alprostadil/pd_DiBattista_1994_stromelysin.md) | stromelysin ← PGE1 · direct Emax (saturable) effect | — | DiBattista JA et al., Prostaglandins E2 and E1 inhibit cytoki…, Laboratory investigation; a… (1994) | — |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Bassiouni_2019_Corpus_cavernosal_relaxation](drugs/drug_alprostadil/pd_Bassiouni_2019_Corpus_cavernosal_relaxation.md) | Corpus cavernosal relaxation ← alprostadil · direct Emax (saturable) effect | — | Bassiouni W et al., Evaluation of some prostaglandins modul…, Biomedicine & pharmacothera… (2019) | [10.1016/j.biopha.2018.12.097](https://doi.org/10.1016/j.biopha.2018.12.097) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Bassiouni_2019_Corpus_cavernosal_relaxation](drugs/drug_alprostadil/pd_Bassiouni_2019_Corpus_cavernosal_relaxation.md) | Corpus cavernosal relaxation ← alprostadil · direct Emax (saturable) effect | — | Bassiouni W et al., Evaluation of some prostaglandins modul…, Biomedicine & pharmacothera… (2019) | [10.1016/j.biopha.2018.12.097](https://doi.org/10.1016/j.biopha.2018.12.097) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.85).">in vitro</span> | [DiBattista_1994_2_PAI_1](drugs/drug_alprostadil/pd_DiBattista_1994_2_PAI_1.md) | PAI-1 antigen secretion ← alprostadil · direct Emax (saturable) effect | — | DiBattista JA et al., Transcriptional regulation of plasminog…, Molecular and cellular endo… (1994) | [10.1016/0303-7207(94)90081-7](https://doi.org/10.1016/0303-7207(94)90081-7) |
 
 <details class="legend">
@@ -39,7 +39,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-08 11:37 | 2:11 | 0/0/0 | 3/1/0 | 0/0/0 | 252,267/11,148 | einfracz / qwen3.8-27b | 15 | 7/16 | 15/0 | 0 |
+| 2026-10-08 11:37 | 2:11 | 0/0/0 | 2/2/0 | 0/0/0 | 252,267/11,148 | einfracz / qwen3.8-27b | 15 | 7/16 | 15/0 | 0 |
 
 ## Coverage
 

@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because apparent bioavailability was defined by a non-numeric study identifier while apparent pharmacokinetic parameters implied uncorrected clearance.
+> C7 apparent-parameter coherence violated (double correction).
 
-<div class="pk-model-meta" hidden drug="safinamide" model-id="Safinamide_Loprete2016_reference" status="rejected" stale="false" population="adults with Parkinson&#39;s disease on stable levodopa therapy" measured-compound="safinamide" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="safinamide" model-id="Safinamide_Loprete2016_reference" status="rejected" stale="false" population="patients with Parkinson&#39;s disease" measured-compound="safinamide" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Loprete L, Leuratti C, Cattaneo C, Thapar MM, Farrell C, Sardina M. Population pharmacokinetic and pharmacodynamic analyses of safinamide in subjects with Parkinson's disease. Pharmacology research & perspectives 4(5):e00251 (2016).
@@ -16,9 +16,9 @@ Loprete L, Leuratti C, Cattaneo C, Thapar MM, Farrell C, Sardina M. Population p
 
 ## Population and dosing
 
-**Population:** adults with Parkinson's disease on stable levodopa therapy · condition Parkinson's disease · age group adult · n = 623.
+**Population:** patients with Parkinson's disease · condition Parkinson's disease · age group adult.
 
-**Dosing:** 50, 100, 150, 200 mg, oral, multiple, every 24 h.
+**Dosing:** 50, 100 mg/day, oral, multiple, every 24 h.
 
 ## Model
 
@@ -30,16 +30,16 @@ Loprete L, Leuratti C, Cattaneo C, Thapar MM, Farrell C, Sardina M. Population p
 ## Parameters
 > ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit |
-|---|---|---|---|
-| CL/F (L/h) | CL/F | 3.40 | L/h |
-| Vd/F (L) | V/F | 110 | L |
-| KA (h−1) | kabs | 0.335 | h−1 |
-| F (STUD016) | Fab | 0.689 | STUD016 |
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| CL/F (L/h) | CL/F | 3.59 | L/h | 2.67 |
+| Vd/F (L) | V/F | 120 | L | 4.38 |
+| KA (h−1) | kabs | 0.582 | h−1 | 21.6 |
+| F (STUD016) | Fab | 0.724 | STUD016 | 2.49 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.778). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,26 +49,26 @@ Loprete L, Leuratti C, Cattaneo C, Thapar MM, Farrell C, Sardina M. Population p
 
 ### Reviewer guidance
 
-**Record rejected because apparent bioavailability was defined by a non-numeric study identifier while apparent pharmacokinetic parameters implied uncorrected clearance.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The absolute bioavailability parameter (Fab) has a value of 'STUD016' in unit 'STUD016' rather than a numeric fraction, making the parameter incoherent with the apparent parameters. This non-numeric entry violates the requirement that apparent clearance and volume be used consistently without double correction. Additionally, the second reader identified discrepancies in the absorption rate constant (0.335 vs 0384) and apparent volume of distribution (110 vs 107), though these do not resolve the primary structural incoherence. Extracted — safinamide: CL/F 3.4 L/h, V/F 110 L, kabs 0.335 h−1, Fab 0.689 STUD016.
+A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — safinamide: CL/F 3.59 L/h, V/F 120 L, kabs 0.582 h−1, Fab 0.724 STUD016.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[ka].value`: this record has 0.335, the second reading 0384; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
-|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 3.40 | L/h | 9.444e-07 | m3/s | l/h | exact (1) | prp2251-tbl-0003:row2:col1, prp2251-tbl-0003:row2:col2, prp2251-tbl-0003:row2:col3, prp2251-tbl-0003:row2:col5, prp2251-tbl-0003:row2:col6 |
-| Vd/F (L) | `Q76` · V/F | 110 | L | 0.11 | m3 | l | exact (1) | prp2251-tbl-0003:row3:col1, prp2251-tbl-0003:row3:col2, prp2251-tbl-0003:row3:col3, prp2251-tbl-0003:row3:col5, prp2251-tbl-0003:row3:col6 |
-| KA (h−1) | `Q49` · kabs | 0.335 | h−1 | 9.306e-05 | 1/s | 1/h | exact (1) | prp2251-tbl-0003:row4:col1, prp2251-tbl-0003:row4:col2, prp2251-tbl-0003:row4:col3, prp2251-tbl-0003:row4:col5, prp2251-tbl-0003:row4:col6 |
-| F (STUD016) | `Q40` · Fab | 0.689 | STUD016 |  |  |  | exact (1) | prp2251-tbl-0003:row5:col1, prp2251-tbl-0003:row5:col2, prp2251-tbl-0003:row5:col3, prp2251-tbl-0003:row5:col5, prp2251-tbl-0003:row5:col6 |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| CL/F (L/h) | `Q27` · CL/F | 3.59 | L/h | 9.972e-07 | m3/s | l/h | 2.67 | exact (1) | prp2251-tbl-0003:row2:col1 |
+| Vd/F (L) | `Q76` · V/F | 120 | L | 0.12 | m3 | l | 4.38 | exact (1) | prp2251-tbl-0003:row3:col1 |
+| KA (h−1) | `Q49` · kabs | 0.582 | h−1 | 0.0001617 | 1/s | 1/h | 21.6 | exact (1) | prp2251-tbl-0003:row4:col1 |
+| F (STUD016) | `Q40` · Fab | 0.724 | STUD016 |  |  |  | 2.49 | exact (1) | prp2251-tbl-0003:row5:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -80,30 +80,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=safinamide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss-120b` | confirmed | 1.0 (13/13 fields) | none |
 
-<details><summary>2 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[ka].value` | 0.335 | 0384 | mismatch |
-| `gpt-oss-120b` | `parameters[vd/f].value` | 110 | 107 | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -118,17 +108,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |  |  |
 | C0b_disposition_core | pass |  |  |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |  |  |
-| C1_half_life_beta | pass | 22 | 22.43 | 1.019 | 0.25 | reported t½β |
-| C2_base_Q27 | fail | 3.4 | 3.59 | 1.056 | 0.05 | footnote reference category |
-| C2_base_Q40 | fail | 0.689 | 3.59 | 5.21 | 0.05 | footnote reference category |
-| C2_base_Q76 | fail | 110 | 120 | 1.091 | 0.05 | footnote reference category |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  |  |  | ['prp2251-tbl-0003:row2:col1', 'prp2251-tbl-0003:row2:col2', 'prp2251-tbl-0003:row2:col3', 'prp2251-tbl-0003:row2:col5', 'prp2251-tbl-0003:row2:col6'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['prp2251-tbl-0003:row4:col1', 'prp2251-tbl-0003:row4:col2', 'prp2251-tbl-0003:row4:col3', 'prp2251-tbl-0003:row4:col5', 'prp2251-tbl-0003:row4:col6'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  |  |  | ['prp2251-tbl-0003:row3:col1', 'prp2251-tbl-0003:row3:col2', 'prp2251-tbl-0003:row3:col3', 'prp2251-tbl-0003:row3:col5', 'prp2251-tbl-0003:row3:col6'] |
-| C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.689 with apparent parameterization |  |  |  |
+| C1_half_life_beta | pass | 22 | 23.17 | 1.053 | 0.25 | reported t½β |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  |  |  | ['prp2251-tbl-0003:row2:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  |  |  | ['prp2251-tbl-0003:row4:col1'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  |  |  | ['prp2251-tbl-0003:row3:col1'] |
+| C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.724 with apparent parameterization |  |  |  |
 | C8_topology | pass |  |  |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 3.4 L/h |  |  | ['prp2251-tbl-0003:row2:col1', 'prp2251-tbl-0003:row2:col2', 'prp2251-tbl-0003:row2:col3', 'prp2251-tbl-0003:row2:col5', 'prp2251-tbl-0003:row2:col6'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 110 L |  |  | ['prp2251-tbl-0003:row3:col1', 'prp2251-tbl-0003:row3:col2', 'prp2251-tbl-0003:row3:col3', 'prp2251-tbl-0003:row3:col5', 'prp2251-tbl-0003:row3:col6'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 3.59 L/h |  |  | ['prp2251-tbl-0003:row2:col1'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 120 L |  |  | ['prp2251-tbl-0003:row3:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -152,4 +139,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsafinamide%5D%20Safinamide_Loprete2016_reference&body=Drug%3A%20safinamide%0ARecord%3A%20Safinamide_Loprete2016_reference%0APaper%3A%20Loprete_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_safinamide/Safinamide_Loprete2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 14:22 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 15:55 UTC</sub>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Potassium chloride record rejected because concentration units (mmol/L) conflicted with the model's mass-based dimensional expectations.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit mmol/L ([substance] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q32 unit mmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q17 unit mmol·h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="potassium chloride" model-id="PotassiumChloride_Li2025_3_dose_administration_group_extende" status="rejected" stale="false" population="patients with cardiovascular emergencies" measured-compound="potassium" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Li X, Qu M, Li H, Li T. Plasma pharmacokinetics of the combination of potassium 
 
 ### Reviewer guidance
 
-**Potassium chloride record rejected because concentration units (mmol/L) conflicted with the model's mass-based dimensional expectations.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit mmol/L ([substance] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q32 unit mmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q17 unit mmol·h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-Dimensional checks flagged C0, Cmax, and AUC∞ for unit mismatch against the structural requirements. A reported unit could not be converted to SI, so no valid value was passed to the model builder. The second reader disagreed on the dose compound and analyte identification. Extracted — potassium chloride: C0 3.34 mmol/L, tmax 6.11 h, Cmax 4.15 mmol/L, kabs 0.32 per hour, t1/2z 6.55 h, AUC∞ 142 mmol·h/L.
+A reported unit could not be converted (C0, Cmax and AUC∞), so that value has no SI equivalent. Extracted — potassium chloride: C0 3.34 mmol/L, tmax 6.11 h, Cmax 4.15 mmol/L, kabs 0.32 per hour, t1/2z 6.55 h, AUC∞ 142 mmol·h/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has potassium chloride, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

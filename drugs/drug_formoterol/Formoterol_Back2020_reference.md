@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;formoterol&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/&quot;},{&quot;label&quot;:&quot;Back_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Formoterol_van1998_reference&quot;,&quot;label&quot;:&quot;van_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_van1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_van_1999_potassium&quot;,&quot;label&quot;:&quot;van_1999 \u00b7 potassium&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/pd_van_1999_potassium.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Formoterol parameters were assigned budesonide values, and bioavailability and lag time were left at placeholder levels rather than paper estimates.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="formoterol" model-id="Formoterol_Back2020_reference" status="needs_review" stale="false" population="adults with moderate asthma" measured-compound="formoterol" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Back HM, Lee JB, Kim A, Park SJ, Kim J, Chae JW et al. Exposure-Response and Cli
 
 ### Reviewer guidance
 
-**Formoterol parameters were assigned budesonide values, and bioavailability and lag time were left at placeholder levels rather than paper estimates.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record lists total clearance as 18.4 L/hr and central volume as 216.0 L, but the labels explicitly identify these as budesonide parameters. Bioavailability and lag time were not extracted from the paper, so the model would use generic library placeholders instead of specific estimates for formoterol. A second reader disputed the central volume, proposing 1250 L against the recorded 216.0 L. Extracted — formoterol: CL 18.4 L·hr−1, V1 216 L, V2 106 L, Q 88.3 L·hr−1, kabs 19.7 hr−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — formoterol: CL 18.4 L·hr−1, V1 216 L, V2 106 L, Q 88.3 L·hr−1, kabs 19.7 hr−1.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q312: this record has none, the second reading 77.4; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.588, 0 of 1 reader(s) agree | 0.588 | cross-check disputed by a second reader: verdict disputed, agreement 0.588, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.588 (10 of 17 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.588 | cross-check contradicted by a second reader: verdict disputed; agreement 0.588 (10 of 17 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (glm-5.3-flash) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -159,7 +159,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_formoterol/Formoterol_Back2020_reference/Formoterol_Back2020_reference_modelica.zip" download>Formoterol_Back2020_reference_modelica.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_formoterol/Formoterol_Back2020_reference/Formoterol_Back2020_reference_modelica.zip" download>Formoterol_Back2020_reference_modelica.zip</a> <span class="pk-size">(4.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_formoterol/Formoterol_Back2020_reference/Formoterol_Back2020_reference_fmi.zip" download>Formoterol_Back2020_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_formoterol/Formoterol_Back2020_reference/Formoterol_Back2020_reference_matlab.zip" download>Formoterol_Back2020_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_formoterol/Formoterol_Back2020_reference/Formoterol_Back2020_reference_matlab_simbio.zip" download>Formoterol_Back2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

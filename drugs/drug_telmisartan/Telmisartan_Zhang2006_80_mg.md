@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The elimination rate constant for telmisartan is recorded in hours rather than per hour, creating a dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Zhang2006_80_mg" status="rejected" stale="false" population="healthy Chinese males" measured-compound="telmisartan" parameterization="apparent" topology="1C"></div>
 
@@ -56,13 +56,13 @@ Zhang P, Zhang Y, Chen X, Li R, Yin J, Zhong D. Pharmacokinetics of telmisartan 
 
 ### Reviewer guidance
 
-**The elimination rate constant for telmisartan is recorded in hours rather than per hour, creating a dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].**
 
-The parameter labeled as the elimination rate constant has a value of 0.033 with a unit of h. However, the meaning identifies it as a rate constant, which requires an inverse time unit such as per hour. This dimensional conflict prevented the record from being processed. Extracted — telmisartan: Cmax 906 ng/mL, tmax 1.6 h, t1/2z 23 h, kel 0.033 h, AUCt 6.76e+03 ng·h/mL, AUC∞ 7.59e+03 ng·h/mL, CL/F 248 mL/min, V/F 448 L, … (+2).
+A reported unit could not be converted (kel), so that value has no SI equivalent. Extracted — telmisartan: Cmax 906 ng/mL, tmax 1.6 h, t1/2z 23 h, kel 0.033 h, AUCt 6.76e+03 ng·h/mL, AUC∞ 7.59e+03 ng·h/mL, CL/F 248 mL/min, V/F 448 L, … (+2).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

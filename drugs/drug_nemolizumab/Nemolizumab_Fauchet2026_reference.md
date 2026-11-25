@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Nemolizumab record failed review because covariate effects were not simulated and a second reader disputed the dose compound and primary analyte identifications.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="nemolizumab" model-id="Nemolizumab_Fauchet2026_reference" status="needs_review" stale="false" population="adults and adolescents with moderate to severe atopic dermatitis" measured-compound="nemolizumab" parameterization="apparent" topology="1C"></div>
 
@@ -64,13 +64,13 @@ Fauchet F, Largajolli A, Jauslin PM, Schindler E, Hamimed M, Kantasiripitak W et
 
 ### Reviewer guidance
 
-**Nemolizumab record failed review because covariate effects were not simulated and a second reader disputed the dose compound and primary analyte identifications.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The record lists covariate effects for clearance and volume, but simulations only tested the reference individual, leaving these effects unverified. Additionally, the second reader disagreed on the dose compound and primary analyte, both of which were unknown to them. There is also a discrepancy where the second reader found a bodyweight effect on clearance not present in the record, while identifying an extra covariate form for clearance. Extracted — nemolizumab: CL/F 0.263 L/day, V/F 7.67 L, kabs 0.476 1/day, tlag 0.043 day.
+The base model was simulated, not the covariate effects the record defines. Extracted — nemolizumab: CL/F 0.263 L/day, V/F 7.67 L, kabs 0.476 1/day, tlag 0.043 day.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has nemolizumab, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -185,7 +185,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.806, 0 of 1 reader(s) agree | 0.806 | cross-check disputed by a second reader: verdict disputed, agreement 0.806, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.806 (25 of 31 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.806 | cross-check contradicted by a second reader: verdict disputed; agreement 0.806 (25 of 31 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Apomorphine was rejected because its CL/F of 80.7 L/h is already bioavailability-adjusted, yet bioavailability is also reported as 0.206, implying a double correction.
+> C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q374 unit mg ([mass]) vs [mass] / [substance]; Q19 unit mg ([mass]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="apomorphine" model-id="Apomorphine_Nasser2024_sublingual" status="rejected" stale="false" population="hypothetical subjects" measured-compound="apomorphine" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Nasser A, Gomeni R, Ceresoli-Borroni G, Xie L, Busse GD, Melyan Z et al. Model-b
 
 ### Reviewer guidance
 
-**Apomorphine was rejected because its CL/F of 80.7 L/h is already bioavailability-adjusted, yet bioavailability is also reported as 0.206, implying a double correction.**
+**C7 apparent-parameter coherence violated (double correction); c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q374 unit mg ([mass]) vs [mass] / [substance]; Q19 unit mg ([mass]) vs [mass] * [time] / [length] ** 3.**
 
-The record also gives apomorphine molecular weight as 30.53 mg, rather than the required mass per amount of substance, and AUCt as 20 mg, rather than a concentration–time quantity. A reported unit could not be converted to SI, leaving the affected parameter without an SI value. Extracted — apomorphine: MW 30.5 mg, AUCt 20 mg, tmax 20 min, CL/F 80.7 L/h, V/F 438 L, kabs 6.58 h−1, k12 0.613 h−1, k21 0.0048 h−1, … (+1).
+A reported unit could not be converted (MW and AUCt), so that value has no SI equivalent. Extracted — apomorphine: MW 30.5 mg, AUCt 20 mg, tmax 20 min, CL/F 80.7 L/h, V/F 438 L, kabs 6.58 h−1, k12 0.613 h−1, k21 0.0048 h−1, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has apomorphine, the second reading unknown; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

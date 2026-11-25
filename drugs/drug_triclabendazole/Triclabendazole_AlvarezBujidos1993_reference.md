@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> The record lacks compartmental volume and clearance parameters because it reports only AUC summary statistics from an abstract-only source for triclabendazole sulphoxide.
+> No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="triclabendazole" model-id="Triclabendazole_AlvarezBujidos1993_reference" status="rejected" stale="false" population="rabbits" measured-compound="triclabendazole sulphoxide" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="triclabendazole" model-id="Triclabendazole_AlvarezBujidos1993_reference" status="rejected" stale="false" population="normal rabbits" measured-compound="triclabendazole sulphoxide" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Alvarez-Bujidos ML, Ortiz AI, Negro A, Cubría JC, Ordóñez D. Pharmacokinetics of triclabendazole in rabbits. Comparative biochemistry and physiology. C, Comparative pharmacology and toxicology 106(3):805–808 (1993).
@@ -49,13 +49,13 @@ Alvarez-Bujidos ML, Ortiz AI, Negro A, Cubría JC, Ordóñez D. Pharmacokinetics
 
 ### Reviewer guidance
 
-**The record lacks compartmental volume and clearance parameters because it reports only AUC summary statistics from an abstract-only source for triclabendazole sulphoxide.**
+**No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-Both triclabendazole sulphoxide and sulphone metabolites are orphaned, as no path connects them to the dose compartment. The record contains no volume of distribution or clearance values, confirming it is not a fitted compartmental model. Summary statistics like AUC of 240 µg·h/mL for the sulphoxide stood in for pharmacokinetic parameter estimates. Extracted — triclabendazole sulphoxide (TCBZ-SO): AUC 240 µg·h/mL; triclabendazole sulphone (TCBZ-SO2): AUC 185 µg·h/mL.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is triclabendazole's own; they describe triclabendazole sulphoxide (TCBZ-SO) and triclabendazole sulphone (TCBZ-SO2). Extracted — triclabendazole sulphoxide (TCBZ-SO): AUC 240 µg·h/mL; triclabendazole sulphone (TCBZ-SO2): AUC 185 µg·h/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has triclabendazole, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,4 +148,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btriclabendazole%5D%20Triclabendazole_AlvarezBujidos1993_reference&body=Drug%3A%20triclabendazole%0ARecord%3A%20Triclabendazole_AlvarezBujidos1993_reference%0APaper%3A%20Alvarez-Bujidos_1993%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_triclabendazole/Triclabendazole_AlvarezBujidos1993_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 09:34 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:58 UTC</sub>

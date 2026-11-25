@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> Rejected because the paper concerns another drug, not arginine, leaving parameters like clearance at 5.06 L/h/kg unverified.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="Arginine" model-id="Arginine_Camargo2025_reference" status="rejected" stale="false" population="" measured-compound="arginine" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Camargo S, Medeiros C, Silva L, Jesus RL, Araujo F, Brito D et al. Complexed Lin
 
 ### Reviewer guidance
 
-**Rejected because the paper concerns another drug, not arginine, leaving parameters like clearance at 5.06 L/h/kg unverified.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The source paper was identified as being about a different molecule, meaning the arginine parameters are not derived from the actual study. Consequently, the bioavailability and lag time were set to library defaults rather than being estimated from the data. A second reader disputed the single-compartment topology, suggesting a more complex structure might be required, though the identity mismatch remains the primary cause of refusal. Extracted — arginine: CL 5.06 L/h/kg, V 22.4 L, kabs 0.226 h−1.
+Extracted — arginine: CL 5.06 L/h/kg, V 22.4 L, kabs 0.226 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q30: this record has none, the second reading 1; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.833 (10 of 12 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | cross-check contradicted by a second reader: verdict disputed; agreement 0.833 (10 of 12 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

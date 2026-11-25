@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Dinutuximab’s clearance, distribution volume, and central-to-peripheral rate were missing; CL 0.683 L/d, V1 1.43 L, and k12 0.552 1/d were assigned to ch14.18-UTC / ch14.18-NCI.
+> No value for dinutuximab's clearance, volume of distribution and central→peripheral rate constant — all 8 extracted parameters describe ch14.18-UTC / ch14.18-NCI (dinutuximab), not dinutuximab; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="dinutuximab" model-id="Dinutuximab_Marachelian2016_ch14_18_utc" status="model_quarantined" stale="false" population="pediatric patients with high-risk neuroblastoma" measured-compound="ch14.18" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Marachelian A, Desai A, Balis F, Katzenstein H, Qayed M, Armstrong M et al. Comp
 
 ### Reviewer guidance
 
-**Dinutuximab’s clearance, distribution volume, and central-to-peripheral rate were missing; CL 0.683 L/d, V1 1.43 L, and k12 0.552 1/d were assigned to ch14.18-UTC / ch14.18-NCI.**
+**No value for dinutuximab's clearance, volume of distribution and central→peripheral rate constant — all 8 extracted parameters describe ch14.18-UTC / ch14.18-NCI (dinutuximab), not dinutuximab; t6_deviations (+1 more).**
 
-No value for dinutuximab’s clearance, volume of distribution and central→peripheral rate constant—all 8 extracted parameters describe ch14.18-UTC / ch14.18-NCI, not dinutuximab. The model was built, but a library placeholder stood in for those missing values, so it was held back rather than published with invented numbers. A second reader disputed the record’s dose compound and primary analyte, identifying both as unknown. Extracted — ch14.18-UTC / ch14.18-NCI (dinutuximab): CL 0.683 L/d, Q 0.767 L/d, V1 1.43 L, V2 3.94 L, Vss 5.38 L, kel 0.489 1/d, k12 0.552 1/d, k21 0.199 1/d.
+The model was built, but dinutuximab's clearance, volume of distribution and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — ch14.18-UTC / ch14.18-NCI (dinutuximab): CL 0.683 L/d, Q 0.767 L/d, V1 1.43 L, V2 3.94 L, Vss 5.38 L, kel 0.489 1/d, k12 0.552 1/d, k21 0.199 1/d.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ch14.18-UTC / ch14.18-NCI, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -166,7 +166,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 7 scholar param(s) emitted or defaulted | 7 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.833 (10 of 12 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | cross-check contradicted by a second reader: verdict disputed; agreement 0.833 (10 of 12 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 6.57 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 6.88 |  |  | no simulated metric for this quantity (single reference sim) |
 

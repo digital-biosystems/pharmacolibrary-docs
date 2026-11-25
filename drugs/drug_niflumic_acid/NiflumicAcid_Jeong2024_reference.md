@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant for niflumic acid has a dimension mismatch, using L/h instead of 1/h.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="niflumic acid" model-id="NiflumicAcid_Jeong2024_reference" status="rejected" stale="false" population="healthy Korean men" measured-compound="morningumate" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -51,13 +51,13 @@ Jeong SH, Jang JH, Lee YB. Modeling population pharmacokinetics of morniflumate 
 
 ### Reviewer guidance
 
-**The absorption rate constant for niflumic acid has a dimension mismatch, using L/h instead of 1/h.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists the absorption rate constant (kabs) with a value of 9.89 and unit L/h, which conflicts with the required reciprocal time dimension. Additionally, the metabolite link from morningumate to niflumic acid was flagged as an unlinked metabolite. The Css_ratio parameter is assigned the label tvCL p /F, indicating a misidentification of a drug interaction parameter as a clearance term. Extracted — niflumic acid: V1/F 111 L, CL/F 10.4 L/h, V2/F 1e+04 L, Css_ratio 378 mL/h, kabs 9.89 L/h.
+A reported unit could not be converted (Css_ratio, kabs and equation variable), so that value has no SI equivalent. Extracted — niflumic acid: V1/F 111 L, CL/F 10.4 L/h, V2/F 1e+04 L, Css_ratio 378 mL/h, kabs 9.89 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has morningumate, the second reading morni umate; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Abstract-only extraction yielded no verifiable population parameters, and a second reader found no dose compound or primary analyte match.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Kornhuber2006_reference" status="needs_review" stale="false" population="patients with brain tissue samples" measured-compound="amantadine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="amantadine" model-id="Amantadine_Kornhuber2006_reference" status="needs_review" stale="false" population="adults" measured-compound="amantadine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Kornhuber J, Riederer P, Bleich S, Wiltfang J, Kraus T, Meineke I. Pharmacokinetic characterization of amantadine in human brain tissue. Therapeutic drug monitoring 28(5):693–695 (2006).
@@ -17,13 +17,13 @@ Kornhuber J, Riederer P, Bleich S, Wiltfang J, Kraus T, Meineke I. Pharmacokinet
 
 ## Population and dosing
 
-**Population:** patients with brain tissue samples · age group adult · n = 19.
+**Population:** adults · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 3 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_amantadine/Amantadine_Kornhuber2006_reference/Amantadine_Kornhuber2006_reference.svg" alt="Amantadine_Kornhuber2006_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -33,14 +33,13 @@ Kornhuber J, Riederer P, Bleich S, Wiltfang J, Kraus T, Meineke I. Pharmacokinet
 
 | label | parameter | value | unit |
 |---|---|---|---|
+| elimination constant in brain tissue | kel | 0.00447 | 1/h |
 | t1/2 | t1/2z | 6.5 | days |
 | apparent volume of distribution | V/F | 65.5 | L |
-| CL/F, L/h c | CL/F | 390.7 | L/h |
-| KA (h−1) | kabs | 3.3 | h−1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,22 +49,21 @@ Kornhuber J, Riederer P, Bleich S, Wiltfang J, Kraus T, Meineke I. Pharmacokinet
 
 ### Reviewer guidance
 
-**Abstract-only extraction yielded no verifiable population parameters, and a second reader found no dose compound or primary analyte match.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record is based solely on the paper's abstract, so the summary statistics for amantadine (e.g., 6.5 day half-life, 65.5 L apparent volume) stand in for a fitted model. A second reader disagreed on every field, identifying the dose compound and primary analyte as unknown and finding no parameter values. Additionally, an elimination constant of 0.00447 for brain tissue was reported by the second reader but not present in this record. Extracted — amantadine: t1/2z 6.5 days, V/F 65.5 L, CL/F 391 L/h, kabs 3.3 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — amantadine: kel 0.00447 1/h, t1/2z 6.5 days, V/F 65.5 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amantadine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| t1/2 | `Q57` · t1/2z | 6.5 | days | 5.616e+05 | s | d | exact (1) | Kornhuber_2006:abstract |
+| elimination constant in brain tissue | `Q47` · kel | 0.00447 | 1/h | 1.242e-06 | 1/s | 1/h | llm (0.6) | Kornhuber_2006:abstract |
+| t1/2 | `Q57` · t1/2z | 6.5 | days | 5.616e+05 | s | d | half_life_rule (0.95) | Kornhuber_2006:abstract |
 | apparent volume of distribution | `Q76` · V/F | 65.5 | L | 0.0655 | m3 | l | exact (1) | Kornhuber_2006:abstract |
-| CL/F, L/h c | `Q27` · CL/F | 390.7 | L/h | 0.0001085 | m3/s | L/h | review_gapfill (0.7) | Ohk_2022:review |
-| KA (h−1) | `Q49` · kabs | 3.3 | h−1 | 0.0009167 | 1/s | 1/h | review_gapfill (0.7) | Jaber_2021:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,46 +73,29 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- dropped PD-category row 'elimination constant in brain tissue' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Kornhuber_2006:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=amantadine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q27 (CL/F) from Ohk_2022's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Jaber_2021's review values (primary lacked it)
-- derived CL/F=0.291033 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
+- derived CL/F=0.292785 L/h from Ke × V/F = CL/F (Q47 × Q76); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Kornhuber_2006_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>9 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` | 65.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent volume of distribution]` |  | 65.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f, l/h c]` | 390.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination constant in brain tissue]` |  | 0.00447 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 3.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2]` | 6.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2]` |  | 6.5 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | amantadine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | amantadine | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -126,16 +107,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Ohk_2022:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Jaber_2021:review'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Kornhuber_2006:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Kornhuber_2006:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Kornhuber_2006:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 391 L/h | ['Ohk_2022:review'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 65.5 L | ['Kornhuber_2006:abstract'] |
 
 **Reviewer per-scenario checks:**
@@ -147,10 +126,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
 | T3_output_variable | pass | C_central (measured=amantadine) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.182, 0 of 1 reader(s) agree | 0.182 | cross-check disputed by a second reader: verdict disputed, agreement 0.182, 0 of 1 reader(s) agree |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -166,19 +145,61 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_amantadine/Amantadine_Kornhuber2006_reference/Amantadine_Kornhuber2006_reference_modelica.zip" download>Amantadine_Kornhuber2006_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_amantadine/Amantadine_Kornhuber2006_reference/Amantadine_Kornhuber2006_reference_fmi.zip" download>Amantadine_Kornhuber2006_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_amantadine/Amantadine_Kornhuber2006_reference/Amantadine_Kornhuber2006_reference_matlab.zip" download>Amantadine_Kornhuber2006_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_amantadine/Amantadine_Kornhuber2006_reference/Amantadine_Kornhuber2006_reference_matlab_simbio.zip" download>Amantadine_Kornhuber2006_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_amantadine/Amantadine_Kornhuber2006_reference/Amantadine_Kornhuber2006_reference_sbml.zip" download>Amantadine_Kornhuber2006_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_amantadine/Amantadine_Kornhuber2006_reference/Amantadine_Kornhuber2006_reference_cellml.zip" download>Amantadine_Kornhuber2006_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.1512 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 0.0002 | kg |
+| input | model | `Cl` | 8.133e-08 | m3/s |
+| input | model | `VdPerKg` | 0.0009357 | m3/kg |
+| input | model | `ka` | 0.0001389 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Kornhuber J, Riederer P, Bleich S, Wiltfang J, Kraus T, Meineke I. Pharmacokinetic characterization of amantadine in human brain tissue. Therapeutic drug monitoring 28(5):693–695 (2006). [doi:10.1097/01.ftd.0000245390.48552.04](https://doi.org/10.1097/01.ftd.0000245390.48552.04)
+
+**This record:** Pharmacolibrary, model `Amantadine_Kornhuber2006_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_amantadine/Amantadine_Kornhuber2006_reference>
+
+```bibtex
+@misc{pharmacolibrary_AmantadineKornhuber2006reference,
+  title  = {{Pharmacolibrary model Amantadine_Kornhuber2006_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_amantadine/Amantadine_Kornhuber2006_reference},
+  note   = {Parameters from doi:10.1097/01.ftd.0000245390.48552.04},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 200 mg, single dose, first-order absorption (ka 3.3 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 200 mg oral (N04BB01) (defined daily dose)._
+**Administration: oral** — 200 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 200 mg oral (N04BB01) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_amantadine/Amantadine_Kornhuber2006_reference/Amantadine_Kornhuber2006_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_amantadine/Amantadine_Kornhuber2006_reference/Amantadine_Kornhuber2006_reference_sim_controls.json"></dbs-fmusim>
 
@@ -188,4 +209,4 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamantadine%5D%20Amantadine_Kornhuber2006_reference&body=Drug%3A%20amantadine%0ARecord%3A%20Amantadine_Kornhuber2006_reference%0APaper%3A%20Kornhuber_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amantadine/Amantadine_Kornhuber2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 12:39 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:21 UTC</sub>

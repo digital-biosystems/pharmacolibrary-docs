@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="nordazepam" model-id="Nordazepam_Wang2020v2_reference" status="rejected" stale="false" population="healthy Chinese adults" measured-compound="nordazepam" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="nordazepam" model-id="Nordazepam_Wang2020v2_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="nordazepam" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Wang LL, Ren XX, He Y, Cui GF, Wei ZW, Yun KM. An Experimental Pharmacokinetics Study of Diazepam and Its Metabolites in Oral Fluid of Chinese Population. Journal of analytical toxicology 44(4):348–353 (2020).
@@ -119,4 +119,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnordazepam%5D%20Nordazepam_Wang2020v2_reference&body=Drug%3A%20nordazepam%0ARecord%3A%20Nordazepam_Wang2020v2_reference%0APaper%3A%20Wang_2020_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nordazepam/Nordazepam_Wang2020v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:43 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:35 UTC</sub>

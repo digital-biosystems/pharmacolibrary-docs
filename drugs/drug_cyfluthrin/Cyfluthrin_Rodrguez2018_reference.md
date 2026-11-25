@@ -24,7 +24,7 @@ Rodríguez JL, Ares I, Martínez M, Martínez-Larrañaga MR, Anadón A, Martíne
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,15 +32,14 @@ Rodríguez JL, Ares I, Martínez M, Martínez-Larrañaga MR, Anadón A, Martíne
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| AUC (0-24h) | AUC | 6.11 | h*ng/mL |
+| AUC (0-24h) | AUC | 6.11 | mg h/L |
 | Cmax | Cmax | 0.385 | μg/mL |
 | T1/2β | t1/2β | 17.15 | h |
-| Oral bioavailability | Fab | 71.6 | % |
-| AUC (0-24h) in hypothalamus | AUCt | 19.36 | h*ng/mL |
+| Oral bioavailability | Fab | 71.6 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.188). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +51,9 @@ Rodríguez JL, Ares I, Martínez M, Martínez-Larrañaga MR, Anadón A, Martíne
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cyfluthrin: AUC 6.11 h*ng/mL, Cmax 0.385 μg/mL, t1/2β 17.1 h, Fab 71.6 %, AUCt 19.4 h*ng/mL.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cyfluthrin: AUC 6.11 mg h/L, Cmax 0.385 μg/mL, t1/2β 17.1 h, Fab 71.6.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cyfluthrin, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -62,11 +61,10 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| AUC (0-24h) | `Q88` · AUC | 6.11 | h*ng/mL |  |  | h*ng/mL | exact (1) | Rodríguez_2018:abstract |
-| Cmax | `Q32` · Cmax | 0.385 | μg/mL |  |  | µg/ml | exact (1) | Rodríguez_2018:abstract |
-| T1/2β | `Q60` · t1/2β | 17.15 | h | 6.174e+04 | s | h | exact (1) | Rodríguez_2018:abstract |
-| Oral bioavailability | `Q40` · Fab | 71.6 | % |  |  |  | exact (1) | Rodríguez_2018:abstract |
-| AUC (0-24h) in hypothalamus | `Q19` · AUCt | 19.36 | h*ng/mL |  |  | h*ng/mL | llm_corrected (0.6) | Rodríguez_2018:abstract |
+| AUC (0-24h) | `Q88` · AUC | 6.11 | mg h/L | 22 | kg*s/m3 | (h·mg)/l | exact (1) | Rodríguez_2018:abstract, Rodríguez_2018:abstract |
+| Cmax | `Q32` · Cmax | 0.385 | μg/mL | 0.000385 | kg/m3 | µg/ml | exact (1) | Rodríguez_2018:abstract, Rodríguez_2018:abstract |
+| T1/2β | `Q60` · t1/2β | 17.15 | h | 6.174e+04 | s | h | half_life_rule (0.95) | Rodríguez_2018:abstract, Rodríguez_2018:abstract |
+| Oral bioavailability | `Q40` · Fab | 71.6 |  |  |  |  | exact (1) | Rodríguez_2018:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -76,52 +74,25 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'mg h/L' (AUC)
-- unit_dimension_unknown: 'mg h/L' (AUCt)
-- unit_dimension_mismatch: 'Cmax in hypothalamus' → Q32 (unit 'dimensionless' vs ontology '[mass] / [length] ** 3') — route to review
-- dropped duplicate Q32 ('Cmax in hypothalamus', value 1.21) — already have one for this compound
-- dropped duplicate Q60 ('T1/2β in hypothalamus', value 22.73) — already have one for this compound
-- implicit units: 'AUC (0-24h)' → h*ng/mL (from the popPK convention: 'No unit stated in text or footnotes; AUC over 0-24 h is conventionally expressed as concentration × time, e.g. h·ng/mL, ')
-- implicit units: 'AUC (0-24h) in hypothalamus' → h*ng/mL (from the popPK convention: 'No unit stated in text or footnotes; tissue AUC from 0 to 24 h is conventionally h·ng/mL, consistent with the magnitude ')
+- dropped unlinked row (NIL): 'single oral' — extend the ontology if this is a real PK parameter (source ['Rodríguez_2018:abstract'])
+- dropped unlinked row (NIL): 'intravenous (IV)' — extend the ontology if this is a real PK parameter (source ['Rodríguez_2018:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=cyfluthrin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Rodríguez_2018_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Rodríguez_2018_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.188 (3/16 fields) | 13 |
+| `gpt-oss-120b` | confirmed | 1.0 (9/9 fields) | none |
 
-<details><summary>13 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[auc (0-24h) in hypothalamus]` | 19.36 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc (0-24h) in hypothalamus]` |  | 19.36 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc]` | 6.11 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc]` |  | 6.11 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` | 0.385 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cmax]` |  | 0.385 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral bioavailability]` | 71.6 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral bioavailability]` |  | 71.6 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[single oral]` |  | 20 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2β]` | 17.15 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2β]` |  | 17.15 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | cyfluthrin | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | cyfluthrin | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -133,13 +104,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q19 | pass | [time] * [mass] / [length] ** 3 |  | ['Rodríguez_2018:abstract'] |
-| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Rodríguez_2018:abstract'] |
-| C5_dimension_Q60 | pass | [time] |  | ['Rodríguez_2018:abstract'] |
-| C5_dimension_Q88 | pass | [time] * [mass] / [length] ** 3 |  | ['Rodríguez_2018:abstract'] |
+| C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Rodríguez_2018:abstract', 'Rodríguez_2018:abstract'] |
+| C5_dimension_Q60 | pass | [time] |  | ['Rodríguez_2018:abstract', 'Rodríguez_2018:abstract'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Rodríguez_2018:abstract', 'Rodríguez_2018:abstract'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -174,4 +144,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bcyfluthrin%5D%20Cyfluthrin_Rodrguez2018_reference&body=Drug%3A%20cyfluthrin%0ARecord%3A%20Cyfluthrin_Rodrguez2018_reference%0APaper%3A%20Rodr%C3%ADguez_2018%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_cyfluthrin/Cyfluthrin_Rodrguez2018_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 12:05 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 20:25 UTC</sub>

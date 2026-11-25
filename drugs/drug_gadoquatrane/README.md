@@ -25,7 +25,9 @@ Gadoquatrane is a paramagnetic contrast medium used for magnetic resonance imagi
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="monkey" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub><br><sub>blocking: C2_base_Q22 failed (ratio 0.8772)</sub> | [Guenther_2025_reference](drugs/drug_gadoquatrane/Gadoquatrane_Guenther2025_reference.md) | — | 1-compartment (no model) | 7 | Guenther C et al., Pharmacokinetics, Excretion, and Organ…, Investigative radiology (2025) | [10.1097/RLI.0000000000001211](https://doi.org/10.1097/RLI.0000000000001211) |
+| <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88, Q17 — no SI value to build from</sub><br><sub>blocking: C2_base_Q22 failed (ratio 0.9091)</sub> | [Guenther_2025_dy_butrol](drugs/drug_gadoquatrane/Gadoquatrane_Guenther2025_dy_butrol.md) | — | 1-compartment (no model) | 8 | Guenther C et al., Pharmacokinetics, Excretion, and Organ…, Investigative radiology (2025) | [10.1097/RLI.0000000000001211](https://doi.org/10.1097/RLI.0000000000001211) |
+| <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88, Q19 — no SI value to build from</sub><br><sub>blocking: C2_base_Q22 failed (ratio 0.8772)</sub> | [↳ gadoquatrane](drugs/drug_gadoquatrane/Gadoquatrane_Guenther2025_gadoquatrane.md) | — | 1-compartment (no model) | 8 |  |  |
+| <span class="pk-rf" hidden data-species="monkey" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub><br><sub>blocking: C2_base_Q22 failed (ratio 0.8696)</sub> | [↳ tb_dota](drugs/drug_gadoquatrane/Gadoquatrane_Guenther2025_tb_dota.md) | — | 1-compartment (no model) | 7 |  |  |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,18 +41,24 @@ Gadoquatrane is a paramagnetic contrast medium used for magnetic resonance imagi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:26 | 1:15 | 1/0/0 | 0/0/0 | 0/0/0 | 23,832/6,550 | openai / gpt-6-luna | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-23 12:39 | 6:31 | 3/0/0 | 0/0/0 | 0/0/0 | 64,211/22,358 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 1 matched, 1 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 3  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Guenther_2025 | not_relevant | 0 | 0 | The study reports standard pharmacokinetics in cynomolgus monkeys and does not investigate the effect of gene variants or genotypes on PK parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgadoquatrane%5D&body=Drug%3A%20gadoquatrane%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gadoquatrane/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 18:25 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 12:32 UTC</sub>

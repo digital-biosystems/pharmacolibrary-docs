@@ -47,7 +47,7 @@ Hirai T, Kasai H, Naganuma M, Hagiwara N, Shiga T. Population pharmacokinetic an
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of multiplicative, %: this record has none, the second reading 36.5. That field does not shape the model.
 

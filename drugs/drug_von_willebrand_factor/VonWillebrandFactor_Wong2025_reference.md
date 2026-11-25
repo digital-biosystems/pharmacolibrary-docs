@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record assigns von Willebrand factor a clearance of 0.433 dL/h, although Wong_2025 reports pharmacokinetics for efanesoctocog alfa.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Wong2025_reference" status="rejected" stale="false" population="" measured-compound="von_willebrand_factor" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Wong N, Bhagunde P, Nyberg J, Katragadda S, Demissie M, Willemze A et al. Efanes
 
 ### Reviewer guidance
 
-**The record assigns von Willebrand factor a clearance of 0.433 dL/h, although Wong_2025 reports pharmacokinetics for efanesoctocog alfa.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The record also lists von Willebrand factor’s volume of distribution as 30.2 dL. The paper reports population pharmacokinetic parameters for efanesoctocog alfa; von Willebrand factor is only a co-medication or covariate, with its biomarker kinetics reported in pharmacodynamic records. Extracted — von willebrand factor: CL 0.433 dL/h, V 30.2 dL.
+Extracted — von willebrand factor: CL 0.433 dL/h, V 30.2 dL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has 15, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.667 (6 of 9 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

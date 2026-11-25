@@ -8,7 +8,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="gadopentetic acid" model-id="GadopenteticAcid_Daldrup1998_reference" status="rejected" stale="false" population="rats with R3230 adenocarcinoma tumors" measured-compound="gadopentetate" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="gadopentetic acid" model-id="GadopenteticAcid_Daldrup1998_reference" status="rejected" stale="false" population="rats with R3230 adenocarcinomas" measured-compound="gadopentetate" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Daldrup HE, Shames DM, Husseini W, Wendland MF, Okuhata Y, Brasch RC. Quantification of the extraction fraction for gadopentetate across breast cancer capillaries. Magnetic resonance in medicine 40(4):537–543 (1998).
@@ -16,7 +16,7 @@ Daldrup HE, Shames DM, Husseini W, Wendland MF, Okuhata Y, Brasch RC. Quantifica
 
 ## Population and dosing
 
-**Population:** rats with R3230 adenocarcinoma tumors · condition R3230 adenocarcinoma · n = 7.
+**Population:** rats with R3230 adenocarcinomas · condition breast cancer.
 
 **Dosed compound ≠ measured compound:** dosed gadopentetate dimeglumine, measured gadopentetate.
 
@@ -36,7 +36,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (confirmed, agreement 1.0), qwen3.8-27b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed 1/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,18 +58,18 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=gadopentetate
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
 - no GROBID TEI available; abstract in Daldrup_1998_metadata.yaml carries no parameter-bearing sentence
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  1 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | confirmed | 1.0 (4/4 fields) | none |
 | `qwen3.8-27b` | not confirmed | 0.75 (3/4 fields) | 1 |
 
 <details><summary>1 field discrepancy</summary>
@@ -116,4 +116,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgadopentetic_acid%5D%20GadopenteticAcid_Daldrup1998_reference&body=Drug%3A%20gadopentetic_acid%0ARecord%3A%20GadopenteticAcid_Daldrup1998_reference%0APaper%3A%20Daldrup_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gadopentetic_acid/GadopenteticAcid_Daldrup1998_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 18:02 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:58 UTC</sub>

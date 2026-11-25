@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.60).">human + animal</span>
 
-> A second reader disputed the apparent parameterization and failed to extract the clearance value of 32.8 L/h for carbenicillin, leaving the record unresolved.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="carbenicillin" model-id="Carbenicillin_Strydom2024_reference" status="needs_review" stale="false" population="" measured-compound="carbenicillin" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Strydom N, Ernest JP, Imperial M, Solans BP, Wang Q, Tasneen R et al. Dose optim
 
 ### Reviewer guidance
 
-**A second reader disputed the apparent parameterization and failed to extract the clearance value of 32.8 L/h for carbenicillin, leaving the record unresolved.**
+**cross_check_disputed; x1_cross_check.**
 
-The review was held back because the second reader disagreed with the apparent parameterization and could not verify the reported clearance of 32.8 L/h. This reader also failed to extract values for the volume of distribution and the absorption rate constant. Consequently, the cross-check agreement score of 0.692 fell below the required threshold, preventing the model from being accepted. Extracted — carbenicillin: CL/F 32.8 L/h, V1 49 L, V2 14 L, Q 0.8 L/h, kabs 1.1 h−1.
+Extracted — carbenicillin: CL/F 32.8 L/h, V1 49 L, V2 14 L, Q 0.8 L/h, kabs 1.1 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL/F: this record has 32.8, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -141,7 +141,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.692, 0 of 1 reader(s) agree | 0.692 | cross-check disputed by a second reader: verdict disputed, agreement 0.692, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.692 (9 of 13 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.692 | cross-check contradicted by a second reader: verdict disputed; agreement 0.692 (9 of 13 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

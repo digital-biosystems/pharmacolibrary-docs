@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Dabrafenib’s reported CL/F is 13.5 L/h, but model clearance and other key parameters were left without extracted values, so placeholders led to quarantine.
+> No value for dabrafenib's clearance, volume of distribution, absorption rate constant and absorption lag time; the covariate scenarios were not simulated (+3 more).
 
 <div class="pk-model-meta" hidden drug="dabrafenib" model-id="Dabrafenib_Isberner2022_reference" status="model_quarantined" stale="false" population="patients with BRAFV600-mutant melanoma" measured-compound="dabrafenib, hydroxy-dabrafenib, and trametinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -57,13 +57,13 @@ Isberner N, Gesierich A, Balakirouchenane D, Schilling B, Aghai-Trommeschlaeger 
 
 ### Reviewer guidance
 
-**Dabrafenib’s reported CL/F is 13.5 L/h, but model clearance and other key parameters were left without extracted values, so placeholders led to quarantine.**
+**No value for dabrafenib's clearance, volume of distribution, absorption rate constant and absorption lag time; the covariate scenarios were not simulated (+3 more).**
 
-Although the record lists dabrafenib CL/F 13.5 L/h and V1/F 30.8 L, no value was extracted for model clearance, volume, absorption rate constant, or absorption lag time; placeholders were used, and the absorption rate was defaulted although it was not reported. The model used a one-compartment enteral structure instead of the expected parent–metabolite structure, and first-order depot input was assumed; covariate scenarios were not simulated, only the reference individual. A second reader disputed the verdict, with agreement 0.231. Extracted — dabrafenib: V1/F 30.8 L, CL/F 13.5 L/h; trametinib: Q/F 97.7 L/h.
+The model was built, but dabrafenib's clearance, volume of distribution, absorption rate constant and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — dabrafenib: V1/F 30.8 L, CL/F 13.5 L/h; trametinib: Q/F 97.7 L/h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has dabrafenib and trametinib, the second reading dabrafenib; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -169,7 +169,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.231, 0 of 1 reader(s) agree | 0.231 | cross-check disputed by a second reader: verdict disputed, agreement 0.231, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.231 (3 of 13 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.231 | cross-check contradicted by a second reader: verdict disputed; agreement 0.231 (3 of 13 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

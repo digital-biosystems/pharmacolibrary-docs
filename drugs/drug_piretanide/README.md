@@ -33,7 +33,7 @@ Piretanide is a high-ceiling diuretic used to treat hypertension and fluid reten
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Marone_1989_diuresis](drugs/drug_piretanide/pd_Marone_1989_diuresis.md) | diuresis ← urinary piretanide excretion · direct Emax (saturable) effect | — | Marone C et al., Efficacy and pharmacokinetics of pireta…, European journal of clinica… (1989) | [10.1111/j.1365-2362.1989.tb00245.x](https://doi.org/10.1111/j.1365-2362.1989.tb00245.x) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Marone_1989_diuresis](drugs/drug_piretanide/pd_Marone_1989_diuresis.md) | diuresis ← urinary piretanide excretion · direct Emax (saturable) effect | — | Marone C et al., Efficacy and pharmacokinetics of pireta…, European journal of clinica… (1989) | [10.1111/j.1365-2362.1989.tb00245.x](https://doi.org/10.1111/j.1365-2362.1989.tb00245.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +47,7 @@ Piretanide is a high-ceiling diuretic used to treat hypertension and fluid reten
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 19:36 | 6:30 | 1/1/0 | 1/0/0 | 0/0/0 | 51,058/10,451 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/0 | 3/0 | 0 |
+| 2026-10-06 19:36 | 6:30 | 1/1/0 | 0/1/0 | 0/0/0 | 51,058/10,451 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/0 | 3/0 | 0 |
 
 ## Coverage
 

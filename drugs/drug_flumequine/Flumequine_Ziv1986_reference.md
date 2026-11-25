@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> Flumequine clearance lacks a specific value, so the model used a generic placeholder and was withheld.
+> No value for flumequine's clearance; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="flumequine" model-id="Flumequine_Ziv1986_reference" status="model_quarantined" stale="false" population="calves" measured-compound="flumequine" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Ziv G, Soback S, Bor A, Kurtz B. Clinical pharmacokinetics of flumequine in calv
 
 ### Reviewer guidance
 
-**Flumequine clearance lacks a specific value, so the model used a generic placeholder and was withheld.**
+**No value for flumequine's clearance; t6_deviations.**
 
-The abstract provided summary statistics but no explicit clearance estimate for flumequine. Consequently, the model relied on a default value rather than a fitted parameter. This prevented publication of the model without an invented number. Extracted — flumequine: t1/2α 13 min, t1/2β 2.25 h, V 1.48 l/kg, Vss 1.43 l/kg, Cmax 6.2 micrograms/ml, Fab 44 %, fu 74.5 %.
+The model was built, but flumequine's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flumequine: t1/2α 13 min, t1/2β 2.25 h, V 1.48 l/kg, Vss 1.43 l/kg, Cmax 6.2 micrograms/ml, Fab 44 %, fu 74.5 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of bioavailability: this record has 44, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.714, 0 of 1 reader(s) agree | 0.714 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.714 (10 of 14 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.714 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

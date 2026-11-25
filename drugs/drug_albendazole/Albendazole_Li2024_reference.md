@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P02C&quot;,&quot;href&quot;:&quot;atc/P02C.md&quot;},{&quot;label&quot;:&quot;albendazole&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/&quot;},{&quot;label&quot;:&quot;Li_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Albendazole_Castro2009_reference&quot;,&quot;label&quot;:&quot;Castro_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Castro2009_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Algorta2022_reference&quot;,&quot;label&quot;:&quot;Algorta_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Algorta2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Chhonker2023_reference&quot;,&quot;label&quot;:&quot;Chhonker_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Chhonker2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Formentini2001_reference&quot;,&quot;label&quot;:&quot;Formentini_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Formentini2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Fimbo2023_reference&quot;,&quot;label&quot;:&quot;Fimbo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Fimbo2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Albendazole_Algorta2022_reference&quot;,&quot;label&quot;:&quot;Algorta_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Algorta2022_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Chhonker2023_reference&quot;,&quot;label&quot;:&quot;Chhonker_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Chhonker2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Formentini2001_reference&quot;,&quot;label&quot;:&quot;Formentini_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Formentini2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Albendazole_Fimbo2023_reference&quot;,&quot;label&quot;:&quot;Fimbo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_albendazole/Albendazole_Fimbo2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
-> Quarantined because albendazole's clearance, volume of distribution, and lag time were left at library defaults since all extracted parameters describe only the metabolite albendazole sulphoxide.
+> No value for albendazole's clearance, volume of distribution and absorption lag time — all 8 extracted parameters describe albendazole sulphoxide (ABZSO), not albendazole; t3_topology_template (+2 more).
 
 <div class="pk-model-meta" hidden drug="albendazole" model-id="Albendazole_Li2024_reference" status="model_quarantined" stale="false" population="donkeys" measured-compound="albendazole sulphoxide" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -46,7 +46,7 @@ Li Z, Qin X, Wang C, Liu W. Pharmacokinetics and tissue residues of albendazole 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.048). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,11 +56,13 @@ Li Z, Qin X, Wang C, Liu W. Pharmacokinetics and tissue residues of albendazole 
 
 ### Reviewer guidance
 
-**Quarantined because albendazole's clearance, volume of distribution, and lag time were left at library defaults since all extracted parameters describe only the metabolite albendazole sulphoxide.**
+**No value for albendazole's clearance, volume of distribution and absorption lag time — all 8 extracted parameters describe albendazole sulphoxide (ABZSO), not albendazole; t3_topology_template (+2 more).**
 
-The record lists eight parameters for albendazole sulphoxide, including a clearance of 0.59 L/h/kg, but lacks any corresponding values for the parent drug albendazole. Consequently, albendazole's clearance, volume of distribution, and absorption lag time were defaulted instead of using fitted estimates. This omission, combined with the absence of a valid unit conversion for the metabolite, resulted in the model being held back from publication. Extracted — albendazole sulphoxide (ABZSO): kel 1 1/h, kabs 1 1/h, t1/2z 0.67 h, tmax 3.01 h, Cmax 0.58 μg/mL, V/F 10.9 L/kg, AUC 12.8 μg·h/mL, CLb 0.59 L/h/kg.
+The model was built, but albendazole's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (Cmax and AUC), so that value has no SI equivalent. Extracted — albendazole sulphoxide (ABZSO): kel 1 1/h, kabs 1 1/h, t1/2z 0.67 h, tmax 3.01 h, Cmax 0.58 μg/mL, V/F 10.9 L/kg, AUC 12.8 μg·h/mL, CLb 0.59 L/h/kg.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has albendazole sulphoxide, the second reading albendazole; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -114,6 +116,46 @@ The record lists eight parameters for albendazole sulphoxide, including a cleara
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.048 (1/21 fields) | 20 |
+
+<details><summary>20 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['albendazole sulphoxide', 'albendazole sulfone', 'metabolism']] | [['albendazole', 'albendazole sulphoxide', 'metabolism'], ['albendazole sulphoxide', 'albendazole sulfone', 'metabolism'], ['albendazole sulfone', 'albendazole sulfone amine', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[a]` |  | 0.52 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` |  | 10.38 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc]` | 12.81 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` |  | 0.43 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` | 0.58 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clb]` |  | 0.72 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clb]` | 0.59 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` |  | 1.02 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k a]` | 1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k e]` |  | 0.05 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k e]` | 1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t max]` |  | 3.14 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t max]` | 3.01 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2ke]` |  | 0.68 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t1/2ke]` | 0.67 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd/f]` |  | 15.07 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd/f]` | 10.92 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | albendazole sulphoxide | albendazole | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | albendazole sulphoxide | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | source |
@@ -136,25 +178,25 @@ The record lists eight parameters for albendazole sulphoxide, including a cleara
 
 **Reviewer per-scenario checks:**
 
-| check | scenario | status | expected | obtained | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity |  | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates |  | skipped |  |  | no covariate effects in record |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction | apparent params must not be double-corrected |
-| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered | all structural parameters accounted for |
-| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
-| X1_cross_check |  | skipped |  |  | no second reading of this record |
-| T1_cmax | reference | skipped | 0.58 |  | no simulated metric for this quantity (single reference sim) |
-| T1_cmax | reference | skipped | 0.43 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 3.01 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 3.14 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 0.67 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 12.93 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 12.93 |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_terminal | reference | skipped | 14.46 |  | no simulated metric for this quantity (single reference sim) |
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates |  | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
+| T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.048 (1 of 21 compared fields agree, 17 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.048 | cross-check contradicted by a second reader: verdict disputed; agreement 0.048 (1 of 21 compared fields agree, 17 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped | 0.58 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 0.43 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 3.01 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 3.14 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 0.67 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 12.93 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped |  |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 12.93 |  |  | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_terminal | reference | skipped | 14.46 |  |  | no simulated metric for this quantity (single reference sim) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

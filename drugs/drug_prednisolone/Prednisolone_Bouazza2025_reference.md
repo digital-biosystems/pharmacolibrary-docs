@@ -48,7 +48,7 @@ Bouazza N, Semeraro M, Lui G, Froelicher-Bournaud L, Choupeaux L, Treluyer JM et
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of βfdose: this record has none, the second reading -0.28. That field does not shape the model.
 

@@ -1,13 +1,9 @@
 {
- "dose_source": "paper",
+ "dose_source": "WHO ATC DDD 1200 mg oral (L01ED03)",
  "model_id": "Alectinib_Mohmaed2026_fasted_geometric_mean_cv",
  "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
  "observables": [
   "central.C"
- ],
- "paper_doses_kind": "discrete",
- "paper_doses_mg": [
-  0.1
  ],
  "paper_reference": {
   "cmax": [
@@ -18,10 +14,6 @@
    {
     "source": "Mohmaed_2026:other_prose",
     "value_si": 5.49e-08
-   },
-   {
-    "source": "Mohmaed_2026:other_prose",
-    "value_si": 1.42
    },
    {
     "source": "Mohmaed_2026:discussion_prose",
@@ -36,15 +28,15 @@
   "VdPerKg": 0.011085714285714286,
   "adminCount": 1.0,
   "adminDuration": 600.0,
-  "adminMass": 1.0000000000000001e-07,
+  "adminMass": 0.0012,
   "ka": 0.0001388888888888889,
   "weight": 70.0
  },
  "reference_peak_times": {
-  "central.C": 14313.42685370741
+  "central.C": 14435.25208346219
  },
  "reference_peaks": {
-  "central.C": 8.435573277638723e-08
+  "central.C": 0.00101249412159388
  },
  "stop_time": 115200.0,
  "template": "PK_1C_enteral",

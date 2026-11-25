@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;alectinib&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/&quot;},{&quot;label&quot;:&quot;van_2025 \u00b7 value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_fasted_geometric_mean_cv&quot;,&quot;label&quot;:&quot;Mohmaed_2026_fasted_geometric_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_fed_geometric_mean_cv&quot;,&quot;label&quot;:&quot;Mohmaed_2026_fed_geometric_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_fed_geometric_mean_cv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_estimate&quot;,&quot;label&quot;:&quot;Mohmaed_2026_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_fasted_geometric_mean_cv&quot;,&quot;label&quot;:&quot;Mohmaed_2026_fasted_geometric_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_fed_geometric_mean_cv&quot;,&quot;label&quot;:&quot;Mohmaed_2026_fed_geometric_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_fed_geometric_mean_cv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Alectinib's CYP3A4 intrinsic clearance parameter uses μL/min/pmol, conflicting with the required total clearance dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit μL/min/pmol ([length] ** 3 / [time] / [substance]) vs [length] ** 3 / [time]; Q22 unit μL/min/pmol ([length] ** 3 / [time] / [substance]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="alectinib" model-id="Alectinib_van2025_value" status="rejected" stale="false" population="adults with ALK-positive advanced NSCLC and virtual pediatric patients" measured-compound="alectinib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -51,13 +51,13 @@ van Donge T, Guerini E, O'Jeanson A, Parrott N, Devlin C, Stillhart C et al. Mid
 
 ### Reviewer guidance
 
-**Alectinib's CYP3A4 intrinsic clearance parameter uses μL/min/pmol, conflicting with the required total clearance dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit μL/min/pmol ([length] ** 3 / [time] / [substance]) vs [length] ** 3 / [time]; Q22 unit μL/min/pmol ([length] ** 3 / [time] / [substance]) vs [length] ** 3 / [time].**
 
-The record lists a CYP3A4 intrinsic clearance for alectinib as 9.98 μL/min/pmol and for M4 as 1.71 μL/min/pmol. These units represent a substrate-specific rate, whereas the model expects a total clearance parameter with dimensions of volume per time. Additionally, the solubility ratio value of 3.25 lacks a recognized unit definition for conversion. Extracted — alectinib: fu 0.003, Kp 3.25 logKm:w, CL 9.98 μL/min/pmol, CLint 1.71e+03 μL/min/mg; M4: CL 1.71 μL/min/pmol.
+A reported unit could not be converted (Kp, CL, CLint and CL), so that value has no SI equivalent. Extracted — alectinib: fu 0.003, Kp 3.25 logKm:w, CL 9.98 μL/min/pmol, CLint 1.71e+03 μL/min/mg; M4: CL 1.71 μL/min/pmol.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of solubility ratio: this record has 3.25, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

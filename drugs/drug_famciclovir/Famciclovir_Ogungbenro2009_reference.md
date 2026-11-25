@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;famciclovir&quot;,&quot;href&quot;:&quot;drugs/drug_famciclovir/&quot;},{&quot;label&quot;:&quot;Ogungbenro_2009 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Famciclovir_Schenkel2013_reference&quot;,&quot;label&quot;:&quot;Schenkel_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Famciclovir model rejected because apparent clearance parameter CLm/F causes double correction with bioavailability F.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="famciclovir" model-id="Famciclovir_Ogungbenro2009_reference" status="rejected" stale="false" population="adults and children" measured-compound="penciclovir" parameterization="apparent" topology="1C"></div>
 
@@ -16,9 +17,9 @@ Ogungbenro K, Matthews I, Looby M, Kaiser G, Graham G, Aarons L. Population phar
 
 ## Population and dosing
 
-**Population:** adults and children · condition mixed clinical populations, including renal impairment, immunocompromised patients, and hepatitis B · age group mixed · n = 69.
+**Population:** adults and children · condition healthy and diseased (mixed) · age group mixed.
 
-**Dosed compound ≠ measured compound:** dosed famciclovir or penciclovir, measured penciclovir.
+**Dosed compound ≠ measured compound:** dosed famciclovir, measured penciclovir.
 
 ## Model
 
@@ -39,12 +40,12 @@ Ogungbenro K, Matthews I, Looby M, Kaiser G, Graham G, Aarons L. Population phar
 | Q (l h -1 70 kg -1 ) | Q | 60.2 | l h -1 70 kg -1 | 0.342 (None% RSE) |
 | F | Fab | 0.598 |  |  |
 | Tlag (h) | tlag | 0.206 | h |  |
-| 5 | equation variable | -2221 |  |  |
-| theta_equation_variable_weight_power | theta_equation_variable_weight_power | 0.28 |  |  |
+| 3 | equation variable | -2200 |  |  |
+| theta_q319_weight_power | theta_q319_weight_power | 0.28 |  |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.929), qwen3.8-27b (not confirmed, agreement 0.688). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,27 +55,27 @@ Ogungbenro K, Matthews I, Looby M, Kaiser G, Graham G, Aarons L. Population phar
 
 ### Reviewer guidance
 
-**Famciclovir model rejected because apparent clearance parameter CLm/F causes double correction with bioavailability F.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The record defines an apparent metabolite clearance (CLm/F) with a value of 31.2 l h^-1 70 kg^-1 for penciclovir. This parameter implies the bioavailability fraction (F) is already accounted for in the clearance estimate, yet a separate absolute bioavailability parameter F with a value of 0.598 is also included in the model structure. This combination violates parameter coherence by double correcting for absorption. Extracted — penciclovir: kabs 1.86 h -1, CLm/F 31.2 l h -1 70 kg -1, V1 28.6 l.70 kg -1, V2 54.5 l.70 kg -1, Q 60.2 l h -1 70 kg -1, Fab 0.598, tlag 0.206 h.
+None of the extracted parameters is famciclovir's own; they describe penciclovir. Extracted — penciclovir: kabs 1.86 h -1, CLm/F 31.2 l h -1 70 kg -1, V1 28.6 l.70 kg -1, V2 54.5 l.70 kg -1, Q 60.2 l h -1 70 kg -1, Fab 0.598, tlag 0.206 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has famciclovir or penciclovir, the second reading famciclovir; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|
-| ka (h -1 ) | `Q49` · kabs | 1.86 | h -1 | 0.0005167 | 1/s | 1/h | exact (1) | tab_2:row2:col1, tab_2:row2:col2, tab_2:row2:col3, tab_2:row2:col4 | 0.640 (None% RSE) |
-| CL (l h -1 70 kg -1 ) | `Q351` · CLm/F | 31.2 | l h -1 70 kg -1 | 0.0006067 | m3/s | l/(h·kg) | exact (1) | tab_2:row3:col1, tab_2:row3:col2, tab_2:row3:col3, tab_2:row3:col4 | 0.23 (None% RSE) |
-| V1 (l.70 kg -1 ) | `Q63` · V1 | 28.6 | l.70 kg -1 | 2.002 | m3 | l/kg | exact (1) | tab_2:row4:col1, tab_2:row4:col2, tab_2:row4:col3, tab_2:row4:col4 | 0.003 (None% RSE) |
-| V2 (l.70 kg -1 ) | `Q64` · V2 | 54.5 | l.70 kg -1 | 3.815 | m3 | l/kg | exact (1) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col3, tab_2:row5:col4 | 0.255 (None% RSE) |
-| Q (l h -1 70 kg -1 ) | `Q30` · Q | 60.2 | l h -1 70 kg -1 | 0.001171 | m3/s | l/(h·kg) | exact (1) | tab_2:row6:col1, tab_2:row6:col2, tab_2:row6:col3, tab_2:row6:col4 | 0.342 (None% RSE) |
-| F | `Q40` · Fab | 0.598 |  |  |  |  | exact (1) | tab_2:row7:col1, tab_2:row7:col2, tab_2:row7:col3, tab_2:row7:col4 |  |
-| Tlag (h) | `Q83` · tlag | 0.206 | h | 741.6 | s | h | exact (1) | tab_2:row8:col1, tab_2:row8:col2, tab_2:row8:col3, tab_2:row8:col4 |  |
-| 5 | `Q900` · equation variable | -2221 |  |  |  |  | llm (0.6) | Ogungbenro_2009_table_2:row2:col2, Ogungbenro_2009_table_2:row2:col3, Ogungbenro_2009_table_2:row2:col4 |  |
-| theta_equation_variable_weight_power | `Q900` · theta_equation_variable_weight_power | 0.28 |  |  |  |  |  | tab_2:row11:col1, tab_2:row11:col2, tab_2:row11:col3, tab_2:row11:col4 |  |
+| ka (h -1 ) | `Q49` · kabs | 1.86 | h -1 | 0.0005167 | 1/s | 1/h | exact (1) | tab_2:row2:col1 | 0.640 (None% RSE) |
+| CL (l h -1 70 kg -1 ) | `Q351` · CLm/F | 31.2 | l h -1 70 kg -1 | 8.667e-06 | m3/s | l/(h·70kg) | exact (1) | tab_2:row3:col1 | 0.23 (None% RSE) |
+| V1 (l.70 kg -1 ) | `Q63` · V1 | 28.6 | l.70 kg -1 | 0.0286 | m3 | l/70kg | exact (1) | tab_2:row4:col1 | 0.003 (None% RSE) |
+| V2 (l.70 kg -1 ) | `Q64` · V2 | 54.5 | l.70 kg -1 | 0.0545 | m3 | l/70kg | exact (1) | tab_2:row5:col1 | 0.255 (None% RSE) |
+| Q (l h -1 70 kg -1 ) | `Q30` · Q | 60.2 | l h -1 70 kg -1 | 1.672e-05 | m3/s | l/(h·70kg) | exact (1) | tab_2:row6:col1 | 0.342 (None% RSE) |
+| F | `Q40` · Fab | 0.598 |  |  |  |  | exact (1) | tab_2:row7:col1 |  |
+| Tlag (h) | `Q83` · tlag | 0.206 | h | 741.6 | s | h | exact (1) | tab_2:row8:col1 |  |
+| 3 | `Q900` · equation variable | -2200 |  | -2200 |  |  | llm (0.6) | Ogungbenro_2009_table_2:row6:col2, Ogungbenro_2009_table_2:row6:col3, Ogungbenro_2009_table_2:row6:col4 |  |
+| theta_q319_weight_power | `Q900` · theta_q319_weight_power | 0.28 |  |  |  |  |  | tab_2:row11:col1 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -87,42 +88,39 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 - column 'obj' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'dobj' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'ntheta' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'KAGE &lt; 40' — extend the ontology if this is a real PK parameter (source ['tab_2:row9:col1', 'tab_2:row9:col2'])
-- dropped unlinked row (NIL): 'KAGE Ն 40' — extend the ontology if this is a real PK parameter (source ['tab_2:row10:col1', 'tab_2:row10:col2'])
+- dropped unlinked row (NIL): 'KAGE &lt; 40' — extend the ontology if this is a real PK parameter (source ['tab_2:row9:col1'])
 - dropped unlinked row (NIL): '6' — extend the ontology if this is a real PK parameter (source ['Ogungbenro_2009_table_2:row0:col2', 'Ogungbenro_2009_table_2:row0:col3', 'Ogungbenro_2009_table_2:row0:col4'])
-- dropped duplicate Q900 ('4', value '-2207') — already have one for this compound
-- dropped duplicate Q900 ('3', value '-2200') — already have one for this compound
+- dropped unlinked row (NIL): '5' — extend the ontology if this is a real PK parameter (source ['Ogungbenro_2009_table_2:row2:col2', 'Ogungbenro_2009_table_2:row2:col3', 'Ogungbenro_2009_table_2:row2:col4'])
+- dropped unlinked row (NIL): '4' — extend the ontology if this is a real PK parameter (source ['Ogungbenro_2009_table_2:row4:col2', 'Ogungbenro_2009_table_2:row4:col3', 'Ogungbenro_2009_table_2:row4:col4'])
 - dropped unlinked row (NIL): '2' — extend the ontology if this is a real PK parameter (source ['Ogungbenro_2009_table_2:row7:col2', 'Ogungbenro_2009_table_2:row7:col3', 'Ogungbenro_2009_table_2:row7:col4'])
 - dropped unlinked row (NIL): '1' — extend the ontology if this is a real PK parameter (source ['Ogungbenro_2009_table_2:row8:col2', 'Ogungbenro_2009_table_2:row8:col3', 'Ogungbenro_2009_table_2:row8:col4'])
+- covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
 - metabolite penciclovir: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=penciclovir
 - template fit: none — only the metabolite is modelled — no parent compartment
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- row roles (LLM): model_class=compartmental; 23/23 row label(s) assigned, 24 linked by role
-- review gap-fill skipped: this record measures 'penciclovir', not famciclovir — the review values are the parent's
+- row roles: per-genotype parameters — typical value from the reference group: KAGE &lt; 40
+- row roles (LLM): model_class=compartmental; 23/23 row label(s) assigned, 6 linked by role
 
 **Extraction notes:**
-- unparsed cell Ogungbenro_2009_table_2:row0:col1 = '2 comp; Tlag; weight on V1, V2, CL & Q;'
-- unparsed cell Ogungbenro_2009_table_2:row2:col1 = '2 comp; Tlag; weight on V1, V2, CL & Q;'
-- unparsed cell Ogungbenro_2009_table_2:row4:col1 = '2 comp; Tlag; weight on V1, V2, CL & Q;'
-- unparsed cell Ogungbenro_2009_table_2:row6:col1 = '2 comp; Tlag; weight on V1, V2, CL & Q'
-- unparsed cell Ogungbenro_2009_table_2:row7:col1 = '2 comp; Tlag'
-- unparsed cell Ogungbenro_2009_table_2:row8:col1 = '2 comp'
+- table Ogungbenro_2009_table_2: units_need_context
 - companion parameter table 2 transcribed (18 record(s))
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.929 (13/14 fields) | 1 |
 | `qwen3.8-27b` | not confirmed | 0.688 (11/16 fields) | 5 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[3]` | -2200 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[5]` | -2221 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[exponent_of_fclcr]` |  | 0.270 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[kage &lt; 40]` |  | 159 | only_one_extracted |
@@ -144,17 +142,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 7 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C2_reference | fail |  |  |  |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_2:row6:col1', 'tab_2:row6:col2', 'tab_2:row6:col3', 'tab_2:row6:col4'] |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['tab_2:row3:col1', 'tab_2:row3:col2', 'tab_2:row3:col3', 'tab_2:row3:col4'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_2:row2:col1', 'tab_2:row2:col2', 'tab_2:row2:col3', 'tab_2:row2:col4'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_2:row4:col1', 'tab_2:row4:col2', 'tab_2:row4:col3', 'tab_2:row4:col4'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4'] |
-| C5_dimension_Q83 | pass | [time] |  | ['tab_2:row8:col1', 'tab_2:row8:col2', 'tab_2:row8:col3', 'tab_2:row8:col4'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_2:row6:col1'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['tab_2:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_2:row2:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_2:row4:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_2:row5:col1'] |
+| C5_dimension_Q83 | pass | [time] |  | ['tab_2:row8:col1'] |
 | C7_apparent_coherence | fail | F==1, Fm==1, no molar corr. | absolute F=0.598 with apparent parameterization |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q63 | pass | volume within physiological range | 2e+03 L | ['tab_2:row4:col1', 'tab_2:row4:col2', 'tab_2:row4:col3', 'tab_2:row4:col4'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 3.82e+03 L | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 28.6 L | ['tab_2:row4:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 54.5 L | ['tab_2:row5:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -178,4 +175,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfamciclovir%5D%20Famciclovir_Ogungbenro2009_reference&body=Drug%3A%20famciclovir%0ARecord%3A%20Famciclovir_Ogungbenro2009_reference%0APaper%3A%20Ogungbenro_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_famciclovir/Famciclovir_Ogungbenro2009_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:32 UTC</sub>

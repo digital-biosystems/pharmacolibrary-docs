@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-> Sufentanil clearance and rate constant parameters have invalid units, and the model contains an unreachable compartment.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit 13.9-24.3 (dimensionless) vs [length] ** 3 / [time]; Q354 unit 13.9-24.3 (dimensionless) vs [length] ** 3 / [time]; Q303 unit 0.455-0.908 (dimensionless) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Pypendop2014_sufentanil" status="rejected" stale="false" population="isoflurane-anesthetized adult cats" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Pypendop BH, Brosnan RJ, Majewski-Tiedeken CR, Stanley SD, Ilkiw JE. Pharmacokin
 
 ### Reviewer guidance
 
-**Sufentanil clearance and rate constant parameters have invalid units, and the model contains an unreachable compartment.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit 13.9-24.3 (dimensionless) vs [length] ** 3 / [time]; Q354 unit 13.9-24.3 (dimensionless) vs [length] ** 3 / [time]; Q303 unit 0.455-0.908 (dimensionless) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The total and normalized clearance values for sufentanil are listed with dimensionless numeric ranges instead of volume per time units, and a transfer rate constant has a similar mismatch. The model topology was rejected because it includes an orphan compartment with no path from the dose. Extracted — sufentanil: t1/2α 0.5 min, t1/2β 6 min, t1/2γ 54 min, V2 0.14 L/kg, V3 0.52 L/kg, CL 41.2 13.9-24.3, CLnorm 13.9 13.9-24.3, k13 0.258 0.455-0.908, … (+1); fentanyl: V 270 litre, kabs 0.27 minute -1, tlag 15 min.
+A reported unit could not be converted (CL, CLnorm and k13), so that value has no SI equivalent. Extracted — sufentanil: t1/2α 0.5 min, t1/2β 6 min, t1/2γ 54 min, V2 0.14 L/kg, V3 0.52 L/kg, CL 41.2 13.9-24.3, CLnorm 13.9 13.9-24.3, k13 0.258 0.455-0.908, … (+1); fentanyl: V 270 litre, kabs 0.27 minute -1, tlag 15 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

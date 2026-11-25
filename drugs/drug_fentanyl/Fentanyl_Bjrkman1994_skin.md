@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 0.80).">rat</span>
 
-> The fentanyl record was rejected due to a unit dimension mismatch and an unreachable compartment in the one-compartment structure.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q64 unit ml/g ([length] ** 3 / [mass]) vs [length] ** 3; Q352 unit ml/g ([length] ** 3 / [mass]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Bjrkman1994_skin" status="rejected" stale="false" population="rats" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Björkman S, Wada DR, Stanski DR, Ebling WF. Comparative physiological pharmacok
 
 ### Reviewer guidance
 
-**The fentanyl record was rejected due to a unit dimension mismatch and an unreachable compartment in the one-compartment structure.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q64 unit ml/g ([length] ** 3 / [mass]) vs [length] ** 3; Q352 unit ml/g ([length] ** 3 / [mass]) vs [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The volume of distribution parameter for the peripheral compartment carries a mass-normalized unit (ml/g), which is dimensionally incompatible with a volume term. Additionally, the specified one-compartment model topology contains a compartment that is not linked to the dose input. The second reader also disagreed on the primary analyte identity, flagging it as unknown rather than fentanyl. Extracted — fentanyl: V2 3.3 ml/g, CLnorm 0.07, Vnorm 0.34 ml/g, CL 83.7 ml/min/kg, V 270 litre, kabs 0.27 minute -1, tlag 15 min.
+Extracted — fentanyl: V2 3.3 ml/g, CLnorm 0.07, Vnorm 0.34 ml/g, CL 83.7 ml/min/kg, V 270 litre, kabs 0.27 minute -1, tlag 15 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

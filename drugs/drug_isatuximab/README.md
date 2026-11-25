@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;isatuximab&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Isatuximab_Fau2020_reference&quot;,&quot;label&quot;:&quot;Fau_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/Isatuximab_Fau2020_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/pd_Koiwai_2021_M_protein.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein_2&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/pd_Koiwai_2021_M_protein_2.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koiwai_2021_M_protein_3&quot;,&quot;label&quot;:&quot;Koiwai_2021 \u00b7 M-protein&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_isatuximab/pd_Koiwai_2021_M_protein_3.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 # isatuximab
 
@@ -14,33 +13,26 @@ Isatuximab is a monoclonal antibody that targets CD38 for the treatment of multi
 
 <small>Summary written by `qwen3.8-27b` from [Wikidata Q20707906](https://www.wikidata.org/wiki/Q20707906), [Wikipedia](https://en.wikipedia.org/wiki/Isatuximab?oldid=1371251271) (CC BY-SA 4.0), DrugBank's routes and dosage forms, the WHO ATC classification and the EMA medicines list; not checked by a person.</small>
 
-## Start here
-
-> **Fau_2020_reference** — <span class="pk-badge pk-badge--blue">Simulated</span> patients with relapsed/refractory multiple myeloma, n = 476. [Run it in the simulator](drugs/drug_isatuximab/Isatuximab_Fau2020_reference.md?tab=Simulation) · [record](drugs/drug_isatuximab/Isatuximab_Fau2020_reference.md)
-
-<sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
-
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Simulated" data-sim="yes"></span><span class="pk-badge pk-badge--blue">Simulated</span> | [Fau_2020_reference](drugs/drug_isatuximab/Isatuximab_Fau2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Fau JB et al., Drug-Disease Interaction and Time-Depen…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12561](https://doi.org/10.1002/psp4.12561) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Brillac_2025_final](drugs/drug_isatuximab/Isatuximab_Brillac2025_final.md) | — | 2-compartment (no model) | 3 | Brillac C et al., Selection of isatuximab dosing regimen…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04832-2](https://doi.org/10.1007/s00280-025-04832-2) |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ model_1](drugs/drug_isatuximab/Isatuximab_Brillac2025_model_1.md) | — | 2-compartment (no model) | 3 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Brillac_2025_final](drugs/drug_isatuximab/Isatuximab_Brillac2025_final.md) | — | 2-compartment (no model) | 2 | Brillac C et al., Selection of isatuximab dosing regimen…, Cancer chemotherapy and pha… (2025) | [10.1007/s00280-025-04832-2](https://doi.org/10.1007/s00280-025-04832-2) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ model_1](drugs/drug_isatuximab/Isatuximab_Brillac2025_model_1.md) | — | 2-compartment (no model) | 2 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Fau_2020_reference](drugs/drug_isatuximab/Isatuximab_Fau2020_reference.md) | — | 2-compartment (no model) | 2 | Fau JB et al., Drug-Disease Interaction and Time-Depen…, CPT: pharmacometrics & syst… (2020) | [10.1002/psp4.12561](https://doi.org/10.1002/psp4.12561) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Koiwai_2021_M_protein](drugs/drug_isatuximab/pd_Koiwai_2021_M_protein.md) | serum M-protein concentrations ← isatuximab · disease-progression model | ▶ model + simulator | Koiwai K et al., PK/PD modeling analysis for dosing regi…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12666](https://doi.org/10.1002/psp4.12666) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Koiwai_2021_M_protein_2](drugs/drug_isatuximab/pd_Koiwai_2021_M_protein_2.md) | serum M-protein concentrations ← isatuximab and lenalidomide · disease-progression model | ▶ model + simulator | Koiwai K et al., PK/PD modeling analysis for dosing regi…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12666](https://doi.org/10.1002/psp4.12666) |
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Koiwai_2021_M_protein_3](drugs/drug_isatuximab/pd_Koiwai_2021_M_protein_3.md) | serum M-protein concentrations ← isatuximab and pomalidomide · disease-progression model | ▶ model + simulator | Koiwai K et al., PK/PD modeling analysis for dosing regi…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12666](https://doi.org/10.1002/psp4.12666) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Pitoy_2024_MPROT](drugs/drug_isatuximab/pd_Pitoy_2024_MPROT.md) | serum M-protein level ← isatuximab · direct Emax (saturable) effect | — | Pitoy A et al., Isatuximab-dexamethasone-pomalidomide c…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13206](https://doi.org/10.1002/psp4.13206) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Koiwai_2021_M_protein](drugs/drug_isatuximab/pd_Koiwai_2021_M_protein.md) | serum M-protein concentrations ← isatuximab · disease-progression model | — | Koiwai K et al., PK/PD modeling analysis for dosing regi…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12666](https://doi.org/10.1002/psp4.12666) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Pitoy_2024_MPROT](drugs/drug_isatuximab/pd_Pitoy_2024_MPROT.md) | serum M-protein ← isatuximab · target-mediated drug disposition | — | Pitoy A et al., Isatuximab-dexamethasone-pomalidomide c…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13206](https://doi.org/10.1002/psp4.13206) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Rachedi_2022_ORR](drugs/drug_isatuximab/pd_Rachedi_2022_ORR.md) | Overall response rate ← isatuximab · direct log-linear effect | — | Rachedi F et al., Exposure-response analyses for selectio…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12789](https://doi.org/10.1002/psp4.12789) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Rachedi_2022_ORR_2](drugs/drug_isatuximab/pd_Rachedi_2022_ORR_2.md) | Overall response rate ← isatuximab · direct log-linear effect | — | Rachedi F et al., Exposure-response analyses for selectio…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12789](https://doi.org/10.1002/psp4.12789) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Rachedi_2022_ORR_3](drugs/drug_isatuximab/pd_Rachedi_2022_ORR_3.md) | Overall response rate ← isatuximab · direct linear effect | — | Rachedi F et al., Exposure-response analyses for selectio…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12789](https://doi.org/10.1002/psp4.12789) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Pitoy_2024_PFS](drugs/drug_isatuximab/pd_Pitoy_2024_PFS.md) | progression-free survival · time-to-event model | — | Pitoy A et al., Isatuximab-dexamethasone-pomalidomide c…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13206](https://doi.org/10.1002/psp4.13206) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Rachedi_2022_PFS](drugs/drug_isatuximab/pd_Rachedi_2022_PFS.md) | Progression-free survival ← isatuximab · time-to-event model | — | Rachedi F et al., Exposure-response analyses for selectio…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12789](https://doi.org/10.1002/psp4.12789) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Koiwai_2021_M_protein_2](drugs/drug_isatuximab/pd_Koiwai_2021_M_protein_2.md) | serum M-protein concentrations ← isatuximab and lenalidomide · disease-progression model | — | Koiwai K et al., PK/PD modeling analysis for dosing regi…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12666](https://doi.org/10.1002/psp4.12666) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Koiwai_2021_M_protein_3](drugs/drug_isatuximab/pd_Koiwai_2021_M_protein_3.md) | serum M-protein concentrations ← isatuximab and pomalidomide · disease-progression model | — | Koiwai K et al., PK/PD modeling analysis for dosing regi…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12666](https://doi.org/10.1002/psp4.12666) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,23 +46,26 @@ Isatuximab is a monoclonal antibody that targets CD38 for the treatment of multi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 13:10 | 8:14 | 1/2/0 | 9/0/0 | 0/0/0 | 197,411/46,283 | openai / gpt-6-luna | 6 | 0/6 | 6/0 | 0 |
+| 2026-11-23 14:28 | 0:36 | 0/3/0 | 6/2/0 | 0/0/0 | 39,072/3,258 | einfracz / qwen3.8-27b | 6 | 0/6 | 6/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 7 matched, 7 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 3  ·  extracted 1  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs review 0  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| PGx | Brillac_2025 | not_relevant | 0 | 0 | The paper reports pharmacokinetic modeling based on covariates such as body weight and age, with no mention or analysis of gene variants, genotypes, or genotypes. |
+| PGx | Fau_2020 | not_relevant | 0 | 0 | The paper investigates disease state (IgG vs non-IgG myeloma) as a covariate for PK, but does not report pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 | popPK | Koiwai_2021 | relevant | 10 | 3 | The paper reports a human population PK model, but its PK parameter table is not provided in readable form; the numeric fragments cannot be reliably mapped to parameters. |
 | popPK | Korver_2019 | irrelevant | 0 | 0 | The study measures TAK-079 in monkeys; isatuximab is mentioned only as a non-crossreactive comparator. |
 | popPK | Pape_2025 | irrelevant | 0 | 0 | Isatuximab is only mentioned as a CD38-targeting comparator; the reported half-life values are for BARs, not isatuximab. |
-| popPK | Pitoy_2024 | irrelevant | 2 | 0 | The study uses an existing isatuximab PK model but reports no numeric isatuximab disposition parameters; referenced parameter details are not provided here. |
+| popPK | Pitoy_2024 | irrelevant | 5 | 2 | The study reports pharmacodynamic (serum M-protein) and PFS parameters, and while it uses a complex PK model for isatuximab to simulate exposure, no numeric PK parameter estimates (CL, V, ka, etc.) for isatuximab are provided in the text or tables. |
+| PGx | Pitoy_2024 | not_relevant | 0 | 0 | The paper models pharmacokinetics and progression-free survival based on clinical and baseline covariates (e.g., age, IgG type, cytogenetics), but does not investigate or report effects of specific gene variants or genotypes on PK/PD parameters. |
 | popPK | Rachedi_2022 | irrelevant | 2 | 1 | This is an exposure-response analysis, not a report of readable isatuximab disposition parameters; further model details are referenced in supplementary material. |
 
 
@@ -78,4 +73,4 @@ Isatuximab is a monoclonal antibody that targets CD38 for the treatment of multi
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bisatuximab%5D&body=Drug%3A%20isatuximab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_isatuximab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 13:03 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 14:24 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Terbutaline’s CL/F of 0.08 L day−1 was rejected because the paper concerns another drug, and the model also defaults absorption parameters.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="terbutaline" model-id="Terbutaline_Singh2022_reference" status="rejected" stale="false" population="" measured-compound="terbutaline" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Singh D, Fuhr R, Bird NP, Mole S, Hardes K, Man YL et al. A Phase 1 study of the
 
 ### Reviewer guidance
 
-**Terbutaline’s CL/F of 0.08 L day−1 was rejected because the paper concerns another drug, and the model also defaults absorption parameters.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-Neither the title nor abstract names terbutaline; the relevance assessment identified the paper as being about another drug. The record reports terbutaline clearance adjusted for bioavailability as 0.08 L day−1 and volume of distribution adjusted for bioavailability as 6.11 L, while the model defaults the absorption rate and absorption lag and assumes first-order depot input, F=1, Fm=1, and no molar correction. A second reader disputed the verdict (agreement 0.583); among the disagreements, two values recorded as absent here were read as 201.4 and 21.8. Extracted — terbutaline: CL/F 0.08 L day−1, V/F 6.11 L.
+Extracted — terbutaline: CL/F 0.08 L day−1, V/F 6.11 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 24.8, the second reading 24.8; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.583, 0 of 1 reader(s) agree | 0.583 | cross-check disputed by a second reader: verdict disputed, agreement 0.583, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.833 (10 of 12 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

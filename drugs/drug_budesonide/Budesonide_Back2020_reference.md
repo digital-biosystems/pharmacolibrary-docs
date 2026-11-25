@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The central and peripheral compartments lack defined inter-compartmental transfer rates, leaving the peripheral volume unreachable from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="budesonide" model-id="Budesonide_Back2020_reference" status="rejected" stale="false" population="adults with moderate asthma" measured-compound="budesonide" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Back HM, Lee JB, Kim A, Park SJ, Kim J, Chae JW et al. Exposure-Response and Cli
 
 ### Reviewer guidance
 
-**The central and peripheral compartments lack defined inter-compartmental transfer rates, leaving the peripheral volume unreachable from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The abstract-only record specifies a central volume of 216 L and peripheral volume of 106 L, but contains no inter-compartmental transfer rate constants. Consequently, the model structure is disconnected, meaning the peripheral compartment is not linked to the central compartment or the absorption process. The second reader also flagged that the clearance and absorption rate values were not verifiable against the abstract text. Extracted — budesonide: V1 216 L, CL 18.4 L·hr−1, kabs 19.7 hr−1, V2 106 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — budesonide: V1 216 L, CL 18.4 L·hr−1, kabs 19.7 hr−1, V2 106 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → none (none); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

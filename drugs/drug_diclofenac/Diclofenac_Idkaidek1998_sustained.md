@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The inter-compartmental transfer rate kcomp was missing, and bioavailability Fab had an unconvertible unit.
+> T3_param_coverage.
 
 <div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Idkaidek1998_sustained" status="needs_review" stale="false" population="adults" measured-compound="diclofenac" parameterization="apparent" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Idkaidek NM, Amidon GL, Smith DE, Najib NM, Hassan MM. Determination of the popu
 
 ### Reviewer guidance
 
-**The inter-compartmental transfer rate kcomp was missing, and bioavailability Fab had an unconvertible unit.**
+**T3_param_coverage.**
 
-The record lists kcomp as 0.106 h-1, but the system failed to emit a value for this parameter. The bioavailability Fab is recorded as 0.58 with the unit 1.71×10-9, which could not be converted to standard SI units. Consequently, the model lacks a valid SI value for kcomp and a valid unit for Fab. Extracted — diclofenac: kcomp 0.106 h -1, ki0 7.2 h -1, V/F 4.7 L, tlag 2.77 h, Fab 0.58 1.71×10 -9, CL/F 260 mL min -1, kabs 0.94 h À1.
+A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — diclofenac: kcomp 0.106 h -1, ki0 7.2 h -1, V/F 4.7 L, tlag 2.77 h, Fab 0.58 1.71×10 -9, CL/F 260 mL min -1, kabs 0.94 h À1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has diclofenac, the second reading diclofenac sodium; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

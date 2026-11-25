@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The area under the concentration-time curve for linagliptin is reported as 150 nmol·h/L, a mass concentration unit incompatible with the parameter’s substance concentration dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit nmol · h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="linagliptin" model-id="Linagliptin_GraefeMody2012_reference" status="rejected" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Graefe-Mody U, Retlich S, Friedrich C. Clinical pharmacokinetics and pharmacodyn
 
 ### Reviewer guidance
 
-**The area under the concentration-time curve for linagliptin is reported as 150 nmol·h/L, a mass concentration unit incompatible with the parameter’s substance concentration dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit nmol · h/L ([substance] * [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The record lists the area under the curve as 150 nmol·h/L, which measures mass concentration over time rather than the substance concentration required for this parameter. Because the source text was abstract-only, these summary statistics stand in for a fitted model. A second reader failed to extract the same value, along with bioavailability, renal excretion, and absorption rate constant, leaving several parameters unverified. Extracted — linagliptin: AUC 150 nmol · h/L, fu 99 %, Fab 30 %, t1/2z 100 hours, fe 5 %, kabs 1.63 h -1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — linagliptin: AUC 150 nmol · h/L, fu 99 %, Fab 30 %, t1/2z 100 hours, fe 5 %, kabs 1.63 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc: this record has 150, the second reading none; it also differs on 8 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;Bictegravir&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/&quot;},{&quot;label&quot;:&quot;Ekobena_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bictegravir_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bictegravir_Khoei2026_reference&quot;,&quot;label&quot;:&quot;Khoei_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Khoei2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vegas_2025_HIV_RNA&quot;,&quot;label&quot;:&quot;Vegas_2025 \u00b7 HIV-RNA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/pd_Vegas_2025_HIV_RNA.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bictegravir_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Bictegravir_Sun2026_reference&quot;,&quot;label&quot;:&quot;Sun_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Sun2026_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bictegravir_Khoei2026_reference&quot;,&quot;label&quot;:&quot;Khoei_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/Bictegravir_Khoei2026_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vegas_2025_HIV_RNA&quot;,&quot;label&quot;:&quot;Vegas_2025 \u00b7 HIV-RNA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_bictegravir/pd_Vegas_2025_HIV_RNA.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability (F) and lag time (Tlag) for bictegravir lack explicit values in this paper, forcing reliance on unreported defaults.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="Bictegravir" model-id="Bictegravir_Ekobena2025_reference" status="needs_review" stale="false" population="people with HIV" measured-compound="bictegravir" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Ekobena P, Briki M, Dao K, Marzolini C, Andre P, Buclin T et al. Population phar
 
 ### Reviewer guidance
 
-**Bioavailability (F) and lag time (Tlag) for bictegravir lack explicit values in this paper, forcing reliance on unreported defaults.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record explicitly defaults the bioavailability (F) parameter because it is not reported in the paper, resulting in a library placeholder rather than an estimated value. Additionally, the model builder substituted a default for the absorption lag time (Tlag) without citing an explicit estimate from the source. A second reader disputed the absence of a bodyweight exponent, noting a specific value of 0.35 that was omitted from this record. Extracted — bictegravir: kabs 0.64 h−1, V 10.9 L, CL 0.46 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — bictegravir: kabs 0.64 h−1, V 10.9 L, CL 0.46 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of βbodyweight: this record has none, the second reading 0.35. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,10 +147,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | a second reader did not contradict the extraction |
-| T1_t_half_terminal | reference | pass | 17.3 | 16.42 | 0.9493 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 16.3 | 16.42 | 1.008 | h→SI vs simulated h |
-| T1_tmax | reference | pass | 4.5 | 4.653 | 1.034 | h→SI vs simulated h |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.875 (7 of 8 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.875 | a second reader did not contradict the extraction |
+| T1_t_half_terminal | reference | pass | 17.3 | 16.42 | 0.9493 | reported 17.3 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 16.3 | 16.42 | 1.008 | reported 16.3 h→SI vs simulated h |
+| T1_tmax | reference | pass | 4.5 | 4.653 | 1.034 | reported 4.5 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -166,7 +166,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference/Bictegravir_Ekobena2025_reference_modelica.zip" download>Bictegravir_Ekobena2025_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference/Bictegravir_Ekobena2025_reference_modelica.zip" download>Bictegravir_Ekobena2025_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference/Bictegravir_Ekobena2025_reference_fmi.zip" download>Bictegravir_Ekobena2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference/Bictegravir_Ekobena2025_reference_matlab.zip" download>Bictegravir_Ekobena2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_bictegravir/Bictegravir_Ekobena2025_reference/Bictegravir_Ekobena2025_reference_matlab_simbio.zip" download>Bictegravir_Ekobena2025_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>

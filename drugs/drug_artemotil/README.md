@@ -41,43 +41,60 @@ Artemotil is an antimalarial agent belonging to the artemisinin derivative class
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:34 | 2:21 | 0/1/0 | 0/0/0 | 0/0/0 | 38,636/1,638 | ollama / glm-5.3-flash | 0 | 0/0 | 0/0 | 0 |
+| 2026-11-23 19:11 | 0:02 | 0/1/0 | 0/0/0 | 0/0/0 | 3,157/153 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 26 matched, 26 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 2  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Benakis_1991.pdf` | Benakis A et al., Pharmacokinetics of arteether in dog, European journal of drug me… (1991) | popPK | 10 | [10.1007/BF03189978](https://doi.org/10.1007/BF03189978) | [1823877](https://pubmed.ncbi.nlm.nih.gov/1823877) | Population/compartmental PK parameters (T1/2ka, half-life, Cmax, Cltot/F, AUC) for arteether (artemotil) are fully reported in the abstract; arteether is the subject drug. |
-
-<sub>queue written 2026-10-07 06:34 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Asimus_2007 | not_relevant | 0 | 0 | Study reports drug-drug (artemisinin effects on CYP probe substrates) interactions, not gene variant/genotype effects on artemotil PK/PD. |
-| PGx | Burk_2012 | not_relevant | 2 | 3 | In vitro CAR/PXR ligand-binding and CYP induction study with no gene variant/genotype effect on artemotil PK/PD parameters. |
-| PGx | Ekins_1999 | not_relevant | 1 | 1 | QSAR modeling of CYP2B6 substrate Km values; no gene variant/genotype effect on artemotil PK/PD reported. |
-| popPK | Elsherbiny_2008 | irrelevant | 2 | 1 | Artemotil is not the subject drug; PK modeling is of mephenytoin probe and metabolites, with no artemotil disposition parameters or numeric values present. |
-| PGx | Elsherbiny_2008 | not_relevant | 0 | 0 | Reports enzyme induction by artemisinins on mephenytoin PK (probe drug), not a gene variant effect on artemotil PK/PD. |
-| PGx | Grace_1998 | not_relevant | 4 | 6 | Identifies CYP2B6/3A4/3A5 as enzymes metabolizing arteether via recombinant phenotyping, but no gene variant/genotype effect on a PK/PD parameter is reported. |
-| PGx | Haq_2009 | not_relevant | 2 | 1 | Case report of arteether-induced mania with family history of chloroquine psychosis; no gene variant effect on PK/PD parameters quantified. |
-| popPK | Li_1998 | irrelevant | 0 | 0 | Artemotil is not among the studied artemisinin derivatives (DQHS, artemether, arteether, artesunic acid, artelinic acid); no artemotil parameters reported. |
-| PGx | Ooko_2015 | not_relevant | 4 | 3 | Gene expression correlates with in vitro IC50 (cytotoxicity), not a PK/PD parameter of artemotil, and no fitted effect sizes are reported. |
-| PGx | Tripathi_2013 | not_relevant | 2 | 3 | Drug-drug interaction (ketoconazole CYP3A4 inhibition) on arteether, not a gene variant/genotype/phenotype effect on PK/PD. |
+| popPK | Asimus_2007 | irrelevant | 0 | 0 | The study focuses on the effect of artemisinins on CYP450 enzyme activity using a probe cocktail, rather than determining the population-pharmacokinetic parameters (CL, V, ka) of artemotil. |
+| PGx | Asimus_2007 | not_relevant | 0 | 0 | The study investigates the effect of artemotil (and other antimalarials) on CYP450 enzyme activity in a general healthy population, but it does not report any pharmacogenomic findings linking specific gene variants or genotypes to changes in PK or PD parameters. |
+| popPK | Benakis_1991 | irrelevant | 0 | 0 | The study measures the pharmacokinetics of arteether, not artemotil. |
+| PGx | Benakis_1991 | not_relevant | 0 | 0 | The study reports pharmacokinetic parameters in dogs but does not investigate any gene variant, genotype, or phenotype effects. |
+| popPK | Burk_2012 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of CAR receptor activation, not a pharmacokinetic study reporting disposition parameters for artemotil. |
+| PGx | Burk_2012 | not_relevant | 0 | 0 | The paper investigates the molecular mechanism of artemisinin derivatives activating CAR receptors, but does not report any gene variant-dependent effects on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Ekins_1999 | irrelevant | 0 | 0 | The study focuses on 3D-QSAR modeling of CYP2B6 substrates and does not report pharmacokinetic parameters for artemotil. |
+| PGx | Ekins_1999 | not_relevant | 0 | 0 | The paper focuses on 3D-QSAR modeling for CYP2B6 substrates and does not report pharmacogenomic effects (gene variants) on the PK or PD of artemotil. |
+| popPK | Elsherbiny_2008 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of the probe drug mephenytoin and its metabolites to assess CYP induction by artemisinin derivatives, not the PK of the antimalarial drugs themselves. |
+| PGx | Elsherbiny_2008 | not_relevant | 0 | 0 | The study investigates CYP enzyme induction by artemisinin derivatives, not the pharmacokinetics or pharmacodynamics of the drug 'artemotil' (a non-existent drug) influenced by genetic variants. |
+| popPK | Gabriëls_2003 | irrelevant | 0 | 0 | The paper describes an analytical method (TLC) for artemisinin and derivatives, not a pharmacokinetic study, and does not involve the drug artemotil. |
+| PGx | Gabriëls_2003 | not_relevant | 0 | 0 | The paper describes a chemical analysis method (TLC) for artemisinin and does not discuss pharmacogenomics or pharmacokinetics/pharmacodynamics. |
+| popPK | Govindan_2022 | irrelevant | 0 | 0 | The study focuses on the efficacy and safety of arteether and garlic in mice, not the pharmacokinetics of artemotil. |
+| PGx | Govindan_2022 | not_relevant | 0 | 0 | The paper evaluates the efficacy and safety of an artemotil (arteether) and garlic combination in a mouse model of malaria in pregnancy, but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
+| popPK | Grace_1998 | irrelevant | 0 | 0 | The paper studies the metabolism of beta-arteether (not artemotil) and is in vitro only. |
+| PGx | Grace_1998 | not_relevant | 0 | 0 | The paper describes the in vitro metabolism of beta-arteether by CYP isozymes and drug-drug inhibition, but does not report any pharmacogenomic effect of a specific gene variant on a pharmacokinetic or pharmacodynamic parameter. |
+| popPK | Haq_2009 | irrelevant | 0 | 0 | The paper is a case report regarding the neurotoxic adverse effect (mania) of arteether, not a pharmacokinetic study, and contains no quantitative PK parameters. |
+| PGx | Haq_2009 | not_relevant | 0 | 0 | The paper is a case report of an adverse event (mania) and does not report quantitative pharmacokinetic or pharmacodynamic parameters influenced by a specific genotype. |
+| popPK | Li_1998 | irrelevant | 0 | 0 | The study focuses on dihydroartemisinin and related artemisinin derivatives, but does not mention or provide data for artemotil. |
+| PGx | Li_1998 | not_relevant | 0 | 0 | This study investigates standard pharmacokinetics and bioavailability of artemisinins in rats and does not report any pharmacogenomic effects or gene variant interactions. |
+| popPK | Li_2002 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and neurotoxicity of beta-arteether and its metabolite, not artemotil. |
+| PGx | Li_2002 | not_relevant | 0 | 0 | The paper studies the effect of formulation (vehicle) on PK and toxicity in rodents, not a gene variant or genotype. |
+| PGx | Li_2004 | not_relevant | 0 | 0 | The paper reports pharmacokinetic parameters for artemotil but does not investigate the influence of any gene variant, genotype, or phenotype on these parameters. |
+| popPK | Ooko_2015 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study on ferroptosis and gene expression, not a pharmacokinetic study, and it does not involve artemotil (a distinct drug). |
+| PGx | Ooko_2015 | not_relevant | 0 | 0 | The study investigates the mechanism of action (ferroptosis) and correlates iron gene expression with cytotoxicity in cancer cell lines, not human pharmacogenomic effects on PK/PD parameters. |
+| popPK | Sabarinath_2005 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for arteether (a prodrug/metabolite of artemether), not for artemotil. |
+| PGx | Sabarinath_2005 | not_relevant | 0 | 0 | The paper describes the pharmacokinetics of arteether diastereomers in healthy volunteers but does not investigate gene variants, genotypes, or phenotypes (pharmacogenomics). |
+| popPK | Smith_1997 | irrelevant | 0 | 0 | The paper is an in-vitro neurotoxicity study examining the mechanism of action (binding and cellular effects) of artemisinin derivatives, not a pharmacokinetic study reporting disposition parameters for artemotil. |
+| PGx | Smith_1997 | not_relevant | 0 | 0 | The study investigates the enhancement of neurotoxicity by haemin in vitro, not a pharmacogenomic effect on a PK or PD parameter of artemotil. |
+| popPK | Tripathi_2010 | irrelevant | 0 | 0 | The paper focuses on the antimalarial efficacy of α/β arteether formulations in mice, not the pharmacokinetics of artemotil. |
+| PGx | Tripathi_2010 | not_relevant | 0 | 0 | The paper evaluates formulations of alpha/beta arteether in mice and does not investigate pharmacogenomic effects on pharmacokinetic or pharmacodynamic parameters for artemotil. |
+| popPK | Tripathi_2013 | irrelevant | 0 | 0 | The study focuses on artemisinin derivatives (arteether) and ketoconazole in mice, not artemotil, and contains no PK parameter values for artemotil. |
+| PGx | Tripathi_2013 | not_relevant | 0 | 0 | The study investigates a pharmacokinetic interaction between ketoconazole and artemisinin, but does not examine any genetic variants, genotypes, or pharmacogenomic effects. |
+| popPK | Valecha_1997 | irrelevant | 0 | 0 | The study is a clinical efficacy trial for alpha,beta-arteether (not artemotil) and reports only clinical outcomes (fever/parasite clearance times) with no pharmacokinetic parameters. |
+| PGx | Valecha_1997 | not_relevant | 0 | 0 | The paper reports a clinical efficacy trial for alpha,beta-arteether with no data on genetic variants or pharmacogenomics. |
+| popPK | Van_2005 | irrelevant | 0 | 0 | The paper is a general review of artemisinin derivatives' use in malaria treatment and does not report quantitative pharmacokinetic parameters for artemotil. |
+| PGx | Van_2005 | not_relevant | 0 | 0 | The paper is a general review of artemisinin derivatives' history, properties, and usage guidelines, with no report of pharmacogenomic effects on PK/PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bartemotil%5D&body=Drug%3A%20artemotil%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_artemotil/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 06:34 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 19:09 UTC</sub>

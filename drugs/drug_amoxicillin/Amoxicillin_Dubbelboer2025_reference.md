@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
-> The absolute bioavailability (Fab) parameter for amoxicillin was missing and replaced with a placeholder default value.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Dubbelboer2025_reference" status="needs_review" stale="false" population="healthy cats" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -64,13 +64,13 @@ Dubbelboer IR, Olsén L, Pelander L, Lacroix MZ, Claustre L, Roques B et al. Pha
 
 ### Reviewer guidance
 
-**The absolute bioavailability (Fab) parameter for amoxicillin was missing and replaced with a placeholder default value.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).**
 
-The record lists Fab as 33, but the review confirms this is an unreported parameter default rather than an estimate from Dubbelboer_2025. Because no explicit value was extracted, the model relied on a library placeholder instead of paper-supported data. Consequently, the simulated profile reflects an unsupported assumption rather than the actual pharmacokinetic characteristics of the study. Extracted — amoxicillin: V1 0.12 L/kg, V2 0.092 L/kg, V3 0.021 L/kg, CL 0.18 L/kg·h, Q 0.39 L/kg·h, Q2 0.009 L/kg·h, tlag 0.25 h, kabs 0.6 1/h, … (+1).
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — amoxicillin: V1 0.12 L/kg, V2 0.092 L/kg, V3 0.021 L/kg, CL 0.18 L/kg·h, Q 0.39 L/kg·h, Q2 0.009 L/kg·h, tlag 0.25 h, kabs 0.6 1/h, … (+1).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

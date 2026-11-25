@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-> The ibuprofen model was rejected because the AUMC and MAT parameters carry a mass dose unit (mg/kg) incompatible with their time-based dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q20 unit mg/kg ([mass]) vs [mass] * [time] / [length] ** 3; Q73 unit mg/kg ([mass]) vs [time]; c8 unreachable/orphan compartment or unlinked metabolite (+1 more).
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Roder1996_i_m_50_mg_kg" status="rejected" stale="false" population="broiler chickens" measured-compound="ibuprofen" parameterization="mechanistic" topology="2C"></div>
 
@@ -69,13 +69,13 @@ Roder JD, Chen CL, Chen H, Sangiah S. Bioavailability and pharmacokinetics of ib
 
 ### Reviewer guidance
 
-**The ibuprofen model was rejected because the AUMC and MAT parameters carry a mass dose unit (mg/kg) incompatible with their time-based dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q20 unit mg/kg ([mass]) vs [mass] * [time] / [length] ** 3; Q73 unit mg/kg ([mass]) vs [time]; c8 unreachable/orphan compartment or unlinked metabolite (+1 more).**
 
-The area under the moment curve and mean absorption time are both recorded in mg/kg, which is dimensionally inconsistent with their required time or time-volume units. Additionally, the peripheral compartment volume is listed in microliters, a scale vastly smaller than the central compartment volume in liters per kilogram. These unit conflicts, along with the unreachable peripheral compartment in the two-compartment structure, render the pharmacokinetic model structurally and physically invalid. Extracted — ibuprofen: A1 112 μg/mL, A2 4.24 μg/mL, λ1 2.38 h⁻¹, kel 0.51 h⁻¹, k12 0.14 h⁻¹, k21 0.58 h⁻¹, kabs 4.79 h⁻¹, t1/2α 0.304 h, … (+13).
+A reported unit could not be converted (A1, A2, AUMC and Fab), so that value has no SI equivalent. Extracted — ibuprofen: A1 112 μg/mL, A2 4.24 μg/mL, λ1 2.38 h⁻¹, kel 0.51 h⁻¹, k12 0.14 h⁻¹, k21 0.58 h⁻¹, kabs 4.79 h⁻¹, t1/2α 0.304 h, … (+13).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[t1/2a (h)a].parameter_id`: this record has Q59, the second reading Q95. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

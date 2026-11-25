@@ -32,17 +32,9 @@ Pimavanserin is an atypical antipsychotic used to treat Parkinson’s disease ps
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Darwish_2022_NSA_16](drugs/drug_pimavanserin/pd_Darwish_2022_NSA_16.md) | Negative Symptom Assessment 16 score ← pimavanserin · direct sigmoid Emax (Hill) effect | — | Darwish M et al., Pimavanserin Exposure-Response Analyses…, Journal of clinical psychop… (2022) | [10.1097/JCP.0000000000001611](https://doi.org/10.1097/JCP.0000000000001611) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Darwish_2022_PSP](drugs/drug_pimavanserin/pd_Darwish_2022_PSP.md) | Personal and Social Performance scale score ← pimavanserin · direct log-linear effect | — | Darwish M et al., Pimavanserin Exposure-Response Analyses…, Journal of clinical psychop… (2022) | [10.1097/JCP.0000000000001611](https://doi.org/10.1097/JCP.0000000000001611) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Darwish_2023_2_CGI_I](drugs/drug_pimavanserin/pd_Darwish_2023_2_CGI_I.md) | Clinical Global Impression-Improvement scale ← pimavanserin · model not identified | — | Darwish M et al., Exposure-response Modeling From the CLA…, Clinical pharmacology in dr… (2023) | [10.1002/cpdd.1232](https://doi.org/10.1002/cpdd.1232) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Darwish_2023_2_HAMD_17](drugs/drug_pimavanserin/pd_Darwish_2023_2_HAMD_17.md) | Hamilton Depression Rating Scale (HAMD-17) total score ← pimavanserin · direct sigmoid Emax (Hill) effect | — | Darwish M et al., Exposure-response Modeling From the CLA…, Clinical pharmacology in dr… (2023) | [10.1002/cpdd.1232](https://doi.org/10.1002/cpdd.1232) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Darwish_2023_2_KSS](drugs/drug_pimavanserin/pd_Darwish_2023_2_KSS.md) | Karolinska Sleepiness Scale ← pimavanserin · model not identified | — | Darwish M et al., Exposure-response Modeling From the CLA…, Clinical pharmacology in dr… (2023) | [10.1002/cpdd.1232](https://doi.org/10.1002/cpdd.1232) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Darwish_2023_2_MGH_SFI](drugs/drug_pimavanserin/pd_Darwish_2023_2_MGH_SFI.md) | Massachusetts General Hospital Sexual Functioning Inventory ← pimavanserin · model not identified | — | Darwish M et al., Exposure-response Modeling From the CLA…, Clinical pharmacology in dr… (2023) | [10.1002/cpdd.1232](https://doi.org/10.1002/cpdd.1232) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Darwish_2023_2_SDS](drugs/drug_pimavanserin/pd_Darwish_2023_2_SDS.md) | Sheehan Disability Scale score ← pimavanserin · model not identified | — | Darwish M et al., Exposure-response Modeling From the CLA…, Clinical pharmacology in dr… (2023) | [10.1002/cpdd.1232](https://doi.org/10.1002/cpdd.1232) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Ridler_2025_occupancy_5_HT2A](drugs/drug_pimavanserin/pd_Ridler_2025_occupancy_5_HT2A.md) | 5-HT2A receptor occupancy (cortex, [11C]CIMBI-36 binding displacement) ← pimavanserin · direct sigmoid Emax (Hill) effect | — | Ridler K et al., Imaging the 5-HT, Journal of cerebral blood f… (2025) | [10.1177/0271678X241276312](https://doi.org/10.1177/0271678X241276312) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Ridler_2025_occupancy_5_HT2C](drugs/drug_pimavanserin/pd_Ridler_2025_occupancy_5_HT2C.md) | 5-HT2C receptor occupancy (choroid plexus, [11C]CIMBI-36 binding displacement) ← pimavanserin · direct sigmoid Emax (Hill) effect | — | Ridler K et al., Imaging the 5-HT, Journal of cerebral blood f… (2025) | [10.1177/0271678X241276312](https://doi.org/10.1177/0271678X241276312) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span> | [Ridler_2025_occupancy_5_HT2C_AC1332](drugs/drug_pimavanserin/pd_Ridler_2025_occupancy_5_HT2C_AC1332.md) | 5-HT2C receptor occupancy ([11C]AC1332 binding displacement) ← pimavanserin · direct sigmoid Emax (Hill) effect | — | Ridler K et al., Imaging the 5-HT, Journal of cerebral blood f… (2025) | [10.1177/0271678X241276312](https://doi.org/10.1177/0271678X241276312) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Darwish_2022_CGI_SCH_S](drugs/drug_pimavanserin/pd_Darwish_2022_CGI_SCH_S.md) | Clinical Global Impression of Schizophrenia–Severity (negative symptoms) score ← pimavanserin · categorical (graded) response model | — | Darwish M et al., Pimavanserin Exposure-Response Analyses…, Journal of clinical psychop… (2022) | [10.1097/JCP.0000000000001611](https://doi.org/10.1097/JCP.0000000000001611) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Darwish_2022_NSA_16](drugs/drug_pimavanserin/pd_Darwish_2022_NSA_16.md) | Negative Symptom Assessment 16 ← pimavanserin · direct sigmoid Emax (Hill) effect | — | Darwish M et al., Pimavanserin Exposure-Response Analyses…, Journal of clinical psychop… (2022) | [10.1097/JCP.0000000000001611](https://doi.org/10.1097/JCP.0000000000001611) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Darwish_2022_PSP](drugs/drug_pimavanserin/pd_Darwish_2022_PSP.md) | Personal and Social Performance scale ← pimavanserin · direct linear effect | — | Darwish M et al., Pimavanserin Exposure-Response Analyses…, Journal of clinical psychop… (2022) | [10.1097/JCP.0000000000001611](https://doi.org/10.1097/JCP.0000000000001611) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Darwish_2022_CGI_SCH_S](drugs/drug_pimavanserin/pd_Darwish_2022_CGI_SCH_S.md) | Clinical Global Impression of Schizophrenia–Severity ← pimavanserin · categorical (graded) response model | — | Darwish M et al., Pimavanserin Exposure-Response Analyses…, Journal of clinical psychop… (2022) | [10.1097/JCP.0000000000001611](https://doi.org/10.1097/JCP.0000000000001611) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,39 +48,36 @@ Pimavanserin is an atypical antipsychotic used to treat Parkinson’s disease ps
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 16:28 | 1:23 | 0/1/0 | 11/0/0 | 0/0/0 | 67,060/5,779 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-24 04:36 | 0:04 | 0/1/0 | 3/0/0 | 0/0/0 | 4,104/154 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Darwish_2023.pdf` | Darwish M et al., Population Pharmacokinetic Modeling and…, Journal of clinical pharmac… (2023) | popPK | 8 | [10.1002/jcph.2315](https://doi.org/10.1002/jcph.2315) | [37471636](https://pubmed.ncbi.nlm.nih.gov/37471636) | Population PK model of pimavanserin in humans with simulated AUC/Cmax values present, but model parameters (CL, V) likely in supplementary material not provided. |
-
-<sub>queue written 2026-10-06 16:27 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Darwish_2022 | relevant | 8 | 4 | Population PK model of pimavanserin (1-compartment, CL/F, V/F, ka) is described, but final parameter values are in Table S2 (supplemental); only V/F 2730 L and half-life 57 h appear in text. |
-| popPK | Darwish_2023_2 | irrelevant | 3 | 1 | This is an exposure-response (PD) analysis using population-PK empirical Bayesian estimates from a prior study; no quantitative PK disposition parameters (CL, V, ka, half-life) for pimavanserin are reported, and any PK values would live in prior publications/supplementary material not provided. |
-| popPK | Dirks_2022 | irrelevant | 0 | 0 | Efficacy/safety trial of pimavanserin in MDD with no PK parameters reported. |
+| popPK | Darwish_2022 | relevant | 5 | 1 | The paper describes a population PK model for pimavanserin (1-compartment, CL/F, V/F) and reports some descriptive PK stats (half-life, V/F), but the final population parameter estimates are explicitly located in Table S2 (supplementary material) which is not provided. |
+| PGx | Darwish_2022 | not_relevant | 0 | 0 | The paper reports exposure-response relationships and population PK modeling but does not investigate the impact of any gene variants, genotypes, or phenotypes on pharmacokinetic or pharmacodynamic parameters. |
+| popPK | Darwish_2023 | relevant | 9 | 4 | The paper describes a population PK model and provides simulated exposure metrics (AUC, Cmax) for pediatric dose selection, but specific model parameter estimates (CL, V, ka, Q) are not explicitly listed in the provided text. |
+| PGx | Darwish_2023 | not_relevant | 0 | 0 | The paper focuses on age- and weight-based PK modeling for pediatric dosing and does not report any genetic variants or pharmacogenomic effects. |
+| popPK | Darwish_2023_2 | relevant | 8 | 0 | The paper uses population-PK (popPK) parameters to perform exposure-response modeling, but the specific numeric values for PK parameters (CL, V, etc.) are not reported in the provided text, which focuses on efficacy outcomes and Cmax trends. |
+| PGx | Darwish_2023_2 | not_relevant | 0 | 0 | The paper describes exposure-response modeling for pimavanserin but does not report any pharmacogenomic effects or associations with genetic variants. |
+| popPK | Dirks_2022 | irrelevant | 0 | 0 | The paper reports clinical efficacy and safety outcomes for pimavanserin in major depressive disorder, with no pharmacokinetic parameters or disposition data. |
+| PGx | Dirks_2022 | not_relevant | 0 | 0 | The paper reports a general clinical trial for efficacy and safety, with no mention of genetic variants, genotyping, or pharmacogenomic subgroup analyses. |
 | popPK | Evidente_2024 | irrelevant | 0 | 0 | Clinical efficacy/outcomes study of pimavanserin in Parkinson's disease psychosis with no PK parameters (no CL, V, ka, half-life, or PK model) reported. |
-| popPK | Hemine_2020 | irrelevant | 0 | 0 | This is an adsorption/wastewater treatment study, not a pharmacokinetic study; no disposition parameters for pimavanserin are reported. |
-| popPK | Ridler_2025 | irrelevant | 2 | 1 | This is a receptor-occupancy PET imaging study reporting ED50/EC50 potency values, not PK disposition parameters (CL, V, half-life, or a PK model) for pimavanserin. |
+| popPK | Hemine_2020 | irrelevant | 0 | 0 | The study focuses on environmental chemistry (adsorption/degradation in wastewater) and does not report pharmacokinetic parameters for pimavanserin. |
+| PGx | Hemine_2020 | not_relevant | 0 | 0 | The paper focuses on environmental removal of the drug from wastewater using adsorbents, not pharmacogenomics. |
+| popPK | Ridler_2025 | irrelevant | 0 | 0 | This study reports pharmacodynamic receptor occupancy data (ED50/EC50) in non-human primates, not pharmacokinetic disposition parameters like clearance or volume of distribution. |
+| PGx | Ridler_2025 | not_relevant | 0 | 0 | The paper reports pharmacodynamics in non-human primates without any mention of genetic variants or pharmacogenomic influences. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bpimavanserin%5D&body=Drug%3A%20pimavanserin%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_pimavanserin/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 16:27 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 04:36 UTC</sub>

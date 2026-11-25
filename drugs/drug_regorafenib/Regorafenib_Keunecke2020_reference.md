@@ -4,9 +4,9 @@
 
 # regorafenib — `Regorafenib_Keunecke2020_reference`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Regorafenib’s metabolite-formation fractions are negative (−0.355 for M-2 and −1.09 for M-5), and missing parameter coverage plus defaulted Q2 leaves the record unsupported.
+> Q has no unit.
 
 <div class="pk-model-meta" hidden drug="regorafenib" model-id="Regorafenib_Keunecke2020_reference" status="needs_review" stale="false" population="patients with advanced solid tumours" measured-compound="regorafenib" parameterization="apparent" topology="general_linear"></div>
 
@@ -16,16 +16,16 @@ Keunecke A, Hoefman S, Drenth HJ, Zisowsky J, Cleton A, Ploeger BA. Population p
 
 ## Population and dosing
 
-**Population:** patients with advanced solid tumours · condition advanced solid tumours · age group adult.
+**Population:** patients with advanced solid tumours · condition solid tumours · age group adult.
 
 **Dosing:** 160 mg, oral, multiple, every 24 h.
 
 ## Model
 
-**Structure:** 3-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 13 extracted, plus 4 covariate effects.  
-**Availability:** Model available in **Models**; browser simulation unavailable.
+**Parameters:** 12 extracted, plus 1 covariate effect.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
@@ -35,28 +35,20 @@ Keunecke A, Hoefman S, Drenth HJ, Zisowsky J, Cleton A, Ploeger BA. Population p
 | k a, h−1 | kabs | 0.482 | h−1 |  |  |
 | FRM2 | fm | -0.355 |  | 26.7 |  |
 | CLP/(1‐FRM2), L h−1 | CL | 4.02 | L h−1 |  | 0.206 (8.16% RSE) |
-| bmi_on_regorafenib_clearance | bmi_on_regorafenib_clearance | -0.363 |  |  |  |
 | VCP/(1‐FRM2), L | V1 | 10.7 | L |  |  |
-| k GE, h−1 | kcomp | 100 | h−1 |  |  |
-| QP/(1‐FRM2), L/h−1 | Q | 11.0 | L/h |  |  |
+| QP/(1‐FRM2), L/h−1 | Q | 11.0 | L/h−1 |  |  |
 | VPP/(1‐FRM2), L | V2 | 162 | L |  |  |
-| k CG, h−1 | k14 | 0.141 | h−1 | 13.5 |  |
+| k CG, h−1 | kout_peripheral | 0.141 | h−1 |  |  |
 | CLM‐2, L h−1 | CL | 2.45 | L h−1 | 4.98 |  |
 | CLM‐5, L h−1 | CL | 0.746 | L h−1 | 28.8 |  |
 | FRM5 | fm | -1.09 |  | 19.4 |  |
 | VC/Foral, L | V1/F | 10.7 | L | 18.1 |  |
 | VP/Foral, L | V2/F | 162 | L | 16.1 |  |
-| theta_cl_sex | theta_cl_sex | 0.169 |  |  |  |
-| theta_q351_sex | theta_q351_sex | 0.380 |  | 5.06 |  |
-| theta_cl_sex | theta_cl_sex | 0.761 |  | 5.08 |  |
-
-## Caveats
-
-- Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.
+| theta_cl_bmi | theta_cl_bmi | -0.363 |  |  |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.806). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.71), qwen3.8-27b (partly confirmed, agreement 0.806). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -66,35 +58,31 @@ Keunecke A, Hoefman S, Drenth HJ, Zisowsky J, Cleton A, Ploeger BA. Population p
 
 ### Reviewer guidance
 
-**Regorafenib’s metabolite-formation fractions are negative (−0.355 for M-2 and −1.09 for M-5), and missing parameter coverage plus defaulted Q2 leaves the record unsupported.**
+**Q has no unit.**
 
-Q2 uses library defaults, not estimates from this paper; these values affect the simulated profile but are not supported by this paper and need to be extracted or explicitly justified as conventions. Of 10 expected parameters, only 4 were covered; kabs, V1, kcomp, V2, V1/F, and V2/F were neither emitted nor defaulted. The builder assumed F=1 and Fm=1 under apparent parameterization. The covariate scenarios were not simulated; only the base model was simulated, not the covariate effects the record defines. Extracted — regorafenib: kabs 0.482 h−1, CL 4.02 L h−1, V1 10.7 L, kcomp 100 h−1, Q 11 L/h, V2 162 L, k14 0.141 h−1, V1/F 10.7 L, … (+1); M-2: fm -0.355, CL 2.45 L h−1; M-5: CL 0.746 L h−1, fm -1.09.
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Q), so that value has no SI equivalent. Extracted — regorafenib: kabs 0.482 h−1, CL 4.02 L h−1, V1 10.7 L, Q 11 L/h−1, V2 162 L, kout_peripheral 0.141 h−1, V1/F 10.7 L, V2/F 162 L; M-2: fm -0.355, CL 2.45 L h−1; M-5: CL 0.746 L h−1, fm -1.09.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of k cg: this record has 0.141, the second reading none; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clp/(1‐frm2)].covariate_forms`: this record has ['linear_fractional'], the second reading ['linear_fractional', 'linear_fractional']; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | k a, h−1 | `Q49` · kabs | 0.482 | h−1 | 0.0001339 | 1/s | 1/h |  | exact (1) | bcp14334-tbl-0003:row2:col1, Keunecke_2020_table_1:row1:col1, Keunecke_2020_table_2:row1:col1 |  |
-| FRM2 | `Q45` · fm | -0.355 |  |  |  |  | 26.7 | exact (1) | bcp14334-tbl-0003:row3:col1, Keunecke_2020_table_2:row2:col1, Keunecke_2020_table_2:row2:col2, Keunecke_2020_table_2:row2:col3, Keunecke_2020_table_2:row2:col4, Keunecke_2020_table_2:row2:col5 |  |
+| FRM2 | `Q45` · fm | -0.355 |  |  |  |  | 26.7 | exact (1) | bcp14334-tbl-0003:row3:col1, Keunecke_2020_table_2:row2:col1 |  |
 | CLP/(1‐FRM2), L h−1 | `Q22` · CL | 4.02 | L h−1 | 1.117e-06 | m3/s | l/h |  | exact (1) | bcp14334-tbl-0003:row4:col1, Keunecke_2020_table_2:row3:col1 | 0.206 (8.16% RSE) |
-| bmi_on_regorafenib_clearance | `Q900` · bmi_on_regorafenib_clearance | -0.363 |  |  |  |  |  |  | bcp14334-tbl-0003:row6:col1 |  |
 | VCP/(1‐FRM2), L | `Q63` · V1 | 10.7 | L | 0.0107 | m3 | l |  | exact (1) | bcp14334-tbl-0003:row7:col1, Keunecke_2020_table_2:row4:col1 |  |
-| k GE, h−1 | `Q48` · kcomp | 100 | h−1 | 0.02778 | 1/s | 1/h |  | llm (0.6) | bcp14334-tbl-0003:row8:col1, Keunecke_2020_table_1:row4:col1, Keunecke_2020_table_2:row5:col1 |  |
-| QP/(1‐FRM2), L/h−1 | `Q30` · Q | 11.0 | L/h | 3.056e-06 | m3/s | L/h |  | exact (1) | bcp14334-tbl-0003:row12:col1 |  |
+| QP/(1‐FRM2), L/h−1 | `Q30` · Q | 11.0 | L/h−1 |  |  | h·l |  | exact (1) | bcp14334-tbl-0003:row12:col1 |  |
 | VPP/(1‐FRM2), L | `Q64` · V2 | 162 | L | 0.162 | m3 | l |  | exact (1) | bcp14334-tbl-0003:row13:col1, Keunecke_2020_table_2:row10:col1 |  |
-| k CG, h−1 | `Q347` · k14 | 0.141 | h−1 | 3.917e-05 | 1/s | 1/h | 13.5 | llm (0.6) | bcp14334-tbl-0003:row14:col1, Keunecke_2020_table_1:row10:col1, Keunecke_2020_table_1:row10:col2, Keunecke_2020_table_1:row10:col3, Keunecke_2020_table_1:row10:col4, Keunecke_2020_table_1:row10:col5, Keunecke_2020_table_2:row11:col1 |  |
-| CLM‐2, L h−1 | `Q22` · CL | 2.45 | L h−1 | 6.806e-07 | m3/s | l/h | 4.98 | exact (1) | bcp14334-tbl-0003:row16:col1, bcp14334-tbl-0003:row16:col2, bcp14334-tbl-0003:row16:col3, bcp14334-tbl-0003:row16:col4, bcp14334-tbl-0003:row16:col5, Keunecke_2020_table_2:row13:col1, Keunecke_2020_table_2:row13:col2, Keunecke_2020_table_2:row13:col3, Keunecke_2020_table_2:row13:col4, Keunecke_2020_table_2:row13:col5 |  |
-| CLM‐5, L h−1 | `Q22` · CL | 0.746 | L h−1 | 2.072e-07 | m3/s | l/h | 28.8 | exact (1) | bcp14334-tbl-0003:row18:col1, bcp14334-tbl-0003:row18:col2, bcp14334-tbl-0003:row18:col3, bcp14334-tbl-0003:row18:col4, bcp14334-tbl-0003:row18:col5, Keunecke_2020_table_2:row14:col1, Keunecke_2020_table_2:row14:col2, Keunecke_2020_table_2:row14:col3, Keunecke_2020_table_2:row14:col4, Keunecke_2020_table_2:row14:col5 |  |
-| FRM5 | `Q45` · fm | -1.09 |  |  |  |  | 19.4 | exact (1) | bcp14334-tbl-0003:row20:col1, Keunecke_2020_table_2:row15:col1, Keunecke_2020_table_2:row15:col2, Keunecke_2020_table_2:row15:col3, Keunecke_2020_table_2:row15:col4, Keunecke_2020_table_2:row15:col5 |  |
-| VC/Foral, L | `Q290` · V1/F | 10.7 | L | 0.0107 | m3 | l | 18.1 | llm (0.6) | Keunecke_2020_table_1:row3:col1, Keunecke_2020_table_1:row3:col2, Keunecke_2020_table_1:row3:col3, Keunecke_2020_table_1:row3:col4, Keunecke_2020_table_1:row3:col5 |  |
-| VP/Foral, L | `Q82` · V2/F | 162 | L | 0.162 | m3 | l | 16.1 | llm (0.6) | Keunecke_2020_table_1:row9:col1, Keunecke_2020_table_1:row9:col2, Keunecke_2020_table_1:row9:col3, Keunecke_2020_table_1:row9:col4, Keunecke_2020_table_1:row9:col5 |  |
-| theta_cl_sex | `Q900` · theta_cl_sex | 0.169 |  |  |  |  |  |  | bcp14334-tbl-0003:row5:col1 |  |
-| theta_q351_sex | `Q900` · theta_q351_sex | 0.380 |  |  |  |  | 5.06 |  | bcp14334-tbl-0003:row17:col1, bcp14334-tbl-0003:row17:col2, bcp14334-tbl-0003:row17:col3, bcp14334-tbl-0003:row17:col4, bcp14334-tbl-0003:row17:col5 |  |
-| theta_cl_sex | `Q900` · theta_cl_sex | 0.761 |  |  |  |  | 5.08 |  | bcp14334-tbl-0003:row19:col1, bcp14334-tbl-0003:row19:col2, bcp14334-tbl-0003:row19:col3, bcp14334-tbl-0003:row19:col4, bcp14334-tbl-0003:row19:col5 |  |
+| k CG, h−1 | `Q346` · kout_peripheral | 0.141 | h−1 | 3.917e-05 | 1/s | 1/h |  | llm (0.6) | bcp14334-tbl-0003:row14:col1, Keunecke_2020_table_1:row10:col1, Keunecke_2020_table_2:row11:col1 |  |
+| CLM‐2, L h−1 | `Q22` · CL | 2.45 | L h−1 | 6.806e-07 | m3/s | l/h | 4.98 | exact (1) | bcp14334-tbl-0003:row16:col1, Keunecke_2020_table_2:row13:col1 |  |
+| CLM‐5, L h−1 | `Q22` · CL | 0.746 | L h−1 | 2.072e-07 | m3/s | l/h | 28.8 | exact (1) | bcp14334-tbl-0003:row18:col1, Keunecke_2020_table_2:row14:col1 |  |
+| FRM5 | `Q45` · fm | -1.09 |  |  |  |  | 19.4 | exact (1) | bcp14334-tbl-0003:row20:col1, Keunecke_2020_table_2:row15:col1 |  |
+| VC/Foral, L | `Q290` · V1/F | 10.7 | L | 0.0107 | m3 | l | 18.1 | route_fold (0.9) | Keunecke_2020_table_1:row3:col1 |  |
+| VP/Foral, L | `Q82` · V2/F | 162 | L | 0.162 | m3 | l | 16.1 | route_fold (0.9) | Keunecke_2020_table_1:row9:col1 |  |
+| theta_cl_bmi | `Q900` · theta_cl_bmi | -0.363 |  |  |  |  |  |  | bcp14334-tbl-0003:row6:col1 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -103,53 +91,68 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['Q2']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-
 **Interpretation flags:**
+- compound tags: 12 row(s) → M-2, 12 row(s) → M-5 (name 24)
 - table section residual_error: 'Parent Prop. error, SD' routed out of structural estimates ('Residual error')
 - table section residual_error: 'M‐2 Add. error, SD' routed out of structural estimates ('Residual error')
 - table section residual_error: 'M‐2 Prop. error, SD' routed out of structural estimates ('Residual error')
 - table section residual_error: 'M‐5 Add. error, SD' routed out of structural estimates ('Residual error')
 - table section residual_error: 'M‐5 Prop. error, SD' routed out of structural estimates ('Residual error')
 - table section residual_error: 'SD of proportional error' routed out of structural estimates ('Residual error')
-- covariate level 'BMI on regorafenib clearance' → Q900:bmi_on_regorafenib_clearance = -0.363 (linear_fractional on Q22)
+- dropped unlinked row (NIL): 'Sex on regorafenib clearance' — extend the ontology if this is a real PK parameter (source ['bcp14334-tbl-0003:row5:col1'])
+- dropped unlinked row (NIL): 'k GE, h−1' — extend the ontology if this is a real PK parameter (source ['bcp14334-tbl-0003:row8:col1', 'Keunecke_2020_table_1:row4:col1', 'Keunecke_2020_table_2:row5:col1'])
 - unit_dimension_unknown: 'L/h−1' (Q)
 - dropped unlinked row (NIL): 'DGE, h' — extend the ontology if this is a real PK parameter (source ['bcp14334-tbl-0003:row15:col1', 'Keunecke_2020_table_1:row11:col1', 'Keunecke_2020_table_2:row12:col1'])
+- dropped unlinked row (NIL): 'Sex on M‐2 clearance' — extend the ontology if this is a real PK parameter (source ['bcp14334-tbl-0003:row17:col1'])
+- dropped unlinked row (NIL): 'Sex on M‐5 clearance' — extend the ontology if this is a real PK parameter (source ['bcp14334-tbl-0003:row19:col1'])
 - dropped duplicate Q22 ('CL/Foral, L h−1', value '4.02') — already have one for this compound
 - dropped duplicate Q30 ('Q/Foral, L h−1', value '11.0') — already have one for this compound
 - dropped duplicate Q30 ('QP/(1‐FRM2), L h−1', value '11.0') — already have one for this compound
-- covariate effect for Q351 has no base parameter row (kept as unattached equation-variable)
-- implicit units: 'QP/(1‐FRM2), L/h−1' → L/h (from the paper text: 'The parameter listing gives “L/h−1 = 11.0,” and the table caption defines Q as “intercompartmental clearance.” Interpret')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=regorafenib
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 - template fit: PK_3M_9C — formed from central; parent 2, metabolites [0, 0]
-- row roles (LLM): model_class=compartmental; 39/39 row label(s) assigned, 63 linked by role; re-tagged parent→M-2 ×49, parent→M-5 ×49
+- status held at "Needs review" — not promoted
+- row roles (LLM): model_class=compartmental; 39/39 row label(s) assigned, 23 linked by role; re-tagged parent→M-2 ×13, parent→M-5 ×13
 - molar mass: no plausible PubChem entry for 'M-5' ('no full name in the paper') — left in mass units
 - molar mass: none of 1 PubChem candidate(s) is 'M-2' (LLM) — left in mass units
 - molar mass: none found for 'M-2' — its concentrations stay mass-only
 - molar mass: none found for 'M-5' — its concentrations stay mass-only
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
+- table bcp14334-tbl-0003: unbound_uncertainty
+- table bcp14334-tbl-0003: unparsed_numeric_cell
+- table Keunecke_2020_table_1: unbound_uncertainty
+- table Keunecke_2020_table_1: unparsed_numeric_cell
 - companion parameter table 1 transcribed (39 record(s))
+- table Keunecke_2020_table_2: unbound_uncertainty
+- table Keunecke_2020_table_2: unparsed_numeric_cell
 - companion parameter table 2 transcribed (86 record(s))
 - LLM selected parameter table(s) 1, 2, 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.71 (22/31 fields) | 9 |
 | `qwen3.8-27b` | partly confirmed | 0.806 (25/31 fields) | 6 |
 
-<details><summary>6 field discrepancies</summary>
+<details><summary>15 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[clm‐2].covariate_forms` | ['linear_fractional'] | ['linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[clm‐5].covariate_forms` | ['linear_fractional'] | ['linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[clp/(1‐frm2)].covariate_forms` | ['linear_fractional'] | ['linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[k cg]` | 0.141 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k ge]` |  | 100 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[qp/(1‐frm2)]` |  | 11.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_sex]` |  | 0.380 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q31_sex]` |  | 0.169 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q31_sex]` |  | 0.761 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[k cg]` | 0.141 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[k ge]` | 100 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[sex_on_regorafenib_clearance]` |  | 0.169 | only_one_extracted |
@@ -169,42 +172,29 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 13 |  |
+| C0_has_structural_params | pass |  | 12 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['bcp14334-tbl-0003:row4:col1', 'Keunecke_2020_table_2:row3:col1'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['bcp14334-tbl-0003:row16:col1', 'bcp14334-tbl-0003:row16:col2', 'bcp14334-tbl-0003:row16:col3', 'bcp14334-tbl-0003:row16:col4', 'bcp14334-tbl-0003:row16:col5', 'Keunecke_2020_table_2:row13:col1', 'Keunecke_2020_table_2:row13:col2', 'Keunecke_2020_table_2:row13:col3', 'Keunecke_2020_table_2:row13:col4', 'Keunecke_2020_table_2:row13:col5'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['bcp14334-tbl-0003:row18:col1', 'bcp14334-tbl-0003:row18:col2', 'bcp14334-tbl-0003:row18:col3', 'bcp14334-tbl-0003:row18:col4', 'bcp14334-tbl-0003:row18:col5', 'Keunecke_2020_table_2:row14:col1', 'Keunecke_2020_table_2:row14:col2', 'Keunecke_2020_table_2:row14:col3', 'Keunecke_2020_table_2:row14:col4', 'Keunecke_2020_table_2:row14:col5'] |
-| C5_dimension_Q290 | pass | [length] ** 3 |  | ['Keunecke_2020_table_1:row3:col1', 'Keunecke_2020_table_1:row3:col2', 'Keunecke_2020_table_1:row3:col3', 'Keunecke_2020_table_1:row3:col4', 'Keunecke_2020_table_1:row3:col5'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['bcp14334-tbl-0003:row12:col1'] |
-| C5_dimension_Q347 | pass | 1 / [time] |  | ['bcp14334-tbl-0003:row14:col1', 'Keunecke_2020_table_1:row10:col1', 'Keunecke_2020_table_1:row10:col2', 'Keunecke_2020_table_1:row10:col3', 'Keunecke_2020_table_1:row10:col4', 'Keunecke_2020_table_1:row10:col5', 'Keunecke_2020_table_2:row11:col1'] |
-| C5_dimension_Q48 | pass | 1 / [time] |  | ['bcp14334-tbl-0003:row8:col1', 'Keunecke_2020_table_1:row4:col1', 'Keunecke_2020_table_2:row5:col1'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['bcp14334-tbl-0003:row16:col1', 'Keunecke_2020_table_2:row13:col1'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['bcp14334-tbl-0003:row18:col1', 'Keunecke_2020_table_2:row14:col1'] |
+| C5_dimension_Q290 | pass | [length] ** 3 |  | ['Keunecke_2020_table_1:row3:col1'] |
+| C5_dimension_Q346 | pass | 1 / [time] |  | ['bcp14334-tbl-0003:row14:col1', 'Keunecke_2020_table_1:row10:col1', 'Keunecke_2020_table_2:row11:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['bcp14334-tbl-0003:row2:col1', 'Keunecke_2020_table_1:row1:col1', 'Keunecke_2020_table_2:row1:col1'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['bcp14334-tbl-0003:row7:col1', 'Keunecke_2020_table_2:row4:col1'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['bcp14334-tbl-0003:row13:col1', 'Keunecke_2020_table_2:row10:col1'] |
-| C5_dimension_Q82 | pass | [length] ** 3 |  | ['Keunecke_2020_table_1:row9:col1', 'Keunecke_2020_table_1:row9:col2', 'Keunecke_2020_table_1:row9:col3', 'Keunecke_2020_table_1:row9:col4', 'Keunecke_2020_table_1:row9:col5'] |
+| C5_dimension_Q82 | pass | [length] ** 3 |  | ['Keunecke_2020_table_1:row9:col1'] |
+| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | L/h−1 | ['bcp14334-tbl-0003:row12:col1'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 4.02 L/h | ['bcp14334-tbl-0003:row4:col1', 'Keunecke_2020_table_2:row3:col1'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 2.45 L/h | ['bcp14334-tbl-0003:row16:col1', 'bcp14334-tbl-0003:row16:col2', 'bcp14334-tbl-0003:row16:col3', 'bcp14334-tbl-0003:row16:col4', 'bcp14334-tbl-0003:row16:col5', 'Keunecke_2020_table_2:row13:col1', 'Keunecke_2020_table_2:row13:col2', 'Keunecke_2020_table_2:row13:col3', 'Keunecke_2020_table_2:row13:col4', 'Keunecke_2020_table_2:row13:col5'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.746 L/h | ['bcp14334-tbl-0003:row18:col1', 'bcp14334-tbl-0003:row18:col2', 'bcp14334-tbl-0003:row18:col3', 'bcp14334-tbl-0003:row18:col4', 'bcp14334-tbl-0003:row18:col5', 'Keunecke_2020_table_2:row14:col1', 'Keunecke_2020_table_2:row14:col2', 'Keunecke_2020_table_2:row14:col3', 'Keunecke_2020_table_2:row14:col4', 'Keunecke_2020_table_2:row14:col5'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 10.7 L | ['Keunecke_2020_table_1:row3:col1', 'Keunecke_2020_table_1:row3:col2', 'Keunecke_2020_table_1:row3:col3', 'Keunecke_2020_table_1:row3:col4', 'Keunecke_2020_table_1:row3:col5'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.45 L/h | ['bcp14334-tbl-0003:row16:col1', 'Keunecke_2020_table_2:row13:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.746 L/h | ['bcp14334-tbl-0003:row18:col1', 'Keunecke_2020_table_2:row14:col1'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 10.7 L | ['Keunecke_2020_table_1:row3:col1'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 10.7 L | ['bcp14334-tbl-0003:row7:col1', 'Keunecke_2020_table_2:row4:col1'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 162 L | ['bcp14334-tbl-0003:row13:col1', 'Keunecke_2020_table_2:row10:col1'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 162 L | ['Keunecke_2020_table_1:row9:col1', 'Keunecke_2020_table_1:row9:col2', 'Keunecke_2020_table_1:row9:col3', 'Keunecke_2020_table_1:row9:col4', 'Keunecke_2020_table_1:row9:col5'] |
-
-**Reviewer per-scenario checks:**
-
-| check | scenario | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|---|
-| T2_covariates_not_exercised | (all) | fail |  |  |  | record has covariate_effects but the engineer simulated only the reference individual — covariate scenarios were not exercised |
-| T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_param_coverage |  | fail | 10 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['kabs', 'V1', 'kcomp', 'V2', 'V1/F', 'V2/F'] |
-| T3_topology_template |  | pass | general_linear → PK_General_Linear* | PK_General_Linear |  | engineer template must match the scholar topology |
-| T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.806, 0 of 1 reader(s) agree | 0.806 | a second reader did not contradict the extraction |
+| C9_phys_window_Q82 | pass | volume within physiological range | 162 L | ['Keunecke_2020_table_1:row9:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -220,39 +210,22 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_regorafenib/Regorafenib_Keunecke2020_reference/Regorafenib_Keunecke2020_reference_modelica.zip" download>Regorafenib_Keunecke2020_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_regorafenib/Regorafenib_Keunecke2020_reference/Regorafenib_Keunecke2020_reference_matlab.zip" download>Regorafenib_Keunecke2020_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_regorafenib/Regorafenib_Keunecke2020_reference/Regorafenib_Keunecke2020_reference_matlab_simbio.zip" download>Regorafenib_Keunecke2020_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_regorafenib/Regorafenib_Keunecke2020_reference/Regorafenib_Keunecke2020_reference_sbml.zip" download>Regorafenib_Keunecke2020_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_regorafenib/Regorafenib_Keunecke2020_reference/Regorafenib_Keunecke2020_reference_cellml.zip" download>Regorafenib_Keunecke2020_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 </tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p>No model archives available.</p>
 </div></div>
-
-## How to cite
-
-**Source paper** (the parameters are its): Keunecke A, Hoefman S, Drenth HJ, Zisowsky J, Cleton A, Ploeger BA. Population pharmacokinetics of regorafenib in solid tumours: Exposure in clinical practice considering enterohepatic circulation and food intake. British journal of clinical pharmacology 86(12):2362–2376 (2020). [doi:10.1111/bcp.14334](https://doi.org/10.1111/bcp.14334)
-
-**This record:** Pharmacolibrary, model `Regorafenib_Keunecke2020_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_regorafenib/Regorafenib_Keunecke2020_reference>
-
-```bibtex
-@misc{pharmacolibrary_RegorafenibKeunecke2020reference,
-  title  = {{Pharmacolibrary model Regorafenib_Keunecke2020_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_regorafenib/Regorafenib_Keunecke2020_reference},
-  note   = {Parameters from doi:10.1111/bcp.14334},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no shared WebAssembly template. The **Models** tab provides the record-specific FMI archive._
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bregorafenib%5D%20Regorafenib_Keunecke2020_reference&body=Drug%3A%20regorafenib%0ARecord%3A%20Regorafenib_Keunecke2020_reference%0APaper%3A%20Keunecke_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_regorafenib/Regorafenib_Keunecke2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 05:40 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:24 UTC</sub>

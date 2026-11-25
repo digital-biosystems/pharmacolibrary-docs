@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Tiropramide's clearance was left unassigned, so a placeholder value stood in and the abstract-derived one-compartment model was held back rather than published.
+> No value for tiropramide's clearance; t3_param_coverage (+2 more).
 
 <div class="pk-model-meta" hidden drug="tiropramide" model-id="Tiropramide_Arigoni1986_reference" status="model_quarantined" stale="false" population="healthy volunteers" measured-compound="tiropramide" parameterization="mechanistic" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Arigoni R, Chisté R, Drovanti A, Makovec F, Senin P, Setnikar I. Pharmacokineti
 
 ### Reviewer guidance
 
-**Tiropramide's clearance was left unassigned, so a placeholder value stood in and the abstract-derived one-compartment model was held back rather than published.**
+**No value for tiropramide's clearance; t3_param_coverage (+2 more).**
 
-Because only the abstract was available, reported summary statistics like the 2.5 h half-life and 221 l steady-state volume were used to define the structure instead of fitted parameters. The clearance required for a one-compartment model was never specified, forcing a placeholder substitution that contradicted the need for explicit estimates. Additionally, a second reader rejected all extracted values, flagging the 11-minute lag and 16.2% excretion as unsupported. Extracted — tiropramide: Vss 221 l, kel 0.279 h-1, t1/2z 2.5 h, tlag 11 min, fe 16.2 %.
+The model was built, but tiropramide's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tiropramide: Vss 221 l, kel 0.279 h-1, t1/2z 2.5 h, tlag 11 min, fe 16.2 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tiropramide, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,7 +142,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | fail | 2 scholar param(s) emitted or defaulted | 1 covered |  | neither emitted nor in defaulted[]: ['tlag'] |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.133, 0 of 1 reader(s) agree | 0.133 | cross-check disputed by a second reader: verdict disputed, agreement 0.133, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.133 (2 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.133 | cross-check contradicted by a second reader: verdict disputed; agreement 0.133 (2 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

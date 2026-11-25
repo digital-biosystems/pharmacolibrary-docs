@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D04A&quot;,&quot;href&quot;:&quot;atc/D04A.md&quot;},{&quot;label&quot;:&quot;diphenhydramine&quot;,&quot;href&quot;:&quot;drugs/drug_diphenhydramine/&quot;},{&quot;label&quot;:&quot;Yoo_1993 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diphenhydramine_Wasfi2003_reference&quot;,&quot;label&quot;:&quot;Wasfi_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diphenhydramine/Diphenhydramine_Wasfi2003_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diphenhydramine_Wasfi2003_reference&quot;,&quot;label&quot;:&quot;Wasfi_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diphenhydramine/Diphenhydramine_Wasfi2003_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> The clearance plausibility check could not be computed.
+> Only clearance was extracted — no volume; the clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="diphenhydramine" model-id="Diphenhydramine_Yoo1993_reference" status="needs_review" stale="false" population="chronically instrumented pregnant sheep" measured-compound="diphenhydramine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="diphenhydramine" model-id="Diphenhydramine_Yoo1993_reference" status="needs_review" stale="false" population="pregnant sheep" measured-compound="diphenhydramine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Yoo SD, Rurak DW, Taylor SM, Axelson JE. Transplacental and nonplacental clearances of diphenhydramine in the chronically instrumented pregnant sheep. Journal of pharmaceutical sciences 82(2):145–149 (1993).
@@ -17,7 +17,7 @@ Yoo SD, Rurak DW, Taylor SM, Axelson JE. Transplacental and nonplacental clearan
 
 ## Population and dosing
 
-**Population:** chronically instrumented pregnant sheep · condition pregnancy · n = 8.
+**Population:** pregnant sheep · condition pregnancy · age group adult.
 
 > **Species: sheep.** This record comes from an animal study (sheep), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -25,7 +25,7 @@ Yoo SD, Rurak DW, Taylor SM, Axelson JE. Transplacental and nonplacental clearan
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,15 +33,12 @@ Yoo SD, Rurak DW, Taylor SM, Axelson JE. Transplacental and nonplacental clearan
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| free fraction of diphenhydramine determined in the fetus | fu_tissue | 0.277 |  |
+| free fraction of diphenhydramine determined in the fetus | fu | 0.277 |  |
 | total fetal clearance | CL | 472.7 | mL/min |
-| transplacental clearance from fetus to mother | CLfm | 264.4 | mL/min |
-| that from mother to fetus | Q | 82.4 | mL/min |
-| Maternal nonplacental clearance | CLmp | 3343.8 | mL/min |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.857), qwen3.8-27b (not confirmed, agreement 0.727). Primary extraction retained.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,9 +48,9 @@ Yoo SD, Rurak DW, Taylor SM, Axelson JE. Transplacental and nonplacental clearan
 
 ### Reviewer guidance
 
-**The clearance plausibility check could not be computed.**
+**Only clearance was extracted — no volume; the clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — diphenhydramine: fu_tissue 0.277, CL 473 mL/min, CLfm 264 mL/min, Q 82.4 mL/min, CLmp 3.34e+03 mL/min.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — diphenhydramine: fu 0.277, CL 473 mL/min.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[free fraction of diphenhydramine determined in the fetus].parameter_id`: this record has Q413, the second reading Q46; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
@@ -63,11 +60,8 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| free fraction of diphenhydramine determined in the fetus | `Q413` · fu_tissue | 0.277 |  |  |  |  | llm_corrected (0.6) | Yoo_1993:abstract |
-| total fetal clearance | `Q22` · CL | 472.7 | mL/min | 7.878e-06 | m3/s | ml/min | llm_confirmed (0.6) | Yoo_1993:abstract |
-| transplacental clearance from fetus to mother | `Q370` · CLfm | 264.4 | mL/min | 4.407e-06 | m3/s | ml/min | llm_corrected (0.6) | Yoo_1993:abstract |
-| that from mother to fetus | `Q30` · Q | 82.4 | mL/min | 1.373e-06 | m3/s | ml/min | llm (0.6) | Yoo_1993:abstract |
-| Maternal nonplacental clearance | `Q371` · CLmp | 3343.8 | mL/min | 5.573e-05 | m3/s | ml/min | llm_corrected (0.6) | Yoo_1993:abstract, Yoo_1993:abstract |
+| free fraction of diphenhydramine determined in the fetus | `Q46` · fu | 0.277 |  | 0.277 |  |  | llm_confirmed (0.6) | Yoo_1993:abstract |
+| total fetal clearance | `Q22` · CL | 472.7 | mL/min | 7.878e-06 | m3/s | ml/min | llm_confirmed (0.6) | Yoo_1993:abstract, Yoo_1993:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,30 +71,33 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'that in the mother' — extend the ontology if this is a real PK parameter (source ['Yoo_1993:abstract'])
+- dropped duplicate Q46 ('free fraction of diphenhydramine determined in the mother', value 0.141) — already have one for this compound
 - dropped duplicate Q22 ('total maternal clearance', value 3426.1) — already have one for this compound
-- dropped duplicate Q22 ('fetal nonplacental clearance', value 208.4) — already have one for this compound
+- dropped unlinked row (NIL): 'transplacental clearance from fetus to mother' — extend the ontology if this is a real PK parameter (source ['Yoo_1993:abstract'])
+- dropped duplicate Q22 ('transplacental clearance from mother to fetus', value 82.4) — already have one for this compound
+- dropped duplicate Q22 ('Maternal nonplacental clearance', value 3343.8) — already have one for this compound
+- dropped unlinked row (NIL): 'fetal nonplacental clearance' — extend the ontology if this is a real PK parameter (source ['Yoo_1993:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diphenhydramine
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Yoo_1993_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 | `qwen3.8-27b` | not confirmed | 0.727 (8/11 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[maternal nonplacental clearance accounted for]` |  | 97.8 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[free fraction of diphenhydramine determined in the fetus].parameter_id` | Q413 | Q46 | mismatch |
 | `qwen3.8-27b` | `parameters[maternal nonplacental clearance]` | 3343.8 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[transplacental clearance from fetus to mother].parameter_id` | Q370 | Q371 | mismatch |
@@ -117,16 +114,13 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Yoo_1993:abstract'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Yoo_1993:abstract'] |
-| C5_dimension_Q370 | pass | [length] ** 3 / [time] |  | ['Yoo_1993:abstract'] |
-| C5_dimension_Q371 | pass | [length] ** 3 / [time] |  | ['Yoo_1993:abstract', 'Yoo_1993:abstract'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 472.7 | ['Yoo_1993:abstract'] |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Yoo_1993:abstract', 'Yoo_1993:abstract'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 472.7 | ['Yoo_1993:abstract', 'Yoo_1993:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 28.4 L/h | ['Yoo_1993:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 28.4 L/h | ['Yoo_1993:abstract', 'Yoo_1993:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,4 +154,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiphenhydramine%5D%20Diphenhydramine_Yoo1993_reference&body=Drug%3A%20diphenhydramine%0ARecord%3A%20Diphenhydramine_Yoo1993_reference%0APaper%3A%20Yoo_1993%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diphenhydramine/Diphenhydramine_Yoo1993_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 14:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:22 UTC</sub>

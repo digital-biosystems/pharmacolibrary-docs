@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The bioavailability fraction F and lag time Tlag for ceftriaxone were not estimated and defaulted, leaving the model incomplete.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ceftriaxone" model-id="Ceftriaxone_RoubaudBaudron2025_reference" status="needs_review" stale="false" population="older patients (≥65 years)" measured-compound="ceftriaxone" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Roubaud-Baudron C, Fauchon H, Stanke-Labesque F, Paccalin M, Breilh D, Grégoire
 
 ### Reviewer guidance
 
-**The bioavailability fraction F and lag time Tlag for ceftriaxone were not estimated and defaulted, leaving the model incomplete.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lacks explicit values for the bioavailability fraction F and the lag time Tlag for ceftriaxone. The second reader identified a renal clearance value of 0.527, but this parameter is missing from the current record. Consequently, the model relied on library defaults for these parameters rather than values derived from the study. Extracted — ceftriaxone: kabs 1.63 h−1, V1 7.13 L, V2 8.29 L, Q 9.14 L/h, CL 0.35 L/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ceftriaxone: kabs 1.63 h−1, V1 7.13 L, V2 8.29 L, Q 9.14 L/h, CL 0.35 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clnr: this record has none, the second reading 0.527. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,7 +152,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.938, 0 of 1 reader(s) agree | 0.938 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.938 (15 of 16 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.938 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

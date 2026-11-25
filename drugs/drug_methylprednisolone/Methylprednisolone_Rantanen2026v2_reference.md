@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because peripheral volume is negative, intercompartmental clearance is dimensionally inconsistent, and clearance units were unconvertible.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit CL ([length] ** 3) vs [length] ** 3 / [time]; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Rantanen2026v2_reference" status="rejected" stale="false" population="neonates and paediatric patients undergoing cardiac surgery" measured-compound="methylprednisolone" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Rantanen M, Keski-Nisula J, Olkkola KT, Neuvonen PJ, Pesonen E, Suominen P et al
 
 ### Reviewer guidance
 
-**Record rejected because peripheral volume is negative, intercompartmental clearance is dimensionally inconsistent, and clearance units were unconvertible.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit CL ([length] ** 3) vs [length] ** 3 / [time]; c2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The peripheral volume of distribution is listed as -0.21 L, which is physically implausible. The intercompartmental clearance value of 2590.0 L/h conflicts with the expected volume dimension for that parameter. Additionally, the unit for total clearance could not be converted to standard SI units. Extracted — methylprednisolone: CL 41 CL, V1 14.8 L, V2 -0.21 L, Q 2.59e+03 L/h, kabs 0.35 1/h.
+A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — methylprednisolone: CL 41 CL, V1 14.8 L, V2 -0.21 L, Q 2.59e+03 L/h, kabs 0.35 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of fixed absorption rate constant: this record has 0.35, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

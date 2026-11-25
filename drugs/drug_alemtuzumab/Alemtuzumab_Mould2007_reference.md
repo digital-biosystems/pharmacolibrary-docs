@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the intercompartmental clearance unit, micrograms per hour, is dimensionally incompatible with volume, and the abstract-only source prevents parameter validation.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit microg h(-1) ([mass] / [time]) vs [length] ** 3; Q47 unit microg l(-1) ([mass] / [length] ** 3) vs 1 / [time]; Q88 unit microg h(-1) ml(-1) ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="alemtuzumab" model-id="Alemtuzumab_Mould2007_reference" status="rejected" stale="false" population="patients with B-cell chronic lymphocytic leukaemia" measured-compound="alemtuzumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Mould DR, Baumann A, Kuhlmann J, Keating MJ, Weitman S, Hillmen P et al. Populat
 
 ### Reviewer guidance
 
-**The record was rejected because the intercompartmental clearance unit, micrograms per hour, is dimensionally incompatible with volume, and the abstract-only source prevents parameter validation.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit microg h(-1) ([mass] / [time]) vs [length] ** 3; Q47 unit microg l(-1) ([mass] / [length] ** 3) vs 1 / [time]; Q88 unit microg h(-1) ml(-1) ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The intercompartmental clearance parameter is assigned a value of 1.05 with units of liters per hour, yet the label indicates a volume of distribution which must have dimensions of length cubed. Additionally, the elimination rate constant is given as 338 micrograms per liter, which is dimensionally invalid for a rate constant requiring inverse time. The second reader could not confirm any of the extracted values, marking all specific parameters as null. Extracted — alemtuzumab: kel 338 microg l(-1), Q 1.05 l h(-1), Ctrough 13.2 microg ml(-1), AUC 484 microg h(-1) ml(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — alemtuzumab: kel 338 microg l(-1), Q 1.05 l h(-1), Ctrough 13.2 microg ml(-1), AUC 484 microg h(-1) ml(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has alemtuzumab, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

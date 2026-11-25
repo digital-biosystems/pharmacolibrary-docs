@@ -22,8 +22,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kunieda_2025_cell_viability_of_SU_DHL_6_cells](drugs/drug_parsaclisib/pd_Kunieda_2025_cell_viability_of_SU_DHL_6_cells.md) | cell viability of SU-DHL-6 cells ← parsaclisib · inhibition effect | — | Kunieda K et al., A long-lasting PI3Kδ inhibitor zandelis…, American journal of cancer… (2025) | [10.62347/JCGQ1004](https://doi.org/10.62347/JCGQ1004) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Kunieda_2025_cell_viability_of_WSU_FSCCL_cells](drugs/drug_parsaclisib/pd_Kunieda_2025_cell_viability_of_WSU_FSCCL_cells.md) | cell viability of WSU-FSCCL cells ← parsaclisib · inhibition effect | — | Kunieda K et al., A long-lasting PI3Kδ inhibitor zandelis…, American journal of cancer… (2025) | [10.62347/JCGQ1004](https://doi.org/10.62347/JCGQ1004) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">mouse</span> | [Kunieda_2025_NanoBRET](drugs/drug_parsaclisib/pd_Kunieda_2025_NanoBRET.md) | PI3Kδ residence time (NanoBRET) ← Parsaclisib · target-mediated drug disposition | — | Kunieda K et al., A long-lasting PI3Kδ inhibitor zandelis…, American journal of cancer… (2025) | [10.62347/JCGQ1004](https://doi.org/10.62347/JCGQ1004) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.00).">mouse</span> | [Kunieda_2025_SPR](drugs/drug_parsaclisib/pd_Kunieda_2025_SPR.md) | PI3Kδ binding (SPR sensorgram) ← Parsaclisib · target-mediated drug disposition | — | Kunieda K et al., A long-lasting PI3Kδ inhibitor zandelis…, American journal of cancer… (2025) | [10.62347/JCGQ1004](https://doi.org/10.62347/JCGQ1004) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Hamadani_2023_QT_interval](drugs/drug_parsaclisib/pd_Hamadani_2023_QT_interval.md) | QT interval · stimulation effect | — | Hamadani M et al., Safety and efficacy of parsaclisib in c…, Hematological oncology (2023) | [10.1002/hon.3209](https://doi.org/10.1002/hon.3209) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -37,7 +38,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 04:18 | 0:53 | 0/0/0 | 2/0/0 | 0/0/0 | 46,960/4,565 | openai / gpt-6-luna | 2 | 1/1 | 2/0 | 0 |
+| 2026-11-24 04:29 | 0:06 | 0/0/0 | 2/1/0 | 0/0/0 | 7,095/397 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## Coverage
 
@@ -50,8 +51,10 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Hamadani_2023 | irrelevant | 0 | 0 | This human safety and efficacy study reports no quantitative pharmacokinetic disposition parameters. |
-| popPK | Kunieda_2025 | irrelevant | 0 | 0 | Parsaclisib is an in-vitro comparator, and no quantitative disposition parameters are reported for it. |
+| popPK | Hamadani_2023 | irrelevant | 0 | 0 | The paper reports safety and efficacy outcomes for a Phase 1 clinical trial and contains no pharmacokinetic parameter estimates (CL, V, t1/2, etc.). |
+| PGx | Hamadani_2023 | not_relevant | 0 | 0 | The paper reports clinical safety and efficacy outcomes of a combination therapy but contains no data on gene variants, genotypes, or their influence on pharmacokinetics or pharmacodynamics. |
+| popPK | Kunieda_2025 | irrelevant | 2 | 0 | Parsaclisib is used only as a comparator agent in binding kinetics and wash-out experiments, not as the subject of a pharmacokinetic parameter study; no PK disposition values (CL, V, ka) are reported for it. |
+| PGx | Kunieda_2025 | not_relevant | 0 | 0 | The paper investigates the pharmacological mechanisms and PK/PD of zandelisib, not the effect of gene variants on the PK or PD of parsaclisib. |
 
 
 </details>

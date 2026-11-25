@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (fish), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">fish</span>
 
-> Clearance was extracted as 6 mg/kg, a mass unit incompatible with volume per time, and the record was abstract-only.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit mg/kg ([mass]) vs [length] ** 3 / [time]; Q67 unit min ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="fumagillin" model-id="Fumagillin_Laurn1989_reference" status="rejected" stale="false" population="yearling rainbow trout" measured-compound="fumagillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Laurén DJ, Wishkovsky A, Groff JM, Hedrick RP, Hinton DE. Toxicity and pharmaco
 
 ### Reviewer guidance
 
-**Clearance was extracted as 6 mg/kg, a mass unit incompatible with volume per time, and the record was abstract-only.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit mg/kg ([mass]) vs [length] ** 3 / [time]; Q67 unit min ([time]) vs 1 / [time].**
 
-The extracted clearance value of 6 mg/kg is a mass concentration, not a clearance unit, creating a fundamental dimensional conflict. Additionally, the model was constructed solely from the paper's abstract, meaning the summary statistics do not represent a fitted pharmacokinetic model. Extracted — fumagillin: CL 6 mg/kg, λ1 20 min, t1/2β 5.4 days.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fumagillin: CL 6 mg/kg, λ1 20 min, t1/2β 5.4 days.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fumagillin dicyclohexylamine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,4 +152,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfumagillin%5D%20Fumagillin_Laurn1989_reference&body=Drug%3A%20fumagillin%0ARecord%3A%20Fumagillin_Laurn1989_reference%0APaper%3A%20Laur%C3%A9n_1989%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_fumagillin/Fumagillin_Laurn1989_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 05:37 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:55 UTC</sub>

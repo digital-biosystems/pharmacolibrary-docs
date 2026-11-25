@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the paper does not study digoxin; extracted values of 0.419 L/h for CL and 1.1 L/70 kg for V are not relevant.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_Silva2023_reference" status="rejected" stale="false" population="" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Silva R, Colom H, Bicker J, Almeida A, Silva A, Sales F et al. Population Pharma
 
 ### Reviewer guidance
 
-**Record rejected because the paper does not study digoxin; extracted values of 0.419 L/h for CL and 1.1 L/70 kg for V are not relevant.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The review determined that the paper's title and abstract do not name digoxin, indicating it is about another drug. Consequently, the extracted clearance of 0.419 L/h and volume of distribution of 1.1 L/70 kg do not pertain to the correct molecule. A second reader suggested a value of 30.82 for an unspecified field, which contradicts the null record entry. Extracted — digoxin: CL 0.419 L/h, V 1.1 L/70 kg.
+Extracted — digoxin: CL 0.419 L/h, V 1.1 L/70 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 30.82. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -121,7 +121,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.875, 0 of 1 reader(s) agree | 0.875 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.875 (7 of 8 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.875 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

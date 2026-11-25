@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held because a second reader disputed the clearance and volume estimates, and the lag time was left at defaults.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Walsh2023_reference" status="needs_review" stale="false" population="children with acute asthma" measured-compound="salbutamol" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Walsh S, Pan S, Sheng Y, Kloprogge F, Standing JF, Anderson BJ et al. Optimising
 
 ### Reviewer guidance
 
-**The record was held because a second reader disputed the clearance and volume estimates, and the lag time was left at defaults.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader disagreed on the central volume (1.79 l vs 109 l) and total clearance (0.522 vs 16.3 l/h), flagging the values for review. Additionally, the absorption lag time was not extracted from the paper and was left at defaults. A reported unit could not be converted to SI, so one parameter reached the next step without an SI value. Extracted — salbutamol: Fab 0.0925 0-1, kabs 16.7 h-1, CL 16.3 l/h, V1 109 l, Q 8.58 l/h, V2 69.4 l.
+A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — salbutamol: Fab 0.0925 0-1, kabs 16.7 h-1, CL 16.3 l/h, V1 109 l, Q 8.58 l/h, V2 69.4 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of base: this record has none, the second reading 1.04; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -155,7 +155,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.667 (8 of 12 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (8 of 12 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

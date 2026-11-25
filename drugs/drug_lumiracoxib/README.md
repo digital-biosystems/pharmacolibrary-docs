@@ -34,7 +34,7 @@ Lumiracoxib is a COX-2 selective nonsteroidal anti-inflammatory drug used for mu
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Vásquez-Bahena_2010_2_LT](drugs/drug_lumiracoxib/pd_V_squez_Bahena_2010_2_LT.md) | latency time (LT) to a thermal stimulus biomarker turnover ← lumiracoxib | — | Vásquez-Bahena DA et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2010) | [10.1111/j.1476-5381.2009.00508.x](https://doi.org/10.1111/j.1476-5381.2009.00508.x) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span> | [Vásquez-Bahena_2010_2_LT](drugs/drug_lumiracoxib/pd_V_squez_Bahena_2010_2_LT.md) | latency time (LT) to a thermal stimulus biomarker turnover ← lumiracoxib | — | Vásquez-Bahena DA et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2010) | [10.1111/j.1476-5381.2009.00508.x](https://doi.org/10.1111/j.1476-5381.2009.00508.x) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

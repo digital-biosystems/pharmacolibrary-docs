@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The first peripheral to central transfer rate constant for ajmaline was rejected because its unit dimension conflicted with the expected time dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min-1 (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Yasuhara1987_dog_2" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajma
 
 ### Reviewer guidance
 
-**The first peripheral to central transfer rate constant for ajmaline was rejected because its unit dimension conflicted with the expected time dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min-1 (1 / [time]) vs 1 / [time].**
 
-The parameter labeled k21 represents the first-order transfer rate constant from the first peripheral compartment to the central compartment. The extracted value of 0.323 min-1 has the correct time inverse dimension, but the record failed a dimension check. This failure resulted in the model being held back despite the numerical consistency of the other kinetic parameters. Extracted — ajmaline: V 12 L/kg, λ1 0.166 min-1, k21 0.323 min-1, kel 0.03 min-1, CL 1.79 ml/min/kg.
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — ajmaline: V 12 L/kg, λ1 0.166 min-1, k21 0.323 min-1, kel 0.03 min-1, CL 1.79 ml/min/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

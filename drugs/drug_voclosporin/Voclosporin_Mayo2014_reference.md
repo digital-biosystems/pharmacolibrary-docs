@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The apparent clearance of voclosporin, 717 mL min(-1), was rejected because its units conflict with the required dimension for that parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit mL min(-1) ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="voclosporin" model-id="Voclosporin_Mayo2014_reference" status="rejected" stale="false" population="renal allograft patients" measured-compound="voclosporin" parameterization="apparent" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Mayo PR, Ling SY, Huizinga RB, Freitag DG, Aspeslet LJ, Foster RT. Population PK
 
 ### Reviewer guidance
 
-**The apparent clearance of voclosporin, 717 mL min(-1), was rejected because its units conflict with the required dimension for that parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q3 unit mL min(-1) ([length] ** 3 / [time]) vs [length] ** 3 / [mass] / [time].**
 
-The record was built from the paper's abstract, so the reported summary statistics stand in for a fitted model. The apparent clearance value of 717 mL min(-1) carries units of volume per time, which conflicts with the expected dimension of volume per mass per time. A second reader disagreed on whether the primary analyte and dose compound were voclosporin or unknown, and also conflicted on whether the clearance and volume values were present. Extracted — voclosporin: CL/F 717 mL min(-1), V 2.01e+03 mL.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — voclosporin: CL/F 717 mL min(-1), V 2.01e+03 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has voclosporin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
-> Rifabutin clearance (0.07 L/h) and volume (0.31 L) are physiologically implausible, causing rejection due to magnitude errors.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="rifabutin" model-id="Rifabutin_Deshpande2024_reference" status="rejected" stale="false" population="" measured-compound="rifabutin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Deshpande D, Magombedze G, Srivastava S, Gumbo T. Antibacterial action of penici
 
 ### Reviewer guidance
 
-**Rifabutin clearance (0.07 L/h) and volume (0.31 L) are physiologically implausible, causing rejection due to magnitude errors.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted clearance of 0.07 L/h and volume of 0.31 L fall outside the expected physiological window for this drug. These values are likely results of a unit or scale extraction error rather than true pharmacokinetic properties. A second reader’s disagreement on multiple numeric fields suggests significant ambiguity in the source data extraction process. Extracted — rifabutin: CL 0.07 L/h, V 0.31 L.
+Extracted — rifabutin: CL 0.07 L/h, V 0.31 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q325: this record has none, the second reading 3.92; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

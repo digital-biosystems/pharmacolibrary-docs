@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bisoprolol was held back because its model predicts a terminal half-life of 126 h rather than 13.5 h, while the absorption rate constant ka was not reported and defaulted.
+> The model does not reproduce the paper's terminal half-life (paper 13.5, model 126); ka use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="bisoprolol" model-id="Bisoprolol_Momilovi2019_reference" status="needs_review" stale="false" population="patients with acute coronary syndrome" measured-compound="bisoprolol" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Momčilović S, Milovanović JR, Janković SM, Jovanović A, Tasić-Otašević S
 
 ### Reviewer guidance
 
-**Bisoprolol was held back because its model predicts a terminal half-life of 126 h rather than 13.5 h, while the absorption rate constant ka was not reported and defaulted.**
+**The model does not reproduce the paper's terminal half-life (paper 13.5, model 126); ka use library defaults, not estimates from this paper (+2 more).**
 
-The model does not reproduce the paper's terminal half-life: the paper reports 13.5 h, while the model predicts 126 h. Ka used defaults, not estimates from this paper; these unsupported values affect the simulated profile. The absorption lag time Tlag was also defaulted, oral bioavailability was assumed to be 1 with no metabolite fraction or molar correction, and first-order depot input was assumed. A second reader disputed the verdict and marked the dosed compound and primary analyte as unknown. Extracted — bisoprolol: CL/F 3.86 L/h, V 700 L.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — bisoprolol: CL/F 3.86 L/h, V 700 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bisoprolol, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,8 +140,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.667, 0 of 1 reader(s) agree | 0.667 | cross-check disputed by a second reader: verdict disputed, agreement 0.667, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 13.5 | 125.7 | 9.31 | hours→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.667 (4 of 6 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.667 | cross-check contradicted by a second reader: verdict disputed; agreement 0.667 (4 of 6 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 13.5 | 125.7 | 9.31 | reported 13.5 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

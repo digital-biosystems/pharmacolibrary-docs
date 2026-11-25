@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the cited paper describes piperacillin pharmacokinetics, not cannabidiol, despite assigning piperacillin clearance and volume values to cannabidiol.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="cannabidiol" model-id="Cannabidiol_LaporteAmargos2026_reference" status="rejected" stale="false" population="" measured-compound="cannabidiol" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Laporte-Amargos J, Ulldemolins M, Hernández-Mitre MP, Roberts JA, Rigo-Bonnin R
 
 ### Reviewer guidance
 
-**The record is rejected because the cited paper describes piperacillin pharmacokinetics, not cannabidiol, despite assigning piperacillin clearance and volume values to cannabidiol.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The extracted clearance value of 12.0 L/h and volume of distribution of 30.0 L explicitly reference piperacillin in their source labels, contradicting the target molecule. An identity check confirmed the paper's subject is not cannabidiol, as neither the title nor abstract names the compound. A second reader disagreed with the extraction, identifying conflicting parameter values such as 18.6 and 32 that were not captured in the primary record. Extracted — cannabidiol: CL 12 L/h, V 30 L.
+Extracted — cannabidiol: CL 12 L/h, V 30 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has none, the second reading 18.6; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -124,7 +124,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

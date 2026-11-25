@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> No volume or clearance — not a compartmental population PK model.
+> No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="valaciclovir" model-id="Valaciclovir_Kably2025_reference" status="rejected" stale="false" population="early liver transplant recipients" measured-compound="aciclovir" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="valaciclovir" model-id="Valaciclovir_Kably2025_reference" status="rejected" stale="false" population="early liver transplant recipients" measured-compound="aciclovir" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Kably B, Briard M, Francoz C, Roux O, Houhou N, Mackiewicz V et al. Population pharmacokinetics of aciclovir and its major metabolite 9-carboxymethoxymethylguanine and safety profile of valaciclovir in early liver transplant recipients. The Journal of antimicrobial chemotherapy 80(5):1302–1308 (2025).
@@ -22,7 +22,7 @@ Kably B, Briard M, Francoz C, Roux O, Houhou N, Mackiewicz V et al. Population p
 
 ## Model
 
-**Structure:** parent + metabolite; no model was built for this record.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
 **Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
@@ -32,9 +32,9 @@ Kably B, Briard M, Francoz C, Roux O, Houhou N, Mackiewicz V et al. Population p
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| AUC0-24 (aciclovir, normorenal, valaciclovir 2000 mg q8h) | AUCSS | 44.8 | mg·h/L |
-| AUC0-24 (9-CMMG, normorenal, valaciclovir 2000 mg q8h) | AUCSS | 13.3 | mg·h/L |
-| metabolic ratio of AUC0-24 (9-CMMG/aciclovir), eGFR &gt;90 mL/min/1.73 m2 | AUC ratio | 30.4 | % |
+| AUC0-24 (aciclovir) | AUCt | 44.8 | mg·h/L |
+| AUC0-24 (9-CMMG) | AUCt | 13.3 | mg·h/L |
+| median estimated metabolic ratio of AUC0-24 (9-CMMG/aciclovir) (&gt;90 mL/min/1.73 m2 eGFR) | AUC ratio | 30.4 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -48,36 +48,37 @@ Kably B, Briard M, Francoz C, Roux O, Houhou N, Mackiewicz V et al. Population p
 
 ### Reviewer guidance
 
-**No volume or clearance — not a compartmental population PK model.**
+**No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is valaciclovir's own; they describe aciclovir and 9-carboxymethoxymethylguanine.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is valaciclovir's own; they describe aciclovir and 9-carboxymethoxymethylguanine. Extracted — aciclovir: AUCt 44.8 mg·h/L, AUC ratio 30.4; 9-carboxymethoxymethylguanine: AUCt 13.3 mg·h/L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has aciclovir → 9-carboxymethoxymethylguanine (metabolism), the second reading aciclovir → 9-cmmg (metabolism); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has valaciclovir, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | unit_canonical | link | source |
-|---|---|---|---|---|---|---|
-| AUC0-24 (aciclovir, normorenal, valaciclovir 2000 mg q8h) | `Q18` · AUCSS | 44.8 | mg·h/L | (h·mg)/l | llm (0.6) | Kably_2025:abstract |
-| AUC0-24 (9-CMMG, normorenal, valaciclovir 2000 mg q8h) | `Q18` · AUCSS | 13.3 | mg·h/L | (h·mg)/l | llm (0.6) | Kably_2025:abstract |
-| metabolic ratio of AUC0-24 (9-CMMG/aciclovir), eGFR &gt;90 mL/min/1.73 m2 | `Q21` · AUC ratio | 30.4 | % | % | llm (0.6) | Kably_2025:abstract |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| AUC0-24 (aciclovir) | `Q19` · AUCt | 44.8 | mg·h/L | 161.3 | kg*s/m3 | (h·mg)/l | llm (0.6) | Kably_2025:abstract |
+| AUC0-24 (9-CMMG) | `Q19` · AUCt | 13.3 | mg·h/L | 47.88 | kg*s/m3 | (h·mg)/l | llm (0.6) | Kably_2025:abstract |
+| median estimated metabolic ratio of AUC0-24 (9-CMMG/aciclovir) (&gt;90 mL/min/1.73 m2 eGFR) | `Q21` · AUC ratio | 30.4 |  | 30.4 |  |  | llm (0.6) | Kably_2025:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped duplicate Q21 ('median estimated metabolic ratio of AUC0-24 (9-CMMG/aciclovir) (&lt;30 mL/min/1.73 m2 eGFR)', value 129.9) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=aciclovir
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- row roles: per-genotype parameters — typical value from the reference group: metabolic ratio of AUC0-24 (9-CMMG/aciclovir), eGFR &gt;90 mL/min/1.73 m2
-- row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 0 linked by role; re-tagged aciclovir→9-carboxymethoxymethylguanine ×2
+- row roles: 2 per-group rows of none summary_statistic but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 0 linked by role; re-tagged aciclovir→9-carboxymethoxymethylguanine ×1
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
@@ -86,7 +87,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the lin
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -96,12 +97,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['aciclovir', '9-carboxymethoxymethylguanine', 'metabolism']] | [['aciclovir', '9-cmmg', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.links` | [['valaciclovir', 'aciclovir', 'metabolism'], ['aciclovir', '9-carboxymethoxymethylguanine', 'metabolism']] | [['aciclovir', '9-carboxymethoxymethylguanine', 'metabolism']] | mismatch |
 | `gpt-oss-120b` | `parameters[auc0-24]` | 13.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[auc0-24]` | 44.8 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[estimated auc0-24]` |  | 13.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[estimated auc0-24]` |  | 44.8 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[metabolic ratio of auc0-24 (9-cmmg/aciclovir), egfr &gt;90 ml/min/1.73 m2]` | 30.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median estimated metabolic ratio of auc0-24 (9-cmmg/aciclovir)]` | 30.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[metabolic ratio of auc0-24]` |  | 30.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[valaciclovir 2000 mg q8h]` |  | 2000 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | valaciclovir | unknown | mismatch |
 
 </details>
 
@@ -117,9 +118,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q18 | pass | [mass] * [time] / [length] ** 3 |  | ['Kably_2025:abstract'] |
-| C5_dimension_Q18 | pass | [mass] * [time] / [length] ** 3 |  | ['Kably_2025:abstract'] |
-| C8_topology | pass |  |  |  |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Kably_2025:abstract'] |
+| C5_dimension_Q19 | pass | [mass] * [time] / [length] ** 3 |  | ['Kably_2025:abstract'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -143,4 +144,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bvalaciclovir%5D%20Valaciclovir_Kably2025_reference&body=Drug%3A%20valaciclovir%0ARecord%3A%20Valaciclovir_Kably2025_reference%0APaper%3A%20Kably_2025%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_valaciclovir/Valaciclovir_Kably2025_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:38 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 08:22 UTC</sub>

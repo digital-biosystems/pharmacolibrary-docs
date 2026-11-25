@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Second reader disagrees on ganciclovir parameter values, disputing the initial needs_review verdict for this one-compartment model.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ganciclovir" model-id="Ganciclovir_Li2020v2_final_model" status="needs_review" stale="false" population="critically ill children with cytomegalovirus infection" measured-compound="ganciclovir" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Li S, Shu C, Wu S, Xu H, Wang Y. Population Pharmacokinetics and Dose Optimizati
 
 ### Reviewer guidance
 
-**Second reader disagrees on ganciclovir parameter values, disputing the initial needs_review verdict for this one-compartment model.**
+**cross_check_disputed; x1_cross_check.**
 
-The record lists a volume of distribution of 11.35 L and total clearance of 5.23 L·h−1. A second reader contradicted these, citing values of -0.79 L and -1.15 L·h−1 respectively. The reader also disagreed on the unlabelled equation variable, reading 0.80 against their -1.25. Extracted — ganciclovir: V 11.3 L, CL 5.23 L·h−1, allometric_exponent 0.92.
+Extracted — ganciclovir: V 11.3 L, CL 5.23 L·h−1, allometric_exponent 0.92.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[θ1].value`: this record has 0.80, the second reading -1.25; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,7 +142,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.444, 0 of 1 reader(s) agree | 0.444 | cross-check disputed by a second reader: verdict disputed, agreement 0.444, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.444 (4 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.444 | cross-check contradicted by a second reader: verdict disputed; agreement 0.444 (4 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -158,7 +158,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ganciclovir/Ganciclovir_Li2020v2_final_model/Ganciclovir_Li2020v2_final_model_modelica.zip" download>Ganciclovir_Li2020v2_final_model_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ganciclovir/Ganciclovir_Li2020v2_final_model/Ganciclovir_Li2020v2_final_model_modelica.zip" download>Ganciclovir_Li2020v2_final_model_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ganciclovir/Ganciclovir_Li2020v2_final_model/Ganciclovir_Li2020v2_final_model_fmi.zip" download>Ganciclovir_Li2020v2_final_model_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ganciclovir/Ganciclovir_Li2020v2_final_model/Ganciclovir_Li2020v2_final_model_matlab.zip" download>Ganciclovir_Li2020v2_final_model_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ganciclovir/Ganciclovir_Li2020v2_final_model/Ganciclovir_Li2020v2_final_model_matlab_simbio.zip" download>Ganciclovir_Li2020v2_final_model_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>

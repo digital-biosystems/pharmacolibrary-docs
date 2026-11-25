@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Canakinumab bioavailability defaulted, and model Cmax 0.0106 disagrees with paper Cmax 0.0159.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0159, model 0.0106); f use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="canakinumab" model-id="Canakinumab_Chakraborty2012_population_mean_se_of_2" status="needs_review" stale="false" population="CAPS patients" measured-compound="canakinumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Chakraborty A, Tannenbaum S, Rordorf C, Lowe PJ, Floch D, Gram H et al. Pharmaco
 
 ### Reviewer guidance
 
-**Canakinumab bioavailability defaulted, and model Cmax 0.0106 disagrees with paper Cmax 0.0159.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.0159, model 0.0106); f use library defaults, not estimates from this paper (+2 more).**
 
-The model failed to reproduce the paper's peak concentration, simulating 0.0106 µg/mL where the paper reports 0.0159 µg/mL. Additionally, the bioavailability (F) parameter was not reported in the source, leaving the simulation dependent on library defaults. A second reader disputed the record, finding no supporting values in the paper for the extracted clearance and volume parameters. Extracted — canakinumab: CL 0.137 L/day, V1 3.3 L, V2 2.71 L, CL_PD 0.429 L/d, Q 0.174 L/day, kabs 0.38 h-1.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — canakinumab: CL 0.137 L/day, V1 3.3 L, V2 2.71 L, CL_PD 0.429 L/d, Q 0.174 L/day, kabs 0.38 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has canakinumab, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -193,14 +193,14 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.143, 0 of 1 reader(s) agree | 0.143 | cross-check disputed by a second reader: verdict disputed, agreement 0.143, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 0.0159 | 0.01056 | 0.664 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0207 | 0.01056 | 0.5101 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 0.0133 | 0.01056 | 0.7939 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 0.0111 | 0.01056 | 0.9512 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 0.0117 | 0.01056 | 0.9024 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0159 | 0.01056 | 0.664 | μg/mL→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | skipped |  | 6698 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.143 | cross-check contradicted by a second reader: verdict disputed; agreement 0.143 (2 of 14 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 0.0159 | 0.01056 | 0.664 | reported 15.9 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0207 | 0.01056 | 0.5101 | reported 20.7 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 0.0133 | 0.01056 | 0.7939 | reported 13.3 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 0.0111 | 0.01056 | 0.9512 | reported 11.1 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 0.0117 | 0.01056 | 0.9024 | reported 11.7 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0159 | 0.01056 | 0.664 | reported 15.9 μg/mL→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | skipped |  | 6698 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

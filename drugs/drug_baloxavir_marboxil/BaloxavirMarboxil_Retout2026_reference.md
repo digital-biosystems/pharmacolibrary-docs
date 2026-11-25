@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record for baloxavir marboxil was held back because the peripheral volume parameter was missing and covariate effects were not simulated.
+> The covariate scenarios were not simulated; t3_param_coverage (+1 more).
 
 <div class="pk-model-meta" hidden drug="baloxavir marboxil" model-id="BaloxavirMarboxil_Retout2026_reference" status="needs_review" stale="false" population="patients aged ≥1 year with influenza (treatment and post-exposure prophylaxis)" measured-compound="baloxavir acid" parameterization="apparent" topology="1C"></div>
 
@@ -66,13 +66,13 @@ Retout S, De Buck S, Gaudreault J, Jolivet S, Duval V, Cosson V et al. Populatio
 
 ### Reviewer guidance
 
-**The record for baloxavir marboxil was held back because the peripheral volume parameter was missing and covariate effects were not simulated.**
+**The covariate scenarios were not simulated; t3_param_coverage (+1 more).**
 
-The check for parameter coverage expected five values but found only four, specifically missing the peripheral volume parameter. Additionally, the simulation only ran for the reference individual, meaning the defined effects of race, sex, age, and weight were not exercised. A second reviewer also disputed the verdict, disagreeing with the primary analyte and several parameter values. Extracted — baloxavir acid: CLm/F 11 L/h, V1/F 735 L, Q/F 2.12 L/h, V2/F 260 L, kabs 1.39 1/h, tlag 0.223 h.
+The base model was simulated, not the covariate effects the record defines. None of the extracted parameters is baloxavir marboxil's own; they describe baloxavir acid. Extracted — baloxavir acid: CLm/F 11 L/h, V1/F 735 L, Q/F 2.12 L/h, V2/F 260 L, kabs 1.39 1/h, tlag 0.223 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has baloxavir acid, the second reading baloxavir; it also differs on 22 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -217,9 +217,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.115, 0 of 1 reader(s) agree | 0.115 | cross-check disputed by a second reader: verdict disputed, agreement 0.115, 0 of 1 reader(s) agree |
-| T1_cmax | reference | skipped |  | 5.177e-05 |  | non-numeric value |
-| T1_t_half_terminal | reference | skipped |  | 46.22 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.115 (3 of 26 compared fields agree, 22 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.115 | cross-check contradicted by a second reader: verdict disputed; agreement 0.115 (3 of 26 compared fields agree, 22 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | skipped |  | 5.177e-05 |  | the transcribed record carries no number for this value |
+| T1_t_half_terminal | reference | skipped |  | 46.22 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -235,7 +235,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Retout2026_reference/BaloxavirMarboxil_Retout2026_reference_modelica.zip" download>BaloxavirMarboxil_Retout2026_reference_modelica.zip</a> <span class="pk-size">(5.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Retout2026_reference/BaloxavirMarboxil_Retout2026_reference_modelica.zip" download>BaloxavirMarboxil_Retout2026_reference_modelica.zip</a> <span class="pk-size">(5.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_baloxavir_marboxil/BaloxavirMarboxil_Retout2026_reference/BaloxavirMarboxil_Retout2026_reference_fmi.zip" download>BaloxavirMarboxil_Retout2026_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>

@@ -20,21 +20,20 @@ Firmonertinib is an epidermal growth factor receptor antagonist used to treat no
 
 | molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
 |---|---|---|---|---|---|---|
+| furmonertinib | parent | 568.605 | C28H31F3N8O2 | DrugBank | — | Zou_2022 |
 | AST5902 | metabolite | 554.577 | C27H29F3N8O2 | PubChem | [146405881](https://pubchem.ncbi.nlm.nih.gov/compound/146405881) | Zou_2022 |
-| furmonertinib (AST2818) | metabolite | 568.604 | C28H31F3N8O2 | PubChem | [118861389](https://pubchem.ncbi.nlm.nih.gov/compound/118861389) | Zou_2022 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub> | [Zou_2022_reference](drugs/drug_firmonertinib/Firmonertinib_Zou2022_reference.md) | — | parent + metabolite (no model) | 10 (+2 cov.) | Zou HX et al., Effect of autoinduction and food on the…, Acta pharmacologica Sinica (2022) | [10.1038/s41401-021-00798-y](https://doi.org/10.1038/s41401-021-00798-y) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Not simulated" data-sim="no"></span><span class="pk-badge pk-badge--neutral">Not simulated</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub> | [Zou_2022_reference](drugs/drug_firmonertinib/Firmonertinib_Zou2022_reference.md) | model (no simulator) | 1-compartment, oral | 9 (+3 cov.) | Zou HX et al., Effect of autoinduction and food on the…, Acta pharmacologica Sinica (2022) | [10.1038/s41401-021-00798-y](https://doi.org/10.1038/s41401-021-00798-y) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Liu_2020_CYP3A4_mRNA](drugs/drug_firmonertinib/pd_Liu_2020_CYP3A4_mRNA.md) | CYP3A4 mRNA expression ← alflutinib (AST2818) · direct Emax (saturable) effect | — | Liu XY et al., Alflutinib (AST2818), primarily metabol…, Acta pharmacologica Sinica (2020) | [10.1038/s41401-020-0389-3](https://doi.org/10.1038/s41401-020-0389-3) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zou_2022_A_ENZ](drugs/drug_firmonertinib/pd_Zou_2022_A_ENZ.md) | enzyme amount biomarker turnover ← furmonertinib | — | Zou HX et al., Effect of autoinduction and food on the…, Acta pharmacologica Sinica (2022) | [10.1038/s41401-021-00798-y](https://doi.org/10.1038/s41401-021-00798-y) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Liu_2020_CYP3A4_mRNA](drugs/drug_firmonertinib/pd_Liu_2020_CYP3A4_mRNA.md) | CYP3A4 mRNA expression ← Alflutinib · direct Emax (saturable) effect | model (no simulator) | Liu XY et al., Alflutinib (AST2818), primarily metabol…, Acta pharmacologica Sinica (2020) | [10.1038/s41401-020-0389-3](https://doi.org/10.1038/s41401-020-0389-3) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,35 +47,28 @@ Firmonertinib is an epidermal growth factor receptor antagonist used to treat no
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:47 | 4:24 | 0/1/0 | 2/0/0 | 0/0/0 | 96,115/27,880 | openai / gpt-6-luna | 2 | 1/1 | 2/0 | 0 |
+| 2026-11-23 21:11 | 0:04 | 1/0/0 | 1/0/0 | 0/0/0 | 4,447/153 | einfracz / qwen3.8-27b | 2 | 1/1 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 3 matched, 3 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Shi_2020.pdf` | Shi Y et al., Safety, Clinical Activity, and Pharmaco…, Journal of thoracic oncolog… (2020) | popPK | 8 | [10.1016/j.jtho.2020.01.010](https://doi.org/10.1016/j.jtho.2020.01.010) | [32007598](https://pubmed.ncbi.nlm.nih.gov/32007598) | Alflutinib (firmonertinib) was studied for PK, but no numeric disposition parameters are present in the evidence. |
-
-<sub>queue written 2026-10-07 00:43 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Liu_2020 | irrelevant | 0 | 0 | This is an in vitro study of alflutinib, not firmonertinib, and reports no firmonertinib PK parameters. |
-| popPK | Shi_2020 | relevant | 8 | 0 | Alflutinib (firmonertinib) was studied for PK, but no numeric disposition parameters are present in the evidence. |
+| popPK | Liu_2020 | irrelevant | 0 | 0 | The study is an in-vitro metabolic and enzyme induction investigation of alflutinib (AST2818), not firmonertinib, and does not report quantitative pharmacokinetic parameters for the target drug. |
+| PGx | Liu_2020 | not_relevant | 0 | 0 | The study focuses on alflutinib (not firmonertinib) and investigates CYP3A4 enzyme induction potential rather than the impact of specific genetic variants (genotypes) on PK/PD parameters. |
+| popPK | Shi_2020 | irrelevant | 0 | 0 | The paper studies alflutinib, not firmonertinib. |
+| PGx | Shi_2020 | not_relevant | 0 | 0 | The text describes the pharmacokinetics and efficacy of a different drug (Alflutinib) and does not contain data on firmonertinib or gene-drug interactions. |
+| PGx | Zou_2022 | not_relevant | 0 | 0 | The paper characterizes nonstationary PK (autoinduction) and non-genetic covariates (food, body weight, ALP) but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfirmonertinib%5D&body=Drug%3A%20firmonertinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_firmonertinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 00:43 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 12:51 UTC</sub>

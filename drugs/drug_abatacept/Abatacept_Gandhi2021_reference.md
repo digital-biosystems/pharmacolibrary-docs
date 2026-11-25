@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Abatacept’s absorption rate constant is reported as 11.0 L/h rather than inverse time, while its central volume (1.57) and clearance (1.36) have incompatible units, prompting rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; Q63 unit Units ([luminosity] / [length] ** 2) vs [length] ** 3; Q22 unit Units ([luminosity] / [length] ** 2) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="abatacept" model-id="Abatacept_Gandhi2021_reference" status="rejected" stale="false" population="adults with rheumatoid arthritis and children with polyarticular juvenile idiopathic arthritis" measured-compound="abatacept" parameterization="mechanistic" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Gandhi Y, Passarell JA, Roy A, Murthy B. Model-Based Selection and Recommendatio
 
 ### Reviewer guidance
 
-**Abatacept’s absorption rate constant is reported as 11.0 L/h rather than inverse time, while its central volume (1.57) and clearance (1.36) have incompatible units, prompting rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; Q63 unit Units ([luminosity] / [length] ** 2) vs [length] ** 3; Q22 unit Units ([luminosity] / [length] ** 2) vs [length] ** 3 / [time].**
 
-For abatacept, kabs is a rate constant, but L/h is volume per time; V1 is 1.57 with “Units” recorded as luminosity per area rather than volume, and CL is 1.36 with the same recorded dimension rather than volume per time. One reported unit could not be converted to SI, so the associated parameter lacks a standard-unit value in the record. Extracted — abatacept: kabs 11 L/h, V1 1.57 Units, CL 1.36 Units, V2 3.71 Units, Q 7.25 L/h, fe 6.09 Units, allometric_exponent 27.3 Units, slope 27.1 Units.
+A reported unit could not be converted (kabs, V1, CL and V2), so that value has no SI equivalent. Extracted — abatacept: kabs 11 L/h, V1 1.57 Units, CL 1.36 Units, V2 3.71 Units, Q 7.25 L/h, fe 6.09 Units, allometric_exponent 27.3 Units, slope 27.1 Units.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[bioavailability of sc formulation a].parameter_id`: this record has Q44, the second reading Q40; it also differs on 20 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

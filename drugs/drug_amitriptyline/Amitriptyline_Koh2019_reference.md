@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;amitriptyline&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/&quot;},{&quot;label&quot;:&quot;Koh_2019 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Brsen2001_reference&quot;,&quot;label&quot;:&quot;Br\u00f8sen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amitriptyline_Brsen2001_reference&quot;,&quot;label&quot;:&quot;Br\u00f8sen_2001_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Brsen2001_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amitriptyline_Yukawa2002_reference&quot;,&quot;label&quot;:&quot;Yukawa_2002_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Nortriptyline’s intercompartmental clearance is reported as 1.09 1/h, a rate unit rather than volume per time, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit L ([length] ** 3) vs [length] ** 3 / [time]; Q30 unit 1/h (1 / [time]) vs [length] ** 3 / [time].
 
-<div class="pk-model-meta" hidden drug="amitriptyline" model-id="Amitriptyline_Koh2019_reference" status="rejected" stale="false" population="healthy Korean adult male volunteers" measured-compound="amitriptyline" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="amitriptyline" model-id="Amitriptyline_Koh2019_reference" status="rejected" stale="false" population="Korean healthy adult male volunteers" measured-compound="amitriptyline" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Koh A, Pak KC, Choi HY, Ryu S, Choi SE, Kim KS et al. Quantitative Modeling Analysis Demonstrates the Impact of CYP2C19 and CYP2D6 Genetic Polymorphisms on the Pharmacokinetics of Amitriptyline and Its Metabolite, Nortriptyline. Journal of clinical pharmacology 59(4):532–540 (2019).
@@ -17,38 +17,38 @@ Koh A, Pak KC, Choi HY, Ryu S, Choi SE, Kim KS et al. Quantitative Modeling Anal
 
 ## Population and dosing
 
-**Population:** healthy Korean adult male volunteers · condition healthy · age group adult · n = 24.
+**Population:** Korean healthy adult male volunteers · condition healthy · age group adult · n = 24.
 
 **Dosing:** 25 mg, oral, single.
 
 ## Model
 
 **Structure:** parent + metabolite; no model was built for this record.  
-**Parameterization:** mechanistic.  
+**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 12 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
 > ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit | IIV |
-|---|---|---|---|---|
-| TVCL TRM, AMIT , L/h | CL | 92.1 | L/h | 0.203 (None% RSE) |
-| TVV c, AMIT , L | V1 | 155 | L |  |
-| TVQ, L/h | Q | 109 | L/h |  |
-| TVV p, AMIT , L | V | 1670 | L |  |
-| TVKa, 1/h | kabs | 0.125 | 1/h | 0.137 (None% RSE) |
-| TVALAG, h | tlag | 0.414 | h | 0.339 (None% RSE) |
-| D1, h | D1 | 1.13 | h |  |
-| K24, 1/h | kcomp | 0.00581 | 1/h | 0.123 (None% RSE) |
-| K41, 1/h | k41 | 80.4 | 1/h | 0.174 (None% RSE) |
-| MTIME1 a , h | MTT | 4 | h |  |
-| CL T, NOR , L/h | CL | 58.2 | L/h |  |
-| K56, 1/h | Q | 1.09 | 1/h |  |
+| label | parameter | value | unit |
+|---|---|---|---|
+| TVCLTRM,AMIT, L/h | CL/F | 92.1 | L/h |
+| TVCLTPM,AMIT, L/h | CL | 35.8 | L/h |
+| TVVc,AMIT, L | Q | 155 | L |
+| TVVp,AMIT, L | V1 | 1670 | L |
+| TVKa, 1/h | kabs | 0.125 | 1/h |
+| TVALAG, h | tlag | 0.414 | h |
+| D1, h | D1 | 1.13 | h |
+| K24, 1/h | kcomp | 0.00581 | 1/h |
+| K41, 1/h | k41 | 80.4 | 1/h |
+| MTME2, h | MTT | 2.65 | h |
+| CLT,NOR, L/h | CL | 58.2 | L/h |
+| K56, 1/h | Q | 1.09 | 1/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.143). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.591). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -58,94 +58,93 @@ Koh A, Pak KC, Choi HY, Ryu S, Choi SE, Kim KS et al. Quantitative Modeling Anal
 
 ### Reviewer guidance
 
-**Nortriptyline’s intercompartmental clearance is reported as 1.09 1/h, a rate unit rather than volume per time, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit L ([length] ** 3) vs [length] ** 3 / [time]; Q30 unit 1/h (1 / [time]) vs [length] ** 3 / [time].**
 
-Although described as apparent intercompartmental clearance, its 1/h unit conflicts with clearance’s volume-per-time dimension. The reported unit could not be converted to SI, so no SI value was available for this parameter. Extracted — amitriptyline: CL 92.1 L/h, V1 155 L, Q 109 L/h, V 1.67e+03 L, kabs 0.125 1/h, tlag 0.414 h, D1 1.13 h, kcomp 0.00581 1/h, … (+2); nortriptyline: CL 58.2 L/h, Q 1.09 1/h.
+A reported unit could not be converted (Q and Q), so that value has no SI equivalent. Extracted — amitriptyline: CL/F 92.1 L/h, CL 35.8 L/h, Q 155 L, V1 1.67e+03 L, kabs 0.125 1/h, tlag 0.414 h, D1 1.13 h, kcomp 0.00581 1/h, … (+2); nortriptyline: CL 58.2 L/h, Q 1.09 1/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has amitriptyline, the second reading unknown; it also differs on 23 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
-|---|---|---|---|---|---|---|---|---|---|
-| TVCL TRM, AMIT , L/h | `Q22` · CL | 92.1 | L/h | 2.558e-05 | m3/s | l/h | llm (0.6) | tab_1:row3:col1, tab_1:row3:col2, tab_1:row3:col3 | 0.203 (None% RSE) |
-| TVV c, AMIT , L | `Q63` · V1 | 155 | L | 0.155 | m3 | l | llm (0.6) | tab_1:row11:col1, tab_1:row11:col2, tab_1:row11:col3 |  |
-| TVQ, L/h | `Q30` · Q | 109 | L/h | 3.028e-05 | m3/s | l/h | tv_prefix (0.95) | tab_1:row13:col1, tab_1:row13:col2, tab_1:row13:col3 |  |
-| TVV p, AMIT , L | `Q61` · V | 1670 | L | 1.67 | m3 | l | llm (0.6) | tab_1:row14:col1, tab_1:row14:col2, tab_1:row14:col3 |  |
-| TVKa, 1/h | `Q49` · kabs | 0.125 | 1/h | 3.472e-05 | 1/s | 1/h | exact (1) | tab_1:row16:col1, tab_1:row16:col2, tab_1:row16:col3 | 0.137 (None% RSE) |
-| TVALAG, h | `Q83` · tlag | 0.414 | h | 1490 | s | h | tv_prefix (0.95) | tab_1:row18:col1, tab_1:row18:col2, tab_1:row18:col3 | 0.339 (None% RSE) |
-| D1, h | `Q310` · D1 | 1.13 | h | 4068 | s | h | exact (1) | tab_1:row20:col1, tab_1:row20:col2, tab_1:row20:col3 |  |
-| K24, 1/h | `Q48` · kcomp | 0.00581 | 1/h | 1.614e-06 | 1/s | 1/h | exact (1) | tab_1:row21:col1, tab_1:row21:col2, tab_1:row21:col3 | 0.123 (None% RSE) |
-| K41, 1/h | `Q348` · k41 | 80.4 | 1/h | 0.02233 | 1/s | 1/h | exact (1) | tab_1:row22:col1, tab_1:row22:col2, tab_1:row22:col3 | 0.174 (None% RSE) |
-| MTIME1 a , h | `Q81` · MTT | 4 | h |  |  | h | llm (0.6) | tab_1:row24:col1, tab_1:row24:col2, tab_1:row24:col3 |  |
-| CL T, NOR , L/h | `Q22` · CL | 58.2 | L/h | 1.617e-05 | m3/s | l/h | exact (1) | tab_1:row27:col1, tab_1:row27:col2, tab_1:row27:col3 |  |
-| K56, 1/h | `Q30` · Q | 1.09 | 1/h |  |  | 1/h | exact (1) | tab_1:row29:col1, tab_1:row29:col2, tab_1:row29:col3 |  |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| TVCLTRM,AMIT, L/h | `Q27` · CL/F | 92.1 | L/h | 2.558e-05 | m3/s | l/h | llm (0.6) | Koh_2019_table_3:row0:col1 |
+| TVCLTPM,AMIT, L/h | `Q22` · CL | 35.8 | L/h | 9.944e-06 | m3/s | l/h | llm (0.6) | Koh_2019_table_3:row1:col1 |
+| TVVc,AMIT, L | `Q30` · Q | 155 | L |  |  | l | llm (0.6) | Koh_2019_table_3:row8:col1 |
+| TVVp,AMIT, L | `Q63` · V1 | 1670 | L | 1.67 | m3 | l | llm (0.6) | Koh_2019_table_3:row11:col1 |
+| TVKa, 1/h | `Q49` · kabs | 0.125 | 1/h | 3.472e-05 | 1/s | 1/h | exact (1) | Koh_2019_table_3:row13:col1 |
+| TVALAG, h | `Q83` · tlag | 0.414 | h | 1490 | s | h | tv_prefix (0.95) | Koh_2019_table_3:row15:col1 |
+| D1, h | `Q310` · D1 | 1.13 | h | 4068 | s | h | exact (1) | Koh_2019_table_3:row17:col1 |
+| K24, 1/h | `Q48` · kcomp | 0.00581 | 1/h | 1.614e-06 | 1/s | 1/h | exact (1) | Koh_2019_table_3:row18:col1 |
+| K41, 1/h | `Q348` · k41 | 80.4 | 1/h | 0.02233 | 1/s | 1/h | exact (1) | Koh_2019_table_3:row19:col1 |
+| MTME2, h | `Q81` · MTT | 2.65 | h | 9540 | s | h | llm (0.6) | Koh_2019_table_3:row22:col1 |
+| CLT,NOR, L/h | `Q22` · CL | 58.2 | L/h | 1.617e-05 | m3/s | l/h | exact (1) | Koh_2019_table_3:row24:col1 |
+| K56, 1/h | `Q30` · Q | 1.09 | 1/h |  |  | 1/h | exact (1) | Koh_2019_table_3:row26:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('TVCL TPM, AMIT , L/h', value '35.8') — already have one for this compound
-- dropped duplicate Q22 ('TVCL MRM, AMIT , L/h', value '61.5') — already have one for this compound
-- dropped duplicate Q22 ('TVCL MPM, AMIT , L/h', value '17') — already have one for this compound
-- dropped duplicate Q22 ('TVCL ORM, AMIT , L/h', value '30.6') — already have one for this compound
-- dropped duplicate Q22 ('TVCL OPM, AMIT , L/h', value '18.8') — already have one for this compound
-- dropped duplicate Q81 ('MTIME2, h', value '2.65') — already have one for this compound
+- compound tags: 2 row(s) → nortriptyline (abbreviation 2)
+- dropped duplicate Q22 ('TVCLMROM,AMIT, L/h', value '30.6') — already have one for this compound
+- dropped duplicate Q27 ('TVCLPMPM,AMIT, L/h', value '17') — already have one for this compound
+- dropped unlinked row (NIL): 'IVCLTRM,AMIT (%CV)' — extend the ontology if this is a real PK parameter (source ['Koh_2019_table_3:row4:col1'])
+- dropped duplicate Q27 ('TVCLORM,AMIT, L/h', value '18.8') — already have one for this compound
+- dropped unlinked row (NIL): 'IVCLMROM,AMIT (%CV)' — extend the ontology if this is a real PK parameter (source ['Koh_2019_table_3:row7:col1'])
+- unit_dimension_mismatch: 'TVVc,AMIT, L' → Q30 (unit '[length] ** 3' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped unlinked row (NIL): 'IVVc,AMIT (%CV)' — extend the ontology if this is a real PK parameter (source ['Koh_2019_table_3:row9:col1'])
+- dropped duplicate Q30 ('TVQ, L/h', value '109') — already have one for this compound
+- dropped unlinked row (NIL): 'IVVp,AMIT (%CV)' — extend the ontology if this is a real PK parameter (source ['Koh_2019_table_3:row12:col1'])
+- unit_dimension_unknown: 'CV, %' (kabs)
+- dropped duplicate Q49 ('IVKa (CV, %)', value '0.137') — already have one for this compound
+- dropped unlinked row (NIL): 'IVALAG (CV, %)' — extend the ontology if this is a real PK parameter (source ['Koh_2019_table_3:row16:col1'])
+- dropped unlinked row (NIL): 'IVK41 (CV, %)' — extend the ontology if this is a real PK parameter (source ['Koh_2019_table_3:row20:col1'])
+- dropped unlinked row (NIL): 'MTME1 a, h' — extend the ontology if this is a real PK parameter (source ['Koh_2019_table_3:row21:col1'])
+- dropped unlinked row (NIL): 'IVMTME (CV, %)' — extend the ontology if this is a real PK parameter (source ['Koh_2019_table_3:row23:col1'])
+- dropped unlinked row (NIL): 'IVCLT,NOR (CV, %)' — extend the ontology if this is a real PK parameter (source ['Koh_2019_table_3:row25:col1'])
 - unit_dimension_mismatch: 'K56, 1/h' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - unit_dimension_mismatch: 'K65, 1/h' → Q30 (unit '1 / [time]' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q30 ('K65, 1/h', value '0.168') — already have one for this compound
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (TVCL TRM, AMIT , L/h); Q63 (TVV c, AMIT , L); Q30 (TVQ, L/h); Q61 (TVV p, AMIT , L); Q22 (CL T, NOR , L/h); Q30 (K56, 1/h)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amitriptyline
+- dropped diagnostic row 'IVK65 (CV, %)' → Q318 (shrinkage) — reported statistic, not a parameter
+- routed 'ε1 (proportional) b' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'ε2 (proportional) b' — extend the ontology if this is a real PK parameter (source ['Koh_2019_table_3:row30:col1'])
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=amitriptyline
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - template fit: PK_3M_9C — formed from central; parent 1, metabolites [0]
 - status held at "Needs review" — not promoted
-- row roles: 6 per-group rows of amitriptyline clearance but 2 reference group(s) — kept as printed
-- row roles (LLM): model_class=compartmental; 29/29 row label(s) assigned, 42 linked by role; re-tagged parent→nortriptyline ×15
-- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- row roles (LLM): model_class=compartmental; 30/30 row label(s) assigned, 14 linked by role; re-tagged parent→nortriptyline ×5
+
+**Extraction notes:**
+- LLM selected parameter table(s) 3
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.143 (4/28 fields) | 24 |
+| `gpt-oss-120b` | not confirmed | 0.591 (13/22 fields) | 9 |
 
-<details><summary>24 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[d1]` | 1.13 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[d1]` |  | 1.13 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k24]` | 0.00581 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k24]` |  | 0.00581 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k41]` | 80.4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k41]` |  | 80.4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[k56].parameter_id` | Q30 | Q370 | mismatch |
-| `gpt-oss-120b` | `parameters[k65]` |  | 0.168 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mtime1 a]` | 4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mtime1 a]` |  | 4 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvalag]` | 0.414 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvalag]` |  | 0.414 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvcl trm, amit]` | 92.1 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvcl trm, amit]` |  | 92.1 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvka]` | 0.125 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvka]` |  | 0.125 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvq]` | 109 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[mtme1 a]` |  | 4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mtme2]` | 2.65 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvclmrom,amit]` |  | 30.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvcltpm,amit]` | 35.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tvcltrm,amit].parameter_id` | Q27 | Q22 | mismatch |
 | `gpt-oss-120b` | `parameters[tvq]` |  | 109 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvv c, amit]` | 155 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvv c, amit]` |  | 155 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvv p, amit]` | 1670 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tvv p, amit]` |  | 1670 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | amitriptyline | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | amitriptyline | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[tvvc,amit].parameter_id` | Q30 | Q63 | mismatch |
+| `gpt-oss-120b` | `parameters[tvvp,amit].parameter_id` | Q63 | Q64 | mismatch |
 
 </details>
 
@@ -162,24 +161,24 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 12 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3'] |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_1:row27:col1', 'tab_1:row27:col2', 'tab_1:row27:col3'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_1:row13:col1', 'tab_1:row13:col2', 'tab_1:row13:col3'] |
-| C5_dimension_Q30 | fail | [length] ** 3 / [time] | 1/h (1 / [time]) | ['tab_1:row29:col1', 'tab_1:row29:col2', 'tab_1:row29:col3'] |
-| C5_dimension_Q310 | pass | [time] |  | ['tab_1:row20:col1', 'tab_1:row20:col2', 'tab_1:row20:col3'] |
-| C5_dimension_Q348 | pass | 1 / [time] |  | ['tab_1:row22:col1', 'tab_1:row22:col2', 'tab_1:row22:col3'] |
-| C5_dimension_Q48 | pass | 1 / [time] |  | ['tab_1:row21:col1', 'tab_1:row21:col2', 'tab_1:row21:col3'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['tab_1:row16:col1', 'tab_1:row16:col2', 'tab_1:row16:col3'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['tab_1:row14:col1', 'tab_1:row14:col2', 'tab_1:row14:col3'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col3'] |
-| C5_dimension_Q83 | pass | [time] |  | ['tab_1:row18:col1', 'tab_1:row18:col2', 'tab_1:row18:col3'] |
-| C5_unit_missing_Q81 | fail | [time] | h | ['tab_1:row24:col1', 'tab_1:row24:col2', 'tab_1:row24:col3'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 92.1 | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Koh_2019_table_3:row1:col1'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Koh_2019_table_3:row24:col1'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Koh_2019_table_3:row0:col1'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | L ([length] ** 3) | ['Koh_2019_table_3:row8:col1'] |
+| C5_dimension_Q30 | fail | [length] ** 3 / [time] | 1/h (1 / [time]) | ['Koh_2019_table_3:row26:col1'] |
+| C5_dimension_Q310 | pass | [time] |  | ['Koh_2019_table_3:row17:col1'] |
+| C5_dimension_Q348 | pass | 1 / [time] |  | ['Koh_2019_table_3:row19:col1'] |
+| C5_dimension_Q48 | pass | 1 / [time] |  | ['Koh_2019_table_3:row18:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Koh_2019_table_3:row13:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Koh_2019_table_3:row11:col1'] |
+| C5_dimension_Q81 | pass | [time] |  | ['Koh_2019_table_3:row22:col1'] |
+| C5_dimension_Q83 | pass | [time] |  | ['Koh_2019_table_3:row15:col1'] |
+| C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 92.1 L/h | ['tab_1:row3:col1', 'tab_1:row3:col2', 'tab_1:row3:col3'] |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 58.2 L/h | ['tab_1:row27:col1', 'tab_1:row27:col2', 'tab_1:row27:col3'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.67e+03 L | ['tab_1:row14:col1', 'tab_1:row14:col2', 'tab_1:row14:col3'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 155 L | ['tab_1:row11:col1', 'tab_1:row11:col2', 'tab_1:row11:col3'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 35.8 L/h | ['Koh_2019_table_3:row1:col1'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 58.2 L/h | ['Koh_2019_table_3:row24:col1'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 92.1 L/h | ['Koh_2019_table_3:row0:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 1.67e+03 L | ['Koh_2019_table_3:row11:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -203,4 +202,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bamitriptyline%5D%20Amitriptyline_Koh2019_reference&body=Drug%3A%20amitriptyline%0ARecord%3A%20Amitriptyline_Koh2019_reference%0APaper%3A%20Koh_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 21:39 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 10:35 UTC</sub>

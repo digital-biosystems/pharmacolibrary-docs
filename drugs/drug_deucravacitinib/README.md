@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Chimalakonda_2023_BA](drugs/drug_deucravacitinib/pd_Chimalakonda_2023_BA.md) | Absolute bioavailability biomarker turnover ← Deucravacitinib | — | Chimalakonda A et al., Absolute and Relative Bioavailability o…, Clinical pharmacology in dr… (2023) | [10.1002/cpdd.1308](https://doi.org/10.1002/cpdd.1308) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chimalakonda_2023_BA](drugs/drug_deucravacitinib/pd_Chimalakonda_2023_BA.md) | Absolute bioavailability biomarker turnover ← Deucravacitinib | — | Chimalakonda A et al., Absolute and Relative Bioavailability o…, Clinical pharmacology in dr… (2023) | [10.1002/cpdd.1308](https://doi.org/10.1002/cpdd.1308) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

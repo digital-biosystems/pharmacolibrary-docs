@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The AUC parameters carry concentration-time units, conflicting with the expected volume units, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3; Q88 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="mexiletine" model-id="Mexiletine_Hselbarth1981_subject_4" status="rejected" stale="false" population="healthy adults" measured-compound="mexiletine" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Häselbarth V, Doevendans JE, Wolf M. Kinetics and bioavailability of mexiletine
 
 ### Reviewer guidance
 
-**The AUC parameters carry concentration-time units, conflicting with the expected volume units, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q17 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3; Q88 unit µg/ml/hr ([mass] / [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.**
 
-The AUC parameters (7.970 and 6.921 µg/ml/hr) have units incompatible with the volume parameter (74.0 L). A second reader disagreed on multiple parameters, finding null values where this record lists specific numbers. This mismatch between reported concentration-time units and structural volume requirements led to the rejection. Extracted — mexiletine: kel 0.969 1/h, tlag 0.674 hr, tmax 2.85 hr, Cmax 0.68 µg/ml, AUC∞ 6.92 µg/ml/hr, AUC 7.97 µg/ml/hr, V 74 L.
+A reported unit could not be converted (Cmax, AUC∞ and AUC), so that value has no SI equivalent. Extracted — mexiletine: kel 0.969 1/h, tlag 0.674 hr, tmax 2.85 hr, Cmax 0.68 µg/ml, AUC∞ 6.92 µg/ml/hr, AUC 7.97 µg/ml/hr, V 74 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of auc0^inf: this record has 6.921, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

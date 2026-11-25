@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
-> The record was rejected because the model structure is a two-compartment design yet includes parameters for a third peripheral compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="butorphanol" model-id="Butorphanol_Knych2024_reference" status="rejected" stale="false" population="exercised thoroughbred horses" measured-compound="butorphanol" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Knych HK, Weiner D, McKemie DS, Traynham M, Blea J. Population pharmacokinetics 
 
 ### Reviewer guidance
 
-**The record was rejected because the model structure is a two-compartment design yet includes parameters for a third peripheral compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The extracted structure is identified as two compartments, but the parameter list includes V3/F and Q3/F, which describe a third peripheral compartment. This inconsistency means the third compartment is an orphan with no structural path from the dose, triggering the rejection for an unreachable compartment. The second reader could not verify the value of 0.667 mL/min/kg for the intercompartmental clearance to the third compartment because the record is null. Extracted — butorphanol: kabs 6.28 1/h, V/F 0.465 L/kg, V2/F 0.42 L/kg, V3/F 0.368 L/kg, CL/F 9.85 mL/min/kg, Q3/F 0.667 mL/min/kg.
+Extracted — butorphanol: kabs 6.28 1/h, V/F 0.465 L/kg, V2/F 0.42 L/kg, V3/F 0.368 L/kg, CL/F 9.85 mL/min/kg, Q3/F 0.667 mL/min/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of tvcl2/f: this record has 0.667, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

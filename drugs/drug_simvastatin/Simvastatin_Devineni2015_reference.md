@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for simvastatin was rejected because the source paper is about canagliflozin, not simvastatin.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Devineni2015_reference" status="rejected" stale="false" population="" measured-compound="simvastatin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,11 +48,11 @@ Devineni D, Polidori D. Clinical Pharmacokinetic, Pharmacodynamic, and Drug-Drug
 
 ### Reviewer guidance
 
-**The record for simvastatin was rejected because the source paper is about canagliflozin, not simvastatin.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The identified paper is a pharmacokinetic review of canagliflozin. Simvastatin is only mentioned as a co-administered drug in drug-drug interaction studies, not as the primary subject. Therefore, the extracted parameters do not represent the intended analyte. Extracted — simvastatin: CL 12.2 L/h, V 187 L.
+Extracted — simvastatin: CL 12.2 L/h, V 187 L.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

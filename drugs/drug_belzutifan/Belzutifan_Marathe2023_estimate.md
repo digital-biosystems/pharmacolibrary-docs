@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the covariate effect for age on clearance for belzutifan has an implausible value of -0.36.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="belzutifan" model-id="Belzutifan_Marathe2023_estimate" status="rejected" stale="false" population="patients with VHL disease-associated RCC, CNS hemangioblastomas, and pancreatic neuroendocrine tumors" measured-compound="belzutifan" parameterization="apparent" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Marathe DD, Jauslin PM, Kleijn HJ, de Miranda Silva C, Chain A, Bateman T et al.
 
 ### Reviewer guidance
 
-**The record was rejected because the covariate effect for age on clearance for belzutifan has an implausible value of -0.36.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The review identified a negative clearance value in a covariate scenario, specifically for the age effect on belzutifan. The parameter 'CL‐AGE' is listed with a value of -0.36, which is physically impossible for a clearance shift. A second reader disagreed with this extraction, marking the parameter as missing rather than negative. Extracted — belzutifan: CL/F 5.63 L/h, V2/F 85.4 L, Q/F 5.37 L/h, V3/F 30.4 L, kabs 2.4 /h, tlag 0.16 h, CL -0.36.
+Extracted — belzutifan: CL/F 5.63 L/h, V2/F 85.4 L, Q/F 5.37 L/h, V3/F 30.4 L, kabs 2.4 /h, tlag 0.16 h, CL -0.36.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has belzutifan, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

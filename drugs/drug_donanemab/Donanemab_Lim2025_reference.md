@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The two-compartment model for donanemab was rejected because the peripheral compartment is structurally unreachable from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="donanemab" model-id="Donanemab_Lim2025_reference" status="rejected" stale="false" population="" measured-compound="donanemab" parameterization="mechanistic" topology="2C"></div>
 
@@ -46,13 +46,13 @@ Lim S, Lee HW, Yoon S, Han JW, Chung JY, Yoon S. Sex differences in efficacy/saf
 
 ### Reviewer guidance
 
-**The two-compartment model for donanemab was rejected because the peripheral compartment is structurally unreachable from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines central and peripheral volumes but omits the inter-compartmental clearance parameter, making the structure invalid. The second reader noted a value of 0.792 was expected for the missing field, but the current record contains null. Consequently, the model cannot simulate drug movement between compartments, leading to its refusal. Extracted — donanemab: CL 0.0159 L/h, V1 3.59 L, V2 6.04 L.
+Extracted — donanemab: CL 0.0159 L/h, V1 3.59 L, V2 6.04 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q31: this record has none, the second reading 0.792. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

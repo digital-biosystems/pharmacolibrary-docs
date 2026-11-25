@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Mirogabalin absorption rate constant was missing, so placeholder values were used instead of estimates from Li_2023.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="mirogabalin" model-id="Mirogabalin_Li2023_reference" status="needs_review" stale="false" population="healthy Chinese adults" measured-compound="mirogabalin" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Li Y, Toyama K, Nakatsu T, Ishizuka H, Wu H, Cao G et al. Safety, Tolerability a
 
 ### Reviewer guidance
 
-**Mirogabalin absorption rate constant was missing, so placeholder values were used instead of estimates from Li_2023.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The record reports clearance and volume of distribution but provides no value for the first-order absorption rate constant. As a result, standard placeholder values were assigned to the absorption rate and lag time. The review noted these assumptions were unsupported by the source text. Extracted — mirogabalin: CL/F 17.6 L/h, V/F 73.4 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — mirogabalin: CL/F 17.6 L/h, V/F 73.4 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 938, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.818 (9 of 11 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

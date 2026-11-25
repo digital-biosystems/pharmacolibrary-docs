@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Record rejected because the source paper describes PEGylated C34 peptides, not enfuvirtide, with clearance of 353.43 ml/h/kg.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="enfuvirtide" model-id="Enfuvirtide_Wang2019_reference" status="rejected" stale="false" population="" measured-compound="enfuvirtide" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Wang C, Cheng S, Zhang Y, Ding Y, Chong H, Xing H et al. Long-Acting HIV-1 Fusio
 
 ### Reviewer guidance
 
-**Record rejected because the source paper describes PEGylated C34 peptides, not enfuvirtide, with clearance of 353.43 ml/h/kg.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The identity check failed, confirming the study reports pharmacokinetics for PEG2kC34 and PEG5kC34 while enfuvirtide is only a co-medication. Absorption parameters ka and Tlag were defaulted rather than extracted from the source text. The record also assumes bioavailability F=1, conflicting with the oral dosing implied by the CL/F parameter. Extracted — enfuvirtide: CL/F 353 ml/h/kg, V/F 91.7 L.
+Extracted — enfuvirtide: CL/F 353 ml/h/kg, V/F 91.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q321: this record has none, the second reading 128.53; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.75 (9 of 12 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

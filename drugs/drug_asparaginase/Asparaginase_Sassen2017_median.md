@@ -139,14 +139,14 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 | T1_t_half_alpha | reference | skipped | 3.5 |  |  | no simulated metric for this quantity (single reference sim) |
-| T1_t_half_beta | reference | fail | 19.6 | 91.37 | 4.662 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 19.6 | 91.37 | 4.662 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 3.5 | 91.37 | 26.1 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 19.6 | 91.37 | 4.662 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 6.4 | 91.37 | 14.28 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 7.5 | 91.37 | 12.18 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 19.6 | 91.37 | 4.662 | reported 19.6 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 19.6 | 91.37 | 4.662 | reported 19.6 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 3.5 | 91.37 | 26.1 | reported 3.5 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 19.6 | 91.37 | 4.662 | reported 19.6 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 6.4 | 91.37 | 14.28 | reported 6.4 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 7.5 | 91.37 | 12.18 | reported 7.5 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -8,7 +8,7 @@
 
 > The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="trilaciclib" model-id="Trilaciclib_Dai2024_reference" status="needs_review" stale="false" population="Chinese and non-Chinese patients with ES-SCLC" measured-compound="trilaciclib" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="trilaciclib" model-id="Trilaciclib_Dai2024_reference" status="needs_review" stale="false" population="Chinese and non-Chinese patients with extensive-stage small cell lung cancer" measured-compound="trilaciclib" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Dai HR, Yang Y, Wang CY, Chen YT, Cui YF, Li PJ et al. Trilaciclib dosage in Chinese patients with extensive-stage small cell lung cancer: a pooled pharmacometrics analysis. Acta pharmacologica Sinica 45(10):2212–2225 (2024).
@@ -16,7 +16,7 @@ Dai HR, Yang Y, Wang CY, Chen YT, Cui YF, Li PJ et al. Trilaciclib dosage in Chi
 
 ## Population and dosing
 
-**Population:** Chinese and non-Chinese patients with ES-SCLC · condition extensive-stage small cell lung cancer · age group adult.
+**Population:** Chinese and non-Chinese patients with extensive-stage small cell lung cancer · condition extensive-stage small cell lung cancer · age group adult.
 
 **Dosing:** 280 mg/m2, iv, multiple.
 
@@ -38,11 +38,11 @@ Dai HR, Yang Y, Wang CY, Chen YT, Cui YF, Li PJ et al. Trilaciclib dosage in Chi
 | V 3 (L) | V3 | 236 | L |  |
 | Q 2 (L/h) | Q | 134 | L/h |  |
 | Q 3 (L/h) | Q3 | 262 | L/h |  |
-| sex_on_v_2 | sex_on_v_2 | -0.159 |  |  |
+| theta_v2_sex | theta_v2_sex | -0.159 |  |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.467). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,7 +56,7 @@ Dai HR, Yang Y, Wang CY, Chen YT, Cui YF, Li PJ et al. Trilaciclib dosage in Chi
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — trilaciclib: CL 157 L/h, V1 218 L, V2 790 L, V3 236 L, Q 134 L/h, Q3 262 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].covariate_forms`: this record has ['linear_fractional'], the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -64,13 +64,13 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source | IIV |
 |---|---|---|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · CL | 157 | L/h | 4.361e-05 | m3/s | l/h | exact (1) | tab_2:row2:col1, tab_2:row2:col2, tab_2:row2:col4, tab_2:row2:col6 | 27.5 (None% RSE) |
-| V 1 (L) | `Q63` · V1 | 218 | L | 0.218 | m3 | l | space_fold (0.95) | tab_2:row3:col1, tab_2:row3:col2, tab_2:row3:col4, tab_2:row3:col6 |  |
-| V 2 (L) | `Q64` · V2 | 790 | L | 0.79 | m3 | l | space_fold (0.95) | tab_2:row4:col1, tab_2:row4:col2, tab_2:row4:col4, tab_2:row4:col6 |  |
-| V 3 (L) | `Q77` · V3 | 236 | L | 0.236 | m3 | l | space_fold (0.95) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col4, tab_2:row5:col6 |  |
-| Q 2 (L/h) | `Q30` · Q | 134 | L/h | 3.722e-05 | m3/s | l/h | special_case (0.95) | tab_2:row6:col1, tab_2:row6:col2, tab_2:row6:col4, tab_2:row6:col6 |  |
-| Q 3 (L/h) | `Q308` · Q3 | 262 | L/h | 7.278e-05 | m3/s | l/h | space_fold (0.95) | tab_2:row7:col1, tab_2:row7:col2, tab_2:row7:col4, tab_2:row7:col6 |  |
-| sex_on_v_2 | `Q900` · sex_on_v_2 | -0.159 |  |  |  |  |  | tab_2:row10:col1, tab_2:row10:col2, tab_2:row10:col4, tab_2:row10:col6 |  |
+| CL (L/h) | `Q22` · CL | 157 | L/h | 4.361e-05 | m3/s | l/h | exact (1) | tab_2:row2:col1 | 27.5 (None% RSE) |
+| V 1 (L) | `Q63` · V1 | 218 | L | 0.218 | m3 | l | space_fold (0.95) | tab_2:row3:col1 |  |
+| V 2 (L) | `Q64` · V2 | 790 | L | 0.79 | m3 | l | space_fold (0.95) | tab_2:row4:col1 |  |
+| V 3 (L) | `Q77` · V3 | 236 | L | 0.236 | m3 | l | space_fold (0.95) | tab_2:row5:col1 |  |
+| Q 2 (L/h) | `Q30` · Q | 134 | L/h | 3.722e-05 | m3/s | l/h | special_case (0.95) | tab_2:row6:col1 |  |
+| Q 3 (L/h) | `Q308` · Q3 | 262 | L/h | 7.278e-05 | m3/s | l/h | space_fold (0.95) | tab_2:row7:col1 |  |
+| theta_v2_sex | `Q900` · theta_v2_sex | -0.159 |  |  |  |  |  | tab_2:row10:col1 |  |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -80,57 +80,27 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Parameter' — extend the ontology if this is a real PK parameter (source ['tab_2:row0:col4'])
-- dropped unlinked row (NIL): 'BSA on CL' — extend the ontology if this is a real PK parameter (source ['tab_2:row8:col1', 'tab_2:row8:col2', 'tab_2:row8:col4', 'tab_2:row8:col6'])
-- routed 'Chinese on CL' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- covariate level 'Sex on V 2' → Q900:sex_on_v_2 = -0.159 (linear_fractional on Q22)
-- dropped duplicate Q22 ('η CL (%)', value '23.3') — already have one for this compound
-- dropped duplicate Q63 ('η V1 (%)', value '81.5') — already have one for this compound
-- routed 'η V2 (%)' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- routed 'ε p (%)' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'BSA on CL' — extend the ontology if this is a real PK parameter (source ['tab_2:row8:col1'])
+- dropped duplicate Q22 ('Chinese on CL', value '0.17') — already have one for this compound
+- dropped unlinked row (NIL): 'ε p (%)' — extend the ontology if this is a real PK parameter (source ['tab_2:row15:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=trilaciclib
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 
 **Extraction notes:**
-- unparsed cell tab_2:row2:col5 = '148~167'
-- unparsed cell tab_2:row3:col5 = '181~274'
-- unparsed cell tab_2:row4:col5 = '733~862'
-- unparsed cell tab_2:row5:col5 = '185~362'
-- unparsed cell tab_2:row6:col5 = '83~161'
-- unparsed cell tab_2:row7:col5 = '220~318'
-- unparsed cell tab_2:row8:col5 = '0.575~1.172'
-- unparsed cell tab_2:row9:col5 = '0.08~0.26'
-- unparsed cell tab_2:row10:col5 = '-0.295~-0.046'
-- unparsed cell tab_2:row11:col5 = '19.5~27.2'
-- unparsed cell tab_2:row12:col5 = '17.6~37.5'
-- unparsed cell tab_2:row13:col5 = '68.6~95.0'
-- unparsed cell tab_2:row14:col5 = '12.4~36.9'
-- unparsed cell tab_2:row15:col5 = '21.5~24.6'
+- table tab_2: unknown_column_role
+- table tab_2: unparsed_numeric_cell
 - LLM selected parameter table(s) 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.467 (7/15 fields) | 8 |
+| `gpt-oss-120b` | confirmed | 1.0 (12/12 fields) | none |
 
-<details><summary>8 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cl].covariate_forms` | ['linear_fractional'] | [] | mismatch |
-| `gpt-oss-120b` | `parameters[q 2].value` | 134 | 131 | mismatch |
-| `gpt-oss-120b` | `parameters[q 3].value` | 262 | 265 | mismatch |
-| `gpt-oss-120b` | `parameters[sex_on_v_2]` | -0.159 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[theta_v2_sex]` |  | -0.161 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v 2].covariate_forms` | [] | ['linear_fractional'] | mismatch |
-| `gpt-oss-120b` | `parameters[v 3].value` | 236 | 240 | mismatch |
-| `gpt-oss-120b` | `parameters[ε p]` |  | 23.1 | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -146,17 +116,17 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_2:row2:col1', 'tab_2:row2:col2', 'tab_2:row2:col4', 'tab_2:row2:col6'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_2:row6:col1', 'tab_2:row6:col2', 'tab_2:row6:col4', 'tab_2:row6:col6'] |
-| C5_dimension_Q308 | pass | [length] ** 3 / [time] |  | ['tab_2:row7:col1', 'tab_2:row7:col2', 'tab_2:row7:col4', 'tab_2:row7:col6'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_2:row3:col1', 'tab_2:row3:col2', 'tab_2:row3:col4', 'tab_2:row3:col6'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_2:row4:col1', 'tab_2:row4:col2', 'tab_2:row4:col4', 'tab_2:row4:col6'] |
-| C5_dimension_Q77 | pass | [length] ** 3 |  | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col4', 'tab_2:row5:col6'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 157 | ['tab_2:row2:col1', 'tab_2:row2:col2', 'tab_2:row2:col4', 'tab_2:row2:col6'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['tab_2:row2:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['tab_2:row6:col1'] |
+| C5_dimension_Q308 | pass | [length] ** 3 / [time] |  | ['tab_2:row7:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['tab_2:row3:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['tab_2:row4:col1'] |
+| C5_dimension_Q77 | pass | [length] ** 3 |  | ['tab_2:row5:col1'] |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 157 | ['tab_2:row2:col1'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 157 L/h | ['tab_2:row2:col1', 'tab_2:row2:col2', 'tab_2:row2:col4', 'tab_2:row2:col6'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 218 L | ['tab_2:row3:col1', 'tab_2:row3:col2', 'tab_2:row3:col4', 'tab_2:row3:col6'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 790 L | ['tab_2:row4:col1', 'tab_2:row4:col2', 'tab_2:row4:col4', 'tab_2:row4:col6'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 157 L/h | ['tab_2:row2:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 218 L | ['tab_2:row3:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 790 L | ['tab_2:row4:col1'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -190,4 +160,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrilaciclib%5D%20Trilaciclib_Dai2024_reference&body=Drug%3A%20trilaciclib%0ARecord%3A%20Trilaciclib_Dai2024_reference%0APaper%3A%20Dai_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trilaciclib/Trilaciclib_Dai2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 20:01 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:21 UTC</sub>

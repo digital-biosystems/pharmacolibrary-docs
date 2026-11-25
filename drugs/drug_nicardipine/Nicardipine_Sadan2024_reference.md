@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The extracted central volume of distribution (0.064 L) is implausibly small for a two-compartment model of nicardipine.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="nicardipine" model-id="Nicardipine_Sadan2024_reference" status="rejected" stale="false" population="subarachnoid hemorrhage patients" measured-compound="nicardipine" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Sadan O, Jeong YS, Cohen-Sadan S, Sathialingam E, Buckley EM, Kandiah PA et al. 
 
 ### Reviewer guidance
 
-**The extracted central volume of distribution (0.064 L) is implausibly small for a two-compartment model of nicardipine.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-A volume of 0.064 L represents less than one-hundredth of a liter, which is physically unrealistic for a systemic compartment. This magnitude suggests an error in unit extraction or data scaling rather than a genuine pharmacokinetic finding. Extracted — nicardipine: V1 0.064 L, CL 0.13 L/hr, V2 0.73 L, Q 0.11 L/hr, tlag 0.55 hr.
+Extracted — nicardipine: V1 0.064 L, CL 0.13 L/hr, V2 0.73 L, Q 0.11 L/hr, tlag 0.55 hr.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

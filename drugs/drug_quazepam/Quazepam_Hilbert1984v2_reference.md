@@ -5,11 +5,11 @@
 
 # quazepam — `Quazepam_Hilbert1984v2_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The quazepam metabolite chain contains an unreachable orphan compartment, and the record is abstract-only, substituting summary statistics for a fitted model.
+> Only volume was extracted — no clearance.
 
-<div class="pk-model-meta" hidden drug="quazepam" model-id="Quazepam_Hilbert1984v2_reference" status="rejected" stale="false" population="healthy adult men" measured-compound="quazepam" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="quazepam" model-id="Quazepam_Hilbert1984v2_reference" status="needs_review" stale="false" population="normal adult men" measured-compound="quazepam" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hilbert JM, Chung M, Maier G, Gural R, Symchowicz S, Zampaglione N. Effect of sleep on quazepam kinetics. Clinical pharmacology and therapeutics 36(1):99–104 (1984).
@@ -17,28 +17,25 @@ Hilbert JM, Chung M, Maier G, Gural R, Symchowicz S, Zampaglione N. Effect of sl
 
 ## Population and dosing
 
-**Population:** healthy adult men · condition healthy · age group adult · n = 12.
+**Population:** normal adult men · age group adult.
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
-**Parameterization:** CL/F, V1/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Structure:** 1-compartment; no model was built for this record.  
+**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| apparent volume of distribution of the central compartment (nighttime dosing) | V1/F | 5.0 | l/kg |
-| CL/F (L/h) | CL/F | 19.76 | L/h |
-| Ka (1/h) | kabs | 5.41 | 1/h |
-| ALAG (h) | tlag | 0.394 | h |
+| apparent volume of distribution of the central compartment | V/F | 5.0 | l/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,49 +45,37 @@ Hilbert JM, Chung M, Maier G, Gural R, Symchowicz S, Zampaglione N. Effect of sl
 
 ### Reviewer guidance
 
-**The quazepam metabolite chain contains an unreachable orphan compartment, and the record is abstract-only, substituting summary statistics for a fitted model.**
+**Only volume was extracted — no clearance.**
 
-The metabolites 2-oxoquazepam and N-desalkyl-2-oxoquazepam are defined with zero compartments, yet metabolism links originate from the parent drug, creating an orphan compartment with no path from the dose. The source is abstract-only, meaning the reported parameters like clearance of 19.76 L/h stand in for a fully fitted model. The second reader disagreed on the absorption lag time and other parameters, marking them as unknown or null in their review. Extracted — quazepam: V1/F 5 l/kg, CL/F 19.8 L/h, kabs 5.41 1/h, tlag 0.394 h.
+A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — quazepam: V/F 5 l/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has quazepam, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading quazepam → 2-oxoquazepam (metabolism); quazepam → n-desalkyl-2-oxoquazepam (metabolism); it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| apparent volume of distribution of the central compartment (nighttime dosing) | `Q290` · V1/F | 5.0 | l/kg | 0.35 | m3 | l/kg | boundary_compartment (0.9) | Hilbert_1984_2:abstract |
-| CL/F (L/h) | `Q27` · CL/F | 19.76 | L/h | 5.489e-06 | m3/s | L/h | review_gapfill (0.7) | Cha_2024:review |
-| Ka (1/h) | `Q49` · kabs | 5.41 | 1/h | 0.001503 | 1/s | 1/h | review_gapfill (0.7) | Cha_2024:review |
-| ALAG (h) | `Q83` · tlag | 0.394 | h | 1418 | s | h | review_gapfill (0.7) | Cha_2024:review |
+| apparent volume of distribution of the central compartment | `Q76` · V/F | 5.0 | l/kg | 0.35 | m3 | l/kg | boundary_compartment (0.9) | Hilbert_1984_2:abstract, Hilbert_1984_2:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| absorption t 1/2 | Q95 | half_life_rule |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'absorption t 1/2'
-- dropped duplicate Q290 ('apparent volume of distribution of the central compartment (morning dosing)', value 8.6) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=quazepam
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- status held at "Needs review" — not promoted
-- row roles: 2 per-group rows of quazepam summary_statistic but 0 reference group(s) — kept as printed
-- row roles (LLM): model_class=noncompartmental; 3/3 row label(s) assigned, 0 linked by role; re-tagged quazepam→parent ×2
-- molar mass: none of 2 PubChem candidate(s) is '2-oxoquazepam' (LLM) — left in mass units
-- molar mass: none of 1 PubChem candidate(s) is 'N-desalkyl-2-oxoquazepam' (LLM) — left in mass units
-- molar mass: none found for '2-oxoquazepam' — its concentrations stay mass-only
-- molar mass: none found for 'N-desalkyl-2-oxoquazepam' — its concentrations stay mass-only
+- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'apparent volume of distribution of the central compartment' is the general volume)
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q27 (CL/F) from Cha_2024's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Cha_2024's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Cha_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Hilbert_1984_2_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -98,23 +83,21 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['quazepam', '2-oxoquazepam', 'metabolism'], ['2-oxoquazepam', 'n-desalkyl-2-oxoquazepam', 'metabolism']] | [['quazepam', '2-oxoquazepam', 'metabolism'], ['2-oxoqazepam', 'n-desalkyl-2-oxoquazepam', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.links` | [] | [['quazepam', '2-oxoquazepam', 'metabolism'], ['quazepam', 'n-desalkyl-2-oxoquazepam', 'metabolism']] | mismatch |
 | `gpt-oss-120b` | `parameters[absorption t 1/2]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[alag]` | 0.394 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` | 19.76 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 5.41 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | quazepam | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | quazepam | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[absorption t 1/2]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution of the central compartment after the nighttime dose]` |  | 5.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution of the central compartment]` | 5.0 |  | only_one_extracted |
 
 </details>
 
@@ -131,14 +114,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Cha_2024:review'] |
-| C5_dimension_Q290 | pass | [length] ** 3 |  | ['Hilbert_1984_2:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Cha_2024:review'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Cha_2024:review'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Hilbert_1984_2:abstract', 'Hilbert_1984_2:abstract'] |
+| C5_dimension_Q95 | pass | [time] |  | ['Hilbert_1984_2:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['unknown', 'unknown'] |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 19.8 L/h | ['Cha_2024:review'] |
-| C9_phys_window_Q290 | pass | volume within physiological range | 350 L | ['Hilbert_1984_2:abstract'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q76 | pass | volume within physiological range | 350 L | ['Hilbert_1984_2:abstract', 'Hilbert_1984_2:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -150,9 +130,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -162,4 +152,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bquazepam%5D%20Quazepam_Hilbert1984v2_reference&body=Drug%3A%20quazepam%0ARecord%3A%20Quazepam_Hilbert1984v2_reference%0APaper%3A%20Hilbert_1984_2%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_quazepam/Quazepam_Hilbert1984v2_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 20:52 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:45 UTC</sub>

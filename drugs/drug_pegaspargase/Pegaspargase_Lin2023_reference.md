@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected because the extracted pegaspargase clearance of 146.0 mL/h falls outside the physiological window, indicating a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="pegaspargase" model-id="Pegaspargase_Lin2023_reference" status="rejected" stale="false" population="" measured-compound="pegaspargase" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Lin T, Whigham T, Fernando I, Choi MR, Wang Q, Silverman JA. Population pharmaco
 
 ### Reviewer guidance
 
-**Rejected because the extracted pegaspargase clearance of 146.0 mL/h falls outside the physiological window, indicating a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists pegaspargase total clearance as 146.0 mL/h and central volume of distribution as 445.0 mL. These values failed the plausibility check due to their implausible magnitude relative to expected physiological ranges. A secondary review flagged potential inconsistencies in the specific values extracted for clearance and volume, including a second reader noting a clearance value of 1810 instead of the recorded 146.0. Extracted — pegaspargase: CL 146 mL/h, V1 445 mL.
+Extracted — pegaspargase: CL 146 mL/h, V1 445 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q316: this record has none, the second reading 1; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

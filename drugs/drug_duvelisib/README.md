@@ -22,10 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Mahajan_2026_MOLT_4_cell_line_cytotoxicity](drugs/drug_duvelisib/pd_Mahajan_2026_MOLT_4_cell_line_cytotoxicity.md) | MOLT-4 cell line cytotoxicity ← duvelisib · inhibition effect | — | Mahajan S et al., Human Serum Albumin-Lipid Nanocapsules…, AAPS PharmSciTech (2026) | [10.1208/s12249-025-03305-2](https://doi.org/10.1208/s12249-025-03305-2) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [McLeod_2019_CD63](drugs/drug_duvelisib/pd_McLeod_2019_CD63.md) | rat blood basophil (CD63) activation ← Duvelisib · inhibition effect | — | McLeod RL et al., Characterizing Pharmacokinetic-Pharmaco…, The Journal of pharmacology… (2019) | [10.1124/jpet.118.252551](https://doi.org/10.1124/jpet.118.252551) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [García-Cansino_2026_Raphidocelis_subcapitata_toxicity](drugs/drug_duvelisib/pd_Garc_a_Cansino_2026_Raphidocelis_subcapitata_toxicity.md) | Raphidocelis subcapitata toxicity ← duvelisib · model not identified | — | García-Cansino L et al., Stereoselective ecotoxicity and environ…, Environmental pollution (Ba… (2026) | [10.1016/j.envpol.2026.128810](https://doi.org/10.1016/j.envpol.2026.128810) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [García-Cansino_2026_Vibrio_fischeri_bioluminescence_inhibition](drugs/drug_duvelisib/pd_Garc_a_Cansino_2026_Vibrio_fischeri_bioluminescence_inhibiti.md) | Vibrio fischeri bioluminescence inhibition ← duvelisib · model not identified | — | García-Cansino L et al., Stereoselective ecotoxicity and environ…, Environmental pollution (Ba… (2026) | [10.1016/j.envpol.2026.128810](https://doi.org/10.1016/j.envpol.2026.128810) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:38 | 6:43 | 0/0/0 | 2/2/0 | 0/0/0 | 187,689/14,204 | openai / gpt-6-luna | 14 | 5/2 | 13/1 | 0 |
+| 2026-11-23 21:38 | 0:03 | 0/0/0 | 1/0/0 | 0/0/0 | 3,526/156 | einfracz / qwen3.8-27b | 14 | 6/3 | 13/1 | 0 |
 
 ## Coverage
 
@@ -52,16 +49,32 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Balakrishnan_2015 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study of IPI-145 (duvelisib) focusing on cell viability and signaling pathways, with no pharmacokinetic parameter reporting. |
+| PGx | Balakrishnan_2015 | not_relevant | 0 | 0 | The paper describes the preclinical effects of IPI-145 (duvelisib) on CLL cell signaling and apoptosis but does not investigate the impact of host gene variants or genotypes on the drug's pharmacokinetics or pharmacodynamics. |
 | popPK | Bhingarkar_2024 | irrelevant | 0 | 0 | This immunology study reports no quantitative duvelisib disposition parameters, and no such values are provided in supplementary material or figures. |
-| popPK | García-Cansino_2026 | irrelevant | 0 | 0 | This ecotoxicity study reports EC50 values, not duvelisib pharmacokinetic disposition parameters. |
+| popPK | Flinn_2018 | irrelevant | 2 | 1 | The study only reports qualitative PK descriptors (Tmax, half-life range) without quantitative disposition parameters like clearance, volume, or intercompartmental clearance. |
+| PGx | Flinn_2018 | not_relevant | 0 | 0 | The paper describes general pharmacokinetics and pharmacodynamics of duvelisib in a Phase 1 trial but does not investigate gene variants or genotypes. |
+| popPK | García-Cansino_2026 | irrelevant | 0 | 0 | The paper reports ecotoxicity and environmental stability data for aquatic organisms, not pharmacokinetic disposition parameters for humans or animals. |
+| PGx | García-Cansino_2026 | not_relevant | 0 | 0 | The paper focuses on the environmental ecotoxicity of duvelisib in aquatic systems and does not report any pharmacogenomic effects on human PK or PD parameters. |
 | PGx | Goldwaser_2022 | not_relevant | 0 | 0 | Reports duvelisib inhibition of CYP2C9 in vitro, not an effect of a gene variant, genotype, or phenotype on a duvelisib PK/PD parameter. |
+| popPK | Kunieda_2025 | irrelevant | 0 | 0 | The study focuses on the PK of zandelisib in mice, using duvelisib only as a comparator for in vitro binding kinetics (SPR/BRET) without reporting quantitative in vivo disposition parameters (CL, V, etc.) for duvelisib. |
+| PGx | Kunieda_2025 | not_relevant | 0 | 0 | The paper studies the pharmacology and crystal structure of zandelisib, using duvelisib only as a comparative control for binding kinetics, and does not report any pharmacogenomic effects. |
+| popPK | Mahajan_2026 | irrelevant | 2 | 0 | The study focuses on in-vitro characterization and general PK metrics (AUC, MRT) for a nanocapsule formulation without reporting specific compartmental PK parameters (CL, V) or quantitative values in the provided text. |
+| PGx | Mahajan_2026 | not_relevant | 0 | 0 | The paper describes the pharmacokinetics of a novel nanocapsule delivery system, not the effect of a genetic variant on drug response. |
 | popPK | McKeown_2024 | irrelevant | 0 | 0 | Duvelisib is mentioned only as background; the paper reports no duvelisib pharmacokinetic parameters. |
 | popPK | McLeod_2019 | irrelevant | 1 | 0 | Duvelisib has an in-vitro IC50 value, but no quantitative disposition parameters; the reported PK profiling is for another inhibitor. |
+| popPK | OBrien_2018 | relevant | 3 | 0 | The study includes pharmacokinetic assessment in a Phase 1 trial of duvelisib, but specific numeric disposition parameters (CL, V, etc.) are not present in the provided abstract evidence. |
+| PGx | OBrien_2018 | not_relevant | 0 | 0 | The paper reports Phase 1 safety and efficacy results but does not investigate the impact of specific genetic variants or genotypes on the pharmacokinetic or pharmacodynamic parameters of duvelisib. |
 | popPK | Sanchez-Rodriguez_2024 | irrelevant | 0 | 0 | This human Alzheimer's disease modeling study reports no duvelisib pharmacokinetic parameters. |
 | popPK | Smith_2024 | irrelevant | 0 | 0 | This review reports no quantitative duvelisib disposition parameters, and no such values appear in the provided evidence. |
 | PGx | Wang_2021 | not_relevant | 0 | 0 | Duvelisib is used only as an internal standard; the study examines CYP3A4 inhibitor effects on alpelisib, not pharmacogenomic effects on duvelisib. |
+| popPK | Willemsen-Seegers_2017 | irrelevant | 0 | 0 | The study focuses on in-vitro surface plasmon resonance binding kinetics and does not report pharmacokinetic disposition parameters for duvelisib. |
+| PGx | Willemsen-Seegers_2017 | not_relevant | 0 | 0 | The paper investigates in vitro target residence time and selectivity, not pharmacogenomic effects on PK/PD parameters. |
+| popPK | Yue_2019 | irrelevant | 0 | 0 | The paper focuses on the medicinal chemistry and pharmacokinetics of parsaclisib (INCB050465), mentioning duvelisib only as a structural comparator. |
+| PGx | Yue_2019 | not_relevant | 0 | 0 | The paper describes the discovery and preclinical pharmacokinetics of parsaclisib, not duvelisib, and does not report pharmacogenomic effects. |
 | popPK | Zhao_2026 | irrelevant | 0 | 0 | This is a human-treatment network meta-analysis; duvelisib is only mentioned as background, with no pharmacokinetic parameters reported. |
-| popPK | Zhong_2026 | irrelevant | 1 | 0 | This is an exposure-response analysis, not a quantitative disposition-parameter study, and no duvelisib PK parameter values are shown. |
+| popPK | Zhong_2026 | irrelevant | 3 | 1 | The paper describes a methodological framework for exposure-response analysis using duvelisib as an exemplar case but does not report specific quantitative pharmacokinetic parameter values (CL, V, etc.) in the provided evidence. |
+| PGx | Zhong_2026 | not_relevant | 0 | 0 | The paper focuses on dose modification adjustments in exposure-response analysis, not on the impact of genetic variants on PK/PD. |
 
 
 </details>

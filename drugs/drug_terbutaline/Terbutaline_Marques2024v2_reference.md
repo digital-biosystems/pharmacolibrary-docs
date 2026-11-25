@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Terbutaline was rejected because its reported total clearance of 118.0 mL/h was flagged as physiologically implausible relative to its central distribution volume.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="terbutaline" model-id="Terbutaline_Marques2024v2_reference" status="rejected" stale="false" population="" measured-compound="terbutaline" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Marques L, Vale N. Toward Personalized Salbutamol Therapy: Validating Virtual Pa
 
 ### Reviewer guidance
 
-**Terbutaline was rejected because its reported total clearance of 118.0 mL/h was flagged as physiologically implausible relative to its central distribution volume.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports a central volume of 0.02 L and a peripheral volume of 0.66 L; the finding attributes the clearance/volume failure to implausible magnitude, likely from a unit or scale extraction error. The second reader disagrees with the recorded central volume (162.93 rather than 0.02) and peripheral volume (0 rather than 0.66). Extracted — terbutaline: CL 118 mL/h, V1 0.02 L, V2 0.66 L, Q 10.6 L/h, kabs 3.71 h−1.
+Extracted — terbutaline: CL 118 mL/h, V1 0.02 L, V2 0.66 L, Q 10.6 L/h, kabs 3.71 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of V1: this record has 0.02, the second reading 162.93; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

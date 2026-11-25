@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Pentazocine’s intercompartmental clearance, 3.44 L/h/kg, was disputed by the second reader, so the record was held back.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="pentazocine" model-id="Pentazocine_Omori2022_reference" status="needs_review" stale="false" population="" measured-compound="pentazocine" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Omori T, Aoyama T, Miyamoto A, Matsumoto Y. Pharmacokinetic/Pharmacodynamic Mode
 
 ### Reviewer guidance
 
-**Pentazocine’s intercompartmental clearance, 3.44 L/h/kg, was disputed by the second reader, so the record was held back.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader supplied no corresponding value for the reported total clearance of 1.19 L/h/kg, central volume of 1.04 L/kg, or intercompartmental clearance of 3.44 L/h/kg. The cross-check recorded agreement of 0.308, with 0 of 1 readers agreeing; it also noted a disagreement between 0.158 and 1.78 for a value whose pharmacokinetic meaning is not given here. Extracted — pentazocine: CL 1.19 L/h/kg, V1 1.04 L/kg, V2 3.02 L/kg, Q 3.44 L/h/kg.
+Extracted — pentazocine: CL 1.19 L/h/kg, V1 1.04 L/kg, V2 3.02 L/kg, Q 3.44 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q1: this record has 1.76, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.308, 0 of 1 reader(s) agree | 0.308 | cross-check disputed by a second reader: verdict disputed, agreement 0.308, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.462 (6 of 13 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.462 | cross-check contradicted by a second reader: verdict disputed; agreement 0.462 (6 of 13 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

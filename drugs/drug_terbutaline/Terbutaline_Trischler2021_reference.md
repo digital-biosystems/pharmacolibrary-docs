@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Terbutaline’s reported CL/F (0.903 L day−1) and V/F (21.7 L) were rejected because the paper studied ligelizumab, while absorption parameters were defaulted rather than reported.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="terbutaline" model-id="Terbutaline_Trischler2021_reference" status="rejected" stale="false" population="" measured-compound="terbutaline" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Trischler J, Bottoli I, Janocha R, Heusser C, Jaumont X, Lowe P et al. Ligelizum
 
 ### Reviewer guidance
 
-**Terbutaline’s reported CL/F (0.903 L day−1) and V/F (21.7 L) were rejected because the paper studied ligelizumab, while absorption parameters were defaulted rather than reported.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-Although the record lists terbutaline as the measured compound, the paper concerns ligelizumab, an anti-IgE antibody, and terbutaline is described as a co-medication or covariate rather than the subject drug. The model defaulted ka and Tlag; ka was not reported in the source. It also assumed F=1 and Fm=1 and represented input as a first-order depot with apparent (/F) parameterization. Extracted — terbutaline: CL/F 0.903 L day−1, V/F 21.7 L.
+Extracted — terbutaline: CL/F 0.903 L day−1, V/F 21.7 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -115,14 +115,14 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|
-| T0_analyte_identity | fail | terbutaline (or metabolite) | paper about another drug |  | paper subject is not terbutaline: the paper is about another drug; this one is a co-medication or covariate: This is a PK study of ligelizumab (anti-IgE antibody), not terbutaline; terbutaline is not the subject drug. |
+| T0_analyte_identity | fail | terbutaline (or metabolite) | paper about another drug |  | paper subject is not terbutaline: neither the title nor the abstract names this drug and the relevance screen rejected the paper |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable | pass | C_central (measured=terbutaline) | central.C |  | output must be the measured/analyte compartment |
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (4 of 4 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -150,4 +150,4 @@ _All readers agree on the compared fields of this record._
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bterbutaline%5D%20Terbutaline_Trischler2021_reference&body=Drug%3A%20terbutaline%0ARecord%3A%20Terbutaline_Trischler2021_reference%0APaper%3A%20Trischler_2021%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_terbutaline/Terbutaline_Trischler2021_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 14:47 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 16:20 UTC</sub>

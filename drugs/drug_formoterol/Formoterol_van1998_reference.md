@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;formoterol&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/&quot;},{&quot;label&quot;:&quot;van_1998 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Formoterol_van1998_reference&quot;,&quot;label&quot;:&quot;van_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_van1998_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_van_1999_potassium&quot;,&quot;label&quot;:&quot;van_1999 \u00b7 potassium&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/pd_van_1999_potassium.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Formoterol_Back2020_reference&quot;,&quot;label&quot;:&quot;Back_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_formoterol/Formoterol_Back2020_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # formoterol — `Formoterol_van1998_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Formoterol record held back because bioavailability and lag time were not estimated, and all parameters are abstract-only statistics.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit pg x h(-1) x l(-1) ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
-<div class="pk-model-meta" hidden drug="formoterol" model-id="Formoterol_van1998_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="formoterol" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="formoterol" model-id="Formoterol_van1998_reference" status="rejected" stale="false" population="healthy subjects" measured-compound="formoterol" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 van den Berg BT, Braat MC, van Boxtel CJ. Pharmacokinetics and effects of formoterol fumarate in healthy human subjects after oral dosing. European journal of clinical pharmacology 54(6):463–468 (1998).
@@ -17,33 +17,27 @@ van den Berg BT, Braat MC, van Boxtel CJ. Pharmacokinetics and effects of formot
 
 ## Population and dosing
 
-**Population:** healthy adults · condition healthy · age group adult · n = 8.
-
-**Dosed compound ≠ measured compound:** dosed formoterol fumarate, measured formoterol.
+**Population:** healthy subjects · condition healthy · age group adult.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 5 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_formoterol/Formoterol_van1998_reference/Formoterol_van1998_reference.svg" alt="Formoterol_van1998_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Parameters:** 3 extracted.  
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
 | Ka | kabs | 6.9 | h(-1) |
-| t1/2 | t1/2z | 8.5 | h |
-| AUC | AUC | 741 | h*mg/L |
+| AUC | AUC | 741 | pg x h(-1) x l(-1) |
 | V(area/f) | V | 1470 | l |
-| CL (L·hr−1) [Budesonide] | CL | 18.4 | L·hr−1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.154). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,23 +47,21 @@ van den Berg BT, Braat MC, van Boxtel CJ. Pharmacokinetics and effects of formot
 
 ### Reviewer guidance
 
-**Formoterol record held back because bioavailability and lag time were not estimated, and all parameters are abstract-only statistics.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit pg x h(-1) x l(-1) ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The record is abstract-only, so the parameters (e.g., CL 18.4 L/hr, AUC 741 h*mg/L) are summary statistics, not fitted estimates. Bioavailability (F) and lag time (Tlag) were left at library defaults rather than extracted from the paper. A second reader disputed the verdict, agreeing on only 0.154 of fields, and could not confirm any of the parameter values. Extracted — formoterol: kabs 6.9 h(-1), t1/2z 8.5 h, AUC 741 h*mg/L, V 1.47e+03 l, CL 18.4 L·hr−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — formoterol: kabs 6.9 h(-1), AUC 741 pg x h(-1) x l(-1), V 1.47e+03 l.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has formoterol fumarate, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has formoterol, the second reading formoterol fumarate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | Ka | `Q49` · kabs | 6.9 | h(-1) | 0.001917 | 1/s | 1/h | exact (1) | van_1998:abstract |
-| t1/2 | `Q57` · t1/2z | 8.5 | h | 3.06e+04 | s | h | exact (1) | van_1998:abstract |
-| AUC | `Q88` · AUC | 741 | h*mg/L |  |  | h*mg/L | exact (1) | van_1998:abstract |
+| AUC | `Q88` · AUC | 741 | pg x h(-1) x l(-1) |  |  | pg/(h·l) | exact (1) | van_1998:abstract |
 | V(area/f) | `Q61` · V | 1470 | l | 1.47 | m3 | l | exact (1) | van_1998:abstract |
-| CL (L·hr−1) [Budesonide] | `Q22` · CL | 18.4 | L·hr−1 | 5.111e-06 | m3/s | L/h | review_gapfill (0.7) | Back_2020:review |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -78,48 +70,43 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
-- unit_dimension_unknown: 'pg x h(-1) x l(-1)' (AUC)
-- implicit units: 'AUC' → h*mg/L (from the popPK convention: 'No unit stated in text, caption, or footnotes. AUC for a PK concentration-time curve is conventionally expressed as conc')
+- dropped value-less row: 't1/2'
+- unit_dimension_mismatch: 'AUC' → Q88 (unit '[mass] / [time] / [length] ** 3' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- dropped value-less row: 'EC50'
+- dropped value-less row: 'k(e0)' (captured trailing unit 'e0' for child rows)
+- dropped value-less row: 'n'
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (V(area/f))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=formoterol
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Back_2020's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
-- derived CL=119.874 L/h from ln2/t½z × V = CL (Q57 × Q61); not separately reported
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in van_1998_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in van_1998_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.154 (2/13 fields) | 11 |
+| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[auc]` | 741 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[auc]` |  | 741 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl (l hr-1) [budesonide]]` | 18.4 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka]` | 6.9 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[ka]` |  | 6.9 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2]` | 8.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t1/2]` |  | 8.5 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` | 1470 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` |  | 1470 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | formoterol fumarate | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | formoterol | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | formoterol | formoterol fumarate | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | formoterol | formoterol fumarate | mismatch |
 
 </details>
 
@@ -133,31 +120,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Back_2020:review'] |
+| C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q49 | pass | 1 / [time] |  | ['van_1998:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['van_1998:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['van_1998:abstract'] |
-| C5_dimension_Q88 | pass | [time] * [mass] / [length] ** 3 |  | ['van_1998:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 18.4 | ['Back_2020:review'] |
+| C5_dimension_Q88 | fail | [mass] * [time] / [length] ** 3 | pg x h(-1) x l(-1) ([mass] / [time] / [length] ** 3) | ['van_1998:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 18.4 L/h | ['Back_2020:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 1.47e+03 L | ['van_1998:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
-| T3_output_variable | pass | C_central (measured=formoterol) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.154, 0 of 1 reader(s) agree | 0.154 | cross-check disputed by a second reader: verdict disputed, agreement 0.154, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -169,30 +139,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 0.16 mg, single dose, first-order absorption (ka 6.9 /h, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 0.16 mg oral (R03CC15) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_formoterol/Formoterol_van1998_reference/Formoterol_van1998_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_formoterol/Formoterol_van1998_reference/Formoterol_van1998_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Formoterol_van1998_reference_params.json` · controls `Formoterol_van1998_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bformoterol%5D%20Formoterol_van1998_reference&body=Drug%3A%20formoterol%0ARecord%3A%20Formoterol_van1998_reference%0APaper%3A%20van_1998%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_formoterol/Formoterol_van1998_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 13:38 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:52 UTC</sub>

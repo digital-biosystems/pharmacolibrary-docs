@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the dose parameter for dothiepin was missing, and the metabolite pathways were incorrectly linked in the structure.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="dosulepin" model-id="Dosulepin_Yu1986_reference" status="rejected" stale="false" population="healthy men" measured-compound="dothiepin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -47,13 +47,13 @@ Yu DK, Dimmitt DC, Lanman RC, Giesing DH. Pharmacokinetics of dothiepin in human
 
 ### Reviewer guidance
 
-**The record is rejected because the dose parameter for dothiepin was missing, and the metabolite pathways were incorrectly linked in the structure.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model was built from an abstract-only source, leaving the dose parameter null instead of the 50 mg value reported by the second reader. The second reader also identified that the metabolic links connecting dothiepin to its metabolites should not have been included. Consequently, the orphan metabolite compartment caused the model to be flagged as unreachable. Extracted — dosulepin: CL 166 L/h, t1/2z 20 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dosulepin: CL 166 L/h, t1/2z 20 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has dothiepin → dothiepin s-oxide (metabolism); dothiepin → n-desmethyldothiepin (metabolism); n-desmethyldothiepin → n-desmethyl dothiepin s-oxide (metabolism), the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -140,4 +140,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdosulepin%5D%20Dosulepin_Yu1986_reference&body=Drug%3A%20dosulepin%0ARecord%3A%20Dosulepin_Yu1986_reference%0APaper%3A%20Yu_1986%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dosulepin/Dosulepin_Yu1986_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:51 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:27 UTC</sub>

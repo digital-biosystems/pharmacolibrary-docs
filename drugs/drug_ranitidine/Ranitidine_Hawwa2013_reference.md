@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The abstract-only record for ranitidine was held for review because the second reader found no support for all four parameter values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="ranitidine" model-id="Ranitidine_Hawwa2013_reference" status="needs_review" stale="false" population="critically ill children" measured-compound="ranitidine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Hawwa AF, Westwood PM, Collier PS, Millership JS, Yakkundi S, Thurley G et al. P
 
 ### Reviewer guidance
 
-**The abstract-only record for ranitidine was held for review because the second reader found no support for all four parameter values.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader marked total clearance (32.1 L/h), volume of distribution (285 L), absorption rate constant (1.31 h⁻¹), and bioavailability (27.5%) as null, resulting in zero agreement. This disagreement on every primary parameter prevented the cross-check from validating the record. Extracted — ranitidine: CL 32.1 l h(-1), V 285 l, kabs 1.31 h(-1), Fab 27.5 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ranitidine: CL 32.1 l h(-1), V 285 l, kabs 1.31 h(-1), Fab 27.5 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ranitidine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,7 +148,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.231, 0 of 1 reader(s) agree | 0.231 | cross-check disputed by a second reader: verdict disputed, agreement 0.231, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.231 (3 of 13 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.231 | cross-check contradicted by a second reader: verdict disputed; agreement 0.231 (3 of 13 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Desirudin's elimination rate constant was rejected due to a unit conversion failure, and a second reader found no values for any parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h-1 (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="desirudin" model-id="Desirudin_Nafziger2010_moderate_renal_impairment" status="rejected" stale="false" population="adults with normal or moderate renal impairment" measured-compound="desirudin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Nafziger AN, Bertino JS. Desirudin dosing and monitoring in moderate renal impai
 
 ### Reviewer guidance
 
-**Desirudin's elimination rate constant was rejected due to a unit conversion failure, and a second reader found no values for any parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h-1 (1 / [time]) vs 1 / [time].**
 
-The terminal elimination rate constant is recorded as 0.03 h-1, but the unit could not be converted to standard SI units, causing a validation mismatch. This lack of a valid SI value prevented the parameter from being properly processed. Furthermore, a second reviewer could not identify any extracted values for the six recorded parameters, including absorption and distribution constants. Extracted — desirudin: λ1 0.25 h-1, kel 0.03 h-1, V 27.3 L, kabs 0.63 h-1, k12 0.014 h-1, k21 0.03 h-1.
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — desirudin: λ1 0.25 h-1, kel 0.03 h-1, V 27.3 L, kabs 0.63 h-1, k12 0.014 h-1, k21 0.03 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of alpha: this record has 0.25, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

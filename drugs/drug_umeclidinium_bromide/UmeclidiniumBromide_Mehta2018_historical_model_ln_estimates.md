@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Umeclidinium was rejected because its apparent total clearance, CL/F 5.44 L/h, fell outside the physiological window, indicating a likely unit/scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="umeclidinium bromide" model-id="UmeclidiniumBromide_Mehta2018_historical_model_ln_estimates" status="rejected" stale="false" population="patients with symptomatic COPD" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Mehta R, Pefani E, Beerahee M, Brealey N, Barnacle H, Birk R et al. Population P
 
 ### Reviewer guidance
 
-**Umeclidinium was rejected because its apparent total clearance, CL/F 5.44 L/h, fell outside the physiological window, indicating a likely unit/scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-CL/F is total clearance following oral administration adjusted for bioavailability; the finding identifies its magnitude as implausible but gives no numerical boundary. The record names umeclidinium as the measured compound, while the dose-compound entry lists fluticasone furoate/umeclidinium/vilanterol; the second reader instead identified umeclidinium as the dose compound and spelled the primary analyte “umeclidium.” Extracted — umeclidinium bromide: CL/F 5.44 L/h, V2/F 0.31 L, Q/F 5.59 L/h, V3/F 4.71 L, kabs -2.95 1/h.
+Extracted — umeclidinium bromide: CL/F 5.44 L/h, V2/F 0.31 L, Q/F 5.59 L/h, V3/F 4.71 L, kabs -2.95 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluticasone furoate/umeclidinium/vilanterol, the second reading umeclidinium; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

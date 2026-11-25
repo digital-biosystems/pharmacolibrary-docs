@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;sulpiride&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/&quot;},{&quot;label&quot;:&quot;Wiesel_1980 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulpiride_Bressolle1984_reference&quot;,&quot;label&quot;:&quot;Bressolle_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Peris_1988_3H_ASP_release&quot;,&quot;label&quot;:&quot;Peris_1988 \u00b7 [3H]ASP release&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/pd_Peris_1988_3H_ASP_release.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulpiride_Bressolle1984_reference&quot;,&quot;label&quot;:&quot;Bressolle_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulpiride/Sulpiride_Bressolle1984_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -17,13 +17,13 @@ Wiesel FA, Alfredsson G, Ehrnebo M, Sedvall G. The pharmacokinetics of intraveno
 
 ## Population and dosing
 
-**Population:** healthy volunteers · condition healthy · age group adult · n = 6.
+**Population:** healthy volunteers · condition healthy · age group adult.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 8 extracted.  
+**Parameters:** 6 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -34,15 +34,13 @@ Wiesel FA, Alfredsson G, Ehrnebo M, Sedvall G. The pharmacokinetics of intraveno
 | average total distribution volume during the terminal slope | V | 2.72 | l/kg |
 | total systemic clearance | CL | 415 | ml/min |
 | serum half-life of the terminal slope following intravenous administration | t1/2z | 5.3 | h |
-| % of the dose recovered unchanged in urine within 36 h following intravenous administration | fe | 70 | % |
-| mean renal clearance (intravenous) | CLR | 310 | ml/min |
-| bioavailability determined from combined plasma and urine data | Fab | 27 | % |
-| Ka1,sul | kabs | 1.66 | h−1 |
-| Tlag | tlag | 1.5 | h |
+| mean renal clearance | CLR | 310 | ml/min |
+| recovery of unchanged drug in urine following oral administration | fe | 15 | % of the dose |
+| bioavailability determined from combined plasma and urine data | Fab | 27 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.15). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.786). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -54,9 +52,9 @@ Wiesel FA, Alfredsson G, Ehrnebo M, Sedvall G. The pharmacokinetics of intraveno
 
 **The clearance plausibility check could not be computed.**
 
-The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — sulpiride: V 2.72 l/kg, CL 415 ml/min, t1/2z 5.3 h, fe 70 %, CLR 310 ml/min, Fab 27 %, kabs 1.66 h−1, tlag 1.5 h.
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — sulpiride: V 2.72 l/kg, CL 415 ml/min, t1/2z 5.3 h, CLR 310 ml/min, fe 15 % of the dose, Fab 27.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulpiride, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of half-life of urinary excretion rates of unchanged sulpiride: this record has none, the second reading 7.15; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -67,11 +65,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 | average total distribution volume during the terminal slope | `Q61` · V | 2.72 | l/kg | 0.1904 | m3 | l/kg | llm_confirmed (0.6) | Wiesel_1980:abstract |
 | total systemic clearance | `Q22` · CL | 415 | ml/min | 6.917e-06 | m3/s | ml/min | llm_confirmed (0.6) | Wiesel_1980:abstract |
 | serum half-life of the terminal slope following intravenous administration | `Q57` · t1/2z | 5.3 | h | 1.908e+04 | s | h | llm_corrected (0.6) | Wiesel_1980:abstract |
-| % of the dose recovered unchanged in urine within 36 h following intravenous administration | `Q44` · fe | 70 | % |  |  | % | llm (0.6) | Wiesel_1980:abstract |
-| mean renal clearance (intravenous) | `Q26` · CLR | 310 | ml/min | 5.167e-06 | m3/s | ml/min | llm_confirmed (0.6) | Wiesel_1980:abstract |
-| bioavailability determined from combined plasma and urine data | `Q40` · Fab | 27 | % |  |  |  | llm_confirmed (0.6) | Wiesel_1980:abstract |
-| Ka1,sul | `Q49` · kabs | 1.66 | h−1 | 0.0004611 | 1/s | 1/h | review_gapfill (0.7) | Yao_2019:review |
-| Tlag | `Q83` · tlag | 1.5 | h | 5400 | s | h | review_gapfill (0.7) | Yao_2019:review |
+| mean renal clearance | `Q26` · CLR | 310 | ml/min | 5.167e-06 | m3/s | ml/min | llm_confirmed (0.6) | Wiesel_1980:abstract, Wiesel_1980:abstract |
+| recovery of unchanged drug in urine following oral administration | `Q44` · fe | 15 | % of the dose | 0.15 |  | %·dose·of·the | llm (0.6) | Wiesel_1980:abstract |
+| bioavailability determined from combined plasma and urine data | `Q40` · Fab | 27 |  |  |  |  | llm_confirmed (0.6) | Wiesel_1980:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,53 +77,33 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'range' — extend the ontology if this is a real PK parameter (source ['Wiesel_1980:abstract'])
-- dropped duplicate Q57 ('half-life (urinary excretion rates of unchanged sulpiride)', value 7.15) — already have one for this compound
+- dropped duplicate Q57 ('half-life', value 7.15) — already have one for this compound
+- dropped unlinked row (NIL): 'of the dose was recovered unchanged in urine within 36 h' — extend the ontology if this is a real PK parameter (source ['Wiesel_1980:abstract'])
 - unit_dimension_unknown: '% of the dose' (fe)
-- dropped duplicate Q44 ('recovery of unchanged drug in urine following oral administration', value 15) — already have one for this compound
-- dropped duplicate Q26 ('mean renal clearance (oral)', value 223) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sulpiride
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Yao_2019's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Yao_2019's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Wiesel_1980_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Wiesel_1980_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.15 (3/20 fields) | 17 |
+| `gpt-oss-120b` | not confirmed | 0.786 (11/14 fields) | 3 |
 
-<details><summary>17 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[% of the dose recovered unchanged in urine within 36 h following intravenous administration]` | 70 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[average total distribution volume during the terminal slope]` | 2.72 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[average total distribution volume during the terminal slope]` |  | 2.72 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailability determined from combined plasma and urine data]` | 27 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailability determined from combined plasma and urine data]` |  | 27 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[half-life of urinary excretion rates of unchanged sulpiride]` |  | 7.15 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka1,sul]` | 1.66 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean renal clearance]` | 310 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean renal clearance]` |  | 310 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[recovered unchanged in urine within 36 h]` |  | 70 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[serum half-life of the terminal slope following intravenous administration]` | 5.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[serum half-life of the terminal slope following intravenous administration]` |  | 5.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag]` | 1.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total systemic clearance]` | 415 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[total systemic clearance]` |  | 415 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | sulpiride | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | sulpiride | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[serum half-life of the terminal slope following intravenous administration].parameter_id` | Q57 | Q60 | mismatch |
 
 </details>
 
@@ -145,12 +121,9 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Wiesel_1980:abstract'] |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Wiesel_1980:abstract'] |
-| C5_dimension_Q44 | pass | dimensionless |  | ['Wiesel_1980:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Yao_2019:review'] |
+| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Wiesel_1980:abstract', 'Wiesel_1980:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Wiesel_1980:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Wiesel_1980:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Yao_2019:review'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 415 | ['Wiesel_1980:abstract'] |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 24.9 L/h | ['Wiesel_1980:abstract'] |
@@ -188,4 +161,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulpiride%5D%20Sulpiride_Wiesel1980_reference&body=Drug%3A%20sulpiride%0ARecord%3A%20Sulpiride_Wiesel1980_reference%0APaper%3A%20Wiesel_1980%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulpiride/Sulpiride_Wiesel1980_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 17:33 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:44 UTC</sub>

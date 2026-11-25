@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Disputed because a second reader rejected the recorded clearance and distribution volume values for lenalidomide.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="lenalidomide" model-id="Lenalidomide_Gupta2019_reference" status="needs_review" stale="false" population="" measured-compound="lenalidomide" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Gupta N, Hanley MJ, Xia C, Labotka R, Harvey RD, Venkatakrishnan K. Clinical Pha
 
 ### Reviewer guidance
 
-**Disputed because a second reader rejected the recorded clearance and distribution volume values for lenalidomide.**
+**cross_check_disputed; x1_cross_check.**
 
-The model record lists a systemic clearance of 1.9 L/h and a distribution volume of 624.9755 L for lenalidomide. A second reader disagreed with the original verdict, resulting in an agreement score of 0.476 with zero readers in favor. This cross-check failure indicates the specific pharmacokinetic parameter values remain unverified. Extracted — lenalidomide: CL 1.9 L/h, V 625 L.
+Extracted — lenalidomide: CL 1.9 L/h, V 625 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q19: this record has 1.04, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.476, 0 of 1 reader(s) agree | 0.476 | cross-check disputed by a second reader: verdict disputed, agreement 0.476, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.476 (10 of 21 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.476 | cross-check contradicted by a second reader: verdict disputed; agreement 0.476 (10 of 21 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

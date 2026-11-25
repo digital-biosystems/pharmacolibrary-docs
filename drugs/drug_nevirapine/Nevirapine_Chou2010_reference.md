@@ -5,11 +5,11 @@
 
 # nevirapine — `Nevirapine_Chou2010_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The 28% interpatient variability value was mistakenly recorded as the apparent clearance mean for nevirapine, causing a dimension mismatch and rejection.
+> Only clearance was extracted — no volume; cL/F has no unit.
 
-<div class="pk-model-meta" hidden drug="nevirapine" model-id="Nevirapine_Chou2010_reference" status="rejected" stale="false" population="HIV-infected Cambodian adults" measured-compound="nevirapine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="nevirapine" model-id="Nevirapine_Chou2010_reference" status="needs_review" stale="false" population="HIV-infected Cambodian patients" measured-compound="nevirapine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Chou M, Bertrand J, Segeral O, Verstuyft C, Borand L, Comets E et al. Population pharmacokinetic-pharmacogenetic study of nevirapine in HIV-infected Cambodian patients. Antimicrobial agents and chemotherapy 54(10):4432–4439 (2010).
@@ -17,7 +17,7 @@ Chou M, Bertrand J, Segeral O, Verstuyft C, Borand L, Comets E et al. Population
 
 ## Population and dosing
 
-**Population:** HIV-infected Cambodian adults · condition HIV infection · age group adult · n = 170.
+**Population:** HIV-infected Cambodian patients · condition HIV infection · age group adult · n = 170.
 
 ## Model
 
@@ -27,15 +27,15 @@ Chou M, Bertrand J, Segeral O, Verstuyft C, Borand L, Comets E et al. Population
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Interpatient variability of nevirapine apparent clearance | CL/F | 28 | % |
+| Interpatient variabilities of nevirapine apparent clearance | CL/F | 28 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.6). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,61 +45,57 @@ Chou M, Bertrand J, Segeral O, Verstuyft C, Borand L, Comets E et al. Population
 
 ### Reviewer guidance
 
-**The 28% interpatient variability value was mistakenly recorded as the apparent clearance mean for nevirapine, causing a dimension mismatch and rejection.**
+**Only clearance was extracted — no volume; cL/F has no unit.**
 
-The record assigns a 28% variability to the apparent clearance parameter, which requires volume-per-time units. This dimensional conflict confirms the value is a dispersion metric, not the central tendency of the clearance rate. The second reader also noted the abstract-only source prevented proper differentiation between variability and mean parameters. Extracted — nevirapine: CL/F 28 %.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — nevirapine: CL/F 28.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of interpatient variabilities of nevirapine apparent clearance: this record has 28, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | unit_canonical | link | source |
-|---|---|---|---|---|---|---|
-| Interpatient variability of nevirapine apparent clearance | `Q27` · CL/F | 28 | % | % | llm_confirmed (0.6) | Chou_2010:abstract |
+| label (paper) | Q-code · name | value | unit | link | source |
+|---|---|---|---|---|---|
+| Interpatient variabilities of nevirapine apparent clearance | `Q27` · CL/F | 28 |  | llm_confirmed (0.6) | Chou_2010:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'CYP3A5 6986A&gt;G homozygous loss-of-function alleles' — extend the ontology if this is a real PK parameter (source ['Chou_2010:abstract'])
-- dropped unlinked row (NIL): 'CYP2B6 516G&gt;T homozygous loss-of-function alleles' — extend the ontology if this is a real PK parameter (source ['Chou_2010:abstract'])
-- dropped unlinked row (NIL): 'CYP2B6 1459C&gt;T homozygous loss-of-function alleles' — extend the ontology if this is a real PK parameter (source ['Chou_2010:abstract'])
-- dropped unlinked row (NIL): 'ABCB1 3435C&gt;T homozygous loss-of-function alleles' — extend the ontology if this is a real PK parameter (source ['Chou_2010:abstract'])
-- unit_dimension_mismatch: 'Interpatient variability of nevirapine apparent clearance' → Q27 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- routed 'Intrapatient variability of nevirapine apparent clearance' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'Patients carrying homozygous loss-of-function alleles CYP3A5 6986A&gt;G' — extend the ontology if this is a real PK parameter (source ['Chou_2010:abstract'])
+- dropped unlinked row (NIL): 'Patients carrying homozygous loss-of-function alleles CYP2B6 516G&gt;T' — extend the ontology if this is a real PK parameter (source ['Chou_2010:abstract'])
+- dropped unlinked row (NIL): 'Patients carrying homozygous loss-of-function alleles CYP2B6 1459C&gt;T' — extend the ontology if this is a real PK parameter (source ['Chou_2010:abstract'])
+- dropped unlinked row (NIL): 'Patients carrying homozygous loss-of-function alleles ABCB1 3435C&gt;T' — extend the ontology if this is a real PK parameter (source ['Chou_2010:abstract'])
+- dropped duplicate Q27 ('Intrapatient variabilities of nevirapine apparent clearance', value 17) — already have one for this compound
 - covariate cyp2b6 for CL/F from footnote/prose kept as documentation only (['Chou_2010:abstract'])
-- dropped PD-category row 'threshold' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Chou_2010:abstract'])
+- dropped unlinked row (NIL): 'sustained nevirapine exposure threshold' — extend the ontology if this is a real PK parameter (source ['Chou_2010:abstract'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=nevirapine
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Chou_2010_metadata.yaml (11 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Chou_2010_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.6 (3/5 fields) | 2 |
+| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `gpt-oss-120b` | `parameters[interpatient variability of nevirapine apparent clearance]` | 28 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[interpatient variabilities of nevirapine apparent clearance]` | 28 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[interpatient variability of nevirapine apparent clearance]` |  | 28 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[nevirapine exposure threshold]` |  | 3000 | only_one_extracted |
 
 </details>
 
@@ -116,7 +112,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q27 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Chou_2010:abstract'] |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] |  | ['Chou_2010:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 
@@ -130,9 +126,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -142,4 +148,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bnevirapine%5D%20Nevirapine_Chou2010_reference&body=Drug%3A%20nevirapine%0ARecord%3A%20Nevirapine_Chou2010_reference%0APaper%3A%20Chou_2010%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_nevirapine/Nevirapine_Chou2010_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 17:29 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:30 UTC</sub>

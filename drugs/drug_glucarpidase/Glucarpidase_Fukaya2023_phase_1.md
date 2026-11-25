@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The Michaelis-Menten hydrolysis of methotrexate to DAMPA was not built because the model structure is unsupported, while the second reader disagreed on the primary analyte.
+> nonlinear topology.
 
 <div class="pk-model-meta" hidden drug="glucarpidase" model-id="Glucarpidase_Fukaya2023_phase_1" status="needs_review" stale="false" population="healthy volunteers and patients with delayed MTX excretion after high-dose methotrexate" measured-compound="methotrexate" parameterization="mechanistic" topology="manual_model_class"></div>
 
@@ -49,13 +49,13 @@ Fukaya Y, Kimura T, Hamada Y, Yoshimura K, Hiraga H, Yuza Y et al. Development o
 
 ### Reviewer guidance
 
-**The Michaelis-Menten hydrolysis of methotrexate to DAMPA was not built because the model structure is unsupported, while the second reader disagreed on the primary analyte.**
+**nonlinear topology.**
 
-The record specifies a nonlinear hydrolysis link from methotrexate to DAMPA, which is a model structure that the review system cannot construct. The second reader instead identified glucarpidase as the primary analyte and the link as glucarpidase hydrolyzing methotrexate, contradicting the record's methotrexate-to-DAMPA direction. Extracted — glucarpidase: CL 10.7 L/h, V 10.7 L.
+Extracted — glucarpidase: CL 10.7 L/h, V 10.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has methotrexate, the second reading glucarpidase; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

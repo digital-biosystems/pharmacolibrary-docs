@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The paper studies another drug, using probenecid only as a co-medication probe, so the recorded clearance and volume are not primary data.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="probenecid" model-id="Probenecid_Ahmad2021_reference" status="rejected" stale="false" population="" measured-compound="probenecid" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Ahmad A, Ogungbenro K, Kunze A, Jacobs F, Snoeys J, Rostami-Hodjegan A et al. Po
 
 ### Reviewer guidance
 
-**The paper studies another drug, using probenecid only as a co-medication probe, so the recorded clearance and volume are not primary data.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The record lists probenecid clearance of 0.82 L/h and volume of distribution of 15.0 L, but the source paper is about a different subject drug. Probenecid appears in the text only as a transporter inhibitor comparator, not as the molecule being pharmacokinetically modeled. A second reader disputed the rejection, failing to agree on the verdict with a score of 0.333. Extracted — probenecid: CL 0.82 L/h, V 15 L.
+Extracted — probenecid: CL 0.82 L/h, V 15 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q1: this record has 54.5, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.4 (6 of 15 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.4 | cross-check contradicted by a second reader: verdict disputed; agreement 0.4 (6 of 15 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

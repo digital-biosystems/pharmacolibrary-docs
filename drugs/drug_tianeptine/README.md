@@ -37,14 +37,6 @@ Tianeptine is an atypical tricyclic antidepressant used mainly for major depress
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gassaway_2014_hDOR_G_protein](drugs/drug_tianeptine/pd_Gassaway_2014_hDOR_G_protein.md) | G-protein activation at human DOR (BRET) ← tianeptine · direct Emax (saturable) effect | — | Gassaway MM et al., The atypical antidepressant and neurore…, Translational psychiatry (2014) | [10.1038/tp.2014.30](https://doi.org/10.1038/tp.2014.30) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gassaway_2014_hMOR_G_protein](drugs/drug_tianeptine/pd_Gassaway_2014_hMOR_G_protein.md) | G-protein activation at human MOR (BRET) ← tianeptine · direct Emax (saturable) effect | — | Gassaway MM et al., The atypical antidepressant and neurore…, Translational psychiatry (2014) | [10.1038/tp.2014.30](https://doi.org/10.1038/tp.2014.30) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gassaway_2014_hMOR_Ki](drugs/drug_tianeptine/pd_Gassaway_2014_hMOR_Ki.md) | Radioligand binding displacement at human MOR ← tianeptine · inhibition effect | — | Gassaway MM et al., The atypical antidepressant and neurore…, Translational psychiatry (2014) | [10.1038/tp.2014.30](https://doi.org/10.1038/tp.2014.30) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gassaway_2014_hMOR_cAMP_inhibition](drugs/drug_tianeptine/pd_Gassaway_2014_hMOR_cAMP_inhibition.md) | Inhibition of forskolin-stimulated cAMP accumulation at human MOR ← tianeptine · direct Emax (saturable) effect | — | Gassaway MM et al., The atypical antidepressant and neurore…, Translational psychiatry (2014) | [10.1038/tp.2014.30](https://doi.org/10.1038/tp.2014.30) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gassaway_2014_mDOR_G_protein](drugs/drug_tianeptine/pd_Gassaway_2014_mDOR_G_protein.md) | G-protein activation at mouse DOR (BRET) ← tianeptine · direct Emax (saturable) effect | — | Gassaway MM et al., The atypical antidepressant and neurore…, Translational psychiatry (2014) | [10.1038/tp.2014.30](https://doi.org/10.1038/tp.2014.30) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gassaway_2014_mDOR_cAMP_inhibition](drugs/drug_tianeptine/pd_Gassaway_2014_mDOR_cAMP_inhibition.md) | Inhibition of forskolin-stimulated cAMP accumulation at mouse DOR ← tianeptine · direct Emax (saturable) effect | — | Gassaway MM et al., The atypical antidepressant and neurore…, Translational psychiatry (2014) | [10.1038/tp.2014.30](https://doi.org/10.1038/tp.2014.30) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gassaway_2014_mMOR_G_protein](drugs/drug_tianeptine/pd_Gassaway_2014_mMOR_G_protein.md) | G-protein activation at mouse MOR (BRET) ← tianeptine · direct Emax (saturable) effect | — | Gassaway MM et al., The atypical antidepressant and neurore…, Translational psychiatry (2014) | [10.1038/tp.2014.30](https://doi.org/10.1038/tp.2014.30) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gassaway_2014_mMOR_cAMP_inhibition](drugs/drug_tianeptine/pd_Gassaway_2014_mMOR_cAMP_inhibition.md) | Inhibition of forskolin-stimulated cAMP accumulation at mouse MOR ← tianeptine · direct Emax (saturable) effect | — | Gassaway MM et al., The atypical antidepressant and neurore…, Translational psychiatry (2014) | [10.1038/tp.2014.30](https://doi.org/10.1038/tp.2014.30) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Vandeputte_2020_arr2](drugs/drug_tianeptine/pd_Vandeputte_2020_arr2.md) | MOR activation, β-arrestin 2 recruitment (normalized AUC to hydromorphone) ← tianeptine · direct sigmoid Emax (Hill) effect | — | Vandeputte MM et al., In vitro functional characterization of…, Archives of toxicology (2020) | [10.1007/s00204-020-02855-7](https://doi.org/10.1007/s00204-020-02855-7) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Vandeputte_2020_mini_Gi](drugs/drug_tianeptine/pd_Vandeputte_2020_mini_Gi.md) | MOR activation, mini-Gi recruitment (normalized AUC to hydromorphone) ← tianeptine · direct sigmoid Emax (Hill) effect | — | Vandeputte MM et al., In vitro functional characterization of…, Archives of toxicology (2020) | [10.1007/s00204-020-02855-7](https://doi.org/10.1007/s00204-020-02855-7) |
 
@@ -60,7 +52,7 @@ Tianeptine is an atypical tricyclic antidepressant used mainly for major depress
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:50 | 2:45 | 1/3/0 | 10/0/0 | 0/0/0 | 183,052/11,888 | ollama / glm-5.3-flash | 6 | 1/5 | 6/0 | 0 |
+| 2026-11-24 04:42 | 0:04 | 1/3/0 | 2/0/0 | 0/0/0 | 3,453/155 | einfracz / qwen3.8-27b | 6 | 1/5 | 6/0 | 0 |
 
 ## Coverage
 
@@ -71,29 +63,34 @@ Tianeptine is an atypical tricyclic antidepressant used mainly for major depress
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Grasela_1993.pdf` | Grasela TH et al., Development of a population pharmacokin…, European journal of clinica… (1993) | popPK | 10 | [10.1007/BF00315502](https://doi.org/10.1007/BF00315502) | [8223841](https://pubmed.ncbi.nlm.nih.gov/8223841) | Population PK (NONMEM two-compartment) of tianeptine with full numeric CL, Vc, Q, Vp, ka values reported directly in the abstract. |
-| `Grasela_1993_2.pdf` | Grasela TH et al., Predictive performance of population ph…, European journal of clinica… (1993) | popPK | 8 | [10.1007/BF00315492](https://doi.org/10.1007/BF00315492) | [8223832](https://pubmed.ncbi.nlm.nih.gov/8223832) | A population-PK evaluation of tianeptine, but the actual parameter values (CL, V, etc.) are not shown in the abstract—only prediction error metrics. |
-| `Royer_1989.pdf` | Royer RJ et al., Tianeptine and its main metabolite phar…, Clinical pharmacokinetics (1989) | popPK | 6 | [10.2165/00003088-198916030-00005](https://doi.org/10.2165/00003088-198916030-00005) | [2721088](https://pubmed.ncbi.nlm.nih.gov/2721088) | Human PK study of tianeptine and its MC5 metabolite, but only percentage AUC changes and qualitative half-life statements appear; no numeric CL/V/t½ values are present in the evidence. |
+| `Royer_1989.pdf` | Royer RJ et al., Tianeptine and its main metabolite phar…, Clinical pharmacokinetics (1989) | popPK | 6 | [10.2165/00003088-198916030-00005](https://doi.org/10.2165/00003088-198916030-00005) | [2721088](https://pubmed.ncbi.nlm.nih.gov/2721088) | The study reports pharmacokinetics of tianeptine in humans using non-compartmental analysis, but the evidence only contains relative changes (percentages) and qualitative statements rather than absolute numeric values for CL, V, or half-life. |
 
-<sub>queue written 2026-10-06 23:47 UTC</sub>
+<sub>queue written 2026-11-24 04:42 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abdel-Razaq_2007 | irrelevant | 0 | 0 | In-vitro cell signaling study of antidepressants, no pharmacokinetic parameters for tianeptine. |
+| popPK | Abdel-Razaq_2007 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of gene transcription and does not report any pharmacokinetic disposition parameters for tianeptine. |
+| PGx | Abdel-Razaq_2007 | not_relevant | 0 | 0 | The study investigates the effects of tianeptine on gene transcription in a cell model but does not involve any genetic variants, genotypes, or pharmacogenomic factors influencing PK or PD. |
 | popPK | García-Alberca_2022 | irrelevant | 0 | 0 | Clinical efficacy study of tianeptine in Alzheimer's depression; no PK parameters (CL, V, ka, half-life, or PK model) reported anywhere. |
-| popPK | Gassaway_2014 | irrelevant | 0 | 0 | In-vitro receptor pharmacology study (Ki/EC50 at opioid receptors), no PK disposition parameters for tianeptine. |
-| popPK | Grasela_1993_2 | relevant | 8 | 3 | A population-PK evaluation of tianeptine, but the actual parameter values (CL, V, etc.) are not shown in the abstract—only prediction error metrics. |
-| popPK | Jeon_2014 | irrelevant | 0 | 0 | This is a clinical efficacy trial comparing neurocognitive outcomes of tianeptine vs escitalopram, with no pharmacokinetic parameters reported. |
+| popPK | Gassaway_2014 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of receptor binding and signaling, not a pharmacokinetic study. |
+| PGx | Gassaway_2014 | not_relevant | 0 | 0 | The paper reports the mechanism of action of tianeptine as an opioid receptor agonist but does not investigate genetic variants or their impact on PK/PD parameters. |
+| PGx | Grasela_1993 | not_relevant | 0 | 0 | The paper reports non-genetic covariates (alcoholism, gender, depression) affecting PK, but does not mention any gene variants, genotypes, or pharmacogenomic effects. |
+| popPK | Grasela_1993_2 | irrelevant | 8 | 0 | The paper describes a population PK model for tianeptine but does not report the specific numeric parameter values (CL, V, etc.) in the provided evidence, only prediction error metrics. |
+| PGx | Grasela_1993_2 | not_relevant | 0 | 0 | The paper evaluates population pharmacokinetic model predictions against post-marketing data but does not report any pharmacogenomic effects (gene variants) on PK parameters. |
+| popPK | Jeon_2014 | irrelevant | 0 | 0 | The study is a clinical trial focusing on neurocognitive efficacy and does not report any pharmacokinetic parameters for tianeptine. |
+| PGx | Jeon_2014 | not_relevant | 0 | 0 | The paper reports a clinical trial comparing neurocognitive outcomes of tianeptine and escitalopram in MDD, but contains no pharmacogenomic data (gene variants) affecting PK or PD parameters. |
 | popPK | Jung_2022 | irrelevant | 0 | 0 | Medicinal chemistry/SAR paper on tianeptine derivatives; no PK disposition parameters for tianeptine are reported. |
-| popPK | Nowakowska_2000 | irrelevant | 0 | 0 | Behavioural pharmacology study in rats with no PK parameters or disposition values reported. |
+| popPK | Nowakowska_2000 | irrelevant | 0 | 0 | The paper reports behavioral effects (immobility, anxiolysis, memory) rather than quantitative pharmacokinetic disposition parameters. |
+| PGx | Nowakowska_2000 | not_relevant | 0 | 0 | The paper investigates behavioral pharmacodynamics in rats but does not report any pharmacogenomic effects or associations with genetic variants. |
 | popPK | Park_2025 | irrelevant | 0 | 0 | This is a tDCS clinical trial in depression; tianeptine appears only as a co-medication associated with adverse events, with no PK parameters reported. |
-| popPK | Royer_1989 | relevant | 6 | 3 | Human PK study of tianeptine and its MC5 metabolite, but only percentage AUC changes and qualitative half-life statements appear; no numeric CL/V/t½ values are present in the evidence. |
+| popPK | Royer_1989 | relevant | 6 | 2 | The study reports pharmacokinetics of tianeptine in humans using non-compartmental analysis, but the evidence only contains relative changes (percentages) and qualitative statements rather than absolute numeric values for CL, V, or half-life. |
+| PGx | Royer_1989 | not_relevant | 0 | 0 | The study investigates the effect of chronic alcoholism and cirrhosis (disease states) on pharmacokinetics, not a genetic variant or genotype. |
 | popPK | Vandeputte_2020 | irrelevant | 0 | 0 | In vitro MOR activity study (EC50/Emax) of opioid NPS including tianeptine; no PK disposition parameters reported. |
 
 
@@ -101,4 +98,4 @@ _3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btianeptine%5D&body=Drug%3A%20tianeptine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tianeptine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 23:48 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 04:41 UTC</sub>

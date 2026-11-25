@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Record for umeclidinium (Mehta_2018) quarantined because volume of distribution and absorption lag time lacked extracted values, forcing placeholder defaults.
+> No value for umeclidinium's volume of distribution and absorption lag time; t3_param_coverage (+2 more).
 
 <div class="pk-model-meta" hidden drug="umeclidinium" model-id="Umeclidinium_Mehta2018_model_parameter_estimates_with_combin" status="model_quarantined" stale="false" population="patients with symptomatic COPD" measured-compound="umeclidinium" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Mehta R, Pefani E, Beerahee M, Brealey N, Barnacle H, Birk R et al. Population P
 
 ### Reviewer guidance
 
-**Record for umeclidinium (Mehta_2018) quarantined because volume of distribution and absorption lag time lacked extracted values, forcing placeholder defaults.**
+**No value for umeclidinium's volume of distribution and absorption lag time; t3_param_coverage (+2 more).**
 
-The model structure implies a two-compartment system with volumes of distribution, yet no explicit value was extracted for the volume of distribution, leaving it at a library default. Similarly, the absorption lag time was not specified, resulting in a placeholder value rather than an estimate. Although specific clearance and absorption rate parameters were provided, the absence of these structural parameters prevented publication. Extracted — umeclidinium: CL/F 41.6 L/h, V2/F 271 L, Q/F 116 L/h, V3/F 1.28e+03 L, kabs 19.6 1/h.
+The model was built, but umeclidinium's volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — umeclidinium: CL/F 41.6 L/h, V2/F 271 L, Q/F 116 L/h, V3/F 1.28e+03 L, kabs 19.6 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fluticasone furoate/umeclidinium/vilanterol, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,7 +147,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.429, 0 of 1 reader(s) agree | 0.429 | cross-check disputed by a second reader: verdict disputed, agreement 0.429, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.429 (6 of 14 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.429 | cross-check contradicted by a second reader: verdict disputed; agreement 0.429 (6 of 14 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

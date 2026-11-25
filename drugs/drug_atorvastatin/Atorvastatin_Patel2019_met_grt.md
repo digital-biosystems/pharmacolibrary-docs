@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Metformin is measured but lacks a connected pathway in the three-compartment model structure.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Patel2019_met_grt" status="rejected" stale="false" population="Wistar rats" measured-compound="atorvastatin, metformin" parameterization="apparent" topology="3C"></div>
 
@@ -47,7 +47,7 @@ Patel O, Muller CJF, Joubert E, Rosenkranz B, Taylor MJC, Louw J et al. Pharmaco
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.133). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -57,11 +57,13 @@ Patel O, Muller CJF, Joubert E, Rosenkranz B, Taylor MJC, Louw J et al. Pharmaco
 
 ### Reviewer guidance
 
-**Metformin is measured but lacks a connected pathway in the three-compartment model structure.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists metformin as a measured compound alongside atorvastatin. The model structure is defined as three compartments with parameters only for atorvastatin. This leaves the metformin compartment unreachable or orphaned because it has no path from the dose. Extracted — atorvastatin: tmax 1 h, t1/2z 2.75 h, MRT 4.29 h, V/F 0.04 L/kg, CL/F 0.01 L/kg*hr, V1 0.03 (mg/kg)/(μg/mL), V2 0.01 (mg/kg)/(μg/mL), k12 0.45 1/h, … (+1).
+Extracted — atorvastatin: tmax 1 h, t1/2z 2.75 h, MRT 4.29 h, V/F 0.04 L/kg, CL/F 0.01 L/kg*hr, V1 0.03 (mg/kg)/(μg/mL), V2 0.01 (mg/kg)/(μg/mL), k12 0.45 1/h, … (+1).
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atorvastatin, metformin, the second reading atorvastatin; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -97,6 +99,39 @@ The record lists metformin as a measured compound alongside atorvastatin. The mo
 - LLM selected parameter table(s) 4
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.133 (2/15 fields) | 13 |
+
+<details><summary>13 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc0-inf]` |  | 176.27 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c max]` |  | 48.72 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl/f (mg/kg)/].value` | 0.01 | 0.25 | mismatch |
+| `gpt-oss-120b` | `parameters[k12].value` | 0.45 | 7.06 | mismatch |
+| `gpt-oss-120b` | `parameters[k21].value` | 0.69 | 0.38 | mismatch |
+| `gpt-oss-120b` | `parameters[mrt0-inf].value` | 4.29 | 5.48 | mismatch |
+| `gpt-oss-120b` | `parameters[t 1/2].value` | 2.75 | 3.12 | mismatch |
+| `gpt-oss-120b` | `parameters[t max].value` | 1.00 | 0.67 | mismatch |
+| `gpt-oss-120b` | `parameters[v1 (mg/kg)/].value` | 0.03 | 0.37 | mismatch |
+| `gpt-oss-120b` | `parameters[v2 (mg/kg)/]` | 0.01 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vz/f (mg/kg)/].value` | 0.04 | 1.14 | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | atorvastatin, metformin | atorvastatin | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | atorvastatin, metformin | atorvastatin | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

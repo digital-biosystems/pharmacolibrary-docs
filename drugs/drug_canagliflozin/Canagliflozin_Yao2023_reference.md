@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The intercompartmental clearance from the peripheral to central compartment for canagliflozin was left at library placeholder defaults instead of using a value from the study.
+> K21 use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="canagliflozin" model-id="Canagliflozin_Yao2023_reference" status="needs_review" stale="false" population="healthy subjects and patients with T2DM" measured-compound="canagliflozin" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Yao X, Zhou J, Song L, Ren Y, Hu P, Liu D. A model-based meta analysis study of 
 
 ### Reviewer guidance
 
-**The intercompartmental clearance from the peripheral to central compartment for canagliflozin was left at library placeholder defaults instead of using a value from the study.**
+**K21 use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record contains no explicit estimate for the peripheral-to-central clearance, so a library placeholder value would be used in the model. This omission was flagged as an unreported model parameter default. A second reader disagreed on the identifier for the absolute bioavailability, though they agreed on the other parameter values. Extracted — canagliflozin: CL 4.25 L/h, V1 30.6 L, Q 1.37 L/h, V 28.3 L, kel 4.13 h−1, Fab 0.254.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — canagliflozin: CL 4.25 L/h, V1 30.6 L, Q 1.37 L/h, V 28.3 L, kel 4.13 h−1, Fab 0.254.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[fed].parameter_id`: this record has Q40, the second reading Q43. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -189,7 +189,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.941, 0 of 1 reader(s) agree | 0.941 | cross-check disputed by a second reader: verdict disputed, agreement 0.941, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.941 (16 of 17 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.941 | cross-check contradicted by a second reader: verdict disputed; agreement 0.941 (16 of 17 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

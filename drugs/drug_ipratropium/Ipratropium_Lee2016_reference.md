@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ipratropium bromide dose-normalized AUC value 0.1 has unit min/L, which dimensionally conflicts with a structural parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit min/L ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="Ipratropium" model-id="Ipratropium_Lee2016_reference" status="rejected" stale="false" population="surgical patients under mechanical ventilation" measured-compound="ipratropium bromide" parameterization="apparent" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Lee YH, Kwon GY, Park DY, Bang JY, Jang DM, Lee SH et al. Efficiency of a New Me
 
 ### Reviewer guidance
 
-**Ipratropium bromide dose-normalized AUC value 0.1 has unit min/L, which dimensionally conflicts with a structural parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit min/L ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The dose-normalized area under the concentration-time curve for ipratropium bromide is listed as 0.1 min/L, but its dimensions do not match the expected structural parameter dimensions. Since the record was built from the abstract alone, these reported summary statistics stand in for a fitted model. A second reader could not confirm the dose compound, primary analyte, or the extracted parameter values. Extracted — ipratropium: AUC/dose 0.1 min/L, V/F 1.34e+03 L, CLH 6.78 L/min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ipratropium: AUC/dose 0.1 min/L, V/F 1.34e+03 L, CLH 6.78 L/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ipratropium bromide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ketoprofen’s reported total clearance of 5.1 L has a volume unit rather than the required volume-per-time dimension, so the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit l ([length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="ketoprofen" model-id="Ketoprofen_Hurault1989_reference" status="rejected" stale="false" population="patients with acute ureteral colic" measured-compound="ketoprofen" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Hurault de Ligny B, Debruyne D, Ryckelynck JP, Levaltier B, Albessard F, Moulin 
 
 ### Reviewer guidance
 
-**Ketoprofen’s reported total clearance of 5.1 L has a volume unit rather than the required volume-per-time dimension, so the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit l ([length] ** 3) vs [length] ** 3 / [time].**
 
-The source was abstract-only, so reported summary statistics stood in for a fitted model. A second reader disagreed about the half-life and central-volume parameter assignments, whether an absorption rate of 5.63 was present, and whether a tissue volume of 5.14 was reported. Extracted — ketoprofen: t1/2β 0.34 h, t1/2z 2.05 h, kel 0.96 h-1, k21 0.94 h-1, k12 1 h-1, V 5.58 l, CL 5.1 l, kabs 5.63 1/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ketoprofen: t1/2β 0.34 h, t1/2z 2.05 h, kel 0.96 h-1, k21 0.94 h-1, k12 1 h-1, V 5.58 l, CL 5.1 l, kabs 5.63 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[distribution half-life].parameter_id`: this record has Q60, the second reading Q59; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

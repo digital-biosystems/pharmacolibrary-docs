@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Cilazaprilat is an unreachable metabolite lacking a defined hydrolysis rate constant from cilazapril.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="cilazapril" model-id="Cilazapril_Gross1993_reference" status="rejected" stale="false" population="healthy volunteers and patients with compensated cirrhosis" measured-compound="cilazapril" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -48,13 +48,13 @@ Gross V, Treher E, Haag K, Neis W, Wiegand U, Schölmerich J. Angiotensin-conver
 
 ### Reviewer guidance
 
-**Cilazaprilat is an unreachable metabolite lacking a defined hydrolysis rate constant from cilazapril.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure includes the cilazapril to cilazaprilat hydrolysis link, but the record does not provide a value for the hydrolysis rate parameter. This omission leaves the metabolite compartment unreachable from the dose, triggering a structural defect. Additionally, the source is abstract-only, so summary statistics like the -1.6 h lag time stand in for fitted parameters. Extracted — cilazapril: CL 7.8 l/h, t1/2α 2.5 h, V 8.7 L, tlag -1.6 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cilazapril: CL 7.8 l/h, t1/2α 2.5 h, V 8.7 L, tlag -1.6 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has cilazapril → cilazaprilat (hydrolysis), the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

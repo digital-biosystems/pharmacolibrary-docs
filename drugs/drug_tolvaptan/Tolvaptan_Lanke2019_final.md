@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Tolvaptan's absorption rate constant and lag time use library defaults, and the weight covariate power exponent is incorrectly labeled as eGFR.
+> Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Lanke2019_final" status="needs_review" stale="false" population="adults with autosomal dominant polycystic kidney disease" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Lanke S, Shoaf SE. Population Pharmacokinetic Analyses and Model Validation of T
 
 ### Reviewer guidance
 
-**Tolvaptan's absorption rate constant and lag time use library defaults, and the weight covariate power exponent is incorrectly labeled as eGFR.**
+**Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).**
 
-The absorption rate constant and lag time were not reported in the source, so library defaults were substituted for the zero-order duration of 0.58 h. The eGFR covariate power exponent of 0.52 is mislabeled, as the second reader attributes 0.52 to eGFR and assigns -0.53 to weight. Consequently, the record's covariate effects could not be verified against the source data. Extracted — tolvaptan: CL/F 12.6 L/h, V/F 110 L, D1 0.58 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — tolvaptan: CL/F 12.6 L/h, V/F 110 L, D1 0.58 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].covariate_forms`: this record has ['power'], the second reading ['power', 'power']; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

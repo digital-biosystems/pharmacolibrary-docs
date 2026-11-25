@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Brexpiprazole's one-compartment structure and mismatched output variable failed to reproduce the paper's peak concentration, time, and half-life.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 4.32e-05, model 7.73e-05); the model does not reproduce the paper's time of the peak (tmax) (paper 1, model 0.183) (+3 more).
 
 <div class="pk-model-meta" hidden drug="brexpiprazole" model-id="Brexpiprazole_Sasabe2021v2_monkey" status="rejected" stale="false" population="rats, monkeys, and humans" measured-compound="brexpiprazole" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -56,13 +56,13 @@ Sasabe H, Koga T, Furukawa M, Matsunaga M, Kaneko Y, Koyama N et al. Pharmacokin
 
 ### Reviewer guidance
 
-**Brexpiprazole's one-compartment structure and mismatched output variable failed to reproduce the paper's peak concentration, time, and half-life.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 4.32e-05, model 7.73e-05); the model does not reproduce the paper's time of the peak (tmax) (paper 1, model 0.183) (+3 more).**
 
-The model's single-compartment structure contradicts the reported parent-metabolite relationship, causing a topology mismatch. The simulation output targeted the central compartment rather than the metabolite, which is the measured compound in the record. This structural and output error resulted in simulated peak concentration, time, and half-life values that deviated significantly from the paper's reported data. Extracted — brexpiprazole: Cmax 3.9 ng/mL, tmax 7 hour, AUC∞ 88.9 ng·h/mL, t1/2z 10.1 hour, CL 0.326 L/h/kg, V 1.82 L/kg, Cmax_ratio 0.775, AUC ratio 0.775.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — brexpiprazole: Cmax 3.9 ng/mL, tmax 7 hour, AUC∞ 88.9 ng·h/mL, t1/2z 10.1 hour, CL 0.326 L/h/kg, V 1.82 L/kg, Cmax_ratio 0.775, AUC ratio 0.775.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has brexpiprazole → dm-3411 (metabolism), the second reading none. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -154,27 +154,27 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_cmax | reference | fail | 4.32e-05 | 7.733e-05 | 1.79 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.46e-05 | 7.733e-05 | 5.297 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 4.32e-05 | 7.733e-05 | 1.79 | reported 43.2 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.46e-05 | 7.733e-05 | 5.297 | reported 14.6 ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 0.325 | 7.733e-05 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | pass | 7.19e-05 | 7.733e-05 | 1.076 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 1.28e-05 | 7.733e-05 | 6.042 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 7.19e-05 | 7.733e-05 | 1.076 | reported 71.9 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 1.28e-05 | 7.733e-05 | 6.042 | reported 12.8 ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 0.172 | 7.733e-05 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_cmax | reference | fail | 0.0001862 | 7.733e-05 | 0.4153 | ng/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.000154 | 7.733e-05 | 0.5022 | ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0001862 | 7.733e-05 | 0.4153 | reported 186.2 ng/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.000154 | 7.733e-05 | 0.5022 | reported 154.0 ng/mL→SI vs simulated kg/m3 |
 | T1_cmax | reference | skipped | 0.775 | 7.733e-05 |  | unresolved concentration unit (exp '', sim 'kg/m3') |
-| T1_t_half_terminal | reference | pass | 3.6 | 3.729 | 1.036 | hour→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 3.9 | 3.729 | 0.9562 | hour→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 3.7 | 3.729 | 1.008 | hour→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 3.6 | 3.729 | 1.036 | hour→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 7.4 | 3.729 | 0.5039 | hour→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 8 | 3.729 | 0.4661 | hour→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | hour→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | hour→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | hour→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | hour→SI vs simulated h |
-| T1_tmax | reference | fail | 8 | 0.1833 | 0.0229 | hour→SI vs simulated h |
-| T1_tmax | reference | fail | 4.3 | 0.1833 | 0.0426 | hour→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 3.6 | 3.729 | 1.036 | reported 3.6 hour→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 3.9 | 3.729 | 0.9562 | reported 3.9 hour→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 3.7 | 3.729 | 1.008 | reported 3.7 hour→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 3.6 | 3.729 | 1.036 | reported 3.6 hour→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 7.4 | 3.729 | 0.5039 | reported 7.4 hour→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 8 | 3.729 | 0.4661 | reported 8.0 hour→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 hour→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 hour→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 hour→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 hour→SI vs simulated h |
+| T1_tmax | reference | fail | 8 | 0.1833 | 0.0229 | reported 8.0 hour→SI vs simulated h |
+| T1_tmax | reference | fail | 4.3 | 0.1833 | 0.0426 | reported 4.3 hour→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

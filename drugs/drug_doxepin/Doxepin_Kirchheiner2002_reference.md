@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The metabolite N-desmethyldoxepin is an orphan compartment with no defined metabolic rate constants linking it to E- and Z-doxepin.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q19 unit nmol l h(-1) ([substance] * [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.
 
-<div class="pk-model-meta" hidden drug="doxepin" model-id="Doxepin_Kirchheiner2002_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="E- and Z-doxepin" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="doxepin" model-id="Doxepin_Kirchheiner2002_reference" status="rejected" stale="false" population="healthy volunteers" measured-compound="E-doxepin" parameterization="apparent" topology="parent_metabolite"></div>
 
 ## Citation
 Kirchheiner J, Meineke I, Müller G, Roots I, Brockmöller J. Contributions of CYP2D6, CYP2C9 and CYP2C19 to the biotransformation of E- and Z-doxepin in healthy volunteers. Pharmacogenetics 12(7):571–580 (2002).
@@ -18,13 +18,13 @@ Kirchheiner J, Meineke I, Müller G, Roots I, Brockmöller J. Contributions of C
 
 **Population:** healthy volunteers · condition healthy · age group adult.
 
-**Dosed compound ≠ measured compound:** dosed doxepin, measured E- and Z-doxepin.
+**Dosed compound ≠ measured compound:** dosed doxepin, measured E-doxepin.
 
 ## Model
 
-**Structure:** general linear; no model was built for this record.  
+**Structure:** parent + metabolite; no model was built for this record.  
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 2 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,12 +32,13 @@ Kirchheiner J, Meineke I, Müller G, Roots I, Brockmöller J. Contributions of C
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| bioavailability in EMs compared with PMs | Fab | 2 | fold lower |
-| Z-doxepin oral clearance in EMs | CL/F | 191 | l h(-1) |
+| Mean E-doxepin clearance | CL | 406 | l h(-1) |
+| E-doxepin oral clearance | CL/F | 238 | l h(-1) |
+| The area under the curve (0-48 h) of the active metabolite -desmethyldoxepin | AUCt | 5.28 | nmol l h(-1) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.111). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,20 +48,21 @@ Kirchheiner J, Meineke I, Müller G, Roots I, Brockmöller J. Contributions of C
 
 ### Reviewer guidance
 
-**The metabolite N-desmethyldoxepin is an orphan compartment with no defined metabolic rate constants linking it to E- and Z-doxepin.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q19 unit nmol l h(-1) ([substance] * [length] ** 3 / [time]) vs [mass] * [time] / [length] ** 3.**
 
-The model structure includes links from E-doxepin and Z-doxepin to N-desmethyldoxepin, but the metabolic link parameters are missing. Because the record was built from the abstract alone, summary statistics like the 2-fold bioavailability difference and 191 L/h clearance replaced fitted model parameters. Consequently, the metabolite has no path from the dose, rendering it an unreachable compartment. Extracted — E- and Z-doxepin: Fab 2 fold lower, CL/F 191 l h(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is doxepin's own; they describe E-doxepin. Extracted — E-doxepin: CL 406 l h(-1), CL/F 238 l h(-1), AUCt 5.28 nmol l h(-1).
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has E-doxepin, the second reading doxepin; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| bioavailability in EMs compared with PMs | `Q40` · Fab | 2 | fold lower |  |  |  | llm_confirmed (0.6) | Kirchheiner_2002:abstract |
-| Z-doxepin oral clearance in EMs | `Q27` · CL/F | 191 | l h(-1) | 5.306e-05 | m3/s | l/h | llm_confirmed (0.6) | Kirchheiner_2002:abstract |
+| Mean E-doxepin clearance | `Q22` · CL | 406 | l h(-1) | 0.0001128 | m3/s | l/h | llm_confirmed (0.6) | Kirchheiner_2002:abstract, Kirchheiner_2002:abstract, Kirchheiner_2002:abstract |
+| E-doxepin oral clearance | `Q27` · CL/F | 238 | l h(-1) | 6.611e-05 | m3/s | l/h | llm_confirmed (0.6) | Kirchheiner_2002:abstract |
+| The area under the curve (0-48 h) of the active metabolite -desmethyldoxepin | `Q19` · AUCt | 5.28 | nmol l h(-1) |  |  | (l·nM)/h | llm_corrected (0.6) | Kirchheiner_2002:abstract, Kirchheiner_2002:abstract, Kirchheiner_2002:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -70,40 +72,38 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on how the 
 ## Departures & gaps
 
 **Interpretation flags:**
-- covariate cyp2d6 for CL from footnote/prose kept as documentation only (['Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract'])
-- covariate cyp2c9 for CL/F from footnote/prose kept as documentation only (['Kirchheiner_2002:abstract'])
-- covariate cyp2c19 for CL/F from footnote/prose kept as documentation only (['Kirchheiner_2002:abstract'])
-- covariate cyp2d6 for AUCt from footnote/prose kept as documentation only (['Kirchheiner_2002:abstract'])
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=E- and Z-doxepin
+- dropped duplicate Q27 ('oral clearances', value 73) — already have one for this compound
+- unit_dimension_mismatch: 'The area under the curve (0-48 h) of the active metabolite -desmethyldoxepin' → Q19 (unit '[substance] * [length] ** 3 / [time]' vs ontology '[mass] * [time] / [length] ** 3') — route to review
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=E-doxepin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
-- molar mass: no plausible PubChem entry for 'E- and Z-doxepin' ('E- and Z-doxepin') — left in mass units
-- molar mass: none found for 'E- and Z-doxepin' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Kirchheiner_2002_metadata.yaml (13 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Kirchheiner_2002_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.111 (1/9 fields) | 8 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>8 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `model.bioavailability.theta` | 2 |  | only_one_extracted |
-| `qwen3.8-27b` | `model.parameterization` | apparent | mechanistic | mismatch |
-| `qwen3.8-27b` | `parameters[bioavailability in ems compared with pms]` | 2 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[z-doxepin oral clearance in ems]` | 191 |  | only_one_extracted |
+| `gpt-oss-120b` | `model.links` | [['e-doxepin', 'nortriptyline', 'metabolism']] | [] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[2.5-fold differences in oral clearances]` |  | 2.5 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[e-doxepin oral clearance]` | 238 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean e-doxepin clearance]` | 406 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean e-doxepin clearance]` |  | 406 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the area under the curve (0-48 h) of the active metabolite -desmethyldoxepin]` | 5.28 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | E-doxepin | doxepin | mismatch |
 
 </details>
 
@@ -117,13 +117,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q19 | fail | [mass] * [time] / [length] ** 3 | nmol l h(-1) ([substance] * [length] ** 3 / [time]) | ['Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract'] |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Kirchheiner_2002:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 191 L/h | ['Kirchheiner_2002:abstract'] |
+| C8_topology | pass |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 406 L/h | ['Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract', 'Kirchheiner_2002:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 238 L/h | ['Kirchheiner_2002:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -147,4 +150,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdoxepin%5D%20Doxepin_Kirchheiner2002_reference&body=Drug%3A%20doxepin%0ARecord%3A%20Doxepin_Kirchheiner2002_reference%0APaper%3A%20Kirchheiner_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_doxepin/Doxepin_Kirchheiner2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 14:39 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:29 UTC</sub>

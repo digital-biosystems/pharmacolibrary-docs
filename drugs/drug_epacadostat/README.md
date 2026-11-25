@@ -22,8 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Shi_2017_KYN](drugs/drug_epacadostat/pd_Shi_2017_KYN.md) | kynurenine ← epacadostat · indirect response — drug stimulates the production of kynurenine | — | Shi JG et al., Population Pharmacokinetic and Pharmaco…, Journal of clinical pharmac… (2017) | [10.1002/jcph.855](https://doi.org/10.1002/jcph.855) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Shi_2017_TRP](drugs/drug_epacadostat/pd_Shi_2017_TRP.md) | tryptophan ← epacadostat · indirect response — drug inhibits the production of tryptophan | — | Shi JG et al., Population Pharmacokinetic and Pharmaco…, Journal of clinical pharmac… (2017) | [10.1002/jcph.855](https://doi.org/10.1002/jcph.855) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Shi_2017_KYN](drugs/drug_epacadostat/pd_Shi_2017_KYN.md) | kynurenine ← epacadostat · indirect response — drug stimulates the production of kynurenine | — | Shi JG et al., Population Pharmacokinetic and Pharmaco…, Journal of clinical pharmac… (2017) | [10.1002/jcph.855](https://doi.org/10.1002/jcph.855) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Shi_2017_TRP](drugs/drug_epacadostat/pd_Shi_2017_TRP.md) | tryptophan ← epacadostat · indirect response — drug inhibits the production of tryptophan | — | Shi JG et al., Population Pharmacokinetic and Pharmaco…, Journal of clinical pharmac… (2017) | [10.1002/jcph.855](https://doi.org/10.1002/jcph.855) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

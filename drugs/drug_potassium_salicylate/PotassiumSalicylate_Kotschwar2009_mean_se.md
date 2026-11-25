@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> Salicylate concentration C0 unit mg/L conflicts with AUC dimension [mass]·[time]·[length]⁻³ in the record.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit mg/L ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="potassium salicylate" model-id="PotassiumSalicylate_Kotschwar2009_mean_se" status="rejected" stale="false" population="bovine calves" measured-compound="salicylate" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,7 +49,7 @@ Kotschwar JL, Coetzee JF, Anderson DE, Gehring R, KuKanich B, Apley MD. Analgesi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -59,11 +59,13 @@ Kotschwar JL, Coetzee JF, Anderson DE, Gehring R, KuKanich B, Apley MD. Analgesi
 
 ### Reviewer guidance
 
-**Salicylate concentration C0 unit mg/L conflicts with AUC dimension [mass]·[time]·[length]⁻³ in the record.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit mg/L ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The record lists the time-zero concentration C0 as 226.9 mg/L, while AUC is reported in min × mg/L. The dimension mismatch flagged the C0 unit as mass/volume rather than the expected mass·time/volume. Consequently, the model was rejected due to this structural parameter inconsistency. Extracted — potassium salicylate: AUC 1.21e+04 min × mg/L, t1/2z 36.9 min, kel 0.02, C0 227 mg/L, CLb 4.3 mL/min•kg, V 0.2 L/kg, MRT 53.2 min, kabs 0.22 h−1, … (+1).
+A reported unit could not be converted (AUC, C0 and CLb), so that value has no SI equivalent. Extracted — potassium salicylate: AUC 1.21e+04 min × mg/L, t1/2z 36.9 min, kel 0.02, C0 227 mg/L, CLb 4.3 mL/min•kg, V 0.2 L/kg, MRT 53.2 min, kabs 0.22 h−1, … (+1).
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has salicylate, the second reading sodium salicylate; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -109,6 +111,38 @@ The record lists the time-zero concentration C0 as 226.9 mg/L, while AUC is repo
 - LLM selected parameter table(s) 2
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
+
+<details><summary>12 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc]` | 12099.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[c 0]` | 226.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl b]` | 4.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl b]` |  | 4.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k 10]` | 0.02 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka capsule]` | 0.22 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[lag0]` | 2.81 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mrt]` | 53.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2 el]` | 36.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v d]` | 0.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v d]` |  | 0.2 | only_one_extracted |
+| `gpt-oss-120b` | `screen.primary_analyte` | salicylate | sodium salicylate | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -39,7 +39,7 @@ Bulitta JB, Fang E, Stryjewski ME, Wang W, Atiee GJ, Stark JG et al. Population 
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,6 +52,8 @@ Bulitta JB, Fang E, Stryjewski ME, Wang W, Atiee GJ, Stark JG et al. Population 
 **This paper's disposition core is incomplete.**
 
 A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Fu_2024, Liu_2026) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — contezolid: AUC 91.9 mg·h/L, CL 5.28 L h−1, V 45.8 L.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has contezolid acefosamil, the second reading contezoild acefosamil (CZA); it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -86,6 +88,32 @@ A volume and a clearance/elimination estimate from this paper are needed to buil
 - no GROBID TEI available — transcribed from abstract in Bulitta_2024_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+
+<details><summary>6 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['contezolid acefosamil', 'mrx-1352', 'metabolism'], ['mrx-1352', 'contezolid', 'metabolism'], ['contezolid', 'mrx-1320', 'metabolism']] | [['contezoild acefosamil (cza)', 'mrx-1352', 'hydrolysis'], ['mrx-1352', 'contezolid', 'hydrolysis'], ['contezolid', 'mrx-1320', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[apparent total clearance]` |  | 16.0 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` | 5.28 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 45.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | contezolid acefosamil | contezoild acefosamil (CZA) | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

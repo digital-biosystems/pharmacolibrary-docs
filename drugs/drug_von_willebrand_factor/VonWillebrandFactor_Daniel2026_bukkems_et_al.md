@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because von Willebrand factor clearance is reported as 447 mL/h and intercompartmental clearance as 3290 mL, with the latter’s unit dimensionally incompatible.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit mL ([length] ** 3) vs [length] ** 3 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="von Willebrand factor" model-id="VonWillebrandFactor_Daniel2026_bukkems_et_al" status="rejected" stale="false" population="patients with von Willebrand disease" measured-compound="von Willebrand factor" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -51,13 +51,13 @@ Daniel MY, Rauch A, Paris C, Jeanpierre E, Goudemand J, Marichez C et al. Modeli
 
 ### Reviewer guidance
 
-**The record was rejected because von Willebrand factor clearance is reported as 447 mL/h and intercompartmental clearance as 3290 mL, with the latter’s unit dimensionally incompatible.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit mL ([length] ** 3) vs [length] ** 3 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-CL 447 mL/h with V 193 mL was flagged as outside the physiological clearance/volume window, attributed to a unit or scale extraction error. Q is defined as apparent intercompartmental clearance but is reported as 3290 mL, a volume unit rather than volume per time; a reported unit could not be converted to SI, leaving a parameter without an SI value. The second reader disputed the dose compound, analyte, links, and parameter extraction, proposing CL values of 74.2 and 157.6 while omitting the recorded CL 447 and Q 3290. Extracted — von willebrand factor: V2 0.25 mL, CL 447 mL/h, V 193 mL, Q 3.29e+03 mL, kabs 0.5 h−1.
+A reported unit could not be converted (Q), so that value has no SI equivalent. Extracted — von willebrand factor: V2 0.25 mL, CL 447 mL/h, V 193 mL, Q 3.29e+03 mL, kabs 0.5 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has von Willebrand factor, the second reading high-purity VWF concentrate; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

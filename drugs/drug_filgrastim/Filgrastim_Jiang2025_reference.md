@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Filgrastim model rejected due to unlinked peripheral compartment with placeholder volume value of 1 L.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="filgrastim" model-id="Filgrastim_Jiang2025_reference" status="rejected" stale="false" population="healthy adults" measured-compound="filgrastim" parameterization="mechanistic" topology="2C"></div>
 
@@ -51,13 +51,13 @@ Jiang X, Cha JS, Jin BH, Kim CO, Chae D. Population Pharmacokinetic-Pharmacodyna
 
 ### Reviewer guidance
 
-**Filgrastim model rejected due to unlinked peripheral compartment with placeholder volume value of 1 L.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record defines a two-compartment structure but lacks any inter-compartmental rate constants, rendering the peripheral compartment orphaned. The volume of distribution for this orphan compartment is listed as 1 L, indicating a library placeholder rather than an estimated parameter. A second reader disagreed with the presence of the peripheral volume, noting it should be null. Extracted — filgrastim: V 4.19 L, CL 1.23 L/h, kabs 0.56 h−1, ktr 0.25 h−1, V2 1 L.
+Extracted — filgrastim: V 4.19 L, CL 1.23 L/h, kabs 0.56 h−1, ktr 0.25 h−1, V2 1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading not captured → not captured (none); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

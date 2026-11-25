@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Salbutamol's gut bioavailability and lag time used library defaults, and the cardiac output parameter was misclassified as intercompartmental clearance.
+> F use library defaults, not estimates from this paper; t3_output_variable (+3 more).
 
 <div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Heuberger2018_reference" status="rejected" stale="false" population="virtual adult subjects (extrapolated from dog model, validated in humans)" measured-compound="salbutamol" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -58,13 +58,13 @@ Heuberger JAAC, van Dijkman SC, Cohen AF. Futility of current urine salbutamol d
 
 ### Reviewer guidance
 
-**Salbutamol's gut bioavailability and lag time used library defaults, and the cardiac output parameter was misclassified as intercompartmental clearance.**
+**F use library defaults, not estimates from this paper; t3_output_variable (+3 more).**
 
-The record contains no extracted value for overall oral bioavailability or absorption lag, so library placeholders were used instead of paper-specific estimates. Additionally, the parameter labeled as cardiac output was interpreted as intercompartmental clearance, contradicting the paper's definition of cardiac output. This mismatch indicates a failure in correctly mapping the physiological parameters to their intended pharmacokinetic roles. Extracted — salbutamol: Q 0.166 l min −1, FG 80 %, tlag 1.5 h, CL 17.5 l h −1, Qb 0.166 L/min, kabs 0.5 h-1, CLR 17.5 L/h, V1 1.4 L/kg, … (+1); sulphated salbutamol: CL 5.91 l h −1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — salbutamol: Q 0.166 l min −1, FG 80 %, tlag 1.5 h, CL 17.5 l h −1, Qb 0.166 L/min, kabs 0.5 h-1, CLR 17.5 L/h, V1 1.4 L/kg, … (+1); sulphated salbutamol: CL 5.91 l h −1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cardiac output (*weight0.79): this record has 0.166, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -169,8 +169,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_shared_parameters |  | pass | 1 shared param(s) bound once | bound once |  | shared params must bind one value to both compartments |
 | T3_topology_template |  | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | pass |  | verdict partial, agreement 0.786, 0 of 1 reader(s) agree | 0.786 | a second reader did not contradict the extraction |
-| T1_cmax | reference | skipped |  | 4.146e-05 |  | non-numeric value |
+| X1_cross_check |  | pass |  | verdict partial; agreement 0.786 (11 of 14 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.786 | a second reader did not contradict the extraction |
+| T1_cmax | reference | skipped |  | 4.146e-05 |  | the transcribed record carries no number for this value |
 | T1_cmax | reference | skipped | 100 | 4.146e-05 |  | unresolved concentration unit (exp 'ng ml⁻¹', sim 'kg/m3') |
 
 <details class="legend">

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The volume of distribution record is rejected because its unit, hours, conflicts with the required dimension of volume.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q34 unit hr ([time]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Broughton1977_m_m" status="rejected" stale="false" population="adult patients" measured-compound="bleomycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Broughton A, Strong JE, Holoye PY, Bedrossian CW. Clinical pharmacology of bleom
 
 ### Reviewer guidance
 
-**The volume of distribution record is rejected because its unit, hours, conflicts with the required dimension of volume.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q34 unit hr ([time]) vs [mass] / [length] ** 3.**
 
-The parameter defined as the volume of distribution is extracted with a value of 32.17 and a unit of hr. This unit represents time, whereas the parameter requires a volume dimension. The record also omits several kinetic parameters, such as elimination rate constants and half-lives, that the second reader identified in the source. Extracted — bleomycin: Css 88 hr, CL 70 ml/min, V 32.2 L.
+A reported unit could not be converted (Css), so that value has no SI equivalent. Extracted — bleomycin: Css 88 hr, CL 70 ml/min, V 32.2 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of css: this record has none, the second reading 1046.3; it also differs on 7 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

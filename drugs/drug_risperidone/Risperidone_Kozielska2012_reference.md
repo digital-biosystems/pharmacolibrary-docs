@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;risperidone&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/&quot;},{&quot;label&quot;:&quot;Kozielska_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risperidone_Kozielska2012_reference&quot;,&quot;label&quot;:&quot;Kozielska_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Kozielska2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Ivaturi_2017_PANSS&quot;,&quot;label&quot;:&quot;Ivaturi_2017 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/pd_Ivaturi_2017_PANSS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Risperidone_Kozielska2012_reference&quot;,&quot;label&quot;:&quot;Kozielska_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Kozielska2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Risperidone_Ivaturi2017_phase_3_estimate&quot;,&quot;label&quot;:&quot;Ivaturi_2017_phase_3_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Ivaturi2017_phase_3_estimate.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risperidone_Ivaturi2017_pooled_sad_mad_estimate&quot;,&quot;label&quot;:&quot;Ivaturi_2017_pooled_sad_mad_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Ivaturi2017_pooled_sad_mad_estimate.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Risperidone_Ivaturi2017_reference&quot;,&quot;label&quot;:&quot;Ivaturi_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/Risperidone_Ivaturi2017_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ivaturi_2017_PANSS&quot;,&quot;label&quot;:&quot;Ivaturi_2017 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_risperidone/pd_Ivaturi_2017_PANSS.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The intercompartmental clearances for risperidone and paliperidone were left at library defaults rather than extracted from the paper.
+> Q12/q21 (hepatic flow, 90 L/h) use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="risperidone" model-id="Risperidone_Kozielska2012_reference" status="needs_review" stale="false" population="rats" measured-compound="risperidone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -65,13 +65,13 @@ Kozielska M, Johnson M, Pilla Reddy V, Vermeulen A, Li C, Grimwood S et al. Phar
 
 ### Reviewer guidance
 
-**The intercompartmental clearances for risperidone and paliperidone were left at library defaults rather than extracted from the paper.**
+**Q12/q21 (hepatic flow, 90 L/h) use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-Although the record lists specific values for total clearance, the intercompartmental clearances between central and peripheral compartments were not extracted from the source. Consequently, standard library values of 90 L/h were substituted for these parameters, which is not acceptable for a model claimed to be derived from this specific study. Additionally, the record was not finalized because the identity of the risperidone clearance parameter was disputed by a second reader. Extracted — risperidone: Fab 0.413, Frel 0.271, kabs 2.9 1/h, tlag 0.17 h, V1 1.28 L/kg, CLnorm 1.62 L/h/kg, V2 0.168 L/kg, Q 0.0891 L/h/kg; paliperidone: kabs 1.31 1/h, tlag 0.167 h, CLfm 0.757 L/h/kg, V1 1.21 L/kg, CL 1.04 L/h/kg, V2 0.281 L/kg, Q 0.245 L/h/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — risperidone: Fab 0.413, Frel 0.271, kabs 2.9 1/h, tlag 0.17 h, V1 1.28 L/kg, CLnorm 1.62 L/h/kg, V2 0.168 L/kg, Q 0.0891 L/h/kg; paliperidone: kabs 1.31 1/h, tlag 0.167 h, CLfm 0.757 L/h/kg, V1 1.21 L/kg, CL 1.04 L/h/kg, V2 0.281 L/kg, Q 0.245 L/h/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[clris].parameter_id`: this record has Q354, the second reading Q22; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -194,7 +194,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 11 scholar param(s) emitted or defaulted | 11 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | parent_metabolite_hepatic → PK_3M_3C* | PK_3M_3C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.788, 0 of 1 reader(s) agree | 0.788 | cross-check disputed by a second reader: verdict disputed, agreement 0.788, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.788 (26 of 33 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.788 | cross-check contradicted by a second reader: verdict disputed; agreement 0.788 (26 of 33 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -210,7 +210,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_risperidone/Risperidone_Kozielska2012_reference/Risperidone_Kozielska2012_reference_modelica.zip" download>Risperidone_Kozielska2012_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_risperidone/Risperidone_Kozielska2012_reference/Risperidone_Kozielska2012_reference_modelica.zip" download>Risperidone_Kozielska2012_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_risperidone/Risperidone_Kozielska2012_reference/Risperidone_Kozielska2012_reference_fmi.zip" download>Risperidone_Kozielska2012_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_3M_3C.fmu" download>PK_3M_3C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_risperidone/Risperidone_Kozielska2012_reference/Risperidone_Kozielska2012_reference_matlab.zip" download>Risperidone_Kozielska2012_reference_matlab.zip</a> <span class="pk-size">(3.8 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>

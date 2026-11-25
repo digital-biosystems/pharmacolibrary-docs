@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Trametinib record rejected because the parent-metabolite model structure was replaced by a one-compartment model, the V2/F volume was missing, and the output did not match the measured analyte.
+> T3_output_variable; t3_param_coverage (+2 more).
 
 <div class="pk-model-meta" hidden drug="trametinib" model-id="Trametinib_Balakirouchenane2020_final_tra_model" status="rejected" stale="false" population="patients with BRAF-mutated metastatic solid tumors" measured-compound="trametinib" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -56,13 +56,13 @@ Balakirouchenane D, Guégan S, Csajka C, Jouinot A, Heidelberger V, Puszkiel A e
 
 ### Reviewer guidance
 
-**Trametinib record rejected because the parent-metabolite model structure was replaced by a one-compartment model, the V2/F volume was missing, and the output did not match the measured analyte.**
+**T3_output_variable; t3_param_coverage (+2 more).**
 
-The model was built as a simple one-compartment system instead of the required structure describing trametinib as a metabolite of dabrafenib. The apparent intercompartmental clearance V2/F was not extracted, leaving the second volume distribution undefined. The output variable corresponded to the central compartment rather than the measured trametinib concentration, and a second reader disagreed with the inclusion of the dabrafenib-to-hydroxy-dabrafenib link. Extracted — trametinib: CL/F 5.83 L/h, V1/F 61.9 L, kabs 0.913 1/h, Q/F 64.9 L/h, V2/F 417 L, tlag 0.709 h.
+Extracted — trametinib: CL/F 5.83 L/h, V1/F 61.9 L, kabs 0.913 1/h, Q/F 64.9 L/h, V2/F 417 L, tlag 0.709 h.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has dabrafenib and trametinib, the second reading trametinib; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -171,7 +171,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.615, 0 of 1 reader(s) agree | 0.615 | cross-check disputed by a second reader: verdict disputed, agreement 0.615, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.615 (8 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.615 | cross-check contradicted by a second reader: verdict disputed; agreement 0.615 (8 of 13 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

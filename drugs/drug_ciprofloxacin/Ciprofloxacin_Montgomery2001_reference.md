@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Bioavailability F was left at library defaults, and covariate effects were not simulated.
+> F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="ciprofloxacin" model-id="Ciprofloxacin_Montgomery2001_reference" status="needs_review" stale="false" population="adult patients with cystic fibrosis" measured-compound="ciprofloxacin" parameterization="mechanistic" topology="1C"></div>
 
@@ -62,13 +62,13 @@ Montgomery MJ, Beringer PM, Aminimanizani A, Louie SG, Shapiro BJ, Jelliffe R et
 
 ### Reviewer guidance
 
-**Bioavailability F was left at library defaults, and covariate effects were not simulated.**
+**F use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+1 more).**
 
-The record lacks an extracted value for F, so a library placeholder was used instead of a paper-specific estimate. Additionally, the covariate scenarios defined in the record were not exercised, so the simulation only reflects the base model structure. Extracted — ciprofloxacin: V 0.29 liters/kg, Vss 1.1 liters/kg, CL 0.34 liters/h/kg, Q 0.89 liters/h/kg, kel 1.86 h Ϫ1, t1/2z 0.16 h, t1/2β 2.9 h, kabs 1 h−1, … (+1).
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — ciprofloxacin: V 0.29 liters/kg, Vss 1.1 liters/kg, CL 0.34 liters/h/kg, Q 0.89 liters/h/kg, kel 1.86 h Ϫ1, t1/2z 0.16 h, t1/2β 2.9 h, kabs 1 h−1, … (+1).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

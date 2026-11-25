@@ -43,7 +43,7 @@ Hao K, Chen Y, Zhao X, Liu X. Pharmacokinetic-pharmacodynamic model of the antih
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,6 +56,8 @@ Hao K, Chen Y, Zhao X, Liu X. Pharmacokinetic-pharmacodynamic model of the antih
 **C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit mg/kg ([mass]) vs [mass] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
 A reported unit could not be converted (Cmax), so that value has no SI equivalent. Extracted — telmisartan: Cmax 1.26 mg/kg, CL 22 L/h, V 500 L, kabs 4.53 /h, tlag 0.25 h.
+
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has telmisartan → hydrochlorothiazide (interconversion), the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>the checker's own wording — not yet put into words by an LLM</sub>
 
@@ -102,6 +104,32 @@ A reported unit could not be converted (Cmax), so that value has no SI equivalen
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.333 (3/9 fields) | 6 |
+
+<details><summary>6 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['telmisartan', 'hydrochlorothiazide', 'interconversion']] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` | 22.04 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 4.53 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[smax]` | 1.26 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[tlag]` | 0.25 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 500.0 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

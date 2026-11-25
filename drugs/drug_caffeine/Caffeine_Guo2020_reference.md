@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Caffeine clearance and volume from Guo abstract were marked null by a second reader, causing a cross-check dispute.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="caffeine" model-id="Caffeine_Guo2020_reference" status="needs_review" stale="false" population="Chinese premature infants with apnea" measured-compound="caffeine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Guo A, Zhu Z, Xue J, Di X, Fan J, Huang L et al. Population pharmacokinetic stud
 
 ### Reviewer guidance
 
-**Caffeine clearance and volume from Guo abstract were marked null by a second reader, causing a cross-check dispute.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so the reported statistics stand in for a fitted model. A second reader disagreed with the extracted clearance of 0.268 L/h and volume of 109 L, marking both as null. Consequently, the cross-check was disputed with 0.333 agreement, and the record was held back for review. Extracted — caffeine: CL 0.268 L/h, V 109 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — caffeine: CL 0.268 L/h, V 109 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has caffeine citrate, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.333 (2 of 6 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check contradicted by a second reader: verdict disputed; agreement 0.333 (2 of 6 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

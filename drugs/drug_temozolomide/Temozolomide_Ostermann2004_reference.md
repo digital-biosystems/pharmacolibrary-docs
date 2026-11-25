@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> kel is a half-life but carries time units instead of rate, and the CSF transfer rate has no extracted value.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="temozolomide" model-id="Temozolomide_Ostermann2004_reference" status="rejected" stale="false" population="malignant glioma patients" measured-compound="temozolomide" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Ostermann S, Csajka C, Buclin T, Leyvraz S, Lejeune F, Decosterd LA et al. Plasm
 
 ### Reviewer guidance
 
-**kel is a half-life but carries time units instead of rate, and the CSF transfer rate has no extracted value.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].**
 
-kel is described as the elimination rate constant yet is assigned 2.1 h, a time dimension that conflicts with a rate constant's reciprocal time. ktr, the first-order plasma-to-CSF transfer rate, is missing a numeric value in this record. Because the summary statistics derive solely from the abstract, these parameter assignments lack the underlying fitted model data to resolve the dimensional mismatch. Extracted — temozolomide: CL/F 10 liter/h, V 30.3 liters, kabs 5.8 h(-1), kel 2.1 h, ktr 7.2 h(-1), k21 0.76 h(-1), AUC 20 plasma, AUC ratio 20 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — temozolomide: CL/F 10 liter/h, V 30.3 liters, kabs 5.8 h(-1), kel 2.1 h, ktr 7.2 h(-1), k21 0.76 h(-1), AUC 20 plasma, AUC ratio 20 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has temozolomide, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

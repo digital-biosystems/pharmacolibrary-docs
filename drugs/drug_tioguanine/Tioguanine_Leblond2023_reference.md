@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because the source paper studies fluvastatin and celecoxib, not tioguanine, which is only a background covariate.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="tioguanine" model-id="Tioguanine_Leblond2023_reference" status="rejected" stale="false" population="" measured-compound="tioguanine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Leblond P, Tresch-Bruneel E, Probst A, Néant N, Solas C, Sterin A et al. Phase 
 
 ### Reviewer guidance
 
-**Record rejected because the source paper studies fluvastatin and celecoxib, not tioguanine, which is only a background covariate.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The source text confirms the paper focuses on fluvastatin and celecoxib, with thioguanine mentioned only as prior therapy. The model builder replaced missing absorption parameters with defaults, violating the requirement for explicit estimates. Extracted — tioguanine: CL/F 1.1 L/h/kg, V/F 6.5 L/kg.
+Extracted — tioguanine: CL/F 1.1 L/h/kg, V/F 6.5 L/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (8 of 8 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

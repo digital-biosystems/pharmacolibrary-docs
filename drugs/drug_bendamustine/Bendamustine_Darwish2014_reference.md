@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Bendamustine Cmax is recorded as 1 h, but Cmax means highest drug concentration; this time unit conflicts with concentration and the record was rejected.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit h ([time]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="bendamustine" model-id="Bendamustine_Darwish2014_reference" status="rejected" stale="false" population="pediatric patients with relapsed/refractory acute leukemia" measured-compound="bendamustine" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Darwish M, Megason G, Bond M, Hellriegel E, Robertson P, Grasela T et al. Popula
 
 ### Reviewer guidance
 
-**Bendamustine Cmax is recorded as 1 h, but Cmax means highest drug concentration; this time unit conflicts with concentration and the record was rejected.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q32 unit h ([time]) vs [mass] / [length] ** 3.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader marked the dose compound and primary analyte unknown and did not agree on several extracted parameter entries, including Cmax. Extracted — bendamustine: Cmax 1 h, AUCt 8.24e+03 ng*h/mL, CL 31.7 L/h, V 19.7 L, kabs 6 h−1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — bendamustine: Cmax 1 h, AUCt 8.24e+03 ng*h/mL, CL 31.7 L/h, V 19.7 L, kabs 6 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has bendamustine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

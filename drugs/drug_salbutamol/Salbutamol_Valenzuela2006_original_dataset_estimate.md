@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The salbutamol model was rejected because the Vmax and Km units are dimensionally inconsistent with their physiological meanings.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mM/h ([length] / [time]) vs [mass] / [time]; Q1 unit mM ([length]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="salbutamol" model-id="Salbutamol_Valenzuela2006_original_dataset_estimate" status="rejected" stale="false" population="rats" measured-compound="salbutamol sulphate" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Valenzuela B, López-Pintor E, Pérez-Ruixo JJ, Nácher A, Martín-Villodre A, C
 
 ### Reviewer guidance
 
-**The salbutamol model was rejected because the Vmax and Km units are dimensionally inconsistent with their physiological meanings.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mM/h ([length] / [time]) vs [mass] / [time]; Q1 unit mM ([length]) vs [mass] / [length] ** 3.**
 
-The maximum metabolic rate (Vmax) has units of mM/h and the Michaelis constant (Km) has units of mM, which conflict with the expected mass and mass per volume dimensions. This dimensional mismatch prevented the parameters from being converted to standard SI units, leaving the record incomplete. Additionally, a second reader disagreed on the presence of an ID 50 parameter and a Km covariate form. Extracted — salbutamol: FR 79.5 %, kabs 0.636 h -1, Vmax 0.726 mM/h, Km 0.54 mM, CL 46.8 L/h, V 196 L.
+A reported unit could not be converted (Vmax, Km and equation variable), so that value has no SI equivalent. Extracted — salbutamol: FR 79.5 %, kabs 0.636 h -1, Vmax 0.726 mM/h, Km 0.54 mM, CL 46.8 L/h, V 196 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of id 50: this record has 7.330, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

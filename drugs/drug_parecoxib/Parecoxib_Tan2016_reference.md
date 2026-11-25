@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Parecoxib clearance lacked a specific value, so a library placeholder was used and the model was held back.
+> No value for parecoxib's clearance; t3_param_coverage (+3 more).
 
 <div class="pk-model-meta" hidden drug="parecoxib" model-id="Parecoxib_Tan2016_reference" status="model_quarantined" stale="false" population="children undergoing tonsillectomy and adenoidectomy" measured-compound="parecoxib" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -51,13 +51,13 @@ Tan L, Taylor E, Hannam JA, Salkeld L, Salman S, Anderson BJ. Pharmacokinetics a
 
 ### Reviewer guidance
 
-**Parecoxib clearance lacked a specific value, so a library placeholder was used and the model was held back.**
+**No value for parecoxib's clearance; t3_param_coverage (+3 more).**
 
-The record lists parecoxib total clearance as 19.1 L·h-1 ·70 kg-1, but this parameter was flagged as defaulted with no explicit estimate. The second reader could not confirm any of the extracted parecoxib parameters, returning null for values including the 19.1 L·h-1 ·70 kg-1 clearance. Consequently, the parent drug’s clearance was not extracted, and the model was quarantined rather than published with an invented number. Extracted — parecoxib: CLnorm 19.1 L·h-1 ·70 kg-1, V1 4.2 L·70 kg-1, Q 6.29 L·h-1 ·70 kg-1, V2 130 L·70 kg-1, Q2 6.02 L·h-1 ·70 kg-1, V3 2.03 L·70 kg-1; valdecoxib: CL 9.53 L·h-1 ·70 kg-1, V 51 L·70 kg-1.
+The model was built, but parecoxib's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — parecoxib: CLnorm 19.1 L·h-1 ·70 kg-1, V1 4.2 L·70 kg-1, Q 6.29 L·h-1 ·70 kg-1, V2 130 L·70 kg-1, Q2 6.02 L·h-1 ·70 kg-1, V3 2.03 L·70 kg-1; valdecoxib: CL 9.53 L·h-1 ·70 kg-1, V 51 L·70 kg-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has parecoxib, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -158,7 +158,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2'] |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.222 (4 of 18 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check contradicted by a second reader: verdict disputed; agreement 0.222 (4 of 18 compared fields agree, 12 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

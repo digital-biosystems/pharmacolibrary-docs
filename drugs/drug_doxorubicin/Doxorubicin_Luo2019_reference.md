@@ -51,7 +51,7 @@ Luo D, Carter KA, Molins EAG, Straubinger NL, Geng J, Shao S et al. Pharmacokine
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has doxorubicin, the second reading LC-Dox-PoP liposomes (doxorubicin); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 

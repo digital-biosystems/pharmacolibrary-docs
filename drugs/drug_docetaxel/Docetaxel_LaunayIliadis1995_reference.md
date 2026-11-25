@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Docetaxel’s clearance (35.6 L/h), steady-state volume (83.21 L), and terminal half-life (7.89 h) were held back because a second reader disputed the abstract-only record.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="docetaxel" model-id="Docetaxel_LaunayIliadis1995_reference" status="needs_review" stale="false" population="patients with solid tumors" measured-compound="docetaxel" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Launay-Iliadis MC, Bruno R, Cosson V, Vergniol JC, Oulid-Aissa D, Marty M et al.
 
 ### Reviewer guidance
 
-**Docetaxel’s clearance (35.6 L/h), steady-state volume (83.21 L), and terminal half-life (7.89 h) were held back because a second reader disputed the abstract-only record.**
+**cross_check_disputed; x1_cross_check.**
 
-Only the abstract was read, so reported summary statistics stood in for a fitted model; the second reader agreed with none of the one reader’s assessment (agreement 0.167) and recorded no values for these three parameters. The model used the steady-state volume of 83.21 L as the distribution volume because no central volume was reported. With clearance of 35.6 L/h, this reproduces AUC and terminal half-life, but not the early distribution phase. Extracted — docetaxel: CL 35.6 l/h, Vss 83.2 L, t1/2γ 7.89 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — docetaxel: CL 35.6 l/h, Vss 83.2 L, t1/2γ 7.89 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has docetaxel, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -141,7 +141,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

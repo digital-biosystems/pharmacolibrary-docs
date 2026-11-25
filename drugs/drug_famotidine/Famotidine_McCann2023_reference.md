@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Famotidine parameters were rejected because the source paper studies posaconazole, not famotidine.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="famotidine" model-id="Famotidine_McCann2023_reference" status="rejected" stale="false" population="" measured-compound="famotidine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ McCann S, Sinha J, Wilson WS, McKinzie CJ, Garner LM, Gonzalez D. Population Pha
 
 ### Reviewer guidance
 
-**Famotidine parameters were rejected because the source paper studies posaconazole, not famotidine.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The record identifies famotidine as the analyte, but the source text states the paper focuses on posaconazole with famotidine as a co-administered drug. Consequently, the extracted clearance (6.5 L/h) and volume of distribution (226.0 L) do not belong to the intended subject molecule. A second reader also disagreed on several missing or divergent parameter values. Extracted — famotidine: CL 6.5 L/h, V 226 L, kabs 0.325 h−1, tlag 2.5 h.
+Extracted — famotidine: CL 6.5 L/h, V 226 L, kabs 0.325 h−1, tlag 2.5 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q312: this record has 42, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.5 (7 of 14 compared fields agree, 7 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

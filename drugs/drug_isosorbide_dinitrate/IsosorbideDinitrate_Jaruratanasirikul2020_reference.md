@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the paper is not about isosorbide dinitrate, leaving its reported clearance of 13.2 L/h unsupported.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="isosorbide dinitrate" model-id="IsosorbideDinitrate_Jaruratanasirikul2020_reference" status="rejected" stale="false" population="" measured-compound="isosorbide_dinitrate" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Jaruratanasirikul S, Vattanavanit V, Wongpoowarak W, Nawakitrangsan M, Samaeng M
 
 ### Reviewer guidance
 
-**The record was rejected because the paper is not about isosorbide dinitrate, leaving its reported clearance of 13.2 L/h unsupported.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-Neither the paper’s title nor its abstract names isosorbide dinitrate. A second reader disputed the clearance value, reporting 110.19 rather than 13.2, and also disagreed about the other reported parameter values: this record gives a volume of distribution of 30.3 L, while the second reader gave no value for it and reported 2.4 for a parameter absent from this record. Extracted — isosorbide dinitrate: CL 13.2 L/h, V 30.3 L.
+Extracted — isosorbide dinitrate: CL 13.2 L/h, V 30.3 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 13.2, the second reading 110.19; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.0, 0 of 1 reader(s) agree | 0 | cross-check disputed by a second reader: verdict disputed, agreement 0.0, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.0 (0 of 3 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0 | cross-check contradicted by a second reader: verdict disputed; agreement 0.0 (0 of 3 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

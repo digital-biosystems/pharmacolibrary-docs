@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Propacetamol's bioavailability, volume of distribution, and absorption lag time lacked values, forcing the use of library placeholders and resulting in model quarantine.
+> No value for propacetamol's bioavailability, volume of distribution and absorption lag time — all 5 extracted parameters describe paracetamol, not propacetamol; t3_param_coverage (+2 more).
 
 <div class="pk-model-meta" hidden drug="propacetamol" model-id="Propacetamol_Prins2008_reference" status="model_quarantined" stale="false" population="infants after craniofacial surgery" measured-compound="paracetamol" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Prins SA, Van Dijk M, Van Leeuwen P, Searle S, Anderson BJ, Tibboel D et al. Pha
 
 ### Reviewer guidance
 
-**Propacetamol's bioavailability, volume of distribution, and absorption lag time lacked values, forcing the use of library placeholders and resulting in model quarantine.**
+**No value for propacetamol's bioavailability, volume of distribution and absorption lag time — all 5 extracted parameters describe paracetamol, not propacetamol; t3_param_coverage (+2 more).**
 
-The record was derived solely from the paper's abstract, causing summary statistics to stand in for a fitted model. All extracted parameters described paracetamol, leaving propacetamol's bioavailability, volume of distribution, and absorption lag time with no explicit values. Consequently, a second reader disputed the volume assignments, noting the central volume of distribution should be 7.9 and the peripheral volume should be 44, rather than the single combined value provided. Extracted — paracetamol: t1/2ka 4.6 h, t1/2z 0.028 h, CL 12 l.h(-1).70 kg(-1), Q 116 l.h(-1).70 kg(-1), V2 7.9 l.70 kg(-1).
+The model was built, but propacetamol's bioavailability, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — paracetamol: t1/2ka 4.6 h, t1/2z 0.028 h, CL 12 l.h(-1).70 kg(-1), Q 116 l.h(-1).70 kg(-1), V2 7.9 l.70 kg(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mixed (propacetamol/paracetamol), the second reading propacetamol; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 3 scholar param(s) emitted or defaulted | 2 covered |  | neither emitted nor in defaulted[]: ['V2'] |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.636, 0 of 1 reader(s) agree | 0.636 | cross-check disputed by a second reader: verdict disputed, agreement 0.636, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.636 (7 of 11 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.636 | cross-check contradicted by a second reader: verdict disputed; agreement 0.636 (7 of 11 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

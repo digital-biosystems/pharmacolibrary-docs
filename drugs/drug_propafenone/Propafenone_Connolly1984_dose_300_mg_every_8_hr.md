@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The one-compartment propafenone model's simulated terminal half-life of 3.71 h contradicts the paper's reported 5.0 h, triggering a hold.
+> The model does not reproduce the paper's terminal half-life (paper 5, model 3.71); x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="propafenone" model-id="Propafenone_Connolly1984_dose_300_mg_every_8_hr" status="needs_review" stale="false" population="patients with ventricular arrhythmias" measured-compound="propafenone" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Connolly S, Lebsack C, Winkle RA, Harrison DC, Kates RE. Propafenone disposition
 
 ### Reviewer guidance
 
-**The one-compartment propafenone model's simulated terminal half-life of 3.71 h contradicts the paper's reported 5.0 h, triggering a hold.**
+**The model does not reproduce the paper's terminal half-life (paper 5, model 3.71); x1_cross_check.**
 
-Using the extracted clearance of 11.2 ml/min/kg and volume of distribution of 3.6 L/kg, the derived half-life deviates from the expected range by ratios as low as 0.221. The second reader also failed to extract the same clearance and volume values, resulting in only 40% cross-check agreement. Extracted — propafenone: CL 11.2 ml/min/kg, V 3.6 L/kg.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — propafenone: CL 11.2 ml/min/kg, V 3.6 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 12: this record has none, the second reading 2.09; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,31 +147,31 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial, agreement 0.4, 0 of 1 reader(s) agree |
-| T1_t_half_terminal | reference | fail | 5 | 3.713 | 0.7426 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 5 | 3.713 | 0.7426 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 10 | 3.713 | 0.3713 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 3 | 3.713 | 1.238 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 4.7 | 3.713 | 0.79 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 16.8 | 3.713 | 0.221 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.3 | 3.713 | 1.614 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 5 | 3.713 | 0.7426 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.4 | 3.713 | 1.547 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 10.3 | 3.713 | 0.3605 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 5.7 | 3.713 | 0.6514 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.9 | 3.713 | 1.954 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 15.3 | 3.713 | 0.2427 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 5.8 | 3.713 | 0.6401 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.9 | 3.713 | 1.28 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.8 | 3.713 | 1.326 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 4.2 | 3.713 | 0.884 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 4.9 | 3.713 | 0.7577 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.3 | 3.713 | 1.614 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.5 | 3.713 | 1.485 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.9 | 3.713 | 1.28 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 6.2 | 3.713 | 0.5988 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 5 | 3.713 | 0.7426 | hr→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 3.6 | 3.713 | 1.031 | hr→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_terminal | reference | fail | 5 | 3.713 | 0.7426 | reported 5.0 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 5 | 3.713 | 0.7426 | reported 5.0 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 10 | 3.713 | 0.3713 | reported 10.0 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 3 | 3.713 | 1.238 | reported 3.0 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 4.7 | 3.713 | 0.79 | reported 4.7 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 16.8 | 3.713 | 0.221 | reported 16.8 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.3 | 3.713 | 1.614 | reported 2.3 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 5 | 3.713 | 0.7426 | reported 5.0 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.4 | 3.713 | 1.547 | reported 2.4 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 10.3 | 3.713 | 0.3605 | reported 10.3 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 5.7 | 3.713 | 0.6514 | reported 5.7 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.9 | 3.713 | 1.954 | reported 1.9 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 15.3 | 3.713 | 0.2427 | reported 15.3 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 5.8 | 3.713 | 0.6401 | reported 5.8 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.9 | 3.713 | 1.28 | reported 2.9 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.8 | 3.713 | 1.326 | reported 2.8 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 4.2 | 3.713 | 0.884 | reported 4.2 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 4.9 | 3.713 | 0.7577 | reported 4.9 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.3 | 3.713 | 1.614 | reported 2.3 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.5 | 3.713 | 1.485 | reported 2.5 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.9 | 3.713 | 1.28 | reported 2.9 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 6.2 | 3.713 | 0.5988 | reported 6.2 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 5 | 3.713 | 0.7426 | reported 5.0 hr→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 3.6 | 3.713 | 1.031 | reported 3.6 hr→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

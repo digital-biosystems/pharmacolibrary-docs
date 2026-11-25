@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Lasmiditan's simulated tmax of 4.3 h differs from the paper's reported 1.5 h, and clearance values conflict with the second reader's data.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="lasmiditan" model-id="Lasmiditan_Tsai2021_lasmiditan_geometric_mean_cv" status="needs_review" stale="false" population="pediatric patients with migraine" measured-compound="lasmiditan" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Tsai M, Nery ESM, Kerr L, Khanna R, Komori M, Dennehy EB et al. Pharmacokinetics
 
 ### Reviewer guidance
 
-**Lasmiditan's simulated tmax of 4.3 h differs from the paper's reported 1.5 h, and clearance values conflict with the second reader's data.**
+**cross_check_disputed; x1_cross_check.**
 
-The one-compartment model's predicted time to peak concentration of 4.3 h deviates from the paper's reported tmax of 1.5 h, indicating a structural mismatch. The second reader disputes the extraction, reporting a clearance of 107 L/h instead of 48.9 L/h and identifying a missing additive covariate. Additional discrepancies exist for AUC and Cmax values, where the second reader found no corresponding data in the source. Extracted — lasmiditan: Cmax 426 ng/mL, AUClast 2.22e+03 ng*h/mL, AUC∞ 2.05e+03 ng*h/mL, CL/F 48.9 L/h, V/F 261 L, kabs 0.295 1/h.
+A reported unit could not be converted (Cmax, AUClast and AUC∞), so that value has no SI equivalent. Extracted — lasmiditan: Cmax 426 ng/mL, AUClast 2.22e+03 ng*h/mL, AUC∞ 2.05e+03 ng*h/mL, CL/F 48.9 L/h, V/F 261 L, kabs 0.295 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aucinf: this record has 2050, the second reading none; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -167,11 +167,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.263, 0 of 1 reader(s) agree | 0.263 | cross-check disputed by a second reader: verdict disputed, agreement 0.263, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | pass | 4 | 3.889 | 0.9721 | h→SI vs simulated h |
-| T1_t_half_beta | reference | pass | 4 | 3.889 | 0.9721 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1.5 | 4.301 | 2.867 | h→SI vs simulated h |
-| T1_tmax | reference | skipped |  | 4.301 |  | non-numeric value |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.263 (5 of 19 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.263 | cross-check contradicted by a second reader: verdict disputed; agreement 0.263 (5 of 19 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | pass | 4 | 3.889 | 0.9721 | reported 4.0 h→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 4 | 3.889 | 0.9721 | reported 4.0 h→SI vs simulated h |
+| T1_tmax | reference | skipped |  | 4.301 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | skipped |  | 4.301 |  | the transcribed record carries no number for this value |
 
 <details class="legend">
 <summary>Validation definitions</summary>

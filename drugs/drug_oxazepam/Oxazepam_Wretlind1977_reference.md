@@ -18,6 +18,8 @@ Wretlind M, Pilbrant A, Sundwall A, Vessman J. Disposition of three benzodiazepi
 
 **Population:** healthy volunteers · condition healthy · age group adult · n = 7.
 
+**Dosed compound ≠ measured compound:** dosed mixed (oxazepam, dipotassium chlorazepate, diazepam), measured oxazepam.
+
 ## Model
 
 **Structure:** general linear; no model was built for this record.  
@@ -117,4 +119,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boxazepam%5D%20Oxazepam_Wretlind1977_reference&body=Drug%3A%20oxazepam%0ARecord%3A%20Oxazepam_Wretlind1977_reference%0APaper%3A%20Wretlind_1977%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_oxazepam/Oxazepam_Wretlind1977_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:56 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 02:01 UTC</sub>

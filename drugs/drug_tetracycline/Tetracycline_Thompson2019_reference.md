@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Tetracycline bioavailability (F) has no reported value and was defaulted, so the record was held back rather than supported by an explicit estimate.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="tetracycline" model-id="Tetracycline_Thompson2019_reference" status="needs_review" stale="false" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Thompson EJ, Wu H, Melloni C, Balevic S, Sullivan JE, Laughon M et al. Populatio
 
 ### Reviewer guidance
 
-**Tetracycline bioavailability (F) has no reported value and was defaulted, so the record was held back rather than supported by an explicit estimate.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-F use library defaults, not estimates from this paper. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The absorption lag time (Tlag) was also defaulted. Readers disagreed on whether 96.8 liters was the volume of distribution for tetracycline. Extracted — tetracycline: CL 3.32 liters/h, V 96.8 liters, kabs 0.414 h Ϫ1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — tetracycline: CL 3.32 liters/h, V 96.8 liters, kabs 0.414 h Ϫ1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q352: this record has none, the second reading 96.8; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.5 (2 of 4 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

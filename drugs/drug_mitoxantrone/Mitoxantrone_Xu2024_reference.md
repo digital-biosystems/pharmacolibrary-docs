@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the link between liposome-encapsulated and free mitoxantrone had no parameter, leaving the encapsulated form an unreachable orphan compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Xu2024_reference" status="rejected" stale="false" population="patients with relapsed/refractory lymphoma or small cell lung cancer" measured-compound="liposome-encapsulated mitoxantrone and free mitoxantrone" parameterization="apparent" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Xu2024_reference" status="rejected" stale="false" population="patients with relapsed/refractory lymphoma or small cell lung cancer" measured-compound="free mitoxantrone" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Xu G, Yang D, Ding H, Zhong L, Zhu J, Mi X et al. Population pharmacokinetics of free and liposome-encapsulated mitoxantrone in patients with relapsed/refractory lymphoma or small cell lung cancer. European journal of clinical pharmacology 80(9):1399–1407 (2024).
@@ -17,15 +17,15 @@ Xu G, Yang D, Ding H, Zhong L, Zhu J, Mi X et al. Population pharmacokinetics of
 
 ## Population and dosing
 
-**Population:** patients with relapsed/refractory lymphoma or small cell lung cancer · condition relapsed/refractory lymphoma or small cell lung cancer · n = 65.
+**Population:** patients with relapsed/refractory lymphoma or small cell lung cancer · condition relapsed/refractory lymphoma or small cell lung cancer · age group adult.
 
-**Dosed compound ≠ measured compound:** dosed pegylated liposomal mitoxantrone, measured liposome-encapsulated mitoxantrone and free mitoxantrone.
+**Dosed compound ≠ measured compound:** dosed pegylated liposomal mitoxantrone, measured free mitoxantrone.
 
 ## Model
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,14 +33,13 @@ Xu G, Yang D, Ding H, Zhong L, Zhu J, Mi X et al. Population pharmacokinetics of
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Rel | CLR | 0.0191 | L/h |
 | V of liposome-encapsulated mitoxantrone | V | 2.32 | L |
-| apparent CL of free mitoxantrone | CLu | 1.66 | L/h |
-| apparent V of free mitoxantrone | V/F | 35.8 | L |
+| The apparent CL of free mitoxantrone | CL | 1.66 | L/h |
+| The apparent V of free mitoxantrone in patients with relapsed/refractory lymphoma | V/F | 35.8 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.083). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.3), qwen3.8-27b (not confirmed, agreement 0.083). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,22 +49,21 @@ Xu G, Yang D, Ding H, Zhong L, Zhu J, Mi X et al. Population pharmacokinetics of
 
 ### Reviewer guidance
 
-**The model was rejected because the link between liposome-encapsulated and free mitoxantrone had no parameter, leaving the encapsulated form an unreachable orphan compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The structure defines an interconversion between the two compounds, yet the link parameter is recorded as none with an unknown kind. Consequently, the liposome-encapsulated mitoxantrone compartment has no path from the dose, making it an orphan structure. This structural flaw was identified despite the record being derived solely from the paper's abstract. Extracted — liposome-encapsulated mitoxantrone and free mitoxantrone: CLR 0.0191 L/h, V 2.32 L, CLu 1.66 L/h, V/F 35.8 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is mitoxantrone's own; they describe free mitoxantrone. Extracted — free mitoxantrone: V 2.32 L, CL 1.66 L/h, V/F 35.8 L.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has pegylated liposomal mitoxantrone, the second reading mitoxantrone; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Rel | `Q26` · CLR | 0.0191 | L/h | 5.306e-09 | m3/s | l/h | llm (0.6) | Xu_2024:abstract |
 | V of liposome-encapsulated mitoxantrone | `Q61` · V | 2.32 | L | 0.00232 | m3 | l | llm (0.6) | Xu_2024:abstract |
-| apparent CL of free mitoxantrone | `Q24` · CLu | 1.66 | L/h | 4.611e-07 | m3/s | l/h | llm_corrected (0.6) | Xu_2024:abstract |
-| apparent V of free mitoxantrone | `Q76` · V/F | 35.8 | L | 0.0358 | m3 | l | llm (0.6) | Xu_2024:abstract, Xu_2024:abstract |
+| The apparent CL of free mitoxantrone | `Q22` · CL | 1.66 | L/h | 4.611e-07 | m3/s | l/h | llm_confirmed (0.6) | Xu_2024:abstract |
+| The apparent V of free mitoxantrone in patients with relapsed/refractory lymphoma | `Q76` · V/F | 35.8 | L | 0.0358 | m3 | l | llm (0.6) | Xu_2024:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,31 +73,39 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=liposome-encapsulated mitoxantrone and free mitoxantrone
+- dropped unlinked row (NIL): 'The release (Rel) of liposome-encapsulated mitoxantrone to free mitoxantrone' — extend the ontology if this is a real PK parameter (source ['Xu_2024:abstract'])
+- covariate category for V/F from footnote/prose kept as documentation only (['Xu_2024:abstract'])
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=free mitoxantrone
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at "Needs review" — not promoted
-- molar mass: no plausible PubChem entry for 'liposome-encapsulated mitoxantrone and free mitoxantrone' ('liposome-encapsulated mitoxantrone and free mitoxantrone') — left in mass units
-- molar mass: none found for 'liposome-encapsulated mitoxantrone and free mitoxantrone' — its concentrations stay mass-only
+- molar mass: none of 1 PubChem candidate(s) is 'free mitoxantrone' (LLM) — left in mass units
+- molar mass: none found for 'free mitoxantrone' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Xu_2024_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 | `qwen3.8-27b` | not confirmed | 0.083 (1/12 fields) | 11 |
 
-<details><summary>11 field discrepancies</summary>
+<details><summary>18 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[cl]` |  | 1.66 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rel]` |  | 0.0191 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the apparent cl of free mitoxantrone]` | 1.66 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the apparent v of free mitoxantrone in patients with relapsed/refractory lymphoma]` | 35.8 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v of liposome-encapsulated mitoxantrone]` | 2.32 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v]` |  | 2.32 | only_one_extracted |
 | `qwen3.8-27b` | `model.links` | [['liposome-encapsulated mitoxantrone', 'free mitoxantrone', 'interconversion']] | [] | mismatch |
 | `qwen3.8-27b` | `parameters[apparent cl of free mitoxantrone]` | 1.66 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[apparent cl of free mitoxantrone]` |  | 1.66 | only_one_extracted |
@@ -124,18 +130,17 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q24 | pass | [length] ** 3 / [time] |  | ['Xu_2024:abstract'] |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Xu_2024:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Xu_2024:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Xu_2024:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Xu_2024:abstract', 'Xu_2024:abstract'] |
+| C5_dimension_Q76 | pass | [length] ** 3 |  | ['Xu_2024:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
-| C9_phys_window_Q24 | pass | clearance within physiological range | 1.66 L/h | ['Xu_2024:abstract'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['Rel'] |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.66 L/h | ['Xu_2024:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 2.32 L | ['Xu_2024:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 35.8 L | ['Xu_2024:abstract', 'Xu_2024:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 35.8 L | ['Xu_2024:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -159,4 +164,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitoxantrone%5D%20Mitoxantrone_Xu2024_reference&body=Drug%3A%20mitoxantrone%0ARecord%3A%20Mitoxantrone_Xu2024_reference%0APaper%3A%20Xu_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitoxantrone/Mitoxantrone_Xu2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:31 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:04 UTC</sub>

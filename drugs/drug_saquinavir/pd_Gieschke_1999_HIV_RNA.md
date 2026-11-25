@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;saquinavir&quot;,&quot;href&quot;:&quot;drugs/drug_saquinavir/&quot;},{&quot;label&quot;:&quot;Gieschke_1999 \u00b7 PD plasma HIV RNA level&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;saquinavir&quot;,&quot;href&quot;:&quot;drugs/drug_saquinavir/&quot;},{&quot;label&quot;:&quot;Gieschke_1999 \u00b7 PD plasma HIV RNA&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Saquinavir_Dickinson2009_reference&quot;,&quot;label&quot;:&quot;Dickinson_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_saquinavir/Saquinavir_Dickinson2009_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Saquinavir_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_saquinavir/Saquinavir_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Gieschke_1999_HIV_RNA&quot;,&quot;label&quot;:&quot;Gieschke_1999 \u00b7 HIV RNA&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_saquinavir/pd_Gieschke_1999_HIV_RNA.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# plasma HIV RNA level — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+# plasma HIV RNA — PD  <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.667). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -14,7 +14,7 @@
 
 ## Record summary
 
-**As extracted:** Saquinavir (concentrations from the PK model of Dickinson_2008) drives plasma HIV RNA level (in log10 copies/ml): direct Emax (saturable) effect.
+**As extracted:** Saquinavir Cmin (the dose) drives plasma HIV RNA (in log10 copies/ml): direct Emax (saturable) effect.
 
 **Model:** Model and browser simulation available in **Models** and **Simulation**.
 
@@ -24,7 +24,7 @@
 
 - **paper:** `Gieschke_1999`
 - **model family:** `emax`
-- **driver:** `cited_pk`
+- **driver:** `dose_only`
 - **tier:** descriptive
 - **effect:** inhibition/unknown
 
@@ -35,8 +35,8 @@ Gieschke R et al., Relationships between exposure to saqui…, Clinical pharmaco
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | maximum reduction in viral load | `Q323` ·  | 1.94 | log10 copies/ml | direction | Gieschke_1999:pdv3 |
-| PD (effect) | half-maximal antiviral response concentration | `Q321` ·  | 50 | micrograms/L | llm | Gieschke_1999:pdv3 |
+| PD (effect) | maximum reduction in viral load | `Q323` ·  | 1.94 | log10 copies/ml | llm | Gieschke_1999:pdv3 |
+| PD (effect) | half-maximal antiviral response | `Q321` ·  | 50 | micrograms/L | llm | Gieschke_1999:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -81,16 +81,17 @@ Advisory:
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.833 (5/6 fields) | 1 |
+| `gpt-oss-120b` | not confirmed | 0.667 (4/6 fields) | 2 |
 
-<details><summary>1 field discrepancy</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `driver_compound` | saquinavir Cmin | saquinavir | mismatch |
 | `gpt-oss-120b` | `effect_form` | unknown | additive | mismatch |
 
 </details>
@@ -108,10 +109,10 @@ Primary extraction: `ollama:glm-5.3-flash`; retained regardless of cross-check v
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_saquinavir/Saquinavir_Gieschke1999_PD_hiv_rna/Saquinavir_Gieschke1999_PD_hiv_rna_modelica.zip" download>Saquinavir_Gieschke1999_PD_hiv_rna_modelica.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_saquinavir/Saquinavir_Gieschke1999_PD_hiv_rna/Saquinavir_Gieschke1999_PD_hiv_rna_fmi.zip" download>Saquinavir_Gieschke1999_PD_hiv_rna_fmi.zip</a> <span class="pk-size">(4.6 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_saquinavir/Saquinavir_Gieschke1999_PD_hiv_rna/Saquinavir_Gieschke1999_PD_hiv_rna_matlab.zip" download>Saquinavir_Gieschke1999_PD_hiv_rna_matlab.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_saquinavir/Saquinavir_Gieschke1999_PD_hiv_rna/Saquinavir_Gieschke1999_PD_hiv_rna_sbml.zip" download>Saquinavir_Gieschke1999_PD_hiv_rna_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_saquinavir/Saquinavir_Gieschke1999_PD_hiv_rna/Saquinavir_Gieschke1999_PD_hiv_rna_sbml.zip" download>Saquinavir_Gieschke1999_PD_hiv_rna_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_saquinavir/Saquinavir_Gieschke1999_PD_hiv_rna/Saquinavir_Gieschke1999_PD_hiv_rna_cellml.zip" download>Saquinavir_Gieschke1999_PD_hiv_rna_cellml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>

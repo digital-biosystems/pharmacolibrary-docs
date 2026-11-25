@@ -34,7 +34,7 @@ Belimumab is a monoclonal antibody that works as an immunosuppressant, treating 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Vaskeikina_2026_FVC](drugs/drug_belimumab/pd_Vaskeikina_2026_FVC.md) | forced vital capacity ← belimumab · direct Emax (saturable) effect | — | Vaskeikina M et al., Systematic Review and Model-Based Meta-…, Pharmaceutics (2026) | [10.3390/pharmaceutics18020250](https://doi.org/10.3390/pharmaceutics18020250) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Wu_2025_SRI](drugs/drug_belimumab/pd_Wu_2025_SRI.md) | SLE Responder Index (SRI) response ← belimumab · direct Emax (saturable) effect | — | Wu J et al., Inter-regional pharmacokinetics and exp…, British journal of clinical… (2025) | [10.1111/bcp.16263](https://doi.org/10.1111/bcp.16263) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Wu_2025_SRI](drugs/drug_belimumab/pd_Wu_2025_SRI.md) | SLE Responder Index (SRI) response ← belimumab · direct Emax (saturable) effect | — | Wu J et al., Inter-regional pharmacokinetics and exp…, British journal of clinical… (2025) | [10.1111/bcp.16263](https://doi.org/10.1111/bcp.16263) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,7 +48,7 @@ Belimumab is a monoclonal antibody that works as an immunosuppressant, treating 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 23:31 | 2:05 | 2/3/0 | 1/1/0 | 0/0/0 | 204,064/8,605 | einfracz / qwen3.8-27b | 10 | 0/10 | 10/0 | 0 |
+| 2026-10-06 23:31 | 2:05 | 2/3/0 | 2/0/0 | 0/0/0 | 204,064/8,605 | einfracz / qwen3.8-27b | 10 | 0/10 | 10/0 | 0 |
 
 ## Coverage
 

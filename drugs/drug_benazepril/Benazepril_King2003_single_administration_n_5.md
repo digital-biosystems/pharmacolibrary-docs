@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cat</span>
 
-> Benazeprilat’s kel of 0.0001 h was associated with an implausible clearance/volume magnitude, and its time unit conflicts with its rate-constant meaning.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time]; Q32 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q49 unit h ([time]) vs 1 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="benazepril" model-id="Benazepril_King2003_single_administration_n_5" status="rejected" stale="false" population="cats" measured-compound="benazeprilat" parameterization="apparent" topology="1C"></div>
 
@@ -57,13 +57,13 @@ King JN, Maurer M, Toutain PL. Pharmacokinetic/pharmacodynamic modelling of the 
 
 ### Reviewer guidance
 
-**Benazeprilat’s kel of 0.0001 h was associated with an implausible clearance/volume magnitude, and its time unit conflicts with its rate-constant meaning.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time]; Q32 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; Q49 unit h ([time]) vs 1 / [time]; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record defines kel as a terminal elimination rate constant but reports 0.0001 h; likewise, kabs is defined as an absorption rate constant but has 0.62 h. Cmax is defined as the highest observed concentration, but its value of 25.1 nmol/L conflicts with the dimensional finding expecting mass per volume. Readers disagreed on whether kabs was extracted as 0.62 or absent, and a reported unit could not be converted to SI, leaving that parameter without an SI value. Extracted — benazeprilat: V/F 0.0005 L/kg, kel 0.0001 h, Bmax 104 ng/mL, Cmax 25.1 nmol/L, KD 0.0019 ng/mL, Fab 10.4 n ¼ 5, kabs 0.62 h, AUC∞ 434 n ¼ 5.
+A reported unit could not be converted (kel, Bmax, Cmax and KD), so that value has no SI equivalent. None of the extracted parameters is benazepril's own; they describe benazeprilat. Extracted — benazeprilat: V/F 0.0005 L/kg, kel 0.0001 h, Bmax 104 ng/mL, Cmax 25.1 nmol/L, KD 0.0019 ng/mL, Fab 10.4 n ¼ 5, kabs 0.62 h, AUC∞ 434 n ¼ 5.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of t 1/2 k a: this record has none, the second reading 0.62; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

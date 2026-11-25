@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">other animal</span>
 
-> No explicit values were extracted for doxorubicin clearance or volume of distribution, so library placeholders were used and the model was quarantined.
+> No value for doxorubicin's clearance and volume of distribution; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Harashima1999_anatomical_and_physiological_param" status="model_quarantined" stale="false" population="rats with tumors" measured-compound="free doxorubicin" parameterization="mechanistic" topology="1C"></div>
 
@@ -57,13 +57,13 @@ Harashima H, Tsuchihashi M, Iida S, Doi H, Kiwada H. Pharmacokinetic/pharmacodyn
 
 ### Reviewer guidance
 
-**No explicit values were extracted for doxorubicin clearance or volume of distribution, so library placeholders were used and the model was quarantined.**
+**No value for doxorubicin's clearance and volume of distribution; t6_deviations.**
 
-The record contains specific values for volume (515 ml/250 g) and rate constants, but clearance and volume of distribution parameters were not assigned explicit estimates. Consequently, generic placeholders were substituted for these primary parameters, rendering the model unfit for publication. Additionally, a second reader disputed the identification of the dose compound as liposomal doxorubicin and the absence of a link to free doxorubicin. Extracted — doxorubicin: V 515 ml/250 g, k12 5.13 h^-1, k21 0.927 h^-1, kel 1.56 h^-1, Fab 0.2, k13 0.961 h-1, k31 0.72 h-1.
+The model was built, but doxorubicin's clearance and volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — doxorubicin: V 515 ml/250 g, k12 5.13 h^-1, k21 0.927 h^-1, kel 1.56 h^-1, Fab 0.2, k13 0.961 h-1, k31 0.72 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has liposomal doxorubicin, the second reading doxorubicin; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

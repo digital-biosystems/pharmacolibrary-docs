@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the paper concerns another drug, despite listing ampicillin total clearance as 7.65 L/h.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Onita2026_reference" status="rejected" stale="false" population="" measured-compound="ampicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Onita T, Ikawa K. Cerebrospinal Pharmacokinetic and Pharmacodynamic Evaluation o
 
 ### Reviewer guidance
 
-**The record was rejected because the paper concerns another drug, despite listing ampicillin total clearance as 7.65 L/h.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The record lists ampicillin clearance as 7.65 L/h and central and peripheral compartment volumes as 4.75 L and 4.88 L, respectively, with intercompartmental clearance of 3.03 L/h. Neither the paper title nor abstract names ampicillin, so the relevance screen rejected the paper as concerning another drug. The second reader supplied no value corresponding to the listed clearance of 7.65 or central compartment volume of 4.75. Extracted — ampicillin: CL 7.65 L/h, V1 4.75 L, V2 4.88 L, Q 3.03 L/h.
+Extracted — ampicillin: CL 7.65 L/h, V1 4.75 L, V2 4.88 L, Q 3.03 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 7.65, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.5 (2 of 4 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

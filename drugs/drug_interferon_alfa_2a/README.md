@@ -21,8 +21,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Jeon_2013_neopterin](drugs/drug_interferon_alfa_2a/pd_Jeon_2013_neopterin.md) | neopterin ← interferon_alfa_2a · direct sigmoid Emax (Hill) effect | — | Jeon S et al., Saturable human neopterin response to i…, Journal of translational me… (2013) | [10.1186/1479-5876-11-240](https://doi.org/10.1186/1479-5876-11-240) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Adiwijaya_2012_HCV_RNA](drugs/drug_interferon_alfa_2a/pd_Adiwijaya_2012_HCV_RNA.md) | HCV RNA ← peginterferon alfa-2a · disease-progression model | — | Adiwijaya BS et al., A viral dynamic model for treatment reg…, PLoS computational biology (2012) | [10.1371/journal.pcbi.1002339](https://doi.org/10.1371/journal.pcbi.1002339) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Jeon_2013_neopterin](drugs/drug_interferon_alfa_2a/pd_Jeon_2013_neopterin.md) | neopterin ← interferon_alfa_2a · direct sigmoid Emax (Hill) effect | — | Jeon S et al., Saturable human neopterin response to i…, Journal of translational me… (2013) | [10.1186/1479-5876-11-240](https://doi.org/10.1186/1479-5876-11-240) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 22:55 | 15:27 | 0/0/0 | 1/1/0 | 0/0/0 | 385,294/15,757 | einfracz / qwen3.8-27b | 22 | 2/18 | 22/0 | 0 |
+| 2026-10-06 22:55 | 15:27 | 0/0/0 | 0/2/0 | 0/0/0 | 385,294/15,757 | einfracz / qwen3.8-27b | 22 | 2/18 | 22/0 | 0 |
 
 ## Coverage
 

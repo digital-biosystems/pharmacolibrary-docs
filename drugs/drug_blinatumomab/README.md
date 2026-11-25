@@ -39,18 +39,10 @@ Blinatumomab is a bi-specific T-cell engager antibody used to treat relapsed or 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Flowers_2023_trimer_formation](drugs/drug_blinatumomab/pd_Flowers_2023_trimer_formation.md) | trimer formation ← blinatumomab · stimulation effect | — | Flowers D et al., A next generation mathematical model fo…, Journal of pharmacokinetics… (2023) | [10.1007/s10928-023-09846-y](https://doi.org/10.1007/s10928-023-09846-y) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Jiang_2020_B_cell_depletion](drugs/drug_blinatumomab/pd_Jiang_2020_B_cell_depletion.md) | B cell depletion ← blinatumomab · model not identified | — | Jiang X et al., Development of a minimal physiologicall…, European journal of pharmac… (2020) | [10.1016/j.ejps.2020.105260](https://doi.org/10.1016/j.ejps.2020.105260) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Jiang_2020_IL_6](drugs/drug_blinatumomab/pd_Jiang_2020_IL_6.md) | interleukin 6 ← blinatumomab · model not identified | — | Jiang X et al., Development of a minimal physiologicall…, European journal of pharmac… (2020) | [10.1016/j.ejps.2020.105260](https://doi.org/10.1016/j.ejps.2020.105260) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhu_2018_CRS](drugs/drug_blinatumomab/pd_Zhu_2018_CRS.md) | cytokine release syndrome ← blinatumomab · model not identified | — | Zhu M et al., Blinatumomab Pharmacodynamics and Expos…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1006](https://doi.org/10.1002/jcph.1006) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhu_2018_CR_CRh](drugs/drug_blinatumomab/pd_Zhu_2018_CR_CRh.md) | complete remission or CR with partial hematologic recovery ← blinatumomab · model not identified | — | Zhu M et al., Blinatumomab Pharmacodynamics and Expos…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1006](https://doi.org/10.1002/jcph.1006) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hijazi_2018_SPD](drugs/drug_blinatumomab/pd_Hijazi_2018_SPD.md) | fold-change in SPD from screening to treatment end ← blinatumomab · direct sigmoid Emax (Hill) effect | model (no simulator) | Hijazi Y et al., Pharmacokinetic and Pharmacodynamic Rel…, Current clinical pharmacolo… (2018) | [10.2174/1574884713666180518102514](https://doi.org/10.2174/1574884713666180518102514) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Hijazi_2018_kdep](drugs/drug_blinatumomab/pd_Hijazi_2018_kdep.md) | B-cell–specific depletion rate ← blinatumomab · direct Emax (saturable) effect | model (no simulator) | Hijazi Y et al., Pharmacokinetic and Pharmacodynamic Rel…, Current clinical pharmacolo… (2018) | [10.2174/1574884713666180518102514](https://doi.org/10.2174/1574884713666180518102514) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Kuchimanchi_2019_CR](drugs/drug_blinatumomab/pd_Kuchimanchi_2019_CR.md) | Complete remission ← blinatumomab · categorical (graded) response model | — | Kuchimanchi M et al., Exposure-response analysis of blinatumo…, British journal of clinical… (2019) | [10.1111/bcp.13864](https://doi.org/10.1111/bcp.13864) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Kuchimanchi_2019_CRS](drugs/drug_blinatumomab/pd_Kuchimanchi_2019_CRS.md) | Cytokine release syndrome ← blinatumomab · categorical (graded) response model | — | Kuchimanchi M et al., Exposure-response analysis of blinatumo…, British journal of clinical… (2019) | [10.1111/bcp.13864](https://doi.org/10.1111/bcp.13864) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Kuchimanchi_2019_NEs](drugs/drug_blinatumomab/pd_Kuchimanchi_2019_NEs.md) | Neurological events ← blinatumomab · categorical (graded) response model | — | Kuchimanchi M et al., Exposure-response analysis of blinatumo…, British journal of clinical… (2019) | [10.1111/bcp.13864](https://doi.org/10.1111/bcp.13864) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Kuchimanchi_2019_OS](drugs/drug_blinatumomab/pd_Kuchimanchi_2019_OS.md) | Duration of overall survival ← blinatumomab · time-to-event model | — | Kuchimanchi M et al., Exposure-response analysis of blinatumo…, British journal of clinical… (2019) | [10.1111/bcp.13864](https://doi.org/10.1111/bcp.13864) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Zhu_2018_NEs](drugs/drug_blinatumomab/pd_Zhu_2018_NEs.md) | time to NEs ← blinatumomab · time-to-event model | — | Zhu M et al., Blinatumomab Pharmacodynamics and Expos…, Journal of clinical pharmac… (2018) | [10.1002/jcph.1006](https://doi.org/10.1002/jcph.1006) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Kuchimanchi_2019_CR](drugs/drug_blinatumomab/pd_Kuchimanchi_2019_CR.md) | complete remission ← blinatumomab · categorical (graded) response model | — | Kuchimanchi M et al., Exposure-response analysis of blinatumo…, British journal of clinical… (2019) | [10.1111/bcp.13864](https://doi.org/10.1111/bcp.13864) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Kuchimanchi_2019_OS](drugs/drug_blinatumomab/pd_Kuchimanchi_2019_OS.md) | overall survival ← blinatumomab · time-to-event model | — | Kuchimanchi M et al., Exposure-response analysis of blinatumo…, British journal of clinical… (2019) | [10.1111/bcp.13864](https://doi.org/10.1111/bcp.13864) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -64,38 +56,34 @@ Blinatumomab is a bi-specific T-cell engager antibody used to treat relapsed or 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 10:32 | 9:32 | 2/2/0 | 12/0/0 | 0/0/0 | 220,424/40,994 | openai / gpt-6-luna | 5 | 1/4 | 4/1 | 0 |
+| 2026-11-23 17:14 | 0:03 | 2/2/0 | 4/0/0 | 0/0/0 | 4,029/158 | einfracz / qwen3.8-27b | 5 | 1/4 | 4/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
-- **screened:** 3  ·  **relevant:** 3
+- **screened:** 3  ·  **relevant:** 2
 - **records:** 4  ·  extracted 1  ·  needs review 1  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Jiang_2020.pdf` | Jiang X et al., Development of a minimal physiologicall…, European journal of pharmac… (2020) | popPK | 9 | [10.1016/j.ejps.2020.105260](https://doi.org/10.1016/j.ejps.2020.105260) | [32058058](https://pubmed.ncbi.nlm.nih.gov/32058058) | The human mPBPK/PD model characterizes blinatumomab PK, but no numeric disposition parameter values appear in the provided evidence. |
-
-<sub>queue written 2026-10-07 10:24 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Flowers_2023 | irrelevant | 0 | 0 | This is an in vitro binding and dose-prediction model, with no quantitative blinatumomab disposition parameters reported. |
-| popPK | Jiang_2020 | relevant | 9 | 1 | The human mPBPK/PD model characterizes blinatumomab PK, but no numeric disposition parameter values appear in the provided evidence. |
+| popPK | Flowers_2023 | irrelevant | 2 | 0 | The paper describes an in vitro mathematical model for trimer formation and dose prediction, not a study reporting quantitative pharmacokinetic disposition parameters (CL, V, half-life) for blinatumomab. |
+| PGx | Flowers_2023 | not_relevant | 0 | 0 | The paper discusses mathematical modeling of T-cell engager mechanisms and dose prediction but does not report any gene variants or pharmacogenomic effects on PK/PD parameters. |
+| popPK | Jiang_2020 | relevant | 8 | 2 | The paper describes a PBPK/PD model for blinatumomab PK in humans, but specific numeric parameter values (CL, V, etc.) are not explicitly listed in the provided abstract evidence. |
+| PGx | Jiang_2020 | not_relevant | 0 | 0 | The paper describes a PBPK/PD model for blinatumomab but does not investigate the impact of gene variants or genotypes on PK or PD parameters. |
+| popPK | Kuchimanchi_2019 | relevant | 4 | 4 | The study is an exposure-response analysis (not a primary PK modeling study) but cites specific mean PK parameters (CL 3.11 L/h, V 4.35 L, t1/2 2.10 h) in the introduction. |
+| PGx | Kuchimanchi_2019 | not_relevant | 0 | 0 | The paper performs a general population exposure-response analysis for blinatumomab, correlating steady-state concentrations with efficacy and safety, but does not investigate the impact of any gene variants or genotypes on these parameters. |
 | popPK | Roskopf_2014 | irrelevant | 0 | 0 | Blinatumomab is only a comparator; the half-life mentioned is background information about triplebodies, not blinatumomab PK. |
-| popPK | Zhu_2016 | relevant | 10 | 2 | A human population-PK model is reported, but the numeric CL and V estimates are only referenced in a table not provided. |
-| popPK | Zhu_2018 | irrelevant | 2 | 0 | The human PK study reports Css but no quantitative disposition parameters. |
+| popPK | Zhu_2016 | relevant | 10 | 0 | The paper describes a population PK model for blinatumomab, but the specific numeric parameter estimates are stated to be in Table 1, which is not included in the provided evidence. |
+| PGx | Zhu_2016 | not_relevant | 0 | 0 | The paper analyzes population PK parameters (CL, V) and demographic/clinical covariates (e.g., CrCL, age) but does not investigate gene variants or genotypes. |
+| popPK | Zhu_2018 | irrelevant | 3 | 1 | The study assesses pharmacokinetics noncompartmentally and focuses on exposure-response relationships (Css) rather than reporting quantitative disposition parameters like clearance or volume of distribution. |
+| PGx | Zhu_2018 | not_relevant | 0 | 0 | The paper reports PK/PD and exposure-response relationships but does not investigate or report the impact of any gene variants or genotypes (pharmacogenomics). |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bblinatumomab%5D&body=Drug%3A%20blinatumomab%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_blinatumomab/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 10:24 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 10:59 UTC</sub>

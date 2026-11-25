@@ -16,7 +16,7 @@ Lewandowski TA. Pharmacokinetic modeling of carisoprodol and meprobamate disposi
 
 ## Population and dosing
 
-**Population:** adults · age group adult.
+**Population:** adults · condition muscle relaxation · age group adult.
 
 **Dosed compound ≠ measured compound:** dosed carisoprodol, measured meprobamate.
 
@@ -34,7 +34,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.75). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,41 +48,36 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has carisoprodol, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has meprobamate, the second reading carisoprodol. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- covariate category for V from footnote/prose kept as documentation only (['Lewandowski_2017:abstract', 'Lewandowski_2017:abstract'])
-- covariate category for Vnorm from footnote/prose kept as documentation only (['Lewandowski_2017:abstract', 'Lewandowski_2017:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=meprobamate
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
-- template fit: none — noncompartmental model — not a compartmental parent–metabolite model
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=noncompartmental; 2/2 row label(s) assigned, 0 linked by role; re-tagged meprobamate→parent ×2
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Lewandowski_2017_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Lewandowski_2017_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
+| `gpt-oss-120b` | not confirmed | 0.75 (3/4 fields) | 1 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>1 field discrepancy</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `screen.dose_compound` | carisoprodol | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | meprobamate | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | meprobamate | carisoprodol | mismatch |
 
 </details>
 
@@ -122,4 +117,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmeprobamate%5D%20Meprobamate_Lewandowski2017_reference&body=Drug%3A%20meprobamate%0ARecord%3A%20Meprobamate_Lewandowski2017_reference%0APaper%3A%20Lewandowski_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_meprobamate/Meprobamate_Lewandowski2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:34 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:59 UTC</sub>

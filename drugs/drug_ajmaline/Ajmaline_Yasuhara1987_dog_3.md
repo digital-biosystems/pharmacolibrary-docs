@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> The elimination rate constant was recorded in milliliters per minute per kilogram instead of reciprocal minutes.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min-1 (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="ajmaline" model-id="Ajmaline_Yasuhara1987_dog_3" status="rejected" stale="false" population="healthy beagle dogs" measured-compound="ajmaline" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Yasuhara M, Hashimoto Y, Okumura K, Hori R, Sakurai T, Kawai C. Kinetics of ajma
 
 ### Reviewer guidance
 
-**The elimination rate constant was recorded in milliliters per minute per kilogram instead of reciprocal minutes.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min-1 (1 / [time]) vs 1 / [time].**
 
-The record lists the elimination rate constant with a value of 0.0389 and units of ml/min/kg. This unit represents a mass-normalized volumetric flow rate, conflicting with the reciprocal time dimension required for a first-order rate constant. Extracted — ajmaline: V 14 L/kg, λ1 0.183 min-1, k21 0.444 min-1, kel 0.0389 min-1, CL 2.09 ml/min/kg.
+A reported unit could not be converted (λ1), so that value has no SI equivalent. Extracted — ajmaline: V 14 L/kg, λ1 0.183 min-1, k21 0.444 min-1, kel 0.0389 min-1, CL 2.09 ml/min/kg.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

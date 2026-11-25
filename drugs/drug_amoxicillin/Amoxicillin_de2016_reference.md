@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Vmax value 1220 mg/h was rejected because its unit was not recognized as mass per time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit mg ([mass]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_de2016_reference" status="rejected" stale="false" population="healthy adults" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -56,13 +56,13 @@ de Velde F, de Winter BC, Koch BC, van Gelder T, Mouton JW. Non-linear absorptio
 
 ### Reviewer guidance
 
-**Vmax value 1220 mg/h was rejected because its unit was not recognized as mass per time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit mg ([mass]) vs [mass] / [length] ** 3.**
 
-The maximum metabolic rate parameter for amoxicillin is listed as 1220 mg/h. The review failed because the unit 'mg/h' could not be converted to standard scientific units. Consequently, the model builder could not verify the dimensional consistency of the nonlinear clearance mechanism in this two-compartment model. Extracted — amoxicillin: Fab 0.7, MTT 0.524 h, Vmax 1.22e+03 mg/h, Km 287 mg, V1 27.7 L, CL 21.3 L/h, Q 1.7 L/h, V2 3.02 L, … (+2).
+A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — amoxicillin: Fab 0.7, MTT 0.524 h, Vmax 1.22e+03 mg/h, Km 287 mg, V1 27.7 L, CL 21.3 L/h, Q 1.7 L/h, V2 3.02 L, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[bio].parameter_id`: this record has Q40, the second reading Q87. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

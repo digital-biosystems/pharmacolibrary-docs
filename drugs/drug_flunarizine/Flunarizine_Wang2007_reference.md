@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Flunarizine's elimination rate constant kel is incorrectly dimensioned as L/h instead of 1/h, preventing model fitting.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit L h(-1) ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="flunarizine" model-id="Flunarizine_Wang2007_reference" status="rejected" stale="false" population="rats" measured-compound="flunarizine" parameterization="mechanistic" topology="1C"></div>
 
@@ -38,7 +38,7 @@ Wang YJ, Wang J, Zhang HY, He HB, Tang X. Formulation, preparation and evaluatio
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.875). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,19 +48,19 @@ Wang YJ, Wang J, Zhang HY, He HB, Tang X. Formulation, preparation and evaluatio
 
 ### Reviewer guidance
 
-**Flunarizine's elimination rate constant kel is incorrectly dimensioned as L/h instead of 1/h, preventing model fitting.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit L h(-1) ([length] ** 3 / [time]) vs 1 / [time].**
 
-The record reports kel with a value of 0.16 in units of L h(-1), which is a volume flow rate rather than a rate constant. This dimensional error invalidates the single-compartment structural model parameters. Additionally, the record relied solely on abstract statistics for flunarizine, lacking full fitted model data. Extracted — flunarizine: AUC 6.13 mug.h mL(-1), t1/2z 5.32 h, kel 0.16 L h(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — flunarizine: AUC 6.13 mug.h mL(-1), t1/2z 5.32 h, kel 0.16 L h(-1).
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[t].parameter_id`: this record has Q57, the second reading Q60. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| AUC(0-t) | `Q88` · AUC | 6.13 | mug.h mL(-1) |  |  | (h·µg)/ml | exact (1) | Wang_2007:abstract |
+| AUC(0-t) | `Q88` · AUC | 6.13 | mug.h mL(-1) | 22.07 | kg*s/m3 | (h·µg)/ml | exact (1) | Wang_2007:abstract |
 | t(1/2) | `Q57` · t1/2z | 5.32 | h | 1.915e+04 | s | h | llm (0.6) | Wang_2007:abstract |
 | Ke | `Q47` · kel | 0.16 | L h(-1) |  |  | l/h | exact (1) | Wang_2007:abstract |
 
@@ -77,29 +77,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parame
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Wang_2007_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.875 (7/8 fields) | 1 |
+| `gpt-oss-120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[t].parameter_id` | Q57 | Q60 | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -141,4 +132,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bflunarizine%5D%20Flunarizine_Wang2007_reference&body=Drug%3A%20flunarizine%0ARecord%3A%20Flunarizine_Wang2007_reference%0APaper%3A%20Wang_2007%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_flunarizine/Flunarizine_Wang2007_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 04:08 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:54 UTC</sub>

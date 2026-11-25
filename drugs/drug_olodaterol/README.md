@@ -26,16 +26,15 @@ Olodaterol is an ultra-long-acting beta-2 adrenergic agonist used to treat chron
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Borghardt_2016_reference](drugs/drug_olodaterol/Olodaterol_Borghardt2016_reference.md) | — | 1-compartment (no model) | 3 | Borghardt JM et al., Investigating pulmonary and systemic ph…, British journal of clinical… (2016) | [10.1111/bcp.12780](https://doi.org/10.1111/bcp.12780) |
-| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub> | [Borghardt_2016_2_reference](drugs/drug_olodaterol/Olodaterol_Borghardt2016v2_reference.md) | — | 1-compartment (no model) | 3 | Borghardt JM et al., Model-based evaluation of pulmonary pha…, British journal of clinical… (2016) | [10.1111/bcp.12999](https://doi.org/10.1111/bcp.12999) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Borghardt_2016_reference](drugs/drug_olodaterol/Olodaterol_Borghardt2016_reference.md) | — | 1-compartment (no model) | 2 | Borghardt JM et al., Investigating pulmonary and systemic ph…, British journal of clinical… (2016) | [10.1111/bcp.12780](https://doi.org/10.1111/bcp.12780) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub> | [Borghardt_2016_2_reference](drugs/drug_olodaterol/Olodaterol_Borghardt2016v2_reference.md) | — | 1-compartment (no model) | 3 | Borghardt JM et al., Model-based evaluation of pulmonary pha…, British journal of clinical… (2016) | [10.1111/bcp.12999](https://doi.org/10.1111/bcp.12999) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Calzetta_2017_inhibition_of_bronchial_contractility_cholinergic_contractile_tone](drugs/drug_olodaterol/pd_Calzetta_2017_inhibition_of_bronchial_contractility_choliner.md) | inhibition of bronchial contractility (cholinergic contractile tone) ← olodaterol · direct sigmoid Emax (Hill) effect | — | Calzetta L et al., Pharmacological characterization of the…, COPD (2017) | [10.1080/15412555.2017.1344627](https://doi.org/10.1080/15412555.2017.1344627) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Bouyssou_2010_hbeta_2_AR](drugs/drug_olodaterol/pd_Bouyssou_2010_hbeta_2_AR.md) | beta2-adrenoceptor agonist response (cAMP accumulation) ← olodaterol · direct sigmoid Emax (Hill) effect | — | Bouyssou T et al., Pharmacological characterization of olo…, The Journal of pharmacology… (2010) | [10.1124/jpet.110.167007](https://doi.org/10.1124/jpet.110.167007) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Calzetta_2017_inhibition_of_bronchial_contractility_tiotropium_plus_olodaterol_5_5_combination](drugs/drug_olodaterol/pd_Calzetta_2017_inhibition_of_bronchial_contractility_tiotropi.md) | inhibition of bronchial contractility (tiotropium plus olodaterol 5:5 combination) ← tiotropium plus olodaterol (5:5) · direct sigmoid Emax (Hill) effect | — | Calzetta L et al., Pharmacological characterization of the…, COPD (2017) | [10.1080/15412555.2017.1344627](https://doi.org/10.1080/15412555.2017.1344627) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Calzetta_2017_bronchial_contractility](drugs/drug_olodaterol/pd_Calzetta_2017_bronchial_contractility.md) | bronchial contractility ← olodaterol · direct Emax (saturable) effect | — | Calzetta L et al., Pharmacological characterization of the…, COPD (2017) | [10.1080/15412555.2017.1344627](https://doi.org/10.1080/15412555.2017.1344627) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">horse</span> | [Calzetta_2017_bronchial_contractility_2](drugs/drug_olodaterol/pd_Calzetta_2017_bronchial_contractility_2.md) | bronchial contractility ← tiotropium/olodaterol mixture · direct Emax (saturable) effect | — | Calzetta L et al., Pharmacological characterization of the…, COPD (2017) | [10.1080/15412555.2017.1344627](https://doi.org/10.1080/15412555.2017.1344627) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Gong_2022_trough_FEV1](drugs/drug_olodaterol/pd_Gong_2022_trough_FEV1.md) | change from baseline in trough FEV1 ← olodaterol/tiotropium (fixed-dose combination) · direct Emax (saturable) effect | — | Gong Y et al., Quantitative analysis of efficacy and s…, Therapeutic advances in res… (2022) | [10.1177/17534666211066068](https://doi.org/10.1177/17534666211066068) |
 
 <details class="legend">
@@ -50,41 +49,36 @@ Olodaterol is an ultra-long-acting beta-2 adrenergic agonist used to treat chron
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 14:21 | 1:43 | 0/2/0 | 2/2/0 | 0/0/0 | 81,357/5,884 | ollama / glm-5.3-flash | 3 | 2/1 | 3/0 | 0 |
+| 2026-11-24 04:24 | 0:04 | 2/0/0 | 1/2/0 | 0/0/0 | 3,504/187 | einfracz / qwen3.8-27b | 3 | 2/1 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 9 matched, 9 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Borghardt_2016.pdf` | Borghardt JM et al., Investigating pulmonary and systemic ph…, British journal of clinical… (2016) | popPK | 10 | [10.1111/bcp.12780](https://doi.org/10.1111/bcp.12780) | [26348533](https://pubmed.ncbi.nlm.nih.gov/26348533) | Population PK model of olodaterol in humans with some numeric values (fractions, absorption half-life) in abstract, but full CL/V/Q parameter estimates likely in tables/supplement not provided. |
-| `Borghardt_2016_2.pdf` | Borghardt JM et al., Model-based evaluation of pulmonary pha…, British journal of clinical… (2016) | popPK | 10 | [10.1111/bcp.12999](https://doi.org/10.1111/bcp.12999) | [27145733](https://pubmed.ncbi.nlm.nih.gov/27145733) | Population PK model of olodaterol with quantitative absorption parameters (PBIO, absorption half-lives) reported in the abstract; disposition CL/V values may reside in the referenced prior model. |
-
-<sub>queue written 2026-10-07 14:20 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bouyssou_2010 | irrelevant | 1 | 0 | This is a pharmacodynamic preclinical characterization with no PK disposition parameters (CL, V, ka, half-life) reported for olodaterol. |
-| popPK | Calzetta_2017 | irrelevant | 0 | 0 | This is an ex vivo pharmacodynamic drug-interaction study in equine bronchi; no PK disposition parameters for olodaterol are reported. |
+| PGx | Borghardt_2016 | not_relevant | 0 | 0 | The study models the pharmacokinetics of olodaterol in healthy volunteers but does not report any analysis of the impact of gene variants or genotypes on PK parameters. |
+| PGx | Borghardt_2016_2 | not_relevant | 0 | 0 | The paper evaluates population pharmacokinetics based on disease status (asthma, COPD, healthy) but does not report any pharmacogenomic (gene variant) effects. |
+| popPK | Bouyssou_2010 | irrelevant | 0 | 0 | The paper is a preclinical pharmacodynamic study focusing on receptor binding and bronchoprotection, and does not report quantitative pharmacokinetic parameters (e.g., CL, Vd) for olodaterol. |
+| PGx | Bouyssou_2010 | not_relevant | 0 | 0 | The paper describes the preclinical pharmacological profile of olodaterol in animal models and does not report any pharmacogenomic effects or genotype-dependent variations in PK/PD parameters. |
+| popPK | Calzetta_2017 | irrelevant | 0 | 0 | The study reports ex vivo pharmacodynamic parameters (potency and efficacy) for olodaterol in equine bronchi, not pharmacokinetic disposition parameters. |
+| PGx | Calzetta_2017 | not_relevant | 0 | 0 | The paper studies a pharmacological drug-drug interaction in an ex vivo equine model and contains no pharmacogenomic data (gene variant/genotype effects) on olodaterol's PK/PD. |
 | popPK | Gong_2022 | irrelevant | 0 | 0 | This is a pharmacodynamic (Emax/efficacy-loss) meta-analysis of FEV1 for LABA/LAMA combinations, not a PK study; no olodaterol disposition parameters (CL, V, ka, half-life) are reported. |
 | popPK | Ichinose_2017 | irrelevant | 0 | 0 | This is a study protocol for a COPD efficacy trial (lung function, exercise, physical activity) with no PK parameters for olodaterol. |
 | popPK | Voskrebenzev_2026 | irrelevant | 0 | 0 | This is an MRI imaging study of tiotropium/olodaterol effects in COPD; no PK parameters (CL, V, ka, half-life) for olodaterol are reported. |
-| popPK | Xing_2021 | irrelevant | 0 | 0 | Medicinal chemistry study of novel β2-agonist analogues with in vitro cAMP assays; no olodaterol PK parameters reported. |
-| popPK | Yi_2020 | irrelevant | 0 | 0 | Medicinal chemistry study of β2-agonist analogs; olodaterol only used as a comparator, no PK parameters reported. |
+| popPK | Xing_2021 | irrelevant | 0 | 0 | The paper describes the synthesis and in vitro/in organo pharmacological activity of new β2-agonist analogues, not the pharmacokinetics of olodaterol. |
+| PGx | Xing_2021 | not_relevant | 0 | 0 | The paper describes the design and activity of novel compounds but does not investigate olodaterol or the impact of gene variants on its PK/PD. |
+| popPK | Yi_2020 | irrelevant | 0 | 0 | The paper is a medicinal chemistry/biological evaluation study of new beta-2 agonists, using olodaterol only as a comparator in in vitro assays, and reports no population pharmacokinetic parameters for olodaterol. |
+| PGx | Yi_2020 | not_relevant | 0 | 0 | The paper describes the design and synthesis of new beta-agonists and compares them to olodaterol in vitro, but it does not investigate any genetic variants or pharmacogenomic effects on olodaterol's PK or PD. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bolodaterol%5D&body=Drug%3A%20olodaterol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_olodaterol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 14:20 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 04:21 UTC</sub>

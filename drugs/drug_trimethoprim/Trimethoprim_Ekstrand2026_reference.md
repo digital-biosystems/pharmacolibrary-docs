@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span>
 
-> Trimethoprim record fails half-life and tmax checks and defaults k12, k13, and k31.
+> The model does not reproduce the paper's terminal half-life (paper 0.1, model 3.36e+03); the model does not reproduce the paper's time of the peak (tmax) (paper 4, model 2.69) (+3 more).
 
 <div class="pk-model-meta" hidden drug="trimethoprim" model-id="Trimethoprim_Ekstrand2026_reference" status="needs_review" stale="false" population="beagle dogs" measured-compound="trimethoprim" parameterization="mechanistic" topology="3C"></div>
 
@@ -60,13 +60,13 @@ Ekstrand C, Löwgren M, Erkas M, Devreese M, De Baere S, Vo-Thanh J et al. Compa
 
 ### Reviewer guidance
 
-**Trimethoprim record fails half-life and tmax checks and defaults k12, k13, and k31.**
+**The model does not reproduce the paper's terminal half-life (paper 0.1, model 3.36e+03); the model does not reproduce the paper's time of the peak (tmax) (paper 4, model 2.69) (+3 more).**
 
-Simulated terminal half-life was 3359.578572719053, conflicting with reported values of 0.1, 1.1, 0.39, 0.61, and 0.19. Simulated tmax was 2.693386773547094, differing from the reported 4.0. The model used default values for k12, k13, and k31 instead of estimates from the paper. Extracted — trimethoprim: CL 0.43 L/h/kg, V1 0.37 L/kg, V2 0.09 L/kg, Q 0.14 L/h/kg, kabs 3.69 1/h, Fab 0.94, V 2.62 L/kg.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — trimethoprim: CL 0.43 L/h/kg, V1 0.37 L/kg, V2 0.09 L/kg, Q 0.14 L/h/kg, kabs 3.69 1/h, Fab 0.94, V 2.62 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trimethoprim-sulfadiazine, trimethoprim-sulfamethoxazole, trimethoprim, the second reading trimethoprim; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -175,17 +175,17 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 3C → PK_3C* | PK_3C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.522, 0 of 1 reader(s) agree | 0.522 | cross-check disputed by a second reader: verdict disputed, agreement 0.522, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | fail | 7.5 | 3360 | 447.9 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 12.6 | 3360 | 266.6 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 4.2 | 3360 | 799.9 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.1 | 3360 | 3.36e+04 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.1 | 3360 | 3054 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.39 | 3360 | 8614 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.61 | 3360 | 5508 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 0.19 | 3360 | 1.768e+04 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 4 | 2.693 | 0.6733 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 4 | 2.693 | 0.6733 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.522 (12 of 23 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.522 | cross-check contradicted by a second reader: verdict disputed; agreement 0.522 (12 of 23 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | fail | 7.5 | 3360 | 447.9 | reported 7.5 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 12.6 | 3360 | 266.6 | reported 12.6 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 4.2 | 3360 | 799.9 | reported 4.2 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.1 | 3360 | 3.36e+04 | reported 0.1 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.1 | 3360 | 3054 | reported 1.1 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.39 | 3360 | 8614 | reported 0.39 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.61 | 3360 | 5508 | reported 0.61 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 0.19 | 3360 | 1.768e+04 | reported 0.19 h→SI vs simulated h |
+| T1_tmax | reference | fail | 4 | 2.693 | 0.6733 | reported 4.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 4 | 2.693 | 0.6733 | reported 4.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

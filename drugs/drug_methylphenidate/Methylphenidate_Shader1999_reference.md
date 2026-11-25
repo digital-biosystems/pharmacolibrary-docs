@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06B&quot;,&quot;href&quot;:&quot;atc/N06B.md&quot;},{&quot;label&quot;:&quot;methylphenidate&quot;,&quot;href&quot;:&quot;drugs/drug_methylphenidate/&quot;},{&quot;label&quot;:&quot;Shader_1999 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methylphenidate_Giorgi2010_reference&quot;,&quot;label&quot;:&quot;Giorgi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_methylphenidate/Methylphenidate_Giorgi2010_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -35,7 +36,7 @@ Shader RI, Harmatz JS, Oesterheld JR, Parmelee DX, Sallee FR, Greenblatt DJ. Pop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,7 +50,7 @@ Shader RI, Harmatz JS, Oesterheld JR, Parmelee DX, Sallee FR, Greenblatt DJ. Pop
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — methylphenidate: t1/2z 4.5 hours, CL/F 90.7 ml/min/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has methylphenidate, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -57,7 +58,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| t1/2 | `Q57` · t1/2z | 4.5 | hours | 1.62e+04 | s | h | exact (1) | Shader_1999:abstract |
+| t1/2 | `Q57` · t1/2z | 4.5 | hours | 1.62e+04 | s | h | half_life_rule (0.95) | Shader_1999:abstract |
 | apparent clearance | `Q27` · CL/F | 90.7 | ml/min/kg | 0.0001058 | m3/s | ml/(min·kg) | exact (1) | Shader_1999:abstract |
 
 <details class="legend">
@@ -70,33 +71,20 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=methylphenidate
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Shader_1999_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>6 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[apparent clearance]` | 90.7 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent clearance]` |  | 90.7 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2]` | 4.5 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[t1/2]` |  | 4.5 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | methylphenidate | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | methylphenidate | unknown | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -149,4 +137,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmethylphenidate%5D%20Methylphenidate_Shader1999_reference&body=Drug%3A%20methylphenidate%0ARecord%3A%20Methylphenidate_Shader1999_reference%0APaper%3A%20Shader_1999%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_methylphenidate/Methylphenidate_Shader1999_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 00:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:00 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record is rejected because the triflusal-to-HTB model structure does not match the reported parent-metabolite topology and the allometric unit weight/71.65 was unconvertible.
+> T3_output_variable; t3_topology_template (+1 more).
 
 <div class="pk-model-meta" hidden drug="triflusal" model-id="Triflusal_Park2014_reference" status="rejected" stale="false" population="healthy Korean male volunteers" measured-compound="HTB" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -54,13 +54,13 @@ Park SM, Lee J, Seong SJ, Park JG, Gwon MR, Lim MS et al. Population pharmacokin
 
 ### Reviewer guidance
 
-**The record is rejected because the triflusal-to-HTB model structure does not match the reported parent-metabolite topology and the allometric unit weight/71.65 was unconvertible.**
+**T3_output_variable; t3_topology_template (+1 more).**
 
-The single-compartment absorption structure conflicts with the reported parent-metabolite topology, and the specific weight unit could not be standardized for calculation. The second reader disagreed on the presence of the metabolite link and the allometric exponent, resulting in a low agreement score of 0.308. Additionally, the bioavailability fraction was assumed to be 1, and the transit time was left at a default value. Extracted — HTB: CLm/F 2.7 L/h, V 17.4 L, allometric_exponent 2.7 weight/71.65, kfm 15.1 1/h.
+A reported unit could not be converted (allometric_exponent), so that value has no SI equivalent. None of the extracted parameters is triflusal's own; they describe HTB. Extracted — HTB: CLm/F 2.7 L/h, V 17.4 L, allometric_exponent 2.7 weight/71.65, kfm 15.1 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has triflusal → htb (metabolism), the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -189,7 +189,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.308, 0 of 1 reader(s) agree | 0.308 | cross-check disputed by a second reader: verdict disputed, agreement 0.308, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.308 (4 of 13 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.308 | cross-check contradicted by a second reader: verdict disputed; agreement 0.308 (4 of 13 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

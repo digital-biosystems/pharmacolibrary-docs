@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Diclofenac AUCt was rejected because its reported unit, microgram hours per milliliter, has dimensions inconsistent with an area-under-the-curve calculation.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q19 unit µg h-1 ml-1 ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Auler1997_control" status="rejected" stale="false" population="surgical patients" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></div>
 
@@ -58,13 +58,13 @@ Auler Júnior JO, Espada EB, Crivelli E, Quintavalle TB, Kurata A, Stolf NA et a
 
 ### Reviewer guidance
 
-**Diclofenac AUCt was rejected because its reported unit, microgram hours per milliliter, has dimensions inconsistent with an area-under-the-curve calculation.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q19 unit µg h-1 ml-1 ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The record lists the AUCt value as 4.04 with the unit µg h-1 ml-1, which dimensionally represents mass per time per volume rather than the expected mass times time per volume. This unit conflict caused the parameter to be flagged for a dimension mismatch during the review. Additionally, the reported unit could not be converted to standard international units, preventing the parameter from being properly normalized for analysis. Extracted — diclofenac: Cmax 1.81e+03 ng/ml, tmax 0.5 h, AUCt 4.04 µg h-1 ml-1, λ1 1.98 h-1, k12 0.7 h-1, k21 0.82 h-1, V 0.98 l/kg, kel 0.3 h-1, … (+4).
+A reported unit could not be converted (AUCt), so that value has no SI equivalent. Extracted — diclofenac: Cmax 1.81e+03 ng/ml, tmax 0.5 h, AUCt 4.04 µg h-1 ml-1, λ1 1.98 h-1, k12 0.7 h-1, k21 0.82 h-1, V 0.98 l/kg, kel 0.3 h-1, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of binding: this record has none, the second reading 99; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The volume of distribution was incorrectly assigned mass-normalized units, and the abstract-only extraction omitted a second clearance value.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit 1 kg-1 (dimensionless) vs [length] ** 3; Q22 unit 1 h-1 (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="methyldopa (levorotatory)" model-id="MethyldopaLevorotatory_Barnett1977_reference" status="rejected" stale="false" population="normotensive and hypertensive subjects" measured-compound="methyldopa" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Barnett AJ, Bobik A, Carson V, Korman JS, McLean AJ. Pharmacokinetics of methyld
 
 ### Reviewer guidance
 
-**The volume of distribution was incorrectly assigned mass-normalized units, and the abstract-only extraction omitted a second clearance value.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit 1 kg-1 (dimensionless) vs [length] ** 3; Q22 unit 1 h-1 (1 / [time]) vs [length] ** 3 / [time].**
 
-The extracted volume of distribution (0.29 kg^-1) uses units that do not correspond to a physical volume, causing a structural mismatch with the clearance parameter. Additionally, the record was built from the abstract, so the provided statistics stand in for a full model fit. A second reader could not locate the plasma clearance value (11.2 h^-1) in the source text. Extracted — methyldopa levorotatory: kel 0.56 h-1, V 0.29 1 kg-1, CL 11.2 1 h-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — methyldopa levorotatory: kel 0.56 h-1, V 0.29 1 kg-1, CL 11.2 1 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of plasma clearance rate: this record has 11.2, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

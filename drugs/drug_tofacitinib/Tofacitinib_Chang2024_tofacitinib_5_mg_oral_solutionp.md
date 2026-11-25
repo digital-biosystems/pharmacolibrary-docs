@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The tofacitinib record was held back because cross-check agreement of 0.412 was below the 0.5 threshold.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="tofacitinib" model-id="Tofacitinib_Chang2024_tofacitinib_5_mg_oral_solutionp" status="needs_review" stale="false" population="children and adolescents with juvenile idiopathic arthritis" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Chang C, Vong C, Wang X, Hazra A, Diehl A, Nicholas T et al. Tofacitinib pharmac
 
 ### Reviewer guidance
 
-**The tofacitinib record was held back because cross-check agreement of 0.412 was below the 0.5 threshold.**
+**cross_check_disputed; x1_cross_check.**
 
-A reported unit for a parameter could not be converted to standard units, leaving the value undefined. The second reader also failed to confirm the extracted values for absorption lag time (0.19 h), AUC∞ (132.4 ng·h/mL), and Cmax (38.0 ng/mL). These discrepancies resulted in zero reader agreement, marking the record for review. Extracted — tofacitinib: AUC∞ 132 ng*h/mL, AUClast 131 ng*h/mL, Cmax 38 ng/mL, CL/F 26.1 L/h, V/F 89.2 L, kabs 2.78 h−1, tlag 0.19 h.
+A reported unit could not be converted (AUC∞, AUClast and Cmax), so that value has no SI equivalent. Extracted — tofacitinib: AUC∞ 132 ng*h/mL, AUClast 131 ng*h/mL, Cmax 38 ng/mL, CL/F 26.1 L/h, V/F 89.2 L, kabs 2.78 h−1, tlag 0.19 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption lag time: this record has 0.19, the second reading none; it also differs on 9 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -168,7 +168,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict partial, agreement 0.412, 0 of 1 reader(s) agree | 0.412 | cross-check agreement 0.412 is below 0.5: verdict partial, agreement 0.412, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.412 (7 of 17 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.412 | cross-check contradicted by a second reader: verdict disputed; agreement 0.412 (7 of 17 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 113.9 | 2.751e-05 |  | unresolved concentration unit (exp '%', sim 'kg/m3') |
 
 <details class="legend">

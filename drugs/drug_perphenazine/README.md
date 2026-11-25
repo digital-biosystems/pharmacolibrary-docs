@@ -32,8 +32,7 @@ Perphenazine is a typical antipsychotic drug used to treat schizophrenia and oth
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Otreba_2016_cell_viability](drugs/drug_perphenazine/pd_Otreba_2016_cell_viability.md) | cell viability ← perphenazine · direct Emax (saturable) effect | — | Otreba M et al., FLUPHENAZINE AND PERPHENAZINE IMPACT ON…, Acta poloniae pharmaceutica (2016) | — |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Otręba_2018_cell_viability_U87_MG_cells](drugs/drug_perphenazine/pd_Otr_ba_2018_cell_viability_U87_MG_cells.md) | cell viability (U87-MG cells) ← perphenazine · inhibition effect | — | Otręba M et al., Perphenazine and prochlorperazine induc…, Die Pharmazie (2018) | [10.1691/ph.2018.7806](https://doi.org/10.1691/ph.2018.7806) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Otręba_2018_U87_MG_cell_viability](drugs/drug_perphenazine/pd_Otr_ba_2018_U87_MG_cell_viability.md) | U87-MG cell viability ← perphenazine · direct sigmoid Emax (Hill) effect | — | Otręba M et al., Perphenazine and prochlorperazine induc…, Die Pharmazie (2018) | [10.1691/ph.2018.7806](https://doi.org/10.1691/ph.2018.7806) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +46,7 @@ Perphenazine is a typical antipsychotic drug used to treat schizophrenia and oth
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 16:27 | 0:41 | 1/0/0 | 2/0/0 | 0/0/0 | 35,095/1,893 | ollama / glm-5.3-flash | 1 | 1/0 | 1/0 | 0 |
+| 2026-11-24 02:48 | 0:04 | 1/0/0 | 1/0/0 | 0/0/0 | 4,291/170 | einfracz / qwen3.8-27b | 1 | 1/0 | 1/0 | 0 |
 
 ## Coverage
 
@@ -56,33 +55,33 @@ Perphenazine is a typical antipsychotic drug used to treat schizophrenia and oth
 - **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
-## Full-text requests
-
-_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Jin_2010.pdf` | Jin Y et al., Population pharmacokinetics of perphena…, Journal of clinical pharmac… (2010) | popPK | 10 | [10.1177/0091270009343694](https://doi.org/10.1177/0091270009343694) | [19843655](https://pubmed.ncbi.nlm.nih.gov/19843655) | Population PK model of perphenazine with CL and V values reported directly in the abstract. |
-
-<sub>queue written 2026-10-06 16:27 UTC</sub>
-
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Bustamante_2019 | irrelevant | 1 | 0 | Perphenazine is only a repurposing candidate with an in vitro EC50; no PK disposition parameters are reported, and any PK simulations are not quantified in the evidence. |
-| popPK | Hensler_1987 | irrelevant | 0 | 0 | Perphenazine appears only as a receptor antagonist potency ranking in an in vitro pharmacology study, with no PK parameters. |
-| popPK | Hermes_2011 | irrelevant | 0 | 0 | This is a clinical trial analysis of weight change and symptom scores with no pharmacokinetic parameters for perphenazine. |
-| popPK | Otreba_2016 | irrelevant | 0 | 0 | In-vitro melanocyte toxicity study with no PK disposition parameters for perphenazine. |
-| popPK | Otręba_2018 | irrelevant | 0 | 0 | In-vitro cytotoxicity study (EC50 in U87-MG cells) with no PK disposition parameters for perphenazine. |
-| popPK | Overo_1977 | irrelevant | 2 | 2 | Perphenazine is only the interacting co-administered drug; the PK parameters reported are for nortriptyline, not perphenazine itself. |
-| popPK | Perera_2014 | irrelevant | 4 | 2 | Uses prior population-PK parameters for perphenazine but reports no numeric PK parameter values (only CV% and sampling times); actual parameters likely in prior publications/supplements. |
-| popPK | Yukawa_2002 | irrelevant | 0 | 0 | This is a population PK study of haloperidol; perphenazine is only mentioned as a co-administered CYP2D6 substrate, with no perphenazine parameters reported. |
-| popPK | Zang_2021 | irrelevant | 2 | 3 | Perphenazine is only a covariate affecting olanzapine clearance (0.78-fold); no perphenazine PK parameters are reported. |
+| popPK | Bustamante_2019 | irrelevant | 0 | 0 | The study focuses on in vitro anti-leishmanial activity (EC50) of perphenazine, not the pharmacokinetic disposition parameters (CL, V, ka, etc.) of the drug itself. |
+| PGx | Bustamante_2019 | not_relevant | 0 | 0 | The paper discusses drug repurposing for leishmaniasis and reports in vitro activity and PK simulations for perphenazine, but does not investigate any genetic variants or pharmacogenomic effects on its pharmacokinetics or pharmacodynamics. |
+| popPK | Hensler_1987 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological characterization of dopamine receptors in rabbit retina, not a pharmacokinetic study of perphenazine. |
+| PGx | Hensler_1987 | not_relevant | 0 | 0 | The paper investigates the pharmacological characterization of D-1 dopamine receptors in rabbit retina and does not report any pharmacogenomic effects (gene variants) on the pharmacokinetics or pharmacodynamics of perphenazine. |
+| popPK | Hermes_2011 | irrelevant | 0 | 0 | The study analyzes the association between weight change and symptom reduction (PANSS scores) in a clinical trial, reporting no pharmacokinetic parameters such as clearance, volume, or half-life for perphenazine. |
+| PGx | Hermes_2011 | not_relevant | 0 | 0 | The paper investigates the correlation between weight change and symptom reduction in the CATIE trial without reporting any pharmacogenomic data or genotype-specific effects on PK/PD parameters. |
+| PGx | Jin_2010 | not_relevant | 1 | 2 | The study analyzes demographic covariates (race and smoking) on perphenazine PK but does not report effects of specific gene variants or genotypes (pharmacogenomics). |
+| popPK | Otreba_2016 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of melanogenesis and antioxidant enzymes, not a pharmacokinetic study of perphenazine. |
+| PGx | Otreba_2016 | not_relevant | 0 | 0 | The study investigates the ex vivo toxicological effects of perphenazine on melanocytes and does not report any pharmacogenomic interactions or genetic variants affecting PK/PD parameters. |
+| popPK | Otręba_2018 | irrelevant | 0 | 0 | The study is an in-vitro cytotoxicity assay (measuring cell viability and EC50), not a pharmacokinetic study reporting clearance, volume, or half-life parameters. |
+| PGx | Otręba_2018 | not_relevant | 0 | 0 | The paper investigates cytotoxicity in glioblastoma cells and does not report any pharmacogenomic effects on PK/PD parameters. |
+| popPK | Overo_1977 | irrelevant | 0 | 0 | The study measures the pharmacokinetics of nortriptyline, not perphenazine, which is used only as a co-administered drug to test for interaction. |
+| PGx | Overo_1977 | not_relevant | 0 | 0 | The paper describes a drug-drug interaction (perphenazine affecting nortriptyline kinetics), not a pharmacogenomic effect on perphenazine's own PK/PD. |
+| popPK | Perera_2014 | relevant | 7 | 1 | The study is a pharmacometric model for perphenazine but does not list the specific quantitative parameter values (CL, V, etc.) for perphenazine, only CV% and sampling windows. |
+| PGx | Perera_2014 | not_relevant | 0 | 0 | The paper describes optimal sampling strategies for PK parameter estimation and does not report the effect of any gene variant or genotype on the pharmacokinetics or pharmacodynamics of perphenazine. |
+| popPK | Yukawa_2002 | irrelevant | 0 | 0 | The study reports population PK parameters for haloperidol, while perphenazine is only mentioned as a co-administered CYP2D6 substrate whose inclusion did not improve the model. |
+| PGx | Yukawa_2002 | not_relevant | 0 | 0 | The paper analyzes the population pharmacokinetics of haloperidol and does not report pharmacogenomic effects or PK/PD parameters for perphenazine. |
+| popPK | Zang_2021 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for olanzapine, while perphenazine is only mentioned as a comedication affecting olanzapine clearance, not as the subject drug. |
+| PGx | Zang_2021 | not_relevant | 0 | 0 | The study focuses on non-genetic covariates (smoking, sex, comedication, infection) on olanzapine PK and does not investigate genetic variants or pharmacogenomics. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bperphenazine%5D&body=Drug%3A%20perphenazine%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_perphenazine/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 16:27 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 02:47 UTC</sub>

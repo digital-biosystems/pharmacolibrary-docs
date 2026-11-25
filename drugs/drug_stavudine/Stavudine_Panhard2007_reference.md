@@ -1,15 +1,13 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;stavudine&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/&quot;},{&quot;label&quot;:&quot;Panhard_2007 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Sinxadi2010_reference&quot;,&quot;label&quot;:&quot;Sinxadi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Sinxadi2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Jullien2007_reference&quot;,&quot;label&quot;:&quot;Jullien_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Jullien2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Stavudine_Sinxadi2010_reference&quot;,&quot;label&quot;:&quot;Sinxadi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Sinxadi2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Jullien2007_reference&quot;,&quot;label&quot;:&quot;Jullien_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Jullien2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # stavudine — `Stavudine_Panhard2007_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--blue">Simulated</span>
 
-> The stavudine model record was disputed because the second reader could not verify the clearance, volume, and absorption parameters extracted from the abstract.
-
-<div class="pk-model-meta" hidden drug="stavudine" model-id="Stavudine_Panhard2007_reference" status="needs_review" stale="false" population="HIV-1-infected adults on HAART with sustained virological response" measured-compound="stavudine" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="stavudine" model-id="Stavudine_Panhard2007_reference" status="simulated" stale="false" population="HIV-infected patients on HAART" measured-compound="stavudine" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Panhard X, Legrand M, Taburet AM, Diquet B, Goujard C, Mentré F. Population pharmacokinetic analysis of lamivudine, stavudine and zidovudine in controlled HIV-infected patients on HAART. European journal of clinical pharmacology 63(11):1019–1029 (2007).
@@ -17,7 +15,7 @@ Panhard X, Legrand M, Taburet AM, Diquet B, Goujard C, Mentré F. Population pha
 
 ## Population and dosing
 
-**Population:** HIV-1-infected adults on HAART with sustained virological response · condition HIV infection · age group adult · n = 39.
+**Population:** HIV-infected patients on HAART · condition HIV infection · age group adult · n = 39.
 
 ## Model
 
@@ -29,17 +27,15 @@ Panhard X, Legrand M, Taburet AM, Diquet B, Goujard C, Mentré F. Population pha
 <figure class="pk-models-diagram"><img src="drugs/drug_stavudine/Stavudine_Panhard2007_reference/Stavudine_Panhard2007_reference.svg" alt="Stavudine_Panhard2007_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
-
 | label | parameter | value | unit |
 |---|---|---|---|
-| oral volume of distribution (V/F) LMV | V/F | 145 | l |
-| oral clearance (Cl/F) LMV | CL/F | 32 | l/h |
-| ka STV | kabs | 0.46 | h(-1) |
+| oral volume of distribution (V/F) 145 l (52%) | V/F | 145 | l |
+| oral clearance (Cl/F) 32 l/h | CL/F | 32 | l/h |
+| ka | kabs | 0.46 | h(-1) |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,21 +45,21 @@ Panhard X, Legrand M, Taburet AM, Diquet B, Goujard C, Mentré F. Population pha
 
 ### Reviewer guidance
 
-**The stavudine model record was disputed because the second reader could not verify the clearance, volume, and absorption parameters extracted from the abstract.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
-The second reader disagreed on the identity of the dose compound and primary analyte, recording both as unknown. None of the specific parameter values for stavudine clearance (32 l/h), volume of distribution (145 l), or absorption rate (0.46 h⁻¹) were agreed upon, with the second reader returning null for each. Because the model was built from the abstract alone, these summary statistics lacked the fitted model context required for verification. Extracted — stavudine: V/F 145 l, CL/F 32 l/h, kabs 0.46 h(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has stavudine, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of oral clearance: this record has none, the second reading 32; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| oral volume of distribution (V/F) LMV | `Q76` · V/F | 145 | l | 0.145 | m3 | l | llm_corrected (0.6) | Panhard_2007:abstract |
-| oral clearance (Cl/F) LMV | `Q27` · CL/F | 32 | l/h | 8.889e-06 | m3/s | l/h | llm_confirmed (0.6) | Panhard_2007:abstract |
-| ka STV | `Q49` · kabs | 0.46 | h(-1) | 0.0001278 | 1/s | 1/h | llm_confirmed (0.6) | Panhard_2007:abstract |
+| oral volume of distribution (V/F) 145 l (52%) | `Q76` · V/F | 145 | l | 0.145 | m3 | l | llm_corrected (0.6) | Panhard_2007:abstract |
+| oral clearance (Cl/F) 32 l/h | `Q27` · CL/F | 32 | l/h | 8.889e-06 | m3/s | l/h | llm_confirmed (0.6) | Panhard_2007:abstract |
+| ka | `Q49` · kabs | 0.46 | h(-1) | 0.0001278 | 1/s | 1/h | exact (1) | Panhard_2007:abstract, Panhard_2007:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,42 +73,33 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
-- dropped duplicate Q76 ('oral volume of distribution (V/F) STV', value 24) — already have one for this compound
-- dropped duplicate Q76 ('oral volume of distribution (V/F) ZDV', value 248) — already have one for this compound
-- dropped duplicate Q27 ('oral clearance (Cl/F) STV', value 16) — already have one for this compound
-- dropped duplicate Q27 ('oral clearance (Cl/F) ZDV', value 124) — already have one for this compound
-- dropped duplicate Q49 ('ka ZDV', value 2.9) — already have one for this compound
+- dropped duplicate Q76 ('oral volume of distribution (V/F) 24 l (81%)', value 24) — already have one for this compound
+- dropped duplicate Q76 ('oral volume of distribution (V/F) 248 l (80%)', value 248) — already have one for this compound
+- dropped duplicate Q27 ('oral clearance (Cl/F) 16 l/h (74%)', value 16) — already have one for this compound
+- dropped duplicate Q27 ('oral clearance (Cl/F) 124 l/h (51%)', value 124) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=stavudine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Panhard_2007_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.1 (1/10 fields) | 9 |
+| `gpt-oss-120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['', '', '']] | mismatch |
-| `gpt-oss-120b` | `parameters[ka stv]` | 0.46 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` |  | 0.46 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral clearance (cl/f) lmv]` | 32 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral clearance (cl/f) 32]` | 32 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[oral clearance]` |  | 32 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[oral volume of distribution (v/f) lmv]` | 145 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[oral volume of distribution (v/f) 145 l]` | 145 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[oral volume of distribution]` |  | 145 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | stavudine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | stavudine | unknown | mismatch |
 
 </details>
 
@@ -130,7 +117,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Panhard_2007:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Panhard_2007:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Panhard_2007:abstract', 'Panhard_2007:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Panhard_2007:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
@@ -148,7 +135,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.1, 0 of 1 reader(s) agree | 0.1 | cross-check disputed by a second reader: verdict disputed, agreement 0.1, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.556 (5 of 9 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.556 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -164,7 +151,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_stavudine/Stavudine_Panhard2007_reference/Stavudine_Panhard2007_reference_modelica.zip" download>Stavudine_Panhard2007_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_stavudine/Stavudine_Panhard2007_reference/Stavudine_Panhard2007_reference_modelica.zip" download>Stavudine_Panhard2007_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_stavudine/Stavudine_Panhard2007_reference/Stavudine_Panhard2007_reference_fmi.zip" download>Stavudine_Panhard2007_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_stavudine/Stavudine_Panhard2007_reference/Stavudine_Panhard2007_reference_matlab.zip" download>Stavudine_Panhard2007_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_stavudine/Stavudine_Panhard2007_reference/Stavudine_Panhard2007_reference_matlab_simbio.zip" download>Stavudine_Panhard2007_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -228,4 +215,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bstavudine%5D%20Stavudine_Panhard2007_reference&body=Drug%3A%20stavudine%0ARecord%3A%20Stavudine_Panhard2007_reference%0APaper%3A%20Panhard_2007%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_stavudine/Stavudine_Panhard2007_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:16 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:54 UTC</sub>

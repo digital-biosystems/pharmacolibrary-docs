@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper studies amodiaquine and piperaquine, leaving artesunate CL of 55.4 L/h unsupported by primary data.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="artesunate" model-id="Artesunate_Ding2024_reference" status="rejected" stale="false" population="" measured-compound="artesunate" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Ding J, Hoglund RM, Tagbor H, Tinto H, Valéa I, Mwapasa V et al. Population pha
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper studies amodiaquine and piperaquine, leaving artesunate CL of 55.4 L/h unsupported by primary data.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The source text identifies the study as a population PK analysis of amodiaquine and piperaquine, where artesunate is merely a co-administered drug. Consequently, no primary PK parameters for artesunate are reported in the article. The extracted clearance and volume of distribution values likely originate from secondary sources or assumptions rather than direct fitting. Extracted — artesunate: CL 55.4 L/h, V 2.17e+03 L.
+Extracted — artesunate: CL 55.4 L/h, V 2.17e+03 L.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q21: this record has 10.0, the second reading none; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -125,7 +125,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.6, 0 of 1 reader(s) agree | 0.6 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.6 (6 of 10 compared fields agree, 4 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.6 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

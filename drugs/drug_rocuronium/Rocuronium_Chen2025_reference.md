@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rocuronium clearance of 1.24 L/min/70 kg is reported from a remimazolam paper in which rocuronium was only a concomitant medication, so the record was rejected.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="Rocuronium" model-id="Rocuronium_Chen2025_reference" status="rejected" stale="false" population="" measured-compound="rocuronium" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Chen Y, Zhang ZJ, Zhang XF, Peng Y, Jiao Z, Wu JX. Model-Informed Precision Dosi
 
 ### Reviewer guidance
 
-**Rocuronium clearance of 1.24 L/min/70 kg is reported from a remimazolam paper in which rocuronium was only a concomitant medication, so the record was rejected.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The paper investigates remimazolam; rocuronium is mentioned only as a concomitant muscle-relaxant medication, with no rocuronium pharmacokinetics. The record nevertheless lists rocuronium clearance as 1.24 L/min/70 kg, apparent distribution volume as 17.5 L, peripheral distribution volume as 28.2 L, and intercompartmental clearance as 0.293 L/min. A second reader disputed the record, with disagreements including 1.24 versus 1.33, an absent value versus 16, 91.5 versus 91.9, and 17.5 versus an absent value. Extracted — rocuronium: CL 1.24 L/min/70 kg, V/F 17.5 L, V2 28.2 L, Q 0.293 L/min.
+Extracted — rocuronium: CL 1.24 L/min/70 kg, V/F 17.5 L, V2 28.2 L, Q 0.293 L/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 1.24, the second reading 1.33; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.812, 0 of 1 reader(s) agree | 0.812 | cross-check disputed by a second reader: verdict disputed, agreement 0.812, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.812 (13 of 16 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.812 | cross-check contradicted by a second reader: verdict disputed; agreement 0.812 (13 of 16 compared fields agree, 2 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> Levothyroxine record rejected due to a unit conversion failure for clearance and an unlinked triiodothyronine metabolite.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h⁻¹ (1 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_MirallesGarca1981_ii" status="rejected" stale="false" population="non-pregnant ewes with acute hepatic insufficiency and controls" measured-compound="triiodothyronine (T3) or thyroxine (T4)" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -60,13 +60,13 @@ Miralles-García JM, García-Iglesias C, Garcá-Díez LC, De Pablo-Dávilà F. T
 
 ### Reviewer guidance
 
-**Levothyroxine record rejected due to a unit conversion failure for clearance and an unlinked triiodothyronine metabolite.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit h⁻¹ (1 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model includes an orphan metabolite because triiodothyronine has no defined path from the parent thyroxine. The clearance value of 0.789 l/d/kg uses a unit that could not be converted to standard SI units, preventing calculation. The second reader disagreed on the dose compound and several parameter values, including the absence of peripheral transfer constants. Extracted — levothyroxine: λ1 0.227 h⁻¹, kel 0.024 h⁻¹, t1/2α 3.06 h, t1/2β 28.2 h, k12 0.018 h⁻¹, k21 0.027 h⁻¹, k13 0.206 h⁻¹, V1 5.11 l, … (+3).
+A reported unit could not be converted (λ1 and equation variable), so that value has no SI equivalent. Extracted — levothyroxine: λ1 0.227 h⁻¹, kel 0.024 h⁻¹, t1/2α 3.06 h, t1/2β 28.2 h, k12 0.018 h⁻¹, k21 0.027 h⁻¹, k13 0.206 h⁻¹, V1 5.11 l, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has triiodothyronine (T3) or thyroxine (T4), the second reading thyroxine (T4); it also differs on 25 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

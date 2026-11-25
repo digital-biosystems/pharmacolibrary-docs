@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record is refused because the absorption rate constant was left at library defaults and a second reader disputed the apparent volume value.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="tofacitinib" model-id="Tofacitinib_Shin2020_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="tofacitinib" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Shin W, Yang AY, Yun H, Cho DY, Park KH, Shin H et al. Bioequivalence of the pha
 
 ### Reviewer guidance
 
-**The record is refused because the absorption rate constant was left at library defaults and a second reader disputed the apparent volume value.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The one-compartment model for tofacitinib lacks an explicit estimate for the absorption rate constant, relying instead on unreported library defaults. Additionally, a second reader disagreed with the extracted volume of distribution, reporting 2.59 L against the recorded 3.2 L. The record also assumes complete bioavailability and uses apparent clearance and volume parameters. Extracted — tofacitinib: CL/F 148 L/h, V/F 546 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — tofacitinib: CL/F 148 L/h, V/F 546 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q57: this record has 3.2, the second reading 2.59. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.9, 0 of 1 reader(s) agree | 0.9 | cross-check disputed by a second reader: verdict disputed, agreement 0.9, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.9 (9 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.9 | cross-check contradicted by a second reader: verdict disputed; agreement 0.9 (9 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

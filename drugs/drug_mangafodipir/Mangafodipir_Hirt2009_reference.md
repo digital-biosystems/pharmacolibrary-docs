@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The intercompartmental clearance unit was recorded as liters instead of liters per hour, conflicting with the required dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit L ([length] ** 3) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="mangafodipir" model-id="Mangafodipir_Hirt2009_reference" status="rejected" stale="false" population="patients with acute alcoholic hepatitis" measured-compound="manganese" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="mangafodipir" model-id="Mangafodipir_Hirt2009_reference" status="rejected" stale="false" population="patients with acute alcoholic hepatitis" measured-compound="manganese" parameterization="apparent" topology="general_linear"></div>
 
 ## Citation
 Hirt D, Richardet JP, Urien S, Poupon J, Sogni P, Batteux F et al. Pharmacokinetic-pharmacodynamic modeling of manganese after a single intravenous infusion of mangafodipir in patients with acute alcoholic hepatitis. Therapeutic drug monitoring 31(5):557–565 (2009).
@@ -22,9 +22,9 @@ Hirt D, Richardet JP, Urien S, Poupon J, Sogni P, Batteux F et al. Pharmacokinet
 
 ## Model
 
-**Structure:** 2-compartment; no model was built for this record.  
+**Structure:** general linear; no model was built for this record.  
 **Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 5 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,14 +33,13 @@ Hirt D, Richardet JP, Urien S, Poupon J, Sogni P, Batteux F et al. Pharmacokinet
 | label | parameter | value | unit |
 |---|---|---|---|
 | clearance | CLm/F | 23.1 | L/h |
-| central volume of distribution | V1 | 35.4 | L |
-| peripheral volume of distribution | V2 | 1090 | L |
+| central and peripheral volume of distribution | V2 | 35.4 | L |
 | intercompartmental clearance | Q | 27.3 | L |
 | mean transit time (tau) | MTT | 3.8 | days |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25), qwen3.8-27b (partly confirmed, agreement 0.417). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,23 +49,22 @@ Hirt D, Richardet JP, Urien S, Poupon J, Sogni P, Batteux F et al. Pharmacokinet
 
 ### Reviewer guidance
 
-**The intercompartmental clearance unit was recorded as liters instead of liters per hour, conflicting with the required dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q30 unit L ([length] ** 3) vs [length] ** 3 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The intercompartmental clearance between the central and peripheral compartments was reported as 27.3 L, but the parameter dimension requires volume per time. Additionally, the record relied on abstract-only summary statistics for mangafodipir and manganese, meaning the values stand in for a fitted model. Extracted — mangafodipir: CLm/F 23.1 L/h, V1 35.4 L, V2 1.09e+03 L, Q 27.3 L; manganese: MTT 3.8 days.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mangafodipir: CLm/F 23.1 L/h, V2 35.4 L, Q 27.3 L; manganese: MTT 3.8 days.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of central volume of distribution: this record has 35.4, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has mangafodipir → manganese (interconversion), the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | clearance | `Q351` · CLm/F | 23.1 | L/h | 6.417e-06 | m3/s | l/h | exact (1) | Hirt_2009:abstract |
-| central volume of distribution | `Q63` · V1 | 35.4 | L | 0.0354 | m3 | l | boundary_compartment (0.9) | Hirt_2009:abstract |
-| peripheral volume of distribution | `Q64` · V2 | 1090 | L | 1.09 | m3 | l | boundary_compartment (0.9) | Hirt_2009:abstract |
+| central and peripheral volume of distribution | `Q64` · V2 | 35.4 | L | 0.0354 | m3 | l | boundary_compartment (0.9) | Hirt_2009:abstract, Hirt_2009:abstract |
 | intercompartmental clearance | `Q30` · Q | 27.3 | L |  |  | l | exact (1) | Hirt_2009:abstract |
-| mean transit time (tau) | `Q81` · MTT | 3.8 | days |  |  | d | exact (1) | Hirt_2009:abstract |
+| mean transit time (tau) | `Q81` · MTT | 3.8 | days | 3.283e+05 | s | d | exact (1) | Hirt_2009:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -82,10 +80,11 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 - metabolite manganese: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=manganese
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- template fit: PK_3M_9C — formed from central; parent 2, metabolites [0]
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — other model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 4 linked by role; re-tagged manganese→parent ×4
-- molar mass: no plausible PubChem entry for 'manganese' ('no full name in the paper') — left in mass units
+- row roles (LLM): model_class=other; 6/6 row label(s) assigned, 4 linked by role; re-tagged manganese→parent ×4, manganese→prothrombin time ×1
+- molar mass: no plausible PubChem entry for 'manganese' ('manganese') — left in mass units
 - molar mass: none found for 'manganese' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
@@ -94,17 +93,27 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.25 (3/12 fields) | 9 |
 | `qwen3.8-27b` | partly confirmed | 0.417 (5/12 fields) | 7 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>16 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.links` | [['mangafodipir', 'manganese', 'interconversion']] | [] | mismatch |
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss-120b` | `parameters[central and peripheral volume of distribution]` | 35.4 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume of distribution]` |  | 35.4 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` | 23.1 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance]` |  | 23.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` | 27.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[intercompartmental clearance]` |  | 27.3 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[peripheral volume of distribution]` |  | 1090 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[central and peripheral volume of distribution]` |  | 35.4 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[central volume of distribution]` | 35.4 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[clearance]` | 23.1 |  | only_one_extracted |
@@ -125,18 +134,16 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 5 |  |
+| C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q30 | fail | [length] ** 3 / [time] | L ([length] ** 3) | ['Hirt_2009:abstract'] |
 | C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Hirt_2009:abstract'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['Hirt_2009:abstract'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Hirt_2009:abstract'] |
-| C5_unit_missing_Q81 | fail | [time] | days | ['Hirt_2009:abstract'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['Hirt_2009:abstract', 'Hirt_2009:abstract'] |
+| C5_dimension_Q81 | pass | [time] |  | ['Hirt_2009:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q63 | pass | volume within physiological range | 35.4 L | ['Hirt_2009:abstract'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 1.09e+03 L | ['Hirt_2009:abstract'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] |  |
+| C9_phys_window_Q64 | pass | volume within physiological range | 35.4 L | ['Hirt_2009:abstract', 'Hirt_2009:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,4 +167,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmangafodipir%5D%20Mangafodipir_Hirt2009_reference&body=Drug%3A%20mangafodipir%0ARecord%3A%20Mangafodipir_Hirt2009_reference%0APaper%3A%20Hirt_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mangafodipir/Mangafodipir_Hirt2009_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 19:06 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 00:50 UTC</sub>

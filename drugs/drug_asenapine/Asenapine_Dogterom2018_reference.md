@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was held back because no value was extracted for asenapine's volume of distribution and absorption lag time, and a second reader disputed the clearance parameter value.
+> No value for asenapine's volume of distribution and absorption lag time; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="asenapine" model-id="Asenapine_Dogterom2018_reference" status="model_quarantined" stale="false" population="pediatric patients with schizophrenia or bipolar I disorder" measured-compound="asenapine" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Dogterom P, Riesenberg R, de Greef R, Dennie J, Johnson M, Pilla Reddy V et al. 
 
 ### Reviewer guidance
 
-**The model was held back because no value was extracted for asenapine's volume of distribution and absorption lag time, and a second reader disputed the clearance parameter value.**
+**No value for asenapine's volume of distribution and absorption lag time; t6_deviations (+1 more).**
 
-The record lists parameters for a three-compartment model but the model builder defaulted the volume of distribution and absorption lag time, meaning no specific estimates were available for these pharmacokinetic properties. Additionally, a second reader disagreed with the total clearance value of 296 L/h reported in this record, instead identifying a value of 3.09 L/h from the source paper. This discrepancy in the primary clearance parameter, combined with the missing distribution and lag time values, resulted in the model being quarantined rather than published. Extracted — asenapine: CL/F 296 L/h, V2/F 2.74e+03 L, Q/F 120 L/h, V3/F 2.49e+03 L, kabs 2.98 1/h.
+The model was built, but asenapine's volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — asenapine: CL/F 296 L/h, V2/F 2.74e+03 L, Q/F 120 L/h, V3/F 2.49e+03 L, kabs 2.98 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl/f].value`: this record has 296, the second reading 3.09; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -153,7 +153,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.778 (7 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | cross-check contradicted by a second reader: verdict disputed; agreement 0.778 (7 of 9 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 45 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 18 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 11 |  |  | no simulated metric for this quantity (single reference sim) |

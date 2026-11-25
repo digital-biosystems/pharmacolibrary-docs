@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
-> The paracetamol Km value 38.5 M fails the dimension check, conflicting with the required mass-per-volume unit.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit M ([length]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Belle2000_final" status="rejected" stale="false" population="human liver microsomes" measured-compound="acetaminophen" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Belle DJ, Ring BJ, Allerheiligen SR, Heathman MA, O'Brien LM, Sinha V et al. A p
 
 ### Reviewer guidance
 
-**The paracetamol Km value 38.5 M fails the dimension check, conflicting with the required mass-per-volume unit.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit M ([length]) vs [mass] / [length] ** 3.**
 
-The record lists the Michaelis constant as 38.5 M, which the system flags as a dimension mismatch for a substrate affinity parameter. The label for the clearance parameter is also nonsensical, describing a patient's age rather than a pharmacokinetic quantity. A second reader noted discrepancies in the absorption lag time and volume of distribution, but the primary rejection reason remains the invalid Km unit. Extracted — paracetamol: Km 38.5 M, CL 0.035 l.min−1, V 6.35 liters, kabs 9.76 h -1, tlag 4.2 min.
+A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — paracetamol: Km 38.5 M, CL 0.035 l.min−1, V 6.35 liters, kabs 9.76 h -1, tlag 4.2 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 1 a: this record has none, the second reading 19.8; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

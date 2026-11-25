@@ -63,12 +63,12 @@ Trofinetide is a chemical compound classified under other nervous system drugs, 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 05:03 | 2:37 | 2/1/0 | 3/0/0 | 0/0/0 | 128,038/8,608 | ollama / glm-5.3-flash | 4 | 1/3 | 4/0 | 0 |
+| 2026-11-23 16:25 | 0:04 | 2/1/0 | 3/0/0 | 0/0/0 | 3,763/155 | einfracz / qwen3.8-27b | 4 | 1/3 | 4/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 5 matched, 5 returned
-- **screened:** 3  ·  **relevant:** 3
+- **screened:** 3  ·  **relevant:** 2
 - **records:** 3  ·  extracted 0  ·  needs review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -77,10 +77,12 @@ Trofinetide is a chemical compound classified under other nervous system drugs, 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Darwish_2024 | irrelevant | 3 | 2 | This is an exposure–response efficacy modeling paper; the popPK model is only cited (Darwish reference 9) and no trofinetide CL/V/Q/ka disposition parameters appear in the evidence, only exposure metrics (AUC, Cmax) and E-R slope coefficients. |
+| popPK | Oosterholt_2017 | irrelevant | 2 | 0 | The study reports pharmacokinetics for NNZ-2566, not trofinetide. |
+| PGx | Oosterholt_2017 | not_relevant | 0 | 0 | The paper describes the population pharmacokinetics of NNZ-2566 (trofinetide) in healthy subjects but does not analyze any genetic variants or covariates associated with pharmacogenomics. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrofinetide%5D&body=Drug%3A%20trofinetide%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trofinetide/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 05:01 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 16:25 UTC</sub>

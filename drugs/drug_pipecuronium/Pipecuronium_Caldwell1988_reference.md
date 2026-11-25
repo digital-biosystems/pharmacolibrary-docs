@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The second reader disputed the record, disagreeing with the assigned clearance of 2.4 ml kg-1 min-1 for pipecuronium.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="Pipecuronium" model-id="Pipecuronium_Caldwell1988_reference" status="needs_review" stale="false" population="ASA class I or II patients" measured-compound="pipecuronium and pancuronium" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Caldwell JE, Castagnoli KP, Canfell PC, Fahey MR, Lynam DP, Fisher DM et al. Pip
 
 ### Reviewer guidance
 
-**The second reader disputed the record, disagreeing with the assigned clearance of 2.4 ml kg-1 min-1 for pipecuronium.**
+**cross_check_disputed; x1_cross_check.**
 
-The second reader reported null values for the extracted pipecuronium clearance and volume of distribution, indicating disagreement with the recorded parameters. Additionally, the reader marked the dose compound and primary analyte as unknown, conflicting with the recorded pipecuronium and pancuronium designation. The record relied on abstract-only summary statistics, which likely contributed to these extraction discrepancies. Extracted — pipecuronium and pancuronium: Vss 309 ml kg-1, CL 2.4 ml kg-1 min-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is pipecuronium's own; they describe pipecuronium and pancuronium. Extracted — pipecuronium and pancuronium: Vss 309 ml kg-1, CL 2.4 ml kg-1 min-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pipecuronium and pancuronium, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -141,7 +141,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check contradicted by a second reader: verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

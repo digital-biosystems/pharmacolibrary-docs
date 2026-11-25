@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability F was not extracted from the paper and was set to a placeholder value, so the model was held back.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Koehntop1986_reference" status="needs_review" stale="false" population="neonates" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Koehntop DE, Rodman JH, Brundage DM, Hegland MG, Buckley JJ. Pharmacokinetics of
 
 ### Reviewer guidance
 
-**Bioavailability F was not extracted from the paper and was set to a placeholder value, so the model was held back.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists no explicit estimate for bioavailability (F), so a library placeholder was used instead of a paper-specific value. This missing parameter affects the simulated plasma profile but is not supported by the data in this abstract. The model's structure and other parameters are described, but the lack of a reported F prevents a complete fit. Extracted — fentanyl: V 1.45 L/kg, Vss 5.1 L/kg, CL 17.9 L/h, t1/2z 317 min, kabs 0.27 minute -1, tlag 15 min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fentanyl: V 1.45 L/kg, Vss 5.1 L/kg, CL 17.9 L/h, t1/2z 317 min, kabs 0.27 minute -1, tlag 15 min.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

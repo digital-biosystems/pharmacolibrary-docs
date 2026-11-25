@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Caplacizumab’s reported peripheral volume, V2 (4730 mL), appears in a record rejected for an unreachable or orphan compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="caplacizumab" model-id="Caplacizumab_Jansen2026_reference" status="rejected" stale="false" population="" measured-compound="caplacizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Jansen E, Bockstal V, Herschke F, Olsson Gisleskog P, Rinaldi M, Boerboom A et a
 
 ### Reviewer guidance
 
-**Caplacizumab’s reported peripheral volume, V2 (4730 mL), appears in a record rejected for an unreachable or orphan compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record describes a two-compartment model, with V1 of 3620 mL and V2 of 4730 mL. The stated reason means a compartment has no path from the dose, but the finding does not identify which compartment, so it does not explicitly link the issue to V2. Extracted — caplacizumab: CL 16.4 mL/h, V1 3.62e+03 mL, V2 4.73e+03 mL.
+Extracted — caplacizumab: CL 16.4 mL/h, V1 3.62e+03 mL, V2 4.73e+03 mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 16.4, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record for evogliptin was held back because the second reader disputed the verdict, citing missing covariate effects for volume and central compartment clearance.
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="evogliptin" model-id="Evogliptin_Kim2025_reference" status="needs_review" stale="false" population="patients with varying degrees of renal disease and healthy subjects" measured-compound="evogliptin" parameterization="apparent" topology="2C"></div>
 
@@ -62,13 +62,13 @@ Kim B, Kim JE, Lee S, Oh J, Cho JY, Jang IJ et al. Population pharmacokinetic an
 
 ### Reviewer guidance
 
-**The record for evogliptin was held back because the second reader disputed the verdict, citing missing covariate effects for volume and central compartment clearance.**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-A second reviewer disagreed with the extracted values, noting that apparent volume and peripheral volume should have weight covariates, which this record lacks. The record defines weight-based covariates for intercompartmental clearance, but the second reader disputed the specific power exponents assigned. Additionally, the covariate scenarios defined in the record were not simulated during the model build. Extracted — evogliptin: CL/F 22.1 L/h, V1/F 829 L, kabs 1.26 /h, Q/F 46.3 L/h, V2/F 465 L, Frel 1.
+The base model was simulated, not the covariate effects the record defines. Extracted — evogliptin: CL/F 22.1 L/h, V1/F 829 L, kabs 1.26 /h, Q/F 46.3 L/h, V2/F 465 L, Frel 1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of amyl-f1: this record has none, the second reading 0.36; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -191,7 +191,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage |  | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.65, 0 of 1 reader(s) agree | 0.65 | cross-check disputed by a second reader: verdict disputed, agreement 0.65, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.65 (13 of 20 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.65 | cross-check contradicted by a second reader: verdict disputed; agreement 0.65 (13 of 20 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

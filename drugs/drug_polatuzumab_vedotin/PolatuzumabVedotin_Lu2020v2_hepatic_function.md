@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record for polatuzumab vedotin was rejected because acMMAE lacks clearance and volume, and unconjugated MMAE is an unlinked metabolite.
+> No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="polatuzumab vedotin" model-id="PolatuzumabVedotin_Lu2020v2_hepatic_function" status="rejected" stale="false" population="patients with non-Hodgkin lymphoma" measured-compound="acMMAE" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -49,13 +49,13 @@ Lu D, Lu T, Shi R, Gibiansky L, Agarwal P, Shemesh CS et al. Application of a Tw
 
 ### Reviewer guidance
 
-**The record for polatuzumab vedotin was rejected because acMMAE lacks clearance and volume, and unconjugated MMAE is an unlinked metabolite.**
+**No volume or clearance — not a compartmental population PK model; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model defines no distribution volume or clearance for the measured acMMAE, meaning it is not a compartmental PK model. Additionally, the metabolite unconjugated MMAE has no defined path from the dose, making it unreachable. A reported parameter unit could not be converted to SI units. These structural and parameter deficiencies caused the record to be refused. Extracted — acMMAE: AUC 2.92e+03 ng*day/mL, Cmax 738 ng/mL.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent. None of the extracted parameters is polatuzumab vedotin's own; they describe acMMAE. Extracted — acMMAE: AUC 2.92e+03 ng*day/mL, Cmax 738 ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polatuzumab_vedotin, the second reading polatuzumab vedotin; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

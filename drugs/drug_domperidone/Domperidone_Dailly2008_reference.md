@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Domperidone clearance and volume of distribution values are physiologically implausible for preterm neonates due to abstract-only extraction.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="domperidone" model-id="Domperidone_Dailly2008_reference" status="rejected" stale="false" population="preterm neonates" measured-compound="domperidone" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Dailly E, Drouineau MH, Gournay V, Rozé JC, Jolliet P. Population pharmacokinet
 
 ### Reviewer guidance
 
-**Domperidone clearance and volume of distribution values are physiologically implausible for preterm neonates due to abstract-only extraction.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists a clearance of 0.92 L/h and a volume of distribution of 0.405 L for domperidone. These magnitudes fall outside the physiological window for the preterm neonate population. The values were derived from summary statistics in the abstract rather than a fitted model, leading to the rejection. Extracted — domperidone: CL 0.92 L/h, V 0.405 L, kabs 0.0843 h(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — domperidone: CL 0.92 L/h, V 0.405 L, kabs 0.0843 h(-1).
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

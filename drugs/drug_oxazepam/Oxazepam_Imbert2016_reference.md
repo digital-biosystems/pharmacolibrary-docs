@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The oxazepam record lacks reported absorption rate constant values, forcing reliance on library defaults for the absorption phase.
+> Ka, k12, k21 use library defaults, not estimates from this paper; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="oxazepam" model-id="Oxazepam_Imbert2016_reference" status="needs_review" stale="false" population="alcohol-dependent outpatients treated for alcohol withdrawal syndrome" measured-compound="oxazepam" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="oxazepam" model-id="Oxazepam_Imbert2016_reference" status="needs_review" stale="false" population="alcohol-dependent patients treated for alcohol withdrawal syndrome" measured-compound="oxazepam" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Imbert B, Marsot A, Liachenko N, Simon N. Population Pharmacokinetics of High-Dose Oxazepam in Alcohol-Dependent Patients: Is There a Risk of Accumulation?. Therapeutic drug monitoring 38(2):253–258 (2016).
@@ -17,13 +17,13 @@ Imbert B, Marsot A, Liachenko N, Simon N. Population Pharmacokinetics of High-Do
 
 ## Population and dosing
 
-**Population:** alcohol-dependent outpatients treated for alcohol withdrawal syndrome · condition alcohol withdrawal syndrome · age group adult · n = 63.
+**Population:** alcohol-dependent patients treated for alcohol withdrawal syndrome · condition alcohol withdrawal syndrome · age group adult · n = 63.
 
 ## Model
 
-**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 4 extracted.  
+**Parameters:** 5 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_oxazepam/Oxazepam_Imbert2016_reference/Oxazepam_Imbert2016_reference.svg" alt="Oxazepam_Imbert2016_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -36,11 +36,12 @@ Imbert B, Marsot A, Liachenko N, Simon N. Population Pharmacokinetics of High-Do
 | clearance | CL | 6.8 | L/h |
 | apparent volume of distribution (V) | V/F | 159 | L |
 | duration of absorption (D1) | D1 | 2 | hours |
+| V | V | 69 | L |
 | elimination half-life | t1/2z | 16 | hours |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.889). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,13 +51,13 @@ Imbert B, Marsot A, Liachenko N, Simon N. Population Pharmacokinetics of High-Do
 
 ### Reviewer guidance
 
-**The oxazepam record lacks reported absorption rate constant values, forcing reliance on library defaults for the absorption phase.**
+**Ka, k12, k21 use library defaults, not estimates from this paper; t6_deviations.**
 
-The source abstract does not report an absorption rate constant (ka), leading to the use of default library values. This results in an invented absorption model that is not supported by the paper's data. Consequently, the simulated pharmacokinetic profile reflects assumed rather than estimated absorption characteristics. Extracted — oxazepam: CL 6.8 L/h, V/F 159 L, D1 2 hours, t1/2z 16 hours.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — oxazepam: CL 6.8 L/h, V/F 159 L, D1 2 hours, V 69 L, t1/2z 16 hours.
 
-Independently confirmed by `gpt-oss-120b`.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of v: this record has 69, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -65,7 +66,8 @@ Independently confirmed by `gpt-oss-120b`.
 | clearance | `Q22` · CL | 6.8 | L/h | 1.889e-06 | m3/s | l/h | exact (1) | Imbert_2016:abstract |
 | apparent volume of distribution (V) | `Q76` · V/F | 159 | L | 0.159 | m3 | l | exact (1) | Imbert_2016:abstract |
 | duration of absorption (D1) | `Q310` · D1 | 2 | hours | 7200 | s | h | llm_corrected (0.6) | Imbert_2016:abstract |
-| elimination half-life | `Q57` · t1/2z | 16 | hours | 5.76e+04 | s | h | llm (0.6) | Imbert_2016:abstract |
+| V | `Q61` · V | 69 | L | 0.069 | m3 | L | exact (1) | Imbert_2016:abstract |
+| elimination half-life | `Q57` · t1/2z | 16 | hours | 5.76e+04 | s | h | half_life_rule (0.95) | Imbert_2016:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,33 +77,36 @@ Independently confirmed by `gpt-oss-120b`.
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
+- `defaulted_parameters`: ['ka', 'Tlag', 'k12', 'k21']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 - `invented_absorption`: ka defaulted — not reported in source
 - `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- routed 'interindividual variability of clearance' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- routed 'interindividual variability of V' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
+- implicit units: 'V' → L (from the popPK convention: 'Volume of distribution (Vd) is a volume parameter; in population PK, when not body-weight normalized, the standard unit ')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=oxazepam
+- structure disagreement: deterministic 2C vs LLM 1C — review compartment count
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- derived CL/F=6.88815 L/h from ln2/t½z × V/F = CL/F (Q57 × Q76); not separately reported
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Imbert_2016_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
+| `gpt-oss-120b` | partly confirmed | 0.889 (8/9 fields) | 1 |
 
-_All readers agree on the compared fields of this record._
+<details><summary>1 field discrepancy</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[v]` | 69 |  | only_one_extracted |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -113,16 +118,18 @@ _All readers agree on the compared fields of this record._
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 5 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Imbert_2016:abstract'] |
 | C5_dimension_Q310 | pass | [time] |  | ['Imbert_2016:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Imbert_2016:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Imbert_2016:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Imbert_2016:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 6.8 L/h | ['Imbert_2016:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 69 L | ['Imbert_2016:abstract'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 159 L | ['Imbert_2016:abstract'] |
 
 **Reviewer per-scenario checks:**
@@ -132,12 +139,11 @@ _All readers agree on the compared fields of this record._
 | T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
 | T3_output_variable | pass | C_central (measured=oxazepam) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.889 (8 of 9 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.889 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -153,15 +159,15 @@ _All readers agree on the compared fields of this record._
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_oxazepam/Oxazepam_Imbert2016_reference/Oxazepam_Imbert2016_reference_modelica.zip" download>Oxazepam_Imbert2016_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_oxazepam/Oxazepam_Imbert2016_reference/Oxazepam_Imbert2016_reference_fmi.zip" download>Oxazepam_Imbert2016_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_oxazepam/Oxazepam_Imbert2016_reference/Oxazepam_Imbert2016_reference_modelica.zip" download>Oxazepam_Imbert2016_reference_modelica.zip</a> <span class="pk-size">(4.7 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_oxazepam/Oxazepam_Imbert2016_reference/Oxazepam_Imbert2016_reference_fmi.zip" download>Oxazepam_Imbert2016_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_oxazepam/Oxazepam_Imbert2016_reference/Oxazepam_Imbert2016_reference_matlab.zip" download>Oxazepam_Imbert2016_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_oxazepam/Oxazepam_Imbert2016_reference/Oxazepam_Imbert2016_reference_matlab_simbio.zip" download>Oxazepam_Imbert2016_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_oxazepam/Oxazepam_Imbert2016_reference/Oxazepam_Imbert2016_reference_sbml.zip" download>Oxazepam_Imbert2016_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_oxazepam/Oxazepam_Imbert2016_reference/Oxazepam_Imbert2016_reference_cellml.zip" download>Oxazepam_Imbert2016_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
 
 ## Model interface
@@ -176,7 +182,7 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 5e-05 | kg |
-| input | model | `Cl` | 1.913e-06 | m3/s |
+| input | model | `Cl` | 1.889e-06 | m3/s |
 | input | model | `VdPerKg` | 0.002271 | m3/kg |
 | input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |
@@ -184,7 +190,7 @@ The parameters this record sets on the template, in the template's SI units, and
 
 ## Tested with
 
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
 - Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
 - No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
 
@@ -209,12 +215,12 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 **Administration: oral** — 50 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 50 mg oral (N05BA04) (defined daily dose)._
 
-<dbs-fmusim paramsurl="drugs/drug_oxazepam/Oxazepam_Imbert2016_reference/Oxazepam_Imbert2016_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_oxazepam/Oxazepam_Imbert2016_reference/Oxazepam_Imbert2016_reference_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_oxazepam/Oxazepam_Imbert2016_reference/Oxazepam_Imbert2016_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_oxazepam/Oxazepam_Imbert2016_reference/Oxazepam_Imbert2016_reference_sim_controls.json"></dbs-fmusim>
 
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Oxazepam_Imbert2016_reference_params.json` · controls `Oxazepam_Imbert2016_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Oxazepam_Imbert2016_reference_params.json` · controls `Oxazepam_Imbert2016_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boxazepam%5D%20Oxazepam_Imbert2016_reference&body=Drug%3A%20oxazepam%0ARecord%3A%20Oxazepam_Imbert2016_reference%0APaper%3A%20Imbert_2016%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_oxazepam/Oxazepam_Imbert2016_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:56 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:51 UTC</sub>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Zinc clearance of 0.011 L/h/kg was rejected as physiologically implausible, consistent with a unit or scale extraction error.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="zinc" model-id="Zinc_Cao2025_reference" status="rejected" stale="false" population="" measured-compound="zinc" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Cao M, Katial R, Liu Y, Lu X, Gu Q, Chen C et al. Safety, efficacy, and immunoge
 
 ### Reviewer guidance
 
-**Zinc clearance of 0.011 L/h/kg was rejected as physiologically implausible, consistent with a unit or scale extraction error.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record reports total zinc clearance as 0.011 L/h/kg. The finding identifies its magnitude as outside the physiological window and attributes this to a likely unit or scale extraction error. Extracted — zinc: CL 0.011 L/h/kg, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
+Extracted — zinc: CL 0.011 L/h/kg, V1 3.23 L/h, V2 14.2 L/h, Q 0.591 L/h.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

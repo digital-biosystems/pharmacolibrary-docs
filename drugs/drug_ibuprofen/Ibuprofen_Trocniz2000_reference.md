@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The ibuprofen model fails peak checks because absolute bioavailability was left at a library default instead of using the paper's reported value of 0.63.
+> The model does not reproduce the paper's time of the peak (tmax) (paper 1.9, model 5.09); the model does not reproduce the paper's peak concentration (Cmax) (paper 0.0346, model 0.00308) (+2 more).
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Trocniz2000_reference" status="needs_review" stale="false" population="healthy adults and febrile children" measured-compound="ibuprofen" parameterization="mechanistic" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Trocóniz IF, Armenteros S, Planelles MV, Benítez J, Calvo R, Domínguez R. Pha
 
 ### Reviewer guidance
 
-**The ibuprofen model fails peak checks because absolute bioavailability was left at a library default instead of using the paper's reported value of 0.63.**
+**The model does not reproduce the paper's time of the peak (tmax) (paper 1.9, model 5.09); the model does not reproduce the paper's peak concentration (Cmax) (paper 0.0346, model 0.00308) (+2 more).**
 
-The model predicts a time to peak of 5.09 hours against the paper's reported 1.9 hours, and a peak concentration of 0.00308 kg/m3 against the paper's 0.0346 kg/m3. These significant deviations indicate that the absorption and bioavailability parameters do not match the source data. Specifically, the absolute bioavailability parameter was recorded as a placeholder default rather than the 0.63 value explicitly stated in the paper. This missing explicit estimate for bioavailability drives the simulated profile away from the expected pharmacokinetic behavior. Extracted — ibuprofen: kabs 0.82 h⁻¹, tlag 1.33 h, Fab 0.63, V1 4.4 L, CLb 4.05 L/h, Q 2.09 L/h, V2 6.62 L.
+Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — ibuprofen: kabs 0.82 h⁻¹, tlag 1.33 h, Fab 0.63, V1 4.4 L, CLb 4.05 L/h, Q 2.09 L/h, V2 6.62 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cld (l/h)b].parameter_id`: this record has Q30, the second reading Q22. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -150,10 +150,10 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_cmax | reference | fail | 0.0346 | 0.003082 | 0.0891 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0311 | 0.003082 | 0.0991 | mg/L→SI vs simulated kg/m3 |
-| T1_tmax | reference | fail | 1.9 | 5.086 | 2.677 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 0.9 | 5.086 | 5.651 | hours→SI vs simulated h |
+| T1_cmax | reference | fail | 0.0346 | 0.003082 | 0.0891 | reported 34.6 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0311 | 0.003082 | 0.0991 | reported 31.1 mg/L→SI vs simulated kg/m3 |
+| T1_tmax | reference | fail | 1.9 | 5.086 | 2.677 | reported 1.9 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 0.9 | 5.086 | 5.651 | reported 0.9 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

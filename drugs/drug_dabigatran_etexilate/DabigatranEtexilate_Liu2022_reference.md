@@ -5,11 +5,11 @@
 
 # dabigatran etexilate — `DabigatranEtexilate_Liu2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> This record was reviewed on 2026-11-07 15:12 UTC (Needs review), but the paper was screened again on 2026-10-05 14:06 UTC, so that review may no longer match the record. Until it is reviewed again, the status shown comes from the automatic checks. Only clearance was extracted — no volume.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="dabigatran etexilate" model-id="DabigatranEtexilate_Liu2022_reference" status="needs_review" stale="true" population="healthy Chinese volunteers and patients with non-valvular atrial fibrillation" measured-compound="dabigatran" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dabigatran etexilate" model-id="DabigatranEtexilate_Liu2022_reference" status="needs_review" stale="false" population="healthy Chinese volunteers and patients with non-valvular atrial fibrillation" measured-compound="dabigatran" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Liu YO, Xie QF, Liu ZY, Wang Z, Mu GY, Zhang YT et al. Population pharmacokinetic analysis for dabigatran etexilate in Chinese patients with non-valvular atrial fibrillation. Frontiers in cardiovascular medicine 9:998751 (2022).
@@ -39,7 +39,7 @@ Liu YO, Xie QF, Liu ZY, Wang Z, Mu GY, Zhang YT et al. Population pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

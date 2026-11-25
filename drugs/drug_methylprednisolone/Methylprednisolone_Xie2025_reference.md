@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper Xie_2025 studies a different drug, not methylprednisolone.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="methylprednisolone" model-id="Methylprednisolone_Xie2025_reference" status="rejected" stale="false" population="" measured-compound="methylprednisolone" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Xie H, Zheng Y, Zhang H, Guo Y, Liu M, Weng Q et al. Association of NR1I2 Polymo
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper Xie_2025 studies a different drug, not methylprednisolone.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The extracted parameters for methylprednisolone clearance (27.8 L/h) and volume of distribution (88.2352 L) do not belong to the cited source. The relevance screen confirmed the paper’s title and abstract do not name methylprednisolone, identifying it as a study of another molecule. Extracted — methylprednisolone: CL 27.8 L/h, V 88.2 L.
+Extracted — methylprednisolone: CL 27.8 L/h, V 88.2 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -115,7 +115,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (5 of 5 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

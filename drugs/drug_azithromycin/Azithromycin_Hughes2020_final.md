@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The review rejected the azithromycin record because the third intercompartmental clearance parameter lacked a defined unit for conversion.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q329 unit hour−1 (1 / [time]) vs [length] ** 3 / [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="azithromycin" model-id="Azithromycin_Hughes2020_final" status="rejected" stale="false" population="healthy adults and patients" measured-compound="azithromycin" parameterization="apparent" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Hughes JH, Sweeney K, Ahadieh S, Ouellet D. Predictions of Systemic, Intracellul
 
 ### Reviewer guidance
 
-**The review rejected the azithromycin record because the third intercompartmental clearance parameter lacked a defined unit for conversion.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q329 unit hour−1 (1 / [time]) vs [length] ** 3 / [mass] / [time].**
 
-The structural parameter for the third intercompartmental clearance was recorded with a time-based unit, creating a dimensional conflict with the required volume flow dimensions. This specific unit was not recognized in the reference system, preventing its conversion to standard units. Consequently, the parameter remained undefined in the model structure, leading to its refusal. Extracted — azithromycin: kabs 0.259 hour−1, CL/F 100 L/hour, V1/F 186 L, Q/F 180 L/hour, Q2/F 10.6 L/hour, V3/F 2.61e+03 L, kon 0.56 hour−1, koff 0.05 hour−1.
+A reported unit could not be converted (kon), so that value has no SI equivalent. Extracted — azithromycin: kabs 0.259 hour−1, CL/F 100 L/hour, V1/F 186 L, Q/F 180 L/hour, Q2/F 10.6 L/hour, V3/F 2.61e+03 L, kon 0.56 hour−1, koff 0.05 hour−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of dfmuscle: this record has none, the second reading 0.55. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

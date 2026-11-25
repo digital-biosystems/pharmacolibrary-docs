@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Tralokinumab's volume of distribution and absorption lag time were left at placeholder defaults, quarantining the model.
+> No value for tralokinumab's volume of distribution and absorption lag time; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="tralokinumab" model-id="Tralokinumab_Soehoel2022_reference" status="model_quarantined" stale="false" population="adults with atopic dermatitis, asthma, and healthy subjects" measured-compound="tralokinumab" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Soehoel A, Larsen MS, Timmermann S. Population Pharmacokinetics of Tralokinumab 
 
 ### Reviewer guidance
 
-**Tralokinumab's volume of distribution and absorption lag time were left at placeholder defaults, quarantining the model.**
+**No value for tralokinumab's volume of distribution and absorption lag time; t6_deviations.**
 
-The record lists parameters for a one-compartment structure but lacks explicit values for volume of distribution and absorption lag time. Additionally, the second reader disagreed on the covariate coefficient for absorption rate, where one reader found a value of -0.519 and the other found null. Extracted — tralokinumab: kabs 0.184 1/day, V2 2.71 L, CL 0.149 L/day, V3 1.44 L, Q 0.159 L/day, Fab 0.761 bioavailability.
+The model was built, but tralokinumab's volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. A reported unit could not be converted (Fab), so that value has no SI equivalent. Extracted — tralokinumab: kabs 0.184 1/day, V2 2.71 L, CL 0.149 L/day, V3 1.44 L, Q 0.159 L/day, Fab 0.761 bioavailability.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of f ∼ dilution f: this record has none, the second reading 0.354; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -174,7 +174,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.895, 0 of 1 reader(s) agree | 0.895 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.895 (17 of 19 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.895 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

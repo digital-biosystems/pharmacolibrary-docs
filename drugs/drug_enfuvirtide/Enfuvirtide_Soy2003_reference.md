@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Enfuvirtide bioavailability and lag time defaulted to placeholders instead of using the paper's reported values.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="enfuvirtide" model-id="Enfuvirtide_Soy2003_reference" status="needs_review" stale="false" population="pediatric patients with human immunodeficiency virus" measured-compound="enfuvirtide" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Soy D, Aweeka FT, Church JA, Cunningham CK, Palumbo P, Kosel BW et al. Populatio
 
 ### Reviewer guidance
 
-**Enfuvirtide bioavailability and lag time defaulted to placeholders instead of using the paper's reported values.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record was built from the abstract, so summary statistics stood in for a fitted model. Bioavailability (F) and lag time (Tlag) were not extracted, leaving them at library defaults rather than paper-supported estimates. The second reader also could not confirm the absorption rate constant value of 0.455. Extracted — enfuvirtide: CL 1.42 L/h, V 5.67 L, kabs 0.455 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — enfuvirtide: CL 1.42 L/h, V 5.67 L, kabs 0.455 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 0.455, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.857 (6 of 7 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

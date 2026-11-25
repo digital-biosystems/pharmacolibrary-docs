@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Relebactam’s clearance was held at a placeholder despite listed CL 7.02; its distribution volume and central-to-peripheral rate constant were also left without values, prompting quarantine.
+> No value for relebactam's clearance, volume of distribution and central→peripheral rate constant; the covariate scenarios were not simulated (+2 more).
 
 <div class="pk-model-meta" hidden drug="Relebactam" model-id="Relebactam_Bhagunde2019_reference" status="model_quarantined" stale="false" population="healthy volunteers and patients with bacterial infections" measured-compound="relebactam and imipenem" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Bhagunde P, Patel P, Lala M, Watson K, Copalu W, Xu M et al. Population Pharmaco
 
 ### Reviewer guidance
 
-**Relebactam’s clearance was held at a placeholder despite listed CL 7.02; its distribution volume and central-to-peripheral rate constant were also left without values, prompting quarantine.**
+**No value for relebactam's clearance, volume of distribution and central→peripheral rate constant; the covariate scenarios were not simulated (+2 more).**
 
-The findings state that relebactam’s clearance, volume of distribution, and central-to-peripheral rate constant had no value: placeholders stood in, and the model was held back rather than published with invented numbers. This conflicts with the parameter table, which lists CL 7.02, V1 11.08, and V2 6.41; the covariate scenarios were also not simulated, as only the reference individual was simulated despite recorded covariate effects of 0.75 and 0.70. A second reader disputed the record (agreement 0.545; 0 of 1 agreed), identifying the dose compound and primary analyte as unknown and disagreeing over the covariate-effect assignments. Extracted — relebactam: CL 7.02 L/hour, V1 11.1 L, V2 6.41 L, Q 10.4 L/hour.
+The model was built, but relebactam's clearance, volume of distribution and central→peripheral rate constant had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. The base model was simulated, not the covariate effects the record defines. Extracted — relebactam: CL 7.02 L/hour, V1 11.1 L, V2 6.41 L, Q 10.4 L/hour.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has imipenem and relebactam, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,7 +147,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.545, 0 of 1 reader(s) agree | 0.545 | cross-check disputed by a second reader: verdict disputed, agreement 0.545, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.545 | cross-check contradicted by a second reader: verdict disputed; agreement 0.545 (6 of 11 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 364.1 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmax | reference | skipped | 250.8 |  |  | no simulated metric for this quantity (single reference sim) |
 

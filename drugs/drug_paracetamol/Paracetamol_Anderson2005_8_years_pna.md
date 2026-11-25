@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The hydrolysis half-life value of 0.0054 h lacks a valid rate constant unit, and the missing propacetamol-to-paracetamol link leaves the model structurally incomplete.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Anderson2005_8_years_pna" status="rejected" stale="false" population="children" measured-compound="paracetamol" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Anderson BJ, Pons G, Autret-Leca E, Allegaert K, Boccard E. Pediatric intravenou
 
 ### Reviewer guidance
 
-**The hydrolysis half-life value of 0.0054 h lacks a valid rate constant unit, and the missing propacetamol-to-paracetamol link leaves the model structurally incomplete.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].**
 
-The parameter labeled 'T1/2 hyd' (hydrolysis half-life) is recorded with a unit of hours, which is dimensionally invalid for the rate constant field it occupies. Additionally, the record contains no defined link between propacetamol and paracetamol, despite the metabolite structure indicating propacetamol forms paracetamol via hydrolysis. These structural and dimensional errors prevented the model from passing validation checks. Extracted — paracetamol: CLm/F 16.3 L·h⁻¹ 70 kg⁻¹, V1 0.34 L·kg⁻¹, Q 1 L·h⁻¹·kg⁻¹, kabs 0.0054 h, V2 30.4 L·70 kg⁻¹.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — paracetamol: CLm/F 16.3 L·h⁻¹ 70 kg⁻¹, V1 0.34 L·kg⁻¹, Q 1 L·h⁻¹·kg⁻¹, kabs 0.0054 h, V2 30.4 L·70 kg⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading propacetamol → paracetamol (hydrolysis); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

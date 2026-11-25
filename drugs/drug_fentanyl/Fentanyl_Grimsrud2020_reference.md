@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The fentanyl model was held back because parameter F used library defaults instead of estimates from the study.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fentanyl" model-id="Fentanyl_Grimsrud2020_reference" status="needs_review" stale="false" population="pediatric burn patients" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Grimsrud KN, Lima KM, Tran NK, Palmieri TL. Characterizing Fentanyl Variability 
 
 ### Reviewer guidance
 
-**The fentanyl model was held back because parameter F used library defaults instead of estimates from the study.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record lists an equation variable with a value of 9, which the second reader identified as a placeholder rather than a reported parameter. The model builder substituted library defaults for this parameter because it was not explicitly extracted from the paper. Since these default values affect the simulated profile but are not supported by the source study, the record remains in a needs review state. Extracted — fentanyl: CL 7.19 L/hr, Q 2.16 L/hr, V1 4.01 L, V2 25.1 L, kabs 0.27 minute -1, tlag 15 min.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — fentanyl: CL 7.19 L/hr, Q 2.16 L/hr, V1 4.01 L, V2 25.1 L, kabs 0.27 minute -1, tlag 15 min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of flame: this record has 9, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

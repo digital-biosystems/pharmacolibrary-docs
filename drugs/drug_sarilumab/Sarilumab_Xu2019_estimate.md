@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The intercompartmental clearance unit was dimensionally inconsistent with its parameter definition, and the absorption rate constant unit could not be standardized.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/day ([mass] / [time]) vs [mass] / [time]; Q49 unit day ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="sarilumab" model-id="Sarilumab_Xu2019_estimate" status="rejected" stale="false" population="patients with rheumatoid arthritis" measured-compound="sarilumab" parameterization="apparent" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Xu C, Su Y, Paccaly A, Kanamaluru V. Population Pharmacokinetics of Sarilumab in
 
 ### Reviewer guidance
 
-**The intercompartmental clearance unit was dimensionally inconsistent with its parameter definition, and the absorption rate constant unit could not be standardized.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mg/day ([mass] / [time]) vs [mass] / [time]; Q49 unit day ([time]) vs 1 / [time].**
 
-The intercompartmental clearance parameter was recorded with a mass per time dimension, which conflicts with its required flow dimension of volume per time. The absorption rate constant was specified in days, a unit that could not be converted to standard SI units for the model. These dimensional and unit conversion errors caused the structural parameter check to fail, resulting in the rejection of the model. Extracted — sarilumab: Vmax 8.06 mg/day, Km 0.939 mg/L, V1/F 2.08 L, CL/F 0.26 L/day, kabs 0.136 day, Q/F 0.156 L/day, V2/F 5.23 L, Vnorm 0.0299.
+A reported unit could not be converted (Vmax, Km and kabs), so that value has no SI equivalent. Extracted — sarilumab: Vmax 8.06 mg/day, Km 0.939 mg/L, V1/F 2.08 L, CL/F 0.26 L/day, kabs 0.136 day, Q/F 0.156 L/day, V2/F 5.23 L, Vnorm 0.0299.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ada_effect_on_clo_f: this record has 1.43, the second reading none; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

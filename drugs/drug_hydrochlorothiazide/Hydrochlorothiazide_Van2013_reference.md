@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the intercompartmental clearance (17.2 1/h) has the wrong dimension for a two-compartment structure.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q26 unit 1/h (1 / [time]) vs [length] ** 3 / [time]; Q79 unit 1/h (1 / [time]) vs [length] ** 3 / [time]; Q30 unit 1/h (1 / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Van2013_reference" status="rejected" stale="false" population="healthy subjects and CHF patients" measured-compound="hydrochlorothiazide" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Van Wart SA, Shoaf SE, Mallikaarjun S, Mager DE. Population-based meta-analysis 
 
 ### Reviewer guidance
 
-**The model was rejected because the intercompartmental clearance (17.2 1/h) has the wrong dimension for a two-compartment structure.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q26 unit 1/h (1 / [time]) vs [length] ** 3 / [time]; Q79 unit 1/h (1 / [time]) vs [length] ** 3 / [time]; Q30 unit 1/h (1 / [time]) vs [length] ** 3 / [time].**
 
-The record lists the intercompartmental clearance as 17.2 1/h, but a structural parameter linking two volume compartments must have the dimension of volume per time. The review identified this as a fundamental dimension mismatch, noting that the unit 1/h conflicts with the required volume/time dimension. Consequently, the parameter reached the model builder without a valid SI value because the unit could not be converted. A secondary reader also disputed the absence of a value for a covariate parameter, citing a figure of 2.84 not present in the extracted record. Extracted — hydrochlorothiazide: kabs 1.34 h⁻¹, CLR 18.3 1/h, CLNR 2.44 1/h, V1 97.3 l, Q 17.2 1/h, V2 178 l.
+A reported unit could not be converted (CLR, CLNR and Q), so that value has no SI equivalent. Extracted — hydrochlorothiazide: kabs 1.34 h⁻¹, CLR 18.3 1/h, CLNR 2.44 1/h, V1 97.3 l, Q 17.2 1/h, V2 178 l.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of γ: this record has none, the second reading 2.84. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

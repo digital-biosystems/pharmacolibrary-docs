@@ -1,0 +1,40 @@
+{
+ "dose_source": "paper",
+ "model_id": "Lenvatinib_Tamai2017_final_final_model_population_mean_rse",
+ "molar_masses": {
+  "central.C": 0.42686
+ },
+ "note": "Values for the shared PK_2C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  8.0,
+  12.0,
+  16.0
+ ],
+ "parameters": {
+  "Cl": 1.7861111111111111e-06,
+  "F": 1.0,
+  "MM": 0.42686,
+  "Tlag": 0.0,
+  "VdPerKg": 0.0006714285714285714,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 8e-06,
+  "k12": 2.340425531914894e-05,
+  "k21": 3.525641025641026e-05,
+  "ka": 0.0002888888888888889,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 8787.174348697396
+ },
+ "reference_peaks": {
+  "central.C": 7.355164495784e-05
+ },
+ "stop_time": 104400.0,
+ "template": "PK_2C_enteral",
+ "template_fmu": "PK_2C_enteral.fmu"
+}

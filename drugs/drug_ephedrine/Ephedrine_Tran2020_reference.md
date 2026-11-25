@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ephedrine CL/F of 22.5 L/h was rejected because the paper concerns acetaminophen, with ephedrine only a covariate.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="ephedrine" model-id="Ephedrine_Tran2020_reference" status="rejected" stale="false" population="" measured-compound="ephedrine" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Tran QT, Park SJ, Back HM, Ngo LT, Cao DT, Nguyen HV et al. Clinical Evaluation 
 
 ### Reviewer guidance
 
-**Ephedrine CL/F of 22.5 L/h was rejected because the paper concerns acetaminophen, with ephedrine only a covariate.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The record also lists ephedrine V/F as 16.3 L, but the source is a secondary review of acetaminophen pharmacokinetics, not an ephedrine study. The model builder defaulted ka and Tlag, assumed F=1 and Fm=1 with no molar correction, and imposed first-order depot input. A second reader disputed the record, including its 1C versus 2C structure. Extracted — ephedrine: CL/F 22.5 L/h, V/F 16.3 L.
+Extracted — ephedrine: CL/F 22.5 L/h, V/F 16.3 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has 48, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.333 (4 of 12 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check contradicted by a second reader: verdict disputed; agreement 0.333 (4 of 12 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because the peripheral compartment was unreachable from the dose, and the absorption lag time unit could not be converted to standard SI units.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="amoxicillin" model-id="Amoxicillin_Spyker1977_means" status="rejected" stale="false" population="healthy adults" measured-compound="amoxicillin" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Spyker DA, Rugloski RJ, Vann RL, O'Brien WM. Pharmacokinetics of amoxicillin: do
 
 ### Reviewer guidance
 
-**The model was rejected because the peripheral compartment was unreachable from the dose, and the absorption lag time unit could not be converted to standard SI units.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists a peripheral volume of distribution, implying a two-compartment structure, but the findings indicate no path connects this compartment to the dose. Additionally, the unit for the absorption lag time could not be converted to standard SI units, preventing a valid numeric representation. A second reader also noted missing parameter values, such as an apparent volume of 0.282. Extracted — amoxicillin: λ1 4.3 /h, k12 1.77 /h, k21 1.91 /h, kel 1.37 /h, CL 0.32 liters/kg/h, V1 0.2 liters/kg, V 0.41 liters/kg, Ae 56.4 % dose, … (+3).
+A reported unit could not be converted (Ae ), so that value has no SI equivalent. Extracted — amoxicillin: λ1 4.3 /h, k12 1.77 /h, k21 1.91 /h, kel 1.37 /h, CL 0.32 liters/kg/h, V1 0.2 liters/kg, V 0.41 liters/kg, Ae 56.4 % dose, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

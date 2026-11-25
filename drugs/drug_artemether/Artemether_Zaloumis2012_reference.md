@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Artemether's clearance, volume of distribution, and absorption lag time were left at library placeholders, causing the model to be quarantined.
+> No value for artemether's clearance, volume of distribution and absorption lag time — all 5 extracted parameters describe dihydroartemisinin, not artemether; t3_param_coverage (+3 more).
 
 <div class="pk-model-meta" hidden drug="artemether" model-id="Artemether_Zaloumis2012_reference" status="model_quarantined" stale="false" population="simulated P. falciparum malaria patients" measured-compound="artemether" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -51,13 +51,13 @@ Zaloumis S, Humberstone A, Charman SA, Price RN, Moehrle J, Gamo-Benito J et al.
 
 ### Reviewer guidance
 
-**Artemether's clearance, volume of distribution, and absorption lag time were left at library placeholders, causing the model to be quarantined.**
+**No value for artemether's clearance, volume of distribution and absorption lag time — all 5 extracted parameters describe dihydroartemisinin, not artemether; t3_param_coverage (+3 more).**
 
-All five extracted parameters describe dihydroartemisinin, leaving artemether's clearance, volume of distribution, and absorption lag time without explicit values. A second reader disagreed with the metabolite link and several parameter assignments, resulting in zero agreement. The mismatch between the intended parent-metabolite structure and the actual one-compartment oral model also contributed to the hold. Extracted — dihydroartemisinin: kabs 0.37 /h, CL/F 180 L/h, V1/F 217 L, Q/F 4.08 L/h, V2/F 272 L.
+The model was built, but artemether's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — dihydroartemisinin: kabs 0.37 /h, CL/F 180 L/h, V1/F 217 L, Q/F 4.08 L/h, V2/F 272 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has artesunate → dihydroartemisinin (metabolism), the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -158,7 +158,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 5 scholar param(s) emitted or defaulted | 4 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (3 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (3 of 15 compared fields agree, 11 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

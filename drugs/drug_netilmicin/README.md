@@ -49,7 +49,7 @@ Netilmicin is a semisynthetic aminoglycoside antibiotic used to treat serious ba
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span> | [Mattie_1990_ER](drugs/drug_netilmicin/pd_Mattie_1990_ER.md) | effect in vitro (ER) biomarker turnover ← netilmicin | — | Mattie H, A predictive parameter of antibacterial…, Scandinavian journal of inf… (1990) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 0.90).">mouse</span> | [Mattie_1990_ER](drugs/drug_netilmicin/pd_Mattie_1990_ER.md) | effect in vitro (ER) biomarker turnover ← netilmicin | — | Mattie H, A predictive parameter of antibacterial…, Scandinavian journal of inf… (1990) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

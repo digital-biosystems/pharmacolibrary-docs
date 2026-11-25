@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption parameters for canrenone defaulted to library placeholders and cross-reader agreement was too low to publish the abstract-only summary statistics.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="canrenone" model-id="Canrenone_Suyagh2013_reference" status="needs_review" stale="false" population="paediatric patients" measured-compound="canrenone" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Suyagh M, Hawwa AF, Collier PS, Millership JS, Kole P, Millar M et al. Potassium
 
 ### Reviewer guidance
 
-**Absorption parameters for canrenone defaulted to library placeholders and cross-reader agreement was too low to publish the abstract-only summary statistics.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record lacks reported absorption rate values, forcing the use of placeholder defaults unsupported by the paper. Only one reader could confirm the reported clearance and volume parameters, resulting in a 0.4 agreement ratio that fell below the required 0.5 threshold. Because the source material was abstract-only, the extracted summary statistics lacked sufficient consistency to validate the model structure. Extracted — canrenone: CLm/F 1.11 l/h, Vm/F 20.5 l, t1/2z 20 h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — canrenone: CLm/F 1.11 l/h, Vm/F 20.5 l, t1/2z 20 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl/f: this record has none, the second reading 1.11; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | skipped |  |  |  | no structural disposition parameters in record |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict partial, agreement 0.4, 0 of 1 reader(s) agree | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial, agreement 0.4, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.4 | cross-check agreement 0.4 is below 0.5: verdict partial; agreement 0.4 (4 of 10 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

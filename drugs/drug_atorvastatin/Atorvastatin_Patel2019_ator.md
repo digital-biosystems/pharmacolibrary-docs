@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> A three-compartment model contains an unreachable compartment, and the record incorrectly includes metformin alongside atorvastatin.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Patel2019_ator" status="rejected" stale="false" population="Wistar rats" measured-compound="atorvastatin, metformin" parameterization="apparent" topology="3C"></div>
 
@@ -60,13 +60,13 @@ Patel O, Muller CJF, Joubert E, Rosenkranz B, Taylor MJC, Louw J et al. Pharmaco
 
 ### Reviewer guidance
 
-**A three-compartment model contains an unreachable compartment, and the record incorrectly includes metformin alongside atorvastatin.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure defines three compartments, but one lacks a connection to the dose, rendering it pharmacokinetically unusable. Additionally, metformin is listed as a measured compound despite being absent from the parameter set. These structural and content errors result in the record's rejection. Extracted — atorvastatin: tmax 0.78 h, Cmax 8.42 µg/mL, t1/2z 4.6 h, AUCt 23.2 µg/mL*h, AUC∞ 37.5 µg/mL*h, MRT 7.71 h, V/F 6.88 L/kg, CL/F 1.11 L/kg*hr, … (+4).
+Extracted — atorvastatin: tmax 0.78 h, Cmax 8.42 µg/mL, t1/2z 4.6 h, AUCt 23.2 µg/mL*h, AUC∞ 37.5 µg/mL*h, MRT 7.71 h, V/F 6.88 L/kg, CL/F 1.11 L/kg*hr, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atorvastatin, metformin, the second reading atorvastatin; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

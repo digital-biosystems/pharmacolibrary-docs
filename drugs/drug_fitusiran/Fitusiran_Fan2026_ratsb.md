@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
-> Fitusiran was rejected because target concentration Rtot (33.1 nM) and maximum metabolic rate Vmax (1.94 nmol/h) have dimensions inconsistent with the model’s required mass-based dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q333 unit nM ([length]) vs [mass] / [length] ** 3; Q66 unit nmol/h ([substance] / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="fitusiran" model-id="Fitusiran_Fan2026_ratsb" status="rejected" stale="false" population="multiple species (mouse, rat, monkey, human)" measured-compound="fitusiran" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Fan X, Xiao Y, Cao K, Zhang R, Yan X. A computational model-powered platform to 
 
 ### Reviewer guidance
 
-**Fitusiran was rejected because target concentration Rtot (33.1 nM) and maximum metabolic rate Vmax (1.94 nmol/h) have dimensions inconsistent with the model’s required mass-based dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q333 unit nM ([length]) vs [mass] / [length] ** 3; Q66 unit nmol/h ([substance] / [time]) vs [mass] / [time].**
 
-Rtot is a total target concentration, but its nM unit was interpreted as length rather than amount per volume; Vmax is a maximum metabolic rate, but nmol/h was interpreted as amount per time rather than mass per time. A reported unit could not be converted to SI, so the parameter reached the model without an SI value. Extracted — fitusiran: kabs 0.71 1/h, fu 0.21, Rtot 33.1 nM, Vmax 1.94 nmol/h, Km 37.7, koff 0.021 1/h, kint 1.22e+03 1/h, kel 0.014 1/h.
+A reported unit could not be converted (Rtot and Vmax), so that value has no SI equivalent. Extracted — fitusiran: kabs 0.71 1/h, fu 0.21, Rtot 33.1 nM, Vmax 1.94 nmol/h, Km 37.7, koff 0.021 1/h, kint 1.22e+03 1/h, kel 0.014 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has fitusiran, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Dihydroartemisinin lacks an extracted volume of distribution, rendering its compartment unidentifiable, while other parameters have missing or disputed values.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="artemether" model-id="Artemether_Hoglund2015_reference" status="rejected" stale="false" population="HIV-infected patients treated with antiretroviral therapy" measured-compound="artemether" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -55,13 +55,13 @@ Hoglund RM, Byakika-Kibwika P, Lamorde M, Merry C, Ashton M, Hanpithakpong W et 
 
 ### Reviewer guidance
 
-**Dihydroartemisinin lacks an extracted volume of distribution, rendering its compartment unidentifiable, while other parameters have missing or disputed values.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The metabolite dihydroartemisinin has a structure defined but no specific volume value was recorded, resulting in a placeholder that fails to define the compartment's physical capacity. The second reader could not verify the extracted values for absorption rate, lag time, and MF50, indicating a lack of confirmation in the source text. Additionally, the number of transit compartments for lumefantrine was recorded as 3, whereas the second reader identified the value as 1. Extracted — lumefantrine: n_transit 3 l, Fab 1 l, Vmax 1 l; artemether: CL 168 %, kabs 0.0577 h−1, tlag 1.31 h.
+A reported unit could not be converted (n_transit, Fab and CL), so that value has no SI equivalent. Extracted — lumefantrine: n_transit 3 l, Fab 1 l, Vmax 1 l; artemether: CL 168 %, kabs 0.0577 h−1, tlag 1.31 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ka: this record has 0.0577, the second reading none; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

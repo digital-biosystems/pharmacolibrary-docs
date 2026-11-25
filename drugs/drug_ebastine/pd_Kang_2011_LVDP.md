@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R06A&quot;,&quot;href&quot;:&quot;atc/R06A.md&quot;},{&quot;label&quot;:&quot;ebastine&quot;,&quot;href&quot;:&quot;drugs/drug_ebastine/&quot;},{&quot;label&quot;:&quot;Kang_2011 \u00b7 PD change in left ventricular developed pressure&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R06A&quot;,&quot;href&quot;:&quot;atc/R06A.md&quot;},{&quot;label&quot;:&quot;ebastine&quot;,&quot;href&quot;:&quot;drugs/drug_ebastine/&quot;},{&quot;label&quot;:&quot;Kang_2011 \u00b7 PD left ventricular developed pressure&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# change in left ventricular developed pressure — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.429). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
+# left ventricular developed pressure — PD  <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.714). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="pk-legend"><summary>PGx evidence and model availability</summary><table><tbody><tr><td><span class="pk-badge pk-badge--green">quantitative</span></td><td>Phenotype/genotype-specific effect on a named model parameter (θ).</td></tr><tr><td><span class="pk-badge pk-badge--neutral">qualitative</span></td><td>Gene–drug association without a quantitative parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">guideline estimate</span></td><td>CPIC/DPWG-derived estimate, not a primary-paper estimate.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">safety allele</span></td><td>Adverse-reaction risk allele; no quantitative PK/PD parameter effect.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>the extraction is incomplete or inconsistent.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted.</td></tr><tr><td><span class="pk-badge pk-badge--green">▶ simulatable</span></td><td>Phenotype-specific browser simulation and downloadable PGx model available.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">model only</span></td><td>PGx model available; browser simulation unavailable.</td></tr></tbody></table></details>
 
@@ -15,7 +15,7 @@
 
 ## Record summary
 
-**As extracted:** Ebastine (concentrations from this paper's PK model) drives change in left ventricular developed pressure (in mmHg): direct Emax (saturable) effect.
+**As extracted:** Ebastine (concentrations from this paper's PK model) drives left ventricular developed pressure (in mmHg): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
@@ -27,7 +27,7 @@
 - **model family:** `emax`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/additive
+- **effect:** inhibition/proportional
 
 ## Citation
 Kang W et al., Myocardial pharmacokinetics of ebastine…, British journal of pharmaco… (2011)
@@ -36,8 +36,9 @@ Kang W et al., Myocardial pharmacokinetics of ebastine…, British journal of ph
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | link | source |
 |---|---|---|---|---|---|---|
-| PD (effect) | E0 | `Q324` ·  | 107 ± 5.4 | mmHg | llm | Kang_2011:pdv3 |
-| PD (effect) | EC50 | `Q321` ·  | 8.9 | ng•mL -1 | review_gapfill | Kang_2011:review |
+| PD (effect) | E0 | `Q324` ·  | 107 | mmHg | llm | Kang_2011:pdv3 |
+| PD (effect) | Emax | `Q323` ·  | 107 | mmHg | direction | Kang_2011:pdv3 |
+| PD (effect) | EC50 | `Q321` ·  | 8.9 | ng/mL | llm | Kang_2011:pdv3 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -46,20 +47,18 @@ Kang W et al., Myocardial pharmacokinetics of ebastine…, British journal of ph
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `openai:gpt-6-luna`; retained regardless of cross-check verdict.
+Primary extraction: `einfracz:qwen3.8-27b`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss-120b` | not confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>4 field discrepancies</summary>
+<details><summary>2 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `qwen3.8-27b` | `effect_form` | additive | proportional | mismatch |
-| `qwen3.8-27b` | `parameters[Q321]` |  | 8.9 | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q321]` | 8.9 |  | only_one_extracted |
-| `qwen3.8-27b` | `parameters[Q324].value` | 107 ± 5.4 | 107 | mismatch |
+| `gpt-oss-120b` | `effect_form` | proportional | additive | mismatch |
+| `gpt-oss-120b` | `parameters[Q323]` | 107 |  | only_one_extracted |
 
 </details>
 

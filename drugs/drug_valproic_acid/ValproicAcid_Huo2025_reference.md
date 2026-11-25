@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper models lamotrigine, not valproic acid, which was only a co-medication.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="valproic acid" model-id="ValproicAcid_Huo2025_reference" status="rejected" stale="false" population="" measured-compound="valproic_acid" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Huo J, Liu Y, Yang J, Chen M, Yang L, Wang L et al. Dosing Optimization of Lamot
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper models lamotrigine, not valproic acid, which was only a co-medication.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The paper reports pharmacokinetic parameters for lamotrigine, with valproic acid mentioned only as a co-administered drug affecting lamotrigine clearance. Consequently, the extracted parameters for valproic acid, such as CL/F of 2.42 L/h and V/F of 68.8 L, actually describe the other molecule's kinetics. Additionally, the model builder applied apparent assumptions, setting bioavailability F to 1, rather than deriving values from the source text for valproic acid. Extracted — valproic acid: CL/F 2.42 L/h, V/F 68.8 L, kabs 1.93 h−1.
+Extracted — valproic acid: CL/F 2.42 L/h, V/F 68.8 L, kabs 1.93 h−1.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -123,7 +123,7 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (6 of 6 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

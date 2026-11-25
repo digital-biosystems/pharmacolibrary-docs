@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Paracetamol's absorption rate constant was rejected because its unit (hours) dimensionally conflicts with a rate constant (time⁻¹).
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="paracetamol" model-id="Paracetamol_Anderson2005_3_months_pna" status="rejected" stale="false" population="children" measured-compound="paracetamol" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Anderson BJ, Pons G, Autret-Leca E, Allegaert K, Boccard E. Pediatric intravenou
 
 ### Reviewer guidance
 
-**Paracetamol's absorption rate constant was rejected because its unit (hours) dimensionally conflicts with a rate constant (time⁻¹).**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].**
 
-The absorption rate constant for paracetamol is listed with a value of 0.0038 and a unit of hours (h). A rate constant requires the dimension of inverse time, creating a fundamental mismatch with the provided unit. Consequently, the parameter lacks a valid SI value, preventing the model from being processed. Extracted — paracetamol: CLm/F 8.8 L·h⁻¹ 70 kg⁻¹, V1 0.34 L·kg⁻¹, Q 1.42 L·h⁻¹·kg⁻¹, kabs 0.0038 h, V2 35.2 L·70 kg⁻¹.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — paracetamol: CLm/F 8.8 L·h⁻¹ 70 kg⁻¹, V1 0.34 L·kg⁻¹, Q 1.42 L·h⁻¹·kg⁻¹, kabs 0.0038 h, V2 35.2 L·70 kg⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading propacetamol → paracetamol (hydrolysis); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

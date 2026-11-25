@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cattle</span>
 
-> The mecillinam record failed peer review because the second reader disputed the parameterization and specific values like the volume of distribution.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="mecillinam" model-id="Mecillinam_Soback1986_reference" status="needs_review" stale="false" population="neonatal calves" measured-compound="mecillinam" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Soback S, Bor A, Paz R, Ziv G. Clinical pharmacology of mecillinam in calves. Jo
 
 ### Reviewer guidance
 
-**The mecillinam record failed peer review because the second reader disputed the parameterization and specific values like the volume of distribution.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so summary statistics stood in for a fitted model. The second reader disagreed on the model parameterization, preferring apparent over mechanistic. Additionally, the readers disagreed on specific parameter assignments, such as the 0.568 l/kg volume of distribution. Extracted — mecillinam: t1/2α 11.7 min, t1/2β 53.3 min, V 0.568 l/kg, t1/2z 65 min, CL 3.45 mL/min/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mecillinam: t1/2α 11.7 min, t1/2β 53.3 min, V 0.568 l/kg, t1/2z 65 min, CL 3.45 mL/min/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -150,7 +150,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.308, 0 of 1 reader(s) agree | 0.308 | cross-check disputed by a second reader: verdict disputed, agreement 0.308, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.308 (4 of 13 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.308 | cross-check contradicted by a second reader: verdict disputed; agreement 0.308 (4 of 13 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

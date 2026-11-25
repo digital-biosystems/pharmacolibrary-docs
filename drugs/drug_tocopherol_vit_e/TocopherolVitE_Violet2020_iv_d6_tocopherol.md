@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because d6-α-tocopherol’s elimination rate constant is reported as 0.024 with a unit incompatible with an inverse-time parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit Ke ([current] * [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="tocopherol (vit E)" model-id="TocopherolVitE_Violet2020_iv_d6_tocopherol" status="rejected" stale="false" population="women with obesity-associated hepatosteatosis and healthy controls" measured-compound="d6-α-tocopherol" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Violet PC, Ebenuwa IC, Wang Y, Niyyati M, Padayatty SJ, Head B et al. Vitamin E 
 
 ### Reviewer guidance
 
-**The record was rejected because d6-α-tocopherol’s elimination rate constant is reported as 0.024 with a unit incompatible with an inverse-time parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit Ke ([current] * [time]) vs 1 / [time].**
 
-The unit “Ke” is associated with [current] × [time], whereas an elimination rate constant requires 1/[time]; the reported unit could not be converted to SI. The second reader identified the dose compound and primary analyte as deuterated α-tocopherol (d3 and d6), rather than this record’s deuterated α-tocopherols and d6-α-tocopherol, and supplied 24.4 for VLDL % enrichment AUC where this record has no value. Extracted — d6-α-tocopherol: kel 0.024 Ke, t1/2z 30 h, Cmax 0.48, tmax 7.7 h, AUCt 17.5.
+A reported unit could not be converted (kel), so that value has no SI equivalent. None of the extracted parameters is tocopherol vit e's own; they describe d6-α-tocopherol. Extracted — d6-α-tocopherol: kel 0.024 Ke, t1/2z 30 h, Cmax 0.48, tmax 7.7 h, AUCt 17.5.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has deuterated α-tocopherols, the second reading deuterated α-tocopherol (d3 and d6); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

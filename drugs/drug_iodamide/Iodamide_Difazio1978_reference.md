@@ -16,7 +16,7 @@ Difazio LT, Singhvi SM, Heald AF, McKinstry DN, Brosman SA, Gillenwater JY et al
 
 ## Population and dosing
 
-**Population:** normal subjects and patients with renal impairment · condition renal impairment · age group adult · n = 22.
+**Population:** normal subjects and patients with renal impairment · condition renal impairment · age group adult.
 
 ## Model
 
@@ -57,7 +57,7 @@ Independently confirmed by `gpt-oss-120b`.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| distribution half-life (1/2alpha) | `Q59` · t1/2α | 3 | minutes | 180 | s | min | llm (0.6) | Difazio_1978:abstract |
+| distribution half-life (1/2alpha) | `Q59` · t1/2α | 3 | minutes | 180 | s | min | half_life_rule (0.95) | Difazio_1978:abstract |
 | disposition half-life (t1/2beta) | `Q60` · t1/2β | 69 | minutes | 4140 | s | min | llm (0.6) | Difazio_1978:abstract |
 
 <details class="legend">
@@ -79,7 +79,7 @@ Independently confirmed by `gpt-oss-120b`.
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -136,4 +136,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biodamide%5D%20Iodamide_Difazio1978_reference&body=Drug%3A%20iodamide%0ARecord%3A%20Iodamide_Difazio1978_reference%0APaper%3A%20Difazio_1978%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iodamide/Iodamide_Difazio1978_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 22:08 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:14 UTC</sub>

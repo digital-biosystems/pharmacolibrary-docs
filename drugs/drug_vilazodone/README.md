@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Edwards_2013_QTcI](drugs/drug_vilazodone/pd_Edwards_2013_QTcI.md) | QT interval corrected for heart rate (QTcI) ← vilazodone · direct linear effect | — | Edwards J et al., Vilazodone lacks proarrhythmogenic pote…, International journal of cl… (2013) | [10.5414/CP201826](https://doi.org/10.5414/CP201826) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Edwards_2013_QTcI](drugs/drug_vilazodone/pd_Edwards_2013_QTcI.md) | QT interval corrected for heart rate (QTcI) ← vilazodone · direct linear effect | — | Edwards J et al., Vilazodone lacks proarrhythmogenic pote…, International journal of cl… (2013) | [10.5414/CP201826](https://doi.org/10.5414/CP201826) |
 
 ## Pharmacogenomics (PGx)
 

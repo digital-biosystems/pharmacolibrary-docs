@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model for donanemab was rejected because the peripheral compartment is unreachable from the dose, leaving the parameter V2 structurally unidentifiable.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="donanemab" model-id="Donanemab_Gueorguieva2025_reference" status="rejected" stale="false" population="adults with early symptomatic Alzheimer&#39;s disease" measured-compound="donanemab" parameterization="mechanistic" topology="2C"></div>
 
@@ -48,13 +48,13 @@ Gueorguieva I, Chow K, Chua L, Shcherbinin S, Zimmer JA, Evans CD et al. Donanem
 
 ### Reviewer guidance
 
-**The model for donanemab was rejected because the peripheral compartment is unreachable from the dose, leaving the parameter V2 structurally unidentifiable.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The two-compartment structure defines a peripheral volume of distribution (V2) of 4.83 L, but no rate constant links this compartment to the central compartment. Consequently, the dose administration has no path to the peripheral compartment, making it an orphan compartment. This topological flaw prevents the model from accurately describing the distribution kinetics of the drug. Extracted — donanemab: CL 0.0255 L/h, V1 3.36 L, V2 4.83 L.
+Extracted — donanemab: CL 0.0255 L/h, V1 3.36 L, V2 4.83 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

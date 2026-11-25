@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant for samidorphan is recorded in hours rather than inverse hours, causing a fundamental dimensional error in the two-compartment model.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="Samidorphan" model-id="Samidorphan_Sun2021_reference" status="rejected" stale="false" population="healthy subjects and patients with schizophrenia" measured-compound="samidorphan" parameterization="apparent" topology="2C"></div>
 
@@ -66,13 +66,13 @@ Sun L, Mills R, Sadler BM, Rege B. Population Pharmacokinetics of Olanzapine and
 
 ### Reviewer guidance
 
-**The absorption rate constant for samidorphan is recorded in hours rather than inverse hours, causing a fundamental dimensional error in the two-compartment model.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit h ([time]) vs 1 / [time].**
 
-The absorption rate constant is listed as 0.861 h, conflicting with the required inverse-time dimension for a first-order rate process. Because this unit could not be processed into standard SI units, the model was held back from publication. A secondary review also identified discrepancies in covariate estimates, such as the hepatic effect on clearance and the race effect on intercompartmental clearance. Extracted — samidorphan: CL/F 15.5 L/h, V1/F 656 L, V2/F 225 L, kabs 0.861 h, tlag 0.323 h, Q/F 6.15 L/h.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — samidorphan: CL/F 15.5 L/h, V1/F 656 L, V2/F 225 L, kabs 0.861 h, tlag 0.323 h, Q/F 6.15 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has olanzapine and samidorphan (OLZ/SAM combination tablet), the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -161,12 +161,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_cmax | reference | pass | 0.00119 | 0.001182 | 0.9934 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | pass | 0.00119 | 0.001182 | 0.9934 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0044 | 0.001182 | 0.2687 | μg/mL→SI vs simulated kg/m3 |
-| T1_t_half_beta | reference | pass | 4.35 | 4.361 | 1.003 | hours→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 4.35 | 4.361 | 1.003 | hours→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.6 | 4.361 | 1.677 | hours→SI vs simulated h |
+| T1_cmax | reference | pass | 0.00119 | 0.001182 | 0.9934 | reported 1.19 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | pass | 0.00119 | 0.001182 | 0.9934 | reported 1.19 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0044 | 0.001182 | 0.2687 | reported 4.4 μg/mL→SI vs simulated kg/m3 |
+| T1_t_half_beta | reference | pass | 4.35 | 4.361 | 1.003 | reported 4.35 hours→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 4.35 | 4.361 | 1.003 | reported 4.35 hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.6 | 4.361 | 1.677 | reported 2.6 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

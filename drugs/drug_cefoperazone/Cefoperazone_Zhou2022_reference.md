@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The cefoperazone model yields a terminal half-life of 12.4 h and Cmax of 0.0157 mg/L, conflicting with paper values of 4.49 h and 0.12 mg/L.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.12, model 0.0157); the model does not reproduce the paper's terminal half-life (paper 4.49, model 12.4) (+1 more).
 
 <div class="pk-model-meta" hidden drug="cefoperazone" model-id="Cefoperazone_Zhou2022_reference" status="needs_review" stale="false" population="patients with hospital-acquired pneumonia" measured-compound="cefoperazone" parameterization="mechanistic" topology="2C"></div>
 
@@ -54,13 +54,13 @@ Zhou Y, Zhang J, Chen Y, Wu J, Guo B, Wu X et al. Combined PK/PD Index May Be a 
 
 ### Reviewer guidance
 
-**The cefoperazone model yields a terminal half-life of 12.4 h and Cmax of 0.0157 mg/L, conflicting with paper values of 4.49 h and 0.12 mg/L.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.12, model 0.0157); the model does not reproduce the paper's terminal half-life (paper 4.49, model 12.4) (+1 more).**
 
-The simulated peak concentration is 0.1308 and 0.5728 times the expected values, indicating significant under-prediction. The simulated terminal half-life is 2.7593 and 6.8073 times the expected values, indicating significant over-prediction. A second reader disputed the verdict by identifying cefoperazone/sulbactam as the analyte and noting missing model links. Extracted — cefoperazone: CL 4.45 L/h, V1 7.97 L, Q 12 L/h, V2 9.03 L.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — cefoperazone: CL 4.45 L/h, V1 7.97 L, Q 12 L/h, V2 9.03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has cefoperazone, the second reading cefoperazone/sulbactam; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -143,11 +143,11 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 0.12 | 0.0157 | 0.1308 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0274 | 0.0157 | 0.5728 | mg/L→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | fail | 4.49 | 12.39 | 2.759 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 1.82 | 12.39 | 6.807 | h→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (6 of 8 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 0.12 | 0.0157 | 0.1308 | reported 120.0 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0274 | 0.0157 | 0.5728 | reported 27.4 mg/L→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | fail | 4.49 | 12.39 | 2.759 | reported 4.49 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 1.82 | 12.39 | 6.807 | reported 1.82 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

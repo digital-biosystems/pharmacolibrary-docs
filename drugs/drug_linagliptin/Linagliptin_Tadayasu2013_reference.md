@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected due to dimension mismatch in intercompartmental clearance and an unreachable compartment for linagliptin.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="linagliptin" model-id="Linagliptin_Tadayasu2013_reference" status="rejected" stale="false" population="Japanese patients with type 2 diabetes mellitus" measured-compound="linagliptin" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Tadayasu Y, Sarashina A, Tsuda Y, Tatami S, Friedrich C, Retlich S et al. Popula
 
 ### Reviewer guidance
 
-**Record rejected due to dimension mismatch in intercompartmental clearance and an unreachable compartment for linagliptin.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q331 unit nmol/L ([substance] / [length] ** 3) vs [mass] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The apparent intercompartmental clearance between the central and third compartments was flagged as dimensionally inconsistent with its substance concentration unit. Additionally, the three-compartment topology contained an orphan compartment with no dose pathway. The second reader also noted a discrepancy where the amax2/f1 parameter was recorded as null despite a value of 534 being identified. Extracted — linagliptin: Fab 1, kabs 1.63 1/h, CL/F 121 L/h, V2/F 633 L, Q3/F 73 L/h, V3/F 683 L, Bmax 6.07 nmol/L, KD 0.108 nmol/L.
+A reported unit could not be converted (Bmax and KD), so that value has no SI equivalent. Extracted — linagliptin: Fab 1, kabs 1.63 1/h, CL/F 121 L/h, V2/F 633 L, Q3/F 73 L/h, V3/F 683 L, Bmax 6.07 nmol/L, KD 0.108 nmol/L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has linagliptin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the metabolite compartments for total trastuzumab and DM1 have no defined link parameters connecting them to the parent drug.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="trastuzumab emtansine" model-id="TrastuzumabEmtansine_Lu2019_reference" status="rejected" stale="false" population="HER2-positive metastatic breast cancer patients" measured-compound="trastuzumab emtansine conjugate" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -50,13 +50,13 @@ Lu D, Li C, Riggs M, Polhamus D, French J, Agarwal P et al. Pharmacokinetics of 
 
 ### Reviewer guidance
 
-**The record was rejected because the metabolite compartments for total trastuzumab and DM1 have no defined link parameters connecting them to the parent drug.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The model structure describes metabolism from trastuzumab emtansine to total trastuzumab and DM1, but both link parameters are marked as unknown. Consequently, these metabolite compartments are orphaned with no path from the dose. Additionally, the record is based solely on the abstract, using summary statistics like a Cmax of 276 µg/mL and a clearance of 22.8 mL/day/kg instead of a fitted model. Extracted — trastuzumab emtansine conjugate: Ctrough 1.34 µg/mL, AUC∞ 338 µg*day/mL, Cmax 276 µg/mL, CL 22.8 mL/day/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is trastuzumab emtansine's own; they describe trastuzumab emtansine conjugate. Extracted — trastuzumab emtansine conjugate: Ctrough 1.34 µg/mL, AUC∞ 338 µg*day/mL, Cmax 276 µg/mL, CL 22.8 mL/day/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trastuzumab emtansine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

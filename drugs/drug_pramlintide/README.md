@@ -22,9 +22,9 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fang_2013_EGP](drugs/drug_pramlintide/pd_Fang_2013_EGP.md) | endogenous glucose production ← pramlintide · direct sigmoid Emax (Hill) effect | — | Fang J et al., Study reanalysis using a mechanism-base…, The AAPS journal (2013) | [10.1208/s12248-012-9409-7](https://doi.org/10.1208/s12248-012-9409-7) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Ramkissoon_2014_glucose](drugs/drug_pramlintide/pd_Ramkissoon_2014_glucose.md) | glucose ← pramlintide · inhibition effect | — | Ramkissoon CM et al., A model of glucose-insulin-pramlintide…, Journal of diabetes science… (2014) | [10.1177/1932296813517323](https://doi.org/10.1177/1932296813517323) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fang_2013_EGP](drugs/drug_pramlintide/pd_Fang_2013_EGP.md) | endogenous glucose production ← pramlintide · direct sigmoid Emax (Hill) effect | — | Fang J et al., Study reanalysis using a mechanism-base…, The AAPS journal (2013) | [10.1208/s12248-012-9409-7](https://doi.org/10.1208/s12248-012-9409-7) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Furió-Novejarque_2024_Ra](drugs/drug_pramlintide/pd_Furi_Novejarque_2024_Ra.md) | glucose rate of appearance ← pramlintide · direct sigmoid Emax (Hill) effect | — | Furió-Novejarque C et al., A model of subcutaneous pramlintide pha…, Computer methods and progra… (2024) | [10.1016/j.cmpb.2023.107968](https://doi.org/10.1016/j.cmpb.2023.107968) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Furió-Novejarque_2024_Ra](drugs/drug_pramlintide/pd_Furi_Novejarque_2024_Ra.md) | glucose rate of appearance ← pramlintide · direct sigmoid Emax (Hill) effect | — | Furió-Novejarque C et al., A model of subcutaneous pramlintide pha…, Computer methods and progra… (2024) | [10.1016/j.cmpb.2023.107968](https://doi.org/10.1016/j.cmpb.2023.107968) |
 | <span class="pk-badge pk-badge--red">Rejected</span> | [Pons_2025_k_empt](drugs/drug_pramlintide/pd_Pons_2025_k_empt.md) | gastric emptying rate ← pramlintide · direct sigmoid Emax (Hill) effect | — | Pons Torres B et al., In silico evaluation of pramlintide dos…, Computers in biology and me… (2025) | [10.1016/j.compbiomed.2025.110447](https://doi.org/10.1016/j.compbiomed.2025.110447) |
 
 <details class="legend">
@@ -39,7 +39,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 03:02 | 2:14 | 0/0/0 | 3/1/0 | 0/0/0 | 83,522/2,441 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 3/3 | 4/0 | 0 |
+| 2026-10-05 03:02 | 2:14 | 0/0/0 | 2/2/0 | 0/0/0 | 83,522/2,441 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 3/3 | 4/0 | 0 |
 
 ## Coverage
 

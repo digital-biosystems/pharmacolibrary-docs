@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The elimination rate constant parameter for clonidine was rejected due to a dimension mismatch where the unit minutes⁻¹ conflicted with its defined dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min⁻¹ (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="clonidine" model-id="Clonidine_Paalzow1979_reference" status="rejected" stale="false" population="rats and cats" measured-compound="clonidine" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Paalzow LK, Edlund PO. Pharmacokinetics of clonidine in the rat and cat. Journal
 
 ### Reviewer guidance
 
-**The elimination rate constant parameter for clonidine was rejected due to a dimension mismatch where the unit minutes⁻¹ conflicted with its defined dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit min⁻¹ (1 / [time]) vs 1 / [time].**
 
-The record lists the parameter labeled β as an elimination rate constant with a value of 0.0143 min⁻¹. A dimension check identified a conflict between the unit minutes⁻¹ and the parameter's expected dimension of 1/[time]. This discrepancy triggered the rejection of the structural parameter. Extracted — clonidine: λ1 0.59 min⁻¹, kel 0.0143 min⁻¹, AUC 1.82e+03 min-ng/ml, AUC/dose 1.82e+03 min-ng/ml, V 4.83e+03 ml/kg, V1 945 ml/kg, Vss 4.35e+03 ml/kg, CL 68.8 ml/min/kg.
+A reported unit could not be converted (equation variable, λ1, AUC and AUC/dose), so that value has no SI equivalent. Extracted — clonidine: λ1 0.59 min⁻¹, kel 0.0143 min⁻¹, AUC 1.82e+03 min-ng/ml, AUC/dose 1.82e+03 min-ng/ml, V 4.83e+03 ml/kg, V1 945 ml/kg, Vss 4.35e+03 ml/kg, CL 68.8 ml/min/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has clonidine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

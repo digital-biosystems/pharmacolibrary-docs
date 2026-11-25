@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Bioavailability and absorption lag time lacked paper-derived estimates, and the second reader rejected all extracted pharmacokinetic parameter values.
+> F use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="heparin" model-id="Heparin_Salem2022_reference" status="needs_review" stale="false" population="pediatric patients" measured-compound="unfractionated heparin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Salem AM, Niu T, Li C, Moffett BS, Ivaturi V, Gopalakrishnan M. Reassessing the 
 
 ### Reviewer guidance
 
-**Bioavailability and absorption lag time lacked paper-derived estimates, and the second reader rejected all extracted pharmacokinetic parameter values.**
+**F use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Bioavailability and absorption lag time were not extracted from the paper, meaning placeholder values would have been used instead of study-specific estimates. A second reader disagreed with the extracted values for clearance, volume of distribution, and absorption rate constant, finding them null or unknown. Extracted — heparin: CL 3.28 L/h, V 8.83 L/50 kg, kabs 0.079 h -1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — heparin: CL 3.28 L/h, V 8.83 L/50 kg, kabs 0.079 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has unfractionated heparin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -143,7 +143,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check contradicted by a second reader: verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

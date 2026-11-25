@@ -136,34 +136,34 @@ _All readers agree on the compared fields of this record._
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | pass |  | verdict confirmed, agreement 1.0, 1 of 1 reader(s) agree | 1 | a second reader did not contradict the extraction |
-| T1_cmax | reference | fail | 0.0744 | 0.002446 | 0.0329 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.156 | 0.002446 | 0.0157 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0681 | 0.002446 | 0.0359 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.141 | 0.002446 | 0.0173 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0729 | 0.002446 | 0.0336 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.081 | 0.002446 | 0.0302 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0801 | 0.002446 | 0.0305 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.093 | 0.002446 | 0.0263 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.093 | 0.002446 | 0.0263 | mg/L→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | fail | 2.26 | 7.734 | 3.422 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.74 | 7.734 | 2.823 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.19 | 7.734 | 3.531 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.4 | 7.734 | 3.223 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.3 | 7.734 | 3.363 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 2.8 | 7.734 | 2.762 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 6.9 | 7.734 | 1.121 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 9.6 | 7.734 | 0.8056 | h→SI vs simulated h |
-| T1_t_half_terminal | reference | pass | 9.6 | 7.734 | 0.8056 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 0.97 | 0.1833 | 0.189 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
-| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | h→SI vs simulated h |
+| X1_cross_check |  | pass |  | verdict confirmed; agreement 1.0 (10 of 10 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
+| T1_cmax | reference | fail | 0.0744 | 0.002446 | 0.0329 | reported 74.4 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.156 | 0.002446 | 0.0157 | reported 156.0 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0681 | 0.002446 | 0.0359 | reported 68.1 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.141 | 0.002446 | 0.0173 | reported 141.0 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0729 | 0.002446 | 0.0336 | reported 72.9 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.081 | 0.002446 | 0.0302 | reported 81.0 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0801 | 0.002446 | 0.0305 | reported 80.1 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.093 | 0.002446 | 0.0263 | reported 93.0 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.093 | 0.002446 | 0.0263 | reported 93.0 mg/L→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | fail | 2.26 | 7.734 | 3.422 | reported 2.26 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.74 | 7.734 | 2.823 | reported 2.74 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.19 | 7.734 | 3.531 | reported 2.19 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.4 | 7.734 | 3.223 | reported 2.4 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.3 | 7.734 | 3.363 | reported 2.3 h→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 2.8 | 7.734 | 2.762 | reported 2.8 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 6.9 | 7.734 | 1.121 | reported 6.9 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 9.6 | 7.734 | 0.8056 | reported 9.6 h→SI vs simulated h |
+| T1_t_half_terminal | reference | pass | 9.6 | 7.734 | 0.8056 | reported 9.6 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 0.97 | 0.1833 | 0.189 | reported 0.97 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
+| T1_tmax | reference | fail | 1 | 0.1833 | 0.1833 | reported 1.0 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

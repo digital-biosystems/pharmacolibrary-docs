@@ -1,0 +1,36 @@
+{
+ "dose_source": "paper",
+ "model_id": "Quinine_Dyer1994v2_non_diabetics",
+ "molar_masses": {
+  "central.C": 0.3244168
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  600.0
+ ],
+ "parameters": {
+  "Cl": 1.2483333333333332e-06,
+  "F": 1.0,
+  "MM": 0.3244168,
+  "Tlag": 3600.0,
+  "VdPerKg": 0.0017,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 0.0006,
+  "ka": 0.00032090147248145615,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 14991.54562093794
+ },
+ "reference_peaks": {
+  "central.C": 0.004491353512375869
+ },
+ "stop_time": 432000.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

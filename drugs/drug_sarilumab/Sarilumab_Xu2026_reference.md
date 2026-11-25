@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The apparent metabolite volume of distribution parameter was assigned units of mg/day, causing a dimension mismatch that resulted in rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q367 unit mg/day ([mass] / [time]) vs [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="sarilumab" model-id="Sarilumab_Xu2026_reference" status="rejected" stale="false" population="patients with pcJIA and adult RA" measured-compound="sarilumab" parameterization="apparent" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Xu C, Zhang M, Liu Y, Baret-Cormel L, De Benedetti F, Abdallah H et al. Modeling
 
 ### Reviewer guidance
 
-**The apparent metabolite volume of distribution parameter was assigned units of mg/day, causing a dimension mismatch that resulted in rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q367 unit mg/day ([mass] / [time]) vs [length] ** 3.**
 
-The parameter Vm/F is defined as an apparent volume of distribution, yet its value of 5.63 is reported in units of mg/day rather than a volume dimension like liters. This conflict between the parameter's pharmacokinetic meaning and its dimensional unit prevented the model from being accepted. Additionally, the second reader disagreed on the assignment of covariate effects, noting that the value 0.617 was attributed to different parameter fields in their review. Extracted — sarilumab: Vm/F 5.63 mg/day, Km 0.694 mg/L, V1/F 1.54 L, kabs 0.117 day−1, Q/F 0.148 L/day, V/F 12.7 L.
+A reported unit could not be converted (Vm/F, Km and equation variable), so that value has no SI equivalent. Extracted — sarilumab: Vm/F 5.63 mg/day, Km 0.694 mg/L, V1/F 1.54 L, kabs 0.117 day−1, Q/F 0.148 L/day, V/F 12.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of theta_q319_wt: this record has none, the second reading 0.617; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

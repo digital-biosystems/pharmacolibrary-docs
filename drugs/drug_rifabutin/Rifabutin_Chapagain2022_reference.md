@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">in vitro</span>
 
-> The volume of distribution is unphysiologically small at 0.135 L, causing the record to be rejected.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="rifabutin" model-id="Rifabutin_Chapagain2022_reference" status="rejected" stale="false" population="" measured-compound="rifabutin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Chapagain M, Pasipanodya JG, Athale S, Bernal C, Trammell R, Howe D et al. Omada
 
 ### Reviewer guidance
 
-**The volume of distribution is unphysiologically small at 0.135 L, causing the record to be rejected.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted volume of distribution for rifabutin is 0.135 L, which is implausibly low for a lipophilic drug and triggers a magnitude error. A clearance of 7.501 L/h combined with this tiny volume creates an extreme ratio that violates physiological bounds. The second reader’s disagreements on intermediate fields do not resolve the fundamental issue that the recorded volume falls outside the acceptable physiological window. Extracted — rifabutin: CL 7.5 L/h, V 0.135 L.
+Extracted — rifabutin: CL 7.5 L/h, V 0.135 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q21: this record has 1.0, the second reading 25.8; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

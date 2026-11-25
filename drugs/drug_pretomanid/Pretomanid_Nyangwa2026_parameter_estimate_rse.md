@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was held because a second reader disagreed on the dose compound and primary analyte, marking the cross-check as disputed.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="pretomanid" model-id="Pretomanid_Nyangwa2026_parameter_estimate_rse" status="needs_review" stale="false" population="rifampicin-resistant tuberculosis patients" measured-compound="pretomanid" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Nyang'wa BT, Motta I, Moodliar R, Solodovnikova V, Rajaram S, Rasool M et al. Po
 
 ### Reviewer guidance
 
-**The record was held because a second reader disagreed on the dose compound and primary analyte, marking the cross-check as disputed.**
+**cross_check_disputed; x1_cross_check.**
 
-Although the parameters for pretomanid (kabs 0.316 hr− 1, CL/F 3.10 L/hr, V/F 102 L) were extracted, the review failed due to reviewer disagreement. The second reader marked both the dose compound and primary analyte as unknown, conflicting with the record's identification of pretomanid. Consequently, the cross-check verdict was disputed with an agreement ratio of 0.8. Extracted — pretomanid: kabs 0.316 hr− 1, CL/F 3.1 L/hr, V/F 102 L.
+Extracted — pretomanid: kabs 0.316 hr− 1, CL/F 3.1 L/hr, V/F 102 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pretomanid, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -141,7 +141,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.8 (8 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | cross-check contradicted by a second reader: verdict disputed; agreement 0.8 (8 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

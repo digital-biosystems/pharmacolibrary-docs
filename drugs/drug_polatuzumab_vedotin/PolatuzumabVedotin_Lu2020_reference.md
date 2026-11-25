@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Formation clearance of unconjugated MMAE from acMMAE was rejected for a unit dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit ng/mL/hour ([mass] / [length] ** 3 / [time]) vs [mass] / [time]; Q66 unit ng/mL/hour ([mass] / [length] ** 3 / [time]) vs [mass] / [time].
 
 <div class="pk-model-meta" hidden drug="polatuzumab vedotin" model-id="PolatuzumabVedotin_Lu2020_reference" status="rejected" stale="false" population="patients with non-Hodgkin lymphoma" measured-compound="acMMAE" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -61,13 +61,13 @@ Lu D, Lu T, Gibiansky L, Li X, Li C, Agarwal P et al. Integrated Two-Analyte Pop
 
 ### Reviewer guidance
 
-**Formation clearance of unconjugated MMAE from acMMAE was rejected for a unit dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit ng/mL/hour ([mass] / [length] ** 3 / [time]) vs [mass] / [time]; Q66 unit ng/mL/hour ([mass] / [length] ** 3 / [time]) vs [mass] / [time].**
 
-The formation clearance parameter has a value of 3.70 but lacks a specified unit. The recorded units for the maximum metabolism rate of acMMAE conflict with dimensional requirements. Second readers disagree on the parent compound identity and several parameter values. Extracted — acMMAE: kel 0.0046 1/h, CL 0.00623 L/hour, V1 3.15 L, V2 3.98 L, Q 0.0145 L/hour, Vmax 0.0203 ng/mL/hour, Km 0.604 ng/mL; unconjugated MMAE: V1 82.2 L, CL 1.89 L/hour, Q 36.3 L/hour, V2 200 L, Vmax 0.0307 ng/mL/hour, Css 0.581 ng/mL, CLfm 3.7.
+A reported unit could not be converted (Vmax, Km, Vmax and Css), so that value has no SI equivalent. None of the extracted parameters is polatuzumab vedotin's own; they describe acMMAE and unconjugated MMAE. Extracted — acMMAE: kel 0.0046 1/h, CL 0.00623 L/hour, V1 3.15 L, V2 3.98 L, Q 0.0145 L/hour, Vmax 0.0203 ng/mL/hour, Km 0.604 ng/mL; unconjugated MMAE: V1 82.2 L, CL 1.89 L/hour, Q 36.3 L/hour, V2 200 L, Vmax 0.0307 ng/mL/hour, Css 0.581 ng/mL, CLfm 3.7.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has polatuzumab_vedotin, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

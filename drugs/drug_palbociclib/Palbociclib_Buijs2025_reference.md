@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The palbociclib model was rejected because the two-compartment structure contains an unreachable compartment with no dose path.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="palbociclib" model-id="Palbociclib_Buijs2025_reference" status="rejected" stale="false" population="patients with advanced estrogen receptor-positive, HER2-negative breast cancer" measured-compound="palbociclib" parameterization="mechanistic" topology="2C"></div>
 
@@ -49,13 +49,13 @@ Buijs SM, Mohmaed Ali MI, Oomen-de Hoop E, Braal CL, Wortelboer N, van Ommen-Nij
 
 ### Reviewer guidance
 
-**The palbociclib model was rejected because the two-compartment structure contains an unreachable compartment with no dose path.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The review found an orphan compartment in the palbociclib model structure, meaning one of the two compartments has no link to the dose site. While the record lists central volume as 2370 l and peripheral volume as 682 l, the structural flaw invalidates these values. The second reader also disagreed on several parameter entries, noting the absence of specific covariate effect values. Extracted — palbociclib: CL 62.6 l/h, V1 2.37e+03 l, V2 682 l.
+Extracted — palbociclib: CL 62.6 l/h, V1 2.37e+03 l, V2 682 l.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of cl: this record has 62.6, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

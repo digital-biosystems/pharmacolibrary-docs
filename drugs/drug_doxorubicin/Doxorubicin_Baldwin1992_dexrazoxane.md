@@ -51,7 +51,7 @@ Baldwin JR, Phillips BA, Overmyer SK, Hatfield NZ, Narang PK. Influence of the c
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 Independently confirmed by `gpt-oss-120b`.
 

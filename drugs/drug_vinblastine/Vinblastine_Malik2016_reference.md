@@ -141,18 +141,18 @@ _All readers agree on the compared fields of this record._
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_cmax | reference | fail | 0.00771 | 7.037e-05 | 0.0091 | µg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00432 | 7.037e-05 | 0.0163 | µg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00795 | 7.037e-05 | 0.0089 | µg/ml→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.00651 | 7.037e-05 | 0.0108 | µg/ml→SI vs simulated kg/m3 |
-| T1_t_half_terminal | reference | fail | 22.81 | 2146 | 94.08 | hours→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 4.15 | 2146 | 517.1 | hours→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 35.06 | 2146 | 61.21 | hours→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 6.8 | 2146 | 315.6 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 0.66 | 0.1833 | 0.2778 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 0.1 | 0.1833 | 1.833 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 0.08 | 0.1833 | 2.292 | hours→SI vs simulated h |
-| T1_tmax | reference | fail | 1.22 | 0.1833 | 0.1503 | hours→SI vs simulated h |
+| T1_cmax | reference | fail | 0.00771 | 7.037e-05 | 0.0091 | reported 7.71 µg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00432 | 7.037e-05 | 0.0163 | reported 4.32 µg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00795 | 7.037e-05 | 0.0089 | reported 7.95 µg/ml→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.00651 | 7.037e-05 | 0.0108 | reported 6.51 µg/ml→SI vs simulated kg/m3 |
+| T1_t_half_terminal | reference | fail | 22.81 | 2146 | 94.08 | reported 22.81 hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 4.15 | 2146 | 517.1 | reported 4.15 hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 35.06 | 2146 | 61.21 | reported 35.06 hours→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 6.8 | 2146 | 315.6 | reported 6.8 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 0.66 | 0.1833 | 0.2778 | reported 0.66 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 0.1 | 0.1833 | 1.833 | reported 0.1 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 0.08 | 0.1833 | 2.292 | reported 0.08 hours→SI vs simulated h |
+| T1_tmax | reference | fail | 1.22 | 0.1833 | 0.1503 | reported 1.22 hours→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

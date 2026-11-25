@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The doxycycline clearance, volume, and bioavailability values were disputed by the second reader.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="doxycycline" model-id="Doxycycline_Thompson2019_reference" status="needs_review" stale="false" population="children 0-18 years of age" measured-compound="doxycycline" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Thompson EJ, Wu H, Melloni C, Balevic S, Sullivan JE, Laughon M et al. Populatio
 
 ### Reviewer guidance
 
-**The doxycycline clearance, volume, and bioavailability values were disputed by the second reader.**
+**cross_check_disputed; x1_cross_check.**
 
-The record relies on abstract-only statistics, preventing verification of the fitted model. The second reader disagreed that doxycycline was the dose compound and primary analyte. All three parameter values were marked null by the second reader, resulting in 0 of 1 agreements. Extracted — doxycycline: CL 3.32 L/h/70 kg, V 96.8 L/70kg, Fab 89.6 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — doxycycline: CL 3.32 L/h/70 kg, V 96.8 L/70kg, Fab 89.6 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has doxycycline, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.273, 0 of 1 reader(s) agree | 0.273 | cross-check disputed by a second reader: verdict disputed, agreement 0.273, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.273 (3 of 11 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.273 | cross-check contradicted by a second reader: verdict disputed; agreement 0.273 (3 of 11 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

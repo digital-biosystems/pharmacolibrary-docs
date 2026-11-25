@@ -22,8 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fediuk_2021_3_HbA1c](drugs/drug_ertugliflozin/pd_Fediuk_2021_3_HbA1c.md) | HbA1c ← ertugliflozin · direct Emax (saturable) effect | — | Fediuk DJ et al., End-to-end application of model-informe…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12633](https://doi.org/10.1002/psp4.12633) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Fediuk_2021_3_UGE24](drugs/drug_ertugliflozin/pd_Fediuk_2021_3_UGE24.md) | UGE24 ← ertugliflozin · direct Emax (saturable) effect | — | Fediuk DJ et al., End-to-end application of model-informe…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12633](https://doi.org/10.1002/psp4.12633) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fediuk_2021_3_HbA1c](drugs/drug_ertugliflozin/pd_Fediuk_2021_3_HbA1c.md) | HbA1c ← ertugliflozin · direct Emax (saturable) effect | — | Fediuk DJ et al., End-to-end application of model-informe…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12633](https://doi.org/10.1002/psp4.12633) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Fediuk_2021_3_UGE24](drugs/drug_ertugliflozin/pd_Fediuk_2021_3_UGE24.md) | UGE24 ← ertugliflozin · direct Emax (saturable) effect | — | Fediuk DJ et al., End-to-end application of model-informe…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12633](https://doi.org/10.1002/psp4.12633) |
 
 ## Pharmacogenomics (PGx)
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sulbactam’s bioavailability (F) was not reported and was defaulted, so the record was held back.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="sulbactam" model-id="Sulbactam_Jaruratanasirikul2019_reference" status="needs_review" stale="false" population="patients with ventilator-associated pneumonia" measured-compound="sulbactam" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Jaruratanasirikul S, Nitchot W, Wongpoowarak W, Samaeng M, Nawakitrangsan M. Pop
 
 ### Reviewer guidance
 
-**Sulbactam’s bioavailability (F) was not reported and was defaulted, so the record was held back.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-Only the paper’s abstract was read, so its summary statistics stood in for a fitted model. The model builder defaulted F and Tlag rather than using explicit estimates; the defaulted F is specifically identified as unacceptable and is unsupported by this paper. A second reader also disagreed with the recorded absorption rate constant of 8.28 1/h and total clearance of 6.76 L/h. Extracted — sulbactam: V 22.2 L, CL 6.76 L/h, kabs 8.28 1/h.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sulbactam: V 22.2 L, CL 6.76 L/h, kabs 8.28 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k a: this record has 8.28, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.625 (5 of 8 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.625 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

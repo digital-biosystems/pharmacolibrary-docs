@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected due to a unit dimension mismatch on Q and an incorrect elimination rate constant value.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q68 unit h-1 (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="gabapentin" model-id="Gabapentin_Zhou2026_reference" status="rejected" stale="false" population="adults with chronic neuropathic pain" measured-compound="gabapentin" parameterization="apparent" topology="2C"></div>
 
@@ -55,13 +55,13 @@ Zhou L, Yamamoto PA, Walker M, Conchon Costa AC, Lauretti GR, Dach F et al. Gaba
 
 ### Reviewer guidance
 
-**The model was rejected due to a unit dimension mismatch on Q and an incorrect elimination rate constant value.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q68 unit h-1 (1 / [time]) vs 1 / [time].**
 
-The apparent intercompartmental clearance Q has conflicting unit dimensions in the review. The elimination rate constant for the terminal phase, kel, is reported as 0.53 h-1, but the value for the macro-rate constant λ2 is 1 h-1, which the second reader could not verify against the source. Extracted — gabapentin: tlag 0.34 h, kabs 0.14 h-1, CL/F 10.2 L/h, V1/F 18.2 L, Q 6.58 L/h, V2/F 358 L, kel 0.53 h-1, λ2 1 h-1.
+A reported unit could not be converted (λ2), so that value has no SI equivalent. Extracted — gabapentin: tlag 0.34 h, kabs 0.14 h-1, CL/F 10.2 L/h, V1/F 18.2 L, Q 6.58 L/h, V2/F 358 L, kel 0.53 h-1, λ2 1 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of ke2: this record has 1, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -55,7 +55,7 @@ Mody H, Vaidya TR, Ait-Oudhia S. In vitro to clinical translational pharmacokine
 
 ### Reviewer guidance
 
-**Every check that could be run on this record passed.**
+**Simulated: every check that could be run on this record passed; no value reported in the paper was compared with the simulation.**
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has doxorubicin, the second reading DOX; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 

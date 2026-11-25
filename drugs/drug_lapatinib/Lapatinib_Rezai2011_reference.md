@@ -8,7 +8,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="lapatinib" model-id="Lapatinib_Rezai2011_reference" status="rejected" stale="false" population="women with HER2-positive locally advanced or metastatic breast cancer" measured-compound="lapatinib and vinorelbine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="lapatinib" model-id="Lapatinib_Rezai2011_reference" status="rejected" stale="false" population="breast cancer patients" measured-compound="lapatinib" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Rezai K, Urien S, Isambert N, Roche H, Dieras V, Berille J et al. Pharmacokinetic evaluation of the vinorelbine-lapatinib combination in the treatment of breast cancer patients. Cancer chemotherapy and pharmacology 68(6):1529–1536 (2011).
@@ -16,7 +16,7 @@ Rezai K, Urien S, Isambert N, Roche H, Dieras V, Berille J et al. Pharmacokineti
 
 ## Population and dosing
 
-**Population:** women with HER2-positive locally advanced or metastatic breast cancer · condition HER2-positive locally advanced or metastatic breast cancer · age group adult · n = 29.
+**Population:** breast cancer patients · condition breast cancer · age group adult.
 
 ## Model
 
@@ -32,7 +32,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.5), qwen3.8-27b (not confirmed, agreement 0.5). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,7 +46,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which compound was dosed: this record has lapatinib and vinorelbine, the second reading lapatinib; vinorelbine; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has lapatinib, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,26 +61,30 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on which co
 - table section iiv: 'V3' routed out of structural estimates ('The between-subject variabilities (BSV) could be well estimated for CL, V but not for ka.')
 - table section iiv: 'V' routed out of structural estimates ('The between-subject variabilities (BSV) could be well estimated for CL, V but not for ka.')
 - table section iiv: 'ka' routed out of structural estimates ('The between-subject variabilities (BSV) could be well estimated for CL, V but not for ka.')
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lapatinib and vinorelbine
+- table section iiv: 'lapatinib' routed out of structural estimates ('The between-subject variabilities (BSV) could be well estimated for CL, V but not for ka.')
+- table section iiv: 'vinorelbine' routed out of structural estimates ('The between-subject variabilities (BSV) could be well estimated for CL, V but not for ka.')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=lapatinib
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Rezai_2011_metadata.yaml (9 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Rezai_2011_metadata.yaml (11 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 | `qwen3.8-27b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>2 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `screen.dose_compound` | lapatinib | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | lapatinib | unknown | mismatch |
 | `qwen3.8-27b` | `screen.dose_compound` | lapatinib and vinorelbine | lapatinib; vinorelbine | mismatch |
 | `qwen3.8-27b` | `screen.primary_analyte` | lapatinib and vinorelbine | lapatinib; vinorelbine | mismatch |
 
@@ -122,4 +126,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Blapatinib%5D%20Lapatinib_Rezai2011_reference&body=Drug%3A%20lapatinib%0ARecord%3A%20Lapatinib_Rezai2011_reference%0APaper%3A%20Rezai_2011%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_lapatinib/Lapatinib_Rezai2011_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 01:59 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:59 UTC</sub>

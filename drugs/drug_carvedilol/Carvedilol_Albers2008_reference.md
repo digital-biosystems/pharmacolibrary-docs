@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The absorption rate constant for carvedilol has a unit of liters per hour instead of inverse time, causing a dimension mismatch that led to rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l h -1 ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="carvedilol" model-id="Carvedilol_Albers2008_reference" status="rejected" stale="false" population="paediatric patients with congestive heart failure" measured-compound="carvedilol" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Albers S, Meibohm B, Mir TS, Läer S. Population pharmacokinetics and dose simul
 
 ### Reviewer guidance
 
-**The absorption rate constant for carvedilol has a unit of liters per hour instead of inverse time, causing a dimension mismatch that led to rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit l h -1 ([length] ** 3 / [time]) vs 1 / [time].**
 
-The record lists the absorption rate constant as 0.62 with units of l h -1, which is a volume per time dimension rather than the required inverse time dimension. This structural inconsistency triggered a failed dimensionality check for the parameter. The discrepancy suggests a potential transcription error where a clearance unit was incorrectly applied to a rate constant. Extracted — carvedilol: CL/F 37.6 l h -1, V2/F 21.8 l, V3/F 104 l, Q/F 13.6 l h -1, kabs 0.62 l h -1, tlag 0.15 h.
+A reported unit could not be converted (kabs), so that value has no SI equivalent. Extracted — carvedilol: CL/F 37.6 l h -1, V2/F 21.8 l, V3/F 104 l, Q/F 13.6 l h -1, kabs 0.62 l h -1, tlag 0.15 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has carvedilol, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

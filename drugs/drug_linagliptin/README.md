@@ -34,7 +34,7 @@ Linagliptin is a dipeptidyl peptidase-4 inhibitor medication used to treat type 
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--blue">Simulated</span> | [Retlich_2015_DPP_4_activity](drugs/drug_linagliptin/pd_Retlich_2015_DPP_4_activity.md) | plasma DPP-4 activity ← linagliptin · direct sigmoid Emax (Hill) effect | — | Retlich S et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2015) | [10.1007/s40262-014-0232-4](https://doi.org/10.1007/s40262-014-0232-4) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Retlich_2015_DPP_4_activity](drugs/drug_linagliptin/pd_Retlich_2015_DPP_4_activity.md) | plasma DPP-4 activity ← linagliptin · direct sigmoid Emax (Hill) effect | — | Retlich S et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2015) | [10.1007/s40262-014-0232-4](https://doi.org/10.1007/s40262-014-0232-4) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Tadayasu_2013_DPP_4_inhibition](drugs/drug_linagliptin/pd_Tadayasu_2013_DPP_4_inhibition.md) | DPP-4 inhibition ← linagliptin · target-mediated drug disposition | — | Tadayasu Y et al., Population pharmacokinetic/pharmacodyna…, Journal of pharmacy & pharm… (2013) | [10.18433/j3s304](https://doi.org/10.18433/j3s304) |
 
 <details class="legend">

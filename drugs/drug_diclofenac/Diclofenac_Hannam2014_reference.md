@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The intercompartmental clearance parameter was rejected due to a unit mismatch, and the dose compound and primary analyte are unknown.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Hannam2014_reference" status="rejected" stale="false" population="children and adults" measured-compound="diclofenac, acetaminophen" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Hannam JA, Anderson BJ, Mahadevan M, Holford NH. Postoperative analgesia using d
 
 ### Reviewer guidance
 
-**The intercompartmental clearance parameter was rejected due to a unit mismatch, and the dose compound and primary analyte are unknown.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].**
 
-The apparent intercompartmental clearance was identified with a unit conflict, where the recorded time unit contradicted the expected reciprocal time dimension. Additionally, a second reader could not confirm whether the dose compound or primary analyte was diclofenac, acetaminophen, or an unknown substance, leaving these critical definitions unresolved. This uncertainty, combined with the dimension error, prevented validation of the model record. Extracted — diclofenac: kel 0.496 h, t1/2z 0.23 h; diclofenac, acetaminophen: CL 10.6 L/h/70kg, V/F 62.3 L/70kg, Q/F 53.5 L/h/70kg, kabs 0.94 h À1, tlag 0 h.
+A reported unit could not be converted (kel and equation variable), so that value has no SI equivalent. Extracted — diclofenac: kel 0.496 h, t1/2z 0.23 h; diclofenac, acetaminophen: CL 10.6 L/h/70kg, V/F 62.3 L/70kg, Q/F 53.5 L/h/70kg, kabs 0.94 h À1, tlag 0 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diclofenac, acetaminophen, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

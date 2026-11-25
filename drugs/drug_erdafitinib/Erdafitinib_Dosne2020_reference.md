@@ -22,7 +22,7 @@ Dosne AG, Valade E, Stuyckens K, Li LY, Ouellet D, Perez-Ruixo JJ. Population Ph
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -30,13 +30,12 @@ Dosne AG, Valade E, Stuyckens K, Li LY, Ouellet D, Perez-Ruixo JJ. Population Ph
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| total apparent oral clearance | CL/F | 0.200 | L/h |
-| median free fraction | fu | 0.24 | % |
+| erdfitinib total apparent oral clearance | CL/F | 0.2 | L/h |
 | effective terminal half-life of total drug | t1/2z | 76.4 | hours |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.556), qwen3.8-27b (partly confirmed, agreement 0.625). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,9 +47,9 @@ Dosne AG, Valade E, Stuyckens K, Li LY, Ouellet D, Perez-Ruixo JJ. Population Ph
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — erdafitinib: CL/F 0.2 L/h, fu 0.24 %, t1/2z 76.4 hours.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — erdafitinib: CL/F 0.2 L/h, t1/2z 76.4 hours.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of erdafitinib total apparent oral clearance: this record has none, the second reading 0.2; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[effective terminal half-life of total drug].parameter_id`: this record has Q57, the second reading Q60; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -58,8 +57,7 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| total apparent oral clearance | `Q27` · CL/F | 0.200 | L/h | 5.556e-08 | m3/s | l/h | llm_confirmed (0.6) | Dosne_2020:abstract |
-| median free fraction | `Q46` · fu | 0.24 | % |  |  | % | llm_confirmed (0.6) | Dosne_2020:abstract |
+| erdfitinib total apparent oral clearance | `Q27` · CL/F | 0.2 | L/h | 5.556e-08 | m3/s | l/h | llm_confirmed (0.6) | Dosne_2020:abstract |
 | effective terminal half-life of total drug | `Q57` · t1/2z | 76.4 | hours | 2.75e+05 | s | h | llm (0.6) | Dosne_2020:abstract |
 
 <details class="legend">
@@ -72,25 +70,28 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=erdafitinib
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Dosne_2020_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Dosne_2020_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.556 (5/9 fields) | 4 |
 | `qwen3.8-27b` | partly confirmed | 0.625 (5/8 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[effective terminal half-life of total drug].parameter_id` | Q57 | Q60 | mismatch |
+| `gpt-oss-120b` | `parameters[erdafitinib total apparent oral clearance]` |  | 0.2 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[erdfitinib total apparent oral clearance]` | 0.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[median free fraction]` |  | 0.24 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[erdafitinib total apparent oral clearance]` |  | 0.2 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[median free fraction]` | 0.24 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[total apparent oral clearance]` | 0.200 |  | only_one_extracted |
@@ -107,7 +108,7 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 3 |  |
+| C0_has_structural_params | pass |  | 2 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Dosne_2020:abstract'] |
@@ -148,4 +149,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Berdafitinib%5D%20Erdafitinib_Dosne2020_reference&body=Drug%3A%20erdafitinib%0ARecord%3A%20Erdafitinib_Dosne2020_reference%0APaper%3A%20Dosne_2020%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_erdafitinib/Erdafitinib_Dosne2020_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:42 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 20:57 UTC</sub>

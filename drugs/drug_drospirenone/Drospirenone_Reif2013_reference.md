@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The model was held back because no explicit value was extracted for the central compartment volume of distribution, forcing reliance on a library placeholder for drospirenone's PK profile.
+> No value for drospirenone's volume of distribution — all 10 extracted parameters describe drospirenone and ethinylestradiol, not drospirenone; t3_param_coverage (+2 more).
 
 <div class="pk-model-meta" hidden drug="drospirenone" model-id="Drospirenone_Reif2013_reference" status="model_quarantined" stale="false" population="healthy young women" measured-compound="drospirenone and ethinylestradiol" parameterization="apparent" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Reif S, Snelder N, Blode H. Characterisation of the pharmacokinetics of ethinyle
 
 ### Reviewer guidance
 
-**The model was held back because no explicit value was extracted for the central compartment volume of distribution, forcing reliance on a library placeholder for drospirenone's PK profile.**
+**No value for drospirenone's volume of distribution — all 10 extracted parameters describe drospirenone and ethinylestradiol, not drospirenone; t3_param_coverage (+2 more).**
 
-All ten extracted parameters are attributed to the combination of drospirenone and ethinylestradiol, leaving the central compartment volume without an explicit estimate for drospirenone alone. Consequently, a generic library value was substituted instead of a fitted parameter. A second reader disagreed on the primary analyte, identifying drospirenone rather than the combination, which further complicates the attribution of these parameters. Extracted — drospirenone and ethinylestradiol: CL/F 3.52 L/h, V2/F 51.6 L, V3/F 204 L, Q3/F 17.5 L/h, kabs 2.18 1/h, tlag 0.372 h, Fab 1, CLnorm 0.672 L/h/kg, … (+2).
+The model was built, but drospirenone's volume of distribution had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — drospirenone and ethinylestradiol: CL/F 3.52 L/h, V2/F 51.6 L, V3/F 204 L, Q3/F 17.5 L/h, kabs 2.18 1/h, tlag 0.372 h, Fab 1, CLnorm 0.672 L/h/kg, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has drospirenone and ethinylestradiol, the second reading drospirenone; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -205,7 +205,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | fail | 6 scholar param(s) emitted or defaulted | 5 covered |  | neither emitted nor in defaulted[]: ['V2/F'] |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.12, 0 of 1 reader(s) agree | 0.12 | cross-check disputed by a second reader: verdict disputed, agreement 0.12, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.12 (3 of 25 compared fields agree, 20 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.12 | cross-check contradicted by a second reader: verdict disputed; agreement 0.12 (3 of 25 compared fields agree, 20 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

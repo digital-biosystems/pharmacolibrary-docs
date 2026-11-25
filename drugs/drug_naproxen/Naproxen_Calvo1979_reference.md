@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Naproxen record rejected because absorption rate constant units conflicted, and abstract-only source provided no fitted model.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Calvo1979_reference" status="rejected" stale="false" population="healthy volunteers and patients with diabetic microangiopathy" measured-compound="naproxen" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Calvo MV, Dominguez-Gil A, Miralles JM, de Pablo F. Pharmacokinetics of naproxen
 
 ### Reviewer guidance
 
-**Naproxen record rejected because absorption rate constant units conflicted, and abstract-only source provided no fitted model.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q67 unit hr-1 (1 / [time]) vs 1 / [time].**
 
-The record was built solely from the paper's abstract, so summary statistics stood in for a fitted pharmacokinetic model. A dimension check found a conflict in the units for the absorption rate constant, which was recorded as hr-1. Additionally, a second reader was unable to verify the values for the primary analyte or the elimination and transfer rate constants. Extracted — naproxen: tmax 2 hr, Cmax 52.6 micrograms/ml, kabs 1.89 hr-1, λ1 0.393 hr-1, kel 0.049 hr-1, k12 0.147 hr-1, k21 0.198 hr-1, k13 0.097 hr-1, … (+1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — naproxen: tmax 2 hr, Cmax 52.6 micrograms/ml, kabs 1.89 hr-1, λ1 0.393 hr-1, kel 0.049 hr-1, k12 0.147 hr-1, k21 0.198 hr-1, k13 0.097 hr-1, … (+1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has naproxen, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

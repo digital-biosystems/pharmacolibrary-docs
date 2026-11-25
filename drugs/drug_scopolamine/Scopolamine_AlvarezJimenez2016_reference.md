@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Scopolamine’s apparent central and peripheral volume of distribution, reported as 2.66 L, was held back because a second reader disputed its interpretation.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="scopolamine" model-id="Scopolamine_AlvarezJimenez2016_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="scopolamine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Alvarez-Jimenez R, Groeneveld GJ, van Gerven JM, Goulooze SC, Baakman AC, Hay JL
 
 ### Reviewer guidance
 
-**Scopolamine’s apparent central and peripheral volume of distribution, reported as 2.66 L, was held back because a second reader disputed its interpretation.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader interpreted 2.66 L as the apparent central volume and identified an apparent peripheral volume of 62.1 L, rather than treating 2.66 L as a combined central and peripheral estimate. The cross-reader agreement was 0.5, with 0 of 1 readers agreeing. Extracted — scopolamine: V 2.66 l, CL 1.09 l min(-1).
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — scopolamine: V 2.66 l, CL 1.09 l min(-1).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (4 of 8 compared fields agree, 3 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

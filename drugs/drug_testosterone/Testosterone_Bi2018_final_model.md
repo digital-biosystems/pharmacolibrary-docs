@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the albumin covariate effect on volume of distribution is -0.27, an implausible negative value.
+> C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).
 
 <div class="pk-model-meta" hidden drug="testosterone" model-id="Testosterone_Bi2018_final_model" status="rejected" stale="false" population="healthy male subjects" measured-compound="testosterone" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Bi Y, Perry PJ, Ellerby M, Murry DJ. Population Pharmacokinetic/Pharmacodynamic 
 
 ### Reviewer guidance
 
-**The record was rejected because the albumin covariate effect on volume of distribution is -0.27, an implausible negative value.**
+**C2 negative clearance/volume in a covariate scenario or base (implausible — base value or shift is wrong).**
 
-The parameter representing the albumin effect on volume of distribution has a value of -0.27, which is physically impossible for a volume. This negative value caused the model to fail the plausibility check for negative volume. Additionally, the unit kiloliters per day for the clearance parameter could not be converted to standard SI units. Extracted — testosterone: CL/F 2.6 kL/day, V/F 14.4 kL, kabs 1.22 day−1, V -0.27, CL 0.785.
+A reported unit could not be converted (CL/F and V/F), so that value has no SI equivalent. Extracted — testosterone: CL/F 2.6 kL/day, V/F 14.4 kL, kabs 1.22 day−1, V -0.27, CL 0.785.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which molecule was measured: this record has testosterone, the second reading total testosterone; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

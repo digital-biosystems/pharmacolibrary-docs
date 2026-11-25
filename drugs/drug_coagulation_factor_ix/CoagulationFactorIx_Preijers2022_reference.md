@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected due to imphysiological volume parameters, specifically V3 at 3990 mL, which is implausible for factor IX.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="coagulation factor IX" model-id="CoagulationFactorIx_Preijers2022_reference" status="rejected" stale="false" population="hemophilia B patients" measured-compound="factor IX" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Preijers T, van Spengler MWF, Meijer K, Fijnvandraat K, Fischer K, Leebeek FWG e
 
 ### Reviewer guidance
 
-**Record rejected due to imphysiological volume parameters, specifically V3 at 3990 mL, which is implausible for factor IX.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The third compartment volume (V3) is recorded as 3990 mL, a magnitude outside the physiological window for this molecule. Similarly, the intercompartmental clearance Q3 is listed as 3930 mL/h, creating a suspiciously large scale compared to the other parameters. These extreme values indicate a likely unit or scale extraction error in the parameter definitions. Extracted — coagulation factor ix: CL 4.6 mL/h, V1 4.8 mL, Q2 35.2 mL/h, V2 11.8 mL, Q3 3.93e+03 mL/h, V3 3.99e+03 mL, t1/2z 94.3 h.
+Extracted — coagulation factor ix: CL 4.6 mL/h, V1 4.8 mL, Q2 35.2 mL/h, V2 11.8 mL, Q3 3.93e+03 mL/h, V3 3.99e+03 mL, t1/2z 94.3 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has extended half-life factor IX concentrates, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

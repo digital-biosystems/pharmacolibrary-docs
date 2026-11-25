@@ -5,11 +5,11 @@
 
 # amiodarone — `Amiodarone_Li2025_final`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Amiodarone clearance was missing, leaving the record quarantined despite rivaroxaban parameters being present.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
-<div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Li2025_final" status="model_quarantined" stale="false" population="elderly Chinese patients with non-valvular atrial fibrillation" measured-compound="rivaroxaban" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="amiodarone" model-id="Amiodarone_Li2025_final" status="rejected" stale="false" population="elderly Chinese patients with non-valvular atrial fibrillation" measured-compound="rivaroxaban" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Li TY, Liu X, Tang L, Cai W, Zhang J, Su Y et al. Dose Optimization of Rivaroxaban in Elderly Chinese Patients with Non-Valvular Atrial Fibrillation: Analysis of Populations Pharmacokinetics and Exposure-Response Relationships. Drug design, development and therapy 19:10703–10717 (2025).
@@ -29,7 +29,7 @@ Li TY, Liu X, Tang L, Cai W, Zhang J, Su Y et al. Dose Optimization of Rivaroxab
 **Availability:** Model withheld: a core parameter is unspecified.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
@@ -38,7 +38,7 @@ Li TY, Liu X, Tang L, Cai W, Zhang J, Su Y et al. Dose Optimization of Rivaroxab
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.833). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,13 +48,13 @@ Li TY, Liu X, Tang L, Cai W, Zhang J, Su Y et al. Dose Optimization of Rivaroxab
 
 ### Reviewer guidance
 
-**Amiodarone clearance was missing, leaving the record quarantined despite rivaroxaban parameters being present.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The only extracted clearance value is 4.501 L/h for rivaroxaban, not for amiodarone. The model builder left amiodarone's clearance at library defaults, which triggers automatic quarantine. A second reader disputed the verdict, noting the 4.501 L/h value exists in the record, but for the wrong molecule. Extracted — rivaroxaban: V 30.7 L.
+None of the extracted parameters is amiodarone's own; they describe rivaroxaban. Extracted — rivaroxaban: V 30.7 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[tvcl].value`: this record has none, the second reading 4.501. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,12 +133,12 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | check | status | expected | obtained | ratio | note |
 |---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T0_analyte_identity | fail | amiodarone (or metabolite) | paper about another drug |  | paper subject is not amiodarone: the record measures 'rivaroxaban', which is not this drug or a relative of it, and the screen says the paper is not about this drug |
 | T2_covariates | skipped |  |  |  | no covariate effects in record |
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.833, 0 of 1 reader(s) agree | 0.833 | cross-check disputed by a second reader: verdict disputed, agreement 0.833, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.833 (5 of 6 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.833 | cross-check contradicted by a second reader: verdict disputed; agreement 0.833 (5 of 6 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -150,19 +150,9 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-</tbody></table>
-<p>No model archives available.</p>
-</div></div>
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

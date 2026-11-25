@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">camelid</span>
 
-> AUC and AUMC were rejected because their reported units of µg h⁻¹ ml⁻¹ conflict with the required area-under-curve dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit µg h⁻¹ ml⁻¹ ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q20 unit µg h⁻¹ ml⁻¹ ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="diclofenac" model-id="Diclofenac_Wasfi2003_d_female" status="rejected" stale="false" population="camels" measured-compound="diclofenac" parameterization="mechanistic" topology="2C"></div>
 
@@ -61,13 +61,13 @@ Wasfi IA, Hussain MM, Elghazali M, Alkatheeri NA, Abdel Hadi AA. The disposition
 
 ### Reviewer guidance
 
-**AUC and AUMC were rejected because their reported units of µg h⁻¹ ml⁻¹ conflict with the required area-under-curve dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit µg h⁻¹ ml⁻¹ ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3; Q20 unit µg h⁻¹ ml⁻¹ ([mass] / [time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The AUC value of 14.6 and AUMC value of 28.7 are both labeled with the unit µg h⁻¹ ml⁻¹. This unit represents a rate of concentration change, whereas these parameters require a unit of concentration integrated over time. Additionally, the second reader disagreed on the identification of the first coefficient and could not find a value for the second coefficient. Extracted — diclofenac: A1 12.7 µg, A2 1.73 µg, t1/2α 0.45 h, t1/2β 2.54 h, AUC 14.6 µg h⁻¹ ml⁻¹, CL 0.17 l h⁻¹ kg⁻¹, Vss 0.34 l.kg⁻¹, V1 0.17 l.kg⁻¹, … (+5).
+A reported unit could not be converted (A1, A2, AUC and AUMC), so that value has no SI equivalent. Extracted — diclofenac: A1 12.7 µg, A2 1.73 µg, t1/2α 0.45 h, t1/2β 2.54 h, AUC 14.6 µg h⁻¹ ml⁻¹, CL 0.17 l h⁻¹ kg⁻¹, Vss 0.34 l.kg⁻¹, V1 0.17 l.kg⁻¹, … (+5).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[a].parameter_id`: this record has Q415, the second reading Q30; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -24,9 +24,9 @@ _not available_
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Fragola_2023_cAMP](drugs/drug_lofexidine/pd_Fragola_2023_cAMP.md) | cAMP formation (α2AR), normalized to lofexidine maximum ← lofexidine · direct Emax (saturable) effect | — | Fragola NR et al., Conformationally Selective 2-Aminotetra…, ACS chemical neuroscience (2023) | [10.1021/acschemneuro.3c00148](https://doi.org/10.1021/acschemneuro.3c00148) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Fragola_2023_cAMP_2](drugs/drug_lofexidine/pd_Fragola_2023_cAMP_2.md) | cAMP formation (α2CR), normalized to lofexidine maximum ← lofexidine · direct Emax (saturable) effect | — | Fragola NR et al., Conformationally Selective 2-Aminotetra…, ACS chemical neuroscience (2023) | [10.1021/acschemneuro.3c00148](https://doi.org/10.1021/acschemneuro.3c00148) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Yocca_2025_GTP_S_2A](drugs/drug_lofexidine/pd_Yocca_2025_GTP_S_2A.md) | [35S]GTPγS binding stimulation at human α2A adrenoceptor ← lofexidine · direct sigmoid Emax (Hill) effect | — | Yocca FD et al., Dexmedetomidine potently and reversibly…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1589075](https://doi.org/10.3389/fphar.2025.1589075) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Yocca_2025_GTP_S_2B](drugs/drug_lofexidine/pd_Yocca_2025_GTP_S_2B.md) | [35S]GTPγS binding stimulation at human α2B adrenoceptor ← lofexidine · direct sigmoid Emax (Hill) effect | — | Yocca FD et al., Dexmedetomidine potently and reversibly…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1589075](https://doi.org/10.3389/fphar.2025.1589075) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Yocca_2025_GTP_S_2C](drugs/drug_lofexidine/pd_Yocca_2025_GTP_S_2C.md) | [35S]GTPγS binding stimulation at human α2C adrenoceptor ← lofexidine · direct sigmoid Emax (Hill) effect | — | Yocca FD et al., Dexmedetomidine potently and reversibly…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1589075](https://doi.org/10.3389/fphar.2025.1589075) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Yocca_2025_GTP_S_2A](drugs/drug_lofexidine/pd_Yocca_2025_GTP_S_2A.md) | [35S]GTPγS binding stimulation at human α2A adrenoceptor ← lofexidine · direct sigmoid Emax (Hill) effect | — | Yocca FD et al., Dexmedetomidine potently and reversibly…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1589075](https://doi.org/10.3389/fphar.2025.1589075) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Yocca_2025_GTP_S_2B](drugs/drug_lofexidine/pd_Yocca_2025_GTP_S_2B.md) | [35S]GTPγS binding stimulation at human α2B adrenoceptor ← lofexidine · direct sigmoid Emax (Hill) effect | — | Yocca FD et al., Dexmedetomidine potently and reversibly…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1589075](https://doi.org/10.3389/fphar.2025.1589075) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Yocca_2025_GTP_S_2C](drugs/drug_lofexidine/pd_Yocca_2025_GTP_S_2C.md) | [35S]GTPγS binding stimulation at human α2C adrenoceptor ← lofexidine · direct sigmoid Emax (Hill) effect | — | Yocca FD et al., Dexmedetomidine potently and reversibly…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1589075](https://doi.org/10.3389/fphar.2025.1589075) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -40,7 +40,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 03:32 | 0:24 | 0/0/0 | 5/0/0 | 0/0/0 | 54,176/1,745 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-24 00:45 | 2:20 | 0/0/0 | 5/0/0 | 0/0/0 | 4,148/167 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -54,9 +54,11 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Fragola_2023 | irrelevant | 0 | 0 | This is a medicinal chemistry/receptor pharmacology study using lofexidine only as a reference ligand; no PK parameters for lofexidine are reported. |
-| popPK | Jin_1989 | irrelevant | 0 | 0 | In-vitro pharmacology study of adenylate cyclase inhibition; lofexidine is only a test agonist, no PK parameters. |
+| popPK | Jin_1989 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor mechanisms (adenylate cyclase inhibition) and does not report pharmacokinetic parameters. |
+| PGx | Jin_1989 | not_relevant | 0 | 0 | The paper investigates the mechanism of action of lofexidine in animal tissues and contains no genetic or pharmacogenomic data. |
 | popPK | Sadek_2024 | irrelevant | 0 | 0 | Behavioral study of lofexidine as co-administered drug in rats; no PK parameters reported. |
-| popPK | Summers_1980 | irrelevant | 0 | 0 | In-vitro receptor binding study in rat brain membranes; lofexidine is only a comparator displacer, no PK parameters. |
+| popPK | Summers_1980 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding study involving clonidine and analogues, not a pharmacokinetic study of lofexidine. |
+| PGx | Summers_1980 | not_relevant | 0 | 0 | The paper reports in vitro binding displacement of [3H]clonidine by various ligands and does not discuss any gene variants or pharmacogenomic effects on lofexidine PK/PD parameters. |
 | popPK | Yocca_2025 | irrelevant | 0 | 0 | Lofexidine is only an in vitro comparator for α2-AR potency; the PK data (AUC, brain levels) concern dexmedetomidine, not lofexidine, and no lofexidine disposition parameters are reported. |
 
 

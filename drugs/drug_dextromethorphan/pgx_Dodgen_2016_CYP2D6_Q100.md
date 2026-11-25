@@ -1,7 +1,8 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;dextromethorphan&quot;,&quot;href&quot;:&quot;drugs/drug_dextromethorphan/&quot;},{&quot;label&quot;:&quot;Dodgen_2016 \u00b7 PGx CYP2D6&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dextromethorphan_Kukanich2004_reference&quot;,&quot;label&quot;:&quot;Kukanich_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dextromethorphan/Dextromethorphan_Kukanich2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--neutral" title="glm-5.3-flash, gpt-oss-120b re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
+# CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral" title="Gene–drug association without a quantitative parameter effect.">qualitative</span> <span class="pk-badge pk-badge--neutral" title="gpt-oss-120b, glm-5.3-flash re-read this paper but extracted nothing for this record — no evidence for or against it. Primary extraction retained.">cross-check: no answer</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -34,8 +35,8 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `glm-5.3-flash` | no answer | – | – (extracted nothing for this PGx record) |
 | `gpt-oss-120b` | no answer | – | – (extracted nothing for this PGx record) |
+| `glm-5.3-flash` | no answer | – | – (extracted nothing for this PGx record) |
 
 _No second reader extracted anything for this PGx record; it is not cross-checked._
 

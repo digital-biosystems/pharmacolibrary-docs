@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The telmisartan record uses library defaults for the absorption rate constant, a parameter not reported in the source text.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="telmisartan" model-id="Telmisartan_Wells2010_reference" status="needs_review" stale="false" population="pediatric patients with hypertension" measured-compound="telmisartan" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Wells TG, Portman R, Norman P, Haertter S, Davidai G. Safety, efficacy, and phar
 
 ### Reviewer guidance
 
-**The telmisartan record uses library defaults for the absorption rate constant, a parameter not reported in the source text.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The absorption rate constant and lag time were missing, so standard library values were substituted rather than estimates from the source. These defaults affect the simulated profile but lack empirical support from the specific review reference. A second reader disagreed with the overall verdict and several parameter values, with only 0 of 1 readers agreeing on the cross-check. Extracted — telmisartan: CL/F 745 mL/min, V/F 1.77e+03 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — telmisartan: CL/F 745 mL/min, V/F 1.77e+03 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q32: this record has 160, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check disputed by a second reader: verdict disputed, agreement 0.455, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.455 (5 of 11 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.455 | cross-check contradicted by a second reader: verdict disputed; agreement 0.455 (5 of 11 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

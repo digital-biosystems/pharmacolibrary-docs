@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> The dose-normalized area under the curve parameter has a unit dimension mismatch, conflicting with the expected mass-based dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit h/L/kg ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="rutoside" model-id="Rutoside_Domnguez2024_intravenous_administration_i_v" status="rejected" stale="false" population="New Zealand rabbits" measured-compound="rutin" parameterization="apparent" topology="parent_metabolite"></div>
 
@@ -58,13 +58,13 @@ Domínguez Moré GP, Rey DP, Valderrama IH, Ospina LF, Aragón DM. Rutin and Phy
 
 ### Reviewer guidance
 
-**The dose-normalized area under the curve parameter has a unit dimension mismatch, conflicting with the expected mass-based dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit h/L/kg ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The unit h/L/kg for the dose-normalized area under the curve parameter was found to be dimensionally inconsistent with the parameter's definition. Specifically, the unit's dimension ([time] / [length]³) conflicts with the required [mass] * [time] / [length]³ dimension. This dimensional error in the structural parameter necessitated the rejection of the model record. Extracted — rutoside: AUC∞ 4.74e+03 ng·h/mL, Cmax 4.96e+03 ng/mL, Vss 0.29 L/kg, Vnorm/F 0.084 L/kg, CL/F 0.079 L/h/kg, kel 1.06 h−1, t1/2z 0.79 h, MRT 3.63 h, … (+2).
+A reported unit could not be converted (AUC∞, Cmax, AUC/dose and C0), so that value has no SI equivalent. Extracted — rutoside: AUC∞ 4.74e+03 ng·h/mL, Cmax 4.96e+03 ng/mL, Vss 0.29 L/kg, Vnorm/F 0.084 L/kg, CL/F 0.079 L/h/kg, kel 1.06 h−1, t1/2z 0.79 h, MRT 3.63 h, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has rutin, the second reading unknown; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

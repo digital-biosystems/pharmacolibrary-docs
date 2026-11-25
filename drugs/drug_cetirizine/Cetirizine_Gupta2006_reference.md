@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">pig</span>
 
-> Levocetirizine clearance of 1.2 ml/min and volume of 457 ml are implausible for guinea pigs.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="cetirizine" model-id="Cetirizine_Gupta2006_reference" status="rejected" stale="false" population="guinea pigs" measured-compound="levocetirizine and dextrocetirizine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Gupta A, Hammarlund-Udenaes M, Chatelain P, Massingham R, Jonsson EN. Stereosele
 
 ### Reviewer guidance
 
-**Levocetirizine clearance of 1.2 ml/min and volume of 457 ml are implausible for guinea pigs.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record relies on abstract-only data, substituting summary statistics for fitted model parameters. Clearance and volume values fall outside physiological limits for the guinea pig population, indicating a unit or scale extraction error. A second reader could not identify the dose compound or analytes, and failed to extract the numerical parameter values. Extracted — levocetirizine and dextrocetirizine: CL 1.2 ml/min, Vss 457 ml.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is cetirizine's own; they describe levocetirizine and dextrocetirizine. Extracted — levocetirizine and dextrocetirizine: CL 1.2 ml/min, Vss 457 ml.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has racemic cetirizine, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

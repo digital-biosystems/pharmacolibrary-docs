@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Caffeine clearance and volume of distribution parameters were disputed by the second reader, who could not confirm their identity in the abstract-only record.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="caffeine" model-id="Caffeine_Thompson2025_reference" status="needs_review" stale="false" population="term infants with hypoxic-ischemic encephalopathy" measured-compound="caffeine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Thompson EJ, Gonzalez D, Dumond J, Hornik CP, Kilborn A, Laughon MM et al. Popul
 
 ### Reviewer guidance
 
-**Caffeine clearance and volume of distribution parameters were disputed by the second reader, who could not confirm their identity in the abstract-only record.**
+**cross_check_disputed; x1_cross_check.**
 
-The review relied solely on the paper's abstract, using reported summary statistics in place of a fitted model. The second reader disagreed on the identity of the dose and analyte, identifying them as unknown rather than caffeine. Consequently, the second reader could not confirm the extracted population clearance of 0.445 L/h/70 kg or the volume of distribution of 87.1 L/70 kg. Extracted — caffeine: CL 0.445 L/h/70 kg, V 87.1 L/70 kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — caffeine: CL 0.445 L/h/70 kg, V 87.1 L/70 kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has caffeine, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -132,7 +132,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.222, 0 of 1 reader(s) agree | 0.222 | cross-check disputed by a second reader: verdict disputed, agreement 0.222, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check contradicted by a second reader: verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

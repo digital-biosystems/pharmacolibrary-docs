@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.99).">human + animal</span>
 
-> The record for tolbutamide was held back because the absorption rate constant was left at library defaults rather than being reported in the source paper.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="tolbutamide" model-id="Tolbutamide_Shi2021_reference" status="needs_review" stale="false" population="" measured-compound="tolbutamide" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Shi Y, Meng D, Wang S, Geng P, Xu T, Zhou Q et al. Effects of Avitinib on CYP450
 
 ### Reviewer guidance
 
-**The record for tolbutamide was held back because the absorption rate constant was left at library defaults rather than being reported in the source paper.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The primary clearance and volume of distribution values (1.23 L/h/kg and 1.48 L/kg) appear in the text, but no specific absorption parameters were provided by the authors. Consequently, the absorption rate constant and lag time were substituted with generic library placeholders to complete the one-compartment structure. Additionally, a second reader disagreed with the extracted values for two specific quantitative fields, preventing full verification of the record's consistency. Extracted — tolbutamide: CL/F 1.23 L/h/kg/, V/F 1.48 L/kg.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — tolbutamide: CL/F 1.23 L/h/kg/, V/F 1.48 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q17: this record has none, the second reading 9037.90; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -135,7 +135,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check disputed by a second reader: verdict disputed, agreement 0.455, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict partial; agreement 0.727 (8 of 11 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.727 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

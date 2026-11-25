@@ -39,7 +39,7 @@ Gallamine is a peripherally acting muscle relaxant.
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">camelid</span> | [Al-Jafari_1997_AChE_activity](drugs/drug_gallamine/pd_Al_Jafari_1997_AChE_activity.md) | camel retina acetylcholinesterase activity biomarker turnover ← gallamine | — | Al-Jafari AA, The inhibitory effect of the neuromuscu…, Toxicology letters (1997) | [10.1016/s0378-4274(96)03828-3](https://doi.org/10.1016/s0378-4274(96)03828-3) |
+| <span class="pk-badge pk-badge--blue">Simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (camelid), not measured in people (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 1.00).">camelid</span> | [Al-Jafari_1997_AChE_activity](drugs/drug_gallamine/pd_Al_Jafari_1997_AChE_activity.md) | camel retina acetylcholinesterase activity biomarker turnover ← gallamine | — | Al-Jafari AA, The inhibitory effect of the neuromuscu…, Toxicology letters (1997) | [10.1016/s0378-4274(96)03828-3](https://doi.org/10.1016/s0378-4274(96)03828-3) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

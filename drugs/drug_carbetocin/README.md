@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.00).">human + animal</span> | [Cherepanov_2023_uterine_contraction_AUC](drugs/drug_carbetocin/pd_Cherepanov_2023_uterine_contraction_AUC.md) | uterine contraction AUC ← carbetocin · direct sigmoid Emax (Hill) effect | — | Cherepanov SM et al., Two oxytocin analogs, N-(p-fluorobenzyl…, PloS one (2023) | [10.1371/journal.pone.0281363](https://doi.org/10.1371/journal.pone.0281363) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.00).">human + animal</span> | [Cherepanov_2023_uterine_contraction_AUC](drugs/drug_carbetocin/pd_Cherepanov_2023_uterine_contraction_AUC.md) | uterine contraction AUC ← carbetocin · direct sigmoid Emax (Hill) effect | — | Cherepanov SM et al., Two oxytocin analogs, N-(p-fluorobenzyl…, PloS one (2023) | [10.1371/journal.pone.0281363](https://doi.org/10.1371/journal.pone.0281363) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

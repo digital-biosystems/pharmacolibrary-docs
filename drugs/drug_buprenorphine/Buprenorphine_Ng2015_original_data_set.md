@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the clearance parameter Km was assigned units of days, which are dimensionally incompatible with its required clearance dimensions.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit days ([time]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="buprenorphine" model-id="Buprenorphine_Ng2015_original_data_set" status="rejected" stale="false" population="neonates with NAS and healthy adults" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></div>
 
@@ -55,13 +55,13 @@ Ng CM, Dombrowsky E, Lin H, Erlich ME, Moody DE, Barrett JS et al. Population Ph
 
 ### Reviewer guidance
 
-**The record was rejected because the clearance parameter Km was assigned units of days, which are dimensionally incompatible with its required clearance dimensions.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q1 unit days ([time]) vs [mass] / [length] ** 3.**
 
-The parameter Km is defined as a measure of enzyme affinity but was extracted with a value of 0.271 days. This unit of time conflicts with the dimensional requirements of a clearance parameter, which must be mass divided by length cubed. Consequently, the parameter could not be converted to SI units, leaving the model with a structural inconsistency. Extracted — buprenorphine: CL 141 L/hr, V2 205 L, Q 621 L/hr, V3 3.22e+03 L, Km 0.271 days, V 2.8 L/kg.
+A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — buprenorphine: CL 141 L/hr, V2 205 L, Q 621 L/hr, V3 3.22e+03 L, Km 0.271 days, V 2.8 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has buprenorphine, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

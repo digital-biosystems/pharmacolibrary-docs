@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Absorption rate constant and lag time were not reported, forcing library defaults, while summary ratios were misidentified as fitted parameters.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="daprodustat" model-id="Daprodustat_Mahar2024_reference" status="needs_review" stale="false" population="adults with chronic kidney disease and anemia" measured-compound="daprodustat" parameterization="apparent" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Mahar KM, Yang S, Mesic E, Post TM, Goulooze SC. Integrated Population Pharmacok
 
 ### Reviewer guidance
 
-**Absorption rate constant and lag time were not reported, forcing library defaults, while summary ratios were misidentified as fitted parameters.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The abstract-only source provided no estimate for the absorption rate constant or lag time, requiring the use of library defaults. Additionally, the area under the curve ratio of 1.59 and maximum concentration ratio of 1.19 are summary statistics, not fitted model parameters. A second reader disagreed with the record's identification of the dose compound and primary analyte as daprodustat, marking them as unknown. Extracted — daprodustat: CL/F 24.6 L/h, V 26.9 L, AUC ratio 1.59, Cmax_ratio 1.19.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — daprodustat: CL/F 24.6 L/h, V 26.9 L, AUC ratio 1.59, Cmax_ratio 1.19.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has daprodustat, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -146,7 +146,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Digoxin bioavailability was left at library defaults rather than extracted from the abstract-only record, lacking explicit support from the paper.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="digoxin" model-id="Digoxin_MartinSuarez2017_reference" status="needs_review" stale="false" population="pregnant women" measured-compound="digoxin" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Martin-Suarez A, Sanchez-Hernandez JG, Medina-Barajas F, Pérez-Blanco JS, Lanao
 
 ### Reviewer guidance
 
-**Digoxin bioavailability was left at library defaults rather than extracted from the abstract-only record, lacking explicit support from the paper.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. Bioavailability was not reported in the source text and thus defaulted, affecting the simulated profile without support from the paper. The second reader could not verify the reported volume of distribution (682.0 L) or clearance (16.1 L/h) values. Extracted — digoxin: V 682 L, CL 16.1 L/h, kabs 2.29 h−1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — digoxin: V 682 L, CL 16.1 L/h, kabs 2.29 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has digoxin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

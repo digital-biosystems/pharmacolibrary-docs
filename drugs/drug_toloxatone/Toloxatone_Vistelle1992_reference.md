@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span>
 
-> The record for toloxatone was held back because a second reader could not confirm the extracted half-life, clearance, and volume of distribution values from the abstract.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="toloxatone" model-id="Toloxatone_Vistelle1992_reference" status="needs_review" stale="false" population="anaesthetized rabbits" measured-compound="toloxatone" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Vistelle R, Lamiable D, Zinsou M, Leon A, Wiczewski M. Toloxatone pharmacokineti
 
 ### Reviewer guidance
 
-**The record for toloxatone was held back because a second reader could not confirm the extracted half-life, clearance, and volume of distribution values from the abstract.**
+**cross_check_disputed; x1_cross_check.**
 
-The review only read the paper's abstract, so the reported summary statistics stand in for a fitted model. A second reader agreed with zero of the one readers, resulting in a 0.2 agreement score. The reader disputed the dose compound and primary analyte as unknown and failed to confirm the specific parameter values of 47.4 min, 79 mL min-1, and 5.8 L. Extracted — toloxatone: t1/2z 47.4 min, CL 79 mL min-1, V 5.8 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — toloxatone: t1/2z 47.4 min, CL 79 mL min-1, V 5.8 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has toloxatone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +136,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -152,7 +152,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference/Toloxatone_Vistelle1992_reference_modelica.zip" download>Toloxatone_Vistelle1992_reference_modelica.zip</a> <span class="pk-size">(3.6 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference/Toloxatone_Vistelle1992_reference_modelica.zip" download>Toloxatone_Vistelle1992_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference/Toloxatone_Vistelle1992_reference_fmi.zip" download>Toloxatone_Vistelle1992_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_1C.fmu" download>PK_1C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference/Toloxatone_Vistelle1992_reference_matlab.zip" download>Toloxatone_Vistelle1992_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference/Toloxatone_Vistelle1992_reference_matlab_simbio.zip" download>Toloxatone_Vistelle1992_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
@@ -214,4 +214,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btoloxatone%5D%20Toloxatone_Vistelle1992_reference&body=Drug%3A%20toloxatone%0ARecord%3A%20Toloxatone_Vistelle1992_reference%0APaper%3A%20Vistelle_1992%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_toloxatone/Toloxatone_Vistelle1992_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 23:51 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:55 UTC</sub>

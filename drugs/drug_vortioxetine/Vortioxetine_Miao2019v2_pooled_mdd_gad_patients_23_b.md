@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The V2 parameter is mislabeled with an absorption rate constant unit (L/h) that conflicts with its structural meaning as a volume, causing rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="vortioxetine" model-id="Vortioxetine_Miao2019v2_pooled_mdd_gad_patients_23_b" status="rejected" stale="false" population="Chinese healthy subjects and patients with MDD" measured-compound="vortioxetine" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Miao J, Wang G, Hou J, Areberg J, Zhao Y, Højer AM et al. Pharmacokinetics and 
 
 ### Reviewer guidance
 
-**The V2 parameter is mislabeled with an absorption rate constant unit (L/h) that conflicts with its structural meaning as a volume, causing rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The recorded value of 0.95 for the peripheral volume of distribution (V2) is paired with the unit L/h, which is dimensionally incompatible with a volume parameter. The V2 parameter label is also corrupted by LaTeX formatting artifacts, further obscuring its correct definition. Additionally, the model contains an orphan compartment with no path from the dose, indicating a structural defect in the one-compartment topology. Extracted — vortioxetine: kabs 0.14 L/h, CL/F 39 L/h, V2 0.95 N = 3183b.
+A reported unit could not be converted (kabs and V2), so that value has no SI equivalent. Extracted — vortioxetine: kabs 0.14 L/h, CL/F 39 L/h, V2 0.95 N = 3183b.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has vortioxetine, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

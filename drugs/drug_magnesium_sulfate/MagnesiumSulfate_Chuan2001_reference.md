@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Magnesium baseline concentration was missing here despite a second reader reporting 0.811, leaving the abstract-only record disputed.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="magnesium sulfate" model-id="MagnesiumSulfate_Chuan2001_reference" status="needs_review" stale="false" population="patients with preeclampsia" measured-compound="magnesium" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Chuan FS, Charles BG, Boyle RK, Rasiah RL. Population pharmacokinetics of magnes
 
 ### Reviewer guidance
 
-**Magnesium baseline concentration was missing here despite a second reader reporting 0.811, leaving the abstract-only record disputed.**
+**cross_check_disputed; x1_cross_check.**
 
-The record comes from the abstract alone, so its magnesium clearance of 4.28 L/h, volume of distribution of 32.3 L, and terminal half-life of 5.2 hours are summary statistics rather than estimates from a fitted model. The second reader also disagreed on the dose compound name, reporting magnesium_sulfate rather than magnesium sulfate; agreement was 0.75, with 0 of 1 reader agreeing. Extracted — magnesium sulfate: CL 4.28 L/h, V 32.3 L, t1/2z 5.2 hours.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — magnesium sulfate: CL 4.28 L/h, V 32.3 L, t1/2z 5.2 hours.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has magnesium sulfate, the second reading magnesium_sulfate; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -134,7 +134,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.75 (6 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (6 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

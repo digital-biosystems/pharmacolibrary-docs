@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ketorolac clearance of 0.651 L/h/kg was rejected because the paper concerns another drug, not ketorolac.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="ketorolac" model-id="Ketorolac_Cavallaro2026_reference" status="rejected" stale="false" population="" measured-compound="ketorolac" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Cavallaro G, Garrido F, Decembrino N, Bullejos Garcia EE, Raffaeli G. Pharmacolo
 
 ### Reviewer guidance
 
-**Ketorolac clearance of 0.651 L/h/kg was rejected because the paper concerns another drug, not ketorolac.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The record assigns ketorolac a total clearance of 0.651 L/h/kg and a volume of distribution of 4.7 L/kg. Neither the paper title nor abstract names ketorolac, and the relevance screen rejected the paper as concerning another drug. Extracted — ketorolac: CL 0.651 L/h/kg, V 4.7 L/kg.
+Extracted — ketorolac: CL 0.651 L/h/kg, V 4.7 L/kg.
 
 A second, independent reading of the paper (`glm-5.3-flash`) disagrees on parameter Q88: this record has 79, the second reading none. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -122,7 +122,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.8 (4 of 5 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (glm-5.3-flash) | 0.8 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

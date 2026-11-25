@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Second reader disputes the record built from abstract-only data, specifically challenging the dose compound identification and the 3.04 L volume parameter.
+> cross_check_disputed; x1_cross_check.
 
-<div class="pk-model-meta" hidden drug="protamine" model-id="Protamine_Butterworth2002_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="protamine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="protamine" model-id="Protamine_Butterworth2002_reference" status="needs_review" stale="false" population="normal volunteers" measured-compound="protamine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Butterworth J, Lin YA, Prielipp R, Bennett J, James R. The pharmacokinetics and cardiovascular effects of a single intravenous dose of protamine in normal volunteers. Anesthesia and analgesia 94(3):514 (2002).
@@ -18,6 +18,8 @@ Butterworth J, Lin YA, Prielipp R, Bennett J, James R. The pharmacokinetics and 
 ## Population and dosing
 
 **Population:** healthy volunteers · condition healthy · age group adult · n = 18.
+
+**Dosed compound ≠ measured compound:** dosed protamine sulfate, measured protamine.
 
 ## Model
 
@@ -50,13 +52,13 @@ Butterworth J, Lin YA, Prielipp R, Bennett J, James R. The pharmacokinetics and 
 
 ### Reviewer guidance
 
-**Second reader disputes the record built from abstract-only data, specifically challenging the dose compound identification and the 3.04 L volume parameter.**
+**cross_check_disputed; x1_cross_check.**
 
-The model relies on abstract summary statistics rather than fitted data, limiting parameter precision. A second reader disagreed that the dose compound was protamine instead of protamine sulfate. Additionally, the second reader could not locate the 3.04 L volume of distribution value in the abstract, leading to a null result for that parameter. Extracted — protamine: Vss 12.3 L, CL 2.2 L/min, t1/2z 7.4 min, V 3.04 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — protamine: Vss 12.3 L, CL 2.2 L/min, t1/2z 7.4 min, V 3.04 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has protamine, the second reading protamine sulfate; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -136,7 +138,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.75 (6 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (6 of 8 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -213,4 +215,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bprotamine%5D%20Protamine_Butterworth2002_reference&body=Drug%3A%20protamine%0ARecord%3A%20Protamine_Butterworth2002_reference%0APaper%3A%20Butterworth_2002%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_protamine/Protamine_Butterworth2002_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 19:26 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:11 UTC</sub>

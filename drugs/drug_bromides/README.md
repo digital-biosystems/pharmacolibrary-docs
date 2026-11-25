@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 19:43 | 0:33 | 0/0/0 | 0/2/0 | 0/0/0 | 60,962/1,920 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-23 19:21 | 0:03 | 0/0/0 | 0/2/0 | 0/0/0 | 3,325/157 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -51,12 +51,17 @@ _not available_
 |---|---|---|---|---|---|
 | popPK | Biczak_2020 | irrelevant | 0 | 0 | This is a plant phytotoxicity/ecotoxicology study of ionic liquid bromides in cucumber seedlings, with no pharmacokinetic disposition parameters (CL, V, half-life, PK model) for bromides. |
 | popPK | Fojtášková_2020 | irrelevant | 0 | 0 | This is a chemistry/ecotoxicity study of ionic liquid synthesis; "bromides" are only counterions/precursors, with no pharmacokinetic parameters for bromide as a drug. |
-| popPK | Hou_2016 | irrelevant | 0 | 0 | This is a medicinal chemistry/SAR paper on antifungal β-carboline salts; "bromides" refers only to counterions, with no pharmacokinetic parameters reported. |
+| popPK | Hou_2016 | irrelevant | 0 | 0 | The paper reports the synthesis and in vitro antifungal activity of chemical compounds named "bromides" (salts), not the pharmacokinetics of the drug class bromides. |
+| PGx | Hou_2016 | not_relevant | 0 | 0 | The paper reports the synthesis and antifungal activity of carboline derivatives, with no focus on bromide pharmacogenomics or PK/PD parameters of bromide drugs. |
 | popPK | Nordeman_2012 | irrelevant | 0 | 0 | This is a synthetic chemistry paper about aryl bromides as substrates, not pharmacokinetics of the drug bromide. |
-| popPK | Novikov_2010 | irrelevant | 0 | 0 | This is a chemistry/antiviral synthesis paper; "bromides" appear only as synthetic reagents, with no pharmacokinetic parameters for bromide as a drug. |
-| popPK | Rastegari_2009 | irrelevant | 0 | 0 | This is an in-vitro surfactant–enzyme binding study; alkyl trimethyl ammonium bromides are surfactants, not the drug bromide, and no PK parameters exist. |
-| popPK | Yang_2015 | irrelevant | 0 | 0 | This is a synthetic chemistry/antifungal SAR study; "bromides" refers to chemical salt forms, not the drug bromide, and no PK parameters are reported. |
-| popPK | el-Sabbagh_2009 | irrelevant | 0 | 0 | This is a chemistry/antiviral synthesis paper; "bromides" refers only to reagents (phenacyl bromides), with no pharmacokinetic data. |
+| popPK | Novikov_2010 | irrelevant | 0 | 0 | The study describes the synthesis and in vitro antiviral activity of pyrimidine derivatives using benzyl bromides only as reagents, not as the subject drug for pharmacokinetic analysis. |
+| PGx | Novikov_2010 | not_relevant | 0 | 0 | The paper describes the synthesis and in vitro antiviral activity of new pyrimidine analogs, not the pharmacogenomics of bromides as drugs. |
+| popPK | Rastegari_2009 | irrelevant | 0 | 0 | The study investigates the interaction of surfactants (ammonium bromides) with an enzyme (cellulase) in an in vitro setting, not the pharmacokinetics of the drug bromides. |
+| PGx | Rastegari_2009 | not_relevant | 0 | 0 | The paper investigates the interaction of cellulase with surfactant bromides in a biochemical context, not the pharmacokinetics or pharmacodynamics of therapeutic bromides in humans. |
+| popPK | Yang_2015 | irrelevant | 0 | 0 | The paper describes the synthesis and antifungal bioactivity of chemical compounds containing bromide ions, not the pharmacokinetics of the drug bromides. |
+| PGx | Yang_2015 | not_relevant | 0 | 0 | The paper describes the synthesis and antifungal activity of a new class of chemical compounds (bromide salts) for plant protection and contains no information regarding human pharmacogenomics, PK, or PD. |
+| popPK | el-Sabbagh_2009 | irrelevant | 0 | 0 | The paper focuses on the synthesis and antiviral activity of new pyrazole derivatives and does not report pharmacokinetic parameters for bromides. |
+| PGx | el-Sabbagh_2009 | not_relevant | 0 | 0 | The paper is about the synthesis of pyrazole and thiazole derivatives for antiviral activity, not pharmacogenomics of bromides. |
 
 
 </details>

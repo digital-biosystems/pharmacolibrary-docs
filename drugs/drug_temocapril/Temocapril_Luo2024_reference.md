@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record rejected because it lacks clearance or volume parameters, making it a non-compartmental exposure/outcome study rather than a pharmacokinetic model.
+> No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg ([mass]) vs [time] (+1 more).
 
 <div class="pk-model-meta" hidden drug="temocapril" model-id="Temocapril_Luo2024_reference" status="rejected" stale="false" population="healthy subjects and liver cirrhosis patients (virtual populations, CP-A/B/C)" measured-compound="temocapril and temocaprilat" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -49,13 +49,13 @@ Luo X, Zhang Z, Mu R, Hu G, Liu L, Liu X. Simultaneously Predicting the Pharmaco
 
 ### Reviewer guidance
 
-**Record rejected because it lacks clearance or volume parameters, making it a non-compartmental exposure/outcome study rather than a pharmacokinetic model.**
+**No volume or clearance — not a compartmental population PK model; c5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q310 unit mg ([mass]) vs [time] (+1 more).**
 
-The record contains no distribution volume or elimination clearance parameters, so it does not represent a compartmental population pharmacokinetic model. Additionally, structural links for unrelated ACE inhibitors and oseltamivir are present, and reported parameters belong to flumazenil rather than temocapril. A second reader noted that AUC and Cmax values exist for flumazenil but were not correctly associated with the primary analyte. Extracted — flumazenil: AUCt 0.16 μg × h/mL, Cmax 72.1 ng/mL.
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. A reported unit could not be converted (AUCt and Cmax), so that value has no SI equivalent. None of the extracted parameters is temocapril's own; they describe flumazenil. Extracted — flumazenil: AUCt 0.16 μg × h/mL, Cmax 72.1 ng/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has temocapril hydrochloride, the second reading temocapril; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

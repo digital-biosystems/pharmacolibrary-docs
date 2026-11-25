@@ -21,7 +21,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Béguin_2024_Thrombocyte_reduction_2](drugs/drug_thrombocytes/pd_B_guin_2024_Thrombocyte_reduction_2.md) | Thrombocyte reduction ← Dose · direct sigmoid Emax (Hill) effect | — | Béguin J et al., Population pharmacokinetics modelling f…, BMC veterinary research (2024) | [10.1186/s12917-024-04404-1](https://doi.org/10.1186/s12917-024-04404-1) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Béguin_2024_Thrombocyte_reduction_2](drugs/drug_thrombocytes/pd_B_guin_2024_Thrombocyte_reduction_2.md) | Thrombocyte reduction ← Dose · direct sigmoid Emax (Hill) effect | — | Béguin J et al., Population pharmacokinetics modelling f…, BMC veterinary research (2024) | [10.1186/s12917-024-04404-1](https://doi.org/10.1186/s12917-024-04404-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -35,7 +35,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 23:38 | 6:20 | 0/0/0 | 0/1/0 | 0/0/0 | 223,982/8,532 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 2/31 | 11/0 | 0 |
+| 2026-10-05 23:38 | 6:20 | 0/0/0 | 1/0/0 | 0/0/0 | 223,982/8,532 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 2/31 | 11/0 | 0 |
 
 ## Coverage
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Second reader disagreed on risdiplam parameters, citing missing alpha (3.55) and conflicting ktr values (5.18 vs 5.12).
+> The covariate scenarios were not simulated; cross_check_disputed (+1 more).
 
 <div class="pk-model-meta" hidden drug="risdiplam" model-id="Risdiplam_Cleary2023_reference" status="needs_review" stale="false" population="SMA patients and healthy subjects" measured-compound="risdiplam" parameterization="apparent" topology="2C"></div>
 
@@ -59,13 +59,13 @@ Cleary Y, Kletzl H, Grimsey P, Heinig K, Ogungbenro K, Silber Baumann HE et al. 
 
 ### Reviewer guidance
 
-**Second reader disagreed on risdiplam parameters, citing missing alpha (3.55) and conflicting ktr values (5.18 vs 5.12).**
+**The covariate scenarios were not simulated; cross_check_disputed (+1 more).**
 
-The record lists a ktr of 5.18 1/h, but the second reader identified 5.12 1/h. The second reader also reported an elimination rate constant alpha of 3.55 that is absent from the extracted parameters. Additionally, the second reader marked the dose compound as unknown, while this record specifies risdiplam. Extracted — risdiplam: CL/F 2.64 L/h, ktr 5.18 1/h, V1/F 98 L, Q/F 0.682 L/h, V2/F 92.9 L.
+The base model was simulated, not the covariate effects the record defines. Extracted — risdiplam: CL/F 2.64 L/h, ktr 5.18 1/h, V1/F 98 L, Q/F 0.682 L/h, V2/F 92.9 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has risdiplam, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -183,7 +183,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | cross-check disputed by a second reader: verdict disputed, agreement 0.5, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.5 (14 of 28 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | cross-check contradicted by a second reader: verdict disputed; agreement 0.5 (14 of 28 compared fields agree, 10 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

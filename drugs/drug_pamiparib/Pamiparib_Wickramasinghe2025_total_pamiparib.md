@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> PCC unit for time-zero concentration is dimensionally wrong, and a compartment lacks a dose path.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit PCC ([length] ** 3) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="pamiparib" model-id="Pamiparib_Wickramasinghe2025_total_pamiparib" status="rejected" stale="false" population="glioblastoma patients" measured-compound="pamiparib" parameterization="apparent" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Wickramasinghe C, Kim S, Jiang Y, Bao X, Yue Y, Jiang J et al. Population Pharma
 
 ### Reviewer guidance
 
-**PCC unit for time-zero concentration is dimensionally wrong, and a compartment lacks a dose path.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit PCC ([length] ** 3) vs [mass] * [time] / [length] ** 3; c8 unreachable/orphan compartment or unlinked metabolite.**
 
-The time-zero concentration (0.0089) uses unit PCC, which implies volume but requires mass concentration, causing a dimension conflict. The model structure includes an orphan compartment with no path from the dose. The PCC unit could not be converted to standard SI units, so the parameter value was not processed. A second reader also disagreed on several parameter values, including the time-zero concentration (0.0094 vs 0.0089). Extracted — pamiparib: kabs 1.71 h−1, V2/F 17 L, CL/F 7.76 L/h, fu 0.041 Fu, C0 0.0089 PCC, Vmax 0.35, V/F 44 L.
+A reported unit could not be converted (fu and C0), so that value has no SI equivalent. Extracted — pamiparib: kabs 1.71 h−1, V2/F 17 L, CL/F 7.76 L/h, fu 0.041 Fu, C0 0.0089 PCC, Vmax 0.35, V/F 44 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has pamiparib, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

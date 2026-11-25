@@ -14,15 +14,21 @@ Human fibrinogen is a blood component and haemostatic agent used to treat bleedi
 
 <small>Summary written by `qwen3.8-27b` from [Wikidata Q22075876](https://www.wikidata.org/wiki/Q22075876), DrugBank's routes and dosage forms and the WHO ATC classification; not checked by a person.</small>
 
+## Parameters across studies
+
+<div class="pk-forest-row"><svg class="pk-forest" xmlns="http://www.w3.org/2000/svg" width="560" height="80" viewBox="0 0 560 80" role="img" aria-label="V across studies"><text x="190" y="14" font-size="12" font-weight="600">V (L, log scale)</text><line x1="190.0" y1="18" x2="190.0" y2="58" stroke="#ddd"/><text x="190.0" y="72" font-size="10" text-anchor="middle">10</text><line x1="365.0" y1="18" x2="365.0" y2="58" stroke="#ddd"/><text x="365.0" y="72" font-size="10" text-anchor="middle">100</text><line x1="540.0" y1="18" x2="540.0" y2="58" stroke="#ddd"/><text x="540.0" y="72" font-size="10" text-anchor="middle">1000</text><text x="184" y="34.0" font-size="11" text-anchor="end">van_2026 · V</text><circle cx="259.2" cy="30.0" r="4" fill="#ef6c00"><title>van_2026 · V: 24.87 L</title></circle><text x="184" y="50.0" font-size="11" text-anchor="end">Khayat_2023 · V ·/kg</text><circle cx="460.2" cy="46.0" r="4" fill="#ef6c00"><title>Khayat_2023 · V ·/kg: 350 L</title></circle></svg></div>
+
+<sub>One dot per record, coloured by status; values converted from the record's SI value to one unit per parameter. ·/kg: given per kg in the paper, shown for a 70 kg adult. Rejected records are left out.</sub>
+
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-rf" hidden data-species="human" data-age="paediatric" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: disposition incomplete — clearance/elimination from this paper; review-gap-fill…</sub> | [Khayat_2023_reference](drugs/drug_fibrinogen_human/FibrinogenHuman_Khayat2023_reference.md) | — | 1-compartment (no model) | 4 | Khayat CD et al., Pharmacokinetics, efficacy and safety o…, Blood coagulation & fibrino… (2023) | [10.1097/MBC.0000000000001182](https://doi.org/10.1097/MBC.0000000000001182) |
+| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="no"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub> | [van_2026_reference](drugs/drug_fibrinogen_human/FibrinogenHuman_van2026_reference.md) | — | 1-compartment (no model) | 2 | van Lier D et al., Safety, tolerability, and pharmacokinet…, mAbs (2026) | [10.1080/19420862.2026.2671468](https://doi.org/10.1080/19420862.2026.2671468) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Jia_2026_reference](drugs/drug_fibrinogen_human/FibrinogenHuman_Jia2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Ma_2026_reference](drugs/drug_fibrinogen_human/FibrinogenHuman_Ma2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ma Y et al., Optimizing Colistin Sulfate Dosing in S…, Drug design, development an… (2026) | [10.2147/dddt.s600942](https://doi.org/10.2147/dddt.s600942) |
 | <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="yes"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [Yang_2025_reference](drugs/drug_fibrinogen_human/FibrinogenHuman_Yang2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Yang J et al., Population pharmacokinetics of polymyxi…, Frontiers in pharmacology (2025) | [10.3389/fphar.2025.1511088](https://doi.org/10.3389/fphar.2025.1511088) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: paper_subject_is_other_drug</sub> | [van_2026_reference](drugs/drug_fibrinogen_human/FibrinogenHuman_van2026_reference.md) | — | 1-compartment (no model) | 2 | van Lier D et al., Safety, tolerability, and pharmacokinet…, mAbs (2026) | [10.1080/19420862.2026.2671468](https://doi.org/10.1080/19420862.2026.2671468) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,13 +42,13 @@ Human fibrinogen is a blood component and haemostatic agent used to treat bleedi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 19:22 | 21:02 | 1/4/0 | 0/0/0 | 0/0/0 | 511,439/43,110 | ollama / qwen3.8:27b-mtp-q8_0 | 21 | 1/28 | 20/1 | 0 |
+| 2026-10-05 19:22 | 21:02 | 2/3/0 | 0/0/0 | 0/0/0 | 511,439/43,110 | ollama / qwen3.8:27b-mtp-q8_0 | 21 | 1/28 | 20/1 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 1207 matched, 51 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 5  ·  extracted 0  ·  needs review 1  ·  rejected 4  ·  stale 0
+- **records:** 5  ·  extracted 0  ·  needs review 2  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full-text requests

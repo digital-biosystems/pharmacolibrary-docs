@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-> The buprenorphine model fails to reproduce the paper's peak concentration, time to peak, and terminal half-life due to unit conversion errors.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 1.25e-05, model 3.53e-06); the model does not reproduce the paper's time of the peak (tmax) (paper 0.5, model 0.183) (+2 more).
 
 <div class="pk-model-meta" hidden drug="buprenorphine" model-id="Buprenorphine_Robertson2005_otm" status="needs_review" stale="false" population="adult cats" measured-compound="buprenorphine" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Robertson SA, Lascelles BD, Taylor PM, Sear JW. PK-PD modeling of buprenorphine 
 
 ### Reviewer guidance
 
-**The buprenorphine model fails to reproduce the paper's peak concentration, time to peak, and terminal half-life due to unit conversion errors.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 1.25e-05, model 3.53e-06); the model does not reproduce the paper's time of the peak (tmax) (paper 0.5, model 0.183) (+2 more).**
 
-The model's predicted peak concentration (3.53e-06) is far below the paper's reported value (1.25e-05). The predicted time to peak (0.183) and terminal half-life (5.97) also differ significantly from the paper's values (0.5 and 6.14). These discrepancies are caused by converting paper units (ng/mL, min) to SI units without aligning the model's output units (kg/m3, h). Extracted — buprenorphine: V 4.81 L/kg, CL 9.3 mL/kg/min.
+Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's time of the peak (tmax) differs from the value the paper reports by more than the tolerance. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — buprenorphine: V 4.81 L/kg, CL 9.3 mL/kg/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has buprenorphine, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -150,13 +150,13 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 1.25e-05 | 3.53e-06 | 0.2824 | ng/mL→SI vs simulated kg/m3 |
-| T1_t_half_beta | reference | pass | 6.138 | 5.968 | 0.9722 | min→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 4.045 | 5.968 | 1.475 | min→SI vs simulated h |
-| T1_t_half_beta | reference | pass | 6.633 | 5.968 | 0.8997 | min→SI vs simulated h |
-| T1_t_half_terminal | reference | skipped |  | 5.968 |  | non-numeric value |
-| T1_tmax | reference | fail | 0.5 | 0.1833 | 0.3667 | min→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.2 | cross-check contradicted by a second reader: verdict disputed; agreement 0.2 (2 of 10 compared fields agree, 6 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 1.25e-05 | 3.53e-06 | 0.2824 | reported 12.5 ng/mL→SI vs simulated kg/m3 |
+| T1_t_half_beta | reference | pass | 6.138 | 5.968 | 0.9722 | reported 368.3 min→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 4.045 | 5.968 | 1.475 | reported 242.7 min→SI vs simulated h |
+| T1_t_half_beta | reference | pass | 6.633 | 5.968 | 0.8997 | reported 398.0 min→SI vs simulated h |
+| T1_t_half_terminal | reference | skipped |  | 5.968 |  | the transcribed record carries no number for this value |
+| T1_tmax | reference | fail | 0.5 | 0.1833 | 0.3667 | reported 30.0 min→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

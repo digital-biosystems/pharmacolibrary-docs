@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The doxorubicinol intercompartmental clearance value of 2.343 is physiologically implausible, causing rejection.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="doxorubicin" model-id="Doxorubicin_Yoshida1994_hd_group" status="rejected" stale="false" population="patients with normal renal function and on hemodialysis" measured-compound="doxorubicin" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -51,13 +51,13 @@ Yoshida H, Goto M, Honda A, Nabeshima T, Kumazawa T, Inagaki J et al. Pharmacoki
 
 ### Reviewer guidance
 
-**The doxorubicinol intercompartmental clearance value of 2.343 is physiologically implausible, causing rejection.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record assigns a high intercompartmental clearance value of 2.343 to the metabolite doxorubicinol, which exceeds physiological limits. This magnitude suggests a likely unit or scale extraction error for the parameter labeled k34. A second reader disagreed with the parameter identification, assigning a different ID to this specific clearance rate. Extracted — doxorubicin: V 0.437 L, kel 1.56 1/h, Q 0.0925; doxorubicinol: kel 0.0882 1/h, Q 2.34.
+Extracted — doxorubicin: V 0.437 L, kel 1.56 1/h, Q 0.0925; doxorubicinol: kel 0.0882 1/h, Q 2.34.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[k34].parameter_id`: this record has Q30, the second reading Q99. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

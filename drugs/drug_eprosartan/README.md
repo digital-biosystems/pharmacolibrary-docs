@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [van_2013_SBP](drugs/drug_eprosartan/pd_van_2013_SBP.md) | systolic blood pressure ← eprosartan · direct log-linear effect | — | van Rijn-Bikker PC et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0073-6](https://doi.org/10.1007/s40262-013-0073-6) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [van_2013_SBP](drugs/drug_eprosartan/pd_van_2013_SBP.md) | systolic blood pressure ← eprosartan · direct log-linear effect | — | van Rijn-Bikker PC et al., Pharmacokinetic-pharmacodynamic modelin…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0073-6](https://doi.org/10.1007/s40262-013-0073-6) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">rat</span> | [Shetty_2000_stimulation_induced_efflux_of_3_H_norepinephrine](drugs/drug_eprosartan/pd_Shetty_2000_stimulation_induced_efflux_of_3_H_norepinephrine.md) | stimulation-induced efflux of [(3)H]norepinephrine ← eprosartan · direct sigmoid Emax (Hill) effect | — | Shetty SS et al., Differential inhibition of the prejunct…, The Journal of pharmacology… (2000) | — |
 
 <details class="legend">

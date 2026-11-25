@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ampicillin was rejected because its central-to-peripheral k12 (14.0 L/h) and peripheral-to-central k21 (5.55 L/h) transfer rates have inverse-time meanings, not volume-per-time units.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q301 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; Q302 unit L/h ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="ampicillin" model-id="Ampicillin_Setiawan2023_reference" status="rejected" stale="false" population="hospitalised adult patients" measured-compound="ampicillin" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Setiawan E, Cotta MO, Abdul-Aziz MH, Widjanarko D, Sosilya H, Lukas DL et al. Po
 
 ### Reviewer guidance
 
-**Ampicillin was rejected because its central-to-peripheral k12 (14.0 L/h) and peripheral-to-central k21 (5.55 L/h) transfer rates have inverse-time meanings, not volume-per-time units.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q301 unit L/h ([length] ** 3 / [time]) vs 1 / [time]; Q302 unit L/h ([length] ** 3 / [time]) vs 1 / [time].**
 
-The record defines both parameters as first-order transfer rate constants, whose dimension is inverse time, but reports them in L/h, a volume-per-time unit. The reported units could not be converted to SI, leaving these transfer rates without SI values. A second reader marked the dose compound and primary analyte as unknown and did not retain kabs, although this record identifies ampicillin as the measured compound and reports its absorption rate constant as 6.45 h-1. Extracted — ampicillin: CL 3.15 L/h, V 2.85 L, k12 14 L/h, k21 5.55 L/h, kabs 6.45 h-1.
+A reported unit could not be converted (k12 and k21), so that value has no SI equivalent. Extracted — ampicillin: CL 3.15 L/h, V 2.85 L, k12 14 L/h, k21 5.55 L/h, kabs 6.45 h-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ampicillin-sulbactam, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

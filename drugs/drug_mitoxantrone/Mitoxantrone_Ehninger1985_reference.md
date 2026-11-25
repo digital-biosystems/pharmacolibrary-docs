@@ -9,7 +9,7 @@
 
 > The clearance plausibility check could not be computed.
 
-<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Ehninger1985_reference" status="needs_review" stale="false" population="men" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="mitoxantrone" model-id="Mitoxantrone_Ehninger1985_reference" status="needs_review" stale="false" population="man" measured-compound="mitoxantrone" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ehninger G, Proksch B, Heinzel G, Schiller E, Weible KH, Woodward DL. The pharmacokinetics and metabolism of mitoxantrone in man. Investigational new drugs 3(2):109–116 (1985).
@@ -146,4 +146,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitoxantrone%5D%20Mitoxantrone_Ehninger1985_reference&body=Drug%3A%20mitoxantrone%0ARecord%3A%20Mitoxantrone_Ehninger1985_reference%0APaper%3A%20Ehninger_1985%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitoxantrone/Mitoxantrone_Ehninger1985_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:30 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 03:56 UTC</sub>

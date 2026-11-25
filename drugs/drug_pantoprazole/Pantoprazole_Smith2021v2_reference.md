@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
 
-> The second reader disputed the record, disagreeing on the 0.9 L/kg volume value and the missing clearance parameter.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="pantoprazole" model-id="Pantoprazole_Smith2021v2_reference" status="needs_review" stale="false" population="adult goats" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Smith JS, Mochel JP, Soto-Gonzalez WM, Rahn RR, Fayne BN, Escher OG et al. Pharm
 
 ### Reviewer guidance
 
-**The second reader disputed the record, disagreeing on the 0.9 L/kg volume value and the missing clearance parameter.**
+**cross_check_disputed; x1_cross_check.**
 
-The cross-check failed because the second reader did not agree with the extracted parameters. Specifically, the reader identified the volume of distribution as 1.1 L/kg rather than the recorded 0.9 L/kg. Additionally, the second reader found a clearance value of 1.2, whereas the current record contains no value for this parameter. Extracted — pantoprazole: CL 20.5 mL/kg/hr, V 0.9 L/kg.
+Extracted — pantoprazole: CL 20.5 mL/kg/hr, V 0.9 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of V: this record has 0.9, the second reading 1.1; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -124,7 +124,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | cross-check disputed by a second reader: verdict disputed, agreement 0.857, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.857 (12 of 14 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.857 | cross-check contradicted by a second reader: verdict disputed; agreement 0.857 (12 of 14 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

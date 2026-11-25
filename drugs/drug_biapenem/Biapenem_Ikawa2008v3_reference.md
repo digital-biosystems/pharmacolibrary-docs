@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the clearance and volume parameters are physiologically implausible, and the second reader could not verify the values for biapenem.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="biapenem" model-id="Biapenem_Ikawa2008v3_reference" status="rejected" stale="false" population="paediatric patients" measured-compound="biapenem" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Ikawa K, Morikawa N, Ikeda K, Miki M, Nishimura S, Kobayashi M. Population pharm
 
 ### Reviewer guidance
 
-**The record was rejected because the clearance and volume parameters are physiologically implausible, and the second reader could not verify the values for biapenem.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted clearance of 0.0458 L/h and central volume of 0.162 L fall outside physiological limits for paediatric biapenem, suggesting an extraction error. Since the record relies only on the abstract's summary statistics, these values stand in for a fitted model, limiting their reliability. A second reader agreed that the specific values for clearance, absorption, and volume could not be independently verified from the source. Extracted — biapenem: CL 0.0458 L/h, V 0.162 L, Q 2.05 L/h, kabs 0.5 /h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — biapenem: CL 0.0458 L/h, V 0.162 L, Q 2.05 L/h, kabs 0.5 /h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[cl].value`: this record has 0.0458, the second reading none; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

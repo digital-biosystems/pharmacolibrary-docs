@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the terminal elimination rate constant for fimasartan had a unit of hours, conflicting with its required dimension of inverse time.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="fimasartan" model-id="Fimasartan_Kim2014v2_healthy_volunteers" status="rejected" stale="false" population="patients with renal impairment and healthy volunteers" measured-compound="fimasartan" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Kim S, Lee J, Shin D, Lim KS, Kim YS, Jang IJ et al. Effect of renal function on
 
 ### Reviewer guidance
 
-**The record was rejected because the terminal elimination rate constant for fimasartan had a unit of hours, conflicting with its required dimension of inverse time.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q47 unit h ([time]) vs 1 / [time].**
 
-The elimination rate constant is listed with a value of 0.071 and a unit of hours. A rate constant must have dimensions of inverse time, but the provided unit implies a duration. Additionally, the paper reports apparent pharmacokinetic metrics like Cmax and AUClast, whereas the second reader identified mechanistic parameters that were not included in the record. Extracted — fimasartan: Cmax 282 μg/L, AUClast 914 hr×μg/L, CL/F 140 L/h, kel 0.071 h, t1/2z 9.8 h.
+A reported unit could not be converted (Cmax, AUClast and kel), so that value has no SI equivalent. Extracted — fimasartan: Cmax 282 μg/L, AUClast 914 hr×μg/L, CL/F 140 L/h, kel 0.071 h, t1/2z 9.8 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

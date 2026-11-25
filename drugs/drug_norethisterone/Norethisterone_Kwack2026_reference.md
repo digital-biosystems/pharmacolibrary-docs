@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Norethisterone bioavailability (F) was defaulted, with no explicit value, and the record was rejected because the paper concerns another drug.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="norethisterone" model-id="Norethisterone_Kwack2026_reference" status="rejected" stale="false" population="" measured-compound="norethisterone" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Kwack H, Kong H, Lim J, Zhang BT, Hahn J, Chang MJ. PKGPT: Expert-Orchestrated R
 
 ### Reviewer guidance
 
-**Norethisterone bioavailability (F) was defaulted, with no explicit value, and the record was rejected because the paper concerns another drug.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-Neither the paper title nor abstract names norethisterone, and the relevance assessment identifies the paper as being about another drug. F was defaulted rather than explicitly estimated; a second reader reported 42.8 for a value recorded here as null, but the parameter’s meaning is not provided, so that disagreement cannot be interpreted. Extracted — norethisterone: CL 0.133 L/h, V1 4.59 L, V2 13.2 L, Q 6.85 L/h, kabs 0.545 h−1, tlag 0.825 h.
+Extracted — norethisterone: CL 0.133 L/h, V1 4.59 L, V2 13.2 L, Q 6.85 L/h, kabs 0.545 h−1, tlag 0.825 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q318: this record has none, the second reading 42.8. That field does not shape the model.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.923, 0 of 1 reader(s) agree | 0.923 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.923 (12 of 13 compared fields agree, 1 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.923 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

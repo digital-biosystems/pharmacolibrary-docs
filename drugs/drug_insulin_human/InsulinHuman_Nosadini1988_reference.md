@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Insulin human clearance 15.5 mL/min.kg conflicts with the required volumetric flow dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit mL/min.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="insulin (human)" model-id="InsulinHuman_Nosadini1988_reference" status="rejected" stale="false" population="normal and insulin-dependent diabetic subjects" measured-compound="insulin_human" parameterization="mechanistic" topology="1C"></div>
 
@@ -46,13 +46,13 @@ Nosadini R, De Kreutzenberg S, Duner E, Iori E, Avogaro A, Trevisan R et al. Por
 
 ### Reviewer guidance
 
-**Insulin human clearance 15.5 mL/min.kg conflicts with the required volumetric flow dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit mL/min.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].**
 
-The record uses summary statistics from the abstract rather than a fitted model. A second reader could not independently identify the dose compound or the specific parameter values for clearance and bioavailability. Extracted — insulin human: CL 15.5 mL/min.kg, Fab 55 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — insulin human: CL 15.5 mL/min.kg, Fab 55 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has insulin_human, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01F&quot;,&quot;href&quot;:&quot;atc/L01F.md&quot;},{&quot;label&quot;:&quot;atezolizumab&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/&quot;},{&quot;label&quot;:&quot;Shemesh_2019 \u00b7 adult_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atezolizumab_Stroh2017_reference&quot;,&quot;label&quot;:&quot;Stroh_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Stroh2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_adult_model&quot;,&quot;label&quot;:&quot;Shemesh_2019_adult_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_pediatric_young_adult_model&quot;,&quot;label&quot;:&quot;Shemesh_2019_pediatric_young_adult_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_pediatric_young_adult_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atezolizumab_Stroh2017_reference&quot;,&quot;label&quot;:&quot;Stroh_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Stroh2017_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Chan2025_reference&quot;,&quot;label&quot;:&quot;Chan_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Chan2025_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_adult_model&quot;,&quot;label&quot;:&quot;Shemesh_2019_adult_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atezolizumab_Shemesh2019_pediatric_young_adult_model&quot;,&quot;label&quot;:&quot;Shemesh_2019_pediatric_young_adult_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_pediatric_young_adult_model.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.27, model 0.0147); the covariate scenarios were not simulated.
+> The model does not reproduce the paper's peak concentration (Cmax) (paper 0.27, model 0.0147); the covariate scenarios were not simulated (+1 more).
 
 <div class="pk-model-meta" hidden drug="atezolizumab" model-id="Atezolizumab_Shemesh2019_adult_model" status="needs_review" stale="false" population="pediatric and young adult patients with cancer" measured-compound="atezolizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -63,13 +63,13 @@ Shemesh CS, Chanu P, Jamsen K, Wada R, Rossato G, Donaldson F et al. Population 
 
 ### Reviewer guidance
 
-**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.27, model 0.0147); the covariate scenarios were not simulated.**
+**The model does not reproduce the paper's peak concentration (Cmax) (paper 0.27, model 0.0147); the covariate scenarios were not simulated (+1 more).**
 
 Simulated as the paper dosed it, the model's peak concentration (Cmax) differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. Extracted — atezolizumab: CL 0.2 L/day, V1 3.28 L, V2 3.63 L, Q 0.546 L/day.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of albumin_on_v1: this record has none, the second reading -0.350; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -172,18 +172,19 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| T1_cmax | reference | fail | 0.27 | 0.01468 | 0.0544 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.33 | 0.01468 | 0.0445 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.349 | 0.01468 | 0.0421 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.492 | 0.01468 | 0.0298 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.486 | 0.01468 | 0.0302 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.326 | 0.01468 | 0.045 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.4 | 0.01468 | 0.0367 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.463 | 0.01468 | 0.0317 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.46 | 0.01468 | 0.0319 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.664 | 0.01468 | 0.0221 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.651 | 0.01468 | 0.0226 | μg/mL→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.404 | 0.01468 | 0.0363 | μg/mL→SI vs simulated kg/m3 |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.476 (10 of 21 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) | 0.476 | cross-check contradicted by a second reader: verdict disputed; agreement 0.476 (10 of 21 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (qwen3.8-27b) |
+| T1_cmax | reference | fail | 0.27 | 0.01468 | 0.0544 | reported 270.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.33 | 0.01468 | 0.0445 | reported 330.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.349 | 0.01468 | 0.0421 | reported 349.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.492 | 0.01468 | 0.0298 | reported 492.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.486 | 0.01468 | 0.0302 | reported 486.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.326 | 0.01468 | 0.045 | reported 326.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.4 | 0.01468 | 0.0367 | reported 400.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.463 | 0.01468 | 0.0317 | reported 463.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.46 | 0.01468 | 0.0319 | reported 460.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.664 | 0.01468 | 0.0221 | reported 664.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.651 | 0.01468 | 0.0226 | reported 651.0 μg/mL→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.404 | 0.01468 | 0.0363 | reported 404.0 μg/mL→SI vs simulated kg/m3 |
 | T1_cmin_ss | reference | skipped | 55.6 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 65 |  |  | no simulated metric for this quantity (single reference sim) |
 | T1_cmin_ss | reference | skipped | 65.5 |  |  | no simulated metric for this quantity (single reference sim) |
@@ -211,15 +212,56 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model/Atezolizumab_Shemesh2019_adult_model_modelica.zip" download>Atezolizumab_Shemesh2019_adult_model_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model/Atezolizumab_Shemesh2019_adult_model_fmi.zip" download>Atezolizumab_Shemesh2019_adult_model_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model/Atezolizumab_Shemesh2019_adult_model_matlab.zip" download>Atezolizumab_Shemesh2019_adult_model_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model/Atezolizumab_Shemesh2019_adult_model_matlab_simbio.zip" download>Atezolizumab_Shemesh2019_adult_model_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model/Atezolizumab_Shemesh2019_adult_model_sbml.zip" download>Atezolizumab_Shemesh2019_adult_model_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model/Atezolizumab_Shemesh2019_adult_model_cellml.zip" download>Atezolizumab_Shemesh2019_adult_model_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 5.71e-05 | kg |
+| input | model | `Cl` | 2.315e-09 | m3/s |
+| input | model | `VdPerKg` | 4.686e-05 | m3/kg |
+| input | model | `k12` | 1.927e-06 | 1/s |
+| input | model | `k21` | 1.741e-06 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Shemesh CS, Chanu P, Jamsen K, Wada R, Rossato G, Donaldson F et al. Population pharmacokinetics, exposure-safety, and immunogenicity of atezolizumab in pediatric and young adult patients with cancer. Journal for immunotherapy of cancer 7(1):314 (2019). [doi:10.1186/s40425-019-0791-x](https://doi.org/10.1186/s40425-019-0791-x)
+
+**This record:** Pharmacolibrary, model `Atezolizumab_Shemesh2019_adult_model`. <https://pharmacolibrary.github.io/#/drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model>
+
+```bibtex
+@misc{pharmacolibrary_AtezolizumabShemesh2019adultmodel,
+  title  = {{Pharmacolibrary model Atezolizumab_Shemesh2019_adult_model}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_atezolizumab/Atezolizumab_Shemesh2019_adult_model},
+  note   = {Parameters from doi:10.1186/s40425-019-0791-x},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

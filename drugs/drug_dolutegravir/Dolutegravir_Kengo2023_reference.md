@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;dolutegravir&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/&quot;},{&quot;label&quot;:&quot;Kengo_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolutegravir_Kengo2023_reference&quot;,&quot;label&quot;:&quot;Kengo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Dolutegravir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dolutegravir_Kengo2023_reference&quot;,&quot;label&quot;:&quot;Kengo_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Dolutegravir clearance of 1.87 L/h was disputed by a second reader who reported it as null.
+> cross_check_disputed; x1_cross_check.
 
-<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Kengo2023_reference" status="needs_review" stale="false" population="adults with TB and HIV" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="dolutegravir" model-id="Dolutegravir_Kengo2023_reference" status="needs_review" stale="false" population="adults with tuberculosis and HIV" measured-compound="dolutegravir" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kengo A, Nabisere R, Gausi K, Musaazi J, Buzibye A, Omali D et al. Dolutegravir pharmacokinetics in Ugandan patients with TB and HIV receiving standard- versus high-dose rifampicin. Antimicrobial agents and chemotherapy 67(11):e0043023 (2023).
@@ -17,7 +17,7 @@ Kengo A, Nabisere R, Gausi K, Musaazi J, Buzibye A, Omali D et al. Dolutegravir 
 
 ## Population and dosing
 
-**Population:** adults with TB and HIV · condition tuberculosis and HIV · age group adult · n = 44.
+**Population:** adults with tuberculosis and HIV · condition tuberculosis and HIV · age group adult.
 
 ## Model
 
@@ -33,15 +33,15 @@ Kengo A, Nabisere R, Gausi K, Musaazi J, Buzibye A, Omali D et al. Dolutegravir 
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| median (interquartile range) rifampicin area under the curve (AUC) in the standard-dose arm | AUC | 32.3 | mg·h/L |
+| rifampicin area under the curve (AUC) in the standard- ... arms | AUC | 32.3 | mg·h/L |
 | clearance | CL | 1.87 | L/h |
 | absorption rate constant | kabs | 1.42 | h-1 |
 | volume of distribution | V | 12.4 | L |
-| decrease in dolutegravir bioavailability per 10 mg·h/L increase in the AUC of coadministered rifampicin | Fab | 2.3 | % |
+| decrease in dolutegravir bioavailability | Fab | 2.3 |  |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.583). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -51,23 +51,23 @@ Kengo A, Nabisere R, Gausi K, Musaazi J, Buzibye A, Omali D et al. Dolutegravir 
 
 ### Reviewer guidance
 
-**Dolutegravir clearance of 1.87 L/h was disputed by a second reader who reported it as null.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so summary statistics stood in for a fitted model. The second reader disagreed on the dose compound and primary analyte, marking them as unknown. They also failed to extract values for clearance, absorption rate constant, and volume of distribution. Extracted — dolutegravir: AUC 32.3 mg·h/L, CL 1.87 L/h, kabs 1.42 h-1, V 12.4 L, Fab 2.3 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — dolutegravir: AUC 32.3 mg·h/L, CL 1.87 L/h, kabs 1.42 h-1, V 12.4 L, Fab 2.3.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dolutegravir, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on bioavailability: this record has 2.3, the second reading -1.4; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| median (interquartile range) rifampicin area under the curve (AUC) in the standard-dose arm | `Q88` · AUC | 32.3 | mg·h/L |  |  | (h·mg)/l | llm_confirmed (0.6) | Kengo_2023:abstract |
+| rifampicin area under the curve (AUC) in the standard- ... arms | `Q88` · AUC | 32.3 | mg·h/L | 116.3 | kg*s/m3 | (h·mg)/l | llm_confirmed (0.6) | Kengo_2023:abstract |
 | clearance | `Q22` · CL | 1.87 | L/h | 5.194e-07 | m3/s | l/h | exact (1) | Kengo_2023:abstract |
 | absorption rate constant | `Q49` · kabs | 1.42 | h-1 | 0.0003944 | 1/s | 1/h | exact (1) | Kengo_2023:abstract |
 | volume of distribution | `Q61` · V | 12.4 | L | 0.0124 | m3 | l | exact (1) | Kengo_2023:abstract |
-| decrease in dolutegravir bioavailability per 10 mg·h/L increase in the AUC of coadministered rifampicin | `Q40` · Fab | 2.3 | % |  |  |  | llm_confirmed (0.6) | Kengo_2023:abstract |
+| decrease in dolutegravir bioavailability | `Q40` · Fab | 2.3 |  |  |  |  | llm_confirmed (0.6) | Kengo_2023:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -80,14 +80,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - `defaulted_parameters`: ['Tlag']
 
 **Interpretation flags:**
-- dropped duplicate Q88 ('median (interquartile range) rifampicin area under the curve (AUC) in the high-dose arm', value 153) — already have one for this compound
+- dropped duplicate Q88 ('rifampicin area under the curve (AUC) in the ... high-dose arms', value 153) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=dolutegravir
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Kengo_2023_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -95,28 +90,21 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (3/15 fields) | 12 |
+| `gpt-oss-120b` | not confirmed | 0.583 (7/12 fields) | 5 |
 
-<details><summary>12 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption rate constant]` | 1.42 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[absorption rate constant]` |  | 1.42 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` | 1.87 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance]` |  | 1.87 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[decrease in dolutegravir bioavailability per 10 mg h/l increase in the auc of coadministered rifampicin]` | 2.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[dolutegravir bioavailability decrease per 10 mg h/l increase in rifampicin auc]` |  | 2.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[median (interquartile range) rifampicin area under the curve (auc) in the standard-dose arm]` | 32.3 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[rifampicin area under the curve (auc) - standard-dose arm]` |  | 32.3 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 12.4 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` |  | 12.4 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | dolutegravir | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | dolutegravir | unknown | mismatch |
+| `gpt-oss-120b` | `model.bioavailability.theta` | 2.3 | -1.4 | mismatch |
+| `gpt-oss-120b` | `parameters[decrease in dolutegravir bioavailability]` | 2.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[dolutegravir bioavailability]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rifampicin area under the curve (auc) in the standard- ... arms]` | 32.3 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[rifampicin area under the curve]` |  | 32.3 | only_one_extracted |
 
 </details>
 
@@ -152,7 +140,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.583 (7 of 12 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.583 | cross-check contradicted by a second reader: verdict disputed; agreement 0.583 (7 of 12 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -168,7 +156,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference_modelica.zip" download>Dolutegravir_Kengo2023_reference_modelica.zip</a> <span class="pk-size">(4.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference_modelica.zip" download>Dolutegravir_Kengo2023_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference_fmi.zip" download>Dolutegravir_Kengo2023_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference_matlab.zip" download>Dolutegravir_Kengo2023_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference/Dolutegravir_Kengo2023_reference_matlab_simbio.zip" download>Dolutegravir_Kengo2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -232,4 +220,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdolutegravir%5D%20Dolutegravir_Kengo2023_reference&body=Drug%3A%20dolutegravir%0ARecord%3A%20Dolutegravir_Kengo2023_reference%0APaper%3A%20Kengo_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_dolutegravir/Dolutegravir_Kengo2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:25 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:26 UTC</sub>

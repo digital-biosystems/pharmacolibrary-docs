@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by qwen3.8-27b, p(non-human) 0.30).">human + animal</span>
 
-> Record rejected because the source paper studies a different drug, so the recorded clearance of 0.87 L/kg/h is not for ropivacaine.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="ropivacaine" model-id="Ropivacaine_Mahmoud2020_reference" status="rejected" stale="false" population="" measured-compound="ropivacaine" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Mahmoud M, Barbi E, Mason KP. Dexmedetomidine: What's New for Pediatrics? A Narr
 
 ### Reviewer guidance
 
-**Record rejected because the source paper studies a different drug, so the recorded clearance of 0.87 L/kg/h is not for ropivacaine.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The identity check failed, confirming that the title and abstract do not name ropivacaine and the paper is about another substance. Consequently, the extracted clearance value of 0.87 L/kg/h and volume of 1.5 L/kg/kg do not pertain to the target molecule. A second reader disputed the record, providing a conflicting clearance value of 2.29 and identifying additional parameters missing from the current record. Extracted — ropivacaine: CL 0.87 L/kg/h, V 1.5 L/kg.
+Extracted — ropivacaine: CL 0.87 L/kg/h, V 1.5 L/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 0.87, the second reading 2.29; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.333 (3 of 9 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check contradicted by a second reader: verdict disputed; agreement 0.333 (3 of 9 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

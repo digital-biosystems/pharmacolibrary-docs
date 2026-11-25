@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Propylthiouracil record lacks reported absorption rate constant, forcing use of library defaults instead of paper-derived estimates.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="propylthiouracil" model-id="Propylthiouracil_Gwka2018_reference" status="needs_review" stale="false" population="healthy subjects" measured-compound="propylthiouracil" parameterization="apparent" topology="1C"></div>
 
@@ -54,13 +54,13 @@ Główka FK, Hermann TW, Hermann J, Zabel M. Bioavailability of propylthiouracil
 
 ### Reviewer guidance
 
-**Propylthiouracil record lacks reported absorption rate constant, forcing use of library defaults instead of paper-derived estimates.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The absorption rate constant is not reported in the source paper, so a generic library value was used rather than a fitted estimate. This substitution contradicts the apparent assumption of first-order absorption for extravascular dosing. Additionally, a second reader could not confirm the identified compound or analyte, disputing the record's identification. Extracted — propylthiouracil: t1/2z 1.22 h, MRT 2.32 h, tlag 0.16 h, V/F 23.5 l, CL/F 225 ml/min, AUC%ext 96.8.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — propylthiouracil: t1/2z 1.22 h, MRT 2.32 h, tlag 0.16 h, V/F 23.5 l, CL/F 225 ml/min, AUC%ext 96.8.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has propylthiouracil, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,7 +147,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.727, 0 of 1 reader(s) agree | 0.727 | cross-check disputed by a second reader: verdict disputed, agreement 0.727, 0 of 1 reader(s) agree |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.727 (8 of 11 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.727 | cross-check contradicted by a second reader: verdict disputed; agreement 0.727 (8 of 11 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 | T1_cmax | reference | skipped | 1.62 | 0.0007288 |  | unresolved concentration unit (exp 'mg/l]', sim 'kg/m3') |
 | T1_cmax | reference | skipped | 1.77 | 0.0007288 |  | unresolved concentration unit (exp 'mg/l]', sim 'kg/m3') |
 | T1_t_half_terminal | reference | skipped | 1.22 | 1.449 |  | unresolved time unit 'h]' |

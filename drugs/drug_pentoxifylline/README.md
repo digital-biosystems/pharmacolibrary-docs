@@ -22,8 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wyska_2010_TNF_alpha](drugs/drug_pentoxifylline/pd_Wyska_2010_TNF_alpha.md) | TNF-alpha ← pentoxifylline · indirect response — drug inhibits the production of TNF-alpha | — | Wyska E, Pharmacokinetic-pharmacodynamic modelin…, Pharmacology (2010) | [10.1159/000288734](https://doi.org/10.1159/000288734) |
 | <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 1.00).">in vitro</span> | [Peterson_1994_fibroproliferation](drugs/drug_pentoxifylline/pd_Peterson_1994_fibroproliferation.md) | fibroproliferation ← pentoxifylline · direct Emax (saturable) effect | — | Peterson TC et al., In vitro effect of platelet-derived gro…, Immunopharmacology (1994) | [10.1016/0162-3109(94)90061-2](https://doi.org/10.1016/0162-3109(94)90061-2) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span> | [Wyska_2010_TNF_alpha](drugs/drug_pentoxifylline/pd_Wyska_2010_TNF_alpha.md) | TNF-alpha ← pentoxifylline · indirect response — drug inhibits the production of TNF-alpha | — | Wyska E, Pharmacokinetic-pharmacodynamic modelin…, Pharmacology (2010) | [10.1159/000288734](https://doi.org/10.1159/000288734) |
 
 ## Pharmacogenomics (PGx)
 
@@ -50,7 +50,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 20:14 | 7:09 | 0/0/0 | 1/1/0 | 0/0/1 | 146,552/6,291 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 2/10 | 6/1 | 0 |
+| 2026-10-06 20:14 | 7:09 | 0/0/0 | 0/2/0 | 0/0/1 | 146,552/6,291 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 2/10 | 6/1 | 0 |
 
 ## Coverage
 

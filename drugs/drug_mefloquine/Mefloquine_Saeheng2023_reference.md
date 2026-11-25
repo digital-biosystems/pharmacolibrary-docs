@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the mefloquine volume of distribution of 162500 L is physiologically implausible.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="mefloquine" model-id="Mefloquine_Saeheng2023_reference" status="rejected" stale="false" population="adults with uncomplicated P. falciparum malaria" measured-compound="mefloquine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -53,13 +53,13 @@ Saeheng T, Na-Bangchang K. Prediction of improved antimalarial chemotherapy of a
 
 ### Reviewer guidance
 
-**The record was rejected because the mefloquine volume of distribution of 162500 L is physiologically implausible.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted volume of distribution is 162500 L, a magnitude far exceeding physiological limits for an adult human. This extreme value indicates a unit or scale extraction error, making the parameter unrealistic. The second reader failed to identify this parameter, while the primary reader recorded the erroneous value. Extracted — mefloquine: ktr 9.83 1/h, V 1.62e+05 L, kel 0.0029 1/h, Frel 1.06e+07, kabs 0.28 h⁻¹, tlag 0.147 h.
+Extracted — mefloquine: ktr 9.83 1/h, V 1.62e+05 L, kel 0.0029 1/h, Frel 1.06e+07, kabs 0.28 h⁻¹, tlag 0.147 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of aparasite: this record has none, the second reading 192000; it also differs on 4 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

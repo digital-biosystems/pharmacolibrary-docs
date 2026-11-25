@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01E&quot;,&quot;href&quot;:&quot;atc/L01E.md&quot;},{&quot;label&quot;:&quot;alectinib&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_fasted_geometric_mean_cv&quot;,&quot;label&quot;:&quot;Mohmaed_2026_fasted_geometric_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_fed_geometric_mean_cv&quot;,&quot;label&quot;:&quot;Mohmaed_2026_fed_geometric_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_fed_geometric_mean_cv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_estimate&quot;,&quot;label&quot;:&quot;Mohmaed_2026_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_estimate.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_fasted_geometric_mean_cv&quot;,&quot;label&quot;:&quot;Mohmaed_2026_fasted_geometric_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Alectinib_Mohmaed2026_fed_geometric_mean_cv&quot;,&quot;label&quot;:&quot;Mohmaed_2026_fed_geometric_mean_cv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_alectinib/Alectinib_Mohmaed2026_fed_geometric_mean_cv.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # alectinib
 
@@ -26,7 +26,7 @@ Alectinib is a protein kinase inhibitor that blocks anaplastic lymphoma kinase t
 
 ## Start here
 
-> **Mohmaed_2026_fasted_geometric_mean_cv** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with ALK-positive non-small cell lung cancer, n = 10. [Run it in the simulator](drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv.md?tab=Simulation) · [record](drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv.md)
+> **Mohmaed_2026_estimate** — <span class="pk-badge pk-badge--orange">Needs review</span> patients with ALK-positive, non-small cell lung cancer, n = 10. [Run it in the simulator](drugs/drug_alectinib/Alectinib_Mohmaed2026_estimate.md?tab=Simulation) · [record](drugs/drug_alectinib/Alectinib_Mohmaed2026_estimate.md)
 
 <sub>Chosen automatically: the best-status record that runs in the browser, preferring a healthy, human population and values taken from the paper.</sub>
 
@@ -34,9 +34,9 @@ Alectinib is a protein kinase inhibitor that blocks anaplastic lymphoma kinase t
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Mohmaed_2026_fasted_geometric_mean_cv](drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv.md) | ▶ model + simulator | 1-compartment, oral | 4 | Mohmaed Ali MI et al., Reducing the Burden of Interaction Stud…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70141](https://doi.org/10.1002/cpt.70141) |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): ka</sub> | [↳ fed_geometric_mean_cv](drugs/drug_alectinib/Alectinib_Mohmaed2026_fed_geometric_mean_cv.md) | ▶ model + simulator | 1-compartment, oral | 4 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="unknown" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter — unit dimension conflicts with…</sub> | [↳ estimate](drugs/drug_alectinib/Alectinib_Mohmaed2026_estimate.md) | — | 1-compartment (no model) | 5 (+1 cov.) |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>caveat: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.</sub><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): ka</sub> | [Mohmaed_2026_estimate](drugs/drug_alectinib/Alectinib_Mohmaed2026_estimate.md) | ▶ model + simulator | 1-compartment, oral | 5 (+1 cov.) | Mohmaed Ali MI et al., Reducing the Burden of Interaction Stud…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70141](https://doi.org/10.1002/cpt.70141) |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): ka</sub> | [↳ fasted_geometric_mean_cv](drugs/drug_alectinib/Alectinib_Mohmaed2026_fasted_geometric_mean_cv.md) | ▶ model + simulator | 1-compartment, oral | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: unreported model parameter default(s): ka</sub> | [↳ fed_geometric_mean_cv](drugs/drug_alectinib/Alectinib_Mohmaed2026_fed_geometric_mean_cv.md) | ▶ model + simulator | 1-compartment, oral | 4 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="adult" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub> | [Hsu_2021_reference](drugs/drug_alectinib/Alectinib_Hsu2021_reference.md) | — | parent + metabolite (no model) | 0 | Hsu JC et al., Pharmacometric analyses of alectinib to…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12702](https://doi.org/10.1002/psp4.12702) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [van_2025_1_3_5_years_190_mg_bid](drugs/drug_alectinib/Alectinib_van2025_1_3_5_years_190_mg_bid.md) | — | parent + metabolite (no model) | 1 | van Donge T et al., Middle-Out Physiologically Based Pharma…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.70020](https://doi.org/10.1002/psp4.70020) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub> | [↳ 3_5_5_8_years_230_mg_bid](drugs/drug_alectinib/Alectinib_van2025_3_5_5_8_years_230_mg_bid.md) | — | parent + metabolite (no model) | 1 |  |  |
@@ -49,6 +49,7 @@ Alectinib is a protein kinase inhibitor that blocks anaplastic lymphoma kinase t
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Wanika_2024_TumorCellViability](drugs/drug_alectinib/pd_Wanika_2024_TumorCellViability.md) | TumorCellViability ← alectinib · indirect response — drug inhibits the production of TumorCellViability | — | Wanika L et al., In vitro PK/PD modeling of tyrosine kin…, Clinical and translational… (2024) | [10.1111/cts.13714](https://doi.org/10.1111/cts.13714) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Groenland_2021_PFS](drugs/drug_alectinib/pd_Groenland_2021_PFS.md) | Progression-free survival ← alectinib · time-to-event model | — | Groenland SL et al., Exposure-Response Analyses of Anaplasti…, Clinical pharmacology and t… (2021) | [10.1002/cpt.1989](https://doi.org/10.1002/cpt.1989) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Hsu_2021_PFS](drugs/drug_alectinib/pd_Hsu_2021_PFS.md) | progression-free survival ← alectinib and M4 · time-to-event model | — | Hsu JC et al., Pharmacometric analyses of alectinib to…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12702](https://doi.org/10.1002/psp4.12702) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lin_2024_PFS](drugs/drug_alectinib/pd_Lin_2024_PFS.md) | progression-free survival ← alectinib · time-to-event model | — | Lin L et al., A joint model of longitudinal pharmacok…, Cancer chemotherapy and pha… (2024) | [10.1007/s00280-024-04698-w](https://doi.org/10.1007/s00280-024-04698-w) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lin_2024_PFS_2](drugs/drug_alectinib/pd_Lin_2024_PFS_2.md) | progression-free survival ← alectinib · time-to-event model | — | Lin L et al., A joint model of longitudinal pharmacok…, Cancer chemotherapy and pha… (2024) | [10.1007/s00280-024-04698-w](https://doi.org/10.1007/s00280-024-04698-w) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Lin_2024_PFS_3](drugs/drug_alectinib/pd_Lin_2024_PFS_3.md) | progression-free survival ← alectinib · time-to-event model | — | Lin L et al., A joint model of longitudinal pharmacok…, Cancer chemotherapy and pha… (2024) | [10.1007/s00280-024-04698-w](https://doi.org/10.1007/s00280-024-04698-w) |
@@ -70,30 +71,35 @@ Alectinib is a protein kinase inhibitor that blocks anaplastic lymphoma kinase t
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 21:30 | 16:34 | 2/6/0 | 10/0/0 | 0/0/0 | 298,030/71,473 | openai / gpt-6-luna | 10 | 0/10 | 10/0 | 0 |
+| 2026-11-23 10:22 | 0:10 | 3/5/0 | 11/0/0 | 0/0/0 | 15,950/165 | einfracz / qwen3.8-27b | 10 | 0/10 | 10/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned
-- **screened:** 3  ·  **relevant:** 3
-- **records:** 8  ·  extracted 0  ·  needs review 2  ·  rejected 6  ·  stale 0
+- **screened:** 3  ·  **relevant:** 2
+- **records:** 8  ·  extracted 0  ·  needs review 3  ·  rejected 5  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chen_2021 | irrelevant | 0 | 0 | The reported population-PK parameters are for lorlatinib; alectinib is only mentioned as prior therapy. |
+| popPK | Chen_2021 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for lorlatinib, not alectinib. |
+| PGx | Chen_2021 | not_relevant | 3 | 8 | The study focuses on lorlatinib, not alectinib, and although it evaluates CYP metabolizer phenotypes, alectinib is only mentioned as a prior therapy in the indication context. |
 | popPK | Groenland_2021 | irrelevant | 2 | 1 | This human exposure–response study reports alectinib concentrations but no quantitative disposition parameters or PK model. |
 | popPK | Gupta_2021 | irrelevant | 0 | 0 | This is a human brigatinib PK study; alectinib is only mentioned as a comparator, with no alectinib parameter values. |
+| popPK | Hsu_2021 | relevant | 10 | 3 | The paper describes a population PK model for alectinib and reports a half-life of 34 h, but the specific numeric values for clearance and volume (CL/F, V/F) are located in Supplementary Tables S1 and S2 which are not included in the evidence. |
+| PGx | Hsu_2021 | not_relevant | 0 | 0 | The paper analyzes population pharmacokinetics and pharmacodynamics of alectinib based on non-genetic covariates (specifically body weight and race/geography) but does not report any effects of gene variants, genotypes, or phenotypes. |
 | popPK | Lin_2024 | irrelevant | 1 | 2 | This human exposure–response study reports no alectinib disposition estimates; the 32 h half-life is cited for concentration extrapolation. |
+| PGx | Mohmaed_2026 | not_relevant | 0 | 0 | The study investigates drug-food interactions (fed vs. fasted) and does not analyze the impact of genetic variants or genotypes on alectinib pharmacokinetics. |
 | popPK | Morcos_2018 | irrelevant | 2 | 0 | This human exposure–response analysis reports no numeric alectinib disposition parameters; referenced figures and supplementary material are not provided. |
 | popPK | Wanika_2024 | irrelevant | 2 | 2 | This is an in-vitro cell-line model, and only a limited alectinib parameter value is readable; the full estimates are in Table 2, which is not provided. |
-| popPK | van_2023 | relevant | 9 | 2 | Alectinib population-PK model simulations are reported, but the model’s parameter estimates are only said to be in Data S1, which is not provided. |
+| popPK | van_2023 | irrelevant | 3 | 1 | The paper is an in silico simulation study for trial design feasibility and does not report original quantitative disposition parameters (CL, V, etc.) for alectinib in the evidence, relying instead on a previously published model. |
+| PGx | van_2023 | not_relevant | 0 | 0 | The paper focuses on a microtracer study design for assessing food effects and contains no pharmacogenomic data or analysis. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Balectinib%5D&body=Drug%3A%20alectinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_alectinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-06 21:15 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 10:17 UTC</sub>

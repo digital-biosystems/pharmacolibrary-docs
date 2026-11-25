@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-> Ketoprofen’s apparent clearance, CL/F, of 0.114 L/kg/h was rejected for a double correction of a bioavailability-adjusted parameter.
+> C7 apparent-parameter coherence violated (double correction).
 
 <div class="pk-model-meta" hidden drug="ketoprofen" model-id="Ketoprofen_Pelligand2014_reference" status="rejected" stale="false" population="cats with inflammation" measured-compound="ketoprofen" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Pelligand L, King JN, Hormazabal V, Toutain PL, Elliott J, Lees P. Differential 
 
 ### Reviewer guidance
 
-**Ketoprofen’s apparent clearance, CL/F, of 0.114 L/kg/h was rejected for a double correction of a bioavailability-adjusted parameter.**
+**C7 apparent-parameter coherence violated (double correction).**
 
-The record also reports ketoprofen V/F as 187.73 L/kg, defined as volume of distribution adjusted for bioavailability; the finding identifies a double correction involving apparent parameters. The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. A second reader did not confirm the reported dose compound, primary analyte, or several parameter values. Extracted — ketoprofen: CL/F 0.114 L/kg/h, V/F 188 L/kg, kabs 5.63 1/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ketoprofen: CL/F 0.114 L/kg/h, V/F 188 L/kg, kabs 5.63 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ketoprofen, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

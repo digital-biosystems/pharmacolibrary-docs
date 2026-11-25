@@ -30,12 +30,12 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 21:20 | 0:09 | 0/0/0 | 0/0/0 | 0/0/0 | 10,363/470 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 03:22 | 0:03 | 0/0/0 | 0/0/0 | 0/0/0 | 3,872/173 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 2 matched, 2 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -45,15 +45,18 @@ _1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save 
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Dorshow_2024.pdf` | Dorshow RB et al., Clinical validation of the novel fluore…, Kidney international (2024) | popPK | 8 | [10.1016/j.kint.2024.06.012](https://doi.org/10.1016/j.kint.2024.06.012) | [38964736](https://pubmed.ncbi.nlm.nih.gov/38964736) | Human clinical PK study of relmapirazin using a two-compartment model, but the actual numeric CL/V/parameter values are not present in the evidence (only GFR agreement statistics). |
+| `Dorshow_2024.pdf` | Dorshow RB et al., Clinical validation of the novel fluore…, Kidney international (2024) | popPK | 6 | [10.1016/j.kint.2024.06.012](https://doi.org/10.1016/j.kint.2024.06.012) | [38964736](https://pubmed.ncbi.nlm.nih.gov/38964736) | The study explicitly uses a "standard two-compartment pharmacokinetic assessment" for relmapirazin, but the evidence text only provides GFR values and correlation statistics, omitting the specific CL, V, or Q parameter values. |
 
-<sub>queue written 2026-10-07 21:20 UTC</sub>
+<sub>queue written 2026-11-24 03:22 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Dorshow_2024 | relevant | 8 | 3 | Human clinical PK study of relmapirazin using a two-compartment model, but the actual numeric CL/V/parameter values are not present in the evidence (only GFR agreement statistics). |
+| popPK | Dorshow_2024 | relevant | 6 | 2 | The study explicitly uses a "standard two-compartment pharmacokinetic assessment" for relmapirazin, but the evidence text only provides GFR values and correlation statistics, omitting the specific CL, V, or Q parameter values. |
+| PGx | Dorshow_2024 | not_relevant | 0 | 0 | The paper reports clinical validation of relmapirazin as a GFR tracer and notes independence from race, but does not report any specific gene variant/genotype effects on PK/PD parameters. |
+| popPK | Dorshow_2025 | irrelevant | 1 | 1 | The study uses relmapirazin as a GFR tracer agent to measure renal function, reporting GFR and fluorescence clearance rates rather than deriving pharmacokinetic parameters (CL, V, Q, ka) for the drug itself. |
+| PGx | Dorshow_2025 | not_relevant | 0 | 0 | The paper describes a method to measure GFR using relmapirazin but does not report any pharmacogenomic effects (gene variants/genotypes) on its PK/PD parameters. |
 
 
 </details>

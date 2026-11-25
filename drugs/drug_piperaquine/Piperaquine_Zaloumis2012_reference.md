@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Piperaquine record held back because k12, k13, and k31 were left at library defaults without explicit values in the facts.
+> K12, k13, k31 use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="Piperaquine" model-id="Piperaquine_Zaloumis2012_reference" status="needs_review" stale="false" population="patients with uncomplicated P. falciparum malaria (simulated)" measured-compound="piperaquine" parameterization="apparent" topology="3C"></div>
 
@@ -56,13 +56,13 @@ Zaloumis S, Humberstone A, Charman SA, Price RN, Moehrle J, Gamo-Benito J et al.
 
 ### Reviewer guidance
 
-**Piperaquine record held back because k12, k13, and k31 were left at library defaults without explicit values in the facts.**
+**K12, k13, k31 use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The facts list no numeric values for the intercompartmental clearance parameters k12, k13, or k31, indicating they were not extracted from the paper. Consequently, the model relied on placeholder defaults for these structural rates. Additionally, a second reader disagreed with the identification of the dose compound and primary analyte, resulting in a disputed verdict. Extracted — piperaquine: kabs 0.37 /h, CL/F 180 L/h, V/F 217 L, V1/F 103 L, Q/F 4.08 L/h, V2/F 272 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — piperaquine: kabs 0.37 /h, CL/F 180 L/h, V/F 217 L, V1/F 103 L, Q/F 4.08 L/h, V2/F 272 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dihydroartemisinin-piperaquine, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -158,7 +158,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 6 scholar param(s) emitted or defaulted | 6 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 3C → PK_3C* | PK_3C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.7, 0 of 1 reader(s) agree | 0.7 | cross-check disputed by a second reader: verdict disputed, agreement 0.7, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.7 (7 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.7 | cross-check contradicted by a second reader: verdict disputed; agreement 0.7 (7 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

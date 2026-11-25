@@ -22,7 +22,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [unknown_1976_Clinical_and_bacteriological_results](drugs/drug_sulfamoxole/pd_unknown_1976_Clinical_and_bacteriological_results.md) | Clinical and bacteriological results biomarker turnover ← endogenous kinetics | — | unknown, [The effect of a new broad-spectrum ant…, Medizinische Klinik (1976) | — |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [unknown_1976_Clinical_and_bacteriological_results](drugs/drug_sulfamoxole/pd_unknown_1976_Clinical_and_bacteriological_results.md) | Clinical and bacteriological results biomarker turnover ← endogenous kinetics | — | unknown, [The effect of a new broad-spectrum ant…, Medizinische Klinik (1976) | — |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +36,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 11:13 | 0:26 | 0/0/0 | 0/1/0 | 0/0/0 | 23,254/562 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
+| 2026-10-07 11:13 | 0:26 | 0/0/0 | 1/0/0 | 0/0/0 | 23,254/562 | einfracz / qwen3.8-27b | 0 | 0/0 | 0/0 | 0 |
 
 ## Coverage
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The cross-check was disputed by a second reader who identified a missing body weight exponent of 0.472 for the clearance parameter.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="bosentan" model-id="Bosentan_Miura2026_reference" status="needs_review" stale="false" population="Japanese paediatric and adult patients with pulmonary arterial hypertension" measured-compound="bosentan" parameterization="apparent" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Miura M, Tanaka S, Aihara R, Yamamoto S, Nakashima Y, Kashiwagura Y et al. Devel
 
 ### Reviewer guidance
 
-**The cross-check was disputed by a second reader who identified a missing body weight exponent of 0.472 for the clearance parameter.**
+**cross_check_disputed; x1_cross_check.**
 
-The recorded clearance for bosentan is 8.85 L/h with no allometric scaling, whereas the second reader reported a body weight effect exponent of 0.472. The reader also disagreed on the model links, finding a connection where the record indicated none. These disagreements resulted in an agreement score of 0.778, leaving the review inconclusive. Extracted — bosentan: kabs 2.47 h−1, V/F 41 L, CL/F 8.85 L/h, tlag 0.379 h.
+Extracted — bosentan: kabs 2.47 h−1, V/F 41 L, CL/F 8.85 L/h, tlag 0.379 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has none, the second reading none → not captured (not captured); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -152,7 +152,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | cross-check disputed by a second reader: verdict disputed, agreement 0.778, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.778 (7 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | cross-check contradicted by a second reader: verdict disputed; agreement 0.778 (7 of 9 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

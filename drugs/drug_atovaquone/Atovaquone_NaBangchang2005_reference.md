@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01A&quot;,&quot;href&quot;:&quot;atc/P01A.md&quot;},{&quot;label&quot;:&quot;atovaquone&quot;,&quot;href&quot;:&quot;drugs/drug_atovaquone/&quot;},{&quot;label&quot;:&quot;Na-Bangchang_2005 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atovaquone_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atovaquone/Atovaquone_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atovaquone_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atovaquone/Atovaquone_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atovaquone_McGready2003_reference&quot;,&quot;label&quot;:&quot;McGready_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atovaquone/Atovaquone_McGready2003_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > The paper reports none of the model's key parameters.
 
-<div class="pk-model-meta" hidden drug="atovaquone" model-id="Atovaquone_NaBangchang2005_reference" status="rejected" stale="false" population="third-trimester pregnant women with uncomplicated falciparum malaria" measured-compound="atovaquone" parameterization="mechanistic" topology="parent_metabolite"></div>
+<div class="pk-model-meta" hidden drug="atovaquone" model-id="Atovaquone_NaBangchang2005_reference" status="rejected" stale="false" population="third-trimester pregnant women" measured-compound="atovaquone" parameterization="mechanistic" topology="parent_metabolite"></div>
 
 ## Citation
 Na-Bangchang K, Manyando C, Ruengweerayut R, Kioy D, Mulenga M, Miller GB et al. The pharmacokinetics and pharmacodynamics of atovaquone and proguanil for the treatment of uncomplicated falciparum malaria in third-trimester pregnant women. European journal of clinical pharmacology 61(8):573–582 (2005).
@@ -17,7 +17,7 @@ Na-Bangchang K, Manyando C, Ruengweerayut R, Kioy D, Mulenga M, Miller GB et al.
 
 ## Population and dosing
 
-**Population:** third-trimester pregnant women with uncomplicated falciparum malaria · condition uncomplicated falciparum malaria (pregnancy, third trimester) · age group adult · n = 26.
+**Population:** third-trimester pregnant women · age group adult.
 
 ## Model
 
@@ -33,7 +33,7 @@ _No resolved parameters._
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.188). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (primary re-run, agreement 0.053). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -47,7 +47,7 @@ _No resolved parameters._
 
 No clearance, volume or rate constant of the model is reported in it. Only the abstract was available, so reported summary statistics stand in for a fitted model. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 12 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atovaquone, the second reading unknown; it also differs on 17 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -55,52 +55,56 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the
 
 **Interpretation flags:**
 - dropped value-less row: 'Cmax'
-- dropped value-less row: 't(max)' (captured trailing unit 'max' for child rows)
 - dropped value-less row: 'V/F'
 - dropped value-less row: 'CL/F'
 - dropped value-less row: 't(1/2beta)' (captured trailing unit '1/2beta' for child rows)
+- dropped value-less row: 't(max)' (captured trailing unit 'max' for child rows)
 - dropped value-less row: 'CL(R-CG)' (captured trailing unit 'R-CG' for child rows)
 - dropped value-less row: 't(1/2z)' (captured trailing unit '1/2z' for child rows)
 - dropped value-less row: '(CG)' (captured trailing unit 'CG' for child rows)
 - dropped value-less row: 'proguanil/cycloguanil metabolic ratios'
-- dropped value-less row: 'AUC(PG/CG)' (captured trailing unit 'PG/CG' for child rows)
+- dropped value-less row: 'AUC ratios for proguanil to cycloguanil (AUC(PG/CG))'
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=atovaquone
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at "Needs review" — not promoted
-- row roles (LLM): model_class=noncompartmental; 10/10 row label(s) assigned, 2 linked by role; re-tagged atovaquone→proguanil ×12, atovaquone→cycloguanil ×3
+- row roles (LLM): model_class=noncompartmental; 10/10 row label(s) assigned, 5 linked by role; re-tagged atovaquone→cycloguanil ×14
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Na-Bangchang_2005_metadata.yaml (17 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Na-Bangchang_2005_metadata.yaml (16 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | primary re-run | 0.188 (3/16 fields) | 13 |
+| `gpt-oss-120b` | primary re-run | 0.053 (1/19 fields) | 18 |
 
-<details><summary>13 field discrepancies</summary>
+<details><summary>18 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `model.parameterization` | mechanistic | apparent | mismatch |
+| `gpt-oss-120b` | `parameters[auc]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl/f]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl/f]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cmax]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cmax]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cmax]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[proguanil/cycloguanil metabolic ratios]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t(1/2beta)]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t(max)]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t(max)]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[t]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v/f]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v/f]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | atovaquone | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | atovaquone | unknown | mismatch |
 
 </details>
 
@@ -140,4 +144,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Batovaquone%5D%20Atovaquone_NaBangchang2005_reference&body=Drug%3A%20atovaquone%0ARecord%3A%20Atovaquone_NaBangchang2005_reference%0APaper%3A%20Na-Bangchang_2005%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_atovaquone/Atovaquone_NaBangchang2005_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 05:17 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 18:59 UTC</sub>

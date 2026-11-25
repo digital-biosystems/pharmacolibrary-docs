@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
-> The record is rejected because the plasma clearance unit conflicts with the parameter's dimensional requirements.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml/min.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="cisapride" model-id="Cisapride_Michiels1987_reference" status="rejected" stale="false" population="rats, rabbits and dogs" measured-compound="cisapride" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Michiels M, Monbaliu J, Hendriks R, Geerts R, Woestenborghs R, Heykants J. Pharm
 
 ### Reviewer guidance
 
-**The record is rejected because the plasma clearance unit conflicts with the parameter's dimensional requirements.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q22 unit ml/min.kg ([length] ** 3 * [mass] / [time]) vs [length] ** 3 / [time].**
 
-The plasma clearance for cisapride was recorded as 91 ml/min.kg, but the expected dimension was ml/min, causing a mismatch. Additionally, the record was constructed from the abstract alone, so the summary statistics stand in for a fitted model. A second reader disputed the identification of the dose compound and primary analyte as cisapride. Extracted — cisapride: CL 91 ml/min.kg, V 4.7 l/kg, Fab 23 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — cisapride: CL 91 ml/min.kg, V 4.7 l/kg, Fab 23 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has cisapride, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

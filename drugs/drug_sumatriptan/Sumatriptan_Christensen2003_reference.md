@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Oral clearance for sumatriptan is recorded in liters instead of liters per hour, conflicting with its dimensional requirement.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit L ([length] ** 3) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="sumatriptan" model-id="Sumatriptan_Christensen2003_reference" status="rejected" stale="false" population="adolescents with migraine" measured-compound="sumatriptan" parameterization="apparent" topology="1C"></div>
 
@@ -47,13 +47,13 @@ Christensen ML, Mottern RK, Jabbour JT, Fuseau E. Pharmacokinetics of sumatripta
 
 ### Reviewer guidance
 
-**Oral clearance for sumatriptan is recorded in liters instead of liters per hour, conflicting with its dimensional requirement.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q27 unit L ([length] ** 3) vs [length] ** 3 / [time].**
 
-The value 316 for oral clearance is assigned the unit L, which lacks the required time denominator. This dimensional error contradicts the parameter's definition as clearance. Additionally, the record relies on abstract-only summary statistics rather than a fitted model. Extracted — sumatriptan: Cmax 13.9 ng/mL, AUC∞ 57.3 ng/mL.h, t1/2z 2 hours, CL/F 316 L, V/F 1.07e+03 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sumatriptan: Cmax 13.9 ng/mL, AUC∞ 57.3 ng/mL.h, t1/2z 2 hours, CL/F 316 L, V/F 1.07e+03 L.
 
 Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

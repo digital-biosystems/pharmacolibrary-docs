@@ -153,10 +153,10 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.154, 0 of 1 reader(s) agree | 0.154 | cross-check disputed by a second reader: verdict disputed, agreement 0.154, 0 of 1 reader(s) agree |
-| T1_cmax | reference | fail | 0.0399 | 0.02474 | 0.6201 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0409 | 0.02474 | 0.605 | mg/L→SI vs simulated kg/m3 |
-| T1_cmax | reference | fail | 0.0416 | 0.02474 | 0.5948 | mg/L→SI vs simulated kg/m3 |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.154 (2 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.154 | cross-check contradicted by a second reader: verdict disputed; agreement 0.154 (2 of 13 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_cmax | reference | fail | 0.0399 | 0.02474 | 0.6201 | reported 39.9 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0409 | 0.02474 | 0.605 | reported 40.9 mg/L→SI vs simulated kg/m3 |
+| T1_cmax | reference | fail | 0.0416 | 0.02474 | 0.5948 | reported 41.6 mg/L→SI vs simulated kg/m3 |
 
 <details class="legend">
 <summary>Validation definitions</summary>

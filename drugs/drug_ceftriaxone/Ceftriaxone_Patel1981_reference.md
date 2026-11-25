@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Ceftriaxone AUC record rejected because the unit pg.h/mi has an incompatible dimension for a concentration-time area.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit pg.h/mi ([mass] * [time] / [length]) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="ceftriaxone" model-id="Ceftriaxone_Patel1981_reference" status="rejected" stale="false" population="healthy adults" measured-compound="ceftriaxone" parameterization="mechanistic" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Patel IH, Chen S, Parsonnet M, Hackman MR, Brooks MA, Konikoff J et al. Pharmaco
 
 ### Reviewer guidance
 
-**Ceftriaxone AUC record rejected because the unit pg.h/mi has an incompatible dimension for a concentration-time area.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q88 unit pg.h/mi ([mass] * [time] / [length]) vs [mass] * [time] / [length] ** 3.**
 
-The area under the curve was assigned units of pg.h/mi, which imply a mass-time-per-length dimension, whereas AUC requires mass-time-per-volume. Because this unit is non-standard and cannot be converted to SI units, the AUC value could not be processed. A second reader also identified conflicting values for AUC and other parameters, such as recording 373 instead of the missing value in this record. Extracted — ceftriaxone: Ct 1.31e+03 ug/ml, AUC 551 pg.h/mi, V 4.54 liter, kabs 1 h−1.
+A reported unit could not be converted (equation variable, Ct and AUC), so that value has no SI equivalent. Extracted — ceftriaxone: Ct 1.31e+03 ug/ml, AUC 551 pg.h/mi, V 4.54 liter, kabs 1 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of 0-24: this record has none, the second reading 373; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

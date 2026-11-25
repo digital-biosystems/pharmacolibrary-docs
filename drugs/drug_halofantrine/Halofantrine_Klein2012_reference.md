@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;halofantrine&quot;,&quot;href&quot;:&quot;drugs/drug_halofantrine/&quot;},{&quot;label&quot;:&quot;Klein_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Halofantrine_Klein2012_reference&quot;,&quot;label&quot;:&quot;Klein_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_halofantrine/Halofantrine_Klein2012_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # halofantrine — `Halofantrine_Klein2012_reference`
 
-> ## <span class="pk-badge pk-badge--orange">Needs review</span>
+> ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Absorption rate constant and lag time for halofantrine were not extracted from the abstract, so placeholder values were used instead of specific estimates.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="halofantrine" model-id="Halofantrine_Klein2012_reference" status="needs_review" stale="false" population="healthy volunteers and patients with symptomatic falciparum malaria" measured-compound="halofantrine" parameterization="apparent" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="halofantrine" model-id="Halofantrine_Klein2012_reference" status="rejected" stale="false" population="healthy volunteers and patients with symptomatic falciparum malaria" measured-compound="halofantrine" parameterization="apparent" topology="2C"></div>
 
 ## Citation
 Klein K, Aarons L, Ter Kuile FO, Nosten F, White NJ, Edstein MD et al. Population pharmacokinetics of halofantrine in healthy volunteers and patients with symptomatic falciparum malaria. The Journal of pharmacy and pharmacology 64(11):1603–1613 (2012).
@@ -17,30 +16,28 @@ Klein K, Aarons L, Ter Kuile FO, Nosten F, White NJ, Edstein MD et al. Populatio
 
 ## Population and dosing
 
-**Population:** healthy volunteers and patients with symptomatic falciparum malaria · condition falciparum malaria · age group adult · n = 194.
+**Population:** healthy volunteers and patients with symptomatic falciparum malaria · condition falciparum malaria · age group mixed · n = 194.
 
 ## Model
 
-**Structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Structure:** 2-compartment; no model was built for this record.  
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).  
 **Parameters:** 4 extracted.  
-**Availability:** Model and browser simulation available in **Models** and **Simulation**.
-
-<figure class="pk-models-diagram"><img src="drugs/drug_halofantrine/Halofantrine_Klein2012_reference/Halofantrine_Klein2012_reference.svg" alt="Halofantrine_Klein2012_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
+**Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| apparent clearance (CL) | CL/F | 2453 | l/day |
+| apparent clearance (CL) | CL/F | 2453 | L/h |
 | volume of compartment one (V1) | V1 | 2386 | l |
-| distributional clearance (CLD) | Q | 716 | l/day |
+| distributional clearance (CLD) | CL | 716 | L/h |
 | volume of compartment two (V2) | V2 | 2641 | l |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.167). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -50,21 +47,21 @@ Klein K, Aarons L, Ter Kuile FO, Nosten F, White NJ, Edstein MD et al. Populatio
 
 ### Reviewer guidance
 
-**Absorption rate constant and lag time for halofantrine were not extracted from the abstract, so placeholder values were used instead of specific estimates.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record was built from abstract-only data, meaning no explicit absorption parameters were available to fit, resulting in generic defaults. A second reader disputed the extracted clearance and volume values, finding them unsupported by the source text. The model was held back because the absorption parameters lack specific justification from the paper. Extracted — halofantrine: CL/F 2.45e+03 l/day, V1 2.39e+03 l, Q 716 l/day, V2 2.64e+03 l.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — halofantrine: CL/F 2.45e+03 L/h, V1 2.39e+03 l, CL 716 L/h, V2 2.64e+03 l.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has halofantrine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has apparent, the second reading mechanistic; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| apparent clearance (CL) | `Q27` · CL/F | 2453 | l/day | 2.839e-05 | m3/s | l/d | exact (1) | Klein_2012:abstract, Klein_2012:abstract |
+| apparent clearance (CL) | `Q27` · CL/F | 2453 | L/h | 0.0006814 | m3/s | L/h | exact (1) | Klein_2012:abstract |
 | volume of compartment one (V1) | `Q63` · V1 | 2386 | l | 2.386 | m3 | l | llm_corrected (0.6) | Klein_2012:abstract |
-| distributional clearance (CLD) | `Q30` · Q | 716 | l/day | 8.287e-06 | m3/s | l/d | llm_corrected (0.6) | Klein_2012:abstract, Klein_2012:abstract |
+| distributional clearance (CLD) | `Q22` · CL | 716 | L/h | 0.0001989 | m3/s | L/h | llm_confirmed (0.6) | Klein_2012:abstract |
 | volume of compartment two (V2) | `Q64` · V2 | 2641 | l | 2.641 | m3 | l | llm_corrected (0.6) | Klein_2012:abstract |
 
 <details class="legend">
@@ -74,42 +71,39 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
+- unit_dimension_unknown: 'l/day (102 l/h)' (CL/F)
+- unit_dimension_unknown: 'l/day (29.8 l/h)' (CL)
+- implicit units: 'apparent clearance (CL)' → L/h (from the popPK convention: 'Clearance parameters are conventionally expressed in L/h in population PK models; the value 2453 is consistent with this')
+- implicit units: 'distributional clearance (CLD)' → L/h (from the popPK convention: 'Distributional (intercompartmental) clearance is a type of clearance and is conventionally expressed in L/h; the value 7')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=halofantrine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Klein_2012_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Klein_2012_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss-120b` | not confirmed | 0.25 (3/12 fields) | 9 |
 
-<details><summary>10 field discrepancies</summary>
+<details><summary>9 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss-120b` | `parameters[apparent clearance]` | 2453 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[apparent clearance]` |  | 2453 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 2453 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cld]` |  | 716 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[distributional clearance]` | 716 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[distributional clearance]` |  | 716 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1]` |  | 2386 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v2]` |  | 2641 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of compartment one]` | 2386 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of compartment one]` |  | 2386 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volume of compartment two]` | 2641 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of compartment two]` |  | 2641 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | halofantrine | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | halofantrine | unknown | mismatch |
 
 </details>
 
@@ -126,28 +120,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Klein_2012:abstract', 'Klein_2012:abstract'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['Klein_2012:abstract', 'Klein_2012:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Klein_2012:abstract'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Klein_2012:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 |  | ['Klein_2012:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 |  | ['Klein_2012:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
-| C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 102 L/h | ['Klein_2012:abstract', 'Klein_2012:abstract'] |
+| C8_topology | fail |  |  |  |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 716 L/h | ['Klein_2012:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 2.45e+03 L/h | ['Klein_2012:abstract'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 2.39e+03 L | ['Klein_2012:abstract'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 2.64e+03 L | ['Klein_2012:abstract'] |
-
-**Reviewer per-scenario checks:**
-
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
-| T3_output_variable | pass | C_central (measured=halofantrine) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -159,74 +141,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Model downloads
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_halofantrine/Halofantrine_Klein2012_reference/Halofantrine_Klein2012_reference_modelica.zip" download>Halofantrine_Klein2012_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_halofantrine/Halofantrine_Klein2012_reference/Halofantrine_Klein2012_reference_fmi.zip" download>Halofantrine_Klein2012_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_halofantrine/Halofantrine_Klein2012_reference/Halofantrine_Klein2012_reference_matlab.zip" download>Halofantrine_Klein2012_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_halofantrine/Halofantrine_Klein2012_reference/Halofantrine_Klein2012_reference_matlab_simbio.zip" download>Halofantrine_Klein2012_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_halofantrine/Halofantrine_Klein2012_reference/Halofantrine_Klein2012_reference_sbml.zip" download>Halofantrine_Klein2012_reference_sbml.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_halofantrine/Halofantrine_Klein2012_reference/Halofantrine_Klein2012_reference_cellml.zip" download>Halofantrine_Klein2012_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
-</tbody></table>
-<p>Archives contain model source, a simulation script, and execution instructions.</p>
-<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
-</div></div>
-
-## Model interface
-
-The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
-
-| direction | role | name | value | unit (SI) |
-|---|---|---|---|---|
-| input | compound | `MM` | 0.5004 | kg/mol |
-| input | dosing | `F` | 1 | 1 |
-| input | dosing | `Tlag` | 0 | s |
-| input | dosing | `adminCount` | 1 | 1 |
-| input | dosing | `adminDuration` | 600 | s |
-| input | dosing | `adminMass` | 0.0015 | kg |
-| input | model | `Cl` | 2.839e-05 | m3/s |
-| input | model | `VdPerKg` | 0.03409 | m3/kg |
-| input | model | `k12` | 3.473e-06 | 1/s |
-| input | model | `k21` | 3.138e-06 | 1/s |
-| input | model | `ka` | 0.0001389 | 1/s |
-| input | subject | `weight` | 70 | kg |
-| output | concentration | `central.C` |  | kg/m3 |
-
-## Tested with
-
-- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
-- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
-- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
-
-## How to cite
-
-**Source paper** (the parameters are its): Klein K, Aarons L, Ter Kuile FO, Nosten F, White NJ, Edstein MD et al. Population pharmacokinetics of halofantrine in healthy volunteers and patients with symptomatic falciparum malaria. The Journal of pharmacy and pharmacology 64(11):1603–1613 (2012). [doi:10.1111/j.2042-7158.2012.01554.x](https://doi.org/10.1111/j.2042-7158.2012.01554.x)
-
-**This record:** Pharmacolibrary, model `Halofantrine_Klein2012_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_halofantrine/Halofantrine_Klein2012_reference>
-
-```bibtex
-@misc{pharmacolibrary_HalofantrineKlein2012reference,
-  title  = {{Pharmacolibrary model Halofantrine_Klein2012_reference}},
-  author = {{Pharmacolibrary}},
-  url    = {https://pharmacolibrary.github.io/#/drugs/drug_halofantrine/Halofantrine_Klein2012_reference},
-  note   = {Parameters from doi:10.1111/j.2042-7158.2012.01554.x},
-}
-```
-
-Licence of the model files: not set yet. The parameter values belong to the cited paper.
+<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 1500 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1500 mg oral (P01BX01) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_halofantrine/Halofantrine_Klein2012_reference/Halofantrine_Klein2012_reference_params.json" metaurl="assets/fmu/PK_2C_enteral.vr.json" wasmurl="assets/fmu/PK_2C_enteral.js" controlsurl="drugs/drug_halofantrine/Halofantrine_Klein2012_reference/Halofantrine_Klein2012_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_2C_enteral` · parameters `Halofantrine_Klein2012_reference_params.json` · controls `Halofantrine_Klein2012_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
+_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bhalofantrine%5D%20Halofantrine_Klein2012_reference&body=Drug%3A%20halofantrine%0ARecord%3A%20Halofantrine_Klein2012_reference%0APaper%3A%20Klein_2012%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_halofantrine/Halofantrine_Klein2012_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 07:00 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:11 UTC</sub>

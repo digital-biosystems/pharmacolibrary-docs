@@ -51,12 +51,8 @@ Trametinib is a protein kinase inhibitor and MEK inhibitor used to treat various
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Goldwirt_2021_2_ARAE](drugs/drug_trametinib/pd_Goldwirt_2021_2_ARAE.md) | all grades treatment-related adverse events occurrence ← trametinib · model not identified | — | Goldwirt L et al., Dabrafenib and trametinib exposure-effi…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-021-04299-x](https://doi.org/10.1007/s00280-021-04299-x) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Groenland_2023_clinically_relevant_toxicities](drugs/drug_trametinib/pd_Groenland_2023_clinically_relevant_toxicities.md) | clinically relevant toxicities ← trametinib · model not identified | — | Groenland SL et al., Exposure-response analyses of BRAF- and…, Cancer chemotherapy and pha… (2023) | [10.1007/s00280-023-04517-8](https://doi.org/10.1007/s00280-023-04517-8) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Groenland_2023_OS](drugs/drug_trametinib/pd_Groenland_2023_OS.md) | overall survival ← trametinib · time-to-event model | — | Groenland SL et al., Exposure-response analyses of BRAF- and…, Cancer chemotherapy and pha… (2023) | [10.1007/s00280-023-04517-8](https://doi.org/10.1007/s00280-023-04517-8) |
 | <span class="pk-badge pk-badge--orange">Needs review</span> | [Groenland_2023_PFS](drugs/drug_trametinib/pd_Groenland_2023_PFS.md) | progression-free survival ← trametinib · time-to-event model | — | Groenland SL et al., Exposure-response analyses of BRAF- and…, Cancer chemotherapy and pha… (2023) | [10.1007/s00280-023-04517-8](https://doi.org/10.1007/s00280-023-04517-8) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Ouellet_2016_PFS](drugs/drug_trametinib/pd_Ouellet_2016_PFS.md) | progression-free survival (PFS) ← trametinib · time-to-event model | — | Ouellet D et al., Population pharmacokinetics and exposur…, Cancer chemotherapy and pha… (2016) | [10.1007/s00280-016-2993-y](https://doi.org/10.1007/s00280-016-2993-y) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Ouellet_2016_response_rates](drugs/drug_trametinib/pd_Ouellet_2016_response_rates.md) | response rates ← trametinib · categorical (graded) response model | — | Ouellet D et al., Population pharmacokinetics and exposur…, Cancer chemotherapy and pha… (2016) | [10.1007/s00280-016-2993-y](https://doi.org/10.1007/s00280-016-2993-y) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -70,42 +66,48 @@ Trametinib is a protein kinase inhibitor and MEK inhibitor used to treat various
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 08:32 | 6:40 | 2/3/0 | 6/0/0 | 0/0/0 | 142,954/33,426 | openai / gpt-6-luna | 13 | 0/5 | 5/0 | 0 |
+| 2026-11-24 08:06 | 0:04 | 2/3/0 | 2/0/0 | 0/0/0 | 3,725/169 | einfracz / qwen3.8-27b | 13 | 0/5 | 5/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 12 matched, 12 returned
-- **screened:** 4  ·  **relevant:** 4
+- **screened:** 4  ·  **relevant:** 2
 - **records:** 5  ·  extracted 1  ·  needs review 1  ·  rejected 3  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full-text requests
 
-_3 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Ouellet_2016.pdf` | Ouellet D et al., Population pharmacokinetics and exposur…, Cancer chemotherapy and pha… (2016) | popPK | 10 | [10.1007/s00280-016-2993-y](https://doi.org/10.1007/s00280-016-2993-y) | [26940938](https://pubmed.ncbi.nlm.nih.gov/26940938) | The human two-compartment trametinib PopPK analysis reports a 1.26-fold sex effect on clearance and 24% between-subject variability, but not core CL, V, or Q estimates. |
-| `Infante_2012.pdf` | Infante JR et al., Safety, pharmacokinetic, pharmacodynami…, The Lancet. Oncology (2012) | popPK | 8 | [10.1016/S1470-2045(12)70270-X](https://doi.org/10.1016/S1470-2045(12)70270-X) | [22805291](https://pubmed.ncbi.nlm.nih.gov/22805291) | The human PK study reports a numeric effective half-life (~4 days) and peak-to-trough ratio (1.81), though no CL or V values are shown. |
-| `Goldwirt_2021_2.pdf` | Goldwirt L et al., Dabrafenib and trametinib exposure-effi…, Cancer chemotherapy and pha… (2021) | popPK | 7 | [10.1007/s00280-021-04299-x](https://doi.org/10.1007/s00280-021-04299-x) | [34057572](https://pubmed.ncbi.nlm.nih.gov/34057572) | Trametinib exposure is assessed using Bayesian-estimated AUC and trough markers, but their numeric values are not present in the evidence. |
+| `Takada_2024.pdf` | Takada M et al., Population Pharmacokinetics, Pharmacody…, Veterinary and comparative… (2024) | popPK | 8 | [10.1111/vco.12989](https://doi.org/10.1111/vco.12989) | [38889903](https://pubmed.ncbi.nlm.nih.gov/38889903) | The study is a pharmacokinetic assessment in dogs, but specific disposition parameters (CL, Vd) are not provided, only steady-state concentration and qualitative saturation kinetics. |
 
-<sub>queue written 2026-10-07 08:27 UTC</sub>
+<sub>queue written 2026-11-24 08:06 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Goldwirt_2021_2 | relevant | 7 | 0 | Trametinib exposure is assessed using Bayesian-estimated AUC and trough markers, but their numeric values are not present in the evidence. |
-| popPK | Groenland_2023 | irrelevant | 1 | 0 | The study reports trametinib trough concentrations and exposure-response results, but no quantitative disposition parameters. |
+| popPK | Goldwirt_2021_2 | relevant | 3 | 0 | The study reports individual Bayesian-estimated AUC and Ctrough for trametinib, which are quantitative exposure parameters, but the specific numeric values are not provided in the abstract or evidence text. |
+| PGx | Goldwirt_2021_2 | not_relevant | 0 | 0 | The study reports pharmacokinetic-pharmacodynamic relationships for the drugs but does not investigate genetic variants or their impact on PK/PD parameters. |
+| popPK | Groenland_2023 | irrelevant | 2 | 1 | The study reports exposure-response relationships and concentration thresholds (Cmin) for efficacy, but does not provide quantitative population pharmacokinetic parameters (CL, V, Q, ka) or a compartmental model. |
+| PGx | Groenland_2023 | not_relevant | 0 | 0 | The study analyzes exposure-response relationships (PK to PD/outcome) but does not report the effect of gene variants or genotypes on PK/PD parameters. |
 | popPK | Hartman_2023 | irrelevant | 0 | 0 | This in-vitro melanoma study reports drug-response EC50 values, not trametinib disposition parameters. |
+| popPK | Infante_2012 | irrelevant | 5 | 0 | The study reports only qualitative PK descriptors (half-life, variability, peak:trough ratio) without numeric values for clearance, volume, or compartmental model parameters. |
+| PGx | Infante_2012 | not_relevant | 0 | 0 | The paper describes a standard phase 1 dose-escalation trial reporting population PK/PD and safety, but it does not analyze any relationship between gene variants/genotypes and PK or PD parameters. |
 | popPK | Isberner_2022 | relevant | 8 | 2 | Human trametinib PK is modeled, but readable CL/F and V/F estimates are not provided here; the extracted numeric AUC is not a disposition parameter. |
-| popPK | Kim_2019_2 | irrelevant | 0 | 0 | This review reports no original quantitative trametinib disposition parameters. |
+| popPK | Kim_2019_2 | irrelevant | 2 | 0 | The paper is a narrative review discussing PK/PD considerations in melanoma treatment, and no specific quantitative disposition parameter values (CL, V, etc.) for trametinib are present in the provided text. |
+| PGx | Kim_2019_2 | not_relevant | 1 | 2 | The text is a general review abstract focusing on standard-of-care melanoma therapies and PK/PD modeling, but it does not report specific pharmacogenomic associations (gene variants affecting PK/PD) for trametinib. |
+| popPK | Ouellet_2016 | relevant | 10 | 2 | The paper describes a population PK model for trametinib and identifies covariates affecting clearance, but specific numeric parameter values (CL, V, Q) are not listed in the provided evidence, only qualitative relationships and concentration medians. |
+| PGx | Ouellet_2016 | not_relevant | 0 | 0 | The paper analyzes standard demographic and physiological covariates (sex, weight, renal/hepatic function) and clinical tumor markers (LDH, stage) but does not investigate genetic variants or pharmacogenomic covariates. |
 | popPK | Pfeifer_2023 | irrelevant | 0 | 0 | This in-vitro cell-sensitivity study reports trametinib EC50 effects, not pharmacokinetic disposition parameters. |
-| popPK | Takada_2024 | irrelevant | 2 | 1 | Canine PK is assessed, but no quantitative disposition parameters are reported; only dose and steady-state concentration values appear. |
+| popPK | Takada_2024 | relevant | 8 | 2 | The study is a pharmacokinetic assessment in dogs, but specific disposition parameters (CL, Vd) are not provided, only steady-state concentration and qualitative saturation kinetics. |
+| PGx | Takada_2024 | not_relevant | 0 | 0 | The study reports general pharmacokinetic and pharmacodynamic data for trametinib in dogs, but it does not investigate or report any association between specific gene variants/genotypes and these parameters. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btrametinib%5D&body=Drug%3A%20trametinib%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_trametinib/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 08:28 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-24 08:06 UTC</sub>

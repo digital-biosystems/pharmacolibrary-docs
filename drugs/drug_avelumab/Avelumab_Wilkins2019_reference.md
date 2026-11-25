@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> Avelumab model terminal half-life (458.5969730257959) mismatches paper values (108.0, 163.2, 136.8, 146.39999999999998, 146.0).
+> The model does not reproduce the paper's terminal half-life (paper 108, model 459); the covariate scenarios were not simulated (+1 more).
 
-<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Wilkins2019_reference" status="needs_review" stale="false" population="patients with 14 tumor types across three clinical studies" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></div>
+<div class="pk-model-meta" hidden drug="avelumab" model-id="Avelumab_Wilkins2019_reference" status="needs_review" stale="false" population="patients with Merkel cell carcinoma and urothelial carcinoma" measured-compound="avelumab" parameterization="mechanistic" topology="2C"></div>
 
 ## Citation
 Wilkins JJ, Brockhaus B, Dai H, Vugmeyster Y, White JT, Brar S et al. Time-Varying Clearance and Impact of Disease State on the Pharmacokinetics of Avelumab in Merkel Cell Carcinoma and Urothelial Carcinoma. CPT: pharmacometrics & systems pharmacology 8(6):415–427 (2019).
@@ -17,9 +17,9 @@ Wilkins JJ, Brockhaus B, Dai H, Vugmeyster Y, White JT, Brar S et al. Time-Varyi
 
 ## Population and dosing
 
-**Population:** patients with 14 tumor types across three clinical studies · condition multiple cancers · n = 1827.
+**Population:** patients with Merkel cell carcinoma and urothelial carcinoma · condition Merkel cell carcinoma and urothelial carcinoma · age group adult.
 
-**Dosing:** 700 mg, iv, multiple, every 336 h.
+**Dosing:** 700 mg, iv, multiple, every 168 h.
 
 ## Model
 
@@ -33,25 +33,24 @@ Wilkins JJ, Brockhaus B, Dai H, Vugmeyster Y, White JT, Brar S et al. Time-Varyi
 ## Parameters
 > ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-| label | parameter | value | unit | RSE% | IIV |
-|---|---|---|---|---|---|
-| CL, L/hour | CL | 0.0308 | L/hour | 1.36 | 0.0171 (None% RSE) |
-| Central volume, L | V1 | 3.42 | L | 1.20 |  |
-| Peripheral volume, L | V2 | 0.918 | L | 6.75 |  |
-| Intercompartmental CL, L/hour | Q | 0.0313 | L/hour | 5.92 |  |
-| t_50_for_all_other_tumor_types | t_50_for_all_other_tumor_types | 68.4 |  | 2.54 |  |
-| albumin_on_cl_cl_alb_1 | albumin_on_cl_cl_alb_1 | -0.438 |  | 12.2 |  |
-| CRP on CL (θCL,CRP)1 | equation variable | 0.0677 |  | 6.82 |  |
-| theta_q323_category | theta_q323_category | 0 |  |  |  |
-| theta_q319_body_weight | theta_q319_body_weight | 0.324 |  | 10.1 |  |
-| theta_cl_sex | theta_cl_sex | -0.15 |  | 8.85 |  |
-| theta_equation_variable_age | theta_equation_variable_age | -0.12 |  | 22.5 |  |
-| theta_cl_race | theta_cl_race | -0.12 |  | 17.6 |  |
-| theta_equation_variable_egfr | theta_equation_variable_egfr | 0.0579 |  | 32.6 |  |
-| theta_cl_ada | theta_cl_ada | 0.123 | L/hour | 22.0 |  |
-| theta_q319_body_weight | theta_q319_body_weight | 0.362 |  | 8.50 |  |
-| theta_v1_sex | theta_v1_sex | -0.160 |  | 8.57 |  |
-| theta_v1_albumin | theta_v1_albumin | -0.278 |  | 20.6 |  |
+| label | parameter | value | unit | RSE% |
+|---|---|---|---|---|
+| CL, L/hour | CL | 0.0308 | L/hour | 1.36 |
+| Central volume, L | V1 | 3.42 | L | 1.20 |
+| Peripheral volume, L | V2 | 0.918 | L | 6.75 |
+| Intercompartmental CL, L/hour | Q | 0.0313 | L/hour | 5.92 |
+| t_50_for_all_other_tumor_types | t_50_for_all_other_tumor_types | 68.4 |  | 2.54 |
+| age_on_cl_cl_age_1 | age_on_cl_cl_age_1 | -0.12 |  | 22.5 |
+| albumin_on_cl_cl_alb_1 | albumin_on_cl_cl_alb_1 | -0.438 |  | 12.2 |
+| egfr_on_cl_cl_egfr_1 | egfr_on_cl_cl_egfr_1 | 0.0579 |  | 32.6 |
+| theta_q323_category | theta_q323_category | 0 |  |  |
+| theta_q319_body_weight | theta_q319_body_weight | 0.324 |  | 10.1 |
+| theta_cl_sex | theta_cl_sex | -0.15 |  | 8.85 |
+| theta_cl_race | theta_cl_race | -0.12 |  | 17.6 |
+| theta_cl_ada | theta_cl_ada | 0.123 | L/hour | 22.0 |
+| theta_q319_body_weight | theta_q319_body_weight | 0.362 |  | 8.50 |
+| theta_v1_sex | theta_v1_sex | -0.160 |  | 8.57 |
+| theta_v1_albumin | theta_v1_albumin | -0.278 |  | 20.6 |
 
 ## Caveats
 
@@ -59,7 +58,7 @@ Wilkins JJ, Brockhaus B, Dai H, Vugmeyster Y, White JT, Brar S et al. Time-Varyi
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.568). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.694), qwen3.8-27b (not confirmed, agreement 0.568). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -69,39 +68,38 @@ Wilkins JJ, Brockhaus B, Dai H, Vugmeyster Y, White JT, Brar S et al. Time-Varyi
 
 ### Reviewer guidance
 
-**Avelumab model terminal half-life (458.5969730257959) mismatches paper values (108.0, 163.2, 136.8, 146.39999999999998, 146.0).**
+**The model does not reproduce the paper's terminal half-life (paper 108, model 459); the covariate scenarios were not simulated (+1 more).**
 
-The model's simulated terminal half-life of 458.5969730257959 deviates from paper-reported values of 108.0, 163.2, 136.8, 146.39999999999998, and 146.0. Covariate scenarios were not simulated, leaving defined effects unverified. A second reader disagreed on parameter values, including an age effect on clearance that was null in this record but -0.12 in theirs. Extracted — avelumab: CL 0.0308 L/hour, V1 3.42 L, V2 0.918 L, Q 0.0313 L/hour.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. The base model was simulated, not the covariate effects the record defines. A reported unit could not be converted (theta_cl_ada), so that value has no SI equivalent. Extracted — avelumab: CL 0.0308 L/hour, V1 3.42 L, V2 0.918 L, Q 0.0313 L/hour.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of age_on_cl_cl_age_1: this record has none, the second reading -0.12; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of age_on_cl_cl_age_1: this record has -0.12, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
-| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source | IIV |
-|---|---|---|---|---|---|---|---|---|---|---|
-| CL, L/hour | `Q22` · CL | 0.0308 | L/hour | 8.556e-09 | m3/s | l/h | 1.36 | exact (1) | psp412406-tbl-0002:row1:col1, psp412406-tbl-0002:row1:col2 | 0.0171 (None% RSE) |
-| Central volume, L | `Q63` · V1 | 3.42 | L | 0.00342 | m3 | l | 1.20 | exact (1) | psp412406-tbl-0002:row2:col1, psp412406-tbl-0002:row2:col2 |  |
-| Peripheral volume, L | `Q64` · V2 | 0.918 | L | 0.000918 | m3 | l | 6.75 | exact (1) | psp412406-tbl-0002:row3:col1, psp412406-tbl-0002:row3:col2 |  |
-| Intercompartmental CL, L/hour | `Q30` · Q | 0.0313 | L/hour | 8.694e-09 | m3/s | l/h | 5.92 | llm_corrected (0.6) | psp412406-tbl-0002:row4:col1, psp412406-tbl-0002:row4:col2 |  |
-| t_50_for_all_other_tumor_types | `Q900` · t_50_for_all_other_tumor_types | 68.4 |  |  |  |  | 2.54 |  | psp412406-tbl-0002:row9:col1, psp412406-tbl-0002:row9:col2 |  |
-| albumin_on_cl_cl_alb_1 | `Q900` · albumin_on_cl_cl_alb_1 | -0.438 |  |  |  |  | 12.2 |  | psp412406-tbl-0002:row18:col1, psp412406-tbl-0002:row18:col2 |  |
-| CRP on CL (θCL,CRP)1 | `Q900` · equation variable | 0.0677 |  |  |  |  | 6.82 | llm_corrected (0.6) | psp412406-tbl-0002:row22:col1, psp412406-tbl-0002:row22:col2 |  |
-| theta_q323_category | `Q900` · theta_q323_category | 0 |  |  |  |  |  |  | psp412406-tbl-0002:row7:col1 |  |
-| theta_q319_body_weight | `Q900` · theta_q319_body_weight | 0.324 |  |  |  |  | 10.1 |  | psp412406-tbl-0002:row14:col1, psp412406-tbl-0002:row14:col2 |  |
-| theta_cl_sex | `Q900` · theta_cl_sex | -0.15 |  |  |  |  | 8.85 |  | psp412406-tbl-0002:row15:col1, psp412406-tbl-0002:row15:col2 |  |
-| theta_equation_variable_age | `Q900` · theta_equation_variable_age | -0.12 |  |  |  |  | 22.5 |  | psp412406-tbl-0002:row16:col1, psp412406-tbl-0002:row16:col2 |  |
-| theta_cl_race | `Q900` · theta_cl_race | -0.12 |  |  |  |  | 17.6 |  | psp412406-tbl-0002:row17:col1, psp412406-tbl-0002:row17:col2 |  |
-| theta_equation_variable_egfr | `Q900` · theta_equation_variable_egfr | 0.0579 |  |  |  |  | 32.6 |  | psp412406-tbl-0002:row19:col1, psp412406-tbl-0002:row19:col2 |  |
-| theta_cl_ada | `Q900` · theta_cl_ada | 0.123 | L/hour |  |  |  | 22.0 |  | psp412406-tbl-0002:row21:col1, psp412406-tbl-0002:row21:col2 |  |
-| theta_q319_body_weight | `Q900` · theta_q319_body_weight | 0.362 |  |  |  |  | 8.50 |  | psp412406-tbl-0002:row28:col1, psp412406-tbl-0002:row28:col2 |  |
-| theta_v1_sex | `Q900` · theta_v1_sex | -0.160 |  |  |  |  | 8.57 |  | psp412406-tbl-0002:row29:col1, psp412406-tbl-0002:row29:col2 |  |
-| theta_v1_albumin | `Q900` · theta_v1_albumin | -0.278 |  |  |  |  | 20.6 |  | psp412406-tbl-0002:row30:col1, psp412406-tbl-0002:row30:col2 |  |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | RSE% | link | source |
+|---|---|---|---|---|---|---|---|---|---|
+| CL, L/hour | `Q22` · CL | 0.0308 | L/hour | 8.556e-09 | m3/s | l/h | 1.36 | exact (1) | psp412406-tbl-0002:row1:col1 |
+| Central volume, L | `Q63` · V1 | 3.42 | L | 0.00342 | m3 | l | 1.20 | exact (1) | psp412406-tbl-0002:row2:col1 |
+| Peripheral volume, L | `Q64` · V2 | 0.918 | L | 0.000918 | m3 | l | 6.75 | exact (1) | psp412406-tbl-0002:row3:col1 |
+| Intercompartmental CL, L/hour | `Q30` · Q | 0.0313 | L/hour | 8.694e-09 | m3/s | l/h | 5.92 | llm_corrected (0.6) | psp412406-tbl-0002:row4:col1 |
+| t_50_for_all_other_tumor_types | `Q900` · t_50_for_all_other_tumor_types | 68.4 |  |  |  |  | 2.54 |  | psp412406-tbl-0002:row9:col1 |
+| age_on_cl_cl_age_1 | `Q900` · age_on_cl_cl_age_1 | -0.12 |  |  |  |  | 22.5 |  | psp412406-tbl-0002:row16:col1 |
+| albumin_on_cl_cl_alb_1 | `Q900` · albumin_on_cl_cl_alb_1 | -0.438 |  |  |  |  | 12.2 |  | psp412406-tbl-0002:row18:col1 |
+| egfr_on_cl_cl_egfr_1 | `Q900` · egfr_on_cl_cl_egfr_1 | 0.0579 |  |  |  |  | 32.6 |  | psp412406-tbl-0002:row19:col1 |
+| theta_q323_category | `Q900` · theta_q323_category | 0 |  |  |  |  |  |  | psp412406-tbl-0002:row7:col1 |
+| theta_q319_body_weight | `Q900` · theta_q319_body_weight | 0.324 |  |  |  |  | 10.1 |  | psp412406-tbl-0002:row14:col1 |
+| theta_cl_sex | `Q900` · theta_cl_sex | -0.15 |  |  |  |  | 8.85 |  | psp412406-tbl-0002:row15:col1 |
+| theta_cl_race | `Q900` · theta_cl_race | -0.12 |  |  |  |  | 17.6 |  | psp412406-tbl-0002:row17:col1 |
+| theta_cl_ada | `Q900` · theta_cl_ada | 0.123 | L/hour |  |  |  | 22.0 |  | psp412406-tbl-0002:row21:col1 |
+| theta_q319_body_weight | `Q900` · theta_q319_body_weight | 0.362 |  |  |  |  | 8.50 |  | psp412406-tbl-0002:row28:col1 |
+| theta_v1_sex | `Q900` · theta_v1_sex | -0.160 |  |  |  |  | 8.57 |  | psp412406-tbl-0002:row29:col1 |
+| theta_v1_albumin | `Q900` · theta_v1_albumin | -0.278 |  |  |  |  | 20.6 |  | psp412406-tbl-0002:row30:col1 |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
-<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><td><code>IIV</code></td><td>Reported interindividual variability.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>RSE%</code></td><td>Reported relative standard error (%).</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
 ## Departures & gaps
@@ -116,17 +114,20 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 - table section iiv: 'IIV on Imax (ωImax2, variance)' routed out of structural estimates ('IIV')
 - table section residual_error: 'Proportional residual error (σadd)' routed out of structural estimates ('Residual variability')
 - table section residual_error: 'Additive residual error (σadd), μg/mL' routed out of structural estimates ('Residual variability')
-- dropped PD-category row 'Imax SCCHN' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412406-tbl-0002:row5:col1', 'psp412406-tbl-0002:row5:col2'])
-- dropped PD-category row 'Imax mMCC' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412406-tbl-0002:row6:col1', 'psp412406-tbl-0002:row6:col2'])
-- dropped unlinked row (NIL): 'T 50 mMCC' — extend the ontology if this is a real PK parameter (source ['psp412406-tbl-0002:row8:col1', 'psp412406-tbl-0002:row8:col2'])
+- dropped PD-category row 'Imax SCCHN' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412406-tbl-0002:row5:col1'])
+- dropped PD-category row 'Imax mMCC' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['psp412406-tbl-0002:row6:col1'])
+- dropped unlinked row (NIL): 'T 50 mMCC' — extend the ontology if this is a real PK parameter (source ['psp412406-tbl-0002:row8:col1'])
 - covariate level 'T 50, for all other tumor types' → Q900:t_50_for_all_other_tumor_types = 68.4 (additive_shift on Q22)
+- covariate level 'Age on CL (θCL,Age)1' → Q900:age_on_cl_cl_age_1 = -0.12 (linear_fractional on Q22)
 - covariate level 'Albumin on CL (θCL,Alb)1' → Q900:albumin_on_cl_cl_alb_1 = -0.438 (linear_fractional on Q22)
+- covariate level 'eGFR on CL (θCL,eGFR)1' → Q900:egfr_on_cl_cl_egfr_1 = 0.0579 (linear_fractional on Q22)
 - dropped duplicate Q22 ('Tumor burden on CL (θCL,TS)1', value '0.0592') — already have one for this compound
-- dropped duplicate Q900 ('Platelets on CL (θCL,Plat)1', value '0.0603') — already have one for this compound
-- dropped duplicate Q22 ('AST on CL (θCL,AST)1', value '-0.0514') — already have one for this compound
-- dropped duplicate Q900 ('Not taking concomitant opioids on CL (θCL,COpi)2', value '-0.0445') — already have one for this compound
-- dropped duplicate Q22 ('Previous use of biologics on CL (θCL,PBio)2', value '-0.0508') — already have one for this compound
-- dropped duplicate Q900 ('Previous use of biologics on V 1 (θV1,PBio) 2', value '-0.0526') — already have one for this compound
+- dropped duplicate Q22 ('CRP on CL (θCL,CRP)1', value '0.0677') — already have one for this compound
+- dropped unlinked row (NIL): 'Platelets on CL (θCL,Plat)1' — extend the ontology if this is a real PK parameter (source ['psp412406-tbl-0002:row23:col1'])
+- dropped unlinked row (NIL): 'AST on CL (θCL,AST)1' — extend the ontology if this is a real PK parameter (source ['psp412406-tbl-0002:row24:col1'])
+- dropped 'Not taking concomitant opioids on CL (θCL,COpi)2' → Q22 = -0.0445: a clearance of -0.0445 is not a parameter value (source ['psp412406-tbl-0002:row25:col1'])
+- dropped unlinked row (NIL): 'Previous use of biologics on CL (θCL,PBio)2' — extend the ontology if this is a real PK parameter (source ['psp412406-tbl-0002:row26:col1'])
+- dropped unlinked row (NIL): 'Previous use of biologics on V 1 (θV1,PBio) 2' — extend the ontology if this is a real PK parameter (source ['psp412406-tbl-0002:row31:col1'])
 - covariate effect for Q323 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q319 has no base parameter row (kept as unattached equation-variable)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=avelumab
@@ -135,58 +136,34 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the valu
 - molar mass: none found for 'avelumab' — its concentrations stay mass-only
 
 **Extraction notes:**
-- unparsed cell psp412406-tbl-0002:row1:col3 = '0.03; 0.0316'
-- unparsed cell psp412406-tbl-0002:row2:col3 = '3.34; 3.5'
-- unparsed cell psp412406-tbl-0002:row3:col3 = '0.796; 1.04'
-- unparsed cell psp412406-tbl-0002:row4:col3 = '0.0277; 0.0349'
-- unparsed cell psp412406-tbl-0002:row5:col3 = '−0.389; −0.180'
-- unparsed cell psp412406-tbl-0002:row6:col3 = '−0.507; −0.266'
-- unparsed cell psp412406-tbl-0002:row8:col3 = '99.6; 162'
-- unparsed cell psp412406-tbl-0002:row9:col3 = '65.0; 71.8'
-- unparsed cell psp412406-tbl-0002:row10:col3 = '0.415; 1.05'
-- unparsed cell psp412406-tbl-0002:row11:col3 = '1.22; 2.15'
-- unparsed cell psp412406-tbl-0002:row12:col3 = '2.52; 3.31'
-- unparsed cell psp412406-tbl-0002:row14:col3 = '0.260; 0.388'
-- unparsed cell psp412406-tbl-0002:row15:col3 = '−0.176; −0.124'
-- unparsed cell psp412406-tbl-0002:row16:col3 = '−0.173; −0.0671'
-- unparsed cell psp412406-tbl-0002:row17:col3 = '−0.161; −0.0785'
-- unparsed cell psp412406-tbl-0002:row18:col3 = '−0.543; −0.333'
-- unparsed cell psp412406-tbl-0002:row19:col3 = '0.0209; 0.0949'
-- unparsed cell psp412406-tbl-0002:row20:col3 = '0.0441; 0.0744'
-- unparsed cell psp412406-tbl-0002:row21:col3 = '0.0698; 0.176'
-- unparsed cell psp412406-tbl-0002:row22:col3 = '0.0586; 0.0767'
-- unparsed cell psp412406-tbl-0002:row23:col3 = '0.0266; 0.094'
-- unparsed cell psp412406-tbl-0002:row24:col3 = '−0.0747; −0.028'
-- unparsed cell psp412406-tbl-0002:row25:col3 = '−0.0683; −0.0208'
-- unparsed cell psp412406-tbl-0002:row26:col3 = '−0.0796; −0.022'
-- unparsed cell psp412406-tbl-0002:row28:col3 = '0.301; 0.422'
-- unparsed cell psp412406-tbl-0002:row29:col3 = '−0.187; −0.133'
-- unparsed cell psp412406-tbl-0002:row30:col3 = '−0.390; −0.165'
-- unparsed cell psp412406-tbl-0002:row31:col3 = '−0.0827; −0.0226'
-- unparsed cell psp412406-tbl-0002:row33:col3 = '0.0464; 0.0605'
-- unparsed cell psp412406-tbl-0002:row34:col3 = '0.0125; 0.0218'
-- unparsed cell psp412406-tbl-0002:row35:col3 = '0.0297; 0.0366'
-- unparsed cell psp412406-tbl-0002:row36:col3 = '0.0321; 0.0946'
-- unparsed cell psp412406-tbl-0002:row37:col3 = '−0.0429; 0.0148'
-- unparsed cell psp412406-tbl-0002:row38:col3 = '0.659; 1.06'
-- unparsed cell psp412406-tbl-0002:row39:col3 = '0.0485; 0.0707'
-- unparsed cell psp412406-tbl-0002:row41:col3 = '0.161; 0.164'
-- unparsed cell psp412406-tbl-0002:row42:col3 = '2.39; 2.48'
+- table psp412406-tbl-0002: unparsed_numeric_cell
 - LLM selected parameter table(s) 2
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.694 (25/36 fields) | 11 |
 | `qwen3.8-27b` | not confirmed | 0.568 (25/44 fields) | 19 |
 
-<details><summary>19 field discrepancies</summary>
+<details><summary>30 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[age_on_cl_cl_age_1]` | -0.12 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[albumin_on_cl_cl_alb_1]` | -0.438 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[central volume].covariate_forms` | ['linear_fractional', 'linear_fractional'] | ['linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[cl].covariate_forms` | ['additive_shift', 'additive_shift', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | ['additive_shift', 'additive_shift', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional', 'linear_fractional'] | mismatch |
+| `gpt-oss-120b` | `parameters[egfr_on_cl_cl_egfr_1]` | 0.0579 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_age]` |  | -0.12 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_albumin]` |  | -0.438 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_body_weight]` |  | 0.324 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_cl_egfr]` |  | 0.0579 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_q319_body_weight]` | 0.324 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[theta_v1_body_weight]` |  | 0.362 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[age_on_cl_cl_age_1]` |  | -0.12 | only_one_extracted |
 | `qwen3.8-27b` | `parameters[albumin_on_cl_cl_alb_1]` | -0.438 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[crp on cl (θcl,crp)1]` | 0.0677 |  | only_one_extracted |
@@ -223,15 +200,15 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C2_reference | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp412406-tbl-0002:row1:col1', 'psp412406-tbl-0002:row1:col2'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp412406-tbl-0002:row4:col1', 'psp412406-tbl-0002:row4:col2'] |
-| C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp412406-tbl-0002:row2:col1', 'psp412406-tbl-0002:row2:col2'] |
-| C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412406-tbl-0002:row3:col1', 'psp412406-tbl-0002:row3:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0308 | ['psp412406-tbl-0002:row1:col1', 'psp412406-tbl-0002:row1:col2'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['psp412406-tbl-0002:row1:col1'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] |  | ['psp412406-tbl-0002:row4:col1'] |
+| C5_dimension_Q63 | pass | [length] ** 3 |  | ['psp412406-tbl-0002:row2:col1'] |
+| C5_dimension_Q64 | pass | [length] ** 3 |  | ['psp412406-tbl-0002:row3:col1'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0308 | ['psp412406-tbl-0002:row1:col1'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0308 L/h | ['psp412406-tbl-0002:row1:col1', 'psp412406-tbl-0002:row1:col2'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 3.42 L | ['psp412406-tbl-0002:row2:col1', 'psp412406-tbl-0002:row2:col2'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 0.918 L | ['psp412406-tbl-0002:row3:col1', 'psp412406-tbl-0002:row3:col2'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.0308 L/h | ['psp412406-tbl-0002:row1:col1'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 3.42 L | ['psp412406-tbl-0002:row2:col1'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 0.918 L | ['psp412406-tbl-0002:row3:col1'] |
 
 **Reviewer per-scenario checks:**
 
@@ -243,12 +220,11 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 | T3_param_coverage |  | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations |  | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.568, 0 of 1 reader(s) agree | 0.568 | cross-check disputed by a second reader: verdict disputed, agreement 0.568, 0 of 1 reader(s) agree |
-| T1_t_half_beta | reference | fail | 146.4 | 458.6 | 3.132 | days→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 146 | 458.6 | 3.141 | hours→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 108 | 458.6 | 4.246 | days→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 163.2 | 458.6 | 2.81 | days→SI vs simulated h |
-| T1_t_half_terminal | reference | fail | 136.8 | 458.6 | 3.352 | days→SI vs simulated h |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.694 (25 of 36 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.694 | cross-check contradicted by a second reader: verdict disputed; agreement 0.694 (25 of 36 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
+| T1_t_half_beta | reference | fail | 146.4 | 458.6 | 3.132 | reported 6.1 days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 108 | 458.6 | 4.246 | reported 4.5 days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 163.2 | 458.6 | 2.81 | reported 6.8 days→SI vs simulated h |
+| T1_t_half_terminal | reference | fail | 136.8 | 458.6 | 3.352 | reported 5.7 days→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -264,15 +240,56 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_avelumab/Avelumab_Wilkins2019_reference/Avelumab_Wilkins2019_reference_modelica.zip" download>Avelumab_Wilkins2019_reference_modelica.zip</a> <span class="pk-size">(5.1 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_avelumab/Avelumab_Wilkins2019_reference/Avelumab_Wilkins2019_reference_fmi.zip" download>Avelumab_Wilkins2019_reference_fmi.zip</a> <span class="pk-size">(4.1 kB)</span><br><a href="models/fmu/PK_2C.fmu" download>PK_2C.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_avelumab/Avelumab_Wilkins2019_reference/Avelumab_Wilkins2019_reference_matlab.zip" download>Avelumab_Wilkins2019_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_avelumab/Avelumab_Wilkins2019_reference/Avelumab_Wilkins2019_reference_matlab_simbio.zip" download>Avelumab_Wilkins2019_reference_matlab_simbio.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_avelumab/Avelumab_Wilkins2019_reference/Avelumab_Wilkins2019_reference_sbml.zip" download>Avelumab_Wilkins2019_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_avelumab/Avelumab_Wilkins2019_reference/Avelumab_Wilkins2019_reference_cellml.zip" download>Avelumab_Wilkins2019_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No model archives available.</p>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_2C.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
 </div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 0.0007 | kg |
+| input | model | `Cl` | 8.556e-09 | m3/s |
+| input | model | `VdPerKg` | 4.886e-05 | m3/kg |
+| input | model | `k12` | 2.542e-06 | 1/s |
+| input | model | `k21` | 9.471e-06 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_2C`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Wilkins JJ, Brockhaus B, Dai H, Vugmeyster Y, White JT, Brar S et al. Time-Varying Clearance and Impact of Disease State on the Pharmacokinetics of Avelumab in Merkel Cell Carcinoma and Urothelial Carcinoma. CPT: pharmacometrics & systems pharmacology 8(6):415–427 (2019). [doi:10.1002/psp4.12406](https://doi.org/10.1002/psp4.12406)
+
+**This record:** Pharmacolibrary, model `Avelumab_Wilkins2019_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_avelumab/Avelumab_Wilkins2019_reference>
+
+```bibtex
+@misc{pharmacolibrary_AvelumabWilkins2019reference,
+  title  = {{Pharmacolibrary model Avelumab_Wilkins2019_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_avelumab/Avelumab_Wilkins2019_reference},
+  note   = {Parameters from doi:10.1002/psp4.12406},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -286,4 +303,4 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bavelumab%5D%20Avelumab_Wilkins2019_reference&body=Drug%3A%20avelumab%0ARecord%3A%20Avelumab_Wilkins2019_reference%0APaper%3A%20Wilkins_2019%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_avelumab/Avelumab_Wilkins2019_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 09:40 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 11:26 UTC</sub>

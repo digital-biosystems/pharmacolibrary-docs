@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;proguanil&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/&quot;},{&quot;label&quot;:&quot;Hussein_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Proguanil_CherkaouiRbati2023_reference&quot;,&quot;label&quot;:&quot;Cherkaoui-Rbati_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_CherkaouiRbati2023_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Proguanil_McGready2003_reference&quot;,&quot;label&quot;:&quot;McGready_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_proguanil/Proguanil_McGready2003_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # proguanil — `Proguanil_Hussein1996_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Proguanil’s CL/F value of 13% is dimensionally inconsistent with clearance, and the abstract-only record substitutes summary statistics for a fitted model.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_Hussein1996_reference" status="rejected" stale="false" population="patients with acute P. falciparum malaria" measured-compound="proguanil" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="proguanil" model-id="Proguanil_Hussein1996_reference" status="needs_review" stale="false" population="patients with acute P. falciparum malaria" measured-compound="proguanil" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Hussein Z, Eaves CJ, Hutchinson DB, Canfield CJ. Population pharmacokinetics of proguanil in patients with acute P. falciparum malaria after combined therapy with atovaquone. British journal of clinical pharmacology 42(5):589–597 (1996).
@@ -17,29 +17,27 @@ Hussein Z, Eaves CJ, Hutchinson DB, Canfield CJ. Population pharmacokinetics of 
 
 ## Population and dosing
 
-**Population:** patients with acute P. falciparum malaria · condition acute falciparum malaria · age group mixed · n = 370.
+**Population:** patients with acute P. falciparum malaria · condition acute P. falciparum malaria · age group mixed · n = 370.
+
+**Dosed compound ≠ measured compound:** dosed proguanil hydrochloride, measured proguanil.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 5 extracted.  
+**Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CLo higher in Orientals than Blacks and Malays | CL/F | 13 | % |
-| final population estimates of CLo in Blacks | CL | 54.0 | l h-1 |
-| final population estimates of V/F in children (&lt; or = 15 years) | V/F | 562 | l |
-| patients classified as 'poor' metabolizers | fm | 114 |  |
-| Tlag,1 | tlag | 0.147 | h |
+| final population estimates of CLo | CL | 54.0 | l h-1 |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.182). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.375). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,80 +47,67 @@ Hussein Z, Eaves CJ, Hutchinson DB, Canfield CJ. Population pharmacokinetics of 
 
 ### Reviewer guidance
 
-**Proguanil’s CL/F value of 13% is dimensionally inconsistent with clearance, and the abstract-only record substitutes summary statistics for a fitted model.**
+**Only clearance was extracted — no volume.**
 
-The record assigns proguanil CL/F a value of 13 with unit %, which is dimensionless rather than clearance’s volume-per-time dimension. Only the abstract was read, so reported summary statistics stand in for a fitted model; the second reader did not confirm the proguanil assignment or extracted parameter values. Extracted — proguanil: CL/F 13 %, CL 54 l h-1, V/F 562 l, fm 114, tlag 0.147 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — proguanil: CL 54 l h-1.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has proguanil, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has proguanil hydrochloride, the second reading proguanil; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CLo higher in Orientals than Blacks and Malays | `Q27` · CL/F | 13 | % |  |  | % | llm (0.6) | Hussein_1996:abstract |
-| final population estimates of CLo in Blacks | `Q22` · CL | 54.0 | l h-1 | 1.5e-05 | m3/s | l/h | llm (0.6) | Hussein_1996:abstract |
-| final population estimates of V/F in children (&lt; or = 15 years) | `Q76` · V/F | 562 | l | 0.562 | m3 | l | llm_confirmed (0.6) | Hussein_1996:abstract |
-| patients classified as 'poor' metabolizers | `Q45` · fm | 114 |  |  |  |  | llm (0.6) | Hussein_1996:abstract |
-| Tlag,1 | `Q83` · tlag | 0.147 | h | 529.2 | s | h | review_gapfill (0.7) | Cherkaoui-Rbati_2023:review |
+| final population estimates of CLo | `Q22` · CL | 54.0 | l h-1 | 1.5e-05 | m3/s | l/h | llm (0.6) | Hussein_1996:abstract, Hussein_1996:abstract, Hussein_1996:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
 <table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
 </details>
 
+### Unresolved rows _(no Q-code or no value — not parameters)_
+
+| label (paper) | Q-code | link |
+|---|---|---|
+| Apparent volume of distribution (V/F) | Q76 | exact |
+
 ## Departures & gaps
 
 **Interpretation flags:**
-- covariate body weight for CL/F from footnote/prose kept as documentation only (['Hussein_1996:abstract'])
-- unit_dimension_mismatch: 'CLo higher in Orientals than Blacks and Malays' → Q27 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- unit_dimension_mismatch: "CLo lower in 'poor' than 'extensive' metabolizers" → Q27 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q27 ("CLo lower in 'poor' than 'extensive' metabolizers", value 17) — already have one for this compound
-- dropped duplicate Q27 ('final population estimates of CLo in Orientals', value 61.5) — already have one for this compound
-- dropped duplicate Q27 ('final population estimates of CLo in Malays', value 64.3) — already have one for this compound
-- covariate body weight for allometric_exponent from footnote/prose kept as documentation only (['Hussein_1996:abstract'])
-- dropped duplicate Q76 ('final population estimates of V/F in patients aged &gt; 15 years', value 1629) — already have one for this compound
-- dropped unlinked row (NIL): 'mean body weight of children (&lt; or = 15 years)' — extend the ontology if this is a real PK parameter (source ['Hussein_1996:abstract'])
-- dropped unlinked row (NIL): 'mean body weight of patients aged &gt; 15 years' — extend the ontology if this is a real PK parameter (source ['Hussein_1996:abstract'])
-- unit_dimension_mismatch: 'interpatient variability in CLo' → Q27 (unit 'dimensionless' vs ontology '[length] ** 3 / [time]') — route to review
-- dropped duplicate Q27 ('interpatient variability in CLo', value 22.5) — already have one for this compound
-- routed 'interpatient variability in V/F' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- dropped unlinked row (NIL): "patients classified as 'extensive' metabolizers" — extend the ontology if this is a real PK parameter (source ['Hussein_1996:abstract'])
-- dropped unlinked row (NIL): 'total patients' — extend the ontology if this is a real PK parameter (source ['Hussein_1996:abstract'])
+- dropped unlinked row (NIL): '114' — extend the ontology if this is a real PK parameter (source ['Hussein_1996:abstract'])
+- dropped unlinked row (NIL): '256' — extend the ontology if this is a real PK parameter (source ['Hussein_1996:abstract'])
+- dropped value-less row: 'Oral clearance (CLo)' (captured trailing unit 'CLo' for child rows)
+- dropped unlinked row (NIL): 'final population estimates' — extend the ontology if this is a real PK parameter (source ['Hussein_1996:abstract', 'Hussein_1996:abstract'])
+- dropped unlinked row (NIL): 'mean body weight' — extend the ontology if this is a real PK parameter (source ['Hussein_1996:abstract', 'Hussein_1996:abstract'])
+- dropped unlinked row (NIL): 'final magnitudes of interpatient variability in CLo' — extend the ontology if this is a real PK parameter (source ['Hussein_1996:abstract'])
+- unit 'CLo' inherited from a section-header row for V/F (not printed on this row itself) — see the unit_dimension_mismatch check below if this is wrong
+- unit_dimension_unknown: 'CLo' (V/F)
+- dropped duplicate Q76 ('final magnitudes of interpatient variability in V/F', value 17.0) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=proguanil
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q83 (tlag) from Cherkaoui-Rbati_2023's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Hussein_1996_metadata.yaml (17 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Hussein_1996_metadata.yaml (16 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.182 (2/11 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.375 (3/8 fields) | 5 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>5 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[clo higher in orientals than blacks and malays]` | 13 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[final population estimate of v/f in children]` |  | 562 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[final population estimates of clo in blacks]` | 54.0 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[final population estimates of v/f in children]` | 562 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[orientals vs blacks and malays clo increase]` |  | 13 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[patients classified as 'poor' metabolizers]` | 114 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[tlag,1]` | 0.147 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | proguanil | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | proguanil | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[apparent volume of distribution]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clo difference orientals vs blacks and malays]` |  | 13 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[final population estimates of clo]` | 54.0 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v/f estimate]` |  | 562 | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | proguanil hydrochloride | proguanil | mismatch |
 
 </details>
 
@@ -136,17 +121,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
-| C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hussein_1996:abstract'] |
-| C5_dimension_Q27 | fail | [length] ** 3 / [time] | % (dimensionless) | ['Hussein_1996:abstract'] |
+| C0c_disposition_complete | fail |  |  |  |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Hussein_1996:abstract', 'Hussein_1996:abstract', 'Hussein_1996:abstract'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Hussein_1996:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Cherkaoui-Rbati_2023:review'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 54 L/h | ['Hussein_1996:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 562 L | ['Hussein_1996:abstract'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 54 L/h | ['Hussein_1996:abstract', 'Hussein_1996:abstract', 'Hussein_1996:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -158,9 +140,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -170,4 +162,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bproguanil%5D%20Proguanil_Hussein1996_reference&body=Drug%3A%20proguanil%0ARecord%3A%20Proguanil_Hussein1996_reference%0APaper%3A%20Hussein_1996%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_proguanil/Proguanil_Hussein1996_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 07:59 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:48 UTC</sub>

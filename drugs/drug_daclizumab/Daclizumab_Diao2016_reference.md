@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Daclizumab was rejected because its two-compartment structure has an unreachable compartment; its reported total clearance is 0.212 L/day.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="daclizumab" model-id="Daclizumab_Diao2016_reference" status="rejected" stale="false" population="healthy volunteers and subjects with multiple sclerosis" measured-compound="daclizumab" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Diao L, Hang Y, Othman AA, Nestorov I, Tran JQ. Population Pharmacokinetics of D
 
 ### Reviewer guidance
 
-**Daclizumab was rejected because its two-compartment structure has an unreachable compartment; its reported total clearance is 0.212 L/day.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The unreachable compartment has no path from the dose. Only the abstract was read, so reported summary statistics stand in for a fitted model; the second reader supplied no values for total clearance, central volume, absorption lag time, mean absorption time, terminal half-life, or bioavailability, and did not identify the dose compound or primary analyte. Extracted — daclizumab: CL 0.212 L/day, V1 3.92 L, V2 2.42 L, tlag 1.61 h, MAT 7.2 days, Fab 88 %, t1/2z 21 days.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — daclizumab: CL 0.212 L/day, V1 3.92 L, V2 2.42 L, tlag 1.61 h, MAT 7.2 days, Fab 88 %, t1/2z 21 days.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has daclizumab, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

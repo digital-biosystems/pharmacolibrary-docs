@@ -42,7 +42,10 @@ Gadopiclenol is a paramagnetic macrocyclic gadolinium-based contrast agent used 
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [Eto_2025_0_025_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_025_mmol_kg.md) | ▶ model + simulator | 1-compartment, IV | 8 | Eto T et al., Pharmacokinetics and safety of gadopicl…, Japanese journal of radiolo… (2025) | [10.1007/s11604-025-01842-1](https://doi.org/10.1007/s11604-025-01842-1) |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [↳ 0_05_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_05_mmol_kg.md) | ▶ model + simulator | 1-compartment, IV | 8 |  |  |
 | <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Needs review" data-sim="yes"></span><span class="pk-badge pk-badge--orange">Needs review</span><br><sub>blocking: cross_check_disputed</sub> | [↳ 0_1_mmol_kg](drugs/drug_gadopiclenol/Gadopiclenol_Eto2025_0_1_mmol_kg.md) | ▶ model + simulator | 1-compartment, IV | 8 |  |  |
-| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Jurkiewicz_2022_reference](drugs/drug_gadopiclenol/Gadopiclenol_Jurkiewicz2022_reference.md) | — | 2-compartment (no model) | 3 | Jurkiewicz E et al., Pharmacokinetics, Safety, and Efficacy…, Investigative radiology (2022) | [10.1097/RLI.0000000000000865](https://doi.org/10.1097/RLI.0000000000000865) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [Jurkiewicz_2022_12_17_y](drugs/drug_gadopiclenol/Gadopiclenol_Jurkiewicz2022_12_17_y.md) | — | 2-compartment (no model) | 4 | Jurkiewicz E et al., Pharmacokinetics, Safety, and Efficacy…, Investigative radiology (2022) | [10.1097/RLI.0000000000000865](https://doi.org/10.1097/RLI.0000000000000865) |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ 18_y](drugs/drug_gadopiclenol/Gadopiclenol_Jurkiewicz2022_18_y.md) | — | 2-compartment (no model) | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ 2_6_y](drugs/drug_gadopiclenol/Gadopiclenol_Jurkiewicz2022_2_6_y.md) | — | 2-compartment (no model) | 4 |  |  |
+| <span class="pk-rf" hidden data-species="human" data-age="mixed" data-status="Rejected" data-sim="no"></span><span class="pk-badge pk-badge--red">Rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub> | [↳ 7_11_y](drugs/drug_gadopiclenol/Gadopiclenol_Jurkiewicz2022_7_11_y.md) | — | 2-compartment (no model) | 4 |  |  |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -56,24 +59,38 @@ Gadopiclenol is a paramagnetic macrocyclic gadolinium-based contrast agent used 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 18:16 | 3:20 | 3/1/0 | 0/0/0 | 0/0/0 | 77,357/15,584 | openai / gpt-6-luna | 3 | 0/3 | 3/0 | 0 |
+| 2026-11-24 00:26 | 0:04 | 3/4/0 | 0/0/0 | 0/0/0 | 5,007/170 | einfracz / qwen3.8-27b | 3 | 0/3 | 3/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 4 matched, 4 returned
-- **screened:** 3  ·  **relevant:** 3
-- **records:** 4  ·  extracted 0  ·  needs review 3  ·  rejected 1  ·  stale 0
+- **screened:** 3  ·  **relevant:** 2
+- **records:** 7  ·  extracted 0  ·  needs review 3  ·  rejected 4  ·  stale 0
 - **scholar-agent fallback query used:** not captured
+
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Hao_2019.pdf` | Hao J et al., Assessment of Pharmacokinetic, Pharmaco…, Investigative radiology (2019) | popPK | 8 | [10.1097/RLI.0000000000000556](https://doi.org/10.1097/RLI.0000000000000556) | [30870257](https://pubmed.ncbi.nlm.nih.gov/30870257) | The study is a clinical PK trial for gadopiclenol reporting Cmax and t1/2, but it lacks the specific compartmental parameters (CL, V, Q) requested and likely confines detailed parameter tables to supplementary material not included here. |
+
+<sub>queue written 2026-11-24 00:26 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Hao_2019 | irrelevant | 2 | 2 | The study reports Cmax and half-life, but no clearance, volume, or compartmental/population-PK model values. |
+| popPK | Hao_2019 | relevant | 8 | 3 | The study is a clinical PK trial for gadopiclenol reporting Cmax and t1/2, but it lacks the specific compartmental parameters (CL, V, Q) requested and likely confines detailed parameter tables to supplementary material not included here. |
+| PGx | Hao_2019 | not_relevant | 0 | 0 | The paper describes standard pharmacokinetics and pharmacodynamics but does not report any gene variants, genotypes, or pharmacogenomic effects. |
+| popPK | Hao_2024 | relevant | 4 | 8 | The paper is a review that summarizes and explicitly states quantitative pharmacokinetic parameters (clearance, volume, half-life) for gadopiclenol in humans, but it does not present original primary data or a new compartmental model. |
+| PGx | Hao_2024 | not_relevant | 0 | 0 | The paper is a review of the efficacy and safety of gadopiclenol and discusses general pharmacokinetics, but it does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| PGx | Jurkiewicz_2022 | not_relevant | 0 | 0 | The paper reports pediatric pharmacokinetics but does not investigate genetic variants or report pharmacogenomic effects. |
 
 
 </details>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this page](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bgadopiclenol%5D&body=Drug%3A%20gadopiclenol%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_gadopiclenol/%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · newest extraction 2026-10-07 18:14 UTC</sub>
+<sub>Pharmacolibrary · newest extraction 2026-11-23 13:36 UTC</sub>

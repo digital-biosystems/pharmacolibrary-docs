@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> The record was rejected due to a missing peripheral compartment, an implausible clearance magnitude, and a unit conversion error for the absorption rate constant.
+> C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="ibuprofen" model-id="Ibuprofen_Askholt1985_reference" status="rejected" stale="false" population="isolated rabbit hearts" measured-compound="ibuprofen" parameterization="mechanistic" topology="2C"></div>
 
@@ -60,13 +60,13 @@ Askholt J, Nielsen-Kudsk F. Ibuprofen, pharmacokinetics and pharmacodynamics in 
 
 ### Reviewer guidance
 
-**The record was rejected due to a missing peripheral compartment, an implausible clearance magnitude, and a unit conversion error for the absorption rate constant.**
+**C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The model structure is invalid because the peripheral compartment has no link to the central compartment, making it unreachable from the dose. Additionally, the reported clearance of 22.85 ml/min is flagged as outside physiological limits, suggesting a scale or unit extraction error. The absorption rate constant has a unit of hour−1 that the system could not convert to standard SI units, causing the parameter to fail validation. Extracted — ibuprofen: t1/2α 1.23, λ2 0.0488 1/min, t1/2β 14.2 min., kel 1.21 1/min, k12 0.0114 1/min, k21 0.0493 1/min, V1 18.8 ml, V2 4.34 ml, … (+3).
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. Extracted — ibuprofen: t1/2α 1.23, λ2 0.0488 1/min, t1/2β 14.2 min., kel 1.21 1/min, k12 0.0114 1/min, k21 0.0493 1/min, V1 18.8 ml, V2 4.34 ml, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of a* and a': this record has 216.67, the second reading none; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

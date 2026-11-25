@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Gemcitabine clearance was 2.7 L/min and the metabolite was linked, but the model structure did not match the parent-metabolite topology.
+> T3_output_variable; t3_topology_template (+1 more).
 
 <div class="pk-model-meta" hidden drug="gemcitabine" model-id="Gemcitabine_RamnLpez2012_reference" status="rejected" stale="false" population="cancer patients" measured-compound="gemcitabine" parameterization="mechanistic" topology="parent_metabolite"></div>
 
@@ -49,13 +49,13 @@ Ramón-López A, Escudero-Ortiz V, Duart-Duart MJ, Pérez-Ruixo JJ, Valenzuela B
 
 ### Reviewer guidance
 
-**Gemcitabine clearance was 2.7 L/min and the metabolite was linked, but the model structure did not match the parent-metabolite topology.**
+**T3_output_variable; t3_topology_template (+1 more).**
 
-The record lists a parent-metabolite structure where the metabolite 2',2'-difluorodeoxyuridine is linked to gemcitabine, yet the model topology was a single-compartment structure. The metabolite's compartment was reported as having zero compartments, making the model structurally inconsistent with the described formation process. The record was built from the abstract alone, so the parameter values and topology represent summary statistics rather than a fitted model. Extracted — gemcitabine: CL 2.7 L/min, Vss 30 L; 2',2'-difluorodeoxyuridine: CL 0.0515 L/min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — gemcitabine: CL 2.7 L/min, Vss 30 L; 2',2'-difluorodeoxyuridine: CL 0.0515 L/min.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has gemcitabine → 2',2'-difluorodeoxyuridine (metabolism), the second reading gemcitabine → dfdu (metabolism); it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_rate_constant_conversion | pass | Kfm (rate_constant) → CL = k·V | no explicit k·V edge found in model |  | rate constant must not be used raw as a clearance |
 | T3_topology_template | fail | parent_metabolite → PK_3M_9C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.273, 0 of 1 reader(s) agree | 0.273 | cross-check disputed by a second reader: verdict disputed, agreement 0.273, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.273 (3 of 11 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.273 | cross-check contradicted by a second reader: verdict disputed; agreement 0.273 (3 of 11 compared fields agree, 7 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

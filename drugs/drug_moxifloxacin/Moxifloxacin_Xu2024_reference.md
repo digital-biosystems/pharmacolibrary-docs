@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper studies pyrazinamide, not moxifloxacin, which is only a co-medication.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="moxifloxacin" model-id="Moxifloxacin_Xu2024_reference" status="rejected" stale="false" population="" measured-compound="moxifloxacin" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Xu AY, Velásquez GE, Zhang N, Chang VK, Phillips PPJ, Nahid P et al. Pyrazinami
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper studies pyrazinamide, not moxifloxacin, which is only a co-medication.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The analytic identity check failed, confirming the study focuses on pyrazinamide pharmacokinetics while moxifloxacin acts solely as a covariate. The second reader disputed the rejection, with an agreement score of 0.857 and zero of one reader agreeing. The model builder also introduced invented absorption parameters, defaulting ka and Tlag instead of extracting explicit estimates. Extracted — moxifloxacin: CL/F 3.53 L/h, V1/F 33.4 L.
+Extracted — moxifloxacin: CL/F 3.53 L/h, V1/F 33.4 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q18: this record has 351, the second reading 351. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -128,7 +128,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.857, 0 of 1 reader(s) agree | 0.857 | cross-check disputed by a second reader: verdict disputed, agreement 0.857, 0 of 1 reader(s) agree |
+| X1_cross_check | pass |  | verdict confirmed; agreement 1.0 (7 of 7 compared fields agree); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 1 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record refused because the terminal half-life of 6-acetylmorphine has a dimensional error and the model contains orphan metabolites.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
-<div class="pk-model-meta" hidden drug="diamorphine" model-id="Diamorphine_Rook2006_reference" status="rejected" stale="false" population="heroin-dependent adults (inhalers and injectors)" measured-compound="heroin (diamorphine)" parameterization="mechanistic" topology="general_linear"></div>
+<div class="pk-model-meta" hidden drug="diamorphine" model-id="Diamorphine_Rook2006_reference" status="rejected" stale="false" population="heroin-dependent patients" measured-compound="heroin" parameterization="mechanistic" topology="general_linear"></div>
 
 ## Citation
 Rook EJ, Huitema AD, van den Brink W, van Ree JM, Beijnen JH. Population pharmacokinetics of heroin and its major metabolites. Clinical pharmacokinetics 45(4):401–417 (2006).
@@ -16,15 +16,13 @@ Rook EJ, Huitema AD, van den Brink W, van Ree JM, Beijnen JH. Population pharmac
 
 ## Population and dosing
 
-**Population:** heroin-dependent adults (inhalers and injectors) · condition heroin dependence · age group adult · n = 106.
-
-**Dosed compound ≠ measured compound:** dosed diamorphine (heroin), measured heroin (diamorphine).
+**Population:** heroin-dependent patients · condition heroin dependency · age group adult · n = 106.
 
 ## Model
 
 **Structure:** general linear; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 4 extracted.  
+**Parameters:** 3 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -32,14 +30,13 @@ Rook EJ, Huitema AD, van den Brink W, van Ree JM, Beijnen JH. Population pharmac
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| bioavailability of inhaled heroin | Fab | 53 | % |
-| clearance of morphine | CL | 73.6 | L/h |
-| terminal half-life of 6-acetylmorphine | t1/2z | 13 | % |
-| creatinine clearance | CLR | 60 | mL/min |
+| bioavailability of inhaled heroin | Fab | 53 |  |
+| clearances of morphine | CL | 73.6 | L/h |
+| terminal half-life of 6-acetylmorphine | t1/2z | 13 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.364). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.455). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,22 +46,21 @@ Rook EJ, Huitema AD, van den Brink W, van Ree JM, Beijnen JH. Population pharmac
 
 ### Reviewer guidance
 
-**Record refused because the terminal half-life of 6-acetylmorphine has a dimensional error and the model contains orphan metabolites.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The recorded terminal half-life of 13 for 6-acetylmorphine is annotated with the unit '%', which is a dimensionless fraction rather than a time duration. Additionally, the metabolic pathway leaves several metabolites without a path from the dose, meaning their values were left at placeholder defaults. The record was based solely on the abstract, so these summary statistics stand in for a fitted model. Extracted — heroin (diamorphine): Fab 53 %, CLR 60 mL/min; morphine: CL 73.6 L/h; 6-acetylmorphine: t1/2z 13 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — diamorphine: Fab 53; morphine: CL 73.6 L/h; 6-acetylmorphine: t1/2z 13 h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has diamorphine (heroin), the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the links between molecules: this record has heroin → 6-acetylmorphine (metabolism); 6-acetylmorphine → morphine (metabolism); morphine → morphine-3-glucuronide (metabolism) …, the second reading heroin → 6-acetylmorphine (hydrolysis); 6-acetylmorphine → morphine (hydrolysis); morphine → morphine-3-glucuronide (metabolism) …; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| bioavailability of inhaled heroin | `Q40` · Fab | 53 | % |  |  |  | llm_confirmed (0.6) | Rook_2006:abstract |
-| clearance of morphine | `Q22` · CL | 73.6 | L/h | 2.044e-05 | m3/s | l/h | llm_confirmed (0.6) | Rook_2006:abstract |
-| terminal half-life of 6-acetylmorphine | `Q57` · t1/2z | 13 | % |  |  | % | llm (0.6) | Rook_2006:abstract |
-| creatinine clearance | `Q26` · CLR | 60 | mL/min | 1e-06 | m3/s | ml/min | llm_corrected (0.6) | Rook_2006:abstract |
+| bioavailability of inhaled heroin | `Q40` · Fab | 53 |  |  |  |  | llm_confirmed (0.6) | Rook_2006:abstract |
+| clearances of morphine | `Q22` · CL | 73.6 | L/h | 2.044e-05 | m3/s | l/h | exact (1) | Rook_2006:abstract |
+| terminal half-life of 6-acetylmorphine | `Q57` · t1/2z | 13 | h | 4.68e+04 | s | h | llm (0.6) | Rook_2006:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -75,47 +71,44 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code | link |
 |---|---|---|
-| clearance of the morphine-glucuronides | Q22 | llm_confirmed |
+| clearances of the morphine-glucuronides | Q22 | llm |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'terminal half-life of 6-acetylmorphine' → Q57 (unit 'dimensionless' vs ontology '[time]') — route to review
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=heroin (diamorphine)
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- implicit units: 'terminal half-life of 6-acetylmorphine' → h (from the popPK convention: 'Terminal half-life (t1/2z) is a time parameter, and hours are the standard unit used for reporting half-lives in populat')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=heroin
+- topology: 4 first-order transfer(s) across 5 compounds → general_linear
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
-- status held at "Needs review" — not promoted
-- row roles (LLM): model_class=noncompartmental; 5/5 row label(s) assigned, 0 linked by role; re-tagged heroin (diamorphine)→morphine ×1, heroin (diamorphine)→6-acetylmorphine ×1
-- molar mass: none of 2 PubChem candidate(s) is 'heroin (diamorphine)' (LLM) — left in mass units
-- molar mass: none found for 'heroin (diamorphine)' — its concentrations stay mass-only
+- row roles (LLM): model_class=noncompartmental; 4/4 row label(s) assigned, 2 linked by role; re-tagged heroin→parent ×1, heroin→morphine ×1, heroin→6-acetylmorphine ×1
+- molar mass: none found for '6-acetylmorphine' — its concentrations stay mass-only
+- molar mass: none found for 'morphine' — its concentrations stay mass-only
+- molar mass: none found for 'morphine-3-glucuronide' — its concentrations stay mass-only
+- molar mass: none found for 'morphine-6-glucuronide' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Rook_2006_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Rook_2006_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.364 (4/11 fields) | 7 |
+| `gpt-oss-120b` | not confirmed | 0.455 (5/11 fields) | 6 |
 
-<details><summary>7 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [['heroin (diamorphine)', '6-acetylmorphine', 'metabolism'], ['6-acetylmorphine', 'morphine', 'metabolism'], ['morphine', 'morphine-3-glucuronide', 'metabolism'], ['morphine', 'morphine-6-glucuronide', 'metabolism']] | [['heroin', '6-acetylmorphine', 'metabolism'], ['6-acetylmorphine', 'morphine', 'metabolism'], ['morphine', 'morphine-3-glucuronide', 'metabolism'], ['morphine', 'morphine-6-glucuronide', 'metabolism']] | mismatch |
-| `gpt-oss-120b` | `parameters[bioavailability of inhaled heroin]` |  | 53 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[bioavailability of inhaled heroin]` | 53 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[clearance of the morphine-glucuronides]` |  |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[creatinine clearance]` | 60 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | diamorphine (heroin) | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | heroin (diamorphine) | unknown | mismatch |
+| `gpt-oss-120b` | `model.links` | [['heroin', '6-acetylmorphine', 'metabolism'], ['6-acetylmorphine', 'morphine', 'metabolism'], ['morphine', 'morphine-3-glucuronide', 'metabolism'], ['morphine', 'morphine-6-glucuronide', 'metabolism']] | [['heroin', '6-acetylmorphine', 'hydrolysis'], ['6-acetylmorphine', 'morphine', 'hydrolysis'], ['morphine', 'morphine-3-glucuronide', 'metabolism'], ['morphine', 'morphine-6-glucuronide', 'metabolism']] | mismatch |
+| `gpt-oss-120b` | `parameters[clearance of morphine-glucuronides]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearance of morphine]` |  | 73.6 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearances of morphine]` | 73.6 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearances of the morphine-glucuronides]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[terminal half-life of 6-acetylmorphine].value` | 13 |  | mismatch |
 
 </details>
 
@@ -129,15 +122,14 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 4 |  |
+| C0_has_structural_params | pass |  | 3 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Rook_2006:abstract'] |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Rook_2006:abstract'] |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Rook_2006:abstract'] |
-| C5_dimension_Q57 | fail | [time] | % (dimensionless) | ['Rook_2006:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Rook_2006:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 73.6 | ['Rook_2006:abstract'] |
-| C8_topology | fail | ontology-linked transfer parameter on every edge | ['unknown', 'unknown', 'unknown', 'unknown'] |  |
+| C8_topology | fail |  |  |  |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 73.6 L/h | ['Rook_2006:abstract'] |
 
 <details class="legend">
@@ -162,4 +154,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bdiamorphine%5D%20Diamorphine_Rook2006_reference&body=Drug%3A%20diamorphine%0ARecord%3A%20Diamorphine_Rook2006_reference%0APaper%3A%20Rook_2006%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_diamorphine/Diamorphine_Rook2006_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 02:56 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:04 UTC</sub>

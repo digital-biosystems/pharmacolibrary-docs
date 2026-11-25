@@ -18,15 +18,6 @@ Arterolane is an antimalarial drug in clinical investigation. It is not currentl
 
 _not available_
 
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Gautam_2011_PCT](drugs/drug_arterolane/pd_Gautam_2011_PCT.md) | parasite clearance time ← arterolane · model not identified | — | Gautam A et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2011) | [10.1177/0091270010385578](https://doi.org/10.1177/0091270010385578) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Gautam_2011_PC_50](drugs/drug_arterolane/pd_Gautam_2011_PC_50.md) | 50% parasite clearance ← arterolane · model not identified | — | Gautam A et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2011) | [10.1177/0091270010385578](https://doi.org/10.1177/0091270010385578) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Gautam_2011_PC_90](drugs/drug_arterolane/pd_Gautam_2011_PC_90.md) | 90% parasite clearance ← arterolane · model not identified | — | Gautam A et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2011) | [10.1177/0091270010385578](https://doi.org/10.1177/0091270010385578) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Gautam_2011_recrudescence](drugs/drug_arterolane/pd_Gautam_2011_recrudescence.md) | recrudescence ← arterolane · model not identified | — | Gautam A et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2011) | [10.1177/0091270010385578](https://doi.org/10.1177/0091270010385578) |
-
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
@@ -52,7 +43,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 06:40 | 2:29 | 0/0/0 | 0/4/0 | 0/0/1 | 128,549/2,300 | ollama / glm-5.3-flash | 7 | 5/1 | 7/0 | 0 |
+| 2026-11-23 18:22 | 0:03 | 0/0/0 | 0/0/0 | 0/0/1 | 4,557/176 | einfracz / qwen3.8-27b | 7 | 5/1 | 7/0 | 0 |
 
 ## Coverage
 
@@ -67,6 +58,10 @@ _not available_
 |---|---|---|---|---|---|
 | popPK | Adoke_2021 | irrelevant | 0 | 0 | This is a clinical trial of artefenomel/ferroquine for malaria; arterolane is not the subject drug and no arterolane PK parameters are reported. |
 | popPK | Anantpadma_2019 | irrelevant | 0 | 0 | This is an in vitro Ebola antiviral screening study; arterolane is only a tested compound (IC50 4.53 μM), with no PK parameters reported. |
+| popPK | Gautam_2011 | relevant | 8 | 0 | The study reports PK/PD analysis for arterolane, but the specific quantitative disposition parameter values (like CL or V) are not present in the provided text, only summary AUC ratios and PD metrics. |
+| PGx | Gautam_2011 | not_relevant | 0 | 0 | The paper reports PK/PD relationships for arterolane in malaria patients but contains no analysis of gene variants, genotypes, or pharmacogenomic effects. |
+| popPK | Lanteri_2014 | irrelevant | 0 | 0 | The study measures ex vivo antimalarial activity (IC50) of endoperoxides, not pharmacokinetic parameters like clearance or volume. |
+| PGx | Lanteri_2014 | not_relevant | 0 | 0 | The paper reports ex vivo susceptibility of malaria parasites to endoperoxides based on parasite genotypes (e.g., pfmdr1), which is a measure of drug efficacy/resistance, not a pharmacogenomic effect on human pharmacokinetic or pharmacodynamic parameters. |
 | popPK | McCarthy_2016 | irrelevant | 0 | 0 | The paper reports PK parameters for artefenomel (OZ439), not arterolane; arterolane is only mentioned as a comparator with a cited half-life, and no arterolane parameter values are present. |
 | popPK | Wamae_2022 | irrelevant | 0 | 0 | This is a parasite (P. falciparum) clearance/genotyping study using arterolane regimens; no arterolane pharmacokinetic disposition parameters (CL, V, ka, PK model) are reported. |
 | popPK | Wattanakul_2021 | irrelevant | 0 | 0 | The paper models piperaquine (not arterolane) PK/PD; arterolane is only mentioned as a possible combination partner, and no arterolane parameters are reported. |

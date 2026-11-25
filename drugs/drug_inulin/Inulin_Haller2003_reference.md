@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;V04C&quot;,&quot;href&quot;:&quot;atc/V04C.md&quot;},{&quot;label&quot;:&quot;Inulin&quot;,&quot;href&quot;:&quot;drugs/drug_inulin/&quot;},{&quot;label&quot;:&quot;Haller_2003 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Inulin_Duong2021_reference&quot;,&quot;label&quot;:&quot;Duong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_inulin/Inulin_Duong2021_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Inulin_Duong2021_reference&quot;,&quot;label&quot;:&quot;Duong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_inulin/Inulin_Duong2021_reference.md&quot;,&quot;status&quot;:&quot;Rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
-> This paper's disposition core is incomplete.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="Inulin" model-id="Inulin_Haller2003_reference" status="needs_review" stale="false" population="cats (healthy young adults and older/renal-risk cats)" measured-compound="inulin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Inulin" model-id="Inulin_Haller2003_reference" status="needs_review" stale="false" population="cats" measured-compound="inulin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Haller M, Rohner K, Müller W, Reutter F, Binder H, Estelberger W et al. Single-injection inulin clearance for routine measurement of glomerular filtration rate in cats. Journal of feline medicine and surgery 5(3):175–181 (2003).
@@ -17,7 +17,7 @@ Haller M, Rohner K, Müller W, Reutter F, Binder H, Estelberger W et al. Single-
 
 ## Population and dosing
 
-**Population:** cats (healthy young adults and older/renal-risk cats) · condition healthy and early renal dysfunction (GFR assessment) · age group adult · n = 53.
+**Population:** cats · condition healthy and renal impairment · age group mixed · n = 53.
 
 > **Species: cat.** This record comes from an animal study (cat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -25,7 +25,7 @@ Haller M, Rohner K, Müller W, Reutter F, Binder H, Estelberger W et al. Single-
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 3 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,13 +33,11 @@ Haller M, Rohner K, Müller W, Reutter F, Binder H, Estelberger W et al. Single-
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| GFR | CLR | 35.9 | mL/min |
-| GFR median | CLnorm | 46.0 | L/h |
-| Vd (amikacin, median) | V | 34.9 | L |
+| or 2.07-3.69 (median | CL | 2.72 | ml/min/kg |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.444). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (cat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">cat</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +47,11 @@ Haller M, Rohner K, Müller W, Reutter F, Binder H, Estelberger W et al. Single-
 
 ### Reviewer guidance
 
-**This paper's disposition core is incomplete.**
+**Only clearance was extracted — no volume.**
 
-A volume and a clearance/elimination estimate from this paper are needed to build its model. Review values from other papers (Duong_2021) cannot stand in for this paper's evidence. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — inulin: CLR 35.9 mL/min, CLnorm 46 L/h, V 34.9 L.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — inulin: CL 2.72 ml/min/kg.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cats: this record has none, the second reading 53; it also differs on 4 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of gfr was determined in: this record has none, the second reading 53; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,9 +59,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| GFR | `Q26` · CLR | 35.9 | mL/min | 5.983e-07 | m3/s | L/h | llm (0.6) | Haller_2003:abstract, Haller_2003:abstract |
-| GFR median | `Q354` · CLnorm | 46.0 | L/h | 1.278e-05 | m3/s | L/h | llm (0.6) | Haller_2003:abstract, Haller_2003:abstract |
-| Vd (amikacin, median) | `Q61` · V | 34.9 | L | 0.0349 | m3 | L | review_gapfill (0.7) | Duong_2021:review |
+| or 2.07-3.69 (median | `Q22` · CL | 2.72 | ml/min/kg | 3.173e-06 | m3/s | ml/(min·kg) | llm (0.6) | Haller_2003:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -73,40 +69,32 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'ml/min/m(2)' (CLR)
-- unit_dimension_unknown: 'ml/min/m(2)' (CLnorm)
-- dropped unlinked row (NIL): 'inulin dose' — extend the ontology if this is a real PK parameter (source ['Haller_2003:abstract'])
-- dropped unlinked row (NIL): 'blood sample time' — extend the ontology if this is a real PK parameter (source ['Haller_2003:abstract'])
-- implicit units: 'GFR' → mL/min (from the popPK convention: 'No unit stated in text or footnotes. GFR (glomerular filtration rate) is conventionally reported in mL/min, and a value ')
-- implicit units: 'GFR median' → L/h (from the popPK convention: 'No unit stated in text or footnotes. Total clearance normalized to a 70 kg reference is conventionally reported in L/h i')
+- dropped unlinked row (NIL): 'serum inulin concentration after injection of' — extend the ontology if this is a real PK parameter (source ['Haller_2003:abstract'])
+- covariate gfr for CL from footnote/prose kept as documentation only (['Haller_2003:abstract'])
+- dropped unlinked row (NIL): 'administration of' — extend the ontology if this is a real PK parameter (source ['Haller_2003:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=inulin
 - molar mass: none found for 'inulin' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Duong_2021's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Haller_2003_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Haller_2003_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.444 (4/9 fields) | 5 |
+| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>3 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[cats]` |  | 53 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[gfr normal upper limit (ml/min/m(2))]` |  | 58.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[gfr normal upper limit]` |  | 3.69 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[gfr]` | 35.9 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vd (amikacin,]` | 34.9 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[gfr was determined in]` |  | 53 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[injection of]` |  | 3000 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[or 2.07-3.69]` | 2.72 |  | only_one_extracted |
 
 </details>
 
@@ -120,13 +108,13 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | pass |  | 2 |  |
+| C0_has_structural_params | pass |  | 1 |  |
+| C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q26 | pass | [length] ** 3 / [time] |  | ['Haller_2003:abstract', 'Haller_2003:abstract'] |
-| C5_dimension_Q354 | pass | [length] ** 3 / [time] |  | ['Haller_2003:abstract', 'Haller_2003:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Duong_2021:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Haller_2003:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.72 | ['Haller_2003:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 34.9 L | ['Duong_2021:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 11.4 L/h | ['Haller_2003:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -160,4 +148,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Binulin%5D%20Inulin_Haller2003_reference&body=Drug%3A%20inulin%0ARecord%3A%20Inulin_Haller2003_reference%0APaper%3A%20Haller_2003%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_inulin/Inulin_Haller2003_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 22:24 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:53 UTC</sub>

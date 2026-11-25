@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">sheep</span>
 
-> Sulfathiazole’s terminal elimination half-life of 1.1 hr and volume of distribution of 0.39 liter/kg were disputed because the second reader did not confirm them.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="sulfathiazole" model-id="Sulfathiazole_Bevill1977_reference" status="needs_review" stale="false" population="sheep" measured-compound="sulfathiazole" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ Bevill RF, Koritz GD, Dittert LW, Bourne DW. Disposition of sulfonamides in food
 
 ### Reviewer guidance
 
-**Sulfathiazole’s terminal elimination half-life of 1.1 hr and volume of distribution of 0.39 liter/kg were disputed because the second reader did not confirm them.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the abstract alone, so reported summary statistics stood in for a fitted model. The second reader marked the dose compound and primary analyte as unknown and did not provide values for either parameter. Extracted — sulfathiazole: t1/2z 1.1 hr, V 0.39 liter/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — sulfathiazole: t1/2z 1.1 hr, V 0.39 liter/kg.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulfathiazole, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -131,7 +131,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 1 scholar param(s) emitted or defaulted | 1 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.25, 0 of 1 reader(s) agree | 0.25 | cross-check disputed by a second reader: verdict disputed, agreement 0.25, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.25 | cross-check contradicted by a second reader: verdict disputed; agreement 0.25 (2 of 8 compared fields agree, 4 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

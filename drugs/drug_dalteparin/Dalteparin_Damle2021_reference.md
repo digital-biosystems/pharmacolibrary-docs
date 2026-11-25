@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Dalteparin clearance, volume of distribution, and lag time were not extracted, so the model used placeholder values instead of study estimates and was held back.
+> No value for dalteparin's clearance, volume of distribution and absorption lag time; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="dalteparin" model-id="Dalteparin_Damle2021_reference" status="model_quarantined" stale="false" population="pediatric patients with venous thromboembolism" measured-compound="anti-Xa" parameterization="apparent" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Damle B, Jen F, Sherman N, Jani D, Sweeney K. Population Pharmacokinetic Analysi
 
 ### Reviewer guidance
 
-**Dalteparin clearance, volume of distribution, and lag time were not extracted, so the model used placeholder values instead of study estimates and was held back.**
+**No value for dalteparin's clearance, volume of distribution and absorption lag time; t6_deviations (+1 more).**
 
-The record shows that no explicit values were obtained for dalteparin's clearance, volume of distribution, or absorption lag time, resulting in a model built on defaults rather than fitted parameters. Although apparent clearance and volume values are listed in the parameter table, these did not resolve the missing internal estimates required for the model structure. Additionally, a second reader could not confirm the drug or measured compound, identifying both as unknown, which contradicts the primary extraction. Extracted — dalteparin: CL/F 929 mL/h, V/F 7.18e+03 mL, kabs 1.04 1/h.
+The model was built, but dalteparin's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — dalteparin: CL/F 929 mL/h, V/F 7.18e+03 mL, kabs 1.04 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has dalteparin, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -148,7 +148,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.8, 0 of 1 reader(s) agree | 0.8 | cross-check disputed by a second reader: verdict disputed, agreement 0.8, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.8 (8 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.8 | cross-check contradicted by a second reader: verdict disputed; agreement 0.8 (8 of 10 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 0.50).">human + animal</span>
 
-> Rejected because the 117.73 h half-life paired with 0.0089 ml/h clearance is physiologically implausible for the 1.44 ml volume.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="aflibercept" model-id="Aflibercept_Park2022_rabbit" status="rejected" stale="false" population="mice, rats, and rabbits" measured-compound="aflibercept" parameterization="mechanistic" topology="1C"></div>
 
@@ -52,13 +52,13 @@ Park S, Lee YW, Oh J, Kim SJ, Lee S, Lee HY. Pharmacokinetic evaluation of radio
 
 ### Reviewer guidance
 
-**Rejected because the 117.73 h half-life paired with 0.0089 ml/h clearance is physiologically implausible for the 1.44 ml volume.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The extracted total clearance of 0.0089 ml/h and volume of distribution of 1.44 ml yield a derived half-life that contradicts the reported 117.73 h terminal half-life. This massive discrepancy between the kinetic parameters indicates a unit or scale extraction error. Additionally, the record lists no model links, which the second reader noted as a structural inconsistency. Extracted — aflibercept: t1/2z 118 h, AUC∞ 1.19e+04, V 1.44 ml, CL 0.0089 ml/h.
+Extracted — aflibercept: t1/2z 118 h, AUC∞ 1.19e+04, V 1.44 ml, CL 0.0089 ml/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has aflibercept, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

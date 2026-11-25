@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The naproxen record was held back because its absorption parameters were left at library defaults rather than extracted from the paper.
+> Ka use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="naproxen" model-id="Naproxen_Oliveira2022v2_reference" status="needs_review" stale="false" population="CYP2C9 genotyped volunteers" measured-compound="naproxen" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Oliveira GM, Dionísio TJ, Siqueira-Sandrin VS, Ferrari LAL, Bolani B, Parisi VA
 
 ### Reviewer guidance
 
-**The naproxen record was held back because its absorption parameters were left at library defaults rather than extracted from the paper.**
+**Ka use library defaults, not estimates from this paper; t6_deviations.**
 
-The elimination rate constant and absorption lag time were not reported in the source text, so placeholder values were used for the one-compartment model. These substitutions, along with the apparent bioavailability assumption, are unsupported by the specific data from Oliveira_2022_2. Extracted — naproxen: CLu 0.3 mL/min, V/F 0.623 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — naproxen: CLu 0.3 mL/min, V/F 0.623 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CLu: this record has 0.3, the second reading none; it also differs on 2 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,7 +130,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.5, 0 of 1 reader(s) agree | 0.5 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.5 (3 of 6 compared fields agree, 3 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.5 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -1,14 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;famciclovir&quot;,&quot;href&quot;:&quot;drugs/drug_famciclovir/&quot;},{&quot;label&quot;:&quot;Schenkel_2013 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Famciclovir_Schenkel2013_reference&quot;,&quot;label&quot;:&quot;Schenkel_2013_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # famciclovir — `Famciclovir_Schenkel2013_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The paper reports none of the model's key parameters.
+> T3_param_coverage; x1_cross_check.
 
-<div class="pk-model-meta" hidden drug="famciclovir" model-id="Famciclovir_Schenkel2013_reference" status="rejected" stale="false" population="patients undergoing cataract surgery" measured-compound="penciclovir" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="famciclovir" model-id="Famciclovir_Schenkel2013_reference" status="needs_review" stale="false" population="patients undergoing cataract surgery" measured-compound="penciclovir" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Schenkel F, Csajka C, Baglivo E, Kondo-Oestreicher M, Dayer P, Gex-Fabry M et al. Intraocular penetration of penciclovir after oral administration of famciclovir: a population pharmacokinetic model. The Journal of antimicrobial chemotherapy 68(7):1635–1641 (2013).
@@ -16,7 +17,7 @@ Schenkel F, Csajka C, Baglivo E, Kondo-Oestreicher M, Dayer P, Gex-Fabry M et al
 
 ## Population and dosing
 
-**Population:** patients undergoing cataract surgery · condition cataract surgery · age group adult · n = 53.
+**Population:** patients undergoing cataract surgery · age group adult.
 
 **Dosing:** 500 mg, oral, single.
 
@@ -24,19 +25,32 @@ Schenkel F, Csajka C, Baglivo E, Kondo-Oestreicher M, Dayer P, Gex-Fabry M et al
 
 ## Model
 
-**Structure:** 1-compartment; no model was built for this record.  
-**Parameterization:** mechanistic.  
-**Parameters:** 0 extracted.  
-**Availability:** No model was generated from this record.
+**Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).  
+**Parameters:** 9 extracted.  
+**Availability:** Model and browser simulation available in **Models** and **Simulation**.
+
+<figure class="pk-models-diagram"><img src="drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference/Famciclovir_Schenkel2013_reference.svg" alt="Famciclovir_Schenkel2013_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label | parameter | value | unit |
+|---|---|---|---|
+| K0 (h⁻¹) | kabs | 1.86 | h⁻¹ |
+| K20 (h⁻¹) | kel | 0.25 | h⁻¹ |
+| K32 (h⁻¹) | kcomp | 0.41 | h⁻¹ |
+| VP (L) | V | 86.2 | L |
+| θCLCR (h⁻¹)ᵇ | equation variable | 0.07 | h⁻¹ |
+| t 1/2AH (h) | t1/2z | 1.7 | h |
+| t 1/2P (h) | t1/2α | 28 | h |
+| CL P (L/h) | CLm/F | 40 | L/h |
+| AUC p (mg . h/mL) | AUC∞ | 40 | mg . h/mL |
+| AUC AH (mg . h/mL) | AUC | 28 | mg . h/mL |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.579), qwen3.8-27b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,77 +60,89 @@ _No resolved parameters._
 
 ### Reviewer guidance
 
-**The paper reports none of the model's key parameters.**
+**T3_param_coverage; x1_cross_check.**
 
-No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
+A reported unit could not be converted (equation variable), so that value has no SI equivalent. None of the extracted parameters is famciclovir's own; they describe penciclovir. Extracted — penciclovir: kabs 1.86 h⁻¹, kel 0.25 h⁻¹, kcomp 0.41 h⁻¹, V 86.2 L, t1/2z 1.7 h, t1/2α 28 h, CLm/F 40 L/h, AUC∞ 40 mg . h/mL, … (+1).
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of p ratio: this record has none, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of k0: this record has none, the second reading 1.86; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by rule template (no LLM)</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
-### Unresolved rows _(no Q-code or no value — not parameters)_
+### All parameter columns
 
-| label (paper) | Q-code | link |
-|---|---|---|
-| t 1/2P (h) | Q57 | llm |
-| t 1/2AH (h) | Q95 | llm |
-| P ratio | Q88 | llm |
+| label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
+|---|---|---|---|---|---|---|---|---|
+| K0 (h⁻¹) | `Q49` · kabs | 1.86 | h⁻¹ | 0.0005167 | 1/s | 1/h | exact (1) | Schenkel_2013_table_p3_1:row0:col1 |
+| K20 (h⁻¹) | `Q47` · kel | 0.25 | h⁻¹ | 6.944e-05 | 1/s | 1/h | exact (1) | Schenkel_2013_table_p3_1:row1:col1 |
+| K32 (h⁻¹) | `Q48` · kcomp | 0.41 | h⁻¹ | 0.0001139 | 1/s | 1/h | exact (1) | Schenkel_2013_table_p3_1:row3:col1 |
+| VP (L) | `Q61` · V | 86.2 | L | 0.0862 | m3 | l | exact (1) | Schenkel_2013_table_p3_1:row4:col1 |
+| θCLCR (h⁻¹)ᵇ | `Q900` · equation variable | 0.07 | h⁻¹ |  |  | 1/h | llm (0.6) | Schenkel_2013_table_p3_1:row6:col1 |
+| t 1/2AH (h) | `Q57` · t1/2z | 1.7 | h | 6120 | s | h | llm (0.6) | Schenkel_2013_table_3:row0:col4 |
+| t 1/2P (h) | `Q59` · t1/2α | 28 | h | 1.008e+05 | s | h | llm (0.6) | Schenkel_2013_table_3:row1:col1 |
+| CL P (L/h) | `Q351` · CLm/F | 40 | L/h | 1.111e-05 | m3/s | l/h | exact (1) | Schenkel_2013_table_3:row1:col2 |
+| AUC p (mg . h/mL) | `Q17` · AUC∞ | 40 | mg . h/mL | 1.44e+05 | kg*s/m3 | (h·mg)/ml | llm_corrected (0.6) | Schenkel_2013_table_3:row1:col3 |
+| AUC AH (mg . h/mL) | `Q88` · AUC | 28 | mg . h/mL | 1.008e+05 | kg*s/m3 | (h·mg)/ml | llm_confirmed (0.6) | Schenkel_2013_table_3:row1:col6 |
+
+<details class="legend">
+<summary>Parameter definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>Verbatim source label (label_verbatim).</td></tr><tr><td><code>Q-code · name</code></td><td>Matched ontology identifier and parameter name; e.g. Q22: clearance, Q27: CL/F, Q49: ka.</td></tr><tr><td><code>value</code></td><td>Reported parameter estimate.</td></tr><tr><td><code>unit</code></td><td>Verbatim source unit (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>Normalised estimate in SI base units, 4 significant figures; absent when unit conversion is unavailable.</td></tr><tr><td><code>unit_si</code></td><td>SI unit of value_si (m3/s for a clearance, m3 for a volume, 1/s for a rate constant, s for a time).</td></tr><tr><td><code>unit_canonical</code></td><td>Canonical unit associated with the parameter's Q-code.</td></tr><tr><td><code>link</code></td><td>Ontology-mapping method and confidence. exact/boundary/fuzzy/tv_prefix/caption_compartment/special_case: deterministic; llm/llm_confirmed/llm_corrected: LLM-assisted; review/review_gapfill: secondary-review source; boundary_relink: corrected mapping.</td></tr><tr><td><code>source</code></td><td>Source location: colN (table column), other_prose (text), review (secondary source), or pgx (PGx record).</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>(empty cell)</code></td><td>Not recorded; not equivalent to zero. A column empty in every row is not shown.</td></tr><tr><td><code>—</code></td><td>Not applicable or not displayed.</td></tr><tr><td><code>not verified</code></td><td>Record not accepted; displayed estimates remain unverified.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
 
+**Deviations:**
+- `defaulted_parameters`: ['Tlag']
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
-- column 'formula' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped value-less row: 'CL P (L/h)' (captured trailing unit 'L/h' for child rows)
-- dropped value-less row: 'AUC p (mg . h/mL)' (captured trailing unit 'mg . h/mL' for child rows)
-- dropped value-less row: 'AUC AH (mg . h/mL)' (captured trailing unit 'mg . h/mL' for child rows)
-- unit 'mg . h/mL' inherited from a section-header row for AUC (not printed on this row itself) — see the unit_dimension_mismatch check below if this is wrong
-- NIL: refused to back-fill base 'NIL' from footnote/prose loose number None (source ['tab_2:footnote']); the table cell was unparseable — needs review
-- NIL: refused to back-fill base 'AUC' from footnote/prose loose number None (source ['tab_2:footnote']); the table cell was unparseable — needs review
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=penciclovir
+- column 'mean+sd' classified 'ci' by the LLM but kept as the estimate: the header names the point value
+- conflicting source units for 't 1/2P (h)': [{'unit': 'h', 'source': 'Schenkel_2013_table_3:header0:col1', 'scope': 'label'}, {'unit': '%', 'source': 'Schenkel_2013_table_3:row1:col1', 'scope': 'inline'}]
+- conflicting source units for 'CL P (L/h)': [{'unit': 'L/h', 'source': 'Schenkel_2013_table_3:header0:col2', 'scope': 'label'}, {'unit': '%', 'source': 'Schenkel_2013_table_3:row1:col2', 'scope': 'inline'}]
+- conflicting source units for 'AUC p (mg . h/mL)': [{'unit': 'mg . h/mL', 'source': 'Schenkel_2013_table_3:header0:col3', 'scope': 'label'}, {'unit': '%', 'source': 'Schenkel_2013_table_3:row1:col3', 'scope': 'inline'}]
+- conflicting source units for 'AUC AH (mg . h/mL)': [{'unit': 'mg . h/mL', 'source': 'Schenkel_2013_table_3:header0:col6', 'scope': 'label'}, {'unit': '%', 'source': 'Schenkel_2013_table_3:row1:col6', 'scope': 'inline'}]
+- dropped duplicate Q900 ('θACE inhibitors (h⁻¹)ᵇ', value '0.06') — already have one for this compound
+- routed 'θBWᶜ' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
+- dropped unlinked row (NIL): 'P ratio' — extend the ontology if this is a real PK parameter (source ['Schenkel_2013_table_3:row1:col7'])
+- metabolite penciclovir: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- metabolite volume: 'VP (L)' Q63→Q61 for penciclovir — it is 1-compartment, so its central volume is its only volume
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=penciclovir
 - template fit: none — only the metabolite is modelled — no parent compartment
-- row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 2 linked by role
-- review gap-fill skipped: this record measures 'penciclovir', not famciclovir — the review values are the parent's
+- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- status held at "Needs review" — not promoted
+- row roles (LLM): model_class=compartmental; 17/17 row label(s) assigned, 4 linked by role
 
 **Extraction notes:**
-- transposed table Schenkel_2013_table_3: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell Schenkel_2013_table_3:row0:col1 = '2.9+0.8'
-- unparsed cell Schenkel_2013_table_3:row0:col2 = '28%'
-- unparsed cell Schenkel_2013_table_3:row1:col1 = '22.8+9.1'
-- unparsed cell Schenkel_2013_table_3:row1:col2 = '40%'
-- unparsed cell Schenkel_2013_table_3:row2:col1 = '25.4+10.2'
-- unparsed cell Schenkel_2013_table_3:row2:col2 = '40%'
-- unparsed cell Schenkel_2013_table_3:row5:col1 = '6.6+1.8'
-- unparsed cell Schenkel_2013_table_3:row5:col2 = '28%'
-- unparsed cell Schenkel_2013_table_3:row6:col1 = '0.28+0.06'
-- unparsed cell Schenkel_2013_table_3:row6:col2 = '22%'
-- companion parameter table 1 transcribed (3 record(s))
-- transposed table Schenkel_2013_table_3: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell Schenkel_2013_table_3:row0:col1 = '2.9+0.8'
-- unparsed cell Schenkel_2013_table_3:row0:col2 = '28%'
-- unparsed cell Schenkel_2013_table_3:row1:col1 = '22.8+9.1'
-- unparsed cell Schenkel_2013_table_3:row1:col2 = '40%'
-- unparsed cell Schenkel_2013_table_3:row2:col1 = '25.4+10.2'
-- unparsed cell Schenkel_2013_table_3:row2:col2 = '40%'
-- unparsed cell Schenkel_2013_table_3:row5:col1 = '6.6+1.8'
-- unparsed cell Schenkel_2013_table_3:row5:col2 = '28%'
-- unparsed cell Schenkel_2013_table_3:row6:col1 = '0.28+0.06'
-- unparsed cell Schenkel_2013_table_3:row6:col2 = '22%'
-- companion parameter table 3 transcribed (6 record(s))
-- no LLM table selection; kept 2 deterministically-scored parameter table(s)
+- table Schenkel_2013_table_p3_1: unbound_uncertainty
+- table Schenkel_2013_table_p3_1: unparsed_numeric_cell
+- table Schenkel_2013_table_3: conflicting_units
+- table Schenkel_2013_table_3: unbound_uncertainty
+- table Schenkel_2013_table_3: unparsed_numeric_cell
+- transposed table Schenkel_2013_table_3: logical view retains original source coordinates
+- companion parameter table 3 transcribed (11 record(s))
+- LLM selected parameter table(s) 3
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.579 (11/19 fields) | 8 |
 | `qwen3.8-27b` | partly confirmed | 0.571 (4/7 fields) | 3 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>11 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[auc ah]` | 28 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[auc p].parameter_id` | Q17 | Q88 | mismatch |
+| `gpt-oss-120b` | `parameters[k0]` |  | 1.86 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[k0]` | 1.86 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[t 1/2ah].parameter_id` | Q57 | Q59 | mismatch |
+| `gpt-oss-120b` | `parameters[t 1/2p].parameter_id` | Q59 | Q57 | mismatch |
+| `gpt-oss-120b` | `parameters[θbwc]` |  | 1.01 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[θclcr (h-)b]` | 0.07 |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[p ratio]` |  |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[t 1/2ah]` |  |  | only_one_extracted |
 | `qwen3.8-27b` | `parameters[t 1/2p]` |  |  | only_one_extracted |
@@ -133,12 +159,34 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 | check | status | expected | obtained | source |
 |---|---|---|---|---|
-| C0_has_structural_params | fail |  | 0 |  |
-| C0b_disposition_core | fail |  |  |  |
-| C5_dimension_Q57 | pass | [time] |  | ['Schenkel_2013_table_3:row0:col3', 'Schenkel_2013_table_1:row0:col2', 'Schenkel_2013_table_3:row0:col3'] |
-| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Schenkel_2013_table_3:row6:col3', 'Schenkel_2013_table_1:row8:col2', 'Schenkel_2013_table_3:row6:col3'] |
-| C5_dimension_Q95 | pass | [time] |  | ['Schenkel_2013_table_3:row3:col1', 'Schenkel_2013_table_1:row3:col2', 'Schenkel_2013_table_3:row3:col1'] |
+| C0_has_structural_params | pass |  | 9 |  |
+| C0b_disposition_core | pass |  |  |  |
+| C0c_disposition_complete | pass |  |  |  |
+| C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Schenkel_2013_table_3:row1:col3'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] |  | ['Schenkel_2013_table_3:row1:col2'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Schenkel_2013_table_p3_1:row1:col1'] |
+| C5_dimension_Q48 | pass | 1 / [time] |  | ['Schenkel_2013_table_p3_1:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Schenkel_2013_table_p3_1:row0:col1'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Schenkel_2013_table_3:row0:col4'] |
+| C5_dimension_Q59 | pass | [time] |  | ['Schenkel_2013_table_3:row1:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Schenkel_2013_table_p3_1:row4:col1'] |
+| C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 |  | ['Schenkel_2013_table_3:row1:col6'] |
+| C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
+| C9_phys_window_Q61 | pass | volume within physiological range | 86.2 L | ['Schenkel_2013_table_p3_1:row4:col1'] |
+
+**Reviewer per-scenario checks:**
+
+| check | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  |  | no covariate effects in record |
+| T3_apparent_invariant | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
+| T3_output_variable | pass | C_central (measured=penciclovir) | central.C |  | output must be the measured/analyte compartment |
+| T3_param_coverage | fail | 4 scholar param(s) emitted or defaulted | 3 covered |  | neither emitted nor in defaulted[]: ['kcomp'] |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
+| T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.579 (11 of 19 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.579 | cross-check contradicted by a second reader: verdict disputed; agreement 0.579 (11 of 19 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -150,16 +198,72 @@ Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference/Famciclovir_Schenkel2013_reference_modelica.zip" download>Famciclovir_Schenkel2013_reference_modelica.zip</a> <span class="pk-size">(5.5 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference/Famciclovir_Schenkel2013_reference_fmi.zip" download>Famciclovir_Schenkel2013_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>Archives contain model source, a simulation script, and execution instructions.</p>
+<p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
+</div></div>
+
+## Model interface
+
+The parameters this record sets on the template, in the template's SI units, and the outputs the simulator reads.
+
+| direction | role | name | value | unit (SI) |
+|---|---|---|---|---|
+| input | compound | `MM` | 0.2533 | kg/mol |
+| input | dosing | `F` | 1 | 1 |
+| input | dosing | `Tlag` | 0 | s |
+| input | dosing | `adminCount` | 1 | 1 |
+| input | dosing | `adminDuration` | 600 | s |
+| input | dosing | `adminMass` | 0.0005 | kg |
+| input | model | `Cl` | 1.111e-05 | m3/s |
+| input | model | `VdPerKg` | 0.001231 | m3/kg |
+| input | model | `ka` | 0.0005167 | 1/s |
+| input | subject | `weight` | 70 | kg |
+| output | concentration | `central.C` |  | kg/m3 |
+
+## Tested with
+
+- Template `Pharmacolibrary.Pharmacokinetic.Models.PK_1C_enteral`, compiled by OpenModelica Compiler OpenModelica 1.26.7~1-g2b913cc.
+- Reference peak computed with FMPy from the compiled FMU; the Simulation tab re-runs the same FMU in the browser and compares its peak with it.
+- No automated comparison across the download formats runs for this template yet; the FMI archive is the reference implementation.
+
+## How to cite
+
+**Source paper** (the parameters are its): Schenkel F, Csajka C, Baglivo E, Kondo-Oestreicher M, Dayer P, Gex-Fabry M et al. Intraocular penetration of penciclovir after oral administration of famciclovir: a population pharmacokinetic model. The Journal of antimicrobial chemotherapy 68(7):1635–1641 (2013). [doi:10.1093/jac/dkt064](https://doi.org/10.1093/jac/dkt064)
+
+**This record:** Pharmacolibrary, model `Famciclovir_Schenkel2013_reference`. <https://pharmacolibrary.github.io/#/drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference>
+
+```bibtex
+@misc{pharmacolibrary_FamciclovirSchenkel2013reference,
+  title  = {{Pharmacolibrary model Famciclovir_Schenkel2013_reference}},
+  author = {{Pharmacolibrary}},
+  url    = {https://pharmacolibrary.github.io/#/drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference},
+  note   = {Parameters from doi:10.1093/jac/dkt064},
+}
+```
+
+Licence of the model files: not set yet. The parameter values belong to the cited paper.
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_Browser simulation unavailable: no model was built for this record. The engineer builds a model only from a record that passed validation; see the record's status and the checks that blocked it._
+**Administration: oral** — 500 mg, single dose, first-order absorption (ka 1.86 /h, F 1). Dose in the paper: 500 mg.
+
+<dbs-fmusim paramsurl="drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference/Famciclovir_Schenkel2013_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference/Famciclovir_Schenkel2013_reference_sim_controls.json"></dbs-fmusim>
+
+<sub>WebAssembly simulation using extracted parameters. The reference check compares the browser peak with the recorded FMPy result and is disabled after parameter edits. Template `PK_1C_enteral` · parameters `Famciclovir_Schenkel2013_reference_params.json` · controls `Famciclovir_Schenkel2013_reference_sim_controls.json`. *Simulator value* denotes a template default, not an extracted estimate.</sub>
 
 <div class="pk-tab-end"></div>
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bfamciclovir%5D%20Famciclovir_Schenkel2013_reference&body=Drug%3A%20famciclovir%0ARecord%3A%20Famciclovir_Schenkel2013_reference%0APaper%3A%20Schenkel_2013%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_famciclovir/Famciclovir_Schenkel2013_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:53 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 13:38 UTC</sub>

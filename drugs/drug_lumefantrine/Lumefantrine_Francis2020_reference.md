@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Lumefantrine’s absorption rate constant, 0.727, was rejected because its reported unit “Ka” has a time dimension, not the required inverse-time dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit Ka ([time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="Lumefantrine" model-id="Lumefantrine_Francis2020_reference" status="rejected" stale="false" population="nonpregnant adults with uncomplicated malaria, HIV infection, or both" measured-compound="lumefantrine" parameterization="mechanistic" topology="2C"></div>
 
@@ -57,13 +57,13 @@ Francis J, Barnes KI, Workman L, Kredo T, Vestergaard LS, Hoglund RM et al. An I
 
 ### Reviewer guidance
 
-**Lumefantrine’s absorption rate constant, 0.727, was rejected because its reported unit “Ka” has a time dimension, not the required inverse-time dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q49 unit Ka ([time]) vs 1 / [time].**
 
-The record identifies 0.727 as the absorption rate constant but reports its unit as “Ka,” which conflicts with the required inverse-time dimension. This unit could not be converted to SI, leaving the parameter without an SI value. Extracted — lumefantrine: CL 3.28 L/h, V1 60 L, Frel 1 F, MTT 2.86 h, n_transit 7.58, kabs 0.727 Ka, Q 0.63 L/h, V2 182 L, … (+3).
+A reported unit could not be converted (Frel, MTT and kabs), so that value has no SI equivalent. Extracted — lumefantrine: CL 3.28 L/h, V1 60 L, Frel 1 F, MTT 2.86 h, n_transit 7.58, kabs 0.727 Ka, Q 0.63 L/h, V2 182 L, … (+3).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of intercompartmental clearance between central and second peripheral compartment (liters/h)c: this record has 1.55, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

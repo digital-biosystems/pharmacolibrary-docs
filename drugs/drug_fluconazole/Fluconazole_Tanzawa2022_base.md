@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Fluconazole clearance, volume of distribution, and lag time lacked values, forcing the use of library placeholders.
+> No value for fluconazole's clearance, volume of distribution and absorption lag time; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="fluconazole" model-id="Fluconazole_Tanzawa2022_base" status="model_quarantined" stale="false" population="extremely low-birth-weight infants" measured-compound="fluconazole" parameterization="apparent" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Tanzawa A, Saito J, Shoji K, Kojo Y, Funaki T, Maruyama H et al. Fluconazole Pop
 
 ### Reviewer guidance
 
-**Fluconazole clearance, volume of distribution, and lag time lacked values, forcing the use of library placeholders.**
+**No value for fluconazole's clearance, volume of distribution and absorption lag time; t6_deviations.**
 
-The record lists apparent clearance of 24.1 L/h and absorption rate of 3.86 h⁻¹, but the model builder defaulted the primary clearance, volume of distribution, and lag time to library values. Although a second reader also failed to identify values for these parameters, the explicit defaulting decision caused the model to be quarantined. Extracted — fluconazole: kfm 0.43 1/h, CL/F 24.1 L/h, kabs 3.86 h−1.
+The model was built, but fluconazole's clearance, volume of distribution and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — fluconazole: kfm 0.43 1/h, CL/F 24.1 L/h, kabs 3.86 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl/f: this record has 24.1, the second reading none; it also differs on 1 more field. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -188,7 +188,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | pass |  | verdict partial, agreement 0.778, 0 of 1 reader(s) agree | 0.778 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.778 (7 of 9 compared fields agree, 2 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.778 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

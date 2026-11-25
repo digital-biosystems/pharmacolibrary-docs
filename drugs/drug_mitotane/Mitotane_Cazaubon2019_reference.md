@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Mitotane was held for review because the reported βlcat2 parameter value of 1.12 was disputed by the second reader.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="mitotane" model-id="Mitotane_Cazaubon2019_reference" status="needs_review" stale="false" population="adults with adrenocortical carcinoma" measured-compound="mitotane" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Cazaubon Y, Talineau Y, Feliu C, Konecki C, Russello J, Mathieu O et al. Populat
 
 ### Reviewer guidance
 
-**Mitotane was held for review because the reported βlcat2 parameter value of 1.12 was disputed by the second reader.**
+**cross_check_disputed; x1_cross_check.**
 
-The record reports βlcat2 * as 1.12, while the second reader supplied no value for it; the verdict was disputed, with agreement 0.75 and 0 of 1 readers agreeing. Tlag was defaulted rather than reported as an explicit estimate. The second reader also marked the dose compound and primary analyte as unknown, although this record identifies both as mitotane. Extracted — mitotane: kabs 24 day−1, Fab 35, V 8.9e+03 L, CL 70 L·day−1.
+Extracted — mitotane: kabs 24 day−1, Fab 35, V 8.9e+03 L, CL 70 L·day−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has mitotane, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -160,7 +160,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.75, 0 of 1 reader(s) agree | 0.75 | cross-check disputed by a second reader: verdict disputed, agreement 0.75, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.75 (9 of 12 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.75 | cross-check contradicted by a second reader: verdict disputed; agreement 0.75 (9 of 12 compared fields agree, 1 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

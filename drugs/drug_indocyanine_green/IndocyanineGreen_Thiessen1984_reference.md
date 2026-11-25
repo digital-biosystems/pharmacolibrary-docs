@@ -5,11 +5,11 @@
 
 # indocyanine green — `IndocyanineGreen_Thiessen1984_reference`
 
-> ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+> ## <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
-> Indocyanine green volume of distribution 3.01 mL is physiologically implausible for a rabbit.
+> Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Thiessen1984_reference" status="rejected" stale="false" population="New Zealand white male rabbits" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Thiessen1984_reference" status="needs_review" stale="false" population="rabbits" measured-compound="indocyanine_green" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Thiessen JJ, Rappaport PL, Eppel JG. Indocyanine green pharmacokinetics in the rabbit. Canadian journal of physiology and pharmacology 62(9):1078–1085 (1984).
@@ -17,7 +17,7 @@ Thiessen JJ, Rappaport PL, Eppel JG. Indocyanine green pharmacokinetics in the r
 
 ## Population and dosing
 
-**Population:** New Zealand white male rabbits · condition healthy · age group adult · n = 9.
+**Population:** rabbits · condition healthy · age group adult · n = 13.
 
 > **Species: rabbit.** This record comes from an animal study (rabbit), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -25,20 +25,19 @@ Thiessen JJ, Rappaport PL, Eppel JG. Indocyanine green pharmacokinetics in the r
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 2 extracted.  
+**Parameters:** 1 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
-> ⚠️ Status "Rejected": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ Status "Needs review": these are the values as extracted, **not verified**. Any model or simulator on the other tabs runs on these numbers.
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| clearances (dose 1) | CL | 17.09 | L/h |
-| Volume of Distribution V | V | 3.01 | mL |
+| clearances | CL | 17.09 | L/h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.571). Primary extraction retained.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.333). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rabbit</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -48,20 +47,19 @@ Thiessen JJ, Rappaport PL, Eppel JG. Indocyanine green pharmacokinetics in the r
 
 ### Reviewer guidance
 
-**Indocyanine green volume of distribution 3.01 mL is physiologically implausible for a rabbit.**
+**Only clearance was extracted — no volume.**
 
-The record derives from the abstract alone, so summary statistics stand in for a fitted model. The volume of distribution value of 3.01 mL fails the physiological plausibility check for rabbits. A second reader disagrees, finding no clearance or volume values in the source text. Extracted — indocyanine green: CL 17.1 L/h, V 3.01 mL.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — indocyanine green: CL 17.1 L/h.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of clearance: this record has none, the second reading 17.09; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indocyanine_green, the second reading indocyanine green; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>reviewed by rule template (no LLM)</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| clearances (dose 1) | `Q22` · CL | 17.09 | L/h | 4.747e-06 | m3/s | L/h | llm_confirmed (0.6) | Thiessen_1984:abstract |
-| Volume of Distribution V | `Q61` · V | 3.01 | mL | 3.01e-06 | m3 | L | review_gapfill (0.7) | Carpenter_2018:review |
+| clearances | `Q22` · CL | 17.09 | L/h | 4.747e-06 | m3/s | L/h | llm_confirmed (0.6) | Thiessen_1984:abstract, Thiessen_1984:abstract, Thiessen_1984:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -72,34 +70,30 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 
 **Interpretation flags:**
 - unit_dimension_unknown: 'mL X min-1 X kg-1' (CL)
-- dropped duplicate Q22 ('clearances (dose 2)', value 4.5) — already have one for this compound
-- dropped duplicate Q22 ('clearances (dose 3)', value 2.27) — already have one for this compound
-- implicit units: 'clearances (dose 1)' → L/h (from the popPK convention: 'No unit stated in text or table caption; total clearance conventionally expressed in L/h in population PK, and 17.09 is ')
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=indocyanine green
+- implicit units: 'clearances' → L/h (from the popPK convention: 'The paper text and table captions provided are empty, so no explicit unit is stated. In population pharmacokinetics, tot')
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=indocyanine_green
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Carpenter_2018's review values (primary lacked it)
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Thiessen_1984_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.571 (4/7 fields) | 3 |
+| `gpt-oss-120b` | not confirmed | 0.333 (2/6 fields) | 4 |
 
-<details><summary>3 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[clearance]` |  | 17.09 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clearances]` |  | 17.09 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[clearances]` | 17.09 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution v]` | 3.01 |  | only_one_extracted |
+| `gpt-oss-120b` | `screen.dose_compound` | indocyanine_green | indocyanine green | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | indocyanine_green | indocyanine green | mismatch |
 
 </details>
 
@@ -116,12 +110,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 1 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | fail |  |  |  |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Thiessen_1984:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Carpenter_2018:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 17.09 | ['Thiessen_1984:abstract'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Thiessen_1984:abstract', 'Thiessen_1984:abstract', 'Thiessen_1984:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 17.09 | ['Thiessen_1984:abstract', 'Thiessen_1984:abstract', 'Thiessen_1984:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 17.1 L/h | ['Thiessen_1984:abstract'] |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.00301 L | ['Carpenter_2018:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 17.1 L/h | ['Thiessen_1984:abstract', 'Thiessen_1984:abstract', 'Thiessen_1984:abstract'] |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -133,9 +125,19 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Model downloads
 
-<p>Downloads unavailable: the record is <b>rejected</b>. Previously generated model archives are removed.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">unavailable</span></td></tr>
+</tbody></table>
+<p>No model archives available.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -145,4 +147,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindocyanine_green%5D%20IndocyanineGreen_Thiessen1984_reference&body=Drug%3A%20indocyanine_green%0ARecord%3A%20IndocyanineGreen_Thiessen1984_reference%0APaper%3A%20Thiessen_1984%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indocyanine_green/IndocyanineGreen_Thiessen1984_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 21:11 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:11 UTC</sub>

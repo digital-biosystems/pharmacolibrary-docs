@@ -24,8 +24,8 @@ Pinacidil is a cyanoguanidine derivative used as an antihypertensive to lower bl
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Girard_1993_delta_DBP](drugs/drug_pinacidil/pd_Girard_1993_delta_DBP.md) | delta DBP ← pinacidil · direct sigmoid Emax (Hill) effect | — | Girard P et al., Pharmacodynamic model of the haemodynam…, European journal of clinica… (1993) | [10.1007/BF00315477](https://doi.org/10.1007/BF00315477) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Girard_1993_delta_HR](drugs/drug_pinacidil/pd_Girard_1993_delta_HR.md) | delta HR ← pinacidil · delayed effect through an effect compartment | — | Girard P et al., Pharmacodynamic model of the haemodynam…, European journal of clinica… (1993) | [10.1007/BF00315477](https://doi.org/10.1007/BF00315477) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Girard_1993_delta_DBP](drugs/drug_pinacidil/pd_Girard_1993_delta_DBP.md) | delta DBP ← pinacidil · direct sigmoid Emax (Hill) effect | — | Girard P et al., Pharmacodynamic model of the haemodynam…, European journal of clinica… (1993) | [10.1007/BF00315477](https://doi.org/10.1007/BF00315477) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>

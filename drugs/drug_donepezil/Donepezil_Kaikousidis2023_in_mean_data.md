@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> Donepezil's central volume of 0.021 L is physiologically implausible, and the model contains an unreachable compartment.
+> C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="donepezil" model-id="Donepezil_Kaikousidis2023_in_mean_data" status="rejected" stale="false" population="mice (brain and blood PK)" measured-compound="donepezil" parameterization="mechanistic" topology="2C"></div>
 
@@ -58,13 +58,13 @@ Kaikousidis C, Papakyriakopoulou P, Dokoumetzidis A, Valsami G. Donepezil Brain 
 
 ### Reviewer guidance
 
-**Donepezil's central volume of 0.021 L is physiologically implausible, and the model contains an unreachable compartment.**
+**C8 unreachable/orphan compartment or unlinked metabolite; c9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The central volume of distribution (V1) is 0.021 L, which is far below the physiological range for mice, triggering an implausibility rejection. Additionally, the model structure includes an orphan compartment with no path from the dose, making it unreachable. A second reader also disagreed with the extracted values for the lag time (0.043 min vs 0.043) and absorption rate constant (0.173 1/min vs 0.128 1/min). Extracted — donepezil: tlag 4.06 min, D1 11.3 min, MTT 56 min, ktr 0.171 1/min, V1 0.021 L, V2 0.005 L, k12 0.543 1/min, kabs 0.173 1/min, … (+2).
+A reported unit could not be converted (MTT), so that value has no SI equivalent. Extracted — donepezil: tlag 4.06 min, D1 11.3 min, MTT 56 min, ktr 0.171 1/min, V1 0.021 L, V2 0.005 L, k12 0.543 1/min, kabs 0.173 1/min, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of b2: this record has 0.043, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

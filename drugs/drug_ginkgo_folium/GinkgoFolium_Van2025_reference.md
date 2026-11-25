@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because the source paper does not study ginkgo folium, making the extracted clearance of 3.26 L/h invalid.
+> paper_subject_is_other_drug; t0_analyte_identity.
 
 <div class="pk-model-meta" hidden drug="Ginkgo folium" model-id="GinkgoFolium_Van2025_reference" status="rejected" stale="false" population="" measured-compound="ginkgo_folium" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Van Wart SA, Trang M, Safir MC, Santulli AR, Rubino CM, Bhavnani SM. Population 
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper does not study ginkgo folium, making the extracted clearance of 3.26 L/h invalid.**
+**paper_subject_is_other_drug; t0_analyte_identity.**
 
-The relevance screen confirmed the paper does not name ginkgo folium, so the extracted parameters for this compound are inapplicable. Specifically, the record lists a clearance of 3.26 L/h and a central volume of 10.4 L for the wrong molecule. A second reader also disagreed with the record's value for the elimination rate constant, reporting null instead of 0.0488 h^-1. Extracted — ginkgo folium: CL 3.26 L/h, V1 10.4 L, V2 10.4 L, Q 0.518 L/h.
+Extracted — ginkgo folium: CL 3.26 L/h, V1 10.4 L, V2 10.4 L, Q 0.518 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 3.26, the second reading none; it also differs on 5 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -133,7 +133,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | pass |  | verdict partial, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | a second reader did not contradict the extraction |
+| X1_cross_check | pass |  | verdict partial; agreement 0.625 (10 of 16 compared fields agree, 6 extracted by one reader only); 1 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.625 | a second reader did not contradict the extraction |
 
 <details class="legend">
 <summary>Validation definitions</summary>

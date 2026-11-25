@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The T4 metabolic clearance rate of 1.02 liters/day has incorrect dimensions for a rate constant, causing a dimension mismatch rejection.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q51 unit liters/day ([length] ** 3 / [time]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="Levothyroxine" model-id="Levothyroxine_Geola1981_after_therapy_a" status="rejected" stale="false" population="53-year-old male with hypothyroidism" measured-compound="thyroxine" parameterization="mechanistic" topology="1C"></div>
 
@@ -49,13 +49,13 @@ Geola FL, Hershman JM, Reed AW, Premachandra BN. Circulating thyroid hormone aut
 
 ### Reviewer guidance
 
-**The T4 metabolic clearance rate of 1.02 liters/day has incorrect dimensions for a rate constant, causing a dimension mismatch rejection.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q51 unit liters/day ([length] ** 3 / [time]) vs 1 / [time].**
 
-The parameter is defined as a metabolite elimination rate constant, which requires reciprocal time units. The recorded value of 1.02 liters/day includes a volume dimension that conflicts with the required rate dimension. This unit conflict triggered the structural parameter dimension check failure. Extracted — levothyroxine: kmet 1.02 liters/day, CL 24.1 mL/min/kg, V 47 liter.
+A reported unit could not be converted (kmet), so that value has no SI equivalent. Extracted — levothyroxine: kmet 1.02 liters/day, CL 24.1 mL/min/kg, V 47 liter.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has levothyroxine, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

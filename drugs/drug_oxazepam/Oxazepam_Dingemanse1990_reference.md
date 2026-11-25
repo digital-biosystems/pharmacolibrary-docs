@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record was rejected because the volume of distribution unit, kg-1, conflicts with the expected volumetric dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit kg-1 (dimensionless) vs [length] ** 3.
 
-<div class="pk-model-meta" hidden drug="oxazepam" model-id="Oxazepam_Dingemanse1990_reference" status="rejected" stale="false" population="rats" measured-compound="oxazepam" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="oxazepam" model-id="Oxazepam_Dingemanse1990_reference" status="rejected" stale="false" population="individual rats" measured-compound="oxazepam" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Dingemanse J, Voskuyl RA, Langemeijer MW, Postel-Westra I, Breimer DD, Meinardi H et al. Pharmacokinetic-pharmacodynamic modelling of the anticonvulsant effect of oxazepam in individual rats. British journal of pharmacology 99(1):53–58 (1990).
@@ -49,13 +49,13 @@ Dingemanse J, Voskuyl RA, Langemeijer MW, Postel-Westra I, Breimer DD, Meinardi 
 
 ### Reviewer guidance
 
-**The record was rejected because the volume of distribution unit, kg-1, conflicts with the expected volumetric dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q61 unit kg-1 (dimensionless) vs [length] ** 3.**
 
-The extracted volume of distribution for oxazepam is 2.6 kg-1, which is dimensionless rather than volumetric. This unit conflict caused a dimensional check on the structural parameter to fail. The record was built from the abstract alone, so the reported statistics stand in for a fitted model. Extracted — oxazepam: CL 28 L/h, V 2.6 kg-1, Cmin 0.11 mg l-1.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — oxazepam: CL 28 L/h, V 2.6 kg-1, Cmin 0.11 mg l-1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has oxazepam, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -153,4 +153,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Boxazepam%5D%20Oxazepam_Dingemanse1990_reference&body=Drug%3A%20oxazepam%0ARecord%3A%20Oxazepam_Dingemanse1990_reference%0APaper%3A%20Dingemanse_1990%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_oxazepam/Oxazepam_Dingemanse1990_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 19:56 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:50 UTC</sub>

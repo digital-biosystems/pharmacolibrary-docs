@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span>
 
-> The record was held back because a second reader could not verify the escitalopram clearance, volume, and absorption parameters.
+> Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).
 
-<div class="pk-model-meta" hidden drug="escitalopram" model-id="Escitalopram_Poweleit2023_reference" status="needs_review" stale="false" population="psychiatrically hospitalized pediatric patients aged 5-18 years" measured-compound="escitalopram" parameterization="apparent" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="escitalopram" model-id="Escitalopram_Poweleit2023_reference" status="needs_review" stale="false" population="psychiatrically hospitalized pediatric patients" measured-compound="escitalopram" parameterization="apparent" topology="1C"></div>
 
 ## Citation
 Poweleit EA, Taylor ZL, Mizuno T, Vaughn SE, Desta Z, Strawn JR et al. Escitalopram and Sertraline Population Pharmacokinetic Analysis in Pediatric Patients. Clinical pharmacokinetics 62(11):1621–1637 (2023).
@@ -17,13 +17,13 @@ Poweleit EA, Taylor ZL, Mizuno T, Vaughn SE, Desta Z, Strawn JR et al. Escitalop
 
 ## Population and dosing
 
-**Population:** psychiatrically hospitalized pediatric patients aged 5-18 years · condition anxiety and depressive disorders · age group mixed · n = 288.
+**Population:** psychiatrically hospitalized pediatric patients · condition anxiety and depressive disorders · age group mixed · n = 288.
 
 ## Model
 
 **Structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).  
-**Parameters:** 3 extracted.  
+**Parameters:** 2 extracted.  
 **Availability:** Model and browser simulation available in **Models** and **Simulation**.
 
 <figure class="pk-models-diagram"><img src="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference.svg" alt="Escitalopram_Poweleit2023_reference diagram"><figcaption>Modelica diagram · Pharmacolibrary · OpenModelica.</figcaption></figure>
@@ -33,9 +33,8 @@ Poweleit EA, Taylor ZL, Mizuno T, Vaughn SE, Desta Z, Strawn JR et al. Escitalop
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| CL/F (escitalopram) | CL/F | 14.2 | L/h |
-| V/F (escitalopram) | V/F | 428 | L |
-| absorption rate constant | kabs | 1.48 | h -1 |
+| The final escitalopram model estimated CL/F | CL/F | 14.2 | L/h/1.73 m2 |
+| The final escitalopram model estimated V/F | V/F | 428 | L/1.73 m2 |
 
 ## Caveats
 
@@ -43,7 +42,7 @@ Poweleit EA, Taylor ZL, Mizuno T, Vaughn SE, Desta Z, Strawn JR et al. Escitalop
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.1). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.222). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,21 +52,20 @@ Poweleit EA, Taylor ZL, Mizuno T, Vaughn SE, Desta Z, Strawn JR et al. Escitalop
 
 ### Reviewer guidance
 
-**The record was held back because a second reader could not verify the escitalopram clearance, volume, and absorption parameters.**
+**Ka use library defaults, not estimates from this paper; the covariate scenarios were not simulated (+2 more).**
 
-The study only reported abstract summary statistics, so no individual-level data supported the fitted parameter values of 14.2 L/h for clearance and 428 L for volume of distribution. A second independent review failed to locate these specific parameter values, disagreeing with the record's entries for clearance, volume, and the absorption rate constant of 1.48 h^-1. Consequently, the model was marked as needing review due to this lack of agreement on the core pharmacokinetic parameters. Extracted — escitalopram: CL/F 14.2 L/h, V/F 428 L, kabs 1.48 h -1.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — escitalopram: CL/F 14.2 L/h/1.73 m2, V/F 428 L/1.73 m2.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has escitalopram, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has escitalopram, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| CL/F (escitalopram) | `Q27` · CL/F | 14.2 | L/h | 3.944e-06 | m3/s | L/h | exact (1) | Poweleit_2023:abstract |
-| V/F (escitalopram) | `Q76` · V/F | 428 | L | 0.428 | m3 | L | exact (1) | Poweleit_2023:abstract |
-| absorption rate constant | `Q49` · kabs | 1.48 | h -1 | 0.0004111 | 1/s | 1/h | review_gapfill (0.7) | Friberg_2006:review |
+| The final escitalopram model estimated CL/F | `Q27` · CL/F | 14.2 | L/h/1.73 m2 | 6.824e-06 | m3/s | l/(h·1.73m2) | llm_confirmed (0.6) | Poweleit_2023:abstract |
+| The final escitalopram model estimated V/F | `Q76` · V/F | 428 | L/1.73 m2 | 0.7404 | m3 | l/1.73m2 | llm_confirmed (0.6) | Poweleit_2023:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,57 +75,38 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Deviations:**
-- `defaulted_parameters`: ['Tlag']
+- `defaulted_parameters`: ['ka', 'Tlag']
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+- `invented_absorption`: ka defaulted — not reported in source
+- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'L/h/1.73 m2' (CL/F)
-- unit_dimension_unknown: 'L/1.73 m2' (V/F)
-- dropped duplicate Q27 ('CL/F (sertraline)', value 124) — already have one for this compound
-- dropped duplicate Q76 ('V/F (sertraline)', value 4320) — already have one for this compound
+- dropped duplicate Q27 ('The final sertraline model estimated CL/F', value 124) — already have one for this compound
+- dropped duplicate Q76 ('The final sertraline model estimated V/F', value 4320) — already have one for this compound
 - covariate cyp2c19 for Ctrough from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
-- covariate normal metabolizer for Ctrough from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
-- covariate normal metabolizer for AUC ratio from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
-- dropped value-less row: 'p (escitalopram)' (captured trailing unit 'escitalopram' for child rows)
-- covariate ultrarapid metabolizer for Ctrough from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
-- covariate ultrarapid metabolizer for AUC ratio from footnote/prose kept as documentation only (['Poweleit_2023:abstract'])
-- dropped value-less row: 'p (sertraline)' (captured trailing unit 'sertraline' for child rows)
-- dropped value-less row: 'dose reduction (escitalopram, poor metabolizers)'
-- dropped value-less row: 'dose reduction (sertraline, poor metabolizers)'
-- dropped unlinked row (NIL): 'escitalopram cohort samples' — extend the ontology if this is a real PK parameter (source ['Poweleit_2023:abstract'])
-- dropped unlinked row (NIL): 'escitalopram cohort patients' — extend the ontology if this is a real PK parameter (source ['Poweleit_2023:abstract'])
-- dropped unlinked row (NIL): 'sertraline cohort samples' — extend the ontology if this is a real PK parameter (source ['Poweleit_2023:abstract'])
-- dropped unlinked row (NIL): 'sertraline cohort patients' — extend the ontology if this is a real PK parameter (source ['Poweleit_2023:abstract'])
-- implicit units: 'CL/F (escitalopram)' → L/h (from the popPK convention: 'No unit stated in text or footnotes; CL/F conventionally in L/h, and 14.2 L/h is plausible for oral escitalopram clearan')
-- implicit units: 'V/F (escitalopram)' → L (from the popPK convention: 'No unit stated; V/F conventionally in L, and 428 L is a plausible apparent volume for escitalopram.')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=escitalopram
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Friberg_2006's review values (primary lacked it)
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Poweleit_2023_metadata.yaml (18 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Poweleit_2023_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.1 (1/10 fields) | 9 |
+| `gpt-oss-120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>9 field discrepancies</summary>
+<details><summary>7 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
-| `gpt-oss-120b` | `parameters[absorption rate constant]` | 1.48 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl/f]` | 14.2 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl/f]` |  | 14.2 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[escitalopram samples]` |  | 315 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v/f]` | 428 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ctrough]` |  | 151.1 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the final escitalopram model estimated cl/f]` | 14.2 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[the final escitalopram model estimated v/f]` | 428 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v/f]` |  | 428 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | escitalopram | unknown | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | escitalopram | unknown | mismatch |
@@ -148,12 +127,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] |  | ['Poweleit_2023:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Friberg_2006:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 |  | ['Poweleit_2023:abstract'] |
 | C7_apparent_coherence | pass |  |  |  |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 14.2 L/h | ['Poweleit_2023:abstract'] |
-| C9_phys_window_Q76 | pass | volume within physiological range | 428 L | ['Poweleit_2023:abstract'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 24.6 L/h | ['Poweleit_2023:abstract'] |
+| C9_phys_window_Q76 | pass | volume within physiological range | 740 L | ['Poweleit_2023:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -163,10 +141,10 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T0_analyte_identity |  | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
 | T3_apparent_invariant |  | pass |  | F=Fm=1, no molar correction |  | apparent params must not be double-corrected |
 | T3_output_variable |  | pass | C_central (measured=escitalopram) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage |  | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
+| T3_param_coverage |  | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations |  | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check |  | fail | second reader agrees | verdict disputed, agreement 0.1, 0 of 1 reader(s) agree | 0.1 | cross-check disputed by a second reader: verdict disputed, agreement 0.1, 0 of 1 reader(s) agree |
+| T6_deviations |  | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
+| X1_cross_check |  | fail | no second reader contradicts | verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.222 | cross-check contradicted by a second reader: verdict disputed; agreement 0.222 (2 of 9 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -182,12 +160,12 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference_modelica.zip" download>Escitalopram_Poweleit2023_reference_modelica.zip</a> <span class="pk-size">(4.9 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference_fmi.zip" download>Escitalopram_Poweleit2023_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference_matlab.zip" download>Escitalopram_Poweleit2023_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference_matlab_simbio.zip" download>Escitalopram_Poweleit2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference_sbml.zip" download>Escitalopram_Poweleit2023_reference_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference_cellml.zip" download>Escitalopram_Poweleit2023_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference_modelica.zip" download>Escitalopram_Poweleit2023_reference_modelica.zip</a> <span class="pk-size">(4.6 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference_fmi.zip" download>Escitalopram_Poweleit2023_reference_fmi.zip</a> <span class="pk-size">(4.4 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference_matlab.zip" download>Escitalopram_Poweleit2023_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference_matlab_simbio.zip" download>Escitalopram_Poweleit2023_reference_matlab_simbio.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference_sbml.zip" download>Escitalopram_Poweleit2023_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference_cellml.zip" download>Escitalopram_Poweleit2023_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Archives contain model source, a simulation script, and execution instructions.</p>
 <p><b>FMI requires two downloads:</b> the record-specific parameters/driver archive and the shared <code>PK_1C_enteral.fmu</code>. Place the FMU beside the script or specify <code>--fmu PATH</code>.</p>
@@ -205,9 +183,9 @@ The parameters this record sets on the template, in the template's SI units, and
 | input | dosing | `adminCount` | 1 | 1 |
 | input | dosing | `adminDuration` | 600 | s |
 | input | dosing | `adminMass` | 1e-05 | kg |
-| input | model | `Cl` | 3.944e-06 | m3/s |
-| input | model | `VdPerKg` | 0.006114 | m3/kg |
-| input | model | `ka` | 0.0004111 | 1/s |
+| input | model | `Cl` | 6.824e-06 | m3/s |
+| input | model | `VdPerKg` | 0.01058 | m3/kg |
+| input | model | `ka` | 0.0001389 | 1/s |
 | input | subject | `weight` | 70 | kg |
 | output | concentration | `central.C` |  | kg/m3 |
 
@@ -236,7 +214,7 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 10 mg, single dose, first-order absorption (ka 1.48 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 10 mg oral (N06AB10) (defined daily dose)._
+**Administration: oral** — 10 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 10 mg oral (N06AB10) (defined daily dose)._
 
 <dbs-fmusim paramsurl="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference/Escitalopram_Poweleit2023_reference_sim_controls.json"></dbs-fmusim>
 
@@ -246,4 +224,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bescitalopram%5D%20Escitalopram_Poweleit2023_reference&body=Drug%3A%20escitalopram%0ARecord%3A%20Escitalopram_Poweleit2023_reference%0APaper%3A%20Poweleit_2023%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_escitalopram/Escitalopram_Poweleit2023_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 22:57 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 21:55 UTC</sub>

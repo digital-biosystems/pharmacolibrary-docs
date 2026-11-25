@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">mouse</span>
 
-> The record was rejected because Parkinson_2013 does not study tafamidis, and the clearance and volume values likely belong to a different drug.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="tafamidis" model-id="Tafamidis_Parkinson2013_reference" status="rejected" stale="false" population="" measured-compound="tafamidis" parameterization="mechanistic" topology="2C"></div>
 
@@ -53,13 +53,13 @@ Parkinson J, Ploeger B, Appelkvist P, Bogstedt A, Dillner Bergstedt K, Eketjäll
 
 ### Reviewer guidance
 
-**The record was rejected because Parkinson_2013 does not study tafamidis, and the clearance and volume values likely belong to a different drug.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The source paper, Parkinson_2013, is not about tafamidis, as neither the title nor abstract names the compound. Consequently, the extracted pharmacokinetic parameters, including a clearance of 0.12 l/h/kg and volume of 7.6751 L, are not applicable to this molecule. A second reader also disputed the record, noting disagreements on multiple numerical values and confirming the mismatch between the drug and the source data. Extracted — tafamidis: CL 0.12 l/h/kg, V 7.68 L, V2 0.28 l/kg, Q 7.6 l/h/kg, kabs 0.41 1/h.
+Extracted — tafamidis: CL 0.12 l/h/kg, V 7.68 L, V2 0.28 l/kg, Q 7.6 l/h/kg, kabs 0.41 1/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q316: this record has none, the second reading 8; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,7 +147,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 5 scholar param(s) emitted or defaulted | 5 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.455, 0 of 1 reader(s) agree | 0.455 | cross-check disputed by a second reader: verdict disputed, agreement 0.455, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.455 (10 of 22 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.455 | cross-check contradicted by a second reader: verdict disputed; agreement 0.455 (10 of 22 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

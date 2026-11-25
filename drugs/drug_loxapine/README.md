@@ -22,7 +22,8 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Biton_2012_Slack_Slo2_2_channel_activation](drugs/drug_loxapine/pd_Biton_2012_Slack_Slo2_2_channel_activation.md) | Slack (Slo2.2) channel activation ← loxapine · direct Emax (saturable) effect | — | Biton B et al., The antipsychotic drug loxapine is an o…, The Journal of pharmacology… (2012) | [10.1124/jpet.111.184622](https://doi.org/10.1124/jpet.111.184622) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Biton_2012_Rb_efflux](drugs/drug_loxapine/pd_Biton_2012_Rb_efflux.md) | rubidium efflux ← loxapine · direct Emax (saturable) effect | — | Biton B et al., The antipsychotic drug loxapine is an o…, The Journal of pharmacology… (2012) | [10.1124/jpet.111.184622](https://doi.org/10.1124/jpet.111.184622) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Biton_2012_channel_conductance](drugs/drug_loxapine/pd_Biton_2012_channel_conductance.md) | channel conductance ← loxapine · direct Emax (saturable) effect | — | Biton B et al., The antipsychotic drug loxapine is an o…, The Journal of pharmacology… (2012) | [10.1124/jpet.111.184622](https://doi.org/10.1124/jpet.111.184622) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -36,7 +37,7 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 16:50 | 0:30 | 0/0/0 | 1/0/0 | 0/0/0 | 32,013/905 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-11-24 00:45 | 2:22 | 0/0/0 | 2/0/0 | 0/0/0 | 3,938/176 | einfracz / qwen3.8-27b | 1 | 0/1 | 1/0 | 0 |
 
 ## Coverage
 
@@ -47,25 +48,29 @@ _not available_
 
 ## Full-text requests
 
-_2 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Dong_2017.pdf` | Dong M et al., Clinical Trial Simulations and Pharmaco…, Clinical pharmacokinetics (2017) | popPK | 8 | [10.1007/s40262-017-0512-x](https://doi.org/10.1007/s40262-017-0512-x) | [28205038](https://pubmed.ncbi.nlm.nih.gov/28205038) | A population PK model of inhaled loxapine (allometric scaling, trial simulation) is described, but no numeric parameter values (CL, V, ka) appear in the provided evidence, likely residing in tables/figures not included. |
-| `Wong_2013.pdf` | Wong YC et al., Brain disposition and catalepsy after i…, Pharmaceutical research (2013) | popPK | 7 | [10.1007/s11095-013-1080-x](https://doi.org/10.1007/s11095-013-1080-x) | [23739987](https://pubmed.ncbi.nlm.nih.gov/23739987) | Rat PK/PD study of loxapine with quantitative measures (tmax ≤15 min, brain AUC0-240min), but full disposition parameters (CL, V) are not shown and may live in figures/tables not provided. |
+| `Wong_2013.pdf` | Wong YC et al., Brain disposition and catalepsy after i…, Pharmaceutical research (2013) | popPK | 10 | [10.1007/s11095-013-1080-x](https://doi.org/10.1007/s11095-013-1080-x) | [23739987](https://pubmed.ncbi.nlm.nih.gov/23739987) | This is a PK/PD study on loxapine in rats, but the evidence text only provides qualitative descriptions of absorption and PD; specific quantitative parameter values (CL, V, ka, etc.) are not explicitly listed in the provided snippet. |
 
-<sub>queue written 2026-10-06 16:50 UTC</sub>
+<sub>queue written 2026-11-24 00:42 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Biton_2012 | irrelevant | 0 | 0 | In-vitro electrophysiology/pharmacology study of loxapine as a channel opener; no PK disposition parameters reported. |
-| popPK | Dong_2017 | relevant | 8 | 3 | A population PK model of inhaled loxapine (allometric scaling, trial simulation) is described, but no numeric parameter values (CL, V, ka) appear in the provided evidence, likely residing in tables/figures not included. |
-| popPK | Glusa_2000 | irrelevant | 0 | 0 | Loxapine appears only as an antagonist in an in vitro vascular pharmacology study; no PK parameters for loxapine are reported. |
+| popPK | Biton_2012 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic pharmacology investigation of loxapine's effect on potassium channels, reporting EC50 values for channel activation rather than pharmacokinetic parameters (CL, V, T1/2). |
+| PGx | Biton_2012 | not_relevant | 0 | 0 | The paper describes the pharmacological mechanism of loxapine as a Slack channel opener but does not report any pharmacogenomic effect of gene variants on loxapine's PK or PD parameters. |
+| popPK | Dong_2017 | relevant | 9 | 0 | The paper describes a population PK model for loxapine, but the specific numeric parameter values are not present in the provided evidence text. |
+| PGx | Dong_2017 | not_relevant | 0 | 0 | The paper focuses on population pharmacokinetic modeling and allometric scaling for pediatric dosing, with no mention of gene variants or pharmacogenomic effects. |
+| popPK | Glusa_2000 | irrelevant | 0 | 0 | The paper is an in vitro pharmacological study characterizing 5-HT receptors, and loxapine is used only as a non-selective antagonist probe, not as a subject for PK analysis. |
+| PGx | Glusa_2000 | not_relevant | 0 | 0 | The paper characterizes 5-HT2B receptor pharmacology in pig pulmonary artery and lists loxapine only as one of many antagonists used for receptor subtype identification, without reporting any pharmacogenomic effects on its PK or PD. |
 | popPK | Hsu_2021 | irrelevant | 0 | 0 | This is an in-vitro antibacterial study of loxapine derivatives against Salmonella in macrophage cell culture; no PK parameters for loxapine are reported. |
-| popPK | Liu_2003 | irrelevant | 0 | 0 | In-vitro pharmacology study of loxapine as a 5-HT receptor antagonist in rat jejunum; no PK parameters reported. |
-| popPK | Wong_2013 | relevant | 7 | 4 | Rat PK/PD study of loxapine with quantitative measures (tmax ≤15 min, brain AUC0-240min), but full disposition parameters (CL, V) are not shown and may live in figures/tables not provided. |
+| popPK | Liu_2003 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of receptor interactions in rat jejunum, not a pharmacokinetic study, and loxapine is used only as a test compound rather than the subject of PK modeling. |
+| PGx | Liu_2003 | not_relevant | 0 | 0 | The study investigates pharmacological effects of loxapine on rat intestinal tissue in vitro and contains no genetic data, genotypes, or pharmacogenomic analysis. |
+| popPK | Wong_2013 | relevant | 10 | 1 | This is a PK/PD study on loxapine in rats, but the evidence text only provides qualitative descriptions of absorption and PD; specific quantitative parameter values (CL, V, ka, etc.) are not explicitly listed in the provided snippet. |
+| PGx | Wong_2013 | not_relevant | 0 | 0 | The study investigates the route of administration and metabolic contributions to PD in rats, but does not report any effect of genetic variants on loxapine's PK or PD parameters. |
 
 
 </details>

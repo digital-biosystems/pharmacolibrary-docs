@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Rejected due to unit mismatch for cefazolin AUC/dose and inconsistent parameter values including clearance.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit h∙L−1 ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="cefazolin" model-id="Cefazolin_Wassef2026_dosage" status="rejected" stale="false" population="adults undergoing abdominal surgery (obese and non-obese)" measured-compound="cefazolin" parameterization="mechanistic" topology="1C"></div>
 
@@ -53,13 +53,13 @@ Wassef A, Kosicka-Noworzyń K, Back H, Siemiątkowska A, Yohn C, Sadek R et al. 
 
 ### Reviewer guidance
 
-**Rejected due to unit mismatch for cefazolin AUC/dose and inconsistent parameter values including clearance.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q189 unit h∙L−1 ([time] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The unit h∙g∙L−1 for cefazolin AUC∞ creates a dimension conflict, expecting mass-based concentration. Multiple pharmacokinetic parameters show significant discrepancies between the record and a second reader. Specifically, cefazolin clearance (CL) is recorded as 3.2 L∙h⁻¹ but was not confirmed by the second reader. Extracted — cefazolin: AUC∞ 0.72 h∙g∙L−1, AUC/dose 0.36 h∙L−1, AUCt 0.46 h∙g∙L−1, CL 3.2 L∙h⁻¹, t1/2z 2.66 h, Vss 10.3 L, V 11.1 L.
+A reported unit could not be converted (AUC∞, AUC/dose and AUCt), so that value has no SI equivalent. Extracted — cefazolin: AUC∞ 0.72 h∙g∙L−1, AUC/dose 0.36 h∙L−1, AUCt 0.46 h∙g∙L−1, CL 3.2 L∙h⁻¹, t1/2z 2.66 h, Vss 10.3 L, V 11.1 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[auc0-inf].value`: this record has 0.72, the second reading 0.83; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

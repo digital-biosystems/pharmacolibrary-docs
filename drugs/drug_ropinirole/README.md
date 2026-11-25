@@ -23,13 +23,9 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span> | [Huang_2019_RO](drugs/drug_ropinirole/pd_Huang_2019_RO.md) | dopamine D2/3 receptor occupancy ← ropinirole · direct Emax (saturable) effect | — | Huang C et al., Predicting the dopamine D, Xenobiotica; the fate of fo… (2019) | [10.1080/00498254.2018.1428383](https://doi.org/10.1080/00498254.2018.1428383) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhang_2019_CGI_I](drugs/drug_ropinirole/pd_Zhang_2019_CGI_I.md) | Clinical Global Impression Improvement scale response rate ← ropinirole · direct Emax (saturable) effect | — | Zhang N et al., Quantitative Comparison of the Efficaci…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1426](https://doi.org/10.1002/jcph.1426) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhang_2019_IRLS](drugs/drug_ropinirole/pd_Zhang_2019_IRLS.md) | Mean change in International Restless Leg Syndrome Study Group rating scale score ← ropinirole · direct Emax (saturable) effect | — | Zhang N et al., Quantitative Comparison of the Efficaci…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1426](https://doi.org/10.1002/jcph.1426) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Gardner_1998_35S_GTPgammaS_binding](drugs/drug_ropinirole/pd_Gardner_1998_35S_GTPgammaS_binding.md) | stimulation of [35S]-GTPgammaS binding ← ropinirole · direct Emax (saturable) effect | — | Gardner B et al., Agonist action at D2(long) dopamine rec…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0701926](https://doi.org/10.1038/sj.bjp.0701926) |
-| <span class="pk-badge pk-badge--red">Rejected</span> | [Liu_2019_PRL](drugs/drug_ropinirole/pd_Liu_2019_PRL.md) | prolactin ← ropinirole · indirect response — drug inhibits the production of prolactin | — | Liu S et al., Pharmacokinetics and pharmacodynamics o…, British journal of clinical… (2019) | [10.1111/bcp.13802](https://doi.org/10.1111/bcp.13802) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Newman-Tancredi_1997_35S_GTPgammaS_binding](drugs/drug_ropinirole/pd_Newman_Tancredi_1997_35S_GTPgammaS_binding.md) | [35S]GTPgammaS binding stimulation at human recombinant dopamine D4.4 receptors ← ropinirole · direct Emax (saturable) effect | — | Newman-Tancredi A et al., [35S]Guanosine-5'-O-(3-thio)triphosphat…, The Journal of pharmacology… (1997) | — |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Parvez_2010_mtPTP](drugs/drug_ropinirole/pd_Parvez_2010_mtPTP.md) | Ca2+-triggered permeability transition pore opening (mitoplast patch-clamp) ← ropinirole · direct sigmoid Emax (Hill) effect | — | Parvez S et al., The dopamine-D2-receptor agonist ropini…, Biochimica et biophysica ac… (2010) | [10.1016/j.bbabio.2010.02.001](https://doi.org/10.1016/j.bbabio.2010.02.001) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Simkó_2010_IKr](drugs/drug_ropinirole/pd_Simk_2010_IKr.md) | rapid delayed rectifier K+ current (IKr) suppression ← ropinirole · direct sigmoid Emax (Hill) effect | — | Simkó J et al., Effects of ropinirole on action potenti…, Naunyn-Schmiedeberg's archi… (2010) | [10.1007/s00210-010-0538-1](https://doi.org/10.1007/s00210-010-0538-1) |
+| <span class="pk-badge pk-badge--red">Rejected</span> | [Liu_2019_prolactin](drugs/drug_ropinirole/pd_Liu_2019_prolactin.md) | prolactin ← ropinirole · indirect response — drug inhibits the production of prolactin | — | Liu S et al., Pharmacokinetics and pharmacodynamics o…, British journal of clinical… (2019) | [10.1111/bcp.13802](https://doi.org/10.1111/bcp.13802) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Parvez_2010_mtPTP](drugs/drug_ropinirole/pd_Parvez_2010_mtPTP.md) | opening of mtPTP ← ropinirole · direct sigmoid Emax (Hill) effect | — | Parvez S et al., The dopamine-D2-receptor agonist ropini…, Biochimica et biophysica ac… (2010) | [10.1016/j.bbabio.2010.02.001](https://doi.org/10.1016/j.bbabio.2010.02.001) |
+| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">dog</span> | [Simkó_2010_I_Kr](drugs/drug_ropinirole/pd_Simk_2010_I_Kr.md) | rapid delayed rectifier K(+) current (I (Kr)) ← ropinirole · direct sigmoid Emax (Hill) effect | — | Simkó J et al., Effects of ropinirole on action potenti…, Naunyn-Schmiedeberg's archi… (2010) | [10.1007/s00210-010-0538-1](https://doi.org/10.1007/s00210-010-0538-1) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -43,47 +39,46 @@ _not available_
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-06 14:21 | 0:48 | 0/0/0 | 3/5/0 | 0/0/0 | 51,025/4,064 | ollama / glm-5.3-flash | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-24 04:24 | 0:04 | 0/0/0 | 1/3/0 | 0/0/0 | 3,953/156 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
 - **PubMed hits:** 17 matched, 17 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
-
-## Full-text requests
-
-_4 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
-
-| save as | citation | domain | score | DOI | PubMed | why wanted |
-|---|---|---|---|---|---|---|
-| `Liu_2019.pdf` | Liu S et al., Pharmacokinetics and pharmacodynamics o…, British journal of clinical… (2019) | popPK | 8 | [10.1111/bcp.13802](https://doi.org/10.1111/bcp.13802) | [30362146](https://pubmed.ncbi.nlm.nih.gov/30362146) | Human PKPD study of ropinirole with one-compartment model; only tmax and half-life values appear in evidence, while model parameters (CL, V, ka) are not shown and likely live in tables/supplementary material not provided. |
-| `Huang_2019.pdf` | Huang C et al., Predicting the dopamine D, Xenobiotica; the fate of fo… (2019) | popPK | 6 | [10.1080/00498254.2018.1428383](https://doi.org/10.1080/00498254.2018.1428383) | [29334326](https://pubmed.ncbi.nlm.nih.gov/29334326) | PK-PD modeling of ropinirole in rats, but only EC50 (1391 ng/mL) appears; disposition parameters (CL/V) are not shown and likely reside in figures/tables not provided. |
-| `Kaye_2000.pdf` | Kaye CM et al., Clinical pharmacokinetics of ropinirole, Clinical pharmacokinetics (2000) | popPK | 6 | [10.2165/00003088-200039040-00001](https://doi.org/10.2165/00003088-200039040-00001) | [11069211](https://pubmed.ncbi.nlm.nih.gov/11069211) | Review of ropinirole clinical PK with some numeric values (bioavailability ~50%, half-life ~6h) but no CL/V/compartmental parameters, which may be in cited studies. |
-| `Saitani_2026.pdf` | Saitani EM et al., Pharmacokinetic evaluation of intranasa…, International journal of ph… (2026) | popPK | 6 | [10.1016/j.ijpharm.2026.126855](https://doi.org/10.1016/j.ijpharm.2026.126855) | [41974362](https://pubmed.ncbi.nlm.nih.gov/41974362) | PK study of ropinirole in mice with NCA parameters, but only relative bioavailability values appear in the abstract; AUC/Cmax/CL values likely in tables/figures not provided. |
-
-<sub>queue written 2026-10-06 14:20 UTC</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Adamiak-Giera_2021 | irrelevant | 2 | 3 | The PK parameters (CL/F, V/F, ka, AUC) reported are for levodopa and its metabolite 3-OMD, not for ropinirole, which is only a co-administered drug whose own PK parameters are not quantified here. |
-| popPK | Elmabruk_2019 | irrelevant | 0 | 0 | Ropinirole is only a reference comparator in a pharmacology study of new dopamine agonists; no PK parameters for ropinirole are reported. |
-| popPK | Gardner_1998 | irrelevant | 0 | 0 | In vitro receptor binding/functional assay in CHO cells; ropinirole is only a test ligand, no PK parameters. |
-| popPK | Ghosh_2010 | irrelevant | 0 | 0 | This is a receptor binding/SAR study where ropinirole is only a reference comparator; no PK parameters are reported. |
-| popPK | Huang_2019 | relevant | 6 | 3 | PK-PD modeling of ropinirole in rats, but only EC50 (1391 ng/mL) appears; disposition parameters (CL/V) are not shown and likely reside in figures/tables not provided. |
+| popPK | Elmabruk_2019 | irrelevant | 0 | 0 | The paper is a medicinal chemistry/pharmacology study on novel carbazole compounds, using ropinirole only as a reference drug in behavioral assays, with no pharmacokinetic data reported. |
+| PGx | Elmabruk_2019 | not_relevant | 0 | 0 | The paper reports the design and pharmacological characterization of novel carbazole-based compounds, not a pharmacogenomic effect on ropinirole. |
+| popPK | Gardner_1998 | irrelevant | 0 | 0 | The study is an in vitro mechanistic investigation of receptor binding and signaling, not a pharmacokinetic study of ropinirole. |
+| PGx | Gardner_1998 | not_relevant | 0 | 0 | The paper discusses receptor binding and functional assays for ropinirole but does not investigate pharmacogenomic effects of gene variants on PK/PD parameters. |
+| popPK | Ghosh_2010 | irrelevant | 0 | 0 | The paper is a structure-activity relationship study focusing on receptor binding affinity, with ropinirole serving only as a reference drug for selectivity, not a subject of pharmacokinetic analysis. |
+| PGx | Ghosh_2010 | not_relevant | 0 | 0 | The paper describes a structure-activity relationship study of new dopamine receptor agonists and mentions ropinirole only as a reference compound for receptor selectivity; it does not report any pharmacogenomic effects (gene variants) on pharmacokinetic or pharmacodynamic parameters of ropinirole. |
+| popPK | Huang_2019 | relevant | 4 | 0 | The study involves ropinirole PK-PD modeling in rats, but the evidence only reports an EC50 value and methodological details, without providing explicit numerical disposition parameters (CL, V, t1/2) or readable compartmental model estimates. |
+| PGx | Huang_2019 | not_relevant | 0 | 0 | The study is a preclinical PK/PD modeling in rats and does not report any pharmacogenomic effects (gene variant/genotype) on drug parameters. |
 | popPK | Kaikousidis_2024 | relevant | 8 | 3 | A population-PK model of ropinirole (double absorption, Cl, V, ka, transit parameters) was developed in 30 healthy volunteers, but the actual numeric parameter estimates are in supplementary Tables S2/S3, which are not provided in the evidence. |
-| popPK | Kaye_2000 | relevant | 6 | 3 | Review of ropinirole clinical PK with some numeric values (bioavailability ~50%, half-life ~6h) but no CL/V/compartmental parameters, which may be in cited studies. |
-| popPK | Li_2016 | irrelevant | 4 | 5 | Bioequivalence study reporting only NCA exposure parameters (Cmax, AUC, tmax, MRT) in beagle dogs, with no clearance, volume, or compartmental/population-PK model parameters. |
-| popPK | Liu_2019 | relevant | 8 | 4 | Human PKPD study of ropinirole with one-compartment model; only tmax and half-life values appear in evidence, while model parameters (CL, V, ka) are not shown and likely live in tables/supplementary material not provided. |
-| popPK | Newman-Tancredi_1997 | irrelevant | 0 | 0 | In vitro receptor pharmacology study (GTPγS binding in CHO cells); ropinirole is only a test ligand with EC50/Emax, no PK disposition parameters. |
-| popPK | Parvez_2010 | irrelevant | 0 | 0 | In-vitro mechanistic study of mitochondrial permeability transition with no PK disposition parameters for ropinirole. |
-| popPK | Saitani_2026 | relevant | 6 | 4 | PK study of ropinirole in mice with NCA parameters, but only relative bioavailability values appear in the abstract; AUC/Cmax/CL values likely in tables/figures not provided. |
-| popPK | Simkó_2010 | irrelevant | 1 | 3 | This is an in-vitro electrophysiology study of ion channel blockade in canine myocytes, not a PK study reporting disposition parameters (CL, V, ka, half-life, or PK model) for ropinirole. |
-| popPK | Tadori_2014 | irrelevant | 1 | 1 | A review of therapeutic plasma concentrations vs receptor pharmacology, not a PK study reporting disposition parameters for ropinirole. |
-| popPK | Zhang_2019 | irrelevant | 0 | 0 | This is a pharmacodynamic (efficacy) meta-analysis of RLS drugs; no PK disposition parameters for ropinirole are reported. |
+| popPK | Kaye_2000 | relevant | 8 | 4 | The text describes a population PK study for ropinirole and provides qualitative/semi-quantitative data (bioavailability ~50%, half-life ~6 hours) but lacks specific numeric values for clearance (CL), volume (V), or intercompartmental clearance (Q) typically required for full parameter extraction. |
+| PGx | Kaye_2000 | not_relevant | 0 | 0 | The paper describes general pharmacokinetics and demographic influences (age, gender) but does not report any effects of specific gene variants or genotypes on ropinirole. |
+| PGx | Li_2016 | not_relevant | 0 | 0 | The study focuses on the bioequivalence of a new formulation in beagle dogs and does not report pharmacogenomic effects. |
+| popPK | Liu_2019 | relevant | 9 | 4 | The study reports PK parameters (half-life, Tmax) and a one-compartment model for ropinirole, but specific numeric values for clearance (CL), volume (V), and absorption rate (ka) are not explicitly provided in the abstract text. |
+| PGx | Liu_2019 | not_relevant | 0 | 0 | The study describes general pharmacokinetics and pharmacodynamics of ropinirole in prolactinoma patients but does not investigate gene variants or genotypes. |
+| popPK | Newman-Tancredi_1997 | irrelevant | 0 | 0 | The study is an in-vitro receptor binding and G-protein activation assay measuring efficacy (Emax) and affinity (Ki/EC50), not pharmacokinetic disposition parameters. |
+| PGx | Newman-Tancredi_1997 | not_relevant | 0 | 0 | The paper reports pharmacological activity of ropinirole on recombinant D4.4 receptors in cell membranes, not pharmacogenomic effects on PK/PD parameters in humans. |
+| popPK | Parvez_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of mitochondrial effects in rat liver mitochondria, not a pharmacokinetic study. |
+| PGx | Parvez_2010 | not_relevant | 0 | 0 | The paper investigates the mechanism of action (mitochondrial PTP inhibition) in isolated mitochondria and does not report on the effect of genetic variants on pharmacokinetics or pharmacodynamics. |
+| popPK | Saitani_2026 | relevant | 8 | 2 | The study reports pharmacokinetic parameters for ropinirole in mice, but specific numeric values for clearance, volume, or half-life are not listed in the provided text, only relative bioavailability and descriptive NCA results. |
+| PGx | Saitani_2026 | not_relevant | 0 | 0 | The study evaluates the pharmacokinetics of intranasal vs oral delivery in C57BL/6J mice and contains no pharmacogenomic (gene variant) component. |
+| popPK | Simkó_2010 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ionic currents in canine myocytes, not a pharmacokinetic study of drug disposition. |
+| PGx | Simkó_2010 | not_relevant | 0 | 0 | The study investigates the direct cellular cardiac effects (ion channel interactions) of ropinirole, not the influence of genetic variants on its pharmacokinetics or pharmacodynamics. |
+| popPK | Tadori_2014 | irrelevant | 0 | 0 | The paper is a review discussing therapeutic plasma concentrations and in vitro pharmacology (EC50), not a study reporting quantitative pharmacokinetic disposition parameters (CL, V, t1/2) or PK models for ropinirole. |
+| PGx | Tadori_2014 | not_relevant | 0 | 0 | The paper is a review comparing plasma concentrations and receptor pharmacology of various drugs; it does not report any pharmacogenomic effects (gene variant/genotype) on PK or PD parameters. |
+| popPK | Zhang_2019 | irrelevant | 0 | 0 | The paper reports pharmacodynamic efficacy parameters (Emax, response rates) for a model-based meta-analysis of RLS drugs, not pharmacokinetic disposition parameters. |
+| PGx | Zhang_2019 | not_relevant | 0 | 0 | The paper is a meta-analysis comparing drug efficacies based on baseline symptom severity, not a study of pharmacogenomic variants affecting PK or PD. |
 
 
 </details>

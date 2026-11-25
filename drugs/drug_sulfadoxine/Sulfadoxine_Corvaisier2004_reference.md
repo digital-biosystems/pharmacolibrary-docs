@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;P01B&quot;,&quot;href&quot;:&quot;atc/P01B.md&quot;},{&quot;label&quot;:&quot;Sulfadoxine&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/&quot;},{&quot;label&quot;:&quot;Corvaisier_2004 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfadoxine_Corvaisier2004_reference&quot;,&quot;label&quot;:&quot;Corvaisier_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_Corvaisier2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sulfadoxine_Trenque2004_reference&quot;,&quot;label&quot;:&quot;Trenque_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadoxine_de2017_reference&quot;,&quot;label&quot;:&quot;de_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_de2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadoxine_de2018_reference&quot;,&quot;label&quot;:&quot;de_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sulfadoxine_Trenque2004_reference&quot;,&quot;label&quot;:&quot;Trenque_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_Trenque2004_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadoxine_Corvaisier2004_reference&quot;,&quot;label&quot;:&quot;Corvaisier_2004_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_Corvaisier2004_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sulfadoxine_de2017_reference&quot;,&quot;label&quot;:&quot;de_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_de2017_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sulfadoxine_de2018_reference&quot;,&quot;label&quot;:&quot;de_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_sulfadoxine/Sulfadoxine_de2018_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Sulfadoxine bioavailability (F) has no reported value and was left at a library default, so the record was held back.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
-<div class="pk-model-meta" hidden drug="Sulfadoxine" model-id="Sulfadoxine_Corvaisier2004_reference" status="needs_review" stale="false" population="children with congenital toxoplasmosis" measured-compound="sulfadoxine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="Sulfadoxine" model-id="Sulfadoxine_Corvaisier2004_reference" status="needs_review" stale="false" population="children with congenital toxoplasmosis" measured-compound="sulfadoxine, pyrimethamine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Corvaisier S, Charpiat B, Mounier C, Wallon M, Leboucher G, Al Kurdi M et al. Population pharmacokinetics of pyrimethamine and sulfadoxine in children treated for congenital toxoplasmosis. Antimicrobial agents and chemotherapy 48(10):3794–3800 (2004).
@@ -18,8 +18,6 @@ Corvaisier S, Charpiat B, Mounier C, Wallon M, Leboucher G, Al Kurdi M et al. Po
 ## Population and dosing
 
 **Population:** children with congenital toxoplasmosis · condition congenital toxoplasmosis · age group child · n = 32.
-
-**Dosed compound ≠ measured compound:** dosed sulfadoxine (with pyrimethamine), measured sulfadoxine.
 
 ## Model
 
@@ -35,10 +33,10 @@ Corvaisier S, Charpiat B, Mounier C, Wallon M, Leboucher G, Al Kurdi M et al. Po
 
 | label | parameter | value | unit |
 |---|---|---|---|
-| Mean absorption rate constant (PYR) | kabs | 0.915 | h(-1) |
-| volume of distribution (PYR) | V | 4.379 | liters/kg |
-| elimination rate constant (PYR) | kel | 0.00839 | h(-1) |
-| half-life (PYR) | t1/2z | 5.5 | days |
+| Mean absorption rate constants | kabs | 0.915 | h(-1) |
+| volumes of distribution | V | 4.379 | liters/kg |
+| elimination rate constants | kel | 0.00839 | h(-1) |
+| half-lives | t1/2z | 5.5 | days |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
@@ -52,22 +50,22 @@ Corvaisier S, Charpiat B, Mounier C, Wallon M, Leboucher G, Al Kurdi M et al. Po
 
 ### Reviewer guidance
 
-**Sulfadoxine bioavailability (F) has no reported value and was left at a library default, so the record was held back.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-F used library defaults, not estimates from this paper. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The absorption lag time (Tlag) was also defaulted, and only the paper’s abstract was read, so its summary statistics stood in for a fitted model. A second reader disputed the sulfadoxine identification and the reported absorption rate, elimination rate, half-life, and distribution volume, providing no corresponding values for those parameters. Extracted — sulfadoxine: kabs 0.915 h(-1), V 4.38 liters/kg, kel 0.00839 h(-1), t1/2z 5.5 days.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is sulfadoxine's own; they describe sulfadoxine, pyrimethamine. Extracted — sulfadoxine, pyrimethamine: kabs 0.915 h(-1), V 4.38 liters/kg, kel 0.00839 h(-1), t1/2z 5.5 days.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulfadoxine (with pyrimethamine), the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has sulfadoxine, pyrimethamine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by gpt-6-luna</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
-| Mean absorption rate constant (PYR) | `Q49` · kabs | 0.915 | h(-1) | 0.0002542 | 1/s | 1/h | llm_confirmed (0.6) | Corvaisier_2004:abstract |
-| volume of distribution (PYR) | `Q61` · V | 4.379 | liters/kg | 0.3065 | m3 | l/kg | exact (1) | Corvaisier_2004:abstract |
-| elimination rate constant (PYR) | `Q47` · kel | 0.00839 | h(-1) | 2.331e-06 | 1/s | 1/h | exact (1) | Corvaisier_2004:abstract |
-| half-life (PYR) | `Q57` · t1/2z | 5.5 | days | 4.752e+05 | s | d | llm (0.6) | Corvaisier_2004:abstract |
+| Mean absorption rate constants | `Q49` · kabs | 0.915 | h(-1) | 0.0002542 | 1/s | 1/h | llm_confirmed (0.6) | Corvaisier_2004:abstract, Corvaisier_2004:abstract |
+| volumes of distribution | `Q61` · V | 4.379 | liters/kg | 0.3065 | m3 | l/kg | llm_confirmed (0.6) | Corvaisier_2004:abstract, Corvaisier_2004:abstract |
+| elimination rate constants | `Q47` · kel | 0.00839 | h(-1) | 2.331e-06 | 1/s | 1/h | llm_confirmed (0.6) | Corvaisier_2004:abstract, Corvaisier_2004:abstract |
+| half-lives | `Q57` · t1/2z | 5.5 | days | 4.752e+05 | s | d | llm (0.6) | Corvaisier_2004:abstract, Corvaisier_2004:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -80,17 +78,11 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
-- dropped duplicate Q49 ('Mean absorption rate constant (SDX)', value 1.659) — already have one for this compound
-- dropped duplicate Q61 ('volume of distribution (SDX)', value 0.392) — already have one for this compound
-- dropped duplicate Q47 ('elimination rate constant (SDX)', value 0.00526) — already have one for this compound
-- dropped duplicate Q57 ('half-life (SDX)', value 6.6) — already have one for this compound
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (volume of distribution (PYR))
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sulfadoxine
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q61 (volumes of distribution)
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sulfadoxine, pyrimethamine
+- molar mass: none of 1 PubChem candidate(s) is 'sulfadoxine, pyrimethamine' (LLM) — left in mass units
+- molar mass: none found for 'sulfadoxine, pyrimethamine' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 - derived CL=2.57179 L/h from Ke × V = CL (Q47 × Q61); not separately reported
 
 **Extraction notes:**
@@ -99,7 +91,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -109,16 +101,16 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption rate constants]` |  | 0.915 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[elimination rate constant]` | 0.00839 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[elimination rate constants]` | 0.00839 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[elimination rate constants]` |  | 0.00839 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[half-life]` | 5.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[half-lives]` | 5.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[half-lives]` |  | 5.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[mean absorption rate constant]` | 0.915 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[volume of distribution]` | 4.379 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean absorption rate constants]` | 0.915 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[mean absorption rate constants]` |  | 0.915 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[volumes of distribution]` | 4.379 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[volumes of distribution]` |  | 4.379 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | sulfadoxine (with pyrimethamine) | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | sulfadoxine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | sulfadoxine, pyrimethamine | unknown | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | sulfadoxine, pyrimethamine | unknown | mismatch |
 
 </details>
 
@@ -135,25 +127,25 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0_has_structural_params | pass |  | 4 |  |
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
-| C5_dimension_Q47 | pass | 1 / [time] |  | ['Corvaisier_2004:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Corvaisier_2004:abstract'] |
-| C5_dimension_Q57 | pass | [time] |  | ['Corvaisier_2004:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Corvaisier_2004:abstract'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Corvaisier_2004:abstract', 'Corvaisier_2004:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] |  | ['Corvaisier_2004:abstract', 'Corvaisier_2004:abstract'] |
+| C5_dimension_Q57 | pass | [time] |  | ['Corvaisier_2004:abstract', 'Corvaisier_2004:abstract'] |
+| C5_dimension_Q61 | pass | [length] ** 3 |  | ['Corvaisier_2004:abstract', 'Corvaisier_2004:abstract'] |
 | C8_topology | pass |  |  |  |
-| C9_phys_window_Q61 | pass | volume within physiological range | 307 L | ['Corvaisier_2004:abstract'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 307 L | ['Corvaisier_2004:abstract', 'Corvaisier_2004:abstract'] |
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report |  | rate-derived clearance must be the value the Modelica model uses |
-| T3_output_variable | pass | C_central (measured=sulfadoxine) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_derived_parameters | pass | 1 deterministic parameter derivation(s) emitted | derived values and bindings match the report | rate-derived clearance must be the value the Modelica model uses |
+| T3_output_variable | pass | C_central (measured=sulfadoxine, pyrimethamine) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -169,7 +161,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sulfadoxine/Sulfadoxine_Corvaisier2004_reference/Sulfadoxine_Corvaisier2004_reference_modelica.zip" download>Sulfadoxine_Corvaisier2004_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sulfadoxine/Sulfadoxine_Corvaisier2004_reference/Sulfadoxine_Corvaisier2004_reference_modelica.zip" download>Sulfadoxine_Corvaisier2004_reference_modelica.zip</a> <span class="pk-size">(4.8 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_sulfadoxine/Sulfadoxine_Corvaisier2004_reference/Sulfadoxine_Corvaisier2004_reference_fmi.zip" download>Sulfadoxine_Corvaisier2004_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">unavailable</span></td></tr>
@@ -186,7 +178,6 @@ The parameters this record sets on the template, in the template's SI units, and
 
 | direction | role | name | value | unit (SI) |
 |---|---|---|---|---|
-| input | compound | `MM` | 0.3103 | kg/mol |
 | input | dosing | `F` | 0.9 | 1 |
 | input | dosing | `Tlag` | 0 | s |
 | input | dosing | `adminCount` | 1 | 1 |
@@ -233,4 +224,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bsulfadoxine%5D%20Sulfadoxine_Corvaisier2004_reference&body=Drug%3A%20sulfadoxine%0ARecord%3A%20Sulfadoxine_Corvaisier2004_reference%0APaper%3A%20Corvaisier_2004%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_sulfadoxine/Sulfadoxine_Corvaisier2004_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 08:47 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:20 UTC</sub>

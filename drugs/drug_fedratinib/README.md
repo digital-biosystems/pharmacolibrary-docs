@@ -32,14 +32,13 @@ Fedratinib is a Janus kinase inhibitor used to treat myeloproliferative diseases
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from the LLM relevance screen, p(non-human) 1.00).">human + animal</span> | [Hao_2014_cellular_proliferation](drugs/drug_fedratinib/pd_Hao_2014_cellular_proliferation.md) | cellular proliferation ← fedratinib · inhibition effect | — | Hao Y et al., Selective JAK2 inhibition specifically…, Clinical cancer research :… (2014) | [10.1158/1078-0432.CCR-13-3007](https://doi.org/10.1158/1078-0432.CCR-13-3007) |
-| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhang_2014_pSTAT3](drugs/drug_fedratinib/pd_Zhang_2014_pSTAT3.md) | suppression of STAT3 phosphorylation ← fedratinib · direct sigmoid Emax (Hill) effect | — | Zhang M et al., A randomized, placebo-controlled study…, Journal of clinical pharmac… (2014) | [10.1002/jcph.218](https://doi.org/10.1002/jcph.218) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2025_SVR35](drugs/drug_fedratinib/pd_Chen_2025_SVR35.md) | spleen volume reduction ≥35% (SVR35) ← Fedratinib · categorical (graded) response model | — | Chen Y et al., Exposure-response relationship of fedra…, British journal of clinical… (2025) | [10.1002/bcp.70118](https://doi.org/10.1002/bcp.70118) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2025_TSS_response](drugs/drug_fedratinib/pd_Chen_2025_TSS_response.md) | total symptom score reduction ≥50% (TSS response) ← Fedratinib · categorical (graded) response model | — | Chen Y et al., Exposure-response relationship of fedra…, British journal of clinical… (2025) | [10.1002/bcp.70118](https://doi.org/10.1002/bcp.70118) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2025_any_grade_diarrhoea](drugs/drug_fedratinib/pd_Chen_2025_any_grade_diarrhoea.md) | any-grade diarrhoea ← Fedratinib · categorical (graded) response model | — | Chen Y et al., Exposure-response relationship of fedra…, British journal of clinical… (2025) | [10.1002/bcp.70118](https://doi.org/10.1002/bcp.70118) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2025_any_grade_nausea_vomiting](drugs/drug_fedratinib/pd_Chen_2025_any_grade_nausea_vomiting.md) | any-grade nausea/vomiting ← Fedratinib · categorical (graded) response model | — | Chen Y et al., Exposure-response relationship of fedra…, British journal of clinical… (2025) | [10.1002/bcp.70118](https://doi.org/10.1002/bcp.70118) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2025_grade_3_anaemia](drugs/drug_fedratinib/pd_Chen_2025_grade_3_anaemia.md) | grade ≥3 anaemia ← Fedratinib · categorical (graded) response model | — | Chen Y et al., Exposure-response relationship of fedra…, British journal of clinical… (2025) | [10.1002/bcp.70118](https://doi.org/10.1002/bcp.70118) |
-| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2025_grade_3_thrombocytopenia](drugs/drug_fedratinib/pd_Chen_2025_grade_3_thrombocytopenia.md) | grade ≥3 thrombocytopenia ← Fedratinib · categorical (graded) response model | — | Chen Y et al., Exposure-response relationship of fedra…, British journal of clinical… (2025) | [10.1002/bcp.70118](https://doi.org/10.1002/bcp.70118) |
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> | [Zhang_2014_STAT3_phosphorylation](drugs/drug_fedratinib/pd_Zhang_2014_STAT3_phosphorylation.md) | suppression of signal transducer and activator of transcription 3 (STAT3) phosphorylation ← fedratinib · direct sigmoid Emax (Hill) effect | — | Zhang M et al., A randomized, placebo-controlled study…, Journal of clinical pharmac… (2014) | [10.1002/jcph.218](https://doi.org/10.1002/jcph.218) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2025_SVR35](drugs/drug_fedratinib/pd_Chen_2025_SVR35.md) | spleen volume reduction ≥35% ← fedratinib · categorical (graded) response model | — | Chen Y et al., Exposure-response relationship of fedra…, British journal of clinical… (2025) | [10.1002/bcp.70118](https://doi.org/10.1002/bcp.70118) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2025_TSS_response](drugs/drug_fedratinib/pd_Chen_2025_TSS_response.md) | total symptom score reduction ≥50% ← fedratinib · categorical (graded) response model | — | Chen Y et al., Exposure-response relationship of fedra…, British journal of clinical… (2025) | [10.1002/bcp.70118](https://doi.org/10.1002/bcp.70118) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2025_diarrhoea](drugs/drug_fedratinib/pd_Chen_2025_diarrhoea.md) | diarrhoea ← fedratinib · categorical (graded) response model | — | Chen Y et al., Exposure-response relationship of fedra…, British journal of clinical… (2025) | [10.1002/bcp.70118](https://doi.org/10.1002/bcp.70118) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2025_grade_3_anaemia](drugs/drug_fedratinib/pd_Chen_2025_grade_3_anaemia.md) | grade ≥3 anaemia ← fedratinib · categorical (graded) response model | — | Chen Y et al., Exposure-response relationship of fedra…, British journal of clinical… (2025) | [10.1002/bcp.70118](https://doi.org/10.1002/bcp.70118) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2025_grade_3_thrombocytopenia](drugs/drug_fedratinib/pd_Chen_2025_grade_3_thrombocytopenia.md) | grade ≥3 thrombocytopenia ← fedratinib · categorical (graded) response model | — | Chen Y et al., Exposure-response relationship of fedra…, British journal of clinical… (2025) | [10.1002/bcp.70118](https://doi.org/10.1002/bcp.70118) |
+| <span class="pk-badge pk-badge--orange">Needs review</span> | [Chen_2025_nausea_vomiting](drugs/drug_fedratinib/pd_Chen_2025_nausea_vomiting.md) | nausea/vomiting ← fedratinib · categorical (graded) response model | — | Chen Y et al., Exposure-response relationship of fedra…, British journal of clinical… (2025) | [10.1002/bcp.70118](https://doi.org/10.1002/bcp.70118) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -53,7 +52,7 @@ Fedratinib is a Janus kinase inhibitor used to treat myeloproliferative diseases
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-07 00:43 | 2:40 | 1/0/0 | 8/0/0 | 0/0/0 | 48,098/15,598 | openai / gpt-6-luna | 2 | 0/2 | 2/0 | 0 |
+| 2026-11-23 21:06 | 0:14 | 1/0/0 | 7/0/0 | 0/0/0 | 5,780/1,227 | einfracz / qwen3.8-27b | 2 | 0/2 | 2/0 | 0 |
 
 ## Coverage
 
@@ -62,14 +61,27 @@ Fedratinib is a Janus kinase inhibitor used to treat myeloproliferative diseases
 - **records:** 1  ·  extracted 0  ·  needs review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
+## Full-text requests
+
+_1 abstract-screened relevant papers lack full text. Retrieve via the DOI, save to `papers/` as `&lt;save as&gt;.pdf`, and rerun extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Zhang_2014.pdf` | Zhang M et al., A randomized, placebo-controlled study…, Journal of clinical pharmac… (2014) | popPK | 6 | [10.1002/jcph.218](https://doi.org/10.1002/jcph.218) | [24165976](https://pubmed.ncbi.nlm.nih.gov/24165976) | The abstract reports pharmacokinetic parameters (half-life, Tmax) for fedratinib, but specific compartmental values like clearance or volume are not explicitly provided in the text. |
+
+<sub>queue written 2026-11-23 21:06 UTC</sub>
+
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Chen_2025 | irrelevant | 1 | 0 | Reports exposure-response associations but no quantitative fedratinib disposition parameters; population-PK exposures are only referenced. |
-| popPK | Hao_2014 | irrelevant | 0 | 0 | This is an efficacy study and reports no quantitative fedratinib disposition parameters. |
+| popPK | Chen_2025 | irrelevant | 1 | 0 | The study focuses on exposure-response relationships (efficacy/safety) rather than reporting quantitative pharmacokinetic disposition parameters (CL, V, etc.). |
+| PGx | Chen_2025 | not_relevant | 0 | 0 | The paper analyzes exposure-response relationships for efficacy and safety but does not investigate gene variants or genotypes affecting fedratinib PK/PD. |
+| popPK | Hao_2014 | irrelevant | 1 | 0 | The study focuses on pharmacodynamic efficacy and tumor growth inhibition in vitro and in mouse xenografts, without reporting quantitative population pharmacokinetic parameters for fedratinib. |
+| PGx | Hao_2014 | not_relevant | 2 | 8 | The paper reports correlation between JAK2 copy number and drug potency (EC50) in preclinical models, but not a change in a specific pharmacokinetic or pharmacodynamic parameter attributable to a genetic variant in a pharmacogenomic context. |
 | popPK | Tachet_2025 | irrelevant | 2 | 0 | This is a human study protocol with no reported fedratinib disposition parameter values; the cited prior models provide no values here. |
-| popPK | Zhang_2014 | irrelevant | 2 | 2 | Human PK data report Tmax and half-life, but no qualifying disposition parameters or compartmental/population-PK model values. |
+| popPK | Zhang_2014 | relevant | 6 | 4 | The abstract reports pharmacokinetic parameters (half-life, Tmax) for fedratinib, but specific compartmental values like clearance or volume are not explicitly provided in the text. |
+| PGx | Zhang_2014 | not_relevant | 0 | 0 | The study is a Phase 1 trial in healthy volunteers assessing PK/PD and tolerability without reporting any genetic variants or pharmacogenomic data. |
 
 
 </details>

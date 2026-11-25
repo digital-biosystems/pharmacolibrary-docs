@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The volume of distribution was recorded in millilitres, an unconverted unit, causing an implausible clearance/volume magnitude and rejection of the artefenomel model.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="Artefenomel" model-id="Artefenomel_Collins2022_reference" status="rejected" stale="false" population="healthy adults" measured-compound="artefenomel" parameterization="mechanistic" topology="1C"></div>
 
@@ -39,7 +39,7 @@ Collins KA, Abd-Rahman AN, Marquart L, Ballard E, Gobeau N, Griffin P et al. Ant
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.714). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,11 +49,13 @@ Collins KA, Abd-Rahman AN, Marquart L, Ballard E, Gobeau N, Griffin P et al. Ant
 
 ### Reviewer guidance
 
-**The volume of distribution was recorded in millilitres, an unconverted unit, causing an implausible clearance/volume magnitude and rejection of the artefenomel model.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record lists the volume of distribution as 1.5 mL rather than a standard litre-based scale. Because the millilitre unit could not be converted to standard SI units, the parameter remained non-standard during evaluation. This unit mismatch produced an out-of-physiological-window clearance/volume ratio, leading to the rejection. Extracted — artefenomel: CL 8.67 hours, V 1.5 mL, kabs 0.943 hour−1.
+A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — artefenomel: CL 8.67 hours, V 1.5 mL, kabs 0.943 hour−1.
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of estimated volume of distribution: this record has 1.5, the second reading none; it also differs on 1 more field. That field does not shape the model.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -84,6 +86,28 @@ The record lists the volume of distribution as 1.5 mL rather than a standard lit
 - LLM selected parameter table(s) 3
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
+
+<details><summary>2 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[estimated volume of distribution]` | 1.5 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ka]` | 0.943 |  | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

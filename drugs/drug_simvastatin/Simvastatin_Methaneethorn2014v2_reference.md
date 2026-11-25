@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The simvastatin model was rejected because the verapamil intercompartmental clearance parameter used a rate unit instead of a volume flow unit.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit μM/h ([length] / [time]) vs [mass] / [time]; Q1 unit μM ([length]) vs [mass] / [length] ** 3; Q350 unit μM ([length]) vs 1 / [time].
 
 <div class="pk-model-meta" hidden drug="simvastatin" model-id="Simvastatin_Methaneethorn2014v2_reference" status="rejected" stale="false" population="healthy adults" measured-compound="simvastatin" parameterization="mechanistic" topology="general_linear"></div>
 
@@ -65,13 +65,13 @@ Methaneethorn J, Chamnansua M, Kaewdang N, Lohitnavy M. A pharmacokinetic drug-d
 
 ### Reviewer guidance
 
-**The simvastatin model was rejected because the verapamil intercompartmental clearance parameter used a rate unit instead of a volume flow unit.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit μM/h ([length] / [time]) vs [mass] / [time]; Q1 unit μM ([length]) vs [mass] / [length] ** 3; Q350 unit μM ([length]) vs 1 / [time].**
 
-The intercompartmental clearance was recorded as 19.4 h⁻¹, which is dimensionally incorrect for a clearance parameter. The model also included simvastatin and verapamil metabolic parameters with inconsistent unit interpretations for Michaelis-Menten kinetics. Extracted — simvastatin: Fab 0.17, kabs 0.6 h⁻¹, V 150 L, Vmax 4 μM/h, Km 0.726 μM, kel 0.02 h⁻¹; simvastatin hydroxy acid: V 22.5 L, kel 0.4 h⁻¹; verapamil: kic 0.5 μM, kabs 2.6 h⁻¹, V 37.6 L, V2 7.7 L, Q 19.4 h⁻¹, Vmax 0.00125 μM/h, Km 0.726 μM, kel 1.16 h⁻¹; norverapamil: ki0 5.9 μM, V 173 L, kel 0.6 h⁻¹.
+A reported unit could not be converted (Vmax, Km, kic and ki0), so that value has no SI equivalent. Extracted — simvastatin: Fab 0.17, kabs 0.6 h⁻¹, V 150 L, Vmax 4 μM/h, Km 0.726 μM, kel 0.02 h⁻¹; simvastatin hydroxy acid: V 22.5 L, kel 0.4 h⁻¹; verapamil: kic 0.5 μM, kabs 2.6 h⁻¹, V 37.6 L, V2 7.7 L, Q 19.4 h⁻¹, Vmax 0.00125 μM/h, Km 0.726 μM, kel 1.16 h⁻¹; norverapamil: ki0 5.9 μM, V 173 L, kel 0.6 h⁻¹.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of km: this record has 0.726, the second reading none; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

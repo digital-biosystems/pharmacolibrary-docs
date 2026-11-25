@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> Atorvastatin was rejected because the second peripheral compartment in the 3-compartment structure lacks a valid path from the dose.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="atorvastatin" model-id="Atorvastatin_Patel2019_ator_grt" status="rejected" stale="false" population="Wistar rats" measured-compound="atorvastatin, metformin" parameterization="apparent" topology="3C"></div>
 
@@ -60,13 +60,13 @@ Patel O, Muller CJF, Joubert E, Rosenkranz B, Taylor MJC, Louw J et al. Pharmaco
 
 ### Reviewer guidance
 
-**Atorvastatin was rejected because the second peripheral compartment in the 3-compartment structure lacks a valid path from the dose.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The record lists three volume parameters (V1, V2, and an implied third) but only two transfer constants (k12, k21), leaving the second peripheral compartment unlinked from the central compartment. This structural mismatch creates an orphan compartment, making the model mathematically invalid. A second reader also disagreed on the dose compound, identifying metformin as irrelevant to the atorvastatin model, though this does not override the structural failure. Extracted — atorvastatin: tmax 0.67 h, Cmax 48.7 µg/mL, t1/2z 3.12 h, AUCt 136 µg/mL*h, AUC∞ 176 µg/mL*h, MRT 5.48 h, V/F 1.14 L/kg, CL/F 0.25 L/kg*hr, … (+4).
+Extracted — atorvastatin: tmax 0.67 h, Cmax 48.7 µg/mL, t1/2z 3.12 h, AUCt 136 µg/mL*h, AUC∞ 176 µg/mL*h, MRT 5.48 h, V/F 1.14 L/kg, CL/F 0.25 L/kg*hr, … (+4).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has atorvastatin, metformin, the second reading atorvastatin; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Pantoprazole pharmacokinetics were rejected because the source paper models posaconazole, not pantoprazole, as the primary drug of interest.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="pantoprazole" model-id="Pantoprazole_McCann2023_reference" status="rejected" stale="false" population="" measured-compound="pantoprazole" parameterization="mechanistic" topology="1C"></div>
 
@@ -50,13 +50,13 @@ McCann S, Sinha J, Wilson WS, McKinzie CJ, Garner LM, Gonzalez D. Population Pha
 
 ### Reviewer guidance
 
-**Pantoprazole pharmacokinetics were rejected because the source paper models posaconazole, not pantoprazole, as the primary drug of interest.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The paper characterizes the population pharmacokinetics of posaconazole, with pantoprazole serving only as a co-administered covariate affecting bioavailability. Consequently, the extracted parameters such as clearance and volume of distribution do not represent the intended pantoprazole model. A second reader also disputed the rejection, noting disagreements on multiple parameter values and the absence of a bioavailability estimate. Extracted — pantoprazole: CL 6.5 L/h, V 226 L, tlag 2.5 h, kabs 0.325 h -1.
+Extracted — pantoprazole: CL 6.5 L/h, V 226 L, tlag 2.5 h, kabs 0.325 h -1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q318: this record has none, the second reading 16; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -139,7 +139,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.412, 0 of 1 reader(s) agree | 0.412 | cross-check disputed by a second reader: verdict disputed, agreement 0.412, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.412 (7 of 17 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.412 | cross-check contradicted by a second reader: verdict disputed; agreement 0.412 (7 of 17 compared fields agree, 9 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

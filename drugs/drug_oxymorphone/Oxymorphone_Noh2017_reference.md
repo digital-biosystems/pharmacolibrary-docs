@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
-> The record was rejected because the source paper does not study oxymorphone, and its intercompartmental clearance of 1.57 L/h/kg relies on defaulted parameters.
+> paper_subject_is_other_drug; t0_analyte_identity (+2 more).
 
 <div class="pk-model-meta" hidden drug="oxymorphone" model-id="Oxymorphone_Noh2017_reference" status="rejected" stale="false" population="" measured-compound="oxymorphone" parameterization="mechanistic" topology="2C"></div>
 
@@ -52,13 +52,13 @@ Noh K, Kang ΨW. Calculation of a First-In-Man Dose of 7-&lt;i&gt;O&lt;/i&gt;-Su
 
 ### Reviewer guidance
 
-**The record was rejected because the source paper does not study oxymorphone, and its intercompartmental clearance of 1.57 L/h/kg relies on defaulted parameters.**
+**paper_subject_is_other_drug; t0_analyte_identity (+2 more).**
 
-The relevance screen confirmed that neither the title nor the abstract names oxymorphone, identifying the paper subject as another drug. The model builder defaulted bioavailability, lag time, and the reverse intercompartmental clearance instead of extracting explicit estimates. A second reader disputed the verdict with a low agreement score, specifically disagreeing on the extracted values for the intercompartmental clearance. Extracted — oxymorphone: CL 0.2 L/min/kg, V 5 L/kg, Q 1.57 L/h/kg, kabs 15.3 h−1.
+Extracted — oxymorphone: CL 0.2 L/min/kg, V 5 L/kg, Q 1.57 L/h/kg, kabs 15.3 h−1.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q25: this record has 0.51, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.625, 0 of 1 reader(s) agree | 0.625 | cross-check disputed by a second reader: verdict disputed, agreement 0.625, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.625 (10 of 16 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.625 | cross-check contradicted by a second reader: verdict disputed; agreement 0.625 (10 of 16 compared fields agree, 5 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
-> Vmax unit mumoles/kg/min conflicts with expected mass/time, and Km unit micrometer is dimensionally invalid for a concentration parameter.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mumoles/kg/min ([substance] / [time]) vs [mass] / [time]; Q1 unit micrometer ([length]) vs [mass] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="iodoxamic acid" model-id="IodoxamicAcid_Lin1978_reference" status="rejected" stale="false" population="rhesus monkeys" measured-compound="iodoxamic acid" parameterization="mechanistic" topology="1C"></div>
 
@@ -16,7 +16,7 @@ Lin SK, Moss AA, Motson R, Riegelman S. Pharmacokinetics of iodoxamic acid in rh
 
 ## Population and dosing
 
-**Population:** rhesus monkeys · condition healthy · age group adult.
+**Population:** rhesus monkeys · condition healthy.
 
 > **Species: monkey.** This record comes from an animal study (monkey), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
@@ -36,7 +36,7 @@ Lin SK, Moss AA, Motson R, Riegelman S. Pharmacokinetics of iodoxamic acid in rh
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.286). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.25). Primary extraction retained.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -46,13 +46,13 @@ Lin SK, Moss AA, Motson R, Riegelman S. Pharmacokinetics of iodoxamic acid in rh
 
 ### Reviewer guidance
 
-**Vmax unit mumoles/kg/min conflicts with expected mass/time, and Km unit micrometer is dimensionally invalid for a concentration parameter.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q66 unit mumoles/kg/min ([substance] / [time]) vs [mass] / [time]; Q1 unit micrometer ([length]) vs [mass] / [length] ** 3.**
 
-The record was built from the abstract alone, so summary statistics stand in for a fitted model. A dimensionality check failed because the maximum metabolic rate unit implies substance per time, not mass per time. Additionally, the Michaelis constant unit of micrometer represents length, which does not match the required mass per volume dimension. Extracted — iodoxamic acid: Vmax 1.03 mumoles/kg/min.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — iodoxamic acid: Vmax 1.03 mumoles/kg/min.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has iodoxamic acid, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has iodoxamic acid, the second reading iodoxamic_acid; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -74,7 +74,7 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'V max' → Q66 (unit '[substance] / [time]' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'V max' → Q66 (unit '[substance] / [time]' vs ontology '[mass] / [time]') — route to review
 - unit_dimension_mismatch: 'Km' → Q1 (unit '[length]' vs ontology '[mass] / [length] ** 3') — route to review
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=iodoxamic acid
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
@@ -87,21 +87,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.286 (2/7 fields) | 5 |
+| `gpt-oss-120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>5 field discrepancies</summary>
+<details><summary>6 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[km]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[km]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v max]` | 1.03 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v max]` |  | 1.03 | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | iodoxamic acid | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | iodoxamic acid | unknown | mismatch |
+| `gpt-oss-120b` | `screen.dose_compound` | iodoxamic acid | iodoxamic_acid | mismatch |
+| `gpt-oss-120b` | `screen.primary_analyte` | iodoxamic acid | iodoxamic_acid | mismatch |
 
 </details>
 
@@ -144,4 +145,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Biodoxamic_acid%5D%20IodoxamicAcid_Lin1978_reference&body=Drug%3A%20iodoxamic_acid%0ARecord%3A%20IodoxamicAcid_Lin1978_reference%0APaper%3A%20Lin_1978%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_iodoxamic_acid/IodoxamicAcid_Lin1978_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 22:17 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 23:18 UTC</sub>

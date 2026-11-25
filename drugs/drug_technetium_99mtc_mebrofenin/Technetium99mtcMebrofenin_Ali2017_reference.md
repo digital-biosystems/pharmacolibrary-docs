@@ -6,9 +6,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Record refused because the liver AUC unit kcounts*min/sec is dimensionless, conflicting with the expected mass-concentration-time dimension.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q19 unit kcounts*min/sec (dimensionless) vs [mass] * [time] / [length] ** 3.
 
-<div class="pk-model-meta" hidden drug="technetium (99mTc) mebrofenin" model-id="Technetium99mtcMebrofenin_Ali2017_reference" status="rejected" stale="false" population="healthy subjects and NASH patients" measured-compound="technetium_99mtc_mebrofenin" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="technetium (99mTc) mebrofenin" model-id="Technetium99mtcMebrofenin_Ali2017_reference" status="rejected" stale="false" population="healthy adults and NASH patients" measured-compound="technetium_99mtc_mebrofenin" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Ali I, Slizgi JR, Kaullen JD, Ivanovic M, Niemi M, Stewart PW et al. Transporter-Mediated Alterations in Patients With NASH Increase Systemic and Hepatic Exposure to an OATP and MRP2 Substrate. Clinical pharmacology and therapeutics (2017).
@@ -16,7 +16,7 @@ Ali I, Slizgi JR, Kaullen JD, Ivanovic M, Niemi M, Stewart PW et al. Transporter
 
 ## Population and dosing
 
-**Population:** healthy subjects and NASH patients · condition NASH and healthy · age group adult · n = 21.
+**Population:** healthy adults and NASH patients · condition NASH · age group adult.
 
 ## Model
 
@@ -35,7 +35,7 @@ Ali I, Slizgi JR, Kaullen JD, Ivanovic M, Niemi M, Stewart PW et al. Transporter
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by qwen3.8-27b (not confirmed, agreement 0.857). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -45,20 +45,20 @@ Ali I, Slizgi JR, Kaullen JD, Ivanovic M, Niemi M, Stewart PW et al. Transporter
 
 ### Reviewer guidance
 
-**Record refused because the liver AUC unit kcounts*min/sec is dimensionless, conflicting with the expected mass-concentration-time dimension.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q19 unit kcounts*min/sec (dimensionless) vs [mass] * [time] / [length] ** 3.**
 
-The abstract-only source provided a liver AUC value of 277 in units of kcounts*min/sec, which has no mass dimension. This dimensionless unit conflicts with the required mass-concentration-time dimension for an area-under-the-curve parameter. Consequently, the dimensional consistency check failed, invalidating the parameter's physical meaning despite the reported value. Extracted — technetium 99mtc mebrofenin: AUCt 277 kcounts*min/sec, CLb 0.035 L/h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — technetium 99mtc mebrofenin: AUCt 277 kcounts*min/sec, CLb 0.035 L/h.
 
-A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `parameters[auc0-180,liver].parameter_id`: this record has Q19, the second reading Q88. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss-120b`.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | AUC0-180,liver | `Q19` · AUCt | 277 | kcounts*min/sec |  |  | (min·kcounts)/s | llm (0.6) | Ali_2017:abstract, Ali_2017:abstract |
-| biliary clearance | `Q23` · CLb | 0.035 | L/h | 9.722e-09 | m3/s | L/h | llm_corrected (0.6) | Ali_2017:abstract |
+| biliary clearance | `Q23` · CLb | 0.035 | L/h | 9.722e-09 | m3/s | l/h | llm_corrected (0.6) | Ali_2017:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -70,33 +70,24 @@ A second, independent reading of the paper (`qwen3.8-27b`) disagrees on `paramet
 **Interpretation flags:**
 - dropped value-less row: 'AUC0-300,blood'
 - unit_dimension_mismatch: 'AUC0-180,liver' → Q19 (unit 'dimensionless' vs ontology '[mass] * [time] / [length] ** 3') — route to review
-- implicit units: 'biliary clearance' → L/h (from the popPK convention: 'No unit is stated. Biliary clearance is a clearance parameter, conventionally expressed in L/h; the value is consistent ')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=technetium_99mtc_mebrofenin
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at "Needs review" — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Ali_2017_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `gpt-6-luna`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `qwen3.8-27b` | not confirmed | 0.857 (6/7 fields) | 1 |
+| `gpt-oss-120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>1 field discrepancy</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `qwen3.8-27b` | `parameters[auc0-180,liver].parameter_id` | Q19 | Q88 | mismatch |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -139,4 +130,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btechnetium_99mtc_mebrofenin%5D%20Technetium99mtcMebrofenin_Ali2017_reference&body=Drug%3A%20technetium_99mtc_mebrofenin%0ARecord%3A%20Technetium99mtcMebrofenin_Ali2017_reference%0APaper%3A%20Ali_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_technetium_99mtc_mebrofenin/Technetium99mtcMebrofenin_Ali2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 19:30 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:31 UTC</sub>

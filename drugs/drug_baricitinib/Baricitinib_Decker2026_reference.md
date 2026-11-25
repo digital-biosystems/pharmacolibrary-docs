@@ -6,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The model was rejected because a dialysis compartment is disconnected from the dose, and the bioavailability parameter lacks a numerical value.
+> C8 unreachable/orphan compartment or unlinked metabolite.
 
 <div class="pk-model-meta" hidden drug="baricitinib" model-id="Baricitinib_Decker2026_reference" status="rejected" stale="false" population="pediatric patients with atopic dermatitis" measured-compound="baricitinib" parameterization="apparent" topology="3C"></div>
 
@@ -45,7 +45,7 @@ Decker RL, Ernest CS, Radtke DB, Prakash A, Zhang X. A Population Pharmacokineti
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.259). Primary extraction retained.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -55,11 +55,13 @@ Decker RL, Ernest CS, Radtke DB, Prakash A, Zhang X. A Population Pharmacokineti
 
 ### Reviewer guidance
 
-**The model was rejected because a dialysis compartment is disconnected from the dose, and the bioavailability parameter lacks a numerical value.**
+**C8 unreachable/orphan compartment or unlinked metabolite.**
 
-The dialysate flow rate parameter is defined, but the structure lacks a path linking the dose to the dialysis compartment. Additionally, the absolute bioavailability parameter has no extracted value, causing the model to rely on a placeholder rather than a fitted estimate. Extracted — baricitinib: D1 0.263 h, CLNR 2.76 L/h, CLR 7.9 L/h, V1/F 119 L, Qd 2.4 L/h, V2/F 46.8 L, tlag 0.144 h, AUCt 0.75 %SEE, … (+1).
+A reported unit could not be converted (AUCt, V1 and theta_d1_category), so that value has no SI equivalent. Extracted — baricitinib: D1 0.263 h, CLNR 2.76 L/h, CLR 7.9 L/h, V1/F 119 L, Qd 2.4 L/h, V2/F 46.8 L, tlag 0.144 h, AUCt 0.75 %SEE, … (+1).
 
-<sub>reviewed by qwen3.8-27b</sub>
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on `parameters[allometric scaling clb].parameter_id`: this record has Q19, the second reading Q23; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
+
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -130,6 +132,46 @@ The dialysate flow rate parameter is defined, but the structure lacks a path lin
 - captured model equation dQ = 2.4*((WTE/74)^
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss-120b` | not confirmed | 0.259 (7/27 fields) | 20 |
+
+<details><summary>20 field discrepancies</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss-120b` | `parameters[allometric scaling clb].parameter_id` | Q19 | Q23 | mismatch |
+| `gpt-oss-120b` | `parameters[allometric scaling vc,e].parameter_id` | Q63 | Q319 | mismatch |
+| `gpt-oss-120b` | `parameters[box_cox_transformation_parameter_for_d1]` |  | 0.311 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[clnr/f(l/h)b].covariate_forms` | [] | ['additive_shift'] | mismatch |
+| `gpt-oss-120b` | `parameters[clnr/f(l/h)b].rse_percent` | 58.4 |  | mismatch |
+| `gpt-oss-120b` | `parameters[clnr/f(l/h)b].value` | 2.76 | 58.4 | mismatch |
+| `gpt-oss-120b` | `parameters[clr/f (l/h)b].rse_percent` | 62.3 |  | mismatch |
+| `gpt-oss-120b` | `parameters[clr/f (l/h)b].value` | 7.9 | 62.3 | mismatch |
+| `gpt-oss-120b` | `parameters[covariate_for_change_in_egfr_on_clr_ff]` |  | 0.00778 | only_one_extracted |
+| `gpt-oss-120b` | `parameters[d1].covariate_forms` | ['additive_shift'] | [] | mismatch |
+| `gpt-oss-120b` | `parameters[d1].rse_percent` | 164 |  | mismatch |
+| `gpt-oss-120b` | `parameters[d1].value` | 0.263 | 164 | mismatch |
+| `gpt-oss-120b` | `parameters[f]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[q (l/h)d].rse_percent` | 15.1 |  | mismatch |
+| `gpt-oss-120b` | `parameters[q (l/h)d].value` | 2.4 | 15.1 | mismatch |
+| `gpt-oss-120b` | `parameters[theta_d1_category]` | 0.311 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[v1/f (l)c].rse_percent` | 12.7 |  | mismatch |
+| `gpt-oss-120b` | `parameters[v1/f (l)c].value` | 119 | 12.7 | mismatch |
+| `gpt-oss-120b` | `parameters[v2/f (l)e].rse_percent` | 117 |  | mismatch |
+| `gpt-oss-120b` | `parameters[v2/f (l)e].value` | 46.8 | 117 | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check definitions</summary>
+<table><thead><tr><th>Field</th><th>Definition</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>Additional extraction model; the default uses a different model family. Multiple readers are supported.</td></tr><tr><td><code>agreement</code></td><td>Proportion of compared fields in agreement.</td></tr><tr><td><code>verdict</code></td><td>confirmed: full agreement; partly confirmed: non-structural discrepancy; not confirmed: structural discrepancy; primary re-run: hinted retry after an empty primary extraction.</td></tr><tr><td><code>combined</code></td><td>Confirmed only when all responding readers agree; a structural discrepancy makes the result disputed.</td></tr><tr><td><code>kept</code></td><td>Primary extraction retained; discrepancies require review rather than automatic replacement.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

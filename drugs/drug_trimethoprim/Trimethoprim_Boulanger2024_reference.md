@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: Reference-individual predictions reproduce the source; covariate scenarios were not evaluated.">Needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">bird</span>
 
-> Terminal half-life mismatched the paper's 1.49 h, and bioavailability used unreported defaults.
+> The model does not reproduce the paper's terminal half-life (paper 1.49, model 0.582); f use library defaults, not estimates from this paper (+2 more).
 
 <div class="pk-model-meta" hidden drug="trimethoprim" model-id="Trimethoprim_Boulanger2024_reference" status="needs_review" stale="false" population="broilers" measured-compound="trimethoprim" parameterization="mechanistic" topology="1C"></div>
 
@@ -65,13 +65,13 @@ Boulanger M, Taillandier JF, Henri J, Devreese M, De Baere S, Ferran AA et al. P
 
 ### Reviewer guidance
 
-**Terminal half-life mismatched the paper's 1.49 h, and bioavailability used unreported defaults.**
+**The model does not reproduce the paper's terminal half-life (paper 1.49, model 0.582); f use library defaults, not estimates from this paper (+2 more).**
 
-The simulated terminal half-life was 0.5817213709862123, deviating from expected values of 1.49 and 2.01. Bioavailability and lag time used library placeholders instead of explicit estimates from the study. Covariate effects were defined but not simulated for any subject. A second reader disagreed on parameter values including clearance and absorption rate constants. Extracted — trimethoprim: kabs 20.1 1/h, V 7.81 L/kg, CL 6 L/h/kg, CLmp 4.77 L/h/kg, t1/2β 2 h, AUC∞ 187 h × µg/mL.
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. The base model was simulated, not the covariate effects the record defines. Extracted — trimethoprim: kabs 20.1 1/h, V 7.81 L/kg, CL 6 L/h/kg, CLmp 4.77 L/h/kg, t1/2β 2 h, AUC∞ 187 h × µg/mL.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has trimethoprim, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -197,9 +197,9 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_topology_template |  | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations |  | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
 | X1_cross_check |  | skipped |  |  |  | no second reading of this record |
-| T1_t_half_beta | reference | fail | 1.49 | 0.5817 | 0.3904 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 2.01 | 0.5817 | 0.2894 | h→SI vs simulated h |
-| T1_t_half_beta | reference | fail | 2.83 | 0.5817 | 0.2056 | h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 1.49 | 0.5817 | 0.3904 | reported 1.49 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.01 | 0.5817 | 0.2894 | reported 2.01 h→SI vs simulated h |
+| T1_t_half_beta | reference | fail | 2.83 | 0.5817 | 0.2056 | reported 2.83 h→SI vs simulated h |
 
 <details class="legend">
 <summary>Validation definitions</summary>

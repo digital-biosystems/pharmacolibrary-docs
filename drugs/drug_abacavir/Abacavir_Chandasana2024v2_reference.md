@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The weight-power covariate for intercompartmental clearance is duplicated with conflicting values 0.698 and 0.556, while a central volume check failed to compute.
+> C2_center_consistency_wt failed (ratio None).
 
 <div class="pk-model-meta" hidden drug="abacavir" model-id="Abacavir_Chandasana2024v2_reference" status="needs_review" stale="false" population="children with HIV-1" measured-compound="abacavir" parameterization="apparent" topology="2C"></div>
 
@@ -62,13 +62,13 @@ Chandasana H, van Dijkman SC, Mehta R, Bush M, Rabie H, Flynn P et al. Populatio
 
 ### Reviewer guidance
 
-**The weight-power covariate for intercompartmental clearance is duplicated with conflicting values 0.698 and 0.556, while a central volume check failed to compute.**
+**C2_center_consistency_wt failed (ratio None).**
 
-The record lists three distinct power exponents for weight scaling intercompartmental clearance, including 0.698 and 0.556, creating ambiguity in the model structure. A second reader further disputed the inclusion of a bioavailability value of 1.53 for fasted dose forms. Consequently, the record remains unverified pending resolution of these parameter and dose compound discrepancies. Extracted — abacavir: CL/F 16.3 L/h, V2/F 10.1 l, kabs 2.08 h−1, Q/F 1.69 l/h, V3/F 23 l, Fab 1.62, V1/F 23.1 l, fe 1.53, … (+2).
+Extracted — abacavir: CL/F 16.3 L/h, V2/F 10.1 l, kabs 2.08 h−1, Q/F 1.69 l/h, V3/F 23 l, Fab 1.62, V1/F 23.1 l, fe 1.53, … (+2).
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has abacavir/dolutegravir/lamivudine, the second reading abacavir; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

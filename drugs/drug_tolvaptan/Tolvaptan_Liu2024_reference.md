@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Tolvaptan absorption parameters, including rate constant and lag time, remained at library placeholders because the source did not report explicit estimates.
+> Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).
 
 <div class="pk-model-meta" hidden drug="tolvaptan" model-id="Tolvaptan_Liu2024_reference" status="needs_review" stale="false" population="adults with child-pugh B cirrhosis" measured-compound="tolvaptan" parameterization="apparent" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Liu H, Wang Y, Liu T, Chen Y, Zheng X, Liu M et al. Pharmacokinetics, pharmacody
 
 ### Reviewer guidance
 
-**Tolvaptan absorption parameters, including rate constant and lag time, remained at library placeholders because the source did not report explicit estimates.**
+**Ka use library defaults, not estimates from this paper; t6_deviations (+1 more).**
 
-The record lacks explicit values for the absorption rate constant and lag time, forcing the use of generic library values. A second reader also disagreed on the extracted population variability metrics, citing significant discrepancies in the upper percentile values. The model assumes full bioavailability, yet the unsupported absorption dynamics remain inconsistent with the Liu_2024 source. Extracted — tolvaptan: CL/F 19.4 L/h, V/F 193 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Extracted — tolvaptan: CL/F 19.4 L/h, V/F 193 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on parameter Q75: this record has 10.6, the second reading 1.9; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -129,7 +129,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 2 scholar param(s) emitted or defaulted | 2 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | fail |  | defaulted_parameters: not acceptable; invented_absorption: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.818, 0 of 1 reader(s) agree | 0.818 | cross-check disputed by a second reader: verdict disputed, agreement 0.818, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.818 (9 of 11 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.818 | cross-check contradicted by a second reader: verdict disputed; agreement 0.818 (9 of 11 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

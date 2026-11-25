@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;stavudine&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/&quot;},{&quot;label&quot;:&quot;Tatsunami_2001 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Sinxadi2010_reference&quot;,&quot;label&quot;:&quot;Sinxadi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Sinxadi2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Jullien2007_reference&quot;,&quot;label&quot;:&quot;Jullien_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Jullien2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Stavudine_Panhard2007_reference&quot;,&quot;label&quot;:&quot;Panhard_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Panhard2007_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Sinxadi2010_reference&quot;,&quot;label&quot;:&quot;Sinxadi_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Sinxadi2010_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Stavudine_Jullien2007_reference&quot;,&quot;label&quot;:&quot;Jullien_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_stavudine/Stavudine_Jullien2007_reference.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,7 +9,7 @@
 
 > Only clearance was extracted — no volume.
 
-<div class="pk-model-meta" hidden drug="stavudine" model-id="Stavudine_Tatsunami2001_reference" status="needs_review" stale="false" population="Japanese HIV-1 infected adults (asymptomatic carriers)" measured-compound="stavudine" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="stavudine" model-id="Stavudine_Tatsunami2001_reference" status="needs_review" stale="false" population="Japanese patients infected with HIV-1" measured-compound="stavudine" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Tatsunami S, Ito A, Kawata K, Kuwabara R, Yamada K. Determination of pharmacokinetic parameters of stavudine in Japanese patients infected with HIV-1, using a Gaussian-like input rate function. European journal of drug metabolism and pharmacokinetics 26(1-2):137–140 (2001).
@@ -17,13 +17,13 @@ Tatsunami S, Ito A, Kawata K, Kuwabara R, Yamada K. Determination of pharmacokin
 
 ## Population and dosing
 
-**Population:** Japanese HIV-1 infected adults (asymptomatic carriers) · condition HIV-1 infection · age group adult · n = 4.
+**Population:** Japanese patients infected with HIV-1 · condition HIV-1 infection · age group adult · n = 4.
 
 ## Model
 
 **Structure:** 1-compartment; no model was built for this record.  
 **Parameterization:** mechanistic.  
-**Parameters:** 6 extracted.  
+**Parameters:** 4 extracted.  
 **Availability:** No model was generated from this record.
 
 ## Parameters
@@ -33,14 +33,12 @@ Tatsunami S, Ito A, Kawata K, Kuwabara R, Yamada K. Determination of pharmacokin
 |---|---|---|---|
 | Tmax | tmax | 0.96 | hr |
 | Cmax | Cmax | 478 | ng/mL |
-| AUC0-infinity | AUC∞ | 1112 | ng·h/mL |
+| AUC0-infinity | AUC∞ | 1112 | ng x hr/mL |
 | t 1/2 | t1/2z | 1.26 | hr |
-| first-order absorption rate constant | kabs | 11.1 | /h |
-| absorption lag time | tlag | 0.41 | h |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.8). Primary extraction retained.">cross-check: partial</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss-120b (confirmed, agreement 1.0). Primary extraction retained.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -52,9 +50,9 @@ Tatsunami S, Ito A, Kawata K, Kuwabara R, Yamada K. Determination of pharmacokin
 
 **Only clearance was extracted — no volume.**
 
-A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — stavudine: tmax 0.96 hr, Cmax 478 ng/mL, AUC∞ 1.11e+03 ng·h/mL, t1/2z 1.26 hr, kabs 11.1 /h, tlag 0.41 h.
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — stavudine: tmax 0.96 hr, Cmax 478 ng/mL, AUC∞ 1.11e+03 ng x hr/mL, t1/2z 1.26 hr.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of absorption lag time: this record has 0.41, the second reading none; it also differs on 1 more field. That field does not shape the model.
+Independently confirmed by `gpt-oss-120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,11 +61,9 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | Tmax | `Q56` · tmax | 0.96 | hr | 3456 | s | h | exact (1) | Tatsunami_2001:abstract |
-| Cmax | `Q32` · Cmax | 478 | ng/mL |  |  | ng/ml | exact (1) | Tatsunami_2001:abstract |
-| AUC0-infinity | `Q17` · AUC∞ | 1112 | ng·h/mL |  |  | ng·h/mL | llm (0.6) | Tatsunami_2001:abstract |
-| t 1/2 | `Q57` · t1/2z | 1.26 | hr | 4536 | s | h | space_fold (0.95) | Tatsunami_2001:abstract |
-| first-order absorption rate constant | `Q49` · kabs | 11.1 | /h | 0.003083 | 1/s | 1/h | review_gapfill (0.7) | Sinxadi_2010:review |
-| absorption lag time | `Q83` · tlag | 0.41 | h | 1476 | s | h | review_gapfill (0.7) | Sinxadi_2010:review |
+| Cmax | `Q32` · Cmax | 478 | ng/mL | 0.000478 | kg/m3 | ng/ml | exact (1) | Tatsunami_2001:abstract |
+| AUC0-infinity | `Q17` · AUC∞ | 1112 | ng x hr/mL | 4.003 | kg*s/m3 | (h·ng)/ml | llm (0.6) | Tatsunami_2001:abstract |
+| t 1/2 | `Q57` · t1/2z | 1.26 | hr | 4536 | s | h | half_life_rule (0.95) | Tatsunami_2001:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -77,35 +73,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the val
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_unknown: 'ng x hr/mL' (AUC∞)
-- implicit units: 'AUC0-infinity' → ng·h/mL (from the popPK convention: 'No unit stated in text or table caption; AUC values are conventionally reported in concentration×time units, e.g. ng·h/m')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=stavudine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Sinxadi_2010's review values (primary lacked it)
-- gap-filled Q83 (tlag) from Sinxadi_2010's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Tatsunami_2001_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | partly confirmed | 0.8 (8/10 fields) | 2 |
+| `gpt-oss-120b` | confirmed | 1.0 (8/8 fields) | none |
 
-<details><summary>2 field discrepancies</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss-120b` | `parameters[absorption lag time]` | 0.41 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[first-order absorption rate constant]` | 11.1 |  | only_one_extracted |
-
-</details>
+_All readers agree on the compared fields of this record._
 
 <details class="legend">
 <summary>Cross-check definitions</summary>
@@ -122,10 +105,8 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0c_disposition_complete | fail |  |  |  |
 | C5_dimension_Q17 | pass | [mass] * [time] / [length] ** 3 |  | ['Tatsunami_2001:abstract'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 |  | ['Tatsunami_2001:abstract'] |
-| C5_dimension_Q49 | pass | 1 / [time] |  | ['Sinxadi_2010:review'] |
 | C5_dimension_Q56 | pass | [time] |  | ['Tatsunami_2001:abstract'] |
 | C5_dimension_Q57 | pass | [time] |  | ['Tatsunami_2001:abstract'] |
-| C5_dimension_Q83 | pass | [time] |  | ['Sinxadi_2010:review'] |
 | C8_topology | pass |  |  |  |
 
 <details class="legend">
@@ -160,4 +141,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bstavudine%5D%20Stavudine_Tatsunami2001_reference&body=Drug%3A%20stavudine%0ARecord%3A%20Stavudine_Tatsunami2001_reference%0APaper%3A%20Tatsunami_2001%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_stavudine/Stavudine_Tatsunami2001_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:17 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 04:59 UTC</sub>

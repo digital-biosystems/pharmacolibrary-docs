@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Ziprasidone bioavailability was unreported in the abstract, forcing reliance on placeholder values instead of paper-supported estimates.
+> F use library defaults, not estimates from this paper; t6_deviations.
 
 <div class="pk-model-meta" hidden drug="ziprasidone" model-id="Ziprasidone_Bao2024_reference" status="needs_review" stale="false" population="Chinese psychiatric disorder patients" measured-compound="ziprasidone" parameterization="mechanistic" topology="1C"></div>
 
@@ -17,7 +17,7 @@ Bao S, Yang S, Hua Z, Li J, Zang Y, Li X. Ziprasidone population pharmacokinetic
 
 ## Population and dosing
 
-**Population:** Chinese psychiatric disorder patients · condition psychiatric disorders · age group adult · n = 185.
+**Population:** Chinese psychiatric disorder patients · condition psychiatric disorders · age group adult.
 
 ## Model
 
@@ -34,12 +34,12 @@ Bao S, Yang S, Hua Z, Li J, Zang Y, Li X. Ziprasidone population pharmacokinetic
 | label | parameter | value | unit |
 |---|---|---|---|
 | Ka | kabs | 0.5 | h-1 |
-| CL | CL | 18.74 | L/h |
-| V | V | 110.24 | L |
+| ziprasidone clearance (CL) | CL | 18.74 | L/h |
+| volume of distribution (V) | V | 110.24 | L |
 
 <details class="pk-evidence"><summary>Evidence &amp; review</summary>
 
-**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss-120b (not confirmed, agreement 0.2). Primary extraction retained.">cross-check: disputed</span>
+**Status and checks:** <span class="pk-badge pk-badge--orange">Needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss-120b (partly confirmed, agreement 0.556). Primary extraction retained.">cross-check: partial</span>
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -49,21 +49,21 @@ Bao S, Yang S, Hua Z, Li J, Zang Y, Li X. Ziprasidone population pharmacokinetic
 
 ### Reviewer guidance
 
-**Ziprasidone bioavailability was unreported in the abstract, forcing reliance on placeholder values instead of paper-supported estimates.**
+**F use library defaults, not estimates from this paper; t6_deviations.**
 
-The record was built solely from the abstract, so reported summary statistics stand in for a fitted model. Consequently, bioavailability is not reported, meaning library placeholders would be used rather than estimates from this paper. A second reader disputed the verdict, agreeing with 0 of 1 reader, leaving the review inconclusive regarding the extracted parameters. Extracted — ziprasidone: kabs 0.5 h-1, CL 18.7 L/h, V 110 L.
+These values affect the simulated profile but are not supported by this paper; they need to be extracted or explicitly justified as conventions. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — ziprasidone: kabs 0.5 h-1, CL 18.7 L/h, V 110 L.
 
-A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has ziprasidone, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of cl: this record has none, the second reading 18.74; it also differs on 3 more fields. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_si | unit_canonical | link | source |
 |---|---|---|---|---|---|---|---|---|
 | Ka | `Q49` · kabs | 0.5 | h-1 | 0.0001389 | 1/s | 1/h | exact (1) | Bao_2024:abstract |
-| CL | `Q22` · CL | 18.74 | L/h | 5.206e-06 | m3/s | l/h | exact (1) | Bao_2024:abstract |
-| V | `Q61` · V | 110.24 | L | 0.1102 | m3 | l | exact (1) | Bao_2024:abstract |
+| ziprasidone clearance (CL) | `Q22` · CL | 18.74 | L/h | 5.206e-06 | m3/s | l/h | llm_confirmed (0.6) | Bao_2024:abstract |
+| volume of distribution (V) | `Q61` · V | 110.24 | L | 0.1102 | m3 | l | exact (1) | Bao_2024:abstract |
 
 <details class="legend">
 <summary>Parameter definitions</summary>
@@ -76,37 +76,30 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 - `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL); Q61 (V)
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (ziprasidone clearance (CL)); Q61 (volume of distribution (V))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=ziprasidone
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Bao_2024_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss-120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss-120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
 
-<details><summary>8 field discrepancies</summary>
+<details><summary>4 field discrepancies</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[cl]` |  | 18.74 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl]` | 18.74 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` |  | 0.5 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[ka]` | 0.5 |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[v]` |  | 110.24 | only_one_extracted |
-| `gpt-oss-120b` | `parameters[v]` | 110.24 |  | only_one_extracted |
-| `gpt-oss-120b` | `screen.dose_compound` | ziprasidone | unknown | mismatch |
-| `gpt-oss-120b` | `screen.primary_analyte` | ziprasidone | unknown | mismatch |
+| `gpt-oss-120b` | `parameters[volume of distribution]` | 110.24 |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[ziprasidone clearance]` | 18.74 |  | only_one_extracted |
 
 </details>
 
@@ -133,15 +126,15 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 **Reviewer per-scenario checks:**
 
-| check | status | expected | obtained | ratio | note |
-|---|---|---|---|---|---|
-| T0_analyte_identity | pass |  |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
-| T2_covariates | skipped |  |  |  | no covariate effects in record |
-| T3_output_variable | pass | C_central (measured=ziprasidone) | central.C |  | output must be the measured/analyte compartment |
-| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered |  | all structural parameters accounted for |
-| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
-| T6_deviations | fail |  | defaulted_parameters: not acceptable |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.2, 0 of 1 reader(s) agree | 0.2 | cross-check disputed by a second reader: verdict disputed, agreement 0.2, 0 of 1 reader(s) agree |
+| check | status | expected | obtained | note |
+|---|---|---|---|---|
+| T0_analyte_identity | pass |  |  | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | skipped |  |  | no covariate effects in record |
+| T3_output_variable | pass | C_central (measured=ziprasidone) | central.C | output must be the measured/analyte compartment |
+| T3_param_coverage | pass | 3 scholar param(s) emitted or defaulted | 3 covered | all structural parameters accounted for |
+| T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral | engineer template must match the scholar topology |
+| T6_deviations | fail |  | defaulted_parameters: not acceptable | LLM adjudication → deterministic rule |
+| X1_cross_check | skipped |  |  | no second reading of this record |
 
 <details class="legend">
 <summary>Validation definitions</summary>
@@ -157,7 +150,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ziprasidone/Ziprasidone_Bao2024_reference/Ziprasidone_Bao2024_reference_modelica.zip" download>Ziprasidone_Bao2024_reference_modelica.zip</a> <span class="pk-size">(4.4 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_ziprasidone/Ziprasidone_Bao2024_reference/Ziprasidone_Bao2024_reference_modelica.zip" download>Ziprasidone_Bao2024_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_ziprasidone/Ziprasidone_Bao2024_reference/Ziprasidone_Bao2024_reference_fmi.zip" download>Ziprasidone_Bao2024_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_ziprasidone/Ziprasidone_Bao2024_reference/Ziprasidone_Bao2024_reference_matlab.zip" download>Ziprasidone_Bao2024_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_ziprasidone/Ziprasidone_Bao2024_reference/Ziprasidone_Bao2024_reference_matlab_simbio.zip" download>Ziprasidone_Bao2024_reference_matlab_simbio.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
@@ -221,4 +214,4 @@ Licence of the model files: not set yet. The parameter values belong to the cite
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bziprasidone%5D%20Ziprasidone_Bao2024_reference&body=Drug%3A%20ziprasidone%0ARecord%3A%20Ziprasidone_Bao2024_reference%0APaper%3A%20Bao_2024%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_ziprasidone/Ziprasidone_Bao2024_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:24 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 06:58 UTC</sub>

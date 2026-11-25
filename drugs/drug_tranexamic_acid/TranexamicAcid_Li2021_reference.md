@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> Second reader disputes the record for tranexamic acid in pregnant women because it relies on abstract-only data.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="tranexamic acid" model-id="TranexamicAcid_Li2021_reference" status="needs_review" stale="false" population="pregnant women undergoing caesarean delivery" measured-compound="tranexamic acid" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Li S, Ahmadzia HK, Guo D, Dahmane E, Miszta A, Luban NLC et al. Population pharm
 
 ### Reviewer guidance
 
-**Second reader disputes the record for tranexamic acid in pregnant women because it relies on abstract-only data.**
+**cross_check_disputed; x1_cross_check.**
 
-The record is held back as a cross-check dispute with a low agreement score of 0.167. The second reader marked the dose compound, primary analyte, and all four pharmacokinetic parameters as unknown or null. Because the record was built from the abstract alone, these summary statistics were not confirmed by a second independent read. Extracted — tranexamic acid: CL 9.4 L/h, V1 10.1 L, Q 22.4 L/h, V2 14 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tranexamic acid: CL 9.4 L/h, V1 10.1 L, Q 22.4 L/h, V2 14 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tranexamic acid, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -144,7 +144,7 @@ Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check v
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

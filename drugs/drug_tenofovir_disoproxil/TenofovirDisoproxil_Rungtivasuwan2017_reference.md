@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;tenofovir disoproxil&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_disoproxil/&quot;},{&quot;label&quot;:&quot;Rungtivasuwan_2017 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Jayachandran_2021_p24&quot;,&quot;label&quot;:&quot;Jayachandran_2021 \u00b7 p24&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_tenofovir_disoproxil/pd_Jayachandran_2021_p24.md&quot;,&quot;status&quot;:&quot;Needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -7,7 +6,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Tenofovir clearance was assigned a dimensionless value of 25% instead of volumetric flow units, causing a structural dimension mismatch.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q351 unit % (dimensionless) vs [length] ** 3 / [time].
 
 <div class="pk-model-meta" hidden drug="tenofovir disoproxil" model-id="TenofovirDisoproxil_Rungtivasuwan2017_reference" status="rejected" stale="false" population="Thai HIV-infected patients" measured-compound="tenofovir" parameterization="apparent" topology="1C"></div>
 
@@ -47,13 +46,13 @@ Rungtivasuwan K, Avihingsanon A, Thammajaruk N, Mitruk S, Burger DM, Ruxrungtham
 
 ### Reviewer guidance
 
-**Tenofovir clearance was assigned a dimensionless value of 25% instead of volumetric flow units, causing a structural dimension mismatch.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q351 unit % (dimensionless) vs [length] ** 3 / [time].**
 
-The record lists the apparent clearance of tenofovir as 25 with the unit '%', which is dimensionless rather than volume over time. Because the source text was abstract-only, these summary statistics stand in for a fitted model, likely leading to this unit error. A second reader could not confirm the 25% value or the dose compound, marking them as unknown. Extracted — tenofovir disoproxil: CLm/F 25 %.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — tenofovir disoproxil: CLm/F 25 %.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has tenofovir_disoproxil, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -142,4 +141,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Btenofovir_disoproxil%5D%20TenofovirDisoproxil_Rungtivasuwan2017_reference&body=Drug%3A%20tenofovir_disoproxil%0ARecord%3A%20TenofovirDisoproxil_Rungtivasuwan2017_reference%0APaper%3A%20Rungtivasuwan_2017%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_tenofovir_disoproxil/TenofovirDisoproxil_Rungtivasuwan2017_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 16:31 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 05:53 UTC</sub>

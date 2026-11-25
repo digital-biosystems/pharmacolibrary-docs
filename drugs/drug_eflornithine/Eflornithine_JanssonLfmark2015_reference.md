@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The record was rejected because a 17.4 L/h clearance combined with a 0.15 L volume of distribution implies an implausibly large elimination rate constant.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
 <div class="pk-model-meta" hidden drug="eflornithine" model-id="Eflornithine_JanssonLfmark2015_reference" status="rejected" stale="false" population="patients with late-stage Trypanosoma brucei gambiense sleeping sickness" measured-compound="eflornithine" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +48,13 @@ Jansson-Löfmark R, Na-Bangchang K, Björkman S, Doua F, Ashton M. Enantiospecif
 
 ### Reviewer guidance
 
-**The record was rejected because a 17.4 L/h clearance combined with a 0.15 L volume of distribution implies an implausibly large elimination rate constant.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The pharmacokinetic ratio derived from the extracted parameters falls outside physiological windows, indicating a unit or scale extraction error. Because the record was built from the abstract alone, the reported summary statistics stand in for a fitted model, limiting the ability to verify the parameter context. A second reader disagreed on the parameterization and could not confirm several extracted values, including the clearance, absorption rate constant, and lag time. Extracted — eflornithine: CL 17.4 liters/h, V 0.15 L, kabs 1.16 h -1, tlag 0.447 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — eflornithine: CL 17.4 liters/h, V 0.15 L, kabs 1.16 h -1, tlag 0.447 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 

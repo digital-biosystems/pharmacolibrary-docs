@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> Bleomycin clearance of 12.88 L/h is rejected because the source paper studies methotrexate pharmacokinetics, not bleomycin.
+> paper_subject_is_other_drug; t0_analyte_identity (+1 more).
 
 <div class="pk-model-meta" hidden drug="bleomycin" model-id="Bleomycin_Zhao2025_reference" status="rejected" stale="false" population="" measured-compound="bleomycin" parameterization="mechanistic" topology="2C"></div>
 
@@ -50,13 +50,13 @@ Zhao J, Wu R, Zhang S, Lu Q, Wang R, He Y et al. Population pharmacokinetic mode
 
 ### Reviewer guidance
 
-**Bleomycin clearance of 12.88 L/h is rejected because the source paper studies methotrexate pharmacokinetics, not bleomycin.**
+**paper_subject_is_other_drug; t0_analyte_identity (+1 more).**
 
-The study reports methotrexate parameters, listing bleomycin only as a covariate for co-administration. Consequently, the extracted clearance of 12.88 L/h and central volume of 72.04 L do not belong to the target molecule. A second reader also disagreed with the specific values, recording a clearance of 15.7 L/h and central volume of 79.2 L. Extracted — bleomycin: CL 12.9 L/h, V1 72 L, V2 94.9 L, Q 1.08 L/h.
+Extracted — bleomycin: CL 12.9 L/h, V1 72 L, V2 94.9 L, Q 1.08 L/h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on the value of CL: this record has 12.88, the second reading 15.7; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -137,7 +137,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 2C → PK_2C* | PK_2C |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  |  |  | no engineer deviations to adjudicate |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.333, 0 of 1 reader(s) agree | 0.333 | cross-check disputed by a second reader: verdict disputed, agreement 0.333, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.333 (2 of 6 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.333 | cross-check contradicted by a second reader: verdict disputed; agreement 0.333 (2 of 6 compared fields agree); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

@@ -7,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--orange">Needs review</span>
 
-> The record was refused because the second reader could not verify the abstract-derived clearance, volume, and half-life values.
+> cross_check_disputed; x1_cross_check.
 
 <div class="pk-model-meta" hidden drug="thalidomide" model-id="Thalidomide_Figg1999_reference" status="needs_review" stale="false" population="elderly with hormone-refractory prostate cancer" measured-compound="thalidomide" parameterization="apparent" topology="1C"></div>
 
@@ -51,13 +51,13 @@ Figg WD, Raje S, Bauer KS, Tompkins A, Venzon D, Bergan R et al. Pharmacokinetic
 
 ### Reviewer guidance
 
-**The record was refused because the second reader could not verify the abstract-derived clearance, volume, and half-life values.**
+**cross_check_disputed; x1_cross_check.**
 
-The record was built from the paper's abstract, so the reported summary statistics stand in for a fitted model. A second reader disagreed with the extracted apparent volume of distribution of 66.93 L, terminal half-life of 7.08 h, and clearance of 7.41 L/h. This disagreement resulted in a cross-check failure with an agreement ratio of 0.167. Extracted — thalidomide: CL/F 7.41 L/h, V/F 66.9 L, t1/2z 7.08 h, kabs 0.4 1/h, tlag 0.73 h.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — thalidomide: CL/F 7.41 L/h, V/F 66.9 L, t1/2z 7.08 h, kabs 0.4 1/h, tlag 0.73 h.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has thalidomide, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -150,7 +150,7 @@ Primary extraction: `qwen3.8-27b`; retained regardless of cross-check verdict.
 | T3_param_coverage | pass | 4 scholar param(s) emitted or defaulted | 4 covered |  | all structural parameters accounted for |
 | T3_topology_template | pass | 1C → PK_1C* | PK_1C_enteral |  | engineer template must match the scholar topology |
 | T6_deviations | pass |  | all deviations documented+quantified |  | LLM adjudication → deterministic rule |
-| X1_cross_check | fail | second reader agrees | verdict disputed, agreement 0.167, 0 of 1 reader(s) agree | 0.167 | cross-check disputed by a second reader: verdict disputed, agreement 0.167, 0 of 1 reader(s) agree |
+| X1_cross_check | fail | no second reader contradicts | verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) | 0.167 | cross-check contradicted by a second reader: verdict disputed; agreement 0.167 (2 of 12 compared fields agree, 8 extracted by one reader only); 0 of 1 reader(s) without a contradiction (gpt-oss-120b) |
 
 <details class="legend">
 <summary>Validation definitions</summary>

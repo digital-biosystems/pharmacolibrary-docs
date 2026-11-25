@@ -1,4 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;mitomycin&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/&quot;},{&quot;label&quot;:&quot;Shimizu_1991 \u00b7 reference&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mitomycin_den1983_reference&quot;,&quot;label&quot;:&quot;den_1983_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_mitomycin/Mitomycin_den1983_reference.md&quot;,&quot;status&quot;:&quot;Simulated&quot;,&quot;css&quot;:&quot;pk-badge--blue&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -6,7 +7,7 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The mitomycin volume of distribution parameter carries concentration units (ng/ml) instead of volume units, causing a dimensional conflict.
+> C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng/ml ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.
 
 <div class="pk-model-meta" hidden drug="mitomycin" model-id="Mitomycin_Shimizu1991_reference" status="rejected" stale="false" population="patients with non-small cell lung cancer" measured-compound="mitomycin" parameterization="mechanistic" topology="1C"></div>
 
@@ -48,13 +49,13 @@ Shimizu E, Nakamura Y, Mukai J, Tani K, Yamashita T, Hojo F et al. Pharmacokinet
 
 ### Reviewer guidance
 
-**The mitomycin volume of distribution parameter carries concentration units (ng/ml) instead of volume units, causing a dimensional conflict.**
+**C5 dimension mismatch on a structural parameter — unit dimension conflicts with the parameter: Q86 unit ng/ml ([mass] / [length] ** 3) vs [mass] * [time] / [length] ** 3.**
 
-The extracted volume of distribution (0.183 l/kg) is associated with a dimension check that expected a volume dimension ([mass]*[time]/[length]^3) but received a concentration dimension ([mass]/[length]^3), specifically matching the ng/ml unit. Because the record relied on abstract-only summary statistics, the fitted model parameters were not available to resolve this inconsistency. A second reader also disagreed on the back-extrapolated concentration value, finding no corresponding data where 308 ng/ml was recorded. Extracted — mitomycin: t1/2z 34.3 min, AUC 166 ng h/ml, Cmax 178 ng/ml, C0 308 ng/ml, V 0.183 l/kg.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — mitomycin: t1/2z 34.3 min, AUC 166 ng h/ml, Cmax 178 ng/ml, C0 308 ng/ml, V 0.183 l/kg.
 
 A second, independent reading of the paper (`qwen3.8-27b`) disagrees on the value of back-extrapolated plasma drug concentration: this record has 308, the second reading none. That field does not shape the model.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -147,4 +148,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bmitomycin%5D%20Mitomycin_Shimizu1991_reference&body=Drug%3A%20mitomycin%0ARecord%3A%20Mitomycin_Shimizu1991_reference%0APaper%3A%20Shimizu_1991%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_mitomycin/Mitomycin_Shimizu1991_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-06 18:58 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-24 01:59 UTC</sub>

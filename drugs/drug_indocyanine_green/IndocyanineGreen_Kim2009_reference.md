@@ -7,9 +7,9 @@
 
 > ## <span class="pk-badge pk-badge--red">Rejected</span>
 
-> The indocyanine green clearance estimate of 117 mL/min exceeds the physiological limit because the record relies on abstract-only summary statistics rather than a fitted model.
+> C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).
 
-<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Kim2009_reference" status="rejected" stale="false" population="patients undergoing ICG clearance testing" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></div>
+<div class="pk-model-meta" hidden drug="indocyanine green" model-id="IndocyanineGreen_Kim2009_reference" status="rejected" stale="false" population="patients" measured-compound="indocyanine green" parameterization="mechanistic" topology="1C"></div>
 
 ## Citation
 Kim GY, Bae KS, Noh GJ, Min WK. Estimation of indocyanine green elimination rate constant k and retention rate at 15 min using patient age, weight, bilirubin, and albumin. Journal of hepato-biliary-pancreatic surgery 16(4):521–528 (2009).
@@ -17,7 +17,7 @@ Kim GY, Bae KS, Noh GJ, Min WK. Estimation of indocyanine green elimination rate
 
 ## Population and dosing
 
-**Population:** patients undergoing ICG clearance testing · age group adult · n = 1276.
+**Population:** patients.
 
 ## Model
 
@@ -46,13 +46,13 @@ Kim GY, Bae KS, Noh GJ, Min WK. Estimation of indocyanine green elimination rate
 
 ### Reviewer guidance
 
-**The indocyanine green clearance estimate of 117 mL/min exceeds the physiological limit because the record relies on abstract-only summary statistics rather than a fitted model.**
+**C9 clearance/volume outside physiological window (implausible magnitude — unit/scale extraction error).**
 
-The record was constructed from the abstract only, so reported summary statistics stand in for a fitted model. This lack of fitted parameter estimation resulted in a clearance value that was flagged as outside the physiological window. The second reader disagreed with the record, assigning null values to the clearance and volume of distribution fields. Extracted — indocyanine green: CL 117 mL/min, V 0.415 L.
+Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — indocyanine green: CL 117 mL/min, V 0.415 L.
 
 A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which compound was dosed: this record has indocyanine green, the second reading indocyanine_green; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-<sub>reviewed by qwen3.8-27b</sub>
+<sub>the checker's own wording — not yet put into words by an LLM</sub>
 
 ### All parameter columns
 
@@ -70,30 +70,22 @@ A second, independent reading of the paper (`gpt-oss-120b`) disagrees on which c
 
 | label (paper) | Q-code | link |
 |---|---|---|
-| C (0) | Q86 | llm |
-| C (15) | Q900 | llm |
 | k | Q47 | exact |
 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Median percent prediction error for Cl' — extend the ontology if this is a real PK parameter (source ['Kim_2009:abstract'])
-- covariate category for equation variable from footnote/prose kept as documentation only (['Kim_2009:abstract'])
-- covariate category for kel from footnote/prose kept as documentation only (['Kim_2009:abstract'])
-- covariate category for AUC ratio from footnote/prose kept as documentation only (['Kim_2009:abstract'])
-- covariate category for R0 from footnote/prose kept as documentation only (['Kim_2009:abstract'])
+- dropped value-less row: 'R (15)' (captured trailing unit '15' for child rows)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=indocyanine green
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Kim_2009_metadata.yaml (11 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Kim_2009_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
+Primary extraction: `qwen3.8:27b-mtp-q8_0`; retained regardless of cross-check verdict.
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
@@ -105,11 +97,11 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 |---|---|---|---|---|
 | `gpt-oss-120b` | `parameters[c]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[cl]` | 117 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[cl]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[cl]` |  | 117 | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[k]` |  |  | only_one_extracted |
 | `gpt-oss-120b` | `parameters[vd]` | 0.415 |  | only_one_extracted |
-| `gpt-oss-120b` | `parameters[vd]` |  |  | only_one_extracted |
+| `gpt-oss-120b` | `parameters[vd]` |  | 0.415 | only_one_extracted |
 | `gpt-oss-120b` | `screen.dose_compound` | indocyanine green | indocyanine_green | mismatch |
 | `gpt-oss-120b` | `screen.primary_analyte` | indocyanine green | indocyanine_green | mismatch |
 
@@ -129,6 +121,7 @@ Primary extraction: `glm-5.3-flash`; retained regardless of cross-check verdict.
 | C0b_disposition_core | pass |  |  |  |
 | C0c_disposition_complete | pass |  |  |  |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] |  | ['Kim_2009:abstract'] |
+| C5_dimension_Q47 | pass | 1 / [time] |  | ['Kim_2009:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 |  | ['Kim_2009:abstract'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 117 | ['Kim_2009:abstract'] |
 | C8_topology | pass |  |  |  |
@@ -157,4 +150,4 @@ _Browser simulation unavailable: no model was built for this record. The enginee
 
 ---
 <sub>Research data extracted by software from published papers; not clinically validated and not for dosing decisions. [Report a problem with this record](https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues/new?title=%5Bindocyanine_green%5D%20IndocyanineGreen_Kim2009_reference&body=Drug%3A%20indocyanine_green%0ARecord%3A%20IndocyanineGreen_Kim2009_reference%0APaper%3A%20Kim_2009%0APage%3A%20https%3A//pharmacolibrary.github.io/%23/drugs/drug_indocyanine_green/IndocyanineGreen_Kim2009_reference%0ABuild%3A%20scholarv2%0A%0AWhat%20is%20wrong%3A%0A)</sub>  
-<sub>Pharmacolibrary · extracted 2026-10-07 21:11 UTC</sub>
+<sub>Pharmacolibrary · extracted 2026-11-23 22:57 UTC</sub>

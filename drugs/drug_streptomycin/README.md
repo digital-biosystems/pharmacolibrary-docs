@@ -24,8 +24,8 @@ Streptomycin is an aminoglycoside antibiotic used to treat tuberculosis and othe
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Lee_2023_resp](drugs/drug_streptomycin/pd_Lee_2023_resp.md) | net growth rate of bacteria ← streptomycin · direct sigmoid Emax (Hill) effect | — | Lee EB et al., A Pharmacodynamic Study of Aminoglycosi…, Pharmaceuticals (Basel, Swi… (2023) | [10.3390/ph17010027](https://doi.org/10.3390/ph17010027) |
 | <span class="pk-badge pk-badge--neutral">Not simulated</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Regoes_2004_bacterial_net_growth_rate](drugs/drug_streptomycin/pd_Regoes_2004_bacterial_net_growth_rate.md) | bacterial net growth rate ← streptomycin · direct sigmoid Emax (Hill) effect | — | Regoes RR et al., Pharmacodynamic functions: a multiparam…, Antimicrobial agents and ch… (2004) | [10.1128/AAC.48.10.3670-3676.2004](https://doi.org/10.1128/AAC.48.10.3670-3676.2004) |
-| <span class="pk-badge pk-badge--red">Rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Lee_2023_resp](drugs/drug_streptomycin/pd_Lee_2023_resp.md) | net growth rate of bacteria ← streptomycin · direct sigmoid Emax (Hill) effect | — | Lee EB et al., A Pharmacodynamic Study of Aminoglycosi…, Pharmaceuticals (Basel, Swi… (2023) | [10.3390/ph17010027](https://doi.org/10.3390/ph17010027) |
 
 <details class="legend">
 <summary>Status and cross-check definitions</summary>
@@ -39,7 +39,7 @@ Streptomycin is an aminoglycoside antibiotic used to treat tuberculosis and othe
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-04 18:30 | 2:20 | 1/0/0 | 1/1/0 | 0/0/0 | 87,981/2,700 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 1/6 | 7/0 | 0 |
+| 2026-10-04 18:30 | 2:20 | 1/0/0 | 2/0/0 | 0/0/0 | 87,981/2,700 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 1/6 | 7/0 | 0 |
 
 ## Coverage
 
